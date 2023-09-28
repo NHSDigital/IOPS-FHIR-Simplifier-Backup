@@ -28,7 +28,7 @@ jobs:
           rm -rf backup
           mkdir -p backup
           cd backup
-          wget --user ${{secrets.SIMPLIFIER_USER}} --password ${{secrets.SIMPLIFIER_PWD}} ${{ vars.SIMPLIFIER_ADDRESS }} -O export.zip
+          wget --user ${{secrets.SIMPLIFIER_USER}} --password ${{secrets.SIMPLIFIER_PWD}} ${{ vars.HL7FHIRUKCORER4_SIMPLIFIER_ADDRESS }} -O export.zip
           unzip export.zip -x settings.style
           mv export.zip ..
           cd ..
