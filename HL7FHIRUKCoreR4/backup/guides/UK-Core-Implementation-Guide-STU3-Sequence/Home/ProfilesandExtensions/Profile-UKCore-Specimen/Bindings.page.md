@@ -20,7 +20,7 @@ More information about the bindings to UK Core ValueSets can be found below.
 </tr>
 <tr>
 <td>Specimen.condition</td>
-<td>extensible</td>
+<td>Extensible</td>
 <td>{{pagelink:ValueSet-UKCore-BiopsyState}}</td>
 </tr>
 <tr>

@@ -43,7 +43,7 @@ select
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table}}
+{{table, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
