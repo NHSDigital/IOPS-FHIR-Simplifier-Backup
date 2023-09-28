@@ -5,10 +5,11 @@ This repo contains a back up of IOPS Simplifier projects. Each project has a wor
 ## Prequsites
 
 A valid Simplifier account.
+A Simplifer Project to back up. The name of the project will be referred to as [Project Name], e.g. [HL7 FHIR UK Core R4](https://simplifier.net/hl7fhirukcorer4). Do not include any symbols.
 
 ## To add a new project:
 
-- Create a new folder named after the Simplifier Project ensuring all whitespaces are removed, e.g. HL7FHIRUKCoreR4. This will be referred to as [ProjectName]. 
+- Create a new folder named after the Simplifier Project ensuring all whitespaces are removed, e.g. HL7FHIRUKCoreR4.
 - Within the folder create a new README.md with a link to the project
 - Copy the Github Action .github/workflows/Backup.yml, and prefixing the project name to the filename, e.g. HL7FHIRUKCoreR4-Backup.yml
 - Within the yml file change the following to refer to the [ProjectName] created above:
