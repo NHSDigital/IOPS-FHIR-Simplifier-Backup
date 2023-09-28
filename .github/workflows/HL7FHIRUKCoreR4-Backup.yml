@@ -24,7 +24,7 @@ jobs:
 
       - name: Download and commit simplifier source code
         run: |
-          cd _SimplifierBackups
+          cd HL7FHIRUKCoreR4
           rm -rf backup
           mkdir -p backup
           cd backup

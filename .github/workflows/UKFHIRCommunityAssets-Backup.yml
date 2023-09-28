@@ -24,7 +24,7 @@ jobs:
 
       - name: Download and commit simplifier source code
         run: |
-          cd _SimplifierBackups
+          cd UKFHIRCommunityAssets
           rm -rf backup
           mkdir -p backup
           cd backup

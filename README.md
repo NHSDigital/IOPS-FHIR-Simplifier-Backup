@@ -9,12 +9,14 @@ A Simplifer Project to back up. The name of the project will be referred to as [
 
 ## To add a new project:
 
-- Create a new folder named after the Simplifier Project ensuring all whitespaces are removed, e.g. HL7FHIRUKCoreR4.
+- Create a new folder named after the Simplifier Project ensuring all whitespaces are removed, e.g. HL7FHIRUKCoreR4. This will be referred to as [ProjectFolderName].
 - Within the folder create a new README.md with a link to the project
 - Copy the Github Action .github/workflows/Backup.yml, and prefixing the project name to the filename, e.g. HL7FHIRUKCoreR4-Backup.yml
-- Within the yml file change the following to refer to the [ProjectName] created above:
+- Within the yml file change the following:
     - line 1:
         - [Project Name] Back Up
+    - line 27:
+        - [ProjectFolderName]
     - line 31:
         - secrets.[PROJECTNAME]_SIMPLIFIER_USER 
         - secrets.[PROJECTNAME]_SIMPLIFIER_PWD
