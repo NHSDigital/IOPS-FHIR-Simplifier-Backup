@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: File Format
+  filename: File-Format.page.md
+- name: Publisher, Contact & Copyright
+  filename: Publisher--Contact---Copyright.page.md
