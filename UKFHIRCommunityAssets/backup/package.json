@@ -1,0 +1,12 @@
+{
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "name": "hl7uk.fhir.communityassets",
+  "version": "1.0.0",
+  "description": "A project to mange and develop UK FHIR  Assets ",
+  "author": "HL7 UK",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  }
+}
