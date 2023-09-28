@@ -13,11 +13,11 @@ A valid Simplifier account.
 - Copy the Github Action .github/workflows/Backup.yml, and prefixing the project name to the filename, e.g. HL7FHIRUKCoreR4-Backup.yml
 - Within the yml file change the following to refer to the [ProjectFolderName] created above:
     - line 1:
-- - - [ProjectFolderName] Back Up
-- - line 31:
-- - secrets.[PROJECTFOLDERNAME]_SIMPLIFIER_USER 
-- - secrets.[PROJECTFOLDERNAME]_SIMPLIFIER_PWD
-- - secrets.[PROJECTFOLDERNAME]_SIMPLIFIER_ADDRESS
+        - [ProjectFolderName] Back Up
+    - line 31:
+        - secrets.[PROJECTFOLDERNAME]_SIMPLIFIER_USER 
+        - secrets.[PROJECTFOLDERNAME]_SIMPLIFIER_PWD
+        - secrets.[PROJECTFOLDERNAME]_SIMPLIFIER_ADDRESS
 
 ## Schedule to run
 
