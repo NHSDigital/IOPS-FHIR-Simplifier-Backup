@@ -1,9 +1,9 @@
 - name: Index
   filename: Index.page.md
-- name: Extension
-  filename: Extension.page.md
-- name: Binding
-  filename: Binding.page.md
+- name: Extensions
+  filename: Extensions.page.md
+- name: Bindings
+  filename: Bindings.page.md
 - name: Constraints
   filename: Constraints.page.md
 - name: extension:replacementOf

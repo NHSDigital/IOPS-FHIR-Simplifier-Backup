@@ -5,6 +5,33 @@ The NHSE IG development is driven by requests for change which can come from man
   
 {{render:NHSEAssetCreation}} 
 
+<plantuml>
+start
+ ->Non UK Core FHIR assets required;
+repeat:Documents requirements for FHIR assets;
+    :Schedule discussion at Design Authority;
+    :Review requirements and New FHIR assets; 
+    if (FHIR assets agreed ?) then  (No)
+        if (FHIR assets revoked) then (No)
+        stop
+        else (Yes)
+        endif
+    else (Yes)
+     repeat:Draft asset added/amended in NHSE IG in Simplifier;
+     repeat while (Artchitectural and techical approval ?) is (No)
+    ->Yes;
+    repeat:Assure IG and Package;
+    repeat while (PO Sign off ?) is (No)
+    ->Yes;
+        if (Is FHIR Asset balloted ?)  then (Yes)
+    :Make draft active;
+    else (no)
+    :Asset remain draft;
+    endif 
+    :NHSE IG and Package 'published';
+    :Comms;
+    stop 
+</plantuml>
 
 ### Development Cycle
 The development cycle is fed from two main sources:

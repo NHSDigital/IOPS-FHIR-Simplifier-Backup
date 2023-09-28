@@ -208,6 +208,7 @@ table.assets tr td.balloted {
 }
 
  th.width5 { width: 5%; overflow-wrap: anywhere; }
+ th.width05 { width: 5%; overflow-wrap: anywhere; }
  th.width10 { width: 10%; overflow-wrap: anywhere; }
  th.width15 { width: 15%; overflow-wrap: anywhere; }
  th.width20 { width: 20%; overflow-wrap: anywhere; }
@@ -215,12 +216,24 @@ table.assets tr td.balloted {
  th.width30 { width: 30%; overflow-wrap: anywhere; }
  th.width35 { width: 35%; overflow-wrap: anywhere; }
  th.width40 { width: 40%; overflow-wrap: anywhere; }
+ th.width45 { width: 45%; overflow-wrap: anywhere; }
+ th.width50 { width: 50%; overflow-wrap: anywhere; }
+ th.width55 { width: 55%; overflow-wrap: anywhere; }
+ th.width60 { width: 60%; overflow-wrap: anywhere; }
+ th.width65 { width: 65%; overflow-wrap: anywhere; }
+ th.width70 { width: 70%; overflow-wrap: anywhere; }
+ th.width75 { width: 75%; overflow-wrap: anywhere; }
 
  td.width20 { width: 20%; overflow-wrap: anywhere; }
  td.width25 { width: 25%; overflow-wrap: anywhere; }
  td.width30 { width: 30%; overflow-wrap: anywhere; }
  td.width35 { width: 35%; overflow-wrap: anywhere; }
  td.width40 { width: 40%; overflow-wrap: anywhere; }
+
+ th.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
+ th.comparison-note { width: 34%; overflow-wrap: anywhere; }
+ td.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
+ td.comparison-note { width: 34%; overflow-wrap: anywhere; }
 
  .underconstruction {
      display: grid;

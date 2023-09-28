@@ -11,7 +11,7 @@ The 'Context of Use' column indicates the profile and/or element where the exten
 
 Additional guidance is available on <a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Extensions-Index?version=current" target="_blank">UK Core Extensions</a> web page.
 
-<table class="regular assets">
+<table class="regular assets" title="Extensions list">
 <tr>
 <th>Extensions</th>
 <th>Status</th>
