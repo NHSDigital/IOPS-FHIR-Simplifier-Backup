@@ -1,0 +1,70 @@
+- name: Index
+  filename: Index.page.md
+- name: ValueSet UKCore-AddressKeyType
+  filename: ValueSet-UKCore-AddressKeyType.page.md
+- name: ValueSet UKCore-AllergyCode
+  filename: ValueSet-UKCore-AllergyCode.page.md
+- name: ValueSet UKCore-AllergyManifestation
+  filename: ValueSet-UKCore-AllergyManifestation.page.md
+- name: ValueSet UKCore-AllergySubstance
+  filename: ValueSet-UKCore-AllergySubstance.page.md
+- name: ValueSet UKCore-BirthSex
+  filename: ValueSet-UKCore-BirthSex.page.md
+- name: ValueSet UKCore-BodySite
+  filename: ValueSet-UKCore-BodySite.page.md
+- name: ValueSet UKCore-DeathNotificationStatus
+  filename: ValueSet-UKCore-DeathNotificationStatus.page.md
+- name: ValueSet UKCore-EthnicCategory
+  filename: ValueSet-UKCore-EthnicCategory.page.md
+- name: ValueSet UKCore-HumanLanguage
+  filename: ValueSet-UKCore-HumanLanguage.page.md
+- name: ValueSet UKCore-ImmunizationAdministrationBodySite
+  filename: ValueSet-UKCore-ImmunizationAdministrationBodySite.page.md
+- name: ValueSet UKCore-ImmunizationExplanationReason
+  filename: ValueSet-UKCore-ImmunizationExplanationReason.page.md
+- name: ValueSet UKCore-MedicationCode
+  filename: ValueSet-UKCore-MedicationCode.page.md
+- name: ValueSet UKCore-MedicationDosageMethod
+  filename: ValueSet-UKCore-MedicationDosageMethod.page.md
+- name: ValueSet UKCore-MedicationForm
+  filename: ValueSet-UKCore-MedicationForm.page.md
+- name: ValueSet UKCore-MedicationPrecondition
+  filename: ValueSet-UKCore-MedicationPrecondition.page.md
+- name: ValueSet UKCore-MedicationPrescribingOrganizationType
+  filename: ValueSet-UKCore-MedicationPrescribingOrganizationType.page.md
+- name: ValueSet UKCore-MedicationRequestCategory
+  filename: ValueSet-UKCore-MedicationRequestCategory.page.md
+- name: ValueSet UKCore-MedicationRequestCourseOfTherapy
+  filename: ValueSet-UKCore-MedicationRequestCourseOfTherapy.page.md
+- name: ValueSet UKCore-MedicationStatementCategory
+  filename: ValueSet-UKCore-MedicationStatementCategory.page.md
+- name: ValueSet UKCore-MedicationSupplyType
+  filename: ValueSet-UKCore-MedicationSupplyType.page.md
+- name: ValueSet UKCore-MedicationTradeFamily
+  filename: ValueSet-UKCore-MedicationTradeFamily.page.md
+- name: ValueSet UKCore-NHSNumberVerificationStatus
+  filename: ValueSet-UKCore-NHSNumberVerificationStatus.page.md
+- name: ValueSet UKCore-OtherContactSystem
+  filename: ValueSet-UKCore-OtherContactSystem.page.md
+- name: ValueSet UKCore-PersonMaritalStatusCode
+  filename: ValueSet-UKCore-PersonMaritalStatusCode.page.md
+- name: ValueSet UKCore-PersonRelationshipType
+  filename: ValueSet-UKCore-PersonRelationshipType.page.md
+- name: ValueSet UKCore-PracticeSettingCode
+  filename: Valueset-UKCore-PracticeSettingCode.page.md
+- name: ValueSet UKCore-PreferredContactMethod
+  filename: ValueSet-UKCore-PreferredContactMethod.page.md
+- name: ValueSet UKCore-PreferredWrittenCommunicationFormat
+  filename: ValueSet-UKCore-PreferredWrittenCommunicationFormat.page.md
+- name: ValueSet UKCore-ReasonImmunizationNotAdministered
+  filename: ValueSet-UKCore-ReasonImmunizationNotAdministered.page.md
+- name: ValueSet UKCore-ResidentialStatus
+  filename: ValueSet-UKCore-ResidentialStatus.page.md
+- name: ValueSet UKCore-SubstanceOrProductAdministrationRoute
+  filename: ValueSet-UKCore-SubstanceOrProductAdministrationRoute.page.md
+- name: ValueSet UKCore-VaccinationProcedure
+  filename: ValueSet-UKCore-VaccinationProcedure.page.md
+- name: ValueSet UKCore-VaccinationProcedureSupplementary
+  filename: ValueSet-UKCore-VaccinationProcedureSupplementary.page.md
+- name: ValueSet UKCore-VaccineCode
+  filename: ValueSet-UKCore-VaccineCode.page.md

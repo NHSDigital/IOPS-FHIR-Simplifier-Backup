@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.guide.md
+- name: Engagement
+  filename: Engagement
+- name: Management
+  filename: Management
+- name: Asset Design
+  filename: Asset-Design
+- name: Conformance and Dependencies
+  filename: ConformanceandDependencies
+- name: Assurance and Endorsement
+  filename: AssuranceandEndorsement
+- name: Glossary
+  filename: Glossary

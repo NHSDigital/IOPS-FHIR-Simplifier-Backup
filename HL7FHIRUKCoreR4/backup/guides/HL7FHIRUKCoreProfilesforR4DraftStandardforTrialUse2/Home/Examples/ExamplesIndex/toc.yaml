@@ -1,0 +1,104 @@
+- name: Index
+  filename: Index.guide.md
+- name: Example patientBirthPlace
+  filename: ExamplepatientBirthPlace.guide.md
+- name: Example patientBirthTime
+  filename: ExamplepatientBirthTime.guide.md
+- name: Example patientCadavericDonor
+  filename: ExamplepatientCadavericDonor.guide.md
+- name: Example patientReligion
+  filename: ExamplepatientReligion.guide.md
+- name: Example UKCore-Patient-AddressKey
+  filename: ExampleUKCore-Patient-AddressKey.guide.md
+- name: Example UKCore-AllergyIntolerance
+  filename: ExampleUKCore-AllergyIntolerance.guide.md
+- name: Example UKCore-AllergyIntolerance-AllergyIntoleranceEnd
+  filename: ExampleUKCore-AllergyIntolerance-AllergyIntoleranceEnd.guide.md
+- name: Example UKCore-AllergyIntolerance-EnteredInError
+  filename: ExampleUKCore-AllergyIntolerance-EnteredInError.guide.md
+- name: Example UKCore-AllergyIntolerance-Evidence
+  filename: ExampleUKCore-AllergyIntolerance-Evidence.guide.md
+- name: Example UKCore-Allergy-List
+  filename: ExampleUKCore-Allergy-List.guide.md
+- name: Example UKCore-ContactPreference
+  filename: ExampleUKCore-ContactPreference.guide.md
+- name: Example UKCore-Condition-CodingSCTDescId
+  filename: ExampleUKCore-Condition-CodingSCTDescId.guide.md
+- name: Example UKCore-CopyCorrespondenceIndicator
+  filename: ExampleUKCore-CopyCorrespondenceIndicator.guide.md
+- name: Example UKCore-InterpreterRequired
+  filename: ExampleUKCore-InterpreterRequired.guide.md
+- name: Example UKCore-Location-GeneralPracticeNurseClinic
+  filename: ExampleUKCore-Location-GeneralPracticeNurseClinic.guide.md
+- name: Example UKCore-Location-SJUH
+  filename: ExampleUKCore-Location-SJUH.guide.md
+- name: Example UKCore-Medication-TimoptolEyeDrops
+  filename: ExampleUKCore-Medication-TimoptolEyeDrops.guide.md
+- name: Example UKCore-MedicationAdministration-TimoptolEyeDrops
+  filename: ExampleUKCore-MedicationAdministration-TimoptolEyeDrops.guide.md
+- name: Example UKCore-MedicationDispense-EyeDrops
+  filename: ExampleUKCore-MedicationDispense-EyeDrops.guide.md
+- name: Example UKCore-MedicationRequest-EyeDrops
+  filename: ExampleUKCore-MedicationRequest-EyeDrops.guide.md
+- name: Example UKCore-MedicationRequest-Extension-PharmacistVerifiedIndicator
+  filename: ExampleUKCore-MedicationRequest-Extension-PharmacistVerifiedIndicator.guide.md
+- name: Example UKCore-MedicationRequest-Extension-RepeatInformation
+  filename: ExampleUKCore-MedicationRequest-Extension-RepeatInformation.guide.md
+- name: Example UKCore-MedicationStatement-Amoxicillin
+  filename: ExampleUKCore-MedicationStatement-Amoxicillin.guide.md
+- name: Example UKCore-MedicationStatement-Extension-LastIssueDate
+  filename: ExampleUKCore-MedicationStatement-Extension-LastIssueDate.guide.md
+- name: Example UKCore-MedicationStatement-PrescribingOrganization
+  filename: ExampleUKCore-MedicationStatement-PrescribingOrganization.guide.md
+- name: Example UKCore-Extension-Organization-MainLocation
+  filename: ExampleUKCore-Extension-Organization-MainLocation-Index.guide.md
+- name: Example UKCore-Organization-GPPractice
+  filename: ExampleUKCore-Organization-GPPractice.guide.md
+- name: Example UKCore-Organization-Hospital
+  filename: ExampleUKCore-Organization-Hospital.guide.md
+- name: Example UKCore-Organization-MainLocation
+  filename: ExampleUKCore-Organization-MainLocation.guide.md
+- name: Example UKCore-Extension-Patient-AddressKey
+  filename: ExampleUKCore-Extension-Patient-AddressKey.guide.md
+- name: Example UKCore-Patient-ContactRank
+  filename: ExampleUKCore-Patient-ContactRank-duplicate-2.guide.md
+- name: Example UKCore-Patient-RichardSmith
+  filename: ExampleUKCore-Patient-RichardSmith.guide.md
+- name: Example UKCore-Patient-BabyPatient
+  filename: ExampleUKCore-Patient-BabyPatient.guide.md
+- name: Example UKCore-Patient-ContactPreference
+  filename: ExampleUKCore-Patient-ContactPreference.guide.md
+- name: Example UKCore-Patient-DeathNotificationStatus
+  filename: ExampleUKCore-Patient-DeathNotificationStatus.guide.md
+- name: Example UKCore-Patient-ContactRank
+  filename: ExampleUKCore-Patient-ContactRank.guide.md
+- name: Example UKCore-Patient-CopyCorrespondenceIndicator
+  filename: ExampleUKCore-Patient-CopyCorrespondenceIndicator.guide.md
+- name: Example UKCore-Patient-BirthSex
+  filename: ExampleUKCore-Patient-BirthSex.guide.md
+- name: Example UKCore-Patient-EthnicCategory
+  filename: ExampleUKCore-Patient-EthnicCategory.guide.md
+- name: Example UKCore-Patient-OtherContactSystem
+  filename: ExampleUKCore-Patient-OtherContactSystem.guide.md
+- name: Example UKCore-Patient-NHSNumberVerificationStatus
+  filename: ExampleUKCore-Patient-NHSNumberVerificationStatus.guide.md
+- name: Example UKCore-Patient-ResidentialStatus
+  filename: ExampleUKCore-Patient-ResidentialStatus.guide.md
+- name: Example UKCore-Practitioner-JimmyChuck
+  filename: ExampleUKCore-Practitioner-JimmyChuck.guide.md
+- name: Example UKCore-Practitioner-PaulRastall
+  filename: ExampleUKCore-Practitioner-PaulRastall.guide.md
+- name: Example UKCore-Practitioner-SandraGose
+  filename: ExampleUKCore-Practitioner-SandraGose.guide.md
+- name: Example UKCore-PractitionerRole-GP
+  filename: ExampleUKCore-PractitionerRole-GP.guide.md
+- name: Example UKCore-Immunization-Extension-ParentPresent
+  filename: ExampleUKCore-Immunization-Extension-ParentPresent.guide.md
+- name: Example UKCore-Immunization-Procedure
+  filename: ExampleUKCore-Immunization-Procedure.guide.md
+- name: Example UKCore-Immunization-ProcedureCovid
+  filename: ExampleUKCore-Immunization-ProcedureCovid.guide.md
+- name: Example UKCore-Immunization
+  filename: ExampleUKCore-Immunization.guide.md
+- name: Example OrganizationPeriod
+  filename: ExampleOrganizationPeriod.guide.md

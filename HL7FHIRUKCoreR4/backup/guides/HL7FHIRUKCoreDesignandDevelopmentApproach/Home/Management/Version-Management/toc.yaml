@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: FHIR Assets Versioning
+  filename: FHIRAssetsVersioning.guide.md
+- name: Implementation Guide Versioning and Sequences
+  filename: Implementation-Guide-Versioning-and-Sequences.guide.md
+- name: Package Versioning
+  filename: Package-Versioning.guide.md
+- name: Package and IG Creation Guide
+  filename: Package-and-IG-Creation-Guide.page.md

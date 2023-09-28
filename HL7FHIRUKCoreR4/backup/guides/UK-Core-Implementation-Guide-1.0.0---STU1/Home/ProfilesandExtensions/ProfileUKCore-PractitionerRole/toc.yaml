@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: practitioner
+  filename: practitioner.page.md
+- name: telecom
+  filename: telecom.page.md

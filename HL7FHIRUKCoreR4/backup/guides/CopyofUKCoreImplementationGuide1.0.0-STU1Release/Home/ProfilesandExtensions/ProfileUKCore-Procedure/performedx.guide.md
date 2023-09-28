@@ -1,0 +1,2 @@
+## <code>{{page-title}}</code>
+Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.

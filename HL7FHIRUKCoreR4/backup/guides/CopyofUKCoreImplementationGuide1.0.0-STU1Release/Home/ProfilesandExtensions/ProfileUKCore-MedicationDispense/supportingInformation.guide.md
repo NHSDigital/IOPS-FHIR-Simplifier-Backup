@@ -1,0 +1,5 @@
+## `supportingInformation`
+
+Optional.
+
+---

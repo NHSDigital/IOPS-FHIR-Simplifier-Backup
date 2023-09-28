@@ -1,0 +1,103 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-UKCore-MedicationRepeatInformation" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
+  <version value="2.2.0" />
+  <name value="ExtensionUKCoreMedicationRepeatInformation" />
+  <title value="Extension UK Core Medication Repeat Information" />
+  <status value="active" />
+  <date value="2022-08-26" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="The specific repeat information of a medication item." />
+  <purpose value="This extension extends the MedicationRequest resource to support the exchange of repeat medication data items." />
+  <copyright value="Copyright &#169; 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationRequest" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Medication repeat information" />
+      <definition value="Medication repeat information." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:numberOfPrescriptionsIssued">
+      <path value="Extension.extension" />
+      <sliceName value="numberOfPrescriptionsIssued" />
+      <short value="The specific number of times a repeat prescription has been issued" />
+      <definition value="An integer recording the number of times a repeat prescription has been issued. This integer does not include the original order dispense." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:numberOfPrescriptionsIssued.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="numberOfPrescriptionsIssued" />
+    </element>
+    <element id="Extension.extension:numberOfPrescriptionsIssued.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="The specific number of times a repeat prescription has been issued" />
+      <definition value="An integer recording the number of times a repeat prescription has been issued. This integer does not include the original order dispense." />
+      <min value="1" />
+      <type>
+        <code value="unsignedInt" />
+      </type>
+    </element>
+    <element id="Extension.extension:authorisationExpiryDate">
+      <path value="Extension.extension" />
+      <sliceName value="authorisationExpiryDate" />
+      <short value="Repeat prescription review date" />
+      <definition value="The date a prescriber must review a repeat prescription with the patient. This is distinct from dispenseRequest.validityPeriod.end, which marks when a dispensing cycle ends e.g. in Electronic Repeat Dispensing" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:authorisationExpiryDate.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="authorisationExpiryDate" />
+    </element>
+    <element id="Extension.extension:authorisationExpiryDate.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="Repeat prescription review date" />
+      <definition value="Repeat prescription review date." />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,6 @@
+- name: Development and Release Management
+  filename: Development-and-Release-Management
+- name: Simplifier and GitHub Management
+  filename: Simplifier-and-GitHub-Management
+- name: Version Management
+  filename: Version-Management

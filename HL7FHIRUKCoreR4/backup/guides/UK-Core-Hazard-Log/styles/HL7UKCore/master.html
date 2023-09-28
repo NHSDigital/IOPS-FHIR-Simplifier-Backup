@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ guide-title }}</title>
+
+        <link rel="icon" href="{{content}}/styles/common/favicon.ico" />
+        <link rel="stylesheet" href="{{content}}/styles/common/main.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
+        <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
+
+        <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
+        <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/baseTreetable.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 hl7-fhir-logo-lhs">
+                        <a href="http://hl7.org/fhir/{{guide-fhir-version}}/">
+                            <img src="https://www.hl7.org/fhir/assets/images/fhir-logo-www.png" width="150" alt="HL7 FHIR logo"/>
+                        </a>
+                    </div>
+                    <div class="col-md-16">
+                            <h3 align="center" class="guide-title">{{ guide-title }}</h3>
+                    </div>
+                    <div class="col-md-4 hl7-logo">
+                        <a href="https://www.hl7.org.uk/">
+                            <img src="data:image;base64, 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" width="130" alt="HL7 UK logo"/>
+                        </a> 
+                    </div>
+
+                </div>
+            </div>
+            {{ dropdown-navigation }}
+        </header>
+        <!-- Implementation guide content -->
+        <div class="content container">
+            <!-- Header to be displayed on each page -->
+           
+           <!---  <div markdown="span" class="alert alert-info" role="alert">
+                <i class="fa fa-information"></i>
+          
+                <b>Please note:</b>
+                <ul>
+                     <li> This guidance is currently under development and all content is currently draft.</li>
+                    <li> There will be disruption as the content will be updated daily and with links not working.</li>
+                    <li>Please follow the guidance on the "Contact Us" page if you need any assistance.</li>
+                </ul>
+                
+            </div> -->
+            {{ page-with-children }}
+        </div>
+        <!-- back to top button -->
+        <a id="back-to-top" class="btn btn-fhir" onclick="goBackToTop()">
+            back to top
+        </a>
+        <footer>
+            <!--<div class="container">
+                <div class="row">
+                    <div>
+                        <span>Version: {{ guide-version }}</span>
+                        <span>FHIR Version: {{ guide-fhir-version }}</span>
+                    </div>
+                    <br />
+                    <p>Powered by <b>SIMPLIFIER.NET</b></p>
+                    <div>
+                        HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven
+                        International
+                    </div>
+                </div>
+            </div>-->
+            <div class="container">
+                <table width="100%">
+                        <col style="width:18%">
+                        <col style="width:12%">
+                        <col style="width:12%">
+                        <col style="width:12%">
+                        <col style="width:46%">
+                  <tr>
+                      <td>Powered by <b>SIMPLIFIER.NET</b></td>
+                      <td> IG © 2021+ HL7 UK</td>
+                      <td> <span><b>Version:</b> {{ guide-version }}</span></td>
+                      <td><span><b>FHIR Version:</b> {{ guide-fhir-version }}</span></td>
+                      
+                  </tr>
+                  </table
+                <table width="100%">
+                        <col style="width:18%">
+                        <col style="width:14%">
+                        <col style="width:14%">
+                        <col style="width:12%">
+                        <col style="width:44%">
+                  <tr>
+                    <td>Last Updated 14th December 2021 |&nbsp;<b>Links:</b></td>
+                
+                    <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/~issues">Propose a change</a> |</td>
+                      </tr>  
+                    </table>
+
+
+            </div>
+        </footer>
+        <!-- Back to top button functionality -->
+        <script>
+            var backToTopButton = document.getElementById("back-to-top");
+            // When the user scrolls down 100px from the top of the document, show the button
+            window.onscroll = function () { showTopButton() };
+            function showTopButton() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function goBackToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                $(window.location)[0].replace("#");
+            }
+        </script>
+
+        <!-- Ensures footer is at the bottom of the page -->
+        <script>
+            $(function () {
+                updateFooterPosition();
+            });
+            $(window).resize(function () {
+                updateFooterPosition();
+            });
+            function updateFooterPosition() {
+                var bottomOfFooter = $('footer').offset().top + $('footer').outerHeight(true);
+                var heightShortage = $(document).height() - bottomOfFooter;
+                if (heightShortage < 0) heightShortage = 0;
+                $('footer').css('margin-top', heightShortage);
+            }
+        </script>
+        <script>
+            function openTab(evt, tabName) {
+                // Find the element that has been clicked with jQuery
+                var element = $(evt.target);
+                // Remove the current class of .active in the buttons next to it
+                element.parent().find(".tablinks").removeClass("active");
+                // Add a class of .active to the clicked tab
+                element.addClass("active");
+                // Cache the parent of the button clicked
+                var parent = element.parent().parent();
+                // Clear out the current view (e.g. Table, XML, JSON)
+                parent.find(".tabcontent").hide(0);
+                // Show the desired content with the current view
+                parent.find(".tabcontent[id='"+tabName+"']").show(0);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<lang="en-GB">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ guide-title }}</title>
+
+        <link rel="icon" href="{{content}}/styles/common/favicon.ico" />
+        <link rel="stylesheet" href="{{content}}/styles/common/main.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
+        <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
+
+        <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
+        <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/baseTreetable.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 fhir-logo">
+                        <a href="http://hl7.org/fhir/{{guide-fhir-version}}/">
+                            <!-- <img src="{{content}}/{{style-folder}}/fhir-logo.png?v={{version}}" alt="logo fhir"> -->
+                            
+                            <img src="https://www.hl7.org/fhir/assets/images/fhir-logo-www.png" width="150" />
+                        </a>
+                    </div>
+                    <div class="col-md-16">
+                         <a href="https://simplifier.net/guide/hl7fhirukcorer4release1/home" style="color:#000000">
+                            <h3 align="center" class="guide-title">{{ guide-title }}</h3>
+                    </div>
+                    <div class="col-md-4 hl7-logo">
+                       <a href="http://hl7.org"/>
+   <!--<img src="{{content}}/{{style-folder}}/hl7-logo.jpg?v={{version}}"  alt="visit the FHIR website">-->
+   <img src="https://www.hl7.org/fhir/assets/images/hl7-logo.png" width="60" />   
+                        </a> 
+                    </div>
+
+                </div>
+            </div>
+            {{ dropdown-navigation }}
+        </header>
+
+        <!-- Implementation guide content -->
+        <div class="content container">
+
+            <!-- Header to be displayed on each page -->
+            <!--<div markdown="span" class="alert alert-info" role="alert">
+                <!--<i class="fa fa-information"></i>
+          
+                <b>Please note:</b>
+                <ul>
+                    <li>The UK Core is undergoing development in preparation for the first release which is anticipated
+                        within next 2 weeks).</li>
+                    <li> There will be disruption as the content will be updated daily and with links not working.</li>
+                    <li>Please follow the guidance on the "Contact Us" page if you need any assistance.</li>
+                </ul>
+                
+            </div>-->
+
+            {{ page-with-children }}
+        </div>
+
+        <!-- back to top button -->
+        <a id="back-to-top" class="btn btn-fhir" onclick="goBackToTop()">
+            back to top
+        </a>
+
+        <footer>
+            <!--<div class="container">
+
+                <div class="row">
+                    <div>
+                        <span>Version: {{ guide-version }}</span>
+                        <span>FHIR Version: {{ guide-fhir-version }}</span>
+                    </div>
+
+                    <br />
+                    <p>Powered by <b>SIMPLIFIER.NET</b></p>
+                    <div>
+                        HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven
+                        International
+                    </div>
+                </div>
+            </div>-->
+            <div class="container">
+                <table width="100%">
+                    	<col style="width:18%">
+	                    <col style="width:12%">
+    	                <col style="width:12%">
+	                    <col style="width:12%">
+    	                <col style="width:46%">
+                  <tr>
+                      <td>Powered by <b>SIMPLIFIER.NET</b></td>
+                      <td> IG © 2021+ HL7 UK</td>
+                      <td> <span><b>Version:</b> {{ guide-version }}</span></td>
+                      <td><span><b>FHIR Version:</b> {{ guide-fhir-version }}</span></td>
+                      <td><b>Packages are based on:</b>  <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a> <download></td>
+                      
+                  </tr>
+                  </table
+                <table width="100%">
+                    	<col style="width:18%">
+	                    <col style="width:14%">
+    	                <col style="width:14%">
+	                    <col style="width:12%">
+    	                <col style="width:44%">
+                  <tr>
+                    <td>Released 10th September 2021 |&nbsp;<b>Links:</b></td>
+                    <td><a href="https://simplifier.net/guide/HL7FHIRUKCoreR4Release1/Home/Guidance">Table of contents</a> |</td>
+                    <td><a href="https://simplifier.net/guide/UKCoreVersionHistory/Home">Version history</a> |</td>
+                    <td><a href="https://simplifier.net/guide/HL7FHIRUKCoreR4Release1/Home#I1">Licence</a> |</td>
+                    <td><a href="https://simplifier.net/HL7FHIRUKCoreR4/~issues">Propose a change</a> |</td>
+                      </tr>  
+                    </table>
+
+
+
+            </div>
+
+        </footer>
+
+        <!-- Back to top button functionality -->
+        <script>
+            var backToTopButton = document.getElementById("back-to-top");
+
+            // When the user scrolls down 100px from the top of the document, show the button
+            window.onscroll = function () { showTopButton() };
+
+            function showTopButton() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function goBackToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                $(window.location)[0].replace("#");
+            }
+        </script>
+
+
+        <!-- Ensures footer is at the bottom of the page -->
+        <script>
+            $(function () {
+                updateFooterPosition();
+            });
+
+            $(window).resize(function () {
+                updateFooterPosition();
+            });
+
+            function updateFooterPosition() {
+                var bottomOfFooter = $('footer').offset().top + $('footer').outerHeight(true);
+                var heightShortage = $(document).height() - bottomOfFooter;
+                if (heightShortage < 0) heightShortage = 0;
+                $('footer').css('margin-top', heightShortage);
+            }
+        </script>
+
+        <script>
+            function openTab(evt, tabName) {
+                // Find the element that has been clicked with jQuery
+                var element = $(evt.target);
+
+                // Remove the current class of .active in the buttons next to it
+                element.parent().find(".tablinks").removeClass("active");
+
+                // Add a class of .active to the clicked tab
+                element.addClass("active");
+
+                // Cache the parent of the button clicked
+                var parent = element.parent().parent();
+
+                // Clear out the current view (e.g. Table, XML, JSON)
+                parent.find(".tabcontent").hide(0);
+
+                // Show the desired content with the current view
+                parent.find(".tabcontent[id='"+tabName+"']").show(0);
+            }
+        </script>
+
+    </body>
+
+</html>

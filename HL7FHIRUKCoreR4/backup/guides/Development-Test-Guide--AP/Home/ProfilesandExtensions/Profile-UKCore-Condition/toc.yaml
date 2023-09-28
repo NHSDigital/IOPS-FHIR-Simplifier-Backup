@@ -1,0 +1,20 @@
+- name: Index
+  filename: Index.page.md
+- name: Minimum Viable Content
+  filename: Minimum-Viable-Content.page.md
+- name: Extensions
+  filename: Extensions.page.md
+- name: Bindings
+  filename: bindings.page.md
+- name: subject
+  filename: subject.page.md
+- name: encounter
+  filename: encounter.page.md
+- name: recorder
+  filename: recorder.page.md
+- name: asserter
+  filename: asserter.page.md
+- name: stage
+  filename: stage.page.md
+- name: note
+  filename: note.page.md

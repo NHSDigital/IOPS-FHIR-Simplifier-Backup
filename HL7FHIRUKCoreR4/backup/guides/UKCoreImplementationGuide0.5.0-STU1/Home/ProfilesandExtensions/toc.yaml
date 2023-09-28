@@ -1,0 +1,64 @@
+- name: Extension Library
+  filename: ExtensionLibrary
+- name: Profiles Index
+  filename: ProfilesIndex.guide.md
+- name: Profile UKCore-AllergyIntolerance
+  filename: ProfileUKCore-AllergyIntolerance
+- name: Profile UKCore-Appointment
+  filename: ProfileUKCore-Appointment
+- name: Profile UKCore-Composition
+  filename: ProfileUKCore-Composition
+- name: Profile UKCore-Condition
+  filename: ProfileUKCore-Condition
+- name: Profile UKCore-Encounter
+  filename: ProfileUKCore-Encounter
+- name: Profile UKCore-EpisodeOfCare
+  filename: ProfileUKCore-EpisodeOfCare
+- name: Profile UKCore-Flag
+  filename: ProfileUKCore-Flag
+- name: Profile UKCore-HealthcareService
+  filename: ProfileUKCore-HealthcareService
+- name: Profile UKCore-Immunization
+  filename: ProfileUKCore-Immunization
+- name: Profile UKCore-Location
+  filename: ProfileUKCore-Location
+- name: Profile UKCore-List
+  filename: ProfileUKCore-List
+- name: Profile UKCore-Medication
+  filename: ProfileUKCore-Medication
+- name: Profile UKCore-MedicationAdministration
+  filename: ProfileUKCore-MedicationAdministration
+- name: Profile UKCore-MedicationDispense
+  filename: ProfileUKCore-MedicationDispense
+- name: Profile UKCore-MedicationRequest
+  filename: ProfileUKCore-MedicationRequest
+- name: Profile UKCore-MedicationStatement
+  filename: ProfileUKCore-MedicationStatement
+- name: Profile UKCore-MessageHeader
+  filename: ProfileUKCore-MessageHeader
+- name: Profile UKCore-OperationOutcome
+  filename: ProfileUKCore-OperationOutcome
+- name: Profile UKCore-Organization
+  filename: ProfileUKCore-Organization
+- name: Profile UKCore-Patient
+  filename: ProfileUKCore-Patient
+- name: Profile UKCore-Practitioner
+  filename: ProfileUKCore-Practitioner
+- name: Profile UKCore-PractitionerRole
+  filename: ProfileUKCore-PractitionerRole
+- name: Profile UKCore-Procedure
+  filename: ProfileUKCore-Procedure
+- name: Profile UKCore-Questionnaire
+  filename: ProfileUKCore-Questionnaire
+- name: Profile UKCore-QuestionnaireResponse
+  filename: ProfileUKCore-QuestionnaireResponse
+- name: Profile UKCore-RelatedPerson
+  filename: ProfileUKCore-RelatedPerson
+- name: Profile UKCore-Schedule
+  filename: ProfileUKCore-Schedule
+- name: Profile UKCore-ServiceRequest
+  filename: ProfileUKCore-ServiceRequest
+- name: Profile UKCore-Slot
+  filename: ProfileUKCore-Slot
+- name: Profile UKCore-Task
+  filename: ProfileUKCore-Task

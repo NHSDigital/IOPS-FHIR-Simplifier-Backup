@@ -1,0 +1,5 @@
+title: UK Core Implementation Guide 1.0.0 - STU1
+description: Release 1.0.0 of the UK Core for STU1 Sequence following completion of HL7 UK Ballot 1
+version: 1.0.0
+style-root: project
+style-name: HL7UKCore

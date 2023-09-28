@@ -1,0 +1,5 @@
+title: UK Core Implementation Guide STU2 Sequence - Release for ballot
+description: Release build of the UK Core for STU2 Sequence ballot, by HL7 UK
+version: 1.1.3
+style-root: project
+style-name: HL7UKCore

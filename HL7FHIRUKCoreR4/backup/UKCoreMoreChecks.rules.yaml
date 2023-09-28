@@ -1,0 +1,51 @@
+- name: unique-id
+  action: unique
+  status: "Checking if all resources have a unique id"
+  unique: id
+
+- action: parse
+  name: parse-fhir-resources 
+  status: "Checking if all FHIR Resource files can be parsed"
+  files:
+    - /**/*.xml
+    - /**/*.json
+    - "!package.json"
+
+- name: resource-validation
+  status: "Validating resources against the FHIR standard and their profiles"  
+  action: validate
+  category: Resource
+  suppress: 
+        - 6005
+        - eld-16
+        - eld-12
+        - opd-2
+        
+- action: unique
+  name: unique-canonicals
+  status: "Checking if all StructureDefinitions have a unique canonical"
+  filter: StructureDefinition
+  unique: url 
+
+- name: id-mandatory
+  status: "Checking if all resources have an id"
+  predicate: id.exists()
+  error-message: "Resource {{filepath}} must have an id"
+
+- name: publisher-filled
+  filter: (StructureDefinition or ValueSet or CodeSystem or   CapabilityStatement or SearchParameter or NamingSystem or   ConceptMap).exists()
+  status: "Checking if all resources have publisher filled"
+  predicate: publisher.exists() and (publisher in ('HL7 UK' | 'NHS Digital'))
+  error-message: "Publisher not filled (correctly)"
+
+- name: contact-filled
+  filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or NamingSystem or ConceptMap).exists()
+  status: "Checking if all resources have contact filled"
+  predicate: contact.name.exists() and ('HL7 UK' in contact.name or 'NHS Digital' in contact.name)
+  error-message: "Contact not filled (correctly)"
+
+- name: publisher-equals-contact
+  filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or NamingSystem or ConceptMap).exists()
+  status: "Checking if publisher is one of the contacts"
+  predicate: iif(publisher.exists() and contact.name.exists(), publisher in contact.name)
+  error-message: "Resource has publisher not listed as one of the contacts"

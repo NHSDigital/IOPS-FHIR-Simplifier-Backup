@@ -1,0 +1,110 @@
+- name: Index
+  filename: Index.page.md
+- name: ValueSets and CodeSystems(draft)
+  filename: ValueSetsandCodeSystemsdraft.guide.md
+- name: ValueSet UKCoreAdmissionMethod
+  filename: ValueSetUKCoreAdmissionMethod.guide.md
+- name: ValueSet UKCoreCareSettingType
+  filename: ValueSetUKCoreCareSettingType.guide.md
+- name: ValueSet UKCoreCompositionSectionCode
+  filename: ValueSetUKCoreCompositionSectionCode.guide.md
+- name: ValueSet UKCoreConditionCode
+  filename: ValueSetUKCoreConditionCode.guide.md
+- name: ValueSet UKCoreConditionEpisode
+  filename: ValueSetUKCoreConditionEpisode.guide.md
+- name: ValueSet UKCoreDischargeDestination
+  filename: ValueSetUKCoreDischargeDestination.guide.md
+- name: ValueSet UKCoreDischargeMethod
+  filename: ValueSetUKCoreDischargeMethod.guide.md
+- name: ValueSet UKCoreDocumentType
+  filename: ValueSetUKCoreDocumentType.guide.md
+- name: ValueSet UKCoreEmergencyCareDischargeStatus
+  filename: ValueSetUKCoreEmergencyCareDischargeStatus.guide.md
+- name: ValueSet UKCoreEncounterType
+  filename: ValueSetUKCoreEncounterType.guide.md
+- name: ValueSet UKCoreListCode
+  filename: ValueSetUKCoreListCode.guide.md
+- name: ValueSet UkCoreListWarningCode
+  filename: ValueSetUkCoreListWarningCode.guide.md
+- name: ValueSet UKCoreListWarningCode
+  filename: ValueSetUKCoreListWarningCode.guide.md
+- name: ValueSet UkCoreListEmptyReasonCode
+  filename: ValueSetUkCoreListEmptyReasonCode.guide.md
+- name: ValueSet UKCoreMessageEvent
+  filename: ValueSetUKCoreMessageEvent.guide.md
+- name: ValueSet UKCoreOutcomeOfAttendance
+  filename: ValueSetUKCoreOutcomeOfAttendance.guide.md
+- name: ValueSet UKCoreProcedureCode
+  filename: ValueSetUKCoreProcedureCode.guide.md
+- name: ValueSet UKCoreSourceOfAdmission
+  filename: ValueSetUKCoreSourceOfAdmission.guide.md
+- name: ValueSets and CodeSystems(active)
+  filename: ValueSetsandCodeSystemsactive.guide.md
+- name: ValueSet UKCoreAddressKeyType
+  filename: ValueSetUKCoreAddressKeyType.guide.md
+- name: ValueSet UKCoreAllergyCode
+  filename: ValueSetUKCoreAllergyCode.guide.md
+- name: ValueSet UKCoreAllergyManifestation
+  filename: ValueSetUKCoreAllergyManifestation.guide.md
+- name: ValueSet UKCoreAllergySubstance
+  filename: ValueSetUKCoreAllergySubstance.guide.md
+- name: ValueSet UKCoreBirthSex
+  filename: ValueSetUKCoreBirthSex.guide.md
+- name: ValueSet UKCoreBodySite
+  filename: ValueSetUKCoreBodySite.guide.md
+- name: ValueSet UKCoreDeathNotificationStatus
+  filename: ValueSetUKCoreDeathNotificationStatus.guide.md
+- name: ValueSet UKCoreEthnicCategory
+  filename: ValueSetUKCoreEthnicCategory.guide.md
+- name: ValueSet UKCoreHumanLanguage
+  filename: ValueSetUKCoreHumanLanguage.guide.md
+- name: ValueSet UKCoreImmunizationAdministrationBodySite
+  filename: ValueSetUKCoreImmunizationAdministrationBodySite.guide.md
+- name: ValueSet UKCoreImmunizationExplanationReason
+  filename: ValueSetUKCoreImmunizationExplanationReason.guide.md
+- name: ValueSet UKCoreMedicationCode
+  filename: ValueSetUKCoreMedicationCode.guide.md
+- name: ValueSet UKCoreMedicationDosageMethod
+  filename: ValueSetUKCoreMedicationDosageMethod.guide.md
+- name: ValueSet UKCoreMedicationForm
+  filename: ValueSetUKCoreMedicationForm.guide.md
+- name: ValueSet UKCoreMedicationPrecondition
+  filename: ValueSetUKCoreMedicationPrecondition.guide.md
+- name: ValueSet UKCoreMedicationPrescribingOrganization
+  filename: ValueSetUKCoreMedicationPrescribingOrganization.guide.md
+- name: ValueSet UKCoreMedicationRequestCategory
+  filename: ValueSetUKCoreMedicationRequestCategory.guide.md
+- name: ValueSet UKCoreMedicationRequestCourseOfTherapy
+  filename: ValueSetUKCoreMedicationRequestCourseOfTherapy.guide.md
+- name: ValueSet UKCoreMedicationStatementCategory
+  filename: ValueSetUKCoreMedicationStatementCategory.guide.md
+- name: ValueSet UKCoreMedicationSupplyType
+  filename: ValueSetUKCoreMedicationSupplyType.guide.md
+- name: ValueSet UKCoreMedicationTradeFamily
+  filename: ValueSetUKCoreMedicationTradeFamily.guide.md
+- name: ValueSet UKCoreNHSNumberVerificationStatus
+  filename: ValueSetUKCoreNHSNumberVerificationStatus.guide.md
+- name: ValueSet UKCoreOtherContactSystem
+  filename: ValueSetUKCoreOtherContactSystem.guide.md
+- name: ValueSet UKCorePersonMaritalStatusCode
+  filename: ValueSetUKCorePersonMaritalStatusCode.guide.md
+- name: ValueSet UKCorePersonRelationshipType
+  filename: ValueSetUKCorePersonRelationshipType.guide.md
+- name: ValueSet UKCorePractitionerRoleCode
+  filename: ValueSetUKCorePractitionerRoleCode.guide.md
+- name: ValueSet UKCorePreferredContactMethod
+  filename: ValueSetUKCorePreferredContactMethod.guide.md
+- name: ValueSet UKCorePreferredWrittenCommunicationFormat
+  filename: ValueSetUKCorePreferredWrittenCommunicationFormat.guide.md
+- name: ValueSet UKCoreReasonImmunizationNotAdministered
+  filename: ValueSetUKCoreReasonImmunizationNotAdministered.guide.md
+- name: ValueSet UKCoreResidential Status
+  filename: ValueSetUKCoreResidentialStatus.guide.md
+- name: ValueSet UKCoreSubstanceOrProductAdministrationRoute
+  filename: ValueSetUKCoreSubstanceOrProductAdministrationRoute.guide.md
+- name: ValueSet UKCoreVaccinationProcedure
+  filename: ValueSetUKCoreVaccinationProcedure.guide.md
+- name: ValueSet UKCoreVaccinationProcedureSupplementary
+  filename: ValueSetValueSetUKCoreVaccinationProcedureSupplementary.guide.md
+- name: ValueSet UKCoreVaccineCode
+  filename: ValueSetUKCoreVaccineCode.guide.md

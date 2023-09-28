@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: 'Simplifier Platform Structure '
+  filename: SimplifierPlatformStructure.guide.md
+- name: GitHub Setup
+  filename: GitHubSetup.guide.md
