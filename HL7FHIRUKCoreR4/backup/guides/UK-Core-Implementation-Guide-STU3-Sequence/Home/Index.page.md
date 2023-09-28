@@ -48,28 +48,33 @@ This guidance covers items such as:
 This Guide is divided into several pages which are listed at the top of each page in the menu bar.
 <ul>
 <li>{{pagelink:Home-Guide}}: The home page provides the introduction and background for UK Core.</li>
-<li>{{pagelink:Guidance-Sitemap}}: The Guidance page provides the sitemap of UK Core IG.</li>
+<li>{{pagelink:Guidance-Sitemap}}: The Guidance page provides the sitemap of UK Core IG.
 <ul>
   <li>{{pagelink:Guidance-DataType}}: This page gives guidance on the representation of constructs like Address, Name, and Telecom etc.</li>
   <li>{{pagelink:Guidance-CodeableConcept}}: This page gives guidance on the processing of CodeableConcept codes such as SNOMED CT concepts and descriptions.</li>
 </ul>
-<li>Profiles and Extensions: The  header for pages about Extensions and Profiles</li>
+</li>
+<li>Profiles and Extensions: The  header for pages about Extensions and Profiles
 <ul>
   <li>{{pagelink:Library-Extensions}}: The Extensions which have been defined for the UK Core.</li>
   <li>{{pagelink:Library-Profiles}}: The Profiles which have been defined for the UK Core.</li>
 </ul>
-<li>Terminology: This page lists all the Terminology assets defined as part of this Implementation Guide.</li>
+</li>
+<li>Terminology: This page lists all the Terminology assets defined as part of this Implementation Guide.
 <ul>
   <li>{{pagelink:Library-ConceptMaps}}: This page lists all the ConceptMaps defined as part of this Implementation Guide.</li>
   <li>{{pagelink: Library-ValueSetsAndCodeSystems}}: This is the list of ValueSets and CodeSystems defined for use within the UK Core.</li>
   <li>{{pagelink:Library-ValueSets}}: This is the rendering of all ValueSets defined for use within the UK Core.</li>
   <li>{{pagelink:Library-CodeSystems}}: This is the rendering of all CodeSystems defined for use within the UK Core.</li>
 </ul>
-<li>Examples: The header for examples of UK Core FHIR assets.</li>
+</li>
+<li>Examples: The header for examples of UK Core FHIR assets.
 <ul>
   <li>{{pagelink:Library-Examples-Index}}: This is the list of examples available in this implementation guide</li>
-  <li>{{pagelink:Library-Examples-All}}: This is the rendering of all examples available in this implementation guide</li>
+  <li>{{pagelink:Library-Examples-Profiles}}: This is the rendering of all Profile examples available in this implementation guide</li>
+  <li>{{pagelink:Library-Examples-Extensions}}: This is the rendering of all Extension examples available in this implementation guide</li>
 </ul>
+</li>
 <li>{{pagelink:Home-ContactUs}}:  How to Contact the key parties associated with this implementation guide.</li>
 <li>{{pagelink:Home-Downloads}}:  List of downloads for this implementation guide</li>
 <li>{{pagelink:Home-Glossary}}:  List of abbreviations and external links used in this implementation guide</li>

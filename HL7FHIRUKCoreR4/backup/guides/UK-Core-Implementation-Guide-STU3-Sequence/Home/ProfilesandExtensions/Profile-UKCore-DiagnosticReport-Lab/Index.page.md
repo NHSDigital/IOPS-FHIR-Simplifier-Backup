@@ -124,7 +124,7 @@ Services that should consider using the  UK Core DiagnosticReport profile are:
 This is a derived profile of {{pagelink:Profile-DiagnosticReport}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
 <br><br>
 The DiagnosticReport-Lab profile is expected to reference either:
-- a set a laboratory observations (Observation-Lab) that are grouped under one observation (Observation-LabGroup), for example a urea and electrolyte test that contains many sub tests,
+- a set of laboratory observations (Observation-Lab) that are grouped under one observation (Observation-LabGroup), for example a urea and electrolyte test that contains many sub tests,
 - a single laboratory observation (Observation-Lab) that does not form part of a group of tests, for example Serum ferritin level,
 - combinations of the above, for example a blood test may include multiple grouped tests such as Urea and electrolytes, Liver function tests, Full blood count, each having a single instance of Observation-LabGroup, along with single tests such as Serum C reactive protein level, eGFR using creatinine and Serum ferritin level, each having a single instance of Observation-Lab.
 <br><br>

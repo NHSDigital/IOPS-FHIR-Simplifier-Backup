@@ -368,22 +368,22 @@
                     var clinicalApiLi = $('ul.nav-stacked li a[title|="Clinical Data Provider"]');
 
                     if (constraintsLi != undefined && constraintsLi.length > 0) {
-                        constraintsLi.after("<li><hr></li>");
+                        constraintsLi.parent().after("<li><hr></li>");
                     } else if (bindingsLi != undefined && bindingsLi.length > 0) {
-                        bindingsLi.after("<li><hr></li>");
+                        bindingsLi.parent().after("<li><hr></li>");
                     } else if (extensionsLi != undefined && extensionsLi.length > 0) {
-                        extensionsLi.after("<li><hr></li>");
+                        extensionsLi.parent().after("<li><hr></li>");
                     } else if (mvcLi != undefined && mvcLi.length > 0) {
-                        mvcLi.after("<li><hr></li>");
+                        mvcLi.parent().after("<li><hr></li>");
                     }
 
                     if (patientApiLi != undefined && patientApiLi.length > 0)
                     {
-                        patientApiLi.before("<li><hr></li>");
+                        patientApiLi.parent().before("<li><hr></li>");
                     }
                     if (clinicalApiLi != undefined && clinicalApiLi.length > 0)
                     {
-                        clinicalApiLi.before("<li><hr></li>");
+                        clinicalApiLi.parent().before("<li><hr></li>");
                     }
 
                     var extensionsDiv = $('div#preview-content div#extensions');
@@ -977,7 +977,7 @@
                 $('nav.navbar').removeAttr("role");
                 //set title and role on all trees
                 $('table.treetable').each(function(index) {
-                    $(this).attr("role","presentation");
+                    //$(this).attr("role","presentation");
                     $(this).attr("title","FHIR Tree View");
                 });
                 //set title on all valuset tables

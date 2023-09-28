@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Pakage Release
+  filename: Pakage-Release.page.md
+- name: Implementation Guide Publishing
+  filename: Implementation-Guide-Publishing.page.md
+- name: GitHub Release
+  filename: GitHub-Release.page.md
+- name: Version History
+  filename: Version-History.page.md
