@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.guide.md
+- name: AllergyIntolerance Guidance
+  filename: AllergyIntoleranceGuidance
+- name: Medication Guidance
+  filename: MedicationGuidance.guide.md
+- name: People and Organizations Guidance
+  filename: PeopleandOrganizationsGuidance
+- name: 'DataType Guidance '
+  filename: DataTypeGuidance

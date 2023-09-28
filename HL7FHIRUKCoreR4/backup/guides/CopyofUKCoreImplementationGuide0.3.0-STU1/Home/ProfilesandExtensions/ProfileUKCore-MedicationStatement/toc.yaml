@@ -1,0 +1,42 @@
+- name: Index
+  filename: Index.guide.md
+- name: 'extension: pharmacistVerifiedIndicator'
+  filename: extensionpharmacistVerifiedIndicator-duplicate-3.guide.md
+- name: 'extension: medicationPrescribingOrganization'
+  filename: extensionmedicationPrescribingOrganization.guide.md
+- name: 'extension: medicationStatementLastIssueDate'
+  filename: extensionmedicationStatementLastIssueDate-duplicate-3.guide.md
+- name: identifier
+  filename: identifier.guide.md
+- name: basedOn
+  filename: basedOn.guide.md
+- name: partOf
+  filename: partOf.guide.md
+- name: status
+  filename: status.guide.md
+- name: statusReason
+  filename: statusReason.guide.md
+- name: category
+  filename: category.guide.md
+- name: medication[x]
+  filename: medicationx.guide.md
+- name: subject
+  filename: subject.guide.md
+- name: context
+  filename: context.guide.md
+- name: effective[x]
+  filename: effectivex.guide.md
+- name: dateAsserted
+  filename: dateAsserted.guide.md
+- name: informationSource
+  filename: informationSource.guide.md
+- name: derivedFrom
+  filename: derivedFrom.guide.md
+- name: reasonCode
+  filename: reasonCode.guide.md
+- name: reasonReference
+  filename: reasonReference.guide.md
+- name: note
+  filename: note.guide.md
+- name: dosage
+  filename: dosage.guide.md

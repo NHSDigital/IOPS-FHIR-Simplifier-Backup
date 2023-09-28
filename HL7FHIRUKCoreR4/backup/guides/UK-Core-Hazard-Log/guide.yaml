@@ -1,0 +1,5 @@
+title: UK Core Hazard Log
+description: This generic hazard logs captures the generic hazards for the UK Core.
+version: 0.1.0
+style-root: project
+style-name: HL7UKCore

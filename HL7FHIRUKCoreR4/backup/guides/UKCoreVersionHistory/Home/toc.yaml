@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.guide.md
+- name: UK Core Development Sequences
+  filename: UK-Core-Development-Sequences.guide.md
+- name: STU3 Sequence
+  filename: STU3-Sequence
+- name: STU2 Sequence
+  filename: STU2-Sequence
+- name: STU1 Sequence
+  filename: STU1-Sequence
+- name: Archive
+  filename: Archive
+- name: Glossary
+  filename: Glossary.page.md

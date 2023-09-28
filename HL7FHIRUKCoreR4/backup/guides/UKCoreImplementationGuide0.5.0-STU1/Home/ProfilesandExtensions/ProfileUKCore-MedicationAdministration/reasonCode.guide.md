@@ -1,0 +1,5 @@
+## `reasonCode`
+
+Optional.
+
+---

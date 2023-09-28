@@ -1,0 +1,5 @@
+title: UK Core Implementation Guide Assets in Development
+description: This guide identifies those FHIR Assets that are in development and have not yet been through the UK Core Clinical and Technical Assurance process.
+version: 1.0.0
+style-root: project
+style-name: style

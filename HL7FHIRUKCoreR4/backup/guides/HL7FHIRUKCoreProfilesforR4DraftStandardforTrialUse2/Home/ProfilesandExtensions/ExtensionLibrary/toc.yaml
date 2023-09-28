@@ -1,0 +1,58 @@
+- name: Index
+  filename: Index.guide.md
+- name: HL7 Common Extensions
+  filename: HL7CommonExtensions.guide.md
+- name: Extension UKCore-AddressKey
+  filename: ExtensionUKCore-AddressKey.guide.md
+- name: Extension UKCore-AllergyIntoleranceEnd
+  filename: ExtensionUKCore-AllergyIntoleranceEnd.guide.md
+- name: Extension UKCore-BirthSex
+  filename: ExtensionUKCore-BirthSex.guide.md
+- name: Extension UKCore-CodingSCTDescId
+  filename: ExtensionUKCore-CodingSCTDescId.guide.md
+- name: Extension UKCore-ContactPreference
+  filename: ExtensionUKCore-ContactPreference.guide.md
+- name: Extension UKCore-ContactRank
+  filename: ExtensionUKCore-ContactRank.guide.md
+- name: Extension UKCore-CopyCorrespondenceIndicator
+  filename: ExtensionUKCore-CopyCorrespondenceIndicator.guide.md
+- name: Extension UKCore-DeathNotificationStatus
+  filename: ExtensionUKCore-DeathNotificationStatus.guide.md
+- name: Extension UKCore-EthnicCategory
+  filename: ExtensionUKCore-EthnicCategory.guide.md
+- name: Extension UKCore-Evidence
+  filename: ExtensionUKCore-Evidence.guide.md
+- name: Extension UKCore-MainLocation
+  filename: ExtensionUKCore-MainLocation.guide.md
+- name: Extension UKCore-MedicationRepeatInformation
+  filename: ExtensionUKCore-MedicationRepeatInformation.guide.md
+- name: Extension UKCore-MedicationPrescribingOrganization
+  filename: ExtensionUKCore-MedicationPrescribingOrganization.guide.md
+- name: Extension UKCore-MedicationStatementLastissueDate
+  filename: ExtensionUKCore-MedicationStatementLastissueDate.guide.md
+- name: Extension UKCore-MedicationTradeFamily
+  filename: ExtensionUKCore-MedicationTradeFamily.guide.md
+- name: Extension UKCore-NHSNumberVerificationStatus
+  filename: ExtensionUKCore-NHSNumberVerificationStatus.guide.md
+- name: Extension UKCore-OtherContactSystem
+  filename: ExtensionUKCore-OtherContactSystem.guide.md
+- name: Extension UKCore-ParentPresent
+  filename: ExtensionUKCore-ParentPresent.guide.md
+- name: Extension UKCore-PharmacistVerifiedIndicator
+  filename: ExtensionUKCore-PharmacistVerifiedIndicator.guide.md
+- name: Extension UKCore-ResidentialStatus
+  filename: ExtensionUKCore-ResidentialStatus.guide.md
+- name: Extension UKCore-VaccinationProcedure
+  filename: ExtensionUKCore-VaccinationProcedure.guide.md
+- name: Common Extension organization-period
+  filename: CommonExtensionorganization-period.guide.md
+- name: Common Extension patient-birthPlace
+  filename: CommonExtensionpatient-birthPlace.guide.md
+- name: Common Extension patient-birthTime
+  filename: CommonExtensionpatient-birthTime.guide.md
+- name: Common Extension patient-cadavericDonor
+  filename: CommonExtensionpatient-cadavericDonor.guide.md
+- name: Common Extension patient-InterpreterRequired
+  filename: CommonExtensionpatient-InterpreterRequired.guide.md
+- name: Common Extension patient-religion
+  filename: CommonExtensionpatient-religion.guide.md

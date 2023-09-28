@@ -1,0 +1,297 @@
+html, body {
+     padding: 0;
+     margin: 0;
+}
+ body {
+     position: relative;
+     height: 100%;
+}
+ body header {
+     background-color: #f5f5f5;
+}
+ body header .title {
+     font-size: 24px;
+     font-weight: 700;
+     padding-top: 23px;
+}
+ body header .title a {
+     color: #222;
+     text-decoration: none;
+}
+ body header .fhir-logo {
+     text-align: left;
+     margin-top: 10px;
+     margin-bottom: 5px;
+}
+ body header .hl7-logo {
+     text-align: right;
+     float: left;
+}
+ body header .guide-title {
+    font-weight: 600;
+    font-size: 19px;
+}
+ body .content {
+     overflow: hidden;
+     min-height: 70%;
+     position: relative;
+     height: auto !important;
+     margin-bottom: -155px;
+     padding-bottom: 155px;
+}
+ body footer {
+     background-color: #dddddd;
+     color: #222;
+     height: 155px;
+     position: relative;
+     padding-top: 40px;
+}
+ body .logos {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+}
+ .logocolumn {
+     float: left;
+     width: 33.33%;
+     padding: 5px;
+}
+ .logorow::after {
+     content: "";
+     clear: both;
+     display: table;
+}
+ .tab {
+     overflow: hidden;
+     border: 1px solid #ccc;
+     background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+ .tab button {
+     background-color: inherit;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     transition: 0.3s;
+     font-size: 14px;
+}
+/* Change background color of buttons on hover */
+ .tab button:hover {
+     background-color: #ddd;
+}
+/* Create an active/current tablink class */
+ .tab button.active {
+     background-color: #990000;
+     color: #fff;
+}
+/* Style the tab content */
+ .tabcontent {
+     display: none;
+     padding: 6px 12px;
+     border: 1px solid #ccc;
+     border-top: none;
+}
+ .underconstruction {
+     display: grid;
+     background-color: rgb(255, 208, 0);
+     border: 3px solid black;
+     padding-left: 50px;
+     padding-right: 50px;
+     font-size: 20px;
+     text-align: center;
+}
+ #assets {
+     font-family: Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+}
+ #assets td, #assets th {
+     border: 1px solid #ddd;
+     padding: 8px;
+}
+ #assets tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+ #assets tr:hover {
+    background-color: #ddd;
+}
+ #assets th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background-color: #990000;
+     color: white;
+}
+ #valuesetlist {
+     font-family: Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+}
+ #valuesetlist td, #valuesetlist th {
+     border: 1px solid #ddd;
+     padding: 8px;
+}
+ #valuesetlist tr:nth-child(4){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(5){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(6){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(7){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(10){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(11){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(12){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(13){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(17){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(18){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(21){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(22){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(23){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(24){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(27){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(28){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(31){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(32){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(35){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(36){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(39){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(40){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(43){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(44){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(48){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(49){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(54){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(55){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(56){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(57){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(61){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(62){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(65){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(66){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(69){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(70){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(73){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:nth-child(74){
+    background-color: #f2f2f2;
+}
+ #valuesetlist tr:hover {
+    background-color: #ddd;
+}
+ #valuesetlist th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background-color: #990000;
+     color: white;
+}
+/* back to top button - renders when scrolling */
+ #back-to-top {
+     position: fixed;
+     bottom: 20px;
+     right: 30px;
+     z-index: 99;
+     display: none;
+}
+/* remove the padding on pages under the header */
+ #preview-content {
+     padding-top: 0px !important;
+}
+/* bootstrap overrides */
+ .btn-fhir {
+     background: #990000;
+     color: #fff;
+}
+
+/* Firely Simplifier base style overrides */
+ .navbar-nav>li>a:hover,
+ .navbar-nav>li>a:active,
+ .navbar-nav>li>a:focus  {
+    background-color: #ddd !important;
+    color: #990000 !important;
+}
+ .container-fluid>.navbar-collapse,
+ .container-fluid>.navbar-header,
+ .container>.navbar-collapse,
+ .container>.navbar-header {
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
+
+ div>pre {
+     border: 1px solid #ddd !important;
+     background-color: #f9f9f9 !important;
+ }

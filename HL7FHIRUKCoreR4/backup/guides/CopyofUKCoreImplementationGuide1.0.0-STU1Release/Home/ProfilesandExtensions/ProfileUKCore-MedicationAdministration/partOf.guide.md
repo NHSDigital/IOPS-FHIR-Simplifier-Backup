@@ -1,0 +1,4 @@
+## `partOf`
+Optional.
+
+---

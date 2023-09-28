@@ -1,0 +1,42 @@
+- name: Index
+  filename: Index.page.md
+- name: CodeSystem UKCore-AdditionalPersonRelationshipRole
+  filename: CodeSystemUKCore-AdditionalPersonRelationshipRole.page.md
+- name: CodeSystem UKCore-AddressKeyType
+  filename: CodeSystemUKCore-AddressKeyType.page.md
+- name: CodeSystem UKCore-DeathNotificationStatus
+  filename: CodeSystemUKCore-DeathNotificationStatus.page.md
+- name: CodeSystem UKCore-EthnicCategoryEngland
+  filename: CodeSystemUKCore-EthnicCategoryEngland.page.md
+- name: CodeSystem UKCore-EthnicCategoryWales
+  filename: CodeSystem-UKCore-EthnicCategoryWales.page.md
+- name: CodeSystem UKCore-HumanLanguage
+  filename: CodeSystem-UKCore-HumanLanguage.page.md
+- name: CodeSystem UKCore-MedicationPrescribingOrganizationType
+  filename: CodeSystemUKCore-MedicationPrescribingOrganization.page.md
+- name: CodeSystem UKCore-MedicationRequestCategory
+  filename: CodeSystemUKCore-MedicationRequestCategory.page.md
+- name: CodeSystem UKCore-MedicationRequestCourseOfTherapy
+  filename: CodeSystem-UKCore-MedicationRequestCourseOfTherapy.page.md
+- name: CodeSystem UKCore-MedicationStatementCategory
+  filename: CodeSystemUKCore-MedicationStatementCategory.page.md
+- name: CodeSystem UKCore-MedicationSupplyType
+  filename: CodeSystem-UKCore-MedicationSupplyType.page.md
+- name: CodeSystem UKCore-NHSNumberVerificationStatusEngland
+  filename: CodeSystem-UKCore-NHSNumberVerificationStatusEngland.page.md
+- name: CodeSystem UKCore-NHSNumberVerificationStatusWales
+  filename: CodeSystem-UKCore-NHSNumberVerificationStatusWales.page.md
+- name: CodeSystem UKCore-OtherContactSystem
+  filename: CodeSystemUKCore-OtherContactSystem.page.md
+- name: CodeSystem UKCore-PracticeSettingCode
+  filename: Codesystem-UKCore-PracticeSettingCode.page.md
+- name: CodeSystem UKCore-PersonMaritalStatusEngland
+  filename: CodeSystem-UKCore-PersonMaritalStatusEngland.page.md
+- name: CodeSystem UKCore-PersonMaritalStatusWales
+  filename: CodeSystem-UKCore-PersonMaritalStatusWales.page.md
+- name: CodeSystem UKCore-PreferredContactMethod
+  filename: CodeSystemUKCore-PreferredContactMethod.page.md
+- name: CodeSystem UKCore-PreferredWrittenCommunicationFormat
+  filename: CodeSystemUKCore-PreferredWrittenCommunicationFormat.page.md
+- name: CodeSystem UKCore-ResidentialStatus
+  filename: CodeSystemUKCore-ResidentialStatus.page.md

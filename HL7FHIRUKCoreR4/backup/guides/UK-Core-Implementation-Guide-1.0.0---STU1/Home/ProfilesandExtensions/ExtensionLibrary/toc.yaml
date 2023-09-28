@@ -1,0 +1,46 @@
+- name: Index
+  filename: Index.page.md
+- name: HL7 Common Extensions
+  filename: HL7CommonExtensions.page.md
+- name: Extension UKCore-AddressKey
+  filename: ExtensionUKCore-AddressKey.page.md
+- name: Extension UKCore-AllergyIntoleranceEnd
+  filename: ExtensionUKCore-AllergyIntoleranceEnd.page.md
+- name: Extension UKCore-BirthSex
+  filename: ExtensionUKCore-BirthSex.page.md
+- name: Extension UKCore-CodingSCTDescDisplay
+  filename: Extension-UKCore-CodingSCTDescDisplay.page.md
+- name: Extension UKCore-ContactPreference
+  filename: ExtensionUKCore-ContactPreference.page.md
+- name: Extension UKCore-ContactRank
+  filename: ExtensionUKCore-ContactRank.page.md
+- name: Extension UKCore-CopyCorrespondenceIndicator
+  filename: ExtensionUKCore-CopyCorrespondenceIndicator.page.md
+- name: Extension UKCore-DeathNotificationStatus
+  filename: ExtensionUKCore-DeathNotificationStatus.page.md
+- name: Extension UKCore-EthnicCategory
+  filename: ExtensionUKCore-EthnicCategory.page.md
+- name: Extension UKCore-Evidence
+  filename: ExtensionUKCore-Evidence.page.md
+- name: Extension UKCore-MainLocation
+  filename: ExtensionUKCore-MainLocation.page.md
+- name: Extension UKCore-MedicationPrescribingOrganizationType
+  filename: Extension-UKCore-MedicationPrescribingOrganizationType.page.md
+- name: Extension UKCore-MedicationRepeatInformation
+  filename: ExtensionUKCore-MedicationRepeatInformation.page.md
+- name: Extension UKCore-MedicationStatementLastIssueDate
+  filename: Extension-UKCore-MedicationStatementLastIssueDate.page.md
+- name: Extension UKCore-MedicationTradeFamily
+  filename: ExtensionUKCore-MedicationTradeFamily.page.md
+- name: Extension UKCore-NHSNumberVerificationStatus
+  filename: ExtensionUKCore-NHSNumberVerificationStatus.page.md
+- name: Extension UKCore-OtherContactSystem
+  filename: ExtensionUKCore-OtherContactSystem.page.md
+- name: Extension UKCore-ParentPresent
+  filename: ExtensionUKCore-ParentPresent.page.md
+- name: Extension UKCore-PharmacistVerifiedIndicator
+  filename: ExtensionUKCore-PharmacistVerifiedIndicator.page.md
+- name: Extension UKCore-ResidentialStatus
+  filename: ExtensionUKCore-ResidentialStatus.page.md
+- name: Extension UKCore-VaccinationProcedure
+  filename: ExtensionUKCore-VaccinationProcedure.page.md

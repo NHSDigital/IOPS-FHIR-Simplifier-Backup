@@ -1,0 +1,20 @@
+- name: Index
+  filename: Index.guide.md
+- name: 'Extension: MedicationTradeFamily'
+  filename: ExtensionMedicationTradeFamily.guide.md
+- name: identifier
+  filename: identifier.guide.md
+- name: code
+  filename: code.guide.md
+- name: status
+  filename: status.guide.md
+- name: manufacturer
+  filename: manufacturer.guide.md
+- name: form
+  filename: form.guide.md
+- name: amount
+  filename: amount.guide.md
+- name: ingredient
+  filename: ingredient.guide.md
+- name: batch
+  filename: batch.guide.md

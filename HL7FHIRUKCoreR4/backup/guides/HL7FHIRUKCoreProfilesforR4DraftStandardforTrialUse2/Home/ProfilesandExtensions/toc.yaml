@@ -1,0 +1,28 @@
+- name: Extension Library
+  filename: ExtensionLibrary
+- name: Profiles Index
+  filename: ProfilesIndex.guide.md
+- name: Profile UKCore-AllergyIntolerance
+  filename: ProfileUKCore-AllergyIntolerance
+- name: Profile UKCore-Immunization
+  filename: ProfileUKCore-Immunization
+- name: Profile UKCore-Location
+  filename: ProfileUKCore-Location
+- name: Profile UKCore-Medication
+  filename: ProfileUKCore-Medication
+- name: Profile UKCore-MedicationAdministration
+  filename: ProfileUKCore-MedicationAdministration
+- name: Profile UKCore-MedicationDispense
+  filename: ProfileUKCore-MedicationDispense
+- name: Profile UKCore-MedicationRequest
+  filename: ProfileUKCore-MedicationRequest
+- name: Profile UKCore-MedicationStatement
+  filename: ProfileUKCore-MedicationStatement
+- name: Profile UKCore-Organization
+  filename: ProfileUKCore-Organization
+- name: Profile UKCore-Patient
+  filename: ProfileUKCore-Patient
+- name: Profile UKCore-Practitioner
+  filename: ProfileUKCore-Practitioner
+- name: Profile UKCore-PractitionerRole
+  filename: ProfileUKCore-PractitionerRole

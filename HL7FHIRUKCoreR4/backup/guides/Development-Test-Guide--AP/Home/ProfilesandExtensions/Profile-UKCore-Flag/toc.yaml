@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Minimum Viable Content
+  filename: Minimum-Viable-Content.page.md
+- name: subject
+  filename: subject.page.md
+- name: encounter
+  filename: encounter.page.md
+- name: author
+  filename: author.page.md

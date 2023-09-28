@@ -1,0 +1,11 @@
+- name: Index
+  filename: Index.page.md
+- name: Extensions
+  filename: Extensions.page.md
+- name: identifier
+  filename: identifier.page.md
+- name: telecom
+  filename: telecom-duplicate-2.page.md
+- name: address
+  filename: address-duplicate-2.page.md
+

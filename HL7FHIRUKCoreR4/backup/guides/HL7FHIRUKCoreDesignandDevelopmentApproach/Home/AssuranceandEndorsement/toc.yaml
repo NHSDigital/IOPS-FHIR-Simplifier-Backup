@@ -1,0 +1,14 @@
+- name: Assurance and Endorsement
+  filename: Assurance-and-Endorsement.guide.md
+- name: UK Core Governance Structure
+  filename: UK-Core-Governance-Structure.guide.md
+- name: HL7 UK FHIR Board
+  filename: HL7-UK-FHIR-Board.guide.md
+- name: UK FHIR Delivery Senior Leadership Team
+  filename: UK-FHIR-Delivery-Senior-Leadership-Team.guide.md
+- name: HL7 UK Ballot Process
+  filename: HL7-UK-Ballot-Process.guide.md
+- name: Clinical and Technical Assurance
+  filename: Clinical-and-Technical-Assurance.guide.md
+- name: Data Alliance Partnership Board Submission
+  filename: Data-Alliance-Partnership-Board-Submission.guide.md

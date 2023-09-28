@@ -1,0 +1,20 @@
+- name: Index
+  filename: Index.guide.md
+- name: Introduction
+  filename: Introduction.guide.md
+- name: Use Cases
+  filename: UseCases.guide.md
+- name: Degraded Allergy Codes
+  filename: DegradedAllergyCodes.guide.md
+- name: Negation
+  filename: Negation.guide.md
+- name: Handling No Allergy Records
+  filename: HandlingNoAllergyRecords.guide.md
+- name: Create
+  filename: Create.guide.md
+- name: Read
+  filename: Read.guide.md
+- name: Update
+  filename: Update.guide.md
+- name: Delete
+  filename: Delete.guide.md
