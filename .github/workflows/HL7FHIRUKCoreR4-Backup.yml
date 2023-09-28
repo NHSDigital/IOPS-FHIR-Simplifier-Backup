@@ -1,4 +1,4 @@
-name: Back up simplifier project
+name: HL7FHIRUKCoreR4 Back up simplifier project
 
 on:
   workflow_dispatch:

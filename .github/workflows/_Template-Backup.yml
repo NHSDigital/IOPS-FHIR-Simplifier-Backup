@@ -1,4 +1,4 @@
-name: Back up simplifier project
+name: [_Template] Back up simplifier project
 
 on:
   workflow_dispatch:

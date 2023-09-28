@@ -1,4 +1,4 @@
-name: Back up simplifier project
+name: UKFHIRCommunityAssets Back up simplifier project
 
 on:
   workflow_dispatch:
