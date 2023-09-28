@@ -1,0 +1,40 @@
+- name: Index
+  filename: Index.guide.md
+- name: dm+d
+  filename: dmd-duplicate-2.guide.md
+- name: BNF Drug
+  filename: BNFDrug-duplicate-2.guide.md
+- name: BNF Drug
+  filename: BNFDrug-duplicate-2.guide.md
+- name: BNF Drug
+  filename: BNFDrug.guide.md
+- name: Egton
+  filename: Egton-duplicate-2.guide.md
+- name: EMIS Drug
+  filename: EMISDrug-duplicate-2.guide.md
+- name: Gemscript Drug
+  filename: GemscriptDrug-duplicate-2.guide.md
+- name: Multilex Drug
+  filename: MultilexDrug-duplicate-2.guide.md
+- name: SNOMED CT
+  filename: SNOMEDCT-duplicate-3.guide.md
+- name: READ V2
+  filename: READV2-duplicate-3.guide.md
+- name: READ CTV3
+  filename: READCTV3-duplicate-2.guide.md
+- name: BNF Drug
+  filename: BNFDrug-duplicate-2.guide.md
+- name: Egton
+  filename: Egton-duplicate-2.guide.md
+- name: EMIS Drug
+  filename: EMISDrug-duplicate-2.guide.md
+- name: Gemscript Drug
+  filename: GemscriptDrug-duplicate-2.guide.md
+- name: Multilex Drug
+  filename: MultilexDrug-duplicate-2.guide.md
+- name: SNOMED CT
+  filename: SNOMEDCT-duplicate-2.guide.md
+- name: READ V2
+  filename: READV2-duplicate-2.guide.md
+- name: READ CTV3
+  filename: READCTV3-duplicate-2.guide.md
