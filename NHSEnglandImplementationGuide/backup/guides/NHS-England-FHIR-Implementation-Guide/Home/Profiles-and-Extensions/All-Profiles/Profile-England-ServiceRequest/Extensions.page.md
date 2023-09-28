@@ -2,12 +2,12 @@
 
 More information about the extensions can be found using the links below.
 
-<table class="assets">
+<table class="assets" title="Extensions list">
 <tr>
-<th width="20%">Extension</th>
-<th width="20%">Context</th>
-<th width="30%">Link</th>
-<th width="30%">Comment</th>
+<th class="width20">Extension</th>
+<th class="width20">Context</th>
+<th class="width30">Link</th>
+<th class="width30">Comment</th>
 </tr>
 <tr>
 <td>ERSAdviceAndGuidance</td>

@@ -7,9 +7,9 @@ This index contains all the profiles created for use in NHS England Implementati
 
 <table class="assets">
 <tr>
-<th width="25%">Profile</th>
-<th width="10%">Status</th>
-<th width="45%">Description</th>
+<th class="width25">Profile</th>
+<th class="width10">Status</th>
+<th class="width65">Description</th>
 </tr>
 
 <tr>

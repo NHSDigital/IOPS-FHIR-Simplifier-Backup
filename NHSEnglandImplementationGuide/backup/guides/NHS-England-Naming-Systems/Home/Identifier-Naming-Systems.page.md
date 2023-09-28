@@ -4,7 +4,7 @@ topic: IdentifierNamingSystems
 
 ## Identifier Naming Systems
 
-<table class="assets">
+<table class="assets" title="NHS England naming systems list">
 <tr>
 <th width="20%">Name</th>
 <th width="35%">URL</th>
