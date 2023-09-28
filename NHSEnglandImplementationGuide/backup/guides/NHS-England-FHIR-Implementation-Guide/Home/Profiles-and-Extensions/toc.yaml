@@ -1,0 +1,8 @@
+- name: Extensions Index
+  filename: Extensions-Index.page.md
+- name: All Extensions
+  filename: All-Extensions
+- name: Profiles Index
+  filename: Profiles-Index.page.md
+- name: All Profiles
+  filename: All-Profiles

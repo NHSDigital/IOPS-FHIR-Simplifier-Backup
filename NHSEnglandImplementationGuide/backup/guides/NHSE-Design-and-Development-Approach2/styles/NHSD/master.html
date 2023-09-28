@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ guide-title }}</title>
+
+        <link rel="icon" href="{{content}}/styles/common/favicon.ico" />
+        <link rel="stylesheet" href="{{content}}/styles/common/main.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
+        <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link href="https://design-system.digital.nhs.uk/" rel="preconnect" crossorigin="">
+    <link rel="stylesheet" href="https://design-system.digital.nhs.uk/cdn/v0.97.0/stylesheets/nhsd-frontend.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="//nhs-prod.global.ssl.fastly.net/webfiles/1629803351410/dist/nhsd-frontend-edge-cases.css" media="screen" type="text/css" />
+
+    <link type="font/woff2" href="https://dbs1dgg3cdf4v.cloudfront.net/cdn/latest/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
+    <link type="font/woff2" href="https://dbs1dgg3cdf4v.cloudfront.net/cdn/latest/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
+    <link type="font/woff2" href="https://dbs1dgg3cdf4v.cloudfront.net/cdn/latest/fonts/FrutigerLTW01-45Light.woff2" rel="preload" as="font" crossorigin>
+
+        <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
+        <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/baseTreetable.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="container">
+                <div id="header" class="row">
+                    <div class="col-md-4 hl7-fhir-logo-lhs">
+                        <a href="https://digital.nhs.uk/">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/NHS_England_logo.svg/2560px-NHS_England_logo.svg.png" width="100" alt="NHS England logo"/>
+                        </a>
+                    </div>
+                    <div class="col-md-16">
+                            <h3 align="center" class="guide-title">{{ guide-title }}</h3>
+                    </div>
+                    <div class="col-md-4 hl7-logo" style="margin-top:15px;">
+                        <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
+                           <img src="https://www.hl7.org/fhir/assets/images/fhir-logo-www.png" width="200" alt="HL7 FHIR logo"/>
+                        </a> 
+                    </div>
+
+                </div>
+            </div>
+            {{ dropdown-navigation }}
+        </header>
+
+        <!-- Implementation guide content -->
+        <div class="content container">
+
+            <!-- Header to be displayed on each page -->
+            <!--Comment out for publication, start-->
+
+            <div id="header" class="row">
+                <div markdown="span" class="alert alert-danger" role="alert">
+                    <h4><i class="fas fa-exclamation-triangle"></i> WARNING</h4>
+                    This guidance is under active development by NHS England and content may be added or updated on a regular basis.
+                </div>
+            </div>
+            <!--Comment out for publication, end-->
+
+
+            {{ page-with-children }}
+                    </div>
+<!-- back to top button -->
+        <a id="back-to-top" class="btn btn-fhir" onclick="goBackToTop()">
+            back to top
+        </a>
+
+        <footer>
+            <!--<div class="container">
+
+                <div class="row">
+                    <div>
+                        <span>Version: {{ guide-version }}</span>
+                        <span>FHIR Version: {{ guide-fhir-version }}</span>
+                    </div>
+
+                    <br />
+                    <p>Powered by <b>SIMPLIFIER.NET</b></p>
+                    <div>
+                        HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven
+                        International
+                    </div>
+                </div>
+            </div>-->
+            <div class="container">
+                <table width="100%">
+                    	<col style="width:25%">
+	                    <col style="width:15%">
+    	                <col style="width:20%">
+	                    <col style="width:15%">
+    	                <col style="width:25%">
+                  <tr>
+                      <td>Powered by <b>SIMPLIFIER.NET</b></td>
+                      <td> IG © 2023+ NHS England</td>
+                      <td> <span><b>Version:</b> {{ guide-version }}</span></td>
+                      <td><span><b>FHIR Version:</b> {{ guide-fhir-version }}</span></td>
+                      <td><b>Packages are based on:</b>  <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a> </td>
+                      
+                  </tr>
+                  </table>
+                <table width="100%">
+                    	<col style="width:25%">
+	                    <col style="width:15%">
+    	                <col style="width:20%">
+	                    <col style="width:15%">
+    	                <col style="width:25%">
+                  <tr>
+                    <td><b>Released:</b> TBC</td>
+                    <td colspan="4"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Guidance/Sitemap-Overview?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#I1">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                      </tr>  
+                    </table>
+            </div>
+        </footer>
+
+    <!-- Legacy openTab() function for existing NHS-D guides -->
+    <script>
+        function openTab(evt, tabName) {
+            // Find the element that has been clicked with jQuery
+            var element = $(evt.target);
+
+            // Remove the current class of .active in the buttons next to it
+            element.parent().find(".nhsd-a-button").removeClass("active").addClass("nhsd-a-button--outline");
+
+            // Add a class of .active to the clicked tab
+            element.addClass("active").removeClass("nhsd-a-button--outline");
+
+            // Cache the parent of the button clicked
+            var parent = element.parent().parent();
+
+            // Clear out the current view (e.g. Table, XML, JSON)
+            parent.find(".tabcontent").hide(0);
+
+            // Show the desired content with the current view
+            parent.find(".tabcontent[id='"+tabName+"']").show(0);
+        }
+    </script>
+
+
+    <!-- Back to top button functionality -->
+    <script>
+        var backToTopButton = document.getElementById("back-to-top");
+
+        // When the user scrolls down 100px from the top of the document, show the button
+        window.onscroll = function () { showTopButton() };
+
+        function showTopButton() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function goBackToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            $(window.location)[0].replace("#");
+        }
+    </script>
+
+
+    <!-- Ensures footer is at the bottom of the page -->
+    <script>
+        $(function () {
+            updateFooterPosition();
+        });
+
+        $(window).resize(function () {
+            updateFooterPosition();
+        });
+
+        function updateFooterPosition() {
+            var bottomOfFooter = $('footer').offset().top + $('footer').outerHeight(true);
+            var heightShortage = $(document).height() - bottomOfFooter;
+            if (heightShortage < 0) heightShortage = 0;
+            $('footer').css('margin-top', heightShortage);
+        }
+
+        function openTab(evt, tabName) {
+            // Find the element that has been clicked with jQuery
+            var element = $(evt.target);
+
+            // Remove the current class of .active in the buttons next to it
+            element.parent().find(".tablinks").removeClass("active");
+
+            // Add a class of .active to the clicked tab
+            element.addClass("active");
+
+            // Cache the parent of the button clicked
+            var parent = element.parent().parent();
+
+            // Clear out the current view (e.g. Table, XML, JSON)
+            parent.find(".tabcontent").hide(0);
+
+            // Show the desired content with the current view
+            parent.find(".tabcontent[id='"+tabName+"']").show(0);
+        }
+        
+        const reloadPage = () => {
+            location.reload()
+        }
+    </script>
+
+</body>
+
+</html>
