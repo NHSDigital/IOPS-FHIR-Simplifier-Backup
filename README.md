@@ -8,36 +8,37 @@ A valid Simplifier account.
 
 ## To add a new project:
 
-- Create a new folder named after the Simplifier Project ensuring all whitespaces are removed, e.g. HL7FHIRUKCoreR4. This will be referred to as [ProjectFolderName]. 
+- Create a new folder named after the Simplifier Project ensuring all whitespaces are removed, e.g. HL7FHIRUKCoreR4. This will be referred to as [ProjectName]. 
 - Within the folder create a new README.md with a link to the project
 - Copy the Github Action .github/workflows/Backup.yml, and prefixing the project name to the filename, e.g. HL7FHIRUKCoreR4-Backup.yml
-- Within the yml file change the following to refer to the [ProjectFolderName] created above:
+- Within the yml file change the following to refer to the [ProjectName] created above:
     - line 1:
-        - [ProjectFolderName] Back Up
+        - [Project Name] Back Up
     - line 31:
-        - secrets.[PROJECTFOLDERNAME]_SIMPLIFIER_USER 
-        - secrets.[PROJECTFOLDERNAME]_SIMPLIFIER_PWD
-        - secrets.[PROJECTFOLDERNAME]_SIMPLIFIER_ADDRESS
+        - secrets.[PROJECTNAME]_SIMPLIFIER_USER 
+        - secrets.[PROJECTNAME]_SIMPLIFIER_PWD
+        - secrets.[PROJECTNAME]_SIMPLIFIER_ADDRESS
 
 ## Schedule to run
 
 The action is set to run hourly by default in the [action file](.github/workflows/backup.yml#L6).  
 
+To help with calculating the time correctly see [Cronitor - a cron job calculator](https://crontab.guru/)
 Further info on using a [scheduled cron job](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) in an action.
 
 ## Respository secrets and variables required
 
-Under `Settings -> Secrets and variables -> Actions` add the following, where [PROJECTFOLDERNAME] is the name given to the folder above, capitalised, e.g. HL7FHIRUKCORER4:
+Under `Settings -> Secrets and variables -> Actions` add the following, where [PROJECTNAME] is the name given to the folder above, capitalised, e.g. HL7FHIRUKCORER4:
 
 ### Secrets to add:
-* [PROJECTFOLDERNAME]_SIMPLIFIER_USER  
+* [PROJECTNAME]_SIMPLIFIER_USER  
   * Simplifier username that has access to project.  
-* [PROJECTFOLDERNAME]_SIMPLIFIER_PWD  
+* [PROJECTNAME]_SIMPLIFIER_PWD  
   * Password for Simplifier user.
 
 ### Variables to add:
 
-* [PROJECTFOLDERNAME]_SIMPLIFIER_ADDRESS
+* [PROJECTNAME]_SIMPLIFIER_ADDRESS
   * Address of project - e.g. `https://api.simplifier.net/<project>/zip`
   * See Firely docs on project zip using the [Simplifier API](https://docs.fire.ly/projects/Simplifier/features/api.html#project-zip-api)
 
