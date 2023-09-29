@@ -1,0 +1,5 @@
+title: Diabetes Information Sharing
+description: An implementation guide documenting an approach to diabetes information sharing in health and social care using the FHIR standard.
+version: 1.0.0-Discovery
+style-root: project
+style-name: ers
