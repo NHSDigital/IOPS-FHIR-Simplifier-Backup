@@ -1,0 +1,16 @@
+- name: Index
+  filename: Index.page.md
+- name: Sitemap overview
+  filename: Sitemap-Overview.page.md
+- name: Design
+  filename: Design
+- name: Build
+  filename: Build
+- name: FHIR Assets
+  filename: FHIRAssets
+- name: Examples
+  filename: Examples
+- name: Glossary
+  filename: Glossary
+- name: Help and support
+  filename: Helpandsupport

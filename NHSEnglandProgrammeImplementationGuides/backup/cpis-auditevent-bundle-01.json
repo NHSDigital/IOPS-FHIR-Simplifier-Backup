@@ -1,0 +1,102 @@
+{
+  "resourceType": "Bundle",
+  "id": "145b0aa0-8709-4272-b7c0-75738a9822f3",
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://int.api.service.nhs.uk/cpis/FHIR/R4/AuditEvent?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9912003890"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://int.api.service.nhs.uk/cpis/FHIR/R4/AuditEvent/a4e5b771-f32b-4ca2-a40e-84abec9792cd",
+      "resource": {
+        "resourceType": "AuditEvent",
+        "id": "a4e5b771-f32b-4ca2-a40e-84abec9792cd",
+        "type": {
+          "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+          "display": "Access/View Record Lifecycle Event"
+        },
+        "recorded": "2023-09-07T17:36:41+00:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+                  "code": "PAT",
+                  "display": "patient"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                "value": "9912003890"
+              }
+            },
+            "requestor": "false"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+                  "code": "ASSIGNED",
+                  "display": "assigned entity"
+                }
+              ]
+            },
+            "who": {
+              "reference": "PractitionerRole/42f72e9a-ab20-43b9-a19a-9ba9a608f732"
+            },
+            "requestor": "true"
+          }
+        ],
+        "source": {
+          "observer": {
+            "reference": "PractitionerRole/42f72e9a-ab20-43b9-a19a-9ba9a608f732"
+          }
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://int.api.service.nhs.uk/cpis/FHIR/R4/PractitionerRole/42f72e9a-ab20-43b9-a19a-9ba9a608f732",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "42f72e9a-ab20-43b9-a19a-9ba9a608f732",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "110694889738"
+          }
+        ],
+        "practitioner": {
+          "display": "Mrs Paula PALMER"
+        },
+        "organization": {
+          "display": "THE WHITTINGTON HOSPITAL NHS TRUST - COMM. PAED. MEDICAL TEAM (RKEAA)"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "158992006",
+                "display": "Midwifery sister "
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    }
+  ]
+}

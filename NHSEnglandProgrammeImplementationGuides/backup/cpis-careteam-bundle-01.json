@@ -1,0 +1,59 @@
+{
+    "resourceType": "Bundle",
+    "id": "9daf8ceb-46eb-4314-9c6f-6900571a7dfa",
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "https://int.api.service.nhs.uk/cpis/FHIR/R4/CareTeam?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9912003890"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "https://int.api.service.nhs.uk/cpis/FHIR/R4/CareTeam/b3982299-c9cc-4502-a8d5-16d984de735f",
+            "resource": {
+                "resourceType": "CareTeam",
+                "id": "b3982299-c9cc-4502-a8d5-16d984de735f",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "342191000000101",
+                                "display": "Subject to child protection plan"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Islington Local Authority",
+                "subject": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9912003890"
+                    },
+                    "display": "Melanie JONES"
+                },
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "0207527200",
+                        "use": "work"
+                    },
+                    {
+                        "system": "phone",
+                        "value": "0734577777",
+                        "use": "mobile"
+                    }
+                ],
+                "period": {
+                    "start": "2022-09-26",
+                    "end": "2023-09-26"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}
