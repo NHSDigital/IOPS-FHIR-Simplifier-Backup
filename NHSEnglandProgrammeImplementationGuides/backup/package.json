@@ -1,0 +1,9 @@
+{
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "fhir.r4.ukcore.stu3.currentbuild": "0.0.6-pre-release",
+    "hl7.fhir.r4.core": "4.0.1"
+  }
+}
