@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="SCR-AlertType" />
+    <url value="https://fhir.nhs.uk/ValueSet/SCR-AlertType" />
+    <version value="1.0.0" />
+    <name value="SCR-AlertType" />
+    <title value="Summary Care Record Alert Type" />
+    <status value="active" />
+    <date value="2023-01-23T00:00:00+00:00" />
+    <publisher value="NHS Digital" />
+    <contact>
+        <name value="NHS Digital" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <description value="A valueset to identify the reason a viewing alert has been triggered while viewing a Summary Care Record." />
+    <copyright value="Copyright &#169; 2020 NHS Digital" />
+    <compose>
+        <include>
+            <system value="https://fhir.nhs.uk/CodeSystem/SCR-AlertType" />
+        </include>
+    </compose>
+</ValueSet>

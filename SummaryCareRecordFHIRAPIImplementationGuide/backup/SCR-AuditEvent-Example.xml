@@ -1,0 +1,62 @@
+<AuditEvent xmlns="http://hl7.org/fhir">
+  <id value="example" />
+  <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-SCR-NotificationMessage">
+    <valueString value="Alert: Permission to view override 1C03CF4F-D404-4D76-B192-4F81727059F6" />
+  </extension>
+  <type>
+    <system value="https://fhir.nhs.uk/CodeSystem/SCR-AlertType" />
+    <code value="1" />
+    <display value="Create LR (Self Claimed)" />
+  </type>
+  <subtype>
+    <system value="https://fhir.nhs.uk/CodeSystem/SCR-AlertReason" />
+    <code value="1" />
+    <display value="Access made in the public interest" />
+  </subtype>
+  <recorded value="2020-11-13T00:00:00+00:00" />
+  <agent>
+    <who>
+      <identifier>
+        <system value="https://fhir.nhs.uk/Id/nhs-number" />
+        <value value="9999999998" />
+      </identifier>
+    </who>
+    <requestor value="false" />
+  </agent>
+  <agent>
+    <who>
+      <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+        <value value="T10101" />
+      </identifier>
+    </who>
+    <requestor value="false" />
+  </agent>
+  <agent>
+    <who>
+      <identifier>
+        <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+        <value value="T10101" />
+      </identifier>
+    </who>
+    <role>
+      <text value="General Practitioner" />
+    </role>
+    <requestor value="false" />
+  </agent>
+  <source>
+    <observer>
+      <identifier>
+        <system value="https://fhir.nhs.uk/Id/nhsSpineASID" />
+        <value value="227319907548" />
+      </identifier>
+    </observer>
+  </source>
+  <entity>
+    <what>
+      <identifier>
+        <value value="1C03CF4F-D404-4D76-B192-4F81727059F6" />
+      </identifier>
+    </what>
+  </entity>
+</AuditEvent>

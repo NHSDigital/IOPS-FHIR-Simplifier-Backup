@@ -1,0 +1,30 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="SCR-AlertType" />
+    <url value="https://fhir.nhs.uk/CodeSystem/SCR-AlertType" />
+    <version value="1.0.0" />
+    <name value="SCR-AlertType" />
+    <title value="Summary Care Record Alert Type" />
+    <status value="active" />
+    <date value="2023-01-24T00:00:00+00:00" />
+    <publisher value="NHS Digital" />
+    <contact>
+        <name value="NHS Digital" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <description value="A CodeSystem to identify the reason type a viewing alert has been triggered while viewing a Summary Care Record." />
+    <copyright value="Copyright &#169; 2020 NHS Digital" />
+    <caseSensitive value="true" />
+    <content value="complete" />
+    <concept>
+        <code value="1" />
+        <display value="Create LR (Self Claimed)" />
+    </concept>
+    <concept>
+        <code value="2" />
+        <display value="Access Alert" />
+    </concept>
+</CodeSystem>

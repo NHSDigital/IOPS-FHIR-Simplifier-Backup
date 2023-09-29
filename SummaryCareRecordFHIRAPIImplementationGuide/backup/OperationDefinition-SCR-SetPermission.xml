@@ -1,0 +1,45 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="SCR-SetPermission" />
+  <url value="https://fhir.nhs.uk/OperationDefinition/SCR-SetPermission" />
+  <version value="1.0.0" />
+  <name value="SCR-SetPermission" />
+  <status value="active" />
+  <kind value="operation" />
+  <date value="2020-11-06T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+    </telecom>
+  </contact>
+  <description value="Sets Access Control Service permission to view value for GP Summary" />
+  <code value="setPermission" />
+  <system value="true" />
+  <type value="false" />
+  <instance value="false" />
+  <parameter>
+    <name value="SCR-SetPermissions-OperationInParameter" />
+    <use value="in" />
+    <min value="1" />
+    <max value="1" />
+    <documentation value="Passes parameters required to SCR-SetPermission operation." />
+    <part>
+      <name value="nhsNumber" />
+      <use value="in" />
+      <min value="1" />
+      <max value="1" />
+      <documentation value="Identifies Person (Patient) whose ACS Permission to view value is to be changed" />
+      <type value="string" />
+    </part>
+    <part>
+      <name value="permissionCode" />
+      <use value="in" />
+      <min value="1" />
+      <max value="1" />
+      <documentation value="Code recording ACS Permission to view value" />
+      <type value="CodeableConcept" />
+    </part>
+  </parameter>
+</OperationDefinition>
