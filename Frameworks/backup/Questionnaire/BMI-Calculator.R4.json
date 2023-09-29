@@ -1,0 +1,233 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "b1132517-9aea-4968-910b-ccfa3889c33a",
+  "meta": {
+    "versionId": "8",
+    "lastUpdated": "2023-08-21T13:34:33.806Z"
+  },
+  "url": "https://example.fhir.nhs.uk/Questionnaire/BMI",
+  "identifier": [
+    {
+      "system": "http://snomed.info/sct",
+      "value": "301331008"
+    }
+  ],
+  "title": "BMI Calculator",
+  "status": "draft",
+  "description": "Based on https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+  "purpose": "For discussion purposes",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "301331008",
+      "display": "Finding of body mass index"
+    }
+  ],
+  "item": [
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "cm",
+            "display": "centimeter"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 6,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        }
+      ],
+      "linkId": "9832470915833",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "50373000",
+          "display": "Body height measure"
+        }
+      ],
+      "text": "Height",
+      "required": true,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "centimeter",
+            "system": "http://unitsofmeasure.org",
+            "code": "cm"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "7669013641553",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "424144002",
+          "display": "Current chronological age"
+        }
+      ],
+      "text": "Age",
+      "type": "integer",
+      "required": true
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "kg",
+            "display": "kilogram"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 6,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "81247982689",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "27113001",
+          "display": "Body weight"
+        }
+      ],
+      "text": "Weight",
+      "type": "quantity",
+      "required": true
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "cm",
+            "display": "centimeter"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 6,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        }
+      ],
+      "linkId": "7761181498456",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "276361009",
+          "display": "Waist circumference"
+        }
+      ],
+      "text": "Waist circumference",
+      "type": "quantity"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "7961672363665",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "184100006",
+          "display": "Patient sex"
+        }
+      ],
+      "text": "Sex",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 6,
+            "unit": "years",
+            "system": "http://unitsofmeasure.org",
+            "code": "a"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "7658017405403",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "398089004",
+          "display": "Ethnic background"
+        }
+      ],
+      "text": "Ethnic Group",
+      "type": "choice",
+      "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-EthnicCategory",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "7658017405403_helpText",
+          "text": "Why are we asking? Black, Asian and other minority ethnic groups with a BMI of 23 or more have a higher risk of getting type 2 diabetes and other long term illnesses",
+          "type": "display"
+        }
+      ]
+    }
+  ]
+}

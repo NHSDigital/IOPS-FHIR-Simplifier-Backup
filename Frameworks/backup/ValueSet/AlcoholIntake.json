@@ -1,0 +1,31 @@
+{
+    "resourceType": "ValueSet",
+    "id": "a52fe385-723b-43bd-bb22-5a9038531cfb",
+    "url": "https://fhir.nhs.uk/ValueSet/AlcoholIntake",
+    "version": "0.0.1",
+    "name": "AlcoholIntake",
+    "title": "Alcohol Intake",
+    "status": "draft",
+    "date": "2023-08-14",
+    "publisher": "NHS England",
+    "description": "From PRSB definition in diabetes",
+    "copyright": "Copyright © 2021+ NHS England",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "filter": [
+                    {
+                        "property": "constraint",
+                        "op": "=",
+                        "value": "<<219006 |Current drinker of alcohol (finding)| OR <<105542008 |Current non-drinker of alcohol (finding)| OR 783261004 |Lifetime non-drinker of alcohol (finding)| OR 1104551000000109 |Declined to provide information about alcohol use (situation)| OR 371434005 |History of alcohol abuse (situation)|"
+                    }
+                ]
+            }
+        ]
+    },
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-14T11:24:24.308Z"
+    }
+}

@@ -1,0 +1,153 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "c08e800b-4b64-40f1-8c04-5461e22dab7b",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2023-08-23T13:45:22.333Z"
+  },
+  "url": "https://example.fhir.nhs.uk/Questionnaire/713663002",
+  "identifier": [
+    {
+      "system": "http://snomed.info/sct",
+      "value": "713663002"
+    }
+  ],
+  "title": "Care and Support Plan",
+  "status": "draft",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "713663002",
+      "display": "Carer Support Needs Assessment Tool"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "autocomplete",
+                    "display": "Auto-complete"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "6950530112826",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "450739009",
+              "display": "Strengths and difficulties questionnaire"
+            }
+          ],
+          "text": "Strength (coded)",
+          "type": "choice",
+          "repeats": true,
+          "answerValueSet": "https://fhir.nhs.uk/ValueSet/Strengths"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "9019842773615_helpText",
+          "text": "Any strengths and assets the person has relating to their goals and hopes about their health and well-being",
+          "type": "display"
+        }
+      ],
+      "type": "group",
+      "linkId": "9019842773615",
+      "text": "Strengths"
+    },
+    {
+      "linkId": "4804125796912",
+      "text": "Needs, concerns or problems",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 1,
+                "unit": "years",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "autocomplete",
+                    "display": "Auto-complete"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "2889912892438",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "404187006",
+              "display": "Statement of needs"
+            }
+          ],
+          "text": "Needs (coded)",
+          "type": "choice",
+          "repeats": true,
+          "answerValueSet": "https://fhir.nhs.uk/ValueSet/Needs"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "4804125796912_helpText",
+          "text": "Details of the person needs, concerns or problems",
+          "type": "display"
+        }
+      ]
+    }
+  ]
+}

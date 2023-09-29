@@ -1,0 +1,157 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "ca2ecf9c-6bf9-49f7-a41f-bc11ead73d14",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2023-05-31T14:21:29.806Z"
+    },
+    "questionnaire": "https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding",
+    "status": "completed",
+    "subject": {
+      "reference": "Patient/b573262f-a1d7-4083-891a-7edd71bc459e",
+      "display": "Mr William Smith"
+    },
+    "authored": "2023-05-31T14:21:29.288Z",
+    "item": [
+      {
+        "linkId": "/927981000000106",
+        "text": "Baseline SpO2 (oxygen saturation at periphery)",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 98.0,
+              "unit": "percent",
+              "system": "http://unitsofmeasure.org",
+              "code": "%"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "/27113001",
+        "text": "Weight Measured",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 96.2,
+              "unit": "kilogram",
+              "system": "http://unitsofmeasure.org",
+              "code": "kg"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "/363811000",
+        "text": "Head circumference",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 59.0,
+              "unit": "centimeter",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "/50373000",
+        "text": "Body height",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 179.0,
+              "unit": "centimeter",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "/276885007",
+        "text": "Body temperature",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 37.0,
+              "unit": "degree Celsius",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "/72313002",
+        "text": "Systolic blood pressure",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 120.0,
+              "unit": "millimeter of mercury",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "/1091811000000102",
+        "text": "Diastolic blood pressure",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 80.0,
+              "unit": "millimeter of mercury",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "/364075005",
+        "text": "Heart rate",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 61.0,
+              "unit": "heart beats per minute",
+              "system": "http://unitsofmeasure.org",
+              "code": "{beats}/min"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "/86290005",
+        "text": "Resp rate",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 17,
+              "unit": "Breaths / minute",
+              "system": "http://unitsofmeasure.org",
+              "code": "{Breaths}/min"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "/60621009",
+        "text": "BMI",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 30,
+              "unit": "kilogram per square meter",
+              "system": "http://unitsofmeasure.org",
+              "code": "kg/m2"
+            }
+          }
+        ]
+      }
+    ]
+  }

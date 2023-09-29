@@ -1,0 +1,147 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "ec6da383-e3ee-4485-ab4c-2f483164b869",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2023-05-31T14:26:22.986Z"
+    },
+    "questionnaire": "https://example.fhir.nhs.uk/Questionnaire/T2DRiskForm",
+    "status": "completed",
+    "subject": {
+      "reference": "Patient/b573262f-a1d7-4083-891a-7edd71bc459e",
+      "display": "Mr William Smith"
+    },
+    "authored": "2023-05-31T14:26:22.770Z",
+    "item": [
+      {
+        "linkId": "9318275084197",
+        "text": "Are you male or female?",
+        "answer": [
+          {
+            "valueCoding": {
+              "display": "Male"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "9039795480167",
+        "text": "How old are you?",
+        "answer": [
+          {
+            "valueString": "55"
+          }
+        ]
+      },
+      {
+        "linkId": "6009173247336",
+        "text": "What is your ethnic background",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+              "code": "A",
+              "display": "White - British"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "398054642271",
+        "text": "Do you have a parent, brother,  sister and/or own child with diabetes",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://snomed.info/sct",
+              "code": "430679000",
+              "display": "Family history of diabetes mellitus type 2"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "6497181065895",
+        "text": "What is your waist measurement?",
+        "answer": [
+          {
+            "valueQuantity": {
+              "value": 86,
+              "unit": "centimeter",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "271823025272",
+        "text": "What is your Body Mass Index (BMI)?",
+        "item": [
+          {
+            "linkId": "271823025272_helpText",
+            "text": "How tall are you?",
+            "answer": [
+              {
+                "valueQuantity": {
+                  "value": 179,
+                  "unit": "centimeter",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "cm"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "4505953325122",
+            "text": "How much do you weigh?",
+            "answer": [
+              {
+                "valueQuantity": {
+                  "value": 96.2,
+                  "unit": "kilogram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "kg"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "9175505021448",
+            "text": "Your BMI is:",
+            "answer": [
+              {
+                "valueQuantity": {
+                  "value": 30,
+                  "unit": "kilogram per square meter",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "kg/m2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "linkId": "273836567301",
+        "text": "Has a doctor ever told you that you have high blood pressure, or given you medication for it?",
+        "answer": [
+          {
+            "valueCoding": {
+              "display": "Yes"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "1901457249403",
+        "text": "Your risk score is:",
+        "answer": [
+          {
+            "valueCoding": {
+              "display": "Moderate 16-24"
+            }
+          }
+        ]
+      }
+    ]
+  }

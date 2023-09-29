@@ -1,0 +1,41 @@
+{
+    "resourceType": "ValueSet",
+    "id": "d11970b8-a92f-4a86-b570-e7afd590cb59",
+    "url": "https://fhir.nhs.uk/ValueSet/EOL-CPRStatus-Code",
+    "version": "1.0.0",
+    "name": "EOLCPRStatusCode",
+    "status": "active",
+    "date": "2018-05-21T00:00:00+00:00",
+    "publisher": "HL7 UK",
+    "description": "A ValueSet to identify if a patient has a CPR Status code set.",
+    "copyright": "Copyright © 2016 HL7 UK",
+    "compose": {
+      "include": [
+        {
+          "system": "http://snomed.info/sct",
+          "concept": [
+            {
+              "code": "450475007",
+              "display": "For cardiopulmonary resuscitation (finding)"
+            },
+            {
+              "code": "450476008",
+              "display": "Not for cardiopulmonary resuscitation (finding)"
+            },
+            {
+              "code": "304252001",
+              "display": "For resuscitation (finding)"
+            },
+            {
+              "code": "304253006",
+              "display": "Not for resuscitation (finding)"
+            },
+            {
+              "code": "143021000119109",
+              "display": "Do not resuscitate status with supporting documentation (finding)"
+            }
+          ]
+        }
+      ]
+    }
+  }

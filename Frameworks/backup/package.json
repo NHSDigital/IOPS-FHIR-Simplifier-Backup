@@ -1,0 +1,17 @@
+{
+  "name": "uk.nhs.england.frameworks",
+  "description": "NHS England Frameworks",
+  "author": "NHS England",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "fhir.r4.nhsengland.stu1": "1.0.0-pre-release",
+    "hl7.fhir.uv.ips": "1.1.0",
+    "hl7.fhir.uv.sdc": "3.0.0",
+    "hl7.fhir.us.vitals": "1.0.0",
+    "hl7.fhir.us.core": "3.1.1"
+  },
+  "jurisdiction" : "urn:iso:std:iso:3166:-2:GB-ENG"
+}

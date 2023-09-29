@@ -1,0 +1,77 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "35d8fdca-357b-48b1-8c9c-4b48cee29f41",
+  "url": "https://fhir.england.nhs.uk/PlanDefinition/NHSWeightManagementDigital",
+  "identifier": [
+    {
+      "system": "https://https://www.england.nhs.uk/programmes",
+      "value": "NHSWeightManagementDigital"
+    }
+  ],
+  "name": "NHSWeightManagementDigital",
+  "title": "NHS Weight Management Digital Programme",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "clinical-protocol"
+      }
+    ]
+  },
+  "status": "draft",
+  "description": "The NHS Digital Weight Management Programme supports adults living with obesity who also have a diagnosis of diabetes, hypertension or both, to manage their weight and improve their health.",
+  "author": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.england.nhs.uk/ourwork/prevention/"
+        }
+      ]
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "derived-from",
+      "display": "NICE Obesity prevention",
+      "document": {
+        "url": "https://www.nice.org.uk/guidance/cg43"
+      }
+    }
+  ],
+  "action": [
+    {
+      "id": "nhs-weight-manangment",
+      "title": "NHS Weight Management Digital Programme",
+      "goalId": [
+        "reduce-bmi-ratio"
+      ],
+      "description": "The input is called a template which is available for download from [NHS Digital Weight Management Programme Template Site](https://templates.wmp.nhs.uk/), this probably could be converted to a `FHIR Questionnaire` and used as a portable template format. The programme does not appear to have specified the report format or method.",
+      "requiredBehavior": "must-unless-documented",
+      "cardinalityBehavior": "single",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1326201000000101",
+              "display": "Referral to weight management service"
+            }
+          ]
+        }
+      ],
+      "input": [
+        {
+          "type": "QuestionnaireResponse"
+        }
+      ],
+      "output": [
+        {
+          "type": "DiagnosticReport"
+        }
+      ],
+      "definitionCanonical": "https://fhir.england.nhs.uk/ActivityDefinition/DigitalWeightManagement"
+    }
+  ]
+}

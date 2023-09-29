@@ -1,0 +1,289 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "98b95b9a-a10d-4b2a-8565-e24e21949d60",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2023-08-14T05:59:56.383Z"
+  },
+  "url": "https://example.fhir.nhs.uk/Questionnaire/18381000000107",
+  "identifier": [
+    {
+      "system": "http://snomed.info/sct",
+      "value": "18381000000107"
+    }
+  ],
+  "title": "Statement of Fitness for Work (Mock up)",
+  "status": "draft",
+  "description": "This is based on Med 3 from DWP purely for demonstration purposes",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "18381000000107",
+      "display": "Sickness certificates"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "4436092714066",
+      "text": "I assessed your case on",
+      "type": "date",
+      "required": true
+    },
+    {
+      "linkId": "3789717378462",
+      "text": "and, because of the following condition(s)",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "468626616487",
+          "text": "Condition (Text)",
+          "type": "text"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "autocomplete",
+                    "display": "Auto-complete"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "3841573519012",
+          "text": "Condition (Coded)",
+          "type": "choice",
+          "repeats": true,
+          "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "4459951239742",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "365524007",
+          "display": "Fitness for work - finding"
+        }
+      ],
+      "text": "I advise you that",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "160910001",
+            "display": "Unfit for work"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "225891002",
+            "display": "Fit for work with restrictions"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "286855108272",
+      "text": "If available, and with your employer’s agreement",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 1,
+                "unit": "months",
+                "system": "http://unitsofmeasure.org",
+                "code": "mo"
+              }
+            }
+          ],
+          "linkId": "4435994363590",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "775241000000108",
+              "display": "MED3 (2010) certificate issued to patient"
+            }
+          ],
+          "text": "you may benefit from",
+          "type": "choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "775281000000100",
+                "display": "MED3 (2010) certificate issued - recommend phased return to work"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "775321000000108",
+                "display": "MED3 (2010) certificate issued - recommend amended duties"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "775301000000104",
+                "display": "MED3 (2010) certificate issued - recommend altered hours"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "775351000000103",
+                "display": "MED3 (2010) certificate issued - recommend workplace adaptation"
+              }
+            }
+          ],
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "help",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "4435994363590_helpText",
+              "text": "Believe the codes are correct but the display terms are a bit iffy.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "9613825261904",
+          "text": "Comments, including functional effects of your condition(s)",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "9030022199568",
+      "text": "This will be the case",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "9610249726447",
+          "text": "for",
+          "type": "string"
+        },
+        {
+          "linkId": "7055327798078",
+          "text": "or",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "9152699348287",
+              "text": "from",
+              "type": "date"
+            },
+            {
+              "linkId": "4958668541331",
+              "text": "to",
+              "type": "date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "2344340926665",
+      "text": "I will need to assess your fitness for work again at the end of this period.",
+      "type": "boolean"
+    },
+    {
+      "linkId": "3233482696043",
+      "text": "Assessed by",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2962434689452",
+          "text": "Practitioners Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "2021076846213",
+          "text": "Practitioners Role",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "9738775997258",
+          "text": "Date of Statement",
+          "type": "date",
+          "required": true
+        },
+        {
+          "linkId": "5134939954288",
+          "text": "Organisation Address",
+          "type": "string",
+          "required": false,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "help",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "5134939954288_helpText",
+              "text": "Is this required? Should we expect any recipient to be able to look this up. Might be better to use ODS codes and names",
+              "type": "display"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

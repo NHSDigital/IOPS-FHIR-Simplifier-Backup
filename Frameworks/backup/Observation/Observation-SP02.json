@@ -1,0 +1,42 @@
+{
+    "resourceType": "Observation",
+    "id": "318a8e56-5811-420e-8701-e0ac011d08f0",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2023-05-26T05:04:54.677Z"
+    },
+    "identifier": [
+        {
+          "system": "https://tools.ietf.org/html/rfc4122",
+          "value": "318a8e56-5811-420e-8701-e0ac011d08f0"
+        }
+      ],
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "927981000000106",
+          "display": "Baseline SpO2 (oxygen saturation at periphery)"
+        }
+      ],
+      "text": "Baseline SpO2 (oxygen saturation at periphery)"
+    },
+    "subject": {
+      "reference": "Patient/b573262f-a1d7-4083-891a-7edd71bc459e",
+      "display": "Mr William Smith"
+    },
+    "effectiveDateTime": "2023-05-26T05:04:51.383Z",
+    "issued": "2023-05-26T05:04:51.383Z",
+    "valueQuantity": {
+      "value": 98,
+      "unit": "percent",
+      "system": "http://unitsofmeasure.org",
+      "code": "%"
+    },
+    "derivedFrom": [
+      {
+        "reference": "QuestionnaireResponse/QR-1685077491383-1-d7f7fb7523b64"
+      }
+    ]
+  }

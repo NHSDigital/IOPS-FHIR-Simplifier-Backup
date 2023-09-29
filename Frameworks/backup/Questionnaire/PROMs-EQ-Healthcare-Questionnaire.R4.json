@@ -1,0 +1,199 @@
+{
+  "resourceType": "Questionnaire",
+  "title": "PROMs EQ Healthcare Questionnaire",
+  "url": "https://example.fhir.nhs.uk/Questionnaire/PROMS-EQ-Healthcare",
+  "identifier": [
+    {
+      "system": "https://tools.ietf.org/html/rfc4122",
+      "value": "4cc00938-4d26-4192-bb4c-4c1aec8db814"
+    }
+  ],
+  "subjectType": [
+    "Patient"
+  ],
+  "status": "draft",
+  "item": [
+    {
+      "text": "Mobility",
+      "type": "choice",
+      "linkId": "152970933579",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "I have no problems in walking about"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have slight problems in walking about"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have moderate problems in walking about"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have severe problems in walking about"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I am unable to walk about"
+          }
+        }
+      ],
+      "required": true,
+      "readOnly": false,
+      "repeats": false
+    },
+    {
+      "text": "SELF-CARE",
+      "linkId": "2669383837726",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "I have no problems washing or dressing myself"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have slight problems washing or dressing myself"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have moderate problems washing or dressing myself"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have severe problems washing or dressing myself"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I am unable to wash or dress myself"
+          }
+        }
+      ],
+      "repeats": false,
+      "required": true,
+      "readOnly": false
+    },
+    {
+      "text": "USUAL ACTIVITIES (e.g. work, study, housework, family or leisure activities)",
+      "linkId": "2839107833963",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "I have no problems doing my usual activities"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have slight problems doing my usual activities"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have moderate problems doing my usual activities"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have severe problems doing my usual activities"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I am unable to do my usual activities"
+          }
+        }
+      ],
+      "repeats": false,
+      "required": true,
+      "readOnly": false
+    },
+    {
+      "text": "PAIN / DISCOMFORT",
+      "linkId": "5084107921010",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "I have no pain or discomfort"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have slight pain or discomfort"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have moderate pain or discomfort"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have severe pain or discomfort"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I have extreme pain or discomfort"
+          }
+        },
+        null
+      ],
+      "repeats": false,
+      "required": true,
+      "readOnly": false
+    },
+    {
+      "text": "ANXIETY / DEPRESSION",
+      "linkId": "892152085695",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "I am not anxious or depressed"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I am slightly anxious or depressed"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I am moderately anxious or depressed"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I am severely anxious or depressed"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "I am extremely anxious or depressed"
+          }
+        }
+      ],
+      "repeats": false,
+      "required": true,
+      "readOnly": false
+    },
+    {
+      "text": "We would like to know how good or bad your health is TODAY. This scale is numbered from 0 to 100. 100 means the best health you can imagine. 0 means the worst health you can imagine. Please write the number on the scale to indicate how your health is TODAY.",
+      "linkId": "7669039995884",
+      "type": "integer"
+    }
+  ],
+  "description": "PROMs EQ Healthcare Questionnaire"
+}

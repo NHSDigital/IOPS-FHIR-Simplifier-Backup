@@ -1,0 +1,106 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "status": "completed",
+  "authored": "2023-02-24T07:29:15.300Z",
+  "questionnaire": "https://example.fhir.nhs.uk/Questionnaire/86923-0",
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "56694b60-f3ba-4214-9868-d63d649f4bf0"
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9876543210"
+    },
+    "display": "R Kanfeld"
+  },
+  "item": [
+    {
+      "linkId": "/86483-5",
+      "text": "Please indicate how much you are limited by heart failure (shortness of breath or fatigue) in your ability to do the following activities over the past 2 weeks. Showering or bathing",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA27708-9",
+            "display": "Limited for other reasons or did not do the activity"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/86474-4",
+      "text": "Please indicate how much you are limited by heart failure (shortness of breath or fatigue) in your ability to do the following activities over the past 2 weeks. Walking 1 block on level ground",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6460-5",
+            "display": "Moderately limited"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/86477-7",
+      "text": "Please indicate how much you are limited by heart failure (shortness of breath or fatigue) in your ability to do the following activities over the past 2 weeks. Hurrying or jogging (as if to catch a bus)",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA9605-2",
+            "display": "Slightly limited"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/86481-9",
+      "text": "Over the past 2 weeks, on average, how many times has fatigue limited your ability to do what you want?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA27730-3",
+            "display": "At least once a day"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/86472-8",
+      "text": "Over the past 2 weeks, on average, how many times has shortness of breath limited your ability to do what you wanted?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA27770-9",
+            "display": "3 or more times per week but not every day"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/86485-0",
+      "text": "Over the past 2 weeks, on average, how many times have you been forced to sleep sitting up in a chair or with at least 3 pillows to prop you up because of shortness of breath?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA27720-4",
+            "display": "3 or more times a week, but not every day"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/86924-8",
+      "text": "Overall summary score",
+      "answer": [
+        {
+          "valueDecimal": 22
+        }
+      ]
+    }
+  ]
+}

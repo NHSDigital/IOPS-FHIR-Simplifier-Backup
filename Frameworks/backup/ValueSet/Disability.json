@@ -1,0 +1,26 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2177f37a-2da0-4ca3-882c-bd70ece7c616",
+    "url": "https://fhir.nhs.uk/ValueSet/Disability",
+    "version": "1.1.0",
+    "name": "Disability",
+    "status": "active",
+    "date": "2023-08-19T00:00:00+00:00",
+    "publisher": "NHS England",
+    "description": "Any code from the SNOMED CT UK 'Personal welfare lasting power of attorney findings' subset with subset original id 47771000000138; the corresponding SNOMED CT UK Refset fully specified name is 'Personal welfare lasting power of attorney findings simple reference set (foundation metadata concept)' with Refset Id 999001951000000107",
+    "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+    "compose": {
+      "include": [
+        {
+          "system": "http://snomed.info/sct",
+          "filter": [
+            {
+              "property": "constraint",
+              "op": "=",
+              "value": "descendantOf 21134002"
+            }
+          ]
+        }
+      ]
+    }
+  }

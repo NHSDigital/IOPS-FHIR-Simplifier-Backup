@@ -1,0 +1,65 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id":"58aa3751-f324-4d89-9fb9-cd8b6e5ac781",
+  "url": "https://fhir.england.nhs.uk/ActivityDefinition/NHSHealthCheck",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://fhir.england.nhs.uk/programmes",
+      "value": "NHSHealthCheck"
+    }
+  ],
+  "version": "1.1.0",
+  "name": "NHSHealthCheck",
+  "title": "NHS Health Check",
+  "status": "active",
+  "intent": "order",
+  "experimental": true,
+  "date": "2017-03-03T14:06:00Z",
+  "publisher": "NHS England",
+  "description": "The NHS Health Check is a health check-up for adults in England aged 40 to 74. It's designed to spot early signs of stroke, kidney disease, heart disease, type 2 diabetes or dementia. As we get older, we have a higher risk of developing one of these conditions. An NHS Health Check helps find ways to lower this risk.",
+  "usage": "The check is for people who are aged 40 to 74 who do not have any of the following pre-existing conditions: \n\n - heart disease \n - chronic kidney disease \n - diabetes \n - high blood pressure (hypertension) \n - atrial fibrillation \n - transient ischaemic attack \n - inherited high cholesterol (familial hypercholesterolemia) \n - heart failure \n - peripheral arterial disease \n - stroke \n - currently being prescribed statins to lower cholesterol \n - previous checks have found that you have a 20% or higher risk of getting cardiovascular disease over the next 10 years. \n\n If you're in the 40 to 74 age group without a pre-existing condition, you should receive a letter from your GP surgery or local council inviting you for a free NHS Health Check every 5 years. You can also call your GP surgery to book a Health Check. You may want to try this online [Heart Age test](https://www.nhs.uk/health-assessment-tools/calculate-your-heart-age).",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "GB"
+        }
+      ]
+    }
+  ],
+  "copyright": "© Copyright 2016 NHS England.",
+  "approvalDate": "2017-03-01",
+  "lastReviewDate": "2017-03-01",
+  "effectivePeriod": {
+    "start": "2017-03-01"
+  },
+  "relatedArtifact": [
+    {
+      "type": "documentation",
+      "display": "NHS Health Check",
+      "url": "https://www.nhs.uk/conditions/nhs-health-check/"
+    }
+  ],
+  "kind": "ServiceRequest",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "275926002"
+      }
+    ],
+    "text": "Screening - health check"
+  },
+  "participant": [
+    {
+      "type": "practitioner"
+    }
+  ],
+  "observationResultRequirement" :[
+    {
+      "display": "A FHIR **DiagnositicReport** with PDF attachment or FHIR **QuestionaireResponse**. **Observation**'s are optional"
+    }
+  ]
+}

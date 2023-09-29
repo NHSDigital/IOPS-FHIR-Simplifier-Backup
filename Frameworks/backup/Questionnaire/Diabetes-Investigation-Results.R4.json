@@ -1,0 +1,193 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "2cce1183-e22c-4053-9195-f88987bd8d1a",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-08-28T12:49:33.053Z"
+  },
+  "url": "https://example.fhir.nhs.uk/Questionnaire/PRSBDiabetesInvestigationResult",
+  "title": "Diabetes Investigation Results",
+  "status": "draft",
+  "description": "Investigations that are laboratory tests should be recorded in alignment with NHS Digital's DAPB4017: Pathology tests and results standard where possible and appropriate (see https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/dapb4017-pathology-test-and-results-standard). This means that where possible the SNOMED CT Unified test list (UTL) results codes should be used. For example, the following UTL investigation result codes (non exhaustive) may be relevant for the nine care processes of diabetes care *:",
+  "item": [
+    {
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "4218077039137_helpText",
+          "text": "This is the concept aligned to the pathology bounded code list and should be used for IFCC (see https://www.ifcc.org/) standardised results reporting substance concentration ratio of haemoglobin A1c to haemoglobin A1 in blood.",
+          "type": "display"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        }
+      ],
+      "linkId": "4218077039137",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1107481000000106",
+          "display": "HbA1c (haemoglobin A1c) substance concentration in blood"
+        }
+      ],
+      "text": "HbA1c"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        }
+      ],
+      "linkId": "5668850085652",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1011481000000105",
+          "display": "eGFR (estimated glomerular filtration rate) using creatinine Chronic Kidney Disease Epidemiology Collaboration equation per 1.73 square metres"
+        }
+      ],
+      "text": "Kidney function (eGFR)",
+      "type": "quantity",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "5668850085652_helpText",
+          "text": "Nice recommended equation (see https://www.nice.org.uk/guidance/ng203).",
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "5339105789375",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1023491000000104",
+          "display": "Urine albumin:creatinine ratio"
+        }
+      ],
+      "text": "Kidney function (urinary albumin)",
+      "type": "quantity"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "146904245181",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1107001000000108",
+          "display": "Creatinine substance concentration in serum"
+        }
+      ],
+      "text": "Kidney function (serum creatinine)",
+      "type": "quantity"
+    },
+    {
+      "linkId": "3040304482162",
+      "text": "Lipids (cholesterol)",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "3040304482162_helpText",
+          "text": "Code dependent on panel reported │ See UTL report codes for lipids.",
+          "type": "display"
+        }
+      ]
+    }
+  ]
+}

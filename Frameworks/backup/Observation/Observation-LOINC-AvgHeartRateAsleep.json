@@ -1,0 +1,47 @@
+{
+    "resourceType": "Observation",
+    "id": "6511361d-dec5-4a72-9ead-e7551fb264fa",
+    "meta": {
+        "versionId": "11",
+        "lastUpdated": "2023-03-19T18:51:12.390Z"
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/SleepStatusExt",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "248220008",
+                        "display": "Asleep (finding)"
+                    }
+                ]
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://fhir.withings.com/Id",
+            "value": "3319596260-41924-2"
+        }
+    ],
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "41924-2",
+                "display": "Average Heart rate in 24 hours"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/0cd25141-2987-49d2-a038-2f8946e3b8b4"
+    },
+    "effectiveDateTime": "2023-03-19T00:00:00.000Z",
+    "valueQuantity": {
+        "value": 60,
+        "unit": "{beats}/min",
+        "system": "http://unitsofmeasure.org"
+    }
+}

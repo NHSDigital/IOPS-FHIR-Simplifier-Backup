@@ -1,0 +1,615 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "7e09e96a-f1c8-4d8b-ad01-8eed9ff132ca",
+  "meta": {
+    "versionId": "19",
+    "lastUpdated": "2023-08-28T07:40:05.780Z"
+  },
+  "url": "https://example.fhir.nhs.uk/Questionnaire/163011000000101",
+  "identifier": [
+    {
+      "system": "http://snomed.info/sct",
+      "value": "163011000000101"
+    }
+  ],
+  "title": "Social context",
+  "status": "draft",
+  "description": "A mock based on the Social Context heading from PRSB Diabetes standard https://theprsb.org/standards/diabetesstandards/",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "163011000000101",
+      "display": "Social Context"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 2,
+                "unit": "years",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "7793249472624",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "365481000",
+              "display": "Household composition - finding"
+            }
+          ],
+          "prefix": "1.1",
+          "text": "Household composition",
+          "type": "open-choice",
+          "repeats": true,
+          "answerValueSet": "https://fhir.nhs.uk/ValueSet/HouseholdComposition"
+        }
+      ],
+      "type": "group",
+      "linkId": "1770961441094",
+      "prefix": "1",
+      "text": "Household Composition"
+    },
+    {
+      "linkId": "8917028970417",
+      "prefix": "2",
+      "text": "Occupational history",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 2,
+                "unit": "years",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "autocomplete",
+                    "display": "Auto-complete"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "8917028970417_helpText",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "14679004",
+              "display": "Occupation"
+            }
+          ],
+          "prefix": "2.1",
+          "text": "The current and/or previous occupation(s) of the person (coded)",
+          "type": "open-choice",
+          "repeats": true,
+          "answerValueSet": "https://fhir.nhs.uk/ValueSet/OccupationalHistory"
+        }
+      ]
+    },
+    {
+      "linkId": "1546040099337",
+      "prefix": "3",
+      "text": "Driving status",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "7223533949732",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "446497005",
+              "display": "Has driver's license (finding)"
+            }
+          ],
+          "prefix": "3.1",
+          "text": "Current Driver",
+          "type": "open-choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "Group1",
+                "display": "Has group 1 driver's license - cars and/or motorcycles"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "Group2",
+                "display": "Has group 2 driver's license - large lorries and/or buses"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "Nil",
+                "display": "Does not have driving license"
+              }
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 2,
+                "unit": "years",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            }
+          ],
+          "linkId": "851869094714",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "312866008",
+              "display": "Patient advised about driving"
+            }
+          ],
+          "prefix": "3.2",
+          "text": "DVLA notification status",
+          "type": "open-choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "183077002",
+                "display": "Patient advised to inform DVLA"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1382591000000101",
+                "display": "Subject of record informed Driver and Vehicle Licensing Agency (finding)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "183076006",
+                "display": "Patient advised not to drive (situation)"
+              }
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "2142056533745",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "243860001",
+              "display": "Diabetic monitoring status"
+            }
+          ],
+          "prefix": "3.3",
+          "text": " Monitors blood glucose",
+          "type": "open-choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "853671000000101",
+                "display": "Does monitor blood glucose level before driving"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5677754908042",
+      "prefix": "4",
+      "text": "Meal patterns",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 6,
+                "unit": "months",
+                "system": "http://unitsofmeasure.org",
+                "code": "mo"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "autocomplete",
+                    "display": "Auto-complete"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "8922996476098",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "289136006",
+              "display": "Finding of eating pattern"
+            }
+          ],
+          "prefix": "4.1",
+          "text": "Meal Patterns",
+          "type": "open-choice",
+          "repeats": true,
+          "answerValueSet": "https://fhir.nhs.uk/ValueSet/MealPatterns"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 6,
+                "unit": "months",
+                "system": "http://unitsofmeasure.org",
+                "code": "mo"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "4936391939852",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "42239005",
+              "display": "Carbohydrate diet"
+            }
+          ],
+          "prefix": "4.2",
+          "text": "Carbohydrate Intake",
+          "type": "open-choice",
+          "answerValueSet": "https://fhir.nhs.uk/ValueSet/CarbohydateIntake"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "g",
+                "display": "gram"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 6,
+                "unit": "months",
+                "system": "http://unitsofmeasure.org",
+                "code": "mo"
+              }
+            }
+          ],
+          "linkId": "6990224603082",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1003631002",
+              "display": "Estimated quantity of carbohydrate intake in one meal"
+            }
+          ],
+          "prefix": "4.3",
+          "text": "Estimated quantity of carbohydrate intake in one meal",
+          "type": "quantity",
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "gram",
+                "system": "http://unitsofmeasure.org",
+                "code": "g"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3780801167909",
+      "prefix": "5",
+      "text": "Smoking status",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 1,
+                "unit": "years",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "7475739942789",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "365981007",
+              "display": "Tobacco smoking behaviour - finding"
+            }
+          ],
+          "prefix": "5.1",
+          "text": "Smoking Status",
+          "type": "open-choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "8517006",
+                "display": "Ex-smoker"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "266919005",
+                "display": "Never smoked tobacco"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "405746006",
+                "display": "Current non smoker but past smoking history unknown"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "77176002",
+                "display": "Smoker"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1098881000000103",
+                "display": "Declined to give smoking status"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "266927001",
+                "display": "Tobacco smoking consumption unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "5714775778988",
+          "prefix": "5.2",
+          "text": "Details",
+          "type": "string"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 1,
+                "unit": "years",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            }
+          ],
+          "linkId": "7373483344877",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160617001",
+              "display": "Stopped smoking"
+            }
+          ],
+          "prefix": "5.3",
+          "text": "Date stopped smoking",
+          "type": "date",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "help",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "7373483344877_helpText",
+              "text": "Removed code entry as this results in extract error 14/8/2023",
+              "type": "display"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3487464139295",
+      "prefix": "6",
+      "text": "Alcohol",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 1,
+                "unit": "years",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            }
+          ],
+          "linkId": "1624186208143",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "228273003",
+              "display": "Alcohol drinking behaviour"
+            }
+          ],
+          "prefix": "6.1",
+          "text": "Intake",
+          "type": "open-choice",
+          "repeats": true,
+          "answerValueSet": "https://fhir.nhs.uk/ValueSet/AlcoholIntake"
+        }
+      ]
+    },
+    {
+      "linkId": "7379434005058",
+      "prefix": "7",
+      "text": "Drug/substance use",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 1,
+                "unit": "years",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            }
+          ],
+          "linkId": "1763245197494",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "228366006",
+              "display": "Finding relating to drug misuse behaviour"
+            }
+          ],
+          "prefix": "7.1",
+          "text": "Use",
+          "type": "open-choice",
+          "answerValueSet": "https://fhir.nhs.uk/ValueSet/DrugSubstanceUse"
+        }
+      ]
+    },
+    {
+      "linkId": "5365194231840",
+      "prefix": "8",
+      "text": "Access",
+      "type": "text"
+    },
+    {
+      "linkId": "4478761143239",
+      "prefix": "9",
+      "text": "Accommodation status",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 2,
+                "unit": "years",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "8612628963403",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "272497004",
+              "display": "Residential environment"
+            }
+          ],
+          "prefix": "9.1",
+          "text": " Accommodation status",
+          "type": "open-choice",
+          "answerValueSet": "https://beta.datadictionary.nhs.uk/valueSet/accommodation_status_code"
+        }
+      ]
+    }
+  ]
+}

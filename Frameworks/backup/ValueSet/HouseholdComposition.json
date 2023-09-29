@@ -1,0 +1,31 @@
+{
+    "resourceType": "ValueSet",
+    "id": "b2575b04-95ce-439f-9394-ca873cf2c11c",
+    "url": "https://fhir.nhs.uk/ValueSet/HouseholdComposition",
+    "version": "0.0.1",
+    "name": "HouseholdComposition",
+    "title": "Household Composition",
+    "status": "draft",
+    "date": "2023-08-14",
+    "publisher": "NHS England",
+    "description": "From PRSB definition in diabetes",
+    "copyright": "Copyright © 2021+ NHS England",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "filter": [
+                    {
+                        "property": "constraint",
+                        "op": "=",
+                        "value": "^1027891000000106 | Household composition findings simple reference set (foundation metadata concept) |"
+                    }
+                ]
+            }
+        ]
+    },
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-14T12:58:43.032Z"
+    }
+}
