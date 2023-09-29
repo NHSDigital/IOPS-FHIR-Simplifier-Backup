@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.guide.md
+- name: Bundle X contents
+  filename: Bundle-X-contents.guide.md
+- name: Bundle X mapping
+  filename: Bundle-X-mapping.guide.md
+- name: Bundle X referencing
+  filename: Bundle-X-referencing.guide.md

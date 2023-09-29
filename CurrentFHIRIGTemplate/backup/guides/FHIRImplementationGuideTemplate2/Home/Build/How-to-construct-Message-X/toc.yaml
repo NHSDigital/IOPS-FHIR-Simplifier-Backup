@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.guide.md
+- name: Message X contents
+  filename: Message-X-contents.guide.md
+- name: Message X mapping
+  filename: Message-X-mapping.guide.md
+- name: Message X referencing
+  filename: Message-X-referencing.guide.md

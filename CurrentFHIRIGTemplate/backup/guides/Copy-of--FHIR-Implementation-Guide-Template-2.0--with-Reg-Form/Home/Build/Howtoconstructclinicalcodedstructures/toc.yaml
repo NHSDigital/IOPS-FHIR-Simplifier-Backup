@@ -1,0 +1,4 @@
+- name: Index
+  filename: Index.page.md
+- name: How to construct X
+  filename: How-to-construct-X.page.md

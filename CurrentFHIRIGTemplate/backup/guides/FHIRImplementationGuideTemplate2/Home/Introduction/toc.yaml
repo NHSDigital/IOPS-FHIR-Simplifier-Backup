@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.guide.md
+- name: How To Build This Implementation Guide
+  filename: How-To-Build-This-Implementation-Guide
+- name: Toolbox
+  filename: Toolbox
+- name: Release notes
+  filename: Releasenotes.guide.md
+- name: Glossary
+  filename: Glossary.guide.md
+- name: Sitemap
+  filename: Sitemap.page.md
+- name: Guide Versioning
+  filename: Guide-Versioning

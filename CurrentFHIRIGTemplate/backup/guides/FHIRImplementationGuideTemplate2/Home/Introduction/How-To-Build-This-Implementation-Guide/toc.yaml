@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: Intended Audience
+  filename: Intended-Audience.guide.md
+- name: Format and Structure
+  filename: Format-and-Structure.page.md
+- name: 'Design Rules for NHS Digital IGs: Creation and Maintenance'
+  filename: Design-Rules-for-NHS-Digital-IGs--Creation-and-Maintenance.page.md

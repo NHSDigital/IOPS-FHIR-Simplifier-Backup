@@ -1,0 +1,100 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-PatientCare",
+  "name": "NHSDigitalServiceRequestPatientCare",
+  "status": "draft",
+  "purpose": "Profile on NHSDigital-ServiceRequest for NHS App/e-RS PatientCare",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest",
+        "path": "ServiceRequest",
+        "definition": "A constaint profile for use in NHS Patient Wayfinder"
+      },
+      {
+        "id": "ServiceRequest.extension",
+        "path": "ServiceRequest.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 3
+      },
+      {
+        "id": "ServiceRequest.extension:ERSServiceRequestState",
+        "path": "ServiceRequest.extension",
+        "sliceName": "ERSServiceRequestState",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.extension:ERSServiceRequestState.extension",
+        "path": "ServiceRequest.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.extension:ERSServiceRequestState.extension:state",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "state",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.extension:portalLink",
+        "path": "ServiceRequest.extension",
+        "sliceName": "portalLink",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.extension:serviceRequestPriority",
+        "path": "ServiceRequest.extension",
+        "sliceName": "serviceRequestPriority",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.identifier:UBRN",
+        "path": "ServiceRequest.identifier",
+        "sliceName": "UBRN",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.priority",
+        "path": "ServiceRequest.priority",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.subject.identifier",
+        "path": "ServiceRequest.subject.identifier",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.authoredOn",
+        "path": "ServiceRequest.authoredOn",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.requester.reference",
+        "path": "ServiceRequest.requester.reference",
+        "min": 1
+      }
+    ]
+  }
+}

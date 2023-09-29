@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: Message X contents
+  filename: Message-X-contents.page.md
+- name: Message X mapping
+  filename: Message-X-mapping.page.md
+- name: Message X referencing
+  filename: Message-X-referencing.page.md
