@@ -1,0 +1,95 @@
+{
+  "resourceType": "Observation",
+  "id": "BloodPressureObservation",
+ 
+  "identifier": [
+    {
+      "system": "https://tools.ietf.org/html/rfc4122",
+      "value": "068c5c3c-cf11-4f7a-a58a-c445e9848657"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "75367002",
+        "display": "Blood pressure"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "85354-9",
+        "display": "Blood pressure panel with all children optional"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/30d3de6f-e800-47fa-b610-b02c7c8e9d57"
+  },
+  "effectiveDateTime": "2018-10-04T14:17:59+01:00",
+  "performer": [
+    {
+      "reference": "Practitioner/627be677-3eb2-4db4-9570-5669fd8c92f5"
+    },
+    {
+      "reference": "Organization/cdaea3db-8b40-41dc-9834-b42503e12382"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "72313002",
+            "display": "Systolic arterial pressure"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 120,
+        "unit": "millimeter of mercury",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1091811000000102",
+            "display": "Diastolic arterial pressure"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "millimeter of mercury",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  ]
+}

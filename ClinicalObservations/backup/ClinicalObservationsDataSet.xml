@@ -1,0 +1,3094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.nhs.uk/StructureDefinition/ClinicalObservationsDataSet" />
+  <name value="ClinicalObservationsDataSet" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2021-01-26" />
+  <description value="Draft data set model for clinical observations" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="https://fhir.nhs.uk/StructureDefinition/ClinicalObservationsDataSet" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="ClinicalObservationsDataSet">
+      <path value="ClinicalObservationsDataSet" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Patient">
+      <path value="ClinicalObservationsDataSet.Patient" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Patient.Name">
+      <path value="ClinicalObservationsDataSet.Patient.Name" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/HumanName" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Patient.Address">
+      <path value="ClinicalObservationsDataSet.Patient.Address" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Address" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Address" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Patient.Identifier">
+      <path value="ClinicalObservationsDataSet.Patient.Identifier" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Patient.Gender">
+      <path value="ClinicalObservationsDataSet.Patient.Gender" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Patient.BirthDate">
+      <path value="ClinicalObservationsDataSet.Patient.BirthDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Patient.MaritalStatus">
+      <path value="ClinicalObservationsDataSet.Patient.MaritalStatus" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="http://hl7.org/fhir/ValueSet/marital-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.ReponsibleOrganization">
+      <path value="ClinicalObservationsDataSet.ReponsibleOrganization" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.ReponsibleOrganization.Identifier">
+      <path value="ClinicalObservationsDataSet.ReponsibleOrganization.Identifier" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.ReponsibleOrganization.Name">
+      <path value="ClinicalObservationsDataSet.ReponsibleOrganization.Name" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.ReponsibleOrganization.Telecom">
+      <path value="ClinicalObservationsDataSet.ReponsibleOrganization.Telecom" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.ReponsibleOrganization.Address">
+      <path value="ClinicalObservationsDataSet.ReponsibleOrganization.Address" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Address" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Address" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.PerformerPractitioner">
+      <path value="ClinicalObservationsDataSet.PerformerPractitioner" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.PerformerPractitioner.Identifier">
+      <path value="ClinicalObservationsDataSet.PerformerPractitioner.Identifier" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.PerformerPractitioner.Name">
+      <path value="ClinicalObservationsDataSet.PerformerPractitioner.Name" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/HumanName" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.PerformerPractitioner.Telecom">
+      <path value="ClinicalObservationsDataSet.PerformerPractitioner.Telecom" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.PerformerPractitioner.JobRole">
+      <path value="ClinicalObservationsDataSet.PerformerPractitioner.JobRole" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Coding" />
+      </type>
+      <fixedCoding>
+        <system value="https://fhir.hl7.org.uk/ValueSet/UKCore-SDSJobRoleName" />
+      </fixedCoding>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SDSJobRoleName" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.LocationWhereRecorded">
+      <path value="ClinicalObservationsDataSet.LocationWhereRecorded" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.LocationWhereRecorded.Identifier">
+      <path value="ClinicalObservationsDataSet.LocationWhereRecorded.Identifier" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations">
+      <path value="ClinicalObservationsDataSet.Observations" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation" />
+      <short value="Previous NEWS2 Observation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.Code" />
+      <short value="9999100 | NEWS2 - baseline total score (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.PerformerPerson" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <fixedReference>
+        <reference value="ClinicalObservations.Performer" />
+        <type value="Reference" />
+      </fixedReference>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNEWS2Observation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation" />
+      <short value="Previous NPEWS1 Observation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.Status" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.Code" />
+      <short value="9999000 | NPEWS1 - baseline total score (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.PerformerPerson" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <fixedReference>
+        <reference value="ClinicalObservations.Performer" />
+        <type value="Reference" />
+      </fixedReference>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineNPEWS1Observation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation" />
+      <short value="Baseline Oxygen Saturation Observation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.Code" />
+      <short value="927981000000106 | Baseline oxygen saturation at periphery (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="%" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="Percent" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <fixedReference>
+        <reference value="ClinicalObservations.Performer" />
+        <type value="Reference" />
+      </fixedReference>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineOxygenSaturationObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation" />
+      <short value="Baseline Systolic Observation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.Code" />
+      <short value="716579001 | Baseline systolic blood pressure (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="mm[Hg]" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="millimeter of mercury" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <fixedReference>
+        <reference value="ClinicalObservations.Performer" />
+        <type value="Reference" />
+      </fixedReference>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.PerformerOrganisation">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineSystolicObservation.PerformerOrganisation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.Code" />
+      <short value="716632005 | Baseline diastolic blood pressure (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="mm[Hg]" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="millimeter of mercury" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.PerformerOrganisation">
+      <path value="ClinicalObservationsDataSet.Observations.BaselineDiastolicObservation.PerformerOrganisation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation">
+      <path value="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation" />
+      <short value="Target Oxygen Saturation Observation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.Code" />
+      <short value="852641000000103 | Target peripheral oxygen saturation (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="%" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="Percent" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <fixedReference>
+        <reference value="ClinicalObservations.Performer" />
+        <type value="Reference" />
+      </fixedReference>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.TargetOxygenSaturationObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ScoreChartUsed">
+      <path value="ClinicalObservationsDataSet.Observations.ScoreChartUsed" />
+      <short value="Age range chart" />
+      <definition value="Which age range chart was used in the recording of the Observations.  Currently several charts in existence" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ScoreChartUsed.Status">
+      <path value="ClinicalObservationsDataSet.Observations.ScoreChartUsed.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ScoreChartUsed.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.ScoreChartUsed.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ScoreChartUsed.Code">
+      <path value="ClinicalObservationsDataSet.Observations.ScoreChartUsed.Code" />
+      <short value="9999001 | NPEWS1 - chart used (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ScoreChartUsed.Value">
+      <path value="ClinicalObservationsDataSet.Observations.ScoreChartUsed.Value" />
+      <definition value="Currently carried as text:&#xD;&#xA;0-1 Year, 1-5 year, 5-12 year, 12-16 year" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Coding" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ScoreChartUsed.Performerperson">
+      <path value="ClinicalObservationsDataSet.Observations.ScoreChartUsed.Performerperson" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+      </type>
+      <fixedReference>
+        <reference value="ClinicalObservations.Performer" />
+        <type value="Reference" />
+      </fixedReference>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ScoreChartUsed.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.ScoreChartUsed.PerformerOrganization" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespirationRateObservation">
+      <path value="ClinicalObservationsDataSet.Observations.RespirationRateObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespirationRateObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.RespirationRateObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespirationRateObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.RespirationRateObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespirationRateObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.RespirationRateObservation.Code" />
+      <code>
+        <system value="http://loinc.org" />
+      </code>
+      <short value="Use 86290005 or ECL concept from below" />
+      <definition value="&lt;&lt;86290005 |Respiratory rate (observable entity)| MINUS &lt;&lt;927961000000102 |Baseline respiratory rate (observable entity)|" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="9279-1" />
+          <display value="Respiratory Rate" />
+        </coding>
+      </fixedCodeableConcept>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespirationRateObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.RespirationRateObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="breaths/minute" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="/min" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespirationRateObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.RespirationRateObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespirationRateObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.RespirationRateObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+      </type>
+      <fixedReference>
+        <reference value="ClinicalObservations.Performer" />
+        <type value="Reference" />
+      </fixedReference>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespirationRateObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.RespirationRateObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation">
+      <path value="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.Code" />
+      <short value="9999003 | Level of respiratory distress (observable entity) |" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.Value" />
+      <definition value="Normal Mild Moderate Severe how is this coded?" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Coding" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.RespiratoryDistressObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation">
+      <path value="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.Code" />
+      <short value="Use 103228002 or anything from ECL concept below" />
+      <definition value="&lt;&lt;103228002 |Hemoglobin saturation with oxygen (observable entity)| MINUS (&lt;&lt;927981000000106 |Baseline oxygen saturation at periphery (observable entity)| OR &lt;&lt;852651000000100 |Maximum peripheral oxygen saturation (observable entity)| OR &lt;&lt;852661000000102 |Minimum peripheral oxygen saturation (observable entity)| OR &lt;&lt;852641000000103 |Target peripheral oxygen saturation (observable entity)| OR &lt;&lt;442349007 |Venous oxygen saturation (observable entity)|)" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="2708-6" />
+        </coding>
+      </fixedCodeableConcept>
+      <example>
+        <label value="OxygenSaturation" />
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="103228002" />
+            <display value="Hemoglobin saturation with oxygen (observable entity)" />
+          </coding>
+          <text value="Test code" />
+        </valueCodeableConcept>
+      </example>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="%" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="Percent" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.OxygenSaturationObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation">
+      <path value="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.Code" />
+      <short value="Use one of the ECL concepts below" />
+      <definition value="722742002 |Breathing room air| OR 371825009 |Patient on oxygen| OR 315041000 | High concentration oxygen therapy (procedure) | OR 9999016 | High flow oxygen therapy (procedure) |" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.Value" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="L/min" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="liter per minute" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.AirOrOxygenObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation">
+      <path value="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.Code" />
+      <short value="New concepts needed for 9999017 | Oxygen administration by headbox | or use one of the ECL concepts below" />
+      <definition value="371907003 | Oxygen administration by nasal cannula (procedure) | OR 371908008 | Oxygen administration by mask (procedure) | OR 9999017 | Oxygen administration by headbox | OR 9999016 | High flow oxygen therapy (procedure) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.DeliveryRouteOfOxygenSupplementation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.Code" />
+      <code>
+        <system value="http://loinc.org" />
+        <code value="85354-9" />
+        <display value="Blood pressure panel with all children optional" />
+      </code>
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.SystolicObservationComponent">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.SystolicObservationComponent" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.SystolicObservationComponent.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.SystolicObservationComponent.Code" />
+      <short value="Use 72313002|Systolic arterial pressure (observable entity)| or ECL concept below" />
+      <definition value="&quot;&lt;&lt;271649006|Systolic blood pressure (observable entity)| &#xA;MINUS (&lt;&lt;716579001|Baseline systolic blood pressure (observable entity)| &#xA;OR &lt;&lt;814101000000107|Systolic blood pressure centile (observable entity)| &#xA;OR &lt;&lt;315612005|Target systolic blood pressure (observable entity)|)&quot;" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="8480-6" />
+          <display value="Systolic blood pressure" />
+        </coding>
+      </fixedCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.SystolicObservationComponent.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.SystolicObservationComponent.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="mm[Hg]" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="millimeter of mercury" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.DiastolicObservationComponent">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.DiastolicObservationComponent" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.DiastolicObservationComponent.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.DiastolicObservationComponent.Code" />
+      <short value="Use Concept 1091811000000102|Diastolic arterial pressure (observable entity)| or ECL concept below" />
+      <definition value="&lt;&lt;271650006 |Diastolic blood pressure (observable entity)| MINUS (&lt;&lt;716632005 |Baseline diastolic blood pressure (observable entity)| OR &lt;&lt;814081000000101 |Diastolic blood pressure centile (observable entity)| OR &lt;&lt;315613000 |Target diastolic blood pressure (observable entity)|)" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="8462-4" />
+          <display value="Diastolic blood pressure" />
+        </coding>
+      </fixedCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.DiastolicObservationComponent.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.DiastolicObservationComponent.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="mm[Hg]" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="millimeter of mercury" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BloodPressureObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.BloodPressureObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeartRateObservation">
+      <path value="ClinicalObservationsDataSet.Observations.HeartRateObservation" />
+      <short value="Pulse or Heart rate" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeartRateObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.HeartRateObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeartRateObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.HeartRateObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeartRateObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.HeartRateObservation.Code" />
+      <code>
+        <system value="http://loinc.org" />
+        <code value="8867-4" />
+        <display value="Heart rate" />
+      </code>
+      <short value="Use concept 364075005|Heart rate (observable entity)| or ECL concept below" />
+      <definition value="&lt;&lt;364075005 |Heart rate (observable entity)| MINUS (&lt;&lt;251670001 |Baseline fetal heart rate (observable entity)| OR &lt;&lt;928001000000104 |Baseline heart rate (observable entity)| OR &lt;&lt;852341000000107 |Maximum pulse rate (observable entity)| OR &lt;&lt;852351000000105 |Minimum pulse rate (observable entity)| OR &lt;&lt;428420003 |Target heart rate (observable entity)| OR &lt;&lt;852331000000103 |Target pulse rate (observable entity)|)" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeartRateObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.HeartRateObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="beats/minute" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="heart beats per minute" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeartRateObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.HeartRateObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeartRateObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.HeartRateObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeartRateObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.HeartRateObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation">
+      <path value="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.Code" />
+      <short value="Use 15527001 | Capillary filling, function (observable entity) | or ECL concept below" />
+      <definition value="&lt;&lt;15527001 | Capillary filling, function (observable entity) |" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="s" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="second" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.CapiliaryRefillTimeObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ConsciousnessObservation">
+      <path value="ClinicalObservationsDataSet.Observations.ConsciousnessObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.Code" />
+      <short value="Use ECL concept from list below" />
+      <definition value="248234008 |Mentally alert| OR 300202002 |Responds to voice| OR 450847001 |Responds to pain| OR 422768004 |Unresponsive| 130987000 |Acute confusion| OR 248220008 | Asleep (finding) |" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.ConsciousnessObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TemperatureObservation">
+      <path value="ClinicalObservationsDataSet.Observations.TemperatureObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TemperatureObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.TemperatureObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TemperatureObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.TemperatureObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TemperatureObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.TemperatureObservation.Code" />
+      <code>
+        <system value="http://loinc.org" />
+        <code value="8310-5" />
+        <display value="Body temperature" />
+      </code>
+      <short value="Use concept 276885007|Core body temperature (observable entity)| or any ECL concept from below" />
+      <definition value="&lt;&lt;386725007|Body temperature (observable entity)| &#xA;MINUS (&lt;&lt;248458005|Comparative temperature in limbs (observable entity)| &#xA;OR &lt;&lt;852591000000107|Maximum body temperature (observable entity)| &#xA;OR &lt;&lt;852601000000101|Minimum body temperature (observable entity)| &#xA;OR &lt;&lt;852581000000105|Target body temperature (observable entity)| &#xA;OR &lt;&lt;364419004|Temperature of cervical spine (observable entity)| &#xA;OR &lt;&lt;364424001|Temperature of thoracic spine (observable entity)| &#xA;OR &lt;&lt;364429006|Temperature of lumbar spine (observable entity)| &#xA;OR &lt;&lt;248835004|Temperature of breast (observable entity)| &#xA;OR &lt;&lt;250124002|Temperature of joint (observable entity)| &#xA;OR &lt;&lt;431197002|Temperature of digit (observable entity)| &#xA;OR &lt;&lt;364518005|Temperature of foot (observable entity)| &#xA;OR &lt;&lt;363997004|Temperature of pinna (observable entity)| &#xA;OR &lt;&lt;364537001|Temperature of skin (observable entity)|)" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TemperatureObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.TemperatureObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="Cel" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="degree Celsius" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TemperatureObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.TemperatureObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TemperatureObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.TemperatureObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.TemperatureObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.TemperatureObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.PatientConditionObservation">
+      <path value="ClinicalObservationsDataSet.Observations.PatientConditionObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.PatientConditionObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.PatientConditionObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.PatientConditionObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.PatientConditionObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.PatientConditionObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.PatientConditionObservation.Code" />
+      <short value="Use one of the concepts below" />
+      <definition value="9999012 | Nurse concerned about patient (observable entity) |&#xD;&#xA;9999013 | Parent level of concern about child (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.PatientConditionObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.PatientConditionObservation.Value" />
+      <definition value="NO value for same or worst in SNOMED CT how is this coded" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.PatientConditionObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.PatientConditionObservation.PerformerPerson" />
+      <definition value="The person who has a concern about the patients condition or has indcated the patients condition is changed/unchanged" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.PatientConditionObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.PatientConditionObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BirthWeightObservation">
+      <path value="ClinicalObservationsDataSet.Observations.BirthWeightObservation" />
+      <short value="BirthWeight" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BirthWeightObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.BirthWeightObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BirthWeightObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.BirthWeightObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BirthWeightObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BirthWeightObservation.Code" />
+      <short value="Use concept 364589006 | Birth weight (observable entity) | or ECL concept below" />
+      <definition value="364589006 | Birth weight (observable entity) | OR 1239221000000109 | Weight of neonate at birth (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BirthWeightObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BirthWeightObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="kg" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="kilogram" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BirthWeightObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.BirthWeightObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BirthWeightObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.BirthWeightObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BirthWeightObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.BirthWeightObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BodyWeightObservation">
+      <path value="ClinicalObservationsDataSet.Observations.BodyWeightObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BodyWeightObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.BodyWeightObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BodyWeightObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.BodyWeightObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BodyWeightObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BodyWeightObservation.Code" />
+      <short value="Use 27113001|Body weight (observable entity)|or one of the ECL concepts below" />
+      <definition value="&quot;&lt;&lt;27113001|Body weight (observable entity)| &#xA;MINUS (&lt;&lt;301334000|Birth weight centile (observable entity)| &#xA;OR &lt;&lt;400967004|Baseline weight (observable entity)| &#xA;OR &lt;&lt;170804003|Ideal body weight (observable entity)| &#xA;OR &lt;&lt;852321000000100|Maximum weight (observable entity)| &#xA;OR &lt;&lt;852311000000106|Minimum weight (observable entity)| &#xA;OR &lt;&lt;248351003|Previous well-weight (observable entity)| &#xA;OR &lt;&lt;390734006|Target weight (observable entity)| &#xA;OR &lt;&lt;363809009|Usual body weight (observable entity)|)&quot;" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="29463-7" />
+          <display value="Body weight" />
+        </coding>
+      </fixedCodeableConcept>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BodyWeightObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BodyWeightObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="kg" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="kilogram" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BodyWeightObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.BodyWeightObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BodyWeightObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.BodyWeightObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BodyWeightObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.BodyWeightObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation">
+      <path value="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.Code" />
+      <code>
+        <system value="http://loinc.org" />
+        <code value="9843-4" />
+        <display value="Head Occipital-frontal circumference" />
+      </code>
+      <short value="Use 363811000 |Head circumference measure (observable entity)| or ECl concept below" />
+      <definition value="&quot;&lt;&lt;363811000|Head circumference measure (observable entity)|&#xA;MINUS &lt;&lt;248397001|Head circumference centile (observable entity)|&quot;" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="cm" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="cm" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.HeadCircumferenceObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeightLengthObservation">
+      <path value="ClinicalObservationsDataSet.Observations.HeightLengthObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeightLengthObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.HeightLengthObservation.Status" />
+      <requirements value="Required by FHIR Standard" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeightLengthObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.HeightLengthObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeightLengthObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.HeightLengthObservation.Code" />
+      <short value="Use 50373000 |Body height measure (observable entity)| OR 248334005|Length of body (observable entity)| or ECL concept below" />
+      <definition value="&lt;&lt;50373000|Body height measure (observable entity)| &#xA;MINUS (&lt;&lt;1060601000000109|Body height growth rate (observable entity)| &#xA;OR &lt;&lt;422769007|Method for measuring height (observable entity)| &#xA;OR &lt;&lt;925931000000103|Mid-parental height (observable entity)| &#xA;OR &lt;&lt;925951000000105|Predicted adult height (observable entity)| &#xA;OR &lt;&lt;248336007|Pubis to ground height (observable entity)| &#xA;OR &lt;&lt;276350001|Subischial leg length (observable entity)|)" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="8302-2" />
+          <display value="Body height" />
+        </coding>
+      </fixedCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeightLengthObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.HeightLengthObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="cm" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="cm" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeightLengthObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.HeightLengthObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeightLengthObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.HeightLengthObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.HeightLengthObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.HeightLengthObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMICentileObservation">
+      <path value="ClinicalObservationsDataSet.Observations.BMICentileObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMICentileObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.BMICentileObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMICentileObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.BMICentileObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMICentileObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BMICentileObservation.Code" />
+      <short value="Use 446974000 | Body mass index centile (observable entity) | or ECL concept below" />
+      <definition value="&lt;&lt;446974000 | Body mass index centile (observable entity) | MINUS &lt;&lt;846911000000109 | Baseline body mass index centile (observable entity) |" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMICentileObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BMICentileObservation.Value" />
+      <definition value="How is recorded is it just a number" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="decimal" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/decimal" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMICentileObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.BMICentileObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMICentileObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.BMICentileObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMICentileObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.BMICentileObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMIObservation">
+      <path value="ClinicalObservationsDataSet.Observations.BMIObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMIObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.BMIObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMIObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.BMIObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMIObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.BMIObservation.Code" />
+      <short value="Use 60621009 |Body mass index (observable entity)| or ECL concept below" />
+      <definition value="&lt;&lt;60621009|Body mass index (observable entity)| &#xA;MINUS (&lt;&lt;846931000000101|Baseline body mass index (observable entity)| &#xA;OR &lt;&lt;852451000000103|Maximum body mass index (observable entity)| &#xA;OR &lt;&lt;852461000000100|Minimum body mass index (observable entity)| &#xA;OR &lt;&lt;838441000000103|Target body mass index (observable entity)| &#xA;OR &lt;&lt;715456008|Percentage median body mass index for age and sex (observable entity)|)" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="39156-5" />
+          <display value="Body mass index" />
+        </coding>
+      </fixedCodeableConcept>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMIObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.BMIObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="kg/m2" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="kg/m2" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMIObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.BMIObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMIObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.BMIObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.BMIObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.BMIObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.GestationalAgeObservation">
+      <path value="ClinicalObservationsDataSet.Observations.GestationalAgeObservation" />
+      <short value="Used when children are born premature" />
+      <definition value="Relevant when monitoring growth as you need to 'correct' for under 2s when premature calculating growth centiles" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.Code" />
+      <short value="Use 412726003 | Length of gestation at birth (observable entity) | or ECL concept below" />
+      <definition value="&lt;&lt;412726003 | Length of gestation at birth (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.Value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <unit value="WeeksDays" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="WeeksDays" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.GestationalAgeObservation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason">
+      <path value="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason" />
+      <definition value="Reason for child being withdrawn from the measurement as part of the National Child Measurement Programme" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.Status">
+      <path value="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="ObservationStatus" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.Code">
+      <path value="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.Code" />
+      <short value="Use 376251000000101 | Excluded from national child measurement programme (finding) | or ECL concept below" />
+      <definition value="&lt;&lt;376251000000101 | Excluded from national child measurement programme (finding) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.NCMPWithdrawalReason.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.Code" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="1104051000000101" />
+          <display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) total score" />
+          <userSelected value="false" />
+        </coding>
+      </fixedCodeableConcept>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.Value" />
+      <definition value="Total score from&#xD;&#xA;RespirationRateObservation score 0,1,2,3&#xD;&#xA;OxygenSaturationObservation score 0,1,2,3&#xD;&#xA;AirOrOxygenObservation score 0,2&#xD;&#xA;SystolicObservation score 0,1,2,3&#xD;&#xA;ACPVUObservation score 0,1,2,3&#xD;&#xA;TemperatureObservation score 0,1,2,3&#xD;&#xA;PulseRateObservation score 0,1,2,3&#xD;&#xA;ConsciousnessObservation 0,3" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <system value="http://unitsofmeasure.org" />
+        <code value="score" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.DerivedFromObservation">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.DerivedFromObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.DerivedFromObservation.Observation">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.DerivedFromObservation.Observation" />
+      <definition value="Any observation(s) which this NEWS2 Score is derived from" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.NEWS2SubscoreObservationComponent">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.NEWS2SubscoreObservationComponent" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.NEWS2SubscoreObservationComponent.Code">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.NEWS2SubscoreObservationComponent.Code" />
+      <definition value="1104301000000104 - Royal College of Physicians NEWS2 (National Early Warning Score 2) - respiration rate score&#xD;&#xA;1104311000000102 - Royal College of Physicians NEWS2 (National Early Warning Score 2) - oxygen saturation scale 1 score&#xD;&#xA;1104321000000108 - Royal College of Physicians NEWS2 (National Early Warning Score 2) - oxygen saturation scale 2 score&#xD;&#xA;1104331000000105 - Royal College of Physicians NEWS2 (National Early Warning Score 2) - air or oxygen score&#xD;&#xA;1104351000000103 - Royal College of Physicians NEWS2 (National Early Warning Score 2) - pulse score&#xD;&#xA;1104341000000101 - Royal College of Physicians NEWS2 (National Early Warning Score 2) - systolic blood pressure score&#xD;&#xA;1104361000000100 - Royal College of Physicians NEWS2 (National Early Warning Score 2) - consciousness score&#xD;&#xA;1104371000000107 - Royal College of Physicians NEWS2 (National Early Warning Score 2) - temperature score&#xD;&#xA;1104051000000101 | Royal College of Physicians National Early Warning Score 2 total score (observable entity) |" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NEWS2Observation.NEWS2SubscoreObservationComponent.Value">
+      <path value="ClinicalObservationsDataSet.Observations.NEWS2Observation.NEWS2SubscoreObservationComponent.Value" />
+      <definition value="Individual scores from:&#xD;&#xA;RespirationRateObservation score 0,1,2,3&#xD;&#xA;OxygenSaturationObservation score 0,1,2,3&#xD;&#xA;AirOrOxygenObservation score 0,2&#xD;&#xA;SystolicObservation score 0,1,2,3&#xD;&#xA;ACPVUObservation score 0,1,2,3&#xD;&#xA;TemperatureObservation score 0,1,2,3&#xD;&#xA;PulseRateObservation score 0,1,2,3&#xD;&#xA;ConsciousnessObservation 0,3" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <system value="http://unitsofmeasure.org" />
+        <code value="score" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.Status">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.Status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.DateTime">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.DateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.Code">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.Code" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="891931000000102" />
+          <display value="Paediatric Early Warning Score" />
+          <userSelected value="false" />
+        </coding>
+      </fixedCodeableConcept>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.Value">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.Value" />
+      <definition value="Total score of :&#xD;&#xA;RespiratoryRateObservation score 0,1,2,4&#xD;&#xA;RespiratoryDistressObservation score 0,1,2,4&#xD;&#xA;OxygenSaturationObservation score 0,1,4&#xD;&#xA;InspiredOxygenObservation score 0,2,4&#xD;&#xA;HeartRateObservation score 0,1,2,4&#xD;&#xA;BloodPressureObservation score 0,1,2,4&#xD;&#xA;SystolicObservation score 0,1,2,4&#xD;&#xA;CapiliaryRefillTimeObservation score 0,2" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <system value="http://unitsofmeasure.org" />
+        <code value="score" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.Subject">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.Subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.SPOTChartUsed">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.SPOTChartUsed" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="example" />
+        <valueSet value="http://hl7.org/fhir/valueset-observation-methods.html" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.PerformerPerson">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.PerformerPerson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.PerformerOrganization">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.PerformerOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.DerivedFromObservation">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.DerivedFromObservation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.DerivedFromObservation.Observation">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.DerivedFromObservation.Observation" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.PEWSSubscoreObservationComponent">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.PEWSSubscoreObservationComponent" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.PEWSSubscoreObservationComponent.Code">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.PEWSSubscoreObservationComponent.Code" />
+      <definition value="9999100 | NEWS2 - baseline total score (observable entity) |&#xD;&#xA;9999000 | NPEWS1 - baseline total score (observable entity) |&#xD;&#xA;9999002  NPEWS1 - respiration rate score&#xD;&#xA;9999004  NPEWS1 - respiratory distress score &#xD;&#xA;9999005 - NPEWS1 - oxygen saturation score&#xD;&#xA;9999006 -  NPEWS1 - air or oxygen score&#xD;&#xA;9999007 - NPEWS1 - systolic blood pressure score &#xD;&#xA;9999008 - NPEWS1 - pulse score&#xD;&#xA;9999009 -  NPEWS1 - capilliary fill time score &#xD;&#xA;9999010 - NPEWS1 - consciousness score&#xD;&#xA;9999011 - NPEWS1 - temperature score &#xD;&#xA;9999014 NPEWS1 total score &#xD;&#xA;9999015  Local PEWS total score" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://snomed.info/sct" />
+      </binding>
+    </element>
+    <element id="ClinicalObservationsDataSet.Observations.NPEWS1Observation.PEWSSubscoreObservationComponent.Value">
+      <path value="ClinicalObservationsDataSet.Observations.NPEWS1Observation.PEWSSubscoreObservationComponent.Value" />
+      <definition value="Individual scores from:&#xD;&#xA;RespiratoryRateObservation score 0,1,2,4&#xD;&#xA;RespiratoryDistressObservation score 0,1,2,4&#xD;&#xA;OxygenSaturationObservation score 0,1,4&#xD;&#xA;InspiredOxygenObservation score 0,2,4&#xD;&#xA;HeartRateObservation score 0,1,2,4&#xD;&#xA;BloodPressureObservation score 0,1,2,4&#xD;&#xA;SystolicObservation score 0,1,2,4&#xD;&#xA;CapiliaryRefillTimeObservation score 0,2" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+      <fixedQuantity>
+        <system value="http://unitsofmeasure.org" />
+        <code value="score" />
+      </fixedQuantity>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://unitsofmeasure.org" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,213 @@
+{
+  "resourceType": "Bundle",
+  "id": "UKCore-Bundle-MichaelJonesRequest-Example-Minimal",
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "30d65c8e-98e8-4806-b6a6-51e94733f0e9"
+  },
+  "type": "transaction",
+  "timestamp": "2022-07-11T09:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0",
+      "request": {
+        "method": "POST",
+        "url": "MessageHeader"
+      },
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "a4409d7c-b613-477c-b623-87e60406c2f0",
+        "eventCoding": {
+          "system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
+          "code": "genomictestrequest",
+          "display": "Genomic Test Request"
+        },
+        "source": {
+          "endpoint": "https://www.christie.nhs.uk/ehr"
+        },
+        "focus":  [
+          {
+            "reference": "urn:uuid:66c519dd-423f-4238-89c8-91c5be52f330"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97",
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "41e4b604-37f3-4799-a6b3-ab5b104f3c97",
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+            "valueCode": "M"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+                  "code": "A",
+                  "display": "White - British"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus",
+                  "code": "H",
+                  "display": "UK Resident"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9999999999"
+          }
+        ],
+        "name": [
+          {
+            "family": "Jones",
+            "given": [
+              "Michael"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1989-12-08",
+        "address": [
+          {
+            "line": [
+              "48 Astoria Drive"
+            ],
+            "city": "Coventry",
+            "postalCode": "CV4 9ZY"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:66c519dd-423f-4238-89c8-91c5be52f330",
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      },
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "66c519dd-423f-4238-89c8-91c5be52f330",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Coverage",
+            "valueCoding": {
+              "system": "https://fhir.nhs.uk/CodeSystem/coverage-genomics",
+              "code": "NHS",
+              "display": "NHS"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.christie.nhs.uk/ehr",
+            "value": "LabOrder123456"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "405824009",
+                "display": "Genetic test"
+              }
+            ]
+          }
+        ],
+        "priority": "routine",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "63491000000109",
+              "display": "Paediatric IDH-wildtype glioblastoma tumour and germline WGS (whole genome sequencing)"
+            }
+          ]
+        },
+        "subject":  {
+          "reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97"
+        },
+        "authoredOn": "2022-07-11T09:00:00Z",
+        "requester": {
+          "reference": "urn:uuid:3462583a-536c-4bad-99d3-44dc553921fd"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "363418001",
+                "display": "Malignant tumor of pancreas (disorder)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3462583a-536c-4bad-99d3-44dc553921fd",
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      },
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "3462583a-536c-4bad-99d3-44dc553921fd",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "100102238986"
+          }
+        ],
+        "practitioner": {
+          "identifier": {
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "C9999999"
+          },
+          "display": "Lucy Hale"
+        },
+        "organization": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBV"
+          },
+          "display": "NHS Trust - THE CHRISTIE NHS FOUNDATION TRUST"
+        },
+        "telecom" : [
+          {
+            "use": "work",
+            "system": "email",
+            "value": "lucy.hale@nhs.net"
+          },
+          {
+            "use": "work",
+            "system": "phone",
+            "value": "02476151602"
+          }
+        ]
+      }
+    }
+  ]
+}

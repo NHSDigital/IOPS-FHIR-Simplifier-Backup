@@ -1,0 +1,290 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <url value="https://simplifier.net/guide/testforformat" />
+  <version value="1.0.0" />
+  <name value="FHIR Implementation Guide Template" />
+  <status value="draft" />
+  <description value="Template for NHS Digital IGs" />
+  <fhirVersion value="4.0.0" />
+  <definition>
+    <page>
+      <nameUrl value="Home.md" />
+      <title value="Home" />
+      <generation value="markdown" />
+      <page>
+        <nameUrl value="Overview.md" />
+        <title value="Overview" />
+        <generation value="markdown" />
+        <page>
+          <nameUrl value="Introduction.md" />
+          <title value="Introduction" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Howtousethisspecification.md" />
+          <title value="How to use this specification" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Guideversioning.md" />
+          <title value="Guide versioning" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Glossary.md" />
+          <title value="Glossary" />
+          <generation value="markdown" />
+        </page>
+      </page>
+      <page>
+        <nameUrl value="FHIRAssets.md" />
+        <title value="FHIR Assets" />
+        <generation value="markdown" />
+        <page>
+          <nameUrl value="Profiles.md" />
+          <title value="Profiles" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Extensions.md" />
+          <title value="Extensions" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="CodeSystems.md" />
+          <title value="CodeSystems" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="ValueSets.md" />
+          <title value="ValueSets" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="ConceptMaps.md" />
+          <title value="ConceptMaps" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="CapabilityStatements.md" />
+          <title value="CapabilityStatements" />
+          <generation value="markdown" />
+        </page>
+      </page>
+      <page>
+        <nameUrl value="Design.md" />
+        <title value="Design" />
+        <generation value="markdown" />
+        <page>
+          <nameUrl value="Designoverview.md" />
+          <title value="Design overview" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Interactions.md" />
+          <title value="Interactions" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Clinicalheadings.md" />
+          <title value="Clinical headings" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Clinicalheadingsoverview.md" />
+            <title value="Clinical headings overview" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="ClinicalheadingsmappingtoFHIRprofilesandstructure.md" />
+            <title value="Clinical headings mapping to FHIR profiles and structure" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="ClinicalheadingsXmappingtoFHIR.md" />
+            <title value="Clinical headings [X] mapping to FHIR" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="ClinicalheadingsYmappingtoFHIR.md" />
+            <title value="Clinical headings [Y] mapping to FHIR" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Transport.md" />
+          <title value="Transport" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Documentprofiles.md" />
+          <title value="Document profiles" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="RenderingFHIRdocuments.md" />
+          <title value="Rendering FHIR documents" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="FHIRdocumentreplacementandupdates.md" />
+          <title value="FHIR document replacement and updates" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Useofattachments.md" />
+          <title value="Use of attachments" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Acknowledgmentsandresponses.md" />
+          <title value="Acknowledgments and responses" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Eventsmodel.md" />
+          <title value="Events model" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Eventspublishingandreceivingrequirements.md" />
+          <title value="Events publishing and receiving requirements" />
+          <generation value="markdown" />
+        </page>
+      </page>
+      <page>
+        <nameUrl value="Build.md" />
+        <title value="Build" />
+        <generation value="markdown" />
+        <page>
+          <nameUrl value="BundleXcontents.md" />
+          <title value="Bundle [X] contents" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="BundleXreferencing.md" />
+          <title value="Bundle [X] referencing" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="BundleXmapping.md" />
+          <title value="Bundle [X] mapping" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="MessageXBundlereferencing.md" />
+          <title value="Message [X] Bundle referencing " />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="MessageXBundlecontents.md" />
+          <title value="Message [X] Bundle contents" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="MessageXBundlemapping.md" />
+          <title value="Message [X] Bundle mapping" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Constructingclinicalcodedstructures.md" />
+          <title value="Constructing clinical coded structures" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Overview-duplicate-2.md" />
+            <title value="Overview" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="HowtoconstructX.md" />
+            <title value="How to construct [X]" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="HowtoconstructY.md" />
+            <title value="How to construct [Y]" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="APIusage.md" />
+          <title value="API usage" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Errorhandling.md" />
+          <title value="Error handling" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Querytypes.md" />
+          <title value="Query types" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Searchparameters.md" />
+          <title value="Search parameters" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Operationsandresponses.md" />
+          <title value="Operations and responses" />
+          <generation value="markdown" />
+        </page>
+      </page>
+      <page>
+        <nameUrl value="Examples.md" />
+        <title value="Examples" />
+        <generation value="markdown" />
+        <page>
+          <nameUrl value="Clinicalscenarios.md" />
+          <title value="Clinical scenarios" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="ExampleX.md" />
+          <title value="Example [X]" />
+          <generation value="markdown" />
+        </page>
+      </page>
+      <page>
+        <nameUrl value="Authentication.md" />
+        <title value="Authentication" />
+        <generation value="markdown" />
+        <page>
+          <nameUrl value="Accesscontrol.md" />
+          <title value="Access control" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Accesstokens.md" />
+          <title value="Access tokens" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Auditing.md" />
+          <title value="Auditing" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Security.md" />
+          <title value="Security" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="IntegrationwithSPINE.md" />
+          <title value="Integration with SPINE" />
+          <generation value="markdown" />
+        </page>
+      </page>
+      <page>
+        <nameUrl value="Releasenotes.md" />
+        <title value="Release notes" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="Helpandsupport.md" />
+        <title value="Help and support" />
+        <generation value="markdown" />
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>

@@ -1,0 +1,50 @@
+{
+  "resourceType": "Observation",
+  "id": "GestationalAgeObservation",
+
+  "identifier": [
+    {
+      "system": "https://tools.ietf.org/html/rfc4122",
+      "value": "92fcdea4-f4cc-499d-a5d7-7621cb763e77"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "Survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "412726003",
+        "display": "Length of gestation at birth"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/30d3de6f-e800-47fa-b610-b02c7c8e9d57"
+  },
+  "effectiveDateTime": "2018-10-04T14:17:59+01:00",
+  "performer": [
+    {
+      "reference": "Practitioner/627be677-3eb2-4db4-9570-5669fd8c92f5"
+    },
+    {
+      "reference": "Organization/cdaea3db-8b40-41dc-9834-b42503e12382"
+    }
+  ],
+  "valueQuantity": {
+    "value": 252,
+    "unit": "day",
+    "system": "http://unitsofmeasure.org",
+    "code": "d"
+  }
+}

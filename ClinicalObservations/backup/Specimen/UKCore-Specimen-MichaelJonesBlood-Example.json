@@ -1,0 +1,120 @@
+{
+    "resourceType": "Specimen",
+    "id": "345c468e-3004-4a0d-a24e-5a3fecd08925",
+    "meta": {
+        "versionId": "9600a22e-d2ef-4456-b1a9-dba8c4b4d2f5",
+        "lastUpdated": "2022-07-14T13:57:51.740+00:00"
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot; UKCore-Specimen-MichaelJonesBlood-Example&quot; </p></div></div>"
+    },
+    "identifier": [
+        {
+            "system": "https://www.christie.nhs.uk/path",
+            "value": "Spec123456"
+        }
+    ],
+    "status": "available",
+    "type": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "87612001",
+                "display": "Blood (substance)"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "https://server.fire.ly/Patient/UKCore-Patient-MichealJones-Example"
+    },
+    "receivedTime": "2022-07-13T09:00:00Z",
+    "request": [
+        {
+            "reference": "https://server.fire.ly/ServiceRequest/UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example"
+        }
+    ],
+    "collection": {
+        "collector": {
+            "reference": "https://server.fire.ly/Practitioner/UKCore-Practitioner-MaryLane-Example"
+        },
+        "collectedDateTime": "2022-07-11T09:00:00Z",
+        "quantity": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mL",
+            "value": 2.5
+        },
+        "method": {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "129300006",
+                    "display": "Puncture - action"
+                }
+            ]
+        },
+        "bodySite": {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "14975008",
+                    "display": "Forearm structure (body structure)"
+                }
+            ]
+        }
+    },
+    "processing": [
+        {
+            "description": "Populated when sample is processed"
+        }
+    ],
+    "container": [
+        {
+            "identifier": [
+                {
+                    "use": "official",
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "ACSN",
+                                "display": "Accession ID"
+                            }
+                        ]
+                    },
+                    "system": "https://www.christie.nhs.uk/path",
+                    "value": "ASCN123456",
+                    "assigner": {
+                        "reference": "https://server.fire.ly/Organization/UKCore-Organization-RBV-Example"
+                    }
+                }
+            ],
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "706067003",
+                        "display": "Blood collection/transfer device (physical object)"
+                    }
+                ]
+            },
+            "specimenQuantity": {
+                "system": "http://unitsofmeasure.org",
+                "code": "mL",
+                "value": 2.5
+            }
+        }
+    ],
+    "condition": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0493",
+                    "code": "SNR",
+                    "display": "Sample not received"
+                }
+            ],
+            "text": "change code if sample condition changes"
+        }
+    ]
+}

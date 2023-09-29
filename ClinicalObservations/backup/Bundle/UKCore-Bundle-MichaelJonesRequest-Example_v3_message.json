@@ -1,0 +1,890 @@
+{
+  "resourceType": "Bundle",
+  "id": "UKCore-Bundle-MichaelJonesRequest-Example",
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "30d65c8e-98e8-4806-b6a6-51e94733f0e9"
+  },
+  "type": "transaction",
+  "timestamp": "2022-07-11T09:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:f799ec75-8648-4b91-b0a9-b73b46db2c00",
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      },
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "f799ec75-8648-4b91-b0a9-b73b46db2c00",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "999999"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Mary Lane",
+            "family": "Lane",
+            "given": [
+              "Mary"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2b94aed1-02bd-4f68-b5f4-df5aaceecdb1",
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      },
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "2b94aed1-02bd-4f68-b5f4-df5aaceecdb1",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "C5173256"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Veeda Flavia D'Mello",
+            "family": "D'Mello",
+            "given": [
+              "Veeda",
+              "Flavia"
+            ]
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+                  "code": "MD",
+                  "display": "Doctor of Medicine"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6e1a8ea3-3a59-40aa-b943-5c896a30e43a",
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      },
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "6e1a8ea3-3a59-40aa-b943-5c896a30e43a",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "C9999999"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Lucy Hale",
+            "family": "Hale",
+            "given": [
+              "Lucy"
+            ]
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+                  "code": "MD",
+                  "display": "Doctor of Medicine"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:748e3f37-e05e-4484-8425-81e7b7572812",
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "748e3f37-e05e-4484-8425-81e7b7572812",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "DPX"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                "code": "172",
+                "display": "INDEPENDENT SECTOR HEALTHCARE PROVIDER"
+              }
+            ]
+          }
+        ],
+        "name": "Independent Sector Healthcare Provider - JUBILEE HEALTHCARE",
+        "address": [
+          {
+            "type": "both",
+            "line": [
+              "41 WESTMINSTER ROAD"
+            ],
+            "city": "COVENTRY",
+            "postalCode": "CV1 3GB"
+          }
+        ],
+        "partOf": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "QWU"
+          },
+          "display": "QWU"
+        },
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "ADMIN",
+                  "display": "Administrative"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "02476223565",
+                "use": "work"
+              }
+            ]
+          }
+        ],
+        "endpoint": [
+          {
+            "display": "UKCore-Endpoint-DPX-Example"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:309aba59-ce1a-4ee6-bc82-ab44fa1bf904",
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "309aba59-ce1a-4ee6-bc82-ab44fa1bf904",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "699X0"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                "code": "173",
+                "display": "PATHOLOGY LAB"
+              }
+            ]
+          }
+        ],
+        "name": "Pathology Lab - NORTH WEST GLH LED BY MANCHESTER UNIVERSITY NHS FOUNDATION TRUST",
+        "address": [
+          {
+            "type": "both",
+            "line": [
+              "ST MARYS HOSPITAL",
+              "MANCHESTER ROYAL INFIRMARY",
+              "OXFORD ROAD"
+            ],
+            "city": "Manchester",
+            "postalCode": "M13 9WL"
+          }
+        ],
+        "partOf": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "R0A"
+          },
+          "display": "R0A"
+        },
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "ADMIN",
+                  "display": "Administrative"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "01612766506",
+                "use": "work"
+              },
+              {
+                "system": "email",
+                "value": "mft.genomics@nhs.net"
+              }
+            ]
+          }
+        ],
+        "endpoint": [
+          {
+            "display": "UKCore-Endpoint-NorthWestGLH-Example"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513",
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "9af435fd-4bbf-4cc6-81c6-9f2800c2c513",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBV"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                "code": "197",
+                "display": "NHS TRUST"
+              }
+            ]
+          }
+        ],
+        "name": "NHS Trust - THE CHRISTIE NHS FOUNDATION TRUST",
+        "address": [
+          {
+            "type": "both",
+            "line": [
+              "550 WILMSLOW ROAD",
+              "WITHINGTON"
+            ],
+            "city": "Manchester",
+            "postalCode": "M20 4BX"
+          }
+        ],
+        "partOf": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "QOP"
+          },
+          "display": "QOP"
+        },
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "ADMIN",
+                  "display": "Administrative"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "01614463000",
+                "use": "work"
+              }
+            ]
+          }
+        ],
+        "endpoint": [
+          {
+            "display": "UKCore-Endpoint-RBV-Example"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97",
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "41e4b604-37f3-4799-a6b3-ab5b104f3c97",
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+            "valueCode": "M"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+                  "code": "A",
+                  "display": "White - British"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-ResidentialStatus",
+                  "code": "H",
+                  "display": "UK Resident"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "use": "official",
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9999999999"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "Michael Jones",
+            "family": "Jones",
+            "given": [
+              "Michael"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "07920754621",
+            "use": "mobile"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1989-12-08",
+        "deceasedBoolean": false,
+        "address": [
+          {
+            "type": "both",
+            "line": [
+              "48 Astoria Drive"
+            ],
+            "city": "Coventry",
+            "postalCode": "CV4 9ZY"
+          }
+        ],
+        "multipleBirthBoolean": false,
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "code": "N",
+                    "display": "Next-of-Kin"
+                  }
+                ]
+              }
+            ],
+            "name": {
+              "use": "official",
+              "text": "Jane Jones",
+              "family": "Jones",
+              "given": [
+                "Jane"
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "079468308869",
+                "use": "work"
+              }
+            ],
+            "address":
+            {
+              "type": "both",
+              "line": [
+                "48 Astoria Drive"
+              ],
+              "city": "Coventry",
+              "postalCode": "CV4 9ZY"
+            },
+            "gender": "female"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "reference": "urn:uuid:2b94aed1-02bd-4f68-b5f4-df5aaceecdb1",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+              "value": "C5173256"
+            }
+          }
+        ],
+        "managingOrganization": {
+          "reference": "urn:uuid:748e3f37-e05e-4484-8425-81e7b7572812",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "DPX"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:66c519dd-423f-4238-89c8-91c5be52f330",
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      },
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "66c519dd-423f-4238-89c8-91c5be52f330",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Genomics-Coverage",
+            "valueCoding": {
+              "system": "https://fhir.nhs.uk/CodeSystem/coverage-genomics",
+              "code": "NHS",
+              "display": "NHS"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.christie.nhs.uk/ehr",
+            "value": "LabOrder123456",
+            "assigner":  {
+              "reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
+            }
+          }
+        ],
+        "instantiatesUri": [
+          "https://www.england.nhs.uk/wp-content/uploads/2020/11/1869-dpyd-policy-statement.pdf"
+        ],
+        "basedOn": [
+          {
+            "display": "UKCore-CarePlan-PancreaticCancerPlan-Example"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "405824009",
+                "display": "Genetic test"
+              }
+            ]
+          }
+        ],
+        "priority": "routine",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "63491000000109",
+              "display": "Paediatric IDH-wildtype glioblastoma tumour and germline WGS (whole genome sequencing)"
+            }
+          ]
+        },
+        "subject":  {
+          "reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97"
+        },
+        "encounter":  {
+          "display": "UKCore-Encounter-OncologyConsultation-Example"
+        },
+        "authoredOn": "2022-07-11T09:00:00Z",
+        "requester": {
+          "reference": "urn:uuid:3462583a-536c-4bad-99d3-44dc553921fd"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:309aba59-ce1a-4ee6-bc82-ab44fa1bf904"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "363418001",
+                "display": "Malignant tumor of pancreas (disorder)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3462583a-536c-4bad-99d3-44dc553921fd",
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      },
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "3462583a-536c-4bad-99d3-44dc553921fd",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "100102238986"
+          }
+        ],
+        "practitioner": {
+          "reference": "urn:uuid:6e1a8ea3-3a59-40aa-b943-5c896a30e43a"
+        },
+        "organization": {
+          "reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
+        },
+        "telecom" : [
+          {
+            "system": "email",
+            "value": "lucy.hale@nhs.net",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "02476151602",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:840d075e-0480-4134-ae51-27f572731cc8",
+      "request": {
+        "method": "POST",
+        "url": "Specimen"
+      },
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "840d075e-0480-4134-ae51-27f572731cc8",
+        "identifier": [
+          {
+            "system": "https://www.christie.nhs.uk/path",
+            "value": "Spec123456"
+          }
+        ],
+        "accessionIdentifier": {
+          "system": "https://www.christie.nhs.uk/path",
+          "value": "Spec123456"
+        },
+        "status": "available",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "87612001",
+              "display": "Blood (substance)"
+            }
+          ]
+        },
+        "subject":  {
+          "reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97"
+        },
+        "receivedTime": "2022-07-13T09:00:00Z",
+        "request": [
+          {
+            "reference": "urn:uuid:66c519dd-423f-4238-89c8-91c5be52f330"
+          }
+        ],
+        "collection": {
+          "collector": {
+            "reference": "urn:uuid:f799ec75-8648-4b91-b0a9-b73b46db2c00"
+          },
+          "collectedDateTime": "2022-07-11T09:00:00Z",
+          "quantity": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mL",
+            "value": 2.5
+          },
+          "method": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "129300006",
+                "display": "Puncture - action"
+              }
+            ]
+          },
+          "bodySite": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "14975008",
+                "display": "Forearm structure (body structure)"
+              }
+            ]
+          }
+        },
+        "container": [
+          {
+            "identifier": [
+              {
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                      "code": "ACSN",
+                      "display": "Accession ID"
+                    }
+                  ]
+                },
+                "system": "https://www.christie.nhs.uk/path",
+                "value": "ASCN123456",
+                "assigner": {
+                  "reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
+                }
+              }
+            ],
+            "type": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "706067003",
+                  "display": "Blood collection/transfer device (physical object)"
+                }
+              ]
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "code": "mL",
+              "value": 2.5
+            }
+          }
+        ],
+        "condition": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0493",
+                "code": "SNR",
+                "display": "Sample not received"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:87486509-5512-44e9-aa95-6d23ae0c8687",
+      "request": {
+        "method": "POST",
+        "url": "Consent"
+      },
+      "resource": {
+        "resourceType": "Consent",
+        "id": "87486509-5512-44e9-aa95-6d23ae0c8687",
+        "identifier": [
+          {
+            "system": "https://www.christie.nhs.uk/ehr",
+            "value": "Consent123456",
+            "assigner":  {
+              "reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
+            }
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+              "code": "research",
+              "display": "Research"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+                "code": "research",
+                "display": "Research Information Access"
+              }
+            ]
+          }
+        ],
+        "patient":  {
+          "reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97"
+        },
+        "dateTime": "2022-07-11T09:00:00Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97"
+          }
+        ],
+        "organization": [
+          {
+            "reference": "urn:uuid:9af435fd-4bbf-4cc6-81c6-9f2800c2c513"
+          }
+        ],
+        "sourceAttachment": {
+          "contentType": "application/pdf",
+          "language": "en-GB",
+          "url": "https://files.genomicsengland.co.uk/forms/Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1.pdf",
+          "size": 539588,
+          "title" : "Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1_MJ",
+          "creation": "2022-07-11T09:00:00Z"
+        },
+        "policy": [
+          {
+            "uri": "https://s3.eu-west-2.amazonaws.com/ge-production-s3/forms/Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1.pdf"
+          }
+        ],
+        "verification": [
+          {
+            "verified": true,
+            "verifiedWith": {
+              "reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97"
+            },
+            "verificationDate": "2022-07-11T09:00:00Z"
+          }
+        ],
+        "provision": {
+          "type": "permit",
+          "period": {
+            "start": "2022-07-11T09:00:00Z",
+            "end": "2025-07-11T08:59:59Z"
+          },
+          "actor": [
+            {
+              "role": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+                    "code": "dataprocessor",
+                    "display": "data processor"
+                  }
+                ]
+              },
+              "reference": {
+                "reference": "urn:uuid:309aba59-ce1a-4ee6-bc82-ab44fa1bf904"
+              }
+            }
+          ],
+          "action": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/consentaction",
+                  "code": "access",
+                  "display": "Access"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/consentaction",
+                  "code": "use",
+                  "display": "Use"
+                }
+              ]
+            }
+          ],
+          "class": [
+            {
+              "system": "http://hl7.org/fhir/resource-types",
+              "code": "DiagnosticReport",
+              "display": "DiagnosticReport"
+            },
+            {
+              "system": "http://hl7.org/fhir/resource-types",
+              "code": "ClinicalImpression",
+              "display": "ClinicalImpression"
+            },
+            {
+              "system": "http://hl7.org/fhir/resource-types",
+              "code": "Condition",
+              "display": "Condition"
+            },
+            {
+              "system": "http://hl7.org/fhir/resource-types",
+              "code": "MolecularSequence",
+              "display": "MolecularSequence"
+            },
+            {
+              "system": "http://hl7.org/fhir/resource-types",
+              "code": "Observation",
+              "display": "Observation"
+            }
+          ],
+          "code": [
+            {
+              "coding": [
+                {
+                  "system": "https://www.england.nhs.uk/publication/national-genomic-test-directories",
+                  "code": "M219.3",
+                  "display": "DPYD hotspot"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

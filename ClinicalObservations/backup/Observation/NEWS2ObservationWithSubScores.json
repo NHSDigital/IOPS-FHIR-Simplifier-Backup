@@ -1,0 +1,211 @@
+{
+  "resourceType": "Observation",
+  "id": "NEWS2ObservationWithSubScores",
+
+  "identifier": [
+    {
+      "system": "https://tools.ietf.org/html/rfc4122",
+      "value": "ea45c120-504f-40f2-a79f-cb8cd3dd1307"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "Survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1104051000000101",
+        "display": "Royal College of Physicians NEWS2 (National Early Warning Score 2) total score"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/30d3de6f-e800-47fa-b610-b02c7c8e9d57"
+  },
+  "effectiveDateTime": "2018-10-04T14:17:59+01:00",
+  "performer": [
+    {
+      "reference": "Practitioner/627be677-3eb2-4db4-9570-5669fd8c92f5"
+    },
+    {
+      "reference": "Organization/cdaea3db-8b40-41dc-9834-b42503e12382"
+    }
+  ],
+  "valueQuantity": {
+    "value": 11,
+    "unit": "ScoreOf",
+    "system": "http://unitsofmeasure.org",
+    "code": "{ScoreOf}"
+  },
+  "derivedFrom": [
+    {
+      "reference": "Observation/f47cb818-29e1-49db-ae6c-19ddf0303ead"
+    },
+    {
+      "reference": "Observation/7bfdba8e-c1f2-4d66-96fc-d7ee1e9c2b06"
+    },
+    {
+      "reference": "Observation/8504223d-ec0d-455e-8401-c84ae1577406"
+    },
+    {
+      "reference": "Observation/71006952-f165-40a6-a636-b922d60790b6"
+    },
+    {
+      "reference": "Observation/764d6298-b444-4489-9882-1cf68d969330"
+    },
+    {
+      "reference": "Observation/7c38444d-81dc-47cb-8439-0d38a1d1c229"
+    },
+    {
+      "reference": "Observation/d7234e73-6efe-4528-b1f5-bd721a91d8c6"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1104301000000104",
+            "display": "Royal College of Physicians NEWS2 (National Early Warning Score 2) - respiration rate score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1,
+        "unit": "ScoreOf",
+        "system": "http://unitsofmeasure.org",
+        "code": "{ScoreOf}"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1104311000000102",
+            "display": "Royal College of Physicians NEWS2 (National Early Warning Score 2) - oxygen saturation scale 1 score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1,
+        "unit": "ScoreOf",
+        "system": "http://unitsofmeasure.org",
+        "code": "{ScoreOf}"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1104321000000108",
+            "display": "Royal College of Physicians NEWS2 (National Early Warning Score 2) - oxygen saturation scale 2 score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1,
+        "unit": "ScoreOf",
+        "system": "http://unitsofmeasure.org",
+        "code": "{ScoreOf}"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1104331000000105",
+            "display": "Royal College of Physicians NEWS2 (National Early Warning Score 2) - air or oxygen score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2,
+        "unit": "ScoreOf",
+        "system": "http://unitsofmeasure.org",
+        "code": "{ScoreOf}"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1104351000000103",
+            "display": "Royal College of Physicians NEWS2 (National Early Warning Score 2) - pulse score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1,
+        "unit": "ScoreOf",
+        "system": "http://unitsofmeasure.org",
+        "code": "{ScoreOf}"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1104341000000101",
+            "display": "Royal College of Physicians NEWS2 (National Early Warning Score 2) - systolic blood pressure score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1,
+        "unit": "ScoreOf",
+        "system": "http://unitsofmeasure.org",
+        "code": "{ScoreOf}"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1104361000000100",
+            "display": "Royal College of Physicians NEWS2 (National Early Warning Score 2) - consciousness score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "unit": "ScoreOf",
+        "system": "http://unitsofmeasure.org",
+        "code": "{ScoreOf}"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1104371000000107",
+            "display": "Royal College of Physicians NEWS2 (National Early Warning Score 2) - temperature score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1,
+        "unit": "ScoreOf",
+        "system": "http://unitsofmeasure.org",
+        "code": "{ScoreOf}"
+      }
+    }
+  ]
+}
