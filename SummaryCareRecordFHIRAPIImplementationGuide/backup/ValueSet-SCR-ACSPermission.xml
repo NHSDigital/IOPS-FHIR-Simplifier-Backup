@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SCR-ACSPermission" />
+  <url value="https://fhir.nhs.uk/ValueSet/SCR-ACSPermission" />
+  <version value="1.0.0" />
+  <name value="SCR-ACSPermission" />
+  <title value="Summary Care Record Access Control Permission" />
+  <status value="active" />
+  <date value="2020-11-06T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A valueset to identify Access Control Permission to view values for the Summary Care Record." />
+  <copyright value="Copyright © 2020 NHS Digital" />
+  <compose>
+    <include>
+      <system value="https://fhir.nhs.uk/CodeSystem/SCR-ACSPermission" />
+    </include>
+  </compose>
+</ValueSet>

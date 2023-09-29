@@ -1,0 +1,12 @@
+{
+  "name": null,
+  "version": null,
+  "description": null,
+  "author": null,
+  "fhirVersions": null,
+  "devDependencies": null,
+  "canonicals": null,
+  "dependencies": {
+    "UK.Core.r4.v2": "2.0.5"
+  }
+}

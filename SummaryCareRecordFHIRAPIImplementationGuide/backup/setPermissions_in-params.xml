@@ -1,0 +1,17 @@
+<!-- SCR-SetPermissions-OperationInParameter.xml example -->
+<Parameters>
+  <parameter>
+    <name value="setPermissions" />
+    <part>
+      <name value="nhsNumber" />
+      <valueString value="999999998" />
+    </part>
+    <part>
+      <name value="permissionCode" />
+      <valueCoding>
+        <system value="https://fhir.nhs.uk/CodeSystem/SCR-ACSPermission" />
+        <code value="Ask" />
+      </valueCoding>
+    </part>
+  </parameter>
+</Parameters>

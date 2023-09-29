@@ -1,0 +1,7 @@
+<AuditEvent xmlns="http://hl7.org/fhir">
+  <!-- start of Extension-SCR-NotificationMessage -->
+  <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-SCR-NotificationMessage">
+    <valueString value="Alert: Permission to view override 1C03CF4F-D404-4D76-B192-4F81727059F6" />
+  </extension>
+  <!-- end of Extension -->
+</AuditEvent>

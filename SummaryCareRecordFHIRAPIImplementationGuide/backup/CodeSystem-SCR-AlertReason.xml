@@ -1,0 +1,46 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="SCR-AlertReason" />
+  <url value="https://fhir.nhs.uk/CodeSystem/SCR-AlertReason" />
+  <version value="2.0.0" />
+  <name value="SCR-AlertReason" />
+  <title value="Summary Care Record Alert Reason" />
+  <status value="active" />
+  <date value="2023-01-24T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem to identify the reason a viewing alert has been triggered while viewing a Summary Care Record." />
+  <copyright value="Copyright © 2020 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="1" />
+    <display value="Access made in the public interest" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Access required by statute" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Access required by Court Order" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="Self-Claim Emergency Access" />
+  </concept>
+  <concept>
+    <code value="5" />
+    <display value="Access made in an Emergency" />
+  </concept>
+    <concept>
+    <code value="6" />
+    <display value="Other" />
+  </concept>
+</CodeSystem>

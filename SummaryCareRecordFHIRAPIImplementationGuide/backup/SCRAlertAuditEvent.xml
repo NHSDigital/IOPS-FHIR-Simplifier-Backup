@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SCR-Alert-AuditEvent" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/SCR-Alert-AuditEvent" />
+  <version value="1.0.0" />
+  <name value="SCRAlertAuditEvent" />
+  <title value="SCR Alert Audit Event" />
+  <status value="draft" />
+  <date value="2020-11-13" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.uk" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Represents an Alert of a Permission to view override while viewing of a GP Summary" />
+  <purpose value="This profile records business and conformance rules required to produce a well-formed TMS Event Service(TES) Alert. This information is currently not supported by the FHIR standard in the base AuditEvent resource." />
+  <copyright value="Copyright © 2020 NHS Digital" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="dicom" />
+    <uri value="http://nema.org/dicom" />
+    <name value="DICOM Tag Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w3c.prov" />
+    <uri value="http://www.w3.org/ns/prov" />
+    <name value="W3C PROV" />
+  </mapping>
+  <mapping>
+    <identity value="fhirprovenance" />
+    <uri value="http://hl7.org/fhir/provenance" />
+    <name value="FHIR Provenance Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="AuditEvent" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="AuditEvent.extension">
+      <path value="AuditEvent.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="AuditEvent.extension:notificationMessage">
+      <path value="AuditEvent.extension" />
+      <sliceName value="notificationMessage" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-SCR-NotificationMessage" />
+      </type>
+    </element>
+    <element id="AuditEvent.type">
+      <path value="AuditEvent.type" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="AuditEventType" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/SCR-AlertType" />
+      </binding>
+    </element>
+    <element id="AuditEvent.subtype">
+      <path value="AuditEvent.subtype" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="AuditEventSubType" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/SCR-AlertReason" />
+      </binding>
+    </element>
+    <element id="AuditEvent.subtype.system">
+      <path value="AuditEvent.subtype.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.subtype.code">
+      <path value="AuditEvent.subtype.code" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.subtype.display">
+      <path value="AuditEvent.subtype.display" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent">
+      <path value="AuditEvent.agent" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="who.identifier.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="AuditEvent.agent:Patient">
+      <path value="AuditEvent.agent" />
+      <sliceName value="Patient" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AuditEvent.agent:Patient.who">
+      <path value="AuditEvent.agent.who" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Patient.who.identifier">
+      <path value="AuditEvent.agent.who.identifier" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Patient.who.identifier.system">
+      <path value="AuditEvent.agent.who.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/nhs-number" />
+    </element>
+    <element id="AuditEvent.agent:Patient.who.identifier.value">
+      <path value="AuditEvent.agent.who.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Patient.requestor">
+      <path value="AuditEvent.agent.requestor" />
+      <fixedBoolean value="false" />
+    </element>
+    <element id="AuditEvent.agent:Organization">
+      <path value="AuditEvent.agent" />
+      <sliceName value="Organization" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AuditEvent.agent:Organization.who">
+      <path value="AuditEvent.agent.who" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Organization.who.identifier">
+      <path value="AuditEvent.agent.who.identifier" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Organization.who.identifier.system">
+      <path value="AuditEvent.agent.who.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
+    </element>
+    <element id="AuditEvent.agent:Organization.who.identifier.value">
+      <path value="AuditEvent.agent.who.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Person">
+      <path value="AuditEvent.agent" />
+      <sliceName value="Person" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AuditEvent.agent:Person.role">
+      <path value="AuditEvent.agent.role" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Person.role:UserRole">
+      <path value="AuditEvent.agent.role" />
+      <sliceName value="UserRole" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="AuditEvent.agent:Person.role:UserRole.coding.system">
+      <path value="AuditEvent.agent.role.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Person.role:UserRole.coding.code">
+      <path value="AuditEvent.agent.role.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Person.role:UserRole.coding.display">
+      <path value="AuditEvent.agent.role.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Person.who">
+      <path value="AuditEvent.agent.who" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Person.who.identifier">
+      <path value="AuditEvent.agent.who.identifier" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent:Person.who.identifier.system">
+      <path value="AuditEvent.agent.who.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/sds-user-id" />
+    </element>
+    <element id="AuditEvent.agent:Person.who.identifier.value">
+      <path value="AuditEvent.agent.who.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.source.observer.display">
+      <path value="AuditEvent.source.observer.display" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity">
+      <path value="AuditEvent.entity" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AuditEvent.entity.what">
+      <path value="AuditEvent.entity.what" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.what.identifier">
+      <path value="AuditEvent.entity.what.identifier" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.what.identifier.value">
+      <path value="AuditEvent.entity.what.identifier.value" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

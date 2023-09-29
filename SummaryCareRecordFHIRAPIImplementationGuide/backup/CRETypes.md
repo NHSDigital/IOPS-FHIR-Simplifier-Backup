@@ -1,0 +1,3 @@
+## CRE Types
+
+{{index:current}}
