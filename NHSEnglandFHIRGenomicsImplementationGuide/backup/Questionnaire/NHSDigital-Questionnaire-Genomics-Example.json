@@ -1,0 +1,398 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "NHSDigital-Questionnaire-Genomics-Example",
+    "url": "https://fhir.nhs.uk/Questionnaire/NHSDigital-Questionnaire-Genomics-Example",
+    "version": "0.1.0",
+    "name": "NHSDigitalQuestionnaireGenomicsExample",
+    "title": "Record of Discussion Regarding Genomic Testing-Example",
+    "status": "draft",
+    "subjectType": [
+      "Patient"
+    ],
+    "date": "2023-01-03T15:33:46.3652804+00:00",
+    "publisher": "HL7 UK",
+    "contact": [
+      {
+        "name": "HL7 UK",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "secretariat@hl7.org.uk",
+            "use": "work",
+            "rank": 1
+          }
+        ]
+      },
+      {
+        "name": "NHS Digital",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "interoperabilityteam@nhs.net",
+            "use": "work",
+            "rank": 2
+          }
+        ]
+      }
+    ],
+    "description": "This questionnaire is to be used to document the patient consent or the consent of their power of attorney before undergoing Genomic testing and their choice of participation in the National Genomic Research Library programme",
+    "purpose": "Record of Discussion Regarding Genomic Testing",
+    "item": [
+      {
+        "linkId": "declaration",
+        "text": "This form relates to the person being tested. One form is required for each person. All of the statements below remain relevant even if the test relates to someone other than yourself, for example your child.",
+        "type": "display"
+      },
+      {
+        "linkId": "patientDetails",
+        "text": "Patient Details",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "givenName",
+            "text": "First Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "familyName",
+            "text": "Last Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "nhs_Number",
+            "text": "NHS number (or postcode if not not known)",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "birthDate",
+            "text": "Date of Birth",
+            "type": "date",
+            "required": true
+          }
+        ]
+      },
+      {
+        "linkId": "declaration1",
+        "text": "I have discussed genomic testing with my health professional and understand the following",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "familyWiderImplications",
+            "prefix": "Family and wider implications:",
+            "text": "1. The results of my test may have implications for me and members of my family. I understand that my results may also be used to help the healthcare of members of my family and others nationally and internationally. This could be done in discussion with me or through a process that will not personally identify me.",
+            "type": "display"
+          },
+          {
+            "linkId": "uncertainty",
+            "prefix": "Uncertainty:",
+            "text": "2. The results of my test may have findings that are uncertain and not yet fully understood. To decide whether findings are significant for myself or others, my data may be compared to other patients’ results across the country and internationally. I understand that this could change what my results mean for me and my treatment over time.",
+            "type": "display"
+          },
+          {
+            "linkId": "unexpectedInfo",
+            "prefix": "Unexpected information:",
+            "text": "3. The results of my test may also reveal unexpected results that are not related to why I am having this test. These may be found by chance and I may need further tests or investigations to understand their significance.",
+            "type": "display"
+          },
+          {
+            "linkId": "dnaStorage",
+            "prefix": "DNA storage:",
+            "text": "4. Normal NHS laboratory practice is to store the DNA extracted from my sample even after my current testing is complete. My DNA might be used for future analysis and/or to ensure that other testing (for example that of family members) is of high quality.",
+            "type": "display"
+          },
+          {
+            "linkId": "dataStorage",
+            "prefix": "Data storage:",
+            "text": "5. The data from my genomic test will be securely stored so that it can be looked at again in the future if necessary.",
+            "type": "display"
+          },
+          {
+            "linkId": "healthRecords",
+            "prefix": "Health records:",
+            "text": "6. Results from my genomic test will be part of my patient record, a copy of which is held in a national system only available to healthcare professionals.",
+            "type": "display"
+          },
+          {
+            "linkId": "resarch",
+            "prefix": "Research:",
+            "text": "7. I understand that I have the opportunity to take part in research which may benefit myself or others, now or in the future. An offer to join a national research opportunity is available on the following page.",
+            "type": "display"
+          }
+        ]
+      },
+      {
+        "linkId": "furtherQuestion",
+        "text": "For any further questions, my healthcare professional can provide information. More information regarding genomic testing and how my data is protected can be found at www.nhs.uk/conditions/genetics.",
+        "type": "display"
+      },
+      {
+        "linkId": "pageOneBottomInstruction",
+        "text": "Please sign on page three to confirm your agreement to the genomic test.",
+        "type": "display"
+      },
+      {
+        "linkId": "pageTwoTitle",
+        "text": "The National Genomic Research Library",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "declaration2",
+            "text": "The NHS invites you to contribute to the National Genomic Research Library, managed by Genomics England. Genomics England was set up in 2013 by the Department of Health and Social Care to work with the NHS to build a library of human genomes for researchers to study. Combining data from many different patients helps researchers to better understand disease and spot patterns in the data. By agreeing to share your data you might get results which could lead to your own diagnosis, a new treatment, or offers to take part in clinical trials. Your taking part could enable diagnoses for people who don’t have one. Please read the following statements. Feel free to ask any questions before making a decision.",
+            "type": "display"
+          },
+          {
+            "linkId": "declaration3",
+            "text": "By saying ‘yes’ to research, I understand the following",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "dataAccess",
+                "prefix": "The National Genomic Research Library",
+                "text": "1. NHS England, on behalf of the Trusts that provided your genomic test, will allow Genomics England to access my personal data including my genomic record.",
+                "type": "display"
+              },
+              {
+                "linkId": "security",
+                "prefix": "Security:",
+                "text": "2. Any samples and data stored by Genomics England and the NHS will always be stored securely. Genomics England will take all reasonable steps to ensure that I cannot be personally identified.",
+                "type": "display"
+              },
+              {
+                "linkId": "recontact3",
+                "prefix": "Re-contact:",
+                "text": "3. My clinical team or Genomics England together with my clinical team, can contact me if the data or samples reveals any clinical trials or other research that I might benefit from.",
+                "type": "display"
+              },
+              {
+                "linkId": "recontact4",
+                "prefix": "Re-contact:",
+                "text": "4. If something is relevant to me or my family, there is a process by which this will be shared with my NHS clinical team.",
+                "type": "display"
+              },
+              {
+                "linkId": "dataSampleUsage",
+                "prefix": "Data and sample usage:",
+                "text": "5. Researchers may include national or international scientists, healthcare companies and NHS staff. To access the data, these researchers must all be approved by an independent committee of experts, including health professionals, clinical academics and patients. There will be no access to the data by personal insurers and marketing companies.",
+                "type": "display"
+              },
+              {
+                "linkId": "dataStorageResearch",
+                "prefix": "Data storage:",
+                "text": "6. Genomics England will collect different aspects of my health data from the NHS and other data from organisations listed at https://www.genomicsengland.co.uk/privacy-policy/.The collection and analysis of my health data for research will continue across my entire lifetime and beyond.",
+                "type": "display"
+              },
+              {
+                "linkId": "withdrawal",
+                "prefix": "Withdrawal",
+                "text": "7. I can change my mind about taking part at any time.",
+                "type": "display"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "linkId": "researchInformation",
+        "text": "More information regarding research in the National Genomic Research Library can be found at www.genomicsengland.co.uk.For any further questions, my healthcare professional can provide information.",
+        "type": "display"
+      },
+      {
+        "linkId": "guidetoSignPage3",
+        "text": "Please use page three to indicate your research choices",
+        "type": "display"
+      },
+      {
+        "linkId": "declaration4",
+        "text": "Confirmation of Your Genomic Test and Research Choices",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "confirmation",
+            "text": "I confirm that I have had the opportunity to discuss information about genomic testing, I agree to the genomic test, and my research choice is indicated below.",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "researchConfirmation1",
+                "prefix": "A.",
+                "text": "I have discussed taking part in the National Genomic Research Library. If your answer to A is NO then please ignore B and sign directly below",
+                "type": "boolean",
+                "required": true
+              },
+              {
+                "linkId": "researchConfirmation2",
+                "prefix": "B.",
+                "text": "I agree that my data and remainder sample may contribute to the National Genomic Research Library",
+                "type": "boolean",
+                "enableWhen": [
+                  {
+                    "question": "researchConfirmation1",
+                    "operator": "=",
+                    "answerBoolean": true
+                  }
+                ],
+                "required": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Are you completing this form on behalf of someone?",
+        "linkId": "isRespondentAttorney",
+        "type": "boolean",
+        "required": true
+      },
+      {
+        "linkId": "patientValidation",
+        "text": "Patient Validation",
+        "type": "group",
+        "enableWhen": [
+          {
+            "question": "isRespondentAttorney",
+            "operator": "=",
+            "answerBoolean": false
+          }
+        ],
+        "item": [
+          {
+            "linkId": "patientNamecombined",
+            "text": "Patient Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "patientSignature",
+            "text": "Signature",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "datePatientCompletedForm",
+            "text": "Date",
+            "type": "dateTime",
+            "required": true
+          }
+        ]
+      },
+      {
+        "linkId": "attorney",
+        "text": "If you are signing this form on behalf of someone else (children, adults without capacity or deceased patients) then please indicate your relationship role and  sign below.",
+        "type": "group",
+        "enableWhen": [
+          {
+            "question": "isRespondentAttorney",
+            "operator": "=",
+            "answerBoolean": true
+          }
+        ],
+        "item": [
+          {
+            "linkId": "attorneyType",
+            "text": "Parent | Guardian | Consultee *(please select your applicable relationship)",
+            "type": "choice",
+            "answerValueSet": "https://fhir.nhs.uk/ValueSet/genomics-patientguardian-types",
+            "required": true
+          },
+          {
+            "linkId": "attorneyName",
+            "text": "Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "attorneySignature",
+            "text": "Signature",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "dateAttorneyCompletedForm",
+            "text": "Date",
+            "type": "dateTime",
+            "required": true
+          }
+        ]
+      },
+      {
+        "linkId": "declaration5",
+        "text": "Healthcare professional use only",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "healthcareProfessional",
+            "text": "To be completed by the healthcare professional recording the patient’s choices.",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "patientCategory",
+                "text": "Patient category",
+                "type": "choice",
+                "required": true,
+                "answerValueSet": "https://fhir.nhs.uk/ValueSet/genomics-patient-choice-category"
+              },
+              {
+                "linkId": "testType",
+                "text": "Test type",
+                "type": "choice",
+                "required": true,
+                "answerValueSet": "https://fhir.nhs.uk/ValueSet/genomics-test-types"
+              },
+              {
+                "linkId": "reasonsforChoiceA",
+                "text": "If answer to research choice A is NO",
+                "type": "choice",
+                "enableWhen": [
+                  {
+                    "question": "researchConfirmation1",
+                    "operator": "!=",
+                    "answerBoolean": true
+                  }
+                ],
+                "answerValueSet": "https://fhir.nhs.uk/ValueSet/genomics-patient-choice-researchparticipation",
+                "required": true
+              },
+              {
+                "linkId": "remoteConsent",
+                "text": "Remote consent, recorded remotely by clinician, no patient signature",
+                "type": "boolean",
+                "required": true
+              },
+              {
+                "linkId": "responsibleClinician",
+                "text": "Responsible clinician",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "patientMRN",
+                "text": "Hospital number",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "healthcareProfessionalName",
+                "text": "Healthcare professional name",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "healthcareProfessionalSignature",
+                "text": "Signature",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "datehealthcareProfessionalCompletedForm",
+                "text": "Date",
+                "type": "dateTime",
+                "required": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

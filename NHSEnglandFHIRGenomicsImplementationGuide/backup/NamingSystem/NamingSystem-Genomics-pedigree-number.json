@@ -1,0 +1,19 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "genomics-pedigree-number",
+  "name": "GenomicsPedigreeNumber",
+  "status": "draft",
+  "kind": "identifier",
+  "date": "2022-12-05",
+  "publisher": "NHS Digital",
+  "responsible": "NHS Genomic Interop Programme",
+  "description": "Clinical genetics no/pedigree number",
+	"usage": "Patient's genetic/pedigree number which links their family.",
+  "uniqueId":  [
+    {
+      "type": "uri",
+      "value": "https://fhir.nhs.uk/Id/genomics-pedigree-number",
+      "preferred": true
+    }
+  ]
+}

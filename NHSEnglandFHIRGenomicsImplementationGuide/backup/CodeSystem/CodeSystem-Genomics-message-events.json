@@ -1,0 +1,45 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "message-events-genomics",
+    "url": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
+    "identifier":  [
+        {
+            "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+            "value": "message-events-genomics"
+        }
+    ],
+    "version": "0.1.0",
+    "name": "MessageEventsGenomics",
+    "title": "Message Events Genomics",
+    "status": "draft",
+    "date": "2022-11-25",
+    "publisher": "NHS Digital",
+    "contact":  [
+        {
+            "name": "NHS Digital",
+            "telecom":  [
+                {
+                    "system": "email",
+                    "value": "interoperabilityteam@nhs.net",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+    "description": "Common messaging events for Genomics Test Orders and Reports.",
+    "copyright": "Copyright © 2022 NHS Digital",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept":  [
+        {
+            "code": "genomictestrequest",
+            "display": "Genomic Test Request",
+            "definition": "A Service Request bundle for ordering genomic tests"
+        },
+        {
+            "code": "genomictestresponse",
+            "display": "Genomic Test Response",
+            "definition": "A Diagnostic Report bundle for test results"
+        }
+    ]
+}

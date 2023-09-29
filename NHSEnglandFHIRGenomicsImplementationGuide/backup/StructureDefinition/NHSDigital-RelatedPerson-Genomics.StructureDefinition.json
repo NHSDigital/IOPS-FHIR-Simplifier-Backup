@@ -1,0 +1,50 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics",
+  "version": "0.1.0",
+  "name": "NHSDigital_RelatedPerson_Genomics",
+  "status": "draft",
+  "date": "2022-12-05",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RelatedPerson",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedPerson.patient",
+        "path": "RelatedPerson.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.relationship",
+        "path": "RelatedPerson.relationship",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.photo",
+        "path": "RelatedPerson.photo",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.period",
+        "path": "RelatedPerson.period",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+  "name": "NHSDigital_Practitioner_Genomics",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.gender",
+        "path": "Practitioner.gender",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.birthDate",
+        "path": "Practitioner.birthDate",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.photo",
+        "path": "Practitioner.photo",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "max": "0"
+      }
+    ]
+  }
+}

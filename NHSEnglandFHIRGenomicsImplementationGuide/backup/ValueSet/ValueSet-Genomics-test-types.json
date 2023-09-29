@@ -1,0 +1,18 @@
+{
+	"resourceType": "ValueSet",
+	"id": "genomics-test-types",
+	"url": "https://fhir.nhs.uk/ValueSet/genomics-test-types",
+	"version": "0.1.0",
+	"name": "GenomicsTestTypes",
+	"status": "draft",
+	"date": "2022-12-21T11:27:52.3231281+00:00",
+	"description": "A ValueSet to identify the category of genomic test types",
+	"compose": {
+		"include": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/test-type-genomics",
+				"version": "0.1.0"
+			}
+		]
+	}
+}

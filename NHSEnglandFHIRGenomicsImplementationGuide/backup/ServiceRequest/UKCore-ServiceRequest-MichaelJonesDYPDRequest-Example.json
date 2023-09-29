@@ -1,0 +1,104 @@
+{
+	"resourceType": "ServiceRequest",
+	"id": "UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example",
+	"extension": [
+		{
+			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+						"code": "nhs",
+						"display": "NHS"
+					}
+				]
+			}
+		}
+	],
+	"identifier": [
+		{
+			"system": "https://www.christie.nhs.uk/ehr",
+			"value": "LabOrder123456",
+			"assigner":  {
+				"identifier": {
+					"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+					"value": "RBV"
+				}
+			}
+		}
+	],
+	"instantiatesUri": [
+		"https://www.england.nhs.uk/wp-content/uploads/2020/11/1869-dpyd-policy-statement.pdf"
+	],
+	"basedOn": [
+		{
+			"display": "UKCore-CarePlan-PancreaticCancerPlan-Example"
+		}
+	],
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{ 
+			"coding": [
+				{ 
+					"system": "http://snomed.info/sct", 
+					"code": "405824009", 
+					"display": "Genetic test"
+				}
+			]
+		}
+	],
+	"priority": "routine",
+	"code": { 
+		"coding": [
+			{ 
+				"system": "http://snomed.info/sct", 
+				"code": "63491000000109", 
+				"display": "Paediatric IDH-wildtype glioblastoma tumour and germline WGS (whole genome sequencing)"
+			}
+		]
+	},
+	"subject":  {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
+	},
+	"encounter":  {
+		"display": "Encounter/UKCore-Encounter-OncologyConsultation-Example"
+	},
+	"authoredOn": "2022-07-11T09:00:00Z",
+	"requester": {
+		"identifier": {
+			"system": "https://fhir.hl7.org.uk/Id/gmc-number",
+			"value": "C9999999"
+		}
+	},
+	"performer": [
+		{
+			"identifier": {
+				"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+				"value": "RBV"
+			}
+		}
+	],
+	"reasonCode": [
+		{ 
+			"coding": [
+				{ 
+					"system": "http://snomed.info/sct", 
+					"code": "363418001", 
+					"display": "Malignant tumor of pancreas (disorder)"
+				}
+			]
+		}
+	],
+	"specimen": [
+		{
+			"identifier": {
+				"system": "https://www.christie.nhs.uk/path",
+				"value": "Spec123456"
+			}
+		}
+	]
+}

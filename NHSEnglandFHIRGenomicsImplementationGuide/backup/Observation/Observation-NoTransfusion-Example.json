@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-NoTransfusion-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "5447007",
+				"display": "Transfusion"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-MeirLieberman-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307873"
+		}
+	},
+	"effectiveDateTime": "2023-08-05",
+	"valueBoolean": false
+}

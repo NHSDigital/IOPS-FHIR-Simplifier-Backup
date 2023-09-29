@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics",
+  "name": "NHSDigital_MessageHeader_Genomics",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MessageHeader",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MessageHeader.event[x]",
+        "path": "MessageHeader.event[x]",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MessageEvent"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-message-events"
+        }
+      },
+      {
+        "id": "MessageHeader.destination.receiver",
+        "path": "MessageHeader.destination.receiver",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.sender",
+        "path": "MessageHeader.sender",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.enterer",
+        "path": "MessageHeader.enterer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.author",
+        "path": "MessageHeader.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.responsible",
+        "path": "MessageHeader.responsible",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

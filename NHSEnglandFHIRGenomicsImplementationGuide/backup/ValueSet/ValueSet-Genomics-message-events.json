@@ -1,0 +1,17 @@
+{
+	"resourceType": "ValueSet",
+	"id": "genomics-message-events",
+	"url": "https://fhir.nhs.uk/ValueSet/genomics-message-events",
+	"version": "0.1.0",
+	"name": "GenomicsMessageEvents",
+	"status": "draft",
+	"description": "A ValueSet to identify the type of Genomics Message",
+	"compose": {
+		"include": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
+				"version": "0.1.0"
+			}
+		]
+	}
+}

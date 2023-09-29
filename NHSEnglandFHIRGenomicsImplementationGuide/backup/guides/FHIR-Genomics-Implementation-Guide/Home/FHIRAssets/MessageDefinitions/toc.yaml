@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Genomic-Test-Request
+  filename: Genomic-Test-Request.page.md
+- name: Genomic-Test-Response
+  filename: Genomic-Test-Response.page.md

@@ -1,0 +1,152 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics",
+  "name": "NHSDigital_Observation_Genomics",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "max": "1"
+      },
+      {
+        "id": "Observation.basedOn",
+        "path": "Observation.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "Observation.partOf",
+        "path": "Observation.partOf",
+        "max": "0"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.focus",
+        "path": "Observation.focus",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "max": "0"
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "Observation.issued",
+        "path": "Observation.issued",
+        "max": "0"
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "max": "0"
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "max": "1"
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "max": "1"
+      },
+      {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "max": "0"
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "max": "0"
+      }
+    ]
+  }
+}

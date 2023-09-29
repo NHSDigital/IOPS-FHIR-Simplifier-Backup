@@ -1,0 +1,72 @@
+{
+	"resourceType": "Consent",
+	"id": "UKCore-Consent-MichaelJonesConsent-Example-Minimal",
+	"identifier": [
+		{
+			"system": "https://www.christie.nhs.uk/ehr",
+			"value": "Consent123456"
+		}
+	],
+	"status": "active",
+	"scope": { 
+		"coding": [
+			{ 
+				"system": "http://terminology.hl7.org/CodeSystem/consentscope", 
+				"code": "research", 
+				"display": "Research"
+			}
+		]
+	},
+	"category": [
+		{ 
+			"coding": [
+				{ 
+					"system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes", 
+					"code": "rsdid", 
+					"display": "De-identified Information Access"
+				}
+			]
+		}
+	],
+	"patient":  {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
+	},
+	"dateTime": "2022-07-11T09:00:00Z",
+	"performer": [
+		{
+			"identifier": {
+				"system": "https://fhir.nhs.uk/Id/nhs-number",
+				"value": "9999999999"
+			}
+		}
+	],
+	"organization": [
+		{
+			"identifier": {
+				"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+				"value": "RBV"
+			}
+		}
+	],
+	"sourceAttachment": {
+		"contentType": "application/pdf",
+		"language": "en-GB",
+		"url": "https://files.genomicsengland.co.uk/forms/Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1.pdf",
+		"size": 539588,
+		"title" : "Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1_MJ",
+		"creation": "2022-07-11T09:00:00Z"
+	},
+	"policy": [
+		{
+			"uri": "https://www.england.nhs.uk/wp-content/uploads/2021/09/nhs-genomic-medicine-service-record-of-discussion-form.pdf"
+		}
+	],
+	"verification": [
+		{
+			"verified": true
+		}
+	]
+}

@@ -1,0 +1,351 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics",
+  "name": "NHSDigital_ServiceRequest_Genomics",
+  "status": "draft",
+  "date": "2022-11-13T17:39:32.2218991+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.extension",
+        "path": "ServiceRequest.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.extension:additionalContact",
+        "path": "ServiceRequest.extension",
+        "sliceName": "additionalContact",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:coverage",
+        "path": "ServiceRequest.extension",
+        "sliceName": "coverage",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:priorityReason",
+        "path": "ServiceRequest.extension",
+        "sliceName": "priorityReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "gen-1",
+            "severity": "error",
+            "human": "Extension must be present if priority is not routine",
+            "expression": "(ServiceRequest.extension(priorityReason).exists() and ServiceRequest.priority!=routine) or ServiceRequest.priority=routine"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:priorityReason.value[x].coding",
+        "path": "ServiceRequest.extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ServiceRequest.identifier",
+        "path": "ServiceRequest.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.identifier.assigner",
+        "path": "ServiceRequest.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.instantiatesCanonical",
+        "path": "ServiceRequest.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.basedOn",
+        "path": "ServiceRequest.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.replaces",
+        "path": "ServiceRequest.replaces",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.status",
+        "path": "ServiceRequest.status",
+        "comment": "The status is generally fully in the control of the requester - they determine whether the order is draft or active and, after it has been activated, competed, cancelled or suspended. States relating to the activities of the performer are reflected on either the corresponding event (see [Interactions](https://simplifier.net/guide/fhir-genomics-implementation-guide/home/design/interactions.page.md) for general discussion) or using the [Task](https://simplifier.net/guide/fhir-genomics-implementation-guide/home/fhirassets/allassets/profiles/genomics-task.page.md) resource."
+      },
+      {
+        "id": "ServiceRequest.category",
+        "path": "ServiceRequest.category",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.priority",
+        "path": "ServiceRequest.priority",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.doNotPerform",
+        "path": "ServiceRequest.doNotPerform",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "definition": "A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.\r\n\r\nFor Genomic Test Orders, use the system 'https://www.england.nhs.uk/publication/national-genomic-test-directories' and code from one of the test directories provided by NHS England. Addition of these codes to an appropriate coding system, e.g. SNOMED-CT, is under discussion.",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.quantity[x]",
+        "path": "ServiceRequest.quantity[x]",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.asNeeded[x]",
+        "path": "ServiceRequest.asNeeded[x]",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.authoredOn",
+        "path": "ServiceRequest.authoredOn",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.requester",
+        "path": "ServiceRequest.requester",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer",
+        "path": "ServiceRequest.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.locationCode",
+        "path": "ServiceRequest.locationCode",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.locationReference",
+        "path": "ServiceRequest.locationReference",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.reasonCode",
+        "path": "ServiceRequest.reasonCode",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.reasonReference",
+        "path": "ServiceRequest.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.insurance",
+        "path": "ServiceRequest.insurance",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.supportingInfo",
+        "path": "ServiceRequest.supportingInfo",
+        "type": [
+          {
+            "code": "Reference",
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.specimen",
+        "path": "ServiceRequest.specimen",
+        "type": [
+          {
+            "code": "Reference",
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.bodySite",
+        "path": "ServiceRequest.bodySite",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.patientInstruction",
+        "path": "ServiceRequest.patientInstruction",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.relevantHistory",
+        "path": "ServiceRequest.relevantHistory",
+        "max": "0"
+      }
+    ]
+  }
+}

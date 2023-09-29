@@ -1,0 +1,36 @@
+{
+	"resourceType": "PractitionerRole",
+	"id": "3462583a-536c-4bad-99d3-44dc553921fd",
+	"identifier": [
+		{
+			"system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+			"value": "100102238986"
+		}
+	],
+	"practitioner": {
+		"identifier": {
+			"system": "https://fhir.hl7.org.uk/Id/gmc-number",
+			"value": "C9999999"
+		},
+		"display": "Lucy Hale"
+	},
+	"organization": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RBV"
+		},
+		"display": "NHS Trust - THE CHRISTIE NHS FOUNDATION TRUST"
+	},
+	"telecom" : [
+		{
+			"system": "email",
+			"value": "lucy.hale@nhs.net",
+			"use": "work"
+		},
+		{
+			"system": "phone",
+			"value": "02476151602",
+			"use": "work"
+		}
+	]
+}

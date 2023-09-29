@@ -1,0 +1,76 @@
+{
+	"resourceType": "Task",
+	"id": "UKCore-Task-DPYDSequencingTask-Example",
+	"identifier": [
+		{
+			"system": "https://mft.nhs.uk/nwglh/lims",
+			"value": "DPYDSequencingTask"
+		}
+	],
+	"instantiatesUri": "https://www.england.nhs.uk/wp-content/uploads/2020/11/1869-dpyd-policy-statement.pdf",
+	"basedOn": [
+		{
+			"reference": "ServiceRequest/ad37bdf1-3f56-4070-b981-1a619c4943ed"
+		}
+	],
+	"partOf": [
+		{
+			"display": "Task/UKCore-Task-ParentTask-Example"
+		}
+	],
+	"status": "requested",
+	"businessStatus": { 
+		"coding": [
+			{ 
+				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
+				"code": "AwaitingSpecimen", 
+				"display": "Awaiting Specimen"
+			}
+		]
+	},
+	"intent": "filler-order",
+	"priority": "routine",
+	"code": { 
+		"coding": [
+			{ 
+				"system": "http://hl7.org/fhir/CodeSystem/task-code", 
+				"code": "fulfill", 
+				"display": "Fulfill the focal request"
+			}
+		]
+	},
+	"for": {
+		"reference": "Patient/f837d8b0-cab6-4841-b735-b9cf1a3453e5",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
+	},
+	"authoredOn": "2022-07-13T09:00:00Z",
+	"lastModified": "2022-07-13T09:00:00Z",
+	"requester": {
+		"reference": "PractitionerRole/3462583a-536c-4bad-99d3-44dc553921fd",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+			"value": "100102238986"
+		}
+	},
+	"performerType": [
+		{
+			"coding": [
+				{ 
+					"system": "http://snomed.info/sct", 
+					"code": "159282002", 
+					"display": "Laboratory technician (occupation)"
+				}
+			]
+		}
+	],
+	"owner": {
+		"reference": "Organization/eff48e55-70d7-47bc-b4f1-ecc737a86813",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RBV"
+		}
+	}
+}

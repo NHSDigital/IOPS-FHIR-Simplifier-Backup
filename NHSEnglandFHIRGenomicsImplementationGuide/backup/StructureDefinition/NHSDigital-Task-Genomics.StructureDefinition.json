@@ -1,0 +1,152 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task-Genomics",
+  "name": "NHSDigital_Task_Genomics",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task.identifier.assigner",
+        "path": "Task.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ],
+            "aggregation": [
+              "referenced"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.basedOn",
+        "path": "Task.basedOn",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
+            ],
+            "aggregation": [
+              "referenced"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.basedOn.identifier.assigner",
+        "path": "Task.basedOn.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ],
+            "aggregation": [
+              "referenced"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.partOf",
+        "path": "Task.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task-Genomics"
+            ],
+            "aggregation": [
+              "referenced"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.partOf.identifier.assigner",
+        "path": "Task.partOf.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ],
+            "aggregation": [
+              "referenced"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.businessStatus",
+        "path": "Task.businessStatus",
+        "short": "E.g. \"Specimen Received\", \"Analysis In Progress\"",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TaskBusinessStatus"
+            }
+          ],
+          "strength": "preferred",
+          "description": "The domain-specific business-contextual sub-state of the task.  ValueSet specific for Genomics, subject to change.",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-business-status"
+        }
+      },
+      {
+        "id": "Task.encounter",
+        "path": "Task.encounter",
+        "max": "0"
+      },
+      {
+        "id": "Task.authoredOn",
+        "path": "Task.authoredOn",
+        "min": 1
+      },
+      {
+        "id": "Task.requester",
+        "path": "Task.requester",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.owner",
+        "path": "Task.owner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ],
+            "aggregation": [
+              "referenced"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

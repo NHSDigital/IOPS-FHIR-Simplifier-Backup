@@ -1,0 +1,56 @@
+{
+	"resourceType": "AuditEvent",
+	"id": "AuditEvent-TaskUpdate-Example",
+	"type": {
+		"system": "http://terminology.hl7.org/CodeSystem/audit-event-type",
+		"code": "rest",
+		"display": "RESTful Operation"
+	},
+	"action": "U",
+	"recorded": "2023-08-08T15:43:00Z",
+	"outcome": "0",
+	"agent": [
+		{
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+						"code": "AUT",
+						"display": "author (originator)"
+					}
+				]
+			},
+			"who": {
+				"reference": "PractitionerRole/PractitionerRole-TestClinicalScientist-Example",
+				"identifier": {
+					"system": "https://fhir.nhs.uk/Id/sds-user-id",
+					"value": "9999999997"
+				}
+			},
+			"name": "Test Clinical Scientist",
+			"requestor": true
+		}
+	],
+	"source": {
+		"observer": {
+			"reference": "PractitionerRole/PractitionerRole-TestClinicalScientist-Example"
+		}
+	},
+	"entity": [
+		{
+			"what": {
+				"reference": "Task/Task-NonWGSRareDiseaseTestOrderRejected-Example"
+			},
+			"type": {
+				"system": "http://hl7.org/fhir/resource-types",
+				"code": "Task",
+				"display": "Task"
+			},
+			"role": {
+				"system": "http://terminology.hl7.org/CodeSystem/object-role",
+				"code": "20",
+				"display": "Job"
+			}
+		}
+	]
+}

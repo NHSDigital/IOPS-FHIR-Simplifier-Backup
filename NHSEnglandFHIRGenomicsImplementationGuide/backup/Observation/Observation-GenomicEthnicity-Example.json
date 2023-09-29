@@ -1,0 +1,22 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-GenomicEthnicity-Example",
+	"status": "preliminary",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "723621000000103",
+				"display": "Ethnicity"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-MeirLieberman-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307873"
+		}
+	},
+	"valueString": "unknown"
+}

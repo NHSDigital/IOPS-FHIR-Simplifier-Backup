@@ -1,0 +1,49 @@
+{
+	"resourceType": "PractitionerRole",
+	"id": "PractitionerRole-HazelSmithRenal-Example",
+	"practitioner": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/sds-user-id",
+			"value": "9999999998"
+		},
+		"display": "Dr. Hazel Smith"
+	},
+	"organization": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RAX01"
+		},
+		"display": "Kingston Hospital NHS Foundation Trust"
+	},
+	"specialty": [
+		{
+			"coding": [
+				{
+					"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+					"code": "361",
+					"display": "Renal Medicine"
+				}
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "02085467711"
+		},
+		{
+			"system": "email",
+			"value": "Hazel.smith12@nhs.net"
+		},
+		{
+			"system": "email",
+			"value": "renalseckingston@nhs.net",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+					"valueString": "reporting"
+				}
+			]
+		}
+	]
+}

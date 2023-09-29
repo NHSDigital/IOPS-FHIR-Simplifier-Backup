@@ -1,0 +1,38 @@
+{
+	"resourceType": "Condition",
+	"id": "UKCore-Condition-PancreaticCancer-Example",
+	"clinicalStatus": { 
+		"coding": [
+			{ 
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical", 
+				"code": "active", 
+				"display": "Active"
+			}
+		]
+	},
+	"verificationStatus": { 
+		"coding": [
+			{ 
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", 
+				"code": "confirmed", 
+				"display": "Confirmed"
+			}
+		]
+	},
+	"code": { 
+		"coding": [
+			{ 
+				"system": "http://snomed.info/sct", 
+				"code": "363418001", 
+				"display": "Malignant tumour of pancreas"
+			}
+		]
+	},
+	"subject":  {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
+	},
+	"recordedDate": "2022-07-11T09:00:00Z"
+}

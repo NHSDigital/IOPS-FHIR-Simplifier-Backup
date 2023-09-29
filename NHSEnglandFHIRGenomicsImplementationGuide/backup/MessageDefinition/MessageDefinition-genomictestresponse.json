@@ -1,0 +1,29 @@
+{
+    "resourceType": "MessageDefinition",
+    "id": "genomictestresponse",
+	"url": "https://fhir.nhs.uk/MessageDefinition/genomic-test-response",
+    "name": "GenomicTestResponse",
+    "title": "Genomic Test Response",
+    "description": "Message Definition for a Genomic DiagnosticReport",
+    "status": "draft",
+    "date": "2022-11-25",
+    "version": "0.1.0",
+    "eventCoding": {
+        "system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
+        "code": "genomictestresponse"
+    },
+	"focus":  [
+		{
+            "code": "DiagnosticReport",
+            "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
+            "min": 1,
+            "max": "*"
+        },
+		{
+            "code": "Subscription",
+            "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Subscription",
+            "min": 0,
+            "max": "*"
+        }
+    ]
+}

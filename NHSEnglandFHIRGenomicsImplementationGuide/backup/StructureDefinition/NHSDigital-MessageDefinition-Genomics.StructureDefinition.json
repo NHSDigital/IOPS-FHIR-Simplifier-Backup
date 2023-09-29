@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageDefinition-Genomics",
+  "name": "NHSDigital_MessageDefinition_Genomics",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MessageDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MessageDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MessageDefinition.url",
+        "path": "MessageDefinition.url",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MessageDefinition.description",
+        "path": "MessageDefinition.description",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MessageDefinition.event[x]",
+        "path": "MessageDefinition.event[x]",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MessageEvent"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "required",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-message-events"
+        }
+      },
+      {
+        "id": "MessageDefinition.focus",
+        "path": "MessageDefinition.focus",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

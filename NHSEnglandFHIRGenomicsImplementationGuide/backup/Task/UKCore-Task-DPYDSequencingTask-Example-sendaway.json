@@ -1,0 +1,51 @@
+{
+	"resourceType": "Task",
+	"id": "UKCore-Task-DPYDSequencingTask-Example-SendAway",
+	"identifier": [
+		{
+			"system": "https://api.service.nhs.uk/GMS",
+			"value": "66c519dd-423f-4238-89c8-91c5be52f330-sendaway"
+		}
+	],
+	"basedOn": [
+		{
+			"identifier": {
+				"system": "https://api.service.nhs.uk/GMS",
+				"value": "66c519dd-423f-4238-89c8-91c5be52f330"
+			}
+		}
+	],
+	"partOf": [
+		{
+			"identifier": {
+				"system": "https://api.service.nhs.uk/GMS",
+				"value": "66c519dd-423f-4238-89c8-91c5be52f330-filler"
+			}
+		}
+	],
+	"status": "requested",
+	"intent": "reflex-order",
+	"priority": "urgent",
+	"code": { 
+		"coding": [
+			{ 
+				"system": "https://www.england.nhs.uk/publication/national-genomic-test-directories/", 
+				"code": "M219.3", 
+				"display": "DPYD hotspot"
+			}
+		]
+	},
+	"requester": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "699X0"
+		}
+	},
+	"authoredOn": "2022-07-14T09:00:00Z",
+	"owner": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "8J834"
+		}
+	}
+}

@@ -1,0 +1,71 @@
+{
+    "resourceType": "MessageDefinition",
+    "id": "genomictestrequest",
+	"url": "https://fhir.nhs.uk/MessageDefinition/genomic-test-request",
+    "name": "GenomicTestRequest",
+    "title": "Genomic Test Request",
+    "description": "Message Definition for a Genomic ServiceRequest",
+    "status": "draft",
+    "date": "2022-11-25",
+    "version": "0.1.0",
+    "eventCoding": {
+        "system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
+        "code": "genomictestrequest"
+    },
+	"focus":  [
+        {
+            "code": "ServiceRequest",
+            "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics",
+            "min": 1,
+            "max": "*"
+        },
+        {
+            "code": "Subscription",
+            "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Subscription",
+            "min": 0,
+            "max": "*"
+        },
+        {
+            "code": "FamilyMemberHistory",
+            "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory",
+            "min": 0,
+            "max": "*"
+        },
+        {
+            "code": "Observation",
+            "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics",
+            "min": 0,
+            "max": "*"
+        },
+        {
+            "code": "Consent",
+            "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics",
+            "min": 0,
+            "max": "1"
+        },
+        {
+            "code": "QuestionnaireResponse",
+            "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
+            "min": 0,
+            "max": "1"
+        },
+        {
+            "code": "Condition",
+            "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
+            "min": 0,
+            "max": "*"
+        },
+        {
+            "code": "RelatedPerson",
+            "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+            "min": 0,
+            "max": "*"
+        },
+        {
+            "code": "BodyStructure",
+            "profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
+            "min": 0,
+            "max": "*"
+        }
+    ]
+}

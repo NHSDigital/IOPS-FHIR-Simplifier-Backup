@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Genomic-Pedigree-Number
+  filename: Genomic-Pedigree-Number.page.md
+- name: Genomic-Order-Number
+  filename: Genomic-Order-Number.page.md

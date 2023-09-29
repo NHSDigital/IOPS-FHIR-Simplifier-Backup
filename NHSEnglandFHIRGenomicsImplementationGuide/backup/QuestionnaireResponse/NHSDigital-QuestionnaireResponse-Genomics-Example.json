@@ -1,0 +1,241 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"id": "NHSDigital-QuestionnaireResponse-Genomics-Example",
+	"questionnaire": "https://fhir.nhs.uk/Questionnaire/NHSDigital-Questionnaire-Genomics-Example",
+	"status": "completed",
+	"basedOn": [
+		{
+			"reference": "urn:uuid:a40c7ddc-2897-4e3c-bae6-88500e080229"
+		}
+	],
+	"subject": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		},
+		"display": "A Patient"
+	},
+	"authored": "2022-12-20",
+	"author": {
+		"type": "PractitionerRole",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+			"value": "921600556514"
+		}
+	},
+	"source": {
+		"type": "Patient",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
+	},
+	"item": [
+		{
+			"linkId": "patientDetails",
+			"text": "Patient Details",
+			"item": [
+				{
+					"linkId": "givenName",
+					"text": "First Name",
+					"answer": [
+						{
+							"valueString": "James"
+						}
+					]
+				},
+				{
+					"linkId": "familyName",
+					"text": "Last Name",
+					"answer": [
+						{
+							"valueString": "Goldsmith"
+						}
+					]
+				},
+				{
+					"linkId": "nhs_Number",
+					"text": "NHS number (or postcode if not not known)",
+					"answer": [
+						{
+							"valueString": "9999999999"
+						}
+					]
+				},
+				{
+					"linkId": "birthDate",
+					"text": "Date of Birth",
+					"answer": [
+						{
+							"valueDate": "1980-12-01"
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "declaration4",
+			"text": "Confirmation of Your Genomic Test and Research Choices",
+			"item": [
+				{
+					"linkId": "confirmation",
+					"text": "I confirm that I have had the opportunity to discuss information about genomic testing, I agree to the genomic test, and my research choice is indicated below.",
+					"item": [
+						{
+							"linkId": "researchConfirmation1",
+							"text": "I have discussed taking part in the National Genomic Research Library. If your answer to A is NO then please ignore B and sign directly below",
+							"answer": [
+								{
+									"valueBoolean": true
+								}
+							]
+						},
+						{
+							"linkId": "researchConfirmation2",
+							"text": "I agree that my data and remainder sample may contribute to the National Genomic Research Library",
+							"answer": [
+								{
+									"valueBoolean": false
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "isRespondentAttorney",
+			"text": "Are you completing this form on behalf of someone?",
+			"answer": [
+				{
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"linkId": "patientValidation",
+			"text": "Patient Validation",
+			"item": [
+				{
+					"linkId": "patientNamecombined",
+					"text": "Patient Name",
+					"answer": [
+						{
+							"valueString": "James Goldsmith"
+						}
+					]
+				},
+				{
+					"linkId": "patientSignature",
+					"text": "Signature",
+					"answer": [
+						{
+							"valueString": "JamesG"
+						}
+					]
+				},
+				{
+					"linkId": "datePatientCompletedForm",
+					"text": "Date",
+					"answer": [
+						{
+							"valueDateTime": "2022-12-08"
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "declaration5",
+			"text": "Healthcare professional use only",
+			"item": [
+				{
+					"linkId": "healthcareProfessional",
+					"text": "To be completed by the healthcare professional recording the patient’s choices.",
+					"item": [
+						{
+							"linkId": "patientCategory",
+							"text": "Patient category",
+							"answer": [
+								{
+									"valueCoding": {
+										"system": "https://fhir.nhs.uk/CodeSystem/patient-choice-category-genomics",
+										"code": "AdultOwnChoice",
+										"display": "Adult(made their own choice)"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "testType",
+							"text": "Test type",
+							"answer": [
+								{
+									"valueCoding": {
+										"system": "https://fhir.nhs.uk/CodeSystem/test-type-genomics",
+										"code": "C-WGS",
+										"display": "Cancer (paired tumour normal) -WGS"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "remoteConsent",
+							"text": "Remote consent, recorded remotely by clinician, no patient signature",
+							"answer": [
+								{
+									"valueBoolean": true
+								}
+							]
+						},
+						{
+							"linkId": "responsibleClinician",
+							"text": "Responsible clinician",
+							"answer": [
+								{
+									"valueString": "Mathew Arnold"
+								}
+							]
+						},
+						{
+							"linkId": "patientMRN",
+							"text": "Hospital number",
+							"answer": [
+								{
+									"valueString": "999999999"
+								}
+							]
+						},
+						{
+							"linkId": "healthcareProfessionalName",
+							"text": "Healthcare professional name",
+							"answer": [
+								{
+									"valueString": "Mathew Arnold"
+								}
+							]
+						},
+						{
+							"linkId": "healthcareProfessionalSignature",
+							"text": "Signature",
+							"answer": [
+								{
+									"valueString": "MathewA"
+								}
+							]
+						},
+						{
+							"linkId": "datehealthcareProfessionalCompletedForm",
+							"text": "Date",
+							"answer": [
+								{
+									"valueDateTime": "2022-12-09"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
