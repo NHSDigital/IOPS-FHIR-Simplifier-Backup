@@ -1,0 +1,12 @@
+{
+  "resourceType": "Patient",
+  "id": "UKCore-Patient-Extension-MedicalApplianceSupplier-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicalApplianceSupplier",
+      "valueReference": {
+        "reference": "Organization/UKCore-Organization-WhiteRoseMedicalSupply-Example"
+      }
+    }
+  ]
+}

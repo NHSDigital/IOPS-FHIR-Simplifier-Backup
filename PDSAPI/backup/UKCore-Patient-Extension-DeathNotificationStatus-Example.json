@@ -1,0 +1,27 @@
+{
+  "resourceType": "Patient",
+  "id": "UKCore-Patient-Extension-DeathNotificationStatus-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus",
+      "extension": [
+        {
+          "url": "deathNotificationStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus",
+                "code": "U",
+                "display": "Removed"
+              }
+            ]
+          }
+        },
+        {
+          "url": "systemEffectiveDate",
+          "valueDateTime": "2019-08-01T00:00:00.000Z"
+        }
+      ]
+    }
+  ]
+}

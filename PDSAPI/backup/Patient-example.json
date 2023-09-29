@@ -1,0 +1,70 @@
+{
+  "resourceType": "Patient",
+  "id": "9000000009",
+  "meta": {
+    "versionId": "2",
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"
+    ]
+  },
+  "name": [
+    {
+      "use": "usual",
+      "period": {
+        "start": "2010-10-22",
+        "end": "2010-10-22"
+      },
+      "given": [
+        "Jane",
+        "Adele"
+      ],
+      "family": "Smith",
+      "prefix": "Mrs",
+      "suffix": "MBE"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "2010-10-22",
+  "deceasedDateTime": "2010-10-22T00:00:00+00:00",
+  "address": [
+    {
+      "id": "123",
+      "period": {
+        "start": "2010-10-22",
+        "end": "2010-10-22"
+      },
+      "use": "home",
+      "type": "both",
+      "line": [
+        "4 Baker Street",
+        "Leeds",
+        "LS1 6AE"
+      ],
+      "city": "Leeds",
+      "district": "West Yorkshire",
+      "postalCode": "LS1 6AE",
+      "country": "United Kingdom"
+    }
+  ],
+  "telecom": [
+    {
+      "id": "123",
+      "period": {
+        "start": "2010-10-22",
+        "end": "2010-10-22"
+      },
+      "system": "phone",
+      "value": "01632960587",
+      "use": "home",
+      "rank": 1
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "id": "Y12345",
+      "type": "Organization",
+      "reference": "/Organization/Y12345",
+      "display": "F. B. Quux and Co. GP Surgery"
+    }
+  ]
+}

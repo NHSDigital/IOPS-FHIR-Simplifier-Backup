@@ -1,0 +1,14 @@
+{
+  "resourceType": "Patient",
+  "id": "UKCore-Patient-Extension-CopyCorrespondenceIndicator-Example",
+  "contact": [
+    {
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator",
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}

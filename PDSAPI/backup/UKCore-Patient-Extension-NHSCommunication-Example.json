@@ -1,0 +1,31 @@
+{
+    "resourceType": "Patient",
+    "id": "UKCore-Patient-Extension-NHSCommunication-Example",
+    "extension":  [
+        {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication",
+            "extension":  [
+                {
+                    "url": "language",
+                    "valueCodeableConcept": {
+                        "coding":  [
+                            {
+                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage",
+                                "code": "en",
+                                "display": "English"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "preferred",
+                    "valueBoolean": "true"
+                },
+                {
+                    "url": "interpreterRequired",
+                    "valueBoolean": "false"
+                }
+            ]
+        }
+    ]
+}

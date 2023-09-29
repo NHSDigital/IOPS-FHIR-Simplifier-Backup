@@ -1,0 +1,122 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "complete",
+  "name": "NHAISRemovalReasonCode",
+  "id": "NHAIS-RemovalReasonCode",
+  "title": "NHAIS Removal Reason Code",
+  "description": "A CodeSystem that identifies the reason a PDS record has been removed from NHAIS.",
+  "version": "1.0.0",
+  "url": "https://fhir.nhs.uk/CodeSystem/NHAIS-RemovalReasonCode",
+  "date": "2022-02-15T00:00:00+00:00",
+  "publisher": "NHS Digital",
+  "contact": [
+    {
+      "name": "NHS Digital",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright © 2021 NHS Digital",
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "DEA",
+      "display": "Death"
+    },
+    {
+      "code": "EMB",
+      "display": "Embarkation"
+    },
+    {
+      "code": "SCT",
+      "display": "Transferred to Scotland"
+    },
+    {
+      "code": "NIT",
+      "display": "Transferred to Northern Ireland"
+    },
+    {
+      "code": "AFN",
+      "display": "Armed forces enlistment (notified by armed forces)"
+    },
+    {
+      "code": "AFL",
+      "display": "Armed forces enlistment (notified locally)"
+    },
+    {
+      "code": "SDN",
+      "display": "Services dependant (notified by SMO)"
+    },
+    {
+      "code": "SDL",
+      "display": "Services dependant (notified locally)"
+    },
+    {
+      "code": "PRI",
+      "display": "Prison"
+    },
+    {
+      "code": "PSY",
+      "display": "Psychiatric care"
+    },
+    {
+      "code": "DIP",
+      "display": "Diplomatic"
+    },
+    {
+      "code": "TRA",
+      "display": "Temporary resident not returned"
+    },
+    {
+      "code": "RFI",
+      "display": "Removal from residential institute"
+    },
+    {
+      "code": "RDI",
+      "display": "Practice request immediate removal"
+    },
+    {
+      "code": "RDR",
+      "display": "Practice request"
+    },
+    {
+      "code": "RPR",
+      "display": "Patient request"
+    },
+    {
+      "code": "OPA",
+      "display": "Address out of practice area"
+    },
+    {
+      "code": "CGA",
+      "display": "Gone away - address not known / FP69"
+    },
+    {
+      "code": "DIS",
+      "display": "Practice dissolution"
+    },
+    {
+      "code": "LDN",
+      "display": "Logical deletion"
+    },
+    {
+      "code": "X",
+      "display": "No current NHAIS posting"
+    },
+    {
+      "code": "ORR",
+      "display": "Other Reason"
+    },
+    {
+      "code": "CAN",
+      "display": "Cancelled"
+    }
+  ],
+  "count": 23
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "retired",
+  "name": "NHAISRemovalReasonCode",
+  "id": "NHAIS-RemovalReasonCode",
+  "title": "NHAIS Removal Reason Code",
+  "description": "A ValueSet that identifies the reason a PDS record has been removed from NHAIS.",
+  "version": "1.0.0",
+  "url": "https://fhir.nhs.uk/ValueSet/NHAIS-RemovalReasonCode",
+  "date": "2022-02-15T00:00:00+00:00",
+  "publisher": "NHS Digital",
+  "contact": [
+    {
+      "name": "NHS Digital",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright © 2021 NHS Digital",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/NHAIS-RemovalReasonCode"
+      }
+    ]
+  }
+}
