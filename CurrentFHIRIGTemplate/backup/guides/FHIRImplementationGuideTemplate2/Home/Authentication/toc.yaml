@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.guide.md
+- name: Access control
+  filename: Accesscontrol.guide.md
+- name: Access tokens
+  filename: Accesstokens.guide.md
+- name: Auditing
+  filename: Auditing.guide.md
+- name: Security
+  filename: Security.guide.md
+- name: Integration with SPINE
+  filename: IntegrationwithSPINE.guide.md

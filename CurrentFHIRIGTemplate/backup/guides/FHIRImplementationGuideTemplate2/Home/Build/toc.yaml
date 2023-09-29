@@ -1,0 +1,16 @@
+- name: Index
+  filename: Index.guide.md
+- name: How to construct bundle X
+  filename: How-to-construct-bundle-X
+- name: How to construct Message X
+  filename: How-to-construct-Message-X
+- name: How to construct clinical coded structures
+  filename: Howtoconstructclinicalcodedstructures
+- name: API usage
+  filename: APIusage.guide.md
+- name: Error handling
+  filename: Errorhandling.guide.md
+- name: Query types
+  filename: Querytypes.guide.md
+- name: Operation responses
+  filename: Operationresponses.guide.md

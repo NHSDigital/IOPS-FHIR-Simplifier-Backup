@@ -1,0 +1,4 @@
+- name: Index
+  filename: Index.page.md
+- name: Downloads
+  filename: Downloads.page.md
