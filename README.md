@@ -1,16 +1,17 @@
 # Simplifier Project Source Control
 
-This repo contains a back up of IOPS Simplifier projects. Each project has a workflow to unpack, commit, create a PR and merge the current state of the Simplifier project.  
+This repo contains a back up of IOPS Simplifier projects. Each project has a workflow to unpack, commit, create a PR and merge the current state of the Simplifier project. The original project files can be found [here](https://github.com/NHSDigital/simplifier-project-source-control). 
+*Note: Due to Windows PathName limitations changes to this reopitory should be done using a non windows machine, or via the GitHub website.* 
 
 ## Prequsites
 
-A valid Simplifier account.
+A valid Simplifier account with write access for private projects.
 A Simplifer Project to back up. The name of the project will be referred to as [Project Name], e.g. [HL7 FHIR UK Core R4](https://simplifier.net/hl7fhirukcorer4). Do not include any symbols.
 
 ## To add a new project:
 
-- Create a new folder named after the Simplifier Project ensuring all whitespaces are removed, e.g. HL7FHIRUKCoreR4. This will be referred to as [ProjectFolderName].
-- Within the folder create a new README.md with a link to the project
+- Copy the template folder, renaming after the Simplifier Project ensuring all whitespaces are removed, e.g. HL7FHIRUKCoreR4. This will be referred to as [ProjectFolderName].
+- Within the folder amend the README.md with a link to the project
 - Copy the Github Action .github/workflows/Backup.yml, and prefixing the project name to the filename, e.g. HL7FHIRUKCoreR4-Backup.yml
 - Within the yml file change the following:
     - line 1:
@@ -18,7 +19,10 @@ A Simplifer Project to back up. The name of the project will be referred to as [
     - line 27:
         - [ProjectFolderName]
     - line 31:
-        - secrets.[PROJECTNAME]_SIMPLIFIER_USER 
+        - secrets.[PROJECTNAME]_SIMPLIFIER_USER
+     
+If Projects outside HL7 and NHS England Organization, the following will alos need to be amended.
+    - line 31: 
         - secrets.[PROJECTNAME]_SIMPLIFIER_PWD
         - secrets.[PROJECTNAME]_SIMPLIFIER_ADDRESS
 
@@ -33,17 +37,18 @@ Further info on using a [scheduled cron job](https://docs.github.com/en/actions/
 
 Under `Settings -> Secrets and variables -> Actions` add the following, where [PROJECTNAME] is the name given to the folder above, capitalised, e.g. HL7FHIRUKCORER4:
 
-### Secrets to add:
-* [PROJECTNAME]_SIMPLIFIER_USER  
-  * Simplifier username that has access to project.  
-* [PROJECTNAME]_SIMPLIFIER_PWD  
-  * Password for Simplifier user.
-
 ### Variables to add:
 
 * [PROJECTNAME]_SIMPLIFIER_ADDRESS
   * Address of project - e.g. `https://api.simplifier.net/<project>/zip`
   * See Firely docs on project zip using the [Simplifier API](https://docs.fire.ly/projects/Simplifier/features/api.html#project-zip-api)
+ 
+### Secrets to add:
+If Projects outside HL7 and NHS England Organization, the following will alos need to be added.
+* [PROJECTNAME]_SIMPLIFIER_USER  
+  * Simplifier username that has access to project.  
+* [PROJECTNAME]_SIMPLIFIER_PWD  
+  * Password for Simplifier user.
 
 Docs on [creating variables for a respository](https://docs.github.com/en/actions/learn-github-actions/variables#creating-configuration-variables-for-a-repository).
 Docs on [creating secrets for a respository](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
