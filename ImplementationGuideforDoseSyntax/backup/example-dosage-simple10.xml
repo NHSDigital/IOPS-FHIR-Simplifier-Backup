@@ -1,0 +1,70 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="1c7d802c-71b2-4ac1-9cf2-8423e38b95fe" />
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="331792000" />
+                    <display value="Beclometasone 0.025% cream" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+    <authoredOn value="2020-05-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </recorder>
+    <dosageInstruction>
+        <timing>
+            <repeat>
+                <frequency value="2" />
+                <period value="1" />
+                <periodUnit value="d" />
+            </repeat>
+        </timing>
+        <site>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="68367000" />
+                <display value="Thigh" />
+            </coding>
+            <text value="Thigh" />
+        </site>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="417924000" />
+                <display value="Apply" />
+            </coding>
+        </method>
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>

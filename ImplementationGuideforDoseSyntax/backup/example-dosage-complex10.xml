@@ -1,0 +1,70 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0" />
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="322087003" />
+                    <display value="Hyoscine 1mg/72hours transdermal patches" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+        <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+     <authoredOn value="2020-08-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-13949" />
+        <display value="Dr John Moore" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-13949" />
+        <display value="Dr John Moore" />
+    </recorder>
+    <dosageInstruction>
+        <timing>
+            <repeat>
+                <frequency value="1" />
+                <period value="3" />
+                <periodUnit value="d" />
+            </repeat>
+        </timing>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="417924000" />
+                <display value="Apply" />
+            </coding>
+        </method>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="1" />
+                <unit value="patch" />
+                <system value="http://snomed.info/sct" />
+                <code value="733005001" />
+            </doseQuantity>
+        </doseAndRate>
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>

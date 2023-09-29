@@ -1,0 +1,75 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="95542550-a4ad-4807-b1af-fcaff9980f9e" />
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="388454007" />
+                    <display value="Insulin lispro" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+    <authoredOn value="2020-05-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </recorder>
+    <dosageInstruction>
+        <timing>
+            <repeat>
+                <when value="C" />
+            </repeat>
+        </timing>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="34206005" />
+                <display value="subcutaneous" />
+            </coding>
+        </route>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="422145002" />
+                <display value="inject" />
+            </coding>
+        </method>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="16" />
+                <unit value="Unit" />
+                <system value="http://snomed.info/sct" />
+                <code value="767525000" />
+            </doseQuantity>
+        </doseAndRate>
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>

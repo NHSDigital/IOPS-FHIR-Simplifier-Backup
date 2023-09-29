@@ -1,0 +1,93 @@
+<!--   Example of a medicationDispense with an AMP as a contained resource and a dispensed quantity   -->
+<MedicationDispense xmlns="http://hl7.org/fhir">
+    <id value="b6412185-a79e-465d-97ce-44b8fbe31428" />
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="30303" />
+    </identifier>
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="275811000001103" />
+                    <display value="Atenolol 100mg tablets (Actavis UK Ltd)" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="in-progress" />
+    <category>
+    <coding>
+        <system value="http://hl7.org/fhir/medication-request-category" />
+        <code value="discharge" />
+        <display value="discharge" />
+    </coding>
+    </category>
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+    <performer>
+    <actor>
+        <reference value="urn:staff-0002" />
+        <display value="Dr Allo Kate" />
+    </actor>
+    </performer>
+    <authorizingPrescription>
+      <reference value="urn:med-req-34235544094003898" />
+    </authorizingPrescription>
+    <quantity>
+        <value value="28" />
+        <unit value="tablet" />
+        <system value="http://snomed.info/sct" />
+        <code value="428673006" />
+    </quantity>
+    <daysSupply>
+        <value value="30" />
+        <unit value="Day" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="d" />
+    </daysSupply>
+    <whenPrepared value="2021-05-07T16:15:32Z" />
+    <whenHandedOver value="2021-05-07T16:15:32Z" />
+    <destination>
+        <reference value="2202032" />
+    </destination>
+    <note>
+        <text value="Do not take 30mins before eating." />
+    </note>
+    <dosageInstruction>
+        <timing>
+            <repeat>
+                <frequency value="1" />
+                <period value="1" />
+                <periodUnit value="d" />
+            </repeat>
+        </timing>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="26643006" />
+                <display value="oral" />
+            </coding>
+        </route>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="1" />
+                <unit value="tablet" />
+                <system value="http://snomed.info/sct" />
+                <code value="428673006" />
+            </doseQuantity>
+        </doseAndRate>
+    </dosageInstruction>
+    <substitution>
+      <wasSubstituted value="false" />
+    </substitution>
+</MedicationDispense>

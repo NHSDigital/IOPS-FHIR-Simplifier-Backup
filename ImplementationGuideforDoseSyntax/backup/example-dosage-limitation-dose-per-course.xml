@@ -1,0 +1,73 @@
+<!--  Defining a maximum dose per course  -->
+<!--  Example: Colchicine 500microgram tablets, 500 micrograms, 2 to 4 times a day until symptoms relieved, maximum 6 mg per course, do not repeat course within 3 days  -->
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="f27b260e-8bdf-11eb-8dcd-0242ac130003" />
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="330079002" />
+                    <display value="Colchicine 500microgram tablets" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+    <authoredOn value="2020-05-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </recorder>
+    <dosageInstruction>
+        <additionalInstruction>
+            <text value="Maximum dose per course 6 mg" />
+        </additionalInstruction>
+        <additionalInstruction>
+            <text value="Do not repeat course for 3 days" />
+        </additionalInstruction>
+        <patientInstruction value="Until symptoms relieved" />
+        <timing>
+            <repeat>
+                <frequency value="2" />
+                <frequencyMax value="4" />
+                <period value="1" />
+                <periodUnit value="d" />
+            </repeat>
+        </timing>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="500" />
+                <unit value="microgram" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="ug" />
+            </doseQuantity>
+        </doseAndRate>
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>

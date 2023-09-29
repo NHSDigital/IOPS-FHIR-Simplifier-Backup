@@ -1,0 +1,89 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="00d31bbe-72f4-4a29-a880-df1a66075450" />
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="91143003" />
+                    <display value="Salbutamol" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+    <authoredOn value="2020-05-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </recorder>
+    <dosageInstruction>
+        <additionalInstruction>
+            <text value="using the metered dose device" />
+        </additionalInstruction>
+        <asNeededBoolean value="true" />
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="18679011000001101" />
+                <display value="inhalation" />
+            </coding>
+        </route>
+        <doseAndRate>
+            <doseRange>
+                <low>
+                    <value value="100" />
+                    <unit value="microgram" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="ug" />
+                </low>
+                <high>
+                    <value value="200" />
+                    <unit value="microgram" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="ug" />
+                </high>
+            </doseRange>
+        </doseAndRate>
+        <maxDosePerPeriod>
+            <numerator>
+                <value value="4" />
+                <unit value="dose" />
+                <system value="http://snomed.info/sct" />
+                <code value="3317411000001100" />
+            </numerator>
+            <denominator>
+                <value value="1" />
+                <unit value="day" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="d" />
+            </denominator>
+        </maxDosePerPeriod>
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>
