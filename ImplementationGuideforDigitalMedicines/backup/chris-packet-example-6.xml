@@ -1,0 +1,449 @@
+<!--    This xml example is for illustrative purposes only and has not been clinically verified.    -->
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="6612816f-eca8-42e7-9259-56122be43ca3" />
+    <type value="message" />
+    <timestamp value="2021-05-07T16:15:32Z" />
+    <!--    Message Header    -->
+    <entry>
+        <fullUrl value="urn:message-header-1231232345" />
+        <resource>
+            <MessageHeader>
+                <id value="urn:message-header-1231232345" />
+                <eventCoding>
+                    <system value="http://hl7.org/fhir/message-events" />
+                    <code value="medication-dispense" />
+                    <display value="Medication Dispense" />
+                </eventCoding>
+                <source>
+                    <name value="ACME Pharmacy Systems" />
+                    <software value="ACME Pharmacy" />
+                    <version value="2.8.50" />
+                    <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
+                </source>
+                <focus>
+                    <reference value="urn:med-disp-2343261" />
+                </focus>
+                <focus>
+                    <reference value="urn:med-disp-909182312" />
+                </focus>
+            </MessageHeader>
+        </resource>
+    </entry>
+    <!--    // Patient associated with the encounter     -->
+    <entry>
+        <fullUrl value="urn:patient-01912" />
+        <resource>
+            <Patient>
+                <id value="urn:patient-01912" />
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                    <value value="4857773456" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <text value="Mr Chris Packet" />
+                    <family value="Packet" />
+                    <given value="Chris" />
+                    <prefix value="Mr" />
+                </name>
+                <gender value="male" />
+                <birthDate value="1995-11-12" />
+            </Patient>
+        </resource>
+    </entry>
+    <!--     Performer associated with the encounter.     -->
+    <entry>
+        <fullUrl value="urn:staff-0002" />
+        <resource>
+            <Practitioner>
+                <id value="urn:staff-0002" />
+                <name>
+                    <text value="Dr Allo Kate" />
+                    <family value="Kate" />
+                    <given value="Allo" />
+                    <prefix value="Dr" />
+                </name>
+                <qualification>
+                    <code>
+                        <coding>
+                            <system value="https://fhir.hl7.org.uk/Id/gpc-number" />
+                            <code value="123543" />
+                            <display value="General Pharmaceutical Council" />
+                        </coding>
+                    </code>
+                </qualification>
+            </Practitioner>
+        </resource>
+    </entry>
+    <!-- Location -->
+    <entry>
+        <fullUrl value="urn:location-498773"/>
+        <resource>
+            <Location>
+                <id value="urn:location-498773"/> 
+                <text> 
+                    <status value="generated"/> 
+                    <div xmlns="http://www.w3.org/1999/xhtml">Manchester Royal Infirmary, South Wing, second floor</div> 
+                </text> 
+                <identifier> 
+                    <value value="B1-S.F2"/> 
+                </identifier> 
+                <status value="active"/> 
+                <name value="South Wing, second floor"/> 
+                <alias value="Manchester Royal Infirmary, South Wing, second floor"/> 
+                <description value="Second floor of the Old South Wing, formerly in use by Psychiatry"/> 
+                <mode value="instance"/> 
+                <telecom> 
+                    <system value="phone"/> 
+                    <value value="2328"/> 
+                    <use value="work"/> 
+                </telecom> 
+                <address> 
+                    <use value="work"/> 
+                    <line value="Galapagosweg 91, Building A"/> 
+                    <city value="Manchester"/> 
+                    <postalCode value="M13 9WL"/> 
+                    <country value="UK"/> 
+                </address> 
+                <physicalType> 
+                <coding> 
+                    <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/> 
+                    <code value="wi"/> 
+                    <display value="Wing"/>      
+                </coding> 
+                </physicalType> 
+                <position> 
+                    <longitude value="-83.6945691"/> 
+                    <latitude value="42.25475478"/> 
+                    <altitude value="0"/> 
+                </position> 
+            </Location> 
+        </resource>
+    </entry>
+    <!--    // Medication #1: Paracetamol  (in this example, using a VMP dm+d concept)    -->
+    <entry>
+        <fullUrl value="urn:medication-322236009" />
+        <resource>
+            <Medication>
+                <id value="urn:medication-322236009" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="322236009" />
+                        <display value="Paracetamol 500mg tablets" />
+                    </coding>
+                </code>
+            </Medication>
+        </resource>
+    </entry>
+    <!-- Medication Request #1: Paracetamol-->
+     <entry>
+        <fullUrl value="urn:med-req-4059593981" />
+        <resource>
+            <MedicationRequest>
+                <id value="urn:med-req-4059593981" />
+                <status value="active" />
+                <intent value="order" />
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+                        <code value="inpatient" />
+                        <display value="inpatient" />
+                    </coding>
+                </category>
+                <priority value="routine" />
+                <medicationReference>
+                    <reference value="urn:medication-322236009" />
+                </medicationReference>
+                <subject>
+                    <reference value="urn:patient-01912" />
+                    <display value="Mr Chris Packet" />
+                </subject>
+                <authoredOn value="2020-05-15T15:00:00Z" />
+                <requester>
+                        <reference value="urn:staff-0002" />
+                        <display value="Dr Allo Kate" />
+                </requester>
+                <recorder>
+                        <reference value="urn:staff-0002" />
+                        <display value="Dr Allo Kate" />
+                </recorder>
+                <dosageInstruction>
+                    <timing>
+                        <repeat>
+                            <frequency value="3" />
+                            <period value="1" />
+                            <periodUnit value="d" />
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="26643006" />
+                            <display value="oral" />
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="500" />
+                            <unit value="milligram" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mg" />
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosageInstruction>
+                <substitution>
+                    <allowedBoolean value="false" />
+                </substitution>
+            </MedicationRequest>
+        </resource>
+    </entry>
+    <!--     Medication Dispense #1: Paracetamol    -->
+    <entry>
+        <fullUrl value="urn:med-disp-2343261" />
+        <resource>
+            <MedicationDispense>
+                <id value="urn:med-disp-2343261" />
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                    <value value="urn:2aa74d82-ae47-4783-8b7a-ff59433949302" />
+                </identifier>
+                <status value="completed" />
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/medication-request-category" />
+                        <code value="inpatient" />
+                        <display value="inpatient" />
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="urn:medication-322236009" />
+                    <display value="Paracetamol 500mg tablets" />
+                </medicationReference>
+                <subject>
+                    <reference value="urn:patient-01912" />
+                    <display value="Mr Chris Packet" />
+                </subject>
+                <performer>
+                    <actor>
+                        <reference value="urn:staff-0002" />
+                        <display value="Dr Allo Kate" />
+                    </actor>
+                </performer>
+                <authorizingPrescription>
+                    <reference value="urn:med-req-4059593981" />
+                </authorizingPrescription>
+                <quantity>
+                    <value value="112" />
+                    <unit value="tablet" />
+                    <system value="http://snomed.info/sct" />
+                    <code value="d" />
+                </quantity>
+                <daysSupply>
+                    <value value="14" />
+                    <unit value="Day" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="d" />
+                </daysSupply>
+                <whenPrepared value="2021-05-07T18:37:12Z" />
+                <whenHandedOver value="2021-05-07T19:29:15Z" />
+                <destination>
+                    <reference value="urn:location-498773" />
+                </destination>
+                <note>
+                    <text value="Take after meals." />
+                </note>
+                <dosageInstruction>
+                    <timing>
+                        <repeat>
+                            <frequency value="4" />
+                            <period value="1" />
+                            <periodUnit value="d" />
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="26643006" />
+                            <display value="oral" />
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="2" />
+                            <unit value="tablet" />
+                            <system value="http://snomed.info/sct" />
+                            <code value="428673006" />
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosageInstruction>
+                <substitution>
+                    <wasSubstituted value="false" />
+                </substitution>
+            </MedicationDispense>
+        </resource>
+    </entry>
+    <!--    // Medication #2: Ibuprofen (in this example, using a VMP dm+d concept)    -->
+    <entry>
+        <fullUrl value="urn:medication-39110311000001101" />
+        <resource>
+            <Medication>
+                <id value="urn:medication-39110311000001101" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="39110311000001101" />
+                        <display value="Ibuprofen 800mg modified-release tablets" />
+                    </coding>
+                </code>
+            </Medication>
+        </resource>
+    </entry>
+    <!-- Medication Request #2: Ibuprofen -->
+     <entry>
+        <fullUrl value="urn:med-req-342355475687898" />
+        <resource>
+            <MedicationRequest>
+                <id value="urn:med-req-342355475687898" />
+                <status value="active" />
+                <intent value="order" />
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+                        <code value="inpatient" />
+                        <display value="inpatient" />
+                    </coding>
+                </category>
+                <priority value="routine" />
+                <medicationReference>
+                    <reference value="urn:medication-39110311000001101" />
+                </medicationReference>
+                <subject>
+                    <reference value="urn:patient-01912" />
+                    <display value="Mr Chris Packet" />
+                </subject>
+                <authoredOn value="2020-05-15T15:00:00Z" />
+                <requester>
+                        <reference value="urn:staff-0002" />
+                        <display value="Dr Allo Kate" />
+                </requester>
+                <recorder>
+                        <reference value="urn:staff-0002" />
+                        <display value="Dr Allo Kate" />
+                </recorder>
+                <dosageInstruction>
+                    <timing>
+                        <repeat>
+                            <frequency value="3" />
+                            <period value="1" />
+                            <periodUnit value="d" />
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="26643006" />
+                            <display value="oral" />
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="500" />
+                            <unit value="milligram" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mg" />
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosageInstruction>
+                <substitution>
+                    <allowedBoolean value="false" />
+                </substitution>
+            </MedicationRequest>
+        </resource>
+    </entry>
+    <!--     Medication Dispense #2: Ibuprofen    -->
+    <entry>
+        <fullUrl value="urn:med-disp-909182312" />
+        <resource>
+            <MedicationDispense>
+                <id value="urn:med-disp-909182312" />
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                    <value value="urn:2aa74d82-ae47-4783-8b7a-ff5944939222" />
+                </identifier>
+                <status value="completed" />
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/medication-request-category" />
+                        <code value="inpatient" />
+                        <display value="inpatient" />
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="urn:medication-39110311000001101" />
+                    <display value="Ibuprofen 800mg modified-release tablets" />
+                </medicationReference>
+                <subject>
+                    <reference value="urn:patient-01912" />
+                    <display value="Mr Chris Packet" />
+                </subject>
+                <performer>
+                    <actor>
+                        <reference value="urn:staff-0002" />
+                        <display value="Dr Allo Kate" />
+                    </actor>
+                </performer>
+                <authorizingPrescription>
+                    <reference value="urn:med-req-342355475687898" />
+                </authorizingPrescription>
+                <quantity>
+                    <value value="56" />
+                    <unit value="tablet" />
+                    <system value="http://snomed.info/sct" />
+                    <code value="d" />
+                </quantity>
+                <daysSupply>
+                    <value value="14" />
+                    <unit value="Day" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="d" />
+                </daysSupply>
+                <whenPrepared value="2021-05-07T18:37:12Z" />
+                <whenHandedOver value="2021-05-07T19:29:15Z" />
+                <destination>
+                    <reference value="urn:location-498773" />
+                </destination>
+                <note>
+                    <text value="Take after meals." />
+                </note>
+                <dosageInstruction>
+                    <timing>
+                        <repeat>
+                            <frequency value="4" />
+                            <period value="1" />
+                            <periodUnit value="d" />
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="26643006" />
+                            <display value="oral" />
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="1" />
+                            <unit value="tablet" />
+                            <system value="http://snomed.info/sct" />
+                            <code value="428673006" />
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosageInstruction>
+                <substitution>
+                    <wasSubstituted value="false" />
+                </substitution>
+            </MedicationDispense>
+        </resource>
+    </entry>
+</Bundle>

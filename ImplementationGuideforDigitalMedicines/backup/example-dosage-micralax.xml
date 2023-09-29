@@ -1,0 +1,71 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="d62bbf77-c6b5-4bac-a66f-147a869eacc7" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="community" />
+      <display value="community" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="3351711000001106" />
+      <display value="Micralax Micro-enema 5ml (RPH Pharmaceuticals AB)" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="Insert 1 enema - Rectal - take once" />
+    <timing>
+      <repeat>
+        <count value="1" />
+      </repeat>
+    </timing>
+    
+    <method>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="421257003" />
+                <display value="Insert" />
+            </coding>
+        </method>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="37161004" />
+        <display value="Rectal" />
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1" />
+        <unit value="enema" />
+        <system value="http://snomed.info/sct" />
+        <code value="13299601000001101" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

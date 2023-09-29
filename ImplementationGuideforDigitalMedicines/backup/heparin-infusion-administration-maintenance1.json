@@ -1,0 +1,55 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "3ab8ce67-715b-4cff-9d00-bcb2c4aed869",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration"
+    ]
+  },
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://dmd.nhs.uk",
+        "code": "36054511000001107",
+        "display": "Heparin sodium 20,000units/20ml solution for injection ampoules"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/UKCore-Patient-RachelSmith-Example"
+  },
+  "effectiveDateTime": "2022-04-08T09:05:00+00:00",
+  "request": {
+    "reference": "MedicationRequest/heparin-infusion-request-maintenance-calculateddose"
+  },
+  "dosage": {
+    "method": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "261754007",
+          "display": "Continuous infusion"
+        }
+      ]
+    },
+    "route": {
+      "coding": [
+        {
+          "system": "https://dmd.nhs.uk",
+          "code": "47625008",
+          "display": "Intravenous"
+        }
+      ]
+    },
+    "rateQuantity": {
+      "value": 0.9,
+      "unit": "millilitre per hour",
+      "system": "http://snomed.info/sct",
+      "code": "mL/h"
+    }
+  },
+  "note": {
+    "text": "Check APTT after 6 hours"
+  }
+}

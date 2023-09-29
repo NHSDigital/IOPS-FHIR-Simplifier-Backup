@@ -1,0 +1,99 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="c1ea9b0b-f157-4ee2-9771-84c6cbae5cad" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="inpatient" />
+      <display value="inpatient" />
+    </coding>
+  </category>
+  <priority value="routine" />
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="322307006" />
+      <display value="Co-codamol 8mg/500mg tablets" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="2 tablet - as required for Migraine - take once" />
+    <sequence value="1" />
+    <timing>
+      <repeat>
+        <count value="1" />
+      </repeat>
+    </timing>
+    <asNeededCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="37796009" />
+        <display value="Migraine" />
+      </coding>
+    </asNeededCodeableConcept>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="2" />
+        <unit value="tablet" />
+        <system value="http://snomed.info/sct" />
+        <code value="428673006" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dosageInstruction>
+    <text value="2 tablet - every 4 hours - up to a maximum of 6 dose in 24 hours - when migraine recurs" />
+    <sequence value="2" />
+    <patientInstruction value="when migraine recurs" />
+    <timing>
+      <repeat>
+        <frequency value="1" />
+        <period value="4" />
+        <periodUnit value="h" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="2" />
+        <unit value="tablet" />
+        <system value="http://snomed.info/sct" />
+        <code value="428673006" />
+      </doseQuantity>
+    </doseAndRate>
+    <maxDosePerPeriod>
+      <numerator>
+        <value value="6" />
+        <unit value="dose" />
+        <system value="http://snomed.info/sct" />
+        <code value="3317411000001100" />
+      </numerator>
+      <denominator>
+        <value value="24" />
+        <unit value="hour" />
+        <system value="http://unitsofmeasure.org/" />
+        <code value="h" />
+      </denominator>
+    </maxDosePerPeriod>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

@@ -1,0 +1,193 @@
+<Bundle
+	xmlns="http://hl7.org/fhir">
+	<type value="message" />
+	<entry>
+		<fullUrl value="urn:uuid:03791226-ed5d-469c-abb0-0a1c25c74839" />
+		<resource>
+			<MessageHeader>
+				<id value="03791226-ed5d-469c-abb0-0a1c25c74839" />
+				<focus>
+					<reference value="2f09481c-a0bb-48aa-b52c-53211984b1bb" />
+					<type value="MedicationRequest" />
+				</focus>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:d6679903-1405-455d-96f0-db6e1c7698bb" />
+		<resource>
+			<Medication>
+				<id value="d6679903-1405-455d-96f0-db6e1c7698bb" />
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+				</meta>
+				<form>
+					<coding>
+						<system value="http://snomed.info/sct" />
+						<code value="385229008" />
+						<display value="Solution for infusion" />
+					</coding>
+				</form>
+				<code>
+					<text value="Calcium gluconate 10% - Solution for infusion - 20 mL"/>
+				</code>
+				<amount>
+					<value value="20" />
+					<unit value="millilitre" />
+					<system value="http://unitsofmeasure.org" />
+					<code value="mL" />
+				</amount>
+				<ingredient>
+					<itemCodeableConcept>
+						<coding>
+							<system value="https://dmd.nhs.uk" />
+							<code value="53691001" />
+							<display value="Calcium gluconate" />
+						</coding>
+					</itemCodeableConcept>
+					<strength>
+						<numerator>
+							<value value="10" />
+							<unit value="percent" />
+							<system value="http://unitsofmeasure.org" />
+							<code value="%" />
+						</numerator>
+						<denominator>
+							<value value="1" />
+						</denominator>
+					</strength>
+				</ingredient>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1de16152-1a0e-400f-bbe9-6be3eeb086a4" />
+		<resource>
+			<Medication>
+				<id value="1de16152-1a0e-400f-bbe9-6be3eeb086a4" />
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+				</meta>
+				<form>
+					<coding>
+						<system value="http://snomed.info/sct" />
+						<code value="385229008" />
+						<display value="Solution for infusion" />
+					</coding>
+				</form>
+				<code>
+					<text value="Glucose 5% - Solution for infusion - 10 mL"/>
+				</code>
+				<amount>
+					<value value="100" />
+					<unit value="millilitre" />
+					<system value="http://unitsofmeasure.org" />
+					<code value="mL" />
+				</amount>
+				<ingredient>
+					<itemCodeableConcept>
+						<coding>
+							<system value="https://dmd.nhs.uk" />
+							<code value="111138002" />
+							<display value="Glucose" />
+						</coding>
+					</itemCodeableConcept>
+					<strength>
+						<numerator>
+							<value value="5" />
+							<unit value="percent" />
+							<system value="http://unitsofmeasure.org" />
+							<code value="%" />
+						</numerator>
+						<denominator>
+							<value value="1" />
+						</denominator>
+					</strength>
+				</ingredient>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:81abd57b-31c1-4f07-8b6c-51c962cfa067" />
+		<resource>
+			<Medication>
+				<id value="81abd57b-31c1-4f07-8b6c-51c962cfa067" />
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+				</meta>
+				<code>
+					<text value="20 mL Calcium gluconate 10% in 10 mL Glucose 5% - Solution for infusion"/>
+				</code>
+				<ingredient>
+					<itemReference>
+						<reference value="d6679903-1405-455d-96f0-db6e1c7698bb"/>
+					</itemReference>
+				</ingredient>
+				<ingredient>
+					<itemReference>
+						<reference value="1de16152-1a0e-400f-bbe9-6be3eeb086a4"/>
+					</itemReference>
+				</ingredient>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:2f09481c-a0bb-48aa-b52c-53211984b1bb" />
+		<resource>
+			<MedicationRequest>
+				<id value="2f09481c-a0bb-48aa-b52c-53211984b1bb" />
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+				</meta>
+				<medicationReference>
+					<reference value="81abd57b-31c1-4f07-8b6c-51c962cfa067" />
+					<type value="Medication" />
+				</medicationReference>
+				<subject>
+					<reference value="Patient/UKCore-Patient-RichardSmith-Example" />
+				</subject>
+				<reasonCode>
+					<coding>
+						<system value="http://snomed.info/sct" />
+						<code value="5291005" />
+						<display value="Hypocalcemia" />
+					</coding>
+				</reasonCode>
+				<dosageInstruction>
+					<text value="Continuous infusion 120 millilitre over 10 minutes - Intravenous - May repeat until patient is asymptomatic" />
+					<additionalInstruction>
+						<text value="May repeat until patient is asymptomatic" />
+					</additionalInstruction>
+					<timing>
+						<repeat>
+							<duration value="10" />
+							<durationUnit value="min" />
+						</repeat>
+					</timing>
+					<route>
+						<coding>
+							<system value="http://snomed.info/sct" />
+							<code value="47625008" />
+							<display value="Intravenous" />
+						</coding>
+					</route>
+					<method>
+						<coding>
+							<system value="http://snomed.info/sct" />
+							<code value="261754007" />
+							<display value="Continuous infusion" />
+						</coding>
+					</method>
+					<doseAndRate>
+						<doseQuantity>
+							<value value="120" />
+							<unit value="millilitre" />
+							<system value="http://unitsofmeasure.org" />
+							<code value="ml" />
+						</doseQuantity>
+					</doseAndRate>
+				</dosageInstruction>
+			</MedicationRequest>
+		</resource>
+	</entry>
+</Bundle>

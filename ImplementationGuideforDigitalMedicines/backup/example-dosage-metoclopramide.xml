@@ -1,0 +1,73 @@
+<!--   Metoclopramide, orally 10mg to be taken when required for nausea up to three times daily   -->
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="e02e462c-12db-4162-95f6-0436a60c5bc4" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="inpatient" />
+      <display value="inpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="56549003" />
+      <display value="Metoclopramide" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-3040" />
+    <display value="Dr Jim Bean" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-3040" />
+    <display value="Dr Jim Beam" />
+  </recorder>
+  <dosageInstruction>
+    <text value="10 milligram - up to 3 times a day - oral - as required for nausea" />
+    <timing>
+      <repeat>
+        <frequencyMax value="3" />
+        <period value="1" />
+        <periodUnit value="d" />
+      </repeat>
+    </timing>
+    <asNeededCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="422587007" />
+        <display value="nausea" />
+      </coding>
+    </asNeededCodeableConcept>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="26643006" />
+        <display value="oral" />
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="10" />
+        <unit value="milligram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mg" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

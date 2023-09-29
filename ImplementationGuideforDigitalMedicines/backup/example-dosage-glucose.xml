@@ -1,0 +1,71 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="6b122dc2-89b2-4f93-9139-3012f6669857" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="inpatient" />
+      <display value="inpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="4751811000001102" />
+      <display value="Glucose 5% infusion 1litre bags" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="Continuous infusion 1 bag - Intravenous route - over 8 hours" />
+    <timing>
+      <repeat>
+        <duration value="8" />
+        <durationUnit value="h" />
+      </repeat>
+    </timing>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="261754007" />
+        <display value="Continuous infusion" />
+      </coding>
+    </method>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="47625008" />
+                <display value="Intravenous route" />
+            </coding>
+        </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1" />
+        <unit value="bag" />
+        <system value="http://snomed.info/sct" />
+        <code value="428672001" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

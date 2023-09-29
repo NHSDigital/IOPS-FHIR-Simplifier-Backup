@@ -1,0 +1,134 @@
+<!--    This xml example is for illustrative purposes only and has not been clinically verified.    -->
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="2183304e-412e-4504-94bd-fbfb2ae16913" />
+  <identifier>
+    <system value="urn:[organisation_name]:[system_name]" />
+    <value value="urn:39920ce3-e585-4ef2-921b-9128fcfd307f" />
+  </identifier>
+  <type value="message" />
+  <timestamp value="2021-05-07T16:15:32Z" />
+  <!--   Message Header   -->
+  <entry>
+    <fullUrl value="urn:message-header-167434" />
+    <resource>
+      <MessageHeader>
+        <id value="urn:message-header-167434" />
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>The quick brown fox jumps over the lazy dog</p>
+          </div>
+        </text>
+        <eventCoding>
+          <system value="http://hl7.org/fhir/message-events" />
+          <code value="individual-requirements-1" />
+          <display value="Individual Requirements" />
+        </eventCoding>
+        <source>
+          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
+        </source>
+        <focus>
+          <reference value="urn:organisation:system:statement-123423423" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <!--    Patient associated with the encounter.    -->
+  <entry>
+    <fullUrl value="urn:patient-748395739" />
+    <resource>
+      <Patient>
+        <id value="urn:patient-748395739" />
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="748395739" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <text value="Miss Carrie Oakey" />
+          <family value="Oakey" />
+          <given value="Carrie" />
+          <prefix value="Miss" />
+        </name>
+        <gender value="male" />
+        <birthDate value="1977-06-04" />
+      </Patient>
+    </resource>
+  </entry>
+  <!--    Medication   -->
+  <entry>
+    <fullUrl value="urn:medication-27658006" />
+    <resource>
+      <Medication>
+        <id value="urn:medication-27658006" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="374372000" />
+            <display value="Betamethasone valerate 0.1% cream" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <!--     Medication Statement     -->
+  <entry>
+    <fullUrl value="urn:organisation:system:statement-123423423" />
+    <resource>
+      <MedicationStatement>
+        <id value="urn:organisation:system:statement-123423423" />
+        <identifier>
+          <system value="urn:organisation:system" />
+          <value value="58028cc3-71a8-4fb3-b92a-ecfd9a2f3833" />
+        </identifier>
+        <status value="active" />
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/medication-request-category" />
+            <code value="outpatient" />
+            <display value="outpatient" />
+          </coding>
+        </category>
+        <medicationReference>
+          <reference value="urn:medication-27658006" />
+          <display value="Betamethasone valerate 0.1% cream" />
+        </medicationReference>
+        <subject>
+          <reference value="urn:patient-748395739" />
+          <display value="Miss Carrie Oakey" />
+        </subject>
+        <effectivePeriod>
+          <start value="2021-04-27T11:00:00Z" />
+          <end value="2021-05-04T00:00:00Z" />
+        </effectivePeriod>
+        <dateAsserted value="2021-04-27T11:00:00Z" />
+        <dosage>
+          <timing>
+            <repeat>
+              <duration value="2" />
+              <durationUnit value="wk" />
+              <frequency value="2" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <method>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="417924000" />
+              <display value="Apply" />
+            </coding>
+          </method>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1" />
+              <unit value="Cutaneous cream" />
+              <system value="http://snomed.info/sct" />
+              <code value="421628006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+</Bundle>

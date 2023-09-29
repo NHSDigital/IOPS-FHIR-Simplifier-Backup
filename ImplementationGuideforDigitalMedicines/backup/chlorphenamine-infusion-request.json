@@ -1,0 +1,85 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "34eb3c92-76e6-48c2-9691-aa1f0b58369b",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/UKCore-Patient-RichardSmith-Example"
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://dmd.nhs.uk",
+        "code": "9944001",
+        "display": "Chlorphenamine"
+      }
+    ]
+  },
+          "reasonCode": [
+        {
+            "coding": [
+                {
+        "system": "http://snomed.info/sct",
+        "code": "39579001",
+        "display": "Anaphylactic reaction"
+                }
+            ]
+        }
+        ],
+  "dosageInstruction": [
+    {
+      "text": "Single bolus 10 milligram over 1 minute - Intravenous - up to a maximum of 40 milligram in 24 hours",
+      "timing": {
+        "repeat": {
+          "duration": 1,
+          "durationUnit": "min"
+        }
+      },
+      "method": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "397801003",
+            "display": "Single bolus"
+          }
+        ]
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "47625008",
+            "display": "Intravenous"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 10,
+            "unit": "milligram",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          }
+        }
+      ],
+      "maxDosePerPeriod": {
+        "numerator": {
+          "value": 40,
+          "unit": "milligram",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        },
+        "denominator": {
+          "value": 24,
+          "unit": "hour",
+          "system": "http://unitsofmeasure.org",
+          "code": "h"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "203c8dce-aaec-4349-9335-a572ad48c553",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/UKCore-Patient-RachelSmith-Example"
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://dmd.nhs.uk",
+        "code": "36054511000001107",
+        "display": "Heparin sodium 20,000units/20ml solution for injection ampoules"
+      }
+    ]
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "49956009",
+          "display": "Antenatal deep vein thrombosis"
+        }
+      ]
+    }
+  ],
+  "supportingInformation": [
+    {
+      "reference": "Observation/UKCore-Patient-RachelSmith-Weight-Example",
+      "type": "Observation"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "text": "Continuous infusion 3.75 millilitre - Intravenous - over 5 minutes",
+      "timing": {
+        "repeat": {
+          "duration": 5,
+          "durationUnit": "min",
+          "count": 1
+        }
+      },
+      "method": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "261754007",
+            "display": "Continuous infusion"
+          }
+        ]
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "https://dmd.nhs.uk",
+            "code": "47625008",
+            "display": "Intravenous"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 3.75,
+            "unit": "millilitre",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL"
+          }
+        },
+        {
+          "doseQuantity": {
+            "value": 3750,
+            "unit": "International Unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "[IU]"
+          }
+        }
+      ]
+    }
+  ]
+}

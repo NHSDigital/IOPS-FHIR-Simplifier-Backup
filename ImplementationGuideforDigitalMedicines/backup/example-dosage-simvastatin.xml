@@ -1,0 +1,73 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="52e0f455-875a-4cda-a161-5c46814e1f54" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="community" />
+      <display value="community" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="320000009" />
+      <display value="Simvastatin 40mg tablets" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="1 tablet - once a day - during the night - oral - Do not stop taking this medicine except on your doctors advice" />
+    <additionalInstruction>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="419444006" />
+        <display value="Do not stop taking this medicine except on your doctors advice" />
+      </coding>
+    </additionalInstruction>
+    <timing>
+      <repeat>
+        <frequency value="1" />
+        <period value="1" />
+        <periodUnit value="d" />
+        <when value="NIGHT"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="26643006" />
+        <display value="oral" />
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1" />
+        <unit value="tablet" />
+        <system value="http://snomed.info/sct" />
+        <code value="385055001" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

@@ -1,0 +1,79 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="10850aa9-133b-4a33-aea7-5bef3b71ab9b" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="inpatient" />
+      <display value="inpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="21514511000001103" />
+      <display value="Voluven 10% infusion 500ml Freeflex bags (Fresenius Kabi Ltd)" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2018-09-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="Infusion over 10 hours - at a rate of 30 millilitre per kilogram - Intravenous" />
+    <timing>
+      <repeat>
+        <duration value="10" />
+        <durationUnit value="h" />
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="47625008" />
+        <display value="Intravenous" />
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="129330003" />
+        <display value="Infusion" />
+      </coding>
+    </method>
+    <doseAndRate>
+      <rateRatio>
+        <numerator>
+          <value value="30" />
+          <unit value="millilitre" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="mL" />
+        </numerator>
+        <denominator>
+          <value value="1" />
+          <unit value="kilogram" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="kg" />
+        </denominator>
+      </rateRatio>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

@@ -1,0 +1,326 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="acd1d58c-4abd-415b-a5a3-88f5dac71ec0" />
+  <type value="message" />
+  <timestamp value="2021-05-07T16:15:32Z" />
+  <!--   Message Header   -->
+  <entry>
+    <fullUrl value="urn:message-header-9920192" />
+    <resource>
+      <MessageHeader>
+        <id value="urn:message-header-9920192" />
+        <eventCoding>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/EventType-1" />
+          <code value="prescription-order" />
+          <display value="Prescription Order" />
+        </eventCoding>
+        <source>
+          <name value="ACME Clinical Systems" />
+          <software value="ACME ePMA" />
+          <version value="3.5.68" />
+          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
+        </source>
+        <focus>
+          <reference value="urn:med-req-76462" />
+        </focus>
+        <focus>
+          <reference value="urn:med-req-987765745" />
+        </focus>
+        <focus>
+          <reference value="urn:med-req-11adfw53446" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <!--  // Patient associated with the encounter   -->
+  <entry>
+    <fullUrl value="urn:patient-01912" />
+    <resource>
+      <Patient>
+        <id value="urn:patient-01912" />
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="4857773456" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <text value="Mr Chris Packet" />
+          <family value="Packet" />
+          <given value="Chris" />
+          <prefix value="Mr" />
+        </name>
+        <gender value="male" />
+        <birthDate value="1995-11-12" />
+      </Patient>
+    </resource>
+  </entry>
+  <!--  // Prescribing clinician associated with the encounter.   -->
+  <entry>
+    <fullUrl value="urn:staff-1112" />
+    <resource>
+      <Practitioner>
+        <id value="urn:staff-1112" />
+        <name>
+          <text value="Dr Maikeu Well" />
+          <family value="Well" />
+          <given value="Maikeu" />
+          <prefix value="Dr" />
+        </name>
+        <qualification>
+          <code>
+            <coding>
+              <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+              <code value="2145879" />
+              <display value="General Medical Council" />
+            </coding>
+          </code>
+        </qualification>
+      </Practitioner>
+    </resource>
+  </entry>
+  <!--  // Medication #1: Paracetamol  -->
+  <entry>
+    <fullUrl value="urn:medication-90332006" />
+    <resource>
+      <Medication>
+        <id value="urn:medication-90332006" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="90332006" />
+            <display value="Paracetamol" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <!--   // Medication Request #1: Paracetamol 1g four times a day   -->
+  <entry>
+    <fullUrl value="urn:med-req-76462" />
+    <resource>
+      <MedicationRequest>
+        <id value="urn:med-req-76462" />
+        <identifier>
+          <value value="35873655-0d53-469a-9428-04df65f5cbb4" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/medication-request-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+          </coding>
+        </category>
+        <priority value="routine" />
+        <medicationReference>
+          <reference value="urn:medication-90332006" />
+          <display value="Paracetamol" />
+        </medicationReference>
+        <subject>
+          <reference value="urn:patient-01912" />
+          <display value="Mr Chris Packet" />
+        </subject>
+        <authoredOn value="2021-05-14T11:34:12+01:00" />
+        <requester>
+          <reference value="urn:staff-1112" />
+          <display value="Dr Maikeu Well" />
+        </requester>
+        <recorder>
+          <reference value="urn:staff-1112" />
+          <display value="Dr Maikeu Well" />
+        </recorder>
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <frequency value="4" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="26643006" />
+              <display value="oral" />
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1" />
+              <unit value="gram" />
+              <system value="http://unitsofmeasure.org" />
+              <code value="g" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+        <substitution>
+          <allowedBoolean value="false" />
+        </substitution>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <!--  // Medication #2: Ibuprofen 800mg modified-release tablets  -->
+  <entry>
+    <fullUrl value="urn:medication-39110311000001101" />
+    <resource>
+      <Medication>
+        <id value="urn:medication-39110311000001101" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="39110311000001101" />
+            <display value="Ibuprofen 800mg modified-release tablets" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <!--   // Medication Request #2: Ibuprofen 800mg modified-release tablets  -->
+  <entry>
+    <fullUrl value="urn:med-req-987765745" />
+    <resource>
+      <MedicationRequest>
+        <id value="urn:med-req-987765745" />
+        <identifier>
+          <value value="63a40946-c387-4810-9458-c573f873d7b4" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/medication-request-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+          </coding>
+        </category>
+        <priority value="routine" />
+        <medicationReference>
+          <reference value="urn:medication-39110311000001101" />
+          <display value="Ibuprofen 800mg modified-release tablets" />
+        </medicationReference>
+        <subject>
+          <reference value="urn:patient-01912" />
+          <display value="Mr Chris Packet" />
+        </subject>
+        <authoredOn value="2021-05-14T11:34:12Z" />
+        <requester>
+          <reference value="urn:staff-1112" />
+          <display value="Dr Maikeu Well" />
+        </requester>
+        <recorder>
+          <reference value="urn:staff-1112" />
+          <display value="Dr Maikeu Well" />
+        </recorder>
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <frequency value="2" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="26643006" />
+              <display value="oral" />
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="800" />
+              <unit value="milligram" />
+              <system value="http://unitsofmeasure.org" />
+              <code value="mg" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+        <substitution>
+          <allowedBoolean value="false" />
+        </substitution>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <!--  // Medication #3: Pregabalin  -->
+  <entry>
+    <fullUrl value="urn:medication-234567321" />
+    <resource>
+      <Medication>
+        <id value="urn:medication-234567321" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="415160008" />
+            <display value="Pregabalin" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <!--   // Medication Request #3: Pregabalin   -->
+  <entry>
+    <fullUrl value="urn:med-req-11adfw53446" />
+    <resource>
+      <MedicationRequest>
+        <id value="urn:med-req-11adfw53446" />
+        <identifier>
+          <value value="63a40946-c387-4810-9458-c573f873d7b4" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/medication-request-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+          </coding>
+        </category>
+        <priority value="routine" />
+        <medicationReference>
+          <reference value="urn:medication-234567321" />
+          <display value="Pregabalin" />
+        </medicationReference>
+        <subject>
+          <reference value="urn:patient-01912" />
+          <display value="Mr Chris Packet" />
+        </subject>
+        <authoredOn value="2021-05-14T11:34:12Z" />
+        <requester>
+          <reference value="urn:staff-1112" />
+          <display value="Dr Maikeu Well" />
+        </requester>
+        <recorder>
+          <reference value="urn:staff-1112" />
+          <display value="Dr Maikeu Well" />
+        </recorder>
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <frequency value="3" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="26643006" />
+              <display value="oral" />
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="75" />
+              <unit value="milligram" />
+              <system value="http://unitsofmeasure.org" />
+              <code value="mg" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+        <substitution>
+          <allowedBoolean value="false" />
+        </substitution>
+      </MedicationRequest>
+    </resource>
+  </entry>
+</Bundle>

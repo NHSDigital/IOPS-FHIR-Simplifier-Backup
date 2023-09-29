@@ -1,0 +1,61 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="973f9bdc-ad20-4ff4-bc01-9c727eaf5919" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="inpatient" />
+      <display value="inpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="688711000001107" />
+      <display value="Co-trimoxazole 80mg/400mg tablets (Accord Healthcare Ltd)" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="1 tablet - twice a day - on Monday, Wednesday and Friday" />
+    <timing>
+      <repeat>
+        <frequency value="2" />
+        <period value="1" />
+        <periodUnit value="d" />
+        <dayOfWeek value="mon" />
+        <dayOfWeek value="wed" />
+        <dayOfWeek value="fri" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1" />
+        <unit value="tablet" />
+        <system value="http://snomed.info/sct" />
+        <code value="428673006" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

@@ -1,0 +1,55 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "f8fced11-53c3-47c3-92a8-ff49dc1b0e0b",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration"
+    ]
+  },
+  "status": "on-hold",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://dmd.nhs.uk",
+        "code": "36054511000001107",
+        "display": "Heparin sodium 20,000units/20ml solution for injection ampoules"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/UKCore-Patient-RachelSmith-Example"
+  },
+  "effectivePeriod": {
+    "start": "2021-03-26T16:30:00+00:00",
+    "end": "2021-03-26T17:30:00+00:00"
+  },
+  "request": {
+    "reference": "MedicationRequest/203c8dce-aaec-4349-9335-a572ad48c553"
+  },
+  "dosage": {
+    "method": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "261754007",
+          "display": "Continuous infusion"
+        }
+      ]
+    },
+    "route": {
+      "coding": [
+        {
+          "system": "https://dmd.nhs.uk",
+          "code": "47625008",
+          "display": "Intravenous"
+        }
+      ]
+    },
+    "rateQuantity": {
+      "value": 0,
+      "unit": "millilitre per hour",
+      "system": "http://unitsofmeasure.org",
+      "code": "mL/h"
+    }
+  }
+}

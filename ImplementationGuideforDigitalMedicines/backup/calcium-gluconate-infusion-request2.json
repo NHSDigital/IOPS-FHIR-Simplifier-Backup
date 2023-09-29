@@ -1,0 +1,65 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "34eb3c92-76e6-48c2-9691-aa1f0b58369b",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/UKCore-Patient-RichardSmith-Example"
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://dmd.nhs.uk",
+        "code": "33456711000001109",
+        "display": "Calcium gluconate 10% solution for injection 50ml vials"
+      }
+    ]
+  },
+"reasonCode":  [
+                    {
+                        "coding":  [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "5291005",
+                                "display": "Hypocalcemia"
+                            }
+                        ]
+                    }
+                ],
+  "dosageInstruction": [
+    {
+      "text": "Continuous infusion 2 millilitre per hour - Intravenous central route",
+      "method": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "261754007",
+            "display": "Continuous infusion"
+          }
+        ]
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "418114005",
+            "display": "Intravenous central route"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "rateQuantity": {
+            "value": 2,
+            "unit": "millilitre per hour",
+            "system": "http://unitsofmeasure.org",
+            "code": "ml/h"
+          }
+        }
+      ]
+    }
+  ]
+}
