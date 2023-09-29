@@ -1,0 +1,31 @@
+{
+    "resourceType": "ValueSet",
+    "url": "https://fhir.nhs.uk/ValueSet/DrugSubstanceUse",
+    "version": "0.0.1",
+    "name": "DrugSubstanceUse",
+    "title": "Drug Substance Use",
+    "status": "draft",
+    "date": "2023-08-14",
+    "publisher": "NHS England",
+    "description": "From PRSB definition in diabetes",
+    "copyright": "Copyright © 2021+ NHS England",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "filter": [
+                    {
+                        "property": "constraint",
+                        "op": "=",
+                        "value": "<<361055000 |Misuses drugs (finding)| OR <<371422002 |History of substance abuse (situation)| OR <<228368007 |Has never misused drugs (situation)| OR 783241000000102 |Declined to give substance misuse history (finding)|"
+                    }
+                ]
+            }
+        ]
+    },
+    "id": "fd25ede3-817a-45cf-b48b-a659935ec833",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-14T11:32:41.296Z"
+    }
+}

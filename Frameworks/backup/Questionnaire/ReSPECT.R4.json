@@ -1,0 +1,420 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "5649c125-3728-4194-a73f-1672f1d66304",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2023-07-29T05:58:15.459Z"
+  },
+  "url": "https://example.fhir.nhs.uk/Questionnaire/ReSPECT",
+  "identifier": [
+    {
+      "system": "http://snomed.info/sct",
+      "value": "1382601000000107"
+    }
+  ],
+  "title": "ReSPECT",
+  "status": "draft",
+  "description": "ReSPECT - Recommended Summary Plan for Emergency Care and Treatment.",
+  "purpose": "Representing the dataset for capture, reporting and auditing the details of ReSPECT - Recommended Summary Plan for Emergency Care and Treatment. https://www.resus.org.uk/respect/",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "1382601000000107",
+      "display": "ReSPECT (Recommended Summary Plan for Emergency Care and Treatment) form"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "4692475953025",
+      "text": "Shared understanding",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2554609755642",
+          "text": "ReSPECT Summary",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "9646768545691",
+          "text": "Details of other relevant care planning documents and where to find them",
+          "type": "group",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "help",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "9646768545691_helpText",
+              "text": "Advance planning document",
+              "type": "group",
+              "repeats": true,
+              "item": [
+                {
+                  "linkId": "2835143121518",
+                  "text": "Description",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "3313974242770",
+          "text": "Legal welfare proxies",
+          "type": "string",
+          "item": [
+            {
+              "linkId": "9769677029653",
+              "text": "Legal welfare proxy in place",
+              "type": "group",
+              "repeats": true,
+              "item": [
+                {
+                  "linkId": "6121442206090",
+                  "text": "Type",
+                  "type": "string"
+                },
+                {
+                  "linkId": "8143298459836",
+                  "text": "Status",
+                  "type": "choice",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "code": "present",
+                        "display": "Present"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "code": "absent",
+                        "display": "Absent"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "8531567750091",
+      "text": "What matters to me",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "5090977699027",
+          "text": "What I most value",
+          "type": "string"
+        },
+        {
+          "linkId": "914986869542",
+          "text": "What I most fear / wish to avoid",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "1743377747905",
+      "text": "Clinical recommendations",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "7950333819072",
+          "text": "Recommendation",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "8477092546793",
+              "text": "Topic",
+              "type": "string"
+            },
+            {
+              "linkId": "7415469232414",
+              "text": "Clinical focus",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "code": "extending",
+                    "display": "Prioritise extending life"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "balance",
+                    "display": "Balance extending life with comfort and extended values"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "comfort",
+                    "display": "Prioritise comfort"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "5712690658400",
+              "text": "Clinical guidance on interventions",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "4900245503228",
+          "text": "CPR decision",
+          "type": "group",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+                  "valueDuration": {
+                    "value": 1,
+                    "unit": "years",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "a"
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                  "valueBoolean": true
+                }
+              ],
+              "linkId": "6194338778785",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "365870005",
+                  "display": "Finding of resuscitation status"
+                }
+              ],
+              "text": "CPR decision",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "143021000119109",
+                    "display": "Do not resuscitate status with supporting documentation (finding)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "304252001",
+                    "display": "For resuscitation (finding)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "304253006",
+                    "display": "Not for resuscitation (finding)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "450475007",
+                    "display": "For cardiopulmonary resuscitation (finding)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "450476008",
+                    "display": "Not for cardiopulmonary resuscitation (finding)"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "6788228603760",
+              "text": "Date of CPR decision",
+              "type": "dateTime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "8502417857260",
+      "text": "Capacity for involvement",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1627782478976",
+          "text": "Mental capacity",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "1946967195753",
+              "text": "Decision/plan",
+              "type": "text"
+            },
+            {
+              "linkId": "1554704924421",
+              "text": "Does the person have capacity to participate in making recommendations on this plan?",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Has capacity"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Does not have capacity"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "385690544151",
+              "text": "If no, in what way does this person lack capacity?",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4824250476684",
+      "text": "Involvement in making plan",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "971946188828",
+          "text": "ReSPECT involvement",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "5039098111353",
+              "text": "Involvement",
+              "type": "choice",
+              "repeats": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "code": "A",
+                    "display": "Person has mental capacity"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "B",
+                    "display": "Person does not have mental capacity"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "C1",
+                    "display": "Person less than 18 or 16 with sufficient"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "C2",
+                    "display": "Person less than 18 or 16 without sufficient"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "C3",
+                    "display": "Person less than 18 or 16 parental d"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "942556910304",
+              "text": "Option D",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "8812984985229",
+      "text": "Clinician signatures",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "6532868335511",
+          "text": "Clinical Signature",
+          "type": "group",
+          "repeats": true,
+          "item": [
+            {
+              "linkId": "3640427889643",
+              "text": "Service Name",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "code": "clinical-signature",
+                    "display": "ReSPECT - clinical signature"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "senior-responsible-clinical-signature",
+                    "display": "ReSPECT - senior responsible clinical signature"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "8488452075692",
+      "text": "Emergency contacts",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "7395725931613",
+          "text": "Care Team",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "2445307069824",
+      "text": "Review of Plan",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2406541432542",
+          "text": "Review of plan",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "6043503381422",
+              "text": "Service Name",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

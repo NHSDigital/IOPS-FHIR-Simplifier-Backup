@@ -1,0 +1,640 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "0d9fccea-9c98-4e61-b3e0-bc9b3a9db675",
+  "meta": {
+    "versionId": "16",
+    "lastUpdated": "2023-08-29T07:01:48.311Z"
+  },
+  "url": "https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding",
+  "title": "Vital signs finding",
+  "status": "draft",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "118227000",
+      "display": "Vital signs finding"
+    }
+  ],
+  "item": [
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "%",
+            "display": "percent"
+          }
+        }
+      ],
+      "linkId": "/927981000000106",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "927981000000106",
+          "display": "Baseline SpO2 (oxygen saturation at periphery)"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "59408-5"
+        }
+      ],
+      "prefix": "1",
+      "text": "Baseline SpO2 (oxygen saturation at periphery)",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "percent",
+            "system": "http://unitsofmeasure.org",
+            "code": "%"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "kg",
+            "display": "kilogram"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "[lb_av]",
+            "display": "pound"
+          }
+        }
+      ],
+      "linkId": "/27113001",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "27113001",
+          "display": "Body weight"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "29463-7"
+        }
+      ],
+      "prefix": "2",
+      "text": "Weight Measured",
+      "type": "quantity",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "kilogram",
+            "system": "http://unitsofmeasure.org",
+            "code": "kg"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "cm",
+            "display": "centimeter"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "[in_i]",
+            "display": "inch"
+          }
+        }
+      ],
+      "linkId": "/363811000",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "363811000",
+          "display": "Head circumference measure"
+        }
+      ],
+      "prefix": "3",
+      "text": "Head circumference",
+      "type": "quantity",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "centimeter",
+            "system": "http://unitsofmeasure.org",
+            "code": "cm"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "cm",
+            "display": "centimeter"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "[in_i]",
+            "display": "inch"
+          }
+        }
+      ],
+      "linkId": "/50373000",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "50373000",
+          "display": "Body height measure"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2"
+        }
+      ],
+      "prefix": "4",
+      "text": "Body height",
+      "type": "quantity",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "centimeter",
+            "system": "http://unitsofmeasure.org",
+            "code": "cm"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "Cel",
+            "display": "degree Celsius"
+          }
+        }
+      ],
+      "linkId": "/276885007",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "276885007",
+          "display": "Core body temperature"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "8310-5",
+          "display": "Temperature (deg F) OR"
+        }
+      ],
+      "prefix": "5",
+      "text": "Body temperature",
+      "type": "quantity",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "degree Celsius",
+            "system": "http://unitsofmeasure.org",
+            "code": "Cel"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]",
+            "display": "millimeter of mercury"
+          }
+        }
+      ],
+      "linkId": "/72313002",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "72313002",
+          "display": "Systolic arterial pressure"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "Systolic Blood Pressure (mm/Hg)"
+        }
+      ],
+      "prefix": "6",
+      "text": "Systolic blood pressure",
+      "type": "quantity",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "millimeter of mercury",
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]",
+            "display": "millimeter of mercury"
+          }
+        }
+      ],
+      "linkId": "/1091811000000102",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1091811000000102",
+          "display": "Diastolic arterial pressure"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "Diastolic Blood Pressure (mm/Hg)"
+        }
+      ],
+      "prefix": "7",
+      "text": "Diastolic blood pressure",
+      "type": "quantity",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "millimeter of mercury",
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{beats}/min",
+            "display": "heart beats per minute"
+          }
+        }
+      ],
+      "linkId": "/364075005",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "364075005",
+          "display": "Heart rate"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "8867-4"
+        }
+      ],
+      "prefix": "8",
+      "text": "Heart rate",
+      "type": "quantity",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "heart beats per minute",
+            "system": "http://unitsofmeasure.org",
+            "code": "{beats}/min"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{Breaths}/min",
+            "display": "Breaths / minute"
+          }
+        }
+      ],
+      "linkId": "/86290005",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "86290005",
+          "display": "Respiratory rate"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "9279-1",
+          "display": "Respiratory Rate (breaths/min)"
+        }
+      ],
+      "prefix": "9",
+      "text": "Resp rate",
+      "type": "quantity",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "Breaths / minute",
+            "system": "http://unitsofmeasure.org",
+            "code": "{Breaths}/min"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "kg/m2",
+            "display": "kilogram per square meter"
+          }
+        }
+      ],
+      "linkId": "/60621009",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "60621009",
+          "display": "Body mass index"
+        }
+      ],
+      "prefix": "10",
+      "text": "BMI",
+      "type": "quantity",
+      "required": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "kilogram per square meter",
+            "system": "http://unitsofmeasure.org",
+            "code": "kg/m2"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "7858131839876",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1104441000000107",
+          "display": "Alert Confusion Voice Pain Unresponsive scale score"
+        }
+      ],
+      "prefix": "11",
+      "text": "ACVPU (Alert Confusion Voice Pain Unresponsive) scale",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "248234008",
+            "display": "Mentally alert"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "300202002",
+            "display": "Responds to voice"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "450847001",
+            "display": "Responds to pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "422768004",
+            "display": "Unresponsive"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "130987000",
+            "display": "Acute confusion"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        }
+      ],
+      "linkId": "4461500479416",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "301282008",
+          "display": "Finding of respiration"
+        }
+      ],
+      "prefix": "12",
+      "text": "Inspired Oxygen",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "722742002",
+            "display": "Breathing room air"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "371825009",
+            "display": "Patient on oxygen"
+          }
+        }
+      ]
+    }
+  ]
+}

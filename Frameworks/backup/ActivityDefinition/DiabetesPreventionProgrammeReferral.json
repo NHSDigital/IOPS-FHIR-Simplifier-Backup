@@ -1,0 +1,59 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "15c59832-8154-4de6-8b1d-7954661c31ac",
+  "url": "https://fhir.england.nhs.uk/ActivityDefinition/NHSDiabetesPreventionProgrammeAssessmentReferral",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://https://www.england.nhs.uk/programmes",
+      "value": "NHSDiabetesPreventionProgrammeReferral"
+    }
+  ],
+  "version": "1.1.0",
+  "name": "NHSDiabetesPreventionProgrammeReferral",
+  "title": "NHS Diabetes Prevention Programme (NHS DPP) Referral",
+  "status": "active",
+  "experimental": true,
+  "date": "2017-03-03T14:06:00Z",
+  "publisher": "NHS England",
+  "description": "Whilst type 1 diabetes cannot be prevented, type 2 diabetes is largely preventable through lifestyle changes.  Around nine out of 10 people with diabetes have type 2 and there are currently two million people in England at high risk of developing type 2 diabetes, which is a leading cause of preventable sight loss in people of working age and is a major contributor to kidney failure, heart attack, and stroke. For people living with type 2 diabetes, the risk of dying in hospital with COVID-19 is also twice that of people who don’t have the condition.",
+  "usage": "Find out if you’re at risk of developing type 2 diabetes by doing any of the following: \n\n - Answering a few simple questions on the [Know Your Risk](riskscore.diabetes.org.uk) tool at Diabetetes UK \n - Taking up the offer of a free **NHS Health Check** to assess your risk of type 2 diabetes, cardiovascular disease and other conditions such as high blood pressure (available for those aged 40-74) \n - Asking your GP Practice to check if you are at risk. \n\n If you are at risk, you may be eligible for referral to the Healthier You NHS Diabetes Prevention Programme by your GP Practice.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "GB"
+        }
+      ]
+    }
+  ],
+  "copyright": "© Copyright NHS England.",
+  "approvalDate": "2017-03-01",
+  "lastReviewDate": "2017-03-01",
+  "effectivePeriod": {
+    "start": "2017-03-01"
+  },
+  "relatedArtifact": [
+    {
+      "type": "documentation",
+      "display": "NHS Diabetes Prevention Programme (NHS DPP)",
+      "url": "https://www.england.nhs.uk/diabetes/diabetes-prevention/"
+    }
+  ],
+  "kind": "ServiceRequest",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "306206005"
+      }
+    ],
+    "text": "Referral to service (procedure)"
+  },
+  "participant": [
+    {
+      "type": "practitioner"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "item": [
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "valueBoolean": true,
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "hours",
+            "system": "http://unitsofmeasure.org",
+            "code": "h"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mmol/L",
+            "display": "millimole per liter"
+          }
+        }
+      ],
+      "linkId": "4837143311069",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "997671000000106"
+        }
+      ],
+      "text": "Blood glucose level"
+    }
+  ],
+  "resourceType": "Questionnaire",
+  "url": "https://example.fhir.nhs.uk/Questionnaire/Glucose",
+  "title": "Glucose",
+  "status": "draft",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "997671000000106"
+    }
+  ]
+}

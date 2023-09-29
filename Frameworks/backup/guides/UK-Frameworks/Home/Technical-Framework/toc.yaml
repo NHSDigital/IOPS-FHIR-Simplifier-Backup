@@ -1,0 +1,20 @@
+- name: Index
+  filename: Index.page.md
+- name: Health Administration
+  filename: Health-Administration
+- name: Query API
+  filename: Query-API
+- name: Structured Data Capture
+  filename: Structured-Data-Capture
+- name: Workflow
+  filename: Workflow
+- name: Shared Clinical Documents
+  filename: Shared-Clinical-Documents
+- name: Care Plan Management
+  filename: Care-Plan-Management
+- name: Security and Privacy
+  filename: Security-and-Privacy
+- name: Other Frameworks or Patterns
+  filename: Other-Frameworks-or-Patterns
+- name: Terminology and Conformance
+  filename: Terminology-and-Conformance

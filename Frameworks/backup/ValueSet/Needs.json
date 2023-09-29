@@ -1,0 +1,31 @@
+{
+    "resourceType": "ValueSet",
+    "url": "https://fhir.nhs.uk/ValueSet/Needs",
+    "version": "0.0.1",
+    "name": "Needs",
+    "title": "Needs",
+    "status": "draft",
+    "date": "2023-08-14",
+    "publisher": "NHS England",
+    "description": "From PRSB definition in PCSP",
+    "copyright": "Copyright © 2021+ NHS England",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "filter": [
+                    {
+                        "property": "constraint",
+                        "op": "=",
+                        "value": "^1127581000000103 |Health issues simple reference set|"
+                    }
+                ]
+            }
+        ]
+    },
+    "id": "1a62d33e-3acb-4835-9fdc-84f37262d59d",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-23T13:39:10.542Z"
+    }
+}

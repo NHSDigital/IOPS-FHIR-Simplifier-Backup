@@ -1,0 +1,95 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MeasurementSettingExt",
+  "url": "http://example.fhir.nhs.uk/StructureDefinition/MeasurementSettingExt",
+  "version": "1.0.0",
+  "name": "MeasurementSettingExt",
+  "title": "Measurement Setting",
+  "status": "active",
+  "date": "2022-09-12T00:47:55+00:00",
+  "publisher": "HL7 International - Clinical Information Modeling Initiative",
+  "description": "The location or setting the subject was in when the measurement was obtained. For example, home, clinic, hospital. etc.",
+  "copyright": "Logica Health, all rights reserved Creative Commons License",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Measure"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Measurement Setting",
+        "definition": "The location or setting the subject was in when the measurement was obtained. For example, home, clinic, hospital. etc.",
+        "isModifier": false
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.fhir.nhs.uk/StructureDefinition/MeasurementSettingExt",
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "Extension.value[x]:valueCodeableConcept",
+        "path": "Extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://example.fhir.nhs.uk/ValueSet/MeasSettingVS"
+        }
+      }
+    ]
+  }
+}

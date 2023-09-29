@@ -1,0 +1,58 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "cc639401-9c79-4f32-b7e5-619949292252",
+  "url": "https://fhir.england.nhs.uk/ActivityDefinition/NHSDiabetesPreventionProgrammeAssessment",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://https://www.england.nhs.uk/programmes",
+      "value": "NHSDiabetesPreventionProgrammeAssessment"
+    }
+  ],
+  "version": "1.1.0",
+  "name": "NHSDiabetesPreventionProgrammeAssessment",
+  "title": "Diabetes UK Assessment",
+  "status": "active",
+  "experimental": true,
+  "date": "2017-03-03T14:06:00Z",
+  "publisher": "NHS England",
+  "description": "Assessing the risk of diabetes",
+ "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "GB"
+        }
+      ]
+    }
+  ],
+  "copyright": "© Copyright NHS England.",
+  "approvalDate": "2017-03-01",
+  "lastReviewDate": "2017-03-01",
+  "effectivePeriod": {
+    "start": "2017-03-01"
+  },
+  "relatedArtifact": [
+    {
+      "type": "documentation",
+      "display": "NHS Diabetes Prevention Programme (NHS DPP)",
+      "url": "https://www.england.nhs.uk/diabetes/diabetes-prevention/"
+    }
+  ],
+  "kind": "ServiceRequest",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "225338004"
+      }
+    ],
+    "text": "Risk assessment"
+  },
+  "participant": [
+    {
+      "type": "patient"
+    }
+  ]
+}

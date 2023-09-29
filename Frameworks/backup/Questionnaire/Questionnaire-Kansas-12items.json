@@ -1,0 +1,1560 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "56969434-1980-4262-b6a7-ed1c8aca5ec2",
+    "url": "https://example.fhir.nhs.uk/Questionnaire/86923-0",
+    "identifier": [
+        {
+            "system": "http://loinc.org",
+            "value": "86923-0"
+        }
+    ],
+    "subjectType": [
+        "Patient"
+    ],
+    "title": "Kansas City Cardiomyopathy Questionnaire - 12 item [KCCQ-12]",
+    "status": "draft",
+    "code": [
+        {
+            "system": "http://loinc.org",
+            "code": "86923-0",
+            "display": "Kansas City Cardiomyopathy Questionnaire - 12 item [KCCQ-12]"
+        }
+    ],
+    "item": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86483-5",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86483-5",
+                    "display": "Please indicate how much you are limited by heart failure (shortness of breath or fatigue) in your ability to do the following activities over the past 2 weeks. Showering or bathing"
+                }
+            ],
+            "text": "Please indicate how much you are limited by heart failure (shortness of breath or fatigue) in your ability to do the following activities over the past 2 weeks. Showering or bathing",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 1
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27701-4",
+                        "display": "Extremely limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 2
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27702-2",
+                        "display": "Quite a bit limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 3
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA6460-5",
+                        "display": "Moderately limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 4
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA9605-2",
+                        "display": "Slightly limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 5
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27707-1",
+                        "display": "Not at all limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "6"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 6
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27708-9",
+                        "display": "Limited for other reasons or did not do the activity"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86474-4",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86474-4",
+                    "display": "Please indicate how much you are limited by heart failure (shortness of breath or fatigue) in your ability to do the following activities over the past 2 weeks. Walking 1 block on level ground"
+                }
+            ],
+            "text": "Please indicate how much you are limited by heart failure (shortness of breath or fatigue) in your ability to do the following activities over the past 2 weeks. Walking 1 block on level ground",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 1
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27701-4",
+                        "display": "Extremely limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 2
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27702-2",
+                        "display": "Quite a bit limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 3
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA6460-5",
+                        "display": "Moderately limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 4
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA9605-2",
+                        "display": "Slightly limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 5
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27707-1",
+                        "display": "Not at all limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "6"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 6
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27708-9",
+                        "display": "Limited for other reasons or did not do the activity"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86477-7",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86477-7",
+                    "display": "Please indicate how much you are limited by heart failure (shortness of breath or fatigue) in your ability to do the following activities over the past 2 weeks. Hurrying or jogging (as if to catch a bus)"
+                }
+            ],
+            "text": "Please indicate how much you are limited by heart failure (shortness of breath or fatigue) in your ability to do the following activities over the past 2 weeks. Hurrying or jogging (as if to catch a bus)",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 1
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27701-4",
+                        "display": "Extremely limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 2
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27702-2",
+                        "display": "Quite a bit limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 3
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA6460-5",
+                        "display": "Moderately limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 4
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA9605-2",
+                        "display": "Slightly limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 5
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27707-1",
+                        "display": "Not at all limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "6"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 6
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27708-9",
+                        "display": "Limited for other reasons or did not do the activity"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86479-3",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86479-3",
+                    "display": "Over the past 2 weeks, how many times did you have swelling in your feet, ankles or legs when you woke up in the morning?"
+                }
+            ],
+            "text": "Over the past 2 weeks, how many times did you have swelling in your feet, ankles or legs when you woke up in the morning?",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 1
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27719-6",
+                        "display": "Every morning"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 2
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27720-4",
+                        "display": "3 or more times a week, but not every day"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 3
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA14506-2",
+                        "display": "1-2 times a week"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 4
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27722-0",
+                        "display": "Less than once a week"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 5
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27723-8",
+                        "display": "Never over the past 2 weeks"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86481-9",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86481-9",
+                    "display": "Over the past 2 weeks, on average, how many times has fatigue limited your ability to do what you want?"
+                }
+            ],
+            "text": "Over the past 2 weeks, on average, how many times has fatigue limited your ability to do what you want?",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 1
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA6154-4",
+                        "display": "All of the time"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 2
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27729-5",
+                        "display": "Several times per day"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 3
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27730-3",
+                        "display": "At least once a day"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 4
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27770-9",
+                        "display": "3 or more times per week but not every day"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 5
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA13834-9",
+                        "display": "1-2 times per week"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "6"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 6
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27722-0",
+                        "display": "Less than once a week"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "7"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 7
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27723-8",
+                        "display": "Never over the past 2 weeks"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86472-8",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86472-8",
+                    "display": "Over the past 2 weeks, on average, how many times has shortness of breath limited your ability to do what you wanted?"
+                }
+            ],
+            "text": "Over the past 2 weeks, on average, how many times has shortness of breath limited your ability to do what you wanted?",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 1
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA6154-4",
+                        "display": "All of the time"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 2
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27729-5",
+                        "display": "Several times per day"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 3
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27730-3",
+                        "display": "At least once a day"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 4
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27770-9",
+                        "display": "3 or more times per week but not every day"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 5
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA13834-9",
+                        "display": "1-2 times per week"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "6"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 6
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27722-0",
+                        "display": "Less than once a week"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "7"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 7
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27723-8",
+                        "display": "Never over the past 2 weeks"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86485-0",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86485-0",
+                    "display": "Over the past 2 weeks, on average, how many times have you been forced to sleep sitting up in a chair or with at least 3 pillows to prop you up because of shortness of breath?"
+                }
+            ],
+            "text": "Over the past 2 weeks, on average, how many times have you been forced to sleep sitting up in a chair or with at least 3 pillows to prop you up because of shortness of breath?",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA14806-6",
+                        "display": "Every night"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27720-4",
+                        "display": "3 or more times a week, but not every day"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA14506-2",
+                        "display": "1-2 times a week"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27722-0",
+                        "display": "Less than once a week"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27723-8",
+                        "display": "Never over the past 2 weeks"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86488-4",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86488-4",
+                    "display": "Over the past 2 weeks, how much has your heart failure limited your enjoyment of life?"
+                }
+            ],
+            "text": "Over the past 2 weeks, how much has your heart failure limited your enjoyment of life?",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27745-1",
+                        "display": "It has extremely limited my enjoyment of life"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27746-9",
+                        "display": "It has limited my enjoyment of life quite a bit"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27747-7",
+                        "display": "It has moderately limited my enjoyment of life"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27748-5",
+                        "display": "It has slightly limited my enjoyment of life"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27749-3",
+                        "display": "It has not limited my enjoyment of life at all"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86489-2",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86489-2",
+                    "display": "If you had to spend the rest of your life with your heart failure the way it is right now, how would you feel about this?"
+                }
+            ],
+            "text": "If you had to spend the rest of your life with your heart failure the way it is right now, how would you feel about this?",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27750-1",
+                        "display": "Not at all satisfied"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA24976-5",
+                        "display": "Mostly dissatisfied"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27752-7",
+                        "display": "Somewhat satisfied"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA24974-0",
+                        "display": "Mostly satisfied"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27754-3",
+                        "display": "Completely satisfied"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86491-8",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86491-8",
+                    "display": "Please indicate how your heart failure may have limited your participation in the following activities over the past 2 weeks. Hobbies, recreational activities"
+                }
+            ],
+            "text": "Please indicate how your heart failure may have limited your participation in the following activities over the past 2 weeks. Hobbies, recreational activities",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 1
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27761-8",
+                        "display": "Severely limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 2
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27760-0",
+                        "display": "Limited quite a bit"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 3
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA6460-5",
+                        "display": "Moderately limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 4
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA9605-2",
+                        "display": "Slightly limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 5
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27764-2",
+                        "display": "Did not limit at all"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "6"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 6
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27765-9",
+                        "display": "Does not apply or did not do for other reasons"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86492-6",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86492-6",
+                    "display": "Please indicate how your heart failure may have limited your participation in the following activities over the past 2 weeks. Working or doing household chores"
+                }
+            ],
+            "text": "Please indicate how your heart failure may have limited your participation in the following activities over the past 2 weeks. Working or doing household chores",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 1
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27761-8",
+                        "display": "Severely limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 2
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27760-0",
+                        "display": "Limited quite a bit"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 3
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA6460-5",
+                        "display": "Moderately limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 4
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA9605-2",
+                        "display": "Slightly limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 5
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27764-2",
+                        "display": "Did not limit at all"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "6"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 6
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27765-9",
+                        "display": "Does not apply or did not do for other reasons"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ],
+                        "text": "Drop down"
+                    }
+                }
+            ],
+            "linkId": "/86493-4",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86493-4",
+                    "display": "Please indicate how your heart failure may have limited your participation in the following activities over the past 2 weeks. Visiting family or friends out of your home"
+                }
+            ],
+            "text": "Please indicate how your heart failure may have limited your participation in the following activities over the past 2 weeks. Visiting family or friends out of your home",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "1"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 1
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27761-8",
+                        "display": "Severely limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "2"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 2
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27760-0",
+                        "display": "Limited quite a bit"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "3"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 3
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA6460-5",
+                        "display": "Moderately limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "4"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 4
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA9605-2",
+                        "display": "Slightly limited"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "5"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 5
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27764-2",
+                        "display": "Did not limit at all"
+                    }
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                            "valueString": "6"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "valueDecimal": 6
+                        }
+                    ],
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA27765-9",
+                        "display": "Does not apply or did not do for other reasons"
+                    }
+                }
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{score}",
+                        "display": "{score}"
+                    }
+                }
+            ],
+            "linkId": "/86924-8",
+            "code": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "86924-8",
+                    "display": "Overall summary score"
+                }
+            ],
+            "text": "Overall summary score",
+            "type": "decimal",
+            "required": false,
+            "item": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                        "code": "help",
+                                        "display": "Help-Button"
+                                    }
+                                ],
+                                "text": "Help-Button"
+                            }
+                        }
+                    ],
+                    "linkId": "/86924-8-help",
+                    "text": "KCCQ-12 overall summary score is the sum of responses from all 12 items, with lower scores indicating more significant disease impact. Changes in the summary score are predictive of changes in health status for patients with heart failure.",
+                    "type": "display"
+                }
+            ]
+        }
+    ]
+}

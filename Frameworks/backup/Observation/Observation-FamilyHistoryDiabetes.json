@@ -1,0 +1,46 @@
+{
+    "resourceType": "Observation",
+    "id": "38ee22c4-004f-4561-a8b4-d7a01d8f4fa8",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2023-05-26T05:14:02.267Z"
+    },
+    "identifier": [
+        {
+          "system": "https://tools.ietf.org/html/rfc4122",
+          "value": "38ee22c4-004f-4561-a8b4-d7a01d8f4fa8"
+        }
+      ],
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "160303001",
+          "display": "Family history of diabetes mellitus"
+        }
+      ],
+      "text": "Do you have a parent, brother,  sister and/or own child with diabetes"
+    },
+    "subject": {
+      "reference": "Patient/b573262f-a1d7-4083-891a-7edd71bc459e",
+      "display": "Mr William Smith"
+    },
+    "effectiveDateTime": "2023-05-26T05:13:58.810Z",
+    "issued": "2023-05-26T05:13:58.810Z",
+    "valueCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "430679000",
+          "display": "Family history of diabetes mellitus type 2"
+        }
+      ],
+      "text": "Family history of diabetes mellitus type 2"
+    },
+    "derivedFrom": [
+      {
+        "reference": "QuestionnaireResponse/QR-1685078038814-2-54cf930ef7ce9"
+      }
+    ]
+  }

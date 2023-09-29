@@ -1,0 +1,264 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "afc9a562-b1c2-410a-9a84-127aa23ca641",
+  "url": "https://fhir.england.nhs.uk/PlanDefinition/WoundCareManagement",
+  "identifier": [
+    {
+      "system": "https://https://www.england.nhs.uk/programmes",
+      "value": "WoundCareManagement"
+    }
+  ],
+  "name": "WoundCareManagement",
+  "title": "Wound Care Management",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "clinical-protocol"
+      }
+    ]
+  },
+  "status": "draft",
+  "description": "WoundCareManagement",
+  "author": [
+    {
+      "name": "NHS England"
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "documentation",
+      "display": "Hampshire and Isle of Wight Wound Care Management",
+      "document": {
+        "url": "https://simplifier.net/guide/UKCore-Hackathon/Home/Use-Cases/Referrals-and-Workflow--IoW"
+      }
+    },
+    {
+      "type": "documentation",
+      "display": "PRSB Wound Care Information Standard",
+      "document": {
+        "url": "https://theprsb.org/woundcare/"
+      }
+    },
+    {
+      "type": "documentation",
+      "display": "National Wound Care Strategy Programme",
+      "document": {
+        "url": "https://www.nationalwoundcarestrategy.net/"
+      }
+    },
+    {
+      "type": "documentation",
+      "display": "NHS Trust Procedures - Oxford Health",
+      "document": {
+        "url": "https://www.oxfordhealth.nhs.uk/wp-content/uploads/2015/08/Wound-management-standard-V7-FINAL-Feb-2019.docx"
+      }
+    },
+    {
+      "type": "documentation",
+      "display": "NHS Trust Procedures - Black Country Partnership (has example of assessment form)",
+      "document": {
+        "url": "https://www.bcpft.nhs.uk/documents/policies/w/1444-wound-management-guidelines/file"
+      }
+    }
+  ],
+  "action": [
+    {
+      "id": "wound-care-assessment",
+      "title": "Wound Care Assessment",
+      "description": "This looks likely to be questionnaire which includes photograph of wound",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "311791003",
+              "display": "Information gathering"
+            }
+          ]
+        }
+      ],
+      "input": [
+        {
+          "type": "Task"
+        },
+        {
+          "type": "ServiceRequest"
+        }
+      ],
+      "output": [
+        {
+          "type": "QuestionnaireResponse"
+        },
+        {
+          "type": "DocumentReference"
+        }
+      ],
+      "action": [
+        {
+          "id": "wound-care-care-plan",
+          "title": "Wound Care Plan",
+          "description": "Create the plan for treatment, this probably includes periodic review and prescription request",
+          "code": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "386053000",
+                  "display": "Evaluation procedure"
+                }
+              ]
+            }
+          ],
+          "input": [
+            {
+              "type": "QuestionnaireResponse"
+            }
+          ],
+          "output": [
+            {
+              "type": "CarePlan"
+            }
+          ],
+          "action": [
+            {
+              "id": "wound-care-care-antibiotics",
+              "title": "Wound Care Pain Refief",
+              "description": "prescription for antibiotics",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "281789004",
+                      "display": "Antibiotic therapy"
+                    }
+                  ]
+                }
+              ],
+              "input": [
+                {
+                  "type": "QuestionnaireResponse"
+                }
+              ],
+              "output": [
+                {
+                  "type": "MedicationRequest"
+                }
+              ],
+              "action": [
+                {
+                  "id": "wound-care-care-prescription",
+                  "title": "Wound Care Pain Refief Prescription",
+                  "description": "Checks planned prescription, amends as necessary and authorises prescription",
+                  "code": [
+                    {
+                      "coding": [
+                        {
+                          "system": "http://snomed.info/sct",
+                          "code": "299441000000105",
+                          "display": "Checking prescription"
+                        }
+                      ]
+                    }
+                  ],
+                  "input": [
+                    {
+                      "type": "MedicationRequest"
+                    }
+                  ],
+                  "output": [
+                    {
+                      "type": "MedicationRequest"
+                    }
+                  ],
+                  "action": [
+                    {
+                      "id": "wound-care-care-dispense-medication",
+                      "title": "Wound Care Pain Refief Dispense",
+                      "description": "Medication request is issued (probably using EPS and we may need to jump out to this PlanDefinition). The response to this request is a MedicationDispense which is not currently shareable from EPS.",
+                      "code": [
+                        {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct",
+                              "code": "163541000000107",
+                              "display": "Dispensed Medication"
+                            }
+                          ]
+                        }
+                      ],
+                      "input": [
+                        {
+                          "type": "MedicationRequest"
+                        }
+                      ],
+                      "output": [
+                        {
+                          "type": "MedicationDispense"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "wound-care-care-interventions",
+              "title": "Care and Monitor Wound",
+              "description": "As per local procedures. Will generate a variety of outputs, some maybe of interest to other care providers",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "442460002",
+                      "display": "Procedure on wound"
+                    }
+                  ]
+                }
+              ],
+              "input": [
+                {
+                  "type": "Task"
+                }
+              ],
+              "output": [
+                {
+                  "type": "Observation"
+                },
+                {
+                  "type": "QuestionnaireResponse"
+                }
+              ],
+              "action": [
+                {
+                  "id": "wound-care-care-discharge",
+                  "title": "Wound Care Discharge",
+                  "description": "As per local procedures. Will generate a variety of outputs, some maybe of interest to other care providers",
+                  "code": [
+                    {
+                      "coding": [
+                        {
+                          "system": "http://snomed.info/sct",
+                          "code": "183665006",
+                          "display": "Discharged from hospital"
+                        }
+                      ]
+                    }
+                  ],
+                  "output": [
+                    {
+                      "type": "DiagnosticReport"
+                    }
+                  ]
+                }
+              ]
+            }
+           
+          ]
+        }
+      ]
+    }
+  ]
+}

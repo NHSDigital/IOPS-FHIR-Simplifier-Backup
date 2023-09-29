@@ -1,0 +1,26 @@
+{
+    "resourceType": "ValueSet",
+    "id": "b057d5e9-94f8-4ea9-a0a9-5a5422e7a3c9",
+    "url": "https://fhir.nhs.uk/ValueSet/LastingPowerAttorney",
+    "version": "1.1.0",
+    "name": "DD4CLastingPowerAttorneyCode",
+    "status": "active",
+    "date": "2019-06-20T00:00:00+00:00",
+    "publisher": "NHS England",
+    "description": "Any code from the SNOMED CT UK 'Personal welfare lasting power of attorney findings' subset with subset original id 47771000000138; the corresponding SNOMED CT UK Refset fully specified name is 'Personal welfare lasting power of attorney findings simple reference set (foundation metadata concept)' with Refset Id 999001951000000107",
+    "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+    "compose": {
+      "include": [
+        {
+          "system": "http://snomed.info/sct",
+          "filter": [
+            {
+              "property": "constraint",
+              "op": "=",
+              "value": "descendantOf 365567004"
+            }
+          ]
+        }
+      ]
+    }
+  }

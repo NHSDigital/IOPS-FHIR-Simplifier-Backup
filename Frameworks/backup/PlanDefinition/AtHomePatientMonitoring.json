@@ -1,0 +1,128 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "42c67e74-a6e8-4a44-9beb-9d512cc9246c",
+  "url": "https://fhir.england.nhs.uk/PlanDefinition/AtHomePatientMonitoring",
+  "identifier": [
+    {
+      "system": "https://https://www.england.nhs.uk/programmes",
+      "value": "AtHomePatientMonitoring"
+    }
+  ],
+  "name": "AtHomePatientMonitoring",
+  "title": "At Home Patient Monitoring",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "clinical-protocol"
+      }
+    ]
+  },
+  "status": "draft",
+  "description": "This is an example protocol and is intended to document an overview of the process based on use cases from [NHS England Digital Playbooks](https://transform.england.nhs.uk/key-tools-and-info/digital-playbooks/). This is also known as `Virtual Wards`",
+  "author": [
+    {
+      "name": "NHS England"
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "derived-from",
+      "display": "NHS England Playbook",
+      "document": {
+        "url": "https://transform.england.nhs.uk/key-tools-and-info/digital-playbooks/"
+      }
+    }
+  ],
+  "action": [
+    {
+      "id": "remote-monitoring-referral",
+      "title": "Remote Monitoring Referral",
+      "description": "The input or supportInformation for the referral is likely to be defined by each individual programme/specialty. The most common method for these referrals appears to PDF's exchanged via NHS email. \n\n The definition of the activities, plans, forms, etc used during pathways are likely to be defined by each NHS National and/or Provider service. This `PlanDefinition` is a basic overview of these pathways which indicates possible interactions and types of information is being shared or exchanged. \n\n Many of the referrals are pre-defined forms or word templates. \n\n For external referrals it is recommended to make use of both `FHIR Structured Data Capture` and `FHIR Workflow` to provide basic automation support for this process. The will also include the use of `documents` if `FHIR Structured Data Capture` is not used. \n\n For internal referrals, the use of existing HL7 v2 ADT is anticipated. Suppliers being asked to support these interactions should consider following [HL7 v2 ITK (using pipe and hat format only)](https://github.com/NHSDigital/NHSEngland-FHIR-ImplementationGuide/blob/master/documents/HSCIC%20ITK%20HL7%20V2%20Message%20Specifications.pdf), Acute Trusts should be able to transform to this via their Trust Integration Engine.\n\n The report which is returned to the refer at the end of this pathway ideally would be a `FHIR DiagnosticReport` with an included PDF Attachment, please see [Supplementary Remote Monitoring Data from a Virtual Ward Stay - Draft Implementation Guidance](https://github.com/nhsengland/virtual-wards-draft-standards/blob/main/README.md) for more details.",
+      "requiredBehavior": "must-unless-documented",
+      "cardinalityBehavior": "single",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "977531000000104",
+              "display": "Referral to telehealth service"
+            }
+          ]
+        }
+      ],
+      "input": [
+        {
+          "type": "QuestionnaireResponse"
+        },
+        {
+          "type": "DocumentReference"
+        }
+      ],
+      "output": [
+        {
+          "type": "DiagnosticReport"
+        }
+      ],
+      "action": [
+        {
+          "id": "remote-monitoring-device",
+          "title": "Remote Monitoring Device",
+          "description": "Ideally data caputured by devices should be recorded in applications, PHR or EHR's as Observations. Ideally they should be shareable with other practitioners or providers via the `Query API` Framework as `FHIR Observations`. How they devices are integrated using FHIR is discussed here [Personal Health Device Implementation Guide](https://build.fhir.org/ig/HL7/phd/index.html)",
+          "output": [
+            {
+              "type": "Observation"
+            }
+          ]
+        },
+        {
+          "id": "application-data-capture",
+          "title": "Application Data Capture",
+          "description": "Applications will often provide a method for the patient to enter observations. These observations should be recorded in applications, PHR or EHR's as Observations. Ideally they should be shareable with other practitioners or providers via the `Query API` Framework as `FHIR Observations`. \n\n Suppliers and NHS providers should consider using `FHIR Structured Data Capture` as a method of defining the content of these screens. The `Vital Signs Questionnaire` is an example of this which defines SNOMED CT codes and units to be used for the observations. It is anticipated the number of pre-defined standard `Questionnaires` will increase.",
+          "input": [
+            {
+              "type": "Questionnaire"
+            }
+          ],
+          "output": [
+            {
+              "type": "Observation"
+            },
+            {
+              "type": "QuestionnaireResponse"
+            }
+          ]
+        },
+        {
+          "id": "patient-communication",
+          "title": "Patient Communication",
+          "description": "Suppliers should record a record of communication to and from a patient which is sent using SMS, email, application messages, etc. This communication should be shared via the `Query API` framework using the `FHIR Communication` resource.",
+          "output": [
+            {
+              "type": "Communication"
+            }
+          ]
+        },
+        {
+          "id": "care-coordination",
+          "title": "Care Coordination",
+          "description": "Patient care in a home setting will often involve many providers, practitioners and other carers. This will often involve coordination of actions; it is recommended the `FHIR Workflow` framework, in particular the exchanging of `Task` between care participants should be adopted. \n\nIt is believed this is currently done via a number of systems such as telephone calls, SMS, emails, etc. If this is the case the guidance on Patient Communication should be followed.",
+          "input": [
+            {
+              "type": "ActivityDefinition"
+            },
+            {
+              "type": "PlanDefinition"
+            }
+          ],
+          "output": [
+            {
+              "type": "Task"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

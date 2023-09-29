@@ -1,0 +1,31 @@
+{
+    "resourceType": "ValueSet",
+    "url": "https://fhir.nhs.uk/ValueSet/CarbohydateIntake",
+    "version": "0.0.1",
+    "name": "CarbohydateIntake",
+    "title": "Carbohydate Intake",
+    "status": "draft",
+    "date": "2023-08-14",
+    "publisher": "NHS England",
+    "description": "From PRSB definition in diabetes",
+    "copyright": "Copyright © 2021+ NHS England",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "filter": [
+                    {
+                        "property": "constraint",
+                        "op": "=",
+                        "value": "descendantOf 42239005"
+                    }
+                ]
+            }
+        ]
+    },
+    "id": "5bef7e83-a348-4674-bf6d-bec7297d9ae7",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-08-14T15:03:05.926Z"
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "resourceType": "CapabilityStatement",
+    "id": "frameworks",
+    "url": "https://fhir.nhs.uk/CapabilityStatement/frameworks",
+    "version": "1.0.0",
+    "name": "NHSEnglandFrameworks",
+    "status": "active",
+    "date": "2021-04-28T00:00:00+00:00",
+    "publisher": "digital.nhs.uk",
+    "description": "Conformance requirements for NHS Digital Implementation Guide",
+    "kind": "requirements",
+    "fhirVersion": "4.0.1",
+    "format": [
+        "application/fhir+json",
+        "application/fhir+xml"
+    ],
+    "rest": [
+        {
+            "mode": "server",
+            "security": {
+                "service": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                                "code": "OAuth",
+                                "display": "OAuth2 Token"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "resource": [
+                {
+                    "type": "Task",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/Framework-Task"
+                }
+            ]
+        }
+    ]
+}

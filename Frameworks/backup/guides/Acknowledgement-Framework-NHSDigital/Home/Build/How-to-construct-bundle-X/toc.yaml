@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: Bundle X contents
+  filename: Bundle-X-contents.page.md
+- name: Bundle X mapping
+  filename: Bundle-X-mapping.page.md
+- name: Bundle X referencing
+  filename: Bundle-X-referencing.page.md

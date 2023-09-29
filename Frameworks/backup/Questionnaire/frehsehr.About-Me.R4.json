@@ -1,0 +1,114 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "17b5cf3a-ddc5-4f93-bde8-20cc72e2990b",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2023-06-15T11:51:33.020Z"
+  },
+  "url": "https://example.fhir.openehr.org/Template/openEHR-EHR-COMPOSITION.anticipatory_care_information.v0",
+  "identifier": [
+    {
+      "system": "http://snomed.info/sct",
+      "value": "1515851000000101"
+    }
+  ],
+  "title": "openEHR About Me",
+  "status": "draft",
+  "description": "A framework to communicate information that has been captured and curated in anticipation of future need for care.",
+  "purpose": "Short spike into openEHR and FHIR Interoperability",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "1515851000000101",
+      "display": "About me (record artifact)"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "what_is_most_important_to_me",
+      "text": "What is most important to me",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "people_who_are_important_to_me",
+      "text": "People who are important to me",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "how_i_communicate_and_how_to_communicate_with_me",
+      "text": "How I communicate and how to communicate with me",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "please_do_and_please_dont",
+      "text": "Please do and please dont",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "my_wellness",
+      "text": "My wellness",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "how_and_when_to_support_me",
+      "text": "How and when to support me",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "also_worth_knowing_about_me",
+      "text": "Also worth knowing about me",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "8075941263525",
+      "text": "About me attachment",
+      "type": "text",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "resource_name",
+          "text": "Resource name",
+          "type": "text",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "descriptio",
+          "text": "Description",
+          "type": "text",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "content",
+          "text": "Content",
+          "type": "text",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "created",
+          "text": "Created",
+          "type": "dateTime",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ]
+}

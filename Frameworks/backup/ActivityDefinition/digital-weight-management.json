@@ -1,0 +1,65 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "61be22a1-8967-46e3-813b-ec2eb2129317",
+  "url": "https://fhir.england.nhs.uk/ActivityDefinition/DigitalWeightManagement",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://fhir.england.nhs.uk/programmes",
+      "value": "DigitalWeightManagement"
+    }
+  ],
+  "version": "1.1.0",
+  "name": "DigitalWeightManagement",
+  "title": "Digital Weight Management",
+  "status": "active",
+  "intent": "order",
+  "experimental": true,
+  "date": "2017-03-03T14:06:00Z",
+  "publisher": "NHS England",
+  "description": "The NHS England - Digital Weight Management Programme could help you if you are living with obesity and also have diabetes, high blood pressure, or both. If this is you, you could benefit from this 12-week programme. It’s free and easily available via a smartphone, tablet, or computer.",
+  "usage": "Referrals to the programme are only for people that meet the following criteria: \n\n \n - are over the age of 18 \n - have a body mass index (BMI) of 30 or more (adjusted to ≥27.5 for people from black, Asian and ethnic minority backgrounds) \n - have a diagnosis of diabetes (type 1 or type 2), hypertension or both. \n\nWho **cannot** be referred? \n\nAny person that meets any of the following exclusion criteria should not be referred to the programme: \n\n - recorded as having moderate or severe frailty \n - is pregnant \n - has an active eating disorder \n - has had bariatric surgery in the last two years \n - people for whom a weight management programme is considered to pose greater risk of harm than benefit. \n\nFor people aged over 80 years old, the referrer will need to confirm on the referral form that a weight management programme is considered likely to pose greater benefit than harm.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "GB"
+        }
+      ]
+    }
+  ],
+  "copyright": "© Copyright 2016 NHS England.",
+  "approvalDate": "2017-03-01",
+  "lastReviewDate": "2017-03-01",
+  "effectivePeriod": {
+    "start": "2017-03-01"
+  },
+  "relatedArtifact": [
+    {
+      "type": "documentation",
+      "display": "Digital Weight Management",
+      "url": "https://www.england.nhs.uk/digital-weight-management/"
+    }
+  ],
+  "kind": "ServiceRequest",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "306206005"
+      }
+    ],
+    "text": "Referral to service (procedure)"
+  },
+  "participant": [
+    {
+      "type": "practitioner"
+    }
+  ],
+  "observationResultRequirement" :[
+    {
+      "display": "A FHIR **DiagnositicReport** with PDF attachment. **Observation**'s are optional"
+    }
+  ]
+}

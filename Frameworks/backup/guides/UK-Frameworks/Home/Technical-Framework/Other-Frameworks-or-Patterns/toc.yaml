@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Clinical
+  filename: Clinical.page.md
+- name: Medications
+  filename: Medications.page.md
+- name: Diagnostics and Imaging
+  filename: Diagnostics-and-Imaging.page.md
+- name: Research and Analytics
+  filename: Research-and-Analytics.page.md
+- name: Devices and Wearables
+  filename: Devices-and-Wearables.page.md

@@ -1,0 +1,212 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "c48c7b81-29d1-418b-9fe7-e4d52780426f",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2023-08-30T13:50:08.265Z"
+  },
+  "url": "https://example.fhir.nhs.uk/Questionnaire/SerumLipidsLevel",
+  "identifier": [
+    {
+      "system": "http://snomed.info/sct",
+      "value": "1005661000000103"
+    }
+  ],
+  "title": "Serum lipids level",
+  "status": "draft",
+  "description": "Based on example from GP Connect",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "1005661000000103",
+      "display": "Serum lipids level"
+    },
+    {
+      "system": "http://read.info/readv2",
+      "code": "44O..00",
+      "display": "Serum lipids"
+    },
+    {
+      "system": "http://loinc.org",
+      "code": "57698-3",
+      "display": "Lipid Panel with LDL"
+    }
+  ],
+  "item": [
+    {
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 3,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mmol/L",
+            "display": "millimole per liter"
+          }
+        }
+      ],
+      "linkId": "7407364507933",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1005671000000105",
+          "display": "Serum cholesterol level"
+        },
+        {
+          "system": "http://read.info/readv2",
+          "code": "44P..00",
+          "display": "Serum cholesterol"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "35200-5",
+          "display": "Cholesterol [Moles/​volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Serum cholesterol level"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mmol/L",
+            "display": "millimole per liter"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 3,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "3505154966754",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1005691000000109",
+          "display": "Serum triglycerides level"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "35217-9",
+          "display": "Triglyceride [Moles/​volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Serum triglycerides (code mapping not confirmed)",
+      "type": "quantity"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mmol/L",
+            "display": "millimole per liter"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 3,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "5284006409737",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1005681000000107",
+          "display": "Serum high density lipoprotein cholesterol level"
+        },
+        {
+          "system": "http://read.info/readv2",
+          "code": "44P5.00",
+          "display": "Serum HDL cholesterol level"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "HDL Cholesterol"
+        }
+      ],
+      "text": "Serum high density lipoprotein cholesterol level",
+      "type": "quantity"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 3,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mmol/L",
+            "display": "millimole per liter"
+          }
+        }
+      ],
+      "linkId": "2595447933481",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1022191000000100",
+          "display": "Serum low density lipoprotein cholesterol level"
+        },
+        {
+          "system": "http://read.info/readv2",
+          "code": "44P6.00",
+          "display": "Serum LDL cholesterol level"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "LDL Cholesterol (Assay)"
+        }
+      ],
+      "text": "Serum low density lipoprotein cholesterol level",
+      "type": "quantity"
+    }
+  ]
+}

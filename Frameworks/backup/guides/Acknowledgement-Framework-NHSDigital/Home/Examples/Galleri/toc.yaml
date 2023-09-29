@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: Galleri Bio-sampling Test Result
+  filename: Galleri-Bio-sampling-Test-Result.page.md
+- name: Positive Acknowledgement
+  filename: Positive-Acknowledgement.page.md
+- name: Negative Acknowledgement
+  filename: Negative-Acknowledgement.page.md

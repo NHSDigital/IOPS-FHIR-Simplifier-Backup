@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Application Query API
+  filename: Application-Query-API.page.md
+- name: Federated Query API
+  filename: Federated-Query-API.page.md
+- name: Administration
+  filename: Administration.page.md
+- name: Clinical
+  filename: Clinical.page.md
+- name: Diagnostics
+  filename: Diagnostics.page.md
+- name: Medications
+  filename: Medications.page.md

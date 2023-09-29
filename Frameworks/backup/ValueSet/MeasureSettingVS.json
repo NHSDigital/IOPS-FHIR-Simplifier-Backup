@@ -1,0 +1,41 @@
+{
+    "resourceType": "ValueSet",
+    "id": "MeasSettingVS",
+    "url": "http://example.fhir.nhs.uk/ValueSet/MeasSettingVS",
+    "version": "1.0.0",
+    "name": "MeasurementSettingVS",
+    "title": "Measurement Setting value set",
+    "status": "active",
+    "date": "2022-09-12T00:47:55+00:00",
+    "publisher": "HL7 International - Clinical Information Modeling Initiative",
+    "contact": [
+    ],
+    "immutable": false,
+    "description": "SELECT SNOMED CT code system values that contains terms that indicate the surroundings the individual was in during the measurement (i.e. home, clinic, hospital, etc.).",
+    "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "285201006",
+                        "display": "Hospital environment (environment)"
+                    },
+                    {
+                        "code": "264362003",
+                        "display": "Home (environment)"
+                    },
+                    {
+                        "code": "257585005",
+                        "display": "Clinic (environment)"
+                    },
+                    {
+                        "code": "272501009",
+                        "display": "Sports facility"
+                    }
+                ]
+            }
+        ]
+    }
+}
