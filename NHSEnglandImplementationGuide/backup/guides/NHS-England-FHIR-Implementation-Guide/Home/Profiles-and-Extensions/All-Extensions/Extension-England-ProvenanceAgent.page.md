@@ -56,12 +56,12 @@ select
 
 More information about the constraints on the <code>Extension-England-Provenance-Agent</code> can be found below.
 
-<table class="assets">
+<table class="assets" title="Extension England Provenance Agent constraints">
 <tr>
-<th width="15%">Key</th>
-<th width="10%">Severity</th>
-<th width="30%">Expression</th>
-<th width="45%">Human Description</th>
+<th class="width15">Key</th>
+<th class="width10">Severity</th>
+<th class="width30">Expression</th>
+<th class="width45">Human Description</th>
 </tr>
 <tr>
 <td>nhse-prov-agent-001</td>

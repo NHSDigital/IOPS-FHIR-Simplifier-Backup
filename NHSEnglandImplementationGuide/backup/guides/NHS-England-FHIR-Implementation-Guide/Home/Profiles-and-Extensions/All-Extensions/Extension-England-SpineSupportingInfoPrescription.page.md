@@ -5,7 +5,7 @@
 from
 	StructureDefinition
 where
-	name = 'ExtensionEnglandOperationSpineSupportingInfoPrescription'
+	name = 'ExtensionEnglandSpineSupportingInfoPrescription'
 select
 	Canonical_URL: url,
 	Description: description,
