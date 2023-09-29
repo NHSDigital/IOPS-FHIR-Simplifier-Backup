@@ -1,0 +1,307 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "7c42ccf1-3e8f-446c-8f7f-d703281a07d5",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient",
+  "name": "NHSDigitalPatient",
+  "status": "draft",
+  "description": "This profile is designed around Patient Demographics Services and PDS may be used as the source of this data. \r\nUse of PDS is not mandatory for Patient resources, Patient Administration Systems (PAS) and Master Patient Index (MPI) may be used instead. Only traced NHS Number SHOULD be used with this resource unless explicitly stated. Within NHS Trusts the inclusion of MRN (Medical Record Numbers) identifiers is highly recommended.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "constraint": [
+          {
+            "key": "patient-nhs",
+            "severity": "error",
+            "human": "Supplied NHS Number is outside the English and Welsh NHS Number range or length of the number is wrong.",
+            "expression": "identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists().not() or (identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists()  and identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').value.matches('^([456789]{1}[0-9]{9})$'))",
+            "source": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension",
+        "path": "Patient.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Patient.extension:medicalApplianceSupplier",
+        "path": "Patient.extension",
+        "sliceName": "medicalApplianceSupplier",
+        "definition": "```json\r\n{\r\n            \"url\": \"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization\",\r\n            \"valueReference\": {\r\n                \"identifier\": {\r\n                    \"system\": \"https://fhir.nhs.uk/Id/ods-organization-code\",\r\n                    \"value\": \"Y23456\"\r\n                }\r\n            }\r\n        }\r\n```",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicalApplianceSupplier"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nominatedPharmacy",
+        "path": "Patient.extension",
+        "sliceName": "nominatedPharmacy",
+        "definition": "A patient can choose up to three nominated dispensers to cover different contractor types:\r\n\r\n- Community Pharmacy\r\n- Appliance Contractor\r\n- Dispensing Doctor\r\n\r\nEach of those nominations is held in an Extension. \r\n\r\nAll require a ODS/ANANA code from [Organisation Data Services](https://digital.nhs.uk/services/organisation-data-service). This contains download CSV files for these organisations, for API access please see  [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)\r\n\r\n#### nominatedPharmacy (extension nominatedPharmacy)\r\n\r\n```json\r\n\"extension\":  [\r\n        {\r\n            \"url\": \"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy\",\r\n            \"valueReference\": {\r\n                \"identifier\": {\r\n                    \"system\": \"https://fhir.nhs.uk/Id/ods-organization-code\",\r\n                    \"value\": \"Y12345\"\r\n                }\r\n            }\r\n        },\r\n```",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:preferredDispenserOrganization",
+        "path": "Patient.extension",
+        "sliceName": "preferredDispenserOrganization",
+        "definition": "```json\r\n{\r\n            \"url\": \"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicalApplianceSupplier\",\r\n            \"valueReference\": {\r\n                \"identifier\": {\r\n                    \"system\": \"https://fhir.nhs.uk/Id/ods-organization-code\",\r\n                    \"value\": \"Y34567\"\r\n                }\r\n            }\r\n        }\r\n```",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "short": "The patient's NHS number. The primary identifier of a patient, unique within NHS England and Wales. Always 10 digits and must be a valid NHS number.",
+        "definition": "At least one patient identifier, **MUST** be provided. \r\n\r\nWhere a traced NHS number is available for a patient this MUST be included. In general an untraced NHS Number **MUST** not be used, if an untracted NHS Number is used the extension https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus **MUST** be used.\r\n\r\n| Name | FHIR identifier | OID/HL7v3 | HL7v2 ITK | Format | Description |\r\n|--|--|--|--|--|--|\r\n| NHS Number | https://fhir.nhs.uk/Id/nhs-number | 2.16.840.1.113883.2.1.4.1 |  NHS | NNNNNNNNNN | NHS Number allocated to the patient in England and Wales  |\r\n| CHI Number | | 2.16.840.1.113883.2.1.3.2.4.16.53 | | NNNNNNNNNN | CHI Number allocated to the patient in Scotland |\r\n| NHS Logon ID | https://fhir.nhs.uk/Id/nhs-login-sub | | | uuid | NHS Login unique identifer which is referred to as sub in NHS Login (OpenID) |\r\n\r\nLocal identifiers such as MRN **MUST** include a *system* which identifies NHS provider/assigning authority. \r\n\r\n\r\n\r\n```json\r\n\"identifier\":  [\r\n        {\r\n            \"system\": \"https://fhir.nhs.uk/Id/nhs-number\",\r\n            \"value\": \"9000000009\"\r\n        },\r\n        {\r\n            \"system\": \"https://fhir.elmet.nhs.uk/Id/MRN\",\r\n            \"value\": \"X54321\"\r\n        }\r\n    ],\r\n```",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:nhsNumber",
+        "path": "Patient.identifier",
+        "sliceName": "nhsNumber",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:nhsNumber.system",
+        "path": "Patient.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "definition": "At least one patient name must be provided. It is recommended a use is provided. \r\n\r\n```json\r\n\"name\":  [\r\n        {\r\n            \"family\": \"Smith\",\r\n            \"given\":  [\r\n                \"Jane\"\r\n            ],\r\n            \"prefix\":  [\r\n                \"Mrs\"\r\n            ],\r\n            \"suffix\":  [\r\n                \"MBE\"\r\n            ],\r\n            \"use\": \"usual\"\r\n        }\r\n    ]\r\n```",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.use",
+        "path": "Patient.name.use",
+        "short": "The following values are allowed:  usual, temp, nickname, old, maiden",
+        "definition": "How this name should be used.\r\n\r\n- usual - Known as, conventional or the one patient normally uses. A patient always has a usual name.\r\n- temp - An alias or temporary name. This may also be used for temporary names assigned at birth or in emergency situations.\r\n- nickname - A name that the patient prefers to be addressed by, but is not part of their usual name.\r\n- old - This name is no longer in use (or was never correct, but retained for records).\r\n- maiden - Name changed for Marriage. A name used prior to changing name because of marriage. This term is not gender specific. The use of this term does not imply any particular history for a person's name.\r\n\r\nThe following use codes are included in the name-use value set, but should not be used and is not be returned as part of a retrieval.\r\n\r\n- official - The formal name as registered in an official (government) registry, but which name might not be commonly used. May be called \"legal name\".\r\n- anonymous - Anonymous assigned name, alias, or pseudonym (used to protect a person's identity for privacy reasons).",
+        "mapping": [
+          {
+            "identity": "MiM",
+            "map": "https://fhir.nhs.uk/ConceptMap/fhir-nameuse-to-v3-npfit-nameuse"
+          }
+        ]
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "definition": "Given names, including any middle names.",
+        "max": "5",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "definition": "List of contact points for the patient; for example, phone numbers or email addresses. When a patient tagged as `restricted` or `very restricted` is retrieved, all contact points are removed from the response.\r\n\r\n```json\r\n\"telecom\":  [\r\n        {\r\n            \"system\": \"phone\",\r\n            \"use\": \"work\",\r\n            \"value\": \"01632960587\"\r\n        }\r\n    ]\r\n```",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "definition": "Classification of the gender of a patient. The classification is phenotypical rather than genotypical, i.e. it does not provide codes for medical or scientific purposes. It is the administrative gender that the patient wishes to be known as. In some cases, this may not be the same as the patient’s registered birth gender, or their current clinical gender.",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "definition": "The date on which the patient was born or is officially deemed to have been born.\r\n\r\nIt is a date in the format `yyyy-mm-dd`. Due to data quality issues on a small number of patients `yyyy-mm` and `yyyy` format may also be returned.\r\n\r\nWhen a patient tagged as `very restricted` is retrieved, birth date is removed from the response.",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
+        "definition": "The date and time on which a person died or is officially deemed to have died, if applicable and known.\r\n\r\nIt is a datetime in the format `yyyy-mm-ddTHH:MM:SS+HH:MM` or `yyyy-mm-dd`. Due to data quality issues on a small number of patients `yyyy-mm` and `yyyy` format may also be returned.\r\n\r\nWhen a patient tagged as `very restricted` is retrieved, death date is removed from the response.",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "definition": "List of addresses associated with the patient.\r\n\r\nThese are fully populated on a retrieval or a successful update, only the home address is returned on a search. When a patient tagged as `restricted` or `very restricted` is retrieved, all addresses are removed from the response.\r\n\r\n```json\r\n\"address\":  [\r\n        {\r\n            \"line\":  [\r\n                \"1 Trevelyan Square\",\r\n                \"Boar Lane\",\r\n                \"City Centre\",\r\n                \"Leeds\",\r\n                \"West Yorkshire\"\r\n            ],\r\n            \"postalCode\": \"LS1 6AE\",\r\n            \"use\": \"home\"\r\n        }\r\n    ],\r\n```",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.extension",
+        "path": "Patient.address.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Patient.address.extension:addressKey",
+        "path": "Patient.address.extension",
+        "sliceName": "addressKey",
+        "definition": "Postal Address File (PAF) key associated with this address formatted as a FHIR extension. Empty if no PAF key for the address is known, or an object specifying the code system of the address key and the value of the address key.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.use",
+        "path": "Patient.address.use",
+        "short": "The following values are allowed: home, work, temp, billing",
+        "definition": "Purpose of this address:\r\n\r\n- home - the home address is the patient's normal residence. Home address is also known as usual, main, registered, current or permanent address\r\n- temp - a temporary address is an address used for a set period of time, but where the patient's home, permanent address remains unchanged\r\n- billing - an address used for correspondence purposes only\r\n- work - an office address. This can be returned due to legacy data but cannot be added or replaced on update\r\n\r\nA patient should have no more than one current temp and/or billing address. However, historically this was constrained only by the integration requirements and was not enforced so theoretically more than one can exist for a patient when retrieving. Where multiple instances already exist for the patient it is not expected that local systems should manage those, but should choose the most appropriate one to maintain (e.g. by examining period dates).\r\n\r\nA home address is the patient's main residential address and should normally be used for all clinical and demographic purposes, including clinical and appointment correspondence. However additionally, temp and billing addresses may be provided by a patient when there is a requirement to record an alternative location for the purposes of unbroken care. When sending correspondence to a patient:\r\n\r\n- a present and valid billing address may take precedence over home and temp addresses. A patient should have only a single current billing address. An address is considered 'valid' according to its period start and end dates.\r\n- if no current billing address is provided, a temp address may take precedence over the home address, again if it is valid according to its period start and end dates.\r\n- if there is no valid, current billing and/or temp address, the home address must be used."
+      },
+      {
+        "id": "Patient.address.line",
+        "path": "Patient.address.line",
+        "definition": "All lines of the address except the postal code.\r\n\r\nSystems must apply the following formatting convention when adding or replacing addresses lines:\r\n\r\n- line 1 - premises ID and/or house name, e.g. Flat 1 or The Old Schoolhouse\r\n- line 2 - house number, dependent thoroughfare name and descriptor (if present), thoroughfare name and descriptor, e.g. 23 Mill Lane\r\n- line 3 - dependent locality/village, locality (if present), e.g. Boxgrove\r\n- line 4 - post town, e.g. Leeds\r\n- line 5 - county (if present), e.g. West Yorkshire\r\n\r\nIf any of the lines are blank, they are not returned due to FHIR conformance constraints.\r\n\r\nmust contain at most 5 items"
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "comment": "The order in which the patient was born, with 1 indicating the first or only birth in the sequence, 2 indicating the second birth in the sequence, 3 indicating the third, and so on up to 7.\r\n\r\nThere are two other valid values; 8 meaning Not applicable and 9 meaning Not known.\r\n\r\n1 ≤ value ≤ 9"
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "definition": "A list of patient contacts. Only emergency contacts are returned and only emergency contacts should be added. Any other contacts should be added to the patients Related Person. Patients designate here any contact number they desire to be used in case of an emergency. Note, while a patient may also desire to record various related persons telecom details, these do not separately allow for a concept of emergency contact; only ranking. See RelatedPerson endpoint. When a patient tagged as restricted or very restricted is retrieved, all contacts are removed from the response.",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.communication",
+        "path": "Patient.communication",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "identifier.system"
+            }
+          ],
+          "rules": "openAtEnd"
+        },
+        "definition": "GP Surgery **SHOULD** be provided. It is recommended the patients GP Surgery is the first item in the array and branch surgery is second. It is also suggested type and display (name of practice) is also included. \r\n\r\n```json\r\n\"generalPractitioner\":  [\r\n        {\r\n            \"type\": \"Organization\"\r\n            \"identifier\": {\r\n                \"system\": \"https://fhir.nhs.uk/Id/ods-organization-code\",\r\n                \"value\": \"Y12345\"\r\n            },\r\n            \"display\": \"Kirkgate Practice\"\r\n        }\r\n    ]\r\n```",
+        "requirements": "GP Surgery SHOULD be provided. It is recommended the patients GP Surgery is the first item in the array and branch surgery is second. It is also suggested type and display (name of practice) is also included.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "nhsd-5",
+            "severity": "warning",
+            "human": "generalPractitioner - a display name should be provided",
+            "expression": "(display.exists())",
+            "source": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier",
+        "path": "Patient.generalPractitioner.identifier",
+        "min": 1
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.system",
+        "path": "Patient.generalPractitioner.identifier.system",
+        "min": 1
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.value",
+        "path": "Patient.generalPractitioner.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.generalPractitioner:registeredGPPractice",
+        "path": "Patient.generalPractitioner",
+        "sliceName": "registeredGPPractice",
+        "definition": "Patient's registered GP Practice. Use V81998 for no registered practice and V81999 for not known as per NHS Data Dictionary guidelines.",
+        "max": "1"
+      },
+      {
+        "id": "Patient.generalPractitioner:registeredGPPractice.identifier.system",
+        "path": "Patient.generalPractitioner.identifier.system",
+        "fixedUri": "https://fhir.nhs.uk/Id/ods-organization-code"
+      },
+      {
+        "id": "Patient.generalPractitioner:registeredGeneralMedicalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "sliceName": "registeredGeneralMedicalPractitioner",
+        "short": "Patient registered GP",
+        "definition": "This is to support legacy use cases where the patients GP is present"
+      },
+      {
+        "id": "Patient.generalPractitioner:registeredGeneralMedicalPractitioner.identifier.system",
+        "path": "Patient.generalPractitioner.identifier.system",
+        "fixedUri": "https://fhir.nhs.uk/Id/gmp-number"
+      },
+      {
+        "id": "Patient.managingOrganization.identifier",
+        "path": "Patient.managingOrganization.identifier",
+        "min": 1
+      },
+      {
+        "id": "Patient.managingOrganization.identifier.system",
+        "path": "Patient.managingOrganization.identifier.system",
+        "fixedUri": "https://fhir.nhs.uk/Id/ods-organization-code"
+      }
+    ]
+  }
+}

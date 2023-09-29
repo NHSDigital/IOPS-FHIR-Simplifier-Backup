@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.guide.md
+- name: Clinical heading X
+  filename: Clinical-heading-X.guide.md
+- name: Clinical heading X mapping to FHIR
+  filename: Clinical-heading-X-mapping-to-FHIR.guide.md

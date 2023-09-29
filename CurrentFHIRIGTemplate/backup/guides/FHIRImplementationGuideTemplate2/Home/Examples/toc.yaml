@@ -1,0 +1,4 @@
+- name: Index
+  filename: Index.guide.md
+- name: Example X
+  filename: Example-X.guide.md
