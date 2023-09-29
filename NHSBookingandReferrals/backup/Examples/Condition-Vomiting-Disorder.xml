@@ -1,0 +1,32 @@
+<Condition xmlns="http://hl7.org/fhir">
+    <id value="4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+            <code value="active" />
+        </coding>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+            <code value="provisional" />
+        </coding>
+    </verificationStatus>
+	<category>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="33962009" />
+            <display value="Presenting complaint" />
+        </coding>
+    </category>
+    <code>
+        <text value="Vomiting" />
+    </code>
+    <subject>
+        <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+    </subject>
+	<encounter> 
+		<reference value="urn:uuid:efe9bcc1-4c27-4b71-8dc7-20c6aa59ef08"/> 
+  </encounter>
+    <onsetDateTime value="2023-06-13" />
+</Condition>

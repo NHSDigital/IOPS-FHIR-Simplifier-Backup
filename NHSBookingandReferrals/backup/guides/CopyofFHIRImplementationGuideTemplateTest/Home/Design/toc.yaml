@@ -1,0 +1,6 @@
+- name: BaRS Core
+  filename: BaRS-Core
+- name: BaRS Applications
+  filename: BaRS-Applications
+- name: BaRS Pre-Releases
+  filename: BaRS-Pre-releases
