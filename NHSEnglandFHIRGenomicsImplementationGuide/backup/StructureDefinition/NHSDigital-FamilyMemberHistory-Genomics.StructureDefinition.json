@@ -1,0 +1,81 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-FamilyMemberHistory-Genomics",
+  "name": "NHSDigital_FamilyMemberHistory_Genomics",
+  "status": "draft",
+  "date": "2023-02-06",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "FamilyMemberHistory",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "FamilyMemberHistory.identifier",
+        "path": "FamilyMemberHistory.identifier",
+        "max": "1"
+      },
+      {
+        "id": "FamilyMemberHistory.identifier.assigner",
+        "path": "FamilyMemberHistory.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "FamilyMemberHistory.patient",
+        "path": "FamilyMemberHistory.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "FamilyMemberHistory.reasonReference",
+        "path": "FamilyMemberHistory.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DiagnosticReport-Genomics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "FamilyMemberHistory.note.author[x]",
+        "path": "FamilyMemberHistory.note.author[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics"
+            ]
+          },
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

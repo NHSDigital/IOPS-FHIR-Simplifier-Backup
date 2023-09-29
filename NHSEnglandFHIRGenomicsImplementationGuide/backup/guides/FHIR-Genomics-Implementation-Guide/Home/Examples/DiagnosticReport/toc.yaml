@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: DiagnosticReport-MichaelJonesReport
+  filename: DiagnosticReport-MichaelJonesReport.page.md
+- name: DiagnosticReport-MichaelJonesReport-Minimal
+  filename: DiagnosticReport-MichaelJonesReport-Minimal.page.md

@@ -1,0 +1,18 @@
+{
+	"resourceType": "Subscription",
+	"id": "Subscription-TaskNotification-Example",
+	"status": "active",
+	"contact": [
+		{
+			"system": "email",
+			"value": "mft.genomics@nhs.net"
+		}
+	],
+	"reason": "Notification of new tasks for Manchester GLH",
+	"criteria": "Task?owner=Organization/UKCore-Organization-RBV-Example",
+	"channel": {
+		"type": "rest-hook",
+		"endpoint": "https://mft.nhs.uk/nwglh/fhir",
+		"payload": "application/fhir+json"
+	}
+}

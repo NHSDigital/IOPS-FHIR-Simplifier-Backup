@@ -1,0 +1,32 @@
+- name: Index
+  filename: Index.page.md
+- name: Requesting Clinician
+  filename: Requesting-Clinician.page.md
+- name: Additional Contact
+  filename: Additional-Contact.page.md
+- name: Patient
+  filename: Patient.page.md
+- name: Fetus
+  filename: Fetus.page.md
+- name: Record of Discussion
+  filename: Record-of-Discussion--TBC.page.md
+- name: Test Request
+  filename: Test-Request.page.md
+- name: PLCM activity
+  filename: PLCM-activity.page.md
+- name: Sample/Biopsy inc germline
+  filename: Sample-Biopsy-inc-germline.page.md
+- name: Extracted Specimen
+  filename: Extracted-Specimen.page.md
+- name: Previous Genomic Report
+  filename: Previous-Genomic-Report.page.md
+- name: Previous Diagnostic Report
+  filename: Previous-Diagnostic-Report.page.md
+- name: Patient Clinical Presentation
+  filename: Patient-Clinical-Presentation.page.md
+- name: Linked test/results
+  filename: Linked-test-results.page.md
+- name: Relative to be tested
+  filename: Relative-to-be-tested.page.md
+- name: Clinical Report Copy To
+  filename: Clinical-Report-Copy-To.page.md

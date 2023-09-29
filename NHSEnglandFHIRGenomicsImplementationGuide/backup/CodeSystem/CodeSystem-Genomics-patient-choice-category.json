@@ -1,0 +1,54 @@
+{
+	"resourceType": "CodeSystem",
+	"url": "https://fhir.nhs.uk/CodeSystem/patient-choice-category-genomics",
+	"identifier": [
+		{
+			"system": "https://fhir.nhs.uk/identifier/CodeSystem",
+			"value": "patient-choice-category-genomics"
+		}
+	],
+	"version": "0.1.0",
+	"name": "PatientChoiceCategoryGenomics",
+	"title": "Patient Choice Category Genomics",
+	"status": "draft",
+	"date": "2022-12-21T11:27:52.3231281+00:00",
+	"publisher": "NHS Digital",
+	"contact": [
+		{
+			"name": "NHS Digital",
+			"telecom": [
+				{
+					"system": "email",
+					"value": "interoperabilityteam@nhs.net",
+					"use": "work"
+				}
+			]
+		}
+	],
+	"description": "A set of codes use to identify the categories of sources of obtaining the patient consent before undergoing Genomic test.",
+	"copyright": "Copyright © 2022 NHS Digital",
+	"caseSensitive": true,
+	"content": "complete",
+	"concept": [
+		{
+			"code": "AdultOwnChoice",
+			"display": "Adult (made their own choice)"
+		},
+		{
+			"code": "AdultLackCapacity",
+			"display": "Adult lacking capacity (choices advised by consultee)"
+		},
+		{
+			"code": "Child",
+			"display": "Child (parent or guardian choices)"
+		},
+		{
+			"code": "Clinician",
+			"display": "Clinician has agreed to the test (in the patient`s best interest)"
+		},
+		{
+			"code": "Deceased",
+			"display": "Deceased (choices made on behalf of deceased individual)"
+		}
+	]
+}

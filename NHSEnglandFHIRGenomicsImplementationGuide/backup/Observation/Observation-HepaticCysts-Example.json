@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-HepaticCysts-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "https://hpo.jax.org/app/",
+				"code": "HP:0001407",
+				"display": "Hepatic cysts"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-LindsaySorrell-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307946"
+		}
+	},
+	"effectiveDateTime": "2023-08-05",
+	"valueBoolean": false
+}

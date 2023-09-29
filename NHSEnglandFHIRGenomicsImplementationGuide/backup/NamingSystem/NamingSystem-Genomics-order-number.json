@@ -1,0 +1,19 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "genomics-order-number",
+  "name": "GenomicsOrderNumber",
+  "status": "draft",
+  "kind": "identifier",
+  "date": "2023-09-15",
+  "publisher": "NHS England",
+  "responsible": "NHS Genomic Interop Programme",
+  "description": "Genomic Medicine Service Unique Order Number",
+	"usage": "Assigned by central GMS system on receipt of a test order",
+  "uniqueId":  [
+    {
+      "type": "uri",
+      "value": "https://fhir.nhs.uk/Id/GMSOrder",
+      "preferred": true
+    }
+  ]
+}

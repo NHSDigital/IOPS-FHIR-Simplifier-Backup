@@ -1,0 +1,42 @@
+{
+	"resourceType": "CodeSystem",
+	"url": "https://fhir.nhs.uk/CodeSystem/test-type-genomics",
+	"identifier": [
+		{
+			"system": "https://fhir.nhs.uk/identifier/CodeSystem",
+			"value": "test-type-genomics"
+		}
+	],
+	"version": "0.1.0",
+	"name": "TestTypeGenomics",
+	"title": "Test Type Genomics",
+	"status": "draft",
+	"date": "2022-12-21T11:27:52.3231281+00:00",
+	"publisher": "NHS Digital",
+	"contact": [
+		{
+			"name": "NHS Digital",
+			"telecom": [
+				{
+					"system": "email",
+					"value": "interoperabilityteam@nhs.net",
+					"use": "work"
+				}
+			]
+		}
+	],
+	"description": "A set of codes use to identify the category of genomic test types",
+	"copyright": "Copyright © 2022 NHS Digital",
+	"caseSensitive": true,
+	"content": "complete",
+	"concept": [
+		{
+			"code": "RID-WGS",
+			"display": "Rare and Inherited Diseases - WGS"
+		},
+		{
+			"code": "C-WGS",
+			"display": "Cancer (paired tumour normal) - WGS"
+		}
+	]
+}

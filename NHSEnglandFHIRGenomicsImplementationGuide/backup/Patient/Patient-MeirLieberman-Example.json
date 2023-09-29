@@ -1,0 +1,103 @@
+{
+	"resourceType": "Patient",
+	"id": "Patient-MeirLieberman-Example",
+	"extension": [
+		{
+			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+			"valueCode": "M"
+		},
+		{
+			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+						"code": "A",
+						"display": "White - British"
+					}
+				]
+			}
+		}
+	],
+	"identifier": [
+		{
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307873",
+			"extension": [
+				{
+					"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+								"version": "2.2.0",
+								"code": "01",
+								"display": "Number present and verified"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+			"value": "RGT012423",
+			"assigner": {
+				"identifier": {
+					"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+					"value": "RGT01"
+				}
+			}
+		},
+		{
+			"system": "https://fhir.nhs.uk/Id/genomics-pedigree-number",
+			"value": "P12345"
+		}
+	],
+	"name": [
+		{
+			"given": [
+				"Meir",
+				"Anah"
+			],
+			"family": "Lieberman"
+		}
+	],
+	"gender": "male",
+	"birthDate": "2005-12-19",
+	"deceasedBoolean": false,
+	"address": [
+		{
+			"line": [
+				"1 Spinney Close",
+				"Worcester Park"
+			],
+			"city": "Surrey",
+			"postalCode": "KT4 7BS"
+		}
+	],
+	"generalPractitioner": [
+		{
+			"identifier": {
+				"system": "https://fhir.hl7.org.uk/Id/gmp-number",
+				"value": "G9999999"
+			},
+			"display": "Dr. Aero Smith"
+		},
+		{
+			"identifier": {
+				"system": "https://fhir.hl7.org.uk/Id/ODS-code",
+				"value": "TP123"
+			},
+			"display": "123 Test Practice"
+		}
+	],
+	"link": [
+		{
+			"other": {
+				"reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307873"
+			},
+			"type": "seealso"
+		}
+	]
+}

@@ -1,0 +1,151 @@
+{
+	"resourceType": "Consent",
+	"id": "UKCore-Consent-MichaelJonesConsent-Example",
+	"identifier": [
+		{
+			"system": "https://www.christie.nhs.uk/ehr",
+			"value": "Consent123456",
+			"assigner":  {
+				"reference": "Organization/UKCore-Organization-RBV-Example"
+			}
+		}
+	],
+	"status": "active",
+	"scope": { 
+		"coding": [
+			{ 
+				"system": "http://terminology.hl7.org/CodeSystem/consentscope", 
+				"code": "research", 
+				"display": "Research"
+			}
+		]
+	},
+	"category": [
+		{ 
+			"coding": [
+				{ 
+					"system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes", 
+					"code": "rsdid", 
+					"display": "De-identified Information Access"
+				}
+			]
+		}
+	],
+	"patient":  {
+		"reference": "Patient/UKCore-Patient-MichealJones-Example"
+	},
+	"dateTime": "2022-07-11T09:00:00Z",
+	"performer": [
+		{
+			"reference": "Patient/UKCore-Patient-MichealJones-Example"
+		}
+	],
+	"organization": [
+		{
+			"reference": "Organization/UKCore-Organization-RBV-Example"
+		}
+	],
+	"sourceAttachment": {
+		"contentType": "application/pdf",
+		"language": "en-GB",
+		"url": "https://files.genomicsengland.co.uk/forms/Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1.pdf",
+		"size": 539588,
+		"title" : "Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1_MJ",
+		"creation": "2022-07-11T09:00:00Z"
+	},
+	"policy": [
+		{
+			"uri": "https://s3.eu-west-2.amazonaws.com/ge-production-s3/forms/Participant-consent-form-for-patients-with-cancer-or-suspected-cancer-C1.pdf"
+		}
+	],
+	"verification": [
+		{
+			"verified": true,
+			"verifiedWith": {
+				"reference": "Patient/UKCore-Patient-MichealJones-Example"
+			},
+			"verificationDate": "2022-07-11T09:00:00Z"
+		}
+	],
+	"provision": {
+		"type": "permit",
+		"period": {
+			"start": "2022-07-11T09:00:00Z",
+			"end": "2025-07-11T08:59:59Z"
+		},
+		"actor": [
+			{
+				"role": {
+					"coding": [
+						{ 
+							"system": "http://terminology.hl7.org/CodeSystem/extra-security-role-type", 
+							"code": "dataprocessor", 
+							"display": "data processor"
+						}
+					]
+				},
+				"reference": {
+					"reference": "Organization/UKCore-Organization-699X0-Example"
+				}
+			}
+		],
+		"action": [
+			{
+				"coding": [
+					{ 
+						"system": "http://terminology.hl7.org/CodeSystem/consentaction", 
+						"code": "access", 
+						"display": "Access"
+					}
+				]
+			},
+			{
+				"coding": [
+					{ 
+						"system": "http://terminology.hl7.org/CodeSystem/consentaction", 
+						"code": "use", 
+						"display": "Use"
+					}
+				]
+			}
+		],
+		"class": [
+			{
+				"system": "http://hl7.org/fhir/resource-types", 
+				"code": "DiagnosticReport", 
+				"display": "DiagnosticReport"
+			},
+			{
+				"system": "http://hl7.org/fhir/resource-types", 
+				"code": "ClinicalImpression", 
+				"display": "ClinicalImpression"
+			},
+			{
+				"system": "http://hl7.org/fhir/resource-types", 
+				"code": "Condition", 
+				"display": "Condition"	
+			},
+			{
+				"system": "http://hl7.org/fhir/resource-types", 
+				"code": "MolecularSequence", 
+				"display": "MolecularSequence"	
+			},
+			{
+				"system": "http://hl7.org/fhir/resource-types", 
+				"code": "Observation", 
+				"display": "Observation"
+			}
+		],
+		"code": [
+			{
+				"coding": [
+					{ 
+						"system": "https://www.england.nhs.uk/publication/national-genomic-test-directories", 
+						"code": "M219.3", 
+						"display": "DPYD hotspot"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "https://fhir.nhs.uk/CodeSystem/patient-consultee-genomics",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+      "value": "patient-consultee-genomics"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "PatientConsulteeGenomics",
+  "title": "Patient Consultee Genomics",
+  "status": "draft",
+  "date": "2022-12-28T16:41:15.0168724+00:00",
+  "publisher": "NHS Digital",
+  "contact": [
+    {
+      "name": "NHS Digital",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "A code to identify if patient guardian is a Consultee",
+  "copyright": "Copyright © 2022 NHS Digital",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Consultee",
+      "display": "Consultee"
+    }
+  ]
+}

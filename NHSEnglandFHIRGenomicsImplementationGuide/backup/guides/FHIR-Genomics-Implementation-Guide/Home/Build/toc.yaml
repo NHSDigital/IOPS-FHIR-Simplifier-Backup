@@ -1,0 +1,16 @@
+- name: Index
+  filename: Index.page.md
+- name: How to construct Message Bundles
+  filename: How-to-construct-Message-Bundles
+- name: Alternative Flows
+  filename: Alternative-Flows.page.md
+- name: Authentication
+  filename: Authentication
+- name: API usage
+  filename: APIusage.page.md
+- name: Error handling
+  filename: Errorhandling.page.md
+- name: Query types
+  filename: Querytypes.page.md
+- name: Operation responses
+  filename: Operationresponses.page.md

@@ -1,0 +1,50 @@
+{
+	"resourceType": "CodeSystem",
+	"url": "https://fhir.nhs.uk/CodeSystem/patient-choice-researchparticipation",
+	"identifier": [
+		{
+			"system": "https://fhir.nhs.uk/identifier/CodeSystem",
+			"value": "patient-choice-researchparticipation"
+		}
+	],
+	"version": "0.1.0",
+	"name": "PatientChoiceResearchParticipation",
+	"title": "Patient Choice Research Participation",
+	"status": "draft",
+	"date": "2022-12-21T11:27:52.3231281+00:00",
+	"publisher": "NHS Digital",
+	"contact": [
+		{
+			"name": "NHS Digital",
+			"telecom": [
+				{
+					"system": "email",
+					"value": "interoperabilityteam@nhs.net",
+					"use": "work"
+				}
+			]
+		}
+	],
+	"description": "A set of codes use to identify the sources of obtaining the patient consent in participating in the National Genomic Research.",
+	"copyright": "Copyright © 2022 NHS Digital",
+	"caseSensitive": true,
+	"content": "complete",
+	"concept": [
+		{
+			"code": "LiketoDiscussLater",
+			"display": "Patient would like to discuss at a later date"
+		},
+		{
+			"code": "PatientLackCapacity",
+			"display": "Patient lacks capacity and no consultee available"
+		},
+		{
+			"code": "InappropriatetoDiscuss",
+			"display": "Inappropriate to have discussion"
+		},
+		{
+			"code": "Other",
+			"display": "Other"
+		}
+	]
+}

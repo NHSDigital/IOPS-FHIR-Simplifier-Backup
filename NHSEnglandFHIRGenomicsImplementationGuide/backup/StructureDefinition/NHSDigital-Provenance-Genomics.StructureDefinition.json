@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Provenance-Genomics",
+  "name": "NHSDigital_Provenance_Genomics",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Provenance",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Provenance.occurred[x]",
+        "path": "Provenance.occurred[x]",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.policy",
+        "path": "Provenance.policy",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.location",
+        "path": "Provenance.location",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.activity",
+        "path": "Provenance.activity",
+        "min": 1
+      },
+      {
+        "id": "Provenance.signature",
+        "path": "Provenance.signature",
+        "max": "0"
+      }
+    ]
+  }
+}

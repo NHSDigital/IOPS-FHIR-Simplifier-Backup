@@ -1,0 +1,216 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics",
+  "name": "NHSDigital_Specimen_Genomics",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen",
+        "path": "Specimen",
+        "constraint": [
+          {
+            "key": "gen-1",
+            "severity": "error",
+            "human": "Condition - condition MUST be present if extension:specimen-specialHandling is present",
+            "expression": "(collection.extension('http://hl7.org/fhir/StructureDefinition/specimen-specialHandling').exists().not() or (collection.extension('http://hl7.org/fhir/StructureDefinition/specimen-specialHandling').exists() and condition.exists()))"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.extension",
+        "path": "Specimen.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Specimen.extension:state",
+        "path": "Specimen.extension",
+        "sliceName": "state",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Specimen.identifier.assigner",
+        "path": "Specimen.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.accessionIdentifier",
+        "path": "Specimen.accessionIdentifier",
+        "min": 1
+      },
+      {
+        "id": "Specimen.status",
+        "path": "Specimen.status",
+        "min": 1
+      },
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "min": 1
+      },
+      {
+        "id": "Specimen.subject",
+        "path": "Specimen.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "http://hl7.org/fhir/StructureDefinition/Substance",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.parent",
+        "path": "Specimen.parent",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Specimen-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.request",
+        "path": "Specimen.request",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection",
+        "path": "Specimen.collection",
+        "min": 1
+      },
+      {
+        "id": "Specimen.collection.extension",
+        "path": "Specimen.collection.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Specimen.collection.extension:specimen-specialHandling",
+        "path": "Specimen.collection.extension",
+        "sliceName": "specimen-specialHandling",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/specimen-specialHandling"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.collector",
+        "path": "Specimen.collection.collector",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner-Genomics",
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Genomics"
+            ],
+            "aggregation": [
+              "referenced",
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.collected[x]",
+        "path": "Specimen.collection.collected[x]",
+        "min": 1
+      },
+      {
+        "id": "Specimen.collection.fastingStatus[x]",
+        "path": "Specimen.collection.fastingStatus[x]",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container",
+        "path": "Specimen.container",
+        "max": "1"
+      },
+      {
+        "id": "Specimen.condition",
+        "path": "Specimen.condition",
+        "max": "1"
+      },
+      {
+        "id": "Specimen.note",
+        "path": "Specimen.note",
+        "max": "1"
+      }
+    ]
+  }
+}

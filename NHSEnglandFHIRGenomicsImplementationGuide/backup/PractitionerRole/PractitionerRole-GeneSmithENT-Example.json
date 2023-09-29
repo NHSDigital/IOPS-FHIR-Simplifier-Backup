@@ -1,0 +1,49 @@
+{
+	"resourceType": "PractitionerRole",
+	"id": "PractitionerRole-GeneSmithENT-Example",
+	"practitioner": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/sds-user-id",
+			"value": "9999999999"
+		},
+		"display": "Dr. Gene Smith"
+	},
+	"organization": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RGT01"
+		},
+		"display": "Addenbrooke's Hospital"
+	},
+	"specialty": [
+		{
+			"coding": [
+				{
+					"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+					"code": "120",
+					"display": "Ear Nose and Throat"
+				}
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "01223586638"
+		},
+		{
+			"system": "email",
+			"value": "gene.smith@nhs.net"
+		},
+		{
+			"system": "email",
+			"value": "Add-tr.entsecretaries@nhs.net",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+					"valueString": "reporting"
+				}
+			]
+		}
+	]
+}

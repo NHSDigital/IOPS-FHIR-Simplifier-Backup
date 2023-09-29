@@ -1,0 +1,21 @@
+{
+	"resourceType": "Procedure",
+	"id": "UKCore-Procedure-MichaelJonesTransplant-Example",
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "23719005",
+				"display": "Transplantation of bone marrow"
+			}
+		]
+	},
+	"subject": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
+	},
+	"performedDateTime": "2020-01-19"
+}
