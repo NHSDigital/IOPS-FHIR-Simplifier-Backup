@@ -1,0 +1,4 @@
+- name: Index
+  filename: Index.page.md
+- name: 0.1.0-Discovery
+  filename: 0.1.0-discovery.page.md

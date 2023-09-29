@@ -1,0 +1,48 @@
+{
+    "resourceType": "DiagnosticReport",
+    "id": "SARS-CoV-2-ORGY",
+    "identifier": [
+        {
+            "system": "https://fhir.nhs.uk/Id/SpecimenId",
+            "value": "eb89a392-5b20-11eb-ae93-0242ac130002"
+        }
+    ],
+    "status": "final",
+    "code": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "1321291000000100",
+                "display": "SARS-CoV-2 species detection test (procedure)"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/richard-smith",
+        "identifier": [
+            {
+                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                "value": "987123456"
+            }
+        ]
+    },
+    "issued": "2020-09-23T13:00:08.476+00:00",
+    "performer":  [
+        {
+            "display": "PRESUME WE KNOW THIS ODS Code - MISSING"
+        }
+    ],
+    "specimen":  [
+        {
+            "identifier": {
+                "system": "https://fhir.nhs.uk/Id/SpecimenId",
+                "value": "eb89a392-5b20-11eb-ae93-0242ac130002"
+            }
+        }
+    ],
+    "result":  [
+        {
+            "reference": "Observation/SARS-CoV-2-ORGY"
+        }
+    ]
+}
