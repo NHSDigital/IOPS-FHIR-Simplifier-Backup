@@ -39,13 +39,13 @@ html, body {
      min-height: 70%;
      position: relative;
      height: auto !important;
-     margin-bottom: -155px;
-     padding-bottom: 155px;
+     margin-bottom: -105px;
+     padding-bottom: 105px;
 }
  body footer {
      background-color: #dddddd;
      color: #222;
-     height: 155px;
+     height: 105px;
      position: relative;
      padding-top: 40px;
 }
