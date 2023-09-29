@@ -1,14 +1,14 @@
 ## {{page-title}}
 
-  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
-
 This page gives a link to download the FHIR assets as a downloadable package.
 
-A download link will be provided once the first package for the Genomics Implementation Guide is released.
+The [UK Core STU2 package](https://simplifier.net/guide/ukcoreversionhistory/home?version=current) MUST be used for validation of resources for use in Genomics. 
+
+The following Genomics package contains Examples and constraint profiles for information/guidance only.
 
 | Current Release Package |  |
 |--
 | Package | uk.nhsdigital.genomics.r4  | 
-| Version | 0.1.0-prerelease |
-| IG Package Url | Link to latest NHSD package for demonstration purposes:  [https://packages.simplifier.net/uk.nhsdigital.r4/-/uk.nhsdigital.r4-2.7.0.tgz](https://packages.simplifier.net/uk.nhsdigital.r4/-/uk.nhsdigital.r4-2.7.0.tgz) |
+| Version | 0.2.0-prerelease |
+| IG Package Url | [https://simplifier.net/packages/uk.nhsengland.genomics.r4/0.2.0-prerelease](https://simplifier.net/packages/uk.nhsengland.genomics.r4/0.2.0-prerelease/$download) |
 
