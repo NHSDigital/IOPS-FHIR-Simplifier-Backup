@@ -1,0 +1,914 @@
+{
+  "resourceType": "StructureMap",
+  "id": "1",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2022-07-14T16:38:12.092+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://hl7.org/fhir/StructureMap/AllergyIntolerance3to4&quot; = &quot;Conversions for STU3 CareConnect and R4 UKCore AllergyIntolerance&quot;\r\n\r\n\r\nuses &quot;http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance&quot; alias AllergyIntoleranceR3 as source\r\nuses &quot;http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance&quot; alias AllergyIntolerance as target\r\n\r\nimports &quot;http://hl7.org/fhir/StructureMap/*3to4&quot;\r\n\r\ngroup AllergyIntolerance(source src : AllergyIntoleranceR3, target tgt : AllergyIntolerance) extends DomainResource &lt;&lt;type+&gt;&gt; {\r\n  src.extension as ext where $this.url = 'https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergyIntoleranceEnd-1' -&gt;  tgt.extension = create('Extension') as tgtext,  tgtext.url = 'https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd' then {\r\n    ext.extension as vs -&gt;  tgtext as vt,  vt.extension = vs;\r\n  };\r\n  src.extension as ext where $this.url = 'http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter' -&gt; tgt.encounter as vt then {\r\n    ext.value : Reference as vs -&gt;  vt as vt1,  tgt.encounter = vs;\r\n  };\r\n  src.extension as ext where $this.url = 'https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-Evidence-1' -&gt;  tgt.extension = create('Extension') as tgtext,  tgtext.url = 'https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence' then {\r\n    ext.value : Reference as vs -&gt;  tgtext.value = create('Reference') as vt,  tgtext.value = vs;\r\n  };\r\n  src.identifier -&gt; tgt.identifier;\r\n  src.clinicalStatus as vs -&gt;  tgt.clinicalStatus as vt,  vt.coding as c,  c.system = 'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical',  c.code = vs;\r\n  src.verificationStatus as vs -&gt;  tgt.verificationStatus as vt,  vt.coding as c,  c.system = 'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification',  c.code = vs;\r\n  src.type -&gt; tgt.type;\r\n  src.category -&gt; tgt.category;\r\n  src.criticality -&gt; tgt.criticality;\r\n  src.code : CodeableConcept as vs -&gt; tgt.code = create('CodeableConcept') as vt then CodeableConceptAllergyIntolerance(vs, vt);\r\n  src.patient -&gt; tgt.patient;\r\n  src.onset : dateTime as vs -&gt; tgt.onset = create('dateTime') as vt then dateTime(vs, vt);\r\n  src.onset : Age as vs -&gt; tgt.onset = create('Age') as vt then Age(vs, vt);\r\n  src.onset : Period as vs -&gt; tgt.onset = create('Period') as vt then Period(vs, vt);\r\n  src.onset : Range as vs -&gt; tgt.onset = create('Range') as vt then Range(vs, vt);\r\n  src.onset : string as vs -&gt; tgt.onset = create('string') as vt then string(vs, vt);\r\n  src.assertedDate -&gt; tgt.recordedDate &quot;recordedDate&quot;;\r\n  src.recorder -&gt; tgt.recorder;\r\n  src.asserter -&gt; tgt.asserter;\r\n  src.lastOccurrence -&gt; tgt.lastOccurrence;\r\n  src.note -&gt; tgt.note;\r\n  src.reaction as vs0 -&gt; tgt.reaction as vt0 then {\r\n    vs0.substance : CodeableConcept as vs1 -&gt; vt0.substance = create('CodeableConcept') as vt1 then CodeableConceptAllergyIntolerance(vs1, vt1);\r\n    vs0.manifestation : CodeableConcept as vs1 -&gt; vt0.manifestation = create('CodeableConcept') as vt1 then CodeableConceptAllergyIntolerance(vs1, vt1);\r\n    vs0.description -&gt; vt0.description;\r\n    vs0.onset -&gt; vt0.onset;\r\n    vs0.severity -&gt; vt0.severity;\r\n    vs0.exposureRoute : CodeableConcept as vs1 -&gt; vt0.exposureRoute = create('CodeableConcept') as vt1 then CodeableConceptAllergyIntolerance(vs1, vt1);\r\n    vs0.note -&gt; vt0.note;\r\n  };\r\n}\r\n\r\ngroup CodeableConceptAllergyIntolerance(source src : CodeableConcept, target tgt : CodeableConcept) {\r\n  src.coding as vs -&gt; tgt.coding = create('Coding') as vt then SctCoding(vs, vt);\r\n  src.text as text -&gt; tgt.text = text;\r\n}\r\n\r\ngroup SctCoding(source src : Coding, target tgt : Coding) {\r\n  src.system as system -&gt; tgt.system = system;\r\n  src.version as version -&gt; tgt.version = version;\r\n  src.code as code -&gt; tgt.code = code;\r\n  src.display as display -&gt; tgt.display = display;\r\n  src.userSelected as userSelected -&gt; tgt.userSelected = userSelected;\r\n  src.extension as vs where ($this.url = 'https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid') or ($this.url = 'https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid') -&gt;  tgt.extension = create('Extension') as vt,  vt.url = 'https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId' then {\r\n    vs.extension as vsx where $this.url = 'descriptionId' -&gt;  vt.extension = create('Extension') as vtx,  vtx.url = 'descriptionId' then {\r\n      vsx.value : id as vsv -&gt;  vtx.value = create('Identifier') as vtv,  vtv.system = 'http://snomed.info/sct',  vtv.value = vsv;\r\n    };\r\n    vs.extension as vsx where $this.url = 'descriptionDisplay' -&gt;  vt.extension = create('Extension') as vtx,  vt.extension = vsx;\r\n  };\r\n}\r\n\r\n</pre></div>"
+  },
+  "url": "http://hl7.org/fhir/StructureMap/CareConnectUKCoreAllergyIntolerance3to4",
+  "name": "Conversions for STU3 CareConnect and R4 UKCore AllergyIntolerance",
+  "structure": [ {
+    "url": "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance",
+    "mode": "source",
+    "alias": "AllergyIntoleranceR3"
+  }, {
+    "url": "http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance",
+    "mode": "target",
+    "alias": "AllergyIntolerance"
+  } ],
+  "import": [ "http://hl7.org/fhir/StructureMap/*3to4" ],
+  "group": [ {
+    "name": "AllergyIntolerance",
+    "extends": "DomainResource",
+    "typeMode": "type-and-types",
+    "input": [ {
+      "name": "src",
+      "type": "AllergyIntoleranceR3",
+      "mode": "source"
+    }, {
+      "name": "tgt",
+      "type": "AllergyIntolerance",
+      "mode": "target"
+    } ],
+    "rule": [ {
+      "name": "extension",
+      "source": [ {
+        "context": "src",
+        "element": "extension",
+        "variable": "ext",
+        "condition": "$this.url = 'https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergyIntoleranceEnd-1'"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "extension",
+        "variable": "tgtext",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "Extension"
+        } ]
+      }, {
+        "context": "tgtext",
+        "contextType": "variable",
+        "element": "url",
+        "transform": "copy",
+        "parameter": [ {
+          "valueString": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd"
+        } ]
+      } ],
+      "rule": [ {
+        "name": "extension",
+        "source": [ {
+          "context": "ext",
+          "element": "extension",
+          "variable": "vs"
+        } ],
+        "target": [ {
+          "contextType": "variable",
+          "variable": "vt",
+          "transform": "copy",
+          "parameter": [ {
+            "valueId": "tgtext"
+          } ]
+        }, {
+          "context": "vt",
+          "contextType": "variable",
+          "element": "extension",
+          "transform": "copy",
+          "parameter": [ {
+            "valueId": "vs"
+          } ]
+        } ]
+      } ]
+    }, {
+      "name": "extension",
+      "source": [ {
+        "context": "src",
+        "element": "extension",
+        "variable": "ext",
+        "condition": "$this.url = 'http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter'"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "encounter",
+        "variable": "vt"
+      } ],
+      "rule": [ {
+        "name": "value-Reference",
+        "source": [ {
+          "context": "ext",
+          "type": "Reference",
+          "element": "value",
+          "variable": "vs"
+        } ],
+        "target": [ {
+          "contextType": "variable",
+          "variable": "vt1",
+          "transform": "copy",
+          "parameter": [ {
+            "valueId": "vt"
+          } ]
+        }, {
+          "context": "tgt",
+          "contextType": "variable",
+          "element": "encounter",
+          "transform": "copy",
+          "parameter": [ {
+            "valueId": "vs"
+          } ]
+        } ]
+      } ]
+    }, {
+      "name": "extension",
+      "source": [ {
+        "context": "src",
+        "element": "extension",
+        "variable": "ext",
+        "condition": "$this.url = 'https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-Evidence-1'"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "extension",
+        "variable": "tgtext",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "Extension"
+        } ]
+      }, {
+        "context": "tgtext",
+        "contextType": "variable",
+        "element": "url",
+        "transform": "copy",
+        "parameter": [ {
+          "valueString": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence"
+        } ]
+      } ],
+      "rule": [ {
+        "name": "value-Reference",
+        "source": [ {
+          "context": "ext",
+          "type": "Reference",
+          "element": "value",
+          "variable": "vs"
+        } ],
+        "target": [ {
+          "context": "tgtext",
+          "contextType": "variable",
+          "element": "value",
+          "variable": "vt",
+          "transform": "create",
+          "parameter": [ {
+            "valueString": "Reference"
+          } ]
+        }, {
+          "context": "tgtext",
+          "contextType": "variable",
+          "element": "value",
+          "transform": "copy",
+          "parameter": [ {
+            "valueId": "vs"
+          } ]
+        } ]
+      } ]
+    }, {
+      "name": "identifier",
+      "source": [ {
+        "context": "src",
+        "element": "identifier",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "identifier",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "clinicalStatus",
+      "source": [ {
+        "context": "src",
+        "element": "clinicalStatus",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "clinicalStatus",
+        "variable": "vt"
+      }, {
+        "context": "vt",
+        "contextType": "variable",
+        "element": "coding",
+        "variable": "c"
+      }, {
+        "context": "c",
+        "contextType": "variable",
+        "element": "system",
+        "transform": "copy",
+        "parameter": [ {
+          "valueString": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+        } ]
+      }, {
+        "context": "c",
+        "contextType": "variable",
+        "element": "code",
+        "transform": "copy",
+        "parameter": [ {
+          "valueId": "vs"
+        } ]
+      } ]
+    }, {
+      "name": "verificationStatus",
+      "source": [ {
+        "context": "src",
+        "element": "verificationStatus",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "verificationStatus",
+        "variable": "vt"
+      }, {
+        "context": "vt",
+        "contextType": "variable",
+        "element": "coding",
+        "variable": "c"
+      }, {
+        "context": "c",
+        "contextType": "variable",
+        "element": "system",
+        "transform": "copy",
+        "parameter": [ {
+          "valueString": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+        } ]
+      }, {
+        "context": "c",
+        "contextType": "variable",
+        "element": "code",
+        "transform": "copy",
+        "parameter": [ {
+          "valueId": "vs"
+        } ]
+      } ]
+    }, {
+      "name": "type",
+      "source": [ {
+        "context": "src",
+        "element": "type",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "type",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "category",
+      "source": [ {
+        "context": "src",
+        "element": "category",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "category",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "criticality",
+      "source": [ {
+        "context": "src",
+        "element": "criticality",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "criticality",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "code-CodeableConcept",
+      "source": [ {
+        "context": "src",
+        "type": "CodeableConcept",
+        "element": "code",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "code",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "CodeableConcept"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "CodeableConceptAllergyIntolerance",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "patient",
+      "source": [ {
+        "context": "src",
+        "element": "patient",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "patient",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "onset-dateTime",
+      "source": [ {
+        "context": "src",
+        "type": "dateTime",
+        "element": "onset",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "onset",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "dateTime"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "dateTime",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "onset-Age",
+      "source": [ {
+        "context": "src",
+        "type": "Age",
+        "element": "onset",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "onset",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "Age"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "Age",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "onset-Period",
+      "source": [ {
+        "context": "src",
+        "type": "Period",
+        "element": "onset",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "onset",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "Period"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "Period",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "onset-Range",
+      "source": [ {
+        "context": "src",
+        "type": "Range",
+        "element": "onset",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "onset",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "Range"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "Range",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "onset-string",
+      "source": [ {
+        "context": "src",
+        "type": "string",
+        "element": "onset",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "onset",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "string"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "string",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "recordedDate",
+      "source": [ {
+        "context": "src",
+        "element": "assertedDate",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "recordedDate",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "recorder",
+      "source": [ {
+        "context": "src",
+        "element": "recorder",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "recorder",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "asserter",
+      "source": [ {
+        "context": "src",
+        "element": "asserter",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "asserter",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "lastOccurrence",
+      "source": [ {
+        "context": "src",
+        "element": "lastOccurrence",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "lastOccurrence",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "note",
+      "source": [ {
+        "context": "src",
+        "element": "note",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "note",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "reaction",
+      "source": [ {
+        "context": "src",
+        "element": "reaction",
+        "variable": "vs0"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "reaction",
+        "variable": "vt0"
+      } ],
+      "rule": [ {
+        "name": "substance-CodeableConcept",
+        "source": [ {
+          "context": "vs0",
+          "type": "CodeableConcept",
+          "element": "substance",
+          "variable": "vs1"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "substance",
+          "variable": "vt1",
+          "transform": "create",
+          "parameter": [ {
+            "valueString": "CodeableConcept"
+          } ]
+        } ],
+        "dependent": [ {
+          "name": "CodeableConceptAllergyIntolerance",
+          "variable": [ "vs1", "vt1" ]
+        } ]
+      }, {
+        "name": "manifestation-CodeableConcept",
+        "source": [ {
+          "context": "vs0",
+          "type": "CodeableConcept",
+          "element": "manifestation",
+          "variable": "vs1"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "manifestation",
+          "variable": "vt1",
+          "transform": "create",
+          "parameter": [ {
+            "valueString": "CodeableConcept"
+          } ]
+        } ],
+        "dependent": [ {
+          "name": "CodeableConceptAllergyIntolerance",
+          "variable": [ "vs1", "vt1" ]
+        } ]
+      }, {
+        "name": "description",
+        "source": [ {
+          "context": "vs0",
+          "element": "description",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "description",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      }, {
+        "name": "onset",
+        "source": [ {
+          "context": "vs0",
+          "element": "onset",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "onset",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      }, {
+        "name": "severity",
+        "source": [ {
+          "context": "vs0",
+          "element": "severity",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "severity",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      }, {
+        "name": "exposureRoute-CodeableConcept",
+        "source": [ {
+          "context": "vs0",
+          "type": "CodeableConcept",
+          "element": "exposureRoute",
+          "variable": "vs1"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "exposureRoute",
+          "variable": "vt1",
+          "transform": "create",
+          "parameter": [ {
+            "valueString": "CodeableConcept"
+          } ]
+        } ],
+        "dependent": [ {
+          "name": "CodeableConceptAllergyIntolerance",
+          "variable": [ "vs1", "vt1" ]
+        } ]
+      }, {
+        "name": "note",
+        "source": [ {
+          "context": "vs0",
+          "element": "note",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "note",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      } ]
+    } ]
+  }, {
+    "name": "CodeableConceptAllergyIntolerance",
+    "typeMode": "none",
+    "input": [ {
+      "name": "src",
+      "type": "CodeableConcept",
+      "mode": "source"
+    }, {
+      "name": "tgt",
+      "type": "CodeableConcept",
+      "mode": "target"
+    } ],
+    "rule": [ {
+      "name": "coding",
+      "source": [ {
+        "context": "src",
+        "element": "coding",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "coding",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "Coding"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "SctCoding",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "text",
+      "source": [ {
+        "context": "src",
+        "element": "text",
+        "variable": "text"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "text",
+        "transform": "copy",
+        "parameter": [ {
+          "valueId": "text"
+        } ]
+      } ]
+    } ]
+  }, {
+    "name": "SctCoding",
+    "typeMode": "none",
+    "input": [ {
+      "name": "src",
+      "type": "Coding",
+      "mode": "source"
+    }, {
+      "name": "tgt",
+      "type": "Coding",
+      "mode": "target"
+    } ],
+    "rule": [ {
+      "name": "system",
+      "source": [ {
+        "context": "src",
+        "element": "system",
+        "variable": "system"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "system",
+        "transform": "copy",
+        "parameter": [ {
+          "valueId": "system"
+        } ]
+      } ]
+    }, {
+      "name": "version",
+      "source": [ {
+        "context": "src",
+        "element": "version",
+        "variable": "version"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "version",
+        "transform": "copy",
+        "parameter": [ {
+          "valueId": "version"
+        } ]
+      } ]
+    }, {
+      "name": "code",
+      "source": [ {
+        "context": "src",
+        "element": "code",
+        "variable": "code"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "code",
+        "transform": "copy",
+        "parameter": [ {
+          "valueId": "code"
+        } ]
+      } ]
+    }, {
+      "name": "display",
+      "source": [ {
+        "context": "src",
+        "element": "display",
+        "variable": "display"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "display",
+        "transform": "copy",
+        "parameter": [ {
+          "valueId": "display"
+        } ]
+      } ]
+    }, {
+      "name": "userSelected",
+      "source": [ {
+        "context": "src",
+        "element": "userSelected",
+        "variable": "userSelected"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "userSelected",
+        "transform": "copy",
+        "parameter": [ {
+          "valueId": "userSelected"
+        } ]
+      } ]
+    }, {
+      "name": "extension",
+      "source": [ {
+        "context": "src",
+        "element": "extension",
+        "variable": "vs",
+        "condition": "($this.url = 'https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid') or ($this.url = 'https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid')"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "extension",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "Extension"
+        } ]
+      }, {
+        "context": "vt",
+        "contextType": "variable",
+        "element": "url",
+        "transform": "copy",
+        "parameter": [ {
+          "valueString": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId"
+        } ]
+      } ],
+      "rule": [ {
+        "name": "extension",
+        "source": [ {
+          "context": "vs",
+          "element": "extension",
+          "variable": "vsx",
+          "condition": "$this.url = 'descriptionId'"
+        } ],
+        "target": [ {
+          "context": "vt",
+          "contextType": "variable",
+          "element": "extension",
+          "variable": "vtx",
+          "transform": "create",
+          "parameter": [ {
+            "valueString": "Extension"
+          } ]
+        }, {
+          "context": "vtx",
+          "contextType": "variable",
+          "element": "url",
+          "transform": "copy",
+          "parameter": [ {
+            "valueString": "descriptionId"
+          } ]
+        } ],
+        "rule": [ {
+          "name": "value-id",
+          "source": [ {
+            "context": "vsx",
+            "type": "id",
+            "element": "value",
+            "variable": "vsv"
+          } ],
+          "target": [ {
+            "context": "vtx",
+            "contextType": "variable",
+            "element": "value",
+            "variable": "vtv",
+            "transform": "create",
+            "parameter": [ {
+              "valueString": "Identifier"
+            } ]
+          }, {
+            "context": "vtv",
+            "contextType": "variable",
+            "element": "system",
+            "transform": "copy",
+            "parameter": [ {
+              "valueString": "http://snomed.info/sct"
+            } ]
+          }, {
+            "context": "vtv",
+            "contextType": "variable",
+            "element": "value",
+            "transform": "copy",
+            "parameter": [ {
+              "valueId": "vsv"
+            } ]
+          } ]
+        } ]
+      }, {
+        "name": "extension",
+        "source": [ {
+          "context": "vs",
+          "element": "extension",
+          "variable": "vsx",
+          "condition": "$this.url = 'descriptionDisplay'"
+        } ],
+        "target": [ {
+          "context": "vt",
+          "contextType": "variable",
+          "element": "extension",
+          "variable": "vtx",
+          "transform": "create",
+          "parameter": [ {
+            "valueString": "Extension"
+          } ]
+        }, {
+          "context": "vt",
+          "contextType": "variable",
+          "element": "extension",
+          "transform": "copy",
+          "parameter": [ {
+            "valueId": "vsx"
+          } ]
+        } ]
+      } ]
+    } ]
+  } ]
+}

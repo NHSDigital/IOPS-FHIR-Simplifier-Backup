@@ -1,0 +1,186 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Some text to transform</b></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter",
+      "valueReference": {
+        "reference": "Encounter/Base-STU3--Encounter--00001"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergyIntoleranceEnd-1",
+      "extension": [
+        {
+          "url": "endDate",
+          "valueDateTime": "2022-01-15"
+        },
+        {
+          "url": "reasonEnded",
+          "valueString": "Allergy resolved by prescribed medication"
+        }
+      ]
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-Evidence-1",
+      "valueReference": {
+        "reference": "DiagnosticReport/Base-STU3--DiagnosticReport--00001"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://acme.com/ids/patients/risks",
+      "value": "49476534",
+      "assigner": {
+        "reference": "Organization/NHSD-STU3--CareConnect-Organisation-1--00001"
+      }
+    }
+  ],
+  "clinicalStatus": "active",
+  "verificationStatus": "confirmed",
+  "type": "allergy",
+  "category": [
+    "medication"
+  ],
+  "criticality": "high",
+  "code": {
+    "coding": [
+      {
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "614975019"
+              },
+              {
+                "url": "descriptionDisplay",
+                "valueString": "Cashew nuts (substance)"
+              }
+            ]
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "227493005",
+        "display": "Cashew nut"
+      }
+    ],
+    "text": "Cashew nuts"
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "onsetDateTime": "2004",
+  "assertedDate": "2014-10-09T14:58:00+11:00",
+  "recorder": {
+    "reference": "Practitioner/example"
+  },
+  "asserter": {
+    "reference": "Patient/example"
+  },
+  "lastOccurrence": "2012-06",
+  "note": [
+    {
+      "text": "The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract."
+    }
+  ],
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1160593",
+            "display": "cashew nut allergenic extract Injectable Product"
+          },
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                "extension": [
+                  {
+                    "url": "descriptionId",
+                    "valueId": "1462228014"
+                  },
+                  {
+                    "url": "descriptionDisplay",
+                    "valueString": "Anacardium occidentale specific immunoglobulin E (substance)"
+                  }
+                ]
+              }
+            ],
+            "system": "http://snomed.info/sct",
+            "code": "388050007",
+            "display": "Cashew nut specific IgE"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "776058010"
+                    },
+                    {
+                      "url": "descriptionDisplay",
+                      "valueString": "Anaphylaxis (disorder)"
+                    }
+                  ]
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "39579001",
+              "display": "Anaphylactic reaction"
+            }
+          ]
+        }
+      ],
+      "description": "Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered",
+      "onset": "2012-06-12",
+      "severity": "severe",
+      "exposureRoute": {
+        "coding": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                "extension": [
+                  {
+                    "url": "descriptionId",
+                    "valueId": "765702016"
+                  },
+                  {
+                    "url": "descriptionDisplay",
+                    "valueString": "Subcutaneous route (qualifier value)"
+                  }
+                ]
+              }
+            ],
+            "system": "http://snomed.info/sct",
+            "code": "34206005",
+            "display": "Subcutaneous route"
+          }
+        ]
+      },
+      "note": [
+        {
+          "authorReference": {
+            "reference": "Practitioner/NHSD-STU3--CareConnect-Practitioner-1--00001"
+          },
+          "text": "The patient reports that the onset of urticaria was within 15 minutes of eating cashews."
+        }
+      ]
+    }
+  ]
+}

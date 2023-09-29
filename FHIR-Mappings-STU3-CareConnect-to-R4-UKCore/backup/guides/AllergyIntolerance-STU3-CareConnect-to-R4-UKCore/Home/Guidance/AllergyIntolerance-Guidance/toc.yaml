@@ -1,0 +1,20 @@
+- name: Index
+  filename: Index.page.md
+- name: Introduction
+  filename: Introduction.page.md
+- name: Base AllergyIntolerance Diff Table
+  filename: Base-AllergyIntolerance-Diff-Table.page.md
+- name: CareConnect to UKCore AllergyIntolerance Diff table
+  filename: CareConnect-to-UKCore-AllergyIntolerance-Diff-table.page.md
+- name: Extensions
+  filename: Extensions.page.md
+- name: Element position changes
+  filename: Element-position-changes.page.md
+- name: Element type changes
+  filename: Element-type-changes.page.md
+- name: Element slices
+  filename: Element-slices.page.md
+- name: Element binding changes
+  filename: Element-binding-changes.page.md
+- name: Element target profile changes
+  filename: Element-target-profile-changes.page.md
