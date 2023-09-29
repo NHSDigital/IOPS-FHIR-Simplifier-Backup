@@ -1,0 +1,205 @@
+{
+  "resourceType": "Bundle",
+  "id": "ec6077a4-553f-4087-944c-ea04c4593e3a",
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "86af4f6c-30c5-4947-acc7-2f55145181de"
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "fullUrl": "8e357e94-8e5c-496f-92d6-5d14f2e70016",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "44f85d15-8744-47c2-a790-4f5e38aacdb0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "fbf914b7-bb28-43e3-84ad-ab389dc1231f"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/0ae6ac98-6b0f-404f-a95b-c38a4318f686",
+            "display": "Repeat prescription request for Aspirin 300mg Dispersible tablets."
+          }
+        ],
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://dmd.nhs.uk",
+              "code": "329526003",
+              "display": "Aspirin 300mg dispersible tablets"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "effectivePeriod": {
+          "start": "2022-10-23T13:50:00+00:00",
+          "end": "2023-01-10T13:50:00+00:00"
+        },
+        "dateAsserted": "2022-11-23",
+        "dosage": [
+          {
+            "text": "2 tablet - 4 times a day - at a meal - Dissolve or mix with water before taking - up to a maximum of 3.6 gram in 24 hours",
+            "additionalInstruction": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "417995008",
+                    "display": "Dissolve or mix with water before taking"
+                  }
+                ]
+              }
+            ],
+            "timing": {
+              "repeat": {
+                "frequency": 4,
+                "period": 1,
+                "periodUnit": "d",
+                "when": [
+                  "C"
+                ]
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 2,
+                  "unit": "tablet",
+                  "system": "http://snomed.info/sct",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "a5b1910d-3241-4eed-9b5e-cb9d239e9fd7",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "4a3f265d-1c12-4aa1-9d22-49b7c5aa2048",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate",
+            "valueDateTime": "2017-02-24"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "504e8d5b-0444-41ae-b5b7-f6f161b2bbbc"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/0f450c33-67b2-4ca3-b0f9-fea75ccdcd44",
+            "display": "Acute prescription request for Amoxicillin 250mg capsules."
+          }
+        ],
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://dmd.nhs.uk",
+              "code": "39732311000001104",
+              "display": "Amoxicillin 250mg capsules"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "effectivePeriod": {
+          "start": "2022-10-23T13:50:00+00:00",
+          "end": "2023-01-10T13:50:00+00:00"
+        },
+        "dateAsserted": "2022-11-23",
+        "dosage": [
+          {
+            "text": "2 capsules 4 times a day.",
+            "timing": {
+              "repeat": {
+                "frequency": 4,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "301354004",
+                  "display": "Pain of ear"
+                }
+              ]
+            },
+            "site": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "123851003",
+                  "display": "Mouth region structure"
+                }
+              ]
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ]
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "421984009",
+                  "display": "Until finished"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 500,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

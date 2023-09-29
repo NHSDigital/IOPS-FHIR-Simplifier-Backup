@@ -1,0 +1,173 @@
+{
+  "resourceType": "Bundle",
+  "id": "a96bb563-c86b-4021-903e-5917b927c386",
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "a3294018-6c63-4556-8797-f782d1c95480"
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "fullUrl": "20885a31-acf0-42d5-bd5b-85c23f7a32fd",
+      "resource": {
+        "resourceType": "Task",
+        "id": "aef77afb-7e3c-427a-8657-2c427f71a271",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "725ca1bd-2860-4476-8802-8d035d802e7f"
+          }
+        ],
+        "status": "requested",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "103742009",
+              "display": "Renewal of prescription"
+            }
+          ]
+        },
+        "focus": {
+          "reference": "MedicationRequest/06c7d0e2-1022-4e47-ac55-f6463d701a4f",
+          "display": "Repeat prescription for Pulmicort 100 Turbohaler (AstraZeneca UK Ltd)"
+        },
+        "for": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "authoredOn": "2022-11-23T20:20:27+07:00",
+        "lastModified": "2022-11-23T20:20:27+07:00",
+        "requester": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "note": [
+          {
+            "authorString": "Patient",
+            "text": "Ran out of previous prescription"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "15c5ee13-73cf-45f8-a1f1-a7de3e10dae6",
+      "resource": {
+        "resourceType": "Task",
+        "id": "b395d57e-5d6c-4d2c-b590-fe2f2d708458",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "725ca1bd-2860-4476-8802-8d035d802e7f"
+          }
+        ],
+        "status": "rejected",
+        "statusReason": {
+          "text": "No longer suitable, please contact GP to organise an appointment"
+        },
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "103742009",
+              "display": "Renewal of prescription"
+            }
+          ]
+        },
+        "focus": {
+          "reference": "MedicationRequest/06c7d0e2-1022-4e47-ac55-f6463d701a4f",
+          "display": "Repeat prescription for Pulmicort 100 Turbohaler (AstraZeneca UK Ltd)"
+        },
+        "for": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "authoredOn": "2022-08-14T07:20:23+07:00",
+        "lastModified": "2022-08-14T11:40:47+07:00",
+        "requester": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        }
+      }
+    },
+    {
+      "fullUrl": "561d0bfa-a937-4d91-81ab-abe65bca2d95",
+      "resource": {
+        "resourceType": "Task",
+        "id": "84722efb-95b0-4769-921a-eda53382b320",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "2270b136-7a4c-491e-8bf1-624b5c4f20b7"
+          }
+        ],
+        "status": "in-progress",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "103742009",
+              "display": "Renewal of prescription"
+            }
+          ]
+        },
+        "focus": {
+          "reference": "MedicationRequest/06c7d0e2-1022-4e47-ac55-f6463d701a4f",
+          "display": "Repeat prescription for Pulmicort 100 Turbohaler (AstraZeneca UK Ltd)"
+        },
+        "for": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "authoredOn": "2022-10-13T16:20:27+07:00",
+        "lastModified": "2022-10-15T11:28:13+07:00",
+        "requester": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        }
+      }
+    }
+  ]
+}

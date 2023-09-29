@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "GPConnect-PrescriptionOrderingParameters",
+  "url": "https://fhir.hl7.org.uk/GPConnect-PrescriptionOrderingParameters",
+  "version": "1.0.0",
+  "name": "GPConnectPrescriptionOrderingParameters",
+  "title": "GP Connect Prescription Ordering Parameters",
+  "status": "active",
+  "date": "2022-12-06",
+  "publisher": "GP Connect",
+  "description": "A code set to define parameters provided when managing patients' prescriptions",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "preferred-performer",
+      "display": "Preferred performer",
+      "definition": "The preferred performer to dispense the prescription."
+    },
+    {
+      "code": "sent-to-eps",
+      "display": "Sent to EPS",
+      "definition": "The prescription request has been sent to EPS to be fulfilled."
+    }
+  ]
+}

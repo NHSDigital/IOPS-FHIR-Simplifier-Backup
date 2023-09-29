@@ -1,0 +1,78 @@
+{
+  "resourceType": "Bundle",
+  "id": "a96bb563-c86b-4021-903e-5917b927c386",
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "a3294018-6c63-4556-8797-f782d1c95480"
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "fullUrl": "20885a31-acf0-42d5-bd5b-85c23f7a32fd",
+      "resource": {
+        "resourceType": "Task",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "30d65c8e-98e8-4806-b6a6-fpwjfkhs729"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "103742009",
+              "display": "Renewal of prescription"
+            }
+          ]
+        },
+        "focus": {
+          "reference": "MedicationRequest/b269d1d7-1acf-47bb-8b3c-e38b583d9a07",
+          "display": "Repeat prescription for Pulmicort 100 Turbohaler (AstraZeneca UK Ltd)"
+        },
+        "for": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "authoredOn": "2023-01-10T09:20:27.000Z",
+        "lastModified": "2023-01-20T10:20:24.000Z",
+        "requester": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith",
+          "output": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://fhir.hl7.org.uk/GPConnect-PrescriptionOrderingParameters",
+                    "code": "sent-to-eps",
+                    "display": "Sent to EPS"
+                  }
+                ]
+              },
+              "valueIdentifier": {
+                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                "value": "4857b9d3-b714-44b9-9e67-3df67275b785"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
