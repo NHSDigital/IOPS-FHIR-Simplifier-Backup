@@ -1,0 +1,122 @@
+<!--  This xml example is for illustrative purposes only and has not been clinically verified.  -->
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bf133c0d-4da5-40c6-9843-6d5a1104b98a" />
+  <type value="message" />
+  <timestamp value="2021-05-07T16:15:32Z" />
+  <!--   Message Header   -->
+  <entry>
+    <fullUrl value="urn:message-header-167434" />
+    <resource>
+      <MessageHeader>
+        <id value="urn:message-header-167434" />
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>The quick brown fox jumps over the lazy dog</p>
+          </div>
+        </text>
+        <eventCoding>
+          <system value="http://hl7.org/fhir/message-events" />
+          <code value="individual-requirements-1" />
+          <display value="Individual Requirements" />
+        </eventCoding>
+        <source>
+          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
+        </source>
+        <focus>
+          <reference value="urn:medication-statement-3504110000114329" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <!--  Patient associated with the encounter.  -->
+  <entry>
+    <fullUrl value="urn:patient-4738562854" />
+    <resource>
+      <Patient>
+        <id value="urn:patient-4738562854" />
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="4738562854" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <text value="Mr Toby Lerone" />
+          <family value="Lerone" />
+          <given value="Toby" />
+          <prefix value="Mr" />
+        </name>
+        <gender value="male" />
+        <birthDate value="1973-02-20" />
+      </Patient>
+    </resource>
+  </entry>
+  <!--  Medication -->
+  <entry>
+    <fullUrl value="urn:medication-27658006" />
+    <resource>
+      <Medication>
+        <id value="urn:medication-27658006" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="321987003" />
+            <display value="Citalopram 20mg tablets" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <!--   Medication Statement   -->
+  <entry>
+    <fullUrl value="urn:medication-statement-3504110000114329" />
+    <resource>
+      <MedicationStatement>
+        <id value="urn:medication-statement-3504110000114329" />
+        <status value="active" />
+        <!-- Unknown - the MedicationStatement resource does not have a category for `leave` -->
+        <!--
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/medication-request-category" />
+                        <code value="" />
+                        <display value="" />
+                    </coding>
+                </category>
+                -->
+        <medicationReference>
+          <reference value="urn:medication-27658006" />
+          <display value="Citalopram 20mg tablets" />
+        </medicationReference>
+        <subject>
+          <reference value="urn:patient-4738562854" />
+          <display value="Mr Toby Lerone" />
+        </subject>
+        <dosage>
+          <timing>
+            <repeat>
+              <frequency value="1" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="26643006" />
+              <display value="oral" />
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="3" />
+              <unit value="tablet" />
+              <system value="http://snomed.info/sct" />
+              <code value="428673006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+</Bundle>

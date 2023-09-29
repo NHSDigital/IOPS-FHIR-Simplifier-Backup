@@ -1,0 +1,227 @@
+{
+	"resourceType": "Bundle",
+	"id": "ff813874-3e56-4176-a666-e55a4c4a37d6",
+	"type": "collection",
+	"entry": [
+		{
+			"fullUrl": "Medication/0547f17f-7d46-4667-88a7-4c19a6d521d8",
+			"resource": {
+				"resourceType": "Medication",
+				"id": "0547f17f-7d46-4667-88a7-4c19a6d521d8",
+				"meta": {
+					"profile": [
+						"https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"
+					]
+				},
+				"text": {
+					"status": "generated",
+					"div": "Calcium gluconate 10% 20mL"
+				},
+				"code": {
+					"text": "Calcium gluconate 10% 20mL"
+				},
+				"amount": {
+					"numerator": {
+						"value": 20,
+						"unit": "mL",
+						"system": "http://unitsofmeasure.org",
+						"code": "mL"
+					},
+					"denominator": {
+						"value": 1
+					}
+				},
+				"ingredient": [
+					{
+						"itemCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://dmd.nhs.uk",
+									"code": "53691001",
+									"display": "Calcium gluconate"
+								}
+							]
+						},
+						"strength": {
+							"numerator": {
+								"value": 10,
+								"unit": "%",
+								"system": "http://unitsofmeasure.org",
+								"code": "%"
+							},
+							"denominator": {
+								"value": 1
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Medication/aa3d3b67-e390-4b67-98ea-f7a04533f727",
+			"resource": {
+				"resourceType": "Medication",
+				"id": "aa3d3b67-e390-4b67-98ea-f7a04533f727",
+				"meta": {
+					"profile": [
+						"https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"
+					]
+				},
+				"text": {
+					"status": "generated",
+					"div": "Glucose 5% 100mL"
+				},
+				"code": {
+					"text": "Glucose 5% 100mL"
+				},
+				"amount": {
+					"numerator": {
+						"value": 100,
+						"unit": "mL",
+						"system": "http://unitsofmeasure.org",
+						"code": "mL"
+					},
+					"denominator": {
+						"value": 1
+					}
+				},
+				"ingredient": [
+					{
+						"itemCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://dmd.nhs.uk",
+									"code": "111138002",
+									"display": "Glucose"
+								}
+							]
+						},
+						"strength": {
+							"numerator": {
+								"value": 5,
+								"unit": "%",
+								"system": "http://unitsofmeasure.org",
+								"code": "%"
+							},
+							"denominator": {
+								"value": 1
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Medication/72c5dfc7-e865-436c-b67a-937c10ec14b9",
+			"resource": {
+				"resourceType": "Medication",
+				"id": "72c5dfc7-e865-436c-b67a-937c10ec14b9",
+				"meta": {
+					"profile": [
+						"https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"
+					]
+				},
+				"text": {
+					"status": "generated",
+					"div": "Calcium gluconate 10% 20mL Glucose 5% 100mL"
+				},
+				"code": {
+					"text": "Calcium gluconate 10% 20mL Glucose 5% 100mL"
+				},
+				"ingredient": [
+					{
+						"itemReference": {
+							"reference": "Medication/0547f17f-7d46-4667-88a7-4c19a6d521d8",
+							"display": "Calcium gluconate 10% 20mL"
+						}
+					},
+					{
+						"itemReference": {
+							"reference": "Medication/aa3d3b67-e390-4b67-98ea-f7a04533f727",
+							"display": "Glucose 5% 100mL"
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "MedicationRequest/bd4cbd2e-99af-4deb-a2bc-e1b1fc804120",
+			"resource": {
+				"resourceType": "MedicationRequest",
+				"id": "bd4cbd2e-99af-4deb-a2bc-e1b1fc804120",
+				"meta": {
+					"profile": [
+						"https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+					]
+				},
+				"status": "active",
+				"intent": "order",
+				"medicationReference": {
+					"reference": "Medication/72c5dfc7-e865-436c-b67a-937c10ec14b9",
+					"display": "Calcium gluconate 10% 20mL Glucose 5% 100mL"
+				},
+				"subject": {
+					"reference": "Patient/UKCore-Patient-RichardSmith-Example"
+				},
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "5291005",
+								"display": "Hypocalcaemia"
+							}
+						]
+					}
+				],
+				"dosageInstruction": [
+					{
+						"text": "Continuous infusion - 120mL",
+						"additionalInstruction": [
+							{
+								"text": "May repeat until patient is asymptomatic"
+							}
+						],
+						"timing": {
+							"repeat": {
+								"duration": 10,
+								"durationUnit": "min"
+							}
+						},
+						"route": {
+							"coding": [
+								{
+									"system": "http://snomed.info/sct",
+									"code": "47625008",
+									"display": "Intravenous"
+								}
+							]
+						},
+						"method": {
+							"coding": [
+								{
+									"system": "http://snomed.info/sct",
+									"code": "261754007",
+									"display": "Continuous infusion"
+								}
+							]
+						},
+						"doseAndRate": [
+							{
+								"doseQuantity": {
+									"value": 120,
+									"unit": "millilitre",
+									"system": "http://unitsofmeasure.org",
+									"code": "mL"
+								}
+							}
+						]
+					}
+				],
+				"substitution": {
+					"allowedBoolean": false
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,198 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="43955772-3136-49be-829e-ac04b56894d5" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="inpatient" />
+      <display value="inpatient" />
+    </coding>
+  </category>
+  <priority value="routine" />
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="52388000" />
+      <display value="Prednisolone" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <sequence value="1" />
+    <text value="60 milligram - once a day - for 4 days" />
+    <timing>
+      <repeat>
+        <boundsDuration>
+          <value value="4" />
+          <unit value="day" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+        </boundsDuration>
+        <frequency value="1" />
+        <period value="1" />
+        <periodUnit value="d" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="60" />
+        <unit value="milligram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mg" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dosageInstruction>
+    <sequence value="2" />
+    <text value="50 milligram - once a day - for 1 day" />
+    <timing>
+      <repeat>
+        <boundsDuration>
+          <value value="1" />
+          <unit value="day" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+        </boundsDuration>
+        <frequency value="1" />
+        <period value="1" />
+        <periodUnit value="d" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="50" />
+        <unit value="milligram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mg" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dosageInstruction>
+    <sequence value="3" />
+    <text value="40 milligram - once a day - for 1 day" />
+    <timing>
+      <repeat>
+        <boundsDuration>
+          <value value="1" />
+          <unit value="day" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+        </boundsDuration>
+        <frequency value="1" />
+        <period value="1" />
+        <periodUnit value="d" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="40" />
+        <unit value="milligram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mg" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dosageInstruction>
+    <sequence value="4" />
+    <text value="30 milligram - once a day - for 1 day" />
+    <timing>
+      <repeat>
+        <boundsDuration>
+          <value value="1" />
+          <unit value="day" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+        </boundsDuration>
+        <frequency value="1" />
+        <period value="1" />
+        <periodUnit value="d" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="30" />
+        <unit value="milligram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mg" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dosageInstruction>
+    <sequence value="5" />
+    <text value="20 milligram - once a day - for 1 day" />
+    <timing>
+      <repeat>
+        <boundsDuration>
+          <value value="1" />
+          <unit value="day" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+        </boundsDuration>
+        <frequency value="1" />
+        <period value="1" />
+        <periodUnit value="d" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="20" />
+        <unit value="milligram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mg" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dosageInstruction>
+    <sequence value="6" />
+    <text value="10 milligram - once a day - for 1 day - Then stop" />
+    <additionalInstruction>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="422327006" />
+        <display value="Then stop" />
+      </coding>
+    </additionalInstruction>
+    <timing>
+      <repeat>
+        <boundsDuration>
+          <value value="1" />
+          <unit value="day" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+        </boundsDuration>
+        <frequency value="1" />
+        <period value="1" />
+        <periodUnit value="d" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="10" />
+        <unit value="milligram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mg" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

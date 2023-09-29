@@ -1,0 +1,71 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="b13724a0-7433-4c01-9c88-968baf91c6b4" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="completed" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="inpatient" />
+      <display value="inpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="22969001" />
+      <display value="Oxytetracycline" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="250 milligram - every 6 hours - oral - for 1 month" />
+    <timing>
+      <repeat>
+            <boundsDuration>
+                    <value value="1" />
+                    <unit value="month" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="m" />
+                </boundsDuration>
+        <frequency value="1" />
+        <period value="6" />
+        <periodUnit value="h" />
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="26643006" />
+        <display value="oral" />
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="250" />
+        <unit value="milligram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mg" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

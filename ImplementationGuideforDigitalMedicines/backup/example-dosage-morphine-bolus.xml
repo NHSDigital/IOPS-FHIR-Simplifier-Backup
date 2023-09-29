@@ -1,0 +1,69 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="1558295a-9213-44cb-81e1-e1ab8fcc3e81" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <intent value="order" />
+  <status value="active" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="inpatient" />
+      <display value="inpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="73572009" />
+      <display value="Morphine" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="Intermittent bolus 5 milligram - as required - Intravenous route - Administer via PCA with a 5 minute lockout" />
+    <additionalInstruction>
+      <text value="Administer via PCA with a 5 minute lockout" />
+    </additionalInstruction>
+    <asNeededBoolean value="true" />
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="47625008" />
+        <display value="Intravenous route" />
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="397884008" />
+        <display value="Intermittent bolus" />
+      </coding>
+    </method>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="5" />
+        <unit value="milligram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mg" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

@@ -1,0 +1,282 @@
+<!--    This xml example is for illustrative purposes only and has not been clinically verified.    -->
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="830a2a41-cca8-46a3-a35c-3237cb9828e4" />
+  <type value="message" />
+  <timestamp value="2021-05-07T16:15:32Z" />
+  <!--     Message Header     -->
+  <entry>
+    <fullUrl value="urn:message-header-167434" />
+    <resource>
+      <MessageHeader>
+        <id value="urn:message-header-167434" />
+        <eventCoding>
+          <system value="http://hl7.org/fhir/message-events" />
+          <code value="dispense-notification" />
+          <display value="Dispense Notification" />
+        </eventCoding>
+        <source>
+          <name value="ACME Clinical Systems" />
+          <software value="ACME Pharmacy" />
+          <version value="4.1.15" />
+          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
+        </source>
+        <focus>
+          <reference value="urn:med-disp-324234234" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+<!--  // Patient associated with the encounter   -->
+    <entry>
+        <fullUrl value="urn:patient-01912" />
+        <resource>
+            <Patient>
+                <id value="patient-01912" />
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                    <value value="4857773456" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <text value="Mr Chris Packet" />
+                    <family value="Packet" />
+                    <given value="Chris" />
+                    <prefix value="Mr" />
+                </name>
+                <gender value="male" />
+                <birthDate value="1995-11-12" />
+            </Patient>
+        </resource>
+    </entry>
+  <!--     Performer associated with the encounter.     -->
+  <entry>
+    <fullUrl value="urn:staff-0002" />
+    <resource>
+      <Practitioner>
+        <id value="urn:staff-0002" />
+        <name>
+          <text value="Dr Allo Kate" />
+          <family value="Kate" />
+          <given value="Allo" />
+          <prefix value="Dr" />
+        </name>
+        <qualification>
+          <code>
+            <coding>
+              <system value="https://fhir.hl7.org.uk/Id/gpc-number" />
+              <code value="123543" />
+              <display value="General Pharmaceutical Council" />
+            </coding>
+          </code>
+        </qualification>
+      </Practitioner>
+    </resource>
+  </entry>
+  <!--   Medication prescribed    -->
+  <entry>
+    <fullUrl value="urn:medication-38020211000001109" />
+    <resource>
+      <Medication>
+        <id value="urn:medication-38020211000001109" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="38020211000001109" />
+            <display value="Pregabalin 75mg tablets" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <!-- Location -->
+  <entry>
+    <fullUrl value="urn:location-498773" />
+    <resource>
+      <Location>
+        <id value="urn:location-498773" />
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">Manchester Royal Infirmary, South Wing, second floor</div>
+        </text>
+        <identifier>
+          <value value="B1-S.F2" />
+        </identifier>
+        <status value="active" />
+        <name value="South Wing, second floor" />
+        <alias value="Manchester Royal Infirmary, South Wing, second floor" />
+        <description value="Second floor of the Old South Wing, formerly in use by Psychiatry" />
+        <mode value="instance" />
+        <telecom>
+          <system value="phone" />
+          <value value="2328" />
+          <use value="work" />
+        </telecom>
+        <address>
+          <use value="work" />
+          <line value="Galapagosweg 91, Building A" />
+          <city value="Manchester" />
+          <postalCode value="M13 9WL" />
+          <country value="UK" />
+        </address>
+        <physicalType>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/location-physical-type" />
+            <code value="wi" />
+            <display value="Wing" />
+          </coding>
+        </physicalType>
+        <position>
+          <longitude value="-83.6945691" />
+          <latitude value="42.25475478" />
+          <altitude value="0" />
+        </position>
+      </Location>
+    </resource>
+  </entry>
+  <!-- Medication Request -->
+  <entry>
+    <fullUrl value="urn:med-req-342355475687898" />
+    <resource>
+      <MedicationRequest>
+        <id value="urn:med-req-342355475687898" />
+        <status value="active" />
+        <intent value="order" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+          </coding>
+        </category>
+        <priority value="routine" />
+        <medicationReference>
+          <reference value="urn:medication-38020211000001109" />
+        </medicationReference>
+        <subject>
+          <reference value="urn:patient-01912" />
+          <display value="Mr Chris Packet Chegg" />
+        </subject>
+        <authoredOn value="2020-05-15T15:00:00Z" />
+        <requester>
+          <reference value="urn:staff-0002" />
+          <display value="Dr Allo Kate" />
+        </requester>
+        <recorder>
+          <reference value="urn:staff-0002" />
+          <display value="Dr Allo Kate" />
+        </recorder>
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <frequency value="3" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="26643006" />
+              <display value="oral" />
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="500" />
+              <unit value="milligram" />
+              <system value="http://unitsofmeasure.org" />
+              <code value="mg" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+        <substitution>
+          <allowedBoolean value="false" />
+        </substitution>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <!--     Medication Dispense     -->
+  <entry>
+    <fullUrl value="urn:med-disp-324234234" />
+    <resource>
+      <MedicationDispense>
+        <id value="urn:med-disp-324234234" />
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="39393" />
+        </identifier>
+        <status value="in-progress" />
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/medication-request-category" />
+            <code value="discharge" />
+            <display value="discharge" />
+          </coding>
+        </category>
+        <medicationReference>
+          <reference value="urn:med-req-342355475687898" />
+        </medicationReference>
+        <subject>
+          <reference value="urn:patient-01912" />
+          <display value="Mr Chris Packet Chegg" />
+        </subject>
+        <performer>
+          <actor>
+            <reference value="urn:staff-0002" />
+            <display value="Dr Allo Kate" />
+          </actor>
+        </performer>
+        <authorizingPrescription>
+          <reference value="urn:med-req-342355475687898" />
+        </authorizingPrescription>
+        <quantity>
+          <value value="21" />
+          <unit value="TAB" />
+          <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm" />
+          <code value="TAB" />
+        </quantity>
+        <daysSupply>
+          <value value="21" />
+          <unit value="Day" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+        </daysSupply>
+        <whenPrepared value="2021-05-07T16:15:32Z" />
+        <whenHandedOver value="2021-05-07T16:15:32Z" />
+        <destination>
+          <reference value="urn:location-498773" />
+        </destination>
+        <note>
+          <text value="Take after meals." />
+        </note>
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <frequency value="2" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="428673006" />
+              <display value="oral" />
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="56" />
+              <unit value="tablet" />
+              <system value="http://snomed.info/sct" />
+              <code value="428673006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+        <substitution>
+          <wasSubstituted value="false" />
+        </substitution>
+      </MedicationDispense>
+    </resource>
+  </entry>
+</Bundle>

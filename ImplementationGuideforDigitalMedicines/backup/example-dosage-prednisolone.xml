@@ -1,0 +1,73 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="25e78b08-1d8a-419a-988d-f0fbf2e26b40" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="inpatient" />
+      <display value="inpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="325427002" />
+      <display value="Prednisolone 5mg tablets" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="8 tablet - once a day - after a meal - for 7 days - Then stop" />
+    <additionalInstruction>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="422327006" />
+        <display value="Then stop" />
+      </coding>
+    </additionalInstruction>
+    <timing>
+      <repeat>
+        <boundsDuration>
+          <value value="7" />
+          <unit value="day" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+        </boundsDuration>
+        <frequency value="1" />
+        <period value="1" />
+        <periodUnit value="d" />
+        <when value="MORN" />
+        <when value="PC" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="8" />
+        <unit value="tablet" />
+        <system value="http://snomed.info/sct" />
+        <code value="428673006" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

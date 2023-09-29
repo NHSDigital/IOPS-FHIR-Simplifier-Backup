@@ -1,0 +1,68 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="18a8ea33-dc5f-4fb7-985e-acc474bf97cd" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="outpatient" />
+      <display value="outpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="38898011000001108" />
+      <display value="Hyoscine 1mg/72hours transdermal patches" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2019-01-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="Apply 1 patch - every 72 hours - Rotate site of application" />
+    <method>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="417924000" />
+                <display value="Apply" />
+            </coding>
+        </method>
+    <timing>
+      <repeat>
+        <frequency value="1" />
+        <period value="72" />
+        <periodUnit value="h" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1" />
+        <unit value="patch" />
+        <system value="http://snomed.info/sct" />
+        <code value="419702001" />
+      </doseQuantity>
+    </doseAndRate>
+    <additionalInstruction>
+            <text value="Rotate site of application" />
+        </additionalInstruction>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

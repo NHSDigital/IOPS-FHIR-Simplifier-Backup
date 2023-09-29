@@ -1,0 +1,72 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="e8675beb-dc9b-4281-a82f-d73a938d981f" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <intent value="order" />
+  <status value="active" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="inpatient" />
+      <display value="inpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="108964008" />
+      <display value="Epoetin alfa" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dosageInstruction>
+    <text value="Inject 4500 unit - once a week - Subcutaneous route" />
+    <timing>
+      <repeat>
+        <frequency value="1" />
+        <period value="1" />
+        <periodUnit value="wk" />
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="34206005" />
+        <display value="Subcutaneous route" />
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="422145002" />
+        <display value="Inject" />
+      </coding>
+    </method>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="4500" />
+        <unit value="unit" />
+        <system value="http://snomed.info/sct" />
+        <code value="767525000" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

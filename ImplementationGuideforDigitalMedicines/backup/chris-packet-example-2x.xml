@@ -1,0 +1,243 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="24e34f04-270d-446a-a8c2-0991c93e9b46" />
+    <identifier>
+        <system value="urn:[organisation_name]:[system_name]" />
+        <value value="urn:8cd8108d-8c72-4fe9-a284-cd28b127fcfa" />
+    </identifier>
+    <type value="message" />
+    <timestamp value="2021-05-07T16:15:32Z" />
+    <!--   Message Header   -->
+    <entry>
+        <fullUrl value="urn:message-header-167434" />
+        <resource>
+            <MessageHeader>
+                <id value="urn:message-header-167434" />
+                <eventCoding>
+                    <system value="https://fhir.hl7.org.uk//CodeSystem/message-event" />
+                    <code value="medication-statement" />
+                    <display value="Medication Statement" />
+                </eventCoding>
+                <source>
+                    <name value="ACME Clinical Systems" />
+                    <software value="ACME ePMA" />
+                    <version value="3.5.68" />
+                    <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
+                </source>
+                <focus>
+                    <reference value="urn:medication-statement-1234" />
+                    <reference value="urn:medication-statement-123456" />
+                </focus>
+            </MessageHeader>
+        </resource>
+    </entry>
+    <!--   // Patient associated with the encounter   -->
+    <entry>
+        <fullUrl value="urn:patient-01912" />
+        <resource>
+            <Patient>
+                <id value="urn:patient-01912" />
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                    <value value="4857773456" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <text value="Mr Chris Packet" />
+                    <family value="Packet" />
+                    <given value="Chris" />
+                    <prefix value="Mr" />
+                </name>
+                <gender value="male" />
+                <birthDate value="1995-11-12" />
+            </Patient>
+        </resource>
+    </entry>
+    <!--    // Clinician who stopped Codine    -->
+    <entry>
+        <fullUrl value="urn:staff-1112" />
+        <resource>
+            <Practitioner>
+                <id value="urn:staff-1112" />
+                <name>
+                    <text value="Dr Maikeu Well" />
+                    <family value="Well" />
+                    <given value="Maikeu" />
+                    <prefix value="Dr" />
+                </name>
+                <qualification>
+                    <code>
+                        <coding>
+                            <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+                            <code value="2145879" />
+                            <display value="General Medical Council" />
+                        </coding>
+                    </code>
+                </qualification>
+            </Practitioner>
+        </resource>
+    </entry>
+    <!--   // Pharmacist who verified and amended the Pregabalin discharge instructions   -->
+    <entry>
+        <fullUrl value="urn:staff-0009" />
+        <resource>
+            <Practitioner>
+                <id value="urn:staff-0009" />
+                <name>
+                    <text value="Mrs Janet Wilson" />
+                    <family value="Wilson" />
+                    <given value="Janet" />
+                    <prefix value="Mrs" />
+                </name>
+                <qualification>
+                    <code>
+                        <coding>
+                            <system value="https://fhir.hl7.org.uk/Id/gphc-number" />
+                            <code value="4563190" />
+                            <display value="General Pharmaceutical Council" />
+                        </coding>
+                    </code>
+                </qualification>
+            </Practitioner>
+        </resource>
+    </entry>
+    <!--   // Medication   -->
+    <entry>
+        <fullUrl value="urn:medication-634523423" />
+        <resource>
+            <Medication>
+                <id value="urn:medication-634523423" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="322503009" />
+                        <display value="Codeine 30mg tablets" />
+                    </coding>
+                </code>
+            </Medication>
+        </resource>
+    </entry>
+    <!--   // MedicationStatement   -->
+    <entry>
+        <fullUrl value="urn:medication-statement-1234" />
+        <resource>
+            <MedicationStatement>
+                <id value="urn:medication-statement-1234" />
+                <status value="stopped" />
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/medication-request-category" />
+                        <code value="discharge" />
+                        <display value="Discharge" />
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="urn:medication-634523423" />
+                    <display value="Codeine 30mg tablets" />
+                </medicationReference>
+                <subject>
+                    <reference value="urn:patient-01912" />
+                    <display value="Mr Chris PACKET" />
+                </subject>
+                <dateAsserted value="2021-05-07T16:15:32Z" />
+                <informationSource>
+                    <reference value="urn:staff-1112" />
+                    <display value="Dr Maikeu Better" />
+                </informationSource>
+                <dosage>
+                    <timing>
+                        <repeat>
+                            <frequency value="4" />
+                            <period value="1" />
+                            <periodUnit value="d" />
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="26643006" />
+                            <display value="oral" />
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="2" />
+                            <unit value="tablet" />
+                            <system value="http://snomed.info/sct" />
+                            <code value="428673006" />
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+    <!--      // Medication      -->
+    <entry>
+        <fullUrl value="urn:medication-415159003" />
+        <resource>
+            <Medication>
+                <id value="urn:medication-415159003" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="415159003" />
+                        <display value="Pregabalin" />
+                    </coding>
+                </code>
+            </Medication>
+        </resource>
+    </entry>
+    <!--      // MedicationStatement      -->
+    <entry>
+        <fullUrl value="urn:medication-statement-123456" />
+        <resource>
+            <MedicationStatement>
+                <id value="urn:medication-statement-123456" />
+                <status value="active" />
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/medication-request-category" />
+                        <code value="discharge" />
+                        <display value="Discharge" />
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="urn:medication-415159003" />
+                    <display value="Pregabalin" />
+                </medicationReference>
+                <subject>
+                    <reference value="urn:patient-01912" />
+                    <display value="Mr Chris PACKET" />
+                </subject>
+                <dateAsserted value="2021-05-09T10:12:42Z" />
+                <informationSource>
+                    <reference value="urn:staff-0009" />
+                    <display value="Mrs Janet Wilson" />
+                </informationSource>
+                <dosage>
+                    <timing>
+                        <repeat>
+                            <frequency value="2" />
+                            <period value="1" />
+                            <periodUnit value="d" />
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="26643006" />
+                            <display value="oral" />
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="100" />
+                            <unit value="milligram" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="mg" />
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+</Bundle>

@@ -1,0 +1,25 @@
+{
+  "name": null,
+  "version": null,
+  "description": null,
+  "author": null,
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "devDependencies": null,
+  "canonicals": null,
+  "keywords": null,
+  "license": null,
+  "homepage": null,
+  "directories": null,
+  "title": null,
+  "fhir-version-list": null,
+  "maintainers": null,
+  "canonical": null,
+  "url": null,
+  "jurisdiction": null,
+  "dependencies": {
+    "UKCore.R4.STU.02.00.00": "2.0.0",
+    "uk.nhsdigital.clinical.r4": "2.1.0-dev"
+  }
+}

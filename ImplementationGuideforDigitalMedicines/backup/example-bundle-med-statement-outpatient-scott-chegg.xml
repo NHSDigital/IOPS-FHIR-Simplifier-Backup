@@ -1,0 +1,132 @@
+<!--     This xml example is for illustrative purposes only and has not been clinically verified.     -->
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="973ca712-a049-496b-b21e-83be8a9cdd86" />
+  <type value="message" />
+  <timestamp value="2021-05-07T16:15:32Z" />
+  <!--   Message Header   -->
+  <entry>
+    <fullUrl value="urn:message-header-167434" />
+    <resource>
+      <MessageHeader>
+        <id value="urn:message-header-167434" />
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>The quick brown fox jumps over the lazy dog</p>
+          </div>
+        </text>
+        <eventCoding>
+          <system value="http://hl7.org/fhir/message-events" />
+          <code value="individual-requirements-1" />
+          <display value="Individual Requirements" />
+        </eventCoding>
+        <source>
+          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
+        </source>
+        <focus>
+          <reference value="urn:medication-327337009" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <!--     Patient associated with the encounter.     -->
+  <entry>
+    <fullUrl value="urn:patient-3204221854" />
+    <resource>
+      <Patient>
+        <id value="urn:patient-3204221854" />
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="3204221854" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <text value="Mr Scott Chegg" />
+          <family value="Chegg" />
+          <given value="Scott" />
+          <prefix value="Mr" />
+        </name>
+        <gender value="male" />
+        <birthDate value="1960-04-02" />
+      </Patient>
+    </resource>
+  </entry>
+  <!--     Medication    -->
+  <entry>
+    <fullUrl value="urn:medication-327337009" />
+    <resource>
+      <Medication>
+        <id value="urn:medication-327337009" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="327337009" />
+            <display value="Goserelin 3.6mg implant pre-filled syringes" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <!--      Medication Statement      -->
+  <entry>
+    <fullUrl value="urn:med-statement-87634423" />
+    <resource>
+      <MedicationStatement>
+        <id value="urn:medication-statement-87634423" />
+        <status value="active" />
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/medication-request-category" />
+            <code value="outpatient" />
+            <display value="outpatient" />
+          </coding>
+        </category>
+        <medicationReference>
+          <reference value="urn:medication-327337009" />
+          <display value="Goserelin 3.6mg implant pre-filled syringes" />
+        </medicationReference>
+        <subject>
+          <reference value="urn:patient-3204221854" />
+          <display value="Mr Scott Chegg" />
+        </subject>
+        <dosage>
+          <timing>
+            <event value="2020-05-01" />
+            <repeat>
+              <count value="1" />
+            </repeat>
+          </timing>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="59380008" />
+              <display value="Anterior abdominal wall structure" />
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="78421000" />
+              <display value="intramuscular route" />
+            </coding>
+          </route>
+          <method>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="422145002" />
+              <display value="inject" />
+            </coding>
+          </method>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1" />
+              <unit value="Vial" />
+              <system value="http://snomed.info/sct" />
+              <code value="415818006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+</Bundle>

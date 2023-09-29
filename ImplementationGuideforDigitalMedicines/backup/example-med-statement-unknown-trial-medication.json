@@ -1,0 +1,36 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "922a7b73-914e-47dd-9a88-8fa156c783aa",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"
+    ]
+  },
+  "status": "active",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "419841000001106",
+        "display": "Clinical trial medication"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "urn:patient-3204221854",
+    "display": "Mr Scott Chegg"
+  },
+  "effectivePeriod": {
+    "start": "2022-04-18"
+  },
+  "dateAsserted": "2022-04-21",
+  "informationSource": {
+    "reference": "urn:organization-K82076",
+    "type": "Organization",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "K82076"
+    },
+    "display": "WATLING VALE MEDICAL CTR"
+  }
+}

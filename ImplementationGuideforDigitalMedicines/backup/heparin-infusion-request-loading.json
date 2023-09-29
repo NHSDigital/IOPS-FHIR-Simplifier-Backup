@@ -1,0 +1,136 @@
+{
+  "resourceType": "Bundle",
+  "type": "message",
+  "id": "heparin-infusion-request-loading",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:03791226-ed5d-469c-abb0-0a1c25c74839",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "03791226-ed5d-469c-abb0-0a1c25c74839",
+        "eventCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "33633005",
+                    "display": "Prescription of drug"
+                },
+                "source": {
+                    "endpoint": "https://myendpoint.nhs.uk/"
+                },
+        "focus": [
+          {
+            "reference": "2f09481c-a0bb-48aa-b52c-53211984b1bb",
+            "type": "MedicationRequest"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4a0d9bdc-a583-4390-8983-92e287028b06",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4a0d9bdc-a583-4390-8983-92e287028b06",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 50,
+          "unit": "kilogram",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2f09481c-a0bb-48aa-b52c-53211984b1bb",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "2f09481c-a0bb-48aa-b52c-53211984b1bb",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "subject": {
+          "reference": "Patient/UKCore-Patient-RachelSmith-Example"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://dmd.nhs.uk",
+              "code": "36054511000001107",
+              "display": "Heparin sodium 20,000units/20ml solution for injection ampoules"
+            }
+          ]
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "49956009",
+                "display": "Antenatal deep vein thrombosis"
+              }
+            ]
+          }
+        ],
+        "supportingInformation": [
+          {
+            "reference": "Observation/4a0d9bdc-a583-4390-8983-92e287028b06",
+            "type": "Observation"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Continuous infusion 75 international unit per kilogram - Intravenous - over 5 minutes",
+            "timing": {
+              "repeat": {
+                "duration": 5,
+                "durationUnit": "min",
+                "count": 1
+              }
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "261754007",
+                  "display": "Continuous infusion"
+                }
+              ]
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "https://dmd.nhs.uk",
+                  "code": "47625008",
+                  "display": "Intravenous"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "rateQuantity": {
+                  "value": 75,
+                  "unit": "international unit per kilogram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "[iU]/kg"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

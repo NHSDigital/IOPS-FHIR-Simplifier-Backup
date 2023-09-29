@@ -1,0 +1,77 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "heparin-infusion-request-maintenance-calculateddose",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/UKCore-Patient-RachelSmith-Example"
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://dmd.nhs.uk",
+        "code": "36054511000001107",
+        "display": "Heparin sodium 20,000units/20ml solution for injection ampoules"
+      }
+    ]
+  },
+  "reasonCode": [
+          {
+               "coding": [
+                     {
+                          "system": "http://snomed.info/sct",
+                          "code": "49956009",
+                         "display": "Antenatal deep vein thrombosis"
+                     }
+               ]
+          }
+        ],
+  "supportingInformation": [
+    {
+      "reference": "Observation/UKCore-Patient-RachelSmith-Weight-Example",
+      "type": "Observation"
+    }
+  ],
+  "priorPrescription": [
+    {
+      "reference": "MedicationRequest/203c8dce-aaec-4349-9335-a572ad48c553",
+      "type": "MedicationRequest"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "text": "Continuous infusion 0.9 millilitre per hour - Intravenous",
+      "method": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "261754007",
+            "display": "Continuous infusion"
+          }
+        ]
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "https://dmd.nhs.uk",
+            "code": "47625008",
+            "display": "Intravenous"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "rateQuantity": {
+            "value": 0.9,
+            "unit": "millilitre per hour",
+            "system": "http://snomed.info/sct",
+            "code": "mL/h"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="5e6906dc-e333-4e1a-a638-13ac163ec63d" />
+  <identifier>
+    <system value="urn:[organisation_name]:[system_name]" />
+    <value value="urn:457759fb-ea9e-4f23-9d2e-5387eb4bf23e" />
+  </identifier>
+  <type value="message" />
+  <timestamp value="2021-05-07T16:15:32Z" />
+  <!--    Message Header    -->
+  <entry>
+    <fullUrl value="urn:message-header-167434" />
+    <resource>
+      <MessageHeader>
+        <id value="urn:message-header-167434" />
+        <eventCoding>
+          <system value="http://hl7.org/fhir/message-events" />
+          <code value="medication-statement" />
+          <display value="Medication Statement" />
+        </eventCoding>
+        <source>
+          <name value="ACME GP Systems" />
+          <software value="ACME GP" />
+          <version value="5.5.00" />
+          <endpoint value="urn:nhs-uk:addressing:ods:M12345" />
+        </source>
+        <focus>
+          <reference value="urn:medication-statement-1234" />
+        </focus>
+        <focus>
+          <reference value="urn:medication-statement-5678" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <!--    // Patient associated with the encounter    -->
+  <entry>
+    <fullUrl value="urn:patient-01912" />
+    <resource>
+      <Patient>
+        <id value="urn:patient-01912" />
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="4857773456" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <text value="Mr Chris Packet" />
+          <family value="Packet" />
+          <given value="Chris" />
+          <prefix value="Mr" />
+        </name>
+        <gender value="male" />
+        <birthDate value="1995-11-12" />
+      </Patient>
+    </resource>
+  </entry>
+  <!--    // Prescribing clinician associated with the encounter.     -->
+  <entry>
+    <fullUrl value="urn:gp-1234" />
+    <resource>
+      <Practitioner>
+        <id value="urn:gp-1234" />
+        <name>
+          <text value="Dr Levy Tate" />
+          <family value="Tate" />
+          <given value="Levy" />
+          <prefix value="Dr" />
+        </name>
+        <qualification>
+          <code>
+            <coding>
+              <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+              <code value="125654" />
+              <display value="General Medical Council" />
+            </coding>
+          </code>
+        </qualification>
+      </Practitioner>
+    </resource>
+  </entry>
+  <!--    // Medication    -->
+  <entry>
+    <fullUrl value="urn:medication-634523423" />
+    <resource>
+      <Medication>
+        <id value="urn:medication-634523423" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="322503009" />
+            <display value="Codeine 30mg tablets" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <!--    // MedicationStatement    -->
+  <entry>
+    <fullUrl value="urn:medication-statement-1234" />
+    <resource>
+      <MedicationStatement>
+        <id value="urn:medication-statement-1234" />
+        <status value="stopped" />
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/medication-request-category" />
+            <code value="community" />
+            <display value="Community" />
+          </coding>
+        </category>
+        <medicationReference>
+          <reference value="urn:medication-634523423" />
+          <display value="Codeine 30mg tablets" />
+        </medicationReference>
+        <subject>
+          <reference value="urn:patient-01912" />
+          <display value="Mr Chris PACKET" />
+        </subject>
+        <dateAsserted value="2021-05-09T10:12:42Z" />
+        <informationSource>
+          <reference value="urn:gp-1234" />
+          <display value="Dr Levy Tate" />
+        </informationSource>
+        <dosage>
+          <timing>
+            <repeat>
+              <frequency value="4" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="26643006" />
+              <display value="oral" />
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="2" />
+              <unit value="tablet" />
+              <system value="http://snomed.info/sct" />
+              <code value="428673006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <!--     // Medication     -->
+  <entry>
+    <fullUrl value="urn:medication-2378976" />
+    <resource>
+      <Medication>
+        <id value="urn:medication-2378976" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="38019511000001108" />
+            <display value="Pregabalin 100mg tablets" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <!--     // MedicationStatement     -->
+  <entry>
+    <fullUrl value="urn:medication-statement-5678" />
+    <resource>
+      <MedicationStatement>
+        <id value="urn:medication-statement-5678" />
+        <status value="active" />
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/medication-request-category" />
+            <code value="community" />
+            <display value="Community" />
+          </coding>
+        </category>
+        <medicationReference>
+          <reference value="urn:medication-2378976" />
+          <display value="Pregabalin 100mg tablets" />
+        </medicationReference>
+        <subject>
+          <reference value="urn:patient-01912" />
+          <display value="Mr Chris PACKET" />
+        </subject>
+        <dateAsserted value="2021-05-09T10:12:42Z" />
+        <informationSource>
+          <reference value="urn:gp-1234" />
+          <display value="Dr Levy Tate" />
+        </informationSource>
+        <dosage>
+          <timing>
+            <repeat>
+              <frequency value="2" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="26643006" />
+              <display value="oral" />
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1" />
+              <unit value="tablet" />
+              <system value="http://snomed.info/sct" />
+              <code value="428673006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+</Bundle>

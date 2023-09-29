@@ -1,0 +1,67 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="1d0bc824-f2bf-42c8-b7f9-954e7f6bbd98" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="outpatient" />
+      <display value="outpatient" />
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="3727711000001102" />
+      <display value="Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd)" />
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9999999999" />
+    </identifier>
+  </subject>
+  <authoredOn value="2020-05-15T15:00:00Z" />
+  <requester>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </requester>
+  <recorder>
+    <reference value="urn:staff-1112" />
+    <display value="Dr Maikeu Well" />
+  </recorder>
+  <dispenseRequest>
+    <quantity>
+      <value value="20" />
+      <unit value="tablet" />
+      <system value="http://snomed.info/sct" />
+      <code value="428673006" />
+    </quantity>
+  </dispenseRequest>
+  <dosageInstruction>
+    <text value="2 tablet - once a week - Start one week before travel and continue until 4 weeks after return" />
+    <patientInstruction value="2 tablet - once a week - Start one week before travel and continue until 4 weeks after return" />
+    <timing>
+      <repeat>
+        <frequency value="1" />
+        <period value="1" />
+        <periodUnit value="wk" />
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="2" />
+        <unit value="tablet" />
+        <system value="http://snomed.info/sct" />
+        <code value="428673006" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false" />
+  </substitution>
+</MedicationRequest>

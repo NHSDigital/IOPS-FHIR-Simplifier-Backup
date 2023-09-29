@@ -1,0 +1,159 @@
+{
+  "resourceType": "Bundle",
+  "id": "co-amoxiclav-infusion-request",
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:682858a9-3942-412d-9ae5-71a2f17f7c5b",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "682858a9-3942-412d-9ae5-71a2f17f7c5b",
+        "eventCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "33633005",
+          "display": "Prescription of drug"
+        },
+        "source": {
+          "endpoint": "https://myendpoint.nhs.uk/"
+        },
+        "focus": [
+          {
+            "reference": "34eb3c92-76e6-48c2-9691-aa1f0b58369b",
+            "type": "MedicationRequest"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:11dc9519-b6e8-41bb-bce5-f6f724b743bc",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "11dc9519-b6e8-41bb-bce5-f6f724b743bc",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"
+          ]
+        },
+        "form": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "385229008",
+              "display": "Solution for infusion"
+            }
+          ]
+        },
+        "code": {
+          "text": "Co-amoxiclav 1.2 gram in Sodium chloride 0.9% infusion 100ml bags - Solution for infusion"
+        },
+        "ingredient": [
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://dmd.nhs.uk",
+                  "code": "39463011000001107",
+                  "display": "Co-amoxiclav"
+                }
+              ]
+            },
+            "strength": {
+              "numerator": {
+                "value": 1.2,
+                "unit": "gram",
+                "system": "http://unitsofmeasure.org",
+                "code": "g"
+              },
+              "denominator": {
+                "value": 1
+              }
+            }
+          },
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://dmd.nhs.uk",
+                  "code": "4898311000001108",
+                  "display": "Sodium chloride 0.9% infusion 100ml bags"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:34eb3c92-76e6-48c2-9691-aa1f0b58369b",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "34eb3c92-76e6-48c2-9691-aa1f0b58369b",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "subject": {
+          "reference": "Patient/UKCore-Patient-RichardSmith-Example"
+        },
+        "medicationReference": {
+          "reference": "11dc9519-b6e8-41bb-bce5-f6f724b743bc",
+          "type": "Medication"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "68566005",
+                "display": "Urinary tract infection"
+              }
+            ]
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Continuous infusion 100 millilitre - over 30 minutes - 3 times a day - Intravenous",
+            "timing": {
+              "repeat": {
+                "duration": 30,
+                "durationUnit": "min",
+                "frequency": 3,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "261754007",
+                  "display": "Continuous infusion"
+                }
+              ]
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "47625008",
+                  "display": "Intravenous"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 100,
+                  "unit": "millilitre",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "ml"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

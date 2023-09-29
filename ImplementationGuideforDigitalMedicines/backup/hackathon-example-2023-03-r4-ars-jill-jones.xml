@@ -1,0 +1,430 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="7dbe82ff-6b4b-4f15-8557-65483368c944" />
+  <meta>
+    <lastUpdated value="2023-01-27T14:02:00+00:00" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
+  </meta>
+  <identifier>
+    <system value="https://hackathon.example/2023/03/r4/ars-jill-jones" />
+    <value value="f3153df5-0f30-4eb6-b323-859ab4ae8176" />
+  </identifier>
+  <type value="collection" />
+  <timestamp value="2023-01-27T14:02:00Z" />
+  <entry>
+    <fullUrl value="urn:uuid:fef0d015-b4fb-4d34-ad1a-df97fd4f76c7" />
+    <resource>
+      <Patient>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        </meta>
+        <identifier>
+          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland" />
+                <code value="01" />
+                <display value="Number present and verified" />
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="1352465790" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <family value="Jones" />
+          <given value="Jill" />
+          <prefix value="Mrs" />
+        </name>
+        <gender value="female" />
+        <birthDate value="1951-02-03" />
+        <address>
+          <line value="22, Grove Street, Overtown" />
+          <city value="Leeds" />
+          <postalCode value="LS21 1PF" />
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+        <resource>
+            <Practitioner>
+                <id value="2DB481A3-306A-4133-9491-1558161D6A2B" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+                    <value value="555079033108" />
+                </identifier>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+                    <value value="555079046103" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <family value="TEMPLE SOWERBY" />
+                    <given value="GPONE" />
+                    <prefix value="Mr" />
+                </name>
+                <gender value="male" />
+            </Practitioner>
+        </resource>
+    </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d56667e9-bd08-4b35-b49d-24af4cb76b00" />
+    <resource>
+      <List>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
+        </meta>
+        <status value="current" />
+        <mode value="snapshot" />
+        <title value="Medication List" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1102411000000102" />
+            <display value="Active medications" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:fef0d015-b4fb-4d34-ad1a-df97fd4f76c7" />
+        </subject>
+        <date value="2022-02-22T10:31:00+00:00" />
+        <orderedBy>
+          <coding>
+            <system value="http://hl7.org/fhir/list-order" />
+            <code value="event-date" />
+          </coding>
+        </orderedBy>
+        <entry>
+          <item>
+            <reference value="MedicationStatement/03f0ebde-607c-442c-950f-cdcfb84fd06e" />
+          </item>
+        </entry>
+        <entry>
+          <item>
+            <reference value="MedicationStatement/aba6c843-0c89-43b4-aa58-ee60e892d03f" />
+          </item>
+        </entry>
+        <entry>
+          <item>
+            <reference value="MedicationStatement/7194eb71-c276-4a8d-8b1d-f07d832e1ffa" />
+          </item>
+        </entry>
+        <entry>
+          <item>
+            <reference value="MedicationStatement/40c9ece7-09fc-4b8d-8752-f3d6bbf26313" />
+          </item>
+        </entry>
+      </List>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="03f0ebde-607c-442c-950f-cdcfb84fd06e" />
+    <resource>
+      <MedicationStatement>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement" />
+        </meta>
+        <status value="active" />
+        <medicationReference>
+          <reference value="Medication/4c23180b-7697-4d57-9b3b-08b4da7501ab" />
+        </medicationReference>
+        <subject>
+          <reference value="Patient/fef0d015-b4fb-4d34-ad1a-df97fd4f76c7" />
+        </subject>
+        <effectiveDateTime value="2023-02-15" />
+        <dateAsserted value="2023-02-15" />
+        <informationSource>
+          <reference value="Practitioner/2DB481A3-306A-4133-9491-1558161D6A2B" />
+        </informationSource>
+        <dosage>
+          <sequence value="1" />
+          <text value="One tablet to be taken once daily for one week" />
+          <timing>
+            <repeat>
+              <boundsDuration>
+                <value value="1" />
+                <unit value="week" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="wk" />
+              </boundsDuration>
+              <frequency value="1" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1" />
+              <unit value="tablet" />
+              <system value="http://snomed.info/sct" />
+              <code value="428673006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+        <dosage>
+          <sequence value="2" />
+          <text value="One tablet to be taken twice daily for one week" />
+          <timing>
+            <repeat>
+              <boundsDuration>
+                <value value="1" />
+                <unit value="week" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="wk" />
+              </boundsDuration>
+              <frequency value="2" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1" />
+              <unit value="tablet" />
+              <system value="http://snomed.info/sct" />
+              <code value="428673006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+        <dosage>
+          <sequence value="3" />
+          <text value="One tablet to be taken three times daily" />
+          <timing>
+            <repeat>
+              <frequency value="3" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1" />
+              <unit value="tablet" />
+              <system value="http://snomed.info/sct" />
+              <code value="428673006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="4c23180b-7697-4d57-9b3b-08b4da7501ab" />
+    <resource>
+      <Medication>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+        </meta>
+        <code>
+          <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="325278007" />
+            <display value="Metformin 500mg tablets" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="aba6c843-0c89-43b4-aa58-ee60e892d03f" />
+    <resource>
+      <MedicationStatement>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement" />
+        </meta>
+        <status value="active" />
+        <medicationReference>
+          <reference value="Medication/61e240ad-0a81-47dc-a5e2-3b09c6de4208" />
+        </medicationReference>
+        <subject>
+          <reference value="Patient/fef0d015-b4fb-4d34-ad1a-df97fd4f76c7" />
+        </subject>
+        <effectiveDateTime value="2022-12-04" />
+        <dateAsserted value="2022-12-04" />
+        <informationSource>
+          <reference value="Practitioner/2DB481A3-306A-4133-9491-1558161D6A2B" />
+        </informationSource>
+        <dosage>
+          <text value="One tablet to be taken each morning. Take with or after food." />
+          <patientInstruction value="Take with or after food." />
+          <timing>
+            <repeat>
+              <frequency value="1" />
+              <period value="1" />
+              <periodUnit value="d" />
+              <when value="MORN" />
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1" />
+              <unit value="tablet" />
+              <system value="http://snomed.info/sct" />
+              <code value="428673006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="61e240ad-0a81-47dc-a5e2-3b09c6de4208" />
+    <resource>
+      <Medication>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+        </meta>
+        <code>
+          <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="325278007" />
+            <display value="Aspirin 75mg dispersible tablets" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="7194eb71-c276-4a8d-8b1d-f07d832e1ffa" />
+    <resource>
+      <MedicationStatement>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement" />
+        </meta>
+        <status value="active" />
+        <medicationReference>
+          <reference value="Medication/2bad4dc6-e7cc-4768-b82e-db62253ad70c" />
+        </medicationReference>
+        <subject>
+          <reference value="Patient/fef0d015-b4fb-4d34-ad1a-df97fd4f76c7" />
+        </subject>
+        <effectiveDateTime value="2023-01-10" />
+        <dateAsserted value="2023-01-10" />
+        <informationSource>
+          <reference value="Practitioner/2DB481A3-306A-4133-9491-1558161D6A2B" />
+        </informationSource>
+        <dosage>
+          <text value="One to be taken once at night" />
+          <timing>
+            <repeat>
+              <frequency value="1" />
+              <period value="1" />
+              <periodUnit value="d" />
+              <when value="NIGHT" />
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1" />
+              <unit value="tablet" />
+              <system value="http://snomed.info/sct" />
+              <code value="428673006" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="2bad4dc6-e7cc-4768-b82e-db62253ad70c" />
+    <resource>
+      <Medication>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+        </meta>
+        <code>
+          <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="320000009" />
+            <display value="Simvastatin 40mg tablets" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="40c9ece7-09fc-4b8d-8752-f3d6bbf26313" />
+    <resource>
+      <MedicationStatement>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement" />
+        </meta>
+        <status value="active" />
+        <medicationReference>
+          <reference value="Medication/b899c725-fbd0-48e4-8b93-64e05f2991d6" />
+        </medicationReference>
+        <subject>
+          <reference value="Patient/fef0d015-b4fb-4d34-ad1a-df97fd4f76c7" />
+        </subject>
+        <effectivePeriod>
+          <start value="2023-02-19" />
+          <end value="2023-03-01" />
+        </effectivePeriod>          
+        <dateAsserted value="2023-02-19" />
+        <informationSource>
+          <reference value="Practitioner/2DB481A3-306A-4133-9491-1558161D6A2B" />
+        </informationSource>
+        <dosage>
+          <text value="1-2 drops 4 times daily to both eyes for 10 days" />
+          <timing>
+            <repeat>
+              <frequency value="1" />
+              <period value="4" />
+              <periodUnit value="d" />
+              <boundsDuration>
+                <value value="10" />
+                <unit value="day" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="d" />
+              </boundsDuration>
+            </repeat>
+          </timing>
+          <site>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="40638003" />
+                <display value="Both eyes" />
+            </coding>
+          </site>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="1" />
+                <unit value="drop" />
+                <system value="http://snomed.info/sct" />
+                <code value="404218003" />
+              </low>
+              <high>
+                <value value="2" />
+                <unit value="drop" />
+                <system value="http://snomed.info/sct" />
+                <code value="404218003" />
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="b899c725-fbd0-48e4-8b93-64e05f2991d6" />
+    <resource>
+      <Medication>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+        </meta>
+        <code>
+          <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="330286001" />
+            <display value="Chloramphenicol 0.5% eye drops" />
+          </coding>
+        </code>
+      </Medication>
+    </resource>
+  </entry>
+</Bundle>
