@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="eRS-HealthcareService" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/eRS-HealthcareService" />
+  <version value="1.0.0" />
+  <name value="eRSHealthcareService" />
+  <title value="eRS Healthcare Service" />
+  <status value="active" />
+  <date value="2022-03-14" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="This profile defines additional constraints applied to the UK Core HealthcareService profile to support the Electronic Referral Service conformance rules." />
+  <purpose value="This profile is used to describe a single healthcare service or category of services that are provided by an organization at a location, including a virtual location." />
+  <copyright value="Copyright © 2022 NHS Digital" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="HealthcareService" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="HealthcareService.extension">
+      <path value="HealthcareService.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="HealthcareService.extension:ersHealthcareServiceContact">
+      <path value="HealthcareService.extension" />
+      <sliceName value="ersHealthcareServiceContact" />
+      <short value="Carries contact details for an eRS HealthcareService" />
+      <definition value="Carries contact details for an eRS HealthcareService." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-eRS-HealthcareServiceContact" />
+      </type>
+    </element>
+    <element id="HealthcareService.extension:ersHoursOfOperation">
+      <path value="HealthcareService.extension" />
+      <sliceName value="ersHoursOfOperation" />
+      <short value="Carries the hours of operation of an eRS health care service" />
+      <definition value="Carries the hours of operation of an eRS health care service." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-eRS-HoursOfOperation" />
+      </type>
+    </element>
+    <element id="HealthcareService.extension:ersServiceInstructions">
+      <path value="HealthcareService.extension" />
+      <sliceName value="ersServiceInstructions" />
+      <short value="Carries the service instructions for an eRS health care service" />
+      <definition value="Carries the service instructions for an eRS health care service." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-eRS-ServiceInstructions" />
+      </type>
+    </element>
+    <element id="HealthcareService.identifier.assigner">
+      <path value="HealthcareService.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="HealthcareService.providedBy">
+      <path value="HealthcareService.providedBy" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="HealthcareService.providedBy.identifier.assigner">
+      <path value="HealthcareService.providedBy.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="HealthcareService.type">
+      <path value="HealthcareService.type" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/eRS-AppointmentType" />
+      </binding>
+    </element>
+    <element id="HealthcareService.location">
+      <path value="HealthcareService.location" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+      </type>
+    </element>
+    <element id="HealthcareService.location.identifier">
+      <path value="HealthcareService.location.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="HealthcareService.location.identifier.assigner">
+      <path value="HealthcareService.location.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="HealthcareService.location.identifier:serviceLocation">
+      <path value="HealthcareService.location.identifier" />
+      <sliceName value="serviceLocation" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.location.identifier:serviceLocation.system">
+      <path value="HealthcareService.location.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/ods-site-code" />
+    </element>
+    <element id="HealthcareService.location.identifier:serviceLocation.value">
+      <path value="HealthcareService.location.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.name">
+      <path value="HealthcareService.name" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.coverageArea">
+      <path value="HealthcareService.coverageArea" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+      </type>
+    </element>
+    <element id="HealthcareService.coverageArea.identifier.assigner">
+      <path value="HealthcareService.coverageArea.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="HealthcareService.characteristic">
+      <path value="HealthcareService.characteristic" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/eRS-RequestFlowType" />
+      </binding>
+    </element>
+    <element id="HealthcareService.endpoint.identifier.assigner">
+      <path value="HealthcareService.endpoint.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

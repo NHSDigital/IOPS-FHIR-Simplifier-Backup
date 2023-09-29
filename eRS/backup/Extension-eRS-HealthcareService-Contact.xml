@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-eRS-HealthcareService-Contact" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-eRS-HealthcareService-Contact" />
+  <version value="1.0.0" />
+  <name value="ExtensioneRSHealthcareServiceContact" />
+  <title value="Extension eRS HealthcareService Contact" />
+  <status value="active" />
+  <date value="2022-04-25" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="An extension to carry the contact details for an eRS health care service." />
+  <purpose value="This extension extends the eRS HealthcareService profile to carry the contact for an eRS health care service." />
+  <copyright value="Copyright © 2022 NHS Digital" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="HealthcareService" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="The contact for an eRS HealthcareService" />
+      <definition value="The contact for an eRS HealthcareService." />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Extension.extension:purpose">
+      <path value="Extension.extension" />
+      <sliceName value="purpose" />
+      <min value="1" />
+      <max value="1" />
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/eRS-Purpose" />
+      </binding>
+    </element>
+    <element id="Extension.extension:purpose.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="purpose" />
+    </element>
+    <element id="Extension.extension:purpose.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="The purpose for which you would contact a contact party" />
+      <definition value="The purpose for which you would contact a contact party." />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="The purpose for which you would contact a contact party" />
+        <valueSet value="http://terminology.hl7.org/ValueSet/contactentity-type" />
+      </binding>
+    </element>
+    <element id="Extension.extension:purpose.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/contactentity-type" />
+    </element>
+    <element id="Extension.extension:telecom">
+      <path value="Extension.extension" />
+      <sliceName value="telecom" />
+      <short value="The contact point details" />
+      <definition value="The contact point details." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:telecom.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="telecom" />
+    </element>
+    <element id="Extension.extension:telecom.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="The actual contact point details" />
+      <definition value="The actual contact point details." />
+      <min value="1" />
+      <type>
+        <code value="ContactPoint" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-eRS-HealthcareService-Contact" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

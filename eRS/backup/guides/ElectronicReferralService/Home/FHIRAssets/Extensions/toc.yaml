@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.guide.md
+- name: Extension-ERS-HealthcareServiceContact
+  filename: Extension-ERS-HealthcareServiceContact.guide.md
+- name: Extension-ERS-HoursOfOperation
+  filename: Extension-ERS-HoursOfOperation.guide.md
+- name: Extension-ERS-ServiceInstructions
+  filename: Extension-ERS-ServiceInstructions.guide.md

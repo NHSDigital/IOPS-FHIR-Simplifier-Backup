@@ -1,0 +1,13 @@
+{
+  "name": "eRS.r4.assets",
+  "version": "1.0.0",
+  "description": "e Referral Service",
+  "author": "marcusfearnett",
+  "dependencies": {
+    "fhir.r4.ukcore.stu1": "0.1.0",
+    "simplifier.core.r4": "4.0.1"
+  },
+  "fhirVersions": [
+    "4.0.1"
+  ]
+}
