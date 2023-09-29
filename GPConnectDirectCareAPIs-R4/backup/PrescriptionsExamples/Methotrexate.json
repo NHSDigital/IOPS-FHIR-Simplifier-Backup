@@ -1,0 +1,603 @@
+{
+  "resourceType": "Bundle",
+  "id": "83fdd1ca-b9cc-44bd-8e99-5e9219910517",
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "e242f46c-5875-4eb4-875d-148298c52977"
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "fullUrl": "a48c085d-ca8c-4646-afd3-7a0dae64efd2",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "e18131f3-3ac2-41ef-9cde-2639739e80be",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+            "value": "00db57d1-fd0c-4ae2-8536-6990f31d8ea4"
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.or/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "15517911000001104",
+              "display": "Methotrexate 10mg/0.2ml solution for injection pre-filled syringes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "requester": {
+          "reference": "PractitionerRole/e35f0382-ac2e-47f9-9164-afd7d6adf952",
+          "display": "Dr Jane Smith"
+        },
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/4de39acf-73b1-4dc6-bb87-c98b57ee5413"
+          }
+        ],
+        "groupIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "CDT38E-Y765968-4FG3BQ"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "continuous",
+              "display": "Continuous long term therapy"
+            }
+          ]
+        },
+        "authoredOn": "2020-07-13T12:00:00+00:00",
+        "substitution": {
+          "allowedBoolean": false
+        },
+        "dosageInstruction": [
+          {
+            "text": "10 milligram, Inject, Subcutaneous route, once weekly",
+            "additionalInstruction": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "421769005",
+                    "display": "Follow directions"
+                  }
+                ]
+              }
+            ],
+            "patientInstruction": "As directed",
+            "timing": {
+              "repeat": {
+                "boundsDuration": {
+                  "value": 10,
+                  "unit": "day",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "d"
+                },
+                "frequency": 5,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "34206005",
+                  "display": "Subcutaneous route"
+                }
+              ]
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "422145002",
+                  "display": "Inject"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2020-07-13T12:00:00+00:00",
+            "end": "2020-08-07T12:00:00+00:00"
+          },
+          "numberOfRepeatsAllowed": 6,
+          "quantity": {
+            "value": 1,
+            "unit": "Injection",
+            "system": "http://snomed.info/sct",
+            "code": "3092611000001103"
+          },
+          "expectedSupplyDuration": {
+            "value": 7,
+            "unit": "day",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "a48c085d-ca8c-4646-afd3-7a0dae64efd2",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "e18131f3-3ac2-41ef-9cde-2639739e80be",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+            "value": "00db57d1-fd0c-4ae2-8536-6990f31d8ea4"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.or/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "15517911000001104",
+              "display": "Methotrexate 10mg/0.2ml solution for injection pre-filled syringes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "requester": {
+          "reference": "PractitionerRole/e35f0382-ac2e-47f9-9164-afd7d6adf952",
+          "display": "Dr Jane Smith"
+        },
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/4de39acf-73b1-4dc6-bb87-c98b57ee5413"
+          }
+        ],
+        "groupIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "CDT38E-Y765968-4FG3BQ"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "continuous",
+              "display": "Continuous long term therapy"
+            }
+          ]
+        },
+        "authoredOn": "2020-07-20T12:00:00+00:00",
+        "substitution": {
+          "allowedBoolean": false
+        },
+        "dosageInstruction": [
+          {
+            "text": "10 milligram, Inject, Subcutaneous route, once weekly",
+            "additionalInstruction": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "421769005",
+                    "display": "Follow directions"
+                  }
+                ]
+              }
+            ],
+            "patientInstruction": "As directed",
+            "timing": {
+              "repeat": {
+                "boundsDuration": {
+                  "value": 10,
+                  "unit": "day",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "d"
+                },
+                "frequency": 5,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "34206005",
+                  "display": "Subcutaneous route"
+                }
+              ]
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "422145002",
+                  "display": "Inject"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "numberOfRepeatsAllowed": 6,
+          "quantity": {
+            "value": 1,
+            "unit": "Injection",
+            "system": "http://snomed.info/sct",
+            "code": "3092611000001103"
+          },
+          "expectedSupplyDuration": {
+            "value": 7,
+            "unit": "day",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "a48c085d-ca8c-4646-afd3-7a0dae64efd2",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "e18131f3-3ac2-41ef-9cde-2639739e80be",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+            "value": "00db57d1-fd0c-4ae2-8536-6990f31d8ea4"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.or/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "15517911000001104",
+              "display": "Methotrexate 10mg/0.2ml solution for injection pre-filled syringes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "requester": {
+          "reference": "PractitionerRole/e35f0382-ac2e-47f9-9164-afd7d6adf952",
+          "display": "Dr Jane Smith"
+        },
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/4de39acf-73b1-4dc6-bb87-c98b57ee5413"
+          }
+        ],
+        "groupIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "CDT38E-Y765968-4FG3BQ"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "continuous",
+              "display": "Continuous long term therapy"
+            }
+          ]
+        },
+        "authoredOn": "2020-07-27T12:00:00+00:00",
+        "substitution": {
+          "allowedBoolean": false
+        },
+        "dosageInstruction": [
+          {
+            "text": "10 milligram, Inject, Subcutaneous route, once weekly",
+            "additionalInstruction": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "421769005",
+                    "display": "Follow directions"
+                  }
+                ]
+              }
+            ],
+            "patientInstruction": "As directed",
+            "timing": {
+              "repeat": {
+                "boundsDuration": {
+                  "value": 10,
+                  "unit": "day",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "d"
+                },
+                "frequency": 5,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "34206005",
+                  "display": "Subcutaneous route"
+                }
+              ]
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "422145002",
+                  "display": "Inject"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "numberOfRepeatsAllowed": 6,
+          "quantity": {
+            "value": 1,
+            "unit": "Injection",
+            "system": "http://snomed.info/sct",
+            "code": "3092611000001103"
+          },
+          "expectedSupplyDuration": {
+            "value": 7,
+            "unit": "day",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "a48c085d-ca8c-4646-afd3-7a0dae64efd2",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "e18131f3-3ac2-41ef-9cde-2639739e80be",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+            "value": "00db57d1-fd0c-4ae2-8536-6990f31d8ea4"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.or/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "15517911000001104",
+              "display": "Methotrexate 10mg/0.2ml solution for injection pre-filled syringes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "requester": {
+          "reference": "PractitionerRole/e35f0382-ac2e-47f9-9164-afd7d6adf952",
+          "display": "Dr Jane Smith"
+        },
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/4de39acf-73b1-4dc6-bb87-c98b57ee5413"
+          }
+        ],
+        "groupIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "CDT38E-Y765968-4FG3BQ"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "continuous",
+              "display": "Continuous long term therapy"
+            }
+          ]
+        },
+        "authoredOn": "2020-07-27T12:00:00+00:00",
+        "substitution": {
+          "allowedBoolean": false
+        },
+        "dosageInstruction": [
+          {
+            "text": "10 milligram, Inject, Subcutaneous route, once weekly",
+            "additionalInstruction": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "421769005",
+                    "display": "Follow directions"
+                  }
+                ]
+              }
+            ],
+            "patientInstruction": "As directed",
+            "timing": {
+              "repeat": {
+                "boundsDuration": {
+                  "value": 10,
+                  "unit": "day",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "d"
+                },
+                "frequency": 5,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "34206005",
+                  "display": "Subcutaneous route"
+                }
+              ]
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "422145002",
+                  "display": "Inject"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "numberOfRepeatsAllowed": 6,
+          "quantity": {
+            "value": 1,
+            "unit": "Injection",
+            "system": "http://snomed.info/sct",
+            "code": "3092611000001103"
+          },
+          "expectedSupplyDuration": {
+            "value": 7,
+            "unit": "day",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      }
+    }
+  ]
+}

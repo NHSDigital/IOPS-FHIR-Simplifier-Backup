@@ -1,0 +1,24 @@
+- name: Index
+  filename: Index.page.md
+- name: Minimum Viable Content
+  filename: Minimum-viable-content.page.md
+- name: id
+  filename: id.page.md
+- name: meta.profile
+  filename: meta.profile.page.md
+- name: identifier
+  filename: identifier.page.md
+- name: basedOn
+  filename: basedOn.page.md
+- name: status
+  filename: status.page.md
+- name: medicationCodeableConcept
+  filename: medicationCodeableConcept.page.md
+- name: subject
+  filename: subject.page.md
+- name: effectivePeriod
+  filename: effectivePeriod.page.md
+- name: dateAsserted
+  filename: dateAsserted.page.md
+- name: dosage
+  filename: dosage.page.md

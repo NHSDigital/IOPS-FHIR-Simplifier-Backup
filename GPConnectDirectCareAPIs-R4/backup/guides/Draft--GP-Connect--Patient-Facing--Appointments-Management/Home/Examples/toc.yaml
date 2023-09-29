@@ -1,0 +1,8 @@
+- name: Book an appointment
+  filename: Book-an-appointment
+- name: Cancel an appointment
+  filename: Cancel-an-appointment
+- name: Retrieve appointments
+  filename: Retrieve-appointments
+- name: Search for free slots
+  filename: Search-for-free-slots

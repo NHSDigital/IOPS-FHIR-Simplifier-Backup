@@ -1,0 +1,22 @@
+{
+  "resourceType": "PractitionerRole",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"
+    ]
+  },
+  "id": "e35f0382-ac2e-47f9-9164-afd7d6adf952",
+  "practitioner": {
+    "display": "Dr Jane Smith",
+    "identifier": {
+      "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+      "value": "C9876543"
+    }
+  },
+  "organization": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "L8048"
+    }
+  }
+}

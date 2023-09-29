@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Minimum Viable Content
+  filename: Minimum-viable-content.page.md
+- name: Definition
+  filename: Definition.page.md
+- name: id
+  filename: id.page.md
+- name: meta.profile
+  filename: meta.profile.page.md
+- name: practitioner
+  filename: practitioner.page.md
+- name: organization
+  filename: organization.page.md

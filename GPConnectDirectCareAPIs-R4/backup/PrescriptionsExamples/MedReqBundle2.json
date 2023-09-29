@@ -1,0 +1,564 @@
+{
+  "resourceType": "Bundle",
+  "id": "aec4566e-e1af-4aa5-898b-32754ffdbc59",
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "7c1301d3-1c45-4552-9e07-deaf82b0ef32"
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "fullUrl": "222c7ae0-9e54-4980-a46b-c259146a5730",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "b269d1d7-1acf-47bb-8b3c-e38b583d9a07",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+            "value": "4857b9d3-b714-44b9-9e67-3df67275b785"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.or/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://dmd.nhs.uk",
+              "code": "3113111000001106",
+              "display": "Pulmicort 100 Turbohaler (AstraZeneca UK Ltd)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "requester": {
+          "reference": "PractitionerRole/e35f0382-ac2e-47f9-9164-afd7d6adf952",
+          "display": "Dr Jane Smith"
+        },
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/4de39acf-73b1-4dc6-bb87-c98b57ee5413"
+          }
+        ],
+        "groupIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "CDT38E-Y765968-4FG3BQ"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "continuous",
+              "display": "Continuous long term therapy"
+            }
+          ]
+        },
+        "authoredOn": "2022-10-13T09:20:27.000Z",
+        "substitution": {
+          "allowedBoolean": false
+        },
+        "dosageInstruction": [
+          {
+            "text": "One to two puffs to be inhaled as needed",
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "420652005",
+                  "display": "Until gone"
+                }
+              ]
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "numberOfRepeatsAllowed": 6,
+          "quantity": {
+            "value": 1,
+            "unit": "inhaler",
+            "system": "http://snomed.info/sct",
+            "code": "334980009"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          },
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "Y12345"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "e1264b69-b55b-44b9-9b2b-6655a39c8506",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "159757f8-6409-4b8c-b0df-f8feefc3ad0e",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+            "value": "4857b9d3-b714-44b9-9e67-3df67275b785"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.or/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://dmd.nhs.uk",
+              "code": "3113111000001106",
+              "display": "Pulmicort 100 Turbohaler (AstraZeneca UK Ltd)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "requester": {
+          "reference": "PractitionerRole/e35f0382-ac2e-47f9-9164-afd7d6adf952",
+          "display": "Dr Jane Smith"
+        },
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/4de39acf-73b1-4dc6-bb87-c98b57ee5413"
+          }
+        ],
+        "groupIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "PDI12E-Y765908-4FF3LQ"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "continuous",
+              "display": "Continuous long term therapy"
+            }
+          ]
+        },
+        "authoredOn": "2022-11-13T07:20:27.000Z",
+        "substitution": {
+          "allowedBoolean": false
+        },
+        "dosageInstruction": [
+          {
+            "text": "One to two puffs to be inhaled as needed",
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "420652005",
+                  "display": "Until gone"
+                }
+              ]
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "numberOfRepeatsAllowed": 6,
+          "quantity": {
+            "value": 1,
+            "unit": "inhaler",
+            "system": "http://snomed.info/sct",
+            "code": "334980009"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          },
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "Y12345"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "MedicationRequest/4de39acf-73b1-4dc6-bb87-c98b57ee5413",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "4de39acf-73b1-4dc6-bb87-c98b57ee5413",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+            "extension": [
+              {
+                "url": "numberOfPrescriptionsIssued",
+                "valueUnsignedInt": 2
+              },
+              {
+                "url": "authorisationExpiryDate",
+                "valueDateTime": "2022-10-11T19:00:00.000Z"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "42b4a841-9d69-4d13-bf91-ee5882e85765"
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.or/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://dmd.nhs.uk",
+              "code": "3113111000001106",
+              "display": "Pulmicort 100 Turbohaler (AstraZeneca UK Ltd)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "requester": {
+          "reference": "PractitionerRole/e35f0382-ac2e-47f9-9164-afd7d6adf952",
+          "display": "Dr Jane Smith"
+        },
+        "groupIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "PDI12E-Y765908-4FF3LQ"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "continuous",
+              "display": "Continuous long term therapy"
+            }
+          ]
+        },
+        "authoredOn": "2022-11-13T07:20:27.000Z",
+        "substitution": {
+          "allowedBoolean": false
+        },
+        "dosageInstruction": [
+          {
+            "text": "One to two puffs to be inhaled as needed",
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "420652005",
+                  "display": "Until gone"
+                }
+              ]
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "numberOfRepeatsAllowed": 6,
+          "quantity": {
+            "value": 1,
+            "unit": "inhaler",
+            "system": "http://snomed.info/sct",
+            "code": "334980009"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "1cb73413-45b8-4994-a86f-cb69f4bd6a51",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "5f670e15-0eee-4822-9334-a24560794caa",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+            "value": "33a0a087-d1f8-4f8a-85bd-7a21ff66773a"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.or/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://dmd.nhs.uk",
+              "code": "21011811000001100",
+              "display": "Enshake oral powder 96.5g sachets (Flavour Not Specified)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "requester": {
+          "reference": "PractitionerRole/e35f0382-ac2e-47f9-9164-afd7d6adf952",
+          "display": "Dr Jane Smith"
+        },
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/97046973-afbc-4a8f-98d1-27f9412c94e3"
+          }
+        ],
+        "groupIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "754CB4-E81001-0B9EB8"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "continuous",
+              "display": "Continuous long term therapy"
+            }
+          ]
+        },
+        "authoredOn": "2022-11-13T07:20:27.000Z",
+        "substitution": {
+          "allowedBoolean": false
+        },
+        "dosageInstruction": [
+          {
+            "text": "As Directed Enshake oral powder 96.5g sachets (Flavour Not Specified) Please call the practice",
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "420652005",
+                  "display": "Until gone"
+                }
+              ]
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "numberOfRepeatsAllowed": 6,
+          "quantity": {
+            "value": 1,
+            "unit": "inhaler",
+            "system": "http://snomed.info/sct",
+            "code": "334980009"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          },
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "Y12345"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "c5a87fcf-8cb7-46f8-8bae-62e76b62a058",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "97046973-afbc-4a8f-98d1-27f9412c94e3",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+            "extension": [
+              {
+                "url": "numberOfPrescriptionsIssued",
+                "valueUnsignedInt": 2
+              },
+              {
+                "url": "authorisationExpiryDate",
+                "valueDateTime": "2022-10-11T19:00:00.000Z"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "6b859ae0-9666-4331-ac84-4034a937f576"
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.or/CodeSystem/medicationrequest-category",
+                "code": "community",
+                "display": "Community"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://dmd.nhs.uk",
+              "code": "21011811000001100",
+              "display": "Enshake oral powder 96.5g sachets (Flavour Not Specified)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9000000009",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9000000009"
+          },
+          "display": "Jane Smith"
+        },
+        "requester": {
+          "reference": "PractitionerRole/e35f0382-ac2e-47f9-9164-afd7d6adf952",
+          "display": "Dr Jane Smith"
+        },
+        "groupIdentifier": {
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "754CB4-E81001-0B9EB8"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "continuous",
+              "display": "Continuous long term therapy"
+            }
+          ]
+        },
+        "authoredOn": "2022-11-13T07:20:27.000Z",
+        "substitution": {
+          "allowedBoolean": false
+        },
+        "dosageInstruction": [
+          {
+            "text": "As Directed Enshake oral powder 96.5g sachets (Flavour Not Specified) Please call the practice",
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "420652005",
+                  "display": "Until gone"
+                }
+              ]
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "numberOfRepeatsAllowed": 6,
+          "quantity": {
+            "value": 28,
+            "unit": "sachet",
+            "system": "http://snomed.info/sct",
+            "code": "426148002"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      }
+    }
+  ]
+}
