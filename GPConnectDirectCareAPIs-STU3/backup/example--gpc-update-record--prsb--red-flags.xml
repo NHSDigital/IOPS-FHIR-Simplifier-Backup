@@ -1,0 +1,23 @@
+<ClinicalImpression xmlns="http://hl7.org/fhir">
+  <id value="db9e8c58-bbe7-4c52-b699-b4db78a6a88d" />
+    <identifier>
+        <system value="https://identifiers.provider.test/clinicalimpression" />
+        <value value="urn:uuid:db9e8c58-bbe7-4c52-b699-b4db78a6a88d" />
+    </identifier>
+  <meta>
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ClinicalImpression-1" />
+    <tag>
+      <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+      <code value="red-flags" />
+      <display value="Red flags" />
+    </tag>
+  </meta>
+  <status value="completed" />
+  <subject>
+    <reference value="urn:uuid:42451c37-752d-4c8e-aa80-be8258a9a4e5" />
+  </subject>
+  <context>
+    <reference value="urn:uuid:43b4530b-7e0d-4009-a006-6a8d99cbd4f0" />
+  </context>
+  <summary value="Details of red flag symptoms identified." />
+</ClinicalImpression>

@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: 1.1.2-public-beta
+  filename: 1.1.2-public-beta.page.md
+- name: 1.1.1-public-beta
+  filename: 1.1.1-public-beta.page.md
+- name: 1.1.0-public-beta
+  filename: 1.1.0-public-beta.page.md
+- name: 1.0.0-public-beta
+  filename: 1.0.0-public-beta.page.md
+- name: 1.0.0-draft
+  filename: 1.0.0-draft.page.md

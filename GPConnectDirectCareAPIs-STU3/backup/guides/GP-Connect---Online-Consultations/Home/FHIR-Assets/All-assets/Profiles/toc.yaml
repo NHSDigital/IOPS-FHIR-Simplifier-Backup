@@ -1,0 +1,48 @@
+- name: 'Profile: ITK-Message-Bundle-1'
+  filename: Profile--ITK-Message-Bundle-1
+- name: 'Profile: ITK-MessageHeader-2'
+  filename: Profile--ITK-MessageHeader-2
+- name: 'Profile: CareConnect-ITK-Header-Organization-1'
+  filename: Profile--CareConnect-ITK-Header-Organization-1
+- name: 'Profile: ITK-Document-Bundle-1'
+  filename: Profile--ITK-Document-Bundle-1
+- name: 'Profile: CareConnect-Composition-1'
+  filename: Profile--CareConnect-Composition-1
+- name: 'Profile: CareConnect-GPC-Patient-1'
+  filename: Profile--CareConnect-GPC-Patient-1
+- name: 'Profile: CareConnect-Organization-1'
+  filename: Profile--CareConnect-Organization-1
+- name: 'Profile: ITK-Attachment-Binary-1'
+  filename: Profile--ITK-Attachment-Binary-1
+- name: 'Profile: CareConnect-Practitioner-1'
+  filename: Profile--CareConnect-Practitioner-1
+- name: 'Profile: OperationOutcome'
+  filename: Profile--OperationOutcome
+- name: 'Profile: CareConnect-RelatedPerson-1'
+  filename: Profile--CareConnect-RelatedPerson-1
+- name: 'Profile: ITK-Device-1'
+  filename: Profile--ITK-Device-1
+- name: 'Profile: CareConnect-Encounter-1'
+  filename: Profile--CareConnect-Encounter-1
+- name: 'Profile: CareConnect-List-1'
+  filename: Profile--CareConnect-List-1
+- name: 'Profile: CareConnect-Observation-1'
+  filename: Profile--CareConnect-Observation-1
+- name: 'Profile: CareConnect-Questionnaire-1'
+  filename: Profile--CareConnect-Questionnaire-1
+- name: 'Profile: CareConnect-QuestionnaireResponse-1'
+  filename: Profile--CareConnect-QuestionnaireResponse-1
+- name: 'Profile: CareConnect-ReferralRequest-1'
+  filename: Profile--CareConnect-ReferralRequest-1
+- name: 'Profile: CareConnect-DocumentReference-1'
+  filename: Profile--CareConnect-DocumentReference-1
+- name: 'Profile: CareConnect-AllergyIntolerance-1'
+  filename: Profile--CareConnect-AllergyIntolerance-1
+- name: 'Profile: CareConnect-FamilyMemberHistory-1'
+  filename: Profile--CareConnect-FamilyMemberHistory-1
+- name: 'Profile: CareConnect-Task-1'
+  filename: Profile--CareConnect-Task-1
+- name: 'Profile: CareConnect-Consent-1'
+  filename: Profile--CareConnect-Consent-1
+- name: 'Profile: CareConnect-Location-1'
+  filename: Profile--CareConnect-Location-1

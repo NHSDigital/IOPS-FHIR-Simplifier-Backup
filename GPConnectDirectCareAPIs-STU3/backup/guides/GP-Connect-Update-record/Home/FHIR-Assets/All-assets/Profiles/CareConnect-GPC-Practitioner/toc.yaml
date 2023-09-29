@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: identifier
+  filename: identifier.page.md
+- name: name
+  filename: name.page.md

@@ -1,0 +1,38 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="e2360fe6-c866-47e7-b35b-7e263f8bc50e" />
+  <meta>
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1" />
+    <tag>
+      <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+      <code value="procedures-and-therapies" />
+      <display value="Procedures and therapies" />
+    </tag>
+  </meta>
+  <identifier>
+    <system value="https://identifiers.provider.test/observation" />
+    <value value="urn:uuid:e2360fe6-c866-47e7-b35b-7e263f8bc50e" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="169531004" />
+      <display value="Uses contraceptive sponge and spermicide" />
+    </coding>
+    <text value="Free text regarding contraception (including review date) can go here." />
+  </code>
+  <effectivePeriod>
+    <start value="2023-07-04" />
+    <end value="2023-10-31" />
+  </effectivePeriod>
+  <subject>
+    <reference value="urn:uuid:42451c37-752d-4c8e-aa80-be8258a9a4e5" />
+  </subject>
+  <context>
+    <reference value="urn:uuid:43b4530b-7e0d-4009-a006-6a8d99cbd4f0" />
+  </context>
+  <issued value="2023-07-04T13:23:00.1516395+00:00" />
+  <performer>
+    <reference value="urn:uuid:39f59e67-d56b-446c-bca9-2c37e7b32c7c" />
+  </performer>
+</Observation>

@@ -1,0 +1,22 @@
+- name: Index
+  filename: Index.guide.md
+- name: Related links
+  filename: Related-links.guide.md
+- name: Elements required for capability
+  filename: Elements-required-for-capability.guide.md
+- name: id
+  filename: id.page.md
+- name: extension(BusAckRequested)
+  filename: extension-BusAckRequested.guide.md
+- name: extension(InfAckRequested)
+  filename: extension-InfAckRequested.guide.md
+- name: extension(RecipientType)
+  filename: extension-RecipientType.guide.md
+- name: extension(MessageDefinition)
+  filename: extension-MessageDefinition.guide.md
+- name: extension(SenderReference)
+  filename: extension-SenderReference.guide.md
+- name: extension(LocalExtension)
+  filename: extension-LocalExtension.guide.md
+- name: url
+  filename: url.guide.md

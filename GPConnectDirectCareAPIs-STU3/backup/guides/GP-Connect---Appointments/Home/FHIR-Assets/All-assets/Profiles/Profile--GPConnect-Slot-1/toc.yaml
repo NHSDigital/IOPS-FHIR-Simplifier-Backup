@@ -1,0 +1,24 @@
+- name: Index
+  filename: Index.page.md
+- name: Elements required for capability
+  filename: Elements-required-for-capability.page.md
+- name: extension
+  filename: extension.page.md
+- name: identifier
+  filename: identifier.page.md
+- name: serviceType
+  filename: serviceType.page.md
+- name: speciality
+  filename: speciality.page.md
+- name: schedule
+  filename: schedule.page.md
+- name: status
+  filename: status.page.md
+- name: start
+  filename: start.page.md
+- name: end
+  filename: end.page.md
+- name: overbooked
+  filename: overbooked.page.md
+- name: comment
+  filename: comment.page.md

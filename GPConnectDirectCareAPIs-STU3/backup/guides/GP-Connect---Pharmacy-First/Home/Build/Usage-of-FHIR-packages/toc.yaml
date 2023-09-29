@@ -1,0 +1,4 @@
+- name: Index
+  filename: Index.page.md
+- name: Getting started with packages
+  filename: Getting-started-with-packages.page.md

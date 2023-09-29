@@ -1,0 +1,3 @@
+## {{page-title}}
+
+GP Foundation Systems that do not use IM1 linkage keys as a means to activate a patient's online access must activate it by other means. A consumer application will make a request to the get permissions API, during this request the GP Foundation System must check if the patient has online access enabled. If the patient does not have online access enabled it must be enabled and the patient's permissions set as per the GP practice's defaults.

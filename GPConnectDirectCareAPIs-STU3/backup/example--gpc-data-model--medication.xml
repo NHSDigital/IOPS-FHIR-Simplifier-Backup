@@ -1,0 +1,15 @@
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="0ba25da1-8294-4be4-99a4-526a5a7d2bad" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2023-01-24T13:39:11.5944636+00:00" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1" />
+  </meta>
+  <code>
+    <coding>
+      <system value="https://dmd.nhs.uk" />
+      <code value="36126411000001107" />
+      <display value="Morphine 10mg modified-release capsules" />
+    </coding>
+  </code>
+</Medication>

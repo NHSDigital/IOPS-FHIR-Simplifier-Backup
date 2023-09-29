@@ -1,0 +1,4 @@
+- name: Semantic versioning
+  filename: Semantic-Versioning.page.md
+- name: Pre-release labels
+  filename: Pre-release-labels.page.md

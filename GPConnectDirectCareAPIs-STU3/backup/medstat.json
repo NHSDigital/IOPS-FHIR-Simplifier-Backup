@@ -1,0 +1,75 @@
+{
+    "resourceType": "MedicationStatement",
+    "id": "44f85d15-8744-47c2-a790-4f5e38aacdb0",
+    "identifier": [
+      {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "123jkwndf-1234-dgdg-134dd-4f5e38aacdb0"
+      }
+    ],
+    "basedOn": [
+      {
+        "reference": "MedicationRequest/0ae6ac98-6b0f-404f-a95b-c38a4318f686",
+        "display": "Repeat prescription request for Aspirin 300mg Dispersible tablets."
+      }
+    ],
+    "status": "active",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "https://dmd.nhs.uk",
+          "code": "329526003",
+          "display": "Aspirin 300mg dispersible tablets"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/9000000009",
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/nhs-number",
+        "value": "9000000009"
+      },
+      "display": "Jane Smith"
+    },
+    "effectivePeriod": {
+      "start": "2022-10-23T13:50:00+00:00",
+      "end": "2023-01-10T13:50:00+00:00"
+    },
+    "dateAsserted": "2022-11-23T13:50:00+00:00",
+    "dosage": [
+      {
+        "text": "2 tablet - 4 times a day - at a meal - Dissolve or mix with water before taking - up to a maximum of 3.6 gram in 24 hours",
+        "additionalInstruction": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "417995008",
+                "display": "Dissolve or mix with water before taking"
+              }
+            ]
+          }
+        ],
+        "timing": {
+          "repeat": {
+            "frequency": 4,
+            "period": 1,
+            "periodUnit": "d",
+            "when": [
+              "C"
+            ]
+          }
+        },
+        "doseAndRate": [
+          {
+            "doseQuantity": {
+              "value": 2,
+              "unit": "tablet",
+              "system": "http://snomed.info/sct",
+              "code": "428673006"
+            }
+          }
+        ]
+      }
+    ]
+  }

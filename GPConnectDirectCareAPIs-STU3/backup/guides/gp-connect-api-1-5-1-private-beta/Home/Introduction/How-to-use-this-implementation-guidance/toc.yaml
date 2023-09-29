@@ -1,0 +1,8 @@
+- name: Intended audience
+  filename: Intended-audience.page.md
+- name: Labels used within this guidance
+  filename: Labels-used-within-this-guidance.page.md
+- name: Infrastructure guide format and structure
+  filename: Infrastructure-guide-format-and-structure.page.md
+- name: Sitemap
+  filename: Sitemap.page.md

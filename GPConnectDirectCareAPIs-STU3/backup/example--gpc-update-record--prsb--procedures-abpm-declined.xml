@@ -1,0 +1,26 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="57eacdfb-12eb-48f7-8ce6-25dbe378613" />
+  <meta>
+    <tag>
+      <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+      <code value="procedures-and-therapies" />
+      <display value="Procedures and therapies" />
+    </tag>
+  </meta>
+  <identifier>
+    <system value="https://identifiers.provider.test/flag" />
+    <value value="urn:uuid:57eacdfb-12eb-48f7-8ce6-25dbe378613c" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="861231000000105" />
+      <display value="Ambulatory blood pressure recording declined" />
+    </coding>
+    <text value="The reason the patient declined the ABPM can be recorded here." />
+  </code>
+  <subject>
+    <reference value="urn:uuid:f39b71e6-27d3-11ee-be56-0242ac120002" />
+  </subject>
+</Observation>

@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Retrieve a patients appointments
+  filename: Retrieve-a-patients-appointments.page.md
+- name: Search for free slots
+  filename: Search-for-free-slots.page.md
+- name: View schedules with free slots
+  filename: View-schedules-with-free-slots.page.md
+- name: Book an appointment
+  filename: Book-an-appointment.page.md
+- name: Amend an appointment
+  filename: Amend-an-appointment.page.md
+- name: Cancel an appointment
+  filename: Cancel-an-appointment.page.md

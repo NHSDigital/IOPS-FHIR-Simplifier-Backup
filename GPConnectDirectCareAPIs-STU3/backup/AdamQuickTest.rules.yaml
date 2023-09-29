@@ -1,0 +1,29 @@
+- name: unique-id
+  action: unique
+  status: "Checking if all resources have a unique id"
+  unique: id
+
+- action: parse
+  name: parse-fhir-resources 
+  status: "Checking if all FHIR Resource files can be parsed"
+  files:
+    - /**/*.xml
+    - /**/*.json
+    - "!package.json"
+
+- name: resource-validation
+  status: "Validating resources against the FHIR standard and their profiles"  
+  action: validate
+  category: Resource
+  suppress: 
+        - 4000
+        - 6005
+        - eld-16
+        - eld-12
+        - opd-2
+        
+- action: unique
+  name: unique-canonicals
+  status: "Checking if all StructureDefinitions have a unique canonical"
+  filter: StructureDefinition
+  unique: url 

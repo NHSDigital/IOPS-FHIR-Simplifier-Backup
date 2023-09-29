@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Example
+  filename: Example.page.md
+- name: Mock up
+  filename: Mock-up.page.md

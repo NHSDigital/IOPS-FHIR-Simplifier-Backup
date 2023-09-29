@@ -1,0 +1,3 @@
+## {{page-title}}
+
+Allergic or adverse reactions to an immunisation may be captured in the GP clinical system, but these are not generally directly associated to the immunisation event. It has not been considered reliable to link any allergic or adverse reaction to the immunisation record. Therefore, information about reactions will not be included. For details of allergies or adverse reaction, the AllergyIntolerance resource **MUST** be requested.

@@ -1,0 +1,4 @@
+- name: Semantic versioning
+  filename: Semantic-versioning.guide.md
+- name: Pre-release labels
+  filename: Pre-release-labels.guide.md

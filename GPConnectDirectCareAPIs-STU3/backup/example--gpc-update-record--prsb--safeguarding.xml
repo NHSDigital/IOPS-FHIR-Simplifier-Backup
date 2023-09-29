@@ -1,0 +1,26 @@
+<Flag xmlns="http://hl7.org/fhir">
+  <id value="4ab82e30-64a6-45df-a171-89102ee02e85" />
+  <meta>
+    <tag>
+      <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+      <code value="safeguarding" />
+      <display value="Safeguarding" />
+    </tag>
+  </meta>
+  <identifier>
+    <system value="https://identifiers.provider.test/flag" />
+    <value value="urn:uuid:4ab82e30-64a6-45df-a171-89102ee02e85" />
+  </identifier>
+  <status value="active" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="415685003" />
+      <display value="Suspected alcohol abuse" />
+    </coding>
+    <text value="Suspected alcohol abuse (situation)" />
+  </code>
+  <subject>
+    <reference value="urn:uuid:f39b71e6-27d3-11ee-be56-0242ac120002" />
+  </subject>
+</Flag>

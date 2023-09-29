@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: How to get started with this capability
+  filename: How-to-get-started-with-this-capability.page.md
+- name: Suppliers using this capability
+  filename: Suppliers-using-this-capability.page.md

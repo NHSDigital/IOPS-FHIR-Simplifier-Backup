@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Prerequisites
+  filename: Prerequisites.page.md
+- name: Common concerns
+  filename: Common-concerns.page.md
+- name: Use case 1 - Additional access to appointments
+  filename: Use-case-1---Additional-access-to-appointments.page.md
+- name: Use case 2 - Additional access to prescriptions
+  filename: Use-case-2---Additional-access-to-prescriptions.page.md
+- name: Use case 3 - Additional access to medical record
+  filename: Use-case-3---Additional-access-to-medical-record.page.md

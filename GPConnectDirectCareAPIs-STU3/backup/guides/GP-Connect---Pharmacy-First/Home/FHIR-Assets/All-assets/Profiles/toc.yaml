@@ -1,0 +1,40 @@
+- name: 'Profile: ITK-Message-Bundle-1'
+  filename: Profile--ITK-Message-Bundle-1
+- name: 'Profile: ITK-MessageHeader-2'
+  filename: Profile--ITK-MessageHeader-2
+- name: 'Profile: CareConnect-ITK-Header-Organization-1'
+  filename: Profile--CareConnect-ITK-Header-Organization-1
+- name: 'Profile: ITK-Response-OperationOutcome-1'
+  filename: Profile--ITK-Response-OperationOutcome-1
+- name: 'Profile: ITK-Document-Bundle-1'
+  filename: Profile--ITK-Document-Bundle-1
+- name: 'Profile: CareConnect-Composition-1'
+  filename: Profile--CareConnect-Composition-1
+- name: 'Profile: CareConnect-GPC-Patient-1'
+  filename: Profile--CareConnect-GPC-Patient-1
+- name: 'Profile: CareConnect-GPC-Organization-1'
+  filename: Profile--CareConnect-GPC-Organization-1
+- name: 'Profile: CareConnect-GPC-Practitioner-1'
+  filename: Profile--CareConnect-GPC-Practitioner-1
+- name: 'Profile: CareConnect-GPC-PractitionerRole-1'
+  filename: Profile--CareConnect-GPC-PractitionerRole-1
+- name: 'Profile: CareConnect-GPC-Encounter-1'
+  filename: Profile--CareConnect-GPC-Encounter-1
+- name: 'Profile: CareConnect-GPC-MedicationDispense-1'
+  filename: Profile--CareConnect-GPC-MedicationDispense-1
+- name: 'Profile: CareConnect-GPC-Observation-1'
+  filename: Profile--CareConnect-GPC-Observation-1
+- name: 'Profile: CareConnect-GPC-ClinicalImpression-1'
+  filename: Profile--CareConnect-GPC-ClinicalImpression-1
+- name: 'Profile: CareConnect-GPC-Condition-1'
+  filename: Profile--CareConnect-GPC-Condition-1
+- name: 'Profile: CareConnect-Flag-1'
+  filename: Profile--CareConnect-Flag-1
+- name: 'Profile: CareConnect-GPC-AllergyIntolerance-1'
+  filename: Profile--CareConnect-GPC-AllergyIntolerance-1
+- name: 'Profile: GPConnect-Appointment-1'
+  filename: Profile--GPConnect-Appointment-1
+- name: 'Profile: CareConnect-Procedure-1'
+  filename: Profile--CareConnect-Procedure-1
+- name: 'Profile: CareConnect-GPC-ReferralRequest-1'
+  filename: Profile--CareConnect-GPC-ReferralRequest-1

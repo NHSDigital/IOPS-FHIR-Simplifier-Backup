@@ -1,0 +1,24 @@
+- name: General API Guidance
+  filename: General-API-guidance.page.md
+- name: FHIR API Guidance
+  filename: FHIR-API-guidance.page.md
+- name: FHIR Resources
+  filename: FHIR-Resources.page.md
+- name: FHIR resource guidance
+  filename: FHIR-Resource-Guidance.page.md
+- name: FHIR Capability Statement
+  filename: FHIR-Capability-Statement.page.md
+- name: Error Handling
+  filename: Error-Handling.page.md
+- name: Known issues
+  filename: Known-Issues.page.md
+- name: How to book an appointment
+  filename: How-to-book-an-appointment
+- name: How to cancel an appointment
+  filename: How-to-cancel-an-appointment
+- name: How to search for free slots
+  filename: How-to-search-for-free-slots
+- name: How to retrieve a patient's appointments
+  filename: How-to-retrieve-a-patient-s-appointments
+- name: How to read an appointment
+  filename: How-to-read-an-appointment

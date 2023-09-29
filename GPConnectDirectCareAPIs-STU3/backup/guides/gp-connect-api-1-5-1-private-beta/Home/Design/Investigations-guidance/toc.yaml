@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Use of language to describe investigation reports
+  filename: Use-of-language-to-describe-investigation-reports.page.md
+- name: Investigation reporting in GP practices
+  filename: Investigation-reporting-in-GP-practices.page.md
+- name: Report structure
+  filename: Report-structure.page.md
+- name: Investigations and Problems
+  filename: Investigations-and-Problems.page.md
+- name: Using the List resource for investigations queries
+  filename: Using-the-List-resource-for-investigations-queries.page.md

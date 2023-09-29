@@ -1,0 +1,620 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
+  </meta>
+  <identifier>
+    <system value="supplier/identifier/namespace" />
+    <value value="cbfc2916-af51-41eb-a73a-7a6eae1cf537" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="3da13692-50da-4709-b95c-87df0d64b7ae" />
+    <resource>
+      <Organization>
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="FQW30" />
+        </identifier>
+        <name value="ANDOVER PHARMACY (FQW30)" />
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="e1a1689c-2f65-467b-ab48-7714813c09cc" />
+    <resource>
+      <MessageHeader>
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2" />
+        </meta>
+        <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+          <extension url="BusAckRequested">
+            <valueBoolean value="true" />
+          </extension>
+          <extension url="InfAckRequested">
+            <valueBoolean value="true" />
+          </extension>
+          <extension url="RecipientType">
+            <valueCoding>
+              <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1" />
+              <code value="FI" />
+              <display value="For Information" />
+            </valueCoding>
+          </extension>
+          <extension url="SenderReference">
+            <valueString value="3a5192c2-6156-4624-a212-0a8f65c27ca2" />
+          </extension>
+          <extension url="LocalExtension">
+            <valueString value="None" />
+          </extension>
+        </extension>
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK???" />
+          <display value="TODO - CONFIRM CODE" />
+        </event>
+        <sender>
+          <reference value="3da13692-50da-4709-b95c-87df0d64b7ae" />
+        </sender>
+        <timestamp value="2023-07-06T17:41:28.7357597+01:00" />
+        <source>
+          <endpoint value="SENDER_MESH_MAILBOX_ID" />
+        </source>
+        <focus>
+          <reference value="e7e655be-32a8-4625-af66-f287eef3d285" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="e7e655be-32a8-4625-af66-f287eef3d285" />
+    <resource>
+      <Bundle>
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1" />
+        </meta>
+        <identifier>
+          <system value="provider/gpc/update-record/id" />
+          <value value="e7e655be-32a8-4625-af66-f287eef3d285" />
+        </identifier>
+        <type value="document" />
+        <entry>
+          <fullUrl value="7982b57f-32ed-442e-b865-f1ee0a1abf70" />
+          <resource>
+            <Composition>
+              <id value="7982b57f-32ed-442e-b865-f1ee0a1abf70" />
+              <meta>
+                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-GPC-Composition-1" />
+                <security>
+                  <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+                  <code value="NOPAT" />
+                  <display value="no disclosure to patient, family or caregivers without attending provider's authorization" />
+                </security>
+              </meta>
+              <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-CareSettingType-1">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="310080006" />
+                  </coding>
+                  <text value="Pharmacy service (qualifier value)" />
+                </valueCodeableConcept>
+              </extension>
+              <status value="final" />
+              <type>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="1321521000000101" />
+                </coding>
+                <text value="Supply of medication for minor illness by community pharmacy (record artifact)" />
+              </type>
+              <subject>
+                <reference value="9af729a6-55cf-4b33-80e1-f8b95a4434dc" />
+              </subject>
+              <encounter>
+                <reference value="3a5192c2-6156-4624-a212-0a8f65c27ca2" />
+              </encounter>
+              <date value="2023-07-06" />
+              <author>
+                <reference value="69444bc0-13b2-4fc3-b5df-e34369af7668" />
+              </author>
+              <title value="ANDOVER PHARMACY Community Pharmacist Minor Illness Referral Consultation Service" />
+              <section>
+                <entry>
+                  <reference value="06e5d2e0-e4a4-45dc-bf0b-2dd20216aefb" />
+                </entry>
+              </section>
+              <section>
+                <entry>
+                  <reference value="3a5192c2-6156-4624-a212-0a8f65c27ca2" />
+                </entry>
+              </section>
+              <section>
+                <entry>
+                  <reference value="d3b26e77-3daa-499c-a801-67c34a254f81" />
+                </entry>
+              </section>
+              <section>
+                <entry>
+                  <reference value="1034d635-70bc-4b5b-8634-c548a45e71c0" />
+                </entry>
+              </section>
+              <section>
+                <entry>
+                  <reference value="c53ef1b5-189c-4006-82b6-2af6d43e21b3" />
+                </entry>
+              </section>
+              <section>
+                <entry>
+                  <reference value="d3811ae1-1323-49aa-99ec-a1573a172527" />
+                </entry>
+              </section>
+              <section>
+                <entry>
+                  <reference value="9af729a6-55cf-4b33-80e1-f8b95a4434dc" />
+                </entry>
+              </section>
+              <section>
+                <entry>
+                  <reference value="99d25ff5-9f30-45c2-bb6e-394f5797552a" />
+                </entry>
+              </section>
+              <section>
+                <entry>
+                  <reference value="094cfdf1-b013-4cd1-a54f-d5a00fe43c39" />
+                </entry>
+              </section>
+              <section>
+                <entry>
+                  <reference value="3da13692-50da-4709-b95c-87df0d64b7ae" />
+                </entry>
+              </section>
+              <section>
+                <entry>
+                  <reference value="69444bc0-13b2-4fc3-b5df-e34369af7668" />
+                </entry>
+              </section>
+            </Composition>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="06e5d2e0-e4a4-45dc-bf0b-2dd20216aefb" />
+    <resource>
+      <ReferralRequest>
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1" />
+        </meta>
+        <identifier>
+          <system value="supplier/identifier/namespace" />
+          <value value="06e5d2e0-e4a4-45dc-bf0b-2dd20216aefb" />
+        </identifier>
+        <status value="unknown" />
+        <intent value="order" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="879591000000102" />
+          </coding>
+        </type>
+        <subject>
+          <identifier>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                  <code value="01" />
+                  <display value="Number present and verified" />
+                </coding>
+                <text value="Number present and verified" />
+              </valueCodeableConcept>
+            </extension>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="4857773456" />
+          </identifier>
+        </subject>
+        <context>
+          <reference value="3a5192c2-6156-4624-a212-0a8f65c27ca2" />
+        </context>
+        <authoredOn value="2023-07-05" />
+        <requester>
+          <agent>
+            <reference value="094cfdf1-b013-4cd1-a54f-d5a00fe43c39" />
+          </agent>
+          <onBehalfOf>
+            <reference value="99d25ff5-9f30-45c2-bb6e-394f5797552a" />
+          </onBehalfOf>
+        </requester>
+        <recipient>
+          <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="FQW30" />
+          </identifier>
+        </recipient>
+        <note>
+          <text value="Justin called NHS 111 due to complaint of sore eye - swollen, watering, feels like something in the eye. Suspected conjunctivitis - referred to Community Pharmacist" />
+        </note>
+      </ReferralRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="3a5192c2-6156-4624-a212-0a8f65c27ca2" />
+    <resource>
+      <Encounter>
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1" />
+        </meta>
+        <identifier>
+          <system value="supplier/identifier/namespace" />
+          <value value="3a5192c2-6156-4624-a212-0a8f65c27ca2" />
+        </identifier>
+        <status value="finished" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="325941000000100" />
+            <display value="Face to face assessment encounter type (record artifact)" />
+          </coding>
+          <text value="Face to face assessment encounter type (record artifact)" />
+        </type>
+        <subject>
+          <identifier>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                  <code value="01" />
+                  <display value="Number present and verified" />
+                </coding>
+                <text value="Number present and verified" />
+              </valueCodeableConcept>
+            </extension>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="4857773456" />
+          </identifier>
+        </subject>
+        <participant>
+          <type>
+            <coding>
+              <system value="https://fhir.nhs.uk/STU3/ValueSet/GPConnect-ParticipantType-1" />
+              <code value="REC" />
+              <display value="Recorder" />
+            </coding>
+            <text value="Recorder" />
+          </type>
+          <individual>
+            <reference value="d3b26e77-3daa-499c-a801-67c34a254f81" />
+          </individual>
+        </participant>
+        <serviceProvider>
+          <reference value="3da13692-50da-4709-b95c-87df0d64b7ae" />
+        </serviceProvider>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="d3b26e77-3daa-499c-a801-67c34a254f81" />
+    <resource>
+      <Practitioner>
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.hl7.org.uk/Id/gphc-number" />
+          <value value="2145879" />
+        </identifier>
+        <active value="true" />
+        <name>
+          <family value="Spencer" />
+          <given value="Di" />
+          <prefix value="Mrs" />
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="1034d635-70bc-4b5b-8634-c548a45e71c0" />
+    <resource>
+      <Condition>
+        <id value="1034d635-70bc-4b5b-8634-c548a45e71c0" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Condition-1" />
+        </meta>
+        <identifier>
+          <system value="provider/gpc/update-record/id" />
+          <value value="1034d635-70bc-4b5b-8634-c548a45e71c0" />
+        </identifier>
+        <clinicalStatus value="resolved" />
+        <verificationStatus value="confirmed" />
+        <category>
+          <coding>
+            <system value="https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1" />
+            <code value="presenting-complaint" />
+            <display value="Presenting complaint" />
+          </coding>
+          <text value="Presenting complaint" />
+        </category>
+        <severity>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="255604002" />
+            <display value="Mild (qualifier value)" />
+          </coding>
+          <text value="Mild (qualifier value)" />
+        </severity>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="9826008" />
+            <display value="Conjunctivitis (disorder)" />
+          </coding>
+          <text value="Conjunctivitis (disorder)" />
+        </code>
+        <subject>
+          <identifier>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                  <code value="01" />
+                  <display value="Number present and verified" />
+                </coding>
+                <text value="Number present and verified" />
+              </valueCodeableConcept>
+            </extension>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="4857773456" />
+          </identifier>
+        </subject>
+        <assertedDate value="2023-07-06" />
+        <asserter>
+          <reference value="d3b26e77-3daa-499c-a801-67c34a254f81" />
+        </asserter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="c53ef1b5-189c-4006-82b6-2af6d43e21b3" />
+    <resource>
+      <MedicationDispense>
+        <identifier>
+          <system value="provider/gpc/update-record/id" />
+          <value value="c53ef1b5-189c-4006-82b6-2af6d43e21b3" />
+        </identifier>
+        <status value="completed" />
+        <medicationCodeableConcept>
+          <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="271611000001100" />
+          </coding>
+          <text value="Chloramphenicol 0.5% eye drops (A A H Pharmaceuticals Ltd)" />
+        </medicationCodeableConcept>
+        <subject>
+          <identifier>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                  <code value="01" />
+                  <display value="Number present and verified" />
+                </coding>
+                <text value="Number present and verified" />
+              </valueCodeableConcept>
+            </extension>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="4857773456" />
+          </identifier>
+        </subject>
+        <performer>
+          <actor>
+            <identifier>
+              <system value="https://fhir.hl7.org.uk/Id/gphc-number" />
+              <value value="2145879" />
+            </identifier>
+          </actor>
+          <onBehalfOf>
+            <identifier>
+              <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+              <value value="FQW30" />
+            </identifier>
+          </onBehalfOf>
+        </performer>
+        <type>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationSupplyType" />
+            <code value="minor-ailments-scheme" />
+            <display value="Minor ailments scheme" />
+          </coding>
+          <text value="Minor ailments scheme" />
+        </type>
+        <daysSupply>
+          <value value="7" />
+          <unit value="day" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+        </daysSupply>
+        <whenPrepared value="2023-07-06" />
+        <whenHandedOver value="2023-07-06" />
+        <dosageInstruction>
+          <sequence value="1" />
+          <text value="One drop into the affected eye every 2 hours during waking hours for the first 2 days" />
+          <timing>
+            <repeat>
+              <boundsDuration>
+                <value value="2" />
+                <unit value="day" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="d" />
+              </boundsDuration>
+              <frequency value="1" />
+              <period value="2" />
+              <periodUnit value="h" />
+              <when value="WAKE" />
+            </repeat>
+          </timing>
+          <doseQuantity>
+            <value value="1" />
+            <unit value="Drop - unit of product usage (qualifier value)" />
+            <system value="http://snomed.info/sct" />
+            <code value="404218003" />
+          </doseQuantity>
+        </dosageInstruction>
+        <dosageInstruction>
+          <sequence value="2" />
+          <text value="Then every four hours for the next three days" />
+          <timing>
+            <repeat>
+              <boundsDuration>
+                <value value="3" />
+                <unit value="day" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="d" />
+              </boundsDuration>
+              <frequency value="1" />
+              <period value="4" />
+              <periodUnit value="h" />
+              <when value="WAKE" />
+            </repeat>
+          </timing>
+          <doseQuantity>
+            <value value="1" />
+            <unit value="Drop - unit of product usage (qualifier value)" />
+            <system value="http://snomed.info/sct" />
+            <code value="404218003" />
+          </doseQuantity>
+        </dosageInstruction>
+      </MedicationDispense>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="d3811ae1-1323-49aa-99ec-a1573a172527" />
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="provider/gpc/update-record/id" />
+          <value value="d3811ae1-1323-49aa-99ec-a1573a172527" />
+        </identifier>
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="887181000000106" />
+            <display value="Clinical summary (record artifact)" />
+          </coding>
+          <text value="Clinical summary (record artifact)" />
+        </code>
+        <subject>
+          <identifier>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                  <code value="01" />
+                  <display value="Number present and verified" />
+                </coding>
+                <text value="Number present and verified" />
+              </valueCodeableConcept>
+            </extension>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="4857773456" />
+          </identifier>
+        </subject>
+        <context>
+          <reference value="3a5192c2-6156-4624-a212-0a8f65c27ca2" />
+        </context>
+        <effectiveDateTime value="2023-07-06" />
+        <issued value="2023-07-06T17:41:28.7929182+01:00" />
+        <performer>
+          <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="FQW30" />
+          </identifier>
+        </performer>
+        <performer>
+          <identifier>
+            <system value="https://fhir.hl7.org.uk/Id/gphc-number" />
+            <value value="2145879" />
+          </identifier>
+        </performer>
+        <valueString value="Referred from NHS 111 - patient complained or sore eyes. Eyes visibly red, swollen and watery. Prescribed Chloramphenicol 0.5% eye drops" />
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="9af729a6-55cf-4b33-80e1-f8b95a4434dc" />
+    <resource>
+      <Patient>
+        <id value="9af729a6-55cf-4b33-80e1-f8b95a4434dc" />
+        <identifier>
+          <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                <code value="01" />
+                <display value="Number present and verified" />
+              </coding>
+              <text value="Number present and verified" />
+            </valueCodeableConcept>
+          </extension>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="4857773456" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <family value="THYME" />
+          <given value="Justin" />
+          <prefix value="MR" />
+        </name>
+        <birthDate value="2009-07-06" />
+        <address>
+          <postalCode value="JIT" />
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="99d25ff5-9f30-45c2-bb6e-394f5797552a" />
+    <resource>
+      <Organization>
+        <id value="99d25ff5-9f30-45c2-bb6e-394f5797552a" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="R8Y4T" />
+        </identifier>
+        <name value="NHS 111 ONLINE (R8Y4T)" />
+        <address>
+          <line value="7-8 WELLINGTON PLACE" />
+          <city value="LEEDS" />
+          <postalCode value="LS1 4AP" />
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="094cfdf1-b013-4cd1-a54f-d5a00fe43c39" />
+    <resource>
+      <Practitioner>
+        <id value="094cfdf1-b013-4cd1-a54f-d5a00fe43c39" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1" />
+        </meta>
+        <name>
+          <use value="official" />
+          <family value="TEAK" />
+          <given value="Anne" />
+          <prefix value="MRS" />
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+</Bundle>

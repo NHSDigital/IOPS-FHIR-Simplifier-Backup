@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Get a patient's permissions
+  filename: Get-a-patient-s-permissions.page.md
+- name: Request a change to a patient's permission
+  filename: Request-a-change-to-a-patient-s-permission.page.md

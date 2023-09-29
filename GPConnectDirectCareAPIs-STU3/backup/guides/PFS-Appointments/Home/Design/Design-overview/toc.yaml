@@ -1,0 +1,8 @@
+- name: Overview
+  filename: Overview.page.md
+- name: Service discovery
+  filename: Service-discovery.page.md
+- name: Spine interactions
+  filename: Spine-interactions.page.md
+- name: Implementation and testing
+  filename: Implementation-and-testing.page.md

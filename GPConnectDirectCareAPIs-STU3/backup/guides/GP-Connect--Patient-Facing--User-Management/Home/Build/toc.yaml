@@ -1,0 +1,8 @@
+- name: General API Guidance
+  filename: General-API-guidance.page.md
+- name: Error Handling
+  filename: Error-Handling.page.md
+- name: How to get a patient's permissions
+  filename: How-to-get-a-patient-s-permissions
+- name: How to request a change to a patient's permissions
+  filename: How-to-request-a-change-to-a-patient-s-permissions
