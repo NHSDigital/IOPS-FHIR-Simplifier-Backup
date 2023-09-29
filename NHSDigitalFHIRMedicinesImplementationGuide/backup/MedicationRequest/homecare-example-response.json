@@ -1,0 +1,318 @@
+{
+    "resourceType": "Bundle",
+    "id": "fcfc4680-9f70-4379-b8cd-a883ecbfa0af",
+    "meta": {
+        "lastUpdated": "2020-11-02T11:15:30+00:00"
+    },
+    "identifier": {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "658c143d-7e8d-43b7-a8b0-495032e50411"
+    },
+    "type": "message",
+    "timestamp": "2020-11-02T11:16:30+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:4f51f97f-a4b8-4756-bac9-b9bc7af8dc23",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "eventCoding": {
+                    "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+                    "code": "prescription-order-response",
+                    "display": "Prescription Order Response"
+                },
+                "source": {
+                    "name": "NHS Spine",
+                    "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$process-message"
+                },
+                "response": {
+                    "identifier": "ea50b4a2-0110-4aaa-a3f5-65707e713ae9",
+                    "code": "ok"
+                },
+                "focus": [
+                    {
+                        "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
+                    },
+                    {
+                        "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionStatusHistory",
+                        "extension": [
+                            {
+                                "url": "status",
+                                "valueCoding": {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-status-history",
+                                    "code": "R-0002",
+                                    "display": "Prescription/item was not cancelled – With dispenser"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner",
+                        "valueReference": {
+                            "reference": "urn:uuid:a5acefc1-f8ca-4989-a5ac-34ae36741466",
+                            "display": "DR SAZ RAZ"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                        "value": "a54219b8-f741-4c47-b662-e4f8dfa49ab6"
+                    }
+                ],
+                "status": "active",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "15517911000001104",
+                            "display": "Methotrexate 10mg/0.2ml solution for injection pre-filled syringes"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2",
+                    "display": "ETTA CORY"
+                },
+                "authoredOn": "2020-07-13T12:00:00+00:00",
+                "requester": {
+                    "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+                    "display": "DR RAZIA ALI"
+                },
+                "groupIdentifier": {
+                    "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                    "value": "DC2C66-A1B2C3-23407B"
+                },
+                "dispenseRequest": {
+                    "performer": {
+                        "extension": [
+                            {
+                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-DispensingPerformer",
+                                "valueReference": {
+                                    "reference": "urn:uuid:25f3dd9f-5838-44a7-930e-c78ae3ecadd6",
+                                    "display": "LOTTIE POTTS"
+                                }
+                            }
+                        ],
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "VNE51"
+                        },
+                        "display": "The Simple Pharmacy"
+                    }
+                },
+                "substitution": {
+                    "allowedBoolean": false
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2",
+            "resource": {
+                "resourceType": "Patient",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9453740519"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "CORY",
+                        "given": [
+                            "ETTA"
+                        ],
+                        "prefix": [
+                            "MISS"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1999-01-04",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "123 Dale Avenue",
+                            "Long Eaton",
+                            "Nottingham"
+                        ],
+                        "postalCode": "NG10 1NP"
+                    }
+                ],
+                "generalPractitioner": [
+                    {
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "B81001"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                        "value": "100102238986"
+                    }
+                ],
+                "practitioner": {
+                    "identifier": {
+                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                        "value": "C1234567"
+                    },
+                    "display": "Dr ALI RAZIA"
+                },
+                "organization": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RBA"
+                    },
+                    "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+                },
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+                                "code": "370",
+                                "display": "MEDICAL ONCOLOGY"
+                            }
+                        ]
+                    }
+                ],
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
+                                "code": "R8000"
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "01234567890",
+                        "use": "work"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:25f3dd9f-5838-44a7-930e-c78ae3ecadd6",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                        "value": "210987654322"
+                    }
+                ],
+                "practitioner": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                        "value": "2145879"
+                    },
+                    "display": "MS LOTTIE POTTS"
+                },
+                "organization": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "VNE51"
+                    },
+                    "display": "The Simple Pharmacy"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
+                                "code": "R1290",
+                                "display": "Pharmacist"
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "01234567890",
+                        "use": "work"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:a5acefc1-f8ca-4989-a5ac-34ae36741466",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                        "value": "100123456789"
+                    }
+                ],
+                "practitioner": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                        "value": "7020134158"
+                    },
+                    "display": "DR SAZ RAZ"
+                },
+                "organization": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RBA"
+                    },
+                    "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+                },
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+                                "code": "100",
+                                "display": "GENERAL MEDICINE"
+                            }
+                        ]
+                    }
+                ],
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
+                                "code": "R8000"
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "01234567890",
+                        "use": "work"
+                    }
+                ]
+            }
+        }
+    ]
+}

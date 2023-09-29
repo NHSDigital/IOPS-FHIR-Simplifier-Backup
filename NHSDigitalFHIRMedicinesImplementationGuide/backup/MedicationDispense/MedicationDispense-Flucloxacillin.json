@@ -1,0 +1,159 @@
+{
+    "resourceType": "MedicationDispense",
+    "id": "4509b70d-d8b8-ea03-1105-64557cb54a29",
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+            "valueCoding": {
+                "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                "code": "0003",
+                "display": "With Dispenser - Active"
+            }
+        }
+    ],
+    "contained": [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "performer",
+            "identifier": [
+                {
+                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                    "value": "741555508105"
+                }
+            ],
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+                            "code": "S0030:G0100:R0620"
+                        }
+                    ]
+                }
+            ],
+            "practitioner": {
+                "identifier":  {
+                    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                    "value": "7654321"
+                },
+                "display": "Mr Peter Potion"
+            },
+            "organization": {
+                "reference": "urn:uuid:2bf9f37c-d88b-4f86-ad5f-373c1416e04b"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "01234567890"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
+            "value": "4509b70d-d8b8-ea03-1105-64557cb54a29"
+        }
+    ],
+    "status": "completed",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "39692211000001107",
+                "display": "Flucloxacillin 500mg capsules"
+            }
+        ]
+    },
+    "subject": {
+        "type": "Patient",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9300992742"
+        },
+        "display" : "Mrs Chi Edinburgh"
+    },
+    "performer": [
+        {
+            "actor": {
+                "type" : "PractitionerRole",
+                "reference" : "#performer"
+            }
+        }
+    ],
+    "authorizingPrescription": [
+        {
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier",
+                    "extension": [
+                        {
+                            "url": "shortForm",
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                                "value": "3C2366-B81001-0A409U"
+                            }
+                        },
+                        {
+                            "url": "UUID",
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/prescription",
+                                "value": "66317E0C-CE13-59AD-9979-9B568E080160"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "reference" : "urn:uuid:8ebfd5a3-b361-42a7-b8ec-f1b60d986939"
+        }
+    ],
+    "type": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                "code": "0001",
+                "display": "Item fully dispensed"
+            }
+        ]
+    },
+    "quantity": {
+        "value": 28,
+        "unit": "capsule",
+        "system": "http://snomed.info/sct",
+        "code": "3316911000001105"
+    },
+    "daysSupply": {
+        "value": 7,
+        "unit": "Day",
+        "system": "http://unitsofmeasure.org",
+        "code": "d"
+    },
+    "whenPrepared": "2004-09-16T16:30:00+00:00",
+    "dosageInstruction": [
+        {
+            "text": "4 times a day for 7 days",
+            "timing": {
+                "repeat": {
+                    "boundsDuration": {
+                        "value": 7,
+                        "unit": "d"
+                    },
+                    "frequency": 4,
+                    "period": 1,
+                    "periodUnit": "d"
+                }
+            },
+            "doseAndRate": [
+                {
+                    "doseQuantity": {
+                        "value": 1,
+                        "unit": "capsule",
+                        "system": "http://snomed.info/sct",
+                        "code": "3316911000001105"
+                    }
+                }
+            ]
+        }
+    ]
+}

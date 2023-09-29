@@ -1,0 +1,31 @@
+### Prescription Order Outpatient Acute Medication
+
+Outpatient acute single item prescription for a complete course of medication
+(MsgId = 187ec06a-2823-4ea7-9512-5899af157480)
+
+
+<div class="nhsd-!t-margin-bottom-6">
+  <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#JSON" role="tab" data-toggle="tab">JSON</a>
+        </li>
+         <li role="presentation">
+            <a href="#XML" role="tab" data-toggle="tab">XML</a>
+        </li>
+        <li role="presentation">
+            <a href="#Tree" role="tab" data-toggle="tab">Tree</a>
+        </li>
+  </ul>
+    
+  <div class="tab-content snippet">
+    <div id="JSON" role="tabpanel" class="tab-pane active">
+{{json:Bundle-outpatient-1b-duplicate-2}}
+    </div>
+    <div id="XML" role="tabpanel" class="tab-pane">
+{{xml:Bundle-outpatient-1b-duplicate-2}}
+    </div>
+    <div id="Tree" role="tabpanel" class="tab-pane">
+{{tree:Bundle-outpatient-1b-duplicate-2}}
+    </div>
+  </div>
+</div>

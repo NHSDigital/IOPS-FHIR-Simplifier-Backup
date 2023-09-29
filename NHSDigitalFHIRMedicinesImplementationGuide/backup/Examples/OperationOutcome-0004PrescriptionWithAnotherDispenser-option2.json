@@ -1,0 +1,34 @@
+{
+  "resourceType": "OperationOutcome",
+  "id" : "option2",
+  "meta": {
+    "lastUpdated": "2021-04-14T11:35:00+00:00"
+  },
+  "extension": [
+    {
+      "url" : "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-supportingInfo",
+      "valueReference" : {
+        "identifier" : {
+          "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "VNE51"         
+        },
+        "display" : "The Simple Pharmacy"
+      }
+    }
+  ],
+  "issue": [
+    {
+      "severity": "error",
+      "code": "conflict",
+      "details": {
+        "coding": [
+          { 
+            "system": "https://fhir.nhs.uk/CodeSystem/EPS-IssueCode",
+            "code": "PRESCRIPTION_WITH_ANOTHER_DISPENSER",
+            "display": "Prescription is with another dispenser"
+          }
+        ]
+      }
+    }
+  ]
+}

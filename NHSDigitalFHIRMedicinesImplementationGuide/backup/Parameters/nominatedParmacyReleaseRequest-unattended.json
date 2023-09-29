@@ -1,0 +1,92 @@
+{
+    "resourceType": "Parameters",
+    "id": "ee778f88-e1aa-49b0-8cbc-77d54c65ef9e",
+    "parameter": [
+        {
+            "name": "status",
+            "valueCode": "accepted"
+        },
+        {
+            "name": "agent",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "16708936-6397-4e03-b84f-4aaa790633e0",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                        "value": "555086415105"
+                    }
+                ],
+                "practitioner": {
+                    "identifier":  {
+                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                        "value": "3415870201"
+                      },
+                    "display": "Jackie Clark"
+                },
+                "code":  [
+                    {
+                        "coding":  [
+                            {
+                                "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+                                "code": "S0030:G0100:R0620"
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "02380798431",
+                        "use": "work"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "owner",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "organization",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "VNE51"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "West Yorkshire",
+                        "use": "work",
+                        "line": [
+                            "17 Austhorpe Road",
+                            "Crossgates",
+                            "Leeds"
+                        ],
+                        "postalCode": "LS15 8BA"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                                "code": "182",
+                                "display": "PHARMACY"
+                            }
+                        ]
+                    }
+                ],
+                "name": "The Simple Pharmacy",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "work",
+                        "value": "0113 3180277"
+                    }
+                ]
+            }
+        }
+    ]
+}

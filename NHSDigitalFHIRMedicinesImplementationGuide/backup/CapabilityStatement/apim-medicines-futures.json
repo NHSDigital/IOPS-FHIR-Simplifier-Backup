@@ -1,0 +1,645 @@
+{
+    "resourceType": "CapabilityStatement",
+    "id": "apim-eps-futures",
+    "extension":  [
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Package",
+            "extension":  [
+                {
+                    "url": "FHIRPackage",
+                    "extension":  [
+                        {
+                            "url": "name",
+                            "valueString": "uk.nhsdigital.r4.test"
+                        }
+                    ]
+                },
+                {
+                    "url": "FHIRPackage",
+                    "extension":  [
+                        {
+                            "url": "name",
+                            "valueString": "uk.nhsdigital.medicines.r4.test"
+                        }
+                    ]
+                },
+                {
+                    "url": "FHIRPackage",
+                    "extension":  [
+                        {
+                            "url": "name",
+                            "valueString": "UKCore.Release1.test"
+                        },
+                        {
+                            "url": "version",
+                            "valueString": "1.2.2-prerelease"
+                        }
+                    ]
+                },
+                {
+                    "url": "openApi",
+                    "extension":  [
+                        {
+                            "url": "documentation",
+                            "valueUrl": "https://digital.nhs.uk/developer/api-catalogue/electronic-prescription-service-fhir"
+                        },
+                        {
+                            "url": "description",
+                            "valueString": "Electronic Prescription Service - FHIR API"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "url": "https://fhir.nhs.uk/CapabilityStatement/apim-eps-futures",
+    "version": "3.0.0",
+    "name": "APIMEPSFutures",
+    "status": "active",
+    "date": "2021-04-28T00:00:00+00:00",
+    "publisher": "digital.nhs.uk",
+    "description": "Conformance requirements for NHS Digital EPS Futures",
+    "kind": "requirements",
+    "implementationGuide":  [
+        "https://simplifier.net/guide/nhsdigital-medicine",
+        "https://simplifier.net/guide/nhsdigital"
+    ],
+    "fhirVersion": "4.0.1",
+    "format":  [
+        "application/fhir+json"
+    ],
+    "rest":  [
+        {
+            "mode": "server",
+            "security": {
+                "service":  [
+                    {
+                        "coding":  [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                                "code": "OAuth",
+                                "display": "OAuth2 Token"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "resource":  [
+                {
+                    "type": "MedicationRequest",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-Contained",
+                    "interaction":  [
+                        {
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
+                                    "extension":  [
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": false
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Bundle/fc2af095-2074-473c-b527-701a74998773"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Patient MedicationRequest search"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Request **GET [baseUrl]/MedicationRequest?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9912003888"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "code": "search-type",
+                            "documentation": "The EPS Tracker."
+                        },
+                        {
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
+                                    "extension":  [
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": false
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "MedicationRequest/a7b86f8d-1d7c-fc28-e050-d20ae3a215f4"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "code": "read",
+                            "documentation": "**Download prescription (part)**"
+                        },
+                        {
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
+                                    "extension":  [
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "MedicationRequest/a7b86f8d-1d7c-fc28-e050-d20ae3a215f4"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "code": "create",
+                            "documentation": "**Create a new prescription**. Equivalent to `prescription-order` message in NextGen"
+                        },
+                        {
+                            "code": "patch",
+                            "documentation": "Replaces part of the functionality in cancel prescription"
+                        }
+                    ],
+                    "operation":  [
+                        {
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
+                                    "extension":  [
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/702cc4e9-81fc-470e-8ae1-43120ae5c16d"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Dispenser accepts a MedicationRequest assigned to them or takes ownership and accepts a MedicationRequest"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Task.status is set to accepted and the owner field must be populated."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": false
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "OperationOutcome/option2"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "name": "lock",
+                            "definition": "https://fhir.nhs.uk/OperationDefinition/MedicationRequest-lock"
+                        },
+                        {
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
+                                    "extension":  [
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/af8a007d-0a7c-4124-a713-55280eaaf5bb"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Dispenser completes fullfilment of order"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Task.status set to completed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/148fd3a7-79e1-4bee-b769-cc6ada05391d"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Dispenser rejects MedicationRequest assigned to them"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Task.status set to rejected and a statusReason is given (e.g. unable to dispense medications)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/04908e21-1c70-4cc8-ac7b-1e611eddae1e"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Dispenser fails MedicationRequest assigned or previously accepted by them"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Task.status set to rejected and a reason is given (e.g. invalid digital signature)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/1291fcca-902b-48f3-9d07-1be9ea30d7a0"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Dispenser or other practitioner cancels the MedicationRequest"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Task.status set to cancelled or entered-in-error."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": false
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "OperationOutcome/option2"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "name": "unlock",
+                            "definition": "https://fhir.nhs.uk/OperationDefinition/MedicationRequest-unlock"
+                        }
+                    ],
+                    "searchParam":  [
+                        {
+                            "name": "patient:identifier",
+                            "type": "token",
+                            "documentation": "Returns prescriptions for a specific patient",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "https://fhir.nhs.uk/Id/nhs-number|9000000009"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "intended-performer",
+                            "type": "reference",
+                            "documentation": "Return prescriptions for this medication reference",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "https://fhir.nhs.uk/Id/ods-organization-code|M85011"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "status",
+                            "type": "token",
+                            "documentation": "Status of the prescription",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "showCodeAndSystem",
+                                            "valueBoolean": false
+                                        },
+                                        {
+                                            "url": "allowedValues",
+                                            "valueReference": {
+                                                "reference": "http://hl7.org/fhir/ValueSet/medicationrequest-status"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "requester.identifier",
+                            "type": "token",
+                            "documentation": "Returns prescriptions prescribed by this prescriber",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "https://fhir.nhs.uk/Id/ods-organization-code|M85011"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "group",
+                            "type": "reference",
+                            "documentation": "Returns grouped prescriptions"
+                        },{
+                            "name": "_count",
+                            "type": "special",
+                            "documentation": "How many results to return"
+                        }
+                    ]
+                },
+                {
+                    "type": "MedicationDispense",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense",
+                    "interaction":  [
+                        {
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
+                                    "extension":  [
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": false
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Bundle/11c0abb3-7223-4cd8-88bd-68d29694f24c"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Patient MedicationDispense search"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Request **GET [baseUrl]/MedicationDispense?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9912003888"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "code": "search-type",
+                            "documentation": "EPS Tracker."
+                        },
+                        {
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
+                                    "extension":  [
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": false
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "MedicationDispense/06167339-9337-d030-0366-514a6a46da17"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "code": "read",
+                            "documentation": "New feature. Allows querying of a patients dispense history"
+                        },
+                        {
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
+                                    "extension":  [
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "MedicationDispense/06167339-9337-d030-0366-514a6a46da17"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "code": "create",
+                            "documentation": "**Mark a prescription as Dispensed**. Equivalent to `dispense-notification` in NextGen"
+                        },
+                        {
+                            "code": "patch"
+                        }
+                    ],
+                    "searchParam":  [
+                        {
+                            "name": "patient:identifier",
+                            "type": "token",
+                            "documentation": "The identity of a patient to list dispenses for",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "https://fhir.nhs.uk/Id/nhs-number|9000000009"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "prescription",
+                            "type": "reference",
+                            "documentation": "The identity of a prescription to list dispenses from",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                        "name": "status",
+                        "type": "token",
+                        "documentation": "Returns dispenses with a specified dispense status",
+                        "extension":  [
+                            {
+                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                "extension":  [
+                                    {
+                                        "url": "minimum",
+                                        "valueInteger": 0
+                                    },
+                                    {
+                                        "url": "maximum",
+                                        "valueInteger": 1
+                                    },
+                                    {
+                                        "url": "showCodeAndSystem",
+                                        "valueBoolean": false
+                                    },
+                                    {
+                                        "url": "allowedValues",
+                                        "valueReference": {
+                                            "reference": "http://hl7.org/fhir/ValueSet/medicationdispense-status"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                        },
+                        {
+                            "name": "_count",
+                            "type": "special",
+                            "documentation": "How many results to return"
+                        }
+                    ]
+                }
+            ]  
+        }
+    ]
+}

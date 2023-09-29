@@ -1,0 +1,87 @@
+{
+    "resourceType": "Task",
+    "id": "148fd3a7-79e1-4bee-b769-cc6ada05391d",
+    "contained":  [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "requester",
+            "identifier": [
+                {
+                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                    "value": "741555508105"
+                }
+            ],
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+                            "code": "S0030:G0100:R0620"
+                        }
+                    ]
+                }
+            ],
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                    "value": "7654321"
+                },
+                "display": "Ms Lottie Maifeld"
+            },
+            "organization": {
+			    "reference": "Organization/3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "VNE51"
+                },
+                "display": "The Pharmacy"
+            },
+            "telecom": [
+                {
+                  "system": "phone",
+                  "use": "work",
+                  "value": "01234567890"
+                }
+              ]
+        }
+    ],
+    "identifier":  [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "ADD2E9DD-DA0A-C266-A4E3-447C68239525"
+        }
+    ],
+    "status": "rejected",
+    "statusReason": {
+        "coding":  [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason",
+                "code": "0002",
+                "display": "Unable to dispense medication on prescriptions"
+            }
+        ]
+    },
+    "intent": "order",
+    "code": {
+        "coding":  [
+            {
+                "system": "http://hl7.org/fhir/CodeSystem/task-code",
+                "code": "fulfill",
+                "display": "Fulfill the focal request"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "MedicationRequest/1e34ee53-397a-2e70-e97c-67b1bd95014d"
+    },
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9446368138"
+        }
+    },
+    "authoredOn": "2016-03-10T22:39:32-04:00",
+    "requester": {
+        "reference": "#requester"
+    }
+}

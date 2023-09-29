@@ -1,0 +1,489 @@
+{
+    "resourceType": "Claim",
+    "id": "e8e75676-9d30-45f8-8b09-696818e7f4ca",
+    "contained": [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "provider",
+            "identifier": [
+                {
+                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                    "value": "884562163557"
+                }
+            ],
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+                            "code": "S0030:G0100:R0620"
+                        }
+                    ]
+                }
+            ],
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                    "value": "7321654"
+                },
+                "display": "dummy full name"
+            },
+            "organization": {
+                "reference" : "#organisation"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "01234567890"
+                }
+            ]
+        },
+        {
+          
+          "resourceType": "Organization",
+          "id": "organisation",
+          "identifier": [
+            {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "VNE51"
+            }
+          ],
+          "address": [
+            {
+              "city": "West Yorkshire",
+              "use": "work",
+              "line": [
+                "17 Austhorpe Road",
+                "Crossgates",
+                "Leeds"
+              ],
+              "postalCode": "LS15 8BA"
+            }
+          ],
+          "active": true,
+          "type": [
+            {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                  "code": "182",
+                  "display": "PHARMACY"
+                }
+              ]
+            }
+          ],
+          "name": "The Simple Pharmacy",
+          "telecom": [
+            {
+              "system": "phone",
+              "use": "work",
+              "value": "0113 3180277"
+            }
+          ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "737dcf8d-fc7a-436d-b692-7d3c4f258083"
+        }
+    ],
+    "status": "active",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                "code": "pharmacy",
+                "display": "Pharmacy"
+            }
+        ]
+    },
+    "use": "claim",
+    "patient": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9300992742"
+        }
+    },
+    "created": "2011-10-25T13:45:35+00:00",
+    "provider": {
+        "reference" : "#provider"
+    },
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+                "code": "normal"
+            }
+        ]
+    },
+    "prescription": {
+        "extension": [
+            {
+                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier",
+                "extension": [
+                    {
+                        "url": "shortForm",
+                        "valueIdentifier": {
+                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                            "value": "111467-A82003-09881S"
+                        }
+                    },
+                    {
+                        "url": "UUID",
+                        "valueIdentifier": {
+                            "system": "https://fhir.nhs.uk/Id/prescription",
+                            "value": "1DE59600-86B1-11DB-84BA-2B9204F7A7C9"
+                        }
+                    }
+                ]
+            }
+        ],
+        "display": "A prescription"
+    },
+    "payee": {
+        "type": {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/payeetype",
+                    "code": "provider",
+                    "display": "Provider"
+                }
+            ]
+        },
+        "party": {
+            "reference" : "#organisation"
+        }
+    },
+    "insurance": [
+        {
+            "sequence": 1,
+            "focal": true,
+            "coverage": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "T1450"
+                },
+                "display": "NHS BUSINESS SERVICES AUTHORITY"
+            }
+        }
+    ],
+    "item": [
+        {
+            "sequence": 1,
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "0006",
+                        "display": "Dispensed"
+                    }
+                }
+            ],
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "16076005",
+                        "display": "Prescription"
+                    }
+                ]
+            },
+            "programCode": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
+                            "code": "0001",
+                            "display": "Patient has paid appropriate charges"
+                        }
+                    ]
+                }
+            ],
+            "detail": [
+                {
+                    "extension": [
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
+                                "value": "58338C37-00E5-A577-E040-A8C016024E6D"
+                            }
+                        },
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
+                            "valueReference": {
+                                "identifier": {
+                                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                    "value": "33560bee-bc0c-4e3b-a155-71591eee9ca5"
+                                }
+                            }
+                        }
+                    ],
+                    "sequence": 1,
+                    "productOrService": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "4627711000001106",
+                                "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd)"
+                            }
+                        ]
+                    },
+                    "modifier": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                    "code": "0001",
+                                    "display": "Item fully dispensed"
+                                }
+                            ]
+                        }
+                    ],
+                    "quantity": {
+                        "value": 1,
+                        "unit": "vial",
+                        "system": "http://snomed.info/sct",
+                        "code": "3319611000001107"
+                    },
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "not-paid",
+                                    "display": "Not Paid"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
+                                }
+                            ]
+                        }
+                    ],
+                    "subDetail": [
+                        {
+                            "sequence": 1,
+                            "productOrService": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "4627811000001103",
+                                        "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd) 1 vial"
+                                    }
+                                ]
+                            },
+                            "quantity": {
+                                "value": 1,
+                                "unit": "vial",
+                                "system": "http://snomed.info/sct",
+                                "code": "3319611000001107"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
+                                "value": "58338C37-00E6-A577-E040-A8C016024E6D"
+                            }
+                        },
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
+                            "valueReference": {
+                                "identifier": {
+                                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                    "value": "e8e75676-9d30-45f8-8b09-696818e7f4ca"
+                                }
+                            }
+                        }
+                    ],
+                    "sequence": 2,
+                    "productOrService": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "4627711000001106",
+                                "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd)"
+                            }
+                        ]
+                    },
+                    "modifier": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                    "code": "0001",
+                                    "display": "Item fully dispensed"
+                                }
+                            ]
+                        }
+                    ],
+                    "quantity": {
+                        "value": 1,
+                        "unit": "vial",
+                        "system": "http://snomed.info/sct",
+                        "code": "3319611000001107"
+                    },
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "BB",
+                                    "display": "Broken Bulk"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "not-paid",
+                                    "display": "Not Paid"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "IP",
+                                    "display": "Invoice Price for less common products or special items"
+                                }
+                            ],
+                            "text" : "15gram,£12.34,EFGH Ltd"
+                        }
+                    ],
+                    "subDetail": [
+                        {
+                            "sequence": 1,
+                            "productOrService": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "4627811000001103",
+                                        "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd) 1 vial"
+                                    }
+                                ]
+                            },
+                            "quantity": {
+                                "value": 1,
+                                "unit": "vial",
+                                "system": "http://snomed.info/sct",
+                                "code": "3319611000001107"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
+                                "value": "58338C37-00E7-A577-E040-A8C016024E6D"
+                            }
+                        },
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
+                            "valueReference": {
+                                "identifier": {
+                                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                    "value": "164e94fe-16e5-4105-a4aa-10c3757c07c5"
+                                }
+                            }
+                        }
+                    ],
+                    "sequence": 3,
+                    "productOrService": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "4627711000001106",
+                                "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd)"
+                            }
+                        ]
+                    },
+                    "modifier": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                    "code": "0001",
+                                    "display": "Item fully dispensed"
+                                }
+                            ]
+                        }
+                    ],
+                    "quantity": {
+                        "value": 1,
+                        "unit": "vial",
+                        "system": "http://snomed.info/sct",
+                        "code": "3319611000001107"
+                    },
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "not-paid",
+                                    "display": "Not Paid"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
+                                }
+                            ]
+                        }
+                    ],
+                    "subDetail": [
+                        {
+                            "sequence": 1,
+                            "productOrService": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "4627811000001103",
+                                        "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd) 1 vial"
+                                    }
+                                ]
+                            },
+                            "quantity": {
+                                "value": 1,
+                                "unit": "vial",
+                                "system": "http://snomed.info/sct",
+                                "code": "3319611000001107"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

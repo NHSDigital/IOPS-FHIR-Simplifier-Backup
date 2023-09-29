@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.guide.md
+- name: PatientPrescriptionReleaseRequest
+  filename: PatientPrescriptionReleaseRequest.guide.md
+- name: NominatedPharmacyReleaseRequest
+  filename: NominatedPharmacyReleaseRequest.guide.md
+- name: NominatedPharmacyReleaseRequest - Unattended
+  filename: NominatedPharmacyReleaseRequest-Unattended.guide.md

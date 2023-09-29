@@ -1,0 +1,366 @@
+{
+    "resourceType": "Claim",
+    "id": "258E153F-567B-4D60-B045-BA315A6B8DB0",
+    "contained": [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "provider",
+            "identifier": [
+                {
+                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                    "value": "741555508105"
+                }
+            ],
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+                            "code": "S0030:G0100:R0620"
+                        }
+                    ]
+                }
+            ],
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                    "value": "2344242"
+                },
+                "display": "|Bob||Buller|"
+            },
+            "organization": {
+                "reference" : "#organisation"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "01234567890"
+                }
+            ]
+        },
+        {
+          
+          "resourceType": "Organization",
+          "id": "organisation",
+          "identifier": [
+            {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "VNE51"
+            }
+          ],
+          "address": [
+            {
+              "city": "West Yorkshire",
+              "use": "work",
+              "line": [
+                "17 Austhorpe Road",
+                "Crossgates",
+                "Leeds"
+              ],
+              "postalCode": "LS15 8BA"
+            }
+          ],
+          "active": true,
+          "type": [
+            {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                  "code": "182",
+                  "display": "PHARMACY"
+                }
+              ]
+            }
+          ],
+          "name": "The Simple Pharmacy",
+          "telecom": [
+            {
+              "system": "phone",
+              "use": "work",
+              "value": "0113 3180277"
+            }
+          ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "d1257b5f-c738-0ca3-e050-d20ae3a20464"
+        }
+    ],
+    "status": "active",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                "code": "pharmacy",
+                "display": "pharmacy"
+            }
+        ]
+    },
+    "use": "claim",
+    "patient": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9446365678"
+        },
+        "display": "Dart Janelle Cori"
+    },
+    "created": "2021-11-22T10:28:02.0Z",
+    "provider": {
+        "reference" : "#provider"
+    },
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+                "code": "normal"
+            }
+        ]
+    },
+    "prescription": {
+        "extension": [
+            {
+                "extension": [
+                    {
+                        "url": "shortForm",
+                        "valueIdentifier": {
+                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                            "value": "222FD3-B83002-00001I"
+                        }
+                    },
+                    {
+                        "url": "UUID",
+                        "valueIdentifier": {
+                            "system": "https://fhir.nhs.uk/Id/prescription",
+                            "value": "d1257b5f-c5f3-0ca3-e050-d20ae3a20464"
+                        }
+                    }
+                ],
+                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier"
+            }
+        ],
+        "display": "The original prescription"
+    },
+    "payee": {
+        "type": {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/payeetype",
+                    "code": "provider",
+                    "display": "Provider"
+                }
+            ]
+        },
+        "party": {
+            "reference" : "#organisation"
+        }
+    },
+    "insurance": [
+        {
+            "sequence": 1,
+            "focal": true,
+            "coverage": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "T1450"
+                },
+                "display": "PPA"
+            }
+        }
+    ],
+    "item": [
+        {
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "0006",
+                        "display": "Dispensed"
+                    }
+                }
+            ],
+            "sequence": 1,
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "16076005",
+                        "display": "Prescription"
+                    }
+                ]
+            },
+            "programCode": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
+                            "code": "0001",
+                            "display": "Patient has paid appropriate charges"
+                        }
+                    ]
+                }, {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence",
+                            "code": "no-evidence-seen",
+                            "display": "No Evidence Seen"
+                        }
+                    ]
+                }
+            ],
+            "detail": [
+                {
+                    "extension": [
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
+                                "value": "E19DBF8D-84E9-45EE-BD62-B771C9FE7022"
+                            }
+                        },
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
+                            "valueReference": {
+                                "identifier": {
+                                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                    "value": "d1257b5f-c738-0ca3-e050-d20ae3a20464"
+                                }
+                            }
+                        }
+                    ],
+                    "sequence": 1,
+                    "productOrService": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "134463001",
+                                "display": "Telmisartan 20mg tablets"
+                            }
+                        ]
+                    },
+                    "modifier": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                    "code": "0001",
+                                    "display": "Item fully dispensed"
+                                }
+                            ]
+                        }
+                    ],
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "paid-once",
+                                    "display": "Paid Once"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
+                                }
+                            ]
+                        }
+                    ],
+                    "quantity": {
+                        "value": 28,
+                        "unit": "tablet",
+                        "system": "http://snomed.info/sct",
+                        "code": "428673006"
+                    },
+                    "subDetail": [
+                        {
+                            "sequence": 1,
+                            "productOrService": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "38781611000001106",
+                                        "display": "Telmisartan 20mg tablets (Ennogen Healthcare Ltd)"
+                                    }
+                                ]
+                            },
+                            "quantity": {
+                                "value": 28,
+                                "unit": "tablet",
+                                "system": "http://snomed.info/sct",
+                                "code": "428673006"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
+                                "value": "B24A5B33-AEFB-4BEF-89CE-2A819C57AA2A"
+                            }
+                        },
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
+                            "valueReference": {
+                                "identifier": {
+                                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                    "value": "d1257b5f-c73d-0ca3-e050-d20ae3a20464"
+                                }
+                            }
+                        }
+                    ],
+                    "sequence": 2,
+                    "productOrService": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "318986004",
+                                "display": "Telmisartan 40mg tablets"
+                            }
+                        ]
+                    },
+                    "modifier": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                    "code": "0002",
+                                    "display": "Item not dispensed"
+                                }
+                            ]
+                        }
+                    ],
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "paid-once",
+                                    "display": "Paid Once"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
