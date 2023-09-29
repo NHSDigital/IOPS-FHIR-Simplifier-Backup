@@ -1,0 +1,483 @@
+{
+  "resourceType": "StructureMap",
+  "id": "1",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2022-07-14T16:07:53.219+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://hl7.org/fhir/StructureMap/AllergyIntolerance3to4&quot; = &quot;R3 to R4 Conversions for AllergyIntolerance&quot;\r\n\r\n\r\nuses &quot;http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance&quot; alias AllergyIntoleranceR3 as source\r\nuses &quot;http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance&quot; alias AllergyIntolerance as target\r\n\r\nimports &quot;http://hl7.org/fhir/StructureMap/*3to4&quot;\r\n\r\ngroup AllergyIntolerance(source src : AllergyIntoleranceR3, target tgt : AllergyIntolerance) extends DomainResource &lt;&lt;type+&gt;&gt; {\r\n  src.identifier -&gt; tgt.identifier;\r\n  src.clinicalStatus as vs -&gt;  tgt.clinicalStatus as vt,  vt.coding as c,  c.system = 'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical',  c.code = vs;\r\n  src.verificationStatus as vs -&gt;  tgt.verificationStatus as vt,  vt.coding as c,  c.system = 'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification',  c.code = vs;\r\n  src.type -&gt; tgt.type;\r\n  src.category -&gt; tgt.category;\r\n  src.criticality -&gt; tgt.criticality;\r\n  src.code -&gt; tgt.code;\r\n  src.patient -&gt; tgt.patient;\r\n  src.onset : dateTime as vs -&gt; tgt.onset = create('dateTime') as vt then dateTime(vs, vt);\r\n  src.onset : Age as vs -&gt; tgt.onset = create('Age') as vt then Age(vs, vt);\r\n  src.onset : Period as vs -&gt; tgt.onset = create('Period') as vt then Period(vs, vt);\r\n  src.onset : Range as vs -&gt; tgt.onset = create('Range') as vt then Range(vs, vt);\r\n  src.onset : string as vs -&gt; tgt.onset = create('string') as vt then string(vs, vt);\r\n  src.assertedDate -&gt; tgt.recordedDate &quot;recordedDate&quot;;\r\n  src.recorder -&gt; tgt.recorder;\r\n  src.asserter -&gt; tgt.asserter;\r\n  src.lastOccurrence -&gt; tgt.lastOccurrence;\r\n  src.note -&gt; tgt.note;\r\n  src.reaction as vs0 -&gt; tgt.reaction as vt0 then {\r\n    vs0.substance -&gt; vt0.substance;\r\n    vs0.manifestation -&gt; vt0.manifestation;\r\n    vs0.description -&gt; vt0.description;\r\n    vs0.onset -&gt; vt0.onset;\r\n    vs0.severity -&gt; vt0.severity;\r\n    vs0.exposureRoute -&gt; vt0.exposureRoute;\r\n    vs0.note -&gt; vt0.note;\r\n  };\r\n}\r\n\r\n</pre></div>"
+  },
+  "url": "http://hl7.org/fhir/StructureMap/AllergyIntolerance3to4",
+  "name": "R3 to R4 Conversions for AllergyIntolerance",
+  "structure": [ {
+    "url": "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance",
+    "mode": "source",
+    "alias": "AllergyIntoleranceR3"
+  }, {
+    "url": "http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance",
+    "mode": "target",
+    "alias": "AllergyIntolerance"
+  } ],
+  "import": [ "http://hl7.org/fhir/StructureMap/*3to4" ],
+  "group": [ {
+    "name": "AllergyIntolerance",
+    "extends": "DomainResource",
+    "typeMode": "type-and-types",
+    "input": [ {
+      "name": "src",
+      "type": "AllergyIntoleranceR3",
+      "mode": "source"
+    }, {
+      "name": "tgt",
+      "type": "AllergyIntolerance",
+      "mode": "target"
+    } ],
+    "rule": [ {
+      "name": "identifier",
+      "source": [ {
+        "context": "src",
+        "element": "identifier",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "identifier",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "clinicalStatus",
+      "source": [ {
+        "context": "src",
+        "element": "clinicalStatus",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "clinicalStatus",
+        "variable": "vt"
+      }, {
+        "context": "vt",
+        "contextType": "variable",
+        "element": "coding",
+        "variable": "c"
+      }, {
+        "context": "c",
+        "contextType": "variable",
+        "element": "system",
+        "transform": "copy",
+        "parameter": [ {
+          "valueString": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+        } ]
+      }, {
+        "context": "c",
+        "contextType": "variable",
+        "element": "code",
+        "transform": "copy",
+        "parameter": [ {
+          "valueId": "vs"
+        } ]
+      } ]
+    }, {
+      "name": "verificationStatus",
+      "source": [ {
+        "context": "src",
+        "element": "verificationStatus",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "verificationStatus",
+        "variable": "vt"
+      }, {
+        "context": "vt",
+        "contextType": "variable",
+        "element": "coding",
+        "variable": "c"
+      }, {
+        "context": "c",
+        "contextType": "variable",
+        "element": "system",
+        "transform": "copy",
+        "parameter": [ {
+          "valueString": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+        } ]
+      }, {
+        "context": "c",
+        "contextType": "variable",
+        "element": "code",
+        "transform": "copy",
+        "parameter": [ {
+          "valueId": "vs"
+        } ]
+      } ]
+    }, {
+      "name": "type",
+      "source": [ {
+        "context": "src",
+        "element": "type",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "type",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "category",
+      "source": [ {
+        "context": "src",
+        "element": "category",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "category",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "criticality",
+      "source": [ {
+        "context": "src",
+        "element": "criticality",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "criticality",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "code",
+      "source": [ {
+        "context": "src",
+        "element": "code",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "code",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "patient",
+      "source": [ {
+        "context": "src",
+        "element": "patient",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "patient",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "onset-dateTime",
+      "source": [ {
+        "context": "src",
+        "type": "dateTime",
+        "element": "onset",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "onset",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "dateTime"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "dateTime",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "onset-Age",
+      "source": [ {
+        "context": "src",
+        "type": "Age",
+        "element": "onset",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "onset",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "Age"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "Age",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "onset-Period",
+      "source": [ {
+        "context": "src",
+        "type": "Period",
+        "element": "onset",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "onset",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "Period"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "Period",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "onset-Range",
+      "source": [ {
+        "context": "src",
+        "type": "Range",
+        "element": "onset",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "onset",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "Range"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "Range",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "onset-string",
+      "source": [ {
+        "context": "src",
+        "type": "string",
+        "element": "onset",
+        "variable": "vs"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "onset",
+        "variable": "vt",
+        "transform": "create",
+        "parameter": [ {
+          "valueString": "string"
+        } ]
+      } ],
+      "dependent": [ {
+        "name": "string",
+        "variable": [ "vs", "vt" ]
+      } ]
+    }, {
+      "name": "recordedDate",
+      "source": [ {
+        "context": "src",
+        "element": "assertedDate",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "recordedDate",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "recorder",
+      "source": [ {
+        "context": "src",
+        "element": "recorder",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "recorder",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "asserter",
+      "source": [ {
+        "context": "src",
+        "element": "asserter",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "asserter",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "lastOccurrence",
+      "source": [ {
+        "context": "src",
+        "element": "lastOccurrence",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "lastOccurrence",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "note",
+      "source": [ {
+        "context": "src",
+        "element": "note",
+        "variable": "vvv"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "note",
+        "variable": "vvv",
+        "transform": "create"
+      } ]
+    }, {
+      "name": "reaction",
+      "source": [ {
+        "context": "src",
+        "element": "reaction",
+        "variable": "vs0"
+      } ],
+      "target": [ {
+        "context": "tgt",
+        "contextType": "variable",
+        "element": "reaction",
+        "variable": "vt0"
+      } ],
+      "rule": [ {
+        "name": "substance",
+        "source": [ {
+          "context": "vs0",
+          "element": "substance",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "substance",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      }, {
+        "name": "manifestation",
+        "source": [ {
+          "context": "vs0",
+          "element": "manifestation",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "manifestation",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      }, {
+        "name": "description",
+        "source": [ {
+          "context": "vs0",
+          "element": "description",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "description",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      }, {
+        "name": "onset",
+        "source": [ {
+          "context": "vs0",
+          "element": "onset",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "onset",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      }, {
+        "name": "severity",
+        "source": [ {
+          "context": "vs0",
+          "element": "severity",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "severity",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      }, {
+        "name": "exposureRoute",
+        "source": [ {
+          "context": "vs0",
+          "element": "exposureRoute",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "exposureRoute",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      }, {
+        "name": "note",
+        "source": [ {
+          "context": "vs0",
+          "element": "note",
+          "variable": "vvv"
+        } ],
+        "target": [ {
+          "context": "vt0",
+          "contextType": "variable",
+          "element": "note",
+          "variable": "vvv",
+          "transform": "create"
+        } ]
+      } ]
+    } ]
+  } ]
+}

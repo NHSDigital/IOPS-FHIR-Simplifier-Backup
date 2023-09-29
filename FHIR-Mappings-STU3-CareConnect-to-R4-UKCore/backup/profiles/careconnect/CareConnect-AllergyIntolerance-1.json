@@ -1,0 +1,540 @@
+{
+  "resourceType": "StructureDefinition",
+  "meta": {
+    "lastUpdated": "2018-03-28T14:03:26.156+01:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    }
+  ],
+  "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1",
+  "version": "1.2.0",
+  "name": "CareConnect-AllergyIntolerance-1",
+  "status": "draft",
+  "date": "2018-11-05",
+  "publisher": "HL7 UK",
+  "contact": [
+    {
+      "name": "INTEROPen",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "admin@interopen.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "This AllergyIntolerance Resource records Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.",
+  "purpose": "CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/",
+  "copyright": "Copyright © 2016 HL7 UK\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\r\n\r\nHL7® FHIR® standard Copyright © 2011+ HL7\r\n\r\nThe HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at\r\n\r\nhttps://www.hl7.org/fhir/license.html",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance.extension",
+        "path": "AllergyIntolerance.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.extension:encounter",
+        "path": "AllergyIntolerance.extension",
+        "sliceName": "encounter",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.extension:allergyEnd",
+        "path": "AllergyIntolerance.extension",
+        "sliceName": "allergyEnd",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergyIntoleranceEnd-1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.extension:evidence",
+        "path": "AllergyIntolerance.extension",
+        "sliceName": "evidence",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-Evidence-1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.identifier.system",
+        "path": "AllergyIntolerance.identifier.system",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.identifier.value",
+        "path": "AllergyIntolerance.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.identifier.assigner",
+        "path": "AllergyIntolerance.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.verificationStatus",
+        "path": "AllergyIntolerance.verificationStatus",
+        "short": "unconfirmed | confirmed",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AllergyIntoleranceVerificationStatus"
+            }
+          ],
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AllergyVerificationStatus-1"
+          }
+        }
+      },
+      {
+        "id": "AllergyIntolerance.code.coding",
+        "path": "AllergyIntolerance.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.code.coding:snomedCT",
+        "path": "AllergyIntolerance.code.coding",
+        "sliceName": "snomedCT",
+        "max": "1",
+        "binding": {
+          "strength": "example",
+          "description": "A code from the SNOMED Clinical Terminology UK or a code from the v3 Code System NullFlavor specifying why a valid value is not present.",
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AllergyCode-1"
+          }
+        }
+      },
+      {
+        "id": "AllergyIntolerance.code.coding:snomedCT.extension",
+        "path": "AllergyIntolerance.code.coding.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.code.coding:snomedCT.extension:snomedCTDescriptionID",
+        "path": "AllergyIntolerance.code.coding.extension",
+        "sliceName": "snomedCTDescriptionID",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code.coding:snomedCT.system",
+        "path": "AllergyIntolerance.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.code.coding:snomedCT.code",
+        "path": "AllergyIntolerance.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.code.coding:snomedCT.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.onset[x]",
+        "path": "AllergyIntolerance.onset[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.assertedDate",
+        "path": "AllergyIntolerance.assertedDate",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.recorder",
+        "path": "AllergyIntolerance.recorder",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.asserter",
+        "path": "AllergyIntolerance.asserter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.note.author[x]",
+        "path": "AllergyIntolerance.note.author[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding",
+        "path": "AllergyIntolerance.reaction.substance.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding:snomedCT",
+        "path": "AllergyIntolerance.reaction.substance.coding",
+        "sliceName": "snomedCT",
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding:snomedCT.extension",
+        "path": "AllergyIntolerance.reaction.substance.coding.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding:snomedCT.extension:snomedCTDescriptionID",
+        "path": "AllergyIntolerance.reaction.substance.coding.extension",
+        "sliceName": "snomedCTDescriptionID",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding:snomedCT.system",
+        "path": "AllergyIntolerance.reaction.substance.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding:snomedCT.code",
+        "path": "AllergyIntolerance.reaction.substance.coding.code",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding:snomedCT.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.reaction.substance.coding.display",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation",
+        "path": "AllergyIntolerance.reaction.manifestation",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Manifestation"
+            }
+          ],
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AllergyManifestation-1"
+          }
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding",
+        "path": "AllergyIntolerance.reaction.manifestation.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding:snomedCT",
+        "path": "AllergyIntolerance.reaction.manifestation.coding",
+        "sliceName": "snomedCT",
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding:snomedCT.extension",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding:snomedCT.extension:snomedCTDescriptionID",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.extension",
+        "sliceName": "snomedCTDescriptionID",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding:snomedCT.system",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding:snomedCT.code",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.code",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding:snomedCT.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.reaction.manifestation.coding.display",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.reaction.severity",
+        "path": "AllergyIntolerance.reaction.severity",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AllergyIntoleranceSeverity"
+            }
+          ],
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ReactionEventSeverity-1"
+          }
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.exposureRoute",
+        "path": "AllergyIntolerance.reaction.exposureRoute",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "RouteOfAdministration"
+            }
+          ],
+          "strength": "example",
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AllergyExposureRoute-1"
+          }
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.exposureRoute.coding",
+        "path": "AllergyIntolerance.reaction.exposureRoute.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.exposureRoute.coding:snomedCT",
+        "path": "AllergyIntolerance.reaction.exposureRoute.coding",
+        "sliceName": "snomedCT",
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.exposureRoute.coding:snomedCT.extension",
+        "path": "AllergyIntolerance.reaction.exposureRoute.coding.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.exposureRoute.coding:snomedCT.extension:snomedCTDescriptionID",
+        "path": "AllergyIntolerance.reaction.exposureRoute.coding.extension",
+        "sliceName": "snomedCTDescriptionID",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.exposureRoute.coding:snomedCT.system",
+        "path": "AllergyIntolerance.reaction.exposureRoute.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.exposureRoute.coding:snomedCT.code",
+        "path": "AllergyIntolerance.reaction.exposureRoute.coding.code",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.reaction.exposureRoute.coding:snomedCT.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.reaction.exposureRoute.coding.display",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.reaction.note.author[x]",
+        "path": "AllergyIntolerance.reaction.note.author[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+          }
+        ]
+      }
+    ]
+  }
+}

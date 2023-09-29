@@ -1,0 +1,4 @@
+- name: AllergyIntolerance
+  filename: AllergyIntolerance
+- name: Index
+  filename: Index.page.md
