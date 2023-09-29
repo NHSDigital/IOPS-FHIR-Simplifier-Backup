@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
+  <div markdown="span" class="alert alert-warning" role="alert"><i class="fas fa-exclamation-triangle"></i><b> Important:</b> This page is under development by NHS England</div>
 
 The CP-IS FHIR API provides an R4 FHIR Application Programming Interface (API) to allow connecting systems to search for and read CP-IS indicators.
 

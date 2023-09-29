@@ -1,6 +1,6 @@
 ## {{page-title}}
     
-  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
+  <div markdown="span" class="alert alert-warning" role="alert"><i class="fas fa-exclamation-triangle"></i><b> Important:</b> This page is under development by NHS England</div>
 
 An FGM-IS indicator (family history of FGM) has been modelled around a FHIR R4 Flag. Refer to {{pagelink:Home/FHIRAssets/AllAssets/Profiles/UKCore-Flag.page.md}} profile for further guidance. 
 
