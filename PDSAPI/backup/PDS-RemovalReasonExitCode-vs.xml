@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PDS-RemovalReasonExitCode" />
+  <url value="https://fhir.nhs.uk/ValueSet/PDS-RemovalReasonExitCode" />
+  <version value="1.0.0" />
+  <name value="PDSRemovalReasonExitCode" />
+  <title value="PDS Removal Reason Exit Code" />
+  <status value="draft" />
+  <date value="2022-02-15T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A ValueSet that identifies the reason a PDS record has been removed." />
+  <copyright value="Copyright © 2022 NHS Digital" />
+  <compose>
+    <include>
+      <system value="https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode" />
+    </include>
+  </compose>
+</ValueSet>

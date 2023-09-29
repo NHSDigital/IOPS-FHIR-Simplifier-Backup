@@ -1,0 +1,12 @@
+{
+  "resourceType": "Patient",
+  "id": "UKCore-Patient-Extension-PreferredDispenserOrganization-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization",
+      "valueReference": {
+        "reference": "Organization/UKCore-Organization-WhiteRoseMedicalCentre-Example"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "Patient",
+  "id": "UKCore-Patient-Extension-AddressKey-Example",
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey",
+          "extension": [
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKey",
+                    "code": "PAF",
+                    "display": "Postcode Address File"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "value",
+              "valueString": "LS10ABC"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

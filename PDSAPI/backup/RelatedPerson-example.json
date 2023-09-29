@@ -1,0 +1,97 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "0b318e75-dab3-431e-8d8f-141c1a94c5c0",
+  "meta": {
+    "versionId": "1",
+    "profile": [
+      "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9000000009"
+    }
+  ],
+  "active": "true",
+  "patient": {
+    "reference": "https://emea-demo8-test.apigee.net/v1/Patient/9000000009"
+  },
+  "relationship": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code": "N",
+          "display": "Next-of-Kin"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "FTH",
+          "display": "father"
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "use": "usual",
+      "period": {
+        "start": "2010-10-22"
+      },
+      "given": [
+        "David",
+        "Andrew"
+      ],
+      "family": "Smith",
+      "prefix": "Mr"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1990-12-02",
+  "address": [
+    {
+      "id": "321",
+      "period": {
+        "start": "2010-10-22",
+        "end": "2010-10-22"
+      },
+      "use": "home",
+      "type": "both",
+      "line": [
+        "4 Baker Street",
+        "Leeds",
+        "LS1 6AE"
+      ],
+      "city": "Leeds",
+      "district": "West Yorkshire",
+      "postalCode": "LS1 6AE",
+      "country": "United Kingdom"
+    }
+  ],
+  "telecom": [
+    {
+      "id": "321",
+      "period": {
+        "start": "2010-10-22",
+        "end": "2010-10-22"
+      },
+      "system": "phone",
+      "value": "01632960587",
+      "use": "home",
+      "rank": 1
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "id": "Y12345",
+      "type": "Organization",
+      "reference": "/Organization/Y12345",
+      "display": "F. B. Quux and Co. GP Surgery"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+## FHIR Assets
+
+{{index:current}}
+
