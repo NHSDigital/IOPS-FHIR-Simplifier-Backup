@@ -1,0 +1,8 @@
+- name: How to handle updates to documents
+  filename: How-to-handle-updates-to-documents.page.md
+- name: FHIR elements used for replacement
+  filename: FHIR-elements-used-for-replacement.page.md
+- name: Replacement guidance
+  filename: Replacement-guidance-duplicate-2.page.md
+- name: When the new document cannot be processed
+  filename: When-the-new-document-cannot-be-processed.page.md

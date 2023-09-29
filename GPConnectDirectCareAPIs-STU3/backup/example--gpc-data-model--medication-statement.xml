@@ -1,0 +1,110 @@
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="359d0a53-f1ef-4c0b-9d58-01cabbc48413" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2023-01-24T13:29:33.7462714+00:00" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1" />
+  </meta>
+  <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1" />
+        <code value="prescribed-by-another-organisation" />
+      </coding>
+      <text value="Prescribed by another organisation" />
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="https://hospital.example/medication-statement" />
+    <value value="rx-0281156" />
+  </identifier>
+  <basedOn>
+    <identifier>
+      <system value="https://hospital.example/medication-request" />
+      <value value="rx-0018243" />
+    </identifier>
+  </basedOn>
+  <context>
+    <identifier>
+      <system value="https://hospital.example/visit-number" />
+      <value value="visit-00425123" />
+    </identifier>
+  </context>
+  <status value="completed" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/medication-statement-category" />
+      <code value="inpatient" />
+    </coding>
+    <text value="Inpatient" />
+  </category>
+  <medicationReference>
+    <identifier>
+      <system value="https://simplifier.net/gpconnect2" />
+      <value value="example--gpc-data-model--medication-request" />
+    </identifier>
+  </medicationReference>
+  <effectivePeriod>
+    <start value="2023-01-20" />
+    <end value="2023-01-27" />
+  </effectivePeriod>
+  <dateAsserted value="2023-01-24T13:29:33.7477005+00:00" />
+  <informationSource>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="RFR" />
+    </identifier>
+  </informationSource>
+  <subject>
+    <identifier>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+            <code value="01" />
+            <display value="Number present and verified" />
+          </coding>
+          <text value="Number present and verified" />
+        </valueCodeableConcept>
+      </extension>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9989453456" />
+    </identifier>
+  </subject>
+  <taken value="y" />
+  <note>
+    <authorReference>
+      <identifier>
+        <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+        <value value="00143922" />
+      </identifier>
+    </authorReference>
+    <time value="2023-01-24T13:29:33.7491725+00:00" />
+    <text value="Free text... R4 of the FHIR standard supports GitHub Flavoured Markdown (GFM)" />
+  </note>
+  <dosage>
+    <text value="10 milligram - two times a day - oral - Swallow your capsules whole with a glass of water. DO NOT break, crush or chew them" />
+    <patientInstruction value="Swallow your capsules whole with a glass of water. DO NOT break, crush or chew them" />
+    <timing>
+      <repeat>
+        <frequency value="1" />
+        <period value="2" />
+        <periodUnit value="d" />
+        <when value="C" />
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="https://snomed.info/sct" />
+        <code value="26643006" />
+      </coding>
+      <text value="oral" />
+    </route>
+    <doseQuantity>
+      <value value="10" />
+      <unit value="milligram" />
+      <system value="https://unitsofmeasure.org" />
+      <code value="mg" />
+    </doseQuantity>
+  </dosage>
+</MedicationStatement>

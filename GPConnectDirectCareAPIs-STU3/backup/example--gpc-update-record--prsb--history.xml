@@ -1,0 +1,19 @@
+<ClinicalImpression xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ClinicalImpression-1" />
+    <tag>
+      <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+      <code value="history" />
+      <display value="History" />
+    </tag>
+  </meta>
+  <id value="4ab82e30-64a6-45df-a171-89102ee02e98" />
+  <status value="completed" />
+  <subject>
+    <reference value="urn:uuid:42451c37-752d-4c8e-aa80-be8258a9a4e5" />
+  </subject>
+  <context>
+    <reference value="urn:uuid:43b4530b-7e0d-4009-a006-6a8d99cbd4f0" />
+  </context>
+  <summary value="Patient has history of panic attacks" />
+</ClinicalImpression>

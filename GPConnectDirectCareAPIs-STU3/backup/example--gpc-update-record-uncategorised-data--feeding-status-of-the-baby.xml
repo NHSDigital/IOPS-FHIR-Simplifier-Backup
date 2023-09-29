@@ -1,0 +1,42 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="630c4c2f-14c7-4d92-89c3-55a689538fad" />
+  <meta>
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1" />
+    <tag>
+      <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+      <code value="pregnancy-status" />
+      <display value="Pregnancy status" />
+    </tag>
+  </meta>
+  <identifier>
+    <system value="https://identifiers.provider.test/observation" />
+    <value value="urn:uuid:630c4c2f-14c7-4d92-89c3-55a689538fad" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="364769008" />
+      <display value="Finding relating to infant feeding" />
+    </coding>
+    <text value="Finding relating to infant feeding (finding)" />
+  </code>
+  <subject>
+    <reference value="urn:uuid:42451c37-752d-4c8e-aa80-be8258a9a4e5" />
+  </subject>
+  <context>
+    <reference value="urn:uuid:43b4530b-7e0d-4009-a006-6a8d99cbd4f0" />
+  </context>
+  <issued value="2023-07-04T13:23:00.1516395+00:00" />
+  <performer>
+    <reference value="uurn:uuid:39f59e67-d56b-446c-bca9-2c37e7b32c7c" />
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="169741004" />
+      <display value="Breast fed" />
+    </coding>
+    <text value="Breast fed (finding)" />
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Slot availability management
+  filename: Slot-availability-management.page.md
+- name: Appointment consumer sessions
+  filename: Appointment-consumer-sessions.page.md

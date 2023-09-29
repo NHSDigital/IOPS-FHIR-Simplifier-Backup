@@ -1,0 +1,585 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="blood-pressure-check-service--example-2" />
+  <meta>
+    <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1" />
+  </meta>
+  <identifier>
+    <system value="https://fhir.provider.example/identifier/bundle" />
+    <value value="blood-pressure-check-service--example-2" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:16bc5fe1-b149-42f2-98ea-88f24c42bcce" />
+    <resource>
+      <MessageHeader>
+        <id value="16bc5fe1-b149-42f2-98ea-88f24c42bcce" />
+        <meta>
+          <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2" />
+        </meta>
+        <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+          <extension url="BusAckRequested">
+            <valueBoolean value="true" />
+          </extension>
+          <extension url="InfAckRequested">
+            <valueBoolean value="true" />
+          </extension>
+          <extension url="RecipientType">
+            <valueCoding>
+              <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1" />
+              <code value="FI" />
+              <display value="For Information" />
+            </valueCoding>
+          </extension>
+          <extension url="MessageDefinition">
+            <valueReference>
+              <reference value="https://fhir.nhs.uk/MessageDefinition" />
+            </valueReference>
+          </extension>
+          <extension url="SenderReference">
+            <valueString value="urn:uuid:e9a3673b-12d2-4001-826f-626e30d5f71e" />
+          </extension>
+          <extension url="LocalExtension">
+            <valueString value="None" />
+          </extension>
+        </extension>
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK014M" />
+          <display value="ITK Update Record" />
+        </event>
+        <sender>
+          <reference value="urn:uuid:ac8977ff-22fc-4427-88d4-a0b87340717e" />
+        </sender>
+        <timestamp value="2023-08-08T09:13:18.3678494+01:00" />
+        <source>
+          <endpoint value="SENDER_MESH_MAILBOX_ID" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:b38b90b6-72a5-41b9-b977-d7092e57f106" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ac8977ff-22fc-4427-88d4-a0b87340717e" />
+    <resource>
+      <Organization>
+        <id value="ac8977ff-22fc-4427-88d4-a0b87340717e" />
+        <meta>
+          <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="FQW30" />
+        </identifier>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b38b90b6-72a5-41b9-b977-d7092e57f106" />
+    <resource>
+      <Bundle>
+        <id value="b38b90b6-72a5-41b9-b977-d7092e57f106" />
+        <meta>
+          <lastUpdated value="2023-08-08T09:13:18.3793688+01:00" />
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.provider.example/identifier/bundle" />
+          <value value="b38b90b6-72a5-41b9-b977-d7092e57f106" />
+        </identifier>
+        <type value="document" />
+        <entry>
+          <fullUrl value="urn:uuid:2ce03e14-aafb-4f62-bf8a-cffe836cc530" />
+          <resource>
+            <Composition>
+              <id value="2ce03e14-aafb-4f62-bf8a-cffe836cc530" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1" />
+              </meta>
+              <identifier>
+                <system value="https://fhir.provider.example/identifier/composition" />
+                <value value="2ce03e14-aafb-4f62-bf8a-cffe836cc530" />
+              </identifier>
+              <status value="final" />
+              <type>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="1659111000000107" />
+                  <display value="Community Pharmacy Blood Pressure Check Service" />
+                </coding>
+                <text value="Community Pharmacy Blood Pressure Check Service" />
+              </type>
+              <subject>
+                <reference value="urn:uuid:c33b855b-4824-4876-9509-ed34de2109b4" />
+              </subject>
+              <encounter>
+                <reference value="urn:uuid:e9a3673b-12d2-4001-826f-626e30d5f71e" />
+              </encounter>
+              <date value="2023-08-08" />
+              <author>
+                <reference value="urn:uuid:c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+              </author>
+              <title value="The Dispensers - Community Pharmacist Blood Pressure Check Service" />
+              <section>
+                <entry>
+                  <reference value="urn:uuid:e9a3673b-12d2-4001-826f-626e30d5f71e" />
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:62db03c2-148b-4872-8d8b-2ea19871c00d" />
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:75c5672f-b2d6-435f-80c8-a4864258162b" />
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:c33b855b-4824-4876-9509-ed34de2109b4" />
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:e7c459a8-2f3f-4968-aa37-937e0a0b88dd" />
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:bff68759-0cff-43ea-9f71-641873e2fc80" />
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:0843a500-9f0c-4043-bfd8-b03ca0e95735" />
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:cb8e1553-4bf1-474c-ab42-f70219b1545a" />
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:3ecca922-9841-43b6-8389-edc4936228dd" />
+                </entry>
+              </section>
+            </Composition>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:e9a3673b-12d2-4001-826f-626e30d5f71e" />
+          <resource>
+            <Encounter>
+              <id value="e9a3673b-12d2-4001-826f-626e30d5f71e" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1" />
+              </meta>
+              <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-OutcomeOfAttendance-1">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-OutcomeOfAttendance-1" />
+                    <code value="1" />
+                  </coding>
+                  <text value="Discharged from Consultant's care (last attendance)" />
+                </valueCodeableConcept>
+              </extension>
+              <identifier>
+                <system value="https://fhir.provider.example/identifier/encounter" />
+                <value value="e9a3673b-12d2-4001-826f-626e30d5f71e" />
+              </identifier>
+              <status value="finished" />
+              <type>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="307778003" />
+                  <display value="Seen in primary care establishment" />
+                </coding>
+                <text value="Seen in primary care establishment" />
+              </type>
+              <subject>
+                <reference value="urn:uuid:c33b855b-4824-4876-9509-ed34de2109b4" />
+              </subject>
+              <participant>
+              	<type>
+		<coding>
+			<system value="https://fhir.nhs.uk/STU3/ValueSet/GPConnect-ParticipantType-1" />
+			<code value="REC" />
+		</coding>
+		<text value="recorder" />
+	</type>
+                <individual>
+                  <reference value="urn:uuid:c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+                </individual>
+              </participant>
+              <period>
+                <start value="2023-08-08" />
+              </period>
+              <reason>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="1659111000000107" />
+                  <display value="Community Pharmacy Blood Pressure Check Service" />
+                </coding>
+                <text value="Community Pharmacy Blood Pressure Check Service" />
+              </reason>
+              <serviceProvider>
+                <reference value="urn:uuid:62db03c2-148b-4872-8d8b-2ea19871c00d" />
+              </serviceProvider>
+            </Encounter>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:62db03c2-148b-4872-8d8b-2ea19871c00d" />
+          <resource>
+            <Organization>
+              <id value="62db03c2-148b-4872-8d8b-2ea19871c00d" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1" />
+              </meta>
+              <identifier>
+                <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                <value value="A(*)" />
+              </identifier>
+              <name value="The Dispensers" />
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+          <resource>
+            <Practitioner>
+              <id value="c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1" />
+              </meta>
+              <identifier>
+                <system value="https://fhir.provider.example/identifier/staff" />
+                <value value="c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+              </identifier>
+              <identifier>
+                <system value="https://fhir.hl7.org.uk/Id/gphc-number" />
+                <value value="NNNNNNN" />
+              </identifier>
+              <name>
+                <family value="Kai-Shun" />
+                <given value="Medi" />
+                <prefix value="Dr" />
+              </name>
+            </Practitioner>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:75c5672f-b2d6-435f-80c8-a4864258162b" />
+          <resource>
+            <PractitionerRole>
+              <id value="75c5672f-b2d6-435f-80c8-a4864258162b" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1" />
+              </meta>
+              <practitioner>
+                <reference value="urn:uuid:c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+              </practitioner>
+              <organization>
+                <reference value="urn:uuid:62db03c2-148b-4872-8d8b-2ea19871c00d" />
+              </organization>
+              <code>
+                <coding>
+                  <system value="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                  <code value="R1290" />
+                  <display value="Pharmacist" />
+                </coding>
+                <text value="Pharmacist" />
+              </code>
+            </PractitionerRole>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:c33b855b-4824-4876-9509-ed34de2109b4" />
+          <resource>
+            <Patient>
+              <id value="c33b855b-4824-4876-9509-ed34de2109b4" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1" />
+              </meta>
+              <identifier>
+                <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-NHSNumberVerificationStatus-1">
+                  <valueCodeableConcept>
+                    <coding>
+                      <system value="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                      <code value="01" />
+                      <display value="Number present and verified" />
+                    </coding>
+                    <text value="Number present and verified" />
+                  </valueCodeableConcept>
+                </extension>
+                <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                <value value="4857773456" />
+              </identifier>
+              <identifier>
+                <system value="https://fhir.provider.example/identifier/patient" />
+                <value value="c33b855b-4824-4876-9509-ed34de2109b4" />
+              </identifier>
+              <name>
+                <use value="official" />
+                <family value="TEAK" />
+                <given value="Anne" />
+              </name>
+              <gender value="female" />
+              <birthDate value="1971-08-08" />
+              <address>
+                <postalCode value="0LD TMR" />
+              </address>
+            </Patient>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:e7c459a8-2f3f-4968-aa37-937e0a0b88dd" />
+          <resource>
+            <Observation>
+              <id value="e7c459a8-2f3f-4968-aa37-937e0a0b88dd" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1" />
+              </meta>
+              <identifier>
+                <system value="https://fhir.provider.example/identifier/observation" />
+                <value value="e7c459a8-2f3f-4968-aa37-937e0a0b88dd" />
+              </identifier>
+              <status value="final" />
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                  <code value="vital-signs" />
+                  <display value="Vital Signs" />
+                </coding>
+                <text value="Vital Signs" />
+              </category>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="723232008" />
+                  <display value="Average blood pressure" />
+                </coding>
+                <text value="Average blood pressure" />
+              </code>
+              <subject>
+                <reference value="urn:uuid:c33b855b-4824-4876-9509-ed34de2109b4" />
+              </subject>
+              <context>
+                <reference value="urn:uuid:e9a3673b-12d2-4001-826f-626e30d5f71e" />
+              </context>
+              <effectiveDateTime value="2023-08-08" />
+              <issued value="2023-08-08T09:13:18.4165296+01:00" />
+              <performer>
+                <reference value="urn:uuid:c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+              </performer>
+              <bodySite>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="368208006" />
+                  <display value="Left upper arm structure" />
+                </coding>
+                <text value="Left upper arm structure" />
+              </bodySite>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="72313002" />
+                    <display value="Systolic arterial pressure" />
+                  </coding>
+                  <text value="Systolic arterial pressure" />
+                </code>
+                <valueQuantity>
+                  <value value="158" />
+                  <unit value="millimeter of mercury" />
+                  <system value="http://unitsofmeasure.org" />
+                  <code value="mm[Hg]" />
+                </valueQuantity>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1091811000000102" />
+                    <display value="Diastolic arterial pressure" />
+                  </coding>
+                  <text value="Diastolic arterial pressure" />
+                </code>
+                <valueQuantity>
+                  <value value="102" />
+                  <unit value="millimeter of mercury" />
+                  <system value="http://unitsofmeasure.org" />
+                  <code value="mm[Hg]" />
+                </valueQuantity>
+              </component>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:bff68759-0cff-43ea-9f71-641873e2fc80" />
+          <resource>
+            <Observation>
+              <id value="bff68759-0cff-43ea-9f71-641873e2fc80" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1" />
+                <tag>
+                  <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+                  <code value="social-context" />
+                  <display value="Social context" />
+                </tag>
+              </meta>
+              <identifier>
+                <system value="https://fhir.provider.example/identifier/observation" />
+                <value value="bff68759-0cff-43ea-9f71-641873e2fc80" />
+              </identifier>
+              <status value="final" />
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                  <code value="social-history" />
+                  <display value="Social History" />
+                </coding>
+                <text value="Social History" />
+              </category>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="8392000" />
+                  <display value="Non-smoker" />
+                </coding>
+                <text value="Non-smoker" />
+              </code>
+              <subject>
+                <reference value="urn:uuid:c33b855b-4824-4876-9509-ed34de2109b4" />
+              </subject>
+              <context>
+                <reference value="urn:uuid:e9a3673b-12d2-4001-826f-626e30d5f71e" />
+              </context>
+              <effectiveDateTime value="2023-08-08" />
+              <issued value="2023-08-08T09:13:18.419689+01:00" />
+              <performer>
+                <reference value="urn:uuid:c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+              </performer>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:0843a500-9f0c-4043-bfd8-b03ca0e95735" />
+          <resource>
+            <Observation>
+              <id value="0843a500-9f0c-4043-bfd8-b03ca0e95735" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1" />
+                <tag>
+                  <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+                  <code value="pregnancy-status" />
+                  <display value="Pregnancy status" />
+                </tag>
+              </meta>
+              <identifier>
+                <system value="https://fhir.provider.example/identifier/observation" />
+                <value value="0843a500-9f0c-4043-bfd8-b03ca0e95735" />
+              </identifier>
+              <status value="final" />
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                  <code value="social-history" />
+                  <display value="Social History" />
+                </coding>
+                <text value="Social History" />
+              </category>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="60001007" />
+                  <display value="Not pregnant" />
+                </coding>
+                <text value="Not pregnant" />
+              </code>
+              <subject>
+                <reference value="urn:uuid:c33b855b-4824-4876-9509-ed34de2109b4" />
+              </subject>
+              <context>
+                <reference value="urn:uuid:e9a3673b-12d2-4001-826f-626e30d5f71e" />
+              </context>
+              <effectiveDateTime value="2023-08-08" />
+              <issued value="2023-08-08T09:13:18.419708+01:00" />
+              <performer>
+                <reference value="urn:uuid:c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+              </performer>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:cb8e1553-4bf1-474c-ab42-f70219b1545a" />
+          <resource>
+            <ClinicalImpression>
+              <id value="cb8e1553-4bf1-474c-ab42-f70219b1545a" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ClinicalImpression-1" />
+                <tag>
+                  <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+                  <code value="clinical-summary" />
+                  <display value="Clinical summary" />
+                </tag>
+              </meta>
+              <identifier>
+                <system value="https://fhir.provider.example/identifier/clinical-impression" />
+                <value value="cb8e1553-4bf1-474c-ab42-f70219b1545a" />
+              </identifier>
+              <status value="completed" />
+              <subject>
+                <reference value="urn:uuid:c33b855b-4824-4876-9509-ed34de2109b4" />
+              </subject>
+              <context>
+                <reference value="urn:uuid:e9a3673b-12d2-4001-826f-626e30d5f71e" />
+              </context>
+              <date value="2023-08-08" />
+              <assessor>
+                <reference value="urn:uuid:c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+              </assessor>
+              <summary value="The patient is to be monitored regularly for the blood pressure so has referred to the pharmacy for ambulatory blood pressure service." />
+            </ClinicalImpression>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:3ecca922-9841-43b6-8389-edc4936228dd" />
+          <resource>
+            <ClinicalImpression>
+              <id value="3ecca922-9841-43b6-8389-edc4936228dd" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ClinicalImpression-1" />
+                <tag>
+                  <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+                  <code value="information-and-advice-given" />
+                  <display value="Information and advice given" />
+                </tag>
+              </meta>
+              <identifier>
+                <system value="https://fhir.provider.example/identifier/clinical-impression" />
+                <value value="3ecca922-9841-43b6-8389-edc4936228dd" />
+              </identifier>
+              <status value="completed" />
+              <subject>
+                <reference value="urn:uuid:c33b855b-4824-4876-9509-ed34de2109b4" />
+              </subject>
+              <context>
+                <reference value="urn:uuid:e9a3673b-12d2-4001-826f-626e30d5f71e" />
+              </context>
+              <date value="2023-08-08" />
+              <assessor>
+                <reference value="urn:uuid:c11ba114-d1bf-461c-a5ee-10e82df9dcc8" />
+              </assessor>
+              <summary value="Stage 2 hypertension - referred the patient for GP appointment within 7 days. Advice given on healthy behaviours." />
+            </ClinicalImpression>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+</Bundle>

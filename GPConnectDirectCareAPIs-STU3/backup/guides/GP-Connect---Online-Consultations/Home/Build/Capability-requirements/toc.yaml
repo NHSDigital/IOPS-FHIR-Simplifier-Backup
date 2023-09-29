@@ -1,0 +1,8 @@
+- name: Capability requirements
+  filename: Capability-requirements.page.md
+- name: Payload requirements
+  filename: Payload-requirements.page.md
+- name: ITK3 header requirements
+  filename: ITK3-header-requirements.page.md
+- name: MESH message configuration
+  filename: MESH-message-configuration.page.md

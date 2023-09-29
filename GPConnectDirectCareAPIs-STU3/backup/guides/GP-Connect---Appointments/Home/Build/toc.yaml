@@ -1,0 +1,28 @@
+- name: FHIR Resources
+  filename: FHIR-Resources.page.md
+- name: Service Discovery
+  filename: Service-Discovery.page.md
+- name: Branch Surgeries
+  filename: Branch-Surgeries.page.md
+- name: Error Handling
+  filename: Error-Handling.page.md
+- name: FHIR API Guidance
+  filename: FHIR-API-Guidance.page.md
+- name: FHIR Resource Guidance
+  filename: FHIR-Resource-Guidance.page.md
+- name: General API Guidance
+  filename: General-API-Guidance.page.md
+- name: FHIR Capability Statement
+  filename: FHIR-Capability-Statement.page.md
+- name: How to amend an appointment
+  filename: How-to-amend-an-appointment
+- name: How to book an appointment
+  filename: How-to-book-an-appointment
+- name: How to cancel an appointment
+  filename: How-to-cancel-an-appointment
+- name: How to search for free slots
+  filename: How-to-search-for-free-slots
+- name: How to retrieve a patients appointments
+  filename: How-to-retrieve-a-patients-appointments
+- name: How to read an appointment
+  filename: How-to-read-an-appointment

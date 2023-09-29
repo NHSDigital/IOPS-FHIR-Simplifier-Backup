@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><MessageDefinition xmlns="http://hl7.org/fhir">
+   <id value="ITK-GPConnectSendDocument-MessageDefinition-1"/>
+   <meta>
+      <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageDefinition-1"/>
+   </meta>
+   <url value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-GPConnectSendDocument-MessageDefinition-1"/>
+   <identifier>
+      <system value="https://tools.ietf.org/html/rfc4122"/>
+      <value value="5efcba75-57c9-4f03-91b6-dc1301b53038"/>
+   </identifier>
+   <version value="1.0.0"/>
+   <title value="ITK GP Connect Send Document Message Definition"/>
+   <status value="active"/>
+   <date value="2019-10-08T07:58:13.332+01:00"/>
+   <copyright value="Copyright © 2018 NHS Digital"/>
+   <event>
+      <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
+      <code value="ITK007C"/>
+      <display value="ITK GP Connect Send Document"/>
+   </event>
+   <category value="Notification"/>
+   <focus>
+      <code value="Bundle"/>
+      <profile>
+         <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-BundledAssets-1">
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.2.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.2.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Attachment-Binary-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.1.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.1.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.3.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.1.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.1.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.1.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageDefinition-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.0.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="2.1.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.2.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Practitioner-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.2.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="StructureDefinition"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Response-OperationOutcome-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.2.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="Extension"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/StructureDefinition/organization-period"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.0.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="Extension"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-BundledAssets-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.0.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="Extension"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="2.1.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/languages"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/identifier-use"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/identifier-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/location-status"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/location-mode"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="2014-03-26"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/contact-point-system"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/contact-point-use"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/address-use"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/address-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/location-physical-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/organization-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/contactentity-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/name-use"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/bundle-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/all-types"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/publication-status"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/message-significance-category"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/resource-types"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/response-code"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/issue-severity"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/ValueSet/issue-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="ValueSet"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/ValueSet/ITK-ResponseCodes-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.1.0"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/identifier-use"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/v2/0203"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="2.8.2"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/identifier-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/location-status"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/location-mode"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/v3/RoleCode"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="2016-11-11"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/contact-point-system"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/contact-point-use"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/address-use"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/address-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/location-physical-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/organization-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/contactentity-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/name-use"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/bundle-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/data-types"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/resource-types"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/abstract-types"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/publication-status"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/message-significance-category"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/response-code"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/issue-severity"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="http://hl7.org/fhir/issue-type"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="3.0.1"/>
+               </extension>
+            </extension>
+            <extension url="utilisedAsset">
+               <extension url="type">
+                  <valueCode value="CodeSystem"/>
+               </extension>
+               <extension url="reference">
+                  <valueReference>
+                     <reference value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-ResponseCodes-1"/>
+                  </valueReference>
+               </extension>
+               <extension url="version">
+                  <valueString value="1.2.0"/>
+               </extension>
+            </extension>
+         </extension>
+         <reference value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"/>
+      </profile>
+   </focus>
+   <allowedResponse>
+      <message>
+         <reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-Response-MessageDefinition-1"/>
+      </message>
+   </allowedResponse>
+</MessageDefinition>

@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Recommendation
+  filename: Recommendation.page.md
+- name: All profiles
+  filename: All-profiles.page.md

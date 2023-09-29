@@ -1,0 +1,26 @@
+- name: Index
+  filename: Index.guide.md
+- name: Related links
+  filename: Related-links.guide.md
+- name: Elements required for capability
+  filename: Elements-required-for-capability.guide.md
+- name: id
+  filename: id.page.md
+- name: meta.profile
+  filename: meta.profile.page.md
+- name: extension(ITKMessageHandling)
+  filename: extension-ITKMessageHandling.guide.md
+- name: event
+  filename: event.guide.md
+- name: receiver
+  filename: receiver.guide.md
+- name: sender
+  filename: sender.guide.md
+- name: timestamp
+  filename: timestamp.guide.md
+- name: source
+  filename: source.guide.md
+- name: response
+  filename: response.guide.md
+- name: focus
+  filename: focus.guide.md

@@ -1,0 +1,7 @@
+## {{page-title}}
+
+In GP Connect, what is sent in the <code class="highlighter-rouge">Immunization</code> resource is the event of a patient being administered a vaccination or where there is an intention to administer a vaccine which does not occur. This may be a contemporaneous record by the clinician administering the vaccination (or by another member of the practice staff recording the event directly on behalf of the clinician) or it may be a record of an immunisation administered elsewhere as reported to the registered GP practice by the patient, a carer, guardian or other representative of the patient or another healthcare provider.
+
+A record of an immunisation may be created as part of a scheduled programme of immunisations such as childhood immunisations, seasonal influenza vaccination or in response to specific circumstances (for example, prior to travel, disease outbreak or occupational risk).
+
+If a vaccination is recorded as an issued medication, the details of the issued medication are not included in the immunisations response. The medication details **MUST** be sent as medication resources (if the consumer requests medications). This may be in addition to an immunisation resource for the event of the vaccination administration, depending on how the immunisation event was recorded.

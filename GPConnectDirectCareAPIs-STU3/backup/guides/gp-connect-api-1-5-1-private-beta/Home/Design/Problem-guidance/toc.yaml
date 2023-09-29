@@ -1,0 +1,12 @@
+- name: What is a problem?
+  filename: What-is-a-problem.page.md
+- name: Problem relationships
+  filename: Problem-relationships.page.md
+- name: Clinical item references
+  filename: Clinical-item-references.page.md
+- name: Linking multiple problems
+  filename: Linking-multiple-problems.page.md
+- name: Problems linking to out of scope clinical items
+  filename: Problems-linking-to-out-of-scope-clinical-items.page.md
+- name: Problems containing confidential items
+  filename: Problems-containing-confidential-items.page.md

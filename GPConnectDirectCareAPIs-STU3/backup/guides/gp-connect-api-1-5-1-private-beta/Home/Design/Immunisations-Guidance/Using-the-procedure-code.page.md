@@ -1,0 +1,3 @@
+## {{page-title}}
+
+GP clinical systems do not all record the full vaccine product (dm+d code) for an immunisation. GP clinical systems often record the type of vaccine administered as opposed to the vaccine product. This may be as a procedure code or a local code which can be mapped to a procedure code. GP Connect, therefore, uses the vaccination procedure code to denote the vaccine being administered. The vaccination procedure code is a mandatory element. The vaccine product code will often be a <code class="highlighter-rouge">nullFlavor</code> code, but the actual vaccine product **MUST** be included if it is available.

@@ -1,0 +1,5 @@
+## {{page-title}}
+
+Provider systems <strong>MUST NOT</strong> in principle limit potential interoperability by pre-emptively degrading coded information in export. It is a consumer responsibility to determine the understandability/processability of received resources and degrade if appropriate. In the case of drug allergies, understandability is determined by the consuming system being able to trigger equivalent prescribing decision support as the source system in response to the causative agent code.
+
+It is expected that initial GP Connect provider implementations will reflect the current state of provider systems prior to full convergence on the specified causative agent subset and at this point causative agents may be coded using legacy terminologies/code systems or contain codes in supported terminologies that lie outside the hierarchies specified by the causative agent subset.

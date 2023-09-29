@@ -1,0 +1,10 @@
+- name: 'Extension: Extension-GPConnect-PractitionerRole-1'
+  filename: Extension--Extension-GPConnect-PractitionerRole-1
+- name: 'Extension: Extension-GPConnect-AppointmentCancellationReason-1'
+  filename: Extension--Extension-GPConnect-AppointmentCancellationReason-1
+- name: 'Extension: Extension-GPConnect-BookingOrganisation-1'
+  filename: Extension--Extension-GPConnect-BookingOrganisation-1
+- name: 'Extension: Extension-GPConnect-DeliveryChannel-2'
+  filename: Extension--Extension-GPConnect-DeliveryChannel-2
+- name: Extension--Extension-CareConnect-GPC-NHSCommunication-1
+  filename: Extension--Extension-CareConnect-GPC-NHSCommunication-1

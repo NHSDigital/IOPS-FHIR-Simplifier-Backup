@@ -1,0 +1,80 @@
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="7888b4a4-1af2-4487-b7f6-b88866d6c742" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2023-01-24T11:58:38.4899643+00:00" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1" />
+  </meta>
+  <identifier>
+    <system value="https://hospital.example/visit-number" />
+    <value value="visit-00425123" />
+  </identifier>
+  <status value="finished" />
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="308540004" />
+      <display value="Inpatient stay (finding)" />
+    </coding>
+  </type>
+  <subject>
+    <identifier>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+            <code value="01" />
+            <display value="Number present and verified" />
+          </coding>
+          <text value="Number present and verified" />
+        </valueCodeableConcept>
+      </extension>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9989453456" />
+    </identifier>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.nhs.uk/STU3/ValueSet/GPConnect-ParticipantType-1" />
+        <code value="REC" />
+      </coding>
+      <text value="recorder" />
+    </type>
+    <period>
+      <start value="2022-12-25T14:01:31+00:00" />
+      <end value="2023-01-02T15:21:57+00:00" />
+    </period>
+    <individual>
+      <identifier>
+        <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+        <value value="0054272" />
+      </identifier>
+    </individual>
+  </participant>
+  <period>
+    <start value="2022-12-25T10:42:12+00:00" />
+    <end value="2023-01-02T15:21:57+00:00" />
+  </period>
+  <length>
+    <value value="707985" />
+    <unit value="second - time" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="s" />
+  </length>
+  <reason>
+    <coding>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+        <extension url="descriptionId">
+          <valueId value="86591008" />
+        </extension>
+        <extension url="descriptionDisplay">
+          <valueString value="Fall from ladder (event)" />
+        </extension>
+      </extension>
+      <system value="http://snomed.info/sct" />
+      <code value="86591008" />
+      <display value="Fall from ladder (event)" />
+    </coding>
+  </reason>
+</Encounter>

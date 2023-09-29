@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: urn:uuid:[id]
+  filename: urn-uuid--id.page.md
+- name: resourceName/[id]
+  filename: resourceName--id.page.md

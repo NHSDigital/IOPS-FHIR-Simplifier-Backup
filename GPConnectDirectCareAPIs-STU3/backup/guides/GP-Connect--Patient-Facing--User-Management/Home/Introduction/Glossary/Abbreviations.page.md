@@ -1,0 +1,7 @@
+## {{page-title}}
+
+| Acronym | Meaning                                | Definition                                                                                                                                                                                                    |
+| -----   | -----                                  | -------                                                                                                                                                                                                       |
+| APIM    | API Management                         | Concerned with the delivery of APIs. APIM can help provide clear documentation, accessible test environments, a simple onboarding process and good quality help and support.                                                     |
+| NME     | New Market Entrant                     | In this context a new clinical system that allows patients to access their medical record and update certain preferences.                                                                                                     |
+| PFS     | Patient Facing Service                 | A service (often an API) a patient can interact with via an application such as NHS App. Typically offering data, services and information specifically about and or for the authenticated patient.                                                                                                                         |

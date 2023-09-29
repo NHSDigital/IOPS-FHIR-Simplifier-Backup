@@ -1,0 +1,10 @@
+- name: 'Profile: ITK-Attachment-Binary-1'
+  filename: Profile--ITK-Attachment-Binary-1.page.md
+- name: Related links
+  filename: Related-links.page.md
+- name: Elements required for capability
+  filename: Elements-required-for-capability.page.md
+- name: contentType
+  filename: contentType.page.md
+- name: content
+  filename: content.page.md

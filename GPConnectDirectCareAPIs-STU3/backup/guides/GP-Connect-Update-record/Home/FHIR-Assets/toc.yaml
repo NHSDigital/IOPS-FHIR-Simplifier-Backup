@@ -1,0 +1,4 @@
+- name: Profiles
+  filename: Profiles.page.md
+- name: All assets
+  filename: All-assets

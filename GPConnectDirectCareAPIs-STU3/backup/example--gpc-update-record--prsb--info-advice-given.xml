@@ -1,0 +1,22 @@
+<ClinicalImpression xmlns="http://hl7.org/fhir">
+  <id value="17cbf68a-1b91-4b54-a253-3b4b79f42a30" />
+      <identifier>
+    <system value="https://identifiers.provider.test/clinicalImpression" />
+    <value value="urn:uuid:17cbf68a-1b91-4b54-a253-3b4b79f42a30" />
+  </identifier>
+  <meta>
+    <tag>
+      <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings" />
+      <code value="information-and-advice-given" />
+      <display value="Information and advice given" />
+    </tag>
+  </meta>
+  <status value="completed" />
+  <subject>
+    <reference value="urn:uuid:42451c37-752d-4c8e-aa80-be8258a9a4e5" />
+  </subject>
+  <context>
+    <reference value="urn:uuid:43b4530b-7e0d-4009-a006-6a8d99cbd4f0" />
+  </context>
+  <summary value="Relevant information and advice provided to the patient during the consultation" />
+</ClinicalImpression>

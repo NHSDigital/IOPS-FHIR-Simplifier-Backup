@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Task",
+  "id" : "7c747c6e-15c8-4b2f-8aa0-441f2ef703d6",
+  "identifier" : [ {
+    "system" : "https://tools.ietf.org/html/rfc4122",
+    "value" : "30d65c8e-98e8-4806-b6a6-fpwjfkhs729"
+  } ],
+  "status" : "requested",
+  "intent" : "order",
+  "code" : {
+    "coding" : [ {
+      "system" : "http://snomed.info/sct",
+      "code" : 103742009,
+      "display" : "Renewal of prescription"
+    } ]
+  },
+  "focus" : {
+    "reference" : "MedicationRequest/b269d1d7-1acf-47bb-8b3c-e38b583d9a07"
+  },
+  "for" : {
+    "reference" : "Patient/9000000009",
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/nhs-number",
+      "value" : 9000000009
+    },
+    "display" : "Jane Smith"
+  },
+  "authoredOn" : "2022-10-13T09:20:27.000Z",
+  "lastModified" : "2022-10-13T09:20:27.000Z",
+  "requester" : {
+    "reference" : "Patient/9000000009",
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/nhs-number",
+      "value" : 9000000009
+    },
+    "display" : "Jane Smith"
+  },
+  "note" : [ {
+    "authorString" : "Patient",
+    "text" : "ran out of previous prescription"
+  } ],
+  "input" : {
+    "type" : {
+      "coding" : [ {
+        "system" : "https://fhir.hl7.org.uk/GPConnect-PrescriptionOrderingParameters",
+        "code" : "preferred-performer",
+        "display" : "Preferred performer"
+      } ]
+    },
+    "valueIdentifier" : {
+      "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value" : "FLM49"
+    }
+  }
+}

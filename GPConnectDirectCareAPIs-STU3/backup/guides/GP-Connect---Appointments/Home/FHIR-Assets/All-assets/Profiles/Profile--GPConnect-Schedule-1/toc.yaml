@@ -1,0 +1,16 @@
+- name: Index
+  filename: Index.page.md
+- name: Elements required for capability
+  filename: Elements-required-for-capability.page.md
+- name: extension
+  filename: extension.page.md
+- name: identifier
+  filename: identifier.page.md
+- name: serviceCategory
+  filename: serviceCategory.page.md
+- name: speciality
+  filename: speciality.page.md
+- name: actor
+  filename: actor.page.md
+- name: comment
+  filename: comment.page.md

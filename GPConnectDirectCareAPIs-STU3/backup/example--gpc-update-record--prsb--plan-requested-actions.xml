@@ -1,0 +1,23 @@
+<ClinicalImpression xmlns="http://hl7.org/fhir">
+  <id value="4ab82e30-64a6-45df-a171-89102ee02e09" />
+      <identifier>
+    <system value="https://identifiers.provider.test/clinicalImpression" />
+    <value value="urn:uuid:4ab82e30-64a6-45df-a171-89102ee02e09" />
+  </identifier>
+  <meta>
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ClinicalImpression-1" />
+    <tag>
+      <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
+      <code value="plan-and-requested-actions" />
+      <display value="Plan and requested actions" />
+    </tag>
+  </meta>
+  <status value="completed" />
+  <subject>
+    <reference value="urn:uuid:42451c37-752d-4c8e-aa80-be8258a9a4e5" />
+  </subject>
+  <context>
+    <reference value="urn:uuid:43b4530b-7e0d-4009-a006-6a8d99cbd4f0" />
+  </context>
+  <summary value="Plan and requested actions discussed with the patient go here." />
+</ClinicalImpression>

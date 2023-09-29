@@ -1,0 +1,6 @@
+- name: Testing assets
+  filename: Testing-assets.page.md
+- name: Provider testing
+  filename: Provider-testing.page.md
+- name: Consumer testing
+  filename: Consumer-testing.page.md

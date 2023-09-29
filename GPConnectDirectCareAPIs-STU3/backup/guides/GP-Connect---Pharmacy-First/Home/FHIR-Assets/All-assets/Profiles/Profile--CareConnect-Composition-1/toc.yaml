@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: type
+  filename: type.page.md
+- name: section
+  filename: section.page.md

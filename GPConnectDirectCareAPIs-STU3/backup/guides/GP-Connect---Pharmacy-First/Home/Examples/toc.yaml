@@ -1,0 +1,12 @@
+- name: Blood pressure check service - Example 1
+  filename: Blood-Pressure-Check-Service---Example-1
+- name: Blood pressure check service - Example 2
+  filename: Blood-Pressure-Check-Service---Example-2
+- name: Contraception service - Example 1
+  filename: Contraception-Service---Example-1
+- name: Contraception service - Example 2
+  filename: Contraception-Service---Example-2
+- name: Minor illness / Common conditions service - Example 1
+  filename: Minor-illness---Common-conditions-service---Example-1
+- name: Minor illness / Common conditions service - Example 2
+  filename: Minor-illness---Common-conditions-service---Example-2

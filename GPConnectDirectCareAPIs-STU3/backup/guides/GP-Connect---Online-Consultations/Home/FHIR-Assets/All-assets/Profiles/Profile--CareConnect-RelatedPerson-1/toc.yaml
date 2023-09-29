@@ -1,0 +1,26 @@
+- name: 'Profile: CareConnect-RelatedPerson-1'
+  filename: Profile--CareConnect-RelatedPerson-1.page.md
+- name: Related links
+  filename: Related-links.page.md
+- name: Elements required for capability
+  filename: Elements-required-for-capability.page.md
+- name: identifier
+  filename: identifier.page.md
+- name: active
+  filename: active.page.md
+- name: patient
+  filename: patient.page.md
+- name: name
+  filename: name.page.md
+- name: telecom
+  filename: telecom.page.md
+- name: gender
+  filename: gender.page.md
+- name: birthDate
+  filename: birthDate.page.md
+- name: address
+  filename: address.page.md
+- name: photo
+  filename: photo.page.md
+- name: period
+  filename: period.page.md
