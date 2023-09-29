@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "BaselineNPEWS1Observation",
+ 
+  "identifier": [
+    {
+      "system": "https://tools.ietf.org/html/rfc4122",
+      "value": "3b739db6-4e9e-4317-aaca-aef22c0e9845"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "Survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1365101000000108",
+        "display": "NPEWS (National Paediatric Early Warning Score) - baseline total score"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/30d3de6f-e800-47fa-b610-b02c7c8e9d57"
+  },
+  "effectiveDateTime": "2018-10-04T14:17:59+01:00",
+  "performer": [
+    {
+      "reference": "Practitioner/627be677-3eb2-4db4-9570-5669fd8c92f5"
+    },
+    {
+      "reference": "Organization/cdaea3db-8b40-41dc-9834-b42503e12382"
+    }
+  ],
+  "valueInteger": 11
+}

@@ -1,0 +1,422 @@
+{
+    "resourceType": "Bundle",
+    "id": "24d91dce-6dd9-4d5f-b9b0-59e718635214",
+    "meta": {
+        "lastUpdated": "2022-02-16T14:39:37.969+00:00"
+    },
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:179bdc3b-dccd-4542-83bb-6140876aa97d",
+            "request": {
+                "method": "POST",
+                "url": "DiagnosticReport"
+            },
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "179bdc3b-dccd-4542-83bb-6140876aa97d",
+                "identifier": [
+                    {
+                        "system": "https://tools.ietf.org/html/rfc4122",
+                        "value": "179bdc3b-dccd-4542-83bb-6140876aa97d"
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    }
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "34822-7",
+                            "display": "Physical medicine and rehab Consult note"
+                        }
+                    ]
+                },
+                "issued": "2022-02-16T12:00:00+00:00",
+                "result": [
+                    {
+                        "reference": "urn:uuid:21b6eff8-f00d-4939-9be4-8468088a4b31"
+                    },
+                    {
+                        "reference": "urn:uuid:f8ec1b62-ef06-4e75-a7c5-356573b563e7"
+                    },
+                    {
+                        "reference": "urn:uuid:7234bc69-4123-432c-82b8-f7920f909cb9"
+                    },
+                    {
+                        "reference": "urn:uuid:f15d5cc1-a3f1-4780-95ee-c9adada6f9c4"
+                    },
+                    {
+                        "reference": "urn:uuid:87b3c664-83dd-4a5e-aba2-6c9f539acefe"
+                    },
+                    {
+                        "reference" : "urn:uuid:b9f009bd-5792-410d-96d0-044a68adac06"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:21b6eff8-f00d-4939-9be4-8468088a4b31",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "21b6eff8-f00d-4939-9be4-8468088a4b31",
+                "identifier": [
+                    {
+                        "system": "https://tools.ietf.org/html/rfc4122",
+                        "value": "21b6eff8-f00d-4939-9be4-8468088a4b31"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "68516-4",
+                            "display": "On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise?"
+                        }
+                    ]
+                },
+                "subject": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    }
+                },
+                "effectiveDateTime": "2022-02-15",
+                "valueQuantity": {
+                    "value": 85,
+                    "unit": "minutes per day",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "min/d"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f8ec1b62-ef06-4e75-a7c5-356573b563e7",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "f8ec1b62-ef06-4e75-a7c5-356573b563e7",
+                "identifier": [
+                    {
+                        "system": "https://tools.ietf.org/html/rfc4122",
+                        "value": "f8ec1b62-ef06-4e75-a7c5-356573b563e7"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "55424-6",
+                            "display": "Calories burned in unspecified time Pedometer"
+                        }
+                    ]
+                },
+                "subject": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    }
+                },
+                "effectiveDateTime": "2022-02-15",
+                "valueQuantity": {
+                    "value": 851,
+                    "unit": "kilocalorie",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kcal"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:87b3c664-83dd-4a5e-aba2-6c9f539acefe",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "87b3c664-83dd-4a5e-aba2-6c9f539acefe",
+                "identifier": [
+                    {
+                        "system": "https://tools.ietf.org/html/rfc4122",
+                        "value": "87b3c664-83dd-4a5e-aba2-6c9f539acefe"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "364075005",
+                            "display": "Heart rate"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    }
+                },
+                "effectiveDateTime": "2022-02-15T14:17:59+01:00",
+                "valueQuantity": {
+                    "value": 48,
+                    "unit": "heart beats per minute",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{beats}/min"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:7234bc69-4123-432c-82b8-f7920f909cb9",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "7234bc69-4123-432c-82b8-f7920f909cb9",
+                "identifier": [
+                    {
+                        "system": "https://tools.ietf.org/html/rfc4122",
+                        "value": "7234bc69-4123-432c-82b8-f7920f909cb9"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "55423-8",
+                            "display": "Number of steps in unspecified time Pedometer"
+                        }
+                    ]
+                },
+                "subject": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    }
+                },
+                "effectiveDateTime": "2022-02-15",
+                "valueQuantity": {
+                    "value": 11860,
+                    "unit": "count",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{count}"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f15d5cc1-a3f1-4780-95ee-c9adada6f9c4",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "f15d5cc1-a3f1-4780-95ee-c9adada6f9c4",
+                "identifier": [
+                    {
+                        "system": "https://tools.ietf.org/html/rfc4122",
+                        "value": "f15d5cc1-a3f1-4780-95ee-c9adada6f9c4"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "27113001",
+                            "display": "Body weight"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "29463-7",
+                            "display": "Body Weight"
+                        }
+                    ]
+                },
+                "subject": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    }
+                },
+                "effectiveDateTime": "2022-02-15",
+                "valueQuantity": {
+                    "value": 82.4,
+                    "unit": "kilogram",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:b9f009bd-5792-410d-96d0-044a68adac06",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "b9f009bd-5792-410d-96d0-044a68adac06",
+                "identifier": [
+                    {
+                        "system": "https://tools.ietf.org/html/rfc4122",
+                        "value": "b9f009bd-5792-410d-96d0-044a68adac06"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "75367002",
+                            "display": "Blood pressure"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "85354-9",
+                            "display": "Blood pressure panel with all children optional"
+                        }
+                    ]
+                },
+                "subject": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    }
+                },
+                "effectiveDateTime": "2022-02-15T14:17:59+01:00",
+                "component":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "72313002",
+                                    "display": "Systolic arterial pressure"
+                                },
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 127,
+                            "unit": "millimeter of mercury",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mm[Hg]"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "1091811000000102",
+                                    "display": "Diastolic arterial pressure"
+                                },
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 77,
+                            "unit": "millimeter of mercury",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mm[Hg]"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "Procedure",
+  "id": "OxygenDeliveryProcedure",
+  "identifier": [
+    {
+      "system": "https://tools.ietf.org/html/rfc4122",
+      "value": "a74a7fb4-1a88-4530-a857-05d3659e783f"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "371907003",
+        "display": "Oxygen administration by nasal cannula"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/30d3de6f-e800-47fa-b610-b02c7c8e9d57"
+  },
+  "performedDateTime": "2018-10-04T14:17:59+01:00",
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/627be677-3eb2-4db4-9570-5669fd8c92f5"
+      }
+    }
+  ]
+}
