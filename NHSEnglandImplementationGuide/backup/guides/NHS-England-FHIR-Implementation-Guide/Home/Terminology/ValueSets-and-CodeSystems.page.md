@@ -15,11 +15,11 @@ Other ValueSets are usable if the binding strength is defined as extensible.
 	 }
 </style>
 
-<table id="valuesetlist">
+<table id="valuesetlist" title= "List of all ValueSets and CodeSystems">
 <tr>
-<th width="50%">ValueSet</th>
-<th width="5%">Status</th>
-<th width="40%">Bound in Profile/Extension</th>
+<th class="width50">ValueSet</th>
+<th class="width05">Status</th>
+<th class="width40">Bound in Profile/Extension</th>
 </tr>
 
 <tr>

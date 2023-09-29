@@ -18,6 +18,12 @@ html, body {
      color: #222;
      text-decoration: none;
 }
+ body header h3 {
+     text-align: center;
+}
+ body header h5 {
+     text-align: center;
+}
  body header .hl7-fhir-logo-lhs {
      text-align: left;
      margin-top: 7px;
@@ -36,13 +42,13 @@ html, body {
      min-height: 70%;
      position: relative;
      height: auto !important;
-     margin-bottom: -155px;
-     padding-bottom: 155px;
+     margin-bottom: -105px;
+     padding-bottom: 105px;
 }
  body footer {
      background-color: #dde1e4;
      color: #222;
-     height: 155px;
+     height: 105px;
      position: relative;
      padding-top: 40px;
 }
@@ -129,7 +135,7 @@ hr.thickline{
      color: #fff !important;
 }
 
-//css for simplifier tabs
+/* css for simplifier tabs */
 .cool-tabs .nav-tabs {
      overflow: hidden;
      border: 1px solid #dde1e4;
@@ -214,6 +220,7 @@ table.assets tr td.balloted {
  th.width20 { width: 20%; overflow-wrap: anywhere; }
  th.width25 { width: 25%; overflow-wrap: anywhere; }
  th.width30 { width: 30%; overflow-wrap: anywhere; }
+ th.width33 { width: 33%; overflow-wrap: anywhere; }
  th.width35 { width: 35%; overflow-wrap: anywhere; }
  th.width40 { width: 40%; overflow-wrap: anywhere; }
  th.width45 { width: 45%; overflow-wrap: anywhere; }

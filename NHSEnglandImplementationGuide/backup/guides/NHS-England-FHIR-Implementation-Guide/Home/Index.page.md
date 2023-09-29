@@ -6,13 +6,13 @@ The scope of this Implementation Guide is for programmes and products within NHS
 
 ### NHS England Profiles
  
-<table class="regular assets" style="width:100%">
+<table class="regular assets" style="width:100%" title="NHS England Profile list">
  <thead>
    <tr>
-     <th width="33%">Foundation</th>
-     <th width="33%">Base</th>
-     <th width="33%">Clinical</th>
-   </tr>
+     <th class="width33">Foundation</th>
+     <th class="width33">Base</th>
+     <th class="width33">Clinical</th>
+  </tr>
  </thead>
  <tbody>
    <tr>
@@ -88,6 +88,6 @@ The scope of this Implementation Guide is for programmes and products within NHS
    </tbody>
 </table>
 
-### Licence
+<h3 id="licence-heading">Licence</h3>
 
-<div id="licence">Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.</div>
+<div id="Licence">Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.</div>

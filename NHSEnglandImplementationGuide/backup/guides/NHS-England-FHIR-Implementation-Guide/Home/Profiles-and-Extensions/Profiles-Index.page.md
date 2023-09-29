@@ -5,7 +5,7 @@ topic: All-Profiles
 This index contains all the profiles created for use in NHS England Implementation Guide. 
 <br><br>
 
-<table class="assets">
+<table class="assets" title="Profile list">
 <tr>
 <th class="width25">Profile</th>
 <th class="width10">Status</th>
