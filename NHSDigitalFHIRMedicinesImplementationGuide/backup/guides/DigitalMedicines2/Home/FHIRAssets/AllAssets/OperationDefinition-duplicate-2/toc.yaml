@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.guide.md
+- name: prepare
+  filename: prepare.guide.md
+- name: process-message
+  filename: process-message.guide.md
+- name: release
+  filename: release-duplicate-2.guide.md
+- name: verify-signature
+  filename: verify-signature.page.md

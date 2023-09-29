@@ -1,0 +1,12 @@
+- name: Build
+  filename: Build.guide.md
+- name: Referencing FHIR Resources
+  filename: ReferencingFHIRResources
+- name: FHIR STU3 to R4 Conversion
+  filename: FHIRSTU3toR4Conversion
+- name: Prescribing
+  filename: Prescribing-duplicate-2
+- name: Dispensing
+  filename: Dispensing-duplicate-2
+- name: Claims
+  filename: Claims.guide.md

@@ -1,0 +1,286 @@
+{
+  "resourceType": "Bundle",
+  "id": "fc2af095-2074-473c-b527-701a74998773",
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://example.org/FHIR/R4/MedicationRequest?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9453740519&_include=MedicationRequest:subject,MedicationRequest:requester"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "MedicationRequest/a7b86f8d-1d7c-fc28-e050-d20ae3a215f4",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "a7b86f8d-1d7c-fc28-e050-d20ae3a215f4",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType",
+            "valueCoding": {
+              "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
+              "code": "0101"
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug",
+            "extension": [
+              {
+                "url": "quantityWords",
+                "valueString": "twenty eight"
+              },
+              {
+                "url": "schedule",
+                "valueCoding": {
+                  "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug",
+                  "code": "CD2",
+                  "display": "Schedule 2"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-Account-code",
+            "extension": [
+              {
+                "url": "costCentre",
+                "valueReference": {
+                  "identifier": {
+                    "use": "official",
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "A99968"
+                  },
+                  "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
+                }
+              },
+              {
+                "url": "spuriousCode",
+                "valueReference": {
+                  "identifier": {
+                    "system": "https://fhir.hl7.org.uk/Id/nhsbsa-spurious-code",
+                    "value": "G7345213"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+            "extension": [
+              {
+                "url": "numberOfPrescriptionsIssued",
+                "valueUnsignedInt": 1
+              },
+              {
+                "url": "authorisationExpiryDate",
+                "valueDateTime": "2020-08-07"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+            "value": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F0"
+          }
+        ],
+        "status": "active",
+        "intent": "original-order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "outpatient",
+                "display": "Outpatient"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36126511000001106",
+              "display": "Morphine 10mg modified-release tablets"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/78d3c2eb-009e-4ec8-a358-b042954aa9b2",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9453740519"
+          }
+        },
+        "authoredOn": "2019-12-30T12:00:00+00:00",
+        "requester": {
+          "reference": "PractitionerRole/56166769-c1c4-4d07-afa8-132b5dfca666",
+          "identifier": {
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "C1234567"
+          },
+          "display": "DR RAZIA ALI"
+        },
+        "basedOn": [
+          {
+            "reference": "https://elmpt-hospitals.nhs.uk/MedicationRequest/654321"
+          }
+        ],
+        "groupIdentifier": {
+          "extension": [
+            {
+              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId",
+              "valueIdentifier": {
+                "system": "https://fhir.nhs.uk/Id/prescription",
+                "value": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+              }
+            }
+          ],
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "3C2366-B81001-0A409U"
+        },
+        "courseOfTherapyType": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+              "code": "continuous",
+              "display": "Continuous long term therapy"
+            }
+          ]
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 tablet, daily"
+          }
+        ],
+        "dispenseRequest": {
+          "extension": [
+            {
+              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType",
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
+                "code": "0004"
+              }
+            }
+          ],
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FX748"
+            }
+          },
+          "validityPeriod": {
+            "start": "2020-07-13T12:00:00+00:00",
+            "end": "2020-08-07T12:00:00+00:00"
+          },
+          "numberOfRepeatsAllowed": 0,
+          "quantity": {
+            "value": 28,
+            "unit": "tablet",
+            "system": "http://snomed.info/sct",
+            "code": "428673006"
+          }
+        },
+        "substitution": {
+          "allowedBoolean": false
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+	{
+	  "fullUrl": "Patient/78d3c2eb-009e-4ec8-a358-b042954aa9b2",
+      "resource": {
+		"resourceType": "Patient",
+		"id": "78d3c2eb-009e-4ec8-a358-b042954aa9b2",
+		"identifier": [
+		  {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9453740519"
+		  }
+		],
+		"name": [
+		  {
+			"use": "official",
+			"family": "CORY",
+			"given": [
+			  "ETTA"
+			],
+			"prefix": [
+			  "MISS"
+			]
+		  }
+		],
+		"gender": "female",
+		"birthDate": "1999-01-04",
+		"address": [
+		  {
+			"use": "home",
+			"postalCode": "DE21 4QH"
+		  }
+		],
+		"generalPractitioner": [
+		  {
+			"identifier": {
+			  "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			  "value": "B81001"
+			}
+		  }
+		]
+	  },
+	  "search": {
+        "mode": "include"
+      }
+	},
+	{
+	  "fullUrl": "PractitionerRole/56166769-c1c4-4d07-afa8-132b5dfca666",
+	  "resource": {
+		"resourceType": "PractitionerRole",
+		"id": "56166769-c1c4-4d07-afa8-132b5dfca666",
+		"identifier": [
+		  {
+			"system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+			"value": "100102238986"
+		  }
+		],
+		"code": [
+			{
+				"coding": [
+					{
+						"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
+						"code": "R8000"
+					}
+				]
+			}
+		],
+		"practitioner": {
+		  "identifier": {
+			"system": "https://fhir.hl7.org.uk/Id/gmc-number",
+			"value": "C1234567"
+		  },
+		  "display": "Dr Liz Scott"
+		},
+		"organization": {
+		  "identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RBA"
+		  },
+		  "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+		},
+		"telecom": [
+		  {
+			"system": "phone",
+			"value": "01234567890",
+			"use": "work"
+		  }
+		]
+	  },
+	  "search": {
+        "mode": "include"
+      }
+	}
+  ]
+}

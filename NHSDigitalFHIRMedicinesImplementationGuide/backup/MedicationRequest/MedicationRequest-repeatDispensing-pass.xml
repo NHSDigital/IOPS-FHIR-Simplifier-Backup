@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="repeatDispensing-pass" />
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType">
+        <valueCoding>
+          <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
+          <code value="0101" />
+          <display value="Primary Care Prescriber – Medical Prescriber" />
+        </valueCoding>
+      </extension>
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner">
+        <valueReference>
+          <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+        </valueReference>
+      </extension>
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
+        <extension url="authorisationExpiryDate">
+            <valueDateTime value="2020-12-07" />            
+        </extension>
+    </extension>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
+        <value value="A7B86F8D-1D59-FC28-E050-D20AE3A215F0" />
+    </identifier>
+    <status value="active" />
+    <intent value="original-order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"></system>
+            <code value="inpatient"></code>
+            <display value="Inpatient"></display>
+        </coding>
+        <text value="Inpatient"></text>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="21011811000001100" />
+            <display value="Enshake oral powder 96.5g sachets (Flavour Not Specified)" />
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="urn:uuid:c6750caa-3ca9-4f29-a282-6ee1aa5d7d4c" />
+    </subject>
+    <authoredOn value="2020-06-10T12:06:00.000+00:00" />
+    <requester>
+        <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+        <display value="Dr Smith" />
+    </requester>
+    <groupIdentifier>
+        <!-- Note: no GUID for for parent presecription id -->
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId">
+            <valueIdentifier>
+                <system value="https://fhir.nhs.uk/Id/prescription" />
+                <value value="a609e5c9-82a6-4a67-83ec-c96323bd17d7" />
+            </valueIdentifier>
+        </extension>
+        <system value="https://fhir.nhs.uk/Id/prescription-order-number" />
+        <value value="754CB4-E81001-0B9EB8" />
+    </groupIdentifier>
+    <courseOfTherapyType>
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-course-of-therapy"></system>
+            <code value="continuous-repeat-dispensing" />
+            <display value="Continuous long term (repeat dispensing)" />
+        </coding>
+    </courseOfTherapyType>
+    <dosageInstruction>
+        <text value="As Directed Enshake oral powder 96.5g sachets (Flavour Not Specified) Please call the practice" />
+    </dosageInstruction>
+    <dispenseRequest>
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType">
+            <valueCoding>
+                <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
+                <code value="0004" />
+            </valueCoding>
+        </extension>
+        <validityPeriod>
+            <start value="2020-06-10T00:00:00+00:00"></start>
+            <end value="2020-11-25T00:00:00+00:00"></end>
+        </validityPeriod>
+        <numberOfRepeatsAllowed value="6"/>
+        <quantity>
+            <value value="28" />
+            <unit value="sachet" />
+            <system value="http://snomed.info/sct" />
+            <code value="3318911000001109" />
+        </quantity>
+        <expectedSupplyDuration>
+            <value value="28" />
+            <unit value="days" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="d" />
+        </expectedSupplyDuration>
+        <performer>
+            <identifier>
+                <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+                <value value="Y12345"/>
+            </identifier>
+        </performer>
+    </dispenseRequest>
+    <substitution>
+        <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>

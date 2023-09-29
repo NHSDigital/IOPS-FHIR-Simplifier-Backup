@@ -1,0 +1,20 @@
+- name: Index
+  filename: Index.guide.md
+- name: Profiles
+  filename: Profiles-duplicate-2.guide.md
+- name: CodeSystems
+  filename: CodeSystems.guide.md
+- name: ValueSets
+  filename: ValueSets.guide.md
+- name: ConceptMaps
+  filename: ConceptMaps.guide.md
+- name: Extensions
+  filename: Extensions.guide.md
+- name: OperationDefinition
+  filename: OperationDefinition.guide.md
+- name: CapabilityStatement
+  filename: CapabilityStatement.guide.md
+- name: MessageDefinition
+  filename: MessageDefinition.guide.md
+- name: All Assets
+  filename: AllAssets

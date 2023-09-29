@@ -1,0 +1,84 @@
+{
+    "resourceType": "Task",
+    "id": "702cc4e9-81fc-470e-8ae1-43120ae5c16d",
+    "contained": [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "requester",
+            "identifier": [
+                {
+                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                    "value": "741555508105"
+                }
+            ],
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+                            "code": "S0030:G0100:R0620"
+                        }
+                    ]
+                }
+            ],
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                    "value": "7654321"
+                },
+                "display": "The pharmacist"
+            },
+            "organization": {
+			    "reference": "Organization/3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "VNE51"
+                },
+                "display": "The Pharmacy"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "01234567890"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "702cc4e9-81fc-470e-8ae1-43120ae5c16d"
+        }
+    ],
+    "status": "accepted",
+    "intent": "order",
+    "code": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/CodeSystem/task-code",
+                "code": "fulfill",
+                "display": "Fulfill the focal request"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "MedicationRequest/a7b86f8d-1d7c-fc28-e050-d20ae3a215f4"
+    },
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9446368138"
+        }
+    },
+    "authoredOn": "2022-04-14T20:39:32-04:00",
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "VNE51"
+        }
+    },
+    "requester": {
+        "reference": "#requester"
+    }
+}

@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.guide.md
+- name: Prescription Order Homecare Response
+  filename: PrescriptionOrderHomecareResponse.guide.md
+- name: Prescription Order Homecase Subsequent Response
+  filename: PrescriptionOrderHomecaseSubsequentResponse.guide.md
+- name: Prescription Order Outpatient Response
+  filename: PrescriptionOrderOutpatientResponse.guide.md
+- name: Prescription Order Outpatient Subsequent Response
+  filename: PrescriptionOrderOutpatientSubsequentResponse.guide.md

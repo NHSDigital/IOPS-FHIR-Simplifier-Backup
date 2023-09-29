@@ -1,0 +1,5 @@
+title: NHS Digital FHIR Medicines
+description: EPS allows prescribers to send prescriptions electronically to a dispenser (such as a pharmacy) of the patient's choice. This makes the prescribing and dispensing process more efficient and convenient for patients and staff.
+version: Current
+style-root: project
+style-name: ukcore

@@ -1,0 +1,4 @@
+## Examples
+
+{{index:current}}
+

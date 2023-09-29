@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.guide.md
+- name: 1st dispense event - partial
+  filename: 1stdispenseevent-partial.guide.md
+- name: 1st dispense event - partial with Patient Resource
+  filename: 1stdispenseevent-partialwithPatientResource.guide.md
+- name: 2nd dispense event - partial
+  filename: 2nddispenseevent-partial.guide.md
+- name: 3rd dispense event - completed
+  filename: 3rddispenseevent-completed.guide.md
+- name: prescription-dispense-notification
+  filename: prescription-dispense-notification.guide.md

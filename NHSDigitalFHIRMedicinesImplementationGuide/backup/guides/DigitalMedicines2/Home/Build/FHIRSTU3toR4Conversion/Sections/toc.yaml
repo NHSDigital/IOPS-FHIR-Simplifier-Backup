@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.guide.md
+- name: MedicationRequest.courseOfTherapyType
+  filename: MedicationRequest.courseOfTherapyType.guide.md
+- name: MedicationRequest.dispenseRequest.numberofrepeatsallowed
+  filename: MedicationRequest.dispenseRequest.numberofrepeatsallowed.guide.md
+- name: MedicationRequest.category
+  filename: MedicationRequest.category.guide.md
+- name: Medication[x].medicationCodeableConcept	
+  filename: Medicationx.medicationCodeableConcept.guide.md
