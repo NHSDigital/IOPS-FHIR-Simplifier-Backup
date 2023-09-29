@@ -1,0 +1,9 @@
+{
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "uk.nhsdigital.clinical.r4": "2.1.0-dev",
+    "hl7.fhir.r4.core": "4.0.1"
+  }
+}

@@ -1,0 +1,76 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="b65fd46e-4f4e-4676-b135-852ca16f2c91" />
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="32792001" />
+                    <display value="Trimethoprim" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+    <authoredOn value="2020-05-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </recorder>
+    <dosageInstruction>
+        <timing>
+            <repeat>
+                <boundsDuration>
+                    <value value="3" />
+                    <unit value="day" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="d" />
+                </boundsDuration>
+                <frequency value="2" />
+                <period value="1" />
+                <periodUnit value="d" />
+            </repeat>
+        </timing>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="26643006" />
+                <display value="oral" />
+            </coding>
+        </route>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="200" />
+                <unit value="milligram" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="mg" />
+            </doseQuantity>
+        </doseAndRate>
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>

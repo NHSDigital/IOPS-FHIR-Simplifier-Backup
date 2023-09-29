@@ -1,0 +1,49 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="1f4959a1-4a33-4b0e-bfad-f2ea1fccb2fa" />
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="4256811000001101" />
+                    <display value="Permitabs 400mg tablets for cutaneous solution (Alliance Pharmaceuticals Ltd)" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+        <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="outpatient" />
+            <display value="outpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+        <authoredOn value="2020-05-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-3030" />
+        <display value="Dr Callum Lund" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-3030" />
+        <display value="Dr Callum Lund" />
+    </recorder>
+    <dosageInstruction>
+        <patientInstruction value="Add 500ml of warm water to one tablet and dissolve. Make the resulting solution up to 8 litres and use to soak feet." />
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>

@@ -1,0 +1,64 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="da60a842-d755-4fe6-a7eb-4cda52cf17f7" />
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="331680008" />
+                    <display value="Hydrocortisone 0.1% cream" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+    <authoredOn value="2020-05-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </recorder>
+    <dosageInstruction>
+        <patientInstruction value="Apply to area around lips" />
+        <timing>
+            <repeat>
+                <frequency value="2" />
+                <frequencyMax value="3" />
+                <period value="1" />
+                <periodUnit value="d" />
+            </repeat>
+        </timing>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="417924000" />
+                <display value="Apply" />
+            </coding>
+        </method>
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>

@@ -1,0 +1,125 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="859e5d8a-391a-4b2a-8f29-15e8c75180bb" />
+    <contained>
+        <Medication>
+            <id value="internalMedicationIdentifer123abc" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="3363411000001108" />
+                    <display value="Migraleve tablets (McNeil Products Ltd)" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#internalMedicationIdentifer123abc" />
+        <display value="Migraleve tablets (McNeil Products Ltd)" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+    <authoredOn value="2020-05-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </recorder>
+    <dosageInstruction>
+        <sequence value="1" />
+        <text value="2 tablets - take once - as required when migraine occurs - Max dose 2 tablets in 24 hours - Pink tablet" />
+        <additionalInstruction>
+            <text value="Pink tablets" />
+        </additionalInstruction>
+        <timing>
+            <repeat>
+                <count value="1" />
+            </repeat>
+        </timing>
+        <asNeededCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="37796009" />
+                <display value="Migraine" />
+            </coding>
+        </asNeededCodeableConcept>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="2" />
+                <unit value="tablet" />
+                <system value="http://snomed.info/sct" />
+                <code value="428673006" />
+            </doseQuantity>
+        </doseAndRate>
+        <maxDosePerPeriod>
+            <numerator>
+                <value value="2" />
+                <unit value="tablet" />
+                <system value="http://snomed.info/sct" />
+                <code value="428673006" />
+            </numerator>
+            <denominator>
+                <value value="24" />
+                <unit value="hour" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="h" />
+            </denominator>
+        </maxDosePerPeriod>
+    </dosageInstruction>
+    <dosageInstruction>
+        <sequence value="2" />
+        <text value="2 tablets - every 4 hours - as required - max dose 6 tablets in 24 hours - Yellow tablets" />
+        <additionalInstruction>
+            <text value="Yellow tablets" />
+        </additionalInstruction>
+        <timing>
+            <repeat>
+                <frequency value="1" />
+                <period value="4" />
+                <periodUnit value="h" />
+            </repeat>
+        </timing>
+        <asNeededBoolean value="true" />
+        <doseAndRate>
+            <doseQuantity>
+                <value value="2" />
+                <unit value="tablet" />
+                <system value="http://snomed.info/sct" />
+                <code value="428673006" />
+            </doseQuantity>
+        </doseAndRate>
+        <maxDosePerPeriod>
+            <numerator>
+                <value value="6" />
+                <unit value="tablet" />
+                <system value="http://snomed.info/sct" />
+                <code value="428673006" />
+            </numerator>
+            <denominator>
+                <value value="24" />
+                <unit value="hour" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="h" />
+            </denominator>
+        </maxDosePerPeriod>
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>

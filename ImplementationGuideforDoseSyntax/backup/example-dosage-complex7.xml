@@ -1,0 +1,75 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="905d34ad-ea20-4371-8bf7-5208fbf146ce" />
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="824211000001107" />
+                    <display value="Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd)" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+    <authoredOn value="2020-05-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-1112" />
+        <display value="Dr Maikeu Well" />
+    </recorder>
+    <dosageInstruction>
+        <timing>
+            <event value="2019-11-01" />
+            <repeat>
+                <count value="1" />
+            </repeat>
+        </timing>
+        <site>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="59380008" />
+                <display value="Anterior abdominal wall structure" />
+            </coding>
+        </site>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="78421000" />
+                <display value="intramuscular route" />
+            </coding>
+        </route>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="422145002" />
+                <display value="inject" />
+            </coding>
+        </method>
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>

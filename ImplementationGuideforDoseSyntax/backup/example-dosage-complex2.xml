@@ -1,0 +1,110 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="dbb7e3b2-0cfa-4cff-b31b-3a9087bdd83b" />
+    <contained>
+        <Medication>
+            <id value="med1" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="317378005" />
+                    <display value="Loperamide 2mg capsules" />
+                </coding>
+            </code>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="inpatient" />
+            <display value="inpatient" />
+        </coding>
+    </category>
+    <priority value="routine" />
+    <medicationReference>
+        <reference value="#med1" />
+    </medicationReference>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9999999999" />
+        </identifier>
+    </subject>
+    <authoredOn value="2020-10-15T15:00:00Z" />
+    <requester>
+        <reference value="urn:staff-1000" />
+        <display value="Dr Harry Blonde" />
+    </requester>
+    <recorder>
+        <reference value="urn:staff-1000" />
+        <display value="Dr Harry Blonde" />
+    </recorder>
+    <dosageInstruction>
+        <sequence value="1" />
+        <additionalInstruction>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="421723005" />
+                <display value="Now" />
+            </coding>
+        </additionalInstruction>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="2" />
+                <unit value="capsule" />
+                <system value="http://snomed.info/sct" />
+                <code value="428641000" />
+            </doseQuantity>
+        </doseAndRate>
+        <maxDosePerPeriod>
+            <numerator>
+                <value value="8" />
+                <unit value="capsule" />
+                <system value="http://snomed.info/sct" />
+                <code value="428641000" />
+            </numerator>
+            <denominator>
+                <value value="1" />
+                <unit value="day" />
+                <system value="http://unitsofmeasure.org/" />
+                <code value="d" />
+            </denominator>
+        </maxDosePerPeriod>
+    </dosageInstruction>
+    <dosageInstruction>
+        <sequence value="2" />
+        <asNeededCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="62315008" />
+                <display value="Diarrhea" />
+            </coding>
+        </asNeededCodeableConcept>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="1" />
+                <unit value="capsule" />
+                <system value="http://snomed.info/sct" />
+                <code value="428641000" />
+            </doseQuantity>
+        </doseAndRate>
+        <maxDosePerPeriod>
+            <numerator>
+                <value value="8" />
+                <unit value="capsule" />
+                <system value="http://snomed.info/sct" />
+                <code value="428641000" />
+            </numerator>
+            <denominator>
+                <value value="1" />
+                <unit value="day" />
+                <system value="http://unitsofmeasure.org/" />
+                <code value="d" />
+            </denominator>
+        </maxDosePerPeriod>
+    </dosageInstruction>
+    <substitution>
+      <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>
