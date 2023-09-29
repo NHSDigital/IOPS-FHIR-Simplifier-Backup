@@ -1,0 +1,22 @@
+---
+topic: FHIRAssetsR4Profiles
+---
+## R4 Profiles
+The R4 profiles that are referenced by this specification are listed below. Each profile is documented using the format described in {{pagelink:ProfileDescriptions}}.
+
+* {{pagelink:R4Bundle}}
+* {{pagelink:R4DiagnosticReport}}
+* {{pagelink:R4MessageHeader}}
+* {{pagelink:R4ObservationTestGroup}}
+* {{pagelink:R4ObservationTestResult}}
+* {{pagelink:R4Organization}}
+* {{pagelink:R4Patient}}
+* {{pagelink:R4Practitioner}}
+* {{pagelink:R4PractitionerRole}}
+* {{pagelink:R4ServiceRequest}}
+* {{pagelink:R4Specimen}}
+
+Refer to the following for a description of how the profiles may be used to form Bundles for test requesting and reporting:
+
+* {{pagelink:BuildContructPathologyRequestBundle}}
+* {{pagelink:BuildContructPathologyReportBundle}} 

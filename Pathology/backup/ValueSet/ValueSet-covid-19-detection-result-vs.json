@@ -1,0 +1,54 @@
+{
+    "resourceType" : "ValueSet",
+    "id" : "covid-19-detection-result-vs",
+    
+    "url" : "https://fhir.nhs.uk/ValueSet/covid-19-detection-result-vs",
+    "version" : "1.1.6-1",
+    "name" : "COVID19DetectionResultVS",
+    "title" : "COVID-19 SNOMED CT Detection Result Value Set",
+    "status" : "draft",
+    "date" : "2021-01-23T06:00:00+00:00",
+    "publisher" : "NHS Digital",
+    "contact":  [
+      {
+          "name": "Interoperability Team",
+          "telecom":  [
+              {
+                  "system": "email",
+                  "value": "interoperabilityteam@nhs.net",
+                  "use": "work"
+              }
+          ]
+      }
+  ],
+    "description" : "SNOMED CT-coded requestable tests is to be used",
+    "compose" : {
+      "include" : [
+        {
+          "system" : "http://snomed.info/sct",
+          "concept" : [
+            {
+              "code" : "1240581000000104",
+              "display" : "SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) detection result positive"
+            },
+            {
+              "code" : "1240591000000102",
+              "display" : "SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) detection result negative"
+            },
+            {
+              "code" : "1321681000000104",
+              "display" : "SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) detection result equivocal"
+            },
+            {
+              "code" : "1321691000000102",
+              "display" : "SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) detection result unknown"
+            }
+
+          ]
+        }
+      ]
+    }
+  }
+
+  
+  

@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Semantic Versioning
+  filename: Semantic-versioning.page.md
+- name: Pre-Release Labels
+  filename: Pre-Release-Labels.page.md

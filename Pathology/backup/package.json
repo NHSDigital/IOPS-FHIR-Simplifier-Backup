@@ -1,0 +1,14 @@
+{
+  "name": null,
+  "version": null,
+  "description": null,
+  "author": null,
+  "fhirVersions": null,
+  "devDependencies": null,
+  "canonicals": null,
+  "dependencies": {
+    "fhir.r4.ukcore.stu1": "1.0.1",
+    "NHSD.Assets.STU3": "1.7.0",
+    "CareConnect.STU3.02.00.00": "2.1.0"
+  }
+}
