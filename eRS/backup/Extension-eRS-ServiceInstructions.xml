@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-eRS-ServiceInstructions" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-eRS-ServiceInstructions" />
+  <version value="1.0.0" />
+  <name value="ExtensioneRSServiceInstructions" />
+  <title value="Extension eRS Service Instructions" />
+  <status value="active" />
+  <date value="2022-03-14" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="An extension to carry the service instructions for an eRS health care service." />
+  <purpose value="This extension extends the eRS HealthcareService profile to carry the service instructions for an eRS health care service." />
+  <copyright value="Copyright © 2022 NHS Digital" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="HealthcareService" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="The service instructions for an eRS health care service" />
+      <definition value="The service instructions for an eRS health care service" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-eRS-ServiceInstructions" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="The service instructions for an eRS health care service" />
+      <definition value="The service instructions for an eRS health care service expressed as a string." />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
