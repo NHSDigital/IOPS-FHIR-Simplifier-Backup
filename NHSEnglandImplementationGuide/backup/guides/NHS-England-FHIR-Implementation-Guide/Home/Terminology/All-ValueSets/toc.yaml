@@ -6,6 +6,8 @@
   filename: ValueSet-England-BARSMessageServiceRequestCategory.page.md
 - name: ValueSet-England-CareSettingType
   filename: ValueSet-England-CareSettingType.page.md
+- name: ValueSet-England-ChildProtectionPlan
+  filename: ValueSet-England-ChildProtectionPlan.page.md
 - name: ValueSet-England-ClinicalSpecialty
   filename: ValueSet-England-ClinicalSpecialty.page.md
 - name: ValueSet-England-DMMedicationDispenseStatusReason
