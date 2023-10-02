@@ -8,8 +8,8 @@
     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1" />
     <tag>
       <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
-      <code value="pregnancy-state" />
-      <display value="Pregnancy status - Pregnancy state" />
+      <code value="pregnancy-status" />
+      <display value="Pregnancy status" />
     </tag>
   </meta>
   <status value="final" />
