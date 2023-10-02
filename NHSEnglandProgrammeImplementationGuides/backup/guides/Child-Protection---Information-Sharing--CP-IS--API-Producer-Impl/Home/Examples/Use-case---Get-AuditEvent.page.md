@@ -20,7 +20,6 @@ The system issues a GET call to CP-IS for the child's NHS Number.
     None
 
 ### Success case
-<a id="success-case"></a>
 
 The system responds with a SearchSet Bundle containing the AuditEvent history information for previous accesses (upto 25).
 
@@ -40,27 +39,4 @@ The system responds with a SearchSet Bundle containing the AuditEvent history in
 </div>
 <div id="JSON" class="tabcontent" style="display:block">
 {{json:145b0aa0-8709-4272-b7c0-75738a9822f3}}
-</div>
-
-### No record found case
-<a id="no-record-found-case"></a>
-
-The system responds with a 0 total record SearchSet Bundle.
-
-#### Http response
-
-    HTTP/1.1 200 OK
-
-#### Headers
-
-    Date: Tue, 05 Sep 2023 11:23:34 GMT
-    Content-Type: application/fhir+json
-
-#### Payload
-
-<div class="tab">
-  <button class="tablinks active" onclick="openTab(event, 'JSON')">JSON</button>
-</div>
-<div id="JSON" class="tabcontent" style="display:block">
-{{json:7eb1bc82-da03-427b-b2d3-237bd6038cb7}}
 </div>
