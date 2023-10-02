@@ -566,6 +566,15 @@ Other ValueSets are usable if the binding strength is defined as extensible.
 <tr>
 <td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-England-FGMRemovalReason}}</td>
 </tr>
+
+<tr>
+<td>{{pagelink:ValueSet-England-ChildProtectionPlan}}</td>
+<td>draft</td>
+<td><a href='https://www.hl7.org/fhir/r4/careteam.html' target="_blank">CareTeam</td>
+</tr>
+<tr>
+<td colspan="4">Composed of CodeSystem <code>http://snomed.info/sct</code></td>
+</tr>
 </table>
 
 ---
