@@ -30,6 +30,8 @@ The Base URL, ```[base]```, will be:
 
 - CP-IS information has been modelled as ... - {{pagelink:Home/Design/Data-mapping.page.md}}. 
 
+- On receipt of valid ReSTful calls to the Endpoints, the CP-IS FHIR API SHALL retrieve the relevant HL7v3 message, translate the HL7v3 message structure to the corresponding FHIR resources and return to calling Consumer client.
+
 ### Interactions
 
 - The API will allow a healthcare professional to query CP-IS information. Refer to - {{pagelink:Home/Design/Interactions.page.md}}. 
@@ -40,4 +42,6 @@ The Base URL, ```[base]```, will be:
 
 - CP-IS FHIR R4 API client systems SHALL implement [National role-based access control (RBAC)](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/national-rbac-for-developers).
 
-- The CP-IS FHIR R4 API will be hosted on the NHS England API Platform. The security and authorisation approach defined on page {{pagelink:Home/Build/Authentication.page.md}} SHALL be required. 
+- The CP-IS FHIR R4 API will be hosted on the NHS England API Platform. The security and authorisation approach defined on page {{pagelink:Home/Build/Authentication.page.md}} SHALL be required.
+
+- The CP-IS FHIR R4 Producer API SHALL be capable of determining and resolving  Practitioner, PractitionerRole and represented Organisation information from the Authentication and Authorisation token passed by the Client application.
