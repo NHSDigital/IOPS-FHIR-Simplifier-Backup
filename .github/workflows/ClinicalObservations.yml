@@ -30,7 +30,7 @@ jobs:
           cd backup
           wget --user ${{secrets.SIMPLIFIER_USER}} --password ${{secrets.SIMPLIFIER_PWD}} ${{ vars.CLINICALOBSERVATIONS_SIMPLIFIER_ADDRESS }} -O export.zip
           unzip export.zip -x settings.style
-          mv export.zip ..
+          rm -f export.zip 
           cd ..
 
       - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
