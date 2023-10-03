@@ -4,4 +4,4 @@
 
 FHIR Validation with Terminology Checks 
 
-Updated at: Tue Oct  3 10:46:44 UTC 2023
+ [![NHSDigital IOPS Validation)](https://github.com/NHSDigital/FHIR-R4-CLINICAL-OBSERVATIONS/actions/workflows/validationcall.yml/badge.svg)](https://github.com/NHSDigital/FHIR-R4-CLINICAL-OBSERVATIONS/actions/workflows/validationcall.yml)
