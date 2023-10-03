@@ -65,6 +65,12 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
+            if git diff --exit-code; then
+             echo "No changes detected"
+             exit 0
+            else
+             "Changes detected"
+            fi
             const { repo, owner } = context.repo;
             const result = await github.rest.pulls.create({
               title: '${{ steps.today.outputs.TODAY }}',
