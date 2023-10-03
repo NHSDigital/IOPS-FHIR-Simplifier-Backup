@@ -14,6 +14,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
+        run: sleep $((RANDOM % 30))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
+
       - name: Set today
         id: today
         run: echo "TODAY=$(date)" >> $GITHUB_OUTPUT
@@ -39,12 +42,15 @@ jobs:
           cd backup
           wget --user ${{secrets.SIMPLIFIER_USER}} --password ${{secrets.SIMPLIFIER_PWD}} ${{ vars.CLINICALOBSERVATIONS_SIMPLIFIER_ADDRESS }} -O export.zip
           unzip export.zip -x settings.style
-          rm -f export.zip 
+          rm -f export.zip
+          export NUMLINES=$(wc -l < README.md)
+          export NUMLINES=$(($NUMLINES-2))
+          head -$NUMLINES README.md > README1.md
+          echo "" >> README1.md
+          echo "Updated at: $(date)" >> README1.md
+          mv README1.md README.md 
           cd ..
-
-      - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
-        run: sleep $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
-      
+     
       - name: Create branch and commit
         run: |
           git config --global user.name "Workflows.Backup"
