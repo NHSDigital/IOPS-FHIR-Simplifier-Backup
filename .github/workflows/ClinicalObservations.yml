@@ -40,7 +40,7 @@ jobs:
         run: |
            if git diff --exit-code; then
             echo "No changes detected"
-            SIGINT/Ctrl-C
+            exit 0
            else
             "Changes detected"
            fi
