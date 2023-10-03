@@ -43,13 +43,13 @@ jobs:
           wget --user ${{secrets.SIMPLIFIER_USER}} --password ${{secrets.SIMPLIFIER_PWD}} ${{ vars.CLINICALOBSERVATIONS_SIMPLIFIER_ADDRESS }} -O export.zip
           unzip export.zip -x settings.style
           rm -f export.zip
+          cd ..
           export NUMLINES=$(wc -l < README.md)
           export NUMLINES=$(($NUMLINES-2))
           head -$NUMLINES README.md > README1.md
           echo "" >> README1.md
           echo "Updated at: $(date)" >> README1.md
           mv README1.md README.md 
-          cd ..
      
       - name: Create branch and commit
         run: |
