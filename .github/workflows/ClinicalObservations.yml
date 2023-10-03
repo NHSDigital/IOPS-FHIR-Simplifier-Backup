@@ -32,7 +32,10 @@ jobs:
           unzip export.zip -x settings.style
           mv export.zip ..
           cd ..
-  
+
+      - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
+        run: sleep ${RANDOM:0:30}m ${RANDOM:0:59}s #sleeps for a random number of minutes and seconds
+
       - name: Create branch and commit
         run: |
           git config --global user.name "Workflows.Backup"
