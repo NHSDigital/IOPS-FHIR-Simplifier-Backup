@@ -59,5 +59,5 @@ GITHUB_TOKEN has been setup with the default permissions granted to run workflow
 
 ## Configuration of branches to delete automatically
 
-This repository has been set up to automatically delete merged branches, for more details see [GitHub docs](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-the-automatic-deletion-of-branches) 
 
+Updated at: Tue Oct  3 10:35:48 UTC 2023
