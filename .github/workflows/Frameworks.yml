@@ -14,6 +14,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
+        run: sleep $((RANDOM %30))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
+
       - name: Set today
         id: today
         run: echo "TODAY=$(date)" >> $GITHUB_OUTPUT
@@ -32,6 +35,12 @@ jobs:
           unzip export.zip -x settings.style
           mv export.zip ..
           cd ..
+          export NUMLINES=$(wc -l < README.md) #Updates README file. Shows when last updated but also used to ensure changes made for the PR / merge steps below
+          export NUMLINES=$(($NUMLINES-2))
+          head -$NUMLINES README.md > README1.md
+          echo "" >> README1.md
+          echo "Updated at: $(date)" >> README1.md
+          mv README1.md README.md 
 
       - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
         run: sleep ${RANDOM:0:30}m ${RANDOM:0:59}s #sleeps for a random number of minutes and seconds

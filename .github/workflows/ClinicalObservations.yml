@@ -15,7 +15,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
-        run: sleep $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
+        run: sleep $((RANDOM %30))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
 
       - name: Set today
         id: today
@@ -24,15 +24,6 @@ jobs:
       - name: Set branch name
         id: branch-name
         run: echo "BRANCH=$(echo ${{ steps.today.outputs.TODAY }} | tr -d '[:space:]' | tr -d ':')" >> $GITHUB_OUTPUT
-
-      - name: Update README
-        run: |
-          export NUMLINES=$(wc -l < README.md)
-          export NUMLINES=$(($NUMLINES-2))
-          head -$NUMLINES README.md > README1.md
-          echo "" >> README1.md
-          echo "Updated at: $(date)" >> README1.md
-          mv README1.md README.md
 
       - name: Download and commit simplifier source code
         run: |
@@ -44,7 +35,7 @@ jobs:
           unzip export.zip -x settings.style
           rm -f export.zip
           cd ..
-          export NUMLINES=$(wc -l < README.md)
+          export NUMLINES=$(wc -l < README.md) #Updates README file. Shows when last updated but also used to ensure changes made for the PR / merge steps below
           export NUMLINES=$(($NUMLINES-2))
           head -$NUMLINES README.md > README1.md
           echo "" >> README1.md
