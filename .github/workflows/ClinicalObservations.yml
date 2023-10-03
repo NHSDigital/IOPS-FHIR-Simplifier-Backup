@@ -40,7 +40,7 @@ jobs:
         run: |
            if git diff --exit-code; then
             echo "No changes detected"
-            cancel-action
+            SIGINT/Ctrl-C
            else
             "Changes detected"
            fi
@@ -55,6 +55,7 @@ jobs:
           git push origin ${{ steps.branch-name.outputs.BRANCH }}
 
       - name: Create Pull Request
+        if: git diff --exit-code
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
