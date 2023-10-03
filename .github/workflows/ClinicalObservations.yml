@@ -35,6 +35,14 @@ jobs:
 
       - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
         run: sleep $((RANDOM % 1))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
+      
+      - name: Check for changes #If no changes found then exit action, otherwise pass 
+        run: if git diff --exit-code; then
+               echo "No changes detected"
+               exit 0
+             else
+               "Changes detected"
+             fi
 
       - name: Create branch and commit
         run: |
