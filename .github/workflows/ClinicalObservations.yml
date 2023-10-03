@@ -22,6 +22,15 @@ jobs:
         id: branch-name
         run: echo "BRANCH=$(echo ${{ steps.today.outputs.TODAY }} | tr -d '[:space:]' | tr -d ':')" >> $GITHUB_OUTPUT
 
+      - name: Update README
+        run: |
+          export NUMLINES=$(wc -l < README.md)
+          export NUMLINES=$(($NUMLINES-2))
+          head -$NUMLINES README.md > README1.md
+          echo "" >> README1.md
+          echo "Updated at: $(date)" >> README1.md
+          mv README1.md README.md
+
       - name: Download and commit simplifier source code
         run: |
           cd ClinicalObservations
@@ -36,15 +45,6 @@ jobs:
       - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
         run: sleep $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
       
-      - name: Check for changes #If no changes found then exit action, otherwise pass 
-        run: |
-           if git diff --exit-code; then
-            echo "No changes detected"
-            exit 0
-           else
-            "Changes detected"
-           fi
-
       - name: Create branch and commit
         run: |
           git config --global user.name "Workflows.Backup"
