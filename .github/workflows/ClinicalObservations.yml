@@ -34,7 +34,7 @@ jobs:
           cd ..
 
       - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
-        run: sleep $((RANDOM % 1))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
+        run: sleep $((RANDOM % 0))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
       
       - name: Check for changes #If no changes found then exit action, otherwise pass 
         run: |
@@ -47,6 +47,12 @@ jobs:
 
       - name: Create branch and commit
         run: |
+          if git diff --exit-code; then
+            echo "No changes detected"
+            exit 0
+          else
+            "Changes detected"
+          fi
           git config --global user.name "Workflows.Backup"
           git config --global user.email "username@users.noreply.github.com"
           git checkout -b ${{ steps.branch-name.outputs.BRANCH }}
