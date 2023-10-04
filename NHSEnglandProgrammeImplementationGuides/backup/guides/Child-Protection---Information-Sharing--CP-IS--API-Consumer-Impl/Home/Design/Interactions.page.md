@@ -35,8 +35,8 @@ The patient's NHS Number. This must be a verified NHS Number.
 
 | Outcome         | Response                       |
 | ----------- | ------------------------  |
-| Record found       | <a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-consumer-impl/home/examples/use-case---get-careteam.page.md?version=current#success-case">SearchSet Bundle</a>|
-| No record found       | <a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-consumer-impl/home/examples/use-case---get-careteam.page.md?version=current#no-record-found-case">SearchSet Bundle</a>|
+| Record found       | <a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-consumer-impl/home/examples/use-case---get-careteam.page.md?version=current#success-case">SearchSet Bundle</a> |
+| No record found       | <a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-consumer-impl/home/examples/use-case---get-careteam.page.md?version=current#no-record-found-case">SearchSet Bundle</a> |
 | Error or validation failure      | OperationOutcome - {{pagelink:Home/Build/Errorhandling.page.md}}|
 
 <br>

@@ -65,6 +65,7 @@ The system responds with a 0 total record SearchSet Bundle.
 </div>
 
 ### Error / Fail condition
+<a id="error-case"></a>
 
 The system responds with an OperationOutcome.
 
