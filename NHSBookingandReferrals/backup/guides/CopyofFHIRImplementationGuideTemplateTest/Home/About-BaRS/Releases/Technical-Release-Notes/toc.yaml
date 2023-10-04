@@ -10,9 +10,11 @@
   filename: BaRS-UEC1
 - name: BaRS-UEC2
   filename: BaRS-UEC2
-#name: BaRS-UEC3
-  #filename: BaRS-UEC3
-#name: BaRS-UEC4
- #filename: BaRS-UEC4
+- name: BaRS-UEC3
+  filename: BaRS-UEC3
+- name: BaRS-UEC4
+  filename: BaRS-UEC4
 - name: TRN-APP5
   filename: TRN-APP5
+- name: TRN-APP6
+  filename: TRN-APP6

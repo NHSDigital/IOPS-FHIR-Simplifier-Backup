@@ -4,11 +4,13 @@
   filename: BaRS-APP1
 - name: BaRS-UEC2
   filename: BaRS-UEC2
-- #name: BaRS-UEC3
-  #filename: BaRS-UEC3
-- #name: BaRS-UEC4
-  #filename: BaRS-UEC4
+- name: BaRS-UEC3
+  filename: BaRS-UEC3
+- name: BaRS-UEC4
+  filename: BaRS-UEC4
 - name: BaRS-UEC5
   filename: BaRS-UEC5
 - name: BaRS-APP5
   filename: BaRS-APP5
+- name: BaRS-APP6
+  filename: BaRS-APP6

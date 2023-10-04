@@ -1,14 +1,14 @@
 ---
-topic: APP3-HowDoesItWork
+topic: APP4-HowDoesItWork
 ---
 
 ## {{page-title}}
 
 
-This section describes how the primary operations used in this application work. This diagram illustrates the workflow and interactions of a validation request and response:
+This section describes how the primary operations used in this application work. This diagram illustrates the workflow and interactions of a Referral request:
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ValidationRequestSimplified-1.0.0.svg" width="1000"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ReferraltoCASSimplified-1.0.0.svg" width="1100"></img></a>
 
 
 To support the workflows for this application of the standard the operations that need to be supported are:

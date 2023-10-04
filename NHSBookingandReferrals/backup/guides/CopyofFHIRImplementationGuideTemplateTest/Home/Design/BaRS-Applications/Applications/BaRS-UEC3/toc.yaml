@@ -1,5 +1,5 @@
-- name: 999-CAS Validation
-  filename: 999-CAS-Validation.page.md
+- name: 999-CAS Referral
+  filename: 999-CAS-Referral.page.md
 - name: Index
   filename: Index.page.md
 - name: Scope and Requirements
@@ -8,9 +8,7 @@
   filename: How-does-it-work.page.md
 - name: Payloads
   filename: Payloads.page.md
-- name: Validation Payload
-  filename: Validation-Payload.page.md
-- name: Validation Response Payload
-  filename: Validation-Response-Payload.page.md
+- name: Referral Payload
+  filename: Referral-Payload.page.md
 - name: Entity Relationship Diagrams
   filename: Entity-Relationship-Diagrams.page.md
