@@ -13,3 +13,5 @@ These guides are designed to be used in conjunction with the documentation for {
 | Application                                                                 |  Use Cases                                                     | Current Release |
 | ----------------------------------------------------------------------------|--------------------------------------------------------------- | --------------- |
 | {{pagelink:application5, text: Referrals into Pharmacy (application 5)}}      | <p>GP to Pharmacy CPCS Minor Illness<br> | 1.0.0-beta     |
+| {{pagelink:app-uec3, text: 999-CAS Referral  }} | <p>999-CAS Referral<br> | 1.0.0-beta     |
+| {{pagelink:app-uec4, text: 999-CAS Validation  }} | <p>999-CAS Validation<br> | 1.0.0-beta     |
