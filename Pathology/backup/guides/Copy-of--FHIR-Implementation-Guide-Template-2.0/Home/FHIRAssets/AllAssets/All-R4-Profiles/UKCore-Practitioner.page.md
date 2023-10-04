@@ -11,7 +11,7 @@ Used to represent the following (where applicable):
 * the person that collected a specimen e.g. a phlebotomist
 
 ### Related Links
-* R4 Resource: [Practitioner](https://hl7.org/fhir/R4/practitioner.html)<br>
+* R4 Resource: [Practitioner](https://hl7.org/fhir/R4/practitioner.html)
 * R4 UK Core Profile: [UKCore-Practitioner](https://simplifier.net/hl7fhirukcorer4/ukcore-practitioner)
 
 ### Profile Views
@@ -66,7 +66,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>UKCore-Practitioner</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner</code></td>
+            <td>The canonical URL for the <code>UKCore-Practitioner</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner</code></td>
         </tr>
         <tr>
             <td>identifier</td>

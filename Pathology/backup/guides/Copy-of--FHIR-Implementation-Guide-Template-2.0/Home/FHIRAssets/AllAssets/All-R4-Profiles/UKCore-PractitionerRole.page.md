@@ -7,7 +7,7 @@ topic: R4PractitionerRole
 Used to represent a specific set of roles/locations/specialties/services that a <code>Practitioner</code> may perform at an <code>Organization</code>.
 
 ### Related Links
-* R4 Resource: [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html)<br>
+* R4 Resource: [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html)
 * R4 UK Core Profile: [UKCore-PractitionerRole](https://simplifier.net/hl7fhirukcorer4/ukcore-practitionerrole)
 
 ### Profile Views
@@ -62,7 +62,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>UKCore-PractitionerRole</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole</code></td>
+            <td>The canonical URL for the <code>UKCore-PractitionerRole</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole</code></td>
         </tr>
         <tr>
             <td>identifier</td>

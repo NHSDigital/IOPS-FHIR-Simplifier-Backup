@@ -7,7 +7,7 @@ topic: STU3MessageHeader
 The header for a message exchange that is either requesting or responding to an action.
 
 ### Related Links
-* STU3 Resource: [MessageHeader](http://hl7.org/fhir/STU3/messageheader.html)<br>
+* STU3 Resource: [MessageHeader](http://hl7.org/fhir/STU3/messageheader.html)
 * STU3 ITK Profile: [ITK-Message-MessageHeader-2](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2)
 
 ### Profile Views
@@ -62,7 +62,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="http://hl7.org/fhir/stu3/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>ITK-MessageHeader-2</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2</code></td>
+            <td>The canonical URL for the <code>ITK-MessageHeader-2</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2</code></td>
         </tr>
         <tr>
             <td>extension (ITKMessageHandling)</td>

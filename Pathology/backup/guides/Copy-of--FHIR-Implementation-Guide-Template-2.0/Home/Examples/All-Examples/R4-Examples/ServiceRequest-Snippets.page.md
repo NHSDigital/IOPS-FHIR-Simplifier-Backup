@@ -1,8 +1,8 @@
 ---
 topic: R4SnippetsServiceRequest
 ---
-### PATH-R4-18: R4 ServiceRequest Snippets
-An example of how each supported <code>ServiceRequest</code> data element may be populated is provided below. Please note that the examples are provided to illustrate individual data element usage; the full set of data elements may not necessarily be consistent with one another or illustrate a single, complete clinical scenario.
+### PATH-R4-18: R4 UKCore-ServiceRequest-Lab Snippets
+An example of how each supported <code>UKCore-ServiceRequest-Lab</code> data element may be populated is provided below. Please note that the examples are provided to illustrate individual data element usage; the full set of data elements may not necessarily be consistent with one another or illustrate a single, complete clinical scenario.
 
 Refer to the {{pagelink: R4ServiceRequest}} profile definition for a detailed description of the supported data elements.
 

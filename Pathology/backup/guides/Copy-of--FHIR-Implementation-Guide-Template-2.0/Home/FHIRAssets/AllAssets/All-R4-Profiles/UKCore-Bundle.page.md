@@ -7,7 +7,7 @@ topic: R4Bundle
 A container for a collection of resources. Used to group the set of resources that comprise a pathology related message.
 
 ### Related Links
-* R4 Resource: [Bundle](https://hl7.org/FHIR/R4/bundle.html)<br>
+* R4 Resource: [Bundle](https://hl7.org/FHIR/R4/bundle.html)
 * R4 UK Core Profile: [UKCore-Bundle](https://simplifier.net/hl7fhirukcorer4/ukcore-bundle)
 
 ### Profile Views
@@ -62,7 +62,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/FHIR/R4/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>UKCore-Bundle</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle</code></td>
+            <td>The canonical URL for the <code>UKCore-Bundle</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle</code></td>
         </tr>
             <td>identifier</td>
             <td>0..1</td>

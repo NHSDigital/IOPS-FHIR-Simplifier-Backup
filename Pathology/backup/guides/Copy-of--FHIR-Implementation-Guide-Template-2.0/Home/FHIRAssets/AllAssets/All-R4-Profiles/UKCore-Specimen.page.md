@@ -7,7 +7,7 @@ topic: R4Specimen
 Details of the specimen(s) provided for testing.
 
 ### Related Links
-* R4 Resource: [Specimen]( https://hl7.org/fhir/R4/specimen.html)<br>
+* R4 Resource: [Specimen]( https://hl7.org/fhir/R4/specimen.html)
 * R4 UK Core Profile: [UKCore-Specimen](https://simplifier.net/hl7fhirukcorer4/ukcore-specimen)
 
 ### Profile Views
@@ -64,7 +64,7 @@ An example of how each supported data element may be populated is provided in {{
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>UKCore-Specimen</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen</code></td>
+            <td>The canonical URL for the <code>UKCore-Specimen</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen</code></td>
         </tr>
         <tr>
             <td>identifier</td>

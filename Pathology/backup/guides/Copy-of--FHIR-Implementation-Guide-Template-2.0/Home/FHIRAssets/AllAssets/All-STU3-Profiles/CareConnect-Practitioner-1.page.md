@@ -11,7 +11,7 @@ Used to represent the following (where applicable):
 * the person that collected a specimen e.g. a phlebotomist
 
 ### Related Links
-* STU3 Resource: [Practitioner](http://hl7.org/fhir/STU3/practitioner.html)<br>
+* STU3 Resource: [Practitioner](http://hl7.org/fhir/STU3/practitioner.html)
 * STU3 CareConnect Profile: [CareConnect-Practitioner-1](https://simplifier.net/HL7FHIRCareConnectBaselineforSTU3/CareConnect-Practitioner-1)
 
 ### Profile Views
@@ -66,7 +66,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="http://hl7.org/fhir/stu3/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>CareConnect-Practitioner-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</code></td>
+            <td>The canonical URL for the <code>CareConnect-Practitioner-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</code></td>
         </tr>
         <tr>
             <td>extension (nhsCommunication)</td>

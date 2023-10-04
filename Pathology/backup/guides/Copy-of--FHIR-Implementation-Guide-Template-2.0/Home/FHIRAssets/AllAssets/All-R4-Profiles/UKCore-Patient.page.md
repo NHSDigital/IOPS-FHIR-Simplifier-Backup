@@ -7,7 +7,7 @@ topic: R4Patient
 Demographics and other administrative information about an individual. In most cases the subject of a pathology test request and/or test report is a `Patient` but it could be a `Group`, `Device` or `Location`.
 
 ### Related Links
-* R4 Resource: [Patient]( https://hl7.org/fhir/R4/patient.html)<br>
+* R4 Resource: [Patient]( https://hl7.org/fhir/R4/patient.html)
 * R4 UK Core Profile: [UKCore-Patient](https://simplifier.net/hl7fhirukcorer4/ukcore-patient)
 
 ### Profile Views
@@ -62,7 +62,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>UKCore-Patient</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient</code></td>
+            <td>The canonical URL for the <code>UKCore-Patient</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient</code></td>
         </tr>
         <tr>
             <td>extension (birthPlace)</td>
