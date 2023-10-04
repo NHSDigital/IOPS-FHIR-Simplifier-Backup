@@ -16,12 +16,14 @@ Other ValueSets are usable if the binding strength is defined as extensible.
 </style>
 
 <table id="valuesetlist" title= "List of all ValueSets and CodeSystems">
+<thead>
 <tr>
-<th class="width50">ValueSet</th>
-<th class="width05">Status</th>
-<th class="width40">Bound in Profile/Extension</th>
+<th class="width50" scope="col">ValueSet</th>
+<th class="width05" scope="col">Status</th>
+<th class="width40" scope="col">Bound in Profile/Extension</th>
 </tr>
-
+</thead>
+<tbody>
 <tr>
 <td>{{pagelink:ValueSet-England-ClinicalSpecialty}}</td>
 <td>draft</td>
@@ -575,6 +577,7 @@ Other ValueSets are usable if the binding strength is defined as extensible.
 <tr>
 <td colspan="4">Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 </tr>
+</tbody>
 </table>
 
 ---

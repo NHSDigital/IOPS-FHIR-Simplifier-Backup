@@ -10,14 +10,14 @@ All new FHIR assets will be developed in the  [NHS England Implementation Guide]
 
 Within the NHSE folder is an IG called [NHSE Design and Development Approach](https://simplifier.net/guide/NHSE-Design-and-Development-Approach2/Home?version=current) which gives detailed guidence to NHSE IG creators.
 
-<table class="assets">
+<table class="assets" title="NHS England Future IG list">
 <thead>
 <tr>
-<th width="20%">Name</th>
-<th width="20%">Type</th>
-<th width="40%">Description</th>
-<th width="10%">Publisher</th>
-<th width="10%">FHIR Version</th>
+<th class="width20">Name</th>
+<th class="width20">Type</th>
+<th class="width40">Description</th>
+<th class="width10">Publisher</th>
+<th class="width10">FHIR Version</th>
 </tr>
 </thead>
 <tbody>
@@ -42,14 +42,14 @@ Within the NHSE folder is an IG called [NHSE Design and Development Approach](ht
 ## Historical NHS Digital IG
 Historical IG's in the list below will have profile and FHIR Assets contained within, so may be useful if you are working in that domain.
 
-<table class="assets">
+<table class="assets" title="NHS England Historical IG list">
 <thead>
 <tr>
-<th width="20%">Name</th>
-<th width="20%">Type</th>
-<th width="40%">Description</th>
-<th width="10%">Publisher</th>
-<th width="10%">FHIR Version</th>
+<th class="width20">Name</th>
+<th class="width20">Type</th>
+<th class="width40">Description</th>
+<th class="width10">Publisher</th>
+<th class="width10">FHIR Version</th>
 </tr>
 </thead>
 <tbody>
@@ -160,3 +160,14 @@ Historical IG's in the list below will have profile and FHIR Assets contained wi
 </tr>
 </tbody>
 </table>
+
+<br><br><br>
+
+<div markdown="span" class="alert alert-warning" role="alert"><h4 id="Licence"><i class="fas fa-gavel"></i> Licensing and Publisher</h4>
+<ul>
+<li>
+Copyright© 2023+ NHS England Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html.
+<li>
+Developed and authored by NHS England Interoperability Team.
+</ul>
+</div>

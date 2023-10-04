@@ -78,7 +78,7 @@
         </div>
 
         <!-- back to top button -->
-        <a id="back-to-top" class="btn btn-fhir" onclick="goBackToTop()">
+        <a role="button" title="Back To top button" id="back-to-top" class="btn btn-fhir" onclick="goBackToTop()">
             back to top
         </a>
 
@@ -705,7 +705,6 @@
             function wrapSideBar() {
                 $('div.col-md-6 ul.nav li a').each(function(index) {
                     if ($(this)[0].scrollWidth > $(this).innerWidth()) {
-                        console.log($(this)[0].text + ' SW: ' + $(this)[0].scrollWidth + ' IW: '+  $(this).innerWidth());
 
                         var numberOfCapitalsToFind = 0;
                         if ($(this)[0].scrollWidth -  $(this).innerWidth() < 35) {

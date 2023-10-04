@@ -18,6 +18,12 @@ html, body {
      color: #222;
      text-decoration: none;
 }
+ body header h3 {
+     text-align: center;
+}
+ body header h5 {
+     text-align: center;
+}
  body header .hl7-fhir-logo-lhs {
      text-align: left;
      margin-top: 7px;
@@ -36,13 +42,13 @@ html, body {
      min-height: 70%;
      position: relative;
      height: auto !important;
-     margin-bottom: -155px;
-     padding-bottom: 155px;
+     margin-bottom: -105px;
+     padding-bottom: 105px;
 }
  body footer {
      background-color: #dde1e4;
      color: #222;
-     height: 155px;
+     height: 105px;
      position: relative;
      padding-top: 40px;
 }
@@ -72,13 +78,13 @@ hr.thickline{
     background-color:#003087;
 }
 
- .tab {
+.tab {
      overflow: hidden;
      border: 1px solid #dde1e4;
      background-color: #dde1e4;
 }
 /* Style the buttons inside the tab */
- .tab button {
+.tab button {
      background-color: inherit;
      float: left;
      border: none;
@@ -129,7 +135,7 @@ hr.thickline{
      color: #fff !important;
 }
 
-//css for simplifier tabs
+/* css for simplifier tabs */
 .cool-tabs .nav-tabs {
      overflow: hidden;
      border: 1px solid #dde1e4;
@@ -202,17 +208,39 @@ table.assets tr td.balloted {
      color: white !important;
 }
 
+
+ tr.wordBreak, td.wordBreak {
+    overflow-wrap: break-word !important;
+}
+
+ th.width5 { width: 5%; overflow-wrap: anywhere; }
+ th.width05 { width: 5%; overflow-wrap: anywhere; }
+ th.width10 { width: 10%; overflow-wrap: anywhere; }
+ th.width15 { width: 15%; overflow-wrap: anywhere; }
  th.width20 { width: 20%; overflow-wrap: anywhere; }
  th.width25 { width: 25%; overflow-wrap: anywhere; }
  th.width30 { width: 30%; overflow-wrap: anywhere; }
+ th.width33 { width: 33%; overflow-wrap: anywhere; }
  th.width35 { width: 35%; overflow-wrap: anywhere; }
  th.width40 { width: 40%; overflow-wrap: anywhere; }
+ th.width45 { width: 45%; overflow-wrap: anywhere; }
+ th.width50 { width: 50%; overflow-wrap: anywhere; }
+ th.width55 { width: 55%; overflow-wrap: anywhere; }
+ th.width60 { width: 60%; overflow-wrap: anywhere; }
+ th.width65 { width: 65%; overflow-wrap: anywhere; }
+ th.width70 { width: 70%; overflow-wrap: anywhere; }
+ th.width75 { width: 75%; overflow-wrap: anywhere; }
 
  td.width20 { width: 20%; overflow-wrap: anywhere; }
  td.width25 { width: 25%; overflow-wrap: anywhere; }
  td.width30 { width: 30%; overflow-wrap: anywhere; }
  td.width35 { width: 35%; overflow-wrap: anywhere; }
  td.width40 { width: 40%; overflow-wrap: anywhere; }
+
+ th.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
+ th.comparison-note { width: 34%; overflow-wrap: anywhere; }
+ td.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
+ td.comparison-note { width: 34%; overflow-wrap: anywhere; }
 
  .underconstruction {
      display: grid;
@@ -482,4 +510,13 @@ table.codes thead tr:first-child th.orderable button:hover .sort-icon {
   border-bottom: 3px solid #231f20;
   color: #231f20;
   background-color: #919ea8;
+}
+
+
+/* this part adds an icon after external links, using FontAwesome*/
+a.external:after {
+     font-family: 'FontAwesome';
+   font-weight: 900;
+   content: "\f08e";
+    padding-left: 5px;
 }

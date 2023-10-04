@@ -6,13 +6,12 @@ topic: IdentifierNamingSystems
 
 <table class="assets" title="NHS England naming systems list">
 <tr>
-<th width="20%">Name</th>
-<th width="35%">URL</th>
-<th width="35%">Description</th>
-<th width="5%">Status</th>
-<th width="5%">Kind</th>
-
-
+<th class="width20">Name</th>
+<th class="width35">URL</th>
+<th class="width35">Description</th>
+<th class="width05">Status</th>
+<th class="width05">Kind</th>
+</tr>
 <tr>
 <td>NhsMhsPartyKey</td>
 <td>https://fhir.nhs.uk/Id/nhsMhsPartyKey</td>
