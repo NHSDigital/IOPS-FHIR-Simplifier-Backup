@@ -22,11 +22,11 @@ select
 <br>
 
 <div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
+ <button class="tablinks active" onclick="openTab(event, 'Tree View')"><i class="fa fa-folder-tree"></i> Tree View</button>
+   <button class="tablinks" onclick="openTab(event, 'Table View')"><i class="fa fa-table-list"></i> Table View</button>
+   <button class="tablinks" onclick="openTab(event, 'XML View')"><i class="fa fa-code"></i> XML View</button>
+   <button class="tablinks" onclick="openTab(event, 'JSON View')"><i class="fa fa-brackets-curly"></i> JSON View</button>
+  <button class="tablinks" onclick="openTab(event, 'Examples')"><i class="fa fa-file-pen"></i> Examples</button>
 </div>
 
 <div id="Tree View" class="tabcontent" style="display:block">
