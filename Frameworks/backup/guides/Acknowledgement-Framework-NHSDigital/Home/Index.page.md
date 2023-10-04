@@ -1,6 +1,6 @@
 # Acknowledgement Framework FHIR R4 Implementation Guide
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> The Acknowledgement Framework is early in its development and therefore must NOT be used in any production systems. </div>
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> The Acknowledgement Framework is currently a draft version. Please contact the IOPS team if you are interested to discuss this solution for your use case.</div>
 
 The Acknowlegdment Framework aims to become a generic and agnostic solution that will support any future healthcare system using any transport method. We envisage to promote this to be used for projects that will use FHIR R4 in the future.
 
