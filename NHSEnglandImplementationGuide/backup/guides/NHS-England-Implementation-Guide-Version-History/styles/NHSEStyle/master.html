@@ -41,7 +41,7 @@
                         </a>
                     </div>
                     <div class="col-md-16">
-                            <h3 align="center" class="guide-title">{{ guide-title }}</h3>
+                            <h3 class="guide-title">{{ guide-title }}</h3>
                     </div>
                     <div class="col-md-4 hl7-logo" style="margin-top:15px;">
                         <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
@@ -55,15 +55,13 @@
         </header>
 
         <!-- Implementation guide content -->
-        <div class="content container">
+        <div role="main" class="content container">
 
             <!-- Header to be displayed on each page -->
             <!--Comment out for publication, start-->
-            <div id="header" class="row">
-                <div markdown="span" class="alert alert-danger" role="alert">
+            <div id="development-notice" markdown="span" class="alert alert-danger" role="alert">
                     <h4><i class="fas fa-exclamation-triangle"></i> WARNING</h4>
                     This guidance is under active development by NHS England and content may be added or updated on a regular basis.
-                </div>
             </div>
             <!--Comment out for publication, end-->
 
@@ -71,38 +69,28 @@
         </div>
 
         <!-- back to top button -->
-        <a id="back-to-top" class="btn btn-fhir" onclick="goBackToTop()">
+        <a role="button" title="Back To top button" id="back-to-top"  class="btn btn-fhir" onclick="goBackToTop()">
             back to top
         </a>
 
-        <footer>
+         <footer>
             <div class="container">
-                <table width="100%">
+                <table role="none" title="Footer Links">
                     	<col style="width:25%">
-	                    <col style="width:15%">
-    	                <col style="width:20%">
-	                    <col style="width:15%">
+	                    <col style="width:25%">
     	                <col style="width:25%">
+	                    <col style="width:25%">
                   <tr>
-                      <td>Powered by <b>SIMPLIFIER.NET</b></td>
-                      <td> IG © 2023+ NHS England</td>
-                      <td> <span><b>Version:</b> {{ guide-version }}</span></td>
-                      <td><span><b>FHIR Version:</b> {{ guide-fhir-version }}</span></td>
-                      <td><b>Packages are based on:</b>  <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a> </td>
-                      
-                  </tr>
-                  </table>
-                <table width="100%">
-                    	<col style="width:25%">
-	                    <col style="width:15%">
-    	                <col style="width:20%">
-	                    <col style="width:15%">
-    	                <col style="width:25%">
-                  <tr>
-                    <td><b>Released:</b> TBA</td>
-                    <td colspan="4"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Guidance/Sitemap-Overview?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#I1">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
-                      </tr>  
-                    </table>
+                      <td>Powered by <b>SIMPLIFIER.NET</b></td>                      
+                      <td>IG © 2023+ NHS England</td>
+                      <td><span><b>Version:</b> {{ guide-version }}</span></td>
+                      <td><b>Released:</b> 18/08/2023</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><b>Packages are based on:</b> <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a> & <a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
+                      <td colspan="2"><b>Links:</b>&nbsp; <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                    </tr>  
+                </table>
             </div>
         </footer>
 
@@ -126,22 +114,6 @@
                 }
             }
 
-            function scrollProfileSideBar() {
-                var hasSDH1 = $('div#preview-content h2[id^=structuredefinition-england]');
-                if (hasSDH1 != undefined && hasSDH1.length > 0)
-                {
-                    if (hasSDH1[0].getBoundingClientRect().top < 0) {
-                        var amountToMove=hasSDH1[0].getBoundingClientRect().top * -1;
-                        $("div.col-md-6").css({
-                            "top": amountToMove + 20 + "px"
-                        });
-                    } else {
-                        $("div.col-md-6").css({
-                             "top": "0"
-                        });
-                    }
-                }
-            }
             // When the user clicks on the button, scroll to the top of the document
             function goBackToTop() {
                 document.body.scrollTop = 0;
@@ -174,393 +146,152 @@
                 parent.find(".tabcontent").hide(0);
 
                 // Show the desired content with the current view
-                parent.find(".tabcontent[id='"+tabName+"']").show(0);
+                parent.find(".tabcontent[id^='"+tabName+"']").show(0);
             }
 
-            // function to turn multiple columns into rows for an fql table, within a specific div
-            function transposeFQLTables() {
-                //look for a div with id transpose
-                $('div#transpose').each(function(index) {
-                    //within this div, look for an fql table
-                    var fqlTable = $(this).children("table.table-bordered");
-                    //and optionally a 2 column table you want to combine with the transposed one
-                    var contextTable = $(this).children("table#addToTranspose");
 
-                    //only continue to transpose if we have an fql table
-                    if (fqlTable != undefined && fqlTable.length > 0) {
-
-                    //create a new table to be populated during the transpose
-                    var newTable = document.createElement('table');
-                    newTable.classList.add("table-bordered");
-                    newTable.classList.add("scrollbar");
-                    
-                    // Find the max number of columns in the fql table
-                    var maxColumns = 0;
-                    for(var r = 0; r < fqlTable[0].rows.length; r++) {
-                        if(fqlTable[0].rows[r].cells.length > maxColumns) {
-                            maxColumns = fqlTable[0].rows[r].cells.length;
-                        }
-                    }                   
-
-                    //create the header row
-                    let header = newTable.createTHead();
-                    let headerRow = header.insertRow();
-                    headerRow.innerHTML= '<th colspan=2>Profile Details</th>';
-
-                    //populate the body by transposing columns to rows
-                    let body = newTable.createTBody();
-                    for(var c = 0; c < maxColumns; c++) {
-                        let addedRow = body.insertRow(c);
-                        var isCanonicalURL = false;
-                        for(var r = 0; r < fqlTable[0].rows.length; r++) {
-                            if(r==0) {
-                                if (fqlTable[0].rows[r].cells[c].innerText == "Canonical_URL"){
-                                    isCanonicalURL= true;
-                                }
-                                addedRow.insertCell(r);
-                                addedRow.cells[r].innerHTML = "<b>" + fqlTable[0].rows[r].cells[c].innerHTML.split("_").join(" ") + "</b>";
-                                addedRow.cells[r].classList.add('width20');
-                            }
-                            else {
-                                addedRow.insertCell(r);
-
-                                pTag = "<p>";
-                                pTagClose = "</p>"
-                                if (isCanonicalURL) {
-                                    str = fqlTable[0].rows[r].cells[c].innerText;
-                                } else {
-                                    str = fqlTable[0].rows[r].cells[c].innerHTML;
-                                }
-
-                                str = str.replace(pTag, '');
-                                str = str.replace(pTagClose, '');
-                                addedRow.cells[r].innerHTML = str;
-                            }
-                        }
-                    }
-
-                    //optionally add rows from a two column table to be joined to the bottom of the transposed table
-                    if (contextTable != undefined && contextTable.length > 0) {
-                        let addedRow = body.insertRow(c);
-                        for(var r = 0; r < contextTable[0].rows.length; r++) {
-                            addedRow.insertCell(-1);
-                            addedRow.cells[0].innerHTML = "<b>" + contextTable[0].rows[r].cells[0].innerHTML.split("_").join(" ") + "</b>";
-                            addedRow.cells[0].classList.add('width20');
-                            addedRow.insertCell(-1);
-                            addedRow.cells[1].innerHTML = contextTable[0].rows[r].cells[1].innerHTML;
-                        }
-                    }
-
-                    //add the transposed table to the div, and remove the other tables
-                    $(this).append(newTable);
-                    fqlTable.remove();
-                    contextTable.remove();
-                    }
-                });
-			}
-
-            // function alters styling of FQL tables
-            function tidyUpFQLTables() {
-                //fix the contents of FQL table headers
-                // specifically swap _ for spaces, and change ProfilePurpose to have a space
-                $('table.table-bordered > thead > tr > th').each(function(index) {
-                    if ($(this).text() == 'ProfilePurpose') {
-                            $(this).text('Profile Purpose');
-                    }
-                    $(this).text($(this).text().split("_").join(" "));
-                });
-
-                //remove the FQL table css on CodeSystems/Extensions when they are in a list page
-                $('[id^=CodeSystem-England-] > table.table-bordered').each(function(index) {
-                    $(this).removeClass('scrollbar');
-                    $(this).removeClass('table-bordered');
-                    $(this).removeClass('table');
-                });
-
-                //for any remaining FQL tables, remove the scrollbar, and add our England assets and forceWhite class
-                $('table.table-bordered').each(function(index) {
-                    $(this).removeClass('scrollbar');
-                    $(this).addClass('assets');
-                    $(this).addClass('forceWhite');
-                });
-            }
-
-            // function handles changing new items to be green
-            function highlightBallotItems() {
-                //new balloted assets should have an info div on them, 
-                // this changes the sub pages to be green, and forces the info box and trees/tabs to be white
-                $('div#newAsset').each(function(index){
-                    //this check handles the sub page in All Extensions/ValueSets/CodeSystems
-                    // without it, the whole list goes green
-                    // NOTE:
-                    //  Codesystem, Valueset, codesystem, valueSet etc will still cause page to go full green
-                    //  ensure your Page Title, FileName and Topic are capitalised right
-                    var parentCodeSystem = $(this).closest('[id^=CodeSystem-England-]'); 
-                    var parentExtension = $(this).closest('[id^=Extension-England-]');
-                    var parentValueSet = $(this).closest('[id^=ValueSet-England-]');
-                   
-                    if (parentCodeSystem != undefined && parentCodeSystem.length > 0)
-                    {
-                        parentCodeSystem.addClass('forceGreen');
-                        $(this).parent().find('h2').addClass('forceGreen');
-                        $(this).parent().find('hr').insertAfter($(this).parent())
-                    } else if (parentExtension != undefined && parentExtension.length > 0)
-                    {
-                        parentExtension.addClass('forceGreen');
-                        $(this).parent().find('h2').addClass('forceGreen');
-                        $(this).parent().find('hr').insertAfter($(this).parent())
-                    } else if (parentValueSet != undefined && parentValueSet.length > 0)
-                    {
-                        parentValueSet.addClass('forceGreen');
-                        $(this).parent().find('h2').addClass('forceGreen');
-                        $(this).parent().find('hr').insertAfter($(this).parent())
-                    } else
-                    {
-                        $('div.row:not(#header)').addClass('forceGreen');
-                        $(this).parent().find('hr').addClass('forceWhite');
-                    }
-                    $(this).addClass('forceWhite');
-                    $(this).parent().find('div.tabcontent').addClass('forceWhite');
-                });
-            }
-            
-            // function add the submenus for profiles
-            function createProfileSubMenus() {
-               //mobile friendly tweak - check window size, and add sub menu if we can
-                if (window.matchMedia("(min-width: 992px)").matches){
-                    //add the sub menu's for profiles
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles N to Z <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles A to M <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
-                    //add a seperator
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
-                    
-                    //and move the items into the sub menus
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(4,26)); //A to M
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(26)); //N to Z
-                } else {
-                    //add a seperator
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
-                }
-            }
-
-            // function add the submenus for terminology
-            function createTerminologySeparator() {
-                $('ul.nav li.dropdown:eq(2) ul.dropdown-menu li:eq(0)').after('<li role="separator" class="divider"></li>');
-            }
-
-            //remaps {{guide-version}} to current if needed, for sitemap and licence links
+            //remaps sitemap and licence links to always point within the IG being read
             function fixFooterVersion() {
                 let pageUrl = window.location.href;
                 let pageVersion = "?" + pageUrl.split("?")[1];
-                $("a#footer-sitemap").each(function(index) {
-                    let destUrl = $(this)[0].href;
-                    let destVersion = "?" + destUrl.split("?")[1];
-                    if (pageVersion.startsWith("?version=current")){
-                        destUrl = destUrl.replace(destVersion, pageVersion);
+                pageVersion = pageVersion.split("#")[0];
+                pageUrl = pageUrl.split("?")[0];
+                let slashCount = pageUrl.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++)
+                {
+                    newUrl = newUrl + pageUrl.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/")) {
+                        i = slashCount;
                     }
-                    $(this).attr("href", destUrl) ;
-				});
+                }
+                if (newUrl.endsWith("/")) {
+                    newUrl = newUrl.slice(0, -1);
+                }
+                if (!newUrl.endsWith("Home")) {
+                    newUrl = newUrl + "/Home";
+                }
                 $("a#footer-licence").each(function(index) {
                     let destUrl = $(this)[0].href;
                     let destVersion = "?" + destUrl.split("?")[1];
+                    destUrl = newUrl + destVersion;
                     if (pageVersion.startsWith("?version=current")){
-                        destUrl = destUrl.replace(destVersion, pageVersion) + '#I1';
+                        destUrl = destUrl.replace(destVersion, pageVersion);
+                    }
+                    if (!destUrl.endsWith("#Licence")) {
+                        destUrl = destUrl+"#Licence";
                     }
                     $(this).attr("href", destUrl) ;
 				});
 			}
 
-            //code finds valuesets on their sub page / all vs page
-            // and looks for the exapansion table
-            // for the all valuesets, it hides this, and makes the cncoepts text abiove a link to show/hide the table, and also swaps links for snomed ct concepts to go to term browser
-            // for sub page displays, just looks for expansion tables containg snomed ct concepts, and rewrites them to termbrwoser
-            function alterValueSetTables() {
-                // 
-                $('div#preview-content div[id^=ValueSet-England] div[id^=HTML]').each(function(index) {
-                    if ($(this).children('table.regular').length > 1){
-                        var lookForP = $(this).children('p:contains("This value set contains")');
-                        var lookForSNOMEDCT = $(this).children('ul').children('li:contains("Include codes from SNOMED_CT")');
-                        var tableToAlter = $(this).children('table.regular').eq(1);
-
-                        if (lookForP != undefined && lookForP.length > 0) {
-                            lookForP[0].innerHTML = lookForP[0].innerHTML.replace("concepts","<a href='#' onclick='toggleExpandedValueSetTableVisibility(this);return false;'>concepts</a>")
-                            tableToAlter.addClass('codes');
-                            tableToAlter.css({
-                                "display": "none"
-                            });
-                            tableToAlter.removeClass('regular');
-
-                            if (lookForSNOMEDCT != undefined && lookForSNOMEDCT.length >0 ) {
-                                for(var r = 1; r < tableToAlter[0].rows.length; r++) {
-                                    var conceptID = tableToAlter[0].rows[r].cells[0].innerText;
-                                    tableToAlter[0].rows[r].cells[0].innerHTML = "<a href='https://termbrowser.nhs.uk/?perspective=full&conceptId1=" + conceptID +"'>" + conceptID + "</a>"
-                                }  
-                            }
-                        }
-                    }
+            
+            //fix wcag compliance issues caused by the way simplifier renders
+            function fixWebAccessibility() {
+                // remove additional unneeded role on navbar
+                $('nav.navbar').removeAttr("role");
+                //set title and role on all trees
+                $('table.treetable').each(function(index) {
+                    //$(this).attr("role","presentation");
+                    $(this).attr("title","FHIR Tree View");
                 });
-
-                $('div#preview-content div[id^=HTML]').each(function(index) {
-                    if ($(this).children('table.regular').length > 1){
-                        var lookForP = $(this).children('p:contains("This value set contains")');
-                        var lookForSNOMEDCT = $(this).children('ul').children('li:contains("Include codes from SNOMED_CT")');
-                        var tableToAlter = $(this).children('table.regular').eq(1);
-                        if (lookForP != undefined && lookForP.length > 0 && lookForSNOMEDCT != undefined && lookForSNOMEDCT.length >0 ) {
-                            
-                            tableToAlter.addClass('codes');
-                            tableToAlter.removeClass('regular');
-
-                            for(var r = 1; r < tableToAlter[0].rows.length; r++) {
-                                var conceptID = tableToAlter[0].rows[r].cells[0].innerText;
-                                tableToAlter[0].rows[r].cells[0].innerHTML = "<a href='https://termbrowser.nhs.uk/?perspective=full&conceptId1=" + conceptID +"'>" + conceptID + "</a>"
-                            }  
-                        }
-                    }
-                });
-            }
-
-
-            /* following chunk replicates nhse /\ and \/ sort buttons */
-
-            //for tables with class codes (codesystems, altered valusets)
-            // shift the first row into a thead
-            // then call function to add /\ and \/ sort buttons
-            function addCodesSortButton() {
-                $('table.codes').each(function(index) {
-                    var firstTr = $(this).find('tr:first').remove();
-                    firstTr.find('td').contents().unwrap().wrap('<th>');
-                    $(this).prepend($('<thead></thead>').append(firstTr));
-
-                    if ($(this).find("thead tr th").length <= $(this).find("tbody tr:first td").length) {
-                        $(this).find("thead tr th:last").attr('colspan',2);
-                    }
-
-                    addSortButtons($(this).parent());
-                });
-            }//function thats called to get the sort button chunk working
-            function addSortButtons(tableDiv) {
-                const tableList = tableDiv[0].querySelectorAll("table");
-                if (0 === tableList.length)
-                    return null;
-                    
-                Array.from(tableList).forEach(
-                    table => {
-                        normalSortButtons(table)
-                    }
-                )
-            }
-
-            //an array for the svg paths
-            const sortObj = {
-                asc: '<path d="M8,4l7,6.5L13.5,12L8,6.8L2.5,12L1,10.5L8,4z"/>',
-                desc: '<path d="M8,12L1,5.5L2.5,4L8,9.2L13.5,4L15,5.5L8,12z"/>'
-            };
-            // a function to create the svg based on the sort type
-            function getIcon(type="asc") {
-                return `<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" viewBox="0 0 16 16" width="100%" height="100%">\n ${sortObj[type]}\n</svg>`
-            }
-            //function to actually add the buttons
-            function normalSortButtons(table) {
-                if (void 0 !== table.dataset.noSort)
-                    return;
-                const headerCells = table.querySelectorAll("thead tr:first-child td, thead tr:first-child th");
-                Array.from(headerCells).forEach(
-                    (headerCell,index) => {
-                        if (void 0 !== headerCell.dataset.noSort)
-                            return;
-                        headerCell.classList.add("orderable");
-                        const buttonSpan = `<span class="sort-icon">${getIcon("asc")}</span>`;
-                        headerCell.innerHTML = `<button><span>${headerCell.innerHTML}</span><span>${buttonSpan}</span></button>`;
-                        setupSortButton(headerCell, index, table);
-                    }
-                )
-            }
-            //funciton to set up the sort button onclick
-            function setupSortButton(headerCell, index, table) {
-                const buttonObj = headerCell.querySelector("button");
-                buttonObj.onclick = function(){sortButtonClick(headerCell, table, headerCell.dataset.sort)};
-            }
-            //function that actually does the onclick
-            function sortButtonClick(headerCell, table){
-                const hCells = table.querySelectorAll("thead td,th");
-                var sortAsc = true;
-                Array.from(hCells).forEach(
-                    hCell => {
-                        const icon = hCell.querySelector(".sort-icon");
-                        if (hCell === headerCell)
-                        {
-                            if (headerCell.dataset.sort == undefined || headerCell.dataset.sort == "" || headerCell.dataset.sort == "desc"){
-                                headerCell.dataset.sort = "asc";
-                            } else {
-                                headerCell.dataset.sort = "desc";
-                                sortAsc=false;
-                            }
-                            icon.innerHTML = getIcon(headerCell.dataset.sort);
+                //set title on all valuset tables
+                $('table.regular').each(function(index) {
+                    if ($(this).find("th").length > 0) {
+                        if ($(this).find(":contains('System')")) {
+                            $(this).attr("title","Expanded ValueSet codes");
                         } else {
-                            hCell.dataset.sort = "";
-                            icon.innerHTML = getIcon("asc");
+                            $(this).attr("title","Imported ValueSet codes");
+                        }
+                    } else {
+                        $(this).attr("role","presentation");
+                        $(this).attr("title","ValueSet details");
+                    }
+                });
+                // set title on all code lists
+                $('table.codes').each(function(index) {
+                    $(this).attr("title","Expanded code list");
+                });
+                // set role on table view
+                $('div.path table').each(function(index) {
+                    $(this).attr("role","presentation");
+                });
+                //set title on FQL generated tables, ideally from the first column of the thead
+                $('table.table.table-bordered.assets.forceWhite').each(function(index) {
+                    if ($(this).attr("title") == undefined || $(this).attr("title") == "") {
+                        if ($(this).find("thead tr th").length > 0) {
+                            $(this).attr("title",$(this).find("thead tr th")[0].innerText);
+                        } else {
+                            $(this).attr("title","FQL Generated Details");
                         }
                     }
-                )
-                sortCells(headerCell.cellIndex, table, sortAsc);
-            }
-            //and function that does the sorting/re-tabling
-            function sortCells(index, table, sortAsc) {
-                const bodyList = table.querySelectorAll("tbody");
-                Array.from(bodyList).forEach(
-                    body => {
-                        const rowArray = []
-                        , rowList = body.querySelectorAll("tr");
-                        Array.from(rowList).forEach(
-                            (row,rowIndex) => {
-                                const cell = row.querySelectorAll("td, th")[index];
-                                cell && rowArray.push({
-                                    row: rowIndex,
-                                    value: cell.innerText
-                                })
+                });
+                //set a unique id on all tree/table/example divs etc
+                var iHTMLCount=0;
+                var iTreeCount=0;
+                var iTableCount=0;
+                var iXMLCount=0;
+                var iJSONCount=0;
+                var iExamplesCount=0;
+                var iUsageCount=0;
+                $('div.tabcontent').each(function(index) {
+                    if ($(this).attr("id") == "HTML View") {
+                        iHTMLCount++;
+                        $(this).attr("id","HTML View" + iHTMLCount);
+                    } else if ($(this).attr("id") == "Tree View") {
+                        iTreeCount++;
+                        $(this).attr("id","Tree View" + iTreeCount);
+                    } else if ($(this).attr("id") == "Table View") {
+                        iTableCount++;
+                        $(this).attr("id","Table View" + iTableCount);
+                    } else if ($(this).attr("id") == "XML View") {
+                        iXMLCount++;
+                        $(this).attr("id","XML View" + iXMLCount);
+                    } else if ($(this).attr("id") == "JSON View") {
+                        iJSONCount++;
+                        $(this).attr("id","JSON View" + iJSONCount);
+                    } else if ($(this).attr("id") == "Examples") {
+                        iExamplesCount++;
+                        $(this).attr("id","Examples" + iExamplesCount);
+                    } else if ($(this).attr("id") == "Usage") {
+                        iUsageCount++;
+                        $(this).attr("id","Usage" + iUsageCount);
+                    }
+                });
+                // set unique id on all transposed fl table divs
+                var iTransposeCount=0;
+                $('div[id="transpose"]').each(function(index) { 
+                    iTransposeCount++;
+                    $(this).attr("id","transpose" + iTransposeCount);
+                });
+                //loop through all div's with id's
+                $('div').each(function(index) { 
+                    if ($(this).attr("id") != undefined) {
+                        // look for an h2, with either a matching id or page-title
+                        // and update it to be unique
+                        var sectionHeading = $(this).find("h2");
+                        if (sectionHeading != undefined && sectionHeading.length > 0){
+                            if (sectionHeading.attr("id") == $(this).attr("id")) {
+                                sectionHeading.attr("id", sectionHeading.attr("id") + "-sectionheading");
+                            } else if (sectionHeading.attr("id") == "page-title") {
+                                sectionHeading.attr("id", $(this).attr("id") + "-sectionheading");
                             }
-                        )
-                        rowArray.sort(
-                            (row1,row0) => {
-                                const sortResult = sortFunction(row1.value, row0.value);
-                                return false === sortAsc ? sortResult : -1 * sortResult
-                            }
-                        )
-                        body.innerHTML = "";
-                        rowArray.forEach(
-                            rowItem => {
-                                body.append(rowList[rowItem.row])
-                            }
-                        )
-                    }	
-                )
+                        }
+                        //if the div is renderParent, shift its title into the alt of the img it contains
+                        if ($(this).attr("id") == "renderParent"){
+                            var imgTitle = $(this).attr("title");
+                            $(this).removeAttr("title");
+                            $(this).find("img.img-responsive").attr("alt",imgTitle);
+                        }
+                    }
+                });
             }
-            //function for the sort comparator
-            function sortFunction(row0Value, row1Value) {
-                const n = /[^a-zA-Z]/g
-                , s = /[^0-9]/g
-                , o = row1Value.replace(n, "")
-                , i = row0Value.replace(n, "");
-                if (o === i) {
-                    const n = parseInt(row1Value, 15)
-                    , o = parseInt(row0Value, 15);
-                    return n === o ? 0 : n > o ? 1 : -1
-                }
-                return o > i ? 1 : -1
-            }
-        
 
 
             // function runs on page load
             $(function() {
-                transposeFQLTables();
-                tidyUpFQLTables();
-                //highlightBallotItems();
-                //createProfileSubMenus();
-                //createTerminologySeparator();
                 fixFooterVersion();
-                alterValueSetTables();
-                addCodesSortButton();
+                fixWebAccessibility()
                 updateFooterPosition();
             });
             

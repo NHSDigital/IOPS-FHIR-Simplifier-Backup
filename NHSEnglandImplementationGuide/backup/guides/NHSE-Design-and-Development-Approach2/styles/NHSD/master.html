@@ -41,7 +41,7 @@
                         </a>
                     </div>
                     <div class="col-md-16">
-                            <h3 align="center" class="guide-title">{{ guide-title }}</h3>
+                            <h3 class="guide-title">{{ guide-title }}</h3>
                     </div>
                     <div class="col-md-4 hl7-logo" style="margin-top:15px;">
                         <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
@@ -54,72 +54,43 @@
             {{ dropdown-navigation }}
         </header>
 
-        <!-- Implementation guide content -->
-        <div class="content container">
+               <!-- Implementation guide content -->
+        <div role="main" class="content container">
 
             <!-- Header to be displayed on each page -->
             <!--Comment out for publication, start-->
-
-            <div id="header" class="row">
-                <div markdown="span" class="alert alert-danger" role="alert">
+            <div id="development-notice" markdown="span" class="alert alert-danger" role="alert">
                     <h4><i class="fas fa-exclamation-triangle"></i> WARNING</h4>
                     This guidance is under active development by NHS England and content may be added or updated on a regular basis.
-                </div>
             </div>
             <!--Comment out for publication, end-->
 
-
             {{ page-with-children }}
-                    </div>
-<!-- back to top button -->
-        <a id="back-to-top" class="btn btn-fhir" onclick="goBackToTop()">
+        </div>
+
+        <!-- back to top button -->
+        <a role="button" title="Back To top button" id="back-to-top"  class="btn btn-fhir" onclick="goBackToTop()">
             back to top
         </a>
 
-        <footer>
-            <!--<div class="container">
-
-                <div class="row">
-                    <div>
-                        <span>Version: {{ guide-version }}</span>
-                        <span>FHIR Version: {{ guide-fhir-version }}</span>
-                    </div>
-
-                    <br />
-                    <p>Powered by <b>SIMPLIFIER.NET</b></p>
-                    <div>
-                        HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven
-                        International
-                    </div>
-                </div>
-            </div>-->
+         <footer>
             <div class="container">
-                <table width="100%">
+                <table role="none" title="Footer Links">
                     	<col style="width:25%">
-	                    <col style="width:15%">
-    	                <col style="width:20%">
-	                    <col style="width:15%">
+	                    <col style="width:25%">
     	                <col style="width:25%">
+	                    <col style="width:25%">
                   <tr>
-                      <td>Powered by <b>SIMPLIFIER.NET</b></td>
-                      <td> IG © 2023+ NHS England</td>
-                      <td> <span><b>Version:</b> {{ guide-version }}</span></td>
-                      <td><span><b>FHIR Version:</b> {{ guide-fhir-version }}</span></td>
-                      <td><b>Packages are based on:</b>  <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a> </td>
-                      
-                  </tr>
-                  </table>
-                <table width="100%">
-                    	<col style="width:25%">
-	                    <col style="width:15%">
-    	                <col style="width:20%">
-	                    <col style="width:15%">
-    	                <col style="width:25%">
-                  <tr>
-                    <td><b>Released:</b> TBC</td>
-                    <td colspan="4"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Guidance/Sitemap-Overview?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#I1">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
-                      </tr>  
-                    </table>
+                      <td>Powered by <b>SIMPLIFIER.NET</b></td>                      
+                      <td>IG © 2023+ NHS England</td>
+                      <td><span><b>Version:</b> {{ guide-version }}</span></td>
+                      <td><b>Released:</b> 18/08/2023</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><b>Packages are based on:</b> <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a> & <a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
+                      <td colspan="2"><b>Links:</b>&nbsp; <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                    </tr>  
+                </table>
             </div>
         </footer>
 
@@ -142,7 +113,7 @@
             parent.find(".tabcontent").hide(0);
 
             // Show the desired content with the current view
-            parent.find(".tabcontent[id='"+tabName+"']").show(0);
+            parent.find(".tabcontent[id^='"+tabName+"']").show(0);
         }
     </script>
 
@@ -173,9 +144,115 @@
 
     <!-- Ensures footer is at the bottom of the page -->
     <script>
-        $(function () {
-            updateFooterPosition();
-        });
+       
+            //fix wcag compliance issues caused by the way simplifier renders
+            function fixWebAccessibility() {
+                // remove additional unneeded role on navbar
+                $('nav.navbar').removeAttr("role");
+                //set title and role on all trees
+                $('table.treetable').each(function(index) {
+                    //$(this).attr("role","presentation");
+                    $(this).attr("title","FHIR Tree View");
+                });
+                //set title on all valuset tables
+                $('table.regular').each(function(index) {
+                    if ($(this).find("th").length > 0) {
+                        if ($(this).find(":contains('System')")) {
+                            $(this).attr("title","Expanded ValueSet codes");
+                        } else {
+                            $(this).attr("title","Imported ValueSet codes");
+                        }
+                    } else {
+                        $(this).attr("role","presentation");
+                        $(this).attr("title","ValueSet details");
+                    }
+                });
+                // set title on all code lists
+                $('table.codes').each(function(index) {
+                    $(this).attr("title","Expanded code list");
+                });
+                // set role on table view
+                $('div.path table').each(function(index) {
+                    $(this).attr("role","presentation");
+                });
+                //set title on FQL generated tables, ideally from the first column of the thead
+                $('table.table.table-bordered.assets.forceWhite').each(function(index) {
+                    if ($(this).attr("title") == undefined || $(this).attr("title") == "") {
+                        if ($(this).find("thead tr th").length > 0) {
+                            $(this).attr("title",$(this).find("thead tr th")[0].innerText);
+                        } else {
+                            $(this).attr("title","FQL Generated Details");
+                        }
+                    }
+                });
+                //set a unique id on all tree/table/example divs etc
+                var iHTMLCount=0;
+                var iTreeCount=0;
+                var iTableCount=0;
+                var iXMLCount=0;
+                var iJSONCount=0;
+                var iExamplesCount=0;
+                var iUsageCount=0;
+                $('div.tabcontent').each(function(index) {
+                    if ($(this).attr("id") == "HTML View") {
+                        iHTMLCount++;
+                        $(this).attr("id","HTML View" + iHTMLCount);
+                    } else if ($(this).attr("id") == "Tree View") {
+                        iTreeCount++;
+                        $(this).attr("id","Tree View" + iTreeCount);
+                    } else if ($(this).attr("id") == "Table View") {
+                        iTableCount++;
+                        $(this).attr("id","Table View" + iTableCount);
+                    } else if ($(this).attr("id") == "XML View") {
+                        iXMLCount++;
+                        $(this).attr("id","XML View" + iXMLCount);
+                    } else if ($(this).attr("id") == "JSON View") {
+                        iJSONCount++;
+                        $(this).attr("id","JSON View" + iJSONCount);
+                    } else if ($(this).attr("id") == "Examples") {
+                        iExamplesCount++;
+                        $(this).attr("id","Examples" + iExamplesCount);
+                    } else if ($(this).attr("id") == "Usage") {
+                        iUsageCount++;
+                        $(this).attr("id","Usage" + iUsageCount);
+                    }
+                });
+                // set unique id on all transposed fl table divs
+                var iTransposeCount=0;
+                $('div[id="transpose"]').each(function(index) { 
+                    iTransposeCount++;
+                    $(this).attr("id","transpose" + iTransposeCount);
+                });
+                //loop through all div's with id's
+                $('div').each(function(index) { 
+                    if ($(this).attr("id") != undefined) {
+                        // look for an h2, with either a matching id or page-title
+                        // and update it to be unique
+                        var sectionHeading = $(this).find("h2");
+                        if (sectionHeading != undefined && sectionHeading.length > 0){
+                            if (sectionHeading.attr("id") == $(this).attr("id")) {
+                                sectionHeading.attr("id", sectionHeading.attr("id") + "-sectionheading");
+                            } else if (sectionHeading.attr("id") == "page-title") {
+                                sectionHeading.attr("id", $(this).attr("id") + "-sectionheading");
+                            }
+                        }
+                        //if the div is renderParent, shift its title into the alt of the img it contains
+                        if ($(this).attr("id") == "renderParent"){
+                            var imgTitle = $(this).attr("title");
+                            $(this).removeAttr("title");
+                            $(this).find("img.img-responsive").attr("alt",imgTitle);
+                        }
+                    }
+                });
+            }
+
+
+            // function runs on page load
+            $(function() {
+                fixFooterVersion();
+                fixWebAccessibility()
+                updateFooterPosition();
+            });
 
         $(window).resize(function () {
             updateFooterPosition();
@@ -205,9 +282,44 @@
             parent.find(".tabcontent").hide(0);
 
             // Show the desired content with the current view
-            parent.find(".tabcontent[id='"+tabName+"']").show(0);
+            parent.find(".tabcontent[id^='"+tabName+"']").show(0);
         }
         
+         //remaps sitemap and licence links to always point within the IG being read
+            function fixFooterVersion() {
+                let pageUrl = window.location.href;
+                let pageVersion = "?" + pageUrl.split("?")[1];
+                pageVersion = pageVersion.split("#")[0];
+                pageUrl = pageUrl.split("?")[0];
+                let slashCount = pageUrl.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++)
+                {
+                    newUrl = newUrl + pageUrl.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/")) {
+                        i = slashCount;
+                    }
+                }
+                if (newUrl.endsWith("/")) {
+                    newUrl = newUrl.slice(0, -1);
+                }
+                if (!newUrl.endsWith("Home")) {
+                    newUrl = newUrl + "/Home";
+                }
+                $("a#footer-licence").each(function(index) {
+                    let destUrl = $(this)[0].href;
+                    let destVersion = "?" + destUrl.split("?")[1];
+                    destUrl = newUrl + destVersion;
+                    if (pageVersion.startsWith("?version=current")){
+                        destUrl = destUrl.replace(destVersion, pageVersion);
+                    }
+                    if (!destUrl.endsWith("#Licence")) {
+                        destUrl = destUrl+"#Licence";
+                    }
+                    $(this).attr("href", destUrl) ;
+				});
+			}
+
         const reloadPage = () => {
             location.reload()
         }

@@ -78,13 +78,13 @@ hr.thickline{
     background-color:#003087;
 }
 
- .tab {
+.tab {
      overflow: hidden;
      border: 1px solid #dde1e4;
      background-color: #dde1e4;
 }
 /* Style the buttons inside the tab */
- .tab button {
+.tab button {
      background-color: inherit;
      float: left;
      border: none;
@@ -510,4 +510,12 @@ table.codes thead tr:first-child th.orderable button:hover .sort-icon {
   border-bottom: 3px solid #231f20;
   color: #231f20;
   background-color: #919ea8;
+}
+
+/* this part adds an icon after external links, using FontAwesome*/
+a.external:after {
+     font-family: 'Font Awesome 5 Free';
+   font-weight: 900;
+   content: "\f35d";
+    padding-left: 5px;
 }
