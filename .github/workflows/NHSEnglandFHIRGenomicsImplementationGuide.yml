@@ -41,9 +41,6 @@ jobs:
           echo "" >> README1.md
           echo "Updated at: $(date)" >> README1.md
           mv README1.md README.md 
-
-      - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
-        run: sleep ${RANDOM:0:30}m ${RANDOM:0:59}s #sleeps for a random number of minutes and seconds
   
       - name: Create branch and commit
         run: |
