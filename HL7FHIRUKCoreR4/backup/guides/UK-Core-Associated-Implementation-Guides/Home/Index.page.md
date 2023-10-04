@@ -84,7 +84,7 @@ href="https://simplifier.net/guide/nhsdigital?version=current">NHS England FHIR 
 
 <tr>
 <td><a 
-href="https://simplifier.net/guide/fhir-standards-wales-implementation-guide?version=current">Wales FHIR Implementation Guide</a></td>
+href="https://simplifier.net/guide/fhir-standards-wales-implementation-guide?version=1.0.0">Wales FHIR Implementation Guide</a></td>
 <td>Implementation Guide</td>
 <td>This Implementation Guide contains the HL7 FHIR R4 standards for use by Health and Care organisations in Wales.</td> 
 <td>Data Standards Wales</td>

@@ -73,7 +73,7 @@ The "3" refers to this being a third ballot of the UK Core, as a "Standard for T
 
 ---
 
-<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-folder-open-o"></i> Implementation Guidance Directory </h4>
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-folder-open"></i> Implementation Guidance Directory </h4>
 The <a href="https://simplifier.net/guide/uk-core-implementation-guidance-directory?version=current">Implementation Guidance Directory</a> contains links to other guidance and documentation which is available to assist Implementers of the UK Core. This guidance covers items such as:
 <ul>
 <li>Version history and change control information.</li>
