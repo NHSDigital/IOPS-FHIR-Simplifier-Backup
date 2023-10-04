@@ -42,13 +42,13 @@ html, body {
      min-height: 70%;
      position: relative;
      height: auto !important;
-     margin-bottom: -155px;
-     padding-bottom: 155px;
+     margin-bottom: -105px;
+     padding-bottom: 105px;
 }
  body footer {
      background-color: #dde1e4;
      color: #222;
-     height: 155px;
+     height: 105px;
      position: relative;
      padding-top: 40px;
 }
@@ -78,13 +78,13 @@ hr.thickline{
     background-color:#003087;
 }
 
- .tab {
+.tab {
      overflow: hidden;
      border: 1px solid #dde1e4;
      background-color: #dde1e4;
 }
 /* Style the buttons inside the tab */
- .tab button {
+.tab button {
      background-color: inherit;
      float: left;
      border: none;
@@ -135,7 +135,7 @@ hr.thickline{
      color: #fff !important;
 }
 
-//css for simplifier tabs
+/* css for simplifier tabs */
 .cool-tabs .nav-tabs {
      overflow: hidden;
      border: 1px solid #dde1e4;
@@ -206,6 +206,11 @@ table.assets tr td.balloted {
 }
  table.assets th a{
      color: white !important;
+}
+
+
+ tr.wordBreak, td.wordBreak {
+    overflow-wrap: break-word !important;
 }
 
  th.width5 { width: 5%; overflow-wrap: anywhere; }

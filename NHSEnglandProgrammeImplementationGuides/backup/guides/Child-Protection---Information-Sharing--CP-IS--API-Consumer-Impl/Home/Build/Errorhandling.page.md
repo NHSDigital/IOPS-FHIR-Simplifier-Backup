@@ -1,13 +1,14 @@
 ## {{page-title}}
 
-
-This page is used to describe how errors are handled.
+This page describes how errors are handled.
 
 ## Errors
 
 The CP-IS FHIR R4 API will return a {{pagelink:Home/FHIRAssets/AllAssets/Profiles/UKCore-OperationOutcome.page.md}} when an API call is unsuccessful. The below table provides expected errors / validation failures.
 
-E.g. {{pagelink:Home/Examples/Example---Invalid-NHS-Number.page.md}}
+e.g: <a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-consumer-impl/home/examples/use-case---get-careteam.page.md?version=current#error-case">403 Error Operation Outcome</a>
+
+
 
 <br>
 

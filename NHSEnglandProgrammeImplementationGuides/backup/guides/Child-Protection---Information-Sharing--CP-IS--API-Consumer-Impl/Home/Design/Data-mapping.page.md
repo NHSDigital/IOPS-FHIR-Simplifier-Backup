@@ -26,5 +26,5 @@ HL7v3 Child Protection Domain Message Specification data elements are sourced fr
 |    Organisation                    | PractitionerRole.organization.display |
 
 
-A fuller mapping of the HL7v3 message structure to the FHIR Interaction & Resource model is provided on the CP-IS FHIR API Producer Data mapping page to support read and write translation to the underlying HL7v3 data repository.
+A fuller mapping of the HL7v3 message structure to the FHIR Interaction & Resource model is provided on the [CP-IS FHIR API Producer Data mapping page](https://simplifier.net/guide/Child-Protection---Information-Sharing--CP-IS--API-Producer-Impl/Home/Design/Data-mapping.page.md?version=current) to support read and write translation to the underlying HL7v3 data repository.
 
