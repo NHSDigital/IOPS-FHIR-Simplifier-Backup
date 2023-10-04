@@ -78,13 +78,13 @@ hr.thickline{
     background-color:#003087;
 }
 
- .tab {
+.tab {
      overflow: hidden;
      border: 1px solid #dde1e4;
      background-color: #dde1e4;
 }
 /* Style the buttons inside the tab */
- .tab button {
+.tab button {
      background-color: inherit;
      float: left;
      border: none;
@@ -135,7 +135,7 @@ hr.thickline{
      color: #fff !important;
 }
 
-//css for simplifier tabs
+/* css for simplifier tabs */
 .cool-tabs .nav-tabs {
      overflow: hidden;
      border: 1px solid #dde1e4;
@@ -209,6 +209,11 @@ table.assets tr td.balloted {
 }
 
 
+ tr.wordBreak, td.wordBreak {
+    overflow-wrap: break-word !important;
+}
+
+ th.width5 { width: 5%; overflow-wrap: anywhere; }
  th.width05 { width: 5%; overflow-wrap: anywhere; }
  th.width10 { width: 10%; overflow-wrap: anywhere; }
  th.width15 { width: 15%; overflow-wrap: anywhere; }
@@ -231,7 +236,6 @@ table.assets tr td.balloted {
  td.width30 { width: 30%; overflow-wrap: anywhere; }
  td.width35 { width: 35%; overflow-wrap: anywhere; }
  td.width40 { width: 40%; overflow-wrap: anywhere; }
-
 
  th.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
  th.comparison-note { width: 34%; overflow-wrap: anywhere; }
@@ -508,10 +512,11 @@ table.codes thead tr:first-child th.orderable button:hover .sort-icon {
   background-color: #919ea8;
 }
 
+
 /* this part adds an icon after external links, using FontAwesome*/
 a.external:after {
-     font-family: 'Font Awesome 5 Free';
+     font-family: 'FontAwesome';
    font-weight: 900;
-   content: "\f35d";
+   content: "\f08e";
     padding-left: 5px;
 }
