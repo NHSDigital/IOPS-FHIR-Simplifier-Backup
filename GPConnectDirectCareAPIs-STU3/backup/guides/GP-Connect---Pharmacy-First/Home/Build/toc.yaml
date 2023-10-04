@@ -10,8 +10,6 @@
   filename: Mapping-PRSB-headings-to-FHIR
 - name: Tagging payloads with meta.tag
   filename: Tagging-payloads-with-meta.tag
-- name: Patient-facing services and disclosure of information
-  filename: Patient-facing-services-and-disclosure-of-information
 - name: Handling identifiers
   filename: Handling-identifiers
 - name: Handling medications
