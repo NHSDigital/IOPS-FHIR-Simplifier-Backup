@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> The Acknowledgement Framework is early in its development and therefore must NOT be used in any production systems. </div>
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> The Acknowledgement Framework is currently a draft version. Please contact the IOPS team if you are interested to discuss this solution for your use case.</div>
 
 Currently, the Acknowledgement Framework only provides guidance for the Messaging paradigm. However, the plan is to provide guidance and support for the Documents and RESTful paradigms in a future version.
 
