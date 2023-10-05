@@ -1,5 +1,7 @@
 ## {{page-title}}
 
+## Delete once anything usefull has been removed.
+
 ### Overview
 
 This page provides guidance for implementing the Booking and Referral Standard (BaRS) specifically for the referral from a 999 Ambulance Service Trust (AST) to a Clinical Assessment Service (CAS) to validate lower acuity ambulance triage outcomes, typically those mapped to an Ambulance Response Programme (ARP) priority category 3 or 4. It should be used alongside the {{pagelink: design-core, text: BaRS Core implementation guide}} and Payload Definition Library when developing to the standard.

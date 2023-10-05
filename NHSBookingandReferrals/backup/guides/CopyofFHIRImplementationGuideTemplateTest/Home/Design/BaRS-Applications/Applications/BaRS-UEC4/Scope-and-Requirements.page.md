@@ -1,13 +1,18 @@
 ---
-topic: APP3-ScopeAndRequirements
+topic: APP4-ScopeAndRequirements
 ---
+
+ <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This Application is currently under development <hr><p> This is a preview of a developing documentation for information only. It is not intended to be used until the completed v1.0.0 Application is released<p> If you are interested in developing a BaRS compliant solution for these use cases right now, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch</div>
+
+
+
 
 ## {{page-title}}
 
 
 ### Scope Overview
 
-This BaRS Application (application 3) covers only use cases:
+This BaRS Application (application 4) covers only use cases:
 * Validation Requests for 999 ASTs to CAS
 
 
@@ -19,6 +24,12 @@ The payloads and workflow have been designed to support these services. Other {{
 ?????
 
 **Validation Request**
+??????
+
+**Validation Response**
+??????
+
+**Cancel Validation Request**
 ??????
 
 **API-M**
@@ -33,6 +44,21 @@ The payloads and workflow have been designed to support these services. Other {{
 ??????
 
 **Validation Request**
+??????
+
+**Validation Response**
+??????
+
+**Understanding Timings**
+??????
+
+**Flags**
+??????
+
+**Updates**
+?????? Do we need to discuss this? What the current limitations are? 
+
+**Cancel Validation Request**
 ??????
 
 **Contacts** 
