@@ -1,5 +1,5 @@
 ---
-topic: APP3-HowDoesItWork
+topic: APP4-HowDoesItWork
 ---
 
 ## {{page-title}}
@@ -99,16 +99,19 @@ X-Request-Id = <GUID_000001>
 X-Correlation-Id = <GUID_000002>
 ```
 
-### Cancel a Referral
+### Cancel a Validation Request
 
-To cancel a referral this application follows the {{pagelink:design-core, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+?????
+To cancel a validation request this application follows the {{pagelink:design-core, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the validation request to be cancelled, from the validation **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
 The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:design-core, text:standard pattern}}.
 
+?????
 The message definition that defines this payload for this application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
 As a general princple, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed, **should** be include. This is always defined within the relevent message definition.
 
+?????? - is this neeeded for VALIDATION
 If the update-to-cancel is taking place as part of a re-referral routine, once the cancellation is complete, the new referral message can be sent. This step in the workflow would follow the same process as 'Make a referral' detailed above.
 
 In addition the specific workflow parameters that are required are as follows:
