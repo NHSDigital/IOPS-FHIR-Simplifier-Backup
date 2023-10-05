@@ -31,19 +31,18 @@ The patient's NHS Number. This must be a verified NHS Number.
 <br>
 {{render:cpis-get-careteam-producer}}
 <br>
-<br>
 
 | Outcome         | Response                       |
 | ----------- | ------------------------  |
-| Record found       | SearchSet Bundle - {{pagelink:Home/Examples/Example-found.page.md}}|
-| No record found       | SearchSet Bundle - {{pagelink:Home/Examples/Example-not-found.page.md}}|
+| Record found       | <a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-producer-impl/home/examples/use-case---get-careteam.page.md?version=current#success-case">SearchSet Bundle</a> |
+| No record found       | <a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-producer-impl/home/examples/use-case---get-careteam.page.md?version=current#no-record-found-case">SearchSet Bundle</a> |
 | Error or validation failure      | OperationOutcome - {{pagelink:Home/Build/Errorhandling.page.md}}|
 
 <br>
 
 ### Query for AuditEvent information
 
-**Http query **
+**Http query**
 
 **<font color="#00008B">GET</font>** /AuditEvent?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|[nhs-number]
 
@@ -64,13 +63,11 @@ The patient's NHS Number. This must be a verified NHS Number.
 
 <br>
 {{render:cpis-get-auditevent-producer}}
-<br>
+
 <br>
 
 | Outcome         | Response                       |
 | ----------- | ------------------------  |
-| Record found       | SearchSet Bundle - {{pagelink:Home/Examples/Example-found.page.md}}|
-| No record found       | SearchSet Bundle - {{pagelink:Home/Examples/Example-not-found.page.md}}|
-| Error or validation failure      | OperationOutcome - {{pagelink:Home/Build/Errorhandling.page.md}}|
-
-<br>
+| Record found       | <a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-producer-impl/home/examples/use-case---get-auditevent.page.md?version=current#success-case">SearchSet Bundle</a> |
+| No record found       | <a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-producer-impl/home/examples/use-case---get-auditevent.page.md?version=current#no-record-found-case">SearchSet Bundle</a> |
+| Error or validation failure      | OperationOutcome - {{pagelink:Home/Build/Errorhandling.page.md}} |
