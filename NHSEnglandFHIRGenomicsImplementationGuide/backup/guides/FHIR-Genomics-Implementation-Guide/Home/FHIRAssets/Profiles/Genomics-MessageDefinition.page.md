@@ -32,7 +32,7 @@ Definitional resource, for NHS England GMS internal use only.
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
-         Differential from {{link:https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageDefinition}} <br>
+         Differential from {{link:http://hl7.org/fhir/StructureDefinition/MessageDefinition}} <br>
             <br />
             {{tree:https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageDefinition-Genomics, diff}}
         </div>

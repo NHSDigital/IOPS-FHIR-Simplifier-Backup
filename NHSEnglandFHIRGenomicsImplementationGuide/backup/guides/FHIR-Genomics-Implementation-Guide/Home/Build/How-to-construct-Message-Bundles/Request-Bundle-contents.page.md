@@ -9,6 +9,6 @@ The Bundle uses the following resource to carry the related business entity info
 
 The data items and resources used in the Request Bundle are mapped from the Genomics Minimum Dataset ({{pagelink:Home/Design/Clinicalheadings}})
 
-The following diagram indentifies key fhir resources included within a Genetic Testing Request bundle, and how these resources are related.
+The following diagram identifies key fhir resources included within a Genetic Testing Request bundle, and how these resources are related.
 
 {{render:diagrams-gms-test-request-logical-model-v2}}

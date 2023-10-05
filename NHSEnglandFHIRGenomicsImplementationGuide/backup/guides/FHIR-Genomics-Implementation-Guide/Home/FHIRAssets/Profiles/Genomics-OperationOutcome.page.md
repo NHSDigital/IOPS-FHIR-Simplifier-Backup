@@ -4,7 +4,7 @@ The Genomics OperationOutcome is the same as that profiled for the UKCore.
 
 The profile for the UKCore-OperationOutcome is provided below for completeness.
 
-It is expected that all issue codes raised by the Genomic Medicine Service will fall under existing codes boud in the below profile. If further codes are needed, these will be promoted to UK Core for release in a future ballow/sprint
+It is expected that all issue codes raised by the Genomic Medicine Service will fall under existing codes bound in the below profile. If further codes are needed, these will be promoted to UK Core for release in a future ballot/sprint
 
 | Profile url | FHIR Module | Normative Status |
 |--

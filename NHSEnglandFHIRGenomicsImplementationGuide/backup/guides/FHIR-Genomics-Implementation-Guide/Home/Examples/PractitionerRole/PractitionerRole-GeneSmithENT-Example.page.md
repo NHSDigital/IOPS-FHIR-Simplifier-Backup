@@ -21,7 +21,7 @@
 {{xml:PractitionerRole-GeneSmithENT-Example}}
     </div>
     <div id="Tree" role="tabpanel" class="tab-pane">
-{{treePractitionerRole-GeneSmithENT-Example}}
+{{tree:PractitionerRole-GeneSmithENT-Example}}
     </div>
   </div>
 </div>

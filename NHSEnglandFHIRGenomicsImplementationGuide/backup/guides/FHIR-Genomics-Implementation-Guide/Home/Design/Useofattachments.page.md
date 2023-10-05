@@ -10,7 +10,7 @@ Examples of attachments which may be used are:
 
 - PDF copies of patient history and diagnostic reports
 - DICOM or other images included as part of the patient history
-- Variants of Unknown Signficance (VUS) files which may be attached to genomic reports
+- Variants of Unknown Significance (VUS) files which may be attached to genomic reports
 
 It is expected PDFs in messages will be sent within the body of the FHIR message as a base64 encoded string.
 

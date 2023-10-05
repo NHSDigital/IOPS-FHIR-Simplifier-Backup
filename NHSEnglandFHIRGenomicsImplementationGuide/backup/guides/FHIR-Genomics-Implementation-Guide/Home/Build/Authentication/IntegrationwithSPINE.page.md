@@ -29,8 +29,8 @@ The service will have a road map item to explore and integrate with services suc
 
 For creation and update of service requests this should not be necessary as there is an expectation that systems connecting to the test order service will have recently verified these details against the same national services, but there will be scenarios such as superseded NHS numbers and deceased patients which will not be captured if a supplier does not interact with the service when this happens, therefore the service would need to be notified or poll PDS to check for updated NHS numbers or changes to deceased status.
 
-## Proposed Arcnitecture
+## Proposed Architecture
 
 {{render:diagrams-architecture}}
 
-Architectural decisions as well as the low level design for the service can be found on the [Genomic Order Managment NHS Futures pages](https://future.nhs.uk/NHSgenomics/view?objectId=178297445)
+Architectural decisions as well as the low level design for the service can be found on the [Genomic Order Management NHS Futures pages](https://future.nhs.uk/NHSgenomics/view?objectId=178297445)

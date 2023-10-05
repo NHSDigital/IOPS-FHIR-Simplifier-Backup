@@ -2,7 +2,7 @@
 
 For detailing any Condition related information about the proband/consultands within a test order.
 
-It is expected that the information used to populate this resource should be sourced from the requesters EHR system. As such, there is no limit on the amout of detail that can be provided, though at a minimum the code and subject fields should be populated.
+It is expected that the information used to populate this resource should be sourced from the requesters EHR system. As such, there is no limit on the amount of detail that can be provided, though at a minimum the code and subject fields should be populated.
 
 It is also highly preferred if the verificationStatus, onsetDateTime, recordedDate, recorded and abatementDateTime are populated if applicable/known.
 

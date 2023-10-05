@@ -39,12 +39,12 @@ The numbered prefixes in the sequence diagram above translate to the following e
 5. {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-Example.page.md}} 
 6. Same resource as in 5, posted to Home GLH, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-Example.page.md}} 
 7. {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderAccepted-Example.page.md}}
-8. Same resource as in 4, with additional asscession ID and processing information,{{pagelink:Home/Examples/Specimen/Specimen-BloodEDTA-Example.page.md}}
+8. Same resource as in 4, with additional ascession ID and processing information,{{pagelink:Home/Examples/Specimen/Specimen-BloodEDTA-Example.page.md}}
 9. Same resource as in 7, with updated businessStatus, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderHold-Example.page.md}}
 10. Get request for tasks with focus ServiceRequest (elaborated in API CapabilityStatement)
 11. Same resource as in 9, posted to requester, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderHold-Example.page.md}}
 12. {{pagelink:Home/Examples/DiagnosticReport/DiagnosticReport-MichaelJonesReport-Minimal.page.md}}
-13. Same resource as in 9, with updated status and busnessStatus, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderAccepted-Example.page.md}}
+13. Same resource as in 9, with updated status and businessStatus, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderAccepted-Example.page.md}}
 14. Same resource as in 12, posted to requester, {{pagelink:Home/Examples/DiagnosticReport/DiagnosticReport-MichaelJonesReport-Minimal.page.md}}
 15. Same resource as in 2, with updated status to mark the ServiceRequest as filled, {{pagelink:Home/Examples/ServiceRequest/ServiceRequest-SavedTestOrderUpdated-Example.page.md}}
 
@@ -66,7 +66,7 @@ One of the main challenges faced by a requester is the lack of visibility as reg
 
 The diagram below is a demonstration of how test and sample status will interact with end-to-end tasks, in the future-state. 
 
-{{render:test-status-updates}}
+{{render:diagrams-test-status-updates}}
 
 **Note:** The status examples given in the figure above, are unvalidated representations of what might typically be expected of the solution.
 

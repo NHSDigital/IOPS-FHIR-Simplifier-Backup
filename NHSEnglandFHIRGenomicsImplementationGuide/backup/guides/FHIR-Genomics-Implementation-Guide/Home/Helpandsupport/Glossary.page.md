@@ -49,7 +49,7 @@ When describing genetic tests, different regions and professions sometimes use d
 |MDS|Master Data Set, minimum dataset required across the majority of genomic test orders|
 |MDT|Multi-Disciplinary Team, meetings of groups of doctors and specialists from multiple disciplines to help decide the best route of care for a patient|
 |MESH|Message Exchange for Social Care and Health, system which provides the ability to share data directly between health and care organisations and is the nationally recognised mechanism for this method of data sharing.|
-|MNS|Multicast Notification System, proposed system to support broadcast of notifications alonside NEMS|
+|MNS|Multicast Notification System, proposed system to support broadcast of notifications alongside NEMS|
 |NEMS|National Events Management Service, enables the sharing of specific health information about a patient in near real-time. Information is shared in the form of event messages, following a publish and subscribe model and using the NHS Spine.|
 |NGIS|National Genomic Information System, system used by Genomics Labs, commissioned by NHS England from Genomics England Ltd. Genomics England is a processor for the provision of the NGIS, acting on the instructions of NHS England for the Trusts that provide lab services.|
 |NGTP|National Genomic Testing Process, process map developed by the NHS England Genomics Unit for defining the end-to-end genomic testing process|
@@ -64,7 +64,7 @@ When describing genetic tests, different regions and professions sometimes use d
 |PLCM|Patient Level Contract Monitoring, to enable the interchange, in a uniform format, of monthly patient level contract monitoring data between commissioners and providers of healthcare.|
 |PRSB|Professional Records Standard Body, body responsible for setting records standards within the UK|
 |RBAC|Role-Based Access Control, an approach to restricting system access to authorized users|
-|READ|Coded thesaurus of clinical terms, superceeded by SNOMED CT|
+|READ|Coded thesaurus of clinical terms, superseded by SNOMED CT|
 |RESTful|Representational State Transfer, a software architecture that imposes conditions on how an API should work.|
 |RoD|Record of Discussion, form required to record consent discussion for use of WGS data/results in research|
 |SET|IHE Specimen Event Tracking, defining Sample event tracking procedures|
@@ -72,7 +72,7 @@ When describing genetic tests, different regions and professions sometimes use d
 |SPINE|Spine supports the IT infrastructure for health and social care in England, joining together over 44,000 healthcare IT systems in 26,000 organisations|
 |STU2|Second Standard for Trial Use, indicates the standard has been through two balloting cycles|
 |TAT/SLA|Turn-around-time/Service-level-agreement, used to record compliance to national standards for processing of genomic tests|
-|TD|Test Directory, repository of test codes and elegibility criteria for Genomic Tests, managed by NHS England|
+|TD|Test Directory, repository of test codes and eligibility criteria for Genomic Tests, managed by NHS England|
 |UGR|Unified Genomic Record, proposed central repository for genomic related information about a patient|
 |VUS|Variants of Unknown Signficance, variations in a genetic sequence whose association with disease risk and significance to function are unclear| 
 |WGS|Whole Genome Sequencing, laboratory technique in which the entire coding (exon) and non-coding regions of the genome are obtained.|

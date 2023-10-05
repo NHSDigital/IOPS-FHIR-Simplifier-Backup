@@ -21,7 +21,7 @@
 {{xml:PractitionerRole-HazelSmithRenal-Example}}
     </div>
     <div id="Tree" role="tabpanel" class="tab-pane">
-{{treePractitionerRole-HazelSmithRenal-Example}}
+{{tree:PractitionerRole-HazelSmithRenal-Example}}
     </div>
   </div>
 </div>

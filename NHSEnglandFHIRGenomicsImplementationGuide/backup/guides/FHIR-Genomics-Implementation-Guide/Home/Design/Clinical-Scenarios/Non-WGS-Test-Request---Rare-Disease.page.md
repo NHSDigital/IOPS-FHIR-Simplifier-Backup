@@ -38,17 +38,17 @@ Represented in ServiceRequest via ServiceRequest.category:
 
 **Response:**
 
-OperationOutcome with apropriate success/failure codes: {{pagelink:OperationOutcome-Success}}
+OperationOutcome with appropriate success/failure codes: {{pagelink:OperationOutcome-Success}}
 
 ### 4. Requester indicates that sample is going to be collected at a later date
 
 Indicated through absence of Specimen resource in message or absence of ```Specimen.collectedDateTime```/```Specimen.status=unavailable```
 
-### The lab recieves the test request and:
+### The lab receives the test request and:
 
 #### 1. Views the completed test order form
 
-Obtained through GET /ServiceRequest or /GET Task requests (using params on {{pagelink:CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
+Obtained through GET /ServiceRequest or /GET Task requests (using params on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
 
 OR
 

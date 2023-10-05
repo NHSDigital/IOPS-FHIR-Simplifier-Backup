@@ -62,10 +62,10 @@ Mapped to Condition and Observation resources linked to the patient
 |Insulin dose at presentation|MedicationStatement.dosage.doseAndRate.doseQuantity with appropriate medicationCodeableConcept for Insulin and effectivePeriod overlapping Encounter date|RXA-6|Insulin dose at presentation (U/kg/day)|
 |Insulin dose at time of genomic test request|MedicationStatement.dosage.doseAndRate.doseQuantity with appropriate medicationCodeableConcept for Insulin and effectivePeriod overlapping ServiceRequest.authoredOn date|RXA-6|Insulin dose at time of request (U/kg/day)|
 |Is diabetes in remission|Inferred through Condition.clinicalStatus for Diabetes||Has patient's diabetes gone into remission.|
-|Date of diabetes remission|Either inferred though history of changes to Condition resource or Condtion.note|NTE segment attached to PRB|Date patient's diabetes went into remission.|
+|Date of diabetes remission|Either inferred though history of changes to Condition resource or Condition.note|NTE segment attached to PRB|Date patient's diabetes went into remission.|
 |Is diabetes in relapse|Inferred through Condition.clinicalStatus for Diabetes|PRB-14|Has patient's diabetes relapsed.|
-|Date of diabetes relapse|Either inferred though history of changes to Condition resource or Condtion.note||Date of diabetes relapse.|
-|Current exocrine pancreatic treatment|Procedure/MedicationStatment for Conditions with exocrine/pancreatic codes|OBR/RXA segments|Is patient on exocrine pancreatic treatment.|
+|Date of diabetes relapse|Either inferred though history of changes to Condition resource or Condition.note||Date of diabetes relapse.|
+|Current exocrine pancreatic treatment|Procedure/MedicationStatement for Conditions with exocrine/pancreatic codes|OBR/RXA segments|Is patient on exocrine pancreatic treatment.|
 |Exocrine pancreatic treatment start date|MedicationStatement.effectiveDateTime or Procedure.performedDateTime|RXA-3|Date exocrine pancreatic treatment started.|
 |Thyroid gland state|Condition.code with SNOMED code for issue|PRB-3|State of thyroid gland.|
 |Pituitary tumour type|Condition.code with appropriate SNOMED code under 127024001|PRB-3|Pituitary tumour type|
@@ -85,8 +85,8 @@ Mapped to Condition and Observation resources linked to the patient
 |Progeroid features|Condition.code with code 1216939003 or 1220589007|PRB-3|Progeroid features|
 |Severity of hearing loss|Condition.code with appropriate code under 15188001 or Condition.note with code 15188001|PRB-3|Free text regarding hearing loss|
 |Retinal degeneration|Condition.code with appropriate code under 95695004 or Condition.note with code 95695004|PRB-3|Free text regarding retinal degeneration|
-|Risk factors|MedicationStatemnt resources with certain codes **TBC**|RXA-5|Toxic medication - Prematurity (risk factor for hearing loss) e.g. Baby early birth - Ototoxic medication.|
-|Hepatic vs neurological presentation|Condition.code with either Hepatic or Nuerological SNOMED codes||Outcome of either Hepatic or Neurological.|
+|Risk factors|MedicationStatement resources with certain codes **TBC**|RXA-5|Toxic medication - Prematurity (risk factor for hearing loss) e.g. Baby early birth - Ototoxic medication.|
+|Hepatic vs neurological presentation|Condition.code with either Hepatic or Neurological SNOMED codes||Outcome of either Hepatic or Neurological.|
 |Suspected inborn error type(s)|Condition.code with code under 86095007 and verificationStatus provisional/unconfirmed|PRB-3|Suspected inborn error type(s)|
 |Abnormal infection history site|**TBC** Condition.bodySite for relevant infection entries|**TBC**|Abnormal infection history Site|
 |Abnormal infection history site organism|**TBC** Condition.bodySite for relevant infection entries with reference to specific body structures|**TBC**|Abnormal infection history Site organism|

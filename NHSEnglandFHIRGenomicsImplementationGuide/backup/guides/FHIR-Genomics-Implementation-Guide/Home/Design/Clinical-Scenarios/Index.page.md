@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-Genomic tests can be categorised by clinical area (Heam/Onc, Neurology etc.), WGS vs. Non-WGS, whether the test is singleton/duo/trio and whether the test will be analysing/interpreting existing data. 
+Genomic tests can be categorised by clinical area (Haem/Onc, Neurology etc.), WGS vs. Non-WGS, whether the test is singleton/duo/trio and whether the test will be analysing/interpreting existing data. 
 
 Clinical Area will be inferred through the CI/CITT code being requested.
 

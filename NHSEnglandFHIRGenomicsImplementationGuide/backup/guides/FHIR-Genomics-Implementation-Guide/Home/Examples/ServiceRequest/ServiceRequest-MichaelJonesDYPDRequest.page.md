@@ -15,13 +15,13 @@
     
   <div class="tab-content snippet">
     <div id="JSON" role="tabpanel" class="tab-pane active">
-{{json:UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example}}
+{{json:ServiceRequest/UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example}}
     </div>
     <div id="XML" role="tabpanel" class="tab-pane">
-{{xml:UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example}}
+{{xml:ServiceRequest/UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example}}
     </div>
     <div id="Tree" role="tabpanel" class="tab-pane">
-{{tree:UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example}}
+{{tree:ServiceRequest/UKCore-ServiceRequest-MichaelJonesDYPDRequest-Example}}
     </div>
   </div>
 </div>
