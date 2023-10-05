@@ -100,7 +100,10 @@
             var backToTopButton = document.getElementById("back-to-top");
 
             // When the user scrolls down 100px from the top of the document, show the button
-            window.onscroll = function () { showTopButton() };
+            window.onscroll = function () { 
+                showTopButton();
+                scrollProfileSideBar();
+            };
 
             function showTopButton() {
                 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -124,6 +127,22 @@
                     var heightShortage = $(document).height() - bottomOfFooter;
                     if (heightShortage < 0) heightShortage = 0;
                     $('footer').css('margin-top', heightShortage);
+                }
+            }
+            function scrollProfileSideBar() {
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    if (hasSDH1[0].getBoundingClientRect().top < 0) {
+                        var amountToMove=hasSDH1[0].getBoundingClientRect().top * -1;
+                        $("div.col-md-6").css({
+                            "top": amountToMove + 20 + "px"
+                        });
+                    } else {
+                        $("div.col-md-6").css({
+                             "top": "0"
+                        });
+                    }
                 }
             }
 
@@ -1100,7 +1119,7 @@
                 addCodesSortButton();
                 wrapSideBar();
                 pageInIframe();
-                fixWebAccessibility();
+                //fixWebAccessibility();
                 updateFooterPosition();
             });
         </script>
