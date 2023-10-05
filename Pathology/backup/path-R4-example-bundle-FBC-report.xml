@@ -160,7 +160,7 @@
             <ServiceRequest>
                 <id value="1c38d507-9ad7-4b49-ba91-7da204842cac" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
                 </meta>
                 <identifier>
                     <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
@@ -201,7 +201,7 @@
             <DiagnosticReport>
                 <id value="35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
                 </meta>
                 <identifier>
                     <system value="http://Y8J7D-pathlab001.com/report" />
@@ -282,7 +282,7 @@
 				<!-- Test group Observation for Full Blood Count -->
                 <id value="ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -371,7 +371,7 @@
 				<!-- White blood cell count in blood -->
                 <id value="f8c185fc-0993-4b80-9d33-4c9ae11c3afe" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -428,7 +428,7 @@
 				<!-- Red blood cell count -->
                 <id value="78afe41f-4689-41a2-b10d-351a991b261a" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -485,7 +485,7 @@
 				<!-- Haemoglobin mass concentration in blood -->
                 <id value="b7849f25-3c44-4542-805f-ba769b7cfe04" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -542,7 +542,7 @@
 				<!-- Haematocrit volume fraction of blood -->
                 <id value="b483a0bf-c332-4dde-b606-ec29aab33583" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -599,7 +599,7 @@
 				<!-- Erythrocytes MCV (mean corpuscular volume) in blood -->
                 <id value="9e44a75d-e676-4497-aeb3-da72a08a3641" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -656,7 +656,7 @@
 				<!-- MCH - Mean corpuscular haemoglobin -->
                 <id value="ba423cce-bf8c-440c-8061-086055a1799b" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -713,7 +713,7 @@
 				<!-- MCHC - Mean corpuscular haemoglobin concentration -->
                 <id value="af52170f-763a-40a6-9363-dc58cd72602e" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -770,7 +770,7 @@
 				<!-- Platelet count in blood -->
                 <id value="298306aa-4a5e-4442-8f60-9153c19c6333" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -827,7 +827,7 @@
 				<!-- Neutrophil count in blood -->
                 <id value="69d08add-5ab8-46a3-be08-fb15e550da75" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -884,7 +884,7 @@
 				<!-- Lymphocyte count in blood -->
                 <id value="d5995ac0-55d8-4f2f-9058-6235a13fc1fe" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -941,7 +941,7 @@
 				<!-- Monocyte count in blood -->
                 <id value="42d1c079-777a-4878-b568-af6f297dbecb" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -998,7 +998,7 @@
 				<!-- Eosinophil count in blood -->
                 <id value="56f9a606-221b-462b-b134-154c72db9c66" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -1055,7 +1055,7 @@
 				<!-- Basophil count in blood -->
                 <id value="d719524b-993c-455c-9c18-36e3dfe6f71e" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />

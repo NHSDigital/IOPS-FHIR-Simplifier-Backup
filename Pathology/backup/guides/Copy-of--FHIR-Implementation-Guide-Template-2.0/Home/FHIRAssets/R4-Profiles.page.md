@@ -4,6 +4,8 @@ topic: FHIRAssetsR4Profiles
 ## R4 Profiles
 The R4 profiles that are referenced by this specification are listed below. Each profile is documented using the format described in {{pagelink:ProfileDescriptions}}.
 
+**Note:** The profiles are derived from the [UK Core Implementation Guide STU2 Release for Ballot]( https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home?version=1.1.3) which is currently under review. The profiles are therefore subject to change.
+
 * {{pagelink:R4Bundle}}
 * {{pagelink:R4DiagnosticReport}}
 * {{pagelink:R4MessageHeader}}

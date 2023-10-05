@@ -10,7 +10,7 @@ Used to represent the following (where applicable):
 * the organisation that produced a pathology test report e.g. a pathology laboratory
 
 ### Related Links
-* STU3 Resource: [Organization](http://hl7.org/fhir/STU3/organization.html)<br>
+* STU3 Resource: [Organization](http://hl7.org/fhir/STU3/organization.html)
 * STU3 CareConnect Profile: [CareConnect-Organization-1](https://simplifier.net/HL7FHIRCareConnectBaselineforSTU3/CareConnect-Organization-1)
 
 ### Profile Views
@@ -65,7 +65,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="http://hl7.org/fhir/stu3/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>CareConnect-Organization-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</code></td>
+            <td>The canonical URL for the <code>CareConnect-Organization-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</code></td>
         </tr>
         <tr>
             <td>extension (mainLocation)</td>

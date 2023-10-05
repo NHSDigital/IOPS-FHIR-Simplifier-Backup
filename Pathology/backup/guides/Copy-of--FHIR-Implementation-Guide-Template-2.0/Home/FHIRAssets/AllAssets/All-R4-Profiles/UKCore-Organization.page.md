@@ -10,7 +10,7 @@ Used to represent the following (where applicable):
 * the organisation that produced a pathology test report e.g. a pathology laboratory
 
 ### Related Links
-* R4 Resource: [Organization]( https://hl7.org/fhir/R4/organization.html)<br>
+* R4 Resource: [Organization]( https://hl7.org/fhir/R4/organization.html)
 * R4 UK Core Profile: [UKCore-Organization](https://simplifier.net/hl7fhirukcorer4/ukcore-organization)
 
 ### Profile Views
@@ -65,7 +65,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>UKCore-Organization</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization</code></td>
+            <td>The canonical URL for the <code>UKCore-Organization</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization</code></td>
         </tr>
         <tr>
             <td>extension (mainLocation)</td>

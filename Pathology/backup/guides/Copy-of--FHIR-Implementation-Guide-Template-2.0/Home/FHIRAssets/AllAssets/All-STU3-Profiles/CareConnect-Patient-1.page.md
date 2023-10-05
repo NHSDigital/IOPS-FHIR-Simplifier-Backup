@@ -7,7 +7,7 @@ topic: STU3Patient
 Demographics and other administrative information about an individual. In most cases the subject of a pathology test request and/or test report is a `Patient` but it could be a `Group`, `Device` or `Location`.
 
 ### Related Links
-* STU3 Resource: [Patient](http://hl7.org/fhir/STU3/patient.html)<br>
+* STU3 Resource: [Patient](http://hl7.org/fhir/STU3/patient.html)
 * STU3 CareConnect Profile: [CareConnect-Patient-1](https://simplifier.net/HL7FHIRCareConnectBaselineforSTU3/CareConnect-Patient-1)
 
 ### Profile Views
@@ -62,7 +62,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="http://hl7.org/fhir/stu3/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>CareConnect-Patient-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</code></td>
+            <td>The canonical URL for the <code>CareConnect-Patient-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</code></td>
         </tr>
         <tr>
             <td>extension (ethnicCategory)</td>

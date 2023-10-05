@@ -13,7 +13,7 @@ A set of related tests, for example a Full Blood Count. Test groups are often re
 Refer to the {{pagelink:STU3ObservationTestResult}} profile definition and the design guidance for {{pagelink:DesignRelatedTests}} for further information.
 
 ### Related Links
-* STU3 Resource: [Observation](http://hl7.org/fhir/STU3/observation.html)<br>
+* STU3 Resource: [Observation](http://hl7.org/fhir/STU3/observation.html)
 * STU3 CareConnect Profile: [CareConnect-Observation-1](https://simplifier.net/HL7FHIRCareConnectBaselineforSTU3/CareConnect-Observation-1)
 
 ### Profile Views
@@ -68,7 +68,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="http://hl7.org/fhir/stu3/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>CareConnect-Observation-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1</code></td>
+            <td>The canonical URL for the <code>CareConnect-Observation-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1</code></td>
         </tr>
         <tr>
             <td>identifier</td>

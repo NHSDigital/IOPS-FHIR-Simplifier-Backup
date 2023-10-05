@@ -160,7 +160,7 @@
             <ServiceRequest>
                 <id value="1c38d507-9ad7-4b49-ba91-7da204842cac" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
                 </meta>
                 <identifier>
                     <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
@@ -236,7 +236,7 @@
             <DiagnosticReport>
                 <id value="35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
                 </meta>
                 <identifier>
                     <system value="http://Y8J7D-pathlab001.com/report" />
@@ -285,7 +285,7 @@
 				<!-- Microscopy results group -->	
 				<id value="bd867909-49ca-4a4b-b02f-162790b6800f" />
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122" />
@@ -335,7 +335,7 @@
 				<!-- Casts in urine -->
                 <id value="17ec651c-1b6f-43e9-9033-cbb49dbac3db" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -379,7 +379,7 @@
 				<!-- White blood cell count in urine -->
                 <id value="3dc8d5d8-90ef-485c-ad67-d2e3c83ed83f" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -423,7 +423,7 @@
 				<!-- Red blood cell count in urine -->
                 <id value="fce26593-20ee-45b6-b805-7eb7d0f0a3fa" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -474,7 +474,7 @@
 				<!-- Epithelial cells in urine -->
                 <id value="a4b0fa1f-8679-45bb-82a2-85e4e1bd519a" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -518,7 +518,7 @@
 				<!-- Staphylococcus aureus - culture and sensitivity results group -->	
 				<id value="70af0ca7-a77a-4daa-8aa2-1740433b1c3e" />
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122" />
@@ -560,7 +560,7 @@
 				<!-- Staphylococcus aureus - culture result -->
                 <id value="25ab7b5f-a888-4928-8195-e4153f5f909b" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -604,7 +604,7 @@
 				<!-- Staphylococcus aureus - sensitivities group -->	
 				<id value="329c8c3f-461f-4b61-b93d-374d354d0c98" />
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122" />
@@ -650,7 +650,7 @@
 				<!-- Staphylococcus aureus - sensitivity result - flucloxacillin -->
                 <id value="e3d50c0a-59c7-4269-b1a0-311b41a8af3c" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -694,7 +694,7 @@
 				<!-- Staphylococcus aureus - sensitivity result - trimethoprim -->
                 <id value="69c37610-5272-48f8-8e35-462d0ee1d541" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -738,7 +738,7 @@
 				<!-- Staphylococcus aureus - sensitivity result - nitrofurantoin -->
                 <id value="2138deb6-cc0e-44ba-becf-ce2538817fa1" />
                 <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
                 </meta>
                 <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />

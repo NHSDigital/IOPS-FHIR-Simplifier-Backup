@@ -11,7 +11,7 @@ Test results and test groups are defined as <code>Observations</code> and are re
 For information on how test results and test groups are represented, refer to the profile descriptions for {{pagelink:STU3ObservationTestResult}} and {{pagelink:STU3ObservationTestGroup}}.
 
 ### Related Links
-* STU3 Resource: [DiagnosticReport](http://hl7.org/fhir/STU3/diagnosticreport.html)<br>
+* STU3 Resource: [DiagnosticReport](http://hl7.org/fhir/STU3/diagnosticreport.html)
 * STU3 CareConnect Profile: [CareConnect-DiagnosticReport-1](https://simplifier.net/HL7FHIRCareConnectBaselineforSTU3/CareConnect-DiagnosticReport-1)
 
 ### Profile Views
@@ -66,7 +66,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1<code></td>
             <td>Mandatory</td>
             <td><a href="http://hl7.org/fhir/stu3/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>CareConnect-DiagnosticReport-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1</code></td>
+            <td>The canonical URL for the <code>CareConnect-DiagnosticReport-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1</code></td>
         </tr>
         <tr>
             <td>identifier</td>

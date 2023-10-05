@@ -7,7 +7,7 @@ topic: STU3Bundle
 A container for a collection of resources. Used to group the set of resources that comprise a pathology related message. 
 
 ### Related Links
-* STU3 Resource: [Bundle](http://hl7.org/fhir/STU3/bundle.html)<br>
+* STU3 Resource: [Bundle](http://hl7.org/fhir/STU3/bundle.html)
 * STU3 ITK Profile: [ITK-Message-Bundle-1](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1)
 
 ### Profile Views
@@ -62,7 +62,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="http://hl7.org/fhir/stu3/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>ITK-Message-Bundle-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1</code></td>
+            <td>The canonical URL for the <code>ITK-Message-Bundle-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1</code></td>
         </tr>
             <td>identifier</td>
             <td>1..1</td>

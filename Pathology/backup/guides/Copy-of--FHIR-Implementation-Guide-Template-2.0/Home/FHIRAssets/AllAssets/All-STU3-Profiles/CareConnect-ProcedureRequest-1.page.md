@@ -11,7 +11,7 @@ The associated test report is defined as a <code>DiagnosticReport</code> and is 
 **Note:** <code>ProcedureRequest</code> was replaced by <code>ServiceRequest</code> in FHIR R4. Refer to {{pagelink:R4ServiceRequest}} for further information.
 
 ### Related Links
-* STU3 Resource: [ProcedureRequest](http://hl7.org/fhir/STU3/procedurerequest.html)<br>
+* STU3 Resource: [ProcedureRequest](http://hl7.org/fhir/STU3/procedurerequest.html)
 * STU3 CareConnect Profile: [CareConnect-ProcedureRequest-1](https://simplifier.net/HL7FHIRCareConnectBaselineforSTU3/CareConnect-ProcedureRequest-1)
 
 ### Profile Views
@@ -66,7 +66,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="http://hl7.org/fhir/stu3/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>CareConnect-ProcedureRequest-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1</code></td>
+            <td>The canonical URL for the <code>CareConnect-ProcedureRequest-1</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1</code></td>
         </tr>
         <tr>
             <td>identifier</td>

@@ -7,7 +7,7 @@ topic: R4MessageHeader
 The header for a message exchange that is either requesting or responding to an action.
 
 ### Related Links
-* R4 Resource: [MessageHeader](https://hl7.org/fhir/R4/messageheader.html)<br>
+* R4 Resource: [MessageHeader](https://hl7.org/fhir/R4/messageheader.html)
 * R4 UK Core Profile: [UKCore-MessageHeader](https://simplifier.net/hl7fhirukcorer4/ukcore-messageheader)
 
 ### Profile Views
@@ -62,7 +62,7 @@ The following table describes additional conformance rules and constraints that 
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-            <td>The URL for the <code>UKCore-MessageHeader</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader</code></td>
+            <td>The canonical URL for the <code>UKCore-MessageHeader</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader</code></td>
         </tr>
         <tr>
             <td>extension (messageHeaderInstruction)</td>
