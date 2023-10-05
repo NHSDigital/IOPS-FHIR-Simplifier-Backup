@@ -2,7 +2,7 @@
 
 The Genomics Subscription is currently pending Clinical and Technical Assurance of the base UKCore resource. Once this profile becomes active in UKCore its suitability for use and need for profiling within Genomics will be assessed. 
 
-The profile for the NHSDigital/England Subsciption is provided below for completeness.
+The profile for the NHSDigital/England Subscription is provided below for completeness.
 
 In the Alpha build of the Genomic Medicine Service, MESH/email will be used as the primary notification procedure though a FHIR native solution is being investigated.
 

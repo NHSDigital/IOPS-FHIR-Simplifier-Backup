@@ -23,10 +23,10 @@ Mapped to ServiceRequest, extensions are still in review. CI and CITT codes for 
 |Test request - Reason for reanalysis|Additional ServiceRequest.reasonCode/reasonReference elements|OBR-13 segment linked to ORC|The reason for a genomic test.|
 |Test request - Detail of reason for reanalysis|ServiceRequest.supportingInfo elements|NTE segments linked to OBR segment for reanalysis reason|The detail associated to the reason reanalysis has been requested.|
 |Test request - Type of reanalysis|ServiceRequest.orderDetail|Additional NTE segments attached to OBR|The type of reanalysis which has been requested.|
-|Test request - DNA storage information|ServiceRequest.orderDetail|Additional NTE segments attached to OBR|If the reason for testng is DNA storage, this captures further detail.|
+|Test request - DNA storage information|ServiceRequest.orderDetail|Additional NTE segments attached to OBR|If the reason for testing is DNA storage, this captures further detail.|
 |Test request - Patient set to be tested|N/A - Determined through number of ServiceRequests in the test order|N/A - determined through number of ORC segments within OML^O21 message|Confirmation if the test is a singleton, duo or trio.|
 |Test request - Count of patients to be tested|N/A - Determined through number of Patients referenced in ServiceRequests in test order|N/A - determined through number of PID segments referenced from ORC segments within OML^O21 message|Count of patients to be tested.|
-|Test request - Date report required by|ServiceRequest.occurenceDateTime|OBR-8|The date a completed genomic report is required by.|
+|Test request - Date report required by|ServiceRequest.occurrenceDateTime|OBR-8|The date a completed genomic report is required by.|
 |Test request - Further information|ServiceRequest.supportingInfo|Additional segments attached to ORC/OBR|Further information regarding the test request.|
 
 <!--

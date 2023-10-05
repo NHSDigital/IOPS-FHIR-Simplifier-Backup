@@ -114,7 +114,7 @@ The reason why the update took place. If the codes provided by HL7 are not granu
                     "display": "treatment"
                 }
             ],
-            "text": "Test innappropriate for patient"
+            "text": "Test inappropriate for patient"
         }
     ],
 ```

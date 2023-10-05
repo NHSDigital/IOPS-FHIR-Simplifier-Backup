@@ -24,7 +24,7 @@ There are many possible variations and exceptions to this basic process, includi
 - The type of Requesting Organisation (e.g. primary care, secondary care, community) and the role of the Requesting HCP.
 - The type of care that the patient is receiving e.g. in-patient, out-patient
 - The type and number of required tests.
-- Patient consenting for sharing their genomic data for reasearch purposes.
+- Patient consenting for sharing their genomic data for research purposes.
 - The type and number of required specimens. Depending on the requested tests, a mix of specimen types may be required e.g. blood and biopsy.
 - The organisation and HCP responsible for collecting the specimen and the location, timing and method of collection. In some cases, the Specimen Collecting Organisation and/or HCP may differ from the Requesting Organisation / HCP. For example, in the scenario where a patient is referred by their GP to attend a haematology clinic at a hospital.
 - The method used to transport the specimen(s) to the laboratory.

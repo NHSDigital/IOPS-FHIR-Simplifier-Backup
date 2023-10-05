@@ -225,7 +225,7 @@ For the purposes of Genomic Test Ordering, the doNotPerform field MUST not be us
 
 <a name="code"></a>
 #### code
-Code SHOULD contain the CI or CITT Test Directory code, currently availble at https://www.england.nhs.uk/publication/national-genomic-test-directories/. There is currently no CodeSystem or queryable API for retrieving codes but work to address this is underway within the NHS England Genomics Unit.
+Code SHOULD contain the CI or CITT Test Directory code, currently available at https://www.england.nhs.uk/publication/national-genomic-test-directories/. There is currently no CodeSystem or queryable API for retrieving codes but work to address this is underway within the NHS England Genomics Unit.
 ```json
 "code": {
         "coding":  [

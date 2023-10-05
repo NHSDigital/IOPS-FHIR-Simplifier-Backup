@@ -41,7 +41,7 @@ In the future, support for the distribution of structured reports will be made a
 
 This section details the decisions and rationale behind the design of the Genomic Medicine Service.
 
-{{pagelink:Home/Design/Designoverview.page.md}} provides an overview of the current state of the Genomic Testing Process and how this has been translated to an electornic process. 
+{{pagelink:Home/Design/Designoverview.page.md}} provides an overview of the current state of the Genomic Testing Process and how this has been translated to an electronic process. 
 
 {{pagelink:Home/Design/Current-State-vs-Future-State.page.md}} describes the intended future state of electronic test order messaging and updates.
 

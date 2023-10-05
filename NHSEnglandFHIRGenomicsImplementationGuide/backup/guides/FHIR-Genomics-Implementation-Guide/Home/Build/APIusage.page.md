@@ -46,6 +46,6 @@ For minor updates to the UK Core FHIR R4 standard the changes should be non-brea
 ### Major Changes
 For more significant changes such as a standard or a new major version of the FHIR specification which contains breaking changes, each resource will be assessed to determine the significance of the change and plan accordingly.
 
-The service will most likely need to support both the existing version and new version with a migration plan and a plan to deprecate the old api version.
+The service will most likely need to support both the existing version and new version with a migration plan and a plan to deprecate the old API version.
 
 Some internal transformation between versions may be possible and desirable, as long as transformation introduces no additional clinical risk. Transformation is desirable when there are significant benefits from decoupling supplier migration, with the aim of preventing loss of access to old or new data during the migration process and to reduce complexity and cost on the supplier development side, which filters back to the purchasing NHS services and commissioners.

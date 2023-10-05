@@ -2,7 +2,7 @@
 
 The full end-to-end process, including alternative flows, have been documented in the National Genomic Testing Process, available on the [NHS Futures site](https://future.nhs.uk/connect.ti/NHSgenomics/view?objectId=157008581).
 
-The dotted lines in the NGTP diagram indicate messages between organizations (within scope for the Genomics FHIR specification). These messages have been detailed below, alongside the resource types needed to represent the request:
+The dotted lines in the NGTP diagram indicate messages between organisations (within scope for the Genomics FHIR specification). These messages have been detailed below, alongside the resource types needed to represent the request:
 
 **1.01** Create Test Request (As NGTD)
 * Initial test order message bundle, including ServiceRequest
@@ -44,7 +44,7 @@ The dotted lines in the NGTP diagram indicate messages between organizations (wi
 * Additional ServiceRequest test order transaction bundle based on original request, marked as reflex-order 
 
 **2.19, 5.11.1** Distribute report
-* DiagnoticReport test result transaction bundle, sent to central service, forwarded to reporting address
+* DiagnosticReport test result transaction bundle, sent to central service, forwarded to reporting address
 
 ## Replacement and updates
 
