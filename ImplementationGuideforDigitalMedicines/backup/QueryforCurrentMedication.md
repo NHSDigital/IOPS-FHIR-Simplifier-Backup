@@ -23,31 +23,32 @@ Applicable FHIR resources: `MedicationStatement`, and optionally `MedicationRequ
 
 ### Definition of 'Current' Medication
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
+<!--<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
     <strong>IMPORTANT:</strong> A definition of what is deemed 'current' has been a challenge for healthcare IT for many years. This implementation guidance only provides a suggested approach. Until a national standard a published, accepted and proven, this guidance is of experimental status.
+</div>-->
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
+    <strong>NEW:</strong> The September 2023 FCI publication for <a href="https://fci.org.uk/resource-report/rendering-of-a-consolidated-medications-record.html">Rendering of a Consoloated Medications Record</a>, includes a definition of "current medication" within Appendix A.
 </div>
 
-Suggested Criteria:
-- Medication where `MedicationStatement.effectiveDateTime` or `MedicationStatement.effectivePeriod.start` is in the past 12 months.
-- Medication prescribed where `MedicationRequest.authoredOn` is in the past 12 months and the `intent` is `order`.
-- Medication supplied/dispensed where `MedicationDispense.whenPrepared` or `MedicationDispense.whenHandedOver` is in the past 12 months.
-- Resources where `status` is `active` or `complete`.
+A summarised version of the FCI definition is below with references to data items within the FHIR MedicationStatement resource:
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>NOTE:</strong> A period of 12 months is suggested in this guidance for the age of medication records deemed to be 'current'. Existing implementations across different types of clinical system are known to be using different algorithms, such as 6, 9 or 12 months. 
-</div>
+**Acute (single issue) Medication is current if:**
+- A prescription has been issued with an end of medication period date set (`MedicationStatement.effectivePeriod.end`) but the end date for the medication period has not yet passed.
+- If a prescription has been issued within the last 2 years (`MedicationStatement.effectiveDateTime` or `.effectivePeriod.start`), but with no end date.
 
-### Implementation Options
+**Repeat Medication is current if:**
+- There is no end date set (`MedicationStatement.effectivePeriod.end`) for the medication period.
+- The medication period end date(`MedicationStatement.effectivePeriod.end`) is on or after the index date (e.g., today).
+- And in all cases, the authorised date (`MedicationStatement.effectiveDateTime` or `.effectivePeriod.start`) or last issued date (`MedicationStatement.extension:medicationStatementLastIssueDate`) is within the last two years (whichever is later).
 
-#### Option: **Where is 'current' determined?**
+#### Where is 'current' determined?
 
-There are three architectural options for where 'current' medication is determined:
+There are two architectural options for where 'current' medication is determined:
 
-1. By the ICS / shared record via an end-point to return only current medication 
-2. By the consuming system, first by querying for a subset of medication records from the ICS / shared record, then applying further logic to determine what is 'current'
-3. By the consuming system, querying for all medication records, then applying further logic to determine what is 'current'.
+1. By the shared record(s) end-point returning 'current' medication. 
+2. By the consuming system, querying for medication records from available shared record(s) then applying logic to determine what is 'current'.
 
-For option 1, a query to an end-point to return only current medication for a given patient may look like this;
+For option 1, this would mean all consuming systems see the same 'current' medication. A consuming can always query for all medication if required. A query to an end-point to return only current medication for a given patient may look like this;
 
 ```
 GET [base]/currentmedication?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|{NHS_Number}
@@ -63,7 +64,7 @@ GET https://myfhirserver.net/currentmedication?patient:identifier=https://fhir.n
     <strong>NOTE:</strong> Technically the above is not as per the FHIR standard as there is no 'current medication' operation defined within FHIR.
 </div>
 
-For Options 2 and 3, the FHIR standard includes various ways to [search](https://hl7.org/fhir/search.html) for resources. The following search parameters for these resources defined within the FHIR standard could be useful when querying for current medication.
+For Option 2, this would mean each consuming system would deturmine what is deemded 'current', ideally based on the FCI publication, but would allow different systems in different care settings to use their own definition of 'current'. The FHIR standard includes various ways to [search](https://hl7.org/fhir/search.html) for resources. The following search parameters for these resources defined within the FHIR standard could be useful when querying for current medication.
 
 **MedicationStatement**
 - subject[patient].identifier
@@ -99,7 +100,7 @@ For example;
 GET [base]/MedicationDispense?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|123543254&status=active,complete&whenPrepared=ge2020-05-11
 ```
 
-#### Option: **What type FHIR resources are returned?**
+#### What type FHIR resources are returned?
 
 There are four architectural options for which FHIR resources are returned:
 
