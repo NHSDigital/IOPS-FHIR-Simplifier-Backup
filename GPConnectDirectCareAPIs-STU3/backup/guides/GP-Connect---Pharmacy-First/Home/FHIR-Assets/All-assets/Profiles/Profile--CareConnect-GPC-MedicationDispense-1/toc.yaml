@@ -4,3 +4,5 @@
   filename: Related-links.page.md
 - name: medicationCodeableConcept
   filename: medicationCodeableConcept.page.md
+- name: type
+  filename: type.page.md
