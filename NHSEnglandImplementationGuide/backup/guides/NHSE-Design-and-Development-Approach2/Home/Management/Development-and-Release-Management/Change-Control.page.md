@@ -6,29 +6,6 @@ This section details a change control process for use with the NHS England stand
 
 {{render:NHSEChangeControl}} 
 
-<plantuml>
-start
-group [Level 1 Change Process]
-group [Requestor/Customer]
-if (Is the request within scope ?) then (Existing guidance issue identified)
-  :Create simplifier tickets against relevant IG;
-  :Interoperability email autocreated from Simplifier;
-else (New project or change the existing project guidance?
-Project) 
-:Provide advice and request NWR from Requester;
-if (Is NWR Recieved ?) then  (Yes)
-  :NWR Process;  
-else (No)
-stop
-endif
-endif
-:NHSE build and Release scheduling;
-:Design and Build Process;
-:NHSE Assurance Process;
-stop
-</plantuml>
-
-
 ### Change Control Roles
 
 - **Requester** - Any individual or team requesting a change to an existing FHIR asset in the NHS England IG or requesting a new FHIR asset to be added to the NHS England IG.
