@@ -20,6 +20,3 @@ These guides are designed to be used in conjunction with the documentation for {
 | ----------------------------------------------------------------------------|--------------------------------------------------------------- | --------------- |  
 | {{pagelink:app-uec1, text:Booking and Referrals into UEC (Application 1)}}  | <p>111 - ED <br>111 - UTC <br>CAS - ED <br>CAS - UTC <br> </p> | 1.0.1           |
 | {{pagelink:app-uec2, text: Booking and Referrals into UEC (Application 2)}} | <p>111 Online - ED <br>111 Online - UTC <br> <p>               | 1.0.1           |
-<!--| {{pagelink:app-uec3, text: Booking and Referrals into UEC (Application 3)}} |                                                                | 1.0.0           |
-| {{pagelink:app-uec4, text: Booking and Referrals into UEC (Application 4)}} |                                                                | 1.0.0           |
-| {{pagelink:app-pharm1, text: Referrals into Pharmacy (Application 1)}}            | <p>Primary Care - Pharmacy (CPCS)<br>111 - Pharmacy <br> <p>   | 1.0.0-alpha     |-->
