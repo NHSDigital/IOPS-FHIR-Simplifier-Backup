@@ -625,7 +625,7 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <td><br></td>
 </tr>
 <tr>
-<td><h5 id="G13">Implementation Guide</h5></td>
+<td><h5 id="IG">Implementation Guide</h5></td>
 <td>An implementation guide is a set of rules about how HL7 FHIR® resources are used (or should be used) to solve a particular problem, with associated documentation to support and clarify the usage.</td>
 <td><br></td>
 </tr>
@@ -661,7 +661,7 @@ An ISMS typically addresses employee behaviour and processes as well as data and
 <td><br></td>
 </tr>
 <tr>
-<td><h5 id="G7">INTEROPen</h5></td>
+<td><h5 id="INTEROPen">INTEROPen</h5></td>
 <td>INTEROPen is an OPEN collaboration of individuals, industry, standards organisations and health and care providers, who have agreed to work together to accelerate the development of open standards for interoperability in the health and social care sector.</td>
 <td><br></td>
 </tr>
@@ -1333,6 +1333,11 @@ For example, a baby assigned an NHS number at birth that relates to the wrong mo
 <td><h5 id="UCUM">UCUM</h5></td>
 <td>Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business.</td>
 <td><a href="https://ucum.org/" target="_blank">UCUM website</a></td>
+</tr>
+<tr>
+<td><h5 id="UKCore">UK Core</h5></td>
+<td>An Implementation Guide that provides a 4 nation approach to FHIR implementation guidance, that has applicability across jurisdictions and care settings.</td>
+<td><br></td>
 </tr>
 <tr>
 <td>UML</td>
