@@ -18,5 +18,5 @@ These guides are designed to be used in conjunction with the documentation for {
 
 | Application                                                                 |  Use Cases                                                     | Current Release |
 | ----------------------------------------------------------------------------|--------------------------------------------------------------- | --------------- |  
-| {{pagelink:app-uec1, text:Booking and Referrals into UEC (Application 1)}}  | <p>111 - ED <br>111 - UTC <br>CAS - ED <br>CAS - UTC <br> </p> | 1.0.1           |
-| {{pagelink:app-uec2, text: Booking and Referrals into UEC (Application 2)}} | <p>111 Online - ED <br>111 Online - UTC <br> <p>               | 1.0.1           |
+| {{pagelink:application1, text:Booking and Referrals into UEC (Application 1)}}  | <p>111 - ED <br>111 - UTC <br>CAS - ED <br>CAS - UTC <br> </p> | 1.0.1           |
+| {{pagelink:application2, text: Booking and Referrals into UEC (Application 2)}} | <p>111 Online - ED <br>111 Online - UTC <br> <p>               | 1.0.1           |

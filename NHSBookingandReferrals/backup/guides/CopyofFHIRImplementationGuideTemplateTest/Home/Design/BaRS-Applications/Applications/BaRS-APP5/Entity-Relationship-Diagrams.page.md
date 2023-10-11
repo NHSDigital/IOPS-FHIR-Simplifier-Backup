@@ -1,5 +1,5 @@
 ---
-topic: BaRS-APP5
+topic: APP5-EntityRelationshipDiagram
 ---
 
 ## {{page-title}}

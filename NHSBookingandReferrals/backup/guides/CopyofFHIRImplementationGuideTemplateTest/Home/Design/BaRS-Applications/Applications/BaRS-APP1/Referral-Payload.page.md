@@ -1,5 +1,5 @@
 ---
-topic: uec1-referralpayload
+topic: APP1-ReferralPayload
 ---
 
 ### Payload for requesting a referral, using Service Request

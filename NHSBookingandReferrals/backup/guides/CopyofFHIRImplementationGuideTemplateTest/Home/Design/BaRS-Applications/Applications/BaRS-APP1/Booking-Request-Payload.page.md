@@ -1,5 +1,5 @@
 ---
-topic: uec1-bookingpayload
+topic: APP1-BookingPayload
 ---
 
 ### Payload for making a booking, using a Booking Request
