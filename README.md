@@ -10,41 +10,20 @@ A Simplifer Project to back up. The name of the project will be referred to as [
 
 ## To add a new project:
 
-- Copy the template folder, renaming after the Simplifier Project ensuring all whitespaces are removed, e.g. HL7FHIRUKCoreR4. This will be referred to as [ProjectFolderName].
-- Within the folder amend the README.md with a link to the project
-- Copy the Github Action .github/workflows/Backup.yml, and prefixing the project name to the filename, e.g. HL7FHIRUKCoreR4-Backup.yml
-- Within the yml file change the following:
-    - line 1:
-        - [Project Name] Back Up
-    - line 27:
-        - [ProjectFolderName]
-    - line 31:
-        - secrets.[PROJECTNAME]_SIMPLIFIER_USER
+- Copy the Project name from the Simplifier url. e.g. http://simplifier.net/<projectname>, e.g. hl7fhirukcore.
+- Under `Settings -> Secrets and variables -> Actions` Create a new variable and add the following:
+  - Name: <PROJECTNAME> from the url above, but capitalised and special characters removed (-,&, etc.) e.g. HL7FHIRUKCORER4:
+  - Value: <projectname>
+- Copy the Github Action .github/workflows/z_Template-Backup.yml, and amend the name to <projectname> e.g. hl7fhirukcore.yml
+- Within the file find and replace all `REPLACE_WITH_VARIABLE` with the variable name created above, e.g. HL7FHIRUKCORER4
      
-If Projects outside HL7 and NHS England Organization, the following will alos need to be amended.
+If Projects outside HL7 and NHS England Organization, the following will also need amending.
     - line 31: 
         - secrets.[PROJECTNAME]_SIMPLIFIER_PWD
         - secrets.[PROJECTNAME]_SIMPLIFIER_ADDRESS
 
-## Schedule to run
-
-The action is set to run hourly by default in the [action file](.github/workflows/backup.yml#L6).  
-
-To help with calculating the time correctly see [Cronitor - a cron job calculator](https://crontab.guru/)
-Further info on using a [scheduled cron job](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) in an action.
-
-## Respository secrets and variables required
-
-Under `Settings -> Secrets and variables -> Actions` add the following, where [PROJECTNAME] is the name given to the folder above, capitalised, e.g. HL7FHIRUKCORER4:
-
-### Variables to add:
-
-* [PROJECTNAME]_SIMPLIFIER_ADDRESS
-  * Address of project - e.g. `https://api.simplifier.net/<project>/zip`
-  * See Firely docs on project zip using the [Simplifier API](https://docs.fire.ly/projects/Simplifier/features/api.html#project-zip-api)
- 
 ### Secrets to add:
-If Projects outside HL7 and NHS England Organization, the following will alos need to be added.
+If Projects outside HL7 and NHS England Organization, the following will need to be added under `Settings -> Secrets and variables -> Actions`.
 * [PROJECTNAME]_SIMPLIFIER_USER  
   * Simplifier username that has access to project.  
 * [PROJECTNAME]_SIMPLIFIER_PWD  
@@ -53,6 +32,17 @@ If Projects outside HL7 and NHS England Organization, the following will alos ne
 Docs on [creating variables for a respository](https://docs.github.com/en/actions/learn-github-actions/variables#creating-configuration-variables-for-a-repository).
 Docs on [creating secrets for a respository](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
 
+## Schedule to run
+
+The action is set to run hourly by default in the [action file](.github/workflows/backup.yml#L6).  
+
+To help with calculating the time correctly see [Cronitor - a cron job calculator](https://crontab.guru/)
+Further info on using a [scheduled cron job](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) in an action.
+
+
+### API request:
+* See Firely docs on project zip using the [Simplifier API](https://docs.fire.ly/projects/Simplifier/features/api.html#project-zip-api)
+ 
 ## Configuration of GITHUB_TOKEN
 
 GITHUB_TOKEN has been setup with the default permissions granted to run workflows in this repository, for more details see [GitHub docs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#setting-the-permissions-of-the-github_token-for-your-repository).
