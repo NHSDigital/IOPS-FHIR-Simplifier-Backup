@@ -2,6 +2,8 @@
   filename: Index.guide.md
 - name: About BaRS
   filename: About-BaRS
+- name: Core
+  filename: Core
 - name: Design
   filename: Design
 - name: Build

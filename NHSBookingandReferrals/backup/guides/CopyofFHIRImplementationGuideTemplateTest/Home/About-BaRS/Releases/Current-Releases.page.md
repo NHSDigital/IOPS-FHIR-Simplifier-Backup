@@ -6,8 +6,10 @@ Implementation Guide   | 1.2.0   | v1      | Live     | Current Release | 11/09/
 {{pagelink:design-core, text:BaRS Core}}              | 1.1.0   | v1      | Live     | Current Release | 30/06/2023   | Stable     |{{pagelink:trn-core, text: BaRS Core Change Log}}  
 [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0)    | 1.1.0   | v1      | Live     | Current Release | 01/04/2023   | Stable     |{{pagelink:trn-api}}
 {{pagelink: build-testing, text: TKW}}  | 1.0.0   | v1      | Live     | Current Release | 01/04/2023   | Stable     |{{pagelink:trn-tkw}} 
-{{pagelink:app-uec1, text:BaRS-APP1}}   | 1.0.1   | v1      | Live     | Current Release | 11/05/2023   | Stable     |{{pagelink:trn-uec1,text:BaRS APP1 Change Log}}
-{{pagelink:app-uec2, text:BaRS-APP2}}   | 1.0.1   | v1      | Live     | Current Release | 11/05/2023   | Stable     |{{pagelink:trn-uec2,text:BaRS APP2 Change Log}}
+{{pagelink:application1, text:BaRS-APP1}}   | 1.0.1   | v1      | Live     | Current Release | 11/05/2023   | Stable     |{{pagelink:trn-app1,text:BaRS APP1 Change Log}}
+{{pagelink:application2, text:BaRS-APP2}}   | 1.0.1   | v1      | Live     | Current Release | 11/05/2023   | Stable     |{{pagelink:trn-app2,text:BaRS APP2 Change Log}}
+{{pagelink:application3, text:BaRS-APP3}}   | 1.0.0-beta   | beta      | Live     | Current Release | 11/09/????   | pre-release |{{pagelink:trn-app3,text:BaRS APP3 Change Log}}
+{{pagelink:application4, text:BaRS-APP4}}   | 1.0.0-beta   | beta      | Live     | Current Release | 11/09/????   | pre-release |{{pagelink:trn-app4,text:BaRS APP4 Change Log}}
 {{pagelink:application5, text:BaRS-APP5}}   | 1.0.0-beta   | beta      | Live     | Current Release | 11/09/2023   | pre-release |{{pagelink:trn-app5,text:BaRS APP5 Change Log}}
 
 

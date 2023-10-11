@@ -6,9 +6,9 @@
   filename: How-does-it-work.page.md
 - name: Payloads
   filename: Payloads.page.md
-- name: CAD-CAD Referral Payload
-  filename: CAD-CAD-Referral-Payload.page.md
-- name: CAD-CAD Response Payload
-  filename: CAD-CAD-Response-Payload.page.md
+- name: Referral Payload
+  filename: Referral-Payload.page.md
+- name: Response Payload
+  filename: Response-Payload.page.md
 - name: Entity Relationship Diagrams
   filename: Entity-Relationship-Diagrams.page.md
