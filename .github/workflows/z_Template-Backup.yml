@@ -1,9 +1,8 @@
-name: [_Template] Back up simplifier project
-
+name: REPLACE_WITH_VARIABLE Backup
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 16 * */1 *'
 
 jobs:
   build:
@@ -14,12 +13,12 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
-        run: sleep $((RANDOM %30))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
-
       - name: Set today
         id: today
-        run: echo "TODAY=$(date)" >> $GITHUB_OUTPUT
+        run: |
+          echo "TODAY=$(date)" >> $GITHUB_OUTPUT
+          echo $github.action
+          echo ${{ github.action }}
 
       - name: Set branch name
         id: branch-name
@@ -27,11 +26,12 @@ jobs:
 
       - name: Download and commit simplifier source code
         run: |
-          cd [ProjectFolderName]
+          if [[ ! -e /${{ vars.REPLACE_WITH_VARIABLE }}/README.md ]]; then     mkdir -p ${{ vars.REPLACE_WITH_VARIABLE }}; echo -e "# Current FHIR IG Template\nThis folder contains the Simplifier Project [${{ vars.REPLACE_WITH_VARIABLE }}](https://simplifier.net/${{ vars.REPLACE_WITH_VARIABLE }})\n\n## Last Updated\nUpdated at: $(date)\n" > ${{ vars.REPLACE_WITH_VARIABLE }}/README.md; fi
+          cd ${{ vars.REPLACE_WITH_VARIABLE }}
           rm -rf backup
           mkdir -p backup
           cd backup
-          wget --user ${{secrets.SIMPLIFIER_USER}} --password ${{secrets.SIMPLIFIER_PWD}} ${{ vars.SIMPLIFIER_ADDRESS }} -O export.zip
+          wget --user ${{secrets.SIMPLIFIER_USER}} --password ${{secrets.SIMPLIFIER_PWD}} https://api.simplifier.net/${{ vars.REPLACE_WITH_VARIABLE }}/zip -O export.zip
           unzip export.zip -x settings.style
           mv export.zip ..
           cd ..
@@ -41,10 +41,10 @@ jobs:
           echo "" >> README1.md
           echo "Updated at: $(date)" >> README1.md
           mv README1.md README.md 
-  
+     
       - name: Create branch and commit
         run: |
-          git config --global user.name "Workflows.Backup"
+          git config --global user.name "${{ vars.REPLACE_WITH_VARIABLE }}.Backup"
           git config --global user.email "username@users.noreply.github.com"
           git checkout -b ${{ steps.branch-name.outputs.BRANCH }}
           git add -A
@@ -76,7 +76,7 @@ jobs:
             });
 
       - name: Wait for PR to complete
-        run: sleep 10s
+        run: sleep 1m
 
       - name: "Merge pull request"
         uses: "actions/github-script@v6"
