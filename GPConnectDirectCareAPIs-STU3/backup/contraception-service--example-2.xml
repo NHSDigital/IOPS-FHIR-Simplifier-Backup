@@ -2,7 +2,7 @@
   <id value="contraception-service--example-2" />
   <meta>
     <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
-    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
   </meta>
   <identifier>
     <system value="https://fhir.provider.example/identifier/bundle" />
@@ -97,10 +97,10 @@
           <resource>
             <Composition>
               <id value="1a3de819-11de-4f8d-a483-2a5fd5f4e78c" />
-                    <meta>
-          <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
-          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1" />
-        </meta>
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1" />
+              </meta>
               <identifier>
                 <system value="https://fhir.provider.example/identifier/composition" />
                 <value value="1a3de819-11de-4f8d-a483-2a5fd5f4e78c" />
@@ -206,7 +206,7 @@
               <participant>
                 <type>
                   <coding>
-                    <system value="https://fhir.nhs.uk/STU3/ValueSet/GPConnect-ParticipantType-1" />
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/GPConnect-ParticipantType-1" />
                     <code value="REC" />
                   </coding>
                   <text value="recorder" />
