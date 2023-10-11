@@ -47,7 +47,7 @@ View further information about <a href="https://www.hl7.org/fhir/R4/domainresour
         <td>0..1</td>
         <td>1..1</td>
         <td>uri</td>
-       <td>In NHS England the format is the following, with the Extension name in PascalCase:<br/><br/><code>https://fhir.nhs.uk/ValueSet/England-[Name]</i></code>.</td>
+       <td>In NHS England the format is the following, with the Extension name in PascalCase:<br/><br/><code>https://fhir.nhs.uk/England/ValueSet/England-[Name]</i></code>.</td>
     </tr>
    <tbody>
     <tr>
@@ -103,14 +103,14 @@ View further information about <a href="https://www.hl7.org/fhir/R4/domainresour
         <td>0..1</td>
         <td>1..1</td>
         <td>string</td>
-          <td>For all NHS England Profiles, where the base URL is <code>https://fhir.nhs.uk</code>, the name of the publisher will be NHS England.</td>
+          <td>For all NHS England Profiles, where the base URL is <code>https://fhir.nhs.uk/England</code>, the name of the publisher will be NHS England.</td>
     </tr>
         <tr>
         <td>contact</td>
         <td>0..*</td>
         <td>1..*</td>
         <td>ContactDetail</td>
-        <td>See the {{pagelink:Publisher--Contact---Copyright}} for details of how this SHALL be populated for all NHS England ValueSets, where the base URL is <code> https://fhir.nhs.uk/</code>.</td>
+        <td>See the {{pagelink:Publisher--Contact---Copyright}} for details of how this SHALL be populated for all NHS England ValueSets, where the base URL is <code> https://fhir.nhs.uk/England</code>.</td>
     </tr>
     <tr>
         <td>description</td>

@@ -258,10 +258,6 @@ The maturity level scoring is based on the likelihood that the profile will subj
    </tbody>
 </table>
 
-## Sitemap
-
-{{index:root}}
-
 <br><br><br>
 
 <div markdown="span" class="alert alert-warning" role="alert"><h4 id="Licence"><i class="fas fa-gavel"></i> Licensing and Publisher</h4>
