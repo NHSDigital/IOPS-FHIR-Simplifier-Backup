@@ -1,0 +1,69 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="urn:uuid:c96c137d-3089-4165-8a2b-f9518d745a64" />
+	<type value="message" />
+	<entry>
+		<fullUrl value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
+		<resource>
+			<MessageHeader>
+				<meta>
+					<versionId value="1" />
+				</meta>
+				<id value="urn:uuid:7c451367-d637-4fe7-9eab-140e743b88b3" />
+				<extension url="http://hl7.org/fhir/StructureDefinition/messageheader-response-request">
+					<valueCode value="never" />
+				</extension>
+				<eventCoding>
+					<system value="https://fhir.nhs.uk/CodeSystem/message-event" />
+					<code value="patient" />
+					<display value="Patient Demographics" />
+				</eventCoding>
+				<destination>
+					<name value="NHS England GP Registration System" />
+					<endpoint value="https://gpregistration.digital.nhs.net/api" />
+					<receiver>
+						<reference value="urn:uuid:0971b53c-7b9e-4d6e-afd2-e9408c5c3a6c" />
+						<display value="NHS England GP Registration System" />
+					</receiver>
+				</destination>
+				<source>
+					<name value="Leeds GP Family Practice EMIS System" />
+					<version value="0.0.5" />
+					<contact>
+						<system value="email" />
+						<value value="helpdeskemail@emis.net" />
+					</contact>
+					<endpoint value="https://emis.leedsgpfamilypractice.com/api/patient/register" />
+				</source>
+				<response>
+					<identifier value="6f4256fa-cd14-4f96-899e-008643d84ff8" />
+					<code value="ok" />
+					<details>
+						<reference value="urn:uuid:6b7617b1-a988-41bc-967a-0a8ba0fa36f1" />
+					</details>
+				</response>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome" />
+		<resource>
+			<OperationOutcome>
+				<meta>
+					<versionId value="3" />
+				</meta>
+				<id value="urn:uuid:8283e341-67ae-48e7-b3ae-2c6a0a824b2c" />
+				<issue>
+					<severity value="information" />
+					<code value="informational" />
+					<details>
+						<coding>
+							<system value="https://fhir.nhs.uk/CodeSystem/AcknowledgementFrameworkResponseCode" />
+							<code value="BUSINESS_SUCCESS" />
+							<display value="Business request successfully actioned" />
+						</coding>
+					</details>
+				</issue>
+			</OperationOutcome>
+		</resource>
+	</entry>
+</Bundle>

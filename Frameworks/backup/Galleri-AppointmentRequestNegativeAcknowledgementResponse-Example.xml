@@ -1,0 +1,51 @@
+<Bundle xmlns='http://hl7.org/fhir'>
+  <type value='message'/>
+  <entry>
+    <fullUrl value='https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader'/>
+    <resource>
+      <MessageHeader>
+        <eventCoding>
+          <system value='https://fhir.nhs.uk/CodeSystem/message-event'/>
+          <code value='notification'/>
+          <display value='Event Notification'/>
+        </eventCoding>
+        <destination>
+          <name value='GRAIL (UK)'/>
+          <endpoint value='https://uk.grail.com/api'/>
+          <receiver>
+            <reference value='urn:uuid:ff09cccc-2c9b-4238-91d2-66fa6ee845c3'/>
+            <display value='GRAIL (UK)'/>
+          </receiver>
+        </destination>
+        <source>
+          <name value='NHS England'/>
+          <version value='0.0.5'/>
+          <contact>
+            <system value='email'/>
+            <value value='helpdesk@england.nhs.net'/>
+          </contact>
+          <endpoint value='https://gps.digital.nhs.uk/api'/>
+        </source>
+        <response>
+          <identifier value='6f4256fa-cd14-4f96-899e-008643d84ff8'/>
+          <code value='fatal-error'/>
+          <details>
+            <reference value='urn:uuid:6e7b1dbb-77d2-4ddd-ae0d-e4862a306c1c'/>
+          </details>
+        </response>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value='https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome'/>
+    <resource>
+      <OperationOutcome>
+        <issue>
+          <severity value='fatal'/>
+          <code value='structure'/>
+          <diagnostics value='Unable to parse XML content.'/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+</Bundle>
