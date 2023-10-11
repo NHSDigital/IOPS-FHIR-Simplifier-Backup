@@ -16,10 +16,10 @@ The filename SHALL be human readable with a maximum character limit of 64 digits
 
 **url property**
 The url format to be used for these assets is as below, where <samp>[Name]</samp> is in PascalCase: 
-- **Profile:** <code>https://fhir.nhs.uk/StructureDefinition/England-[Name]</code>
-- **Extension** <code>https://fhir.nhs.uk/StructureDefinition/Extension-England-[Name]</code>
-- **ValueSet:** <code>https://fhir.nhs.uk/ValueSet/England-[Name]</code>
-- **CodeSystem:** <code>https://fhir.nhs.uk/CodeSystem/England-[Name]</code>
+- **Profile:** <code>https://fhir.nhs.uk/England/StructureDefinition/England-[Name]</code>
+- **Extension** <code>https://fhir.nhs.uk/England/StructureDefinition/Extension-England-[Name]</code>
+- **ValueSet:** <code>https://fhir.nhs.uk/England/ValueSet/England-[Name]</code>
+- **CodeSystem:** <code>https://fhir.nhs.uk/England/CodeSystem/England-[Name]</code>
 - **NamingSystem:** <code>https://fhir.nhs.uk/Id/England-[Name]</code>
 
 

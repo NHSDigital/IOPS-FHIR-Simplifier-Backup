@@ -47,7 +47,7 @@ View further information about <a href="https://www.hl7.org/fhir/R4/structuredef
         <td>0..1</td>
         <td>1..1</td>
         <td>uri</td>
-        <td>In the NHS England IG the format is the following, with the FHIRAssetName and Specialism in PascalCase:<br/><br/><code>https://fhir.nhs.uk/StructureDefinition/England-[FHIRAssetName]</i></code>.</td>
+        <td>In the NHS England IG the format is the following, with the FHIRAssetName and Specialism in PascalCase:<br/><br/><code>https://fhir.nhs.uk/England/StructureDefinition/England-[FHIRAssetName]</i></code>.</td>
     </tr>
     <tr>
         <td>identifier</td>
@@ -102,14 +102,14 @@ View further information about <a href="https://www.hl7.org/fhir/R4/structuredef
         <td>0..1</td>
         <td>1..1</td>
         <td>string</td>
-        <td>For all NHS England Profiles, where the base URL is <code>https://fhir.nhs.uk</code>, the name of the publisher will be NHS England.</td>
+        <td>For all NHS England Profiles, where the base URL is <code>https://fhir.nhs.uk/England</code>, the name of the publisher will be NHS England.</td>
     </tr>
     <tr>
         <td>contact</td>
         <td>0..*</td>
         <td>1..*</td>
         <td>ContactDetail</td>
-        <td>See {{pagelink:Publisher--Contact---Copyright}} for details of how this SHALL be populated for all NHS England Profiles, where the base URL is <code> https://fhir.nhs.uk/</code>.</td>
+        <td>See {{pagelink:Publisher--Contact---Copyright}} for details of how this SHALL be populated for all NHS England Profiles, where the base URL is <code> https://fhir.nhs.uk/England</code>.</td>
     </tr>
     <tr>
         <td>description</td>

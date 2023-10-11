@@ -10,22 +10,22 @@
 
 <div id="HTML View" class="tabcontent" style="display:block">
   <h3>HTML View</h3>
-{{render:https://fhir.nhs.uk/ValueSet/England-ChildProtectionPlan}}
+{{render:https://fhir.nhs.uk/England/ValueSet/England-ChildProtectionPlan}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.nhs.uk/ValueSet/England-ChildProtectionPlan}}
+{{table:https://fhir.nhs.uk/England/ValueSet/England-ChildProtectionPlan}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
- {{xml:https://fhir.nhs.uk/ValueSet/England-ChildProtectionPlan}}
+ {{xml:https://fhir.nhs.uk/England/ValueSet/England-ChildProtectionPlan}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
- {{json:https://fhir.nhs.uk/ValueSet/England-ChildProtectionPlan}}
+ {{json:https://fhir.nhs.uk/England/ValueSet/England-ChildProtectionPlan}}
 </div>
 
 ---

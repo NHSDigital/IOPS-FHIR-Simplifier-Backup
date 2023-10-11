@@ -47,7 +47,7 @@ View further information about <a href="https://www.hl7.org/fhir/R4/domainresour
         <td>0..1</td>
         <td>1..1</td>
         <td>uri</td>
-        <td>In NHS England the format is the following, with the Extension name in PascalCase:<br/><br/><code>https://fhir.nhs.uk/CodeSystem/England-[Name]</code>.</td>
+        <td>In NHS England the format is the following, with the Extension name in PascalCase:<br/><br/><code>https://fhir.nhs.uk/England/CodeSystem/England-[Name]</code>.</td>
     </tr>
     <tr>
         <td>identifier</td>
@@ -101,14 +101,14 @@ View further information about <a href="https://www.hl7.org/fhir/R4/domainresour
         <td>0..1</td>
         <td>1..1</td>
         <td>string</td>
-        <td>For all NHS England CodeSystems, where the base URL is <code>https://fhir.nhs.uk</code>, this will be <code>NHS England</code>.</td>
+        <td>For all NHS England CodeSystems, where the base URL is <code>https://fhir.nhs.uk/England</code>, this will be <code>NHS England</code>.</td>
     </tr>
     <tr>
         <td>contact</td>
         <td>0..*</td>
         <td>1..*</td>
         <td>ContactDetail</td>
-        <td>Contact details for the publisher.<br/><br/>See the {{pagelink:Publisher--Contact---Copyright}} for details of how this SHALL be populated for all NHS England CodeSystems, where the base URL is <code> https://fhir.nhs.uk/</code>.</td>
+        <td>Contact details for the publisher.<br/><br/>See the {{pagelink:Publisher--Contact---Copyright}} for details of how this SHALL be populated for all NHS England CodeSystems, where the base URL is <code> https://fhir.nhs.uk/England</code>.</td>
     </tr>
     <tr>
         <td>description</td>
