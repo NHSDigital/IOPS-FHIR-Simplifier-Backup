@@ -1,0 +1,187 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="urn:uuid:6f4256fa-cd14-4f96-899e-008643d84ff8" />
+	<type value="message" />
+	<entry>
+		<fullUrl value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
+		<resource>
+			<MessageHeader>
+				<meta>
+					<versionId value="1" />
+				</meta>
+				<id value="urn:uuid:772c0a20-f72f-45f0-abf0-c1c667c52bc8" />
+				<extension url="http://hl7.org/fhir/StructureDefinition/messageheader-response-request">
+					<valueCode value="always" />
+				</extension>
+				<eventCoding>
+					<system value="https://fhir.nhs.uk/CodeSystem/message-event" />
+					<code value="patient" />
+					<display value="Patient Demographics" />
+				</eventCoding>
+				<destination>
+					<name value="Leeds GP Family Practice EMIS System" />
+					<endpoint value="https://emis.leedsgpfamilypractice.com/api/patient/register" />
+					<receiver>
+						<reference value="urn:uuid:fb1d6acf-3ab0-4433-a425-c0b6f054779c" />
+						<display value="Leeds GP Family Practice" />
+					</receiver>
+				</destination>
+				<source>
+					<name value="NHSD GP Registration System" />
+					<version value="0.0.1" />
+					<contact>
+						<system value="email" />
+						<value value="helpdeskemail@nhs.net" />
+					</contact>
+					<endpoint value="https://gpregistration.digital.nhs.net/api" />
+				</source>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+		<resource>
+			<Patient>
+				<meta>
+					<versionId value="3" />
+				</meta>
+				<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+					<valueAddress>
+						<country value="FRA" />
+					</valueAddress>
+				</extension>
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex">
+					<valueCode value="F" />
+				</extension>
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland" />
+							<code value="N" />
+							<display value="Black or Black British - African" />
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<extension url="http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired">
+					<valueBoolean value="true" />
+				</extension>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/nhs-number" />
+					<value value="9999999999" />
+				</identifier>
+				<name>
+					<use value="usual" />
+					<family value="Bryson" />
+					<given value="Bill" />
+					<given value="Bob" />
+				</name>
+				<name>
+					<use value="old" />
+					<family value="Smith" />
+					<given value="Bill" />
+					<given value="Bob" />
+				</name>
+				<telecom>
+					<system value="email" />
+					<value value="bill@bryson.com" />
+					<rank value="1" />
+				</telecom>
+				<telecom>
+					<system value="phone" />
+					<value value="0161123456" />
+					<rank value="2" />
+				</telecom>
+				<telecom>
+					<system value="phone" />
+					<value value="07819194455" />
+					<rank value="3" />
+				</telecom>
+				<gender value="male" />
+				<birthDate value="1990-01-01" />
+				<address>
+					<use value="home" />
+					<type value="physical" />
+					<line value="Flat 1" />
+					<line value="28 Ashbrook Close" />
+					<city value="Ossett" />
+					<postalCode value="WF5 9DU" />
+				</address>
+				<contact>
+					<relationship>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+							<code value="EP" />
+							<display value="Emergency contact person" />
+						</coding>
+					</relationship>
+					<name>
+						<use value="usual" />
+						<family value="Doe" />
+						<given value="John" />
+					</name>
+					<telecom>
+						<system value="phone" />
+						<value value="07123476234" />
+						<rank value="1" />
+					</telecom>
+				</contact>
+				<communication>
+					<language>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
+							<code value="q4" />
+							<display value="British Sign Language" />
+						</coding>
+					</language>
+				</communication>
+				<generalPractitioner>
+					<reference value="urn:uuid:f21e741d-2f77-44e0-bfdd-cb4278fe93a6" />
+					<display value="GP surgery" />
+				</generalPractitioner>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+		<resource>
+			<Organization>
+				<meta>
+					<versionId value="4" />
+				</meta>
+				<id value="urn:uuid:f21e741d-2f77-44e0-bfdd-cb4278fe93a6" />
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+					<value value="AB123" />
+				</identifier>
+				<name value="GP surgery" />
+				<address>
+					<line>Flat 1</line>
+					<line>28 Ashbrook Close</line>
+					<city>Ossett</city>
+					<postalCode>WF5 9DU</postalCode>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+		<entry>
+		<fullUrl value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+		<resource>
+			<Organization>
+				<meta>
+					<versionId value="5" />
+				</meta>
+				<id value="urn:uuid:fb1d6acf-3ab0-4433-a425-c0b6f054779c" />
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+					<value value="AB555" />
+				</identifier>
+				<name value="Leeds GP family practice" />
+				<address>
+					<line>Floor 5</line>
+					<line>10 Bond Street</line>
+					<city>Ossett</city>
+					<postalCode>WF2 5BA</postalCode>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+</Bundle>
