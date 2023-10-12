@@ -1,64 +1,119 @@
-## StructureDefinition-UKCore-DocumentReference
+---
+topic: Profile-DocumentReference
+subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference
+---
 
-Defines the UK Core constraints and extensions on the DocumentReference resource.
+# StructureDefinition-UKCore-DocumentReference
 
-# Profile Purpose #
-This profile supports a reference to a document of any kind for any purpose. Provides metadata about the document so that the document can be discovered and managed. The scope of a document is any serialised object with a mime-type, so includes formal patient centric documents (CDA), clinical notes, scanned paper, and non-patient specific documents like policy text.
+<div id="transpose">
+@```
+from
+	StructureDefinition
+where
+	name = 'UKCoreDocumentReference'
+select
+	Canonical_URL: url,
+  Current_Version: version,
+  Last_Updated: date,
+	Description: description
+```
+</div>
+<br>
+@```
+from
+	StructureDefinition
+where
+	name = 'UKCoreDocumentReference'
+select
+	Profile_Purpose: purpose
+```
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
-  <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+<nocheck>
+<div class="tab fhirTree">
+ <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
    <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
    <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
   <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
+  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
 </div>
 
-<div id="Snapshot View" class="tabcontent" style="display:block">
-  <h3>Snapshot View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference, snapshot}}
-</div>
-
-<div id="Differential View" class="tabcontent">
-  <h3>Differential View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference, diff}}
-</div>
-
-<div id="Hybrid View" class="tabcontent">
-  <h3>Hybrid View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference, hybrid}}
+<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
+{{tree, buttons}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference, snapshot}}
+{{table}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference, snapshot}}
+{{xml}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference, snapshot}}
+{{json}}
 </div>
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
+  <b>RA Record consent</b> - An example to illustrate a...<br/>
+{{pagelink:Example-UKCore-DocumentReference-CarePlanReportPDF}}
 
-<b>Document Reference Care Plan Report PDF</b> - An example to illustrate a document reference care plan report PDF.  
-</br>
-{{pagelink: ExampleUKCore-DocumentReference-CarePlanReportPDF}}
 </div>
+
+<div id="Usage" class="tabcontent">
+  <h3>Usage</h3>
+  This Profile has the following derived profiles:<br>
+<span id="usage">
+@```
+  from
+	StructureDefinition
+select id,baseDefinition,status
+  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference'
+  and status = 'active'
+```
+</span>
+<br><br>
+  This Profile is referenced in the following Extensions: <br>
+<span id="usage">
+@```
+from
+	StructureDefinition
+  where type='Extension' and status = 'active'
+ select id,
+	for differential.element
+	select
+	join type {targetProfile}
+	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference'
+```
+</span>
+<br><br>
+  This Profile is referenced in the following Profiles: <br>
+<span id="usage">
+@```
+from
+	StructureDefinition
+  where type !='Extension' and status = 'active'
+ select id,
+	for differential.element
+	select
+	join type {targetProfile}
+	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference'
+```
+</span>
+</div>
+</nocheck>
+
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core DocumentReference profile:
 
-- Text will be added when available
-- Text will be added when available
+- Query for a...
+- Record or update a...
 
----
-## Profile specific implementation guidance: ##
+<hr class="thickline">
 
+## Profile Specific Implementation Guidance: ##

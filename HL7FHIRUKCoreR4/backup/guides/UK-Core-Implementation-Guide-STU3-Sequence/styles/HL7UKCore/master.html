@@ -55,7 +55,7 @@
                <i class="fa fa-info-circle"></i>
                 <b>Please note:</b>
                 <ul>
-                    <li>This version of the UK Core is for C&TSprint 7 Review.</li>
+                    <li>This version of the UK Core is for C&TA Sprint 7 Review.</li>
                     <li>This version is not suitable for implementation. Other versions are available on the <a href="https://simplifier.net/guide/ukcoreversionhistory?version=current">UK Core Version History Guide</a></li>
                     <li>Please follow the guidance on the <a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ContactUs.page.md?version=current">Contact Us page</a> if you need any assistance.</li>
                     <li>A summary of changes is available on the <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU3-Sequence/index.page.md?version=current">STU3 Sequence Change Log</a></li>
@@ -408,8 +408,10 @@
                     var extensionsDiv = $('div#preview-content div#extensions');
                     var extensionsDivUC = $('div#preview-content div#Extensions');
                     var mvcDiv = $('div#preview-content div#Minimum-Viable-Content');
-                    var bindingsDiv = $('div#preview-content div#Bindings');
-                    var constraintsDiv = $('div#preview-content div#Constraints');
+                    var bindingsDiv = $('div#preview-content div#bindings');
+                    var bindingsDivUC = $('div#preview-content div#Bindings');
+                    var constraintsDiv = $('div#preview-content div#constraints');
+                    var constraintsDivUC = $('div#preview-content div#Constraints');
                     var checkForHR;
                     var addToDiv;
 
@@ -417,9 +419,15 @@
                     if (constraintsDiv != undefined && constraintsDiv.length > 0) {
                         checkForHR = constraintsDiv.children('hr');
                         addToDiv = constraintsDiv;
+                    } else if (constraintsDivUC != undefined && constraintsDivUC.length > 0) {
+                        checkForHR = constraintsDivUC.children('hr');
+                        addToDiv = constraintsDivUC;
                     } else if (bindingsDiv != undefined && bindingsDiv.length > 0) {
                         checkForHR = bindingsDiv.children('hr');
                         addToDiv = bindingsDiv;
+                    } else if (bindingsDivUC != undefined && bindingsDivUC.length > 0) {
+                        checkForHR = bindingsDivUC.children('hr');
+                        addToDiv = bindingsDivUC;
                     } else if (extensionsDiv != undefined && extensionsDiv.length > 0) {
                         checkForHR = extensionsDiv.children('hr');
                         addToDiv = extensionsDiv;

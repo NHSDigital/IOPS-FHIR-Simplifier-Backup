@@ -1,65 +1,119 @@
-## StructureDefinition-UKCore-Device
+---
+topic: Profile-Device
+subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device
+---
 
-Defines the UK Core constraints and extensions on the Device resource for the minimal set of data to query and retrieve information relating to a type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.
+# StructureDefinition-UKCore-Device
 
-# Profile Purpose #
-The purpose of this profile is to hold information about a type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device. It is referenced by other resources for recording which device performed an action such as a procedure or an observation, referenced when prescribing and dispensing devices for patient use or for ordering supplies, and used to record and transmit Unique Device Identifier (UDI) information about a device such as a patient's implant.
+<div id="transpose">
+@```
+from
+	StructureDefinition
+where
+	name = 'UKCoreDevice'
+select
+	Canonical_URL: url,
+  Current_Version: version,
+  Last_Updated: date,
+	Description: description
+```
+</div>
+<br>
+@```
+from
+	StructureDefinition
+where
+	name = 'UKCoreDevice'
+select
+	Profile_Purpose: purpose
+```
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
-  <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+<nocheck>
+<div class="tab fhirTree">
+ <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
    <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
    <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
   <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
+  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
 </div>
 
-<div id="Snapshot View" class="tabcontent" style="display:block">
-  <h3>Snapshot View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device, snapshot}}
-</div>
-
-<div id="Differential View" class="tabcontent">
-  <h3>Differential View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device, diff}}
-</div>
-
-<div id="Hybrid View" class="tabcontent">
-  <h3>Hybrid View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device, hybrid}}
+<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
+{{tree, buttons}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device, snapshot}}
+{{table}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device, snapshot}}
+{{xml}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device, snapshot}}
+{{json}}
 </div>
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
+  <b>Colostomy Bag</b> - An example to illustrate a...<br/>
+{{pagelink:Example-UKCore-Device-ColostomyBag}}
 
-<b>Device Colostomy Bag</b> - An example to illustrate the use of a colostomy bag as a device in the provision of healthcare.
-</br>
-
-{{pagelink: ExampleUKCore-Device-ColostomyBag}}
 </div>
+
+<div id="Usage" class="tabcontent">
+  <h3>Usage</h3>
+  This Profile has the following derived profiles:<br>
+<span id="usage">
+@```
+  from
+	StructureDefinition
+select id,baseDefinition,status
+  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device'
+  and status = 'active'
+```
+</span>
+<br><br>
+  This Profile is referenced in the following Extensions: <br>
+<span id="usage">
+@```
+from
+	StructureDefinition
+  where type='Extension' and status = 'active'
+ select id,
+	for differential.element
+	select
+	join type {targetProfile}
+	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device'
+```
+</span>
+<br><br>
+  This Profile is referenced in the following Profiles: <br>
+<span id="usage">
+@```
+from
+	StructureDefinition
+  where type !='Extension' and status = 'active'
+ select id,
+	for differential.element
+	select
+	join type {targetProfile}
+	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device'
+```
+</span>
+</div>
+</nocheck>
+
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Device profile:
 
-- Text will be added when available
-- Text will be added when available
+- Query for a...
+- Record or update a...
 
----
-## Profile specific implementation guidance: ##
+<hr class="thickline">
 
+## Profile Specific Implementation Guidance: ##

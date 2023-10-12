@@ -2,7 +2,7 @@
 
 Where guidance has been added in another IG, such as the glossary, this can be rendered in an IG using the Simpifier { {render: command, which can work across projects and organisations.
 
-for example, the Glossary is rendered via:
+For example, the Glossary is rendered via:
 ~~~~html
 { {render:hl7fhirukcorer4/index-duplicate-49}}
 ~~~~

@@ -1,64 +1,119 @@
-## StructureDefinition-UKCore-Provenance
+---
+topic: Profile-Provenance
+subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance
+---
 
-Defines the UK Core constraints and extensions on the provenance resource for the minimal set of data to query and retrieve generic provenance information.
+# StructureDefinition-UKCore-Provenance
 
-# Profile Purpose #
-The Provenance resource tracks information about the activity that created, revised, deleted, or signed a version of a resource, describing the entities and agents involved. 
+<div id="transpose">
+@```
+from
+	StructureDefinition
+where
+	name = 'UKCoreProvenance'
+select
+	Canonical_URL: url,
+  Current_Version: version,
+  Last_Updated: date,
+	Description: description
+```
+</div>
+<br>
+@```
+from
+	StructureDefinition
+where
+	name = 'UKCoreProvenance'
+select
+	Profile_Purpose: purpose
+```
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
-  <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+<nocheck>
+<div class="tab fhirTree">
+ <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
    <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
    <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
   <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
+  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
 </div>
 
-<div id="Snapshot View" class="tabcontent" style="display:block">
-  <h3>Snapshot View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance, snapshot}}
-</div>
-
-<div id="Differential View" class="tabcontent">
-  <h3>Differential View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance, diff}}
-</div>
-
-<div id="Hybrid View" class="tabcontent">
-  <h3>Hybrid View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance, hybrid}}
+<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
+{{tree, buttons}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance, snapshot}}
+{{table}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance, snapshot}}
+{{xml}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance, snapshot}}
+{{json}}
 </div>
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
+  <b>RA Record consent</b> - An example to illustrate a...<br/>
+{{pagelink:Example-UKCore-Provenance-RARecordConsent}}
 
-<b>Provenance</b> - An example to illustrate provenance. 
-</br>
-{{pagelink: Example-UKCore-Provenance-RARecordConsent}}
 </div>
+
+<div id="Usage" class="tabcontent">
+  <h3>Usage</h3>
+  This Profile has the following derived profiles:<br>
+<span id="usage">
+@```
+  from
+	StructureDefinition
+select id,baseDefinition,status
+  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance'
+  and status = 'active'
+```
+</span>
+<br><br>
+  This Profile is referenced in the following Extensions: <br>
+<span id="usage">
+@```
+from
+	StructureDefinition
+  where type='Extension' and status = 'active'
+ select id,
+	for differential.element
+	select
+	join type {targetProfile}
+	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance'
+```
+</span>
+<br><br>
+  This Profile is referenced in the following Profiles: <br>
+<span id="usage">
+@```
+from
+	StructureDefinition
+  where type !='Extension' and status = 'active'
+ select id,
+	for differential.element
+	select
+	join type {targetProfile}
+	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance'
+```
+</span>
+</div>
+</nocheck>
+
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Provenance profile:
 
-- Text will be added when available
-- Text will be added when available
+- Query for a...
+- Record or update a...
 
----
-## Profile specific implementation guidance: ##
+<hr class="thickline">
 
+## Profile Specific Implementation Guidance: ##
