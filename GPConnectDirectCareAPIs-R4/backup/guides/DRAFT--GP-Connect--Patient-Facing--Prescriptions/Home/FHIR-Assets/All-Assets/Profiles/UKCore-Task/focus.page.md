@@ -23,6 +23,11 @@ In returning the Task resource the provider must return a short summary of the r
 
 This display must contain the type of prescription, i.e. repeat, acute etc. and the title of the medication. See the example below.
 
+<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
+<p><b>Note</b> - Though UK-Core states the cardinality as 0..1, for the API to function it must contain a reference to a MedicationRequest. If this is not present the API will reject the request and return an error. 
+</p>
+</div>
+
 ### Example
 ```json
   "focus": {
