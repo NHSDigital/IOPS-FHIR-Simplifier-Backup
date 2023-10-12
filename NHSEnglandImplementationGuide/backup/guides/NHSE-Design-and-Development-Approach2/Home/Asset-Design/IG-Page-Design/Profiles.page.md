@@ -30,12 +30,14 @@ Unless stated as optional, the index page SHALL have, in order, the following:
 
 A profile index page should have a YAML header:
 - a `topic`, which allows the page to be referenced using \{ \{pagelink:[topic]\}\} within the IG. 
+- a `system`, the canonical url for the resource, which allows Simplifier render commands to be used without specifying a url 
 
 A YAML header SHALL be the first item on a page, it SHALL be unique, and it SHALL be in the following format: 
 
 ~~~html
 ---
 topic: [Section]-[ResourceName]
+subject: [resource canonical url]
 ---
 ~~~
 
@@ -159,12 +161,12 @@ If no information on the use of any extensions is needed, then the page SHALL be
 
 More information about the extensions can be found using the links below.
 
-<table class="assets">
+<table class="assets" title="Extension list">
 <tr>
-<th width="20%">Extension</th>
-<th width="20%">Context</th>
-<th width="30%">Link</th>
-<th width="30%">Comment</th>
+<th class="width20">Extension</th>
+<th class="width20">Context</th>
+<th class="width30">Link</th>
+<th class="width30">Comment</th>
 </tr>
 <tr>
 <td>[extension name]</td>
@@ -188,11 +190,11 @@ Any coding / CodeableConcept element within the profile or within an extension w
 
 More information about the bindings to NHS England ValueSets can be found below.
 
-<table class="assets">
+<table class="assets" title="Bindings list">
 <tr>
-<th width="30%">Context</th>
-<th width="20%">Strength</th>
-<th width="50%">Link</th>
+<th class="width30">Context</th>
+<th class="width20">Strength</th>
+<th class="width50">Link</th>
 </tr>
 <tr>
 <td>[context of use]</td>
@@ -215,12 +217,12 @@ Any profile or profile element that has an additional constraint applied SHALL b
 
 More information about the constraints on the <code>England-[profile]</code> profile can be found below.
 
-<table class="assets">
+<table class="assets" title="Constraints list">
 <tr>
-<th width="15%">Key</th>
-<th width="10%">Severity</th>
-<th width="30%">Expression</th>
-<th width="45%">Human Description</th>
+<th class="width15">Key</th>
+<th class="width15">Severity</th>
+<th class="width30">Expression</th>
+<th class="width40">Human Description</th>
 </tr>
 <tr>
 <td>[constraint key]</td>

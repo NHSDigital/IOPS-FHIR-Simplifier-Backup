@@ -1,2 +1,6 @@
-- name: Index
-  filename: Index.page.md
+- name: Requests and Issues
+  filename: Requests-and-Issues.page.md
+- name: Awareness and Learning
+  filename: Awareness-and-Learning.page.md
+- name: Glossary
+  filename: Glossary.page.md
