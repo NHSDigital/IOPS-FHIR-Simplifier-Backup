@@ -26,43 +26,49 @@ gplocal --> gpcentral: Patient successfully registered
 
 <br /><br />
 
- #### An Example to Request patient registration
+ #### An Example Of Patient Registration Request
 
+<div>
 <div class="tab">
-  <button class="tablinks active" onclick="openTab(event, 'JSON')">JSON</button>
-  <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
+ <button class="tablinks active" onclick="openTab(event, 'XML')">XML</button>
+ <button class="tablinks" onclick="openTab(event, 'JSON')">JSON</button>
 </div>
-<div id="XML" class="tabcontent">
-{{xml:urn:uuid:6f4256fa-cd14-4f96-899e-008643d84ff8}}
+<div id="XML" class="tabcontent" style="display:block">
+{{xml:6f4256fa-cd14-4f96-899e-008643d84ff8}}
 </div>
-<div id="JSON" class="tabcontent" style="display:block">
-{{json:urn:uuid:6f4256fa-cd14-4f96-899e-008643d84ff8}}
+<div id="JSON" class="tabcontent">
+{{json:6f4256fa-cd14-4f96-899e-008643d84ff8}}
+</div>
 </div>
 
 
-#### An Example to Request successfully received
+#### An Example of Patient Registration Request successfully received
 
+<div>
 <div class="tab">
-  <button class="tablinks active" onclick="openTab(event, 'JSON')">JSON</button>
-  <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
+ <button class="tablinks active" onclick="openTab(event, 'XML')">XML</button>
+  <button class="tablinks" onclick="openTab(event, 'JSON')">JSON</button>
 </div>
-<div id="XML" class="tabcontent">
-{{xml:urn:uuid:2adbf7c4-8f21-4159-8681-3f41bc06215c}}
+<div id="XML" class="tabcontent" style="display:block">
+{{xml:2adbf7c4-8f21-4159-8681-3f41bc06215c}}
 </div>
-<div id="JSON" class="tabcontent" style="display:block">
-{{json:urn:uuid:2adbf7c4-8f21-4159-8681-3f41bc06215c}}
+<div id="JSON" class="tabcontent">
+{{json:2adbf7c4-8f21-4159-8681-3f41bc06215c}}
+</div>
 </div>
 
 
-#### An Example to Patient successfully registered
+#### An Example of Patient successfully registered
 
+<div>
 <div class="tab">
-  <button class="tablinks active" onclick="openTab(event, 'JSON')">JSON</button>
-  <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
+<button class="tablinks active" onclick="openTab(event, 'XML')">XML</button>
+  <button class="tablinks" onclick="openTab(event, 'JSON')">JSON</button>
 </div>
-<div id="XML" class="tabcontent">
-{{xml:urn:uuid:c96c137d-3089-4165-8a2b-f9518d745a64}}
+<div id="XML" class="tabcontent" style="display:block">
+{{xml:c96c137d-3089-4165-8a2b-f9518d745a64}}
 </div>
-<div id="JSON" class="tabcontent" style="display:block">
-{{json:urn:uuid:c96c137d-3089-4165-8a2b-f9518d745a64}}
+<div id="JSON" class="tabcontent">
+{{json:c96c137d-3089-4165-8a2b-f9518d745a64}}
+</div>
 </div>
