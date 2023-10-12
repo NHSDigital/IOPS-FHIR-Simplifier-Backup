@@ -1,0 +1,315 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="f50c58ea-543f-4530-99fa-ceb7b9dbbed5" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
+    <lastUpdated value="2020-09-20T10:22:00+00:00" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="537e38e6-a3fc-4833-90c4-37dca1e930fc" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:a50c58ea-543f-4530-99fa-ceb7b9dbbef5" />
+    <resource>
+      <!--all the MessageHeader will be boiler-plate-->
+      <MessageHeader>
+        <id value="a50c58ea-543f-4530-99fa-ceb7b9dbbef5" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
+        </meta>
+        <eventCoding>
+          <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
+          <code value="appointment" />
+          <display value="Appointment" />
+        </eventCoding>
+        <!--assume the appointment goes to NHSE (is this the same as GPS?)-->
+        <destination>
+          <name value="Executive Agency - NHS ENGLAND - X26" />
+          <endpoint value="${NhsMeshMailboxId}" />
+          <receiver>
+            <identifier>
+              <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+              <value value="X26" />
+            </identifier>
+          </receiver>
+        </destination>
+        <!--sent from Grail-->
+        <sender>
+          <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="8KG14" />
+          </identifier>
+        </sender>
+        <source>
+          <endpoint value="${GrailMeshMailboxId}" />
+        </source>
+        <!--focus on appointment-->
+        <focus>
+          <reference value="urn:uuid:b3ce263f-aafc-41fb-a1bc-ba28e6ccf9cd" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b3ce263f-aafc-41fb-a1bc-ba28e6ccf9cd" />
+    <resource>
+      <Appointment>
+        <id value="urn:uuid:b3ce263f-aafc-41fb-a1bc-ba28e6ccf9cd" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
+        </meta>
+        <!--standard HL7 extension for any replacement of previous appointment-->
+        <!--provided as an example of how to reference a previous appointement
+					being replaced-->
+        <extension url="http://hl7.org/fhir/StructureDefinition/request-replaces">
+          <valueReference>
+            <reference value="/Appointment/3e1426c2-2d0d-4f0a-91b3-4627dfe08647" />
+          </valueReference>
+        </extension>
+        <!--DataItem:AppointmentID-->
+        <identifier>
+          <system value="TBC" />
+          <value value="d13279c0-38ea-4b82-9962-bb8e6d17ccf1" />
+        </identifier>
+        <!--could be booked (but cancelled fits with the cancelationReason-->
+        <!--DataItem:Status-->
+        <!--proposed | pending | booked | arrived | fulfilled | cancelled | noshow | 
+					entered-	in-error | checked-in | waitlist	-->
+        <status value="cancelled" />
+        <!--cancelationReason - needs a codeSystem-->
+        <!--this code system can hold the fact that the patient cancelled (code=pat), 
+					or an indication on what platformthe patient cancelled (code=pat-cpp)
+					it also supports the fact that the provider cancelled (code=prov)
+					If we want more detailed reasons for cancellation (e.g. patient cancelled 
+					due to lack of transport), then we would need an extension-->
+        <cancelationReason>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason" />
+            <code value="pat-cpp" />
+            <display value="Patient: Canceled via Patient Portal" />
+          </coding>
+        </cancelationReason>
+        <!--this is making-up data, as its not in the Grail list-->
+        <serviceType>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="82078001" />
+            <display value="Collection of blood specimen for laboratory" />
+          </coding>
+        </serviceType>
+        <!--this is the AppointmentAccessibility list (true/false)-->
+        <supportingInformation>
+          <reference value="urn:uuid:efc85c67-50cb-4950-92c3-5d0d75f9a155" />
+        </supportingInformation>
+        <!--this is the CommunicationAccessibility list (1 string & 2 booleans)-->
+        <supportingInformation>
+          <reference value="urn:uuid:6a9f09f9-7863-44ac-9375-81eba9ac077f" />
+        </supportingInformation>
+        <!--DataItem:AppointmentDateTime-->
+        <start value="2022-03-11T10:46:00+00:00" />
+        <end value="2022-03-11T11:00:00+00:00" />
+        <!--patient - links to patient in Bundle, as I assumed the phone numbers & email related to the Patient-->
+        <participant>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+              <code value="SBJ" />
+              <display value="Subject" />
+            </coding>
+          </type>
+          <actor>
+            <type value="Patient" />
+            <reference value="urn:uuid:f265c669-ca44-4c69-826d-d4fe34ad1f44" />
+          </actor>
+          <status value="accepted" />
+        </participant>
+        <!--the clinic a HealthcareService-->
+        <!--DataItem:ClinicID-->
+        <participant>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+              <code value="LOC" />
+              <display value="Location" />
+            </coding>
+          </type>
+          <actor>
+            <type value="HealthcareService" />
+            <identifier>
+              <system value="https://grail.com/identifiers/clinicid" />
+              <value value="Clinicid12345" />
+            </identifier>
+          </actor>
+          <status value="accepted" />
+        </participant>
+      </Appointment>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:efc85c67-50cb-4950-92c3-5d0d75f9a155" />
+    <resource>
+      <!--this is the AppointmentAccessibility list (true/false)-->
+      <!--DataItems:AppointmentAccessibility-->
+      <QuestionnaireResponse>
+        <id value="efc85c67-50cb-4950-92c3-5d0d75f9a155" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
+        </meta>
+        <questionnaire value="Questionnaire/AppointmentAccessibility" />
+        <status value="completed" />
+        <subject>
+          <reference value="urn:uuid:f265c669-ca44-4c69-826d-d4fe34ad1f44" />
+          <display value="NHS-AB12-CD34" />
+        </subject>
+        <item>
+          <linkId value="1" />
+          <text value="Accessible toilet required for appointment?" />
+          <answer>
+            <valueBoolean value="false" />
+          </answer>
+        </item>
+        <item>
+          <linkId value="2" />
+          <text value="Braille translation required for appointment?" />
+          <answer>
+            <valueBoolean value="false" />
+          </answer>
+        </item>
+        <item>
+          <linkId value="3" />
+          <text value="Disabled parking required for appointment?" />
+          <answer>
+            <valueBoolean value="true" />
+          </answer>
+        </item>
+        <item>
+          <linkId value="4" />
+          <text value="Induction loop required for appointment?" />
+          <answer>
+            <valueBoolean value="false" />
+          </answer>
+        </item>
+        <item>
+          <linkId value="5" />
+          <text value="Sign language required for appointment?" />
+          <answer>
+            <valueBoolean value="true" />
+          </answer>
+        </item>
+        <item>
+          <linkId value="6" />
+          <text value="Step free access required for appointment?" />
+          <answer>
+            <valueBoolean value="false" />
+          </answer>
+        </item>
+        <item>
+          <linkId value="7" />
+          <text value="Text relay required for appointment?" />
+          <answer>
+            <valueBoolean value="false" />
+          </answer>
+        </item>
+        <item>
+          <linkId value="8" />
+          <text value="Wheelchair required for appointment?" />
+          <answer>
+            <valueBoolean value="false" />
+          </answer>
+        </item>
+      </QuestionnaireResponse>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:6a9f09f9-7863-44ac-9375-81eba9ac077f" />
+    <resource>
+      <!--this is the CommunicationAccessibility list (1 string & 2 booleans)-->
+      <!--DataItems:CommunicationAccessibility-->
+      <QuestionnaireResponse>
+        <id value="6a9f09f9-7863-44ac-9375-81eba9ac077f" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
+        </meta>
+        <questionnaire value="Questionnaire/CommunicationAccessibility" />
+        <status value="completed" />
+        <subject>
+          <reference value="urn:uuid:f265c669-ca44-4c69-826d-d4fe34ad1f44" />
+          <display value="NHS-AB12-CD34" />
+        </subject>
+        <item>
+          <linkId value="1" />
+          <text value="Interpreter required for appointment?" />
+          <answer>
+            <valueString value="Turkish" />
+          </answer>
+        </item>
+        <item>
+          <linkId value="2" />
+          <text value="Sign language translation required for appointment?" />
+          <answer>
+            <valueBoolean value="false" />
+          </answer>
+        </item>
+        <item>
+          <linkId value="3" />
+          <text value="Braille required for appointment?" />
+          <answer>
+            <valueBoolean value="false" />
+          </answer>
+        </item>
+      </QuestionnaireResponse>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f265c669-ca44-4c69-826d-d4fe34ad1f44" />
+    <resource>
+      <!--some patient details - identifier & contact details-->
+      <Patient>
+        <id value="f265c669-ca44-4c69-826d-d4fe34ad1f44" />
+        <!--supported values for the PreferredContactMethod are
+					1 | Letter
+					2 | Visit
+					3 | Telephone
+					4 | E-mail
+					5 | Minicom (Textphone)
+					6 | Telephone contact via proxy
+					7 | Sign language
+					8 | No Telephone contact -->
+        <!--DataItem:CommunicationPreferences-->
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference">
+          <extension url="PreferredContactMethod">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod" />
+                <code value="4" />
+                <display value="E-mail" />
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+        </extension>
+        <!--DataItem:ParticipantID-->
+        <identifier>
+          <system value="https://grail.com/identifiers" />
+          <value value="NHS-AB12-CD34" />
+        </identifier>
+        <!--DataItem:PhoneNumber-->
+        <telecom>
+          <system value="phone" />
+          <value value="+44123456789" />
+          <rank value="1" />
+        </telecom>
+        <telecom>
+          <system value="phone" />
+          <value value="+44987654321" />
+          <rank value="2" />
+        </telecom>
+        <!--DataItem:Email-->
+        <telecom>
+          <system value="email" />
+          <value value="me@myemail.com" />
+        </telecom>
+      </Patient>
+    </resource>
+  </entry>
+</Bundle>
