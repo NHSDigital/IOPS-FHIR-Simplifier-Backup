@@ -1,2 +1,33 @@
-# {{page-title}} 
-{{index:root}}
+# Clinical and Technical Assurance Sprint 1 Documentation Pack
+
+## Purpose
+
+The purpose of this pack is to provide guidance documentation for stakeholders involved in the NHS England Implementation Guide Clinical and Technical Assurance (C&TA) process. The audiences for this documentation are internal NHS England programmes, external stakeholders and implementation sites using FHIR specifications. It is assumed that the reader has a basic understanding of HL7 FHIR (R4 version).
+
+## Pack Structure
+
+This pack contains the guidance and reference material required to participate in the C&TA process. The content of the NHS England IG Implementation Guide to be reviewed is contained in the NHS England IG Implementation Guide STU1. Items are indexed by C&TA Sprints and the scope of this sprint is items marked accordingly.
+
+## Background
+This sprint involves creating a review pack for external consultation, including a first draft of mapping by the NHS England IG Development team, which is published to the external community for a review period of 15 working days.
+
+Documentation is available online for the Clinical and Technical Assurance process. The documentation will give background information to allow the reader to take part in the C&TA process.
+
+## Clinical & Technical Assurance Sprint Calls
+
+The C&TA process included three calls, which were recorded, and are provided below.
+
+<table class="assets">
+<tr>
+<th width="25%">Date</th>
+<th width="25%">Topic</th>
+<th width="25%">Slides</th>
+<th width="25%">Recording</th>
+</tr>
+<tr>
+<td>TBC</td>
+<td>TBC</td>
+<td>TBC</td>
+<td>TBC</td>
+</tr>
+</table>

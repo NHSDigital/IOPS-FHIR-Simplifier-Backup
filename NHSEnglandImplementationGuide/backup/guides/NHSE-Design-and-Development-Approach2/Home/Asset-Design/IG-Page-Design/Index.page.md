@@ -24,6 +24,17 @@ To standardise all pages within the FHIR NHS England Implementation Guide (IG)
 - When refering to SNOMED CT, it SHALL be written in capitals.
 - When refering to SNOMED CT codes, the words Concept, Description, and Id SHALL be used in Title case.
 - FHIR elements SHALL be fully qualified when discussed in guidance, e.g. `Procedure.note.authorReference` rather than `note.author`
+- CSS shall be used to control table column widths
+- All asset and major IG page design changes will be logged in the Version History change log
+
+---
+
+## Web Accessibility
+
+- All id's on a page SHALL be unique where they can be controlled by the NHSE IG development team
+- All table tags SHALL have a meaningful title attribute
+- All rendered images SHALL be within a div with a title that is to be used as the alt text, or SHALL have alt text set
+- All added / amended pages SHALL be checked for WCAG 2.0 AA issues prior to publication
 
 ---
 
@@ -57,6 +68,8 @@ To standardise all pages within the FHIR NHS England Implementation Guide (IG)
 |\{ \{pagelink:[Topic url]\}\}|Internal Link. For referencing within the IG.  
 
 **Note:** the Topic url can be found using the dropdown button within the IG editor, or for pages named 'Index' these are manually created and can be found at the top of the page. See Topic for more details.
+
+External links SHALL have class="external" set.
 
 ---
 
@@ -112,11 +125,26 @@ This [Asset Type] underwent Clinical and Technical Assurance during Sprint X. Th
 
 Where guidance has been added in another IG, such as the glossary, this can be rendered in an IG using the Simpifier { {render: command }}, which can work across projects and organisations.
 
+For example, the Glossary is rendered via:
+~~~~html
+{ {render:hl7fhirukcorer4/index-duplicate-49}}
+~~~~
 
 <div markdown="span" class="alert alert-warning" role="alert">
 <h4><i class="fa fa-info-circle"></i> Important</h4>
 Currently, Simplifier commands, such as FQL or pagelink / tree / xml / json / render, will not be processed by the rendered page.
 </div>
 
+---
+
+Images can be rendered using the same { {render:}} command, and SHALL be within a div with id beginning "renderParent", and SHALL contains a title attirbute which will be used for the alt text.
+
+~~~~html
+<div id="renderParent" title="The logos of organisations involved in developing and implementing UK Core">
+{ {render:ukcorelogos2023}}
+</div>
+~~~~
+
+---
 <hr class="thickline">
 

@@ -157,7 +157,7 @@ The page SHALL be referenced within table on the ‘ValueSets and Codesystems’
 ---
 
 
-## Exmaple Layout
+## Example Layout
 
 Each example SHALL have its own page within the folder ‘Examples Index’, listed in alphabetical order. The page SHALL be named ‘Example England-<i>[example name]</i>’. 
 
