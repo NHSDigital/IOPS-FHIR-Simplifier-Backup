@@ -1,25 +1,10 @@
 ## UK Core Implementation Guide Assets in Development ##
 
-
-
-</br>
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-information"></i><h4> Project Description and Scope</h4></br>
-<ul>
-<li>This guide MUST not be implemented
-<li>This Implementation Guide of the UK Core is for FHIR Assets in Development
-<li>For implementation, the current release 1.0.0 should be used for that purpose. For the full version history see the  Version History link in this Implementation Guide's footer.
-
-</li>
-</ul>
-  </div>
-
-
-
 ### How to Read This Guide ###
 
 This Guide is divided into several pages which are listed at the top of each page in the menu bar.
 <ul>
-<li>{{pagelink:ExtensionLibrarydraft}}: The Extensions in development for the UK Core.</li>
+<li>{{pagelink:ExtensionLibrary}}: The Extensions in development for the UK Core.</li>
 <li>{{pagelink:ProfilesIndex}}: The Profiles in development for the UK Core.</li>
 <li>{{pagelink:ValueSetsandCodeSystemsdraft}}: This is the list of ValueSets and CodeSystems in development for use within the UK Core.</li>
 <li>{{pagelink:ExamplesIndex}}: The examples available in this implementation guide
@@ -31,7 +16,7 @@ This Guide is divided into several pages which are listed at the top of each pag
 <ul>
 <li><a href="https://simplifier.net/guide/dosesyntaximplementationguidanceforfhirr4/home" target="_blank">Dose Syntax Implementation Guidance for FHIR R4</a></li>
 <li><a href="https://simplifier.net/guide/ukcoreimplementationguideformedicines/home" target="_blank">Implementation Guide for Medicines</a></li>
-<li>The UK Core development approach used by the UK Core is documented in a separate <a href="https://simplifier.net/guide/ukcoredevelopmentguidance/home" target="_blank">Implementation Guide</a></li>
+<li>The UK Core development approach used by the UK Core is documented in a separate <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence?version=current" target="_blank">Implementation Guide</a></li>
 </ul>
 </div> 
 

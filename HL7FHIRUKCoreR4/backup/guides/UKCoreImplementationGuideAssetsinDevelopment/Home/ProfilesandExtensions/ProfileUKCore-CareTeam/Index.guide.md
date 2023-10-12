@@ -1,64 +1,119 @@
-## StructureDefinition-UKCore-CareTeam
+---
+topic: Profile-CareTeam
+subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam
+---
 
-Defines the UK Core constraints and extensions on the CareTeam resource for the minimal set of data to query and retrieve an individual’s care team.
+# StructureDefinition-UKCore-CareTeam
 
-# Profile Purpose #
-This profile allows recording of the care team which includes all the people and organisations who plan to participate in the coordination and delivery of care for an individual. This is not limited to practitioners, but may include other caregivers such as family members, guardians, the individual themselves, or others. The care team, depending on where used, may include care team members specific to a particular care plan, an episode, an encounter, or may reflect all known team members across these perspectives. An individual's care team can be dynamic over time, such that there can be transience of team members, such as a rehabilitation team.
+<div id="transpose">
+@```
+from
+	StructureDefinition
+where
+	name = 'UKCoreCareTeam'
+select
+	Canonical_URL: url,
+  Current_Version: version,
+  Last_Updated: date,
+	Description: description
+```
+</div>
+<br>
+@```
+from
+	StructureDefinition
+where
+	name = 'UKCoreCareTeam'
+select
+	Profile_Purpose: purpose
+```
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
-  <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+<nocheck>
+<div class="tab fhirTree">
+ <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
    <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
    <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
   <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
+  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
 </div>
 
-<div id="Snapshot View" class="tabcontent" style="display:block">
-  <h3>Snapshot View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam, snapshot}}
-</div>
-
-<div id="Differential View" class="tabcontent">
-  <h3>Differential View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam, diff}}
-</div>
-
-<div id="Hybrid View" class="tabcontent">
-  <h3>Hybrid View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam, hybrid}}
+<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
+{{tree, buttons}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam, snapshot}}
+{{table}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam, snapshot}}
+{{xml}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam, snapshot}}
+{{json}}
 </div>
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
+  <b>Weight Manangement Team</b> - An example to illustrate a...<br/>
+{{pagelink:Example-UKCore-CareTeam-WeightManangementTeam}}
 
-<b>Care Team Weight Management Team</b> - An example to illustrate a weight management care team scenario.  
-</br>
-{{pagelink: ExampleUKCore-CareTeam-WeightManagementTeam}}
 </div>
+
+<div id="Usage" class="tabcontent">
+  <h3>Usage</h3>
+  This Profile has the following derived profiles:<br>
+<span id="usage">
+@```
+  from
+	StructureDefinition
+select id,baseDefinition,status
+  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam'
+  and status = 'active'
+```
+</span>
+<br><br>
+  This Profile is referenced in the following Extensions: <br>
+<span id="usage">
+@```
+from
+	StructureDefinition
+  where type='Extension' and status = 'active'
+ select id,
+	for differential.element
+	select
+	join type {targetProfile}
+	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam'
+```
+</span>
+<br><br>
+  This Profile is referenced in the following Profiles: <br>
+<span id="usage">
+@```
+from
+	StructureDefinition
+  where type !='Extension' and status = 'active'
+ select id,
+	for differential.element
+	select
+	join type {targetProfile}
+	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam'
+```
+</span>
+</div>
+</nocheck>
+
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core CareTeam profile:
 
-- Text will be added when available
-- Text will be added when available
+- Query for a...
+- Record or update a...
 
----
-## Profile specific implementation guidance: ##
+<hr class="thickline">
 
+## Profile Specific Implementation Guidance: ##

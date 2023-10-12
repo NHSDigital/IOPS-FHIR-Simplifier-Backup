@@ -14,3 +14,5 @@ More information about the extensions can be found using the links below.
 <td>{{pagelink:Extension-UKCore-ConditionEpisode}}</td>
 </tr>
 </table>
+
+---

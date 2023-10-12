@@ -9,10 +9,10 @@ MVC SHALL be determined by use cases, and by analysis of the MustSupport flags u
 
 A minimum viable content that all provider and consumer systems SHALL support are the following elements.
 
-<table class="assets">
+<table class="assets" title="Minimum Viable Content list">
 <tr>
-<th width="30%">Element</th>
-<th width="70%">Reason</th>
+<th class="width30">Element</th>
+<th class="width70">Reason</th>
 </tr>
 <tr>
 <td><code>[element]</code></td>
