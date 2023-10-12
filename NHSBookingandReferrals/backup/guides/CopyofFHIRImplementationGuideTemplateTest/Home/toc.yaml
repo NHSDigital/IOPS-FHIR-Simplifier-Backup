@@ -4,8 +4,8 @@
   filename: About-BaRS
 - name: Core
   filename: Core
-- name: Design
-  filename: Design
+- name: Applications
+  filename: Applications
 - name: Build
   filename: Build
 - name: Assure
