@@ -27,7 +27,7 @@ This section contains the ValueSets and CodeSystems which are proposed to be inc
 <td>draft</td>
 <td>3</td>
 <td><a href="?">ProfileUKCore-?</a></td>
-<td>Not done jet</td>
+<td>Not done yet</td>
 </tr>
 <tr>
 <td colspan="5">Composed of CodeSystemUKCoreDateTimeType</td>

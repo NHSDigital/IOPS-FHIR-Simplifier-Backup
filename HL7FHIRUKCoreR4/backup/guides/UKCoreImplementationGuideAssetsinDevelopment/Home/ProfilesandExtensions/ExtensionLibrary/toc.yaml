@@ -2,3 +2,5 @@
   filename: Extension-Library--draft.guide.md
 - name: Extension UKCore-TypedDateTime
   filename: ExtensionUKCore-TypedDateTime.guide.md
+- name: Extension UKCore-TypedPeriod
+  filename: Extension-UKCore-TypedPeriod.page.md

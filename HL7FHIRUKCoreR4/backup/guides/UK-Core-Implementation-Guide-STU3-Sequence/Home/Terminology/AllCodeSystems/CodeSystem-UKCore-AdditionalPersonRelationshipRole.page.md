@@ -3,8 +3,6 @@ subject:https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRo
 ---
 ## UK Core Additional Person Relationship Role
 
-{{page:Home/Terminology/AllCodeSystems/CodeSystemTemplate.page.md}}
-
 @```
 from
 	CodeSystem
