@@ -2,8 +2,6 @@
   filename: Index.page.md
 - name: How are PRSB headings represented within FHIR?
   filename: How-are-PRSB-headings-represented-within-FHIR.page.md
-- name: 'Heading: Safeguarding'
-  filename: Heading--Safeguarding.page.md
 - name: 'Heading: History'
   filename: Heading--History.page.md
 - name: 'Heading: Clinical Summary'

@@ -14,16 +14,16 @@ The {{pagelink:Home/FHIR-Assets/All-assets/Code-systems/Code-system--RecordStand
 For example, if sending a safeguarding flag, then include the following:
 
 ```xml
-<Flag xmlns="http://hl7.org/fhir">
+<ClinicalImpression xmlns="http://hl7.org/fhir">
     <meta>
         <tag>
             <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
-            <code value="safeguarding" />
-            <display value="Safeguarding" />
+            <code value="clinical-summary" />
+            <display value="Clinical Summary" />
         </tag>
     </meta>
     ...
-</Flag>
+</ClinicalImpression>
 ```
 
 A receiving system could use this information to present the information within the patient record.
