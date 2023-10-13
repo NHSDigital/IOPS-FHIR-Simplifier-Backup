@@ -1,6 +1,5 @@
 ## UK Core Encounter Location Type England
 
-
 @```
 from
 	CodeSystem

@@ -63,7 +63,7 @@ select
 <br>{{pagelink:Example-UKCore-List-EmptyList}}
 <br><br>
 <b>Bundled Allergy List</b> - This example is an example FHIR Bundle that could be returned following a query for the allergies for a patient. Note: the use of List and Bundle is not mandated and is used to illustrate a possible use of the List Profile and is not expected system behaviour.<br>
-{{pagelink:Example-UKCore-Bundle-BundledAllergyList}}
+{{pagelink:Example-UKCore-Bundle-AllergyList}}
 <br><br>
   <b>List Warning Code</b>- An example to illustrate a warning being provided in a List resource.<br>
   {{pagelink:Example-UKCore-Extension-ListWarningCode}}
