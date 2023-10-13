@@ -24,10 +24,53 @@ Within the NHSE folder is an IG called [NHSE Design and Development Approach](ht
 <tr>
 <td><a href="https://simplifier.net/nhs-england-implementation-guide">NHS England Implementation Guide</td>
 <td>Implementation Guidance</td>
-<td>Implementation Guidance for All NHS England FHIR Assets</td>
+<td>Implementation Guidance for All NHS England FHIR Assets.</td>
 <td>NHS England</td>
 <td>R4</td>
 </tr>	
+
+<tr>
+<td><a href="https://simplifier.net/guide/nhs-england-ig-clinical-and-technical-assurance-doc-pack?version=current">NHS England IG Clinical and Technical Assurance Sprint 1 Documentation Pack</td>
+<td>Implementation Guidance</td>
+<td>The purpose of this pack is to provide guidance documentation for stakeholders involved in the NHS England Implementation Guide Clinical and Technical Assurance (C&TA) process.</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>	
+
+<tr>
+<td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">NHS England Implementation Guide Version History</td>
+<td>Registry</td>
+<td>A registry of the version of the NHS England and the change history of each version.</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>
+
+<tr>
+<td><a href="https://simplifier.net/guide/nhs-england-naming-systems?version=current">NHS England Naming Systems</td>
+<td>Registry</td>
+<td>A registry of NamingSystems that are managed and allocated by HL7 UK.</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>
+
+<tr>
+<td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1?version=current">NHS England Implementation Guide STU1</td>
+<td>Implementation Guidance</td>
+<td>This NHS England FHIR Implementation Guide provides additional guidance, rules and constraints which extends the FHIR UK Core Implementation Guide.
+The scope of this Implementation Guide is for programmes and products within NHS England.</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>
+
+<tr>
+<td><a href="https://simplifier.net/guide/nhs-england-design-and-development-approach?version=current">NHS England Design and Development Approach</td>
+<td>Guidance</td>
+<td>The design and development approach used to produce the NHS England IG</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>
+
+
 <tr>
 <td><a href="https://simplifier.net/nhs-england-programme-implementation-guides">NHS England Programme Implementation Guides</td>
 <td>Implementation Guidance</td>
@@ -35,133 +78,34 @@ Within the NHSE folder is an IG called [NHSE Design and Development Approach](ht
 <td>NHS England</td>
 <td>R4</td>
 </tr>
+
+<tr>
+<td><a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-producer-impl?version=current">Child Protection - Information Sharing (CP-IS) API Producer Implementation Guidance</td>
+<td>Implementation Guidance</td>
+<td>The Child Protection Information Sharing (CP-IS) initiative aims to share information between NHS clinicians and Local Authority social care practitioners relating to children with either Child Protection, Looked After or Unborn Child care plans.</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>
+
+<tr>
+<td><a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-consumer-impl?version=current">Child Protection - Information Sharing (CP-IS) API Consumer Implementation Guidance</td>
+<td>Implementation Guidance</td>
+<td>The Child Protection Information Sharing (CP-IS) initiative aims to share information between NHS clinicians and Local Authority social care practitioners relating to children with either Child Protection, Looked After or Unborn Child care plans.</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>
+
+<tr>
+<td><a href="https://simplifier.net/guide/female-genital-mutilation-implementation-guide2?version=current">Female Genital Mutilation - Information Sharing (FGM-IS) API Implementation Guidance</td>
+<td>Implementation Guidance</td>
+<td>It provides a national IT system for healthcare professionals and administrative staff to record that a child with female genitalia has a family history of FGM.</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>
+
 </tbody>
 </table>
 <br>
-
-## Historical NHS Digital IG
-Historical IG's in the list below will have profile and FHIR Assets contained within, so may be useful if you are working in that domain.
-
-<table class="assets" title="NHS England Historical IG list">
-<thead>
-<tr>
-<th class="width20">Name</th>
-<th class="width20">Type</th>
-<th class="width40">Description</th>
-<th class="width10">Publisher</th>
-<th class="width10">FHIR Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://simplifier.net/pdsapi">PDS API</td>
-<td>Implementation Guidance</td>
-<td>Use this API to access the Personal Demographics Service (PDS) - the national electronic database of NHS patient details such as name, address, date of birth and NHS Number.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>	
-<tr>
-<td><a href="https://simplifier.net/ukdigitalmedicine">NHS Digital FHIR Medicines Implementation Guide</td>
-<td>Implementation Guidance</td>
-<td>This guide is to be used across NHS Digital FHIR R4 API's when implementing Medicines.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/nhsdigital">NHS England FHIR Implementation Guide (Deprecated)</td>
-<td>Implementation Guidance</td>
-<td>NHS Digital FHIR Implementation Guide for use with NHS Digital APIs</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/summarycarerecord-pluscodedentry">Summary Care Record FHIR API Implementation Guide</td>
-<td>Implementation Guidance</td>
-<td>The SCR is an electronic record of important patient information, created from GP medical records.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/clinicalobservations">Clinical Observations</td>
-<td>Implementation Guidance</td>
-<td>This Implementation Guide is in support of a project to develop and mature the standards for observations data capture.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/childprotection">Child Protection</td>
-<td>Implementation Guidance</td>
-<td>A project to describe how information about child protection can be shared between local authorities and health care providers.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/dosesyntaxforr4">Implementation Guide for Dose Syntax</td>
-<td>Implementation Guidance</td>
-<td>Implementation Guide for Dose Syntax.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/epmaimplementationguidanceforr4">Implementation Guide for Digital Medicines</td>
-<td>Implementation Guidance</td>
-<td>Implementation Guide for Digital Medicines.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/nhsbookingandreferrals">NHS Bookings and Referrals</td>
-<td>Implementation Guidance</td>
-<td>Implementation Guide for NHS Bookings and Referrals.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/diabetesinfosharing">Diabetes</td>
-<td>Implementation Guidance</td>
-<td>Implementation Guide for Diabetes.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/nhs-digital-fhir-genomics-implementation-guide">Genomics</td>
-<td>Implementation Guidance</td>
-<td>Implementation Guide for Genomics.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/ers">eRS</td>
-<td>Implementation Guidance</td>
-<td>Implementation Guide for Electronic referral Service.</td>
-<td>NHS Digital</td>
-<td>R4</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/epmaimplementationguidanceforstu3">EPMA Implementation Guidance for FHIR STU3</td>
-<td>Implementation Guidance</td>
-<td> Please note: This guidance has been superseded by the Implementation Guide for Digital Medicines, which contains up-to-date information.</td>
-<td>NHS Digital</td>
-<td>STU3</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/dosesyntaxforstu3">Dose Syntax Implementation Guidance for FHIR STU3</td>
-<td>Implementation Guidance</td>
-<td>Please note: This guidance has been superseded by the Implementation Guide for Dose Syntax, which contains up-to-date information.</td>
-<td>NHS Digital</td>
-<td>STU3</td>
-</tr>
-<tr>
-<td><a href="https://simplifier.net/hl7fhircareconnectbaselineforstu3">HL7 FHIR® CareConnect Baseline for STU3</td>
-<td>Implementation Guidance</td>
-<td>This is the project and the implementation guide for the Care Connect STU3 assets</td>
-<td>NHS Digital</td>
-<td>STU3</td>
-</tr>
-</tbody>
-</table>
-
-<br><br><br>
 
 <div markdown="span" class="alert alert-warning" role="alert"><h4 id="Licence"><i class="fas fa-gavel"></i> Licensing and Publisher</h4>
 <ul>
