@@ -248,6 +248,8 @@ The diagram describes the key steps in the process and each step is described in
 
 {{render:NHSEAssureance}}
 
+{{render:ClinicalandTechnicalAssuranceProcess}}
+
 ### Publication of the NHS England IG pack (1.0)
 This involves creating a NHS England IG pack for external consultation. 
 #### Key Inputs
