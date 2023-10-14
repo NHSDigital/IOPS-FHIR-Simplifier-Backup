@@ -13,7 +13,7 @@ This Application supports the use of the following use cases:
 * IUC CAS (Integrated Urgent Care Clinical Assessment Service) to ED (Emergency Department)
 * IUC CAS (Integrated Urgent Care Clinical Assessment Service) to UTC (Urgent Treatment Centre)
 
-**note:** for use cases where the sending system is 111 Online, please see {{pagelink: app-uec2, text:Bookings and Referrals into UEC Application 2}}
+**note:** for use cases where the sending system is 111 Online, please see {{pagelink: application2, text:Bookings and Referrals into UEC Application 2}}
 
 ## Introduction
 
