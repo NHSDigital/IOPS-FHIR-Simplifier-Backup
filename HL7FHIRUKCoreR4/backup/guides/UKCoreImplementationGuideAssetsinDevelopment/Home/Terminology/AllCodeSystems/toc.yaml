@@ -1,0 +1,4 @@
+- name: CodeSystem UKCore-DateTimeType
+  filename: CodeSystem-UKCore-DateTimeType.page.md
+- name: CodeSystem UKCore-PeriodType
+  filename: CodeSystem-UKCore-PeriodType.page.md

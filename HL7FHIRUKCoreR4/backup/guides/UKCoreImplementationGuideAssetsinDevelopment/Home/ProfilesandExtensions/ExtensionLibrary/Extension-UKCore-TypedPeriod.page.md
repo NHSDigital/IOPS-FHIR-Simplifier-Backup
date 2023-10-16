@@ -54,6 +54,6 @@ select
 
 
 <h3 id="guidance-TypedPeriod">Extension Specific Guidance</h3>
-There is a binding within this extension to a ValueSet: ValueSet-UKCore-PeriodType.
+There is a binding within this extension to a ValueSet: {{pagelink:ValueSet-UKCore-PeriodType}}.
 
 ---

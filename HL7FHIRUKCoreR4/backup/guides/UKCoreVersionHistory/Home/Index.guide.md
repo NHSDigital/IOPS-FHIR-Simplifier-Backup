@@ -29,7 +29,7 @@ The following versions of the UK Core Implementation Guide have been published:
 <td>Current in development build for review. This is the subject of Clinical and Technical Assurance Sprint 7</td>
 <td><a href="https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence?version=1.7.0">Home Page</a><br>
 <a href="https://github.com/NHSDigital/FHIR-R4-UKCORE-STAGING-MAIN/releases/download/1.7.0-sprint-7-review/UK-Core-Implementation-Guide-1.7.0-STU3-Sprint-7-Review.zip">Download as zip</a></td>
-<td><a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/">fhir.r4.ukcore.stu3.currentbuild 0.0.7-sprimnt-7-review</a></td>
+<td><a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/">fhir.r4.ukcore.stu3.currentbuild 0.0.7-sprint-7-review</a></td>
 </tr>
 
 <tr>

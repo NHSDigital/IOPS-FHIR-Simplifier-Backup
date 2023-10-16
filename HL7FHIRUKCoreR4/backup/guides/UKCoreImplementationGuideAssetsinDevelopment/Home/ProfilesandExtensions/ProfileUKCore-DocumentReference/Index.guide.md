@@ -59,7 +59,7 @@ select
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
-  <b>RA Record consent</b> - An example to illustrate a...<br/>
+  <b>Care Plan Report in PDF</b> - An example to illustrate a...<br/>
 {{pagelink:Example-UKCore-DocumentReference-CarePlanReportPDF}}
 
 </div>

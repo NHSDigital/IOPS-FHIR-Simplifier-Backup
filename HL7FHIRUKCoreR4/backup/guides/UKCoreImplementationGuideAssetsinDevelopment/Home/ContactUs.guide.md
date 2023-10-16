@@ -2,7 +2,7 @@
 
 If you have any questions, need further information or wish to provide feedback on this implementation guide, please e-mail the appropriate organisation below:
 
-<table id="assets">
+<table class="assets">
 <tr>
 <th>Organisation</th>
 <th>Email</th>
