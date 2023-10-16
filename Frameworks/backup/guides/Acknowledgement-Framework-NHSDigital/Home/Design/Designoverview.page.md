@@ -8,7 +8,7 @@ Profiles and extension resources used within the Acknowledgement Framework are, 
 
 ## Response patterns (pre-agreed between two systems)
 
-There is an expectation most use-cases will involve both the sending and receiving systems to be aware of the rules and circumstances that goven when, and how, acknowlegdements are sent and received. For example, System A and System B have been designed and built according to the agreed system rules that for any time a Message is received, then a positive or negative acknowlegdment is sent.
+There is an expectation most use-cases will involve both the sending and receiving systems to be aware of the rules and circumstances that govern when, and how, acknowlegdements are sent and received. For example, System A and System B have been designed and built according to the agreed system rules that for any time a Message is received, then a positive or negative acknowlegdment is sent.
 
 <br />
 <plantuml>
