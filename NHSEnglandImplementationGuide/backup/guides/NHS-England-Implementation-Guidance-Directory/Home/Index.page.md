@@ -10,6 +10,7 @@ All new FHIR assets will be developed in the  [NHS England Implementation Guide]
 
 Within the NHSE folder is an IG called [NHSE Design and Development Approach](https://simplifier.net/guide/NHSE-Design-and-Development-Approach2/Home?version=current) which gives detailed guidence to NHSE IG creators.
 
+## NHS England Design & Development Approach
 <table class="assets" title="NHS England Future IG list">
 <thead>
 <tr>
@@ -22,36 +23,30 @@ Within the NHSE folder is an IG called [NHSE Design and Development Approach](ht
 </thead>
 <tbody>
 <tr>
-<td><a href="https://simplifier.net/nhs-england-implementation-guide">NHS England Implementation Guide</td>
-<td>Implementation Guidance</td>
-<td>Implementation Guidance for All NHS England FHIR Assets.</td>
-<td>NHS England</td>
-<td>R4</td>
-</tr>	
-
-<tr>
-<td><a href="https://simplifier.net/guide/nhs-england-ig-clinical-and-technical-assurance-doc-pack?version=current">NHS England IG Clinical and Technical Assurance Sprint 1 Documentation Pack</td>
-<td>Implementation Guidance</td>
-<td>The purpose of this pack is to provide guidance documentation for stakeholders involved in the NHS England Implementation Guide Clinical and Technical Assurance (C&TA) process.</td>
-<td>NHS England</td>
-<td>R4</td>
-</tr>	
-
-<tr>
-<td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">NHS England Implementation Guide Version History</td>
-<td>Registry</td>
-<td>A registry of the version of the NHS England and the change history of each version.</td>
+<td><a href="https://simplifier.net/guide/nhs-england-design-and-development-approach?version=current">NHS England Design and Development Approach</td>
+<td>Guidance</td>
+<td>The design and development approach used to produce the NHS England IG</td>
 <td>NHS England</td>
 <td>R4</td>
 </tr>
+</tbody>
+</table>
 
+<br /><br />
+
+## NHS England Implementation Guide Publications
+
+<table class="assets" title="NHS England Future IG list">
+<thead>
 <tr>
-<td><a href="https://simplifier.net/guide/nhs-england-naming-systems?version=current">NHS England Naming Systems</td>
-<td>Registry</td>
-<td>A registry of NamingSystems that are managed and allocated by HL7 UK.</td>
-<td>NHS England</td>
-<td>R4</td>
+<th class="width20">Name</th>
+<th class="width20">Type</th>
+<th class="width40">Description</th>
+<th class="width10">Publisher</th>
+<th class="width10">FHIR Version</th>
 </tr>
+</thead>
+<tbody>
 
 <tr>
 <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1?version=current">NHS England Implementation Guide STU1</td>
@@ -62,14 +57,24 @@ The scope of this Implementation Guide is for programmes and products within NHS
 <td>R4</td>
 </tr>
 
-<tr>
-<td><a href="https://simplifier.net/guide/nhs-england-design-and-development-approach?version=current">NHS England Design and Development Approach</td>
-<td>Guidance</td>
-<td>The design and development approach used to produce the NHS England IG</td>
-<td>NHS England</td>
-<td>R4</td>
-</tr>
+</tbody>
+</table>
 
+<br /><br />
+
+## Programme Implementation Guides
+
+<table class="assets" title="NHS England Future IG list">
+<thead>
+<tr>
+<th class="width20">Name</th>
+<th class="width20">Type</th>
+<th class="width40">Description</th>
+<th class="width10">Publisher</th>
+<th class="width10">FHIR Version</th>
+</tr>
+</thead>
+<tbody>
 
 <tr>
 <td><a href="https://simplifier.net/nhs-england-programme-implementation-guides">NHS England Programme Implementation Guides</td>
@@ -105,6 +110,64 @@ The scope of this Implementation Guide is for programmes and products within NHS
 
 </tbody>
 </table>
+
+
+<br /><br />
+
+## Registries
+<table class="assets" title="NHS England Future IG list">
+<thead>
+<tr>
+<th class="width20">Name</th>
+<th class="width20">Type</th>
+<th class="width40">Description</th>
+<th class="width10">Publisher</th>
+<th class="width10">FHIR Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">NHS England Implementation Guide Version History</td>
+<td>Registry</td>
+<td>A registry of the version of the NHS England and the change history of each version.</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>
+
+<tr>
+<td><a href="https://simplifier.net/guide/nhs-england-naming-systems?version=current">NHS England Naming Systems</td>
+<td>Registry</td>
+<td>A registry of NamingSystems that are managed and allocated by HL7 UK.</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>
+</tbody>
+</table>
+
+<br /><br />
+
+## Clinical and Technical Assurance
+<table class="assets" title="NHS England Future IG list">
+<thead>
+<tr>
+<th class="width20">Name</th>
+<th class="width20">Type</th>
+<th class="width40">Description</th>
+<th class="width10">Publisher</th>
+<th class="width10">FHIR Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://simplifier.net/guide/nhs-england-ig-clinical-and-technical-assurance-doc-pack?version=current">NHS England IG Clinical and Technical Assurance Sprint 1 Documentation Pack</td>
+<td>Implementation Guidance</td>
+<td>The purpose of this pack is to provide guidance documentation for stakeholders involved in the NHS England Implementation Guide Clinical and Technical Assurance (C&TA) process.</td>
+<td>NHS England</td>
+<td>R4</td>
+</tr>
+</tbody>
+</table>
+
 <br>
 
 <div markdown="span" class="alert alert-warning" role="alert"><h4 id="Licence"><i class="fas fa-gavel"></i> Licensing and Publisher</h4>

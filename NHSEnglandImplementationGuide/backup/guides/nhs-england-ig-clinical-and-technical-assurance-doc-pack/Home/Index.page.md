@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The purpose of this pack is to provide guidance documentation for stakeholders involved in the NHS England Implementation Guide Clinical and Technical Assurance (C&TA) process. The audiences for this documentation are internal NHS England programmes, external stakeholders and implementation sites using FHIR specifications. It is assumed that the reader has a basic understanding of HL7 FHIR (R4 version).
+The purpose of this pack is to provide guidance documentation for stakeholders involved in the NHS England Implementation Guide Clinical and Technical Assurance (C&TA) process. The audiences for this documentation are internal NHS England programmes, external stakeholders and implementation sites using FHIR specifications. It is assumed that the reader has a basic understanding of [HL7 FHIR](https://www.hl7.org/fhir/r4/index.html "HL7 R4") (R4 version).
 
 ## Pack Structure
 

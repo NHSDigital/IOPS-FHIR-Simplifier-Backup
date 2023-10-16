@@ -13,6 +13,5 @@ select
 	Description: description
 ```
 
-{{page:home/terminology/all-codesystems/codesystemtemplate.page.md}}
-
+{{render:Home-Terminology-All-CodeSystems-CodeSystemTemplate}}
 

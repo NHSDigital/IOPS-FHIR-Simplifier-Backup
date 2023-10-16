@@ -18,13 +18,13 @@ select
 </div>
 
 <table id="addToTranspose">
-<tr><td>Context of Use</td>
-<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Flag?version=current' target="_blank">Profile-UKCore-Flag</td>
+<tr><td>Context of Use: </td>
+<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Flag?version=current' target="_blank">Flag</td>
 </tr>
 </table>
 <br>
 
-{{page:home/profiles-and-extensions/extensionstemplate.page.md}}
+{{render:Home-Profiles-and-Extensions-ExtensionsTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
