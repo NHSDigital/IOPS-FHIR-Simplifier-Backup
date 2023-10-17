@@ -18,9 +18,10 @@ Other ValueSets are usable if the binding strength is defined as extensible.
 <table id="valuesetlist" title= "List of all ValueSets and CodeSystems">
 <thead>
 <tr>
-<th class="width50" scope="col">ValueSet</th>
+<th class="width45" scope="col">ValueSet</th>
 <th class="width05" scope="col">Status</th>
-<th class="width40" scope="col">Bound in Profile/Extension</th>
+<th class="width20" scope="col">Context of Use</th>
+<th class="width25" scope="col">Bound in Profile/Extension</th>
 </tr>
 </thead>
 <tbody>
@@ -29,6 +30,7 @@ Other ValueSets are usable if the binding strength is defined as extensible.
 <td>{{pagelink:ValueSet-England-ChildProtectionPlan}}</td>
 <td>draft</td>
 <td><a href='https://www.hl7.org/fhir/r4/careteam.html' target="_blank">CareTeam</td>
+<td></td>
 </tr>
 <tr>
 <td colspan="4">Composed of CodeSystem <code>http://snomed.info/sct</code></td>
@@ -41,6 +43,7 @@ Other ValueSets are usable if the binding strength is defined as extensible.
 <td>{{pagelink:ValueSet-England-FGMRemovalReason}}</td>
 <td>draft</td>
 <td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Flag?version=current' target="_blank">Profile-UKCore-Flag</td>
+<td></td>
 </tr>
 <tr>
 <td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-England-FGMRemovalReason}}</td>
@@ -50,12 +53,13 @@ Other ValueSets are usable if the binding strength is defined as extensible.
 </tr>
 
 <tr>
-<td>{{pagelink:ValueSet-England-RoleCode}}</td>
+<td>{{pagelink:ValueSet-England-ODSOrganisationRoleCode}}</td>
 <td>draft</td>
 <td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current' target="_blank">Profile-UKCore-Organization</td>
+<td></td>
 </tr>
 <tr>
-<td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-England-RoleCode}}</td>
+<td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-England-ODSOrganisationRoleCode}}</td>
 </tr>
 
 </tbody>
