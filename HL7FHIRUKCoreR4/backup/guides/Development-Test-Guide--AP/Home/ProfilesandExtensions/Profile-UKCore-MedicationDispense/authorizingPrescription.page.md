@@ -1,4 +1,47 @@
 ## `authorizingPrescription`
+
+<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert">
+<div id="transpose">
+@```
+from
+	StructureDefinition
+where
+	name = 'UKCoreMedicationDispense'
+select name,
+join for snapshot.element 
+select
+ id,short,definition,comment,
+ Minimum_Cardinality:min,
+ Maximum_Cardinality:max
+where id = 'MedicationDispense.partOf'
+```
+<table class="baseFhir" title="Element Details">
+<tr>
+<td class="width40"><b>Short Description</b></td>
+<td class="width60">	Medication order that authorizes the dispense</td>
+</tr>
+<tr>
+<td class="width40"><b>Definition</b></td>
+<td class="width60">Indicates the medication order that is being dispensed against.</td>
+</tr>
+<tr>
+<td class="width40"><b>Comment</b></td>
+<td class="width60">Maps to basedOn in Event logical model.</td>
+</tr>
+<tr>
+<td class="width40"><b>Cardinality</b></td>
+<td class="width60">0..*</td>
+</tr>
+<tr>
+<td class="width40"><b>Maximum Cardinality</b></td>
+<td class="width60">*</td>
+</tr>
+</table>
+
+</div>
+</div>
+
+
 This is a required element where the prescription is known and available when constructing the `MedicationDispense` resource.
 
 **Supply Events**

@@ -8,8 +8,8 @@
   filename: partOf.page.md
 - name: status
   filename: status.page.md
-- name: statusReason
-  filename: statusReason.page.md
+- name: statusReason[x]
+  filename: statusReason-x.page.md
 - name: medication[x]
   filename: medicationx.page.md
 - name: subject
