@@ -26,7 +26,7 @@ gplocal --> gpcentral: Patient successfully registered
 
 <br /><br />
 
- #### An Example Of Patient Registration Request
+#### An Example Of Patient Registration Request
 
 <div>
 <div class="tab">
@@ -41,7 +41,7 @@ gplocal --> gpcentral: Patient successfully registered
 </div>
 </div>
 
-
+<br /><br />
 #### An Example of Patient Registration Request successfully received
 
 <div>
@@ -57,7 +57,7 @@ gplocal --> gpcentral: Patient successfully registered
 </div>
 </div>
 
-
+<br /><br />
 #### An Example of Patient successfully registered
 
 <div>

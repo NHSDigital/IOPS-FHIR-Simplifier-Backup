@@ -1,0 +1,210 @@
+{
+    "resourceType": "Bundle",
+    "id": "920a46b7-045a-4773-82bd-8e90c3e15653",
+    "type": "history",
+    "timestamp": "2022-04-05T17:31:00.000Z",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:c6ca3f0a-2470-407d-b0f4-c3dc70ab153b",
+            "resource": {
+                "resourceType": "Parameters",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status-r4"
+                    ]
+                },
+                "id": "236a1d4a-5d69-4fa9-9c7f-e72bf505aa5b",
+                "parameter": [
+                    {
+                        "name": "subscription",
+                        "valueReference": {
+                            "reference": "http://fhir.nhs.uk/R5/Subscription/pds-change-of-gp-1-subscription"
+                        }
+                    },
+                    {
+                        "name": "topic",
+                        "valueCanonical": "http://fhir.nhs.uk/R5/SubscriptionTopic/pds-change-of-gp-1"
+                    },
+                    {
+                        "name": "status",
+                        "valueCode": "active"
+                    },
+                    {
+                        "name": "type",
+                        "valueCode": "event-notification"
+                    },
+                    {
+                        "name": "events-since-subscription-start",
+                        "valueString": "2"
+                    },
+                    {
+                        "name": "notification-event",
+                        "part": [
+                            {
+                                "name": "event-number",
+                                "valueString": "1"
+                            },
+                            {
+                                "name": "timestamp",
+                                "valueInstant": "2022-01-07T15:06:00+00:00"
+                            },
+                            {
+                                "name": "focus",
+                                "valueReference": {
+                                    "reference": "https://int.api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9912003888"
+                                }
+                            },
+                            {
+                                "name": "additional-context",
+                                "valueReference": {
+                                    "reference": "urn:uuid:96b132b7-d169-4b93-a640-07e0ab6a3758",
+                                    "display": "Subject"
+                                }
+                            },
+                            {
+                                "name": "additional-context",
+                                "valueReference": {
+                                    "reference": "urn:uuid:ed1a6a7b-0d25-4216-893d-484c9d769f8a",
+                                    "display": "Provenance"
+                                }
+                            },
+                            {
+                                "name": "additional-context",
+                                "valueReference": {
+                                    "reference": "urn:uuid:45e2534c-56f7-45e9-b189-e070b694159a",
+                                    "display": "Source"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "request": {
+                "method": "GET",
+                "url": "https://example.org/fhir/Subscription/admission/$status"
+            },
+            "response": {
+                "status": "200"
+            }
+        },
+        {
+            "fullUrl": "https://example.org/FHIR/R4/Encounter/2",
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "2",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2019-08-07T10:49:22Z"
+                },
+                "identifier": [
+                    {
+                        "system": "https://fhir.yorkhospitals.nhs.uk/Id/visitId",
+                        "value": "11554"
+                    }
+                ],
+                "status": "in-progress",
+                "class": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "VR",
+                    "display": "virtual"
+                },
+                "type": [{
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/registrationEncounterCode",
+                            "code": "03"
+                        }
+                    ]
+                }],
+                "subject": {
+                    "reference": "https://example.org/fhir/Patient/1599eb66-431a-447c-a3de-6897fe9ae9a1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/2"
+            },
+            "response": {
+                "status": "201"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:96b132b7-d169-4b93-a640-07e0ab6a3758",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "96b132b7-d169-4b93-a640-07e0ab6a3758",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9912003888"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "DAWKINS"
+                    }
+                ],
+                "birthDate": "2017-10-02"
+            },
+            "request": {
+                "method": "GET",
+                "url": "Patient/96b132b7-d169-4b93-a640-07e0ab6a3758"
+            },
+            "response": {
+                "status": "200"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:ed1a6a7b-0d25-4216-893d-484c9d769f8a",
+            "resource": {
+                "resourceType": "Provenance",
+                "id": "ed1a6a7b-0d25-4216-893d-484c9d769f8a",
+                "target": [
+                    {
+                        "reference": "https://int.api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9912003888"
+                    }
+                ],
+                "recorded": "2022-04-05T17:31:00.000Z",
+                "agent": [
+                    {
+                        "who": {
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/nhsSpineASID",
+                                "value": "477121000323"
+                            },
+                            "display": "The GP Practice"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "GET",
+                "url": "Provenance/ed1a6a7b-0d25-4216-893d-484c9d769f8a"
+            },
+            "response": {
+                "status": "200"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:45e2534c-56f7-45e9-b189-e070b694159a",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "45e2534c-56f7-45e9-b189-e070b694159a",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhsSpineASID",
+                        "value": "477121000324"
+                    }
+                ],
+                "name": "NHS Digital"
+            },
+            "request": {
+                "method": "GET",
+                "url": "Organization/45e2534c-56f7-45e9-b189-e070b694159a"
+            },
+            "response": {
+                "status": "200"
+            }
+        }
+    ]
+}

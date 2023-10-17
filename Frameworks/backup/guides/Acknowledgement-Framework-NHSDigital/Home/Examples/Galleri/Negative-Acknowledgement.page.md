@@ -17,24 +17,30 @@ nhsenglandgps --> grailuk: Send negative acknowledgement
 
 <div>
 <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
+  <button class="tablinks active" onclick="openTab(event, 'XML')">XML</button>
 </div>
 <div id="XML" class="tabcontent" style="display:block">
 {{xml:f50c58ea-543f-4530-99fa-ceb7b9dbbed5}}
 </div>
 </div>
 
+<br /><br />
 #### An Example to Receive Negative acknowledgement response
 
 <div>
 <div class="tab">
+<button class="tablinks active" onclick="openTab(event, 'JSON')">JSON</button>
  <button class="tablinks" onclick="openTab(event, 'XML')">XML</button> 
 </div>
-<div id="XML" class="tabcontent" style="display:block">
+<div id="XML" class="tabcontent">
 {{xml:6e7b1dbb-77d2-4ddd-ae0d-e4862a306c1d}}
+</div>
+<div id="JSON" class="tabcontent" style="display:block">
+{{json:6e7b1dbb-77d2-4ddd-ae0d-e4862a306c1d}}
 </div>
 </div>
 
+<br /><br />
 ### Negative Acknowledgement of Test Result (Cancer Markers Detected) - Missing Mandatory Element 
 
 The test result from GRAIL (UK) should include all FHIR elements that are mandatory (with a minimum cardinality of 1). However, the test result sent to NHS England (GPS) is missing a FHIR element that is mandatory. So a negative acknowledgement is sent to GRAIL (UK).
@@ -63,7 +69,7 @@ nhsenglandgps --> grailuk: Send negative acknowledgement
 </div>
 </div>
 
-
+<br /><br />
 #### An Example to Receive Bio Sampling Test Report Negative acknowledgement response
 
 <div>
