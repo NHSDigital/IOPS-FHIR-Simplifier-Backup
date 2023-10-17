@@ -71,6 +71,11 @@ hr.thickline{
     height: 2px;
     background-color:#990000;
 }
+hr.nomargin{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
 
  .tab {
      overflow: hidden;
@@ -199,18 +204,39 @@ table.assets tr td.balloted {
      color: white !important;
 }
 
-
+ th.width05 { width: 5%; overflow-wrap: anywhere; }
+ th.width10 { width: 10%; overflow-wrap: anywhere; }
+ th.width15 { width: 15%; overflow-wrap: anywhere; }
  th.width20 { width: 20%; overflow-wrap: anywhere; }
  th.width25 { width: 25%; overflow-wrap: anywhere; }
  th.width30 { width: 30%; overflow-wrap: anywhere; }
+ th.width33 { width: 33%; overflow-wrap: anywhere; }
  th.width35 { width: 35%; overflow-wrap: anywhere; }
  th.width40 { width: 40%; overflow-wrap: anywhere; }
-
+ th.width45 { width: 45%; overflow-wrap: anywhere; }
+ th.width50 { width: 50%; overflow-wrap: anywhere; }
+ th.width55 { width: 55%; overflow-wrap: anywhere; }
+ th.width60 { width: 60%; overflow-wrap: anywhere; }
+ th.width65 { width: 65%; overflow-wrap: anywhere; }
+ th.width70 { width: 70%; overflow-wrap: anywhere; }
+ th.width75 { width: 75%; overflow-wrap: anywhere; }
+ 
+ td.width05 { width: 5%; overflow-wrap: anywhere; }
+ td.width10 { width: 10%; overflow-wrap: anywhere; }
+ td.width15 { width: 15%; overflow-wrap: anywhere; }
  td.width20 { width: 20%; overflow-wrap: anywhere; }
  td.width25 { width: 25%; overflow-wrap: anywhere; }
  td.width30 { width: 30%; overflow-wrap: anywhere; }
+ td.width33 { width: 33%; overflow-wrap: anywhere; }
  td.width35 { width: 35%; overflow-wrap: anywhere; }
  td.width40 { width: 40%; overflow-wrap: anywhere; }
+ td.width45 { width: 45%; overflow-wrap: anywhere; }
+ td.width50 { width: 50%; overflow-wrap: anywhere; }
+ td.width55 { width: 55%; overflow-wrap: anywhere; }
+ td.width60 { width: 60%; overflow-wrap: anywhere; }
+ td.width65 { width: 65%; overflow-wrap: anywhere; }
+ td.width70 { width: 70%; overflow-wrap: anywhere; }
+ td.width75 { width: 75%; overflow-wrap: anywhere; }
 
  .underconstruction {
      display: grid;
@@ -382,7 +408,7 @@ td.frm-set {
 
 
 /*recreating base simplifier table.regular class to enable display override for showing/hiding */
-#preview-content table.codes {
+#preview-content table.codes, #preview-content table.baseFhir {
     border: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
     width: 100%;
@@ -394,12 +420,14 @@ td.frm-set {
     margin-bottom: 10px;
 }
 
-#preview-content table.codes tbody,#preview-content table.codes tfoot,#preview-content table.codes thead {
+#preview-content table.codes tbody,#preview-content table.codes tfoot,#preview-content table.codes thead, 
+#preview-content table.baseFhir tbody {
     width: 100%;
     border-color: #e0e0e0
 }
 
-#preview-content table.codes thead,#preview-content table.codes tr:not(:last-child) {
+#preview-content table.codes thead,#preview-content table.codes tr:not(:last-child), 
+#preview-content table.baseFhir tr:not(:last-child) {
     border-bottom: 1px solid #e0e0e0
 }
 
@@ -407,17 +435,20 @@ td.frm-set {
     background-color: #f9f9f9
 }
 
-#preview-content table.codes tbody td {
+#preview-content table.codes tbody td, 
+#preview-content table.baseFhir tbody td {
     background-color: #fff
 }
 
-#preview-content table.codes td,#preview-content table.codes th{
+#preview-content table.codes td,#preview-content table.codes th, 
+#preview-content table.baseFhir td,#preview-content table.baseFhir th{
     padding: 5px;
     color: #000;
     border-color: #e0e0e0
 }
 
-#preview-content table.codes td:not(:last-child),#preview-content table.codes th:not(:last-child) {
+#preview-content table.codes td:not(:last-child),#preview-content table.codes th:not(:last-child), 
+#preview-content table.baseFhir td:not(:last-child),#preview-content table.baseFhir th:not(:last-child) {
     border-right: 1px solid #e0e0e0;
 }
 
@@ -480,4 +511,23 @@ table.codes thead tr:first-child th.orderable button:hover .sort-icon {
   border-bottom: 3px solid #231f20;
   color: #231f20;
   background-color: #ddd;
+}
+
+h2 code {
+    cursor: pointer;
+}
+
+
+.alert-baseFhir {
+    background-color: #f5f5f5;
+    border-color: #919ea8;
+    color: #231f20
+}
+
+.alert-baseFhir hr {
+    border-top-color: #a6e1ec
+}
+
+.alert-baseFhir .alert-link {
+    color: #245269
 }

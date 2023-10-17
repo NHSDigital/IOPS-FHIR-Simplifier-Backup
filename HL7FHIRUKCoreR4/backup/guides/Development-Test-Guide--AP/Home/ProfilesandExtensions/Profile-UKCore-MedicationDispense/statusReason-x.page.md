@@ -1,4 +1,4 @@
-## `{{page-title}}`
+## `statusReason[x]`
 
 <div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert">
 <div id="transpose">
@@ -18,11 +18,11 @@ where id = 'MedicationDispense.partOf'
 <table class="baseFhir" title="Element Details">
 <tr>
 <td class="width40"><b>Short Description</b></td>
-<td class="width60">Encounter / Episode associated with event</td>
+<td class="width60">Why a dispense was not performed</td>
 </tr>
 <tr>
 <td class="width40"><b>Definition</b></td>
-<td class="width60">The encounter or episode of care that establishes the context for this event.</td>
+<td class="width60">Indicates the reason why a dispense was not performed.</td>
 </tr>
 <tr>
 <td class="width40"><b>Comment</b></td>
@@ -33,18 +33,18 @@ where id = 'MedicationDispense.partOf'
 <td class="width60">0..1</td>
 </tr>
 <tr>
-<td class="width40"><b>Maximum Cardinality</b></td>
-<td class="width60">1</td>
+<td class="width40"><b>Data Type</b></td>
+<td class="width60">CodeableConcept: http://hl7.org/fhir/ValueSet/medicationdispense-status-reason (example)<hr class="nomargin">Reference: http://hl7.org/fhir/StructureDefinition/DetectedIssue
+</td>
+</tr>
 </tr>
 </table>
 
 </div>
 </div>
 
-The resource being referenced SHALL conform to one of the following:
+A coded reason for why a dispense was not performed.
 
-- {{pagelink:Profile-Encounter}}
-- <a href="https://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+This elementSHOULD only be populated when the `MedicationDispense.status` is either `cancelled`, `stopped` or `declined`.
 
 ---
-
