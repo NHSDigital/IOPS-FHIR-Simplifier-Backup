@@ -12,9 +12,11 @@
             "fullUrl": "urn:uuid:c6ca3f0a-2470-407d-b0f4-c3dc70ab153b",
             "resource": {
                 "resourceType": "Parameters",
-                "profile" : [
-                    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification"
-                  ],
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status-r4"
+                    ]
+                },
                 "parameter": [
                     {
                         "name": "subscription",
@@ -24,7 +26,7 @@
                     },
                     {
                         "name": "topic",
-                        "valueString": "http://hl7.org/SubscriptionTopic/admission"
+                        "valueCanonical": "http://hl7.org/SubscriptionTopic/admission"
                     },
                     {
                         "name": "status",

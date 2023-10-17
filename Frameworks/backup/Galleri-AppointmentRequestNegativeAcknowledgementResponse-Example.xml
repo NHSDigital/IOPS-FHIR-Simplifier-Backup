@@ -6,32 +6,22 @@
     <resource>
       <MessageHeader>
         <eventCoding>
-          <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
-          <code value="notification" />
-          <display value="Event Notification" />
+            <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
+            <code value="notification" />
+            <display value="Event Notification" />
         </eventCoding>
         <destination>
-          <name value="GRAIL (UK)" />
-          <endpoint value="https://uk.grail.com/api" />
-          <receiver>
-            <reference value="urn:uuid:ff09cccc-2c9b-4238-91d2-66fa6ee845c3" />
-            <display value="GRAIL (UK)" />
-          </receiver>
+            <name value="GRAIL (UK)" />
+			<endpoint value="${GrailMeshMailboxId}" />
         </destination>
         <source>
-          <name value="NHS England" />
-          <version value="0.0.5" />
-          <contact>
-            <system value="email" />
-            <value value="helpdesk@england.nhs.net" />
-          </contact>
-          <endpoint value="https://gps.digital.nhs.uk/api" />
+			<endpoint value="${NhsMeshMailboxId}" />
         </source>
         <response>
-          <identifier value="6f4256fa-cd14-4f96-899e-008643d84ff8" />
+          <identifier value="f50c58ea-543f-4530-99fa-ceb7b9dbbed5" />
           <code value="fatal-error" />
           <details>
-            <reference value="urn:uuid:6e7b1dbb-77d2-4ddd-ae0d-e4862a306c1c" />
+            <reference value="d9c93f48-abb9-4aa4-aa22-ef2f76485477" />
           </details>
         </response>
       </MessageHeader>
@@ -41,6 +31,7 @@
     <fullUrl value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome" />
     <resource>
       <OperationOutcome>
+	    <id value="d9c93f48-abb9-4aa4-aa22-ef2f76485477" />
         <issue>
           <severity value="fatal" />
           <code value="structure" />
