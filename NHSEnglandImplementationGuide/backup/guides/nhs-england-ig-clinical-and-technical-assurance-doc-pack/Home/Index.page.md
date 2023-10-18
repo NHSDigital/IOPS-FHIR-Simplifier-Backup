@@ -11,7 +11,7 @@ This pack contains the guidance and reference material required to participate i
 ## Background
 This sprint involves creating a review pack for external consultation, including a first draft of mapping by the NHS England IG Development team, which is published to the external community for a review period of 15 working days.
 
-Documentation is available online for the Clinical and Technical Assurance process. The documentation will give background information to allow the reader to take part in the C&TA process.
+Documentation is available online for the [Clinical and Technical Assurance](https://simplifier.net/guide/nhs-england-design-and-development-approach/Home/Assurance---Endorsement/Clinical-and-Technical-Assurance.page.md?version=current) process. The documentation will give background information to allow the reader to take part in the C&TA process.
 
 ## Clinical & Technical Assurance Sprint Calls
 

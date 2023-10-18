@@ -246,7 +246,12 @@ The roles and responsibilities for the process can be viewed in <a href="#append
 ### Key Steps in the Clinical and Technical Assurance process
 The diagram describes the key steps in the process and each step is described in more detail below.   
 
+
+<a href="https://nhs.sharepoint.com/sites/msteams_67ef67/Shared%20Documents/Products,%20Projects,%20and%20Programmes/NHS%20England%20IG/NHSEAssureance.png?csf=1&web=1&e=b7gWMN&cid=3c22c02f-0006-49d5-9e31-d257b08bf980">image</a>
+
 {{render:NHSEAssureance}}
+
+
 
 {{render:ClinicalandTechnicalAssuranceProcess}}
 
