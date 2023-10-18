@@ -7,10 +7,10 @@
   <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
 </div>
 <div id="XML" class="tabcontent">
-{{xml:a6a6a92a-8247-4250-b1c7-10cda16f0310}}
+{{xml:FGM-ActiveFlag-Example}}
 </div>
 <div id="JSON" class="tabcontent" style="display:block">
-{{json:a6a6a92a-8247-4250-b1c7-10cda16f0310}}
+{{json:FGM-ActiveFlag-Example}}
 </div>
 
 

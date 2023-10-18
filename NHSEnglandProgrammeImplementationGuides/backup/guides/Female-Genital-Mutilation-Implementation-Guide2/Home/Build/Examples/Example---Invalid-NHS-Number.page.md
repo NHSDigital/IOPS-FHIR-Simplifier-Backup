@@ -7,8 +7,8 @@
   <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
 </div>
 <div id="XML" class="tabcontent">
-{{xml:22daadee-26e1-4d6a-9e6a-7f4af9b58877}}
+{{xml:FGM-InvalidNHSNumber-Example}}
 </div>
 <div id="JSON" class="tabcontent" style="display:block">
-{{json:22daadee-26e1-4d6a-9e6a-7f4af9b58877}}
+{{json:FGM-InvalidNHSNumber-Example}}
 </div>
