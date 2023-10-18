@@ -1,0 +1,38 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="FGM-BundleWithFoundFlag-Example" />
+    <type value="searchset" />
+    <total value="1" />
+    <link>
+        <relation value="self" />
+        <url value="https:baseurl/Flag?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9000000009" />
+    </link>
+    <entry>
+        <fullUrl value="https://baseurl/Flag/218755" />
+        <resource>
+            <Flag>
+                <id value="a6a6a92a-8247-4250-b1c7-10cda16f0310" />
+                <status value="active" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="902961000000107" />
+                        <display value="Family history of FGM (female genital mutilation)" />
+                    </coding>
+                    <text value="Family history of FGM (female genital mutilation)" />
+                </code>
+                <subject>
+                    <identifier>
+                        <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                        <value value="9000000009" />
+                    </identifier>
+                </subject>
+                <period>
+                    <start value="2019-12-10" />
+                </period>
+            </Flag>
+        </resource>
+        <search>
+            <mode value="match" />
+        </search>
+    </entry>
+</Bundle>
