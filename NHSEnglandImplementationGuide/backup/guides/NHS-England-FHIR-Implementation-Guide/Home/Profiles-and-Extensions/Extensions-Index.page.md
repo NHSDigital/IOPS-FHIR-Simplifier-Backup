@@ -20,7 +20,7 @@ Additional guidance is available on <a href="https://simplifier.net/guide/UK-Cor
 </tr>
 
 <tr>
-<td>{{pagelink:Extension-England-FGMRemovalReason}}</td>
+<td>{{pagelink:Extension-England-FlagRemovalReason}}</td>
 <td>draft</td>
 <td>Flag</td>
 <td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Flag?version=current' target="_blank">UK Core Flag</td>

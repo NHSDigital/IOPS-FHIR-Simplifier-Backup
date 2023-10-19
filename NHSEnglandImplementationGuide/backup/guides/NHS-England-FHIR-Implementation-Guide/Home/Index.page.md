@@ -23,12 +23,12 @@ The scope of this Implementation Guide is for programmes and products within NHS
       {{pagelink:ValueSet-England-ChildProtectionPlan, text:ValueSet-England-ChildProtectionPlan}} 
     </td>
     <td> 
-      {{pagelink:CodeSystem-England-ODSOrganisationRoleCode, text:CodeSystem-England-ODSOrganisationRoleCode}}
+      {{pagelink:CodeSystem-England-ODSOrganisationRole, text:CodeSystem-England-ODSOrganisationRole}}
     </td>
    </tr>
    <tr>
     <td>
-      {{pagelink:Extension-England-FGMRemovalReason, text:Extension-England-FGMRemovalReason}} 
+      {{pagelink:Extension-England-FlagRemovalReason, text:Extension-England-FlagRemovalReason}} 
     </td>
     <td>
     </td>
@@ -38,12 +38,12 @@ The scope of this Implementation Guide is for programmes and products within NHS
    </tr>
    <tr>
     <td>
-      {{pagelink:ValueSet-England-FGMRemovalReason, text:ValueSet-England-FGMRemovalReason}} 
+      {{pagelink:ValueSet-England-FlagRemovalReason, text:ValueSet-England-FlagRemovalReason}} 
     </td>
     <td>
     </td>
     <td>
-     {{pagelink:ValueSet-England-ODSOrganisationRoleCode, text:ValueSet-England-ODSOrganisationRoleCode}}
+     {{pagelink:ValueSet-England-OrganisationRole, text:ValueSet-England-OrganisationRole}}
     </td>
    </tr>
    </tbody>
