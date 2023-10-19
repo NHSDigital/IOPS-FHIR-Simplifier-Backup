@@ -6,7 +6,7 @@ This specification is currently defined as in "Discovery" and as such is provide
 
 For further information please contact: [england.contactus@nhs.net](mailto:england.contactus@nhs.net)
 
-The **FHIR Genomics IG** Specification defines a set of draft HL7 FHIR R4 profiles to support the exchange of genetic testing requests and results. **This release focuses on supporting improvements to the test ordering process for non-WGS and WGS genomic testing pathways identified to support piloting of a technical implementation to improve digital interoperability.**
+The **FHIR Genomics IG** Specification defines a set of draft HL7 FHIR R4 profiles to support the exchange of genetic testing requests and results. **This release focuses on supporting improvements to the test ordering process for non-WGS and WGS genomic testing pathways identified to support piloting of a technical implementation to improve digital interoperability. Guidance on the content of results is restricted to return of a PDF using DiagnosticReport at this early stage, future releases will expand on structured genetic resulting data.**
 
 This Specification supports the ability to request genomic testing and receive results in NHS primary and secondary care settings. The scope of this guide is NHS England, though the rules and constraints defined are expected to apply to UK-wide Genomic Testing. 
 
