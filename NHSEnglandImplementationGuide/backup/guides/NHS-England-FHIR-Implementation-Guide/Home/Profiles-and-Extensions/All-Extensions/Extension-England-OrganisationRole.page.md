@@ -1,5 +1,5 @@
 ---
-subject: https://fhir.nhs.uk/England/StructureDefinition/Extension-England-ODSOrganisationRole
+subject: https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole
 ---
 
 ## StructureDefinition Extension-England-OrganisationRole
@@ -9,7 +9,7 @@ subject: https://fhir.nhs.uk/England/StructureDefinition/Extension-England-ODSOr
 from
 	StructureDefinition
 where
-	name = 'ExtensionEnglandODSOrganisationRole'
+	name = 'ExtensionEnglandOrganisationRole'
 select
 	Canonical_URL: url,
 	Description: description,

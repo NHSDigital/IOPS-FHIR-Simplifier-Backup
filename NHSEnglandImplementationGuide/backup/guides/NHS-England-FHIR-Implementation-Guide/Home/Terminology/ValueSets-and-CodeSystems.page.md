@@ -40,7 +40,7 @@ Other ValueSets are usable if the binding strength is defined as extensible.
 </tr>
 
 <tr>
-<td>{{pagelink:ValueSet-England-FGMRemovalReason}}</td>
+<td>{{pagelink:ValueSet-England-FlagRemovalReason}}</td>
 <td>draft</td>
 <td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Flag?version=current' target="_blank">Flag</td>
 <td></td>
@@ -53,13 +53,13 @@ Other ValueSets are usable if the binding strength is defined as extensible.
 </tr>
 
 <tr>
-<td>{{pagelink:ValueSet-England-ODSOrganisationRoleCode}}</td>
+<td>{{pagelink:ValueSet-England-OrganisationRole}}</td>
 <td>draft</td>
 <td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current' target="_blank">Organization</td>
 <td></td>
 </tr>
 <tr>
-<td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-England-ODSOrganisationRoleCode}}</td>
+<td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-England-ODSOrganisationRole}}</td>
 </tr>
 
 </tbody>
