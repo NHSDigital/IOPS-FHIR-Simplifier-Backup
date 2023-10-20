@@ -9,7 +9,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSig
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Profile added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-BloodPressure/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BloodPressure<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-BloodPressure/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BloodPressure</a>.
 </div>
 
 <div id="transpose">
@@ -143,7 +143,7 @@ The minimum viable content that all provider and consumer systems SHALL support 
 <td>A measurement method SHOULD be present.</td>
 </tr>
 <tr>
-<td><code>Observation.component.copde.coding</code></td>
+<td><code>Observation.component.code.coding</code></td>
 <td>A systolic blood pressure measurement SHALL be present, and that SHALL have a LOINC "magic code", in addition to the SNOMED CT concept for the systolic blood pressure observation.
 <br>A diastolic blood pressure measurement SHOULD be present, and that SHALL have a LOINC "magic code", in addition to the SNOMED CT concept for the diastolic blood pressure observation.
 </td>
