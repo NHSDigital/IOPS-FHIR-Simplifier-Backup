@@ -1,6 +1,40 @@
-- name: R4 Examples
-  filename: R4-Examples.page.md
-- name: STU3 Examples (Legacy)
-  filename: STU3-Examples--Legacy.page.md
-- name: All Examples
-  filename: All-Examples
+- name: Examples Index
+  filename: Examples-Index.page.md
+- name: Haemoglobin A1C (HbA1c) Request
+  filename: Haemoglobin-A1C--HbA1c--Request.page.md
+- name: 'Haemoglobin A1C (HbA1c) Report '
+  filename: Haemoglobin-A1C--HbA1c--Report.page.md
+- name: Full Blood Count (FBC) Request
+  filename: Full-Blood-Count--FBC--Request.page.md
+- name: Full Blood Count (FBC) Report
+  filename: Full-Blood-Count--FBC--Report.page.md
+- name: Hepatitis B Surface Antigen (HBsAg) Request
+  filename: Hepatitis-B-Surface-Antigen--HBsAg--Request.page.md
+- name: Hepatitis B Surface Antigen (HBsAg) Report
+  filename: Hepatitis-B-Surface-Antigen--HBsAg--Report.page.md
+- name: 'HPV Primary Screening Request '
+  filename: HPV-Primary-Screening-Request.page.md
+- name: HPV Primary Screening Report
+  filename: HPV-Primary-Screening-Report.page.md
+- name: Liver Function and U&Es Request
+  filename: Liver-Function-and-U-Es-Request.page.md
+- name: Liver Function and U&Es Report
+  filename: Liver-Function-and-U-Es-Report.page.md
+- name: 'Glucose Tolerance Test (GTT) Request '
+  filename: Glucose-Tolerance-Test--GTT--Request.page.md
+- name: Glucose Tolerance Test (GTT) Report
+  filename: Glucose-Tolerance-Test--GTT--Report.page.md
+- name: Urine Microscopy, Culture and Sensitivity Request
+  filename: Urine-Microscopy--Culture-and-Sensitivity-Request.page.md
+- name: Urine Microscopy, Culture and Sensitivity Report
+  filename: Urine-Microscopy--Culture-and-Sensitivity-Report.page.md
+- name: DiagnosticReport Snippets
+  filename: DiagnosticReport-Snippets.page.md
+- name: Observation (Test Group) Snippets
+  filename: Observation--Test-Group--Snippets.page.md
+- name: Observation (Test Result) Snippets
+  filename: Observation--Test-Result--Snippets.page.md
+- name: ServiceRequest Snippets
+  filename: ServiceRequest-Snippets.page.md
+- name: Specimen Snippets
+  filename: Specimen-Snippets.page.md

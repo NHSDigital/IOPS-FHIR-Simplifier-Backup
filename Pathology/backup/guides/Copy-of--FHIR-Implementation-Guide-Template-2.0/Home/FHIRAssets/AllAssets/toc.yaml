@@ -2,8 +2,6 @@
   filename: Index.page.md
 - name: Profile Descriptions
   filename: Profile-Descriptions.page.md
-- name: All STU3 Profiles
-  filename: All-STU3-Profiles
 - name: All R4 Profiles
   filename: All-R4-Profiles
 - name: All STU3 Extensions

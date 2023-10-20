@@ -2,7 +2,7 @@
 topic: ProfileDescriptions
 ---
 ## Profile Descriptions
-This specification documents the use of STU3 (CareConnect) and R4 (UK Core) profiles to support the exchange of pathology test related data. Each profile is documented as follows:
+This specification documents the use of R4 (UK Core) profiles to support the exchange of pathology test related data. Each profile is documented as follows:
 
 ### Summary
 A brief description of the profile.
