@@ -1,4 +1,3 @@
-
 ### Overview
 Simplifier is the chosen platform for NHS England IG development. Further information about Simplifier can be found on the [Simplifier homepage](https://simplifier.net).
 
@@ -17,6 +16,9 @@ This section gives a brief overview on how GitHub and Simplifier is integrated w
 The FHIR assets on GitHub are manually imported into Simplifier using the 'Reimport' function. However, files such as diagrams are not stored in GitHub and are imported manually via Simplifier File Manager.
 
 The current approach is illustrated below:
+<br>
+
+{{render:GitHubSetup}}
 
 Diagram 1: Re-import FHIR assets from GitHub into Simplifier 
 
