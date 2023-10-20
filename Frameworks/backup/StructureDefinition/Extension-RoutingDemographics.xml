@@ -1,0 +1,151 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-RoutingDemographics" />
+  <version value="1.1.1" />
+  <name value="ExtensionRoutingDemographics" />
+  <status value="draft" />
+  <date value="2019-07-05T14:27:45.637+01:00" />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Demographic details including NHS number, Name and Date of Birth to allow Event Message Routing in Event Messaging." />
+  <purpose value="To allow Event Message Routing in Event Messaging" />
+  <copyright value="Copyright © 2019 NHS Digital" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MessageHeader" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="An Extension to carry a summary of the patient's demographics." />
+      <definition value="An Extension to carry a summary of the patient's demographics." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:nhsNumber">
+      <path value="Extension.extension" />
+      <sliceName value="nhsNumber" />
+      <short value="The patient's NHS number" />
+      <definition value="The patient's NHS number." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:nhsNumber.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="nhsNumber" />
+    </element>
+    <element id="Extension.extension:nhsNumber.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:nhsNumber.value[x]:valueIdentifier">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="valueIdentifier" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="Extension.extension:nhsNumber.value[x]:valueIdentifier.system">
+      <path value="Extension.extension.value[x].system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/nhs-number" />
+    </element>
+    <element id="Extension.extension:nhsNumber.value[x]:valueIdentifier.value">
+      <path value="Extension.extension.value[x].value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:nhsNumber.value[x]:valueIdentifier.assigner">
+      <path value="Extension.extension.value[x].assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+      </type>
+    </element>
+    <element id="Extension.extension:name">
+      <path value="Extension.extension" />
+      <sliceName value="name" />
+      <short value="The patient's name" />
+      <definition value="The patient's name." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:name.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="name" />
+    </element>
+    <element id="Extension.extension:name.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:name.value[x]:valueHumanName">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="valueHumanName" />
+      <short value="A name associated with the patient" />
+      <definition value="A name associated with the patient." />
+      <type>
+        <code value="HumanName" />
+      </type>
+    </element>
+    <element id="Extension.extension:birthDate">
+      <path value="Extension.extension" />
+      <sliceName value="birthDate" />
+      <short value="The date of birth for the patient" />
+      <definition value="A date, date-time or partial date the Patient was born." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:birthDate.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="birthDate" />
+    </element>
+    <element id="Extension.extension:birthDate.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:birthDate.value[x]:valueDate">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="valueDate" />
+      <short value="The date of birth for the individual" />
+      <definition value="The date of birth for the individual." />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-RoutingDemographics" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

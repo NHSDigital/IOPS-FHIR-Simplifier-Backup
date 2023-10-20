@@ -24,7 +24,7 @@
         {
             "code": "Bundle",
             "profile": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification-r4",
-            "min": 1,
+            "min": 0,
             "max": "*"
         }
     ],
