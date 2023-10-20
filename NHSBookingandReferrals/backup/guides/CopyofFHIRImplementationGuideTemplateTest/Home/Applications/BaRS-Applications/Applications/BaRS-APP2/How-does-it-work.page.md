@@ -13,7 +13,7 @@ To support the workflows for this Application of the standard the operations tha
 
 ### Make a Referral
 
-Making a referral for this Application follows the {{pagelink:design-core, text:standard pattern for BaRS operations}}.
+Making a referral for this Application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this Application is: {{link:BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 
@@ -139,7 +139,7 @@ X-Correlation-Id = <GUID_00002>
 
 ### Make a booking
 
-Making a booking for this Application follows the {{pagelink:design-core, text:standard pattern for BaRS operations}}.
+Making a booking for this Application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this Application is: {{link:BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 

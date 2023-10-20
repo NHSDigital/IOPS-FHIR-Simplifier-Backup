@@ -5,33 +5,35 @@ topic: APP3-HowDoesItWork
 ## {{page-title}}
 
 
-This section describes how the primary operations used in this application work. This diagram illustrates the workflow and interactions of a Referral request:
+This section describes how the primary operations used in this application work. The below diagram illustrates the workflow and interactions of a Referral request.
 <br>
 
 <img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ReferraltoCASSimplified-1.0.0.svg" width="1100"></img></a>
 
 
+This workflow details a referral into a CAS from a 999 Ambulance Service Trust (AST) for consultation:
+
+- Prior to referral the 999 AST will undertake a triage of the patient to determine the acuity of the case. This will typically be undertaken by a call handler on the Computer Aided Dispatch system (CAD) using an approved Clinical Decision Support System (CDSS) such as NHS Pathways or AMPDS. For cases with a non-ambulance disposition (CAT5), local business rules will be applied to determine if the case meets the requirement for referral to a CAS for consultation.
+- For cases requiring a referral to CAS, a suitable CAS is identified based on the patient’s clinical need and location. Service discovery will use local directories or UEC DOS to ascertain the ServiceID
+- The Service ID is used to query the BaRS endpoint catalogue to identify the receiving CAS system's endpoint details.
+- The 999-AST will send the referral to the CAS, including the information required by a CAS Clinician to continue the patent's clinical care. This will also include the JourneyID created at the patient's first contact.
+- The CAS system will acknowledge the referral on receipt, after which the case may be closed by the 999 AST on the CAD. It should be noted that Duty of care is passed from the 999 AST with the referral and is considered accepted by the CAS on receipt of the acknowledgement.
+- Prior to the consultation the case will typically be posted to a queue for prioritisation, based on information in the referral. This may be based on the call back time, determined locally or nationally based on the triage outcome codes. E.g. Where cases have a Pathways disposition (Dx) these are prioritised in accordance with the criteria specified in the IUC CAS service specification which sets out call-back times by Dx code.
+- The CAS Clinician will contact the patient, or their representative, utilising information in the referral message, then undertakes a consultation which may include a triage. The consultation will be informed by the clinical information sent by the referring service. This will be recorded in the CAS system.
+- On completion of the consultation the next action is performed. This may include provision of care advice with or without an electronic prescription (Hear and Treat), onward referral to another service provider or an ambulance request for a worsening patient.
+
+<br>
+<hr>
 To support the workflows for this application of the standard the operations that need to be supported are:
-
-<hr>
-
-### Find a Service
-
-????
-
-
-When a service is chosen, the Service ID will be used to then initiate the referral.
-
-<hr>
+<br>
+<br>
 
 ### Make a Referral
 
-Making a referral for this application follows the {{pagelink:design-core, text:standard pattern for BaRS operations}}.
+Making a referral for this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
-
-<hr>
 
 In addition to that the specific workflow parameters that are required are as follows:
 
@@ -101,9 +103,9 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this application follows the {{pagelink:design-core, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a referral this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
-The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:design-core, text:standard pattern}}.
+The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern, text:standard pattern}}.
 
 The message definition that defines this payload for this application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
@@ -337,49 +339,6 @@ Receive_Request
 							throw exception with "REC_BAD_REQUEST"
 							then return  HTTP.ResponseCode 400;
 					}
-			case "booking-request":
-				if (MessageHeader.Reason.code== "new" && Appointment.Status == "booked")
-					if(slot.IsFree())
-					{RequestType = "Im Receiving a new booking.";}
-					else
-					{
-						OperationOutcome.issue.code = "conflict"
-						throw exception with "REC_CONFLICT"
-						then return with HTTP.ResponseCode 409
-					}
-				else if (MessageHeader.Reason.code == "update")
-					MessageHeaderIsUpdate = true;
-					switch (Appointment.Status)
-					{
-						case "cancelled":
-							RequestType = "Im Receiving a booking cancellation."
-							break						
-						case "entered-in-error":
-							RequestType = "Im Receiving a booking cancellation."
-							break
-						default:
-							OperationOutcome.issue.code = "invariant"//A content validation rule failed
-							throw exception with "REC_BAD_REQUEST"
-							then return with HTTP.ResponseCode 400;
-							break;
-					}
-				else
-				{
-					OperationOutcome.issue.code = "invariant"//A content validation rule failed
-					throw exception with "REC_BAD_REQUEST"
-					then return with HTTP.ResponseCode 400;
-				}
-				break;
-			case "booking-response":
-						OperationOutcome.issue.code = "invariant"//A content validation rule failed
-						throw exception with 'REC_BAD_REQUEST'
-						then return with HTTP.ResponseCode 400
-						break;
-			default:
-				OperationOutcome.issue.code = "invariant"//A content validation rule failed
-				throw exception with 'REC_BAD_REQUEST'
-				then return with HTTP.ResponseCode 400
-				break;
 		}
 		
 	}
@@ -429,6 +388,7 @@ Receive_Request
 			}
 	}	
 }	
+
 
 ```
 

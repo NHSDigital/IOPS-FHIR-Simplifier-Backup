@@ -2,7 +2,7 @@
 topic: prereleases
 ---
 
-## {{page-title}}
+# Pre-Releases
 
 This section contains implementation guides for applications that are currently in a pre-release state.
 
