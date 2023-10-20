@@ -9,7 +9,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-BloodGlu
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Profile added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-BloodGlucose/~issues?level=File">Report Issue for UKCore-Observation-BloodGlucose<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-BloodGlucose/~issues?level=File">Report Issue for UKCore-Observation-BloodGlucose</a>.
 </div>
 
 <div id="transpose">

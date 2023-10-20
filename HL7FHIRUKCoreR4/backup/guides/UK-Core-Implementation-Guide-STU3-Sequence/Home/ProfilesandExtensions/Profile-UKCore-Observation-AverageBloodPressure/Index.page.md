@@ -9,7 +9,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AverageB
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Profile added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-AverageBloodPressure/~issues?level=File">Report Issue for UKCore-Observation-AverageBloodPressure<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-AverageBloodPressure/~issues?level=File">Report Issue for UKCore-Observation-AverageBloodPressure</a>.
 </div>
 
 <div id="transpose">
@@ -163,7 +163,7 @@ The minimum viable content that all provider and consumer systems SHALL support 
 <td>A measurement method SHOULD be present.</td>
 </tr>
 <tr>
-<td><code>Observation.component.copde.coding</code></td>
+<td><code>Observation.component.code.coding</code></td>
 <td>An average systolic blood pressure measurement SHALL be present, and that SHALL have a SNOMED CT concept for the systolic blood pressure observation.
 <br>An average diastolic blood pressure measurement SHOULD be present, and that SHALL have a SNOMED CT concept for the diastolic blood pressure observation.
 </td>
