@@ -4,4 +4,4 @@
 
 The page lists the extensions used by FGM-IS FHIR R4 API:
 
-- {{pagelink:Home/FHIRAssets/AllAssets/Extension/Extension-England-FGMRemovalReason.page.md}}
+- {{pagelink:Home/FHIRAssets/AllAssets/Extension/Extension-England-FlagRemovalReason.page.md}}
