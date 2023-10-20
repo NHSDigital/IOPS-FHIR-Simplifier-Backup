@@ -1,3 +1,7 @@
+---
+topic: Core-TransactionalIntegrity
+---
+
 ## {{page-title}}
 
 Transactional integrity is employed to ensure data integrity is maintained between two parties. It helps ensure that the success or failure of a message is known and can be confirmed. 

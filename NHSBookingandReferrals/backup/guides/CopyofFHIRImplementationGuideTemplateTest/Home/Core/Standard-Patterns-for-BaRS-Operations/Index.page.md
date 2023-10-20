@@ -1,5 +1,5 @@
 ---
-topc: core-pseudo-code
+topic: core-standardpattern
 ---
 
 ## {{page-title}}

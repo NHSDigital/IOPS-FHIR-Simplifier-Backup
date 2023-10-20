@@ -35,7 +35,6 @@ The payloads and workflow have been designed to support these services. Other {{
 
 **Constraints**
 * Supporting use of Emergency Call Prioritisation Advisory Group (ECPAG) approved Clinical Decision Support Systems only (NHS Pathways, NHS Pathways Clinical Content Support (PaCCS) and Advanced Medical Priority Dispatch System (AMPDS)).
-* All Service IDs in First of Type (FoT) will be those of Urgent and Emergency Care (UEC) Directory of Services (DoS) 
 * No guidance provided on display of referral information beyond the {{pagelink:principles_prerequesites, text:Principles for rendering BaRS Payload}}.
 * Consent within BaRS will be for Direct-Care only 
 * Certificates for Receiving messages to use nhs.uk domains only and internet facing 
@@ -85,8 +84,8 @@ The payloads and workflow have been designed to support these services. Other {{
 *  The referral sender **should** send the callback time
 
 **Scene Safety**
-*  The referral Sender **must** send scene safety information in the referral
-*  Where scene safety questions have not been asked, the scene safety flag **must** be populated with 'UNK' unknown.
+*  The referral Sender **should** send scene safety information in the referral
+*  Where scene safety questions have not been asked, the Flag resource relating to scene safety  **must** be populated with 'UNK' unknown.
 
 **Contacts** 
 * A minimum of one contact (patient or third party) with a contact method (phone, email, etc.) of phone **must** be provided in requests

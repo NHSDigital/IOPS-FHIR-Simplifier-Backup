@@ -28,7 +28,7 @@ The documentation for BaRS is separated into three groups (or "products"):
 
 - {{pagelink:design-core}} is the foundation containing all the things *everyone* has to do regardless of what flows BaRS is being used to support
 
-- {{pagelink:Home/Design/BaRS-Applications}}, *apply* the standard to a specific problem and build on this to support specific use cases
+- {{pagelink:Applications}}, *apply* the standard to a specific problem and build on this to support specific use cases
 
 - {{pagelink:prereleases}}, this is the same as above but for applications that are in a *pre-release* state, so not generally available until private/public beta is complete.
 

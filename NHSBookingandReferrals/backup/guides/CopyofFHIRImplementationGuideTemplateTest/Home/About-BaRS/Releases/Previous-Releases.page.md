@@ -1,7 +1,7 @@
 ## {{page-title}}
 
 <div class="bars-blg-expander">
-<div class="bars-blg-expander-entry" id="v1.1.0">
+<div class="bars-blg-expander-entry" id="v1.2.0">
 
 Product Link           | Version | Handle  | Phase    | State           | Release Date | Stability  | Change Log Link
 -----------------------|---------|---------|----------|-----------------|--------------|----------------
@@ -23,6 +23,9 @@ A Clinical Safety assessment of the scope of this release has determined that it
 
 </div>
 </div>
+
+<hr>
+<br>
 
 <div class="bars-blg-expander">
 <div class="bars-blg-expander-entry" id="v1.1.0">
