@@ -1,9 +1,5 @@
-- name: R4 Profiles
-  filename: R4-Profiles.page.md
-- name: STU3 Profiles (Legacy)
-  filename: STU3-Profiles--Legacy.page.md
-- name: STU3 Extensions (Legacy)
-  filename: STU3-Extensions--Legacy.page.md
+- name: Profiles
+  filename: Profiles.page.md
 - name: CodeSystems
   filename: CodeSystems.page.md
 - name: ValueSets

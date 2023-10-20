@@ -1,4 +1,0 @@
----
-topic: AllExamples
----
-{{index:current}}

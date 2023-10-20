@@ -22,13 +22,6 @@ These products will initially be used to replace the [PMIP EDIFACT (NHS003)](htt
 
 Further information relating to the work of the Pathology Standards and Implementation team can be found [here](https://digital.nhs.uk/services/pathology-standards-and-implementation).
 
-### FHIR Versions
-The specification supports FHIR versions STU3 and R4. Most of the narrative content of the specification applies to both versions of FHIR with any differences noted accordingly. Version specific FHIR assets (profiles, extensions, examples etc.) are referenced and/or included where appropriate.
-
-<div markdown="span" class="alert alert-nhse" role="alert">
-<i class="fa fa-exclamation-circle"></i> Unless your implementation is constrained to use FHIR STU3, it is strongly recommended that FHIR R4 is adopted.
-</div>
-
 ### Scope
 The following are **in scope** for this specification:
 * the initial focus of the specification is on the ability to support pathology test reporting however aspects of test requesting are included to provide wider context
