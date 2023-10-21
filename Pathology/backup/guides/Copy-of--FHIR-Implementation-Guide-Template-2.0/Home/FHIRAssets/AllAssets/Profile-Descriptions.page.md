@@ -17,8 +17,8 @@ A formal definition of the profile presented using the following views:
 * **Differential**: a description of the differences between the base FHIR resource and the associated profile
 * **Hybrid**: a combination of the Snapshot and Differential views
 
-### Conformance Rules
-A set of conformance rules that define how key data elements within the profile should be populated. The conformance rules are presented as a table with the following column headings:
+### Additional Guidance
+Additional guidance that should be followed when implementing the profile. The guidance is presented as a table with the following column headings:
 
 * **Element Name**: the FHIR data element name or extension name
 * **Profile Cardinality**: the cardinality that has been applied to the profile data element

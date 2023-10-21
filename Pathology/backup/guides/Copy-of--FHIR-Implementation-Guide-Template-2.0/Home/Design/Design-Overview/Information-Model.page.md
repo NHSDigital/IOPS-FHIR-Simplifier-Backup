@@ -24,29 +24,23 @@ To aid clarity, individual and organisation type entities (e.g. Performer / Perf
 
 <br>
 
-#### Information Model to FHIR Resource Mapping
-The following version of the information model includes the corresponding FHIR resources that each business entity has been mapped to. Note that the Observation resource is mapped to both Test Group and Test Result:
+#### Information Model to FHIR Profile Mapping
+The following is a list of the business entities with a link to the associated profile descriptions that are included in the specification:
 
-{{render:path-diagram-information-model-with-FHIR}}
-
-<br>
-
-The following is a list of the business entities with a link to the associated STU3 and R4 profile descriptions that are included in the specification:
-
-| Entity Name | STU3 Profile Name | R4 Profile Name |
+| Entity Name | Profile Name |
 |--
-| Test Request Summary | {{pagelink:STU3ProcedureRequest}} | {{pagelink:R4ServiceRequest}} |
-| Specimen | {{pagelink:STU3Specimen}} | {{pagelink:R4Specimen}} |
-| Test Report | {{pagelink:STU3DiagnosticReport}} | {{pagelink:R4DiagnosticReport}} |
-| Test Group | {{pagelink:STU3ObservationTestGroup}} | {{pagelink:R4ObservationTestGroup}} |
-| Test Result | {{pagelink:STU3ObservationTestResult}} | {{pagelink:R4ObservationTestResult}} |
-| Patient | {{pagelink:STU3Patient}} | {{pagelink:R4Patient}} |
-| Requester | {{pagelink:STU3Practitioner}} | {{pagelink:R4Practitioner}} |
-| Requesting Organisation | {{pagelink:STU3Organization}} | {{pagelink:R4Organization}} |
-| Specimen Collector | {{pagelink:STU3Practitioner}} | {{pagelink:R4Practitioner}} |
-| Specimen Collecting Organisation | {{pagelink:STU3Organization}} | {{pagelink:R4Organization}} |
-| Performer | {{pagelink:STU3Practitioner}} | {{pagelink:R4Practitioner}} |
-| Performing Organisation | {{pagelink:STU3Organization}} | {{pagelink:R4Organization}} |
+| Test Request Summary | {{pagelink:R4ServiceRequest}} |
+| Specimen | {{pagelink:R4Specimen}} |
+| Test Report | {{pagelink:R4DiagnosticReport}} |
+| Test Group | {{pagelink:R4ObservationTestGroup}} |
+| Test Result | {{pagelink:R4ObservationTestResult}} |
+| Patient | {{pagelink:R4Patient}} |
+| Requester | {{pagelink:R4Practitioner}} |
+| Requesting Organisation | {{pagelink:R4Organization}} |
+| Specimen Collector | {{pagelink:R4Practitioner}} |
+| Specimen Collecting Organisation | {{pagelink:R4Organization}} |
+| Performer | {{pagelink:R4Practitioner}} |
+| Performing Organisation | {{pagelink:R4Organization}} |
 
 <br>
 
