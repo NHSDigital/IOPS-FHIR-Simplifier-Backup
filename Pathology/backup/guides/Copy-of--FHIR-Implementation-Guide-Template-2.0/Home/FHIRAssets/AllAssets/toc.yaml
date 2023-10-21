@@ -2,9 +2,5 @@
   filename: Index.page.md
 - name: Profile Descriptions
   filename: Profile-Descriptions.page.md
-- name: All R4 Profiles
-  filename: All-R4-Profiles
-- name: All STU3 Extensions
-  filename: All-STU3-Extensions
-- name: All R4 Extensions
-  filename: All-R4-Extensions
+- name: All Profiles
+  filename: All-Profiles

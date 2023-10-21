@@ -1,5 +1,5 @@
-- name: Examples Index
-  filename: Examples-Index.page.md
+- name: Index
+  filename: Index.page.md
 - name: Haemoglobin A1C (HbA1c) Request
   filename: Haemoglobin-A1C--HbA1c--Request.page.md
 - name: 'Haemoglobin A1C (HbA1c) Report '
