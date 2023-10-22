@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: Introduction
-  filename: Introduction
 - name: Design
   filename: Design
 - name: Build

@@ -4,7 +4,7 @@ topic: FHIRAssetsR4Profiles
 ## Profiles
 The profiles that are referenced by this specification are listed below. Each profile is documented using the format described in {{pagelink:ProfileDescriptions}}.
 
-**Note:** The profiles are derived from the [UK Core Implementation Guide STU2 Release for Ballot]( https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home?version=1.1.3) which is currently under review. The profiles are therefore subject to change. The STU2 version of the UK Core Implementation Guide introduced a new set of laboratory specific FHIR R4 derived profiles, indicated by the ‘Lab’ suffix in the profile name. These profiles are derived from the related UK Core profile e.g. UKCore-DiagnosticReport-Lab is derived from UKCore-DiagnosticReport.
+**Note:** The profiles are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2. The pathology related profiles are currently under review as part of the [HL7 UK STU2 Ballot](https://confluence.hl7.org/pages/viewpage.action?pageId=175611042) process and are therefore subject to change. The STU2 version of the UK Core Implementation Guide introduced a new set of laboratory specific FHIR R4 derived profiles, indicated by the ‘Lab’ suffix in the profile name. These profiles are derived from the related UK Core profile e.g. UKCore-DiagnosticReport-Lab is derived from UKCore-DiagnosticReport.
 
 * {{pagelink:R4Bundle}}
 * {{pagelink:R4DiagnosticReport}}
