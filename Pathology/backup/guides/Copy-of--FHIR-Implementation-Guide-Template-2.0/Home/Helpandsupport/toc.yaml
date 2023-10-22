@@ -1,7 +1,5 @@
 - name: Contact Us
   filename: Contact-Us.page.md
-- name: Guide Versioning
-  filename: Guide-Versioning
 - name: Release Notes
   filename: Release-Notes
 - name: Glossary
