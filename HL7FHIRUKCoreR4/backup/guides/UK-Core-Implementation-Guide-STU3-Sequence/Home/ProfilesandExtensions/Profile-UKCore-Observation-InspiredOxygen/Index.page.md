@@ -38,8 +38,8 @@ select
 <nocheck>
 <div class="tab fhirTree">
  <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+  <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
+  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
   <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
   <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
