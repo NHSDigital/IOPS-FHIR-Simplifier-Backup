@@ -36,7 +36,7 @@ The payloads and workflow have been designed to support these services. Other {{
 **Constraints**
 * Supporting use of Emergency Call Prioritisation Advisory Group (ECPAG) approved Clinical Decision Support Systems only (NHS Pathways, NHS Pathways Clinical Content Support (PaCCS) and Advanced Medical Priority Dispatch System (AMPDS)).
 * No guidance provided on display of referral information beyond the {{pagelink:principles_prerequesites, text:Principles for rendering BaRS Payload}}.
-* Consent within BaRS will be for Direct-Care only 
+* BaRS currently supports the communication of consent for direct care only.
 * Certificates for Receiving messages to use nhs.uk domains only and internet facing 
 * Clinical Constraints exist - See Hazard Log
 
@@ -76,7 +76,7 @@ The payloads and workflow have been designed to support these services. Other {{
 
 
 **Incident Location**
-*  The Sender  **must** include the incident location in the referral request
+*  The Sender **must** include the incident location in the referral request
 *  All Locations **must** include a co-ordinate (Eastings/Northings, Lat/Long or What3Words equivalent) or a property location identifier (UPRN, Address and Postcode)
 
 **Timings**
@@ -85,7 +85,7 @@ The payloads and workflow have been designed to support these services. Other {{
 
 **Scene Safety**
 *  The referral Sender **should** send scene safety information in the referral
-*  Where scene safety questions have not been asked, the Flag resource relating to scene safety  **must** be populated with 'UNK' unknown.
+*  Where scene safety questions have not been asked, the Flag resource relating to scene safety **must** be populated with 'UNK' unknown.
 
 **Contacts** 
 * A minimum of one contact (patient or third party) with a contact method (phone, email, etc.) of phone **must** be provided in requests

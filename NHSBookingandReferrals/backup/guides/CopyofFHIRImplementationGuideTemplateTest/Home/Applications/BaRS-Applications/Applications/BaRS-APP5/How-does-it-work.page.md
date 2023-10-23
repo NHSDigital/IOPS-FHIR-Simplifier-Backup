@@ -7,7 +7,7 @@ topic: APP5-HowDoesItWork
 This section describes how the primary operations used in this application work. This diagram illustrates the workflow and interactions of a referral request:
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/GPtoPharmacyCPCS-1.1.0.svg" width="1500"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/GPtoPharmacyCPCS-1.0.0-beta.1.svg" width="1500"></img></a>
 
 
 To support the workflows for this application of the standard the operations that need to be supported are:
