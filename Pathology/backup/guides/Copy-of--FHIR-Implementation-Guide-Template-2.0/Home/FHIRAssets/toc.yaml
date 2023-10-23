@@ -1,5 +1,7 @@
-- name: Profiles
-  filename: Profiles.page.md
+- name: Index
+  filename: Index.page.md
+- name: Profilesz
+  filename: Profilesz
 - name: CodeSystems
   filename: CodeSystems.page.md
 - name: ValueSets

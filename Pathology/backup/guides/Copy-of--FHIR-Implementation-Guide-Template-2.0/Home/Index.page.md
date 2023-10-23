@@ -36,4 +36,3 @@ This specification has been developed by the Pathology Standards and Implementat
 These products will initially be used to replace the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification and [Pathology Bounded Code List](https://isd.digital.nhs.uk/trud3/user/guest/group/0/pack/38) (PBCL). These are currently used to define the structure and clinical coding of test reports that flow between laboratories and GP practices.
 
 Further information relating to the work of the Pathology Standards and Implementation team can be found [here](https://digital.nhs.uk/services/pathology-standards-and-implementation).
-
