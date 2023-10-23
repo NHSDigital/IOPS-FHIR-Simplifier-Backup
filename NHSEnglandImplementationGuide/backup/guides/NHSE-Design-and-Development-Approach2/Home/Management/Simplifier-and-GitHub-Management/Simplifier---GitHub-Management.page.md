@@ -20,12 +20,4 @@ The current approach is illustrated below:
 
 {{render:GitHubSetup}}
 
-Diagram 1: Re-import FHIR assets from GitHub into Simplifier 
-
-Diagram 2: Import images/diagrams into Simplifier via File Manager
-
-
-{{render:ToolingPlatformsetup}}
-{{render:ToolingPlatformsetup2}}
-
 ---

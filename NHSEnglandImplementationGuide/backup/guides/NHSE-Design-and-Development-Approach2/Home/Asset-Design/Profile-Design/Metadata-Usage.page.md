@@ -22,7 +22,7 @@ View further information about <a href="https://www.hl7.org/fhir/R4/resource.htm
         <td>0..1</td>
         <td>1..1</td>
         <td>id</td>
-         <td>In the NHS England IG the format in the following, with the FHIRAssetName and Specialism in PascalCase:<br/><br/><code>England-[FHIRAssetName]</i></code>.</td>
+         <td>In the NHS England IG the format is the following, with the FHIRAssetName and Specialism in PascalCase:<br/><br/><code>England-[FHIRAssetName]</i></code>.</td>
     </tr>
     </tbody>
 </table>

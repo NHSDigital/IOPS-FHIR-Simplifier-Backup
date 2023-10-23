@@ -76,7 +76,7 @@ View further information about <a href="https://www.hl7.org/fhir/R4/structuredef
         <td>0..1</td>
         <td>1..1</td>
         <td>string</td>
-        <td>In the NHS England the format in Proper Case:<br/><br/><code>ExtensionEngland [Name]</i><code>.</td>
+        <td>In the NHS England the format in Proper Case:<br/><br/><code>Extension England [Name]</i><code>.</td>
     </tr>
     <tr>
         <td>status</td>

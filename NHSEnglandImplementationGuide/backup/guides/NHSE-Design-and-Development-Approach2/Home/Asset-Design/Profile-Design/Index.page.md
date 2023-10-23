@@ -14,8 +14,6 @@ The checklist below was adhered to when developing a draft NHS England profile s
 - **Removal of elements** - No elements will be removed from the FHIR assets for the NHS England IG profiles during initial profiling prior to Clinical and Technical Assurance. 
 - **Experimental element** - The FHIR specification defines the 'StructureDefinition.experimental' element as the following, when set to ‘true’:
 'This structure was authored for testing purposes (or education/evaluation/marketing), and is not intended for genuine usage.'
-(Source: <a href="http://hl7.org/fhir/r4/index.html">HL7</a>).
-
-Currently there is no requirement in the NHSE IG  to set the experimental element as ‘true’ or ‘false’, so this field should remain in the default view (undefined).
+(Source: <a href="http://hl7.org/fhir/r4/index.html">HL7</a>). Currently there is no requirement in the NHSE IG  to set the experimental element as ‘true’ or ‘false’, so this field should remain in the default view (undefined).
 
 ---
