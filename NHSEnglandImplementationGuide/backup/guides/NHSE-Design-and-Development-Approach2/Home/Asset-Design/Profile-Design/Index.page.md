@@ -6,8 +6,8 @@ The HL7 FHIR® standard creates a common foundation on which a variety of differ
 ## General profiling approach
 The checklist below was adhered to when developing a draft NHS England profile suitable for progression to Clinical and Technical Assurance.
 
-- Ensure a NHS England IG profile exists and consider the status of the profile before deriving a NHS England profile.
-
+- Ensure that an England use-case that cannot be implemented using a UK-Core FHIR R4 profile has been established.
+- Use any corresponding UK Core FHIR R4 profile as a starting point for each profile, where a UK Core FHIR R4 profile exists, refer to it as a starting point for the NHS England profiling exercise.
 
 ## Approach to StructureDefinition elements
 - **Identifiers** - Where existing NHS Digital IG profiles have applied slicing and profiling to identifiers, this will be recreated in the NHS England IG profiles, then evaluated during Clinical and Technical assurance.

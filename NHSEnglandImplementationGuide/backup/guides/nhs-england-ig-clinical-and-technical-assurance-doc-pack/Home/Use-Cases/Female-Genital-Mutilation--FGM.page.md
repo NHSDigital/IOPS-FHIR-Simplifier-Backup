@@ -150,8 +150,9 @@ N/A
 
 ## FHIR Assets for Sprint 1
 
-{{render:and-Extensions-Extension-Library-Extension-England-FGMRemovalReason}}
+
+{{render:Profiles-and-Extensions-All-Extensions-Extension-England-FlagRemovalReason}}
 
 {{render:Home-Terminology-All-CodeSystems-CodeSystem-England-FGMRemovalReason}}
 
-{{render:Home-Terminology-ValueSet-ValueSet-England-FGMRemovalReason}}
+{{render:Guide-Home-Terminology-All-ValueSets-ValueSet-England-FlagRemovalReason}}
