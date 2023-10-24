@@ -2,17 +2,17 @@
 
 ### Negative Acknowledgement of Appointment - Incorrect Data Format
 
-The appointment from GRAIL (UK) should be in a JSON format. However, the appointment message sent to NHS England (GPS) was sent in an XML format. So a negative acknowledgement is sent to GRAIL (UK).
+The appointment should be in a JSON format. However, the appointment message was sent in an XML format. So a negative acknowledgement is sent.
 
 <plantuml>
 autonumber "Message 0 -"
-participant "NHS England (GPS)" as nhsenglandgps
-participant "GRAIL (UK)" as grailuk
+participant "Appointment Recipient" as nhsenglandgps
+participant "Appointment Sender" as grailuk
 nhsenglandgps <- grailuk: Send appointment
 nhsenglandgps --> grailuk: Send negative acknowledgement
 </plantuml>
 
-<br /><br />
+<!-- <br /><br />
 #### An Example to Send Appointment
 
 <div>
@@ -22,10 +22,10 @@ nhsenglandgps --> grailuk: Send negative acknowledgement
 <div id="XML" class="tabcontent" style="display:block">
 {{xml:f50c58ea-543f-4530-99fa-ceb7b9dbbed5}}
 </div>
-</div>
+</div> -->
 
 <br /><br />
-#### An Example to Receive Negative acknowledgement response
+#### An Example of a Receive Negative acknowledgement response
 
 <div>
 <div class="tab">
@@ -41,19 +41,19 @@ nhsenglandgps --> grailuk: Send negative acknowledgement
 </div>
 
 <br /><br />
-### Negative Acknowledgement of Test Result (Cancer Markers Detected) - Missing Mandatory Element 
+### Negative Acknowledgement of a Test Result - Missing Mandatory Element 
 
-The test result from GRAIL (UK) should include all FHIR elements that are mandatory (with a minimum cardinality of 1). However, the test result sent to NHS England (GPS) is missing a FHIR element that is mandatory. So a negative acknowledgement is sent to GRAIL (UK).
+The test result should include all FHIR elements that are mandatory (with a minimum cardinality of 1). However, the test result sent is missing a FHIR element that is mandatory. So a negative acknowledgement is sent.
 
 <plantuml>
 autonumber "Message 0 -"
-participant "NHS England (GPS)" as nhsenglandgps
-participant "GRAIL (UK)" as grailuk
+participant "Test Report Receiver" as nhsenglandgps
+participant "Test Report Sender" as grailuk
 nhsenglandgps <- grailuk: Send bio-sampling test report
 nhsenglandgps --> grailuk: Send negative acknowledgement
 </plantuml>
 
-<br /><br />
+<!-- <br /><br />
 #### An Example of Sending bio-sampling test report
 
 <div>
@@ -67,10 +67,10 @@ nhsenglandgps --> grailuk: Send negative acknowledgement
 <div id="JSON" class="tabcontent" style="display:block">
 {{json:f862ec24-e05a-42d1-aea5-d0a9c092e6ae}}
 </div>
-</div>
+</div> -->
 
 <br /><br />
-#### An Example to Receive Bio Sampling Test Report Negative acknowledgement response
+#### An Example of a Test Report Negative acknowledgement response
 
 <div>
 <div class="tab">
