@@ -7,7 +7,7 @@ subject: https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageSystolic
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new ValueSet added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-AverageSystolic/~issues?level=File">Report Issue for ValueSet-UKCore-BloodPressure-AverageSystolic<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-AverageSystolic/~issues?level=File">Report Issue for ValueSet-UKCore-BloodPressure-AverageSystolic</a>.
 </div>
 
 

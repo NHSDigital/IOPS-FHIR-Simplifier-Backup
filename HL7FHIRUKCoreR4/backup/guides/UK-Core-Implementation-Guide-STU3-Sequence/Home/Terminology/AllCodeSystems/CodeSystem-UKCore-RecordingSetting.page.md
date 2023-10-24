@@ -4,7 +4,7 @@
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new CodeSystem added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/CodeSystem-UKCore-RecordingSetting/~issues?level=File">Report Issue for CodeSystem-UKCore-RecordingSetting<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/CodeSystem-UKCore-RecordingSetting/~issues?level=File">Report Issue for CodeSystem-UKCore-RecordingSetting</a>.
 </div>
 
 @```
