@@ -37,9 +37,13 @@ The system responds with a SearchSet Bundle containing the AuditEvent history in
 
 <div class="tab">
   <button class="tablinks active" onclick="openTab(event, 'JSON')">JSON</button>
+  <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
 </div>
 <div id="JSON" class="tabcontent" style="display:block">
 {{json:145b0aa0-8709-4272-b7c0-75738a9822f3}}
+</div>
+<div id="XML" class="tabcontent">
+{{xml:145b0aa0-8709-4272-b7c0-75738a9822f3}}
 </div>
 
 ### No record found case
