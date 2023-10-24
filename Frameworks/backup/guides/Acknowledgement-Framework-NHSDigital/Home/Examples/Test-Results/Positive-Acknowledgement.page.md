@@ -4,14 +4,14 @@
 
 <plantuml>
 autonumber "Message 0 -"
-participant "NHS England (GPS)" as nhsenglandgps
-participant "GRAIL (UK)" as grailuk
+participant "Appointment Recipient" as nhsenglandgps
+participant "Appointment Sender" as grailuk
 nhsenglandgps <- grailuk: Send appointment
 nhsenglandgps --> grailuk: Send positive acknowledgement
 </plantuml>
 
-<br /><br />
-## An Example to Send Appointment
+<!--<br /><br />
+ ## An Example to Send Appointment
 
 <div>
 <div class="tab">
@@ -24,10 +24,10 @@ nhsenglandgps --> grailuk: Send positive acknowledgement
 <div id="XML" class="tabcontent">
 {{xml:6e7b1dbb-77d2-4ddd-ae0d-e4862a306c1c}}
 </div>
-</div>
+</div> -->
 
 <br /><br />
-#### An Example to Receive positive acknowledgement response
+#### An Example of a positive acknowledgement response
 
 <div>
 <div class="tab">
@@ -42,18 +42,18 @@ nhsenglandgps --> grailuk: Send positive acknowledgement
 </div>
 </div>
 
-### Positive Acknowledgement of Test Report (Cancer Markers Detected)
+### Positive Acknowledgement of Test Report
 
 <plantuml>
 autonumber "Message 0 -"
-participant "NHS England (GPS)" as nhsenglandgps
-participant "GRAIL (UK)" as grailuk
+participant "Test Report Receiver" as nhsenglandgps
+participant "Test Report Sender" as grailuk
 nhsenglandgps <- grailuk: Send test report with cancer markers detected
 nhsenglandgps --> grailuk: Send positive acknowledgement
 </plantuml>
 
 <br /><br />
-#### An Example to Send test report (cancer markers detected)
+<!-- #### An Example to Send test report (cancer markers detected)
 
 <div>
 <div class="tab">
@@ -66,9 +66,9 @@ nhsenglandgps --> grailuk: Send positive acknowledgement
 <div id="JSON" class="tabcontent" style="display:block">
 {{json:b4409d7c-b613-477c-b623-87e60406c2f0}}
 </div>
-</div>
+</div> -->
 
-#### An Example to Receive test report positive acknowledgement response
+#### An Example of a positive test report acknowledgement response
 
 <div>
 <div class="tab">
