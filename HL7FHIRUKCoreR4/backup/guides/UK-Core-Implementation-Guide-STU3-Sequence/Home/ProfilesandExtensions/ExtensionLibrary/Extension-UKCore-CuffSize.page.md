@@ -7,7 +7,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CuffSize
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Extension added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CuffSize/~issues?level=File">Report Issue for Extension-UKCore-CuffSize<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CuffSize/~issues?level=File">Report Issue for Extension-UKCore-CuffSize</a>.
 </div>
 
 <div id="transpose">
