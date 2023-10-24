@@ -31,8 +31,40 @@ Most pathology tests are performed by pathology laboratories. These include hosp
 An increasing number of pathology tests are performed outside of laboratories. These include tests that that may be performed at a point of care (usually by a Health Care Professional in a care setting such as a GP practice or in a hospital ward) or by a patient or their carer at home. The current focus of this specification is on laboratory-based tests rather than those undertaken at point of care.
 
 ### Pathology Standards
+
 This specification has been developed by the Pathology Standards and Implementation team within NHS England. The team has also developed a SNOMED CT<sup>&reg;</sup> based set of pathology laboratory test request and test result codes (previously known as the Unified Test List or UTL).
 
 These products will initially be used to replace the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification and [Pathology Bounded Code List](https://isd.digital.nhs.uk/trud3/user/guest/group/0/pack/38) (PBCL). These are currently used to define the structure and clinical coding of test reports that flow between laboratories and GP practices.
 
 Further information relating to the work of the Pathology Standards and Implementation team can be found [here](https://digital.nhs.uk/services/pathology-standards-and-implementation).
+
+
+### Related Guides
+
+<div class="nhsd-o-card-list">
+    <div class="nhsd-t-grid">
+        <div class="nhsd-t-row nhsd-o-card-list__items ">
+         <!-- UK Core -->
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2?version=1.1.3" class="nhsd-a-box-link "
+                        aria-label="Read the UK Core Guidance">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h4>UK Core FHIR Guidance</h4>
+                                    <p>This guide is to be used as the base for implementing FHIR in the UK.</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+</div
