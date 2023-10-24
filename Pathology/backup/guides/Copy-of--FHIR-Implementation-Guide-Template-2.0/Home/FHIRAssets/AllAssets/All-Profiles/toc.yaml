@@ -1,5 +1,5 @@
-- name: Index
-  filename: Index.page.md
+- name: UKCore-Bundle
+  filename: UKCore-Bundle.page.md
 - name: UKCore-DiagnosticReport-Lab
   filename: UKCore-DiagnosticReport-Lab.page.md
 - name: UKCore-MessageHeader
