@@ -66,7 +66,7 @@
 
 <h2 id="clinical-systems-developer">Clinical Systems Developer</h2>
 
-**Clinical Systems Developer:**
+**As a Clinical Systems Developer:**
 
 - I need a persistent organisation code identifier, so that I can be confident in the data I integrate to downstream systems.
 - I need a FHIR API, so that I can more easily integrate the data with other NHS systems.
@@ -91,9 +91,36 @@
 
 ### Pre-conditions
 
+- The ODS API is stable and populated with correct data.
+- Information on the data model and schemas is available.
+- Good technical documentation is available.
+
+### Post-conditions
+
+- Data is sent to downstream systems.
+- Data integrity checks.
+
+### Main Course
+
+1. Write code for making scheduled calls to the API.
+1. Write code to integrate ODS data with downstream systems.
+
+### Alternative Course
+
+1. If the initial data request is denied or doesn't go through due to issues like network problems or system failure, there must be a mechanism set in place to retry the request after a specific timeframe.  
+1. Data can be manually updated in the directory to match what is published in the ODS database if needed.
+
+### Exception
+- If the ODS API is not accessible or new data is not available, the issue should be logged and attempt to connect again after a specific interval.
+
 <hr>
 
+<h2 id="commissioner">Commissioner</h2>
+
+
+
 ## FHIR Assets for Sprint 1
+
 
 <br>
 
@@ -104,3 +131,7 @@
 
 
 {{render:Guide-Home-Terminology-All-ValueSets-ValueSet-England-OrganisationRole}}
+
+{{render:Home-Profiles-and-Extensions-All-Extensions-Extension-England-DateTime}}
+
+{{render:Home-Terminology-All-CodeSystems-CodeSystem-England-ORDDateTime}}

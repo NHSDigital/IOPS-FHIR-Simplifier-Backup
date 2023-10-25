@@ -2,7 +2,7 @@
 
 ## Summary
 
-For the NHS England Implementation Guide to develop it requires use cases to influence the content of its assets and associated Implementation Guide (IG). This document has been structured to allow the IOPS team to understand the business use case and how it relates to the FHIR assets, in turn it will help standardise the implementation of FHIR within the UK.
+For the NHS England Implementation Guide to develop it requires use cases to influence the content of its assets and associated Implementation Guide (IG). This document has been structured to allow the IOPS team to understand the business use case and how it relates to the FHIR assets, in turn it will help standardise the implementation of FHIR within England.
 
 Any requests for new, or changes to, assets shall have a business use case:
 
@@ -22,7 +22,7 @@ The use case should also include:
 
 **Alternative Courses:** _Any workflow that differs from the above, it may be another way to the goal, or a different route for abnormal cases._
 
-**Post Conditions:** _Any conditions that need to be met after the data is sent, e.g. indiction that the information has been sent._
+**Post Conditions:** _Any conditions that need to be met after the data is sent, e.g. indication that the information has been sent._
 
 **Exception Flows:** _Any conditions that need to result in a warning or an error._
 
@@ -40,4 +40,4 @@ This should include any specific constraints and extensions to the profiles, and
 
 ## Asset Example
 
-For every Profile and Extension within the UK Core there SHALL be an example alongside them to explain its use. For this reason, it is necessary that clinically sound information is given to be able to produce a usable example. This does not have to be in FHIR format and can be given after the structure of the asset has been agreed.
+For every Profile and Extension within the NHS England IG, there SHALL be an example alongside them to explain its use. For this reason, it is necessary that clinically sound information is given to be able to produce a usable example. This does not have to be in FHIR format and can be given after the structure of the asset has been agreed.

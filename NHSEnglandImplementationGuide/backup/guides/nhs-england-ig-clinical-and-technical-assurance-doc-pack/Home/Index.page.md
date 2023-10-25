@@ -6,16 +6,16 @@ The purpose of this pack is to provide guidance documentation for stakeholders i
 
 ## Pack Structure
 
-This pack contains the guidance and reference material required to participate in the C&TA process. The content of the NHS England IG Implementation Guide to be reviewed is contained in the NHS England IG Implementation Guide STU1. Items are indexed by C&TA Sprints and the scope of this sprint is items marked accordingly.
+This pack contains the guidance and reference material required to participate in the C&TA process. The content of the NHS England IG Implementation Guide to be reviewed is contained in the <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/index.page.md?version=current' target="_blank">NHS England IG Implementation Guide STU1</a>. Items are indexed by C&TA Sprints and the scope of this sprint is items marked accordingly.
 
 ## Background
-This sprint involves creating a review pack for external consultation, including a first draft of mapping by the NHS England IG Development team, which is published to the external community for a review period of 15 working days.
+This sprint involves creating a review pack for consultation, including a first draft of mapping by the NHS England IG Development team, which is published to the NHS England Programmes stakeholders for a review period of 7 working days, and subsequenty followed by a consolidation call.
 
 Documentation is available online for the [Clinical and Technical Assurance](https://simplifier.net/guide/nhs-england-design-and-development-approach/Home/Assurance---Endorsement/Clinical-and-Technical-Assurance.page.md?version=current) process. The documentation will give background information to allow the reader to take part in the C&TA process.
 
 ## Clinical & Technical Assurance Sprint Calls
 
-The C&TA process included three calls, which were recorded, and are provided below.
+The first C&TA call will be held as provided below.
 
 <table class="assets">
 <tr>
@@ -25,8 +25,8 @@ The C&TA process included three calls, which were recorded, and are provided bel
 <th width="25%">Recording</th>
 </tr>
 <tr>
-<td>TBC</td>
-<td>TBC</td>
+<td>Thursday 26th October, 2023 <br> Time:13:00 - 14:30pm</td>
+<td>Introduction, overview and use cases</td>
 <td>TBC</td>
 <td>TBC</td>
 </tr>
