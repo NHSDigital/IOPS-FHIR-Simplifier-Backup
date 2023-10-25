@@ -5,7 +5,7 @@ topic: APP3-ScopeAndRequirements
 
 ### Scope Overview
 
-This BaRS Application (application 3) covers only use cases:
+This BaRS Application (Application 3) covers one use case:
 * 999 Ambulance Service Trust (AST) referral to Clinical Assessment Service (CAS)
 
 
@@ -37,31 +37,33 @@ The payloads and workflow have been designed to support these services. Other {{
 * Supporting use of Emergency Call Prioritisation Advisory Group (ECPAG) approved Clinical Decision Support Systems only (NHS Pathways, NHS Pathways Clinical Content Support (PaCCS) and Advanced Medical Priority Dispatch System (AMPDS)).
 * No guidance provided on display of referral information beyond the {{pagelink:principles_prerequesites, text:Principles for rendering BaRS Payload}}.
 * BaRS currently supports the communication of consent for direct care only.
-* Certificates for Receiving messages to use nhs.uk domains only and internet facing 
-* Clinical Constraints exist - See Hazard Log
+* Certificates for Receiving messages to use nhs.uk domains only.
+* Receiving endpoints are to be internet facing.
+* Clinical Constraints exist - See Hazard Log.
 
 ### Requirements
 
 **Service Discovery** 
-* The service **must** support a unique identifier which the Sender extracts to engage in booking and referral workflows
+* The service **must** support a unique identifier which the Sender extracts to engage in referral workflows
 
 **Referral Request**
 * The referral Receiver **must** accept the referral request regardless of whether the patient is known to the service provider
 * The referral Receiver **must** accept potential patients who do **<ins>not</ins>** have a national validated identifier e.g. NHS Number.
 * The referral Sender **must** send incident location information as part of their request
-* The referral Sender **must** send scene safety information as part of their request
+* The referral Sender **should** send scene safety information as part of their request
 * Any new or existing safeguarding concern, recorded as part of the assessment, **must** be included in the referral Sender's request
 * The referral Receiver **must** clearly identify any included safeguarding concern to the end user
 * The referral Receiver **must** accurately represent information made by the Sender to the end user
 * The referral Sender **must** make available the human readable identifier for the referral, included in the HTTP synchronous response, to the end user
-* Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response
-* Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user
+* Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
+* Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
 
 **Update referral**
 *	The referral Sender **must** be capable of updating any referral made by them, within the current consultation or after the consultation event
-*	The referral Sender **must** retrieve the referral to be updated from the referral Receiver prior to cancellation to ensure they are working with the most up-to date version and it has not already been completed
+*	The referral Sender **must** retrieve the referral to be updated from the referral Receiver prior to update to ensure they are working with the most up-to date version and it has not already been completed
 *	The referral Sender **must** provide visible confirmation to the end user of the status returned by the referral Receiver, i.e. whether the original referral was successfully updated or not
-*	If the update fails the referral Receiver **must** respond with the most appropriately aligned error 
+* Where the update was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
+* Where the update was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail. 
 *	The referral Receiver **must** store all previous versions of the referral
 *	The referral Receiver **must <ins>not</ins>** be required to inform the patient of the updating of the referral.  Business/clinical responsibility for informing the patient must remain with the referral Sender
 
@@ -70,14 +72,15 @@ The payloads and workflow have been designed to support these services. Other {{
 *	The referral Sender **must** be capable of cancelling any referral made by them, within the current consultation or after the consultation event
 *	The referral Sender **must** retrieve the referral to be cancelled from the referral Receiver prior to cancellation to ensure they are working with the most up-to date version and it has not already been completed
 *	The referral Sender **must** provide visible confirmation to the end user of the status returned by the referral Receiver, i.e. whether the original referral was successfully cancelled or not
-*	If the update fails the referral Receiver **must** respond with the most appropriately aligned error 
+* Where the cancellation was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
+* Where the cancellation was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
 *	The referral Receiver **must** store all previous versions of the referral
 *	The referral Receiver **must <ins>not</ins>** be required to inform the patient of the cancellation of the referral.  Business/clinical responsibility for informing the patient must remain with the referral Sender
 
 
 **Incident Location**
 *  The Sender **must** include the incident location in the referral request
-*  All Locations **must** include a co-ordinate (Eastings/Northings, Lat/Long or What3Words equivalent) or a property location identifier (UPRN, Address and Postcode)
+*  All Locations **must** include a co-ordinate (Eastings/Northings, Lat/Long or what3words equivalent) or a property location identifier (UPRN, Address and Postcode)
 
 **Timings**
 *  The referral Sender **must** send the dispatch (or disposition) code identification time
