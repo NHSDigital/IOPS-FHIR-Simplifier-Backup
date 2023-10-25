@@ -15,7 +15,7 @@ To support the workflows for this Application of the standard the operations tha
 
 Making a referral for this Application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
 
-The message definition that defines this payload for this Application is: {{link:BARS-MessageDefinition-ServiceRequest-Request-Referral}}
+The message definition that defines this payload for this Application is: {{link:https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral}}
 
 In addition to that the specific workflow parameters that are required are as follows:
 
@@ -69,7 +69,6 @@ X-Request-Id = <GUID_000001>
 X-Correlation-Id = <GUID_000002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
 NHSD-Requesting-Practitioner = {FHIR Practitioner (Base64 Encoded)} 
-NHSD-Requesting-Person = {FHIR Person (Base64 Encoded)}
 NHSD-Requesting-Software =  {FHIR Device (Base64 Encoded)}
 ```
 
@@ -126,7 +125,6 @@ X-Request-Id = <GUID_00001>
 X-Correlation-Id = <GUID_00002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
 NHSD-Requesting-Practitioner = {FHIR Practitioner (Base64 Encoded)} 
-NHSD-Requesting-Person = {FHIR Person (Base64 Encoded)}
 NHSD-Requesting-Software =  {FHIR Device (Base64 Encoded)}
 ```
 
@@ -141,7 +139,7 @@ X-Correlation-Id = <GUID_00002>
 
 Making a booking for this Application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
 
-The message definition that defines this payload for this Application is: {{link:BARS-MessageDefinition-ServiceRequest-Request-Referral}}
+The message definition that defines this payload for this Application is: {{link:https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral}}
 
 In addition to that the specific workflow parameters that are required are as follows:
 
@@ -189,7 +187,6 @@ X-Request-Id = <GUID_00003>
 X-Correlation-Id = <GUID_00002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
 NHSD-Requesting-Practitioner = {FHIR Practitioner (Base64 Encoded)} 
-NHSD-Requesting-Person = {FHIR Person (Base64 Encoded)}
 NHSD-Requesting-Software =  {FHIR Device (Base64 Encoded)}
 ```
 
