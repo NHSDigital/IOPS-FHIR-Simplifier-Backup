@@ -1,5 +1,4 @@
 
-
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
    <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>

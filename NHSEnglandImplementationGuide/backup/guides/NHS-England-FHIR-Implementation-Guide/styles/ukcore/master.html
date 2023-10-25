@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-md-16">
                         <h3 class="guide-title">{{ guide-title }}</h3>
-                        <h5>v1.0.0-pre-release</h5>
+                        <h5>v1.0.0-release</h5>
                     </div>
                     <div class="col-md-4 hl7-logo" style="margin-top:15px;">
                         <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
@@ -93,11 +93,11 @@
                       <td>Powered by <b>SIMPLIFIER.NET</b></td>                      
                       <td>IG © 2023+ NHS England</td>
                       <td><span><b>Version:</b> {{ guide-version }}</span></td>
-                      <td><b>Released:</b> 18/08/2023</td>
+                      <td><b>Released:</b> 25/10/2023</td>
                     </tr>
                     <tr>
                       <td colspan="2"><b>Packages are based on:</b> <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a> & <a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
-                      <td colspan="2"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Guidance/Sitemap-Overview.page.md?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                      <td colspan="2"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Guidance/Sitemap-Overview.page.md?version">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
                     </tr>  
                 </table>
             </div>
@@ -175,6 +175,8 @@
                 // Show the desired content with the current view
                 parent.find(".tabcontent[id^='"+tabName+"']").show(0);
             }
+            </script>
+            <script>
 
             // function to turn multiple columns into rows for an fql table, within a specific div
             function transposeFQLTables() {
@@ -347,6 +349,8 @@
             function createTerminologySeparator() {
                 $('ul.nav li.dropdown:eq(2) ul.dropdown-menu li:eq(0)').after('<li role="separator" class="divider"></li>');
             }
+            </script>
+            <script>
 
             //remaps sitemap and licence links to always point within the IG being read
             function fixFooterVersion() {
@@ -374,7 +378,7 @@
                     let destVersion = "?" + destUrl.split("?")[1];
                     destUrl = newUrl + "/Guidance/Sitemap-Overview" + destVersion;
                     if (pageVersion.startsWith("?version=current")){
-                        destUrl = destUrl.replace(destVersion, pageVersion);
+                        destUrl = destUrl.replace(destVersion, ".page.md" + pageVersion);
                     }
                     $(this).attr("href", destUrl) ;
 				});
@@ -605,7 +609,7 @@
                 $('table.regular').each(function(index) {
                     if ($(this).find("th").length > 0) {
                         if ($(this).find(":contains('System')")) {
-                            $(this).attr("title","Expanded ValueSet codes");
+                            //$(this).attr("title","Expanded ValueSet codes");
                         } else {
                             $(this).attr("title","Imported ValueSet codes");
                         }
@@ -750,11 +754,11 @@
                 //createProfileSubMenus();
                 //createTerminologySeparator();
                 fixFooterVersion();
-                alterValueSetTables();
+                //alterValueSetTables();
                 addCodesSortButton();
                  pageInIframe();
                  wrapSideBar();
-                  fixWebAccessibility()
+               //   fixWebAccessibility()
                 updateFooterPosition();
             });
             

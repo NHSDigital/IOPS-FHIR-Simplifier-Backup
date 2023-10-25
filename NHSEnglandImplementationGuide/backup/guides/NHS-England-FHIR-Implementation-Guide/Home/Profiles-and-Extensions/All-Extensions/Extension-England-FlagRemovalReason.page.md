@@ -31,5 +31,8 @@ select
   <b>Note:</b>There is currently no example that uses this extension. An example will be added in a future release.<br>
 </div>
 
+<h3>Extension Specific Guidance</h3>
+There is a binding within this extension to a {{pagelink:ValueSet-England-FlagRemovalReason}}.
+
 ---
     
