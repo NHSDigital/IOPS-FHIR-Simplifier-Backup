@@ -2,19 +2,6 @@
 topic: BusinessContext
 ---
 ### Business Context
-Pathology tests are used in many aspects of patient care to support the diagnosis, treatment, monitoring and prevention of disease.
-
-Pathology comprises a wide range of specialities. The key specialities can be grouped as follows:
-
-* blood sciences – this includes clinical biochemistry (also known as chemical pathology), haematology, immunology and transfusion medicine
-* microbiology – this includes bacteriology, virology and serology
-* cellular pathology – this includes cytology and histopathology
-* genetics – this includes clinical cytogenetics and molecular genetics
-
-Most pathology tests are performed by pathology laboratories. These include hospital-based laboratories and specialist reference laboratories (which are often based regionally or nationally). Note: the terms 'pathology laboratory' and 'laboratory' are used interchangeably throughout this specification. 
-
-An increasing number of pathology tests are performed outside of laboratories. These include tests that may be performed at a point of care (usually by a Health Care Professional in a care setting such as a GP practice or in a hospital ward) or by a patient or their carer at home. Note: the current focus of this specification is on laboratory-based tests rather than those undertaken at point of care.
-
 The following diagram illustrates a simplified, high-level “as-is” business process flow for pathology test requesting and reporting for laboratory-based tests:
 
 {{render:path-diagram-high-level-business-process}}
