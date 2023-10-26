@@ -2,54 +2,9 @@
 
 ## User stories
 
-- [View FGM Risk Indicator](#user-story-view-fgm-risk-indicator)
 - [Add FGM Risk Indicator](#user-story-add-fgm-risk-indicator)
+- [View FGM Risk Indicator](#user-story-view-fgm-risk-indicator)
 - [Delete FGM Risk Indicator](#user-story-delete-fgm-risk-indicator)
-
-<h2 id="user-story-view-fgm-risk-indicator">View FGM Risk Indicator</h2>
-
-**As a Healthcare Worker:**
-
-- I can view the patient’s FGM Indicator if the patient has any Family history of FGM
-
-**So that:**
-
-- **TO BE ADDED**
-
-### Use Case Flows
-
-### Actors
-
-- Healthcare worker
-
-### Frequency of Use
-
-- Real-time
-
-### Triggers
-
-- Patient attends health setting and meets criteria for system to trigger FGM status query i.e. under 18 with female genitalia
-
-### Pre-conditions
-
-- Patient has a verified NHS number 
-
-### Post-conditions
-
-- Healthcare worker is made aware of any risk of FGM 
-
-### Main Course
-
-- The patient presents at the care setting
-- The healthcare worker is made aware of the patient being at risk of FGM
-
-### Alternative Course
-
-- Patient’s NHS number is not on FGM-IS. Nothing is presented to the health or social care
-
-### Exception
-
-- System exception e.g. network access, RBAC failure, API error
 
 <hr>
 
@@ -57,11 +12,11 @@
 
 **As a Healthcare Worker:**
 
-- I can add the patient’s FGM risk indicator if the patient has any family history of FGM
+- I can add the patient’s FGM risk indicator 
 
 **So that:**
 
-- **TO BE ADDED**
+- Other healthcare workers know if the patient has any family history of FGM
 
 ### Use Case Flows
 
@@ -101,15 +56,62 @@
 
 <hr>
 
+<h2 id="user-story-view-fgm-risk-indicator">View FGM Risk Indicator</h2>
+
+**As a Healthcare Worker:**
+
+- I can view the patient’s FGM Indicator 
+
+**So that:**
+
+- I know if the patient has any Family history of FGM
+
+### Use Case Flows
+
+### Actors
+
+- Healthcare worker
+
+### Frequency of Use
+
+- Real-time
+
+### Triggers
+
+- Patient attends health setting and meets criteria for system to trigger FGM status query i.e. under 18 with female genitalia
+
+### Pre-conditions
+
+- Patient has a verified NHS number 
+
+### Post-conditions
+
+- Healthcare worker is made aware of any risk of FGM 
+
+### Main Course
+
+- The patient presents at the care setting
+- The healthcare worker is made aware of the patient being at risk of FGM
+
+### Alternative Course
+
+- Patient’s NHS number is not on FGM-IS. Nothing is presented to the health or social care
+
+### Exception
+
+- System exception e.g. network access, RBAC failure, API error
+
+<hr>
+
 <h2 id="user-story-delete-fgm-risk-indicator">Delete FGM Risk Indicator</h2>
 
 **As a Healthcare Worker:**
 
-- I can delete the patient’s FGM risk indicator if it is no longer required. 
+- I can delete the patient’s FGM risk indicator if it is no longer required
 
 **So that:**
 
-- **TO BE ADDED**
+- The patient's FGM risk indicator is correct
 
 ### Use Case Flows
 
@@ -150,11 +152,14 @@ N/A
 
 ## FHIR Assets for Sprint 1
 
-
+<div>
 {{render:Profiles-and-Extensions-All-Extensions-Extension-England-FlagRemovalReason}}
+</div>
 
+<div>
 {{render:Home-Terminology-All-CodeSystems-CodeSystem-England-FGMRemovalReason}}
+</div>
 
+<div>
 {{render:Guide-Home-Terminology-All-ValueSets-ValueSet-England-FlagRemovalReason}}
-
-
+</div>
