@@ -1,13 +1,9 @@
-- name: Index
-  filename: Index.page.md
 - name: Design Overview
   filename: Design-Overview
 - name: Data Mapping
   filename: DataMapping.page.md
 - name: Transport
   filename: Transport.page.md
-- name: Acknowledgements and Responses
-  filename: Acknowledgements-and-Responses.page.md
 - name: Error Handling
   filename: Error-Handling.page.md
 - name: Acknowledgement Framework
