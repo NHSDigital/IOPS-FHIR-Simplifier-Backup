@@ -102,7 +102,11 @@
             // When the user scrolls down 100px from the top of the document, show the button
             window.onscroll = function () { 
                 showTopButton();
+                try {
                 scrollProfileSideBar();
+                } catch {
+
+                }
             };
 
             function showTopButton() {
@@ -522,7 +526,7 @@
                         for (i=0;i<slashCount;i++)
                         {
                             newUrl = newUrl + url.split("/")[i] + "/";
-                            if (newUrl.endsWith("Home/")) {
+                            if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
                                 i = slashCount;
                             }
                         }
@@ -594,7 +598,7 @@
                             for (i=0;i<slashCount;i++)
                             {
                                 newUrl = newUrl + url.split("/")[i] + "/";
-                                if (newUrl.endsWith("Home/")) {
+                                if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
                                     i = slashCount;
                                 }
                             }
@@ -644,14 +648,14 @@
                 for (i=0;i<slashCount;i++)
                 {
                     newUrl = newUrl + pageUrl.split("/")[i] + "/";
-                    if (newUrl.endsWith("Home/")) {
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
                         i = slashCount;
                     }
                 }
                 if (newUrl.endsWith("/")) {
                     newUrl = newUrl.slice(0, -1);
                 }
-                if (!newUrl.endsWith("Home")) {
+                if (!(newUrl.endsWith("Home") || newUrl.endsWith("home"))) {
                     newUrl = newUrl + "/Home";
                 }
                 $("a#footer-sitemap").each(function(index) {
@@ -1102,6 +1106,7 @@
 
             //removes any development notice and footer if its being rendered in an iframe
             function pageInIframe() {
+                debugger;
                 if (window.frameElement !== null)
                 {
                     $('div#development-notice').remove();
