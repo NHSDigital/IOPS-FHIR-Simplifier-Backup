@@ -31,8 +31,12 @@ select
   <b>Note:</b>There is currently no example that uses this extension. An example will be added in a future release.<br>
 </div>
 
+<div id="Feedback" class="tabcontent">
+<h4><a href='https://simplifier.net/NHS-England-Implementation-Guide/Extension-England-FlagRemovalReason/~issues?level=File' target="_blank">Propose a change to Extension-England-FlagRemovalReason </a></h4>
+</div>
+
 <h3>Extension Specific Guidance</h3>
-There is a binding within this extension to a {{pagelink:ValueSet-England-FlagRemovalReason}}.
+There is a binding within this extension to ValueSet-England-FlagRemovalReason.
 
 ---
     

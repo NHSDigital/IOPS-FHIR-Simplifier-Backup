@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-md-16">
                         <h3 class="guide-title">{{ guide-title }}</h3>
-                        <h5>v1.0.0-release</h5>
+                        <h5>{{guide-version}}</h5>
                     </div>
                     <div class="col-md-4 hl7-logo" style="margin-top:15px;">
                         <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
@@ -69,7 +69,7 @@
                     <b>Notice</b><br />
                     <ul>
                         <li>This version of the NHS England Implementation Guide is currently under development.</li>
-                        <li>This is a 'pre-release' version and exists for the purpose of internal review and is <b>not</b> suitable for development purposes.</li>
+                        <li>This is a 'pre-release' version and exists for the purpose of internal review of the Clinical and Technical Assurance Sprint 1, and is <b>not</b> suitable for development purposes.</li>
                     </ul>
                 </div>
             <!--Comment out for publication, end-->
@@ -97,7 +97,7 @@
                     </tr>
                     <tr>
                       <td colspan="2"><b>Packages are based on:</b> <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a> & <a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
-                      <td colspan="2"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Guidance/Sitemap-Overview.page.md?version">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                      <td colspan="2"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Guidance/Sitemap-Overview.page.md?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../Home/?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
                     </tr>  
                 </table>
             </div>
@@ -363,14 +363,14 @@
                 for (i=0;i<slashCount;i++)
                 {
                     newUrl = newUrl + pageUrl.split("/")[i] + "/";
-                    if (newUrl.endsWith("Home/")) {
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
                         i = slashCount;
                     }
                 }
                 if (newUrl.endsWith("/")) {
                     newUrl = newUrl.slice(0, -1);
                 }
-                if (!newUrl.endsWith("Home")) {
+                if (!(newUrl.endsWith("Home") || newUrl.endsWith("home"))) {
                     newUrl = newUrl + "/Home";
                 }
                 $("a#footer-sitemap").each(function(index) {

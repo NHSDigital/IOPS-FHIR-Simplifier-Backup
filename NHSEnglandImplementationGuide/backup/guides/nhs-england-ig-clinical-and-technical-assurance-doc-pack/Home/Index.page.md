@@ -6,10 +6,10 @@ The purpose of this pack is to provide guidance documentation for stakeholders i
 
 ## Pack Structure
 
-This pack contains the guidance and reference material required to participate in the C&TA process. The content of the NHS England IG Implementation Guide to be reviewed is contained in the <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/index.page.md?version=current' target="_blank">NHS England IG Implementation Guide STU1</a>. Items are indexed by C&TA Sprints and the scope of this sprint is items marked accordingly.
+This pack contains the guidance and reference material required to participate in the C&TA process. The content of the NHS England IG Implementation Guide to be reviewed is contained in the <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1?version=1.0.0-sprint-1-review' target="_blank">NHS England IG Implementation Guide STU1</a>. Items are indexed by C&TA Sprints and the scope of this sprint is items marked accordingly.
 
 ## Background
-This sprint involves creating a review pack for consultation, including a first draft of mapping by the NHS England IG Development team, which is published to the NHS England Programmes stakeholders for a review period of 7 working days, and subsequenty followed by a consolidation call.
+This sprint involves creating a review pack for consultation, including a first draft of mapping by the NHS England IG Development team, which is published to the NHS England Programmes stakeholders for a review period of 7 working days, and subsequently followed by a consolidation call.
 
 Documentation is available online for the [Clinical and Technical Assurance](https://simplifier.net/guide/nhs-england-design-and-development-approach/Home/Assurance---Endorsement/Clinical-and-Technical-Assurance.page.md?version=current) process. The documentation will give background information to allow the reader to take part in the C&TA process.
 
