@@ -1,3 +1,7 @@
-#### {{page-title}}
+---
+topic: SiteMap
+---
+
+## Sitemap
 
 {{index:root}}

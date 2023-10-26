@@ -10,9 +10,9 @@ topic: Home
 ### Specification Overview
 This Implementation Guide and the HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4 artefacts that it references define a specification to enable the exchange of pathology laboratory data.
 
-This is version 0.1.2. For the version history see {{pagelink:ReleaseNotes}}.
-
 The specification has been created by [NHS England]( https://simplifier.net/organization/NHSDIgital) and forms part of the [NHS England Pathology Project]( https://simplifier.net/pathology). The profiles that this specification references are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2.
+
+For the version history see {{pagelink:ReleaseNotes}}.
 
 ### Pathology Overview
 Pathology tests and investigations are critical to many aspects of patient care, supporting the diagnosis, treatment, monitoring and prevention of disease. Pathology comprises a broad range of specialities, each of which includes many individual tests. The key specialities can be grouped as follows:
@@ -27,7 +27,7 @@ Pathology tests are requested by a range of care provider organisations in prima
 An increasing number of pathology tests are performed outside of laboratories. These include tests that may be performed at a point of care (usually by a Health Care Professional in a care setting such as a GP practice or in a hospital ward) or by a patient or their carer at home.
 
 ### Related Guides
-Refer to the following related implementation guidance:  
+Refer to the following related implementation guidance: 
 
 <div class="nhsd-o-card-list">
     <div class="nhsd-t-grid">
@@ -55,4 +55,5 @@ Refer to the following related implementation guidance:
             </div>
         </div>
     </div>
-</div
+</div>
+
