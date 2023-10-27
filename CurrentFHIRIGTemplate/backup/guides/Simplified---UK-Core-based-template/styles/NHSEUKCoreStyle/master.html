@@ -88,8 +88,8 @@
                     </tr>
                     <tr>
                       <td colspan="2"><b>Packages are based on:</b> <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a> & <a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
-                      <td colspan="2"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Helpandsupport/Sitemap-Overview.page.md?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
-                    </tr>  
+                      <td colspan="2"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Helpandsupport/Sitemap-Overview.page.md?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../Home/?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                    </tr> 
                 </table>
             </div>
         </footer>
@@ -305,16 +305,17 @@
                 let slashCount = pageUrl.split("/").length;
                 let newUrl = '';
                 for (i=0;i<slashCount;i++)
+                for (i=0;i<slashCount;i++)
                 {
                     newUrl = newUrl + pageUrl.split("/")[i] + "/";
-                    if (newUrl.endsWith("Home/")) {
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
                         i = slashCount;
                     }
                 }
                 if (newUrl.endsWith("/")) {
                     newUrl = newUrl.slice(0, -1);
                 }
-                if (!newUrl.endsWith("Home")) {
+                if (!(newUrl.endsWith("Home") || newUrl.endsWith("home"))) {
                     newUrl = newUrl + "/Home";
                 }
                 $("a#footer-sitemap").each(function(index) {
@@ -322,7 +323,7 @@
                     let destVersion = "?" + destUrl.split("?")[1];
                     destUrl = newUrl + "/Help-and-support/Sitemap-Overview" + destVersion;
                     if (pageVersion.startsWith("?version=current")){
-                        destUrl = destUrl.replace(destVersion, pageVersion);
+                        destUrl = destUrl.replace(destVersion, ".page.md" + pageVersion);
                     }
                     $(this).attr("href", destUrl) ;
 				});
