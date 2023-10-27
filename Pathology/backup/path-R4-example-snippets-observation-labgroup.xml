@@ -12,6 +12,14 @@
 	</identifier>
 	<!-- The status of the test group. -->
 	<status value="final" />
+	<!-- The general type of test group. -->
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+			<code value="laboratory" />
+			<display value="Laboratory" />
+		</coding>
+	</category>
 	<!-- The clinical code and name of the test group. -->
 	<code>
 		<coding>

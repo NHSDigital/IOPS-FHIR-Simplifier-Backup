@@ -350,6 +350,13 @@
                     <value value="9920b5d3-9f19-41df-8d5a-fd2d4288e305" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Requestable (procedure) -->
@@ -400,6 +407,13 @@
                     <value value="a26ada79-ac32-4ff8-a3e4-fb5950462271" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Reportable (observable entity) -->
@@ -451,6 +465,13 @@
                     <value value="78443cb9-f248-44ef-9e6b-37fc4a592c1b" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Reportable (observable entity) -->
@@ -508,6 +529,13 @@
                     <value value="b9c64863-06b5-4e98-b226-8ef28059f238" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Reportable (observable entity) -->
@@ -565,6 +593,13 @@
                     <value value="9f022172-f721-4657-ab23-a28157e783af" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Reportable (observable entity) -->
@@ -616,6 +651,13 @@
                     <value value="c949a08a-49f9-4093-9f17-67d23ec92e46" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Requestable (procedure) -->
@@ -670,6 +712,13 @@
                     <value value="ac255464-4557-40ee-8f53-ef3104b10872" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Reportable (observable entity) -->
@@ -727,6 +776,13 @@
                     <value value="b1890fe7-ef3b-4d74-bc2f-665059d0c9d7" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Reportable (observable entity) -->
@@ -784,6 +840,13 @@
                     <value value="b88011a3-e10b-4f35-b388-5622c4e8d808" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Reportable (observable entity) -->
@@ -841,6 +904,13 @@
                     <value value="86fb479a-ab58-4f99-81de-af848d9af40c" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Reportable (observable entity) -->
@@ -898,6 +968,13 @@
                     <value value="c6d25926-fb74-400b-98b8-47ae7393f127" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Reportable (observable entity) -->

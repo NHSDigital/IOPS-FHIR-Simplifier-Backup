@@ -17,5 +17,6 @@ Dynamic function tests may be structured using a combination of:
 * a group level Observation with ‘hasMember’ relationships to the Observations containing the test results for each time interval e.g. blood glucose level at 0 minutes, blood glucose level at 30 minutes, blood glucose level at 60 minutes etc.
 * ‘sequelTo’ relationships to link the Observations containing the test results to one another
 
-<br>
+---
+
 

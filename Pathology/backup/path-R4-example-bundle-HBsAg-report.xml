@@ -292,6 +292,13 @@
                     <value value="cca2b653-b6dd-4bf3-8337-10b140d50972" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
 						<!-- UTL Reportable (observable entity) -->

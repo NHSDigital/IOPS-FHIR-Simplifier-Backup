@@ -34,4 +34,4 @@ There are many possible variations and exceptions to this basic process, includi
 * While a test report is still in progress, a Requesting HCP may ask for further tests to be performed, in addition to those that were originally requested. These are known as **add-on tests**. 
 * The laboratory may issue one or more **interim reports** before sending a final report.
 
-<br>
+---

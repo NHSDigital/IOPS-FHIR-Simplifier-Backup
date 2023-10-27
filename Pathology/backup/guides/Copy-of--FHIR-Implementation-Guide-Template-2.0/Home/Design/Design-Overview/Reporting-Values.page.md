@@ -23,12 +23,15 @@ In FHIR, the value[x] construct allows a choice of datatype to be returned, appr
 | valueDateTime         | [dateTime](https://hl7.org/fhir/r4/datatypes.html#dateTime)                   |
 | valuePeriod           | [Period](https://hl7.org/fhir/r4/datatypes.html#Period)                       |
 
+<br>
 
 #### Reporting units
 When reporting Quantities, systems SHOULD report relevant units for the quantity value.
 
 * If a code for the unit is present, the system SHALL also be present
 * UCUM is the preferred system for reporting units i.e. system = [http://unitsofmeasure.org](http://unitsofmeasure.org)
+
+<br>
 
 #### Reporting coded values using Read Codes ###
 While coded SNOMED CT values are preferred, e.g.:
@@ -54,9 +57,10 @@ if a translation or mapping to SNOMED is not available, reporting coded values u
     </coding>
 </code>
 ```
+<br>
 
 #### Reporting qualified reference ranges ###
 
 The PMIP EDIFACT messaging standard provides a mechanism to report a reference range for the test undertaken. A low and/or a high bound can be reported. Values with a low bound only are interpreted as greater than low bound. Values with a high bound only are interpreted as less than high bound.
 
-<br>
+---

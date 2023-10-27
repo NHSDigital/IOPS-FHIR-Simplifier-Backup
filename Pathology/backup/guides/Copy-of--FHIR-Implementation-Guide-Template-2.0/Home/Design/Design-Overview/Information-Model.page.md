@@ -46,4 +46,4 @@ The following is a list of the business entities with a link to the associated p
 
 Refer to the {{pagelink:DesignDataMapping}} section of the specification for a detailed definition of the mapping between the data items associated with each business entity and the corresponding FHIR data elements.
 
-<br>
+---

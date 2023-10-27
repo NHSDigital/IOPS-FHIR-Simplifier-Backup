@@ -92,10 +92,10 @@ An example of how each supported data element may be populated is provided in {{
         <tr>
             <td>category</td>
             <td>0..*</td>
-            <td>0..*</td>
-            <td>Required</td>
+            <td><code>1..*</code></td>
+            <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>The general type of test result. This <b>SHOULD</b> be populated with a default code of <code>laboratory</code>.</td>
+            <td>A code that classifies the general type of test result. This <b>SHALL</b> be populated with a fixed value of category code <code>laboratory</code> for <code>Laboratory</code>.<br><br>If required, additional category codes <b>MAY</b> also be included.</td>
         </tr>
 		<tr>
             <td>code</td>
