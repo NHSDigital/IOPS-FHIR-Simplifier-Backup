@@ -16,8 +16,6 @@
   filename: ProfileUKCore-Device
 - name: Profile UKCore-DocumentReference
   filename: ProfileUKCore-DocumentReference
-- name: Profile UKCore-Observation-VitalSigns
-  filename: Profile-UKCore-Observation-VitalSigns
 - name: Profile UKCore-OrganizationAffiliation
   filename: Profile-UKCore-OrganizationAffiliation
 - name: Profile UKCore-Provenance
