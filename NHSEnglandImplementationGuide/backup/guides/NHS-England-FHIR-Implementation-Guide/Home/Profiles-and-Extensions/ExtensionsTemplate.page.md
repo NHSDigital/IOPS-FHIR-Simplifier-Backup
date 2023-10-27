@@ -4,7 +4,7 @@
    <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
    <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
   <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-  <button class="tablinks" onclick="openTab(event, 'Feedback')">Feedback</button>
+  <button class="tablinks feedback" onclick="openTab(event, 'Feedback')">Feedback</button>
 </div>
 
 <div id="Tree View" class="tabcontent" style="display:block">
