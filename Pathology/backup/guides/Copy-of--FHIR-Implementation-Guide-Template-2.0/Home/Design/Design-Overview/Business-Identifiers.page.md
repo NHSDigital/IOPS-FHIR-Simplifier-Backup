@@ -31,4 +31,4 @@ The identifier will appear as, for example:
 #### No Business Identifier available
 Where no business identifier is available, caution must taken when presenting Test Report resources out of the overall Pathology message context. Where identification of a component resource is only by logical id cross reference, there is a significant risk of loss of clinical context.
 
-<br>
+---

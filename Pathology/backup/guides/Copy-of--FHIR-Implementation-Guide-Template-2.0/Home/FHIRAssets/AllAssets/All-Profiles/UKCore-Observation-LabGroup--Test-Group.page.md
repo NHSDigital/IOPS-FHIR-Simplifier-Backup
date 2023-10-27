@@ -90,6 +90,14 @@ An example of how each supported data element may be populated is provided in {{
             <td>The status of the test group.</td>
         </tr>
         <tr>
+            <td>category</td>
+            <td>0..*</td>
+            <td><code>1..*</code></td>
+            <td>Mandatory</td>
+            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+            <td>A code that classifies the general type of test group. This <b>SHALL</b> be populated with a fixed value of category code <code>laboratory</code> for <code>Laboratory</code>.<br><br>If required, additional category codes <b>MAY</b> also be included.</td>
+        </tr>
+        <tr>
             <td>code</td>
             <td>1..1</td>
             <td>1..1</td>
@@ -171,14 +179,6 @@ An example of how each supported data element may be populated is provided in {{
             <td></td>
             <td></td>
             <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>category</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
             <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
         </tr>
         <tr>
