@@ -594,6 +594,9 @@
                 $('div.tabcontent[id^="Examples"]').each(function(index) {
                     $(this).prev("p:empty").remove();
                 });
+                $('div.tabcontent[id^="Feedback"]').each(function(index) {
+                    $(this).prev("p:empty").remove();
+                });
             }
 
             //fix wcag compliance issues caused by the way simplifier renders

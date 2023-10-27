@@ -111,6 +111,10 @@ hr.thickline{
      border-top: none;
 }
 
+.tab button.feedback {
+    float: right;
+}
+
 /* css for simplifier diff/hybrid/snap buttons */
 .treetable-buttons {
     padding-bottom: 5px !important

@@ -15,7 +15,7 @@ Documentation is available online for the [Clinical and Technical Assurance](htt
 
 ## Clinical & Technical Assurance Sprint Calls
 
-The first C&TA call will be held as provided below.
+The C&TA call will be held as provided below.
 
 <table class="assets">
 <tr>
@@ -27,6 +27,12 @@ The first C&TA call will be held as provided below.
 <tr>
 <td>Thursday 26th October, 2023 <br> Time:13:00 - 14:30pm</td>
 <td>Introduction, overview and use cases</td>
+<td><a href='https://nhs.sharepoint.com/:p:/s/msteams_67ef67/EQuXMZHGzGZPpZkJkiSJerUBuo_cXjCSnYk6lcEj9931DQ?e=vvdvE2' target="_blank">Click here</a></td>
+<td><a href='https://nhs.sharepoint.com/:v:/s/msteams_67ef67/EQequIaCullFgmiu7lX2CMIBkKaHvyvJj3rdBcmTECOBvA?e=zVoXNw' target="_blank">Click here</a></td>
+</tr>
+<tr>
+<td>Tuesday 7th November, 2023 <br> Time:16:00 - 16:45pm</td>
+<td>Sprint 1 - Consolidation Call</td>
 <td>TBC</td>
 <td>TBC</td>
 </tr>
