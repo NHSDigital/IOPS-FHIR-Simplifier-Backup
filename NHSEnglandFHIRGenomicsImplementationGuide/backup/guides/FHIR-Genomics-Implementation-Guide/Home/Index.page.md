@@ -120,7 +120,7 @@ This section lists examples created to illustrate how to populate resources in c
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
                                     <h1 class="nhsd-t-heading-s">NHS Digital API Catalogue</h1>
-                                    <p class="nhsd-t-body-s">API's which use the NHS Digital Implementation Guide</p>
+                                    <p class="nhsd-t-body-s">APIs which use the NHS Digital Implementation Guide</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
                                     <span class="nhsd-a-button nhsd-a-button--invert">
