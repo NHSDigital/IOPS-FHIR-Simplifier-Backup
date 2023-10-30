@@ -2,7 +2,7 @@
 
 More information about the extensions can be found using the links below.
 
-<table class="assets" title="Extension list">>
+<table class="assets" title="Extension list">
 <tr>
 <th class="width20">Extension</th>
 <th class="width20">Context</th>
@@ -13,21 +13,25 @@ More information about the extensions can be found using the links below.
 <td>additionalContact</td>
 <td>ServiceRequest</td>
 <td>{{pagelink:Extension-UKCore-AdditionalContact}}</td>
+<td></td>
 </tr>
 <tr>
 <td>coverage</td>
 <td>ServiceRequest</td>
 <td>{{pagelink:Extension-UKCore-Coverage}}</td>
+<td></td>
 </tr>
 <tr>
 <td>priorityReason</td>
 <td>ServiceRequest.priority</td>
 <td>{{pagelink:Extension-UKCore-PriorityReason}}</td>
+<td></td>
 </tr>
 <tr>
 <td>sourceOfServiceRequest</td>
 <td>ServiceRequest</td>
 <td>{{pagelink:Extension-UKCore-SourceOfServiceRequest}}</td>
+<td></td>
 </tr>
 </table>
 
