@@ -22,9 +22,30 @@ Pathology tests and investigations are critical to many aspects of patient care,
 * cellular pathology – this includes cytology and histopathology
 * genetics – this includes clinical cytogenetics and molecular genetics
 
-Pathology tests are requested by a range of care provider organisations in primary care, secondary care and community settings. Within the NHS in England most pathology tests are performed by laboratories based in hospitals. Some pathology laboratories provide specialist and reference pathology testing services, often at a regional level. Over the past few years laboratories have been forming regional pathology networks. 
+Pathology tests are requested by a range of care provider organisations in primary care, secondary care and community settings. Within the NHS in England most pathology tests are performed by laboratories based in hospitals. Some pathology laboratories provide specialist and reference pathology testing services, often at a regional level. Over the past few years, laboratories have been forming regional [pathology networks](https://www.england.nhs.uk/pathology-networks/). 
 
 An increasing number of pathology tests are performed outside of laboratories. These include tests that may be performed at a point of care (usually by a Health Care Professional in a care setting such as a GP practice or in a hospital ward) or by a patient or their carer at home.
+
+### Pathology Data Products
+This specification has been developed by the [Pathology Standards and Implementation](https://digital.nhs.uk/services/pathology-standards-and-implementation) team within NHS England. The team has also developed a SNOMED CT<sup>&reg;</sup> based catalogue of pathology laboratory test request and test result codes. This catalogue was previously known as the Unified Test List (UTL) but it has been further refined and is now published as two SNOMED CT reference sets:
+
+* PaLM (Pathology and Laboratory Medicine) procedure simple reference set - containing laboratory test request codes
+* PaLM (Pathology and Laboratory Medicine) observable entity simple reference set - containing laboratory test result codes
+
+Together, the Pathology FHIR specification and SNOMED CT PaLM reference sets define a set of related data products. These products will initially be used to replace the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification and [Pathology Bounded Code List](https://isd.digital.nhs.uk/trud3/user/guest/group/0/pack/38) (PBCL). These are currently used to define the structure and clinical coding of test reports that flow between laboratories and GP practices.
+
+PMIP EDIFACT (NHS003) is fundamentally limited because:
+* it is unable to carry SNOMED CT test result concepts - it can only support Read PBCL codes; the final release of Read CTV3 was in April 2018 consequently it has not been possible to create new Read PBCL codes since then 
+* it is unable to support complex report structures using fully atomic, coded results - the data elements of complex reports are mainly represented as text with limited clinical coding
+* the continued use of PMIP EDIFACT (NHS003) is a significant barrier to new system suppliers
+
+### Scope
+The current scope of the Pathology FHIR specification reflects the priority of replacing PMIP EDIFACT (NHS003) and the PBCL:
+
+* the initial focus is on the ability to support pathology test reporting for tests that are requested in primary care
+* the clinical payload that is supported by the specification is aligned with the PaLM reference sets and covers the following pathology disciplines:
+    * blood sciences - clinical biochemistry (also known as chemical pathology), haematology, immunology and transfusion medicine
+    * microbiology - bacteriology, virology and serology
 
 ### Related Guides
 Refer to the following related implementation guidance: 
