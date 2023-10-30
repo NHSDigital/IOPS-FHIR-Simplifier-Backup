@@ -3,14 +3,7 @@
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
 
-### Query for an FGM indicator
-
-**<font color="#00008B">GET</font>** /Flag?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|&lt;nhs-number&gt;
-
-**Parameters**
-
-The patient's NHS Number. This must be a verified NHS Number.
-- patient:identifier (required), type <a href='http://hl7.org/fhir/R4/search.html#token'>token</a>. 
+### Message a Galleri test report
 
 <br>
 <br>
