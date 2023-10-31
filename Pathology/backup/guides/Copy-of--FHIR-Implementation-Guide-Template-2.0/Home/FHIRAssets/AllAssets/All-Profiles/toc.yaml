@@ -1,5 +1,3 @@
-- name: Index
-  filename: Index.page.md
 - name: Profile Descriptions
   filename: Profile-Descriptions.page.md
 - name: UKCore-DiagnosticReport-Lab
@@ -24,3 +22,5 @@
   filename: UKCore-ServiceRequest-Lab.page.md
 - name: UKCore-Specimen
   filename: UKCore-Specimen.page.md
+- name: Examples
+  filename: Examples
