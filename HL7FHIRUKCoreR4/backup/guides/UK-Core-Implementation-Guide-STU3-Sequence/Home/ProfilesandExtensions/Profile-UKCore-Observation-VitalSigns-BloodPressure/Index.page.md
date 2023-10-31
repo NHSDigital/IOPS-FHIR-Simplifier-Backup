@@ -125,6 +125,12 @@ The following are example usage scenarios for the UK Core Observation Vital Sign
 
 The UKCore-Observation-VitalSigns-BloodPressure profile further derives from {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}} and this page only shows the differences between the two. Refer to {{pagelink:Profile-Observation,text:UKCore-Observation}} and {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}} for more implementation guidance.
 
+An instance of the UKCore-Observation-VitalSigns-BloodPressure resource SHALL have the `Observation.code` element populated, with a LOINC "magic code" and SNOMED CT concept as detailed below. In addition, the individual Systolic and Diastolic readings SHALL be populated in `Observation.component` as detailed below.
+
+<div id="renderParent" title="Blood Pressure Observation structure">
+{{render:BloodPressure}}
+</div>
+
 ### Minimum Viable Content
 
 The minimum viable content that all provider and consumer systems SHALL support are the elements within the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} and {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}} tables, along with the following.
