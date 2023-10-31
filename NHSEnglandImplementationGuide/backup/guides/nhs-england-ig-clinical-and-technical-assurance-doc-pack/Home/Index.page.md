@@ -1,4 +1,4 @@
-# Clinical and Technical Assurance Sprint 1 Documentation Pack
+# Clinical and Technical Assurance Sprint 2 Documentation Pack
 
 ## Purpose
 
@@ -6,7 +6,7 @@ The purpose of this pack is to provide guidance documentation for stakeholders i
 
 ## Pack Structure
 
-This pack contains the guidance and reference material required to participate in the C&TA process. The content of the NHS England IG Implementation Guide to be reviewed is contained in the <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1?version=1.0.0-sprint-1-review' target="_blank">NHS England IG Implementation Guide STU1</a>. Items are indexed by C&TA Sprints and the scope of this sprint is items marked accordingly.
+This pack contains the guidance and reference material required to participate in the C&TA process. The content of the NHS England IG Implementation Guide to be reviewed is contained in the <a>NHS England IG Implementation Guide STU1</a>. Items are indexed by C&TA Sprints and the scope of this sprint is items marked accordingly.
 
 ## Background
 This sprint involves creating a review pack for consultation, including a first draft of mapping by the NHS England IG Development team, which is published to the NHS England Programmes stakeholders for a review period of 7 working days, and subsequently followed by a consolidation call.
@@ -25,14 +25,14 @@ The C&TA call will be held as provided below.
 <th width="25%">Recording</th>
 </tr>
 <tr>
-<td>Thursday 26th October, 2023 <br> Time:13:00 - 14:30pm</td>
-<td>Introduction, overview and use cases</td>
-<td><a href='https://nhs.sharepoint.com/:p:/s/msteams_67ef67/EQuXMZHGzGZPpZkJkiSJerUBuo_cXjCSnYk6lcEj9931DQ?e=vvdvE2' target="_blank">Click here</a></td>
-<td><a href='https://nhs.sharepoint.com/:v:/s/msteams_67ef67/EQequIaCullFgmiu7lX2CMIBkKaHvyvJj3rdBcmTECOBvA?e=zVoXNw' target="_blank">Click here</a></td>
+<td>TBC</td>
+<td>TBC</td>
+<td><a>Click here</a></td>
+<td><a>Click here</a></td>
 </tr>
 <tr>
-<td>Tuesday 7th November, 2023 <br> Time:16:00 - 16:45pm</td>
-<td>Sprint 1 - Consolidation Call</td>
+<td>TBC</td>
+<td>TBC</td>
 <td>TBC</td>
 <td>TBC</td>
 </tr>
