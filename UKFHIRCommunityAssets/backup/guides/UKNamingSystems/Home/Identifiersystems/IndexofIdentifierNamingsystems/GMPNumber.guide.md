@@ -1,5 +1,17 @@
-## <code>GMP Number</code>
+## <code>{{page-title}}</code>
 
+<div id="transpose">
+@```
+from
+	NamingSystem
+where
+	id = 'gmpnumber-namingsystem'
+select
+  Responsible_Organisation: responsible,
+	Description: description
+```
+</div>
+<br>
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Overview')">Overview</button>
@@ -28,5 +40,5 @@
 {{json:https://fhir.hl7.org.uk/Id/gmp-number, snapshot}}
 </div>
 
----
 
+---
