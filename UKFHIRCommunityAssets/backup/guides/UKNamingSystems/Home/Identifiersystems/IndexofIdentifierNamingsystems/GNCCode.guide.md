@@ -1,5 +1,17 @@
 ## <code>{{page-title}}</code>
 
+<div id="transpose">
+@```
+from
+	NamingSystem
+where
+	id = 'gncnumber-namingsystem'
+select
+  Responsible_Organisation: responsible,
+	Description: description
+```
+</div>
+<br>
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Overview')">Overview</button>
@@ -27,5 +39,6 @@
   <h3>JSON View</h3>
 {{json:https://fhir.hl7.org.uk/Id/gnc-codes, snapshot}}
 </div>
+
 
 ---
