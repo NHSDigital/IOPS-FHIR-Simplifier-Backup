@@ -1,4 +1,0 @@
----
-topic: ReleaseNotes
----
-## Release Notes

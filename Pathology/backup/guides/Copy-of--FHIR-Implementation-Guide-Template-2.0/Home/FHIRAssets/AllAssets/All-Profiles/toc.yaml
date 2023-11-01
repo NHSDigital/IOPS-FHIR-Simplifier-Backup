@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: Profile Descriptions
   filename: Profile-Descriptions.page.md
 - name: UKCore-DiagnosticReport-Lab
