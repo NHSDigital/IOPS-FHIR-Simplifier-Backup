@@ -128,11 +128,11 @@ The payloads and workflow have been designed to support these services. Other {{
 <br>
 <br>
 ### Error Handling 
-* Booking Consumers and Providers **must** adhere to the {{pagelink:Home/Design/BaRS-Core/Error-Handling.page.md, text:error handling guidance}} 
+* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling, text:error handling guidance}} 
 <br>
 <br>
 ### Non Functional 
-* Booking Consumers and Providers **must** adhere to the {{pagelink:Home/Design/BaRS-Core/Non-functional-requirements.page.md, text:non functional requirements}}
+* Suppliers **must** adhere to the {{pagelink:core-NFR, text:non functional requirements}}
 <br>
 <br>
 <hr>

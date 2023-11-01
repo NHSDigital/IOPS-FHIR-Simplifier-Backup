@@ -81,6 +81,18 @@ The payload and workflow have been designed to support this service. Other {{pag
 * All contact methods **must** have a rank
 * There **must** be only one contact method with a rank of 1
 * The contact ranked 1 and the contact method ranked 1 **must** be the primary callback for the request
-
+<br>
+<br>
+### Audit
+* Sufficient information around any activity through the API and subsequent BaRS workflow **must** be persisted to aid support incidents and audit requirements
+<br>
+<br>
+### Error Handling 
+* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling, text:error handling guidance}} 
+<br>
+<br>
+### Non Functional 
+* Suppliers **must** adhere to the {{pagelink:core-NFR, text:non functional requirements}}
+<br>
 <br>
 <hr>

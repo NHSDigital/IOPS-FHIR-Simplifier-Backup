@@ -2,27 +2,25 @@
 topic: Application4
 ---
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This guide is currently under development <hr><p> This is a preview of a developing guide for information only. With the exception of those involved in developing solutions for the first of type (private beta), It is not intended to be used until the completed v1.0.0 documentation for this application is released <p> If you are interested in developing a BaRS compliant solution right now for the use cases covered by this application, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch</div>
+ <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This Application is currently under development <hr><p> This is a preview of a developing documentation for information only. It is not intended to be used until the completed v1.0.0 Application is released<p> If you are interested in developing a BaRS compliant solution for these use cases right now, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch</div>
+
 
 # Validation from 999 to CAS (Application 4)
 
-#Review whole page????
-
-## Use Cases Supported
+## Use cases supported
 
 This application supports the use of the following use cases:
 
 * Validation from 999 to Clinical Assessment Centres(CAS)
+</br>
+</br>
 
-## Introduction
+Note: for referral of 999 AST cases with a non-ambulance triage outcome (CAT 5) to a CAS for consultation and treatment and/or onward referral please see {{pagelink:application3}}
 
-### Overview
+## Data model endorsements
 
-???????????
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
+The referral information data model is based on user research with NHS 111 service providers, 999 Ambulance Service Trusts, Clinical Assessment Services and clinical and administrative Emergency Department staff.  We carried out this research in parallel with the [Professional Records Standards Body (PRSB)](https://theprsb.org/) who examined the wider brief of 'referrals from NHS 111 to any other care setting' 
 
-### Data model endorsements
-
-??????????????The GP to Pharmacy CPCS (Community Pharmacist Consultation Service) Minor Illness referral information data model is informed by user research with pharmacy service providers. We have engaged with NHS England (NHSE) Policy teams to establish the service information requirements. The data model is based on the Community Pharmacy Standard v3.0 as defined and endorsed by the Professional Records Standards Body (PRSB). The referral information has been validated by the NHSE Pharmacy Clinical Reference Group. This provides the necessary confidence that solutions built to the standard will be both fit for purpose and safe.
+For the Referral into a CAS from a 999 AST use case, the data model was endorsed by NHS England following consultation with the [Association of Ambulance Chief Executives (AACE)](https://aace.org.uk/),  National Ambulance Information Group (NAIG), National Ambulance Services Medical Directors' Group (NASMeD) and National Ambulance Digital Leaders Group (NADLG)
 
 <hr>
