@@ -18,10 +18,10 @@ Recorded as a free-text string within the `ClinicalImpression.summary` element.
 
 <div class="example" class="nhsd-!t-margin-bottom-6">
   <div id="XML View" class="tabcontent nhsd-!t-margin-bottom-6" style="display:block"> 
-    {{xml:db9e8c58-bbe7-4c52-b699-b4db78a6a88d}}
+    {{xml:db9e8c58-bbe7-4c52-b699-b4db78a6a88d-duplicate-2}}
   </div>
   <div id="Table View" class="tabcontent nhsd-!t-margin-bottom-6">
-    {{table:db9e8c58-bbe7-4c52-b699-b4db78a6a88d}}
+    {{table:db9e8c58-bbe7-4c52-b699-b4db78a6a88d-duplicate-2}}
   </div>
 </div>
 

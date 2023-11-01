@@ -97,6 +97,10 @@
           <resource>
             <Composition>
               <id value="28182303-be8d-429f-a593-4bd1b4952fc5" />
+              <meta>
+                  <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                  <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1" />
+              </meta>
               <identifier>
                 <system value="https://fhir.provider.example/identifier/composition" />
                 <value value="28182303-be8d-429f-a593-4bd1b4952fc5" />
