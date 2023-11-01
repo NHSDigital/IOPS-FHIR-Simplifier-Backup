@@ -18,7 +18,7 @@ As someone involved in a patient's care, i want to be able to retrieve the lates
 
 ## Workflow Diagram
 
-Add a diagram 
+{{render:Patient query.jpg}}
 
 ## Requirements
 
