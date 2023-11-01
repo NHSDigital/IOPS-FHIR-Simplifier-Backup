@@ -15,9 +15,8 @@ To support the workflows for this Application of the standard the operations tha
 
 Making a referral for this Application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
 
-The message definition that defines this payload for this Application is: {{link:BARS-MessageDefinition-ServiceRequest-Request-Referral}}
+The message definition that defines this payload for this Application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 
-{{link:https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral}}
 
 
 In addition to that the specific workflow parameters that are required are as follows:
@@ -88,7 +87,7 @@ To cancel a referral this Application follows the {{pagelink:core-standardpatter
 
 The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern, text:standard pattern}}.
 
-The message definition that defines this payload for this Application is: {{link:barsmessagedefinitionservicerequestrequestcancelled}}
+The message definition that defines this payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
 As a general princple, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed. This is always defined within the relevent message definition.
 

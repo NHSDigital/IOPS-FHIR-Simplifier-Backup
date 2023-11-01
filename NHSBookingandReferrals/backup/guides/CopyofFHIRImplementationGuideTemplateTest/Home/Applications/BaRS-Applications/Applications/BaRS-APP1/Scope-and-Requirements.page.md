@@ -168,15 +168,11 @@ The payloads and workflow have been designed to support these services. Other {{
 <br>
 
 ### Error Handling 
-
-* Senders and Receivers **must** adhere to the {{pagelink:Home/Design/BaRS-Core/Error-Handling.page.md, text:error handling guidance}} 
-
+* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling, text:error handling guidance}} 
 <br>
 <br>
-
 ### Non Functional 
-
-* Senders and Receivers **must** adhere to the {{pagelink:Home/Design/BaRS-Core/Non-functional-requirements.page.md, text:non functional requirements}}
+* Suppliers **must** adhere to the {{pagelink:core-NFR, text:non functional requirements}}
 
 <br>
 <br>
