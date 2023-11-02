@@ -1,10 +1,18 @@
 ## `{{page-title}}`
 
-This element has an open slice on `Observation.component`, and SHALL be used to record an average systolic blood pressure measurement, which SHALL have a SNOMED CT concept used to record the type of average systolic blood pressure measurement.
 
-It SHOULD be used to also record an average diastolic blood pressure measurement, which SHALL have a SNOMED CT concept used to record the type of average diastolic blood pressure measurement.
+This element has a closed slice on `Observation.component`, discriminated by the value of `Observation.component.code.text`. This closed slice allows average Systolic and Diastolic blood pressure measurements to be populated. 
+
+<br>
 
 The following values SHALL be used:
+
+`Observation.component:SystolicBP` slice, discriminated by a `Observation.component.code.text` value of "Systolic blood pressure", SHALL be used to record an average systolic blood pressure measurement, which SHALL have a SNOMED CT concept used to record the type of average systolic blood pressure measurement.
+
+
+### `Observation.component:SystolicBP.code.text`
+The following SHALL be used for this profile:
+- `Observation.component.code.text` = `Systolic blood pressure`
 
 ### `Observation.component:SystolicBP.code.coding:snomedCT`
 The following SHALL be used for this profile:
@@ -19,6 +27,12 @@ The following SHALL be a Quantity, and the following used for this profile:
 - `Observation.component.valueQuantity.unit` = `millimeter of mercury`
 
 <br>
+
+`Observation.component:DiastolicBP` slice, discriminated by a `Observation.component.code.text` value of "Diastolic blood pressure", SHOULD be used to also record an average diastolic blood pressure measurement, which SHALL have a SNOMED CT concept used to record the type of diastolic blood pressure measurement if used.
+
+### `Observation.component:DiastolicBP.code.text`
+The following SHALL be used for this profile:
+- `Observation.component.code.text` = `Diastolic blood pressure`
 
 ### `Observation.component:DiastolicBP.code.coding:snomedCT`
 The following SHALL be used for this profile:

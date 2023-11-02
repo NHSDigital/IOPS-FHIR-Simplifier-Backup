@@ -3,7 +3,7 @@ topic: Profile-Observation-VitalSigns-BloodPressure-Component
 ---
 ## `{{page-title}}`
 
-This element has a closed slice on `Observation.component`, discriminated by the value of `Observation.component.code.text`. This closed slice allows Systeolic and Diastolic measurements to be populated. 
+This element has a closed slice on `Observation.component`, discriminated by the value of `Observation.component.code.text`. This closed slice allows Systolic and Diastolic measurements to be populated. 
 
 <br>
 

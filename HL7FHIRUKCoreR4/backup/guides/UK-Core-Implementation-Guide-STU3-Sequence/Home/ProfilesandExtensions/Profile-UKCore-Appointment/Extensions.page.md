@@ -13,6 +13,7 @@ More information about the extensions can be found using the links below.
 <td>bookingOrganisation</td>
 <td>Appointment</td>
 <td>{{pagelink:Extension-UKCore-BookingOrganization}}</td>
+<td></td>
 </tr>
 <tr>
 <td>deliveryChannel</td>

@@ -15,10 +15,24 @@
 </tr>
 <tr>
 <td colspan="4"><b>Changes for this version</b>
+<br>
+<br>
+<b>General IG improvements:</b><br>
 <ul>
 <li>Swap Examples to Simplifier templating</li>
 <li>Swap ValueSets to Simplifier templating</li>
+<li>Swap Extensions to Simplifier templating</li>
 </ul>
+<b>C&TA Sprint 7 Assets:</b><br>
+<ul>
+<li>Changed proposed assets from draft to active</li>
+<li>value[x] and specimen cardinality set to 0..0 on <code>UKCore-Observation-AverageBloodPressure</code> and <code>UKCore-Observation-VitalSigns-BloodPressure</code></li>
+<li>Revised and simplified ecl's, and expansion of the ValueSet contents</li>
+<li>Improved description and purpose</li>
+<li>Altered binding strength on Observation.ethod< to bring it in line with UK core Design and Devedlopment Approach</li>
+<li>Improved cardinality on loinc / snomedCT, and systolicBP / diastolicBP slices</li>
+<li>Moved loinc / snomedCT slicing on Observation.component from <code>UKCore-Observation-VitalSigns</code> to <code>UKCore-Observation-VitalSigns-BloodPressure</code> as they only applied for this derived profiles</li>
+<li>Improved guidance on the use of code, value[x], and component elements for <code>UKCore-Observation-AverageBloodPressure</code> and <code>UKCore-Observation-VitalSigns-BloodPressure</code></li>
 <br>
 <ul>
 
@@ -46,8 +60,9 @@
 <li>CSS and HTML id changes to improve Web Accessibility</li>
 <li>Fix unclosed tables causing Bindings to appear incorrectly</li>
 <li>Add missing FQL for UKCore-ServiceRequest-Lab details</li>
+<li>Added links to raise issues, on new assets callout box</li>
 </ul>
-<b>Sprint 7 Proposals:</b><br>
+<b>C&TA Sprint 7 Proposals:</b><br>
 <ul>
 <li>Changes to the existing draft <code>UKCore-Observation-VitalSigns</code> derived profile</li>
 <li>Addition of draft proposed profiles for vital signs: Blood Pressure, BMI, Head Circumference, Heart Rate, Height, Oxygen Saturation, Respiratory Rate, Temperature, and Weight, derived from <code>UKCore-Observation-VitalSigns</code></li>
@@ -63,7 +78,7 @@
 <td>UK Core Implementation Guide STU3 Sequence - Sprint 6 Review</td>
 </tr>
 <tr>
-<td colspan="4"><b>Note:</b> This content has snce been added to the STU2 Sequence
+<td colspan="4"><b>Note:</b> This content has since been added to the STU2 Sequence, and this version is listed for historic purposes only
 <br><br>
 <b>Changes for this version</b>
 <ul>
