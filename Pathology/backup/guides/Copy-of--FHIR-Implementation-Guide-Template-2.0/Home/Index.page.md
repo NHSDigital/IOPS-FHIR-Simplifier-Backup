@@ -5,7 +5,7 @@ topic: Home
 <div markdown="span" class="alert alert-nhse" role="alert">
 <b>IMPORTANT:</b> This Implementation Guide is currently in Draft and SHOULD NOT be used for development or active implementation without consulting the NHS England Pathology Standards and Implementation team. For further information please contact: <a href="mailto:pathology.standardsandimplementation@nhs.net">pathology.standardsandimplementation@nhs.net</a></div>
 
-## Home
+## Pathology FHIR Implementation Guide
 ### Specification Overview
 This Implementation Guide and the HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4 artefacts that it references define a specification to enable the exchange of pathology laboratory data.
 
