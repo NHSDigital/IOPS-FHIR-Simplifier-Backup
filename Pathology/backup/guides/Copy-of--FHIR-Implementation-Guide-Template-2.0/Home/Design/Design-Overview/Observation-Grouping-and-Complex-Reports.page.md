@@ -7,7 +7,9 @@ Pathology test reports may contain groups of related test results, such as those
 FHIR provides several mechanisms for grouping related tests i.e. Observations. The various approaches are detailed in the base [R4](https://hl7.org/fhir/R4/observation.html#obsgrouping) specification.
 
 #### Test Groups
-The main method of grouping test results that has been adopted by this specification is the use of the ‘hasMember’ relationship. This allows an Observation to be defined as a test group (such as a Full Blood Count) with ‘hasMember’ references to Observations containing the results for each of the tests contained within the test group. In the case of a Full Blood Count, the referenced Observations would contain the results for white blood cell count, red blood cell count, platelet count etc. 
+The main method of grouping test results that has been adopted by this specification is the use of the ‘hasMember’ relationship. This allows an Observation to be defined as a test group (such as a Full Blood Count) with ‘hasMember’ references to Observations containing the results for each of the tests contained within the test group. In the case of a Full Blood Count, the referenced Observations would contain the results for white blood cell count, red blood cell count, platelet count etc.
+
+ {{render:path-data-model-LFT-UandE-report}}
 
 #### Complex Reports
 Multiple levels of test group Observations and test result Observations may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MCS) reports.
