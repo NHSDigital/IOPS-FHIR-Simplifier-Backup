@@ -76,175 +76,10 @@ Roles may include, but may not be limited to:-
 - Project manager
 - IOPS Team
 
-The roles and responsibilities for the process can be viewed in [Appendix A](https://simplifier.net/guide/NHSE-Design-and-Development-Approach2/Home/Assurance---Endorsement/Clinical-and-Technical-Assurance.page.md?version=current).
+The roles and responsibilities for the process can be viewed in [Appendix A](#appendix-a)
 
 ### Key Steps in the Clinical and Technical Assurance process
-The diagram describes the key steps in the process and each step is described in more detail below.
-
-### Publication of the NHS England pack (1.0)
-This involves creating a NHS England pack for consultation.
-#### Key Inputs
-
-The following are key inputs to the creation of the NHS England pack:-
-
-- Strategic overview to include background, scope, strategic objectives, vision and timelines
-- Use cases, including description of clinical workflows and key interactions; see [Appendix B](https://simplifier.net/guide/NHSE-Design-and-Development-Approach2/Home/Assurance---Endorsement/Clinical-and-Technical-Assurance.page.md?version=current) for an example use case.
-- Clinically assured Information models/datasets, including models from the Professional Record Standards Body [(PRSB)](https://theprsb.org/)
-- Patient journeys with example clinical content
-- Architecture overview to include FHIR paradigm e.g. REST, bundle, document and transport layer e.g. MESH
-- Initial list of FHIR resources for use cases
-
-#### Content of the NHS England pack
-- A first draft of the mapping of requirements to FHIR assets, including profiles, extensions, ValueSets, ConceptMaps, etc by the IOPS Team
-- Detailed comparisons between relevant UK Core R4 assets and NHS proposed FHIR Assets
-- Design options; recommended options will be determined over several calls after consultation
-- Any associated implementation guides
-- Links to any useful training material
-
-The NHS England pack will be created by the IOPS Team. The pack will include design options; recommended options will be determined after external consultation. The IOPS will create an itinerary to explain key decisions required from stakeholders.
-
-### External consultation (2.0)
-The NHS England pack will be released for consultation with external stakeholders for a period of no more than 5 days with an ability to provide comments via Simplifier. The pack's release will be advertised on relevant channels e.g. email, , Simplifier news as appropriate. Stakeholders will need to commit resources to attend any team calls. After the review period, the IOPS Team will review the comments and agree on resolutions which will be presented on a call to stakeholders. The scope of discussion on the consultation call is limited to the issues raised as review comments in the consultation phase. If there is no consensus on the consultation call, this will be escalated to the FHIR product owner and other suitable NHS England personnel make the decision.
-
-### Update specifications (3.0)
-The IOPS Team will update the NHS England FHIR assets and associated guidance based on agreement on the call.
-
-### Handover to the NHS England Change Control process (4.0)
-This will follow the change control process for the NHS England.
-
-### Review and approve FHIR assets (5.0)
-The updated FHIR assets will be presented back to the NHS England stakeholders to approve confirm changes are as agreed in the external consultation, and have been correctly applied to the FHIR assets. 
-
-### Produce hazard log and Clinical safety report (6.0)
-An initial hazard log will be produced in parallel as per the NHS England Clinical Safety process to identify any clinical risks associated with the proposed design and an associated clinical safety report will be produced. The hazard log and the clinical safety report will be presented to the NHS England Clinical Safety Group for endorsement.
-
-## Where do I start?
-- Anyone who is interested in developing new, or amending existing, FHIR assets should engage with the IOPS Team to discuss the creation of a pack using the agreed template.
-- If further clinical and technical assurance work is needed, the IOPS team will then start to prepare the schedule, including estimating the number of sprints required.
-- The IOPS Team will invite other stakeholders, such as terminologists, clinical safety representatives, clinicians as it sees fit.
-
-## Setting up meetings
-- The IOPS Team will set up meetings and communicate with all potential participants.
-- The IOPS team will arrange all administration and organisation of agreed meetings.
-
-### What are the key outputs?
-The example outputs of the process are:
-- Assured NHS England profiles
-- Assured SNOMED CT/dm+d ValueSets/Refsets
-- Assured Implementation guidance
-- Agreed changes in the proposed business logical models
-- Clinical Safety Report and Hazard log
-________________________________________
-### How to get involved
-
-Via Simplifier
-- A list of all NHS England Implementation Guides, including draft guides can be found within the NHS England Version History
-- Any stakeholder can raise an issue in Simplifier relevant to these assets; you need a Simplifier account to do this. You can register at https://simplifier.net/signup.
-Contact Us
-
-If you require further information, please email the [IOPS Team]( mailto:interoperabilityteam@nhs.net).
-
-
-<!-- 
-##### RM: This does not give any info on the C&TA - removed to ensure this page is kept concise and on topic #####
-
-## Background
-### Health Level Seven International
-Founded in 1987, <a href="https://www.hl7.org/">Health Level Seven International (HL7)</a> is a not-for-profit, ANSI-accredited, healthcare standards developing organisation. <a href="https://www.hl7.org.uk/">HL7 UK</a> is the UK affiliate organisation to HL7 International and was set up in January 2000.
-### Fast Healthcare Interoperability Resources (FHIR®)
-<a href="https://hl7.org/fhir/">Fast Healthcare Interoperability Resources (FHIR®)</a> is a next generation standards framework created by HL7. FHIR combines the best features of HL7's v2, v3 and Clinical Document Architecture (CDA) product lines while leveraging the latest web standards and applying a tight focus on implementability. FHIR solutions are built from a set of modular components called "Resources". These resources can easily be assembled into working systems that solve real world clinical and administrative problems at a fraction of the price of existing alternatives.   
-The current published version of FHIR is Release 4, which was published in December 2018. This was preceded by the version Standards in Trial Use (STU3). The FHIR [Directory of Published versions](http://hl7.org/fhir/directory.html) lists all versions.
-### Other National FHIR "Core" developments
-The FHIR UK Core has been preceded by the development of other national FHIR "Core" assets, for example the <a href="https://www.hl7.org/fhir/us/core/">US Core</a>.
-### FHIR Profiling
-A FHIR profile is a set of constraints on a resource. A "constraint" specifies a set of restrictions on the content of a FHIR resource or data type, or an additional set of constraints on an existing profile, for example:- 
-- Changing the cardinality of the element; e.g. the base might allow 0..*, and a particular application might support 1..2
-- Restricting the contents of an element to a single fixed value
-- Specifying a binding to a different ValueSet
-- Declaring that one or more elements in the structure must be 'supported'.
-
-Further details of the above concepts relating to [FHIR profiling](http://hl7.org/fhir/r4/profiling.html) and 
-[binding](https://www.hl7.org/fhir/r4/terminologies.html#strength) for terminologies used with FHIR assets is available.   -->
-A key part of the NHS England IG Clinical and Technical Assurance process is to ensure that any profiling of FHIR resources is done in a clinically safe and technically coherent manner.
-
-<!-- ##### RM: This does not give any info on the C&TA - removed to ensure this page is kept concise and on topic #####
-### INTEROPen FHIR Curation process
-The UK Core FHIR Clinical and Technical Assurance process builds on a previous process, known as the INTEROPen FHIR curation process, and includes changes to align it with the new UK Core approach. -->
-
----
-
-## Why do we need a Clinical and Technical Assurance Process?
-### Assets which are fit for purpose
-The process will produce FHIR assets that are fit for purpose. The process encompasses clinical, clinical informatics, clinical safety, terminology, technical and vendor input. The key value added is multi-disciplinary collaboration in an agile team and the ability to improve quality of the product. Without the Clinical and Technical Assurance process, there is a risk that the hand over of requirements from business teams to the IOPS Team to produce a specification might not meet wider business, clinical and technical requirements. 
-### Engaging with system suppliers
-Participation in the assurance process helps those who will be implementing the specifications understand the rationale and details behind the design. System suppliers are engaged as part of the process which gives them an opportunity to raise implementation issues and resolve them before the specifications are published. 
-### Robust requirement definition
-The process also challenges clinical requirements, should they be insufficiently detailed, resulting in a more robust requirement definition. The process provides a feedback loop to the business/programme team to update clinical requirements as needed.  
-### FHIR asset consistency
-The assurance process promotes consistency in FHIR assets across different healthcare programmes and use cases to support interoperability. There is a risk that programmes might develop FHIR assets which conflict with previous design decisions. This process ensures that the design decisions agreed previously are consistently applied, and any reasons for divergence are documented and justified in a transparent way. 
-
----
-
-## What is FHIR Clinical and Technical Assurance?
-In the FHIR Clinical and Technical Assurance process, a team of subject matter experts map use case specific clinical information models, for example, allergies and adverse reactions, to the AllergyIntolerance FHIR resource. This mapping produces a “profile” of the international base resource. During the mapping process, a variety of decisions are made, for example, relating to the use of appropriate terminology bindings, such as SNOMED CT. 
-
-From a Clinical Assurance perspective, FHIR assets are reviewed for:
-- Accuracy (clinical knowledge and clinical practices)
-- Validity (designed correctly for the purpose of clinical practice and clinical use)
-- Usability (useful and usable for the clinical story tested against)
-
-From a Technical Assurance perspective, the FHIR assets are reviewed for:
-- Conformance to the FHIR Standard
-- Adherence to the documented guidance for Creating NHS England IG FHIR assets produced by the IOPS Team
-- Correct usage of the FHIR assets for the use case 
-
-### Scope
-#### In scope
-The scope of the Clinical and Technical Assurance process is: 
-- To provide collaborative opportunity to review FHIR resource usage, considering use case and data modelling requirements and to resolve any outstanding queries that may require further clarity
-- To identify areas of data modelling that are inconsistent with current health informatics/clinical practices
-- To assess FHIR resource proposals in relation to use case and architectural pattern for clinical risk
-- To review proposed designs on how profiles reference/link with each other 
-- To consider the mapping of proposed ValueSets to FHIR ValueSets as appropriate 
-- To review alignment with the UK Core in terms of mappings, extensions and implementation guidance and highlight any deviation from the UK Core
-- To review search parameters and trigger points relevant to the use case
-#### Out of scope
-The following activities are not in scope; it is assumed they are completed as pre-requisite:
-- Validation of use cases and business processes 
-- Validation of business data sets  
-- Review of data model(s) with vendors 
-### Clinical and Technical Assurance and NHS England IG Development and Release
-Clinical and Technical assurance occurs during the NHS England IG development process. Selected NHS England IG assets at draft status must go through the assurance process in order to move to the status of Draft Standard for Trial Use (DSTU) prior to readiness for the HL7 ballot process.   
-Find out more about NHS England [Release management](https://simplifier.net/guide/NHSE-Design-and-Development-Approach2/Home/Management/Development-and-Release-Management?version=current).
-
-
-<!-- ##### RM: Removed as duplicating info from  UKCoreDevelopmentandReleaseManagement (link above) #####
-
-#### Physical Delivery of UK Core assets
-The FHIR UK Core pack and downloadable FHIR assets will be created with FHIR tooling using a platform called Simplifier. 
--->
-
----
-
-## How does the Clinical and Technical Assurance Process work?
-The FHIR Clinical and Technical Assurance process includes six steps which are described below. The Clinical and Technical Assurance process team comprises of clinical leads, clinical informaticians, message modellers, terminology specialists, clinical safety staff, First of Type (FoT) representatives from programmes, implementers and vendors and information governance representatives (if needed).
-Note that several programmes could run the process in parallel, so improving the output of the process. When profiles have been through the process once, it is expected that they will not need to go through the whole process again for every use case or programme. Once assured, profiles will be established as NHS England IG profiles, with business rules added to implementation guides for additional guidance. This will eventually shorten the process for all participants, as only new profiles will be discussed in detail. The change control and tracking of profiles and other FHIR assets will be managed by the IOPS Team.
-
-### Main Roles in the Clinical and Technical Assurance Process
-Roles may include, but may not be limited to:-
--  Clinical Leads
--  Clinical Informaticians
--  Clinical Safety
--  Terminologist
--  Suppliers or vendors
--  Architect
--  Business analyst
--  Project manager
--  IOPS Team 
-
-The roles and responsibilities for the process can be viewed in <a href="#appendixa">Appendix A</a>.   
-### Key Steps in the Clinical and Technical Assurance process
-The link mentioned below describes the key steps in the process and each step is described in more detail.  Please note that access to this diagram will require NHS.net login
+The link mentioned below describes the key steps in the process and each step is described in more detail. Please note that access to this diagram will require NHS.net login. 
 <a href="https://nhs.sharepoint.com/sites/msteams_67ef67/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fmsteams%5F67ef67%2FShared%20Documents%2FProducts%2C%20Projects%2C%20and%20Programmes%2FNHS%20England%20IG%2FNHSEAssurance%2Epng&viewid=8b8148e1%2Da3a1%2D434d%2Da750%2D0986267b189d&parent=%2Fsites%2Fmsteams%5F67ef67%2FShared%20Documents%2FProducts%2C%20Projects%2C%20and%20Programmes%2FNHS%20England%20IG">ClinicalandTechnicalAssuranceProcess</a>
 
 The diagram describes the overview of the process.
@@ -256,7 +91,7 @@ This involves creating a NHS England IG pack for external consultation.
 #### Key Inputs
 The following are key inputs to the creation of the NHS England IG pack:-
 - Strategic overview to include background, scope, strategic objectives, vision and timelines
-- Use cases, including description of clinical workflows and key interactions; see <a href="#appendixb"> Appendix B</a> for an example use case.
+- Use cases, including description of clinical workflows and key interactions; see [Appendix B](#appendix-b) for an example use case.
 - Clinically assured Information models/datasets, including models from the <a href="https://theprsb.org"> Professional Record Standards Body (PRSB)</a>
 - Patient journeys with example clinical content
 - Architecture overview to include FHIR paradigm e.g. REST, bundle, document and transport layer e.g. MESH
@@ -265,7 +100,7 @@ The following are key inputs to the creation of the NHS England IG pack:-
 - List of engaged vendors and representatives from a private beta site
 #### Content of the NHS England IG pack
 -  A first draft of the mapping of requirements to FHIR assets, including profiles, extensions, ValueSets, ConceptMaps, etc  by the IOPS team. 
--  Detailed comparisons between relevant NHS England IG R4 assets and CareConnect STU3 assets. See <a href="#appendixd">Appendix D</a> for more information.
+-  Detailed comparisons between relevant UK Core FHIR R4 assets.
 -  Data models/datasets
 -  Design options; recommended options will be determined over several calls after external consultation 
 -  Any associated implementation guides
@@ -321,11 +156,12 @@ The example outputs of the process are:
 - Any stakeholder can raise an issue in Simplifier relevant to these assets; you need a Simplifier account to do this. You can register at https://simplifier.net/signup.
 
 ### Contact Us
-If you require further information, please email the [IOPS Team](mailto:interoperabilityteam@nhs.net).
+If you require further information, please email the <a href="mailto:interoperabilityteam@nhs.net?subject=NHS England IG Sprint 1 Review">Interoperability Standards Team</a>.
 
 ---
 
-## Appendix A: Roles and Responsibilities
+<h2 id="appendix-a">Appendix A: Roles and Responsibilities</h2>
+
 ### IOPS Team:
 
 This team is comprised of individuals who are involved in the NHS England FHIR assets development and/or authoring guidance contained in the NHS England Implementation Guide. 
@@ -401,8 +237,8 @@ The main functions of this team are:-
 
 - To prepare use cases and clinical scenarios working with the programme clinical lead
 - To understand and document use cases
-________________________________________
-## Appendix B: Example use case
+__
+## <h2 id="appendix-b">Appendix B : Example use case
 NHS Urgent Medicine Supply Advanced Service (NUMSAS)
 
 Over 7500 NUMSAS referrals occurred nationally in November 2017.
