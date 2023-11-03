@@ -1,4 +1,6 @@
 - name: Index
   filename: Index.page.md
+- name: category
+  filename: category.page.md
 - name: Related Links
   filename: Related-Links.page.md
