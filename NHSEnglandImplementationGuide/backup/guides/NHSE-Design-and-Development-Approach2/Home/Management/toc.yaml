@@ -4,3 +4,5 @@
   filename: Simplifier-and-GitHub-Management
 - name: Version Management
   filename: Version-Management
+- name: Packaging and Publishing
+  filename: Packaging-and-Publishing
