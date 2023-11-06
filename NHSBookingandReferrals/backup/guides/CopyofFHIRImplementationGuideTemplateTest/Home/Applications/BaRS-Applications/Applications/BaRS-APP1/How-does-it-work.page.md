@@ -13,7 +13,7 @@ To support the workflows for this Application of the standard the operations tha
 
 ### Make a Referral
 
-Making a referral for this Application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
+Making a referral for this Application follows the {{pagelink:core-standardpatternforcomposites, text:standard pattern for BaRS composite operations}}.
 
 The message definition that defines this payload for this Application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 
@@ -83,9 +83,9 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this Application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the referral from the **receiver** as it may have changed locally. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a referral this Application follows the {{pagelink:core-standardpatternforcomposites, text:standard pattern for BaRS composite operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the referral from the **receiver** as it may have changed locally. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
-The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern, text:standard pattern}}.
+The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpatternforcomposites, text:standard pattern}}.
 
 The message definition that defines this payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 

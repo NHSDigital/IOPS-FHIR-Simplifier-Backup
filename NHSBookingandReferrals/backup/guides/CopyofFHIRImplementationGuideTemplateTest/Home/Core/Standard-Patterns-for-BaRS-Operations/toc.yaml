@@ -1,2 +1,6 @@
-- name: Index
-  filename: Index.page.md
+- name: index
+  filename: index.page.md
+- name: Standard Pattern For Composites
+  filename: Standard-Pattern-For-Composites.page.md
+- name: Appointment Management
+  filename: Appointment-Management.page.md
