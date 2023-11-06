@@ -25,5 +25,3 @@
   <h3>JSON View</h3>
 {{json}}
 </div>
-
----

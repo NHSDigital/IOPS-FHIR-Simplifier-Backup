@@ -8,4 +8,5 @@ This page gives guidance about what is asked of a participant in the C&TA proces
 
 Although not part of the C&TA process, feedback is welcome on items 1 and 2 to help improve the documentation and C&TA process. This feedback will be fed into a post C&TA retrospective which will be open to all participants.
 
-Requests and Feedback should be logged within Simplifier. For more information on how to do this refer to the NHS England Implementation Guide Design and Development Approach Requests, Issues and Feedback section.
+Requests and Feedback should be logged within Simplifier. For more information on how to do this refer to the NHS England Implementation Guide Design and Development Approach <a href='https://simplifier.net/guide/nhs-england-design-and-development-approach/Home/Engagement/Requests--Issues-and-Feedback.page.md?version=current' target="_blank">Requests, Issues and Feedback</a> section.
+
