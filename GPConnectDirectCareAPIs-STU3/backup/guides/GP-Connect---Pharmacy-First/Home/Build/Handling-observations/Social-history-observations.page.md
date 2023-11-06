@@ -1,6 +1,7 @@
 ## {{page-title}}
 
-These types of observations may contain an `Observation.valueCodeableConcept` - for example, feeding statut so the baby - or, a value may not be provided at all - for example, smoking status.
+These types of observations will only contain a code - typically SNOMED, and will not contain a value.
+For example: pregnancy status, or to indicate that an Ambulatory blood pressure recording has been declined.
 
 There are only a few scenarios where this will be the case, and the {{pagelink:Home/Build/Mapping-PRSB-headings-to-FHIR}} page provides examples of these.
 

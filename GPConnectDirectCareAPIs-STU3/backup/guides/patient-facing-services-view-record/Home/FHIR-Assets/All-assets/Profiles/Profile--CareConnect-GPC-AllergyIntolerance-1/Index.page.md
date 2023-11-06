@@ -24,5 +24,3 @@
 <!--// end of code snippet -->
 
 ---
-
-{{tree:gpc
