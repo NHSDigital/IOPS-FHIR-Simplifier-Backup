@@ -16,17 +16,19 @@ Providers may supply a reference range along with the associated value - for exa
     <b>Note</b>: Where a reference range contains a less than <code>&lt;</code> or greater than <code>&gt;</code> operator it should be written to the <code>referenceRange.text</code> element as these operators are not supported in this context.
 </div>
 
-Similarly, a provider may wish to provide the interpretation to indicate whether the observation is within normal range or not. 
+Similarly, a provider may wish to provide the interpretation to indicate whether the observation is potentially abnormal.
+
+https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-ObservationInterpretation-1
 
 
 ```xml
 <interpretation>
     <coding>
         <system value="http://hl7.org/fhir/v2/0078"/>
-        <code value="N"/>
-        <display value="Normal"/>
+        <code value="PA"/>
+        <display value="Potentially Abnormal"/>
     </coding>
-    <text value="Within normal range"/>
+    <text value="Potentially Abnormal"/>
 </interpretation>
 ```
 

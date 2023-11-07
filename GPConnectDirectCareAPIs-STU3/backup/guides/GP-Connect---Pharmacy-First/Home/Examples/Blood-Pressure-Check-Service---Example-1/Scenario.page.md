@@ -77,17 +77,13 @@
                 </ul>
             </td>
         </tr>
-        <!-- Smoking or pregnancy status -->
+        <!-- Pregnancy status -->
         <tr>
             <td class="nhsd-m-table__highlighted-items">
-                Smoking or pregnancy status
+                Pregnancy status
             </td>
             <td>
-                <ul>
-                    <li>Smoking: Yes</li>
-                    <li>Pregnant: Not applicable</li>
-                </ul>
-            </td>
+                Not applicable
         </tr>
         <!-- Medication prescribed -->
         <tr>

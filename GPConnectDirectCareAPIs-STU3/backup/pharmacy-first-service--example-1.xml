@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="minor-illness-common-conditions-service--example-1" />
+  <id value="pharmacy-first-service--example-1" />
   <meta>
     <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
@@ -418,10 +418,10 @@
               <code>
                 <coding>
                   <system value="http://snomed.info/sct" />
-                  <code value="75367002" />
-                  <display value="Blood pressure" />
+                  <code value="163033001" />
+                  <display value="Lying blood pressure reading" />
                 </coding>
-                <text value="Average blood pressure" />
+                <text value="Lying blood pressure reading" />
               </code>
               <subject>
                 <reference value="urn:uuid:45b79f14-8a6d-48e9-9ec7-642dd7592e92" />
@@ -446,10 +446,10 @@
                 <code>
                   <coding>
                     <system value="http://snomed.info/sct" />
-                    <code value="72313002" />
-                    <display value="Systolic arterial pressure" />
+                    <code value="407556006" />
+                    <display value="Lying systolic blood pressure" />
                   </coding>
-                  <text value="Systolic arterial pressure" />
+                  <text value="Lying systolic blood pressure" />
                 </code>
                 <valueQuantity>
                   <value value="118" />
@@ -462,10 +462,10 @@
                 <code>
                   <coding>
                     <system value="http://snomed.info/sct" />
-                    <code value="1091811000000102" />
-                    <display value="Diastolic arterial pressure" />
+                    <code value="407557002" />
+                    <display value="Lying diastolic blood pressure" />
                   </coding>
-                  <text value="Diastolic arterial pressure" />
+                  <text value="Lying diastolic blood pressure" />
                 </code>
                 <valueQuantity>
                   <value value="73" />

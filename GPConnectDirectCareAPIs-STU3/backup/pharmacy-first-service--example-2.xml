@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="minor-illness-common-conditions-service--example-2" />
+  <id value="pharmacy-first-service--example-2" />
   <meta>
     <lastUpdated value="2023-10-11T10:12:14.2711908+01:00" />
     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
@@ -146,9 +146,6 @@
                 </entry>
                 <entry>
                   <reference value="urn:uuid:304e7eb3-055b-41b1-80b1-41b2437025e7" />
-                </entry>
-                <entry>
-                  <reference value="urn:uuid:eea159a1-e391-406b-ab00-3f4ecb8fcf41" />
                 </entry>
                 <entry>
                   <reference value="urn:uuid:a02f061c-5ae1-4acb-b599-3c2ce4cb7545" />
@@ -428,54 +425,6 @@
               </context>
               <effectiveDateTime value="2023-08-08" />
               <issued value="2023-08-08T09:20:05.6398339+01:00" />
-              <performer>
-                <reference value="urn:uuid:b6c487fb-22da-4aae-a29e-f24858d84d62" />
-              </performer>
-            </Observation>
-          </resource>
-        </entry>
-        <entry>
-          <fullUrl value="urn:uuid:eea159a1-e391-406b-ab00-3f4ecb8fcf41" />
-          <resource>
-            <Observation>
-              <id value="eea159a1-e391-406b-ab00-3f4ecb8fcf41" />
-              <meta>
-                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1" />
-                <tag>
-                  <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
-                  <code value="social-context" />
-                  <display value="Social context" />
-                </tag>
-              </meta>
-              <identifier>
-                <system value="https://fhir.provider.example/identifier/observation" />
-                <value value="eea159a1-e391-406b-ab00-3f4ecb8fcf41" />
-              </identifier>
-              <status value="final" />
-              <category>
-                <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-                  <code value="social-history" />
-                  <display value="Social History" />
-                </coding>
-                <text value="Social History" />
-              </category>
-              <code>
-                <coding>
-                  <system value="http://snomed.info/sct" />
-                  <code value="8392000" />
-                  <display value="Non-smoker" />
-                </coding>
-                <text value="Non-smoker" />
-              </code>
-              <subject>
-                <reference value="urn:uuid:77bce268-18e7-4060-a781-9e7e6ba086bd" />
-              </subject>
-              <context>
-                <reference value="urn:uuid:f8e7f842-0dee-400b-ae89-6f405cc64b0f" />
-              </context>
-              <effectiveDateTime value="2023-08-08" />
-              <issued value="2023-08-08T09:20:05.6399787+01:00" />
               <performer>
                 <reference value="urn:uuid:b6c487fb-22da-4aae-a29e-f24858d84d62" />
               </performer>
