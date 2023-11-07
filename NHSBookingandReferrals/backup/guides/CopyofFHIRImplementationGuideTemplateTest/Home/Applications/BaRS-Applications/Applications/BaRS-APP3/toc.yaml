@@ -8,5 +8,7 @@
   filename: Payloads.page.md
 - name: Referral Payload
   filename: Referral-Payload.page.md
+- name: Cancellation Payload
+  filename: Cancellation-Payload.page.md
 - name: Entity Relationship Diagrams
   filename: Entity-Relationship-Diagrams.page.md
