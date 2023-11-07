@@ -1,4 +1,4 @@
-## UKCoreEmergencyCareDischargeStatus
+## UK Core Emergency Care Discharge Status
 
 <div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
 

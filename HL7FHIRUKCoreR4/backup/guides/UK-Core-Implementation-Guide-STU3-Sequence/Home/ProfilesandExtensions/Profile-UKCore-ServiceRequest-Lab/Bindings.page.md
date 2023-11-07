@@ -11,7 +11,7 @@ More information about the bindings to UK Core ValueSets can be found below.
 <tr>
 <td>ServiceRequest.code</td>
 <td>Preferred</td>
-<td>{{pagelink:ValueSet-UKCore-UnifiedTestList}}</td>
+<td>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</td>
 </tr>
 </table>
 

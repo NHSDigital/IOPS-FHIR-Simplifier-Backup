@@ -86,7 +86,7 @@ The following are example usage scenarios for the UK Core Observation profile:
 - Group specific laboratory observations together, for example Full Blood Count,
 - Place laboratory observations in an ordered fashion.
 <br><br>
-The Observation-LabGroup profile is expected to reference a multiple individual laboratory observations (Observation-Lab) which together form a larger test set, for example a urea and electrolyte test that contains many sub tests. 
+The Observation-LabGroup profile is used to reference multiple individual laboratory observations (Observation-Lab) which together form a larger test set, for example a urea and electrolytes test that contains many several sub tests. 
 <br><br>
 {{render: Derived-Profiles-Lab-Example }}{: .img-responsive }
 ---

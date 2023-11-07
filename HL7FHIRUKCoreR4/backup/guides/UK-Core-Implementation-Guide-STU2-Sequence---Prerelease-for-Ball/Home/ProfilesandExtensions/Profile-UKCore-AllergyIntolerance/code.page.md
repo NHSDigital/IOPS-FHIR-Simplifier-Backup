@@ -11,6 +11,7 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
 
 #### 1. If only a text representation of the allergy is known. 
 
+<div>
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Table View')">Table View</button>
  <button class="tablinks" onclick="openTab(event, 'Tree View')">Tree View</button>
@@ -37,10 +38,13 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
   <h3>JSON View</h3>
 {{json:UKCore-AllergyIntolerance-Sn-NonDrugAllergy-Example}}
 </div>
+</div>
+
 <br>
 
 #### 2. If a text representation of the allergy is known but any associated coding is not recognised by the system.
 
+<div>
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Table View')">Table View</button>
  <button class="tablinks" onclick="openTab(event, 'Tree View')">Tree View</button>
@@ -67,12 +71,13 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
   <h3>JSON View</h3>
 {{json:UKCore-AllergyIntolerance-Sn-DrugAllergy-Example}}
 </div>
+</div>
 
 **Note:** “Septrin” is a long discontinued brand name of an antibiotic.
 
-
 #### 3. If a pre-coordinated allergy code is known which this is not part of the permitted value set for causative agent defined above.
 
+<div>
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Table View')">Table View</button>
  <button class="tablinks" onclick="openTab(event, 'Tree View')">Tree View</button>
@@ -99,6 +104,7 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
   <h3>JSON View</h3>
 {{json:UKCore-AllergyIntolerance-Sn-DrugAllergyToEggProtein-Example}}
 </div>
+</div>
 
 ---
 
@@ -108,6 +114,7 @@ There can be an explicit assertion of ‘No Known Allergies’ using the SNOMED 
 
 #### Example of `AllergyIntolerance.code` usage for 'No known drug allergy':
 
+<div>
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Table View')">Table View</button>
  <button class="tablinks" onclick="openTab(event, 'Tree View')">Tree View</button>
@@ -134,6 +141,8 @@ There can be an explicit assertion of ‘No Known Allergies’ using the SNOMED 
   <h3>JSON View</h3>
 {{json:UKCore-AllergyIntolerance-Sn-NegHandlNoKnownAllergies-Example}}
 </div>
+</div>
+
 <br>
 
 If other `AllergyIntolerance` resources exist in the patient record with a `AllergyIntolerance.clinicalStatus` of `active` then the system SHALL ignore the 'No Known Allergies' resource instance. The existence of recorded and active allergies takes precedence over instances of 'No Known Allergies' records.

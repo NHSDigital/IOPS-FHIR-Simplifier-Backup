@@ -104,7 +104,7 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 </tr>
 <tr>
 <td><code>ServiceRequest.reasonReference</code></td>
-<td>Explanation/Justification for service or service.</td>
+<td>Explanation / Justification for for why this service is being requested.</td>
 </tr>
 </table>
 
