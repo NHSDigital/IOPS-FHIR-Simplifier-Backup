@@ -50,16 +50,16 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-AdmissionMethod}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-AdmissionMethod}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-AdmissionMethodEngland}}</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-AdmissionMethodWales}}</td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-AppointmentReasonCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Appointment-87479}}</td>
@@ -129,14 +129,14 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td colspan="5">Composed of CodeSystem <code>http://terminology.hl7.org/CodeSystem/v2-0276</code></td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="5">Composed of {{pagelink:CodeSystem-UKCore-AppointmentReasonCode}}</td>
 </tr>
 <tr>
 <td colspan="5"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BiopsyState}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Specimen-37178}}</td>
@@ -145,7 +145,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <tr>
 <td colspan="5">Composed of CodeSystem <code>http://terminology.hl7.org/CodeSystem/v2-0493</code></td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="5">Composed of {{pagelink:CodeSystem-UKCore-BiopsyState}}</td>
 </tr>
 <tr>
@@ -186,7 +186,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-CareSettingType}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-CareSettingType}}<br>
@@ -200,7 +200,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-CompositionCategory}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Composition-31483}}</td>
@@ -213,20 +213,20 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-CompositionSectionCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Composition-31483}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-UKCore-RecordStandardHeadings}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ConditionCategory}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Condition-78787}}</td>
@@ -236,14 +236,14 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4">Composed of CodeSystem <code>http://terminology.hl7.org/CodeSystem/condition-category
 </code></td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-UKCore-ConditionCategory}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ConditionCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Condition-78787}}<br>
@@ -258,13 +258,13 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ConditionEpisodicity}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-ConditionEpisode}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-UKCore-ConditionEpisodicity}}</td>
 </tr>
 <tr>
@@ -284,29 +284,29 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-DeliveryChannel}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-DeliveryChannel}}</td>
 <td>5</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-DeliveryChannel}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-DischargeDestination}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Encounter-79976}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-DischargeDestinationEngland}}</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-DischargeDestinationWales}}</td>
 </tr>
 <tr>
@@ -314,23 +314,23 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 </tr>
 
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-DischargeMethod}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-DischargeMethod}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-DischargeMethodEngland}}</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-DischargeMethodWales}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-DocumentType}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Composition-31483}}</td>
@@ -344,13 +344,13 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 </tr>
 
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-EmergencyCareDischargeStatus}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-EmergencyCareDischargeStatus}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-EmergencyCareOutcomeOfAttendanceWales}}</td>
 </tr>
 <tr>
@@ -360,23 +360,23 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-EncounterLocationType}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Encounter-79976}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-EncounterLocationTypeEngland}}</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-EncounterLocationTypeWales}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-EncounterType}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Encounter-79976}}</td>
@@ -407,26 +407,26 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-FundingCategory}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-Coverage}}</td>
 <td>6</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-UKCore-FundingCategory}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Specimen-37178}}</td>
 <td>6</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-GenomeSequencingCategory}}</td>
 </tr>
 <tr>
@@ -474,36 +474,36 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-LegalStatusClassification}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-LegalStatus}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-LegalStatusClassificationEngland}}</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-LegalStatusClassificationWales}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-LegalStatusContext}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-LegalStatus}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-LegalStatusContext}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ListCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-List-19037}}</td>
@@ -516,13 +516,13 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ListEmptyReasonCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-List-19037}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-ListEmptyReasonCode}}</td>
 </tr>
 <tr>
@@ -532,13 +532,13 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ListWarningCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-ListWarningCode}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-ListWarningCode}}</td>
 </tr>
 <tr>
@@ -546,7 +546,7 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 </tr>
 
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-MedicationAdministrationCategory}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-MedicationAdministration-56616}}</td>
@@ -699,7 +699,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-MessageEvent}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-MessageHeader-48618}}</td>
@@ -714,13 +714,13 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Patient-88961}}</td>
 <td>6</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-NHSNumberUnavailableReason}}</td>
 </tr>
 <tr>
@@ -746,7 +746,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ObservationType}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Observation-67521}}</td>
@@ -759,26 +759,26 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-OperationOutcome-83857}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-SpineErrorOrWarningCode}}</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-EPSIssueCode}}</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-ITKResponseCode}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-OrganizationType}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Organization-94604}}</td>
@@ -787,7 +787,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <tr >
 <td colspan="5">Composed of CodeSystem <code>http://terminology.hl7.org/CodeSystem/organization-type</code></td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-OrganizationTypeGenomics}}</td>
 </tr>
 <tr>
@@ -807,17 +807,44 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Encounter-79976}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-OutcomeOfAttendanceEngland}}</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-OutcomeOfAttendanceWales}}</td>
+</tr>
+<tr>
+<td colspan="4"  class="override"></td>
+</tr>
+
+<tr>
+<td><h4>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables}}</h4></td>
+<td>active</td>
+<td>{{pagelink:Profile-Observation-Lab}}</td>
+<td><div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i> (See footnote)</div></td>
+</tr>
+<tr>
+<td colspan="4">Composed of CodeSystem <code>http://snomed.info/sct</code></td>
+</tr>
+<tr>
+<td colspan="4"  class="override"></td>
+</tr>
+
+<tr>
+<td><h4>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</h4></td>
+<td>active</td>
+<td>{{pagelink:Profile-Observation-Group}}<br>
+{{pagelink:Profile-ServiceRequest-Lab}}</td>
+<td><div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i> (See footnote)</div></td>
+</tr>
+<tr>
+<td colspan="4">Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
@@ -867,7 +894,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Appointment-87479}}<br>
@@ -878,7 +905,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </td>
 <td>1</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-PracticeSettingCode}}</td>
 </tr>
 <tr>
@@ -911,7 +938,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:Valueset-UKCore-ProcedureCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Procedure-10775}}<br>
@@ -926,7 +953,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </tr>
 
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Questionnaire-47615}}</td>
@@ -953,7 +980,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </tr>
 
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ReportCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-DiagnosticReport-54417}}</td>
@@ -979,20 +1006,20 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-SampleCategory}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-SampleCategory}}</td>
 <td>6</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-SampleCategory}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-PriorityReason}}<br>
@@ -1006,16 +1033,16 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Encounter-79976}}</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="5">Composed of {{pagelink:CodeSystem-UKCore-SourceOfAdmissionEngland}}</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td colspan="5">Composed of {{pagelink:CodeSystem-UKCore-SourceOfAdmissionWales}}</td>
 </tr>
 <tr>
@@ -1023,7 +1050,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </tr>
 
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-SourceOfServiceRequest}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-SourceOfServiceRequest}}</td>
@@ -1036,7 +1063,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-SpecimenBodySite}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Specimen-37178}}</td>
@@ -1049,7 +1076,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <td colspan="4"  class="override"></td>
 </tr>
 
-<tr class="balloted">
+<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-SpecimenType}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Specimen-37178}}</td>
@@ -1080,22 +1107,6 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <tr>
 <td colspan="4"  class="override"></td>
 </tr>
-
-<tr class="balloted">
-<td><h4>{{pagelink:ValueSet-UKCore-UnifiedTestList}}</h4></td>
-<td>active</td>
-<td>{{pagelink:Profile-Observation-Lab-67452}}<br>
-{{pagelink:Profile-Observation-Group-67431}}<br>
-{{pagelink:Profile-ServiceRequest-Lab-37178}}</td>
-<td>6</td>
-</tr>
-<tr>
-<td colspan="4">Composed of CodeSystem <code>http://snomed.info/sct</code></td>
-</tr>
-<tr>
-<td colspan="4"  class="override"></td>
-</tr>
-
 
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-VaccinationProcedure}}</h4></td>
@@ -1148,43 +1159,43 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <p><b>A-D:</b></p>
 <ul>
 <li>{{pagelink:ValueSet-UKCore-AddressKeyType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-AdmissionMethod}}</li>
+<li>{{pagelink:ValueSet-UKCore-AdmissionMethod}}</li>
 <li>{{pagelink:ValueSet-UKCore-AllergyCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-AllergyManifestation}}</li>
 <li>{{pagelink:ValueSet-UKCore-AllergySubstance}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-AppointmentReasonCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-BiopsyState}}</li>
+<li>{{pagelink:ValueSet-UKCore-AppointmentReasonCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-BiopsyState}}</li>
 <li>{{pagelink:ValueSet-UKCore-BirthSex}}</li>
 <li>{{pagelink:ValueSet-UKCore-BodySite}}</li>
 <li>{{pagelink:ValueSet-UKCore-CareSettingType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-CompositionCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-CompositionSectionCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ConditionCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ConditionCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ConditionEpisodicity}}</li>
+<li>{{pagelink:ValueSet-UKCore-CompositionCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-CompositionSectionCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ConditionCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-ConditionCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ConditionEpisodicity}}</li>
 <li>{{pagelink:ValueSet-UKCore-DeathNotificationStatus}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DeliveryChannel}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DischargeDestination}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DischargeMethod}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DocumentType}}</li>
+<li>{{pagelink:ValueSet-UKCore-DeliveryChannel}}</li>
+<li>{{pagelink:ValueSet-UKCore-DischargeDestination}}</li>
+<li>{{pagelink:ValueSet-UKCore-DischargeMethod}}</li>
+<li>{{pagelink:ValueSet-UKCore-DocumentType}}</li>
 </ul>
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>E-L:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-EmergencyCareDischargeStatus}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-EncounterLocationType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-EncounterType}}</li>
+<li>{{pagelink:ValueSet-UKCore-EmergencyCareDischargeStatus}}</li>
+<li>{{pagelink:ValueSet-UKCore-EncounterLocationType}}</li>
+<li>{{pagelink:ValueSet-UKCore-EncounterType}}</li>
 <li>{{pagelink:ValueSet-UKCore-EthnicCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-FundingCategory}}<</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-FundingCategory}}<</li>
+<li>{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
 <li>{{pagelink:ValueSet-UKCore-ImmunizationAdministrationBodySite}}</li>
 <li>{{pagelink:ValueSet-UKCore-ImmunizationExplanationReason}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-LegalStatusClassification}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-LegalStatusContext}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ListCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ListEmptyReasonCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ListWarningCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-LegalStatusClassification}}</li>
+<li>{{pagelink:ValueSet-UKCore-LegalStatusContext}}</li>
+<li>{{pagelink:ValueSet-UKCore-ListCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ListEmptyReasonCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ListWarningCode}}</li>
 </ul>
 </td></tr>
 <tr class="a-to-z"><td>
@@ -1200,35 +1211,36 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <li>{{pagelink:ValueSet-UKCore-MedicationStatementCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-MedicationSupplyType}}</li>
 <li>{{pagelink:ValueSet-UKCore-MedicationTradeFamily}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-MessageEvent}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</li>
+<li>{{pagelink:ValueSet-UKCore-MessageEvent}}</li>
+<li>{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</li>
 <li>{{pagelink:ValueSet-UKCore-NHSNumberVerificationStatus}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ObservationType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-OrganizationType}}</li>
+<li>{{pagelink:ValueSet-UKCore-ObservationType}}</li>
+<li>{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</li>
+<li>{{pagelink:ValueSet-UKCore-OrganizationType}}</li>
 <li>{{pagelink:ValueSet-UKCore-OtherContactSystem}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</li>
-</td><td style="border-left: 1px solid #eeeeee">
-<p><b>Q-Z:</b></p> 
-<ul>  
+<li>{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</li>
+<li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables}}</li>
+<li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</li>
 <li>{{pagelink:ValueSet-UKCore-PersonMaritalStatusCode}}<</li>
 <li>{{pagelink:ValueSet-UKCore-PersonRelationshipType}}</li>
 <li>{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-PreferredContactMethod}}</li>
 <li>{{pagelink:ValueSet-UKCore-PreferredWrittenCommunicationFormat}}</li>
-<li class="balloted">{{pagelink:Valueset-UKCore-ProcedureCode}}</li>
-<li class="balloted">{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</li>
+<li>{{pagelink:Valueset-UKCore-ProcedureCode}}</li>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Q-Z:</b></p> 
+<ul>  
+<li>{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</li>
 <li>{{pagelink:ValueSet-UKCore-ReasonImmunizationNotAdministered}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ReportCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ReportCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-ResidentialStatus}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SampleCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SourceOfServiceRequest}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SpecimenBodySite}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SpecimenType}}</li>
+<li>{{pagelink:ValueSet-UKCore-SampleCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</li>
+<li>{{pagelink:ValueSet-UKCore-SourceOfServiceRequest}}</li>
+<li>{{pagelink:ValueSet-UKCore-SpecimenBodySite}}</li>
+<li>{{pagelink:ValueSet-UKCore-SpecimenType}}</li>
 <li>{{pagelink:ValueSet-UKCore-SubstanceOrProductAdministrationRoute}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-UnifiedTestList}}</li>
 <li>{{pagelink:ValueSet-UKCore-VaccinationProcedure}}</li>
 <li>{{pagelink:ValueSet-UKCore-VaccinationProcedureSupplementary}}</li>
 <li>{{pagelink:ValueSet-UKCore-VaccineCode}}</li>
@@ -1248,38 +1260,38 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <ul>
 <li>{{pagelink:CodeSystem-UKCore-AdditionalPersonRelationshipRole}}</li>
 <li>{{pagelink:CodeSystem-UKCore-AddressKeyType}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-AdmissionMethodEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-AdmissionMethodWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-AppointmentReasonCode}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-BiopsyState}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-ConditionCategory}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-ConditionEpisodicity}}</li>
+<li>{{pagelink:CodeSystem-UKCore-AdmissionMethodEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-AdmissionMethodWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-AppointmentReasonCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-BiopsyState}}</li>
+<li>{{pagelink:CodeSystem-UKCore-ConditionCategory}}</li>
+<li>{{pagelink:CodeSystem-UKCore-ConditionEpisodicity}}</li>
 <li>{{pagelink:CodeSystem-UKCore-DeathNotificationStatus}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-DeliveryChannel}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-DischargeDestinationEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-DischargeDestinationWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-DischargeMethodEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-DischargeMethodWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-DeliveryChannel}}</li>
+<li>{{pagelink:CodeSystem-UKCore-DischargeDestinationEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-DischargeDestinationWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-DischargeMethodEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-DischargeMethodWales}}</li>
 <li> </li>
 </ul>
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>E-L:</b></p>
 <ul>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-EmergencyCareOutcomeOfAttendanceWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-EncounterLocationTypeEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-EncounterLocationTypeWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-EPSIssueCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-EmergencyCareOutcomeOfAttendanceWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-EncounterLocationTypeEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-EncounterLocationTypeWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-EPSIssueCode}}</li>
 <li>{{pagelink:CodeSystem-UKCore-EthnicCategoryEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-EthnicCategoryWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-FundingCategory}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-GenomeSequencingCategory}}</li>
+<li>{{pagelink:CodeSystem-UKCore-FundingCategory}}</li>
+<li>{{pagelink:CodeSystem-UKCore-GenomeSequencingCategory}}</li>
 <li>{{pagelink:CodeSystem-UKCore-HumanLanguage}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-ITKResponseCode}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-LegalStatusClassificationEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-LegalStatusClassificationWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-LegalStatusContext}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-ListEmptyReasonCode}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-ListWarningCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-ITKResponseCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-LegalStatusClassificationEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-LegalStatusClassificationWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-LegalStatusContext}}</li>
+<li>{{pagelink:CodeSystem-UKCore-ListEmptyReasonCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-ListWarningCode}}</li>
 </ul>
 </td></tr>
 <tr class="a-to-z"><td>
@@ -1291,13 +1303,13 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <li>{{pagelink:CodeSystem-UKCore-MedicationRequestCourseOfTherapy}}</li>
 <li>{{pagelink:CodeSystem-UKCore-MedicationStatementCategory}}</li>
 <li>{{pagelink:CodeSystem-UKCore-MedicationSupplyType}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-NHSNumberUnavailableReason}}</li>
+<li>{{pagelink:CodeSystem-UKCore-NHSNumberUnavailableReason}}</li>
 <li>{{pagelink:CodeSystem-UKCore-NHSNumberVerificationStatusEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-NHSNumberVerificationStatusWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-OrganizationTypeGenomics}}</li>
+<li>{{pagelink:CodeSystem-UKCore-OrganizationTypeGenomics}}</li>
 <li>{{pagelink:CodeSystem-UKCore-OtherContactSystem}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-OutcomeOfAttendanceEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-OutcomeOfAttendanceWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-OutcomeOfAttendanceEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-OutcomeOfAttendanceWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-PersonMaritalStatusEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-PersonMaritalStatusWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-PracticeSettingCode}}</li>
@@ -1306,12 +1318,12 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>Q-Z:</b></p> 
 <ul>  
-<li class="balloted">{{pagelink:CodeSystem-UKCore-RecordStandardHeadings}}</li>
+<li>{{pagelink:CodeSystem-UKCore-RecordStandardHeadings}}</li>
 <li>{{pagelink:CodeSystem-UKCore-ResidentialStatus}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-SampleCategory}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-SourceOfAdmissionEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-SourceOfAdmissionWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-SpineErrorOrWarningCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-SampleCategory}}</li>
+<li>{{pagelink:CodeSystem-UKCore-SourceOfAdmissionEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-SourceOfAdmissionWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-SpineErrorOrWarningCode}}</li>
 </ul>
 </td></tr>
 
@@ -1368,53 +1380,54 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 
 <p><b>C&TA Sprint 4:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-AdmissionMethod}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-CareSettingType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-CompositionCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-CompositionSectionCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ConditionCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ConditionCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ConditionEpisodicity}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DischargeDestination}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DischargeMethod}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DocumentType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-EmergencyCareDischargeStatus}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-EncounterLocationType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-EncounterType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-LegalStatusClassification}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-LegalStatusContext}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ListCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ListEmptyReasonCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ListWarningCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-MessageEvent}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</li>
-<li class="balloted">{{pagelink:Valueset-UKCore-ProcedureCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</li>
+<li>{{pagelink:ValueSet-UKCore-AdmissionMethod}}</li>
+<li>{{pagelink:ValueSet-UKCore-CareSettingType}}</li>
+<li>{{pagelink:ValueSet-UKCore-CompositionCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-CompositionSectionCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ConditionCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-ConditionCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ConditionEpisodicity}}</li>
+<li>{{pagelink:ValueSet-UKCore-DischargeDestination}}</li>
+<li>{{pagelink:ValueSet-UKCore-DischargeMethod}}</li>
+<li>{{pagelink:ValueSet-UKCore-DocumentType}}</li>
+<li>{{pagelink:ValueSet-UKCore-EmergencyCareDischargeStatus}}</li>
+<li>{{pagelink:ValueSet-UKCore-EncounterLocationType}}</li>
+<li>{{pagelink:ValueSet-UKCore-EncounterType}}</li>
+<li>{{pagelink:ValueSet-UKCore-LegalStatusClassification}}</li>
+<li>{{pagelink:ValueSet-UKCore-LegalStatusContext}}</li>
+<li>{{pagelink:ValueSet-UKCore-ListCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ListEmptyReasonCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ListWarningCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-MessageEvent}}</li>
+<li>{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</li>
+<li>{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</li>
+<li>{{pagelink:Valueset-UKCore-ProcedureCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</li>
 </ul>
 
 <p><b>C&TA Sprint 5:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-AppointmentReasonCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DeliveryChannel}}</li>
-<li class="balloted">{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SourceOfServiceRequest}}</li>
+<li>{{pagelink:ValueSet-UKCore-AppointmentReasonCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-DeliveryChannel}}</li>
+<li>{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</li>
+<li>{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-SourceOfServiceRequest}}</li>
 </ul>
 
 <p><b>C&TA Sprint 6:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-BiopsyState}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-FundingCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ObservationType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-OrganizationType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ReportCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SampleCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SpecimenBodySite}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SpecimenType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-UnifiedTestList}}</li>
+<li>{{pagelink:ValueSet-UKCore-BiopsyState}}</li>
+<li>{{pagelink:ValueSet-UKCore-FundingCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</li>
+<li>{{pagelink:ValueSet-UKCore-ObservationType}}</li>
+<li>{{pagelink:ValueSet-UKCore-OrganizationType}}</li>
+<li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables}}</li>
+<li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</li>
+<li>{{pagelink:ValueSet-UKCore-ReportCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-SampleCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-SpecimenBodySite}}</li>
+<li>{{pagelink:ValueSet-UKCore-SpecimenType}}</li>
 </ul>
 
 </div>
@@ -1454,46 +1467,46 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <p><b>C&TA Sprint 4:</b></p>
 <ul>
 
-<li class="balloted">{{pagelink:CodeSystem-UKCore-AdmissionMethodEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-AdmissionMethodWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-ConditionCategory}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-ConditionEpisodicity}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-DischargeDestinationEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-DischargeDestinationWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-DischargeMethodEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-DischargeMethodWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-EmergencyCareOutcomeOfAttendanceWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-EncounterLocationTypeEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-EncounterLocationTypeWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-EPSIssueCode}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-ITKResponseCode}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-LegalStatusClassificationEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-LegalStatusClassificationWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-LegalStatusContext}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-ListEmptyReasonCode}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-ListWarningCode}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-OutcomeOfAttendanceEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-OutcomeOfAttendanceWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-RecordStandardHeadings}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-SourceOfAdmissionEngland}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-SourceOfAdmissionWales}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-SpineErrorOrWarningCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-AdmissionMethodEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-AdmissionMethodWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-ConditionCategory}}</li>
+<li>{{pagelink:CodeSystem-UKCore-ConditionEpisodicity}}</li>
+<li>{{pagelink:CodeSystem-UKCore-DischargeDestinationEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-DischargeDestinationWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-DischargeMethodEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-DischargeMethodWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-EmergencyCareOutcomeOfAttendanceWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-EncounterLocationTypeEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-EncounterLocationTypeWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-EPSIssueCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-ITKResponseCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-LegalStatusClassificationEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-LegalStatusClassificationWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-LegalStatusContext}}</li>
+<li>{{pagelink:CodeSystem-UKCore-ListEmptyReasonCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-ListWarningCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-OutcomeOfAttendanceEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-OutcomeOfAttendanceWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-RecordStandardHeadings}}</li>
+<li>{{pagelink:CodeSystem-UKCore-SourceOfAdmissionEngland}}</li>
+<li>{{pagelink:CodeSystem-UKCore-SourceOfAdmissionWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-SpineErrorOrWarningCode}}</li>
 </ul>
 
 <p><b>C&TA Sprint 5:</b></p>
 <ul>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-AppointmentReasonCode}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-DeliveryChannel}}</li>
+<li>{{pagelink:CodeSystem-UKCore-AppointmentReasonCode}}</li>
+<li>{{pagelink:CodeSystem-UKCore-DeliveryChannel}}</li>
 </ul>
 
 <p><b>C&TA Sprint 6:</b></p>
 <ul>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-BiopsyState}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-FundingCategory}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-GenomeSequencingCategory}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-NHSNumberUnavailableReason}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-OrganizationTypeGenomics}}</li>
-<li class="balloted">{{pagelink:CodeSystem-UKCore-SampleCategory}}</li>
+<li>{{pagelink:CodeSystem-UKCore-BiopsyState}}</li>
+<li>{{pagelink:CodeSystem-UKCore-FundingCategory}}</li>
+<li>{{pagelink:CodeSystem-UKCore-GenomeSequencingCategory}}</li>
+<li>{{pagelink:CodeSystem-UKCore-NHSNumberUnavailableReason}}</li>
+<li>{{pagelink:CodeSystem-UKCore-OrganizationTypeGenomics}}</li>
+<li>{{pagelink:CodeSystem-UKCore-SampleCategory}}</li>
 </ul>
 </div>
 
@@ -1509,45 +1522,45 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </ul>
 <p><b>Appointment:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-AppointmentReasonCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DeliveryChannel}}</li>
+<li>{{pagelink:ValueSet-UKCore-AppointmentReasonCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-DeliveryChannel}}</li>
 </ul>
 <p><b>Composition:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-CareSettingType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-CompositionCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-CompositionSectionCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DocumentType}}</li>
+<li>{{pagelink:ValueSet-UKCore-CareSettingType}}</li>
+<li>{{pagelink:ValueSet-UKCore-CompositionCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-CompositionSectionCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-DocumentType}}</li>
 </ul>
 <p><b>Condition:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ConditionCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ConditionCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ConditionEpisodicity}}</li>
+<li>{{pagelink:ValueSet-UKCore-ConditionCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-ConditionCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ConditionEpisodicity}}</li>
 </ul>
 <p><b>DiagnosticReport:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ReportCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ReportCode}}</li>
 </ul>
 <p><b>Encounter:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-AdmissionMethod}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-CareSettingType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DischargeDestination}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DischargeMethod}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-EmergencyCareDischargeStatus}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-EncounterLocationType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-EncounterType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-LegalStatusClassification}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-LegalStatusContext}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</li>
+<li>{{pagelink:ValueSet-UKCore-AdmissionMethod}}</li>
+<li>{{pagelink:ValueSet-UKCore-CareSettingType}}</li>
+<li>{{pagelink:ValueSet-UKCore-DischargeDestination}}</li>
+<li>{{pagelink:ValueSet-UKCore-DischargeMethod}}</li>
+<li>{{pagelink:ValueSet-UKCore-EmergencyCareDischargeStatus}}</li>
+<li>{{pagelink:ValueSet-UKCore-EncounterLocationType}}</li>
+<li>{{pagelink:ValueSet-UKCore-EncounterType}}</li>
+<li>{{pagelink:ValueSet-UKCore-LegalStatusClassification}}</li>
+<li>{{pagelink:ValueSet-UKCore-LegalStatusContext}}</li>
+<li>{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</li>
+<li>{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</li>
 </ul>
 <p><b>HealthcareService:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
+<li>{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
 </ul>
 <p><b>Immunization:</b></p>
 <ul>
@@ -1561,10 +1574,10 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </ul>
 <p><b>List:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-CareSettingType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ListCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ListEmptyReasonCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ListWarningCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-CareSettingType}}</li>
+<li>{{pagelink:ValueSet-UKCore-ListCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ListEmptyReasonCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ListWarningCode}}</li>
 </ul>
 <p><b>Medication:</b></p>
 <ul>
@@ -1608,20 +1621,21 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </ul>
 <p><b>MessageHeader:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-MessageEvent}}</li>
+<li>{{pagelink:ValueSet-UKCore-MessageEvent}}</li>
 </ul>
 <p><b>Observation:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ObservationType}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-UnifiedTestList}}</li>
+<li>{{pagelink:ValueSet-UKCore-ObservationType}}</li>
+<li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables}}</li>
+<li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</li>
 </ul>
 <p><b>OperationOutcome:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</li>
+<li>{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</li>
 </ul>
 <p><b>Organization:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-OrganizationType}}</li>
+<li>{{pagelink:ValueSet-UKCore-OrganizationType}}</li>
 </ul>
 <p><b>Patient:</b></p>
 <ul>
@@ -1629,7 +1643,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <li>{{pagelink:ValueSet-UKCore-DeathNotificationStatus}}</li>
 <li>{{pagelink:ValueSet-UKCore-EthnicCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</li>
+<li>{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</li>
 <li>{{pagelink:ValueSet-UKCore-NHSNumberVerificationStatus}}</li>
 <li>{{pagelink:ValueSet-UKCore-PersonMaritalStatusCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-PersonRelationshipType}}</li>
@@ -1647,12 +1661,12 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </ul>
 <p><b>Procedure:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ConditionCode}}</li>
-<li class="balloted">{{pagelink:Valueset-UKCore-ProcedureCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ConditionCode}}</li>
+<li>{{pagelink:Valueset-UKCore-ProcedureCode}}</li>
 </ul>
 <p><b>Questionnaire:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</li>
+<li>{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</li>
 </ul>
 <p><b>RelatedPerson:</b></p>
 <ul>
@@ -1662,28 +1676,28 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </ul>
 <p><b>ServiceRequest:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-FundingCategory}}</li>
-<li class="balloted">{{pagelink:Valueset-UKCore-ProcedureCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SourceOfServiceRequest}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-UnifiedTestList}}</li>
+<li>{{pagelink:ValueSet-UKCore-FundingCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</li>
+<li>{{pagelink:Valueset-UKCore-ProcedureCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-SourceOfServiceRequest}}</li>
 </ul>
 <p><b>Schedule:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
 </ul>
 <p><b>Slot:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-DeliveryChannel}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
+<li>{{pagelink:ValueSet-UKCore-DeliveryChannel}}</li>
+<li>{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
 </ul>
 <p><b>Specimen:</b></p>
 <ul>
-<li class="balloted">{{pagelink:ValueSet-UKCore-BiopsyState}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SampleCategory}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SpecimenBodySite}}</li>
-<li class="balloted">{{pagelink:ValueSet-UKCore-SpecimenType}}</li>
+<li>{{pagelink:ValueSet-UKCore-BiopsyState}}</li>
+<li>{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-SampleCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-SpecimenBodySite}}</li>
+<li>{{pagelink:ValueSet-UKCore-SpecimenType}}</li>
 </ul>
 </div>
 
@@ -1691,4 +1705,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> <code>UKCore-MedicationAdministrationCategory</code> was added after specific review and feedback from the Digital and Interoperable Medicines Programme. It was not added under a Clinical & Technical Assurance sprint
 </div>
 
+<br><br>
+<div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> <i class="fa fa-asterisk"></i> <code>UKCore-UnifiedTesList</code> added in C&TA Sprint 6 was replaced by the <code>UKCore-PathologyAndLaboratoryMedicineObservables</code> and <code>UKCore-PathologyAndLaboratoryMedicineProcedures</code> ValueSets during the STU2 Ballot reconcillation due to a change by the SNOMED CT UK Clinical Edition.
+</div>
 ---

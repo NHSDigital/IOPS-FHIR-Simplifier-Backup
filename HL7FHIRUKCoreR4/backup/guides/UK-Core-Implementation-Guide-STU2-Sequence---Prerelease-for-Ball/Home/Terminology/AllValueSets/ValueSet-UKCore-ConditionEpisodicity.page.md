@@ -1,4 +1,4 @@
-## UKCore Condition Episodicity
+## UK Core Condition Episodicity
 
 <div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
 

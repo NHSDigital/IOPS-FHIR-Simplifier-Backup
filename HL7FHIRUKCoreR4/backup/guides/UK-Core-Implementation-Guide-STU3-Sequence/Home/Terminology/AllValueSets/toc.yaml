@@ -154,6 +154,10 @@
   filename: ValueSet-UKCore-OutcomeOfAttendance.page.md
 - name: ValueSet UKCore-OxygenSaturation
   filename: ValueSet-UKCore-OxygenSaturation.page.md
+- name: ValueSet UKCore-PathologyAndLaboratoryMedicineObservables
+  filename: ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables.page.md
+- name: ValueSet UKCore-PathologyAndLaboratoryMedicineProcedures
+  filename: ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures.page.md
 - name: ValueSet UKCore-PersonMaritalStatusCode
   filename: ValueSet-UKCore-PersonMaritalStatusCode.page.md
 - name: ValueSet UKCore-PersonRelationshipType
@@ -194,8 +198,6 @@
   filename: ValueSet-UKCore-SubstanceOrProductAdministrationRoute.page.md
 - name: ValueSet UKCore-TobaccoConsumption
   filename: ValueSet-UKCore-TobaccoConsumption.page.md
-- name: ValueSet UKCore-UnifiedTestList
-  filename: ValueSet-UKCore-UnifiedTestList.page.md
 - name: ValueSet UKCore-VaccinationProcedure
   filename: ValueSet-UKCore-VaccinationProcedure.page.md
 - name: ValueSet UKCore-VaccinationProcedureSupplementary
