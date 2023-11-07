@@ -86,7 +86,7 @@ The diagram describes the overview of the process.
 
 {{render:ClinicalandTechnicalAssuranceProcess}}
 
-### Publication of the NHS England IG pack (1.0)
+### 1. Publication of the NHS England IG pack 
 This involves creating a NHS England IG pack for external consultation. 
 #### Key Inputs
 The following are key inputs to the creation of the NHS England IG pack:-
@@ -108,28 +108,28 @@ The following are key inputs to the creation of the NHS England IG pack:-
 
 The NHS IG pack will be created by the IOPS Team. The pack will include design options; recommended options will be determined after external consultation. The IOPS Team will create an itinerary to explain key decisions required from stakeholders. 
 
-### External consultation (2.0)
+### 2. Stakeholders consultation 
 The NHS IG pack will be released for consultation with external stakeholders for a period of 15 days with an ability to provide comments via Simplifier. The pack's release will be advertised on relevant channels e.g. email, Ryver, Simplifier news as appropriate.
 Stakeholders will need to commit resources to attend team calls, which are scheduled once a week; this includes one external community call per sprint. 
 After the review period, the IOPS Team will review the comments and agree on resolutions which will be presented on a call to stakeholders. The scope of discussion on the consultation call is limited to the issues raised as review comments in the consultation phase. If there is no consensus on the consultation call, this will be escalated to the UK FHIR Delivery Senior Leadership Team (SLT) to make decisions.  This team will engage with the UK FHIR community and seek input as needed.  
 
-### Update specifications (3.0) 
+### 3. Update specifications 
 The IOPS Team will update the NHS England IG FHIR assets and associated guidance based on agreement on the external call or further agreement with the SLT, if required. 
 
-### Handover to the NHS England IG Change Control process (4.0)
+### 4. Handover to the NHS England IG Change Control process 
 
 This will follow the change control process for the NHS England IG.  
-### Review and approve FHIR assets (5.0)
+### 5. Review and approve FHIR assets 
 The updated FHIR assets will be presented back to the community to approve confirm changes are as agreed in the external consultation, and have been correctly applied to the FHIR assets. Any final decisions needed will be agreed at the SLT. 
 
 
-### Produce hazard log and Clinical safety report (6.0)
+### 6. Produce hazard log and Clinical safety report 
 
 An initial hazard log will be produced in parallel as per the NHS England Clinical Safety process to identify any clinical risks associated with the proposed design and an associated clinical safety report will be produced. The hazard log and the clinical safety report will be presented to the NHS England Clinical Safety Group for endorsement.    
 
 ## Where do I start?
 
--  Anyone who is interested in developing new, or amending existing, FHIR assets should engage with the IOPS Team to prepare a pack using the Core Pack template which is available in <a href="#appendixc" >Appendix C</a>.  
+-  Anyone who is interested in developing new, or amending existing, FHIR assets should engage with the IOPS Team.  
 - If further clinical and technical assurance work is needed, the IOPS Team will then start to prepare the schedule, including estimating the number of sprints required.
 - The IOPS Team will invite other stakeholders, such as terminologists, clinical safety representatives, clinicians, First of Type representatives and vendors to establish representation and availability for the process.
 
