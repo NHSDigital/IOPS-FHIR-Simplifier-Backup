@@ -16,8 +16,6 @@
   filename: Handling-medications
 - name: Handling observations
   filename: Handling-observations
-- name: Handling vital-signs
-  filename: Handling-vital-signs
 - name: Rejecting messages
   filename: Rejecting-messages
 - name: Error handling

@@ -11,13 +11,13 @@
                 Walk-in to community pharmacy
             </td>
         </tr>
-        <!-- Age group / Biological sex -->
+        <!-- Age group/Biological sex -->
         <tr>
             <td class="nhsd-m-table__highlighted-items">
                 Age group / Biological sex
             </td>
             <td>
-                24 years, female
+                46 years, male
             </td>
         </tr>
         <!-- Role in pharmacy -->
@@ -47,13 +47,13 @@
                 The patient consents to the service.
             </td>
         </tr>
-        <!-- Clincal summary -->
+       <!-- Clincal summary -->
         <tr>
             <td class="nhsd-m-table__highlighted-items">
                 Clinical summary
             </td>
             <td>
-                Female patient has had frequent urination and burning sensation when passing urine. No discharge, patient has pain in lower abdomen.
+                Patient has had localised redness in skin and complains that had an insect bite on the site. Site is tender and swollen.
             </td>
         </tr>
         <!-- Relevant history / information requested -->
@@ -62,7 +62,7 @@
                 Relevant history / Information requested
             </td>
             <td>
-                Not taken Nitrofurantoin in past 3 months
+                Not allergic to penicillin.
             </td>
         </tr>
         <!-- Observations -->
@@ -72,22 +72,19 @@
             </td>
             <td>
                 <ul>
-                    <li>Urine test: Positive for Nitrate</li>
-                    <li>Temperature: 36.7°C</li>
+                    <li>Temperature: 37.4°C</li>
+                    <li>Blood pressure: 118 / 73</li>
+                    <li>Pulse: 82</li>
                 </ul>
             </td>
         </tr>
-        <!-- Smoking or pregnancy status -->
+        <!-- Pregnancy status -->
         <tr>
             <td class="nhsd-m-table__highlighted-items">
-                Smoking or pregnancy status
+                Pregnancy status
             </td>
             <td>
-                <ul>
-                    <li>Smoking: No</li>
-                    <li>Pregnant: No</li>
-                </ul>
-            </td>
+                Not applicable
         </tr>
         <!-- Medication prescribed -->
         <tr>
@@ -95,9 +92,9 @@
                 Medication prescribed
             </td>
             <td>
-                <a href="https://services.nhsbsa.nhs.uk/dmd-browser/amp/view/92947?ref=Y29kZT0yNDU0OTkxMTAwMDAwMTEwNyZjb2RlVHlwZT1TTk9NRUQmcGFnZT0xJnNpemU9MjAmc29ydE9yZGVyPXJlbA%3D%3D">Nitrofurantoin 50mg capsules (A A H Pharmaceuticals Ltd)</a>
+                <a href="https://services.nhsbsa.nhs.uk/dmd-browser/amp/view/1761?ref=Y29kZT0zOTY5MjIxMTAwMDAwMTEwNyZjb2RlVHlwZT1TTk9NRUQmcGFnZT0xJnNpemU9MjAmc29ydE9yZGVyPXJlbA%3D%3D">Flucloxacillin 500mg capsules (A A H Pharmaceuticals Ltd)</a>
                 <br />
-                Take four times per day, for seven days.
+                Four times a day for 5 days (to be taken at least 1 hour before or 2 hours after meals).
             </td>
         </tr>
         <!-- Information and advice given -->
@@ -106,7 +103,7 @@
                 Information and advice given
             </td>
             <td>
-                If symptoms do not improve within 2 days, please call 111 for further advice.
+                Keep the site clean. If the symptoms do not improve, contact 111.
             </td>
         </tr>
     </tbody>

@@ -6,7 +6,7 @@
   filename: Contraception-Service---Example-1
 - name: Contraception service - Example 2
   filename: Contraception-Service---Example-2
-- name: Minor illness / Common conditions service - Example 1
-  filename: Minor-illness---Common-conditions-service---Example-1
-- name: Minor illness / Common conditions service - Example 2
-  filename: Minor-illness---Common-conditions-service---Example-2
+- name: Pharmacy first service - Example 1
+  filename: Pharmacy-First-service---Example-1
+- name: Pharmacy first service - Example 2
+  filename: Pharmacy-first-service---Example-2
