@@ -6,7 +6,7 @@ Stakeholders are often the requestors/sponsors of projects or programmes that re
 
 However, stakeholders can also be users/implementors of the NHS England IG and may notice an issue and raise this against the IG via Simplifier.
 
-The Clinical and Technical Assurance process details how stakeholders are engaged as part of assuring the NHS England IG.
+The [Clinical and Technical Assurance](https://simplifier.net/guide/nhs-england-design-and-development-approach/home/assurance---endorsement/clinical-and-technical-assurance.page.md?version=current) process details how stakeholders are engaged as part of assuring the NHS England IG.
 
 The pages in this section contain information about how the NHS England IG development team has engaged with the NHS England programs via presentations and information sharing sessions.
 
