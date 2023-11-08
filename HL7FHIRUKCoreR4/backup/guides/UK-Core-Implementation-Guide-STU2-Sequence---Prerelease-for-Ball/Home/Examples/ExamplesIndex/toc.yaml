@@ -28,8 +28,6 @@
   filename: Example-UKCore-Condition-Extension-ConditionEpisode.page.md
 - name: Example UKCore-Consent-ForInformationAccess
   filename: Example-UKCore-Consent-ForInformationAccess.page.md
-- name: Example UKCore-DiagnosticReport-DiagnosticStudiesReport
-  filename: Example-UKCore-DiagnosticReport-DiagnosticStudiesReport.page.md
 - name: Example UKCore-DiagnosticReport-Extension-CompositionReference
   filename: Example-UKCore-DiagnosticReport-Extension-CompositionReference.page.md
 - name: Example UKCore-DiagnosticReport-Extension-DeviceReference
