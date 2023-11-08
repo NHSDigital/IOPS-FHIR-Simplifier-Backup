@@ -16,7 +16,7 @@ Providers may supply a reference range along with the associated value - for exa
     <b>Note</b>: Where a reference range contains a less than <code>&lt;</code> or greater than <code>&gt;</code> operator it should be written to the <code>referenceRange.text</code> element as these operators are not supported in this context.
 </div>
 
-Similarly, a provider may wish to provide the interpretation to indicate whether the observation is potentially abnormal.
+Similarly, a provider may wish to provide the interpretation to indicate whether the observation is abnormal (in line with Access Record: Structured).
 
 https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-ObservationInterpretation-1
 
@@ -25,10 +25,10 @@ https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-ObservationInterpretation-1
 <interpretation>
     <coding>
         <system value="http://hl7.org/fhir/v2/0078"/>
-        <code value="PA"/>
-        <display value="Potentially Abnormal"/>
+        <code value="A"/>
+        <display value="Abnormal"/>
     </coding>
-    <text value="Potentially Abnormal"/>
+    <text value="Abnormal"/>
 </interpretation>
 ```
 
