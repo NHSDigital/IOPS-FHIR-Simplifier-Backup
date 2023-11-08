@@ -4,11 +4,11 @@ topic: APP4-Payloads
 
 
 ## {{page-title}}
-## Validation Request (Referral) Payload
+## Validation Request Payload
 The below details the specific guidance around the use of resources required to create a validation request by the referral sender. See [ServiceRequest - Request Validation](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-servicerequest-request-validation) message definition for details.
 
 ### MessageHeader Resource
-The MessageHeader resource is required as part of the technical capability of making a referral. Rather than providing clinical or administrative content for the end users; the function of all other resources are outlined. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
+The MessageHeader resource is required as part of the technical capability of making a request or response. Rather than providing clinical or administrative content for the end users; the function of all other resources are outlined. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
 
 Any Receiver of the request 'message bundle' **must** first check the *MessageHeader.destination* and verify the *MessageHeader.destination.receiver.reference* refers to their Organisation. The *MessageHeader.destination.endpoint* is, in turn, the Healthcare Service ID they are expected to be processing the request on behalf of. 
 
@@ -69,7 +69,7 @@ Primarily, *careplan.activity* is the section which holds this information, whet
 ### Flag Resource
 The Flag resource is used to communicate prospective warnings of potential issues when providing care to the patient. The Flag subject may be the Patient (e.g. Safeguarding concern) or the Location (e.g. Scene safety). The population of the Flag Resource is optional as not all subjects will have relevant issues.
 
-BaRS Senders **should** populate Flag resources and **should** make adequate provision in their solution to support key flags in BaRS Application workflows, for example, Safeguarding, for this Application. When populating this resource, Senders **must** include both *flag.category* and *flag.code* values using the specific [BaRS CodeSystems](https://simplifier.net/nhsbookingandreferrals/~resources?category=CodeSystem&sortBy=DisplayName).
+BaRS Senders **should** populate Flag resources and **should** make adequate provision in their solution to support key flags in BaRS Application workflows, for example, Scene Safety, for this Application. When populating this resource, Senders **must** include both *flag.category* and *flag.code* values using the specific [BaRS CodeSystems](https://simplifier.net/nhsbookingandreferrals/~resources?category=CodeSystem&sortBy=DisplayName).
 
 When a BARS Receiver processes information in a Flag resource;
 
@@ -93,9 +93,9 @@ The level of consent currently supported by BaRS is for 'Direct Care' only. In e
 ## Validation Interim Response Payload
 The below details the specific guidance around the use of key resources required to create a validation response by the referral receiver to the original referral sender. See [ServiceRequest - Response Validation Interim](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-validation-interim) message definition for details.
 <br>
-@@@@@@ Needs writing ITERIM @@@@@???????
+
 ### MessageHeader Resource
-The MessageHeader resource is required as part of the technical capability of making a referral?????@@@. Rather than providing clinical or administrative content for the end users; the function of all other resources are outlined. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
+The MessageHeader resource is required as part of the technical capability of making a request or response. Rather than providing clinical or administrative content for the end users; the function of all other resources are outlined. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
 
 Any Receiver of the request 'message bundle' **must** first check the *MessageHeader.destination* and verify the *MessageHeader.destination.receiver.reference* refers to their Organisation. The *MessageHeader.destination.endpoint* is, in turn, the Healthcare Service ID they are expected to be processing the request on behalf of. 
 
@@ -113,7 +113,7 @@ The workflow dictates an asynchronous response is to be sent, the Receiver **mus
 ### ServiceRequest Resource
 The 'focus' resource in a referral is the ServiceRequest resource. When the request 'message bundle' is created by the Sender and processed by the Receiver, this is the starting point from which the referral is understood. It provides either the detail or references to all key FHIR resources, for example, the Patient, Encounter and Careplan. The guidance for this resource below provides more granular, element level, detail. A key point when a Receiver builds the referral FHIR response 'message bundle' is to ensure the *MessageHeader.focus* references the ServiceRequest resource.
 
-Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time that the receiving service must contact the patient by (validation breach time), this is a echo from the original request. ???????
+Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time that the receiving service must contact the patient by (validation breach time), this is a echo from the original request.
 
 ### Encounter Resource
 The Encounter is used to represent the interaction between a patient and healthcare service provider. It links with numerous other resources, to reflect the assessment performed. 
@@ -122,17 +122,17 @@ In the initial referral request, the Sender will include an Encounter resource a
 
 A second Encounter resource is used to transfer the human readable reference of the newly created referral, at the Receiver side. When a referral request is made, the Receiver **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Sender's request. This new 'planned' encounter will have both an Id and an Identifier value, indicating the Receiver's local reference and human readable one, respectively. (See the {{pagelink:APP3-EntityRelationshipDiagrams, text:Entity Relationship Diagram}} for reference). The human readable (Identifier) reference is a useful link for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
 
-When the interim response is sent an Encounter status of 'in-progress' **should** be set on the second Encounter. This is to indicate to the Sender that the request has started with the receiving service. 
+When the interim response is sent an *encounter.status* of 'in-progress' **must** be set on the second Encounter. This is to indicate to the Sender that the request has started in the receiving service.
+The *encounter.reasonCode* **must** be included on the second encounter to indicate that it is the validation triage outcome. 
 <br>
 <br>
 <hr>
 
 ## Validation Final Response Payload
 The below details the specific guidance around the use of key resources required to create a validation response by the referral receiver to the original referral sender. See [ServiceRequest - Response Validation Full](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-validation-full) message definition for details.
-@@@@@@ Needs writing FINAL RESPONSE @@@@@???????
 
 ### MessageHeader Resource
-The MessageHeader resource is required as part of the technical capability of making a referral?????@@@@. Rather than providing clinical or administrative content for the end users; the function of all other resources are outlined. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
+The MessageHeader resource is required as part of the technical capability of making a request or response. Rather than providing clinical or administrative content for the end users; the function of all other resources are outlined. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
 
 Any Receiver of the request 'message bundle' **must** first check the *MessageHeader.destination* and verify the *MessageHeader.destination.receiver.reference* refers to their Organisation. The *MessageHeader.destination.endpoint* is, in turn, the Healthcare Service ID they are expected to be processing the request on behalf of. 
 
@@ -150,7 +150,7 @@ The workflow dictates an asynchronous response is to be sent, the Receiver **mus
 ### ServiceRequest Resource
 The 'focus' resource in a referral is the ServiceRequest resource. When the request 'message bundle' is created by the Sender and processed by the Receiver, this is the starting point from which the referral is understood. It provides either the detail or references to all key FHIR resources, for example, the Patient, Encounter and Careplan. The guidance for this resource below provides more granular, element level, detail. A key point when a Receiver builds the referral FHIR response 'message bundle' is to ensure the *MessageHeader.focus* references the ServiceRequest resource.
 
-Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time that the receiving service must contact the patient by (validation breach time), this is a echo from the original request. ???????
+Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time that the receiving service must contact the patient by (validation breach time), this is a echo from the original request. 
 
 ### Encounter Resource
 The Encounter is used to represent the interaction between a patient and healthcare service provider. It links with numerous other resources, to reflect the assessment performed. 
@@ -159,9 +159,9 @@ In the initial referral request, the Sender will include an Encounter resource a
 
 A second Encounter resource is used to transfer the human readable reference of the newly created referral, at the Receiver side. When a referral request is made, the Receiver **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Sender's request. This new 'planned' encounter will have both an Id and an Identifier value, indicating the Receiver's local reference and human readable one, respectively. (See the {{pagelink:APP3-EntityRelationshipDiagrams, text:Entity Relationship Diagram}} for reference). The human readable (Identifier) reference is a useful link for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
 
-When the final response is sent an Encounter status of 'finished' **should** be set on the second Encounter. This is to indicate to the Sender that the request has started with the receiving service. 
+When the final response is sent an *encounter.status* of 'finished' or 'triaged' **must** be set on the second Encounter. This is to indicate to the Sender that the request has compeleted in the receiving system. The *encounter.reasonCode* **must** be included on the second encounter to indicate that it is the validation triage outcome. 
 
-A third Encounter **should** be included if a validation has resulted in a higher ARP Cat1 or Cat2 where a request has been made to 999 AST via the original ITK route from a 111 service via an automated Ambulance Request ITK. The Sender **should** be able to see the ITK request and merge the new case with the case currently with the CAS on receipt of the final message using the identifiers provided on the Ambulance Request. 
+A third Encounter **should** be included if a validation request has resulted in a higher ambulance category  Cat1 or Cat2 where a request has been made to 999 AST via the original ITK route from a 111 service via an automated Ambulance Request ITK. The Sender **should** be able to see the ITK request and merge the new case with the case currently with the CAS on receipt of the final message using the identifiers provided on the Ambulance Request. 
 
 ### Location Resource ###
 The Location resource is used to transfer details of the incident location.
@@ -188,18 +188,21 @@ When a BARS Receiver processes information in a Location resource:
 ### CarePlan Resource
 The CarePlan resource is used in a referral request to communicate the 999 AST triage outcome and any associated clinical information, based on the assessment performed by the Sender. The Receiver will utilise the detail in this resource to summarise what the previous assessment ascertained about the patient, to be used in any subsequent consultation with the patient.
 
-Primarily, *careplan.activity* is the section which holds this information, whether it be coded or free text. The *careplan.activity.outcomeCodeableConcept* is malleable enough to support the transmission of AMPDS and Pathways coded outcomes as well as clinical narrative. The element guidance for this resource below goes into the specific detail but, fundamentally, the Sender must include the following:
-*  The selected AMPDS dispatch code and triage summary, or  
-*  The Pathways, Symptom Group (SG),  Symptom Discriminator (SD) and Disposition (DX) codes, along with the Pathways consultation summary. 
-*  Further clinical narrative, provided outside of the AMPDS or Pathways assessment, can also be included under this element using 'text'
+The CarePlan resource is used in the validation response to communicate to the original Sender a summary of what was ascertained during the validation consultation. 
+
+*CarePlan.status* is used to drive workflow on the original Sender system. This **must** be populated with the value ‘complete’ or 'active'. If a status is 'complete' the Sender will know there is no furthur action required. If the status is 'active' they will need to action the case following a validation.
+
+*careplan.activity* holds the assessment information, whether it be coded or free text. The *careplan.activity.outcomeCodeableConcept* is malleable enough to support the transmission of Pathways coded outcomes as well as clinical narrative. The element guidance for this resource below goes into the specific detail but, fundamentally, the Receiver must include the following:
+*  The Pathways, Symptom Group (SG),  Symptom Discriminator (SD) and Disposition (DX) codes, along with the Pathways consultation summary, or
+*  Further clinical narrative, provided outside of Pathways assessment, can also be included under this element using 'text'
 *  The Ambulance Response Programme (ARP) priority code
 
 ### Flag Resource
 The Flag resource is used to communicate prospective warnings of potential issues when providing care to the patient. The Flag subject may be the Patient (e.g. Safeguarding concern) or the Location (e.g. Scene safety). The population of the Flag Resource is optional as not all subjects will have relevant issues.
 
-BaRS Senders **should** populate Flag resources and **should** make adequate provision in their solution to support key flags in BaRS Application workflows, for example, Safeguarding, for this Application. When populating this resource, Senders **must** include both *flag.category* and *flag.code* values using the specific [BaRS CodeSystems](https://simplifier.net/nhsbookingandreferrals/~resources?category=CodeSystem&sortBy=DisplayName).
+BaRS Receiver **should** populate Flag resources and **should** make adequate provision in their solution to support key flags in BaRS Application workflows, for example, Scene Safety, for this Application. When populating this resource, Receivers **must** include both *flag.category* and *flag.code* values using the specific [BaRS CodeSystems](https://simplifier.net/nhsbookingandreferrals/~resources?category=CodeSystem&sortBy=DisplayName).
 
-When a BARS Receiver processes information in a Flag resource;
+When a BARS Sender processes information in a Flag resource in a validation response;
 
 * they **should** populate a flag in their system, if their solution supports that flag
 * they **must** display the information in the Flag resource in a way that supports the associated workflow (i.e. the relevant end users can see it and act upon it)
@@ -221,7 +224,7 @@ The level of consent currently supported by BaRS is for 'Direct Care' only. In e
 ## Validation Cancellation Payload
 The below details the specific guidance around the use of key resources required to create a cancellation of a validation request. See [ServiceRequest - Request - Cancelled](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionservicerequestrequestcancelled) message definition for details.
 
-@@@@@@ Needs writing CANCEL @@@@@???????
+@@@@@@ Needs writing  or linking to the CANCEL section @@@@@???????
 <br>
 
 <hr>

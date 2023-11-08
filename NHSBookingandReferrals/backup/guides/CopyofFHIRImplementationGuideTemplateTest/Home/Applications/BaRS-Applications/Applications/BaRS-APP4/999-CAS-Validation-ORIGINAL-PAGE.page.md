@@ -8,7 +8,7 @@ This page provides guidance for implementing the Booking and Referral Standard (
 
 ### Workflow
 
-{{render:Validation---simplified.drawio}}
+
 
 - Prior to referral the 999 AST will undertake a triage of the patient to determine the acuity of the case. This will typically be undertaken by a call handler on the Computer Aided Dispatch system (CAD) using an approved Clinical Decision Support System (CDSS) such as NHS Pathways or AMPDS. For cases with a low acuity ambulance triage outcome (currently CAT3 and CAT4), local business rules are applied to determine if the case meets the requirement for clinical validation of triage outcome. These may be informed by the outcome of the NHSE/I Ambulance Validation Project.
 - For cases meeting the criteria, a suitable CAS service for validation, is identified based on the patient’s location. Service discovery will be locally mapped or use UEC DOS to ascertain the ServiceID. This will be used to query the BaRS endpoint catalogue.
