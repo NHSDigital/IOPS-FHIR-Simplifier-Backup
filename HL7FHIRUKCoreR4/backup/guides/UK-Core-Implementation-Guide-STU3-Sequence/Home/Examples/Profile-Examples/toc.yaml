@@ -16,8 +16,6 @@
   filename: Example-UKCore-Condition-BleedingFromEar.page.md
 - name: Example UKCore-Consent-ForInformationAccess
   filename: Example-UKCore-Consent-ForInformationAccess.page.md
-- name: Example UKCore-DiagnosticReport-DiagnosticStudiesReport
-  filename: Example-UKCore-DiagnosticReport-DiagnosticStudiesReport.page.md
 - name: Example UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport
   filename: Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport.page.md
 - name: Example UKCore-Device-SoftwareAsAMedicalDevice

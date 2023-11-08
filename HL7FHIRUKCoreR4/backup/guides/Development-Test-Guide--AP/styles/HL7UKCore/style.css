@@ -531,3 +531,8 @@ h2 code {
 .alert-baseFhir .alert-link {
     color: #245269
 }
+
+a:focus {
+    outline: revert;
+    outline-offset: rever
+}

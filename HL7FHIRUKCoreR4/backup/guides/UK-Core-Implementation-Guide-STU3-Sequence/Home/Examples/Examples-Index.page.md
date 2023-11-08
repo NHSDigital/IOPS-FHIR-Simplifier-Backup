@@ -29,7 +29,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Composition-Discharge}}</li>
 <li>{{pagelink:Example-UKCore-Condition-BleedingFromEar}}</li>
 <li>{{pagelink:Example-UKCore-Consent-ForInformationAccess}}</li>
-<li>{{pagelink:Example-UKCore-DiagnosticReport-DiagnosticStudiesReport}}</li>
 <li>{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}</li>
 <li>{{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}</li>
 <li>{{pagelink:Example-UKCore-Device-Sphygmomanometer}}</li>
@@ -300,7 +299,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <p><b>C&TA Sprint 6:</b></p>
 <ul>
 <li>{{pagelink:Example-UKCore-Consent-ForInformationAccess}}</li>
-<li>{{pagelink:Example-UKCore-DiagnosticReport-DiagnosticStudiesReport}}</li>
 <li>{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}</li>
 <li>{{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}</li>
 <li>{{pagelink:Example-UKCore-FamilyMemberHistory-FatherDiabetes}}</li>
@@ -395,7 +393,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 </ul>
 <p><b>DiagnosticReport:</b></p>
 <ul>
-<li>{{pagelink:Example-UKCore-DiagnosticReport-DiagnosticStudiesReport}}</li>
 <li>{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}</li>
 <li>{{pagelink:Example-UKCore-Extension-CompositionReference}}</li>
 <li>{{pagelink:Example-UKCore-Extension-DeviceReference}}</li>

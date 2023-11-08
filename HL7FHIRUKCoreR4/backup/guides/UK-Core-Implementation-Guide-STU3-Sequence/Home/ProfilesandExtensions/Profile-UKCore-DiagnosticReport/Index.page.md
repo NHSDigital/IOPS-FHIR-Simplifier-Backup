@@ -64,8 +64,9 @@ select
   <br><br>
   <b>Diagnostic Report Note</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to add notes and annotations to a diagnostic report.<br>
   {{pagelink:Example-UKCore-Extension-Note}}
+  <br><br>
   <b>Diagnostic Studies Report</b> - An example to illustrate a diagnostic studies report containing a specimen and observation for a patient.<br/>
-{{pagelink:Example-UKCore-DiagnosticReport-DiagnosticStudiesReport}}
+{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}
 <br><br>
  <b>Device Reference</b> - An example to illustrate the extension which is used to indicate the performer of a Diagnostic Report was a device.<br>
   {{pagelink:Example-UKCore-Extension-DeviceReference}}<br>
