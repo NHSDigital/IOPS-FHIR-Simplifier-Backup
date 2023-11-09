@@ -13,7 +13,6 @@ Please click [here](https://simplifier.net/guide/nhs-england-implementation-guid
    <tr>
      <th class="width33">Female Genital Mutilation (FGM)</th>
      <th class="width33">Child Protection Information Sharing (CP-IS)</th>
-     <th class="width33">Organisation Data Service (ODS)</th>
   </tr>
  </thead>
  <tbody>
@@ -24,18 +23,12 @@ Please click [here](https://simplifier.net/guide/nhs-england-implementation-guid
     <td>
       {{pagelink:ValueSet-England-ChildProtectionPlan, text:ValueSet-England-ChildProtectionPlan}} 
     </td>
-    <td> 
-      {{pagelink:CodeSystem-England-ODSOrganisationRole, text:CodeSystem-England-ODSOrganisationRole}}
-    </td>
    </tr>
    <tr>
     <td>
       {{pagelink:Extension-England-FlagRemovalReason, text:Extension-England-FlagRemovalReason}} 
     </td>
     <td>
-    </td>
-    <td>
-     {{pagelink:Extension-England-OrganisationRole, text:Extension-England-OrganisationRole}}
     </td>
    </tr>
    <tr>
@@ -44,38 +37,7 @@ Please click [here](https://simplifier.net/guide/nhs-england-implementation-guid
     </td>
     <td>
     </td>
-    <td>
-     {{pagelink:ValueSet-England-OrganisationRole, text:ValueSet-England-OrganisationRole}}
-    </td>
    </tr>
-   <tr>
-    <td>
-       
-    </td>
-    <td>
-    </td>
-    <td>
-     {{pagelink:CodeSystem-England-ORDDateTime, text:CodeSystem-England-ORDDateTime}}
-    </td>
-   </tr> 
-   <tr>
-    <td> 
-    </td>
-    <td>
-    </td>
-    <td>
-     {{pagelink:Extension-England-DateTime, text:Extension-England-DateTime}}
-    </td>
-   </tr> 
-   <tr>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-     {{pagelink:ValueSet-England-TypedDateTime, text:ValueSet-England-TypedDateTime}}
-    </td>
-   </tr>   
    </tbody>
 </table>
 

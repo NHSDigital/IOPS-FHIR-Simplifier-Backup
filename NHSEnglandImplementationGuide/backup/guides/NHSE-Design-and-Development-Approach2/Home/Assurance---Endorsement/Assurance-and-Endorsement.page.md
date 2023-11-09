@@ -9,5 +9,3 @@ The NHS England [Clinical and Technical Assurance](https://simplifier.net/guide/
 
 
 ---
-
-
