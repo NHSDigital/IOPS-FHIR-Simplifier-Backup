@@ -2,3 +2,7 @@
   filename: Index.page.md
 - name: Package Release
   filename: Package-Release.page.md
+- name: Implementation Guide Release
+  filename: Implementation-Guide-Release.page.md
+- name: GitHub Release
+  filename: GitHub-Release.page.md

@@ -4,22 +4,19 @@
 <table class="regular assets">
 <thead>
 <tr>
-<th>Current Release Package</th>
-<th></th>
+<th>Description</th>
+<th>Status</th>
+<th>Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Package</td>
-<td>TBC</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>1.0.0</td>
-</tr>
-<tr>
-<td>IG Package Url</td>
-<td><a href="TBC">TBC</a></td>
+<td>NHS England STU1 Sprint 1 Package
+</td>
+<td>Active</td>
+<td>
+<a href="https://simplifier.net/packages/fhir.r4.nhsengland.stu1/1.0.0" target="_blank">fhir.r4.nhsengland.stu1 1.0.0 </a>
+</td>
 </tr>
 </tbody>
 </table>
