@@ -5,33 +5,35 @@ topic: APP4-HowDoesItWork
 ## {{page-title}}
 
 
-This section describes how the primary operations used in this application work. This diagram illustrates the workflow and interactions of a Validation request and response:
+This section describes how the primary operations used in this application work. The following  diagram illustrates the workflow and interactions of a request from an 999 AST to a CAS to clinically validate an agreed cohort of ambulance triage outcomes (usually C3/C4), and the subsequent response(s):
 <br>
 
 <img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ValidationRequestSimplified-1.0.0.svg" width="1000"></img></a>
 
 
-This details a referral into a CAS from a 999 Ambulance Service Trust (AST) for clinical validation of a triage outcome:
+This details a Validation Request into a CAS from a 999 Ambulance Service Trust (AST) for clinical validation of a triage outcome:
 
-- Prior to referral the 999 AST will undertake a triage of the patient to determine the acuity of the case. This will typically be undertaken by a call handler on the Computer Aided Dispatch system (CAD) using an approved Clinical Decision Support System (CDSS) such as NHS Pathways or AMPDS. For cases with an ambulance disposition, local business rules will be applied to determine if the case meets the requirement for referral to a CAS for validation by a clinician. This will usually be Ambulance Response Programme (ARP) priority C3 and C4 cases, but may include C2 segmentation cases, subject to local agreements between the 999 AST and the CAS.
-- For cases requiring a referral to CAS for clinical validation, a suitable CAS is identified based on the patient’s clinical need and location. Service discovery will use local directories or UEC DOS to ascertain the ServiceID
+- Prior to making a Validation Request, the 999 AST will undertake a triage of the patient to determine the acuity of the case. This will typically be undertaken by a call handler on the Computer Aided Dispatch (CAD) system, using an approved Clinical Decision Support System (CDSS) such as NHS Pathways or AMPDS. For cases with an ambulance disposition, local business rules will be applied to determine if the case meets the requirement for validation by a CAS clinician. This will usually be Ambulance Response Programme (ARP) priority C3 and C4 cases, but may include C2 segmentation cases, subject to local agreements between the 999 AST and the CAS.
+- For cases requiring clinical validation, a suitable CAS is identified based on the patient’s clinical need and location. Service discovery will use local directories or UEC DOS to ascertain the ServiceID
 - The Service ID is used to query the BaRS Endpoint Catalogue to identify the receiving CAS system's endpoint details.
-- The 999-AST will send the referral for clinical validation to the CAS, which includes information required by a CAS Clinician to continue the patent's clinical care. This will also include the JourneyID created at the patient's first contact.
-- The CAS system will acknowledge the referral on receipt.
-- On receipt of the acknowledgment (synchronous response), the 999 AST CAD may move the case to a 'pending' stack. If the case exceeds the validation breach time before a validation response is received, a fail-safe process should be implemented to ensure that an ambulance is dispatched according to the original triage outcome.
+- The 999-AST will send the Validation Request to the CAS, which includes information required by a CAS Clinician to continue the patent's clinical care. This will also include the JourneyID created at the patient's first contact.
+- The CAS system will acknowledge the Validation Request on receipt.
+- On receipt of the Acknowledgment (synchronous response), the 999 AST CAD may move the case to a 'pending' stack. If the case exceeds the validation breach time before a validation response is received, a fail-safe process should be implemented to ensure that an ambulance is dispatched according to the original triage outcome.
+- If additional or changed information about the case is captured by the 999 AST subsequent to sending the Validation Request, but prior to receiving an Interim or Final Validation Response, they may send a Validation Request Update to ensure that the CAS has the most up to date information.
+- If the 999 AST no longer required the CAS to perform the validation, for example the patient has called back and the 999 AST has decided to dispatch an ambulance, they may send a Cancellation.
 - Prior to the CAS consultation the case will typically be posted to a queue on the CAS system for prioritisation, based on the validation breech time in the referral. This is determined locally or nationally from the triage outcome codes.
 - The CAS Clinician will contact the patient, or their representative, utilising contact details in the referral message.
-- On commencement of the consultation the CAS system sends an interim response back to the Sending 999 AST to inform them that the validation is in progess.
-- The CAS clinican undertakes a consultation to validate the Sending Service's triage outcome. The consultation will be informed by the clinical information sent by the referring service. The outcome of the validation will be recorded in the CAS system.
-- The outcome of the consultation under taken by the CAS clinican to validate the orginal 999 AST triage outcome is sent to the Sending service in a BaRS Final Validation Response. This may include:
+- On commencement of the consultation the CAS system sends an Interim Validation Response back to the Sending 999 AST to inform them that the validation activity is in progress.
+- The CAS clinician undertakes a consultation to validate the Sending Service's triage outcome. The consultation will be informed by the clinical information sent by the requesting service. The outcome of the validation will be recorded in the CAS system.
+- The outcome of the consultation under taken by the CAS clinician to validate the original 999 AST triage outcome is sent to the Sending service in a Final Validation Response. This may include:
 	* An outcome that requires an upgraded ambulance response from the Sending 999 AST
 	* An outcome that requires an downgraded ambulance response from the Sending 999 AST
 	* An outcome that requires an unchanged ambulance response from the Sending 999 AST
 	* An outcome that can be met by the provision of care advice with or without an electronic prescription (Hear and Treat)
 	* An outcome that can be met by the onward referral to another service provider e.g. ED
-- On receipt of the BaRS Final Validation Response the 999 AST will update the case on the CAD and undertake the required action. This may include:
-- Moving the case from the pending stack to the dispatch stack and dispatching a resource within the timescales appropriate for the ARP Priority in the Validation Response.
-- Closing the case if an ambulance is not required. Cases may be closed automatically if they returned with no ambulance is required. 
+- On receipt of the Final Validation Response the 999 AST will update the case on the CAD and undertake the required action. This may include:
+	* Moving the case from the pending stack to the dispatch stack and dispatching a resource within the timescales appropriate for the ARP Priority in the Final Validation Response.
+	* Closing the case if an ambulance is not required. 
 
 <br>
 <br>
@@ -40,9 +42,9 @@ To support the workflows for this application of the standard the operations tha
 
 <hr>
 
-### Make a Referral (Validation Request)
+### Make a Validation Request
 
-Making a referral for this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
+Making a Validation Request for this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Validation}}
 <p>
@@ -113,13 +115,13 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral (Validation Request)
 
-To cancel a referral this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned or completed. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a Validation Request this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as described on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned or completed. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
 The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern, text:standard pattern}}.
 
 The message definition that defines this payload for this application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
-As a general princple, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed, **should** be include. This is always defined within the relevent message definition.
+As a general principle, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed, **should** be included. This is always defined within the relevant message definition.
 
 If the update-to-cancel is taking place as part of a re-referral routine, once the cancellation is complete, the new referral message can be sent. This step in the workflow would follow the same process as 'Make a referral' detailed above.
 
