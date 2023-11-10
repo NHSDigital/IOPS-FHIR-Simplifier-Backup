@@ -1,15 +1,43 @@
 # {{page-title}} 
-{{index:root}}
 
+This guide is the reference point for published and development versions of NHS England Implementation Guide which is developed in sequences. Currently, the only sequence being developed is STU1.
 
-<br><br><br>
-<br><br><br>
+The following versions of NHS England Implementation Guide have been published:
 
-<div markdown="span" class="alert alert-warning" role="alert"><h4 id="Licence"><i class="fas fa-gavel"></i> Licensing and Publisher</h4>
-<ul>
-<li>
-Copyright© 2023+ NHS England Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html.
-<li>
-Developed and authored by NHS England Interoperability Team.
-</ul>
-</div>
+- Note where a package is marked as unlisted(deprecated) in the table below, implementers should move to a newer package if possible.
+
+<table class="assets">
+<tr>
+<th class="width10">Date</th>
+<th class="width10">IG Version</th>
+<th class="width10">FHIR Version</th>
+<th class="width10">UK Core Version</th>
+<th class="width40">Description</th>
+<th class="width10">Guide</th>
+<th class="width10">Package</th>
+</tr>
+<tr>
+<th colspan="7">Current Versions</th>
+</tr>
+<tr>
+<th colspan="7">STU1 Sequence</th>
+</tr>
+<tr>
+<td>9th November 2023</td>
+<td>1.0.0</td>
+<td>4.0.1</td>
+<td>STU3 0.0.6</td>
+<td>Release of NHS England Implementation Guide 1.0.0 - STU1. This was subject to Clinical and Technical Assurance Sprint 1.</td>
+<td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1?version=1.0.0">Home Page</a></td>
+<td><a href="https://simplifier.net/packages/fhir.r4.nhsengland.stu1/1.0.0">fhir.r4.nhsengland.stu1 1.0.0</a></td>
+</tr>
+<tr>
+<td>27th October 2023</td>
+<td>1.0.0-sprint-1-review</td>
+<td>4.0.1</td>
+<td>STU3 0.0.6</td>
+<td>Release of NHS England Implementation Guide 1.0.0-sprint-1-review. This was released for the purpose of review in Clinical and Technical Assurance Sprint 1.</td>
+<td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1?version=1.0.0-sprint-1-review">Home Page</a></td>
+<td>Unreleased</td>
+</tr>
+</table>
