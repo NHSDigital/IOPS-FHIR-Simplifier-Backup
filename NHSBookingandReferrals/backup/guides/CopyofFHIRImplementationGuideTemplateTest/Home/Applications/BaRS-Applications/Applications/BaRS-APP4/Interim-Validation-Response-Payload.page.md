@@ -1,12 +1,13 @@
 ---
-topic: APP4-ValidationInterimResponsePayload
+topic: APP4-InterimValidationResponsePayload
 ---
 
 ## {{page-title}}
 
-### Payload for a Validation Interim Response, using Service Request
+### Payload for a Interim Validation Response, using Service Request
 
-This payload is used to transmit all the necessary information that is required for a CAS to accept a patient referred into their service.
+This payload is used to transmit the completed validation outcome back to the Requester.
+
 
 <br> 
  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i>

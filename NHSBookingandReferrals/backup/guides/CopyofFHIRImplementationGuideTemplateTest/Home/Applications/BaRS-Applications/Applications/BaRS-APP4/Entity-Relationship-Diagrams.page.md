@@ -3,7 +3,7 @@ topic: APP4-EntityRelationshipDiagrams
 ---
 
 
-## {{page-title}}
+# {{page-title}}
 
 <br>
 Entity maps detail the relationship of the resources and elements within resources in the payloads. 
@@ -16,7 +16,7 @@ The below diagram details the ServiceRequest - Validation Request - 999 AST vali
 <br>
 <br>
 <br>
-The below diagram details the ServiceRequest - Validation Interim Response - 999 AST validation response from CAS @@@Update Interim Image@@@@
+The below diagram details the ServiceRequest - Interim Validation Response - 999 AST validation response from CAS
 <br>
 <br>
 <a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMap9sToCASValidationInterimResponse-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMap9sToCASValidationInterimResponse-1.0.0.svg" width="1200"></img></a>
@@ -31,7 +31,7 @@ The below diagram details the ServiceRequest - Validation Final  Response - 999 
 <br>
 <br>
 <br>
-The below diagram details the Cancellation Request - Validation Request - 999 AST cancel validation request to CAS @@@Update Cancel Image@@@@
+The below diagram details the Cancellation Request - Validation Request - 999 AST cancel validation request to CAS 
 <br>
 <br>
 <a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" width="1200"></img></a>

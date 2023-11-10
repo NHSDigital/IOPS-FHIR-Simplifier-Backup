@@ -6,3 +6,7 @@
   filename: Appointment-Management.page.md
 - name: Cancellation
   filename: Cancellation.page.md
+- name: Booking Cancellation
+  filename: Booking-Cancellation.page.md
+- name: Referral Cancellation
+  filename: Referral-Cancellation.page.md
