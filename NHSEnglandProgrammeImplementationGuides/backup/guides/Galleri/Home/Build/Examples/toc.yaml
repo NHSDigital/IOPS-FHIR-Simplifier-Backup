@@ -1,4 +1,10 @@
 - name: Index
   filename: Index.page.md
-- name: Example - An active xyz
-  filename: Example---An-active-xyz.page.md
+- name: Example - Cancer Markers Detected
+  filename: Example---Cancer-Markers-Detected.page.md
+- name: Example - Amended Test
+  filename: Example---Amended-Test.page.md
+- name: Example - Corrected Test
+  filename: Example---Corrected-Test.page.md
+- name: Example - Cancelled Test
+  filename: Example---Cancelled-Test.page.md

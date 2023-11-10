@@ -1,6 +1,6 @@
 ## What is [xyz]?
 
-This implementation guide provides guidance on implementing the Galleri FHIR R4 message. 
+This implementation guide provides guidance on implementing the Multi-cancer Early Detection Test Report FHIR R4 message. 
 
 For further details refer to {{pagelink:Home/Introduction}}
 
