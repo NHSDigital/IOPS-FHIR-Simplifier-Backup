@@ -1,2 +1,18 @@
+- name: UKCore-Bundle
+  filename: UKCore-Bundle.page.md
+- name: UKCore-MessageHeader
+  filename: UKCore-MessageHeader.page.md
+- name: UKCore-Organization
+  filename: UKCore-Organization.page.md
+- name: UKCore-Practitioner
+  filename: UKCore-Practitioner.page.md
 - name: UKCore-Patient
   filename: UKCore-Patient.page.md
+- name: UKCore-ServiceRequest
+  filename: UKCore-ServiceRequest.page.md
+- name: UKCore-DiagnosticReport
+  filename: UKCore-DiagnosticReport.page.md
+- name: UKCore-Observation
+  filename: UKCore-Observation.page.md
+- name: UKCore-Specimen
+  filename: UKCore-Specimen.page.md
