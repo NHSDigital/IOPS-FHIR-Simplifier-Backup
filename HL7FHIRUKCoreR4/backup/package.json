@@ -1,8 +1,8 @@
 {
-  "name": "fhir.r4.ukcore.stu3.currentbuild",
-  "version": "0.0.7-sprint-7-review",
+  "name": "UKCore.R4.STU.02.00.00",
+  "version": "2.0.0",
   "description": "UK Core FHIR profiles and Assets",
-  "author": "HL7 UK",
+  "author": "NHS Digital",
   "fhirVersions": [
     "4.0.1"
   ],
