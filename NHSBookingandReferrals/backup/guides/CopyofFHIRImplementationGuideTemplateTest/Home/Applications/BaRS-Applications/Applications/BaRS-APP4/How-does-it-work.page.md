@@ -2,7 +2,7 @@
 topic: APP4-HowDoesItWork
 ---
 
-## {{page-title}}
+# {{page-title}}
 
 
 This section describes how the primary operations used in this application work. The following  diagram illustrates the workflow and interactions of a request from an 999 AST to a CAS to clinically validate an agreed cohort of ambulance triage outcomes (usually C3/C4), and the subsequent response(s):
@@ -18,7 +18,7 @@ This details a Validation Request into a CAS from a 999 Ambulance Service Trust 
 - The Service ID is used to query the BaRS Endpoint Catalogue to identify the receiving CAS system's endpoint details.
 - The 999-AST will send the Validation Request to the CAS, which includes information required by a CAS Clinician to continue the patent's clinical care. This will also include the JourneyID created at the patient's first contact.
 - The CAS system will acknowledge the Validation Request on receipt.
-- On receipt of the Acknowledgment (synchronous response), the 999 AST CAD may move the case to a 'pending' stack. If the case exceeds the validation breach time before a validation response is received, a fail-safe process should be implemented to ensure that an ambulance is dispatched according to the original triage outcome.
+- On receipt of the Acknowledgment (synchronous response), the 999 AST CAD may move the case to a 'pending' stack. If the case exceeds the validation breach time before a validation response is received, a fail-safe process should be implemented to ensure that an ambulance is dispatched within the time frame determined by the original triage outcome.
 - If additional or changed information about the case is captured by the 999 AST subsequent to sending the Validation Request, but prior to receiving an Interim or Final Validation Response, they may send a Validation Request Update to ensure that the CAS has the most up to date information.
 - If the 999 AST no longer required the CAS to perform the validation, for example the patient has called back and the 999 AST has decided to dispatch an ambulance, they may send a Cancellation.
 - Prior to the CAS consultation the case will typically be posted to a queue on the CAS system for prioritisation, based on the validation breech time in the referral. This is determined locally or nationally from the triage outcome codes.
@@ -42,7 +42,7 @@ To support the workflows for this application of the standard the operations tha
 
 <hr>
 
-### Make a Validation Request
+## Make a Validation Request
 
 Making a Validation Request for this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
 
@@ -67,8 +67,8 @@ In addition to that the specific workflow parameters that are required are as fo
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan=6>Referral Request (New)@@</td>
-                        <td rowspan=6>POST /$process-message{servicerequest-request}</td>
+                        <td rowspan=6>Validation Request (New)</td>
+                        <td rowspan=6>POST /$process-message{validation-request}</td>
                         <td rowspan=6>ServiceRequest (active)</td>
                         <td>MessageHeader (EventCoding) = servicerequest-request</td>
                     </tr>
@@ -79,10 +79,10 @@ In addition to that the specific workflow parameters that are required are as fo
                         <td>ServiceRequest (Status) = active</td>
                     </tr>
                     <tr>
-                        <td>ServiceRequest (Category) = referral</td>
+                        <td>ServiceRequest (Category) = validation</td>
                     </tr>
                     <tr>
-                        <td>Encounter (Status) = triaged/finished</td>
+                        <td>Encounter (Status) = triaged</td>
                     </tr>
                     <tr>
                         <td><b>All resources to include 'lastUpdated' value, under meta section</b></td>
@@ -113,7 +113,7 @@ X-Request-Id = <GUID_000001>
 X-Correlation-Id = <GUID_000002>
 ```
 
-### Cancel a Referral (Validation Request)
+## Cancel Validation Request
 
 To cancel a Validation Request this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as described on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned or completed. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
@@ -141,14 +141,14 @@ In addition the specific workflow parameters that are required are as follows:
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Get Referral</td>
+                        <td>Get Validation</td>
                         <td>GET /ServiceRequest{id}</td>
                         <td>n/a</td>
                         <td>n/a</td>
                     </tr>
                     <tr>
-                        <td rowspan=8>Referral Request (Cancel) @@@</td>
-                        <td rowspan=8>POST /$process-message{servicerequest-request}</td>
+                        <td rowspan=8>Validation Request (Cancel)</td>
+                        <td rowspan=8>POST /$process-message{validation-request}</td>
                         <td rowspan=8>ServiceRequest (revoked)</td>
                         <td>MessageHeader (EventCoding) = servicerequest-request</td>
                     </tr>
@@ -156,13 +156,13 @@ In addition the specific workflow parameters that are required are as follows:
                         <td>MessageHeader (ReasonCode) = update</td>
                     </tr>
                     <tr>
-                        <td>ServiceRequest (Status) = revoked @@Entered-in-error@@??</td>
+                        <td>ServiceRequest (Status) = revoked/entered-in-error</td>
                     </tr>
                     <tr>
-                        <td>ServiceRequest (Category) = referral</td>
+                        <td>ServiceRequest (Category) = validation</td>
                     </tr>
                     <tr>
-                        <td>Encounter (Status) = triaged/finished</td>
+                        <td>Encounter (Status) = triaged</td>
                     </tr>
                     <tr rowspan=3>
                         <td>
@@ -215,7 +215,7 @@ X-Request-Id = <GUID_000003>
 X-Correlation-Id = <GUID_000002>
 ```
 
-### Bundle Processing - detailed
+## Bundle Processing - detailed
 
 Below is a pseudo code example of how a bundle could be processed based on the above workflow variables.
 
@@ -463,7 +463,3 @@ Receive_Request
 <br>
 
 <hr>
-
-<!--
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/WorkflowStatus-1.0.0.png)
--->

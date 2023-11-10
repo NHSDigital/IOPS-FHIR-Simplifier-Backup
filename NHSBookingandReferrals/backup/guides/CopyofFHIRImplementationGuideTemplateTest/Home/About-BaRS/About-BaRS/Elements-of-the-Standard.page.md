@@ -1,4 +1,4 @@
-# {{page-title}}
+  # {{page-title}}
 
 BaRS is made up of a set of documentation and optional infrastructure components
 
