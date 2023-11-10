@@ -24,7 +24,7 @@ https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-ObservationInterpretation-1
 ```xml
 <interpretation>
     <coding>
-        <system value="http://hl7.org/fhir/v2/0078"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0078"/>
         <code value="A"/>
         <display value="Abnormal"/>
     </coding>
