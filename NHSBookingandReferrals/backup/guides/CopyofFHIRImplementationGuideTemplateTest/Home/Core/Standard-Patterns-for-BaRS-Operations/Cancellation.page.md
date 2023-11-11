@@ -1,32 +1,35 @@
 ## {{page-title}}
 
-The ability to reverse a digital request, by performing a cancellation, whether booking or referral, is a core workflow within BaRS. It completes the digital workflow offering and removes the need for manual intervention by service providers.
+The ability to reverse a digital request, by performing a cancellation, whether booking or referral, is a core workflow within BaRS. It completes the digital workflow, support genuine interoperability and removes the need for manual intervention by service providers.
 
 Cancellation, for any referal type or booking, is a stripped back request, containing only the specific resources a Receiver requires to the fulfil the request. There are separate MessageDefinitions involved when engaged in [referral](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionservicerequestrequestcancelled/~json) and [booking](https://simplifier.net/NHSBookingandReferrals/MessageDefinition-BARSMessageDefinitionBookingRequestCancelled/~json) cancellation workflows.
 
-****Perform a read***
+A prerequisite when performing a cancellation of any request is to perform a read (GET) of either the booking or referal to be cancelled. The Sender **must** only making a cancellation request if the entity has a status which mean it is still current; 'active' in the case of a referral (ServiceRequest) and 'booked' for a booking (Appointment). This ensures the Sender has the latest version of the entity they are about to change or, if the it is no longer current (because its been actioned by the Receiver), allows the Sender to advise the end user so an alternative (often manual) workflow can be started. The Receiver **must not** process a cancellation request for a booking or referral which is not current, instead they **must** return an appropriate {{pagelink:Home/Core/Error-Handling, text:error}} response.
 
 ## Cancellation Referral Request Payload
 
-### MessageHeader Resource
+#### MessageHeader Resource
 The MessageHeader resource is a technical requirement of the payload (bundle) to indicate how to process the request for cancellation. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
 
-Any Receiver of the request **must** first check the *MessageHeader.destination* and verify the *MessageHeader.destination.receiver.reference* refers to their Organisation. The *MessageHeader.destination.endpoint* relates to the Healthcare Service expected to process the request. 
+Any Receiver of the request **must** first check the *MessageHeader.destination* and verify the *MessageHeader.destination.receiver.reference* refers to their Organisation. The *MessageHeader.destination.endpoint* **must** relate to the Healthcare Service expected to process the request. 
 
 The type of request **must** be checked next and there are three important elements which drive workflow: 
 * **eventCoding** - determines the type of request. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-events-bars).
 * **reasonCode** - indicates whether the message is new or an update to something the Receiver already has. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-reason-bars) and **must** always be 'update' for cancellation.
 * **definition** - specifies the [MessageDefinition](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=MessageDefinition&sortBy=DisplayName) the request **must** adhere to.
 
-Once the above checks have been made the detail of the request can start to be unpacked and processed. The *MessageHeader.focus* provides the key to doing this. It indicates the lens through which the request payload (bundle) **must** be interpreted. In a referral request canellation this will always point to the ServiceRequest. Most other FHIR resources in the payload will link to or from the 'focus' resource. 
+Once the above checks have been made the detail of the request can start to be unpacked and processed. The *MessageHeader.focus* provides the key to doing this. It indicates the lens through which the request payload (bundle) **must** be interpreted. In a canellation referral request this will always point to the ServiceRequest. Most other FHIR resources in the payload will link to or from the 'focus' resource. 
 
 
-### ServiceRequest Resource
+#### ServiceRequest Resource
 The 'focus' resource in a cancellation referral request is the ServiceRequest resource. When the payload is created by the Sender and processed by the Receiver, this is the starting point from which it (the bundle) is understood and provides either the detail or references to all key FHIR resources, for example, the Patient. The guidance for this resource below provides more granular, element level, detail. 
 
-When a Receiver processes the cancellation referral request, the two key elements used are the *ServiceRequest.id* and *ServiceRequest.status*. The *.id* **must** already exist as an 'active' (status) ServiceRequest on the Receiver system (this **must** have been confirmed by a prior read (GET) by the Sender) and the *.status*, in the request, **must** either by 'revoked' or 'entered-in-error'. 
+When a Receiver processes the cancellation referral request, the two key elements used are the *ServiceRequest.id* and *ServiceRequest.status*. The *.id* **must** already exist as an 'active' (status) ServiceRequest on the Receiver system (this **must** have been confirmed by a prior read (GET) by the Sender) and the *.status*, in the request, **must** either be 'revoked' or 'entered-in-error'. There is a distinct difference between these two *ServiceRequest.status(es)*. 'Revoked' **should** be used to denote the original request was intentional but, due to a change in circumstances, is no longer valid, whereas, 'entered-in-error' **should** be used when original request was in error. The purpose of this differentiation is to allow service providers to accurately report the reason for cancellations. 
 
-## Payload for Referral Cancellation Request 
+#### Patient Resource
+Key patient demographics **should** be cross-referenced between the current 'active' referral and incoming cancellation referral request to ensure validity.
+
+### Payload for Referral Cancellation Request 
 
 This payload is used to transmit all the necessary information that is required to transmit the cancellation of a Referral.
 
@@ -265,9 +268,40 @@ This payload is used to transmit all the necessary information that is required 
 </details>
 <p>
 
+### Entity Relationship Diagram - Cancellation Referral Request 
+
+<br>
+<br>
+The below diagram details the Cancellation Referral Request 
+<br>
+<br>
+<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMapCancellationReferralRequest-1.1.0.svg" width="1200"></img></a>
+<br>
+<br>
+
 ## Cancellation Booking Request Payload
 
-## Payload for Referral Cancellation Request 
+#### MessageHeader Resource
+The MessageHeader resource is a technical requirement of the payload (bundle) to indicate how to process the request for cancellation. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
+
+Any Receiver of the request **must** first check the *MessageHeader.destination* and verify the *MessageHeader.destination.receiver.reference* refers to their Organisation. The *MessageHeader.destination.endpoint* **must** relate to the Healthcare Service expected to process the request. 
+
+The type of request **must** be checked next and there are three important elements which drive workflow: 
+* **eventCoding** - determines the type of request. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-events-bars).
+* **reasonCode** - indicates whether the message is new or an update to something the Receiver already has. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-reason-bars) and **must** always be 'update' for cancellation.
+* **definition** - specifies the [MessageDefinition](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=MessageDefinition&sortBy=DisplayName) the request **must** adhere to.
+
+Once the above checks have been made the detail of the request can start to be unpacked and processed. The *MessageHeader.focus* provides the key to doing this, indicating the lens through which the request payload (bundle) **must** be interpreted. In a canellation booking request this will always point to the Appointment. Most other FHIR resources in the payload will link to or from the 'focus' resource. 
+
+#### Appointment Resource
+The 'focus' resource in a cancellation booking request is the Appointment resource. When the payload is created by the Sender and processed by the Receiver, this is the starting point from which it (the bundle) is understood and provides either the detail or references to all key FHIR resources, for example, the Patient. The guidance for this resource below provides more granular, element level, detail. 
+
+When a Receiver processes the cancellation booking request, the two key elements used are the *Appointment.id* and *Appointment.status*. The *.id* **must** already exist as a 'booked' (status) booking on the Receiver system (this **must** have been confirmed by a prior read (GET) by the Sender) and the *.status*, in the request, **must** be 'cancelled'. No other status is valid in the cancellation booking request. 
+
+#### Patient Resource
+Key patient demographics **should** be cross-referenced between the current 'booked' (status) booking and incoming cancellation booking request to ensure validity.
+
+### Payload for Booking Cancellation Request 
 
 This payload is used to transmit all the necessary information that is required to transmit the cancellation of a Booking.
 
@@ -491,3 +525,14 @@ This payload is used to transmit all the necessary information that is required 
 <br>
 
 <hr>
+
+### Entity Relationship Diagram - Cancellation Booking Request 
+
+<br>
+<br>
+The below diagram details the Cancellation Booking Request 
+<br>
+<br>
+<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMapCancellationBookingRequest-1.1.0.svg" width="1200"></img></a>
+<br>
+<br>
