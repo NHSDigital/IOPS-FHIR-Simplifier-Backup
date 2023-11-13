@@ -5,18 +5,13 @@
 
 ### Message a Multi-cancer Early Detection Test Report
 
-<br>
-<br>
+The Multi-cancer Early Detection Test Report is compiled by the screening organisation and sent to NHS England's data platform using Message Exchange for Social Care and Health [(MESH)](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh)
+<br/><br/>
+On receipt of the message, NHS England will perform "technical" validation of the message, and either send a positve acknowledgement that the message has been accepted, or an OperationOutcome detailing why the message has been rejected.
+<br/><br/>
+Details of the acknowledgement framework including error codes, can be found [here](https://simplifier.net/guide/acknowledgement-framework?version=current)
+<br/><br/>
 
-<br>
-<br>
-
-| Outcome         | Response                       |
-| ----------- | ------------------------  |
-| Record found       | SearchSet Bundle - {{pagelink:Home/Examples/Example---FGM-flag-found.page.md}}|
-| No record found       | SearchSet Bundle - {{pagelink:Home/Examples/Example---FGM-flag-not-found.page.md}}|
-| Error or validation failure      | OperationOutcome - {{pagelink:Home/Build/Errorhandling.page.md}}|
-
-<br>
+{{render:mced-interaction-diagram}}
 
 
