@@ -119,6 +119,11 @@ The following are example usage scenarios for the UK Core Observation Blood Gluc
 - Query and retrieve a patient's results of blood glucose tests
 - Record or update a patient's blood glucose levels
 
+#### Example for Continuous Glucose Monitoring
+A continuous or flash glucose monitor will have an Observation resource created for each individual reading. All readings can be retrieved by searching on the `Obsevation.subject` and `Obsevation.device`.
+
+{{render:CGM}}
+
 <hr class="thickline">
 
 ## Profile Specific Implementation Guidance: ##
