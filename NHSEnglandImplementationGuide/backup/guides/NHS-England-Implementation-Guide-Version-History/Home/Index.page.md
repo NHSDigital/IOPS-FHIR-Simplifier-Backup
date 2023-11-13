@@ -11,10 +11,10 @@ The following versions of NHS England Implementation Guide have been published:
 <th class="width10">Date</th>
 <th class="width10">IG Version</th>
 <th class="width10">FHIR Version</th>
-<th class="width10">UK Core Version</th>
 <th class="width40">Description</th>
-<th class="width10">Guide</th>
-<th class="width10">Package</th>
+<th class="width10">NHS England Guide</th>
+<th class="width10">NHS England Package</th>
+<th class="width10">UK Core Package</th>
 </tr>
 <tr>
 <th colspan="7">Current Versions</th>
@@ -26,18 +26,18 @@ The following versions of NHS England Implementation Guide have been published:
 <td>9th November 2023</td>
 <td>1.0.0</td>
 <td>4.0.1</td>
-<td>STU3 0.0.6</td>
 <td>Release of NHS England Implementation Guide 1.0.0 - STU1. This was subject to Clinical and Technical Assurance Sprint 1.</td>
 <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1?version=1.0.0">Home Page</a></td>
 <td><a href="https://simplifier.net/packages/fhir.r4.nhsengland.stu1/1.0.0">fhir.r4.nhsengland.stu1 1.0.0</a></td>
+<td><a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release">fhir.r4.ukcore.stu3.currentbuild 0.0.6-pre-release</a></td>
 </tr>
 <tr>
 <td>27th October 2023</td>
 <td>1.0.0-sprint-1-review</td>
 <td>4.0.1</td>
-<td>STU3 0.0.6</td>
 <td>Release of NHS England Implementation Guide 1.0.0-sprint-1-review. This was released for the purpose of review in Clinical and Technical Assurance Sprint 1.</td>
 <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1?version=1.0.0-sprint-1-review">Home Page</a></td>
 <td>Unreleased</td>
+<td>N/A</td>
 </tr>
 </table>
