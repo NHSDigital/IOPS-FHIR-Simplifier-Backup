@@ -23,7 +23,7 @@ The following table outlines the valid combinations of SNOMED codes which can be
             <td>Systolic arterial pressure</td>
             <td>72313002</td>
             <td>Diastolic arterial pressure</td>
-            <td>1091811000000100</td>
+            <td>1091811000000102</td>
         </tr>
         <tr>
             <td></td>
