@@ -14,5 +14,5 @@ The page lists the profiles used by [xyz] FHIR R4 API:
 - {{pagelink:Home/FHIR-Assets/All-Assets/Profiles/UKCore-Observation.page.md}}
 - {{pagelink:Home/FHIR-Assets/All-Assets/Profiles/UKCore-Specimen.page.md}}
 
-<br>The profiles are provided for implementation guidance:
-- it is not neccessary to reference the profile in the Resource.meta. Reference: {{pagelink:Home/Examples}}
+<br>The profiles are provided for implementation guidance:<br/><br/>
+Note - it is not neccessary to reference the profile in the Resource.meta.

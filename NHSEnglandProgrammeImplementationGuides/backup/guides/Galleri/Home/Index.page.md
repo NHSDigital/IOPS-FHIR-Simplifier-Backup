@@ -1,10 +1,8 @@
-## What is [xyz]?
+## What is Multi-cancer Early Detection?
 
 This implementation guide provides guidance on implementing the Multi-cancer Early Detection Test Report FHIR R4 message. 
 
-For further details refer to {{pagelink:Home/Introduction}}
-
-Refer to NHS conditions for information <a href='' class="external">[xyz]</a>
+A Multi-cancer Early Detection Test is based on a blood sample that is analysed for cancer markers. If markers are detected, the test can predict the probable body site that is the cancer origin.
 
 
 
