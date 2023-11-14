@@ -16,7 +16,7 @@ There are multiple ways to interact with the UK Core FHIR Technical Implementati
 On chat.fhir.org, we have created a new stream "UK Core FHIR Technical Implementation Group", where you can interact with fellow TIG members, as well as the UK Core Development Team. 
 <br>
 <br>
-Issues can be raised directly with UK Core resources on Simplifier, following the guidance here:
+Issues can be raised directly with UK Core resources on Simplifier, following the guidance here: {{pagelink: Requests--Issues-and-Feedback}}
 <br>
 <br>
 And for general enquries, you can email the UK Core Development Team here: <a href="mailto:interoperabilityteam@nhs.net?Subject=UK Core FHIR Technical Implementation Group">interoperabilityteam@nhs.net</a>
