@@ -163,7 +163,7 @@
                   <reference value="urn:uuid:7671cc7e-9b99-4ffa-9ac6-1b634a2c91cc" />
                 </entry>
                 <entry>
-                  <reference value="urn:uuid:7671cc7e-9b99-4ffa-9ac6-1b634a2c91cc" />
+                  <reference value="urn:uuid:9b4cead7-8367-45ab-a6db-9b15cdfe8683" />
                 </entry>
                 <entry>
                   <reference value="urn:uuid:f55997bb-ff2c-43a4-b38e-7f8f68f43a25" />
@@ -779,7 +779,7 @@
           <fullUrl value="urn:uuid:f55997bb-ff2c-43a4-b38e-7f8f68f43a25" />
           <resource>
             <ClinicalImpression>
-              <id value="9b4cead7-8367-45ab-a6db-9b15cdfe8683" />
+              <id value="f55997bb-ff2c-43a4-b38e-7f8f68f43a25" />
               <meta>
                 <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ClinicalImpression-1" />
