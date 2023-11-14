@@ -11,8 +11,8 @@
           <display value="Event Notification" />
         </eventCoding>
         <destination>
-          <name value="GRAIL (UK)" />
-          <endpoint value="${GrailMeshMailboxId}" />
+          <name value="Destination Org Ltd" />
+          <endpoint value="${DestinationMeshMailboxId}" />
         </destination>
         <source>
           <endpoint value="${NhsMeshMailboxId}" />
