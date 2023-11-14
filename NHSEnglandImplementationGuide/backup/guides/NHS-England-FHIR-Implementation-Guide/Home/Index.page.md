@@ -11,31 +11,17 @@ Please click [here](https://simplifier.net/guide/nhs-england-implementation-guid
 <table class="regular assets" style="width:100%" title="NHS England Profile list">
  <thead>
    <tr>
-     <th class="width33">Female Genital Mutilation (FGM)</th>
-     <th class="width33">Child Protection Information Sharing (CP-IS)</th>
+     <th class="width33">Organisation Data Service (ODS)</th>
+     <th class="width33">GP Connect Update Record </th>
   </tr>
  </thead>
  <tbody>
    <tr>
     <td>
-      {{pagelink:CodeSystem-England-FGMRemovalReason, text:CodeSystem-England-FGMRemovalReason}} 
+      TBC
     </td>
     <td>
-      {{pagelink:ValueSet-England-ChildProtectionPlan, text:ValueSet-England-ChildProtectionPlan}} 
-    </td>
-   </tr>
-   <tr>
-    <td>
-      {{pagelink:Extension-England-FlagRemovalReason, text:Extension-England-FlagRemovalReason}} 
-    </td>
-    <td>
-    </td>
-   </tr>
-   <tr>
-    <td>
-      {{pagelink:ValueSet-England-FlagRemovalReason, text:ValueSet-England-FlagRemovalReason}} 
-    </td>
-    <td>
+      TBC 
     </td>
    </tr>
    </tbody>
