@@ -1,8 +1,28 @@
-## What is [xyz]?
+## What is Organisation Data Service (ODS)?
 
-This implementation guide provides guidance on implementing the [xyz] FHIR R4 API. For further details refer to {{pagelink:Home/Introduction}}
+This implementation guide provides guidance on implementing the Organisation Data Service FHIR R4 API. For further details refer to {{pagelink:Home/Introduction}}
 
-Refer to NHS conditions for information <a href='' class="external">[xyz]</a>
+The Organisation Data Service (ODS) issues and manages unique identification codes (ODS codes) and accompanying reference data for organisations that interact with any area of the health and social care system. 
+
+
+
+
+## What is Organisation Reference Data?
+
+Data that is published by ODS is referred to as Organisation Reference Data (ORD) and it is used in almost every IT system across the NHS to support key functionality such as messaging, referrals, financial transactions, access control, reporting and analytics.
+
+Primarily, ORD includes organisations and their sites that are based in England, but we also publish data for some organisations based in Wales, Scotland, Isle of Man, Channel Islands and Northern Ireland. ORD also includes postcode level data that defines key health and social care geographic boundaries.
+
+Organisation and Site records published within the Organisation Resource are distinguished by a Record Class and are currently defined as follows:
+
+-	Organisation: One or more people with a common purpose of function and whose activities encompass the funding, direction or provision of health or social care and support services; this includes public, private or voluntary sector Organisations.
+
+-	Site: The primary function of an ODS Site is to identify an association between an Organisation and a place with which it is affiliated. All Site entities have an association to an Org and the Site record is generally real estate that the Org owns, provides a service at, or has some staff based within. Site does not provide unique identifiers for locations at present. Multiple Site instances can point to the same physical place if more than one Org owns or provides patient care at that place; in this instance each Org may have its own Site to reflect its affiliation with the same physical place (e.g. a hospital). Note: Work is planned to review and reclassify Sites as ‘Locations’ or ‘Services’ as appropriate, which will improve and refine the Organisation resource in future.
+
+
+
+
+Refer to NHS conditions for information <a href='https://digital.nhs.uk/services/organisation-data-service' class="external">[ODS]</a>
 
 
 
