@@ -343,7 +343,7 @@
               <code>
                 <coding>
                   <system value="http://snomed.info/sct" />
-                  <code value="72313002" />
+                  <code value="163020007" />
                   <display value="On examination - blood pressure reading" />
                 </coding>
                 <text value="On examination - blood pressure reading" />
