@@ -20,10 +20,11 @@ Additional guidance is available on <a href="https://simplifier.net/guide/UK-Cor
 <table id="valuesetlist" title= "List of all ValueSets and CodeSystems">
 <thead>
 <tr>
-<th class="width45" scope="col">ValueSet</th>
-<th class="width05" scope="col">Status</th>
+<th class="width40" scope="col">ValueSet</th>
+<th class="width10" scope="col">Status</th>
 <th class="width20" scope="col">Context of Use</th>
-<th class="width25" scope="col">Bound in Profile/Extension</th>
+<th class="width20" scope="col">Bound in Profile/Extension</th>
+<th class="width10" scope="col">C&TA Sprint</th>
 </tr>
 </thead>
 <tbody>
@@ -33,22 +34,24 @@ Additional guidance is available on <a href="https://simplifier.net/guide/UK-Cor
 <td>active</td>
 <td><a href='https://www.hl7.org/fhir/r4/careteam.html' target="_blank">CareTeam</a></td>
 <td></td>
+<td>1</td>
 </tr>
 <tr>
-<td colspan="4">Composed of CodeSystem <code>http://snomed.info/sct</code></td>
-</tr>
-<tr>
-<td colspan="4"  class="override"></td>
-</tr>
+<td colspan="5">Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 
+</tr>
+<tr>
+<td colspan="5"  class="override"></td>
+</tr>
 <tr>
 <td>{{pagelink:ValueSet-England-FlagRemovalReason}}</td>
 <td>active</td>
 <td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Flag?version=current' target="_blank">Flag</a></td>
 <td></td>
+<td>1</td>
 </tr>
 <tr>
-<td colspan="4">Composed of CodeSystem {{pagelink:CodeSystem-England-FGMRemovalReason}}</td>
+<td colspan="5">Composed of CodeSystem {{pagelink:CodeSystem-England-FGMRemovalReason}}</td>
 </tr>
 </tbody>
 </table>

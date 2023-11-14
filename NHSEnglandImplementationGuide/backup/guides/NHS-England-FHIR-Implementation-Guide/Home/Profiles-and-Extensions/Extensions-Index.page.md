@@ -17,6 +17,8 @@ Additional guidance is available on <a href="https://simplifier.net/guide/UK-Cor
 <th>Status</th>
 <th>Context of Use</th>
 <th>Related Profile</th>
+<th>Modifier Extension</th>
+<th>C&TA Sprint</th>
 </tr>
 
 <tr>
@@ -24,6 +26,8 @@ Additional guidance is available on <a href="https://simplifier.net/guide/UK-Cor
 <td>active</td>
 <td>Flag</td>
 <td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Flag?version=current' target="_blank">UK Core Flag</a></td>
+<td>NO</td>
+<td>1</td>
 </tr>
 </table>
 
