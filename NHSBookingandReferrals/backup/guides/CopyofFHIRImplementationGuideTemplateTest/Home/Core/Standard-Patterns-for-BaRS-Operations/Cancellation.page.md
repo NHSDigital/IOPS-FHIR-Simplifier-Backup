@@ -1,3 +1,8 @@
+---
+topic: core-SPCancellation
+---
+
+
 ## {{page-title}}
 
 The ability to reverse a digital request, by performing a cancellation, whether booking or referral, is a core workflow within BaRS. It completes the digital workflow, support genuine interoperability and removes the need for manual intervention by service providers.
@@ -267,6 +272,7 @@ This payload is used to transmit all the necessary information that is required 
 
 </details>
 <p>
+<br>
 
 ### Entity Relationship Diagram - Cancellation Referral Request 
 
@@ -274,10 +280,10 @@ This payload is used to transmit all the necessary information that is required 
 <br>
 The below diagram details the Cancellation Referral Request 
 <br>
-<br>
 <a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMapCancellationReferralRequest-1.1.0.svg" width="1200"></img></a>
 <br>
 <br>
+<hr>
 
 ## Cancellation Booking Request Payload
 
@@ -524,8 +530,6 @@ This payload is used to transmit all the necessary information that is required 
 
 <br>
 
-<hr>
-
 ### Entity Relationship Diagram - Cancellation Booking Request 
 
 <br>
@@ -536,3 +540,4 @@ The below diagram details the Cancellation Booking Request
 <a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMapCancellationBookingRequest-1.1.0.svg" width="1200"></img></a>
 <br>
 <br>
+<hr>

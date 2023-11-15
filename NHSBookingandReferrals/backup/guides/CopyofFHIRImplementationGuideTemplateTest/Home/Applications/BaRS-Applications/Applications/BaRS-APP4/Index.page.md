@@ -5,7 +5,7 @@ topic: Application4
  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This Application is currently under development <hr><p> This is a preview of a developing documentation for information only. It is not intended to be used until the completed v1.0.0 Application is released<p> If you are interested in developing a BaRS compliant solution for these use cases right now, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch</div>
 
 
-# Validation from 999 to CAS (Application 4)
+# Referral into UEC for Validation (Application 4)
 
 ## Use cases supported
 
