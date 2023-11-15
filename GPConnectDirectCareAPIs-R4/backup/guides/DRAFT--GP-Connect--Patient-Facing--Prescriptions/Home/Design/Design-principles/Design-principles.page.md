@@ -36,8 +36,8 @@ Provider systems must also demonstrate standards compliance as part of the NHS D
 * All artefacts related to assurance and testing should be made available as part of the ecosystem (public domain) prior to engaging in a formal NHS Digital assurance process
 
 ### **Information Governance Principles**
-Your organisation must complete the [Data Security and Protection Toolkit](https://www.dsptoolkit.nhs.uk/) (DSPT) for each NHS Digital Service being integrated and obtain at least a 'Minimum Standards Met' rating.
+Your organisation must complete the [Data Security and Protection Toolkit](https://www.dsptoolkit.nhs.uk/) (DSPT) for each NHS England Service being integrated and obtain at least a 'Minimum Standards Met' rating.
 
-The Data Security and Protection Toolkit (DSPT) is an online self-assessment tool for organisations to measure their performance against the National Data Guardian’s 10 data security standards. The Toolkit must be completed at least every 12 months (financial year) and MUST cover the entirety of your Health IT System (Product) and all the NHS Digital Services covered by this SCAL.  **Each time a new NHS Digital Service is integrated, the DSPT must be repeated** because the compliance requirements and declarations must cover the end-to-end functionality of your Product. 
+The Data Security and Protection Toolkit (DSPT) is an online self-assessment tool for organisations to measure their performance against the National Data Guardian’s 10 data security standards. The Toolkit must be completed at least every 12 months (financial year) and MUST cover the entirety of your Health IT System (Product) and all the NHS England Services covered by this SCAL.  **Each time a new NHS England Service is integrated, the DSPT must be repeated** because the compliance requirements and declarations must cover the end-to-end functionality of your Product. 
 
 All organisations that have access to NHS patient data and systems must use this Toolkit to provide assurance that they are practising good data security and that personal information is handled correctly.  
