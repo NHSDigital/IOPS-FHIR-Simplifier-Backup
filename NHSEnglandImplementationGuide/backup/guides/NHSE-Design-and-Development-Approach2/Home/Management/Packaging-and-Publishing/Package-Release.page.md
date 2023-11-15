@@ -13,8 +13,7 @@ Note that the following must be done within a virtual machine due to NHS firewal
 
 1. Within the Simplifier Project reimport Github.
 
-
-Image
+{{render:Reimport}}
 
 2. Within the same menu, check the GitHub repository settings.
 
@@ -35,3 +34,8 @@ Exclude examples:
 
  Exclude all capability statement files: 
 !CapabilityStatement/*
+
+
+This ensures that the capability statement is not copied into the npm package. If the textbox had to be updated open the file manager, search for “capability” and if there delete.
+
+{{render:FileManager}}
