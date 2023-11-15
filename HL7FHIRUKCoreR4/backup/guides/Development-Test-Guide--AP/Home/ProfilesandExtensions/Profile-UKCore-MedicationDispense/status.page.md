@@ -1,43 +1,13 @@
 ## `status` 
 
-<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert">
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreMedicationDispense'
-select name,
-join for snapshot.element 
-select
- id,short,definition,comment,
- Minimum_Cardinality:min,
- Maximum_Cardinality:max
-where id = 'MedicationDispense.partOf'
-```
-<table class="baseFhir" title="Element Details">
-<tr>
-<td class="width40"><b>Short Description</b></td>
-<td class="width60">preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown</td>
-</tr>
-<tr>
-<td class="width40"><b>Definition</b></td>
-<td class="width60">A code specifying the state of the set of dispense events.</td>
-</tr>
-<tr>
-<td class="width40"><b>Comment</b></td>
-<td class="width60">This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.</td>
-</tr>
-<tr>
-<td class="width40"><b>Cardinality</b></td>
-<td class="width60">1..1</td>
-</tr>
-<tr>
-<td class="width40"><b>Data Type</b></td>
-<td class="width60">code: http://hl7.org/fhir/ValueSet/medicationdispense-status|4.0.1 (required)</td>
-</tr>
-</table>
+<script>
+    findAndCopyDictionary('MedicationDispense.status')
+</script>
 
+<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert">
+<table class="baseFhir" title="Element Details">
+
+</table>
 </div>
 </div>
 
