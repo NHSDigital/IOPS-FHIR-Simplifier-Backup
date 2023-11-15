@@ -10,18 +10,18 @@
 |report.creationDateTime|1..1|DiagnosticReport.issued|Using the appropriate [dateTime](http://hl7.org/fhir/datatypes.html#dateTime) format
 |report.reportType|1..1|DiagnosticReport.code|A fixed value of<br/>system "http://snomed.info/sct"<br/>code "721981007"<br/>display "Diagnostic studies report"
 |report.disclaimer|1..1|DiagnosticReport.conclusion|A fixed disclaimer string
-|patient.participantId|1..1|Patient.identifier|The patient identifier used by Grail<br/>system "https://grail.com/patient-id"
+|patient.participantId|1..1|Patient.identifier|The patient identifier used by the screening organisation
 |patient.age|||NOT CURRENTLY IN MESSAGE
 |patient.biologicalSex|||NOT CURRENTLY IN MESSAGE
-|sample.orderingGrailId|1..1|Specimen.identifier|The speciment identifier used by Grail<br/>system "http://grail.com/grail-id"
+|sample.orderingId|1..1|Specimen.identifier|The speciment identifier used by the screening organisation
 |sample.sampleType|1..1|Specimen.type|A fixed value of<br/>system "http://snomed.info/sct"<br/>code "119297000"<br/>display "Blood specimen"
 |sample.collectionDate|1..1|Specimen.collection.collectionDateTime|Using the appropriate [dateTime](http://hl7.org/fhir/datatypes.html#dateTime) format
 |orderingProvider.fullName|1..1|Organization.name|ODS organization name NHS England. Name fixed to "NHS ENGLAND - X26"
 |orderingProvider.credentials|1..1|Organization.identifier|A fixed value of<br/>system "https://fhir.nhs.uk/Id/ods-organization-code"<br/>value "X26"
 |orderingProvider.location|1..1|Organization.address|ODS organization address for NHS England. Address fixed to line "THE LEEDS GOVERNMENT HUB"<br/>line "7-8 WELLINGTON PLACE"<br/>city "LEEDS"<br/>postalCode "LS1 4AP"<br/>country "ENGLAND"
 |testResult.cancerSignalResult|0..1|Observation.valueCodeableConcept.coding|The cancer signal result<br/>system "https://grail.com/test-result" code (one of) "CANCER_SIGNAL_DETECTED", "NO_CANCER_SIGNAL_DETECTED" display (one of) "Cancer signal detected", "No cancer signal detected"
-|testResult.origin|0..*|Observation.component.valueCodeableConcept|As part of the Observation for the primary site, that has an Observation.code.coding.display "Multi-cancer early detection predicted highest probability cancer signal origin by machine learning-based classifier"<br/>See below for SNOMED CT [body site mapping](#BodySiteMap)
-|testResult.secondOrigin|0..*|Observation.component.valueCodeableConcept|As part of the Observation for the primary site, that has an Observation.code.coding.display "Multi-cancer early detection predicted second highest probability cancer signal origin by machine learning-based classifier"<br/>See below for SNOMED CT [body site mapping](#BodySiteMap)
+|testResult.origin|0..*|Observation.component.valueCodeableConcept|As part of the Observation for the primary site, that has an Observation.code.coding.display "Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier"<br/>See below for SNOMED CT [body site mapping](#BodySiteMap)
+|testResult.secondOrigin|0..*|Observation.component.valueCodeableConcept|As part of the Observation for the primary site, that has an Observation.code.coding.display "Multi-cancer early detection predicted second cancer signal origin by machine learning-based classifier"<br/>See below for SNOMED CT [body site mapping](#BodySiteMap)
 |testResult.labComments|0..1|DiagnosticReport.[extension-DiagnosticReport.note].valueAnnotation.text|An extension to hold lab comments
 |lab.name|1..1|Organization.name|Name of Laboratory where the sample was processed
 |lab.directorFullName|1..1|Organization.contact.name.text|Full name of the Laboratory director of the sample processing lab

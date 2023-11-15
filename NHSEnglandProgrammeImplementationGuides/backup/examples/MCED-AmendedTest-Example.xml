@@ -1,413 +1,411 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="MCED-AmendedTest-Example"/>
+  <id value="MCED-AmendedTest-Example" />
   <meta>
-    <lastUpdated value="2020-09-20T10:22:00+00:00"/>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle"/>
+    <lastUpdated value="2020-09-20T10:22:00+00:00" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
   </meta>
   <identifier>
-    <system value="https://tools.ietf.org/html/rfc4122"/>
-    <value value="f36927ef-7703-45ed-b0e5-6ec6723cf0f6"/>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="f36927ef-7703-45ed-b0e5-6ec6723cf0f6" />
   </identifier>
-  <type value="message"/>
+  <type value="message" />
   <entry>
-    <fullUrl value="urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0"/>
+    <fullUrl value="urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0" />
     <resource>
       <MessageHeader>
-        <id value="a4409d7c-b613-477c-b623-87e60406c2f0"/>
+        <id value="a4409d7c-b613-477c-b623-87e60406c2f0" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
         </meta>
         <eventCoding>
-          <system value="http://snomed.info/sct"/>
-          <code value="371528001"/>
-          <display value="Pathology report"/>
+          <system value="http://snomed.info/sct" />
+          <code value="371528001" />
+          <display value="Pathology report" />
         </eventCoding>
         <destination>
-          <name value="Executive Agency - NHS ENGLAND - X26"/>
-          <endpoint value="${NhsMeshMailboxId}"/>
+          <name value="Executive Agency - NHS ENGLAND - X26" />
+          <endpoint value="${NhsMeshMailboxId}" />
           <receiver>
-            <reference value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e"/>
+            <reference value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
           </receiver>
         </destination>
         <sender>
-          <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
+          <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
         </sender>
         <source>
-          <endpoint value="${GrailMeshMailboxId}"/>
+          <endpoint value="${SendingMeshMailboxId}" />
         </source>
         <focus>
           <!--Goes to the DiagnosticReport-->
-          <reference value="urn:uuid:3d2f37fd-ca19-4199-9f72-4871cfe12df1"/>
+          <reference value="urn:uuid:3d2f37fd-ca19-4199-9f72-4871cfe12df1" />
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
+    <fullUrl value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
     <resource>
-      <!--GRAIL org-->
+      <!--Screening org-->
       <Organization>
-        <id value="d6407de7-0e86-45eb-93cb-035094aaa49e"/>
+        <id value="d6407de7-0e86-45eb-93cb-035094aaa49e" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         </meta>
         <identifier>
-          <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-          <value value="8KG14"/>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="ABC123" />
         </identifier>
-        <name value="GRAIL BIO UK LTD"/>
+        <name value="Screening Organisation Ltd" />
         <address>
-          <text value="TBD"/>
+          <text value="Screening Organisation Ltd, Floor 1, High Rise, Anytown, AT5 5TT" />
         </address>
       </Organization>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1"/>
+    <fullUrl value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
     <resource>
       <!--performing lab-->
       <Organization>
-        <id value="e78b5421-8d55-4f61-8cbf-bee1c69513f1"/>
+        <id value="e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         </meta>
         <identifier>
-          <system value="http://terminology.hl7.org/NamingSystem/CLIA"/>
-          <value value="${lab.cliaId} 34D2231294"/>
+          <system value="http://terminology.hl7.org/NamingSystem/CLIA" />
+          <value value="${lab.cliaId} ScreeningLab34D2231294" />
         </identifier>
         <identifier>
-          <system value="http://terminology.hl7.org/NamingSystem/CAP"/>
-          <value value="${lab.cap} GRAIL6793"/>
+          <system value="http://terminology.hl7.org/NamingSystem/CAP" />
+          <value value="${lab.cap} ScreeningLab6793" />
         </identifier>
-        <name value="${lab.name} GRAIL, LLC"/>
+        <name value="${lab.name} Screening Lab" />
         <telecom>
-          <system value="phone"/>
-          <value value="+18336942553"/>
+          <system value="phone" />
+          <value value="+18336942553" />
         </telecom>
         <telecom>
-          <system value="fax"/>
-          <value value="+16509999000"/>
+          <system value="fax" />
+          <value value="+16509999000" />
         </telecom>
         <telecom>
-          <system value="email"/>
-          <value value="customerservice@grail.com"/>
+          <system value="email" />
+          <value value="customerservice@screeninglab.com" />
         </telecom>
         <address>
-          <text value="${lab.name}GRAIL RTP, ${lab.location} 4001 E NC 54 Hwy Assembly, Suite 1100"/>
+          <text value="${lab.name}Screening Lab, ${lab.location} The Lab, Anytown, AT66 7TY" />
         </address>
         <contact>
           <name>
-            <text value="Ms Lab DIRECTOR"/>
+            <text value="Ms Lab DIRECTOR" />
           </name>
         </contact>
       </Organization>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e"/>
+    <fullUrl value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
     <resource>
       <!--NHS England-->
       <Organization>
-        <id value="bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e"/>
+        <id value="bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         </meta>
         <identifier>
-          <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-          <value value="X26"/>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="X26" />
         </identifier>
-        <name value="Executive Agency - NHS ENGLAND - X26"/>
+        <name value="Executive Agency - NHS ENGLAND - X26" />
         <address>
-          <line value="THE LEEDS GOVERNMENT HUB"/>
-          <line value="7-8 WELLINGTON PLACE"/>
-          <city value="LEEDS"/>
-          <district value="WEST YORKSHIRE"/>
-          <postalCode value="LS1 4AP"/>
+          <line value="THE LEEDS GOVERNMENT HUB" />
+          <line value="7-8 WELLINGTON PLACE" />
+          <city value="LEEDS" />
+          <district value="WEST YORKSHIRE" />
+          <postalCode value="LS1 4AP" />
         </address>
       </Organization>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01"/>
+    <fullUrl value="urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01" />
     <resource>
       <!--requesting practitioner-->
       <Practitioner>
-        <id value="f25e9d63-6a4e-4de6-b9dc-c912fda62b01"/>
+        <id value="f25e9d63-6a4e-4de6-b9dc-c912fda62b01" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         </meta>
         <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-user-id"/>
-          <value value="3415870223"/>
+          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+          <value value="3415870223" />
         </identifier>
         <name>
-          <text value="${orderingProvider.fullName} Prof Peter Johnson"/>
-          <suffix value="${orderingProvider.credentials} CBE"/>
+          <text value="${orderingProvider.fullName} Dr. Daniel Davies" />
         </name>
         <address>
-          <text value="NHS England, Wellington House, 133-155 Waterloo Road, London, SE1 8UG, UK"/>
+          <text value="NHS England, Wellington House, 133-155 Waterloo Road, London, SE1 8UG, UK" />
         </address>
       </Practitioner>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
+    <fullUrl value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
     <resource>
       <Patient>
-        <id value="8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
+        <id value="8d6c2cd5-0eec-496a-88d0-3785a135df09" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         </meta>
         <identifier>
-          <system value="https://grail.com/patient-id"/>
-          <value value="NHS-AB12-CD34"/>
+          <system value="https://ScreeningOrg/patient-id" />
+          <value value="NHS-AB12-CD34" />
         </identifier>
       </Patient>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af"/>
+    <fullUrl value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af" />
     <resource>
       <ServiceRequest>
-        <id value="d9df1431-22ac-462a-946a-f195f6c639af"/>
+        <id value="d9df1431-22ac-462a-946a-f195f6c639af" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
         </meta>
         <identifier>
-          <system value="http://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id" />
+          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
         </identifier>
-        <status value="active"/>
-        <intent value="order"/>
+        <status value="active" />
+        <intent value="order" />
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="1148754001"/>
-            <display value="Screening for neoplasm"/>
+            <system value="http://snomed.info/sct" />
+            <code value="1148754001" />
+            <display value="Screening for neoplasm" />
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
-          <display value="NHS-AB12-CD34"/>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
         </subject>
         <requester>
-          <reference value="urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01"/>
-          <display value="Peter Johnson"/>
+          <reference value="urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01" />
+          <display value="Dr. Daniel Davies" />
         </requester>
         <performer>
-          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1"/>
-          <display value="GRAIL RTP"/>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
+          <display value="Screening Lab" />
         </performer>
       </ServiceRequest>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:3d2f37fd-ca19-4199-9f72-4871cfe12df1"/>
+    <fullUrl value="urn:uuid:3d2f37fd-ca19-4199-9f72-4871cfe12df1" />
     <resource>
       <!--for an amended test, the DiagnosticReport.status will be set to "amended", and the amendment reason (if needed) put in the UK Core extension-DiagnosticReport.note-->
       <DiagnosticReport>
-        <id value="3d2f37fd-ca19-4199-9f72-4871cfe12df1"/>
+        <id value="3d2f37fd-ca19-4199-9f72-4871cfe12df1" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
         </meta>
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
           <valueAnnotation>
-            <text value="This AMENDED Report replaces the Report issued on 2023-10-01 to change the Date of Birth from 1956-11-03 to 1956-11-04. The test results have not changed."/>
+            <text value="${testResult.labComments}" />
           </valueAnnotation>
         </extension>
         <basedOn>
-          <reference value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af"/>
+          <reference value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af" />
         </basedOn>
-        <status value="amended"/>
+        <status value="amended" />
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="721981007"/>
-            <display value="Diagnostic studies report"/>
+            <system value="http://snomed.info/sct" />
+            <code value="721981007" />
+            <display value="Diagnostic studies report" />
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
-          <display value="NHS-AB12-CD34"/>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
         </subject>
-        <issued value="2020-09-25T16:00:00+00:00"/>
+        <issued value="2020-09-25T16:00:00+00:00" />
         <performer>
-          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1"/>
-          <display value="GRAIL RTP"/>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
+          <display value="Screening Lab" />
         </performer>
         <specimen>
-          <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123"/>
-          <display value="NHS9123123"/>
+          <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+          <display value="NHS9123123" />
         </specimen>
         <!--result is the Observation grouper-->
         <result>
-          <reference value="urn:uuid:9f7babcd-19cb-4063-b96b-61a20b2e07e6"/>
+          <reference value="urn:uuid:9f7babcd-19cb-4063-b96b-61a20b2e07e6" />
         </result>
-        <conclusion value="The Galleri test results report PDF document is the official source of the test result and contains important information regarding the Galleri test and the patient&#39;s test results. Please read the official report for complete results."/>
+        <conclusion value="The Galleri test results report PDF document is the official source of the test result and contains important information regarding the Galleri test and the patient&#39;s test results. Please read the official report for complete results." />
         <!--The PDF report goes here-->
         <presentedForm>
-          <contentType value="application/pdf"/>
-          <data value="VGhlIEdSQUlMIFBERiBnb2VzIGhlcmU="/>
+          <contentType value="application/pdf" />
+          <data value="VGhlIEdSQUlMIFBERiBnb2VzIGhlcmU=" />
         </presentedForm>
       </DiagnosticReport>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:9f7babcd-19cb-4063-b96b-61a20b2e07e6"/>
+    <fullUrl value="urn:uuid:9f7babcd-19cb-4063-b96b-61a20b2e07e6" />
     <resource>
       <!--the grouper Observation-->
       <Observation>
-        <id value="9f7babcd-19cb-4063-b96b-61a20b2e07e6"/>
+        <id value="9f7babcd-19cb-4063-b96b-61a20b2e07e6" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
-          <system value="https://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id" />
+          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
         </identifier>
-        <status value="final"/>
+        <status value="final" />
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="1148754001"/>
-            <display value="Screening for neoplasm"/>
+            <system value="http://snomed.info/sct" />
+            <code value="1148754001" />
+            <display value="Screening for neoplasm" />
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
-          <display value="NHS-AB12-CD34"/>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
         </subject>
-        <issued value="2020-09-25T16:00:00+00:00"/>
+        <issued value="2020-09-25T16:00:00+00:00" />
         <performer>
-          <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
-          <display value="GRAIL RTP"/>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
+          <display value="Screening Lab" />
         </performer>
-        <note>
-          <text value="${testResult.labComments}"/>
-        </note>
         <specimen>
-          <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123"/>
+          <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+          <display value="NHS9123123" />          
         </specimen>
         <!--the overall detected / not detected-->
         <hasMember>
-          <reference value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4"/>
+          <reference value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4" />
         </hasMember>
         <!--primary site-->
         <hasMember>
-          <reference value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db"/>
+          <reference value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db" />
         </hasMember>
         <!--secondary site-->
         <hasMember>
-          <reference value="urn:uuid:3f9730c8-5527-4f58-9865-55aef4dfa11f"/>
+          <reference value="urn:uuid:3f9730c8-5527-4f58-9865-55aef4dfa11f" />
         </hasMember>
       </Observation>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4"/>
+    <fullUrl value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4" />
     <resource>
       <Observation>
-        <id value="efae5859-28df-4e7d-be91-6df56d8215e4"/>
+        <id value="efae5859-28df-4e7d-be91-6df56d8215e4" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
-          <system value="https://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id" />
+          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
         </identifier>
         <basedOn>
-          <reference value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af"/>
+          <reference value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af" />
         </basedOn>
-        <status value="final"/>
+        <status value="final" />
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="TBC"/>
-            <display value="Qualitative result of cancer methylation profile in cell free deoxyribonucleic acid by next generation sequencing"/>
+            <system value="http://snomed.info/sct" />
+            <code value="TBC" />
+            <display value="Qualitative result of cancer methylation profile in cell free deoxyribonucleic acid by next generation sequencing" />
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
-          <display value="NHS-AB12-CD34"/>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
         </subject>
-        <issued value="2020-09-25T16:00:00+00:00"/>
+        <issued value="2020-09-25T16:00:00+00:00" />
         <performer>
-          <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
-          <display value="GRAIL RTP"/>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
+          <display value="Screening Lab" />
         </performer>
         <valueCodeableConcept>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="TBC"/>
-            <display value="Multi-cancer early detection signal detected"/>
+            <system value="http://snomed.info/sct" />
+            <code value="TBC" />
+            <display value="Multi-cancer early detection signal detected" />
           </coding>
         </valueCodeableConcept>
         <specimen>
-          <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123"/>
+          <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+          <display value="NHS9123123" />          
         </specimen>
       </Observation>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db"/>
+    <fullUrl value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db" />
     <resource>
       <!--primary site observation-->
       <Observation>
-        <id value="dacb177a-9501-4dcc-8b22-b941791ae0db"/>
+        <id value="dacb177a-9501-4dcc-8b22-b941791ae0db" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
-          <system value="https://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id" />
+          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
         </identifier>
-        <status value="final"/>
+        <status value="final" />
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="TBC"/>
-            <display value="Multi-cancer early detection predicted highest probability cancer signal origin by machine learning-based classifier"/>
+            <system value="http://snomed.info/sct" />
+            <code value="TBC" />
+            <display value="Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier" />
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
-          <display value="NHS-AB12-CD34"/>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
         </subject>
-        <issued value="2019-01-29T16:00:00+00:00"/>
+        <issued value="2019-01-29T16:00:00+00:00" />
         <performer>
-          <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
-          <display value="GRAIL RTP"/>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
+          <display value="Screening Lab" />
         </performer>
         <component>
           <code>
             <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="123037004"/>
-              <display value="Body structure"/>
+              <system value="http://snomed.info/sct" />
+              <code value="123037004" />
+              <display value="Body structure" />
             </coding>
           </code>
           <valueCodeableConcept>
             <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="89837001"/>
-              <display value="Urinary bladder structure"/>
+              <system value="http://snomed.info/sct" />
+              <code value="89837001" />
+              <display value="Urinary bladder structure" />
             </coding>
           </valueCodeableConcept>
         </component>
         <component>
           <code>
             <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="123037004"/>
-              <display value="Body structure"/>
+              <system value="http://snomed.info/sct" />
+              <code value="123037004" />
+              <display value="Body structure" />
             </coding>
           </code>
           <valueCodeableConcept>
             <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="57789003"/>
-              <display value="Structure of urothelium"/>
+              <system value="http://snomed.info/sct" />
+              <code value="57789003" />
+              <display value="Structure of urothelium" />
             </coding>
           </valueCodeableConcept>
         </component>
@@ -415,48 +413,48 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:3f9730c8-5527-4f58-9865-55aef4dfa11f"/>
+    <fullUrl value="urn:uuid:3f9730c8-5527-4f58-9865-55aef4dfa11f" />
     <resource>
       <!--secondary site obseravtion-->
       <Observation>
-        <id value="3f9730c8-5527-4f58-9865-55aef4dfa11f"/>
+        <id value="3f9730c8-5527-4f58-9865-55aef4dfa11f" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
-          <system value="https://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id" />
+          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
         </identifier>
-        <status value="final"/>
+        <status value="final" />
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="TBC"/>
-            <display value="Multi-cancer early detection predicted second highest probability cancer signal origin by machine learning-based classifier"/>
+            <system value="http://snomed.info/sct" />
+            <code value="TBC" />
+            <display value="Multi-cancer early detection predicted second cancer signal origin by machine learning-based classifier" />
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
-          <display value="NHS-AB12-CD34"/>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
         </subject>
-        <issued value="2019-01-29T16:00:00+00:00"/>
+        <issued value="2019-01-29T16:00:00+00:00" />
         <performer>
-          <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
-          <display value="GRAIL RTP"/>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
+          <display value="Screening Lab" />
         </performer>
         <component>
           <code>
             <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="123037004"/>
-              <display value="Body structure"/>
+              <system value="http://snomed.info/sct" />
+              <code value="123037004" />
+              <display value="Body structure" />
             </coding>
           </code>
           <valueCodeableConcept>
             <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="64033007"/>
-              <display value="Kidney structure"/>
+              <system value="http://snomed.info/sct" />
+              <code value="64033007" />
+              <display value="Kidney structure" />
             </coding>
           </valueCodeableConcept>
         </component>
@@ -464,31 +462,31 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123"/>
+    <fullUrl value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
     <resource>
       <Specimen>
-        <id value="756a8361-79ce-4561-afcb-a91fe19df123"/>
+        <id value="756a8361-79ce-4561-afcb-a91fe19df123" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen"/>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
         </meta>
         <identifier>
-          <system value="http://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id" />
+          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
         </identifier>
-        <status value="available"/>
+        <status value="available" />
         <type>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="119297000"/>
-            <display value="Blood specimen"/>
+            <system value="http://snomed.info/sct" />
+            <code value="119297000" />
+            <display value="Blood specimen" />
           </coding>
         </type>
         <subject>
-          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
-          <display value="NHS-AB12-CD34"/>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
         </subject>
         <collection>
-          <collectedDateTime value="2020-09-23T11:00:00+00:00"/>
+          <collectedDateTime value="2020-09-23T11:00:00+00:00" />
         </collection>
       </Specimen>
     </resource>
