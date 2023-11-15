@@ -35,6 +35,7 @@ select
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
   <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
   <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
+  <button class="tablinks" onclick="openTab(event, 'Narrative')">Narrative</button>
 </div>
 
 <div id="Tree View" class="tabcontent expandedProfile" style="display:block">
@@ -102,6 +103,12 @@ from
 	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense'
 ```
 </span>
+</div>
+
+
+<div id="Narrative" class="tabcontent">
+  <h3>Narrative</h3>
+{{dict}}
 </div>
 </nocheck>
 

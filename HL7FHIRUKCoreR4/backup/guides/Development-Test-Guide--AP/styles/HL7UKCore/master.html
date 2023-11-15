@@ -1193,6 +1193,25 @@
             }
         </script>
 
+    <script>
+        function findAndCopyNarrative(nameToCopy) {
+            var listOfElements = $('table.dict tbody tr td.structure')
+            
+            
+            
+            .each(function(index) {
+                    var firstLetter = $(this)[0].innerText.charAt(0);
+                    if (firstLetter === firstLetter.toLowerCase()) {
+                        var box  = $(this)[0].parentElement.querySelector("div[id$='elementdetails']");
+                        if (box != undefined) {
+                            $(this)[0].innerHTML = "<code onclick='toggleCoreDetailsVisibility(this,false);return false;'>" + $(this)[0].innerText + "</code>";
+                            box.style.display = "none";
+                        }
+                    }                   
+                });
+            }
+        </script>
+
         <script>
 
             //removes any development notice and footer if its being rendered in an iframe
