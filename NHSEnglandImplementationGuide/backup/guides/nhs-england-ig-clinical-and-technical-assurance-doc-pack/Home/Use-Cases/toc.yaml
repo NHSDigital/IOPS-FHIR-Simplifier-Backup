@@ -2,7 +2,7 @@
   filename: Summary.page.md
 - name: Example Use Case
   filename: Example-Use-Case.page.md
-- name: GP Connect Update Record
-  filename: GP-Connect-Update-Record.page.md
+- name: Patient Facing Services (PFS) Prescriptions
+  filename: Patient-Facing-Services--PFS--Prescriptions.page.md
 - name: Organisation Data Service (ODS)
   filename: Organisation-Data-Service--ODS.page.md
