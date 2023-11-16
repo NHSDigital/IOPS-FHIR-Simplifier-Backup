@@ -38,7 +38,7 @@ Provider systems must also demonstrate standards compliance as part of the NHS D
 ### **Information Governance Principles**
 Your organisation must complete the [Data Security and Protection Toolkit](https://www.dsptoolkit.nhs.uk/) (DSPT) for each NHS England Service being integrated and obtain at least a 'Minimum Standards Met' rating.
 
-The Data Security and Protection Toolkit (DSPT) is an online self-assessment tool for organisations to measure their performance against the National Data Guardian’s 10 data security standards. The Toolkit must be completed at least every 12 months (financial year) and MUST cover the entirety of your Health IT System (Product) and all the NHS England Services covered by this SCAL.  **Each time a new NHS England Service is integrated, the DSPT must be repeated** because the compliance requirements and declarations must cover the end-to-end functionality of your Product. 
+Each time a new NHS England Service is integrated, a check is made that the connecting organisation is registered and active with DSPT.
 
 All organisations that have access to NHS patient data and systems must use this Toolkit to provide assurance that they are practising good data security and that personal information is handled correctly.
   
