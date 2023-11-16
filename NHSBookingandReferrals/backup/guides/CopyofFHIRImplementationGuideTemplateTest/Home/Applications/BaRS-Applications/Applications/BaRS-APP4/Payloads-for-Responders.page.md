@@ -3,78 +3,68 @@ topic: APP4-ResponderPayloads
 ---
 
 # {{page-title}}
-## Validation Interim Response Payload
-The below details the specific guidance around the use of key resources required to create a validation response by the Responder to return to the original Requester. See [ServiceRequest - Response Validation Interim](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-validation-interim) message definition for details.
+## Interim Validation Response Payload
+This section provides guidance on the use of key resources, for the Responder to create an Interim Validation Response to return to the Requester. See [ServiceRequest - Response Validation Interim](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-validation-interim) message definition for details.
+
+_Note that Responders will also have to build the capability to receive and process the Validation Request and Cancellation payloads_
 <br>
 
 ### MessageHeader Resource
-The MessageHeader resource is required as part of the technical capability of making a request or response. Rather than providing clinical or administrative content for the end users; the function of all other resources are outlined. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader text: Standard Pattern - Message Header}} for more information. 
 
-Any Responder of the request 'message bundle' **must** first check the *MessageHeader.destination* and verify the *MessageHeader.destination.receiver.reference* refers to their Organisation. The *MessageHeader.destination.endpoint* is, in turn, the Healthcare Service ID they are expected to be processing the request on behalf of. 
-
-The type of request **must** be checked next and there are three important elements which drive workflow: 
-* **eventCoding** - determines the type of request. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-events-bars) and will always be referral for this Application.
-* **reasonCode** - indicates whether the message is new or an update to something the Requester already has. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-reason-bars).
-* **definition** - specifies the [MessageDefinition](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=MessageDefinition&sortBy=DisplayName) the request **must** adhere to and **must** be rejected if it fails to do so.
-
-Once the above checks have been made the detail of the request can start to be unpacked and processed. The *MessageHeader.focus* provides the key to doing this. It indicates the lens through which the request 'message bundle' **must** be interpreted. In this Application the element will always point to the ServiceRequest. Most other FHIR resources in the 'message bundle' will link to or from the 'focus' resource. 
-
-When generating asynchronous (Interim or Final) Response messages (as opposed to an HTTP synchronous response (200) message), where a Responder is sending a 'message bundle' back to the Requester. Firstly, the Requester, in the original request **must** include a NHSD-Target-Identifier (their reference on the Endpoint Catalogue) under *MessageHeader.source.endpoint*, to which the Responder is able to direct a response back to, regardless of whether they expect a response or not. The Responder **must** take and store this value, along with the *Bundle.Id* value, to send a response message back to the Requester through the BaRS API Proxy. 
-
-The workflow dictates an asynchronous response is to be sent, the Responder **must** populate *MessageHeader.response.identifier* with the *Bundle.Id* of the original request 'message bundle' and set the *MessageHeader.response.code* value to 'ok'. 
+The MessageHeader resource in the Interim Validation Response should have the following resource elements set as follows:
+* **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-response'
+* **MessageHeader.reasonCode** - **must** be 'new'
+* **MessgeHeader.Response** - **must** be the original request BundleID
 
 ### ServiceRequest Resource
-?????The 'focus' resource in a Validation Request is the ServiceRequest resource. When the request 'message bundle' is created by the Requester and processed by the Responder, this is the starting point from which the Validation Request is understood. It provides either the detail or references to all key FHIR resources, for example, the Patient, Encounter and Careplan. The guidance for this resource below provides more granular, element level, detail. A key point when a Responder builds the referral FHIR response 'message bundle' is to ensure the *MessageHeader.focus* references the ServiceRequest resource.
+The 'focus' resource in a Validation Request is the ServiceRequest resource. (*Note that the focus resource for the Interim Validation Response is the Encounter resource created in the Responder system*). When the request 'message bundle' is created by the Requester and processed by the Responder, this is the starting point from which the Validation Request is understood. It provides either the detail or references to all key FHIR resources, for example, the Patient, Encounter and Careplan. The guidance for this resource below provides more granular, element level, detail. A key point when a Responder builds the Validation Response 'message bundle' is to ensure the *MessageHeader.focus* references the ServiceRequest resource.
 
-Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time that the receiving service must contact the patient by (validation breach time), this is a echo from the original request.
+Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time by which the Responder must complete the validation (validation breach time), this is a echo from the original request.
 
 ### Encounter Resource
-The Encounter is used to represent the interaction between a patient and healthcare service provider. It links with numerous other resources, to reflect the assessment performed. 
+The Encounter is used to represent the interaction between a patient and healthcare service provider. It links with numerous other resources, to reflect the activities performed in that encounter. 
 
-In the initial referral request, the Requester will include an Encounter resource as the container for their assessment, which established the need for the referral. This encounter **should** include a reference to the Requester's assessment under *encounter.identifier*. Additionally, the *encounter.episodeOfCare* **must** be populated with a 'Journey ID' reference which can be used in subsequent referrals to allow the audit of the route a patient took through service providers to resolve their initial request for care. 
+The Encounter resource becomes the focus in a ServiceRequest in the Interim Validation Response workflow. 
 
-A second Encounter resource is used to transfer the human readable reference of the newly created referral, at the Responder end. When a referral request is made, the Responder **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Requester's request. This new 'planned' encounter will have both an Id and an Identifier value, indicating the Responder's local reference and human readable one, respectively. (See the {{pagelink:APP3-EntityRelationshipDiagrams, text:Entity Relationship Diagram}} for reference). The human readable (Identifier) reference is a useful link for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
+In the initial Validation Request, the Requester will include an Encounter resource as the container for their assessment, which established the need for the Validation Request. This encounter **should** include a reference to the Requester's case identifier under *encounter.identifier*. Additionally, the *encounter.episodeOfCare* **must** be populated with a 'Journey ID' reference which can be used in subsequent referrals to allow the audit of the route a patient took through service providers to resolve their initial request for care. 
 
-When the interim response is sent an *encounter.status* of 'in-progress' **must** be set on the second Encounter. This is to indicate to the Requester that the request has started in the receiving service.
+A second Encounter Resource is created by the Responder to represent the newly created case in their system and is used to transfer the human readable case identifer.  When acknowledging the receipt of a Validation Request, the Responder **should** include a new, secondary, Encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Requester. This new 'planned' encounter will have both an Id and an Identifier value, indicating the Responder's local reference and human readable one, respectively. (See the {{pagelink:APP3-EntityRelationshipDiagrams, text:Entity Relationship Diagram}} for reference). The human readable (Identifier) reference is a useful link for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable. *This second Encounter resource is the focus resource of the Interim Validation Response and the Validation Response*.
+
+When the interim response is sent an *encounter.status* of 'in-progress' **must** be set on the second Encounter. This is to indicate to the Requester that the validation activity has started in the receiving service.
 The *encounter.reasonCode* **must** be included on the second encounter to indicate that it is the validation triage outcome. 
 <br>
 <br>
 <hr>
 
-## Validation Final Response Payload
-The below details the specific guidance around the use of key resources required to create a validation response by the Responder to return to the original Requester. See [ServiceRequest - Response Validation Full](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-validation-full) message definition for details.
+## Validation Response Payload
+This section provides guidance on the use of key resources, for the Responder to create a Validation Response to return to the original Requester. See [ServiceRequest - Response Validation Full](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-validation-full) message definition for details.
 
 ### MessageHeader Resource
-The MessageHeader resource is required as part of the technical capability of making a request or response. Rather than providing clinical or administrative content for the end users; the function of all other resources are outlined. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader text: Standard Pattern - Message Header}} for more information. 
 
-Any Responder of the request 'message bundle' **must** first check the *MessageHeader.destination* and verify the *MessageHeader.destination.receiver.reference* refers to their Organisation. The *MessageHeader.destination.endpoint* is, in turn, the Healthcare Service ID they are expected to be processing the request on behalf of. 
-
-The type of request **must** be checked next and there are three important elements which drive workflow: 
-* **eventCoding** - determines the type of request. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-events-bars) and will always be referral for this Application.
-* **reasonCode** - indicates whether the message is new or an update to something the Requester already has. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-reason-bars).
-* **definition** - specifies the [MessageDefinition](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=MessageDefinition&sortBy=DisplayName) the request **must** adhere to and **must** be rejected if it fails to do so.
-
-Once the above checks have been made the detail of the request can start to be unpacked and processed. The *MessageHeader.focus* provides the key to doing this. It indicates the lens through which the request 'message bundle' **must** be interpreted. In this Application the element will always point to the ServiceRequest. Most other FHIR resources in the 'message bundle' will link to or from the 'focus' resource. 
-
-When generating asynchronous (Interim or Final) Response messages (as opposed to an HTTP synchronous response (200) message), where a Responder is sending a 'message bundle' back to an originating Requester. Firstly, the Requester, in the original request **must** include a NHSD-Target-Identifier (their reference on the Endpoint Catalogue) under *MessageHeader.source.endpoint*, to which the Responder is able to direct a response back to, regardless of whether they expect a response or not. The Responder **must** take and store this value, along with the *Bundle.Id* value, to send a response message back to the Requester through the BaRS API Proxy. 
-
-The workflow dictates an asynchronous response is to be sent, the Responder **must** populate *MessageHeader.response.identifier* with the *Bundle.Id* of the original request 'message bundle' and set the *MessageHeader.response.code* value to 'ok'. 
+The MessageHeader resource in the Interim Validation Response should have the following resource elements set as follows:
+* **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-response'
+* **MessageHeader.reasonCode** - **must** be 'update' or 'new' if the Interim Validation Response was not sent
+* **MessgeHeader.Response** - **must** be the original request BundleID
 
 ### ServiceRequest Resource
-The 'focus' resource in a referral is the ServiceRequest resource. When the request 'message bundle' is created by the Requester and processed by the Responder, this is the starting point from which the referral is understood. It provides either the detail or references to all key FHIR resources, for example, the Patient, Encounter and Careplan. The guidance for this resource below provides more granular, element level, detail. A key point when a Responder builds the referral FHIR response 'message bundle' is to ensure the *MessageHeader.focus* references the ServiceRequest resource.
+The 'focus' resource in a Validation Request is the ServiceRequest resource. (*Note that the focus resource for the Validation Response is the Encounter resource created in the Responder system*) When the Validation Request 'message bundle' is created by the Requester and processed by the Responder, this is the starting point from which the Validation Request is understood. It provides either the detail or references to all key FHIR resources, for example, the Patient, Encounter and Careplan. The guidance for this resource below, provides more granular, element level, detail. A key point when a Responder builds the Validation Response 'message bundle' is to ensure the *MessageHeader.focus* references the ServiceRequest resource.
 
-Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time that the receiving service must contact the patient by (validation breach time), this is a echo from the original request. 
+Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time by which the receiving service must complete the validation (validation breach time). This is a echo from the original request. 
 
 ### Encounter Resource
 The Encounter is used to represent the interaction between a patient and healthcare service provider. It links with numerous other resources, to reflect the assessment performed. 
 
-In the initial referral request, the Requester will include an Encounter resource as the container for their assessment, which established the need for the referral. This encounter **should** include a reference to the Requester's assessment under *encounter.identifier*. Additionally, the *encounter.episodeOfCare* **must** be populated with a 'Journey ID' reference which can be used in subsequent referrals to allow the audit of the route a patient took through service providers to resolve their initial request for care. 
+The Encounter resource becomes the focus in a ServiceRequest in the final Validation Response workflow. 
 
-A second Encounter resource is used to transfer the human readable reference of the newly created referral, at the Responder end. When a referral request is made, the Responder **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Requester's request. This new 'planned' encounter will have both an Id and an Identifier value, indicating the Responder's local reference and human readable one, respectively. (See the {{pagelink:APP3-EntityRelationshipDiagrams, text:Entity Relationship Diagram}} for reference). The human readable (Identifier) reference is a useful link for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
+In the initial Validation Request, the Requester will include an Encounter resource as the container for their assessment, which established the need for the Validation Request. This encounter **should** include a reference to the Requester's case identifier under *encounter.identifier*. Additionally, the *encounter.episodeOfCare* **must** be populated with a 'Journey ID' reference which can be used in subsequent referrals to allow the audit of the route a patient took through service providers to resolve their initial request for care. ????
 
-When the final response is sent an *encounter.status* of 'finished' or 'triaged' **must** be set on the second Encounter. This is to indicate to the Requester that the request has compeleted in the receiving system. The *encounter.reasonCode* **must** be included on the second encounter to indicate that it is the validation triage outcome. 
+A second Encounter resource is used to transfer the human readable reference of the newly created case, at the Responder end. When a Validation Request is made, the Responder **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Requester's request. This new 'planned' encounter will have both an Id and an Identifier value, indicating the Responder's local reference and human readable one, respectively. (See the {{pagelink:APP3-EntityRelationshipDiagrams, text:Entity Relationship Diagram}} for reference). The human readable (Identifier) reference is a useful link for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
 
-A third Encounter **should** be included if a validation request has resulted in a higher ambulance category  Cat1 or Cat2 where a request has been made to 999 AST via the original ITK route from a 111 service via an automated Ambulance Request ITK. The Requester **should** be able to see the ITK request and merge the new case with the case currently with the CAS on receipt of the final message using the identifiers provided on the Ambulance Request. 
+When the Validation Response is sent, an *encounter.status* of 'finished' or 'triaged' **must** be set on the second Encounter. This is to indicate to the Requester that the request has compeleted in the Responder system. The *encounter.reasonCode* **must** be included on the second encounter to indicate that it is the validation triage outcome. 
+
+A third Encounter **should** be included if a validation request has resulted in a higher ambulance category  Cat1 or Cat2 where a request has been made to 999 AST via the original ITK route from a 111 service via an automated Ambulance Request ITK. The Requester **should** be able to see the ITK request and merge the new case with the case currently with the CAD on receipt of the Validation Response, using the identifiers provided on the ITK Ambulance Request. 
 
 ### Location Resource ###
 The Location resource is used to transfer details of the incident location.
@@ -97,13 +87,15 @@ When a BARS Responder processes information in a Location resource:
 *  They **should** consume and populate **all** address fields sent, into their system
 *  They **must** display *all* address fields sent by the Requester
 
+??? NEED TO  INCLUDE SOMETHING ABOUT THE RESPONDER UPDATING THE LOCATION
+
 
 ### CarePlan Resource
-The CarePlan resource is used in a referral request to communicate the 999 AST triage outcome and any associated clinical information, based on the assessment performed by the Requester. The Responder will utilise the detail in this resource to summarise what the previous assessment ascertained about the patient, to be used in any subsequent consultation with the patient.
+The CarePlan resource is used in a Validation Request to communicate the 999 AST triage outcome and any associated clinical information, based on the assessment performed by the Requester. The Responder will utilise the detail in this resource to review what the previous assessment ascertained about the patient, and to inform any subsequent consultation with the patient.
 
-The CarePlan resource is used in the validation response to communicate to the Requester a summary of what was ascertained during the validation consultation. 
+The CarePlan resource is used in the Validation Response to communicate to the Requester a summary of what was ascertained during the validation consultation. 
 
-*CarePlan.status* is used to drive workflow on the Requesters system. This **must** be populated with the value ‘complete’ or 'active'. If a status is 'complete' the Requester will know there is no furthur action required. If the status is 'active' they will need to action the case following a validation.
+????*CarePlan.status* is used to drive workflow on the Requesters system. This **must** be populated with the value ‘complete’ or 'active'. If a status is 'complete' the Requester will know there is no furthur action required. If the status is 'active' they will need to action the case following a validation.
 
 *careplan.activity* holds the assessment information, whether it be coded or free text. The *careplan.activity.outcomeCodeableConcept* is malleable enough to support the transmission of Pathways coded outcomes as well as clinical narrative. The element guidance for this resource below goes into the specific detail but, fundamentally, the Responder must include the following:
 *  The Pathways, Symptom Group (SG),  Symptom Discriminator (SD) and Disposition (DX) codes, along with the Pathways consultation summary, or
@@ -125,11 +117,11 @@ When a BARS Requester processes information in a Flag resource in a validation r
 The Observation resource is used to carry assertions supporting the assessment performed by the Requester. Requesters **should** add clinical notes to the Careplan resource rather than Observation, especially where they expect a Responder to act upon the information. 
 
 There are specific instances where an Observation **must** be used to convey information and [examples](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Observation&sortBy=DisplayName) are provided to aid development: 
-* Where Birth Sex is communicated it **must** be transferred in a referral using Observation. This information **should** only be transferred when considered clinically relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcorepatient). 
+* Where Birth Sex is communicated it **must** be transferred in a ??? referral using Observation. This information **should** only be transferred when considered clinically relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcorepatient). 
 * Where Estimated Age is communicated it **must** be conveyed in an Observation.
 
 ### Consent 
-The level of consent currently supported by BaRS is for 'Direct Care' only. In emergency care use cases this is usually implied consent. A referral **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/NHSBookingandReferrals/8fc39b95-89a6-45fb-914f-1458a10e9e14/~json) provided under the BaRS FHIR assets. 
+The level of consent currently supported by BaRS is for 'Direct Care' only. In emergency care use cases this is usually implied consent. A ???referral **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/NHSBookingandReferrals/8fc39b95-89a6-45fb-914f-1458a10e9e14/~json) provided under the BaRS FHIR assets. 
 <br>
 <br>
 <hr>
