@@ -4,12 +4,12 @@ topic: APP4-RequesterPayloads
 
 # {{page-title}}
 ## Validation Request Payload
-The below details the specific guidance around the use of resources required to create a Validation Request by the Requester. See [ServiceRequest - Request Validation](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-servicerequest-request-validation) message definition for details.
+The below details the specific guidance around the use of resources required to create a Validation Request by the Requester. See [ServiceRequest - Request Validation](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-servicerequest-request-validation) message definition for details of resources required for this payload.
 
 _Note that Requesters will also have to build the capability to receive and process the Validation Response payloads._
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader, text:Standard Pattern Message Header}} for more information. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader, text:Standard Pattern Message Header}}. 
 
 The MessageHeader resource for the Validation Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
