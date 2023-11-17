@@ -2,7 +2,7 @@
 
 > Confirmation of whether any red flags (symptoms that suggest more serious illness) were identified. Details of red flag symptoms recorded if the 'Red flags' were identified as 'Yes'".
 
-This is a mandatory data item in the Community Pharmacy Standard, which means that Pharmacy Suppliers are obliged to provide this information if it is present within their clinical system.
+This is a required data item in the Community Pharmacy Standard, which means that Pharmacy Suppliers are obliged to provide this information if it is present within their clinical system.
 
 
 <br />

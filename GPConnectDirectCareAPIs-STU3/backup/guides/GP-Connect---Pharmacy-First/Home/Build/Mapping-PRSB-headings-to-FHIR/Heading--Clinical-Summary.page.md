@@ -2,7 +2,7 @@
 
 > A description detailing a patient’s reason for attendance, results from the diagnostic and treatment process.
 
-This is a mandatory data item in the Community Pharmacy Standard, which means that Pharmacy Suppliers are obliged to provide this information if it is present within their clinical system.
+This is a mandatory data item in the Community Pharmacy Standard, which means that Pharmacy Suppliers are obliged to provide this information.
 
 <br />
 
