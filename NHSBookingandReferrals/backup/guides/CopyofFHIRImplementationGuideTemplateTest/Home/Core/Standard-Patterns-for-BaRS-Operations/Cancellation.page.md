@@ -14,17 +14,13 @@ A prerequisite when performing a cancellation of any request is to perform a rea
 ## Cancellation Referral Request Payload
 
 #### MessageHeader Resource
-The MessageHeader resource is a technical requirement of the payload (bundle) to indicate how to process the request for cancellation. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
+{{pagelink:Home/Core/Standard-Patterns-for-BaRS-Operations/Message-Headers.page.md, text:Standard Patterns for BaRS Operations}} explains how the **MessageHeader** resource is used generally. 
 
-Any Receiver of the request **must** first check the *MessageHeader.destination* and verify the *MessageHeader.destination.receiver.reference* refers to their Organisation. The *MessageHeader.destination.endpoint* **must** relate to the Healthcare Service expected to process the request. 
-
-The type of request **must** be checked next and there are three important elements which drive workflow: 
-* **eventCoding** - determines the type of request. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-events-bars).
-* **reasonCode** - indicates whether the message is new or an update to something the Receiver already has. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-reason-bars) and **must** always be 'update' for cancellation.
-* **definition** - specifies the [MessageDefinition](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=MessageDefinition&sortBy=DisplayName) the request **must** adhere to.
-
-Once the above checks have been made the detail of the request can start to be unpacked and processed. The *MessageHeader.focus* provides the key to doing this. It indicates the lens through which the request payload (bundle) **must** be interpreted. In a canellation referral request this will always point to the ServiceRequest. Most other FHIR resources in the payload will link to or from the 'focus' resource. 
-
+When cancelling a referral, in conjunction with the guidance provided under the Standard Patterns, the three important elements which drive workflow **must** be used as follows: 
+* **eventCoding** - this **must** be the same code as used in the request.
+* **reasonCode** - a cancellation follows an initial request, therefore, this **must** always be 'update' for cancellation.
+* **definition** - cancellation has a unique [MessageDefinition](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=MessageDefinition&sortBy=DisplayName) the request **must** adhere to.
+* **focus** - **must** point to the *ServiceRequest* resource.
 
 #### ServiceRequest Resource
 The 'focus' resource in a cancellation referral request is the ServiceRequest resource. When the payload is created by the Sender and processed by the Receiver, this is the starting point from which it (the bundle) is understood and provides either the detail or references to all key FHIR resources, for example, the Patient. The guidance for this resource below provides more granular, element level, detail. 
@@ -288,16 +284,13 @@ The below diagram details the Cancellation Referral Request
 ## Cancellation Booking Request Payload
 
 #### MessageHeader Resource
-The MessageHeader resource is a technical requirement of the payload (bundle) to indicate how to process the request for cancellation. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
+{{pagelink:Home/Core/Standard-Patterns-for-BaRS-Operations/Message-Headers.page.md, text:Standard Patterns for BaRS Operations}} explains how the **MessageHeader** resource is used generally. 
 
-Any Receiver of the request **must** first check the *MessageHeader.destination* and verify the *MessageHeader.destination.receiver.reference* refers to their Organisation. The *MessageHeader.destination.endpoint* **must** relate to the Healthcare Service expected to process the request. 
-
-The type of request **must** be checked next and there are three important elements which drive workflow: 
-* **eventCoding** - determines the type of request. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-events-bars).
-* **reasonCode** - indicates whether the message is new or an update to something the Receiver already has. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-reason-bars) and **must** always be 'update' for cancellation.
-* **definition** - specifies the [MessageDefinition](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=MessageDefinition&sortBy=DisplayName) the request **must** adhere to.
-
-Once the above checks have been made the detail of the request can start to be unpacked and processed. The *MessageHeader.focus* provides the key to doing this, indicating the lens through which the request payload (bundle) **must** be interpreted. In a canellation booking request this will always point to the Appointment. Most other FHIR resources in the payload will link to or from the 'focus' resource. 
+When cancelling a booking, in conjunction with the guidance provided under the Standard Patterns, the three important elements which drive workflow **must** be used as follows: 
+* **eventCoding** - this **must** be the same code as used in the request.
+* **reasonCode** - a cancellation follows an initial request, therefore, this **must** always be 'update' for cancellation.
+* **definition** - cancellation has a unique [MessageDefinition](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=MessageDefinition&sortBy=DisplayName) the request **must** adhere to.
+* **focus** - **must** point to the *Appointment* resource.
 
 #### Appointment Resource
 The 'focus' resource in a cancellation booking request is the Appointment resource. When the payload is created by the Sender and processed by the Receiver, this is the starting point from which it (the bundle) is understood and provides either the detail or references to all key FHIR resources, for example, the Patient. The guidance for this resource below provides more granular, element level, detail. 
