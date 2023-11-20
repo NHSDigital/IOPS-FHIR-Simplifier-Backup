@@ -336,14 +336,15 @@ These changes are not currently approved and are submitted for comment as part o
                     $(this).parent().find('div.tabcontent').addClass('forceWhite');
                 });
             }
-            
+            </script>
+            <script>
             // function add the submenus for profiles
             function createProfileSubMenus() {
                //mobile friendly tweak - check if nav bar button is visible, and if so, we're on moblile where the sub menus don't work
                 if (window.matchMedia("(min-width: 992px)").matches){
                     //add the sub menu's for profiles
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles N to Z <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles A to M <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li id="dropdownParentNToZ" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles N to Z <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li id="dropdownParentAToM" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles A to M <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
                     
@@ -360,6 +361,54 @@ These changes are not currently approved and are submitted for comment as part o
             function createTerminologySeparator() {
                 $('ul.nav li.dropdown:eq(2) ul.dropdown-menu li:eq(0)').after('<li role="separator" class="divider"></li>');
             }
+
+            
+            function handleSubMenuEvents() {
+                var atom
+                var ntoz
+
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent a').click(function(e) {   
+                    e.stopPropagation(); 
+                    e.preventDefault();
+
+                    var list = $(this).parent().find('ul');
+
+                    if (list.parent()[0].id== "dropdownParentAToM") {
+                        clearTimeout(atom);
+                    } else if (list.parent()[0].id== "dropdownParentNToZ") {
+                        clearTimeout(ntoz);
+                    }
+                    if (list.hasClass("hidden")) {
+                        list.addClass("visuallyhidden");
+                        list.removeClass("hidden");
+                        setTimeout(function () {
+                            list.removeClass('visuallyhidden');
+                            }, 30);
+                    } else  {
+                        if (list.hasClass("visuallyhidden")) {
+                            setTimeout(function () {
+                                list.removeClass('visuallyhidden');
+                                }, 30);
+                        } else {
+
+                            if (list.parent()[0].id== "dropdownParentAToM") {
+                                atom = setTimeout(function () {
+                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("visuallyhidden");
+                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("hidden");
+                    }, 20);
+                            } else if (list.parent()[0].id== "dropdownParentNToZ") {
+                                ntoz = setTimeout(function () {
+                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("visuallyhidden");
+                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("hidden");
+                    }, 20);
+                            }
+
+                        }
+                    }
+                });
+            }
+        </script>
+        <script>
 
              function swapReferenceExampleLinks() {
                 //look for a div with id transpose
@@ -402,6 +451,7 @@ These changes are not currently approved and are submitted for comment as part o
                 createProfileSubMenus();
                 createTerminologySeparator();
                 swapReferenceExampleLinks();
+                handleSubMenuEvents();
                 updateFooterPosition();
             });
             

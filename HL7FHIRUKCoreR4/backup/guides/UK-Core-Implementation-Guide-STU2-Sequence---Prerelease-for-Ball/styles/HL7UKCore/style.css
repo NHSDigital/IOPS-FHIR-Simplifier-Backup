@@ -220,13 +220,15 @@ table.assets tr td.balloted {
      background-color: #f9f9f9 !important;
  }
 
- .submenu-list{
-    display:none;
+.submenu-list{
+  transition: all 0.5s linear;
     width:max-content;
 }
-
-.submenu-parent:hover > ul {
-    display:block;
+.hidden {
+  display:none;
+}
+.visuallyhidden {
+  opacity: 0;
 }
 
 .submenu-list>li>a {

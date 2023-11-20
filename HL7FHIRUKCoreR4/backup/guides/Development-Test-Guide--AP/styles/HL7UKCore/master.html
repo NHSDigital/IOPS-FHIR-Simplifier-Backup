@@ -507,27 +507,87 @@
                     }
                 }
             }
+        </script>
+        <script>
             
             // function add the submenus for profiles
             function createProfileSubMenus() {
                //mobile friendly tweak - check window size, and add sub menu if we can
                 if (window.matchMedia("(min-width: 992px)").matches){
                     //add the sub menu's for profiles
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles P to Z <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles N to O <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles A to M <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentPToZ" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles P to Z <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentMToO"  class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles M to O <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentAToL"  class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles A to L <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
                     
                     //and move the items into the sub menus
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(5,29)); //A to M
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(29,51)); //N to O
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(51)); //P to Z
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(4,21)); //A to L
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(21,32)); //M to O
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(32)); //P to Z
+
                 } else {
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
                 }
             }
+
+    function handleSubMenuEvents() {
+        var atol
+        var mtoo
+        var ptoz
+
+        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent a').click(function(e) {   
+            e.stopPropagation(); 
+            e.preventDefault();
+
+            var list = $(this).parent().find('ul');
+
+            if (list.parent()[0].id== "dropdownParentAToL") {
+                clearTimeout(atol);
+            } else if (list.parent()[0].id== "dropdownParentMToO") {
+                clearTimeout(mtoo);
+            } else if (list.parent()[0].id== "dropdownParentPToZ") {
+                clearTimeout(ptoz);
+            }
+            if (list.hasClass("hidden")) {
+                list.addClass("visuallyhidden");
+                list.removeClass("hidden");
+                setTimeout(function () {
+                    list.removeClass('visuallyhidden');
+                    }, 30);
+            } else  {
+                if (list.hasClass("visuallyhidden")) {
+                    setTimeout(function () {
+                        list.removeClass('visuallyhidden');
+                        }, 30);
+                } else {
+
+                    if (list.parent()[0].id== "dropdownParentAToL") {
+                        atol = setTimeout(function () {
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("visuallyhidden");
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("hidden");
+            }, 20);
+                    } else if (list.parent()[0].id== "dropdownParentMToO") {
+                         mtoo = setTimeout(function () {
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("visuallyhidden");
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("hidden");
+            }, 20);
+                    } else if (list.parent()[0].id== "dropdownParentPToZ") {
+                        ptoz = setTimeout(function () {
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').addClass("visuallyhidden");
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').addClass("hidden");
+            }, 20);
+                    }
+
+                }
+            }
+        });
+    }
+
+        </script>
+        <script>
+
 
             // function add a seperator into terminology dropdown
             function createTerminologySeparator() {
@@ -1212,6 +1272,8 @@
             }
         </script>
 
+   
+
         <script>
 
             //removes any development notice and footer if its being rendered in an iframe
@@ -1245,6 +1307,7 @@
                 fixWebAccessibility();
                 alterBaseElementOverrides();
                 sidebarClickAndOpen();
+                handleSubMenuEvents();
                 updateFooterPosition();
             });
         </script>
