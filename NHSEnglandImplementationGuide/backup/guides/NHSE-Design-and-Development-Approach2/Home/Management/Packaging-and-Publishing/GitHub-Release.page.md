@@ -8,36 +8,30 @@
 
 ### Creating a Release Within GitHub
 1. With the GiHub NHSEngland-FHIR-ImplementationGuide repository. Select the Releases title on the right-hand side.
+
+{{render:Github}}
+
 2. Select Draft a new release.
 3. Ensure target is set to main and create a tag the is the same as the package version.
 4. Add the following release notes, changing the information as needed:
 
-    ### For the balloted release
-
-    Implementation Guide<br>
-    INSERT URL
+  ## Simplifier FHIR Assets
 
 
-    Package<br>
-    INSERT URL
-
-    NPM<br>
-    Note: The npm package contains only active FHIR assets, and does not        include retired assets, or ones in development which are not part of        this formal release, and therefore these are not referenced in the STUx     Sequence Implementation Guide.
-
-    npm --registry https://packages.simplifier.net install package@version
-
-
-    ### For the non-balloted release
-    Implementation Guide<br>
-    INSERT URL
-
-    Package<br>
-    INSERT URL
-
-    NPM<br>
-    Note: The npm package contains all current FHIR assets, including ones       in development which are not part of this formal release, and               therefore these are not referenced in the x.x.x Implementation Guide.
-
-    npm --registry https://packages.simplifier.net install package@version
+ 
+  ### Implementation Guide
+ 
+[1.0.0 - STU1](https://simplifier.net/guide/nhs-england-implementation-guide-stu1?version=1.0.0)
+ 
+  ### Package
+ 
+[fhir.r4.nhsengland.stu1 1.0.0](https://simplifier.net/packages/fhir.r4.nhsengland.stu1/1.0.0)
+ 
+  ### NPM
+ 
+Note: The npm package contains only active FHIR assets, and does not include retired assets, or ones in development which are not part of this formal release, and therefore these are not referenced in the STU1 Sequence Implementation Guide.
+ 
+`npm --registry https://packages.simplifier.net install fhir.r4.nhsengland.stu1@1.0.0`
 
 5. Drag and drop the exported IG file into the ‘Attach binary…’ area.
 6. Set as latest release and publish.

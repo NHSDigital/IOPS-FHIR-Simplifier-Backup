@@ -8,11 +8,11 @@ Please click [here](https://simplifier.net/guide/nhs-england-implementation-guid
 
 ### NHS England IG Use Cases
  
-<table class="regular assets" style="width:100%" title="NHS England Profile list">
+<table class="regular assets" style="width:100%">
  <thead>
    <tr>
-     <th class="width33">Organisation Data Service (ODS)</th>
-     <th class="width33">GP Connect Update Record </th>
+     <th class="width50">Organisation Reference Data (ORD)</th>
+     <th class="width50">Patient Facing Services (PFS) Prescrptions</th>
   </tr>
  </thead>
  <tbody>
