@@ -486,9 +486,9 @@
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
                     
                     //and move the items into the sub menus
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(5,29)); //A to M
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(29,51)); //N to O
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(51)); //P to Z
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(4,28)); //A to M
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(28,50)); //N to O
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(50)); //P to Z
                 } else {
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
@@ -518,6 +518,9 @@
                 var ptoz
 
                 $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent a').click(function(e) {   
+                    if ($(this).parent().parent().hasClass("submenu-list")) {
+                        return;
+                    }
                     e.stopPropagation(); 
                     e.preventDefault();
 
@@ -1104,6 +1107,8 @@
                 var iJSONCount=0;
                 var iExamplesCount=0;
                 var iUsageCount=0;
+                var iDetailedCount=0;
+                var iFeedbackCount=0;
                 $('div.tabcontent').each(function(index) {
                     if ($(this).attr("id") == "HTML View") {
                         iHTMLCount++;
@@ -1126,6 +1131,12 @@
                     } else if ($(this).attr("id") == "Usage") {
                         iUsageCount++;
                         $(this).attr("id","Usage" + iUsageCount);
+                    } else if ($(this).attr("id") == "Detailed") {
+                        iDetailedCount++;
+                        $(this).attr("id","Detailed" + iDetailedCount);
+                    } else if ($(this).attr("id") == "Feedback") {
+                        iFeedbackCount++;
+                        $(this).attr("id","Feedback" + iFeedbackCount);
                     }
                 });
                 // set unique id on all transposed fl table divs
@@ -1136,7 +1147,7 @@
                 });
                 //loop through all div's with id's
                 $('div').each(function(index) { 
-                    if ($(this).attr("id") != undefined) {
+                    if ($(this).attr("id") != undefined && $(this).attr("id") != "preview-content") {
                         // look for an h2, with either a matching id or page-title
                         // and update it to be unique
                         var sectionHeading = $(this).find("h2");
@@ -1145,6 +1156,10 @@
                                 sectionHeading.attr("id", sectionHeading.attr("id") + "-sectionheading");
                             } else if (sectionHeading.attr("id") == "page-title") {
                                 sectionHeading.attr("id", $(this).attr("id") + "-sectionheading");
+                            }
+                            var basedetails = $(this).find("div#elementdetails");
+                            if (basedetails != undefined && basedetails.length > 0){
+                                basedetails.attr("id", $(this).attr("id") + "-elementdetails");
                             }
                         }
                         //if the div is renderParent, shift its title into the alt of the img it contains
@@ -1156,10 +1171,109 @@
                     }
                 });
             }
+        </script>
+        
+        <script>
+
+            //code finds sub elements page
+            // and looks for the base details box table
+            function alterBaseElementOverrides() {
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    var profileName = hasSDH1[0].innerText.split("-")[2];
+                    var listOfElements = $('table.dict tbody tr td.structure')
+                    var allRows = $('table.dict tbody tr')
+                    var fromRow, toRow
+                    var lookFor
+                    var box
+
+                    $("div h2").each(function(index) {
+                        //sub element pages always have a lower case starting letter, profile, bindings etc are uppper case
+                        var headerText = $(this)[0].innerText
+                        var firstLetter = headerText.charAt(0);
+                        if (firstLetter === firstLetter.toLowerCase() && !headerText.startsWith("extension:")) {
+                            lookFor = profileName  + "." + headerText
+$('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert"><table class="dict baseFhir" title="Element Details"><tbody></tbody></table></div>').insertAfter($(this))
+			$(this)[0].innerHTML = "<code onclick='toggleCoreDetailsVisibility(this,false);return false;'>" + headerText + "</code>";
+                            box = $(this)[0].parentElement.querySelector("div[id$='elementdetails']");
+                            box.style.display = "none";
+                            for (var elementLoop = 0, elementCount = listOfElements.length-1; elementLoop <= elementCount; elementLoop++) {
+                                if (listOfElements[elementLoop].innerText == lookFor) {
+                                    fromRow = listOfElements[elementLoop].parentElement.rowIndex
+                                    if (elementLoop == elementCount) {
+                                        toRow = allRows.length-1
+                                    } else {
+                                        toRow = listOfElements[elementLoop+1].parentElement.rowIndex - 1
+                                    }
+                                    for (var rowLoop = fromRow; rowLoop <= toRow; rowLoop++) {
+                                       box.querySelector("table tbody").append(allRows[rowLoop].cloneNode(true))
+                                    }
+                                }
+                            }
+                        }                   
+                    });
+                }
+            }
+
+               //function flips valueset expansion table visibility
+            function toggleCoreDetailsVisibility(anchor,force) {
+                var detailsBox;
+                if (anchor.nodeName == "CODE") {
+                    detailsBox = anchor.parentElement.parentElement.querySelector("div[id$='elementdetails']");
+                } else if (anchor.nodeName == "H2") {
+                    detailsBox = anchor.parentElement.querySelector("div[id$='elementDetails']");
+                } else if (anchor.nodeName == "LI") {
+                    detailsBox =  anchor.parentElement.parentElement.parentElement.querySelector("div[id='" + anchor.querySelector("a").getAttribute("href").replace("#","") + "-elementdetails']");
+                } else if (anchor.nodeName == "SPAN") {
+                    detailsBox =  document.querySelector("div[id='" + anchor.innerText + "-elementdetails']");
+                
+                }
+                if (detailsBox != undefined){
+                    if (detailsBox.style.display == 'none' || force == true) {
+                        detailsBox.style.display = "block";
+                    } else {
+                        detailsBox.style.display = "none";
+                    }
+                }
+            }
+
+            function sidebarClickAndOpen() {
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    $('ul.nav-stacked li').each(function(index) {               
+                        var firstLetter = $(this)[0].innerText.charAt(0);
+                        if (firstLetter != "" && firstLetter === firstLetter.toLowerCase()) {
+                            $(this)[0].addEventListener('click', function(){
+                                toggleCoreDetailsVisibility(this, true);
+                                return false;
+                            });
+                        }
+                    });
+                }
+            }
+
+            function redirectTreeviewElementsToPage() {
+                //loop thru all spans in the tree
+                $('div.treetable-left-panel table.treetable tbody tr td.profile:first-child').each(function(index) {
+                    $(this).find('span:not([class]), span.constraints').each(function(index) {          
+                        var elementName = $(this)[0].innerText;   
+                        var divToFind = $("div[id='" + elementName + "-elementdetails']");
+                        if (divToFind != undefined && divToFind.length > 0){
+                            var pinPanel = $(this).parent().parent().find('td.details');
+                            if (pinPanel != undefined && pinPanel.length > 0){
+                                $('<p><a href="#'+elementName+'">View UK Core Guidance</a></p>').insertAfter(pinPanel.find("div:not([class])"))
+                            }
+                        }
+                    });
+                });
+            }
+        </script>
+        <script>
 
             //removes any development notice and footer if its being rendered in an iframe
             function pageInIframe() {
-                debugger;
                 if (window.frameElement !== null)
                 {
                     $('div#development-notice').remove();
@@ -1186,7 +1300,10 @@
                 addCodesSortButton();
                 wrapSideBar();
                 pageInIframe();
-                //fixWebAccessibility();
+                alterBaseElementOverrides();
+                sidebarClickAndOpen();
+                fixWebAccessibility();
+                redirectTreeviewElementsToPage();
                 handleSubMenuEvents();
                 updateFooterPosition();
             });

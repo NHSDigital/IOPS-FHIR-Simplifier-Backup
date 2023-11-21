@@ -7,8 +7,8 @@
 - name: identifier
   filename: identifier.page.md
 - name: telecom
-  filename: telecom-duplicate-2.page.md
+  filename: telecom.page.md
 - name: address
-  filename: address-duplicate-2.page.md
+  filename: address.page.md
 - name: partOf
   filename: partOf.page.md

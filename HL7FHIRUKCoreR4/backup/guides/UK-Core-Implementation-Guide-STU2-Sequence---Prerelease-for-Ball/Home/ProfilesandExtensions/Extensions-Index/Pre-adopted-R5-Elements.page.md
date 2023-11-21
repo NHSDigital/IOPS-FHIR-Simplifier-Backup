@@ -3,11 +3,6 @@ topic: Library-Extensions-PreAdopt-82902
 ---
 ## {{page-title}}
 
-<div markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This guidance and list underwent Clinical and Technical Assurance during Sprint 6. This is a new content  added to UK Core and should undergo review in this STU2 ballot.
-</div>
-
 The following [R5 elements](https://hl7.org/fhir/versions.html#extensions) have been agreed as suitable to be included for use with the UK Core {{pagelink:Library-Profiles-32647,text:Profiles}} because the use case for pre-adopting an R5 element as an Extension, rather than creating a UK Core specific extension is fully met.
 <br><br>
 As of 19/05/2023, the package to enable pre-adopted elements to function as per the guidance, is not available. To enable rendering and validation of these pre-adopted elements, we have provided UKCore proxy extensions, as per the current threads on [chat.fhir.org](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/R5.20Extensions.20for.20R4.3F), with the R5 canonical urls. These proxy extensions will be retired once the HL7 package is released.

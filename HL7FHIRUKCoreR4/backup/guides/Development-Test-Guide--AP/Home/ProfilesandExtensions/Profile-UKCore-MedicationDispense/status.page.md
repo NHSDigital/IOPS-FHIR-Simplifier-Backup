@@ -1,16 +1,5 @@
 ## `status` 
 
-<script>
-    findAndCopyDictionary('MedicationDispense.status')
-</script>
-
-<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert">
-<table class="baseFhir" title="Element Details">
-
-</table>
-</div>
-</div>
-
 **It is expected that most implementations will require the use of status to support workflow.**
 
 The status can be used to determine the overall status of dispense request; however, it does not cater for the granularity that prescription tracking software can offer.

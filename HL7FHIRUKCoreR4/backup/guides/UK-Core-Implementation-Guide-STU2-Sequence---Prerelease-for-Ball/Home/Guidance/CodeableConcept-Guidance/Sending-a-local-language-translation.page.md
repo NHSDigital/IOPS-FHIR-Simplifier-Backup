@@ -1,10 +1,5 @@
 ## Sending a local language translation
 
-<div markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This is a new guidance added to UK Core and is undergoing review in this STU2 ballot.
-</div>
-
 Where a supplier wants to send the local language translation with a description or text field, they can use the HL7 Core-defined Extension <a href="https://hl7.org/fhir/R4/extension-translation.html">translation</a>. 
 
 The example below demonstrates how a translation SHOULD be sent.

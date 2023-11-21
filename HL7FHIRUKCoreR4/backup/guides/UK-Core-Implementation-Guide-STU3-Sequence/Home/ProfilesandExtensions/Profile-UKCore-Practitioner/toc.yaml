@@ -3,18 +3,18 @@
 - name: Bindings
   filename: Bindings.page.md
 - name: identifier
-  filename: identifier-duplicate-2.page.md
+  filename: identifier.page.md
 - name: name
-  filename: name-duplicate-3.page.md
+  filename: name.page.md
 - name: telecom
-  filename: telecom-duplicate-2.page.md
+  filename: telecom.page.md
 - name: address
   filename: address.page.md
 - name: gender
-  filename: gender-duplicate-2.page.md
+  filename: gender.page.md
 - name: photo
-  filename: photo-duplicate-2.page.md
+  filename: photo.page.md
 - name: qualification
   filename: qualification.page.md
 - name: communication
-  filename: communication-duplicate-2.page.md
+  filename: communication.page.md

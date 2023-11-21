@@ -6,8 +6,6 @@
   filename: ExtensionLibrary
 - name: Profiles Index
   filename: ProfilesIndex.page.md
-- name: Sprint 7 Proposals
-  filename: Sprint-7-Proposals.page.md
 - name: Profile UKCore-AllergyIntolerance
   filename: Profile-UKCore-AllergyIntolerance
 - name: Profile UKCore-Appointment

@@ -367,7 +367,10 @@ These changes are not currently approved and are submitted for comment as part o
                 var atom
                 var ntoz
 
-                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent a').click(function(e) {   
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent a').click(function(e) {  
+                    if ($(this).parent().parent().hasClass("submenu-list")) {
+                        return;
+                    } 
                     e.stopPropagation(); 
                     e.preventDefault();
 
