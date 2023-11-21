@@ -1094,6 +1094,10 @@
                 $('div.tabcontent[id^="Examples"]').each(function(index) {
                     $(this).prev("p:empty").remove();
                 });
+                //remove empty <p> before examples
+                $('div.tabcontent[id^="Feedback"]').each(function(index) {
+                    $(this).prev("p:empty").remove();
+                });
             }
 
             //fix wcag compliance issues caused by the way simplifier renders
@@ -1145,6 +1149,8 @@
                 var iJSONCount=0;
                 var iExamplesCount=0;
                 var iUsageCount=0;
+                var iDetailedCount=0;
+                var iFeedbackCount=0;
                 $('div.tabcontent').each(function(index) {
                     if ($(this).attr("id") == "HTML View") {
                         iHTMLCount++;
@@ -1167,6 +1173,12 @@
                     } else if ($(this).attr("id") == "Usage") {
                         iUsageCount++;
                         $(this).attr("id","Usage" + iUsageCount);
+                    } else if ($(this).attr("id") == "Detailed") {
+                        iDetailedCount++;
+                        $(this).attr("id","Detailed" + iDetailedCount);
+                    } else if ($(this).attr("id") == "Feedback") {
+                        iFeedbackCount++;
+                        $(this).attr("id","Feedback" + iFeedbackCount);
                     }
                 });
                 // set unique id on all transposed fl table divs
@@ -1208,21 +1220,49 @@
             //code finds sub elements page
             // and looks for the base details box table
             function alterBaseElementOverrides() {
-                $("div h2").each(function(index) {
-                    var firstLetter = $(this)[0].innerText.charAt(0);
-                    if (firstLetter === firstLetter.toLowerCase()) {
-                        var box  = $(this)[0].parentElement.querySelector("div[id$='elementdetails']");
-                        if (box != undefined) {
-                            $(this)[0].innerHTML = "<code onclick='toggleCoreDetailsVisibility(this,false);return false;'>" + $(this)[0].innerText + "</code>";
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    var profileName = hasSDH1[0].innerText.replace("StructureDefinition-UKCore-", "");
+
+                    var listOfElements = $('table.dict tbody tr td.structure')
+                    var allRows = $('table.dict tbody tr')
+                    var fromRow, toRow
+                    var lookFor
+                    var box
+
+                    $("div h2").each(function(index) {
+                        //sub element pages always have a lower case starting letter, profile, bindings etc are uppper case
+                        var headerText = $(this)[0].innerText
+                        var firstLetter = headerText.charAt(0);
+                        if (firstLetter === firstLetter.toLowerCase()) {
+                            lookFor = profileName  + "." + headerText
+$('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert"><table class="dict baseFhir" title="Element Details"><tbody></tbody></table></div>').insertAfter($(this))
+			$(this)[0].innerHTML = "<code onclick='toggleCoreDetailsVisibility(this,false);return false;'>" + headerText + "</code>";
+                            box = $(this)[0].parentElement.querySelector("div[id$='elementdetails']");
                             box.style.display = "none";
-                        }
-                    }                   
-                });
+                            for (var elementLoop = 0, elementCount = listOfElements.length-1; elementLoop <= elementCount; elementLoop++) {
+                                if (listOfElements[elementLoop].innerText == lookFor) {
+                                    fromRow = listOfElements[elementLoop].parentElement.rowIndex
+                                    if (elementLoop == elementCount) {
+                                        toRow = allRows.length-1
+                                    } else {
+                                        toRow = listOfElements[elementLoop+1].parentElement.rowIndex - 1
+                                    }
+                                    for (var rowLoop = fromRow; rowLoop <= toRow; rowLoop++) {
+                                       box.querySelector("table tbody").append(allRows[rowLoop].cloneNode(true))
+                                    }
+                                }
+                            }
+                        }                   
+                    });
+                }
             }
 
                //function flips valueset expansion table visibility
             function toggleCoreDetailsVisibility(anchor,force) {
                 var detailsBox;
+                debugger;
                 if (anchor.nodeName == "CODE") {
                     detailsBox = anchor.parentElement.parentElement.querySelector("div[id$='elementdetails']");
                 } else if (anchor.nodeName == "H2") {
@@ -1252,28 +1292,6 @@
                 }
             }
         </script>
-
-    <script>
-        function findAndCopyNarrative(nameToCopy) {
-            var listOfElements = $('table.dict tbody tr td.structure')
-            
-            
-            
-            .each(function(index) {
-                    var firstLetter = $(this)[0].innerText.charAt(0);
-                    if (firstLetter === firstLetter.toLowerCase()) {
-                        var box  = $(this)[0].parentElement.querySelector("div[id$='elementdetails']");
-                        if (box != undefined) {
-                            $(this)[0].innerHTML = "<code onclick='toggleCoreDetailsVisibility(this,false);return false;'>" + $(this)[0].innerText + "</code>";
-                            box.style.display = "none";
-                        }
-                    }                   
-                });
-            }
-        </script>
-
-   
-
         <script>
 
             //removes any development notice and footer if its being rendered in an iframe
@@ -1304,9 +1322,9 @@
                 addCodesSortButton();
                 wrapSideBar();
                 pageInIframe();
-                fixWebAccessibility();
                 alterBaseElementOverrides();
                 sidebarClickAndOpen();
+                fixWebAccessibility();
                 handleSubMenuEvents();
                 updateFooterPosition();
             });

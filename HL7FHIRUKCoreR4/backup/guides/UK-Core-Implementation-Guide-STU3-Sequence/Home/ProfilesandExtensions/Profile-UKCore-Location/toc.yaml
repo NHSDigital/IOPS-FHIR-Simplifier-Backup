@@ -1,7 +1,7 @@
 - name: Index
   filename: Index.page.md
 - name: identifier
-  filename: identifier-duplicate-2.page.md
+  filename: identifier.page.md
 - name: telecom
   filename: telecom.page.md
 - name: address

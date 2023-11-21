@@ -111,6 +111,16 @@ from
 ```
 </span>
 </div>
+
+<div id="Detailed" class="tabcontent">
+  <h3>Detailed Descriptions</h3>
+{{dict}}
+</div>
+
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-BodyTemperature/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BodyTemperatur</a>.
+</div>
 </nocheck>
 
 ### Example Usage Scenarios ###
