@@ -1,3 +1,7 @@
+---
+topic: ErrorHandling-MessageRouting
+---
+
 ## Endpoint Catalogue - Message routing.
 
 <div id="message_routing"></div>

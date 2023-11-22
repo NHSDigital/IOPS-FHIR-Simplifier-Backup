@@ -2,7 +2,7 @@
 topic: APP4-ValidationResponsePayload
 ---
 
-## {{page-title}}
+# {{page-title}}
 
 ### Payload for a Validation Response, using Service Request
 

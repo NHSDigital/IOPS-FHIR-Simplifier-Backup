@@ -2,7 +2,7 @@
 topic: APP4-InterimValidationResponsePayload
 ---
 
-## {{page-title}}
+# {{page-title}}
 
 ### Payload for a Interim Validation Response, using Service Request
 
