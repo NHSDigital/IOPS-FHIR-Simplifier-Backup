@@ -6,6 +6,10 @@ The following diagram illustrates a simplified, high-level “as-is” business 
 
 {{render:path-diagram-high-level-business-process}}
 
+{{render:path-diagram-primary-care-as-is}}
+
+{{render:path-diagram-primary-care-to-be}}
+
 The process is described in more detail below (each of the numbered steps relates to the corresponding process box in the diagram):
 
 1.  A Requesting Health Care Professional (HCP), for example a GP, determines that a patient requires a pathology test.
