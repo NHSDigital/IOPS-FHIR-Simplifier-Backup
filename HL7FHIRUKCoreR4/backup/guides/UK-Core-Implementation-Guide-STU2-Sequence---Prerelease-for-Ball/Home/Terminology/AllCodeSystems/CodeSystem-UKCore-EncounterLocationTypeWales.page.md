@@ -1,10 +1,5 @@
 ## UK Core Encounter Location Type Wales
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This CodeSystem underwent Clinical and Technical Assurance during Sprint 4. This is a new CodeSystem added to UK Core, and should undergo review in this STU2 ballot.
-</div>
-
 @```
 from
 	CodeSystem

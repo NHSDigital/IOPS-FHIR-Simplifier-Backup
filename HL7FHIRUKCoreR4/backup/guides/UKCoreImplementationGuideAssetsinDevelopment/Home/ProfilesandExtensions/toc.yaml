@@ -16,9 +16,12 @@
   filename: ProfileUKCore-Device
 - name: Profile UKCore-DocumentReference
   filename: ProfileUKCore-DocumentReference
+- name: Profile DocumentReference-Imaging
+  filename: Profile-DocumentReference-Imaging
 - name: Profile UKCore-OrganizationAffiliation
   filename: Profile-UKCore-OrganizationAffiliation
 - name: Profile UKCore-Provenance
   filename: ProfileUKCore-Provenance
 - name: Profile UKCore-RequestGroup
   filename: Profile-UKCore-RequestGroup
+

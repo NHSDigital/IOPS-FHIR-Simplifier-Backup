@@ -3,11 +3,6 @@ topic: Profile-Encounter-79976
 ---
 # StructureDefinition-UKCore-Encounter
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This Profile underwent Clinical and Technical Assurance during Sprint 4. This is a new Profile added to UK Core and undergoing review in this STU2 ballot.
-</div>
-
 <div id="transpose">
 @```
 from
