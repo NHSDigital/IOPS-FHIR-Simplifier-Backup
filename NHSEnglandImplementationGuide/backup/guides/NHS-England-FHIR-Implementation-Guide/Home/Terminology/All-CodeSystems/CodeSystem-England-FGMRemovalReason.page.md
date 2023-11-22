@@ -18,6 +18,4 @@ select
 <h4><a href='https://simplifier.net/NHS-England-Implementation-Guide/CodeSystem-England-FGMRemovalReason/~issues?level=File' target="_blank">Propose a change to CodeSystem-England-FGMRemovalReason </a></h4>
 </div>
 
-
-
 ---

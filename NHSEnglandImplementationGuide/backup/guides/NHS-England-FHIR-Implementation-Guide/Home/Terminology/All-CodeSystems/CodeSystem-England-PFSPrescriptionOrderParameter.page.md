@@ -17,6 +17,4 @@ select
 <h4><a href='https://simplifier.net/NHS-England-Implementation-Guide/CodeSystem-England-PFSPrescriptionOrderingParameter/~issues?level=File' target="_blank">Propose a change to CodeSystem-England-PFSPrescriptionOrderParameter </a></h4>
 </div>
 
-
-
 ---
