@@ -1,3 +1,7 @@
+---
+topic: Core-StandardPattern
+---
+
 ## {{page-title}}
 
 Most implementations of the BaRS that are applying the standard to support a particular use case or operational workflow will follow the same basic set of foundational operations with little deviation. 

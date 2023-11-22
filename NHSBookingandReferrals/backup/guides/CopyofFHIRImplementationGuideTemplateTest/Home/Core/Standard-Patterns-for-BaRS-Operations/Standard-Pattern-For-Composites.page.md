@@ -1,5 +1,5 @@
 ---
-topic: core-standardpattern
+topic: core-SPComposites
 ---
 
 ## {{page-title}}

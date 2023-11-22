@@ -1,3 +1,7 @@
+---
+topic: core-TIFailureScenarios
+---
+
 ## Failure Scenarios
 
 When a message is received, the X-Request-ID and X-Correlation-ID header values are stored appropriately. In this example, this occurs ahead of the message being processed but after any access control is applied by means of the other available headers.

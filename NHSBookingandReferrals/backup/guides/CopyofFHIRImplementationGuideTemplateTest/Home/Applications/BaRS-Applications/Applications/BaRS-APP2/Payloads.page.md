@@ -6,20 +6,19 @@ topic: APP2-Payloads
 The specific guidance around the use of key FHIR resources is described below. 
 
 ### MessageHeader Resource
-The MessageHeader resource is required as part of the technical capability of making a booking or referral, rather than providing clinical or administrative content for the end users; the function of all other resources outlined. This resource holds key information about where the request has come from (*MessageHeader.source*), who it is intended for (*MessageHeader.destination*), what type of request it is (*MessageHeader.eventCoding*) and how to start interpreting the request (*MessageHeader.focus*). 
+{{pagelink:core-SPMessageHeader, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
-Any Receiver of the request 'message bundle' **must** first check the *MessageHeader.destination*, clarify the *MessageHeader.destination.receiver.reference* refers to their Organisation and the *MessageHeader.destination.endpoint* is the Healthcare Service ID they expected to be processing the request on behalf of. 
+The MessageHeader resource for the Booking Request should have the following resource elements set as follows:
+* **MessageHeader.eventCoding** - **must** be populated with 'booking-request'
+* **MessageHeader.reasonCode** - **must** be 'new' or 'update'
+* **MessageHeader.focus** - **must** reference the Appointment FHIR resource
+* **MessageHeader.definition** - **must** adhere to [Booking Request](https://simplifier.net/NHSBookingandReferrals/MessageDefinition-BARS-MessageDefinition-Booking-Request/~json) Message definition
 
-The type of request **must** be check next and there are three important elements which drive workflow: 
-* **eventCoding** - determines the type of request, either booking or referral. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-events-bars).
-* **reasonCode** - indicates whether the message is new or an update to something the Receiver already has. The value **must** be populated from this [CodeSystem](https://simplifier.net/NHSBookingandReferrals/message-reason-bars).
-* **defintion** - specifies the [MessageDefinition](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=MessageDefinition&sortBy=DisplayName) the request **must** adhere to and **must** be rejected if it fails to do so.
-
-Once the above checks have been made the detail of the request can start to be unpacked and processed. The *MessageHeader.focus* provides the key to doing this. It indicates the lens through which the request 'message bundle' **must** be interpreted. If it is a referral, this element will point to the ServiceRequest and, where it is a booking, it will be the Appointment resource. Most other FHIR resources in the 'message bundle' with link to or from the 'focus' resource. 
-
-When generating asynchronous Response messages (as opposed to an HTTP synchronous response (200) message), where a Receiver is sending a 'message bundle' back to an originating Sender (this is not a workflow in the BaRS UEC Applications but is used in other BaRS Applications and fundamental to BaRS workflows in general). Firstly, the Sender, in the original request **must** include an identifier on which the Receiver is able to driect a respone back to them, regardless of whether they expect a response or not. The Sender **must** include this identifier (their reference on the Endpoint Catalogue) under *MessageHeader.source.endpoint*. The Receiver **must** take and store this value, along with the *Bundle.Id* value, to send a response message back to the Sender through the BaRS API Proxy.
-
-If the workflow dictates a asynchonous response is to be sent, the Receiver **must** populate *MessageHeader.response.identifier* with the *Bundle.Id* of the original request 'message bundle' and set the *MessageHeader.response.code* value to 'ok'. 
+The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
+* **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
+* **MessageHeader.reasonCode** - **must** be 'new' or 'update'
+* **MessageHeader.focus** - **must** reference the ServiceRequest FHIR resource
+* **MessageHeader.definition** - **must** adhere to [Referral Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-servicerequest-request-referral) Message definition
 
 ### ServiceRequest Resource
 The primary resource in a referral is the ServiceRequest resource. When the request 'message bundle' is created by the Sender and processed by the Receiver, this is the starting point from which the referral is understood. It provides either the detail or references to all key FHIR resources, for exmaple, the Patient, Encounter and Careplan. The guidance for this resource below goes into more element level detail. A key point when a Sender builds the referral FHIR 'message bundle' is to ensure the *MessageHeader.focus* references the ServiceRequest resource. 

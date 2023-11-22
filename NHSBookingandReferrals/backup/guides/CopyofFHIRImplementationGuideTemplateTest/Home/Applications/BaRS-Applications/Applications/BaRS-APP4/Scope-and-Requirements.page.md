@@ -6,13 +6,13 @@ topic: APP4-ScopeAndRequirements
 ## Scope Overview
 
 This BaRS Application (application 4) covers only use cases:
-* 999 Ambulance Service Trust (AST) validation request to Clinical Assessment Service (CAS)
+* 999 Ambulance Service Trust (AST) Referral into Clinical Assessment Service (CAS) for Validation
 
 
 The payloads and workflow have been designed to support these services. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
 
 <br>
-For this application we will be referring to the actors as 'Requester' and the 'Responder'. A Requester would be the end that created a validation request to be undertaken and completed by the Responder. A Responder would be the end completing the validation request and responding back with the outcome of the assessment to the Requester. Below you can see a table describing this.
+For this application we will be referring to the actors as 'Requester' and the 'Responder'. The Requester is the provider system that creates and sends the Validation Request to the Responder for completion. The Responder is the provider system that completes the validation request and responds back with the outcome of the assessment to the Requester. The table below summarises this.
 <br>
 <br>
 <img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/ValidationActors.svg" width="500"></img></a>
@@ -28,10 +28,10 @@ For this application we will be referring to the actors as 'Requester' and the '
 * The service **must** be configured within the BaRS infrastructure (Endpoint Catalogue) before requests can be made to the service
 
 **Validation Request**
-* A validation request is a request for the clinical validation of a triage outcome from one service to another 
-* The validation request can be sent without having to establish the capacity the service offers
-* The validation request  will contain primarily clinical information, indicating the need of the individual and **should** state the anticipated action required by the Receiving service
-* Supporting information, other than the assessment, is expected to be included in a validation request, if collected, including:
+* A Validation Request is a request for the clinical validation of a triage outcome from one service to another 
+* The Validation Request can be sent without having to establish the capacity the service offers
+* The Validation Request  will contain primarily clinical information, indicating the need of the individual and **should** state the anticipated action required by the Responding service
+* Supporting information, other than the assessment, is expected to be included in a Validation Request, if collected, including:
     * new or existing safeguarding concerns
     * locally held Special Patient Notes
     * external information sources used during initial assessment prior to referral
@@ -68,61 +68,62 @@ For this application we will be referring to the actors as 'Requester' and the '
 
 **Update Validation Request**
 *	The Requester **must** be capable of updating any Validation Request made by them, within the current consultation or after the consultation event
-*	The Requester **must** retrieve the Validation Request to be updated from the Responder prior to cancellation to ensure they are working with the most up-to date version and it has not already been completed
-*	The Requester **must** provide visible confirmation to the end user of the status returned by the Responder, i.e. whether the original Validation Request was successfully updated or not
+*	The Requester **must** retrieve the Validation Request to be updated from the Responder prior to cancellation, to ensure they are working with the most up-to date version and it has not already been completed
+*	The Requester **must** provide visible confirmation of the status returned by the Responder to the end-user , i.e. whether the original Validation Request was successfully updated or not
 *	If the update fails, the Responder **must** respond with the most appropriately aligned error. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail
-*	The Responder **must** store all previous versions of the referral
-*	The Requester **must <ins>not</ins>** be required to inform the patient of the updating of the referral.  Business/clinical responsibility for informing the patient must remain with the Requester
+*	The Responder **must** store all previous versions of the Validation Request
+*	The Requester **must <ins>not</ins>** be required to inform the patient of the updating of the Validation Request.  Business/clinical responsibility for informing the patient must remain with the Requester
 *  The Requester  **should not** send updates after receiving an Interim Response
 
 
 **Cancel Validation Request** 
 *	The Requester **must** be capable of cancelling any Validation Request made by them, within the current consultation or after the consultation event
 *	The Requester  **must** retrieve the Validation Request to be cancelled from the Responder prior to cancellation, to ensure they are working with the most up-to date version and it has not already been completed
-*	The Requester  **must** provide visible confirmation to the end user of the status returned by the Responder, i.e. whether the original Validation Request was successfully cancelled or not
+*	The Requester  **must** provide visible confirmation of the status returned by the Responder to the end user , i.e. whether the original Validation Request was successfully cancelled or not
 *	If the update fails the Responder **must** respond with the most appropriately aligned error 
-*	The Responder **must** store all previous versions of the referral
+*	The Responder **must** store all previous versions of the Validation Request
 *	The Responder **must <ins>not</ins>** be required to inform the patient of the cancellation of the Validation Request.  Business/clinical responsibility for informing the patient must remain with the Requester
 
 **Interim Validation Response**
 *  The Responder **must** send an Interim Validation Response when the clinician starts the consultation in the CAS system. This **must not** be triggered by a clinician attempting to contact the patient or by a welfare call.
 *  The Requester **must** process the Interim Validation Response, update the case in the CAD and display the status change to the end user.
 
-**Final Validation Response**
-*  The Responder **must** send an Final Response when the clinician has completed the consultation in the CAS system.
-*  The Requester **must** process the final response, update the case in the CAD and display the status change to the end user.
-* The status on the Final Validation Response **must** indicate to the end user if a ambulance is required and the case has moved to dispatch, or whether the case can be closed or has been closed automatically with no further action required.
+**Validation Response**
+*  The Responder **must** send an full Validation Response when the clinician has completed the consultation in the CAS system.
+*  The Requester **must** process the Validation Response, update the case in the CAD and display the status change to the end user.
+* The status on the Validation Response **must** indicate to the end user if a dispatch is required or not.
+* The Requester **must** use status of the Validation Response to trigger system behaviour that ensures that cases that require a dispatch are acted on within an appropriate timescale, and cases that do not require a dispatch are closed
 * The final triage should form part of the consultation history of the case in the CAD. 
 * All triage instances should form part of the audit in the CAD.
 
 **Incident Location**
-*  The Requester  **must** include the incident location in the referral request
-*  The Responder  **must** include the incident location in the referral response
+*  The Requester  **must** include the incident location in the Validation Request
+*  The Responder  **must** include the incident location in the Validation Response
 *  All Locations **must** include a co-ordinate (Eastings/Northings, Lat/Long or What3Words equivalent) or a property location identifier (UPRN, Address and Postcode)
 
 **Timings**
 *  The Requester **must** send the Clock start date/Time (T5). Definition as per AmbSys specification
-*  The Responder **must** send the validation breach time
-*  The Requester **must** send the dispatch (or disposition) code identification datetime in the **final response**:
+*  The Requester **must** send the validation breach time
+*  The Responder **must** send the dispatch (or disposition) code identification datetime in the **Validation Response**:
     - If the Validation ARP code is the same or downgraded from the original 999 triage, this **must** be populated with the original 999 Clock start date/Time (T5).
     - If the Validation ARP code is upgraded from the original 999 triage this **must** be populated with the Dispatch/Disposition code identification date/time determined by the CAS
 
 
 **Scene Safety**
-*  The Requester **must** send scene safety information in the referral
-*  Where scene safety questions have not been asked, the Flag resource relating to scene safety  **must** be populated with 'UNK' unknown.
+*  The Requester **must** send scene safety information in the Validation Request
+*  Where scene safety questions have not been asked, the *Flag* resource relating to scene safety  **must** be populated with 'UNK' unknown.
 *  The Responder **should** populate the scene safety flag in their system and **must** display scene safety information to end users.
-*  The Responder **must** send scene safety information in the final response, including any updates.
-*  The Requester **should** update their system scene safety flag with any updates in the response and **must** display scene safety updates to end users
+*  The Responder **must** send scene safety information in the Validation Response, including any updates.
+*  The Requester **should** update their system scene safety flag with any updates in the Validation Response and **must** display scene safety updates to end users
 
 **Contacts** 
-* A minimum of one contact (patient or third party) with a contact method (phone, email, etc.) of phone **must** be provided in requests
+* A minimum of one contact (patient or third party) with a contact method (phone, email, etc.) of phone **must** be provided in the Validation Request
 * All contacts **must** have a rank
 * There **must** be only one contact with a rank of 1
 * All contacts **must** have at least one contact method (phone, email, etc.)
 * All contact methods **must** have a rank
 * There **must** be only one contact method with a rank of 1
-* The contact ranked 1 and the contact method ranked 1 **must** be the primary callback for the request
+* The contact ranked 1 and the contact method ranked 1 **must** be the primary callback for the Validation Request
 <br>
 <br>
 ### Audit
