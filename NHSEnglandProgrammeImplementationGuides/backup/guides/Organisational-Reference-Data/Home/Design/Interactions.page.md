@@ -3,7 +3,7 @@
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
 
-### Query for an FGM indicator
+<!--### Query for an FGM indicator
 
 **<font color="#00008B">GET</font>** /Flag?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|&lt;nhs-number&gt;
 
@@ -76,5 +76,5 @@ A FHIR Flag conforming to the UKCore-Flag profile. Values set as per {{pagelink:
 | Outcome         | Response                       |
 | ----------- | ------------------------  |
 | Flag removed       | Flag - {{pagelink:Home/Examples/Example---A-removed-FGM-flag.page.md}}|
-| Error or validation failure      | OperationOutcome - {{pagelink:Home/Build/Errorhandling.page.md}}|
+| Error or validation failure      | OperationOutcome - {{pagelink:Home/Build/Errorhandling.page.md}}|-->
 

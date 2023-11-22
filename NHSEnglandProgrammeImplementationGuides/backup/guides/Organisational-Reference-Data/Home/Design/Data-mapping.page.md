@@ -2,7 +2,7 @@
     
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
-An FGM-IS indicator (family history of FGM) has been modelled around a FHIR R4 Flag. Refer to {{pagelink:Home/FHIRAssets/AllAssets/Profiles/UKCore-Flag.page.md}} profile for further guidance. 
+<!--An FGM-IS indicator (family history of FGM) has been modelled around a FHIR R4 Flag. Refer to {{pagelink:Home/FHIRAssets/AllAssets/Profiles/UKCore-Flag.page.md}} profile for further guidance. 
 
 | Source Data item               | Cardinality |Target FHIR Element                 | Notes         
 |--|--|
@@ -10,4 +10,4 @@ An FGM-IS indicator (family history of FGM) has been modelled around a FHIR R4 F
 |NHS Number|1..1|Flag.identifier:nhsNumber|type: <a href='http://hl7.org/fhir/R4/search.html#token'>token</a><br>system must be "https://fhir.nhs.uk/Id/nhs-number"<br>value must be a verified NHS number<br>note: a resource reference is not required for FGM-IS. E.g. - {{pagelink:Home/Examples/Example---An-active-FGM-flag.page.md}} 
 |Family history of FGM indicator|1..1|Flag.code.coding|system must be "http://snomed.info/sct"<br>code must be "902961000000107"<br>display must be "Family history of FGM (female genital mutilation)"
 |Status|1..1|Flag.status|See {{pagelink:Home/FHIRAssets/AllAssets/Profiles/UKCore-Flag.page.md}}
-|Removal Reason|0..1|reference {{pagelink:Home/FHIRAssets/Extensions.page.md}}|must be set when Flag.status is not 'active'. E.g. {{pagelink:Home/Examples/Example---A-removed-FGM-flag.page.md}} <br>set on PUT /Flag interaction. E.g. {{pagelink:Home/Design/Interactions.page.md}}
+|Removal Reason|0..1|reference {{pagelink:Home/FHIRAssets/Extensions.page.md}}|must be set when Flag.status is not 'active'. E.g. {{pagelink:Home/Examples/Example---A-removed-FGM-flag.page.md}} <br>set on PUT /Flag interaction. E.g. {{pagelink:Home/Design/Interactions.page.md}}-->
