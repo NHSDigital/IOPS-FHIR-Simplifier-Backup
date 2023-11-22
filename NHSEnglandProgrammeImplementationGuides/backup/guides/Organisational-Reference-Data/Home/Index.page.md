@@ -1,6 +1,6 @@
 ## What is Organisation Data Service (ODS)?
 
-This implementation guide provides guidance on implementing the Organisation Data Service FHIR R4 API. For further details refer to {{pagelink:Home/Introduction}}
+This implementation guide provides guidance on implementing the Organisation Reference Data FHIR R4 API. For further details refer to {{pagelink:Home/Introduction}}
 
 The Organisation Data Service (ODS) issues and manages unique identification codes (ODS codes) and accompanying reference data for organisations that interact with any area of the health and social care system. 
 

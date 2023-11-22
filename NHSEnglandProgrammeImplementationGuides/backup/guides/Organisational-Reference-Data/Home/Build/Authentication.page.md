@@ -2,7 +2,7 @@
 
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
-## Security and authorisation
+<!--## Security and authorisation
 The FGM-IS FHIR R4 API  will be hosted on the <a href='https://digital.nhs.uk/services/api-platform'>NHS England API Platform</a> which will provide the necessary <a href='https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation#top'>Security and Authorisation</a>.
 
 In order to be able to make API calls into Spine for the FGM-IS FHIR R4 API in a live (or path-to-live) Spine environment, clients first need to go through a <a href='https://digital.nhs.uk/developer/guides-and-documentation/digital-onboarding'>digital onboarding</a> process with NHS England.
@@ -23,5 +23,5 @@ The above will be captured in header parameters on the API calls:
 - Authorization = Bearer &lt;jwt_token_string&gt;
 - NHSD-Session-URID  =  &lt;healthcare worker role ID&gt;
 
-For example, information passed in the form of an OAuth Access (bearer) token - specifically an encoded JSON web token can be found in the <a href='https://developer.nhs.uk/apis/spine-core/security_jwt.html'>Spine Core API spec</a>.
+For example, information passed in the form of an OAuth Access (bearer) token - specifically an encoded JSON web token can be found in the <a href='https://developer.nhs.uk/apis/spine-core/security_jwt.html'>Spine Core API spec</a>.-->
 

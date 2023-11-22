@@ -2,7 +2,7 @@
 
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
-This page is used to describe how errors are handled.
+<!--This page is used to describe how errors are handled.
 
 ## Errors
 
@@ -43,4 +43,4 @@ E.g. {{pagelink:Home/Examples/Example---Invalid-NHS-Number.page.md}}
 |400 | error | invalid | INVALID_VALUE | ID specified in the URL does not match the ID specified in the resource
 |400 | error | invalid | VALIDATION_ERROR | Removal reason must be supplied
 |400 | error | invalid | PRECONDITION_FAILED | Missing or invalid head parameter
-|403 | error | forbidden |ACCESS_DENIED | The sender or receiver's ASID is not authorised for this interaction
+|403 | error | forbidden |ACCESS_DENIED | The sender or receiver's ASID is not authorised for this interaction-->
