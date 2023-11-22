@@ -22,6 +22,12 @@
 <li>Swap Examples to Simplifier templating</li>
 <li>Swap ValueSets to Simplifier templating</li>
 <li>Swap Extensions to Simplifier templating</li>
+<li>Altered Profiles sub menu from hover to click to show</li>
+<li>Added Detailed view to Profile tabs</li>
+<li>Added Feedback to Profile tabs, which links to the relevant Simplifier issues page to raise an issue for the profile</li>
+<li>Added "View UK Core guidance" link in pinnable panel, for elements where additional guidance is detailed on a page</li>
+<li>Added clickable element headers, that show / hide the relevant element details from the Detailed view</li>
+<li>Clicking an element in the left hand navigation list automatically displays the detailed view as per the above item</li>
 </ul>
 <b>C&TA Sprint 7 Assets:</b><br>
 <ul>
@@ -33,9 +39,11 @@
 <li>Improved cardinality on loinc / snomedCT, and systolicBP / diastolicBP slices</li>
 <li>Moved loinc / snomedCT slicing on Observation.component from <code>UKCore-Observation-VitalSigns</code> to <code>UKCore-Observation-VitalSigns-BloodPressure</code> as they only applied for this derived profiles</li>
 <li>Improved guidance on the use of code, value[x], and component elements for <code>UKCore-Observation-AverageBloodPressure</code> and <code>UKCore-Observation-VitalSigns-BloodPressure</code></li>
-<br>
 <ul>
-
+<b>STU2 Ballot Assets:</b><br>
+<ul>
+<li>Synchronization of STU2 Ballot reconciliation actions into STU3 assets and implementation guidance</li>
+</ul>
 </tr>
 
 <tr>
@@ -53,14 +61,17 @@
 <li>Extension based example id's and filenames have been updated</li>
 <li>Example sub pages have made consistent regarding the presence of Tree View</li>
 <li>New Examples Index page, showing examples alphabetically based on their type (profile / extension), the sprint they were added in, and a summary for all examples per resource type</li>
-<li>NHS England IG style sort buttons have been added to CodeSystem / ValueSet tables</li>
+<li>NHS Digital IG style sort buttons have been added to CodeSystem / ValueSet tables</li>
 <li>Intelligent expansion of tree nodes, to ensure altered nodes are displayed</li>
-<li>Intelligent redirection withing Profile tree views, to guidance pages for referenced profiles / extensions, and bound valuesets</li>
-<li>Intelligent auto hiding of expanded ValueSets, click the 'concepts' link to show / hide the table</li>
+<li>Intelligent redirection within Profile tree views, to UK Core guidance pages for referenced profiles / extensions, and bound valuesets</li>
+<li>Intelligent auto hiding of expanded ValueSets, with a clickable 'concepts' link to show / hide the table</li>
+<li>Intelligent redirection of SNOMED CT concepts in examples and ValueSet tables to the SNOMED CT UK Terminology Browser</li>
 <li>CSS and HTML id changes to improve Web Accessibility</li>
 <li>Fix unclosed tables causing Bindings to appear incorrectly</li>
 <li>Add missing FQL for UKCore-ServiceRequest-Lab details</li>
 <li>Added links to raise issues, on new assets callout box</li>
+<li>Added Usage view to Profile tabs</li>
+<li>Swapped Snapshot/Differential/Hybrid renders to the new single Simplifier render with swappable view buttons</li>
 </ul>
 <b>C&TA Sprint 7 Proposals:</b><br>
 <ul>

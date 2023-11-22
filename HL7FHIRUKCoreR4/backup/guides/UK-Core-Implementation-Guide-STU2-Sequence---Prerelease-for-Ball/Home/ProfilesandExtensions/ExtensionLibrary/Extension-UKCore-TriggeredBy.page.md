@@ -1,8 +1,8 @@
 ## StructureDefinition Extension-UKCore-TriggeredBy
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
+<div id="r5Asset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
 
-This is a proxy Extension, for pre-adopting of a R5 element. It underwent Clinical and Technical Assurance during Sprint 6, and should undergo review in this STU2 ballot.
+This is a proxy Extension, for pre-adopting of a R5 element.
 </div>
 
 <div id="transpose">
