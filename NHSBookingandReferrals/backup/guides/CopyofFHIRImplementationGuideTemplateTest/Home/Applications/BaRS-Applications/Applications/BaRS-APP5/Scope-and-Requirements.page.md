@@ -75,7 +75,7 @@ The payload and workflow have been designed to support this service. Other {{pag
 *	If the patient recontacts the sending service after the sender's consultation has been completed, the patient **should** be reassessed prior to attempting to re-refer
 *	The referral Sender **should** revoke the original referral prior to making a re-referral, whether within the current consultation or after the consultation event
 * Where the re-referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
-* Where the re-referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
+* Where the re-referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
 *	The referral Receiver **must <ins>not</ins>** be required to inform the patient of the cancellation, incurred as part of the re-refer process.  Business/clinical responsibility for informing the patient remains with the referral Sender
 
 **Contacts** 
