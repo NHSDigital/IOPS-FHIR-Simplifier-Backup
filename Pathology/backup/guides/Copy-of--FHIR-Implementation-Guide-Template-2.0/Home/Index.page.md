@@ -86,6 +86,8 @@ Copyright© 2023+ NHS England Licensed under the Apache License, Version 2.0 (th
 
 {{render:path-diagram-high-level-business-process}}
 
+{{render:path-diagram-primary-care-as-is-new}}
+
 {{render:path-diagram-primary-care-as-is}}
 
 {{render:path-diagram-primary-care-to-be}}

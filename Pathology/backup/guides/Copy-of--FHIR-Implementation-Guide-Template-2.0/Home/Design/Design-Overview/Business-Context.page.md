@@ -8,6 +8,8 @@ The following diagram illustrates a simplified, high-level “as-is” business 
 
 {{render:path-diagram-primary-care-as-is}}
 
+{{render:path-diagram-primary-care-as-is-new}}
+
 {{render:path-diagram-primary-care-to-be}}
 
 The process is described in more detail below (each of the numbered steps relates to the corresponding process box in the diagram):
