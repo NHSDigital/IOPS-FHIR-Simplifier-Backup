@@ -1,0 +1,59 @@
+<OrganizationAffiliation xmlns="http://hl7.org/fhir">
+  <id value="ODS-OrganizationAffiliation-G81086-Example" />
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+    <extension url="dateType">
+      <valueCoding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PeriodType" />
+        <code value="legal" />
+        <display value="Legal" />
+      </valueCoding>
+    </extension>
+    <extension url="period">
+      <valuePeriod>
+        <start value="1999-04-01" />
+        <end value="2002-03-31" />
+      </valuePeriod>
+    </extension>
+  </extension>
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+    <extension url="dateType">
+      <valueCoding>
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+        <code value="operational" />
+        <display value="Operational" />
+      </valueCoding>
+    </extension>
+    <extension url="period">
+      <valuePeriod>
+        <start value="1999-04-01" />
+        <end value="2002-03-31" />
+      </valuePeriod>
+    </extension>
+  </extension>
+  <active value="false" />
+  <organization>
+    <reference value="Organization/ODS-Organization-G81086-PrimaryRole-Example" />
+    <type value="Organization" />
+    <identifier>
+      <use value="official" />
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="G81086" />
+    </identifier>
+  </organization>
+  <participatingOrganization>
+    <reference value="Organization/ODS-Organization-4VE03-Example" />
+    <type value="Organization" />
+    <identifier>
+      <use value="official" />
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="4VE03" />
+    </identifier>
+  </participatingOrganization>
+  <code>
+    <coding>
+      <system value="https://ord.nhs.uk/CodeSystem/relationship" />
+      <code value="RE4" />
+      <display value="IS COMMISSIONED BY" />
+    </coding>
+  </code>
+</OrganizationAffiliation>

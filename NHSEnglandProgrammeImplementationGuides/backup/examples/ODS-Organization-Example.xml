@@ -1,0 +1,56 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="ODS-Organization-Example" />
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-DateTime">
+    <extension url="type">
+      <valueCoding>
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-ORDDateTime" />
+        <code value="last-change-date" />
+        <display value="Last Change Date" />
+      </valueCoding>
+    </extension>
+    <extension url="dateTime">
+      <valueDateTime value="2020-09-24" />
+    </extension>
+  </extension>
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+    <extension url="dateType">
+      <valueCoding>
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+        <code value="legal" />
+        <display value="Legal" />
+      </valueCoding>
+    </extension>
+    <extension url="period">
+      <valuePeriod>
+        <start value="2015-05-11" />
+      </valuePeriod>
+    </extension>
+  </extension>
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+    <extension url="dateType">
+      <valueCoding>
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+        <code value="operational" />
+        <display value="Operational" />
+      </valueCoding>
+    </extension>
+    <extension url="period">
+      <valuePeriod>
+        <start value="2015-05-11" />
+      </valuePeriod>
+    </extension>
+  </extension>
+  <identifier>
+    <use value="official" />
+    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+    <value value="RO94" />
+  </identifier>
+  <name value="ATOS MEDICAL" />
+  <address>
+    <line value="LONGFIELDS COURT" />
+    <line value="WHARNCLIFFE BUSINESS PARK" />
+    <city value="BARNSLEY" />
+    <postalCode value="S71 3GN" />
+    <country value="ENGLAND" />
+  </address>
+</Organization>
