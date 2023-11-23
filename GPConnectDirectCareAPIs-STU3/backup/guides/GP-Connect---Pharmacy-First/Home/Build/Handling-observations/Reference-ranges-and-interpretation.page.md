@@ -33,3 +33,5 @@ https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-ObservationInterpretation-1
 ```
 
 The consumer may wish to observe this information, or they may chose to apply their own interpretation on the observation supplied.
+
+---

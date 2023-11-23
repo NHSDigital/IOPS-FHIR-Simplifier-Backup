@@ -11,4 +11,8 @@ The Community Pharmacy Standard General Implementation Guidance v3.01 (section 4
 
 This ITK3 specification currently focuses on the **CPCS Minor Illnesses**, **Contraception**, and **Blood Pressure Check** services.
 
+<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
+    <b>Note:</b> The examples in this page have intentionally missed out some elements required in FHIR for brevity - please refer to the examples to see how they are expected to be used.
+</div>
+
 ---

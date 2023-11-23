@@ -8,7 +8,11 @@
   filename: Vital-signs-observations.page.md
 - name: Conventions
   filename: Conventions.page.md
-- name: Blood pressure
-  filename: Blood-pressure.page.md
+- name: Blood pressure triplets
+  filename: Blood-pressure-triplets.page.md
 - name: Reference ranges and interpretation
   filename: Reference-ranges-and-interpretation.page.md
+- name: Self-reported measurements
+  filename: Self-reported-measurements.page.md
+- name: Attachments
+  filename: Attachments.page.md
