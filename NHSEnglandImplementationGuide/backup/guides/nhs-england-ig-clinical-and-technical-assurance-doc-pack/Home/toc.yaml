@@ -6,7 +6,5 @@
   filename: Use-Cases
 - name: FHIR Assets
   filename: FHIR-Assets
-- name: Version Comparison
-  filename: Version-Comparison
 - name: Contact Us
   filename: Contact-Us.page.md

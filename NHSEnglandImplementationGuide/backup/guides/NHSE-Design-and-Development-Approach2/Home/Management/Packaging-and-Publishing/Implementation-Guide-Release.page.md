@@ -5,7 +5,7 @@
 Once the package has been created the IG can be published. Within the IG editor:
 1. Click the hamburger. Click Settings
 
-{{render:Settings}}
+    {{render:Settings}}
 
 <br>
 
@@ -13,24 +13,23 @@ Once the package has been created the IG can be published. Within the IG editor:
 - Add a description
 - Change the scope to point to the newly created package and click save.
 
-<br>
 
-{{render:TitleandDescription}}
+    {{render:TitleandDescription}}
 
 2. Select Edit Master Template.
 
-{{render:Settings}}
+    {{render:Settings}}
 
 Comment out development notice information if it is no longer applicable.
 
-{{render:Comment}}
+    {{render:Comment}}
 
 Update the details of the bottom banner, namely the Released date.
 
 3. Amend the Contact Us page
 - Change the version on the first paragraph
 - Change the version for each email subject line to read
-- Subject=UK Core Release #version
+- Subject=NHS England Release #version
 
 4. Amend the new package on the Downloads page
 
@@ -45,7 +44,7 @@ Update the details of the bottom banner, namely the Released date.
 
 1. Within the Guides portal select the burger bar next to the guide you want to publish and select versions.
 
-{{render:Preview}}
+    {{render:Preview}}
 
 2. Select the burger bar next to the version that you want publishing and select publish.
 - Enter the agreed version (this may align with the package version).
@@ -54,7 +53,7 @@ Update the details of the bottom banner, namely the Released date.
    - Read-only is set to Read-only
    - Make default set to Yes
 
-{{render:Publish}}
+    {{render:Publish}}
 
 3. Select Publish
 

@@ -9,6 +9,22 @@
 <th class="width60">Description</th>
 </tr>
 <tr>
+<td>23rd November 2023</td>
+<td>1.1.0-sprint-2-review</td>
+<td>4.0.1</td>
+<td>STU3 0.0.6</td>
+<td>Release of NHS England Implementation Guide 1.1.0-sprint-2-review - STU1. This is subject to the Clinical and Technical Assurance Sprint 2 review process.</td>
+</tr>
+<tr>
+<td colspan="5"><b>Changes for this version</b>
+<br />
+<ul>
+<li>FHIR assets related to GP Connect (Patient Facing) Prescription Ordering Parameters added to the IG</li>
+<li>FHIR assets related to ORD use case (previously known as ODS use case from Sprint 1) added to the IG</li>
+</ul>
+</td>
+</tr>
+<tr>
 <td>9th November 2023</td>
 <td>1.0.0</td>
 <td>4.0.1</td>

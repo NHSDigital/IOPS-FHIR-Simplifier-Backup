@@ -47,7 +47,7 @@ Additional guidance is available on <a href="https://simplifier.net/guide/UK-Cor
 <td>{{pagelink:ValueSet-England-FlagRemovalReason}}</td>
 <td>active</td>
 <td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Flag?version=current' target="_blank">Flag</a></td>
-<td></td>
+<td>{{pagelink:Extension-England-FlagRemovalReason}}</td>
 <td>1</td>
 </tr>
 <tr>
@@ -60,12 +60,40 @@ Additional guidance is available on <a href="https://simplifier.net/guide/UK-Cor
 <tr>
 <td>{{pagelink:ValueSet-England-OrganisationRole}}</td>
 <td>draft</td>
-<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current' target="_blank">Organization</a>, <a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-OrganizationAffiliation?version=current' target="_blank">OrganizationAffiliation</a></td>
-<td><a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current' target="_blank">Extension England Organisation Role</a></td>
+<td>{{pagelink:Extension-England-OrganisationRole}}</td>
+<td>{{pagelink:Extension-England-OrganisationRole}}</td>
 <td>2</td>
 </tr>
 <tr>
 <td colspan="5">Composed of CodeSystem {{pagelink:CodeSystem-England-ORDOrganisationRole}}</td>
+</tr>
+
+<tr>
+<td colspan="5" class="override"></td>
+</tr>
+<tr>
+<td>{{pagelink:ValueSet-England-PeriodType}}</td>
+<td>draft</td>
+<td>{{pagelink:Extension-England-TypedPeriod}}</td>
+<td>{{pagelink:Extension-England-TypedPeriod}}</td>
+<td>2</td>
+</tr>
+<tr>
+<td colspan="5">Composed of CodeSystem {{pagelink:CodeSystem-England-PeriodType}}</td>
+</tr>
+
+<tr>
+<td colspan="5" class="override"></td>
+</tr>
+<tr>
+<td>{{pagelink:ValueSet-England-TypedDateTime}}</td>
+<td>draft</td>
+<td>{{pagelink:Extension-England-DateTime}}</td>
+<td>{{pagelink:Extension-England-DateTime}}</td>
+<td>2</td>
+</tr>
+<tr>
+<td colspan="5">Composed of CodeSystem {{pagelink:CodeSystem-England-ORDDateTime}}</td>
 </tr>
 
 </tbody>

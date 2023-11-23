@@ -19,7 +19,7 @@ select
 
 <table id="addToTranspose">
 <tr><td>Context of Use: </td>
-<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current' target="_blank">UK Core Organization</a>, <a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-OrganizationAffiliation?version=current' target="_blank">UK Core OrganizationAffiliation</a></td>
+<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current' target="_blank">Organization</a>, <a href='https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-OrganizationAffiliation?version=current' target="_blank">OrganizationAffiliation</a></td>
 </tr>
 </table>
 <br>
@@ -29,7 +29,6 @@ select
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   None provided at this time.
-<h4><a href='https://simplifier.net/guide/organisational-reference-data/Home/Build/Examples?version=current' target="_blank">Examples-Female-Genital-Mutilation (FGM)</a></h4>
 </div>
 
 <div id="Feedback" class="tabcontent">
@@ -37,7 +36,7 @@ select
 </div>
 
 <h3>Extension Specific Guidance</h3>
-There is a binding within this extension to <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/terminology/all-valuesets/valueset-england-OrganisationRole.page.md?version=current' target="_blank">ValueSet-England-OrganisationRole</a>.
+There is a binding within this extension to <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/terminology/all-valuesets/valueset-england-OrganisationRole.page.md?version=current' target="_blank">ValueSet-England-OrganisationRole</a>
 
 ---
     
