@@ -25,7 +25,7 @@
         </eventCoding>
         <destination>
           <name value="Executive Agency - NHS ENGLAND - X26" />
-          <endpoint value="${NhsMeshMailboxId}" />
+          <endpoint value="mesh-mailbox-nhs" />
           <receiver>
             <reference value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
           </receiver>
@@ -34,7 +34,7 @@
           <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
         </sender>
         <source>
-          <endpoint value="${SendingMeshMailboxId}" />
+          <endpoint value="mesh-mailbox-ScreeningOrg" />
         </source>
         <focus>
           <!--Goes to the DiagnosticReport-->
@@ -74,13 +74,13 @@
         </meta>
         <identifier>
           <system value="http://terminology.hl7.org/NamingSystem/CLIA" />
-          <value value="${lab.cliaId} ScreeningLab34D2231294" />
+          <value value="ScreeningLab34D2231294CLIA" />
         </identifier>
         <identifier>
           <system value="http://terminology.hl7.org/NamingSystem/CAP" />
-          <value value="${lab.cap} ScreeningLab6793" />
+          <value value="ScreeningLab6793CAP" />
         </identifier>
-        <name value="${lab.name} Screening Lab" />
+        <name value="Screening Lab Name" />
         <telecom>
           <system value="phone" />
           <value value="+18336942553" />
@@ -94,7 +94,7 @@
           <value value="customerservice@screeninglab.com" />
         </telecom>
         <address>
-          <text value="${lab.name}Screening Lab, ${lab.location} The Lab, Anytown, AT66 7TY" />
+          <text value="Screening Lab Name, The Lab, Anytown, AT66 7TY" />
         </address>
         <contact>
           <name>
@@ -142,7 +142,7 @@
           <value value="3415870223" />
         </identifier>
         <name>
-          <text value="${orderingProvider.fullName} Dr. Daniel Davies" />
+          <text value="Dr. Daniel Davies" />
         </name>
         <address>
           <text value="NHS England, Wellington House, 133-155 Waterloo Road, London, SE1 8UG, UK" />
@@ -175,7 +175,7 @@
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
-          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
+          <value value="NHS9123123" />
         </identifier>
         <status value="active" />
         <intent value="order" />
@@ -211,7 +211,7 @@
         </meta>
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
           <valueAnnotation>
-            <text value="${testResult.labComments}" />
+            <text value="Some Lab Comments" />
           </valueAnnotation>
         </extension>
         <basedOn>
@@ -262,7 +262,7 @@
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
-          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
+          <value value="NHS9123123" />
         </identifier>
         <status value="final" />
         <code>
@@ -311,7 +311,7 @@
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
-          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
+          <value value="NHS9123123" />
         </identifier>
         <basedOn>
           <reference value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af" />
@@ -358,7 +358,7 @@
         </meta>        
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
-          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
+          <value value="NHS9123123" />
         </identifier>
         <status value="final" />
         <code>
@@ -423,7 +423,7 @@
         </meta>        
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
-          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
+          <value value="NHS9123123" />
         </identifier>
         <status value="final" />
         <code>
@@ -471,7 +471,7 @@
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
-          <value value="${sample.orderingScreeningOrgId} NHS9123123" />
+          <value value="NHS9123123" />
         </identifier>
         <status value="available" />
         <type>

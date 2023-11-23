@@ -1,4 +1,8 @@
 - name: Index
   filename: Index.page.md
-- name: Example - An active xyz
-  filename: Example---An-active-xyz.page.md
+- name: Example - Last Change Date
+  filename: Example---Last-Change-Date.page.md
+- name: Example - Legal Period Type
+  filename: Example---Legal-Period-Type.page.md
+- name: Example - Record Class and Record Use Type
+  filename: Example---Record-Class-and-Record-Use-Type.page.md
