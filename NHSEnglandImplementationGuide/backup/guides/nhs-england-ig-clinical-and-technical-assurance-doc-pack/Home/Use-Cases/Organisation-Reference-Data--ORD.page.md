@@ -348,7 +348,7 @@
 ## FHIR Assets for Sprint 2
 
 <div>
-{{render:Profiles-and-Extensions-All-Extensions-Extension-England-OrganisationRole}}
+{{render:Guide-Home-Terminology-All-CodeSystems-CodeSystem-England-ORDDateTime}}
 </div>
 
 <div>
@@ -356,7 +356,19 @@
 </div>
 
 <div>
-{{render:Guide-Home-Terminology-All-ValueSets-ValueSet-England-OrganisationRole}}
+{{render:Guide-Home-Terminology-All-CodeSystems-CodeSystem-England-ORDRecordClass}}
+</div>
+
+<div>
+{{render:Guide-Home-Terminology-All-CodeSystems-CodeSystem-England-ORDRecordUseType}}
+</div>
+
+<div>
+{{render:Guide-Home-Terminology-All-CodeSystems-CodeSystem-England-ORDRelationship}}
+</div>
+
+<div>
+{{render:Guide-Home-Terminology-All-CodeSystems-CodeSystem-England-PeriodType}}
 </div>
 
 <div>
@@ -364,9 +376,21 @@
 </div>
 
 <div>
-{{render:Home-Terminology-All-CodeSystems-CodeSystem-England-ORDDateTime}}
+{{render:Profiles-and-Extensions-All-Extensions-Extension-England-OrganisationRole}}
 </div>
 
 <div>
-{{render:Home-Terminology-All-ValueSets-ValueSet-England-TypedDateTime}}
+{{render:Home-Profiles-and-Extensions-All-Extensions-Extension-England-TypedPeriod}}
+</div>
+
+<div>
+{{render:Home-Terminology-All-ValueSets-ValueSet-England-OrganisationRole}}
+</div>
+
+<div>
+{{render:Guide-Home-Terminology-All-ValueSets-ValueSet-England-PeriodType}}
+</div>
+
+<div>
+{{render:Guide-Home-Terminology-All-ValueSets-ValueSet-England-TypedDateTime}}
 </div>

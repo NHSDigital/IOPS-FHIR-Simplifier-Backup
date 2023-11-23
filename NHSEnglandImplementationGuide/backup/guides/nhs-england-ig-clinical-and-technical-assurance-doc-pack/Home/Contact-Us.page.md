@@ -10,7 +10,7 @@ If you have any questions, need further information or wish to provide feedback 
 </tr>
 <tr>
 <td>NHS England</td>
-<td><a href="mailto:interoperabilityteam@nhs.net?Subject=NHS England IG Clinical and Technical Assurance Sprint 1">Email the Interoperability Team</a> </td>
+<td><a href="mailto:interoperabilityteam@nhs.net?Subject=NHS England IG Clinical and Technical Assurance Sprint 2">Email the Interoperability Team</a> </td>
 <td><a href="https://england.nhs.uk/" target="_blank" class="external">https://england.nhs.uk/</td>
 </tr>
 </table>

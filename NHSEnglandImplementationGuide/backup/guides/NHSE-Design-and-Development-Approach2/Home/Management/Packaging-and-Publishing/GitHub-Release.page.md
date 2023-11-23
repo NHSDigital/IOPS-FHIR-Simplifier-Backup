@@ -4,12 +4,12 @@
 
 1. From the current burger bar select Export.
 
-{{render:GithubRelease}}
+    {{render:GithubRelease}}
 
 ### Creating a Release Within GitHub
 1. With the GiHub NHSEngland-FHIR-ImplementationGuide repository. Select the Releases title on the right-hand side.
 
-         {{render:Github}}
+    {{render:Github}}
 
 2. Select Draft a new release.
 3. Ensure target is set to main and create a tag the is the same as the package version.

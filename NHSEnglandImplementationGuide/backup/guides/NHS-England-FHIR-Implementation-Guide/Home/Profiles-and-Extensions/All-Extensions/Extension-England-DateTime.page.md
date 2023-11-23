@@ -19,17 +19,24 @@ select
 
 <table id="addToTranspose">
 <tr><td>Context of Use: </td>
-<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current' target="_blank">Organization</td>
+<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current' target="_blank">Organization</a>, <a href='https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-OrganizationAffiliation?version=current' target="_blank">OrganizationAffiliation</a></td>
 </tr>
 </table>
 <br>
 
 {{render:Home-Profiles-and-Extensions-ExtensionsTemplate}}
 
+<div id="Examples" class="tabcontent">
+  <h3>Examples</h3>
+  None provided at this time.
+</div>
 
+<div id="Feedback" class="tabcontent">
+<h4><a href='https://simplifier.net/NHS-England-Implementation-Guide/Extension-England-DateTime/~issues?level=File' target="_blank">Propose a change to Extension-England-DateTime</a></h4>
+</div>
 
 <h3>Extension Specific Guidance</h3>
-There is a binding within this extension to <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/terminology/all-valuesets/valueset-england-DateTime.page.md?version=current' target="_blank">ValueSet-England-PeriodType</a>.
+There is a binding within this extension to <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/terminology/all-valuesets/valueset-england-TypedDateTime.page.md?version=current' target="_blank">ValueSet-England-TypedDateTime</a>
 
 ---
     
