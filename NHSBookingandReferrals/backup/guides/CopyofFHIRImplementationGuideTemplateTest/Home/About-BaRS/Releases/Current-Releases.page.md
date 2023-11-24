@@ -15,7 +15,7 @@ Implementation Guide   | 1.3.0   | v1      | Live     | Current Release | 11/09/
 
 ### Overview of the release
 
-!!release summary here!!
+This is a minor point release with non-breaking changes. The main highlight of this release is the first publication of documentation for Applications 3 and 4. Both these applications are at 1.0.0-beta and are about to start public beta testing. There has also been a minor interation to the Application 5 beta release to incorporate feedback and scope ammendments from the development of public beta participants as well as some recent use case policy updates.
 
 A Clinical Safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new Hazards have been identified in this release. The latest version of the BaRS Clinical Safety Case and Hazard Log can be downloaded from the <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information" target="_blank">BaRS FHIR API onboarding support information page</a>. 
 

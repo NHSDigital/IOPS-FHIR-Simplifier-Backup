@@ -3,7 +3,7 @@ topic: trn-app5
 ---
 <a href="#" onclick="history.back()">back</a>
 
-## Referrals into Pharmacy (application 5) Change Log
+## Referrals into Pharmacy (Application 5) Change Log
 
 <br>
 This page will list all updates to the BaRS Application 5 
