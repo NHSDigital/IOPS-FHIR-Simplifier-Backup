@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Extension With No Template
+  filename: Extension-With-No-Template.page.md
+- name: Extension With Template via Render
+  filename: Extension-With-Template-via-Render.page.md
+- name: Extension With Template via Page
+  filename: Extension-With-Template-via-Page.page.md
+- name: PageLink Destination
+  filename: PageLink-Destination.page.md
+- name: ValueSet with Extension
+  filename: ValueSet-with-Extension.page.md
