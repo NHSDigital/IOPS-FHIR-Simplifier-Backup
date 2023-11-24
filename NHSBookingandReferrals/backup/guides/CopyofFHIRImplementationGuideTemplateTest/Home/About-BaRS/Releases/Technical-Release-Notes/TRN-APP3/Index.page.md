@@ -4,7 +4,7 @@ topic: trn-app3
 
 <a href="#" onclick="history.back()">back</a>
 
-## Referral into CAS (application 3) Change Log
+## Referral into CAS (Application 3) Change Log
 
 <br>
 This page will list all updates to the BaRS Application 3. 

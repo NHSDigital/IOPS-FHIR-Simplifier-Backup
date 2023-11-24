@@ -4,7 +4,7 @@ topic: trn-app1
 
 <a href="#" onclick="history.back()">back</a>
 
-## Booking and Referrals into UEC (application 1) Change Log
+## Booking and Referrals into UEC (Application 1) Change Log
 
 <br>
 This page will list all updates to the BaRS Application 1 
