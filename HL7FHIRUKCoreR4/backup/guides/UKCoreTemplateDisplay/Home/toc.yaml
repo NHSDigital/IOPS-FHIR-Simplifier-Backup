@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: No Template - Via Render
+  filename: No-Template---Via-Render.page.md
+- name: No Template - Via Page
+  filename: No-Template---Via-Page.page.md
+- name: Render Template - Via Render
+  filename: Render-Template---Via-Render.page.md
+- name: Render Template - Via Page
+  filename: Render-Template---Via-Page.page.md
+- name: Page Template - Via Render
+  filename: Page-Template---Via-Render.page.md
+- name: Page Template - Page
+  filename: Page-Template---Page.page.md

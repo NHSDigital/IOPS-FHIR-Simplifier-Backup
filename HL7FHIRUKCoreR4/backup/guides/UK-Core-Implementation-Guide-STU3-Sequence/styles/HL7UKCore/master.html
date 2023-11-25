@@ -1237,7 +1237,6 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                     }
                 }
             }
-
             function sidebarClickAndOpen() {
                 var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
                 if (hasSDH1 != undefined && hasSDH1.length > 0)
@@ -1253,7 +1252,6 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                     });
                 }
             }
-
             function redirectTreeviewElementsToPage() {
                 //loop thru all spans in the tree
                 $('div.treetable-left-panel table.treetable tbody tr td.profile:first-child').each(function(index) {
@@ -1268,6 +1266,16 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                         }
                     });
                 });
+            }
+            function redirectReferenceResource() {
+                //this finds any treetable lines that have Reference(Resource)
+                var tdList = $('div.treetable-left-panel table.treetable tbody tr td.profile').has('a[title^="Reference"]') && $('div.treetable-left-panel table.treetable tbody tr td.profile').has('a[title^="Resource"]')
+                
+                if (tdList != undefined && tdList.length > 0){
+                    tdList.each(function(index) {
+                        $(this).find('a[title^="Resource"]').attr("href","https://hl7.org/fhir/R4/resourcelist.html");
+                    });
+                }
             }
         </script>
         <script>
@@ -1305,6 +1313,7 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                 fixWebAccessibility();
                 redirectTreeviewElementsToPage();
                 handleSubMenuEvents();
+                redirectReferenceResource();
                 updateFooterPosition();
             });
         </script>
