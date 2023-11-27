@@ -14,9 +14,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
-        run: sleep $((RANDOM %30))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
-
       - name: Set today
         id: today
         run: echo "TODAY=$(date)" >> $GITHUB_OUTPUT
@@ -82,6 +79,7 @@ jobs:
         uses: "actions/github-script@v6"
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          retries: 5
           script: |
             const { repo, owner } = context.repo;
             const head = '${{ steps.branch-name.outputs.BRANCH }}'
