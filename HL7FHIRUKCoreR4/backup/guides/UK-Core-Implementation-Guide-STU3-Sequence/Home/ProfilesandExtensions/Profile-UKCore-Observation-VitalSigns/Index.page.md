@@ -156,6 +156,17 @@ This is a derived profile of {{pagelink:Profile-Observation,text:UKCore-Observat
 
 This guidance is also designed to align with [https://hl7.org/fhir/R4/observation-vitalsigns.html](HL7 Observation Vital Signs guidance) where possible.
 
+The guidance on this page also applies to the following profiles, that are derived from the UK Core Observation Vital Signs profile:
+- {{pagelink:Profile-Observation-VitalSigns-BloodPressure}}
+- {{pagelink:Profile-Observation-VitalSigns-BMI}}
+- {{pagelink:Profile-Observation-VitalSigns-BodyHeight}}
+- {{pagelink:Profile-Observation-VitalSigns-BodyTemperature}}
+- {{pagelink:Profile-Observation-VitalSigns-BodyWeight}}
+- {{pagelink:Profile-Observation-VitalSigns-HeadCircumference}}
+- {{pagelink:Profile-Observation-VitalSigns-HeartRate}}
+- {{pagelink:Profile-Observation-VitalSigns-OxygenSaturation}}
+- {{pagelink:Profile-Observation-VitalSigns-RespiraitonRate}}
+
 ### Minimum Viable Content
 
 The minimum viable content that all provider and consumer systems SHALL support are the elements within the corresponding UKCore-Observation table, along with the following.

@@ -278,27 +278,25 @@
                     if (fqlTable != undefined && fqlTable.length > 0) {
                         for(var r = 1; r < fqlTable[0].rows.length; r++) {
                             var profile = fqlTable[0].rows[r].cells[0].innerHTML;
-                            if (stringToSet != "") {
-                                stringToSet += ", ";
-                            }
+                            
                             let thisUrl = '';
                             if (profile.startsWith("Extension")) {
                                 if (pageVersion.startsWith("?version=current")){
                                     thisUrl = newUrl + "ExtensionLibrary/" + profile +  ".page.md" + pageVersion;
-                                } else
-                                {
+                                } else {
                                     thisUrl = newUrl + "ExtensionLibrary/" + profile + pageVersion;
                                 }
-                            } else
-                            {
+                            } else {
                                 thisUrl = newUrl + "Profile-" + profile + pageVersion;
                             }
-                            profile = "<a href=" + thisUrl + ">" + profile + "</a>";
+                            profile = "<li><a href=" + thisUrl + ">" + profile + "</a></li>";
                             stringToSet += profile;
                         }
                     }
-                     if (stringToSet == "") {
+                    if (stringToSet == "") {
                         stringToSet = "None";
+                    } else {
+                        stringToSet = "<ul>" + stringToSet + "</ul>";
                     }
                     $(this).replaceWith(stringToSet);
                 });
@@ -777,9 +775,10 @@
                     //and only expand if its collpased
                     if (c) {
                         //look inside this tr, and basically, if its not a backbone element, check if we should expand
-                        var rowCellHtml = e.children[3].innerText;
+                        var elementDataType = e.children[3].innerText;
+                        var elementName = e.children[0].innerText;
                         // Identifier/Reference - if sliced/different or has an Extension, expand
-                        if (rowCellHtml == "Identifier" || rowCellHtml.startsWith("Reference") )
+                        if (elementDataType == "Identifier" || elementDataType.startsWith("Reference") )
                         {
                             if (s) {
                                 doExpand = true;
@@ -790,14 +789,16 @@
                                     doExpand = true;
                                })
                             }
-                        } else if (rowCellHtml =="Coding" || rowCellHtml =="Annotation" || rowCellHtml.startsWith("Address")  || rowCellHtml.startsWith("ContactPoint") || rowCellHtml.startsWith("Extension(")) {
+                        } else if (elementDataType =="Coding" || elementDataType =="Annotation" || elementDataType.startsWith("Address")  || elementDataType.startsWith("ContactPoint") || elementDataType.startsWith("Extension(")) {
                             //Coding/Annotation/Address/ContactPoint/Extension(Complex)
-                            //only expand if sliced 
-                            if (s) 
+                            //only expand if sliced
+                            if (s && elementName != "(All Slices)")
                                 doExpand = true;
-                        } else if ((rowCellHtml == "" || rowCellHtml == null)) {
+                            if (!s && e.querySelector("span.individualSlice") != undefined)
+                                doExpand = true;
+                        } else if ((elementDataType == "" || elementDataType == null)) {
                                 //a value[x] style element, expand if modified
-                                if (m)
+                                if (m && elementName !="(All Slices)")
                                     doExpand = true;
                         } else {
                                 //expand anything else (top level extension, backboneelement)

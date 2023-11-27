@@ -178,6 +178,19 @@ The following are example usage scenarios for the UK Core Observation profile:
 
 ## Profile Specific Implementation Guidance: ##
 
+The guidance on this page also applies to the following profiles, that are derived from the UK Core Observation profile:
+- {{pagelink:Profile-Observation-ACVPU}}
+- {{pagelink:Profile-Observation-Alcoholconsumption}}
+- {{pagelink:Profile-Observation-AverageBloodPressure}}
+- {{pagelink:Profile-Observation-BloodGlucose}}
+- {{pagelink:Profile-Observation-EarlyWarningTotalScore}}
+- {{pagelink:Profile-Observation-InspiredOxygen}}
+- {{pagelink:Profile-Observation-TobaccoConsumption}}
+
+There are additional Lab related Observation profiles, that are not derived from the UK Core Observation profile:
+- {{pagelink:Profile-Observation-Lab}}
+- {{pagelink:Profile-Observation-Group}}
+
 <h3>Minimum Viable Content</h3>
 
 A minimum viable content that all provider and consumer systems SHALL support are the following elements.
