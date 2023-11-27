@@ -9,7 +9,7 @@ This element has a closed slice on `Observation.component`, discriminated by the
 
 The following values SHALL be used:
 
-`Observation.component:SystolicBP` slice, discriminated by a `Observation.component.code.text` value of "Systolic blood pressure", SHALL be used to record a systolic blood pressure measurement, which SHALL have a LOINC "magic code", and SHALL have a SNOMED CT concept used to record the type of systolic blood pressure measurement.
+`Observation.component:SystolicBP` slice, discriminated by a `Observation.component.code.text` value of `Systolic blood pressure`, SHALL be used to record a systolic blood pressure measurement, which SHALL have a LOINC "magic code", and SHALL have a SNOMED CT concept used to record the type of systolic blood pressure measurement.
 
 ### `Observation.component:SystolicBP.code.text`
 The following SHALL be used for this profile:
@@ -25,7 +25,7 @@ The following SHALL be used for this profile:
 The following SHALL be used for this profile:
 - `Observation.component.code.coding.system` = `http://snomed.info/sct`
 - `Observation.component.code.coding.code` = A SNOMED CT concept Id from {{pagelink:ValueSet-UKCore-BloodPressure-Systolic}}
-- `Observation.component.code.coding.display` = The “preferred term” associated with the SNOMED CT concept
+- `Observation.component.code.coding.display` = The “preferred term” associated with the SNOMED CT concept, representing a systolic blood pressure measurement
 
 ### `Observation.component:SystolicBP.value[x]`
 The following SHALL be a Quantity, and the following used for this profile:
@@ -35,7 +35,7 @@ The following SHALL be a Quantity, and the following used for this profile:
 
 <br>
 
-`Observation.component:DiastolicBP` slice, discriminated by a `Observation.component.code.text` value of "Diastolic blood pressure", SHOULD be used to also record a diastolic blood pressure measurement, which SHALL have a LOINC "magic code", and SHALL have a SNOMED CT concept used to record the type of diastolic blood pressure measurement if used.
+`Observation.component:DiastolicBP` slice, discriminated by a `Observation.component.code.text` value of `Diastolic blood pressure`, SHOULD be used to also record a diastolic blood pressure measurement where present, which SHALL have a LOINC "magic code", and SHALL have a SNOMED CT concept used to record the type of diastolic blood pressure measurement if used.
 
 ### `Observation.component:DiastolicBP.code.text`
 The following SHALL be used for this profile:
@@ -51,7 +51,7 @@ The following SHALL be used for this profile:
 The following SHALL be used for this profile:
 - `Observation.component.code.coding.system` = `http://snomed.info/sct`
 - `Observation.component.code.coding.code` = A SNOMED CT concept Id from {{pagelink:ValueSet-UKCore-BloodPressure-Diastolic}}
-- `Observation.component.code.coding.display` = The “preferred term” associated with the SNOMED CT concept
+- `Observation.component.code.coding.display` = The “preferred term” associated with the SNOMED CT concept, representing a diastolic blood pressure measurement
 
 ### `Observation.component:DiastolicBP.value[x]`
 The following SHALL be a Quantity, and the following used for this profile:
