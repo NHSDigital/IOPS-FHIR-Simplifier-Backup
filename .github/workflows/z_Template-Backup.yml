@@ -52,7 +52,7 @@ jobs:
           git push origin ${{ steps.branch-name.outputs.BRANCH }}
 
       - name: Create Pull Request
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -75,13 +75,11 @@ jobs:
               labels: ['backup', 'automated pr']
             });
 
-      - name: Wait for PR to complete
-        run: sleep 1m
-
-      - name: "Merge pull request"
-        uses: "actions/github-script@v6"
+      - name: Merge pull request
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          retries: 5
           script: |
             const { repo, owner } = context.repo;
             const head = '${{ steps.branch-name.outputs.BRANCH }}'
