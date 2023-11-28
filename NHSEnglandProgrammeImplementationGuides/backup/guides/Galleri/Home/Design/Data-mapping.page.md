@@ -31,29 +31,110 @@
 
 ## <a id="BodySiteMap"></a>Body site mapping to SNOMED CT
 
-|Body Site|SNOMED CT code 
-|--|
-|Anus|53505006 \| Anal structure 
-|Bladder, Urothelial Tract|89837001 \| Urinary bladder structure <br/>57789003 \| Structure of urothelium
-|Bone and Soft Tissue|272673000 \| Bone structure <br/>87784001 \| Structure of soft tissue 
-|Breast|76752008 \| Breast structure
-|Cervix|71252005 \| Cervix uteri structure
-|Colon, Rectum|71854001 \| Colon structure <br/>34402009 \| Rectum structure 
-|Head and Neck|69536005 \| Head structure <br/>45048000 \| Neck structure 
-|Kidney|64033007 \| Kidney structure 
-|Liver, Bile Duct|10200004 \| Liver structure <br/>28273000 \| Bile duct structure 
-|Lung|39607008 \| Lung structure 
-|Lymphoid Lineage|414628006 \| Lymphoid neoplasm 
-|Melanocytic Lineage|1162635006 \| Malignant melanoma 
-|Myeloid Lineage|414792005 \| Myeloid neoplasm 
-|Neuroendocrine Cells of Lung or other Organs|127575007 \| Malignant neuroendocrine neoplasm, epithelial 
-|Ovary|15497006 \| Ovarian structure 
-|Pancreas, Gallbladder|15776009 \| Pancreatic structure  <br/>28231008 \| Gallbladder structure
-|Plasma Cell Lineage|127580003 \| Plasma cell neoplasm  
-|Prostate|41216001 \| Prostatic structure 
-|Stomach, Oesophagus|69695003 \| Stomach structure <br/>32849002 \| Esophageal structure 
-|Thyroid Gland|69748006 \| Thyroid structure
-|Uterus|35039007 \| Uterine structure
+Body sites should be drawn from the Body Structure hierarchy within SNOMED ( \< 123037004 \| Body structure (body structure) ). The body structure suspected as part of a multi-cancer early detection test is recorded in the component Backbone element of the Observation resource that is either the primary or secondary recorded site. Sometimes there may be multiple body sites detected for a primary or secondary cancer signals. In these cases, multiple component Backbone elements should be recorded within the Observation.
+
+For example, for a single body site for a cencer signal detected in the prostate, a single Observation.component should be recorded. In the following snippets not all the Observation elements are shown.
+
+### Example of a single body structure recorded
+```
+{
+  "resourceType": "Observation",
+  "id": "dacb177a-9501-4dcc-8b22-b941791ae0db",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "TBC",
+        "display": "Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "123037004",
+            "display": "Body structure"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "41216001",
+            "display": "Prostatic structure"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+### Example of two body structures recorded
+```
+{
+  "resourceType": "Observation",
+  "id": "dacb177a-9501-4dcc-8b22-b941791ae0db",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "TBC",
+        "display": "Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "123037004",
+            "display": "Body structure"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "89837001",
+            "display": "Urinary bladder structure"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "123037004",
+            "display": "Body structure"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "57789003",
+            "display": "Structure of urothelium"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
 
 ## <a id="CancerSignalResult"></a>Cancer Signal Result
 
