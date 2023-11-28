@@ -6,7 +6,7 @@ Within UK healthcare, substitution is not the norm so the international FHIR def
 
 It could be unwise to assume all UK implementations will prevent substitution if not explicitly stated, especially if the same clinical system has been previously implemented outside the UK. <br/>
 
-Within UK Core this element is mandatory and SHALL have a boolean value of `false` to denote that substitution is not allowed, unless substitution can occur in a specific case.
+Within UK Core this element is mandatory and SHOULD have a boolean value of `false` to denote that substitution is not allowed, unless substitution can occur in a specific case.
 </div>
 
 ### Allowing substitution
