@@ -37,7 +37,7 @@ Time:13:00 - 14:00pm</td>
 <td>Tuesday 5th December, 2023 <br>
 Time:14:00 - 14:45pm</td>
 <td>Consolidation Call</td>
-<td><a>Click here</a></td>
+<td><a href='https://gbr01.safelinks.protection.outlook.com/ap/t-59584e83/?url=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_NjM5NWZmZWItMWM2Mi00ODk0LWI1MTEtOWIwYTM3YjY3MzMw%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%252237c354b2-85b0-47f5-b222-07b48d774ee3%2522%252c%2522Oid%2522%253a%252232958b7f-064c-4456-8e72-2feab428d83a%2522%257d&data=05%7C01%7Ckazeem.hamzat%40nhs.net%7C6887160450ba49eb3e5e08dbe142aea3%7C37c354b285b047f5b22207b48d774ee3%7C0%7C0%7C638351448726458124%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=cnutCLB2t8ll9jlmQrCJB8FED08kK3MzM3%2FPfj9bN2Y%3D&reserved=0' target="_blank">Click here</a></td>
 <td>TBC</td>
 <td>TBC</td>
 </tr>

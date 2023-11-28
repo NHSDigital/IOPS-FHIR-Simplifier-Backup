@@ -9,8 +9,8 @@
 <th class="width20">FHIR Version</th>
 </tr>
 <tr>
-<td>15th November 2023</td>
-<td>1.0.0</td>
+<td>28th November 2023</td>
+<td>1.0.1</td>
 <td>STU1 1.0.0</td>
 <td>STU3 0.0.6</td>
 <td>4.0.1</td>
@@ -19,7 +19,7 @@
 <td colspan="5">Initial release of the Multi-cancer Early Detection Implementation guide.</td>
 </tr>
 <tr>
-<td colspan="5"><b>Changes for this version</b>
+<td colspan="5"><b>Changes for this version (1.0.0)</b>
 <br />
 
 <b>Validated Examples</b>
@@ -32,6 +32,15 @@
 <li>All specimen references have specimen identifier in display</li>
 <li>Detected site SNOMED display changed to "Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier"<br/>"Multi-cancer early detection predicted second cancer signal origin by machine learning-based classifier"</li>
 <li>Data mapping table updated to reference generic screening organisation identifiers</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="5"><b>Changes for this version (1.0.1)</b>
+<br />
+<b>Removed specific body sites examples from mapping page</b>
+<ul>
+<li>Mapping table now states that any body site from the SNOMED hierachy < 123037004 | Body structure (body structure) can be used to represent body sites where cancer signals are detected. Also includes guidance on how to represent multiple body sites for primary and secondary locations.</li>
 </ul>
 </td>
 </tr>
