@@ -124,11 +124,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Relationship to the subject.</td>
 </tr>
 <tr>
-<td><code>FamilyMemberHistory.sex</code></td>
-<td>The birth sex of the family member.
-</td>
-</tr>
-<tr>
 <td><code>FamilyMemberHistory.condition</code></td>
 <td>Condition that the related person had.</td>
 </tr>
