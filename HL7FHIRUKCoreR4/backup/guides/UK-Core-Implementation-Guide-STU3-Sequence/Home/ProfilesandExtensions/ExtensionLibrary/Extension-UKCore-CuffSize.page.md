@@ -18,6 +18,9 @@ where
 	name = 'ExtensionUKCoreCuffSize'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -37,6 +40,10 @@ select
   <b>Cuff Size</b> - An example to illustrate a blood pressure monitoring device with a large cuff.<br>
 {{pagelink:Example-UKCore-Extension-CuffSize}}
 <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CuffSize/~issues?level=File">Report Issue for Extension-UKCore-CuffSize</a>.
 </div>
 
 <h3 id="guidance-cuffsize">Extension Specific Guidance</h3>

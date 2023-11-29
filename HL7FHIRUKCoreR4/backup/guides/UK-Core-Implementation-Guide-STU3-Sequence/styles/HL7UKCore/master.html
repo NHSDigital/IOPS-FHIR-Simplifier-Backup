@@ -1042,6 +1042,13 @@
                 }
                 return lastCapitalFound;
             }
+            function stripExampleFromSideBar() {
+                $('div.col-md-6 ul.nav li a').each(function(index) {
+                    if ($(this)[0].text.startsWith("Example UKCore-")) {
+                        $(this)[0].text = $(this)[0].text.replace("Example UKCore-", "");
+                    }
+                });
+            }
         </script>
         <script>
         
@@ -1307,6 +1314,7 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                 alterValueSetTables();
                 swapProfileTreeLinks();
                 addCodesSortButton();
+                stripExampleFromSideBar();
                 wrapSideBar();
                 pageInIframe();
                 alterBaseElementOverrides();

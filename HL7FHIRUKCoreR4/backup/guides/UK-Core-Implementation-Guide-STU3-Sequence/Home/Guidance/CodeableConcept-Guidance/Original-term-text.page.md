@@ -20,3 +20,5 @@ When displaying an item to end users, the receiving system SHALL always display 
 <h3 id="original-term-text-propagation">Propagation</h3>
 
 When propagating an item to another system, the receiving system SHALL* always include the original term text of the item.
+
+---

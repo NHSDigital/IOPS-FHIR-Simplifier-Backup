@@ -11,6 +11,9 @@ where
 	name = 'ExtensionUKCoreBodySiteReference'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -30,6 +33,10 @@ select
   <b>Median Cubital Vein</b>- An example to illustrate the extension for a referenced body site.<br>
   {{pagelink:Example-UKCore-Extension-BodySiteReference}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-BodySiteReference/~issues?level=File">Report Issue for Extension-UKCore-BodySiteReference</a>.
 </div>
 
 

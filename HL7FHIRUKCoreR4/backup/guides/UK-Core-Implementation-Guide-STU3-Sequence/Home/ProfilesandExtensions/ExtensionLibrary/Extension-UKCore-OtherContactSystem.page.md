@@ -1,3 +1,6 @@
+---
+subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem
+---
 ## StructureDefinition Extension-UKCore-OtherContactSystem
 
 <div id="transpose">
@@ -8,6 +11,9 @@ where
 	name = 'ExtensionUKCoreOtherContactSystem'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -51,6 +57,10 @@ select
 <b>Other Contact System</b> - An example to illustrate other contact methods for a patient. </br>
 {{pagelink:Example-UKCore-Extension-OtherContactSystem}}
 <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-OtherContactSystem/~issues?level=File">Report Issue for Extension-UKCore-OtherContactSystem</a>.
 </div>
 
 <h3 id="guidance-othercomntactsystem">Extension Specific Guidance</h3>

@@ -53,7 +53,7 @@ Where a human asserter is not captured or cannot be confirmed, i.e. the asserter
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-PractitionerRole-Sn-Organization-Code-Example}}
+{{tree:UKCore-PractitionerRole-Sn-Organization-Code-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">

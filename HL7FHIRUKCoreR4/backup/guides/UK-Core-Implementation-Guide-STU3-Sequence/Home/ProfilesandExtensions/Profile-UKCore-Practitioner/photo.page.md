@@ -20,7 +20,7 @@ A photograph relating to the practitioner. This can be included as either:
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Practitioner-Sn-Photo-Example}}
+{{tree:UKCore-Practitioner-Sn-Photo-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">

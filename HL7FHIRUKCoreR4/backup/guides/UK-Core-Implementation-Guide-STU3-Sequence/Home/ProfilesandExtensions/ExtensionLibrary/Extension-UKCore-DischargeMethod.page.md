@@ -11,6 +11,9 @@ where
 	name = 'ExtensionUKCoreDischargeMethod'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -30,6 +33,10 @@ select
   <b>Discharge Method</b>- An example to illustrate the extension for an encounter to support the method of discharge from a hospital.<br>
   {{pagelink:Example-UKCore-Extension-DischargeMethod}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DischargeMethod/~issues?level=File">Report Issue for Extension-UKCore-DischargeMethod</a>.
 </div>
 
 

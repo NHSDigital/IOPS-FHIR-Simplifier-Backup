@@ -1,3 +1,6 @@
+---
+subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent
+---
 ## StructureDefinition Extension-UKCore-ParentPresent
 
 <div id="transpose">
@@ -8,6 +11,9 @@ where
 	name = 'ExtensionUKCoreParentPresent'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -22,36 +28,18 @@ select
 <br>
 
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-</div>
 
-<div id="Tree View" class="tabcontent" style="display:block">
-  <h3>Tree View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent}}
-</div>
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent}}
-</div>
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent}}
-</div>
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent}}
-</div>
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Parent Present</b>- An example to illustrate the extension for a vaccination procedure where the parent of the patient is present.<br>
   {{pagelink:Example-UKCore-Extension-ParentPresent}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-ParentPresent/~issues?level=File">Report Issue for Extension-UKCore-ParentPresent</a>.
 </div>
 
 ---

@@ -11,6 +11,9 @@ where
 	name = 'ExtensionUKCoreBookingOrganization'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -30,6 +33,10 @@ select
   <b>Booking Organisation</b>- An example to illustrate the booking organisation extension associated with an appointment.<br>
 {{pagelink:Example-UKCore-Extension-BookingOrganization}}
 <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-BookingOrganization/~issues?level=File">Report Issue for Extension-UKCore-BookingOrganization</a>.
 </div>
 
 <h3 id="guidance-bookingorganization">Extension Specific Guidance</h3>

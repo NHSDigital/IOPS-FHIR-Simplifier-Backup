@@ -26,7 +26,7 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-AllergyIntolerance-Sn-NonDrugAllergy-Example}}
+{{tree:UKCore-AllergyIntolerance-Sn-NonDrugAllergy-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">
@@ -58,7 +58,7 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-AllergyIntolerance-Sn-DrugAllergy-Example}}
+{{tree:UKCore-AllergyIntolerance-Sn-DrugAllergy-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">
@@ -92,7 +92,7 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-AllergyIntolerance-Sn-DrugAllergyToEggProtein-Example}}
+{{tree:UKCore-AllergyIntolerance-Sn-DrugAllergyToEggProtein-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">
@@ -129,7 +129,7 @@ There can be an explicit assertion of ‘No Known Allergies’ using the SNOMED 
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-AllergyIntolerance-Sn-NegHandlNoKnownAllergies-Example}}
+{{tree:UKCore-AllergyIntolerance-Sn-NegHandlNoKnownAllergies-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">
