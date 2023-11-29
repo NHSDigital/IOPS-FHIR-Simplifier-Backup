@@ -45,8 +45,8 @@ For example, for a single body site for a cencer signal detected in the prostate
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "TBC",
-        "display": "Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier"
+        "code": "1873921000000106",
+        "display": "Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier"
       }
     ]
   },
@@ -84,8 +84,8 @@ For example, for a single body site for a cencer signal detected in the prostate
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "TBC",
-        "display": "Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier"
+        "code": "1873921000000106",
+        "display": "Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier"
       }
     ]
   },
@@ -140,5 +140,5 @@ For example, for a single body site for a cencer signal detected in the prostate
 
 |SNOMED CT Code|Display
 |--|
-|TBC|Multi-cancer early detection signal detected
-|TBC|Multi-cancer early detection signal not detected
+|1854981000000108|Multi-cancer early detection signal detected
+|1854991000000105|Multi-cancer early detection signal not detected
