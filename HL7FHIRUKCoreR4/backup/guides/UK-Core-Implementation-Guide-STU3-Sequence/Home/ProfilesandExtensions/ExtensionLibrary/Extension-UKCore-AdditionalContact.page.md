@@ -11,6 +11,9 @@ where
 	name = 'ExtensionUKCoreAdditionalContact'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -29,6 +32,11 @@ select
   <b>Additional Contact</b> - An example to illustrate providing an additional contact with a service request.<br>
 {{pagelink:Example-UKCore-Extension-AdditionalContact}}
 <br><br>
+</div>
+
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-AdditionalContact/~issues?level=File">Report Issue for Extension-UKCore-AdditionalContact</a>.
 </div>
 
 <h3 id="guidance-additionalcontact">Extension Specific Guidance</h3>

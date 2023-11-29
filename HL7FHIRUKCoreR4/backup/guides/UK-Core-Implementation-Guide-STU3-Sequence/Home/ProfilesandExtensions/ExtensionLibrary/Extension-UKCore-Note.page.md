@@ -1,13 +1,19 @@
-## StructureDefinition Extension-UKCore-Note
+---
+subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note
+---
+## StructureDefinition Extension-UKCore-DiagnosticReportNote
 
 <div id="transpose">
 @```
 from
 	StructureDefinition
 where
-	name = 'ExtensionUKCoreNote'
+	name = 'ExtensionUKCoreDiagnosticReportNote'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -21,36 +27,18 @@ select
 </div>
 <br>
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-</div>
 
-<div id="Tree View" class="tabcontent" style="display:block">
-  <h3>Tree View</h3>
-{{tree:http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note}}
-</div>
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table:http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note}}
-</div>
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml:http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note}}
-</div>
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json:http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note}}
-</div>
+{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Diagnostic Report Note</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to add notes and annotations to a diagnostic report.<br>
   {{pagelink:Example-UKCore-Extension-Note}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DiagnosticReportNote/~issues?level=File">Report Issue for Extension-UKCore-DiagnosticReportNote</a>.
 </div>
 
 ---

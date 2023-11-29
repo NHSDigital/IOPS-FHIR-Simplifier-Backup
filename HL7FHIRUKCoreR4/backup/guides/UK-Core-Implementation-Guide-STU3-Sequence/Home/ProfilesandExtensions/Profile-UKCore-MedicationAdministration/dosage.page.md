@@ -19,7 +19,7 @@ A MedicationAdministration resource may be used to describe a period of no admin
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-MedicationAdministration-Sn-ZeroDosage-Example}}
+{{tree:UKCore-MedicationAdministration-Sn-ZeroDosage-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">

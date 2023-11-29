@@ -11,6 +11,9 @@ where
 	name = 'ExtensionUKCoreEmergencyCareDischargeStatus'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -30,6 +33,10 @@ select
   <b>Emergency Care Discharge Status</b>- An example to illustrate the extension which is used to indicate the status of an individual on discharge from an Emergency Care Department.<br>
   {{pagelink:Example-UKCore-Extension-EmergencyCareDischargeStatus}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-EmergencyCareDischargeStatus/~issues?level=File">Report Issue for Extension-UKCore-EmergencyCareDischargeStatus</a>.
 </div>
 
 <h3 id="guidance-emergencycaredischargestatus">Extension Specific Guidance</h3>

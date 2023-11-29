@@ -11,6 +11,9 @@ where
 	name = 'ExtensionUKCoreDeliveryChannel'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -31,6 +34,10 @@ select
   <b>Delivery Channel</b>- An example to illustrate the delivery channel associated with an appointment.<br>
 {{pagelink:Example-UKCore-Extension-DeliveryChannel}}
 <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DeliveryChannel/~issues?level=File">Report Issue for Extension-UKCore-DeliveryChannel</a>.
 </div>
 
 <h3 id="guidance-deliverychannel">Extension Specific Guidance</h3>

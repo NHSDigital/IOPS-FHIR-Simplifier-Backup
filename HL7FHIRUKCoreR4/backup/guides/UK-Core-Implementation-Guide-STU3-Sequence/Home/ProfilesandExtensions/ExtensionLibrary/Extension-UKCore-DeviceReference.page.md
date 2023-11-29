@@ -12,6 +12,9 @@ where
 	name = 'ExtensionUKCoreDeviceReference'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -33,6 +36,10 @@ select
   {{pagelink:Example-UKCore-Extension-DeviceReference}}<br>
   NOTE: The above example references {{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DeviceReference/~issues?level=File">Report Issue for Extension-UKCore-DeviceReference</a>.
 </div>
 
 <h3 id="guidance-devicereference">Extension Specific Guidance</h3>

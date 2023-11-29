@@ -1,5 +1,5 @@
 ---
-subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod
+subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex
 ---
 ## StructureDefinition Extension-UKCore-BirthSex
 
@@ -11,6 +11,9 @@ where
 	name = 'ExtensionUKCoreBirthSex'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -31,6 +34,10 @@ select
   <b>Birth Sex</b>- An example to illustrate the extension for a patient's birth sex.<br>
   {{pagelink:Example-UKCore-Extension-BirthSex}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-BirthSex/~issues?level=File">Report Issue for Extension-UKCore-BirthSex</a>.
 </div>
 
 <h3 id="guidance-birthsex">Extension Specific Guidance</h3>

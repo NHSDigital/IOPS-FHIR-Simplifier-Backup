@@ -42,6 +42,8 @@
   filename: Extension-UKCore-DeliveryChannel.page.md
 - name: Extension UKCore-DeviceReference
   filename: Extension-UKCore-DeviceReference.page.md
+- name: Extension UKCore-DiagnosticReportNote
+  filename: Extension-UKCore-Note.page.md
 - name: Extension UKCore-DischargeMethod
   filename: Extension-UKCore-DischargeMethod.page.md
 - name: Extension UKCore-EmergencyCareDischargeStatus
@@ -64,8 +66,6 @@
   filename: Extension-UKCore-MedicationStatementLastIssueDate.page.md
 - name: Extension UKCore-MedicationTradeFamily
   filename: Extension-UKCore-MedicationTradeFamily.page.md
-- name: Extension UKCore-Note
-  filename: Extension-UKCore-Note.page.md
 - name: Extension UKCore-NHSNumberUnavailableReason
   filename: Extension-UKCore-NHSNumberUnavailableReason.page.md
 - name: Extension UKCore-NHSNumberVerificationStatus

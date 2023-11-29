@@ -11,6 +11,9 @@ where
 	name = 'ExtensionUKCoreAllergyIntoleranceEnd'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -30,6 +33,10 @@ select
   <b>Allergy Intolerance End</b>- An example to illustrate the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid.<br>
   {{pagelink:Example-UKCore-Extension-AllergyIntolEnd}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-AllergyIntoleranceEnd/~issues?level=File">Report Issue for Extension-UKCore-AllergyIntoleranceEnd</a>.
 </div>
 
 

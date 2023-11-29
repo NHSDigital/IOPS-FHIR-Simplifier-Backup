@@ -19,7 +19,7 @@ More information about the extensions can be found using the links below.
 <td>vaccinationProcedure</td>
 <td>Immunization</td>
 <td>{{pagelink:Extension-UKCore-VaccinationProcedure}}</td>
-<td> to hold an immunisation procedure code.
+<td>Used to hold an immunisation procedure code.
 
 This extension SHOULD be used when `Immunization.status`=`completed`. 
 

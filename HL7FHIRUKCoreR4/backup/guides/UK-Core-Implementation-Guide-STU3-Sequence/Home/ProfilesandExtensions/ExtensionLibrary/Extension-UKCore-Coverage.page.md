@@ -11,6 +11,9 @@ where
 	name = 'ExtensionUKCoreCoverage'
 select
 	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
 	Description: description,
 	Profile_Purpose: purpose
 ```
@@ -30,6 +33,10 @@ select
   <b>Coverage</b>- An example to illustrate the extension for a service request, to state the the coverage of the funding for this request.<br>
   {{pagelink:Example-UKCore-Extension-Coverage}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-Coverage/~issues?level=File">Report Issue for Extension-UKCore-Coverage</a>.
 </div>
 
 <h3 id="guidance-coverage">Extension Specific Guidance</h3>
