@@ -10,6 +10,8 @@
   filename: ValueSet-Design
 - name: CodeSystem Design
   filename: CodeSystem-Design
+- name: NamingSystem Design
+  filename: NamingSystem-Design
 - name: Instance Example Design
   filename: Instance-Example-Design
 - name: IG Page Design

@@ -41,6 +41,8 @@
 <b>Removed specific body sites examples from mapping page</b>
 <ul>
 <li>Mapping table now states that any body site from the SNOMED hierachy < 123037004 | Body structure (body structure) can be used to represent body sites where cancer signals are detected. Also includes guidance on how to represent multiple body sites for primary and secondary locations.</li>
+<li>Examples further anonymised</li>
+<li>Mapping table & examples updated with missing SNOMED CT codes added for<br>1854971000000106	| Qualitative result of cancer methylation profile in cell free deoxyribonucleic acid by next generation sequencing<br/>1854981000000108 | Multi-cancer early detection signal detected<br/>1854991000000105 | Multi-cancer early detection signal not detected<br/>1873921000000106 | Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier<br/>1873931000000108 | Multi-cancer early detection second highest probability cancer signal origin by machine learning-based classifier</li>
 </ul>
 </td>
 </tr>

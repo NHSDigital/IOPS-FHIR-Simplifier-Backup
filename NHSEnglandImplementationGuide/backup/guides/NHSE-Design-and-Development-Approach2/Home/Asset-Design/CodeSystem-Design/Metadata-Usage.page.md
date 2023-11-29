@@ -85,9 +85,9 @@ View further information about <a href="https://www.hl7.org/fhir/R4/domainresour
         <td>code</td>
         <td>For the NHS England these are defined as: 
         <ul>
-        <li>draft - ValueSets in development</li>
-        <li>active - ValueSets that have been approved via Clinical and Technical Assurance</li>
-        <li>retired - ValueSets that are no longer required</li>
+        <li>draft - CodeSystem in development</li>
+        <li>active - CodeSystem that have been approved via Clinical and Technical Assurance</li>
+        <li>retired - CodeSystem that are no longer required</li>
         </ul></td>
     </tr>
         <td>date</td>
