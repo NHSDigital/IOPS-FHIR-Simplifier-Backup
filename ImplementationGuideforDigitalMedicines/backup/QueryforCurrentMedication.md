@@ -27,7 +27,7 @@ Applicable FHIR resources: `MedicationStatement`, and optionally `MedicationRequ
     <strong>IMPORTANT:</strong> A definition of what is deemed 'current' has been a challenge for healthcare IT for many years. This implementation guidance only provides a suggested approach. Until a national standard a published, accepted and proven, this guidance is of experimental status.
 </div>-->
 <div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>NEW:</strong> The September 2023 FCI publication for <a href="https://fci.org.uk/resource-report/rendering-of-a-consolidated-medications-record.html">Rendering of a Consoloated Medications Record</a>, includes a definition of "current medication" within Appendix A.
+    <strong>NEW:</strong> The September 2023 FCI publication for <a href="https://fci.org.uk/resource-report/rendering-of-a-consolidated-medications-record.html">Rendering of a Consolodated Medications Record</a>, includes a definition of "current medication" within Appendix A.
 </div>
 
 A summarised version of the FCI definition is below with references to data items within the FHIR MedicationStatement resource:
@@ -38,7 +38,7 @@ A summarised version of the FCI definition is below with references to data item
 
 **Repeat Medication is current if:**
 - There is no end date set (`MedicationStatement.effectivePeriod.end`) for the medication period.
-- The medication period end date(`MedicationStatement.effectivePeriod.end`) is on or after the index date (e.g., today).
+- The medication period end date(`MedicationStatement.effectivePeriod.end`) is on or after the index date (e.g. today).
 - And in all cases, the authorised date (`MedicationStatement.effectiveDateTime` or `.effectivePeriod.start`) or last issued date (`MedicationStatement.extension:medicationStatementLastIssueDate`) is within the last two years (whichever is later).
 
 #### Where is 'current' determined?
