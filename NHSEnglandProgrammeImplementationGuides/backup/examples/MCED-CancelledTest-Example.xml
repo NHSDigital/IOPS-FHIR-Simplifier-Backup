@@ -240,7 +240,7 @@
           <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
           <display value="NHS9123123" />
         </specimen>
-        <conclusion value="The Galleri test results report PDF document is the official source of the test result and contains important information regarding the Galleri test and the patient&#39;s test results. Please read the official report for complete results." />
+        <conclusion value="The test results report PDF document is the official source of the test result and contains important information regarding the test and the patient&#39;s test results. Please read the official report for complete results." />
         <!--The PDF report goes here-->
         <presentedForm>
           <contentType value="application/pdf" />
