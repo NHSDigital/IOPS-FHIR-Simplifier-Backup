@@ -20,7 +20,7 @@ The url format to be used for these assets is as below, where <samp>[Name]</samp
 - **Extension** <code>https://fhir.nhs.uk/England/StructureDefinition/Extension-England-[Name]</code>
 - **ValueSet:** <code>https://fhir.nhs.uk/England/ValueSet/England-[Name]</code>
 - **CodeSystem:** <code>https://fhir.nhs.uk/England/CodeSystem/England-[Name]</code>
-- **NamingSystem:** <code>https://fhir.nhs.uk/Id/England-[Name]</code>
+
 
 
 **Common properties** 
