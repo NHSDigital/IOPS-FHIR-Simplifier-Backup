@@ -97,7 +97,12 @@ View further information about <a href="https://www.hl7.org/fhir/R4/domainresour
         <li>Contact details for the publisher SHALL be added.</li>
         <li>Contact details for the team responsible for the NamingSystem MAY be added, where appropriate.</li>
         </ul>
-See the {{pagelink:Publisher--Contact---Copyright}} for details of how this SHALL be populated for all NHS England NamingSystem, where the base URL is <code> https://*.nhs.uk/</code>.</td>
+See the {{pagelink:Publisher--Contact---Copyright}} for details of how this SHALL be populated for all NHS England NamingSystem, where the base URL is <code> https://*.nhs.uk/</code>.<BR>
+<BR>
+If additional contact details SHALL be added, then the rank value SHALL be automatically increased by "1".
+For example now in the above context the rank value is "1" but if additonal contact will be added then the rank value MUST be "2".
+
+</td>
     </tr>
     <tr>
         <td>responsible</td>
