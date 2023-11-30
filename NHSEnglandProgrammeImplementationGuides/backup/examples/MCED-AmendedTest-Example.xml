@@ -243,7 +243,7 @@
         <result>
           <reference value="urn:uuid:9f7babcd-19cb-4063-b96b-61a20b2e07e6" />
         </result>
-        <conclusion value="The Galleri test results report PDF document is the official source of the test result and contains important information regarding the Galleri test and the patient&#39;s test results. Please read the official report for complete results." />
+        <conclusion value="The test results report PDF document is the official source of the test result and contains important information regarding the test and the patient&#39;s test results. Please read the official report for complete results." />
         <!--The PDF report goes here-->
         <presentedForm>
           <contentType value="application/pdf" />
@@ -320,7 +320,7 @@
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="TBC" />
+            <code value="1854971000000106" />
             <display value="Qualitative result of cancer methylation profile in cell free deoxyribonucleic acid by next generation sequencing" />
           </coding>
         </code>
@@ -336,7 +336,7 @@
         <valueCodeableConcept>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="TBC" />
+            <code value="1854981000000108" />
             <display value="Multi-cancer early detection signal detected" />
           </coding>
         </valueCodeableConcept>
@@ -364,8 +364,8 @@
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="TBC" />
-            <display value="Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier" />
+            <code value="1873921000000106" />
+            <display value="Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier" />
           </coding>
         </code>
         <subject>
@@ -429,8 +429,8 @@
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="TBC" />
-            <display value="Multi-cancer early detection predicted second cancer signal origin by machine learning-based classifier" />
+            <code value="1873931000000108" />
+            <display value="Multi-cancer early detection second highest probability cancer signal origin by machine learning-based classifier" />
           </coding>
         </code>
         <subject>
