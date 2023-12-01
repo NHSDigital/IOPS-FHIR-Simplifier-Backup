@@ -1,8 +1,8 @@
 ## {{page-title}}
 
-PractitionerRole resources should be used where information about both a practitioner and their role within a specific organization is required, e.g. as the ServiceRequest.requestor.
+PractitionerRole resources SHOULD be used where information about both a practitioner and their role within a specific organization is required, e.g. as the ServiceRequest.requestor.
 
-References to Practitioner and Organization resources should only be made via identifier, rather than appending Practitioner and Organization resources to test order bundles. Issues with referencing via identifier should be reported to the NHS England Genomics Unit for investigation.
+References to Practitioner and Organization resources SHOULD only be made via identifier, rather than appending Practitioner and Organization resources to test order bundles. Issues with referencing via identifier SHOULD be reported to the NHS England Genomics Unit for investigation.
 
 | Profile url | FHIR Module | Normative Status |
 |--
@@ -94,7 +94,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="practitioner"></a>
 #### practitioner
-Users SHOULD reference practitioners using an appropriate naming system within the NHS (defined within the [NHS England IG](https://simplifier.net/guide/NHSDigital/Home/FHIRAssets/AllAssets/Profiles/NHSDigital-Practitioner.guide.md?version=current#identifier). Display name can be included to aid readability and verification of included identifiers.
+Users SHOULD reference practitioners using an appropriate naming system within the NHS (defined within the [NHS England IG](https://simplifier.net/guide/NHSDigital/Home/FHIRAssets/AllAssets/Profiles/NHSDigital-Practitioner.guide.md?version=current#identifier). Display name MAY be included to aid readability and verification of included identifiers.
 ```json
  "practitioner": {
         "identifier": {
@@ -107,7 +107,7 @@ Users SHOULD reference practitioners using an appropriate naming system within t
 
 <a name="organization"></a>
 #### organization
-Users SHOULD reference organizations using an ODS code. Display name can be included to aid readability and verification of included identifiers.
+Users SHOULD reference organizations using an ODS code. Display name MAY be included to aid readability and verification of included identifiers.
 ```json
  "organization": {
         "identifier": {
@@ -120,7 +120,7 @@ Users SHOULD reference organizations using an ODS code. Display name can be incl
 
 <a name="specialty"></a>
 #### specialty
-The specialty field should be used to record department for the requesting clinician, issues with the use of this field, including issues with the [bound UK Core ValueSet](https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode) not representing certain departments should be reported to the NHS England Genomics Unit
+The specialty field SHOULD be used to record department for the requesting clinician, issues with the use of this field, including issues with the [bound UK Core ValueSet](https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode) not representing certain departments SHOULD be reported to the NHS England Genomics Unit
 ```json
 "specialty":  [
         {
@@ -137,7 +137,7 @@ The specialty field should be used to record department for the requesting clini
 
 <a name="telecom"></a>
 #### telecom
-The telecom field should be used to record contact details for the practitioner. For central mailboxes, e.g. those used for providing reports back to the requester, these should be marked with an appropriate 'contactpoint-comment' extension. 
+The telecom field SHOULD be used to record contact details for the practitioner. For central mailboxes, e.g. those used for providing reports back to the requester, these SHOULD be marked with an appropriate 'contactpoint-comment' extension. 
 ```json
 "telecom":  [
         {

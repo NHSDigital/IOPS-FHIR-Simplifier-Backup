@@ -143,7 +143,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="code"></a>
 #### code
-SNOMED CT coding is preferred, though it is expected that alternative codings will be used depending on the appropriateness for a particular observation e.g. HPO or other codings found within the [HL7 International Genomic Reporting IG](https://hl7.org/fhir/uv/genomics-reporting/codings.html) as their use may already be widespread within Genomics. If a SNOMED CT equivalent exists for a code regularly captured within another CodeSystem, additional 'coding' elements within 'code' should be provided to aid analytics.
+SNOMED CT coding is preferred, though it is expected that alternative codings will be used depending on the appropriateness for a particular observation e.g. HPO or other codings found within the [HL7 International Genomic Reporting IG](https://hl7.org/fhir/uv/genomics-reporting/codings.html) as their use may already be widespread within Genomics. If a SNOMED CT equivalent exists for a code regularly captured within another CodeSystem, additional 'coding' elements within 'code' SHOULD be provided to aid analytics.
 ```json
 "code": {
         "coding":  [
@@ -158,7 +158,7 @@ SNOMED CT coding is preferred, though it is expected that alternative codings wi
 
 <a name="subject"></a>
 #### subject
-Reference to the associated Patient. This can be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -187,7 +187,7 @@ It is expected that all Observations SHOULD include the effective time the obser
 
 <a name="value"></a>
 #### value\[x\]
-The value element should use the most appropriate data type for the observation in question. Using preferred CodeSystems as specified within HL7 International FHIR R4 or the UK Core. For asserting absence of a particular condition/situation, the finding should be specified within the 'code' element and 'valueBoolean' set to 'false'. For an assertion of a particular situation being present, e.g. a Condition or Procedure having been performed, these should be collected within the relevant clinical resources, alongside additional information needed to inform interpretation.
+The value element SHOULD use the most appropriate data type for the observation in question. Using preferred CodeSystems as specified within HL7 International FHIR R4 or the UK Core. For asserting absence of a particular condition/situation, the finding SHOULD be specified within the 'code' element and 'valueBoolean' set to 'false'. For an assertion of a particular situation being present, e.g. a Condition or Procedure having been performed, these SHOULD be collected within the relevant clinical resources, alongside additional information needed to inform interpretation.
 ```json
 "valueQuantity": {
         "value": 6.5,

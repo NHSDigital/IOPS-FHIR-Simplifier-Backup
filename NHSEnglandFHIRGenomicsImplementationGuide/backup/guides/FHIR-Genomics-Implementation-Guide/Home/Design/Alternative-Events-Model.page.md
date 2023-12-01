@@ -18,7 +18,7 @@ In the final solution any updates to ServiceRequests are expected to trigger eve
 
 ### Pro-active Notification
 
-For pro-active notification of task and test report creation or updates, where the test order service sends the Task and other resources to a receiving organisation/service, that receiving system must also expose multiple API endpoints to enable that notification to be consumed. Alternative mechanisms such as use of messaging via MESH could be used to push notifications as messages rather than the receiving system needing to expose RESTful APIs.
+For pro-active notification of task and test report creation or updates, where the test order service sends the Task and other resources to a receiving organisation/service, that receiving system SHALL also expose multiple API endpoints to enable that notification to be consumed. Alternative mechanisms such as use of messaging via MESH could be used to push notifications as messages rather than the receiving system needing to expose RESTful APIs.
 
 Due to the short timescales for alpha delivery and possible technical immaturity of participating organisations, making exposing an API or processing a message over MESH challenging, initial alpha build will rely on polling to identify new and updated resources. Proactive notifications will be considered in later phases.
 

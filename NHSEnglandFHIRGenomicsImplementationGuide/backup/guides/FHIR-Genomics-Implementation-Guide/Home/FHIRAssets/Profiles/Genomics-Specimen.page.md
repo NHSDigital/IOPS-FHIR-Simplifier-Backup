@@ -101,7 +101,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="extension:sampleCategory"></a>
 #### extension:sampleCategory
-Allows the categorisation of a sample into either tumour or germline. Additional terms may be added upon review though the valueCodeableConcept.text field can be used as a free text representation if needed.
+Allows the categorisation of a sample into either tumour or germline. Additional terms may be added upon review though the valueCodeableConcept.text field MAY be used as a free text representation if needed.
 ```json
 "extension": [
         {
@@ -121,7 +121,7 @@ Allows the categorisation of a sample into either tumour or germline. Additional
 
 <a name="identifier"></a>
 #### identifier
-Multiple identifiers can be assigned to a sample as it travels between labs. Each lab SHOULD append their local identifier to the identifier array if needed, ensuring either the system or assigner is able to disambiguate any identifiers from possibly overlapping numbers from other organizations
+Multiple identifiers MAY be assigned to a sample as it travels between labs. Each lab SHOULD append their local identifier to the identifier array if needed, ensuring either the system or assigner is able to disambiguate any identifiers from possibly overlapping numbers from other organizations
 ```json
 "identifier":  [
         {
@@ -133,7 +133,7 @@ Multiple identifiers can be assigned to a sample as it travels between labs. Eac
 
 <a name="status"></a>
 #### status
-If a sample has not been collected or the quality is such that is cannot be processed, it must be marked as 'unavailable' or 'unsatisfactory', respectively. Otherwise the sample should be marked as available.
+If a sample has not been collected or the quality is such that is cannot be processed, it SHALL be marked as 'unavailable' or 'unsatisfactory', respectively. Otherwise the sample SHOULD be marked as available.
 ```json
 "status": "unavailable",
 ```
@@ -155,7 +155,7 @@ The sample type, SNOMED CT preferred.
 
 <a name="subject"></a>
 #### subject
-MUST be provided. This should be a reference to the Patient resource or the identifier, NHS number, for the patient.
+SHALL be provided. This SHOULD be a reference to the Patient resource or the identifier, NHS number, for the patient.
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -186,7 +186,7 @@ If a sample has been split into multiple parts, each SHOULD be represented using
 
 <a name="request"></a>
 #### request
-MUST be provided. This should be a reference to the request which initiated collection of the sample. SHOULD be updated (added to) if used in further ServiceRequests, e.g. as part of reanalysis
+SHALL be provided. This SHOULD be a reference to the request which initiated collection of the sample. SHOULD be updated (added to) if used in further ServiceRequests, e.g. as part of reanalysis
 ```json
 "request":  [
         {
@@ -260,7 +260,7 @@ SHOULD be updated if processing occurs on the sample which affects later use, e.
 
 <a name="condition"></a>
 #### condition
-Used to record the condition of a specimen. Within Genomics, should be used to record the fixed/frozen state, using the UK Core bound ValueSet.
+Used to record the condition of a specimen. Within Genomics, SHOULD be used to record the fixed/frozen state, using the UK Core bound ValueSet.
 ```json
 "condition":  [
         {

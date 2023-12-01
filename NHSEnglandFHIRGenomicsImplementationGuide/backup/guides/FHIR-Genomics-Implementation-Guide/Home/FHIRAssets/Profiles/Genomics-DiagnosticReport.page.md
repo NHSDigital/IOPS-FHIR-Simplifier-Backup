@@ -112,7 +112,7 @@ SHOULD reference the originating ServiceRequest if this is an instance of a geno
 
 <a name="status"></a>
 #### status
-SHOULD use base HL7 codes for DiagnosticReport.status. A DiagnosticReport should only be marked as final if the report is complete and verified by an authorised person.  
+SHOULD use base HL7 codes for DiagnosticReport.status. A DiagnosticReport SHOULD only be marked as final if the report is complete and verified by an authorised person.  
 ```json
  "status": "final",
 ```
@@ -134,7 +134,7 @@ SHOULD use a record artifact concept from SNOMED CT where an appropriate code ex
 
 <a name="subject"></a>
 #### subject
-Reference to the associated Patient. This can be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -186,7 +186,7 @@ SHOULD reference the specimen used during testing to generate the report, if the
 
 <a name="conclusionCode"></a>
 #### conclusionCode
-If possible, unstructured reports wrapped within DiagnosticReports, should contain a conclusionCode element indicating the coded finding from the report, to aid analytics. 
+If possible, unstructured reports wrapped within DiagnosticReports, SHOULD contain a conclusionCode element indicating the coded finding from the report, to aid analytics. 
 ```json
 "conclusionCode":  [
         {
@@ -203,7 +203,7 @@ If possible, unstructured reports wrapped within DiagnosticReports, should conta
 
 <a name="presentedForm"></a>
 #### presentedForm
-Genomic reports MUST include a presentedForm element either referencing the location of the PDF report (located and accessible on either the source/client system or via NRL using appropriate authentication) or include the PDF report as a base64 encoded attachment within the message payload.
+Genomic reports SHALL include a presentedForm element either referencing the location of the PDF report (located and accessible on either the source/client system or via NRL using appropriate authentication) or include the PDF report as a base64 encoded attachment within the message payload.
 ```json
 "presentedForm": [
         {

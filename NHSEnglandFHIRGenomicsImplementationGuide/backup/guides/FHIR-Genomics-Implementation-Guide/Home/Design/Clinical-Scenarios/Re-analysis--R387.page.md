@@ -15,3 +15,5 @@ For further details, refer to [Reanalysis of genomic sequencing data for rare di
 NGIS’s interpretation portal can only hold one single version of the analysis. This means that if a WGS test request is generated on the patient, the single current version of the analysis is held. If there is a need for secondary analysis and a subsequent test is requested, the data previously held in the interpretation portal is overwritten. The problem of overwriting the primary analysis of the original data has been raised as a clinical safety risk and is being progressed with NGIS and will remain the responsibility of NGIS to address. 
 
 From a requirements standpoint, the requester should have the ability to create a request for secondary analysis. The GLH will submit the request to NGIS in a business-as-usual capacity. 
+
+### [Link to the High Fidelity Wireframe for the Re-analysis Scenario](https://atiyuk.axshare.com/)

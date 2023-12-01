@@ -23,7 +23,7 @@ There are many possible variations and exceptions to this basic process, includi
 
 - The type of Requesting Organisation (e.g. primary care, secondary care, community) and the role of the Requesting HCP.
 - The type of care that the patient is receiving e.g. in-patient, out-patient
-- The type and number of required tests.
+- The type and number of required tests. See the [National Genomic Test Directory](https://www.england.nhs.uk/publication/national-genomic-test-directories/) for the types of tests that can be requested.
 - Patient consenting for sharing their genomic data for research purposes.
 - The type and number of required specimens. Depending on the requested tests, a mix of specimen types may be required e.g. blood and biopsy.
 - The organisation and HCP responsible for collecting the specimen and the location, timing and method of collection. In some cases, the Specimen Collecting Organisation and/or HCP may differ from the Requesting Organisation / HCP. For example, in the scenario where a patient is referred by their GP to attend a haematology clinic at a hospital.
@@ -83,7 +83,7 @@ There may be services which run tests but not initially be connected to the test
 Other models such as the LIMS who would receive the test report in some scenarios could also append it to the test request rather than the GLH, the service should be flexible to meet these use cases, but with the intention that all these edge case services will be connected.
 
 #### National Pathology Exchange (NPEx)
-The NPEx is currently connected to most labs, so it is possible that if the national test order service is connected to NPEx many of the updates to tasks, including those for the black box test services, which are not directly connected to the test order service, could be automatically propagated to the service. As most labs participating in the alpha and beta will be connected to the test order service, this will not be considered for inclusion in these stages, though NPEx could be considered as part of a future enhancement to the service.
+The NPEx is currently connected to some labs, so it is possible that if the national test order service is connected to NPEx many of the updates to tasks, including those for the black box test services, which are not directly connected to the test order service, could be automatically propagated to the service. As most labs participating in the alpha and beta will be connected to the test order service, this will not be considered for inclusion in these stages, though NPEx could be considered as part of a future enhancement to the service. However, it is noted that most CAS labs do not have NPEx connectivity so it is not expected that labs would have or need to leverage NPEx connections in order to integrate with the central GMS.
 
 ### FHIR Specimens
 As well as tasks being created for each unit of work (e.g. to separate work being conducted across organizational boundaries), it is possible that a new Specimen resources will need to be created as they flow through the system. It is common for a specimen to be processed/changed by a service before it is passed on, this is represented in FHIR through the creation of a sub-specimen of the original (where the original still exists).

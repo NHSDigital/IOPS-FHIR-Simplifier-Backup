@@ -106,14 +106,14 @@ An extension on the FamilyMemberHistory resource to include Observations relevan
 #### status
 Used to mark the completeness of a given family member's clinical history. If the history of a family member is expected but no history could be obtained, this  element SHOULD be filled with 'health-unknown'.
 
-Assertions regarding absence of relevant history should follow guidance within the [HL7 FHIR R4 FamilyMemberHistory resource](http://hl7.org/fhir/R4/familymemberhistory.html#9.4.2.4).
+Assertions regarding absence of relevant history SHOULD follow guidance within the [HL7 FHIR R4 FamilyMemberHistory resource](http://hl7.org/fhir/R4/familymemberhistory.html#9.4.2.4).
 ```json
 "status": "completed",
 ```
 
 <a name="patient"></a>
 #### patient
-Reference to the associated proband Patient for which this family history is being obtained. This can be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+Reference to the associated proband Patient for which this family history is being obtained. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -126,7 +126,7 @@ Reference to the associated proband Patient for which this family history is bei
 
 <a name="relationship"></a>
 #### relationship
-Relationship between the person the FamilyMemberHistory references and the proband Patient. Clinical histories for each family member are expected to be recorded in separate FamilyMemberHistory resources. If multiple resources are required, both FamilyMemberHistory and related clinical artifacts such as Condition/Observation resources, these can be contained within a List resource to improve readability.
+Relationship between the person the FamilyMemberHistory references and the proband Patient. Clinical histories for each family member are expected to be recorded in separate FamilyMemberHistory resources. If multiple resources are required, both FamilyMemberHistory and related clinical artifacts such as Condition/Observation resources, these MAY be contained within a List resource to improve readability.
 ```json
 "relationship": {
         "coding":  [

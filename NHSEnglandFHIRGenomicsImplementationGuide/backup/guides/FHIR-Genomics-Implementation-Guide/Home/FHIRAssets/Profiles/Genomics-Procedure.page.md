@@ -2,9 +2,9 @@
 
 Used for detailing information on procedures the patient has had performed, to aid interpretation of Genomic test results.
 
-Assertion of an absence of a procedure being performed should be recorded using an Observation resource, as described in {{pagelink:Home/FHIRAssets/AllAssets/Profiles/Genomics-Observation.page.md}}
+Assertion of an absence of a procedure being performed SHOULD be recorded using an Observation resource, as described in {{pagelink:Home/FHIRAssets/AllAssets/Profiles/Genomics-Observation.page.md}}
 
-At a minimum, Procedure resources are expected to contain the status, code, subject and performedDateTime, though additional information conforming to the FHIR profile below can be included if relevant.
+At a minimum, Procedure resources are expected to contain the status, code, subject and performedDateTime, though additional information conforming to the FHIR profile below MAY be included if relevant.
 
 | Profile url | FHIR Module | Normative Status |
 |--
@@ -86,14 +86,14 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="status"></a>
 #### status
-Status MUST use the codes recommended in the base Procedure resource, appropriately tagging procedures as having been completed or in-progress etc. depending on the actual status of the procedure.
+Status SHALL use the codes recommended in the base Procedure resource, appropriately tagging procedures as having been completed or in-progress etc. depending on the actual status of the procedure.
 ```json
 "status": "completed",
 ```
 
 <a name="code"></a>
 #### code
-SNOMED CT coding is preferred, though alternative codings can be provided subject to review of the Coding system by the NHS England Genomics Unit.
+SNOMED CT coding is preferred, though alternative codings MAY be provided subject to review of the Coding system by the NHS England Genomics Unit.
 ```json
 "code": {
         "coding":  [
@@ -108,7 +108,7 @@ SNOMED CT coding is preferred, though alternative codings can be provided subjec
 
 <a name="subject"></a>
 #### subject
-Reference to the associated Patient. This can be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS.
+Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS.
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",

@@ -4,16 +4,16 @@ The proposed central architecture supports the traceability required in the modi
 
 ## Modification
 
-In the event the receiving lab requires further information, the requirement is to allow for communication between the lab and requester through means of indication where further information is required on the submitted test. The requester must be notified where additional information is required to proceed with the test and the lab when the update has been made. 
+In the event the receiving lab requires further information, the requirement is to allow for communication between the lab and requester through means of indication where further information is required on the submitted test. The requester SHALL be notified where additional information is required to proceed with the test and the lab when the update has been made. 
 
-The lab may also update the test request (including clinical indication code) based on the decision made by the clinical scientist. The test may be modified or amended in some instances up to the point of a report being issued. Amendments to a test request must be visible to a user accessing the test request. Details of date, and time and user who made the change must be shown on both the original entry and the amendment. 
+The lab may also update the test request (including clinical indication code) based on the decision made by the clinical scientist. The test may be modified or amended in some instances up to the point of a report being issued. Amendments to a test request SHALL be visible to a user accessing the test request. Details of date, and time and user who made the change SHALL be shown on both the original entry and the amendment. 
 
 The business rules for confirming when modification (e.g., requires further information by requester) is applicable on a submitted test and requires confirmation from the GLHs. 
 Modifications, cancellation, and mark in error will be tested for all test request types including WGS Test Requests. Any updates required to enable interoperability and workflow improvements to current practices will be made in coordination with GEL and reflected in the NGIS SOPs. 
 
 ## Cancellation
 
-All users of an electronic order management system are responsible for maintaining the accuracy of the tests ordered. In the event a test has been cancelled, the requirement is to allow for transparency on  the reason for cancellation (by either requester or lab) and reflect the changes in real time. When a cancellation occurs, the requirement is to record the date of cancellation, the details of the cancellation. Any changes made must be visible to any user accessing the order management system. 
+All users of an electronic order management system are responsible for maintaining the accuracy of the tests ordered. In the event a test has been cancelled, the requirement is to allow for transparency on  the reason for cancellation (by either requester or lab) and reflect the changes in real time. When a cancellation occurs, the requirement is to record the date of cancellation, the details of the cancellation. Any changes made SHALL be visible to any user accessing the order management system. 
 
 A test may be cancelled based on some of the example scenarios listed below:
 - Test no longer required (i.e., patient has changed their decision to proceed with the test)
@@ -29,6 +29,6 @@ A test may be marked in error when:
 - Patient choice was incorrectly recorded status (WGS Test Requests only)- correction of patient choice status any time after a test request has been submitted by the GLH
 - Correction of clinical data: correction of test information submitted including HPO terms, clinical indications. For WGS Test Requests, the current process for marking at test in error will be tested as part of the requirements validation within the Alpha phase. 
 
-The requirement for managing mark-in-error is to provide transparency to all organisations involved in the provision of the test. Organisations must be informed of the test request being marked in error. If the error was not immediately recognised, information will need to remain to provide an audit trail and reasoning. Details such as reason the test was marked in error, by whom, the date the request and any further information associated with the test request must be maintained.  
+The requirement for managing mark-in-error is to provide transparency to all organisations involved in the provision of the test. Organisations SHALL be informed of the test request being marked in error. If the error was not immediately recognised, information will need to remain to provide an audit trail and reasoning. Details such as reason the test was marked in error, by whom, the date the request and any further information associated with the test request SHALL be maintained.  
 
 Policy guidance is required on how the notification and mark -in-error scenarios are managed across organisational boundaries as all of the different organisations will need to be informed of the Mark-in-Error. 

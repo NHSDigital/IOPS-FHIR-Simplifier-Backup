@@ -8,7 +8,7 @@ The central Test Order Service will expose all API endpoints to enable organisat
 
 In the linked tables below the API interactions which can be used to create, update and search for information on the test ordering services are specified at a high level.
 
-**Note:** The “Create ServiceRequest”, “Create Task” and “Create Specimen” are all FHIR resource level interactions and could all be done within one transaction to reduce
+**Note:** The “Create ServiceRequest”, “Create Task” and “Create Specimen” are all FHIR resource level interactions and could all be performed within one transaction to reduce
 the number of API calls required, for example if a GLH creates a new specimen, which they are going to send to an LGL, they should POST the new Specimen, Task and all related resources in one request.
 
 <!--

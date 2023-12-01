@@ -18,3 +18,5 @@ The following scenarios have been captured to indicate various specialist testin
 - **Mother is pregnant and has had a miscarriage:** In certain scenarios, where further testing may be required on the fetus to inform the management on future pregnancies, testing may occur on the fetus.  A test request is created on the mother’s record with the confirmation of sample collected (if after 24 weeks as skin on cord).  
 
 The requirement for electronic test order forms is to allow for configuration of specialist testing requirements and enable the management of samples associated with the fetus. Further input is required from the GMS to confirm the scenario as part of the testing phase within the Alpha.
+
+### [Link to the High Fidelity Wireframe for the Fetal Scenario](https://mfy3qt.axshare.com/)

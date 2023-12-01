@@ -1,3 +1,7 @@
+---
+expand: yes
+---
+
 ## {{page-title}}
 
 <div class="nhsd-!t-margin-bottom-6">
