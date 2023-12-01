@@ -1,8 +1,8 @@
 ## {{page-title}}
 
-Organization is not expected to be sent within Test Order or other interactions with the central GMS. Instead, client systems should strive to reference organizations via their ODS code and display name only. 
+Organization is not expected to be sent within Test Order or other interactions with the central GMS. Instead, client systems SHOULD strive to reference organizations via their ODS code and display name only. 
 
-The below profile is provided for information, if referencing by ODS code is intractable (though repeated issues with requester ability to reference via ODS code should be reported to the NHS England Genomic Unit for investigation).
+The below profile is provided for information, if referencing by ODS code is intractable (though repeated issues with requester ability to reference via ODS code SHOULD be reported to the NHS England Genomic Unit for investigation).
 
 | Profile url | FHIR Module | Normative Status |
 |--

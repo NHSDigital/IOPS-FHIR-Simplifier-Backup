@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-Focal resource for test order messages. All additional information or resources should be linked back to the ServiceRequest or be referenced from the ServiceRequest directly. 
+Focal resource for test order messages. All additional information or resources SHOULD be linked back to the ServiceRequest or be referenced from the ServiceRequest directly. 
 
 | Profile url | FHIR Module | Normative Status |
 |--
@@ -151,7 +151,7 @@ Extension for recording how work against the test order is being funded. The Val
 
 <a name="identifier"></a>
 #### identifier
-Automatically assigned by the central service, though source systems can provide a local identifier for tracking within their own system, in which case the central order number is appended to the identifiers array.
+Automatically assigned by the central service, though source systems MAY provide a local identifier for tracking within their own system, in which case the central order number is appended to the identifiers array.
 ```json
     "identifier":  [
         {
@@ -163,18 +163,18 @@ Automatically assigned by the central service, though source systems can provide
 
 <a name="status"></a>
 #### status
-ServiceRequests should be marked as 'draft' until submitted, after which they will be marked as 'active' automatically by the central GMS system. 
+ServiceRequests SHOULD be marked as 'draft' until submitted, after which they will be marked as 'active' automatically by the central GMS system. 
 
-A ServiceRequest may be marked as 'on-hold' if work against it cannot continue temporarily, e.g. due to certain prerequisite information not being provided. A ServiceRequest should be marked as 'revoked' if cancelled, either by the lab performing work against the order or at the request of the requesting clinician, though in each case a Provenance resource MUST be provided to capture why the state change has occurred. The requesting clinician may also mark the ServiceRequest as entered-in-error, though implications for work already in progress needs to be investigated further.
+A ServiceRequest may be marked as 'on-hold' if work against it cannot continue temporarily, e.g. due to certain prerequisite information not being provided. A ServiceRequest SHOULD be marked as 'revoked' if cancelled, either by the lab performing work against the order or at the request of the requesting clinician, though in each case a Provenance resource SHALL be provided to capture why the state change has occurred. The requesting clinician may also mark the ServiceRequest as entered-in-error, though implications for work already in progress needs to be investigated further.
 
-A ServiceRequest should only be marked as completed by the requesting clinician upon receipt and review of the resulting DiagnosticReport.
+A ServiceRequest SHOULD only be marked as completed by the requesting clinician upon receipt and review of the resulting DiagnosticReport.
 ```json
 "status": "active",
 ```
 
 <a name="intent"></a>
 #### intent
-ServiceRequests SHOULD be marked as 'order' unless they have been raised by a lab in response to an existing ServiceRequest, in which case they should be marked as 'reflex-order'. For reflex orders, the ServiceRequest.basedOn field MUST be populated with the original ServiceRequest, for traceability.
+ServiceRequests SHOULD be marked as 'order' unless they have been raised by a lab in response to an existing ServiceRequest, in which case they SHOULD be marked as 'reflex-order'. For reflex orders, the ServiceRequest.basedOn field SHALL be populated with the original ServiceRequest, for traceability.
 ```json
 "intent": "order",
 ```
@@ -198,7 +198,7 @@ ServiceRequests SHOULD use the [Genomics Sequencing Category](https://simplifier
 
 <a name="priority"></a>
 #### priority
-ServiceRequests marked as urgent (i.e. not routine) SHOULD populate the extension:priorityReason with why an urgent test is being requested. This should ideally be coded using SNOMED CT concepts. Multiple priorityReason extensions are allowed within a single ServiceRequest in order to aid post-coordination.
+ServiceRequests marked as urgent (i.e. not routine) SHOULD populate the extension:priorityReason with why an urgent test is being requested. This SHOULD ideally be coded using SNOMED CT concepts. Multiple priorityReason extensions are allowed within a single ServiceRequest in order to aid post-coordination.
 ```json
 "priority": "urgent",
 "_priority": {
@@ -221,7 +221,7 @@ ServiceRequests marked as urgent (i.e. not routine) SHOULD populate the extensio
 
 <a name="doNotPerform"></a>
 #### doNotPerform
-For the purposes of Genomic Test Ordering, the doNotPerform field MUST not be used. All ServiceRequests requests received by the system will be assumed to be orders for services/testing.
+For the purposes of Genomic Test Ordering, the doNotPerform field SHALL not be used. All ServiceRequests requests received by the system will be assumed to be orders for services/testing.
 
 <a name="code"></a>
 #### code
@@ -257,7 +257,7 @@ If multiple codes are being requested within one Test Order, these SHOULD be rep
 
 <a name="subject"></a>
 #### subject
-Reference to the associated Patient. This can be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -270,21 +270,21 @@ Reference to the associated Patient. This can be through a resource reference if
 
 <a name="occurrence"></a>
 #### occurrence\[x\]
-If a result is required by a specific date, this can be indicated though occurrenceDateTime, though there is no guarantee from the GMS that the ServiceRequest will be processed in the time frame specified.
+If a result is required by a specific date, this MAY be indicated though occurrenceDateTime, though there is no guarantee from the GMS that the ServiceRequest will be processed in the time frame specified.
 ```json
 "occurrenceDateTime": "2023-08-25",
 ```
 
 <a name="authoredOn"></a>
 #### authoredOn
-MUST be populated by the client upon submission, either manually by the user or automatically by the system integrating with the central GMS.
+SHALL be populated by the client upon submission, either manually by the user or automatically by the system integrating with the central GMS.
 ```json
 "authoredOn": "2023-08-05",
 ```
 
 <a name="requester"></a>
 #### requester
-MUST be populated on all ServiceRequests submitted to the central GMS. This MUST reference a PractitionerRole resource also submitted to the system (either within a single transaction or previously POSTed).
+SHALL be populated on all ServiceRequests submitted to the central GMS. This SHALL reference a PractitionerRole resource also submitted to the system (either within a single transaction or previously POSTed).
 ```json
 "requester": {
         "reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
@@ -293,7 +293,7 @@ MUST be populated on all ServiceRequests submitted to the central GMS. This MUST
 
 <a name="performer"></a>
 #### performer
-If a requester wants to assign processing of the ServiceRequest to a particular organization (e.g. a remote GLH) as opposed to leaving the ServiceRequest open, to be picked up by the local GLH or otherwise routed based on by test routing (TBC), then the performer field should be populated with the ODS code for the organization.
+If a requester wants to assign processing of the ServiceRequest to a particular organization (e.g. a remote GLH) as opposed to leaving the ServiceRequest open, to be picked up by the local GLH or otherwise routed based on by test routing (TBC), then the performer field SHOULD be populated with the ODS code for the organization.
 ```json
 "performer": [
         {
@@ -326,7 +326,7 @@ This mapping is currently under review as the CI/CITT code is also technically t
 
 <a name="supportingInfo"></a>
 #### supportingInfo
-Any clinical information provided about the patient for whom the testing is being requested MUST be referenced though the supportingInfo field, to ensure all the information relevant to the ServiceRequest can be easily retrieved. This includes Observations, Conditions, Procedures, FamilyMemberHistories etc.
+Any clinical information provided about the patient for whom the testing is being requested SHALL be referenced though the supportingInfo field, to ensure all the information relevant to the ServiceRequest can be easily retrieved. This includes Observations, Conditions, Procedures, FamilyMemberHistories etc.
 ```json
 "supportingInfo":  [
         {
@@ -355,7 +355,7 @@ Any clinical information provided about the patient for whom the testing is bein
 
 <a name="specimen"></a>
 #### specimen
-ServiceRequests for reanalysis, where the required samples already exist, SHOULD reference these samples through the specimen field. Where samples need to be collected to support testing, these should instead reference the ServiceRequest, through Specimen.request (i.e. the service request has prompted collection of the sample). The referenced Specimen resources should either be contained within the test order transaction bundle or already exist on the central GMS.
+ServiceRequests for reanalysis, where the required samples already exist, SHOULD reference these samples through the specimen field. Where samples need to be collected to support testing, these SHOULD instead reference the ServiceRequest, through Specimen.request (i.e. the service request has prompted collection of the sample). The referenced Specimen resources SHOULD either be contained within the test order transaction bundle or already exist on the central GMS.
 ```json
 "specimen": [
         {
@@ -366,7 +366,7 @@ ServiceRequests for reanalysis, where the required samples already exist, SHOULD
 
 <a name="note"></a>
 #### note
-Any information which cannot be readily be structured should be entered into the note field, though prolific use of the field to capture clinical information which better fits in level 3/4 FHIR resources is discouraged.
+Any information which cannot be readily be structured SHOULD be entered into the note field, though prolific use of the field to capture clinical information which better fits in level 3/4 FHIR resources is discouraged.
 ```json
 "note":  [
         {
@@ -377,7 +377,7 @@ Any information which cannot be readily be structured should be entered into the
 
 <a name="relevantHistory"></a>
 #### relevantHistory
-ServiceRequests which have been updated post submission should reference Provenance resources which detail when the resource was changed, who made the change and why.
+ServiceRequests which have been updated post submission SHOULD reference Provenance resources which detail when the resource was changed, who made the change and why.
 ```json
 "relevantHistory":  [
         {

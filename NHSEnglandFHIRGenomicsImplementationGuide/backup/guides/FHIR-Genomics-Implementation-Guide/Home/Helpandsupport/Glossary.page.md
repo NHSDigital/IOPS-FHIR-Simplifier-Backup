@@ -23,7 +23,7 @@ When describing genetic tests, different regions and professions sometimes use d
 |GEL|Genomics England Ltd., organization responsible for WGS testing in the UK|
 |GMC|General Medical Council, allocates unique codes to all doctors who are registered to practice in the UK|
 |GMS|Genomic Medicine Service, used interchangeably for both the programme of work at NHS England and the proposed electronic system for genomic test order management|
-|GLH|Genomic Laboratory Hub, the national genomic testing service is delivered through a network of seven Genomic Laboratory Hubs (GLHs), each responsible for coordinating services for a particular part of the country.|
+|GLH|Genomic Laboratory Hub, the national genomic testing service is delivered through a network of seven Genomic Laboratory Hubs (GLHs), each responsible for coordinating services for a particular part of the country. GLH in the context of this Implementation Guide is taken to mean the GLH entity itself (exclusive of its constituent LGLs). A Home GLH is specifically the GLH responsible for test order management within the requesting clinician's region, for a specific test order. |
 |GOM|Genomic Order Management, also Genomic Order Comms, the NHS England Genomics Unit, Informatics programme of work, of which development of a central electronic test ordering solution is a part| 
 |GP|General Practice/Practitioner, primary care provider for patients in the UK|
 |GTODS|Genomics Test Order Data Set, the information that needs to be included to inform a laboratory of what is required for a given diagnostic genomics test.|
@@ -40,7 +40,7 @@ When describing genetic tests, different regions and professions sometimes use d
 |LCC|IHE Laboratory Clinical Communications, defining Requests for further clinical information procedures|
 |LCSB|IHE Laboratory Code Set Distribution, defining Local lab code sharing procedures|
 |LDA|IHE Laboratory Device Automation, defining Laboratory device integration procedures|
-|LGL|Local Genomic Lab, lab responsible for Genomic Testing|
+|LGL|Local Genomic Lab, lab responsible for Genomic Testing. Where Labs/Laboratories are referenced within this Implementation Guide, this is taken to mean an LGL, unless theses have been explicitly identified as other types of lab e.g. Pathology|
 |LIMS|Laboratory Information Management System, the internal system used by labs for work order tracking|
 |LOINC|Logical Observation Identifiers Names and Codes, common terminology for laboratory and clinical observations, used widely internationally|
 |LPOCT|IHE Laboratory Point of Care Testing, defining Point of care testing procedures|

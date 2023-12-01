@@ -4,7 +4,7 @@ The focal resource for recording who a test order and genomic report are for.
 
 It is expected that client's will need to post Patient resources to the central GMS as some demographic information specific to Genomics will not have been captured within other systems such as PDS.
 
-Alternatively, systems can opt to include pointers to the Patient resource on their local system, though the mechanism preferred by the NHS England Genomics Unit has yet to be decided.
+Alternatively, systems MAY opt to include pointers to the Patient resource on their local system, though the mechanism preferred by the NHS England Genomics Unit has yet to be decided.
 
 | Profile url | FHIR Module | Normative Status |
 |--
@@ -105,11 +105,11 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="identifier"></a>
 #### identifier
-It is preferred that all patients with an NHS number have this included within the Patient resource upon submission of a test order. Patient who do not have an NHS number should have a temporary one registered/assigned with PDS. 
+It is preferred that all patients with an NHS number have this included within the Patient resource upon submission of a test order. Patient who do not have an NHS number SHOULD have a temporary one registered/assigned with PDS. 
 
-For patient records where the NHS number has been traced from PDS, the trace status should be provided within the NHS Number identifier slice.
+For patient records where the NHS number has been traced from PDS, the trace status SHOULD be provided within the NHS Number identifier slice.
 
-Additional identifiers should include an appropriate naming system scheme which clearly identifies the assigner (to disambiguate the identifier from other resources where these are not nationally unique). Alternatively, the OID for local identifier can be used, with the 'assigner' organization explicitly referenced.
+Additional identifiers SHOULD include an appropriate naming system scheme which clearly identifies the assigner (to disambiguate the identifier from other resources where these are not nationally unique). Alternatively, the OID for local identifier MAY be used, with the 'assigner' organization explicitly referenced.
 ```json
 "identifier":  [
         {
@@ -146,7 +146,7 @@ Additional identifiers should include an appropriate naming system scheme which 
 
 <a name="generalPractitioner"></a>
 #### generalPractitioner
-Where patients are registered with a General Practitioner within the UK, both the ODS code for the practice and GMP number for the practitioner should be provided, where known, as separate objects within the generalPractitioner array.
+Where patients are registered with a General Practitioner within the UK, both the ODS code for the practice and GMP number for the practitioner SHOULD be provided, where known, as separate objects within the generalPractitioner array.
 ```json
 "generalPractitioner":  [
         {
@@ -168,7 +168,7 @@ Where patients are registered with a General Practitioner within the UK, both th
 
 <a name="link"></a>
 #### link
-For patient records where additional information exists elsewhere, for example, within PDS or the source system EHR, this can be referenced through the link field, specifying the url through which the related patient information can be accessed.
+For patient records where additional information exists elsewhere, for example, within PDS or the source system EHR, this MAY be referenced through the link field, specifying the url through which the related patient information can be accessed.
 ```json
 "link":  [
         {

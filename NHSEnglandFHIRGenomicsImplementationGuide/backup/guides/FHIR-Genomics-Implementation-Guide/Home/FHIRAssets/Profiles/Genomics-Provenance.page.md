@@ -85,7 +85,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="target"></a>
 #### target
-MUST be provided. This should be a reference to the resource on the central GMS system that was updated.
+SHALL be provided. This SHOULD be a reference to the resource on the central GMS system that was updated.
 ```json
 "target":  [
         {
@@ -96,14 +96,14 @@ MUST be provided. This should be a reference to the resource on the central GMS 
 
 <a name="recorded"></a>
 #### recorded
-MUST be provided, the date/time when the update took place.
+SHALL be provided, the date/time when the update took place.
 ```json
 "recorded": "2023-08-10T11:10:00Z",
 ```
 
 <a name="reason"></a>
 #### reason
-The reason why the update took place. If the codes provided by HL7 are not granular enough, or additional notes need to be recorded detailing the reasoning behind a change, this should be added as text to 'reason.text'.
+The reason why the update took place. If the codes provided by HL7 are not granular enough, or additional notes need to be recorded detailing the reasoning behind a change, this SHOULD be added as text to 'reason.text'.
 ```json
 "reason":  [
         {

@@ -13,9 +13,9 @@ How providers/consumers should integrate with SPINE services is pending a finali
 
 ## Temporary Registration/ Merge Patients 
 
-The core identifier for a patient is the NHS number. If a patient does not have an NHS number a local ID  is allocated  to identify the patient.  In the event there is a duplication of records of the same patient, the activity of merging/de-merging of records should occur in the source (EPR) systems and inform PDS. Any communication to the core infrastructure should utilise an NHS number. In the event, an NHS number is not available, temporary identifiers (local IDs) may be used. All organisations involved in utilising the genomics service must be PDS compliant. 
+The core identifier for a patient is the NHS number. If a patient does not have an NHS number a local ID  is allocated  to identify the patient.  In the event there is a duplication of records of the same patient, the activity of merging/de-merging of records should occur in the source (EPR) systems and inform PDS. Any communication to the core infrastructure should utilise an NHS number. In the event, an NHS number is not available, temporary identifiers (local IDs) may be used. All organisations involved in utilising the genomics service SHALL be PDS compliant. 
 
-The core infrastructure must have the capability to manage merge scenarios in a transparent and auditable manner for the end users. Any superseded tests allocated to a record will be merged into the parent patient record as informed by PDS. 
+The core infrastructure SHALL have the capability to manage merge scenarios in a transparent and auditable manner for the end users. Any superseded tests allocated to a record will be merged into the parent patient record as informed by PDS. 
 
 Where there is no PDS integration, automatic merging of patients within the core infrastructure will not be possible. There may be a potential for duplicate records which will need to be managed through the core source system used within the organisation.  
 

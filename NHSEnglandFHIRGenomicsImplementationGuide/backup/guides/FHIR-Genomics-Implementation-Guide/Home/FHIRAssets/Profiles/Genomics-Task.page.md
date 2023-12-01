@@ -2,7 +2,7 @@
 
 The core workflow resource for managing processing of a ServiceRequest from order through to delivery of a DiagnosticReport and completion. Task tracking is a core requirement of the central Genomic Medicine Service.
 
-Each ServiceRequest submitted will instantiate a series of High Level Tasks, which can be assigned to different organizations for managing the test request e.g. Sample Processing, Interpretation, Reporting etc. The full list of possible Task types/codes, their associated business statuses, and status reasons is pending internal review.
+Each ServiceRequest submitted will instantiate a series of High Level Tasks, which MAY be assigned to different organizations for managing the test request e.g. Sample Processing, Interpretation, Reporting etc. The full list of possible Task types/codes, their associated business statuses, and status reasons is pending internal review.
 
 Tasks will be automatically created by the central service but updates to statuses and attachment of input/output resources is the responsibility of the assigned organizations.
 
@@ -225,7 +225,7 @@ Autopopulated by the central service on creation of the Task.
 
 <a name="lastModified"></a>
 #### lastModified
-Time at which a change to the task was made, e.g. status updated. MUST be updated on change.
+Time at which a change to the task was made, e.g. status updated. SHALL be updated on change.
 ```json
 "authoredOn": "2023-09-18T19:11:00Z"
 ```
@@ -241,7 +241,7 @@ The original requester of the ServiceRequest the Task is fulfilling. Autopopulat
 
 <a name="owner"></a>
 #### owner
-Autopopulated by the central service if a performer is assigned at Test submission. Otherwise updated by the organization claiming the task (though this could also be autopopulated if automated per test routing tables are integrated into the central service functionality). Owner should be populated using organization ODS code references.
+Autopopulated by the central service if a performer is assigned at Test submission. Otherwise updated by the organization claiming the task (though this could also be autopopulated if automated per test routing tables are integrated into the central service functionality). Owner SHOULD be populated using organization ODS code references.
 ```json
 "owner": {
         "identifier": {

@@ -2,7 +2,7 @@
 
 For detailing any Condition related information about the proband/consultands within a test order.
 
-It is expected that the information used to populate this resource should be sourced from the requesters EHR system. As such, there is no limit on the amount of detail that can be provided, though at a minimum the code and subject fields should be populated.
+It is expected that the information used to populate this resource SHOULD be sourced from the requesters EHR system. As such, there is no limit on the amount of detail that can be provided, though at a minimum the code and subject fields SHOULD be populated.
 
 It is also highly preferred if the verificationStatus, onsetDateTime, recordedDate, recorded and abatementDateTime are populated if applicable/known.
 
@@ -90,7 +90,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="code"></a>
 #### code
-SNOMED CT coding is preferred, though alternative codings can be provided subject to review of the Coding system by the NHS England Genomics Unit.
+SNOMED CT coding is preferred, though alternative codings MAY be provided subject to review of the Coding system by the NHS England Genomics Unit.
 ```json
 "code": {
         "coding":  [
@@ -105,7 +105,7 @@ SNOMED CT coding is preferred, though alternative codings can be provided subjec
 
 <a name="subject"></a>
 #### subject
-Reference to the associated Patient. This can be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",

@@ -2,7 +2,7 @@
 
 Used for linking Patients with other patients, e.g. in the case of proband and consultand within duo and trio testing. 
 
-For instances where clinical/demographic information for the related person are required, a Patient resource for the related person should be included, with the Patient.link field referencing the RelatedPerson. Elements duplicated across both the Patient and RelatedPerson should in this case be captured within the Patient resource only. The RelatedPerson resource then references the proband through the RelatedPerson.patient field. 
+For instances where clinical/demographic information for the related person are required, a Patient resource for the related person SHOULD be included, with the Patient.link field referencing the RelatedPerson. Elements duplicated across both the Patient and RelatedPerson SHOULD in this case be captured within the Patient resource only. The RelatedPerson resource then references the proband through the RelatedPerson.patient field. 
 
 Further use cases surrounding the use of RelatedPerson are pending further Duo/Trio scenarios.
 
@@ -85,7 +85,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="patient"></a>
 #### patient
-MUST be provided. This should be a reference to the Patient resource or the identifier, NHS number, for the patient.
+SHALL be provided. This SHOULD be a reference to the Patient resource or the identifier, NHS number, for the patient.
 ```json
 "patient": {
         "identifier": {

@@ -4,7 +4,7 @@ The Genomics QuestionnaireResponse is currently based on the UKCore resource, wi
 
 The profile for the UKCore-QuestionnaireResponse is provided below for completeness.
 
-No additional guidance has been provided on this page as there are no Genomic-specific considerations which need to be made. However, all QuestionnaireResponses submitted to the central service MUST reference a Questionnaire definition in order to aid validation and presentation of the response content.
+No additional guidance has been provided on this page as there are no Genomic-specific considerations which need to be made. However, all QuestionnaireResponses submitted to the central service SHALL reference a Questionnaire definition in order to aid validation and presentation of the response content.
 
 | Profile url | FHIR Module | Normative Status |
 |--

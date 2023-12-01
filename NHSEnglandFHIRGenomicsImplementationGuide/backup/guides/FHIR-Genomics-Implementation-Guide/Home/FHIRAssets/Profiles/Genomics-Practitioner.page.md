@@ -1,8 +1,8 @@
 ## {{page-title}}
 
-Practitioner is not expected to be sent within Test Order or other interactions with the central GMS. Instead, client systems should strive to reference practitioners via their identifier within a national coding system and display name only. 
+Practitioner is not expected to be sent within Test Order or other interactions with the central GMS. Instead, client systems SHOULD strive to reference practitioners via their identifier within a national coding system and display name only. 
 
-The below profile is provided for information, if referencing by identifier is intractable (though repeated issues with requester ability to reference via identifier/code should be reported to the NHS England Genomic Unit for investigation).
+The below profile is provided for information, if referencing by identifier is intractable (though repeated issues with requester ability to reference via identifier/code SHOULD be reported to the NHS England Genomic Unit for investigation).
 
 | Profile url | FHIR Module | Normative Status |
 |--
