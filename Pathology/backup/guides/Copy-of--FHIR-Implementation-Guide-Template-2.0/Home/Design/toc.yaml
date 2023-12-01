@@ -1,3 +1,5 @@
+- name: Background
+  filename: Background.page.md
 - name: Design Overview
   filename: Design-Overview
 - name: Data Mapping
