@@ -16,13 +16,11 @@
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- meta.versionId -->
         <tr>
             <td>meta.versionId</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
@@ -32,13 +30,11 @@
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- meta.profile -->
         <tr>
             <td>meta.profile</td>
             <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
@@ -48,13 +44,11 @@
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- meta.tag -->
         <tr>
             <td>meta.tag</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>

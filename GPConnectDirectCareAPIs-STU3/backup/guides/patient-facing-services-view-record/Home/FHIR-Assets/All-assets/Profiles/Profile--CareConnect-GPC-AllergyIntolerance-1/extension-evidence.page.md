@@ -4,7 +4,6 @@
 
 <span class="mro-circle optional" title="Optional"></span> Optional
 
-
 <h5><ins>Guidance</ins></h5>
 
 The `extension.allergyEnd` does not need to be populated.

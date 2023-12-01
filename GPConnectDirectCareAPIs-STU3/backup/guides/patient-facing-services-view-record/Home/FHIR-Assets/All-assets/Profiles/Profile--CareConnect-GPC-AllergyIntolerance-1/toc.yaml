@@ -62,3 +62,5 @@
   filename: reaction.exposureRoute.page.md
 - name: reaction.note
   filename: reaction.note.page.md
+- name: reaction.severity
+  filename: reaction.severity.page.md
