@@ -28,6 +28,15 @@
                 </ul>
             </td>
         </tr>
+        <!-- ampp -->
+        <tr>
+            <td class="nhsd-m-table__highlighted-items">
+                {{pagelink:Home/Build/Handling-medications}}
+            </td>
+            <td>
+                Removed erroneus reference to AMPP. This specification is designed to be used with AMP only.
+            </td>
+        </tr>
     </tbody>
 </table>
 
