@@ -8,37 +8,31 @@ More information about the bindings to UK Core ValueSets can be found below.
 <th width="20%">Strength</th>
 <th width="50%">Link</th>
 </tr>
-<tr class="balloted">
+<tr>
 <td>MedicationAdministration.category</td>
 <td>Extensible</td>
 <td>{{pagelink:ValueSet-UKCore-MedicationAdministrationCategory}}</td>
 </tr>
 <tr>
 <td>MedicationAdministration.dosage.method</td>
-<td class="balloted">Preferred</td>
+<td>Preferred</td>
 <td>{{pagelink:ValueSet-UKCore-MedicationDosageMethod}}</td>
 </tr>
 <tr>
 <td>MedicationAdministration.dosage.route</td>
-<td class="balloted">Preferred</td>
+<td>Preferred</td>
 <td>{{pagelink:ValueSet-UKCore-SubstanceOrProductAdministrationRoute}}</td>
 </tr>
 <tr>
 <td>MedicationAdministration.dosage.site</td>
-<td class="balloted">Preferred</td>
+<td>Preferred</td>
 <td>{{pagelink:ValueSet-UKCore-BodySite}}</td>
 </tr>
 <tr>
 <td>MedicationAdministration.medication</td>
-<td class="balloted">Preferred</td>
+<td>Preferred</td>
 <td>{{pagelink:ValueSet-UKCore-MedicationCode}}</td>
 </tr>
 </table>
-
-<br>
-<div markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Balloted Changes</h4>
-Updated: ValueSet bindings changed from Extensible to Preferred<br>
-Added: new binding on <code>MedicationAdministration.category</code>
-</div>
 
 ---

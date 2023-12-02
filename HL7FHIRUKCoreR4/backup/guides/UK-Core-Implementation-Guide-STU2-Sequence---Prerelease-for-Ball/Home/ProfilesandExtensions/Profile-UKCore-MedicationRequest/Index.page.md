@@ -133,24 +133,24 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Dosage instructions for the medication</td>
 </tr>
 <tr>
-<td class="balloted"><code>MedicationRequest.dosageInstruction.text</code></td>
-<td class="balloted">Free text dosage instructions.</td>
+<td><code>MedicationRequest.dosageInstruction.text</code></td>
+<td>Free text dosage instructions.</td>
 </tr>
 <tr>
-<td class="balloted"><code>MedicationRequest.dosageInstruction.timing</code></td>
-<td class="balloted">When medication should be administered.</td>
+<td><code>MedicationRequest.dosageInstruction.timing</code></td>
+<td>When medication should be administered.</td>
 </tr>
 <tr>
-<td class="balloted"><code>MedicationRequest.dosageInstruction.doseAndRate</code></td>
-<td class="balloted">Dosage instructions for the medication</td>
+<td><code>MedicationRequest.dosageInstruction.doseAndRate</code></td>
+<td>Dosage instructions for the medication</td>
 </tr>
 <tr>
-<td class="balloted"><code>MedicationRequest.dosageInstruction.doseAndRate.dose[x]</code></td>
-<td class="balloted">Quantity of medication administered.</td>
+<td><code>MedicationRequest.dosageInstruction.doseAndRate.dose[x]</code></td>
+<td>Quantity of medication administered.</td>
 </tr>
 <tr>
-<td class="balloted"><code>MedicationRequest.dosageInstruction.doseAndRate.rate[x]</code></td>
-<td class="balloted">Rate at which the medication is to be administered.</td>
+<td><code>MedicationRequest.dosageInstruction.doseAndRate.rate[x]</code></td>
+<td>Rate at which the medication is to be administered.</td>
 </tr>
 <tr>
 <td><code>MedicationRequest.dosageInstruction</code></td>
@@ -161,8 +161,8 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Specific dispensing quantity instructions.</td>
 </tr>
 <tr>
-<td class="balloted"><code>MedicationRequest.dispenseRequest.quantity</code></td>
-<td class="balloted">Amount of medication to supply per dispense.</td>
+<td><code>MedicationRequest.dispenseRequest.quantity</code></td>
+<td>Amount of medication to supply per dispense.</td>
 </tr>
 <tr>
 <td><code>MedicationRequest.substitution</code></td>
