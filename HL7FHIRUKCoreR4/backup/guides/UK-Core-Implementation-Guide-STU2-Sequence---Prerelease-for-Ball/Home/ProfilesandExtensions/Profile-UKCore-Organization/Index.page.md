@@ -92,7 +92,6 @@ select
 
 ## Profile Specific Implementation Guidance: ##
 
-<div markdown="span" class="alert alert-success" role="alert">
 <h3>Minimum Viable Content</h3>
 
 A minimum viable content that all provider and consumer systems SHALL support are the following elements.
@@ -131,6 +130,5 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>An address for the organisation.</td>
 </tr>
 </table>
-</div>
 
 ---

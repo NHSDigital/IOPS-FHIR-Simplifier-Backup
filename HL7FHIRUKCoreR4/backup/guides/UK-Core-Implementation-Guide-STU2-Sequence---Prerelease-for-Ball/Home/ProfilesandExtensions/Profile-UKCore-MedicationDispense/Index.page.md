@@ -135,24 +135,24 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 </tr>
 <!-- added all below-->
 <tr>
-<td class="balloted"><code>MedicationDispense.dosageInstruction.text</code></td>
-<td class="balloted">Free text dosage instructions.</td>
+<td><code>MedicationDispense.dosageInstruction.text</code></td>
+<td>Free text dosage instructions.</td>
 </tr>
 <tr>
-<td class="balloted"><code>MedicationDispense.dosageInstruction.timing</code></td>
-<td class="balloted">When medication should be administered.</td>
+<td><code>MedicationDispense.dosageInstruction.timing</code></td>
+<td>When medication should be administered.</td>
 </tr>
 <tr>
-<td class="balloted"><code>MedicationDispense.dosageInstruction.doseAndRate</code></td>
-<td class="balloted">Dosage instructions for the medication.</td>
+<td><code>MedicationDispense.dosageInstruction.doseAndRate</code></td>
+<td>Dosage instructions for the medication.</td>
 </tr>
 <tr>
-<td class="balloted"><code>MedicationDispense.dosageInstruction.doseAndRate.dose[x]</code></td>
-<td class="balloted">Quantity of medication administered.</td>
+<td><code>MedicationDispense.dosageInstruction.doseAndRate.dose[x]</code></td>
+<td>Quantity of medication administered.</td>
 </tr>
 <tr>
-<td class="balloted"><code>MedicationDispense.dosageInstruction.doseAndRate.rate[x]</code></td>
-<td class="balloted">Rate at which the medication is to be administered.</td>
+<td><code>MedicationDispense.dosageInstruction.doseAndRate.rate[x]</code></td>
+<td>Rate at which the medication is to be administered.</td>
 </tr>
 </table>
 

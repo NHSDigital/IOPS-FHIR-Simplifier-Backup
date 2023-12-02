@@ -30,7 +30,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <th>Modifier Extension</th>
 <th>C&TA Sprint</th>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-AdditionalContact}}</td>
 <td>active</td>
 <td>ServiceRequest</td>
@@ -46,7 +46,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>1</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-AdmissionMethod}}</td>
 <td>active</td>
 <td>Encounter.hospitalization</td>
@@ -62,7 +62,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>2</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-AssociatedEncounter}}</td>
 <td>active</td>
 <td>FamilyMemberHistory</td>
@@ -78,7 +78,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>1</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-BodySiteReference}}</td>
 <td>active</td>
 <td>Specimen.collection.bodySite</td>
@@ -86,7 +86,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>6</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-BookingOrganization}}</td>
 <td>active</td>
 <td>Appointment</td>
@@ -94,7 +94,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>5</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-CareSettingType}}</td>
 <td>active</td>
 <td>Composition <br/>List  </td>
@@ -111,7 +111,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>2</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-ConditionEpisode}}</td>
 <td>active</td>
 <td>Condition</td>
@@ -136,7 +136,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>1</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-Coverage}}</td>
 <td>active</td>
 <td>ServiceRequest</td>
@@ -161,7 +161,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>1</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-DeliveryChannel}}</td>
 <td>active</td>
 <td>Appointment, Slot</td>
@@ -170,7 +170,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>5</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-DeviceReference}}</td>
 <td>active</td>
 <td>DiagnosticReport.performer,<br>DiagnosticReport.<br>resultsInterpreter</td>
@@ -178,7 +178,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>6</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-DischargeMethod}}</td>
 <td>active</td>
 <td>Encounter</td>
@@ -186,7 +186,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-EmergencyCareDischargeStatus}}</td>
 <td>active</td>
 <td>Encounter</td>
@@ -210,7 +210,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>2</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-LegalStatus}}</td>
 <td>active</td>
 <td>Encounter</td>
@@ -218,7 +218,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>4</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-ListWarningCode}}</td>
 <td>active</td>
 <td>List</td>
@@ -266,7 +266,7 @@ The Extensions listed below have been defined as UK Core extensions. Also includ
 <td>NO</td>
 <td>3</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-NHSNumberUnavailableReason}}</td>
 <td>active</td>
 <td>Patient</td>
@@ -293,7 +293,7 @@ RelatedPerson.telecom.system</td>
 <td>NO</td>
 <td>1</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-OutcomeOfAttendance}}</td>
 <td>active</td>
 <td>Encounter</td>
@@ -317,7 +317,7 @@ RelatedPerson.telecom.system</td>
 <td>NO</td>
 <td>3</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-PriorityReason}}</td>
 <td>active</td>
 <td>ServiceRequest.priority</td>
@@ -333,7 +333,7 @@ RelatedPerson.telecom.system</td>
 <td>NO</td>
 <td>1</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-SampleCategory}}</td>
 <td>active</td>
 <td>Specimen</td>
@@ -341,7 +341,7 @@ RelatedPerson.telecom.system</td>
 <td>NO</td>
 <td>6</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>{{pagelink:Extension-UKCore-SourceOfServiceRequest}}</td>
 <td>active</td>
 <td>ServiceRequest</td>
@@ -368,34 +368,34 @@ RelatedPerson.telecom.system</td>
 <tr class="a-to-z"><td>
 <p><b>A-D:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-AdditionalContact,text:UKCore-AdditionalContact}}</li>
+<li>{{pagelink:Extension-UKCore-AdditionalContact,text:UKCore-AdditionalContact}}</li>
 <li>{{pagelink:Extension-UKCore-AddressKey,text:UKCore-AddressKey}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-AdmissionMethod,text:UKCore-AdmissionMethod}}</li>
+<li>{{pagelink:Extension-UKCore-AdmissionMethod,text:UKCore-AdmissionMethod}}</li>
 <li>{{pagelink:Extension-UKCore-AllergyIntoleranceEnd,text:UKCore-AllergyIntoleranceEnd}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-AssociatedEncounter,text:UKCore-AssociatedEncounter}}</li>
+<li>{{pagelink:Extension-UKCore-AssociatedEncounter,text:UKCore-AssociatedEncounter}}</li>
 <li>{{pagelink:Extension-UKCore-BirthSex,text:UKCore-BirthSex}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-BodySiteReference,text:UKCore-BodySiteReference}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-BookingOrganization,text:UKCore-BookingOrganization}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-CareSettingType,text:UKCore-CareSettingType}}</li>
+<li>{{pagelink:Extension-UKCore-BodySiteReference,text:UKCore-BodySiteReference}}</li>
+<li>{{pagelink:Extension-UKCore-BookingOrganization,text:UKCore-BookingOrganization}}</li>
+<li>{{pagelink:Extension-UKCore-CareSettingType,text:UKCore-CareSettingType}}</li>
 <li>{{pagelink:Extension-UKCore-CodingSCTDescDisplay,text:UKCore-CodingSCTDescDisplay}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-ConditionEpisode,text:UKCore-ConditionEpisode}}</li>
+<li>{{pagelink:Extension-UKCore-ConditionEpisode,text:UKCore-ConditionEpisode}}</li>
 <li>{{pagelink:Extension-UKCore-ContactPreference,text:UKCore-ContactPreference}}</li>
 <li>{{pagelink:Extension-UKCore-ContactRank,text:UKCore-ContactRank}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-Coverage,text:UKCore-Coverage}}</li>
+<li>{{pagelink:Extension-UKCore-Coverage,text:UKCore-Coverage}}</li>
 <li>{{pagelink:Extension-UKCore-CopyCorrespondenceIndicator,text:UKCore-CopyCorrespondenceIndicator}}</li>
 <li>{{pagelink:Extension-UKCore-DeathNotificationStatus,text:UKCore-DeathNotificationStatus}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-DeliveryChannel,text:UKCore-DeliveryChannel}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-DeviceReference,text:UKCore-DeviceReference}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-DischargeMethod,text:UKCore-DischargeMethod}}</li>
+<li>{{pagelink:Extension-UKCore-DeliveryChannel,text:UKCore-DeliveryChannel}}</li>
+<li>{{pagelink:Extension-UKCore-DeviceReference,text:UKCore-DeviceReference}}</li>
+<li>{{pagelink:Extension-UKCore-DischargeMethod,text:UKCore-DischargeMethod}}</li>
 </ul>
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>E-L:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-EmergencyCareDischargeStatus,text:UKCore-EmergencyCareDischargeStatus}}</li>
+<li>{{pagelink:Extension-UKCore-EmergencyCareDischargeStatus,text:UKCore-EmergencyCareDischargeStatus}}</li>
 <li>{{pagelink:Extension-UKCore-EthnicCategory,text:UKCore-EthnicCategory}}</li>
 <li>{{pagelink:Extension-UKCore-Evidence,text:UKCore-Evidence}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-LegalStatus,text:UKCore-LegalStatus}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-ListWarningCode,text:UKCore-ListWarningCode}}</li>
+<li>{{pagelink:Extension-UKCore-LegalStatus,text:UKCore-LegalStatus}}</li>
+<li>{{pagelink:Extension-UKCore-ListWarningCode,text:UKCore-ListWarningCode}}</li>
 </ul>
 </td></tr>
 <tr class="a-to-z"><td>
@@ -406,20 +406,20 @@ RelatedPerson.telecom.system</td>
 <li>{{pagelink:Extension-UKCore-MedicationRepeatInformation,text:UKCore-MedicationRepeatInformation}}</li>
 <li>{{pagelink:Extension-UKCore-MedicationStatementLastIssueDate,text:UKCore-MedicationStatementLastIssueDate}}</li>
 <li>{{pagelink:Extension-UKCore-MedicationTradeFamily,text:UKCore-MedicationTradeFamily}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-NHSNumberUnavailableReason,text:UKCore-NHSNumberUnavailableReason}}</li>
+<li>{{pagelink:Extension-UKCore-NHSNumberUnavailableReason,text:UKCore-NHSNumberUnavailableReason}}</li>
 <li>{{pagelink:Extension-UKCore-NHSNumberVerificationStatus,text:UKCore-NHSNumberVerificationStatus}}</li>
 <li>{{pagelink:Extension-UKCore-OtherContactSystem,text:UKCore-OtherContactSystem}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-OutcomeOfAttendance,text:UKCore-OutcomeOfAttendance}}</li>
+<li>{{pagelink:Extension-UKCore-OutcomeOfAttendance,text:UKCore-OutcomeOfAttendance}}</li>
 <li>{{pagelink:Extension-UKCore-ParentPresent,text:UKCore-ParentPresent}}</li>
 <li>{{pagelink:Extension-UKCore-PharmacistVerifiedIndicator,text:UKCore-PharmacistVerifiedIndicator}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-PriorityReason,text:UKCore-PriorityReason}}</li>
+<li>{{pagelink:Extension-UKCore-PriorityReason,text:UKCore-PriorityReason}}</li>
 </ul>
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>Q-Z:</b></p> 
 <ul>  
 <li>{{pagelink:Extension-UKCore-ResidentialStatus,text:UKCore-ResidentialStatus}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-SampleCategory,text:UKCore-SampleCategory}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-SourceOfServiceRequest,text:UKCore-SourceOfServiceRequest}}</li>
+<li>{{pagelink:Extension-UKCore-SampleCategory,text:UKCore-SampleCategory}}</li>
+<li>{{pagelink:Extension-UKCore-SourceOfServiceRequest,text:UKCore-SourceOfServiceRequest}}</li>
 <li>{{pagelink:Extension-UKCore-VaccinationProcedure,text:UKCore-VaccinationProcedure}}</li>
 </ul>
 </td></tr>
@@ -466,33 +466,33 @@ RelatedPerson.telecom.system</td>
 
 <p><b>C&TA Sprint 4:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-AdmissionMethod,text:UKCore-AdmissionMethod}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-CareSettingType,text:UKCore-CareSettingType}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-ConditionEpisode,text:UKCore-ConditionEpisode}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-DischargeMethod,text:UKCore-DischargeMethod}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-EmergencyCareDischargeStatus,text:UKCore-EmergencyCareDischargeStatus}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-LegalStatus,text:UKCore-LegalStatus}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-ListWarningCode,text:UKCore-ListWarningCode}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-OutcomeOfAttendance,text:UKCore-OutcomeOfAttendance}}</li>
+<li>{{pagelink:Extension-UKCore-AdmissionMethod,text:UKCore-AdmissionMethod}}</li>
+<li>{{pagelink:Extension-UKCore-CareSettingType,text:UKCore-CareSettingType}}</li>
+<li>{{pagelink:Extension-UKCore-ConditionEpisode,text:UKCore-ConditionEpisode}}</li>
+<li>{{pagelink:Extension-UKCore-DischargeMethod,text:UKCore-DischargeMethod}}</li>
+<li>{{pagelink:Extension-UKCore-EmergencyCareDischargeStatus,text:UKCore-EmergencyCareDischargeStatus}}</li>
+<li>{{pagelink:Extension-UKCore-LegalStatus,text:UKCore-LegalStatus}}</li>
+<li>{{pagelink:Extension-UKCore-ListWarningCode,text:UKCore-ListWarningCode}}</li>
+<li>{{pagelink:Extension-UKCore-OutcomeOfAttendance,text:UKCore-OutcomeOfAttendance}}</li>
 </ul>
 
 <p><b>C&TA Sprint 5:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-BookingOrganization,text:UKCore-BookingOrganization}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-DeliveryChannel,text:UKCore-DeliveryChannel}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-SourceOfServiceRequest,text:UKCore-SourceOfServiceRequest}}</li>
+<li>{{pagelink:Extension-UKCore-BookingOrganization,text:UKCore-BookingOrganization}}</li>
+<li>{{pagelink:Extension-UKCore-DeliveryChannel,text:UKCore-DeliveryChannel}}</li>
+<li>{{pagelink:Extension-UKCore-SourceOfServiceRequest,text:UKCore-SourceOfServiceRequest}}</li>
 </ul>
 
 <p><b>C&TA Sprint 6:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-AdditionalContact,text:UKCore-AdditionalContact}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-AssociatedEncounter,text:UKCore-AssociatedEncounter}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-BodySiteReference,text:UKCore-BodySiteReference}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-Coverage,text:UKCore-Coverage}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-DeviceReference,text:UKCore-DeviceReference}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-NHSNumberUnavailableReason,text:UKCore-NHSNumberUnavailableReason}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-PriorityReason,text:UKCore-PriorityReason}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-SampleCategory,text:UKCore-SampleCategory}}</li>
+<li>{{pagelink:Extension-UKCore-AdditionalContact,text:UKCore-AdditionalContact}}</li>
+<li>{{pagelink:Extension-UKCore-AssociatedEncounter,text:UKCore-AssociatedEncounter}}</li>
+<li>{{pagelink:Extension-UKCore-BodySiteReference,text:UKCore-BodySiteReference}}</li>
+<li>{{pagelink:Extension-UKCore-Coverage,text:UKCore-Coverage}}</li>
+<li>{{pagelink:Extension-UKCore-DeviceReference,text:UKCore-DeviceReference}}</li>
+<li>{{pagelink:Extension-UKCore-NHSNumberUnavailableReason,text:UKCore-NHSNumberUnavailableReason}}</li>
+<li>{{pagelink:Extension-UKCore-PriorityReason,text:UKCore-PriorityReason}}</li>
+<li>{{pagelink:Extension-UKCore-SampleCategory,text:UKCore-SampleCategory}}</li>
 </ul>
 
 </div>
@@ -507,31 +507,31 @@ RelatedPerson.telecom.system</td>
 </ul>
 <p><b>Appointment:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-BookingOrganization,text:UKCore-BookingOrganization}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-DeliveryChannel,text:UKCore-DeliveryChannel}}</li>
+<li>{{pagelink:Extension-UKCore-BookingOrganization,text:UKCore-BookingOrganization}}</li>
+<li>{{pagelink:Extension-UKCore-DeliveryChannel,text:UKCore-DeliveryChannel}}</li>
 </ul>
 <p><b>Composition:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-CareSettingType,text:UKCore-CareSettingType}}</li>
+<li>{{pagelink:Extension-UKCore-CareSettingType,text:UKCore-CareSettingType}}</li>
 </ul>
 <p><b>Condition:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-ConditionEpisode,text:UKCore-ConditionEpisode}}</li>
+<li>{{pagelink:Extension-UKCore-ConditionEpisode,text:UKCore-ConditionEpisode}}</li>
 </ul>
 <p><b>DiagnosticReport:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-DeviceReference,text:UKCore-DeviceReference}}</li>
+<li>{{pagelink:Extension-UKCore-DeviceReference,text:UKCore-DeviceReference}}</li>
 </ul>
 <p><b>Encounter:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-AdmissionMethod,text:UKCore-AdmissionMethod}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-DischargeMethod,text:UKCore-DischargeMethod}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-EmergencyCareDischargeStatus,text:UKCore-EmergencyCareDischargeStatus}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-LegalStatus,text:UKCore-LegalStatus}}</li>
+<li>{{pagelink:Extension-UKCore-AdmissionMethod,text:UKCore-AdmissionMethod}}</li>
+<li>{{pagelink:Extension-UKCore-DischargeMethod,text:UKCore-DischargeMethod}}</li>
+<li>{{pagelink:Extension-UKCore-EmergencyCareDischargeStatus,text:UKCore-EmergencyCareDischargeStatus}}</li>
+<li>{{pagelink:Extension-UKCore-LegalStatus,text:UKCore-LegalStatus}}</li>
 </ul>
 <p><b>FamilyMemberHistory:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-AssociatedEncounter,text:UKCore-AssociatedEncounter}}</li>
+<li>{{pagelink:Extension-UKCore-AssociatedEncounter,text:UKCore-AssociatedEncounter}}</li>
 </ul>
 <p><b>Immunization:</b></p>
 <ul>
@@ -540,8 +540,8 @@ RelatedPerson.telecom.system</td>
 </ul>
 <p><b>List:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-CareSettingType,text:UKCore-CareSettingType}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-ListWarningCode,text:UKCore-ListWarningCode}}</li>
+<li>{{pagelink:Extension-UKCore-CareSettingType,text:UKCore-CareSettingType}}</li>
+<li>{{pagelink:Extension-UKCore-ListWarningCode,text:UKCore-ListWarningCode}}</li>
 </ul>
 <p><b>Medication:</b></p>
 <ul>
@@ -570,7 +570,7 @@ RelatedPerson.telecom.system</td>
 <li>{{pagelink:Extension-UKCore-CopyCorrespondenceIndicator,text:UKCore-CopyCorrespondenceIndicator}}</li>
 <li>{{pagelink:Extension-UKCore-DeathNotificationStatus,text:UKCore-DeathNotificationStatus}}</li>
 <li>{{pagelink:Extension-UKCore-EthnicCategory,text:UKCore-EthnicCategory}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-NHSNumberUnavailableReason,text:UKCore-NHSNumberUnavailableReason}}</li>
+<li>{{pagelink:Extension-UKCore-NHSNumberUnavailableReason,text:UKCore-NHSNumberUnavailableReason}}</li>
 <li>{{pagelink:Extension-UKCore-NHSNumberVerificationStatus,text:UKCore-NHSNumberVerificationStatus}}</li>
 <li>{{pagelink:Extension-UKCore-OtherContactSystem,text:UKCore-OtherContactSystem}}</li>
 <li>{{pagelink:Extension-UKCore-ResidentialStatus,text:UKCore-ResidentialStatus}}</li>
@@ -583,19 +583,19 @@ RelatedPerson.telecom.system</td>
 </ul>
 <p><b>ServiceRequest:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-AdditionalContact,text:UKCore-AdditionalContact}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-Coverage,text:UKCore-Coverage}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-PriorityReason,text:UKCore-PriorityReason}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-SourceOfServiceRequest,text:UKCore-SourceOfServiceRequest}}</li>
+<li>{{pagelink:Extension-UKCore-AdditionalContact,text:UKCore-AdditionalContact}}</li>
+<li>{{pagelink:Extension-UKCore-Coverage,text:UKCore-Coverage}}</li>
+<li>{{pagelink:Extension-UKCore-PriorityReason,text:UKCore-PriorityReason}}</li>
+<li>{{pagelink:Extension-UKCore-SourceOfServiceRequest,text:UKCore-SourceOfServiceRequest}}</li>
 </ul>
 <p><b>Slot:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-DeliveryChannel,text:UKCore-DeliveryChannel}}</li>
+<li>{{pagelink:Extension-UKCore-DeliveryChannel,text:UKCore-DeliveryChannel}}</li>
 </ul>
 <p><b>Specimen:</b></p>
 <ul>
-<li class="balloted">{{pagelink:Extension-UKCore-BodySiteReference,text:UKCore-BodySiteReference}}</li>
-<li class="balloted">{{pagelink:Extension-UKCore-SampleCategory,text:UKCore-SampleCategory}}</li>
+<li>{{pagelink:Extension-UKCore-BodySiteReference,text:UKCore-BodySiteReference}}</li>
+<li>{{pagelink:Extension-UKCore-SampleCategory,text:UKCore-SampleCategory}}</li>
 </ul>
 </div>
 

@@ -114,7 +114,7 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td><code>MedicationStatement.status</code></td>
 <td>A code representing the patient or other source's judgement about the state of the medication used that this statement is about.</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td><code>MedicationStatement.category</code></td>
 <td>Indicates where the medication is expected to be consumed or administered.
 </td>

@@ -94,7 +94,6 @@ The following are example usage scenarios for the UK Core Immunization profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-<div markdown="span" class="alert alert-success" role="alert">
 <h3>Minimum Viable Content</h3>
 
 A minimum viable content that all provider and consumer systems SHALL support are the following elements.
@@ -137,6 +136,5 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>How much of the vaccine was administered</td>
 </tr>
 </table>
-</div>
 
 ---

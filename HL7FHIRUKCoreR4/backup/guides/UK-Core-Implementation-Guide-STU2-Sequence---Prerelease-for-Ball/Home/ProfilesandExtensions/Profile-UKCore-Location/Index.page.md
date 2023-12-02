@@ -87,7 +87,6 @@ The following are example usage scenarios for the UKCore Location profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-<div markdown="span" class="alert alert-success" role="alert">
 <h3>Minimum Viable Content</h3>
 
 A minimum viable content that all provider and consumer systems SHALL support are the following elements.
@@ -114,6 +113,5 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>If locations can be visited, we need to keep track of their address.</td>
 </tr>
 </table>
-</div>
 
 ---
