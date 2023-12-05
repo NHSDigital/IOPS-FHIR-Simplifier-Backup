@@ -1,7 +1,11 @@
 ---
 topic: Library-ValueSetsAndCodeSystems
 ---
-## ValueSets and Code Systems
+## Terminology
+
+---
+
+## ValueSets and CodeSystems
 
 This is the list of ValueSets and CodeSystems defined for use within the UK Core. 
 

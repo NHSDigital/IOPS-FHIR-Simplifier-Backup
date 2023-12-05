@@ -1,6 +1,10 @@
 ---
 topic: Library-Extensions
 ---
+## Profiles and Extensions
+
+---
+
 ## Extensions Index
 
 This extension library contains all the extensions Clinically and Technically Assured for use with UK Core. The profiles are found in the {{pagelink:Library-Profiles}}. The table below lists all the current extensions and the context of use. 
@@ -19,7 +23,8 @@ The general rule is extensions can be ignored by receivers*. When a modifier ext
 The Extensions are rendered in several formats: 
 <ul>
 <li><b>Tree:</b> a fully calculated form of the Extension that is not dependent on any other structure</li>
-<li><b>Table:</b> a tabular view of the Extension elements</li>
+<li><b>Tree:</b> a fully calculated form of the Extension in table form</li>
+<li><b>Table:</b> a tabular view of the differential Extension elements</li>
 <li><b>XML:</b> a rendering of a XML view of the Extension</li>
 <li><b>JSON:</b> a rendering of a JSON view of the Extension</li> 
 </ul>

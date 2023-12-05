@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: diagnosis
+  filename: diagnosis.page.md
+- name: patient
+  filename: patient.page.md
+- name: managingOrganization
+  filename: managingOrganization.page.md
+- name: referralRequest
+  filename: referralRequest.page.md
+- name: careManager
+  filename: careManager.page.md
+- name: team
+  filename: team.page.md

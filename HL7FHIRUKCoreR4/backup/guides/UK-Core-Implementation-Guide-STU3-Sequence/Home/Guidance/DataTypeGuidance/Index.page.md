@@ -1,7 +1,11 @@
 ---
 topic: Guidance-DataType
 ---
-# DataTypes
+## Guidance
+
+---
+
+## DataType Guidance
 
 This page gives guidance on the representation of constructs like:
 <ul>

@@ -66,9 +66,11 @@ html, body {
      display: table;
 }
 
+/*
 a {
 color:revert;
 }
+*/
 
 hr {
     height: 1px;
@@ -545,10 +547,12 @@ h2 code {
 
 .copy-text .btn-copy{
   visibility: hidden;
+  display: none;
 }
 
 .copy-text:hover .btn-copy {
   visibility: visible;
+  display: inline-block;
 }
 
 .btn-copy {
@@ -556,7 +560,7 @@ h2 code {
   background-color: transparent;
 }
 
-.btn-copy:after {
+.copy-text .btn-copy:after {
      font-family: 'FontAwesome';
    font-weight: 900;
    content: "\f0c5";
