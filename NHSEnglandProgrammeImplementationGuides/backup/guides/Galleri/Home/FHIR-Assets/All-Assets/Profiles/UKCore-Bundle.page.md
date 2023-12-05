@@ -8,6 +8,6 @@ The profile is provided for implementation guidance:
 
 Reference - {{pagelink:Home/Design/Data-mapping.page.md}}
 
-<iframe src="https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/profile-ukcore-bundle?version=current" height="800px" width="100%"></iframe>
+<iframe src="https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Bundle?version=current" height="800px" width="100%"></iframe>
 
 
