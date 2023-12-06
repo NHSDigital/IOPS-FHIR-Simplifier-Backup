@@ -7,7 +7,7 @@
     <extension url="roleCode">
       <valueCodeableConcept>
       <coding>
-      <system value="https://ord.nhs.uk/CodeSystem/role" />
+      <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSOrganisationRole" />
       <code value="RO94" />
       <display value="APPLIANCE CONTRACTOR" />
       </coding>
@@ -48,8 +48,8 @@
   <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-DateTime">
     <extension url="type">
       <valueCoding>
-        <system value="https://fhir.nhs.uk/England/CodeSystem/England-ORDDateTime" />
-        <code value="last-change-date" />
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-ODSDateTime" />
+        <code value="LastChangeDate" />
         <display value="Last Change Date" />
       </valueCoding>
     </extension>
@@ -92,14 +92,14 @@
   </identifier>
     <type>
     <coding>
-      <system value="https://ord.nhs.uk/CodeSystem/record-use-type" />
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ODSRecordUseType" />
       <code value="Full" />
       <display value="Full" />
     </coding>
   </type>
   <type>
     <coding>
-      <system value="https://ord.nhs.uk/CodeSystem/record-class" />
+      <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRecordClass" />
       <code value="RC1" />
       <display value="HSCOrg" />
     </coding>

@@ -17,6 +17,8 @@
 |Requesting Organisation Name|1..1|Organization.name|ODS organization name NHS England. Name fixed to "NHS ENGLAND - X26"
 |Requesting Organisation Identifier|1..1|Organization.identifier|A fixed value of<br/>system "https://fhir.nhs.uk/Id/ods-organization-code"<br/>value "X26"
 |Requesting Organisation Address|1..1|Organization.address|ODS organization address for NHS England. Address fixed to line "THE LEEDS GOVERNMENT HUB"<br/>line "7-8 WELLINGTON PLACE"<br/>city "LEEDS"<br/>postalCode "LS1 4AP"<br/>country "ENGLAND"
+|Requesting Practitioner Name|0..1|Practitioner.name|Name of the requesting practitioner
+|Requesting Practitioner Identifier|0..1|Practitioner.Identifier|Identifier of the requesting practitioner
 |Test Result (overall)|0..1|Observation.valueCodeableConcept.coding|The cancer signal result <br/>system "http://snomed.info/sct"<br/>See below for SNOMED CT [cancer signal result codes](#CancerSignalResult)
 |Test Result Primary Site|0..*|Observation.component.valueCodeableConcept|As part of the Observation for the primary site, that has an Observation.code.coding.display "Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier"<br/>See below for SNOMED CT [body site mapping](#BodySiteMap)
 |Test Result Secondary Site|0..*|Observation.component.valueCodeableConcept|As part of the Observation for the primary site, that has an Observation.code.coding.display "Multi-cancer early detection predicted second cancer signal origin by machine learning-based classifier"<br/>See below for SNOMED CT [body site mapping](#BodySiteMap)

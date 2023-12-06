@@ -3,8 +3,8 @@
   <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-DateTime">
     <extension url="type">
       <valueCoding>
-        <system value="https://fhir.nhs.uk/England/CodeSystem/England-ORDDateTime" />
-        <code value="last-change-date" />
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-ODSDateTime" />
+        <code value="LastChangeDate" />
         <display value="Last Change Date" />
       </valueCoding>
     </extension>
@@ -43,7 +43,7 @@
   <identifier>
     <use value="official" />
     <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-    <value value="RO94" />
+    <value value="FDC49" />
   </identifier>
   <name value="ATOS MEDICAL" />
   <address>
