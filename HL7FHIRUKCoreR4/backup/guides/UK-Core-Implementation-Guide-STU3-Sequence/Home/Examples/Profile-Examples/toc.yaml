@@ -126,10 +126,18 @@
   filename: Example-UKCore-PractitionerRole-GP.page.md
 - name: Example UKCore-Procedure-ExaminationOfSkin
   filename: Example-UKCore-Procedure-ExaminationOfSkin.page.md
+- name: Example UKCore-Questionnaire-EOLPlan
+  filename: Example-UKCore-Questionnaire-EOLPlan.page.md
+- name: Example UKCore-Questionnaire-FitnessForWork
+  filename: Example-UKCore-Questionnaire-FitnessForWork.page.md
 - name: Example UKCore-Questionnaire-InpatientSurvey
   filename: Example-UKCore-Questionnaire-InpatientSurvey.page.md
 - name: Example UKCore-QuestionnaireResponse-BabyPatientSurvey
   filename: Example-UKCore-QuestionnaireResponse-BabyPatientSurvey.page.md
+- name: Example UKCore-QuestionnaireResponse-EOLPlan
+  filename: Example-UKCore-QuestionnaireResponse-EOLPlan.page.md
+- name: Example UKCore-QuestionnaireResponse-FitnessForWork
+  filename: Example-UKCore-QuestionnaireResponse-FitnessForWork.page.md
 - name: Example UKCore-QuestionnaireResponse-InpatientSurvey
   filename: Example-UKCore-QuestionnaireResponse-InpatientSurvey.page.md
 - name: Example UKCore-RelatedPerson-JoySmith

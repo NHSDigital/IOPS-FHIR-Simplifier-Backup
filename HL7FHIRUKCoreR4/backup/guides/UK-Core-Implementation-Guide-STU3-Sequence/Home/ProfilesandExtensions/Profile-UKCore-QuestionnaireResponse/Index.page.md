@@ -35,12 +35,16 @@ select
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Baby Patient Survey</b> - An example to illustrate a questionnaire response regarding a baby patient survey.
-  <br>
-  {{pagelink:Example-UKCore-QuestionnaireResponse-BabyPatientSurvey}}
+  <br>{{pagelink:Example-UKCore-QuestionnaireResponse-BabyPatientSurvey}}
+  <br><br>
+  <b>End of Life Survey</b> - An example to illustrate a questionnaire response regarding an end of life plan survey.
+  <br>{{pagelink:Example-UKCore-QuestionnaireResponse-EOLPlan}}
+  <br><br>
+  <b>Fitness For Work Survey</b> - An example to illustrate a questionnaire response regarding a fitness for work survey.
+  <br>{{pagelink:Example-UKCore-QuestionnaireResponse-FitnessForWork}}
   <br><br>
   <b>Inpatient Survey Response</b> - An example to illustrate a questionnaire response regarding an in-patient survey.
-  <br>
-  {{pagelink:Example-UKCore-QuestionnaireResponse-InpatientSurvey}}
+  <br>{{pagelink:Example-UKCore-QuestionnaireResponse-InpatientSurvey}}
 </div>
 
 <div id="Usage" class="tabcontent">
