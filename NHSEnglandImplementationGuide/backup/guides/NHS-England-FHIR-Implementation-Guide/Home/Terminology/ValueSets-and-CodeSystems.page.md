@@ -59,13 +59,13 @@ Additional guidance is available on <a href="https://simplifier.net/guide/UK-Cor
 </tr>
 <tr>
 <td>{{pagelink:ValueSet-England-OrganisationRole}}</td>
-<td>draft</td>
+<td>active</td>
 <td>{{pagelink:Extension-England-OrganisationRole}}</td>
 <td>{{pagelink:Extension-England-OrganisationRole}}</td>
 <td>2</td>
 </tr>
 <tr>
-<td colspan="5">Composed of CodeSystem {{pagelink:CodeSystem-England-ORDOrganisationRole}}</td>
+<td colspan="5">Composed of CodeSystem {{pagelink:CodeSystem-England-ODSOrganisationRole}}</td>
 </tr>
 
 <tr>
@@ -73,7 +73,7 @@ Additional guidance is available on <a href="https://simplifier.net/guide/UK-Cor
 </tr>
 <tr>
 <td>{{pagelink:ValueSet-England-PeriodType}}</td>
-<td>draft</td>
+<td>active</td>
 <td>{{pagelink:Extension-England-TypedPeriod}}</td>
 <td>{{pagelink:Extension-England-TypedPeriod}}</td>
 <td>2</td>
@@ -87,13 +87,13 @@ Additional guidance is available on <a href="https://simplifier.net/guide/UK-Cor
 </tr>
 <tr>
 <td>{{pagelink:ValueSet-England-TypedDateTime}}</td>
-<td>draft</td>
-<td>{{pagelink:Extension-England-DateTime}}</td>
-<td>{{pagelink:Extension-England-DateTime}}</td>
+<td>active</td>
+<td>{{pagelink:Extension-England-TypedDateTime}}</td>
+<td>{{pagelink:Extension-England-TypedDateTime}}</td>
 <td>2</td>
 </tr>
 <tr>
-<td colspan="5">Composed of CodeSystem {{pagelink:CodeSystem-England-ORDDateTime}}</td>
+<td colspan="5">Composed of CodeSystem {{pagelink:CodeSystem-England-ODSDateTime}}</td>
 </tr>
 
 </tbody>

@@ -1,10 +1,10 @@
 - name: Index
   filename: index.page.md
-- name: Extension-England-DateTime
-  filename: Extension-England-DateTime.page.md
 - name: Extension-England-FlagRemovalReason
   filename: Extension-England-FlagRemovalReason.page.md
 - name: Extension-England-OrganisationRole
   filename: Extension-England-OrganisationRole.page.md
+- name: Extension-England-TypedDateTime
+  filename: Extension-England-TypedDateTime.page.md
 - name: Extension-England-TypedPeriod
   filename: Extension-England-TypedPeriod.page.md

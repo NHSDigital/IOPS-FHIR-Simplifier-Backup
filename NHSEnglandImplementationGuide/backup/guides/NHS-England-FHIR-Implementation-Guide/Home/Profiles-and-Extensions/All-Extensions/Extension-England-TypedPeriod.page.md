@@ -19,7 +19,7 @@ select
 
 <table id="addToTranspose">
 <tr><td>Context of Use: </td>
-<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current' target="_blank">Organization, <a href='https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-OrganizationAffiliation?version=current' target="_blank">OrganizationAffiliation</a>, <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/profiles-and-extensions/all-extensions/extension-england-organisationrole.page.md?version=current' target="_blank">ExtensionEnglandOrganisationRole</a></td>
+<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current' target="_blank">Organization, <a href='https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-OrganizationAffiliation?version=current' target="_blank">OrganizationAffiliation</a>, <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/profiles-and-extensions/all-extensions/extension-england-organisationrole.page.md?version=current' target="_blank">Extension-England-OrganisationRole</a></td>
 
 </tr>
 </table>
