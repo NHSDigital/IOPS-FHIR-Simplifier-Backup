@@ -29,9 +29,8 @@ The inclusion of the coded reason for data being absent is optional, as the Valu
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-
+{{json:UKCore--Observation-Lab-Sn-AbsentData-Example}}
 </div>
 </div>
-<br>
 
 ---

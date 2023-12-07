@@ -101,8 +101,12 @@ Whilst every effort has been made to ensure that the examples are correct and us
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>Q-Z:</b></p> 
 <ul>  
+<li>{{pagelink:Example-UKCore-Questionnaire-EOLPlan}}</li>
+<li>{{pagelink:Example-UKCore-Questionnaire-FitnessForWork}}</li>
 <li>{{pagelink:Example-UKCore-Questionnaire-InpatientSurvey}}</li>
 <li>{{pagelink:Example-UKCore-QuestionnaireResponse-BabyPatientSurvey}}</li>
+<li>{{pagelink:Example-UKCore-QuestionnaireResponse-EOLPlan}}</li>
+<li>{{pagelink:Example-UKCore-QuestionnaireResponse-FitnessForWork}}</li>
 <li>{{pagelink:Example-UKCore-QuestionnaireResponse-InpatientSurvey}}</li>
 <li>{{pagelink:Example-UKCore-RelatedPerson-JoySmith}}</li>
 <li>{{pagelink:Example-UKCore-Schedule-Immunization}}</li>
@@ -563,11 +567,15 @@ Whilst every effort has been made to ensure that the examples are correct and us
 </ul>
 <p><b>Questionnaire:</b></p>
 <ul>
+<li>{{pagelink:Example-UKCore-Questionnaire-EOLPlan}}</li>
+<li>{{pagelink:Example-UKCore-Questionnaire-FitnessForWork}}</li>
 <li>{{pagelink:Example-UKCore-Questionnaire-InpatientSurvey}}</li>
 </ul>
 <p><b>QuestionnaireResponse:</b></p>
 <ul>
 <li>{{pagelink:Example-UKCore-QuestionnaireResponse-BabyPatientSurvey}}</li>
+<li>{{pagelink:Example-UKCore-QuestionnaireResponse-EOLPlan}}</li>
+<li>{{pagelink:Example-UKCore-QuestionnaireResponse-FitnessForWork}}</li>
 <li>{{pagelink:Example-UKCore-QuestionnaireResponse-InpatientSurvey}}</li>
 </ul>
 <p><b>RelatedPerson:</b></p>
