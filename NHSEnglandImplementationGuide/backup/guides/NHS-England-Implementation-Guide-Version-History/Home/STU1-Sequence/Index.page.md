@@ -9,6 +9,27 @@
 <th class="width60">Description</th>
 </tr>
 <tr>
+<td>7th December 2023</td>
+<td>1.1.0</td>
+<td>4.0.1</td>
+<td>STU3 0.0.6</td>
+<td>Release of NHS England Implementation Guide 1.1.0 - STU1. This was subject to the Clinical and Technical Assurance Sprint 2 review process.</td>
+</tr>
+<tr>
+<td colspan="5"><b>Changes for this version</b>
+<br />
+<ul>
+<li>ORD assets renamed back to ODS alongwith with related metadata and URLs</li>
+<li>Extension-England-DateTime renamed to Extension-England-TypedDateTime</li>
+<li>Minor wording update in description for CodeSystem PeriodType</li>
+<li>Remove incorrect Profiles mentioned in purpose for Extension-England-TypedDateTime</li>
+<li>Minor wording update in description for CodeSystem ODSDateTime (previously was ORDDateTime</li>
+<li>Updated code value 'last-change-date' to 'LastChangeDate' in CodeSystem and ValueSet ODSDateTime</li>
+<li>Updated code values 'legal' and 'operational' to 'Legal' and 'Operational' respectively for CodeSystem and ValueSet PeriodType</li>
+</ul>
+</td>
+</tr>
+<tr>
 <td>23rd November 2023</td>
 <td>1.1.0-sprint-2-review</td>
 <td>4.0.1</td>
