@@ -646,39 +646,55 @@
             //look for any anchor tags going to XML, which would open the resource in simpifier
             // and remap these to the relevant asset in the IG
            function swapProfileTreeLinks() {
+                var ukCoreProfiles = ['AllergyIntolerance','Appointment','Composition','Condition','Consent','Device','DiagnosticReport','Encounter','EpisodeOfCare','FamilyMemberHistory','Flag','HealthcareService','ImagingStudy','Immunization','List','Location','Medication','MedicationAdministration','MedicationDispense','MedicationRequest','MedicationStatement','MessageHeader','Observation','OperationOutcome','Organization','Patient','Practitioner','PractitionerRole','Procedure','Questionnaire','QuestionnaireResponse','RelatedPerson','Schedule','ServiceRequest','Slot','Specimen','Task'];
+
+                let url = window.location.href;
+                let slashCount = url.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++)
+                {
+                    newUrl = newUrl + url.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
+                        i = slashCount;
+                    }
+                }
+
                 $('a[href$="xml"]').each(function(index) {
                     let urlReference = $(this)[0].href;
                     if (urlReference.includes("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath="))
                     {
-                        let url = window.location.href;
-                        let slashCount = url.split("/").length;
-                        let newUrl = '';
-                        for (i=0;i<slashCount;i++)
-                        {
-                            newUrl = newUrl + url.split("/")[i] + "/";
-                            if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
-                                i = slashCount;
-                            }
-                        }
+                        var swapUrl = newUrl;
                         var addExtraIfNeeded = true;
                         if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-")) {
-                            newUrl = newUrl + "ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-","");
+                            swapUrl = swapUrl + "ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-","");
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-")) {
-                            newUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-","");
+                            swapUrl = swapUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-","");
                             addExtraIfNeeded=false;
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-")) {
-                            newUrl = newUrl + "Terminology/AllValueSets/ValueSet-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-","");
+                            swapUrl = swapUrl + "Terminology/AllValueSets/ValueSet-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-","");
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-")) {
-                            newUrl = newUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-","");
+                            swapUrl = swapUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-","");
                         }
-                        newUrl= newUrl.replace(".xml","");
+                        swapUrl= swapUrl.replace(".xml","");
                         
                         let exampleVersion = "?" + url.split("?")[1];
                         if (exampleVersion.startsWith("?version=current") && addExtraIfNeeded){
                             exampleVersion = ".page.md" + exampleVersion;
                         }
-                        newUrl = newUrl + exampleVersion;
-                        $(this).attr("href", newUrl);
+                        swapUrl = swapUrl + exampleVersion;
+                        $(this).attr("href", swapUrl);
+                    }
+				});
+                
+                $('a[href$="json"]').each(function(index) {
+                    let urlReference = $(this)[0].href;
+                    if (urlReference.includes("https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-"))
+                    {
+                        var profileName =  $(this)[0].innerText;
+                        if (ukCoreProfiles.indexOf(profileName) > -1) {
+                            var swapUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + profileName;
+                            $(this).attr("href", swapUrl);
+                        }
                     }
 				});
 			}
