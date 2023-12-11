@@ -647,6 +647,9 @@
             // and remap these to the relevant asset in the IG
            function swapProfileTreeLinks() {
                 var ukCoreProfiles = ['AllergyIntolerance','Appointment','Composition','Condition','Consent','Device','DiagnosticReport','Encounter','EpisodeOfCare','FamilyMemberHistory','Flag','HealthcareService','ImagingStudy','Immunization','List','Location','Medication','MedicationAdministration','MedicationDispense','MedicationRequest','MedicationStatement','MessageHeader','Observation','OperationOutcome','Organization','Patient','Practitioner','PractitionerRole','Procedure','Questionnaire','QuestionnaireResponse','RelatedPerson','Schedule','ServiceRequest','Slot','Specimen','Task'];
+var baseDataTypes = ['base64Binary','boolean','canonical','code','date','dateTime','decimal','id','instant','integer','markdown','oid','positiveInt','string','time','unsignedInt','uri','url','uuid','Data','Types','Address','Age','Annotation','Attachment','CodeableConcept','Coding','ContactPoint','Count','Distance','Duration','HumanName','Identifier','Money','Period','Quantity','Range','Ratio','Reference','SampledData','Signature','Timing'];
+var metaDataTypes = ['ContactDetail','Contributor','DataRequirement','Expression','ParameterDefinition','RelatedArtifact','TriggerDefinition','UsageContext'];
+
 
                 let url = window.location.href;
                 let slashCount = url.split("/").length;
@@ -693,6 +696,24 @@
                         var profileName =  $(this)[0].innerText;
                         if (ukCoreProfiles.indexOf(profileName) > -1) {
                             var swapUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (baseDataTypes.indexOf(profileName) > -1) {
+                            var swapUrl = "https://hl7.org/fhir/R4/datatypes.html#" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (metaDataTypes.indexOf(profileName) > -1) {
+                            var swapUrl = "https://hl7.org/fhir/R4/metadatatypes.html#" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Reference") {
+                            var swapUrl = "https://hl7.org/fhir/R4/references.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Extension") {
+                            var swapUrl = "https://hl7.org/fhir/R4/extensibility.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Dosage") {
+                            var swapUrl = "https://hl7.org/fhir/R4/dosage.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "BackboneElement") {
+                            var swapUrl = "https://hl7.org/fhir/R4/backboneelement.html";
                             $(this).attr("href", swapUrl);
                         }
                     }
