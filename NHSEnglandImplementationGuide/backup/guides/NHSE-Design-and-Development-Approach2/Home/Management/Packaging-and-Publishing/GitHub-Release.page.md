@@ -12,7 +12,7 @@
     {{render:Github}}
 
 2. Select Draft a new release.
-3. Ensure target is set to main and create a tag the is the same as the package version.
+3. Ensure target is set to main and create a tag that is  same as the package version.
 4. Add the following release notes, changing the information as needed:
 
     ## Simplifier FHIR Assets
