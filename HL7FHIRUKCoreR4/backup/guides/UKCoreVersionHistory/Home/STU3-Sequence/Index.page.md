@@ -23,7 +23,7 @@
 <li>Swap ValueSets to Simplifier templating</li>
 <li>Swap Extensions to Simplifier templating</li>
 <li>Altered Profiles sub menu from hover to click to show</li>
-<li>Added Detailed view to Profile tabs</li>
+<li>Added Detailed View to Profile tabs</li>
 <li>Added Feedback to Profile tabs, which links to the relevant Simplifier issues page to raise an issue for the profile</li>
 <li>Added "View UK Core guidance" link in pinnable panel, for elements where additional guidance is detailed on a page</li>
 <li>Added clickable element headers, that show / hide the relevant element details from the Detailed view</li>
