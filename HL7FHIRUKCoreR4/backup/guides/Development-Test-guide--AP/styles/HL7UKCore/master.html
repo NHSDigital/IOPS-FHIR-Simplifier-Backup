@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
         <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-
+    
         <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
         <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
         <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
@@ -57,7 +57,7 @@
                 <ul>
                     <li>This version of the UK Core is for C&TA Sprint 7 Review.</li>
                     <li>This version is not suitable for implementation. Other versions are available on the <a href="https://simplifier.net/guide/ukcoreversionhistory?version=current">UK Core Version History Guide</a></li>
-                    <li>Please follow the guidance on the <a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ContactUs.page.md?version=current">Contact Us page</a> if you need any assistance.</li>
+                    <li>Please follow the guidance on the <a id="header-contactus" href="{{content}}/../Home/ContactUs.page.md?version=current">Contact Us page</a> if you need any assistance.</li>
                     <li>A summary of changes is available on the <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU3-Sequence/index.page.md?version=current">STU3 Sequence Change Log</a></li>
                     </ul>
             </div>
@@ -73,6 +73,13 @@
         </a>
 
         <footer>
+
+            <!-- Consent Bar - Example setting level 20 upon continued usage and level 80 if the user clicks the button -->
+            <div class="cookie-consent" data-level="20" data-duration="8">
+                <p>Simplifier, and HL7 UK, use cookies on this website. <span class="hidden-xs">Cookies are small text files, stored on your computer. We use cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site without changing settings, you are agreeing to our use of cookies.</span></p>
+                <button type="button" class="btn btn-primary cookie-accept" data-level="80" data-duration="8760">Accept</button>
+            </div>
+
             <div class="container">
                 <table role="none" title="Footer Links" width="100%">
                     	<col style="width:19%">
@@ -512,7 +519,6 @@
                 }
             }
             function setInitialDropdownState(){
-                debugger;
                 if (getDropdownExpandedState("dropdownParentOne") == 'true'){
                     $('li#dropdownParentOne ul').removeClass("hidden");
                     $('li#dropdownParentOne ul').removeClass('visuallyhidden');
@@ -877,6 +883,15 @@ var metaDataTypes = ['ContactDetail','Contributor','DataRequirement','Expression
                 if (!(newUrl.endsWith("Home") || newUrl.endsWith("home"))) {
                     newUrl = newUrl + "/Home";
                 }
+                $("a#header-contactus").each(function(index) {
+                    let destUrl = $(this)[0].href;
+                    let destVersion = "?" + destUrl.split("?")[1];
+                    destUrl = newUrl + "/ContactUs" + destVersion;
+                    if (pageVersion.startsWith("?version=current")){
+                        destUrl = destUrl.replace(destVersion, ".page.md" + pageVersion);
+                    }
+                    $(this).attr("href", destUrl) ;
+				});
                 $("a#footer-sitemap").each(function(index) {
                     let destUrl = $(this)[0].href;
                     let destVersion = "?" + destUrl.split("?")[1];
@@ -1547,5 +1562,8 @@ clipboard.on('error', function(e) {
   setTooltip('Failed :( - copy manually');
 });
   </script>
+
+  <script>function initCookieConsentBar(){!1!=$.areCookiesEnabled()&&((void 0===(level=(bar=document.getElementsByClassName("cookie-consent")[0]).dataset.level)||level>=50)&&(level=1),(void 0===(duration=bar.dataset.duration)||duration>8760)&&(duration=8),$.cookie("cookie-consent",level,36e5*duration),showCookieConsentBar())}function showCookieConsentBar(){bar=document.getElementsByClassName("cookie-consent")[0],button=document.getElementsByClassName("cookie-accept")[0],setEventListeners(),fadeIn(bar,250)}function setEventListeners(){void 0===(level=button.dataset.level)&&(level=50),(void 0===(duration=button.dataset.duration)||duration>8760)&&(duration=8),button.addEventListener("click",function(){$.cookie("cookie-consent",level,36e5*duration),fadeOut(bar,250)})}function fadeIn(e,o){var t=e.style;t.opacity=0,t.display="block",function e(){(t.opacity-=-.1)>.9||setTimeout(e,o/10)}()}function fadeOut(e,o){var t=e.style;t.opacity=1,function e(){(t.opacity-=.1)<.1?t.display="none":setTimeout(e,o/10)}()}$.areCookiesEnabled=function(){try{document.cookie="cookietest=1";var e=-1!=document.cookie.indexOf("cookietest=");return document.cookie="cookietest=1; expires=Thu, 01-Jan-1970 00:00:01 GMT",e}catch(o){return!1}},$.cookie=function(e,o,t){if(arguments.length<2){for(var n=document.cookie.split(";"),i=0;i<n.length;i++){var s=n[i].replace(/^\s+/,"");if(0==s.indexOf(e+"="))return decodeURIComponent(s.substring(e.length+1).split("+").join(" "))}return null}var a=new Date;a.setTime(a.getTime()+t),document.cookie=e+"="+encodeURIComponent(o)+(t?";expires="+a.toGMTString():"")+";path=/"},document.addEventListener("DOMContentLoaded",function(){var e=$.cookie("cookie-consent");console.log(e),null===e?initCookieConsentBar():e>0&&e<50&&showCookieConsentBar()});
+</script>
 
 </html>
