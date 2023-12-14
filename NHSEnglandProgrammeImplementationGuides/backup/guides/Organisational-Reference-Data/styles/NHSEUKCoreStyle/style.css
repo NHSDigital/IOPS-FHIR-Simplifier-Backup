@@ -32,10 +32,10 @@ html, body {
  body header .hl7-logo {
      text-align: right;
      float: left;
+     margin-top:15px;
 }
  body header .guide-title {
-    font-size: 18px;
-    margin-top: 18px;
+    margin-top: 15px;
 }
  body .content {
      overflow: hidden;
