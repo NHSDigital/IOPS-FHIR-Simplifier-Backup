@@ -19,7 +19,7 @@
 <td colspan="4"><b>Changes for this version</b>
 <br>
 <ul>
-<li><b>BREAKING CHANGE:</b> Reset UKCore-Patient.communication.lagnuage to base binding, and increased the strwength to Required, to bring this in line with future FHIR versions</li>
+<li><b>BREAKING CHANGE:</b> Reset UKCore-Patient.communication.languuage to base binding, and increased the strwength to Required, to bring this in line with future FHIR versions</li>
 <li><b>BREAKING CHANGE:</b> Changed UK Core Minimum viable content to be MustSupport flags</li>
 <li><b>BREAKING CHANGE:</b> Changed ukcore-diag-lab-001 constraint from 'effectivetime' to 'issued'</li>
 <li><b>BREAKING CHANGE:</b> Renamed ukcore-imm-1 constraint to ukcore-imm-001</li>

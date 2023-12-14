@@ -1,6 +1,6 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to one of the following:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 - [Profile UKCore-CarePlan](https://simplifier.net/hl7fhirukcorer4/ukcorecareplan)
 - {{pagelink:Profile-ServiceRequest}}
 
