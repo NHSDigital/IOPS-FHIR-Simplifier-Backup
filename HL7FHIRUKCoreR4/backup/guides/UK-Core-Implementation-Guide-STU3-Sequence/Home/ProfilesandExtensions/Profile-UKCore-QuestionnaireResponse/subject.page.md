@@ -1,5 +1,5 @@
 ## <code>{{page-title}}</code>
 
-Where a UK Core profile exists the resource being referenced SHALL conform to the profile.
+Where possible, it is expected that the resource being referenced SHOULD conform to the UK Core profile for that resource, if a profile exists.
 
 ---

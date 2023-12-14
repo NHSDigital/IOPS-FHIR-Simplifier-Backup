@@ -773,6 +773,13 @@ var metaDataTypes = ['ContactDetail','Contributor','DataRequirement','Expression
                         } else if (profileName == "BackboneElement") {
                             var swapUrl = "https://hl7.org/fhir/R4/backboneelement.html";
                             $(this).attr("href", swapUrl);
+                        } else if (profileName == "Resource") {
+                            var swapUrl = "https://hl7.org/fhir/R4/resourcelist.html";
+                            $(this).attr("href", swapUrl);
+                        }
+
+                        if (profileName == "Reference" && ($(this).parent().prop("tagName") == "P" || $(this).parent().prop("tagName") == "TD") ) {
+                            $(this).parent().find('span:contains(")")')[0].innerText = ") or UK Core equivalent profile."
                         }
                     }
 				});
@@ -1465,16 +1472,6 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                     });
                 });
             }
-            function redirectReferenceResource() {
-                //this finds any treetable lines that have Reference(Resource)
-                var tdList = $('div.treetable-left-panel table.treetable tbody tr td.profile').has('a[title^="Reference"]') && $('div.treetable-left-panel table.treetable tbody tr td.profile').has('a[title^="Resource"]')
-                
-                if (tdList != undefined && tdList.length > 0){
-                    tdList.each(function(index) {
-                        $(this).find('a[title^="Resource"]').attr("href","https://hl7.org/fhir/R4/resourcelist.html");
-                    });
-                }
-            }
         </script>
         <script>
 
@@ -1513,7 +1510,6 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                 fixWebAccessibility();
                 redirectTreeviewElementsToPage();
                 handleSubMenuEvents();
-                redirectReferenceResource();
                 setInitialDropdownState();
                 updateFooterPosition();
             });

@@ -1,8 +1,8 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to one of the following:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
-* {{pagelink:Profile-Observation}}
-* {{pagelink:Profile-Procedure}}
+- {{pagelink:Profile-Observation}}
+- {{pagelink:Profile-Procedure}}
 
 ---

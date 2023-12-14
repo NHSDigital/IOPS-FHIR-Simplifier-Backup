@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
         <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-
+    
         <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
         <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
         <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
@@ -57,7 +57,7 @@
                 <ul>
                     <li>This version of the UK Core is for C&TA Sprint 7 Review.</li>
                     <li>This version is not suitable for implementation. Other versions are available on the <a href="https://simplifier.net/guide/ukcoreversionhistory?version=current">UK Core Version History Guide</a></li>
-                    <li>Please follow the guidance on the <a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ContactUs.page.md?version=current">Contact Us page</a> if you need any assistance.</li>
+                    <li>Please follow the guidance on the <a id="header-contactus" href="{{content}}/../Home/ContactUs.page.md?version=current">Contact Us page</a> if you need any assistance.</li>
                     <li>A summary of changes is available on the <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU3-Sequence/index.page.md?version=current">STU3 Sequence Change Log</a></li>
                     </ul>
             </div>
@@ -73,6 +73,13 @@
         </a>
 
         <footer>
+
+            <!-- Consent Bar - Example setting level 20 upon continued usage and level 80 if the user clicks the button -->
+            <div class="cookie-consent" data-level="20" data-duration="8">
+                <p>Simplifier, and HL7 UK, use cookies on this website. <span class="hidden-xs">Cookies are small text files, stored on your computer. We use cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site without changing settings, you are agreeing to our use of cookies.</span></p>
+                <button type="button" class="btn btn-primary cookie-accept" data-level="80" data-duration="8760">Accept</button>
+            </div>
+
             <div class="container">
                 <table role="none" title="Footer Links" width="100%">
                     	<col style="width:19%">
@@ -476,21 +483,64 @@
             function createProfileSubMenus() {
                //mobile friendly tweak - check window size, and add sub menu if we can
                 if (window.matchMedia("(min-width: 992px)").matches){
+                    //add classes for profiles
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(3).addClass("profile-item");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(25,31).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(33,34).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(35,44).addClass("obsvital-derived");
+
                     //add the sub menu's for profiles
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentPToZ" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles P to Z <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentNToO" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles N to O <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentAToM" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles A to M <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentThree" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles P to Z <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentTwo" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles L to O <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentOne" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles A to K <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
                     
                     //and move the items into the sub menus
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(4,28)); //A to M
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(28,50)); //N to O
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(50)); //P to Z
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(0,16)); //A to K
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(16,24)); //I to N
+
+                    
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(24,25)); //Obs
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append('<li id="dropdownObsParent" class="submenu-subparent"><a href="javascript:void(0)" class="dropdown-toggle"><span class="caret"></span>&nbsp;&nbsp;Derived Profiles of UKCore-Observation</a><ul class="submenu-sublist subhidden"></ul></li>'); //Obs Parent
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(31,33)); //Obs Lab
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(34,35)); //Obs Vital
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append('<li id="dropdownObsVitalParent" class="submenu-subparent"><a href="javascript:void(0)" class="dropdown-toggle"><span class="caret"></span>&nbsp;Derived Profiles of UKCore-Observation-VitalSigns</a><ul class="submenu-sublist subhidden"></ul></li>'); //ObsVital Parent
+
+
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(0) ul.submenu-sublist').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.obs-derived')); //Obs Derived
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(1) ul.submenu-sublist').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.obsvital-derived')); //ObsVital Derived 
+
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(44,46)); //Other O's 
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(46)); //P to Z
                 } else {
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
                 }
+            }
+            function setInitialDropdownState(){
+                if (getDropdownExpandedState("dropdownParentOne") == 'true'){
+                    $('li#dropdownParentOne ul').removeClass("hidden");
+                    $('li#dropdownParentOne ul').removeClass('visuallyhidden');
+                } 
+                if (getDropdownExpandedState("dropdownParentTwo") == 'true'){
+                    $('li#dropdownParentTwo ul').removeClass("hidden");
+                    $('li#dropdownParentTwo ul').removeClass('visuallyhidden');
+                }
+                if (getDropdownExpandedState("dropdownParentThree") == 'true'){
+                    $('li#dropdownParentThree ul').removeClass("hidden");
+                    $('li#dropdownParentThree ul').removeClass('visuallyhidden');
+                }
+                
+                if (getDropdownExpandedState("dropdownObsParent") == 'true'){
+                    $('li#dropdownObsParent ul').removeClass("subhidden");
+                    $('li#dropdownObsParent ul').removeClass('visuallysubhidden');
+                }
+                if (getDropdownExpandedState("dropdownObsVitalParent") == 'true'){
+                    $('li#dropdownObsVitalParent ul').removeClass("subhidden");
+                    $('li#dropdownObsVitalParent ul').removeClass('visuallysubhidden');
+                }
+
             }
 
             // function add a seperator into terminology dropdown
@@ -511,12 +561,14 @@
             }
 
             function handleSubMenuEvents() {
-                var atom
-                var ntoo
-                var ptoz
+                var dropdownParentOne, dropdownParentTwo, dropdownParentThree
+                var dropdownObsParent, dropdownObsVitalParent
 
                 $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent a').click(function(e) {   
                     if ($(this).parent().parent().hasClass("submenu-list")) {
+                        return;
+                    }
+                    if ($(this).parent().parent().hasClass("submenu-sublist")) {
                         return;
                     }
                     e.stopPropagation(); 
@@ -524,46 +576,116 @@
 
                     var list = $(this).parent().find('ul');
 
-                    if (list.parent()[0].id== "dropdownParentAToM") {
-                        clearTimeout(atom);
-                    } else if (list.parent()[0].id== "dropdownParentNToO") {
-                        clearTimeout(ntoo);
-                    } else if (list.parent()[0].id== "dropdownParentPToZ") {
-                        clearTimeout(ptoz);
+                    if (list.parent()[0].id== "dropdownParentOne") {
+                        clearTimeout(dropdownParentOne);
+                    } else if (list.parent()[0].id== "dropdownParentTwo") {
+                        clearTimeout(dropdownParentTwo);
+                    } else if (list.parent()[0].id== "dropdownParentThree") {
+                        clearTimeout(dropdownParentThree);
                     }
+
                     if (list.hasClass("hidden")) {
                         list.addClass("visuallyhidden");
                         list.removeClass("hidden");
                         setTimeout(function () {
                             list.removeClass('visuallyhidden');
+                            setDropdownExpandedState(list.parent()[0].id,true);
                             }, 30);
                     } else  {
                         if (list.hasClass("visuallyhidden")) {
                             setTimeout(function () {
                                 list.removeClass('visuallyhidden');
-                                }, 30);
+                                setDropdownExpandedState(list.parent()[0].id,true);
+                            }, 30);
                         } else {
 
-                            if (list.parent()[0].id== "dropdownParentAToM") {
-                                atom = setTimeout(function () {
-                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("visuallyhidden");
-                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("hidden");
-                    }, 20);
-                            } else if (list.parent()[0].id== "dropdownParentNToO") {
-                                ntoo = setTimeout(function () {
-                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("visuallyhidden");
-                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("hidden");
-                    }, 20);
-                            } else if (list.parent()[0].id== "dropdownParentPToZ") {
-                                ptoz = setTimeout(function () {
-                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').addClass("visuallyhidden");
-                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').addClass("hidden");
-                    }, 20);
+                            if (list.parent()[0].id== "dropdownParentOne") {
+                                dropdownParentOne = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("visuallyhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("hidden");
+                                setDropdownExpandedState("dropdownParentOne",false);
+                                }, 20);
+                            } else if (list.parent()[0].id== "dropdownParentTwo") {
+                                dropdownParentTwo = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("visuallyhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("hidden");
+                                setDropdownExpandedState("dropdownParentTwo",false);
+                                }, 20);
+                            } else if (list.parent()[0].id== "dropdownParentThree") {
+                                dropdownParentThree = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').addClass("visuallyhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').addClass("hidden");
+                                setDropdownExpandedState("dropdownParentThree",false);
+                                }, 20);
                             }
 
                         }
                     }
                 });
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent a').click(function(e) {   
+                    if ($(this).parent().parent().hasClass("submenu-sublist")) {
+                        return;
+                    }
+                    e.stopPropagation(); 
+                    e.preventDefault();
+
+                    var list = $(this).parent().find('ul');
+                    if (list.parent()[0].id== "dropdownObsParent") {
+                        clearTimeout(dropdownObsParent);
+                    } else if (list.parent()[0].id== "dropdownObsVitalParent") {
+                        clearTimeout(dropdownObsVitalParent);
+                    }
+
+                    if (list.hasClass("subhidden")) {
+                        list.addClass("visuallysubhidden");
+                        list.removeClass("subhidden");
+                        setTimeout(function () {
+                            list.removeClass('visuallysubhidden');
+                            setDropdownExpandedState(list.parent()[0].id,true);
+                            }, 30);
+                    } else  {
+                        if (list.hasClass("visuallysubhidden")) {
+                            setTimeout(function () {
+                                list.removeClass('visuallysubhidden');
+                                setDropdownExpandedState(list.parent()[0].id,true);
+                                }, 30);
+                        } else {
+
+                            if (list.parent()[0].id== "dropdownObsParent") {
+                                dropdownObsParent = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(0) ul.submenu-sublist').addClass("visuallysubhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(0) ul.submenu-sublist').addClass("subhidden");
+                                setDropdownExpandedState("dropdownObsParent",false);
+                                }, 20);
+                             } else if (list.parent()[0].id== "dropdownObsVitalParent") {
+                                dropdownObsVitalParent = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(1) ul.submenu-sublist').addClass("visuallysubhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(1) ul.submenu-sublist').addClass("subhidden");
+                                setDropdownExpandedState("dropdownObsVitalParent",false);
+                                }, 20);
+                            }
+
+                        }
+                    }
+                });
+            }
+        </script>
+        <script>
+            function getDropdownExpandedState(dropdownMenuId) {
+                var nameEQ = dropdownMenuId + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return false;
+            }
+            function setDropdownExpandedState(dropdownMenuId, open){
+                var date = new Date();
+                date.setTime(date.getTime() + (7*24*60*60*1000));
+                var expires = "; expires=" + date.toUTCString();
+                document.cookie = dropdownMenuId + "=" + (open || "")  + expires + "; path=/";
             }
         </script>
         <script>
@@ -582,39 +704,79 @@
             //look for any anchor tags going to XML, which would open the resource in simpifier
             // and remap these to the relevant asset in the IG
            function swapProfileTreeLinks() {
+                var ukCoreProfiles = ['AllergyIntolerance','Appointment','Composition','Condition','Consent','Device','DiagnosticReport','Encounter','EpisodeOfCare','FamilyMemberHistory','Flag','HealthcareService','ImagingStudy','Immunization','List','Location','Medication','MedicationAdministration','MedicationDispense','MedicationRequest','MedicationStatement','MessageHeader','Observation','OperationOutcome','Organization','Patient','Practitioner','PractitionerRole','Procedure','Questionnaire','QuestionnaireResponse','RelatedPerson','Schedule','ServiceRequest','Slot','Specimen','Task'];
+var baseDataTypes = ['base64Binary','boolean','canonical','code','date','dateTime','decimal','id','instant','integer','markdown','oid','positiveInt','string','time','unsignedInt','uri','url','uuid','Data','Types','Address','Age','Annotation','Attachment','CodeableConcept','Coding','ContactPoint','Count','Distance','Duration','HumanName','Identifier','Money','Period','Quantity','Range','Ratio','Reference','SampledData','Signature','Timing'];
+var metaDataTypes = ['ContactDetail','Contributor','DataRequirement','Expression','ParameterDefinition','RelatedArtifact','TriggerDefinition','UsageContext'];
+
+
+                let url = window.location.href;
+                let slashCount = url.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++)
+                {
+                    newUrl = newUrl + url.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
+                        i = slashCount;
+                    }
+                }
+
                 $('a[href$="xml"]').each(function(index) {
                     let urlReference = $(this)[0].href;
                     if (urlReference.includes("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath="))
                     {
-                        let url = window.location.href;
-                        let slashCount = url.split("/").length;
-                        let newUrl = '';
-                        for (i=0;i<slashCount;i++)
-                        {
-                            newUrl = newUrl + url.split("/")[i] + "/";
-                            if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
-                                i = slashCount;
-                            }
-                        }
+                        var swapUrl = newUrl;
                         var addExtraIfNeeded = true;
                         if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-")) {
-                            newUrl = newUrl + "ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-","");
+                            swapUrl = swapUrl + "ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-","");
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-")) {
-                            newUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-","");
+                            swapUrl = swapUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-","");
                             addExtraIfNeeded=false;
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-")) {
-                            newUrl = newUrl + "Terminology/AllValueSets/ValueSet-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-","");
+                            swapUrl = swapUrl + "Terminology/AllValueSets/ValueSet-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-","");
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-")) {
-                            newUrl = newUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-","");
+                            swapUrl = swapUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-","");
                         }
-                        newUrl= newUrl.replace(".xml","");
+                        swapUrl= swapUrl.replace(".xml","");
                         
                         let exampleVersion = "?" + url.split("?")[1];
                         if (exampleVersion.startsWith("?version=current") && addExtraIfNeeded){
                             exampleVersion = ".page.md" + exampleVersion;
                         }
-                        newUrl = newUrl + exampleVersion;
-                        $(this).attr("href", newUrl);
+                        swapUrl = swapUrl + exampleVersion;
+                        $(this).attr("href", swapUrl);
+                    }
+				});
+                
+                $('a[href$="json"]').each(function(index) {
+                    let urlReference = $(this)[0].href;
+                    if (urlReference.includes("https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-"))
+                    {
+                        var profileName =  $(this)[0].innerText;
+                        if (ukCoreProfiles.indexOf(profileName) > -1) {
+                            var swapUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (baseDataTypes.indexOf(profileName) > -1) {
+                            var swapUrl = "https://hl7.org/fhir/R4/datatypes.html#" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (metaDataTypes.indexOf(profileName) > -1) {
+                            var swapUrl = "https://hl7.org/fhir/R4/metadatatypes.html#" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Reference") {
+                            var swapUrl = "https://hl7.org/fhir/R4/references.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Extension") {
+                            var swapUrl = "https://hl7.org/fhir/R4/extensibility.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Dosage") {
+                            var swapUrl = "https://hl7.org/fhir/R4/dosage.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "BackboneElement") {
+                            var swapUrl = "https://hl7.org/fhir/R4/backboneelement.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Resource") {
+                            var swapUrl = "https://hl7.org/fhir/R4/resourcelist.html";
+                            $(this).attr("href", swapUrl);
+                        }
                     }
 				});
 			}
@@ -724,6 +886,15 @@
                 if (!(newUrl.endsWith("Home") || newUrl.endsWith("home"))) {
                     newUrl = newUrl + "/Home";
                 }
+                $("a#header-contactus").each(function(index) {
+                    let destUrl = $(this)[0].href;
+                    let destVersion = "?" + destUrl.split("?")[1];
+                    destUrl = newUrl + "/ContactUs" + destVersion;
+                    if (pageVersion.startsWith("?version=current")){
+                        destUrl = destUrl.replace(destVersion, ".page.md" + pageVersion);
+                    }
+                    $(this).attr("href", destUrl) ;
+				});
                 $("a#footer-sitemap").each(function(index) {
                     let destUrl = $(this)[0].href;
                     let destVersion = "?" + destUrl.split("?")[1];
@@ -1297,16 +1468,6 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                     });
                 });
             }
-            function redirectReferenceResource() {
-                //this finds any treetable lines that have Reference(Resource)
-                var tdList = $('div.treetable-left-panel table.treetable tbody tr td.profile').has('a[title^="Reference"]') && $('div.treetable-left-panel table.treetable tbody tr td.profile').has('a[title^="Resource"]')
-                
-                if (tdList != undefined && tdList.length > 0){
-                    tdList.each(function(index) {
-                        $(this).find('a[title^="Resource"]').attr("href","https://hl7.org/fhir/R4/resourcelist.html");
-                    });
-                }
-            }
         </script>
         <script>
 
@@ -1345,7 +1506,7 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                 fixWebAccessibility();
                 redirectTreeviewElementsToPage();
                 handleSubMenuEvents();
-                redirectReferenceResource();
+                setInitialDropdownState();
                 updateFooterPosition();
             });
         </script>
@@ -1393,5 +1554,8 @@ clipboard.on('error', function(e) {
   setTooltip('Failed :( - copy manually');
 });
   </script>
+
+  <script>function initCookieConsentBar(){!1!=$.areCookiesEnabled()&&((void 0===(level=(bar=document.getElementsByClassName("cookie-consent")[0]).dataset.level)||level>=50)&&(level=1),(void 0===(duration=bar.dataset.duration)||duration>8760)&&(duration=8),$.cookie("cookie-consent",level,36e5*duration),showCookieConsentBar())}function showCookieConsentBar(){bar=document.getElementsByClassName("cookie-consent")[0],button=document.getElementsByClassName("cookie-accept")[0],setEventListeners(),fadeIn(bar,250)}function setEventListeners(){void 0===(level=button.dataset.level)&&(level=50),(void 0===(duration=button.dataset.duration)||duration>8760)&&(duration=8),button.addEventListener("click",function(){$.cookie("cookie-consent",level,36e5*duration),fadeOut(bar,250)})}function fadeIn(e,o){var t=e.style;t.opacity=0,t.display="block",function e(){(t.opacity-=-.1)>.9||setTimeout(e,o/10)}()}function fadeOut(e,o){var t=e.style;t.opacity=1,function e(){(t.opacity-=.1)<.1?t.display="none":setTimeout(e,o/10)}()}$.areCookiesEnabled=function(){try{document.cookie="cookietest=1";var e=-1!=document.cookie.indexOf("cookietest=");return document.cookie="cookietest=1; expires=Thu, 01-Jan-1970 00:00:01 GMT",e}catch(o){return!1}},$.cookie=function(e,o,t){if(arguments.length<2){for(var n=document.cookie.split(";"),i=0;i<n.length;i++){var s=n[i].replace(/^\s+/,"");if(0==s.indexOf(e+"="))return decodeURIComponent(s.substring(e.length+1).split("+").join(" "))}return null}var a=new Date;a.setTime(a.getTime()+t),document.cookie=e+"="+encodeURIComponent(o)+(t?";expires="+a.toGMTString():"")+";path=/"},document.addEventListener("DOMContentLoaded",function(){var e=$.cookie("cookie-consent");console.log(e),null===e?initCookieConsentBar():e>0&&e<50&&showCookieConsentBar()});
+</script>
 
 </html>
