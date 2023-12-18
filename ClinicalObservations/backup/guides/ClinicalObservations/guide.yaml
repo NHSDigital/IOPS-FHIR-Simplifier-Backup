@@ -1,0 +1,5 @@
+title: Clinical Observations
+description: FHIR Implementation Guide for Clinical Observations
+version: 2.0.0-Alpha
+style-root: project
+style-name: NHSD
