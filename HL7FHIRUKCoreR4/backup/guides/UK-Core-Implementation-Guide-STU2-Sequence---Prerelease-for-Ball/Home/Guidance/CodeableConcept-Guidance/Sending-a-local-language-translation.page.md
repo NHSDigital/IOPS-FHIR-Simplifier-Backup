@@ -1,6 +1,6 @@
 ## Sending a local language translation
 
-Where a supplier wants to send the local language translation with a description or text field, they can use the HL7 Core-defined Extension <a href="https://hl7.org/fhir/R4/extension-translation.html">translation</a>. 
+Where a supplier wants to send the local language translation with a description or text field, they can use the HL7 Core-defined Extension <a href="https://hl7.org/fhir/R4/extension-translation.html" class="external">translation</a>. 
 
 The example below demonstrates how a translation SHOULD be sent.
 
@@ -13,23 +13,22 @@ The example below demonstrates how a translation SHOULD be sent.
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Condition-Sn-Extension-Translation-Example}}
+{{table:UKCore-Extension-Translation-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Condition-Sn-Extension-Translation-Example}}
+{{tree:UKCore-Extension-Translation-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Condition-Sn-Extension-Translation-Example}}
+{{xml:UKCore-Extension-Translation-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Condition-Sn-Extension-Translation-Example}}
+{{json:UKCore-Extension-Translation-Example}}
 </div>
-
 
 ---

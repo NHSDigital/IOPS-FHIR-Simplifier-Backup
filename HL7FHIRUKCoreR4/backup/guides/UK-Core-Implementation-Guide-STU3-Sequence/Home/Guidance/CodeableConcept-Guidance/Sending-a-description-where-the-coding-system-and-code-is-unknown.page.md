@@ -29,4 +29,4 @@ In the exceptional case that the code is not known, then the <code>code.text</co
 {{json:UKCore-Extension-CodingSCT-CodeUnknown-Example}}
 </div>
 
-
+---

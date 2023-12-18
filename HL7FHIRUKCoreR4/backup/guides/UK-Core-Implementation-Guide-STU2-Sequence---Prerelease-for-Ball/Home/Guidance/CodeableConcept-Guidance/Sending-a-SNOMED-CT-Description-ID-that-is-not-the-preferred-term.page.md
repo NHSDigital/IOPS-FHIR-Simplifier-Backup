@@ -11,22 +11,22 @@ In this case, the SNOMED CT Description ID represents a term that is different f
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Condition-Sn-Extension-CodingSCT-Heart-Example}}
+{{table:UKCore-Extension-CodingSCT-Heart-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Condition-Sn-Extension-CodingSCT-Heart-Example}}
+{{tree:UKCore-Extension-CodingSCT-Heart-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Condition-Sn-Extension-CodingSCT-Heart-Example}}
+{{xml:UKCore-Extension-CodingSCT-Heart-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Condition-Sn-Extension-CodingSCT-Heart-Example}}
+{{json:UKCore-Extension-CodingSCT-Heart-Example}}
 </div>
 
 ---
