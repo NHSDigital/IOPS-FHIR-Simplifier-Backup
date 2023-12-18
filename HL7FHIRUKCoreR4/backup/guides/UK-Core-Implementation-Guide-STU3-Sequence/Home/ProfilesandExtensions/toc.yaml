@@ -66,12 +66,12 @@
   filename: Profile-UKCore-Observation-BloodGlucose
 - name: Profile UKCore-Observation-EarlyWarningTotalScore
   filename: Profile-UKCore-Observation-EarlyWarningTotalScore
+- name: Profile UKCore-Observation-Group-Lab
+  filename: Profile-UKCore-Observation-Group-Lab
 - name: Profile-UKCore-Observation-InspiredOxygen
   filename: Profile-UKCore-Observation-InspiredOxygen
 - name: Profile UKCore-Observation-Lab
   filename: Profile-UKCore-Observation-Lab
-- name: Profile UKCore-Observation-LabGroup
-  filename: Profile-UKCore-Observation-LabGroup
 - name: Profile UKCore-Observation-TobaccoConsumption
   filename: Profile-UKCore-Observation-TobaccoConsumption
 - name: Profile UKCore-Observation-VitalSigns

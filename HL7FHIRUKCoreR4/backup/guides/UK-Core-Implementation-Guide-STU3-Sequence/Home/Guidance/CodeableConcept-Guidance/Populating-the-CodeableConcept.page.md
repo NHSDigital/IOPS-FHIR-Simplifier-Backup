@@ -6,10 +6,10 @@ This section shows you how to populate each field where the code carried is a SN
 
 #### SNOMED CT
 
-<table class="assets" title="SNOMED CT population">
+<table class="assets">
 <tr>
-<th class="width45">Element</th>
-<th class="width55">Definition</th>
+<th width="45%">Element</th>
+<th width="55%">Definition</th>
 </tr>
 <tr>
 <td><code>code.coding</code></td>
@@ -17,11 +17,11 @@ This section shows you how to populate each field where the code carried is a SN
 </tr>
 <tr>
 <td><code>code.coding.extension</code><br/><small><small>Where <code>extension.url</code> = http://hl7.org/fhir/StructureDefinition/coding-sctdescid</small></small></td>
-<td>The SNOMED CT Description Id recorded with the item. Only populated if a description Id exists.</td>
+<td>The SNOMED CT Description Id recorded with the item. Only populated if a Description Id exists.</td>
 </tr>
 <tr>
 <td><code>code.coding.extension</code><br/><small><small>Where <code>extension.url</code> = https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay</small></small></td>
-<td>The display of the Description Id. This SHOULD be populated if a Description Id exists, but implementers SHOULD NOT populate the extension if the selected display term is lexically identical to the text in <code>coding.display</code>.</td>
+<td>The display term of the Description Id. This SHOULD be populated if a Description Id exists, but implementers SHOULD NOT populate the extension if the selected display term is lexically identical to the text in <code>coding.display</code>.</td>
 </tr>
 <tr>
 <td><code>code.coding.system</code></td>
@@ -34,19 +34,16 @@ This section shows you how to populate each field where the code carried is a SN
 <tr>
 <td><code>code.coding.display</code> </td>
 <td>The text of the current preferred term of the SNOMED CT Concept Id according to the current NHS Realm Language Reference Sets.<br>
-The text of the preferred term of the SNOMED CT Concept Id.<br>
 The preferred term is the description specified for the concept in the NHS realm description subset. The preferred term for a concept may change over time. The sending system SHOULD determine the current preferred term for the concept.</td>
 </tr>
 <tr>
 <td><code>code.coding.userSelected</code></td>
-<td>Set to <code>true</code> if a user selected the SNOMED CT Concept when creating/updating this item. If this is <code>false</code> then this element SHALL NOT be populated by the supplying system. <br>
-For consuming systems the absence of this element therefore indicates that it is <code>false</code>.</td>
+<td>Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).<br>
+This should be set to <code>true</code> if a user selected the SNOMED CT Concept when creating/updating this item.</td>
 </tr>
 <tr>
 <td><code>code.text</code></td>
-<td>The original text selected / manually entered by the user for the item. <br>
-If the text displayed to the user when they entered the code on the system is not lexically identical to the term of the code then the displayed text SHALL be populated here. <br>
-<b>Note:</b> This occurs when either the original entry was not coded or the original coding has been lost.</td>
+<td>The original text selected / manually entered by the user for the item.</td>
 </tr>
 </table>           
 
@@ -54,10 +51,10 @@ If the text displayed to the user when they entered the code on the system is no
 
 #### Other coding
 
-<table class="assets" title="Other coding population">
+<table class="assets">
 <tr>
-<th class="width45">Element</th>
-<th class="width55">Definition</th>
+<th width="45%">Element</th>
+<th width="55%">Definition</th>
 </tr>
 <tr>
 <td><code>code.coding</code></td>
@@ -85,14 +82,12 @@ If the text displayed to the user when they entered the code on the system is no
 </tr>
 <tr>
 <td><code><code>code.coding.userSelected</code></td>
-<td>Set to <code>true</code> if a user selected this code when creating/updating this item. If this is <code>false</code> then this element SHALL NOT be populated by the supplying system.<br>
-For consuming systems the absence of this element therefore indicates that it is <code>false</code>.</td>
+<td>Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).<br>
+This should be set to <code>true</code> if a user selected this code when creating/updating this item.</td>
 </tr>
 <tr>
 <td><code>code.text</code></td>
-<td>The original text selected / manually entered by the user for the item. <br>
-If the text displayed to the user when they entered the code on the system is not lexically identical to the term of the code then the displayed text SHALL be populated here. <br>
-<b>Note:</b> This occurs when either the original entry was not coded or the original coding has been lost.</td>
+<td>The original text selected / manually entered by the user for the item.</td>
 </tr>
 </table>     
 
