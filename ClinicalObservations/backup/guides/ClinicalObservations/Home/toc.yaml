@@ -3,7 +3,7 @@
 - name: Introduction
   filename: Introduction
 - name: FHIR Assets
-  filename: FHIRAssets-duplicate-2
+  filename: FHIRAssets
 - name: Design
   filename: Design
 - name: Build
