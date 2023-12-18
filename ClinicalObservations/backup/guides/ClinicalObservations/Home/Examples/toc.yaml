@@ -7,7 +7,7 @@
 - name: PEWS Total Score With Observations Bundle Example
   filename: PEWSTotalScoreWithObservationsBundleExample.page.md
 - name: Baseline NEWS2 Observation Example
-  filename: BaselineNEWS2ObservationExample-duplicate-2.page.md
+  filename: BaselineNEWS2ObservationExample.page.md
 - name: Baseline NPEWS1 Observation Example
   filename: BaselineNPEWS1ObservationExample.page.md
 - name: Baseline Oxygen Saturation Observation Example
@@ -55,7 +55,7 @@
 - name: Body Length Observation Example
   filename: BodyLengthObservationExample.page.md
 - name: BMI Observation Example
-  filename: BMIObservationExample-duplicate-2.page.md
+  filename: BMIObservationExample.page.md
 - name: BMI Centile Observation Example
   filename: BMICentileObservationExample.page.md
 - name: Gestational Age Observation Example

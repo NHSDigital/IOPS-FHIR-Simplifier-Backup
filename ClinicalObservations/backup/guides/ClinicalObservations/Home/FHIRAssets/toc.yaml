@@ -11,7 +11,7 @@
 - name: ConceptMaps
   filename: ConceptMaps.page.md
 - name: SearchParameters
-  filename: SearchParameters-duplicate-2.page.md
+  filename: SearchParameters.page.md
 - name: OperationDefinitions
   filename: OperationDefinitions.page.md
 - name: CapabilityStatements
