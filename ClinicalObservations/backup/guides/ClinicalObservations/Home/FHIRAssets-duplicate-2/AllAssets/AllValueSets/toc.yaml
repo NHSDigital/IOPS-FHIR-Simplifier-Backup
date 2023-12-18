@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: BodySite
+  filename: BodySite.page.md
+- name: ObservationMethod
+  filename: ObservationMethod.page.md
+- name: ObservationType
+  filename: ObservationType.page.md
+- name: VitalSignObservationValue
+  filename: VitalSignObservationValue.page.md
+- name: VitalSignsObservationType
+  filename: VitalSignsObservationType.page.md
