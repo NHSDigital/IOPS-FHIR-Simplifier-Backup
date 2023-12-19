@@ -45,6 +45,7 @@ jobs:
           git config --global user.email "username@users.noreply.github.com"
           git checkout -b ${{ steps.branch-name.outputs.BRANCH }}
           git add -A
+          git add -f HL7FHIRUKCoreR4/export.zip 
           git commit -m "${{ steps.today.outputs.TODAY }}"
           git push origin ${{ steps.branch-name.outputs.BRANCH }}
 
