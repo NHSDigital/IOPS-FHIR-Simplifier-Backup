@@ -11,7 +11,7 @@ You can use the guide to support your analysis and define the scope of your solu
 However, as a developer, you may wish to start with the following:
 * {{pagelink:about_bars, text:About BaRS and quick start guide}} 
 * {{pagelink:design-core, text:End to end workflow }} 
-* {{pagelink:home/applications, text:BaRS Applications}} 
+* {{pagelink:Home/Applications/BaRS-Applications, text:BaRS Applications}} 
 * {{pagelink:build-testing, text:Tooling}} 
 
 | The guide is divided into a number of sections:    |
