@@ -1,0 +1,123 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "GB.ENG.PDQm.Supplier",
+  "url" : "https://fhir.nhs.uk/England/CapabilityStatement/PDQm.Supplier",
+  "version" : "3.0.0-ballot",
+  "name" : "GB_ENG_PDQm_Supplier",
+  "title" : "PDQm Supplier (server)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-12-14",
+  "publisher": "NHS England",
+    "contact":  [
+        {
+            "name": "NHS England",
+            "telecom":  [
+                {
+                    "system": "email",
+                    "value": "interoperabilityteam@nhs.net",
+                    "use": "work",
+                    "rank": 1
+                }
+            ]
+        }
+    ],
+  "description" : "CapabilityStatement for Server Actor in the IHE IT Infrastructure Technical Framework Supplement IHE PDQm.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166:-2",
+      "code" : "GB-ENG"
+    }]
+  }],
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "kind" : "requirements",
+  "fhirVersion" : "4.0.1",
+  "format" : ["application/fhir+xml",
+  "application/fhir+json"],
+  "rest" : [{
+    "mode" : "server",
+    "documentation" : "PDQm server provides capability to query for Patient resources matching a sub-set of the FHIR core Patient resource query parameters",
+    "security" : {
+      "cors" : false,
+      "description" : "None mandated by IHE, encouraged IHE-IUA or SMART-on-FHIR"
+    },
+    "resource" : [{
+      "type" : "Patient",
+      "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+      "interaction" : [{
+        "code" : "read"
+      },
+      {
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "name" : "_id",
+        "type" : "token",
+        "documentation" : "Logical id of this artifact"
+      },
+      {
+        "name" : "active",
+        "type" : "token",
+        "documentation" : "Whether the patient record is active"
+      },
+      {
+        "name" : "address-city",
+        "type" : "string",
+        "documentation" : "A city specified in an address"
+      },
+      {
+        "name" : "address-country",
+        "type" : "string",
+        "documentation" : "A country specified in an address"
+      },
+      {
+        "name" : "address-postalcode",
+        "type" : "string",
+        "documentation" : "A postalCode specified in an address"
+      },
+      {
+        "name" : "address-state",
+        "type" : "string",
+        "documentation" : "A state specified in an address"
+      },
+      {
+        "name" : "birthdate",
+        "type" : "date",
+        "documentation" : "The patient's date of birth"
+      },
+      {
+        "name" : "family",
+        "type" : "string",
+        "documentation" : "A portion of the family name of the patient"
+      },
+      {
+        "name" : "gender",
+        "type" : "token",
+        "documentation" : "Gender of the patient"
+      },
+      {
+        "name" : "given",
+        "type" : "string",
+        "documentation" : "A portion of the given name of the patient"
+      },
+      {
+        "name" : "identifier",
+        "type" : "token",
+        "documentation" : "A patient identifier"
+      },
+      {
+        "name" : "telecom",
+        "type" : "token",
+        "documentation" : "The value in any kind of telecom details of the patient"
+      },
+      {
+        "name" : "_lastUpdated",
+        "type" : "date",
+        "documentation" : "When the resource version last changed"
+      }]
+    }],
+    "interaction" : [{
+      "code" : "search-system"
+    }]
+  }]
+}
