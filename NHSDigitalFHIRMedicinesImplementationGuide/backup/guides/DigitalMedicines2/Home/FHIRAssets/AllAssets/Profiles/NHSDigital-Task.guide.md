@@ -165,7 +165,7 @@ A code from {{pagelink:DM-Task-Reason-Code-duplicate-2}}
 
 | reasonCode | focus | status | CodeSystem |
 |--
-| 373784005 - Dispensing medication | `dispense-notification` | `cancelled` | {{link:https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason}} |
+| 373784005 - Dispensing medication | `dispense-notification` | `in-progress` | {{link:https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason}} |
 | 33633005 - Prescription of drug | `prescription-order` | `rejected` / `cancelled` / `failed` |  {{link:https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason}} |
 
 ```json
