@@ -4,3 +4,5 @@
   filename: FHIR-resources
 - name: Branch surgeries
   filename: Branch-surgeries
+- name: 'How to construct GPConnect-StructuredRecord-Bundle-1 '
+  filename: How-to-construct-GPConnect-StructuredRecord-Bundle-1

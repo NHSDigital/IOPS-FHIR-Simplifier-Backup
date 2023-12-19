@@ -10,3 +10,11 @@
   filename: identifier.page.md
 - name: name
   filename: name.page.md
+- name: address
+  filename: address.page.md
+- name: telecom
+  filename: telecom.page.md
+- name: contact
+  filename: contact.page.md
+- name: endpoint
+  filename: endpoint.page.md

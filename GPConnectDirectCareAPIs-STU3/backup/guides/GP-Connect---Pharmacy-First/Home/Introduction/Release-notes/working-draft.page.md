@@ -21,9 +21,8 @@
             <td>
                 <ul>
                     <li>Added SNOMED triplets for self-reported blood pressure</li>
-                    <li>Added Average 24 hour systolic / diastolic blood pressure</li>
-                    <li>Added Average day interval systolic / diastolic blood pressure</li>
                     <li>Added information regarding self-reported readings</li>
+                    <li>Added guidance for representing average ABPM readings</li>
                     <li>Added support for <code>Observation.valueAttachment</code></li>
                 </ul>
             </td>

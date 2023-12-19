@@ -16,3 +16,11 @@
   filename: extension-nhsCommunication.page.md
 - name: telecom
   filename: telecom.page.md
+- name: address
+  filename: address.page.md
+- name: birthDate
+  filename: birthDate.page.md
+- name: photo
+  filename: photo.page.md
+- name: qualification
+  filename: qualification.page.md
