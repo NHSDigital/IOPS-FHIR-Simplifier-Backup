@@ -8,6 +8,8 @@ The test request that a test report is based on.
 
 The associated test report is defined as a <code>DiagnosticReport</code> and is linked to <code>ServiceRequest</code> using <code>DiagnosticReport.basedOn</code>. Refer to the profile description for {{pagelink:R4DiagnosticReport}} for further information.
 
+If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of <code>ServiceRequest</code> is required for each requested test or test group. <code>ServiceRequest.requisition</code> acts as a common identifier to link the requests.
+
 ### Related Links
 * R4 Resource: [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html)
 * R4 UK Core Profile: [UKCore-ServiceRequest](https://simplifier.net/hl7fhirukcorer4/ukcore-servicerequest)
@@ -83,7 +85,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..1</td>
             <td>Optional</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
-            <td>A shared identifier that is used to link multiple test requests.<br><br>If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of <code>ServiceRequest</code> is required for each. <code>ServiceRequest.requisition</code> acts as a common identifier to link the requests.<br><br>For further information refer to:
+            <td>A shared identifier that is used to link multiple test requests.<br><br>If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of <code>ServiceRequest</code> is required for each requested test or test group. <code>ServiceRequest.requisition</code> acts as a common identifier to link the requests.<br><br>For further information refer to:
                 <ul>
                     <li>the description of <a href="https://hl7.org/FHIR/R4/request.html#requisitionid"> Shared requisition id</a> in the Compound Requests section of the base FHIR specification, and</li>
                     <li>the following example message: {{pagelink:R4BundleExampleLFTandUandERequest}}</li>
@@ -120,9 +122,11 @@ An example of how each supported data element may be populated is provided in {{
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>The clinical code and name of the requested test or test group, for example: <code>26604007</code> <code>Full blood count</code><br><br>This <b>SHOULD</b> be populated with a SNOMED CT procedure code and description, selected from the following:
+            <td>The clinical code and name of the requested test or test group, for example: <code>26604007</code> <code>Full blood count</code><br><br>This <b>SHALL</b> be populated using one of the following:<br><br>
                 <ul>
-                    <li>memberOf 1853561000000109 | Palm (pathology and laboratory medicine) procedure simple reference set</li>
+                    <li>memberOf 1853561000000109 | PaLM (Pathology and Laboratory Medicine) procedure simple reference set, OR</li>
+					<li>if a Procedure concept from the above reference set cannot be identified, use a SNOMED CT procedure code < 386053000 | Evaluation procedure (procedure), OR</li>
+					<li>if the two methods described above fail to identify a suitable code, then it is acceptable to use a local code representing the requested test or test group</li>
                 </ul>
             </td>
         </tr>

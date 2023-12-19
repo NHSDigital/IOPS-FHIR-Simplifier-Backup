@@ -17,7 +17,7 @@ The process is described in more detail below (each of the numbered steps relate
 5. The specimen is prepared for testing. Depending on the type of test, the specimen may need processing prior to the test being performed, for example to separate serum or plasma from a blood specimen.
 6. The requested test is performed.
 7. The test report containing the results of the test is created and authorised for release.
-8. The test report is sent to the Requesting HCP. In many care settings the report is sent electronically, usually via some form of middleware. For example, for primary care requested tests, middleware is typically used to transform the output from the LIMS system into [PMIP EDIFACT](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) formatted data. The test report data is then transferred to the Requesting HCP using [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh).
+8. The test report is sent to the Requesting HCP. In many care settings the report is sent electronically, usually via some form of middleware. For example, for primary care requested tests, middleware is typically used to transform the output from the LIMS system into [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) formatted data. The test report data is then transferred to the Requesting HCP using [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh).
 9. The test report is received by the Requesting HCP and added (filed) into the patient’s record. In most cases an Electronic Patient Record System (EPRS) will be used, for example a GP practice system.
 10. The patient is informed of the test results. If required, the Requesting HCP takes further action e.g. to initiate a course of treatment, request further tests or refer the patient to a specialist.
 
@@ -36,17 +36,22 @@ There are many possible variations and exceptions to this basic process, includi
 * While a test report is still in progress, a Requesting HCP may ask for further tests to be performed, in addition to those that were originally requested. These are known as **add-on tests**. 
 * The laboratory may issue one or more **interim reports** before sending a final report.
 
----
-
-### User Stories
-
+### User Stories, Personas and Journey Maps
 A set of detailed **User Stories** has been developed to provide further business context for this specification. These can be found on the [Pathology Standards and Implementation work space](https://nhsengland.kahootz.com/PathologyandDiagnostics/view?objectID=37638416), together with other related artefacts such as **Personas** and **Journey Maps**.
 
----
-
-### Current Primary Care Pathology Data Flows and Data Standards
+### Current GP Practice Pathology Data Flows
+The following diagram illustrates the types of systems and associated data flows that are currently used to support GP practice requested pathology tests:
 
 {{render:path-diagram-primary-care-as-is}}
 
+Each of the numbered steps in the diagram is described below:
 
-
+1. A Health Care Professional in the GP practice determines that a patient requires a pathology test. This is usually done by selecting the relevant patient in the GP practice EPR system and clicking through to an order comms system web portal. Order comms systems are usually hosted by pathology laboratories.
+2. A test request is sent from the order comms system to the relevant LIMS. Test requests are usually sent as supplier specific HL7v2.x formatted messages, with local codes used to identify the requested test(s).
+3.	Following completion of the requested test(s), a test report is created and output from the LIMS. In common with test requests, test reports are usually defined as supplier specific HL7v2.x formatted messages, with local test codes. 
+4.	Most laboratories use middleware systems to support the flow of test reports to GP practice EPR systems. These systems can form part of another system (such as  an order comms system) or can exist as separate, standalone systems. They perform one or more of the following functions:
+    * transform the output from LIMS to [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) formatted messages
+    * map local laboratory codes to equivalent [Pathology Bounded Code List](https://isd.digital.nhs.uk/trud3/user/guest/group/0/pack/38) (PBCL) Read codes
+    * support the routing of messages, via MESH
+5.	Using [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh), the test report is sent as a PMIP EDIFACT (NHS003) formatted message to the requesting GP practice EPR system.
+6.	The message is parsed by the GP practice system and the test report details are added to the patient’s EPR record. As part of this processing, any PBCL Read codes contained within the test report message are mapped to equivalent SNOMED CT PBCL concepts.

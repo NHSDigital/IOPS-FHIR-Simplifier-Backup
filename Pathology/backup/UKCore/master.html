@@ -68,9 +68,17 @@
         </header>
 
 
+        <!-- Implementation guide content -->
+        <div role="main" class="content container">
 
+            <!-- Header to be displayed on each page -->
+            <!--Comment out for publication, start-->
+            <div id="development-notice" markdown="span" class="alert alert-danger" role="alert">
+                <h4><b>IMPORTANT</b></h4>
+                    This guide has been deprecated and replaced with the <a href="https://simplifier.net/guide/pathology-fhir-implementation-guide?version=0.1" target="_blank">Pathology FHIR Implementation Guide</a>
+            </div>
+            <!--Comment out for publication, end-->
 
-        <div class="content container">
             {{ page-with-children }}
         </div>
 

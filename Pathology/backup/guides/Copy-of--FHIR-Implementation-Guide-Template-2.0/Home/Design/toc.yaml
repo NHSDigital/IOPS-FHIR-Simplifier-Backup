@@ -1,9 +1,9 @@
 - name: Background
   filename: Background.page.md
 - name: Design Overview
-  filename: Design-Overview
+  filename: Design-Overview.page.md
 - name: Data Mapping
-  filename: DataMapping.page.md
+  filename: Data-Mapping.page.md
 - name: Transport
   filename: Transport.page.md
 - name: Error Handling
