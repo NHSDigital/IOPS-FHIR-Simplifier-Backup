@@ -25,7 +25,7 @@ Must be set to "community" as this includes requests for medications to be admin
       {
         "coding": [
           {
-            "system": "http://terminology.hl7.or/CodeSystem/medicationrequest-category",
+            "system": "http://fhir.hl7.org/CodeSystem/medicationrequest-category",
             "code": "community",
             "display": "Community"
           }

@@ -25,7 +25,7 @@ In this specific case, once the prescription is created and been sent to EPS to 
 
 When applicable it must contain the EPS prescription ID and reference the code `sent-to-eps`.
 
-The set of prescription ordering parameters can be found [here.](https://simplifier.net/gp-connect---direct-care-apis---r4/gpconnect-prescriptionorderingparameters)
+The set of prescription ordering parameters can be found [here.](https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Terminology/All-CodeSystems/CodeSystem-England-PFSPrescriptionOrderingParameter?version=1.1.0)
 
 ### Example
 ``` json
@@ -34,7 +34,7 @@ The set of prescription ordering parameters can be found [here.](https://simplif
         "type": {
             "coding": [
                 {
-                    "system": "https://fhir.hl7.org.uk/GPConnect-PrescriptionOrderingParameters",
+                    "system": "https://fhir.nhs.uk/England/CodeSystem/England-PFSPrescriptionOrderingParameter",
                     "code": "sent-to-eps",
                     "display": "Sent to EPS"
                 }
