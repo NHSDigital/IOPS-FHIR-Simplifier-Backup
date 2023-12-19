@@ -32,10 +32,10 @@ html, body {
  body header .hl7-logo {
      text-align: right;
      float: left;
+     margin-top:15px;
 }
  body header .guide-title {
-    font-size: 18px;
-    margin-top: 18px;
+    margin-top: 15px;
 }
  body .content {
      overflow: hidden;
@@ -515,8 +515,8 @@ table.codes thead tr:first-child th.orderable button:hover .sort-icon {
 
 /* this part adds an icon after external links, using FontAwesome*/
 a.external:after {
-     font-family: 'FontAwesome';
+     font-family: 'Font Awesome 5 Free';
    font-weight: 900;
-   content: "\f08e";
+   content: "\f35d";
     padding-left: 5px;
 }
