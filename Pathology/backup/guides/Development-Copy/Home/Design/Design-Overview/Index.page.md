@@ -1,4 +1,0 @@
----
-topic: DesignOverview
----
-## Design Overview

@@ -96,8 +96,8 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..1</td>
             <td>Required</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>The kind of material that forms the specimen. Where populated, the associated code and description <b>SHALL</b> be defined using SNOMED CT as follows:<br><br><code>(&lt;105590001 :Substance (substance):</code> in which case <code>Specimen.collection.method</code> and <code>Specimen.collection.bodySite</code> should also be populated OR<br><br>
-<code>&lt;49755003 :Morphologically abnormal structure (morphologic abnormality):</code> OR<br><br><code>&lt;260787004 :Physical object (physical object))</code></td>
+            <td>The kind of material that forms the specimen. Where populated, the associated code and description <b>SHALL</b> be defined using SNOMED CT as follows:<br><br>(&lt;105590001 :Substance (substance): in which case <code>Specimen.collection.method</code> and <code>Specimen.collection.bodySite</code> <b>SHOULD</b> also be populated OR<br><br>
+&lt;49755003 :Morphologically abnormal structure (morphologic abnormality):</code> OR<br><br>&lt;260787004 :Physical object (physical object))</td>
         </tr>
         <tr>
             <td>subject</td>

@@ -21,3 +21,4 @@ The following is a list of the profiles that are used to construct a <code>Bundl
 The following diagram illustrates the relationships between each of the profiles that form the <code>Bundle</code>. The arrows represent the direction of the references between the profiles.
 
 {{render:path-diagram-R4-report-bundle}}
+

@@ -10,7 +10,7 @@ An individual test result, defined as an <code>Observation</code>. The test resu
 
 <code>Observation.hasMember</code> is only used for <code>Observations</code> that represent test groups and is therefore out of scope for test result <code>Observations</code>. 
 
-Refer to the {{pagelink:R4ObservationTestGroup}} profile definition and the design guidance for {{pagelink:DesignRelatedTests}} for further information.
+Refer to the {{pagelink:R4ObservationTestGroup}} profile definition and the {{pagelink:DesignOverview}} section for further information.
 
 ### Related Links
 * R4 Resource: [Observation](https://hl7.org/fhir/R4/observation.html)
@@ -103,9 +103,10 @@ An example of how each supported data element may be populated is provided in {{
             <td>1..1</td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>The clinical code and name of the test that was performed, for example: <code>1107451000000100</code> <code>Glucose substance concentration in serum</code><br><br>This <b>SHOULD</b> be populated with a SNOMED CT observable entity code and description, selected from the following:<br><br>
+            <td>The clinical code and name of the test that was performed, for example: <code>1107451000000100</code> <code>Glucose substance concentration in serum</code><br><br>This <b>SHALL</b> be populated using one of the following:<br><br>
                 <ul>
-                    <li>memberOf 1853551000000106 | Palm (pathology and laboratory medicine) observable entity simple reference set</li>
+                    <li>memberOf 1853551000000106 | PaLM (Pathology and Laboratory Medicine) observable entity simple reference set, OR</li>
+					<li>memberOf 999002881000000100 | PBCL (Pathology Bounded Code List) observables simple reference set</li>
                 </ul>
             </td>
         </tr>
@@ -147,7 +148,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..1</td>
             <td>Required</td>
             <td>Multiple</td>
-            <td>The test result value.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice">choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>valueQuantity</code>.<br><br>If the result value is a numeric quantity, a standard <a href="https://ucum.org/">UCUM</a> unit <b>SHOULD</b> be used.</td>
+            <td>The test result value.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice">choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>valueQuantity</code>.<br><br>If the result value is a numeric quantity, a standard <a href="https://ucum.org/">UCUM</a> unit <b>SHOULD</b> be used. <br><br>If the result value is coded, a suitable SNOMED CT concept <b>SHOULD</b> be used, for example: <code>10828004</code> <code>Positive</code .</td>
         </tr>
         <tr>
             <td>dataAbsentReason</td>

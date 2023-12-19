@@ -1,6 +1,4 @@
 ## <b>Important</b>
-
-  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS Digital</div>
   
 This specification is currently defined as in "Discovery" and as such is provided for consultation and discussion. This project is being developed using an agile approach so iterative updates to content will be added on a regular basis. It is anticipated that the message specification and implementation guidance will be updated further following First of Type (FoT) implementation. 
 

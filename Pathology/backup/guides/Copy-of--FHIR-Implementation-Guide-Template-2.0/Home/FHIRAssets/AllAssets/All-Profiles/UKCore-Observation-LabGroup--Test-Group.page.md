@@ -10,7 +10,7 @@ A set of related tests, for example a Full Blood Count. Test groups are often re
 
 <code>Observation.value[x]</code> is not present as the test group itself does not carry a test result. 
 
-Refer to the {{pagelink:R4ObservationTestResult}} profile definition and the design guidance for {{pagelink:DesignRelatedTests}} for further information.
+Refer to the {{pagelink:R4ObservationTestResult}} profile definition and the {{pagelink:DesignOverview}} section for further information.
 
 ### Related Links
 * R4 Resource: [Observation](https://hl7.org/fhir/R4/observation.html)
@@ -97,15 +97,17 @@ An example of how each supported data element may be populated is provided in {{
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
             <td>A code that classifies the general type of test group. This <b>SHALL</b> be populated with a fixed value of category code <code>laboratory</code> for <code>Laboratory</code>.<br><br>If required, additional category codes <b>MAY</b> also be included.</td>
         </tr>
-        <tr>
+	    <tr>
             <td>code</td>
             <td>1..1</td>
             <td>1..1</td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>The clinical code and name of the test group, for example: <code>26604007</code> <code>Full blood count</code><br><br>This <b>SHOULD</b> be populated with a SNOMED CT procedure code and description, selected from the following:<br><br>
+            <td>The clinical code and name of the test group, for example: <code>26604007</code> <code>Full blood count</code><br><br>This <b>SHALL</b> be populated using one of the following:<br><br>
                 <ul>
-                    <li>memberOf 1853561000000109 | Palm (pathology and laboratory medicine) procedure simple reference set</li>
+                    <li>memberOf 1853561000000109 | PaLM (Pathology and Laboratory Medicine) procedure simple reference set, OR</li>
+					<li>if a Procedure concept from the above reference set cannot be identified, use a SNOMED CT procedure code < 386053000 | Evaluation procedure (procedure), OR</li>
+					<li>if the two methods described above fail to identify a suitable code, then it is acceptable to use a local code representing the test group</li>
                 </ul>
             </td>
         </tr>
@@ -163,7 +165,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..*</td>
             <td>Required</td>
             <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference(s) to the <code>Observation(s)</code> that make up the test group. This may contain references to single test results, test groups (which then reference further results) or a mixture of both.<br><br>Multiple levels of test group <code>Observations</code> and test result <code>Observations</code> may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MCS) reports. Refer to the design guidance for {{pagelink:DesignRelatedTests}} for further information.</td>
+            <td>Reference(s) to the <code>Observation(s)</code> that make up the test group. This may contain references to single test results, test groups (which then reference further results) or a mixture of both.<br><br>Multiple levels of test group <code>Observations</code> and test result <code>Observations</code> may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MCS) reports. Refer to the {{pagelink:DesignOverview}} section for further information.</td>
         </tr>
         <tr>
             <td>basedOn</td>
