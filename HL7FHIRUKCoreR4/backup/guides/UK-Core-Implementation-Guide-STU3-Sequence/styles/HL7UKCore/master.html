@@ -485,7 +485,8 @@
                 if (window.matchMedia("(min-width: 992px)").matches){
                     //add classes for profiles
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(3).addClass("profile-item");
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(25,31).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(25,30).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(31,32).addClass("obs-derived");
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(33,34).addClass("obs-derived");
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(35,44).addClass("obsvital-derived");
 
@@ -503,7 +504,8 @@
                     
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(24,25)); //Obs
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append('<li id="dropdownObsParent" class="submenu-subparent"><a href="javascript:void(0)" class="dropdown-toggle"><span class="caret"></span>&nbsp;&nbsp;Derived Profiles of UKCore-Observation</a><ul class="submenu-sublist subhidden"></ul></li>'); //Obs Parent
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(31,33)); //Obs Lab
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(30,31)); //Obs Group Lab
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(32,33)); //Obs Lab
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(34,35)); //Obs Vital
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append('<li id="dropdownObsVitalParent" class="submenu-subparent"><a href="javascript:void(0)" class="dropdown-toggle"><span class="caret"></span>&nbsp;Derived Profiles of UKCore-Observation-VitalSigns</a><ul class="submenu-sublist subhidden"></ul></li>'); //ObsVital Parent
 
@@ -1462,7 +1464,7 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                         if (divToFind != undefined && divToFind.length > 0){
                             var pinPanel = $(this).parent().parent().find('td.details');
                             if (pinPanel != undefined && pinPanel.length > 0){
-                                $('<p><a href="#'+elementName+'">View UK Core Guidance</a></p>').insertAfter(pinPanel.find("div:not([class])"))
+                                $('<p><a href="#'+elementName+'">View UK Core Guidance</a></p>').insertAfter(pinPanel.find("div:not([class]) pre"))
                             }
                         }
                     });
