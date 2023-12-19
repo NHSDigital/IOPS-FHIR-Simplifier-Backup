@@ -10,5 +10,7 @@
   filename: subject.page.md
 - name: value[x]
   filename: value-x.page.md
+- name: referenceRange
+  filename: referenceRange.page.md
 - name: hasMember
   filename: hasMember.page.md
