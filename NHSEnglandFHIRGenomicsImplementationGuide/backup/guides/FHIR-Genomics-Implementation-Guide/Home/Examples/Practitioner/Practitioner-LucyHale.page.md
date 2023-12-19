@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a practitioner resource. NOTE: it is expected that all practitioner details will normally reside in the SPINE directory services (SDS). Pratitioner resources should only be included in messages by exception.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

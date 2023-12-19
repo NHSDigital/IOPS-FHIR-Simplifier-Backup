@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+      "value": "task-statusReason-genomics"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "TaskStatusReasonGenomics",
+  "title": "Task StatusReason Genomics",
+  "status": "draft",
+  "date": "2023-12-06",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom":  [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Status reasons for Tasks in genomics",
+  "copyright": "Copyright © 2023 NHS England",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "InvalidRequest",
+      "display": "Invalid Request"
+    },
+    {
+      "code": "PipelineActivityFailure",
+      "display": "Pipeline Activity Failure"
+    },
+    {
+      "code": "TaskTimeExceeded",
+      "display": "Task Time Exceeded"
+    },
+    {
+      "code": "UnableToInterpret",
+      "display": "Unable To Interpret"
+    },
+    {
+      "code": "SpecimenQualityNotOK",
+      "display": "Specimen Quality Not OK"
+    }
+  ]
+}

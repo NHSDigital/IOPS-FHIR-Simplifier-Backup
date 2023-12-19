@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a RelatedPerson resource linking a Proband to a Consultand Patient resource, as in the case of Duo/Trio testing. Demographic details of the related person should be stored in the associated Patient resource (or attached Observations etc.)
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a PractitionerRole resource linking Practitioner and Organization identifiers and indicating preferred reporting address.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

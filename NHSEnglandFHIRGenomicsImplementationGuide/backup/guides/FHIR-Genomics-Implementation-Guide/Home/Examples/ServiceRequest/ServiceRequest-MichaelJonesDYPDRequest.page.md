@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+**For Information Only**. Example of a ServiceRequest with additional optional contextual information attached. It is not expected that requesters would send additional information such as care plan links etc. to the central service in the short term.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

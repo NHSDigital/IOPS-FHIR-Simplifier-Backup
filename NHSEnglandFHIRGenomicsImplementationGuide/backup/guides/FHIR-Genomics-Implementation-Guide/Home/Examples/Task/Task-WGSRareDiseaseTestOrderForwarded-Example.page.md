@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a Task forwarded to GEL. NOTE: Task codes and businessStatuses are pending further business analysis.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

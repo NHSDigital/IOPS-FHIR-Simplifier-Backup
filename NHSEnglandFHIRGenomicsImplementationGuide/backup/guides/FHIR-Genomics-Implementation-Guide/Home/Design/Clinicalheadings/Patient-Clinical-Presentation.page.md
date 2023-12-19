@@ -13,7 +13,7 @@ Mapped to Condition and Observation resources linked to the patient
 |--|--|
 |Further clinical information|Linked Condition/Observation resources|Linked PRB/OBR segments|Clinical information which has not been captured elsewhere.|
 |Further non clinical information.|ServiceRequest.note|NTE segments in OML message|Non-clinical information which has not been captured elsewhere.|
-|Genomic ethnicity|Observation.valueString(code=723621000000103)|OBX-5|Patient's ethnicity where 'Patient - Ethnicity field' doesn't provide an adequate description. E.g Ashkenazi Jewish|
+|Genomic ethnicity|Observation.valueString( code=723621000000103 )|OBX-5|Patient's ethnicity where 'Patient - Ethnicity field' doesn't provide an adequate description. E.g Ashkenazi Jewish|
 |Tumour sites - Body image diagram **TBC**|Media **TBC**|N/A - not in scope for HL7v2|Image attachment of body with tumour sites highlighted.|
 |Has multiple primary tumours **TBC**|Inferred through multiple Condition.bodySite entries|Multiple PRB segments (bodySite for condition not in scope for HL7v2)|Does the patient have multiple tumours.|
 |Count of tumours|Inferred through number of Condition/Condition.bodysite entries for tumours|Multiple PRB segments (bodySite for condition not in scope for HL7v2)|How many tumours the patient has.|
@@ -23,14 +23,14 @@ Mapped to Condition and Observation resources linked to the patient
 |Disease status|Condition.clinicalStatus|PRB-14|If the patient is affected, unaffected, or it is unknown.|
 |Phenotypic details (Many)|Condition.code with HPO system|Additional PRB segments (PRB-3)|The HPO (or alternative ontology as appropriate) term names for the observable disease traits.|
 |Date of disease onset|Condition.onsetDateTime|PRB-16|The date when a change in patients health was first noted in line with suspected diagnosis.|
-|Pedigree details/diagram|Condition.evidence.detail(reference(FamilyMemberHistory,Media))|N/A not in scope for HL7v2, could be added as additional PRB segments related to relatives|The patient's pedigree details/diagram (inc family history of cancer).|
-|Disease penetrance|Inferred through Condition.evidence.detail(reference(FamilyMemberHistory.condition)) elements for each individual |PRB segments related to relatives, though PRB-12 could be used|Confirms if all individuals with a disease show clinical symptoms or if there are carriers who do not.|
+|Pedigree details/diagram|Condition.evidence.detail( reference( FamilyMemberHistory, Media ) )|N/A not in scope for HL7v2, could be added as additional PRB segments related to relatives|The patient's pedigree details/diagram (inc family history of cancer).|
+|Disease penetrance|Inferred through Condition.evidence.detail( reference( FamilyMemberHistory.condition ) ) elements for each individual |PRB segments related to relatives, though PRB-12 could be used|Confirms if all individuals with a disease show clinical symptoms or if there are carriers who do not.|
 |Solid tumour type|Specific Condition.code e.g. child concepts of 128462008 for metastatic tumours|PRB-3|The patient's solid tumour type.|
 |Liquid tumour type|Specific Condition.code, e.g. 91861009 for AML|PRB-3|The patient's liquid tumour type.|
 |Laterality of hearing loss|Specific Condition.code under Hearing loss e.g. 473424007|PRB-3|Laterality of the hearing loss i.e. bilateral or unilateral.|
 |Fetal maternal screening genotype|Presence of Condition.code 62621000119107 for Fetal hemoglobinopathy (disorder)|PRB-3|Maternal screening genotype for haemoglobinopathy testing.|
 |Is patient on TKI therapy|Presence of in-progress Procedure with code 1237262009 for Receptor tyrosine-protein kinase erbB-2 inhibitor therapy (procedure)|OBR-44|If the patient is on tyrosine kinase inhibitor therapy.|
-|Is patient in treatment free remission|Condition.clinicalStatus=remission|PRB-14|If the patient in treatment free remission.|
+|Is patient in treatment free remission|Condition.clinicalStatus = remission|PRB-14|If the patient in treatment free remission.|
 |Legal considerations|**TBC** Needs more specificity to properly model|**TBC**|Legal considerations for a given request.|
 |Symptoms at onset|Condition.evidence.code|OBX segments attached to PRB|The patient's symptoms at onset.|
 |ISTH BAT score|Observation.valueQuantity (note: no SNOMED code currently exists for the ISTH-BAT tool so this will need to be coded as text within Observation.code)|OBX-5|Bleeding score - high bleeding score is associated with the presence of an inherited bleeding disorder|
@@ -55,8 +55,8 @@ Mapped to Condition and Observation resources linked to the patient
 |Current therapy: Insulin subtype - Oral hypoglycaemic agents (OHA) subtype units per dose|MedicationStatement.dosage.doseAndRate.doseQuantity with appropriate medicationCodeableConcept for Insulin OHA (codes under 420100005)|RXA-6|Current therapy: Insulin subtype - Oral hypoglycaemic agents (OHA) subtype units per dose|
 |Current therapy: Insulin subtype - Oral hypoglycaemic agents (OHA) subtype frequency|MedicationStatement.dosage.timing.repeat with appropriate medicationCodeableConcept for Insulin OHA (codes under 420100005)|RXA-12|Current therapy: Insulin subtype - Oral hypoglycemic agents (OHA) subtype frequency|
 |Neonatal hypoglycemia treatment details|Procedure/MedicationStatement with appropriate code for treatment and reasonCode=52767006|OBR/RXA segments|Newborn hypoglycemia treatment details.|
-|Neonatal hypoglycemia treatment start date|Procedure.performedPeriod.start/MedicationStatement.effectivePeriod.start|OBR-7|Newborn hypoglycemia treatment start date.|
-|Neonatal hypoglycemia treatment end date|Procedure.performedPeriod.end/MedicationStatement.effectivePeriod.end|OBR-8|Newborn hypoglycemia treatment end date.|
+|Neonatal hypoglycemia treatment start date|Procedure.performedPeriod.start / MedicationStatement.effectivePeriod.start|OBR-7|Newborn hypoglycemia treatment start date.|
+|Neonatal hypoglycemia treatment end date|Procedure.performedPeriod.end / MedicationStatement.effectivePeriod.end|OBR-8|Newborn hypoglycemia treatment end date.|
 |Birth weight|Observation with code 364589006|OBX-5|Weight at birth in grams.|
 |Diabetic complications|Observation/Condition resources referencing original Diabetes Condition|OBX/PRB segments|Diabetic complications|
 |Insulin dose at presentation|MedicationStatement.dosage.doseAndRate.doseQuantity with appropriate medicationCodeableConcept for Insulin and effectivePeriod overlapping Encounter date|RXA-6|Insulin dose at presentation (U/kg/day)|

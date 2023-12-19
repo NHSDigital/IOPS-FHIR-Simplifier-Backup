@@ -2,6 +2,10 @@
   filename: Index.page.md
 - name: Genomic-Business-Status
   filename: Genomic-Business-Status.page.md
+- name: Genomic-Task-Code
+  filename: Genomic-Task-Code.page.md
+- name: Genomic-Task-StatusReason
+  filename: Genomic-Task-StatusReason.page.md
 - name: Genomic-Coverage
   filename: Genomic-Coverage.page.md
 - name: Genomic-Message-Events

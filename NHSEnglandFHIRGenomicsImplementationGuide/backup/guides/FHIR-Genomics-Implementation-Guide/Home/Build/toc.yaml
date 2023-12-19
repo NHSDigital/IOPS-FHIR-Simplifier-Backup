@@ -10,7 +10,7 @@
   filename: APIusage.page.md
 - name: Error handling
   filename: Errorhandling.page.md
-- name: Query types
-  filename: Querytypes.page.md
+- name: Supported CRUD capability
+  filename: Supported-CRUD-capability.page.md
 - name: Operation responses
   filename: Operationresponses.page.md

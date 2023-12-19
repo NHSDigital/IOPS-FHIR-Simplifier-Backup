@@ -16,5 +16,3 @@ order by
 	name
 ```
 -->
-
-{{index:current}}

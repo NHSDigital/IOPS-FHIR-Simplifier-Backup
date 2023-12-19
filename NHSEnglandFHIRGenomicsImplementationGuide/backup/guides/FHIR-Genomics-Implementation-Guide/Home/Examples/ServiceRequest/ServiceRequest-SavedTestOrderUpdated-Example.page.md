@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a ServiceRequest which has been modified. After modification, the ServiceRequest SHALL include a meta.lastUpdated element and a relevantHitory element referencing the provenance resource detailing the change.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

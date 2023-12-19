@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+AuditEvent recording an update to a ServiceRequest resource by a Clinical Scientist.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

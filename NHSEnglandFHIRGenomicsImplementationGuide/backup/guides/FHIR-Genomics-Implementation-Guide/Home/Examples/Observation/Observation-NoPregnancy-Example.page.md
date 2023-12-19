@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of an observation indicating absence of a pregnancy.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

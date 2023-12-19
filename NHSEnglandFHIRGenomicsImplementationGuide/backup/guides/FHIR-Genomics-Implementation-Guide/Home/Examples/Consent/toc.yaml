@@ -1,9 +1,9 @@
 - name: Index
   filename: Index.page.md
-- name: Consent-MichaelJonesConsent
-  filename: Consent-MichaelJonesConsent.page.md
-- name: Consent-MichaelJonesConsent-Minimal
-  filename: Consent-MichaelJonesConsent-Minimal.page.md
+#- name: Consent-MichaelJonesConsent
+#  filename: Consent-MichaelJonesConsent.page.md
+#- name: Consent-MichaelJonesConsent-Minimal
+#  filename: Consent-MichaelJonesConsent-Minimal.page.md
 - name: Consent-RoDAvailable-Example
   filename: Consent-RoDAvailable-Example.page.md
 - name: Consent-RoDToFollow-Example

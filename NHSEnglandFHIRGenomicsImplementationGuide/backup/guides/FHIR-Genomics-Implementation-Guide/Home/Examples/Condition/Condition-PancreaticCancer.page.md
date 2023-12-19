@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a Condition resource, confirmed pancreatic cancer.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

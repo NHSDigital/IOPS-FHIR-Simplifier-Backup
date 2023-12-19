@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+**For Information Only**. Example of a MessageHeader for a genomic test request. The current view of the Genomics Unit within NHS England is that transaction Bundles will be used instead of Messages. Please see {{pagelink:Bundle-WGSTestOrderForm-Example}} and {{pagelink:Bundle-NonWGSTestOrderForm-Example}} for examples of these.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

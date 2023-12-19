@@ -1,143 +1,83 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "959a0a2f-73e3-4c6e-8e99-babb6b3a4296",
-	"url": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-	"identifier": [
-		{
-			"system": "https://fhir.nhs.uk/identifier/CodeSystem",
-			"value": "business-status-genomics"
-		}
-	],
-	"version": "0.1.0",
-	"name": "BusinessStatusGenomics",
-	"title": "Business Status Genomics",
-	"status": "draft",
-	"date": "2022-11-25",
-	"publisher": "NHS Digital",
-	"contact": [
-		{
-			"name": "NHS Digital",
-			"telecom":  [
-				{
-					"system": "email",
-					"value": "interoperabilityteam@nhs.net",
-					"use": "work"
-				}
-			]
-		}
-	],
-	"description": "Business status for test order Tasks in genomics",
-	"copyright": "Copyright © 2022 NHS Digital",
-	"caseSensitive": true,
-	"content": "complete",
-	"concept": [
-		{
-			"code": "InvalidRequest",
-			"display": "Invalid Request"
-		},
-		{
-			"code": "UnsatisfiedCondition",
-			"display": "Unsatisfied Condition"
-		},
-		{
-			"code": "TimeframeExceeded",
-			"display": "Timeframe Exceeded"
-		},
-		{
-			"code": "AwaitingSpecimen",
-			"display": "Awaiting Specimen"
-		},
-		{
-			"code": "AwaitingRoDAndSpecimen",
-			"display": "Awaiting Record of Discussion and Specimen"
-		},
-		{
-			"code": "SpecimenReceived",
-			"display": "Specimen Received"
-		},
-		{
-			"code": "SpecimenQualityNotOk",
-			"display": "Specimen Quality Not OK"
-		},
-		{
-			"code": "SpecimenProcessingInProgress",
-			"display": "Specimen Processing In Progress"
-		},
-		{
-			"code": "SpecimenProcessed",
-			"display": "Specimen Processed"
-		},
-		{
-			"code": "RemoteProcessingRequired",
-			"display": "Remote Processing Required"
-		},
-		{
-			"code": "SpecimenProcessingUnsuccessful",
-			"display": "Specimen Processing Unsuccessful"
-		},
-		{
-			"code": "SequencingCompleted",
-			"display": "Sequencing Completed"
-		},
-		{
-			"code": "RepeatSequencing",
-			"display": "Repeat Sequencing"
-		},
-		{
-			"code": "AlignSequencing",
-			"display": "Align Sequencing"
-		},
-		{
-			"code": "GeneticDataProcessingInProgress",
-			"display": "Genetic Data Processing In Progress"
-		},
-		{
-			"code": "RemoteGeneticDataProcessingRequired",
-			"display": "Remote Genetic Data Processing Required"
-		},
-		{
-			"code": "VariantsIdentified",
-			"display": "Variants Identified"
-		},
-		{
-			"code": "InterpretationInProgress",
-			"display": "Interpretation In Progress"
-		},
-		{
-			"code": "RemoteInterpretationRequired",
-			"display": "Remote Interpretation Required"
-		},
-		{
-			"code": "InterpretationCompleted",
-			"display": "Interpretation Completed"
-		},
-		{
-			"code": "InterpretationUnsuccessful",
-			"display": "Interpretation Unsuccessful"
-		},
-		{
-			"code": "FurtherClinicalDetailsRequired",
-			"display": "Further Clinical Details Required"
-		},
-		{
-			"code": "FurtherClinicalDetailsProvided",
-			"display": "Further Clinical Details Provided"
-		},
-		{
-			"code": "ReflexTestRequired",
-			"display": "Reflex Test Required"
-		},
-		{
-			"code": "ReflexTestComplete",
-			"display": "Reflex Test Complete"
-		},
-		{
-			"code": "DraftingReport",
-			"display": "Drafting Report"
-		},
-		{
-			"code": "ReportCompleted",
-			"display": "ReportCompleted"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "959a0a2f-73e3-4c6e-8e99-babb6b3a4296",
+  "url": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+      "value": "business-status-genomics"
+    }
+  ],
+  "version": "0.2.0",
+  "name": "BusinessStatusGenomics",
+  "title": "Business Status Genomics",
+  "status": "draft",
+  "date": "2022-11-25",
+  "publisher": "NHS Digital",
+  "contact": [
+    {
+      "name": "NHS Digital",
+      "telecom":  [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Business status for test order Tasks in genomics",
+  "copyright": "Copyright © 2022 NHS Digital",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "AwaitingSpecimen",
+      "display": "Awaiting Specimen"
+    },
+    {
+      "code": "AwaitingRoDAndSpecimen",
+      "display": "Awaiting Record of Discussion and Specimen"
+    },
+    {
+      "code": "SpecimenReceived",
+      "display": "Specimen Received"
+    },
+    {
+      "code": "RemoteProcessingRequired",
+      "display": "Remote Processing Required"
+    },
+    {
+      "code": "AlignSequencing",
+      "display": "Align Sequencing"
+    },
+    {
+      "code": "RemoteGeneticDataProcessingRequired",
+      "display": "Remote Genetic Data Processing Required"
+    },
+    {
+      "code": "VariantsIdentified",
+      "display": "Variants Identified"
+    },
+    {
+      "code": "RemoteInterpretationRequired",
+      "display": "Remote Interpretation Required"
+    },
+    {
+      "code": "FurtherClinicalDetailsRequired",
+      "display": "Further Clinical Details Required"
+    },
+    {
+      "code": "FurtherClinicalDetailsProvided",
+      "display": "Further Clinical Details Provided"
+    },
+    {
+      "code": "ReflexTestRequired",
+      "display": "Reflex Test Required"
+    },
+    {
+      "code": "ReflexTestComplete",
+      "display": "Reflex Test Complete"
+    }
+  ]
 }

@@ -1,61 +1,61 @@
 {
-	"resourceType": "Task",
-	"id": "Task-NonWGSRareDiseaseTestOrderHold-Example",
-	"status": "on-hold",
-	"statusReason": {
-		"coding": [
-			{
-				"system": "https://fhir.nhs.uk/CodeSystem/task-status-reason-genomics", 
-				"code": "InsufficientSample", 
-				"display": "Insufficient Sample"
-			}
-		]
-	},
-	"businessStatus": { 
-		"coding": [
-			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
-				"code": "AwaitingSpecimen", 
-				"display": "Awaiting Specimen"
-			}
-		]
-	},
-	"intent": "order",
-	"priority": "routine",
-	"code": { 
-		"coding": [
-			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-				"code": "SampleManagement", 
-				"display": "Sample Management"
-			}
-		]
-	},
-	"focus": {
-		"reference": "ServiceRequest/ServiceRequest-SavedTestOrder-Example"
-	},
-	"for": {
-		"reference": "Patient/Patient-MeirLieberman-Example",
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "9449307873"
-		}
-	},
-	"authoredOn": "2023-08-05",
-	"lastModified": "2023-08-08",
-	"requester": {
-		"reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
-	},
-	"owner": {
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
-			"value": "69010"
-		},
-		"display": "Pathology Lab - ADDENBROOKE'S HOSPITAL LABORATORY"
-	},
-	"note": [
-		{
-			"text": "Please provide additional sample of X"
-		}
-	]
+  "resourceType": "Task",
+  "id": "Task-NonWGSRareDiseaseTestOrderHold-Example",
+  "status": "on-hold",
+  "statusReason": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics", 
+        "code": "TaskTimeExceeded", 
+        "display": "Task Time Exceeded"
+      }
+    ]
+  },
+  "businessStatus": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
+        "code": "AwaitingSpecimen", 
+        "display": "Awaiting Specimen"
+      }
+    ]
+  },
+  "intent": "order",
+  "priority": "routine",
+  "code": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
+        "code": "RequestSampleAlignment", 
+        "display": "Request & Sample Alignment"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-SavedTestOrder-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-MeirLieberman-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "authoredOn": "2023-08-05",
+  "lastModified": "2023-08-08",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "69010"
+    },
+    "display": "Pathology Lab - ADDENBROOKE'S HOSPITAL LABORATORY"
+  },
+  "note": [
+    {
+      "text": "Please provide additional sample of X"
+    }
+  ]
 }

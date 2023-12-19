@@ -1,30 +1,30 @@
 {
-	"resourceType": "Task",
-	"id": "Task-NonWGSRareDiseaseTestOrder-Example",
-	"status": "requested",
-	"intent": "order",
-	"priority": "routine",
-	"code": { 
-		"coding": [
-			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-				"code": "SampleManagement", 
-				"display": "Sample Management"
-			}
-		]
-	},
-	"focus": {
-		"reference": "ServiceRequest/ServiceRequest-SavedTestOrder-Example"
-	},
-	"for": {
-		"reference": "Patient/Patient-MeirLieberman-Example",
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "9449307873"
-		}
-	},
-	"authoredOn": "2023-08-05",
-	"requester": {
-		"reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
-	}
+  "resourceType": "Task",
+  "id": "Task-NonWGSRareDiseaseTestOrder-Example",
+  "status": "requested",
+  "intent": "order",
+  "priority": "routine",
+  "code": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
+        "code": "ProcessGenomicTestRequest", 
+        "display": "Process Genomic Test Request"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-SavedTestOrder-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-MeirLieberman-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "authoredOn": "2023-08-05",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
+  }
 }

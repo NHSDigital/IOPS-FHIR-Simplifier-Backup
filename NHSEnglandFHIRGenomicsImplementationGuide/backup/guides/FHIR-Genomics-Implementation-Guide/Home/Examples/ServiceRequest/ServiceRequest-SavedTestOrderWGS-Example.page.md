@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a ServiceRequest. After being saved on the central broker, the ServiceRequest is assigned a unique identifier.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

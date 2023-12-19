@@ -14,6 +14,8 @@ When describing genetic tests, different regions and professions sometimes use d
 |CG WG|HL7 Clinical Genomics Working Group, responsible for the development of the Genomic Reporting Implementation Guide|
 |CI/CITT|Clinical Indication (and Test ID/Target Gene), used within the Test Directory to uniquely identify test types|
 |CIS2|NHS Care Identity Service 2, formerly known as NHS Identity, is a new, secure authentication service used by health and care professionals in England to access national clinical information systems.|
+|Consultand|Patient's/samples included as part of a test request in order to aid interpretation of the Proband's test results e.g. in the case of familial testing.|
+|CPGC|Cellular Pathology Genomic Centres, specialist labs set up to streamline the process of preparing samples for genetic testing.|
 |DICOM|Digital Imaging and Communications in Medicine, the standard for the communication and management of medical imaging information and related data|
 |DLP|Data Landing Portal, allows data to be transferred securely between organisations through a centrally managed system|
 |DNA|Deoxyribonucleic acid, polymer composed of two polynucleotide chains that coil around each other to form a double helix|
@@ -54,6 +56,7 @@ When describing genetic tests, different regions and professions sometimes use d
 |NGIS|National Genomic Information System, system used by Genomics Labs, commissioned by NHS England from Genomics England Ltd. Genomics England is a processor for the provision of the NGIS, acting on the instructions of NHS England for the Trusts that provide lab services.|
 |NGTP|National Genomic Testing Process, process map developed by the NHS England Genomics Unit for defining the end-to-end genomic testing process|
 |NHS|Tha National Health Service, the public body responsible for healthcare provision within the UK|
+|Non-WGS|Non-Whole Genome Sequencing, laboratory technique in which particular genes/gene panels are tested for variants.|
 |NPEx|National Pathology Exchange, Labnostic exchange hub, connecting almost 200 diagnostic organisations worldwide.|
 |NRL|National Record Locator, service which allows users to find and access patient information shared by other health and social care organisations, to support the direct care of a patient.|
 |ODS|Organisation Data Service, manages and issues unique identification codes for NHS and affiliated organisations|
@@ -62,11 +65,13 @@ When describing genetic tests, different regions and professions sometimes use d
 |PDF|Portable Document Format, the expected format for unstructured diagnostic reports in the first phases of the Genomic Order Management programme|
 |PDS|Patient Demographics Service, the national electronic database of NHS patient demographic data, such as name, address, date of birth and NHS number, and associated API for querying and retrieving this information|
 |PLCM|Patient Level Contract Monitoring, to enable the interchange, in a uniform format, of monthly patient level contract monitoring data between commissioners and providers of healthcare.|
+|Proband|The primary beneficiary of the genomic test, who the test order is for.|
 |PRSB|Professional Records Standard Body, body responsible for setting records standards within the UK|
 |RBAC|Role-Based Access Control, an approach to restricting system access to authorized users|
 |READ|Coded thesaurus of clinical terms, superseded by SNOMED CT|
 |RESTful|Representational State Transfer, a software architecture that imposes conditions on how an API should work.|
 |RoD|Record of Discussion, form required to record consent discussion for use of WGS data/results in research|
+|Send-away|The process by which a test order is sent to another organization to perform part of the genomic testing, e.g. sample processing, interpretation etc. in order to fulfill the test order.|
 |SET|IHE Specimen Event Tracking, defining Sample event tracking procedures|
 |SNOMED CT|Systematized Nomenclature of Medicine - Clinical Terms, preferred ontology for coding clinical concepts in the UK, also referred to as SCT|
 |SPINE|Spine supports the IT infrastructure for health and social care in England, joining together over 44,000 healthcare IT systems in 26,000 organisations|
