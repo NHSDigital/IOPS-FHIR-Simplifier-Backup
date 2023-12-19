@@ -10,6 +10,8 @@ The Speciment resource is used to hold details of the supplied specimen.
 
 Reference - {{pagelink:Home/Design/Data-mapping.page.md}}
 
-<iframe src="https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/profile-ukcore-specimen?version=current" height="800px" width="100%"></iframe>
+<iframe src="https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/profile-ukcore-specimen?version=1.7.0" height="800px" width="100%"></iframe>
 
 
+
+<hr class="thickline">

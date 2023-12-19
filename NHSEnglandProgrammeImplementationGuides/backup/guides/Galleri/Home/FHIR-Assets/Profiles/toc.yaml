@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: UKCore-Bundle
   filename: UKCore-Bundle.page.md
 - name: UKCore-MessageHeader

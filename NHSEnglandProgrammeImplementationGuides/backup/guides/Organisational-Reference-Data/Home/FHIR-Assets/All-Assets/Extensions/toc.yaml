@@ -1,5 +1,5 @@
-- name: Extension-England-DateTime
-  filename: Extension-England-DateTime.page.md
+- name: Extension-England-TypedDateTime
+  filename: Extension-England-TypedDateTime.page.md
 - name: Extension-England-OrganisationRole
   filename: Extension-England-OrganisationRole.page.md
 - name: Extension-England-TypedPeriod

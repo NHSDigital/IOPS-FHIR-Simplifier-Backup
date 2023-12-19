@@ -6,4 +6,4 @@ Usage:
 <br>
 
 
-<iframe src="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedPeriod.page.md?version=current" height="800px" width="100%"></iframe>
+<iframe src="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedPeriod?version=1.1.0" height="800px" width="100%"></iframe>

@@ -1,7 +1,7 @@
 # {{page-title}}
 
 The profile is provided for implementation guidance:
-- it is not necessary to reference the profile in the Resource.meta. Reference: {{pagelink:Home/Examples/Example---An-active.md}}
+- it is not necessary to reference the profile in the Resource.meta. 
 
 
 

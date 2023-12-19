@@ -51,7 +51,7 @@
   </participatingOrganization>
   <code>
     <coding>
-      <system value="https://ord.nhs.uk/CodeSystem/relationship" />
+      <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRelationship" />
       <code value="RE4" />
       <display value="IS COMMISSIONED BY" />
     </coding>
