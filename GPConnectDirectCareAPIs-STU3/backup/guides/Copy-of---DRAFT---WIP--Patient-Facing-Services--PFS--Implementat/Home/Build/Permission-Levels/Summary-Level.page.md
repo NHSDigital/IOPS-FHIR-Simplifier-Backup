@@ -10,4 +10,4 @@ For example if the patient only has summary access, however the providing system
 
 At this access level, the only resources eligible to be surfaced by the request are: `Patient`, `Organization`, `Practitioner`, `PractitionerRole`, `Medication`, `MedicationStatement`, `MedicationRequest` and `AllergyIntolerance`.
 
-Any linked references MUST not be included in the response.
+Any linked references that are a resource not listed above MUST not be included in the response.

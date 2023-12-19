@@ -89,26 +89,12 @@ The following table outlines the valid combinations of SNOMED codes which can be
             <td colspan="9" class="nhsd-m-table__highlighted-items" />
         </tr>
         <tr>
-            <td>Average blood pressure</td>
-            <td>723232008</td>
-            <td>Average systolic blood pressure</td>
-            <td>314440001</td>
-            <td>Average diastolic blood pressure</td>
-            <td>314453003</td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
+            <td>24 hour blood pressure</td>
+            <td>314463006</td>
             <td>Average 24 hour systolic blood pressure</td>
             <td>314449000</td>
             <td>Average 24 hour diastolic blood pressure</td>
             <td>314462001</td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-            <td>Average day interval systolic blood pressure</td>
-            <td>314446007</td>
-            <td>Average day interval diastolic blood pressure</td>
-            <td>314461008</td>
         </tr>
         <tr>
             <td colspan="9" class="nhsd-m-table__highlighted-items" />

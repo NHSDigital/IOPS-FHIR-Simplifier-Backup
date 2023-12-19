@@ -353,10 +353,10 @@
               <code>
                 <coding>
                   <system value="http://snomed.info/sct" />
-                  <code value="723232008" />
-                  <display value="Average blood pressure" />
+                  <code value="314463006" />
+                  <display value="24 hour blood pressure" />
                 </coding>
-                <text value="Average blood pressure" />
+                <text value="24 hour blood pressure" />
               </code>
               <subject>
                 <reference value="urn:uuid:c33b855b-4824-4876-9509-ed34de2109b4" />
@@ -381,10 +381,10 @@
                 <code>
                   <coding>
                     <system value="http://snomed.info/sct" />
-                    <code value="314440001" />
-                    <display value="Average systolic blood pressure" />
+                    <code value="314449000" />
+                    <display value="Average 24 hour systolic blood pressure" />
                   </coding>
-                  <text value="Average systolic blood pressure" />
+                  <text value="Average 24 hour systolic blood pressure" />
                 </code>
                 <valueQuantity>
                   <value value="158" />
@@ -397,10 +397,10 @@
                 <code>
                   <coding>
                     <system value="http://snomed.info/sct" />
-                    <code value="314453003" />
-                    <display value="Average diastolic blood pressure" />
+                    <code value="314462001" />
+                    <display value="Average 24 hour diastolic blood pressure" />
                   </coding>
-                  <text value="Average diastolic blood pressure" />
+                  <text value="Average 24 hour diastolic blood pressure" />
                 </code>
                 <valueQuantity>
                   <value value="102" />
