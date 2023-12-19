@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a successful response to a Resource submission, it is expected a transaction will reult in multiple OperationOutcome resources (one for each resource submitted). Further details in responses are pending finalization of the NHS England acknowledgements framework and testing within the GMS broker alpha.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

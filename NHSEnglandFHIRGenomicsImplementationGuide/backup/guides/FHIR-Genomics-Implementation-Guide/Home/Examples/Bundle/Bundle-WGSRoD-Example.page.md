@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a consent resource with attached Record of Discussion form, as described in the Clinical Scenario: {{pagelink:WGS-Test-Request---Rare-Disease}}.
+ 
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

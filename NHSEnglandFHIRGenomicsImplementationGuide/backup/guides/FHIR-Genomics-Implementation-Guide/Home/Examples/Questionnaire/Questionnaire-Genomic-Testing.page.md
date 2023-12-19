@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+The Record of Discussion form represented as a FHIR questionnaire. If RoD forms are sent as structured resources, they should be based upon the example below.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

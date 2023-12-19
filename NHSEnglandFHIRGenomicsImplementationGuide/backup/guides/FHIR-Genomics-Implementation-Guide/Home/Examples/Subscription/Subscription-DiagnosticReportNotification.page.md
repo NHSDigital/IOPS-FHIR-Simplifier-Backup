@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a Subscription resource for setting up alerting when a DiagnosticReport is available for a particular ServiceRequest. The exact subscription/notification mechanism used by the central broker is pending testing in the GMS Alpha.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

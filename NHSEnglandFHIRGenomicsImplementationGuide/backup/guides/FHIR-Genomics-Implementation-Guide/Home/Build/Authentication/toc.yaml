@@ -8,3 +8,5 @@
   filename: Security.page.md
 - name: Integration with SPINE
   filename: IntegrationwithSPINE.page.md
+- name: Consent
+  filename: Consent.page.md

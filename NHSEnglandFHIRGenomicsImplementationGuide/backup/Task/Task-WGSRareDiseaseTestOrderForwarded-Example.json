@@ -1,47 +1,47 @@
 {
-	"resourceType": "Task",
-	"id": "Task-WGSRareDiseaseTestOrderForwarded-Example",
-	"status": "ready",
-	"businessStatus": { 
-		"coding": [
-			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
-				"code": "SpecimenReceived", 
-				"display": "Specimen Received"
-			}
-		]
-	},
-	"intent": "order",
-	"priority": "routine",
-	"code": { 
-		"coding": [
-			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-				"code": "SampleManagement", 
-				"display": "Sample Management"
-			}
-		]
-	},
-	"focus": {
-		"reference": "ServiceRequest/ServiceRequest-SavedTestOrder-Example"
-	},
-	"for": {
-		"reference": "Patient/Patient-LindsaySorrell-Example",
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "9449307946"
-		}
-	},
-	"authoredOn": "2023-08-08",
-	"lastModified": "2023-08-10",
-	"requester": {
-		"reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example"
-	},
-	"owner": {
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
-			"value": "8J834"
-		},
-		"display": "GENOMICS ENGLAND"
-	}
+  "resourceType": "Task",
+  "id": "Task-WGSRareDiseaseTestOrderForwarded-Example",
+  "status": "ready",
+  "businessStatus": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
+        "code": "SpecimenReceived", 
+        "display": "Specimen Received"
+      }
+    ]
+  },
+  "intent": "order",
+  "priority": "routine",
+  "code": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
+        "code": "SamplePreparation", 
+        "display": "Sample Preparation"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-SavedTestOrder-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-LindsaySorrell-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307946"
+    }
+  },
+  "authoredOn": "2023-08-08",
+  "lastModified": "2023-08-10",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "8J834"
+    },
+    "display": "GENOMICS ENGLAND"
+  }
 }

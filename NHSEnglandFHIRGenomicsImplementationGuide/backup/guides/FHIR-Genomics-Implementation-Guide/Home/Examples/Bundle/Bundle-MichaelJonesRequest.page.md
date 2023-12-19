@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+**For information only**. Early example for test requests if modelled using Messages. The current view of the Genomics Unit within NHS England is that transaction Bundles will be used instead. Please see {{pagelink:Bundle-WGSTestOrderForm-Example}} and {{pagelink:Bundle-NonWGSTestOrderForm-Example}} for examples of these.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

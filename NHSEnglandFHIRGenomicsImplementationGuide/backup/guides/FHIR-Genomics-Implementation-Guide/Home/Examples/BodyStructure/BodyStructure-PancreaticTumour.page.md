@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+BodyStructure recording the location of a Pancreatoblastoma, within the upper region of the Pancreas.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

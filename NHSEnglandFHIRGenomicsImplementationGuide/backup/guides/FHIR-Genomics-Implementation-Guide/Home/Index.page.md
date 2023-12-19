@@ -154,7 +154,7 @@ This section lists examples created to illustrate how to populate resources in c
             </div>
             <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
                 <article class="nhsd-m-card">
-                    <a href="https://simplifier.net/guide/pathology-fhir-implementation-guide?version=0.1" class="nhsd-a-box-link " aria-label="Read the NHS Digital BARS Guidance">
+                    <a href="https://simplifier.net/guide/pathology-fhir-implementation-guide?version=0.1" class="nhsd-a-box-link " aria-label="Read the NHS Digital Pathology Guidance">
                         <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
@@ -171,6 +171,38 @@ This section lists examples created to illustrate how to populate resources in c
                     </a>
                 </article>
             </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://hl7.org/fhir/uv/genomics-reporting/index.html" class="nhsd-a-box-link " aria-label="Read the HL7 Genomic Reporting Guidance">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">Genomic Reporting IG</h1>
+                                    <p class="nhsd-t-body-s">HL7 Clinical Genomics Working Group Genomic Reporting Implementation Guide STU2</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
         </div>
     </div>
+</div>
+
+---
+
+<h3 id="licence-heading">Licence</h3>
+
+<div markdown="span" class="alert alert-warning" role="alert"><h4 id="Licence"><i class="fas fa-gavel"></i> Licensing and Publisher</h4>
+<ul>
+<li>
+Copyright© 2023+ NHS England Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html.
+<li>
+Developed and authored by NHS England Interoperability Team.
+</ul>
 </div>

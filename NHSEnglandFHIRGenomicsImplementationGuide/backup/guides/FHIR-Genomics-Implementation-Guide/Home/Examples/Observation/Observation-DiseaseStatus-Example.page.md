@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of an Observation indicating the disease status of a patient. Coding of affected/unaffected status is currently under review.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

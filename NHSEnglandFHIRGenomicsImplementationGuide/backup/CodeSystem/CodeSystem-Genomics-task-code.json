@@ -1,0 +1,188 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+      "value": "task-code-genomics"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "TaskCodeGenomics",
+  "title": "Task Code Genomics",
+  "status": "draft",
+  "date": "2023-12-06T10:54:00+00:00",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "A set of codes use to identify the type of task for Genomic Order Management",
+  "copyright": "Copyright © 2023 NHS England",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "RequestGenomicTest",
+      "display": "Request Genomic Test",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "10.00"
+        }
+      ]
+    },
+    {
+      "code": "ProcessGenomicTestRequest",
+      "display": "Process Genomic Test Request",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "50.00"
+        }
+      ]
+    },
+    {
+      "code": "RequestSampleAlignment",
+      "display": "Request & Sample Alignment",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "100.00"
+        }
+      ]
+    },
+    {
+      "code": "SamplePreparation",
+      "display": "Sample Preparation",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "150.00"
+        }
+      ]
+    },
+    {
+      "code": "SampleProcessing",
+      "display": "Sample Processing",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "200.00"
+        }
+      ]
+    },
+    {
+      "code": "GeneticGenomicDataProcessing",
+      "display": "Genetic/Genomic Data Processing",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "250.00"
+        }
+      ]
+    },
+    {
+      "code": "Interpretation",
+      "display": "Interpretation",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "300.00"
+        }
+      ]
+    },
+    {
+      "code": "ProduceInterimReport",
+      "display": "Produce Interim Report",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "350.00"
+        }
+      ]
+    },
+    {
+      "code": "GenomicMDT",
+      "display": "Genomic MDT",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "400.00"
+        }
+      ]
+    },
+    {
+      "code": "ProduceFinalReport",
+      "display": "Produce Final Report",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "450.00"
+        }
+      ]
+    },
+    {
+      "code": "DistributeReport",
+      "display": "Distribute Report",
+      "designation": [
+        {
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "500.00"
+        }
+      ]
+    }
+  ]
+}

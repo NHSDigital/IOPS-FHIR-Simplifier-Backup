@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of an Organization resource. NOTE: it is expected that organization data will normally reside within ODS and Organization resources should only be included within messages by exception.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

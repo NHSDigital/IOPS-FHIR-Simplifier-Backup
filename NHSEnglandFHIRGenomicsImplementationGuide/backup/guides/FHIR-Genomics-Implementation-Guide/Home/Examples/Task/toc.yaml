@@ -1,13 +1,13 @@
 - name: Index
   filename: Index.page.md
-- name: Task-DYPDSequencingTask
-  filename: Task-DYPDSequencingTask.page.md
-- name: Task-Filler
-  filename: Task-Filler.page.md
-- name: Task-FillerUpdate
-  filename: Task-FillerUpdate.page.md
-- name: Task-SendAway
-  filename: Task-SendAway.page.md
+#- name: Task-DYPDSequencingTask
+#  filename: Task-DYPDSequencingTask.page.md
+#- name: Task-Filler
+#  filename: Task-Filler.page.md
+#- name: Task-FillerUpdate
+#  filename: Task-FillerUpdate.page.md
+#- name: Task-SendAway
+#  filename: Task-SendAway.page.md
 - name: Task-NonWGSRareDiseaseTestOrder-Example
   filename: Task-NonWGSRareDiseaseTestOrder-Example.page.md
 - name: Task-NonWGSRareDiseaseTestOrderAccepted-Example

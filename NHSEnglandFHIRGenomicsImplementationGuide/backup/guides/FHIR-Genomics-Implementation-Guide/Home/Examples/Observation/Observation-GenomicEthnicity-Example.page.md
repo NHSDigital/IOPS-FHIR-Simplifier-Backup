@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of an observation indicating the ethnicity relevant to Genomic Testing.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

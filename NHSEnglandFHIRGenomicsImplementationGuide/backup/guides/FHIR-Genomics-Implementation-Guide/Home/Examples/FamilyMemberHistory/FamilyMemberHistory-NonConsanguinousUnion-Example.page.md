@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a FamilyMemberHistory resource, with an attached Observation, indicating the patient is not a product of a Consanguinous union. Usage of, and coding within, FamilyMemberHistory resources is currently under review.
+ 
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">

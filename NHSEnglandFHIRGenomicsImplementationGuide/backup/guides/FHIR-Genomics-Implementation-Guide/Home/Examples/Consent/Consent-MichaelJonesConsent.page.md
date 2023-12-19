@@ -4,6 +4,8 @@ expand: yes
 
 ## {{page-title}}
 
+Example of a fully expanded Consent resource for allowing access and use of clinical data (DiagnosticReport, Observation etc.) for research purposes. Capturing of consent within the Genomic Medicine Service, outside of Record of Discussion forms, is still under review within the NHS England Genomic Unit.
+
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">
