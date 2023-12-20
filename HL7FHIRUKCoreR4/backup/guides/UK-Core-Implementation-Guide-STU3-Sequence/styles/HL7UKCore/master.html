@@ -779,6 +779,10 @@ var metaDataTypes = ['ContactDetail','Contributor','DataRequirement','Expression
                             var swapUrl = "https://hl7.org/fhir/R4/resourcelist.html";
                             $(this).attr("href", swapUrl);
                         }
+                        
+                        if (profileName == "Reference" && ($(this).parent().prop("tagName") == "P" || $(this).parent().prop("tagName") == "TD") ) {
+                            $(this).parent().find('span:contains(")")')[0].innerText = ") or UK Core equivalent profile."
+                        }
                     }
 				});
 			}
