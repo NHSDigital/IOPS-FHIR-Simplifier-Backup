@@ -2,7 +2,7 @@
 topic: R4Examples
 ---
 ## Examples Index
-The following examples illustrate the use of the FHIR R4 {{pagelink:FHIRAssetsR4Profiles}} described by this specification, categorised by resource type and pathology speciality.
+The following examples illustrate the use of the FHIR UK Core R4 {{pagelink:FHIRAssetsR4Profiles}} described by this implementation guide, categorised by resource type and pathology speciality.
 
 <div markdown="span" class="alert alert-nhse" role="alert">
 <i class="fa fa-exclamation-circle"></i> The patient and practitioner related data used in the examples is live-like in appearance but is fictitious. Any similarity to actual persons is purely coincidental. The addresses used are valid addresses based on publicly available address data.

@@ -6,10 +6,10 @@ topic: Home
 <b>IMPORTANT:</b> This guidance is currently in draft and SHOULD NOT be used for development or active implementation without consulting the NHS England Pathology Standards and Implementation team. For further information please contact: <a href="mailto:pathology.standardsandimplementation@nhs.net">pathology.standardsandimplementation@nhs.net</a></div>
 
 ## Pathology FHIR Implementation Guide
-### Specification Overview
-This Implementation Guide and the HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4 assets that it references define a specification to enable the exchange of pathology laboratory data.
+### Introduction
+This implementation guide and the HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4 assets that it references define a specification to enable the exchange of pathology laboratory data.
 
-The specification has been created by [NHS England]( https://simplifier.net/organization/NHSDIgital) and forms part of the [NHS England Pathology Project]( https://simplifier.net/pathology). The profiles that this specification references are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2.
+This implementation guide has been created by [NHS England]( https://simplifier.net/organization/NHSDIgital) and forms part of the [NHS England Pathology Project]( https://simplifier.net/pathology) on Simplifier. The profiles that this implementation guide references are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2.
 
 For the version history see {{pagelink:ReleaseNotes}}.
 
@@ -25,10 +25,10 @@ Pathology tests are requested by staff members in a variety of care provider org
 
 An increasing number of pathology tests are performed outside of laboratories. These include tests that may be performed at a point of care (usually by a Health Care Professional in a care setting such as a GP practice or in a hospital ward) or by a patient or their carer at home.
 
-The {{pagelink:Background}} section of this specification provides additional contextual information relating to pathology test requesting and reporting.
+The {{pagelink:Background}} section of this implementation guide provides additional contextual information relating to pathology test requesting and reporting.
 
 ### Pathology Data Products
-This specification has been developed by the [Pathology Standards and Implementation](https://digital.nhs.uk/services/pathology-standards-and-implementation) team within NHS England. The team has also developed a SNOMED CT<sup>&reg;</sup> based catalogue of pathology laboratory test request and test result codes. This catalogue was previously known as the Unified Test List (UTL). The UTL was originally a relatively simple set of codes representing pathology laboratory test requests and results, with each code carrying a SNOMED CT concept identifier. Following extensive modelling and classification work, the UTL has evolved into 'true' SNOMED CT. The content is accessible via two SNOMED CT reference sets:
+This implementation guide has been developed by the [Pathology Standards and Implementation](https://digital.nhs.uk/services/pathology-standards-and-implementation) team within NHS England. The team has also developed a SNOMED CT<sup>&reg;</sup> based catalogue of pathology laboratory test request and test result codes. This catalogue was previously known as the Unified Test List (UTL). The UTL was originally a relatively simple set of codes representing pathology laboratory test requests and results, with each code carrying a SNOMED CT concept identifier. Following extensive modelling and classification work, the UTL has evolved into 'true' SNOMED CT. The content is accessible via two SNOMED CT reference sets:
 
 * PaLM (Pathology and Laboratory Medicine) procedure simple reference set - containing laboratory test request codes
 * PaLM (Pathology and Laboratory Medicine) observable entity simple reference set - containing laboratory test result codes
@@ -38,19 +38,19 @@ In addition to the PaLM reference sets, the following additional SNOMED CT refer
 
 The [PBCL](https://isd.digital.nhs.uk/trud3/user/guest/group/0/pack/38) was originally a subset of Read v2 codes for use in laboratory to GP practice messaging. Semantically equivalent SNOMED CT PBCL concepts were created for migration to SNOMED CT in primary care, and these are contained in the PBCL observables simple reference set.
 
-The Read code based version of the PBCL is currently used in conjunction with the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification. The PMIP EDIFACT (NHS003) specification defines the data structure of pathology test reports that flow between laboratories and GP practices. The current GP practice related pathology data flows are described in detail in the {{pagelink:Background}} section of this specification. Further information on the use of SNOMED CT for pathology reporting can be found on the  [Pathology Standards and Implementation website](https://digital.nhs.uk/services/pathology-standards-and-implementation/snomed-ct-for-pathology-reporting).
+The Read code based version of the PBCL is currently used in conjunction with the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification. The PMIP EDIFACT (NHS003) specification defines the data structure of pathology test reports that flow between laboratories and GP practices. The current GP practice related pathology data flows are described in detail in the {{pagelink:Background}} section of this implementation guide. Further information on the use of SNOMED CT for pathology reporting can be found on the  [Pathology Standards and Implementation website](https://digital.nhs.uk/services/pathology-standards-and-implementation/snomed-ct-for-pathology-reporting).
 
-Together with the Pathology FHIR specification, the PaLM and PBCL SNOMED CT reference sets form a group of related data products. These products will initially be used to replace PMIP EDIFACT (NHS003) and the PBCL. There is an urgent need to replace the use of PMIP EDIFACT (NHS003) due to the following fundamental limitations:
+Together with this implementation guide, the PaLM and PBCL SNOMED CT reference sets form a group of related data products. These products will initially be used to replace PMIP EDIFACT (NHS003) and the PBCL. There is an urgent need to replace the use of PMIP EDIFACT (NHS003) due to the following fundamental limitations:
 
 * it is unable to carry SNOMED CT test result concepts - it can only support Read codes; the final release of Read CTV3 was in April 2018 consequently it has not been possible to create new PBCL Read codes since then 
 * it is unable to support complex report structures using fully atomic, coded results - the data elements of complex reports are mainly represented in PMIP EDIFACT (NHS003) as text with limited clinical coding
 * due to the age of the underlying EDIFACT standard, its continued use is a significant barrier to new market entrant system suppliers
 
 ### Scope
-The current scope of the Pathology FHIR specification reflects the priority of replacing PMIP EDIFACT (NHS003) and the PBCL. In summary:
+The current scope of this implementation guide reflects the priority of replacing PMIP EDIFACT (NHS003) and the PBCL. In summary:
 
 * the initial focus is on the ability to support pathology test reporting for tests that are requested by GP practices
-* the clinical payload that is currently supported by the specification is aligned with the PaLM and PBCL SNOMED CT reference sets and covers the following pathology specialities:
+* the clinical payload that is currently supported by the implementation guide is aligned with the PaLM and PBCL SNOMED CT reference sets and covers the following pathology specialities:
     * blood sciences - clinical biochemistry (also known as chemical pathology), haematology, immunology and transfusion medicine
     * microbiology - bacteriology, virology and serology
 
