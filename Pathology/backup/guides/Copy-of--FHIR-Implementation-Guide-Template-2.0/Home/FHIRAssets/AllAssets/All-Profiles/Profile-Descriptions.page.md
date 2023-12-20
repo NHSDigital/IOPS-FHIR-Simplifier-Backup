@@ -2,7 +2,7 @@
 topic: ProfileDescriptions
 ---
 ## Profile Descriptions
-This specification documents the use of FHIR UK Core R4 profiles to support the exchange of pathology laboratory data. Each profile is documented as follows:
+This implementation guide documents the use of FHIR UK Core R4 profiles to support the exchange of pathology laboratory data. Each profile is documented as follows:
 
 ### Summary
 A brief description of the profile.

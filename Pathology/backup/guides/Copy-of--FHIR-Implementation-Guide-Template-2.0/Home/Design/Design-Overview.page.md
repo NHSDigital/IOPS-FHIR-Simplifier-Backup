@@ -4,11 +4,11 @@ topic: DesignOverview
 ## Design Overview
 
 ### Pathology Business Information Model and FHIR Profile Mapping
-The following diagram is a high-level logical representation of the key business entities that this specification is based on:
+The following diagram is a high-level logical representation of the key business entities relating to pathology test requesting and reporting:
 
 {{render:path-diagram-information-model}}
 
-To aid clarity, individual and organisation type entities (e.g. Performer / Performing Organisation) have been combined in the diagram but may be referenced independently. Each business entity is summarised below, together with links to the corresponding FHIR R4 resource (as defined in the base [FHIR R4 specification](https://hl7.org/fhir/R4/)) and FHIR R4 UK Core R4 profile (as described in the {{pagelink:FHIRAssetsR4Profiles}} section of this specififcation).
+To aid clarity, individual and organisation type entities (e.g. Performer / Performing Organisation) have been combined in the diagram but may be referenced independently. Each business entity is summarised below, together with links to the corresponding FHIR R4 resource (as defined in the base [FHIR R4 specification](https://hl7.org/fhir/R4/)) and FHIR UK Core R4 profile (as described in the {{pagelink:FHIRAssetsR4Profiles}} section of this implementation guide).
 
 <table class="regular">
     <thead>
@@ -113,7 +113,7 @@ The following diagram shows the key relationships between each of the pathology 
 {{render:path-diagram-R4-FHIR-data-model}}
 
 ### Design Approach
-The base FHIR R4 specification describes several methods of representing test reports and  [grouping observations](https://hl7.org/fhir/R4/observation.html#obsgrouping). The design approach that has been adopted as part of this specification is summarised below:
+The base FHIR R4 specification describes several methods of representing test reports and  [grouping observations](https://hl7.org/fhir/R4/observation.html#obsgrouping). The design approach that has been adopted as part of this implementation guide is summarised below:
 
 * <code>DiagnosticReport</code> contains the overall findings and clinical interpretation relating to one or more pathology tests.
 * Test results and test groups are defined as <code>Observations</code> (using distinct profiles) and are referenced from <code>DiagnosticReport</code> using <code>DiagnosticReport.result</code>.
@@ -132,7 +132,7 @@ The following simplified data model illustrates the key aspects of this design a
 Further example test reports (with accompanying data models) are provided in the {{pagelink:R4Examples}}.
 
 ### SNOMED CT Usage
-SNOMED CT concepts are used to populate the following key data elements in the FHIR profiles described in this specification:
+SNOMED CT concepts are used to populate the following key data elements in the FHIR profiles described in this implementation guide:
 
 * The <code>code</code> element of {{pagelink:R4DiagnosticReport}} <b>SHALL</b> be populated using the following fixed SNOMED CT record artifact concept and description:
     * 721981007 for Diagnostic studies report

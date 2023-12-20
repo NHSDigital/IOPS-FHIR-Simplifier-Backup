@@ -34,7 +34,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 ### Additional Guidance
-The following table includes additional guidance that should be followed when implementing the `UKCore-Specimen` profile as part of this specification. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
+The following table includes additional guidance that should be followed when implementing the `UKCore-Specimen` profile. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
 
 An example of how each supported data element may be populated is provided in {{pagelink:R4SnippetsSpecimen}}.
 
@@ -123,7 +123,7 @@ An example of how each supported data element may be populated is provided in {{
             <td><a href=" https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
             <td>Reference to the <code>ServiceRequest</code> that the specimen relates to. This should only be used when a test was requested before the specimen was collected.<br><br><b>Note:</b> It is also possible to link a <code>ServiceRequest</code> to a <code>Specimen</code> using the <code>ServiceRequest.specimen</code> data element. This should be used when a test is requested and the specimen has already been collected.<br><br>For further information refer to: 
                 <ul>
-                    <li>the description of the {{pagelink:R4ServiceRequest}} profile in this specification, and</li>
+                    <li>the description of the {{pagelink:R4ServiceRequest}} profile in this implementation guide, and</li>
                     <li>the notes relating to the use of the<a href=" https://hl7.org/fhir/R4/servicerequest.html#notes"> ServiceRequest</a> resource in the base FHIR specification.</li>
                 </ul>
             </td>

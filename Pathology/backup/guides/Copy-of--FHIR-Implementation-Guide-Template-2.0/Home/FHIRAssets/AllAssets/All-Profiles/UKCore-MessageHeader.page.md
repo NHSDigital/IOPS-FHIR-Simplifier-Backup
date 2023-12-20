@@ -34,7 +34,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 ### Additional Guidance
-The following table includes additional guidance that should be followed when implementing the `UKCore-MessageHeader`profile as part of this specification. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
+The following table includes additional guidance that should be followed when implementing the `UKCore-MessageHeader`profile. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
 
 <table class="regular">
     <thead>
