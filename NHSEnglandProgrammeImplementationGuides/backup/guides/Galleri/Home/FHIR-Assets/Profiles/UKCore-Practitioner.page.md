@@ -10,6 +10,8 @@ The Practitioner resource is used to hold the details of the requesting practiti
 
 Reference - {{pagelink:Home/Design/Data-mapping.page.md}}
 
-<iframe src="https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/profile-ukcore-practitioner?version=current" height="800px" width="100%"></iframe>
+<iframe src="https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/profile-ukcore-practitioner?version=1.7.0" height="800px" width="100%"></iframe>
 
 
+
+<hr class="thickline">

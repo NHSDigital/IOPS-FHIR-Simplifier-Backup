@@ -1,2 +1,4 @@
+- name: Index
+  filename: Index.page.md
 - name: UKCore-Note
   filename: UKCore-Note.page.md
