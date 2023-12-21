@@ -52,6 +52,8 @@
   filename: Extension-UKCore-EthnicCategory.page.md
 - name: Extension UKCore-Evidence
   filename: Extension-UKCore-Evidence.page.md
+- name: Extension UKCore-FamilyMemberHistoryParticipant
+  filename: Extension-UKCore-Participant.page.md
 - name: Extension UKCore-LegalStatus
   filename: Extension-UKCore-LegalStatus.page.md
 - name: Extension UKCore-ListWarningCode
@@ -76,8 +78,6 @@
   filename: Extension-UKCore-OutcomeOfAttendance.page.md
 - name: Extension UKCore-ParentPresent
   filename: Extension-UKCore-ParentPresent.page.md
-- name: Extension UKCore-FamilyMemberHistoryParticipant
-  filename: Extension-UKCore-Participant.page.md
 - name: Extension UKCore-PharmacistVerifiedIndicator
   filename: Extension-UKCore-PharmacistVerifiedIndicator.page.md
 - name: Extension UKCore-PriorityReason

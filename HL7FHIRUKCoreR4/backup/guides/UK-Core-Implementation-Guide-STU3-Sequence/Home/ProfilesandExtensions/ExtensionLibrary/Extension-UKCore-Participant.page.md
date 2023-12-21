@@ -33,7 +33,7 @@ select
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Participant Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to indicate the performer of the family member history related activity.<br>
-  {{pagelink:Example-UKCore-Extension-FMHParticipant}}
+  {{pagelink:Example-UKCore-Extension-Participant}}
   <br><br>
 </div>
 <div id="Feedback" class="tabcontent">
