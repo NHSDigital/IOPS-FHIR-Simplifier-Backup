@@ -124,7 +124,7 @@
                 <id value="ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
                 <meta>
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-                </meta>
+				</meta>
                 <identifier>
                     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
                         <valueCodeableConcept>
@@ -170,7 +170,7 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="43396009" />
                         <display value="Haemoglobin A1c measurement" />
@@ -209,7 +209,6 @@
                 </identifier>
                 <basedOn>
                     <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-                    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
                 </basedOn>
                 <status value="final" />
 				<category> 
@@ -301,10 +300,10 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PBCL observable entity reference set -->
                         <system value="http://snomed.info/sct" />
-                        <code value="1107481000000106" />
-                        <display value="HbA1c (haemoglobin A1c) substance concentration in blood" />
+                        <code value="999791000000106" />
+                        <display value="Haemoglobin A1c level - International Federation of Clinical Chemistry and Laboratory Medicine standardised" />
                     </coding>
                 </code>
                 <subject>

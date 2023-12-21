@@ -9,9 +9,9 @@ topic: Home
 ### Introduction
 This implementation guide and the HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4 assets that it references define a specification to enable the exchange of pathology laboratory data.
 
-This implementation guide has been created by [NHS England]( https://simplifier.net/organization/NHSDIgital) and forms part of the [NHS England Pathology Project]( https://simplifier.net/pathology) on Simplifier. The profiles that this implementation guide references are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2.
+The implementation guide has been created by NHS England and forms part of the [NHS England Pathology Project]( https://simplifier.net/pathology) on Simplifier<sup>&reg;</sup>. The profiles that this implementation guide references are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2.
 
-For the version history see {{pagelink:ReleaseNotes}}.
+For the implementation guide version history, see {{pagelink:ReleaseNotes}}.
 
 ### Pathology Overview
 Pathology tests and investigations are critical to many aspects of patient care, supporting the diagnosis, treatment, monitoring and prevention of disease. Pathology comprises a broad range of specialities, each of which includes many individual tests. The key specialities can be grouped as follows:
@@ -49,10 +49,39 @@ Together with this implementation guide, the PaLM and PBCL SNOMED CT reference s
 ### Scope
 The current scope of this implementation guide reflects the priority of replacing PMIP EDIFACT (NHS003) and the PBCL. In summary:
 
-* the initial focus is on the ability to support pathology test reporting for tests that are requested by GP practices
+* the initial focus is on the ability to support pathology test reporting for tests that are requested by GP practices (please note that it is possible to return details relating to the orginally requested test as part of a test report)
 * the clinical payload that is currently supported by the implementation guide is aligned with the PaLM and PBCL SNOMED CT reference sets and covers the following pathology specialities:
     * blood sciences - clinical biochemistry (also known as chemical pathology), haematology, immunology and transfusion medicine
     * microbiology - bacteriology, virology and serology
+
+### Implementation Guide Structure
+This guide is divided into the following sections and pages which are accessible from the top-level menu bar:
+
+* Home: provides an introduction to pathology, describes various SNOMED CT pathology related data products and outlines the scope and structure of this implementation guide.
+* Design:
+    * {{pagelink:Background}}: includes a high-level business process flow for pathology test requesting and reporting, links to various supporting artefacts (user stories, personas and journey maps) and describes the systems and data flows that are currently used to support GP practice requested pathology tests.
+    * {{pagelink:DesignOverview}}: includes a high-level business information model and a detailed FHIR data model, a summary of the design approach that has been adopted and a description of how SNOMED CT is used to populate key aspects of the pathology related FHIR profiles.
+    * {{pagelink:DataMapping}} (TBC): this page will provide a mapping between the data elements included in the PMIP EDIFACT (NHS003) standard and the FHIR profile data elements described by this implementation guide.
+    * {{pagelink:Transport}} (TBC): this page will detail the data exchange approach that will be used as part of this implementation guide.
+    * {{pagelink:ErrorHandling}} (TBC): this page will describe any error handling that will be used as part of this implementation guide.
+    * {{pagelink:AcknowledgementFramework}} (TBC): this page will describe the acknowledge framework that will be used as part of this implementation guide.
+* Build:
+    * {{pagelink:BuildContructPathologyRequestBundle}}: describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR <code>Bundle</code> for a pathology test request. 
+    * {{pagelink:BuildContructPathologyReportBundle}}: describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR <code>Bundle</code> for a pathology test report. 
+* FHIR Assets:
+    * {{pagelink:FHIRAssetsR4Profiles}}: describes the FHIR profiles that are referenced by this implementation guide.
+    * {{pagelink:FHIRAssetsR4CodeSystems}} (TBC): this page will detail any new CodeSystems that have been developed for use as part of this implementation guide.
+    * {{pagelink:FHIRAssetsR4ValueSets}} (TBC): this page will detail any new ValueSets that have been developed for use as part of this implementation guide.
+    * {{pagelink:FHIRAssetsR4NamingSystems}} (TBC): this page will detail any new Naming Systems that have been developed for use as part of this implementation guide.
+    * {{pagelink:AllAssets}}: lists all of the FHIR assets that are referenced by this implementation guide.
+* Examples:
+    * {{pagelink:R4Examples}}: lists the FHIR examples that are included in this implementation guide, categorised by resource type and pathology speciality.
+* Help and Support:
+    * {{pagelink:ContactUs}}: provides details for contacting the authors of this implementation guide. 
+    * {{pagelink:ReleaseNotes}}: summarises the changes that have been made to this implementation guide. 
+    * {{pagelink:Glossary}}: provides a definition of acronyms and terms that are used in this implementation guide.
+    * {{pagelink:Sitemap}}: lists all of the key sections and pages that are included in this implementation guide.
+
 
 ### Related Guides
 Refer to the following related implementation guidance: 

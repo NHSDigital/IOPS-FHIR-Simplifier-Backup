@@ -1,4 +1,0 @@
----
-topic: AcknowledgementFramework
----
-## Acknowledgement Framework

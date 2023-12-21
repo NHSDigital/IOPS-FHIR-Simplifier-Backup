@@ -174,7 +174,7 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="26958001" />
                         <display value="Hepatic function panel" />
@@ -216,7 +216,7 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="252167001" />
                         <display value="Urea and electrolytes" />

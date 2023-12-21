@@ -170,7 +170,7 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="113076002" />
                         <display value="Glucose tolerance test" />
@@ -206,7 +206,6 @@
                 </identifier>
                 <basedOn>
                     <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-                    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
                 </basedOn>
                 <status value="final" />
 				<category> 
@@ -392,7 +391,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="113076002" />
                         <display value="Glucose tolerance test" />
@@ -445,7 +444,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->						
                         <system value="http://snomed.info/sct" />
                         <code value="1107451000000100" />
                         <display value="Glucose substance concentration in serum" />
@@ -516,7 +515,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->	
                         <system value="http://snomed.info/sct" />
                         <code value="1107451000000100" />
                         <display value="Glucose substance concentration in serum" />
@@ -587,7 +586,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->	
                         <system value="http://snomed.info/sct" />
                         <code value="1107451000000100" />
                         <display value="Glucose substance concentration in serum" />

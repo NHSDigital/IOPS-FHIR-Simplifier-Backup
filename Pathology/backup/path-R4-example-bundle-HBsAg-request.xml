@@ -170,10 +170,10 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- Not in UTL. Taken from SNOMED CT UK Edition (procedure) -->
+						<!-- Not currently in PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
-                        <code value="830511000000103" />
-                        <display value="Hepatitis B virus surface antigen IgG antibody measurement" />
+                        <code value="47758006" />
+                        <display value="Hepatitis B surface antigen measurement" />
                     </coding>
                 </code>
                 <subject>
