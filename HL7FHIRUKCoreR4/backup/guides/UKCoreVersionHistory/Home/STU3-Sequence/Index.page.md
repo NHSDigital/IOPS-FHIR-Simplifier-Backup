@@ -23,6 +23,9 @@
 <li>Swap ValueSets to Simplifier templating</li>
 <li>Swap Extensions to Simplifier templating</li>
 <li>Altered Profiles sub menu from hover to click to show</li>
+<li>Altered Profiles sub menu to restore its state via cookie</li>
+<li>Altered Profiles sub menu to have a sub menu for derived profiles</li>
+<li>Added cookie consent popup</li>
 <li>Added Detailed View to Profile tabs</li>
 <li>Added Feedback to Profile tabs, which links to the relevant Simplifier issues page to raise an issue for the profile</li>
 <li>Added "View UK Core guidance" link in pinnable panel, for elements where additional guidance is detailed on a page</li>
@@ -39,10 +42,10 @@
 <li>Improved cardinality on loinc / snomedCT, and systolicBP / diastolicBP slices</li>
 <li>Moved loinc / snomedCT slicing on Observation.component from <code>UKCore-Observation-VitalSigns</code> to <code>UKCore-Observation-VitalSigns-BloodPressure</code> as they only applied for this derived profiles</li>
 <li>Improved guidance on the use of code, value[x], and component elements for <code>UKCore-Observation-AverageBloodPressure</code> and <code>UKCore-Observation-VitalSigns-BloodPressure</code></li>
+</ul>
+<b>STU2 Sequence Ballot Assets:</b><br>
 <ul>
-<b>STU2 Ballot Assets:</b><br>
-<ul>
-<li>Synchronization of STU2 Ballot reconciliation actions into STU3 assets and implementation guidance</li>
+<li>Synchronization of STU2 Ballot reconciliation actions into STU3 assets and implementation guidance - this includes multiple <b>BREAKING CHANGES</b>, for more details, see {{pagelink:1.1.0}}</li>
 </ul>
 </tr>
 

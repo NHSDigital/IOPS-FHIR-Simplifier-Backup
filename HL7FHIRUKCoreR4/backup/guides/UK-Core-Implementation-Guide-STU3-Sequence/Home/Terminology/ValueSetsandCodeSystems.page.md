@@ -2181,7 +2181,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </div>
 
 <br><br>
-<div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> <i class="fa fa-asterisk"></i> <i class="fa fa-asterisk"></i> <code>UKCore-UnifiedTesList</code> added in C&TA Sprint 6 was replaced by the <code>UKCore-PathologyAndLaboratoryMedicineObservables</code> and <code>UKCore-PathologyAndLaboratoryMedicineProcedures</code> ValueSets during the STU2 Ballot reconcilation due to a change by the SNOMED CT UK Clinical Edition.
+<div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> <i class="fa fa-asterisk"></i> <i class="fa fa-asterisk"></i> <code>UKCore-UnifiedTesList</code> added in C&TA Sprint 6 was replaced by the <code>UKCore-PathologyAndLaboratoryMedicineObservables</code> and <code>UKCore-PathologyAndLaboratoryMedicineProcedures</code> ValueSets during the STU2 Ballot reconciliation due to a change by the SNOMED CT UK Clinical Edition.
 </div>
 
 ---

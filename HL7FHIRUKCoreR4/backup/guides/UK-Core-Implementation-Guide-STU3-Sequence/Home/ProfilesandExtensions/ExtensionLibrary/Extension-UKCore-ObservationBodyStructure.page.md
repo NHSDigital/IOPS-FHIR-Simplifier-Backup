@@ -33,8 +33,7 @@ select
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
-  <b>Triggered By Drug Use</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to indicate a triggering observation.<br>
-  {{pagelink:Example-UKCore-Extension-ObservationBodyStructure}}
+  <b>TBC</b>
   <br><br>
 </div>
 <div id="Feedback" class="tabcontent">

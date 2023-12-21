@@ -1,6 +1,6 @@
 ---
 topic: Profile-Observation-Group
-subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup
+subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab
 ---
 
 # StructureDefinition-UKCore-Observation-LabGroup
