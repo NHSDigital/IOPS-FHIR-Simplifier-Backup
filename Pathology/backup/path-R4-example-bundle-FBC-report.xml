@@ -170,7 +170,7 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="26604007" />
                         <display value="Full blood count" />
@@ -209,7 +209,6 @@
                 </identifier>
                 <basedOn>
                     <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-                    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
                 </basedOn>
                 <status value="final" />
 				<category> 
@@ -305,7 +304,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="26604007" />
                         <display value="Full blood count" />
@@ -401,7 +400,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1110441000000100" />
                         <display value="White blood cell count in blood" />
@@ -465,7 +464,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1022451000000103" />
                         <display value="Red blood cell count" />
@@ -529,7 +528,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1107511000000100" />
                         <display value="Haemoglobin mass concentration in blood" />
@@ -593,7 +592,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1111571000000101" />
                         <display value="Haematocrit volume fraction of blood" />
@@ -657,7 +656,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1491000237105" />
                         <display value="Erythrocytes MCV (mean corpuscular volume) in blood" />
@@ -721,7 +720,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1022471000000107" />
                         <display value="MCH - Mean corpuscular haemoglobin" />
@@ -784,8 +783,8 @@
 					</coding>
 				</category>
                 <code>
-                    <coding>
-						<!-- UTL Reportable (observable entity) -->
+                    <coding>			
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1022481000000109" />
                         <display value="MCHC - Mean corpuscular haemoglobin concentration" />
@@ -849,7 +848,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1108041000000107" />
                         <display value="Platelet count in blood" />
@@ -913,7 +912,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1108071000000101" />
                         <display value="Neutrophil count in blood" />
@@ -977,7 +976,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="67541000237108" />
                         <display value="Lymphocyte count in blood" />
@@ -1041,7 +1040,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1107991000000100" />
                         <display value="Monocyte count in blood" />
@@ -1105,7 +1104,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1107391000000104" />
                         <display value="Eosinophil count in blood" />
@@ -1169,7 +1168,7 @@
 				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1106091000000103" />
                         <display value="Basophil count in blood" />

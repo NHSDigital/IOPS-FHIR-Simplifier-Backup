@@ -170,10 +170,10 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- Not currently in PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
-                        <code value="171149006" />
-                        <display value="Screening for malignant neoplasm of cervix" />
+                        <code value="700152009" />
+                        <display value="Human papilloma virus screening" />
                     </coding>
                 </code>
                 <subject>
