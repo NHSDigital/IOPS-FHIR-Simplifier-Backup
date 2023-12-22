@@ -2,7 +2,7 @@
 
 Used for detailing information on procedures the patient has had performed, to aid interpretation of Genomic test results.
 
-Assertion of an absence of a procedure being performed SHOULD be recorded using an Observation resource, as described in {{pagelink:Home/FHIRAssets/AllAssets/Profiles/Genomics-Observation.page.md}}
+Assertion of an absence of a procedure being performed SHOULD be recorded using an Observation resource, as described in {{pagelink:Genomics-Observation}}
 
 At a minimum, Procedure resources are expected to contain the status, code, subject and performedDateTime, though additional information conforming to the FHIR profile below MAY be included if relevant.
 
@@ -27,6 +27,9 @@ At a minimum, Procedure resources are expected to contain the status, code, subj
         </li>
         <li role="presentation">
             <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
+        </li>
+        <li role="presentation">
+            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
         </li>
     </ul>
     <div class="tab-content snippet">
@@ -62,6 +65,17 @@ At a minimum, Procedure resources are expected to contain the status, code, subj
             for differential.element.constraint
             select key, human, severity, expression
             ```
+        </div>
+        <div id="Mappings" role="tabpanel" class="tab-pane">
+            <br />
+                <table class="assets">
+                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+                    <tr><td>Procedure</td><td>Patient - Had transplant, Patient - Had transfusion, Is patient on TKI therapy, Insulin treated within 6 months of diagnosis, Is on Ig replacement</td><td>Presence of OBR segment with OBR-44 code for transplant/transfusion etc.</td></tr>
+                    <tr><td>Procedure.performedDateTime</td><td>Patient - Fetal gestation (to determine termination date), Patient - Transplant date, Patient - Transfusion date</td><td>OBR-7</td></tr>
+                    <tr><td>Procedure.code</td><td>Patient - Pregnancy type, Patient - Type of transplant, Patient - Type of transfusion, Neonatal hypoglycemia treatment details, Current exocrine pancreatic treatment</td><td>OBR segments with appropriate codes, OBR-44, OBR/RXA segments</td></tr>
+                    <tr><td>Procedure.performedPeriod.start</td><td>Neonatal hypoglycemia treatment start date, Exocrine pancreatic treatment start date</td><td>OBR-7, RXA-3</td></tr>
+                    <tr><td>Procedure.performedPeriod.end</td><td>Neonatal hypoglycemia treatment end date</td><td>OBR-8</td></tr>
+                </table>
         </div>
     </div>
 </div>

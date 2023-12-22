@@ -28,6 +28,9 @@ In the Alpha build of the Genomic Medicine Service, MESH/email will be used as t
         <li role="presentation">
             <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
         </li>
+        <li role="presentation">
+            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
+        </li>
     </ul>
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
@@ -72,6 +75,13 @@ In the Alpha build of the Genomic Medicine Service, MESH/email will be used as t
             for differential.element.constraint
             select key, human, severity, expression
             ```
+        </div>
+        <div id="Mappings" role="tabpanel" class="tab-pane">
+            <br />
+                <table class="assets">
+                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+                    <tr><td></td><td></td><td></td></tr>
+                </table>
         </div>
     </div>
 </div>

@@ -26,6 +26,9 @@ Only a minimal amount of mandatory information needs to be populated.
         <li role="presentation">
             <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
         </li>
+        <li role="presentation">
+            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
+        </li>
     </ul>
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
@@ -75,6 +78,14 @@ Only a minimal amount of mandatory information needs to be populated.
             for differential.element.constraint
             select key, human, severity, expression
             ```
+        </div>
+        <div id="Mappings" role="tabpanel" class="tab-pane">
+            <br />
+                <table class="assets">
+                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+                    <tr><td>Consent.sourceAttachment</td><td>RoD - Record of discussion form - copy attached</td><td>CON-19</td></tr>
+                    <tr><td>Consent.status</td><td>RoD - Patient conversation taken place, ROD form to follow</td><td>Inferred through CON-19 value</td></tr>
+                </table>
         </div>
     </div>
 </div>

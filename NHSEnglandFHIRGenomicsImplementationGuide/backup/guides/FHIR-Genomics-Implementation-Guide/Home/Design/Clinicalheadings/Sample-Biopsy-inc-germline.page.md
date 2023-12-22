@@ -20,7 +20,7 @@ Observation codes linked to samples are pending addition to SNOMED-CT
 |Raw specimen/biopsy - Id (many)|Specimen.identifier.value|SPM-2|Id of sample provided linked to the previously stated assigning authority. Occurs multiple times.|
 |Raw specimen/biopsy - Sample well identifier|Specimen.container.identifier|SAC-3|Id of the sample well.|
 |Raw specimen/biopsy - Location details|Not in scope for FHIR r4, could use Specimen.note|SAC-15|Where a raw specimen/biopsy is in storage and not provided with a request.|
-|Raw specimen/biopsy - WGS specimen type category|Specimen.extension:state|SPM-5|WGS cancer high level category for the specimen.|
+|Raw specimen/biopsy - WGS specimen type category|Specimen.extension:sampleCategory|SPM-5|WGS cancer high level category for the specimen.|
 |Raw specimen/biopsy - Type|Specimen.type|SPM-4|Tissue of origin.|
 |Raw specimen/biopsy - State|Specimen.condition|SPM-24|How has the specimen been preserved/fixed. **Note: The ValueSet for this field is pending review to align with MDSv1.0**|
 |Raw specimen/biopsy - Sample preparation (submitted to GLH)|Specimen.processing|Combination of SPM-6/SPM-24 or NTE segments if other processing|How has the specimen has been prepared for the GLH.|

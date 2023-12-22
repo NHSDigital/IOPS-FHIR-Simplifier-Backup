@@ -24,6 +24,9 @@ Focal resource for test order messages. All additional information or resources 
         <li role="presentation">
             <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
         </li>
+        <li role="presentation">
+            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
+        </li>
     </ul>
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
@@ -83,6 +86,28 @@ Focal resource for test order messages. All additional information or resources 
             for differential.element.constraint
             select key, human, severity, expression
             ```
+        </div>
+        <div id="Mappings" role="tabpanel" class="tab-pane">
+            <br />
+                <table class="assets">
+                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+                    <tr><td>ServiceRequest.requester</td><td>Requester (more details in PractitionerRole resource mappings), PLCM activity - Commissioned service category code, Previous genomic report - Original requester full name, Previous genomic report - Original requester organisation ODS code, Previous genomic report - Original requester reason for request, Previous non genomic report - Original requester full name, Previous non genomic report - Original requester organisation ODS code, Previous non genomic report - Original requester reason for request</td><td>Various ORC/STF segments</td></tr>
+                    <tr><td>ServiceRequest.extension:additionalContact</td><td>Additional Contact (more details in PractitionerRole resource mappings)</td><td>Various STF segments</td></tr>
+                    <tr><td>ServiceRequest.subject</td><td>Patient (more details in Patient resource mappings), Patient - Is relative</td><td>First PID segment in OML message, relatives referenced through NK1 segments</td></tr>
+                    <tr><td>ServiceRequest.identifier</td><td>Test request - Test request id, PLCM activity - NGIS referral identifier, Previous genomic report - Report lab test number</td><td>ORC-2, ORC-3</td></tr>
+                    <tr><td>ServiceRequest.extension:coverage</td><td>Test request - Payment status</td><td>IN1-15</td></tr>
+                    <tr><td>ServiceRequest.authoredOn</td><td>Test request - Date and time request sent, PLCM activity - Financial month, PLCM activity - Financial year, PLCM activity - Turnaround time (calendar days)</td><td>ORC-9 (for TAT subtracted from OBR-7)</td></tr>
+                    <tr><td>ServiceRequest.priority</td><td>Test request - Is urgent</td><td>TQ1-9</td></tr>
+                    <tr><td>ServiceRequest.extension:priorityReason</td><td>Test request - Urgency reason</td><td>N/A could possibly use TQ1-10</td></tr>
+                    <tr><td>ServiceRequest.code.coding.system</td><td>Test request - Test Directory version</td><td>OBR-4.3</td></tr>
+                    <tr><td>ServiceRequest.code</td><td>Test request - CI code, Test request - CITT code, PLCM activity - Service code, PLCM activity - Point of delivery code, PLCM activity - Local point of delivery code, PLCM activity - Test method code</td><td>OBR-4</td></tr>
+                    <tr><td>ServiceRequest.orderDetail</td><td>Test request - CI code for multipurpose CITT, Test request - Type of reanalysis, Test request - DNA storage information</td><td>NTE segment attached to OBR</td></tr>
+                    <tr><td>ServiceRequest.reasonCode</td><td>Test request - Reason for testing, Test request - Reason for reanalysis</td><td>OBR-13 segment linked to ORC</td></tr>
+                    <tr><td>ServiceRequest.supportingInfo</td><td>Test request - Detail of reason for reanalysis, Test request - Further information</td><td>NTE segments linked to OBR segment for reanalysis reason, Additional segments attached to ORC/OBR</td></tr>
+                    <tr><td>ServiceRequest.occurrenceDateTime</td><td>Test request - Date report required by</td><td>OBR-8</td></tr>
+                    <tr><td>ServiceRequest.performer</td><td>PLCM activity - ODS code of organisation commissioned to deliver requested test</td><td>PRD-7 where PRD-1=RT</td></tr>
+                    <tr><td>ServiceRequest.note</td><td>Raw specimen/biopsy - Sample to follow reason</td><td>NTE segment attached to ORC</td></tr>
+                </table>
         </div>
     </div>
 </div>

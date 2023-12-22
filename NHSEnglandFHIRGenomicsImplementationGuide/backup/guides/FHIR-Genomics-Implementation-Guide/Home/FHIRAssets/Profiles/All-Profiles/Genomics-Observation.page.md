@@ -24,6 +24,9 @@ Used to represent the bulk of clinical information to be sent alongside a Genomi
         <li role="presentation">
             <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
         </li>
+        <li role="presentation">
+            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
+        </li>
     </ul>
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
@@ -118,6 +121,22 @@ Used to represent the bulk of clinical information to be sent alongside a Genomi
             for differential.element.constraint
             select key, human, severity, expression
             ```
+        </div>
+        <div id="Mappings" role="tabpanel" class="tab-pane">
+            <br />
+                <table class="assets">
+                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+                    <tr><td>Observation</td><td>Raw specimen/biopsy - Additional specimen/biopsy information, Extracted specimen - Additional specimen information, Further clinical information</td><td>OBX segments (may be attached to SPM)</td></tr>
+                    <tr><td>Observation.code</td><td>Patient - Sexual orientation, Patient - Karyotypic sex, Patient - Pregnancy status, Patient - Fetal karyotypic sex, Patient - Is from consanguinous union, Fetus - Karyotypic sex, Fetus - Is testing for fetal loss from 24 weeks of gestation, PLCM activity - DNA concentration, PLCM activity - DNA quantification, PLCM activity - Test outcome code (Many), Raw specimen/biopsy - Taken alive/post mortem, Diabetic complications, Has absent reflexes</td><td>OBX-5 with appropriate SNOMED/READ/LOINC code</td></tr>
+                    <tr><td>Observation.component</td><td>Patient - Pregnancy gestation period, Patient - Fetal gestation, Patient - Estimated Delivery Date (EDD), Patient - Pregnancy type, Absent reflexes detail</td><td>OBX-14 (compared with other ORC segments), OBR segments with appropriate codes</td></tr>
+                    <tr><td>Observation.value\[x\]</td><td>Patient - Height (m), Raw specimen/biopsy - Skin/Bone affected status, Raw specimen/biopsy - Blasts %, Raw specimen/biopsy - Neoplastic cell content (%), Raw specimen/biopsy - Necrosis, Raw specimen/biopsy - Nucleated cell count, Raw specimen/biopsy - Tumour cellularity, Raw specimen/biopsy - Maternal cell contamination (MCC), Previous non genomic report - Test result value comparator, Previous non genomic report - Test result value unit of measure, Genomic ethnicity, ISTH BAT score, MODY probability calculator score, Patient BMI at time of genomic test request, Patient BMI at time of diagnosis, Maternal BMI at time of request, Paternal BMI at time of request, Birth weight</td><td>OBX-5/6</td></tr>
+                    <tr><td>Observation.referenceRange.low</td><td>Previous non genomic report - Test result reference range low</td><td>OBX-7 (before operator)</td></tr>
+                    <tr><td>Observation.referenceRange.high</td><td>Previous non genomic report - Test result reference range high</td><td>OBX-7 (after operator)</td></tr>
+                    <tr><td>Observation.method</td><td>Previous non genomic report - Test result test method</td><td>OBX-17</td></tr>
+                    <tr><td>Observation.referenceRange.text</td><td>Previous non genomic report - Test result reference range text</td><td>OBX-7</td></tr>
+                    <tr><td>Observation.interpretation</td><td>Previous non genomic report - Test result clinical summary</td><td>OBX-8</td></tr>
+                    <tr><td>Observation.bodySite</td><td>Subcutaneous fat loss areas, Increased fat deposition areas</td><td>OBX-5</td></tr>
+                </table>
         </div>
     </div>
 </div>
