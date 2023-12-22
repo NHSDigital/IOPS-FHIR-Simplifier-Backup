@@ -112,11 +112,13 @@
   <address>
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
       <extension url="type">
-        <valueCoding>
-          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType" />
-          <code value="UPRN" />
-          <display value="Unique Property Reference Number" />
-        </valueCoding>
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType" />
+            <code value="UPRN" />
+            <display value="Unique Property Reference Number" />
+          </coding>
+        </valueCodeableConcept>
       </extension>
       <extension url="value">
         <valueString value="10091054340" />
