@@ -1,7 +1,7 @@
 ---
 topic: R4BundleExampleGTTRequest
 ---
-### PATH-R4-11: R4 Bundle Example - Glucose Tolerance Test (GTT) Request
+### PATH-R4-13: R4 Bundle Example - Glucose Tolerance Test (GTT) Request
 
 <div class="tab fhirTree">
  <button class="tablinks active" onclick="openTab(event, 'Example')">Example Request</button>

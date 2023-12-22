@@ -1,7 +1,7 @@
 ---
 topic: R4BundleExampleGTTReport
 ---
-### PATH-R4-12: R4 Bundle Example - Glucose Tolerance Test (GTT) Report
+### PATH-R4-14: R4 Bundle Example - Glucose Tolerance Test (GTT) Report
 
 <div class="tab fhirTree">
  <button class="tablinks active" onclick="openTab(event, 'Example')">Example Report</button>
