@@ -29,6 +29,9 @@ Further use cases surrounding the use of RelatedPerson are pending further Duo/T
         <li role="presentation">
             <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
         </li>
+        <li role="presentation">
+            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
+        </li>
     </ul>
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
@@ -63,6 +66,13 @@ Further use cases surrounding the use of RelatedPerson are pending further Duo/T
             for differential.element.constraint
             select key, human, severity, expression
             ```
+        </div>
+        <div id="Mappings" role="tabpanel" class="tab-pane">
+            <br />
+                <table class="assets">
+                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+                    <tr><td>RelatedPerson.relationship</td><td>Patient - Relationship to proband, Previous genomic report - Patient's relationship to requesting patient</td><td>NK1-3</td></tr>
+                </table>
         </div>
     </div>
 </div>

@@ -15,7 +15,7 @@ It is expected previous diagnostic reports will have a minimal amount of informa
 |Previous non genomic report - Report file/link|DiagnosticReport.presentedForm|OBX-5 where OBX-2=ED or RP|A copy of/or link to the previous non genomic report.|
 |Previous non genomic report - Test performed date|DiagnosticReport.effectiveDateTime|OBX-19|The date a previous non genomic test was performed.|
 |Previous non genomic report - Report identifier|DiagnosticReport.identifier|OBX-3|The identifier for the previous non genomic report.|
-|Previous non genomic report - Test type|DiagnosticReport.result( Observation.code )|OBX-3|A name that describes the previous non genomic report.|
+|Previous non genomic report - Test type|DiagnosticReport.code|OBR-4|A name that describes the previous non genomic report.|
 |Previous non genomic report - Test result value comparator|DiagnosticReport.result( Observation.valueQuantity.comparator )|OBX-5|A comparator that may used to indicate whether the actual value is greater or less than the stated value. Applies to numeric values only.|
 |Previous non genomic report - Test result value unit of measure|DiagnosticReport.result( Observation.valueQuantity.unit )|OBX-6|The name and code of the unit of measure associated with the test result value. Applies to numeric values only.|
 |Previous non genomic report - Test result reference range low|DiagnosticReport.result( Observation.referenceRange.low )|OBX-7 (before operator)|The reference range low value.|

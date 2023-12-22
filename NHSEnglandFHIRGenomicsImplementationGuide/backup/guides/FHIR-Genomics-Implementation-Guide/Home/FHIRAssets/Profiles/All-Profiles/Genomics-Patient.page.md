@@ -28,6 +28,9 @@ Alternatively, systems MAY opt to include pointers to the Patient resource on th
         <li role="presentation">
             <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
         </li>
+        <li role="presentation">
+            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
+        </li>
     </ul>
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
@@ -82,6 +85,27 @@ Alternatively, systems MAY opt to include pointers to the Patient resource on th
             for differential.element.constraint
             select key, human, severity, expression
             ```
+        </div>
+        <div id="Mappings" role="tabpanel" class="tab-pane">
+            <br />
+                <table class="assets">
+                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+                    <tr><td>Patient.identifier</td><td>Patient - NHS number, Patient - Local identifier, Patient - Pedigree/Family Identifier, Fetus - Local identifier, Previous genomic report - Patient's NHS number, Previous genomic report - Patient's alternative identifier, Previous genomic report - Patient's clinical genetics number, Previous genomic report - Patient's pedigree number</td><td>PID-3</td></tr>
+                    <tr><td>Patient.extension:nhsNumberUnavailableReason</td><td>Patient - Reason for unavailable NHS number, Patient - Withheld identity reason</td><td>N/A, could use PID-32 as surrogate</td></tr>
+                    <tr><td>Patient.name.given</td><td>Patient - First name, Previous genomic report - Patient's first name</td><td>PID-5.2</td></tr>
+                    <tr><td>Patient.name.family</td><td>Patient - Surname, Previous genomic report - Patient's surname</td><td>PID-5.1</td></tr>
+                    <tr><td>Patient.birthDate</td><td>Patient - Date of birth, PLCM activity - Patient age at activity date, Previous genomic report - Patient's date of birth</td><td>PID-7, Age derived from the difference between PID-7 and TQ1-7 for the relevant activity</td></tr>
+                    <tr><td>Patient.address</td><td>Patient - Address, Previous genomic report - Patient's address</td><td>PID-11</td></tr>
+                    <tr><td>Patient.address.postalCode</td><td>Patient - Postcode, Previous genomic report - Patient's post code</td><td>PID-11.5</td></tr>
+                    <tr><td>Patient.address.country</td><td>Patient - Country, Previous genomic report - Patient's country</td><td>PID-11.6</td></tr>
+                    <tr><td>Patient.deceasedBoolean</td><td>Patient - Life status at time of request</td><td>PID-30</td></tr>
+                    <tr><td>Patient.deceasedDateTime</td><td>Patient - Date of death</td><td>PID-29</td></tr>
+                    <tr><td>Patient.extension:EthnicCategory</td><td>Patient - Ethnicity</td><td>PID-22</td></tr>
+                    <tr><td>Patient.extension:birthSex</td><td>Patient - Sex assigned at birth</td><td>PID-8</td></tr>
+                    <tr><td>Patient.extension:patient-genderIdentity</td><td>Patient - Gender Identity</td><td>N/A - not part of the HL7v2 standard, though PID-8 or an OBX segment could be used</td></tr>
+                    <tr><td>Patient.generalPractitioner</td><td>Patient - GP Practice ODS Code, Patient - GP full name, Patient - GP GMC number</td><td>PD1-4</td></tr>
+                    <tr><td>Patient.gender</td><td>Fetus - Observed sex</td><td>PID-8</td></tr>
+                </table>
         </div>
     </div>
 </div>

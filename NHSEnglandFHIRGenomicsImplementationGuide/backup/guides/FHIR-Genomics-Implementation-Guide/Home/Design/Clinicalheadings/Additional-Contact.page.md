@@ -6,6 +6,8 @@ To know who additionally should be contacted with questions or clinical results 
 ### Notes
 Mapped to an extension on the ServiceRequest, in review.
 
+It is expected that practitioner and organization details will be referenced from PractitionerRole resources (e.g. using ODS/SDS identifiers) rather than be included as FHIR resources within Test Request payloads, though the full FHIR mapping has been provided below for completeness.
+
 ### Mapping
 | Source Data item | Target FHIR Element | HL7v2.5.1 Mapping | Description 
 |--|--|

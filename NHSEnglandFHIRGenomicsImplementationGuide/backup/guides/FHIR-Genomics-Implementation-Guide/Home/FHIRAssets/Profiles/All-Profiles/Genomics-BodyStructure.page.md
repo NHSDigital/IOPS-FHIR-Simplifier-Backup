@@ -26,6 +26,9 @@ Use of this resource is meant to replace the Genomics extensions for topology an
         <li role="presentation">
             <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
         </li>
+        <li role="presentation">
+            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
+        </li>
     </ul>
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
@@ -60,6 +63,14 @@ Use of this resource is meant to replace the Genomics extensions for topology an
             for differential.element.constraint
             select key, human, severity, expression
             ```
+        </div>
+        <div id="Mappings" role="tabpanel" class="tab-pane">
+            <br />
+                <table class="assets">
+                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+                    <tr><td>BodyStructure.morphology</td><td>Raw specimen/biopsy - Solid tumour morphology</td><td>Additional SPM-4/5 qualifiers</td></tr>
+                    <tr><td>BodyStructure.location</td><td>Raw specimen/biopsy - Solid tumour histological type (topography)</td><td>SPM-8</td></tr>
+                </table>
         </div>
     </div>
 </div>

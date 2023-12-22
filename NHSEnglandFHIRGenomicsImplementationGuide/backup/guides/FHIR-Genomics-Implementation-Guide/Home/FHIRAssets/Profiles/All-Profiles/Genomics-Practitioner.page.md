@@ -26,6 +26,9 @@ The below profile is provided for information, if referencing by identifier is i
         <li role="presentation">
             <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
         </li>
+        <li role="presentation">
+            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
+        </li>
     </ul>
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
@@ -60,6 +63,15 @@ The below profile is provided for information, if referencing by identifier is i
             for differential.element.constraint
             select key, human, severity, expression
             ```
+        </div>
+        <div id="Mappings" role="tabpanel" class="tab-pane">
+            <br />
+                <table class="assets">
+                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+                    <tr><td>Practitioner.name</td><td>Requestor - Full name, Additional contact - Full name, Patient - GP full name, Previous genomic report - Report performer full name, Previous genomic report - Original requester full name, Previous non genomic report - Report performer full name, Previous non genomic report - Original requester full name</td><td>ORC-12, Additional STF segment (STF-3), possibly referenced from the STF segment for the requester via STF-14, PD1-4.2 and PD1-4.3, OBX-16, ORC-12</td></tr>
+                    <tr><td>Practitioner.identifier</td><td>Requestor - Professional registration number, Additional contact - Professional registration number, Patient - GP GMC number</td><td>ORC-12.1, STF-2.1, PD1-4.1</td></tr>
+                    <tr><td>Practitioner.identifier.system, Additional contact - Professional registration number type</td><td>Requestor - Professional registration number type</td><td>ORC-12.9, STF-2.3</td></tr>
+                </table>
         </div>
     </div>
 </div>

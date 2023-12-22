@@ -28,6 +28,9 @@ Tasks will be automatically created by the central service but updates to status
         <li role="presentation">
             <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
         </li>
+        <li role="presentation">
+            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
+        </li>
     </ul>
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
@@ -113,6 +116,18 @@ Tasks will be automatically created by the central service but updates to status
             select key, human, severity, expression
             ```
         </div>
+        <div id="Mappings" role="tabpanel" class="tab-pane">
+            <br />
+                <table class="assets">
+                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+                    <tr><td>Task.executionPeriod.start</td><td>PLCM activity - Activity start date and time</td><td>Derived from TQ1-7 in the ORL response message for the activity based on the OML request</td></tr>
+                    <tr><td>Task.executionPeriod.end</td><td>PLCM activity - Activity end date and time</td><td>Derived from TQ1-8 in the ORL response message for the activity based on the OML request</td></tr>
+                    <tr><td>Task.owner</td><td>PLCM activity - ODS code of organisation submitting to PLCM, PLCM activity - ODS code of organisation delivering requested test, PLCM activity - ODS code of the laboratory site delivering requested test</td><td>OBR-32.7 if sourced from principle results interpreter, OBX-32.10, AFF-2.10 associated with performing organization</td></tr>
+                    <tr><td>Task.status</td><td>PLCM activity - Sample plating quality control</td><td>Implied through status recorded in ORC-25 indicating plating quality control had passed</td></tr>
+                    <tr><td>Task.statusReason</td><td>PLCM activity - Sample plating quality control fail code</td><td>ORC-25</td></tr>
+                    <tr><td>Task.output</td><td>Extracted specimen - Location details</td><td>SAC-15</td></tr>
+                </table>
+        </div>
     </div>
 </div>
 
@@ -136,6 +151,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#code">code</a>
 - <a href="#focus">focus</a>
 - <a href="#for">for</a>
+- <a href="#executionPeriod">executionPeriod</a>
 - <a href="#authoredOn">authoredOn</a>
 - <a href="#lastModified">lastModified</a>
 - <a href="#requester">requester</a>
@@ -236,6 +252,16 @@ A reference to the Patient resource or the identifier, NHS number, for the patie
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9449307873"
         }
+    },
+```
+
+<a name="executionPeriod"></a>
+#### executionPeriod
+MAY be used to capture start and end DateTimes associated with execution of a Task. It is expected the start time will be populated as a Task is moved to in-progress and the end time will be populated as a Task is marked as completed. Usage of this field will be investigated during the Alpha phase of the Genomic Order Management project as timelines for task execution can also be derived from the AuditEvents recorded as Tasks are updated.
+```json
+"executionPeriod": {
+        "start": "2023-10-31T10:25:05+00:00",
+        "end": "2023-11-15T16:45:05+00:00"
     },
 ```
 

@@ -27,23 +27,6 @@
         ]
       },
       {
-        "id": "Task.basedOn",
-        "path": "Task.basedOn",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
-            ],
-            "aggregation": [
-              "referenced"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Task.basedOn.identifier.assigner",
         "path": "Task.basedOn.identifier.assigner",
         "type": [
@@ -90,20 +73,45 @@
         ]
       },
       {
+        "id": "Task.statusReason",
+        "path": "Task.statusReason",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-task-statusReason"
+        }
+      },
+      {
         "id": "Task.businessStatus",
         "path": "Task.businessStatus",
         "short": "E.g. \"Specimen Received\", \"Analysis In Progress\"",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "TaskBusinessStatus"
-            }
-          ],
           "strength": "preferred",
           "description": "The domain-specific business-contextual sub-state of the task.  ValueSet specific for Genomics, subject to change.",
           "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-business-status"
         }
+      },
+      {
+        "id": "Task.code",
+        "path": "Task.code",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-task-code"
+        }
+      },
+      {
+        "id": "Task.focus",
+        "path": "Task.focus",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
+            ],
+            "aggregation": [
+              "referenced"
+            ]
+          }
+        ]
       },
       {
         "id": "Task.encounter",
