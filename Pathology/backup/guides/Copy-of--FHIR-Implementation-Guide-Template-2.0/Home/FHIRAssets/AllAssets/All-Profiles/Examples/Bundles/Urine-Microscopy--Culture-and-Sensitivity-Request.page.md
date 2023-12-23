@@ -1,7 +1,7 @@
 ---
 topic: R4BundleExampleUrineMCSRequest
 ---
-### PATH-R4-13: R4 Bundle Example - Urine Microscopy, Culture and Sensitivity Request
+### PATH-R4-15: R4 Bundle Example - Urine Microscopy, Culture and Sensitivity Request
 
 <div class="tab fhirTree">
  <button class="tablinks active" onclick="openTab(event, 'Example')">Example Request</button>

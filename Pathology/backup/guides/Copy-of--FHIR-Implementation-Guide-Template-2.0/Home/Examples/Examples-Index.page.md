@@ -21,7 +21,7 @@ The snippet examples have been provided to illustrate how each supported data el
             <th width="10%">Resource</th>
             <th width="15%">Speciality</th>
             <th width="30%">Summary</th>
-            <th width="35%">Example</th>
+            <th width="25%">Example</th>
         </tr>
     </thead>
     <tbody>
@@ -99,60 +99,74 @@ The snippet examples have been provided to illustrate how each supported data el
             <td>PATH-R4-11</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
+            <td>Request for a single test group and a single test (numeric results).</td>
+            <td>{{pagelink:R4BundleExampleLipidsandHbA1cRequest}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-12</td>
+            <td>Bundle</td>
+            <td>Clinical Biochemistry</td>
+            <td>Report for a single test group and a single test (numeric results)</td>
+            <td>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-13</td>
+            <td>Bundle</td>
+            <td>Clinical Biochemistry</td>
         	<td>Request for a dynamic function test (numeric results).</td>
             <td>{{pagelink:R4BundleExampleGTTRequest}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-12</td>
+            <td>PATH-R4-14</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
             <td>Report for a dynamic function test (numeric results).</td>
             <td>{{pagelink:R4BundleExampleGTTReport}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-13</td>
+            <td>PATH-R4-15</td>
             <td>Bundle</td>
             <td>Microbiology</td>
             <td>Request for a complex test, with multiple, nested test groups (numeric, qualitative and semi-quantitative results).</td>
             <td>{{pagelink:R4BundleExampleUrineMCSRequest}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-14</td>
+            <td>PATH-R4-16</td>
             <td>Bundle</td>
             <td>Microbiology</td>
             <td>Report for a complex test, with multiple, nested test groups (numeric, qualitative and semi-quantitative results).</td>
             <td>{{pagelink:R4BundleExampleUrineMCSReport}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-15</td>
+            <td>PATH-R4-17</td>
             <td>DiagnosticReport</td>
             <td>Microbiology</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4DiagnosticReport}} may be populated.</td>
             <td>{{pagelink:R4SnippetsDiagnosticReport}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-16</td>
+            <td>PATH-R4-18</td>
             <td>Observation (Test Group)</td>
             <td>Haematology</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestGroup}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestGroup}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-17</td>
+            <td>PATH-R4-19</td>
             <td>Observation (Test Result)</td>
             <td>Haematology</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestResult}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestResult}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-18</td>
+            <td>PATH-R4-20</td>
             <td>ServiceRequest</td>
             <td>Clinical Biochemistry</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ServiceRequest}} may be populated.</td>
             <td>{{pagelink:R4SnippetsServiceRequest}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-19</td>
+            <td>PATH-R4-21</td>
             <td>Specimen</td>
             <td>Clinical Biochemistry</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4Specimen}} may be populated.</td>
