@@ -46,3 +46,11 @@
   filename: Example-UKCore-RequestGroup-MultipleAnitibiotics.page.md
 - name: Example UKCore-RequestGroup-Paracetamol
   filename: Example-UKCore-RequestGroup-Paracetamol.page.md
+- name: Example UKCore-QuestionnaireResponse-BabyPatientSurvey
+  filename: Example-UKCore-QuestionnaireResponse-BabyPatientSurvey.page.md
+- name: Example UKCore-QuestionnaireResponse-EOLPlan
+  filename: Example-UKCore-QuestionnaireResponse-EOLPlan.page.md
+- name: Example UKCore-QuesstionnaireResponse-FitnessForWork
+  filename: Example-UKCore-QuesstionnaireResponse-FitnessForWork.page.md
+- name: Example UKCore-QuestionnaireResponse-InpatientSurvey
+  filename: Example-UKCore-QuestionnaireResponse-InpatientSurvey.page.md

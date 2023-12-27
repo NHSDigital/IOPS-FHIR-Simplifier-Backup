@@ -94,7 +94,7 @@ Optional role of participant in the appointment that uses the following values w
 
 Optional Person, Location/HealthcareService or Device that is participating in the appointment.
 
-The resource being referenced SHALL conform to one of the following:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
 - {{pagelink:Profile-Device}}
 - {{pagelink:Profile-HealthcareService}}

@@ -1,5 +1,5 @@
 ## <code>{{page-title}}</code>
 
-The resource referenced SHALL conform to the [Profile UKCore-CareTeam](https://simplifier.net/hl7fhirukcorer4/ukcore-careteam)
+Where possible, it is expected that the resource being referenced SHOULD conform to [Profile UKCore-CareTeam](https://simplifier.net/hl7fhirukcorer4/ukcore-careteam)
 
 ---

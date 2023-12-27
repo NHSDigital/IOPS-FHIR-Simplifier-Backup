@@ -1,5 +1,5 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to the following {{pagelink: Profile-Device}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink: Profile-Device}}.
 
 ---

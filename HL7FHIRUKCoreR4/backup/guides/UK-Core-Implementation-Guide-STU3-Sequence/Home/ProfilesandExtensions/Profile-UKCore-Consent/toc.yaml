@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: Bindings
+  filename: Bindings.page.md
 - name: patient
   filename: patient.page.md
 - name: performer

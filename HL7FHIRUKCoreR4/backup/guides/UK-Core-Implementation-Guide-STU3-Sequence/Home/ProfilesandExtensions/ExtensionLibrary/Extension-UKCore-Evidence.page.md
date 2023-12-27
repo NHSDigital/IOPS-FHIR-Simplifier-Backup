@@ -42,6 +42,6 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-E
 
 
 <h3 id="guidance-evidence">Extension Specific Guidance</h3>
-The resource being referenced SHALL conform to the following {{pagelink:Profile-DiagnosticReport}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-DiagnosticReport}}.
 
 ---

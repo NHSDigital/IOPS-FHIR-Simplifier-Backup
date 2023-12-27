@@ -2,7 +2,7 @@
 
 A reference to the source of the information about the allergy. 
 
-The resource being referenced SHALL conform to one of the following:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
 - {{pagelink:Profile-Patient}}
 - {{pagelink:Profile-Practitioner}}

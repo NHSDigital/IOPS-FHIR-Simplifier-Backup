@@ -42,4 +42,7 @@ select
 Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-ObservationTriggeredBy/~issues?level=File">Report Issue for Extension-UKCore-ObservationTriggeredBy</a>.
 </div>
 
+<h3 id="guidance-obstriggeredby">Extension Specific Guidance</h3>
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Observation}}.
+
 ---

@@ -1,6 +1,6 @@
 ## `performer`
 
-The `MedicationDispense.performer.actor` element SHALL conform to one the following:
+The `MedicationDispense.performer.actor` element SHOULD conform to one the following:
 
 - {{pagelink:Profile-Device}}
 - {{pagelink:Profile-Organization}}
