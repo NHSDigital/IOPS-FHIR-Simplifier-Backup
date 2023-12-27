@@ -1,8 +1,8 @@
 ## <code>{{page-title}}</code>
 
-<code>provision.actor.reference</code>
+<code>Consent.provision.actor.reference</code>
 
-The resource being referenced SHALL conform to one of the following:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 - [Profile UKCore-CareTeam](https://simplifier.net/hl7fhirukcorer4/ukcore-careteam)
 - {{pagelink:Profile-Device}}
 - [Group Resource](https://hl7.org/fhir/R4/group.html)
@@ -12,8 +12,12 @@ The resource being referenced SHALL conform to one of the following:
 - {{pagelink:Profile-PractitionerRole}}
 - {{pagelink:Profile-RelatedPerson}}
 
-<code>provision.data.reference</code>
+<code>Consent.provision.data.reference</code>
 
 Where a UK Core profile exists the resource being referenced SHALL conform to the profile.
+
+<code>Consent.provision.code</code>
+
+This element has a preferred binding to {{ValueSet-UKCore-ConsentProvision}}.
 
 ---

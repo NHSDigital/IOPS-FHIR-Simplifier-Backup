@@ -1,6 +1,6 @@
 ## <code>{{page-title}}</code>
 
-The resource referenced in `EpisodeOfCare.diagnosis.condition` SHALL conform to the {{pagelink:Profile-Condition}}.
+`EpisodeOfCare.diagnosis.condition` it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Condition}}.
 
 ---
 

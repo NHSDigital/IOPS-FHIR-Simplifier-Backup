@@ -34,6 +34,8 @@ select
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
+  <b>Colostomy Bag</b> - An example to illustrate a colostomy bag<br/>
+{{pagelink:Example-UKCore-Device-ColostomyBag}}
 <b>Software as a Medical Device</b> - An example to illustrate recording AI softweare as a medical device.<br/>
 {{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}<br><br>
 <b>Sphygmomanometer</b> - An example to illustrate recording a specific blood pressure device.<br/>

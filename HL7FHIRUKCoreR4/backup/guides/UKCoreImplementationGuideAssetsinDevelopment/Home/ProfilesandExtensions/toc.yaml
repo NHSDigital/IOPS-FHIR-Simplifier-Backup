@@ -24,4 +24,11 @@
   filename: ProfileUKCore-Provenance
 - name: Profile UKCore-RequestGroup
   filename: Profile-UKCore-RequestGroup
-
+- name: Profile UKCore-QuestionnaireResponse
+  filename: Profile-UKCore-QuestionnaireResponse
+- name: Profile UKCore-Flag
+  filename: Profile-UKCore-Flag
+- name: Profile UKCore-ImagingStudy
+  filename: Profile-UKCore-ImagingStudy
+- name: Profile UKCore-EpisodeOfCare
+  filename: Profile-UKCore-EpisodeOfCare

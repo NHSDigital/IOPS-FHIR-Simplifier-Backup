@@ -1,6 +1,6 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to one of the following:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 * {{pagelink:Profile-Appointment}}
 * [AppointmentResponse Resource](https://hl7.org/fhir/R4/AppointmentResponse.html)
 * [Profile UKCore-CarePlan](https://simplifier.net/hl7fhirukcorer4/ukcore-careplan)

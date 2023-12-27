@@ -40,6 +40,6 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-B
 </div>
 
 <h3 id="guidance-bookingorganization">Extension Specific Guidance</h3>
-The resource being referenced SHALL conform to the following {{pagelink:Profile-Organization}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Organization}}.
 
 ---

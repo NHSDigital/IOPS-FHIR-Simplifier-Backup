@@ -40,4 +40,12 @@ select
 Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CollectionCollector/~issues?level=File">Report Issue for Extension-UKCore-CollectionCollector</a>.
 </div>
 
+
+<h3 id="guidance-specimencollectioncollector">Extension Specific Guidance</h3>
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
+
+- {{pagelink:Profile-Patient}}
+- {{pagelink:Profile-RelatedPerson}}
+
+
 ---

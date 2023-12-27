@@ -40,7 +40,8 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-A
 </div>
 
 <h3 id="guidance-additionalcontact">Extension Specific Guidance</h3>
-The resource being referenced SHALL conform to one of the following:
+
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
 - {{pagelink:Profile-Organization}}
 - {{pagelink:Profile-Practitioner}}

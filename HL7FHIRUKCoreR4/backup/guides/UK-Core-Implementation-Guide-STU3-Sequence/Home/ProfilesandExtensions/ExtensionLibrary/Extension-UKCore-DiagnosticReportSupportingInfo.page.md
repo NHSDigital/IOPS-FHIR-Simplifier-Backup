@@ -40,4 +40,14 @@ select
 Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DiagnosticReportSupportingInfo/~issues?level=File">Report Issue for Extension-UKCore-DiagnosticReportSupportingInfo</a>.
 </div>
 
+<h3 id="guidance-diagnosticreportsupportinginfo">Extension Specific Guidance</h3>
+
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
+
+- [http://hl7.org/fhir/StructureDefinition/Citation](Citation)
+- {{pagelink:Profile-DiagnosticReport}}
+- {{pagelink:Profile-Observation}}
+- {{pagelink:Profile-Procedure}}
+
+
 ---
