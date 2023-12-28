@@ -2,7 +2,7 @@
 
 Intended performer of administration by reference. 
 
-The resource being referenced SHALL conform to one of the following:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 - [Profile UKCore-CareTeam](https://simplifier.net/hl7fhirukcorer4/ukcorecareteam)
 - {{pagelink:Profile-Device}}
 - {{pagelink:Profile-Organization}}

@@ -18,17 +18,25 @@
   filename: ProfileUKCore-DocumentReference
 - name: Profile DocumentReference-Imaging
   filename: Profile-DocumentReference-Imaging
-- name: Profile UKCore-OrganizationAffiliation
-  filename: Profile-UKCore-OrganizationAffiliation
-- name: Profile UKCore-Provenance
-  filename: ProfileUKCore-Provenance
-- name: Profile UKCore-RequestGroup
-  filename: Profile-UKCore-RequestGroup
-- name: Profile UKCore-QuestionnaireResponse
-  filename: Profile-UKCore-QuestionnaireResponse
+- name: Profile UKCore-EpisodeOfCare
+  filename: Profile-UKCore-EpisodeOfCare
 - name: Profile UKCore-Flag
   filename: Profile-UKCore-Flag
 - name: Profile UKCore-ImagingStudy
   filename: Profile-UKCore-ImagingStudy
-- name: Profile UKCore-EpisodeOfCare
-  filename: Profile-UKCore-EpisodeOfCare
+- name: Profile UKCore-MesageHeader
+  filename: Profile-UKCore-MesageHeader
+- name: Profile UKCore-OperationOutcome
+  filename: Profile-UKCore-OperationOutcome
+- name: Profile UKCore-OrganizationAffiliation
+  filename: Profile-UKCore-OrganizationAffiliation
+- name: Profile UKCore-Provenance
+  filename: ProfileUKCore-Provenance
+- name: Profile UKCore-QuestionnaireResponse
+  filename: Profile-UKCore-QuestionnaireResponse
+- name: Profile UKCore-RequestGroup
+  filename: Profile-UKCore-RequestGroup
+- name: Profile UKCore-Task
+  filename: Profile-UKCore-Task
+- name: ProfileTemplate
+  filename: ProfileTemplate.page.md

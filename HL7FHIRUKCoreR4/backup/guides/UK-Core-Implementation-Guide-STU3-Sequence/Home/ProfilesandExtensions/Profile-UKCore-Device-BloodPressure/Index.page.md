@@ -112,7 +112,22 @@ This is a derived profile of {{pagelink: Profile-Device,text:UKCore-Device}} and
 
 <h3>Minimum Viable Content</h3>
 
-The minimum viable content that all provider and consumer systems SHALL support are the elements within the corresponding {{pagelink: Profile-Device,text:UKCore-Device}} table.
+A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+
+<table class="assets" title="Minimum Viable Content list">
+<tr>
+<th class="width30">Element</th>
+<th class="width70">Reason</th>
+</tr>
+<tr>
+<td><code>Device.status</code></td>
+<td>The status of the Device.</td>
+</tr>
+<tr>
+<td><code>Device.type</code></td>
+<td>The type of the Device.</td>
+</tr>
+</table>
 
 ---
 
