@@ -2,7 +2,7 @@
 
 A business required element identifying the clinically qualified human prescriber referenced by a `Practitioner` or `PractitionerRole` resource. They may be other possible references depending on the use case the full list is below. 
 
-The resource being referenced SHALL conform to one of the following:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 - [Profile UKCore-Device](https://simplifier.net/hl7fhirukcorer4/ukcoredevice)
 - {{pagelink:Profile-Organization}}
 - {{pagelink:Profile-Patient}}

@@ -16,8 +16,6 @@
   filename: Profile-UKCore-Condition
 - name: Profile UKCore-Consent
   filename: Profile-UKCore-Consent
-- name: Profile UKCore-Device
-  filename: Profile-UKCore-Device
 - name: Profile UKCore-Device-BloodPressure
   filename: Profile-UKCore-Device-BloodPressure
 - name: Profile UKCore-DiagnosticReport
@@ -26,16 +24,10 @@
   filename: Profile-UKCore-DiagnosticReport-Lab
 - name: Profile UKCore-Encounter
   filename: Profile-UKCore-Encounter
-- name: Profile UKCore-EpisodeOfCare
-  filename: Profile-UKCore-EpisodeOfCare
 - name: Profile UKCore-FamilyMemberHistory
   filename: Profile-UKCore-FamilyMemberHistory
-- name: Profile UKCore-Flag
-  filename: Profile-UKCore-Flag
 - name: Profile UKCore-HealthcareService
   filename: Profile-UKCore-HealthcareService
-- name: Profile UKCore-ImagingStudy
-  filename: Profile-UKCore-ImagingStudy
 - name: Profile UKCore-Immunization
   filename: Profile-UKCore-Immunization
 - name: Profile UKCore-List
@@ -52,8 +44,6 @@
   filename: Profile-UKCore-MedicationRequest
 - name: Profile UKCore-MedicationStatement
   filename: Profile-UKCore-MedicationStatement
-- name: Profile UKCore-MessageHeader
-  filename: Profile-UKCore-MessageHeader
 - name: Profile UKCore-Observation
   filename: Profile-UKCore-Observation
 - name: Profile UKCore-Observation-ACVPU
@@ -94,8 +84,6 @@
   filename: Profile-UKCore-Observation-VitalSigns-OxygenSaturation
 - name: Profile-UKCore-Observation-VitalSigns-RespirationRate
   filename: Profile-UKCore-Observation-VitalSigns-RespirationRate
-- name: Profile UKCore-OperationOutcome
-  filename: Profile-UKCore-OperationOutcome
 - name: Profile UKCore-Organization
   filename: Profile-UKCore-Organization
 - name: Profile UKCore-Patient
@@ -108,8 +96,6 @@
   filename: Profile-UKCore-Procedure
 - name: Profile UKCore-Questionnaire
   filename: Profile-UKCore-Questionnaire
-- name: Profile UKCore-QuestionnaireResponse
-  filename: Profile-UKCore-QuestionnaireResponse
 - name: Profile UKCore-RelatedPerson
   filename: Profile-UKCore-RelatedPerson
 - name: Profile UKCore-Schedule
@@ -122,5 +108,3 @@
   filename: Profile-UKCore-Slot
 - name: Profile UKCore-Specimen
   filename: Profile-UKCore-Specimen
-- name: Profile UKCore-Task
-  filename: Profile-UKCore-Task

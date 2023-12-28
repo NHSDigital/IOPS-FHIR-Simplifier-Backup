@@ -4,3 +4,11 @@
   filename: Extensions.page.md
 - name: Bindings
   filename: Bindings.page.md
+- name: patient
+  filename: patient.page.md
+- name: owner
+  filename: owner.page.md
+- name: location
+  filename: location.page.md
+- name: parent
+  filename: parent.page.md

@@ -1,6 +1,6 @@
 ## `{{page-title}}`
 
-Any resource being referenced SHALL conform to the following profiles/resources:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
 - {{pagelink:Profile-EpisodeOfCare}}
 - {{pagelink:Profile-Encounter}}
