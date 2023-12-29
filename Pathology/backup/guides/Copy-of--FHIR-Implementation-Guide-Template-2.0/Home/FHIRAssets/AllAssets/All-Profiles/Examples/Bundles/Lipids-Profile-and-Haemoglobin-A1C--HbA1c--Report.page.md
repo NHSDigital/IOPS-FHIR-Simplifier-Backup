@@ -32,11 +32,11 @@ topic: R4BundleExampleLipidsandHbA1cReport
             {{render:path-data-model-lipids-HbA1c-report}}
         </div>
         <div id="XML" role="tabpanel" class="tabcontent">
-            {{xml:path-R4-example-bundle-LFT-UandE-report}}
+            {{xml:path-R4-example-bundle-lipids-HbA1c-report}}
         </div>
         <div id="JSON" role="tabpanel" class="tabcontent">
-            {{json:path-R4-example-bundle-LFT-UandE-report}}
+            {{json:path-R4-example-bundle-lipids-HbA1c-report}}
         </div>
         <div id="Tree" role="tabpanel" class="tabcontent expandedexample">
-            {{tree:path-R4-example-bundle-LFT-UandE-report}}
+            {{tree:path-R4-example-bundle-lipids-HbA1c-report}}
         </div>
