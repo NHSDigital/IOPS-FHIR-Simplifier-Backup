@@ -15,7 +15,7 @@ topic: ReleaseNotes
 ### v0.1.3 (08/12/2023)
 
 * Added a new {{pagelink:Background}} page (under the Design menu bar item). This incorporates content from the previous version of the {{pagelink:DesignOverview}} page, with additional material describing GP practice pathology data flows. 
-* Updated the {{pagelink:DesignOverview}} page (under the Design menu bar item). This now includes additional content, including a summary of the FHIR design approach that has been adopted as part of this implementation guide and the use of SNOMED CT.
+* Updated the {{pagelink:DesignOverview}} page (under the Design menu bar item). This now contains additional content, including a summary of the FHIR design approach that has been adopted as part of this implementation guide and the use of SNOMED CT.
 * Updated references to the PaLM and PBCL SNOMED CT reference sets throughout the implementation guide.
 
 ### v0.1.2 (30/10/2023)
