@@ -16,7 +16,5 @@
   filename: Heading--Pregnancy-Status---Pregnancy-State.page.md
 - name: 'Heading: Red Flags'
   filename: Heading--Red-Flags.page.md
-- name: 'Heading: Procedures and therapies - Procedures'
-  filename: Heading--Procedures-and-therapies---Procedures.page.md
-- name: 'Heading: Procedures and therapies - Contraception type'
-  filename: Heading--Procedures-and-therapies---Contraception-type.page.md
+- name: 'Heading: Procedures and therapies - ABPM declined'
+  filename: Heading--Procedures-and-therapies---ABPM-declined.page.md
