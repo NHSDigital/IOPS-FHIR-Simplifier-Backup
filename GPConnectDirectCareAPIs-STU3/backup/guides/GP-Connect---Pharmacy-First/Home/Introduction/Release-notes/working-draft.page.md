@@ -33,7 +33,20 @@
                 {{pagelink:Home/Build/Handling-medications}}
             </td>
             <td>
-                Removed erroneus reference to AMPP. This specification is designed to be used with AMP only.
+                <ul>
+                    <li>Removed erroneus reference to AMPP. This specification is designed to be used with AMP only.</li>
+                </ul>
+            </td>
+        </tr>
+        <!-- ampp -->
+        <tr>
+            <td class="nhsd-m-table__highlighted-items">
+                {{pagelink:Home/Build/Mapping-PRSB-headings-to-FHIR}}
+            </td>
+            <td>
+                <ul>
+                    <li>Removal of "Procedures and therapies - Contraception type"</li>
+                </ul>
             </td>
         </tr>
     </tbody>
