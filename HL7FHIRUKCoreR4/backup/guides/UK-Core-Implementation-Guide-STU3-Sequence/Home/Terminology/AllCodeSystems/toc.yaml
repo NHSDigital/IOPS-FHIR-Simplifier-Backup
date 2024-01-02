@@ -34,8 +34,6 @@
   filename: CodeSystem-UKCore-EncounterLocationTypeEngland.page.md
 - name: CodeSystem UKCore-EncounterLocationTypeWales
   filename: CodeSystem-UKCore-EncounterLocationTypeWales.page.md
-- name: CodeSystem UKCore-EPSIssueCode
-  filename: CodeSystem-UKCore-EPSIssueCode.page.md
 - name: CodeSystem UKCore-EthnicCategoryEngland
   filename: CodeSystem-UKCore-EthnicCategoryEngland.page.md
 - name: CodeSystem UKCore-EthnicCategoryWales
@@ -46,8 +44,6 @@
   filename: CodeSystem-UKCore-GenomeSequencingCategory.page.md
 - name: CodeSystem UKCore-HumanLanguage
   filename: CodeSystem-UKCore-HumanLanguage.page.md
-- name: CodeSystem UKCore-ITKResponseCode
-  filename: CodeSystem-UKCore-ITKResponseCode.page.md
 - name: CodeSystem UKCore-LegalStatusClassificationEngland
   filename: CodeSystem-UKCore-LegalStatusClassificationEngland.page.md
 - name: CodeSystem UKCore-LegalStatusClassificationWales
@@ -106,5 +102,3 @@
   filename: CodeSystem-UKCore-SourceOfAdmissionEngland.page.md
 - name: CodeSystem UKCore-SourceOfAdmissionWales
   filename: CodeSystem-UKCore-SourceOfAdmissionWales.page.md
-- name: CodeSystem UKCore-SpineErrorOrWarningCode
-  filename: CodeSystem-UKCore-SpineErrorOrWarningCode.page.md

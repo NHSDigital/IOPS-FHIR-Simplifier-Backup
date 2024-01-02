@@ -7,6 +7,6 @@ Where possible, it is expected that the resource being referenced SHOULD conform
 - {{pagelink:Profile-DiagnosticReport}}
 - <a href="https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-DocumentReference?version=current" target="_blank" class="external">Profile UKCore-DocumentReference</a>
 - {{pagelink:Profile-Observation}}
-- {{pagelink:Profile-QuestionnaireResponse}}
+- [UKCore-QuestionnaireResponse (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-QuestionnaireResponse?version=current
 
 ---

@@ -486,10 +486,13 @@
                 if (window.matchMedia("(min-width: 992px)").matches){
                     //add classes for profiles
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(3).addClass("profile-item");
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(20,25).addClass("obs-derived");
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(26,27).addClass("obs-derived");
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(28,29).addClass("obs-derived");
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(30,39).addClass("obsvital-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(0,11).addClass("menu1");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(11,18).addClass("menu2");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(39).addClass("menu3");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(19,24).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(25,26).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(27,28).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(29,38).addClass("obsvital-derived");
 
                     //add the sub menu's for profiles
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentThree" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles P to Z <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
@@ -499,20 +502,20 @@
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
                     
                     //and move the items into the sub menus
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(0,12)); //A to K
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.menu1')); //A to K
 
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(12,19)); //L to N
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(19,20)); //Obs
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.menu2')); //L to N
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(18,19)); //Obs
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append('<li id="dropdownObsParent" class="submenu-subparent"><a href="javascript:void(0)" class="dropdown-toggle"><span class="caret"></span>&nbsp;&nbsp;Derived Profiles of UKCore-Observation</a><ul class="submenu-sublist subhidden"></ul></li>'); //Obs Parent
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(25,26)); //Obs Group Lab
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(27,28)); //Obs Lab
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(29,30)); //Obs Vital
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(24,25)); //Obs Group Lab
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(26,27)); //Obs Lab
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(28,29)); //Obs Vital
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append('<li id="dropdownObsVitalParent" class="submenu-subparent"><a href="javascript:void(0)" class="dropdown-toggle"><span class="caret"></span>&nbsp;Derived Profiles of UKCore-Observation-VitalSigns</a><ul class="submenu-sublist subhidden"></ul></li>'); //ObsVital Parent
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(0) ul.submenu-sublist').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.obs-derived')); //Obs Derived
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(1) ul.submenu-sublist').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.obsvital-derived')); //ObsVital Derived 
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(39,40)); //Other O's 
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(38,39)); //Other O's 
 
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(40)); //P to Z
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.menu3')); //P to Z
                 } else {
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');

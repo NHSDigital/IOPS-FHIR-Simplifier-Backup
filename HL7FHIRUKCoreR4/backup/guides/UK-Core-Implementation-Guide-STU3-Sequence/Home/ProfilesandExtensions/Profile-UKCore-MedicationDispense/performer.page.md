@@ -2,7 +2,7 @@
 
 The `MedicationDispense.performer.actor` element SHOULD conform to one the following:
 
-- {{pagelink:Profile-Device}}
+- [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current)
 - {{pagelink:Profile-Organization}}
 - {{pagelink:Profile-Patient}}
 - {{pagelink:Profile-Practitioner}}

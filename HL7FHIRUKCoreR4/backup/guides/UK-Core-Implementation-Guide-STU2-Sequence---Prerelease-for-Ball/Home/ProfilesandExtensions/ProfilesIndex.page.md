@@ -64,12 +64,6 @@ The Profiles are rendered in several formats:
 <td>5</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Consent-15646,text:UKCore-Consent}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Consent resource for the minimal set of data to query and retrieve written or verbal agreements concerning authorised or restricted actions relating to healthcare.</td>
-<td>6</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-DiagnosticReport-54417,text:UKCore-DiagnosticReport}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the DiagnosticReport resource for the minimal set of data to query and retrieve the findings of diagnostic tests.<br>
@@ -89,34 +83,16 @@ The Profiles are rendered in several formats:
 <td>4</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-EpisodeOfCare-32298,text:UKCore-EpisodeOfCare}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the EpisodeOfCare resource for the minimal set of data to query and retrieve episode of care information.</td>
-<td>4</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-FamilyMemberHistory-69978,text:UKCore-FamilyMemberHistory}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the FamilyMemberHistory resource for the minimal set of data to query and retrieve information about health events and conditions for a person related to the patient relevant in the context of care.</td>
 <td>6</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Flag-45551,text:UKCore-Flag}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Flag resource for the minimal set of data to query and retrieve flag information.</td>
-<td>5</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-HealthcareService-13702,text:UKCore-HealthcareService}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the HealthcareService resource for the minimal set of data to query and retrieve healthcare service information.</td>
 <td>5</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-ImagingStudy-72492,text:UKCore-ImagingStudy}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the ImagingStudy resource for the minimal set of data to query and retrieve content of DICOM imaging studies.</td>
-<td>6</td>
 </tr>
 <tr>
 <td>{{pagelink:Profile-Immunization-16790,text:UKCore-Immunization}}</td>
@@ -168,12 +144,6 @@ The Profiles are rendered in several formats:
 <td>3</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-MessageHeader-48618,text:UKCore-MessageHeader}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the MessageHeader resource for the minimal set of data to be present in a message header.</td>
-<td>4</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-Observation-67521,text:UKCore-Observation}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the Observation resource for the minimal set of data to query and retrieve information of measurements and simple assertions made about an individual, device or other subject.<br>
@@ -191,12 +161,6 @@ The Profiles are rendered in several formats:
 <td>active</td>
 <td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information for results borne from a single request panel, or profile.</td>
 <td>6</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-OperationOutcome-83857,text:UKCore-OperationOutcome}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the OperationOutcome resource for the minimal set of data to query and retrieve information about the outcome of an attempted system operation.</td>
-<td>4</td>
 </tr>
 <tr>
 <td>{{pagelink:Profile-Organization-94604,text:UKCore-Organization}}</td>
@@ -232,12 +196,6 @@ The Profiles are rendered in several formats:
 <td>{{pagelink:Profile-Questionnaire-47615,text:UKCore-Questionnaire}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the Questionnaire resource for the minimal set of data to query and retrieve questionnaire information.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-QuestionnaireResponse-37290,text:UKCore-QuestionnaireResponse}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the QuestionnaireResponse resource for the minimal set of data to query and retrieve a complete or partial list of answers to a set of questions completed when responding to a questionnaire.</td>
 <td>5</td>
 </tr>
 <tr>
@@ -277,12 +235,6 @@ The Profiles are rendered in several formats:
 <td>Defines the UK Core constraints and extensions on the Specimen resource for the minimal set of data to query and retrieve information regarding samples used for analysis.</td>
 <td>6</td>
 </tr>
-<tr>
-<td>{{pagelink:Profile-Task-90615,text:UKCore-Task}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Task resource for the minimal set of data to query and retrieve task information.</td>
-<td>5</td>
-</tr>
 </table>
 </div>
 
@@ -298,7 +250,6 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-Appointment-87479,text:UKCore-Appointment}}</li>
 <li>{{pagelink:Profile-Composition-31483,text:UKCore-Composition}}</li>
 <li>{{pagelink:Profile-Condition-78787,text:UKCore-Condition}}</li>
-<li>{{pagelink:Profile-Consent-15646,text:UKCore-Consent}}</li>
 <li>{{pagelink:Profile-DiagnosticReport-54417,text:UKCore-DiagnosticReport}}</li>
 <li>{{pagelink:Profile-DiagnosticReport-Lab-56818,text:UKCore-DiagnosticReport-Lab}}</li>
 </ul>
@@ -306,11 +257,8 @@ The Profiles are rendered in several formats:
 <p><b>E-L:</b></p>
 <ul>
 <li>{{pagelink:Profile-Encounter-79976,text:UKCore-Encounter}}</li>
-<li>{{pagelink:Profile-EpisodeOfCare-32298,text:UKCore-EpisodeOfCare}}</li>
 <li>{{pagelink:Profile-FamilyMemberHistory-69978,text:UKCore-FamilyMemberHistory}}</li>
-<li>{{pagelink:Profile-Flag-45551,text:UKCore-Flag}}</li>
 <li>{{pagelink:Profile-HealthcareService-13702,text:UKCore-HealthcareService}}</li>
-<li>{{pagelink:Profile-ImagingStudy-72492,text:UKCore-ImagingStudy}}</li>
 <li>{{pagelink:Profile-Immunization-16790,text:UKCore-Immunization}}</li>
 <li>{{pagelink:Profile-List-19037,text:UKCore-List}}</li>
 <li>{{pagelink:Profile-Location-14324,text:UKCore-Location}}</li>
@@ -323,11 +271,9 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-MedicationDispense-76932,text:UKCore-MedicationDispense}}</li>
 <li>{{pagelink:Profile-MedicationRequest-20572,text:UKCore-MedicationRequest}}</li>
 <li>{{pagelink:Profile-MedicationStatement-34649,text:UKCore-MedicationStatement}}</li>
-<li>{{pagelink:Profile-MessageHeader-48618,text:UKCore-MessageHeader}}</li>
 <li>{{pagelink:Profile-Observation-67521,text:UKCore-Observation}}</li>
 <li>{{pagelink:Profile-Observation-Lab-67452,text:UKCore-Observation-Lab}}</li>
 <li>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-LabGroup}}</li>
-<li>{{pagelink:Profile-OperationOutcome-83857,text:UKCore-OperationOutcome}}</li>
 <li>{{pagelink:Profile-Organization-94604,text:UKCore-Organization}}</li>
 <li>{{pagelink:Profile-Patient-88961,text:UKCore-Patient}}</li>
 <li>{{pagelink:Profile-Practitioner-10758,text:UKCore-Practitioner}}</li>
@@ -338,14 +284,12 @@ The Profiles are rendered in several formats:
 <p><b>Q-Z:</b></p> 
 <ul>  
 <li>{{pagelink:Profile-Questionnaire-47615,text:UKCore-Questionnaire}}</li>
-<li>{{pagelink:Profile-QuestionnaireResponse-37290,text:UKCore-QuestionnaireResponse}}</li>
 <li>{{pagelink:Profile-RelatedPerson-51006,text:UKCore-RelatedPerson}}</li>
 <li>{{pagelink:Profile-Schedule-96669,text:UKCore-Schedule}}</li>
 <li>{{pagelink:Profile-ServiceRequest-88746,text:UKCore-ServiceRequest}}</li>
 <li>{{pagelink:Profile-ServiceRequest-Lab-37178,text:UKCore-ServiceRequest-Lab}}</li>
 <li>{{pagelink:Profile-Slot-83549,text:UKCore-Slot}}</li>
 <li>{{pagelink:Profile-Specimen-37178,text:UKCore-Specimen}}</li>
-<li>{{pagelink:Profile-Task-90615,text:UKCore-Task}}</li>
 </ul>
 </td></tr>
 
@@ -384,10 +328,7 @@ The Profiles are rendered in several formats:
 <p><b>C&TA Sprint 4:</b></p>
 <ul>
 <li>{{pagelink:Profile-Encounter-79976,text:UKCore-Encounter}}</li>
-<li>{{pagelink:Profile-EpisodeOfCare-32298,text:UKCore-EpisodeOfCare}}</li>
 <li>{{pagelink:Profile-List-19037,text:UKCore-List}}</li>
-<li>{{pagelink:Profile-MessageHeader-48618,text:UKCore-MessageHeader}}</li>
-<li>{{pagelink:Profile-OperationOutcome-83857,text:UKCore-OperationOutcome}}</li>
 <li>{{pagelink:Profile-Procedure-10775,text:UKCore-Procedure}}</li>
 <li>{{pagelink:Profile-RelatedPerson-51006,text:UKCore-RelatedPerson}}</li>
 </ul>
@@ -397,23 +338,18 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-Appointment-87479,text:UKCore-Appointment}}</li>
 <li>{{pagelink:Profile-Composition-31483,text:UKCore-Composition}}</li>
 <li>{{pagelink:Profile-Condition-78787,text:UKCore-Condition}}</li>
-<li>{{pagelink:Profile-Flag-45551,text:UKCore-Flag}}</li>
 <li>{{pagelink:Profile-HealthcareService-13702,text:UKCore-HealthcareService}}</li>
 <li>{{pagelink:Profile-Questionnaire-47615,text:UKCore-Questionnaire}}</li>
-<li>{{pagelink:Profile-QuestionnaireResponse-37290,text:UKCore-QuestionnaireResponse}}</li>
 <li>{{pagelink:Profile-ServiceRequest-88746,text:UKCore-ServiceRequest}}</li>
 <li>{{pagelink:Profile-Schedule-96669,text:UKCore-Schedule}}</li>
 <li>{{pagelink:Profile-Slot-83549,text:UKCore-Slot}}</li>
-<li>{{pagelink:Profile-Task-90615,text:UKCore-Task}}</li>
 </ul>
 
 <p><b>C&TA Sprint 6:</b></p>
 <ul>
-<li>{{pagelink:Profile-Consent-15646,text:UKCore-Consent}}</li>
 <li>{{pagelink:Profile-DiagnosticReport-54417,text:UKCore-DiagnosticReport}}</li>
 <li>{{pagelink:Profile-DiagnosticReport-Lab-56818,text:UKCore-DiagnosticReport-Lab}}</li>
 <li>{{pagelink:Profile-FamilyMemberHistory-69978,text:UKCore-FamilyMemberHistory}}</li>
-<li>{{pagelink:Profile-ImagingStudy-72492,text:UKCore-ImagingStudy}}</li>
 <li>{{pagelink:Profile-Observation-67521,text:UKCore-Observation}}</li>
 <li>{{pagelink:Profile-Observation-Lab-67452,text:UKCore-Observation-Lab}}</li>
 <li>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-LabGroup}}</li>
@@ -442,10 +378,6 @@ The Profiles are rendered in several formats:
 <ul>
 <li>{{pagelink:Profile-Condition-78787,text:UKCore-Condition}}</li>
 </ul>
-<p><b>Consent:</b></p>
-<ul>
-<li>{{pagelink:Profile-Consent-15646,text:UKCore-Consent}}</li>
-</ul>
 <p><b>DiagnosticReport:</b></p>
 <ul>
 <li>{{pagelink:Profile-DiagnosticReport-54417,text:UKCore-DiagnosticReport}}</li>
@@ -457,25 +389,13 @@ The Profiles are rendered in several formats:
 <ul>
 <li>{{pagelink:Profile-Encounter-79976,text:UKCore-Encounter}}</li>
 </ul>
-<p><b>EpisodeOfCare:</b></p>
-<ul>
-<li>{{pagelink:Profile-EpisodeOfCare-32298,text:UKCore-EpisodeOfCare}}</li>
-</ul>
 <p><b>FamilyMemberHistory:</b></p>
 <ul>
 <li>{{pagelink:Profile-FamilyMemberHistory-69978,text:UKCore-FamilyMemberHistory}}</li>
 </ul>
-<p><b>Flag:</b></p>
-<ul>
-<li>{{pagelink:Profile-Flag-45551,text:UKCore-Flag}}</li>
-</ul>
 <p><b>HealthcareService:</b></p>
 <ul>
 <li>{{pagelink:Profile-HealthcareService-13702,text:UKCore-HealthcareService}}</li>
-</ul>
-<p><b>ImagingStudy:</b></p>
-<ul>
-<li>{{pagelink:Profile-ImagingStudy-72492,text:UKCore-ImagingStudy}}</li>
 </ul>
 <p><b>Immunization:</b></p>
 <ul>
@@ -511,10 +431,6 @@ The Profiles are rendered in several formats:
 <ul>
 <li>{{pagelink:Profile-MedicationStatement-34649,text:UKCore-MedicationStatement}}</li>
 </ul>
-<p><b>MessageHeader:</b></p>
-<ul>
-<li>{{pagelink:Profile-MessageHeader-48618,text:UKCore-MessageHeader}}</li>
-</ul>
 
 <p><b>Observation:</b></p>
 <ul>
@@ -523,10 +439,6 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-LabGroup}}</li>
 </ul>
 
-<p><b>OperationOutcome:</b></p>
-<ul>
-<li>{{pagelink:Profile-OperationOutcome-83857,text:UKCore-OperationOutcome}}</li>
-</ul>
 <p><b>Organization:</b></p>
 <ul>
 <li>{{pagelink:Profile-Organization-94604,text:UKCore-Organization}}</li>
@@ -552,10 +464,6 @@ The Profiles are rendered in several formats:
 <ul>
 <li>{{pagelink:Profile-Questionnaire-47615,text:UKCore-Questionnaire}}</li>
 </ul>
-<p><b>QuestionnaireResponse:</b></p>
-<ul>
-<li>{{pagelink:Profile-QuestionnaireResponse-37290,text:UKCore-QuestionnaireResponse}}</li>
-</ul>
 <p><b>RelatedPerson:</b></p>
 <ul>
 <li>{{pagelink:Profile-RelatedPerson-51006,text:UKCore-RelatedPerson}}</li>
@@ -576,10 +484,6 @@ The Profiles are rendered in several formats:
 <p><b>Specimen:</b></p>
 <ul>
 <li>{{pagelink:Profile-Specimen-37178,text:UKCore-Specimen}}</li>
-</ul>
-<p><b>Task:</b></p>
-<ul>
-<li>{{pagelink:Profile-Task-90615,text:UKCore-Task}}</li>
 </ul>
 
 </div>

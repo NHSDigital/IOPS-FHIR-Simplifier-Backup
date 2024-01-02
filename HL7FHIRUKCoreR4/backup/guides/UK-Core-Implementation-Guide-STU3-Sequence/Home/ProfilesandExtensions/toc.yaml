@@ -14,8 +14,6 @@
   filename: Profile-UKCore-Composition
 - name: Profile UKCore-Condition
   filename: Profile-UKCore-Condition
-- name: Profile UKCore-Consent
-  filename: Profile-UKCore-Consent
 - name: Profile UKCore-Device-BloodPressure
   filename: Profile-UKCore-Device-BloodPressure
 - name: Profile UKCore-DiagnosticReport

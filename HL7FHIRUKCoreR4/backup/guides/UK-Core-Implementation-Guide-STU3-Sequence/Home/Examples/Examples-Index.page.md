@@ -33,7 +33,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Bundle-NEWS2Observations}}</li>
 <li>{{pagelink:Example-UKCore-Composition-Discharge}}</li>
 <li>{{pagelink:Example-UKCore-Condition-BleedingFromEar}}</li>
-<li>{{pagelink:Example-UKCore-Consent-ForInformationAccess}}</li>
 <li>{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}</li>
 <li>{{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}</li>
 <li>{{pagelink:Example-UKCore-Device-Sphygmomanometer}}</li>
@@ -42,11 +41,8 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <p><b>E-L:</b></p>
 <ul>
 <li>{{pagelink:Example-UKCore-Encounter-InpatientEncounter}}</li>
-<li>{{pagelink:Example-UKCore-EpisodeOfCare-SmokingCessationtherapy}}</li>
 <li>{{pagelink:Example-UKCore-FamilyMemberHistory-FatherDiabetes}}</li>
-<li>{{pagelink:Example-UKCore-Flag-FoodAllergy}}</li>
 <li>{{pagelink:Example-UKCore-HealthcareService-OrthopaedicService}}</li>
-<li>{{pagelink:Example-UKCore-ImagingStudy-CT-ChestScan}}</li>
 <li>{{pagelink:Example-UKCore-Immunization-InfluenzaVaccine}}</li>
 <li>{{pagelink:Example-UKCore-List-EmptyList}}</li>
 <li>{{pagelink:Example-UKCore-Location-GeneralPracticeNurseClinic}}</li>
@@ -64,7 +60,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-MedicationDispense-EyeDrops}}</li>
 <li>{{pagelink:Example-UKCore-MedicationRequest-EyeDrops}}</li>
 <li>{{pagelink:Example-UKCore-MedicationStatement-Amoxicillin}}</li>
-<li>{{pagelink:Example-UKCore-MessageHeader-Discharge}}</li>
 <li>{{pagelink:Example-UKCore-Observation-24HourBloodPressure}}</li>
 <li>{{pagelink:Example-UKCore-Observation-AwarenessOfDiagnosis}}</li>
 <li>{{pagelink:Example-UKCore-Observation-BreathingNormally}}</li>
@@ -87,7 +82,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Observation-VitalSigns-HeartRate}}</li>
 <li>{{pagelink:Example-UKCore-Observation-VitalSigns-OxygenSaturation}}</li>
 <li>{{pagelink:Example-UKCore-Observation-VitalSigns-RespiratoryRate}}</li>
-<li>{{pagelink:Example-UKCore-OperationOutcome-DateError}}</li>
 <li>{{pagelink:Example-UKCore-Organization-WhiteRoseMedicalCentre}}</li>
 <li>{{pagelink:Example-UKCore-Organization-LeedsTeachingHospital}}</li>
 <li>{{pagelink:Example-UKCore-Patient-BabyPatient}}</li>
@@ -104,10 +98,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Questionnaire-EOLPlan}}</li>
 <li>{{pagelink:Example-UKCore-Questionnaire-FitnessForWork}}</li>
 <li>{{pagelink:Example-UKCore-Questionnaire-InpatientSurvey}}</li>
-<li>{{pagelink:Example-UKCore-QuestionnaireResponse-BabyPatientSurvey}}</li>
-<li>{{pagelink:Example-UKCore-QuestionnaireResponse-EOLPlan}}</li>
-<li>{{pagelink:Example-UKCore-QuestionnaireResponse-FitnessForWork}}</li>
-<li>{{pagelink:Example-UKCore-QuestionnaireResponse-InpatientSurvey}}</li>
 <li>{{pagelink:Example-UKCore-RelatedPerson-JoySmith}}</li>
 <li>{{pagelink:Example-UKCore-Schedule-Immunization}}</li>
 <li>{{pagelink:Example-UKCore-ServiceRequest-ColonoscopyRequest}}</li>
@@ -115,7 +105,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Slot-AvailableWalkInVisit}}</li>
 <li>{{pagelink:Example-UKCore-Specimen-BloodSpecimen}}</li>
 <li>{{pagelink:Example-UKCore-Specimen-UrineSpecimen}}</li>
-<li>{{pagelink:Example-UKCore-Task-Colonoscopy}}</li>
 </ul>
 </td></tr>
 
@@ -271,10 +260,7 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <p><b>C&TA Sprint 4:</b></p>
 <ul>
 <li>{{pagelink:Example-UKCore-Encounter-InpatientEncounter}}</li>
-<li>{{pagelink:Example-UKCore-EpisodeOfCare-SmokingCessationtherapy}}</li>
 <li>{{pagelink:Example-UKCore-List-EmptyList}}</li>
-<li>{{pagelink:Example-UKCore-MessageHeader-Discharge}}</li>
-<li>{{pagelink:Example-UKCore-OperationOutcome-DateError}}</li>
 <li>{{pagelink:Example-UKCore-Procedure-ExaminationOfSkin}}</li>
 <li>{{pagelink:Example-UKCore-RelatedPerson-JoySmith}}</li>
 <li>{{pagelink:Example-UKCore-Extension-AdmissionMethod}}</li>
@@ -290,14 +276,10 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Appointment-OrthopaedicSurgery}}</li>
 <li>{{pagelink:Example-UKCore-Composition-Discharge}}</li>
 <li>{{pagelink:Example-UKCore-Condition-BleedingFromEar}}</li>
-<li>{{pagelink:Example-UKCore-Flag-FoodAllergy}}</li>
 <li>{{pagelink:Example-UKCore-HealthcareService-OrthopaedicService}}</li>
 <li>{{pagelink:Example-UKCore-Questionnaire-InpatientSurvey}}</li>
-<li>{{pagelink:Example-UKCore-QuestionnaireResponse-BabyPatientSurvey}}</li>
-<li>{{pagelink:Example-UKCore-QuestionnaireResponse-InpatientSurvey}}</li>
 <li>{{pagelink:Example-UKCore-Schedule-Immunization}}</li>
 <li>{{pagelink:Example-UKCore-Slot-AvailableWalkInVisit}}</li>
-<li>{{pagelink:Example-UKCore-Task-Colonoscopy}}</li>
 <li>{{pagelink:Example-UKCore-Extension-BookingOrganization}}</li>
 <li>{{pagelink:Example-UKCore-Extension-CareSettingType}}</li>
 <li>{{pagelink:Example-UKCore-Extension-CodingSCTDescId}}</li>
@@ -307,11 +289,9 @@ Whilst every effort has been made to ensure that the examples are correct and us
 
 <p><b>C&TA Sprint 6:</b></p>
 <ul>
-<li>{{pagelink:Example-UKCore-Consent-ForInformationAccess}}</li>
 <li>{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}</li>
 <li>{{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}</li>
 <li>{{pagelink:Example-UKCore-FamilyMemberHistory-FatherDiabetes}}</li>
-<li>{{pagelink:Example-UKCore-ImagingStudy-CT-ChestScan}}</li>
 <li>{{pagelink:Example-UKCore-Observation-AwarenessOfDiagnosis}}</li>
 <li>{{pagelink:Example-UKCore-Observation-DrugUse}}</li>
 <li>{{pagelink:Example-UKCore-Observation-FingerJointInflamed}}</li>
@@ -396,10 +376,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Extension-CodingSCTDescId}}</li>
 <li>{{pagelink:Example-UKCore-Extension-ConditionEpisode}}</li>
 </ul>
-<p><b>Consent:</b></p>
-<ul>
-<li>{{pagelink:Example-UKCore-Consent-ForInformationAccess}}</li>
-</ul>
 <p><b>DiagnosticReport:</b></p>
 <ul>
 <li>{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}</li>
@@ -422,27 +398,15 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Extension-LegalStatus}}</li>
 <li>{{pagelink:Example-UKCore-Extension-OutcomeOfAttendance}}</li>
 </ul>
-<p><b>EpisodeOfCare:</b></p>
-<ul>
-<li>{{pagelink:Example-UKCore-EpisodeOfCare-SmokingCessationtherapy}}</li>
-</ul>
 <p><b>FamilyMemberHistory:</b></p>
 <ul>
 <li>{{pagelink:Example-UKCore-FamilyMemberHistory-FatherDiabetes}}</li>
 <li>{{pagelink:Example-UKCore-Extension-AssociatedEncounter}}</li>
 <li>{{pagelink:Example-UKCore-Extension-Participant}}</li>
 </ul>
-<p><b>Flag:</b></p>
-<ul>
-<li>{{pagelink:Example-UKCore-Flag-FoodAllergy}}</li>
-</ul>
 <p><b>HealthcareService:</b></p>
 <ul>
 <li>{{pagelink:Example-UKCore-HealthcareService-OrthopaedicService}}</li>
-</ul>
-<p><b>ImagingStudy:</b></p>
-<ul>
-<li>{{pagelink:Example-UKCore-ImagingStudy-CT-ChestScan}}</li>
 </ul>
 <p><b>Immunization:</b></p>
 <ul>
@@ -489,10 +453,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Extension-MedicationPrescribingOrganizationType}}</li>
 <li>{{pagelink:Example-UKCore-Extension-PharmacistVerifiedIndicator}}</li>
 </ul>
-<p><b>MessageHeader:</b></p>
-<ul>
-<li>{{pagelink:Example-UKCore-MessageHeader-Discharge}}</li>
-</ul>
 <p><b>Observation:</b></p>
 <ul>
 <li>{{pagelink:Example-UKCore-Observation-24HourBloodPressure}}</li>
@@ -519,10 +479,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Observation-VitalSigns-RespiratoryRate}}</li>
 <li>{{pagelink:Example-UKCore-Extension-RecordingSetting}}</li>
 <li>{{pagelink:Example-UKCore-Extension-TriggeredBy}}</li>
-</ul>
-<p><b>OperationOutcome:</b></p>
-<ul>
-<li>{{pagelink:Example-UKCore-OperationOutcome-DateError}}</li>
 </ul>
 <p><b>Organization:</b></p>
 <ul>
@@ -571,13 +527,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Questionnaire-FitnessForWork}}</li>
 <li>{{pagelink:Example-UKCore-Questionnaire-InpatientSurvey}}</li>
 </ul>
-<p><b>QuestionnaireResponse:</b></p>
-<ul>
-<li>{{pagelink:Example-UKCore-QuestionnaireResponse-BabyPatientSurvey}}</li>
-<li>{{pagelink:Example-UKCore-QuestionnaireResponse-EOLPlan}}</li>
-<li>{{pagelink:Example-UKCore-QuestionnaireResponse-FitnessForWork}}</li>
-<li>{{pagelink:Example-UKCore-QuestionnaireResponse-InpatientSurvey}}</li>
-</ul>
 <p><b>RelatedPerson:</b></p>
 <ul>
 <li>{{pagelink:Example-UKCore-RelatedPerson-JoySmith}}</li>
@@ -608,10 +557,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Extension-CollectionCollector}}</li>
 <li>{{pagelink:Example-UKCore-Extension-SampleCategory}}</li>
 <li>{{pagelink:Example-UKCore-Extension-SpecialHandling}}</li>
-</ul>
-<p><b>Task:</b></p>
-<ul>
-<li>{{pagelink:Example-UKCore-Task-Colonoscopy}}</li>
 </ul>
 
 </div>

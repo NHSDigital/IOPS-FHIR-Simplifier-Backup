@@ -18,12 +18,6 @@ The following [HL7 Core-defined Extensions](http://hl7.org/fhir/R4/extensibility
 <td>Use on Element ID Coding</td>
 <td>NO</td>
 </tr>
-<tr>
-<td><a href="https://hl7.org/fhir/R4/extension-messageheader-response-request.html">Extension messageheader-response-request</a></td>
-<td>MessageHeader</td>
-<td>{{pagelink:Profile-MessageHeader-48618}}</td>
-<td>NO</td>
-</tr>
 <tr>            
 <td><a href="https://hl7.org/fhir/R4/extension-organization-period.html">Extension organization-period</a></td>
 <td>Organization</td>

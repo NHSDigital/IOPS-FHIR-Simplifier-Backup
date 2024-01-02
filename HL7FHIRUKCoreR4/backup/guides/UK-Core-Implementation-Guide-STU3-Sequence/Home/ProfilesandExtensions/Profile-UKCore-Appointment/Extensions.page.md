@@ -19,6 +19,7 @@ More information about the extensions can be found using the links below.
 <td>deliveryChannel</td>
 <td>Appointment</td>
 <td>{{pagelink:Extension-UKCore-DeliveryChannel}}</td>
+<td></td>
 </tr>
 </table>
 

@@ -18,8 +18,8 @@ More information about the extensions can be found using the links below.
 <tr>
 <td>participantR5</td>
 <td>FamilyMemberHistory</td>
-<td>{{pagelink:Extension-UKCore-Participant}}</td>
-<td>This extension is a pre-adopted R5 element, for more details, see {{pagelink:Library-Extensions-PreAdopt-82902}}.</td>
+<td>{{pagelink:Extension-UKCore-FamilyMemberHistoryParticipant}}</td>
+<td>This extension is a pre-adopted R5 element, for more details, see {{pagelink:Library-Extensions-PreAdopt}}.</td>
 </tr>
 </table>
 
