@@ -68,8 +68,6 @@
   filename: ValueSet-UKCore-DeathNotificationStatus.page.md
 - name: ValueSet UKCore-DeliveryChannel
   filename: ValueSet-UKCore-DeliveryChannel.page.md
-- name: ValueSet UKCore-DeviceType
-  filename: ValueSet-UKCore-DeviceType.page.md
 - name: ValueSet UKCore-DischargeDestination
   filename: ValueSet-UKCore-DischargeDestination.page.md
 - name: ValueSet UKCore-DischargeMethod
@@ -134,8 +132,6 @@
   filename: ValueSet-UKCore-MedicationSupplyType.page.md
 - name: ValueSet UKCore-MedicationTradeFamily
   filename: ValueSet-UKCore-MedicationTradeFamily.page.md
-- name: ValueSet UKCore-MessageEvent
-  filename: ValueSet-UKCore-MessageEvent.page.md
 - name: ValueSet UKCore-NHSNumberUnavailableReason
   filename: ValueSet-UKCore-NHSNumberUnavailableReason.page.md
 - name: ValueSet UKCore-NHSNumberVerificationStatus
@@ -144,8 +140,6 @@
   filename: ValueSet-UKCore-ObservationType.page.md
 - name: ValueSet UKCore-ObservationVitalSignsType
   filename: ValueSet-UKCore-ObservationVitalSignsType.page.md
-- name: ValueSet UKCore-OperationOutcomeIssueDetails
-  filename: ValueSet-UKCore-OperationOutcomeIssueDetails.page.md
 - name: ValueSet UKCore-OrganizationType
   filename: ValueSet-UKCore-OrganizationType.page.md
 - name: ValueSet UKCore-OtherContactSystem

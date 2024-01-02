@@ -1,6 +1,6 @@
 ## `{{page-title}}`
 
-All orespiration rate observations SHALL contain a populated `Observation.category` element, and the following values SHALL be used:
+All respiration rate observations SHALL contain a populated `Observation.category` element, and the following values SHALL be used:
 
 - `Observation.category.coding.system` = `http://terminology.hl7.org/CodeSystem/observation-category`
 - `Observation.category.coding.code` = `vital-signs`

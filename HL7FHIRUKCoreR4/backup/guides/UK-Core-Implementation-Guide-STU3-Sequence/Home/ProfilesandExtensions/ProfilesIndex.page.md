@@ -75,18 +75,6 @@ In addition, each Profile also has the following:
 <td>5</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Consent,text:UKCore-Consent}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Consent resource for the minimal set of data to query and retrieve written or verbal agreements concerning authorised or restricted actions relating to healthcare.</td>
-<td>6</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Device,text:UKCore-Device}}</td>
-<td>draft</td>
-<td>Defines the UK Core constraints and extensions on the Device resource for the minimal set of data to query and retrieve information about a medical device.</td>
-<td>*</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-Device-BloodPressure,text:UKCore-Device-BloodPressure}}</td>
 <td>active</td>
 <td>A profile <i>derived</i> from the active UK Core Device profile to define the minimal set of data to query and retrieve information about a device used to monitor blood pressure.</td>
@@ -112,34 +100,16 @@ In addition, each Profile also has the following:
 <td>4</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-EpisodeOfCare,text:UKCore-EpisodeOfCare}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the EpisodeOfCare resource for the minimal set of data to query and retrieve episode of care information.</td>
-<td>4</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-FamilyMemberHistory,text:UKCore-FamilyMemberHistory}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the FamilyMemberHistory resource for the minimal set of data to query and retrieve information about health events and conditions for a person related to the patient relevant in the context of care.</td>
 <td>6</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Flag,text:UKCore-Flag}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Flag resource for the minimal set of data to query and retrieve flag information.</td>
-<td>5</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-HealthcareService,text:UKCore-HealthcareService}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the HealthcareService resource for the minimal set of data to query and retrieve healthcare service information.</td>
 <td>5</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-ImagingStudy,text:UKCore-ImagingStudy}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the ImagingStudy resource for the minimal set of data to query and retrieve content of DICOM imaging studies.</td>
-<td>6</td>
 </tr>
 <tr>
 <td>{{pagelink:Profile-Immunization,text:UKCore-Immunization}}</td>
@@ -189,12 +159,6 @@ In addition, each Profile also has the following:
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the MedicationStatement resource for the minimal set of data to query and retrieve medication statement information.</td>
 <td>3</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-MessageHeader,text:UKCore-MessageHeader}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the MessageHeader resource for the minimal set of data to be present in a message header.</td>
-<td>4</td>
 </tr>
 <tr>
 <td>{{pagelink:Profile-Observation,text:UKCore-Observation}}</td>
@@ -319,12 +283,6 @@ In addition, each Profile also has the following:
 <td>7</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-OperationOutcome,text:UKCore-OperationOutcome}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the OperationOutcome resource for the minimal set of data to query and retrieve information about the outcome of an attempted system operation.</td>
-<td>4</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-Organization,text:UKCore-Organization}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the Organization resource for the minimal set of data to query and retrieve organisation information.</td>
@@ -358,12 +316,6 @@ In addition, each Profile also has the following:
 <td>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the Questionnaire resource for the minimal set of data to query and retrieve questionnaire information.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-QuestionnaireResponse,text:UKCore-QuestionnaireResponse}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the QuestionnaireResponse resource for the minimal set of data to query and retrieve a complete or partial list of answers to a set of questions completed when responding to a questionnaire.</td>
 <td>5</td>
 </tr>
 <tr>
@@ -403,12 +355,6 @@ In addition, each Profile also has the following:
 <td>Defines the UK Core constraints and extensions on the Specimen resource for the minimal set of data to query and retrieve information regarding samples used for analysis.</td>
 <td>6</td>
 </tr>
-<tr>
-<td>{{pagelink:Profile-Task,text:UKCore-Task}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Task resource for the minimal set of data to query and retrieve task information.</td>
-<td>5</td>
-</tr>
 </table>
 </div>
 
@@ -424,8 +370,6 @@ In addition, each Profile also has the following:
 <li>{{pagelink:Profile-Appointment,text:UKCore-Appointment}}</li>
 <li>{{pagelink:Profile-Composition,text:UKCore-Composition}}</li>
 <li>{{pagelink:Profile-Condition,text:UKCore-Condition}}</li>
-<li>{{pagelink:Profile-Consent,text:UKCore-Consent}}</li>
-<li>{{pagelink:Profile-Device,text:UKCore-Device}}</li>
 <li>{{pagelink:Profile-Device-BloodPressure,text:UKCore-Device-BloodPressure}}</li>
 <li>{{pagelink:Profile-DiagnosticReport,text:UKCore-DiagnosticReport}}</li>
 <li>{{pagelink:Profile-DiagnosticReport-Lab,text:UKCore-DiagnosticReport-Lab}}</li>
@@ -434,11 +378,8 @@ In addition, each Profile also has the following:
 <p><b>E-L:</b></p>
 <ul>
 <li>{{pagelink:Profile-Encounter,text:UKCore-Encounter}}</li>
-<li>{{pagelink:Profile-EpisodeOfCare,text:UKCore-EpisodeOfCare}}</li>
 <li>{{pagelink:Profile-FamilyMemberHistory,text:UKCore-FamilyMemberHistory}}</li>
-<li>{{pagelink:Profile-Flag,text:UKCore-Flag}}</li>
 <li>{{pagelink:Profile-HealthcareService,text:UKCore-HealthcareService}}</li>
-<li>{{pagelink:Profile-ImagingStudy,text:UKCore-ImagingStudy}}</li>
 <li>{{pagelink:Profile-Immunization,text:UKCore-Immunization}}</li>
 <li>{{pagelink:Profile-List,text:UKCore-List}}</li>
 <li>{{pagelink:Profile-Location,text:UKCore-Location}}</li>
@@ -451,7 +392,6 @@ In addition, each Profile also has the following:
 <li>{{pagelink:Profile-MedicationDispense,text:UKCore-MedicationDispense}}</li>
 <li>{{pagelink:Profile-MedicationRequest,text:UKCore-MedicationRequest}}</li>
 <li>{{pagelink:Profile-MedicationStatement,text:UKCore-MedicationStatement}}</li>
-<li>{{pagelink:Profile-MessageHeader,text:UKCore-MessageHeader}}</li>
 <li>{{pagelink:Profile-Observation,text:UKCore-Observation}}</li>
 <li>&nbsp;&nbsp;{{pagelink:Profile-Observation-ACVPU,text:UKCore-Observation-ACVPU}}</li>
 <li>&nbsp;&nbsp;{{pagelink:Profile-Observation-AlcoholConsumption,text:UKCore-Observation-AlcoholConsumption}}</li>
@@ -472,7 +412,6 @@ In addition, each Profile also has the following:
 <li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-HeartRate,text:UKCore-Observation-VitalSigns-HeartRate}}</li>
 <li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-OxygenSaturation,text:UKCore-Observation-VitalSigns-OxygenSaturation}}</li>
 <li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</li>
-<li>{{pagelink:Profile-OperationOutcome,text:UKCore-OperationOutcome}}</li>
 <li>{{pagelink:Profile-Organization,text:UKCore-Organization}}</li>
 <li>{{pagelink:Profile-Patient,text:UKCore-Patient}}</li>
 <li>{{pagelink:Profile-Practitioner,text:UKCore-Practitioner}}</li>
@@ -483,14 +422,12 @@ In addition, each Profile also has the following:
 <p><b>Q-Z:</b></p> 
 <ul>  
 <li>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</li>
-<li>{{pagelink:Profile-QuestionnaireResponse,text:UKCore-QuestionnaireResponse}}</li>
 <li>{{pagelink:Profile-RelatedPerson,text:UKCore-RelatedPerson}}</li>
 <li>{{pagelink:Profile-Schedule,text:UKCore-Schedule}}</li>
 <li>{{pagelink:Profile-ServiceRequest,text:UKCore-ServiceRequest}}</li>
 <li>{{pagelink:Profile-ServiceRequest-Lab,text:UKCore-ServiceRequest-Lab}}</li>
 <li>{{pagelink:Profile-Slot,text:UKCore-Slot}}</li>
 <li>{{pagelink:Profile-Specimen,text:UKCore-Specimen}}</li>
-<li>{{pagelink:Profile-Task,text:UKCore-Task}}</li>
 </ul>
 </td></tr>
 
@@ -529,10 +466,7 @@ In addition, each Profile also has the following:
 <p><b>C&TA Sprint 4:</b></p>
 <ul>
 <li>{{pagelink:Profile-Encounter,text:UKCore-Encounter}}</li>
-<li>{{pagelink:Profile-EpisodeOfCare,text:UKCore-EpisodeOfCare}}</li>
 <li>{{pagelink:Profile-List,text:UKCore-List}}</li>
-<li>{{pagelink:Profile-MessageHeader,text:UKCore-MessageHeader}}</li>
-<li>{{pagelink:Profile-OperationOutcome,text:UKCore-OperationOutcome}}</li>
 <li>{{pagelink:Profile-Procedure,text:UKCore-Procedure}}</li>
 <li>{{pagelink:Profile-RelatedPerson,text:UKCore-RelatedPerson}}</li>
 </ul>
@@ -542,22 +476,18 @@ In addition, each Profile also has the following:
 <li>{{pagelink:Profile-Appointment,text:UKCore-Appointment}}</li>
 <li>{{pagelink:Profile-Composition,text:UKCore-Composition}}</li>
 <li>{{pagelink:Profile-Condition,text:UKCore-Condition}}</li>
-<li>{{pagelink:Profile-Flag,text:UKCore-Flag}}</li>
 <li>{{pagelink:Profile-HealthcareService,text:UKCore-HealthcareService}}</li>
-<li>{{pagelink:Profile-QuestionnaireResponse,text:UKCore-QuestionnaireResponse}}</li>
+<li>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</li>
 <li>{{pagelink:Profile-ServiceRequest,text:UKCore-ServiceRequest}}</li>
 <li>{{pagelink:Profile-Schedule,text:UKCore-Schedule}}</li>
 <li>{{pagelink:Profile-Slot,text:UKCore-Slot}}</li>
-<li>{{pagelink:Profile-Task,text:UKCore-Task}}</li>
 </ul>
 
 <p><b>C&TA Sprint 6:</b></p>
 <ul>
-<li>{{pagelink:Profile-Consent,text:UKCore-Consent}}</li>
 <li>{{pagelink:Profile-DiagnosticReport,text:UKCore-DiagnosticReport}}</li>
 <li>{{pagelink:Profile-DiagnosticReport-Lab,text:UKCore-DiagnosticReport-Lab}}</li>
 <li>{{pagelink:Profile-FamilyMemberHistory,text:UKCore-FamilyMemberHistory}}</li>
-<li>{{pagelink:Profile-ImagingStudy,text:UKCore-ImagingStudy}}</li>
 <li>{{pagelink:Profile-Observation,text:UKCore-Observation}}</li>
 <li>{{pagelink:Profile-Observation-Lab,text:UKCore-Observation-Lab}}</li>
 <li>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-Group-Lab}}</li>
@@ -587,10 +517,6 @@ In addition, each Profile also has the following:
 <li>{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</li>
 </ul>
 
-<p><b>active:</b></p>
-<ul>
-<li>{{pagelink:Profile-Device,text:UKCore-Device}}</li>
-</ul>
 </div>
 
 <div id="Resource" class="tabcontent">
@@ -612,13 +538,8 @@ In addition, each Profile also has the following:
 <ul>
 <li>{{pagelink:Profile-Condition,text:UKCore-Condition}}</li>
 </ul>
-<p><b>Consent:</b></p>
-<ul>
-<li>{{pagelink:Profile-Consent,text:UKCore-Consent}}</li>
-</ul>
 <p><b>Device:</b></p>
 <ul>
-<li>{{pagelink:Profile-Device,text:UKCore-Device}}</li>
 <li>{{pagelink:Profile-Device-BloodPressure,text:UKCore-Device-BloodPressure}}</li>
 </ul>
 <p><b>DiagnosticReport:</b></p>
@@ -630,25 +551,13 @@ In addition, each Profile also has the following:
 <ul>
 <li>{{pagelink:Profile-Encounter,text:UKCore-Encounter}}</li>
 </ul>
-<p><b>EpisodeOfCare:</b></p>
-<ul>
-<li>{{pagelink:Profile-EpisodeOfCare,text:UKCore-EpisodeOfCare}}</li>
-</ul>
 <p><b>FamilyMemberHistory:</b></p>
 <ul>
 <li>{{pagelink:Profile-FamilyMemberHistory,text:UKCore-FamilyMemberHistory}}</li>
 </ul>
-<p><b>Flag:</b></p>
-<ul>
-<li>{{pagelink:Profile-Flag,text:UKCore-Flag}}</li>
-</ul>
 <p><b>HealthcareService:</b></p>
 <ul>
 <li>{{pagelink:Profile-HealthcareService,text:UKCore-HealthcareService}}</li>
-</ul>
-<p><b>ImagingStudy:</b></p>
-<ul>
-<li>{{pagelink:Profile-ImagingStudy,text:UKCore-ImagingStudy}}</li>
 </ul>
 <p><b>Immunization:</b></p>
 <ul>
@@ -662,8 +571,6 @@ In addition, each Profile also has the following:
 <ul>
 <li>{{pagelink:Profile-Location,text:UKCore-Location}}</li>
 </ul>
-
-
 <p><b>Medication:</b></p>
 <ul>
 <li>{{pagelink:Profile-Medication,text:UKCore-Medication}}</li>
@@ -684,11 +591,6 @@ In addition, each Profile also has the following:
 <ul>
 <li>{{pagelink:Profile-MedicationStatement,text:UKCore-MedicationStatement}}</li>
 </ul>
-<p><b>MessageHeader:</b></p>
-<ul>
-<li>{{pagelink:Profile-MessageHeader,text:UKCore-MessageHeader}}</li>
-</ul>
-
 <p><b>Observation:</b></p>
 <ul>
 <li>{{pagelink:Profile-Observation,text:UKCore-Observation}}</li>
@@ -713,11 +615,6 @@ In addition, each Profile also has the following:
 <li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-HeartRate,text:UKCore-Observation-VitalSigns-HeartRate}}</li>
 <li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-OxygenSaturation,text:UKCore-Observation-VitalSigns-OxygenSaturation}}</li>
 <li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</li>
-</ul>
-
-<p><b>OperationOutcome:</b></p>
-<ul>
-<li>{{pagelink:Profile-OperationOutcome,text:UKCore-OperationOutcome}}</li>
 </ul>
 <p><b>Organization:</b></p>
 <ul>
@@ -744,10 +641,6 @@ In addition, each Profile also has the following:
 <ul>
 <li>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</li>
 </ul>
-<p><b>QuestionnaireResponse:</b></p>
-<ul>
-<li>{{pagelink:Profile-QuestionnaireResponse,text:UKCore-QuestionnaireResponse}}</li>
-</ul>
 <p><b>RelatedPerson:</b></p>
 <ul>
 <li>{{pagelink:Profile-RelatedPerson,text:UKCore-RelatedPerson}}</li>
@@ -769,14 +662,6 @@ In addition, each Profile also has the following:
 <ul>
 <li>{{pagelink:Profile-Specimen,text:UKCore-Specimen}}</li>
 </ul>
-<p><b>Task:</b></p>
-<ul>
-<li>{{pagelink:Profile-Task,text:UKCore-Task}}</li>
-</ul>
 
 </div>
 
-
-<br><br>
-<div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> {{pagelink:Profile-Device}} is a active Profile. It has not undergone a Clinical & Technical Assurance sprint, and is included here for comparison usage.
-</div>

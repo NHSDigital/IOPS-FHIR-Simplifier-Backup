@@ -21,12 +21,6 @@ Implementers of the UK Core profiles MAY also use other HL7 core-defined extensi
 <td>NO</td>
 </tr>
 <tr>
-<td><a href="https://hl7.org/fhir/R4/extension-messageheader-response-request.html" class="external">Extension messageheader-response-request</a></td>
-<td>MessageHeader</td>
-<td>{{pagelink:Profile-MessageHeader}}</td>
-<td>NO</td>
-</tr>
-<tr>
 <td><a href="http://hl7.org/fhir/R4/extension-observation-bodyposition.html" class="external">Extension observation-bodyPosition</a></td>
 <td>Observation</td>
 <td>{{pagelink:Profile-Observation-VitalSigns}}</td>

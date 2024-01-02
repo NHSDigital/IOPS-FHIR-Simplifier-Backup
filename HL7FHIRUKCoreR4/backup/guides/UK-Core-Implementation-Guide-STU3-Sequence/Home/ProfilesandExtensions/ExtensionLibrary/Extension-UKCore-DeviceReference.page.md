@@ -43,6 +43,6 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-D
 </div>
 
 <h3 id="guidance-devicereference">Extension Specific Guidance</h3>
-Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Device}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current).
 
 ---

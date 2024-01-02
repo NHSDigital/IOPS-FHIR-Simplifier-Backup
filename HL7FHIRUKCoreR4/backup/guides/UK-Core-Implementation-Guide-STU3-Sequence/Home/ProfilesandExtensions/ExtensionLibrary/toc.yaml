@@ -53,7 +53,7 @@
 - name: Extension UKCore-Evidence
   filename: Extension-UKCore-Evidence.page.md
 - name: Extension UKCore-FamilyMemberHistoryParticipant
-  filename: Extension-UKCore-Participant.page.md
+  filename: Extension-UKCore-FamilyMemberHistoryParticipant.page.md
 - name: Extension UKCore-LegalStatus
   filename: Extension-UKCore-LegalStatus.page.md
 - name: Extension UKCore-ListWarningCode
@@ -72,6 +72,10 @@
   filename: Extension-UKCore-NHSNumberUnavailableReason.page.md
 - name: Extension UKCore-NHSNumberVerificationStatus
   filename: Extension-UKCore-NHSNumberVerificationStatus.page.md
+- name: Extension UKCore-ObservationBodyStructure
+  filename: Extension-UKCore-ObservationBodyStructure.page.md
+- name: Extension UKCore-ObservationTriggeredBy
+  filename: Extension-UKCore-ObservationTriggeredBy.page.md
 - name: Extension UKCore-OtherContactSystem
   filename: Extension-UKCore-OtherContactSystem.page.md
 - name: Extension UKCore-OutcomeOfAttendance
@@ -92,9 +96,5 @@
   filename: Extension-UKCore-SourceOfServiceRequest.page.md
 - name: Extension UKCore-SpecimenCollectionCollector
   filename: Extension-UKCore-SpecimenCollectionCollector.page.md
-- name: Extension UKCore-ObservationBodyStructure
-  filename: Extension-UKCore-ObservationBodyStructure.page.md
-- name: Extension UKCore-ObservationTriggeredBy
-  filename: Extension-UKCore-ObservationTriggeredBy.page.md
 - name: Extension UKCore-VaccinationProcedure
   filename: Extension-UKCore-VaccinationProcedure.page.md
