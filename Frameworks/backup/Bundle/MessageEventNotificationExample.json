@@ -68,7 +68,10 @@
                 },
                 "focus": [
                     {
-                        "reference": "https://sandbox.api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9000000009"
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/nhs-number",
+                            "value": "9000000009"
+                        }
                     }
                 ]
             }

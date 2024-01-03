@@ -2,10 +2,7 @@
     "resourceType": "Bundle",
     "id": "path-R4-example-bundle-HbA1c-report",
     "meta": {
-        "lastUpdated": "2022-01-30T12:48:00+00:00",
-        "profile":  [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle"
-        ]
+        "lastUpdated": "2022-01-30T12:48:00+00:00"
     },
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
@@ -18,11 +15,6 @@
             "resource": {
                 "resourceType": "Organization",
                 "id": "8a6d85b8-9837-4fed-a257-4cf207988338",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"
-                    ]
-                },
                 "identifier":  [
                     {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -52,11 +44,6 @@
             "resource": {
                 "resourceType": "Organization",
                 "id": "3c43b5b3-06d6-445f-ae9a-48d5f05df434",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"
-                    ]
-                },
                 "identifier":  [
                     {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -85,11 +72,6 @@
             "resource": {
                 "resourceType": "Practitioner",
                 "id": "9a835acf-d715-4d84-8dcf-a8435f6417fe",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"
-                    ]
-                },
                 "identifier":  [
                     {
                         "system": "https://fhir.nhs.uk/Id/sds-user-id",
@@ -119,11 +101,6 @@
             "resource": {
                 "resourceType": "Patient",
                 "id": "ab87a3f8-1d37-44a9-804e-5e962598a6e4",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"
-                    ]
-                },
                 "identifier":  [
                     {
                         "system": "https://fhir.nhs.uk/Id/nhs-number",
@@ -162,11 +139,6 @@
             "resource": {
                 "resourceType": "ServiceRequest",
                 "id": "1c38d507-9ad7-4b49-ba91-7da204842cac",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab"
-                    ]
-                },
                 "identifier":  [
                     {
                         "system": "http://B82033-pickeringmedicalpractice.com/labrequest",
@@ -215,11 +187,7 @@
             "resource": {
                 "resourceType": "DiagnosticReport",
                 "id": "35d46ca1-f253-4c97-b7ee-fb5fccdf6c20",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab"
-                    ]
-                },
+
                 "identifier":  [
                     {
                         "system": "http://Y8J7D-pathlab001.com/report",
@@ -285,11 +253,6 @@
             "resource": {
                 "resourceType": "Specimen",
                 "id": "bab0eaec-1ec5-4598-b660-90bb38a1030d",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen"
-                    ]
-                },
                 "identifier":  [
                     {
                         "system": "http://B82033-pickeringmedicalpractice.com/specimen",
@@ -329,11 +292,6 @@
             "resource": {
                 "resourceType": "Observation",
                 "id": "ad717ae8-cb35-4d66-ba51-e22a76b1d158",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab"
-                    ]
-                },
                 "identifier":  [
                     {
                         "system": "https://tools.ietf.org/html/rfc4122",

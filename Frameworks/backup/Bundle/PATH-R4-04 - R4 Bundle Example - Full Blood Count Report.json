@@ -2,10 +2,7 @@
     "resourceType": "Bundle",
     "id": "path-R4-example-bundle-FBC-report",
     "meta": {
-        "lastUpdated": "2022-02-09T11:17:00+00:00",
-        "profile":  [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle"
-        ]
+        "lastUpdated": "2022-02-09T11:17:00+00:00"
     },
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
