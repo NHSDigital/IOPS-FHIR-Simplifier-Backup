@@ -1,5 +1,5 @@
 ## `encounter`
 
-A reference to the encounter resource which SHALL conform to {{pagelink:Profile-Encounter-79976}}.
+A reference to the encounter resource which SHOULD conform to {{pagelink:Profile-Encounter-79976}}.
 
 ---

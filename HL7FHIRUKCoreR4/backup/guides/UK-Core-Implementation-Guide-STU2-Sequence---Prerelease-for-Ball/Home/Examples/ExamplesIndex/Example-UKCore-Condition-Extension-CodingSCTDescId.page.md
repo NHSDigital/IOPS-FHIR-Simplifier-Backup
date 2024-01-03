@@ -9,22 +9,22 @@
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Condition-Extension-CodingSCTDescId-Example}}
+{{table:UKCore-Extension-CodingSCTDescId-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Condition-Extension-CodingSCTDescId-Example}}
+{{tree:UKCore-Extension-CodingSCTDescId-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Condition-Extension-CodingSCTDescId-Example}}
+{{xml:UKCore-Extension-CodingSCTDescId-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Condition-Extension-CodingSCTDescId-Example}}
+{{json:UKCore-Extension-CodingSCTDescId-Example}}
 </div>
 
 ---

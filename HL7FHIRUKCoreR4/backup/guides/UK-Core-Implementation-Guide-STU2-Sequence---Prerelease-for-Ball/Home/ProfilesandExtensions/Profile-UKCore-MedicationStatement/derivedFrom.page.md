@@ -1,6 +1,6 @@
 ## `derivedFrom`
 
-Where a UK Core profile exists, the resource being referenced SHALL conform to the profile.
+Where a UK Core profile exists, the resource being referenced SHOULD conform to the profile.
 
 This SHOULD be used only to reference information that can not be referenced by `MedicationStatement.basedOn`. 
 

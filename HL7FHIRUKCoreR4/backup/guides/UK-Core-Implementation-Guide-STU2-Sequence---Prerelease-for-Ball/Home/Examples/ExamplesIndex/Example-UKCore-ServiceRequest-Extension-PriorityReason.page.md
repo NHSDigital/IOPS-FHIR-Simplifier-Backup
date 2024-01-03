@@ -11,22 +11,22 @@
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-ServiceRequest-Extension-PriorityReason-Example}}
+{{table:UKCore-Extension-PriorityReason-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-ServiceRequest-Extension-PriorityReason-Example}}
+{{tree:UKCore-Extension-PriorityReason-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-ServiceRequest-Extension-PriorityReason-Example}}
+{{xml:UKCore-Extension-PriorityReason-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-ServiceRequest-Extension-PriorityReason-Example}}
+{{json:UKCore-Extension-PriorityReason-Example}}
 </div>
 
 ---

@@ -4,6 +4,6 @@ If used, consider interpreting as the **Intended Destination** in the real world
 
 For example, within an inpatient setting, the patient could have been transferred to a different ward before the dispensed medication is delivered.
 
-The resource being referenced SHALL conform to {{pagelink:Profile-Location-14324}}
+The resource being referenced SHOULD conform to {{pagelink:Profile-Location-14324}}
 
 ---

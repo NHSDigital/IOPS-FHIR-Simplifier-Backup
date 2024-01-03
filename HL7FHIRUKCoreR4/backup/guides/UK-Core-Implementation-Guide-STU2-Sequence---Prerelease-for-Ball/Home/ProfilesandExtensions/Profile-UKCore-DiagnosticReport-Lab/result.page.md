@@ -1,6 +1,6 @@
 ## `{{page-title}}`
 
-The resource being referenced SHALL conform to at least one of the following:
+The resource being referenced SHOULD conform to at least one of the following:
 
 - {{pagelink:Profile-Observation-67521}}
 - {{pagelink:Profile-Observation-Group-67431}}

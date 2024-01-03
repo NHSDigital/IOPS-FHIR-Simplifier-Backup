@@ -1,8 +1,8 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to one of the following:
+The resource being referenced SHOULD conform to one of the following:
 
-- <a href="https://hl7.org/fhir/R4/CarePlan.html">CarePlan Resource</a>
+- [UKCore-CarePlan (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-CarePlan?version=current)
 - [DeviceRequest Resource](https://hl7.org/fhir/R4/devicerequest.html)
 - [ImmunizationRecommendation Resource](https://hl7.org/fhir/R4/immunizationrecommendation.html)
 - {{pagelink:Profile-MedicationRequest-20572}}

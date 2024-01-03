@@ -1,6 +1,6 @@
 ## `basedOn`
 
-Any resource being referenced SHALL conform to the following profiles/resources:
+Any resource being referenced SHOULD conform to the following profiles/resources:
 
 - <a href="https://hl7.org/fhir/R4/CarePlan.html">CarePlan Resource</a>
 - {{pagelink:Profile-MedicationRequest-20572}}

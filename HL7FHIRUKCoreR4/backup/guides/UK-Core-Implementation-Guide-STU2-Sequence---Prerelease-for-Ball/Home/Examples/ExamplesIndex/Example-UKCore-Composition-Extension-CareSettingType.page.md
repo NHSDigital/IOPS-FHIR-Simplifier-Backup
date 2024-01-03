@@ -10,22 +10,22 @@
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Composition-Extension-CareSettingType-Example}}
+{{table:UKCore-Extension-CareSettingType-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Composition-Extension-CareSettingType-Example}}
+{{tree:UKCore-Extension-CareSettingType-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Composition-Extension-CareSettingType-Example}}
+{{xml:UKCore-Extension-CareSettingType-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Composition-Extension-CareSettingType-Example}}
+{{json:UKCore-Extension-CareSettingType-Example}}
 </div>
 
 ---

@@ -1,8 +1,8 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to one of the following:
+The resource being referenced SHOULD conform to one of the following:
 
-- <a href="https://hl7.org/fhir/R4/CareTeam.html">CareTeam Resource</a>
+- [UKCore-CareTeam (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-CareTeam?version=current)
 - {{pagelink:Profile-Organization-94604}}
 - {{pagelink:Profile-Patient-88961}}
 - {{pagelink:Profile-Practitioner-10758}}

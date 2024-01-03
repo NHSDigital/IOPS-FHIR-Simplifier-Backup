@@ -94,7 +94,7 @@ Optional role of participant in the appointment that uses the following values w
 
 Optional Person, Location/HealthcareService or Device that is participating in the appointment.
 
-The resource being referenced SHALL conform to one of the following:
+The resource being referenced SHOULD conform to one of the following:
 
 - <a href="https://hl7.org/fhir/R4/Device.html">Device Resource</a>
 - {{pagelink:Profile-HealthcareService-13702}}

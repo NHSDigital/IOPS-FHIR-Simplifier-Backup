@@ -18,8 +18,8 @@ More information about the extensions can be found using the links below.
 <tr>
 <td>collectionCollector</td>
 <td>Specimen.<br>collection.collector</td>
-<td>{{pagelink:Extension-UKCore-CollectionCollector}}</td>
-<td>An extension to replicate the changes within R5 allowing the data type of Specimen.collection.collector to reference Patient and RelatedPerson. For more details, see {{pagelink:Library-Extensions-PreAdopt-82902}}.</td>
+<td>{{pagelink:Extension-UKCore-SpecimenCollectionCollector}}</td>
+<td>An extension to replicate the changes within R5 allowing the data type of Specimen.collection.collector to reference Patient and RelatedPerson. For more details, see {{pagelink:Library-Extensions-PreAdopt}}.</td>
 </tr>
 <tr>
 <td>sampleCategory</td>

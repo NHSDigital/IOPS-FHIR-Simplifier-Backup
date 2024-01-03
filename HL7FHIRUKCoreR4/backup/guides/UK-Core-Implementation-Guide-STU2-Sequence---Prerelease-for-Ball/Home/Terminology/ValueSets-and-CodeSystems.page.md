@@ -700,21 +700,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 </tr>
 
 <tr>
-<td><h4>{{pagelink:ValueSet-UKCore-MessageEvent}}</h4></td>
-<td>active</td>
-<td>{{pagelink:Profile-MessageHeader-48618}}</td>
-<td>4</td>
-</tr>
-<tr>
-<td colspan="4">
-Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-event</code><br>
-Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars</code></td>
-</tr>
-<tr>
-<td colspan="4"  class="override"></td>
-</tr>
-
-<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Patient-88961}}</td>
@@ -754,25 +739,6 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </tr>
 <tr >
 <td colspan="4">Composed of <code>http://snomed.info/sct</code></td>
-</tr>
-<tr>
-<td colspan="4"  class="override"></td>
-</tr>
-
-<tr>
-<td><h4>{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</h4></td>
-<td>active</td>
-<td>{{pagelink:Profile-OperationOutcome-83857}}</td>
-<td>4</td>
-</tr>
-<tr>
-<td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-SpineErrorOrWarningCode}}</td>
-</tr>
-<tr>
-<td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-EPSIssueCode}}</td>
-</tr>
-<tr>
-<td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-ITKResponseCode}}</td>
 </tr>
 <tr>
 <td colspan="4"  class="override"></td>
@@ -826,7 +792,7 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Observation-Lab}}</td>
+<td>{{pagelink:Profile-Observation-Lab-67452}}</td>
 <td><div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i> (See footnote)</div></td>
 </tr>
 <tr>
@@ -839,8 +805,8 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Observation-Group}}<br>
-{{pagelink:Profile-ServiceRequest-Lab}}</td>
+<td>{{pagelink:Profile-Observation-Group-67431}}<br>
+{{pagelink:Profile-ServiceRequest-Lab-37178}}</td>
 <td><div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i> (See footnote)</div></td>
 </tr>
 <tr>
@@ -1211,11 +1177,9 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <li>{{pagelink:ValueSet-UKCore-MedicationStatementCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-MedicationSupplyType}}</li>
 <li>{{pagelink:ValueSet-UKCore-MedicationTradeFamily}}</li>
-<li>{{pagelink:ValueSet-UKCore-MessageEvent}}</li>
 <li>{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</li>
 <li>{{pagelink:ValueSet-UKCore-NHSNumberVerificationStatus}}</li>
 <li>{{pagelink:ValueSet-UKCore-ObservationType}}</li>
-<li>{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</li>
 <li>{{pagelink:ValueSet-UKCore-OrganizationType}}</li>
 <li>{{pagelink:ValueSet-UKCore-OtherContactSystem}}</li>
 <li>{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</li>
@@ -1280,13 +1244,11 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <li>{{pagelink:CodeSystem-UKCore-EmergencyCareOutcomeOfAttendanceWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-EncounterLocationTypeEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-EncounterLocationTypeWales}}</li>
-<li>{{pagelink:CodeSystem-UKCore-EPSIssueCode}}</li>
 <li>{{pagelink:CodeSystem-UKCore-EthnicCategoryEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-EthnicCategoryWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-FundingCategory}}</li>
 <li>{{pagelink:CodeSystem-UKCore-GenomeSequencingCategory}}</li>
 <li>{{pagelink:CodeSystem-UKCore-HumanLanguage}}</li>
-<li>{{pagelink:CodeSystem-UKCore-ITKResponseCode}}</li>
 <li>{{pagelink:CodeSystem-UKCore-LegalStatusClassificationEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-LegalStatusClassificationWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-LegalStatusContext}}</li>
@@ -1323,7 +1285,6 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <li>{{pagelink:CodeSystem-UKCore-SampleCategory}}</li>
 <li>{{pagelink:CodeSystem-UKCore-SourceOfAdmissionEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-SourceOfAdmissionWales}}</li>
-<li>{{pagelink:CodeSystem-UKCore-SpineErrorOrWarningCode}}</li>
 </ul>
 </td></tr>
 
@@ -1398,8 +1359,6 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <li>{{pagelink:ValueSet-UKCore-ListCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-ListEmptyReasonCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-ListWarningCode}}</li>
-<li>{{pagelink:ValueSet-UKCore-MessageEvent}}</li>
-<li>{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</li>
 <li>{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</li>
 <li>{{pagelink:Valueset-UKCore-ProcedureCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</li>
@@ -1478,8 +1437,6 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <li>{{pagelink:CodeSystem-UKCore-EmergencyCareOutcomeOfAttendanceWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-EncounterLocationTypeEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-EncounterLocationTypeWales}}</li>
-<li>{{pagelink:CodeSystem-UKCore-EPSIssueCode}}</li>
-<li>{{pagelink:CodeSystem-UKCore-ITKResponseCode}}</li>
 <li>{{pagelink:CodeSystem-UKCore-LegalStatusClassificationEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-LegalStatusClassificationWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-LegalStatusContext}}</li>
@@ -1490,7 +1447,6 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <li>{{pagelink:CodeSystem-UKCore-RecordStandardHeadings}}</li>
 <li>{{pagelink:CodeSystem-UKCore-SourceOfAdmissionEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-SourceOfAdmissionWales}}</li>
-<li>{{pagelink:CodeSystem-UKCore-SpineErrorOrWarningCode}}</li>
 </ul>
 
 <p><b>C&TA Sprint 5:</b></p>
@@ -1619,19 +1575,11 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 <li>{{pagelink:ValueSet-UKCore-MedicationStatementCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-SubstanceOrProductAdministrationRoute}}</li>
 </ul>
-<p><b>MessageHeader:</b></p>
-<ul>
-<li>{{pagelink:ValueSet-UKCore-MessageEvent}}</li>
-</ul>
 <p><b>Observation:</b></p>
 <ul>
 <li>{{pagelink:ValueSet-UKCore-ObservationType}}</li>
 <li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables}}</li>
 <li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</li>
-</ul>
-<p><b>OperationOutcome:</b></p>
-<ul>
-<li>{{pagelink:ValueSet-UKCore-OperationOutcomeIssueDetails}}</li>
 </ul>
 <p><b>Organization:</b></p>
 <ul>
@@ -1706,6 +1654,6 @@ Composed of CodeSystem <code>https://fhir.nhs.uk/CodeSystem/message-events-bars<
 </div>
 
 <br><br>
-<div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> <i class="fa fa-asterisk"></i> <code>UKCore-UnifiedTesList</code> added in C&TA Sprint 6 was replaced by the <code>UKCore-PathologyAndLaboratoryMedicineObservables</code> and <code>UKCore-PathologyAndLaboratoryMedicineProcedures</code> ValueSets during the STU2 Ballot reconcillation due to a change by the SNOMED CT UK Clinical Edition.
+<div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> <i class="fa fa-asterisk"></i> <code>UKCore-UnifiedTestList</code> added in C&TA Sprint 6 was replaced by the <code>UKCore-PathologyAndLaboratoryMedicineObservables</code> and <code>UKCore-PathologyAndLaboratoryMedicineProcedures</code> ValueSets during the STU2 Ballot reconcillation due to a change by the SNOMED CT UK Clinical Edition.
 </div>
 ---

@@ -57,4 +57,12 @@ select
   <br><br>
 </div>
 
+### Guidance
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
+
+- [http://hl7.org/fhir/StructureDefinition/Citation](Citation)
+- {{pagelink:Profile-DiagnosticReport-54417}}
+- {{pagelink:Profile-Observation-67521}}
+- {{pagelink:Profile-Procedure-10775}}
+
 ---

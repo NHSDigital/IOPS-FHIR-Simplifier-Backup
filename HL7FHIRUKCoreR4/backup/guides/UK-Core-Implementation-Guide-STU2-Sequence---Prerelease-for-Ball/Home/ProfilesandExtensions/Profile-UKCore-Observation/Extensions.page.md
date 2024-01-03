@@ -12,8 +12,8 @@ More information about the extensions can be found using the links below.
 <tr>
 <td>triggeredByR5</td>
 <td>Observation</td>
-<td>{{pagelink:Extension-UKCore-TriggeredBy}}</td>
-<td>This is a pre-adopted R5 element, for more details, see {{pagelink:Library-Extensions-PreAdopt-82902}}.</td>
+<td>{{pagelink:Extension-UKCore-ObservationTriggeredBy}}</td>
+<td>This is a pre-adopted R5 element, for more details, see {{pagelink:Library-Extensions-PreAdopt}}.</td>
 </tr>
 </table>
 

@@ -4,7 +4,7 @@ topic: Home-Guide-48666
 ## UK Core Implementation Guide Current Draft Build ##
 
 <p>
-<h3>Project Description and Scope.</h3>
+<h3>Project Description and Scope</h3>
 
 The FHIR UK Core Implementation Guide as a project aims to provide UK wide FHIR implementation guidance that has applicability across jurisdictions and care settings.
 <br><br>
@@ -18,7 +18,7 @@ The guidance includes:
 <p>
 The guidance does not form the basis for a completely described deployable service in and of itself but is the basis from which other FHIR implementation guides can be derived.
 </p>
-<p class="balloted">
+<p>
 The FHIR UK Core Implementation Guide shows only the differences between the base FHIR resources and the UK Core Profiles, and does not repeat base guidance. For this reason, it is expected to be used in conjunction with <a href="https://hl7.org/fhir/R4/">https://hl7.org/fhir/R4/</a>. 
 <br><br>
 The FHIR UK Core will never contradict the base FHIR standard but will restrict and extend resources, including amending of any ValueSets and CodeSystems, as necessary to bring in line the UK requirements. The content is relevant to the UK as a whole (4 Nations) although some nation specific CodeSystems are included and referenced in ValueSets. 
@@ -28,6 +28,16 @@ Any derived profiles will follow similar guidance, and will only show the differ
 
 <div markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-info-circle"></i> Note about the label "STU2" for this FHIR implementation guide (IG):</h4>
 The "2" refers to this being a second ballot of the UK Core, as a "Standard for Trial Use" (STU). It is based on, and provides extra UK specific guidance for use of, the international standard FHIR R4. The STU2 label of this Implementation Guide is not in any way related to earlier versions of FHIR itself, with coincidentally similar labels such as FHIR DSTU2 or FHIR STU3.
+</div>
+
+<div markdown="span" class="alert alert-success" role="alert">
+<b>Important note regarding changes:</b>
+<ul><li>A summary of changes is available here: <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU2-Sequence/1.1.0.page.md?version=current"> Version History</a></li>
+<li>The bindings for all SNOMED CT ValueSets have been changed to "preferred".</li>
+<li>The datatypes of extensions using codes/concxepts, have been unified as valueCodeableConcept.</li>
+<li>Minimum viable content table has been used to set MustSupport on each resource.</li>
+<li>References to UKCore profiles have been reset to base references, and guidance states that where a UK Core profile exists for the reference, it SHOULD be used.</li>
+</ul>
 </div>
 
 ---

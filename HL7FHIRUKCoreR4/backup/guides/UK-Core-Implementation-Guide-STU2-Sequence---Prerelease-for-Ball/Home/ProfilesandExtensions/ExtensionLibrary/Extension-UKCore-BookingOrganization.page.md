@@ -55,6 +55,6 @@ select
 </div>
 
 ### Guidance
-The resource being referenced SHALL conform to the following {{pagelink:Profile-Organization-94604}}.
+The resource being referenced SHOULD conform to the following {{pagelink:Profile-Organization-94604}}.
 
 ---

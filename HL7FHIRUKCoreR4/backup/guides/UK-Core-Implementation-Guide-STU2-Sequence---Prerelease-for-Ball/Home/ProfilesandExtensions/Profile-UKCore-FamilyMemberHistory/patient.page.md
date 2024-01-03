@@ -1,5 +1,5 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to the {{pagelink:Profile-Patient-88961}}.
+The resource being referenced SHOULD conform to the {{pagelink:Profile-Patient-88961}}.
 
 ---

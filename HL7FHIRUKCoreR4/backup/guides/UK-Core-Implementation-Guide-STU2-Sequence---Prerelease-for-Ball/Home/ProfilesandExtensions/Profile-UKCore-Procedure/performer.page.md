@@ -1,6 +1,6 @@
 ## <code>{{page-title}}</code>
 
-The resource referenced in `Procedure.performer.actor` SHALL conform to one the following:
+The resource referenced in `Procedure.performer.actor` SHOULD conform to one the following:
 
 - <a href="https://hl7.org/fhir/R4/Device.html">Device Resource</a>
 - {{pagelink:Profile-Organization-94604}}
@@ -9,6 +9,6 @@ The resource referenced in `Procedure.performer.actor` SHALL conform to one the 
 - {{pagelink:Profile-PractitionerRole-55046}}
 - {{pagelink:Profile-RelatedPerson-51006}}
 
-The resource referenced in `Procedure.performer.onBehalfOf` SHALL conform to the {{pagelink:Profile-Organization-94604}}.
+The resource referenced in `Procedure.performer.onBehalfOf` SHOULD conform to the {{pagelink:Profile-Organization-94604}}.
 
 ---

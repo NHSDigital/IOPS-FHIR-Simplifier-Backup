@@ -58,4 +58,10 @@ select
   <br><br>
 </div>
 
+### Extension Specific Guidance
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
+
+- {{pagelink:Profile-Patient-88961}}
+- {{pagelink:Profile-RelatedPerson-51006}}
+
 ---

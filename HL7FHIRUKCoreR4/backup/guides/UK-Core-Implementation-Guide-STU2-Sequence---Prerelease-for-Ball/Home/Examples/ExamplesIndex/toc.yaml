@@ -26,8 +26,6 @@
   filename: Example-UKCore-Condition-Extension-CodingSCTDescId.page.md
 - name: Example UKCore-Condition-Extension-ConditionEpisode
   filename: Example-UKCore-Condition-Extension-ConditionEpisode.page.md
-- name: Example UKCore-Consent-ForInformationAccess
-  filename: Example-UKCore-Consent-ForInformationAccess.page.md
 - name: Example UKCore-DiagnosticReport-Extension-CompositionReference
   filename: Example-UKCore-DiagnosticReport-Extension-CompositionReference.page.md
 - name: Example UKCore-DiagnosticReport-Extension-DeviceReference
@@ -50,20 +48,14 @@
   filename: Example-UKCore-Encounter-Extension-LegalStatus.page.md
 - name: Example UKCore-Encounter-Extension-OutcomeOfAttendance
   filename: Example-UKCore-Encounter-Extension-OutcomeOfAttendance.page.md
-- name: Example UKCore-EpisodeOfCare-SmokingCessationTherapy
-  filename: Example-UKCore-EpisodeOfCare-SmokingCessationTherapy.page.md
 - name: Example UKCore-FamilyMemberHistory-FatherDiabetes
   filename: Example-UKCore-FamilyMemberHistory-FatherDiabetes.page.md
 - name: Example UKCore-FamilyMemberHistory-Extension-AssociatedEncounter
   filename: Example-UKCore-FamilyMemberHistory-Extension-AssociatedEncounter.page.md
 - name: Example UKCore-FamilyMemberHistory-Extension-Participant
   filename: Example-UKCore-FamilyMemberHistory-Extension-Participant.page.md
-- name: Example UKCore-Flag-FoodAllergy
-  filename: Example-UKCore-Flag-FoodAllergy.page.md
 - name: Example UKCore-HealthcareService-OrthopaedicService
   filename: Example-UKCore-HealthcareService-OrthopaedicService.page.md
-- name: Example UKCore-ImagingStudy-CT-ChestScan
-  filename: Example-UKCore-ImagingStudy-CT-ChestScan.page.md
 - name: Example UKCore-Immunization
   filename: Example-UKCore-Immunization.page.md
 - name: Example UKCore-Immunization-Extension-ParentPresent
@@ -106,8 +98,6 @@
   filename: Example-UKCore-MedicationStatement-Extension-PrescribingOrg.page.md
 - name: Example UKCore-MedicationStatement-Extension-PharmacistVerifiedIndicator
   filename: Example-UKCore-MedicationStatement-Extension-PharmacistVerifiedIndicator.page.md
-- name: Example UKCore-MessageHeader-Discharge
-  filename: Example-UKCore-MessageHeader-Discharge.page.md
 - name: Example UKCore-Observation-AwarenessOfDiagnosis
   filename: Example-UKCore-Observation-AwarenessOfDiagnosis.page.md
 - name: Example UKCore-Observation-DrugUse
@@ -122,8 +112,6 @@
   filename: Example-UKCore-Observation-Lab-RedCellCount.page.md
 - name: Example UKCore-Observation-Lab-WhiteCellCount
   filename: Example-UKCore-Observation-Lab-WhiteCellCount.page.md
-- name: Example UKCore-OperationOutcome-DateError
-  filename: Example-UKCore-OperationOutcome-DateError.page.md
 - name: Example UKCore-Organization-WhiteRoseMedicalCentre
   filename: Example-UKCore-Organization-WhiteRoseMedicalCentre.page.md
 - name: Example UKCore-Organization-LeedsTeachingHospital
@@ -182,14 +170,6 @@
   filename: Example-UKCore-Questionnaire-FitnessForWork.page.md
 - name: Example UKCore-Questionnaire-InpatientSurvey
   filename: Example-UKCore-Questionnaire-InpatientSurvey.page.md
-- name: Example UKCore-QuestionnaireResponse-BabyPatientSurvey
-  filename: Example-UKCore-QuestionnaireResponse-BabyPatientSurvey.page.md
-- name: Example UKCore-QuestionnaireResponse-EOLPlan
-  filename: Example-UKCore-QuestionnaireResponse-EOLPlan.page.md
-- name: Example UKCore-QuestionnaireResponse-FitnessForWork
-  filename: Example-UKCore-QuestionnaireResponse-FitnessForWork.page.md
-- name: Example UKCore-QuestionnaireResponse-InpatientSurvey
-  filename: Example-UKCore-QuestionnaireResponse-InpatientSurvey.page.md
 - name: Example UKCore-RelatedPerson
   filename: Example-UKCore-RelatedPerson.page.md
 - name: Example UKCore-Schedule-Immunization
@@ -222,5 +202,3 @@
   filename: Example-UKCore-Specimen-Extension-SampleCategory.page.md
 - name: Example UKCore-Specimen-Extension-SpecialHandling
   filename: Example-UKCore-Specimen-Extension-SpecialHandling.page.md
-- name: Example UKCore-Task-Colonoscopy
-  filename: Example-UKCore-Task-Colonoscopy.page.md

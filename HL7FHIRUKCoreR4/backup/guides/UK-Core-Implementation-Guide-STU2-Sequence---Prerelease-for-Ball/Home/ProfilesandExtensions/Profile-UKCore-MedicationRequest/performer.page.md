@@ -2,7 +2,7 @@
 
 Intended performer of administration by reference. 
 
-The resource being referenced SHALL conform to one of the following:
+The resource being referenced SHOULD conform to one of the following:
 - <a href="https://hl7.org/fhir/R4/CareTeam.html">CareTeam Resource</a>
 - <a href="https://hl7.org/fhir/R4/Device.html">Device Resource</a>
 - {{pagelink:Profile-Organization-94604}}

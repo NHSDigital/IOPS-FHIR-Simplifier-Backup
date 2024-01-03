@@ -11,22 +11,22 @@ This extension is used to provide warnings that a List may be incomplete as data
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-List-Extension-ListWarningCode-Example}}
+{{table:UKCore-Extension-ListWarningCode-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-List-Extension-ListWarningCode-Example}}
+{{tree:UKCore-Extension-ListWarningCode-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-List-Extension-ListWarningCode-Example}}
+{{xml:UKCore-Extension-ListWarningCode-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-List-Extension-ListWarningCode-Example}}
+{{json:UKCore-Extension-ListWarningCode-Example}}
 </div>
 
 ---

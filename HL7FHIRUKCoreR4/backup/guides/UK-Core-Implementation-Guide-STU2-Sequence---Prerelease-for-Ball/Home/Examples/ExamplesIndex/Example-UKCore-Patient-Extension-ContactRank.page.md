@@ -12,22 +12,22 @@ This example shows the extension which uses a `PositiveInt` to indicate the orde
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Patient-Extension-ContactRank-Example}}
+{{table:UKCore-Extension-ContactRank-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Patient-Extension-ContactRank-Example}}
+{{tree:UKCore-Extension-ContactRank-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Patient-Extension-ContactRank-Example}}
+{{xml:UKCore-Extension-ContactRank-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Patient-Extension-ContactRank-Example}}
+{{json:UKCore-Extension-ContactRank-Example}}
 </div>
 
 ---
