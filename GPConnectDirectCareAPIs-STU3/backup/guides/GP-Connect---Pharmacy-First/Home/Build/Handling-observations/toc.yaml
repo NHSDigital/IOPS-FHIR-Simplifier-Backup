@@ -8,6 +8,8 @@
   filename: Vital-signs-observations.page.md
 - name: Conventions
   filename: Conventions.page.md
+- name: Pulse rate
+  filename: Pulse-rate.page.md
 - name: Blood pressure triplets
   filename: Blood-pressure-triplets.page.md
 - name: Representing an average ABPM reading
