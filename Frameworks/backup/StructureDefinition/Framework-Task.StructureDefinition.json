@@ -128,11 +128,11 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Appointment",
-              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest",
-              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
-              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Questionnaire",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire",
               "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
             ]
           }
@@ -163,8 +163,7 @@
             "key": "patient-nhs",
             "severity": "error",
             "human": "NHS Number must be in the English and Welsh NHS Number range or length of the number is wrong.",
-            "expression": "identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists().not() or (identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists()  and identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').value.matches('^([456789]{1}[0-9]{9})$'))",
-            "source": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim"
+            "expression": "identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists().not() or (identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').exists()  and identifier.where(system='https://fhir.nhs.uk/Id/nhs-number').value.matches('^([456789]{1}[0-9]{9})$'))"
           }
         ],
         "mustSupport": true
@@ -199,7 +198,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole"
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"
             ],
             "aggregation": [
               "contained"
@@ -227,8 +226,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole",
-              "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization"
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole",
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"
             ]
           }
         ],
