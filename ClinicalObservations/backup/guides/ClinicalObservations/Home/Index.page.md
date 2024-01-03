@@ -1,6 +1,10 @@
 ---
 parent: 
 ---
+
+<div markdown="span" class="alert alert-nhse" role="alert">
+<b>IMPORTANT:</b> This guidance is currently in draft and SHOULD NOT be used for development or active implementation without consulting the NHS England Interoperability Standards team. For further information please click <a href="mailto:interoperabilityteam@nhs.net">here</a> to contact us</div>
+
 # Clinical Observations
 ## Early Warning Scores
 
