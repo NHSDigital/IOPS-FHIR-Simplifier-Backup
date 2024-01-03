@@ -30,11 +30,11 @@ The {{pagelink:Background}} section of this implementation guide provides additi
 ### Pathology Data Products
 This implementation guide has been developed by the [Pathology Standards and Implementation](https://digital.nhs.uk/services/pathology-standards-and-implementation) team within NHS England. The team has also developed a SNOMED CT<sup>&reg;</sup> based catalogue of pathology laboratory test request and test result codes. This catalogue was previously known as the Unified Test List (UTL). The UTL was originally a relatively simple set of codes representing pathology laboratory test requests and results, with each code carrying a SNOMED CT concept identifier. Following extensive modelling and classification work, the UTL has evolved into 'true' SNOMED CT. The content is accessible via two SNOMED CT reference sets:
 
-* PaLM (Pathology and Laboratory Medicine) procedure simple reference set - containing laboratory test request codes
-* PaLM (Pathology and Laboratory Medicine) observable entity simple reference set - containing laboratory test result codes
+* 1853561000000109 | PaLM (Pathology and Laboratory Medicine) procedure simple reference set - containing laboratory test request codes
+* 1853551000000106 | PaLM (Pathology and Laboratory Medicine) observable entity simple reference set - containing laboratory test result codes
 
 In addition to the PaLM reference sets, the following additional SNOMED CT reference set is also available to use:
-* Pathology Bounded Code List (PBCL) observables simple reference set - containing laboratory test result codes
+* 999002881000000100 | Pathology Bounded Code List (PBCL) observables simple reference set - containing laboratory test result codes
 
 The [PBCL](https://isd.digital.nhs.uk/trud3/user/guest/group/0/pack/38) was originally a subset of Read v2 codes for use in laboratory to GP practice messaging. Semantically equivalent SNOMED CT PBCL concepts were created for migration to SNOMED CT in primary care, and these are contained in the PBCL observables simple reference set.
 

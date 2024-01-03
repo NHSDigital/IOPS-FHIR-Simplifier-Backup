@@ -106,7 +106,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>The clinical code and name of the test that was performed, for example: <code>1107451000000100</code> <code>Glucose substance concentration in serum</code><br><br>This <b>SHALL</b> be populated using one of the following:<br><br>
                 <ul>
                     <li>memberOf 1853551000000106 | PaLM (Pathology and Laboratory Medicine) observable entity simple reference set, OR</li>
-					<li>memberOf 999002881000000100 | PBCL (Pathology Bounded Code List) observables simple reference set</li>
+                    <li>memberOf 999002881000000100 | PBCL (Pathology Bounded Code List) observables simple reference set</li>
                 </ul>
             </td>
         </tr>
@@ -212,7 +212,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..*</td>
             <td>Required</td>
             <td><a href="https://hl7.org/fhir/R4/backboneelement.html">BackboneElement</a></td>
-            <td>Used to qualify or provide additional details relating to the primary observation that the component is a part of. Components share the same attributes as the primary observation and are always treated as a part of a single observation (they are not separable). An example is the use of <code>Observation.component</code> to carry the relative time interval of a dynamic function test result. <br><br>For further information refer to: 
+            <td>Used to qualify or provide additional details relating to the primary observation that the component is a part of. Components share the same attributes as the primary observation and are always treated as a part of a single observation (they are not separable). An example is the use of <code>Observation.component</code> to carry the relative time interval of a dynamic function test result. <br><br>For further information refer to:<br><br>
                 <ul>
                     <li>the description of <a href="https://hl7.org/fhir/R4/observation.html#gr-comp"> Observation.component</a> in the Observation Grouping section of the base FHIR specification, and</li>
                     <li>the following example message: {{pagelink:R4BundleExampleGTTReport}}</li>

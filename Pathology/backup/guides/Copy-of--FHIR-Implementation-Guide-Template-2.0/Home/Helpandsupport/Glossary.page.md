@@ -8,15 +8,15 @@ A general glossary of developer related terms used by NHS England specifications
     <thead>
         <tr>
             <th width="10%">Abbreviation</th>
-            <th width="20%">Term</th>
-            <th width="70%">Definition</th>
+            <th width="25%">Term</th>
+            <th width="55%">Definition</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>EDIFACT</td>
             <td>Electronic Data Interchange For Administration, Commerce and Transport</td>
-            <td>An international standard for electronic data interchange, used as the basis of the <b>PMIP EDIFACT (NHS003)</b> messaging specification.</td>
+            <td>An international standard for electronic data interchange, used as the basis for the <b>PMIP EDIFACT (NHS003)</b> messaging specification.</td>
         </tr>
         <tr>
             <td>HCP</td>
@@ -26,7 +26,7 @@ A general glossary of developer related terms used by NHS England specifications
         <tr>
             <td>HL7</td>
             <td>Health Level 7</td>
-            <td>HL7 refers to a set of international standards that are used for the transfer of clinical and administrative data between software systems used by healthcare providers. These standards focus on the application layer, which is layer 7 in the OSI model.</td>
+            <td>HL7 refers to a set of international standards that are used for the transfer of clinical and administrative data between software systems used by healthcare providers. These standards focus on the application layer, which is layer 7 in the Open Systems Intercommunication (OSI) model.</td>
         </tr>
         <tr>
             <td>HL7v2.x</td>
@@ -41,7 +41,7 @@ A general glossary of developer related terms used by NHS England specifications
         <tr>
             <td>MESH</td>
             <td>Message Exchange for Social Care and Health</td>
-            <td>A software system that provides the ability to share data directly between health and care organisations and is the nationally recognised mechanism for this method of data sharing.</td>
+            <td>MESH is the main asynchronous messaging service used across health and social care in England. It is used to transfer electronic messages directly from one application to another, so that different organisations can communicate securely. Pathology laboratories currently use MESH to communicate test results to GP practices.</td>
         </tr>
         <tr>
             <td></td>
@@ -71,16 +71,19 @@ A general glossary of developer related terms used by NHS England specifications
         <tr>
             <td></td>
             <td>SNOMED PaLM</td>
-            <td>SNOMED CT concepts representing laboratory test request and test result codes, published as two SNOMED CT reference sets:<br><br>
+            <td>SNOMED CT concepts representing laboratory test request and test result codes. To aid implementation, the content is published in the following SNOMED CT reference sets:<br><br>
                 <ul>
-                    <li>PaLM (Pathology and Laboratory Medicine) procedure simple reference set - containing laboratory test request codes</li>
-					<li>PaLM (Pathology and Laboratory Medicine) observable entity simple reference set - containing laboratory test result codes</li><br><b>SNOMED PaLM</b> has replaced the <b>UTL</b>.
+                    <li>1853561000000109 | PaLM (Pathology and Laboratory Medicine) procedure simple reference set - containing laboratory test request codes</li>
+                    <li>1853551000000106 | PaLM (Pathology and Laboratory Medicine) observable entity simple reference set - containing more granular, detailed laboratory test result codes than those in the <b>SNOMED PBCL</b> reference set</li>
             </td>
         </tr>
         <tr>
             <td></td>
             <td>SNOMED PBCL</td>
-            <td>SNOMED CT concepts that are semantically equivalent to <b>PBCL</b> codes.</td>
+            <td>SNOMED CT concepts representing laboratory test result codes. These are semantically equivalent to <b>PBCL</b> Read codes. To aid implementation, the content is published in the following SNOMED CT reference set:<br><br>
+                <ul>
+                    <li>999002881000000100 | Pathology Bounded Code List (PBCL) observables simple reference set - containing laboratory test result codes</li>
+            </td>
         </tr>
         <tr>
             <td></td>
@@ -90,7 +93,7 @@ A general glossary of developer related terms used by NHS England specifications
         <tr>
             <td>UTL</td>
             <td>Unified Test List</td>
-            <td>SNOMED CT concepts representing laboratory test request and test result codes. The UTL has been replaced by <b>SNOMED PaLM</b>. </td>
+            <td>SNOMED CT concepts representing laboratory test request and test result codes. The Unified Test List has been superseded by <b>SNOMED PaLM</b>. </td>
         </tr>
     </tbody>
 </table>

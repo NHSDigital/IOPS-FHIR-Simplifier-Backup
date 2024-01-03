@@ -125,8 +125,8 @@ An example of how each supported data element may be populated is provided in {{
             <td>The clinical code and name of the requested test or test group, for example: <code>26604007</code> <code>Full blood count</code><br><br>This <b>SHALL</b> be populated using one of the following:<br><br>
                 <ul>
                     <li>memberOf 1853561000000109 | PaLM (Pathology and Laboratory Medicine) procedure simple reference set, OR</li>
-					<li>if a Procedure concept from the above reference set cannot be identified, use a SNOMED CT procedure code < 386053000 | Evaluation procedure (procedure), OR</li>
-					<li>if the two methods described above fail to identify a suitable code, then it is acceptable to use a local code representing the requested test or test group</li>
+                    <li>if a Procedure concept from the above reference set cannot be identified, use a SNOMED CT procedure code taken from descendantOf 386053000 | Evaluation procedure (procedure), OR</li>
+                    <li>if the two methods described above fail to identify a suitable code, then it is acceptable to use a local code representing the requested test or test group</li>
                 </ul>
             </td>
         </tr>
@@ -184,7 +184,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..*</td>
             <td>Required</td>
             <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference(s) to the <code>Specimen(s)</code> that will be used for testing. This should only be used when a test is requested and the specimen has already been collected.<br><br><b>Note:</b> It is also possible to link a <code>Specimen</code> to a <code>ServiceRequest</code> using the <code>Specimen.request</code> data element. This should be used when a test was requested before the specimen was collected.<br><br>For further information refer to: 
+            <td>Reference(s) to the <code>Specimen(s)</code> that will be used for testing. This should only be used when a test is requested and the specimen has already been collected.<br><br><b>Note:</b> It is also possible to link a <code>Specimen</code> to a <code>ServiceRequest</code> using the <code>Specimen.request</code> data element. This should be used when a test was requested before the specimen was collected.<br><br>For further information refer to:<br><br>
                 <ul>
                     <li>the description of the {{pagelink:R4Specimen}} profile in this implementation guide, and</li>
                     <li>the notes relating to the use of the<a href="https://hl7.org/fhir/R4/servicerequest.html#notes"> ServiceRequest</a> resource in the base FHIR specification.</li>

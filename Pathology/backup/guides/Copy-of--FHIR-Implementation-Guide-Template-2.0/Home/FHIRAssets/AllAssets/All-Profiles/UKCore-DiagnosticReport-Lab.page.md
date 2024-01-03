@@ -115,7 +115,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>1..1</td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>This <b>SHALL</b> be populated with a fixed value of SNOMED CT ConceptID <code>721981007</code> for <code>Diagnostic studies report</code>.<br><br>The clinical code and name of a test result or a test group is defined in the <code>code</code> element of the relevant <code>Observation</code> resource.</td>
+            <td>This <b>SHALL</b> be populated with a fixed value of SNOMED CT ConceptID <code>721981007</code> for <code>Diagnostic studies report</code>.<br><br><b>Note: </b>The clinical code and name of a test result or a test group is defined in the <code>code</code> element of the relevant <code>Observation</code> resource.</td>
         </tr>
         <tr>
             <td>subject</td>
@@ -155,7 +155,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..*</td>
             <td>Required</td>
             <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference(s) to the results included in the test report. This may contain references to individual test results, test groups or a combination of these. Test results and test groups are defined as <code>Observations</code>.<br><br>Test results which are part of a test group will not be referenced by this element; the reference will be to the test group which will in turn reference the associated test results. Refer to the design guidance for {{pagelink:DesignRelatedTests}} for further information.</td>
+            <td>Reference(s) to the results included in the test report. This may contain references to individual test results, test groups or a combination of these. Test results and test groups are defined as <code>Observations</code>.<br><br>Test results which are part of a test group will not be referenced by this element; the reference will be to the test group which will in turn reference the associated test results. Refer to the {{pagelink:DesignOverview}} for further information.</td>
         </tr>
             <tr>
             <td>conclusion</td>
