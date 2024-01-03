@@ -96,8 +96,15 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..1</td>
             <td>Required</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>The kind of material that forms the specimen. Where populated, the associated code and description <b>SHALL</b> be defined using SNOMED CT as follows:<br><br>(&lt;105590001 :Substance (substance): in which case <code>Specimen.collection.method</code> and <code>Specimen.collection.bodySite</code> <b>SHOULD</b> also be populated OR<br><br>
-&lt;49755003 :Morphologically abnormal structure (morphologic abnormality):</code> OR<br><br>&lt;260787004 :Physical object (physical object))</td>
+            <td>The kind of material that forms the specimen.<br><br>If provided, this <b>SHALL</b> be populated using one of the following:<br><br>
+                <ul>
+                    <li>descendantOf 105590001 | Substance (in which case <code>Specimen.collection.method</code> and <code>Specimen.collection.bodySite</code> <b>SHOULD</b> also be populated), OR</li>
+        			<li>descendantOf 49755003 | Morphologically abnormal structure, OR</li>
+                    <li>descendantOf 123037004 | Body structure, OR</li>
+                    <li>descendantOf 123038009 | Specimen, OR</li>
+                    <li>descendantOf 260787004 | Physical object</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td>subject</td>
@@ -121,7 +128,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..*</td>
             <td>Required</td>
             <td><a href=" https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference to the <code>ServiceRequest</code> that the specimen relates to. This should only be used when a test was requested before the specimen was collected.<br><br><b>Note:</b> It is also possible to link a <code>ServiceRequest</code> to a <code>Specimen</code> using the <code>ServiceRequest.specimen</code> data element. This should be used when a test is requested and the specimen has already been collected.<br><br>For further information refer to: 
+            <td>Reference to the <code>ServiceRequest</code> that the specimen relates to. This should only be used when a test was requested before the specimen was collected.<br><br><b>Note:</b> It is also possible to link a <code>ServiceRequest</code> to a <code>Specimen</code> using the <code>ServiceRequest.specimen</code> data element. This should be used when a test is requested and the specimen has already been collected.<br><br>For further information refer to:<br><br> 
                 <ul>
                     <li>the description of the {{pagelink:R4ServiceRequest}} profile in this implementation guide, and</li>
                     <li>the notes relating to the use of the<a href=" https://hl7.org/fhir/R4/servicerequest.html#notes"> ServiceRequest</a> resource in the base FHIR specification.</li>
