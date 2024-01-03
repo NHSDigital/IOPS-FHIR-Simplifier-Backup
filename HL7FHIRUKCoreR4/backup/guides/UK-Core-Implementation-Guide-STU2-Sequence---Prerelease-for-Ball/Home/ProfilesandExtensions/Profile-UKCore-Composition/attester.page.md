@@ -3,7 +3,7 @@
 
 `Composition.attester.party`
 <br>
-The resource being referenced SHALL conform to one of the following:
+The resource being referenced SHOULD conform to one of the following:
 
 - {{pagelink:Profile-Organization-94604}}
 - {{pagelink:Profile-Patient-88961}}

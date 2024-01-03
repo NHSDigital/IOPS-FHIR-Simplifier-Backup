@@ -1,6 +1,6 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced by `Observation.note.authorReference` SHALL conform to one of the following:
+The resource being referenced by `Observation.note.authorReference` SHOULD conform to one of the following:
 
 - {{pagelink:Profile-Organization-94604}}
 - {{pagelink:Profile-Patient-88961}}

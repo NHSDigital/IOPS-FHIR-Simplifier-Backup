@@ -58,4 +58,7 @@ select
   <br><br>
 </div>
 
+### Extension Specific Guidance
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Observation-67521}}.
+
 ---

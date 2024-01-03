@@ -9,17 +9,17 @@
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Encounter-AdmissionMethod-Example}}
+{{table:UKCore-Extension-AdmissionMethod-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Encounter-AdmissionMethod-Example}}
+{{xml:UKCore-Extension-AdmissionMethod-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Encounter-AdmissionMethod-Example}}
+{{json:UKCore-Extension-AdmissionMethod-Example}}
 </div>
 
 ---

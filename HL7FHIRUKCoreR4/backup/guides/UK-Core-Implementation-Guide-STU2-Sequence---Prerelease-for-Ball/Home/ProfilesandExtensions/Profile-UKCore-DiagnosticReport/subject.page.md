@@ -1,6 +1,6 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to one of the following:
+The resource being referenced SHOULD conform to one of the following:
 * <a href="https://hl7.org/fhir/R4/Device.html">Device Resource</a>
 * [Group Resource](https://hl7.org/fhir/R4/group.html)
 * {{pagelink:Profile-Location-14324}}

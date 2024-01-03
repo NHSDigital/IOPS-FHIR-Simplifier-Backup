@@ -58,4 +58,15 @@ select
   <br><br>
 </div>
 
+### Extension Specific Guidance
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
+
+- [UKCore-CareTeam](https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/home/profilesandextensions/profileukcore-careteam/index.guide.md?version=current)
+- [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current)
+- {{pagelink:Profile-Organization-94604}}
+- {{pagelink:Profile-Patient-88961}}
+- {{pagelink:Profile-Practitioner-10758}}
+- {{pagelink:Profile-PractitionerRole-55046}}
+- {{pagelink:Profile-RelatedPerson-51006}}
+
 ---

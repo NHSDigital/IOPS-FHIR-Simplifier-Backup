@@ -58,4 +58,7 @@ select
   <br><br>
 </div>
 
+### Guidance
+The resource being referenced SHOULD conform to the following {{pagelink:Profile-Composition}}.
+
 ---

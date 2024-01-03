@@ -56,6 +56,6 @@ select
 </div>
 
 ### Guidance
-The resource being referenced SHALL conform to the following <a href="https://hl7.org/fhir/R4/Device.html">Device Resource</a>.
+The resource being referenced SHOULD conform to the following [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current).
 
 ---
