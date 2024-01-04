@@ -1,0 +1,77 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "Y05868-a3552e60-448e-43c5-b191-28fcdd497436",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "FILL"
+          }
+        ]
+      },
+      "system": "https://fhir.example.org/Id/Accession-Number/Y05868",
+      "value": "123456789"
+    }
+  ],
+  "status": "current",
+  "docStatus": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "https://nicip.nhs.uk",
+        "code": "MAULR",
+        "display": "MRA Upper limb Rt"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "4201000179104",
+          "display": "Imaging report"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "IMG"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "1234567890"
+    },
+    "display": "SMITH, John"
+  },
+  "date": "2023-10-20T11:24:35+00:00",
+  "custodian": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "Y05868"
+    },
+    "display": "LEEDS TEACHING HOSPITALS NHS TRUST"
+  },
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/dicom+json",
+        "url": "https://a-pacs-system.org.nhs.uk/some-path/wado-rs/studies/7a530b22-688e-4623-876f-48d0037007ba/metadata",
+        "title": "Diagnostic Imaging Study",
+        "creation": "2023-10-20T11:24:34+00:00"
+      },
+      "format": {
+        "code": "direct",
+        "display": "Direct"
+      }
+    }
+  ]
+}

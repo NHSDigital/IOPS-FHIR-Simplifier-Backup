@@ -1,0 +1,113 @@
+{
+    "resourceType": "DiagnosticReport",
+    "id": "80d50a66-748e-4328-922f-17fce9d0fc77",
+    "meta": {
+        "versionId": "1.0"
+    },
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "4201000179104",
+                    "display": "Imaging report"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                    "code": "IMG"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "FILL"
+                    }
+                ]
+            },
+            "system": "https://fhir.example.org/Id/Accession-Number/Y05868",
+            "value": "123456789"
+        }
+    ],
+    "subject": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "1234567890"
+        },
+        "display": "SMITH, John"
+    },
+    "basedOn": [
+        {
+            "type": "ServiceRequest",
+            "identifier": {
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                            "code": "FILL"
+                        }
+                    ]
+                },
+                "system": "https://fhir.example.org/Id/Accession-Number/Y05868",
+                "value": "123456789"
+            }
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "717321000000108",
+                "display": "Diagnostic imaging report"
+            }
+        ]
+    },
+    "media": [
+        {
+            "link": {
+                "type": "DocumentReference",
+                "identifier": {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "FILL"
+                            }
+                        ]
+                    },
+                    "system": "https://fhir.example.org/Id/Accession-Number/Y05868",
+                    "value": "123456789"
+                }
+            }
+        }
+    ],
+    "performer": [
+        {
+            "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organisation-code",
+                "value": "ZZ123456"
+            },
+            "display": "King Charles University Hospital, Testham"
+        }
+    ],
+    "resultsInterpreter": [
+        {
+            "identifier": {
+                "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                "value": "1234567"
+            },
+            "display": "FICTITIOUS, Ralph"
+        }
+    ],
+    "issued": "2023-09-07T11:45:41+11:00",
+    "conclusion": "Normal - no action"
+}
