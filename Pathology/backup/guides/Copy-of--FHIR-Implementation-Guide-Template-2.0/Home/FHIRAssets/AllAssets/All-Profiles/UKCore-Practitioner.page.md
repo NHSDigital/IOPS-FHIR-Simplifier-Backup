@@ -10,8 +10,8 @@ Used to represent the following (where applicable):
 * the person that produced a pathology test report e.g. a consultant chemical pathologist
 * the person that collected a specimen e.g. a phlebotomist
 
-### Related Links
-* R4 Resource: [Practitioner](https://hl7.org/fhir/R4/practitioner.html)
+### Resource and Profile Links
+* R4 Resource (Base): [Practitioner](https://hl7.org/fhir/R4/practitioner.html)
 * R4 UK Core Profile: [UKCore-Practitioner](https://simplifier.net/hl7fhirukcorer4/ukcore-practitioner)
 
 ### Profile Views

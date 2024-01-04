@@ -9,8 +9,8 @@ Used to represent the following (where applicable):
 * the organisation that performed a pathology test e.g. a pathology laboratory
 * the organisation that produced a pathology test report e.g. a pathology laboratory
 
-### Related Links
-* R4 Resource: [Organization]( https://hl7.org/fhir/R4/organization.html)
+### Resource and Profile Links
+* R4 Resource (Base): [Organization]( https://hl7.org/fhir/R4/organization.html)
 * R4 UK Core Profile: [UKCore-Organization](https://simplifier.net/hl7fhirukcorer4/ukcore-organization)
 
 ### Profile Views

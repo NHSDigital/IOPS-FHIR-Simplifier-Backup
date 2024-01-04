@@ -6,12 +6,12 @@ topic: R4DiagnosticReport
 ### Summary
 A test report, containing the overall findings and clinical interpretation relating to one or more pathology tests. The report may reference individual test results, test groups or a combination of these.
 
-Test results and test groups are defined as <code>Observations</code> and are referenced from <code>DiagnosticReport</code> using <code>DiagnosticReport.result</code>.
+Test results and test groups are defined as FHIR <code>Observations</code> and are referenced from <code>DiagnosticReport</code> using <code>DiagnosticReport.result</code>.
 
 For information on how test results and test groups are represented, refer to the profile descriptions for {{pagelink:R4ObservationTestResult}} and {{pagelink:R4ObservationTestGroup}}. 
 
-### Related Links
-* R4 Resource: [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html)
+### Resource and Profile Links
+* R4 Resource (Base): [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html)
 * R4 UK Core Profile: [UKCore-DiagnosticReport](https://simplifier.net/hl7fhirukcorer4/ukcore-diagnosticreport)
 * R4 UK Core Profile (Lab): [UKCore-DiagnosticReport-Lab](https://simplifier.net/hl7fhirukcorer4/ukcore-diagnosticreport-lab)
 

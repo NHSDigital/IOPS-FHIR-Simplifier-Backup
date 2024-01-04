@@ -1,7 +1,7 @@
 ---
 topic: R4BundleExampleLFTandUandEReport
 ---
-### PATH-R4-10: R4 Bundle Example - Liver Function Tests and Urea and Electrolytes Report
+### PATH-R4-12: R4 Bundle Example - Liver Function Tests and Urea and Electrolytes Report
 
 <div class="tab fhirTree">
  <button class="tablinks active" onclick="openTab(event, 'Example')">Example Report</button>

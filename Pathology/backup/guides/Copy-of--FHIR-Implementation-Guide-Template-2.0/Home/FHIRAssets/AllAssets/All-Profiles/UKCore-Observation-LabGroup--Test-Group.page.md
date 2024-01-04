@@ -4,16 +4,16 @@ topic: R4ObservationTestGroup
 ## R4 Profile: UKCore-Observation-LabGroup (Test Group)
 
 ### Summary
-A set of related tests, for example a Full Blood Count. Test groups are often referred to as batteries, panels or profiles. The test group is defined as an <code>Observation</code> with references to other <code>Observations</code> that contain the associated test results. The references are defined using <code>Observation.hasMember</code>. 
+A set of related tests that are reported together, for example a Full Blood Count. Test groups are often referred to as batteries, panels or profiles. The test group is represented as a FHIR <code>Observation</code> with references to other <code>Observations</code> that contain the associated test results. The references are defined using <code>Observation.hasMember</code>. 
 
 <code>Observation.code</code> is used to represent the clinical code and name of the test group. 
 
-<code>Observation.value[x]</code> is not present as the test group itself does not carry a test result. 
+<code>Observation.value[x\]</code> is not present as the test group itself does not carry a test result. 
 
 Refer to the {{pagelink:R4ObservationTestResult}} profile definition and the {{pagelink:DesignOverview}} section for further information.
 
-### Related Links
-* R4 Resource: [Observation](https://hl7.org/fhir/R4/observation.html)
+### Resource and Profile Links
+* R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
 * R4 UK Core Profile: [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)
 * R4 UK Core Profile (Lab): [UKCore-Observation-LabGroup](https://simplifier.net/hl7fhirukcorer4/ukcore-observation-labgroup)
 
@@ -27,7 +27,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
     <h4>Snapshot View</h4>
-    {{tree: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, snapshot}}
+    {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">

@@ -6,8 +6,8 @@ topic: R4PractitionerRole
 ### Summary
 Used to represent a specific set of roles/locations/specialties/services that a <code>Practitioner</code> may perform at an <code>Organization</code>.
 
-### Related Links
-* R4 Resource: [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html)
+### Resource and Profile Links
+* R4 Resource (Base): [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html)
 * R4 UK Core Profile: [UKCore-PractitionerRole](https://simplifier.net/hl7fhirukcorer4/ukcore-practitionerrole)
 
 ### Profile Views

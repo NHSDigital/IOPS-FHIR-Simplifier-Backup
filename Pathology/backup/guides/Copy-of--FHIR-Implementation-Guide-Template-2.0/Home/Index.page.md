@@ -49,7 +49,7 @@ Together with this implementation guide, the PaLM and PBCL SNOMED CT reference s
 ### Scope
 The current scope of this implementation guide reflects the priority of replacing PMIP EDIFACT (NHS003) and the PBCL. In summary:
 
-* the initial focus is on the ability to support pathology test reporting for tests that are requested by GP practices (please note that it is possible to return details relating to the orginally requested test as part of a test report)
+* the initial focus is on the ability to support pathology test reporting for tests that are requested by GP practices (please note that it is possible to return details relating to the originally requested test as part of a test report)
 * the clinical payload that is currently supported by the implementation guide is aligned with the PaLM and PBCL SNOMED CT reference sets and covers the following pathology specialities:
     * blood sciences - clinical biochemistry (also known as chemical pathology), haematology, immunology and transfusion medicine
     * microbiology - bacteriology, virology and serology
@@ -61,7 +61,7 @@ This guide is divided into the following sections and pages which are accessible
 * Design:
     * {{pagelink:Background}}: includes a high-level business process flow for pathology test requesting and reporting, links to various supporting artefacts (user stories, personas and journey maps) and describes the systems and data flows that are currently used to support GP practice requested pathology tests.
     * {{pagelink:DesignOverview}}: includes a high-level business information model and a detailed FHIR data model, a summary of the design approach that has been adopted and a description of how SNOMED CT is used to populate key aspects of the pathology related FHIR profiles.
-    * {{pagelink:DataMapping}} (TBC): this page will provide a mapping between the data elements included in the PMIP EDIFACT (NHS003) standard and the FHIR profile data elements described by this implementation guide.
+    * {{pagelink:DataMapping}} (TBC): this page will provide a mapping between the data elements included in the PMIP EDIFACT (NHS003) specification and the FHIR profile data elements described by this implementation guide.
     * {{pagelink:Transport}} (TBC): this page will detail the data exchange approach that will be used as part of this implementation guide.
     * {{pagelink:ErrorHandling}} (TBC): this page will describe any error handling that will be used as part of this implementation guide.
     * {{pagelink:AcknowledgementFramework}} (TBC): this page will describe the acknowledge framework that will be used as part of this implementation guide.
@@ -79,7 +79,7 @@ This guide is divided into the following sections and pages which are accessible
 * Help and Support:
     * {{pagelink:ContactUs}}: provides details for contacting the authors of this implementation guide. 
     * {{pagelink:ReleaseNotes}}: summarises the changes that have been made to this implementation guide. 
-    * {{pagelink:Glossary}}: provides a definition of acronyms and terms that are used in this implementation guide.
+    * {{pagelink:Glossary}}: provides a definition of key abbreviations and terms that are used in this implementation guide.
     * {{pagelink:Sitemap}}: lists all of the key sections and pages that are included in this implementation guide.
 
 
