@@ -6,8 +6,8 @@ topic: R4MessageHeader
 ### Summary
 The header for a message exchange that is either requesting or responding to an action.
 
-### Related Links
-* R4 Resource: [MessageHeader](https://hl7.org/fhir/R4/messageheader.html)
+### Resource and Profile Links
+* R4 Resource (Base): [MessageHeader](https://hl7.org/fhir/R4/messageheader.html)
 * R4 UK Core Profile: [UKCore-MessageHeader](https://simplifier.net/hl7fhirukcorer4/ukcore-messageheader)
 
 ### Profile Views

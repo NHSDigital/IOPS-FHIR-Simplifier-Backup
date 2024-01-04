@@ -6,8 +6,8 @@ topic: R4Bundle
 ### Summary
 A container for a collection of resources. Used to group the set of resources that comprise a pathology related message.
 
-### Related Links
-* R4 Resource: [Bundle](https://hl7.org/FHIR/R4/bundle.html)
+### Resource and Profile Links
+* R4 Resource (Base): [Bundle](https://hl7.org/FHIR/R4/bundle.html)
 * R4 UK Core Profile: [UKCore-Bundle](https://simplifier.net/hl7fhirukcorer4/ukcore-bundle)
 
 ### Profile Views

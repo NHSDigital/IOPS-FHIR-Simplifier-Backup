@@ -1,7 +1,7 @@
 ---
 topic: R4BundleExampleLFTandUandERequest
 ---
-### PATH-R4-09: R4 Bundle Example - Liver Function Tests and Urea and Electrolytes Request
+### PATH-R4-11: R4 Bundle Example - Liver Function Tests and Urea and Electrolytes Request
 
 <div class="tab fhirTree">
  <button class="tablinks active" onclick="openTab(event, 'Example')">Example Request</button>

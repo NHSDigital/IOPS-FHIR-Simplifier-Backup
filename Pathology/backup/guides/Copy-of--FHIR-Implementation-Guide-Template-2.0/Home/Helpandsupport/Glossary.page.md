@@ -2,7 +2,9 @@
 topic: Glossary
 ---
 ## Glossary
-A general glossary of developer related terms used by NHS England specifications can be found on the [NHS Developer Hub](https://digital.nhs.uk/developer/guides-and-documentation/glossary-of-developer-terms). The following terms are of particular relevance to this implementation guide:
+A separate glossary of developer related terms used by NHS England specifications can be found on the [NHS Developer Hub](https://digital.nhs.uk/developer/guides-and-documentation/glossary-of-developer-terms).
+
+The following terms are of particular relevance to this implementation guide:
 
 <table class="regular">
     <thead>
@@ -51,7 +53,7 @@ A general glossary of developer related terms used by NHS England specifications
         <tr>
             <td>PBCL</td>
             <td>Pathology Bounded Code List</td>
-            <td>Originally, a subset of Read v2 codes for use in laboratory to GP practice messaging. Semantically equivalent <b>SNOMED PBCL</b> concepts have since been created.</td>
+            <td>The Pathology Bounded Code List (PBCL) was developed to provide a defined or bounded subset of Read codes for use in laboratory to GP messaging. It is currently used in conjunction with the <b>PMIP EDIFACT (NHS003)</b> messaging specification. A set of semantically equivalent <b>SNOMED PBCL</b> concepts have since been created.</td>
         </tr>
         <tr>
             <td>PMIP</td>
@@ -88,7 +90,7 @@ A general glossary of developer related terms used by NHS England specifications
         <tr>
             <td></td>
             <td>Test Group</td>
-            <td>Used within this implementation guide to denote a set of related tests, for example a Full Blood Count. Test groups are often referred to as batteries, panels or profiles.</td>
+            <td>Used within this implementation guide to denote a set of related tests that are reported together, for example a Full Blood Count. The individual tests within a test group may differ between organisations. Test groups are often referred to as batteries, panels or profiles.</td>
         </tr>
         <tr>
             <td>UTL</td>

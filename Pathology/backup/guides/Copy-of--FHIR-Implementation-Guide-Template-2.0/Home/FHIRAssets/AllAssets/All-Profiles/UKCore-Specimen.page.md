@@ -6,8 +6,8 @@ topic: R4Specimen
 ### Summary
 Details of the specimen(s) provided for testing.
 
-### Related Links
-* R4 Resource: [Specimen]( https://hl7.org/fhir/R4/specimen.html)
+### Resource and Profile Links
+* R4 Resource (Base): [Specimen]( https://hl7.org/fhir/R4/specimen.html)
 * R4 UK Core Profile: [UKCore-Specimen](https://simplifier.net/hl7fhirukcorer4/ukcore-specimen)
 
 ### Profile Views

@@ -4,7 +4,7 @@ topic: R4ObservationTestResult
 ## R4 Profile: UKCore-Observation-Lab (Test Result)
 
 ### Summary
-An individual test result, defined as an <code>Observation</code>. The test result may be for a single test or it may form part of a test group such as a Full Blood Count.
+An individual test result, defined as a FHIR <code>Observation</code>. The test result may be for a single test or it may form part of a test group such as a Full Blood Count.
 
 <code>Observation.code</code> is used to represent the clinical code and name of the test.
 
@@ -12,8 +12,8 @@ An individual test result, defined as an <code>Observation</code>. The test resu
 
 Refer to the {{pagelink:R4ObservationTestGroup}} profile definition and the {{pagelink:DesignOverview}} section for further information.
 
-### Related Links
-* R4 Resource: [Observation](https://hl7.org/fhir/R4/observation.html)
+### Resource and Profile Links
+* R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
 * R4 UK Core Profile: [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)
 * R4 UK Core Profile (Lab): [UKCore-Observation-Lab](https://simplifier.net/hl7fhirukcorer4/ukcore-observation-lab)
 

@@ -7,8 +7,8 @@ This implementation guide documents the use of FHIR UK Core R4 profiles to suppo
 ### Summary
 A brief description of the profile.
 
-### Related Links
-Links to the base FHIR resource and the associated profile.
+### Resource and Profile Links
+Links to the base FHIR resource and associated profile(s).
 
 ### Profile Views
 A formal definition of the profile presented using the following views:

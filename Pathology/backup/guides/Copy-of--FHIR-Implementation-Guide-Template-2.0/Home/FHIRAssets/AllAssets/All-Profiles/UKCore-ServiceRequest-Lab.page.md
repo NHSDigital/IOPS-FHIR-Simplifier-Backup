@@ -6,12 +6,12 @@ topic: R4ServiceRequest
 ### Summary
 The test request that a test report is based on.
 
-The associated test report is defined as a <code>DiagnosticReport</code> and is linked to <code>ServiceRequest</code> using <code>DiagnosticReport.basedOn</code>. Refer to the profile description for {{pagelink:R4DiagnosticReport}} for further information.
+The associated test report is represented as a FHIR <code>DiagnosticReport</code> and is linked to <code>ServiceRequest</code> using <code>DiagnosticReport.basedOn</code>. Refer to the profile description for {{pagelink:R4DiagnosticReport}} for further information.
 
 If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of <code>ServiceRequest</code> is required for each requested test or test group. <code>ServiceRequest.requisition</code> acts as a common identifier to link the requests.
 
-### Related Links
-* R4 Resource: [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html)
+### Resource and Profile Links
+* R4 Resource (Base): [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html)
 * R4 UK Core Profile: [UKCore-ServiceRequest](https://simplifier.net/hl7fhirukcorer4/ukcore-servicerequest)
 * R4 UK Core Profile (Lab): [UKCore-ServiceRequest-Lab](https://simplifier.net/hl7fhirukcorer4/ukcore-servicerequest-lab)
 
@@ -85,7 +85,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..1</td>
             <td>Optional</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
-            <td>A shared identifier that is used to link multiple test requests.<br><br>If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of <code>ServiceRequest</code> is required for each requested test or test group. <code>ServiceRequest.requisition</code> acts as a common identifier to link the requests.<br><br>For further information refer to:
+            <td>A shared identifier that is used to link multiple test requests.<br><br>If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of <code>ServiceRequest</code> is required for each requested test or test group. <code>ServiceRequest.requisition</code> acts as a common identifier to link the requests.<br><br>For further information refer to:<br><br>
                 <ul>
                     <li>the description of <a href="https://hl7.org/FHIR/R4/request.html#requisitionid"> Shared requisition id</a> in the Compound Requests section of the base FHIR specification, and</li>
                     <li>the following example message: {{pagelink:R4BundleExampleLFTandUandERequest}}</li>

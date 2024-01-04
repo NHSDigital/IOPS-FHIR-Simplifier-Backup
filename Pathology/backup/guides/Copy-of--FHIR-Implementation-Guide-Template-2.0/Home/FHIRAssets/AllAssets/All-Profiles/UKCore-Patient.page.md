@@ -6,8 +6,8 @@ topic: R4Patient
 ### Summary
 Demographics and other administrative information about an individual. In most cases the subject of a pathology test request and/or test report is a `Patient` but it could be a `Group`, `Device` or `Location`.
 
-### Related Links
-* R4 Resource: [Patient]( https://hl7.org/fhir/R4/patient.html)
+### Resource and Profile Links
+* R4 Resource (Base): [Patient]( https://hl7.org/fhir/R4/patient.html)
 * R4 UK Core Profile: [UKCore-Patient](https://simplifier.net/hl7fhirukcorer4/ukcore-patient)
 
 ### Profile Views

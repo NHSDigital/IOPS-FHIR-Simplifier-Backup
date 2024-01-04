@@ -20,8 +20,8 @@ The snippet examples have been provided to illustrate how each supported data el
             <th width="10%">Reference</th>
             <th width="10%">Resource</th>
             <th width="15%">Speciality</th>
-            <th width="30%">Summary</th>
-            <th width="25%">Example</th>
+            <th width="33%">Summary</th>
+            <th width="32%">Example</th>
         </tr>
     </thead>
     <tbody>
@@ -85,29 +85,29 @@ The snippet examples have been provided to illustrate how each supported data el
             <td>PATH-R4-09</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Request for multiple test groups (numeric results).</td>
-            <td>{{pagelink:R4BundleExampleLFTandUandERequest}}</td>
+            <td>Request for a single test group and a single test (numeric results).</td>
+            <td>{{pagelink:R4BundleExampleLipidsandHbA1cRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-10</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Report for multiple test groups (numeric results).</td>
-            <td>{{pagelink:R4BundleExampleLFTandUandEReport}}</td>
+            <td>Report for a single test group and a single test (numeric results)</td>
+            <td>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-11</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Request for a single test group and a single test (numeric results).</td>
-            <td>{{pagelink:R4BundleExampleLipidsandHbA1cRequest}}</td>
+            <td>Request for multiple test groups (numeric results).</td>
+            <td>{{pagelink:R4BundleExampleLFTandUandERequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-12</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Report for a single test group and a single test (numeric results)</td>
-            <td>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}</td>
+            <td>Report for multiple test groups (numeric results).</td>
+            <td>{{pagelink:R4BundleExampleLFTandUandEReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-13</td>

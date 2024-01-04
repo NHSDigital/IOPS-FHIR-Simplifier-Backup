@@ -1,7 +1,7 @@
 ---
 topic: R4BundleExampleLipidsandHbA1cReport
 ---
-### PATH-R4-12: R4 Bundle Example - Lipids Profile and Haemoglobin A1c (HbA1c) Report
+### PATH-R4-10: R4 Bundle Example - Lipids Profile and Haemoglobin A1c (HbA1c) Report
 
 <div class="tab fhirTree">
  <button class="tablinks active" onclick="openTab(event, 'Example')">Example Report</button>
