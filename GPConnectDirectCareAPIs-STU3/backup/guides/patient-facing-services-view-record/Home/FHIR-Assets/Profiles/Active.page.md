@@ -32,5 +32,6 @@
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-Slot-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-StructuredRecord-Bundle-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-Task-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--Binary}}
 
 ---

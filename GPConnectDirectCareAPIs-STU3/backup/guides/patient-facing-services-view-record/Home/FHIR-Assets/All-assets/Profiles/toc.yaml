@@ -64,3 +64,5 @@
   filename: Profile--GPConnect-StructuredRecord-Bundle-1
 - name: 'Profile: GPConnect-Task-1'
   filename: Profile--GPConnect-Task-1
+- name: 'Profile: Binary'
+  filename: Profile--Binary
