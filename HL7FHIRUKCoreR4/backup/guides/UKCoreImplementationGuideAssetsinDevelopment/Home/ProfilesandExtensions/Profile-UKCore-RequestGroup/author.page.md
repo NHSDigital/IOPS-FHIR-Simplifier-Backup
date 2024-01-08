@@ -2,10 +2,8 @@
 
 The resource being referenced SHALL conform to one of the following:
 
-<!--
 - {{pagelink:Profile-Device}}
-- {{pagelink:Profile-Practitioner}}
-- {{pagelink:Profile-PractitionerRole}}
--->
+- [Profile UKCore-Practitioner](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Practitioner?version=current)
+- [Profile UKCore-PractitionerRole](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-PractitionerRole?version=current)
 
 ---
