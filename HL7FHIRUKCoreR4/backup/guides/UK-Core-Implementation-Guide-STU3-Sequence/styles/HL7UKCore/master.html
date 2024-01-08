@@ -707,8 +707,10 @@
             //look for any anchor tags going to XML, which would open the resource in simpifier
             // and remap these to the relevant asset in the IG
            function swapProfileTreeLinks() {
-                var ukCoreProfiles = ['AllergyIntolerance','Appointment','Composition','Condition','Consent','Device','DiagnosticReport','Encounter','EpisodeOfCare','FamilyMemberHistory','Flag','HealthcareService','ImagingStudy','Immunization','List','Location','Medication','MedicationAdministration','MedicationDispense','MedicationRequest','MedicationStatement','MessageHeader','Observation','OperationOutcome','Organization','Patient','Practitioner','PractitionerRole','Procedure','Questionnaire','QuestionnaireResponse','RelatedPerson','Schedule','ServiceRequest','Slot','Specimen','Task'];
-var baseDataTypes = ['base64Binary','boolean','canonical','code','date','dateTime','decimal','id','instant','integer','markdown','oid','positiveInt','string','time','unsignedInt','uri','url','uuid','Data','Types','Address','Age','Annotation','Attachment','CodeableConcept','Coding','ContactPoint','Count','Distance','Duration','HumanName','Identifier','Money','Period','Quantity','Range','Ratio','Reference','SampledData','Signature','Timing'];
+                var ukCoreProfiles = ['AllergyIntolerance','Appointment','Composition','Condition','DiagnosticReport','Encounter','FamilyMemberHistory','HealthcareService','Immunization','List','Location','Medication','MedicationAdministration','MedicationDispense','MedicationRequest','MedicationStatement','Observation','Organization','Patient','Practitioner','PractitionerRole','Procedure','Questionnaire','RelatedPerson','Schedule','ServiceRequest','Slot','Specimen'];
+                var draftProfiles = ['AuditEvent','Bundle','CarePlan','CareTeam','Communication','Consent','Device','DocumentReference','EpisodeOfCare','Flag','ImagingStudy','MessageHeader','OperationOutcome','OrganizationAffiliation','Provenance','QuestionnaireResponse','RequestGroup','Task'];
+
+var baseDataTypes = ['base64Binary','boolean','canonical','code','date','dateTime','decimal','id','instant','integer','markdown','oid','positiveInt','string','time','unsignedInt','uri','url','uuid','Data','Types','Address','Age','Annotation','Attachment','CodeableConcept','Coding','ContactPoint','Count','Distance','Duration','HumanName','Identifier','Money','Period','Quantity','Range','Ratio','SampledData','Signature','Timing'];
 var metaDataTypes = ['ContactDetail','Contributor','DataRequirement','Expression','ParameterDefinition','RelatedArtifact','TriggerDefinition','UsageContext'];
 
 
@@ -758,6 +760,9 @@ var metaDataTypes = ['ContactDetail','Contributor','DataRequirement','Expression
                         if (ukCoreProfiles.indexOf(profileName) > -1) {
                             var swapUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + profileName;
                             $(this).attr("href", swapUrl);
+                        } else if (draftProfiles.indexOf(profileName) > -1) {
+                            var swapUrl = "https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-" + profileName;
+                            $(this).attr("href", swapUrl);
                         } else if (baseDataTypes.indexOf(profileName) > -1) {
                             var swapUrl = "https://hl7.org/fhir/R4/datatypes.html#" + profileName;
                             $(this).attr("href", swapUrl);
@@ -781,8 +786,16 @@ var metaDataTypes = ['ContactDetail','Contributor','DataRequirement','Expression
                             $(this).attr("href", swapUrl);
                         }
                         
-                        if (profileName == "Reference" && ($(this).parent().prop("tagName") == "P" || $(this).parent().prop("tagName") == "TD") ) {
-                            $(this).parent().find('span:contains(")")')[0].innerText = ") or UK Core equivalent profile."
+                        
+                    }
+				});
+
+                $('a[href="https://hl7.org/fhir/R4/references.html"]').each(function(index) {
+                    let parentObj = $(this).parent();
+                    if (parentObj.prop("tagName") == "P" || parentObj.prop("tagName") == "TD")
+                    {
+                        if (parentObj.find('a[href*="Profile-UKCore-"]') != undefined && parentObj.find('a[href*="Profile-UKCore-"]').length > 0) {
+                            parentObj.find('span:contains(")")')[0].innerText = ") or UK Core equivalent profile."
                         }
                     }
 				});

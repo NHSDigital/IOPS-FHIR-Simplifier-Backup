@@ -50,12 +50,6 @@
 <td>NRL, DHCW</td>
 </tr>
 
-<tr>
-<td>{{pagelink:Profile-Observation-VitalSigns}}</td>
-<td>draft</td>
-<td>Defines the observation constraints and extensions on the UK Core observation resource for the minimal set of data to query and retrieve clinical vital signs observation information</td>
-<td>Clinical Observations / Sprint 7</td>
-</tr>
 
 <tr>
 <td>{{pagelink:Profile-OrganizationAffiliation}}</td>
