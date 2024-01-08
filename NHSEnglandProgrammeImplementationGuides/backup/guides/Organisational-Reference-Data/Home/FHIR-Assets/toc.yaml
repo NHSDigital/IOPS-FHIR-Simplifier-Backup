@@ -1,3 +1,5 @@
+- name: Capability Statement
+  filename: Capability-Statement.page.md
 - name: Profiles
   filename: Profiles.page.md
 - name: Extensions
