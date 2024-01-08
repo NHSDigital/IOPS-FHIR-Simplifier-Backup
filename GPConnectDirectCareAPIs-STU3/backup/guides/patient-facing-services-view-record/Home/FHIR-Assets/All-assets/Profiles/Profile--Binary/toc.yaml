@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: Related links
+  filename: Related-links.page.md
+- name: contentType
+  filename: contentType.page.md
+- name: content
+  filename: content.page.md

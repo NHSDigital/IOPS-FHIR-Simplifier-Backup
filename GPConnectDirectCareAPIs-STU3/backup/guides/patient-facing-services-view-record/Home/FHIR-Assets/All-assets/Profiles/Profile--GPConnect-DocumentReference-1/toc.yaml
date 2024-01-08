@@ -2,3 +2,9 @@
   filename: Index.page.md
 - name: Related links
   filename: Related-links.page.md
+- name: id
+  filename: id.page.md
+- name: meta.profile
+  filename: meta.profile.page.md
+- name: meta.security
+  filename: meta.security.page.md
