@@ -9,7 +9,7 @@ The following terms are of particular relevance to this implementation guide:
 <table class="regular">
     <thead>
         <tr>
-            <th width="10%">Abbreviation</th>
+            <th width="10%">Abbreviation / Acronym</th>
             <th width="25%">Term</th>
             <th width="55%">Definition</th>
         </tr>
