@@ -79,7 +79,7 @@ This guide is divided into the following sections and pages which are accessible
 * Help and Support:
     * {{pagelink:ContactUs}}: provides details for contacting the authors of this implementation guide. 
     * {{pagelink:ReleaseNotes}}: summarises the changes that have been made to this implementation guide. 
-    * {{pagelink:Glossary}}: provides a definition of key abbreviations and terms that are used in this implementation guide.
+    * {{pagelink:Glossary}}: provides a definition of key abbreviations, acronyms and terms that are used in this implementation guide.
     * {{pagelink:Sitemap}}: lists all of the key sections and pages that are included in this implementation guide.
 
 
