@@ -3,22 +3,10 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Additional
 ---
 ## StructureDefinition Extension-UKCore-AdditionalContact
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreAdditionalContact'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
+
+The canonical of this profile is {{variable:canonical}}.
+
+
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
