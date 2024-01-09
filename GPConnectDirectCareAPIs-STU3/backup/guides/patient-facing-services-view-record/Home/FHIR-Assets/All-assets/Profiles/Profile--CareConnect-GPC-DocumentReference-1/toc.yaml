@@ -6,6 +6,12 @@
   filename: id.page.md
 - name: meta.profile
   filename: meta.profile.page.md
+- name: meta.security
+  filename: meta.security.page.md
+- name: securityLabel
+  filename: securityLabel.page.md
+- name: masterIdentifier
+  filename: masterIdentifier.page.md
 - name: identifier
   filename: identifier.page.md
 - name: status
@@ -38,3 +44,13 @@
   filename: context.practiceSetting.page.md
 - name: context.related
   filename: context.related.page.md
+- name: docStatus
+  filename: docStatus.page.md
+- name: class
+  filename: class.page.md
+- name: authenticator
+  filename: authenticator.page.md
+- name: content.attachment.data
+  filename: content.attachment.data.page.md
+- name: relatesTo
+  filename: relatesTo.page.md

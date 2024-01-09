@@ -11,7 +11,11 @@ URL to retrieve the document, this **MUST** be populated when the document is av
 <h5><ins>Example</ins></h5>
 
 ```xml
-<url value="http://example.org/xds/mhd/Binary/07a6483f-732b-461e-86b6-edb665c45510" />
+<content>
+    <attachment>
+      <url value="http://example.org/xds/mhd/Binary/07a6483f-732b-461e-86b6-edb665c45510" />
+    </attachment>
+</content>
 ```
 
 ---

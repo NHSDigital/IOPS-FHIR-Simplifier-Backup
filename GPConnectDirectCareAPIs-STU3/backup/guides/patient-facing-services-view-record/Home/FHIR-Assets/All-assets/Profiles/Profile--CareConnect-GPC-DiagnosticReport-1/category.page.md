@@ -4,7 +4,6 @@
 
 <span class="mro-circle required" title="Required"></span> Required
 
-
 <h5><ins>Guidance</ins></h5>
 
 The general type of test report. 
@@ -20,7 +19,11 @@ A default value of `LAB` (Laboratory) should be used if a more specific value is
 
 ```xml
 <category>
-    <reference value="procedure-request--001ksid8" />
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <display value="Pathology"/>
+      <code value="39459002"/>
+    </coding>
 </category>
 ```
 

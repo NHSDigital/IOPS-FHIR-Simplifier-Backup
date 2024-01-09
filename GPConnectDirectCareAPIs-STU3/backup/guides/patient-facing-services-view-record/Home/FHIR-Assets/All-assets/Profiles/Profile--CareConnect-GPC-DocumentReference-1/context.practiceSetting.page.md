@@ -11,13 +11,15 @@ Additional details about where the content was created (for example, clinical sp
 <h5><ins>Example</ins></h5>
 
 ```xml
-<type>
-    <coding>
-        <display value="General practice service" />
-        <code value="1060971000000108" />
-        <system value="http://snomed.info/sct" />
-    </coding>
-</type>
+<context>
+    <practiceSetting>
+        <coding>
+            <display value="General practice service" />
+            <code value="1060971000000108" />
+            <system value="http://snomed.info/sct" />
+        </coding>
+    </practiceSetting>
+</context>
 ```
 
 ---

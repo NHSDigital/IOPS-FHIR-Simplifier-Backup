@@ -4,13 +4,13 @@
 
 <span class="mro-circle mandatory" title="Mandatory"></span> Mandatory
 
-
 <h5><ins>Guidance</ins></h5>
 
-The `code` element can be used to represent the tests requested by the requesting healthcare provider. 
+#### For investigations:
+
+The `code` element can be used to represent the tests requested by the requesting healthcare professional. 
 
 In the event of a code not being available, providers **MUST** populate the `code.text` field with the text `No code available`.
-
 
 <h5><ins>Example</ins></h5>
 
@@ -28,6 +28,23 @@ In the event of a code not being available, providers **MUST** populate the `cod
                 <descriptionDisplay value="Not available (qualifier value)" />
             </extesion>
         </snomedCT>
+    </coding>
+    <text value="No code available" />
+</code>
+```
+
+#### For diary entries
+
+The planned event, action or activity.
+
+<h5><ins>Example</ins></h5>
+
+```xml
+<code>
+    <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="408490001" />
+        <display value="Antipsychotic drug therapy" />
     </coding>
     <text value="No code available" />
 </code>

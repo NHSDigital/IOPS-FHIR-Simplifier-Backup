@@ -11,7 +11,11 @@ To be used when only a placeholder for a document is available. This **SHOULD** 
 <h5><ins>Example</ins></h5>
 
 ```xml
-<title value="Still processing..." />
+<content>
+    <attachment>
+       <title value="Still processing..." />
+    </attachment>
+</content>
 ```
 
 ---

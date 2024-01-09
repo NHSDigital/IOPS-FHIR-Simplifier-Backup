@@ -11,7 +11,11 @@ Size of the file.
 <h5><ins>Example</ins></h5>
 
 ```xml
-<size value="1234" />
+<content>
+    <attachment>
+        <size value="1234" />
+    </attachment>
+</content>
 ```
 
 ---

@@ -7,7 +7,13 @@
 
 <h5><ins>Guidance</ins></h5>
 
-A use-case for the `priority` element within GP Connect has not been defined.
+#### For investigations
+
+A use-case for the `context` element has not been defined.
+
+#### For diary entries
+
+A reference to the consultation from which the diary entry originates - that is, the consultation which the diary entry was created within.
 
 <h5><ins>Example</ins></h5>
 

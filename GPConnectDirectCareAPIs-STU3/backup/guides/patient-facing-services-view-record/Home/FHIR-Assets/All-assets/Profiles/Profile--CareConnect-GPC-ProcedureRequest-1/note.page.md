@@ -4,10 +4,15 @@
 
 <span class="mro-circle required" title="Required"></span> Required
 
-
 <h5><ins>Guidance</ins></h5>
 
-Any notes relating to the specified problem.
+#### For investigations
+
+A human readable explanation from the requesting healthcare professional containing an explanation on why the test has been requested and any contextual information they considered relevant.
+
+#### For diary entries
+
+Free text narrative to describe the reason for the diary entry or the action / activity required by the diary entry. This is for additional content beyond the `code` and `reasonCode` coded elements and is not intended to duplicate the content of those elements.
 
 <h5><ins>Example</ins></h5>
 
