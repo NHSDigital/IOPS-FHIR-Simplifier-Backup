@@ -1,3 +1,20 @@
+<div id="transpose">
+<fql>
+from
+	StructureDefinition
+where
+	url = %subject
+select
+	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
+	Description: description,
+	Profile_Purpose: purpose
+  with header 
+</fql>
+</div>
+
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
   <button class="tablinks" onclick="openTab(event, 'Detailed View')">Detailed View</button>
