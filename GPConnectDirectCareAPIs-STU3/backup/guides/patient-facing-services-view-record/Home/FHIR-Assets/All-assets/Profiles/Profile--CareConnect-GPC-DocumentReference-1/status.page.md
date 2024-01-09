@@ -6,14 +6,20 @@
 
 <h5><ins>Guidance</ins></h5>
 
-`current` | `superseded` | `entered-in-error`
+The status of the `DocumentReference`.
 
-This field will always have default value of `current` as only the latest version of the document is retrieved.
+Valid values are:
+
+- `current` - the current reference for this document
+- `superseded` - this reference has been superseded by another referernce
+- `entered-in-error` - reference created in error
+
+However, this field will always have default value of `current` as only the latest version of the document is retrieved.
 
 <h5><ins>Example</ins></h5>
 
 ```xml
-<status value="current" />
+<status value="current"/>
 ```
 
 ---

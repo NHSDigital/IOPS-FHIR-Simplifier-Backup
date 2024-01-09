@@ -11,7 +11,11 @@ MIME type for the document.
 <h5><ins>Example</ins></h5>
 
 ```xml
-<contentType value="application/hl7-v3+xml"/> 
+<content>
+    <attachment>
+        <contentType value="application/hl7-v3+xml"/> 
+    </attachment>
+</content>
 ```
 
 ---

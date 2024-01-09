@@ -4,17 +4,30 @@
 
 <span class="mro-circle mandatory" title="Mandatory"></span> Mandatory
 
-
 <h5><ins>Guidance</ins></h5>
 
-The `intent` element is a mandatory one within FHIR and while it can be populated with any value from the available code system, it is expected that must use-cases within GP Connect will be `order`.
+The status of the `ProcedureRequest`.
 
 <i class="fa fa-link"></i> [Code System Request Intent](http://hl7.org/fhir/R4B/valueset-request-intent.html)
+
+#### For investigations:
+
+The `intent` **MUST** only be `order`.
 
 <h5><ins>Example</ins></h5>
 
 ```xml
 <intent value="order" />
+```
+
+#### For diary entries
+
+The `intent` **MUST** only be `plan`.
+
+<h5><ins>Example</ins></h5>
+
+```xml
+<intent value="plan" />
 ```
 
 ---

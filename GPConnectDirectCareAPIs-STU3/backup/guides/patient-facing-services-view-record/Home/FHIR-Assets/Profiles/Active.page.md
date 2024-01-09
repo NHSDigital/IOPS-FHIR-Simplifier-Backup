@@ -25,7 +25,6 @@
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Specimen-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-Appointment-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-Device-1}}
-- {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-DocumentReference-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-OperationOutcome-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-Schedule-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-Searchset-Bundle-1}}

@@ -6,17 +6,14 @@
 
 <h5><ins>Guidance</ins></h5>
 
-A reference to the patient who is the subject of the document.
-
-* <i class="fa fa-link" aria-hidden="true"></i> {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Patient-1}}
-* <i class="fa fa-link" aria-hidden="true"></i> {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Practitioner-1}}
+A reference to the {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Patient-1}} who is the subject of the document.
 
 <h5><ins>Example</ins></h5>
 
 ```xml
-<patient>
-    <reference value="patient-9929alp" />
-</patient>
+<subject>
+    <reference value="Patient/04603d77-1a4e-4d63-b246-d7504f8bd833"/>
+</subject>
 ```
 
 ---
