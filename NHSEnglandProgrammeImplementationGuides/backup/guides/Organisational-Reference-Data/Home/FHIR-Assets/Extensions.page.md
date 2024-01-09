@@ -4,6 +4,6 @@
 
 The page lists the extensions used by ORD FHIR R4 API:
 
-- {{pagelink:Extension-England-TypedDateTime}}
 - {{pagelink:Extension-England-OrganisationRole}}
-- {{pagelink:Extensions/Extension-England-TypedPeriod}}
+- {{pagelink:Extension-England-TypedDateTime}}
+- {{pagelink:Extension-England-TypedPeriod}}

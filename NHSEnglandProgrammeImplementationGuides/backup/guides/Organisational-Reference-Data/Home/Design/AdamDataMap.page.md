@@ -1,24 +1,5 @@
 ## {{page-title}}
-    
-  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
-<!--An FGM-IS indicator (family history of FGM) has been modelled around a FHIR R4 Flag. Refer to {{pagelink:Home/FHIRAssets/AllAssets/Profiles/UKCore-Flag.page.md}} profile for further guidance. 
-
-| Source Data item               | Cardinality |Target FHIR Element                 | Notes         
-|--|--|
-|Assessment Date|1..1|Flag.period.start|type: <a href='http://hl7.org/fhir/R4/datatypes.html#dateTime'>dateTime</a><br>format: YYYY-MM-DD
-|NHS Number|1..1|Flag.identifier:nhsNumber|type: <a href='http://hl7.org/fhir/R4/search.html#token'>token</a><br>system must be "https://fhir.nhs.uk/Id/nhs-number"<br>value must be a verified NHS number<br>note: a resource reference is not required for FGM-IS. E.g. - {{pagelink:Home/Examples/Example---An-active-FGM-flag.page.md}} 
-|Family history of FGM indicator|1..1|Flag.code.coding|system must be "http://snomed.info/sct"<br>code must be "902961000000107"<br>display must be "Family history of FGM (female genital mutilation)"
-|Status|1..1|Flag.status|See {{pagelink:Home/FHIRAssets/AllAssets/Profiles/UKCore-Flag.page.md}}
-|Removal Reason|0..1|reference {{pagelink:Home/FHIRAssets/Extensions.page.md}}|must be set when Flag.status is not 'active'. E.g. {{pagelink:Home/Examples/Example---A-removed-FGM-flag.page.md}} <br>set on PUT /Flag interaction. E.g. {{pagelink:Home/Design/Interactions.page.md}}-->
-
-
-
-
-
-
-
-### 09/01/24 AP
 
 ### <a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current#identifier">UKCore-Organization</a>
 
@@ -76,7 +57,7 @@
             <td>1..1</td>
             <td>1..1</td>
             <td>NOT NULL</td>
-            <td>Roles.UniqueRoleID</td>
+            <td>Roles.RoleID</td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">Integer</a></td>
             <td></td>
         </tr>
@@ -85,7 +66,7 @@
             <td>1..1</td>
             <td>1..1</td>
             <td>NOT NULL</td>
-            <td>Roles.RoleID / RoleName</td>
+            <td>Roles.RoleName</td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">CodeableConcept</a></td>
             <td></td>
         </tr>
@@ -375,31 +356,4 @@
             <td></td>
         </tr>
     </tbody>
-</table>
-
-<br /><br />
-
-
-### 09/01/24 MFi
-
-<table class="regular">
-    <thead>
-        <tr>
-            <th width="20%">Database Table</th>
-            <th width="20%">Attribute Name</th>
-            <th width="10%">Mandatory</th>
-            <th width="20%">UK Core Organization</th>
-            <th width="20%">UK Core OrganizationAffiliation</th>
-            <th width="10%">Cardinality</th>
-        </tr>
-    </thead>
-    <tbody>
-	<tr>
-		<td>Organisation</td>
-		<td>OrganisationCode</td>
-		<td>Yes</td>
-		<td>identifier</td>
-		<td> </td>
-		<td>0..*</td>
-	</tr>
 </table>
