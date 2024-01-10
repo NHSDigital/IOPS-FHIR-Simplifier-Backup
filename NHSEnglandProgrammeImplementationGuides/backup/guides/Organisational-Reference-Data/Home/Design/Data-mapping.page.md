@@ -376,30 +376,3 @@
         </tr>
     </tbody>
 </table>
-
-<br /><br />
-
-
-### 09/01/24 MFi
-
-<table class="regular">
-    <thead>
-        <tr>
-            <th width="20%">Database Table</th>
-            <th width="20%">Attribute Name</th>
-            <th width="10%">Mandatory</th>
-            <th width="20%">UK Core Organization</th>
-            <th width="20%">UK Core OrganizationAffiliation</th>
-            <th width="10%">Cardinality</th>
-        </tr>
-    </thead>
-    <tbody>
-	<tr>
-		<td>Organisation</td>
-		<td>OrganisationCode</td>
-		<td>Yes</td>
-		<td>identifier</td>
-		<td> </td>
-		<td>0..*</td>
-	</tr>
-</table>
