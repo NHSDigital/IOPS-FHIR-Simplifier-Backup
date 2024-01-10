@@ -3,23 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRan
 ---
 ## StructureDefinition Extension-UKCore-ContactRank
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreContactRank'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Patient,text:Patient.contact}}</td>

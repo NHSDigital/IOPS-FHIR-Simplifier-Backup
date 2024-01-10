@@ -185,11 +185,19 @@
                 $('div#transpose').each(function(index) {
                     //within this div, look for an fql table
                     var fqlTable = $(this).children("table.table-bordered");
-                    //and optionally a 2 column table you want to combine with the transposed one
-                    var contextTable = $(this).children("table#addToTranspose");
+
+                    // simplifier 31.1.0.0 broke fql tables, so if empty, look for one above 
+                    if (fqlTable == undefined || fqlTable.length == 0) {
+                        fqlTable = $(this).prevAll().filter("table.table-bordered");
+                    }
 
                     //only continue to transpose if we have an fql table
-                    if (fqlTable != undefined && fqlTable.length > 0) {
+                    if (fqlTable == undefined || fqlTable.length == 0) {
+                        return; 
+                    }
+
+                    //and optionally a 2 column table you want to combine with the transposed one
+                    var contextTable = $(this).children("table#addToTranspose");
 
                     //create a new table to be populated during the transpose
                     var newTable = document.createElement('table');
@@ -258,7 +266,6 @@
                     $(this).append(newTable);
                     fqlTable.remove();
                     contextTable.remove();
-                    }
                 });
 			}
 
@@ -1503,8 +1510,8 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
             // function runs on page load
             $(function() {
                 fixTemplatingIssues();
-                //transposeFQLTables();
-                detablifyUsageFQL();
+                transposeFQLTables();
+                //detablifyUsageFQL();
                 tidyUpFQLTables();
                 //highlightBallotItems();
                 createProfileSubMenus();

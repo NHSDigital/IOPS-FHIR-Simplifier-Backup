@@ -4,30 +4,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization
 ---
 # StructureDefinition-UKCore-Immunization
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreImmunization'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreImmunization'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 

@@ -1,4 +1,3 @@
-<div id="transpose">
 <fql>
 from
 	StructureDefinition
@@ -13,7 +12,10 @@ select
 	Profile_Purpose: purpose
   with header 
 </fql>
+
+<div id="transpose">
 </div>
+<br>
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>

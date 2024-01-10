@@ -5,30 +5,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab
 
 # StructureDefinition-UKCore-DiagnosticReport-Lab
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreDiagnosticReportLab'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreDiagnosticReportLab'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 

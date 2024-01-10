@@ -4,30 +4,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot
 ---
 # StructureDefinition-UKCore-Slot
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreSlot'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreSlot'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 

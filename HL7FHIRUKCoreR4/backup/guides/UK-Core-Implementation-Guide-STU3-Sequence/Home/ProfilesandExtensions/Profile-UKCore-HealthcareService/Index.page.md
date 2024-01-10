@@ -4,30 +4,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService
 ---
 # StructureDefinition-UKCore-HealthcareService
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreHealthcareService'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreHealthcareService'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 

@@ -12,29 +12,6 @@ This Profile underwent Clinical and Technical Assurance during Sprint 7. This is
 Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-HeadCircumference/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-HeadCircumference</a>.
 </div>
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationVitalSignsHeadCircumference'
-select
-	Canonical_URL: url,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationVitalSignsHeadCircumference'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 

@@ -3,23 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionE
 ---
 ## StructureDefinition Extension-UKCore-ConditionEpisode
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreConditionEpisode'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Condition,text:Condition}}</td>

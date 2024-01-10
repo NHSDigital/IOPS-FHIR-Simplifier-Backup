@@ -3,27 +3,11 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Medication
 ---
 ## StructureDefinition Extension-UKCore-MedicationTradeFamily
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreMedicationTradeFamily'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Medication,text:Medication}}</td>
 </tr>
 </table>
-
-</div>
-<br>
-
 
 {{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 

@@ -12,30 +12,6 @@ This Profile underwent Clinical and Technical Assurance during Sprint 7. This is
 Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-EarlyWarningTotalScore/~issues?level=File">Report Issue for UKCore-Observation-EarlyWarningTotalScore</a>.
 </div>
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationEarlyWarningTotalScore'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationEarlyWarningTotalScore'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
