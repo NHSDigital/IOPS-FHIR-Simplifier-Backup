@@ -12,17 +12,17 @@
     <resource>
       <MessageHeader>
         <id value="message-header-2123123" />
+        <source>
+          <name value="ACME Clinical Systems" />
+          <software value="ACME ePMA" />
+          <version value="3.5.68 - test" />
+          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
+        </source>
         <eventCoding>
           <system value="http://hl7.org/fhir/message-events" />
           <code value="current-medication" />
           <display value="Current Medication" />
         </eventCoding>
-        <source>
-          <name value="ACME Clinical Systems" />
-          <software value="ACME ePMA" />
-          <version value="3.5.68" />
-          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
-        </source>
         <focus>
           <reference value="urn:medication-statement-56642" />
         </focus>
