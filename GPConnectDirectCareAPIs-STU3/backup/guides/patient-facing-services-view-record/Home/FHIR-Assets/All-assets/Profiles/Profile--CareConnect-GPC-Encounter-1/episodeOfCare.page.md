@@ -7,7 +7,7 @@
 
 <h5><ins>Guidance</ins></h5>
 
-The current scope of GP Connect excludes inbound referrals.
+The current scope of GP Connect excludes episode of care.
 
 <h5><ins>Example</ins></h5>
 

@@ -6,4 +6,7 @@
 
 <i class="fa fa-link"></i> [Clinical Observations Specification (NEWS2) - UKCore-Observation](https://simplifier.net/guide/ClinicalObservations/Observation?version=current)
 
+
+<i class="fa fa-link"></i> [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/Home/ProfilesandExtensions/Profile-UKCore-Observation)
+
 ---

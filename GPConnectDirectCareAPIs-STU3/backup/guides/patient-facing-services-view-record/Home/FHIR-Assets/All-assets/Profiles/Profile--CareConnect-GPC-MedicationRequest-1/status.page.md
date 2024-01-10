@@ -4,14 +4,25 @@
 
 <span class="mro-circle mandatory" title="Mandatory"></span> Mandatory
 
-
 <h5><ins>Guidance</ins></h5>
 
 The status of the authorisation within GP Connect will typically be one of:
 
-- `active`
-- `completed`
-- `stopped`
+- `active` - representing an active authorisation - used for active medications/medical devices
+- `completed` - representing an authorisation which has been discontinued, cancelled or stopped
+- `stopped` - representing an authorisation which has run its course
+
+For `MedicationRequest` instances where `intent` is set to `plan`:
+
+- For repeats and repeat dispensed the status refers to the status of the plan (the entire cycle of prescriptions).
+- For acutes the status refers to the status of the prescription issue.
+
+For `MedicationRequest` instances where `intent` is set to `order`:
+
+- The status refers to the status of the prescription issue.
+- Where the plan has been discontinued then the status should not be updated to stopped
+
+---
 
 The scope of status may vary depending on the nature of the implementation. The FHIR standard defines the status of `completed` as:
 

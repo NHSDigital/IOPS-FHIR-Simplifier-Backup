@@ -1,7 +1,7 @@
 ## {{page-title}}
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-  <strong>Important</strong>: This profile does exists in UK Core as UKCore-Condition.
+  <strong>Important</strong>: This profile does exists in UK Core as <a href="https://simplifier.net/hl7fhirukcorer4/ukcore-condition">UKCore-Condition</a>.
 </div>
 
 <table data-responsive>

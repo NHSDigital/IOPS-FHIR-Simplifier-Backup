@@ -7,7 +7,7 @@
 
 <h5><ins>Guidance</ins></h5>
 
-This element does not need to be populated.
+A use-case for population of this element within GP connect has yet to be defined.
 
 <h5><ins>Example</ins></h5>
 
