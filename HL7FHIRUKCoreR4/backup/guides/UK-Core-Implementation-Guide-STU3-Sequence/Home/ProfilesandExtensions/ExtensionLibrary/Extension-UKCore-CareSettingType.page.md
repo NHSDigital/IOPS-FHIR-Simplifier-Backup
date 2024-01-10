@@ -3,21 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettin
 ---
 ## StructureDefinition Extension-UKCore-CareSettingType
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreCareSettingType'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description,
-	Profile_Purpose: purpose
-```
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Composition,text:Composition}} <br/> 
@@ -25,13 +10,9 @@ select
 </tr>
 </table>
 
-</div>
-<br>
-
 {{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
-
   <h3>Examples</h3>
   <b>Care Setting Type</b>- An example to illustrate the care setting of a FHIR document.<br>
 {{pagelink:Example-UKCore-Extension-CareSettingType}}

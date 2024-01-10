@@ -10,23 +10,6 @@ This Profile underwent Clinical and Technical Assurance during Sprint 7. This is
 Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CuffSize/~issues?level=File">Report Issue for Extension-UKCore-CuffSize</a>.
 </div>
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreCuffSize'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Device-BloodPressure,text:Device}}</td>

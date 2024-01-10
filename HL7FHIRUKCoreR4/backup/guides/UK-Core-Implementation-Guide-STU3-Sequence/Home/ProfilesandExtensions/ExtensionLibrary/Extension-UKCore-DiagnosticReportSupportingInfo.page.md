@@ -3,30 +3,11 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.
 ---
 ## StructureDefinition Extension-UKCore-DiagnosticReportSupportingInfo
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreDiagnosticSupportingInfo'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description,
-	Profile_Purpose: purpose
-```
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-DiagnosticReport,text:DiagnosticReport}}</td>
 </tr>
 </table>
-
-</div>
-<br>
-
 
 {{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
@@ -44,7 +25,6 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-D
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
-- [http://hl7.org/fhir/StructureDefinition/Citation](Citation)
 - {{pagelink:Profile-DiagnosticReport}}
 - {{pagelink:Profile-Observation}}
 - {{pagelink:Profile-Procedure}}

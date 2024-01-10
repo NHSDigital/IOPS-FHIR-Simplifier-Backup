@@ -1,34 +1,8 @@
 ---
 topic: Profile-Procedure
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure
-expand: 2
 ---
-
 # StructureDefinition-UKCore-Procedure
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreProcedure'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreProcedure'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}

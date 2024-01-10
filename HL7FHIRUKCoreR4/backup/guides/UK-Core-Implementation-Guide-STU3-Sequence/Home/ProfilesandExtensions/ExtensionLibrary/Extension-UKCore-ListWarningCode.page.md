@@ -3,31 +3,11 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarnin
 ---
 ## StructureDefinition Extension-UKCore-ListWarningCode
 
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreListWarningCode'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description,
-	Profile_Purpose: purpose
-```
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-List,text:List}}</td>
 </tr>
 </table>
-
-</div>
-<br>
-
 
 {{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 

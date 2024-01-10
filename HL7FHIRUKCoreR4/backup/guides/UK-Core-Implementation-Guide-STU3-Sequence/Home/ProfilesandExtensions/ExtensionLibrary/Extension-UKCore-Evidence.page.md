@@ -3,24 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence
 ---
 ## StructureDefinition Extension-UKCore-Evidence
 
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreEvidence'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-AllergyIntolerance,text:AllergyIntolerance}}</td>

@@ -1,3 +1,13 @@
+<fql>
+from
+	CodeSystem
+where
+	url = %subject
+select
+	Description: description
+with header
+</fql>
+
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
  <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
@@ -24,6 +34,5 @@
   <h3>JSON View</h3>
 {{json}}
 </div>
-<br/>
 
 ---

@@ -5,30 +5,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-La
 
 # StructureDefinition-UKCore-Observation-LabGroup
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationLabGroup'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationLabGroup'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 

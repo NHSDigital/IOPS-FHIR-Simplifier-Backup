@@ -4,10 +4,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Additional
 ## StructureDefinition Extension-UKCore-AdditionalContact
 
 
-The canonical of this profile is {{variable:canonical}}.
-
-
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-ServiceRequest,text:ServiceRequest}}</td>
@@ -15,6 +11,7 @@ The canonical of this profile is {{variable:canonical}}.
 </table>
 
 {{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Additional Contact</b> - An example to illustrate providing an additional contact with a service request.<br>

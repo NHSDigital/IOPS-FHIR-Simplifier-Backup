@@ -3,30 +3,11 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHisto
 ---
 ## StructureDefinition Extension-UKCore-FamilyMemberHistoryParticipant
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreFamilyMemberHistoryParticipant'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description,
-	Profile_Purpose: purpose
-```
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-FamilyMemberHistory,text:FamilyMemberHistory}}</td>
 </tr>
 </table>
-
-</div>
-<br>
-
 
 {{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
@@ -40,7 +21,6 @@ select
   <h3>Feedback</h3>
 Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-FamilyMemberHistoryParticipant/~issues?level=File">Report Issue for Extension-UKCore-FamilyMemberHistoryParticipant</a>.
 </div>
-
 
 <h3 id="guidance-fmhparticipant">Extension Specific Guidance</h3>
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:

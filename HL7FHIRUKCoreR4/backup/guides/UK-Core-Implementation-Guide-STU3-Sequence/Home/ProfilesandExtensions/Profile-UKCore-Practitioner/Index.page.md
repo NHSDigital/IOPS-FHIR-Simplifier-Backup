@@ -4,30 +4,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner
 ---
 # StructureDefinition-UKCore-Practitioner
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCorePractitioner'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCorePractitioner'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 

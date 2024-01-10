@@ -1,33 +1,9 @@
 ---
 topic: Profile-AllergyIntolerance
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance
+usage: http://hl7.org/fhir/StructureDefinition/AllergyIntolerance
 ---
 # StructureDefinition-UKCore-AllergyIntolerance
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreAllergyIntolerance'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreAllergyIntolerance'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
 
@@ -48,47 +24,7 @@ select
 <br>{{pagelink:Example-UKCore-Bundle-AllergyList}}
 </div>
 
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance'
-```
-</span>
-</div>
+
 
 <div id="Feedback" class="tabcontent">
   <h3>Feedback</h3>
