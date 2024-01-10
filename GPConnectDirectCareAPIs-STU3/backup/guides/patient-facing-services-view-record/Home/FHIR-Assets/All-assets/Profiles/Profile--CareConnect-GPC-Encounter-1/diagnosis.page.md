@@ -4,10 +4,11 @@
 
 <span class="mro-circle optional" title="Optional"></span> Optional
 
-
 <h5><ins>Guidance</ins></h5>
 
-The diagnosis will be associated to the consultation via a `List` profile.
+This element does not need to be populated.
+
+The diagnosis will be associated to the consultation via the `List` profile.
 
 <h5><ins>Example</ins></h5>
 

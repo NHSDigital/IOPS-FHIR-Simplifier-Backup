@@ -4,6 +4,6 @@
 
 <i class="fa fa-link"></i> [CareConnect-GPC-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1)
 
-<i class="fa fa-link"></i> [UKCore-List](https://simplifier.net/guide/UKCoreImplementationGuide0.5.0-STU1/Home/ProfilesandExtensions/ProfileUKCore-List)
+<i class="fa fa-link"></i> [UKCore-List](https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/Home/ProfilesandExtensions/Profile-UKCore-List)
 
 ---

@@ -6,7 +6,7 @@
 
 <i class="fa fa-link"></i> [CareConnect-GPC-MedicationRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1)
 
-<i class="fa fa-link"></i> [UKCore-MedicationRequest](https://simplifier.net/guide/HL7FHIRUKCoreR4Release1/Home/ProfilesandExtensions/ProfileUKCore-MedicationRequest)
+<i class="fa fa-link"></i> [UKCore-MedicationRequest](https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/Home/ProfilesandExtensions/Profile-UKCore-MedicationRequest)
 
 
 ---
