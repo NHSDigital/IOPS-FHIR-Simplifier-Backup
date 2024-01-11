@@ -18,9 +18,8 @@
 
 
 
-### 09/01/24 AP
 
-### <a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current#identifier">UKCore-Organization</a>
+### <a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current">UKCore-Organization</a>
 
 <table class="regular">
     <thead>
@@ -31,19 +30,10 @@
             <th width="10%">Domain Optionality</th>
             <th width="10%">Domain Field</th>
             <th width="10%">Type</th>
-            <th width="45%">Definition, Constraints and Notes</th>
+            <th width="35%">Definition, Constraints and Notes</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>id</td>
-            <td>0..1</td>
-            <td><code>1..1</code></td>
-            <td>NOT NULL</td>
-            <td>Organisation.OrgID</td>
-            <td><a href=" https://hl7.org/fhir/R4/datatypes.html#id">id</a></td>
-            <td>Included as table link - do not publish?</td>
-        </tr>
         <tr>
             <td>extension (mainLocation)</td>
             <td>0..*</td>
@@ -63,16 +53,16 @@
             <td>Use ExtensionEnglandTypedPeriod instead</td>
         </tr>
         <tr>
-            <td>extension (ExtensionEnglandOrganisationRole)</td>
+            <td>extension <br />(ExtensionEnglandOrganisationRole)</td>
             <td>Not defined</td>
-            <td><code>1..1</code></td>
-            <td>NOT NULL</td>
-            <td>Organisation.LastChangeDate</td>
+            <td><code>1..*</code></td>
+            <td> </td>
+            <td> </td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">Extension</a></td>
             <td></td>
         </tr>
        <tr>
-            <td>ExtensionEnglandOrganisationRole.instanceID</td>
+            <td>ExtensionEnglandOrganisationRole.<br />instanceID</td>
             <td>1..1</td>
             <td>1..1</td>
             <td>NOT NULL</td>
@@ -81,7 +71,7 @@
             <td></td>
         </tr>
        <tr>
-            <td>ExtensionEnglandOrganisationRole.roleCode</td>
+            <td>ExtensionEnglandOrganisationRole.<br />roleCode</td>
             <td>1..1</td>
             <td>1..1</td>
             <td>NOT NULL</td>
@@ -90,16 +80,16 @@
             <td></td>
         </tr>
        <tr>
-            <td>ExtensionEnglandOrganisationRole.typedPeriod</td>
+            <td>ExtensionEnglandOrganisationRole.<br />typedPeriod</td>
             <td>1..*</td>
             <td><code>0..2</code></td>
-            <td>NOT NULL</td>
+            <td>Optional</td>
             <td>Roles.LegalStartDate,<br>Roles.LegalEndDate,<br>Roles.OperationalStartDate,<br>Roles.OperationalEndDate</td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">Extension</a></td>
             <td></td>
         </tr>
        <tr>
-            <td>ExtensionEnglandOrganisationRole.active</td>
+            <td>ExtensionEnglandOrganisationRole.<br />active</td>
             <td>1..1</td>
             <td>1..1</td>
             <td>NOT NULL</td>
@@ -108,7 +98,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>extension (ExtensionEnglandTypedDateTime)</td>
+            <td>extension <br />(ExtensionEnglandTypedDateTime)</td>
             <td>Not defined</td>
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
@@ -117,13 +107,13 @@
             <td></td>
         </tr>
         <tr>
-            <td>extension (ExtensionEnglandTypedPeriod)</td>
+            <td>extension <br />(ExtensionEnglandTypedPeriod)</td>
             <td>Not defined</td>
             <td><code>0..2</code></td>
             <td>Optional</td>
             <td>Organisation.LegalStartDate,<br>Organisation.LegalEndDate,<br>Organisation.OperationalStartDate,<br>Organisation.OperationalEndDate</td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedPeriod.page.md?version=current">Extension</a></td>
-            <td>Would be worth slicing?</td>
+            <td></td>
         </tr>
         <tr>
             <td>identifier</td>
@@ -148,12 +138,11 @@
             <td>0..*</td>
             <td><code>2..*</code></td>
             <td>NOT NULL</td>
-            <td>Organisation.RefOnly,<br>Organisation.RecordClass,<br>Organisation.RecordClassDescription</td>
+            <td>Organisation.RefOnly,<br>Organisation.RecordClass,<br>Organisation.RecordClass<br />Description</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
             <td>One each of:<br>
             <a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Terminology/All-CodeSystems/CodeSystem-England-ODSRecordClass.page.md?version=current">CodeSystemEnglandODSRecordClass</a><br>
             <a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Terminology/All-CodeSystems/CodeSystem-England-ODSRecordUseType.page.md?version=current">CodeSystemEnglandODSRecordUseType</a>
-            <br>Would be worth slicing?
             </td>
         </tr>
         <tr>
@@ -179,7 +168,7 @@
             <td>0..*</td>
             <td>0..*</td>
             <td>Optional</td>
-            <td>Organisation.TelephoneNumber</td>
+            <td>Organisation.TelephoneNumber, Organisation.HTTP</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></td>
             <td>Telephone number is nullified for RefOnly/skeleton records</td>
         </tr>
@@ -194,7 +183,7 @@
         </tr>
         <tr>
             <td>address.extension (ExtensionUKCoreAddressKey)</td>
-            <td>0..*</td>
+            <td>Not defined</td>
             <td>0..*</td>
             <td>Optional</td>
             <td>Organisation.URPN</td>
@@ -244,7 +233,7 @@
             <th width="10%">Domain Optionality</th>
             <th width="10%">Domain Field</th>
             <th width="10%">Type</th>
-            <th width="45%">Definition, Constraints and Notes</th>
+            <th width="35%">Definition, Constraints and Notes</th>
         </tr>
     </thead>
     <tbody>
@@ -295,7 +284,7 @@
         </tr>
         <tr>
             <td>organization</td>
-            <td>0..*</td>
+            <td>0..1</td>
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
             <td>Relationships.SourceOrgID / SourceOrgCode</td>
@@ -304,7 +293,7 @@
         </tr>
         <tr>
             <td>participatingOrganization</td>
-            <td>0..*</td>
+            <td>0..1</td>
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
             <td>Relationships.TargetOrgID / TargetOrgCode</td>
@@ -325,7 +314,7 @@
             <td>0..*</td>
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
-            <td>Relationships.RelTypeID / RelTypeName</td>
+            <td>Relationships.RelTypeID / Relationships.RelTypeName / RelationshipDefinition.RelDefinition</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Terminology/All-CodeSystems/CodeSystem-England-ODSRelationship.page.md?version=current">CodeSystemEnglandODSRelationship</a></td>
         </tr>
