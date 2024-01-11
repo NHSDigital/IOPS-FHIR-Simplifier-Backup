@@ -1,0 +1,22 @@
+- name: Index
+  filename: Index.page.md
+- name: Purpose
+  filename: Purpose.page.md
+- name: FHIR implementation guidance
+  filename: FHIR-implementation-guidance.page.md
+- name: FHIR resources
+  filename: FHIR-resources.page.md
+- name: FHIR® resource interactions
+  filename: FHIR-resource-interactions.page.md
+- name: Read resource
+  filename: Read-resource.page.md
+- name: Create resource
+  filename: Create-resource.page.md
+- name: Update resource
+  filename: Update-resource.page.md
+- name: Delete resource
+  filename: Delete-resource.page.md
+- name: Operations
+  filename: Operations.page.md
+- name: Search resources
+  filename: Search-resources.page.md
