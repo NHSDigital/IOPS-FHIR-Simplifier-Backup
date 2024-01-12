@@ -4,7 +4,6 @@
 
 <span class="mro-circle required" title="Required"></span> Required
 
-
 <h5><ins>Guidance</ins></h5>
 
 Any notes relating to the specified problem.

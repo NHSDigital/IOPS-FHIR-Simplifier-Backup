@@ -4,8 +4,9 @@
 
 <span class="mro-circle optional" title="Optional"></span> Optional
 
-
 <h5><ins>Guidance</ins></h5>
+
+This element **SHALL NOT** be populated.
 
 The verification status to support the clinical status of the condition.
 
