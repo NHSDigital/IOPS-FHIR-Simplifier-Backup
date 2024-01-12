@@ -2,8 +2,8 @@
 
 There is an ever-increasing list of open source FHIR libraries appearing on the web, written for a wide variety of languages, such as Java, C#.NET, JavaScript and PHP. As a starting point, the Health Level Seven (HL7®) International standards body maintains a list of open source FHIR implementations on its [Wiki](https://wiki.hl7.org/index.php?title=Open_Source_FHIR_implementations).
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-     <i class="fas fa-check text-success"></i> <b>Tip</b>: It’s a good idea to give feedback into open source FHIR library projects to improve the implementations and increase the maturity of the technologies for everyone’s benefit.
+<div class="alert alert-success nhsd-t-body" role="alert">
+	<i class="fa fa-check text-success"></i> <b>Tip:</b> It’s a good idea to give feedback into open source FHIR library projects to improve the implementations and increase the maturity of the technologies for everyone’s benefit.
     In addition to open source FHIR libraries, many widely used health software systems now support FHIR as a standard message type, which means some consumers and providers may be able to create a GP Connect interface with extensions available on their current system.
 </div>
 
