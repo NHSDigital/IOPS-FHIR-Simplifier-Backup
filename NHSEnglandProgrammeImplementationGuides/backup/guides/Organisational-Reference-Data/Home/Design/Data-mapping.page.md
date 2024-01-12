@@ -125,6 +125,15 @@
             <td>The ODS Organisation Code for the organisation <b>SHALL</b> be used to populate the <code>odsOrganisationCode</code> slice of the <code>identifier</code> element.</td>
         </tr>
         <tr>
+            <td>identifier.assigner.value</td>
+            <td>0..*</td>
+            <td><code>0..1</code></td>
+            <td>NOT NULL</td>
+            <td>Organisation.AssigingAuthorityName</td>
+            <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current#identifier">Reference</a></td>
+            <td></td>
+        </tr>
+        <tr>
             <td>active</td>
             <td>0..1</td>
             <td>0..1</td>
@@ -237,15 +246,6 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>id</td>
-            <td>0..1</td>
-            <td><code>1..1</code></td>
-            <td>NOT NULL</td>
-            <td>Relationships.UniqueRelID</td>
-            <td><a href=" https://hl7.org/fhir/R4/datatypes.html#id">id</a></td>
-            <td>Included as table link - do not publish?</td>
-        </tr>
         <tr>
             <td>extension (ExtensionEnglandTypedPeriod)</td>
             <td>Not defined</td>
