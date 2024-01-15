@@ -1,2 +1,4 @@
-- name: Diary Entries - Data Model
-  filename: Diary-Entries---Data-Model.page.md
+- name: Diary Entries Data Model
+  filename: Diary-Entries-Data-Model.page.md
+- name: Diary Entries Guidance
+  filename: Diary-Entries-Guidance.page.md

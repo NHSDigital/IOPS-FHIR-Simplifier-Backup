@@ -1,6 +1,4 @@
-- name: Medications - Data Model
-  filename: Medications---Data-Model.page.md
-- name: PFS Recommendation
-  filename: PFS-Recommendation.page.md
-- name: Further Information
-  filename: Further-Information.page.md
+- name: Medications Data Model
+  filename: Medications-Data-Model.page.md
+- name: Medications Guidance
+  filename: Medications-Guidance.page.md
