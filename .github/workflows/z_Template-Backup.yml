@@ -55,6 +55,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          retries: 10
           script: |
             const { repo, owner } = context.repo;
             const result = await github.rest.pulls.create({
@@ -75,11 +76,14 @@ jobs:
               labels: ['backup', 'automated pr']
             });
 
-      - name: Merge pull request
-        uses: actions/github-script@v7
+      - name: Wait for PR to complete
+        run: sleep 1m
+
+      - name: "Merge pull request"
+        uses: "actions/github-script@v7"
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          retries: 5
+          retries: 10
           script: |
             const { repo, owner } = context.repo;
             const head = '${{ steps.branch-name.outputs.BRANCH }}'
