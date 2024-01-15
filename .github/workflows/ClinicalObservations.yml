@@ -14,9 +14,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
-        run: sleep $((RANDOM %30))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
-
       - name: Set today
         id: today
         run: echo "TODAY=$(date)" >> $GITHUB_OUTPUT
@@ -58,7 +55,7 @@ jobs:
           script: |
             const { repo, owner } = context.repo;
             const result = await github.rest.pulls.create({
-              title: '${{ steps.today.outputs.TODAY }}',
+              title: 'ClinicalObservations ${{ steps.today.outputs.TODAY }}',
               owner,
               repo,
               head: '${{ steps.branch-name.outputs.BRANCH }}',

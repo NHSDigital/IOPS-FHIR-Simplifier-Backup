@@ -14,16 +14,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
-        run: sleep $((RANDOM %30))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
-
       - name: Set today
         id: today
         run: echo "TODAY=$(date)" >> $GITHUB_OUTPUT
 
       - name: Set branch name
         id: branch-name
-        run: echo "BRANCH=$(echo ${{ steps.today.outputs.TODAY }} | tr -d '[:space:]' | tr -d ':')" >> $GITHUB_OUTPUT
+        run: echo "BRANCH=$(echo HL7FHIRUKCoreR4-${{ steps.today.outputs.TODAY }} | tr -d '[:space:]' | tr -d ':')" >> $GITHUB_OUTPUT
 
       - name: Download and commit simplifier source code
         run: |
@@ -58,7 +55,7 @@ jobs:
           script: |
             const { repo, owner } = context.repo;
             const result = await github.rest.pulls.create({
-              title: '${{ steps.today.outputs.TODAY }}',
+              title: 'HL7FHIRUKCoreR4 ${{ steps.today.outputs.TODAY }}',
               owner,
               repo,
               head: '${{ steps.branch-name.outputs.BRANCH }}',
