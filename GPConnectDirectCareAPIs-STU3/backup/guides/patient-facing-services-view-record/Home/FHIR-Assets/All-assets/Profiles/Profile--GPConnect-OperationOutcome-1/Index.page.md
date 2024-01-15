@@ -1,5 +1,9 @@
 ## {{page-title}}
 
+<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
+    <b>Note:</b> Refer to <a href="https://digital.nhs.uk/developer/api-catalogue/gp-connect-general-pages/error-handling">GPConnect Error Handling</a> for guidance on the error details to be returned in a number of key scenarios.
+</div>
+
 <!--// start of code snippet -->
 <div>
     <ul class="nav nav-tabs" role="tablist">

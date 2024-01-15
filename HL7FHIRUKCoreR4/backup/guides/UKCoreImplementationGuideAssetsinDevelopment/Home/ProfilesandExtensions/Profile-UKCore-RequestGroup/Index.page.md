@@ -1,12 +1,9 @@
 ---
 topic: Profile-RequestGroup
+subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup
 ---
 # StructureDefinition-UKCore-RequestGroup
 
-<!-- <div  id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Profile added to UK Core and undergoing review under Ballot 2.
-</div> -->
 
 <div id="transpose">
 @```
@@ -34,45 +31,7 @@ select
 
 
 <nocheck>
-<div class="tab fhirTree">
- <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
-  <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-</div>
-
-<div id="Snapshot View" class="tabcontent" style="display:block">
-  <h3>Snapshot View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup, snapshot}}
-</div>
-
-<div id="Differential View" class="tabcontent">
-  <h3>Differential View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup, diff}}
-</div>
-
-<div id="Hybrid View" class="tabcontent">
-  <h3>Hybrid View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup, hybrid}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup, snapshot}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup, snapshot}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup, snapshot}}
-</div>
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -89,7 +48,49 @@ select
   {{pagelink:Example-UKCore-RequestGroup-Paracetamol}}
   <br><br>
 </div>
-<nocheck>
+
+<div id="Usage" class="tabcontent">
+  <h3>Usage</h3>
+  This Profile has the following derived profiles:<br>
+<span id="usage">
+@```
+  from
+	StructureDefinition
+select id,baseDefinition,status
+  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup'
+  and status = 'active'
+```
+</span>
+<br><br>
+  This Profile is referenced in the following Extensions: <br>
+<span id="usage">
+@```
+from
+	StructureDefinition
+  where type='Extension' and status = 'active'
+ select id,
+	for differential.element
+	select
+	join type {targetProfile}
+	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup'
+```
+</span>
+<br><br>
+  This Profile is referenced in the following Profiles: <br>
+<span id="usage">
+@```
+from
+	StructureDefinition
+  where type !='Extension' and status = 'active'
+ select id,
+	for differential.element
+	select
+	join type {targetProfile}
+	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup'
+```
+</span>
+</div>
+</nocheck>
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core RequestGroup profile:

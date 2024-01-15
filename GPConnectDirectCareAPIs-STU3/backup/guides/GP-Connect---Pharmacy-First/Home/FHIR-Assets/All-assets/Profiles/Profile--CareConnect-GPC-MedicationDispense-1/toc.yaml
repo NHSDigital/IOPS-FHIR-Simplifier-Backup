@@ -2,6 +2,8 @@
   filename: Index.page.md
 - name: Related links
   filename: Related-links.page.md
+- name: status
+  filename: status.page.md
 - name: medicationCodeableConcept
   filename: medicationCodeableConcept.page.md
 - name: type

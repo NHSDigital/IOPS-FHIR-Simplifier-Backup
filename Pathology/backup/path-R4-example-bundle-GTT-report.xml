@@ -170,7 +170,7 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="113076002" />
                         <display value="Glucose tolerance test" />
@@ -206,9 +206,15 @@
                 </identifier>
                 <basedOn>
                     <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-                    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
                 </basedOn>
                 <status value="final" />
+				<category> 
+					<coding> 
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0074"/> 
+						<code value="LAB"/>
+						<display value="Laboratory" />	
+					</coding> 
+				</category>
                 <code>
                     <coding>
                         <system value="http://snomed.info/sct" />
@@ -376,9 +382,16 @@
                     <value value="df8fcad2-12f5-4f04-8b73-91dadc3120b9" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="113076002" />
                         <display value="Glucose tolerance test" />
@@ -422,9 +435,16 @@
                     <value value="ba7fa6e0-2170-4905-ac9f-e53970b17aed" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->						
                         <system value="http://snomed.info/sct" />
                         <code value="1107451000000100" />
                         <display value="Glucose substance concentration in serum" />
@@ -486,9 +506,16 @@
                     <value value="9e1f413b-8242-4e37-b23c-233be79e75a6" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->	
                         <system value="http://snomed.info/sct" />
                         <code value="1107451000000100" />
                         <display value="Glucose substance concentration in serum" />
@@ -550,9 +577,16 @@
                     <value value="4c66b23a-5c91-49fb-85b1-5073a88afc25" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->	
                         <system value="http://snomed.info/sct" />
                         <code value="1107451000000100" />
                         <display value="Glucose substance concentration in serum" />

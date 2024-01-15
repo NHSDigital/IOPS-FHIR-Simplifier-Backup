@@ -1,7 +1,11 @@
 ---
 topic: Library-Profiles
 ---
-## Profiles
+## Profiles and Extensions
+
+---
+
+## Profiles Index
 
 This index contains all the profiles Clinically and Technically Assured for use with UK Core. 
 
@@ -9,12 +13,19 @@ This index contains all the profiles Clinically and Technically Assured for use 
 
 The Profiles are rendered in several formats: 
 <ul>
-<li><b>Snapshot:</b> a fully calculated form of the structure that is not dependent on any other structure</li>
-<li><b>Differential:</b> this describes only the differences that the Profile makes relative to the structure definition (FHIR resource or profile) they constrain</li> 
-<li><b>Hybrid:</b> a hybrid view of the snapshot and differential views, with the differences highlighted</li>
-<li><b>Table:</b> a differential view of the profile, rendered in a tabular format</li>
-<li><b>XML:</b> a differential view of the profile, rendered in XML format</li>
-<li><b>JSON:</b> a differential view of the profile, rendered in JSON format</li> 
+<li><b>Tree View - Snapshot:</b> a fully calculated tree view of the structure that is not dependent on any other structure</li>
+<li><b>Tree View - Differential:</b> this tree view describes only the differences that the Profile makes relative to the structure definition (FHIR resource or profile) they constrain</li> 
+<li><b>Tree View - Hybrid:</b> a hybrid view of the snapshot and differential views, with the differences highlighted</li>
+<li><b>Detailed View:</b> a fully calculated form of the profile in table form</li>
+<li><b>Table View:</b> a differential view of the profile, rendered in a tabular format</li>
+<li><b>XML View:</b> a differential view of the profile, rendered in XML format</li>
+<li><b>JSON View:</b> a differential view of the profile, rendered in JSON format</li> 
+</ul>
+In addition, each Profile also has the following: 
+<ul>
+<li><b>Usage:</b> a listing of extensions and profiles that reference this asset</li>
+<li><b>Examples:</b> one or more validated example of the profile in use</li>
+<li><b>Feedback:</b> a link to Simplifier to raise issues regarding the asset</li> 
 </ul>
 <br>
 
@@ -64,21 +75,9 @@ The Profiles are rendered in several formats:
 <td>5</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Consent,text:UKCore-Consent}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Consent resource for the minimal set of data to query and retrieve written or verbal agreements concerning authorised or restricted actions relating to healthcare.</td>
-<td>6</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Device,text:UKCore-Device}}</td>
-<td>draft</td>
-<td>Defines the UK Core constraints and extensions on the Device resource for the minimal set of data to query and retrieve information about a medical device.</td>
-<td>*</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-Device-BloodPressure,text:UKCore-Device-BloodPressure}}</td>
-<td>draft</td>
-<td>A profile derived from the draft UK Core Device profile to define the minimal set of data to query and retrieve information about a device used to monitor blood pressure.</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the active UK Core Device profile to define the minimal set of data to query and retrieve information about a device used to monitor blood pressure.</td>
 <td>7</td>
 </tr>
 <tr>
@@ -91,7 +90,7 @@ The Profiles are rendered in several formats:
 <tr>
 <td>{{pagelink:Profile-DiagnosticReport-Lab,text:UKCore-DiagnosticReport-Lab}}</td>
 <td>active</td>
-<td>A profile derived from the UK Core DiagnosticReport profile to define the minimal set of data to query and retrieve the findings of laboratory tests.</td>
+<td>A profile <i>derived</i> from the UK Core DiagnosticReport profile to define the minimal set of data to query and retrieve the findings of laboratory tests.</td>
 <td>6</td>
 </tr>
 <tr>
@@ -101,34 +100,16 @@ The Profiles are rendered in several formats:
 <td>4</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-EpisodeOfCare,text:UKCore-EpisodeOfCare}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the EpisodeOfCare resource for the minimal set of data to query and retrieve episode of care information.</td>
-<td>4</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-FamilyMemberHistory,text:UKCore-FamilyMemberHistory}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the FamilyMemberHistory resource for the minimal set of data to query and retrieve information about health events and conditions for a person related to the patient relevant in the context of care.</td>
 <td>6</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Flag,text:UKCore-Flag}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Flag resource for the minimal set of data to query and retrieve flag information.</td>
-<td>5</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-HealthcareService,text:UKCore-HealthcareService}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the HealthcareService resource for the minimal set of data to query and retrieve healthcare service information.</td>
 <td>5</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-ImagingStudy,text:UKCore-ImagingStudy}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the ImagingStudy resource for the minimal set of data to query and retrieve content of DICOM imaging studies.</td>
-<td>6</td>
 </tr>
 <tr>
 <td>{{pagelink:Profile-Immunization,text:UKCore-Immunization}}</td>
@@ -180,12 +161,6 @@ The Profiles are rendered in several formats:
 <td>3</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-MessageHeader,text:UKCore-MessageHeader}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the MessageHeader resource for the minimal set of data to be present in a message header.</td>
-<td>4</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-Observation,text:UKCore-Observation}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the Observation resource for the minimal set of data to query and retrieve information of measurements and simple assertions made about an individual, device or other subject.<br>
@@ -193,125 +168,119 @@ The Profiles are rendered in several formats:
 <td>6</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-ACVPU,text:UKCore-Observation-ACVPU}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's level of consciousness.</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-ACVPU,text:UKCore-Observation-ACVPU}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's level of consciousness.</td>
 <td>7</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-AlcoholConsumption,text:UKCore-Observation-AlcoholConsumption}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's alcohol consumption.</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-AlcoholConsumption,text:UKCore-Observation-AlcoholConsumption}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's alcohol consumption.</td>
 <td>7</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-AverageBloodPressure,text:UKCore-Observation-AverageBloodPressure}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's average blood pressure over a specific time period.</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-AverageBloodPressure,text:UKCore-Observation-AverageBloodPressure}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's average blood pressure over a specific time period.</td>
 <td>7</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-BloodGlucose,text:UKCore-Observation-BloodGlucose}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's blood glucose level.</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-BloodGlucose,text:UKCore-Observation-BloodGlucose}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's blood glucose level.</td>
 <td>7</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-EarlyWarningTotalScore,text:UKCore-Observation-EarlyWarningTotalScore}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's Early Warning Score, such as NEWS2.</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-EarlyWarningTotalScore,text:UKCore-Observation-EarlyWarningTotalScore}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's Early Warning Score, such as NEWS2.</td>
 <td>7</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-InspiredOxygen,text:UKCore-Observation-InspiredOxygen}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding whether a patient is breathing room air or is on oxygen.</td>
+<td>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-Group-Lab}}</td>
+<td>active</td>
+<td>Defines the UK Core constraints and extensions on the Observation resource for the minimal set of data to query and retrieve information related to laboratory test groups and panels.</td>
+<td>6</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-InspiredOxygen,text:UKCore-Observation-InspiredOxygen}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding whether a patient is breathing room air or is on oxygen.</td>
 <td>7</td>
 </tr>
 <tr>
 <td>{{pagelink:Profile-Observation-Lab,text:UKCore-Observation-Lab}}</td>
 <td>active</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information of measurements and simple assertions made about an individual, device or other subject.</td>
+<td>Defines the UK Core constraints and extensions on the Observation resource for the minimal set of data to query and retrieve information related to individual laboratory test results.</td>
 <td>6</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-LabGroup}}</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-TobaccoConsumption,text:UKCore-Observation-TobaccoConsumption}}</td>
 <td>active</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information for results borne from a single request panel, or profile.</td>
-<td>6</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Observation-TobaccoConsumption,text:UKCore-Observation-TobaccoConsumption}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's tobacco consumption.</td>
+<td>A profile <i>derived</i> from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's tobacco consumption.</td>
 <td>7</td>
 </tr>
 <tr>
 <td>{{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information of a patient's Vital Signs measurements, in order to be FHIR compliant with the base "Vital Signs" guidance.<br>
-<b>Note:</b> This profile SHALL NOT be used where a more specific derived profile exists.</td>
-<td>7</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-BloodPressure,text:UKCore-Observation-VitalSigns-BloodPressure}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a single instance of a patient's blood pressure.</td>
-<td>7</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-BMI,text:UKCore-Observation-VitalSigns-BMI}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's body mass index.</td>
-<td>7</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-BodyHeight,text:UKCore-Observation-VitalSigns-BodyHeight}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's height.</td>
-<td>7</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-BodyTemperature,text:UKCore-Observation-VitalSigns-BodyTemperature}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's temperature.</td>
-<td>7</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-BodyWeight,text:UKCore-Observation-VitalSigns-BodyWeight}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's weight.</td>
-<td>7</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-HeadCircumference,text:UKCore-Observation-VitalSigns-HeadCircumference}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's head circumference.</td>
-<td>7</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-HeartRate,text:UKCore-Observation-VitalSigns-HeartRate}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's heart rate.</td>
-<td>7</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-OxygenSaturation,text:UKCore-Observation-VitalSigns-OxygenSaturation}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's level of oxygen saturation in their blood.</td>
-<td>7</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</td>
-<td>draft</td>
-<td>A profile derived from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's breathing rate.</td>
-<td>7</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-OperationOutcome,text:UKCore-OperationOutcome}}</td>
 <td>active</td>
-<td>Defines the UK Core constraints and extensions on the OperationOutcome resource for the minimal set of data to query and retrieve information about the outcome of an attempted system operation.</td>
-<td>4</td>
+<td>A profile <i>derived</i> from the UK Core Observation profile to define the minimal set of data to query and retrieve information of a patient's Vital Signs measurements, in order to be FHIR compliant with the base "Vital Signs" guidance.<br>
+<b>Note:</b> This profile SHALL NOT be used where a more specific derived profile exists, from those listed below.</td>
+<td>7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BloodPressure,text:UKCore-Observation-VitalSigns-BloodPressure}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a single instance of a patient's blood pressure.</td>
+<td>7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BMI,text:UKCore-Observation-VitalSigns-BMI}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's body mass index.</td>
+<td>7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BodyHeight,text:UKCore-Observation-VitalSigns-BodyHeight}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's height.</td>
+<td>7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BodyTemperature,text:UKCore-Observation-VitalSigns-BodyTemperature}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's temperature.</td>
+<td>7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BodyWeight,text:UKCore-Observation-VitalSigns-BodyWeight}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's weight.</td>
+<td>7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-HeadCircumference,text:UKCore-Observation-VitalSigns-HeadCircumference}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's head circumference.</td>
+<td>7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-HeartRate,text:UKCore-Observation-VitalSigns-HeartRate}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's heart rate.</td>
+<td>7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-OxygenSaturation,text:UKCore-Observation-VitalSigns-OxygenSaturation}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's level of oxygen saturation in their blood.</td>
+<td>7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</td>
+<td>active</td>
+<td>A profile <i>derived</i> from the UK Core Observation Vital Signs profile to define the minimal set of data to query and retrieve information regarding a patient's breathing rate.</td>
+<td>7</td>
 </tr>
 <tr>
 <td>{{pagelink:Profile-Organization,text:UKCore-Organization}}</td>
@@ -350,12 +319,6 @@ The Profiles are rendered in several formats:
 <td>5</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-QuestionnaireResponse,text:UKCore-QuestionnaireResponse}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the QuestionnaireResponse resource for the minimal set of data to query and retrieve a complete or partial list of answers to a set of questions completed when responding to a questionnaire.</td>
-<td>5</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-RelatedPerson,text:UKCore-RelatedPerson}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the RelatedPerson resource for the minimal set of data to query and retrieve related person information.</td>
@@ -377,7 +340,7 @@ The Profiles are rendered in several formats:
 <tr>
 <td>{{pagelink:Profile-ServiceRequest-Lab,text:UKCore-ServiceRequest-Lab}}</td>
 <td>active</td>
-<td>A profile derived from the UK Core ServiceRequest profile to define the minimal set of data to query and retrieve the request for laboratory tests/td>
+<td>A profile <i>derived</i> from the UK Core ServiceRequest profile to define the minimal set of data to query and retrieve the request for laboratory tests/td>
 <td>6</td>
 </tr>
 <tr>
@@ -391,12 +354,6 @@ The Profiles are rendered in several formats:
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the Specimen resource for the minimal set of data to query and retrieve information regarding samples used for analysis.</td>
 <td>6</td>
-</tr>
-<tr>
-<td>{{pagelink:Profile-Task,text:UKCore-Task}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Task resource for the minimal set of data to query and retrieve task information.</td>
-<td>5</td>
 </tr>
 </table>
 </div>
@@ -413,8 +370,6 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-Appointment,text:UKCore-Appointment}}</li>
 <li>{{pagelink:Profile-Composition,text:UKCore-Composition}}</li>
 <li>{{pagelink:Profile-Condition,text:UKCore-Condition}}</li>
-<li>{{pagelink:Profile-Consent,text:UKCore-Consent}}</li>
-<li>{{pagelink:Profile-Device,text:UKCore-Device}}</li>
 <li>{{pagelink:Profile-Device-BloodPressure,text:UKCore-Device-BloodPressure}}</li>
 <li>{{pagelink:Profile-DiagnosticReport,text:UKCore-DiagnosticReport}}</li>
 <li>{{pagelink:Profile-DiagnosticReport-Lab,text:UKCore-DiagnosticReport-Lab}}</li>
@@ -423,11 +378,8 @@ The Profiles are rendered in several formats:
 <p><b>E-L:</b></p>
 <ul>
 <li>{{pagelink:Profile-Encounter,text:UKCore-Encounter}}</li>
-<li>{{pagelink:Profile-EpisodeOfCare,text:UKCore-EpisodeOfCare}}</li>
 <li>{{pagelink:Profile-FamilyMemberHistory,text:UKCore-FamilyMemberHistory}}</li>
-<li>{{pagelink:Profile-Flag,text:UKCore-Flag}}</li>
 <li>{{pagelink:Profile-HealthcareService,text:UKCore-HealthcareService}}</li>
-<li>{{pagelink:Profile-ImagingStudy,text:UKCore-ImagingStudy}}</li>
 <li>{{pagelink:Profile-Immunization,text:UKCore-Immunization}}</li>
 <li>{{pagelink:Profile-List,text:UKCore-List}}</li>
 <li>{{pagelink:Profile-Location,text:UKCore-Location}}</li>
@@ -440,28 +392,26 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-MedicationDispense,text:UKCore-MedicationDispense}}</li>
 <li>{{pagelink:Profile-MedicationRequest,text:UKCore-MedicationRequest}}</li>
 <li>{{pagelink:Profile-MedicationStatement,text:UKCore-MedicationStatement}}</li>
-<li>{{pagelink:Profile-MessageHeader,text:UKCore-MessageHeader}}</li>
 <li>{{pagelink:Profile-Observation,text:UKCore-Observation}}</li>
-<li>{{pagelink:Profile-Observation-ACVPU,text:UKCore-Observation-ACVPU}}</li>
-<li>{{pagelink:Profile-Observation-AlcoholConsumption,text:UKCore-Observation-AlcoholConsumption}}</li>
-<li>{{pagelink:Profile-Observation-AverageBloodPressure,text:UKCore-Observation-AverageBloodPressure}}</li>
-<li>{{pagelink:Profile-Observation-BloodGlucose,text:UKCore-Observation-BloodGlucose}}</li>
-<li>{{pagelink:Profile-Observation-EarlyWarningTotalScore,text:UKCore-Observation-EarlyWarningTotalScore}}</li>
-<li>{{pagelink:Profile-Observation-InspiredOxygen,text:UKCore-Observation-InspiredOxygen}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-ACVPU,text:UKCore-Observation-ACVPU}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-AlcoholConsumption,text:UKCore-Observation-AlcoholConsumption}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-AverageBloodPressure,text:UKCore-Observation-AverageBloodPressure}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-BloodGlucose,text:UKCore-Observation-BloodGlucose}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-EarlyWarningTotalScore,text:UKCore-Observation-EarlyWarningTotalScore}}</li>
+<li>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-Group-Lab}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-InspiredOxygen,text:UKCore-Observation-InspiredOxygen}}</li>
 <li>{{pagelink:Profile-Observation-Lab,text:UKCore-Observation-Lab}}</li>
-<li>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-LabGroup}}</li>
-<li>{{pagelink:Profile-Observation-TobaccoConsumption,text:UKCore-Observation-TobaccoConsumption}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-TobaccoConsumption,text:UKCore-Observation-TobaccoConsumption}}</li>
 <li>{{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-BloodPressure,text:UKCore-Observation-VitalSigns-BloodPressure}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-BMI,text:UKCore-Observation-VitalSigns-BMI}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-BodyHeight,text:UKCore-Observation-VitalSigns-BodyHeight}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-BodyTemperature,text:UKCore-Observation-VitalSigns-BodyTemperature}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-BodyWeight,text:UKCore-Observation-VitalSigns-BodyWeight}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-HeadCircumference,text:UKCore-Observation-VitalSigns-HeadCircumference}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-HeartRate,text:UKCore-Observation-VitalSigns-HeartRate}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-OxygenSaturation,text:UKCore-Observation-VitalSigns-OxygenSaturation}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</li>
-<li>{{pagelink:Profile-OperationOutcome,text:UKCore-OperationOutcome}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BloodPressure,text:UKCore-Observation-VitalSigns-BloodPressure}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BMI,text:UKCore-Observation-VitalSigns-BMI}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BodyHeight,text:UKCore-Observation-VitalSigns-BodyHeight}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BodyTemperature,text:UKCore-Observation-VitalSigns-BodyTemperature}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BodyWeight,text:UKCore-Observation-VitalSigns-BodyWeight}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-HeadCircumference,text:UKCore-Observation-VitalSigns-HeadCircumference}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-HeartRate,text:UKCore-Observation-VitalSigns-HeartRate}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-OxygenSaturation,text:UKCore-Observation-VitalSigns-OxygenSaturation}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</li>
 <li>{{pagelink:Profile-Organization,text:UKCore-Organization}}</li>
 <li>{{pagelink:Profile-Patient,text:UKCore-Patient}}</li>
 <li>{{pagelink:Profile-Practitioner,text:UKCore-Practitioner}}</li>
@@ -472,14 +422,12 @@ The Profiles are rendered in several formats:
 <p><b>Q-Z:</b></p> 
 <ul>  
 <li>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</li>
-<li>{{pagelink:Profile-QuestionnaireResponse,text:UKCore-QuestionnaireResponse}}</li>
 <li>{{pagelink:Profile-RelatedPerson,text:UKCore-RelatedPerson}}</li>
 <li>{{pagelink:Profile-Schedule,text:UKCore-Schedule}}</li>
 <li>{{pagelink:Profile-ServiceRequest,text:UKCore-ServiceRequest}}</li>
 <li>{{pagelink:Profile-ServiceRequest-Lab,text:UKCore-ServiceRequest-Lab}}</li>
 <li>{{pagelink:Profile-Slot,text:UKCore-Slot}}</li>
 <li>{{pagelink:Profile-Specimen,text:UKCore-Specimen}}</li>
-<li>{{pagelink:Profile-Task,text:UKCore-Task}}</li>
 </ul>
 </td></tr>
 
@@ -518,10 +466,7 @@ The Profiles are rendered in several formats:
 <p><b>C&TA Sprint 4:</b></p>
 <ul>
 <li>{{pagelink:Profile-Encounter,text:UKCore-Encounter}}</li>
-<li>{{pagelink:Profile-EpisodeOfCare,text:UKCore-EpisodeOfCare}}</li>
 <li>{{pagelink:Profile-List,text:UKCore-List}}</li>
-<li>{{pagelink:Profile-MessageHeader,text:UKCore-MessageHeader}}</li>
-<li>{{pagelink:Profile-OperationOutcome,text:UKCore-OperationOutcome}}</li>
 <li>{{pagelink:Profile-Procedure,text:UKCore-Procedure}}</li>
 <li>{{pagelink:Profile-RelatedPerson,text:UKCore-RelatedPerson}}</li>
 </ul>
@@ -531,25 +476,21 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-Appointment,text:UKCore-Appointment}}</li>
 <li>{{pagelink:Profile-Composition,text:UKCore-Composition}}</li>
 <li>{{pagelink:Profile-Condition,text:UKCore-Condition}}</li>
-<li>{{pagelink:Profile-Flag,text:UKCore-Flag}}</li>
 <li>{{pagelink:Profile-HealthcareService,text:UKCore-HealthcareService}}</li>
-<li>{{pagelink:Profile-QuestionnaireResponse,text:UKCore-QuestionnaireResponse}}</li>
+<li>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</li>
 <li>{{pagelink:Profile-ServiceRequest,text:UKCore-ServiceRequest}}</li>
 <li>{{pagelink:Profile-Schedule,text:UKCore-Schedule}}</li>
 <li>{{pagelink:Profile-Slot,text:UKCore-Slot}}</li>
-<li>{{pagelink:Profile-Task,text:UKCore-Task}}</li>
 </ul>
 
 <p><b>C&TA Sprint 6:</b></p>
 <ul>
-<li>{{pagelink:Profile-Consent,text:UKCore-Consent}}</li>
 <li>{{pagelink:Profile-DiagnosticReport,text:UKCore-DiagnosticReport}}</li>
 <li>{{pagelink:Profile-DiagnosticReport-Lab,text:UKCore-DiagnosticReport-Lab}}</li>
 <li>{{pagelink:Profile-FamilyMemberHistory,text:UKCore-FamilyMemberHistory}}</li>
-<li>{{pagelink:Profile-ImagingStudy,text:UKCore-ImagingStudy}}</li>
 <li>{{pagelink:Profile-Observation,text:UKCore-Observation}}</li>
 <li>{{pagelink:Profile-Observation-Lab,text:UKCore-Observation-Lab}}</li>
-<li>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-LabGroup}}</li>
+<li>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-Group-Lab}}</li>
 <li>{{pagelink:Profile-ServiceRequest-Lab,text:UKCore-ServiceRequest-Lab}}</li>
 <li>{{pagelink:Profile-Specimen,text:UKCore-Specimen}}</li>
 </ul>
@@ -576,10 +517,6 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</li>
 </ul>
 
-<p><b>Draft:</b></p>
-<ul>
-<li>{{pagelink:Profile-Device,text:UKCore-Device}}</li>
-</ul>
 </div>
 
 <div id="Resource" class="tabcontent">
@@ -601,13 +538,8 @@ The Profiles are rendered in several formats:
 <ul>
 <li>{{pagelink:Profile-Condition,text:UKCore-Condition}}</li>
 </ul>
-<p><b>Consent:</b></p>
-<ul>
-<li>{{pagelink:Profile-Consent,text:UKCore-Consent}}</li>
-</ul>
 <p><b>Device:</b></p>
 <ul>
-<li>{{pagelink:Profile-Device,text:UKCore-Device}}</li>
 <li>{{pagelink:Profile-Device-BloodPressure,text:UKCore-Device-BloodPressure}}</li>
 </ul>
 <p><b>DiagnosticReport:</b></p>
@@ -619,25 +551,13 @@ The Profiles are rendered in several formats:
 <ul>
 <li>{{pagelink:Profile-Encounter,text:UKCore-Encounter}}</li>
 </ul>
-<p><b>EpisodeOfCare:</b></p>
-<ul>
-<li>{{pagelink:Profile-EpisodeOfCare,text:UKCore-EpisodeOfCare}}</li>
-</ul>
 <p><b>FamilyMemberHistory:</b></p>
 <ul>
 <li>{{pagelink:Profile-FamilyMemberHistory,text:UKCore-FamilyMemberHistory}}</li>
 </ul>
-<p><b>Flag:</b></p>
-<ul>
-<li>{{pagelink:Profile-Flag,text:UKCore-Flag}}</li>
-</ul>
 <p><b>HealthcareService:</b></p>
 <ul>
 <li>{{pagelink:Profile-HealthcareService,text:UKCore-HealthcareService}}</li>
-</ul>
-<p><b>ImagingStudy:</b></p>
-<ul>
-<li>{{pagelink:Profile-ImagingStudy,text:UKCore-ImagingStudy}}</li>
 </ul>
 <p><b>Immunization:</b></p>
 <ul>
@@ -651,8 +571,6 @@ The Profiles are rendered in several formats:
 <ul>
 <li>{{pagelink:Profile-Location,text:UKCore-Location}}</li>
 </ul>
-
-
 <p><b>Medication:</b></p>
 <ul>
 <li>{{pagelink:Profile-Medication,text:UKCore-Medication}}</li>
@@ -673,38 +591,30 @@ The Profiles are rendered in several formats:
 <ul>
 <li>{{pagelink:Profile-MedicationStatement,text:UKCore-MedicationStatement}}</li>
 </ul>
-<p><b>MessageHeader:</b></p>
-<ul>
-<li>{{pagelink:Profile-MessageHeader,text:UKCore-MessageHeader}}</li>
-</ul>
-
 <p><b>Observation:</b></p>
 <ul>
 <li>{{pagelink:Profile-Observation,text:UKCore-Observation}}</li>
-<li>{{pagelink:Profile-Observation-ACVPU,text:UKCore-Observation-ACVPU}}</li>
-<li>{{pagelink:Profile-Observation-AlcoholConsumption,text:UKCore-Observation-AlcoholConsumption}}</li>
-<li>{{pagelink:Profile-Observation-AverageBloodPressure,text:UKCore-Observation-AverageBloodPressure}}</li>
-<li>{{pagelink:Profile-Observation-BloodGlucose,text:UKCore-Observation-BloodGlucose}}</li>
-<li>{{pagelink:Profile-Observation-EarlyWarningTotalScore,text:UKCore-Observation-EarlyWarningTotalScore}}</li>
-<li>{{pagelink:Profile-Observation-InspiredOxygen,text:UKCore-Observation-InspiredOxygen}}</li>
+<li>Derived Profiles from UK Core Observation</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-ACVPU,text:UKCore-Observation-ACVPU}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-AlcoholConsumption,text:UKCore-Observation-AlcoholConsumption}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-AverageBloodPressure,text:UKCore-Observation-AverageBloodPressure}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-BloodGlucose,text:UKCore-Observation-BloodGlucose}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-EarlyWarningTotalScore,text:UKCore-Observation-EarlyWarningTotalScore}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-InspiredOxygen,text:UKCore-Observation-InspiredOxygen}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-TobaccoConsumption,text:UKCore-Observation-TobaccoConsumption}}</li>
+<li>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-Group-Lab}}</li>
 <li>{{pagelink:Profile-Observation-Lab,text:UKCore-Observation-Lab}}</li>
-<li>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-LabGroup}}</li>
-<li>{{pagelink:Profile-Observation-TobaccoConsumption,text:UKCore-Observation-TobaccoConsumption}}</li>
 <li>{{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-BloodPressure,text:UKCore-Observation-VitalSigns-BloodPressure}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-BMI,text:UKCore-Observation-VitalSigns-BMI}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-BodyHeight,text:UKCore-Observation-VitalSigns-BodyHeight}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-BodyTemperature,text:UKCore-Observation-VitalSigns-BodyTemperature}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-BodyWeight,text:UKCore-Observation-VitalSigns-BodyWeight}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-HeadCircumference,text:UKCore-Observation-VitalSigns-HeadCircumference}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-HeartRate,text:UKCore-Observation-VitalSigns-HeartRate}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-OxygenSaturation,text:UKCore-Observation-VitalSigns-OxygenSaturation}}</li>
-<li>{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</li>
-</ul>
-
-<p><b>OperationOutcome:</b></p>
-<ul>
-<li>{{pagelink:Profile-OperationOutcome,text:UKCore-OperationOutcome}}</li>
+<li>Derived Profiles from UK Core Observation Vital Signs</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BloodPressure,text:UKCore-Observation-VitalSigns-BloodPressure}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BMI,text:UKCore-Observation-VitalSigns-BMI}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BodyHeight,text:UKCore-Observation-VitalSigns-BodyHeight}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BodyTemperature,text:UKCore-Observation-VitalSigns-BodyTemperature}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-BodyWeight,text:UKCore-Observation-VitalSigns-BodyWeight}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-HeadCircumference,text:UKCore-Observation-VitalSigns-HeadCircumference}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-HeartRate,text:UKCore-Observation-VitalSigns-HeartRate}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-OxygenSaturation,text:UKCore-Observation-VitalSigns-OxygenSaturation}}</li>
+<li>&nbsp;&nbsp;{{pagelink:Profile-Observation-VitalSigns-RespirationRate,text:UKCore-Observation-VitalSigns-RespirationRate}}</li>
 </ul>
 <p><b>Organization:</b></p>
 <ul>
@@ -731,10 +641,6 @@ The Profiles are rendered in several formats:
 <ul>
 <li>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</li>
 </ul>
-<p><b>QuestionnaireResponse:</b></p>
-<ul>
-<li>{{pagelink:Profile-QuestionnaireResponse,text:UKCore-QuestionnaireResponse}}</li>
-</ul>
 <p><b>RelatedPerson:</b></p>
 <ul>
 <li>{{pagelink:Profile-RelatedPerson,text:UKCore-RelatedPerson}}</li>
@@ -756,14 +662,6 @@ The Profiles are rendered in several formats:
 <ul>
 <li>{{pagelink:Profile-Specimen,text:UKCore-Specimen}}</li>
 </ul>
-<p><b>Task:</b></p>
-<ul>
-<li>{{pagelink:Profile-Task,text:UKCore-Task}}</li>
-</ul>
 
 </div>
 
-
-<br><br>
-<div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> {{pagelink:Profile-Device}} is a draft Profile. It has not undergone a Clinical & Technical Assurance sprint, and is included here for comparison usage.
-</div>

@@ -1,4 +1,6 @@
-- name: Extension Library(draft)
-  filename: ExtensionLibrarydraft.guide.md
+- name: Extension Library (draft)
+  filename: Extension-Library--draft.guide.md
 - name: Extension UKCore-TypedDateTime
-  filename: ExtensionUKCore-TypedDateTime.guide.md
+  filename: Extension-UKCore-TypedDateTime.guide.md
+- name: Extension UKCore-TypedPeriod
+  filename: Extension-UKCore-TypedPeriod.page.md

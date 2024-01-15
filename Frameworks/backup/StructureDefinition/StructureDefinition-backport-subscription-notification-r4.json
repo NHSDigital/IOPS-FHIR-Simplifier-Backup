@@ -1,0 +1,125 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "backport-subscription-notification-r4",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+    "valueString" : "Foundation.Other"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+    "valueCode" : "not-classified"
+  }],
+  "url" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification-r4",
+  "version" : "1.1.0",
+  "name" : "BackportSubscriptionNotificationR4",
+  "title" : "R4 Topic-Based Subscription Notification Bundle",
+  "status" : "active",
+  "date" : "2023-01-09T22:29:01+00:00",
+  "publisher" : "HL7 FHIR Infrastructure WG",
+  "contact" : [{
+    "name" : "HL7 FHIR Infrastructure WG",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hl7.org/Special/committees/fiwg"
+    }]
+  },
+  {
+    "name" : "Gino Canessa",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:gino.canessa@microsoft.com"
+    }]
+  },
+  {
+    "name" : "Eric Haas",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:ehaas@healthedatainc.com"
+    }]
+  }],
+  "description" : "Profile on the R4 Bundle resource to enable R5-style topic-based subscription notifications in FHIR R4.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "cda",
+    "uri" : "http://hl7.org/v3/cda",
+    "name" : "CDA (R2)"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Bundle",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Bundle",
+      "path" : "Bundle",
+      "constraint" : [{
+        "key" : "backport-notification-bundle-r4-1",
+        "severity" : "error",
+        "human" : "A notification bundle MUST have a Parameters as the first entry",
+        "expression" : "(entry.first().resource.is(Parameters))",
+        "xpath" : "f:entry[1]/f:resource/f:Parameters",
+        "source" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification-r4"
+      }]
+    },
+    {
+      "id" : "Bundle.type",
+      "path" : "Bundle.type",
+      "patternCode" : "history"
+    },
+    {
+      "id" : "Bundle.entry",
+      "path" : "Bundle.entry",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "resource"
+        }],
+        "description" : "Slice based on resource",
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Bundle.entry:subscriptionStatus",
+      "path" : "Bundle.entry",
+      "sliceName" : "subscriptionStatus",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Bundle.entry:subscriptionStatus.resource",
+      "path" : "Bundle.entry.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "Parameters",
+        "profile" : ["http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status-r4"]
+      }],
+      "mustSupport" : true
+    }]
+  }
+}

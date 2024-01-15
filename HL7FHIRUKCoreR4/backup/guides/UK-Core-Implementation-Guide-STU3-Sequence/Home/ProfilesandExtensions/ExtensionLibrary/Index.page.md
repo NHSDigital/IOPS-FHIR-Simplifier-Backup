@@ -1,4 +1,8 @@
 ---
 topic: Library-Extensions-All
 ---
-# {{page-title}}
+## Profiles and Extensions
+
+---
+
+## {{page-title}}

@@ -73,9 +73,6 @@ jobs:
               labels: ['backup', 'automated pr']
             });
 
-      - name: Wait for PR to complete
-        run: sleep 10s
-
       - name: "Merge pull request"
         uses: "actions/github-script@v7"
         with:

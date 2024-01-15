@@ -33,7 +33,7 @@ More information about the bindings to UK Core ValueSets can be found below.
 <td>Preferred</td>
 <td>{{pagelink:ValueSet-UKCore-EthnicCategory}}</td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>Patient.extension:nhsNumberUnavailableReason</td>
 <td>Extensible</td>
 <td>{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</td>
@@ -69,10 +69,5 @@ More information about the bindings to UK Core ValueSets can be found below.
 <td>{{pagelink:ValueSet-UKCore-PersonMaritalStatusCode}}</td>
 </tr>
 </table>
-
-<br>
-<div markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Balloted Changes</h4>
-Added: ValueSet binding for new Extension
-</div>
 
 ---

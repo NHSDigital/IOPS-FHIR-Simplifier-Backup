@@ -3,11 +3,6 @@ topic: Profile-FamilyMemberHistory-69978
 ---
 # StructureDefinition-UKCore-FamilyMemberHistory
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This Profile underwent Clinical and Technical Assurance during Sprint 6. This is a new Profile added to UK Core and should undergo review in this STU2 ballot.
-</div>
-
 <div id="transpose">
 @```
 from
@@ -127,11 +122,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <tr>
 <td><code>FamilyMemberHistory.relationship</code></td>
 <td>Relationship to the subject.</td>
-</tr>
-<tr>
-<td><code>FamilyMemberHistory.sex</code></td>
-<td>The birth sex of the family member.
-</td>
 </tr>
 <tr>
 <td><code>FamilyMemberHistory.condition</code></td>

@@ -1,6 +1,6 @@
 ## `manufacturer`
 
-Name of vaccine manufacturer by reference to the organisation. The resource being referenced SHALL conform to {{pagelink:Profile-Organization-94604}}.
+Name of vaccine manufacturer by reference to the organisation. The resource being referenced SHOULD conform to {{pagelink:Profile-Organization-94604}}.
 
 #### Example of `Immunization.manufacturer` usage:
 <div class="tab">

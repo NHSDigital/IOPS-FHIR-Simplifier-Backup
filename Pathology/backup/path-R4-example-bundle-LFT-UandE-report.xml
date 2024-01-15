@@ -174,7 +174,7 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="26958001" />
                         <display value="Hepatic function panel" />
@@ -216,7 +216,7 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="252167001" />
                         <display value="Urea and electrolytes" />
@@ -253,14 +253,19 @@
                 <basedOn>
 					<!-- Hepatic function panel request -->
                     <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-                    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
                 </basedOn>
 				<basedOn>
 					<!-- Urea and electrolytes request -->
                     <reference value="urn:uuid:8660ef6a-65ef-408f-92ce-b4d6d03d783c" />
-                    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
                 </basedOn>
                 <status value="final" />
+				<category> 
+					<coding> 
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0074"/> 
+						<code value="LAB"/>
+						<display value="Laboratory" />	
+					</coding> 
+				</category>
                 <code>
                     <coding>
                         <system value="http://snomed.info/sct" />
@@ -343,9 +348,16 @@
                     <value value="9920b5d3-9f19-41df-8d5a-fd2d4288e305" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
 						<system value="http://snomed.info/sct" />
                         <code value="26958001" />
                         <display value="Hepatic function panel" />
@@ -393,9 +405,16 @@
                     <value value="a26ada79-ac32-4ff8-a3e4-fb5950462271" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1107221000000109" />
                         <display value="Total bilirubin substance concentration in serum" />
@@ -444,10 +463,17 @@
                     <value value="78443cb9-f248-44ef-9e6b-37fc4a592c1b" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
-                        <system value="http://snomed.info/sct" />
+						<!-- From PaLM observable entity reference set -->
+						<system value="http://snomed.info/sct" />
                         <code value="1105861000000106" />
                         <display value="Albumin mass concentration in serum" />
                     </coding>
@@ -501,9 +527,16 @@
                     <value value="b9c64863-06b5-4e98-b226-8ef28059f238" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1106051000000106" />
                         <display value="Alkaline phosphatase enzyme activity in serum" />
@@ -558,9 +591,16 @@
                     <value value="9f022172-f721-4657-ab23-a28157e783af" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1106081000000100" />
                         <display value="Alanine aminotransferase enzyme activity in serum" />
@@ -609,9 +649,16 @@
                     <value value="c949a08a-49f9-4093-9f17-67d23ec92e46" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
 						<system value="http://snomed.info/sct" />
                         <code value="26958001" />
                         <display value="Hepatic function panel" />
@@ -663,9 +710,16 @@
                     <value value="ac255464-4557-40ee-8f53-ef3104b10872" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1110281000000107" />
                         <display value="Urea substance concentration in serum" />
@@ -720,9 +774,16 @@
                     <value value="b1890fe7-ef3b-4d74-bc2f-665059d0c9d7" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1107871000000107" />
                         <display value="Sodium substance concentration in serum" />
@@ -777,9 +838,16 @@
                     <value value="b88011a3-e10b-4f35-b388-5622c4e8d808" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1107751000000106" />
                         <display value="Potassium substance concentration in plasma" />
@@ -834,9 +902,16 @@
                     <value value="86fb479a-ab58-4f99-81de-af848d9af40c" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="1107001000000108" />
                         <display value="Creatinine substance concentration in serum" />
@@ -891,12 +966,19 @@
                     <value value="c6d25926-fb74-400b-98b8-47ae7393f127" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
-                        <code value="857971000000104" />
-                        <display value="eGFR (estimated glomerular filtration rate) using CKD-Epi (Chronic Kidney Disease Epidemiology Collaboration) formula" />
+                        <code value="1011481000000105" />
+                        <display value="eGFR (estimated glomerular filtration rate) using creatinine Chronic Kidney Disease Epidemiology Collaboration equation per 1.73 square metres" />
                     </coding>
                 </code>
                 <subject>

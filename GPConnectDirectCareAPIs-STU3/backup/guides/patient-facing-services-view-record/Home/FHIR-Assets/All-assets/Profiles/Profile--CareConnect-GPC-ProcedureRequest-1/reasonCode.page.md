@@ -2,12 +2,23 @@
 
 <h5><ins>Usage</ins></h5>
 
+#### For investigations
+
 <span class="mro-circle required" title="Required"></span> Required
 
+#### For diary entries
+
+<span class="mro-circle optional" title="Optional"></span> Optional
 
 <h5><ins>Guidance</ins></h5>
 
+#### For investigations
+
 An explanation or justification for why this diagnostic investigation is being requested in coded or textual form.
+
+#### For diary entries
+
+The reason the action recorded in the diary entry is needed. This is the trigger reason for the diary entry not the action of the diary entry.
 
 <h5><ins>Example</ins></h5>
 

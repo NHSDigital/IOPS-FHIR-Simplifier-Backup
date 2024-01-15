@@ -4,6 +4,7 @@ In this case, the SNOMED CT Description ID represents a term that is different f
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Table View')">Table View</button>
+ <button class="tablinks" onclick="openTab(event, 'Tree View')">Tree View</button>
  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
 </div>
@@ -11,6 +12,11 @@ In this case, the SNOMED CT Description ID represents a term that is different f
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
 {{table:UKCore-Extension-CodingSCT-Heart-Example}}
+</div>
+
+<div id="Tree View" class="tabcontent">
+  <h3>Tree View</h3>
+{{tree:UKCore-Extension-CodingSCT-Heart-Example, expand:9}}
 </div>
 
 <div id="XML View" class="tabcontent">

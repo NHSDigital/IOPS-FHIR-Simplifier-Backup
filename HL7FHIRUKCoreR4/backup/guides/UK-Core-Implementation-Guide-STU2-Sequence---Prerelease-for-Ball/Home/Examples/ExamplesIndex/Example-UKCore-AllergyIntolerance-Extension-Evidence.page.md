@@ -11,22 +11,22 @@
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-AllergyIntolerance-Extension-Evidence-Example}}
+{{table:UKCore-Extension-Evidence-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-AllergyIntolerance-Extension-Evidence-Example}}
+{{tree:UKCore-Extension-Evidence-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-AllergyIntolerance-Extension-Evidence-Example}}
+{{xml:UKCore-Extension-Evidence-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-AllergyIntolerance-Extension-Evidence-Example}}
+{{json:UKCore-Extension-Evidence-Example}}
 </div>
 
 ---

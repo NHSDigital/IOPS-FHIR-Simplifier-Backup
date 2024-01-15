@@ -2,7 +2,7 @@
   <id value="blood-pressure-check-service--example-1" />
   <meta>
     <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
-    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
   </meta>
   <identifier>
     <system value="https://fhir.provider.example/identifier/bundle" />
@@ -97,6 +97,10 @@
           <resource>
             <Composition>
               <id value="28182303-be8d-429f-a593-4bd1b4952fc5" />
+              <meta>
+                <lastUpdated value="2023-08-08T09:12:14.2711908+01:00" />
+                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1" />
+              </meta>
               <identifier>
                 <system value="https://fhir.provider.example/identifier/composition" />
                 <value value="28182303-be8d-429f-a593-4bd1b4952fc5" />
@@ -144,9 +148,6 @@
                   <reference value="urn:uuid:9df8c399-f1ff-400d-8913-c6eeddc5c88f" />
                 </entry>
                 <entry>
-                  <reference value="urn:uuid:8ca45f71-01b5-4343-a8eb-8d63ba2eb2c2" />
-                </entry>
-                <entry>
                   <reference value="urn:uuid:f133f155-acc1-4817-9903-dc4ab5636c72" />
                 </entry>
                 <entry>
@@ -185,13 +186,13 @@
                 <reference value="urn:uuid:0192624d-34ff-419a-9814-4705fadb5c56" />
               </subject>
               <participant>
-              	<type>
-		<coding>
-			<system value="https://fhir.nhs.uk/STU3/ValueSet/GPConnect-ParticipantType-1" />
-			<code value="REC" />
-		</coding>
-		<text value="recorder" />
-	</type>
+                <type>
+                  <coding>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/GPConnect-ParticipantType-1" />
+                    <code value="REC" />
+                  </coding>
+                  <text value="recorder" />
+                </type>
                 <individual>
                   <reference value="urn:uuid:5d7e5ef0-dddb-4cb3-905a-d21e26eb64e6" />
                 </individual>
@@ -342,10 +343,10 @@
               <code>
                 <coding>
                   <system value="http://snomed.info/sct" />
-                  <code value="75367002" />
-                  <display value="Blood pressure" />
+                  <code value="163020007" />
+                  <display value="On examination - blood pressure reading" />
                 </coding>
-                <text value="Blood pressure" />
+                <text value="On examination - blood pressure reading" />
               </code>
               <subject>
                 <reference value="urn:uuid:0192624d-34ff-419a-9814-4705fadb5c56" />
@@ -386,7 +387,7 @@
                 <code>
                   <coding>
                     <system value="http://snomed.info/sct" />
-                    <code value="1091811000000102" />
+                    <code value="1091811000000100" />
                     <display value="Diastolic arterial pressure" />
                   </coding>
                   <text value="Diastolic arterial pressure" />
@@ -456,54 +457,6 @@
                 </coding>
                 <text value="Right upper arm structure" />
               </bodySite>
-            </Observation>
-          </resource>
-        </entry>
-        <entry>
-          <fullUrl value="urn:uuid:8ca45f71-01b5-4343-a8eb-8d63ba2eb2c2" />
-          <resource>
-            <Observation>
-              <id value="8ca45f71-01b5-4343-a8eb-8d63ba2eb2c2" />
-              <meta>
-                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1" />
-                <tag>
-                  <system value="https://fhir.nhs.uk/CodeSystem/RecordStandardHeadings" />
-                  <code value="social-context" />
-                  <display value="Social context" />
-                </tag>
-              </meta>
-              <identifier>
-                <system value="https://fhir.provider.example/identifier/observation" />
-                <value value="8ca45f71-01b5-4343-a8eb-8d63ba2eb2c2" />
-              </identifier>
-              <status value="final" />
-              <category>
-                <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-                  <code value="social-history" />
-                  <display value="Social History" />
-                </coding>
-                <text value="Social History" />
-              </category>
-              <code>
-                <coding>
-                  <system value="http://snomed.info/sct" />
-                  <code value="228378005" />
-                  <display value="Smokes drugs in cigarette form" />
-                </coding>
-                <text value="Smokes drugs in cigarette form" />
-              </code>
-              <subject>
-                <reference value="urn:uuid:0192624d-34ff-419a-9814-4705fadb5c56" />
-              </subject>
-              <context>
-                <reference value="urn:uuid:e224af1a-ed8b-4bb8-a854-f6d56f199bd6" />
-              </context>
-              <effectiveDateTime value="2023-08-08" />
-              <issued value="2023-08-08T09:12:14.305972+01:00" />
-              <performer>
-                <reference value="urn:uuid:5d7e5ef0-dddb-4cb3-905a-d21e26eb64e6" />
-              </performer>
             </Observation>
           </resource>
         </entry>

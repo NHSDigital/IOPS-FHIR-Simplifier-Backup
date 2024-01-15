@@ -1,10 +1,5 @@
 ## UK Core Medication Administration Category
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This CodeSystem was added after specific review and feedback from the Digital and Interoperable Medicines Programme. It was not added under a Clinical & Technical Assurance sprint. This is a new CodeSystem added to UK Core, and should undergo review in this STU2 ballot.
-</div>
-
 @```
 from
 	CodeSystem

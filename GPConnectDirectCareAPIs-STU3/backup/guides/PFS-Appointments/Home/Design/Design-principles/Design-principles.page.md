@@ -34,3 +34,11 @@ Provider systems must also demonstrate standards compliance as part of the NHS D
 * Assurance will use a risk-based approach
 * Testing should be automated where possible to establish technical conformance
 * All artefacts related to assurance and testing should be made available as part of the ecosystem (public domain) prior to engaging in a formal NHS Digital assurance process
+
+### **Information Governance Principles**
+Your organisation must complete the [Data Security and Protection Toolkit](https://www.dsptoolkit.nhs.uk/) (DSPT) for each NHS England Service being integrated and obtain at least a 'Minimum Standards Met' rating.
+
+Each time a new NHS England Service is integrated, a check is made that the connecting organisation is registered and active with DSPT.
+
+All organisations that have access to NHS patient data and systems must use this Toolkit to provide assurance that they are practising good data security and that personal information is handled correctly.
+  

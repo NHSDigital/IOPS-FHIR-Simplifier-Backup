@@ -1,26 +1,32 @@
+---
+expand: yes
+---
+
 ## {{page-title}}
+
+The Record of Discussion form represented as a FHIR questionnaire. If RoD forms are sent as structured resources, they should be based upon the example below.
 
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">
-            <a href="#JSON" role="tab" data-toggle="tab">JSON</a>
+            <a href="#JSON-Q-G-E" role="tab" data-toggle="tab">JSON</a>
         </li>
          <li role="presentation">
-            <a href="#XML" role="tab" data-toggle="tab">XML</a>
+            <a href="#XML-Q-G-E" role="tab" data-toggle="tab">XML</a>
         </li>
         <li role="presentation">
-            <a href="#Tree" role="tab" data-toggle="tab">Tree</a>
+            <a href="#Tree-Q-G-E" role="tab" data-toggle="tab">Tree</a>
         </li>
   </ul>
     
   <div class="tab-content snippet">
-    <div id="JSON" role="tabpanel" class="tab-pane active">
+    <div id="JSON-Q-G-E" role="tabpanel" class="tab-pane active">
 {{json:NHSDigital-Questionnaire-Genomics-Example}}
     </div>
-    <div id="XML" role="tabpanel" class="tab-pane">
+    <div id="XML-Q-G-E" role="tabpanel" class="tab-pane">
 {{xml:NHSDigital-Questionnaire-Genomics-Example}}
     </div>
-    <div id="Tree" role="tabpanel" class="tab-pane">
+    <div id="Tree-Q-G-E" role="tabpanel" class="tab-pane">
 {{tree:NHSDigital-Questionnaire-Genomics-Example}}
     </div>
   </div>

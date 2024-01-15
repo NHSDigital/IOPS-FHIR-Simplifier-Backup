@@ -54,33 +54,7 @@
 
             <div id="header" class="row">
 
-                <!--
-            <div markdown="span" class="alert alert-info" role="alert">
-               <i class="fa fa-information"></i>
-          
-                <b>Please note:</b>
-                <ul>
-                    <li>This version of the UK Core is currently under development.</li>
-                    <li>This version is not suitable for implementation. Other versions are available:  <a href="https://simplifier.net/guide/ukcoreversionhistory?version=current">here</a></li>
-                    <li>There will be disruption as the content will be updated daily and with links not working.</li>
-                    <li>Please follow the guidance on the <a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU2-Sequence/Home/ContactUs.page.md?version=current">Contact Us</a> page if you need any assistance.</li>
-                </ul>
-            </div>
-            -->
-
-            <div markdown="span" class="alert alert-success" role="alert">
-                <b>Please note:</b>
-                <ul><li>
-Items highlighted in green have been Added, or Updated, and are undergoing review in this STU2 ballot.</li>
-<li>A summary of changes is available here: <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU2-Sequence/1.1.0.page.md?version=current"> Version History</a></li></ul>
-<br>
-<b>Important note regarding changes to STU1 profiles:</b>
-<ul><li>The bindings for all SNOMED CT ValueSets have been changed to "preferred".</li>
-<li>A proposed minimum viable content table has been added to each resource.</li></ul>
-<br>
-These changes are not currently approved and are submitted for comment as part of this STU2 ballot. 
-
-</div>
+               
 </div>
             <!--Comment out for publication, end-->
 
@@ -336,20 +310,21 @@ These changes are not currently approved and are submitted for comment as part o
                     $(this).parent().find('div.tabcontent').addClass('forceWhite');
                 });
             }
-            
+            </script>
+            <script>
             // function add the submenus for profiles
             function createProfileSubMenus() {
                //mobile friendly tweak - check if nav bar button is visible, and if so, we're on moblile where the sub menus don't work
                 if (window.matchMedia("(min-width: 992px)").matches){
                     //add the sub menu's for profiles
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles N to Z <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles A to M <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li id="dropdownParentNToZ" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles N to Z <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li id="dropdownParentAToM" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles A to M <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
                     
                     //and move the items into the sub menus
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(4,26)); //A to M
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(26)); //N to Z
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(4,21)); //A to M
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(21)); //N to Z
                 } else {
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
@@ -360,6 +335,57 @@ These changes are not currently approved and are submitted for comment as part o
             function createTerminologySeparator() {
                 $('ul.nav li.dropdown:eq(2) ul.dropdown-menu li:eq(0)').after('<li role="separator" class="divider"></li>');
             }
+
+            
+            function handleSubMenuEvents() {
+                var atom
+                var ntoz
+
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent a').click(function(e) {  
+                    if ($(this).parent().parent().hasClass("submenu-list")) {
+                        return;
+                    } 
+                    e.stopPropagation(); 
+                    e.preventDefault();
+
+                    var list = $(this).parent().find('ul');
+
+                    if (list.parent()[0].id== "dropdownParentAToM") {
+                        clearTimeout(atom);
+                    } else if (list.parent()[0].id== "dropdownParentNToZ") {
+                        clearTimeout(ntoz);
+                    }
+                    if (list.hasClass("hidden")) {
+                        list.addClass("visuallyhidden");
+                        list.removeClass("hidden");
+                        setTimeout(function () {
+                            list.removeClass('visuallyhidden');
+                            }, 30);
+                    } else  {
+                        if (list.hasClass("visuallyhidden")) {
+                            setTimeout(function () {
+                                list.removeClass('visuallyhidden');
+                                }, 30);
+                        } else {
+
+                            if (list.parent()[0].id== "dropdownParentAToM") {
+                                atom = setTimeout(function () {
+                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("visuallyhidden");
+                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("hidden");
+                    }, 20);
+                            } else if (list.parent()[0].id== "dropdownParentNToZ") {
+                                ntoz = setTimeout(function () {
+                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("visuallyhidden");
+                        $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("hidden");
+                    }, 20);
+                            }
+
+                        }
+                    }
+                });
+            }
+        </script>
+        <script>
 
              function swapReferenceExampleLinks() {
                 //look for a div with id transpose
@@ -402,6 +428,7 @@ These changes are not currently approved and are submitted for comment as part o
                 createProfileSubMenus();
                 createTerminologySeparator();
                 swapReferenceExampleLinks();
+                handleSubMenuEvents();
                 updateFooterPosition();
             });
             

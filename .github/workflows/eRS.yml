@@ -3,7 +3,7 @@ name: eRS Back up simplifier project
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * */1 *'
+    - cron: '0 18 * * *'
 
 jobs:
   build:

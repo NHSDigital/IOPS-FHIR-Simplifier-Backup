@@ -6,7 +6,6 @@
 
 Please reference guidance in {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-Appointment-1}}
 
-
 ---
 
 <!--// start of code snippet -->

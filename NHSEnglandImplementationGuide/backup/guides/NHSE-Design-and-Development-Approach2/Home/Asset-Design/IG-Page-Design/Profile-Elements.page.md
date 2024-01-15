@@ -83,7 +83,7 @@ The resource referenced in `Procedure.performer.actor` SHALL conform to one the 
 - { {pagelink:Profile-Organization}}
 - { {pagelink:Profile-Patient}}
 - { {pagelink:Profile-Practitioner}}
-- {  {pagelink:Profile-PractitionerRole}}
+- { {pagelink:Profile-PractitionerRole}}
 - { {pagelink:Profile-RelatedPerson}}
 
 The resource referenced in `Procedure.performer.onBehalfOf` SHALL conform to { {pagelink:Profile-Organization}}.
@@ -131,5 +131,15 @@ And the inline example SHALL be in the following format:
 </div>
 
 ~~~~
+
+### Non-unique sub headings
+
+Where an element contains a heading for specific guidance, such as Display / Propogation / Consumer / Provider, with the same name as is used on another element, this guidance must have an unique id attribute, based on the element and heading:
+
+~~~html
+<h3 id="clinical-codes-display">Display</h3>
+
+<h3 id="original-term-text-display">Display</h3>
+~~~
 
 ---

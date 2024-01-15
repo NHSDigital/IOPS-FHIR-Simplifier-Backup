@@ -18,6 +18,9 @@ html, body {
      color: #222;
      text-decoration: none;
 }
+ body header h3 {
+     text-align: center;
+}
  body header .hl7-fhir-logo-lhs {
      text-align: left;
      margin-top: 7px;
@@ -36,13 +39,13 @@ html, body {
      min-height: 70%;
      position: relative;
      height: auto !important;
-     margin-bottom: -155px;
-     padding-bottom: 155px;
+     margin-bottom: -105px;
+     padding-bottom: 105px;
 }
  body footer {
      background-color: #dddddd;
      color: #222;
-     height: 155px;
+     height: 105px;
      position: relative;
      padding-top: 40px;
 }
@@ -61,6 +64,10 @@ html, body {
      content: "";
      clear: both;
      display: table;
+}
+
+a {
+color:revert;
 }
 
 hr {
@@ -200,17 +207,33 @@ table.assets tr td.balloted {
 }
 
 
+ th.width05 { width: 5%; overflow-wrap: anywhere; }
+ th.width10 { width: 10%; overflow-wrap: anywhere; }
+ th.width15 { width: 15%; overflow-wrap: anywhere; }
  th.width20 { width: 20%; overflow-wrap: anywhere; }
  th.width25 { width: 25%; overflow-wrap: anywhere; }
  th.width30 { width: 30%; overflow-wrap: anywhere; }
  th.width35 { width: 35%; overflow-wrap: anywhere; }
  th.width40 { width: 40%; overflow-wrap: anywhere; }
+ th.width45 { width: 45%; overflow-wrap: anywhere; }
+ th.width50 { width: 50%; overflow-wrap: anywhere; }
+ th.width55 { width: 55%; overflow-wrap: anywhere; }
+ th.width60 { width: 60%; overflow-wrap: anywhere; }
+ th.width65 { width: 65%; overflow-wrap: anywhere; }
+ th.width70 { width: 70%; overflow-wrap: anywhere; }
+ th.width75 { width: 75%; overflow-wrap: anywhere; }
 
  td.width20 { width: 20%; overflow-wrap: anywhere; }
  td.width25 { width: 25%; overflow-wrap: anywhere; }
  td.width30 { width: 30%; overflow-wrap: anywhere; }
  td.width35 { width: 35%; overflow-wrap: anywhere; }
  td.width40 { width: 40%; overflow-wrap: anywhere; }
+
+
+ th.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
+ th.comparison-note { width: 34%; overflow-wrap: anywhere; }
+ td.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
+ td.comparison-note { width: 34%; overflow-wrap: anywhere; }
 
  .underconstruction {
      display: grid;
@@ -222,26 +245,26 @@ table.assets tr td.balloted {
      text-align: center;
 }
 
- #valuesetlist {
+table.valuesetlist {
      font-family: Arial, Helvetica, sans-serif;
      border-collapse: collapse;
      width: 100%;
 }
- #valuesetlist td, #valuesetlist th {
+table.valuesetlist td, table.valuesetlist th {
      border: 1px solid #ddd;
      padding: 8px;
 }
- #valuesetlist tr:nth-child{
+table.valuesetlist tr:nth-child{
     background-color: #f2f2f2;
 }
- #valuesetlist tr:hover {
+table.valuesetlist tr:hover {
     background-color: #ddd;
 }
 
- #valuesetlist tr.balloted {
+table.valuesetlist tr.balloted {
     background-color:#dff0d8 !important;
 }
- #valuesetlist th {
+table.valuesetlist th {
      padding-top: 12px;
      padding-bottom: 12px;
      text-align: left;

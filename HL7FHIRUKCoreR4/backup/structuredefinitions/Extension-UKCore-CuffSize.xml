@@ -5,7 +5,7 @@
   <version value="1.0.0" />
   <name value="ExtensionUKCoreCuffSize" />
   <title value="Extension UK Core Cuff Size" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-09-12" />
   <publisher value="HL7 UK" />
   <contact>
@@ -47,9 +47,6 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-    </element>
-    <element id="Extension.value[x].coding">
-      <path value="Extension.value[x].coding" />
       <binding>
         <strength value="preferred" />
         <description value="A set of codes to record the cuff size" />

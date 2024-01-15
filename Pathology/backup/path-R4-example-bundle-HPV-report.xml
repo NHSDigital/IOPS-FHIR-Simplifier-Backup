@@ -170,10 +170,10 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- Not currently in PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
-                        <code value="171149006" />
-                        <display value="Screening for malignant neoplasm of cervix" />
+                        <code value="700152009" />
+                        <display value="Human papilloma virus screening" />
                     </coding>
                 </code>
                 <subject>
@@ -244,9 +244,15 @@
                 </identifier>
                 <basedOn>
                     <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-                    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
                 </basedOn>
                 <status value="final" />
+				<category> 
+					<coding> 
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0074"/> 
+						<code value="LAB"/>
+						<display value="Laboratory" />	
+					</coding> 
+				</category>
                 <code>
                     <coding>
                         <system value="http://snomed.info/sct" />
@@ -285,9 +291,16 @@
                     <value value="9e9890cb-db0c-4cc2-9dc8-5d9b6589bda1" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="50121000237101" />
                         <display value="Human papilloma virus RNA nucleic acid amplification qualitative result" />

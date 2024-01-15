@@ -1,10 +1,5 @@
 ## StructureDefinition Extension-UKCore-ConditionEpisode
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This Extension underwent Clinical and Technical Assurance during Sprint 4. This is a new Extension added to UK Core and should undergo review in this STU2 ballot.
-</div>
-
 <div id="transpose">
 @```
 from
@@ -59,5 +54,9 @@ select
 
 ### Guidance
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-ConditionEpisodicity}}.
+
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-warning"></i> Breaking Change</h4>
+The datatype of this extension was changed from <code>valueCode</code> in UK Core STU1 Sequence, to <code>valueCodeableConcept</code> in this release, as a result of the UK Core STU2 Sequence ballot reconciliation actions.
+</div> 
 
 ---

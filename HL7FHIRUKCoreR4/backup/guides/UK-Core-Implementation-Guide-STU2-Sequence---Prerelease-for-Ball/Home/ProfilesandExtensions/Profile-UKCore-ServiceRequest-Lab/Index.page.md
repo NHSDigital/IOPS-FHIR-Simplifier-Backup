@@ -4,11 +4,6 @@ topic: Profile-ServiceRequest-Lab-37178
 
 # StructureDefinition-UKCore-ServiceRequest-Lab
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This Profile underwent Clinical and Technical Assurance during Sprint 6. This is a new Profile added to UK Core and should undergo review in this STU2 ballot.
-</div>
-
 <div id="transpose">
 @```
 from
@@ -104,7 +99,7 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 </tr>
 <tr>
 <td><code>ServiceRequest.reasonReference</code></td>
-<td>Explanation/Justification for service or service.</td>
+<td>Explanation / Justification for for why this service is being requested.</td>
 </tr>
 </table>
 

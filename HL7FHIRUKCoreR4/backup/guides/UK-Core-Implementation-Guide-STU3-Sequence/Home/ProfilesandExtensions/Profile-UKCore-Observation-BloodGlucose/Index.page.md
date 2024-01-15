@@ -9,60 +9,11 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-BloodGlu
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Profile added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-BloodGlucose/~issues?level=File">Report Issue for UKCore-Observation-BloodGlucose<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-BloodGlucose/~issues?level=File">Report Issue for UKCore-Observation-BloodGlucose</a>.
 </div>
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationBloodGlucose'
-select
-	Canonical_URL: url,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationBloodGlucose'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
-<div class="tab fhirTree">
- <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
-</div>
-
-<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
-{{tree, buttons}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json}}
-</div>
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -111,6 +62,11 @@ from
 ```
 </span>
 </div>
+
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-BloodGlucose/~issues?level=File">Report Issue for UKCore-Observation-BloodGlucose</a>.
+</div>
 </nocheck>
 
 ### Example Usage Scenarios ###
@@ -118,6 +74,11 @@ The following are example usage scenarios for the UK Core Observation Blood Gluc
 
 - Query and retrieve a patient's results of blood glucose tests
 - Record or update a patient's blood glucose levels
+
+#### Example for Continuous Glucose Monitoring
+A continuous or flash glucose monitor will have an Observation resource created for each individual reading. All readings can be retrieved by searching on the `Observation.subject` and `Observation.device`.
+
+{{render:CGM}}
 
 <hr class="thickline">
 

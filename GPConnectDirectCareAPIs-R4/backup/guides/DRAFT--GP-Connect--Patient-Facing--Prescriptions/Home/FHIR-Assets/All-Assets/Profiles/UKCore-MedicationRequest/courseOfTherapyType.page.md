@@ -31,11 +31,11 @@ Will be used in order to denote whether a prescription is acute or repeat.
     </thead>
     <tbody>
       <tr>
-        <td>continuous</td> <td>http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy</td>
+        <td>continuous</td> <td>https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapy</td>
         <td>Continuous long term therapy</td>
       </tr>
             <tr>
-        <td>acute</td>   <td>http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy	</td>
+        <td>acute</td>   <td>https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapy</td>
         <td>Short course (acute) therapy</td>
       </tr>
     </tbody>

@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
         <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-
+    
         <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
         <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
         <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
@@ -55,9 +55,10 @@
                <i class="fa fa-info-circle"></i>
                 <b>Please note:</b>
                 <ul>
-                    <li>This version of the UK Core is for C&TSprint 7 Review.</li>
-                    <li>This version is not suitable for implementation. Other versions are available on the <a href="https://simplifier.net/guide/ukcoreversionhistory?version=current">UK Core Version History Guide</a></li>
-                    <li>Please follow the guidance on the <a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ContactUs.page.md?version=current">Contact Us page</a> if you need any assistance.</li>
+                    <li>This version of the UK Core is a development copy.</li>
+                    <li>This contains <b>BREAKING CHANGES</b> as a result of the C&TA Sprint 7 Review, and STU2 Sequence ballot reconciliation.</li>
+                    <li>This version is not yet reviewed for implementation. Other versions are available on the <a href="https://simplifier.net/guide/ukcoreversionhistory?version=current">UK Core Version History Guide</a></li>
+                    <li>Please follow the guidance on the <a id="header-contactus" href="{{content}}/../Home/ContactUs.page.md?version=current">Contact Us page</a> if you need any assistance.</li>
                     <li>A summary of changes is available on the <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU3-Sequence/index.page.md?version=current">STU3 Sequence Change Log</a></li>
                     </ul>
             </div>
@@ -73,13 +74,20 @@
         </a>
 
         <footer>
+
+            <!-- Consent Bar - Example setting level 20 upon continued usage and level 80 if the user clicks the button -->
+            <div class="cookie-consent" data-level="20" data-duration="8">
+                <p>Simplifier, and HL7 UK, use cookies on this website. <span class="hidden-xs">Cookies are small text files, stored on your computer. We use cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site without changing settings, you are agreeing to our use of cookies.</span></p>
+                <button type="button" class="btn btn-primary cookie-accept" data-level="80" data-duration="8760">Accept</button>
+            </div>
+
             <div class="container">
-                <table role="none" title="Footer Links">
-                    	<col style="width:25%">
-	                    <col style="width:15%">
-    	                <col style="width:20%">
-	                    <col style="width:15%">
-    	                <col style="width:25%">
+                <table role="none" title="Footer Links" width="100%">
+                    	<col style="width:19%">
+	                    <col style="width:17%">
+    	                <col style="width:18%">
+	                    <col style="width:13%">
+    	                <col style="width:33%">
                   <tr>
                       <td>Powered by <b>SIMPLIFIER.NET</b></td>
                       <td> IG © 2021+ HL7 UK</td>
@@ -89,7 +97,7 @@
                   </tr>
                   <tr>
                     <td><b>Released:</b> 20th September 2023</td>
-                    <td colspan="4"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Guidance/Sitemap-Overview?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/UKCoreVersionHistory/Home" target="_blank" class="external">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/HL7FHIRUKCoreR4/~issues" target="_blank" class="external">Propose a change</a></td>
+                    <td colspan="4"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Guidance/Sitemap-Overview?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/UKCoreVersionHistory/Home" target="_blank">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/HL7FHIRUKCoreR4/~issues" target="_blank" >Propose a change</a></td>
                       </tr>  
                    </table>
             </div>
@@ -102,7 +110,11 @@
             // When the user scrolls down 100px from the top of the document, show the button
             window.onscroll = function () { 
                 showTopButton();
+                try {
                 scrollProfileSideBar();
+                } catch {
+
+                }
             };
 
             function showTopButton() {
@@ -173,11 +185,19 @@
                 $('div#transpose').each(function(index) {
                     //within this div, look for an fql table
                     var fqlTable = $(this).children("table.table-bordered");
-                    //and optionally a 2 column table you want to combine with the transposed one
-                    var contextTable = $(this).children("table#addToTranspose");
+
+                    // simplifier 31.1.0.0 broke fql tables, so if empty, look for one above 
+                    if (fqlTable == undefined || fqlTable.length == 0) {
+                        fqlTable = $(this).prevAll().filter("table.table-bordered");
+                    }
 
                     //only continue to transpose if we have an fql table
-                    if (fqlTable != undefined && fqlTable.length > 0) {
+                    if (fqlTable == undefined || fqlTable.length == 0) {
+                        return; 
+                    }
+
+                    //and optionally a 2 column table you want to combine with the transposed one
+                    var contextTable = $(this).children("table#addToTranspose");
 
                     //create a new table to be populated during the transpose
                     var newTable = document.createElement('table');
@@ -218,7 +238,7 @@
                                 pTag = "<p>";
                                 pTagClose = "</p>"
                                 if (isCanonicalURL) {
-                                    str = fqlTable[0].rows[r].cells[c].innerText;
+                                    str = '<span class="copy-text">' + fqlTable[0].rows[r].cells[c].innerText + '<button title="Click to copy URL" class="btn-copy" data-clipboard-text="' +  fqlTable[0].rows[r].cells[c].innerText + '"/></span>';
                                 } else {
                                     str = fqlTable[0].rows[r].cells[c].innerHTML;
                                 }
@@ -246,7 +266,6 @@
                     $(this).append(newTable);
                     fqlTable.remove();
                     contextTable.remove();
-                    }
                 });
 			}
 
@@ -274,27 +293,25 @@
                     if (fqlTable != undefined && fqlTable.length > 0) {
                         for(var r = 1; r < fqlTable[0].rows.length; r++) {
                             var profile = fqlTable[0].rows[r].cells[0].innerHTML;
-                            if (stringToSet != "") {
-                                stringToSet += ", ";
-                            }
+                            
                             let thisUrl = '';
                             if (profile.startsWith("Extension")) {
                                 if (pageVersion.startsWith("?version=current")){
                                     thisUrl = newUrl + "ExtensionLibrary/" + profile +  ".page.md" + pageVersion;
-                                } else
-                                {
+                                } else {
                                     thisUrl = newUrl + "ExtensionLibrary/" + profile + pageVersion;
                                 }
-                            } else
-                            {
+                            } else {
                                 thisUrl = newUrl + "Profile-" + profile + pageVersion;
                             }
-                            profile = "<a href=" + thisUrl + ">" + profile + "</a>";
+                            profile = "<li><a href=" + thisUrl + ">" + profile + "</a></li>";
                             stringToSet += profile;
                         }
                     }
-                     if (stringToSet == "") {
+                    if (stringToSet == "") {
                         stringToSet = "None";
+                    } else {
+                        stringToSet = "<ul>" + stringToSet + "</ul>";
                     }
                     $(this).replaceWith(stringToSet);
                 });
@@ -408,8 +425,10 @@
                     var extensionsDiv = $('div#preview-content div#extensions');
                     var extensionsDivUC = $('div#preview-content div#Extensions');
                     var mvcDiv = $('div#preview-content div#Minimum-Viable-Content');
-                    var bindingsDiv = $('div#preview-content div#Bindings');
-                    var constraintsDiv = $('div#preview-content div#Constraints');
+                    var bindingsDiv = $('div#preview-content div#bindings');
+                    var bindingsDivUC = $('div#preview-content div#Bindings');
+                    var constraintsDiv = $('div#preview-content div#constraints');
+                    var constraintsDivUC = $('div#preview-content div#Constraints');
                     var checkForHR;
                     var addToDiv;
 
@@ -417,9 +436,15 @@
                     if (constraintsDiv != undefined && constraintsDiv.length > 0) {
                         checkForHR = constraintsDiv.children('hr');
                         addToDiv = constraintsDiv;
+                    } else if (constraintsDivUC != undefined && constraintsDivUC.length > 0) {
+                        checkForHR = constraintsDivUC.children('hr');
+                        addToDiv = constraintsDivUC;
                     } else if (bindingsDiv != undefined && bindingsDiv.length > 0) {
                         checkForHR = bindingsDiv.children('hr');
                         addToDiv = bindingsDiv;
+                    } else if (bindingsDivUC != undefined && bindingsDivUC.length > 0) {
+                        checkForHR = bindingsDivUC.children('hr');
+                        addToDiv = bindingsDivUC;
                     } else if (extensionsDiv != undefined && extensionsDiv.length > 0) {
                         checkForHR = extensionsDiv.children('hr');
                         addToDiv = extensionsDiv;
@@ -466,21 +491,66 @@
             function createProfileSubMenus() {
                //mobile friendly tweak - check window size, and add sub menu if we can
                 if (window.matchMedia("(min-width: 992px)").matches){
+                    //add classes for profiles
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(3).addClass("profile-item");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(0,11).addClass("menu1");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(11,18).addClass("menu2");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(39).addClass("menu3");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(19,24).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(25,26).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(27,28).addClass("obs-derived");
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(29,38).addClass("obsvital-derived");
+
                     //add the sub menu's for profiles
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles P to Z <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles N to O <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles A to M <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentThree" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles P to Z <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentTwo" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles L to O <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(3)').after('<li id="dropdownParentOne" class="submenu-parent"><a href="javascript:void(0)" class="dropdown-toggle">Profiles A to K <span class="caret"></span></a><ul class="submenu-list hidden"></ul></li>');
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
                     
                     //and move the items into the sub menus
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(5,29)); //A to M
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(29,51)); //N to O
-                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(51)); //P to Z
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.menu1')); //A to K
+
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.menu2')); //L to N
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(18,19)); //Obs
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append('<li id="dropdownObsParent" class="submenu-subparent"><a href="javascript:void(0)" class="dropdown-toggle"><span class="caret"></span>&nbsp;&nbsp;Derived Profiles of UKCore-Observation</a><ul class="submenu-sublist subhidden"></ul></li>'); //Obs Parent
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(24,25)); //Obs Group Lab
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(26,27)); //Obs Lab
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(28,29)); //Obs Vital
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append('<li id="dropdownObsVitalParent" class="submenu-subparent"><a href="javascript:void(0)" class="dropdown-toggle"><span class="caret"></span>&nbsp;Derived Profiles of UKCore-Observation-VitalSigns</a><ul class="submenu-sublist subhidden"></ul></li>'); //ObsVital Parent
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(0) ul.submenu-sublist').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.obs-derived')); //Obs Derived
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(1) ul.submenu-sublist').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.obsvital-derived')); //ObsVital Derived 
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.profile-item').slice(38,39)); //Other O's 
+
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.menu3')); //P to Z
                 } else {
                     //add a seperator
                     $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
                 }
+            }
+            function setInitialDropdownState(){
+                if (getDropdownExpandedState("dropdownParentOne") == 'true'){
+                    $('li#dropdownParentOne ul').removeClass("hidden");
+                    $('li#dropdownParentOne ul').removeClass('visuallyhidden');
+                } 
+                if (getDropdownExpandedState("dropdownParentTwo") == 'true'){
+                    $('li#dropdownParentTwo ul').removeClass("hidden");
+                    $('li#dropdownParentTwo ul').removeClass('visuallyhidden');
+                }
+                if (getDropdownExpandedState("dropdownParentThree") == 'true'){
+                    $('li#dropdownParentThree ul').removeClass("hidden");
+                    $('li#dropdownParentThree ul').removeClass('visuallyhidden');
+                }
+                
+                if (getDropdownExpandedState("dropdownObsParent") == 'true'){
+                    $('li#dropdownObsParent ul').removeClass("subhidden");
+                    $('li#dropdownObsParent ul').removeClass('visuallysubhidden');
+                }
+                if (getDropdownExpandedState("dropdownObsVitalParent") == 'true'){
+                    $('li#dropdownObsVitalParent ul').removeClass("subhidden");
+                    $('li#dropdownObsVitalParent ul').removeClass('visuallysubhidden');
+                }
+
             }
 
             // function add a seperator into terminology dropdown
@@ -499,44 +569,241 @@
                     });
                 }
             }
+
+            function handleSubMenuEvents() {
+                var dropdownParentOne, dropdownParentTwo, dropdownParentThree
+                var dropdownObsParent, dropdownObsVitalParent
+
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent a').click(function(e) {   
+                    if ($(this).parent().parent().hasClass("submenu-list")) {
+                        return;
+                    }
+                    if ($(this).parent().parent().hasClass("submenu-sublist")) {
+                        return;
+                    }
+                    e.stopPropagation(); 
+                    e.preventDefault();
+
+                    var list = $(this).parent().find('ul');
+
+                    if (list.parent()[0].id== "dropdownParentOne") {
+                        clearTimeout(dropdownParentOne);
+                    } else if (list.parent()[0].id== "dropdownParentTwo") {
+                        clearTimeout(dropdownParentTwo);
+                    } else if (list.parent()[0].id== "dropdownParentThree") {
+                        clearTimeout(dropdownParentThree);
+                    }
+
+                    if (list.hasClass("hidden")) {
+                        list.addClass("visuallyhidden");
+                        list.removeClass("hidden");
+                        setTimeout(function () {
+                            list.removeClass('visuallyhidden');
+                            setDropdownExpandedState(list.parent()[0].id,true);
+                            }, 30);
+                    } else  {
+                        if (list.hasClass("visuallyhidden")) {
+                            setTimeout(function () {
+                                list.removeClass('visuallyhidden');
+                                setDropdownExpandedState(list.parent()[0].id,true);
+                            }, 30);
+                        } else {
+
+                            if (list.parent()[0].id== "dropdownParentOne") {
+                                dropdownParentOne = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("visuallyhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').addClass("hidden");
+                                setDropdownExpandedState("dropdownParentOne",false);
+                                }, 20);
+                            } else if (list.parent()[0].id== "dropdownParentTwo") {
+                                dropdownParentTwo = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("visuallyhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').addClass("hidden");
+                                setDropdownExpandedState("dropdownParentTwo",false);
+                                }, 20);
+                            } else if (list.parent()[0].id== "dropdownParentThree") {
+                                dropdownParentThree = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').addClass("visuallyhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(2) ul.submenu-list').addClass("hidden");
+                                setDropdownExpandedState("dropdownParentThree",false);
+                                }, 20);
+                            }
+
+                        }
+                    }
+                });
+                $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent a').click(function(e) {   
+                    if ($(this).parent().parent().hasClass("submenu-sublist")) {
+                        return;
+                    }
+                    e.stopPropagation(); 
+                    e.preventDefault();
+
+                    var list = $(this).parent().find('ul');
+                    if (list.parent()[0].id== "dropdownObsParent") {
+                        clearTimeout(dropdownObsParent);
+                    } else if (list.parent()[0].id== "dropdownObsVitalParent") {
+                        clearTimeout(dropdownObsVitalParent);
+                    }
+
+                    if (list.hasClass("subhidden")) {
+                        list.addClass("visuallysubhidden");
+                        list.removeClass("subhidden");
+                        setTimeout(function () {
+                            list.removeClass('visuallysubhidden');
+                            setDropdownExpandedState(list.parent()[0].id,true);
+                            }, 30);
+                    } else  {
+                        if (list.hasClass("visuallysubhidden")) {
+                            setTimeout(function () {
+                                list.removeClass('visuallysubhidden');
+                                setDropdownExpandedState(list.parent()[0].id,true);
+                                }, 30);
+                        } else {
+
+                            if (list.parent()[0].id== "dropdownObsParent") {
+                                dropdownObsParent = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(0) ul.submenu-sublist').addClass("visuallysubhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(0) ul.submenu-sublist').addClass("subhidden");
+                                setDropdownExpandedState("dropdownObsParent",false);
+                                }, 20);
+                             } else if (list.parent()[0].id== "dropdownObsVitalParent") {
+                                dropdownObsVitalParent = setTimeout(function () {
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(1) ul.submenu-sublist').addClass("visuallysubhidden");
+                                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-subparent:eq(1) ul.submenu-sublist').addClass("subhidden");
+                                setDropdownExpandedState("dropdownObsVitalParent",false);
+                                }, 20);
+                            }
+
+                        }
+                    }
+                });
+            }
         </script>
         <script>
+            function getDropdownExpandedState(dropdownMenuId) {
+                var nameEQ = dropdownMenuId + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return false;
+            }
+            function setDropdownExpandedState(dropdownMenuId, open){
+                var date = new Date();
+                date.setTime(date.getTime() + (7*24*60*60*1000));
+                var expires = "; expires=" + date.toUTCString();
+                document.cookie = dropdownMenuId + "=" + (open || "")  + expires + "; path=/";
+            }
+        </script>
+        <script>
+            // look for codesytsem URL's and add a button
+            function findCodeSystemURLS() {
+                $('div[id^="HTML View"] div p').each(function(index) {
+                    if ($(this)[0].innerText.startsWith("This code system")) {
+                        var theCodeSystemURL = $(this)[0].innerText.replace("This code system ","").replace(" defines the following codes:","");
+                        var buttonString = 'This code system <span class="copy-text">' + theCodeSystemURL + '<button title="Click to copy URL" class="btn-copy" data-clipboard-text="' +  theCodeSystemURL + '"> </button></span> defines the following codes:';
+                        $(this)[0].innerHTML = buttonString;
+                    }
+                });
+            }
+
+
             //look for any anchor tags going to XML, which would open the resource in simpifier
             // and remap these to the relevant asset in the IG
            function swapProfileTreeLinks() {
+                var ukCoreProfiles = ['AllergyIntolerance','Appointment','Composition','Condition','DiagnosticReport','Encounter','FamilyMemberHistory','HealthcareService','Immunization','List','Location','Medication','MedicationAdministration','MedicationDispense','MedicationRequest','MedicationStatement','Observation','Organization','Patient','Practitioner','PractitionerRole','Procedure','Questionnaire','RelatedPerson','Schedule','ServiceRequest','Slot','Specimen'];
+                var draftProfiles = ['AuditEvent','Bundle','CarePlan','CareTeam','Communication','Consent','Device','DocumentReference','EpisodeOfCare','Flag','ImagingStudy','MessageHeader','OperationOutcome','OrganizationAffiliation','Provenance','QuestionnaireResponse','RequestGroup','Task'];
+
+var baseDataTypes = ['base64Binary','boolean','canonical','code','date','dateTime','decimal','id','instant','integer','markdown','oid','positiveInt','string','time','unsignedInt','uri','url','uuid','Data','Types','Address','Age','Annotation','Attachment','CodeableConcept','Coding','ContactPoint','Count','Distance','Duration','HumanName','Identifier','Money','Period','Quantity','Range','Ratio','SampledData','Signature','Timing'];
+var metaDataTypes = ['ContactDetail','Contributor','DataRequirement','Expression','ParameterDefinition','RelatedArtifact','TriggerDefinition','UsageContext'];
+
+
+                let url = window.location.href;
+                let slashCount = url.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++)
+                {
+                    newUrl = newUrl + url.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
+                        i = slashCount;
+                    }
+                }
+
                 $('a[href$="xml"]').each(function(index) {
                     let urlReference = $(this)[0].href;
                     if (urlReference.includes("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath="))
                     {
-                        let url = window.location.href;
-                        let slashCount = url.split("/").length;
-                        let newUrl = '';
-                        for (i=0;i<slashCount;i++)
-                        {
-                            newUrl = newUrl + url.split("/")[i] + "/";
-                            if (newUrl.endsWith("Home/")) {
-                                i = slashCount;
-                            }
-                        }
+                        var swapUrl = newUrl;
                         var addExtraIfNeeded = true;
                         if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-")) {
-                            newUrl = newUrl + "ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-","");
+                            swapUrl = swapUrl + "ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/Extension-UKCore-","");
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-")) {
-                            newUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-","");
+                            swapUrl = swapUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-","");
                             addExtraIfNeeded=false;
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-")) {
-                            newUrl = newUrl + "Terminology/AllValueSets/ValueSet-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-","");
+                            swapUrl = swapUrl + "Terminology/AllValueSets/ValueSet-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-","");
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-")) {
-                            newUrl = newUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-","");
+                            swapUrl = swapUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-","");
                         }
-                        newUrl= newUrl.replace(".xml","");
+                        swapUrl= swapUrl.replace(".xml","");
                         
                         let exampleVersion = "?" + url.split("?")[1];
                         if (exampleVersion.startsWith("?version=current") && addExtraIfNeeded){
                             exampleVersion = ".page.md" + exampleVersion;
                         }
-                        newUrl = newUrl + exampleVersion;
-                        $(this).attr("href", newUrl);
+                        swapUrl = swapUrl + exampleVersion;
+                        $(this).attr("href", swapUrl);
+                    }
+				});
+                
+                $('a[href$="json"]').each(function(index) {
+                    let urlReference = $(this)[0].href;
+                    if (urlReference.includes("https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-"))
+                    {
+                        var profileName =  $(this)[0].innerText;
+                        if (ukCoreProfiles.indexOf(profileName) > -1) {
+                            var swapUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (draftProfiles.indexOf(profileName) > -1) {
+                            var swapUrl = "https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (baseDataTypes.indexOf(profileName) > -1) {
+                            var swapUrl = "https://hl7.org/fhir/R4/datatypes.html#" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (metaDataTypes.indexOf(profileName) > -1) {
+                            var swapUrl = "https://hl7.org/fhir/R4/metadatatypes.html#" + profileName;
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Reference") {
+                            var swapUrl = "https://hl7.org/fhir/R4/references.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Extension") {
+                            var swapUrl = "https://hl7.org/fhir/R4/extensibility.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Dosage") {
+                            var swapUrl = "https://hl7.org/fhir/R4/dosage.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "BackboneElement") {
+                            var swapUrl = "https://hl7.org/fhir/R4/backboneelement.html";
+                            $(this).attr("href", swapUrl);
+                        } else if (profileName == "Resource") {
+                            var swapUrl = "https://hl7.org/fhir/R4/resourcelist.html";
+                            $(this).attr("href", swapUrl);
+                        }
+                        
+                        
+                    }
+				});
+
+                $('a[href="https://hl7.org/fhir/R4/references.html"]').each(function(index) {
+                    let parentObj = $(this).parent();
+                    if (parentObj.prop("tagName") == "P" || parentObj.prop("tagName") == "TD")
+                    {
+                        if (parentObj.find('a[href*="Profile-UKCore-"]') != undefined && parentObj.find('a[href*="Profile-UKCore-"]').length > 0) {
+                            parentObj.find('span:contains(")")')[0].innerText = ") or UK Core equivalent profile."
+                        }
                     }
 				});
 			}
@@ -586,7 +853,7 @@
                             for (i=0;i<slashCount;i++)
                             {
                                 newUrl = newUrl + url.split("/")[i] + "/";
-                                if (newUrl.endsWith("Home/")) {
+                                if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
                                     i = slashCount;
                                 }
                             }
@@ -636,16 +903,25 @@
                 for (i=0;i<slashCount;i++)
                 {
                     newUrl = newUrl + pageUrl.split("/")[i] + "/";
-                    if (newUrl.endsWith("Home/")) {
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
                         i = slashCount;
                     }
                 }
                 if (newUrl.endsWith("/")) {
                     newUrl = newUrl.slice(0, -1);
                 }
-                if (!newUrl.endsWith("Home")) {
+                if (!(newUrl.endsWith("Home") || newUrl.endsWith("home"))) {
                     newUrl = newUrl + "/Home";
                 }
+                $("a#header-contactus").each(function(index) {
+                    let destUrl = $(this)[0].href;
+                    let destVersion = "?" + destUrl.split("?")[1];
+                    destUrl = newUrl + "/ContactUs" + destVersion;
+                    if (pageVersion.startsWith("?version=current")){
+                        destUrl = destUrl.replace(destVersion, ".page.md" + pageVersion);
+                    }
+                    $(this).attr("href", destUrl) ;
+				});
                 $("a#footer-sitemap").each(function(index) {
                     let destUrl = $(this)[0].href;
                     let destVersion = "?" + destUrl.split("?")[1];
@@ -709,9 +985,10 @@
                     //and only expand if its collpased
                     if (c) {
                         //look inside this tr, and basically, if its not a backbone element, check if we should expand
-                        var rowCellHtml = e.children[3].innerText;
+                        var elementDataType = e.children[3].innerText;
+                        var elementName = e.children[0].innerText;
                         // Identifier/Reference - if sliced/different or has an Extension, expand
-                        if (rowCellHtml == "Identifier" || rowCellHtml.startsWith("Reference") )
+                        if (elementDataType == "Identifier" || elementDataType.startsWith("Reference") )
                         {
                             if (s) {
                                 doExpand = true;
@@ -722,14 +999,16 @@
                                     doExpand = true;
                                })
                             }
-                        } else if (rowCellHtml =="Coding" || rowCellHtml =="Annotation" || rowCellHtml.startsWith("Address")  || rowCellHtml.startsWith("ContactPoint") || rowCellHtml.startsWith("Extension(")) {
+                        } else if (elementDataType =="Coding" || elementDataType =="Annotation" || elementDataType.startsWith("Address")  || elementDataType.startsWith("ContactPoint") || elementDataType.startsWith("Extension(")) {
                             //Coding/Annotation/Address/ContactPoint/Extension(Complex)
-                            //only expand if sliced 
-                            if (s) 
+                            //only expand if sliced
+                            if (s && elementName != "(All Slices)")
                                 doExpand = true;
-                        } else if ((rowCellHtml == "" || rowCellHtml == null)) {
+                            if (!s && e.querySelector("span.individualSlice") != undefined)
+                                doExpand = true;
+                        } else if ((elementDataType == "" || elementDataType == null)) {
                                 //a value[x] style element, expand if modified
-                                if (m)
+                                if (m && elementName !="(All Slices)")
                                     doExpand = true;
                         } else {
                                 //expand anything else (top level extension, backboneelement)
@@ -973,6 +1252,25 @@
                 }
                 return lastCapitalFound;
             }
+            function stripAssetNameFromSideBar() {
+                $('div.col-md-6 ul.nav li a').each(function(index) {
+                    if ($(this)[0].text.startsWith("Example UKCore-Extension-")) {
+                        $(this)[0].text = $(this)[0].text.replace("Example UKCore-Extension-", "");
+                    }
+                    if ($(this)[0].text.startsWith("Example UKCore-")) {
+                        $(this)[0].text = $(this)[0].text.replace("Example UKCore-", "");
+                    }
+                    if ($(this)[0].text.startsWith("ValueSet UKCore-")) {
+                        $(this)[0].text = $(this)[0].text.replace("ValueSet UKCore-", "");
+                    }
+                    if ($(this)[0].text.startsWith("CodeSystem UKCore-")) {
+                        $(this)[0].text = $(this)[0].text.replace("CodeSystem UKCore-", "");
+                    }
+                    if ($(this)[0].text.startsWith("Extension UKCore-")) {
+                        $(this)[0].text = $(this)[0].text.replace("Extension UKCore-", "");
+                    }
+                });
+            }
         </script>
         <script>
         
@@ -1019,6 +1317,7 @@
                 // set role on table view
                 $('div.path table').each(function(index) {
                     $(this).attr("role","presentation");
+                    $(this).attr("title","Table View");
                 });
                 //set title on FQL generated tables, ideally from the first column of the thead
                 $('table.table.table-bordered.assets.forceWhite').each(function(index) {
@@ -1038,6 +1337,8 @@
                 var iJSONCount=0;
                 var iExamplesCount=0;
                 var iUsageCount=0;
+                var iDetailedCount=0;
+                var iFeedbackCount=0;
                 $('div.tabcontent').each(function(index) {
                     if ($(this).attr("id") == "HTML View") {
                         iHTMLCount++;
@@ -1060,6 +1361,12 @@
                     } else if ($(this).attr("id") == "Usage") {
                         iUsageCount++;
                         $(this).attr("id","Usage" + iUsageCount);
+                    } else if ($(this).attr("id") == "Detailed") {
+                        iDetailedCount++;
+                        $(this).attr("id","Detailed" + iDetailedCount);
+                    } else if ($(this).attr("id") == "Feedback") {
+                        iFeedbackCount++;
+                        $(this).attr("id","Feedback" + iFeedbackCount);
                     }
                 });
                 // set unique id on all transposed fl table divs
@@ -1070,7 +1377,7 @@
                 });
                 //loop through all div's with id's
                 $('div').each(function(index) { 
-                    if ($(this).attr("id") != undefined) {
+                    if ($(this).attr("id") != undefined && $(this).attr("id") != "preview-content") {
                         // look for an h2, with either a matching id or page-title
                         // and update it to be unique
                         var sectionHeading = $(this).find("h2");
@@ -1079,6 +1386,10 @@
                                 sectionHeading.attr("id", sectionHeading.attr("id") + "-sectionheading");
                             } else if (sectionHeading.attr("id") == "page-title") {
                                 sectionHeading.attr("id", $(this).attr("id") + "-sectionheading");
+                            }
+                            var basedetails = $(this).find("div#elementdetails");
+                            if (basedetails != undefined && basedetails.length > 0){
+                                basedetails.attr("id", $(this).attr("id") + "-elementdetails");
                             }
                         }
                         //if the div is renderParent, shift its title into the alt of the img it contains
@@ -1090,6 +1401,102 @@
                     }
                 });
             }
+        </script>
+        
+        <script>
+            //code finds sub elements page
+            // and looks for the base details box table
+            function alterBaseElementOverrides() {
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    var profileName = hasSDH1[0].innerText.split("-")[2];
+                    var listOfElements = $('table.dict tbody tr td.structure')
+                    var allRows = $('table.dict tbody tr')
+                    var fromRow, toRow
+                    var lookFor
+                    var box
+
+                    $("div h2").each(function(index) {
+                        //sub element pages always have a lower case starting letter, profile, bindings etc are uppper case
+                        var headerText = $(this)[0].innerText
+                        var firstLetter = headerText.charAt(0);
+                        if (firstLetter === firstLetter.toLowerCase() && !headerText.startsWith("extension:")) {
+                            lookFor = profileName  + "." + headerText
+$('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert"><table class="dict baseFhir" title="Element Details"><tbody></tbody></table></div>').insertAfter($(this))
+			$(this)[0].innerHTML = "<code onclick='toggleCoreDetailsVisibility(this,false);return false;'>" + headerText + "</code>";
+                            box = $(this)[0].parentElement.querySelector("div[id$='elementdetails']");
+                            box.style.display = "none";
+                            for (var elementLoop = 0, elementCount = listOfElements.length-1; elementLoop <= elementCount; elementLoop++) {
+                                if (listOfElements[elementLoop].innerText == lookFor) {
+                                    fromRow = listOfElements[elementLoop].parentElement.rowIndex
+                                    if (elementLoop == elementCount) {
+                                        toRow = allRows.length-1
+                                    } else {
+                                        toRow = listOfElements[elementLoop+1].parentElement.rowIndex - 1
+                                    }
+                                    for (var rowLoop = fromRow; rowLoop <= toRow; rowLoop++) {
+                                       box.querySelector("table tbody").append(allRows[rowLoop].cloneNode(true))
+                                    }
+                                }
+                            }
+                        }                   
+                    });
+                }
+            }
+            //function flips valueset expansion table visibility
+            function toggleCoreDetailsVisibility(anchor,force) {
+                var detailsBox;
+                if (anchor.nodeName == "CODE") {
+                    detailsBox = anchor.parentElement.parentElement.querySelector("div[id$='elementdetails']");
+                } else if (anchor.nodeName == "H2") {
+                    detailsBox = anchor.parentElement.querySelector("div[id$='elementDetails']");
+                } else if (anchor.nodeName == "LI") {
+                    detailsBox =  anchor.parentElement.parentElement.parentElement.querySelector("div[id='" + anchor.querySelector("a").getAttribute("href").replace("#","") + "-elementdetails']");
+                } else if (anchor.nodeName == "SPAN") {
+                    detailsBox =  document.querySelector("div[id='" + anchor.innerText + "-elementdetails']");
+                
+                }
+                if (detailsBox != undefined){
+                    if (detailsBox.style.display == 'none' || force == true) {
+                        detailsBox.style.display = "block";
+                    } else {
+                        detailsBox.style.display = "none";
+                    }
+                }
+            }
+            function sidebarClickAndOpen() {
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    $('ul.nav-stacked li').each(function(index) {               
+                        var firstLetter = $(this)[0].innerText.charAt(0);
+                        if (firstLetter != "" && firstLetter === firstLetter.toLowerCase()) {
+                            $(this)[0].addEventListener('click', function(){
+                                toggleCoreDetailsVisibility(this, true);
+                                return false;
+                            });
+                        }
+                    });
+                }
+            }
+            function redirectTreeviewElementsToPage() {
+                //loop thru all spans in the tree
+                $('div.treetable-left-panel table.treetable tbody tr td.profile:first-child').each(function(index) {
+                    $(this).find('span:not([class]), span.constraints').each(function(index) {          
+                        var elementName = $(this)[0].innerText;   
+                        var divToFind = $("div[id='" + elementName + "-elementdetails']");
+                        if (divToFind != undefined && divToFind.length > 0){
+                            var pinPanel = $(this).parent().parent().find('td.details');
+                            if (pinPanel != undefined && pinPanel.length > 0){
+                                $('<p><a href="#'+elementName+'">View UK Core Guidance</a></p>').insertAfter(pinPanel.find("div:not([class]) pre"))
+                            }
+                        }
+                    });
+                });
+            }
+        </script>
+        <script>
 
             //removes any development notice and footer if its being rendered in an iframe
             function pageInIframe() {
@@ -1104,9 +1511,9 @@
             $(function() {
                 fixTemplatingIssues();
                 transposeFQLTables();
-                detablifyUsageFQL();
+                //detablifyUsageFQL();
                 tidyUpFQLTables();
-                highlightBallotItems();
+                //highlightBallotItems();
                 createProfileSubMenus();
                 createTerminologySeparator();
                 swapReferenceExampleLinks();
@@ -1117,12 +1524,65 @@
                 alterValueSetTables();
                 swapProfileTreeLinks();
                 addCodesSortButton();
+                stripAssetNameFromSideBar();
+                findCodeSystemURLS();
                 wrapSideBar();
                 pageInIframe();
-                //fixWebAccessibility();
+                alterBaseElementOverrides();
+                sidebarClickAndOpen();
+                fixWebAccessibility();
+                redirectTreeviewElementsToPage();
+                handleSubMenuEvents();
+                setInitialDropdownState();
                 updateFooterPosition();
             });
         </script>
-    </body>
+
+<!-- <script type="text/javascript" src="{{content}}/{{style-folder}}/content/assets/js/clipboard.min.js"> </script> -->
+  <script type="text/javascript">
+/*!
+ * clipboard.js v2.0.8
+ * https://clipboardjs.com/
+ *
+ * Licensed MIT © Zeno Rocha
+ */
+ !function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.ClipboardJS=e():t.ClipboardJS=e()}(this,function(){return n={686:function(t,e,n){"use strict";n.d(e,{default:function(){return o}});var e=n(279),i=n.n(e),e=n(370),u=n.n(e),e=n(817),c=n.n(e);function a(t){try{return document.execCommand(t)}catch(t){return}}var f=function(t){t=c()(t);return a("cut"),t};var l=function(t){var e,n,o,r=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{container:document.body},i="";return"string"==typeof t?(e=t,n="rtl"===document.documentElement.getAttribute("dir"),(o=document.createElement("textarea")).style.fontSize="12pt",o.style.border="0",o.style.padding="0",o.style.margin="0",o.style.position="absolute",o.style[n?"right":"left"]="-9999px",n=window.pageYOffset||document.documentElement.scrollTop,o.style.top="".concat(n,"px"),o.setAttribute("readonly",""),o.value=e,o=o,r.container.appendChild(o),i=c()(o),a("copy"),o.remove()):(i=c()(t),a("copy")),i};function r(t){return(r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var s=function(){var t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{},e=t.action,n=void 0===e?"copy":e,o=t.container,e=t.target,t=t.text;if("copy"!==n&&"cut"!==n)throw new Error('Invalid "action" value, use either "copy" or "cut"');if(void 0!==e){if(!e||"object"!==r(e)||1!==e.nodeType)throw new Error('Invalid "target" value, use a valid Element');if("copy"===n&&e.hasAttribute("disabled"))throw new Error('Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute');if("cut"===n&&(e.hasAttribute("readonly")||e.hasAttribute("disabled")))throw new Error('Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes')}return t?l(t,{container:o}):e?"cut"===n?f(e):l(e,{container:o}):void 0};function d(t){return(d="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function p(t,e){for(var n=0;n<e.length;n++){var o=e[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(t,o.key,o)}}function y(t,e){return(y=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function h(n){var o=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(Reflect.construct(Date,[],function(){})),!0}catch(t){return!1}}();return function(){var t,e=m(n);return t=o?(t=m(this).constructor,Reflect.construct(e,arguments,t)):e.apply(this,arguments),e=this,!(t=t)||"object"!==d(t)&&"function"!=typeof t?function(t){if(void 0!==t)return t;throw new ReferenceError("this hasn't been initialised - super() hasn't been called")}(e):t}}function m(t){return(m=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function v(t,e){t="data-clipboard-".concat(t);if(e.hasAttribute(t))return e.getAttribute(t)}var o=function(){!function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&y(t,e)}(r,i());var t,e,n,o=h(r);function r(t,e){var n;return function(t){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this),(n=o.call(this)).resolveOptions(e),n.listenClick(t),n}return t=r,n=[{key:"copy",value:function(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{container:document.body};return l(t,e)}},{key:"cut",value:function(t){return f(t)}},{key:"isSupported",value:function(){var t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:["copy","cut"],t="string"==typeof t?[t]:t,e=!!document.queryCommandSupported;return t.forEach(function(t){e=e&&!!document.queryCommandSupported(t)}),e}}],(e=[{key:"resolveOptions",value:function(){var t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{};this.action="function"==typeof t.action?t.action:this.defaultAction,this.target="function"==typeof t.target?t.target:this.defaultTarget,this.text="function"==typeof t.text?t.text:this.defaultText,this.container="object"===d(t.container)?t.container:document.body}},{key:"listenClick",value:function(t){var e=this;this.listener=u()(t,"click",function(t){return e.onClick(t)})}},{key:"onClick",value:function(t){var e=t.delegateTarget||t.currentTarget,t=s({action:this.action(e),container:this.container,target:this.target(e),text:this.text(e)});this.emit(t?"success":"error",{action:this.action,text:t,trigger:e,clearSelection:function(){e&&e.focus(),document.activeElement.blur(),window.getSelection().removeAllRanges()}})}},{key:"defaultAction",value:function(t){return v("action",t)}},{key:"defaultTarget",value:function(t){t=v("target",t);if(t)return document.querySelector(t)}},{key:"defaultText",value:function(t){return v("text",t)}},{key:"destroy",value:function(){this.listener.destroy()}}])&&p(t.prototype,e),n&&p(t,n),r}()},828:function(t){var e;"undefined"==typeof Element||Element.prototype.matches||((e=Element.prototype).matches=e.matchesSelector||e.mozMatchesSelector||e.msMatchesSelector||e.oMatchesSelector||e.webkitMatchesSelector),t.exports=function(t,e){for(;t&&9!==t.nodeType;){if("function"==typeof t.matches&&t.matches(e))return t;t=t.parentNode}}},438:function(t,e,n){var u=n(828);function i(t,e,n,o,r){var i=function(e,n,t,o){return function(t){t.delegateTarget=u(t.target,n),t.delegateTarget&&o.call(e,t)}}.apply(this,arguments);return t.addEventListener(n,i,r),{destroy:function(){t.removeEventListener(n,i,r)}}}t.exports=function(t,e,n,o,r){return"function"==typeof t.addEventListener?i.apply(null,arguments):"function"==typeof n?i.bind(null,document).apply(null,arguments):("string"==typeof t&&(t=document.querySelectorAll(t)),Array.prototype.map.call(t,function(t){return i(t,e,n,o,r)}))}},879:function(t,n){n.node=function(t){return void 0!==t&&t instanceof HTMLElement&&1===t.nodeType},n.nodeList=function(t){var e=Object.prototype.toString.call(t);return void 0!==t&&("[object NodeList]"===e||"[object HTMLCollection]"===e)&&"length"in t&&(0===t.length||n.node(t[0]))},n.string=function(t){return"string"==typeof t||t instanceof String},n.fn=function(t){return"[object Function]"===Object.prototype.toString.call(t)}},370:function(t,e,n){var f=n(879),l=n(438);t.exports=function(t,e,n){if(!t&&!e&&!n)throw new Error("Missing required arguments");if(!f.string(e))throw new TypeError("Second argument must be a String");if(!f.fn(n))throw new TypeError("Third argument must be a Function");if(f.node(t))return c=e,a=n,(u=t).addEventListener(c,a),{destroy:function(){u.removeEventListener(c,a)}};if(f.nodeList(t))return o=t,r=e,i=n,Array.prototype.forEach.call(o,function(t){t.addEventListener(r,i)}),{destroy:function(){Array.prototype.forEach.call(o,function(t){t.removeEventListener(r,i)})}};if(f.string(t))return t=t,e=e,n=n,l(document.body,t,e,n);throw new TypeError("First argument must be a String, HTMLElement, HTMLCollection, or NodeList");var o,r,i,u,c,a}},817:function(t){t.exports=function(t){var e,n="SELECT"===t.nodeName?(t.focus(),t.value):"INPUT"===t.nodeName||"TEXTAREA"===t.nodeName?((e=t.hasAttribute("readonly"))||t.setAttribute("readonly",""),t.select(),t.setSelectionRange(0,t.value.length),e||t.removeAttribute("readonly"),t.value):(t.hasAttribute("contenteditable")&&t.focus(),n=window.getSelection(),(e=document.createRange()).selectNodeContents(t),n.removeAllRanges(),n.addRange(e),n.toString());return n}},279:function(t){function e(){}e.prototype={on:function(t,e,n){var o=this.e||(this.e={});return(o[t]||(o[t]=[])).push({fn:e,ctx:n}),this},once:function(t,e,n){var o=this;function r(){o.off(t,r),e.apply(n,arguments)}return r._=e,this.on(t,r,n)},emit:function(t){for(var e=[].slice.call(arguments,1),n=((this.e||(this.e={}))[t]||[]).slice(),o=0,r=n.length;o<r;o++)n[o].fn.apply(n[o].ctx,e);return this},off:function(t,e){var n=this.e||(this.e={}),o=n[t],r=[];if(o&&e)for(var i=0,u=o.length;i<u;i++)o[i].fn!==e&&o[i].fn._!==e&&r.push(o[i]);return r.length?n[t]=r:delete n[t],this}},t.exports=e,t.exports.TinyEmitter=e}},r={},o.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return o.d(e,{a:e}),e},o.d=function(t,e){for(var n in e)o.o(e,n)&&!o.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},o.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},o(686).default;function o(t){if(r[t])return r[t].exports;var e=r[t]={exports:{}};return n[t](e,e.exports,o),e.exports}var n,r});
+  </script>
+  <!-- <script type="text/javascript" src="{{content}}/{{style-folder}}/content/assets/js/clipboard-btn.js"> </script> -->
+  <script type="text/javascript">
+// Tooltip
+$('.btn-copy').tooltip({
+  trigger: 'hover',
+  placement: 'bottom' 
+});
+
+function setTooltip(message) {
+  button = $(event.target)
+  oldMsg = button.tooltip().attr('data-original-title')
+  button.tooltip()
+    .attr('data-original-title', message)
+    .tooltip('show');
+  setTimeout(function() {
+    button.tooltip()
+    .attr('data-original-title', oldMsg)
+    .tooltip('hide');
+  }, 1000);
+}
+
+// Clipboard
+
+var clipboard = new ClipboardJS('.btn-copy');
+
+clipboard.on('success', function(e) {
+  setTooltip('Copied!');
+});
+
+clipboard.on('error', function(e) {
+  setTooltip('Failed :( - copy manually');
+});
+  </script>
+
+  <script>function initCookieConsentBar(){!1!=$.areCookiesEnabled()&&((void 0===(level=(bar=document.getElementsByClassName("cookie-consent")[0]).dataset.level)||level>=50)&&(level=1),(void 0===(duration=bar.dataset.duration)||duration>8760)&&(duration=8),$.cookie("cookie-consent",level,36e5*duration),showCookieConsentBar())}function showCookieConsentBar(){bar=document.getElementsByClassName("cookie-consent")[0],button=document.getElementsByClassName("cookie-accept")[0],setEventListeners(),fadeIn(bar,250)}function setEventListeners(){void 0===(level=button.dataset.level)&&(level=50),(void 0===(duration=button.dataset.duration)||duration>8760)&&(duration=8),button.addEventListener("click",function(){$.cookie("cookie-consent",level,36e5*duration),fadeOut(bar,250)})}function fadeIn(e,o){var t=e.style;t.opacity=0,t.display="block",function e(){(t.opacity-=-.1)>.9||setTimeout(e,o/10)}()}function fadeOut(e,o){var t=e.style;t.opacity=1,function e(){(t.opacity-=.1)<.1?t.display="none":setTimeout(e,o/10)}()}$.areCookiesEnabled=function(){try{document.cookie="cookietest=1";var e=-1!=document.cookie.indexOf("cookietest=");return document.cookie="cookietest=1; expires=Thu, 01-Jan-1970 00:00:01 GMT",e}catch(o){return!1}},$.cookie=function(e,o,t){if(arguments.length<2){for(var n=document.cookie.split(";"),i=0;i<n.length;i++){var s=n[i].replace(/^\s+/,"");if(0==s.indexOf(e+"="))return decodeURIComponent(s.substring(e.length+1).split("+").join(" "))}return null}var a=new Date;a.setTime(a.getTime()+t),document.cookie=e+"="+encodeURIComponent(o)+(t?";expires="+a.toGMTString():"")+";path=/"},document.addEventListener("DOMContentLoaded",function(){var e=$.cookie("cookie-consent");console.log(e),null===e?initCookieConsentBar():e>0&&e<50&&showCookieConsentBar()});
+</script>
 
 </html>

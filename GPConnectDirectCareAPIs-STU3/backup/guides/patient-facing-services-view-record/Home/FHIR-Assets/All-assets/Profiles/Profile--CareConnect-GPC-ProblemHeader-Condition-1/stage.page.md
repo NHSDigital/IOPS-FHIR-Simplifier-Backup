@@ -4,8 +4,9 @@
 
 <span class="mro-circle optional" title="Optional"></span> Optional
 
-
 <h5><ins>Guidance</ins></h5>
+
+This element **SHALL NOT** be populated.
 
 Clinical stage or grade of a condition. May include formal severity assessments.
 

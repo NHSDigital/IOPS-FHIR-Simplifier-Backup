@@ -1,6 +1,6 @@
 ## <code>{{page-title}}</code>
 
-The resource referenced in `Specimen.note.authorReference` SHALL conform to one of the following:
+The resource referenced in `Specimen.note.authorReference` SHOULD conform to one of the following:
 
 - {{pagelink:Profile-Organization-94604}}
 - {{pagelink:Profile-Patient-88961}}

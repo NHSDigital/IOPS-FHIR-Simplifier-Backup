@@ -15,12 +15,12 @@ Observation codes linked to samples are pending addition to SNOMED-CT
 ### Mapping
 | Source Data item | Target FHIR Element | HL7v2.5.1 Mapping | Description 
 |--|--|
-|Raw specimen/biopsy - Id assigning authority ODS code (many)|Specimen.identifier.assigner|SPM-2.1.2|Authority who assigned the sample id (Eg. histopathology, SHIMDS, etc). Occurs multiple times.|
+|Raw specimen/biopsy - Id assigning authority ODS code (many)|Specimen.identifier.assigner|SPM-2.1.2|Authority who assigned the sample id (e.g. histopathology, SHIMDS, etc). Occurs multiple times.|
 |Raw specimen/biopsy - Is assigning authority a histopathology laboratory (many)|Derived from ODS - Specimen.identifier.assigner|Derived from ODS - SPM-2.1.2|Confirmation of an assigning authority ODS code being from a histopathology laboratory.|
 |Raw specimen/biopsy - Id (many)|Specimen.identifier.value|SPM-2|Id of sample provided linked to the previously stated assigning authority. Occurs multiple times.|
 |Raw specimen/biopsy - Sample well identifier|Specimen.container.identifier|SAC-3|Id of the sample well.|
 |Raw specimen/biopsy - Location details|Not in scope for FHIR r4, could use Specimen.note|SAC-15|Where a raw specimen/biopsy is in storage and not provided with a request.|
-|Raw specimen/biopsy - WGS specimen type category|Specimen.extension:state|SPM-5|WGS cancer high level category for the specimen.|
+|Raw specimen/biopsy - WGS specimen type category|Specimen.extension:sampleCategory|SPM-5|WGS cancer high level category for the specimen.|
 |Raw specimen/biopsy - Type|Specimen.type|SPM-4|Tissue of origin.|
 |Raw specimen/biopsy - State|Specimen.condition|SPM-24|How has the specimen been preserved/fixed. **Note: The ValueSet for this field is pending review to align with MDSv1.0**|
 |Raw specimen/biopsy - Sample preparation (submitted to GLH)|Specimen.processing|Combination of SPM-6/SPM-24 or NTE segments if other processing|How has the specimen has been prepared for the GLH.|
@@ -28,18 +28,18 @@ Observation codes linked to samples are pending addition to SNOMED-CT
 |Raw specimen/biopsy - Blood component|Specific codes under Specimen.type|SPM-4|For a blood specimen, confirmation of which blood component the specimen consists of.|
 |Raw specimen/biopsy - Received date|Specimen.receivedTime|SPM-18|Date at which a specimen was received at a laboratory.|
 |Raw specimen/biopsy - High risk reason|Specimen.collection.extension:specimen-specialHandling.valueCoding.code|SPM-16.2|The high contamination risk reason for a sample/biopsy.|
-|Raw specimen/biopsy - Solid tumour morphology|BodyStructure.morphology(patient=Patient)|Additional SPM-4/5 qualifiers|The histology and likely course of development of a tumour.|
+|Raw specimen/biopsy - Solid tumour morphology|BodyStructure.morphology( patient=Patient )|Additional SPM-4/5 qualifiers|The histology and likely course of development of a tumour.|
 |Raw specimen/biopsy - Solid tumour histological type (topography)|BodyStructure.location(patient=Patient)|SPM-8|The patient's solid tumour histological type (topography), where the tumour arose.|
 |Raw specimen/biopsy - Biopsy site|Specimen.collection.bodySite|SPM-8/SPM-9|Site of biopsy.|
-|Raw specimen/biopsy - Skin/Bone affected status|Observation.valueBoolean (code=22201000087104,specimen=Specimen), assume unaffected if not provided|OBX segment with appropriate code|If the skin or bone provided is unaffected or affected.|
-|Raw specimen/biopsy - Blasts %|Observation.code(code=1022601000000101,specimen=Specimen)|OBX segment with appropriate code|Blast count in the specimen/biopsy (Haemonc) - sourced at local SIHMDS.|
-|Raw specimen/biopsy - Neoplastic cell content (%)|Observation.code(code=444901007 (**TBC**), specimen=Specimen)|OBX segment with appropriate code|Neoplastic cell content in the specimen/biopsy (Solid Tumour) - sourced at local lab. (%)|
-|Raw specimen/biopsy - Necrosis|Observation.code(code=6574001 (**TBC**), specimen=Specimen)|OBX segment with appropriate code|% necrotic cells in specimen volume.|
-|Raw specimen/biopsy - Nucleated cell count|Observation.code(code=1022461000000100, specimen=Specimen)|OBX segment with appropriate code|Nucleated cell count in the specimen/biopsy (Solid Tumour and Haem-Onc).|
-|Raw specimen/biopsy - Tumour cellularity|Observation.code(code=**TBC**, specimen=Specimen)|The proportion which is tumour nuclei.|
+|Raw specimen/biopsy - Skin/Bone affected status|Observation.valueBoolean ( code=22201000087104, specimen=Specimen ), assume unaffected if not provided|OBX segment with appropriate code|If the skin or bone provided is unaffected or affected.|
+|Raw specimen/biopsy - Blasts %|Observation.code( code=1022601000000101, specimen=Specimen )|OBX segment with appropriate code|Blast count in the specimen/biopsy (Haemonc) - sourced at local SIHMDS.|
+|Raw specimen/biopsy - Neoplastic cell content (%)|Observation.code( code=444901007 (**TBC**), specimen=Specimen )|OBX segment with appropriate code|Neoplastic cell content in the specimen/biopsy (Solid Tumour) - sourced at local lab. (%)|
+|Raw specimen/biopsy - Necrosis|Observation.code( code=6574001 (**TBC**), specimen=Specimen )|OBX segment with appropriate code|% necrotic cells in specimen volume.|
+|Raw specimen/biopsy - Nucleated cell count|Observation.code( code=1022461000000100, specimen=Specimen )|OBX segment with appropriate code|Nucleated cell count in the specimen/biopsy (Solid Tumour and Haem-Onc).|
+|Raw specimen/biopsy - Tumour cellularity|Observation.code( code=**TBC**, specimen=Specimen )|The proportion which is tumour nuclei.|
 |Raw specimen/biopsy - Volume|Specimen.collection.quantity|SPM-12|Volume of provided sample.|
-|Raw specimen/biopsy - Taken alive/post mortem|Observation.valueBoolean (code=839021000000109,specimen=Specimen), true=post-mortem sample, assume taken alive if not provided|OBX segment with appropriate code|If a sample/biopsy was taken when the patient was alive or deceased.|
-|Raw specimen/biopsy - Maternal cell contamination (MCC)|Observation.valueBoolean (code=726741007,specimen=Specimen), assume no MCC if not provided|OBX segment with appropriate code|Confirmation if MCC has been excluded from sample.|
+|Raw specimen/biopsy - Taken alive/post mortem|Observation.valueBoolean( code=839021000000109, specimen=Specimen ), true=post-mortem sample, assume taken alive if not provided|OBX segment with appropriate code|If a sample/biopsy was taken when the patient was alive or deceased.|
+|Raw specimen/biopsy - Maternal cell contamination (MCC)|Observation.valueBoolean( code=726741007, specimen=Specimen ), assume no MCC if not provided|OBX segment with appropriate code|Confirmation if MCC has been excluded from sample.|
 |Raw specimen/biopsy - Family member provided by|Specimen.subject|PID segment attached to SPM|Which family member the specimen is provided by.|
 |Raw specimen/biopsy - Option for products of conception|Additional Specimen.collection.extension:specimen-specialHandling with appropriate code/text|SPM-15|Future management for products of conception.|
 |Raw specimen/biopsy - Sample to follow|N/A implied through absence of Specimen in Test Order message, or Specimen.status=unavailable and missing Specimen.collection.collectedDateTime samples ordered but not collected|N/A implied through absence of SPM segment in test order|Confirmation that the sample will be sent separately to, and after the test request.|

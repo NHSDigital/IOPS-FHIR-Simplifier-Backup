@@ -6,6 +6,6 @@
 
 <i class="fa fa-link"></i> [CareConnect-GPC-MedicationStatement-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1)
 
-<i class="fa fa-link"></i> [UKCore-MedicationStatement](https://simplifier.net/guide/HL7FHIRUKCoreR4Release1/Home/ProfilesandExtensions/ProfileUKCore-MedicationStatement?version=current)
+<i class="fa fa-link"></i> [UKCore-MedicationStatement](https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/Home/ProfilesandExtensions/Profile-UKCore-MedicationStatement)
 
 ---

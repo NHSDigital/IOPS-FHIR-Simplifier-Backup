@@ -9,60 +9,11 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AverageB
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Profile added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-AverageBloodPressure/~issues?level=File">Report Issue for UKCore-Observation-AverageBloodPressure<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-AverageBloodPressure/~issues?level=File">Report Issue for UKCore-Observation-AverageBloodPressure</a>.
 </div>
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationAverageBloodPressure'
-select
-	Canonical_URL: url,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationAverageBloodPressure'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
-<div class="tab fhirTree">
- <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
-</div>
-
-<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
-{{tree, buttons}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json}}
-</div>
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -110,6 +61,11 @@ from
 	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AverageBloodPressure'
 ```
 </span>
+</div>
+
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-AverageBloodPressure/~issues?level=File">Report Issue for UKCore-Observation-AverageBloodPressure</a>.
 </div>
 </nocheck>
 
@@ -163,7 +119,7 @@ The minimum viable content that all provider and consumer systems SHALL support 
 <td>A measurement method SHOULD be present.</td>
 </tr>
 <tr>
-<td><code>Observation.component.copde.coding</code></td>
+<td><code>Observation.component.code.coding</code></td>
 <td>An average systolic blood pressure measurement SHALL be present, and that SHALL have a SNOMED CT concept for the systolic blood pressure observation.
 <br>An average diastolic blood pressure measurement SHOULD be present, and that SHALL have a SNOMED CT concept for the diastolic blood pressure observation.
 </td>

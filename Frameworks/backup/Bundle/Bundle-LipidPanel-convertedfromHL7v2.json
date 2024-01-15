@@ -1,0 +1,504 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:f25327a9-c7a3-46ca-89bb-5873c42758b4",
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "https://fhir.example.org/NISTMPI",
+            "value": "PATID1234"
+          }
+        ],
+        "name": [
+          {
+            "family": "Jones",
+            "given": [
+              "William"
+            ]
+          }
+        ],
+        "birthDate": "1961-06-27"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7292a141-b08c-45f3-86d0-cd3675e8048b",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PLAC"
+                }
+              ]
+            },
+            "value": "ORD777888"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "FILL"
+                }
+              ]
+            },
+            "value": "R-220713"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "code": "24331-1",
+              "display": "Lipid 1996 panel in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:f25327a9-c7a3-46ca-89bb-5873c42758b4"
+        },
+        "requester": {
+          "identifier": {
+            "value": "5742200012"
+          },
+          "display": "Nicholas Radon"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9cda10f4-cb58-4b7f-ab9b-54cc896518d7",
+      "resource": {
+        "resourceType": "Specimen",
+        "identifier": [
+          {
+            "value": "S2015-777888"
+          }
+        ],
+        "accessionIdentifier": {
+          "value": "S-220713-1"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "119297000",
+              "display": "BLD"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:f25327a9-c7a3-46ca-89bb-5873c42758b4"
+        },
+        "collection": {
+          "collectedDateTime": "2015-09-25T00:00:00+00:00"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Specimen"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0c97ad96-ee58-4975-93cb-191d96d2c48d",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note",
+            "valueAnnotation": {
+              "text": "Patient was fasting prior to the procedure."
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "value": "ORD777888-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "urn:uuid:7292a141-b08c-45f3-86d0-cd3675e8048b",
+            "type": "ServiceRequest",
+            "identifier": {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PLAC"
+                  }
+                ]
+              },
+              "value": "ORD777888"
+            }
+          },
+          {
+            "type": "ServiceRequest",
+            "identifier": {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "FILL"
+                  }
+                ]
+              },
+              "value": "R-220713"
+            }
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "24331-1",
+              "display": "Lipid 1996 panel in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:f25327a9-c7a3-46ca-89bb-5873c42758b4"
+        },
+        "effectiveDateTime": "2015-09-25T00:00:00+00:00",
+        "specimen": [
+          {
+            "reference": "urn:uuid:9cda10f4-cb58-4b7f-ab9b-54cc896518d7"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:cbc0f474-2cc7-4880-a4fa-c06219cf58b5"
+          },
+          {
+            "reference": "urn:uuid:b1eb5f9d-7da2-4cdc-9bc9-6f24766b3c82"
+          },
+          {
+            "reference": "urn:uuid:e1695f75-e2d6-4181-bf2c-6daa3eb090a3"
+          },
+          {
+            "reference": "urn:uuid:ad1db5ef-8c5e-4d17-b687-d219154482f3"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DiagnosticReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cbc0f474-2cc7-4880-a4fa-c06219cf58b5",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "value": "ORD777888-1-1"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:f25327a9-c7a3-46ca-89bb-5873c42758b4"
+        },
+        "effectiveDateTime": "2015-09-25T00:00:00+00:00",
+        "performer": [
+          {
+            "display": "Century Hospital"
+          },
+          {
+            "identifier": {
+              "value": "5432178916"
+            },
+            "display": "Dr. Phil Knowsalot"
+          }
+        ],
+        "valueQuantity": {
+          "value": 196,
+          "unit": "milligrams per deciliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "text": "Recommended: <200; Moderate Risk: 200-239 ; High Risk: >240"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b1eb5f9d-7da2-4cdc-9bc9-6f24766b3c82",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "value": "ORD777888-1-2"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2571-8",
+              "display": "Triglyceride [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:f25327a9-c7a3-46ca-89bb-5873c42758b4"
+        },
+        "effectiveDateTime": "2015-09-25T00:00:00+00:00",
+        "performer": [
+          {
+            "display": "Century Hospital"
+          },
+          {
+            "identifier": {
+              "value": "5432178916"
+            },
+            "display": "Dr. Phil Knowsalot"
+          }
+        ],
+        "valueQuantity": {
+          "value": 100,
+          "unit": "milligrams per deciliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "text": "40 to 160"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e1695f75-e2d6-4181-bf2c-6daa3eb090a3",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "value": "ORD777888-1-3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:f25327a9-c7a3-46ca-89bb-5873c42758b4"
+        },
+        "effectiveDateTime": "2015-09-25T00:00:00+00:00",
+        "performer": [
+          {
+            "display": "Century Hospital"
+          },
+          {
+            "identifier": {
+              "value": "5432178916"
+            },
+            "display": "Dr. Phil Knowsalot"
+          }
+        ],
+        "valueQuantity": {
+          "value": 60,
+          "unit": "milligrams per deciliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "text": "29 to 72"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ad1db5ef-8c5e-4d17-b687-d219154482f3",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "value": "ORD777888-1-4"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2089-1",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:f25327a9-c7a3-46ca-89bb-5873c42758b4"
+        },
+        "effectiveDateTime": "2015-09-25T00:00:00+00:00",
+        "performer": [
+          {
+            "display": "Century Hospital"
+          },
+          {
+            "identifier": {
+              "value": "5432178916"
+            },
+            "display": "Dr. Phil Knowsalot"
+          }
+        ],
+        "valueQuantity": {
+          "value": 116,
+          "unit": "milligrams per deciliter",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "N",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "text": "Recommended: <130; Moderate Risk: 130-159; High Risk: >160"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}

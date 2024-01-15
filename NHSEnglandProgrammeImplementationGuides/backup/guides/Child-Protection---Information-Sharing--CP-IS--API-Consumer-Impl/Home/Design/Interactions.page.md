@@ -45,7 +45,7 @@ The patient's NHS Number. This must be a verified NHS Number.
 
 **Http query**
 
-**<font color="#00008B">GET</font>** /AuditEvent?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|[nhs-number]
+**<font color="#00008B">GET</font>** /AuditEvent?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|[nhs-number]&_include=AuditEvent:entity-type=http://terminology.hl7.org/CodeSystem/v3-RoleClass|ASSIGNED
 
 **Parameters**
 
@@ -61,6 +61,9 @@ The patient's NHS Number. This must be a verified NHS Number.
 - IsUnscheduledAccessEvent: [boolean]
 
 
+**Conformance**
+
+The Consumer API SHALL request Access History information using idiomatic, restful [FHIR search-with-includes](http://hl7.org/fhir/r4/search.html#revinclude) pattern.
 
 <br>
 {{render:cpis-get-auditevent-consumer}}

@@ -1,5 +1,5 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to the following {{pagelink:Profile-ImagingStudy-72492}}.
+The resource being referenced SHOULD conform to the following [UKCore-ImagingStudy (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-ImagingStudy?version=current).
 
 ---

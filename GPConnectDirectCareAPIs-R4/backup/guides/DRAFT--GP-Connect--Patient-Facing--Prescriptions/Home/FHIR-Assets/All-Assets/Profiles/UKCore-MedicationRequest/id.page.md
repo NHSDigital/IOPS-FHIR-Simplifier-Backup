@@ -18,7 +18,6 @@
 </table>
 
 
-
 The logical `identifier` of the `MedicationRequest` resource.
 
 #### Example

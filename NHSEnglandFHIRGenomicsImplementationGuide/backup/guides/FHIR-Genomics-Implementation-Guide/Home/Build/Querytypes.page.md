@@ -1,3 +1,0 @@
-## {{page-title}}
-
-Query types supported by the API are defined within the {{pagelink:Home/FHIRAssets/CapabilityStatements/Instance.page.md}} CapabilityStatement. From initial design work, it is expected the main use case will be labs and requesters polling the central service for test orders and reports, including associated clinical information, as well as polling the system for the current state of Tasks and Task update history, through associated AuditEvents and Provenance resources.

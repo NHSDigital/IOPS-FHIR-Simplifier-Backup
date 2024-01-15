@@ -4,11 +4,6 @@ topic: Profile-DiagnosticReport-54417
 
 # StructureDefinition-UKCore-DiagnosticReport
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This Profile underwent Clinical and Technical Assurance during Sprint 6. This is a new Profile added to UK Core and should undergo review in this STU2 ballot.
-</div>
-
 <div id="transpose">
 @```
 from
@@ -82,7 +77,7 @@ select
   {{pagelink:Example-UKCore-DiagnosticReport-Extension-Note}}
   <br><br>
   <b>Diagnostic Studies Report</b> - An example to illustrate a diagnostic studies report containing a specimen and observation for a patient.<br/>
-{{pagelink:Example-UKCore-DiagnosticReport-DiagnosticStudiesReport}}
+{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}
 <br><br>
  <b>Device Reference</b> - An example to illustrate the extension which is used to indicate the performer of a Diagnostic Report was a device.<br>
   {{pagelink:Example-UKCore-DiagnosticReport-Extension-DeviceReference}}<br>

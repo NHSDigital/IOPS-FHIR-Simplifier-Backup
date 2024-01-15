@@ -39,7 +39,7 @@ The numbered prefixes in the sequence diagram above translate to the following e
 5. {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-Example.page.md}} 
 6. Same resource as in 5, posted to Home GLH, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-Example.page.md}} 
 7. {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderAccepted-Example.page.md}}
-8. Same resource as in 4, with additional ascession ID and processing information,{{pagelink:Home/Examples/Specimen/Specimen-BloodEDTA-Example.page.md}}
+8. Same resource as in 4, with additional accession ID and processing information, {{pagelink:Home/Examples/Specimen/Specimen-BloodEDTA-Example.page.md}}
 9. Same resource as in 7, with updated businessStatus, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderHold-Example.page.md}}
 10. Get request for tasks with focus ServiceRequest (elaborated in API CapabilityStatement)
 11. Same resource as in 9, posted to requester, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderHold-Example.page.md}}
@@ -58,7 +58,7 @@ DiagnosticReport bundles will then need to be sent back directly to the test req
 
 It is expected that the structure of the messages will remain the same across both architectures.
 
-In the overall architecture this approach is least favoured due to complexity of implementation across participating organisations and GLH's , even though it may offer quick wins for early adoption of the FHIR messages with FOT (First of Type) implementations.
+In the overall architecture this approach is least favoured due to complexity of implementation across participating organisations and GLH's , even though it may offer local "quick wins" for early adoption of the FHIR messages with FOT (First of Type) implementations.
 
 ## Task Updates
 
@@ -83,7 +83,7 @@ Examples shown include statuses such as:
 - Report sent (Requester)
 - Report Received (Requester)
 
-**Note:** The Interoperability project will be validating these test status through the alpha (development) phase. Further input is required from the GMS to clarify if the statuses are appropriate and defining of the business rules will be included in the Alpha phase.
+**Note:** The Interoperability project will be validating these test statuses through the alpha (development) phase. Further input is required from the GMS to clarify if the statuses are appropriate and defining of the business rules will be included in the Alpha phase.
 
 The requirement for interoperability is to provide test status updates at the point when the activity leaves and is received at the next organisational boundary. This will require LIMS systems to be able to tie in with the central broker and provide updates on the status of the test request. 
 

@@ -1,5 +1,6 @@
 ## `performer`
-Indicates who performed the immunisation event by reference. The resource being referenced SHALL conform to one of the following: 
+
+Indicates who performed the immunisation event by reference. Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 - {{pagelink:Profile-Organization}}
 - {{pagelink:Profile-Practitioner}}
 - {{pagelink:Profile-PractitionerRole}}

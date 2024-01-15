@@ -8,17 +8,17 @@
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-DiagnosticReport-Extension-DeviceReference-Example}}
+{{table:UKCore-Extension-DeviceReference-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-DiagnosticReport-Extension-DeviceReference-Example}}
+{{xml:UKCore-Extension-DeviceReference-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-DiagnosticReport-Extension-DeviceReference-Example}}
+{{json:UKCore-Extension-DeviceReference-Example}}
 </div>
 
 ---

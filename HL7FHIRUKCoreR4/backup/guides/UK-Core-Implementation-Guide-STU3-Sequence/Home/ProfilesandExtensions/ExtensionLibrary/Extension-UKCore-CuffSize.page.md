@@ -7,22 +7,8 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CuffSize
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Extension added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CuffSize/~issues?level=File">Report Issue for Extension-UKCore-CuffSize<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CuffSize/~issues?level=File">Report Issue for Extension-UKCore-CuffSize</a>.
 </div>
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreCuffSize'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
@@ -37,6 +23,10 @@ select
   <b>Cuff Size</b> - An example to illustrate a blood pressure monitoring device with a large cuff.<br>
 {{pagelink:Example-UKCore-Extension-CuffSize}}
 <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CuffSize/~issues?level=File">Report Issue for Extension-UKCore-CuffSize</a>.
 </div>
 
 <h3 id="guidance-cuffsize">Extension Specific Guidance</h3>

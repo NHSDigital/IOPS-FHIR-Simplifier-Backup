@@ -67,3 +67,13 @@ The figure above takes the current state example and applies the future, interop
 - Once the Remote GLH (Org Boundary 4) receives the physical sample, a status update of ‘Sample Received’ is given.
 - Upon sending the order and sample on to another lab (Org Boundary 5) to fulfil the processing, a ‘Sample Sent’ message is issued/updated.
 - The Lab (Org Boundary 5) updates as ‘Sample Received’, upon receipt of the physical sample.
+
+### Note on Routing of Samples and Data
+
+Messages sent to the core broker constitute data only, including data on where physical samples are or have been sent to (see {{pagelink:Genomics-Specimen}} and {{pagelink:Genomics-Task}} for more details on how location/tracking data is represented).
+
+Test Requests and Samples can be sent to separate organizations based upon local/regional processes. Linkage between samples and test requests allow the organizations responsible for fulfillment of a test request to gain visibility on where physical specimens are. e.g. Sample Processing Task assigned to Org 5, `Task.input` will then contain a reference to the Specimen resource and hold tracking information, while management of the test order remains with Org 3 (which is marked as the `owner` of the Process Test Request Task). The full Test Request will be linked from all Tasks through the `Task.focus` field.
+
+The current iteration of the NGTP assumes routing of a report back to the requesting clinician via the Home GLH. While this has been represented within the design, the FHIR architecture supports any organization attaching DiagnosticReports and completing the Report Distribution Task, which may be needed to support other use cases, such as rapid testing etc.
+
+Cellular Pathology Genomic Centres will be considered owners of initial Sample Preparation Tasks where samples are routed through CPGCs. In this case Cellular Pathology will be considered the Test Requester. Requesters will be referenced from the Test Request through SDS User ID (CIS2 Identity), thereby removing the need to register requesters on lab systems. Additional reporting addresses can be added through both the `ServiceRequest.extention:additionalContact` as well as `PractitionerRole.telecom`. Additionally, any organization can poll for updates (or in future subscribe to events) related to Test Requests they are interested in, subject to Information Governance controls, which would allow distribution to organizations outside th original requester.

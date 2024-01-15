@@ -1,18 +1,14 @@
 ---
-topic: Library-Extensions-PreAdopt-82902
+topic: Library-Extensions-PreAdopt
 ---
-## {{page-title}}
+## Pre-adopted R5 Elements
 
-<div markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
 
-This guidance and list underwent Clinical and Technical Assurance during Sprint 6. This is a new content  added to UK Core and should undergo review in this STU2 ballot.
-</div>
+The following <a href="https://hl7.org/fhir/versions.html#extensions" class="external">R5 elements</a> have been agreed as suitable to be included for use with the UK Core {{pagelink:Library-Profiles-32647,text:Profiles}} because the use case for pre-adopting an R5 element as an Extension, rather than creating a UK Core specific extension is fully met.
 
-The following [R5 elements](https://hl7.org/fhir/versions.html#extensions) have been agreed as suitable to be included for use with the UK Core {{pagelink:Library-Profiles-32647,text:Profiles}} because the use case for pre-adopting an R5 element as an Extension, rather than creating a UK Core specific extension is fully met.
-<br><br>
-As of 19/05/2023, the package to enable pre-adopted elements to function as per the guidance, is not available. To enable rendering and validation of these pre-adopted elements, we have provided UKCore proxy extensions, as per the current threads on [chat.fhir.org](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/R5.20Extensions.20for.20R4.3F), with the R5 canonical urls. These proxy extensions will be retired once the HL7 package is released.
+As of 19/05/2023, the package to enable pre-adopted elements to function as per the guidance, is not available. To enable rendering and validation of these pre-adopted elements, we have provided UK Core proxy extensions, as per the current threads on <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/R5.20Extensions.20for.20R4.3F" class="external">chat.fhir.org</a>, with the R5 canonical urls. These proxy extensions will be retired once the HL7 package is released.
 
-<table class="assets">
+<table class="assets" title="Pre-adopted FHIR R5 elements list and context of use details">
 <tr>
 <th>R5 Element</th>
 <th>Related Profile</th>
@@ -20,33 +16,52 @@ As of 19/05/2023, the package to enable pre-adopted elements to function as per 
 <th>Modifier Extension</th>
 </tr>
 <tr>
-<td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.composition">DiagnosticReport.composition</a></td>
-<td>{{pagelink:Profile-DiagnosticReport-54417}}</td>
-<td>{{pagelink:Extension-UKCore-CompositionReference}}</td>
+<td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.composition" class="external">DiagnosticReport.composition</a></td>
+<td>{{pagelink:Profile-DiagnosticReport-54417}}<br>
+{{pagelink:Profile-DiagnosticReport-Lab-56818}}</td>
+<td>{{pagelink:Extension-UKCore-DiagnosticReportComposition}}</td>
 <td>NO</td>
 </tr>
 <tr>
-<td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.note">DiagnosticReport.note</a></td>
-<td>{{pagelink:Profile-DiagnosticReport-54417}}</td>
-<td>{{pagelink:Extension-UKCore-Note}}</td>
+<td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.note" class="external">DiagnosticReport.note</a></td>
+<td>{{pagelink:Profile-DiagnosticReport-54417}}<br>
+{{pagelink:Profile-DiagnosticReport-Lab-56818}}</td>
+<td>{{pagelink:Extension-UKCore-DiagnosticReportNote}}</td>
 <td>NO</td>
 </tr>
 <tr>
-<td><a href="https://hl7.org/fhir/R5/familymemberhistory-definitions.html#FamilyMemberHistory.participant">FamilyMemberHistory.participant</a></td>
+<td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.supportingInfo" class="external">DiagnosticReport.supportingInfo</a></td>
+<td>{{pagelink:Profile-DiagnosticReport-54417}}<br>
+{{pagelink:Profile-DiagnosticReport-Lab-56818}}</td>
+<td>{{pagelink:Extension-UKCore-DiagnosticReportSupportingInfo}}</td>
+<td>NO</td>
+</tr>
+<tr>
+<td><a href="https://hl7.org/fhir/R5/familymemberhistory-definitions.html#FamilyMemberHistory.participant" class="external">FamilyMemberHistory.participant</a></td>
 <td>{{pagelink:Profile-FamilyMemberHistory-69978}}</td>
-<td>{{pagelink:Extension-UKCore-Participant}}</td>
+<td>{{pagelink:Extension-UKCore-FamilyMemberHistoryParticipant}}</td>
 <td>NO</td>
 </tr>
 <tr>
-<td><a href="https://hl7.org/fhir/R5/observation-definitions.html#Observation.triggeredBy">Observation.triggeredBy</a></td>
-<td>{{pagelink:Profile-Observation-67521}}</td>
-<td>{{pagelink:Extension-UKCore-TriggeredBy}}</td>
+<td><a href="https://hl7.org/fhir/R5/observation-definitions.html#Observation.bodyStructure" class="external">Observation.bodyStructure</a></td>
+<td>{{pagelink:Profile-Observation-67521}}<br>
+{{pagelink:Profile-Observation-Lab-67452}}<br>
+{{pagelink:Profile-Observation-Group-67431}}</td>
+<td>{{pagelink:Extension-UKCore-ObservationBodyStructure}}</td>
 <td>NO</td>
 </tr>
 <tr>
-<td><a href="https://hl7.org/fhir/R5/specimen-definitions.html#Specimen.collection.collector">Specimen.collection.collector</a></td>
+<td><a href="https://hl7.org/fhir/R5/observation-definitions.html#Observation.triggeredBy" class="external">Observation.triggeredBy</a></td>
+<td>{{pagelink:Profile-Observation-67521}}<br>
+{{pagelink:Profile-Observation-Lab-67452}}<br>
+{{pagelink:Profile-Observation-Group-67431}}</td>
+<td>{{pagelink:Extension-UKCore-ObservationTriggeredBy}}</td>
+<td>NO</td>
+</tr>
+<tr>
+<td><a href="https://hl7.org/fhir/R5/specimen-definitions.html#Specimen.collection.collector" class="external">Specimen.collection.collector</a></td>
 <td>{{pagelink:Profile-Specimen-37178}}</td>
-<td>{{pagelink:Extension-UKCore-collectionCollector}}</td>
+<td>{{pagelink:Extension-UKCore-SpecimenCollectionCollector}}</td>
 <td>NO</td>
 </tr>
 

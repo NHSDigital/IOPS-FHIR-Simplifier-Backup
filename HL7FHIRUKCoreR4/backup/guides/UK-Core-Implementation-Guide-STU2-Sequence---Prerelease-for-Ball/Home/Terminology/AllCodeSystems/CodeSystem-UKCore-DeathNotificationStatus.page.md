@@ -1,6 +1,5 @@
 ## UK Core Death Notification Status
 
-
 @```
 from
 	CodeSystem

@@ -5,7 +5,31 @@
   "status": "draft",
   "kind": "identifier",
   "date": "2022-12-05",
-  "publisher": "NHS Digital",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "name": "NHS Genomic Medicine Service",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "england.genomics@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
   "responsible": "NHS Genomic Interop Programme",
   "description": "Clinical genetics no/pedigree number",
 	"usage": "Patient's genetic/pedigree number which links their family.",

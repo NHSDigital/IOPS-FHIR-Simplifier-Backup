@@ -3,20 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey
 ---
 ## StructureDefinition Extension-UKCore-AddressKey
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreAddressKey'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>Address</td>
@@ -31,8 +17,16 @@ select
 {{pagelink:Example-UKCore-Extension-AddressKey}}
 <br><br>
 </div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-AddressKey/~issues?level=File">Report Issue for Extension-UKCore-AddressKey</a>.
+</div>
 
 <h3 id="guidance-addresskey">Extension Specific Guidance</h3>
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-AddressKeyType}}.
+
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-warning"></i> Breaking Change</h4>
+The datatype of the <code>type</code> element was changed from <code>valueCoding</code> in UK Core STU1 Sequence, to <code>valueCodeableConcept</code>, as a result of the UK Core STU2 Sequence ballot reconciliation actions.
+</div> 
 
 ---

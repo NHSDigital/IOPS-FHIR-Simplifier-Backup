@@ -90,6 +90,7 @@
 	<specimen>
 		<reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
 	</specimen>
+	<!-- Guidance on how to interpret the test result value by comparison to a normal or recommended range. -->
 	<referenceRange>
 		<low>
 			<value value="4.00" />

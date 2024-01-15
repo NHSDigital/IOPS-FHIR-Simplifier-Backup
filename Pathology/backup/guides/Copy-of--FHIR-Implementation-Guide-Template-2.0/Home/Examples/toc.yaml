@@ -1,6 +1,2 @@
-- name: R4 Examples
-  filename: R4-Examples.page.md
-- name: STU3 Examples (Legacy)
-  filename: STU3-Examples--Legacy.page.md
-- name: All Examples
-  filename: All-Examples
+- name: Examples Index
+  filename: Examples-Index.page.md

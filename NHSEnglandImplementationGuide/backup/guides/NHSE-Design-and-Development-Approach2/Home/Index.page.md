@@ -1,3 +1,4 @@
+
 # Home
 
 This is the design and development approach used to produce the NHS England IG. It serves several purposes, for example:
@@ -257,10 +258,6 @@ The maturity level scoring is based on the likelihood that the profile will subj
         <td>These FHIR assets have been created only to allow some initial development / implementation work. These have had some input from SMEs but no formal assurance and therefore are likely to have changes which may be breaking applied during C&TA. Implementations using these assets should feedback and participate in the C&TA process and which will move these to active status.</td>
    </tbody>
 </table>
-
-## Sitemap
-
-{{index:root}}
 
 <br><br><br>
 

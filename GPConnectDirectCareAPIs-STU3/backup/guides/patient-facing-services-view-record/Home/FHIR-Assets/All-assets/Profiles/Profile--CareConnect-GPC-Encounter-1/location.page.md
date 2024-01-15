@@ -4,14 +4,11 @@
 
 <span class="mro-circle required" title="Required"></span> Required
 
-
 <h5><ins>Guidance</ins></h5>
 
-This element references an instance of the `Location` profile which provides more detail on where the consultation or encounter took place - for example, a branch surgery.
+This element references an instance of the {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Location-1}} profile which provides more detail on where the consultation or encounter took place - for example, a branch surgery.
 
-It is expected that both `Location.status` and `Location.period` will not used.
-
-<i class="fa fa-link"></i> {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Location-1}}
+It is expected that both `location.status` and `location.period` will not be used.
 
 <h5><ins>Example</ins></h5>
 

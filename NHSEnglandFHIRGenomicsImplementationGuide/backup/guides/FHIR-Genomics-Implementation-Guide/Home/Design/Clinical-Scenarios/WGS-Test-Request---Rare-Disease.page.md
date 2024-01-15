@@ -6,8 +6,9 @@ In the future state, the electronic test request, sample, and RoD (electronic or
 
 For further details on WGS Test Requesting and RoD, refer to WGS Resources and Genomics England.
 
-
 The following steps is a walk through of a WGS Test order workflow:
+
+### [Link to the High Fidelity Wireframe for the WGS Rare Disease Test Scenario](https://tenq2a.axshare.com/)
 
 ### 1. Requester searching for a patient (a dummy patient has been pre-populated as an example) - Via PDS GET /Patient request
 

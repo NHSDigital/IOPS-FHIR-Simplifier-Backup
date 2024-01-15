@@ -4,11 +4,6 @@ topic: Profile-DiagnosticReport-Lab-56818
 
 # StructureDefinition-UKCore-DiagnosticReport-Lab
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This Profile underwent Clinical and Technical Assurance during Sprint 6. This is a new Profile added to UK Core and should undergo review in this STU2 ballot.
-</div>
-
 <div id="transpose">
 @```
 from
@@ -76,7 +71,7 @@ select
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
   <b>Diagnostic Studies Report</b> - An example to illustrate a diagnostic studies report containing a specimen and observation for a patient.<br/>
-{{pagelink:Example-UKCore-DiagnosticReport-DiagnosticStudiesReport}}
+{{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}
 </div>
 </nocheck>
 
@@ -98,7 +93,7 @@ Services that should consider using the  UK Core DiagnosticReport profile are:
 This is a derived profile of {{pagelink:Profile-DiagnosticReport-54417}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
 <br><br>
 The DiagnosticReport-Lab profile is expected to reference either:
-- a set a laboratory observations (Observation-Lab) that are grouped under one observation (Observation-LabGroup), for example a urea and electrolyte test that contains many sub tests,
+- a set of laboratory observations (Observation-Lab) that are grouped under one observation (Observation-LabGroup), for example a urea and electrolyte test that contains many sub tests,
 - a single laboratory observation (Observation-Lab) that does not form part of a group of tests, for example Serum ferritin level,
 - combinations of the above, for example a blood test may include multiple grouped tests such as Urea and electrolytes, Liver function tests, Full blood count, each having a single instance of Observation-LabGroup, along with single tests such as Serum C reactive protein level, eGFR using creatinine and Serum ferritin level, each having a single instance of Observation-Lab.
 <br><br>

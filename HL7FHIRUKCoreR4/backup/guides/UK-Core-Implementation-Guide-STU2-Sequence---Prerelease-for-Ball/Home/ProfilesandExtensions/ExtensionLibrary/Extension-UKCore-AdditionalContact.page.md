@@ -1,10 +1,5 @@
 ## StructureDefinition Extension-UKCore-AdditionalContact
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This Extension underwent Clinical and Technical Assurance during Sprint 6. This is a new Extension added to UK Core and should undergo review in this STU2 ballot.
-</div>
-
 <div id="transpose">
 @```
 from
@@ -59,7 +54,7 @@ select
 </div>
 
 ### Guidance
-The resource being referenced SHALL conform to one of the following:
+The resource being referenced SHOULD conform to one of the following:
 
 - {{pagelink:Profile-Organization-94604}}
 - {{pagelink:Profile-Practitioner-10758}}

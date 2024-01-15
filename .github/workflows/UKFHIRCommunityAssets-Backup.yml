@@ -3,7 +3,7 @@ name: UKFHIRCommunityAssets Back up simplifier project
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 18 1 */1 *'
+    - cron: '0 18 * * *'
 
 jobs:
   build:
@@ -13,9 +13,6 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Sleep random #Used to stop error due to multiple actions wanting PRs to be merged at the same time
-        run: sleep $((RANDOM %30))m $((RANDOM % 59))s #sleeps for a random number of minutes and seconds
 
       - name: Set today
         id: today

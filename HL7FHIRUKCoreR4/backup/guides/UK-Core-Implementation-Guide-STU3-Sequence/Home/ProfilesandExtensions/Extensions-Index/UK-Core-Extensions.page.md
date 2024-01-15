@@ -3,9 +3,11 @@ topic: Library-Extensions-UKCore
 ---
 ## UK Core Extensions
 
-The Extensions listed below have been defined as UK Core extensions. Also included in this library are some HL7 core-defined extensions which have been added to the UK Core profiles because they have been deemed to be "core" to UK FHIR data exchanges. These will have a page with guidance on usage in the UK and examples to illustrate usage. Note: implementers of UK Core MAY use any HL7 core-defined extension from the HL7 standard regardless of whether the extension is included in this implementation guide. The list of core-defined extensions in FHIR R4 is available in the [HL7 Core-defined Extension Registry](http://hl7.org/fhir/R4/extensibility-registry.html).
+<p>The Extensions listed below have been defined as UK Core extensions. Also included in this library are some HL7 core-defined extensions which have been added to the UK Core profiles because they have been deemed to be "core" to UK FHIR data exchanges. These will have a page with guidance on usage in the UK and examples to illustrate usage.</p>
 
-Implementers of the UK Core profiles MAY also create their own Extensions where required, but are encouraged to engage with the UK Core development process to get their extensions adopted into the UK Core for wider use by the UK FHIR Community.
+<p>Note: implementers of UK Core MAY use any HL7 core-defined extension from the HL7 standard regardless of whether the extension is included in this implementation guide. The list of core-defined extensions in FHIR R4 is available in the [HL7 Core-defined Extension Registry](http://hl7.org/fhir/R4/extensibility-registry.html).</p>
+
+<p>Implementers of the UK Core profiles MAY also create their own Extensions where required, but are encouraged to engage with the UK Core development process to ensure that there is not an existing suitable extension available, and to assist in  guidance around the use of an extension with the UK Core, and with wider use by the UK FHIR Community.</p>
 
 
 <div class="tab">

@@ -1,47 +1,47 @@
 {
-	"resourceType": "Task",
-	"id": "Task-WGSRareDiseaseTestOrderAccepted-Example",
-	"status": "on-hold",
-	"businessStatus": { 
-		"coding": [
-			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
-				"code": "AwaitingRoDAndSpecimen", 
-				"display": "Awaiting Record of Discussion and Specimen"
-			}
-		]
-	},
-	"intent": "order",
-	"priority": "routine",
-	"code": { 
-		"coding": [
-			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-				"code": "SampleManagement", 
-				"display": "Sample Management"
-			}
-		]
-	},
-	"focus": {
-		"reference": "ServiceRequest/ServiceRequest-SavedTestOrder-Example"
-	},
-	"for": {
-		"reference": "Patient/Patient-LindsaySorrell-Example",
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "9449307946"
-		}
-	},
-	"authoredOn": "2023-08-08",
-	"lastModified": "2023-08-09",
-	"requester": {
-		"reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example"
-	},
-	"owner": {
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
-			"value": "RJ1"
-		},
-		"display": "GUY'S AND ST THOMAS' NHS FOUNDATION TRUST"
-	}
+  "resourceType": "Task",
+  "id": "Task-WGSRareDiseaseTestOrderAccepted-Example",
+  "status": "on-hold",
+  "businessStatus": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
+        "code": "AwaitingRoDAndSpecimen", 
+        "display": "Awaiting Record of Discussion and Specimen"
+      }
+    ]
+  },
+  "intent": "order",
+  "priority": "routine",
+  "code": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
+        "code": "RequestSampleAlignment", 
+        "display": "Request & Sample Alignment"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-SavedTestOrder-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-LindsaySorrell-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307946"
+    }
+  },
+  "authoredOn": "2023-08-08",
+  "lastModified": "2023-08-09",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "RJ1"
+    },
+    "display": "GUY'S AND ST THOMAS' NHS FOUNDATION TRUST"
+  }
 }

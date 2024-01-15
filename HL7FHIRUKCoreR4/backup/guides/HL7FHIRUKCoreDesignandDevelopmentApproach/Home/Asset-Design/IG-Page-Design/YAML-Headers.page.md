@@ -4,8 +4,6 @@ A UK Core profile index page should have two YAML headers:
 - a `topic`, which allows the page to be referenced using \{ \{pagelink:[topic]\}\} within the IG. 
 - a `system`, the canonical url for the resource, which allows Simplifier render commands to be used without specifying a url 
 
-
-
 A YAML header SHALL be the first item on a page, it SHALL be unique, and it SHALL be in the following format: 
 
 ~~~html

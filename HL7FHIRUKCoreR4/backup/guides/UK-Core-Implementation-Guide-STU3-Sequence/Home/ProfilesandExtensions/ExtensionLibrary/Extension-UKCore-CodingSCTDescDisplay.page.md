@@ -3,20 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTD
 ---
 ## StructureDefinition Extension-UKCore-CodingSCTDescDisplay
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreCodingSCTDescDisplay'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>Coding</td>
@@ -30,6 +16,10 @@ select
 <b>Coding SNOMED CT Description Id</b>- An example to illustrate the extension of adding a SNOMED CT description Id and display Term.<br>
 {{pagelink:Example-UKCore-Extension-CodingSCTDescId}}
 <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CodingSCTDescDisplay/~issues?level=File">Report Issue for Extension-UKCore-CodingSCTDescDisplay</a>.
 </div>
 
 <h3 id="guidance-codingsctdescdisplay">Extension Specific Guidance</h3>

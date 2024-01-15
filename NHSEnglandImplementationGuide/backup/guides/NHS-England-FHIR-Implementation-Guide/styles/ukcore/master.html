@@ -42,7 +42,6 @@
                     </div>
                     <div class="col-md-16">
                         <h3 class="guide-title">{{ guide-title }}</h3>
-                        <h5>v1.0.0-pre-release</h5>
                     </div>
                     <div class="col-md-4 hl7-logo" style="margin-top:15px;">
                         <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
@@ -64,14 +63,14 @@
                     <h4><i class="fas fa-exclamation-triangle"></i> WARNING</h4>
                     This guidance is under active development by NHS England and content may be added or updated on a regular basis.
                 </div>-->
-                <div id="development-notice" markdown="span" class="alert alert-info" role="alert">
+                <!-- <div id="development-notice" markdown="span" class="alert alert-info" role="alert">
                     <i class="fa fa-info-circle"></i>
                     <b>Notice</b><br />
                     <ul>
                         <li>This version of the NHS England Implementation Guide is currently under development.</li>
-                        <li>This is a 'pre-release' version and exists for the purpose of internal review and is <b>not</b> suitable for development purposes.</li>
+                        <li>This is a 'pre-release' version and exists for the purpose of internal review of the Clinical and Technical Assurance Sprint 1, and is <b>not</b> suitable for development purposes.</li>
                     </ul>
-                </div>
+                </div>-->
             <!--Comment out for publication, end-->
 
             {{ page-with-children }}
@@ -84,20 +83,22 @@
 
         <footer>
             <div class="container">
-                <table role="none" title="Footer Links">
-                    	<col style="width:25%">
-	                    <col style="width:25%">
-    	                <col style="width:25%">
-	                    <col style="width:25%">
+                <table role="none" title="Footer Links" width="100%">
+                    	<col style="width:19%">
+	                    <col style="width:17%">
+    	                <col style="width:18%">
+	                    <col style="width:13%">
+    	                <col style="width:33%">
                   <tr>
                       <td>Powered by <b>SIMPLIFIER.NET</b></td>                      
                       <td>IG © 2023+ NHS England</td>
                       <td><span><b>Version:</b> {{ guide-version }}</span></td>
-                      <td><b>Released:</b> 18/08/2023</td>
+                      <td><span><b>FHIR Version:</b> {{ guide-fhir-version }} </span></td>
+                      <td><b>Packages are based on:</b>  <a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
                     </tr>
                     <tr>
-                      <td colspan="2"><b>Packages are based on:</b> <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a> & <a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
-                      <td colspan="2"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Guidance/Sitemap-Overview.page.md?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }}#licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                      <td><b>Released:</b> 07/12/2023</td>
+                      <td colspan="3"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Guidance/Sitemap-Overview.page.md?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../Home/?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
                     </tr>  
                 </table>
             </div>
@@ -175,6 +176,8 @@
                 // Show the desired content with the current view
                 parent.find(".tabcontent[id^='"+tabName+"']").show(0);
             }
+            </script>
+            <script>
 
             // function to turn multiple columns into rows for an fql table, within a specific div
             function transposeFQLTables() {
@@ -347,6 +350,8 @@
             function createTerminologySeparator() {
                 $('ul.nav li.dropdown:eq(2) ul.dropdown-menu li:eq(0)').after('<li role="separator" class="divider"></li>');
             }
+            </script>
+            <script>
 
             //remaps sitemap and licence links to always point within the IG being read
             function fixFooterVersion() {
@@ -359,14 +364,14 @@
                 for (i=0;i<slashCount;i++)
                 {
                     newUrl = newUrl + pageUrl.split("/")[i] + "/";
-                    if (newUrl.endsWith("Home/")) {
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
                         i = slashCount;
                     }
                 }
                 if (newUrl.endsWith("/")) {
                     newUrl = newUrl.slice(0, -1);
                 }
-                if (!newUrl.endsWith("Home")) {
+                if (!(newUrl.endsWith("Home") || newUrl.endsWith("home"))) {
                     newUrl = newUrl + "/Home";
                 }
                 $("a#footer-sitemap").each(function(index) {
@@ -374,7 +379,7 @@
                     let destVersion = "?" + destUrl.split("?")[1];
                     destUrl = newUrl + "/Guidance/Sitemap-Overview" + destVersion;
                     if (pageVersion.startsWith("?version=current")){
-                        destUrl = destUrl.replace(destVersion, pageVersion);
+                        destUrl = destUrl.replace(destVersion, ".page.md" + pageVersion);
                     }
                     $(this).attr("href", destUrl) ;
 				});
@@ -590,6 +595,9 @@
                 $('div.tabcontent[id^="Examples"]').each(function(index) {
                     $(this).prev("p:empty").remove();
                 });
+                $('div.tabcontent[id^="Feedback"]').each(function(index) {
+                    $(this).prev("p:empty").remove();
+                });
             }
 
             //fix wcag compliance issues caused by the way simplifier renders
@@ -605,7 +613,7 @@
                 $('table.regular').each(function(index) {
                     if ($(this).find("th").length > 0) {
                         if ($(this).find(":contains('System')")) {
-                            $(this).attr("title","Expanded ValueSet codes");
+                            //$(this).attr("title","Expanded ValueSet codes");
                         } else {
                             $(this).attr("title","Imported ValueSet codes");
                         }
@@ -750,11 +758,11 @@
                 //createProfileSubMenus();
                 //createTerminologySeparator();
                 fixFooterVersion();
-                alterValueSetTables();
+                //alterValueSetTables();
                 addCodesSortButton();
                  pageInIframe();
                  wrapSideBar();
-                  fixWebAccessibility()
+               //   fixWebAccessibility()
                 updateFooterPosition();
             });
             

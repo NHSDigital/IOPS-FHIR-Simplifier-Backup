@@ -17,7 +17,12 @@
 		<rank value="1" />
 	</telecom>
 </contact>
+
+
 ```
+
+If additional contact details SHALL be added, then the rank value SHALL be automatically increased by "1".
+For example now in the above context the rank value is "1" but if additonal contact will be added then the rank value MUST be "2".
 
 ### Copyright
 

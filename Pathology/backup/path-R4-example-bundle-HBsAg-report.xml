@@ -170,10 +170,10 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- Not in UTL. Taken from SNOMED CT UK Edition (procedure) -->
+						<!-- Not currently in PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
-                        <code value="830511000000103" />
-                        <display value="Hepatitis B virus surface antigen IgG antibody measurement" />
+                        <code value="47758006" />
+                        <display value="Hepatitis B surface antigen measurement" />
                     </coding>
                 </code>
                 <subject>
@@ -244,9 +244,15 @@
                 </identifier>
                 <basedOn>
                     <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-                    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
                 </basedOn>
                 <status value="final" />
+				<category> 
+					<coding> 
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0074"/> 
+						<code value="LAB"/>
+						<display value="Laboratory" />	
+					</coding> 
+				</category>
                 <code>
                     <coding>
                         <system value="http://snomed.info/sct" />
@@ -285,9 +291,16 @@
                     <value value="cca2b653-b6dd-4bf3-8337-10b140d50972" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="51061000237103" />
                         <display value="Hepatitis B surface antigen in serum qualitative result" />

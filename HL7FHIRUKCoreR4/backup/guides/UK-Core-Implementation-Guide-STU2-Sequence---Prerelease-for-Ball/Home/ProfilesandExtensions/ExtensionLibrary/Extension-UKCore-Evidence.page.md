@@ -65,6 +65,6 @@ select
 
 
 ### Guidance
-The resource being referenced SHALL conform to the following {{pagelink:Profile-DiagnosticReport-54417}}.
+The resource being referenced SHOULD conform to the following {{pagelink:Profile-DiagnosticReport-54417}}.
 
 ---

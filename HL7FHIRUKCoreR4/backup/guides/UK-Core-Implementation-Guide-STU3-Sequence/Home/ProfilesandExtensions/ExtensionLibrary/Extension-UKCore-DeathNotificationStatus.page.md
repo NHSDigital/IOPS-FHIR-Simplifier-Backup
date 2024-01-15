@@ -3,20 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotif
 ---
 ## StructureDefinition Extension-UKCore-DeathNotificationStatus
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreDeathNotificationStatus'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Patient,text:Patient}}</td>
@@ -30,6 +16,10 @@ select
   <b>Death notification Status</b>- An example to illustrate the extension to indicate the death notification status of the patient.<br>
 {{pagelink:Example-UKCore-Extension-DeathNotificationStatus}}
 <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DeathNotificationStatus/~issues?level=File">Report Issue for Extension-UKCore-DeathNotificationStatus</a>.
 </div>
 
 <h3 id="guidance-deathnotificationstatus">Extension Specific Guidance</h3>

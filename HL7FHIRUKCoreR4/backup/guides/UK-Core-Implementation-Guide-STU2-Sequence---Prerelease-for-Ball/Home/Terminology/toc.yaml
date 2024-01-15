@@ -1,8 +1,8 @@
 - name: ConceptMaps
   filename: ConceptMaps
-- name: ValueSets and CodeSystems
-  filename: ValueSetsandCodeSystems.page.md
 - name: All ValueSets
   filename: AllValueSets
 - name: All CodeSystems
   filename: AllCodeSystems
+- name: ValueSets and CodeSystems
+  filename: ValueSets-and-CodeSystems.page.md

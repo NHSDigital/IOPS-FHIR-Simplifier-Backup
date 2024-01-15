@@ -10,17 +10,17 @@
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Specimen-Extension-SampleCategory-Example}}
+{{table:UKCore-Extension-SampleCategory-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Specimen-Extension-SampleCategory-Example}}
+{{xml:UKCore-Extension-SampleCategory-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Specimen-Extension-SampleCategory-Example}}
+{{json:UKCore-Extension-SampleCategory-Example}}
 </div>
 
 ---

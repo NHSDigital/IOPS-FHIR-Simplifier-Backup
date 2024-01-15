@@ -4,57 +4,8 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication
 ---
 # StructureDefinition-UKCore-Medication
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreMedication'
-select
-	Canonical_URL: url,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreMedication'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
-<div class="tab fhirTree">
- <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
-</div>
-
-<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
-{{tree, buttons}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json}}
-</div>
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -109,6 +60,11 @@ from
 	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication'
 ```
 </span>
+</div>
+
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Medication/~issues?level=File">Report Issue for UKCore-Medication</a>.
 </div>
 </nocheck>
 

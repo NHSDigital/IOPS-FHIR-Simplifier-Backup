@@ -1,10 +1,12 @@
 ## {{page-title}}
 
-The National Genomics Test Directory specifies available tests and eligibility criteria. Testing within genomics goes beyond cradle to grave. Genomic testing may occur on fetuses, patients who are alive, their family members or patients who are deceased. Any electronic test ordering system must have the ability to communicate with the national Patient Demographic Service (PDS), provide the ability to place test requests for both patients who are alive or deceased and enable the receipt of the test request by the laboratory. 
+The National Genomics Test Directory specifies available tests and eligibility criteria. Testing within genomics goes beyond cradle to grave. Genomic testing may occur on fetuses, patients who are alive, their family members or patients who are deceased. Any electronic test ordering system SHALL have the ability to communicate with the national Patient Demographic Service (PDS), provide the ability to place test requests for both patients who are alive or deceased and enable the receipt of the test request by the laboratory. 
 
 A new test request may be accompanied with a request for samples. Once collected the sample and test request are sent to the Home GLH for processing. The requirement is when an electronic test request is submitted by the requester, the GLH will be notified in real time of the test request. As the sample may be collected later, the requirement is that the lab involved in collecting the sample provide an update of the sample sent and once the sample arrives at the GLH, the status of sample received is provided. 
 
 The following steps is a walk through of a Non-WGS Test order workflow:
+
+### [Link to the High Fidelity Wireframe for the Non WGS Rare Disease Test Scenario](https://9yv5b6.axshare.com/)
 
 ### 1. Requester searching for a patient (a dummy patient has been pre-populated as an example) - Via PDS GET /Patient request
 

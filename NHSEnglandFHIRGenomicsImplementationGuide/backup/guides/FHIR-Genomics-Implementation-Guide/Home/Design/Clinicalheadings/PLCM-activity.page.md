@@ -21,9 +21,9 @@ Derived from existing fields used for clinical/operational purposes in the test 
 |PLCM activity - ODS code of organisation submitting to PLCM|Task.owner if pulled directly from broker system|OBR-32.7 if sourced from principle results interpreter|ODS code of the organisation submitting the PLCM data specification.|
 |PLCM activity - ODS code of organisation commissioned to deliver requested test|ServiceRequest.performer if pulled directly from broker system|PRD-7 where PRD-1=RT|ODS code of the organisation commissioned by NHS England to deliver the service.|
 |PLCM activity - ODS code of organisation delivering requested test|Task.owner|OBX-32.10|ODS code of the organisation delivering the service.|
-|PLCM activity - ODS code of the laboratory site delivering requested test|Task.owner(PractitionerRole.healthcareService(HealthcareService.identifier))|AFF-2.10 associated with performing organization|ODS code of the site on which the laboratory delivering the service is based.|
+|PLCM activity - ODS code of the laboratory site delivering requested test|Task.owner( PractitionerRole.healthcareService( HealthcareService.identifier ) )|AFF-2.10 associated with performing organization|ODS code of the site on which the laboratory delivering the service is based.|
 |PLCM activity - ODS code of commissioning region|Organization.partOf|N/A - not in scope for HL7v2|ODS code of the commissioning region.|
-|PLCM activity - Commissioned service category code|Derived from ServiceRequest.requester(PractitionerRole.healthcareService)|Derived from STF-8 for requester|PLCM category code for the service commissioning the test request.|
+|PLCM activity - Commissioned service category code|Derived from ServiceRequest.requester( PractitionerRole.healthcareService )|Derived from STF-8 for requester|PLCM category code for the service commissioning the test request.|
 |PLCM activity - Service code|Derived from ServiceRequest.code|Derived from OBR-4|PLCM Service code to confirm if the test request is for a specialised service.|
 |PLCM activity - Point of delivery code|Derived from ServiceRequest.code|Derived from OBR-4|PLCM point of delivery code.|
 |PLCM activity - Local point of delivery code|Derived from ServiceRequest.code|Derived from OBR-4|PLCM local point of delivery code.|
@@ -39,4 +39,4 @@ Derived from existing fields used for clinical/operational purposes in the test 
 |PLCM activity - Sample category code|Derived from Specimen.type|Derived from SPM-4|PLCM sample category code.|
 |PLCM activity - Quality score for sequencing|N/A Derived from DNA concentration/quantification|N/A Derived from DNA concentration/quantification|Quality score for sequencing.|
 |PLCM activity - Local report identifier|DiagnosticReport.identifier|OBR-3 for report|Identifier for the issued report|
-|PLCM activity - Test outcome code (Many)|DiagnosticReport.result(Observation.code)|OBX-3 elements for resulting report|PLCM test outcome codes.|
+|PLCM activity - Test outcome code (Many)|DiagnosticReport.result( Observation.code )|OBX-3 elements for resulting report|PLCM test outcome codes.|

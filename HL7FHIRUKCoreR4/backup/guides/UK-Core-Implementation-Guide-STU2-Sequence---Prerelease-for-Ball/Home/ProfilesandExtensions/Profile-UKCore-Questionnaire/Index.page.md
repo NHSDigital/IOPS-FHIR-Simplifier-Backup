@@ -3,11 +3,6 @@ topic: Profile-Questionnaire-47615
 ---
 # StructureDefinition-UKCore-Questionnaire
 
-<div  id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This Profile underwent Clinical and Technical Assurance during Sprint 5. This is a new Profile added to UK Core and undergoing review in this STU2 ballot.
-</div>
-
 <div id="transpose">
 @```
 from
@@ -74,6 +69,12 @@ select
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
+<b>End of Life Survey</b> - An example to illustrate a questionnaire regarding an end of life plan survey.
+<br>{{pagelink:Example-UKCore-Questionnaire-EOLPlan}}
+  <br><br>
+<b>Fitness For Work Survey</b> - An example to illustrate a questionnaire regarding a fitness for work survey.
+<br>{{pagelink:Example-UKCore-Questionnaire-FitnessForWork}}
+  <br><br>
 <b>Inpatient Survey</b> - An example to illustrate a questionnaire regarding an in-patient survey.
 <br>{{pagelink:Example-UKCore-Questionnaire-InpatientSurvey}}
 </div>

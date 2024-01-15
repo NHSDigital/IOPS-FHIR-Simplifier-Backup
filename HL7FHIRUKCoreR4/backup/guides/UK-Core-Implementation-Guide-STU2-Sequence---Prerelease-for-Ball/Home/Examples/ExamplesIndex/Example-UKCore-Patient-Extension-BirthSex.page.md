@@ -10,22 +10,22 @@ This example uses an extension to show the patient's birth sex.
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Patient-Extension-BirthSex-Example}}
+{{table:UKCore-Extension-BirthSex-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Patient-Extension-BirthSex-Example}}
+{{tree:UKCore-Extension-BirthSex-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Patient-Extension-BirthSex-Example}}
+{{xml:UKCore-Extension-BirthSex-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Patient-Extension-BirthSex-Example}}
+{{json:UKCore-Extension-BirthSex-Example}}
 </div>
 
 ---

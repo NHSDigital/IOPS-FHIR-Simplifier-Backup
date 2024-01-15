@@ -1,5 +1,17 @@
 ## <code>{{page-title}}</code>
 
+<div id="transpose">
+@```
+from
+	NamingSystem
+where
+	id = 'nhs-number-namingsystem'
+select
+  Responsible_Organisation: responsible,
+	Description: description
+```
+</div>
+<br>
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Overview')">Overview</button>
@@ -28,14 +40,4 @@
 {{json:https://fhir.nhs.uk/Id/nhs-number, snapshot}}
 </div>
 
-
-
-
-
-
-
-
-
-
 ---
-

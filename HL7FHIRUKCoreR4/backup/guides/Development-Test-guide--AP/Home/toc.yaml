@@ -1,0 +1,16 @@
+- name: Index
+  filename: Index.page.md
+- name: Guidance
+  filename: Guidance
+- name: Profiles and Extensions
+  filename: ProfilesandExtensions
+- name: Terminology
+  filename: Terminology
+- name: Examples
+  filename: Examples
+- name: Contact Us
+  filename: ContactUs-duplicate-2.page.md
+- name: Downloads
+  filename: Downloads-duplicate-2.page.md
+- name: Glossary
+  filename: Glossary-duplicate-2.page.md

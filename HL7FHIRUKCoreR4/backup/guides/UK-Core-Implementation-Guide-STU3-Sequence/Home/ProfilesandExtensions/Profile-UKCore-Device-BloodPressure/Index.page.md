@@ -9,7 +9,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device-BloodPressure
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Profile added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Device-BloodPressure/~issues?level=File">Report Issue for UKCore-Device-BloodPressure<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Device-BloodPressure/~issues?level=File">Report Issue for UKCore-Device-BloodPressure</a>.
 </div>
 
 <div id="transpose">
@@ -20,6 +20,7 @@ where
 	name = 'UKCoreDeviceBloodPressure'
 select
 	Canonical_URL: url,
+  Status: status,
   Current_Version: version,
   Last_Updated: date,
 	Description: description
@@ -36,33 +37,7 @@ select
 ```
 
 <nocheck>
-<div class="tab fhirTree">
- <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
-</div>
-
-<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
-{{tree, buttons}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json}}
-</div>
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -113,6 +88,11 @@ from
 ```
 </span>
 </div>
+
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Device-BloodPressure/~issues?level=File">Report Issue for UKCore-Device-BloodPressure</a>.
+</div>
 </nocheck>
 
 ### Example Usage Scenarios ###
@@ -127,12 +107,27 @@ The following are example usage scenarios for the UK Core Device profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-This is a derived profile of {{pagelink: Profile-Device,text:UKCore-Device}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
+This is a derived profile of [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current) and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
 
 
 <h3>Minimum Viable Content</h3>
 
-The minimum viable content that all provider and consumer systems SHALL support are the elements within the corresponding {{pagelink: Profile-Device,text:UKCore-Device}} table.
+A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+
+<table class="assets" title="Minimum Viable Content list">
+<tr>
+<th class="width30">Element</th>
+<th class="width70">Reason</th>
+</tr>
+<tr>
+<td><code>Device.status</code></td>
+<td>The status of the Device.</td>
+</tr>
+<tr>
+<td><code>Device.type</code></td>
+<td>The type of the Device.</td>
+</tr>
+</table>
 
 ---
 

@@ -2,7 +2,7 @@
 topic: Home-ContactUs
 ---
 
-## Contact Us ##
+## Contact Us
 
 If you have any questions, need further information or wish to provide feedback on the FHIR UK Core STU3 sequence, or the implementation guide for C&TA Sprint 7, please e-mail the appropriate organisation below:
 

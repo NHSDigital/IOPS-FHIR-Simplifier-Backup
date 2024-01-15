@@ -2,7 +2,7 @@ name: REPLACE_WITH_VARIABLE Backup
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * */1 *'
+    - cron: '0 18 * * *'
 
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
           cd backup
           wget --user ${{secrets.SIMPLIFIER_USER}} --password ${{secrets.SIMPLIFIER_PWD}} https://api.simplifier.net/${{ vars.REPLACE_WITH_VARIABLE }}/zip -O export.zip
           unzip export.zip -x settings.style
-          rm -f export.zip
+          mv export.zip ..
           cd ..
           export NUMLINES=$(wc -l < README.md) #Updates README file. Shows when last updated but also used to ensure changes made for the PR / merge steps below
           export NUMLINES=$(($NUMLINES-2))

@@ -50,8 +50,6 @@
   filename: Profile--GPConnect-Appointment-1
 - name: 'Profile: GPConnect-Device-1'
   filename: Profile--GPConnect-Device-1
-- name: 'Profile: GPConnect-DocumentReference-1'
-  filename: Profile--GPConnect-DocumentReference-1
 - name: 'Profile: GPConnect-OperationOutcome-1'
   filename: Profile--GPConnect-OperationOutcome-1
 - name: 'Profile: GPConnect-Schedule-1'
@@ -64,3 +62,5 @@
   filename: Profile--GPConnect-StructuredRecord-Bundle-1
 - name: 'Profile: GPConnect-Task-1'
   filename: Profile--GPConnect-Task-1
+- name: 'Profile: Binary'
+  filename: Profile--Binary

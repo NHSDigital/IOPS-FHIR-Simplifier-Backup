@@ -1,16 +1,39 @@
+<fql>
+from
+	StructureDefinition
+where
+	url = %subject
+select
+	Canonical_URL: url,
+  Status: status,
+  Current_Version: version,
+  Last_Updated: date,
+	Description: description,
+	Profile_Purpose: purpose
+  with header 
+</fql>
 
+<div id="transpose">
+</div>
+<br>
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
+  <button class="tablinks" onclick="openTab(event, 'Detailed View')">Detailed View</button>
    <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
    <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
    <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
   <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
+  <button class="tablinks feedback" onclick="openTab(event, 'Feedback')">Feedback</button>
 </div>
 
 <div id="Tree View" class="tabcontent" style="display:block">
   <h3>Tree View</h3>
 {{tree}}
+</div>
+<div id="Detailed View" class="tabcontent">
+  <h3>Detailed Descriptions</h3>
+{{dict}}
 </div>
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>

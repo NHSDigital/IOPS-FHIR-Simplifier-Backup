@@ -1,0 +1,32 @@
+{
+    "resourceType": "MessageDefinition",
+    "id": "8b6bebca-6049-45a2-bcbf-613d7e4ae033",
+    "url": "https://fhir.nhs.uk/MessageDefinition/notification",
+    "identifier":  [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "8b6bebca-6049-45a2-bcbf-613d7e4ae033"
+        }
+    ],
+    "version": "1.0.1",
+    "name": "NHSDigitalEventNotification",
+    "title": "Subscription Event notification",
+    "status": "active",
+    "date": "2023-10-17",
+    "eventCoding": {
+        "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+        "code": "notification",
+        "display": "Event Notification"
+    },
+    "description": "Notification of events.",
+    "category": "notification",
+    "focus":  [
+        {
+            "code": "Bundle",
+            "profile": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification-r4",
+            "min": 0,
+            "max": "*"
+        }
+    ],
+    "responseRequired": "on-error"
+}

@@ -12,20 +12,26 @@ More information about the extensions can be found using the links below.
 <tr>
 <td>compositionReferenceR5</td>
 <td>DiagnosticReport</td>
-<td>{{pagelink:Extension-UKCore-compositionReference}}</td>
-<td>A Composition reference for a DiagnosticReport. This is a R5 backport, for more details, see {{pagelink:Library-Extensions-PreAdopt-82902}}.</td>
+<td>{{pagelink:Extension-UKCore-DiagnosticReportComposition}}</td>
+<td>A Composition reference for a DiagnosticReport. This is a R5 backport, for more details, see {{pagelink:Library-Extensions-PreAdopt}}.</td>
 </tr>
 <tr>
 <td>noteR5</td>
 <td>DiagnosticReport</td>
-<td>{{pagelink:Extension-UKCore-note}}</td>
-<td>Comments about the diagnostic report. This is a R5 backport, for more details, see {{pagelink:Library-Extensions-PreAdopt-82902}}.</td>
+<td>{{pagelink:Extension-UKCore-DiagnosticReportNote}}</td>
+<td>Comments about the diagnostic report. This is a R5 backport, for more details, see {{pagelink:Library-Extensions-PreAdopt}}.</td>
 </tr>
 <tr>
 <td>deviceReference</td>
 <td>DiagnosticReport.resultsInterpreter<br>DiagnosticReport.performer</td>
 <td>{{pagelink:Extension-UKCore-DeviceReference}}</td>
 <td>A reference to a Device which interprets / performs the results of the DiagnosticReport.</td>
+</tr>
+<tr>
+<td>supportingInfoR5</td>
+<td>DiagnosticReport</td>
+<td>{{pagelink:Extension-UKCore-DiagnosticReportSupportingInfo}}</td>
+<td>Comments about the diagnostic report. This is a R5 backport, for more details, see {{pagelink:Library-Extensions-PreAdopt}}.</td>
 </tr>
 
 </table>

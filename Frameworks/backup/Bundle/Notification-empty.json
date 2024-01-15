@@ -1,0 +1,67 @@
+{
+    "resourceType": "Bundle",
+    "id": "8faea997-df7d-4e71-85af-4acd1cd47ca8",
+    "identifier": {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "8faea997-df7d-4e71-85af-4acd1cd47ca8"
+    },
+    "type": "history",
+    "timestamp": "2021-01-07T15:13:00+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:c6ca3f0a-2470-407d-b0f4-c3dc70ab153b",
+            "resource": {
+                "resourceType": "Parameters",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status-r4"
+                    ]
+                },
+                "parameter": [
+                    {
+                        "name": "subscription",
+                        "valueReference": {
+                            "reference": "https://example.org/fhir/Subscription/admission"
+                        }
+                    },
+                    {
+                        "name": "topic",
+                        "valueCanonical": "http://hl7.org/SubscriptionTopic/admission"
+                    },
+                    {
+                        "name": "status",
+                        "valueCode": "active"
+                    },
+                    {
+                        "name": "type",
+                        "valueCode": "event-notification"
+                    },
+                    {
+                        "name": "events-since-subscription-start",
+                        "valueString": "2"
+                    },
+                    {
+                        "name": "notification-event",
+                        "part": [
+                            {
+                                "name": "event-number",
+                                "valueString": "1"
+                            },
+                            {
+                                "name": "timestamp",
+                                "valueInstant": "2022-01-07T15:06:00+00:00"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "request" : {
+              "method" : "GET",
+              "url" : "https://example.org/fhir/Subscription/admission/$status"
+            },
+            "response" : {
+              "status" : "200"
+            }
+        }
+    ]
+}

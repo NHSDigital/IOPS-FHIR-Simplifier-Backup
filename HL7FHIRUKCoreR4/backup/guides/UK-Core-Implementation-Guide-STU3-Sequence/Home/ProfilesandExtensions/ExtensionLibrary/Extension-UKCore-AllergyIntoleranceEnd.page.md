@@ -3,20 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyInt
 ---
 ## StructureDefinition Extension-UKCore-AllergyIntoleranceEnd
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreAllergyIntoleranceEnd'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-AllergyIntolerance,text:AllergyIntolerance.clinicalStatus}}</td>
@@ -30,6 +16,10 @@ select
   <b>Allergy Intolerance End</b>- An example to illustrate the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid.<br>
   {{pagelink:Example-UKCore-Extension-AllergyIntolEnd}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-AllergyIntoleranceEnd/~issues?level=File">Report Issue for Extension-UKCore-AllergyIntoleranceEnd</a>.
 </div>
 
 

@@ -1,0 +1,80 @@
+{
+    "resourceType": "Bundle",
+    "id": "a3aa6ec9-2f62-4a62-b435-f62d38865f19",
+    "identifier": {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "a3aa6ec9-2f62-4a62-b435-f62d38865f19"
+    },
+    "type": "message",
+    "timestamp": "2021-01-08T15:13:00+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:844ebe20-78f0-4d77-8890-44d588717ca9",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-RoutingDemographics",
+                        "extension": [
+                            {
+                                "url": "nhsNumber",
+                                "valueIdentifier": {
+                                    "system": "https://fhir.nhs.uk/Id/nhs-number",
+                                    "value": "9000000009"
+                                }
+                            },
+                            {
+                                "url": "name",
+                                "valueHumanName": {
+                                    "use": "official",
+                                    "family": "Smith",
+                                    "given": [
+                                        "Jane"
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "birthDate",
+                                "valueDate": "2010-10-22"
+                            }
+                        ]
+                    }
+                ],
+                "eventCoding": {
+                    "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+                    "code": "notification",
+                    "display": "Event Notification"
+                },
+                "sender": {
+                    "identifier": [
+                        {
+                            "system": "https://fhir.nhs.uk/Id/nhsSpineASID",
+                            "value": "477121000324"
+                        }
+                    ]
+                },
+                "source": {
+                    "name": "NHS Digital",
+                    "endpoint": "urn:nhs:addressing:asid:477121000324"
+                },
+                "reason": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/EventType",
+                            "code": "pds-change-of-gp",
+                            "display": "PDS Change of GP"
+                        }
+                    ]
+                },
+                "focus": [
+                    {
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/nhs-number",
+                            "value": "9000000009"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

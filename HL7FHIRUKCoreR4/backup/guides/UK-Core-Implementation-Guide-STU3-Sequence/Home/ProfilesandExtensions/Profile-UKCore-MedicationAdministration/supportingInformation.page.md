@@ -1,5 +1,5 @@
 ## `supportingInformation`
 
-Where a UK Core profile exists, the resource being referenced SHALL conform to the profile.
+Where a UK Core profile exists, the resource being referenced SHOULD conform to the profile.
 
 ---

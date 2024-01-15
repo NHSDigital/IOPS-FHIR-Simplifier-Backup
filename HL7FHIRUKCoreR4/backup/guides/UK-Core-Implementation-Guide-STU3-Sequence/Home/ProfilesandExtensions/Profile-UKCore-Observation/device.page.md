@@ -1,8 +1,8 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to one of the following:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
-- {{pagelink:Profile-Device}}
+- [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current)
 - [DeviceMetric Resource](https://hl7.org/fhir/R4/devicemetric.html)
 
 ---

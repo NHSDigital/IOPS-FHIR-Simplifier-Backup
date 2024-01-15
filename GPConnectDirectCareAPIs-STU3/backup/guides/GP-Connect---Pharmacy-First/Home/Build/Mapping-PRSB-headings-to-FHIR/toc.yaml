@@ -2,8 +2,6 @@
   filename: Index.page.md
 - name: How are PRSB headings represented within FHIR?
   filename: How-are-PRSB-headings-represented-within-FHIR.page.md
-- name: 'Heading: Safeguarding'
-  filename: Heading--Safeguarding.page.md
 - name: 'Heading: History'
   filename: Heading--History.page.md
 - name: 'Heading: Clinical Summary'
@@ -16,17 +14,7 @@
   filename: Heading--Planned-and-requested-actions.page.md
 - name: 'Heading: Pregnancy Status - Pregnancy State'
   filename: Heading--Pregnancy-Status---Pregnancy-State.page.md
-- name: 'Heading: Pregnancy Status - Expected delivery date'
-  filename: Heading--Pregnancy-Status---Expected-delivery-date.page.md
-- name: 'Heading: Pregnancy Status - Feeding status of the baby'
-  filename: Heading--Pregnancy-Status---Feeding-status-of-the-baby.page.md
-- name: 'Heading: Social context - Smoking status'
-  filename: Heading--Social-context---Smoking-status.page.md
-- name: 'Heading: Social context - Date stopped smoking'
-  filename: Heading--Social-context---Date-stopped-smoking.page.md
 - name: 'Heading: Red Flags'
   filename: Heading--Red-Flags.page.md
-- name: 'Heading: Procedures and therapies - Procedures'
-  filename: Heading--Procedures-and-therapies---Procedures.page.md
-- name: 'Heading: Procedures and therapies - Contraception type'
-  filename: Heading--Procedures-and-therapies---Contraception-type.page.md
+- name: 'Heading: Procedures and therapies - ABPM declined'
+  filename: Heading--Procedures-and-therapies---ABPM-declined.page.md

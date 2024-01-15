@@ -25,7 +25,7 @@ If the resource is hosted on another NHS service, for example patient records on
 }
 ```
 
-If a resource is contained on another system, outside NHS central services, this SHOULD be referenced with an absolute url. The URL MUST be resolvable and preferably return a FHIR resource of the appropriate type e.g.
+If a resource is contained on another system, outside NHS central services, this SHOULD be referenced with an absolute url. The URL SHALL be resolvable and preferably return a FHIR resource of the appropriate type e.g.
 
 ```
 "reference": "https://www.christie.nhs.uk/ehr/LabOrder123456"
@@ -33,7 +33,7 @@ If a resource is contained on another system, outside NHS central services, this
 
 All profiles within transaction bundles should reference each other i.e. none should be orphaned.
 
-Any additional resources not linked from another resource in a transaction bundle MUST be excluded, or sent in a separate transaction. The expected list of resources and cardinalities in a typical test order or report transaction are detailed in {{pagelink:Home/FHIRAssets/MessageDefinitions}}.
+Any additional resources not linked from another resource in a transaction bundle SHALL be excluded, or sent in a separate transaction. The expected list of resources and cardinalities in a typical test order or report transaction are detailed in {{pagelink:Home/FHIRAssets/MessageDefinitions}}.
 
 ## Resource Reference (Duo/Trio Tests)
 When the test type is Duo or Trio there will usually be specimens from more than one patient. Due to the way references work within FHIR, the Task resource will reference the Specimen resources for all participants within the “input” element, and each specimen will reference the patient it relates to using the “subject” element.

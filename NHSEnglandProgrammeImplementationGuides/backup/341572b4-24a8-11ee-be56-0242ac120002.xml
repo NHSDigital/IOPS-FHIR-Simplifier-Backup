@@ -1,9 +1,0 @@
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="341572b4-24a8-11ee-be56-0242ac120002" />
-  <type value="searchset" />
-  <total value="0" />
-  <link>
-    <relation value="self" />
-    <url value="https:baseurl/Flag?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9000000009" />
-  </link>
-</Bundle>

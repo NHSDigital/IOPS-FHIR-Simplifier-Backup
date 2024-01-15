@@ -1,2 +1,8 @@
-- name: ValueSets and CodeSystems(draft)
-  filename: ValueSetsandCodeSystemsdraft.guide.md
+- name: ValueSet UKCore-DateTimeType
+  filename: ValueSet-UKCore-DateTimeType.page.md
+- name: ValueSet UKCore-DeviceType
+  filename: ValueSet-UKCore-DeviceType.page.md
+- name: ValueSet UKCore-DocumentType
+  filename: ValueSet-UKCore-DocumentType.page.md
+- name: ValueSet UKCore-PeriodType
+  filename: ValueSet-UKCore-PeriodType.page.md

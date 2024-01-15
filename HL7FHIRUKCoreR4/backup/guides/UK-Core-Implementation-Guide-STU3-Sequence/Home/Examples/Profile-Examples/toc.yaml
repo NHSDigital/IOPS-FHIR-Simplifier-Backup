@@ -14,10 +14,6 @@
   filename: Example-UKCore-Composition-Discharge.page.md
 - name: Example UKCore-Condition-BleedingFromEar
   filename: Example-UKCore-Condition-BleedingFromEar.page.md
-- name: Example UKCore-Consent-ForInformationAccess
-  filename: Example-UKCore-Consent-ForInformationAccess.page.md
-- name: Example UKCore-DiagnosticReport-DiagnosticStudiesReport
-  filename: Example-UKCore-DiagnosticReport-DiagnosticStudiesReport.page.md
 - name: Example UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport
   filename: Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport.page.md
 - name: Example UKCore-Device-SoftwareAsAMedicalDevice
@@ -26,16 +22,10 @@
   filename: Example-UKCore-Device-Sphygmomanometer.page.md
 - name: Example UKCore-Encounter-InpatientEncounter
   filename: Example-UKCore-Encounter-InpatientEncounter.page.md
-- name: Example UKCore-EpisodeOfCare-SmokingCessationTherapy
-  filename: Example-UKCore-EpisodeOfCare-SmokingCessationTherapy.page.md
 - name: Example UKCore-FamilyMemberHistory-FatherDiabetes
   filename: Example-UKCore-FamilyMemberHistory-FatherDiabetes.page.md
-- name: Example UKCore-Flag-FoodAllergy
-  filename: Example-UKCore-Flag-FoodAllergy.page.md
 - name: Example UKCore-HealthcareService-OrthopaedicService
   filename: Example-UKCore-HealthcareService-OrthopaedicService.page.md
-- name: Example UKCore-ImagingStudy-CT-ChestScan
-  filename: Example-UKCore-ImagingStudy-CT-ChestScan.page.md
 - name: Example UKCore-Immunization-InfluenzaVaccine
   filename: Example-UKCore-Immunization-InfluenzaVaccine.page.md
 - name: Example UKCore-List-EmptyList
@@ -60,8 +50,6 @@
   filename: Example-UKCore-MedicationRequest-EyeDrops.page.md
 - name: Example UKCore-MedicationStatement-Amoxicillin
   filename: Example-UKCore-MedicationStatement-Amoxicillin.page.md
-- name: Example UKCore-MessageHeader-Discharge
-  filename: Example-UKCore-MessageHeader-Discharge.page.md
 - name: Example UKCore-Observation-24HourBloodPressure
   filename: Example-UKCore-Observation-24HourBloodPressure.page.md
 - name: Example UKCore-Observation-AwarenessOfDiagnosis
@@ -108,8 +96,6 @@
   filename: Example-UKCore-Observation-VitalSigns-OxygenSaturation.page.md
 - name: Example UKCore-Observation-VitalSigns-RespiratoryRate
   filename: Example-UKCore-Observation-VitalSigns-RespiratoryRate.page.md
-- name: Example UKCore-OperationOutcome-DateError
-  filename: Example-UKCore-OperationOutcome-DateError.page.md
 - name: Example UKCore-Organization-WhiteRoseMedicalCentre
   filename: Example-UKCore-Organization-WhiteRoseMedicalCentre.page.md
 - name: Example UKCore-Organization-LeedsTeachingHospital
@@ -128,12 +114,12 @@
   filename: Example-UKCore-PractitionerRole-GP.page.md
 - name: Example UKCore-Procedure-ExaminationOfSkin
   filename: Example-UKCore-Procedure-ExaminationOfSkin.page.md
+- name: Example UKCore-Questionnaire-EOLPlan
+  filename: Example-UKCore-Questionnaire-EOLPlan.page.md
+- name: Example UKCore-Questionnaire-FitnessForWork
+  filename: Example-UKCore-Questionnaire-FitnessForWork.page.md
 - name: Example UKCore-Questionnaire-InpatientSurvey
   filename: Example-UKCore-Questionnaire-InpatientSurvey.page.md
-- name: Example UKCore-QuestionnaireResponse-BabyPatientSurvey
-  filename: Example-UKCore-QuestionnaireResponse-BabyPatientSurvey.page.md
-- name: Example UKCore-QuestionnaireResponse-InpatientSurvey
-  filename: Example-UKCore-QuestionnaireResponse-InpatientSurvey.page.md
 - name: Example UKCore-RelatedPerson-JoySmith
   filename: Example-UKCore-RelatedPerson-JoySmith.page.md
 - name: Example UKCore-Schedule-Immunization
@@ -148,5 +134,3 @@
   filename: Example-UKCore-Specimen-BloodSpecimen.page.md
 - name: Example UKCore-Specimen-UrineSpecimen
   filename: Example-UKCore-Specimen-UrineSpecimen.page.md
-- name: Example UKCore-Task-Colonoscopy
-  filename: Example-UKCore-Task-Colonoscopy.page.md

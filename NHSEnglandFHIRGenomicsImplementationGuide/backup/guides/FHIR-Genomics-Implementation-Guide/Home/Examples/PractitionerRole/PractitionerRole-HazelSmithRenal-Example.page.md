@@ -1,26 +1,32 @@
+---
+expand: yes
+---
+
 ## {{page-title}}
+
+Example of a PractitionerRole resource linking Practitioner and Organization identifiers and indicating preferred reporting address.
 
 <div class="nhsd-!t-margin-bottom-6">
   <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active">
-            <a href="#JSON" role="tab" data-toggle="tab">JSON</a>
+            <a href="#JSON-PR-HSR-E" role="tab" data-toggle="tab">JSON</a>
         </li>
          <li role="presentation">
-            <a href="#XML" role="tab" data-toggle="tab">XML</a>
+            <a href="#XML-PR-HSR-E" role="tab" data-toggle="tab">XML</a>
         </li>
         <li role="presentation">
-            <a href="#Tree" role="tab" data-toggle="tab">Tree</a>
+            <a href="#Tree-PR-HSR-E" role="tab" data-toggle="tab">Tree</a>
         </li>
   </ul>
     
   <div class="tab-content snippet">
-    <div id="JSON" role="tabpanel" class="tab-pane active">
+    <div id="JSON-PR-HSR-E" role="tabpanel" class="tab-pane active">
 {{json:PractitionerRole-HazelSmithRenal-Example}}
     </div>
-    <div id="XML" role="tabpanel" class="tab-pane">
+    <div id="XML-PR-HSR-E" role="tabpanel" class="tab-pane">
 {{xml:PractitionerRole-HazelSmithRenal-Example}}
     </div>
-    <div id="Tree" role="tabpanel" class="tab-pane">
+    <div id="Tree-PR-HSR-E" role="tabpanel" class="tab-pane">
 {{tree:PractitionerRole-HazelSmithRenal-Example}}
     </div>
   </div>

@@ -9,22 +9,22 @@
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-Observation-Extension-TriggeredBy-Example}}
+{{table:UKCore-Extension-TriggeredBy-Example}}
 </div>
 
 <div id="Tree View" class="tabcontent">
   <h3>Tree View</h3>
-{{tree:UKCore-Observation-Extension-TriggeredBy-Example}}
+{{tree:UKCore-Extension-TriggeredBy-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-Observation-Extension-TriggeredBy-Example}}
+{{xml:UKCore-Extension-TriggeredBy-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-Observation-Extension-TriggeredBy-Example}}
+{{json:UKCore-Extension-TriggeredBy-Example}}
 </div>
 
 ---

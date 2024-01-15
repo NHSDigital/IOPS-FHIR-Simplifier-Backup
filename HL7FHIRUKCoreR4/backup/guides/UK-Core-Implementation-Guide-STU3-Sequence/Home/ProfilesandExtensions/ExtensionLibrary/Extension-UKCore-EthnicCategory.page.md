@@ -3,20 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCate
 ---
 ## StructureDefinition Extension-UKCore-EthnicCategory
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreEthnicCategory'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Patient,text:Patient}}</td>
@@ -30,6 +16,10 @@ select
 <b>Ethnic Category</b> - An example to illustrate patient Ethnic Category information. </br>
 {{pagelink:Example-UKCore-Extension-EthnicCategory}}
 <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-EthnicCategory/~issues?level=File">Report Issue for Extension-UKCore-EthnicCategory</a>.
 </div>
 
 <h3 id="guidance-ethniccategory">Extension Specific Guidance</h3>

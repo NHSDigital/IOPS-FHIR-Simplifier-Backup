@@ -15,3 +15,14 @@ The relevant profiles in the data model are as follows:
 </div>
 
 ---
+
+
+  <!-- Tab panes -->
+  <div class="tab-content snippet nhsd-!t-margin-bottom-6">
+    <div role="tabpanel" class="tab-pane active" id="profile-1">
+        {{tree:https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-AllergyIntolerance-1}}
+    </div>
+    <div role="tabpanel" class="tab-pane" id="dictionary-1">
+        {{dict:https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-AllergyIntolerance-1}} 
+    </div>
+  </div>

@@ -1,10 +1,5 @@
 ## StructureDefinition Extension-UKCore-DeviceReference
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This Extension underwent Clinical and Technical Assurance during Sprint 6. This is a new Extension added to UK Core and should undergo review in this STU2 ballot.
-</div>
-
 <div id="transpose">
 @```
 from
@@ -61,6 +56,6 @@ select
 </div>
 
 ### Guidance
-The resource being referenced SHALL conform to the following <a href="https://hl7.org/fhir/R4/Device.html">Device Resource</a>.
+The resource being referenced SHOULD conform to the following [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current).
 
 ---

@@ -1,6 +1,6 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to one of the following:
+The resource being referenced SHOULD conform to one of the following:
 
 - {{pagelink:Profile-Composition-31483}}
 - {{pagelink:Profile-DiagnosticReport-54417}}

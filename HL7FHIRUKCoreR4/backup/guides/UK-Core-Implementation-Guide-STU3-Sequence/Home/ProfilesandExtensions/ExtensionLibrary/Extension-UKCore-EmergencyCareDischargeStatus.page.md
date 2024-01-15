@@ -3,20 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyC
 ---
 ## StructureDefinition Extension-UKCore-EmergencyCareDischargeStatus
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreEmergencyCareDischargeStatus'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Encounter,text:Encounter}}</td>
@@ -30,6 +16,10 @@ select
   <b>Emergency Care Discharge Status</b>- An example to illustrate the extension which is used to indicate the status of an individual on discharge from an Emergency Care Department.<br>
   {{pagelink:Example-UKCore-Extension-EmergencyCareDischargeStatus}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-EmergencyCareDischargeStatus/~issues?level=File">Report Issue for Extension-UKCore-EmergencyCareDischargeStatus</a>.
 </div>
 
 <h3 id="guidance-emergencycaredischargestatus">Extension Specific Guidance</h3>

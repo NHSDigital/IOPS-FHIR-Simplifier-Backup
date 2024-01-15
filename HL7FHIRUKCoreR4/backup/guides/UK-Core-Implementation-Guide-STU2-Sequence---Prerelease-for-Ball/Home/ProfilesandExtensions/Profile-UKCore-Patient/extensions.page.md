@@ -69,7 +69,7 @@ More information about the extensions can be found using the links below.
 <td>{{pagelink:Extension-UKCore-EthnicCategory}}</td>
 <td></td>
 </tr>
-<tr class="balloted">
+<tr>
 <td>nhsNumberUnavailableReason</td>
 <td>Patient</td>
 <td>{{pagelink:Extension-UKCore-NHSNumberUnavailableReason}}</td>
@@ -106,10 +106,5 @@ More information about the extensions can be found using the links below.
 <td></td>
 </tr>
 </table>
-
-<br>
-<div markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Balloted Changes</h4>
-Added: Extension nhsNumberUnavailableReason
-</div>
 
 ---

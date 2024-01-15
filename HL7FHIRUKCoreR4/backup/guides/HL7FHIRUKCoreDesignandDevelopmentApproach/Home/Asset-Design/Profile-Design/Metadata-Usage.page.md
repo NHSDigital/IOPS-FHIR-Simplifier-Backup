@@ -119,7 +119,7 @@ View further information about <a href="https://www.hl7.org/fhir/R4/structuredef
         <td>0..1</td>
         <td>1..1</td>
         <td>markdown</td>
-        <td>This provides traceability of ''why'' the resource is either needed or ''why'' it is defined as it is.</td>
+        <td>This provides traceability of ''why'' the resource is either needed or ''why'' it is defined as it is. This SHOULD contain the correct usage of the profile, for instance when it is similar to another profile examples of the expected use cases and examples which would be a misuse of the profile. The purpose is not to record the scope if these are subject to change, these SHALL be entered into the IG 'example use cases' section instead. </td>
         </tr>
     <tr>
         <td>copyright</td>

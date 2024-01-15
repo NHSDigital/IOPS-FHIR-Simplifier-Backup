@@ -1,6 +1,10 @@
 ---
 topic: Home-Guide
 ---
+## Home 
+
+---
+
 ## UK Core Implementation Guide Current Draft Build ##
 
 <p>
@@ -43,6 +47,8 @@ This guidance covers items such as:
 <li>Further implementation guidance related to medication that has been developed by NHS England.</li>
 </div>
 
+---
+
 ### How to Read This Guide ###
 
 This Guide is divided into several pages which are listed at the top of each page in the menu bar.
@@ -57,6 +63,7 @@ This Guide is divided into several pages which are listed at the top of each pag
 <li>Profiles and Extensions: The  header for pages about Extensions and Profiles
 <ul>
   <li>{{pagelink:Library-Extensions}}: The Extensions which have been defined for the UK Core.</li>
+  <li>{{pagelink:Library-Extensions-All}}: This is the rendering of all Extensions defined for use within the UK Core.</li>
   <li>{{pagelink:Library-Profiles}}: The Profiles which have been defined for the UK Core.</li>
 </ul>
 </li>
@@ -79,6 +86,8 @@ This Guide is divided into several pages which are listed at the top of each pag
 <li>{{pagelink:Home-Downloads}}:  List of downloads for this implementation guide</li>
 <li>{{pagelink:Home-Glossary}}:  List of abbreviations and external links used in this implementation guide</li>
 </ul>
+
+---
 
 <div markdown="span" class="alert alert-warning" role="alert"><h4 id="Licence"><i class="fa fa-legal"></i> Licensing and Publisher</h4>
 <ul>

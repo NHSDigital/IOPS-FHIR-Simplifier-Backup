@@ -17,7 +17,7 @@
         {{tree:https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-DiagnosticReport-1}}
     </div>
     <div role="tabpanel" class="tab-pane" id="dictionary-1">
-        {{dict:https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Dia}} 
+        {{dict:https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-DiagnosticReport-1}} 
     </div>
   </div>
 </div>

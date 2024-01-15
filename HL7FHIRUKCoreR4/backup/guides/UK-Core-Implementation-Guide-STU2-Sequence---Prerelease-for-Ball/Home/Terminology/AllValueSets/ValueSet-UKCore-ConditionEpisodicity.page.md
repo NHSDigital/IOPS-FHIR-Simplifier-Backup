@@ -1,9 +1,4 @@
-## UKCore Condition Episodicity
-
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
-
-This ValueSet underwent Clinical and Technical Assurance during Sprint 4. This is a new ValueSet, and should undergo review in this STU2 ballot.
-</div>
+## UK Core Condition Episodicity
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>

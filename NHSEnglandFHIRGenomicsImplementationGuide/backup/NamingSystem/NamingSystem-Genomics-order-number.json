@@ -6,6 +6,30 @@
   "kind": "identifier",
   "date": "2023-09-15",
   "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "name": "NHS Genomic Medicine Service",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "england.genomics@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
   "responsible": "NHS Genomic Interop Programme",
   "description": "Genomic Medicine Service Unique Order Number",
 	"usage": "Assigned by central GMS system on receipt of a test order",

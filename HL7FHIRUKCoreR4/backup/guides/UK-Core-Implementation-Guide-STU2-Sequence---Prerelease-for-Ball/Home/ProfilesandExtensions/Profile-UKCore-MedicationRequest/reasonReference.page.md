@@ -2,7 +2,7 @@
 
 Reference to `Condition` or `Observation` that supports why the prescription is being written by reference. 
 
-The resource being referenced SHALL conform to one of the following:
+The resource being referenced SHOULD conform to one of the following:
 - {{pagelink:Profile-Condition-78787}}
 - {{pagelink:Profile-Observation-67521}}
 

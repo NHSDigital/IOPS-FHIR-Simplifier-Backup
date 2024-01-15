@@ -1,9 +1,9 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to one of the following:
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
 - [MolecularSequence Resource](https://hl7.org/fhir/R4/molecularsequence.html)
 - {{pagelink:Profile-Observation}}
-- {{pagelink:Profile-QuestionnaireResponse}}
+- [UKCore-QuestionnaireResponse (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-QuestionnaireResponse?version=current)
 
 ---

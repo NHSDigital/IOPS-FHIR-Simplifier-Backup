@@ -1,5 +1,5 @@
 ## `performer`
-Indicates who performed the immunisation event by reference. The resource being referenced SHALL conform to one of the following: 
+Indicates who performed the immunisation event by reference. The resource being referenced SHOULD conform to one of the following: 
 - {{pagelink:Profile-Organization-94604}}
 - {{pagelink:Profile-Practitioner-10758}}
 - {{pagelink:Profile-PractitionerRole-55046}}

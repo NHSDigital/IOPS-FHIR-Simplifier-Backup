@@ -3,21 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence
 ---
 ## StructureDefinition Extension-UKCore-Evidence
 
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreEvidence'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-AllergyIntolerance,text:AllergyIntolerance}}</td>
@@ -32,9 +17,13 @@ select
 {{pagelink:Example-UKCore-Extension-Evidence}}
 <br><br>
 </div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-Evidence/~issues?level=File">Report Issue for Extension-UKCore-Evidence</a>.
+</div>
 
 
 <h3 id="guidance-evidence">Extension Specific Guidance</h3>
-The resource being referenced SHALL conform to the following {{pagelink:Profile-DiagnosticReport}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-DiagnosticReport}}.
 
 ---

@@ -1,0 +1,21 @@
+<Flag xmlns="http://hl7.org/fhir">
+    <id value="FGM-ActiveFlag-Example" />
+    <status value="active" />
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="902961000000107" />
+            <display value="Family history of FGM (female genital mutilation)" />
+        </coding>
+        <text value="Family history of FGM (female genital mutilation)" />
+    </code>
+    <subject>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9000000009" />
+        </identifier>
+    </subject>
+    <period>
+        <start value="2019-12-10" />
+    </period>
+</Flag>

@@ -1,6 +1,6 @@
 ## <code>{{page-title}}</code>
 
-The resource being referenced SHALL conform to the following:
+The resource being referenced SHOULD conform to the following:
 
 - [PlanDefinition Resource](https://hl7.org/fhir/R4/plandefinition.html)
 - [Measure Resource](https://hl7.org/fhir/R4/measure.html)

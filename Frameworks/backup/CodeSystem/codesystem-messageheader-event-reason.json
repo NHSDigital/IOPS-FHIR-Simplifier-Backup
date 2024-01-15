@@ -1,0 +1,244 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "EventType",
+    "url": "https://fhir.nhs.uk/CodeSystem/EventType",
+    "version": "1.3.0",
+    "name": "EventType",
+    "status": "draft",
+    "date": "2021-10-12T00:00:00+00:00",
+    "publisher": "NHS Digital",
+    "contact": [
+      {
+        "name": "Interoperability Team",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "interoperabilityteam@nhs.net",
+            "use": "work"
+          }
+        ]
+      }
+    ],
+    "description": "MessageHeader event reason code",
+    "copyright": "Copyright © 2019 NHS Digital",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+      {
+        "code": "additional-demographics",
+        "display": "Additional Demographics"
+      },
+      {
+        "code": "admission-details",
+        "display": "Admission Details"
+      },
+      {
+        "code": "allergies-and-adverse-reactions",
+        "display": "Allergies and Adverse Reactions"
+      },
+      {
+        "code": "assessment-scales",
+        "display": "Assessment Scales"
+      },
+      {
+        "code": "birth-details",
+        "display": "Birth Details"
+      },
+      {
+        "code": "blood-spot-sample-taken",
+        "display": "Blood Spot Sample Taken"
+      },
+      {
+        "code": "clinical-risk-factors",
+        "display": "Clinical Risk Factors"
+      },
+      {
+        "code": "problem-list",
+        "display": "Problem List"
+      },
+      {
+        "code": "discharge-details",
+        "display": "Discharge Details"
+      },
+      {
+        "code": "early-years-progress",
+        "display": "Early Years Progress"
+      },
+      {
+        "code": "emergency-care-attendance",
+        "display": "Emergency Care Attendance"
+      },
+      {
+        "code": "examination-findings",
+        "display": "Examination Findings"
+      },
+      {
+        "code": "family-history",
+        "display": "Family History"
+      },
+      {
+        "code": "feeding-status",
+        "display": "Feeding Status"
+      },
+      {
+        "code": "vaccinations",
+        "display": "Vaccinations"
+      },
+      {
+        "code": "individual-requirements",
+        "display": "Individual Requirements"
+      },
+      {
+        "code": "information-and-advice-given",
+        "display": "Information and Advice Given"
+      },
+      {
+        "code": "observations",
+        "display": "Observations"
+      },
+      {
+        "code": "medication-statement",
+        "display": "Medication Statement"
+      },
+      {
+        "code": "developmental-skills",
+        "display": "Developmental Skills"
+      },
+      {
+        "code": "newborn-hearing",
+        "display": "Newborn Hearing"
+      },
+      {
+        "code": "parent-guardian-or-personal-comment",
+        "display": "Parent Guardian or Personal Comment"
+      },
+      {
+        "code": "personal-contacts",
+        "display": "Personal Contacts"
+      },
+      {
+        "code": "nipe-outcome",
+        "display": "NIPE outcome"
+      },
+      {
+        "code": "plan-and-requested-actions",
+        "display": "Plan and Requested Actions"
+      },
+      {
+        "code": "professional-summary",
+        "display": "Professional Summary"
+      },
+      {
+        "code": "professional-contacts",
+        "display": "Professional Contacts"
+      },
+      {
+        "code": "referral",
+        "display": "Referral"
+      },
+      {
+        "code": "safety-alerts",
+        "display": "Safety Alerts"
+      },
+      {
+        "code": "social-context-household",
+        "display": "Social Context Household"
+      },
+      {
+        "code": "social-context",
+        "display": "Social Context"
+      },
+      {
+        "code": "educational-history",
+        "display": "Educational History"
+      },
+      {
+        "code": "legal-information",
+        "display": "Legal Information"
+      },
+      {
+        "code": "blood-spot-card-received",
+        "display": "Blood Spot Card Received"
+      },
+      {
+        "code": "blood-spot-test-outcome",
+        "display": "Blood Spot Test Outcome"
+      },
+      {
+        "code": "medication-administration",
+        "display": "Medication Administration"
+      },
+      {
+        "code": "investigation-results",
+        "display": "Investigation Results"
+      },
+      {
+        "code": "national-population-failsafe-alert",
+        "display": "National Population Failsafe Alert"
+      },
+      {
+        "code": "national-population-failsafe-alert-nullify",
+        "display": "National Population Failsafe Alert Nullify"
+      },
+      {
+        "code": "pds-change-of-gp",
+        "display": "PDS Change of GP"
+      },
+      {
+        "code": "pds-change-of-address",
+        "display": "PDS Change of Address"
+      },
+      {
+        "code": "pds-birth-notification",
+        "display": "PDS Birth Notification"
+      },
+      {
+        "code": "pds-death-notification",
+        "display": "PDS Death Notification"
+      },
+      {
+        "code": "pds-record-change",
+        "display": "PDS Record Change"
+      },
+      {
+        "code": "failsafe-message-gp",
+        "display": "Failsafe Message GP"
+      },
+      {
+        "code": "failsafe-message-hvs",
+        "display": "Failsafe Message HVS"
+      },
+      {
+        "code": "failsafe-message-bloodspot-outcome",
+        "display": "Failsafe Message Bloodspot Outcome"
+      },
+      {
+        "code": "failsafe-message-nipe-newborn",
+        "display": "Failsafe Message NIPE Newborn"
+      },
+      {
+        "code": "failsafe-message-newborn-hearing",
+        "display": "Failsafe Message Newborn Hearing"
+      },
+      {
+        "code": "failsafe-message-response-gp",
+        "display": "Failsafe Message Response GP"
+      },
+      {
+        "code": "failsafe-message-response-hvs",
+        "display": "Failsafe Message Response HVS"
+      },
+      {
+        "code": "failsafe-message-response-bloodspot-outcome",
+        "display": "Failsafe Message Response Bloodspot Outcome"
+      },
+      {
+        "code": "failsafe-message-response-nipe-newborn",
+        "display": "Failsafe Message Response NIPE Newborn"
+      },
+      {
+        "code": "failsafe-message-response-newborn-hearing",
+        "display": "Failsafe Message Response Newborn Hearing"
+      }
+    ]
+  }

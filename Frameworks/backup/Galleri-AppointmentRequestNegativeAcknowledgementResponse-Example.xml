@@ -1,0 +1,43 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="6e7b1dbb-77d2-4ddd-ae0d-e4862a306c1d" />
+  <type value="message" />
+  <entry>
+    <fullUrl value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
+    <resource>
+      <MessageHeader>
+        <eventCoding>
+          <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
+          <code value="notification" />
+          <display value="Event Notification" />
+        </eventCoding>
+        <destination>
+          <name value="Destination Org Ltd" />
+          <endpoint value="${DestinationMeshMailboxId}" />
+        </destination>
+        <source>
+          <endpoint value="${NhsMeshMailboxId}" />
+        </source>
+        <response>
+          <identifier value="f50c58ea-543f-4530-99fa-ceb7b9dbbed5" />
+          <code value="fatal-error" />
+          <details>
+            <reference value="d9c93f48-abb9-4aa4-aa22-ef2f76485477" />
+          </details>
+        </response>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome" />
+    <resource>
+      <OperationOutcome>
+        <id value="d9c93f48-abb9-4aa4-aa22-ef2f76485477" />
+        <issue>
+          <severity value="fatal" />
+          <code value="structure" />
+          <diagnostics value="Unable to parse XML content." />
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+</Bundle>

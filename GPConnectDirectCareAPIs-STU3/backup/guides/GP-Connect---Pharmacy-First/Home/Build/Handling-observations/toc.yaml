@@ -1,0 +1,22 @@
+- name: Index
+  filename: Index.page.md
+- name: 'Category: social history and vital signs'
+  filename: Category--social-history-and-vital-signs.page.md
+- name: Social history observations
+  filename: Social-history-observations.page.md
+- name: Vital signs observations
+  filename: Vital-signs-observations.page.md
+- name: Conventions
+  filename: Conventions.page.md
+- name: Pulse rate
+  filename: Pulse-rate.page.md
+- name: Blood pressure triplets
+  filename: Blood-pressure-triplets.page.md
+- name: Representing an average ABPM reading
+  filename: Representing-an-average-ABPM-reading.page.md
+- name: How to send an ABPM report
+  filename: How-to-send-an-ABPM-report.page.md
+- name: Reference ranges and interpretation
+  filename: Reference-ranges-and-interpretation.page.md
+- name: Self-reported measurements
+  filename: Self-reported-measurements.page.md

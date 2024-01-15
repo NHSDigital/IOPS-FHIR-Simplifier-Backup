@@ -1,31 +1,13 @@
-## ValueSet-England-ChildProtectionPlan
+---
+subject: https://fhir.nhs.uk/England/ValueSet/England-ChildProtectionPlan
+---
 
+## England Child Protection Plan
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
- <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-</div>
+{{render:FHIR-Implementation-Guide-Home-Terminology-All-ValueSets-ValueSetTemplate}}
 
-<div id="HTML View" class="tabcontent" style="display:block">
-  <h3>HTML View</h3>
-{{render:https://fhir.nhs.uk/ValueSet/England-ChildProtectionPlan}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table:https://fhir.nhs.uk/ValueSet/England-ChildProtectionPlan}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
- {{xml:https://fhir.nhs.uk/ValueSet/England-ChildProtectionPlan}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
- {{json:https://fhir.nhs.uk/ValueSet/England-ChildProtectionPlan}}
+<div id="Feedback" class="tabcontent">
+<h4><a href='https://simplifier.net/NHS-England-Implementation-Guide/ValueSet-England-ChildProtectionPlan/~issues?level=File' target="_blank">Propose a change to ValueSet-England-Child-Protection-Plan </a></h4>
 </div>
 
 ---

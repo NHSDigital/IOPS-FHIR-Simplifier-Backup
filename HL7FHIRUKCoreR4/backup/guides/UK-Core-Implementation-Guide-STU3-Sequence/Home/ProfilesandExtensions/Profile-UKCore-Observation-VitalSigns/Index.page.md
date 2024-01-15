@@ -9,60 +9,11 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSig
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Profile added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns</a>.
 </div>
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationVitalSigns'
-select
-	Canonical_URL: url,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationVitalSigns'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
-<div class="tab fhirTree">
- <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
-</div>
-
-<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
-{{tree, buttons}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json}}
-</div>
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -127,6 +78,11 @@ from
 ```
 </span>
 </div>
+
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns</a>.
+</div>
 </nocheck>
 
 ### Example Usage Scenarios ###
@@ -143,6 +99,17 @@ The following are example usage scenarios for the UK Core Observation Vital Sign
 This is a derived profile of {{pagelink:Profile-Observation,text:UKCore-Observation}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
 
 This guidance is also designed to align with [https://hl7.org/fhir/R4/observation-vitalsigns.html](HL7 Observation Vital Signs guidance) where possible.
+
+The guidance on this page also applies to the following profiles, that are derived from the UK Core Observation Vital Signs profile:
+- {{pagelink:Profile-Observation-VitalSigns-BloodPressure}}
+- {{pagelink:Profile-Observation-VitalSigns-BMI}}
+- {{pagelink:Profile-Observation-VitalSigns-BodyHeight}}
+- {{pagelink:Profile-Observation-VitalSigns-BodyTemperature}}
+- {{pagelink:Profile-Observation-VitalSigns-BodyWeight}}
+- {{pagelink:Profile-Observation-VitalSigns-HeadCircumference}}
+- {{pagelink:Profile-Observation-VitalSigns-HeartRate}}
+- {{pagelink:Profile-Observation-VitalSigns-OxygenSaturation}}
+- {{pagelink:Profile-Observation-VitalSigns-RespirationRate}}
 
 ### Minimum Viable Content
 

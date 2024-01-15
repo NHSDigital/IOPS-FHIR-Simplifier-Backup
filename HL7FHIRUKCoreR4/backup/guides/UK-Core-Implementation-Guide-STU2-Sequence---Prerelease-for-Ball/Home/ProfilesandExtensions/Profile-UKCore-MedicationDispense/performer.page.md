@@ -1,6 +1,6 @@
 ## `performer`
 
-The `MedicationDispense.performer.actor` element SHALL conform to one the following:
+The `MedicationDispense.performer.actor` element SHOULD conform to one the following:
 
 - <a href="https://hl7.org/fhir/R4/Device.html">Device Resource</a>
 - {{pagelink:Profile-Organization-94604}}

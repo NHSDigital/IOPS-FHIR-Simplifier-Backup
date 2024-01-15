@@ -9,60 +9,11 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSig
 
 This Profile underwent Clinical and Technical Assurance during Sprint 7. This is a new Profile added to UK Core and should undergo review during the Sprint 7 review window.
 
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-BloodPressure/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BloodPressure<a>.
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-BloodPressure/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BloodPressure</a>.
 </div>
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationVitalSignsBloodPressure'
-select
-	Canonical_URL: url,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreObservationVitalSignsBloodPressure'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
-<div class="tab fhirTree">
- <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
-  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
-</div>
-
-<div id="Tree View" class="tabcontent expandedProfile" style="display:block">
-{{tree, buttons}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json}}
-</div>
+{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -111,6 +62,11 @@ from
 ```
 </span>
 </div>
+
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-BloodPressure/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-BloodPressure</a>.
+</div>
 </nocheck>
 
 ### Example Usage Scenarios ###
@@ -124,6 +80,12 @@ The following are example usage scenarios for the UK Core Observation Vital Sign
 ## Profile Specific Implementation Guidance: ##
 
 The UKCore-Observation-VitalSigns-BloodPressure profile further derives from {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}} and this page only shows the differences between the two. Refer to {{pagelink:Profile-Observation,text:UKCore-Observation}} and {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}} for more implementation guidance.
+
+An instance of the UKCore-Observation-VitalSigns-BloodPressure resource SHALL have the `Observation.code` element populated, with a LOINC "magic code" and SNOMED CT concept as detailed below. In addition, the individual Systolic and Diastolic readings SHALL be populated in `Observation.component` as detailed below.
+
+<div id="renderParent" title="Blood Pressure Observation structure">
+{{render:BloodPressure}}
+</div>
 
 ### Minimum Viable Content
 
@@ -143,7 +105,7 @@ The minimum viable content that all provider and consumer systems SHALL support 
 <td>A measurement method SHOULD be present.</td>
 </tr>
 <tr>
-<td><code>Observation.component.copde.coding</code></td>
+<td><code>Observation.component.code.coding</code></td>
 <td>A systolic blood pressure measurement SHALL be present, and that SHALL have a LOINC "magic code", in addition to the SNOMED CT concept for the systolic blood pressure observation.
 <br>A diastolic blood pressure measurement SHOULD be present, and that SHALL have a LOINC "magic code", in addition to the SNOMED CT concept for the diastolic blood pressure observation.
 </td>

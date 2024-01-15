@@ -170,7 +170,7 @@
                 <intent value="order" />
                 <code>
                     <coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="401324008" />
                         <display value="Urinary microscopy, culture and sensitivities" />
@@ -244,9 +244,15 @@
                 </identifier>
                 <basedOn>
                     <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-                    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
                 </basedOn>
                 <status value="final" />
+				<category> 
+					<coding> 
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0074"/> 
+						<code value="LAB"/>
+						<display value="Laboratory" />	
+					</coding> 
+				</category>
                 <code>
                     <coding>
                         <system value="http://snomed.info/sct" />
@@ -292,9 +298,16 @@
 					<value value="02875aea-9815-4d1d-b34e-f9f29b859d02" />
 				</identifier>
 				<status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
 				<code>
 					<coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
 						<system value="http://snomed.info/sct" />
 						<code value="127800008" />
 						<display value="Microscopic urinalysis" />
@@ -342,9 +355,16 @@
                     <value value="eab75d90-ce08-40a4-8247-34aad0d58873" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- TBC - awaiting creation of SNOMED CT/UTL concept -->
+						<!-- TBC - awaiting creation of SNOMED CT concept -->
                         <system value="http://snomed.info/sct" />
                         <code value="TBC" />
                         <display value="Qualitative result of casts in mid-stream urine microscopy" />
@@ -386,9 +406,16 @@
                     <value value="e644abd4-2587-486b-b6fe-ea3be866df29" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="42331000237103" />
                         <display value="White blood cell count in urine" />
@@ -430,9 +457,16 @@
                     <value value="fc9d8f93-5cc7-43e8-8816-f4f438221b9f" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="43331000237105" />
                         <display value="Red blood cell count in urine" />
@@ -481,9 +515,16 @@
                     <value value="db372648-314a-481a-a793-736b0ec3be76" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
 						<system value="http://snomed.info/sct" />
                         <code value="49941000237104" />
                         <display value="Epithelial cells in mid-stream urine microscopy qualitative result" />
@@ -525,9 +566,16 @@
 					<value value="147dbdea-22e1-4327-8407-b92bf362e115" />
 				</identifier>
 				<status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
 				<code>
 					<coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
                         <system value="http://snomed.info/sct" />
 						<code value="117010004" />
 						<display value="Urine culture" />
@@ -567,9 +615,16 @@
                     <value value="83f33ad5-caf9-42f1-b85e-3382fd1718b8" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="42881000237105" />
                         <display value="Staphylococcus aureus culture qualitative result" />
@@ -611,9 +666,16 @@
 					<value value="4e505253-f4f4-4624-8348-e961ba157c88" />
 				</identifier>
 				<status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
 				<code>
 					<coding>
-						<!-- UTL Requestable (procedure) -->
+						<!-- From PaLM procedure reference set -->
 						<system value="http://snomed.info/sct" />
 						<code value="14788002" />
 						<display value="Antimicrobial susceptibility test" />
@@ -657,9 +719,16 @@
                     <value value="4fd65865-5e9f-4c86-b408-795c27d06449" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="54151000237102" />
                         <display value="Organism susceptibility to flucloxacillin" />
@@ -701,9 +770,16 @@
                     <value value="56f2ec6b-edd4-41a8-9a4c-4cbcb019b599" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="53781000237107" />
                         <display value="Organism susceptibility to trimethoprim" />
@@ -745,9 +821,16 @@
                     <value value="a8cde339-9608-4e33-b465-e06a711f11a5" />
                 </identifier>
                 <status value="final" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+						<code value="laboratory" />
+						<display value="Laboratory" />
+					</coding>
+				</category>
                 <code>
                     <coding>
-						<!-- UTL Reportable (observable entity) -->
+						<!-- From PaLM observable entity reference set -->
                         <system value="http://snomed.info/sct" />
                         <code value="53851000237109" />
                         <display value="Organism susceptibility to nitrofurantoin" />

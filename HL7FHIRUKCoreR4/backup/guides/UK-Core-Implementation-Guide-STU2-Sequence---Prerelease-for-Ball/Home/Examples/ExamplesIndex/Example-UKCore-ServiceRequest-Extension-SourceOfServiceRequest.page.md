@@ -10,17 +10,17 @@
 
 <div id="Table View" class="tabcontent" style="display:block">
   <h3>Table View</h3>
-{{table:UKCore-ServiceRequest-Extension-SourceOfServiceRequest-Example}}
+{{table:UKCore-Extension-SourceOfServiceRequest-Example}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:UKCore-ServiceRequest-Extension-SourceOfServiceRequest-Example}}
+{{xml:UKCore-Extension-SourceOfServiceRequest-Example}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:UKCore-ServiceRequest-Extension-SourceOfServiceRequest-Example}}
+{{json:UKCore-Extension-SourceOfServiceRequest-Example}}
 </div>
 
 ---

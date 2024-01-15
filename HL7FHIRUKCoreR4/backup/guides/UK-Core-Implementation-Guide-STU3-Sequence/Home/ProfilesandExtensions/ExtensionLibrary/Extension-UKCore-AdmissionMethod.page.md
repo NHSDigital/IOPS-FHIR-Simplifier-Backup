@@ -3,21 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionM
 ---
 ## StructureDefinition Extension-UKCore-AdmissionMethod
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreAdmissionMethod'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Encounter,text:Encounter.hospitalization}}</td>
@@ -31,6 +16,10 @@ select
   <b>Admission Method</b>- An example to illustrate the extension for an encounter to support the method by which an individual was admitted into hospital.<br>
   {{pagelink:Example-UKCore-Extension-AdmissionMethod}}
   <br><br>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-AdmissionMethod/~issues?level=File">Report Issue for Extension-UKCore-AdmissionMethod</a>.
 </div>
 
 <h3 id="guidance-admissionmethod">Extension Specific Guidance</h3>

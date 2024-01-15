@@ -3,20 +3,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrg
 ---
 ## StructureDefinition Extension-UKCore-BookingOrganization
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'ExtensionUKCoreBookingOrganization'
-select
-	Canonical_URL: url,
-	Description: description,
-	Profile_Purpose: purpose
-```
-</div>
-<br>
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Appointment,text:Appointment}}</td>
@@ -31,8 +17,12 @@ select
 {{pagelink:Example-UKCore-Extension-BookingOrganization}}
 <br><br>
 </div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-BookingOrganization/~issues?level=File">Report Issue for Extension-UKCore-BookingOrganization</a>.
+</div>
 
 <h3 id="guidance-bookingorganization">Extension Specific Guidance</h3>
-The resource being referenced SHALL conform to the following {{pagelink:Profile-Organization}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Organization}}.
 
 ---

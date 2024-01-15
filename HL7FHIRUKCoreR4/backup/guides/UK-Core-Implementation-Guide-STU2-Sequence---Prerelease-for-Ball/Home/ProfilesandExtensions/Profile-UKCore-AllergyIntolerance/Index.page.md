@@ -119,7 +119,6 @@ Where migrated data is not coded, uses retired / invalidated codes, or coded wit
 
 ---
 
-<div markdown="span" class="alert alert-success" role="alert">
 <h3>Minimum Viable Content </h3>
 
 A minimum viable content that all provider and consumer systems SHALL support are the following elements.
@@ -154,7 +153,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Clinical assessment of the severity of the reaction event as a whole</td>
 </tr>
 </table>
-</div>
 
 ---
 

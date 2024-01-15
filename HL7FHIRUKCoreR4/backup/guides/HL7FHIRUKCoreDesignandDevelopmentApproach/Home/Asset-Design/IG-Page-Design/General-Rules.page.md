@@ -19,6 +19,6 @@
 - When refering to SNOMED CT codes, the words Concept, Description, and Id SHALL be used in Title case.
 - FHIR elements SHALL be fully qualified when discussed in guidance, e.g. `Procedure.note.authorReference` rather than `note.author`
 - CSS shall be used to control table column widths
-- All asset and major IG page design changes will be logged in the Version Hsitory change log
+- All asset and major IG page design changes will be logged in the Version History change log
 
 ---
