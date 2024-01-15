@@ -1,6 +1,4 @@
-- name: Problems - Data Model
-  filename: Problems---Data-Model.page.md
-- name: PFS Recommendation
-  filename: PFS-Recommendation.page.md
-- name: Further Information
-  filename: Further-Information.page.md
+- name: Problems Data Model
+  filename: Problems-Data-Model.page.md
+- name: Problems Guidance
+  filename: Problems-Guidance.page.md
