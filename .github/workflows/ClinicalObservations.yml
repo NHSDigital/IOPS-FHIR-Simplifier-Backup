@@ -55,7 +55,7 @@ jobs:
           script: |
             const { repo, owner } = context.repo;
             const result = await github.rest.pulls.create({
-              title: '${{ steps.today.outputs.TODAY }}',
+              title: 'ClinicalObservations ${{ steps.today.outputs.TODAY }}',
               owner,
               repo,
               head: '${{ steps.branch-name.outputs.BRANCH }}',
