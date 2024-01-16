@@ -1,7 +1,7 @@
 ---
 topic: R4ObservationTestGroup
 ---
-## R4 Profile: UKCore-Observation-LabGroup (Test Group)
+## R4 Profile: UKCore-Observation-Group-Lab (Test Group)
 
 ### Summary
 A set of related tests that are reported together, for example a Full Blood Count. Test groups are often referred to as batteries, panels or profiles. The test group is represented as a FHIR <code>Observation</code> with references to other <code>Observations</code> that contain the associated test results. The references are defined using <code>Observation.hasMember</code>. 
@@ -15,7 +15,7 @@ Refer to the {{pagelink:R4ObservationTestResult}} profile definition and the {{p
 ### Resource and Profile Links
 * R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
 * R4 UK Core Profile: [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)
-* R4 UK Core Profile (Lab): [UKCore-Observation-LabGroup](https://simplifier.net/hl7fhirukcorer4/ukcore-observation-labgroup)
+* R4 UK Core Profile (Lab): [UKCore-Observation-Group-Lab](https://simplifier.net/hl7fhirukcorer4/ukcore-observation-group-lab)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
@@ -27,21 +27,21 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
     <h4>Snapshot View</h4>
-    {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, snapshot}}
+    {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
     <h4>Differential View</h4>
-    {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, diff}}
+    {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
     <h4>Hybrid View</h4>
-    {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, hybrid}}
+    {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab, hybrid}}
 </div>
 
 ### Additional Guidance
-The following table includes additional guidance that should be followed when implementing the `UKCore-Observation-LabGroup` profile. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
+The following table includes additional guidance that should be followed when implementing the `UKCore-Observation-Group-Lab` profile. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
 
 An example of how each supported data element may be populated is provided in {{pagelink:R4SnippetsObservationTestGroup}}.
 
@@ -71,7 +71,7 @@ An example of how each supported data element may be populated is provided in {{
             <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-            <td>The canonical URL for the <code>UKCore-Observation-LabGroup</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup</code></td>
+            <td>The canonical URL for the <code>UKCore-Observation-LabGroup</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab</code></td>
         </tr>
         <tr>
             <td>identifier</td>
