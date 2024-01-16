@@ -138,7 +138,7 @@ Where the unit of measure applicable to a rate range is defined within UCUM the 
 **give at 1-2 litres per minute using rateRange**
 ```xml
 <doseAndRate>
-	<rateRange>
+    <rateRange>
 		<low>
 			<value value="1"/>
 			<unit value="liter per minute"/>
@@ -154,5 +154,39 @@ Where the unit of measure applicable to a rate range is defined within UCUM the 
 	</rateRange>
 </doseAndRate>
 ```
+
+### Period of no (zero) administration
+
+Where a dosage instruction includes a defined period of no (zero) administration then the `doseAndRate` element can be specified with a 0 (zero) quantity.
+
+```xml
+<rateQuantity>
+    <value value="0" />
+    <unit value="millilitre per hour" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="mL/h" />
+</rateQuantity>
+```
+or
+```xml
+<rateQuantity>
+    <value value="0" />
+    <unit value="capsule"/>
+    <system value="http://snomed.info/sct"/>
+    <code value="732937005"/>
+</rateQuantity>
+```
+
+
+<!--See the complete example for [Colchicine tablets](DosageExamples-Wherefree-textinstructionsarerequired#Colchicinetablets) which includes an instruction for a period of time where medication should not be taken;
+
+> Do not repeat course for 3 days
+
+Another clinical example would be for a Lidocaine medicated plaster. A typical written dosage instruction would be;
+
+> Apply 2 patches once daily to the affected area for up to 12 hours, followed by a 12-hour plaster-free period; to be applied to intact, dry, non-hairy, non-irritated skin.
+
+The R4 Dosage structure cannot describe, in a machine readable way, the clauses "*Do not repeat course for 3 days*" and “*followed by a 12-hour plaster-free period*”.
+-->
 
 ---
