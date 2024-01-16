@@ -2,5 +2,7 @@
   filename: Index.page.md
 - name: Bindings
   filename: Bindings.page.md
+- name: category
+  filename: category.page.md
 - name: reasonReference
   filename: reasonReference.page.md

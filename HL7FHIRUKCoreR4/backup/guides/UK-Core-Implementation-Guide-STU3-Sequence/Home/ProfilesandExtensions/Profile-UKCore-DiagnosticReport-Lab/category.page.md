@@ -1,8 +1,6 @@
 ## `{{page-title}}`
 
-This element has an open slice, differentiated by the value of <code>DiagnosticReport.category.coding.code</code>, and MAY be used to differentiate the specific laboratory's speciality.
-
-There is one defined slice, with a fixed value, which SHALL be populated when this profile is used.
+This element has an open slice, differentiated by the value of `DiagnosticReport.category.coding.code`, and MAY be used to differentiate the specific laboratory's speciality. There is one defined mandatory slice `DiagnosticReport.category:laboratory`, with a fixed value, which SHALL be populated when this profile is used, and additional category code's can be populated.
 
 ### `DiagnosticReport.category:laboratory`
 The following SHALL be used for this profile:
