@@ -1,11 +1,7 @@
 ## {{page-title}}
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note:</strong> This example is under review and may be subject to change.
-</div>
-
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Product-based</strong> AMP prescription using free-text additional instructions to convery drug free interval.
+    <strong>Product-based</strong> AMP prescription with a period of no drug administration.
 </div>
 
 <!--// start of code snippet -->
@@ -28,16 +24,16 @@
   <!-- Tab panes -->
   <div class="tab-content snippet">
     <div role="tabpanel" class="tab-pane active" id="xml-1">
-      {{xml:example-dosage-microgynon}}
+      {{xml:example-dosage-microgynon2}}
     </div>
     <div role="tabpanel" class="tab-pane" id="json-1">
-      {{json:example-dosage-microgynon}}
+      {{json:example-dosage-microgynon2}}
     </div>
     <div role="tabpanel" class="tab-pane" id="table-1">
-      {{table:example-dosage-microgynon}}
+      {{table:example-dosage-microgynon2}}
     </div>
     <div role="tabpanel" class="tab-pane" id="tree-1">
-      {{tree:example-dosage-microgynon}}
+      {{tree:example-dosage-microgynon2}}
     </div>
   </div>
 </div>
@@ -47,7 +43,7 @@ Example on-screen presentation:
 
 <div style="background-color:lightgrey;padding:15px;">
 <div style="font-size:larger;font-weight:bold;">Microgynon 30 tablets (Bayer Plc)</div>
-1 tablet - daily - for 21 days - oral - subsequent courses repeated after 7-day tablet-free interval
+1 tablet - daily - for 21 days - oral, then 0 tablet - for 7 days
 </div>
 
 ---

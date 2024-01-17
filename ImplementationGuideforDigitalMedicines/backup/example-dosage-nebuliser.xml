@@ -35,10 +35,7 @@
     <display value="Dr Maikeu Well" />
   </recorder>
   <dosageInstruction>
-    <text value="5 milligram - every 20 to 30 minutes - Inhalation - as required - to be given via a nebuliser" />
-    <additionalInstruction>
-      <text value="to be given via a nebuliser" />
-    </additionalInstruction>
+    <text value="Nebulise - 5 milligram - every 20 to 30 minutes - Inhalation - as required" />
     <timing>
       <repeat>
         <frequency value="1" />
@@ -55,6 +52,13 @@
         <display value="Inhalation" />
       </coding>
     </route>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="71791000001107" />
+        <display value="Nebulise" />
+      </coding>
+    </method>
     <doseAndRate>
       <doseQuantity>
         <value value="5" />

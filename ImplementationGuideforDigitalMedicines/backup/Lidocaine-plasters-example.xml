@@ -1,5 +1,5 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
-  <id value="d4b05cfb-d444-4490-824a-67c55596c610" />
+  <id value="18a8ea33-dc5f-4fb7-985e-acc474bf97cd" />
   <meta>
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
   </meta>
@@ -8,15 +8,15 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
-      <code value="inpatient" />
-      <display value="inpatient" />
+      <code value="community" />
+      <display value="community" />
     </coding>
   </category>
   <medicationCodeableConcept>
     <coding>
       <system value="https://dmd.nhs.uk" />
-      <code value="42111000001107" />
-      <display value="Microgynon 30 tablets (Bayer Plc)" />
+      <code value="116281000001109" />
+      <display value="Lidocaine 5% medicated plasters" />
     </coding>
   </medicationCodeableConcept>
   <subject>
@@ -25,7 +25,7 @@
       <value value="9999999999" />
     </identifier>
   </subject>
-  <authoredOn value="2020-05-15T15:00:00Z" />
+  <authoredOn value="2023-01-17T09:30:00Z" />
   <requester>
     <reference value="urn:staff-1112" />
     <display value="Dr Maikeu Well" />
@@ -35,56 +35,58 @@
     <display value="Dr Maikeu Well" />
   </recorder>
   <dosageInstruction>
-    <text value="1 tablet - daily - for 21 days - oral" />
     <sequence value="1" />
+    <text value="Apply 2 plasters - once daily - over 12 hours - Applied to intact, dry, non-hairy, non-irritated skin" />
+    <additionalInstruction>
+      <text value="Applied to intact, dry, non-hairy, non-irritated skin" />
+    </additionalInstruction>
     <timing>
       <repeat>
-        <boundsDuration>
-          <value value="21" />
-          <unit value="day" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="d" />
-        </boundsDuration>
         <frequency value="1" />
         <period value="1" />
         <periodUnit value="d" />
+        <duration value="12" />
+        <durationUnit value="hour" />
       </repeat>
     </timing>
-    <route>
+    <method>
       <coding>
         <system value="http://snomed.info/sct" />
-        <code value="26643006" />
-        <display value="oral" />
+        <code value="417924000" />
+        <display value="Apply" />
       </coding>
-    </route>
+    </method>
     <doseAndRate>
       <doseQuantity>
-        <value value="1" />
-        <unit value="tablet" />
+        <value value="2" />
+        <unit value="plaster" />
         <system value="http://snomed.info/sct" />
-        <code value="428673006" />
+        <code value="655791000001103" />
       </doseQuantity>
     </doseAndRate>
   </dosageInstruction>
   <dosageInstruction>
-    <text value="0 tablet - for 7 days" />
     <sequence value="2" />
+    <text value="Apply 0 plasters - over 12 hours" />
     <timing>
       <repeat>
-        <boundsDuration>
-          <value value="7" />
-          <unit value="day" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="d" />
-        </boundsDuration>
+        <duration value="12" />
+        <durationUnit value="hour" />
       </repeat>
     </timing>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="417924000" />
+        <display value="Apply" />
+      </coding>
+    </method>
     <doseAndRate>
       <doseQuantity>
         <value value="0" />
-        <unit value="tablet" />
+        <unit value="plaster" />
         <system value="http://snomed.info/sct" />
-        <code value="428673006" />
+        <code value="655791000001103" />
       </doseQuantity>
     </doseAndRate>
   </dosageInstruction>
