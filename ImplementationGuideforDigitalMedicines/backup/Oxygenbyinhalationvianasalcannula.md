@@ -1,7 +1,7 @@
 ## {{page-title}}
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Dose-based</strong> VTM prescription where use of a 'nasal cannula' is expressed as free-text additional instruction.
+    <strong>Dose-based</strong> VTM prescription where use of a 'nasal cannula' device is expressed as free-text additional instruction.
 </div>
 
 <!--// start of code snippet -->
