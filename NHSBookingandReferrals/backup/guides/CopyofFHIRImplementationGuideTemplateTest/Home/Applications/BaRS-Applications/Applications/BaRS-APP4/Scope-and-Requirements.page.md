@@ -38,6 +38,14 @@ For this application we will be referring to the actors as 'Requester' and the '
     * scene safety information
     * timing information to support the timely delivery of care and reporting
 
+**Validation Responses**
+* There are two supported Validation Responses in the workflow; Interim and Full
+* The Interim Response is an acknowlegdement that the Validation Responder has started the request assessment and **must** be sent to the Requester
+	* The Interim Response contains minimal detail, enouogh to convey the status of the request has changed and is now 'in progress'
+* The Full Response contains the Validation Outcome, raising, lowering or preserving, the original ambulance category established by the 999 service, and **must** be sent to the Requester
+* If a Validation Outcome raises the ambulance category to either a CAT 1 or CAT 2, the Responder **must** raise an ambulance with the Requesting 999 service using the existing CDA over ITK method
+	* The new ambulance request, raised via ITK, **must** be included in the Full Response as an additional entity (FHIR Encounter)
+
 **API-M**
 * All requests and response associated with BaRS must occur through the BaRS API Proxy
 

@@ -8,8 +8,6 @@
   filename: BaRS-APP3
 - name: BaRS-APP4
   filename: BaRS-APP4
-- name: DELETE
-  filename: DELETE
 - name: BaRS-APP5
   filename: BaRS-APP5
 - name: BaRS-APP6

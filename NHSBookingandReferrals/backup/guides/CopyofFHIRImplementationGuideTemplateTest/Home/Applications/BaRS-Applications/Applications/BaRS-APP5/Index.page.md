@@ -2,7 +2,31 @@
 topic: Application5
 ---
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This guide is currently under development <hr><p> This is a preview of a developing guide for information only. With the exception of those involved in developing solutions for the first of type (private beta), It is not intended to be used until the completed v1.0.0 documentation for this application is released <p> If you are interested in developing a BaRS compliant solution right now for the use cases covered by this application, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch</div>
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This guide is currently under development <hr><p> This is a preview of a developing guide for information only. With the exception of those involved in developing solutions for the first of type (private beta), It is not intended to be used until the completed v1.0.0 documentation for this application is released <p> If you are interested in developing a BaRS compliant solution right now for the use cases covered by this application, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch.
+<p>
+
+<b>Versioning information<b>
+<p>
+<table>
+<thead>
+	<tr>
+		<th>Application Version</th>
+		<th>BaRS Core Version</th>
+		<th>BaRS Guide Version</th>
+		<th>BaRS API Specification Version</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Application 5 v1.0.0-beta2</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">Core v1.2.1 and above</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">BaRS v1.4.0 and above</td>
+		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">API Spec v1.1.0 and above</a></td>
+	</tr>
+</tbody>
+</table>
+
+</div>
 
 # Referrals into Pharmacy (Application 5)
 
