@@ -2,6 +2,8 @@
 topic: design-core
 ---
 
+# BaRS Core
+
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b>
 <p>
 
@@ -24,7 +26,7 @@ topic: design-core
 </table>
 </div>
 
-# BaRS Core
+
 
 BaRS consists of BaRS Core that provides a core set of functionality and BaRS Applications that provide distinct functionality for each use case.
 
