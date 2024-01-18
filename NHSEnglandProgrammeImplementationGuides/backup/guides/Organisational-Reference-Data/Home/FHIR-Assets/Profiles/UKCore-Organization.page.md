@@ -1,12 +1,16 @@
 ---
-subject: https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedDateTime 
+subject: https://fhir.nhs.uk/England/StructureDefinition/England-Organization-ODS
 ---
-## {{page-title}}
+# {{page-title}}
 
-Usage:
-- Context of use: Organization and OrganizationAffiliation
-- This extension extends the Organization and the OrganizationAffiliation resources to support the exchange of information describing the specific business related date and/or time.
-<br>
+This ODS testing profile is provided for implementation testing:
+- it is not necessary to reference the profile in the Resource.meta. 
+
+## Conformance Rules
+
+Reference - {{pagelink:Home/Design/Data-mapping.page.md}}
+
+## Testing Profile
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
@@ -40,10 +44,14 @@ Usage:
 </div>
 
 <div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-England-Implementation-Guide/Extension-England-TypedDateTime/~issues?level=File' target="_blank">Propose a change to Extension-England-TypedDateTime</a></h4>
+<h4><a href='https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-Organization-ODS/~issues?level=File' target="_blank">Propose a change to England-Organization-ODS</a></h4>
 </div>
 
-<br>
+## Derived From
 
-<iframe src="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/profiles-and-extensions/all-extensions/extension-england-typeddatetime?version=1.1.0" height="800px" width="100%"></iframe>
+<iframe src="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=1.7.0" height="800px" width="100%"></iframe>
+
+
+
+---
 

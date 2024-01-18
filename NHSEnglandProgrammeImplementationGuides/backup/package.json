@@ -5,10 +5,10 @@
   "fhirVersions": [
     "4.0.1"
   ],
+  "jurisdiction": "urn:iso:std:iso:3166:-2:GB-ENG",
   "dependencies": {
-    "hl7.fhir.r4.core": "4.0.1",
     "fhir.r4.ukcore.stu3.currentbuild": "0.0.8-pre-release",
+    "hl7.fhir.r4.core": "4.0.1",
     "fhir.r4.nhsengland.stu1": "1.1.0"
-  },
-  "jurisdiction" : "urn:iso:std:iso:3166:-2:GB-ENG"
+  }
 }

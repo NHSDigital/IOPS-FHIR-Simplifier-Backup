@@ -45,7 +45,7 @@
       <valueBoolean value="true" />
     </extension>
   </extension>
-  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-DateTime">
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedDateTime">
     <extension url="type">
       <valueCoding>
         <system value="https://fhir.nhs.uk/England/CodeSystem/England-ODSDateTime" />

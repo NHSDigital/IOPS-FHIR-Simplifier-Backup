@@ -9,7 +9,7 @@
       </valueCoding>
     </extension>
     <extension url="dateTime">
-      <valueDateTime value="2002-03-31" />
+      <valueDateTime value="2023-12-31" />
     </extension>
   </extension>
   <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">

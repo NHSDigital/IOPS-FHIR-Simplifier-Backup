@@ -1,11 +1,12 @@
 ---
-subject: https://fhir.nhs.uk/England/CapabilityStatement/England-ODS-Requirements
+subject: https://fhir.nhs.uk/England/SearchParameter/England-ODS-ActiveRole
 ---
-## {{page-title}}
+# {{page-title}}
 
-The Capability Statement documents the required capabilities (behaviours) of a FHIR Server or Client Application.
-
-The ODS-FHIR-API Capability Statement documents required capabilities for the FHIR Server serving the ODS as part of NHS Spine.
+Usage:
+- This SearchParameter allows the searching for Organization instance, where the Extension-England-OrganisationRole is present and where the <code>active</code> element is true
+- This returns the <code>roleCode</code> element
+- The fhirPath expression is: <code>Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole').where(extension('active').value=true).extension('roleCode').value</code>
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
@@ -44,5 +45,9 @@ The ODS-FHIR-API Capability Statement documents required capabilities for the FH
 </div>
 
 <div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-ODS-Requirements/~issues?level=File' target="_blank">Propose a change to England-ODS-Requirements</a></h4>
+<h4><a href='https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-ODS-ActiveRole/~issues?level=File' target="_blank">Propose a change to England-ODS-ActiveRole</a></h4>
 </div>
+
+---
+
+
