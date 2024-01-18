@@ -150,7 +150,7 @@ This payload is used to transmit the completed validation outcome back to the Re
   
       <p>
               
-        <p>The Interim Response will include 2 Encounter Resources:<br><br>1. The original encounter from the requesting 999 service<br>2 The encounter created by the CAS undertaking the Validation Note: THIS ENCOUNTER IS THE FOCUS OF THE INTERIM VALIDATION RESPONSE MESSAGE</p>
+        <p>The Interim Response will include 2 Encounter Resources:<br><br>1. The original encounter from the requesting 999 service<br>2. The encounter created by the CAS undertaking the Validation. Note: THIS ENCOUNTER IS THE FOCUS OF THE INTERIM VALIDATION RESPONSE MESSAGE</p>
         {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter  , hybrid}}
         <p>
 

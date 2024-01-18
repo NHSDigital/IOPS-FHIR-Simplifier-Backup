@@ -1,6 +1,30 @@
 ---
 topic: Application2
 ---
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important: Versioning information</b>
+<p>
+
+
+
+<table>
+<thead>
+	<tr>
+		<th>Application Version</th>
+		<th>BaRS Core Version</th>
+		<th>BaRS Guide Version</th>
+		<th>BaRS API Specification Version</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Application 2 v1.0.3</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">Core v1.0.0 and above</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0" target="_blank">BaRS v1.1.0 and above</td>
+		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">API Spec v1.0.0 and above</a></td>
+	</tr>
+</tbody>
+</table>
+</div>
 
 # Bookings and Referrals into UEC Application 2
 
