@@ -48,7 +48,7 @@ When the Sender populates the Incident Location resource:
 *  They *should* also populate the *Location.extension* with the percentage accuracy of the location
 *  They **should** populate the *Location.address* for all property based locations
 *  They **should** populate *Location.address.line* which is a repeatable element, with the order in which lines should appear in an address label
-*  They **should** populate *Location.address.name* when there is a property name
+*  They **should** populate *Location.name* when there is a property name
 *  They **should** populate *Location.address.text* with a text representation of the full address (including the address name), with each line separated by a comma
 
 When a the Receiver processes information in an Incident Location resource:

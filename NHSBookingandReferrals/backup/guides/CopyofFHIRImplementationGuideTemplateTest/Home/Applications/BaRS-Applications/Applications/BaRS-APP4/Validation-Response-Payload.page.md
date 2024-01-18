@@ -154,7 +154,7 @@ This payload is used to transmit all the necessary information that is required 
   
       <p>
               
-        <p>The validation Response may include up to 3 Encounter Resources:<br><br>1. The original encounter from the requesting 999 service<br>2 The encounter created by the CAS undertaking the Validation Note: THIS ENCOUNTER IS THE FOCUS OF THE VALIDATION RESPONSE MESSAGE<br>3 The encounter created by the 999 service receiving an ITK Ambulance Request following a Validation outcome of CAT1 or CAT2 and sent in the ITK acknowledgement back to the validating service and in the Validation Response back to the original requestor.</p>
+        <p>The validation Response may include up to 3 Encounter Resources:<br><br>1. The original encounter from the requesting 999 service<br>2. The encounter created by the CAS undertaking the Validation. Note: THIS ENCOUNTER IS THE FOCUS OF THE VALIDATION RESPONSE MESSAGE<br>3. The encounter created by the 999 service receiving an ITK Ambulance Request following a Validation outcome of CAT1 or CAT2 and sent in the ITK acknowledgement back to the validating service and in the Validation Response back to the original requestor.</p>
         {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter  , hybrid}}
         <p>
 

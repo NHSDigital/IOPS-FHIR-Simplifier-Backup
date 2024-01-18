@@ -151,25 +151,7 @@ Consistent population of address fields can improve interoperability by reducing
 * **IncidentLocation.address**
 * **Location.address**
 
-The following convention, which has been informed by the PDS FHIR API Implementation Guide, is recommended when populating address fields:
-
- * **adddress.line** (1) - premises ID and/or house name, for example 'Flat' or 'The Old Schoolhouse'
- * **adddress.line** (2) - house number, dependent thoroughfare name and descriptor (if present), thoroughfare name and descriptor, for example '23 Mill Lane'
- * **adddress.line** (3) - dependent locality/village, locality (if present) for example 'Boxgrove'
- * **adddress.line** (4) - post town for example, Leeds
- * **adddress.line** (5) - county (if present) for example, West Yorkshire
- * **adddress.city** - post town for example, Leeds
- * **adddress.district** - county (if present) for example, West Yorkshire
- * **adddress.state** - nation for example, Scotland
- * **adddress.postalCode** - postal code for area
- * **adddress.country** - country for example, UK
- * **address.text** - the entire address as it should be displayed e.g. on a postal label. This **should** be provided as well as the specific parts.
- 
- Where an **address.line** (1-5) field is not applicable for an address, it **must** be included but not populated
- 
- Other address fields included should be populated in accordance with UK Core implementation guidance.
-
-This convention will be discussed with suppliers and providers, as part of the alpha review, and any agreed changes incorporated into the beta version of this application.
+This will be discussed with suppliers, providers and FHIR experts, as part of the alpha review, and agreed guidance incorporated into the beta version of this application.
 <br>
 <br>
 ### Audit
