@@ -28,6 +28,10 @@
   filename: extension-nhsCommunication.page.md
 - name: contact.managingOrganization
   filename: contact.managingOrganization.page.md
+- name: generalPractitioner
+  filename: generalPractitioner.page.md
+- name: managingOrganization
+  filename: managingOrganization.page.md
 - name: extension(ethnicCategory)
   filename: extension-ethnicCategory.page.md
 - name: extension(religiousAffiliation)
