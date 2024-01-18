@@ -75,7 +75,7 @@
             <td>1..1</td>
             <td>1..1</td>
             <td>NOT NULL</td>
-            <td>Roles.RoleID / RoleName</td>
+            <td>Roles.RoleID</td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">CodeableConcept</a></td>
             <td></td>
         </tr>
@@ -138,7 +138,7 @@
             <td>0..1</td>
             <td>0..1</td>
             <td>Optional</td>
-            <td>Organisation.StatusName</td>
+            <td>Organisation.Status</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
             <td>Status dropped from Final table - publish StatusName only. ACTIVE or INACTIVE</td>
         </tr>
@@ -147,7 +147,7 @@
             <td>0..*</td>
             <td><code>2..*</code></td>
             <td>NOT NULL</td>
-            <td>Organisation.RefOnly,<br>Organisation.RecordClass,<br>Organisation.RecordClass<br />Description</td>
+            <td>Organisation.RefOnly,<br>Organisation.RecordClass</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
             <td>One each of:<br>
             <a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Terminology/All-CodeSystems/CodeSystem-England-ODSRecordClass.page.md?version=current">CodeSystemEnglandODSRecordClass</a><br>
@@ -159,7 +159,7 @@
             <td>0..1</td>
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
-            <td>Organisation.OrgName</td>
+            <td>Organisation.Name</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
             <td>The name of the organisation <b>SHALL</b> be populated.</td>
         </tr>
@@ -185,17 +185,17 @@
             <td>address</td>
             <td>0..*</td>
             <td><code>1..*</code></td>
-            <td>Country NOT NULL</td>
-<td>Organisation.Address1<br>Organisation.Address2<br>Organisation.Address3<br>Organisation.Town<br>Organisation.County<br>Organisation.Postcode<br>Organisation.Country</td>
+            <td>Optional</td>
+<td>Location.AddrLn1<br>Organisation.AddrLn2<br>Organisation.AddrLn3<br>Location.Town<br>Location.County<br>Location.Postcode<br>Organisation.Country</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
-            <td>Country is NOT NULL</td>
+            <td></td>
         </tr>
         <tr>
             <td>address.extension (ExtensionUKCoreAddressKey)</td>
             <td>Not defined</td>
             <td>0..*</td>
             <td>Optional</td>
-            <td>Organisation.URPN</td>
+            <td>Location.URPN</td>
             <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-AddressKey.page.md?version=current">Extension</a></td>
             <td>Publish via R4 only (not STU3 and ORD like for like as not currently published)</td>
         </tr>
@@ -251,16 +251,16 @@
             <td>Not defined</td>
             <td><code>0..2</code></td>
             <td>Optional</td>
-            <td>Relationships.LegalStartDate,<br>Relationships.LegalEndDate,<br>Relationships.OperationalStartDate,<br>Relationships.OperationalEndDate</td>
+            <td>rel.LegalStart,<br>rel.LegalEnd,<br>rel.OperationalStart,<br>rel.OperationalEnd</td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedPeriod.page.md?version=current">Extension</a></td>
-            <td>Would be worth slicing?</td>
+            <td></td>
         </tr>
         <tr>
             <td>identifier</td>
             <td>0..*</td>
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
-            <td>Relationships.UniqueRelID</td>
+            <td>rel.UniqueRelID</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#identifier">Identifier</a></td>
             <td></td>
         </tr>
@@ -269,7 +269,7 @@
             <td>0..1</td>
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
-            <td>Relationships.Status</td>
+            <td>rel.Status</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
             <td>Set to active/inactive based on both date concepts</td>
         </tr>
@@ -287,8 +287,8 @@
             <td>0..1</td>
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
-            <td>Relationships.SourceOrgID / SourceOrgCode</td>
-            <td><a href=" https://hl7.org/fhir/R4/datatypes.html#Reference">Reference</a></td>
+            <td>Organisation Identifier</td>
+            <td><a href="https://hl7.org/fhir/R4/datatypes.html#Reference">Reference</a></td>
             <td></td>
         </tr>
         <tr>
@@ -296,8 +296,8 @@
             <td>0..1</td>
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
-            <td>Relationships.TargetOrgID / TargetOrgCode</td>
-            <td><a href=" https://hl7.org/fhir/R4/references.html">Reference</a></td>
+            <td>rel.TargetOrgID</td>
+            <td><a href="https://hl7.org/fhir/R4/references.html">Reference</a></td>
             <td></td>
         </tr>
         <tr>
@@ -314,7 +314,7 @@
             <td>0..*</td>
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
-            <td>Relationships.RelTypeID / Relationships.RelTypeName / RelationshipDefinition.RelDefinition</td>
+            <td>rel.TypeID / rel.TypeName</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Terminology/All-CodeSystems/CodeSystem-England-ODSRelationship.page.md?version=current">CodeSystemEnglandODSRelationship</a></td>
         </tr>
