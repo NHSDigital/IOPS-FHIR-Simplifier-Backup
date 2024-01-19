@@ -6,7 +6,7 @@
 
 <h5><ins>Guidance</ins></h5>
 
-The `extension.allergyEnd` does not need to be populated.
+The `extension.evidence` does not need to be populated.
 
 <h5><ins>Example</ins></h5>
 
