@@ -117,7 +117,21 @@
         </tr>
         <!-- contact.managingOrganization -->
         <tr>
-            <td>contanct.managingOrganization</td>
+            <td>contact.managingOrganization</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- generalPractitioner -->
+        <tr>
+            <td>generalPractitioner</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- managingOrganization -->
+        <tr>
+            <td>managingOrganization</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>

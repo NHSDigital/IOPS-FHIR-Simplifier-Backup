@@ -6,7 +6,7 @@
 
 <h5><ins>Guidance</ins></h5>
 
-This is the patient’s usual GP, if they have one and references the `Practitioner` within the bundle.
+This is the patient’s usual GP, if they have one, and references the `Practitioner` within the bundle.
 
 <h5><ins>Example</ins></h5>
 
