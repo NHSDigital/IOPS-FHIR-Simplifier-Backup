@@ -179,12 +179,12 @@
             <td>Optional</td>
             <td>Organisation.TelephoneNumber, Organisation.HTTP</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></td>
-            <td>Telephone number is nullified for RefOnly/skeleton records</td>
+            <td>Telephone number is nullified for RefOnly/skeleton records.<br />system='phone' and system='url'</td>
         </tr>
         <tr>
             <td>address</td>
             <td>0..*</td>
-            <td><code>1..*</code></td>
+            <td><code>0..*</code></td>
             <td>Optional</td>
 <td>Location.AddrLn1<br>Organisation.AddrLn2<br>Organisation.AddrLn3<br>Location.Town<br>Location.County<br>Location.Postcode<br>Organisation.Country</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
