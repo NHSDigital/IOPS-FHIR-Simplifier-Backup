@@ -1,0 +1,82 @@
+{
+    "resourceType": "OrganizationAffiliation",
+    "id": "364347",
+    "meta": {
+        "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation",
+            "https://fhir.nhs.uk/England/StructureDefinition/England-OrganizationAffiliation-ODS"
+        ]
+    },
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod",
+            "extension": [
+                {
+                    "url": "dateType",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/England/CodeSystem/England-PeriodType",
+                        "code": "Legal",
+                        "display": "Legal"
+                    }
+                },
+                {
+                    "url": "period",
+                    "valuePeriod": {
+                        "start": "2015-04-01",
+                        "end": "2020-03-31"
+                    }
+                }
+            ]
+        },
+        {
+            "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod",
+            "extension": [
+                {
+                    "url": "dateType",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/England/CodeSystem/England-PeriodType",
+                        "code": "Operational",
+                        "display": "Operational"
+                    }
+                },
+                {
+                    "url": "period",
+                    "valuePeriod": {
+                        "start": "2015-04-01",
+                        "end": "2020-03-31"
+                    }
+                }
+            ]
+        }
+    ],
+    "active": false,
+    "period": {
+        "start": "2015-04-01",
+        "end": "2020-03-31"
+    },
+    "organization": {
+        "reference": "Organization/8J091",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "8J091"
+        }
+    },
+    "participatingOrganization": {
+        "reference": "Organization/Q79",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "Q79"
+        }
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRelationship",
+                    "code": "RE5",
+                    "display": "IS LOCATED IN THE GEOGRAPHY OF"
+                }
+            ]
+        }
+    ]
+}
