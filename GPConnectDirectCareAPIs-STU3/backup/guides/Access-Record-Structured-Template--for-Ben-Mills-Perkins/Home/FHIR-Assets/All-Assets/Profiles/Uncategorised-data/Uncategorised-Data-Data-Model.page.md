@@ -1,4 +1,4 @@
-## {{page-title}}
+# {{page-title}}
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
 <b>Note</b> - Uncategorised Data is not a clinical heading in its own right, it represents the remainder of the clinical record which is not covered by the other clinical headings. It should not be used as a clinical heading in itself. It covers several clinical headings such as procedures, family history, measurements and many more. They are not fully standardised as clinical headings in the source system.

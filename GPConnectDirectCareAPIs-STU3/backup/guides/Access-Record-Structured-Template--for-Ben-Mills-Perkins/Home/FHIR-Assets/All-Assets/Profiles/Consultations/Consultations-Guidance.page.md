@@ -1,3 +1,4 @@
+# {{page-title}}
 
 ## Introduction
 
@@ -101,7 +102,13 @@ The logical structure of a Consultation is reflected in FHIR using the `Encounte
 
 <a href="images/access_structured/Consultation_FHIR_Resource_Model.png"><IMG src="images/access_structured/Consultation_FHIR_Resource_Model.png" alt="Consultation FHIR Resource Model" style="max-width:100%;max-height:100%;"></a>
 
-<a href="images/access_structured/Consultation_Stucture.png"><IMG src="images/access_structured/Consultation_Stucture.png" alt="Consultation Structure" style="max-width:100%;max-height:100%;">
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+
+<a href="images/access_structured/Consultation_Stucture.png"><IMG src="images/access_structured/Consultation_Stucture.png" alt="Consultation Structure" style="max-width:100%;max-height:100%;"></a>
+
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
 
 ## Consultation notes
 
@@ -115,6 +122,9 @@ There are two primary ways that consultation notes are recorded on native GP sys
 
 <a href="images/access_structured/Consultation_text_1a.png"><IMG src="images/access_structured/Consultation_text_1a.png" alt="Free text with multiple clinical codes"  style="max-width:100%;max-height:100%;"></a>
 
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+
 - Consultation notes for a heading are recorded as a collection of observations, each with a clinical code and or text. When read together in order they produce the consultation notes.
     Note – this may be entering free text format dynamically identifying codes or through forms where there are specific fields for codes and free text.
 
@@ -123,17 +133,29 @@ There are two primary ways that consultation notes are recorded on native GP sys
 </center>
 &nbsp;
 
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+
 When reflecting these in FHIR it is important they these two methods are represented in a way that retains the structural information they contain, does not create any unintended clinical meaning and can be viewed / imported. This is done by taking any free text in model one and representing it as uncategorised data and positioning it as the first clinical item under the heading.
 
 <a href="images/access_structured/Consultation_text_2.png"><IMG src="images/access_structured/Consultation_text_2.png" alt="Consultation text in FHIR"  style="max-width:100%;max-height:100%;"></a>
+
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
 
 While there are differences between the two outputs, the consultation notes can be derived from both by reading through each clinical item in order and merging the Term Text, Clinical Code, Values and Comment into a single narrative.
 
 <a href="images/access_structured/Consultation_text_3.png"><IMG src="images/access_structured/Consultation_text_3.png" alt="Reconstituted Consultation Text"  style="max-width:100%;max-height:100%;"></a>
 
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+
 ## Example
 
 <a href="images/access_structured/Consultation_Example_v6.png"><IMG src="images/access_structured/Consultation_Example_v6.png" alt="Sequence diagram for retrieving a patient record"  style="max-width:100%;max-height:100%;"></a>
+
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
 
 ## Clinical item references ##
 
@@ -160,6 +182,9 @@ The provider **MUST** return the following items as text, where they are contain
 
 These must be returned in an `Observation` resource in the same manner as a comment note and as defined in the [uncategorised data profile](accessrecord_structured_development_observation_uncategorisedData.html).
 The returned resource must represent the full text as presented in the GP system, including notes and qualifiers, not just the code description.
+
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
 
 ## Consultations containing unsupported clinical items
 
@@ -196,6 +221,9 @@ Where a Consultation is not marked as confidential but includes items that are m
 - the confidential item(s) will NOT be included in the response
 - there will be NO reference to the confidential item(s) in the `List` profiles defining the Consultation structure
 - the Confidential Items warning message will be included in the appropriate [secondary list](accessrecord_structured_development_lists_for_message_structure.html) for the relevant type of type data that was omitted (for example, if a piece of uncategorised data was excluded as it was confidential then the warning code would be in the `List`  'Consultations - uncategorised data contained in consultations' that was returned as part of the query) - the warning will NOT be included in the `List` profiles defining the Consultation structure
+
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
 
 In effect, there will be a warning message that items were excluded from the response due to confidentiality but there will be no indication from which Consultation(s) they were removed from.
 
