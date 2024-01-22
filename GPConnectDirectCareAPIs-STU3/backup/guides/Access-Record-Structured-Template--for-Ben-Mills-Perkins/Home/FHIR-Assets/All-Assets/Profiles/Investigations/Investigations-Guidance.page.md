@@ -1,548 +1,121 @@
-## {{page-title}}
+# {{page-title}}
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
 
--  <b>Safe to display to patient / citizen</b> - With a safety rating of 'High', 'Medium' or 'Low'.
+## Investigations scope in GP Connect
 
--  <b>Useful to display to patient / citizen</b> - With a recommendation of 'Recommended' or 'Not recommended'.
+For this version of the specification the scope of investigations is considered to be making available any investigations results contained in GP systems that have been received from the lab by an EDIFACT message.
 
-For example, the element 'Id’ has a safety rating of ‘High’, meaning it can be shown via Patient Facing Services (PFS). However, we believe it may not be useful to display 'Not Recommended' for the patient / citizen. It’s worth noting, there are elements that will have no meaning or have any merit in being displayed such as ‘Id’. For example, some elements are just entities that link data together.
+As such, there are a number of items that are **NOT** currently in scope. These are as follows:
 
-For further information on the labelling please visit {{pagelink:Home/Introduction/How-to-use-this-implementation-guide/Labels-used-within-this-guidance.page.md}}.
-</div>
+* investigations results that have been entered in a GP system using a code as an individual item (these may have a value and other qualifiers associated with them)
+* test results that are received as documents or images
+* making available any test requests
+* providing the original test report document as it was provided to the practice
+* any other numeric results that do not form part of an EDIFACT message (blood pressure, height, weight)
 
-### DiagnosticReport
+These may be addressed in future versions or within different areas of GP Connect - for example, manually entered results will be dealt with when we curate the uncategorised data in GP systems contained in the journal or care history areas.
 
-<table data-responsive>
-    <thead>
-        <tr>
-            <th>Element</th>
-            <th data-no-sort>Safe to display to patient / citizen</th>
-            <th data-no-sort>Useful to display to patient / citizen</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>meta.profile</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>identifier</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>basedOn</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>status</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>category</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>code</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>subject</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>context</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>issued</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>performer</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>specimen</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>result</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>codedDiagnosis</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>conclusion</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-    </tbody>
-</table>
+## Use of language to describe investigation reports
 
----
+When describing investigation reports, different regions and professions sometimes use different words to describe the same entities. Therefore, for avoidance of confusion there are a couple of terms that we need to define.
 
-### Specimen
+* Test group - is the phrase we are using to describe any group of tests that has been created by the laboratory or other providing organisation. These are often referred to as batteries, panels and profiles.
 
-<table data-responsive>
-    <thead>
-        <tr>
-            <th>Element</th>
-            <th data-no-sort>Safe to display to patient / citizen</th>
-            <th data-no-sort>Useful to display to patient / citizen</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>meta.profile</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>accessionIdentifier</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>status</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>type</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>subject</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>receivedTime</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>collection</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>collection.extension[fastingStatus]</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>collection.collector</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>collection.collected</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>collection.quantity</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>collection.bodysite</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>note</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-    </tbody>
-</table>
+* Test result - this is the result that has been provided by the laboratory or other provider. These may be standalone results or may be a part of a 'Test group'. They are also sometimes referred to as test analytes.
 
----
+## Investigation reporting in GP practices
 
-### Observation - test group header
+Currently GP practices receive the majority of the results of investigations which they have requested in the form of the EDIFACT message. These are received into a workflow by the GP system and remain there until they are filed into the patient record by a user.
 
-<table data-responsive>
-    <thead>
-        <tr>
-            <th>Element</th>
-            <th data-no-sort>Safe to display to patient / citizen</th>
-            <th data-no-sort>Useful to display to patient / citizen</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>meta.profile</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>identifier</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>status</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>code</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>subject</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>context</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>effective[x]</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>issued</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>performer</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>interpretation</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>comment</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>specimen</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>related</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-    </tbody>
-</table>
+### EDIFACT
 
----
+The EDIFACT message was defined by the Pathology Messaging Enabling Project and the specification can be found here listed as [EDIFact Pathology Messaging](https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections).
 
-### Observation - test result
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
 
-<table data-responsive>
-    <thead>
-        <tr>
-            <th>Element</th>
-            <th data-no-sort>Safe to display to patient / citizen</th>
-            <th data-no-sort>Useful to display to patient / citizen</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>meta.profile</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>identifier</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>status</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>category</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>code</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>subject</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>context</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>effective[x]</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>issued</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>performer</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>value[x]</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>dataAbsentReason</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>interpretation</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>comment</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>bodysite</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>method</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>specimen</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>referenceRange</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>related</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-    </tbody>
-</table>
+It is a detailed specification and although it does contain some coding the majority of the fields contain text. Some of the text is also heavily formatted. See below example taken from a GP2GP HL7v3 message:
 
----
+{: .center-image }
+![Structured text example](images/access_structured/Pathology_structured_text_example_2.PNG)
 
-### Observation - filing Comments 
+GP systems are required to maintain the text formatting in order to preserve the meaning. This will also be true of the GP Connect messaging, any structured text from the EDIFACT report imported into the GP system **MUST** be maintained as they are in the GP2GP HL7 message. The line separator `\n` **MUST** be used to maintain the original message structure.
 
-<table data-responsive>
-    <thead>
-        <tr>
-            <th>Element</th>
-            <th data-no-sort>Safe to display to patient / citizen</th>
-            <th data-no-sort>Useful to display to patient / citizen</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>meta.profile</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>identifier</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>status</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>code</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>subject</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>context</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>effective[x]</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>issued</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>performer</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>value[x]</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>comment</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>related</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-    </tbody>
-</table>
+### Filing results into the patient record
 
----
+Filing results into the patient record is the process of integrating results that have been received in an EDIFACT message at the GP practice into the patient record. This is done by a user of the clinical system at the GP practice.
 
-### ProcedureRequest
+When results are filed by the user it is possible to file the entire report or a 'test group'.
 
-<table data-responsive>
-    <thead>
-        <tr>
-            <th>Element</th>
-            <th data-no-sort>Safe to display to patient / citizen</th>
-            <th data-no-sort>Useful to display to patient / citizen</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>meta.profile</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>identifier</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>status</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>intent</td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not advised"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>code</td>
-            <td><span class="fas fa-exclamation-circle text-warning fa-lg" title="Use with caution"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>subject</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>performer</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>requester</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>reasonCode</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-        <tr>
-            <td>reasonReference</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-times-circle text-danger fa-lg" title="Not useful"></span></td>
-        </tr>
-        <tr>
-            <td>note</td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-            <td><span class="fas fa-check-circle text-success fa-lg"></span></td>
-        </tr>
-    </tbody>
-</table>
+Results may not always be filed on the day they were received. However, in most GP systems the date the report is filed is the date against which it will appear in the patient record. As such, this date is an important date when moving records between GP systems.
 
----
+When the results are filed, there is opportunity for the user to provide comments against the report or part of the report that they are filing. In GP systems that allow multiple comments to be added against a test group, test report or test result each comment **MUST** be returned.
+
+GP Connect will return any diagnosticReports that are associated with a patient whether they have been filed or not. In all cases where reports have been filed into the record there will be a 'Filing comments' observation this will always have a date indicating when the result/report was filed and details any comments made by the user at the time. If multiple comments are associated to the diagnosticReport the earliest comment indicates the date of the filing.
+
+## Report structure
+
+The following entity diagram describes the logical model for investigations in GP Connect:
+
+{: .center-image }
+![Pathology logical model](images/access_structured/Pathology_Logical_Model.png)
+
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+
+In the image we have made the key entities more prominent. Entities representing organizations and practitioners sit in the background but are still part of the exported data.
+
+| Entity Name          | Description                                                                           |
+| -----------          | -----------                                                                           |
+| Test Report          | The summary data from the test report including the clinical interpretation           |
+| Test Group           | Output from a group of tests including the clinical interpretation                    |
+| Test Result          | Output from a single test including the clinical interpretation                       |
+| Specimen             | Information on the specimen tested                                                    |
+| Test Report Filing   | Information recorded by the general practice clinician when they file the test report |
+| Test Request Summary | A summary of the original test request that is returned with the test report          |
+| Test Report Document | The test report in the format it was received by the GP practice                      |
+| Test Result Document | Documents that form part of the test results (for example, images and charts)         |
+
+The 'Test Report Document' and 'Test Result Document' are out of scope for the current iteration, but are represented in the diagram.
+
+We have modelled the investigations report in such a way that it will be able to support any data that is currently sent in the EDIFACT message and also leaves room to send further data items as and when providing systems are able to support them. The model is also intended to be flexible enough to support the many different patterns and types of result that can be sent so it can be easily adapted to support other test results stored in the GP system.
+
+### Available FHIR resources
+
+There are a number of resources available in FHIR to represent the different entities that exist in investigation reporting. The resources that we are concerned with in order to represent our model are in the following table.
+
+| Resource name                                                              | Description                                                                                                                                         |
+| -------------                                                              | -----------                                                                                                                                         |
+| [`ProcedureRequest`](accessrecord_structured_development_ProcedureRequest) | For requesting investigations to be performed by a laboratory                                                                                       |
+| [`DiagnosticReport`](accessrecord_structured_development_DiagnosticReport) | A reporting structure that contains results and any relevant data such as specimen details or attribution                                           |
+| [`Specimen`](accessrecord_structured_development_specimen)                 | For carrying details about the specimen that was collected and the investigations were performed on                                                 |
+| [`Observation`](accessrecord_structured_development_observation_testGroup) | Represents details related to the test group header, test result and details of when a report or group of results was filed into the patient record |
+
+There are other resources that may be relevant in the future, such as imagingStudy, imagingManifest and sequence, but currently we are only utilising the resources listed in the table.
+
+### Using the FHIR profiles to represent the logical model
+
+We have mapped these resources on to the logical model in the diagram below:
+
+{: .center-image }
+![Pathology logical model with FHIR resource names](images/access_structured/Pathology_Logical_Model_with_FHIR_resource_names.png)
+
+DiagnosticReport is at the centre of the model and all the other entities are linked to from there.
+
+The `Observation` resource is used for three different entities within the model. The test group header, test results and to contain any filing comments. Although we have used this resource in different settings, there will be only one FHIR profile that can then be populated appropriately for each individual use.
+
+There are detailed notes about how to populate each of these resources in the individual resource pages.
+
+## Investigations and Problems
+
+There is specific guidance for representing the relationship of a problem to an investigation.
+Details are provided on the {{pagelink:Home/FHIR-Assets/All-Assets/Profiles/Problems/Problems-Guidance.page.md}}.
+
+
+## Using the `List` resource for investigations queries
+
+The results of a query for investigations **MUST** return a `List` containing references to all the `DiagnosticReport` resources to represent each investigation report that is returned. The list code **MUST** be set to `887191000000108` for `Investigations and results`.
+
+The `List` **MUST** be populated in line with the guidance on `List` resources.
+
+If the `List` is empty, then an empty `List` **MUST** be returned with an `emptyReason` with the value `no-content-recorded`.

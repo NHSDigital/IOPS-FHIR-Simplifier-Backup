@@ -1,11 +1,4 @@
----
-title: Allergies guidance
-keywords: getcarerecord
-tags: [design,structured]
-sidebar: accessrecord_structured_sidebar
-permalink: accessrecord_structured_development_allergies_guidance.html
-summary: "Guidance on the representation of allergies and intolerances in GP Connect"
----
+# {{page-title}}
 
 ## Introduction ##
 
@@ -50,13 +43,12 @@ It is recognised that current support for the full range of severity qualifiers 
 
 It is also recognised that there will be interim challenges in mapping existing allergy and intolerance record structures to the `AllergyIntolerance` resource. In some systems, allergy and intolerance information may be a post-coordinated triple of allergy code, reaction/manifestation code and causative agent code. In other systems, a single pre-coordinated code serves to describe the allergy/intolerance concept and the causative agent. In the former case, the `AllergyIntolerance` resource may not fully support the three coded concepts and in the latter case, there is currently no distinct identification of causative agent and reaction/manifestation.
 
-
 ## Entries of allergy concepts as 'non-allergies' in source systems
 Participating systems have a variety of record types/structures that explicitly represent allergy and intolerance structures within the patient record. These structures are explicitly selected by users to record allergy and intolerance information in the record or may be automatically triggered by attempts to enter allergy codes/concepts into the patient record. As these structures readily identify the presence of allergy/intolerance concepts in the record, they are readily identifiable and mappable to the `AllergyIntolerance` request when processing FHIR requests. 
 
 It is also possible in some cases to bypass these data entry features and enter allergy codes/concepts as ordinary coded record entries in the patient record. Such entries may appear in the source system as ordinary journal entries and may not appear as allergies/intolerances in patient summaries or allergy/intolerance lists in provider systems. 
 
-*If it is possible on the provider system to record allergy concepts as non-allergies in the patient record then the system **MUST** express these record entries as FHIR AllergyIntolerance resources when queried.*
+*If it is possible on the provider system to record allergy concepts as non-allergies in the patient record, then the system **MUST** express these record entries as FHIR AllergyIntolerance resources when queried.*
 
 ## Allergy/intolerance interoperability and clinical safety
 It is recognised that allergy/intolerance information may not be fully interoperable between participating systems. Where allergy/intolerance information is not fully understood by a receiving system then it is the responsibility of the receiver to mitigate any risks arising and make related workflows as safe as possible. 
@@ -85,12 +77,12 @@ Rather than split descriptive and user entered text across a number of notes fie
 ## 'Resolved' allergies and intolerances
 On some systems it is possible to explicitly mark an allergy or intolerance as resolved or ended, such that it still appears in the patient record but is no longer active and no longer interacts with prescribing decision support. This inactivation may be achieved by explicit entry of an end date or a user action that alters the status of the allergy or intolerance.
 
-Allergies and intolerances which have been explicitly resolved **MUST** only be returned in response to resource queries which have the *includeResolvedAllergies* parameter set to true (see [Retrieve a patient’s structured record](accessrecord_structured_development_retrieve_patient_record.html)). 
+Allergies and intolerances which have been explicitly resolved **MUST** only be returned in response to resource queries which have the *includeResolvedAllergies* parameter set to true (see [Retrieve a patient’s structured record](accessrecord_structured_development_retrieve_patient_record.html)).
 
 <div class="alert alert-warning nhsd-t-body" role="alert">
 <i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
 
-When the provider is sending resolved allergies, it **MUST** send them in a separate `List` to the active allergies as contained resources in that `List`. The `List` **MUST** have the title 'Ended allergies' and resolved allergy resources **MUST** be assigned a `clinicalStatus` of `resolved`. A title of 'Allergies and adverse reactions' **MUST** be used for the `List` containing the active `AllergyIntolerance` resources.
+When the provider is sending resolved allergies, it **MUST** send them in a separate `List` to the active allergies as contained resources in that `List`. The `List` **MUST** have the title 'Ended allergies' and resolved allergy resources **MUST** be assigned a `clinicalStatus` of `resolved`. A title of 'Allergies and adverse reactions' **MUST** be used for the `List` containing the active `AllergyIntolerance` resources. This list **MUST** be returned when any resolved allergies are returned as part of a consultations or problems query and the primary resolved allergies list **MUST** be used to create any references needed.
 
 Consuming systems **MUST** ensure that resolved allergies are not treated as active - that is, they **MUST NOT** interact with prescribing decision support or be misinterpreted by users as being active.
 
@@ -115,7 +107,7 @@ In some of the participating systems, an additional coded concept may be entered
 *The reasoning being that as systems converge on interoperable coding of allergies and intolerances via AllergyIntolerance/code the need for another code to represent the allergy/intolerance concept diminishes.*
 
 ## Negation - handling 'no known allergies'
-Where there is an explicit assertion of the 'No Known Allergies' concept in the record, equivalent to SNOMED CT concept `716186003` and children, and there are otherwise no allergy or intolerance entries in the patient record, then systems may respond to queries for all allergy or intolerance resources using and AllergyIntolerance resource containing the appropriate code. 
+Where there is an explicit assertion of the 'No Known Allergies' concept in the record, equivalent to SNOMED CT concept `716186003` and children, and there are otherwise no allergy or intolerance entries in the patient record, then systems may respond to queries for all allergy or intolerance resources using and `AllergyIntolerance` resource containing the appropriate code. 
 
 Where there are no allergy or intolerance entries in the patient record, but no explicit recording of the ‘No Known Allergies’ concept and equivalents, then systems **MUST** return an empty `List` with an emptyReason FHIR code: "No content recorded" and a `List.note` with the text: 
 
@@ -134,5 +126,3 @@ It is expected that initial GP Connect provider implementations will reflect the
 The `AllergyIntolerance.reaction` is optional, but where a severity is available in the source system it will be included to convey severity even if no other reaction details are explicitly available. If this is the case the `AllergyIntolerance.reaction.manifestation` **MUST** be coded as the `nullFlavor` NI.
 
 By convention, only one reaction **MUST** be expressed per allergy with only one manifestation per reaction.
-
-
