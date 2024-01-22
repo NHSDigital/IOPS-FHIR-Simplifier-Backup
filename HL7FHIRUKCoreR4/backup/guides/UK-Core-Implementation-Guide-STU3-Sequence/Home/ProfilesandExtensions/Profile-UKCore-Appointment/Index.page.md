@@ -1,6 +1,8 @@
 ---
 topic: Profile-Appointment
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment
+usage: http://hl7.org/fhir/StructureDefinition/Appointment
+issue: UKCore-Appointment
 ---
 
 # StructureDefinition-UKCore-Appointment
@@ -18,54 +20,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment
 <br/><br/>
 <b>Delivery Channel</b> - An example to illustrate the delivery channel associated with an appointment.<br/>
 {{pagelink:Example-UKCore-Extension-DeliveryChannel}}
-
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Appointment/~issues?level=File">Report Issue for UKCore-Appointment</a>.
 </div>
 </nocheck>
 

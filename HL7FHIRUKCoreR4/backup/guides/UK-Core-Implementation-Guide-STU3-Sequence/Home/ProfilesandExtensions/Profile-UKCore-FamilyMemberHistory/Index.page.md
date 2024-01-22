@@ -1,6 +1,8 @@
 ---
 topic: Profile-FamilyMemberHistory
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory
+usage: http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory
+issue: UKCore-FamilyMemberHistory
 ---
 # StructureDefinition-UKCore-FamilyMemberHistory
 
@@ -17,53 +19,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory
   <br><br>
   <b>Participant Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to indicate the performer of the family member history related activity.<br>
   {{pagelink:Example-UKCore-Extension-Participant}}
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-FamilyMemberHistory/~issues?level=File">Report Issue for UKCore-FamilyMemberHistory</a>.
 </div>
 </nocheck>
 

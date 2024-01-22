@@ -1,6 +1,8 @@
 ---
 topic: Profile-Observation-BloodGlucose
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-BloodGlucose
+usage: http://hl7.org/fhir/StructureDefinition/Observation
+issue: UKCore-Observation-BloodGlucose
 ---
 
 # StructureDefinition-UKCore-Observation-BloodGlucose
@@ -19,53 +21,6 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
   <h3>Examples</h3>
 <b>Fasting Test</b> - An example to illustrate recording the blood glucose level following a period of fasting.<br/>
 {{pagelink:Example-UKCore-Observation-FastingTest}}<br><br>
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-BloodGlucose'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-BloodGlucose'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-BloodGlucose'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-BloodGlucose/~issues?level=File">Report Issue for UKCore-Observation-BloodGlucose</a>.
 </div>
 </nocheck>
 

@@ -1,6 +1,8 @@
 ---
 topic: Profile-Observation-EarlyWarningTotalScore
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-EarlyWarningTotalScore
+usage: http://hl7.org/fhir/StructureDefinition/Observation
+issue: UKCore-Observation-EarlyWarningTotalScore
 ---
 
 # StructureDefinition-UKCore-Observation-EarlyWarningTotalScore
@@ -21,53 +23,6 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 {{pagelink:Example-UKCore-Bundle-NEWS2Observations}}<br><br>
 <b>NPEWS Total</b> - An example to illustrate a National Paediatric Early Warning System (NPEWS) total score.<br/>
 {{pagelink:Example-UKCore-Observation-NPEWSTotal}}<br><br>
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-EarlyWarningTotalScore'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-EarlyWarningTotalScore'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-EarlyWarningTotalScore'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-EarlyWarningTotalScore/~issues?level=File">Report Issue for UKCore-Observation-EarlyWarningTotalScore</a>.
 </div>
 </nocheck>
 

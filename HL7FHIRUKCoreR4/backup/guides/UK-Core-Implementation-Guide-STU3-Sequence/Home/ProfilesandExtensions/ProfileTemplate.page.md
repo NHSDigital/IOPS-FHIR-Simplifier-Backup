@@ -60,3 +60,26 @@ with header
   <h3>JSON View</h3>
 {{json}}
 </div>
+
+<div id="Usage" class="tabcontent">
+  <h3>Usage</h3>
+  This Profile has the following derived profiles:<br>
+<span id="usage">
+{{page:Home/ProfilesandExtensions/UsageFQLDerived.page.md}}
+</span>
+<br><br>
+  This Profile is referenced in the following Extensions: <br>
+<span id="usage">
+{{page:Home/ProfilesandExtensions/UsageFQLExtensions.page.md}}
+</span>
+<br><br>
+  This Profile is referenced in the following Profiles: <br>
+<span id="usage">
+{{page:Home/ProfilesandExtensions/UsageFQLReferences.page.md}}
+</span>
+</div>
+
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to: {{page:Home/ProfilesandExtensions/FeedbackLink.page.md}}</a>.
+</div>

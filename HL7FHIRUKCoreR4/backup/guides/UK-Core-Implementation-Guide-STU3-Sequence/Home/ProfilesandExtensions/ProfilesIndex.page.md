@@ -340,7 +340,7 @@ In addition, each Profile also has the following:
 <tr>
 <td>{{pagelink:Profile-ServiceRequest-Lab,text:UKCore-ServiceRequest-Lab}}</td>
 <td>active</td>
-<td>A profile <i>derived</i> from the UK Core ServiceRequest profile to define the minimal set of data to query and retrieve the request for laboratory tests/td>
+<td>A profile <i>derived</i> from the UK Core ServiceRequest profile to define the minimal set of data to query and retrieve the request for laboratory tests</td>
 <td>6</td>
 </tr>
 <tr>

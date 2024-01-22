@@ -1,6 +1,8 @@
 ---
 topic: Profile-HealthcareService
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService
+usage: http://hl7.org/fhir/StructureDefinition/HealthcareService
+issue: UKCore-HealthcareService
 ---
 # StructureDefinition-UKCore-HealthcareService
 
@@ -11,53 +13,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService
   <h3>Examples</h3>
 <b>Orthopaedic Service</b> - An example to illustrate information about an orthopaedic service within a HealthcareService resource. <br>
 {{pagelink:Example-UKCore-HealthcareService-OrthopaedicService}}
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-HelathcareService/~issues?level=File">Report Issue for UKCore-HealthcareService</a>.
 </div>
 </nocheck>
 

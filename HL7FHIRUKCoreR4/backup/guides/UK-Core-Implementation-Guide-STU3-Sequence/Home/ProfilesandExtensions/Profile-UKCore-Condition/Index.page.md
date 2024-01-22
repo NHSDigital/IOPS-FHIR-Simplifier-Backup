@@ -1,6 +1,8 @@
 ---
 topic: Profile-Condition
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition
+usage: http://hl7.org/fhir/StructureDefinition/Condition
+issue: UKCore-Condition
 ---
 
 # StructureDefinition-UKCore-Condition
@@ -18,53 +20,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition
 <br/><br/>
 <b>Condition Episode</b> - An example to illustrate the extension which is used to indicate the episodicity status of a condition.<br/>
 {{pagelink:Example-UKCore-Extension-ConditionEpisode}}
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Condition/~issues?level=File">Report Issue for UKCore-Condition</a>.
 </div>
 </nocheck>
 

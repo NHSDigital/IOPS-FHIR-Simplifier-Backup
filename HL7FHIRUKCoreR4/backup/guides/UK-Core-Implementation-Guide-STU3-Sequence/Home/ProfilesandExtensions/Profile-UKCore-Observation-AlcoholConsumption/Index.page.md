@@ -1,6 +1,8 @@
 ---
 topic: Profile-Observation-AlcoholConsumption
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AlcoholConsumption
+usage: http://hl7.org/fhir/StructureDefinition/Observation
+issue: UKCore-Observation-AlcoholConsumption
 ---
 
 # StructureDefinition-UKCore-Observation-AlcoholConsumption
@@ -19,53 +21,6 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
   <h3>Examples</h3>
 <b>Heavy Drinker</b> - An example to illustrate the alcohol consumption of a heavy drinker.<br/>
 {{pagelink:Example-UKCore-Observation-HeavyDrinker}}<br><br>
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AlcoholConsumption'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AlcoholConsumption'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-AlcoholConsumption'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-AlcoholConsumption/~issues?level=File">Report Issue for UKCore-Observation-AlcoholConsumption</a>.
 </div>
 </nocheck>
 

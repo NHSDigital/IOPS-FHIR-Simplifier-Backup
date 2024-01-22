@@ -1,6 +1,8 @@
 ---
 topic: Profile-Observation-TobaccoConsumption
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-TobaccoConsumption
+usage: http://hl7.org/fhir/StructureDefinition/Observation
+issue: UKCore-Observation-TobaccoConsumpt
 ---
 
 # StructureDefinition-UKCore-Observation-TobaccoConsumption

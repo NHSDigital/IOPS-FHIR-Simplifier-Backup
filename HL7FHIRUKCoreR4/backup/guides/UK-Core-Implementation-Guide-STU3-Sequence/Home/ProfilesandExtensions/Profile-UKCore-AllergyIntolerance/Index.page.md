@@ -2,6 +2,7 @@
 topic: Profile-AllergyIntolerance
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance
 usage: http://hl7.org/fhir/StructureDefinition/AllergyIntolerance
+issue: UKCore-AllergyIntolerance
 ---
 # StructureDefinition-UKCore-AllergyIntolerance
 
@@ -22,13 +23,6 @@ usage: http://hl7.org/fhir/StructureDefinition/AllergyIntolerance
 <br><br>
 <b>Allergy List</b> - An example to illustrate a list of allergies contained in a Bundle resource.
 <br>{{pagelink:Example-UKCore-Bundle-AllergyList}}
-</div>
-
-
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-AllergyIntolerance/~issues?level=File">Report Issue for UKCore-AllergyIntolerance</a>.
 </div>
 </nocheck>
 

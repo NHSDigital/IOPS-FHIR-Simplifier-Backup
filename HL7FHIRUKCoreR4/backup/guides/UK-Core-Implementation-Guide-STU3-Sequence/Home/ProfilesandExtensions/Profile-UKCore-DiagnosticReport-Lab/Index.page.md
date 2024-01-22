@@ -1,6 +1,8 @@
 ---
 topic: Profile-DiagnosticReport-Lab
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab
+usage: http://hl7.org/fhir/StructureDefinition/DiagnosticReport
+issue: UKCore-DiagnosticReport-Lab
 ---
 
 # StructureDefinition-UKCore-DiagnosticReport-Lab
@@ -12,53 +14,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab
   <h3>Examples</h3>
   <b>Diagnostic Studies Report</b> - An example to illustrate a diagnostic studies report containing a specimen and observation for a patient.<br/>
 {{pagelink:Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport}}
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-DiagnosticReport-Lab/~issues?level=File">Report Issue for UKCore-DiagnosticReport-La</a>.
 </div>
 </nocheck>
 

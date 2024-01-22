@@ -1,6 +1,8 @@
 ---
 topic: Profile-ServiceRequest-Lab
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab
+usage: http://hl7.org/fhir/StructureDefinition/ServiceRequest
+issue: UKCore-serviceRequest-Lab
 ---
 # StructureDefinition-UKCore-ServiceRequest-Lab
 
@@ -12,53 +14,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab
   <b>C Reactive Protein Request</b> - An example to illustrate a request for a C Reactive Protein test based on an inflammed finger joint observation.<br>
 {{pagelink:Example-UKCore-ServiceRequest-Lab-CReactiveProtein}}
 <br><br>
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-ServiceRequest-Lab/~issues?level=File">Report Issue for UKCore-ServiceRequest-Lab</a>.
 </div>
 </nocheck>
 

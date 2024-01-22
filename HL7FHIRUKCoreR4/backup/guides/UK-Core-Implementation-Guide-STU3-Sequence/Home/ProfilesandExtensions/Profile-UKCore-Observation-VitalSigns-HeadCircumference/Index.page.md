@@ -1,6 +1,8 @@
 ---
 topic: Profile-Observation-VitalSigns-HeadCircumference
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-HeadCircumference
+usage: http://hl7.org/fhir/StructureDefinition/Observation
+issue: UKCore-Observation-VitalSigns-HeadCircumference
 ---
 
 # StructureDefinition-UKCore-Observation-VitalSigns-HeadCircumference
@@ -19,53 +21,6 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
   <h3>Examples</h3>
 <b>Head Circumference</b> - An example to illustrate recording the measurement of a patients head circumference.<br/>
 {{pagelink:Example-UKCore-Observation-VitalSigns-HeadCircumference}}<br><br>
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-HeadCircumference'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-HeadCircumference'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-HeadCircumference'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns-HeadCircumference/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns-HeadCircumference</a>.
 </div>
 </nocheck>
 
