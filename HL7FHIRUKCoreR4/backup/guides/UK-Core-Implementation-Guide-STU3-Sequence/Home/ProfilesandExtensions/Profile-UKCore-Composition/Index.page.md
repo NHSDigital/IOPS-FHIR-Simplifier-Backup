@@ -1,6 +1,8 @@
 ---
 topic: Profile-Composition
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition
+usage: http://hl7.org/fhir/StructureDefinition/Composition
+issue: UKCore-Composition
 ---
 
 # StructureDefinition-UKCore-Composition
@@ -15,53 +17,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition
 <br/><br/>
 <b>CareSetting Type</b> - An example to illustrate the care setting of a FHIR document.<br/>
 {{pagelink:Example-UKCore-Extension-CareSettingType}}
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Composition/~issues?level=File">Report Issue for UKCore-Composition</a>.
 </div>
 </nocheck>
 

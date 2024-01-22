@@ -1,9 +1,11 @@
 ---
 topic: Profile-Observation-Group
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab
+usage: http://hl7.org/fhir/StructureDefinition/Observation
+issue: UKCore-Observation-Group-L
 ---
 
-# StructureDefinition-UKCore-Observation-LabGroup
+# StructureDefinition-UKCore-Observation-Group-Lab
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -12,53 +14,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-La
   <h3>Examples</h3>
 <b>Full Blood count</b> - An example to illustrate a full blood count using multiple lab observation references.<br/>
 {{pagelink:Example-UKCore-Observation-Group-FullBloodCount}}
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-LabGroup/~issues?level=File">Report Issue for UKCore-Observation-LabGroup</a>.
 </div>
 </nocheck>
 

@@ -1,6 +1,8 @@
 ---
 topic: Profile-Observation
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation
+usage: http://hl7.org/fhir/StructureDefinition/Observation
+issue: UKCore-Observation
 ---
 
 # StructureDefinition-UKCore-Observation
@@ -60,55 +62,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation
 {{pagelink:Example-UKCore-Observation-OxygenTherapy}}<br><br>
 <b>White cell count</b> - An example to illustrate the observation of a white cell count for a blood specimen.<br/>
 {{pagelink:Example-UKCore-Observation-Lab-WhiteCellCount}}<br><br>
-
-</div>
-
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation/~issues?level=File">Report Issue for UKCore-Observation</a>.
 </div>
 </nocheck>
 

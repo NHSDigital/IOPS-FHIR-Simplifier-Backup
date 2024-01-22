@@ -1,6 +1,8 @@
 ---
 topic: Profile-Medication
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication
+usage: http://hl7.org/fhir/StructureDefinition/Medication
+issue: UKCore-Medication
 ---
 # StructureDefinition-UKCore-Medication
 
@@ -18,53 +20,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication
 {{pagelink:Example-UKCore-Medication-TimololVTM}}   <br><br>
 <b>Timoptol Eye Drops</b> - An example to illustrate a representation of eye drops.  <br>
 {{pagelink:Example-UKCore-Medication-TimoptolEyeDrops}}   <br><br>
-</div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Medication/~issues?level=File">Report Issue for UKCore-Medication</a>.
 </div>
 </nocheck>
 

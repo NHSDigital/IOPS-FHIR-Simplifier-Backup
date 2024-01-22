@@ -1,6 +1,8 @@
 ---
 topic: Profile-Organization
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization
+usage: http://hl7.org/fhir/StructureDefinition/Organization
+issue: UKCore-Organization
 ---
 # StructureDefinition-UKCore-Organization
 
@@ -22,53 +24,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization
 </br>{{pagelink:Example-UKCore-Extension-OrganizationPeriod}}
 </div>
 
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Organization/~issues?level=File">Report Issue for UKCore-Organization</a>.
-</div>
 </nocheck>
 
 ### Example Usage Scenarios ###
