@@ -77,7 +77,7 @@
         "path": "Task.statusReason",
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-task-statusReason"
+          "valueSet": "https://fhir.nhs.uk/ValueSet/task-statusReason-genomics"
         }
       },
       {
@@ -95,7 +95,7 @@
         "path": "Task.code",
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-task-code"
+          "valueSet": "https://fhir.nhs.uk/ValueSet/task-code-genomics"
         }
       },
       {

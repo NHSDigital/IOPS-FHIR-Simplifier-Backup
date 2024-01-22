@@ -21,8 +21,8 @@
 					"valueCodeableConcept": {
 						"coding": [
 							{
-								"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
-								"version": "1.0.0",
+								"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+								"version": "2.2.0",
 								"code": "01",
 								"display": "Number present and verified"
 							}
