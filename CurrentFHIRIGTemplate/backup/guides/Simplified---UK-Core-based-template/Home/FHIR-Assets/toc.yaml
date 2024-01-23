@@ -1,10 +1,10 @@
+- name: Capability Statement
+  filename: Capability-Statement
 - name: Profiles
-  filename: Profiles.page.md
+  filename: Profiles
 - name: Extensions
-  filename: Extensions.page.md
-- name: CodeSystems
-  filename: CodeSystems.page.md
+  filename: Extensions
 - name: ValueSets
-  filename: ValueSets.page.md
-- name: All Assets
-  filename: All-Assets
+  filename: ValueSets
+- name: CodeSystems
+  filename: CodeSystems

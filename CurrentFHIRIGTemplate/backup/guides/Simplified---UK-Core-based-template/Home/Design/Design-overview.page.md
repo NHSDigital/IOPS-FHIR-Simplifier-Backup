@@ -15,3 +15,10 @@ The [xyz] FHIR API provides an R4 FHIR Application Programming Interface (API) t
 - As a pre-requisite for calling the [xyz] FHIR R4 API , client systems MUST have traced the patient on PDS to ensure they have the correct NHS number for the patient. The <a href='https://developer.nhs.uk/apis/spine-core/pds_overview.html'>Spine Core API spec</a> outlines the approaches available for this demographic trace.
 
 - The [xyz] FHIR R4 API will be hosted on the NHS England API Platform. Refer to - {{pagelink:Home/Build/Authentication.page.md}}. 
+
+- The [xyz]e allows [abc] to [pqr] in a FHIR format that conforms to the proposed R4 guidance, and [UK Core](https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence?version=1.7.0).
+
+- The [xyz] uses a variety of FHIR resources that can be found on the {{pagelink:Home/FHIR-Assets}} page.
+
+<!-- INCLUDE A RENDER DIAGRAM -->
+<!-- {{render:xyz-profile-connections}} -->

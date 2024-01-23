@@ -6,7 +6,7 @@ This page is used to describe how errors are handled.
 
 ## Errors
 
-The FGM-IS FHIR R4 API will return a {{pagelink:Home/FHIRAssets/AllAssets/Profiles/UKCore-OperationOutcome.page.md}} when an API call is unsuccessful. The below table provides expected errors / validation failures.
+The FGM-IS FHIR R4 API will return a {{pagelink:Home/FHIRAssets/Profiles/UKCore-OperationOutcome.page.md}} when an API call is unsuccessful. The below table provides expected errors / validation failures.
 
 E.g. {{pagelink:Home/Examples/Example---Invalid-NHS-Number.page.md}}
 
