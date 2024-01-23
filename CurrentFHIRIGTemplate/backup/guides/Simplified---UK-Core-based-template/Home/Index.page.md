@@ -1,8 +1,8 @@
 ## What is [xyz]?
 
-This implementation guide provides guidance on implementing the [xyz] FHIR R4 API. For further details refer to {{pagelink:Home/Introduction}}
+This implementation guide provides guidance on implementing the [xyz] FHIR R4 API. 
 
-Refer to NHS conditions for information <a href='' class="external">[xyz]</a>
+Refer to NHS Program URL for more information <a href='' class="external">[xyz]</a>
 
 
 
