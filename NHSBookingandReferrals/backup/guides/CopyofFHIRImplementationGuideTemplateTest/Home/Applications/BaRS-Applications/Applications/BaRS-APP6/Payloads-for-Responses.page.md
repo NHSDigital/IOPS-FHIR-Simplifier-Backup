@@ -4,6 +4,8 @@ topic: APP6-Payloads
 
 ## {{page-title}}
 
+<br>
+
 ## Referral Response Payload (Status update)
 This section provides guidance on the use of key resources, for the Receiver to create an Referral Response (Status update) to return to the Sender. See [ServiceRequest - Response](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-referral-short) message definition for details of resources required for this payload.
 
@@ -17,7 +19,7 @@ The MessageHeader resource in the Referral Response should have the following re
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-response'
 * **MessageHeader.reasonCode** - **must** be 'new'
 * **MessageHeader.focus** - **must** reference the Responder's current Encounter FHIR resource
-* **MessageHeader.definition** - **must** adhere to [Referral Response](https://simplifier.net/NHSBookingandReferrals/BARS-MessageDefinition-ServiceRequest-Response-Referral-Short/~json) Message definition  @@@@???? This needs updating to the right link once created @@@@@@?????
+* **MessageHeader.definition** - **must** adhere to [Referral Response](https://simplifier.net/NHSBookingandReferrals/BARS-MessageDefinition-ServiceRequest-Response-Referral-Short/~json) Message definition.
 * **MessgeHeader.Response** - **must** be the original request BundleID
 
 ### ServiceRequest Resource
