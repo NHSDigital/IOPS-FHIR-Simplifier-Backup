@@ -13,24 +13,24 @@ A container for a collection of resources. Used to group the set of resources th
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
 <div class="tab fhirTree">
-    <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
-    <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-    <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+<button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
+<button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
+<button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
 </div>
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
-    <h4>Snapshot View</h4>
-    {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle, snapshot}}
+<h4>Snapshot View</h4>
+{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
-    <h4>Differential View</h4>
-    {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle, diff}}
+<h4>Differential View</h4>
+{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
-    <h4>Hybrid View</h4>
-    {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle, hybrid}}
+<h4>Hybrid View</h4>
+{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle, hybrid}}
 </div>
 
 ### Additional Guidance
