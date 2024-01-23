@@ -1,0 +1,5 @@
+---
+topic: AllAssets
+---
+
+{{index:current}}
