@@ -1,0 +1,68 @@
+<ServiceRequest>
+  <id value="Pathology-ServiceRequest-Lab-Sn-Example" />
+  <!-- The canonical URL for the UKCore-ServiceRequest-Lab profile. -->
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+  </meta>
+  <!-- A business identifier supplied by the organisation that requested the test. -->
+  <identifier>
+    <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
+    <value value="REQ-20220307-000046-001" />
+  </identifier>
+  <!-- A shared identifier that is used to link multiple requests. -->
+  <requisition>
+    <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
+    <value value="REQ-20220307-000046" />
+  </requisition>
+  <!-- The status of the test request. Populated with the following fixed value. -->
+  <status value="active" />
+  <!-- The intent of the test request. Populated with the following fixed value. -->
+  <intent value="order" />
+  <!-- The urgency of the test request. -->
+  <priority value="routine" />
+  <!-- The clinical code and name of the requested test or test group. -->
+  <code>
+    <coding>
+      <!-- SNOMED CT Procedure -->
+      <system value="http://snomed.info/sct" />
+      <code value="43396009" />
+      <display value="Haemoglobin A1c measurement" />
+    </coding>
+  </code>
+  <!-- Reference to the subject that the test request relates to. -->
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="WELSH, Joel" />
+  </subject>
+  <!-- The date and time of the test request. -->
+  <authoredOn value="2022-01-29T10:24:00+00:00" />
+  <!-- Reference to the Organization, Practitioner or PractitionerRole that requested the test(s). -->
+  <requester>
+    <reference value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
+    <display value="GASKELL, Dr Gale" />
+  </requester>
+  <!-- Reference to the Organization, Practitioner or PractitionerRole that has been requested to perform the test(s). -->
+  <performer>
+    <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+    <display value="TD008362 PATH LAB 001" />
+  </performer>
+  <!-- An explanation in coded or textual form that describes why the tests have been requested. -->
+  <reasonCode>
+    <text value="Diabetes type 1 monitoring." />
+  </reasonCode>
+  <!-- Reference(s) to any conditions the patient has (as supplied by the requester) that are relevant to the test request. -->
+  <!-- The example assumes that the reference is to a seperate Condition resource. -->
+  <reasonReference>
+    <reference value="urn:uuid:12c09bac-b108-4c48-8882-7c8daddf17fa" />
+    <display value="Type 1 diabetes mellitus" />
+  </reasonReference>
+  <!-- Reference(s) to the Specimen(s) that will be used for testing. -->
+  <!-- This should only be used when a test is requested and the specimen has already been collected. -->
+  <specimen>
+    <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+  </specimen>
+  <!-- Notes relating to the test request, as provided by the requester. -->
+  <note>
+    <text value="Patient has a needle phobia." />
+  </note>
+</ServiceRequest>

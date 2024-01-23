@@ -1,0 +1,106 @@
+<Observation>
+  <id value="Pathology-Observation-Group-Lab-Sn-Example" />
+  <!-- The canonical URL for the UKCore-Observation-Group-Lab profile. -->
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
+  </meta>
+  <!-- A business identifier supplied by the laboratory that performed the test group. -->
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+  </identifier>
+  <!-- The status of the test group. -->
+  <status value="final" />
+  <!-- The general type of test group. -->
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="laboratory" />
+      <display value="Laboratory" />
+    </coding>
+  </category>
+  <!-- The clinical code and name of the test group. -->
+  <code>
+    <coding>
+      <!-- SNOMED CT Procedure -->
+      <system value="http://snomed.info/sct" />
+      <code value="26604007" />
+      <display value="Full blood count" />
+    </coding>
+  </code>
+  <!-- Reference to the subject that the test group relates to. -->
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="MOXEY, Judy" />
+  </subject>
+  <!-- The date and time that the test group was performed. -->
+  <effectiveDateTime value="2022-02-09T08:39:00+00:00" />
+  <!-- The date and time that the test group results were issued. -->
+  <issued value="2022-02-09T11:17:00+00:00" />
+  <!-- Reference to the Organization, Practitioner or PractitionerRole that performed the test group. -->
+  <performer>
+    <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+    <display value="TD008362 PATH LAB 001" />
+  </performer>
+  <!-- Comments relating to the test group. -->
+  <note>
+    <text value="Some results outside of range." />
+  </note>
+  <!-- Reference to the Specimen that was used for testing. -->
+  <specimen>
+    <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+  </specimen>
+  <!-- Reference(s) to the Observation(s) that make up the test group. -->
+  <hasMember>
+    <!-- White blood cell count in blood -->
+    <reference value="urn:uuid:f8c185fc-0993-4b80-9d33-4c9ae11c3afe" />
+  </hasMember>
+  <hasMember>
+    <!-- Red blood cell count -->
+    <reference value="urn:uuid:78afe41f-4689-41a2-b10d-351a991b261a" />
+  </hasMember>
+  <hasMember>
+    <!-- Haemoglobin mass concentration in blood -->
+    <reference value="urn:uuid:b7849f25-3c44-4542-805f-ba769b7cfe04" />
+  </hasMember>
+  <hasMember>
+    <!-- Haematocrit volume fraction of blood -->
+    <reference value="urn:uuid:b483a0bf-c332-4dde-b606-ec29aab33583" />
+  </hasMember>
+  <hasMember>
+    <!-- Erythrocytes MCV (mean corpuscular volume) in blood -->
+    <reference value="urn:uuid:9e44a75d-e676-4497-aeb3-da72a08a3641" />
+  </hasMember>
+  <hasMember>
+    <!-- MCH - Mean corpuscular haemoglobin -->
+    <reference value="urn:uuid:ba423cce-bf8c-440c-8061-086055a1799b" />
+  </hasMember>
+  <hasMember>
+    <!-- MCHC - Mean corpuscular haemoglobin concentration -->
+    <reference value="urn:uuid:af52170f-763a-40a6-9363-dc58cd72602e" />
+  </hasMember>
+  <hasMember>
+    <!-- Platelet count in blood -->
+    <reference value="urn:uuid:298306aa-4a5e-4442-8f60-9153c19c6333" />
+  </hasMember>
+  <hasMember>
+    <!-- Neutrophil count in blood -->
+    <reference value="urn:uuid:69d08add-5ab8-46a3-be08-fb15e550da75" />
+  </hasMember>
+  <hasMember>
+    <!-- Lymphocyte count in blood -->
+    <reference value="urn:uuid:d5995ac0-55d8-4f2f-9058-6235a13fc1fe" />
+  </hasMember>
+  <hasMember>
+    <!-- Monocyte count in blood -->
+    <reference value="urn:uuid:42d1c079-777a-4878-b568-af6f297dbecb" />
+  </hasMember>
+  <hasMember>
+    <!-- Eosinophil count in blood -->
+    <reference value="urn:uuid:56f9a606-221b-462b-b134-154c72db9c66" />
+  </hasMember>
+  <hasMember>
+    <!-- Basophil count in blood -->
+    <reference value="urn:uuid:d719524b-993c-455c-9c18-36e3dfe6f71e" />
+  </hasMember>
+</Observation>

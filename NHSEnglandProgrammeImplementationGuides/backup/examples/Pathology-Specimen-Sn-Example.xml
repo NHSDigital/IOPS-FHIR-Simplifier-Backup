@@ -1,0 +1,82 @@
+<Specimen>
+  <id value="Pathology-Specimen-Sn-Example" />
+  <!-- The canonical URL for the UKCore-Specimen profile. -->
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+  </meta>
+  <!-- A business identifier supplied by the organisation that collected the specimen. -->
+  <identifier>
+    <system value="http://B82033-pickeringmedicalpractice.com/specimen" />
+    <value value="SPC-REQ-20220208-000016" />
+  </identifier>
+  <!-- A business identifier supplied by the laboratory that is responsible for performing the test. -->
+  <accessionIdentifier>
+    <system value="http://Y8J7D-pathlab001.com/specimen" />
+    <value value="SPC-LAB-20220208-001397" />
+  </accessionIdentifier>
+  <!-- The availability of the specimen. -->
+  <status value="available" />
+  <!-- The kind of material that forms the specimen. -->
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="122555007" />
+      <display value="Venous blood specimen" />
+    </coding>
+  </type>
+  <!-- Reference to the subject that the specimen relates to. -->
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="MOXEY, Judy" />
+  </subject>
+  <!-- The date and time that the specimen was received for processing. -->
+  <receivedTime value="2022-02-08T16:03:00+00:00" />
+  <!-- Reference to the ServiceRequest that the specimen relates to. -->
+  <request>
+    <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
+  </request>
+  <collection>
+    <!-- Reference to the Practitioner or PractitionerRole that collected the specimen. -->
+    <collector>
+      <reference value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
+      <display value="GASKELL, Dr Gale" />
+    </collector>
+    <!-- The date and time that the specimen was collected. -->
+    <collectedDateTime value="2022-02-08T10:23:00+00:00" />
+    <!-- The quantity of specimen that was collected. -->
+    <quantity>
+      <value value="3" />
+      <unit value="mL" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="mL" />
+    </quantity>
+    <!-- The anatomical site of the specimen collection. -->
+    <bodySite>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="49852007" />
+        <display value="Structure of median cubital vein" />
+      </coding>
+    </bodySite>
+    <!-- Indicates abstinence or reduction from some or all food, drink, or both, for a period of time prior to specimen collection. -->
+    <fastingStatusCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0916" />
+        <code value="F" />
+        <display value="Patient was fasting prior to the procedure." />
+      </coding>
+    </fastingStatusCodeableConcept>
+  </collection>
+  <!-- The state of the specimen. -->
+  <condition>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0493" />
+      <code value="HEM" />
+      <display value="Hemolyzed" />
+    </coding>
+  </condition>
+  <!-- Notes relating to the specimen. -->
+  <note>
+    <text value="Specimen haemolysed. Unable to assay." />
+  </note>
+</Specimen>

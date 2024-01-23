@@ -1,0 +1,100 @@
+<Observation>
+  <id value="Pathology-Observation-Lab-Sn-Example" />
+  <!-- The canonical URL for the UKCore-Observation-Lab profile. -->
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+  </meta>
+  <!-- A business identifier supplied by the laboratory that performed the test. -->
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+  </identifier>
+  <!-- The status of the test result. -->
+  <status value="final" />
+  <!-- The general type of test result. -->
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="laboratory" />
+      <display value="Laboratory" />
+    </coding>
+  </category>
+  <!-- The clinical code and name of the test that was performed. -->
+  <code>
+    <coding>
+      <!-- SNOMED CT Observable Entity -->
+      <system value="http://snomed.info/sct" />
+      <code value="1110441000000100" />
+      <display value="White blood cell count in blood" />
+    </coding>
+  </code>
+  <!-- Reference to the subject that the test relates to. -->
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="MOXEY, Judy" />
+  </subject>
+  <!-- The date and time that the test was performed. -->
+  <effectiveDateTime value="2022-02-09T08:03:00+00:00" />
+  <!-- The date and time that the test result was issued. -->
+  <issued value="2022-02-09T11:17:00+00:00" />
+  <!-- Reference to the Organization, Practitioner or PractitionerRole that performed the test. -->
+  <performer>
+    <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+    <display value="TD008362 PATH LAB 001" />
+  </performer>
+  <!-- The reason why a test result value has been omitted. -->
+  <dataAbsentReason>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="125154007" />
+      <display value="Specimen unsatisfactory for evaluation" />
+    </coding>
+  </dataAbsentReason>
+  <!-- A simple coded interpretation of the test result, for example Detected, Not Detected, High, Low. -->
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" />
+      <code value="H" />
+      <display value="High" />
+    </coding>
+  </interpretation>
+  <!-- Comments relating to the test result. -->
+  <note>
+    <text value="Further tests advised." />
+  </note>
+  <!-- The body part that was tested/observed. -->
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="49852007" />
+      <display value="Structure of median cubital vein" />
+    </coding>
+  </bodySite>
+  <!-- The method of testing/observation that was used. -->
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="702659008" />
+      <display value="Automated count" />
+    </coding>
+  </method>
+  <!-- Reference to the Specimen that was used for testing. -->
+  <specimen>
+    <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+  </specimen>
+  <!-- Guidance on how to interpret the test result value by comparison to a normal or recommended range. -->
+  <referenceRange>
+    <low>
+      <value value="4.00" />
+      <unit value="10*9/L" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="10^9/L" />
+    </low>
+    <high>
+      <value value="11.00" />
+      <unit value="10*9/L" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="10^9/L" />
+    </high>
+  </referenceRange>
+</Observation>

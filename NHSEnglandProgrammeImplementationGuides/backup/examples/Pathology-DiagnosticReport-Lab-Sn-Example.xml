@@ -1,0 +1,66 @@
+<DiagnosticReport>
+  <id value="Pathology-DiagnosticReport-Lab-Sn-Example" />
+  <!-- The canonical URL for the UKCore-DiagnosticReport-Lab profile. -->
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
+  </meta>
+  <!-- A business identifier supplied by the laboratory that produced the test report. -->
+  <identifier>
+    <system value="http://Y8J7D-pathlab001.com/report" />
+    <value value="REP-20220209-001369" />
+  </identifier>
+  <!-- Reference to the ServiceRequest that contains details of the test request that was made. -->
+  <basedOn>
+    <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
+    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
+  </basedOn>
+  <!-- The status of the test report. -->
+  <status value="final" />
+  <!-- The general type of test report. -->
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+      <code value="LAB" />
+      <display value="Laboratory" />
+    </coding>
+  </category>
+  <!-- A code that describes the report. Populated with the following fixed value. -->
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="721981007" />
+      <display value="Diagnostic studies report" />
+    </coding>
+  </code>
+  <!-- Reference to the subject that the test report relates to. -->
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="MOXEY, Judy" />
+  </subject>
+  <!-- The date and time that the test report was issued. -->
+  <issued value="2022-02-09T11:17:00+00:00" />
+  <!-- Reference to the Organization, Practitioner or PractitionerRole that produced the test report. -->
+  <performer>
+    <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+    <display value="TD008362 PATH LAB 001" />
+  </performer>
+  <!-- Reference(s) to the Specimen(s) used for testing. -->
+  <specimen>
+    <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+  </specimen>
+  <!-- Reference(s) to the results included in the test report. -->
+  <!-- This may contain references to individual test results, test groups or a combination of these. -->
+  <result>
+    <reference value="urn:uuid:ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
+  </result>
+  <!-- A clinical interpretation/summary of the test results in a text format. -->
+  <conclusion value="Blood culture tested positive on staphylococcus aureus." />
+  <!-- A coded finding of the test report. -->
+  <conclusionCode>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="428763004" />
+      <display value="Bacteraemia due to Staphylococcus aureus" />
+    </coding>
+  </conclusionCode>
+</DiagnosticReport>
