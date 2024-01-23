@@ -111,10 +111,8 @@ For example, if four items of uncategorised data are recorded under the investig
 Direct references to all four items will be populated in the `List(Heading)` profile.
 If all four items are linked to a problem then all four items will be populated in the `ProblemHeader (Condition)` profile.
 
-<a href="images/access_structured/Uncategorised_Structure_v2.png"><IMG src="images/access_structured/Uncategorised_Structure_v2.png" alt="Uncateogirsed Structure" style="max-width:100%;max-height:100%;"></a>
+{{ render: Uncategorised_Structure_v2.png }}
 
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
 
 ## Representing inbound referrals ##
 
@@ -159,17 +157,17 @@ The way standard blood pressures are recorded in different clinical systems vari
 
 * Recorded as the following triple in the below structure and using any of the codes from the table below,
 
-<a href="images/access_structured/BP_Diagram.png"><IMG src="images/access_structured/BP_Triple.png"></a>
+{{ render: BP_Triple1.png }}
 
 * Recorded as 2 individual readings that are grouped together with no panel code using any of the systolic and diastolic codes from the table below,
 
- <a href="images/access_structured/BP_Diagram.png"><IMG src="images/access_structured/BP_ComponentCodes.png"></a>
+{{ render: BP_ComponentCodes2.png }}
 
    Where there is no panel code then '163020007 On examination - blood pressure reading (finding)' **MUST** be used in the GP Connect triple.
 
 * Recorded using a panel code with two readings but no systolic and diastolic codes. This may be recorded as either of the 2 panel codes from the table below,
 
- <a href="images/access_structured/BP_Diagram.png"><IMG src="images/access_structured/BP_HeaderCodeNoComponent.png"></a>
+ {{ render: BP_HeaderCodeNoComponent3.png }}
 
    Where there is only a panel code the following codes **MUST** be used to complete the triple for export in GP Connect,
       - 163020007 On examination - blood pressure reading (finding) and 386534000 Arterial blood pressure (observable entity)
@@ -178,10 +176,7 @@ In GP Connect we have decided that all of these variations will be represented u
 
 Following the guidance above to determine the appropriate codes for the triple will result in the following structure which may contain any of the codes from the table below,
 
-<a href="images/access_structured/BP_Diagram.png"><IMG src="images/access_structured/BP_Diagram.png"></a>
-
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix the 4 links above<br/> </div>
+ {{ render: BP_Diagram4.png }}
 
 The triple may contain any combination of the following SNOMED codes for the panel, systolic and diastolic components,
 
