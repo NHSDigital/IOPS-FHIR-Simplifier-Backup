@@ -100,15 +100,9 @@ The logical structure of a Consultation is reflected in FHIR using the `Encounte
   </tr>
 </table>
 
-<a href="images/access_structured/Consultation_FHIR_Resource_Model.png"><IMG src="images/access_structured/Consultation_FHIR_Resource_Model.png" alt="Consultation FHIR Resource Model" style="max-width:100%;max-height:100%;"></a>
+{{ render: Consultation_FHIR_Resource_Model1.png }}
 
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
-
-<a href="images/access_structured/Consultation_Stucture.png"><IMG src="images/access_structured/Consultation_Stucture.png" alt="Consultation Structure" style="max-width:100%;max-height:100%;"></a>
-
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+{{ render: Consultation_Stucture2.png }}
 
 ## Consultation notes
 
@@ -120,42 +114,25 @@ There are two primary ways that consultation notes are recorded on native GP sys
 
 - Consultation notes for a heading are recorded as a single piece of free text. Any clinical coded information under the same heading is associated to that text as a whole.
 
-<a href="images/access_structured/Consultation_text_1a.png"><IMG src="images/access_structured/Consultation_text_1a.png" alt="Free text with multiple clinical codes"  style="max-width:100%;max-height:100%;"></a>
-
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+{{ render: modelOnev1.png }}
 
 - Consultation notes for a heading are recorded as a collection of observations, each with a clinical code and or text. When read together in order they produce the consultation notes.
-    Note – this may be entering free text format dynamically identifying codes or through forms where there are specific fields for codes and free text.
+Note – this may be entering free text format dynamically identifying codes or through forms where there are specific fields for codes and free text.
 
-<center>
-    <a href="images/access_structured/Consultation_text_1b.png"><IMG src="images/access_structured/Consultation_text_1b.png" alt="Clinical code and text"  style="max-width:40%;max-height:40%;"></a>
-</center>
-&nbsp;
-
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+{{ render: modelTwov1.png }}
 
 When reflecting these in FHIR it is important they these two methods are represented in a way that retains the structural information they contain, does not create any unintended clinical meaning and can be viewed / imported. This is done by taking any free text in model one and representing it as uncategorised data and positioning it as the first clinical item under the heading.
 
-<a href="images/access_structured/Consultation_text_2.png"><IMG src="images/access_structured/Consultation_text_2.png" alt="Consultation text in FHIR"  style="max-width:100%;max-height:100%;"></a>
-
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+{{ render: bothModels.png }}
 
 While there are differences between the two outputs, the consultation notes can be derived from both by reading through each clinical item in order and merging the Term Text, Clinical Code, Values and Comment into a single narrative.
 
-<a href="images/access_structured/Consultation_text_3.png"><IMG src="images/access_structured/Consultation_text_3.png" alt="Reconstituted Consultation Text"  style="max-width:100%;max-height:100%;"></a>
-
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+{{ render: bothModels2.png }}
 
 ## Example
 
-<a href="images/access_structured/Consultation_Example_v6.png"><IMG src="images/access_structured/Consultation_Example_v6.png" alt="Sequence diagram for retrieving a patient record"  style="max-width:100%;max-height:100%;"></a>
+{{ render: Consultation_Example.png }}
 
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
 
 ## Clinical item references ##
 
