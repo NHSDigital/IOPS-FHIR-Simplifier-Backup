@@ -4,6 +4,8 @@ topic: APP6-Payloads
 
 ## {{page-title}}
 
+<br>
+
 ## Referral Payload
 The below details the specific guidance around the use of resources required to create a referral by the referral Sender. See [ServiceRequest - Request Referral](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-servicerequest-request-referral) message definition for details of resources required for this payload.
 
@@ -242,3 +244,5 @@ In this application it is used to transfer Call Log information and Crew Notes.
 The ability to cancel a referral is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation, text:Standard Patterns - Cancellation}}.
 
 <br>
+<hr>    
+
