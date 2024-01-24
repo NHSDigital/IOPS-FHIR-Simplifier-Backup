@@ -1,0 +1,102 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-NonWGSTestOrderForm-DeceasedPatient-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs",
+            "display": "NHS"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "rare-disease-non-wgs",
+          "display": "Rare Disease - Non-WGS"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "R138",
+        "display": "Sudden Cardiac Death"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-AnitaLambertsDeceasedPatient-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303649"
+    }
+  },
+  "authoredOn": "2023-11-01T10:00:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "103693007",
+          "display": "Diagnostic procedure"
+        }
+      ]
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/Observation-GenomicEthnicity-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoPregnancy-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseaseStatus-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusion-Example"
+    },
+    {
+      "reference": "Observation/Observation-RiskOfInfection-Example"
+    }
+  ],
+  "specimen": [
+    {
+      "display": "Blood EDTA Specimen to be provided later"
+    }
+  ],
+  "note": [
+    {
+      "text": "No family history of genomic testing"
+    },
+    {
+      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms."
+    }
+  ]
+}

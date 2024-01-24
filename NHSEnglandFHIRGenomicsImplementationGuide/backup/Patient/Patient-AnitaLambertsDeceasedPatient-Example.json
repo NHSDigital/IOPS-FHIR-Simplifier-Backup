@@ -1,0 +1,88 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-AnitaLambertsDeceasedPatient-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+      "valueCode": "F"
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+            "code": "A",
+            "display": "White - British"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303649",
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                "version": "2.2.0",
+                "code": "01",
+                "display": "Number present and verified"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Anita"
+      ],
+      "family": "Lamberts"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1993-11-14",
+  "deceasedBoolean": true,
+  "address": [
+    {
+      "line": [
+        "1, Vale Roads, Claygate",
+        "Esher",
+        "Surrey"
+      ],
+      "postalCode": "BM17 2QN"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+        "value": "G9999999"
+      },
+      "display": "Dr. Aero Smith"
+    },
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/ODS-code",
+        "value": "AP123"
+      },
+      "display": "123 Test Practice"
+    }
+  ],
+  "link": [
+    {
+      "other": {
+        "reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/8449303649"
+      },
+      "type": "seealso"
+    }
+  ]
+}
