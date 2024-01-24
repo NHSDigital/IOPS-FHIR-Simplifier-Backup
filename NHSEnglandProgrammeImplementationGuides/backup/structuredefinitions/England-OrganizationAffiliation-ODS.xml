@@ -47,7 +47,7 @@
     </element>
     <element id="OrganizationAffiliation.period">
       <path value="OrganizationAffiliation.period" />
-      <max value="0" />
+      <definition value="The period during which the participatingOrganization is affiliated with the primary organization. For ODS Legal and Operational periods, consider using the ExetensionEnglandTypedPeriod instead." />
     </element>
     <element id="OrganizationAffiliation.organization">
       <path value="OrganizationAffiliation.organization" />

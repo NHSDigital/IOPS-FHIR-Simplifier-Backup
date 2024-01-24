@@ -49,9 +49,7 @@ Reference - {{pagelink:Home/Design/Data-mapping.page.md}}
 
 ## Derived From
 
-<iframe src="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=1.7.0" height="800px" width="100%"></iframe>
-
-
+<iframe src="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current" height="800px" width="100%"></iframe>
 
 ---
 

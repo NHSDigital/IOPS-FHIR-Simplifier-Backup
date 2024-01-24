@@ -1,0 +1,59 @@
+<OrganizationAffiliation xmlns="http://hl7.org/fhir">
+  <id value="ODS-OrganizationAffiliation-364347-Example" />
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+    <extension url="dateType">
+      <valueCoding>
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+        <code value="Legal" />
+        <display value="Legal" />
+      </valueCoding>
+    </extension>
+    <extension url="period">
+      <valuePeriod>
+        <start value="2015-04-01" />
+        <end value="2020-03-31" />
+      </valuePeriod>
+    </extension>
+  </extension>
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+    <extension url="dateType">
+      <valueCoding>
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+        <code value="Operational" />
+        <display value="Operational" />
+      </valueCoding>
+    </extension>
+    <extension url="period">
+      <valuePeriod>
+        <start value="2015-04-01" />
+        <end value="2020-03-31" />
+      </valuePeriod>
+    </extension>
+  </extension>
+  <active value="false" />
+  <period>
+    <start value="2015-04-01" />
+    <end value="2020-03-31" />
+  </period>
+  <organization>
+    <reference value="Organization/8J091" />
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="8J091" />
+    </identifier>
+  </organization>
+  <participatingOrganization>
+    <reference value="Organization/Q79" />
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="Q79" />
+    </identifier>
+  </participatingOrganization>
+  <code>
+    <coding>
+      <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRelationship" />
+      <code value="RE5" />
+      <display value="IS LOCATED IN THE GEOGRAPHY OF" />
+    </coding>
+  </code>
+</OrganizationAffiliation>

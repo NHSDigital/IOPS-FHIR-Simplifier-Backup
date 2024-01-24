@@ -1,0 +1,8 @@
+- name: Patient
+  filename: Patient.page.md
+- name: RelatedPerson
+  filename: RelatedPerson.page.md
+- name: Questionnaire
+  filename: Questionnaire.page.md
+- name: QuestionnaireResponse
+  filename: QuestionnaireResponse.page.md
