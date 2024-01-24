@@ -44,10 +44,7 @@ Each problem record is linked to:
 * other problems that the recording clinician identified as giving further information about the problem
   * problems that are directly linked to the problem in the provider system
 
-<a href="images/access_structured/Problem_Relationships_1_5_v5.png"><img src="images/access_structured/Problem_Relationships_1_5_v5.png" alt="Problem Relationships" style="max-width:100%;max-height:100%;"></a>
-
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+{{ render: Problem_Relationships.png }}
 
 ## Clinical item references
 
