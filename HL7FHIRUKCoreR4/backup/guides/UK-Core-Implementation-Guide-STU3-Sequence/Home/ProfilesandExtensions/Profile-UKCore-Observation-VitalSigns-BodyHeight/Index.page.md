@@ -24,6 +24,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Observation Vital Signs Body Height profile:
@@ -51,3 +52,6 @@ The minimum viable content that all provider and consumer systems SHALL support 
 <td>A quantity SHALL be present.</td>
 </tr>
 </table>
+</div>
+
+---

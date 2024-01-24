@@ -23,6 +23,9 @@ issue: UKCore-Medication
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios
 
 The UK Core Medication profile will likely not be used in isolation. It does not provide the context for the medication, e.g. the patient or medication related process. It will be typically used as a referenced resource within
@@ -49,5 +52,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Codes that identify this medication.</td>
 </tr>
 </table> 
+</div>
 
 ---

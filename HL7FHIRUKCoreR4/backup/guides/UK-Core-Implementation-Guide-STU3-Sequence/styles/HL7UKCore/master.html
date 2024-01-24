@@ -65,7 +65,7 @@
             </div>
             <!--Comment out for publication, end-->
 
-
+            <!-- This is the main rendering of simplifier content -->
             {{ page-with-children }}
         </div>
 
@@ -82,7 +82,7 @@
                 <button type="button" class="btn btn-primary cookie-accept" data-level="80" data-duration="8760">Accept</button>
             </div>
 
-            <!-- main footer container, sizes match NHSE IG for consistent looka nd feel -->
+            <!-- main footer container, sizes match NHSE IG for consistent look and feel -->
             <div class="container">
                 <table role="none" title="Footer Links" width="100%">
                     	<col style="width:19%">
@@ -160,6 +160,7 @@
                 }
             }
 
+            // main code to handle all tabs, editting this will probably break everything
             function openTab(evt, tabName) {
                 // Find the element that has been clicked with jQuery
                 var element = $(evt.target);
@@ -393,11 +394,13 @@
                 var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
                 if (hasSDH1 != undefined && hasSDH1.length > 0)
                 {
+                    //add a Profile link that jumps back to the top
                     var firstLi = $('ul.nav-stacked li:first');
                     if (firstLi != undefined && firstLi.length > 0) {
                         firstLi.before("<li><a title='Profile' href='#" + hasSDH1[0].id +  "'>Profile</a></li>");
                     }
 
+                    //probably can be made more efficient, but put the specific sidebar divs into objects, to make checking if they exist and adding lines easier
                     var mvcLi = $('ul.nav-stacked li a[title|="Minimum Viable Content"]');
                     var extensionsLi = $('ul.nav-stacked li a[title|="Extensions"]');
                     var bindingsLi = $('ul.nav-stacked li a[title|="Bindings"]');
@@ -406,6 +409,7 @@
                     var patientApiLi = $('ul.nav-stacked li a[title|="Patient Index Provider"]');
                     var clinicalApiLi = $('ul.nav-stacked li a[title|="Clinical Data Provider"]');
 
+                    // work backwards from the specific guidances
                     if (constraintsLi != undefined && constraintsLi.length > 0) {
                         constraintsLi.parent().after("<li><hr></li>");
                     } else if (bindingsLi != undefined && bindingsLi.length > 0) {
@@ -416,6 +420,7 @@
                         mvcLi.parent().after("<li><hr></li>");
                     }
 
+                     // this little chunk shouldn't be needed- uk core access page in main ig prototype
                     if (patientApiLi != undefined && patientApiLi.length > 0)
                     {
                         patientApiLi.parent().before("<li><hr></li>");
@@ -425,6 +430,7 @@
                         clinicalApiLi.parent().before("<li><hr></li>");
                     }
 
+                    // similar code to above, but for main page content specific divs
                     var extensionsDiv = $('div#preview-content div#extensions');
                     var extensionsDivUC = $('div#preview-content div#Extensions');
                     var mvcDiv = $('div#preview-content div#Minimum-Viable-Content');
@@ -458,6 +464,7 @@
                         checkForHR = mvcDiv.children('hr');
                         addToDiv = mvcDiv;
                     }
+                    // main difference is that all pages should already have a --- at the bottom, so we are either adding a thick line if theres no ---, or adding a class
                     if (checkForHR != undefined && checkForHR.length > 0) {
                         checkForHR.addClass('thickline');
                     } else {
@@ -1442,22 +1449,27 @@
                         //sub element pages always have a lower case starting letter, profile, bindings etc are uppper case
                         var headerText = $(this)[0].innerText
                         var firstLetter = headerText.charAt(0);
-                        if (firstLetter === firstLetter.toLowerCase() && !headerText.startsWith("extension:")) {
-                            lookFor = profileName  + "." + headerText
-$('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert"><table class="dict baseFhir" title="Element Details"><tbody></tbody></table></div>').insertAfter($(this))
-			$(this)[0].innerHTML = "<code onclick='toggleCoreDetailsVisibility(this,false);return false;'>" + headerText + "</code>";
-                            box = $(this)[0].parentElement.querySelector("div[id$='elementdetails']");
-                            box.style.display = "none";
-                            for (var elementLoop = 0, elementCount = listOfElements.length-1; elementLoop <= elementCount; elementLoop++) {
-                                if (listOfElements[elementLoop].innerText == lookFor) {
-                                    fromRow = listOfElements[elementLoop].parentElement.rowIndex
-                                    if (elementLoop == elementCount) {
-                                        toRow = allRows.length-1
-                                    } else {
-                                        toRow = listOfElements[elementLoop+1].parentElement.rowIndex - 1
-                                    }
-                                    for (var rowLoop = fromRow; rowLoop <= toRow; rowLoop++) {
-                                       box.querySelector("table tbody").append(allRows[rowLoop].cloneNode(true))
+                        if (firstLetter === firstLetter.toLowerCase()) {
+                            //add a class to the parent div
+                            $(this).parent().addClass("elementGuidance");
+                        
+                           if (!headerText.startsWith("extension:")) {
+                                lookFor = profileName  + "." + headerText
+    $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="alert"><table class="dict baseFhir" title="Element Details"><tbody></tbody></table></div>').insertAfter($(this))
+                $(this)[0].innerHTML = "<code onclick='toggleCoreDetailsVisibility(this,false);return false;'>" + headerText + "</code>";
+                                box = $(this)[0].parentElement.querySelector("div[id$='elementdetails']");
+                                box.style.display = "none";
+                                for (var elementLoop = 0, elementCount = listOfElements.length-1; elementLoop <= elementCount; elementLoop++) {
+                                    if (listOfElements[elementLoop].innerText == lookFor) {
+                                        fromRow = listOfElements[elementLoop].parentElement.rowIndex
+                                        if (elementLoop == elementCount) {
+                                            toRow = allRows.length-1
+                                        } else {
+                                            toRow = listOfElements[elementLoop+1].parentElement.rowIndex - 1
+                                        }
+                                        for (var rowLoop = fromRow; rowLoop <= toRow; rowLoop++) {
+                                            box.querySelector("table tbody").append(allRows[rowLoop].cloneNode(true))
+                                        }
                                     }
                                 }
                             }
@@ -1517,18 +1529,167 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                 });
             }
         </script>
-        <script>
 
+        <script>
+            // this looks at snippet examples and highlights the specific part in grey
+            function highlightSnippetExamples() {
+                var changeIt = false;
+
+                //XML view - snippets should have snippet start/end as xml comments
+                // so loop thru each span and look for that text
+                $("div.tabcontent[id^='XML View'] pre span").each(function(index) { 
+                    if ($(this)[0].innerText.toLowerCase().includes("snippet start")) {
+                        changeIt = true;
+                    }
+                    if (changeIt == true) {
+                        $(this).addClass("snippetBackground");
+                    }
+                    if ($(this)[0].innerText.toLowerCase().includes("snippet end")) {
+                        changeIt = false;
+                    }
+                });
+
+                // Table view - use a data-Snippet on the parent div, with the Resource.element[x]
+                // it gets this attribute, and loops thru the rows, and checks if the first column starts with that
+                $("div.tabcontent[id^='Table View']").each(function(index) { 
+                    var tableElementToColour = $(this)[0].getAttribute("data-Snippet");
+                    if (tableElementToColour != null) {
+                        $(this).find("div.path table tbody tr").each(function(index) { 
+                            if ($(this).find("td:first-child")[0].innerText.startsWith(tableElementToColour)) {
+                                    $(this).addClass("snippetBackground");
+                            }
+                        });
+                    }
+                });
+
+                // Tree View - more complex - specify a dataSnippetStart which is the element, e,g, code to colour
+                //  and a data-SnippetEnd, which is the element after
+                // trees are actually tables, so look for the td with bold tezxt that matches, and which has a collapsible icon
+                // NOTE: this one is flakey!
+                $("div.tabcontent[id^='Tree View']").each(function(index) { 
+                    var tableElementToColourStart = $(this)[0].getAttribute("data-SnippetStart");
+                    var tableElementToColourStop = $(this)[0].getAttribute("data-SnippetEnd");
+                    if (tableElementToColourStart != null && tableElementToColourStop != null) {
+                        $(this).find("div.stu3-treetable div.treetable-wrapper div.treetable-left-panel table tbody tr").each(function(index) { 
+                            if ($(this).find("td.instance b").length>0) {
+                                var collapsible = $(this).find("td.instance span.vjoincollapsible").length>0 || $(this).find("td.instance span.vjoinendcollapsible").length>0
+                                if (collapsible && $(this).find("td.instance b")[0].innerText.startsWith(tableElementToColourStart)) { 
+                                    changeIt = true;
+                                }
+                                if (collapsible && $(this).find("td.instance b")[0].innerText.startsWith(tableElementToColourStop)) { 
+                                    changeIt = false;
+                                }
+                                if (changeIt == true) {
+                                    $(this).addClass("snippetBackground");
+                                }
+                            }
+                        });
+                    }
+                });
+                 
+                // JSON View, similar,  - specify a dataSnippetStart which is the element, e,g, code to colour
+                //  and a data-SnippetEnd, which is the element after
+                // loop thru the pre / span's, and look for matching text
+                //  if it find the start, make sure theres a { a few spans later, and also move back a span
+                // NOTE: this one is flakey!
+                $("div.tabcontent[id^='JSON View']").each(function(index) { 
+                    var tableElementToColourStart = $(this)[0].getAttribute("data-SnippetStart");
+                    var tableElementToColourStop = $(this)[0].getAttribute("data-SnippetEnd");
+                    if (tableElementToColourStart != null && tableElementToColourStop != null) {
+                        $(this).find("pre span").each(function(index) { 
+                            if ($(this)[0].innerText.toLowerCase() == tableElementToColourStart) {
+                                if ($(this)[0].nextSibling.nextSibling.nextSibling != undefined && $(this)[0].nextSibling.nextSibling.nextSibling.innerText == "{") {
+                                    changeIt = true;
+                                    $(this).prev("span").addClass("snippetBackground");
+                                }
+                            }
+                            if ($(this)[0].innerText.toLowerCase() == tableElementToColourStop) {
+                                changeIt = false;
+                                    $(this).prev("span").removeClass("snippetBackground");
+                            }
+                            if (changeIt == true) {
+                                $(this).addClass("snippetBackground");
+                            }
+                        });
+                    }
+                });
+            }
+        </script>
+
+        <script>
             //removes any development notice and footer if its being rendered in an iframe
             function pageInIframe() {
-                if (window.frameElement !== null)
-                {
-                    $('div#development-notice').remove();
-                    $('footer').remove();
+                const frame = window.frameElement;
+                if (frame !== null && frame.nodeName == "IFRAME") {
+                    // if no class set on the iframe, then remove dev notice and footer
+                    //  i.e. leave header and nav bar
+                    if (frame.classList.length==0){
+                        $('div#development-notice').remove();
+                        $('div#newAsset').remove();
+                        $('footer').remove();
+                    }
+
+                    // class that strips everything out except the tabs
+                    if (frame.classList.contains("justTabs")) {
+                        $('header').remove();
+                        $('div#development-notice').remove();
+                        $('div.col-md-6').remove();
+                        $('div.col-md-18').addClass("col-md-24");
+                        $('div.col-md-18').removeClass("col-md-18");
+                        $('div#preview-content h1[id^=structuredefinition-ukcore]').remove();
+                        $('div#newAsset').remove();
+                        $('table[title="Profile Details"]').remove();
+                        $('table[title="Profile Purpose"]').remove();
+                        $('div#ProfileGuidance').remove();
+                        $('div#Extensions').remove();
+                        $('div#Bindings').remove();
+                        $('div#Constraints').remove(); 
+                        $('div.elementGuidance').remove();
+                        $('footer').remove();  
+                    }
+                    else {
+                        //or more granular stripping out
+                        if (frame.classList.contains("noDevBanner")) {
+                            $('div#development-notice').remove();
+                            $('div#newAsset').remove();
+                        }
+                        if (frame.classList.contains("noFooter")) { 
+                            $('footer').remove();  
+                        }
+                        if (frame.classList.contains("noHeader")) {   
+                            $('header').remove();
+                        }
+                        if (frame.classList.contains("noSidebar")) {   
+                            //if we remove the side bar, we can expand the main panel
+                            $('div.col-md-6').remove();  
+                            $('div.col-md-18').addClass("col-md-24");
+                            $('div.col-md-18').removeClass("col-md-18");
+                        }
+                        if (frame.classList.contains("noAssetName")) {   
+                            $('div#preview-content h1[id^=structuredefinition-ukcore]').remove();
+                            $('div#newAsset').remove();
+                        }
+                        if (frame.classList.contains("noDescription")) {   
+                            $('table[title="Profile Details"]').remove();
+                        }
+                        if (frame.classList.contains("noPurpose")) {   
+                            $('table[title="Profile Purpose"]').remove();
+                        }
+                        if (frame.classList.contains("noProfileGuidance")) {   
+                            $('div#ProfileGuidance').remove();
+                            $('div#Extensions').remove();
+                            $('div#Bindings').remove();
+                            $('div#Constraints').remove();
+                        }
+                        if (frame.classList.contains("noElementGuidance")) {   
+                            $('div.elementGuidance').remove();
+                        }
+                    }
                 }
             }
 
             // function runs on page load
+            // ordering of these can be critical as some alter classes / divs that other then rely on
             $(function() {
                 fixTemplatingIssues();
                 transposeFQLTables();
@@ -1548,7 +1709,6 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                 stripAssetNameFromSideBar();
                 findCodeSystemURLS();
                 wrapSideBar();
-                pageInIframe();
                 alterBaseElementOverrides();
                 sidebarClickAndOpen();
                 fixWebAccessibility();
@@ -1556,6 +1716,8 @@ $('<div id="elementdetails" markdown="span" class="alert alert-baseFhir" role="a
                 handleSubMenuEvents();
                 setInitialDropdownState();
                 updateFooterPosition();
+                //highlightSnippetExamples(); //prototype, un comment with caution
+                pageInIframe();
             });
         </script>
 

@@ -16,6 +16,8 @@ issue: UKCore-Procedure
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Procedure profile:
 
@@ -57,5 +59,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Date and time the procedure was performed.</td>
 </tr>
 </table>
+</div>
 
 ---

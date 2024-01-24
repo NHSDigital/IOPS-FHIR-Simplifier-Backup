@@ -46,7 +46,7 @@ Where a human asserter is not captured or cannot be confirmed, i.e. the asserter
 </div>
 
 
-<div id="Table View" class="tabcontent" style="display:block">
+<div id="Table View" class="tabcontent" style="display:block" data-Snippet="PractitionerRole.organization[0]">
   <h3>Table View</h3>
 {{table:UKCore-PractitionerRole-Sn-Organization-Code-Example}}
 </div>

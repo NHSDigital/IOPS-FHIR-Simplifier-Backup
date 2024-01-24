@@ -17,6 +17,8 @@ issue: UKCore-serviceRequest-Lab
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core ServiceRequest-Lab profile:
 
@@ -43,5 +45,6 @@ The minimum viable content that all provider and consumer systems SHALL support 
 <td>Explanation / Justification for for why this service is being requested.</td>
 </tr>
 </table>
+</div>
 
 ---

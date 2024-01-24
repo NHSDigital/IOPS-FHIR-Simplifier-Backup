@@ -38,54 +38,9 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <b>Respiratory Rate</b> - An example to illustrate a vital signs respiration rate reading.<br/>
 {{pagelink:Example-UKCore-Observation-VitalSigns-RespiratoryRate}}<br><br>
 </div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-VitalSigns/~issues?level=File">Report Issue for UKCore-Observation-VitalSigns</a>.
-</div>
 </nocheck>
+
+<div id="ProfileGuidance">
 
 ### Example Usage Scenarios ###
 
@@ -147,6 +102,7 @@ The minimum viable content that all provider and consumer systems SHALL support 
 <td>If a component is present, a LOINC "magic code" SHALL be present, in addition to the SNOMED CT concept for the observation type.</td>
 </tr>
 </table>
+</div>
 
 ---
 

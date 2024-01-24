@@ -19,22 +19,22 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
 </div>
 
-<div id="Table View" class="tabcontent" style="display:block">
+<div id="Table View" class="tabcontent" style="display:block" data-Snippet="AllergyIntolerance.code[0]">
   <h3>Table View</h3>
 {{table:UKCore-AllergyIntolerance-Sn-NonDrugAllergy-Example}}
 </div>
 
-<div id="Tree View" class="tabcontent">
+<div id="Tree View" class="tabcontent" data-SnippetStart="code" data-SnippetEnd="patient">
   <h3>Tree View</h3>
 {{tree:UKCore-AllergyIntolerance-Sn-NonDrugAllergy-Example, expand:9}}
 </div>
 
-<div id="XML View" class="tabcontent">
+<div id="XML View" class="tabcontent" >
   <h3>XML View</h3>
 {{xml:UKCore-AllergyIntolerance-Sn-NonDrugAllergy-Example}}
 </div>
 
-<div id="JSON View" class="tabcontent">
+<div id="JSON View" class="tabcontent" data-SnippetStart="code" data-SnippetEnd="patient">
   <h3>JSON View</h3>
 {{json:UKCore-AllergyIntolerance-Sn-NonDrugAllergy-Example}}
 </div>
@@ -51,17 +51,17 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
 </div>
 
-<div id="Table View" class="tabcontent" style="display:block">
+<div id="Table View" class="tabcontent" style="display:block" data-Snippet="AllergyIntolerance.code[0]">
   <h3>Table View</h3>
 {{table:UKCore-AllergyIntolerance-Sn-DrugAllergy-Example}}
 </div>
 
-<div id="Tree View" class="tabcontent">
+<div id="Tree View" class="tabcontent" data-SnippetStart="code" data-SnippetEnd="patient">
   <h3>Tree View</h3>
 {{tree:UKCore-AllergyIntolerance-Sn-DrugAllergy-Example, expand:9}}
 </div>
 
-<div id="XML View" class="tabcontent">
+<div id="XML View" class="tabcontent" data-SnippetStart="code" data-SnippetEnd="patient">
   <h3>XML View</h3>
 {{xml:UKCore-AllergyIntolerance-Sn-DrugAllergy-Example}}
 </div>
@@ -85,7 +85,7 @@ Degraded drug allergy codes can be used in three scenarios, with examples.
  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
 </div>
 
-<div id="Table View" class="tabcontent" style="display:block">
+<div id="Table View" class="tabcontent" style="display:block" data-Snippet="AllergyIntolerance.code[0]"
   <h3>Table View</h3>
 {{table:UKCore-AllergyIntolerance-Sn-DrugAllergyToEggProtein-Example}}
 </div>
@@ -122,7 +122,7 @@ There can be an explicit assertion of ‘No Known Allergies’ using the SNOMED 
  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
 </div>
 
-<div id="Table View" class="tabcontent" style="display:block">
+<div id="Table View" class="tabcontent" style="display:block" data-Snippet="AllergyIntolerance.code[0]">
   <h3>Table View</h3>
 {{table:UKCore-AllergyIntolerance-Sn-NegHandlNoKnownAllergies-Example}}
 </div>

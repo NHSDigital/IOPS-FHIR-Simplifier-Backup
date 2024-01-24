@@ -18,6 +18,8 @@ issue: UKCore-Schedule
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Schedule profile:
 - Query for details of a schedule
@@ -54,5 +56,5 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Period of time covered by schedule.</td>
 </tr>
 </table>
-
+</div
 ---

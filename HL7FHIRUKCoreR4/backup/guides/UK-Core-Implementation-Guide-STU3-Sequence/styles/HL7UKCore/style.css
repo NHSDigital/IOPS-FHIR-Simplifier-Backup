@@ -631,3 +631,7 @@ h2 code {
     display: none;
   }
 }
+
+.snippetBackground {
+    background-color: #ddd;
+}

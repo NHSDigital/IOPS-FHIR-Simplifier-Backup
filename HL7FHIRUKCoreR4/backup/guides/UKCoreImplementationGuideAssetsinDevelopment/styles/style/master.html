@@ -535,10 +535,68 @@
 
             //removes any development notice and footer if its being rendered in an iframe
             function pageInIframe() {
-                if (window.frameElement !== null)
-                {
-                    $('div#development-notice').remove();
-                    $('footer').remove();
+                const frame = window.frameElement;
+                if (frame !== null && frame.nodeName == "IFRAME") {
+                    debugger;
+                    if (frame.classList.length==0){
+                        $('div#development-notice').remove();
+                        $('div#newAsset').remove();
+                        $('footer').remove();
+                    }
+
+                    if (frame.classList.contains("justTabs")) {
+                        $('header').remove();
+                        $('div#development-notice').remove();
+                        $('div.col-md-6').remove();
+                        $('div.col-md-18').addClass("col-md-24");
+                        $('div.col-md-18').removeClass("col-md-18");
+                        $('div#preview-content h1[id^=structuredefinition-ukcore]').remove();
+                        $('div#newAsset').remove();
+                        $('table[title="Profile Details"]').remove();
+                        $('table[title="Profile Purpose"]').remove();
+                        $('div#ProfileGuidance').remove();
+                        $('div#Extensions').remove();
+                        $('div#Bindings').remove();
+                        $('div#Constraints').remove(); 
+                        $('div.elementGuidance').remove();
+                        $('footer').remove();  
+                    }
+                    else {
+                        if (frame.classList.contains("noDevBanner")) {
+                            $('div#development-notice').remove();
+                            $('div#newAsset').remove();
+                        }
+                        if (frame.classList.contains("noFooter")) { 
+                            $('footer').remove();  
+                        }
+                        if (frame.classList.contains("noHeader")) {   
+                            $('header').remove();
+                        }
+                        if (frame.classList.contains("noSidebar")) {   
+                            $('div.col-md-6').remove();  
+                            $('div.col-md-18').addClass("col-md-24");
+                            $('div.col-md-18').removeClass("col-md-18");
+                        }
+                        if (frame.classList.contains("noAssetName")) {   
+                            $('div#preview-content h1[id^=structuredefinition-ukcore]').remove();
+                            $('div#newAsset').remove();
+                        }
+                        if (frame.classList.contains("noDescription")) {   
+                            $('table[title="Profile Details"]').remove();
+                        }
+                        if (frame.classList.contains("noPurpose")) {   
+                            $('table[title="Profile Purpose"]').remove();
+                        }
+                        if (frame.classList.contains("noProfileGuidance")) {   
+                            $('div#ProfileGuidance').remove();
+                            $('div#Extensions').remove();
+                            $('div#Bindings').remove();
+                            $('div#Constraints').remove();
+                        }
+                        if (frame.classList.contains("noElementGuidance")) {   
+                            $('div.elementGuidance').remove();
+                        }
+                    }
                 }
             }
 

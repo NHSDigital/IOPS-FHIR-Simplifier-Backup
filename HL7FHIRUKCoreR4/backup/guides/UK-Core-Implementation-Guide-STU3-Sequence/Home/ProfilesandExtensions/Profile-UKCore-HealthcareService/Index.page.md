@@ -16,6 +16,9 @@ issue: UKCore-HealthcareService
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core HealthcareService profile:
 - Query for details of a healthcare service
@@ -40,5 +43,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>The organization that provides this healthcare service.</td>
 </tr>
 </table>
+</div>
 
 ---

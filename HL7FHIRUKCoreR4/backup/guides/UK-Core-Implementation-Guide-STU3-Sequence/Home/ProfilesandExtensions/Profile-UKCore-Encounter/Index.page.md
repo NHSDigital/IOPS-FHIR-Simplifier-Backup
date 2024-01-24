@@ -38,6 +38,9 @@ issue: UKCore-Encounter
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Encounter profile:
 
@@ -88,5 +91,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Reason the encounter takes place, expressed as a reference to a Condition, Procedure, Observation, or ImmunizationRecommendation.</td>
 </tr>
 </table>
+</div>
 
 ---

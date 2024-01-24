@@ -26,6 +26,8 @@ issue: UKCore-Organization
 
 </nocheck>
 
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 
 - Query for organisation information using the query parameter identifier `Organization.identifier` for a known ODS code.
@@ -74,5 +76,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>An address for the organization.</td>
 </tr>
 </table>
+</div>
 
 ---

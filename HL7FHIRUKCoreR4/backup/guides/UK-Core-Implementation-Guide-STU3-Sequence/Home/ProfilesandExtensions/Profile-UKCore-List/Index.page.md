@@ -24,6 +24,9 @@ issue: UKCore-List
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ## Example Usage Scenarios ##
 The following are example usage scenarios for the UK Core List profile:
 
@@ -58,5 +61,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>The common subject (or patient) of the resources that are in the list if there is one.</td>
 </tr>
 </table>
+</div>
 
 ---

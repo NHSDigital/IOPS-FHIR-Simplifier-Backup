@@ -19,6 +19,9 @@ issue: UKCore-MedicationRequest
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core MedicationRequest profile:
 
@@ -111,5 +114,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Any restrictions on medication substitution.</td>
 </tr>
 </table>
+</div>
 
 ---

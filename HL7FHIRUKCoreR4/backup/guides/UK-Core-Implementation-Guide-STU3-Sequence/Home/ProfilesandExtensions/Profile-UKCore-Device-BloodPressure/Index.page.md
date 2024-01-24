@@ -26,20 +26,20 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Device-Bloo
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Device profile:
 
 - Query and retrieve a information around a blood pressure monitoring / recording device
 - Record or update the device used to measure a patient's blood pressure
 
-
 <hr class="thickline">
-
 
 ## Profile Specific Implementation Guidance: ##
 
 This is a derived profile of [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current) and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
-
 
 <h3>Minimum Viable Content</h3>
 
@@ -59,6 +59,7 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>The type of the Device.</td>
 </tr>
 </table>
+<div>
 
 ---
 

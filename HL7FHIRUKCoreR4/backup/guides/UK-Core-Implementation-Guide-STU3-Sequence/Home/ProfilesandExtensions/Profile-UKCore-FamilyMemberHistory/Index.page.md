@@ -22,6 +22,9 @@ issue: UKCore-FamilyMemberHistory
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core FamilyMemberHistory profile:
 - Query for details of a FamilyMemberHistory
@@ -70,5 +73,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Condition that the related person had.</td>
 </tr>
 </table>
+</div>
 
 ---

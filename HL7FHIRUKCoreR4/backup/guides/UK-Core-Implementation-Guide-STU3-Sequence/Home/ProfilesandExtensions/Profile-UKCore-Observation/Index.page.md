@@ -65,6 +65,9 @@ issue: UKCore-Observation
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Observation profile:
 
@@ -126,5 +129,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Actual result.</td>
 </tr>
 </table>
+</div>
 
 ---

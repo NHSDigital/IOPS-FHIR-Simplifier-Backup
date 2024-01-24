@@ -22,54 +22,10 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 <b>Pipe Smoker</b> - An example to illustrate recording a patient who smokes a pipe.<br/>
 {{pagelink:Example-UKCore-Observation-PipeSmoker}}<br><br>
 </div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-TobaccoConsumption'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-TobaccoConsumption'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-TobaccoConsumption'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation-TobaccoConsumption/~issues?level=File">Report Issue for UKCore-Observation-TobaccoConsumption</a>.
-</div>
 </nocheck>
+
+
+<div id="ProfileGuidance">
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Observation Tobacco Consumption profile:
@@ -117,6 +73,7 @@ The minimum viable content that all provider and consumer systems SHALL support 
 <td>A quantity SHALL be present.</td>
 </tr>
 </table>
+</div>
 
 ---
 
