@@ -1,0 +1,21 @@
+{
+  "resourceType": "RelatedPerson",
+  "id":"RelatedPerson-AnitaLambertsDeceasedPatient-Example",
+  "patient": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303649"
+    }
+  },
+  "relationship": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "PRN",
+          "display": "Parent"
+        }
+      ]
+    }
+  ]
+}
