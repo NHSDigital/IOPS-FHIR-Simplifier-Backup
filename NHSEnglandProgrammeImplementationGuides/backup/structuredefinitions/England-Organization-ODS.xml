@@ -34,7 +34,7 @@
     <element id="Organization.extension:organizationPeriod">
       <path value="Organization.extension" />
       <sliceName value="organizationPeriod" />
-      <max value="0" />
+      <definition value="The date range that this organization SHOULD be considered available. For ODS Legal and Operational periods, consider using the ExetensionEnglandTypedPeriod instead." />
     </element>
     <element id="Organization.extension:extensionEnglandOrganisationRole">
       <path value="Organization.extension" />
@@ -91,22 +91,22 @@
       <sliceName value="odsRecordClass" />
       <min value="1" />
       <max value="1" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRecordClass" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Organization.type:odsRecordClass.coding.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRecordClass" />
     </element>
     <element id="Organization.type:odsRecordUseType">
       <path value="Organization.type" />
       <sliceName value="odsRecordUseType" />
       <min value="1" />
       <max value="1" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="https://fhir.nhs.uk/England/CodeSystem/England-ODSRecordUseType" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Organization.type:odsRecordUseType.coding.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/England/CodeSystem/England-ODSRecordUseType" />
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />

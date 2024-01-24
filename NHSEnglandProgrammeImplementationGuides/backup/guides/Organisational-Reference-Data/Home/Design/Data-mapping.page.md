@@ -184,9 +184,9 @@
         <tr>
             <td>address</td>
             <td>0..*</td>
-            <td><code>0..*</code></td>
+            <td>0..*</td>
             <td>Optional</td>
-<td>Location.AddrLn1<br>Organisation.AddrLn2<br>Organisation.AddrLn3<br>Location.Town<br>Location.County<br>Location.Postcode<br>Organisation.Country</td>
+<td>Location.AddrLn1<br>Location.AddrLn2<br>Location.AddrLn3<br>Location.Town<br>Location.County<br>Location.Postcode</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
             <td></td>
         </tr>
@@ -197,7 +197,7 @@
             <td>Optional</td>
             <td>Location.URPN</td>
             <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-AddressKey.page.md?version=current">Extension</a></td>
-            <td>Publish via R4 only (not STU3 and ORD like for like as not currently published)</td>
+            <td></td>
         </tr>
         <tr>
             <td>partOf</td>
