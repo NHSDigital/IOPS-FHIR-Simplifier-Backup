@@ -17,6 +17,8 @@ issue: UKCore-PractitionerRole
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core PractitionerRole profile:
 
@@ -74,5 +76,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>The actual contact point details</td>
 </tr>
 </table>
+</div>
 
 ---

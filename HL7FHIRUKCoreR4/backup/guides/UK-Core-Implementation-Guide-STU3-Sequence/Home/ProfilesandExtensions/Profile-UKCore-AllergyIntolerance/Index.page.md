@@ -26,6 +26,9 @@ issue: UKCore-AllergyIntolerance
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios
 
 The following are feasible use cases for the UK Core AllergyIntolerance profile:
@@ -94,6 +97,7 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Clinical assessment of the severity of the reaction event as a whole</td>
 </tr>
 </table>
+</div>
 
 ---
 

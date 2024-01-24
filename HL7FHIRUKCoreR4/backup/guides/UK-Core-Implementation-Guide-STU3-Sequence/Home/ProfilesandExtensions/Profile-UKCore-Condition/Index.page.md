@@ -23,6 +23,7 @@ issue: UKCore-Condition
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Condition profile:
@@ -33,7 +34,6 @@ The following are example usage scenarios for the UK Core Condition profile:
 <hr class="thickline">
 
 ## Profile Specific Implementation Guidance: ##
-
 
 <h3>Minimum Viable Content</h3>
 
@@ -69,5 +69,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Individual who recorded the record and takes responsibility for its content.</td>
 </tr>
 </table>
+</div>
 
 ---

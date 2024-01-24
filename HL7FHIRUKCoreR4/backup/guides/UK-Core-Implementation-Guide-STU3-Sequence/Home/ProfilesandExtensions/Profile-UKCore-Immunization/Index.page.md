@@ -26,6 +26,9 @@ issue: UKCore-Immunization
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Immunization profile:
 
@@ -78,5 +81,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>How much of the vaccine was administered</td>
 </tr>
 </table>
+</div>
 
 ---

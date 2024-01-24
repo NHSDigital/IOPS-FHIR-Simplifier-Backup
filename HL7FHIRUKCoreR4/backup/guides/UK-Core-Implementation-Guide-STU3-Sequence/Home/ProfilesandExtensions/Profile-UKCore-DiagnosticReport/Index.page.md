@@ -27,6 +27,9 @@ issue: UKCore-DiagnosticReport
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core DiagnosticReport profile:
 
@@ -43,8 +46,6 @@ Services that should consider using the  UK Core DiagnosticReport profile are:
 <hr class="thickline">
 
 ## Profile Specific Implementation Guidance: ##
-
-
 
 ### Minimum Viable Content
 
@@ -85,5 +86,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Observations that are part of this diagnostic report.</td>
 </tr>
 </table>
+</div>
 
 ---

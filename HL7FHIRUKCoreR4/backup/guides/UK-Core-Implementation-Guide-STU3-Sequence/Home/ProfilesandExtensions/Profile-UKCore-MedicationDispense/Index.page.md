@@ -16,6 +16,9 @@ issue: UKCore-MedicationDispense
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core MedicationDispense profile:
 
@@ -97,6 +100,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Rate at which the medication is to be administered.</td>
 </tr>
 </table>
-
+</div>
 
 ---

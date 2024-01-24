@@ -17,6 +17,8 @@ issue: UKCore-RelatedPerson
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core RelatedPerson profile:
 - Query for related person information for a given Patient
@@ -73,5 +75,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Postal code for area.</td>
 </tr>
 </table>
+</div>
 
 ---

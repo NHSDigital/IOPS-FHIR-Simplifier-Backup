@@ -17,6 +17,9 @@ issue: UKCore-DiagnosticReport-Lab
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core DiagnosticReport Lab profile:
 
@@ -40,13 +43,11 @@ The DiagnosticReport-Lab profile is expected to reference either:
 - combinations of the above, for example a blood test may include multiple grouped tests such as Urea and electrolytes, Liver function tests, Full blood count, each having a single instance of Observation-LabGroup, along with single tests such as Serum C reactive protein level, eGFR using creatinine and Serum ferritin level, each having a single instance of Observation-Lab.
 <br><br>
 
-
 <div id="renderParent" title="Structure of Derived Lab Profiles">
 {{render: Derived-Profiles-Lab-Example }}
 </div>
 
 ---
-
 
 ### Minimum Viable Content
 
@@ -62,5 +63,6 @@ The minimum viable content that all provider and consumer systems SHALL support 
 <td>Responsible diagnostic service.</td>
 </tr>
 </table>
+</div>
 
 ---

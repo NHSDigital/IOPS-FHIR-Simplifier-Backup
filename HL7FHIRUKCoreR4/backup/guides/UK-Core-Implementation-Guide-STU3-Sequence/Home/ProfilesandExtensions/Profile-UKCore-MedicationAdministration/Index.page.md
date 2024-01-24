@@ -16,6 +16,9 @@ issue: UKCore-MedicationAdministration
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios
 
 The following are example usage scenarios for the UK Core Medication Administration profile:
@@ -63,5 +66,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>The dosage instruction for the administered medication</td>
 </tr>
 </table>
+</div>
 
 ---

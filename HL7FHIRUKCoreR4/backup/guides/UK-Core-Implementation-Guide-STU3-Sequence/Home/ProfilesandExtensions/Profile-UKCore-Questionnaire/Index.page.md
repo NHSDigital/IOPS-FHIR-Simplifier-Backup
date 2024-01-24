@@ -22,6 +22,8 @@ issue: UKCore-Questionnaire
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Questionnaire profile:
 - Query for details of a questionnaire
@@ -75,5 +77,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Defines the format in which the user is to be prompted for the answer.</td>
 </tr>
 </table>
+</div>
 
 ---

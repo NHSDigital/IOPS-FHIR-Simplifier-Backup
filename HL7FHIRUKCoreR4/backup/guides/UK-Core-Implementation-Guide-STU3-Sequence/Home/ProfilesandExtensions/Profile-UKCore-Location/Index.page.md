@@ -19,6 +19,9 @@ issue: UKCore-Location
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UKCore Location profile:
 
@@ -55,5 +58,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>If locations can be visited, we need to keep track of their address.</td>
 </tr>
 </table>
+</div>
 
-<hr class="thickline">
+---

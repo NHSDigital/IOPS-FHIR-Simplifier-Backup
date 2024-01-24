@@ -18,6 +18,8 @@ issue: UKCore-Slot
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Slot profile:
 - Query for slot information from a given schedule
@@ -54,5 +56,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Date/Time that the slot is to conclude.</td>
 </tr>
 </table>
+</div>
 
 ---

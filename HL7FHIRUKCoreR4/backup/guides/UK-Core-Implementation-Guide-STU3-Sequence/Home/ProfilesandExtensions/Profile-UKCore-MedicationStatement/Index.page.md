@@ -25,6 +25,9 @@ issue: UKCore-MedicationStatement
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core MedicationStatement profile:
 
@@ -91,5 +94,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>For the dosage for the statement</td>
 </tr>
 </table>
+</div>
 
 ---

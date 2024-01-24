@@ -17,6 +17,9 @@ issue: UKCore-Observation-Group-L
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Observation profile:
 
@@ -54,5 +57,6 @@ The minimum viable content that all provider and consumer systems SHALL support 
 <td>Related resource that belongs to the Observation group</td>
 </tr>
 </table>
+</div>
 
 ---

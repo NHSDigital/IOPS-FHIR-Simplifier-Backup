@@ -31,6 +31,8 @@ issue: UKCore-Specimen
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Specimen profile:
 
@@ -71,5 +73,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Why the specimen was collected.</td>
 </tr>
 </table>
+</div>
 
 ---

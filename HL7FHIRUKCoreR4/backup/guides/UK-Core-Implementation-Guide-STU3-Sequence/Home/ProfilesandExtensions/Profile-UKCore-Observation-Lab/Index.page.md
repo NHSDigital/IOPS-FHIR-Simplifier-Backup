@@ -15,6 +15,9 @@ issue: UKCore-Observation-Lab
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Observation profile:
 
@@ -37,6 +40,7 @@ This is a derived profile of {{pagelink:Profile-Observation,text:UKCore-Observat
 <h3>Minimum Viable Content</h3>
 
 The minimum viable content that all provider and consumer systems SHALL support are the elements within the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} table.
+</div>
 
 ---
 

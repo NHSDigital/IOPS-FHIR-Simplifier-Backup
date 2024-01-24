@@ -23,6 +23,9 @@ issue: UKCore-Appointment
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Appointment profile:
 - Query for appointment information for a given Patient
@@ -86,6 +89,7 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>A Person, Location, HealthcareService, or Device that is participating in the appointment.</td>
 </tr>
 </table>
+</div>
 
 ---
 

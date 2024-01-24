@@ -32,6 +32,8 @@ issue: UKCore-ServiceRequest
 </div>
 </nocheck>
 
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core ServiceRequest profile:
 - Query for service request information for a given Patient
@@ -89,5 +91,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Who/what is requesting service.</td>
 </tr>
 </table>
+</div>
 
 ---

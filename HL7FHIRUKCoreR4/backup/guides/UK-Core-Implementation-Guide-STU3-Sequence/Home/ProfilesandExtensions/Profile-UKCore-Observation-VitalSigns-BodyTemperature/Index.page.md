@@ -24,6 +24,9 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 </div>
 </nocheck>
 
+
+<div id="ProfileGuidance">
+
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Observation Vital Signs Body Temperature profile:
 
@@ -48,5 +51,6 @@ The UKCore-Observation-VitalSigns-BodyTemperature further derives from UKCore-Ob
 <td>A quantity SHALL be present.</td>
 </tr>
 </table>
+</div>
 
 ---
