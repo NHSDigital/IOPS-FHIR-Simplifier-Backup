@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact
+issue: Extension-UKCore-AdditionalContact
 ---
 ## StructureDefinition Extension-UKCore-AdditionalContact
 
@@ -17,11 +18,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Additional
   <b>Additional Contact</b> - An example to illustrate providing an additional contact with a service request.<br>
 {{pagelink:Example-UKCore-Extension-AdditionalContact}}
 <br><br>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-AdditionalContact/~issues?level=File">Report Issue for Extension-UKCore-AdditionalContact</a>.
 </div>
 
 <h3 id="guidance-additionalcontact">Extension Specific Guidance</h3>

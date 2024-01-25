@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CuffSize
+issue: Extension-UKCore-CuffSize
 ---
 ## StructureDefinition Extension-UKCore-CuffSize
 
@@ -24,12 +25,9 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-C
 {{pagelink:Example-UKCore-Extension-CuffSize}}
 <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CuffSize/~issues?level=File">Report Issue for Extension-UKCore-CuffSize</a>.
-</div>
 
 <h3 id="guidance-cuffsize">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-BloodPressure-CuffSize}}.
 
 ---

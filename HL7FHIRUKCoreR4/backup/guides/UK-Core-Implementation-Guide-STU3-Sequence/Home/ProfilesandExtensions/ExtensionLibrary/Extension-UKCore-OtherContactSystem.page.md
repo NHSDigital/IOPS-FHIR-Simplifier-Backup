@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem
+issue: Extension-UKCore-OtherContactSystem
 ---
 ## StructureDefinition Extension-UKCore-OtherContactSystem
 
@@ -17,12 +18,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherConta
 {{pagelink:Example-UKCore-Extension-OtherContactSystem}}
 <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-OtherContactSystem/~issues?level=File">Report Issue for Extension-UKCore-OtherContactSystem</a>.
-</div>
 
 <h3 id="guidance-othercomntactsystem">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-OtherContactSystem}}.
 
 <div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-warning"></i> Breaking Change</h4>

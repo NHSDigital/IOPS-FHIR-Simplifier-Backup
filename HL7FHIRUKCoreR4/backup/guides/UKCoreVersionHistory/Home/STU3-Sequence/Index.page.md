@@ -19,18 +19,19 @@
 <br>
 <b>General IG improvements:</b><br>
 <ul>
-<li>Swap Examples to Simplifier templating</li>
-<li>Swap ValueSets to Simplifier templating</li>
-<li>Swap Extensions to Simplifier templating</li>
+<li>Swap Example, ValueSet, CodeSystem, Extension, and Profile pages to use Simplifier templating</li>
 <li>Altered Profiles sub menu from hover to click to show</li>
 <li>Altered Profiles sub menu to restore its state via cookie</li>
 <li>Altered Profiles sub menu to have a sub menu for derived profiles</li>
 <li>Added cookie consent popup</li>
 <li>Added Detailed View to Profile tabs</li>
-<li>Added Feedback to Profile tabs, which links to the relevant Simplifier issues page to raise an issue for the profile</li>
+<li>Added Feedback to tabs, which links to the relevant Simplifier issues page to raise an issue for the asset</li>
 <li>Added "View UK Core guidance" link in pinnable panel, for elements where additional guidance is detailed on a page</li>
+<li>Added "or UK Core equivalent profile" guidance in pinnable panel, for Reference datatyoe elements where the resources include a UK Core profile</li>
 <li>Added clickable element headers, that show / hide the relevant element details from the Detailed view</li>
 <li>Clicking an element in the left hand navigation list automatically displays the detailed view as per the above item</li>
+<li>Added configurable display options for displaying a UK Code profile within an iFrame</li>
+<li>Added configurable display options to highlight specific sections of an example</li>
 </ul>
 <b>C&TA Sprint 7 Assets:</b><br>
 <ul>

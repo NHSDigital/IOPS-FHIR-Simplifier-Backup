@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus
+issue: Extension-UKCore-EmergencyCareDischargeStatus
 ---
 ## StructureDefinition Extension-UKCore-EmergencyCareDischargeStatus
 
@@ -17,12 +18,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyC
   {{pagelink:Example-UKCore-Extension-EmergencyCareDischargeStatus}}
   <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-EmergencyCareDischargeStatus/~issues?level=File">Report Issue for Extension-UKCore-EmergencyCareDischargeStatus</a>.
-</div>
 
 <h3 id="guidance-emergencycaredischargestatus">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-EmergencyCareDischargeStatus}}.
 
 ---

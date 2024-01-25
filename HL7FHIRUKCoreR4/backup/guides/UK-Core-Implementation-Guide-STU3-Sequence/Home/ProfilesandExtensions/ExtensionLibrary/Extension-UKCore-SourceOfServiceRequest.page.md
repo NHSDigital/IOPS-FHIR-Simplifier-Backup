@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest
+issue: Extension-UKCore-SourceOfServiceRequest
 ---
 ## StructureDefinition Extension-UKCore-SourceOfServiceRequest
 
@@ -17,13 +18,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfSe
 {{pagelink:Example-UKCore-Extension-SourceOfServiceRequest}}
 <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-SourceOfServiceRequest/~issues?level=File">Report Issue for Extension-UKCore-SourceOfServiceRequest</a>.
-</div>
-
 
 <h3 id="guidance-sourceofservicerequest">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-SourceOfServiceRequest}}.
 
 ---

@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence
+issue: Extension-UKCore-Evidence
 ---
 ## StructureDefinition Extension-UKCore-Evidence
 
@@ -24,6 +25,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-E
 
 
 <h3 id="guidance-evidence">Extension Specific Guidance</h3>
+
 Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-DiagnosticReport}}.
 
 ---

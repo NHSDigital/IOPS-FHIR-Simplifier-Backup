@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RecordingSetting
+issue: Extension-UKCore-RecordingSetting
 ---
 ## StructureDefinition Extension-UKCore-RecordingSetting
 
@@ -24,12 +25,9 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-R
 {{pagelink:Example-UKCore-Extension-RecordingSetting}}
 <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-RecordingSetting/~issues?level=File">Report Issue for Extension-UKCore-RecordingSetting</a>.
-</div>
 
 <h3 id="guidance-recordingsetting">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-RecordingSetting}}.
 
 ---

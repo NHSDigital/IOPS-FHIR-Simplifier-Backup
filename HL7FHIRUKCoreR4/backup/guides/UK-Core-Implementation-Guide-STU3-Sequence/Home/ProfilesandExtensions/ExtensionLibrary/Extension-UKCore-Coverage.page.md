@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage
+issue: Extension-UKCore-Coverage
 ---
 ## StructureDefinition Extension-UKCore-Coverage
 
@@ -17,12 +18,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage
   {{pagelink:Example-UKCore-Extension-Coverage}}
   <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-Coverage/~issues?level=File">Report Issue for Extension-UKCore-Coverage</a>.
-</div>
 
 <h3 id="guidance-coverage">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-FundingCategory}}.
 
 ---

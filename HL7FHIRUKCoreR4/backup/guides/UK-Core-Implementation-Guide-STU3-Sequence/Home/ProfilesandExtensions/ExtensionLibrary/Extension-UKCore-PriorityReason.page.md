@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason
+issue: Extension-UKCore-PriorityReason
 ---
 ## StructureDefinition Extension-UKCore-PriorityReason
 
@@ -20,13 +21,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityRe
 {{pagelink:Example-UKCore-Extension-PriorityReason-SendingAsText}}
 <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-PriorityReason/~issues?level=File">Report Issue for Extension-UKCore-PriorityReason</a>.
-</div>
-
 
 <h3 id="guidance-priorityreason">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}.
 
 ---

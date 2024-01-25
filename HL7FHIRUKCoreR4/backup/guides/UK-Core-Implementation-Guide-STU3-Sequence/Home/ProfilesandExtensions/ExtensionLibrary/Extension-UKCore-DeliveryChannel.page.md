@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel
+issue: Extension-UKCore-DeliveryChannel
 ---
 ## StructureDefinition Extension-UKCore-DeliveryChannel
 
@@ -18,12 +19,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryCh
 {{pagelink:Example-UKCore-Extension-DeliveryChannel}}
 <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DeliveryChannel/~issues?level=File">Report Issue for Extension-UKCore-DeliveryChannel</a>.
-</div>
 
 <h3 id="guidance-deliverychannel">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-DeliveryChannel}}.
 
 <div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-warning"></i> Breaking Change</h4>
