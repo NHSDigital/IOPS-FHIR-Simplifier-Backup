@@ -3,6 +3,8 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient
 ---
 ## {{page-title}}
 
+Display this version https://github.com/NHSDigital/NHSEngland-FHIR-Examples/blob/project/PDS/structuredefinitions/NHSDigitalPatientPDS.xml
+when merged into main branch.
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
