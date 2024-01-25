@@ -1,43 +1,59 @@
-## {{page-title}}
+## Introduction ##
 
-GPIT Futures programme main vision is to accelerate and extend data access to patients in an efficient way. Part of that accelerating work is the patient facing services (PFS) which would enable seamless access of data for patients from Foundation System suppliers.
+The Access Record Structured capability provides the ability to retrieve data from a patient's GP record in a structured and coded format. In order to do this safely and effectively, we need to consider how GP systems store data about patients, how it is categorised/structured and how the context in which the data is entered by or displayed to the user may influence its meaning.
 
-The overall design of PFS is based on Access Structured Record (ASR) API, implemented by existing and NME foundation system (FS) suppliers. Access to the new consumer PFS APIs would be managed through NHSD API-Management APIGEE gateway.
+## Record structure in GP clinical systems
 
-## Patient facing services structured record 
+There are several GP clinical systems in use in England and, although there are many differences in functionality, there are many categorisations that are common across most/all of the different systems. In GP Connect we have called these categorisations 'clinical areas' and have treated each one as a separate group of data that can be retrieved by the API.
 
-The Access Record Structured Patient Facing Services (PFS) View Record capability enables PFS App suppliers to request and consume a patient’s GP record in a structured and coded format that is machine readable. The data will be returned as per patient’s GP record access levels set by their GP Practice in their clinical system. 
+For each of these clinical areas in GP systems, there is usually a separate screen or module for entering and viewing data. However, it is normal that there are a number of different ways for a user to view data that has been entered. It is common, for instance, to view an allergy in a separate allergy screen, in a view of a consultation, in a date-ordered screen containing all clinical items often called a journal or care history screen or in a screen that is a one-page summary of the patient record.
 
-The data will be made available via a standard API. Structured data allows the PFS Apps to import and process the patient data in whatever way it requires to best support the patients viewing their data on PFS Apps.
+Defining all the clinical data areas within a patient record has enabled GP Connect Access Record Structured to more clearly define the scope of the project. It will also help providers and consumers to understand how we intend to make available the whole record and how far we are through that journey in any given release.
 
-GP Connect does not place any specific restrictions on how the data is processed so long as the data is only used for the direct care of the patient and the PFS Apps meets the specified GP Connect consumer requirements (including information governance and clinical safety standards). 
+## Representing the different clinical areas
 
-## Scope
+We have defined a data model for the whole GP record that we are working through a clinical area at a time. 
+This is illustrated in the diagram below:
 
-The Access Record Structured capability will expose data for a number of clinical areas. Currently supported medical record data items are: 
+{{ render: GP_Record_Clinical_Areas_Overview.png }}
 
-- <b>Allergies</b> - are observations, they contain medical record data item properties.
-- <b>Medications</b> - contains data about drugs prescribed to the patient. 
-- <b>Immunisations</b> - are observations, they contain medical record data item properties.
-- <b>Consultations</b> - are patient’s interactions with the practice. A consultation may have a list of observations that were recorded during the consultation.
-- <b>Problems</b> - contains data about medical problem. 
-- <b>Investigations</b> - are a test results. Investigations can be (e.g. height or weight) or a composite (e.g. full blood count).
-- <b>Outbound Referrals</b> - are typically defined as a request for transfer of care or request to provide assessment, treatment or clinical advice on the care of a patient.
-- <b>Documents</b> - are electronic records that provides evidence of medical care,
-- <b>Uncategorised data</b> - is not considered a clinical heading in its own right, it represents the remainder of the clinical record which is not covered by the other clinical headings. It should not be used as a clinical heading in itself. It covers several clinical headings such as procedures, family history, measurements and many more. They are not fully standardised as clinical headings in the source system.
+In the diagram each of the boxes with a blue outline represents a clinical area. 
+These each contain 1 or more boxes representing FHIR&reg; resources. 
+The FHIR resource boxes are colour coded:
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-<b>Note</b> - The following profiles are not to be made avialble to Consumers:
+* Green - are resources that are defined for GP Connect use in this version of the specification
+* Blue - are resources that have yet to have their GP Connect usage defined
 
-- Diary entries are <u>not</u> considered clinically safe to share with patients / citizens via PFS. Diary entries imply that a clinical action ought to be taken in the future, it does not mean it will be or has been. Additionally, if they get marked as complete, it does not necessarily mean that the action was taken. It means that the need to do the item gets ticked off (not that it was done). The ambiguity around Diary Entries is considered a high risk and should not be shown via PFS.​
+The clinical areas that are contained in the larger box on the right-hand side, labelled 'Clinical Item', are the clinical areas in which pieces of clinical information are held. 
+The clinical areas on the left of the diagram will be used to model the way the clinical items are viewed, organised and managed in GP systems. 
+The aim being that data can be reproduced in consumer interfaces in a way that maintains the context of the data and most accurately communicates the meaning that was intended by the clinician who created it.
 
-- <u>Draft</u> consultations are <u>not</u> considered clinically safe to share with patients / citizens via PFS. They are intended just as drafts, not all of the information captured is ready to be shared. This stays in the GP system and should not be outputted to the API endpoints.</p>
+## Linkages
 
-</div>
+It is also apparent in the diagram that many of the resources are linked together. 
+Details of how these linkages exist and will be managed can be found on the linkages page.
 
+- [Linkages](accessrecord_structured_development_linkages.html)
 
-## Example scenarios 
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
 
-- A patient with multiple long-term conditions views their repeat medications list to be up to date about all the medications they take. They want to view their test results for their condition(s) as they undergo regular tests. 
-- Patients who have had multiple hospital admissions would like to view their documents and letters. 
-- Senior citizens want to view what was discussed in their consultation as they want to refer to what was discussed. 
+## Clinical areas
+
+The following pages describe each of the clinical areas in more detail and are followed by pages explaining how to populate the related resources and giving worked examples in FHIR.
+
+- [Allergies guidance](accessrecord_structured_development_allergies_guidance.html)
+- [Medication resource relationships](accessrecord_structured_development_medication_resource_relationships.html)
+- [Medication guidance](accessrecord_structured_development_medication_guidance.html)
+- [Immunization guidance](accessrecord_structured_development_immunization_guidance.html)
+- [Uncategorised data guidance](accessrecord_structured_development_uncategorisedData_guidance.html)
+- [Consultation guidance](accessrecord_structured_development_consultation_guidance.html)
+- [Problem guidance](accessrecord_structured_development_problems_guidance.html)
+- [Investigations guidance](accessrecord_structured_development_pathology_guidance.html)
+- [Referrals guidance](accessrecord_structured_development_referralrequest_guidance.html)
+- [Diary Entries guidance](accessrecord_structured_development_diaryentry_guidance.html)
+
+{% include note.html content="Documents are defined in a seperate [Access Document](access_documents.html) capability, which complements Access Record Structured by allowing the querying and retrieval of documents for a patient." %}
+
+<div class="alert alert-warning nhsd-t-body" role="alert">
+<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix links above<br/> </div>
