@@ -1,0 +1,36 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="NamingSystem-NHS-Number" />
+  <name value="NHSNumber" />
+  <status value="active" />
+  <kind value="identifier" />
+  <date value="2023-12-05" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <responsible value="NHS England" />
+  <description value="NHS Number allocated to the patient in England and Wales. For more details see: [NHS Data Model Dictionary](https://www.datadictionary.nhs.uk/attributes/nhs_number.html)" />
+  <usage value="A unique patient identifier for everyone registered with the NHS in England and Wales." />
+  <uniqueId>
+    <type value="uri" />
+    <value value="https://fhir.nhs.uk/Id/nhs-number" />
+    <preferred value="true" />
+  </uniqueId>
+  <uniqueId>
+    <type value="oid" />
+    <value value="2.16.840.1.113883.2.1.4.1" />
+    <preferred value="false" />
+  </uniqueId>
+  <uniqueId>
+    <type value="other" />
+    <value value="NHS" />
+    <preferred value="false" />
+    <comment value="PID.3 (CX.4) HSCIC HL7 V2 ADT" />
+  </uniqueId>
+</NamingSystem>

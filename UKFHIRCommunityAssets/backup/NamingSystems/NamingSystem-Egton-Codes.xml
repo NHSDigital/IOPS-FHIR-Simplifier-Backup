@@ -1,0 +1,24 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="NamingSystem-Egton-Codes" />
+  <name value="Egton" />
+  <status value="active" />
+  <kind value="codesystem" />
+  <date value="2023-12-05" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <responsible value="EMIS Health" />
+  <description value="EMIS local codes" />
+  <uniqueId>
+    <type value="uri" />
+    <value value="https://fhir.hl7.org.uk/Id/egton-codes" />
+    <preferred value="true" />
+  </uniqueId>
+</NamingSystem>

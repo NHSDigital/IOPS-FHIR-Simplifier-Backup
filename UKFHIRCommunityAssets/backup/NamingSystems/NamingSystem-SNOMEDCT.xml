@@ -1,0 +1,36 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="NamingSystem-SNOMEDCT" />
+  <name value="SNOMEDCT" />
+  <status value="active" />
+  <kind value="codesystem" />
+  <date value="2023-12-05" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <responsible value="International Health Terminology Standards Development Organisation" />
+  <description value="SNOMED CT. For details of the international organisation see: [SNOMED International](https://www.snomed.org/). For details of SNOMED CT usage in NHS: [NHS England](https://www.england.nhs.uk/digitaltechnology/digital-primary-care/snomed-ct/)" />
+  <uniqueId>
+    <type value="uri" />
+    <value value="http://snomed.info/sct" />
+    <preferred value="true" />
+  </uniqueId>
+  <uniqueId>
+    <type value="oid" />
+    <value value="2.16.840.1.113883.6.96" />
+    <preferred value="false" />
+    <comment value="International OID" />
+  </uniqueId>
+  <uniqueId>
+    <type value="oid" />
+    <value value="2.16.840.1.113883.2.1.3.2.4.15" />
+    <preferred value="false" />
+    <comment value="SnomedCT - UK Edition of SNOMED Clinical Terms. [NPfIT]" />
+  </uniqueId>
+</NamingSystem>
