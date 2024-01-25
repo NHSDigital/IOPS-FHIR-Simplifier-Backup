@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus
+issue: Extension-UKCore-DeathNotificationStatus
 ---
 ## StructureDefinition Extension-UKCore-DeathNotificationStatus
 
@@ -17,12 +18,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotif
 {{pagelink:Example-UKCore-Extension-DeathNotificationStatus}}
 <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DeathNotificationStatus/~issues?level=File">Report Issue for Extension-UKCore-DeathNotificationStatus</a>.
-</div>
 
 <h3 id="guidance-deathnotificationstatus">Extension Specific Guidance</h3>
+
 There is a binding within this extension, `deathNotificationStatus` element to a {{pagelink:ValueSet-UKCore-DeathNotificationStatus}}.
 
 ---

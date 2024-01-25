@@ -81,5 +81,5 @@ with header
 
 <div id="Feedback" class="tabcontent">
   <h3>Feedback</h3>
-Click here to: {{page:Home/ProfilesandExtensions/FeedbackLink.page.md}}</a>.
+Click here to: {{page:Home/ProfilesandExtensions/FeedbackLink.page.md}}</a>
 </div>

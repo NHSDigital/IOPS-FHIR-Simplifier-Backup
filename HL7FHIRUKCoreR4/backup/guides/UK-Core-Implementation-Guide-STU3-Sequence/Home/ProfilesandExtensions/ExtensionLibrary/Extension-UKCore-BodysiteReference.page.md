@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference
+issue: Extension-UKCore-BodySiteReference
 ---
 ## StructureDefinition Extension-UKCore-BodySiteReference
 
@@ -17,10 +18,5 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteRe
   {{pagelink:Example-UKCore-Extension-BodySiteReference}}
   <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-BodySiteReference/~issues?level=File">Report Issue for Extension-UKCore-BodySiteReference</a>.
-</div>
-
 
 ---

@@ -1,5 +1,6 @@
 ---
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant
+issue: Extension-UKCore-FamilyMemberHistoryParticipant
 ---
 ## StructureDefinition Extension-UKCore-FamilyMemberHistoryParticipant
 
@@ -17,12 +18,9 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHisto
   {{pagelink:Example-UKCore-Extension-Participant}}
   <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-FamilyMemberHistoryParticipant/~issues?level=File">Report Issue for Extension-UKCore-FamilyMemberHistoryParticipant</a>.
-</div>
 
 <h3 id="guidance-fmhparticipant">Extension Specific Guidance</h3>
+
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
 - [UKCore-CareTeam](https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/home/profilesandextensions/profileukcore-careteam/index.guide.md?version=current)

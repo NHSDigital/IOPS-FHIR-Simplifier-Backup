@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode
+issue: Extension-UKCore-ConditionEpisode
 ---
 ## StructureDefinition Extension-UKCore-ConditionEpisode
 
@@ -16,12 +17,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionE
   <b>Condition episode</b>- An example to illustrate the extension which is used to indicate the episodicity status of a condition.<br>
   {{pagelink:Example-UKCore-Extension-ConditionEpisode}}
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-ConditionEpisode/~issues?level=File">Report Issue for Extension-UKCore-ConditionEpisode</a>.
-</div>
 
 <h3 id="guidance-conditionepisode">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-ConditionEpisodicity}}.
 
 <div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-warning"></i> Breaking Change</h4>

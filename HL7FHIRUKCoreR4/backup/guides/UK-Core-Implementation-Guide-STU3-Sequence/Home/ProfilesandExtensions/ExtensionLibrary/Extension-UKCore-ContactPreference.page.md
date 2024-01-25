@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference
+issue: Extension-UKCore-ContactPreference
 ---
 ## StructureDefinition Extension-UKCore-ContactPreference
 
@@ -18,12 +19,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPre
 {{pagelink:Example-UKCore-Extension-ContactPreference}}
 <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-ContactPreference/~issues?level=File">Report Issue for Extension-UKCore-ContactPreference</a>.
-</div>
 
 <h3 id="guidance-contactpreference">Extension Specific Guidance</h3>
+
 There are two bindings within this extension. `PreferredContactMethod` element to {{pagelink:ValueSet-UKCore-PreferredContactMethod}}
 , and `PreferredWrittenCommunicationFormat` element to {{pagelink:ValueSet-UKCore-PreferredWrittenCommunicationFormat}}.
 

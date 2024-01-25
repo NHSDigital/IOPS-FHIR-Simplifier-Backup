@@ -1,5 +1,6 @@
 ---
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo
+issue: Extension-UKCore-DiagnosticReportSupportingInfo
 ---
 ## StructureDefinition Extension-UKCore-DiagnosticReportSupportingInfo
 
@@ -15,10 +16,6 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.
   <h3>Examples</h3>
   <b>TBC</b>
   <br><br>
-</div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DiagnosticReportSupportingInfo/~issues?level=File">Report Issue for Extension-UKCore-DiagnosticReportSupportingInfo</a>.
 </div>
 
 <h3 id="guidance-diagnosticreportsupportinginfo">Extension Specific Guidance</h3>

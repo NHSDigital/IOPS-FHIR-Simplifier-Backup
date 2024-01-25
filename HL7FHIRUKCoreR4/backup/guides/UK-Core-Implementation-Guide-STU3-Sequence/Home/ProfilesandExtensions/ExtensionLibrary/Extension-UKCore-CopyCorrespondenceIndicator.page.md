@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator
+issue: Extension-UKCore-CopyCorrespondenceIndicator
 ---
 ## StructureDefinition Extension-UKCore-CopyCorrespondenceIndicator
 
@@ -17,10 +18,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorres
   <b>Copy Correspondence Indicator</b>- This shows the extension that uses a Boolean value of true to indicate that the person named should be sent a copy of the correspondence.<br>
 {{pagelink:Example-UKCore-Extension-CopyCorrespondenceIndicator}}
 <br><br>
-</div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CopyCorrespondenceIndicator/~issues?level=File">Report Issue for Extension-UKCore-CopyCorrespondenceIndicator</a>.
 </div>
 
 ---

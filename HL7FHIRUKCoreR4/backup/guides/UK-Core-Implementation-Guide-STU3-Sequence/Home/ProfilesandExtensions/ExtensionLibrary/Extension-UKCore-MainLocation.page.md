@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation
+issue: Extension-UKCore-MainLocation
 ---
 ## StructureDefinition Extension-UKCore-MainLocation
 
@@ -17,13 +18,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocati
 {{pagelink:Example-UKCore-Extension-MainLocation}}
 <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-MainLocation/~issues?level=File">Report Issue for Extension-UKCore-MainLocation</a>.
-</div>
-
 
 <h3 id="guidance-mainlocation">Extension Specific Guidance</h3>
+
 Where possible, it is expected that the resource being referenced SHOULD conform to {{pagelink:Profile-Location}}.
 
 ---

@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd
+issue: Extension-UKCore-AllergyIntoleranceEnd
 ---
 ## StructureDefinition Extension-UKCore-AllergyIntoleranceEnd
 
@@ -17,11 +18,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyInt
   {{pagelink:Example-UKCore-Extension-AllergyIntolEnd}}
   <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-AllergyIntoleranceEnd/~issues?level=File">Report Issue for Extension-UKCore-AllergyIntoleranceEnd</a>.
-</div>
-
 
 <h3 id="guidance-allergyintoleranceend">Extension Specific Guidance</h3>
 

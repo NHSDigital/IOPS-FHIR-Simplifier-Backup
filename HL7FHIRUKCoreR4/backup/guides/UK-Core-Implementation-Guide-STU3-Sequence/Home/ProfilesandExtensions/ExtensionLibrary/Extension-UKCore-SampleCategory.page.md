@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory
+issue: Extension-UKCore-SampleCategory
 ---
 ## StructureDefinition Extension-UKCore-SampleCategory
 
@@ -17,12 +18,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCate
 {{pagelink:Example-UKCore-Extension-SampleCategory}}
 <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-SampleCategory/~issues?level=File">Report Issue for Extension-UKCore-SampleCategory</a>.
-</div>
 
 <h3 id="guidance-samplecategory">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-SampleCategory}}.
 
 ---

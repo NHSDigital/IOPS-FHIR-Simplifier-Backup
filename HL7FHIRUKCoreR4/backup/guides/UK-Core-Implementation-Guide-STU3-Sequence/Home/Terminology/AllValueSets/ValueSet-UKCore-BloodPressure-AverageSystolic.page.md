@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/ValueSet/UKCore-BloodPressure-AverageSystolic
+issue: ValueSet-UKCore-BloodPressure-AverageSystolic
 ---
 ## UK Core Blood Pressure: Average Systolic
 
@@ -9,6 +10,5 @@ This Profile underwent Clinical and Technical Assurance during Sprint 7. This is
 
 Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-AverageSystolic/~issues?level=File">Report Issue for ValueSet-UKCore-BloodPressure-AverageSystolic</a>.
 </div>
-
 
 {{page:Home/Terminology/AllValueSets/ValueSetTemplate.page.md}}

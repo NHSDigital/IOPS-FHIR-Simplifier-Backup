@@ -1,8 +1,8 @@
-<fql output="inline">
-from StructureDefinition
-where url=%subject
+<fql output="inline" delimiter="">
 select
-        Link: {
-            text: 'Report issue for '+%issue,
-            href: 'https://simplifier.net/HL7FHIRUKCoreR4/'+%issue+'/~issues?level=File'}
+    Link: {
+        text: 'Report issue for ' + %issue,
+        href: 'https://simplifier.net/HL7FHIRUKCoreR4/' + %issue + '/~issues?level=File'
+    }
+group by Link
 </fql>

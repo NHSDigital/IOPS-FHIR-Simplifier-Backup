@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationTradeFamily
+issue: Extension-UKCore-MedicationTradeFamily
 ---
 ## StructureDefinition Extension-UKCore-MedicationTradeFamily
 
@@ -17,13 +18,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Medication
   {{pagelink:Example-UKCore-Extension-MedicationTradeFamily}}
   <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-MedicationTradeFamily/~issues?level=File">Report Issue for Extension-UKCore-MedicationTradeFamily</a>.
-</div>
-
 
 <h3 id="guidance-medicationtradefamily">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-MedicationTradeFamily}}.
 
 ---

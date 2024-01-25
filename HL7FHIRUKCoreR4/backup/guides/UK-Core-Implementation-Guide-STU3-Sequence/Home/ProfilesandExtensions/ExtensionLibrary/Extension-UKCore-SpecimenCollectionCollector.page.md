@@ -1,5 +1,6 @@
 ---
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector
+issue: Extension-UKCore-SpecimenCollectionCollector
 ---
 ## StructureDefinition Extension-UKCore-CollectionCollector
 
@@ -17,13 +18,9 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collecti
   {{pagelink:Example-UKCore-Extension-CollectionCollector}}
   <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-CollectionCollector/~issues?level=File">Report Issue for Extension-UKCore-CollectionCollector</a>.
-</div>
-
 
 <h3 id="guidance-specimencollectioncollector">Extension Specific Guidance</h3>
+
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
 - {{pagelink:Profile-Patient}}

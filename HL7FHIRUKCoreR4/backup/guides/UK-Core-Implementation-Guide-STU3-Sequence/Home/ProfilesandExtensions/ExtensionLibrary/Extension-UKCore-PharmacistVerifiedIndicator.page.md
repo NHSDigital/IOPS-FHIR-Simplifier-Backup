@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator
+issue: Extension-UKCore-PharmacistVerifiedIndicator
 ---
 ## StructureDefinition Extension-UKCore-PharmacistVerifiedIndicator
 
@@ -16,10 +17,6 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Pharmacist
   <b>Pharmacist Verified Indicator</b>- An example to illustrate whether a pharmacist verified a medication.<br>
 {{pagelink:Example-UKCore-Extension-PharmacistVerifiedIndicator}}
 <br><br>
-</div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-PharmacistVerifiedIndicator/~issues?level=File">Report Issue for Extension-UKCore-PharmacistVerifiedIndicator</a>.
 </div>
 
 ---

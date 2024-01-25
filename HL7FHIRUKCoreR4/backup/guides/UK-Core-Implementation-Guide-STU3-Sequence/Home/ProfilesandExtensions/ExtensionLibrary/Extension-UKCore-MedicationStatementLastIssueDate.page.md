@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate
+issue: Extension-UKCore-MedicationStatementLastIssueDate
 ---
 ## StructureDefinition Extension-UKCore-MedicationStatementLastIssueDate
 
@@ -17,10 +18,5 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Medication
   {{pagelink:Example-UKCore-Extension-LastIssueDate}}
   <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-MedicationStatementLastIssueDate/~issues?level=File">Report Issue for Extension-UKCore-MedicationStatementLastIssueDate</a>.
-</div>
-
 
 ---

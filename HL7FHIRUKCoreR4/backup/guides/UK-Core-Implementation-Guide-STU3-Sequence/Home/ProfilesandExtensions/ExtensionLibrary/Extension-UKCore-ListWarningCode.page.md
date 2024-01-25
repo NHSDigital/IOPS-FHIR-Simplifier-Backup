@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarningCode
+issue: Extension-UKCore-ListWarningCode
 ---
 ## StructureDefinition Extension-UKCore-ListWarningCode
 
@@ -17,12 +18,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ListWarnin
   {{pagelink:Example-UKCore-Extension-ListWarningCode}}
   <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-ListWarningCode/~issues?level=File">Report Issue for Extension-UKCore-ListWarningCode</a>.
-</div>
 
-<h3 id="guidance-lsitwarningcode">Extension Specific Guidance</h3>
+<h3 id="guidance-listwarningcode">Extension Specific Guidance</h3>
+
 There is a binding within this extension to a {{pagelink:ValueSet-UKCore-ListWarningCode}}.
 
 <div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-warning"></i> Breaking Change</h4>

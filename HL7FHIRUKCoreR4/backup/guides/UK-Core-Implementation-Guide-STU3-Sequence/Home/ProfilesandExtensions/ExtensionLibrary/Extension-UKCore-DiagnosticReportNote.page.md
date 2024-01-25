@@ -1,5 +1,6 @@
 ---
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note
+issue: Extension-UKCore-DiagnosticReportNote
 ---
 ## StructureDefinition Extension-UKCore-DiagnosticReportNote
 
@@ -16,10 +17,6 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.
   <b>Diagnostic Report Note</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to add notes and annotations to a diagnostic report.<br>
   {{pagelink:Example-UKCore-Extension-Note}}
   <br><br>
-</div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DiagnosticReportNote/~issues?level=File">Report Issue for Extension-UKCore-DiagnosticReportNote</a>.
 </div>
 
 ---

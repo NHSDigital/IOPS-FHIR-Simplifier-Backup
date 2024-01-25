@@ -1,5 +1,6 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference
+issue: Extension-UKCore-DeviceReference
 ---
 ## StructureDefinition Extension-UKCore-DeviceReference
 
@@ -19,12 +20,9 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceRefe
   NOTE: The above example references {{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}
   <br><br>
 </div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-DeviceReference/~issues?level=File">Report Issue for Extension-UKCore-DeviceReference</a>.
-</div>
 
 <h3 id="guidance-devicereference">Extension Specific Guidance</h3>
-Where possible, it is expected that the resource being referenced SHOULD conform to [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current).
+
+Where possible, it is expected that the resource being referenced SHOULD conform to [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device?version=current).
 
 ---
