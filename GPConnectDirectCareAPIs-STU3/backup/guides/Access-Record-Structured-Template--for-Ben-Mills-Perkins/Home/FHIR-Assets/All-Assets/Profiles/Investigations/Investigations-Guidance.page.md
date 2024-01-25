@@ -36,8 +36,7 @@ The EDIFACT message was defined by the Pathology Messaging Enabling Project and 
 
 It is a detailed specification and although it does contain some coding the majority of the fields contain text. Some of the text is also heavily formatted. See below example taken from a GP2GP HL7v3 message:
 
-{: .center-image }
-![Structured text example](images/access_structured/Pathology_structured_text_example_2.PNG)
+{{ render: EDIFactPathologyMessage.png }}
 
 GP systems are required to maintain the text formatting in order to preserve the meaning. This will also be true of the GP Connect messaging, any structured text from the EDIFACT report imported into the GP system **MUST** be maintained as they are in the GP2GP HL7 message. The line separator `\n` **MUST** be used to maintain the original message structure.
 
@@ -57,11 +56,7 @@ GP Connect will return any diagnosticReports that are associated with a patient 
 
 The following entity diagram describes the logical model for investigations in GP Connect:
 
-{: .center-image }
-![Pathology logical model](images/access_structured/Pathology_Logical_Model.png)
-
-<div class="alert alert-warning nhsd-t-body" role="alert">
-<i class="fa fa-exclamation-triangle"></i> <b>Important:</b> - Fix link above<br/> </div>
+{{ render: ReportStructure.png }}
 
 In the image we have made the key entities more prominent. Entities representing organizations and practitioners sit in the background but are still part of the exported data.
 
@@ -97,8 +92,7 @@ There are other resources that may be relevant in the future, such as imagingStu
 
 We have mapped these resources on to the logical model in the diagram below:
 
-{: .center-image }
-![Pathology logical model with FHIR resource names](images/access_structured/Pathology_Logical_Model_with_FHIR_resource_names.png)
+{{ render: ReportStructure.png }}
 
 DiagnosticReport is at the centre of the model and all the other entities are linked to from there.
 
