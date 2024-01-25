@@ -1,0 +1,24 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="NamingSystem-HCPC-Number" />
+  <name value="HCPCNumber" />
+  <status value="active" />
+  <kind value="identifier" />
+  <date value="2023-12-05" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <responsible value="Health and Care Professions Council" />
+  <description value="Health and Care Professions Council (HCPC) number" />
+  <uniqueId>
+    <type value="uri" />
+    <value value="https://fhir.hl7.org.uk/Id/hcpc-number" />
+    <preferred value="true" />
+  </uniqueId>
+</NamingSystem>

@@ -1,0 +1,31 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="NamingSystem-SDS-Role-Profile-Id" />
+  <name value="SDSRoleProfileID" />
+  <status value="active" />
+  <kind value="identifier" />
+  <date value="2023-12-05" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <responsible value="NHS England" />
+  <description value="A role profile code managed by the NHS Spine Directory Service." />
+  <usage value="To identify a role profile code managed by the NHS Spine Directory Service." />
+  <uniqueId>
+    <type value="uri" />
+    <value value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+    <preferred value="true" />
+  </uniqueId>
+  <uniqueId>
+    <type value="oid" />
+    <value value="1.2.826.0.1285.0.2.0.67" />
+    <preferred value="false" />
+    <comment value="NHS SDS - Role Profile Code [BT]" />
+  </uniqueId>
+</NamingSystem>

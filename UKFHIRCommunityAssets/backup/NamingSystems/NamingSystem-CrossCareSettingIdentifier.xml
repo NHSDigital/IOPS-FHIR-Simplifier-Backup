@@ -1,0 +1,24 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="NamingSystem-CrossCareSettingIdentifier" />
+  <name value="CrossCareSettingIdentifier" />
+  <status value="active" />
+  <kind value="codesystem" />
+  <date value="2023-12-05" />
+  <publisher value="HL7 UK" />
+  <contact>
+    <name value="HL7 UK" />
+    <telecom>
+      <system value="email" />
+      <value value="ukcore@hl7.org.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <responsible value="NHS England" />
+  <description value="NHS Cross Care Setting Identifier" />
+  <uniqueId>
+    <type value="uri" />
+    <value value="https://fhir.nhs.uk/Id/cross-care-setting-identifier" />
+    <preferred value="true" />
+  </uniqueId>
+</NamingSystem>
