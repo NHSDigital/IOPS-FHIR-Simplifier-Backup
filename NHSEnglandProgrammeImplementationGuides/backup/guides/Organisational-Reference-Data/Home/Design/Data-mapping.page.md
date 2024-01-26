@@ -2,6 +2,12 @@
     
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
+This page defines how the data is mapped between relevant FHIR asset elements and the domain fields for ODS.
+
+The relevant FHIR assets included in the mapping tables are Profiles 'UKCore-Organization', 'UKCore-OrganizationAffiliation', and associated Extensions usable for the ODS API. The domain fields are existing elements of data that will be shared with users of the ODS API solution. 
+
+All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-OrganizationAffiliation', and relevant Extensions, are listed to illustrate that all of the domain fields for ODS are able to be mapped to existing Profiles and Extensions.
+
 <!--An FGM-IS indicator (family history of FGM) has been modelled around a FHIR R4 Flag. Refer to {{pagelink:Home/FHIRAssets/AllAssets/Profiles/UKCore-Flag.page.md}} profile for further guidance. 
 
 | Source Data item               | Cardinality |Target FHIR Element                 | Notes         
@@ -46,8 +52,8 @@
         <tr>
             <td>extension (organization-period)</td>
             <td>0..1</td>
-            <td><code>0..0</code></td>
-            <td>DO NOT USE</td>
+            <td>0..1</td>
+            <td>Optional</td>
             <td></td>
             <td><a href="https://www.hl7.org/fhir/R4/extension-organization-period.html">Extension</a></td>
             <td>Use ExtensionEnglandTypedPeriod instead</td>
@@ -82,8 +88,8 @@
        <tr>
             <td>ExtensionEnglandOrganisationRole.<br />typedPeriod</td>
             <td>1..*</td>
-            <td><code>0..2</code></td>
-            <td>Optional</td>
+            <td>1..*</td>
+            <td>NOT NULL</td>
             <td>Roles.LegalStartDate,<br>Roles.LegalEndDate,<br>Roles.OperationalStartDate,<br>Roles.OperationalEndDate</td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">Extension</a></td>
             <td></td>
@@ -100,7 +106,7 @@
         <tr>
             <td>extension <br />(ExtensionEnglandTypedDateTime)</td>
             <td>Not defined</td>
-            <td><code>1..1</code></td>
+            <td><code>1..*</code></td>
             <td>NOT NULL</td>
             <td>Organisation.LastChangeDate</td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedDateTime.page.md?version=current">Extension</a></td>
@@ -109,7 +115,7 @@
         <tr>
             <td>extension <br />(ExtensionEnglandTypedPeriod)</td>
             <td>Not defined</td>
-            <td><code>0..2</code></td>
+            <td><code>0..*</code></td>
             <td>Optional</td>
             <td>Organisation.LegalStartDate,<br>Organisation.LegalEndDate,<br>Organisation.OperationalStartDate,<br>Organisation.OperationalEndDate</td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedPeriod.page.md?version=current">Extension</a></td>
@@ -127,8 +133,8 @@
         <tr>
             <td>identifier.assigner.value</td>
             <td>0..*</td>
-            <td><code>0..1</code></td>
-            <td>NOT NULL</td>
+            <td>0..*</td>
+            <td>Optional</td>
             <td>Organisation.AssigingAuthorityName</td>
             <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current#identifier">Reference</a></td>
             <td></td>
@@ -249,7 +255,7 @@
         <tr>
             <td>extension (ExtensionEnglandTypedPeriod)</td>
             <td>Not defined</td>
-            <td><code>0..2</code></td>
+            <td><code>0..*</code></td>
             <td>Optional</td>
             <td>rel.LegalStart,<br>rel.LegalEnd,<br>rel.OperationalStart,<br>rel.OperationalEnd</td>
             <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedPeriod.page.md?version=current">Extension</a></td>
@@ -276,8 +282,8 @@
         <tr>
             <td>period</td>
             <td>0..1</td>
-            <td><code>0..0</code></td>
-            <td>DO NOT USE</td>
+            <td>0..1</td>
+            <td>Optional</td>
             <td></td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#period">period</a></td>
             <td>Use ExtensionEnglandTypedPeriod instead</td>
