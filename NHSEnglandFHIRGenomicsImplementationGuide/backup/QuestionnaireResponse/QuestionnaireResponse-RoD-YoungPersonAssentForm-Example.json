@@ -1,0 +1,137 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponse-RoD-YoungPersonAssentForm-Example",
+  "questionnaire": "https://fhir.nhs.uk/Questionnaire/Questionnaire-RoD-YoungPersonAssentForm-Example",
+  "status": "completed",
+  "basedOn": [
+    {
+      "reference": "urn:uuid:a40c7ddc-2897-4e3c-bae6-88500e080229"
+    }
+  ],
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539"
+    },
+    "display": "A Patient"
+  },
+  "authored": "2024-01-25",
+  "author": {
+    "type": "PractitionerRole",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+      "value": "999999999999"
+    }
+  },
+  "source": {
+    "type": "PractitionerRole",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+      "value": "999999999999"
+    }
+  },
+  "item": [
+    {
+      "linkId": "patientDetails",
+      "text": "Patient Details",
+      "item": [
+        {
+          "linkId": "givenName",
+          "text": "First Name",
+          "answer": [
+            {
+              "valueString": "Phoebe"
+            }
+          ]
+        },
+        {
+          "linkId": "familyName",
+          "text": "Last Name",
+          "answer": [
+            {
+              "valueString": "Smitham"
+            }
+          ]
+        },
+        {
+          "linkId": "nhs_Number",
+          "text": "NHS number (or postcode if not not known)",
+          "answer": [
+            {
+              "valueString": "9449307539"
+            }
+          ]
+        },
+        {
+          "linkId": "birthDate",
+          "text": "Date of Birth",
+          "answer": [
+            {
+              "valueDate": "2013-09-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "declarationResponse",
+      "text": "Please indicate your choices below by ticking the appropriate box:",
+      "item": [
+        {
+          "linkId": "consentQuestion1",
+          "text": "1. Have you read information or has someone explained the research to you?",
+          "answer": [
+            {
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "consentQuestion2",
+          "text": "2. Have you asked all the questions you want?",
+          "answer": [
+           {
+            "valueBoolean": true
+          }
+          ]
+        },
+        {
+          "linkId": "consentQuestion3",
+          "text": "3. Have you had your questions answered in a way you understand?",
+          "answer": [
+            {
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "consentQuestion4",
+          "text": "4. Do you understand it’s OK to say you don’t want to take part – but that your parent(s), or guardian who look after you, will make the final choice?",
+          "answer": [
+            {
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "consentQuestion5",
+          "text": "5. Are you happy to take part?",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "isRemoteConsentTrue",
+      "text": "Assent obtained remotely, no participant signature",
+      "answer": [
+       {
+        "valueBoolean": true
+      }
+      ]
+    }
+  ]
+}

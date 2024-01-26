@@ -1,0 +1,276 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "Questionnaire-RoD-ConsulteeDeclarationForm-Example",
+  "url": "https://fhir.nhs.uk/Questionnaire/Questionnaire-RoD-ConsulteeDeclarationForm-Example",
+  "version": "0.1.0",
+  "name": "QuestionnaireRoDConsulteeDeclarationFormExample",
+  "title": "Consultee declaration regarding whole genome sequencing",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2024-01-18T09:00:00Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "description": "This questionnaire is to be used to document the consent of a patient Consultee before undergoing Genomic testing and their choice of participation in the National Genomic Research Library programme",
+  "purpose": "Consultee declaration regarding whole genome sequencing",
+  "item": [
+    {
+      "item": [
+        {
+          "linkId": "givenName",
+          "text": "First Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "familyName",
+          "text": "Last Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "nhs_Number",
+          "text": "NHS number (or postcode if not not known)",
+          "type": "string",
+          "required": true
+        },
+        {
+          "type": "date",
+          "linkId": "birthDate",
+          "text": "Date of Birth",
+          "required": true
+        }
+      ],
+      "type": "group",
+      "linkId": "patientDetails",
+      "text": "Patient Details"
+    },
+    {
+      "type": "display",
+      "linkId": "consulteeConsentAwareness",
+      "text": "Your relative, friend, patient or client has been invited to take part in the National Genomic Research Library. You are being asked to act as a consultee on their behalf."
+    },
+    {
+      "type": "display",
+      "linkId": "guidanceForConsultee",
+      "text": "Your relative, friend, patient or client is considered to be unable to decide for themselves whether they want their data and samples to be used in research. Someone who can’t make this kind of decision for themselves is described as lacking capacity. When we talk about this person, we will refer to ‘the person who lacks capacity’ or ‘the person’."
+    },
+    {
+      "type": "display",
+      "linkId": "roleOfConsultee",
+      "text": "The role of a consultee"
+    },
+    {
+      "type": "display",
+      "linkId": "roleOfConsultee1",
+      "text": "A consultee is someone who will only consider the likely views and interests of the person who lacks capacity. They must set aside their own personal views about participating in research and consider the person they represent. A consultee cannot be part of the person’s NHS clinical team or anyone else acting in a professional or paid capacity (e.g. a person’s solicitor)."
+    },
+    {
+      "item": [
+        {
+          "type": "display",
+          "linkId": "typesOfConsultee1",
+          "text": "• Next of kin (i.e. parent, partner, husband, wife, son or daughter) or friend, family member or carer"
+        },
+        {
+          "type": "display",
+          "linkId": "typesOfConsultee2",
+          "text": "• A person holding Lasting Power of Attorney for Personal welfare registered with the Public Guardian"
+        },
+        {
+          "type": "display",
+          "linkId": "typesOfConsultee3",
+          "text": "• A deputy appointed by the Court of Protection"
+        }
+      ],
+      "type": "group",
+      "linkId": "typesOfConsultee",
+      "text": "They must be an adult who is prepared to be consulted on the person’s behalf. For example:"
+    },
+    {
+      "type": "display",
+      "linkId": "guidanceOnConsulteeRole",
+      "text": "The law protects the interests of adults who lack capacity. In England and Wales, it states that a consultee can advise about the person’s likely wishes or feelings. If the person does not want to take part, we will respect their wishes. More information about being a consultee and the National Genomic Research Library can be found at www.genomicsengland.co.uk"
+    },
+    {
+      "type": "display",
+      "linkId": "consulteeAgreement",
+      "text": "The consultee agreement"
+    },
+    {
+      "item": [
+        {
+          "type": "display",
+          "linkId": "consulteeResponsibility1",
+          "text": "• I must only consider the likely views and interests of the person who lacks capacity"
+        },
+        {
+          "type": "display",
+          "linkId": "consulteeResponsibility2",
+          "text": "• I must consider the aims of the research, the practicalities, risks and benefits"
+        },
+        {
+          "type": "display",
+          "linkId": "consulteeResponsibility3",
+          "text": "• I will inform the healthcare team of any decisions the person may have already made about research"
+        },
+        {
+          "type": "display",
+          "linkId": "consulteeResponsibility4",
+          "text": "• I have been made aware and given an opportunity to get independent advice"
+        },
+        {
+          "type": "display",
+          "linkId": "consulteeResponsibility5",
+          "text": "• If I feel that the person wishes to be withdrawn, I will notify a healthcare professional"
+        },
+        {
+          "type": "display",
+          "linkId": "consulteeResponsibility6",
+          "text": "• I might be asked to give advice again in the future, for example if more blood or saliva samples were needed"
+        },
+        {
+          "type": "display",
+          "linkId": "consulteeResponsibility7",
+          "text": "• Hospital staff will tell me if any future changes to the research might affect the person"
+        },
+        {
+          "type": "display",
+          "linkId": "consulteeResponsibility8",
+          "text": "• I can stop being a consultee at any time"
+        }
+      ],
+      "type": "group",
+      "linkId": "consulteeResponsibility",
+      "text": "By saying ‘yes’ to be a consultee, I understand that:"
+    },
+    {
+      "type": "display",
+      "linkId": "clarificationForConfirmation",
+      "text": "Please ask any questions before taking the decisions shown on the following page."
+    },
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "type": "boolean",
+              "linkId": "choiceConfirmation1",
+              "prefix": "1.",
+              "text": "I have been consulted about this person’s participation in the National Genomic Research Library",
+              "required": true
+            },
+            {
+              "type": "display",
+              "linkId": "isChoiceOfConfirmationFalse",
+              "text": "If your answer to 1 is NO, then please ignore 2 and sign below."
+            },
+            {
+              "type": "boolean",
+              "linkId": "choiceConfirmation2",
+              "prefix": "2.",
+              "text": "I am willing to accept the role of consultee for this person",
+              "enableWhen": [
+                {
+                  "question": "choiceConfirmation1",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "required": true
+            }
+          ],
+          "type": "group",
+          "linkId": "confirmation",
+          "text": "I confirm that I have read and had the opportunity to discuss information about acting as a consultee for the person lacking capacity. My research choices are indicated below."
+        }
+      ],
+      "type": "group",
+      "linkId": "confirmationOfDecision",
+      "text": "Confirmation of decision"
+    },
+    {
+      "type": "boolean",
+      "linkId": "isRemoteConsentTrue",
+      "text": "Consent obtained remotely, no consultee signature",
+      "required": true
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "consulteeNamecombined",
+          "text": "Your Name(i.e, the Consultee)",
+          "required": true
+        },
+        {
+          "type": "string",
+          "linkId": "consulteeSignature",
+          "text": "Signature",
+          "required": true
+        },
+        {
+          "type": "dateTime",
+          "linkId": "dateConsulteeCompletedForm",
+          "text": "Date",
+          "required": true
+        }
+      ],
+      "type": "group",
+      "linkId": "consulteeValidation",
+      "text": "Consultee Validation",
+      "enableWhen": [
+        {
+          "question": "isRemoteConsentTrue",
+          "operator": "=",
+          "answerBoolean": false
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "type": "string",
+              "linkId": "healthcareProfessionalName",
+              "text": "Healthcare professional name",
+              "required": true
+            },
+            {
+              "linkId": "healthcareProfessionalSignature",
+              "text": "Signature",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "datehealthcareProfessionalCompletedForm",
+              "text": "Date",
+              "type": "dateTime",
+              "required": true
+            }
+          ],
+          "type": "group",
+          "linkId": "healthcareProfessional",
+          "text": "To be completed by the healthcare professional recording the consultee’s choices."
+        }
+      ],
+      "type": "group",
+      "linkId": "healthcareProfessionalValidation",
+      "text": "Healthcare professional use only"
+    }
+  ]
+}
