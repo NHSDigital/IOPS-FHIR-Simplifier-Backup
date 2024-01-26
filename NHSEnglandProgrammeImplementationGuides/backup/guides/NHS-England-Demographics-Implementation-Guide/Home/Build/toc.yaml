@@ -4,3 +4,5 @@
   filename: Personnel-Demographics-Query-PDS.page.md
 - name: Validated Relationship Service
   filename: Validated-Relationship-Service.page.md
+- name: IHE Patient Demographics Query
+  filename: IHE-Patient-Demographics-Query.page.md

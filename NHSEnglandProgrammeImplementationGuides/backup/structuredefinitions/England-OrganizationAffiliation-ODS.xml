@@ -36,11 +36,6 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="OrganizationAffiliation.identifier">
-      <path value="OrganizationAffiliation.identifier" />
-      <min value="1" />
-      <max value="1" />
-    </element>
     <element id="OrganizationAffiliation.active">
       <path value="OrganizationAffiliation.active" />
       <min value="1" />

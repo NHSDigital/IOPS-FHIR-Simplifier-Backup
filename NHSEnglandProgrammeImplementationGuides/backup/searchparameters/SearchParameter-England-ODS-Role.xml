@@ -19,7 +19,7 @@
   <code value="ods-role" />
   <base value="Organization" />
   <type value="token" />
-  <expression value="Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole').extension('roleCode')" />
+  <expression value="Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole').extension('roleCode').value" />
   <comparator value="eq" />
   <modifier value="exact" />
 </SearchParameter>
