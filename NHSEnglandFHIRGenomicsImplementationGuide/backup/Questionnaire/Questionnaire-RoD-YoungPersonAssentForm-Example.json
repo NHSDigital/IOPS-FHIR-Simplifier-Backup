@@ -1,0 +1,198 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "Questionnaire-RoD-YoungPersonAssentForm-Example",
+  "url": "https://fhir.nhs.uk/Questionnaire/Questionnaire-RoD-YoungPersonAssentForm-Example",
+  "version": "0.1.0",
+  "name": "QuestionnaireRoDYoungPersonAssentFormExample",
+  "title": "National Genomic Research Library Young Person Assent Form (ages 6 – 15)",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2024-01-18T09:00:00Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "description": "This questionnaire is to be used to document the patient consent for young person(ages 6 – 15) before undergoing Genomic testing and their choice of participation in the National Genomic Research Library programme",
+  "purpose": "Young Person Assent Form (ages 6 – 15) Regarding Genomic Testing",
+  "item": [
+    {
+      "type": "display",
+      "linkId": "declaration",
+      "text": "Feel free to ask any questions before answering the questions below."
+    },
+    {
+      "linkId": "patientDetails",
+      "text": "Patient Details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "givenName",
+          "text": "First Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "familyName",
+          "text": "Last Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "nhs_Number",
+          "text": "NHS number (or postcode if not not known)",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "birthDate",
+          "text": "Date of Birth",
+          "type": "date",
+          "required": true
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "type": "boolean",
+          "linkId": "consentQuestion1",
+          "text": "1. Have you read information or has someone explained the research to you?",
+          "required": true
+        },
+        {
+          "type": "boolean",
+          "linkId": "consentQuestion2",
+          "text": "2. Have you asked all the questions you want?",
+          "required": true
+        },
+        {
+          "type": "boolean",
+          "linkId": "consentQuestion3",
+          "text": "3. Have you had your questions answered in a way you understand?",
+          "required": true
+        },
+        {
+          "type": "boolean",
+          "linkId": "consentQuestion4",
+          "text": "4. Do you understand it’s OK to say you don’t want to take part – but that your parent(s), or guardian who look after you, will make the final choice?",
+          "required": true
+        },
+        {
+          "type": "boolean",
+          "linkId": "consentQuestion5",
+          "text": "5. Are you happy to take part?",
+          "required": true
+        }
+      ],
+      "type": "group",
+      "linkId": "declarationResponse",
+      "text": "Please indicate your choices below by ticking the appropriate box:",
+      "readOnly": true
+    },
+    {
+      "item": [
+        {
+          "type": "display",
+          "linkId": "NonWillingToConsent1",
+          "text": "• Don’t sign your name on this form"
+        },
+        {
+          "type": "display",
+          "linkId": "NonWillingToConsent2",
+          "text": "• Tell your parents and healthcare team how you feel, so they know"
+        }
+      ],
+      "type": "group",
+      "linkId": "guidanceNonWillingToConsent",
+      "text": "If ANY of your answers are ‘NO’, or you don’t want to take part:"
+    },
+    {
+      "item": [
+        {
+          "type": "display",
+          "linkId": "WillingToConsent",
+          "text": "• Please write your name, signature, and today’s date here:"
+        }
+      ],
+      "type": "group",
+      "linkId": "guidanceWillingToConsent",
+      "text": "If ALL of your answers are ‘YES’:"
+    },
+    {
+      "type": "boolean",
+      "linkId": "isRemoteConsentTrue",
+      "text": "Assent obtained remotely, no participant signature",
+      "required": true
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "patientNamecombined",
+          "text": "Patient Name",
+          "required": true
+        },
+        {
+          "type": "string",
+          "linkId": "patientSignature",
+          "text": "Signature",
+          "required": true
+        },
+        {
+          "type": "dateTime",
+          "linkId": "datePatientCompletedForm",
+          "text": "Date",
+          "required": true
+        }
+      ],
+      "type": "group",
+      "linkId": "patientValidation",
+      "text": "Patient Validation",
+      "enableWhen": [
+        {
+          "question": "consentQuestion1",
+          "operator": "=",
+          "answerBoolean": true
+        },
+        {
+          "question": "consentQuestion2",
+          "operator": "=",
+          "answerBoolean": true
+        },
+        {
+          "question": "consentQuestion3",
+          "operator": "=",
+          "answerBoolean": true
+        },
+        {
+          "question": "consentQuestion4",
+          "operator": "=",
+          "answerBoolean": true
+        },
+        {
+          "question": "consentQuestion5",
+          "operator": "=",
+          "answerBoolean": true
+        },
+        {
+          "question": "isRemoteConsentTrue",
+          "operator": "=",
+          "answerBoolean": false
+        }
+      ],
+      "enableBehavior": "all"
+    }
+  ]
+}
