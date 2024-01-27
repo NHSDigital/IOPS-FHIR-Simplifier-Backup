@@ -1,0 +1,98 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-DemeizaSeo-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+      "valueCode": "F"
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+            "code": "R",
+            "display": "Other Ethnic Groups - Chinese"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449306559",
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                "version": "2.2.0",
+                "code": "01",
+                "display": "Number present and verified"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+      "value": "RWT16378",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "RAX"
+        }
+      }
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Demeiza"
+      ],
+      "family": "Seo"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "2011-01-26",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "line": [
+        "1 Aragon Avenue,",
+        "Thames Ditton"
+      ],
+      "city": "Surrey",
+      "postalCode": "KT7 0PY"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+        "value": "G9999999"
+      },
+      "display": "Dr. Aero Smith"
+    },
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/ODS-code",
+        "value": "TP123"
+      },
+      "display": "123 Test Practice"
+    }
+  ],
+  "link": [
+    {
+      "other": {
+        "reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307873"
+      },
+      "type": "seealso"
+    }
+  ]
+}
