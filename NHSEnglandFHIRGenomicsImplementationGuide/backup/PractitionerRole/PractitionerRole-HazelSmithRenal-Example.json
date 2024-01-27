@@ -44,6 +44,16 @@
 					"valueString": "reporting"
 				}
 			]
+		},
+		{
+			"system": "email",
+			"value": "neuroseckingston@nhs.net",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+					"valueString": "reporting"
+				}
+			]
 		}
 	]
 }

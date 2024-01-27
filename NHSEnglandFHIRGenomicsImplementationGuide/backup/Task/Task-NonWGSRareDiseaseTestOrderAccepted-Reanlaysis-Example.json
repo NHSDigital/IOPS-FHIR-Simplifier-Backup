@@ -1,0 +1,43 @@
+{
+    "resourceType": "Task",
+    "id": "Task-NonWGSRareDiseaseTestOrderAccepted-Reanlaysis-Example",
+    "status": "accepted",
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "ProcessGenomicTestRequest",
+                "display": "Process Genomic Test Request"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-ReAnalysis-Example.json"
+    },
+    "for": {
+        "reference": "Patient/Patient-DemeizaSeo-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307559"
+        }
+    },
+    "authoredOn": "2023-09-06T00:00:00Z",
+    "lastModified": "2023-09-06T11:08:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RJ1"
+        },
+        "display": "GUY'S AND ST THOMAS' NHS FOUNDATION TRUST"
+    },
+    "note": [
+        {
+            "text": "Optional Free Text field to record any additional details"
+        }
+    ]
+}
