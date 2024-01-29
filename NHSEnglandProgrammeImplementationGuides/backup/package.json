@@ -7,8 +7,7 @@
   ],
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
-    "fhir.r4.nhsengland.stu1": "1.1.0",
-    "ihe.iti.pdqm": "2.4.0"
+    "fhir.r4.nhsengland.stu1": "1.1.0"
   },
   "jurisdiction" : "urn:iso:std:iso:3166:-2:GB-ENG"
 }
