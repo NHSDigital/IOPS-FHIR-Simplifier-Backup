@@ -28,6 +28,8 @@ Any derived profiles will follow similar guidance, and will only show the differ
 
 <div markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-info-circle"></i> Note about the label "STU2" for this FHIR implementation guide (IG):</h4>
 The "2" refers to this being a second ballot of the UK Core, as a "Standard for Trial Use" (STU). It is based on, and provides extra UK specific guidance for use of, the international standard FHIR R4. The STU2 label of this Implementation Guide is not in any way related to earlier versions of FHIR itself, with coincidentally similar labels such as FHIR DSTU2 or FHIR STU3.
+<br><br>
+For additional guidance, see {{pagelink:Guidance-FHIRVersions-25268}}.
 </div>
 
 <div markdown="span" class="alert alert-success" role="alert">
