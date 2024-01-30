@@ -90,7 +90,7 @@ In addition, each Profile also has the following:
 <tr>
 <td>{{pagelink:Profile-DiagnosticReport-Lab,text:UKCore-DiagnosticReport-Lab}}</td>
 <td>active</td>
-<td>A profile <i>derived</i> from the UK Core DiagnosticReport profile to define the minimal set of data to query and retrieve the findings of laboratory tests.</td>
+<td>Defines the UK Core constraints and extensions on theDiagnosticReport profile to define the minimal set of data to query and retrieve the findings specifically related to laboratory tests.</td>
 <td>6</td>
 </tr>
 <tr>
@@ -489,8 +489,8 @@ In addition, each Profile also has the following:
 <li>{{pagelink:Profile-DiagnosticReport-Lab,text:UKCore-DiagnosticReport-Lab}}</li>
 <li>{{pagelink:Profile-FamilyMemberHistory,text:UKCore-FamilyMemberHistory}}</li>
 <li>{{pagelink:Profile-Observation,text:UKCore-Observation}}</li>
-<li>{{pagelink:Profile-Observation-Lab,text:UKCore-Observation-Lab}}</li>
 <li>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-Group-Lab}}</li>
+<li>{{pagelink:Profile-Observation-Lab,text:UKCore-Observation-Lab}}</li>
 <li>{{pagelink:Profile-ServiceRequest-Lab,text:UKCore-ServiceRequest-Lab}}</li>
 <li>{{pagelink:Profile-Specimen,text:UKCore-Specimen}}</li>
 </ul>

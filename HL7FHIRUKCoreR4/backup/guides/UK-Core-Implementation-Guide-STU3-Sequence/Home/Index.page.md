@@ -60,6 +60,8 @@ This Guide is divided into several pages which are listed at the top of each pag
 <ul>
   <li>{{pagelink:Guidance-DataType}}: This page gives guidance on the representation of constructs like Address, Name, and Telecom etc.</li>
   <li>{{pagelink:Guidance-CodeableConcept}}: This page gives guidance on the processing of CodeableConcept codes such as SNOMED CT concepts and descriptions.</li>
+  <li>{{pagelink:Guidance-FHIRVersions}}: This page gives guidance on UK Core and FHIR Versions beyond R4.</li>
+  <li>{{pagelink:Guidance-MustSupport}}: This page gives guidance on the the use of MustSupport flags in UK Core.</li>
 </ul>
 </li>
 <li>Profiles and Extensions: The  header for pages about Extensions and Profiles

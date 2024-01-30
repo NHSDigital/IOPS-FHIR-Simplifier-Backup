@@ -1,6 +1,10 @@
 ---
 topic: Guidance-DataType-96659
 ---
+## Guidance
+
+---
+
 # DataTypes
 
 This page gives guidance on the representation of constructs like:

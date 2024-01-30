@@ -1,7 +1,11 @@
 ---
 topic: Home-Guide-48666
 ---
-## UK Core Implementation Guide Current Draft Build ##
+## Home 
+
+---
+
+## UK Core Implementation Guide 2.0.0 - STU2 Sequence ##
 
 <p>
 <h3>Project Description and Scope</h3>
@@ -26,17 +30,18 @@ The FHIR UK Core will never contradict the base FHIR standard but will restrict 
 Any derived profiles will follow similar guidance, and will only show the differences between the base FHIR UK Core profile and the derived profile itself.
 </p>
 
-<div markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-info-circle"></i> Note about the label "STU2" for this FHIR implementation guide (IG):</h4>
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-info-circle"></i> Note about the label "STU2" for this FHIR implementation guide (IG):</h4>
 The "2" refers to this being a second ballot of the UK Core, as a "Standard for Trial Use" (STU). It is based on, and provides extra UK specific guidance for use of, the international standard FHIR R4. The STU2 label of this Implementation Guide is not in any way related to earlier versions of FHIR itself, with coincidentally similar labels such as FHIR DSTU2 or FHIR STU3.
 <br><br>
 For additional guidance, see {{pagelink:Guidance-FHIRVersions-25268}}.
 </div>
 
-<div markdown="span" class="alert alert-success" role="alert">
-<b>Important note regarding changes:</b>
+<div markdown="span" class="alert alert-warning" role="alert">
+<b>Important note regarding changes from STU1 Sequence:</b>
 <ul><li>A summary of changes is available here: <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU2-Sequence/1.1.0.page.md?version=current"> Version History</a></li>
 <li>The bindings for all SNOMED CT ValueSets have been changed to "preferred".</li>
-<li>The datatypes of extensions using codes/concxepts, have been unified as valueCodeableConcept.</li>
+<li>The bindings for all other UK Core ValueSets have been changed to "extensible".</li>
+<li>The datatypes of extensions using codes/concepts, have been unified as valueCodeableConcept.</li>
 <li>Minimum viable content table has been used to set MustSupport on each resource.</li>
 <li>References to UKCore profiles have been reset to base references, and guidance states that where a UK Core profile exists for the reference, it SHOULD be used.</li>
 </ul>
@@ -64,6 +69,8 @@ This Guide is divided into several pages which are listed at the top of each pag
 <ul>
   <li>{{pagelink:Guidance-DataType-96659}}: This page gives guidance on the representation of constructs like Address, Name, and Telecom etc.</li>
   <li>{{pagelink:Guidance-CodeableConcept-25269}}: This page gives guidance on the processing of CodeableConcept codes such as SNOMED CT concepts and descriptions.</li>
+  <li>{{pagelink:Guidance-FHIRVersions-25268}}: This page gives guidance on UK Core and FHIR Versions beyond R4.</li>
+  <li>{{pagelink:Guidance-MustSupport-25267}}: This page gives guidance on the the use of MustSupport flags in UK Core.</li>
 </ul>
 <li>Profiles and Extensions: The  header for pages about Extensions and Profiles</li>
 <ul>

@@ -10,7 +10,7 @@ More information about the constraints on the <code>UKCore-Observation-LabGroup<
 <th width="45%">Human Description</th>
 </tr>
 <tr>
-<td>ukcore-obs-labgrp-001</td>
+<td>ukcore-obs-grplab-001</td>
 <td>warning</td>
 <td>value.empty()</td>
 <td>This element SHOULD NOT be used within this Profile.</td>
