@@ -1,0 +1,59 @@
+{
+    "resourceType": "Task",
+    "id": "Task-NonWGSRareDiseaseTestOrderCompleted-FollowupTest-Example",
+    "status": "completed",
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "DistributeReport",
+                "display": "Distribute Report"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-NewFollowupTest-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-AnitaLamberts-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "8449303649"
+        }
+    },
+    "authoredOn": "2023-11-10T10:00:00Z",
+    "lastModified": "2023-11-24T15:30:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-AndrewSmith-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RJ1"
+        },
+        "display": "GUY'S AND ST THOMAS' NHS FOUNDATION TRUST"
+    },
+    "note": [
+        {
+            "text": "Optional Free Text field to record any additional details"
+        }
+    ],
+    "output": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "1054161000000101",
+                        "display": "Genetic report (record artifact)"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "DiagnosticReport/DiagnosticReport-AnitaLamberts-Example"
+            }
+        }
+    ]
+}

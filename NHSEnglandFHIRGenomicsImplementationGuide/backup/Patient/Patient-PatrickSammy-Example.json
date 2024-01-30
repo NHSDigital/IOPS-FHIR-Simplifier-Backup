@@ -1,0 +1,86 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-PatrickSammy-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+      "valueCode": "M"
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+            "code": "A",
+            "display": "White - British"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873",
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                "version": "2.2.0",
+                "code": "01",
+                "display": "Number present and verified"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Patrick"
+      ],
+      "family": "Sammy"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1982-10-06",
+  "address": [
+    {
+      "line": [
+        "51 Westgate,"
+      ],
+      "city": "Bradford",
+      "postalCode": "BD1 2RD"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+        "value": "G9999999"
+      },
+      "display": "Dr. Aero Smith"
+    },
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/ODS-code",
+        "value": "TP123"
+      },
+      "display": "123 Test Practice"
+    }
+  ],
+  "link": [
+    {
+      "other": {
+        "reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307873"
+      },
+      "type": "seealso"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-Neutrophils-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1022551000000104",
+        "display": "Neutrophil count"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PatrickSammy-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "valueQuantity": {
+    "value": 0.51,
+    "unit": "10^9/l",
+    "system": "http://unitsofmeasure.org",
+    "code": "10^9/L"
+  },
+  "effectiveDateTime": "2023-09-03"
+}

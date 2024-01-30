@@ -1,0 +1,69 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "DiagnosticReport-AnitaLamberts-Example",
+  "identifier": [
+    {
+      "system": "https://www.guysandstthomas.nhs.uk/SEGLH/lims",
+      "value": "FHGenomicReport",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "RJ1"
+        }
+      }
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-NewFollowupTest-Example"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE",
+          "display": "Genetics"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1054161000000101",
+        "display": "Genetic report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-AnitaLamberts-Example"
+  },
+  "issued": "2023-11-24T09:45:00Z",
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RJ1"
+      }
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-BloodEDTA-Example"
+    }
+  ],
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "language": "en-GB",
+      "url":"https://o719on.axshare.com/?id=8aol33&p=introduction&g=1",
+      "size": 43272,
+      "title": "Genomic Report for Anita Lamberts",
+      "creation": "2023-11-24"
+    }
+  ]
+}

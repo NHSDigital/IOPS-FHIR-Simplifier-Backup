@@ -1,0 +1,22 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-Bruising-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "308492005",
+        "display": "Bruising"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PatrickSammy-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "effectiveDateTime": "2023-09-03"
+}
