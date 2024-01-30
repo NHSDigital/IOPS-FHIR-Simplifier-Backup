@@ -2,14 +2,14 @@
 topic: Profile-Observation-Group-67431
 ---
 
-# StructureDefinition-UKCore-Observation-LabGroup
+# StructureDefinition-UKCore-Observation-Group-Lab
 
 <div id="transpose">
 @```
 from
 	StructureDefinition
 where
-	name = 'UKCoreObservationLabGroup'
+	name = 'UKCoreObservationGroupLab'
 select
 	Canonical_URL: url,
   Current_Version: version,
@@ -40,32 +40,32 @@ select
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, snapshot}}
+{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, diff}}
+{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, hybrid}}
+{{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, snapshot}}
+{{table:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, snapshot}}
+{{xml:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup, snapshot}}
+{{json:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab, snapshot}}
 </div>
 
 <div id="Examples" class="tabcontent">
@@ -81,7 +81,7 @@ The following are example usage scenarios for the UK Core Observation profile:
 - Group specific laboratory observations together, for example Full Blood Count,
 - Place laboratory observations in an ordered fashion.
 <br><br>
-The Observation-LabGroup profile is used to reference multiple individual laboratory observations (Observation-Lab) which together form a larger test set, for example a urea and electrolytes test that contains many several sub tests. 
+The Observation-Group-Lab profile is used to reference multiple individual laboratory observations (Observation-Lab) which together form a larger test set, for example a urea and electrolytes test that contains many several sub tests. 
 <br><br>
 {{render: Derived-Profiles-Lab-Example }}{: .img-responsive }
 ---

@@ -1,7 +1,11 @@
 ---
 topic: Library-Profiles-32647
 ---
-## Profiles
+## Profiles and Extensions
+
+---
+
+## Profiles Index
 
 This index contains all the profiles Clinically and Technically Assured for use with UK Core. 
 
@@ -73,7 +77,7 @@ The Profiles are rendered in several formats:
 <tr>
 <td>{{pagelink:Profile-DiagnosticReport-Lab-56818,text:UKCore-DiagnosticReport-Lab}}</td>
 <td>active</td>
-<td>A profile derived from the UK Core DiagnosticReport profile to define the minimal set of data to query and retrieve the findings of laboratory tests.</td>
+<td>Defines the UK Core constraints and extensions on theDiagnosticReport profile to define the minimal set of data to query and retrieve the findings specifically related to laboratory tests.</td>
 <td>6</td>
 </tr>
 <tr>
@@ -151,15 +155,15 @@ The Profiles are rendered in several formats:
 <td>6</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-Lab-67452,text:UKCore-Observation-Lab}}</td>
+<td>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-Group-Lab}}</td>
 <td>active</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information of measurements and simple assertions made about an individual, device or other subject.</td>
+<td>Defines the UK Core constraints and extensions on the Observation resource for the minimal set of data to query and retrieve information related to laboratory test groups and panels.</td>
 <td>6</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-LabGroup}}</td>
+<td>{{pagelink:Profile-Observation-Lab-67452,text:UKCore-Observation-Lab}}</td>
 <td>active</td>
-<td>A profile derived from the UK Core Observation profile to define the minimal set of data to query and retrieve information for results borne from a single request panel, or profile.</td>
+<td>Defines the UK Core constraints and extensions on the Observation resource for the minimal set of data to query and retrieve information related to individual laboratory test results.</td>
 <td>6</td>
 </tr>
 <tr>
@@ -220,7 +224,7 @@ The Profiles are rendered in several formats:
 <tr>
 <td>{{pagelink:Profile-ServiceRequest-Lab-37178,text:UKCore-ServiceRequest-Lab}}</td>
 <td>active</td>
-<td>A profile derived from the UK Core ServiceRequest profile to define the minimal set of data to query and retrieve the request for laboratory tests/td>
+<td>>Defines the UK Core constraints and extensions on the ServiceRequest resource for the minimal set of data to query and retrieve service request information, specifically related to laboratory tests.<br>
 <td>6</td>
 </tr>
 <tr>
@@ -272,8 +276,8 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-MedicationRequest-20572,text:UKCore-MedicationRequest}}</li>
 <li>{{pagelink:Profile-MedicationStatement-34649,text:UKCore-MedicationStatement}}</li>
 <li>{{pagelink:Profile-Observation-67521,text:UKCore-Observation}}</li>
+<li>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-Group-Lab}}</li>
 <li>{{pagelink:Profile-Observation-Lab-67452,text:UKCore-Observation-Lab}}</li>
-<li>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-LabGroup}}</li>
 <li>{{pagelink:Profile-Organization-94604,text:UKCore-Organization}}</li>
 <li>{{pagelink:Profile-Patient-88961,text:UKCore-Patient}}</li>
 <li>{{pagelink:Profile-Practitioner-10758,text:UKCore-Practitioner}}</li>
@@ -351,8 +355,8 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-DiagnosticReport-Lab-56818,text:UKCore-DiagnosticReport-Lab}}</li>
 <li>{{pagelink:Profile-FamilyMemberHistory-69978,text:UKCore-FamilyMemberHistory}}</li>
 <li>{{pagelink:Profile-Observation-67521,text:UKCore-Observation}}</li>
+<li>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-Group-Lab}}</li>
 <li>{{pagelink:Profile-Observation-Lab-67452,text:UKCore-Observation-Lab}}</li>
-<li>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-LabGroup}}</li>
 <li>{{pagelink:Profile-ServiceRequest-Lab-37178,text:UKCore-ServiceRequest-Lab}}</li>
 <li>{{pagelink:Profile-Specimen-37178,text:UKCore-Specimen}}</li>
 </ul>
@@ -435,8 +439,8 @@ The Profiles are rendered in several formats:
 <p><b>Observation:</b></p>
 <ul>
 <li>{{pagelink:Profile-Observation-67521,text:UKCore-Observation}}</li>
+<li>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-Group-Lab}}</li>
 <li>{{pagelink:Profile-Observation-Lab-67452,text:UKCore-Observation-Lab}}</li>
-<li>{{pagelink:Profile-Observation-Group-67431,text:UKCore-Observation-LabGroup}}</li>
 </ul>
 
 <p><b>Organization:</b></p>

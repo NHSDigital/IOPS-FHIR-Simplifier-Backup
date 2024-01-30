@@ -1,6 +1,6 @@
 ## StructureDefinition Extension-UKCore-DiagnosticReportComposition
 
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
+<div id="r5Asset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
 
 This is a proxy Extension, for pre-adopting of a R5 element.
 </div>
@@ -59,6 +59,6 @@ select
 </div>
 
 ### Guidance
-The resource being referenced SHOULD conform to the following {{pagelink:Profile-Composition}}.
+The resource being referenced SHOULD conform to the following {{pagelink:Profile-Composition-31483}}.
 
 ---

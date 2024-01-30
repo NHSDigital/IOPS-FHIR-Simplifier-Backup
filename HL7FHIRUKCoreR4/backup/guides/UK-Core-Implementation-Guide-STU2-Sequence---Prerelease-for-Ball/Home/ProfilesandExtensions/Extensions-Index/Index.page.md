@@ -1,6 +1,10 @@
 ---
 topic: Library-Extensions-82806
 ---
+## Profiles and Extensions
+
+---
+
 ## Extensions Index
 
 This extension library contains all the extensions Clinically and Technically Assured for use with UK Core. The profiles are found in the {{pagelink:Library-Profiles-32647}}. The table below lists all the current extensions and the context of use. 

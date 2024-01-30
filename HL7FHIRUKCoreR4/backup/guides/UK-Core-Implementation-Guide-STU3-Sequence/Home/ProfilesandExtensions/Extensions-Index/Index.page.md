@@ -30,7 +30,7 @@ The Extensions are rendered in several formats:
 </ul>
 <br>
 
-[Further information from HL7 relating to extensibility is available](http://hl7.org/fhir/R4/extensibility.html).
+<a href="http://hl7.org/fhir/R4/extensibility.html" class="external">Further information from HL7 relating to extensibility is available</a>.
 
 </div>
 

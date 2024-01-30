@@ -4,5 +4,7 @@
   filename: DataTypeGuidance
 - name: CodeableConcept Guidance
   filename: CodeableConcept-Guidance
-- name: UK Core and FHIR Versions
-  filename: UK-Core-and-FHIR-Versions
+- name: FHIR Version Guidance
+  filename: FHIR-Version-Guidance
+- name: MustSupport Guidance
+  filename: MustSupport-Guidance
