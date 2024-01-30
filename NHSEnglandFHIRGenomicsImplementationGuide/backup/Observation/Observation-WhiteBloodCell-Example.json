@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-WhiteBloodCell-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "767002",
+        "display": "White blood cell count - observation"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PatrickSammy-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "valueQuantity": {
+    "value": 11.9,
+    "unit": "10^9/L",
+    "system": "http://unitsofmeasure.org",
+    "code": "10^9/L"
+  },
+  "effectiveDateTime": "2023-09-03"
+}

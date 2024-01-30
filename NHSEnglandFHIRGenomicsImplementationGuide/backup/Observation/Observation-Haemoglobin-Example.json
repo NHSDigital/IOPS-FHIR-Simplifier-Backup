@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-Haemoglobin-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "38082009",
+        "display": "Haemoglobin"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PatrickSammy-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "valueQuantity": {
+    "value": 83,
+    "unit": "g/dl",
+    "system": "http://unitsofmeasure.org",
+    "code": "g/dL"
+  },
+  "effectiveDateTime": "2023-09-03"
+}

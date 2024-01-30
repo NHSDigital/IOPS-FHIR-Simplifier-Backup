@@ -1,0 +1,43 @@
+{
+  "resourceType": "Task",
+  "id": "Task-NonWGSRareDiseaseTestOrderAccepted-FollowupTest-Example",
+  "status": "accepted",
+  "intent": "order",
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+        "code": "ProcessGenomicTestRequest",
+        "display": "Process Genomic Test Request"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FollowupTest-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-AnitaLamberts-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303649"
+    }
+  },
+  "authoredOn": "2023-11-01T10:00:00Z",
+  "lastModified": "2023-11-02T11:00:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "RJ1"
+    },
+    "display": "GUY'S AND ST THOMAS' NHS FOUNDATION TRUST"
+  },
+  "note": [
+    {
+      "text": "Optional Free Text field to record any additional details"
+    }
+  ]
+}
