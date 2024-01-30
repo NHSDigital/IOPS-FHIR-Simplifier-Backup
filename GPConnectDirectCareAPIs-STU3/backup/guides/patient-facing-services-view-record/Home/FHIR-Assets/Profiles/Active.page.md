@@ -23,6 +23,7 @@
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-ProcedureRequest-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-ReferralRequest-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Specimen-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-CareConnect-HealthcareService-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-Appointment-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-Device-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-OperationOutcome-1}}

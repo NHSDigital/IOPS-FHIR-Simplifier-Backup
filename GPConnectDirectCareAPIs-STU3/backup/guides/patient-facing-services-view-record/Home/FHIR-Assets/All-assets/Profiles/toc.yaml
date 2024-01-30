@@ -64,3 +64,5 @@
   filename: Profile--GPConnect-Task-1
 - name: 'Profile: Binary'
   filename: Profile--Binary
+- name: 'Profile: CareConnect-HealthcareService-1'
+  filename: Profile-CareConnect-HealthcareService-1
