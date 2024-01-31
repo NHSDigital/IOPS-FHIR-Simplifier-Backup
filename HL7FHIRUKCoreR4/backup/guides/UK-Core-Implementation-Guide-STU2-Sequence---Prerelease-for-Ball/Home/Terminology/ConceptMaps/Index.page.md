@@ -1,6 +1,9 @@
 ---
 topic: Library-ConceptMaps-90400
 ---
+## Terminology
+
+---
 
 ## ConceptMaps
 
