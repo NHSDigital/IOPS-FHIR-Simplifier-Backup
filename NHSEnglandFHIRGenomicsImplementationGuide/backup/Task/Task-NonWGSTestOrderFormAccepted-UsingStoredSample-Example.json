@@ -1,0 +1,58 @@
+{
+    "resourceType": "Task",
+    "id": "Task-NonWGSTestOrderFormAccepted-UsingStoredSample-Example",
+    "status": "accepted",
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "ProcessGenomicTestRequest",
+                "display": "Process Genomic Test Request"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-UsingStoredSample-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-TimMclullichs-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "8449303452"
+        }
+    },
+    "authoredOn": "2023-11-02T15:43:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RQ3"
+        },
+        "display": "BIRMINGHAM WOMEN'S AND CHILDREN'S NHS FOUNDATION TRUST"
+    },
+    "note": [
+        {
+            "text": "Test critieria met and sample to be used from storage"
+        }
+    ],
+    "output": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "445295009",
+                        "display": "Blood specimen with EDTA"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example"
+            }
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+	"resourceType": "Patient",
+	"id": "Patient-TimMclullichs-Example",
+	"extension": [
+		{
+			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+			"valueCode": "M"
+		},
+		{
+			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+						"code": "A",
+						"display": "White - British"
+					}
+				]
+			}
+		}
+	],
+	"identifier": [
+		{
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "8449303452",
+			"extension": [
+				{
+					"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+								"version": "2.2.0",
+								"code": "01",
+								"display": "Number present and verified"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+			"value": "RTH17845",
+			"assigner": {
+				"identifier": {
+					"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+					"value": "RTH"
+				}
+			}
+		}
+	],
+	"name": [
+		{
+			"given": [
+				"Tim"
+			],
+			"family": "Mclullichs"
+		}
+	],
+	"gender": "male",
+	"birthDate": "1954-10-29",
+	"deceasedBoolean": false,
+	"address": [
+		{
+			"line": [
+				"1 Outwood Road",
+				"Crosswinds, Chipstead,"
+			],
+			"city": "Buckinghamshire",
+			"postalCode": "OM10 8DF"
+		}
+	],
+	"generalPractitioner": [
+		{
+			"identifier": {
+				"system": "https://fhir.hl7.org.uk/Id/gmp-number",
+				"value": "G9999999"
+			},
+			"display": "Dr. Aero Smith"
+		},
+		{
+			"identifier": {
+				"system": "https://fhir.hl7.org.uk/Id/ODS-code",
+				"value": "TP123"
+			},
+			"display": "123 Test Practice"
+		}
+	],
+	"link": [
+		{
+			"other": {
+				"reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/8449303452"
+			},
+			"type": "seealso"
+		}
+	]
+}

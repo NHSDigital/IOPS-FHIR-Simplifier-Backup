@@ -1,0 +1,112 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-NonWGSTestOrder-VariantReinterpretation-Example",
+  "basedOn": [
+    {
+      "reference": "ServiceReques/ServiceRequest-NonWGSTestOrderForm-SyndromicEpilepsy-Example"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs",
+            "display": "NHS"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "rare-disease-non-wgs"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "R442",
+        "display": "Variant Re-interpretation"
+      }
+    ]
+  },
+  "orderDetail": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+          "code": "R59",
+          "display": "Early onset or syndromic epilepsy"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Patient-SalimaPomfrets-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303444"
+    }
+  },
+  "authoredOn": "2023-10-01T10:08:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+          "code": "261004008",
+          "display": "Diagnostic"
+        }
+      ]
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/Observation-GenomicEthnicity-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseaseStatus-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoPregnancy-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusion-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "No sample required."
+    },
+    {
+      "text": "No family history of genomic testing"
+    },
+    {
+      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ For example: new evidence available that will likely change the classification of the variant- identification of additional patient(s) with the same genetic variant"
+    }
+  ]
+}

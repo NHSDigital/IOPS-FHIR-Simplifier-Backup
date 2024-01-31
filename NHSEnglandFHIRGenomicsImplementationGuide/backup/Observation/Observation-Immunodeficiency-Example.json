@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-Immunodefficiency-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "https://hpo.jax.org/app/",
+				"code": "HP:0002721",
+				"display": "Immunodefficiency"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-JamesMetcalfe-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "7449306524"
+		}
+	},
+	"effectiveDateTime": "2023-10-01",
+	"valueBoolean": true
+}

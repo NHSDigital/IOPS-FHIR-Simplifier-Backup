@@ -1,0 +1,49 @@
+{
+	"resourceType": "PractitionerRole",
+	"id": "PractitionerRole-OscarShields-Example",
+	"practitioner": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/sds-user-id",
+			"value": "9999999999"
+		},
+		"display": "Dr. Oscar Shields"
+	},
+	"organization": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RTH"
+		},
+		"display": "Oxford University NHS Foundation Trust"
+	},
+	"specialty": [
+		{
+			"coding": [
+				{
+					"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+					"code": "820",
+					"display": "General Pathology"
+				}
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "03003047777"
+		},
+		{
+			"system": "email",
+			"value": "oscar.shields@nhs.net"
+		},
+		{
+			"system": "email",
+			"value": "oxfordpathology@nhs.net",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+					"valueString": "reporting"
+				}
+			]
+		}
+	]
+}

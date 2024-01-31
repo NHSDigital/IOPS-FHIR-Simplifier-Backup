@@ -1,0 +1,59 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "PractitionerRole-EugeneSmith-Example",
+  "practitioner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/sds-user-id",
+      "value": "9999999998"
+    },
+    "display": "Dr. Eugene Smith"
+  },
+  "organization": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "RPA02"
+    },
+    "display": "MEDWAY MARITIME HOSPITAL"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+          "code": "820",
+          "display": "General Pathology"
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "01634976477"
+    },
+    {
+      "system": "email",
+      "value": "medwaypath@nhs.net"
+    },
+    {
+      "system": "email",
+      "value": "clinicalgeneticsmedway@nhs.net",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+          "valueString": "reporting"
+        }
+      ]
+    },
+    {
+      "system": "email",
+      "value": "asmithgppracticeg@nhs.net",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+          "valueString": "reporting"
+        }
+      ]
+    }
+  ]
+}

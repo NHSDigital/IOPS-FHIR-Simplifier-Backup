@@ -1,0 +1,59 @@
+{
+    "resourceType": "Task",
+    "id": "Task-TestOrderFormAccepted-StorageOfMaterial-Example",
+    "status": "accepted",
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "RequestSampleAlignment",
+                "display": "Request & Sample Alignment"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-TestOrderForm-StorageOfMaterial-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-TimMclullichs-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "8449303452"
+        }
+    },
+    "authoredOn": "2023-10-31T08:54:00Z",
+    "lastModified": "2023-10-31T15:43:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RQ3"
+        },
+        "display": "BIRMINGHAM WOMEN'S AND CHILDREN'S NHS FOUNDATION TRUST"
+    },
+    "note": [
+        {
+            "text": "sample recieved and placed to be placed in storage"
+        }
+    ],
+    "output": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "445295009",
+                        "display": "Blood specimen with EDTA"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example"
+            }
+        }
+    ]
+}

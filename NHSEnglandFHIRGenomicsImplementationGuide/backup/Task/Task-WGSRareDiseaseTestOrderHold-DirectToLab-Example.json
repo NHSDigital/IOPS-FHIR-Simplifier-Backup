@@ -1,0 +1,47 @@
+{
+  "resourceType": "Task",
+  "id": "Task-WGSRareDiseaseTestOrderHold-DirectToLab-Example",
+  "status": "on-hold",
+  "statusReason": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics", 
+        "code": "AwaitingRoDAndSpecimen", 
+        "display": "Awaiting Record of Discussion and Specimen"
+      }
+    ]
+  },
+  "intent": "order",
+  "priority": "urgent",
+  "code": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
+        "code": "RequestSampleAlignment", 
+        "display": "Request & Sample Alignment"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest-WGSTestOrderForm-DirectToLab-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-JamesMetcalfe-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "7449306524"
+    }
+  },
+  "authoredOn": "2023-10-01T15:00:00Z",
+  "lastModified":"2023-10-01T16:10:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "RH8"
+    },
+    "display": "ROYAL DEVON UNIVERSITY HEALTHCARE NHS FOUNDATION TRUST"
+  }
+}

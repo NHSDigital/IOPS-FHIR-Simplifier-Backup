@@ -31,6 +31,10 @@
   "content": "complete",
   "concept": [
     {
+      "code": "AwaitingRoDAndSpecimen",
+      "display": "Awaiting Record of Discussion and Specimen"
+    },
+    {
       "code": "InvalidRequest",
       "display": "Invalid Request"
     },
@@ -45,6 +49,10 @@
     {
       "code": "UnableToInterpret",
       "display": "Unable To Interpret"
+    },
+    {
+      "code": "SpecimenReceived",
+      "display": "SpecimenReceived"
     },
     {
       "code": "SpecimenQualityNotOK",
