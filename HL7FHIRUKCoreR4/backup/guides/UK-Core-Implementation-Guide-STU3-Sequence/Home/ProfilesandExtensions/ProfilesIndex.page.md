@@ -198,28 +198,28 @@ In addition, each Profile also has the following:
 <td>7</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-Group-Lab}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Observation resource for the minimal set of data to query and retrieve information related to laboratory test groups and panels.</td>
-<td>6</td>
-</tr>
-<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-InspiredOxygen,text:UKCore-Observation-InspiredOxygen}}</td>
 <td>active</td>
 <td>A profile <i>derived</i> from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding whether a patient is breathing room air or is on oxygen.</td>
 <td>7</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Observation-Lab,text:UKCore-Observation-Lab}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Observation resource for the minimal set of data to query and retrieve information related to individual laboratory test results.</td>
-<td>6</td>
-</tr>
-<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;{{pagelink:Profile-Observation-TobaccoConsumption,text:UKCore-Observation-TobaccoConsumption}}</td>
 <td>active</td>
 <td>A profile <i>derived</i> from the UK Core Observation profile to define the minimal set of data to query and retrieve information regarding a patient's tobacco consumption.</td>
 <td>7</td>
+</tr>
+<tr>
+<td>{{pagelink:Profile-Observation-Group,text:UKCore-Observation-Group-Lab}}</td>
+<td>active</td>
+<td>Defines the UK Core constraints and extensions on the Observation resource for the minimal set of data to query and retrieve information related to laboratory test groups and panels.</td>
+<td>6</td>
+</tr>
+<tr>
+<td>{{pagelink:Profile-Observation-Lab,text:UKCore-Observation-Lab}}</td>
+<td>active</td>
+<td>Defines the UK Core constraints and extensions on the Observation resource for the minimal set of data to query and retrieve information related to individual laboratory test results.</td>
+<td>6</td>
 </tr>
 <tr>
 <td>{{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}}</td>

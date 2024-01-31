@@ -1,7 +1,6 @@
 ---
 topic: Library-ConceptMaps
 ---
-
 ## Terminology
 
 ---
