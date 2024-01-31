@@ -1,0 +1,38 @@
+{
+  "resourceType": "Task",
+  "id": "Task-WGSRareDiseaseTestOrderRequested-DirectToLab-Example",
+  "status": "requested",
+  "intent": "order",
+  "priority": "urgent",
+  "code": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
+        "code": "ProcessGenomicTestRequest", 
+        "display": "Process Genomic Test Request"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest-WGSTestOrderFormUpdated-DirectToLab-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-JamesMetcalfe-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "7449306524"
+    }
+  },
+  "authoredOn": "2023-10-10T11:00:00Z",
+  "lastModified":"2023-10-10T16:00:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "RH8"
+    },
+    "display": "ROYAL DEVON UNIVERSITY HEALTHCARE NHS FOUNDATION TRUST"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-WGSTestOrderForm-DirectToLab-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs",
+            "display": "NHS"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "rare-disease-wgs",
+          "display": "Rare Disease - WGS"
+        }
+      ]
+    }
+  ],
+  "priority": "urgent",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "R14",
+        "display": "Acutely unwell children with a likely monogenic disorder"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-JamesMetcalfe-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "7449306524"
+    }
+  },
+  "authoredOn": "2023-10-01T15:00:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "103693007",
+          "display": "Diagnostic procedure"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RH8"
+      }
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/Observation-GenomicEthnicity-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoPregnancy-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseaseStatus-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseasePenetrance-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+    },
+    {
+      "reference": "Observation/Observation-Immunodefficiency-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusion-Example"
+    },
+    {
+      "reference": "Consent/Consent-RoDToFollow-Example"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-JamesMetcalfeBloodEDTA-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "No family history of genomic testing"
+    },
+    {
+      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms"
+    },
+    {
+      "text": "E.g.  non genetic investigations are pathognomonic of a single gene disorder, R26 previously ordered on the child  and molecular testing needed to guide management"
+    }
+  ]
+}

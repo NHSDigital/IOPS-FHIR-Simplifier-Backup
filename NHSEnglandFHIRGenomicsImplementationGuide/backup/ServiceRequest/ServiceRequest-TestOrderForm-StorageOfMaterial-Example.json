@@ -1,0 +1,83 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-TestOrderForm-StorageOfMaterial-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs",
+            "display": "NHS"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "R346",
+        "display": "DNA to be stored"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-TimMclullichs-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303452"
+    }
+  },
+  "authoredOn": "2023-10-28T11:00:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1186936003",
+          "display": "Storage of specimen"
+        }
+      ]
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/Observation-GenomicEthnicity-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseaseStatus-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusion-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "Specimen will be provided at a later date"
+    },
+    {
+      "text": "No family history of genomic testing"
+    },
+    {
+      "text": "Free text for diagnosis/reason for referral, transplant, life status at time of request details/ E.g. DNA to be stored for future testing"
+    }
+  ]
+}

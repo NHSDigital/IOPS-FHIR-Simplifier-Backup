@@ -1,0 +1,43 @@
+{
+    "resourceType": "Task",
+    "id": "Task-NonWGSTestOrderAccepted-VariantReinterpretation-Example",
+    "status": "accepted",
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "ProcessGenomicTestRequest",
+                "display": "Process Genomic Test Request"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrder-VariantReinterpretation-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-SalimaPomfrets-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "8449303444"
+        }
+    },
+    "authoredOn": "2023-10-01T10:08:00Z",
+    "lastModified": "2023-10-02T11:30:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-GeneSmith-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RQ3"
+        },
+        "display": "BIRMINGHAM WOMEN'S AND CHILDREN'S NHS FOUNDATION TRUST"
+    },
+    "note": [
+        {
+            "text": "Optional Free Text field to record any additional details"
+        }
+    ]
+}

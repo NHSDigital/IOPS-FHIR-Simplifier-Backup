@@ -1,0 +1,59 @@
+{
+	"resourceType": "Task",
+	"id": "Task-WGSRareDiseaseTestOrderCompleted-DirectToLab-Example",
+	"status": "completed",
+	"intent": "order",
+	"priority": "routine",
+	"code": {
+		"coding": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+				"code": "DistributeReport",
+				"display": "Distribute Report"
+			}
+		]
+	},
+	"focus": {
+		"reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-DirectToLab-Example"
+	},
+	"for": {
+		"reference": "Patient/Patient-JamesMetcalfe-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "7449306524"
+		}
+	},
+	"authoredOn": "2023-10-10T16:00:00Z",
+	"lastModified": "2023-10-18T11:10:00Z",
+	"requester": {
+		"reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
+	},
+	"owner": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RH8"
+		},
+		"display": "ROYAL DEVON UNIVERSITY HEALTHCARE NHS FOUNDATION TRUST"
+	},
+	"note": [
+		{
+			"text": "Optional Free Text field to record any additional details"
+		}
+	],
+	"output": [
+		{
+			"type": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1054161000000101",
+						"display": "Genetic report (record artifact)"
+					}
+				]
+			},
+			"valueReference": {
+				"reference": "DiagnosticReport/DiagnosticReport-JamesMetcalfeGeneticReport-Example"
+			}
+		}
+	]
+}

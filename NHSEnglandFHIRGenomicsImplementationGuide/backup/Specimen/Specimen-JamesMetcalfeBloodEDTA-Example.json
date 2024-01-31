@@ -1,0 +1,42 @@
+{
+  "resourceType": "Specimen",
+  "id": "Specimen-JamesMetcalfeBloodEDTA-Example",
+  "identifier": [
+    {
+      "system": "https://fhir.medway.nhs.uk/Id/specimenId",
+      "value": "RH-696B0-17843"
+    }
+  ],
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "445295009",
+        "display": "Blood specimen with EDTA"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-JamesMetcalfe-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307806"
+    }
+  },
+  "collection": {
+    "collector": {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+        "value": "9999999998"
+      },
+      "display": "Phletobomist-Lois Lane"
+    },
+    "collectedDateTime": "2023-10-02T10:00:00Z"
+  },
+  "request": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-DirectToLab-Example"
+    }
+  ]
+}
