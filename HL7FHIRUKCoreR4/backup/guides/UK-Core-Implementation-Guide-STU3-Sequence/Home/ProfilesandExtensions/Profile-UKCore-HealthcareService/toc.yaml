@@ -10,3 +10,5 @@
   filename: telecom.page.md
 - name: coverageArea
   filename: coverageArea.page.md
+- name: communication
+  filename: communication.page.md

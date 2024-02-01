@@ -42,8 +42,6 @@
   filename: CodeSystem-UKCore-FundingCategory.page.md
 - name: CodeSystem UKCore-GenomeSequencingCategory
   filename: CodeSystem-UKCore-GenomeSequencingCategory.page.md
-- name: CodeSystem UKCore-HumanLanguage
-  filename: CodeSystem-UKCore-HumanLanguage.page.md
 - name: CodeSystem UKCore-LegalStatusClassificationEngland
   filename: CodeSystem-UKCore-LegalStatusClassificationEngland.page.md
 - name: CodeSystem UKCore-LegalStatusClassificationWales

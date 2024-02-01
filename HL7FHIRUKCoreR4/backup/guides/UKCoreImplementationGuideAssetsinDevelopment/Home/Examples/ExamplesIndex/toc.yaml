@@ -1,5 +1,11 @@
 - name: Index
   filename: Index.guide.md
+- name: Example UKCore-Questionnaire-EOLPlan
+  filename: Example-UKCore-Questionnaire-EOLPlan.page.md
+- name: Example UKCore-Questionnaire-FitnessforWork
+  filename: Example-UKCore-Questionnaire-FitnessforWork.page.md
+- name: Example UKCore-Questionnaire-InpatientSurvey
+  filename: Example-UKCore-Questionnaire-InpatientSurvey.page.md
 - name: Example UKCore-AuditEvent-Query
   filename: ExampleUKCore-AuditEvent-Query.guide.md
 - name: Example UKCore-Bundle-BundledAllergyList
@@ -50,7 +56,7 @@
   filename: Example-UKCore-QuestionnaireResponse-BabyPatientSurvey.page.md
 - name: Example UKCore-QuestionnaireResponse-EOLPlan
   filename: Example-UKCore-QuestionnaireResponse-EOLPlan.page.md
-- name: Example UKCore-QuesstionnaireResponse-FitnessForWork
-  filename: Example-UKCore-QuesstionnaireResponse-FitnessForWork.page.md
+- name: Example UKCore-QuestionnaireResponse-FitnessForWork
+  filename: Example-UKCore-QuestionnaireResponse-FitnessForWork.page.md
 - name: Example UKCore-QuestionnaireResponse-InpatientSurvey
   filename: Example-UKCore-QuestionnaireResponse-InpatientSurvey.page.md

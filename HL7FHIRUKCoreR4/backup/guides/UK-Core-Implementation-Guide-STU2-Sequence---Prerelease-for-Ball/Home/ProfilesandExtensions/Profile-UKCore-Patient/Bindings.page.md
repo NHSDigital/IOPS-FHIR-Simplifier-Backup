@@ -50,8 +50,8 @@ More information about the bindings to UK Core ValueSets can be found below.
 </tr>
 <tr>
 <td>Patient.communication.language</td>
-<td>Extensible</td>
-<td>{{pagelink:ValueSet-UKCore-HumanLanguage}}</td>
+<td>Required</td>
+<td><a href="https://hl7.org/fhir/R4/valueset-all-languages.html" class="external">Core-defined ValueSet All Languages</a></td>
 </tr>
 <tr>
 <td>Patient.contact.relationship</td>

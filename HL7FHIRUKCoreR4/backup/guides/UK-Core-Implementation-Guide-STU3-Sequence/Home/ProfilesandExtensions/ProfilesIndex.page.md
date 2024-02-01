@@ -313,12 +313,6 @@ In addition, each Profile also has the following:
 <td>4</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Questionnaire resource for the minimal set of data to query and retrieve questionnaire information.</td>
-<td>5</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-RelatedPerson,text:UKCore-RelatedPerson}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the RelatedPerson resource for the minimal set of data to query and retrieve related person information.</td>
@@ -421,7 +415,6 @@ In addition, each Profile also has the following:
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>Q-Z:</b></p> 
 <ul>  
-<li>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</li>
 <li>{{pagelink:Profile-RelatedPerson,text:UKCore-RelatedPerson}}</li>
 <li>{{pagelink:Profile-Schedule,text:UKCore-Schedule}}</li>
 <li>{{pagelink:Profile-ServiceRequest,text:UKCore-ServiceRequest}}</li>
@@ -477,7 +470,6 @@ In addition, each Profile also has the following:
 <li>{{pagelink:Profile-Composition,text:UKCore-Composition}}</li>
 <li>{{pagelink:Profile-Condition,text:UKCore-Condition}}</li>
 <li>{{pagelink:Profile-HealthcareService,text:UKCore-HealthcareService}}</li>
-<li>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</li>
 <li>{{pagelink:Profile-ServiceRequest,text:UKCore-ServiceRequest}}</li>
 <li>{{pagelink:Profile-Schedule,text:UKCore-Schedule}}</li>
 <li>{{pagelink:Profile-Slot,text:UKCore-Slot}}</li>
@@ -635,11 +627,6 @@ In addition, each Profile also has the following:
 <p><b>Procedure:</b></p>
 <ul>
 <li>{{pagelink:Profile-Procedure,text:UKCore-Procedure}}</li>
-</ul>
-
-<p><b>Questionnaire:</b></p>
-<ul>
-<li>{{pagelink:Profile-Questionnaire,text:UKCore-Questionnaire}}</li>
 </ul>
 <p><b>RelatedPerson:</b></p>
 <ul>

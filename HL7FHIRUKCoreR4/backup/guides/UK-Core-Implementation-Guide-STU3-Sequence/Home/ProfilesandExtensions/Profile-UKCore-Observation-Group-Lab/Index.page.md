@@ -7,6 +7,10 @@ issue: UKCore-Observation-Group-L
 
 # StructureDefinition-UKCore-Observation-Group-Lab
 
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-warning"></i> Breaking Change</h4>
+The <code>id</code> / <code>title</code> / <code>name</code> / <code>url</code> of this profile were changed in the STU2 Sequence release, as a result of the UK Core STU2 Sequence ballot reconciliation actions.
+</div>
+
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
