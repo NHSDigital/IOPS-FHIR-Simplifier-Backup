@@ -197,12 +197,6 @@ The Profiles are rendered in several formats:
 <td>4</td>
 </tr>
 <tr>
-<td>{{pagelink:Profile-Questionnaire-47615,text:UKCore-Questionnaire}}</td>
-<td>active</td>
-<td>Defines the UK Core constraints and extensions on the Questionnaire resource for the minimal set of data to query and retrieve questionnaire information.</td>
-<td>5</td>
-</tr>
-<tr>
 <td>{{pagelink:Profile-RelatedPerson-51006,text:UKCore-RelatedPerson}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the RelatedPerson resource for the minimal set of data to query and retrieve related person information.</td>
@@ -287,7 +281,6 @@ The Profiles are rendered in several formats:
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>Q-Z:</b></p> 
 <ul>  
-<li>{{pagelink:Profile-Questionnaire-47615,text:UKCore-Questionnaire}}</li>
 <li>{{pagelink:Profile-RelatedPerson-51006,text:UKCore-RelatedPerson}}</li>
 <li>{{pagelink:Profile-Schedule-96669,text:UKCore-Schedule}}</li>
 <li>{{pagelink:Profile-ServiceRequest-88746,text:UKCore-ServiceRequest}}</li>
@@ -343,7 +336,6 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-Composition-31483,text:UKCore-Composition}}</li>
 <li>{{pagelink:Profile-Condition-78787,text:UKCore-Condition}}</li>
 <li>{{pagelink:Profile-HealthcareService-13702,text:UKCore-HealthcareService}}</li>
-<li>{{pagelink:Profile-Questionnaire-47615,text:UKCore-Questionnaire}}</li>
 <li>{{pagelink:Profile-ServiceRequest-88746,text:UKCore-ServiceRequest}}</li>
 <li>{{pagelink:Profile-Schedule-96669,text:UKCore-Schedule}}</li>
 <li>{{pagelink:Profile-Slot-83549,text:UKCore-Slot}}</li>
@@ -464,10 +456,6 @@ The Profiles are rendered in several formats:
 <li>{{pagelink:Profile-Procedure-10775,text:UKCore-Procedure}}</li>
 </ul>
 
-<p><b>Questionnaire:</b></p>
-<ul>
-<li>{{pagelink:Profile-Questionnaire-47615,text:UKCore-Questionnaire}}</li>
-</ul>
 <p><b>RelatedPerson:</b></p>
 <ul>
 <li>{{pagelink:Profile-RelatedPerson-51006,text:UKCore-RelatedPerson}}</li>

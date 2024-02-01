@@ -1,12 +1,107 @@
 ## `communication`
 
-`Patient.communication` has the <a href="https://hl7.org/fhir/R4/extension-patient-proficiency.html">Core-defined Extension patient-proficiency</a>.
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-warning"></i> Breaking Change</h4>
+The binding on <code>Patient.communication.language</code> was changed, from <code>ValueSet-UKCore-HumanLanguage</code> and reset to the base specification in this release, and it's strength has been set to <i>Required</i>, as a result of the UK Core STU2 Sequence ballot reconciliation actions. This action was agreed in order to align UK Core with known changes in future FHIR versions.
+</div>
 
-One or more instances of this element can be used to list the languages the patient is able to communicate in. 
+`Patient.communication` has the Core-defined Extension <a href="https://hl7.org/fhir/R4/extension-patient-proficiency.html" class="external">patient-proficiency</a>.
 
-Use the value set below. One of these instances SHOULD be marked as preferred. 
+One or more instances of this element can be used to list the languages the patient is able to communicate in.  
 
-{{pagelink:ValueSet-UKCore-HumanLanguage}}.
+The <code>Patient.communication.language</code> element has a <i>Required</i> binding to the Core-defined ValueSet <a href="https://hl7.org/fhir/R4/valueset-languages.html" class="external">Common Languages</a> which is derived form <code>urn:ietf:bcp:47</code>
+
+#### An example of a patient with a single language
+
+<div>
+<div class="tab">
+ <button class="tablinks active" onclick="openTab(event, 'Table View')">Table View</button>
+ <button class="tablinks" onclick="openTab(event, 'Tree View')">Tree View</button>
+  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
+</div>
+
+<div id="Table View" class="tabcontent" style="display:block">
+  <h3>Table View</h3>
+{{table:UKCore-Patient-Sn-SingleLanguage-Example}}
+</div>
+
+<div id="Tree View" class="tabcontent">
+  <h3>Tree View</h3>
+{{tree:UKCore-Patient-Sn-SingleLanguage-Example}}
+</div>
+
+<div id="XML View" class="tabcontent">
+  <h3>XML View</h3>
+{{xml:UKCore-Patient-Sn-SingleLanguage-Example}}
+</div>
+
+<div id="JSON View" class="tabcontent">
+  <h3>JSON View</h3>
+{{json:UKCore-Patient-Sn-SingleLanguage-Example}}
+</div>
+</div>
+
+#### An example of a patient with multiple languages, with different proficiencies
+
+<div>
+<div class="tab">
+ <button class="tablinks active" onclick="openTab(event, 'Table View')">Table View</button>
+ <button class="tablinks" onclick="openTab(event, 'Tree View')">Tree View</button>
+ <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+ <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
+</div>
+
+<div id="Table View" class="tabcontent" style="display:block">
+  <h3>Table View</h3>
+{{table:UKCore-Patient-Sn-MultipleLanguages-Example}}
+</div>
+
+<div id="Tree View" class="tabcontent">
+  <h3>Tree View</h3>
+{{tree:UKCore-Patient-Sn-MultipleLanguages-Example}}
+</div>
+
+<div id="XML View" class="tabcontent">
+  <h3>XML View</h3>
+{{xml:UKCore-Patient-Sn-MultipleLanguages-Example}}
+</div>
+
+<div id="JSON View" class="tabcontent">
+  <h3>JSON View</h3>
+{{json:UKCore-Patient-Sn-MultipleLanguages-Example}}
+</div>
+</div>
+
+#### An example of a patient with the British Sign Language and Makaton
+
+<div>
+<div class="tab">
+ <button class="tablinks active" onclick="openTab(event, 'Table View')">Table View</button>
+ <button class="tablinks" onclick="openTab(event, 'Tree View')">Tree View</button>
+ <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+ <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
+</div>
+
+<div id="Table View" class="tabcontent" style="display:block">
+  <h3>Table View</h3>
+{{table:UKCore-Patient-Sn-Makaton-Example}}
+</div>
+
+<div id="Tree View" class="tabcontent">
+  <h3>Tree View</h3>
+{{tree:UKCore-Patient-Sn-Makaton-Example}}
+</div>
+
+<div id="XML View" class="tabcontent">
+  <h3>XML View</h3>
+{{xml:UKCore-Patient-Sn-Makaton-Example}}
+</div>
+
+<div id="JSON View" class="tabcontent">
+  <h3>JSON View</h3>
+{{json:UKCore-Patient-Sn-Makaton-Example}}
+</div>
+</div>
 
 ---
 

@@ -8,3 +8,5 @@
   filename: patient.page.md
 - name: telecom
   filename: telecom.page.md
+- name: communication
+  filename: communication.page.md

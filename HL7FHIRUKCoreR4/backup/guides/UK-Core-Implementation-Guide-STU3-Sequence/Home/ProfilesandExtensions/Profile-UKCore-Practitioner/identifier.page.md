@@ -46,6 +46,9 @@ The `Practitioner.identifier` can be populated using the examples given below.
 More information about the GMC, GPhC, and NMC registration numbers can be found within the Glossary, under NHS Data Model and Dictionary.
 <br>
 More information about SDS can be found within the Glossary, under Spine Directory Service.
-
+<br>
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-warning"></i> Breaking Change</h4>
+The minimum cardinality of <code>Practitioner.identifier.system</code> and <code>Practitioner.identifier.value</code>reset from 1 in UK Core STU1 Sequence, to 0 in this release, as a result of the UK Core STU2 Sequence ballot reconciliation actions.
+</div> 
 
 ---

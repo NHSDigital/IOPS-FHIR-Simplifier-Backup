@@ -114,12 +114,6 @@
   filename: Example-UKCore-PractitionerRole-GP.page.md
 - name: Example UKCore-Procedure-ExaminationOfSkin
   filename: Example-UKCore-Procedure-ExaminationOfSkin.page.md
-- name: Example UKCore-Questionnaire-EOLPlan
-  filename: Example-UKCore-Questionnaire-EOLPlan.page.md
-- name: Example UKCore-Questionnaire-FitnessForWork
-  filename: Example-UKCore-Questionnaire-FitnessForWork.page.md
-- name: Example UKCore-Questionnaire-InpatientSurvey
-  filename: Example-UKCore-Questionnaire-InpatientSurvey.page.md
 - name: Example UKCore-RelatedPerson-JoySmith
   filename: Example-UKCore-RelatedPerson-JoySmith.page.md
 - name: Example UKCore-Schedule-Immunization

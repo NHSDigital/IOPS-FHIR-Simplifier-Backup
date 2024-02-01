@@ -922,20 +922,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <td colspan="4"  class="override"></td>
 </tr>
 
-
-<tr>
-<td><h4>{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</h4></td>
-<td>active</td>
-<td>{{pagelink:Profile-Questionnaire-47615}}</td>
-<td>5</td>
-</tr>
-<tr>
-<td colspan="4">Composed of <code>http://snomed.info/sct</code></td>
-</tr>
-<tr>
-<td colspan="4"  class="override"></td>
-</tr>
-
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ReasonImmunizationNotAdministered}}</h4></td>
 <td>active</td>
@@ -1198,7 +1184,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>Q-Z:</b></p> 
 <ul>  
-<li>{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</li>
 <li>{{pagelink:ValueSet-UKCore-ReasonImmunizationNotAdministered}}</li>
 <li>{{pagelink:ValueSet-UKCore-ReportCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-ResidentialStatus}}</li>
@@ -1372,7 +1357,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <ul>
 <li>{{pagelink:ValueSet-UKCore-AppointmentReasonCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-DeliveryChannel}}</li>
-<li>{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</li>
 <li>{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-SourceOfServiceRequest}}</li>
 </ul>
@@ -1616,10 +1600,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-ConditionCode}}</li>
 <li>{{pagelink:Valueset-UKCore-ProcedureCode}}</li>
 </ul>
-<p><b>Questionnaire:</b></p>
-<ul>
-<li>{{pagelink:Valueset-UKCore-QuestionnaireQuestionCodes}}</li>
-</ul>
 <p><b>RelatedPerson:</b></p>
 <ul>
 <li>{{pagelink:ValueSet-UKCore-PersonRelationshipType}}</li>
@@ -1652,12 +1632,11 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-SpecimenType}}</li>
 </ul>
 </div>
-
-<br><br>
+<br>
 <div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> <code>UKCore-MedicationAdministrationCategory</code> was added after specific review and feedback from the Digital and Interoperable Medicines Programme. It was not added under a Clinical & Technical Assurance sprint
 </div>
-
-<br><br>
+<br>
 <div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i> <i class="fa fa-asterisk"></i> <code>UKCore-UnifiedTestList</code> added in C&TA Sprint 6 was replaced by the <code>UKCore-PathologyAndLaboratoryMedicineObservables</code> and <code>UKCore-PathologyAndLaboratoryMedicineProcedures</code> ValueSets during the STU2 Ballot reconciliation due to a change by the SNOMED CT UK Clinical Edition.
 </div>
+
 ---

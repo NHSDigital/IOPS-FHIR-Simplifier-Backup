@@ -54,8 +54,6 @@
   filename: Profile-UKCore-PractitionerRole
 - name: Profile UKCore-Procedure
   filename: Profile-UKCore-Procedure
-- name: Profile UKCore-Questionnaire
-  filename: Profile-UKCore-Questionnaire
 - name: Profile UKCore-RelatedPerson
   filename: Profile-UKCore-RelatedPerson
 - name: Profile UKCore-Schedule

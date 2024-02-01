@@ -116,8 +116,6 @@
   filename: ValueSet-UKCore-PreferredWrittenCommunicationFormat.page.md
 - name: ValueSet UKCore-ProcedureCode
   filename: ValueSet-UKCore-ProcedureCode.page.md
-- name: ValueSet UKCore-QuestionnaireQuestionCodes
-  filename: ValueSet-UKCore-QuestionnaireQuestionCodes.page.md
 - name: ValueSet UKCore-ReasonImmunizationNotAdministered
   filename: ValueSet-UKCore-ReasonImmunizationNotAdministered.page.md
 - name: ValueSet UKCore-ReportCode

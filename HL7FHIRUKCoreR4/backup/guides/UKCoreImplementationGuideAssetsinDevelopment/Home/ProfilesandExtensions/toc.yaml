@@ -34,6 +34,8 @@
   filename: Profile-UKCore-OrganizationAffiliation
 - name: Profile UKCore-Provenance
   filename: Profile-UKCore-Provenance
+- name: Profile UKCore-Questionnaire
+  filename: Profile-UKCore-Questionnaire
 - name: Profile UKCore-QuestionnaireResponse
   filename: Profile-UKCore-QuestionnaireResponse
 - name: Profile UKCore-RequestGroup

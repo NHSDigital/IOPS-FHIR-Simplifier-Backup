@@ -1,3 +1,5 @@
+- name: ValueSet UKCore-ConsentProvision
+  filename: ValueSet-UKCore-ConsentProvision.page.md
 - name: ValueSet UKCore-DateTimeType
   filename: ValueSet-UKCore-DateTimeType.page.md
 - name: ValueSet UKCore-DeviceType
@@ -6,3 +8,5 @@
   filename: ValueSet-UKCore-DocumentType.page.md
 - name: ValueSet UKCore-PeriodType
   filename: ValueSet-UKCore-PeriodType.page.md
+- name: ValueSet UKCore-QuestionnaireQuestionCodes
+  filename: ValueSet-UKCore-QuestionnaireQuestionCodes.page.md

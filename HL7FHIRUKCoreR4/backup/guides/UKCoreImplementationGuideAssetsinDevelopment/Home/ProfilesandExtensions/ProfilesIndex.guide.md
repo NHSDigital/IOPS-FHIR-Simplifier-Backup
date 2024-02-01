@@ -37,6 +37,11 @@
 <td>Defines the UK Core constraints and extensions on the List resource for the minimal set of data to query and retrieve a list of information</td>
 <td>Not done yet</td>
 </tr>
+<td>{{pagelink:Profile-Consent}}</td>
+<td>draft</td>
+<td>Defines the UK Core constraints and extensions on the Consent resource for the minimal set of data to query and retrieve written or verbal agreements concerning authorised or restricted actions relating to healthcare.</td>
+<td>6</td>
+</tr>
 <tr>
 <td>{{pagelink:Profile-Device}}</td>
 <td>draft</td>
@@ -48,6 +53,36 @@
 <td>draft</td>
 <td>Defines the UK Core constraints and extensions on the DocumentReference resource</td>
 <td>NRL, DHCW</td>
+</tr>
+<tr>
+<td>{{pagelink:Profile-EpisodeOfCare}}</td>
+<td>draft</td>
+<td>Defines the UK Core constraints and extensions on the EpisodeOfCare resource for the minimal set of data to query and retrieve episode of care information.</td>
+<td>4</td>
+</tr>
+<tr>
+<td>{{pagelink:Profile-Flag}}</td>
+<td>draft</td>
+<td>Defines the UK Core constraints and extensions on the Flag resource for the minimal set of data to query and retrieve flag information.</td>
+<td>5</td>
+</tr>
+<tr>
+<td>{{pagelink:Profile-ImagingStudy}}</td>
+<td>draft</td>
+<td>Defines the UK Core constraints and extensions on the ImagingStudy resource for the minimal set of data to query and retrieve content of DICOM imaging studies.</td>
+<td>6</td>
+</tr>
+<tr>
+<td>{{pagelink:Profile-MessageHeader}}</td>
+<td>draft</td>
+<td>Defines the UK Core constraints and extensions on the MessageHeader resource for the minimal set of data to be present in a message header.</td>
+<td>4</td>
+</tr>
+<tr>
+<td>{{pagelink:Profile-OperationOutcome}}</td>
+<td>draft</td>
+<td>Defines the UK Core constraints and extensions on the OperationOutcome resource for the minimal set of data to query and retrieve information about the outcome of an attempted system operation.</td>
+<td>4</td>
 </tr>
 
 
@@ -63,6 +98,20 @@
 <td>Defines the UK Core constraints and extensions on the Provenance resource for the minimal set of data to query and retrieve generic provenance information</td>
 <td>Not done yet</td>
 </tr>
+
+<tr>
+<td>{{pagelink:Profile-Questionnaire}}</td>
+<td>draft</td>
+<td>Defines the UK Core constraints and extensions on the Questionnaire resource for the minimal set of data to query and retrieve questionnaire information.</td>
+<td>5</td>
+</tr>
+<tr>
+<td>{{pagelink:Profile-QuestionnaireResponse}}</td>
+<td>draft</td>
+<td>Defines the UK Core constraints and extensions on the QuestionnaireResponse resource for the minimal set of data to query and retrieve a complete or partial list of answers to a set of questions completed when responding to a questionnaire.</td>
+<td>5</td>
+</tr>
+
 <tr>
 <td>{{pagelink:Profile-RequestGroup}}</td>
 <td>draft</td>
@@ -70,6 +119,12 @@
 <td>Interoperable Medicines</td>
 </tr>
 
+<tr>
+<td>{{pagelink:Profile-Task}}</td>
+<td>draft</td>
+<td>Defines the UK Core constraints and extensions on the Task resource for the minimal set of data to query and retrieve task information.</td>
+<td>5</td>
+</tr>
 
 </table>
 
