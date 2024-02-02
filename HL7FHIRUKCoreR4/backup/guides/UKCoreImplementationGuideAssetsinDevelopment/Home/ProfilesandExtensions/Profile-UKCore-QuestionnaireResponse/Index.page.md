@@ -1,32 +1,10 @@
 ---
 topic: Profile-QuestionnaireResponse
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse
+usage: http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
+issue: UKCore-QuestionnaireResponse
 ---
 # StructureDefinition-UKCore-QuestionnaireResponse
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreQuestionnaireResponse'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreQuestionnaireResponse'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -45,54 +23,10 @@ select
   <b>Inpatient Survey Response</b> - An example to illustrate a questionnaire response regarding an in-patient survey.
   <br>{{pagelink:Example-UKCore-QuestionnaireResponse-InpatientSurvey}}
 </div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-QuestionnaireResponse/~issues?level=File">Report Issue for UKCore-QuestionnaireResponse</a>.
-</div>
 </nocheck>
+
+
+<div id="ProfileGuidance">
 
 ### Example Usage Scenarios ###
 
@@ -159,5 +93,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>The response(s) to the question.</td>
 </tr>
 </table>
+</div>
 
-<hr class="thickline">
+---

@@ -1,32 +1,11 @@
 ---
 topic: Profile-AuditEvent
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent
+usage: http://hl7.org/fhir/StructureDefinition/AuditEvent
+issue: UKCore-AuditEvent
 ---
 
 # StructureDefinition-UKCore-AuditEvent
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreAuditEvent'
-select
-	Canonical_URL: url,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreAuditEvent'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}

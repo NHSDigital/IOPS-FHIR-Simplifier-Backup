@@ -7,81 +7,31 @@ issue: UKCore-Questionnaire
 # StructureDefinition-UKCore-Questionnaire
 
 
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreQuestionnaire'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreQuestionnaire'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire'
-```
-</span>
-</div>
+<div id="Examples" class="tabcontent">
+  <h3>Examples</h3>
+  <b>End of Life Survey</b> - An example to illustrate a questionnaire for an end of life plan survey.
+  <br>{{pagelink:Example-UKCore-Questionnaire-EOLPlan}}
+  <br><br>
+  <b>Fitness For Work Survey</b> - An example to illustrate a questionnaire for a fitness for work survey.
+  <br>{{pagelink:Example-UKCore-Questionnaire-FitnessForWork}}
+  <br><br>
+  <b>Inpatient Survey Response</b> - An example to illustrate a questionnaire for an in-patient survey.
+  <br>{{pagelink:Example-UKCore-Questionnaire-InpatientSurvey}}
 
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Questionnaire/~issues?level=File">Report Issue for UKCore-Questionnaire</a>.
+  <h3>See Also - QuestionnaireResponses for these Questionnaires</h3>
+  <b>End of Life Survey</b> - An example to illustrate a questionnaire response regarding an end of life plan survey.
+  <br>{{pagelink:Example-UKCore-QuestionnaireResponse-EOLPlan}}
+  <br><br>
+  <b>Fitness For Work Survey</b> - An example to illustrate a questionnaire response regarding a fitness for work survey.
+  <br>{{pagelink:Example-UKCore-QuestionnaireResponse-FitnessForWork}}
+  <br><br>
+  <b>Inpatient Survey Response</b> - An example to illustrate a questionnaire response regarding an in-patient survey.
+  <br>{{pagelink:Example-UKCore-QuestionnaireResponse-InpatientSurvey}}
 </div>
-<nocheck>
+</nocheck>
 
 <div id="ProfileGuidance">
 

@@ -1,32 +1,10 @@
 ---
 topic: Profile-OperationOutcome
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome
+usage: http://hl7.org/fhir/StructureDefinition/OperationOutcome
+issue: UKCore-OperationOutcome
 ---
 # StructureDefinition-UKCore-OperationOutcome
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreOperationOutcome'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreOperationOutcome'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -36,54 +14,16 @@ select
 <b>DateError</b> - An example to illustrate an error returned due to an error in a date.
 <br>{{pagelink:Example-UKCore-OperationOutcome-DateError}}
 </div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-OperationOutcome/~issues?level=File">Report Issue for UKCore-OperationOutcome</a>.
-</div>
 </nocheck>
+
+<div id="ProfileGuidance">
+
+### Example Usage Scenarios
+
+The following are feasible use cases for the UK Core OperationOutcome profile:
+
+- Query for 
+- Exchange of
 
 <hr class="thickline">
 
@@ -116,5 +56,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>FHIRPath of element(s) related to issue</td>
 </tr>
 </table>
+</div>
 
 ---

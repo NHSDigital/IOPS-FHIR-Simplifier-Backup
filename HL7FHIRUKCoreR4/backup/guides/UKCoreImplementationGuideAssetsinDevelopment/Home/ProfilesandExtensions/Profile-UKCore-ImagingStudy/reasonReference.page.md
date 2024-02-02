@@ -1,10 +1,10 @@
 ## <code>{{page-title}}</code>
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
-* {{pagelink:Profile-Condition}}
-* {{pagelink:Profile-DiagnosticReport}}
-* <a href="https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-DocumentReference?version=current" target="_blank" class="external">Profile UKCore-DocumentReference</a>
+* [Profile UKCore-Condition](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Condition)
+* [Profile UKCore-DiagnosticReport](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-DiagnosticReport)
+* {{pagelink:Profile-DocumentReference}}
 * [Media Resource](https://hl7.org/fhir/R4/Media.html)
-* {{pagelink:Profile-Observation}}
+* [Profile UKCore-Observation](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Observation)
 
 ---

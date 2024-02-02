@@ -1,33 +1,11 @@
 ---
 topic: Profile-Consent
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent
+usage: http://hl7.org/fhir/StructureDefinition/Consent
+issue: UKCore-Consent
 ---
 
 # StructureDefinition-UKCore-Consent
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreConsent'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreConsent'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -37,54 +15,9 @@ select
   <b>For Information Access</b> - An example to illustrate a patient giving consent for information access.<br/>
 {{pagelink:Example-UKCore-Consent-ForInformationAccess}}
 </div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Consent/~issues?level=File">Report Issue for UKCore-Consent</a>.
-</div>
 </nocheck>
+
+<div id="ProfileGuidance">
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Consent profile:
@@ -141,6 +74,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td><code>Consent.source[x]</code></td>
 <td>The source from which this consent is taken</td>
 </tr>
-</table>
+</table></div>
 
-<hr class="thickline">
+---

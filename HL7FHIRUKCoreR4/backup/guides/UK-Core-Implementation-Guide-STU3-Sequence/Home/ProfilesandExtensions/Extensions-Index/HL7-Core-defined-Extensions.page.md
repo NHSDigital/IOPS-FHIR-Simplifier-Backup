@@ -3,7 +3,7 @@ topic: Library-Extensions-HL7
 ---
 ## HL7 Core-defined Extensions
 
-The following <a href="http://hl7.org/fhir/R4/extensibility-registry.html" class="external">HL7 Core-defined Extensions/a> have been agreed as suitable to be included for use with the UK Core {{pagelink:Library-Profiles,text:Profiles}} because the use case for an Extension is fully met by a pre-existing HL7 Core-defined Extension.
+The following <a href="http://hl7.org/fhir/R4/extensibility-registry.html" class="external">HL7 Core-defined Extensions</a> have been agreed as suitable to be included for use with the UK Core {{pagelink:Library-Profiles,text:Profiles}} because the use case for an Extension is fully met by a pre-existing HL7 Core-defined Extension.
 
 Implementers of the UK Core profiles MAY also use other HL7 core-defined extensions to extend the UK Core if required by the local implementation, but are encouraged to engage with the UK Core development process to add guidance into the UK Core for wider use by the UK FHIR Community.
 

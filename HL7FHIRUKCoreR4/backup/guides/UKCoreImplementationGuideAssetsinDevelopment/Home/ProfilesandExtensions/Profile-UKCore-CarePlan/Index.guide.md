@@ -1,32 +1,10 @@
 ---
 topic: Profile-CarePlan
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan
+usage: http://hl7.org/fhir/StructureDefinition/CarePlan
+issue: UKCore-CarePlan
 ---
-
 # StructureDefinition-UKCore-CarePlan
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreCarePlan'
-select
-	Canonical_URL: url,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreCarePlan'
-select
-	Profile_Purpose: purpose
-```
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -37,49 +15,10 @@ select
 {{pagelink:Example-UKCore-CarePlan-WellnessPlan}}
 
 </div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan'
-```
-</span>
-</div>
 </nocheck>
+
+
+<div id="ProfileGuidance">
 
 
 ### Example Usage Scenarios ###
@@ -91,3 +30,7 @@ The following are example usage scenarios for the UK Core CarePlan profile:
 <hr class="thickline">
 
 ## Profile Specific Implementation Guidance: ##
+
+</div>
+
+---

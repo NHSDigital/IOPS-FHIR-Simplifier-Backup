@@ -26,8 +26,8 @@
   filename: Profile-UKCore-Flag
 - name: Profile UKCore-ImagingStudy
   filename: Profile-UKCore-ImagingStudy
-- name: Profile UKCore-MesageHeader
-  filename: Profile-UKCore-MesageHeader
+- name: Profile UKCore-MessageHeader
+  filename: Profile-UKCore-MessageHeader
 - name: Profile UKCore-OperationOutcome
   filename: Profile-UKCore-OperationOutcome
 - name: Profile UKCore-OrganizationAffiliation
