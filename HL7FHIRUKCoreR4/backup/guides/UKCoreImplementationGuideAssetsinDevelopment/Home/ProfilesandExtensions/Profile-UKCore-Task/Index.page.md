@@ -1,86 +1,13 @@
 ---
 topic: Profile-Task
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task
+usage: http://hl7.org/fhir/StructureDefinition/Task
+issue: UKCore-Task
 ---
 # StructureDefinition-UKCore-Task
 
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreTask'
-select
-	Canonical_URL: url,
-  Status: status,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreTask'
-select
-	Profile_Purpose: purpose
-```
-
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task'
-```
-</span>
-</div>
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Task/~issues?level=File">Report Issue for UKCore-Task</a>.
-</div>
-<nocheck>
-
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -89,6 +16,9 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Task/~issue
   {{pagelink:Example-UKCore-Task-Colonoscopy}}
   <br><br>
 </div>
+</nocheck>
+
+<div id="ProfileGuidance">
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core Task profile:
@@ -158,5 +88,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Information used to perform task.</td>
 </tr>
 </table>
+</div>
 
-<hr class="thickline">
+---

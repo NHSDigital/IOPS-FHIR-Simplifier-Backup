@@ -1,34 +1,10 @@
 ---
 topic: Profile-RequestGroup
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup
+usage: http://hl7.org/fhir/StructureDefinition/RequestGroup
+issue: UKCore-RequestGroup
 ---
 # StructureDefinition-UKCore-RequestGroup
-
-
-<div id="transpose">
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreRequestGroup'
-select
-	Canonical_URL: url,
-  Current_Version: version,
-  Last_Updated: date,
-	Description: description
-```
-</div>
-<br>
-
-@```
-from
-	StructureDefinition
-where
-	name = 'UKCoreRequestGroup'
-select
-	Profile_Purpose: purpose
-```
-
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -48,49 +24,10 @@ select
   {{pagelink:Example-UKCore-RequestGroup-Paracetamol}}
   <br><br>
 </div>
-
-<div id="Usage" class="tabcontent">
-  <h3>Usage</h3>
-  This Profile has the following derived profiles:<br>
-<span id="usage">
-@```
-  from
-	StructureDefinition
-select id,baseDefinition,status
-  where baseDefinition = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup'
-  and status = 'active'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Extensions: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup'
-```
-</span>
-<br><br>
-  This Profile is referenced in the following Profiles: <br>
-<span id="usage">
-@```
-from
-	StructureDefinition
-  where type !='Extension' and status = 'active'
- select id,
-	for differential.element
-	select
-	join type {targetProfile}
-	where targetProfile contains 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-RequestGroup'
-```
-</span>
-</div>
 </nocheck>
+
+
+<div id="ProfileGuidance">
 
 ### Example Usage Scenarios ###
 The following are example usage scenarios for the UK Core RequestGroup profile:
@@ -178,5 +115,7 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Sub actions.</td>
 </tr>
 </table>
+
+</div>
 
 ---

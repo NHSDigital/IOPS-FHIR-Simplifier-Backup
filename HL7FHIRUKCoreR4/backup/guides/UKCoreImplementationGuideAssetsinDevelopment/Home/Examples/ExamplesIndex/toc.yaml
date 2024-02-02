@@ -1,27 +1,31 @@
 - name: Index
   filename: Index.guide.md
-- name: Example UKCore-Questionnaire-EOLPlan
-  filename: Example-UKCore-Questionnaire-EOLPlan.page.md
-- name: Example UKCore-Questionnaire-FitnessforWork
-  filename: Example-UKCore-Questionnaire-FitnessforWork.page.md
-- name: Example UKCore-Questionnaire-InpatientSurvey
-  filename: Example-UKCore-Questionnaire-InpatientSurvey.page.md
 - name: Example UKCore-AuditEvent-Query
-  filename: ExampleUKCore-AuditEvent-Query.guide.md
+  filename: Example-UKCore-AuditEvent-Query.guide.md
 - name: Example UKCore-Bundle-BundledAllergyList
-  filename: ExampleUKCore-Bundle-BundledAllergyList.guide.md
+  filename: Example-UKCore-Bundle-BundledAllergyList.guide.md
 - name: Example UKCore-CarePlan-WellnessPlan
-  filename: ExampleUKCore-CarePlan-WellnessPlan.guide.md
+  filename: Example-UKCore-CarePlan-WellnessPlan.guide.md
 - name: Example UKCore-CareTeam-WeightManagementTeam
-  filename: ExampleUKCore-CareTeam-WeightManagementTeam.guide.md
+  filename: Example-UKCore-CareTeam-WeightManagementTeam.guide.md
 - name: Example UKCore-Communication-FirstMMRVaccination
   filename: Example-UKCore-Communication-FirstMMRVaccination.guide.md
+- name: Example UKCore-Consent-ForInformationAccess
+  filename: Example-UKCore-Consent-ForInformationAccess.page.md
 - name: Example UKCore-Device-ColostomyBag
-  filename: ExampleUKCore-Device-ColostomyBag.guide.md
+  filename: Example-UKCore-Device-ColostomyBag.guide.md
+- name: Example UKCore-Device-SoftwareAsAMedicalDevice
+  filename: Example-UKCore-Device-SoftwareAsAMedicalDevice.page.md
+- name: Example UKCore-Device-Sphygmomanometer
+  filename: Example-UKCore-Device-Sphygmomanometer.page.md
 - name: Example UKCore-DocumentReference-CarePlanReportPDF
-  filename: ExampleUKCore-DocumentReference-CarePlanReportPDF.guide.md
-- name: Example UKCore-Provenance-RARecordConsent
-  filename: Example-UKCore-Provenance-RARecordConsent.guide.md
+  filename: Example-UKCore-DocumentReference-CarePlanReportPDF.guide.md
+- name: Example UKCore-EpisodeOfCare-SmokingCessationTherapy
+  filename: Example-UKCore-EpisodeOfCare-SmokingCessationTherapy.page.md
+- name: Example UKCore-Flag-FoodAllergy
+  filename: Example-UKCore-Flag-FoodAllergy.page.md
+- name: Example UKCore-ImagingStudy-CTChestScan
+  filename: Example-UKCore-ImagingStudy-CTChestScan.page.md
 - name: Example UKCore-MedicationAdministration-CiprofloxacinIV
   filename: Example-UKCore-MedicationAdministration-CiprofloxacinIV.page.md
 - name: Example UKCore-MedicationDispense-Amoxicillin
@@ -46,12 +50,18 @@
   filename: Example-UKCore-MedicationRequest-ParacetamolIV.page.md
 - name: Example UKCore-MedicationRequest-ParacetamolOral
   filename: Example-UKCore-MedicationRequest-ParacetamolOral.page.md
-- name: Example UKCore-RequestGroup-Ciprofloxacin
-  filename: Example-UKCore-RequestGroup-Ciprofloxacin.page.md
-- name: Example UKCore-RequestGroup-MultipleAnitibiotics
-  filename: Example-UKCore-RequestGroup-MultipleAnitibiotics.page.md
-- name: Example UKCore-RequestGroup-Paracetamol
-  filename: Example-UKCore-RequestGroup-Paracetamol.page.md
+- name: Example UKCore-MessageHeader-Discharge
+  filename: Example-UKCore-MessageHeader-Discharge.page.md
+- name: Example UKCore-OperationOutcome-DateError
+  filename: Example-UKCore-OperationOutcome-DateError.page.md
+- name: Example UKCore-Provenance-RARecordConsent
+  filename: Example-UKCore-Provenance-RARecordConsent.guide.md
+- name: Example UKCore-Questionnaire-EOLPlan
+  filename: Example-UKCore-Questionnaire-EOLPlan.page.md
+- name: Example UKCore-Questionnaire-FitnessforWork
+  filename: Example-UKCore-Questionnaire-FitnessforWork.page.md
+- name: Example UKCore-Questionnaire-InpatientSurvey
+  filename: Example-UKCore-Questionnaire-InpatientSurvey.page.md
 - name: Example UKCore-QuestionnaireResponse-BabyPatientSurvey
   filename: Example-UKCore-QuestionnaireResponse-BabyPatientSurvey.page.md
 - name: Example UKCore-QuestionnaireResponse-EOLPlan
@@ -60,3 +70,11 @@
   filename: Example-UKCore-QuestionnaireResponse-FitnessForWork.page.md
 - name: Example UKCore-QuestionnaireResponse-InpatientSurvey
   filename: Example-UKCore-QuestionnaireResponse-InpatientSurvey.page.md
+- name: Example UKCore-RequestGroup-Ciprofloxacin
+  filename: Example-UKCore-RequestGroup-Ciprofloxacin.page.md
+- name: Example UKCore-RequestGroup-MultipleAnitibiotics
+  filename: Example-UKCore-RequestGroup-MultipleAnitibiotics.page.md
+- name: Example UKCore-RequestGroup-Paracetamol
+  filename: Example-UKCore-RequestGroup-Paracetamol.page.md
+- name: Example UKCore-Task-Colonoscopy
+  filename: Example-UKCore-Task-Colonoscopy.page.md

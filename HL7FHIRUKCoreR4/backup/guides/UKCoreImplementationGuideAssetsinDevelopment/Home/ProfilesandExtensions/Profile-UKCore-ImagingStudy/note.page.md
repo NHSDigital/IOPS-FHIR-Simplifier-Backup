@@ -2,9 +2,10 @@
 
 The resource being referenced by `ImagingStudy.note.authorReference` SHALL conform to one of the following:
 
-- {{pagelink:Profile-Organization}}
-- {{pagelink:Profile-Patient}}
-- {{pagelink:Profile-Practitioner}}
-- {{pagelink:Profile-RelatedPerson}}
+- [Profile UKCore-Organization](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization)
+- [Profile UKCore-Patient](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Patient)
+- [Profile UKCore-Practitioner](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Practitioner)
+- [Profile UKCore-RelatedPerson](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-RelatedPerson)
+
 
 ---

@@ -18,6 +18,6 @@ Where a UK Core profile exists the resource being referenced SHOULD conform to t
 
 <code>provision.code</code>
 
-This element has a binding to {{pagelink:ValueSet-UKCore-ConsentProvision}}.
+This element has a binding to {{pagelink:ValueSet-UKCore-ConsentException}}.
 
 ---

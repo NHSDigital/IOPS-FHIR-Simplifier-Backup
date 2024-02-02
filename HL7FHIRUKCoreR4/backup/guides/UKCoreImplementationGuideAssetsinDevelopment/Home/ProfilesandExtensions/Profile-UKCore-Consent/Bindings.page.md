@@ -11,7 +11,7 @@ More information about the bindings to UK Core ValueSets can be found below.
 <tr>
 <td>Consent.provision.code</td>
 <td>Preferred</td>
-<td>{{pagelink:ValueSet-UKCore-ConsentProvision}}</td>
+<td>{{pagelink:ValueSet-UKCore-ConsentException}}</td>
 </tr>
 </table>
 
