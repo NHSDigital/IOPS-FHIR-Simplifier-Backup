@@ -1,0 +1,55 @@
+{
+	"resourceType": "PractitionerRole",
+	"id": "PractitionerRole-AnnaLaneKingstonPathology-Example",
+	"practitioner": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/sds-user-id",
+			"value": "9999999998"
+		},
+		"display": "Dr. Anna Lane"
+	},
+	"organization": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RAX01"
+		},
+		"display": "Kingston Hospital NHS Foundation Trust"
+	},
+	"specialty": [
+		{
+			"coding": [
+				{
+					"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+					"code": "820",
+					"display": "General Pathology"
+				}
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "02085467711"
+		},
+    {
+      "system": "email",
+      "value": "pathologyseckingston@nhs.net",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+          "valueString": "reporting"
+        }
+      ]
+    },
+		{
+			"system": "email",
+			"value": "respiratorykingston@nhs.net",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+					"valueString": "reporting"
+				}
+			]
+		}
+	]
+}

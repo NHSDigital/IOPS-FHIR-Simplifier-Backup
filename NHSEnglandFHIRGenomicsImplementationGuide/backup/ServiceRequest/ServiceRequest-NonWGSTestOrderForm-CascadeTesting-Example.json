@@ -1,0 +1,113 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-NonWGSTestOrderForm-CascadeTesting-Example",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest-NonWGSTestOrderForm-FatherOfFayMutlow-Example"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs",
+            "display": "NHS"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "rare-disease-non-wgs",
+          "display": "Rare Disease - Non-WGS"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "R134",
+        "display": "Familial Hypercholesterolaemia"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-FayMutlow-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307806"
+    }
+  },
+  "authoredOn": "2023-10-04T11:00:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-MarySmith-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "473145005",
+          "display": "Possible familial hypercholesterolemia"
+        }
+      ]
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/Observation-GenomicEthnicity-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoPregnancy-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseaseStatus-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransplant-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusion-Example"
+    },
+    {
+      "reference": "Observation/Observation-DutchLipidScore-Example"
+    },
+    {
+      "reference": "Observation/Observation-QueryXanthoma-Example"
+    },
+    {
+      "reference": "Observation/Observation-SimonBroomeCriteria-Example"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms"
+    },
+    {
+      "text": "Father tested positive for FH. Confirmation required if daughter is positive for FH"
+    }
+  ]
+}

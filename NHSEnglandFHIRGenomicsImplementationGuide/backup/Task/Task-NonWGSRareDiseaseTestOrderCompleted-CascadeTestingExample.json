@@ -1,0 +1,59 @@
+{
+	"resourceType": "Task",
+	"id": "Task-NonWGSRareDiseaseTestOrderCompleted-CascadeTesting-Example",
+	"status": "completed",
+	"intent": "order",
+	"priority": "routine",
+	"code": {
+		"coding": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+				"code": "DistributeReport",
+				"display": "Distribute Report"
+			}
+		]
+	},
+	"focus": {
+		"reference": "ServiceRequest/ServiceRequest-SavedTestOrderUpdated-CascadeTesting-Example"
+	},
+	"for": {
+		"reference": "Patient/Patient-FayMutlow-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307806"
+		}
+	},
+	"authoredOn": "2023-10-04T11:00:00Z",
+	"lastModified": "2023-10-06T09:00:00Z",
+	"requester": {
+		"reference": "PractitionerRole/PractitionerRole-MarySmith-Example"
+	},
+	"owner": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RTD"
+		},
+		"display": "THE NEWCASTLE UPON TYNE HOSPITALS NHS FOUNDATION TRUST"
+	},
+	"note": [
+		{
+			"text": "Optional Free Text field to record any additional details"
+		}
+	],
+	"output": [
+		{
+			"type": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1054161000000101",
+						"display": "Genetic report (record artifact)"
+					}
+				]
+			},
+			"valueReference": {
+				"reference": "DiagnosticReport/DiagnosticReport-FayMutlow-Example"
+			}
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-DutchLipidScore-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "872541000000104",
+        "display": "Dutch Lipid Clinic Network diagnostic criteria for familial hypercholesterolaemia score (observable entity)"
+      }
+    ],
+    "text": "Dutch or (Welsh) Lipid score"
+  },
+  "subject": {
+    "reference": "Patient/Patient-FayMutlow-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307806"
+    }
+  },
+  "effectiveDateTime": "2023-08-05",
+  "valueInteger": 7
+}

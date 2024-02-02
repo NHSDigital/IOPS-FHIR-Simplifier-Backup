@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-QueryXanthoma-Example",
+  "status": "final",
+"code": {
+  "coding": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "75594004",
+      "display": "Xanthomatous deposition"
+    }
+  ],
+  "text": "Physical Characteristics = query xanthoma"
+  },
+  "subject": {
+    "reference": "Patient/Patient-FayMutlow-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307806"
+    }
+  },
+  "effectiveDateTime": "2023-08-05"
+}

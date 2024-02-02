@@ -1,0 +1,29 @@
+{
+  "resourceType": "BodyStructure",
+  "id": "BodyStructure-BodySiteLocationLungs-Example",
+  "morphology": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "369755005",
+        "display": "Multiple tumors (qualifier value)"
+      }
+    ]
+  },
+  "location": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "39607008",
+        "display": "Lung structure (body structure)"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient-ZelmaHadjkiss-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307555"
+    }
+  }
+}

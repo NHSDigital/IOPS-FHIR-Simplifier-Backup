@@ -1,0 +1,29 @@
+{
+  "resourceType": "BodyStructure",
+  "id": "BodyStructure-SpecimenBodySiteLocation-Example",
+  "morphology": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "369755005",
+        "display": "Multiple tumors (qualifier value)"
+      }
+    ]
+  },
+  "location": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "76752008",
+        "display": "Breast structure (body structure)"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient-KayBurbridge-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303541"
+    }
+  }
+}

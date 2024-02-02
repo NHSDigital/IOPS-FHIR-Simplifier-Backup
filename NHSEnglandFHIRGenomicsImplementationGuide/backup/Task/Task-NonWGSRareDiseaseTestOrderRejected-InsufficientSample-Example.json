@@ -1,0 +1,52 @@
+{
+    "resourceType": "Task",
+    "id": "Task-NonWGSRareDiseaseTestOrder-InsufficientSample-Example",
+    "status": "rejected",
+    "statusReason": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
+                "code": "SpecimenQualityNotOK",
+                "display": "Specimen Quality Not OK"
+            }
+        ]
+    },
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "RequestSampleAlignment",
+                "display": "Request & Sample Alignment"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderFormUpdated-SolidTumor-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307555"
+        }
+    },
+    "authoredOn": "2023-09-08",
+    "lastModified": "2023-09-09T15:43:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RAX01"
+        },
+        "display": "Kingston Hospital NHS Foundation Trust"
+    },
+    "note": [
+        {
+            "text": "Please provide additional sample of X"
+        }
+    ]
+}

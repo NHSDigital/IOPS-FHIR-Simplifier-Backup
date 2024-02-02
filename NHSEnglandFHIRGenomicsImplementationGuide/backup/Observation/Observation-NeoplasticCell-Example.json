@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-NeoplasticCell-Example",
+  "status": "final",
+  "code": {
+    "text":"Approximate Neoplastic cell % in sample"
+  },
+  "subject": {
+    "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307555"
+    }
+  },
+  "specimen": {
+    "identifier": {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "RA257630"
+    }
+  },
+  "valueQuantity": {
+    "value": 25,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "effectiveDateTime": "2023-09-08T10:00:00Z"
+}

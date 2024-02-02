@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-TumourType-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "14799000",
+        "display": "Neoplasm, metastatic (morphologic abnormality)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-KayBurbridge-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307555"
+    }
+  },
+  "specimen": {
+    "identifier": {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "RA257630"
+    }
+  },
+  "effectiveDateTime": "2023-09-08T10:00:00Z"
+}

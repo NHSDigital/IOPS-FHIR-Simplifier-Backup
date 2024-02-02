@@ -1,0 +1,80 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "DiagnosticReport-FayMutlowGeneticReport-Example",
+  "identifier": [
+    {
+      "system": "https://newcastle-hospitsls.nhs.uk/nwglh/lims",
+      "value": "FHGenomicReport",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "RTD"
+        }
+      }
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-SavedTestOrderUpdated-CascadeTesting-Example"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE",
+          "display": "Genetics"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1054161000000101",
+        "display": "Genetic report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-FayMutlow-Example"
+  },
+  "issued": "2023-10-09T09:45:00Z",
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RTD"
+      }
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-FayMutlowBloodEDTA-Example"
+    }
+  ],
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "398036000",
+          "display": "Familial hypercholesterolemia"
+        }
+      ]
+    }
+  ],
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "language": "en-GB",
+      "url":"https://ytlqh0.axshare.com/?id=swl7sq&p=view_report",
+      "size": 43272,
+      "title": "Genomic Report for Fay Mutlow",
+      "creation": "2023-10-22"
+    }
+  ]
+}

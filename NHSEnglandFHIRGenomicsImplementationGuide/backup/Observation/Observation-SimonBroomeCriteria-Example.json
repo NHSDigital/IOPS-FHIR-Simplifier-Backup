@@ -1,0 +1,24 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-SimonBroomeCriteria-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "149611000000100",
+        "display": "Simon Broome diagnostic criteria for familial hypercholesterolaemia result"
+      }
+    ],
+    "text": "Simon Broome Criteria"
+  },
+  "subject": {
+    "reference": "Patient/Patient-FayMutlow-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307806"
+    }
+  },
+  "effectiveDateTime": "2023-08-05",
+ "valueString": "Suspected FH"
+}

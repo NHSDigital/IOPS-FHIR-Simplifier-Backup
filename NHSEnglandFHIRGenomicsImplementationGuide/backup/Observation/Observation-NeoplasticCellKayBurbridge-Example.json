@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-NeoplasticCellKayBurbridge-Example",
+  "status": "final",
+  "code": {
+    "text": "Approximate Neoplastic cell % in sample"
+  },
+  "subject": {
+    "reference": "Patient/Patient-KayBurbridge-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303541"
+    }
+  },
+  "specimen": {
+    "identifier": {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "699F01231423"
+    }
+  },
+  "valueQuantity": {
+    "value": 25,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "effectiveDateTime": "2023-11-01T11:00:00Z"
+}

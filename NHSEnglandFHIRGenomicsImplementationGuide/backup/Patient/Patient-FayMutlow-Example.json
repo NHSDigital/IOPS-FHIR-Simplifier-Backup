@@ -1,0 +1,90 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-FayMutlow-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+      "valueCode": "F"
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+            "code": "A",
+            "display": "White - British"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307806",
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                "version": "2.2.0",
+                "code": "01",
+                "display": "Number present and verified"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+      "value": "RR12437",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "RGD12"
+        }
+      }
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Fay"
+      ],
+      "family": "Mutlow"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1990-06-01",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "line": [
+        "Union Mills",
+        "9 Dewsbury Rd",
+        "Leeds"
+      ],
+      "postalCode": "LSD11 5DD"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+        "value": "G9999999"
+      },
+      "display": "Dr. Test GP"
+    },
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/ODS-code",
+        "value": "B86012"
+      },
+      "display": "LEEDS CITY MEDICAL PRACTICE"
+    }
+  ]
+}
