@@ -1,0 +1,34 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-Necrosis-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "405921002",
+        "display": "Percentage of neoplasm involved by necrosis (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307555"
+    }
+  },
+  "specimen": {
+    "identifier": {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "RA257630"
+    }
+  },
+  "valueQuantity": {
+    "value": 5,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "effectiveDateTime": "2023-09-08"
+}

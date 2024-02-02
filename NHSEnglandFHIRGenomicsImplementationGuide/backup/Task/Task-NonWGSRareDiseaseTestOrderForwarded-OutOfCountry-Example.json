@@ -1,0 +1,49 @@
+{
+    "resourceType": "Task",
+    "id": "Task-NonWGSRareDiseaseTestOrderForwarded-OutOfCountry-Example",
+    "status": "in-progress",
+    "businessStatus": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+                "code": "RemoteProcessingRequired",
+                "display": "Remote Processing Required"
+            }
+        ]
+    },
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "ProcessGenomicTestRequest",
+                "display": "Process Genomic Test Request"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest-NonWGSTestOrderForm-OutOfCountry-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-KayBurbridge-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "8449303541"
+        }
+    },
+    "authoredOn": "2023-11-04T15:43:00Z",
+    "lastModified": "2023-11-04T15:43:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-HazelSmithOncology-Example"
+    },
+    "owner": {
+        
+        "display": "Genomic Health- U.S.A"
+    },
+    "note": [
+        {
+            "text": "Optional Free Text field to record any additional details"
+        }
+    ]
+}

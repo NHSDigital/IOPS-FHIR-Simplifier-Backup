@@ -1,0 +1,567 @@
+{
+  "resourceType": "Bundle",
+  "id": "Bundle-NonWGSTestOrderForm-CancerSolidTumor-Example",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "PractitionerRole-HazelSmithKingstonPathology-Example",
+        "practitioner": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "9999999998"
+          },
+          "display": "Dr. Hazel Smith"
+        },
+        "organization": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RAX01"
+          },
+          "display": "Kingston Hospital NHS Foundation Trust"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+                "code": "820",
+                "display": "General Pathology"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "02085467711"
+          },
+          {
+            "system": "email",
+            "value": "Hazel.smith14@nhs.net"
+          },
+          {
+            "system": "email",
+            "value": "pathologyseckingston@nhs.net",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+                "valueString": "reporting"
+              }
+            ]
+          },
+          {
+            "system": "email",
+            "value": "respiratorykingston@nhs.net",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+                "valueString": "reporting"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/PractitionerRole/PractitionerRole-JamesTaylorKingstonPathology-Example",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "PractitionerRole-JamesTaylorKingstonPathology-Example",
+        "practitioner": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "9999999998"
+          },
+          "display": "Dr. James Taylor"
+        },
+        "organization": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RAX01"
+          },
+          "display": "Kingston Hospital NHS Foundation Trust"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+                "code": "820",
+                "display": "General Pathology"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "02085467711"
+          },
+          {
+            "system": "email",
+            "value": "pathologyseckingston@nhs.net",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+                "valueString": "reporting"
+              }
+            ]
+          },
+          {
+            "system": "email",
+            "value": "respiratorykingston@nhs.net",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+                "valueString": "reporting"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/PractitionerRole/PractitionerRole-AnnaLaneKingstonPathology-Example",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "PractitionerRole-AnnaLaneKingstonPathology-Example",
+        "practitioner": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "9999999998"
+          },
+          "display": "Dr. Anna Lane"
+        },
+        "organization": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RAX01"
+          },
+          "display": "Kingston Hospital NHS Foundation Trust"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+                "code": "820",
+                "display": "General Pathology"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "02085467711"
+          },
+          {
+            "system": "email",
+            "value": "pathologyseckingston@nhs.net",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+                "valueString": "reporting"
+              }
+            ]
+          },
+          {
+            "system": "email",
+            "value": "respiratorykingston@nhs.net",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+                "valueString": "reporting"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Patient/Patient-ZelmaHadjkiss-Example",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "Patient-ZelmaHadjkiss-Example",
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+            "valueCode": "F"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+                  "code": "A",
+                  "display": "White - British"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307555",
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                      "version": "2.2.0",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+            "value": "RWT17335",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RAX01"
+              }
+            }
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Zelma"
+            ],
+            "family": "Hadjkiss"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2011-03-19",
+        "address": [
+          {
+            "line": [
+              "2 Barclay Close",
+              "Fetcham",
+              "Leatherhead",
+              "Surrey"
+            ],
+            "postalCode": "KT22 9SY"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G9999999"
+            },
+            "display": "Dr. Aero Smith"
+          },
+          {
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/ODS-code",
+              "value": "AP123"
+            },
+            "display": "anywhere place"
+          }
+        ],
+        "link": [
+          {
+            "other": {
+              "reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307555"
+            },
+            "type": "seealso"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|9449307555"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/Observation-MultipleTumors-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-MultipleTumors-Example",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "128462008",
+              "display": "Metastatic malignant neoplasm (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307555"
+          }
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://fhir.add.nhs.uk/Id/specimenId",
+            "value": "RA257630"
+          }
+        },
+        "valueQuantity": {
+          "value": 25,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "369755005",
+                  "display": "Multiple tumors (qualifier value)"
+                }
+              ]
+            },
+            "valueBoolean": true
+          }
+        ],
+        "effectiveDateTime": "2023-09-08"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/Observation-Necrosis-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-Necrosis-Example",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "6574001",
+              "display": "Necrosis (morphologic abnormality)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307555"
+          }
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://fhir.add.nhs.uk/Id/specimenId",
+            "value": "RA257630"
+          }
+        },
+        "valueQuantity": {
+          "value": 5,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "interpretation": [
+          {
+            "text": "Cellularity",
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "effectiveDateTime": "2023-09-08"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/Condition-LungTumor-Example",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "Condition-LungTumor-Example",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "recurrence",
+              "display": "Recurrence"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "provisional",
+              "display": "Provisional"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363358000",
+              "display": "Malignant tumour of lung"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "944930555"
+          }
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ServiceRequest/ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example",
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+                  "code": "nhs",
+                  "display": "NHS"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
+            "valueReference": {
+              "reference": "PractitionerRole/PractitionerRole-AnnaLaneKingstonPathology-Example"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
+            "valueReference": {
+              "reference": "PractitionerRole/PractitionerRole-JamesTaylor-Example"
+            }
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+                "code": "cancer-non-wgs",
+                "display": "Cancer - Non-WGS"
+              }
+            ]
+          }
+        ],
+        "priority": "routine",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+              "code": "M119.5",
+              "display": "Multi Target NGS Panel Small"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-PatrickSammy-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307555"
+          }
+        },
+        "authoredOn": "2023-09-08",
+        "requester": {
+          "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "335741000000100",
+                "display": "Recurrence of tumour"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "RJZ"
+            },
+            "display": "KING'S COLLEGE HOSPITAL NHS FOUNDATION TRUST"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "Observation/Observation-MultipleTumors-Example"
+          },
+          {
+            "reference": "Observation/Observation-MultipleTumors-Example"
+          },
+          {
+            "reference": "Condition/Condition-LungTumor-Example"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/Specimen-CancerSolidTumor-Example"
+          }
+        ],
+        "note": [
+          {
+            "text": "Free text for diagnosis/reason for referral, transplant, life status at time of request details/ e.g. malignant tumour - molecular assessment will aid management"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      }
+    }
+  ]
+}

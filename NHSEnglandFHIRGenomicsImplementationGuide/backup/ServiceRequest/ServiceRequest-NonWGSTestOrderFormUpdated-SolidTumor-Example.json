@@ -1,0 +1,110 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-NonWGSTestOrderFormUpdated-SolidTumor-Example",
+    "meta": {
+      "versionId": "3",
+      "lastUpdated": "2023-08-08T15:43:00Z"
+    },
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs",
+            "display": "NHS"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
+      "valueReference": {
+        "reference": "PractitionerRole/PractitionerRole-AnnaLaneKingstonPathology-Example"
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "cancer-non-wgs",
+          "display": "Cancer - Non-WGS"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "M119.5",
+        "display": "Multi Target NGS Panel Small"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PatrickSammy-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307555"
+    }
+  },
+  "authoredOn": "2023-09-08",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "335741000000100",
+          "display": "Recurrence of tumour"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RJZ"
+      },
+      "display": "KING'S COLLEGE HOSPITAL NHS FOUNDATION TRUST"
+    }
+  ],
+  "supportingInfo": [
+   
+    {
+      "reference": "Observation/Observation-Cellularity-Example"
+    },
+    {
+      "reference": "Observation/Observation-TumorType-Example"
+    },
+    {
+      "reference": "Observation/Observation-Necrosis-Example"
+    },
+    {
+      "reference": "Observation/Observation-NeoplasticCell-Example"
+    },
+    {
+      "reference": "Condition/Condition-LungTumor-Example"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-SolidTumor-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "Additional portion of Sample X was provided."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+	"resourceType": "PractitionerRole",
+	"id": "PractitionerRole-LoisLane-Example",
+	"practitioner": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/sds-user-id",
+			"value": "9999999998"
+		},
+		"display": "Phletobomist-Lois Lane"
+	},
+	"organization": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RTD"
+		},
+		"display": "THE NEWCASTLE UPON TYNE HOSPITALS NHS FOUNDATION TRUST"
+	},
+	"specialty": [
+		{
+			"coding": [
+				{
+					"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+					"code": "823",
+					"display": "Haematology"
+				}
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "0191241 8787 /8775 / 8754"
+		},
+		{
+			"system": "email",
+			"value": "NUTH.DNA@nhs.net"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-Cellularity-Example",
+  "status": "final",
+  "code": {
+    "text":"Cellularity"
+  },
+  "subject": {
+    "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307555"
+    }
+  },
+  "specimen": {
+    "identifier": {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "RA257630"
+    }
+  },
+ "interpretation": [
+  {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code": "H",
+        "display": "High"
+      }
+    ]
+  }
+],
+  "effectiveDateTime": "2023-09-08T10:00:00Z"
+}

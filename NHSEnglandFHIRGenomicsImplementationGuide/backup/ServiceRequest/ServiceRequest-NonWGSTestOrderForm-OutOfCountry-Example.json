@@ -1,0 +1,106 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-NonWGSTestOrderForm-OutOfCountry-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs",
+            "display": "NHS"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
+      "valueReference": {
+        "reference": "PractitionerRole/PractitionerRole-AnnaLane-Example"
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "cancer-non-wgs",
+          "display": "Cancer - Non-WGS"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "M3.2",
+        "display": "Breast Cancer (Oncotype DX)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-KayBurbridge-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303541"
+    }
+  },
+  "authoredOn": "2023-11-01T11:00:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-HazelSmithOncology-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "103693007",
+          "display": "Diagnostic procedure"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RLU"
+      },
+      "display": "BIRMINGHAM WOMEN'S NHS FOUNDATION TRUST"
+    }
+  ],
+  "supportingInfo": [
+
+    {
+      "reference": "Observation/Observation-CellularityKayBurbridge-Example"
+    },
+    {
+      "reference": "Observation/Observation-TumorTypeKayKayBurbridge-Example"
+    },
+    {
+      "reference": "Observation/Observation-NecrosisKayBurbridge-Example"
+    },
+    {
+      "reference": "Observation/Observation-NeoplasticCellKayBurbridge-Example"
+    },
+    {
+      "reference": "Condition/Condition-BreastCancer-Example"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-TissueResection-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "Free text for diagnosis/reason for referral, transplant, life status at time of request details/ e.g. e.g. ER positive, HER2 negative. lymph node negative, early breast cancer. Use exisiting tissue sample sent to lab"
+    }
+  ]
+}
