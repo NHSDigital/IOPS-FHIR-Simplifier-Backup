@@ -39,11 +39,11 @@ The following are example usage scenarios for the UK Core Practitioner profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-<h3>Minimum Viable Content</h3>
+### Mandatory and Must Support Data Elements
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
@@ -52,14 +52,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td><code>Practitioner.identifier</code></td>
 <td>An identifier that applies to this person in this role.
 </td>
-</tr>
-<tr>
-<td><code>Practitioner.identifier.system</code></td>
-<td>The namespace for the identifier value</td>
-</tr>
-<tr>
-<td><code>Practitioner.identifier.value</code></td>
-<td>The value that is unique</td>
 </tr>
 <tr>
 <td><code>Practitioner.name</code></td>
@@ -72,14 +64,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <tr>
 <td><code>Practitioner.telecom</code></td>
 <td>A contact detail for the practitioner (that apply to all roles)</td>
-</tr>
-<tr>
-<td><code>Practitioner.telecom.system</code></td>
-<td>Telecommunications form for contact point</td>
-</tr>
-<tr>
-<td><code>Practitioner.telecom.value</code></td>
-<td>The actual contact point details</td>
 </tr>
 </table>
 </div>

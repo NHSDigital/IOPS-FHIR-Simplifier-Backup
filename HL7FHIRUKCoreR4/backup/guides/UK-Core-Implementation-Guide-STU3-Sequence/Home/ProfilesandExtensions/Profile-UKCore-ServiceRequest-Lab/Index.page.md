@@ -29,22 +29,38 @@ The following are example usage scenarios for the UK Core ServiceRequest-Lab pro
 
 ## Profile Specific Implementation Guidance: ##
 
-This is a derived profile of {{pagelink:Profile-ServiceRequest,text:UKCore-ServiceRequest}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
+### Mandatory and Must Support Data Elements
 
-### Minimum Viable Content
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-The minimum viable content that all provider and consumer systems SHALL support are the elements within the corresponding {{pagelink:Profile-ServiceRequest,text:UKCore-ServiceRequest}} table, along with the following.
-
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
 </tr>
 <tr>
-<td><code>ServiceRequest.reasonReference</code></td>
-<td>Explanation / Justification for for why this service is being requested.</td>
+<td><code>ServiceRequest.status</code></td>
+<td>The status of the order.</td>
+</tr>
+<tr>
+<td><code>ServiceRequest.intent</code></td>
+<td>Whether the request is a proposal, plan, an original order or a reflex order.</td>
+</tr>
+<tr>
+<td><code>ServiceRequest.subject</code></td>
+<td>Individual or Entity the service is ordered for.</td>
+</tr>
+<tr>
+<td><code>ServiceRequest.authoredOn</code></td>
+<td>Date request signed.</td>
+</tr>
+<tr>
+<td><code>ServiceRequest.requester</code></td>
+<td>Who/what is requesting service.</td>
 </tr>
 </table>
 </div>
+
+---
 
 ---

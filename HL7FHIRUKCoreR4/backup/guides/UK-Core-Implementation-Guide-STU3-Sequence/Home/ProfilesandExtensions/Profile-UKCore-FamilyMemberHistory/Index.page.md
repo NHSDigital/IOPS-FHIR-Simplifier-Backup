@@ -34,12 +34,11 @@ The following are example usage scenarios for the UK Core FamilyMemberHistory pr
 
 ## Profile Specific Implementation Guidance: ##
 
+### Mandatory and Must Support Data Elements
 
-### Minimum Viable Content
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
-
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>

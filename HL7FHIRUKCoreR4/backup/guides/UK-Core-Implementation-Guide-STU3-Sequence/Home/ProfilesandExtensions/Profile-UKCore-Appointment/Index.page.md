@@ -35,11 +35,11 @@ The following are example usage scenarios for the UK Core Appointment profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-<h3>Minimum Viable Content</h3>
+### Mandatory and Must Support Data Elements
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
@@ -77,16 +77,8 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>The service request this appointment is allocated to assess</td>
 </tr>
 <tr>
-<td><code>Appointment.basedOn.identifier</code></td>
-<td>Logical reference, when literal reference is not known</td>
-</tr>
-<tr>
 <td><code>Appointment.participant</code></td>
 <td>List of participants involved in the appointment.</td>
-</tr>
-<tr>
-<td><code>Appointment.participant.actor</code></td>
-<td>A Person, Location, HealthcareService, or Device that is participating in the appointment.</td>
 </tr>
 </table>
 </div>

@@ -47,11 +47,11 @@ Services that should consider using the  UK Core DiagnosticReport profile are:
 
 ## Profile Specific Implementation Guidance: ##
 
-### Minimum Viable Content
+### Mandatory and Must Support Data Elements
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
@@ -78,7 +78,7 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td>Health care event when test ordered.</td>
 </tr>
 <tr>
-<td><code>DiagnosticReport.effective[x]</code></td>
+<td><code>DiagnosticReport.issued</code></td>
 <td>Clinically relevant time/time-period for report.</td>
 </tr>
 <tr>

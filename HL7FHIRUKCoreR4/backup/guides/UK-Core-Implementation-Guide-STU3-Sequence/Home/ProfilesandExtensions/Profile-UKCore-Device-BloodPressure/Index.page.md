@@ -41,11 +41,12 @@ The following are example usage scenarios for the UK Core Device profile:
 
 This is a derived profile of [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current) and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
 
-<h3>Minimum Viable Content</h3>
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+### Mandatory and Must Support Data Elements
 
-<table class="assets" title="Minimum Viable Content list">
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
+
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
