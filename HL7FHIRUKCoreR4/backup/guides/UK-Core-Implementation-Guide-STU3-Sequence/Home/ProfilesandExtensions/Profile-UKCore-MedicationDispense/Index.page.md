@@ -29,11 +29,11 @@ The following are example usage scenarios for the UK Core MedicationDispense pro
 
 ## Profile Specific Implementation Guidance: ##
 
-<h3> Minimum Viable Content</h3>
+### Mandatory and Must Support Data Elements
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
@@ -57,10 +57,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <tr>
 <td><code>MedicationDispense.performer</code></td>
 <td>Who or what performed the dispensing event.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.performer.actor</code></td>
-<td>Individual who was performing.</td><!--added-->
 </tr>
 <tr>
 <td><code>MedicationDispense.authorizingPrescription</code></td>

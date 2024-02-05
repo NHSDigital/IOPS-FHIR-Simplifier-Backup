@@ -37,12 +37,11 @@ issue: UKCore-Organization
 
 ## Profile Specific Implementation Guidance: ##
 
+### Mandatory and Must Support Data Elements
 
-<h3>Minimum Viable Content</h3>
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
-
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
@@ -50,14 +49,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <tr>
 <td><code>Organization.identifier</code></td>
 <td>Identifies this organization across multiple systems</td>
-</tr>
-<tr>
-<td><code>Organization.identifier.system</code></td>
-<td>a URL that describes a set values that are unique.</td>
-</tr>
-<tr>
-<td><code>Organization.identifier.value</code></td>
-<td>The value that is unique</td>
 </tr>
 <tr>
 <td><code>Organization.active</code></td>

@@ -29,12 +29,11 @@ The following are example usage scenarios for the UK Core Slot profile:
 
 ## Profile Specific Implementation Guidance: ##
 
+### Mandatory and Must Support Data Elements
 
-<h3>Minimum Viable Content</h3>
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
-
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
@@ -43,15 +42,23 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td><code>Slot.specialty</code></td>
 <td>The specialty of a practitioner that would be required to perform the service requested in this appointment.</td>
 </tr>
+<tr>
 <td><code>Slot.appointmentType</code></td>
 <td>The style of appointment or patient that may be booked in the slot.</td>
 </tr>
+<tr>
+<td><code>Slot.schedule</code></td>
+<td>A reference to a Schedule resource.</td>
+</tr>
+<tr>
 <td><code>Slot.status</code></td>
 <td>The status of the slot, e.g free, busy, etc.</td>
 </tr>
+<tr>
 <td><code>Slot.start</code></td>
 <td>Date/Time that the slot is to begin.</td>
 </tr>
+<tr>
 <td><code>Slot.end</code></td>
 <td>Date/Time that the slot is to conclude.</td>
 </tr>

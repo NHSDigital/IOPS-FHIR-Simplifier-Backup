@@ -30,11 +30,11 @@ The following are example usage scenarios for the UK Core PractitionerRole profi
 
 ## Profile Specific Implementation Guidance: ##
 
-<h3>Minimum Viable Content</h3>
+### Mandatory and Must Support Data Elements
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
@@ -66,14 +66,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <tr>
 <td><code>PractitionerRole.telecom</code></td>
 <td>Contact details that are specific to the role/location/service</td>
-</tr>
-<tr>
-<td><code>PractitionerRole.telecom.system</code></td>
-<td>Telecommunications form for contact point</td>
-</tr>
-<tr>
-<td><code>PractitionerRole.telecom.value</code></td>
-<td>The actual contact point details</td>
 </tr>
 </table>
 </div>

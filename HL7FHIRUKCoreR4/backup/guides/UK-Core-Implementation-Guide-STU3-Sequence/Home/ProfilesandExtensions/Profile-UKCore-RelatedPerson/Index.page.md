@@ -28,12 +28,11 @@ The following are example usage scenarios for the UK Core RelatedPerson profile:
 
 ## Profile Specific Implementation Guidance: ##
 
+### Mandatory and Must Support Data Elements
 
-<h3>Minimum Viable Content</h3>
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
-
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
@@ -61,18 +60,6 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <tr>
 <td><code>RelatedPerson.address</code></td>
 <td>Address where the related person can be contacted or visited.</td>
-</tr>
-<tr>
-<td><code>RelatedPerson.address.line</code></td>
-<td>Street name, number, direction & P.O. Box etc.</td>
-</tr>
-<tr>
-<td><code>RelatedPerson.address.city</code></td>
-<td>Name of city, town etc.</td>
-</tr>
-<tr>
-<td><code>RelatedPerson.address.postalCode</code></td>
-<td>Postal code for area.</td>
 </tr>
 </table>
 </div>
