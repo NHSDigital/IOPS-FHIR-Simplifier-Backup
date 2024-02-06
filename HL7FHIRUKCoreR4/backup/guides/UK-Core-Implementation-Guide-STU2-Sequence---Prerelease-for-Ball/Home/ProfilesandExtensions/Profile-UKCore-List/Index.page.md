@@ -89,14 +89,18 @@ The following are example usage scenarios for the UK Core List profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-<h3>Minimum Viable Content</h3>
+### Mandatory and Must Support Data Elements
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport-25267}}.
 
 <table class="assets">
 <tr>
 <th width="30%">Element</th>
 <th width="70%">Reason</th>
+</tr>
+<tr>
+<td><code>List.mode</code></td>
+<td>How this list was prepared.</td>
 </tr>
 <tr>
 <td><code>List.status</code></td>

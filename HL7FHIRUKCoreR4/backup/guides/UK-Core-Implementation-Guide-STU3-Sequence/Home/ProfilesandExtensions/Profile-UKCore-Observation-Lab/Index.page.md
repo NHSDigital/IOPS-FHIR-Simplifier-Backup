@@ -35,9 +35,6 @@ The Observation-Lab profile is for individual laboratory tests (Observation-Lab)
 
 ## Profile Specific Implementation Guidance: ##
 
-This is a derived profile of {{pagelink:Profile-Observation,text:UKCore-Observation}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
-
-
 ### Mandatory and Must Support Data Elements
 
 The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
@@ -78,20 +75,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <tr>
 <td><code>Observation.component</code></td>
 <td>Component / sub results.</td>
-</tr>
-</table>
-</div>
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code><s>Observation.value[x]</s></code></td>
-<td>Unlike the Observation profile, this derived profile it is not expected to use the <code>Observation.value[x]</code> element.</td>
-</tr>
-<tr>
-<td><code>Observation.hasMember</code></td>
-<td>Related resource that belongs to the Observation group</td>
 </tr>
 </table>
 </div>

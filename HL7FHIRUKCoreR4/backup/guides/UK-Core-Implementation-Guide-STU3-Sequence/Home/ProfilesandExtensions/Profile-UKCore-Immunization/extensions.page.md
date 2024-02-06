@@ -27,4 +27,6 @@ This relates to the vaccine that was administered (procedure) and SHOULD be a SN
 </tr>
 </table>
 
+{{page:Home/ProfilesandExtensions/ProfileExtensionsTemplate.page.md}}
+
 ---

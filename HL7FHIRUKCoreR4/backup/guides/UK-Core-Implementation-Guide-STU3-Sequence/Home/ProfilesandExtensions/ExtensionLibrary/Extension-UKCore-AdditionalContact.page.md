@@ -4,7 +4,6 @@ issue: Extension-UKCore-AdditionalContact
 ---
 ## StructureDefinition Extension-UKCore-AdditionalContact
 
-
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-ServiceRequest,text:ServiceRequest}}</td>

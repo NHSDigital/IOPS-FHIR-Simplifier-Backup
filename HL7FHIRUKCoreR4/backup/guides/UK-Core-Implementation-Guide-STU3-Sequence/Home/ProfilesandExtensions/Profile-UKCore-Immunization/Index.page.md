@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization
 usage: http://hl7.org/fhir/StructureDefinition/Immunization
 issue: UKCore-Immunization
 ---
-# StructureDefinition-UKCore-Immunization
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -77,6 +77,10 @@ The following elements are identified as MustSupport, and it is expected that co
 <td>How much of the vaccine was administered</td>
 </tr>
 </table>
+
+
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+
 </div>
 
 ---

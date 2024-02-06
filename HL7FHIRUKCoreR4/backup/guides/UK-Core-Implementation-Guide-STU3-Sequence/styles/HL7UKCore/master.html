@@ -791,6 +791,8 @@
                         var profileName =  $(this)[0].innerText;
                         if (ukCoreProfiles.indexOf(profileName) > -1) {
                             var swapUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + profileName;
+                            let exampleVersion = "?" + url.split("?")[1];
+                            swapUrl = swapUrl + exampleVersion;
                             $(this).attr("href", swapUrl);
                         } else if (draftProfiles.indexOf(profileName) > -1) {
                             var swapUrl = "https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-" + profileName;

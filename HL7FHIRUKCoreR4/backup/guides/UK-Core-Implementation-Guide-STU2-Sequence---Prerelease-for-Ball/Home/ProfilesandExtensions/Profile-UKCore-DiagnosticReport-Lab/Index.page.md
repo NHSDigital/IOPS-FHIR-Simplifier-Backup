@@ -90,8 +90,6 @@ Services that should consider using the  UK Core DiagnosticReport profile are:
 
 ## Profile Specific Implementation Guidance: ##
 
-This is a derived profile of {{pagelink:Profile-DiagnosticReport-54417}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
-<br><br>
 The DiagnosticReport-Lab profile is expected to reference either:
 - a set of laboratory observations (Observation-Lab) that are grouped under one observation (Observation-LabGroup), for example a urea and electrolyte test that contains many sub tests,
 - a single laboratory observation (Observation-Lab) that does not form part of a group of tests, for example Serum ferritin level,
@@ -99,20 +97,43 @@ The DiagnosticReport-Lab profile is expected to reference either:
 <br><br>
 {{render: Derived-Profiles-Lab-Example }}{: .img-responsive }
 
+---
 
-### Minimum Viable Content
+### Mandatory and Must Support Data Elements
 
-The minimum viable content that all provider and consumer systems SHALL support are the elements within the corresponding {{pagelink:Profile-DiagnosticReport-54417}} table, along with the following.
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport-25267}}.
 
-<table class="assets">
+<table class="assets" title="MustSupport element list">
 <tr>
-<th width="30%">Element</th>
-<th width="70%">Reason</th>
+<th class="width30">Element</th>
+<th class="width70">Reason</th>
 </tr>
 <tr>
-<td><code>DiagnosticReport.performer</code></td>
-<td>Responsible diagnostic service.</td>
+<td><code>DiagnosticReport.status</code></td>
+<td>The status of the diagnostic report.
+</td>
+</tr>
+<tr>
+<td><code>DiagnosticReport.category</code></td>
+<td>A code that classifies the clinical discipline, department or diagnostic service that created the report.</td>
+</tr>
+<tr>
+<td><code>DiagnosticReport.code</code></td>
+<td>A code or name that describes this diagnostic report.</td>
+</tr>
+<tr>
+<td><code>DiagnosticReport.subject</code></td>
+<td>The subject of the report - a patient</td>
+</tr>
+<tr>
+<td><code>DiagnosticReport.issued</code></td>
+<td>Clinically relevant time/time-period for report.</td>
+</tr>
+<tr>
+<td><code>DiagnosticReport.result</code></td>
+<td>Observations that are part of this diagnostic report.</td>
 </tr>
 </table>
+</div>
 
 ---

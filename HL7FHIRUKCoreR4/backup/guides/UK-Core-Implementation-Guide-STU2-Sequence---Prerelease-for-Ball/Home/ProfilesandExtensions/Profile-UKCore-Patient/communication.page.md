@@ -8,7 +8,7 @@ The binding on <code>Patient.communication.language</code> was changed, from <co
 
 One or more instances of this element can be used to list the languages the patient is able to communicate in.  
 
-The <code>Patient.communication.language</code> element has a <i>Required</i> binding to the Core-defined ValueSet <a href="https://hl7.org/fhir/R4/valueset-languages.html" class="external">Common Languages</a> which is derived form <code>urn:ietf:bcp:47</code>
+The <code>Patient.communication.language</code> element has a <i>Required</i> binding to the Core-defined ValueSet <a href="https://hl7.org/fhir/R4/valueset-all-languages.html" class="external">All Languages</a> which is derived from <code>urn:ietf:bcp:47</code>.
 
 #### An example of a patient with a single language
 
@@ -72,7 +72,7 @@ The <code>Patient.communication.language</code> element has a <i>Required</i> bi
 </div>
 </div>
 
-#### An example of a patient with the British Sign Language and Makaton
+#### An example of a patient with British Sign Language and Makaton
 
 <div>
 <div class="tab">
@@ -102,6 +102,9 @@ The <code>Patient.communication.language</code> element has a <i>Required</i> bi
 {{json:UKCore-Patient-Sn-Makaton-Example}}
 </div>
 </div>
+
+<br>
+NOTE: Makaton is a communication tool with speech, signs, and symbols to enable people with disabilities or learning disabilities to communicate. As Such, it is not recognised as a language in <code>urn:ietf:bcp:47</code>, and should be populated as a CodeableConcept.coding element alongside the <code>urn:ietf:bcp:47</code> parent language from which its country specific adapation is derived.
 
 ---
 
