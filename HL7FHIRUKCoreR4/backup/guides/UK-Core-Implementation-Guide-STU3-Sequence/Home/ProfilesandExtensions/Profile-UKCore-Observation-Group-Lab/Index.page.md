@@ -79,22 +79,12 @@ The following elements are identified as MustSupport, and it is expected that co
 <td>Actual result.</td>
 </tr>
 <tr>
-<td><code>Observation.component</code></td>
-<td>Component / sub results.</td>
-</tr>
-</table>
-</div>
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code><s>Observation.value[x]</s></code></td>
-<td>Unlike the Observation profile, this derived profile it is not expected to use the <code>Observation.value[x]</code> element.</td>
-</tr>
-<tr>
 <td><code>Observation.hasMember</code></td>
 <td>Related resource that belongs to the Observation group</td>
+</tr>
+<tr>
+<td><code>Observation.component</code></td>
+<td>Component / sub results.</td>
 </tr>
 </table>
 </div>

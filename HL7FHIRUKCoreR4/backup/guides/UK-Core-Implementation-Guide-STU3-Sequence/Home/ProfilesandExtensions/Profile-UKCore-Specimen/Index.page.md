@@ -63,7 +63,8 @@ The following elements are identified as MustSupport, and it is expected that co
 <tr>
 <td><code>Specimen.subject</code></td>
 <td>Where the specimen came from.</td>
-</tr><tr>
+</tr>
+<tr>
 <td><code>Specimen.receivedTime</code></td>
 <td>The time when specimen was received for processing.</td>
 </tr>

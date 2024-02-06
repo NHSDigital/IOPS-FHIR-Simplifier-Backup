@@ -119,9 +119,9 @@ Where migrated data is not coded, uses retired / invalidated codes, or coded wit
 
 ---
 
-<h3>Minimum Viable Content </h3>
+### Mandatory and Must Support Data Elements
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport-25267}}.
 
 <table class="assets">
 <tr>

@@ -35,8 +35,6 @@ Services that should consider using the  UK Core DiagnosticReport profile are:
 
 ## Profile Specific Implementation Guidance: ##
 
-This is a derived profile of {{pagelink:Profile-DiagnosticReport}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
-<br><br>
 The DiagnosticReport-Lab profile is expected to reference either:
 - a set of laboratory observations (Observation-Lab) that are grouped under one observation (Observation-LabGroup), for example a urea and electrolyte test that contains many sub tests,
 - a single laboratory observation (Observation-Lab) that does not form part of a group of tests, for example Serum ferritin level,

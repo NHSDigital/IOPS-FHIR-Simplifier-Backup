@@ -101,9 +101,9 @@ The following are example usage scenarios for the UK Core Specimen profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-<h3>Minimum Viable Content</h3>
+### Mandatory and Must Support Data Elements
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport-25267}}.
 
 <table class="assets">
 <tr>
@@ -124,7 +124,8 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 </tr><tr>
 <td><code>Specimen.receivedTime</code></td>
 <td>The time when specimen was received for processing.</td>
-</tr><tr>
+</tr>
+<tr>
 <td><code>Specimen.request</code></td>
 <td>Why the specimen was collected.</td>
 </tr>

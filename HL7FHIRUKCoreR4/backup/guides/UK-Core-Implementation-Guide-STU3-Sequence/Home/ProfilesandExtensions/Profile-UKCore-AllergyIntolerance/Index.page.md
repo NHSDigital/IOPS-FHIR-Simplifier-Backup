@@ -7,7 +7,6 @@ issue: UKCore-AllergyIntolerance
 # StructureDefinition-UKCore-AllergyIntolerance
 
 <nocheck>
-
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
 
 <div id="Examples" class="tabcontent">

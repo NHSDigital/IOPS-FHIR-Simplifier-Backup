@@ -92,9 +92,10 @@ select
 
 ## Profile Specific Implementation Guidance: ##
 
-<h3>Minimum Viable Content</h3>
 
-A minimum viable content that all provider and consumer systems SHALL support are the following elements.
+### Mandatory and Must Support Data Elements
+
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport-25267}}.
 
 <table class="assets">
 <tr>
