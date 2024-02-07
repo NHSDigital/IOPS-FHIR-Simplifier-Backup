@@ -1,0 +1,38 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-NoSecondTrimesterFetalAnomalies-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "609520005",
+        "display": "Disorder of fetal structure"
+      }
+    ],
+    "text": "Second Trimester Anomalies?"
+    
+  },
+  "subject": {
+    "reference": "Patient/Patient-RyanneBoulder-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307687"
+    }
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "255247007",
+            "display": "Second trimester"
+          }
+        ]
+      }
+    }
+  ],
+  "effectiveDateTime": "2023-09-25",
+  "valueBoolean": false
+}

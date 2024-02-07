@@ -1,0 +1,26 @@
+{
+  "resourceType": "Procedure",
+  "id": "Procedure-InVitroFertilisation-Example",
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "52637005",
+        "display": "In vitro fertilisation"
+      }
+    ]
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307687"
+    }
+  },
+  "performedDateTime": "2023-08-05",
+  "note": [
+    {
+      "text": "Woman`s own egg"
+    }
+  ]
+}

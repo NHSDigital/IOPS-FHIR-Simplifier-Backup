@@ -1,7 +1,11 @@
 - name: Index
   filename: Index.page.md
-#- name: Patient-MichaelJones
-#  filename: Patient-MichaelJones.page.md
+- name: Patient-AnitaLambertsDeceasedPatient-Example
+  filename: Patient-AnitaLambertsDeceasedPatient-Example.page.md
+- name: Patient-AnitaLambertsMotherDeceasedPatient-Example
+  filename: Patient-AnitaLambertsMotherDeceasedPatient-Example.page.md
+- name: Patient-FayMutlow-Example
+  filename: Patient-FayMutlow-Example.page.md
 - name: Patient-MeirLiebermanPDS-Example
   filename: Patient-MeirLiebermanPDS-Example.page.md
 - name: Patient-LindsaySorrellPDS-Example

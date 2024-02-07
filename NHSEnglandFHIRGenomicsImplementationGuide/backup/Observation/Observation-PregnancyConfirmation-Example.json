@@ -1,0 +1,64 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-PregnancyConfirmation-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "77386006",
+				"display": "Pregnancy"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-RyanneBoulder-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307687"
+		}
+	},
+	"component": [
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "720451000000102",
+						"display": "Assisted conception"
+					}
+				]
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "226081000000107",
+						"display": "Gestational age"
+					}
+				]
+			},
+			"valueQuantity": {
+				"value": 87,
+				"unit": "day",
+				"system": "http://unitsofmeasure.org",
+				"code": "d"
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "161714006",
+						"display": "Estimated date of delivery"
+					}
+				]
+			},
+			"valueDateTime": "2024-05-01"
+		}
+	],
+	"effectiveDateTime": "2023-09-25"
+}
