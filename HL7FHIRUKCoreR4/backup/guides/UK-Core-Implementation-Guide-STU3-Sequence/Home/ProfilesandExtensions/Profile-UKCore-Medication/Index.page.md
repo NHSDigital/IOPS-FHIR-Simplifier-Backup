@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication
 usage: http://hl7.org/fhir/StructureDefinition/Medication
 issue: UKCore-Medication
 ---
-# StructureDefinition-UKCore-Medication
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -38,20 +38,8 @@ The UK Core Medication profile will likely not be used in isolation. It does not
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>Medication.code</code></td>
-<td>Codes that identify this medication.</td>
-</tr>
-</table> 
 </div>
 
 ---

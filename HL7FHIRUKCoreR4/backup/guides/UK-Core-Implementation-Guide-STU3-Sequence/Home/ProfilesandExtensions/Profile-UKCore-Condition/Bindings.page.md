@@ -2,10 +2,11 @@
 
 <table id="addToBindings">
 <tr>
-<td>Slot.extension:deliveryChannel</td>
+<td>Condition.extension:conditionEpisode</td>
 <td>extensible</td>
-<td>{{pagelink:ValueSet-UKCore-DeliveryChannel}}</td>
+<td>{{pagelink:ValueSet-UKCore-ConditionEpisodicity}}</td>
 </tr>
 </table>
 
 ---
+

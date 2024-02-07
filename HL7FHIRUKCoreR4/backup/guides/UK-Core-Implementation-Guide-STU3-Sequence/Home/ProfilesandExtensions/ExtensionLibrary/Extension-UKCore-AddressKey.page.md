@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey
 issue: Extension-UKCore-AddressKey
 ---
-## StructureDefinition Extension-UKCore-AddressKey
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

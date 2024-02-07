@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod
 issue: Extension-UKCore-DischargeMethod
 ---
-## StructureDefinition Extension-UKCore-DischargeMethod
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

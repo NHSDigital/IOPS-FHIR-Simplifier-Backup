@@ -31,40 +31,8 @@ The following are example usage scenarios for the UK Core Medication Administrat
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>MedicationAdministration.identifier</code></td>
-<td>Allow the resource to be referenced within/by other resources</td>
-</tr>
-<tr>
-<td><code>MedicationAdministration.status</code></td>
-<td>Mandatory element</td>
-</tr>
-<tr>
-<td><code>MedicationAdministration.medication[x]</code></td>
-<td>Mandatory element</td>
-</tr>
-<tr>
-<td><code>MedicationAdministration.subject</code></td>
-<td>Mandatory element</td>
-</tr>
-<tr>
-<td><code>MedicationAdministration.effective[x]</code></td>
-<td>Mandatory element</td>
-</tr>
-<tr>
-<td><code>MedicationAdministration.dosage</code></td>
-<td>The dosage instruction for the administered medication</td>
-</tr>
-</table>
 </div>
 
 ---

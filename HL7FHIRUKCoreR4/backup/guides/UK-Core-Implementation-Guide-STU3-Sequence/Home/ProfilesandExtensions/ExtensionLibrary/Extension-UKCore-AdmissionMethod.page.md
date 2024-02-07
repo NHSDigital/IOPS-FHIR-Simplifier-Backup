@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod
 issue: Extension-UKCore-AdmissionMethod
 ---
-## StructureDefinition Extension-UKCore-AdmissionMethod
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

@@ -4,7 +4,7 @@ The protocol (set of recommendations) being followed by the provider who adminis
 ### `protocolApplied.targetDisease` 
 It is recommended for international/EU interoperability that `Immunization.protocolApplied.targetDisease` is populated. The SNOMED CT concept SHOULD be from EU COVID-19 Diseases or Vaccine Target Diseases (GPS) - IPS
 
-<table class="assets" title="Target Disease list">>
+<table class="assets" title="Target Disease list">
 <tr>
 <th class="width50">Disease</th>
 <th class="width50">UK SNOMED self</th>

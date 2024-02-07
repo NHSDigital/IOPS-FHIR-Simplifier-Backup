@@ -37,32 +37,7 @@ The following are example usage scenarios for the UK Core List profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
-
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>List.status</code></td>
-<td>Indicates the current state of this list.</td>
-</tr>
-<tr>
-<td><code>List.mode</code></td>
-<td>How this list was prepared.</td>
-</tr>
-<tr>
-<td><code>List.code</code></td>
-<td>This code defines the purpose of the list - why it was created.</td>
-</tr>
-<tr>
-<td><code>List.subject</code></td>
-<td>The common subject (or patient) of the resources that are in the list if there is one.</td>
-</tr>
-</table>
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
 </div>
 

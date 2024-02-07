@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason
 issue: Extension-UKCore-NHSNumberUnavailableReason
 ---
-## StructureDefinition Extension-UKCore-NHSNumberUnavailableReason
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

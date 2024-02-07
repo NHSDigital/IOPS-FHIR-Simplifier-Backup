@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter
 usage: http://hl7.org/fhir/StructureDefinition/Encounter
 issue: UKCore-Encounter
 ---
-# StructureDefinition-UKCore-Encounter
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -52,48 +52,8 @@ The following are example usage scenarios for the UK Core Encounter profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>Encounter.identifier</code></td>
-<td>Identifier(s) by which this encounter is known.</td>
-</tr>
-<tr>
-<td><code>Encounter.status</code></td>
-<td>The status of the encounter with the subject.</td>
-</tr>
-<tr>
-<td><code>Encounter.class</code></td>
-<td>Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations.</td>
-</tr>
-<tr>
-<td><code>Encounter.subject</code></td>
-<td>The patient or group present at the encounter.</td>
-</tr>
-<tr>
-<td><code>Encounter.participant</code></td>
-<td>The list of people responsible for providing the service.</td>
-</tr>
-<tr>
-<td><code>Encounter.participant.individual</code></td>
-<td>Persons involved in the encounter other than the patient.</td>
-</tr>
-<tr>
-<td><code>Encounter.reasonCode</code></td>
-<td>Reason the encounter takes place, expressed as a code. For admissions, this can be used for a coded admission diagnosis.</td>
-</tr>
-<tr>
-<td><code>Encounter.reasonReference</code></td>
-<td>Reason the encounter takes place, expressed as a reference to a Condition, Procedure, Observation, or ImmunizationRecommendation.</td>
-</tr>
-</table>
 </div>
 
 ---

@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure
 issue: Extension-UKCore-VaccinationProcedure
 ---
-## StructureDefinition Extension-UKCore-VaccinationProcedure
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

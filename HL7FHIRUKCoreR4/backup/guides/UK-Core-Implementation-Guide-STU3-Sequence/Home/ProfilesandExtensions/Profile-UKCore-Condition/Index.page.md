@@ -5,7 +5,7 @@ usage: http://hl7.org/fhir/StructureDefinition/Condition
 issue: UKCore-Condition
 ---
 
-# StructureDefinition-UKCore-Condition
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -35,40 +35,8 @@ The following are example usage scenarios for the UK Core Condition profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>Condition.clinicalStatus</code></td>
-<td>The clinical status of the condition.</td>
-</tr>
-<tr>
-<td><code>Condition.verificationStatus</code></td>
-<td>The verification status to support the clinical status of the condition.</td>
-</tr>
-<tr>
-<td><code>Condition.severity</code></td>
-<td>A subjective assessment of the severity of the condition as evaluated by the clinician.</td>
-</tr>
-<tr>
-<td><code>Condition.code </code></td>
-<td>Identification of the condition, problem or diagnosis.</td>
-</tr>
-<tr>
-<td><code>Condition.subject</code></td>
-<td>Indicates the patient or group who the condition record is associated with.</td>
-</tr>
-<tr>
-<td><code>Condition.recorder</code></td>
-<td>Individual who recorded the record and takes responsibility for its content.</td>
-</tr>
-</table>
 </div>
 
 ---

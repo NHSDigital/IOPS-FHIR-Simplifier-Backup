@@ -3,7 +3,7 @@
 - name: Extensions
   filename: Extensions.page.md
 - name: Bindings
-  filename: bindings.page.md
+  filename: Bindings.page.md
 - name: subject
   filename: subject.page.md
 - name: encounter

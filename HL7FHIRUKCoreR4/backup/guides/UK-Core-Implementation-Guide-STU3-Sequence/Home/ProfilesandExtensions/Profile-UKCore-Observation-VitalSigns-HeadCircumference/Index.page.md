@@ -5,7 +5,7 @@ usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns-HeadCircumference
 ---
 
-# StructureDefinition-UKCore-Observation-VitalSigns-HeadCircumference
+# StructureDefinition {{variable:issue}}
 
 <div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
 
@@ -39,11 +39,11 @@ The following are example usage scenarios for the UK Core Observation Vital Sign
 
 The UKCore-Observation-VitalSigns-HeadCircumference profile further derives from {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}} and this page only shows the differences between the two. Refer to {{pagelink:Profile-Observation,text:UKCore-Observation}} and {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}} for more implementation guidance.
 
-### Minimum Viable Content
+### Mandatory and Must Support Data Elements
 
-The minimum viable content that all provider and consumer systems SHALL support are the elements within the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} and {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}} tables, along with the following.
+The following elements, including those of the the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} and {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}}  arent profiles, are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>

@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService
 usage: http://hl7.org/fhir/StructureDefinition/HealthcareService
 issue: UKCore-HealthcareService
 ---
-# StructureDefinition-UKCore-HealthcareService
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -28,24 +28,8 @@ The following are example usage scenarios for the UK Core HealthcareService prof
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>HealthcareService.providedBy</code></td>
-<td>The organization that provides this healthcare service.</td>
-</tr>
-<tr>
-<td><code>HealthcareService.type</code></td>
-<td>The type of service provided by this healthcare service.</td>
-</tr>
-</table>
 </div>
 
 ---

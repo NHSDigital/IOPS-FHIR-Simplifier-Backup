@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BookingOrganization
 issue: Extension-UKCore-BookingOrganization
 ---
-## StructureDefinition Extension-UKCore-BookingOrganization
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

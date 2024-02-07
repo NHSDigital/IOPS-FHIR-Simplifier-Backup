@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance
 usage: http://hl7.org/fhir/StructureDefinition/AllergyIntolerance
 issue: UKCore-AllergyIntolerance
 ---
-# StructureDefinition-UKCore-AllergyIntolerance
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -62,41 +62,8 @@ Where migrated data is not coded, uses retired / invalidated codes, or coded wit
 
 ---
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>AllergyIntolerance.clinicalStatus</code></td>
-<td>Defines whether the allergy or intolerance is active, inactive or resolved.</td>
-</tr>
-<tr>
-<td><code>AllergyIntolerance.verificationStatus</code></td>
-<td>Defines the assertion of the allergy or intolerance.</td>
-</tr>
-<tr>
-<td><code>AllergyIntolerance.code</code></td>
-<td>This code identifies the allergy or intolerance</td>
-</tr>
-<tr>
-<td><code>AllergyIntolerance.patient</code></td>
-<td>Links the allergy to the patient</td>
-</tr>
-<tr>
-<td><code>AllergyIntolerance.reaction</code></td>
-<td>Details about each adverse reaction event</td>
-</tr>
-<tr>
-<td><code>AllergyIntolerance.reaction.severity</code></td>
-<td>Clinical assessment of the severity of the reaction event as a whole</td>
-</tr>
-</table>
 </div>
 
 ---
-

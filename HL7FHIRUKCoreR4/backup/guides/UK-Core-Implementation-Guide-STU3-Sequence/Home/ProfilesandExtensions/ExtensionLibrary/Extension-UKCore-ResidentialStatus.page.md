@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus
 issue: Extension-UKCore-ResidentialStatus
 ---
-## StructureDefinition Extension-UKCore-ResidentialStatus
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

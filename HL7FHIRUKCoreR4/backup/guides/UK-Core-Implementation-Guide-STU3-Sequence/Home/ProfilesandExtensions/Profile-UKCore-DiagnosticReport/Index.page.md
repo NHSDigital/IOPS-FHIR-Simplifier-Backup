@@ -5,7 +5,7 @@ usage: http://hl7.org/fhir/StructureDefinition/DiagnosticReport
 issue: UKCore-DiagnosticReport
 ---
 
-# StructureDefinition-UKCore-DiagnosticReport
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -30,7 +30,8 @@ issue: UKCore-DiagnosticReport
 
 <div id="ProfileGuidance">
 
-### Example Usage Scenarios ###
+### Example Usage Scenarios
+
 The following are example usage scenarios for the UK Core DiagnosticReport profile:
 
 - Query for a specific patient test result
@@ -47,45 +48,8 @@ Services that should consider using the  UK Core DiagnosticReport profile are:
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>DiagnosticReport.status</code></td>
-<td>The status of the diagnostic report.
-</td>
-</tr>
-<tr>
-<td><code>DiagnosticReport.category</code></td>
-<td>A code that classifies the clinical discipline, department or diagnostic service that created the report.</td>
-</tr>
-<tr>
-<td><code>DiagnosticReport.code</code></td>
-<td>A code or name that describes this diagnostic report.</td>
-</tr>
-<tr>
-<td><code>DiagnosticReport.subject</code></td>
-<td>The subject of the report - usually, but not always, the patient</td>
-</tr>
-<tr>
-<td><code>DiagnosticReport.encounter</code></td>
-<td>Health care event when test ordered.</td>
-</tr>
-<tr>
-<td><code>DiagnosticReport.issued</code></td>
-<td>Clinically relevant time/time-period for report.</td>
-</tr>
-<tr>
-<td><code>DiagnosticReport.result</code></td>
-<td>Observations that are part of this diagnostic report.</td>
-</tr>
-</table>
 </div>
 
 ---

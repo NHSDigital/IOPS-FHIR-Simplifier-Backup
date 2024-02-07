@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory
 issue: Extension-UKCore-SampleCategory
 ---
-## StructureDefinition Extension-UKCore-SampleCategory
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

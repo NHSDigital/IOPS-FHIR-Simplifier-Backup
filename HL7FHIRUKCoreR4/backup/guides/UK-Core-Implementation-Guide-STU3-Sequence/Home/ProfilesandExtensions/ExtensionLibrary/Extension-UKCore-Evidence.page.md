@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence
 issue: Extension-UKCore-Evidence
 ---
-## StructureDefinition Extension-UKCore-Evidence
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
@@ -17,10 +17,6 @@ issue: Extension-UKCore-Evidence
   <b>Evidence</b>- An example to illustrate a reference to results of investigations that confirmed the certainty of the diagnosis for an allergy or intolerance.<br>
 {{pagelink:Example-UKCore-Extension-Evidence}}
 <br><br>
-</div>
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-Evidence/~issues?level=File">Report Issue for Extension-UKCore-Evidence</a>.
 </div>
 
 
