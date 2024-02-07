@@ -1,0 +1,60 @@
+{
+  "resourceType": "Task",
+  "id": "Task-NonWGSRareDiseaseTestOrderRejected-FetalScenario-Example",
+  "status": "rejected",
+  "statusReason": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-status-reason-genomics",
+        "code": "FurtherClinicalDetailsRequired",
+        "display": "Further Clinical Details Required"
+      }
+    ]
+  },
+  "intent": "order",
+  "priority": "urgent",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+        "code": "RequestSampleAlignment",
+        "display": "Request Sample Alignment"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-FoetusOfRyanneBoulder-Example",
+    "identifier": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+        "value": "FT-RWT13521",
+        "assigner": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RAX"
+          }
+        }
+      }
+    ]
+  },
+  "authoredOn": "2023-09-25T10:00:00Z",
+  "lastModified": "2023-10-01T10:18:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-LoisLaneKingstonClinicalGenetics-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "RJ1"
+    },
+    "display": "GUY'S AND ST THOMAS' NHS FOUNDATION TRUST"
+  },
+  "note": [
+    {
+      "text": "Optional Free Text field to record any additional details"
+    }
+  ]
+}

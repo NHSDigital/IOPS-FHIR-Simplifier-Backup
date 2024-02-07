@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-NoFirstTrimesterFetalAnomalies-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "609520005",
+        "display": "Disorder of fetal structure"
+      }
+    ],
+    "text": "First Trimester Anomalies?"
+  },
+  "subject": {
+    "reference": "Patient/Patient-RyanneBoulder-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307687"
+    }
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "255246003",
+            "display": "First trimester"
+          }
+        ]
+      }
+    }
+  ],
+  "effectiveDateTime": "2023-09-25",
+  "valueBoolean": false
+}

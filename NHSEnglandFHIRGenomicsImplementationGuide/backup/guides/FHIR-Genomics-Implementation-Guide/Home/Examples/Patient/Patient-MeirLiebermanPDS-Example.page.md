@@ -23,10 +23,10 @@ Example of a patient returned by a PDS search.
     <div id="JSON-P-MLP-E" role="tabpanel" class="tab-pane active">
 {{json:Patient-MeirLiebermanPDS-Example}}
     </div>
-    <div id="XM-P-MLP-EL" role="tabpanel" class="tab-pane">
+    <div id="XML-P-MLP-E" role="tabpanel" class="tab-pane">
 {{xml:Patient-MeirLiebermanPDS-Example}}
     </div>
-    <div id="Tree" role="tabpanel" class="tab-pane">
+    <div id="Tree-P-MLP-E" role="tabpanel" class="tab-pane">
 {{tree:Patient-MeirLiebermanPDS-Example}}
     </div>
   </div>

@@ -106,5 +106,10 @@
     {
       "text": "Additional portion of Sample X was provided."
     }
+  ],
+  "relevantHistory": [
+    {
+      "reference": "Provenance/Provenance-NonWGSTestOrderFormUpdated-SolidTumor-Example"
+    }
   ]
 }

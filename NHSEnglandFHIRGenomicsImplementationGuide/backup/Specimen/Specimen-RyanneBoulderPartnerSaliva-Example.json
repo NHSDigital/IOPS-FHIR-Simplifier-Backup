@@ -1,0 +1,34 @@
+{
+  "resourceType": "Specimen",
+  "id": "Specimen-RyanneBoulderPartnerSaliva-Example",
+  "identifier": [
+    {
+      "system": "https://fhir.kingstonhospital.nhs.uk//Id/specimenId",
+      "value": "ROA-69050-FTH-RWT13521"
+    }
+  ],
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "119342007",
+        "display": "Saliva specimen"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-RyanneBoulderPartner-Example"
+  },
+  "container": [
+  
+    {
+      "description": "Container:ROA-69050-FTH-RWT13521 contains Saliva for Father"
+    }
+  ],
+  "request": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
+    }
+  ]
+}
