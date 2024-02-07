@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-RecordingSetting
 issue: Extension-UKCore-RecordingSetting
 ---
-## StructureDefinition Extension-UKCore-RecordingSetting
+## StructureDefinition {{variable:issue}}
 
 <div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
 

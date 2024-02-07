@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType
 issue: Extension-UKCore-MedicationPrescribingOrganizationType
 ---
-## StructureDefinition Extension-UKCore-MedicationPrescribingOrganizationType
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

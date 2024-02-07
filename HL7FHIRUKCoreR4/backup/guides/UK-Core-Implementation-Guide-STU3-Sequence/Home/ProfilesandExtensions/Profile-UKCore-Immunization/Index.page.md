@@ -39,46 +39,6 @@ The following are example usage scenarios for the UK Core Immunization profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
-
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>Immunization.status</code></td>
-<td>Indicates the current status of the immunization event.</td>
-</tr>
-<tr>
-<td><code>Immunization.vaccineCode</code></td>
-<td>Vaccine that was administered or was to be administered.</td>
-</tr>
-<tr>
-<td><code>Immunization.patient</code></td>
-<td>The patient who either received or did not receive the immunization.</td>
-</tr>
-<tr>
-<td><code>Immunization.occurrence[x]</code></td>
-<td>When the vaccine administered or was to be administered.</td>
-</tr>
-<tr>
-<td><code>Immunization.manufacturer</code></td>
-<td>Name of vaccine manufacturer.</td>
-</tr>
-<tr>
-<td><code>Immunization.lotNumber</code></td>
-<td>Lot number of the vaccine.</td>
-</tr>
-<tr>
-<td><code>Immunization.doseQuantity</code></td>
-<td>How much of the vaccine was administered</td>
-</tr>
-</table>
-
-
 {{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
 </div>

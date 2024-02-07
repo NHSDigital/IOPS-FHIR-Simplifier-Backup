@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus
 issue: Extension-UKCore-DeathNotificationStatus
 ---
-## StructureDefinition Extension-UKCore-DeathNotificationStatus
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

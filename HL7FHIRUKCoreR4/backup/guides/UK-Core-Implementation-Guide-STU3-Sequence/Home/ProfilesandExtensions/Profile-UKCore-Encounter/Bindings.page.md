@@ -1,67 +1,35 @@
-## Bindings (differential)
+{{page:Home/ProfilesandExtensions/ProfileBindingsTemplate.page.md}}
 
-More information about the bindings to UK Core ValueSets can be found below.
-
-<table class="assets" title="Bindings list">
-<tr>
-<th class="width30">Context</th>
-<th class="width20">Strength</th>
-<th class="width50">Link</th>
-</tr>
+<table id="addToBindings">
 <tr>
 <td>Encounter.extension:admissionMethod</td>
-<td>Preferred</td>
+<td>preferred</td>
 <td>{{pagelink:ValueSet-UKCore-AdmissionMethod}}</td>
 </tr>
 <tr>
 <td>Encounter.extension:dischargeMethod</td>
-<td>Preferred</td>
+<td>preferred</td>
 <td>{{pagelink:ValueSet-UKCore-DischargeMethod}}</td>
 </tr>
 <tr>
 <td>Encounter.extension:emergencyCareDischargeStatus</td>
-<td>Preferred</td>
+<td>preferred</td>
 <td>{{pagelink:ValueSet-UKCore-EmergencyCareDischargeStatus}}</td>
 </tr>
 <tr>
 <td>Encounter.extension:legalStatus.extension:legalStatusClassification</td>
-<td>Preferred</td>
+<td>preferred</td>
 <td>{{pagelink:ValueSet-UKCore-LegalStatusClassification}}</td>
 </tr>
 <tr>
 <td>Encounter.extension:legalStatus.extension:legalStatusContext</td>
-<td>Extensible</td>
+<td>extensible</td>
 <td>{{pagelink:ValueSet-UKCore-LegalStatusContext}}</td>
 </tr>
 <tr>
-<td>Encounter.extension:OutcomeOfAttendance</td>
-<td>Preferred</td>
+<td>Encounter.extension:outcomeOfAttendance</td>
+<td>preferred</td>
 <td>{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</td>
-</tr>
-<tr>
-<td>Encounter.hospitalization.admitSource</td>
-<td>Preferred</td>
-<td>{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</td>
-</tr>
-<tr>
-<td>Encounter.hospitalization.dischargeDisposition</td>
-<td>Preferred</td>
-<td>{{pagelink:ValueSet-UKCore-DischargeDestination}}</td>
-</tr>
-<tr>
-<td>Encounter.location.physicalType</td>
-<td>Preferred</td>
-<td>{{pagelink:ValueSet-UKCore-EncounterLocationType}}</td>
-</tr>
-<tr>
-<td>Encounter.serviceType</td>
-<td>Preferred</td>
-<td>{{pagelink:ValueSet-UKCore-CareSettingType}}</td>
-</tr>
-<tr>
-<td>Encounter.type</td>
-<td>Preferred</td>
-<td>{{pagelink:ValueSet-UKCore-EncounterType}}</td>
 </tr>
 </table>
 

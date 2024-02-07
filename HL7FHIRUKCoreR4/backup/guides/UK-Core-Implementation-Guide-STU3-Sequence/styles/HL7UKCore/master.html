@@ -144,7 +144,7 @@
                 }
             }
             function scrollProfileSideBar() {
-                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition]');
                 if (hasSDH1 != undefined && hasSDH1.length > 0)
                 {
                     if (hasSDH1[0].getBoundingClientRect().top < 0) {
@@ -182,6 +182,25 @@
             }  
         </script>
         <script>
+            // add any additional extension bindings to the fql bindings
+            function addExtensionBindingsToFQLTable() {
+                //look for a div with id bindings
+                $("div#preview-content div#Bindings").each(function(index) {
+                    //within this div, look for an fql table
+                    var fqlTable = $(this).children("table.table-bordered");
+                    //and the table you want to combine with the bindings one
+                    var contextTable = $(this).children("table#addToBindings");
+                    //only continue to add if  if we have both tables
+                    if (fqlTable == undefined || fqlTable.length == 0 || contextTable == undefined || contextTable.length == 0) {
+                        return; 
+                    }
+                    contextTable.find("tbody tr").each(function(index){
+                        fqlTable.children("tbody").append($(this));
+                    });
+                    contextTable.remove();
+                });
+            }
+
             // function to turn multiple columns into rows for an fql table, within a specific div
             function transposeFQLTables() {
                 //look for a div with id transpose
@@ -323,13 +342,9 @@
 
             // function alters styling of FQL tables
             function tidyUpFQLTables() {
-                //fix the contents of FQL table headers
-                // specifically swap _ for spaces, and change ProfilePurpose to have a space
+                //fix the contents of FQL table headers by swapping _ for spaces
                 $('table.table-bordered > thead > tr > th').each(function(index) {
-                    if ($(this).text() == 'ProfilePurpose') {
-                            $(this).text('Profile Purpose');
-                    }
-                    $(this).text($(this).text().split("_").join(" "));
+                   $(this).text($(this).text().split("_").join(" "));
                 });
 
                 //remove the FQL table css on CodeSystems/Extensions when they are in a list page
@@ -357,7 +372,7 @@
                     // without it, the whole list goes green
                     // NOTE:
                     //  Codesystem, Valueset, codesystem, valueSet etc will still cause page to go full green
-                    //  ensure your Page Title, FileName and Topic are capitalised right
+                    //  ensure your Page Title, FileName and Topic are capitalised right - CodeSystem, ValueSet !!!
                     var parentCodeSystem = $(this).closest('[id^=CodeSystem-UKCore-]'); 
                     var parentExtension = $(this).closest('[id^=Extension-UKCore-]');
                     var parentValueSet = $(this).closest('[id^=ValueSet-UKCore-]');
@@ -391,7 +406,7 @@
             // and one before any uk core access guidance
             // in the left hand list, AND the same on the main page
             function separateOutGuidance() {
-                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition]');
                 if (hasSDH1 != undefined && hasSDH1.length > 0)
                 {
                     //add a Profile link that jumps back to the top
@@ -431,13 +446,9 @@
                     }
 
                     // similar code to above, but for main page content specific divs
-                    var extensionsDiv = $('div#preview-content div#extensions');
-                    var extensionsDivUC = $('div#preview-content div#Extensions');
-                    var mvcDiv = $('div#preview-content div#Minimum-Viable-Content');
-                    var bindingsDiv = $('div#preview-content div#bindings');
-                    var bindingsDivUC = $('div#preview-content div#Bindings');
-                    var constraintsDiv = $('div#preview-content div#constraints');
-                    var constraintsDivUC = $('div#preview-content div#Constraints');
+                    var extensionsDiv = $('div#preview-content div#Extensions');
+                    var bindingsDiv = $('div#preview-content div#Bindings');
+                    var constraintsDiv = $('div#preview-content div#Constraints');
                     var checkForHR;
                     var addToDiv;
 
@@ -445,24 +456,12 @@
                     if (constraintsDiv != undefined && constraintsDiv.length > 0) {
                         checkForHR = constraintsDiv.children('hr');
                         addToDiv = constraintsDiv;
-                    } else if (constraintsDivUC != undefined && constraintsDivUC.length > 0) {
-                        checkForHR = constraintsDivUC.children('hr');
-                        addToDiv = constraintsDivUC;
                     } else if (bindingsDiv != undefined && bindingsDiv.length > 0) {
                         checkForHR = bindingsDiv.children('hr');
                         addToDiv = bindingsDiv;
-                    } else if (bindingsDivUC != undefined && bindingsDivUC.length > 0) {
-                        checkForHR = bindingsDivUC.children('hr');
-                        addToDiv = bindingsDivUC;
                     } else if (extensionsDiv != undefined && extensionsDiv.length > 0) {
                         checkForHR = extensionsDiv.children('hr');
                         addToDiv = extensionsDiv;
-                    } else if (extensionsDivUC != undefined && extensionsDivUC.length > 0) {
-                        checkForHR = extensionsDivUC.children('hr');
-                        addToDiv = extensionsDivUC;
-                    } else if (mvcDiv != undefined && mvcDiv.length > 0) {
-                        checkForHR = mvcDiv.children('hr');
-                        addToDiv = mvcDiv;
                     }
                     // main difference is that all pages should already have a --- at the bottom, so we are either adding a thick line if theres no ---, or adding a class
                     if (checkForHR != undefined && checkForHR.length > 0) {
@@ -475,7 +474,7 @@
                     checkForHR = undefined;
                     addToDiv = undefined;
 
-                    // this chunk shouldn't be needed - would allow us to add the UK Core Access Index Provider / CLincial Data rpovider pages into the profiles at the bottom
+                    // this chunk shouldn't be needed - would allow us to add the UK Core Access Index Provider / CLincial Data Provider pages into the profiles at the bottom
                     var patientApiDiv = $('div#preview-content div[id$="IndexProvider"]');
                     var clinicalApiDiv = $('div#preview-content div[id$="ClinicalDataProvider"]');
                     if (patientApiDiv != undefined && patientApiDiv.length > 0) {
@@ -700,9 +699,8 @@
                     }
                 });
             }
-        </script>
-        <script>
-        //these two handle getting /. setting the dropdown state cookies
+            
+            //these two handle getting / setting the dropdown state cookies
             function getDropdownExpandedState(dropdownMenuId) {
                 var nameEQ = dropdownMenuId + "=";
                 var ca = document.cookie.split(';');
@@ -833,6 +831,55 @@
                     }
 				});
 			}
+
+            //this looks for FQL versions of the extensions and bindings tables, and alters the fql link to a pagelink
+            function swapFQLTableLinks() {
+                // build a base url
+                let url = window.location.href;
+                let slashCount = url.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++)
+                {
+                    newUrl = newUrl + url.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
+                        i = slashCount;
+                    }
+                }
+
+                $("div#preview-content div#Extensions table.table tbody tr td a").each(function(index) {
+                    //check if it currently resolves to UK Core on simplifier
+                    let urlReference = $(this)[0].href;
+                    var swapUrl = newUrl;
+                    if (urlReference.startsWith("https://simplifier.net/resolve?canonical") && urlReference.includes('https://fhir.hl7.org.uk')) {
+                        let extensionName = urlReference.replace("https://simplifier.net/resolve?canonical=https://fhir.hl7.org.uk/StructureDefinition/","").replace("&scope=HL7FHIRUKCoreR4@current","");
+                        swapUrl = swapUrl + "ProfilesandExtensions/ExtensionLibrary/" + extensionName;
+                        
+                        let exampleVersion = "?" + url.split("?")[1];
+                        if (exampleVersion.startsWith("?version=current")){
+                            exampleVersion = ".page.md" + exampleVersion;
+                        }
+                        swapUrl = swapUrl + exampleVersion;
+                        $(this).attr("href", swapUrl);
+                        $(this).text(extensionName);
+                    }
+                });
+                $("div#preview-content div#Bindings table.table tbody tr td a").each(function(index) {
+                    //check if it currently resolves to UK Core on simplifier
+                    let urlReference = $(this)[0].href;
+                    var swapUrl = newUrl;
+                    if (urlReference.startsWith("https://simplifier.net/resolve?canonical") && urlReference.includes('https://fhir.hl7.org.uk')) {
+                        let valuesetName =  urlReference.replace("https://simplifier.net/resolve?canonical=https://fhir.hl7.org.uk/ValueSet/","").replace("&scope=HL7FHIRUKCoreR4@current","");
+                        swapUrl = swapUrl + "Terminology/AllValueSets/ValueSet-" + valuesetName;
+                        let exampleVersion = "?" + url.split("?")[1];
+                        if (exampleVersion.startsWith("?version=current")){
+                            exampleVersion = ".page.md" + exampleVersion;
+                        }
+                        swapUrl = swapUrl + exampleVersion;
+                        $(this).attr("href", swapUrl);
+                        $(this).text("ValueSet " + valuesetName);
+                    }
+                });
+            }
 
             //look for a div's called Table View, and the rows in the table
             // if the first cell on a row is reference[0], remap the link to the matching example
@@ -1437,7 +1484,7 @@
             //code finds sub elements page
             // and looks for the base details box table
             function alterBaseElementOverrides() {
-                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition]');
                 if (hasSDH1 != undefined && hasSDH1.length > 0)
                 {
                     var profileName = hasSDH1[0].innerText.split("-")[2];
@@ -1501,7 +1548,7 @@
                 }
             }
             function sidebarClickAndOpen() {
-                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition-ukcore]');
+                var hasSDH1 = $('div#preview-content h1[id^=structuredefinition]');
                 if (hasSDH1 != undefined && hasSDH1.length > 0)
                 {
                     $('ul.nav-stacked li').each(function(index) {               
@@ -1637,7 +1684,7 @@
                         $('div.col-md-6').remove();
                         $('div.col-md-18').addClass("col-md-24");
                         $('div.col-md-18').removeClass("col-md-18");
-                        $('div#preview-content h1[id^=structuredefinition-ukcore]').remove();
+                        $('div#preview-content h1[id^=structuredefinition]').remove();
                         $('div#newAsset').remove();
                         $('table[title="Profile Details"]').remove();
                         $('table[title="Profile Purpose"]').remove();
@@ -1667,7 +1714,7 @@
                             $('div.col-md-18').removeClass("col-md-18");
                         }
                         if (frame.classList.contains("noAssetName")) {   
-                            $('div#preview-content h1[id^=structuredefinition-ukcore]').remove();
+                            $('div#preview-content h1[id^=structuredefinition]').remove();
                             $('div#newAsset').remove();
                         }
                         if (frame.classList.contains("noDescription")) {   
@@ -1708,16 +1755,18 @@
                 swapProfileTreeLinks();
                 addCodesSortButton();
                 stripAssetNameFromSideBar();
-                findCodeSystemURLS();
                 wrapSideBar();
+                findCodeSystemURLS();
                 alterBaseElementOverrides();
                 sidebarClickAndOpen();
                 fixWebAccessibility();
                 redirectTreeviewElementsToPage();
+                swapFQLTableLinks();
+                addExtensionBindingsToFQLTable();
                 handleSubMenuEvents();
                 setInitialDropdownState();
                 updateFooterPosition();
-                highlightSnippetExamples(); //prototype, un comment with caution
+                //highlightSnippetExamples(); //prototype, un comment with caution
                 pageInIframe();
             });
         </script>

@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus
 issue: Extension-UKCore-NHSNumberVerificationStatus
 ---
-## StructureDefinition Extension-UKCore-NHSNumberVerificationStatus
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

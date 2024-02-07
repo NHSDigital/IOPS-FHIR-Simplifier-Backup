@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference
 issue: Extension-UKCore-ContactPreference
 ---
-## StructureDefinition Extension-UKCore-ContactPreference
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

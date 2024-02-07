@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem
 issue: Extension-UKCore-OtherContactSystem
 ---
-## StructureDefinition Extension-UKCore-OtherContactSystem
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

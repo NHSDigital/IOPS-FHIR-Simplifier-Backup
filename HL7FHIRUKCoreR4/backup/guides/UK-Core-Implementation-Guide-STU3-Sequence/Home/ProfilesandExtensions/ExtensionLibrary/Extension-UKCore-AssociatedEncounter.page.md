@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AssociatedEncounter
 issue: Extension-UKCore-AssociatedEncounter
 ---
-## StructureDefinition Extension-UKCore-AssociatedEncounter
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

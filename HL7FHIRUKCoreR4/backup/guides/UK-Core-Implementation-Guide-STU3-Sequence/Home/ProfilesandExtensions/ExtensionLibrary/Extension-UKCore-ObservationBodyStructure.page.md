@@ -2,7 +2,7 @@
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure
 issue: Extension-UKCore-ObservationBodyStructure
 ---
-## StructureDefinition Extension-UKCore-ObservationBodyStructure
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

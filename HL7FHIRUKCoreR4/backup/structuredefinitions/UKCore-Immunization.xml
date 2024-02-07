@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-Immunization" />
   <url value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
@@ -39,6 +38,7 @@
     <element id="Immunization.extension:parentPresent">
       <path value="Immunization.extension" />
       <sliceName value="parentPresent" />
+      <short value="Indicates if a parent was present at an immunisation." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent" />
@@ -47,6 +47,7 @@
     <element id="Immunization.extension:vaccinationProcedure">
       <path value="Immunization.extension" />
       <sliceName value="vaccinationProcedure" />
+      <short value="Used to hold an immunisation procedure code. &#xD;&#xA;&#xD;&#xA;This extension SHOULD be used when `Immunization.status`=`completed`. &#xD;&#xA;&#xD;&#xA;This relates to the vaccine that was administered (procedure) and SHOULD be a SNOMED CT from `ValueSet-UKCore-VaccinationProcedure`." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure" />
@@ -54,6 +55,7 @@
     </element>
     <element id="Immunization.status">
       <path value="Immunization.status" />
+      <short value="Indicates the current status of the immunization event." />
       <mustSupport value="true" />
     </element>
     <element id="Immunization.statusReason">
@@ -65,6 +67,7 @@
     </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
+      <short value="Vaccine that was administered or was to be administered." />
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -73,18 +76,22 @@
     </element>
     <element id="Immunization.patient">
       <path value="Immunization.patient" />
+      <short value="The patient who either received or did not receive the immunization." />
       <mustSupport value="true" />
     </element>
     <element id="Immunization.occurrence[x]">
       <path value="Immunization.occurrence[x]" />
+      <short value="When the vaccine was administered or was to be administered." />
       <mustSupport value="true" />
     </element>
     <element id="Immunization.manufacturer">
       <path value="Immunization.manufacturer" />
+      <short value="Name of vaccine manufacturer." />
       <mustSupport value="true" />
     </element>
     <element id="Immunization.lotNumber">
       <path value="Immunization.lotNumber" />
+      <short value="Lot number of the vaccine." />
       <mustSupport value="true" />
     </element>
     <element id="Immunization.site">
@@ -103,6 +110,7 @@
     </element>
     <element id="Immunization.doseQuantity">
       <path value="Immunization.doseQuantity" />
+      <short value="&gt;How much of the vaccine was administered." />
       <mustSupport value="true" />
     </element>
     <element id="Immunization.reasonCode">

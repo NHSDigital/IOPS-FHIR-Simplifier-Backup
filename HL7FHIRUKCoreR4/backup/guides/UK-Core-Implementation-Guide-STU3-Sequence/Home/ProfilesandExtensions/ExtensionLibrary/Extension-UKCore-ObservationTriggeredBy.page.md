@@ -2,7 +2,7 @@
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy
 issue: Extension-UKCore-ObservationTriggeredBy
 ---
-## StructureDefinition Extension-UKCore-ObservationTriggeredBy
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

@@ -5,7 +5,7 @@ usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-Lab
 ---
 
-# StructureDefinition-UKCore-Observation-Lab
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}

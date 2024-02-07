@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense
 usage: http://hl7.org/fhir/StructureDefinition/MedicationDispense
 issue: UKCore-MedicationDispense
 ---
-# StructureDefinition-UKCore-MedicationDispense
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -29,73 +29,8 @@ The following are example usage scenarios for the UK Core MedicationDispense pro
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>MedicationDispense.identifier</code></td>
-<td>Allow the resource to be referenced within/by other resources.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.status</code></td>
-<td>Mandatory element.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.medication[x]</code></td>
-<td>What medication was supplied.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.subject</code></td>
-<td>Identify the patient.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.performer</code></td>
-<td>Who or what performed the dispensing event.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.authorizingPrescription</code></td>
-<td>Link to a prescription, when available.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.quantity</code></td>
-<td>Quantity of medication dispensed.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.whenPrepared</code></td>
-<td>Timestamp the event.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.dosageInstruction</code></td>
-<td>Dosage instruction for the dispensed medication.</td>
-</tr>
-<!-- added all below-->
-<tr>
-<td><code>MedicationDispense.dosageInstruction.text</code></td>
-<td>Free text dosage instructions.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.dosageInstruction.timing</code></td>
-<td>When medication should be administered.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.dosageInstruction.doseAndRate</code></td>
-<td>Dosage instructions for the medication.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.dosageInstruction.doseAndRate.dose[x]</code></td>
-<td>Quantity of medication administered.</td>
-</tr>
-<tr>
-<td><code>MedicationDispense.dosageInstruction.doseAndRate.rate[x]</code></td>
-<td>Rate at which the medication is to be administered.</td>
-</tr>
-</table>
 </div>
 
 ---

@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeviceReference
 issue: Extension-UKCore-DeviceReference
 ---
-## StructureDefinition Extension-UKCore-DeviceReference
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
@@ -23,6 +23,6 @@ issue: Extension-UKCore-DeviceReference
 
 <h3 id="guidance-devicereference">Extension Specific Guidance</h3>
 
-Where possible, it is expected that the resource being referenced SHOULD conform to [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device?version=current).
+Where possible, it is expected that the resource being referenced SHOULD conform to [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device).
 
 ---

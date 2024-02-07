@@ -1,8 +1,6 @@
-## Bindings (differential)
+{{page:Home/ProfilesandExtensions/ProfileBindingsTemplate.page.md}}
 
-More information about the bindings to UK Core ValueSets can be found below.
-
-<table class="assets" title="Bindings list">
+<table id="Bindings list">
 <tr>
 <th class="width30">Context</th>
 <th class="width20">Strength</th>

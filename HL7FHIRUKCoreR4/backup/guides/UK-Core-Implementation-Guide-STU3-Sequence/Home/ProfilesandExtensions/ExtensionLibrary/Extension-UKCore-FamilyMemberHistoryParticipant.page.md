@@ -2,7 +2,7 @@
 subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant
 issue: Extension-UKCore-FamilyMemberHistoryParticipant
 ---
-## StructureDefinition Extension-UKCore-FamilyMemberHistoryParticipant
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
@@ -23,8 +23,8 @@ issue: Extension-UKCore-FamilyMemberHistoryParticipant
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
-- [UKCore-CareTeam](https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/home/profilesandextensions/profileukcore-careteam/index.guide.md?version=current)
-- [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current)
+- [UKCore-CareTeam](https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/home/profilesandextensions/profile-ukcore-careteam)
+- [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device)
 - {{pagelink:Profile-Organization}}
 - {{pagelink:Profile-Patient}}
 - {{pagelink:Profile-Practitioner}}

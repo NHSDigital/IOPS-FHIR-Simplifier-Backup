@@ -5,7 +5,7 @@ usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-EarlyWarningTotalScore
 ---
 
-# StructureDefinition-UKCore-Observation-EarlyWarningTotalScore
+# StructureDefinition {{variable:issue}}
 
 <div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
 
@@ -39,11 +39,11 @@ The following are example usage scenarios for the UK Core Observation Early Warn
 
 This is a derived profile of {{pagelink:Profile-Observation,text:UKCore-Observation}} and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
 
-### Minimum Viable Content
+### Mandatory and Must Support Data Elements
 
-The minimum viable content that all provider and consumer systems SHALL support are the elements within the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} table, along with the following.
+The following elements, including those of the the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} parent profile, are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
-<table class="assets" title="Minimum Viable Content list">
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>

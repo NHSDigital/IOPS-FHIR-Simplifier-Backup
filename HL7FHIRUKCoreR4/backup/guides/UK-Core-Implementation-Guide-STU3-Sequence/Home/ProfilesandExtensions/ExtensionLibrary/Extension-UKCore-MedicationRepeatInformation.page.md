@@ -2,7 +2,7 @@
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation
 issue: Extension-UKCore-MedicationRepeatInformation
 ---
-## StructureDefinition Extension-UKCore-MedicationRepeatInformation
+## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td>

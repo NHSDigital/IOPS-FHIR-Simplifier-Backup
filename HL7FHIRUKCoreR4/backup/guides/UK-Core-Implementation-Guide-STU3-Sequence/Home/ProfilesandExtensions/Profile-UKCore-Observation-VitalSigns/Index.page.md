@@ -5,7 +5,7 @@ usage: http://hl7.org/fhir/StructureDefinition/Observation
 issue: UKCore-Observation-VitalSigns
 ---
 
-# StructureDefinition-UKCore-Observation-VitalSigns
+# StructureDefinition {{variable:issue}}
 
 <div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Important</h4>
 
@@ -70,9 +70,11 @@ The guidance on this page also applies to the following profiles, that are deriv
 
 ### Minimum Viable Content
 
-The minimum viable content that all provider and consumer systems SHALL support are the elements within the corresponding UKCore-Observation table, along with the following.
+### Mandatory and Must Support Data Elements
 
-<table class="assets" title="Minimum Viable Content list">
+The following elements, including those of the the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} parent profile, are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
+
+<table class="assets" title="MustSupport element list">
 <tr>
 <th class="width30">Element</th>
 <th class="width70">Reason</th>
