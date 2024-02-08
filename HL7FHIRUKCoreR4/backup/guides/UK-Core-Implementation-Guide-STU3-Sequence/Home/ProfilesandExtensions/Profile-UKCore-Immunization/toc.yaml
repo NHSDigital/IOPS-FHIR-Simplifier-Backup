@@ -1,7 +1,7 @@
 - name: Index
   filename: Index.page.md
 - name: Extensions
-  filename: extensions.page.md
+  filename: Extensions.page.md
 - name: Bindings
   filename: Bindings.page.md
 - name: Constraints

@@ -2,11 +2,6 @@
 
 <table id="addToBindings">
 <tr>
-<th class="width30">Context</th>
-<th class="width20">Strength</th>
-<th class="width50">Link</th>
-</tr>
-<tr>
 <td>RelatedPerson.extension:contactPreference.<br>extension:PreferredContactMethod</td>
 <td>extensible</td>
 <td>{{pagelink:ValueSet-UKCore-PreferredContactMethod}}</td>

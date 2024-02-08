@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient
 usage: http://hl7.org/fhir/StructureDefinition/Patient
 issue: UKCore-Patient
 ---
-# StructureDefinition-UKCore-Patient
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -65,81 +65,8 @@ The following are example usage scenarios for the UK Core Patient profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>Patient.identifier</code></td>
-<td>An identifier for this patient.</td>
-</tr>
-<tr>
-<td><code>Patient.identifier.system</code></td>
-<td>The namespace for the identifier value.</td>
-</tr>
-<tr>
-<td><code>Patient.identifier.value</code></td>
-<td>The portion of the identifier typically relevant to the user and which is unique within the context of the system.</td>
-</tr>
-<tr>
-<td><code>Patient.active</code></td>
-<td>Whether this patient's record is in active use.</td>
-</tr>
-<tr>
-<td><code>Patient.name</code></td>
-<td>A name associated with the patient.</td>
-</tr>
-<tr>
-<td><code>Patient.name.family</code></td>
-<td>Family name (often called 'Surname').</td>
-</tr>
-<tr>
-<td><code>Patient.name.given</code></td>
-<td>Given names (not always 'first'). Includes middle names.</td>
-</tr>
-<tr>
-<td><code>Patient.telecom</code></td>
-<td>A contact detail for the individual</td>
-</tr>
-<tr>
-<td><code>Patient.telecom.system</code></td>
-<td>Telecommunications form for contact point</td>
-</tr>
-<tr>
-<td><code>Patient.telecom.value</code></td>
-<td>The actual contact point details</td>
-</tr>
-<tr>
-<td><code>Patient.gender</code></td>
-<td> the gender that the patient is considered to have for administration and record keeping purposes.</td>
-</tr>
-<tr>
-<td><code>Patient.birthDate</code></td>
-<td>The date of birth for the individual.</td>
-</tr>
-<tr>
-<td><code>Patient.address</code></td>
-<td>An address for the individual
-</td>
-</tr>
-<tr>
-<td><code>Patient.address.line</code></td>
-<td>Street name, number, direction & P.O. Box etc.</td>
-</tr>
-<tr>
-<td><code>Patient.address.city</code></td>
-<td>Name of city, town etc.</td>
-</tr>
-<tr>
-<td><code>Patient.address.postalCode</code></td>
-<td>Postal code for area</td>
-</tr>
-</table>
 </div>
 
 ---

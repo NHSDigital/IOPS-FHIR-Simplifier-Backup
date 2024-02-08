@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen
 usage: http://hl7.org/fhir/StructureDefinition/Specimen
 issue: UKCore-Specimen
 ---
-# StructureDefinition-UKCore-Specimen
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -43,32 +43,8 @@ The following are example usage scenarios for the UK Core Specimen profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>Specimen.status</code></td>
-<td>The availability of the specimen.</td>
-</tr>
-<tr>
-<td><code>Specimen.type</code></td>
-<td>The kind of material that forms the specimen.</td>
-</tr>
-<tr>
-<td><code>Specimen.subject</code></td>
-<td>Where the specimen came from.</td>
-</tr>
-<tr>
-<td><code>Specimen.receivedTime</code></td>
-<td>The time when specimen was received for processing.</td>
-</tr>
-</table>
 </div>
 
 ---

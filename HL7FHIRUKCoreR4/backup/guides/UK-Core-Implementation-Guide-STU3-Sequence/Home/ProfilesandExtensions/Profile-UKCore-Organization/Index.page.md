@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization
 usage: http://hl7.org/fhir/StructureDefinition/Organization
 issue: UKCore-Organization
 ---
-# StructureDefinition-UKCore-Organization
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -37,36 +37,8 @@ issue: UKCore-Organization
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>Organization.identifier</code></td>
-<td>Identifies this organization across multiple systems</td>
-</tr>
-<tr>
-<td><code>Organization.active</code></td>
-<td>Whether the organization's record is still in active use</td>
-</tr>
-<tr>
-<td><code>Organization.name</code></td>
-<td>A name associated with the organization.</td>
-</tr>
-<tr>
-<td><code>Organization.telecom</code></td>
-<td>A contact detail for the organization.</td>
-</tr>
-<tr>
-<td><code>Organization.address</code></td>
-<td>An address for the organization.</td>
-</tr>
-</table>
 </div>
 
 ---

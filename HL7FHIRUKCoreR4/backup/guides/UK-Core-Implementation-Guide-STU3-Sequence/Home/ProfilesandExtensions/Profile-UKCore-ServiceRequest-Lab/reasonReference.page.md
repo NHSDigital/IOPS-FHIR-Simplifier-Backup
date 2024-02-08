@@ -4,9 +4,9 @@ Where possible, it is expected that the resource being referenced SHOULD conform
 - {{pagelink:Profile-Condition}}
 - {{pagelink:Profile-DiagnosticReport}}
 - {{pagelink:Profile-DiagnosticReport-Lab}}
-- <a href="https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-DocumentReference?version=current" target="_blank" class="external">Profile UKCore-DocumentReference</a>
+- [Profile UKCore-DocumentReference (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-DocumentReference)
 - {{pagelink:Profile-Observation}}
-- {{pagelink:Profile-Observation-Lab}}
 - {{pagelink:Profile-Observation-Group}}
+- {{pagelink:Profile-Observation-Lab}}
 
 ---

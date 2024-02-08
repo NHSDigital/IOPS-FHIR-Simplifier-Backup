@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner
 usage: http://hl7.org/fhir/StructureDefinition/Practitioner
 issue: UKCore-Practitioner
 ---
-# StructureDefinition-UKCore-Practitioner
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -39,33 +39,8 @@ The following are example usage scenarios for the UK Core Practitioner profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>Practitioner.identifier</code></td>
-<td>An identifier that applies to this person in this role.
-</td>
-</tr>
-<tr>
-<td><code>Practitioner.name</code></td>
-<td>The name(s) associated with the practitioner</td>
-</tr>
-<tr>
-<td><code>Practitioner.name.family</code></td>
-<td>Family name (often called 'Surname')</td>
-</tr>
-<tr>
-<td><code>Practitioner.telecom</code></td>
-<td>A contact detail for the practitioner (that apply to all roles)</td>
-</tr>
-</table>
 </div>
 
 ---

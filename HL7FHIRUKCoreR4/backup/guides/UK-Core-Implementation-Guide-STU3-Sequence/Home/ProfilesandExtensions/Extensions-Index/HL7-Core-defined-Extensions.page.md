@@ -57,6 +57,12 @@ Implementers of the UK Core profiles MAY also use other HL7 core-defined extensi
 <td>NO</td>
 </tr>
 <tr>
+<td><a href="https://hl7.org/fhir/R4/extension-patient-proficiency.html">Core-defined Extension patient-proficiency</a></td>
+<td>Patient</td>
+<td>{{pagelink:Profile-Patient}}</td>
+<td>NO</td>
+</tr>
+<tr>
 <td><a href="https://hl7.org/fhir/R4/extension-specimen-specialhandling.html" class="external">Extension specimen-specialHandling</a></td>
 <td>Specimen.collection</td>
 <td>{{pagelink:Profile-Specimen}}</td>
