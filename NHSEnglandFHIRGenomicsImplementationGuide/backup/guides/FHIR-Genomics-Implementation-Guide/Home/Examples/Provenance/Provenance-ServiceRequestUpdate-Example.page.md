@@ -30,4 +30,3 @@ Example of a Provenance resource to record an update made to a ServiceRequest, w
 {{tree:Provenance/Provenance-ServiceRequestUpdate-Example}}
     </div>
   </div>
-</div>
