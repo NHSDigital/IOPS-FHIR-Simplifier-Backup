@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson
 usage: http://hl7.org/fhir/StructureDefinition/RelatedPerson
 issue: UKCore-RelatedPerson
 ---
-# StructureDefinition-UKCore-RelatedPerson
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}} 
@@ -28,40 +28,8 @@ The following are example usage scenarios for the UK Core RelatedPerson profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>RelatedPerson.active</code></td>
-<td>Whether this related person's record is in active use.</td>
-</tr>
-<tr>
-<td><code>RelatedPerson.patient</code></td>
-<td>The patient this person is related to.</td>
-</tr>
-<tr>
-<td><code>RelatedPerson.relationship</code></td>
-<td>The nature of the relationship.</td>
-</tr>
-<tr>
-<td><code>RelatedPerson.name</code></td>
-<td>A name associated with the person.</td>
-</tr>
-<tr>
-<td><code>RelatedPerson.telecom</code></td>
-<td>A contact detail for the person.</td>
-</tr>
-<tr>
-<td><code>RelatedPerson.address</code></td>
-<td>Address where the related person can be contacted or visited.</td>
-</tr>
-</table>
 </div>
 
 ---

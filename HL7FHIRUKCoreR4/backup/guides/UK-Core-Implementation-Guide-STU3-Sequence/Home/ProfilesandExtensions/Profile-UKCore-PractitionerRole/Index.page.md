@@ -4,7 +4,7 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole
 usage: http://hl7.org/fhir/StructureDefinition/PractitionerRole
 issue: UKCore-PractitionerRole
 ---
-# StructureDefinition-UKCore-PractitionerRole
+# StructureDefinition {{variable:issue}}
 
 <nocheck>
 {{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
@@ -30,44 +30,8 @@ The following are example usage scenarios for the UK Core PractitionerRole profi
 
 ## Profile Specific Implementation Guidance: ##
 
-### Mandatory and Must Support Data Elements
+{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
-
-<table class="assets" title="MustSupport element list">
-<tr>
-<th class="width30">Element</th>
-<th class="width70">Reason</th>
-</tr>
-<tr>
-<td><code>PractitionerRole.active</code></td>
-<td>Whether this practitioner role record is in active use</td>
-</tr>
-<tr>
-<td><code>PractitionerRole.period</code></td>
-<td>The period during which the practitioner is authorized to perform in these role(s)</td>
-</tr>
-<tr>
-<td><code>PractitionerRole.practitioner</code></td>
-<td>Practitioner that is able to provide the defined services for the organization</td>
-</tr>
-<tr>
-<td><code>PractitionerRole.organization</code></td>
-<td>Organization where the roles are available</td>
-</tr>
-<tr>
-<td><code>PractitionerRole.specialty</code></td>
-<td>Specific specialty of the practitioner</td>
-</tr>
-<tr>
-<td><code>PractitionerRole.location</code></td>
-<td>The location(s) at which this practitioner provides care</td>
-</tr>
-<tr>
-<td><code>PractitionerRole.telecom</code></td>
-<td>Contact details that are specific to the role/location/service</td>
-</tr>
-</table>
 </div>
 
 ---
