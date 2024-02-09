@@ -1,0 +1,163 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example",
+  "identifier": [
+    {
+      "system": "https://fhir.leedssth.nhs.uk//Id/grouptestId",
+      "value": "RR-REQ12764",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "RR8"
+        }
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs",
+            "display": "NHS"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "rare-disease-wgs",
+          "display": "Rare Disease - WGS"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "R98.2",
+        "display": "Likely inborn error of metabolism"
+      }
+    ],
+    "text": "This is a Trio Testing, comprising 3 family members with their respective specimen`s & Record Of Discussion`s"
+  },
+  "subject": {
+    "reference": "Patient/Patient-PheobeSmitham-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539"
+    }
+  },
+  "authoredOn": "2023-09-15T15:00:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmithLeedsSTH-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "103693007",
+          "display": "Diagnostic procedure"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "R0A"
+      }
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/Observation-GenomicEthnicity-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoPregnancy-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseaseStatus-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseasePenetrancePheobeSmitham-Example"
+    },
+    {
+      "reference": "Observation/Observation-IntellectualDisabilityProfound-Example"
+    },
+    {
+      "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
+    },
+    {
+      "reference": "Observation/Observation-AutisticBehaviour-Example"
+    },
+    {
+      "reference": "Observation/Observation-DelayedSpeech-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnionProband-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnionProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnionMother-Example"
+    },
+    {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandMother-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusion-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusionProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusionProbandMother-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-PheobeSmitham-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
+    },
+    {
+      "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
+    },
+    {
+      "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "No family history of genomic testing"
+    },
+    {
+      "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. Not eligible for R14 or R98. Agreed with testing laboratory at Manchester. Father lives in surrey. Father to have sample taken locally and sent to MFT."
+    }
+  ]
+}

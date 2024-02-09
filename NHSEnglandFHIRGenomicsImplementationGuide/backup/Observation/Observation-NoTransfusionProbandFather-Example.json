@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-NoTransfusionProbandFather-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "5447007",
+				"display": "Transfusion"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-PheobeSmithamMother-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307636"
+		}
+	},
+	"effectiveDateTime": "2023-09-15T15:00:00Z",
+	"valueBoolean": false
+}

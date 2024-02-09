@@ -1,0 +1,27 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "RelatedPerson-AliceSmithamProbandMother-Example",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307246"
+    }
+  ],
+  "patient": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539"
+    }
+  },
+  "relationship": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "MTH",
+          "display": "Mother"
+        }
+      ]
+    }
+  ]
+}

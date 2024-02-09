@@ -1,0 +1,52 @@
+{
+  "resourceType": "Task",
+  "id": "Task-WGSRareDiseaseTestOrderHold-TrioTestingProband-Example",
+  "status": "on-hold",
+  "statusReason": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
+        "code": "AwaitingRoDAndSpecimen",
+        "display": "Awaiting Record of Discussion and Specimen"
+      }
+    ]
+  },
+  "intent": "order",
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+        "code": "RequestSampleAlignment",
+        "display": "Request & Sample Alignment"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-PheobeSmitham-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539"
+    }
+  },
+  "authoredOn": "2023-09-15T15:00:00Z",
+  "lastModified": "2023-09-18T15:00:00Z",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-EugeneSmithLeedsSTH-Example"
+  },
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "R0A"
+    },
+    "display": "MANCHESTER UNIVERSITY NHS FOUNDATION TRUST"
+  },
+  "note": [
+    {
+      "text": "Optional Free Text field to record any additional details"
+    }
+  ]
+}

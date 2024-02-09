@@ -1,0 +1,42 @@
+{
+  "resourceType": "Specimen",
+  "id": "Specimen-PheobeSmithamFather-Example",
+  "identifier": [
+    {
+      "system": "https://fhir.leedssth.nhs.uk//Id/specimenId",
+      "value": "ROA-69050-MTH-RR12764"
+    }
+  ],
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "445295009",
+        "display": "Blood specimen with EDTA"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PheobeSmithamMother-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307246"
+    }
+  },
+  "collection": {
+    "collector": {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+        "value": "9999999998"
+      },
+      "display": "Phletobomist-Lois Lane"
+    },
+    "collectedDateTime": "2023-09-17"
+  },
+  "request": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+    }
+  ]
+}

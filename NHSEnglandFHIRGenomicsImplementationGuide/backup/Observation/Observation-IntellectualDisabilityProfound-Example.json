@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-IntellectualDisabilityProfound-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "https://hpo.jax.org/app/",
+				"code": "HP:0002187",
+				"display": "Intellectual disability, profound"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-PheobeSmitham-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307539"
+		}
+	},
+	"effectiveDateTime": "2023-09-15T15:00:00Z",
+	"valueBoolean": true
+}

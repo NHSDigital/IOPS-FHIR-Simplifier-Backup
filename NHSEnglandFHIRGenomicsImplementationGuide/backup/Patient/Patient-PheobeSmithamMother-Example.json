@@ -1,0 +1,93 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-PheobeSmithamMother-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+      "valueCode": "F"
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+            "code": "A",
+            "display": "White - British"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307246",
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                "version": "2.2.0",
+                "code": "01",
+                "display": "Number present and verified"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Alice"
+      ],
+      "family": "Smitham"
+    }
+  ],
+  "gender": "female",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "line": [
+        "Union Mills",
+        "9, Dewsbury Rd",
+        "Leeds"
+      ],
+      "postalCode": "LS11 5DD"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+        "value": "G9999999"
+      },
+      "display": "Dr. Aero Smith"
+    },
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/ODS-code",
+        "value": "AP123"
+      },
+      "display": "Anyhere place"
+    }
+  ],
+  "link": [
+    {
+      "other": {
+        "reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307246"
+      },
+      "type": "seealso"
+    },
+    {
+      "other": {
+        "reference": "RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example"
+      },
+      "type": "seealso"
+    }
+  ]
+}
