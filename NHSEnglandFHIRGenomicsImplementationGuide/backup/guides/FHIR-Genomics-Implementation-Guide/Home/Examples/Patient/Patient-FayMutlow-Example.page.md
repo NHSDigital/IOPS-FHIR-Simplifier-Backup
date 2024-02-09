@@ -1,5 +1,6 @@
 ---
 subject: Patient-FayMutlow-Example
+expand: yes
 ---
 
 ## {{page-title}}

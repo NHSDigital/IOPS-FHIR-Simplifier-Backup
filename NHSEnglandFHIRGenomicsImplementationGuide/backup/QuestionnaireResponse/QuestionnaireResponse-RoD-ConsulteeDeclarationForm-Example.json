@@ -126,20 +126,20 @@
           ]
         },
         {
+          "linkId": "dateConsulteeCompletedForm",
+          "text": "Date",
+          "answer": [
+            {
+              "valueDateTime": "2023-09-15"
+            }
+          ]
+        },
+        {
           "linkId": "consulteeSignature",
           "text": "Signature",
           "answer": [
             {
               "valueString": "JamesG"
-            }
-          ]
-        },
-        {
-          "linkId": "dateConsulteeCompletedForm",
-          "text": "Date",
-          "answer": [
-            {
-              "valueDateTime": "2024-01-25"
             }
           ]
         }
@@ -176,7 +176,7 @@
               "text": "Date",
               "answer": [
                 {
-                  "valueDateTime": "2024-01-25"
+                  "valueDateTime": "2023-09-15"
                 }
               ]
             }

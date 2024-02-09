@@ -22,6 +22,9 @@
 			]
 		}
 	],
+		"patient": {
+			"reference": "Patient/Patient-PheobeSmitham-Example"
+		},
 	"sourceReference": {
 		"reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-YoungPersonAssentForm-Example"
 	},

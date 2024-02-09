@@ -1,0 +1,240 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponse-RoD-PheobeSmithamMother-Example",
+  "questionnaire": "https://fhir.nhs.uk/Questionnaire/NHSDigital-Questionnaire-Genomics-Example",
+  "status": "completed",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Patient-PheobeSmithamMother-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307246"
+    }
+  },
+  "authored": "2023-09-15",
+  "author": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+      "value": "9999999996"
+    }
+  },
+  "source": {
+    "reference": "Patient/Patient-PheobeSmithamMother-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307246"
+    }
+  },
+  "item": [
+    {
+      "linkId": "patientDetails",
+      "text": "Patient Details",
+      "item": [
+        {
+          "linkId": "givenName",
+          "text": "First Name",
+          "answer": [
+            {
+              "valueString": "Alice"
+            }
+          ]
+        },
+        {
+          "linkId": "familyName",
+          "text": "Last Name",
+          "answer": [
+            {
+              "valueString": "Smitham"
+            }
+          ]
+        },
+        {
+          "linkId": "nhs_Number",
+          "text": "NHS number (or postcode if not not known)",
+          "answer": [
+            {
+              "valueString": "9449307246"
+            }
+          ]
+        },
+        {
+          "linkId": "birthDate",
+          "text": "Date of Birth",
+          "answer": [
+            {
+              "valueDate": "1983-03-22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "declaration4",
+      "text": "Confirmation of Your Genomic Test and Research Choices",
+      "item": [
+        {
+          "linkId": "confirmation",
+          "text": "I confirm that I have had the opportunity to discuss information about genomic testing, I agree to the genomic test, and my research choice is indicated below.",
+          "item": [
+            {
+              "linkId": "researchConfirmation1",
+              "text": "I have discussed taking part in the National Genomic Research Library. If your answer to A is NO then please ignore B and sign directly below",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "researchConfirmation2",
+              "text": "I agree that my data and remainder sample may contribute to the National Genomic Research Library",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "isRespondentAttorney",
+      "text": "Are you completing this form on behalf of someone?",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "linkId": "patientValidation",
+      "text": "Patient Validation",
+      "item": [
+        {
+          "linkId": "patientNamecombined",
+          "text": "Patient Name",
+          "answer": [
+            {
+              "valueString": "Alice Smitham"
+            }
+          ]
+        },
+        {
+          "linkId": "patientSignature",
+          "text": "Signature",
+          "answer": [
+            {
+              "valueString": "AliceSmitham"
+            }
+          ]
+        },
+        {
+          "linkId": "datePatientCompletedForm",
+          "text": "Date",
+          "answer": [
+            {
+              "valueDateTime": "2023-09-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "declaration5",
+      "text": "Healthcare professional use only",
+      "item": [
+        {
+          "linkId": "healthcareProfessional",
+          "text": "To be completed by the healthcare professional recording the patient’s choices.",
+          "item": [
+            {
+              "linkId": "patientCategory",
+              "text": "Patient category",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/CodeSystem/patient-choice-category-genomics",
+                    "code": "AdultOwnChoice",
+                    "display": "Adult(made their own choice)"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "testType",
+              "text": "Test type",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/CodeSystem/test-type-genomics",
+                    "code": "RID-WGS",
+                    "display": "Rare and Inherited Diseases - WGS"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "remoteConsent",
+              "text": "Remote consent, recorded remotely by clinician, no patient signature",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "responsibleClinician",
+              "text": "Responsible clinician",
+              "answer": [
+                {
+                  "valueString": "Dr. Eugene Smith"
+                }
+              ]
+            },
+            {
+              "linkId": "patientMRN",
+              "text": "Hospital number",
+              "answer": [
+                {
+                  "valueString": "NA"
+                }
+              ]
+            },
+            {
+              "linkId": "healthcareProfessionalName",
+              "text": "Healthcare professional name",
+              "answer": [
+                {
+                  "valueString": "Dr. Eugene Smith"
+                }
+              ]
+            },
+            {
+              "linkId": "healthcareProfessionalSignature",
+              "text": "Signature",
+              "answer": [
+                {
+                  "valueString": "Dr. Eugene Smith"
+                }
+              ]
+            },
+            {
+              "linkId": "datehealthcareProfessionalCompletedForm",
+              "text": "Date",
+              "answer": [
+                {
+                  "valueDateTime": "2023-09-15"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-DelayedSpeechLanguageDevt-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "https://hpo.jax.org/app/",
+				"code": "HP:0000750",
+				"display": "Delayed speech and language development"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-PheobeSmitham-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307539"
+		}
+	},
+	"effectiveDateTime": "2023-09-15T15:00:00Z",
+	"valueBoolean": true
+}

@@ -1,0 +1,31 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-DiseasePenetrancePheobeSmitham-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+				"code": "R14",
+				"display": "Acutely unwell children with a likely monogenic disorder"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-PheobeSmitham-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307539"
+		}
+	},
+	"effectiveDateTime": "2023-09-15T15:00:00Z",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "87006007",
+				"display": "Dominant autosomal hereditary disorder, incomplete penetrance"
+			}
+		]
+	}
+}

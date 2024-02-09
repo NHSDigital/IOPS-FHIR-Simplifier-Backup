@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-NonConsanguinousUnionProbandFather-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "842009",
+				"display": "Consanguinity"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-PheobeSmithamFather-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307636"
+		}
+	},
+	"effectiveDateTime": "2023-09-15T15:00:00Z",
+	"valueBoolean": false
+}

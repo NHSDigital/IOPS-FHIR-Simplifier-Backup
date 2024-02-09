@@ -1,0 +1,87 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "DiagnosticReport-PhoebeSmithGeneticReport-Example",
+  "identifier": [
+    {
+      "system": "https://mft.nhs.uk//nwglh/lims",
+      "value": "SLC52A2_GenomicReport",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "R0A"
+        }
+      }
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE",
+          "display": "Genetics"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1054161000000101",
+        "display": "Genetic report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PheobeSmitham-Example"
+  },
+  "issued": "2023-10-16T15:50:00Z",
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "R0A"
+      }
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-PheobeSmitham-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
+    }
+  ],
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "699866005",
+          "display": "Brown-Vialetto-Van Laere syndrome"
+        }
+      ],
+      "text": "Brown-Vialetto-Van Laere syndrome 2"
+    }
+  ],
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "language": "en-GB",
+      "url": "https://cts5j3.axshare.com/?id=mhxwul&p=final_report_issued_test_complete&g=1",
+      "size": 43272,
+      "title": "Genomic Report for Pheobe Smitham",
+      "creation": "2023-10-16"
+    }
+  ]
+}

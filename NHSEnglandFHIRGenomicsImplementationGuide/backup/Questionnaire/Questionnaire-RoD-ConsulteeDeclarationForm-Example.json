@@ -9,7 +9,7 @@
   "subjectType": [
     "Patient"
   ],
-  "date": "2024-01-18T09:00:00Z",
+  "date": "2023-09-15T09:00:00Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -217,28 +217,28 @@
           "required": true
         },
         {
-          "type": "string",
-          "linkId": "consulteeSignature",
-          "text": "Signature",
-          "required": true
-        },
-        {
           "type": "dateTime",
           "linkId": "dateConsulteeCompletedForm",
           "text": "Date",
+          "required": true
+        },
+        {
+          "type": "string",
+          "linkId": "consulteeSignature",
+          "text": "Signature",
+          "enableWhen": [
+            {
+              "question": "isRemoteConsentTrue",
+              "operator": "=",
+              "answerBoolean": false
+            }
+          ],
           "required": true
         }
       ],
       "type": "group",
       "linkId": "consulteeValidation",
-      "text": "Consultee Validation",
-      "enableWhen": [
-        {
-          "question": "isRemoteConsentTrue",
-          "operator": "=",
-          "answerBoolean": false
-        }
-      ]
+      "text": "Consultee Validation"
     },
     {
       "item": [

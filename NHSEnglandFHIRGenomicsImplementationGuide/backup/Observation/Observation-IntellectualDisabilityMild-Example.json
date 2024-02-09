@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"id": "Observation-IntellectualDisabilityMild-Example",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "https://hpo.jax.org/app/",
+				"code": "HP:0001256",
+				"display": "Intellectual disability, mild"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Patient-JamesLawrenceProbandFather-Example",
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9449307636"
+		}
+	},
+	"effectiveDateTime": "2023-09-15T15:00:00Z",
+	"valueBoolean": true
+}

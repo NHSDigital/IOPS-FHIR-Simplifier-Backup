@@ -1,0 +1,179 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example",
+  "questionnaire": "https://fhir.nhs.uk/Questionnaire/Questionnaire-RoD-ConsulteeDeclarationForm-Example",
+  "status": "completed",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Patient-PheobeSmitham-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307539"
+    },
+    "display": "A Patient"
+  },
+  "authored": "2023-09-15",
+  "author": {
+    "type": "PractitionerRole",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+      "value": "999999999999"
+    }
+  },
+  "source": {
+    "type": "RelatedPerson",
+    "reference": "RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307246"
+    }
+  },
+  "item": [
+    {
+      "linkId": "patientDetails",
+      "text": "Patient Details",
+      "item": [
+        {
+          "linkId": "givenName",
+          "text": "First Name",
+          "answer": [
+            {
+              "valueString": "Phoebe"
+            }
+          ]
+        },
+        {
+          "linkId": "familyName",
+          "text": "Last Name",
+          "answer": [
+            {
+              "valueString": "Smitham"
+            }
+          ]
+        },
+        {
+          "linkId": "nhs_Number",
+          "text": "NHS number (or postcode if not not known)",
+          "answer": [
+            {
+              "valueString": "9449307539"
+            }
+          ]
+        },
+        {
+          "linkId": "birthDate",
+          "text": "Date of Birth",
+          "answer": [
+            {
+              "valueDate": "2013-09-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "confirmationOfDecision",
+      "text": "Confirmation of decision",
+      "item": [
+        {
+          "linkId": "confirmation",
+          "text": "I confirm that I have read and had the opportunity to discuss information about acting as a consultee for the person lacking capacity. My research choices are indicated below.",
+          "item": [
+            {
+              "linkId": "choiceConfirmation1",
+              "text": "I have been consulted about this person’s participation in the National Genomic Research Library",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "choiceConfirmation2",
+              "text": "I am willing to accept the role of consultee for this person",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "isRemoteConsentTrue",
+      "text": "Consent obtained remotely, no consultee signature",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "linkId": "consulteeNamecombined",
+          "answer": [
+            {
+              "valueString": "Alice Smith"
+            }
+          ]
+        },
+        {
+          "linkId": "dateConsulteeCompletedForm",
+          "answer": [
+            {
+              "valueDateTime": "2023-09-15"
+            }
+          ]
+        }
+      ],
+      "linkId": "consulteeValidation",
+      "text": "Consultee Validation"
+    },
+    {
+      "linkId": "healthcareProfessionalValidation",
+      "text": "Healthcare professional use only",
+      "item": [
+        {
+          "linkId": "healthcareProfessional",
+          "text": "To be completed by the healthcare professional recording the consultee’s choices.",
+          "item": [
+            {
+              "linkId": "healthcareProfessionalName",
+              "text": "Healthcare professional name",
+              "answer": [
+                {
+                  "valueString": "Dr. Eugene Smith"
+                }
+              ]
+            },
+            {
+              "linkId": "healthcareProfessionalSignature",
+              "text": "Signature",
+              "answer": [
+                {
+                  "valueString": "EugeneSmith"
+                }
+              ]
+            },
+            {
+              "linkId": "datehealthcareProfessionalCompletedForm",
+              "text": "Date",
+              "answer": [
+                {
+                  "valueDateTime": "2023-09-15"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

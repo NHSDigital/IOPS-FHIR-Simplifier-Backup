@@ -1,0 +1,94 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-PheobeSmithamFather-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+      "valueCode": "M"
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+            "code": "A",
+            "display": "White - British"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307636",
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                "version": "2.2.0",
+                "code": "01",
+                "display": "Number present and verified"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "James"
+      ],
+      "family": "Lawrence"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1981-08-03",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "line": [
+        "1, Middlemead Close",
+        "Bookham"
+      ],
+      "city": "Surrey",
+      "postalCode": "KT23 3EB"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+        "value": "G9999999"
+      },
+      "display": "Dr. Bon Jovi"
+    },
+    {
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/ODS-code",
+        "value": "AIP123"
+      },
+      "display": "Anywhere Street"
+    }
+  ],
+  "link": [
+    {
+      "other": {
+        "reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307636"
+      },
+      "type": "seealso"
+    },
+    {
+      "other": {
+        "reference": "RelatedPerson/RelatedPerson-AliceSmithamProbandFather-Example"
+      },
+      "type": "seealso"
+    }
+  ]
+}
