@@ -4,8 +4,16 @@
   filename: Patient-AnitaLambertsDeceasedPatient-Example.page.md
 - name: Patient-AnitaLambertsMotherDeceasedPatient-Example
   filename: Patient-AnitaLambertsMotherDeceasedPatient-Example.page.md
+- name: Patient-DemeizaSeo-Example
+  filename: Patient-DemeizaSeo-Example.page.md
 - name: Patient-FayMutlow-Example
   filename: Patient-FayMutlow-Example.page.md
+- name: Patient-FoetusOfRyanneBoulder-Example
+  filename: Patient-FoetusOfRyanneBoulder-Example.page.md
+- name: Patient-JamesMetcalfe-Example
+  filename: Patient-JamesMetcalfe-Example.page.md
+- name: Patient-KayBurbridge-Example
+  filename: Patient-KayBurbridge-Example.page.md
 - name: Patient-MeirLiebermanPDS-Example
   filename: Patient-MeirLiebermanPDS-Example.page.md
 - name: Patient-LindsaySorrellPDS-Example
@@ -14,3 +22,21 @@
   filename: Patient-LindsaySorrell-Example.page.md
 - name: Patient-MeirLieberman-Example
   filename: Patient-MeirLieberman-Example.page.md
+- name: Patient-PatrickSammy-Example
+  filename: Patient-PatrickSammy-Example.page.md
+- name: Patient-PheobeSmitham-Example
+  filename: Patient-PheobeSmitham-Example.page.md
+- name: Patient-PheobeSmithamFather-Example
+  filename: Patient-PheobeSmithamFather-Example.page.md
+- name: Patient-PheobeSmithamMother-Example
+  filename: Patient-PheobeSmithamMother-Example.page.md
+- name: Patient-RyanneBoulder-Example
+  filename: Patient-RyanneBoulder-Example.page.md
+- name: Patient-RyanneBoulderPartner-Example
+  filename: Patient-RyanneBoulderPartner-Example.page.md
+- name: Patient-SalimaPomfrets-Example
+  filename: Patient-SalimaPomfrets-Example.page.md
+- name: Patient-TimMclullichs-Example
+  filename: Patient-TimMclullichs-Example.page.md
+- name: Patient-ZelmaHadjkiss-Example
+  filename: Patient-ZelmaHadjkiss-Example.page.md
