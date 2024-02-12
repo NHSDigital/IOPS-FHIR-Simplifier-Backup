@@ -39,7 +39,7 @@ The following are example usage scenarios for the UK Core Device profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-This is a derived profile of [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device) and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
+This is a derived profile of [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device) and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
 
 {{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 

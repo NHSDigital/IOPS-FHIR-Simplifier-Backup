@@ -47,7 +47,7 @@ An instance of the UKCore-Observation-VitalSigns-BloodPressure resource SHALL ha
 
 ### Mandatory and Must Support Data Elements
 
-The following elements, including those of the the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} and {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}}  arent profiles, are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
+The following elements, in addition to those of the the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} and {{pagelink:Profile-Observation-VitalSigns,text:UKCore-Observation-VitalSigns}} parent profiles, are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
 <table class="assets" title="MustSupport element list">
 <tr>

@@ -95,9 +95,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>Q-Z:</b></p> 
 <ul>  
-<li>{{pagelink:Example-UKCore-Questionnaire-EOLPlan}}</li>
-<li>{{pagelink:Example-UKCore-Questionnaire-FitnessForWork}}</li>
-<li>{{pagelink:Example-UKCore-Questionnaire-InpatientSurvey}}</li>
 <li>{{pagelink:Example-UKCore-RelatedPerson-JoySmith}}</li>
 <li>{{pagelink:Example-UKCore-Schedule-Immunization}}</li>
 <li>{{pagelink:Example-UKCore-ServiceRequest-ColonoscopyRequest}}</li>
@@ -277,7 +274,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Composition-Discharge}}</li>
 <li>{{pagelink:Example-UKCore-Condition-BleedingFromEar}}</li>
 <li>{{pagelink:Example-UKCore-HealthcareService-OrthopaedicService}}</li>
-<li>{{pagelink:Example-UKCore-Questionnaire-InpatientSurvey}}</li>
 <li>{{pagelink:Example-UKCore-Schedule-Immunization}}</li>
 <li>{{pagelink:Example-UKCore-Slot-AvailableWalkInVisit}}</li>
 <li>{{pagelink:Example-UKCore-Extension-BookingOrganization}}</li>
@@ -520,12 +516,6 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <p><b>Procedure:</b></p>
 <ul>
 <li>{{pagelink:Example-UKCore-Procedure-ExaminationOfSkin}}</li>
-</ul>
-<p><b>Questionnaire:</b></p>
-<ul>
-<li>{{pagelink:Example-UKCore-Questionnaire-EOLPlan}}</li>
-<li>{{pagelink:Example-UKCore-Questionnaire-FitnessForWork}}</li>
-<li>{{pagelink:Example-UKCore-Questionnaire-InpatientSurvey}}</li>
 </ul>
 <p><b>RelatedPerson:</b></p>
 <ul>

@@ -2,7 +2,7 @@
 topic: Profile-Observation-TobaccoConsumption
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-TobaccoConsumption
 usage: http://hl7.org/fhir/StructureDefinition/Observation
-issue: UKCore-Observation-TobaccoConsumpt
+issue: UKCore-Observation-TobaccoConsumption
 ---
 
 # StructureDefinition {{variable:issue}}
@@ -41,7 +41,7 @@ This is a derived profile of {{pagelink:Profile-Observation,text:UKCore-Observat
 
 ### Mandatory and Must Support Data Elements
 
-The following elements, including those of the the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} parent profile, are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
+The following elements, in addition to those in the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} parent profile, are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
 
 <table class="assets" title="MustSupport element list">
 <tr>
