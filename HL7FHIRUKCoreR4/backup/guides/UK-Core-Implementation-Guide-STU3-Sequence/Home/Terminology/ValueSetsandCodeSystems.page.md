@@ -1105,7 +1105,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</h4></td>
 <td>active</td>
-<td>{{pagelink:Profile-Observation-Group}}<br>
+<td>{{pagelink:Profile-Observation-Group-Lab}}<br>
 {{pagelink:Profile-ServiceRequest-Lab}}</td>
 <td><div markdown="span" class="alert alert-info"><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i>(See footnote)</div></td>
 </tr>
@@ -1906,7 +1906,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <p><b>HealthcareService:</b></p>
 <ul>
 <li>{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
-<li>{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
 </ul>
 <p><b>Immunization:</b></p>
 <ul>
@@ -2012,10 +2011,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-PreferredContactMethod}}</li>
 <li>{{pagelink:ValueSet-UKCore-PreferredWrittenCommunicationFormat}}</li>
 <li>{{pagelink:ValueSet-UKCore-ResidentialStatus}}</li>
-</ul>
-<p><b>Practitioner:</b></p>
-<ul>
-<li>{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
 </ul>
 <p><b>PractitionerRole:</b></p>
 <ul>

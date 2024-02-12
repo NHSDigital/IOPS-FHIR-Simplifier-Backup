@@ -46,7 +46,7 @@ As of 19/05/2023, the package to enable pre-adopted elements to function as per 
 <td><a href="https://hl7.org/fhir/R5/observation-definitions.html#Observation.bodyStructure" class="external">Observation.bodyStructure</a></td>
 <td>{{pagelink:Profile-Observation}}<br>
 {{pagelink:Profile-Observation-Lab}}<br>
-{{pagelink:Profile-Observation-Group}}</td>
+{{pagelink:Profile-Observation-Group-Lab}}</td>
 <td>{{pagelink:Extension-UKCore-ObservationBodyStructure}}</td>
 <td>NO</td>
 </tr>
@@ -54,7 +54,7 @@ As of 19/05/2023, the package to enable pre-adopted elements to function as per 
 <td><a href="https://hl7.org/fhir/R5/observation-definitions.html#Observation.triggeredBy" class="external">Observation.triggeredBy</a></td>
 <td>{{pagelink:Profile-Observation}}<br>
 {{pagelink:Profile-Observation-Lab}}<br>
-{{pagelink:Profile-Observation-Group}}</td>
+{{pagelink:Profile-Observation-Group-Lab}}</td>
 <td>{{pagelink:Extension-UKCore-ObservationTriggeredBy}}</td>
 <td>NO</td>
 </tr>

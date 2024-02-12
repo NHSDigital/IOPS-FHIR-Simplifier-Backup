@@ -86,9 +86,12 @@ The guidance on this page also applies to the following profiles, that are deriv
 - {{pagelink:Profile-Observation-InspiredOxygen}}
 - {{pagelink:Profile-Observation-TobaccoConsumption}}
 
+The guidance on this page also applies to the Vital Signs parent profile, and the profiles that are derived from the UK Core Observation Vital Signs profile:
+- {{pagelink:Profile-Observation-VitalSigns}}
+
 There are additional Lab related Observation profiles, that are not derived from the UK Core Observation profile:
 - {{pagelink:Profile-Observation-Lab}}
-- {{pagelink:Profile-Observation-Group}}
+- {{pagelink:Profile-Observation-Group-Lab}}
 
 {{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
