@@ -7,16 +7,13 @@
    </div>
    
    <div id="JSON View" class="tabcontent" style="display:block">
-     <h3>JSON</h3>
    {{json}}
    </div>
    
    <div id="XML View" class="tabcontent">
-     <h3>XML</h3>
    {{xml}}
    </div>
    
    <div id="Tree View" class="tabcontent">
-     <h3>Tree</h3>
    {{tree}}
    </div>
