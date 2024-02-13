@@ -145,8 +145,8 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td>0..1</td>
             <td>Optional</td>
             <td>Organisation.Status</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
-            <td>Status dropped from Final table - publish StatusName only. ACTIVE or INACTIVE</td>
+            <td </td>
+            <td> </td>
         </tr>
         <tr>
             <td>type</td>
