@@ -2,24 +2,24 @@
   filename: Index.page.md
 - name: Genomic-Business-Status
   filename: Genomic-Business-Status.page.md
+- name: Genomic-Message-Events
+  filename: Genomic-Message-Events.page.md
+- name: Genomic-Patient-Choice-Category
+  filename: Genomic-Patient-Choice-Category.page.md
+- name: Genomic-Patient-Consultee
+  filename: Genomic-Patient-Consultee.page.md
+- name: Genomic-Patient-Research-Choice
+  filename: Genomic-Patient-Research-Choice.page.md
 - name: Genomic-Task-Code
   filename: Genomic-Task-Code.page.md
 - name: Genomic-Task-StatusReason
   filename: Genomic-Task-StatusReason.page.md
 - name: Genomic-Coverage
   filename: Genomic-Coverage.page.md
-- name: Genomic-Message-Events
-  filename: Genomic-Message-Events.page.md
 - name: Genomic-NHSNumber-Unvailable-Reason
   filename: Genomic-NHSNumber-Unvailable-Reason.page.md
 - name: Genomic-Organization-Type
   filename: Genomic-Organization-Type.page.md
-- name: Genomic-Patient-Choice-Category
-  filename: Genomic-Patient-Choice-Category.page.md
-- name: Genomic-Patient-Research-Choice
-  filename: Genomic-Patient-Research-Choice.page.md
-- name: Genomic-Patient-Consultee
-  filename: Genomic-Patient-Consultee.page.md
 - name: Genomic-Sample-State
   filename: Genomic-Sample-State.page.md
 - name: Genomic-Test-Types

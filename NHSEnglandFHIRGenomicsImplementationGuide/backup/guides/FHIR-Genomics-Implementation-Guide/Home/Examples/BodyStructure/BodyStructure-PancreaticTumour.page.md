@@ -1,33 +1,18 @@
 ---
+subject: UKCore-BodyStructure-PancreaticTumour-Example
 expand: yes
 ---
+
 
 ## {{page-title}}
 
 BodyStructure recording the location of a Pancreatoblastoma, within the upper region of the Pancreas.
 
-<div class="nhsd-!t-margin-bottom-6">
-  <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#JSON-BS-PT-E" role="tab" data-toggle="tab">JSON</a>
-        </li>
-         <li role="presentation">
-            <a href="#XML-BS-PT-E" role="tab" data-toggle="tab">XML</a>
-        </li>
-        <li role="presentation">
-            <a href="#Tree-BS-PT-E" role="tab" data-toggle="tab">Tree</a>
-        </li>
-  </ul>
-    
-  <div class="tab-content snippet">
-    <div id="JSON-BS-PT-E" role="tabpanel" class="tab-pane active">
-{{json:UKCore-BodyStructure-PancreaticTumour-Example}}
-    </div>
-    <div id="XML-BS-PT-E" role="tabpanel" class="tab-pane">
-{{xml:UKCore-BodyStructure-PancreaticTumour-Example}}
-    </div>
-    <div id="Tree-BS-PT-E" role="tabpanel" class="tab-pane">
-{{tree:UKCore-BodyStructure-PancreaticTumour-Example}}
-    </div>
-  </div>
+{{page:Home-Examples-ExamplesTemplate}}
+
+
+<div id="Feedback" class="tabcontent">
+<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/BodyStructure-UKCore-BodyStructure-PancreaticTumour-Example/~issues?level=File' target="_blank">Propose a change to UKCore-BodyStructure-PancreaticTumour-Example</a></h4>
 </div>
+
+---
