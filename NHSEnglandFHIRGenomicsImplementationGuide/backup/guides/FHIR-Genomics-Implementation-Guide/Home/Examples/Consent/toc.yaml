@@ -1,9 +1,13 @@
 - name: Index
   filename: Index.page.md
-#- name: Consent-MichaelJonesConsent
-#  filename: Consent-MichaelJonesConsent.page.md
-#- name: Consent-MichaelJonesConsent-Minimal
-#  filename: Consent-MichaelJonesConsent-Minimal.page.md
+- name: Consent-RoD-PheobeSmitham-Example
+  filename: Consent-RoD-PheobeSmitham-Example.page.md
+- name: Consent-RoD-PheobeSmithamFather-Example
+  filename: Consent-RoD-PheobeSmithamFather-Example.page.md
+- name: Consent-RoD-PheobeSmithamMother-Example
+  filename: Consent-RoD-PheobeSmithamMother-Example.page.md
+- name: Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example
+  filename: Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example.page.md
 - name: Consent-RoDAvailable-Example
   filename: Consent-RoDAvailable-Example.page.md
 - name: Consent-RoDToFollow-Example
