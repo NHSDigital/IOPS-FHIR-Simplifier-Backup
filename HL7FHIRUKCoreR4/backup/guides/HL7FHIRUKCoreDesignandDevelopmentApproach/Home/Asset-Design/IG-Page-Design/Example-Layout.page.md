@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-Each example SHALL have its own page within either the ‘Profile Examples’ or ‘Extension Examples’ folder, listed in alphabetical order. The page SHALL be named ‘Example UKCore-<i>[example name]</i>’. 
+Each example SHALL have its own page within either the ‘Profile Examples’ or ‘Extension Examples’ folder, listed in alphabetical order. The page SHALL be named ‘Example UKCore-<i>[Example id]</i>’. 
 
 Each example SHALL be referenced within table on the ‘Examples Index’ page in all tab indexes. 
 

@@ -5,9 +5,10 @@ ValueSets SHALL have a page within the ‘All ValueSets’ folder with the namin
 The layout SHALL be in the following format: 
 ~~~~html
 ---
-subject: https://fhir.hl7.org.uk/ValueSet/UKCore-[Name]
+subject: [ValueSet URL]
+issue: [ValueSet id]
 ---
-## UK Core Vaccine Code
+## UK Core [ValueSet Title]
 
 { {page:Home/Terminology/AllValueSets/ValueSetTemplate.page.md}}
 ~~~~

@@ -9,7 +9,7 @@ For example, the Glossary is rendered via:
 
 <div markdown="span" class="alert alert-warning" role="alert">
 <h4><i class="fa fa-info-circle"></i> Important</h4>
-Currently, Simplifier commands, such as FQL or pagelink / tree / xml / json / render, will not be processed by the rendered page.
+Ensure that you check that Simplifier commands, such as FQL or pagelink / tree / xml / json / render, are processed correctly by the rendered page.
 </div>
 
 ---

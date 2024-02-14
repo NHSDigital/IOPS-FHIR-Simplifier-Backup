@@ -25,7 +25,7 @@ Links to active UKCore profiles SHALL be done using pagelink
 
 Links to draft profiles SHALL be written as 
 ~~~html
-<a href="https://simplifier.net/hl7fhirukcorer4/ukcore[profile]">Profile UKCore-[Profile]</a>
+[UKCore-CarePlan (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-CarePlan)
 ~~~
 
 <div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-info-circle"></i> Important</h4>
@@ -35,23 +35,23 @@ Links to draft profiles SHOULD only be present in IG's in development. An IG tha
 
 Links to HL7 resources SHALL be written as:
 ~~~html
-<a href="https://hl7.org/fhir/R4/[Resource].html">[Resource] Resource</a>
+[[Resource] Resource](https://hl7.org/fhir/R4/[Resource].html)
 ~~~
 
 Referencing all profiles SHALL be done using the following sentences:
 - For a single resource: 
 ~~~html
-The resource being referenced SHALL conform to { {pagelink:Profile-[profile]}}.
+Where possible, it is expected that the resource being referenced SHOULD conform to  { {pagelink:Profile-[profile]}}.
 ~~~
 - For a multiple resources, with at least one UK Core profile: 
 ~~~html
- The resource being referenced SHALL conform to one of the following: 
+Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 - { {pagelink:Profile-[profile]}}
 - { {pagelink:Profile-[profile]}}
 ~~~
 - Where the reference is to <code>Resource</code>:
 ~~~html
-Where a UK Core profile exists the resource being referenced SHALL conform to the profile.
+Where a UK Core profile exists the resource being referenced SHOULD conform to the profile.
 ~~~
 
 
@@ -61,7 +61,7 @@ If there are no recognised business identifiers, then do not create a page for `
 
 ### Slices
 
-If an element has a slice, this SHOULD be identified in the text, for example: 
+If an element has a slice, this SHOULD be identified in the text, included it's discriminatorfor example: 
 
 ~~~html
 The slice `ServiceRequest.category:genomicsWholeCaseSequencing` has been added to aid in identifying the category of service request for Genomics use cases.

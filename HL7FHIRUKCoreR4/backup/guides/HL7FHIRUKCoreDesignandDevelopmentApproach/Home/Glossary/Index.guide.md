@@ -2,8 +2,10 @@
 
 This glossary gives a short definition of terms used in this implementation guide. Links are supplied to websites where further information which may help the reader can be found. 
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-information"></i><h4> Disclaimer</h4>
-Where the link to further reading is provided by the UK Core Development team is to an external website it is done with the best intentions, however the UK Core team cannot guarantee the accuracy of the information supplied, and is not responsible for the contents of any external internet sites listed.
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-info-circle"><h4> Disclaimer</h4></i>
+Whilst every effort has been made to ensure that the glossary entries are correct and useful, they are not a normative part of the specification.
+<br><br>
+Where the link to further reading is provided by the UK Core development team is to an external website it is done with the best intentions, however the UK Core team cannot guarantee the accuracy of the information supplied, and is not responsible for the contents of any external internet sites listed. 
  </div>
 
 <b>
@@ -74,9 +76,9 @@ All information is provided on a need-to-know basis and based on a user’s role
 </tr>
 <tr>
 <td>Active patient</td>
-<td>An Active patient as defined by GP Connect is any patient on a providers system that has Not Left and is Not Deceased. The concept of Active is related to the patient’s registration status rather than to the patients registration type.
+<td>An Active patient, as defined by GP Connect, is any patient on a provider's system that have 'Not Left' and are 'Not Deceased'. The concept of 'Active' is related to the patient’s registration status rather than to the patient's registration type.
 <br><br>
-A provider's system may have a number of different statuses which should be considered Active. Many of those statuses may apply to a number of different registration type. Below is a basic example of a possible GP Practice representation of patient registration type and registration status, to help explain the concept of an Active patient within GP Connect.</td>
+A provider's system may have a number of different statuses which should be considered Active. Many of those statuses may apply to a number of different registration types.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -968,7 +970,7 @@ This was previously known as National Administrative Codes Service (NACS).</td>
 </tr>
 <tr>
 <td>Participation</td>
-<td>The involvement of a HL7 role class in an HL7 act class.</td>
+<td>The involvement of an HL7 role class in an HL7 act class.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -1042,7 +1044,7 @@ The PRSB is a national body providing an independent patient and professional vo
 </tr>
 <tr>
 <td>PTV</td>
-<td>The Permission to View (PTV) is a business service that records that a patient has given an explicit permission to view their SCR.</td>
+<td>The Permission to View (PTV) is a business service that records that a patient has given explicit permission to view their SCR.</td>
 <td><br></td>
 </tr>
 </tbody>
@@ -1063,12 +1065,12 @@ The PRSB is a national body providing an independent patient and professional vo
 </tr>
 <tr>
 <td>RBAC</td>
-<td>RBAC is the process through which a national set of job roles, activities and work-groups can be applied to grant users access to functionality and indirectly to data within NHS national (Spine) services. Role Based Access Control defines roles and allows business activities associated with a user (via their smartcard). It is Implemented using SAML.</td>
+<td>RBAC is the process through which a national set of job roles, activities and work-groups can be applied to grant users access to functionality and indirectly to data within NHS national (Spine) services. Role Based Access Control defines roles and allows business activities associated with a user (via their smartcard). It is implemented using SAML.</td>
 <td><br></td>
 </tr>
 <tr>
 <td>Requester</td>
-<td>An individual or an organisation responsible for the requesting an action to be performed for the patient.</td>
+<td>Refers to an individual or organization responsible for initiating a request for a specific action for instance, creating, updating, or reading patient data.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -1092,7 +1094,7 @@ It is a shared model between all domains and is the model from which all domains
 </tr>
 <tr>
 <td>RMIM</td>
-<td>Refined Message Information Model (RMIM) is a HL7 model derived from the HL7 Reference Information Model (RIM).</td>
+<td>Refined Message Information Model (RMIM) is an HL7 model derived from the HL7 Reference Information Model (RIM).</td>
 <td><br></td>
 </tr>
 <tr>
@@ -1128,7 +1130,7 @@ It is a shared model between all domains and is the model from which all domains
 </tr>
 <tr>
 <td>Schematron</td>
-<td>The schematron is an XML structure validation language for making assertions about the presence or absence of patterns in trees. It is a simple and powerful structural schema language.</td>
+<td>The Schematron is an XML structure validation language for making assertions about the presence or absence of patterns in trees. It is a simple and powerful structural schema language.</td>
 <td><br></td>
 </tr>
 <tr>

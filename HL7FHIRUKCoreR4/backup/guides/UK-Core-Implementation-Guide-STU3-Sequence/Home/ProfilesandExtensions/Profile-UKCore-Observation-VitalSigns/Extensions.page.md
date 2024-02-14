@@ -23,6 +23,5 @@ More information about the extensions can be found using the links below.
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ProfileExtensionsTemplate.page.md}}
 
 ---

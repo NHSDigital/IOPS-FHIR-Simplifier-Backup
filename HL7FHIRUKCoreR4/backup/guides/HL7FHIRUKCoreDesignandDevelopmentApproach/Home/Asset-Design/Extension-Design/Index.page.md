@@ -16,5 +16,9 @@ Currently the UK Core does not use modifierExtensions, so no guidance is given h
 More information on <a href="http://hl7.org/fhir/r4/extensibility.html#modifierExtension">modifierExtensions</a> is available in the FHIR specification.
 
 Each Extension SHALL have an associated example to describe its usage, and the example SHALL be added to the example tab within the relevant profile and the extension page. 
+
+Any binding in an Extension SHALL only be done to CodeableConcept value's - cvode and coding values SHALL NOT be used.
+
+Referencing to resources SHOULD be to the base resource rather than a UK Core Profile, unless agreed.
  
 ---

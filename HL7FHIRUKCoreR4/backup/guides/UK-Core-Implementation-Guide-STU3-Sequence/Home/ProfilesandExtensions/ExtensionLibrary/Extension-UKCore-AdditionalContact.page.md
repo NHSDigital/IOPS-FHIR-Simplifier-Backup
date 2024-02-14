@@ -19,7 +19,7 @@ issue: Extension-UKCore-AdditionalContact
 <br><br>
 </div>
 
-<h3 id="guidance-additionalcontact">Extension Specific Guidance</h3>
+<h3 id="guidance-{{variable:issue}}">Extension Specific Guidance</h3>
 
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
