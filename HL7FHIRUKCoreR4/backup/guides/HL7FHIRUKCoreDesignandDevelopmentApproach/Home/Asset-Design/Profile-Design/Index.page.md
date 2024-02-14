@@ -9,6 +9,7 @@ The checklist below was adhered to when developing a draft UK Core profile suita
 For each profile, where a CareConnect STU3 profile exists, refer to it as a starting point for the UK Core FHIR R4 profiling exercise,
 - Consider the resource changes between FHIR STU3 and R4 versions
 Analyse the changes in the FHIR standard between FHIR STU3 version and FHIR R4,for example the addition or deletion of any elements and the introduction of new or updated terminology assets in the R4 version.
+- Referencing to resources SHOULD be to the base resource rather than a UK Core Profile, unless agreed.
 
 ## Approach to StructureDefinition elements
 - **Identifiers** - Where existing CareConnect STU3 profiles have applied slicing and profiling to identifiers, this will be recreated in the UK Core profiles, then evaluated during Clinical and Technical assurance.

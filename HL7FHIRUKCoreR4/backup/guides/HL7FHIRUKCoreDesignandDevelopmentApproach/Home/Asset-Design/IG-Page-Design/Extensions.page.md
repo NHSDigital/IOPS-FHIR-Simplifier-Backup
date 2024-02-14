@@ -4,6 +4,18 @@ Any extension referenced within the profile SHALL be added to the Extensions pag
 
 If no information on the use of any extensions is needed, then the page SHALL be in the following format: 
 
+If there are only standard UK Core Extensions:
+
+~~~~html
+{ {page:Home/ProfilesandExtensions/ProfileExtensionsTemplate.page.md}}
+
+---
+
+~~~~
+
+
+If there are R5 pre-adopted backport Extensions AND / OR HL7 core defined Extensions:
+
 ~~~~html
 ## Extensions
 
@@ -17,14 +29,21 @@ More information about the extensions can be found using the links below.
 <th class="width30">Comment</th>
 </tr>
 <tr>
-<td>[extension name]</td>
-<td>[context of use]</td>
-<td>{ {pagelink:Extension-UKCore-[extension]}}</td>
-<td>[information on the use of the extension]</td>
+<td>bodyPosition</td>
+<td>Observation</td>
+<td><a href="https://hl7.org/fhir/R4/extension-observation-bodyPosition.html">Core-defined Extension observation-bodyPosition</a></td>
+<td></td>
+</tr>
+<tr>
+<td>bodyStructureR5</td>
+<td>Observation</td>
+<td>{ {pagelink:Extension-UKCore-ObservationBodyStructure}}</td>
+<td>This is a pre-adopted R5 element, for more details, see { {pagelink:Library-Extensions-PreAdopt}}.</td>
 </tr>
 </table>
 
 ---
 ~~~~
+
 
 ---

@@ -7,7 +7,7 @@ This contains any relevant information specifically to the profile. Within this 
 [add any specific implementation or use case guidance]
 ~~~
 
-If a profile is derived, it SHALL include a { {pagelink}} to the parent profile as per the examples below:
+If a profile is derived, it SHALL include a \{ \{pagelink}} to the parent profile as per the examples below:
 
 ~~~html
 ## Profile Specific Implementation Guidance: ##

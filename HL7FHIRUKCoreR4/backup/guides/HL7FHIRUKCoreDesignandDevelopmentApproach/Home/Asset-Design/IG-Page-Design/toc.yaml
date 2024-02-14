@@ -36,8 +36,8 @@
   filename: Example-Usage-Scenarios.page.md
 - name: Profile Specific Implementation Guidance
   filename: Profile-Specific-Implementation-Guidance.page.md
-- name: Minimum Viable Content
-  filename: Minimum-Viable-Content.page.md
+- name: Mandatory and MustSupport Content
+  filename: Mandatory-and-MustSupport-Content.page.md
 - name: Extensions
   filename: Extensions.page.md
 - name: Bindings

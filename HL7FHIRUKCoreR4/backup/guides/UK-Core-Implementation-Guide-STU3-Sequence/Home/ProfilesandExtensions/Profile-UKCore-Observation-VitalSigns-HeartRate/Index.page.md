@@ -52,6 +52,3 @@ The following elements, in addition to those of the the corresponding {{pagelink
 <td>A quantity SHALL be present.</td>
 </tr>
 </table>
-</div>
-
----
