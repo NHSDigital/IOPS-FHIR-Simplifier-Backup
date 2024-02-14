@@ -6,7 +6,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of a Condition resource, establishing a suspected breast cancer.
+Example of a Condition resource, suspected breast cancer.
 
 {{page:Home-Examples-ExamplesTemplate}}
 
