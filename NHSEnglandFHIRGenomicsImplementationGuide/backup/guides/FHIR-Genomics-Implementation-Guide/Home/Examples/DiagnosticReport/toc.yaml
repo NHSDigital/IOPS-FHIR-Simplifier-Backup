@@ -1,5 +1,13 @@
 - name: Index
   filename: Index.page.md
+- name: DiagnosticReport-AnitaLamberts-Example
+  filename: DiagnosticReport-AnitaLamberts-Example.page.md
+- name: DiagnosticReport-FayMutlowGeneticReport-Example
+  filename: DiagnosticReport-FayMutlowGeneticReport-Example.page.md
+- name: DiagnosticReport-JamesMetcalfeGeneticReport-Example
+  filename: DiagnosticReport-JamesMetcalfeGeneticReport-Example.page.md
+- name: DiagnosticReport-PhoebeSmithGeneticReport-Example
+  filename: DiagnosticReport-PhoebeSmithGeneticReport-Example.page.md
 - name: DiagnosticReport-MichaelJonesReport
   filename: DiagnosticReport-MichaelJonesReport.page.md
 - name: DiagnosticReport-MichaelJonesReport-Minimal
