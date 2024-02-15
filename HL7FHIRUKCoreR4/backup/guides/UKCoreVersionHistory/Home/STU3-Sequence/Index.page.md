@@ -23,25 +23,25 @@
 <li>Altered Profiles sub menu from hover to click to show</li>
 <li>Altered Profiles sub menu to restore its state via cookie</li>
 <li>Altered Profiles sub menu to have a sub menu for derived profiles</li>
-<li>Added cookie consent popup</li>
+<li>Added cookie consent pop-up</li>
 <li>Added Detailed View to Profile tabs</li>
 <li>Added Feedback to tabs, which links to the relevant Simplifier issues page to raise an issue for the asset</li>
 <li>Added "View UK Core guidance" link in pinnable panel, for elements where additional guidance is detailed on a page</li>
-<li>Added "or UK Core equivalent profile" guidance in pinnable panel, for Reference datatyoe elements where the resources include a UK Core profile</li>
+<li>Added "or UK Core equivalent profile" guidance in pinnable panel, for Reference datatype elements where the resources include a UK Core profile</li>
 <li>Added clickable element headers, that show / hide the relevant element details from the Detailed view</li>
-<li>Clicking an element in the left hand navigation list automatically displays the detailed view as per the above item</li>
-<li>Added configurable display options for displaying a UK Code profile within an iFrame</li>
+<li>Clicking an element in the left-hand navigation list automatically displays the detailed view as per the above item</li>
+<li>Added configurable display options for displaying a UK Code profile within an iframe</li>
 <li>Added configurable display options to highlight specific sections of an example</li>
 </ul>
 <b>C&TA Sprint 7 Assets:</b><br>
 <ul>
 <li>Changed proposed assets from draft to active</li>
 <li>value[x] and specimen cardinality set to 0..0 on <code>UKCore-Observation-AverageBloodPressure</code> and <code>UKCore-Observation-VitalSigns-BloodPressure</code></li>
-<li>Revised and simplified ecl's, and expansion of the ValueSet contents</li>
+<li>Revised and simplified ECL's, and expansion of the ValueSet contents</li>
 <li>Improved description and purpose</li>
-<li>Altered binding strength on Observation.ethod< to bring it in line with UK core Design and Devedlopment Approach</li>
-<li>Improved cardinality on loinc / snomedCT, and systolicBP / diastolicBP slices</li>
-<li>Moved loinc / snomedCT slicing on Observation.component from <code>UKCore-Observation-VitalSigns</code> to <code>UKCore-Observation-VitalSigns-BloodPressure</code> as they only applied for this derived profiles</li>
+<li>Altered binding strength on Observation.method< to bring it in line with UK core Design and Development Approach</li>
+<li>Improved cardinality on LOINC / SNOMED CT, and systolicBP / diastolicBP slices</li>
+<li>Moved LOINC / SNOMED CT slicing on Observation.component from <code>UKCore-Observation-VitalSigns</code> to <code>UKCore-Observation-VitalSigns-BloodPressure</code> as they only applied for this derived profiles</li>
 <li>Improved guidance on the use of code, value[x], and component elements for <code>UKCore-Observation-AverageBloodPressure</code> and <code>UKCore-Observation-VitalSigns-BloodPressure</code></li>
 </ul>
 <b>STU2 Sequence Ballot Assets:</b><br>
@@ -104,14 +104,14 @@
         <li>Added a Derived Profile: <code>UKCore-DiagnosticReport-Lab</code></li>
         <li>Removed slices on <code>category</code>, <code>code</code>, <code>conclusionCode</code></li>
         <li>Added Extension <code>UKCore-DeviceReference</code></li>
-        <li>Added backported R5 elements as proxy extensions using R5 url's for <code>note</code>, <code>composition</code></li>
+        <li>Added backported R5 elements as proxy extensions using R5 URL's for <code>note</code>, <code>composition</code></li>
         <li>Reverted <code>code</code> binding from <code>UKCore-FindingCode</code> to base ValueSet as they were identical</li>
     </ul>
 </li>
 <li>For <code>UKCore-FamilyMemberHistory</code>:
     <ul>
-        <li>Added a existing Extension <code>UKCore-AssociatedEncounter</code></li>
-        <li>Added backported R5 element as proxy extensions using R5 url's for <code>participant</code></li>
+        <li>Added an existing Extension <code>UKCore-AssociatedEncounter</code></li>
+        <li>Added backported R5 element as proxy extensions using R5 URL's for <code>participant</code></li>
         <li>Bound <code>relationship</code> to ValueSet <code>UKCore-PersonRelationshipType</code></li>
         <li>Existing base bindings have been assured, and strength raised to preferred or extensible, in line with the Design and Development Approach</li>
         <li>Retired draft Extension <code>UKCore-Recorder</code>, as this is replaced by backported R5 element <code>participant</code></li>
@@ -122,7 +122,7 @@
         <li>Added Derived Profiles: <code>UKCore-Observation-LabGroup</code> and <code>UKCore-Observation-Lab</code></li>
         <li>Removed slices on <code>code</code>, <code>bodySite</code></li>
         <li>Reverted <code>bodySite</code> binding from <code>UKCore-BodySite</code> to base ValueSet as they were identical</li>
-        <li>Addded backported R5 element as proxy extensions using R5 url's for <<code>triggeredBy</code></li>
+        <li>Added backported R5 element as proxy extensions using R5 URL's for <code>triggeredBy</code></li>
     </ul>
 </li>
 <li>For <code>UKCore-Specimen</code>:
@@ -130,7 +130,7 @@
         <li>Removed slices on <code>type</code>, <code>collection.bodySite</code></li>
         <li>Added Extension <code>UKCore-SampleCategory</code></li>
         <li>Added Extension <code>UKCore-BodySiteReference</code>, to replicate CodeableReference allowed in R5</li>
-        <li>Added backported R5 element as proxy extensions using R5 url's for <code>collection.collector</code>, to replicate additional references allowed in R5</li>
+        <li>Added backported R5 element as proxy extensions using R5 URL's for <code>collection.collector</code>, to replicate additional references allowed in R5</li>
         <li>Added ValueSet <code>UKCore-SpecimenCondition</code>, bound to <code>condition</code>, which extends the base ValueSet, with CodeSystem <code>UKCore-BiopsyState</code></li>
     </ul>
 </li>
