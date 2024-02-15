@@ -28,7 +28,7 @@ issue: UKCore-Device
 The following are example usage scenarios for the UK Core Device profile:
 
 - Query and retrieve information regarding a medical device
-- Record or update a device used during a patients care
+- Record or update a device used during a patient's care
 
 
 <hr class="thickline">

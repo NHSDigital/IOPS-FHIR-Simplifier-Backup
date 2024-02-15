@@ -1,7 +1,5 @@
 ## `{{page-title}}`
-
-This element SHOULD be populated with a referenced resources conforming to {{pagelink:Profile-Observation}}, and these resources should be the observations used to determine the Early Warning Score component sub scores.
-
+This element SHOULD contain references to resources conforming to the {{pagelink:Profile-Observation}} or any of the profiles derived from it, and these resources SHALL represent the observations utilized for determining the sub-scores of the Early Warning Score component.
 
 <div id="renderParent" title="Total Score structure">
 {{render: NEWS2Total }}

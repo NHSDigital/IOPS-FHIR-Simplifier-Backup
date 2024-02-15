@@ -47,7 +47,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 The following are example usage scenarios for the UK Core Observation Vital Signs profile:
 
 - Query and retrieve a patient's vital signs
-- Record or update a patient's vitals signs
+- Record or update a patient's vital signs
 
 <hr class="thickline">
 

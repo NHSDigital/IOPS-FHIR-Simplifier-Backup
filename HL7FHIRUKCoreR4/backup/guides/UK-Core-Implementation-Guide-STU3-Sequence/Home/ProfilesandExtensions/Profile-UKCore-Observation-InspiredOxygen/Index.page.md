@@ -33,7 +33,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Observation
 The following are example usage scenarios for the UK Core Observation Inspired Oxygen profile:
 
 - Query and retrieve a patient's breathing status
-- Record whether a patient's is breathing supplemental oxygen
+- Record whether a patient is breathing supplemental oxygen
 
 <hr class="thickline">
 
