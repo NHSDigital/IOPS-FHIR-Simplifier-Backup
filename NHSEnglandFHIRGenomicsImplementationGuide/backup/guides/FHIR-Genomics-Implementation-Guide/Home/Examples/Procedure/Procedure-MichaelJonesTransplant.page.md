@@ -1,33 +1,19 @@
 ---
+subject: UKCore-Procedure-MichaelJonesTransplant-Example
 expand: yes
 ---
 
+
 ## {{page-title}}
+
 
 Example of a simple procedure resource with minimal information.
 
-<div class="nhsd-!t-margin-bottom-6">
-  <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#JSON-P-MJT-E" role="tab" data-toggle="tab">JSON</a>
-        </li>
-         <li role="presentation">
-            <a href="#XML-P-MJT-E" role="tab" data-toggle="tab">XML</a>
-        </li>
-        <li role="presentation">
-            <a href="#Tree-P-MJT-E" role="tab" data-toggle="tab">Tree</a>
-        </li>
-  </ul>
-    
-  <div class="tab-content snippet">
-    <div id="JSON-P-MJT-E" role="tabpanel" class="tab-pane active">
-{{json:UKCore-Procedure-MichaelJonesTransplant-Example}}
-    </div>
-    <div id="XML-P-MJT-E" role="tabpanel" class="tab-pane">
-{{xml:UKCore-Procedure-MichaelJonesTransplant-Example}}
-    </div>
-    <div id="Tree-P-MJT-E" role="tabpanel" class="tab-pane">
-{{tree:UKCore-Procedure-MichaelJonesTransplant-Example}}
-    </div>
-  </div>
+{{page:Home-Examples-ExamplesTemplate}}
+
+
+<div id="Feedback" class="tabcontent">
+<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/UKCore-Procedure-MichaelJonesTransplant-Example/~issues?level=File' target="_blank">Propose a change to UKCore-Procedure-MichaelJonesTransplant-Example</a></h4>
 </div>
+
+---

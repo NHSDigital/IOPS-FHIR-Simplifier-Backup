@@ -1,8 +1,28 @@
 - name: Index
   filename: Index.page.md
-- name: PractitionerRole-LucyHale
-  filename: PractitionerRole-LucyHale.page.md
+- name: PractitionerRole-AnnaLaneKingstonPathology-Example
+  filename: PractitionerRole-AnnaLaneKingstonPathology-Example.page.md
+- name: PractitionerRole-EugeneSmith-Example
+  filename: PractitionerRole-EugeneSmith-Example.page.md
+- name: PractitionerRole-EugeneSmithLeedsSTH-Example
+  filename: PractitionerRole-EugeneSmithLeedsSTH-Example.page.md
 - name: PractitionerRole-GeneSmithENT-Example
   filename: PractitionerRole-GeneSmithENT-Example.page.md
+- name: PractitionerRole-HazelSmithKingstonPathology-Example
+  filename: PractitionerRole-HazelSmithKingstonPathology-Example.page.md
+- name: PractitionerRole-HazelSmithPathology-Example
+  filename: PractitionerRole-HazelSmithPathology-Example.page.md
 - name: PractitionerRole-HazelSmithRenal-Example
   filename: PractitionerRole-HazelSmithRenal-Example.page.md
+- name: PractitionerRole-JamesTaylorKingstonPathology-Example
+  filename: PractitionerRole-JamesTaylorKingstonPathology-Example.page.md
+- name: PractitionerRole-LoisLane-Example
+  filename: PractitionerRole-LoisLane-Example.page.md
+- name: PractitionerRole-LoisLaneKingstonClinicalGenetics-Example
+  filename: PractitionerRole-LoisLaneKingstonClinicalGenetics-Example.page.md
+- name: PractitionerRole-LucyHale-Example
+  filename: PractitionerRole-LucyHale-Example.page.md
+- name: PractitionerRole-MarySmith-Example
+  filename: PractitionerRole-MarySmith-Example.page.md
+- name: PractitionerRole-OscarShields-Example
+  filename: PractitionerRole-OscarShields-Example.page.md
