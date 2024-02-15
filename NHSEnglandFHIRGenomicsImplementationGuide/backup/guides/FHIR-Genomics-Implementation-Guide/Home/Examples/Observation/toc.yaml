@@ -44,8 +44,6 @@
   filename: Observation-NeoplasticCellKayBurbridge-Example.page.md
 - name: Observation-Neutrophils-Example
   filename: Observation-Neutrophils-Example.page.md
-- name: Observation-SampleCellContent-Example
-  filename: Observation-SampleCellContent-Example.page.md
 - name: Observation-GenomicEthnicity-Example
   filename: Observation-GenomicEthnicity-Example.page.md
 - name: Observation-MultipleRenalCysts-Example
@@ -66,9 +64,37 @@
   filename: Observation-NoSecondTrimesterFetalAnomalies-Example.page.md
 - name: Observation-NoTransfusion-Example
   filename: Observation-NoTransfusion-Example.page.md
+- name: Observation-NoTransfusionProbandFather-Example
+  filename: Observation-NoTransfusionProbandFather-Example.page.md
+- name: Observation-NoTransfusionProbandMother-Example
+  filename: Observation-NoTransfusionProbandMother-Example.page.md
 - name: Observation-NoTransplant-Example
   filename: Observation-NoTransplant-Example.page.md
 - name: Observation-NonConsanguinousUnion-Example
   filename: Observation-NonConsanguinousUnion-Example.page.md
+- name: Observation-NonConsanguinousUnionProband-Example
+  filename: Observation-NonConsanguinousUnionProband-Example.page.md
+- name: Observation-NonConsanguinousUnionProbandFather-Example
+  filename: Observation-NonConsanguinousUnionProbandFather-Example.page.md
+- name: Observation-NonConsanguinousUnionProbandMother-Example
+  filename: Observation-NonConsanguinousUnionProbandMother-Example.page.md
+- name: Observation-NucleatedCellCount-Example
+  filename: Observation-NucleatedCellCount-Example.page.md
+- name: Observation-Platelets-Example
+  filename: Observation-Platelets-Example.page.md
+- name: Observation-PregnancyConfirmation-Example
+  filename: Observation-PregnancyConfirmation-Example.page.md
+- name: Observation-QueryXanthoma-Example
+  filename: Observation-QueryXanthoma-Example.page.md
 - name: Observation-RenalInsufficiency-Example
   filename: Observation-RenalInsufficiency-Example.page.md
+- name: Observation-SimonBroomeCriteria-Example
+  filename: Observation-SimonBroomeCriteria-Example.page.md
+- name: Observation-TumourType-Example
+  filename: Observation-TumourType-Example.page.md
+- name: Observation-TumourTypeKayBurbridge-Example
+  filename: Observation-TumourTypeKayBurbridge-Example.page.md
+- name: Observation-WhiteBloodCell-Example
+  filename: Observation-WhiteBloodCell-Example.page.md
+- name: Observation-SampleCellContent-Example
+  filename: Observation-SampleCellContent-Example.page.md
