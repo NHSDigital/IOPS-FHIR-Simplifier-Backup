@@ -1,4 +1,14 @@
 - name: Index
   filename: Index.page.md
+- name: Provenance-NonWGSTestOrderFormCancellation-Example
+  filename: Provenance-NonWGSTestOrderFormCancellation-Example.page.md
+- name: Provenance-NonWGSTestOrderFormUpdated-SolidTumor-Example
+  filename: Provenance-NonWGSTestOrderFormUpdated-SolidTumor-Example.page.md
+- name: Provenance-NonWGSTestOrderForm-FetalScenario-Example
+  filename: Provenance-NonWGSTestOrderForm-FetalScenario-Example.page.md
 - name: Provenance-ServiceRequestUpdate-Example
   filename: Provenance-ServiceRequestUpdate-Example.page.md
+- name: Provenance-WGSTestOrderForm-DirectToLab-Example
+  filename: Provenance-WGSTestOrderForm-DirectToLab-Example.page.md
+- name: Provenance-WGSTestOrderForm-TrioTestingProbandFather-Example
+  filename: Provenance-WGSTestOrderForm-TrioTestingProbandFather-Example.page.md
