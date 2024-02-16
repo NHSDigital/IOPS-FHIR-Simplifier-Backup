@@ -1,16 +1,10 @@
 ---
 topic: R4BundleExampleHBsAgRequest
+subject: Pathology-Bundle-HBsAg-Request-Example
 ---
 ### PATH-R4-05: R4 Bundle Example - Hepatitis B Surface Antigen (HBsAg) Request
 
-<div class="tab fhirTree">
-    <button class="tablinks active" onclick="openTab(event, 'Example')">Example Request</button>
-    <button class="tablinks" onclick="openTab(event, 'Notes')">Notes</button>
-    <button class="tablinks" onclick="openTab(event, 'DataModel')">Data Model</button>
-    <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
-    <button class="tablinks" onclick="openTab(event, 'JSON')">JSON</button>
-    <button class="tablinks" onclick="openTab(event, 'Tree')">Tree</button>
-</div>
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     
 <div id="Example" role="tabpanel" class="tabcontent"  style="display:block"> 
     {{render:path-mockup-HBsAg-request}}
@@ -27,12 +21,4 @@ topic: R4BundleExampleHBsAgRequest
     <br>
     {{render:path-data-model-HBsAg-request}}
 </div>
-<div id="XML" role="tabpanel" class="tabcontent">
-    {{xml:Pathology-Bundle-HBsAg-Request-Example}}
-</div>
-<div id="JSON" role="tabpanel" class="tabcontent">
-    {{json:Pathology-Bundle-HBsAg-Request-Example}}
-</div>
-<div id="Tree" role="tabpanel" class="tabcontent expandedexample">
-    {{tree:Pathology-Bundle-HBsAg-Request-Example}}
-</div>
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}

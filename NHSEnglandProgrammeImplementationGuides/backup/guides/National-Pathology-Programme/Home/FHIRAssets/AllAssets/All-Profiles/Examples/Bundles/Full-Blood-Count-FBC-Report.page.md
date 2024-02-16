@@ -1,16 +1,10 @@
 ---
 topic: R4BundleExampleFullBloodCountReport
+subject: Pathology-Bundle-FBC-Report-Example
 ---
 ### PATH-R4-04: R4 Bundle Example - Full Blood Count Report
 
-<div class="tab fhirTree">
-    <button class="tablinks active" onclick="openTab(event, 'Example')">Example Report</button>
-    <button class="tablinks" onclick="openTab(event, 'Notes')">Notes</button>
-    <button class="tablinks" onclick="openTab(event, 'DataModel')">Data Model</button>
-    <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
-    <button class="tablinks" onclick="openTab(event, 'JSON')">JSON</button>
-    <button class="tablinks" onclick="openTab(event, 'Tree')">Tree</button>
-</div>
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     
 <div id="Example" role="tabpanel" class="tabcontent"  style="display:block"> 
     {{render:path-mockup-FBC-report}}
@@ -31,12 +25,4 @@ topic: R4BundleExampleFullBloodCountReport
     <br>
     {{render:path-data-model-FBC-report}}
 </div>
-<div id="XML" role="tabpanel" class="tabcontent">
-    {{xml:Pathology-Bundle-FBC-Report-Example}}
-</div>
-<div id="JSON" role="tabpanel" class="tabcontent">
-    {{json:Pathology-Bundle-FBC-Report-Example}}
-</div>
-<div id="Tree" role="tabpanel" class="tabcontent expandedexample">
-    {{tree:Pathology-Bundle-FBC-Report-Example}}
-</div>
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}
