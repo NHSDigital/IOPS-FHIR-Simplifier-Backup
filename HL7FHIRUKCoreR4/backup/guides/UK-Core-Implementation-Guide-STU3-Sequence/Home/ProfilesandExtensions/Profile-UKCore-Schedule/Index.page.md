@@ -30,6 +30,6 @@ The following are example usage scenarios for the UK Core Schedule profile:
 
 {{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
 
-</div
+</div>
 
 ---

@@ -1,6 +1,6 @@
 {{page:Home/ProfilesandExtensions/ProfileBindingsTemplate.page.md}}
 
-<table id="addToBinding">
+<table id="addToBindings">
 <tr>
 <td>ServiceRequest.extension:coverage</td>
 <td>extensible</td>

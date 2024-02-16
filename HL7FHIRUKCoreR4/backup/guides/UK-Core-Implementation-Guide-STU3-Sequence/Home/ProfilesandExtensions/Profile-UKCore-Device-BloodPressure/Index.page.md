@@ -41,9 +41,24 @@ The following are example usage scenarios for the UK Core Device for Blood ressu
 
 This is a derived profile of [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device) and this page only shows the differences between the two. Refer to the base Profile for more implementation guidance.
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+### Mandatory and Must Support Data Elements
 
-</div>
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
+
+<table class="assets" title="MustSupport element list">
+<tr>
+<th class="width30">Element</th>
+<th class="width70">Reason</th>
+</tr>
+<tr>
+<td><code>Device.status</code></td>
+<td>The status of the Device.</td>
+</tr>
+<tr>
+<td><code>Device.type</code></td>
+<td>The type of the Device.</td>
+</tr>
+</table>
+<div>
 
 ---
-
