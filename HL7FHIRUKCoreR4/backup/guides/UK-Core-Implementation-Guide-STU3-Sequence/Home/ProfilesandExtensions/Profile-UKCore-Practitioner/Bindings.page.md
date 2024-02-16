@@ -15,6 +15,5 @@ More information about the bindings to UK Core ValueSets can be found below.
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ProfileBindingsTemplate.page.md}}
 
 ---
