@@ -1,16 +1,10 @@
 ---
 topic: R4BundleExampleHbA1cRequest
+subject: Pathology-Bundle-HbA1c-Request-Example
 ---
 ### PATH-R4-01: R4 Bundle Example - Haemoglobin A1c (HbA1c) Request
 
-<div class="tab fhirTree">
-    <button class="tablinks active" onclick="openTab(event, 'Example')">Example Request</button>
-    <button class="tablinks" onclick="openTab(event, 'Notes')">Notes</button>
-    <button class="tablinks" onclick="openTab(event, 'DataModel')">Data Model</button>
-    <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
-    <button class="tablinks" onclick="openTab(event, 'JSON')">JSON</button>
-    <button class="tablinks" onclick="openTab(event, 'Tree')">Tree</button>
-</div>
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     
 <div id="Example" role="tabpanel" class="tabcontent"  style="display:block"> 
     {{render:path-mockup-HbA1c-request}}
@@ -29,12 +23,5 @@ topic: R4BundleExampleHbA1cRequest
 <br>
 {{render:path-data-model-HbA1c-request}}
 </div>
-<div id="XML" role="tabpanel" class="tabcontent">
-{{xml:Pathology-Bundle-HbA1c-Request-Example}}
-</div>
-<div id="JSON" role="tabpanel" class="tabcontent">
-{{json:Pathology-Bundle-HbA1c-Request-Example}}
-</div>
-<div id="Tree" role="tabpanel" class="tabcontent expandedexample">
-{{tree:Pathology-Bundle-HbA1c-Request-Example}}
-</div>  
+
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}

@@ -1,5 +1,52 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="ODS-Organization-4VE03-Example" />
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole">
+    <extension url="instanceID">
+      <valueInteger value="32717" />
+    </extension>
+    <extension url="roleCode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSOrganisationRole" />
+          <code value="RO171" />
+          <display value="PRIMARY CARE GROUP" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+      <extension url="dateType">
+        <valueCoding>
+          <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+          <code value="Legal" />
+          <display value="Legal" />
+        </valueCoding>
+      </extension>
+      <extension url="period">
+        <valuePeriod>
+          <start value="1999-04-01" />
+          <end value="2002-03-31" />
+        </valuePeriod>
+      </extension>
+    </extension>
+    <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+      <extension url="dateType">
+        <valueCoding>
+          <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+          <code value="Operational" />
+          <display value="Operational" />
+        </valueCoding>
+      </extension>
+      <extension url="period">
+        <valuePeriod>
+          <start value="1999-04-01" />
+          <end value="2002-03-31" />
+        </valuePeriod>
+      </extension>
+    </extension>
+    <extension url="active">
+      <valueBoolean value="false" />
+    </extension>
+  </extension>
   <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedDateTime">
     <extension url="type">
       <valueCoding>
@@ -9,61 +56,34 @@
       </valueCoding>
     </extension>
     <extension url="dateTime">
-      <valueDateTime value="2023-12-31" />
-    </extension>
-  </extension>
-  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
-    <extension url="dateType">
-      <valueCoding>
-        <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
-        <code value="Legal" />
-        <display value="Legal" />
-      </valueCoding>
-    </extension>
-    <extension url="period">
-      <valuePeriod>
-        <start value="1999-04-01" />
-        <end value="2002-03-31" />
-      </valuePeriod>
-    </extension>
-  </extension>
-  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
-    <extension url="dateType">
-      <valueCoding>
-        <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
-        <code value="Operational" />
-        <display value="Operational" />
-      </valueCoding>
-    </extension>
-    <extension url="period">
-      <valuePeriod>
-        <start value="1999-04-01" />
-        <end value="2002-03-31" />
-      </valuePeriod>
+      <valueDateTime value="2014-04-15" />
     </extension>
   </extension>
   <identifier>
     <use value="official" />
     <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
     <value value="4VE03" />
+    <assigner>
+      <display value="HSCIC" />
+    </assigner>
   </identifier>
   <active value="false" />
+  <type>
+    <coding>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ODSRecordUseType" />
+      <code value="RefOnly" />
+      <display value="RefOnly" />
+    </coding>
+  </type>
+  <type>
+    <coding>
+      <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRecordClass" />
+      <code value="RC1" />
+      <display value="HSCOrg" />
+    </coding>
+  </type>
   <name value="HIGH WEALD PCG" />
   <address>
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
-      <extension url="type">
-        <valueCodeableConcept>
-          <coding>
-            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType" />
-            <code value="UPRN" />
-            <display value="Unique Property Reference Number" />
-          </coding>
-        </valueCodeableConcept>
-      </extension>
-      <extension url="value">
-        <valueString value="10091054340" />
-      </extension>
-    </extension>
     <line value="ROTHER HOUSE" />
     <line value="THE OFFICE VILLAGE, RIVER WAY" />
     <city value="UCKFIELD" />

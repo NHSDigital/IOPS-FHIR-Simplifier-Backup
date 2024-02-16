@@ -1,8 +1,24 @@
 - name: Index
   filename: Index.page.md
-- name: Example - Last Change Date
-  filename: Example---Last-Change-Date.page.md
-- name: Example - Legal Period Type
-  filename: Example---Legal-Period-Type.page.md
-- name: Example - Record Class and Record Use Type
-  filename: Example---Record-Class-and-Record-Use-Type.page.md
+- name: Example - Organization FCE71
+  filename: Example-Organization-FCE71.page.md
+- name: Example - Organization FDC49
+  filename: Example-Organization-FDC49.page.md
+- name: Example - Organization Q72
+  filename: Example-Organization-Q72.page.md
+- name: Example - Organization 4VE03
+  filename: Example-Organization-4VE03.page.md
+- name: Example - Organization G81086
+  filename: Example-Organization-G81086.page.md
+- name: Example - OrganizationAffiliation 256248
+  filename: Example-OrganizationAffiliation-256248.page.md
+- name: Example - OrganizationAffiliation 383689
+  filename: Example-OrganizationAffiliation-383689.page.md
+- name: Example - Organization Search Result
+  filename: Example-Organization-Search-Result.page.md
+- name: Example - Invalid ID
+  filename: Example-Invalid-ID.page.md
+- name: Example - Access Denied
+  filename: Example-Access-Denied.page.md
+- name: Example - No Search Results Found
+  filename: Example-No-Search-Results-Found.page.md
