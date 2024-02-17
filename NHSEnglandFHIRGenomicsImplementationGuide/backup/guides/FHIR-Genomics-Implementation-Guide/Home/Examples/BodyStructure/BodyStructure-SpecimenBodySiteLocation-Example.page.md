@@ -1,5 +1,5 @@
 ---
-subject: BodyStructure-SpecimenBodySiteLocation-Example
+subject: BodyStructure/BodyStructure-SpecimenBodySiteLocation-Example
 expand: yes
 ---
 

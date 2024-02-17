@@ -7,7 +7,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of an Observation indicating
+
 
 
 {{page:Home-Examples-ExamplesTemplate}}

@@ -1,5 +1,5 @@
 ---
-subject: BodyStructure-BodySiteLocationLungs-Example
+subject: BodyStructure/BodyStructure-BodySiteLocationLungs-Example
 expand: yes
 ---
 
