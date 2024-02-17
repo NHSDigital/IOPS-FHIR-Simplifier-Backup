@@ -1,4 +1,5 @@
 ---
+subject: AuditEvent/AuditEvent-ServiceRequestUpdate-Example
 expand: yes
 ---
 
@@ -6,28 +7,11 @@ expand: yes
 
 AuditEvent recording an update to a ServiceRequest resource by a Clinical Scientist.
 
-<div class="nhsd-!t-margin-bottom-6">
-  <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#JSON-AE-SRU-E" role="tab" data-toggle="tab">JSON</a>
-        </li>
-         <li role="presentation">
-            <a href="#XML-AE-SRU-E" role="tab" data-toggle="tab">XML</a>
-        </li>
-        <li role="presentation">
-            <a href="#Tree-AE-SRU-E" role="tab" data-toggle="tab">Tree</a>
-        </li>
-  </ul>
-    
-  <div class="tab-content snippet">
-    <div id="JSON-AE-SRU-E" role="tabpanel" class="tab-pane active">
-{{json:AuditEvent/AuditEvent-ServiceRequestUpdate-Example}}
-    </div>
-    <div id="XML-AE-SRU-E" role="tabpanel" class="tab-pane">
-{{xml:AuditEvent/AuditEvent-ServiceRequestUpdate-Example}}
-    </div>
-    <div id="Tree-AE-SRU-E" role="tabpanel" class="tab-pane">
-{{tree:AuditEvent/AuditEvent-ServiceRequestUpdate-Example}}
-    </div>
-  </div>
+{{page:Home-Examples-ExamplesTemplate}}
+
+
+<div id="Feedback" class="tabcontent">
+<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/AuditEvent-AuditEvent-ServiceRequestUpdate-Example/~issues?level=File' target="_blank">Propose a change to AuditEvent-ServiceRequestUpdate-Example</a></h4>
 </div>
+
+---

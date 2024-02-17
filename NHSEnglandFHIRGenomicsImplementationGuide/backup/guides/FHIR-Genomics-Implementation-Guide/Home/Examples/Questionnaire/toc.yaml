@@ -2,3 +2,7 @@
   filename: Index.page.md
 - name: Questionnaire-Genomic Testing
   filename: Questionnaire-Genomic-Testing.page.md
+- name: Questionnaire-RoD-ConsulteeDeclarationForm-Example
+  filename: Questionnaire-RoD-ConsulteeDeclarationForm-Example.page.md
+- name: Questionnaire-RoD-YoungPersonAssentForm-Example
+  filename: Questionnaire-RoD-YoungPersonAssentForm-Example.page.md
