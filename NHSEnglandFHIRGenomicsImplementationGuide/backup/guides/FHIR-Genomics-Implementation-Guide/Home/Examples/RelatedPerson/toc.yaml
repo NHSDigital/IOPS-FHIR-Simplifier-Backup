@@ -1,4 +1,14 @@
 - name: Index
   filename: Index.page.md
+- name: RelatedPerson-AliceSmithamProbandMother-Example
+  filename: RelatedPerson-AliceSmithamProbandMother-Example.page.md
+- name: RelatedPerson-AnitaLambertsDeceasedPatient-Example
+  filename: RelatedPerson-AnitaLambertsDeceasedPatient-Example.page.md
+- name: RelatedPerson-JamesLawrenceProbandFather-Example
+  filename: RelatedPerson-JamesLawrenceProbandFather-Example.page.md
+- name: RelatedPerson-RyanneBoulder-Example
+  filename: RelatedPerson-RyanneBoulder-Example.page.md
+- name: RelatedPerson-RyanneBoulderPartner-Example
+  filename: RelatedPerson-RyanneBoulderPartner-Example.page.md
 - name: RelatedPerson-MichaelaJones
   filename: RelatedPerson-MichaelaJones.page.md
