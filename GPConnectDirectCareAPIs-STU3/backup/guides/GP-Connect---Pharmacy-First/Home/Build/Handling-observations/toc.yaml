@@ -14,9 +14,9 @@
   filename: Blood-pressure-triplets.page.md
 - name: Representing an average ABPM reading
   filename: Representing-an-average-ABPM-reading.page.md
-- name: How to send an ABPM report
-  filename: How-to-send-an-ABPM-report.page.md
 - name: Reference ranges and interpretation
   filename: Reference-ranges-and-interpretation.page.md
 - name: Self-reported measurements
   filename: Self-reported-measurements.page.md
+- name: How to send an ABPM report
+  filename: How-to-send-an-ABPM-report.page.md
