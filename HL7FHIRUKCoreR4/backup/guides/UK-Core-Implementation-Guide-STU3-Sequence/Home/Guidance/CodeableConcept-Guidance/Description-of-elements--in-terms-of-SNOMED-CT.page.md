@@ -62,7 +62,7 @@
 
 <tr>
 <td><code>code.text</code></td>
-<td>Represents the text that was originally displayed to the user when the code was recorded.  </td>
+<td>A plain text representation of the concept.</td>
 </tr>
 </table>
 

@@ -1,2 +1,10 @@
-- name: Query for Patient's Allergies
-  filename: Query-for-Patient-s-Allergies.page.md
+- name: Query for all my Patient's Allergies
+  filename: Query-for-all-my-Patient-s-Allergies.page.md
+- name: Query for a Specific Patient Allergy
+  filename: Query-for-a-Specific-Patient-Allergy.page.md
+- name: Update Patient Allergy - Negative
+  filename: Update-Patient-Allergy-Negative.page.md
+- name: Add Patient Allergy
+  filename: Add-Patient-Allergy.page.md
+- name: Add Patient Reaction to Medication
+  filename: Add-Patient-Reaction-to-Medication.page.md

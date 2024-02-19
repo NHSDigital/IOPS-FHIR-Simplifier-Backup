@@ -2,7 +2,7 @@
 
 When sending a SNOMED CT Concept Id with its preferred term, and the SNOMED CT Description Id is known, then the HL7 core-defined extension <a href="https://hl7.org/fhir/R4/extension-coding-sctdescid.html" class="external">coding-sctdescid</a> SHALL be used and the element `sctdescid` SHALL be populated. Where the SNOMED CT Description Id is not known, then the codeable concept MAY be sent without it.
 
-In the example below, the SNOMED CT Description Id is populated with the the preferred term, but there is no Description Id display as the Concept Id was entered by the user and the preferred term was displayed to them when it was added.
+In the example below, the SNOMED CT Description Id is populated with the Id of the preferred term, but there is no display term, as the Concept Id was entered by the user and the preferred term was displayed to them when it was added.
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'Table View')">Table View</button>

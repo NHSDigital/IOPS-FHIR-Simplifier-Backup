@@ -47,22 +47,22 @@
 
 <tr>
 <td><code>code.coding.code</code></td>
-<td>Holds the SNOMED CT Concept identifier. </td>
+<td>Holds the SNOMED CT Concept identifier.</td>
 </tr>
 
 <tr>
 <td><code>code.coding.display</code></td>
-<td>Holds the SNOMED CT Concept preferred term.  </td>
+<td>Holds the SNOMED CT Concept preferred term.</td>
 </tr>
 
 <tr>
 <td><code>code.coding.userSelected</code></td>
-<td>Indicates that this concept was chosen by the user.  </td>
+<td>Indicates that this concept was chosen by the user.</td>
 </tr>
 
 <tr>
 <td><code>code.text</code></td>
-<td>Represents the text that was originally displayed to the user when the code was recorded.  </td>
+<td>A plain text representation of the concept.</td>
 </tr>
 </table>
 
