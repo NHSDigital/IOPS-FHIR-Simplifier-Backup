@@ -1,6 +1,6 @@
 ## Extensions
 
-More information about the extensions can be found using the links below.
+More information about the extensions on the <code>{{variable:issue}}</code> profile can be found using the links below.
 
 <fql>
     from

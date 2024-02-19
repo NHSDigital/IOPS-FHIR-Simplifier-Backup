@@ -1,5 +1,5 @@
 ## `eventHistory`
 
-The resource being referenced SHALL conform to [Profile UKCore-Provenance](https://simplifier.net/hl7fhirukcorer4/ukcore-provenance).
+The resource being referenced SHALL conform to [UKCore-Provenance (draft)]("https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Provenance).
 
 ---

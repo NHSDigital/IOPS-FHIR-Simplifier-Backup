@@ -1,5 +1,5 @@
 ## <code>{{page-title}}</code>
 
-A procedure including an implantable device SHOULD use `Procedure.focalDevice` with a reference to the device. The resource being referenced SHOULD conform to the [Profile UKCore-Device](https://simplifier.net/hl7fhirukcorer4/ukcoredevice).
+A procedure including an implantable device SHOULD use `Procedure.focalDevice` with a reference to the device. The resource being referenced SHOULD conform to the [UKCore-Device (draft)]("https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-Device) profile.
 
 ---
