@@ -13,6 +13,15 @@
 
 <table data-responsive>
     <tbody>
+        <!-- ABPM report -->
+        <tr>
+            <td class="nhsd-m-table__highlighted-items">
+                {{pagelink:Home/Build/Handling-observations}}
+            </td>
+            <td>
+                Guidance added around the handling of an ABPM report within Observation.attachment.
+            </td>
+        </tr>
         <!-- Updated handling observations -->
         <tr>
             <td class="nhsd-m-table__highlighted-items">
@@ -22,7 +31,6 @@
                 <ul>
                     <li>Added SNOMED triplets for self-reported blood pressure</li>
                     <li>Added information regarding self-reported readings</li>
-                    <li>Added guidance for representing average ABPM readings</li>
                     <li>Added support for <code>Observation.valueAttachment</code></li>
                 </ul>
             </td>
