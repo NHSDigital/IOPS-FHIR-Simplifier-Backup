@@ -2,8 +2,6 @@
   filename: Index.page.md
 - name: Bindings
   filename: Bindings.page.md
-- name: instantiatesCanonical
-  filename: instantiatesCanonical.page.md
 - name: basedOn
   filename: basedOn.page.md
 - name: partOf

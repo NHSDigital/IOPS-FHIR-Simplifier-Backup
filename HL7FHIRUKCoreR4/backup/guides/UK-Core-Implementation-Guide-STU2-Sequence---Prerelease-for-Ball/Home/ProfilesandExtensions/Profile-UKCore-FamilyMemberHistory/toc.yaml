@@ -4,8 +4,6 @@
   filename: Extensions.page.md
 - name: Bindings
   filename: Bindings.page.md
-- name: instantiatesCanonical
-  filename: instantiatesCanonical.page.md
 - name: patient
   filename: patient.page.md
 - name: relationship

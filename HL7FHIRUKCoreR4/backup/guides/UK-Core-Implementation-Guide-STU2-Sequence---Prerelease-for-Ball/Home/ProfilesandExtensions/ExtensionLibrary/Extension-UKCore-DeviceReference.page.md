@@ -55,7 +55,4 @@ select
   <br><br>
 </div>
 
-### Guidance
-The resource being referenced SHOULD conform to the following [UKCore-Device (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current).
-
 ---

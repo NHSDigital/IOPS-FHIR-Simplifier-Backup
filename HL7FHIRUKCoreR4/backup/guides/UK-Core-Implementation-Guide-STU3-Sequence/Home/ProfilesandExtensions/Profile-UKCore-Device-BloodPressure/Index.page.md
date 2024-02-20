@@ -30,7 +30,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Device-Bloo
 <div id="ProfileGuidance">
 
 ### Example Usage Scenarios ###
-The following are example usage scenarios for the UK Core Device for Blood ressure profile:
+The following are example usage scenarios for the UK Core Device for Blood Pressure profile:
 
 - Retrieve information pertaining to a blood pressure monitoring/recording device through querying.
 - Record or update the device used to measure a patient's blood pressure
