@@ -61,8 +61,8 @@ select
 ### Extension Specific Guidance
 Where possible, it is expected that the resource being referenced SHOULD conform to one of the following UK Core profiles:
 
-- [UKCore-CareTeam](https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/home/profilesandextensions/profileukcore-careteam/index.guide.md?version=current)
-- [UKCore-Device](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Device?version=current)
+- <a href="https://hl7.org/fhir/R4/Device.html">CareTeam Resource</a>
+- <a href="https://hl7.org/fhir/R4/Device.html">Device Resource</a>
 - {{pagelink:Profile-Organization-94604}}
 - {{pagelink:Profile-Patient-88961}}
 - {{pagelink:Profile-Practitioner-10758}}

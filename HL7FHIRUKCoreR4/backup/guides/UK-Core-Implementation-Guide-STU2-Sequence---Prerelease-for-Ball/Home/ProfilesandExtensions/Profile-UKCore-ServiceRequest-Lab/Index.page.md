@@ -88,7 +88,7 @@ The following are example usage scenarios for the UK Core ServiceRequest-Lab pro
 
 ### Mandatory and Must Support Data Elements
 
-The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport-252}}.
+The following elements are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport-25267}}.
 
 <table class="assets" title="MustSupport element list">
 <tr>

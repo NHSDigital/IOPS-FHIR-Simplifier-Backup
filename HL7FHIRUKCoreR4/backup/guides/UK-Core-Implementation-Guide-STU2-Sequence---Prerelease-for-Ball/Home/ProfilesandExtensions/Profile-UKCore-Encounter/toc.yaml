@@ -8,8 +8,6 @@
   filename: class.page.md
 - name: subject
   filename: subject.page.md
-- name: episodeOfCare
-  filename: episodeOfCare.page.md
 - name: basedOn
   filename: basedOn.page.md
 - name: participant

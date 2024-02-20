@@ -2,7 +2,7 @@
 
 Any resource being referenced SHOULD conform to the following profiles/resources:
 
-- [UKCore-EpisodeOfCare (draft)](https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-EpisodeOfCare?version=current)
+- [EpisodeOfCare Resource](https://hl7.org/fhir/R4/EpisodeOfCare.html)
 - {{pagelink:Profile-Encounter-79976}}
 
 ---
