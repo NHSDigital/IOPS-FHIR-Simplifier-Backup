@@ -2,6 +2,18 @@
   filename: Index.page.md
 - name: Specimen-MichaelJonesBlood
   filename: Specimen-MichaelJonesBlood.page.md
+- name: Specimen-BloodEDTA-WithCollectoinDetails-Example
+  filename: Specimen-BloodEDTA-WithCollectoinDetails-Example.page.md
+- name: Specimen-BoneMarrowAspiration-Example
+  filename: Specimen-BoneMarrowAspiration-Example.page.md
+- name: Specimen-JamesMetcalfeBloodEDTA-Example
+  filename: Specimen-JamesMetcalfeBloodEDTA-Example.page.md
+- name: Specimen-PheobeSmitham-Example
+  filename: Specimen-PheobeSmitham-Example.page.md
+- name: Specimen-PheobeSmithamFather-Example
+  filename: Specimen-PheobeSmithamFather-Example.page.md
+- name: Specimen-PheobeSmithamMother-Example
+  filename: Specimen-PheobeSmithamMother-Example.page.md
 - name: Specimen-MichealJonesBlood-Minimal
   filename: Specimen-MichealJonesBlood-Minimal.page.md
 - name: Specimen-BloodEDTA-Example
