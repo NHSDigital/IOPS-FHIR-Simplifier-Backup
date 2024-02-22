@@ -1,4 +1,4 @@
 - name: Index
   filename: Index.page.md
-- name: MessageHeader-TestRequest
-  filename: MessageHeader-TestRequest.page.md
+- name: MessageHeader-TestRequest-Example
+  filename: MessageHeader-TestRequest-Example.page.md
