@@ -1,24 +1,64 @@
 - name: Index
   filename: Index.page.md
-#- name: Task-DYPDSequencingTask
-#  filename: Task-DYPDSequencingTask.page.md
-#- name: Task-Filler
-#  filename: Task-Filler.page.md
-#- name: Task-FillerUpdate
-#  filename: Task-FillerUpdate.page.md
-#- name: Task-SendAway
-#  filename: Task-SendAway.page.md
+- name: Task-NonWGSRareDiseaseTestOrder-Cancellation-Example
+  filename: Task-NonWGSRareDiseaseTestOrder-Cancellation-Example.page.md
 - name: Task-NonWGSRareDiseaseTestOrder-Example
   filename: Task-NonWGSRareDiseaseTestOrder-Example.page.md
 - name: Task-NonWGSRareDiseaseTestOrderAccepted-Example
   filename: Task-NonWGSRareDiseaseTestOrderAccepted-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderAccepted-FetalScenario-Example
+  filename: Task-NonWGSRareDiseaseTestOrderAccepted-FetalScenario-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderAccepted-FollowupTest-Example
+  filename: Task-NonWGSRareDiseaseTestOrderAccepted-FollowupTest-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderAccepted-HaemOncology-Example
+  filename: Task-NonWGSRareDiseaseTestOrderAccepted-HaemOncology-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderAccepted-Reanlaysis-Example
+  filename: Task-NonWGSRareDiseaseTestOrderAccepted-Reanlaysis-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderAccepted-SufficientSample-Example
+  filename: Task-NonWGSRareDiseaseTestOrderAccepted-SufficientSample-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderCancelled-FollowupTest-Example
+  filename: Task-NonWGSRareDiseaseTestOrderCancelled-FollowupTest-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderCompleted-CascadeTesting-Example
+  filename: Task-NonWGSRareDiseaseTestOrderCompleted-CascadeTesting-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderCompleted-FollowupTest-Example
+  filename: Task-NonWGSRareDiseaseTestOrderCompleted-FollowupTest-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderForwarded-OutOfCountry-Example
+  filename: Task-NonWGSRareDiseaseTestOrderForwarded-OutOfCountry-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderForwarded-SolidTumor-Example
+  filename: Task-NonWGSRareDiseaseTestOrderForwarded-SolidTumor-Example.page.md
 - name: Task-NonWGSRareDiseaseTestOrderRejected-Example
   filename: Task-NonWGSRareDiseaseTestOrderRejected-Example.page.md
 - name: Task-NonWGSRareDiseaseTestOrderHold-Example
   filename: Task-NonWGSRareDiseaseTestOrderHold-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderRejected-CancerSolidTumor-Example
+  filename: Task-NonWGSRareDiseaseTestOrderRejected-CancerSolidTumor-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrderRejected-FetalScenario-Example
+  filename: Task-NonWGSRareDiseaseTestOrderRejected-FetalScenario-Example.page.md
+- name: Task-NonWGSRareDiseaseTestOrder-InsufficientSample-Example
+  filename: Task-NonWGSRareDiseaseTestOrder-InsufficientSample-Example.page.md
+- name: Task-NonWGSTestOrderAccepted-VariantReinterpretation-Example
+  filename: Task-NonWGSTestOrderAccepted-VariantReinterpretation-Example.page.md
+- name: Task-NonWGSTestOrderFormAccepted-UsingStoredSample-Example
+  filename: Task-NonWGSTestOrderFormAccepted-UsingStoredSample-Example.page.md
+- name: Task-TestOrderFormAccepted-StorageOfMaterial-Example
+  filename: Task-TestOrderFormAccepted-StorageOfMaterial-Example.page.md
 - name: Task-WGSRareDiseaseTestOrder-Example
   filename: Task-WGSRareDiseaseTestOrder-Example.page.md
 - name: Task-WGSRareDiseaseTestOrderAccepted-Example
   filename: Task-WGSRareDiseaseTestOrderAccepted-Example.page.md
+- name: Task-WGSRareDiseaseTestOrderAccepted-DirectToLab-Example
+  filename: Task-WGSRareDiseaseTestOrderAccepted-DirectToLab-Example.page.md
+- name: Task-WGSRareDiseaseTestOrderAccepted-TrioTestingProband-Example
+  filename: Task-WGSRareDiseaseTestOrderAccepted-TrioTestingProband-Example.page.md
+- name: Task-WGSRareDiseaseTestOrderCompleted-DirectToLab-Example
+  filename: Task-WGSRareDiseaseTestOrderCompleted-DirectToLab-Example.page.md
+- name: Task-WGSRareDiseaseTestOrderCompleted-TrioTestingProband-Example
+  filename: Task-WGSRareDiseaseTestOrderCompleted-TrioTestingProband-Example.page.md
 - name: Task-WGSRareDiseaseTestOrderForwarded-Example
   filename: Task-WGSRareDiseaseTestOrderForwarded-Example.page.md
+- name: Task-WGSRareDiseaseTestOrderHold-DirectToLab-Example
+  filename: Task-WGSRareDiseaseTestOrderHold-DirectToLab-Example.page.md
+- name: Task-WGSRareDiseaseTestOrderHold-TrioTestingProband-Example
+  filename: Task-WGSRareDiseaseTestOrderHold-TrioTestingProband-Example.page.md
+- name: Task-WGSRareDiseaseTestOrderRequested-DirectToLab-Example
+  filename: Task-WGSRareDiseaseTestOrderRequested-DirectToLab-Example.page.md
