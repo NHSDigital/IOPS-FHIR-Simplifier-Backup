@@ -1,0 +1,182 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ODS-Bundle-includeSearchResults-Example" />
+  <type value="searchset" />
+  <total value="2" />
+  <link>
+    <relation value="self" />
+    <url value="https://baseurl/fhir/OrganizationAffiliation?_include=OrganizationAffiliation%3Aparticipating-organization&amp;participating-organization=Q72&amp;primary-organization=FDC49" />
+  </link>
+  <entry>
+    <fullUrl value="https://baseurl/fhir/OrganizationAffiliation/383689" />
+    <resource>
+      <OrganizationAffiliation xmlns="http://hl7.org/fhir">
+        <id value="383689" />
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+          <extension url="dateType">
+            <valueCoding>
+              <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+              <code value="Legal" />
+              <display value="Legal" />
+            </valueCoding>
+          </extension>
+          <extension url="period">
+            <valuePeriod>
+              <start value="2015-05-11" />
+              <end value="2020-03-31" />
+            </valuePeriod>
+          </extension>
+        </extension>
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+          <extension url="dateType">
+            <valueCoding>
+              <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+              <code value="Operational" />
+              <display value="Operational" />
+            </valueCoding>
+          </extension>
+          <extension url="period">
+            <valuePeriod>
+              <start value="2015-05-11" />
+              <end value="2020-03-31" />
+            </valuePeriod>
+          </extension>
+        </extension>
+        <identifier>
+          <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/organization-relationship-instance" />
+          <value value="383689" />
+        </identifier>
+        <active value="false" />
+        <period>
+          <start value="2015-05-11" />
+          <end value="2020-03-31" />
+        </period>
+        <organization>
+          <reference value="Organization/FDC49" />
+          <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="FDC49" />
+          </identifier>
+        </organization>
+        <participatingOrganization>
+          <reference value="Organization/Q72" />
+          <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="Q72" />
+          </identifier>
+        </participatingOrganization>
+        <code>
+          <coding>
+            <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRelationship" />
+            <code value="RE5" />
+            <display value="IS LOCATED IN THE GEOGRAPHY OF" />
+          </coding>
+        </code>
+      </OrganizationAffiliation>
+    </resource>
+    <search>
+      <mode value="match" />
+    </search>
+  </entry>
+  <entry>
+    <fullUrl value="https://baseurl/fhir/Organization/Q72" />
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <id value="Q72" />
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole">
+          <extension url="instanceID">
+            <valueInteger value="202011" />
+          </extension>
+          <extension url="roleCode">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSOrganisationRole" />
+                <code value="RO210" />
+                <display value="NHS ENGLAND (REGION, LOCAL OFFICE)" />
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+            <extension url="dateType">
+              <valueCoding>
+                <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+                <code value="Legal" />
+                <display value="Legal" />
+              </valueCoding>
+            </extension>
+            <extension url="period">
+              <valuePeriod>
+                <start value="2015-04-01" />
+                <end value="2020-03-31" />
+              </valuePeriod>
+            </extension>
+          </extension>
+          <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+            <extension url="dateType">
+              <valueCoding>
+                <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+                <code value="Operational" />
+                <display value="Operational" />
+              </valueCoding>
+            </extension>
+            <extension url="period">
+              <valuePeriod>
+                <start value="2015-01-16" />
+              </valuePeriod>
+            </extension>
+          </extension>
+          <extension url="active">
+            <valueBoolean value="true" />
+          </extension>
+        </extension>
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedDateTime">
+          <extension url="type">
+            <valueCoding>
+              <system value="https://fhir.nhs.uk/England/CodeSystem/England-ODSDateTime" />
+              <code value="LastChangeDate" />
+              <display value="Last Change Date" />
+            </valueCoding>
+          </extension>
+          <extension url="dateTime">
+            <valueDateTime value="2020-09-30" />
+          </extension>
+        </extension>
+        <identifier>
+          <use value="official" />
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="Q72" />
+          <assigner>
+            <display value="HSCIC" />
+          </assigner>
+        </identifier>
+        <active value="true" />
+        <type>
+          <coding>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-ODSRecordUseType" />
+            <code value="Full" />
+            <display value="Full" />
+          </coding>
+        </type>
+        <type>
+          <coding>
+            <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRecordClass" />
+            <code value="RC1" />
+            <display value="HSCOrg" />
+          </coding>
+        </type>
+        <name value="NHS ENGLAND NORTH EAST AND YORKSHIRE (YORKSHIRE AND HUMBER)" />
+        <address>
+          <line value="CITY OFFICE PARK" />
+          <line value="3 LEEDS CITY OFFICE PARK" />
+          <line value="HOLBECK" />
+          <city value="LEEDS" />
+          <district value="WEST YORKSHIRE" />
+          <postalCode value="LS11 5BD" />
+          <country value="ENGLAND" />
+        </address>
+      </Organization>
+    </resource>
+    <search>
+      <mode value="include" />
+    </search>
+  </entry>
+</Bundle>

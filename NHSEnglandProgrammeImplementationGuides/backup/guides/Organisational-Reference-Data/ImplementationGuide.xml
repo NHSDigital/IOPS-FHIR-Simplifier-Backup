@@ -16,7 +16,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="NHS England Implementation Guide for FHIR R4 API for ODS." />
+  <description value="NHS England Implementation Guide for FHIR R4 API for ODS" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166:-2" />

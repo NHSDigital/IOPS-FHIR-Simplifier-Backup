@@ -1,0 +1,80 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ODS-Bundle-ParticipatingOrganizationSearchResults-Example" />
+  <type value="searchset" />
+  <total value="1" />
+  <link>
+    <relation value="self" />
+    <url value="https://baseurl/OrganizationAffiliation?participating-organization=https://fhir.nhs.uk/Id/ods-organization-code|G81086" />
+  </link>
+  <entry>
+    <fullUrl value="https://baseurl/OrganizationAffiliation/256248" />
+    <resource>
+      <OrganizationAffiliation xmlns="http://hl7.org/fhir">
+  <id value="256248" />
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+        <extension url="dateType">
+            <valueCoding>
+                <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+                <code value="Legal" />
+                <display value="Legal" />
+            </valueCoding>
+        </extension>
+        <extension url="period">
+            <valuePeriod>
+                <start value="1999-04-01" />
+                <end value="2002-03-31" />
+            </valuePeriod>
+        </extension>
+    </extension>
+    <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
+        <extension url="dateType">
+            <valueCoding>
+                <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
+                <code value="Operational" />
+                <display value="Operational" />
+            </valueCoding>
+        </extension>
+        <extension url="period">
+            <valuePeriod>
+                <start value="1999-04-01" />
+                <end value="2002-03-31" />
+            </valuePeriod>
+        </extension>
+    </extension>
+    <identifier>
+        <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/organization-relationship-instance" />
+        <value value="256248" />
+    </identifier>
+    <active value="false" />
+    <period>
+        <start value="1999-04-01" />
+        <end value="2002-03-31" />
+    </period>
+    <organization>
+        <reference value="Organization/ODS-Organization-G81086-Example" />
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="G81086" />
+        </identifier>
+    </organization>
+    <participatingOrganization>
+        <reference value="Organization/ODS-Organization-4VE03-Example" />
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="4VE03" />
+        </identifier>
+    </participatingOrganization>
+    <code>
+        <coding>
+            <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRelationship" />
+            <code value="RE4" />
+            <display value="IS COMMISSIONED BY" />
+        </coding>
+    </code>
+</OrganizationAffiliation>
+    </resource>
+    <search>
+      <mode value="match" />
+    </search>
+  </entry>
+</Bundle>
