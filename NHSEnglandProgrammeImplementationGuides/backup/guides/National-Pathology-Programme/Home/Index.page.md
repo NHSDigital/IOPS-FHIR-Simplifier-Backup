@@ -57,30 +57,30 @@ The current scope of this implementation guide reflects the priority of replacin
 ### Implementation Guide Structure
 This guide is divided into the following sections and pages which are accessible from the top-level menu bar:
 
-* Home: provides an introduction to pathology, describes various SNOMED CT pathology related data products and outlines the scope and structure of this implementation guide.
+* Home: Provides an introduction to pathology, describes various SNOMED CT pathology related data products and outlines the scope and structure of this implementation guide.
 * Design:
-    * {{pagelink:Background}}: includes a high-level business process flow for pathology test requesting and reporting, links to various supporting artefacts (user stories, personas and journey maps) and describes the systems and data flows that are currently used to support GP practice requested pathology tests.
-    * {{pagelink:DesignOverview}}: includes a high-level business information model and a detailed FHIR data model, a summary of the design approach that has been adopted and a description of how SNOMED CT is used to populate key aspects of the pathology related FHIR profiles.
-    * {{pagelink:DataMapping}} (TBC): this page will provide a mapping between the data elements included in the PMIP EDIFACT (NHS003) specification and the FHIR profile data elements described by this implementation guide.
-    * {{pagelink:Transport}} (TBC): this page will detail the data exchange approach that will be used as part of this implementation guide.
-    * {{pagelink:ErrorHandling}} (TBC): this page will describe any error handling that will be used as part of this implementation guide.
-    * {{pagelink:AcknowledgementFramework}} (TBC): this page will describe the acknowledge framework that will be used as part of this implementation guide.
+    * {{pagelink:Background}}: Includes a high-level business process flow for pathology test requesting and reporting, links to various supporting artefacts (user stories, personas and journey maps) and describes the systems and data flows that are currently used to support GP practice requested pathology tests.
+    * {{pagelink:DesignOverview}}: Includes a high-level business information model and a detailed FHIR data model, a summary of the design approach that has been adopted and a description of how SNOMED CT is used to populate key aspects of the pathology related FHIR profiles.
+    * {{pagelink:DataMapping}} (TBC): This page will provide a mapping between the data elements included in the PMIP EDIFACT (NHS003) specification and the FHIR profile data elements described by this implementation guide.
+    * {{pagelink:Transport}} (TBC): This page will detail the data exchange approach that will be used as part of this implementation guide.
+    * {{pagelink:ErrorHandling}} (TBC): This page will describe any error handling that will be used as part of this implementation guide.
+    * {{pagelink:AcknowledgementFramework}} (TBC): This page will describe the acknowledge framework that will be used as part of this implementation guide.
 * Build:
-    * {{pagelink:BuildContructPathologyRequestBundle}}: describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR <code>Bundle</code> for a pathology test request. 
-    * {{pagelink:BuildContructPathologyReportBundle}}: describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR <code>Bundle</code> for a pathology test report. 
+    * {{pagelink:BuildContructPathologyRequestBundle}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR <code>Bundle</code> for a pathology test request. 
+    * {{pagelink:BuildContructPathologyReportBundle}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR <code>Bundle</code> for a pathology test report. 
 * FHIR Assets:
-    * {{pagelink:FHIRAssetsR4Profiles}}: describes the FHIR profiles that are referenced by this implementation guide.
-    * {{pagelink:FHIRAssetsR4CodeSystems}} (TBC): this page will detail any new CodeSystems that have been developed for use as part of this implementation guide.
-    * {{pagelink:FHIRAssetsR4ValueSets}} (TBC): this page will detail any new ValueSets that have been developed for use as part of this implementation guide.
-    * {{pagelink:FHIRAssetsR4NamingSystems}} (TBC): this page will detail any new Naming Systems that have been developed for use as part of this implementation guide.
-    * {{pagelink:AllAssets}}: lists all of the FHIR assets that are referenced by this implementation guide.
+    * {{pagelink:FHIRAssetsR4Profiles}}: Describes the FHIR profiles that are referenced by this implementation guide.
+    * {{pagelink:FHIRAssetsR4CodeSystems}} (TBC): This page will detail any new CodeSystems that have been developed for use as part of this implementation guide.
+    * {{pagelink:FHIRAssetsR4ValueSets}} (TBC): This page will detail any new ValueSets that have been developed for use as part of this implementation guide.
+    * {{pagelink:FHIRAssetsR4NamingSystems}} (TBC): This page will detail any new Naming Systems that have been developed for use as part of this implementation guide.
+    * {{pagelink:AllAssets}}: Lists all of the FHIR assets that are referenced by this implementation guide.
 * Examples:
-    * {{pagelink:R4Examples}}: lists the FHIR examples that are included in this implementation guide, categorised by resource type and pathology speciality.
+    * {{pagelink:R4Examples}}: Lists the FHIR examples that are included in this implementation guide, categorised by resource type and pathology speciality.
 * Help and Support:
-    * {{pagelink:ContactUs}}: provides details for contacting the authors of this implementation guide. 
-    * {{pagelink:ReleaseNotes}}: summarises the changes that have been made to this implementation guide. 
-    * {{pagelink:Glossary}}: provides a definition of key abbreviations, acronyms and terms that are used in this implementation guide.
-    * {{pagelink:Sitemap}}: lists all of the key sections and pages that are included in this implementation guide.
+    * {{pagelink:ContactUs}}: Provides details for contacting the authors of this implementation guide. 
+    * {{pagelink:ReleaseNotes}}: Summarises the changes that have been made to this implementation guide. 
+    * {{pagelink:Glossary}}: Provides a definition of key abbreviations, acronyms and terms that are used in this implementation guide.
+    * {{pagelink:Sitemap}}: Lists all of the key sections and pages that are included in this implementation guide.
 
 
 ### Related Guides

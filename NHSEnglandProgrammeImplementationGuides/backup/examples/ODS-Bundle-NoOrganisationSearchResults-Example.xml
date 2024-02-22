@@ -1,0 +1,9 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="ODS-Bundle-NoOrganisationSearchResults-Example" />
+    <type value="searchset" />
+    <total value="0" />
+    <link>
+        <relation value="self" />
+        <url value="https://baseurl/Organization?lastChangeDate=eq2023-08-20" />
+    </link>
+</Bundle>

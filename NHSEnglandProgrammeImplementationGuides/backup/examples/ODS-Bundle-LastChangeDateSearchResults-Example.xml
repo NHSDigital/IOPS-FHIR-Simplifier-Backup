@@ -4,7 +4,7 @@
   <total value="2" />
   <link>
     <relation value="self" />
-    <url value="https://baseurl/Organization?lastChangeDate&gt;2023-08-20" />
+    <url value="https://baseurl/Organization?lastChangeDate=gt2023-08-20" />
   </link>
   <entry>
     <fullUrl value="https://baseurl/Organization/FCE71" />

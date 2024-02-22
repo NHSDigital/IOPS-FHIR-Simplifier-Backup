@@ -3,10 +3,18 @@ topic: ReleaseNotes
 ---
 ## Release Notes
 
+### v0.1.5 (TBC)
+
+* Updated the examples in the {{pagelink:R4Examples}} to correct various validation errors.
+* Added the following new <code>Observation</code> examples:
+    * TBC	
+* Updated the {{pagelink:DesignOverview}} page to include a description of how various types of test result should be represented.
+* Included changes to the pathology related profiles that were made as part of the [HL7 UK STU2 Ballot](https://confluence.hl7.org/pages/viewpage.action?pageId=175611042) process.
+
 ### v0.1.4 (29/12/2023)
 
 * Removed the content from the {{pagelink:Transport}} and {{pagelink:AcknowledgementFramework}} pages (under the Design menu bar item). Awaiting confirmation of what data exchange and acknowledgement approach will be adopted for FHIR UK Core R4 based interactions between pathology laboratory systems and GP EPR systems.
-* Added the following new examples:
+* Added the following new <code>Bundle</code> examples:
     * {{pagelink:R4BundleExampleLipidsandHbA1cRequest}}
     * {{pagelink:R4BundleExampleLipidsandHbA1cReport}}
 * Added an overview of the Implementation Guide Structure to the {{pagelink:Home}} page.
