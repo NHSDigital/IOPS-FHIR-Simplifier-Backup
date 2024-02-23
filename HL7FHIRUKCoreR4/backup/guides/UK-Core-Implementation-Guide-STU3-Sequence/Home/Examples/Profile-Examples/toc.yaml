@@ -14,6 +14,10 @@
   filename: Example-UKCore-Composition-Discharge.page.md
 - name: Example UKCore-Condition-BleedingFromEar
   filename: Example-UKCore-Condition-BleedingFromEar.page.md
+- name: Example UKCore-DiagnosticReport-CTChestScan
+  filename: Example-UKCore-DiagnosticReport-CTChestScan.page.md
+- name: Example UKCore-DiagnosticReport-ECG
+  filename: Example-UKCore-DiagnosticReport-ECG.page.md
 - name: Example UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport
   filename: Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport.page.md
 - name: Example UKCore-Device-SoftwareAsAMedicalDevice
@@ -26,6 +30,8 @@
   filename: Example-UKCore-FamilyMemberHistory-FatherDiabetes.page.md
 - name: Example UKCore-HealthcareService-OrthopaedicService
   filename: Example-UKCore-HealthcareService-OrthopaedicService.page.md
+- name: Example UKCore-ImagingStudy-CTChestScan
+  filename: Example-UKCore-ImagingStudy-CTChestScan.page.md
 - name: Example UKCore-Immunization-InfluenzaVaccine
   filename: Example-UKCore-Immunization-InfluenzaVaccine.page.md
 - name: Example UKCore-List-EmptyList
@@ -120,6 +126,10 @@
   filename: Example-UKCore-Schedule-Immunization.page.md
 - name: Example UKCore-ServiceRequest-ColonoscopyRequest
   filename: Example-UKCore-ServiceRequest-ColonoscopyRequest.page.md
+- name: Example UKCore-ServiceRequest-CTChestScan
+  filename: Example-UKCore-ServiceRequest-CTChestScan.page.md
+- name: Example UKCore-ServiceRequest-ECG
+  filename: Example-UKCore-ServiceRequest-ECG.page.md
 - name: Example UKCore-ServiceRequest-Lab-CReactiveProtein
   filename: Example-UKCore-ServiceRequest-Lab-CReactiveProtein.page.md
 - name: Example UKCore-Slot-AvailableWalkInVisit

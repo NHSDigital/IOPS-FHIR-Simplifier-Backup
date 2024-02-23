@@ -15,6 +15,10 @@ issue: UKCore-DiagnosticReport
   <b>Composition Reference</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to send a composition resource with a diagnostic report.<br>
   {{pagelink:Example-UKCore-Extension-CompositionReference}}
   <br><br>
+  <b>CT Chest Scan Report</b> - An example to illustrate a diagnostic report containing an imaging study for a patient.<br/>
+{{pagelink:Example-UKCore-DiagnosticReport-CTChestScan}}<br>
+  NOTE: The above example references {{pagelink:Example-UKCore-ImagingStudy-CTChestScan}}
+<br><br>
   <b>Diagnostic Report Note</b> - An example to illustrate the pre-adopted R5 element via an extension, which is used to add notes and annotations to a diagnostic report.<br>
   {{pagelink:Example-UKCore-Extension-Note}}
   <br><br>
@@ -24,6 +28,9 @@ issue: UKCore-DiagnosticReport
  <b>Device Reference</b> - An example to illustrate the extension which is used to indicate the performer of a Diagnostic Report was a device.<br>
   {{pagelink:Example-UKCore-Extension-DeviceReference}}<br>
   NOTE: The above example references {{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}
+<br><br>
+  <b>ECG Report</b> - An example to illustrate a diagnostic report for an ECG.<br/>
+{{pagelink:Example-UKCore-DiagnosticReport-ECG}}
 </div>
 </nocheck>
 
