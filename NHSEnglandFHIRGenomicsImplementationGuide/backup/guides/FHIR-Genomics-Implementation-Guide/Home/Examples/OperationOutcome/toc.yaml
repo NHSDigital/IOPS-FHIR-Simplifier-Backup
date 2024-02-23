@@ -1,4 +1,4 @@
 - name: Index
   filename: Index.page.md
-- name: OperationOutcome-Success
-  filename: OperationOutcome-Success.page.md
+- name: OperationOutcome-SuccesfulValidation-Example
+  filename: OperationOutcome-SuccesfulValidation-Example.page.md

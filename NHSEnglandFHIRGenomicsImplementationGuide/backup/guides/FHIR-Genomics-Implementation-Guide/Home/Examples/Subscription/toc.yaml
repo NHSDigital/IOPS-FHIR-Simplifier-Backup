@@ -1,8 +1,8 @@
 - name: Index
   filename: Index.page.md
-- name: Subscription-DiagnosticReportNotification
-  filename: Subscription-DiagnosticReportNotification.page.md
-- name: Subscription-TaskNotification
-  filename: Subscription-TaskNotification.page.md
-- name: Subscription-TaskNotification-Minimal
-  filename: Subscription-TaskNotification-Minimal.page.md
+- name: Subscription-DiagnosticReportNotification-Example
+  filename: Subscription-DiagnosticReportNotification-Example.page.md
+- name: Subscription-TaskNotification-Example
+  filename: Subscription-TaskNotification-Example.page.md
+- name: Subscription-MinimalTaskNotification-Example
+  filename: Subscription-MinimalTaskNotification-Example.page.md
