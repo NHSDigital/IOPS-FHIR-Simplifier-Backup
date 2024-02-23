@@ -161,3 +161,41 @@ The use of these aspects of SNOMED CT is illustrated in the following simplified
 <br>
 
 Further information on the use of SNOMED CT for pathology reporting can be found on the  [Pathology Standards and Implementation website](https://digital.nhs.uk/services/pathology-standards-and-implementation/snomed-ct-for-pathology-reporting).
+
+### Representation of Test Results
+Laboratory test results are reported using a variety of forms:
+
+* **Quantitative Result:** the result is expressed as a number, usually with an associated unit of measure. Comparators may be used to indicate that the actual value is greater than or less than the stated value. A range of values may be reported instead of a single value. Examples include:
+    * Albumin: 47 g/L
+    * eGFR: >90 mL/min/1.73m2
+* **Semi-quantitative Result:** the result is expressed using a descriptor to indicate the relative degree of positivity or negativity based on a scale. The scale is not always formally defined. Semi-quantitative results are widely used in microbiology, particularly for reporting microscopy and culture test results to indicate the amount or level of growth of organisms. Examples include:
+    * Epithelial cells: +
+    * Organism susceptibility to nitrofurantoin: Resistant
+* **Qualitative Result:** the result is expressed using a descriptor to indicate positivity or negativity. The descriptors are usually defined as pairs, for example: positive/negative, detected/not detected, isolated/not isolated. In this respect, qualitive results can be seen as a subset of semi-quantitative results in that they contain only two scale points to indicate positivity or negativity. Examples include:
+    * Hepatitis B surface antigen: NEGATIVE
+    * MRSA screening test: NOT DETECTED
+* **Quantitative Result Combined with an Interpretation:** in some cases, a result may contain a combination of quantitative and non-quantitative elements. The non-quantitative element is sometimes expressed separately as an interpretation to provide a categorical assessment of the quantitative value. Examples include:
+    * Lymphocyte count: 0.70 10*9/L LOW
+    * Rubella IgG antibody: >10 IU/ml DETECTED
+* **Narrative Result:** the result is presented as text, for example:
+    * Aerobic culture: No growth detected after 5 days incubation
+
+```xml
+<Observation>
+    ...				
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1105861000000106" />
+            <display value="Albumin mass concentration in serum" />
+        </coding>
+    </code>
+    ...
+    <valueQuantity>
+	    <value value="47" />
+	    <unit value="g/L" />
+	    <system value="http://unitsofmeasure.org" />
+	    <code value="g/L" /> 
+    </valueQuantity>
+    ...
+</Observation>

@@ -1,4 +1,6 @@
 - name: Bundles
   filename: Bundles
+- name: Observations
+  filename: Observations
 - name: Snippets
   filename: Snippets
