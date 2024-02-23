@@ -139,34 +139,41 @@ The snippet examples have been provided to illustrate how each supported data el
         </tr>
         <tr>
             <td>PATH-R4-17</td>
+            <td>Observation</td>
+            <td>Clinical Biochemistry</td>
+            <td>TBC</td>
+            <td>{{pagelink:R4ObservationAlbumin}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-18</td>
             <td>DiagnosticReport</td>
             <td>Microbiology</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4DiagnosticReport}} may be populated.</td>
             <td>{{pagelink:R4SnippetsDiagnosticReport}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-18</td>
+            <td>PATH-R4-19</td>
             <td>Observation (Test Group)</td>
             <td>Haematology</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestGroup}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestGroup}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-19</td>
+            <td>PATH-R4-20</td>
             <td>Observation (Test Result)</td>
             <td>Haematology</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestResult}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestResult}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-20</td>
+            <td>PATH-R4-21</td>
             <td>ServiceRequest</td>
             <td>Clinical Biochemistry</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ServiceRequest}} may be populated.</td>
             <td>{{pagelink:R4SnippetsServiceRequest}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-21</td>
+            <td>PATH-R4-22</td>
             <td>Specimen</td>
             <td>Clinical Biochemistry</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4Specimen}} may be populated.</td>

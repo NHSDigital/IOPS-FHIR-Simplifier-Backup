@@ -3,7 +3,7 @@ topic: ReleaseNotes
 ---
 ## Release Notes
 
-### v0.1.5 (TBC)
+### v0.1.5 (27/02/2024)
 
 * Updated the examples in the {{pagelink:R4Examples}} to correct various validation errors.
 * Added the following new <code>Observation</code> examples:
