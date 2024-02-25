@@ -1,2 +1,6 @@
-- name: Albumin
-  filename: Albumin.page.md
+- name: Observation (Test Result) - Albumin
+  filename: Observation-Test-Result-Albumin.page.md
+- name: Observation (Test Result) - eGFR
+  filename: Observation-Test-Result-eGFR.page.md
+- name: Observation (Test Result) - Epithelial cells
+  filename: Observation-Test-Result-Epithelial-cells.page.md
