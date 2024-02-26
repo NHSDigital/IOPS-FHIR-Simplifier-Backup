@@ -84,10 +84,20 @@ The following are example usage scenarios for the UK Core Observation profile:
 
 - Group specific laboratory observations together, for example Full Blood Count,
 - Place laboratory observations in an ordered fashion.
-<br><br>
-The Observation-Group-Lab profile is used to reference multiple individual laboratory observations (Observation-Lab) which together form a larger test set, for example a urea and electrolytes test that contains many several sub tests. 
-<br><br>
+
+<br>
+The Observation-Group-Lab profile is used to reference multiple individual laboratory observations (Observation-Lab) which together form a larger test set.
+
+The workflow below shows a possible way to group a set of related laboratory observations into the derived {{pagelink:Profile-Observation-Group-67431}}, which is then referenced within a diagnostic report. Seperate laboratory observations MAY be directly referenced within the diagnostic report.
+<br>
+
 {{render: Derived-Profiles-Lab-Example }}{: .img-responsive }
+
+<br>
+Depending upon the countries or trusts workflow, an alternative is to have any separate laboratory observations referenced in a {{pagelink:Profile-Observation-Group-67431}} before being referenced in the diagnostic report. Although this creates extra resources it standardises the workflow. 
+
+{{render:Derived-Profiles-Lab-Example-Extra-Group}}{: .img-responsive }
+
 ---
 
 ## Profile Specific Implementation Guidance: ##
