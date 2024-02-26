@@ -148,7 +148,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..1</td>
             <td>Required</td>
             <td>Multiple</td>
-            <td>The test result value.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice">choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>valueQuantity</code>.<br><br>If the result value is a numeric quantity, a standard <a href="https://ucum.org/">UCUM</a> unit <b>SHOULD</b> be used. <br><br>If the result value is coded, a suitable SNOMED CT concept <b>SHOULD</b> be used, for example: <code>10828004</code> <code>Positive</code .</td>
+            <td>The test result value.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice">choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>valueQuantity</code>.<br><br>If the result value is a numeric quantity, a standard <a href="https://ucum.org/">UCUM</a> unit <b>SHOULD</b> be used. <br><br>If the result value is coded, a suitable SNOMED CT concept <b>SHOULD</b> be used, for example: <code>260385009</code> <code>Negative</code></td>
         </tr>
         <tr>
             <td>dataAbsentReason</td>
