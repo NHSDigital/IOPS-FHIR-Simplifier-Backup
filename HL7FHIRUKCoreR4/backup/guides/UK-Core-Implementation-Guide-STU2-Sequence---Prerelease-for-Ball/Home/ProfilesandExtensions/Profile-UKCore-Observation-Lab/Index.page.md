@@ -82,10 +82,20 @@ The following are example usage scenarios for the UK Core Observation profile:
 
 - Query and retrieve a patient's laboratory observations
 - Record or update a patient's laboratory observations
+
+<br>
+The Observation-Lab profile is for individual laboratory tests (Observation-Lab) which may form a larger set of tests, for example a urea and electrolyte test that contains many sub tests, or as a single test, for example Serum ferritin level.
 <br><br>
-The Observation-Lab profile is for individual laboratory tests (Observation-Lab) which can be referenced by either Observation-LabGroup to form a larger test set, for example a urea and electrolyte test that contains many sub tests, or a DiagnosticReport-Lab as a single test within the report, for example Serum ferritin level.
-<br><br>
+The workflow below shows a possible way to group a set of related laboratory observations into the derived {{pagelink:Profile-Observation-Group-67431}}, which is then referenced within a diagnostic report. Seperate laboratory observations MAY be directly referenced within the diagnostic report.
+<br>
+
 {{render: Derived-Profiles-Lab-Example }}{: .img-responsive }
+
+<br>
+Depending upon the countries or trusts workflow, an alternative is to have any separate laboratory observations referenced in a {{pagelink:Profile-Observation-Group-67431}} before being referenced in the diagnostic report. Although this creates extra resources it standardises the workflow. 
+
+{{render:Derived-Profiles-Lab-Example-Extra-Group}}{: .img-responsive }
+
 ---
 
 ## Profile Specific Implementation Guidance: ##
