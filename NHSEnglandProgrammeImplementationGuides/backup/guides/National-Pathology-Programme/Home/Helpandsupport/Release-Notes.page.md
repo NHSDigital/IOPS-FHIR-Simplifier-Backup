@@ -6,9 +6,7 @@ topic: ReleaseNotes
 ### v0.1.5 (27/02/2024)
 
 * Updated the examples in the {{pagelink:R4Examples}} to correct various validation errors.
-* Added the following new <code>Observation</code> examples:
-    * TBC	
-* Updated the {{pagelink:DesignOverview}} page to include a description of how various types of test result should be represented.
+* Updated the {{pagelink:DesignOverview}} page to include a description of how various types of test result (i.e. quantitative, semi-quantitative, qualitative, quantitative with an interpretation, narrative) should be represented and added corresponding <code>Observation</code> examples to the {{pagelink:R4Examples}}.
 * Included changes to the pathology related profiles that were made as part of the [HL7 UK STU2 Ballot](https://confluence.hl7.org/pages/viewpage.action?pageId=175611042) process.
 
 ### v0.1.4 (29/12/2023)
@@ -29,14 +27,14 @@ topic: ReleaseNotes
 ### v0.1.2 (30/10/2023)
 
 * Removed all FHIR STU3 related content, in line with the recent [announcement](https://simplifier.net/organization/hl7uk/news/151) from the NHS England Interoperability Standards Team that CareConnect has been deprecated and all development on the CareConnect FHIR STU3 assets has ceased.
-* Updated the examples in the {{pagelink:R4Examples}} to include a populated <code>category</code> element for <code>UKCore-DiagnosticReport-Lab</code>, <code>UKCore-Observation-LabGroup</code> and <code>UKCore-Observation-Lab</code>.
+* Updated the examples in the {{pagelink:R4Examples}} to include a populated <code>category</code> element for <code>UKCore-DiagnosticReport-Lab</code>, <code>UKCore-Observation-Group-Lab</code> and <code>UKCore-Observation-Lab</code>.
 * Updated the structure of the implementation guide to align with the latest NHS England FHIR Implementation Guide template. 
 
 ### v0.1.1 (04/10/2023)
 
 * Updated to incorporate a new set of laboratory specific FHIR R4 derived profiles, as defined in the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current) (currently STU2):
     * <code>UKCore-DiagnosticReport-Lab</code>
-    * <code>UKCore-Observation-LabGroup</code>
+    * <code>UKCore-Observation-Group-Lab</code>
     * <code>UKCore-Observation-Lab</code>
     * <code>UKCore-ServiceRequest-Lab</code> 
     * Note: <code>UKCore-Specimen</code> does not have a pathology specific derived profile.

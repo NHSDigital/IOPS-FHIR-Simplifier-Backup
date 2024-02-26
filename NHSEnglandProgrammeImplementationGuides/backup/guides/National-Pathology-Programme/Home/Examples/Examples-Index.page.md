@@ -20,8 +20,8 @@ The snippet examples have been provided to illustrate how each supported data el
             <th width="10%">Reference</th>
             <th width="10%">Resource</th>
             <th width="15%">Speciality</th>
-            <th width="33%">Summary</th>
-            <th width="32%">Example</th>
+            <th width="30%">Summary</th>
+            <th width="35%">Example</th>
         </tr>
     </thead>
     <tbody>
@@ -29,151 +29,207 @@ The snippet examples have been provided to illustrate how each supported data el
             <td>PATH-R4-01</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Request for a single test (numeric result).</td>
+            <td>An example of a request for a single test (quantitative result).</td>
             <td>{{pagelink:R4BundleExampleHbA1cRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-02</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Report for a single test (numeric result).</td>
+            <td>An example of a report for a single test (quantitative result).</td>
             <td>{{pagelink:R4BundleExampleHbA1cReport}}</td>
         </tr>   
         <tr>
             <td>PATH-R4-03</td>
             <td>Bundle</td>
             <td>Haematology</td>
-            <td>Request for a single test group (numeric results).</td>
+            <td>An example of a request for a single test group (quantitative results).</td>
             <td>{{pagelink:R4BundleExampleFullBloodCountRequest}}</td>
         </tr>   
         <tr>
             <td>PATH-R4-04</td>
             <td>Bundle</td>
             <td>Haematology</td>
-            <td>Report for a single test group (numeric results).</td>
+            <td>An example of a report for a single test group (quantitative results).</td>
             <td>{{pagelink:R4BundleExampleFullBloodCountReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-05</td>
             <td>Bundle</td>
             <td>Immunology / Serology</td>
-            <td>Request for a single test (qualitative result).</td>
+            <td>An example of a request for a single test (qualitative result).</td>
             <td>{{pagelink:R4BundleExampleHBsAgRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-06</td>
             <td>Bundle</td>
             <td>Immunology / Serology</td>
-            <td>Report for a single test (qualitative result).</td>
+            <td>An example of a report for a single test (qualitative result).</td>
             <td>{{pagelink:R4BundleExampleHBsAgReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-07</td>
             <td>Bundle</td>
             <td>Cytology</td>
-            <td>Request for a single test (qualitative result).</td>
+            <td>An example of a request for a single test (qualitative result).</td>
             <td>{{pagelink:R4BundleExampleHPVRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-08</td>
             <td>Bundle</td>
             <td>Cytology</td>
-            <td>Report for a single test (qualitative result).</td>
+            <td>An example of a report for a single test (qualitative result).</td>
             <td>{{pagelink:R4BundleExampleHPVReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-09</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Request for a single test group and a single test (numeric results).</td>
+            <td>An example of a request for a single test group and a single test (quantitative results).</td>
             <td>{{pagelink:R4BundleExampleLipidsandHbA1cRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-10</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Report for a single test group and a single test (numeric results)</td>
+            <td>An example of a report for a single test group and a single test (quantitative results)</td>
             <td>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-11</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Request for multiple test groups (numeric results).</td>
+            <td>An example of a request for multiple test groups (quantitative results).</td>
             <td>{{pagelink:R4BundleExampleLFTandUandERequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-12</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Report for multiple test groups (numeric results).</td>
+            <td>An example of a report for multiple test groups (quantitative results).</td>
             <td>{{pagelink:R4BundleExampleLFTandUandEReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-13</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-        	<td>Request for a dynamic function test (numeric results).</td>
+        	<td>An example of a request for a dynamic function test (quantitative results).</td>
             <td>{{pagelink:R4BundleExampleGTTRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-14</td>
             <td>Bundle</td>
             <td>Clinical Biochemistry</td>
-            <td>Report for a dynamic function test (numeric results).</td>
+            <td>An example of a report for a dynamic function test (quantitative results).</td>
             <td>{{pagelink:R4BundleExampleGTTReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-15</td>
             <td>Bundle</td>
             <td>Microbiology</td>
-            <td>Request for a complex test, with multiple, nested test groups (numeric, qualitative and semi-quantitative results).</td>
+            <td>An example of a request for a complex test, with multiple, nested test groups (quantitative, qualitative and semi-quantitative results).</td>
             <td>{{pagelink:R4BundleExampleUrineMCSRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-16</td>
             <td>Bundle</td>
             <td>Microbiology</td>
-            <td>Report for a complex test, with multiple, nested test groups (numeric, qualitative and semi-quantitative results).</td>
+            <td>An example of a report for a complex test, with multiple, nested test groups (quantitative, qualitative and semi-quantitative results).</td>
             <td>{{pagelink:R4BundleExampleUrineMCSReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-17</td>
-            <td>Observation</td>
+            <td>Observation (Test Result)</td>
             <td>Clinical Biochemistry</td>
-            <td>TBC</td>
+            <td>An example of a quantitative test result.</td>
             <td>{{pagelink:R4ObservationAlbumin}}</td>
         </tr>
         <tr>
             <td>PATH-R4-18</td>
+            <td>Observation (Test Result)</td>
+            <td>Clinical Biochemistry</td>
+            <td>An example of a quantitative test result.</td>
+            <td>{{pagelink:R4ObservationeGFR}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-19</td>
+            <td>Observation (Test Result)</td>
+            <td>Microbiology</td>
+            <td>An example of a semi-quantitative test result.</td>
+            <td>{{pagelink:R4ObservationEpithelialCells}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-20</td>
+            <td>Observation (Test Result)</td>
+            <td>Microbiology</td>
+            <td>An example of a semi-quantitative test result.</td>
+            <td>{{pagelink:R4ObservationNitrofurantoinSusceptibility}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-21</td>
+            <td>Observation (Test Result)</td>
+            <td>Immunology / Serology</td>
+            <td>An example of a qualitative test result.</td>
+            <td>{{pagelink:R4ObservationHBsAg}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-22</td>
+            <td>Observation (Test Result)</td>
+            <td>Microbiology</td>
+            <td>An example of a qualitative test result.</td>
+            <td>{{pagelink:R4ObservationMRSAScreeningTest}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-23</td>
+            <td>Observation (Test Result)</td>
+            <td>Clinical Biochemistry</td>
+            <td>An example of a quantitative test result combined with an interpretation.</td>
+            <td>{{pagelink:R4ObservationLymphocyteCount}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-24</td>
+            <td>Observation (Test Result)</td>
+            <td>Microbiology</td>
+            <td>An example of a quantitative test result combined with an interpretation.</td>
+            <td>{{pagelink:R4ObservationRubellaIgGAntibody}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-25</td>
+            <td>Observation (Test Result)</td>
+            <td>Microbiology</td>
+            <td>An example of a narrative test result.</td>
+            <td>{{pagelink:R4ObservationAerobicBloodCulture}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-26</td>
             <td>DiagnosticReport</td>
             <td>Microbiology</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4DiagnosticReport}} may be populated.</td>
             <td>{{pagelink:R4SnippetsDiagnosticReport}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-19</td>
+            <td>PATH-R4-27</td>
             <td>Observation (Test Group)</td>
             <td>Haematology</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestGroup}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestGroup}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-20</td>
+            <td>PATH-R4-28</td>
             <td>Observation (Test Result)</td>
             <td>Haematology</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestResult}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestResult}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-21</td>
+            <td>PATH-R4-29</td>
             <td>ServiceRequest</td>
             <td>Clinical Biochemistry</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ServiceRequest}} may be populated.</td>
             <td>{{pagelink:R4SnippetsServiceRequest}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-22</td>
+            <td>PATH-R4-30</td>
             <td>Specimen</td>
             <td>Clinical Biochemistry</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4Specimen}} may be populated.</td>

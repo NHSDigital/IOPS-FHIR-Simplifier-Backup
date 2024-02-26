@@ -9,7 +9,7 @@ topic: Home
 ### Introduction
 This implementation guide and the HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4 assets that it references define a specification to enable the exchange of pathology laboratory data.
 
-The implementation guide has been created by NHS England and forms part of the [NHS England Pathology Project]( https://simplifier.net/pathology) on Simplifier<sup>&reg;</sup>. The profiles that this implementation guide references are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2.
+The implementation guide has been created by NHS England and forms part of the [NHS England Programme Implementation Guides](https://simplifier.net/NHS-England-Programme-Implementation-Guides/~guides) project on Simplifier<sup>&reg;</sup>. The profiles that this implementation guide references are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2.
 
 For the implementation guide version history, see {{pagelink:ReleaseNotes}}.
 

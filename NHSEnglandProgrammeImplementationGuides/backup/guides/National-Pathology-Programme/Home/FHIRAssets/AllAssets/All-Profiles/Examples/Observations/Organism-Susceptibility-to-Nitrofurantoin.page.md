@@ -1,0 +1,9 @@
+---
+topic: R4ObservationNitrofurantoinSusceptibility
+subject: Pathology-DiagnosticReport-Lab-Sn-Example
+---
+### PATH-R4-20: R4 Observation Example - Organism Susceptibility to Nitrofurantoin 
+An example of a semi-quantitative test result:
+* Organism susceptibility to nitrofurantoin: RESISTANT  
+
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleSnippet.page.md}}
