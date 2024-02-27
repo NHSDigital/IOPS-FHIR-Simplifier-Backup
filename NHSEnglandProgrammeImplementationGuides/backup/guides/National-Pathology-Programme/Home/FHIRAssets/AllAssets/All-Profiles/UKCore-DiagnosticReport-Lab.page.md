@@ -103,8 +103,8 @@ An example of how each supported data element may be populated is provided in {{
         </tr>
         <tr>
             <td>category</td>
-            <td>0..*</td>
-            <td><code>1..*</code></td>
+            <td>1..*</td>
+            <td>1..*</td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
             <td>The general type of test report. This <b>SHALL</b> be populated with a fixed value of category code <code>LAB</code> for <code>Laboratory</code>.<br><br>If required, additional category codes <b>MAY</b> also be included.</td>
@@ -119,8 +119,8 @@ An example of how each supported data element may be populated is provided in {{
         </tr>
         <tr>
             <td>subject</td>
-            <td>0..1</td>
-            <td><code>1..1</code></td>
+            <td>1..1</td>
+            <td>1..1</td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
             <td>Reference to the subject that the test report relates to. This is usually (but not always) a <code>Patient</code>.</td>
