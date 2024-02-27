@@ -148,7 +148,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..1</td>
             <td>Required</td>
             <td>Multiple</td>
-            <td>The test result value.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice">choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>valueQuantity</code>.<br><br>If the result value is a numeric quantity, a standard <a href="https://ucum.org/">UCUM</a> unit <b>SHOULD</b> be used. <br><br>If the result value is coded, a suitable SNOMED CT concept <b>SHOULD</b> be used, for example: <code>260385009</code> <code>Negative</code></td>
+            <td>The test result value.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice">choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>valueQuantity</code>.<br><br>If the result value is a numeric quantity (i.e. quantitative result type), a standard <a href="https://ucum.org/">UCUM</a> unit <b>SHOULD</b> be used. <br><br>If the result value is coded (i.e. a semi-quantitative or qualitative result type), a suitable SNOMED CT concept <b>SHOULD</b> be used, for example: <code>260385009</code> <code>Negative</code><br><br>Refer to the {{pagelink:DesignOverview}} section for further information relating to the representation of different types of test results.</td>
         </tr>
         <tr>
             <td>dataAbsentReason</td>
@@ -284,7 +284,7 @@ An example of how each supported data element may be populated is provided in {{
         <tr>
             <td>encounter</td>
             <td></td>
-            <td>0</td>
+            <td></td>
             <td></td>
             <td><a href="https://hl7.org</b>/fhir/R4/references.html#2.3.0">Reference</a></td>
             <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
