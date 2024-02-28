@@ -1,6 +1,6 @@
 ---
 topic: R4ObservationAerobicBloodCulture
-subject: Pathology-DiagnosticReport-Lab-Sn-Example
+subject: Pathology-Observation-Aerobic-Culture-Example
 ---
 ### PATH-R4-25: R4 Observation Example - Aerobic Blood Culture
 An example of a narrative test result:

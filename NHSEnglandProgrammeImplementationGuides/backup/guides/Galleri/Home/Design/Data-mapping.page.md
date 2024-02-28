@@ -13,7 +13,7 @@
 |Participant Identifier|1..1|Patient.identifier|The patient identifier used by the screening organisation
 |Sample Identifier|1..1|Specimen.identifier|The speciment identifier used by the screening organisation
 |Sample Type|1..1|Specimen.type|A fixed value of<br/>system "http://snomed.info/sct"<br/>code "119297000"<br/>display "Blood specimen"
-|Sample Collection Date|1..1|Specimen.collection.collectionDateTime|Using the appropriate [dateTime](http://hl7.org/fhir/datatypes.html#dateTime) format
+|Sample Collection Date|1..1|Specimen.collection.collectedDateTime|Using the appropriate [dateTime](http://hl7.org/fhir/datatypes.html#dateTime) format
 |Requesting Organisation Name|1..1|Organization.name|ODS organization name NHS England. Name fixed to "NHS ENGLAND - X26"
 |Requesting Organisation Identifier|1..1|Organization.identifier|A fixed value of<br/>system "https://fhir.nhs.uk/Id/ods-organization-code"<br/>value "X26"
 |Requesting Organisation Address|1..1|Organization.address|ODS organization address for NHS England. Address fixed to line "THE LEEDS GOVERNMENT HUB"<br/>line "7-8 WELLINGTON PLACE"<br/>city "LEEDS"<br/>postalCode "LS1 4AP"<br/>country "ENGLAND"

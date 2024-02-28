@@ -1,0 +1,48 @@
+<Observation>
+  <id value="Pathology-Observation-eGFR-Example" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="e6127f03-4a96-45d3-abd8-1adcf0189be4" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="laboratory" />
+      <display value="Laboratory" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <!-- From PaLM observable entity reference set -->
+      <system value="http://snomed.info/sct" />
+      <code value="1011481000000105" />
+      <display value="eGFR (estimated glomerular filtration rate) using creatinine Chronic Kidney Disease Epidemiology Collaboration equation per 1.73 square metres" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="WELSH, Joel" />
+  </subject>
+  <issued value="2022-03-08T14:23:00+00:00" />
+  <performer>
+    <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+    <display value="TD008362 PATH LAB 001" />
+  </performer>
+  <valueQuantity>
+    <value value="90" />
+    <comparator value=">" /> 
+    <unit value="mL/min/1.73m2" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="mL/min/((173/100).m2)" />
+  </valueQuantity>
+  <note>
+    <text value="Calculated eGFR is not valid in children or pregnancy.\nLess accurate with acute change in creatinine (AKI).\nCaution with high or low muscle mass or amputation.\nAvoid blood sampling within 12 hours of eating meat.\nEthnicity factor comment removed Dec21 NG203." />
+  </note>
+  <specimen>
+    <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+  </specimen>
+</Observation>

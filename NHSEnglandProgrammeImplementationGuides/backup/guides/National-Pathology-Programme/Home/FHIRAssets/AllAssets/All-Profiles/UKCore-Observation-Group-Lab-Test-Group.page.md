@@ -14,7 +14,6 @@ Refer to the {{pagelink:R4ObservationTestResult}} profile definition and the {{p
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
-* R4 UK Core Profile: [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)
 * R4 UK Core Profile (Lab): [UKCore-Observation-Group-Lab](https://simplifier.net/hl7fhirukcorer4/ukcore-observation-group-lab)
 
 ### Profile Views
@@ -113,8 +112,8 @@ An example of how each supported data element may be populated is provided in {{
         </tr>
         <tr>
             <td>subject</td>
-            <td>1..1</td>
-            <td>1..1</td>
+            <td>0..1</td>
+            <td><code>1..1</code></td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
             <td>Reference to the subject that the test group relates to. This is usually (but not always) a <code>Patient</code>.</td>

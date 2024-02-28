@@ -171,7 +171,7 @@
         <intent value="order" />
         <code>
           <coding>
-            <!-- Not currently in PaLM procedure reference set -->
+            <!-- From PaLM procedure reference set -->
             <system value="http://snomed.info/sct" />
             <code value="700152009" />
             <display value="Human papilloma virus screening" />

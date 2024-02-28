@@ -3,7 +3,7 @@ topic: ReleaseNotes
 ---
 ## Release Notes
 
-### v0.1.5 (28/02/2024)
+### v0.1.5 (01/03/2024)
 
 * Updated the examples in the {{pagelink:R4Examples}} to correct various validation errors.
 * Updated the {{pagelink:DesignOverview}} page to include a description of how various types of test result (i.e. quantitative, semi-quantitative, qualitative, quantitative with an interpretation, narrative) should be represented and added corresponding <code>Observation</code> examples to the {{pagelink:R4Examples}}.
