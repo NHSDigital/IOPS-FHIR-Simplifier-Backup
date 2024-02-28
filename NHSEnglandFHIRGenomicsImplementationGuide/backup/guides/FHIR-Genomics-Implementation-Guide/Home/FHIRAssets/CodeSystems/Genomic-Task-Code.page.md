@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-Codes for Tasks in genomics
+Codes for Tasks in genomics, mapped to NGTP stages (codes for equivalent NGTP stages are visible from the Table, XML and JSON views)
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
@@ -29,3 +29,4 @@ Codes for Tasks in genomics
 {{json:https://fhir.nhs.uk/CodeSystem/task-code-genomics}}
 </div>
 <br/>
+
