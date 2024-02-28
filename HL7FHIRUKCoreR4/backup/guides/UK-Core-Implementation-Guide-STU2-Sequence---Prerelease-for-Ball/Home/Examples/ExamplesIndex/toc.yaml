@@ -26,6 +26,10 @@
   filename: Example-UKCore-Condition-Extension-CodingSCTDescId.page.md
 - name: Example UKCore-Condition-Extension-ConditionEpisode
   filename: Example-UKCore-Condition-Extension-ConditionEpisode.page.md
+- name: Example UKCore-DiagnosticReport-CTChestScan
+  filename: Example-UKCore-DiagnosticReport-CTChestScan.page.md
+- name: Example UKCore-DiagnosticReport-ECG
+  filename: Example-UKCore-DiagnosticReport-ECG.page.md
 - name: Example UKCore-DiagnosticReport-Extension-CompositionReference
   filename: Example-UKCore-DiagnosticReport-Extension-CompositionReference.page.md
 - name: Example UKCore-DiagnosticReport-Extension-DeviceReference
@@ -56,6 +60,8 @@
   filename: Example-UKCore-FamilyMemberHistory-Extension-Participant.page.md
 - name: Example UKCore-HealthcareService-OrthopaedicService
   filename: Example-UKCore-HealthcareService-OrthopaedicService.page.md
+- name: Example UKCore-ImagingStudy-CTChestScan
+  filename: Example-UKCore-ImagingStudy-CTChestScan.page.md
 - name: Example UKCore-Immunization
   filename: Example-UKCore-Immunization.page.md
 - name: Example UKCore-Immunization-Extension-ParentPresent
@@ -170,6 +176,10 @@
   filename: Example-UKCore-Schedule-Immunization.page.md
 - name: Example UKCore-ServiceRequest-ColonoscopyRequest
   filename: Example-UKCore-ServiceRequest-ColonoscopyRequest.page.md
+- name: Example UKCore-ServiceRequest-CTChestScan
+  filename: Example-UKCore-ServiceRequest-CTChestScan.page.md
+- name: Example UKCore-ServiceRequest-ECG
+  filename: Example-UKCore-ServiceRequest-ECG.page.md
 - name: Example UKCore-ServiceRequest-Extension-AdditionalContact
   filename: Example-UKCore-ServiceRequest-Extension-AdditionalContact.page.md
 - name: Example UKCore-ServiceRequest-Extension-Coverage

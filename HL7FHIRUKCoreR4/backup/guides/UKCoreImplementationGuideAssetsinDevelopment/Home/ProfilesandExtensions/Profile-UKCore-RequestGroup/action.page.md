@@ -9,10 +9,10 @@ With the base FHIR constraint rule *"Must have resource or action but not both"*
 The resource being referenced SHALL conform to one of the following:
 
 - {{pagelink:Profile-Device}}
-- [Profile UKCore-Patient](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Patient?version=current)
-- [Profile UKCore-Practitioner](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Practitioner?version=current)
-- [Profile UKCore-PractitionerRole](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-PractitionerRole?version=current)
-- [Profile UKCore-RelatedPerson](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-RelatedPerson?version=current)
+- [Profile UKCore-Patient](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Patient)
+- [Profile UKCore-Practitioner](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Practitioner)
+- [Profile UKCore-PractitionerRole](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-PractitionerRole)
+- [Profile UKCore-RelatedPerson](https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-RelatedPerson)
 
 
 ---

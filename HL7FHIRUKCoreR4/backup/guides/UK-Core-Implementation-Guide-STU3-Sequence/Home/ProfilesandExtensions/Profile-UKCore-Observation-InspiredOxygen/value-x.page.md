@@ -14,6 +14,6 @@ One of the following values SHOULD be used:
 
 - `Observation.valueQuantity.system` = `http://unitsofmeasure.org`
 - `Observation.valueQuantity.code` = `%`
-- `Observation.valueQuantity.unit` = 'percent`
+- `Observation.valueQuantity.unit` = `percent`
 
 ---

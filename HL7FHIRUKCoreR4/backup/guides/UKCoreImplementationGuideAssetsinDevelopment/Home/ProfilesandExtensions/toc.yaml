@@ -18,8 +18,6 @@
   filename: Profile-UKCore-Device
 - name: Profile UKCore-DocumentReference
   filename: Profile-UKCore-DocumentReference
-- name: Profile UKCore-DocumentReference-Imaging
-  filename: Profile-UKCore-DocumentReference-Imaging
 - name: Profile UKCore-EpisodeOfCare
   filename: Profile-UKCore-EpisodeOfCare
 - name: Profile UKCore-Flag
