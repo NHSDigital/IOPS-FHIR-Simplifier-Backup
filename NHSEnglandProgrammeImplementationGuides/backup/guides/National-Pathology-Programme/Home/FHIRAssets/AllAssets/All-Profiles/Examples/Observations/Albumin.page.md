@@ -1,6 +1,6 @@
 ---
 topic: R4ObservationAlbumin
-subject: Pathology-DiagnosticReport-Lab-Sn-Example
+subject: Pathology-Observation-Albumin-Example
 ---
 ### PATH-R4-17: R4 Observation Example - Albumin
 An example of a quantitative test result:

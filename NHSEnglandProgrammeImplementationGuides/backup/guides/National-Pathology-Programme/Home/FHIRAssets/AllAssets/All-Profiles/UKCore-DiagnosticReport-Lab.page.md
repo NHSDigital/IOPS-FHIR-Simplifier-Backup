@@ -12,7 +12,6 @@ For information on how test results and test groups are represented, refer to th
 
 ### Resource and Profile Links
 * R4 Resource (Base): [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html)
-* R4 UK Core Profile: [UKCore-DiagnosticReport](https://simplifier.net/hl7fhirukcorer4/ukcore-diagnosticreport)
 * R4 UK Core Profile (Lab): [UKCore-DiagnosticReport-Lab](https://simplifier.net/hl7fhirukcorer4/ukcore-diagnosticreport-lab)
 
 ### Profile Views

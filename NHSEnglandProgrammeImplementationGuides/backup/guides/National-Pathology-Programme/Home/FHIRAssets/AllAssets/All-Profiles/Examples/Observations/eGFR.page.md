@@ -1,6 +1,6 @@
 ---
 topic: R4ObservationeGFR
-subject: Pathology-DiagnosticReport-Lab-Sn-Example
+subject: Pathology-Observation-eGFR-Example
 ---
 ### PATH-R4-18: R4 Observation Example - eGFR
 An example of a quantitative test result:

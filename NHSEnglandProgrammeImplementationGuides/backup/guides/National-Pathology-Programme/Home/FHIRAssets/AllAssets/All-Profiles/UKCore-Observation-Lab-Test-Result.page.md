@@ -14,7 +14,6 @@ Refer to the {{pagelink:R4ObservationTestGroup}} profile definition and the {{pa
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
-* R4 UK Core Profile: [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)
 * R4 UK Core Profile (Lab): [UKCore-Observation-Lab](https://simplifier.net/hl7fhirukcorer4/ukcore-observation-lab)
 
 ### Profile Views
@@ -91,8 +90,8 @@ An example of how each supported data element may be populated is provided in {{
         </tr>
         <tr>
             <td>category</td>
-            <td>0..*</td>
-            <td><code>1..*</code></td>
+            <td>1..*</td>
+            <td>1..*</td>
             <td>Mandatory</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
             <td>A code that classifies the general type of test result. This <b>SHALL</b> be populated with a fixed value of category code <code>laboratory</code> for <code>Laboratory</code>.<br><br>If required, additional category codes <b>MAY</b> also be included.</td>
@@ -148,7 +147,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..1</td>
             <td>Required</td>
             <td>Multiple</td>
-            <td>The test result value.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice">choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>valueQuantity</code>.<br><br>If the result value is a numeric quantity (i.e. quantitative result type), a standard <a href="https://ucum.org/">UCUM</a> unit <b>SHOULD</b> be used. <br><br>If the result value is coded (i.e. a semi-quantitative or qualitative result type), a suitable SNOMED CT concept <b>SHOULD</b> be used, for example: <code>260385009</code> <code>Negative</code><br><br>Refer to the {{pagelink:DesignOverview}} section for further information relating to the representation of different types of test results.</td>
+            <td>The test result value.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice">choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>valueQuantity</code>.<br><br>If the result value is a numeric quantity (i.e. a quantitative result type), a standard <a href="https://ucum.org/">UCUM</a> unit <b>SHOULD</b> be used. <br><br>If the result value is coded (i.e. a semi-quantitative or qualitative result type), a suitable SNOMED CT concept <b>SHOULD</b> be used, for example: <code>260385009</code> <code>Negative</code><br><br>Refer to the {{pagelink:DesignOverview}} section for further information relating to the representation of different types of test results.</td>
         </tr>
         <tr>
             <td>dataAbsentReason</td>
@@ -168,8 +167,8 @@ An example of how each supported data element may be populated is provided in {{
         </tr>
         <tr>
             <td>note</td>
-            <td>0..1</td>
-            <td>0..1</td>
+            <td>0..*</td>
+            <td>0..*</td>
             <td>Required</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td>
             <td>Comments relating to the test result.</td>

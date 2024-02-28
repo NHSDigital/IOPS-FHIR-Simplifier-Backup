@@ -1,6 +1,6 @@
 ---
 topic: R4ObservationHBsAg
-subject: Pathology-DiagnosticReport-Lab-Sn-Example
+subject: Pathology-Observation-HBsAg-Example
 ---
 ### PATH-R4-21: R4 Observation Example - Hepatitis B Surface Antigen (HBsAg)
 An example of a qualitative test result:

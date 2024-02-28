@@ -1,0 +1,39 @@
+ <Observation>
+  <id value="Pathology-Observation-Aerobic-Culture-Example" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="60b90d3d-2967-4b10-a208-27a5336c9a81" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="laboratory" />
+      <display value="Laboratory" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <!-- From PBCL observable entity reference set -->
+      <system value="http://snomed.info/sct" />
+      <code value="1009761000000105" />
+      <display value="Aerobic culture" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="MOXEY, Judy" />
+  </subject>
+  <issued value="2022-04-14T11:17:00+00:00" />
+  <performer>
+    <reference value="urn:uuid:d687c3ef-f4f1-4149-930d-f7fdb0acb7aa" />
+    <display value="TD008362 PATH LAB 001" />
+  </performer>
+  <valueString value="No growth detected after 5 days incubation" />
+  <specimen>
+    <reference value="urn:uuid:2bd8336b-ad88-42fb-b66d-d1ad3e6ea7fb" />
+  </specimen>
+</Observation>

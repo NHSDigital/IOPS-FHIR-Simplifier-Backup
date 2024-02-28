@@ -1,0 +1,45 @@
+<Observation>
+  <id value="Pathology-Observation-MRSA-Example" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="2831d45f-8fcb-4f54-9788-b4e7380d9790" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="laboratory" />
+      <display value="Laboratory" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <!-- From PaLM observable entity reference set -->
+      <system value="http://snomed.info/sct" />
+      <code value="51681000237102" />
+      <display value="MRSA (methicillin resistant Staphylococcus aureus) DNA nucleic acid amplification qualitative result" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="WELSH, Joel" />
+  </subject>
+  <issued value="2022-05-10T16:07:00+00:00" />
+  <performer>
+    <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+    <display value="TD008362 PATH LAB 001" />
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="260415000" />
+      <display value="Not detected" />
+    </coding>
+  </valueCodeableConcept>
+  <specimen>
+    <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+  </specimen>
+</Observation>

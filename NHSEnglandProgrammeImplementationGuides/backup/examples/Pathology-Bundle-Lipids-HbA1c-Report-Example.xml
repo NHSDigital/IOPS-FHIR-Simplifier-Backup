@@ -382,7 +382,7 @@
           <reference value="urn:uuid:d1249582-ac45-43a7-8254-dbb10acff635" />
         </hasMember>
         <hasMember>
-          <!-- HDL (high density lipoprotein) cholesterol/total cholesterol ratio in serum -->
+          <!-- Serum cholesterol/high density lipoprotein ratio -->
           <reference value="urn:uuid:417dd1ff-90ac-4553-9688-4f5a409eee48" />
         </hasMember>
         <hasMember>
@@ -496,7 +496,7 @@
     <fullUrl value="urn:uuid:417dd1ff-90ac-4553-9688-4f5a409eee48" />
     <resource>
       <Observation>
-        <!-- HDL (high density lipoprotein) cholesterol/total cholesterol ratio in serum -->
+        <!-- Serum cholesterol/high density lipoprotein ratio -->
         <id value="417dd1ff-90ac-4553-9688-4f5a409eee48" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
@@ -515,10 +515,10 @@
         </category>
         <code>
           <coding>
-            <!-- From PaLM observable entity reference set -->
+            <!-- From PBCL observable entity reference set -->
             <system value="http://snomed.info/sct" />
-            <code value="1107741000000108" />
-            <display value="HDL (high density lipoprotein) cholesterol/total cholesterol ratio in serum" />
+            <code value="1015681000000109" />
+            <display value="Serum cholesterol/high density lipoprotein ratio" />
           </coding>
         </code>
         <subject>
@@ -532,10 +532,7 @@
         </performer>
         <valueQuantity>
           <value value="4.2" />
-          <unit value="per total count" />
-          <system value="http://unitsofmeasure.org" />
-          <!-- UCUM code for ratios TBC -->
-          <code value="/{tot}" />
+          <unit value="1/1" />
         </valueQuantity>
         <specimen>
           <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />

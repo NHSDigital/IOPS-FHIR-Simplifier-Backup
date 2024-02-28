@@ -1,6 +1,6 @@
 ---
 topic: R4ObservationLymphocyteCount
-subject: Pathology-DiagnosticReport-Lab-Sn-Example
+subject: Pathology-Observation-Lymphocyte-Example
 ---
 ### PATH-R4-23: R4 Observation Example - Lymphocyte Count
 An example of a quantitative test result combined with an interpretation:
