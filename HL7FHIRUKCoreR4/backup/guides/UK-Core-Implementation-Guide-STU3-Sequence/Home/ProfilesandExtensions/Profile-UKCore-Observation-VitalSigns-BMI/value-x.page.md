@@ -10,6 +10,6 @@ For Adult BMI measurements, a <code>valueQuantity</code> SHALL be present, and t
 For Child BMI measurements, a <code>valueQuantity</code> SHALL be present, and the following used for this profile:
 - `Observation.valueQuantity.system` = `http://unitsofmeasure.org`
 - `Observation.valueQuantity.code` = `{percentile}`
-- `Observation.valueQuantity.unit` = 'Percentile`
+- `Observation.valueQuantity.unit` = `Percentile`
 
 ---
