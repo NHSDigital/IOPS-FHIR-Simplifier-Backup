@@ -52,8 +52,6 @@
   filename: ValueSet-UKCore-FundingCategory.page.md
 - name: ValueSet UKCore-GenomeSequencingCategory
   filename: ValueSet-UKCore-GenomeSequencingCategory.page.md
-- name: ValueSet UKCore-HumanLanguage
-  filename: ValueSet-UKCore-HumanLanguage.page.md
 - name: ValueSet UKCore-ImmunizationAdministrationBodySite
   filename: ValueSet-UKCore-ImmunizationAdministrationBodySite.page.md
 - name: ValueSet UKCore-ImmunizationExplanationReason
