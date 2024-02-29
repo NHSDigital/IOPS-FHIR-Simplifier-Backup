@@ -438,21 +438,6 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 </tr>
 
 <tr>
-<td><h4>{{pagelink:ValueSet-UKCore-HumanLanguage}}</h4></td>
-<td>active</td>
-<td>{{pagelink:Profile-HealthcareService-13702}}<br>
-{{pagelink:Profile-Patient-88961}}<br>
-{{pagelink:Profile-Practitioner-10758}}</td>
-<td>1</td>
-</tr>
-<tr>
-<td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-HumanLanguage}}</td>
-</tr>
-<tr>
-<td colspan="4"  class="override"></td>
-</tr>
-
-<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ImmunizationAdministrationBodySite}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Profile-Immunization-16790}}</td>
@@ -1144,7 +1129,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-EthnicCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-FundingCategory}}<</li>
 <li>{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</li>
-<li>{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
 <li>{{pagelink:ValueSet-UKCore-ImmunizationAdministrationBodySite}}</li>
 <li>{{pagelink:ValueSet-UKCore-ImmunizationExplanationReason}}</li>
 <li>{{pagelink:ValueSet-UKCore-LegalStatusClassification}}</li>
@@ -1237,7 +1221,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:CodeSystem-UKCore-EthnicCategoryWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-FundingCategory}}</li>
 <li>{{pagelink:CodeSystem-UKCore-GenomeSequencingCategory}}</li>
-<li>{{pagelink:CodeSystem-UKCore-HumanLanguage}}</li>
 <li>{{pagelink:CodeSystem-UKCore-LegalStatusClassificationEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-LegalStatusClassificationWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-LegalStatusContext}}</li>
@@ -1289,7 +1272,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-BirthSex}}</li>
 <li>{{pagelink:ValueSet-UKCore-DeathNotificationStatus}}</li>
 <li>{{pagelink:ValueSet-UKCore-EthnicCategory}}</li>
-<li>{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
 <li>{{pagelink:ValueSet-UKCore-NHSNumberVerificationStatus}}</li>
 <li>{{pagelink:ValueSet-UKCore-OtherContactSystem}}</li>
 <li>{{pagelink:ValueSet-UKCore-PersonMaritalStatusCode}}</li>
@@ -1390,7 +1372,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:CodeSystem-UKCore-DeathNotificationStatus}}</li>
 <li>{{pagelink:CodeSystem-UKCore-EthnicCategoryEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-EthnicCategoryWales}}</li>
-<li>{{pagelink:CodeSystem-UKCore-HumanLanguage}}</li>
 <li>{{pagelink:CodeSystem-UKCore-NHSNumberVerificationStatusEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-NHSNumberVerificationStatusWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-OtherContactSystem}}</li>
@@ -1504,7 +1485,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <p><b>HealthcareService:</b></p>
 <ul>
 <li>{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
-<li>{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
 </ul>
 <p><b>Immunization:</b></p>
 <ul>
@@ -1578,7 +1558,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-BirthSex}}</li>
 <li>{{pagelink:ValueSet-UKCore-DeathNotificationStatus}}</li>
 <li>{{pagelink:ValueSet-UKCore-EthnicCategory}}</li>
-<li>{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
 <li>{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</li>
 <li>{{pagelink:ValueSet-UKCore-NHSNumberVerificationStatus}}</li>
 <li>{{pagelink:ValueSet-UKCore-PersonMaritalStatusCode}}</li>
@@ -1586,10 +1565,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-PreferredContactMethod}}</li>
 <li>{{pagelink:ValueSet-UKCore-PreferredWrittenCommunicationFormat}}</li>
 <li>{{pagelink:ValueSet-UKCore-ResidentialStatus}}</li>
-</ul>
-<p><b>Practitioner:</b></p>
-<ul>
-<li>{{pagelink:ValueSet-UKCore-HumanLanguage}}</li>
 </ul>
 <p><b>PractitionerRole:</b></p>
 <ul>
