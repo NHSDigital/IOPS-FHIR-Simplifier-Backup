@@ -27,8 +27,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
     {{tree: https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab, snapshot}}
 </div>
 
-<div id="Differential View" class="tabcontent">
-    <h4>Differential View</h4>
+<div id="Differential View" class="tabcontent"></h4>
     {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab, diff}}
 </div>
 

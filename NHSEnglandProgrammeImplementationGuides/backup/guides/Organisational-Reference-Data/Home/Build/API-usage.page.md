@@ -1,12 +1,18 @@
 ## {{page-title}}
 
-  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
+  <div markdown="span" class="alert alert-warning" role="alert"><i class="fas fa-exclamation-triangle"></i><b> Important:</b> This page is under development by NHS England</div>
   
 
-<!--## Endpoints
+## Endpoints
 
-- **<font color="#00008B">GET</font>** /Flag?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|&lt;nhs-number&gt;
-- **<font color="#00008B">POST</font>** /Flag
-- **<font color="#00008B">PUT</font>** /Flag/&lt;id&gt;
+- **<font color="#00008B">GET</font>** /Organization
 
-Refer to - {{pagelink:Home/Design/Interactions.page.md}}.-->
+- **<font color="#00008B">GET</font>** /OrganizationAffiliation
+
+- **<font color="#00008B">GET</font>** /List
+
+- **<font color="#00008B">GET</font>** /CodeSystem/$lookup
+
+- **<font color="#00008B">POST</font>** /ValueSet/$expand
+
+Refer to - {{pagelink:Home/Design/Interactions.page.md}}. 

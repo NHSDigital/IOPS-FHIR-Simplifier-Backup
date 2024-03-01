@@ -10,4 +10,4 @@ A searchset Bundle will be returned on the GET /Flag interaction ({{pagelink:Hom
 
 
 
-<iframe src="https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/ProfileUKCore-Bundle?version=current" height="800px" width="100%"></iframe>
+<iframe src="https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/Home/ProfilesandExtensions/Profile-UKCore-Bundle" height="800px" width="100%"></iframe>
