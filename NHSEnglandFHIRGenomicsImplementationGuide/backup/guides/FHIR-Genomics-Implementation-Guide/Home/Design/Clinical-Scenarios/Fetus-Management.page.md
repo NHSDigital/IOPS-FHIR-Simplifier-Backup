@@ -20,3 +20,72 @@ The following scenarios have been captured to indicate various specialist testin
 The requirement for electronic test order forms is to allow for configuration of specialist testing requirements and enable the management of samples associated with the fetus. Further input is required from the GMS to confirm the scenario as part of the testing phase within the Alpha.
 
 ### [Link to the High Fidelity Wireframe for the Fetal Scenario](https://mfy3qt.axshare.com/)
+
+The following steps is a walk through of:
+
+###1. Requester (e.g Midwife) searches for woman (a dummy patient has been pre-populated as an example)
+
+**Params:**
+```
+given=Ryanne
+family=Boulder
+birthdate=eq1980-09-02
+```
+
+**Response:**
+
+{{pagelink:Patient-RyanneBoulder-Example}}
+
+### 2. Requester (e.g. Midwife) to search for approrpiate specialist testing description or code
+
+ServiceRequest.code = R21
+
+### 3. Requester (e.g.Midwife) completes the Non WGS Rare Disease Test Order Form (with specialist requirement) and submit the request
+
+**POST transaction Bundle to GMS baseURL:**
+
+{{pagelink:Bundle-NonWGSTestOrderForm-FetalScenario-Example}}
+
+**Note: The Test Order is related to {{pagelink:Patient-FoetusOfRyanneBoulder-Example}} with Ryanne Boulder linked to the resource through a RelatedPerson**
+
+**Response:**
+
+OperationOutcome with appropriate success/failure codes: {{pagelink:OperationOutcome-SuccessfulValidation-Example}}
+
+### 4. Requester indicates that sample is going to be collected at a later date
+
+Indicated through absence of Specimen resource in message or absence of ```Specimen.collectedDateTime```/```Specimen.status=unavailable```
+
+Specific Observation, Specimen and Procedure resources related to the above request can be found on the relevant Example pages.
+
+### The lab recieves the test request and:
+
+### 1. Views the completed test order form
+
+Obtained through GET /ServiceRequest or /GET Task requests (using params on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
+
+OR
+
+Obtained through GET /Task request (filtered by GLH owner) for routed requests.
+
+Then
+
+GET /Task by Id and referenced ServiceRequest for view of individual.
+
+### 2. Accepts the test request
+
+POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-FetalScenario-Example}}
+
+OR
+
+### 3. Rejects the test request 
+
+POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderRejected-FetalScenario-Example}}
+
+OR
+
+### 4. Modifies the test request
+
+POST of {{pagelink:ServiceRequest-NonWGSTestOrderFormUpdated-FetalScenario-Example}}
+
+and {{pagelink:Provenance-NonWGSTestOrderForm-FetalScenario-Example}}

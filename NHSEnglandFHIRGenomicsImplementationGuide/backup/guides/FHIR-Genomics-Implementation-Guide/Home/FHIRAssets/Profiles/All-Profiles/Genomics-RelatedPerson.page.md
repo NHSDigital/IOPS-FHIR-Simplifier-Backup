@@ -53,6 +53,31 @@ Further use cases surrounding the use of RelatedPerson are pending further Duo/T
             <table>
                 <tr>
                     <td>
+                    {{pagelink:RelatedPerson-AliceSmithamProbandMother-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:RelatedPerson-AnitaLambertsDeceasedPatient-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:RelatedPerson-JamesLawrenceProbandFather-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:RelatedPerson-RyanneBoulder-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:RelatedPerson-RyanneBoulderPartner-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     {{pagelink:RelatedPerson-MichaelaJones}}
                     </td>
                 </tr>

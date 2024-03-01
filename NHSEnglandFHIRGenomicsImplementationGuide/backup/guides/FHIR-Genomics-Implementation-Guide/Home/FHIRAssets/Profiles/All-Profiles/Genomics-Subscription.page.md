@@ -52,17 +52,17 @@ In the Alpha build of the Genomic Medicine Service, MESH/email will be used as t
             <table>
                 <tr>
                     <td>
-                    {{pagelink:Subscription-DiagnosticReportNotification}}
+                    {{pagelink:Subscription-DiagnosticReportNotification-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Subscription-TaskNotification}}
+                    {{pagelink:Subscription-TaskNotification-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Subscription-TaskNotification-Minimal}}
+                    {{pagelink:Subscription-MinimalTaskNotification-Example}}
                     </td>
                 </tr>
             </table>

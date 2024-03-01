@@ -50,12 +50,27 @@ Only a minimal amount of mandatory information needs to be populated.
             <table>
                 <tr>
                     <td>
-                    {{pagelink:Consent-MichaelJonesConsent}}
+                    {{pagelink:Consent-RoD-PheobeSmitham-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Consent-MichaelJonesConsent-Minimal}}
+                    {{pagelink:Consent-RoD-PheobeSmithamFather-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Consent-RoD-PheobeSmithamMother-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Consent-RoDYoungPersonAssentFormAvailable-Example}}
                     </td>
                 </tr>
                 <tr>

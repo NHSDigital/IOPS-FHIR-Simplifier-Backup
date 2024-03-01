@@ -14,7 +14,7 @@
         ]
     },
     "focus": {
-        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-ReAnalysis-Example.json"
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-ReAnalysis-Example"
     },
     "for": {
         "reference": "Patient/Patient-DemeizaSeo-Example",

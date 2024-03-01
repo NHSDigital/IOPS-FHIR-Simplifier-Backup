@@ -40,7 +40,7 @@ Represented in ServiceRequest via ServiceRequest.category:
 
 **Response:**
 
-OperationOutcome with appropriate success/failure codes: {{pagelink:OperationOutcome-Success}}
+OperationOutcome with appropriate success/failure codes: {{pagelink:OperationOutcome-SuccessfulValidation-Example}}
 
 ### 4. Requester indicates that sample is going to be collected at a later date
 

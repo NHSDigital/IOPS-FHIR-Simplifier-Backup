@@ -1,5 +1,5 @@
 ---
-subject: UKCore-Specimen-MichaelJonesBlood-Example-Minimal
+subject: Specimen-MichaelJonesBlood-Example
 expand: yes
 ---
 

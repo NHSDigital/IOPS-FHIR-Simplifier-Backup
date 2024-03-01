@@ -94,12 +94,10 @@
       "reference": "Observation/Observation-RiskOfInfection-Example"
     }
   ],
-  "specimen": [
-    {
-      "display": "Specimen to be provided later"
-    }
-  ],
   "note": [
+    {
+      "text": "Specimen to be provided later"
+    },
     {
       "text": "No family history of genomic testing"
     },

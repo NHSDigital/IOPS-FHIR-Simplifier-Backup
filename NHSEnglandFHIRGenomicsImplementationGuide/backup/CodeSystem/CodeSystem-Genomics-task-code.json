@@ -7,11 +7,11 @@
       "value": "task-code-genomics"
     }
   ],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "TaskCodeGenomics",
   "title": "Task Code Genomics",
   "status": "draft",
-  "date": "2023-12-06T10:54:00+00:00",
+  "date": "2024-02-28T15:33:00+00:00",
   "publisher": "NHS England",
   "contact": [
     {
@@ -30,20 +30,6 @@
   "caseSensitive": true,
   "content": "complete",
   "concept": [
-    {
-      "code": "RequestGenomicTest",
-      "display": "Request Genomic Test",
-      "designation": [
-        {
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
-          },
-          "value": "10.00"
-        }
-      ]
-    },
     {
       "code": "ProcessGenomicTestRequest",
       "display": "Process Genomic Test Request",

@@ -50,17 +50,67 @@ Within FHIR R4, there is no way to capture location against a sample to aid trac
             <table>
                 <tr>
                     <td>
-                    {{pagelink:Specimen-MichaelJonesBlood}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Specimen-MichealJonesBlood-Minimal}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                     {{pagelink:Specimen-BloodEDTA-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-BloodEDTA-WithCollectoinDetails-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-BoneMarrowAspiration-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-JamesMetcalfeBloodEDTA-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-PheobeSmitham-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-PheobeSmithamFather-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-PheobeSmithamMother-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-RyanneBoulderPartnerSaliva-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-RyanneBoulderSaliva-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-CancerSolidTumor-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-TissueResection-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Home/Examples/Specimen/Specimen-MichealJonesBlood-Minimal.page.md}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Specimen-MichaelJonesBloodWithCollectoinDetails-Example}}
                     </td>
                 </tr>
             </table>

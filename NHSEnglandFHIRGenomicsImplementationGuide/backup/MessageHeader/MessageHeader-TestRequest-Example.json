@@ -1,0 +1,17 @@
+{
+	"resourceType": "MessageHeader",
+	"id": "MessageHeader-TestRequest-Example",
+	"eventCoding": {
+		"system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
+		"code": "genomictestrequest",
+		"display": "Genomic Test Request"
+	},
+	"source": {
+		"endpoint": "https://www.christie.nhs.uk/ehr"
+	},
+	"focus":  [
+		{
+			"reference": "urn:uuid:66c519dd-423f-4238-89c8-91c5be52f330"
+		}
+	]
+}

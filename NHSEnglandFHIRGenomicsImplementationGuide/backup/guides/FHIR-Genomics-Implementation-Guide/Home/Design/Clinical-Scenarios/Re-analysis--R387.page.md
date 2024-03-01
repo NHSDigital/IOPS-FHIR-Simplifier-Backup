@@ -17,3 +17,42 @@ NGIS’s interpretation portal can only hold one single version of the analysis.
 From a requirements standpoint, the requester should have the ability to create a request for secondary analysis. The GLH will submit the request to NGIS in a business-as-usual capacity. 
 
 ### [Link to the High Fidelity Wireframe for the Re-analysis Scenario](https://atiyuk.axshare.com/)
+
+### Requester:
+
+#### 1. Requester to create a new test request for reanlaysis
+#### 2. Requester to indicate no sample required
+
+**POST transaction Bundle to GMS baseURL:**
+
+{{pagelink:Bundle-NonWGSTestOrderForm-Reanalysis-Example}}
+
+No Sample Required indicated through test code and note on ServiceRequest.
+
+**Response:**
+
+OperationOutcome with appropriate success/failure codes: {{pagelink:OperationOutcome-SuccessfulValidation-Example}}
+
+### Lab:
+
+#### 1. Recieve the test request for reanalysis
+
+Obtained through GET /ServiceRequest or /GET Task requests (using params on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
+
+OR
+
+Obtained through GET /Task request (filtered by GLH owner) for routed requests.
+
+Then
+
+GET /Task by Id and referenced ServiceRequest for view of individual.
+
+#### 2. Accept test request for re-analysis
+
+POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-Reanalysis-Example}}
+
+### Requester:
+
+#### 1. Requester to view current status of Test Request
+
+GET /Task(s) with focus ServiceRequest for status of each task (e.g. Sample Sequencing, Interpretation etc.), subsequent call for /AuditEvent(s) with entity.what=Task for history of updates to tasks if needed (e.g. accepted, in-progress, completed)

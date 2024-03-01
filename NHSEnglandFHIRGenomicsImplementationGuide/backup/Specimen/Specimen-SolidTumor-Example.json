@@ -38,7 +38,7 @@
         {
           "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BodySiteReference",
           "valueReference": {
-            "reference": "BodyStructure/BodyStructure-SpecimenBodySiteLocation-Example"
+            "reference": "BodyStructure/BodyStructure-BodySiteLocationLungs-Example"
           }
         }
       ]

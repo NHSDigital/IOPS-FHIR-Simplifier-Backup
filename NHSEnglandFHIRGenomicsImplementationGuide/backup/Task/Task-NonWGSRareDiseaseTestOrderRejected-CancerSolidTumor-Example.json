@@ -1,0 +1,52 @@
+{
+    "resourceType": "Task",
+    "id": "Task-NonWGSRareDiseaseTestOrderRejected-CancerSolidTumor-Example",
+    "status": "rejected",
+    "statusReason": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
+                "code": "FurtherClinicalDetailsRequired",
+                "display": "Further Clinical Details Required"
+            }
+        ]
+    },
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "ProcessGenomicTestRequest",
+                "display": "Process Genomic Test Request"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-CancerSolidTumor-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-ZelmaHadjkiss-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307555"
+        }
+    },
+    "authoredOn": "2023-09-08",
+    "lastModified": "2023-09-09T15:43:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RAX01"
+        },
+        "display": "Kingston Hospital NHS Foundation Trust"
+    },
+    "note": [
+        {
+            "text": "Additional information required on method of testing"
+        }
+    ]
+}
