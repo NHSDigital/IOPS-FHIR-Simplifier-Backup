@@ -52,7 +52,7 @@ The following profile page is provided in case future use cases identify the nee
             <table>
                 <tr>
                     <td>
-                    {{pagelink:MessageHeader-TestRequest}}
+                    {{pagelink:MessageHeader-TestRequest-Example}}
                     </td>
                 </tr>
             </table>

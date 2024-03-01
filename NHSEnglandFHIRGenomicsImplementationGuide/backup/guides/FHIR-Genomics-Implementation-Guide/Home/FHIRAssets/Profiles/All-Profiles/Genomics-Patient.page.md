@@ -52,12 +52,42 @@ Alternatively, systems MAY opt to include pointers to the Patient resource on th
             <table>
                 <tr>
                     <td>
-                    {{pagelink:Patient-MichaelJones}}
+                    {{pagelink:Patient-AnitaLambertsDeceasedPatient-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Patient-LindsaySorrell-Example}}
+                    {{pagelink:Patient-AnitaLambertsMotherDeceasedPatient-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-DemeizaSeo-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-FayMutlow-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-FoetusOfRyanneBoulder-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-JamesMetcalfe-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-KayBurbridge-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-MeirLiebermanPDS-Example}}
                     </td>
                 </tr>
                 <tr>
@@ -67,12 +97,57 @@ Alternatively, systems MAY opt to include pointers to the Patient resource on th
                 </tr>
                 <tr>
                     <td>
+                    {{pagelink:Patient-LindsaySorrell-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     {{pagelink:Patient-MeirLieberman-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Patient-MeirLiebermanPDS-Example}}
+                    {{pagelink:Patient-PatrickSammy-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-PheobeSmitham-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-PheobeSmithamFather-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-PheobeSmithamMother-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-RyanneBoulder-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-RyanneBoulderPartner-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-SalimaPomfrets-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-TimMclullichs-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-ZelmaHadjkiss-Example}}
                     </td>
                 </tr>
             </table>

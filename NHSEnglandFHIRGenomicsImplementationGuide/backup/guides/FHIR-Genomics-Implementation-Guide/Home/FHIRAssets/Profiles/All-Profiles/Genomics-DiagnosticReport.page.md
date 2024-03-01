@@ -54,6 +54,26 @@ It is expected structured DiagnosticReports will mimic the structure proposed wi
             <table>
                 <tr>
                     <td>
+                    {{pagelink:DiagnosticReport-AnitaLamberts-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:DiagnosticReport-FayMutlowGeneticReport-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:DiagnosticReport-JamesMetcalfeGeneticReport-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:DiagnosticReport-PhoebeSmithGeneticReport-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     {{pagelink:DiagnosticReport-MichaelJonesReport}}
                     </td>
                 </tr>

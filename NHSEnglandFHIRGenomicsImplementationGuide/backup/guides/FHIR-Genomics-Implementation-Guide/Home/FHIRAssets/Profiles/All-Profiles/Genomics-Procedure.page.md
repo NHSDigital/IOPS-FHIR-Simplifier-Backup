@@ -55,6 +55,11 @@ At a minimum, Procedure resources are expected to contain the status, code, subj
                     {{pagelink:Procedure-MichaelJonesTransplant}}
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Procedure-InVitroFertilisation-Example}}
+                    </td>
+                </tr>
             </table>
         </div>
         <div id="Constraints" role="tabpanel" class="tab-pane">

@@ -60,6 +60,21 @@ It is also highly preferred if the verificationStatus, onsetDateTime, recordedDa
                     {{pagelink:Condition-HearingLoss-Example}}
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Condition-BreastCancer-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Condition-Hepatosplenomegaly-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Condition-LungTumor-Example}}
+                    </td>
+                </tr>
             </table>
         </div>
         <div id="Constraints" role="tabpanel" class="tab-pane">

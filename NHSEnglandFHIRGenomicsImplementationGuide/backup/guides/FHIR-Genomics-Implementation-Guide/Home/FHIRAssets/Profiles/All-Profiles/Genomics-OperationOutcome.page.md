@@ -52,7 +52,7 @@ It is expected that all issue codes raised by the Genomic Medicine Service will 
             <table>
                 <tr>
                     <td>
-                    {{pagelink:OperationOutcome-Success}}
+                    {{pagelink:OperationOutcome-SuccessfulValidation-Example}}
                     </td>
                 </tr>
             </table>

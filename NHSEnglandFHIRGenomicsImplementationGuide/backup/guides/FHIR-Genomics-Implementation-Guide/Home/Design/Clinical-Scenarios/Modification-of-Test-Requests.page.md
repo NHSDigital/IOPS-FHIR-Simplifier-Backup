@@ -32,3 +32,40 @@ A test may be marked in error when:
 The requirement for managing mark-in-error is to provide transparency to all organisations involved in the provision of the test. Organisations SHALL be informed of the test request being marked in error. If the error was not immediately recognised, information will need to remain to provide an audit trail and reasoning. Details such as reason the test was marked in error, by whom, the date the request and any further information associated with the test request SHALL be maintained.  
 
 Policy guidance is required on how the notification and mark -in-error scenarios are managed across organisational boundaries as all of the different organisations will need to be informed of the Mark-in-Error. 
+
+### [Link to the High Fidelity Wireframe for the Non WGS Rare Disease Test Scenario]https://wi9ul1.axshare.com)
+
+The following steps is a walk through of:
+
+### 1. Requester or Lab searches for a patient (a dummy patient has been pre-populated as an example)
+
+**Params:**
+```
+given=Meir
+family=Lieberman
+birthdate=eq2005-12-19
+```
+
+**Response:**
+
+{{pagelink:Patient-MeirLiebermanPDS-Example}}
+
+### 2. Requester or Lab views request ordered on the patient
+
+Search on /ServiceRequest?subject:identifier=https://fhir.nhs.uk/Id/nhs-number|9449307873
+
+This would return a searchset bundle containing the ServiceRequest: {{pagelink:ServiceRequest-NonWGSTestOrderForm-Cancellation-Example}}
+
+### 3. Requester or Lab is provided with the functionality to cancel test request
+
+This is recorded through marking the ServiceRequest.status as revoked.
+
+POST of {{pagelink:ServiceRequest-NonWGSTestOrderFormUpdated-Cancellation-Example}}
+
+### 4. Requester or Lab indicates reason for cancellation
+
+This is recorded through the associated Provenance resource sent alongside the updated ServiceRequest {{pagelink:Provenance-NonWGSTestOrderFormCancellation-Example}}
+
+### 5. Test displayed as cancelled on patient's test request history
+
+GET of /ServiceRequest?subject:identifier=https://fhir.nhs.uk/Id/nhs-number|9449307873

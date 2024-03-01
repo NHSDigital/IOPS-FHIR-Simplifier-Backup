@@ -55,6 +55,16 @@ It is not expected that any Questionnaire resources will be submitted to the cen
                     {{pagelink:Questionnaire-Genomic-Testing}}
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Questionnaire-RoD-ConsulteeDeclarationForm-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Questionnaire-RoD-YoungPersonAssentForm-Example}}
+                    </td>
+                </tr>
             </table>
         </div>
         <div id="Constraints" role="tabpanel" class="tab-pane">

@@ -57,7 +57,32 @@ No additional guidance has been provided on this page as there are no Genomic-sp
                 </tr>
                 <tr>
                     <td>
+                    {{pagelink:QuestionnaireResponse-RoD-ConsulteeDeclarationForm-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     {{pagelink:QuestionnaireResponse-RoD-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:QuestionnaireResponse-RoD-PheobeSmithamFather-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:QuestionnaireResponse-RoD-PheobeSmithamMother-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example}}
                     </td>
                 </tr>
             </table>

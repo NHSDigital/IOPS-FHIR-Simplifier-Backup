@@ -1,0 +1,39 @@
+{
+	"resourceType": "BodyStructure",
+	"id": "BodyStructure-PancreaticTumour-Example",
+	"morphology": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "53618008",
+				"display": "Pancreatoblastoma"
+			}
+		]
+	},
+	"location": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "15776009",
+				"display": "Pancreatic structure"
+			}
+		]
+	},
+	"locationQualifier": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "261183002",
+					"display": "Upper"
+				}
+			]
+		}
+	],
+	"patient": {
+		"identifier": {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9999999999"
+		}
+	}
+}

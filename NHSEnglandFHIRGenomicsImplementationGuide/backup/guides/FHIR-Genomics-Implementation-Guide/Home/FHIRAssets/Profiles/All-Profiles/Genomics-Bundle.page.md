@@ -52,22 +52,22 @@ Bundles within Genomics will be limited to Transactions for Test orders and upda
             <table>
                 <tr>
                     <td>
-                    {{pagelink:Bundle-MichaelJonesRequest}}
+                    {{pagelink:Bundle-NonWGSTestOrderForm-CancerSolidTumor-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Bundle-MichaelJonesSpecimen}}
+                    {{pagelink:Bundle-NonWGSTestOrderForm-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Bundle-MichaelJonesRequest-Minimal}}
+                    {{pagelink:Bundle-NonWGSTestOrderForm-FetalScenario-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        {{pagelink:Bundle-NonWGSTestOrderForm-Example}}
+                        {{pagelink:Bundle-NonWGSTestOrderForm-Reanalysis-Example}}
                     </td>
                 </tr>
                 <tr>

@@ -59,6 +59,26 @@ The CareConnect profile will be uplifted to the R4 UKCore in a future release
                         {{pagelink:FamilyMemberHistory-NonConsanguinousUnion-Example}}
                     </td>
                 </tr>
+                 <tr>
+                    <td>
+                        {{pagelink:FamilyMemberHistory-NonConsanguinousUnionProband-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        {{pagelink:FamilyMemberHistory-NonConsanguinousUnionProbandFather-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        {{pagelink:FamilyMemberHistory-NonConsanguinousUnionProbandMother-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        {{pagelink:FamilyMemberHistory-NonConsanguinousUnionRyanneBoulder-Example}}
+                    </td>
+                </tr>
             </table>
         </div>
         <div id="Constraints" role="tabpanel" class="tab-pane">

@@ -1,6 +1,6 @@
 {
   "resourceType": "Specimen",
-  "id": "Specimen-PheobeSmithamFather-Example",
+  "id": "Specimen-PheobeSmithamMother-Example",
   "identifier": [
     {
       "system": "https://fhir.leedssth.nhs.uk//Id/specimenId",

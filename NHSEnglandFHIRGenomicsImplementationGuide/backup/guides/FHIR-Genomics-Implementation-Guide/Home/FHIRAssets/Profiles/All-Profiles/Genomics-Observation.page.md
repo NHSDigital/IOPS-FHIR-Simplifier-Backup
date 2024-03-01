@@ -48,27 +48,117 @@ Used to represent the bulk of clinical information to be sent alongside a Genomi
             <table>
                 <tr>
                     <td>
-                    {{pagelink:Observation-SampleCellContent}}
+                    {{pagelink:Observation-AutisticBehaviour-Example}}
                     </td>
                 </tr>
-                <tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-BlastPercentage-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-Bruising-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-Cellularity-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-CellularityKayBurbridge-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-DelayedSpeechLanguageDevt-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-DiseasePenetrance-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-DiseasePenetrancePheobeSmitham-Example}}
+                    </td>
+                </tr>
+                 <tr>
                     <td>
                     {{pagelink:Observation-DiseaseStatus-Example}}
                     </td>
                 </tr>
-                <tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-DutchLipidScore-Example}}
+                    </td>
+                </tr>
+                 <tr>
                     <td>
                     {{pagelink:Observation-EnlargedKidney-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-Haemoglobin-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-HepaticCysts-Example}}
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                    {{pagelink:Observation-Immunodefficiency-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-IntellectualDisabilityMild-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-IntellectualDisabilityProfound-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NatureAndAgeOfHearingLoss-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-Necrosis-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NecrosisKayBurbridge-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NeoplasticCell-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NeoplasticCellKayBurbridge-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-Neutrophils-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
                     {{pagelink:Observation-GenomicEthnicity-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Observation-HepaticCysts-Example}}
                     </td>
                 </tr>
                 <tr>
@@ -83,7 +173,17 @@ Used to represent the bulk of clinical information to be sent alongside a Genomi
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Observation-NoBoneMarrowTransplant-Example}}
+                    {{pagelink:Observation-NoBoneMarrowTransplantProbandFather-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NoBoneMarrowTransplantProbandMother-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NoFirstTrimesterFetalAnomalies-Example}}
                     </td>
                 </tr>
                 <tr>
@@ -93,7 +193,22 @@ Used to represent the bulk of clinical information to be sent alongside a Genomi
                 </tr>
                 <tr>
                     <td>
+                    {{pagelink:Observation-NoSecondTrimesterFetalAnomalies-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     {{pagelink:Observation-NoTransfusion-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NoTransfusionProbandFather-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NoTransfusionProbandMother-Example}}
                     </td>
                 </tr>
                 <tr>
@@ -108,7 +223,67 @@ Used to represent the bulk of clinical information to be sent alongside a Genomi
                 </tr>
                 <tr>
                     <td>
+                    {{pagelink:Observation-NonConsanguinousUnionProband-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NonConsanguinousUnionProbandFather-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NonConsanguinousUnionProbandMother-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-NucleatedCellCount-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-Platelets-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-PregnancyConfirmation-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-QueryXanthoma-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     {{pagelink:Observation-RenalInsufficiency-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-SimonBroomeCriteria-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-TumourType-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-TumourTypeKayBurbridge-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-WhiteBloodCell-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Observation-SampleCellContent-Example}}
                     </td>
                 </tr>
             </table>

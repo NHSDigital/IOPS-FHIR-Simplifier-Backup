@@ -53,6 +53,16 @@ Use of this resource is meant to replace the Genomics extensions for topology an
                     {{pagelink:BodyStructure-PancreaticTumour}}
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                    {{pagelink:BodyStructure-BodySiteLocationLungs-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:BodyStructure-SpecimenBodySiteLocation-Example}}
+                    </td>
+                </tr>
             </table>
         </div>
         <div id="Constraints" role="tabpanel" class="tab-pane">

@@ -52,57 +52,157 @@ Tasks will be automatically created by the central service but updates to status
             <table>
                 <tr>
                     <td>
-                    {{pagelink:Task-DYPDSequencingTask}}
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrder-Cancellation-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrder-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-FetalScenario-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-FollowupTest-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-HaemOncology-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderAccepted-Reanalysis-Example.page.md}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-SufficientSample-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderCancelled-FollowupTest-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderCompleted-CascadeTesting-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderCompleted-FollowupTest-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderForwarded-OutOfCountry-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderForwarded-SolidTumor-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderRejected-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderHold-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderRejected-CancerSolidTumor-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrderRejected-FetalScenario-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSRareDiseaseTestOrder-InsufficientSample-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSTestOrderAccepted-VariantReinterpretation-Example}}
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Task-NonWGSTestOrderFormAccepted-UsingStoredSample-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Task-Filler}}
+                    {{pagelink:Task-TestOrderFormAccepted-StorageOfMaterial-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Task-FillerUpdate}}
+                    {{pagelink:Task-WGSRareDiseaseTestOrder-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Task-SendAway}}
+                    {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        {{pagelink:Task-NonWGSRareDiseaseTestOrder-Example}}
+                        {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-DirectToLab-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-Example}}
+                        {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-TrioTestingProband-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        {{pagelink:Task-NonWGSRareDiseaseTestOrderHold-Example}}
+                        {{pagelink:Task-WGSRareDiseaseTestOrderCompleted-DirectToLab-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        {{pagelink:Task-NonWGSRareDiseaseTestOrderRejected-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Task-WGSRareDiseaseTestOrder-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-Example}}
+                        {{pagelink:Task-WGSRareDiseaseTestOrderCompleted-TrioTestingProband-Example}}
                     </td>
                 </tr>
                 <tr>
                     <td>
                         {{pagelink:Task-WGSRareDiseaseTestOrderForwarded-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{pagelink:Task-WGSRareDiseaseTestOrderHold-DirectToLab-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{pagelink:Task-WGSRareDiseaseTestOrderHold-TrioTestingProband-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{pagelink:Task-WGSRareDiseaseTestOrderRequested-DirectToLab-Example}}
                     </td>
                 </tr>
             </table>

@@ -50,7 +50,17 @@ References to Practitioner and Organization resources SHOULD only be made via id
             <table>
                 <tr>
                     <td>
-                    {{pagelink:PractitionerRole-LucyHale}}
+                    {{pagelink:PractitionerRole-AnnaLaneKingstonPathology-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:PractitionerRole-EugeneSmith-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:PractitionerRole-EugeneSmithLeedsSTH-Example}}
                     </td>
                 </tr>
                 <tr>
@@ -60,7 +70,47 @@ References to Practitioner and Organization resources SHOULD only be made via id
                 </tr>
                 <tr>
                     <td>
+                    {{pagelink:PractitionerRole-HazelSmithKingstonPathology-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:PractitionerRole-HazelSmithPathology-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     {{pagelink:PractitionerRole-HazelSmithRenal-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:PractitionerRole-JamesTaylorKingstonPathology-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:PractitionerRole-LoisLane-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:PractitionerRole-LoisLaneKingstonClinicalGenetics-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:PractitionerRole-LucyHale-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:PractitionerRole-MarySmith-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:PractitionerRole-OscarShields-Example}}
                     </td>
                 </tr>
             </table>

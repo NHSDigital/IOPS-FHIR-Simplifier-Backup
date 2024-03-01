@@ -50,7 +50,7 @@ The below profile is provided for information, if referencing by identifier is i
             <table>
                 <tr>
                     <td>
-                    {{pagelink:Practitioner-LucyHale}}
+                    {{pagelink:Practitioner-LucyHale-Example}}
                     </td>
                 </tr>
             </table>

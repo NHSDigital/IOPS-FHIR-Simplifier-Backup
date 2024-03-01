@@ -50,7 +50,7 @@ The below profile is provided for information, if referencing by ODS code is int
             <table>
                 <tr>
                     <td>
-                    {{pagelink:Organization-699X0}}
+                    {{pagelink:Home/Examples/Organization/Organization-GenomicsLaboratoryHub-Example.page.md}}
                     </td>
                 </tr>
             </table>
