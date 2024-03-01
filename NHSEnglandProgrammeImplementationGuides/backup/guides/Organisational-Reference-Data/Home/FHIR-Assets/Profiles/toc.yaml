@@ -2,3 +2,7 @@
   filename: UKCore-Organization.page.md
 - name: UKCore-OrganizationAffiliation
   filename: UKCore-OrganizationAffiliation.page.md
+- name: UKCore-OperationOutcome
+  filename: UKCore-OperationOutcome.page.md
+- name: UKCore-Bundle
+  filename: UKCore-Bundle.page.md
