@@ -6,7 +6,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of an observation confirming pregnancy.
+Example of an observation confirming a Xanthomatous deposition.
 
 
 {{page:Home-Examples-ExamplesTemplate}}

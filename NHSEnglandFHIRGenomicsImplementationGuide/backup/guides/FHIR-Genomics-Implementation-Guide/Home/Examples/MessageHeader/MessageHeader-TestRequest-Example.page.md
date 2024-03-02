@@ -1,5 +1,5 @@
 ---
-subject: MessageHeader-TestRequest-Example
+subject: MessageHeader/MessageHeader-TestRequest-Example
 expand: yes
 ---
 
@@ -14,7 +14,7 @@ expand: yes
 
 
 <div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/MessageHeader-UKCore-MessageHeader-TestRequest-Example/~issues?level=File' target="_blank">Propose a change to MessageHeader-TestRequest-Example</a></h4>
+<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/MessageHeader-MessageHeader-TestRequest-Example/~issues?level=File' target="_blank">Propose a change to MessageHeader-TestRequest-Example</a></h4>
 </div>
 
 ---

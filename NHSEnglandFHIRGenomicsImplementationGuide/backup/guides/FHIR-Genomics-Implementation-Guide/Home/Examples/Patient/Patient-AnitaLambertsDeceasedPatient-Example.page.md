@@ -6,7 +6,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of a patient resource with additional information attached, linked to a PDS record.
+Example of a deceased patient.
 
 {{page:Home-Examples-ExamplesTemplate}}
 

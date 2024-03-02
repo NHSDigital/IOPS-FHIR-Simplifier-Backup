@@ -6,7 +6,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of a ServiceRequest. After being sent to the central broker, the ServiceRequest is assigned a unique identifier.
+Example of an updated ServiceRequest (with additional version number and provenance history).
 
 {{page:Home-Examples-ExamplesTemplate}}
 

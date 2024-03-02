@@ -5,7 +5,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of a patient resource with additional information attached, linked to a PDS record.
+Example of a patient resource with minimal information.
 
 {{page:Home-Examples-ExamplesTemplate}}
 
