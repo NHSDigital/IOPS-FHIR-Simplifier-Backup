@@ -1,5 +1,5 @@
 ---
-subject: UKCore-Organization-699X0-Example
+subject: Organization-GenomicsLaboratoryHub-Example
 expand: yes
 ---
 

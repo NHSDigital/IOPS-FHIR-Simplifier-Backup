@@ -6,7 +6,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of a Task created upon submission of a test cancellation request.
+Example of a Task updated upon submission of a test cancellation request.
 
 {{page:Home-Examples-ExamplesTemplate}}
 

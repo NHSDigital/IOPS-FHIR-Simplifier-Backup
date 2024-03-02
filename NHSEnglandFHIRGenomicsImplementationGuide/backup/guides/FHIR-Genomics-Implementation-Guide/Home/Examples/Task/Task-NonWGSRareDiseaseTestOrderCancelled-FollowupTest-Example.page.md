@@ -6,7 +6,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of a Task created by a requester orgnization to initiate a test cancellation request.
+Example of a Task updated by a requester orgnization to indicate a test is being cancelled.
 
 {{page:Home-Examples-ExamplesTemplate}}
 

@@ -1,5 +1,5 @@
 ---
-subject: Subscription-MinimalTaskNotification-Example
+subject: Subscription/Subscription-MinimalTaskNotification-Example
 expand: yes
 ---
 
