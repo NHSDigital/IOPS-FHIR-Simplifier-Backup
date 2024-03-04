@@ -1,6 +1,6 @@
 ## Introduction
 
-**Important:** This is version 0.2.0. For the version history see {{pagelink:ReleaseNotes}}
+**Important:** This is version 0.3.0. For the version history see {{pagelink:ReleaseNotes}}
 
 This specification is currently defined as in "Discovery" and as such is provided for consultation and discussion. This project is being developed using an agile approach so iterative updates to content will be added on a regular basis. It is anticipated that the message specification and implementation guidance will be updated further following First of Type (FoT) implementation.
 
