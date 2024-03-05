@@ -22,6 +22,7 @@ The following versions of the UK Core Implementation Guide have been published:
 <tr>
 <th colspan="6">STU3 Sequence</th>
 </tr>
+
 <tr>
 <td>20th September 2023</td>
 <td>1.7.0</td>
@@ -42,8 +43,41 @@ The following versions of the UK Core Implementation Guide have been published:
 <td><a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/">fhir.r4.ukcore.stu3.currentbuild 0.0.4-sprint-6-review</a></td>
 </tr>
 
+
 <tr>
 <th colspan="6">STU2 Sequence</th>
+</tr>
+<tr>
+<td>TBC</td>
+<td>2.0.0</td>
+<td>4.0.1</td>
+<td>Second balloted UK Core</td>
+<td>TBC
+<!--<a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2?version=2.0.0">Home Page</a><br>
+<a href="https://github.com/NHSDigital/FHIR-R4-UKCORE-STAGING-MAIN/releases/download/2.0.0/UK-Core-Implementation-Guide-2.0.0-STU2-Rendered.zip">Download as zip</a>
+-->
+</td>
+<td>TBC
+<!--<a href="https://simplifier.net/packages/fhir.r4.ukcore.stu2/">fhir.r4.ukcore.stu2 2.0.0</a>-->
+</td>
+</tr>
+<tr>
+
+
+<tr>
+<th colspan="6">STU2 Historical versions - Not for implementation</th>
+</tr>
+
+<tr>
+<td>5th March 2024</td>
+<td>2.0.0 - STU2 Pre-release</td>
+<td>4.0.1</td>
+<td>Pre-release of 2.0.0, second balloted UK Core version.
+</td>
+<td><a href="hhttps://simplifier.net/guide/uk-core-implementation-guide-stu2?version=2.0.0-pre-release">Home Page</a>
+<br>
+<a href="https://github.com/NHSDigital/FHIR-R4-UKCORE-STAGING-MAIN/releases/download/2.0.0-pre-release/UK-Core-Implementation-Guide-STU2-2.0.0-Pre-Release-Rendered.zip">Download as zip</a></td>
+<td><a href="https://simplifier.net/packages/fhir.r4.ukcore.stu2/">fhir.r4.ukcore.stu2 2.0.0-pre-release</a></td>
 </tr>
 
 <tr>
