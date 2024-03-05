@@ -5,7 +5,7 @@ topic: Home-Guide-48666
 
 ---
 
-## UK Core Implementation Guide 2.0.0 - STU2 Sequence ##
+## {{guide-title}}
 
 <p>
 <h3>Project Description and Scope</h3>
@@ -38,7 +38,7 @@ For additional guidance, see {{pagelink:Guidance-FHIRVersions-25268}}.
 
 <div markdown="span" class="alert alert-warning" role="alert">
 <b>Important note regarding changes from STU1 Sequence:</b>
-<ul><li>A summary of changes is available here: <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU2-Sequence/1.1.0.page.md?version=current"> Version History</a></li>
+<ul><li>A summary of changes is available here: <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home/STU2-Sequence/index.page.md?version=current"> Version History</a></li>
 <li>The bindings for all SNOMED CT ValueSets have been changed to "preferred".</li>
 <li>The bindings for all other UK Core ValueSets have been changed to "extensible".</li>
 <li>The datatypes of extensions using codes/concepts, have been unified as valueCodeableConcept.</li>
