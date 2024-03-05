@@ -162,7 +162,7 @@ The use of these aspects of SNOMED CT is illustrated in the following simplified
 
 Further information on the use of SNOMED CT for pathology reporting can be found on the  [Pathology Standards and Implementation website](https://digital.nhs.uk/services/pathology-standards-and-implementation/snomed-ct-for-pathology-reporting).
 
-### Representation of Test Results
+### Representation of Different Types of Test Results
 Laboratory test results are reported using a variety of forms. These are described below with supporting examples. Each example includes a link to a corresponding FHIR <code>Observation</code> example (all of the examples are also listed in the {{pagelink:R4Examples}}).
 
 * **Quantitative Result:** the result is expressed as a number, usually with an associated unit of measure. Comparators may be used to indicate that the actual value is greater than or less than the stated value. A range of values may be reported instead of a single value. Examples include:
