@@ -29,7 +29,7 @@ issue: UKCore-DiagnosticReport
   {{pagelink:Example-UKCore-Extension-DeviceReference}}<br>
   NOTE: The above example references {{pagelink:Example-UKCore-Device-SoftwareAsAMedicalDevice}}
 <br><br>
-  <b>ECG Report</b> - An example to illustrate a diagnostic report for an ECG.<br/>
+  <b>ECG Report</b> - An example to illustrate a diagnostic report presented in pdf, for an ECG.<br/>
 {{pagelink:Example-UKCore-DiagnosticReport-ECG}}
 </div>
 </nocheck>

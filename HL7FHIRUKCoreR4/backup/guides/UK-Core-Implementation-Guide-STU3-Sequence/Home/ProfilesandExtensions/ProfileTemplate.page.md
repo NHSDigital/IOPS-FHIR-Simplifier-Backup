@@ -32,7 +32,7 @@ with header
    <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
    <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>
+  <!--<button class="tablinks" onclick="openTab(event, 'Usage')">Usage</button>-->
   <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
   <button class="tablinks feedback" onclick="openTab(event, 'Feedback')">Feedback</button>
 </div>
@@ -61,23 +61,25 @@ with header
 {{json}}
 </div>
 
+<!--
 <div id="Usage" class="tabcontent">
   <h3>Usage</h3>
   This Profile has the following derived profiles:<br>
 <span id="usage">
-{{page:Home/ProfilesandExtensions/UsageFQLDerived.page.md}}
+{ {page:Home/ProfilesandExtensions/UsageFQLDerived.page.md}}
 </span>
 <br><br>
   This Profile is referenced in the following Extensions: <br>
 <span id="usage">
-{{page:Home/ProfilesandExtensions/UsageFQLExtensions.page.md}}
+{ {page:Home/ProfilesandExtensions/UsageFQLExtensions.page.md}}
 </span>
 <br><br>
   This Profile is referenced in the following Profiles: <br>
 <span id="usage">
-{{page:Home/ProfilesandExtensions/UsageFQLReferences.page.md}}
+{ {page:Home/ProfilesandExtensions/UsageFQLReferences.page.md}}
 </span>
 </div>
+-->
 
 <div id="Feedback" class="tabcontent">
   <h3>Feedback</h3>
