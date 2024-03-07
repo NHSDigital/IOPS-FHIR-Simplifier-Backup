@@ -93,7 +93,7 @@ Supports: eq (equal), lt (less than), gt (greater than), and can be compounded t
 | ----------- | ------------------------  |
 | Record Found       | Bundle - {{pagelink:Example-Organization-Search-Result}}|
 | No Records Found      | Bundle - {{pagelink:Example-No-Organisation-Search-Results-Found}}|
-| Access Deniedd       | OperationOutcome - {{pagelink:Example-Access-Denied}}|
+| Access Denied       | OperationOutcome - {{pagelink:Example-Access-Denied}}|
 
 ---
 
