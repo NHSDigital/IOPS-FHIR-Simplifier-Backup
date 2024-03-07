@@ -17,7 +17,9 @@ E.g.
 ## Search interaction
 | HTTP code         | issue-severity                      | issue-type | details.code / display | details.diagnostics
 | ----------- | ------------------------  |------------------------ |------------------------ |------------------------ |
-|400 | error | invalid | HAPI 1234 | Invalid NHS number
-|400 | error | invalid | HAPI 1234 | Missing or invalid head parameter
-|403 | error | forbidden | HAPI 1234 | The sender or receiver's ASID is not authorised for this interaction
-|404 | error | not found | HAPI 1234 | The sender or receiver's ASID is not authorised for this interaction
+|400 | error | invalid | HAPI 1940 | Invalid Date/Time/Quantity format
+|400 | error | invalid | HAPI 0524 | Unknown Search Parameter
+|404 | error | not found | HAPI 2001 | Organization not found
+|405 | error | method not allowed | HAPI 0427 | Organization not found
+|422 | error | unprocessable, too costly | HAPI  | Too many records requested, use _count and _offset
+|422 | error | unprocessable, processing | HAPI | No declared filter on Codesystem
