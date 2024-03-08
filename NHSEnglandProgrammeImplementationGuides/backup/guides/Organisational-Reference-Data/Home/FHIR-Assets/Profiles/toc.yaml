@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: UKCore-Organization
   filename: UKCore-Organization.page.md
 - name: UKCore-OrganizationAffiliation

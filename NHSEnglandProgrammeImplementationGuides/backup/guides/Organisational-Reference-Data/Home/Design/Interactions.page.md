@@ -2,7 +2,6 @@
 
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
-
 The ODS FHIR R4 API allows healthcare professionals to use healthcare applications acting as API consumers to search for, read and display organisation information.
 
 The ODS FHIR R4 API provides 2 endpoints:
@@ -93,7 +92,6 @@ Supports: eq (equal), lt (less than), gt (greater than), and can be compounded t
 | ----------- | ------------------------  |
 | Record Found       | Bundle - {{pagelink:Example-Organization-Search-Result}}|
 | No Records Found      | Bundle - {{pagelink:Example-No-Organisation-Search-Results-Found}}|
-| Access Denied       | OperationOutcome - {{pagelink:Example-Access-Denied}}|
 
 ---
 
@@ -157,6 +155,5 @@ OrganizationAffiliation:participating-organization will include Organization res
 | Record Found       | Bundle - {{pagelink:Example-OrganizationAffiliation-Search-Result}}|
 | _include Usage       | Bundle - {{pagelink:Example-_include-Search-Result}}|
 | No Records Found      | Bundle - {{pagelink:Example-No-Relationship-Search-Results-Found}}|
-| Access Deniedd       | Organization - {{pagelink:Example-Access-Denied}}|
  
 ---

@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: Extension-England-OrganisationRole
   filename: Extension-England-OrganisationRole.page.md
 - name: Extension-England-TypedDateTime

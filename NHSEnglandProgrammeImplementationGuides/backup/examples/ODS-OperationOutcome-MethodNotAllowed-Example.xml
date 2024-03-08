@@ -1,0 +1,8 @@
+<OperationOutcome xmlns="http://hl7.org/fhir">
+    <id value="ODS-OperationOutcome-MethodNotAllowed-Example" />
+    <issue>
+        <severity value="error" />
+        <code value="processing" />
+        <diagnostics value="HAPI-0427: HTTP Method DELETE is not allowed for this operation. Allowed method(s): POST, GET" />
+    </issue>
+</OperationOutcome>

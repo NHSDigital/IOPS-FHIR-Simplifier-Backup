@@ -11,7 +11,7 @@
 
 <div id="Tree View" class="tabcontent" style="display:block">
   <h3>Tree View</h3>
-{{tree}}
+{{tree,expand:5}}
 </div>
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>

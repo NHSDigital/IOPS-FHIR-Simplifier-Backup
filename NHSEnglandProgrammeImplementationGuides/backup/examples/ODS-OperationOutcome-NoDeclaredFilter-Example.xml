@@ -1,0 +1,8 @@
+<OperationOutcome xmlns="http://hl7.org/fhir">
+    <id value="ODS-OperationOutcome-NoDeclaredFilter-Example" />
+    <issue>
+        <severity value="error" />
+        <code value="processing" />
+        <diagnostics value="There is no declared filter called constituency on code system https://fhir.nhs.uk/Id/ods-organization-code" />
+    </issue>
+</OperationOutcome>

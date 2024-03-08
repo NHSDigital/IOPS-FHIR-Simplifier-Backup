@@ -25,7 +25,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
 
 
 
-### <a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current">UKCore-Organization</a>
+### {{pagelink:UKCore-Organization}}
 
 <table class="regular">
     <thead>
@@ -46,7 +46,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td>0..*</td>
             <td>Optional</td>
             <td></td>
-            <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-MainLocation.page.md?version=current">Extension</a></td>
+            <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-MainLocation">Extension</a></td>
             <td></td>
         </tr>
         <tr>
@@ -64,7 +64,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td><code>1..*</code></td>
             <td> </td>
             <td> </td>
-            <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">Extension</a></td>
+            <td>{{pagelink:Extension-England-OrganisationRole,text:Extension}}</td>
             <td></td>
         </tr>
        <tr>
@@ -73,7 +73,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td>1..1</td>
             <td>NOT NULL</td>
             <td>Roles.UniqueRoleID</td>
-            <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">Integer</a></td>
+            <td>{{pagelink:Extension-England-OrganisationRole,text:Integer}}</td>
             <td></td>
         </tr>
        <tr>
@@ -82,7 +82,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td>1..1</td>
             <td>NOT NULL</td>
             <td>Roles.RoleID</td>
-            <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">CodeableConcept</a></td>
+            <td>{{pagelink:Extension-England-OrganisationRole,text:CodeableConcept}}</td>
             <td></td>
         </tr>
        <tr>
@@ -91,7 +91,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td>1..*</td>
             <td>NOT NULL</td>
             <td>Roles.LegalStartDate,<br>Roles.LegalEndDate,<br>Roles.OperationalStartDate,<br>Roles.OperationalEndDate</td>
-            <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">Extension</a></td>
+            <td>{{pagelink:Extension-England-OrganisationRole,text:Extension}}</td>
             <td></td>
         </tr>
        <tr>
@@ -100,7 +100,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td>1..1</td>
             <td>NOT NULL</td>
             <td>Roles.status</td>
-            <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-OrganisationRole.page.md?version=current">Boolean</a></td>
+            <td>{{pagelink:Extension-England-OrganisationRole,text:Boolean}}</td>
             <td></td>
         </tr>
         <tr>
@@ -109,7 +109,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td><code>1..*</code></td>
             <td>NOT NULL</td>
             <td>Organisation.LastChangeDate</td>
-            <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedDateTime.page.md?version=current">Extension</a></td>
+            <td>{{pagelink:Extension-England-TypedDateTime,text:Extension}}</td>
             <td></td>
         </tr>
         <tr>
@@ -118,7 +118,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td><code>0..*</code></td>
             <td>Optional</td>
             <td>Organisation.LegalStartDate,<br>Organisation.LegalEndDate,<br>Organisation.OperationalStartDate,<br>Organisation.OperationalEndDate</td>
-            <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedPeriod.page.md?version=current">Extension</a></td>
+            <td>{{pagelink:Extension-England-TypedPeriod,text:Extension}}</td>
             <td></td>
         </tr>
         <tr>
@@ -127,7 +127,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td><code>1..1</code></td>
             <td>NOT NULL</td>
             <td>Organisation.OrganisationCode</td>
-            <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current#identifier">Identifier</a></td>
+            <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization#identifier">Identifier</a></td>
             <td>The ODS Organisation Code for the organisation <b>SHALL</b> be used to populate the <code>odsOrganisationCode</code> slice of the <code>identifier</code> element.</td>
         </tr>
         <tr>
@@ -136,7 +136,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td>0..*</td>
             <td>Optional</td>
             <td>Organisation.AssigingAuthorityName</td>
-            <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current#identifier">Reference</a></td>
+            <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization#identifier">Reference</a></td>
             <td></td>
         </tr>
         <tr>
@@ -156,8 +156,8 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td>Organisation.RefOnly,<br>Organisation.RecordClass</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
             <td>One each of:<br>
-            <a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Terminology/All-CodeSystems/CodeSystem-England-ODSRecordClass.page.md?version=current">CodeSystemEnglandODSRecordClass</a><br>
-            <a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Terminology/All-CodeSystems/CodeSystem-England-ODSRecordUseType.page.md?version=current">CodeSystemEnglandODSRecordUseType</a>
+            {{pagelink:CodeSystem-England-ODSRecordClass}}<br>
+            {{pagelink:CodeSystem-England-ODSRecordUseType}}
             </td>
         </tr>
         <tr>
@@ -202,7 +202,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td>0..*</td>
             <td>Optional</td>
             <td>Location.URPN</td>
-            <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-AddressKey.page.md?version=current">Extension</a></td>
+            <td><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-AddressKey">Extension</a></td>
             <td></td>
         </tr>
         <tr>
@@ -237,7 +237,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
 
 
 
-### <a href="https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-OrganizationAffiliation?version=current">UKCore-OrganizationAffiliation</a>
+### {{pagelink:UKCore-OrganizationAffiliation}}
 
 <table class="regular">
     <thead>
@@ -258,7 +258,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td><code>0..*</code></td>
             <td>Optional</td>
             <td>rel.LegalStart,<br>rel.LegalEnd,<br>rel.OperationalStart,<br>rel.OperationalEnd</td>
-            <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedPeriod.page.md?version=current">Extension</a></td>
+            <td>{{pagelink:Extension-England-TypedPeriod,text:Extension}}</td>
             <td></td>
         </tr>
         <tr>
@@ -322,7 +322,7 @@ All of the relevant elements for Profiles 'UKCore-Organization' and 'UKCore-Orga
             <td>NOT NULL</td>
             <td>rel.TypeID / rel.TypeName</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td><a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Terminology/All-CodeSystems/CodeSystem-England-ODSRelationship.page.md?version=current">CodeSystemEnglandODSRelationship</a></td>
+            <td>{{pagelink:CodeSystem-England-ODSRelationship}}</td>
         </tr>
         <tr>
             <td>specialty</td>
