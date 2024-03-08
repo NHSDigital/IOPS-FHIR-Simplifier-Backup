@@ -19,7 +19,7 @@ select
 
 <table id="addToTranspose">
 <tr><td>Context of Use: </td>
-<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization?version=current' target="_blank">Organization</a>, <a href='https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-OrganizationAffiliation?version=current' target="_blank">OrganizationAffiliation</a></td>
+<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Organization' target="_blank">Organization</a>, <a href='https://simplifier.net/guide/UKCoreImplementationGuideAssetsinDevelopment/Home/ProfilesandExtensions/Profile-UKCore-OrganizationAffiliation' target="_blank">OrganizationAffiliation</a></td>
 </tr>
 </table>
 <br>
@@ -36,7 +36,7 @@ select
 </div>
 
 <h3>Extension Specific Guidance</h3>
-There is a binding within this extension to <a href='https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/terminology/all-valuesets/valueset-england-TypedDateTime.page.md?version=current' target="_blank">ValueSet-England-TypedDateTime</a>
+There is a binding within this extension to {{pagelink:ValueSet-England-TypedDateTime}}
 
 ---
     
