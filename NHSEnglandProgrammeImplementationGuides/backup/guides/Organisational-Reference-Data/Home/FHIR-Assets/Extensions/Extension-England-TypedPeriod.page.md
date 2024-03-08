@@ -6,6 +6,6 @@ Usage:
 - This extension is not mandatory, but it is expected that one or more SHOULD be present in an ODS Organization, ODS OrganizationAffiliation, or ExtensionEnglandOrganisationRole instance
 <br>
 
-<iframe src="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedPeriod?version=1.1.0" height="800px" width="100%"></iframe>
+<iframe src="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/Home/Profiles-and-Extensions/All-Extensions/Extension-England-TypedPeriod" height="800px" width="100%"></iframe>
 
 ---

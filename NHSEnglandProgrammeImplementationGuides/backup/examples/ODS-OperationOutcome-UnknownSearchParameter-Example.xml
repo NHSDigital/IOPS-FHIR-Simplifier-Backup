@@ -1,0 +1,8 @@
+<OperationOutcome xmlns="http://hl7.org/fhir">
+    <id value="ODS-OperationOutcome-UnknownSearchParameter-Example" />
+    <issue>
+        <severity value="error" />
+        <code value="processing" />
+        <diagnostics value="HAPI-0524: Unknown search parameter &quot;INVALID&quot; for resource type &quot;Organization&quot;. Valid search parameters for this search are: [_content, _id, _lastUpdated, _profile, _security, _source, _tag, _text, active, activeRoleCode, address, address-city, address-country, address-postalcode, address-state, address-use, endpoint, identifier, lastChangeDate, name, partof, phonetic, roleCode, type]" />
+    </issue>
+</OperationOutcome>

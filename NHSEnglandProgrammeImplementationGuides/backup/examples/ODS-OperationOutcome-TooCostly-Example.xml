@@ -1,0 +1,8 @@
+<OperationOutcome xmlns="http://hl7.org/fhir">
+    <id value="ODS-OperationOutcome-TooCostly-Example" />
+    <issue>
+        <severity value="error" />
+        <code value="processing" />
+        <diagnostics value="[afecef0a-e053-46f3-870d-5e22644d3538]: The expansion of value set null was too big (>50000)." />
+    </issue>
+</OperationOutcome>

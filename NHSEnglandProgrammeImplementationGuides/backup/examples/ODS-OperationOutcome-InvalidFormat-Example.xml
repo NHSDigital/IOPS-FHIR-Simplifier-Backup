@@ -1,0 +1,8 @@
+<OperationOutcome xmlns="http://hl7.org/fhir">
+    <id value="ODS-OperationOutcome-InvalidFormat-Example" />
+    <issue>
+        <severity value="error" />
+        <code value="processing" />
+        <diagnostics value="HAPI-1940: Invalid date/time/quantity format: &quot;gtINVALID&quot;" />
+    </issue>
+</OperationOutcome>

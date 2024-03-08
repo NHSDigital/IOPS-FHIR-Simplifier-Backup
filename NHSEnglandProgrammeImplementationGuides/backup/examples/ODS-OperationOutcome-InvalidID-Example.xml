@@ -2,14 +2,7 @@
     <id value="ODS-OperationOutcome-InvalidID-Example" />
     <issue>
         <severity value="error" />
-        <code value="value" />
-        <details>
-            <coding>
-                <system value="https://fhir.nhs.uk/CodeSystem/England-SpineErrorOrWarningCode" />
-                <code value="INVALID_VALUE" />
-                <display value="Invalid value" />
-            </coding>
-        </details>
-        <diagnostics value="Invalid Organization ID" />
+        <code value="processing" />
+        <diagnostics value="HAPI-2001: Resource Organization/83632648493 is not known" />
     </issue>
 </OperationOutcome>

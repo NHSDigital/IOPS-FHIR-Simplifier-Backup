@@ -20,10 +20,18 @@
   filename: Example-OrganizationAffiliation-Search-Result.page.md
 - name: Example - _include Search Result
   filename: Example-_include-Search-Result.page.md
-- name: Example - Invalid ID
-  filename: Example-Invalid-ID.page.md
-- name: Example - Access Denied
-  filename: Example-Access-Denied.page.md
+- name: Example - Error - Invalid ID
+  filename: Example-Error-Invalid-ID.page.md
+- name: Example - Error - Invalid Format
+  filename: Example-Error-Invalid-Format.page.md
+- name: Example - Error - Method Not Allowed
+  filename: Example-Error-Method-Not-Allowed.page.md
+- name: Example - Error - No Declared Filter
+  filename: Example-Error-No-Declared-Filter.page.md
+- name: Example - Error - Too Costly
+  filename: Example-Error-Too-Costly.page.md
+- name: Example - Error - Unknown Search Parameter
+  filename: Example-Error-Unknown-Search-Parameter.page.md
 - name: Example - No Organisation Search Results Found
   filename: Example-No-Organisation-Search-Results-Found.page.md
 - name: Example - No Relationship Search Results Found

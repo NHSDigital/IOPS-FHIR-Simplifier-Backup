@@ -9,5 +9,5 @@ Usage:
 - This extension is mandatory and SHALL be present in an ODS Organization instance
 <br>
 
-<iframe src="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/profiles-and-extensions/all-extensions/extension-england-typeddatetime?version=1.1.0" height="800px" width="100%"></iframe>
+<iframe src="https://simplifier.net/guide/nhs-england-implementation-guide-stu1/home/profiles-and-extensions/all-extensions/extension-england-typeddatetime" height="800px" width="100%"></iframe>
 
