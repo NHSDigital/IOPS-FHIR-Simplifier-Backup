@@ -1,0 +1,61 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="England-OrganizationAffiliation-ODS" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-OrganizationAffiliation-ODS" />
+  <version value="0.0.1" />
+  <name value="EnglandOrganizationAffiliationODS" />
+  <title value="England OrganizationAffiliation ODS" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2024-01-11" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This profile is made available to assist implementers who are creating and sending OrganizationAffiliation FHIR instances to test that the created instances conform to the ODS FHIR implementation guide. It may also assist receivers testing that received instances are conformant with the ODS FHIR implementation guide." />
+  <purpose value="This profile is made available to assist implementers who are creating and sending FHIR instances to test that the created instances conform to a specific FHIR implementation guide. It may also assist receivers testing that received instances are conformant with the FHIR implementation guide.&#xD; **Use of this profile is on the understanding that it is for testing purposes only. Use of this profile does not provide any form of assurance or accreditation and furthermore does not guarantee system conformance to a given FHIR Implementation guide.**" />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="OrganizationAffiliation" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="OrganizationAffiliation.extension:extensionEnglandTypedPeriod">
+      <path value="OrganizationAffiliation.extension" />
+      <sliceName value="extensionEnglandTypedPeriod" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="OrganizationAffiliation.active">
+      <path value="OrganizationAffiliation.active" />
+      <min value="1" />
+    </element>
+    <element id="OrganizationAffiliation.period">
+      <path value="OrganizationAffiliation.period" />
+      <definition value="The period during which the participatingOrganization is affiliated with the primary organization. For ODS Legal and Operational periods, consider using the ExetensionEnglandTypedPeriod instead." />
+    </element>
+    <element id="OrganizationAffiliation.organization">
+      <path value="OrganizationAffiliation.organization" />
+      <min value="1" />
+    </element>
+    <element id="OrganizationAffiliation.participatingOrganization">
+      <path value="OrganizationAffiliation.participatingOrganization" />
+      <min value="1" />
+    </element>
+    <element id="OrganizationAffiliation.code">
+      <path value="OrganizationAffiliation.code" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
