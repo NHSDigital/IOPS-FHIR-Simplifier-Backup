@@ -2,6 +2,7 @@
   "name": "uk.nhsengland.r4",
   "description": "NHS England FHIR Implementation Guide",
   "author": "nhsengland",
+  "version": "0.0.1",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "fhir.r4.nhsengland.stu1": "1.1.0"
