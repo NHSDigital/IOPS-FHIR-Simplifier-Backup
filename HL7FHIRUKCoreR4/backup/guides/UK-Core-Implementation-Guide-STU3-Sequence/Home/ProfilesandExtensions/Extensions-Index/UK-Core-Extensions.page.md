@@ -482,7 +482,6 @@ RelatedPerson.telecom.system</td>
 <li>{{pagelink:Extension-UKCore-VaccinationProcedure,text:UKCore-VaccinationProcedure}}</li>
 </ul>
 </td></tr>
-
 </tbody></table>
 </div>
 
