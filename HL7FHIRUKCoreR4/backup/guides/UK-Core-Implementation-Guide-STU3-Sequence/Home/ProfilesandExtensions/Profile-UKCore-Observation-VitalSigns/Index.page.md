@@ -68,8 +68,6 @@ The guidance on this page also applies to the following profiles, that are deriv
 - {{pagelink:Profile-Observation-VitalSigns-OxygenSaturation}}
 - {{pagelink:Profile-Observation-VitalSigns-RespirationRate}}
 
-### Minimum Viable Content
-
 ### Mandatory and Must Support Data Elements
 
 The following elements, in addition to those in the corresponding {{pagelink:Profile-Observation,text:UKCore-Observation}} parent profile, are identified as MustSupport, and it is expected that consumers and suppliers SHALL support these as per the {{pagelink:Guidance-MustSupport}}.
