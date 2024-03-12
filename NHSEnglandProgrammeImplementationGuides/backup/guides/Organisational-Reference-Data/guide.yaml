@@ -1,5 +1,5 @@
 title: Organisational Data Service (ODS) Implementation Guide
 description: UK Core styled base project for NHSE API IG's
-version: development
+version: 1.0.0-alpha
 style-root: project
 style-name: NHSEUKCoreStyle

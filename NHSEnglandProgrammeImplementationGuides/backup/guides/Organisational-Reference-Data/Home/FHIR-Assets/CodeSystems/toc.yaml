@@ -4,11 +4,11 @@
   filename: CodeSystem-England-ODSDateTime.page.md
 - name: CodeSystem-England-ODSOrganisationRole
   filename: CodeSystem-England-ODSOrganisationRole.page.md
-- name: CodeSystem-England-PeriodType
-  filename: CodeSystem-England-PeriodType.page.md
 - name: CodeSystem-England-ODSRecordClass
   filename: CodeSystem-England-ODSRecordClass.page.md
 - name: CodeSystem-England-ODSRecordUseType
   filename: CodeSystem-England-ODSRecordUseType.page.md
 - name: CodeSystem-England-ODSRelationship
   filename: CodeSystem-England-ODSRelationship.page.md
+- name: CodeSystem-England-PeriodType
+  filename: CodeSystem-England-PeriodType.page.md
