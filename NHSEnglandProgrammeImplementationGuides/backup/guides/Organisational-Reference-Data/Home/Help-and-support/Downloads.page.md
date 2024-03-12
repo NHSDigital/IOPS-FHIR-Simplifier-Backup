@@ -20,7 +20,7 @@ This Implementation guide depends upon the following guides:
 <td>1.1.0</td>
 <td><a target="_blank" href="https://simplifier.net/packages/fhir.r4.nhsengland.stu1">fhir.r4.nhsengland.stu1</a></td>
 </tr>
-<tr><td><a target="_blank" href="https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence">UK Core Implementation Guide -STU3 Sequence</a></td>
+<tr><td><a target="_blank" href="https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence">UK Core Implementation Guide - STU3 Sequence</a></td>
 <td>1.7.0</td>
 <td><a target="_blank" href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild">fhir.r4.ukcore.stu3.currentbuild</a></td>
 </tr>

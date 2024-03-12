@@ -17,11 +17,13 @@ Reference - {{pagelink:Home/Design/Data-mapping.page.md}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
-- {{pagelink:Example-Organization-FCE71}}
-- {{pagelink:Example-Organization-FDC49}}
-- {{pagelink:Example-Organization-Q72}}
-- {{pagelink:Example-Organization-4VE03}}
-- {{pagelink:Example-Organization-G81086}}
+<ul>
+<li>{{pagelink:Example-Organization-FCE71}}</li>
+<li>{{pagelink:Example-Organization-FDC49}}</li>
+<li>{{pagelink:Example-Organization-Q72}}</li>
+<li>{{pagelink:Example-Organization-4VE03}}</li>
+<li>{{pagelink:Example-Organization-G81086}}</li>
+</ul>
 </div>
 
 ## Derived From
