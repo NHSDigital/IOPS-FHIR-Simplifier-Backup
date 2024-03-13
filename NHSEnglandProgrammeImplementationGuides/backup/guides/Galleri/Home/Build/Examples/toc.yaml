@@ -1,7 +1,11 @@
 - name: Index
   filename: Index.page.md
+- name: Example - Cancer Markers Not Detected
+  filename: Example-Cancer-Markers-Not-Detected.page.md
 - name: Example - Cancer Markers Detected
   filename: Example---Cancer-Markers-Detected.page.md
+- name: Example - Cancer Markers Detected Single Probable Site
+  filename: Example-Cancer-Markers-Detected-Single-Probable-Site.page.md
 - name: Example - Amended Test
   filename: Example---Amended-Test.page.md
 - name: Example - Corrected Test
