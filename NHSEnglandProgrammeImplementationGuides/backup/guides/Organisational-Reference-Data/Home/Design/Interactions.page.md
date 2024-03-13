@@ -115,7 +115,7 @@ The organisation relationship ID
 | Outcome         | Response                       |
 | ----------- | ------------------------  |
 | Record Found       | OrganizationAffiliation - {{pagelink:Example-OrganizationAffiliation-256248}}||
-| Invalid ID     | OperationOutcome - {{pagelink:Example-Invalid-ID}}|
+| Invalid ID     | OperationOutcome - {{pagelink:Example-Error-Invalid-ID}}|
  
 ---
 

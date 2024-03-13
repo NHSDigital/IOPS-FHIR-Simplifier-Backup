@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="MCED-CancerMarkersNotDetected-Example" />
+    <meta>
+        <lastUpdated value="2020-09-20T10:22:00+00:00" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="b84acc4c-81cb-4c6c-a08d-8631edc61f7f" />
+    </identifier>
+    <type value="message" />
+    <entry>
+        <fullUrl value="urn:uuid:2fdd9240-62ea-4180-95cb-0bb8351f8a60" />
+        <resource>
+            <MessageHeader>
+                <id value="2fdd9240-62ea-4180-95cb-0bb8351f8a60" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
+                </meta>
+                <eventCoding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="371528001" />
+                    <display value="Pathology report" />
+                </eventCoding>
+                <destination>
+                    <name value="Executive Agency - NHS ENGLAND - X26" />
+                    <endpoint value="mesh-mailbox-nhs" />
+                    <receiver>
+                        <reference value="urn:uuid:c0ddd1c4-306e-4829-9d87-ea040d92cb27" />
+                    </receiver>
+                </destination>
+                <sender>
+                    <reference value="urn:uuid:1667dd0a-8aab-4999-80b7-dd6b930860f9" />
+                </sender>
+                <source>
+                    <endpoint value="mesh-mailbox-ScreeningOrg" />
+                </source>
+                <focus>
+                    <!-- Goes to the DiagnosticReport -->
+                    <reference value="urn:uuid:1ba48cf0-77a4-48b5-b4dd-bf0d1f2f973d" />
+                </focus>
+                <definition value="https://fhir.nhs.uk/England/MessageDefinition/England-MCED-TestReport" />
+            </MessageHeader>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:1667dd0a-8aab-4999-80b7-dd6b930860f9" />
+        <resource>
+            <Organization>
+                <id value="1667dd0a-8aab-4999-80b7-dd6b930860f9" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                    <value value="ABC123" />
+                </identifier>
+                <name value="Screening Organisation Ltd" />
+                <address>
+                    <text value="Screening Organisation Ltd, Floor 1, High Rise, Anytown, AT5 5TT" />
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:9dccdf9d-d297-448f-b4f4-8f7721089588" />
+        <resource>
+            <Organization>
+                <id value="9dccdf9d-d297-448f-b4f4-8f7721089588" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+                </meta>
+                <identifier>
+                    <system value="http://terminology.hl7.org/NamingSystem/CLIA" />
+                    <value value="ScreeningLab34D2231294CLIA" />
+                </identifier>
+                <identifier>
+                    <system value="http://terminology.hl7.org/NamingSystem/CAP" />
+                    <value value="ScreeningLab6793CAP" />
+                </identifier>
+                <name value="Screening Lab Name" />
+                <telecom>
+                    <system value="phone" />
+                    <value value="+18336942553" />
+                </telecom>
+                <telecom>
+                    <system value="fax" />
+                    <value value="+16509999000" />
+                </telecom>
+                <telecom>
+                    <system value="email" />
+                    <value value="customerservice@screeninglab.com" />
+                </telecom>
+                <address>
+                    <text value="Screening Lab Name, The Lab, Anytown, AT66 7TY" />
+                </address>
+                <contact>
+                    <name>
+                        <text value="Ms Lab DIRECTOR" />
+                    </name>
+                </contact>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:c0ddd1c4-306e-4829-9d87-ea040d92cb27" />
+        <resource>
+            <Organization>
+                <id value="c0ddd1c4-306e-4829-9d87-ea040d92cb27" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                    <value value="X26" />
+                </identifier>
+                <name value="Executive Agency - NHS ENGLAND - X26" />
+                <address>
+                    <line value="THE LEEDS GOVERNMENT HUB" />
+                    <line value="7-8 WELLINGTON PLACE" />
+                    <city value="LEEDS" />
+                    <district value="WEST YORKSHIRE" />
+                    <postalCode value="LS1 4AP" />
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:f389ca3a-e1a4-46f9-ad3a-3cfcc5fbacb7" />
+        <resource>
+            <Practitioner>
+                <id value="f389ca3a-e1a4-46f9-ad3a-3cfcc5fbacb7" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+                    <value value="3415870223" />
+                </identifier>
+                <name>
+                    <text value="Dr. Daniel Davies" />
+                </name>
+                <address>
+                    <text value="NHS England, Wellington House, 133-155 Waterloo Road, London, SE1 8UG, UK" />
+                </address>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:17473ce3-f258-4112-b0b6-ac4982f07f99" />
+        <resource>
+            <Patient>
+                <id value="17473ce3-f258-4112-b0b6-ac4982f07f99" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+                </meta>
+                <identifier>
+                    <system value="https://ScreeningOrg/patient-id" />
+                    <value value="NHS-AB12-CD34" />
+                </identifier>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:18b04eb1-01b6-4484-8dd8-da3bb636b1a5" />
+        <resource>
+            <ServiceRequest>
+                <id value="18b04eb1-01b6-4484-8dd8-da3bb636b1a5" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+                </meta>
+                <identifier>
+                    <system value="http://ScreeningOrg/request-id" />
+                    <value value="NHS9123123" />
+                </identifier>
+                <status value="active" />
+                <intent value="order" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1148754001" />
+                        <display value="Screening for neoplasm" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:17473ce3-f258-4112-b0b6-ac4982f07f99" />
+                    <display value="NHS-AB12-CD34" />
+                </subject>
+                <requester>
+                    <reference value="urn:uuid:f389ca3a-e1a4-46f9-ad3a-3cfcc5fbacb7" />
+                    <display value="Dr. Daniel Davies" />
+                </requester>
+                <performer>
+                    <reference value="urn:uuid:9dccdf9d-d297-448f-b4f4-8f7721089588" />
+                    <display value="Screening Lab" />
+                </performer>
+            </ServiceRequest>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:1ba48cf0-77a4-48b5-b4dd-bf0d1f2f973d" />
+        <resource>
+            <DiagnosticReport>
+                <id value="1ba48cf0-77a4-48b5-b4dd-bf0d1f2f973d" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+                </meta>
+                <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
+                    <valueAnnotation>
+                        <text value="Some Lab Comments" />
+                    </valueAnnotation>
+                </extension>
+                <basedOn>
+                    <reference value="urn:uuid:18b04eb1-01b6-4484-8dd8-da3bb636b1a5" />
+                </basedOn>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="721981007" />
+                        <display value="Diagnostic studies report" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:17473ce3-f258-4112-b0b6-ac4982f07f99" />
+                    <display value="NHS-AB12-CD34" />
+                </subject>
+                <issued value="2020-09-25T16:00:00+00:00" />
+                <performer>
+                    <reference value="urn:uuid:9dccdf9d-d297-448f-b4f4-8f7721089588" />
+                    <display value="Screening Lab" />
+                </performer>
+                <specimen>
+                    <reference value="urn:uuid:f6dc2f5c-b1c9-41c3-b837-1e860abc3c08" />
+                    <display value="NHS9123123" />
+                </specimen>
+                <!-- result is the Observation grouper -->
+                <result>
+                    <reference value="urn:uuid:bcf61153-9f23-4b56-bfab-2650ee01878e" />
+                </result>
+                <conclusion value="The test results report PDF document is the official source of the test result and contains important information regarding the test and the patient&#39;s test results. Please read the official report for complete results." />
+                <!-- The PDF report goes here -->
+                <presentedForm>
+                    <contentType value="application/pdf" />
+                    <data value="VGhlIEdSQUlMIFBERiBnb2VzIGhlcmU=" />
+                </presentedForm>
+            </DiagnosticReport>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:bcf61153-9f23-4b56-bfab-2650ee01878e" />
+        <resource>
+            <Observation>
+                <id value="bcf61153-9f23-4b56-bfab-2650ee01878e" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                </meta>
+                <identifier>
+                    <system value="http://ScreeningOrg/request-id" />
+                    <value value="NHS9123123" />
+                </identifier>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1148754001" />
+                        <display value="Screening for neoplasm" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:17473ce3-f258-4112-b0b6-ac4982f07f99" />
+                    <display value="NHS-AB12-CD34" />
+                </subject>
+                <issued value="2020-09-25T16:00:00+00:00" />
+                <performer>
+                    <reference value="urn:uuid:9dccdf9d-d297-448f-b4f4-8f7721089588" />
+                    <display value="Screening Lab" />
+                </performer>
+                <specimen>
+                    <reference value="urn:uuid:f6dc2f5c-b1c9-41c3-b837-1e860abc3c08" />
+                    <display value="NHS9123123" />
+                </specimen>
+                <!-- the overall detected / not detected -->
+                <hasMember>
+                    <reference value="urn:uuid:4a26bdd2-bb57-4f69-8f03-00ac6f1f8351" />
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:4a26bdd2-bb57-4f69-8f03-00ac6f1f8351" />
+        <resource>
+            <Observation>
+                <id value="4a26bdd2-bb57-4f69-8f03-00ac6f1f8351" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+                </meta>
+                <identifier>
+                    <system value="http://ScreeningOrg/request-id" />
+                    <value value="NHS9123123" />
+                </identifier>
+                <basedOn>
+                    <reference value="urn:uuid:18b04eb1-01b6-4484-8dd8-da3bb636b1a5" />
+                </basedOn>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1854971000000106" />
+                        <display value="Qualitative result of cancer methylation profile in cell free deoxyribonucleic acid by next generation sequencing" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:17473ce3-f258-4112-b0b6-ac4982f07f99" />
+                    <display value="NHS-AB12-CD34" />
+                </subject>
+                <issued value="2020-09-25T16:00:00+00:00" />
+                <performer>
+                    <reference value="urn:uuid:9dccdf9d-d297-448f-b4f4-8f7721089588" />
+                    <display value="Screening Lab" />
+                </performer>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1854991000000105" />
+                        <display value="Multi-cancer early detection signal not detected" />
+                    </coding>
+                </valueCodeableConcept>
+                <specimen>
+                    <reference value="urn:uuid:f6dc2f5c-b1c9-41c3-b837-1e860abc3c08" />
+                    <display value="NHS9123123" />
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:f6dc2f5c-b1c9-41c3-b837-1e860abc3c08" />
+        <resource>
+            <Specimen>
+                <id value="f6dc2f5c-b1c9-41c3-b837-1e860abc3c08" />
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+                </meta>
+                <identifier>
+                    <system value="http://ScreeningOrg/request-id" />
+                    <value value="NHS9123123" />
+                </identifier>
+                <status value="available" />
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="119297000" />
+                        <display value="Blood specimen" />
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="urn:uuid:17473ce3-f258-4112-b0b6-ac4982f07f99" />
+                    <display value="NHS-AB12-CD34" />
+                </subject>
+                <collection>
+                    <collectedDateTime value="2020-09-23T11:00:00+00:00" />
+                </collection>
+            </Specimen>
+        </resource>
+    </entry>
+</Bundle>
