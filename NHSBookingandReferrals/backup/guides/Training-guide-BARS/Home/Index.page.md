@@ -1,23 +1,24 @@
-# {{page-title}} 
-{{index:root}}
+Welcome to the BaRS implementation guide. 
 
-The first step is to create your folders and pages by using the icons on the far left.
+### Introduction
 
-The Simplifier guide editor documentation can be found here: https://docs.fire.ly/projects/Simplifier/simplifierIGeditor.html
+These pages provide guidance on how to implement the Booking and Referral Standard and {{pagelink:assure, text:gain accreditation}}. The guide is  designed for developers, business analysts, product owners and anyone involved at any stage of going live with BaRS. 
 
-This guide is for testing purposes, you can add/delete and configure as you like to learn the features. It's visibility has been set to "private" within the NHS Digital domain.
+For more information on the NHS England program delivering the standard please see the <a href="https://digital.nhs.uk/services/booking-and-referral-standard" target="_blank">booking and referral website</a>.
 
-|Heading 1|Heading 2| Heading 3|
+You can use the guide to support your analysis and define the scope of your solution. 
+
+However, as a developer, you may wish to start with the following:
+* {{pagelink:about_bars, text:About BaRS and quick start guide}} 
+* {{pagelink:design-core, text:End to end workflow }} 
+* {{pagelink:Home/Applications/BaRS-Applications, text:BaRS Applications}} 
+* {{pagelink:build-testing, text:Tooling}} 
+
+| The guide is divided into a number of sections:    |
 |-
-|content|content|content|
-|content|content|content|
+|{{pagelink:about_bars}} provides essential background and guiding principles along with prerequisites | {{pagelink:applications}} provides the BaRS Core and BaRS Applications implementation guides |
+|{{pagelink:build-testing}} provides information on testing and environments  |{{pagelink:assure}} describes guidance for the assurance process |
+|{{pagelink:deploy}} provides the deployment toolkit| {{pagelink:Home/fhir-assets}}, the complete directory of FHIR assets|
+|{{pagelink:help}} provides a <a href="#P1">site map</a> and {{pagelink:Home/Helpandsupport/Howtousethisimplementationguide.guide.md, text:general guidance}} on how to use the implementation guide
 
-<details>
-  <summary><b>> Epcot Center</b></summary>
-  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-</details>
 
-<details>
-  <summary><b>> Epcot Center 2</b></summary>
-  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-</details>
