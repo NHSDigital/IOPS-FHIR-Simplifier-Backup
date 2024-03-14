@@ -4,7 +4,15 @@
 	"extension": [
 		{
 			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
-			"valueCode": "M"
+			"valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+            "code": "M",
+            "display": "Male"
+          }
+        ]
+      }
 		},
 		{
 			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
