@@ -1,3 +1,5 @@
+### <fql output="inline" delimiter="">where id = %subject select text.div</fql>
+
 <div class="tab">
   <button class="tablinks active" onclick="openTab(event, 'Table View')">Table View</button>
  <button class="tablinks" onclick="openTab(event, 'Tree View')">Tree View</button>

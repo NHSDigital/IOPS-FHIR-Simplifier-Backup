@@ -1,4 +1,11 @@
-### Example to illustrate a communication to notify that a patient has had their first MMR Vaccination.
+---
+subject: UKCore-Communication-FirstMMRVaccination-Example
+---
+
+### <fql output="inline" delimiter="">
+where id = %subject
+select text.div
+</fql>
 
 
 <div class="tab">
