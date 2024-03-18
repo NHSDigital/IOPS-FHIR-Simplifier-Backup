@@ -1,3 +1,6 @@
+---
+topic: STU2Sequence
+---
 ## {{page-title}}
 
 <table class="assets" title="STU2 Sequence release list">

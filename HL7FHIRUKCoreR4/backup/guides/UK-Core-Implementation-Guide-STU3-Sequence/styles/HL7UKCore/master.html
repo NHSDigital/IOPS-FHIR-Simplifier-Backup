@@ -886,32 +886,38 @@
             // if the first cell on a row is url[0] or system[0], remap the link to the matching asset in the IG
             // if the first cell on a row is code[0], remap the link to termbrowser for the SNOMED CT concept id
             function swapReferenceExampleLinks() {
+                let url = window.location.href;
+                let slashCount = url.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++) {
+                    newUrl = newUrl + url.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
+                        i = slashCount;
+                    }
+                }
+
                 var isSNOMEDCT = false;
                 $("div[id='Table View'] div.path table tbody tr").each(function(index) {
                     if ($(this)[0].cells[0].innerText.endsWith("reference[0]"))
 					{
 						let reference = $(this)[0].cells[1].innerText;
-                        if (reference.includes("/"))
+                        if (reference.includes("/") && reference.includes("UKCore"))
                         {
                             exampleSuffix = "-Example";
                             let assetType = reference.split("/")[0];
                             let exampleName = "Example-" + reference.split("/")[1].replace(exampleSuffix,'');
-                            let url = window.location.href;
                             let exampleVersion = "?" + url.split("?")[1];
                             if (exampleVersion.startsWith("?version=current")){
                                 exampleVersion = ".page.md" + exampleVersion;
                             }
-                            let slashCount = url.split("/").length;
-                            let newUrl = '';
-                            for (i=0;i<slashCount-1;i++)
-                            {
-                                newUrl = newUrl + url.split("/")[i] + "/";
+                            var swapUrl = newUrl;
+                            if (exampleName.includes("-Extension-")) {
+                                swapUrl = swapUrl + "Examples/Extension-Examples/";
+                            } else {
+                                swapUrl = swapUrl + "Examples/Profile-Examples/";
                             }
-                            if (!newUrl.endsWith("All-Examples/")) {
-                                newUrl = newUrl + "All-Examples/";
-                            }
-                            newUrl = newUrl + exampleName + exampleVersion;
-                            $(this)[0].cells[1].innerHTML = "<a href=" + newUrl + ">" + reference + "</a>";
+                            swapUrl = swapUrl + exampleName + exampleVersion;
+                            $(this)[0].cells[1].innerHTML = "<a href=" + swapUrl + ">" + reference + "</a>";
                         }
                         isSNOMEDCT=false;
 					} else if ($(this)[0].cells[0].innerText.endsWith("url[0]") || $(this)[0].cells[0].innerText.endsWith("system[0]"))
@@ -921,42 +927,30 @@
 						let urlReference = $(this)[0].cells[1].innerText;
                         if (urlReference.includes("https://fhir.hl7.org.uk"))
                         {
-                            let url = window.location.href;
-                            let slashCount = url.split("/").length;
-                            let newUrl = '';
-                            for (i=0;i<slashCount;i++)
-                            {
-                                newUrl = newUrl + url.split("/")[i] + "/";
-                                if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
-                                    i = slashCount;
-                                }
-                            }
+                            var swapUrl = newUrl;
 							var addExtraIfNeeded = true;
 							if (urlReference.startsWith("https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-")) {
-								newUrl = newUrl + "ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-","");
+								swapUrl = swapUrl + "ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-","");
 							} else if (urlReference.startsWith("https://fhir.hl7.org.uk/StructureDefinition/UKCore-")) {
-								newUrl = newUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/StructureDefinition/UKCore-","");
+								swapUrl = swapUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/StructureDefinition/UKCore-","");
 								addExtraIfNeeded=false;
 							} else if (urlReference.startsWith("https://fhir.hl7.org.uk/ValueSet/UKCore-")) {
-								newUrl = newUrl + "Terminology/AllValueSets/ValueSet-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/ValueSet/UKCore-","");
+								swapUrl = swapUrl + "Terminology/AllValueSets/ValueSet-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/ValueSet/UKCore-","");
 							} else if (urlReference.startsWith("https://fhir.hl7.org.uk/CodeSystem/UKCore-")) {
-								newUrl = newUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/CodeSystem/UKCore-","");
+								swapUrl = swapUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://fhir.hl7.org.uk/CodeSystem/UKCore-","");
 							}
                             let exampleVersion = "?" + url.split("?")[1];
                             if (exampleVersion.startsWith("?version=current") && addExtraIfNeeded){
                                 exampleVersion = ".page.md" + exampleVersion;
                             }
-                            newUrl = newUrl + exampleVersion;
-                            $(this)[0].cells[1].innerHTML = "<a href=" + newUrl + ">" + urlReference + "</a>";
-                        } else if (urlReference.includes("http://terminology.hl7.org"))
-                        {
+                            swapUrl = swapUrl + exampleVersion;
+                            $(this)[0].cells[1].innerHTML = "<a href=" + swapUrl + ">" + urlReference + "</a>";
+                        } else if (urlReference.includes("http://terminology.hl7.org")) {
                             $(this)[0].cells[1].innerHTML = "<a href=" + urlReference + ">" + urlReference + "</a>";
-                        } else if (urlReference.includes("http://snomed.info/sct"))
-                        {
+                        } else if (urlReference.includes("http://snomed.info/sct")) {
                             isSNOMEDCT= true;
                         }
-					} else if ($(this)[0].cells[0].innerText.endsWith("code[0]") && isSNOMEDCT)
-					{
+					} else if ($(this)[0].cells[0].innerText.endsWith("code[0]") && isSNOMEDCT) {
 						let conceptID = $(this)[0].cells[1].innerText;
                         $(this)[0].cells[1].innerHTML = "<a href='https://termbrowser.nhs.uk/?perspective=full&conceptId1=" + conceptID +"'>" + conceptID + "</a>";
                         isSNOMEDCT=false;

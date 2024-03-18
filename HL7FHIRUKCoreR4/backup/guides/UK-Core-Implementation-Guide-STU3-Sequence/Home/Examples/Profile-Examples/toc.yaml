@@ -14,6 +14,8 @@
   filename: Example-UKCore-Composition-Discharge.page.md
 - name: Example UKCore-Condition-BleedingFromEar
   filename: Example-UKCore-Condition-BleedingFromEar.page.md
+- name: Example UKCore-Condition-HipReplacement
+  filename: Example-UKCore-Condition-HipReplacement.page.md
 - name: Example UKCore-DiagnosticReport-CTChestScan
   filename: Example-UKCore-DiagnosticReport-CTChestScan.page.md
 - name: Example UKCore-DiagnosticReport-ECG

@@ -1,3 +1,6 @@
+---
+topic: STU3Sequence
+---
 ## {{page-title}}
 
 <table class="assets" title="STU3 Sequence release list">
@@ -20,7 +23,7 @@
 <b>General IG improvements:</b><br>
 <ul>
 <li>Swap Example, ValueSet, CodeSystem, Extension, and Profile pages to use Simplifier templating</li>
-<li>Altered Profiles sub menu from hover to click to show</li>
+<li>Altered Profiles sub menu from on hover opening to click to show</li>
 <li>Altered Profiles sub menu to restore its state via cookie</li>
 <li>Altered Profiles sub menu to have a sub menu for derived profiles</li>
 <li>Added cookie consent pop-up</li>
@@ -38,15 +41,15 @@
 <li>Changed proposed assets from draft to active</li>
 <li>value[x] and specimen cardinality set to 0..0 on <code>UKCore-Observation-AverageBloodPressure</code> and <code>UKCore-Observation-VitalSigns-BloodPressure</code></li>
 <li>Revised and simplified ECL's, and expansion of the ValueSet contents</li>
-<li>Improved description and purpose</li>
-<li>Altered binding strength on Observation.method< to bring it in line with UK core Design and Development Approach</li>
+<li>Improved description and purpose of added profiles</li>
+<li>Altered binding strength on <code>Observation.method</code> to bring it in line with UK Core Design and Development Approach</li>
 <li>Improved cardinality on LOINC / SNOMED CT, and systolicBP / diastolicBP slices</li>
 <li>Moved LOINC / SNOMED CT slicing on Observation.component from <code>UKCore-Observation-VitalSigns</code> to <code>UKCore-Observation-VitalSigns-BloodPressure</code> as they only applied for this derived profiles</li>
 <li>Improved guidance on the use of code, value[x], and component elements for <code>UKCore-Observation-AverageBloodPressure</code> and <code>UKCore-Observation-VitalSigns-BloodPressure</code></li>
 </ul>
 <b>STU2 Sequence Ballot Assets:</b><br>
 <ul>
-<li>Synchronization of STU2 Ballot reconciliation actions into STU3 assets and implementation guidance - this includes multiple <b>BREAKING CHANGES</b>, for more details, see {{pagelink:1.1.0}}</li>
+<li>Synchronization of STU2 Ballot reconciliation actions into STU3 assets and implementation guidance - this includes multiple <b>BREAKING CHANGES</b>, for more details, see {{pagelink:STU2Sequence}}</li>
 </ul>
 </tr>
 
