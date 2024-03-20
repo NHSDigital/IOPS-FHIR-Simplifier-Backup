@@ -1127,7 +1127,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-EncounterLocationType}}</li>
 <li>{{pagelink:ValueSet-UKCore-EncounterType}}</li>
 <li>{{pagelink:ValueSet-UKCore-EthnicCategory}}</li>
-<li>{{pagelink:ValueSet-UKCore-FundingCategory}}<</li>
+<li>{{pagelink:ValueSet-UKCore-FundingCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-ImmunizationAdministrationBodySite}}</li>
 <li>{{pagelink:ValueSet-UKCore-ImmunizationExplanationReason}}</li>
@@ -1159,7 +1159,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-OutcomeOfAttendance}}</li>
 <li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables}}</li>
 <li>{{pagelink:ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures}}</li>
-<li>{{pagelink:ValueSet-UKCore-PersonMaritalStatusCode}}<</li>
+<li>{{pagelink:ValueSet-UKCore-PersonMaritalStatusCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-PersonRelationshipType}}</li>
 <li>{{pagelink:ValueSet-UKCore-PracticeSettingCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-PreferredContactMethod}}</li>

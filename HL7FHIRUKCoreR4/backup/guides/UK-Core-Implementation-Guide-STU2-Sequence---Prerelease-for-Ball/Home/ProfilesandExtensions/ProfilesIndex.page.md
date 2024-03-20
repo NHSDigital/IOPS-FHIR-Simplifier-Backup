@@ -184,7 +184,7 @@ The Profiles are rendered in several formats:
 <td>Defines the UK Core constraints and extensions on the Practitioner resource for the minimal set of data to query and retrieve practitioner information.</td>
 <td>1</td>
 </tr>
-<tr >
+<tr>
 <td>{{pagelink:Profile-PractitionerRole-55046,text:UKCore-PractitionerRole}}</td>
 <td>active</td>
 <td>Defines the UK Core constraints and extensions on the PractitionerRole resource for the minimal set of data to query and retrieve practitioner role information.</td>
@@ -218,7 +218,7 @@ The Profiles are rendered in several formats:
 <tr>
 <td>{{pagelink:Profile-ServiceRequest-Lab-37178,text:UKCore-ServiceRequest-Lab}}</td>
 <td>active</td>
-<td>>Defines the UK Core constraints and extensions on the ServiceRequest resource for the minimal set of data to query and retrieve service request information, specifically related to laboratory tests.<br>
+<td>Defines the UK Core constraints and extensions on the ServiceRequest resource for the minimal set of data to query and retrieve service request information, specifically related to laboratory tests.<br>
 <td>6</td>
 </tr>
 <tr>
