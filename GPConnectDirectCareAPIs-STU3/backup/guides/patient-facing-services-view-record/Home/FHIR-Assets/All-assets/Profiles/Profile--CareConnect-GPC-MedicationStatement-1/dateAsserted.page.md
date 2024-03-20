@@ -7,10 +7,9 @@
 
 <h5><ins>Guidance</ins></h5>
 
-When this medication statement was believed true.
+When this medication statement was created by the clinician.
 
-Unless there is a distinct user-modifiable availability date/time for the authorisation, this is the audit trail date/time for when the authorisation was entered.
-
+This is the date/time when the prescription was authorised by the clinician. Usually this is when the prescription is added to the record but it may be backdated.
 
 <h5><ins>Example</ins></h5>
 
