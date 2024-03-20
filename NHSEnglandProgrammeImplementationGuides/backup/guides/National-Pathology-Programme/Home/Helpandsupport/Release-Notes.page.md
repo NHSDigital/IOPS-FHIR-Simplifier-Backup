@@ -3,6 +3,10 @@ topic: ReleaseNotes
 ---
 ## Release Notes
 
+### v0.1.6 (TBC)
+
+* Updated the {{pagelink:FHIRAssetsR4CodeSystems}} and {{pagelink:FHIRAssetsR4ValueSets}} pages (under the FHIR Assets menu bar item). 
+
 ### v0.1.5 (01/03/2024)
 
 * Updated the examples in the {{pagelink:R4Examples}} to correct various validation errors.
