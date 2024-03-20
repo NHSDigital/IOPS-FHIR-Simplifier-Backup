@@ -6,7 +6,7 @@
 
 <h5><ins>Guidance</ins></h5>
 
-The audit trail timestamp representing when the data was recorded.
+The timestamp representing when the data was committed into the database.
 
 <h5><ins>Example</ins></h5>
 

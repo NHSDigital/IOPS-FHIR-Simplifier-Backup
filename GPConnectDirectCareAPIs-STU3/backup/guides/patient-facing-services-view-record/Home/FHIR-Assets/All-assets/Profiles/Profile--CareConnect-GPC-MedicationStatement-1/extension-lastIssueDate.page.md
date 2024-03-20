@@ -4,10 +4,9 @@
 
 <span class="mro-circle required"></span> Required
 
-
 <h5><ins>Guidance</ins></h5>
 
-The date when the latest prescription under this plan was issued. 
+The date when the latest prescription under this plan was issued (signed).
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
     <b>Note</b>: The issue information may not be recorded in the GP system if the medication or medical device is a repeat dispense, or has been prescribed elsewhere.
