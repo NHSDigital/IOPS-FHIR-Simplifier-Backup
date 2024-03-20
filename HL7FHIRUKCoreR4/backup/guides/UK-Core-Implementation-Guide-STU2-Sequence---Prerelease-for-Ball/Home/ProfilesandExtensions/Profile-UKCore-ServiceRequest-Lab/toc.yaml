@@ -28,3 +28,7 @@
   filename: locationReference.page.md
 - name: reasonReference
   filename: reasonReference.page.md
+- name: supportingInfo
+  filename: supportingInfo.page.md
+- name: specimen
+  filename: specimen.page.md
