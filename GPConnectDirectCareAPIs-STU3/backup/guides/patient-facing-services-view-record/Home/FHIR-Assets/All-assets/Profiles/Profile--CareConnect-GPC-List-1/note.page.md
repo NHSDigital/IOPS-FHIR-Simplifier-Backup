@@ -6,7 +6,11 @@
 
 <h5><ins>Guidance</ins></h5>
 
+### For structural list use only
+
 The `note` element can be used to provide any comments regarding the list.
+
+The text versions of any warning messages included with the list. Where there are multiple warning messages their text is concatenated.
 
 <h5><ins>Example</ins></h5>
 

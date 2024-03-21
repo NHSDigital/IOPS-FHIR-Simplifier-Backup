@@ -4,22 +4,17 @@
 
 <span class="mro-circle mandatory" title="Mandatory"></span> Mandatory
 
-
 <h5><ins>Guidance</ins></h5>
 
-A reference to either:
+### For structural lists
 
-<i class="fa fa-link"></i> {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Patient-1}}
+Reference to the `Patient` profile.
 
-<i class="fa fa-link"></i> {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Location-1}}
+### For lists used in consultations
 
-<i class="fa fa-link"></i> [Device](https://www.hl7.org/fhir/stu3/device.html)
+Reference to the `Patient` profile for the patient whose patient record contains a consultation represented by this List profile.
 
-<i class="fa fa-link"></i> [Group](https://www.hl7.org/fhir/stu3/group.html)
-
-**List(Consultation)**
-
-- provide a reference to the patient whom the consultation is about
+The patient reference is provided by all Lists in the structure rather than the top-level List(Consultation) only.
 
 <h5><ins>Example</ins></h5>
 
