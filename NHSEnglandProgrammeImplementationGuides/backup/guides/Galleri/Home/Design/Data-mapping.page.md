@@ -20,8 +20,8 @@
 |Requesting Practitioner Name|0..1|Practitioner.name|Name of the requesting practitioner
 |Requesting Practitioner Identifier|0..1|Practitioner.Identifier|Identifier of the requesting practitioner
 |Test Result (overall)|0..1|Observation.valueCodeableConcept.coding|The cancer signal result <br/>system "http://snomed.info/sct"<br/>See below for SNOMED CT [cancer signal result codes](#CancerSignalResult)
-|Test Result Primary Site|0..*|Observation.component.valueCodeableConcept|As part of the Observation for the primary site, that has an Observation.code.coding.code "1873921000000106" and Observation.code.coding.display "Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier"<br/>See below for SNOMED CT [body site mapping](#BodySiteMap)
-|Test Result Secondary Site|0..*|Observation.component.valueCodeableConcept|As part of the Observation for the primary site, that has an Observation.code.coding.code "1873931000000108" and Observation.code.coding.display "Multi-cancer early detection second highest probability cancer signal origin by machine learning-based classifier"<br/>See below for SNOMED CT [body site mapping](#BodySiteMap)
+|Test Result Primary Site|0..*|Observation.component.valueCodeableConcept|As part of the Observation for the primary site, that has an Observation.code.coding.code "1873921000000106" and Observation.code.coding.display "Multi-cancer early detection highest scored cancer signal origin by machine learning-based classifier"<br/>See below for SNOMED CT [body site mapping](#BodySiteMap)
+|Test Result Secondary Site|0..*|Observation.component.valueCodeableConcept|As part of the Observation for the primary site, that has an Observation.code.coding.code "1873931000000108" and Observation.code.coding.display "Multi-cancer early detection second highest scored cancer signal origin by machine learning-based classifier"<br/>See below for SNOMED CT [body site mapping](#BodySiteMap)
 |Lab Comments|0..1|DiagnosticReport.[extension-DiagnosticReport.note].valueAnnotation.text|An extension to hold lab comments
 |Performing Lab Name|1..1|Organization.name|Name of Laboratory where the sample was processed
 |Performing Lab Director Name|1..1|Organization.contact.name.text|Full name of the Laboratory director of the sample processing lab
@@ -48,7 +48,7 @@ For example, for a single body site for a cencer signal detected in the prostate
       {
         "system": "http://snomed.info/sct",
         "code": "1873921000000106",
-        "display": "Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier"
+        "display": "Multi-cancer early detection highest scored cancer signal origin by machine learning-based classifier"
       }
     ]
   },
@@ -87,7 +87,7 @@ For example, for a single body site for a cencer signal detected in the prostate
       {
         "system": "http://snomed.info/sct",
         "code": "1873921000000106",
-        "display": "Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier"
+        "display": "Multi-cancer early detection highest scored cancer signal origin by machine learning-based classifier"
       }
     ]
   },
