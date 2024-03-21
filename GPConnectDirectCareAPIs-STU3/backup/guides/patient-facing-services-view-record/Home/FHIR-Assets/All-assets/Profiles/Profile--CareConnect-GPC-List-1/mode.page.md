@@ -4,12 +4,11 @@
 
 <span class="mro-circle mandatory" title="Mandatory"></span> Mandatory
 
-
 <h5><ins>Guidance</ins></h5>
 
-It's expected that this value will be have a fixed value of `snapshot` as the list being sent is point-in-time (snapshot) data - regardless of whether the list source is a `working` or `changed`.
+Whether the List has a `mode` of `working`, `snapshot`, or `changes`.
 
-
+`snapshot` **MUST** be used for all lists in GP Connect.
 
 <h5><ins>Example</ins></h5>
 
