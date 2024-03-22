@@ -4,15 +4,11 @@
 
 <span class="mro-circle optional" title="Optional"></span> Optional
 
-
 <h5><ins>Guidance</ins></h5>
 
-The `specialty` element could be populated if the GP clinical system holds a distinct entry for the clinical or practitioner specialty requested by the referral. 
-
-It is not expected that this element will be populated with the main reason for the referral, as that would typically be captured within the `reasonCode` element.
+This **MUST NOT** be populated with the source system’s main code for the referral, which **MUST** be returned in the `reasonCode` element. This **MAY** be populated if the GP clinical system holds a distinct entry for the clinical or practitioner specialty requested by the referral.
 
 <h5><ins>Example</ins></h5>
-
 
 ```xml
 <specialty>

@@ -4,16 +4,14 @@
 
 <span class="mro-circle required" title="required"></span> Required
 
-
 <h5><ins>Guidance</ins></h5>
 
 Whether or how long patient abstained from food and/or drink.
 
-Where this is indicated in the incoming EDIFACT report it will be indicated with an `F`. 
+Where this is indicated in the incoming EDIFACT report it will be indicated with an ‘F’. In this scenario:
 
-This **MUST** be used to populate the `valueCodeableConcept.text` element.
-
-<i class="fa fa-link"></i> [ValueSet: hl7VS-relevantClincialInformation](https://terminology.hl7.org/5.0.0/ValueSet-v2-0916.html)
+- This **MUST** be used to populate the coding.text element
+- This **SHOULD** be used to populate the coding element with values for the ‘F’ code from the [relevantClincialInformation ValueSet](https://terminology.hl7.org/ValueSet-v2-0916.html)
 
 <h5><ins>Example</ins></h5>
 

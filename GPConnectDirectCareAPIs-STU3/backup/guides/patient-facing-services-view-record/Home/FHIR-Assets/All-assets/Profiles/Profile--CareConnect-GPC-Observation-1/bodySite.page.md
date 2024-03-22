@@ -6,7 +6,21 @@
 
 <h5><ins>Guidance</ins></h5>
 
-Indicates the site on the subject's body where the observation was made (e.g., the target site).
+### Test Group Header
+
+N/A
+
+### Individual Test Result
+
+The body part that was tested/observed.
+
+### Filing Comments
+
+N/A
+
+### Observations including Blood Pressure
+
+This **MAY** be populated where a suitably coded body site is captured with an appropriate terminology. Alternatively, the `comment` can be populated as described above.
 
 <h5><ins>Example</ins></h5>
 

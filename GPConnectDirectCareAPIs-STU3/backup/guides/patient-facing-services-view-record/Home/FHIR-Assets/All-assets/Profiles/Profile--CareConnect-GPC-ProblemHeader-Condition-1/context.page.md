@@ -4,10 +4,9 @@
 
 <span class="mro-circle required" title="Required"></span> Required
 
-
 <h5><ins>Guidance</ins></h5>
 
-Encounter or episode when condition first asserted
+Encounter or episode when condition first asserted.
 
 <h5><ins>Example</ins></h5>
 

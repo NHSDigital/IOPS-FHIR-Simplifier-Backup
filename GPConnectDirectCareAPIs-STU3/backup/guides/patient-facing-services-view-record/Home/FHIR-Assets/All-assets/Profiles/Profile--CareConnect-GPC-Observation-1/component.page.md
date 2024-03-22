@@ -6,11 +6,41 @@
 
 <h5><ins>Guidance</ins></h5>
 
+### Observations
+
 This **MAY** be used for the component part of a blood pressure that is recorded as a triple or to carry qualifying data to the main observation code.
 
 This **MAY** be used for inbound referrals.
 
-<i class="fa fa-link"></i> {{pagelink:Home/Design/Uncategorised-data-guidance}}
+### Blood Pressure
+
+#### Systolic component
+
+`component.code` - The clinical code that represents systolic part of the blood pressure.
+
+`component.valueQuantity` - The value of the observation. This **MUST** be a ‘quantity’ data type and the units used **MUST** be ‘mm[Hg]’.
+
+`component.dateAbsentReason` - If there is no code or value in this component, then a data absent reason may be populated.
+
+`component.interpretation` - A human-readable clinical summary relating to a test result and/or additional notes provided by the laboratory - for example, the specimen has haemolysed or has leaked.
+
+`component.referenceRange` - The reference range provides a guide for interpretation of the results.
+
+Where a reference range contains a less than `<` or greater than `>` operator it should be written to the referenceRange.text element as these operators are not supported in this context.
+
+#### Diastolic component
+
+`component.code` - The clinical code that represents systolic part of the blood pressure.
+
+`component.valueQuantity` - The value of the observation. This **MUST** be a ‘quantity’ data type and the units used **MUST** be ‘mm[Hg]’.
+
+`component.dateAbsentReason` - If there is no code or value in this component, then a data absent reason may be populated.
+
+`component.interpretation` - A human-readable clinical summary relating to a test result and/or additional notes provided by the laboratory - for example, the specimen has haemolysed or has leaked.
+
+`component.referenceRange` - The reference range provides a guide for interpretation of the results.
+
+Where a reference range contains a less than `<` or greater than `>` operator it should be written to the referenceRange.text element as these operators are not supported in this context.
 
 <h5><ins>Example</ins></h5>
 

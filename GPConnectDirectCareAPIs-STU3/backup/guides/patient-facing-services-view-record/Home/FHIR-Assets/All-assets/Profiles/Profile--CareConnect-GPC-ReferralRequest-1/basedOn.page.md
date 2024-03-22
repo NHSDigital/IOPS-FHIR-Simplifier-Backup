@@ -4,10 +4,9 @@
 
 <span class="mro-circle optional" title="Optional"></span> Optional
 
-
 <h5><ins>Guidance</ins></h5>
 
-A use-case for the `basedOn` element within GP Connect has not been defined.
+Indicates any plans or prior referrals that this referral is intended to fulfill.
 
 <h5><ins>Example</ins></h5>
 
