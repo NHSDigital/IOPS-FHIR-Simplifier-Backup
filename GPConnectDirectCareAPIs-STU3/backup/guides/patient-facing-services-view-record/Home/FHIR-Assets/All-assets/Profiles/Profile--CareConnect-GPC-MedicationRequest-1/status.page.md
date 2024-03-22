@@ -14,13 +14,13 @@ The status of the authorisation within GP Connect will typically be one of:
 
 For `MedicationRequest` instances where `intent` is set to `plan`:
 
-- For repeats and repeat dispensed the status refers to the status of the plan (the entire cycle of prescriptions).
-- For acutes the status refers to the status of the prescription issue.
+- For repeats and repeat dispensed the status refers to the status of the plan (the entire cycle of prescriptions)
+- For acutes the status refers to the status of the prescription issue
 
 For `MedicationRequest` instances where `intent` is set to `order`:
 
-- The status refers to the status of the prescription issue.
-- Where the plan has been discontinued then the status should not be updated to stopped
+- The status refers to the status of the prescription issue
+- Where the plan has been discontinued then the status should not be updated to `stopped`
 
 ---
 

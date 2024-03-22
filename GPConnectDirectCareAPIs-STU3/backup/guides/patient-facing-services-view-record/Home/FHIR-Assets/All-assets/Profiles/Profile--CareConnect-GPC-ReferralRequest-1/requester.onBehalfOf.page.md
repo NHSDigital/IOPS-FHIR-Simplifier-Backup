@@ -4,15 +4,9 @@
 
 <span class="mro-circle required" title="Required"></span> Required
 
-
 <h5><ins>Guidance</ins></h5>
 
-The `requester.onBehalfOf` element could be used when:
-
-- that the `requester.onBehalfOf` is a practitioner
-- the Organization associated with the referenced Practitioner is not the GP practice responsible for the referral
-
-It is not expected that this element would be populated when the `requester.agent` is not a practitioner.
+This **MUST** be populated if the `requester.agent` is a practitioner and the `Organization` associated with the referenced `Practitioner` is not the GP practice responsible for the referral. This element **SHOULD** be absent if the `requester.agent` is not a practitioner. This element **MAY** be populated or absent where the GP practice responsible for the referral is the same organisation as associated with `requester.agent` practitioner via the practitioner role.
 
 <h5><ins>Example</ins></h5>
 

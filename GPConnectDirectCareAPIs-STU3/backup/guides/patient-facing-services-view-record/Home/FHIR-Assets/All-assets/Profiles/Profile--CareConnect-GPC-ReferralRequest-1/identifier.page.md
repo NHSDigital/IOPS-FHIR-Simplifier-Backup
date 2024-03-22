@@ -12,7 +12,7 @@ The `identifier` **MUST** be populated with a globally unique and persistent ide
 
 Where consuming systems are integrating data from this resource to their local system, they **MUST** also persist this identifier at the same time.
 
-If the referral was made via the e-Referral Service and a Unique Booking Reference Number (UBRN) exists for the referral, then it **MUST** be included as an identifier. The system identifier for this is https://fhir.nhs.uk/Id/ubr-number.
+If the referral was made via the e-Referral Service and a Unique Booking Reference Number (UBRN) exists for the referral, then it **MUST** be included as an identifier. The system identifier for this is `https://fhir.nhs.uk/Id/ubr-number`.
 
 <h5><ins>Example</ins></h5>
 

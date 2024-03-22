@@ -4,12 +4,9 @@
 
 <span class="mro-circle optional" title="Optional"></span> Optional
 
-
 <h5><ins>Guidance</ins></h5>
 
-The `serviceRequested` element can be used if the GP clinical system also holds a distinct entry for the type of service requested.
-
-It is not expected to be populated with the source system's main code for the referral, as it is expected that this would be populated in the `reasonCode` element of this profile.
+This **MUST NOT** be populated with the source system’s main code for the referral, which **MUST** be returned in the `reasonCode` element. This **MAY** be populated if the GP clinical system also holds a distinct entry for the type of service requested.
 
 <h5><ins>Example</ins></h5>
 

@@ -2,6 +2,8 @@
   filename: Index.page.md
 - name: Related links
   filename: Related-links.page.md
+- name: Background
+  filename: Background.page.md
 - name: Data model element usage
   filename: Data-model-element-usage.page.md
 - name: id
@@ -32,8 +34,8 @@
   filename: subject.page.md
 - name: context
   filename: context.page.md
-- name: effectiveDateTime
-  filename: effectiveDateTime.page.md
+- name: effective[x]
+  filename: effective-x.page.md
 - name: issued
   filename: issued.page.md
 - name: performer

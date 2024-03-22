@@ -8,14 +8,17 @@
 
 The quantity to dispense.
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <b>Note</b>: If the value is text, then the extension <code>dispenseRequest.quantityText</code> <strong>MUST</strong> be used.
-</div>
+When quantity to dispense is available as a numerical value `dispenseRequest.quantity` **MUST** be populated, in preference to `dispenseRequest.quantityText`.
+
+`Unit`, `system` and `code` elements **MUST** be populated when information is available.
+
+If quantity is a textual value, then the extension `dispenseRequest.quantityText` **MUST** be used for both value and units, leaving quantity element unpopulated.
+
+When quantity to dispense is a textual value this field **MUST** contain both the value of the quantity to dispense and the unit e.g. ‘ten tablets’, ‘90 capsules’, ‘one dose’, ‘three millilitres’, ‘quantity varies dependent on schedule’. No information should be populated into `dispenseRequest.quantity` in this scenario.
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
     <b>Warning</b>: The extension for `quantityText` is not currently within FHIR R4 / UK Core.
 </div>
-
 
 <h5><ins>Example</ins></h5>
 
@@ -33,7 +36,6 @@ Fully coded
     ...
 </dispenseRequest>
 ```
-
 
 Free text
 

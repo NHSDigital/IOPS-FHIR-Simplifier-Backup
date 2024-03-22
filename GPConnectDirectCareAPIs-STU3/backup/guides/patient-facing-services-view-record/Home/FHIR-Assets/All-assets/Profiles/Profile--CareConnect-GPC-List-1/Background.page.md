@@ -16,6 +16,12 @@ The `List` **MUST** be populated in line with the guidance on `List` resources.
 
 If the `List` is empty, then an empty `List` **MUST** be returned with an `emptyReason.code` with the value `no-content-recorded`. In this case, `List.note` **MUST** be populated with the text ‘Information not available’.
 
+A two or three level `List` structure is used to represent structured consultations.
+
+1. **List (Consultation)**
+2. **List (Topic)**
+3. **List (Heading)**
+
 #### List (Consultation)
 
 This top-level profile represents the structured consultation as a whole, and **SHALL** be coded as [325851000000107 | Consultation encounter type (record artifact) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=325851000000107). 
