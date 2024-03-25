@@ -1,4 +1,5 @@
 ## {{page-title}}
+
 In this case, the description id represents a term that is different from the preferred term and therefore the description will be different from that used to populate the code.coding.display element. In this case, the extension for descriptionDisplay shall be populated with the term corresponding to the descriptionId.
 
 ```xml
@@ -19,27 +20,28 @@ In this case, the description id represents a term that is different from the pr
     </coding>
 </code>
 ```
+
 ```json
 {
- "code": {
-    "coding": [{
-        "extension": {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-        "extension": [{
-            "url": "descriptionId",
-            "valueId": "37443015"
+    "code": {
+        "coding": [{
+            "extension": {
+                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [{
+                "url": "descriptionId",
+                "valueId": "37443015"
+            },
+            {
+                "url": "descriptionDisplay",
+                "valueString": "Heart attack"
+            }
+        ]
         },
-        {
-            "url": "descriptionDisplay",
-            "valueString": "Heart attack"
-        }
-    ]
-    },
-    "code": "22298006",
-    "display": "Myocardial infarction",
-    "system": "http://snomed.info/sct",
-    "userSelected": "true"
-    }]
- }
+        "code": "22298006",
+        "display": "Myocardial infarction",
+        "system": "http://snomed.info/sct",
+        "userSelected": "true"
+        }]
+    }
 }
 ```

@@ -14,6 +14,8 @@
   filename: Profile--CareConnect-GPC-DocumentReference-1
 - name: 'Profile: CareConnect-GPC-Encounter-1'
   filename: Profile--CareConnect-GPC-Encounter-1
+- name: 'Profile: CareConnect-Flag-1'
+  filename: Profile-CareConnect-Flag-1
 - name: 'Profile: CareConnect-GPC-Immunization-1'
   filename: Profile--CareConnect-GPC-Immunization-1
 - name: 'Profile: CareConnect-GPC-List-1'

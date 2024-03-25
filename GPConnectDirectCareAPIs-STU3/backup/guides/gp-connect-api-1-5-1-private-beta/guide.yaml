@@ -1,5 +1,5 @@
-title: GP Connect - Access Record (Structured)
-description: Part of the GP Connect API
-version: 1.5.0-private-beta
+title: '[WIP] GP Connect - Access Record Structured'
+description: GP Connect - Access Record Structured (STU3) Implementation Guide
+version: 1.6.2
 style-root: project
 style-name: NHSDigital

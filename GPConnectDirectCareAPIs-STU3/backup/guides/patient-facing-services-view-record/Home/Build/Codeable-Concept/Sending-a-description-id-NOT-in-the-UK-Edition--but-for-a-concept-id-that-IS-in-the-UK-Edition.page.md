@@ -22,26 +22,31 @@ Includes the case where the description id is locally declared to be the preferr
     </coding>
 </code>
 ```
+
 ```json
 {
- "code": {
+  "code": {
     "coding": {
-        "extension": [{
-            "url":
-            "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-            "extension": [{
-            "url": "descriptionId",
-            "valueId": "787121000006116"
-            }, {
-            "url": "descriptionDisplay",
-            "valueString": "Ideal weight"
-            }]
-        }],
-        "code": "170804003",
-        "display": "Ideal body weight",
-        "system": "http://snomed.info/sct",
-        "userSelected": "true"
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+          "extension": [
+            {
+              "url": "descriptionId",
+              "valueId": "787121000006116"
+            },
+            {
+              "url": "descriptionDisplay",
+              "valueString": "Ideal weight"
+            }
+          ]
+        }
+      ],
+      "code": "170804003",
+      "display": "Ideal body weight",
+      "system": "http://snomed.info/sct",
+      "userSelected": "true"
     }
- }
+  }
 }
 ```

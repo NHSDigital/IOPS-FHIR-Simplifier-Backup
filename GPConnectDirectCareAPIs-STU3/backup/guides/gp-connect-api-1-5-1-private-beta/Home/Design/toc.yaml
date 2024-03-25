@@ -1,7 +1,11 @@
 - name: API design principles
   filename: API-design-principles
-- name: Development principles
-  filename: Development-principles
+- name: Allergies Guidance
+  filename: Allergies-Guidance
+- name: Medication and medical device resource relationships
+  filename: Medication-and-medical-device-resource-relationships
+- name: Medications and medical device guidance
+  filename: Medications-and-medical-device-guidance
 - name: Immunisations Guidance
   filename: Immunisations-Guidance
 - name: Uncategorised data guidance
@@ -18,10 +22,6 @@
   filename: Documents-Guidance
 - name: Diary entry guidance
   filename: Diary-entry-guidance
-- name: Allergies Guidance
-  filename: Allergies-Guidance
-- name: Medications and medical device guidance
-  filename: Medications-and-medical-device-guidance
 - name: Information governance principles
   filename: Information-governance-principles
 - name: Specification versioning

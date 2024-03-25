@@ -6,6 +6,7 @@ by a user is then associated with an appropriate degrade code. For example, a dr
 code that is not understood will be associated with a code for ‘Degraded drug allergy’.
 
 ### Why and how does it happen?
+
 When clinical codes move between systems sometimes the receiving system may not
 understand all the clinical codes that it was sent. This can be for a number of reasons:
 - The receiving system may use a different terminology than the sending system. An
@@ -26,6 +27,7 @@ above are some of the most common reasons. Here they are intended to illustrate 
 degrades happen but are not intended to be an exhaustive list.
 
 ### Why do we need a process to deal with it?
+
 Where codes are not understood by clinical systems, having a degrade process enables us
 to improve interoperability and related functionality. Having appropriate degrade codes
 enables us to retain the structure and semantics. For example, degraded allergies appear in
@@ -39,6 +41,7 @@ medication degrade code, the information can be displayed alongside all other
 medications in the clinical system.
 
 ### What do degrades look like?
+
 Where items are degraded, how they appear can vary depending on how a clinical system
 chooses to display them to a user. In many cases, depending on whether the actual code is
 displayed to the user, the degrade may appear to be similar to any code natively added in a
@@ -48,31 +51,36 @@ When they are then exported into a FHIR resource they will be exported as a degr
 with the text originally entered by the user in the code.text element.
 
 ### FHIR message examples
+
 Example of a degraded medication:
 ```json
 {
- "code": {
-    "coding": [{
+  "code": {
+    "coding": [
+      {
         "display": "Transfer-degraded medication entry",
         "code": "196421000000109",
         "system": "http://snomed.info/sct"
-    }],
+      }
+    ],
     "text": "Aspirin 75mg dispersible tablet"
-    }
+  }
 }
 ```
 
 Example of a degraded drug allergy:
 ```json
 {
-    "code": {
-        "coding": [{
-            "display": "Transfer-degraded drug allergy",
-            "code": "196461000000101",
-            "system": "http://snomed.info/sct"
-        }],
-        "text": "Amoxicillin 250mg capsules"
-    }
+  "code": {
+    "coding": [
+      {
+        "display": "Transfer-degraded drug allergy",
+        "code": "196461000000101",
+        "system": "http://snomed.info/sct"
+      }
+    ],
+    "text": "Amoxicillin 250mg capsules"
+  }
 }
 ```
 

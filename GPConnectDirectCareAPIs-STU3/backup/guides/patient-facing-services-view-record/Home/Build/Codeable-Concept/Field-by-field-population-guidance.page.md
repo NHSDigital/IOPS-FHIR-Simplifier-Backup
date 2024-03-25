@@ -109,7 +109,7 @@
             If the text displayed to the user when they entered the code on the
             system is not lexically identical to the term of the code then the
             displayed text must be populated here.
-            <b>Note: This occurs when either the original entry was not coded
+            <br><b>Note: This occurs when either the original entry was not coded
             or the original coding has been lost.</b></td>
         </tr>
     </tbody>
