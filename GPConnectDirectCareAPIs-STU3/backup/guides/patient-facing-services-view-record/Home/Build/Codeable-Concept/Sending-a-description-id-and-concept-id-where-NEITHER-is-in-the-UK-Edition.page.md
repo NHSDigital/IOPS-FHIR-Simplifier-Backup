@@ -24,30 +24,30 @@
     <!-- what the user saw on screen, from a data entry template -->
 </code>
 ```
+
 ```json
 {
-"code": {
+  "code": {
     "coding": {
-    "extension": {
-        "url":
-        "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+      "extension": {
+        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
         "extension": [
-        {
-        "url": "descriptionId",
-        "valueId": "253790221000087110"
-        },
-        {
-        "url": "descriptionDisplay",
-        "valueString": "Use of illicit drugs unknown"
-        }
+          {
+            "url": "descriptionId",
+            "valueId": "253790221000087110"
+          },
+          {
+            "url": "descriptionDisplay",
+            "valueString": "Use of illicit drugs unknown"
+          }
         ]
-    },
-    "code": "186782131000087106",
-    "display": "Use of illicit type drug unknown",
-    "system": "http://snomed.info/sct",
-    "userSelected": "true"
+      },
+      "code": "186782131000087106",
+      "display": "Use of illicit type drug unknown",
+      "system": "http://snomed.info/sct",
+      "userSelected": "true"
     },
     "text": " Not known whether uses illicit drugs"
-    }
+  }
 }
 ```

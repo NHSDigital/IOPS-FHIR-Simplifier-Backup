@@ -1,4 +1,10 @@
-- name: 'Profile: CareConnect-Patient-1'
-  filename: Profile--CareConnect-Patient-1
-- name: 'Profile: CareConnect-GPC-Immunization-1'
-  filename: Profile--CareConnect-GPC-Immunization-1
+- name: Index
+  filename: Index.page.md
+- name: Extensions
+  filename: Extensions
+- name: Code systems
+  filename: Code-systems
+- name: Value sets
+  filename: Value-sets
+- name: Profiles
+  filename: Profiles

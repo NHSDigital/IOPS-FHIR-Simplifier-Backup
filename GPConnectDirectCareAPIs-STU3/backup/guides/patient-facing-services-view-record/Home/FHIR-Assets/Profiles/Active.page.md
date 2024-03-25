@@ -7,6 +7,7 @@
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-DiagnosticReport-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-DocumentReference-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Encounter-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-CareConnect-Flag-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Immunization-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-List-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Location-1}}

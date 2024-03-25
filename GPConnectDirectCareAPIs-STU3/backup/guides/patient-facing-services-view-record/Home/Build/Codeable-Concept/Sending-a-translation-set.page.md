@@ -9,116 +9,123 @@ Exceptionally, mappings may correspond to a SNOMED CT concept id only and so no 
 
 ```xml
 <code>
- <coding>
-    <code value="44I4.00"/>
-    <display value="Serum potassium"/>
-    <system value="http://read.info/readv2"/>
-    <userSelected value="true"/>
-    <!--flags the coding originally actually selected by the user -->
-  </coding>
-  <coding>
-    <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extensioncoding-sctdescid">
-        <extension url="descriptionId">
-        <valueId value="2573011000000117"/>
-        </extension>
-    </extension>
-    <system value="http://snomed.info/sct"/>
-    <code value="1000651000000109”/>
-    <display value="Serum potassium level"/>
- </coding>
- <text>Serum potassium</text>
+   <coding>
+      <code value="44I4.00"/>
+      <display value="Serum potassium"/>
+      <system value="http://read.info/readv2"/>
+      <userSelected value="true"/>
+      <!--flags the coding originally actually selected by the user -->
+   </coding>
+   <coding>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extensioncoding-sctdescid">
+         <extension url="descriptionId">
+         <valueId value="2573011000000117"/>
+         </extension>
+      </extension>
+      <system value="http://snomed.info/sct"/>
+      <code value="1000651000000109”/>
+      <display value="Serum potassium level"/>
+   </coding>
+   <text>Serum potassium</text>
  <!-- what the user saw on screen, from a data entry template -->
 </code>
 ```
+
 ```json
 {
- "code": {
-    "coding": [{
-        "extension": [{
-        "url":
-        "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-        "extension": [{
-        "url": "descriptionId",
-        "valueId": "2573011000000117"
-        }]
-        }],
-        }
-    ],
-    "code": "44I4.00",
-    "display": "Serum potassium",
-    "system": "http://read.info/readv2",
-    "userSelected": "true"
-    },
-    {
-    "system": "http://snomed.info/sct",
-    "code": "1000651000000109"
-    "display": "Serum potassium level",
-    "text": "Serum potassium"
- }
+  "code": {
+    "coding": [
+      {
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "2573011000000117"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "44I4.00",
+        "display": "Serum potassium",
+        "system": "http://read.info/readv2",
+        "userSelected": "true"
+      }
+    ]
+  }
 }
 ```
 
 ```xml
 <code>
- <coding>
-    <code value="B76..14"/> <!— term code = 14 ie not V2 Preferred term -->
-    <display value="Mole of skin"/> <!— text for V2 term code = 14 -->
-    <system value="http://read.info/readv2"/>
-    <userSelected value="true"/> <!-- coding actually selected by user -->
- </coding>
- <coding>
-    <code value="X78Uv"/> <!— no term code, so CTV3 PT is implied? -->
-    <display value="Benign melanocytic naevus of skin"/> <!— text of V3 PT -->
-    <system value="http://read.info/ctv3"/>
- </coding>
- <coding>
-    <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extensioncoding-sctdescid">
-        <extension url="descriptionId">
-        <valueId value="1787065011"/> <!— not the SNOMED PT -->
-        </extension>
-        <extension url="descriptionDisplay">
-        <valueString value="Mole of skin"/> <!— text for id = 1787065011 -->
-        </extension>
-    </extension>
-    <system value="http://snomed.info/sct"/>
-    <code value="400010006”/> <!— SNOMED conceptId -->
-    <display value="Melanocytic naevus of skin"/> <!— text of SNOMED PT -->
- </coding>
- <text>Moles</text> <!-- what user saw on screen, from data entry template -->
+   <coding>
+      <code value="B76..14"/> <!— term code = 14 ie not V2 Preferred term -->
+      <display value="Mole of skin"/> <!— text for V2 term code = 14 -->
+      <system value="http://read.info/readv2"/>
+      <userSelected value="true"/> <!-- coding actually selected by user -->
+   </coding>
+   <coding>
+      <code value="X78Uv"/> <!— no term code, so CTV3 PT is implied? -->
+      <display value="Benign melanocytic naevus of skin"/> <!— text of V3 PT -->
+      <system value="http://read.info/ctv3"/>
+   </coding>
+   <coding>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extensioncoding-sctdescid">
+         <extension url="descriptionId">
+         <valueId value="1787065011"/> <!— not the SNOMED PT -->
+         </extension>
+         <extension url="descriptionDisplay">
+         <valueString value="Mole of skin"/> <!— text for id = 1787065011 -->
+         </extension>
+      </extension>
+      <system value="http://snomed.info/sct"/>
+      <code value="400010006”/> <!— SNOMED conceptId -->
+      <display value="Melanocytic naevus of skin"/> <!— text of SNOMED PT -->
+   </coding>
+   <text>Moles</text> <!-- what user saw on screen, from data entry template -->
 </code>
 ```
+
 ```json
 {
- "code": {
-    "coding": [{
+  "code": {
+    "coding": [
+      {
         "code": "B76..14",
         "display": "Mole of skin",
         "system": "http://read.info/readv2",
         "userSelected": "true"
-        },
-        {
+      },
+      {
         "code": "X78Uv",
         "display": "Benign melanocytic naevus of skin",
-        "system": "http://read.info/ctv3",
-        },
-        {
+        "system": "http://read.info/ctv3"
+      },
+      {
         "system": "http://snomed.info/sct",
-        "code": "400010006"
+        "code": "400010006",
         "display": " Melanocytic naevus of skin",
-        "extension": [{
-            "url":
-            "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-            "extension": [{
-            "url": "descriptionId",
-            "valueId": "1787065011" },
-            {
-            "url": "descriptionDisplay",
-            "valueString": "Mole of skin"
-            }]
-        }],
-        }
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "1787065011"
+              },
+              {
+                "url": "descriptionDisplay",
+                "valueString": "Mole of skin"
+              }
+            ]
+          }
+        ]
+      }
     ],
     "text": "Moles"
- }
+  }
 }
 ```

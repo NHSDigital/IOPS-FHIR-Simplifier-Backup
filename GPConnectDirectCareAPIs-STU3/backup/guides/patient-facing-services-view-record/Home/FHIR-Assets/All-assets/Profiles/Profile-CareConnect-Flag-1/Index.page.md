@@ -14,10 +14,10 @@
   <!-- Tab panes -->
   <div class="tab-content snippet nhsd-!t-margin-bottom-6">
     <div role="tabpanel" class="tab-pane active" id="profile-1">
-        {{tree:https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1}}
+        {{tree:https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1}}
     </div>
     <div role="tabpanel" class="tab-pane" id="dictionary-1">
-        {{dict:https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1}} 
+        {{dict:https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1}}
     </div>
   </div>
 </div>

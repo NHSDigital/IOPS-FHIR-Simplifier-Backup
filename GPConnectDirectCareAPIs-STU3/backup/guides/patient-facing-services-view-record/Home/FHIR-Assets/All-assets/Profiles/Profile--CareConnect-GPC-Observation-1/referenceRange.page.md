@@ -47,4 +47,41 @@ The reference range provides a guide for interpretation of the results.
 </referenceRange>
 ```
 
+<h5><ins>Example - low and high with value and unit</ins></h5>
+
+```xml
+<referenceRange>
+    <low>
+        <value value="2" />
+        <unit value="micromole per liter" />
+    </low>
+    <high>
+        <value value="5" />
+        <unit value="micromole per liter" />
+    </high>
+</referenceRange>
+```
+
+<h5><ins>Example - high only, with value and unit</ins></h5>
+
+```xml
+<referenceRange>
+    <high>
+        <value value="5" />
+        <code value="U/L" />
+    </high>
+</referenceRange>
+```
+
+<h5><ins>Example - text only</ins></h5>
+
+```xml
+<referenceRange>
+    <text>
+        <value value="< 200.000 mg/L" />
+    </text>
+</referenceRange>
+```
+
+
 ---

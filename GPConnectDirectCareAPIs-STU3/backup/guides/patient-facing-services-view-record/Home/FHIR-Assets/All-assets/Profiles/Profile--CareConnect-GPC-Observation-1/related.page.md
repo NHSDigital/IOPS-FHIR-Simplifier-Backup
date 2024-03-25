@@ -10,19 +10,19 @@
 
 Reference(s) to the test result(s) observation(s) that make up the test group.
 
-This **MUST** be qualified using the related.type ‘has-member’.
+This **MUST** be qualified using the related.type `has-member`.
 
 ### Individual Test Result
 
 Reference to the test group header observation if the result is part of a test group.
 
-This **MUST** be qualified using the related.type ‘derived-from’.
+This **MUST** be qualified using the related.type `derived-from`.
 
 ### Filing Comments
 
 Reference to the test result or test group header that the filing comments resource relates to. Where the filing comments relate to the test report, the reference is made from the ‘Test report’ to the filing comment only.
 
-This **MUST** be qualified using the related.type ‘derived-from’.
+This **MUST** be qualified using the related.type `derived-from`.
 
 ### Observations
 

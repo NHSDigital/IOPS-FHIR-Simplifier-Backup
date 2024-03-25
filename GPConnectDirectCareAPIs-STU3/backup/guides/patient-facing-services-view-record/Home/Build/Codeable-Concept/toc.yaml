@@ -22,6 +22,8 @@
   filename: Sending-a-description-id-NOT-in-the-UK-Edition--but-for-a-concept-id-that-IS-in-the-UK-Edition.page.md
 - name: Sending a description id and concept id where NEITHER is in the UK Edition
   filename: Sending-a-description-id-and-concept-id-where-NEITHER-is-in-the-UK-Edition.page.md
+- name: Processing data from a CodeableConcept
+  filename: Processing-data-from-a-CodeableConcept.page.md
 - name: Degradation
   filename: Degradation.page.md
 - name: Clinical codes

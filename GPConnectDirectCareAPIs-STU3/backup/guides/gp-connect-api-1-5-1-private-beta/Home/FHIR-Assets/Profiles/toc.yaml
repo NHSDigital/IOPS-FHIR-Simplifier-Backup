@@ -1,0 +1,7 @@
+
+- name: Index
+  filename: Index.page.md
+- name: 'Profile: CareConnect-GPC-AllergyIntolerance-1'
+  filename: Profile-CareConnect-GPC-AllergyIntolerance-1
+- name: 'Profile: CareConnect-GPC-Medication-1'
+  filename: Profile-CareConnect-GPC-Medication-1
