@@ -1,0 +1,12 @@
+- name: 'ValueSet: GPConnect-DeliveryChannel-1'
+  filename: ValueSet-GPConnect-DeliveryChannel-1
+- name: 'ValueSet: GPConnect-OrganisationType-1'
+  filename: ValueSet-GPConnect-OrganisationType-1
+- name: 'ValueSet: GPConnect-ParticipantType-1'
+  filename: ValueSet-GPConnect-ParticipantType-1
+- name: 'ValueSet: GPConnect-PractitionerRole-1'
+  filename: ValueSet-GPConnect-PractitionerRole-1
+- name: 'ValueSet: GPConnect-ReferralUrgency-1'
+  filename: ValueSet-GPConnect-ReferralUrgency-1
+- name: 'ValueSet: GPConnect-RequestPriority-1'
+  filename: ValueSet-GPConnect-RequestPriority-1

@@ -1,0 +1,72 @@
+- name: 'Profile: CareConnect-GPC-AllergyIntolerance-1'
+  filename: Profile-CareConnect-GPC-AllergyIntolerance-1
+- name: 'Profile: CareConnect-GPC-Appointment-1'
+  filename: Profile-CareConnect-GPC-Appointment-1
+- name: 'Profile: CareConnect-GPC-ClinicalImpression-1'
+  filename: Profile-CareConnect-GPC-ClinicalImpression-1
+- name: 'Profile: CareConnect-GPC-Composition-1'
+  filename: Profile-CareConnect-GPC-Composition-1
+- name: 'Profile: CareConnect-GPC-Condition-1'
+  filename: Profile-CareConnect-GPC-Condition-1
+- name: 'Profile: CareConnect-GPC-DiagnosticReport-1'
+  filename: Profile-CareConnect-GPC-DiagnosticReport-1
+- name: 'Profile: CareConnect-GPC-DocumentReference-1'
+  filename: Profile-CareConnect-GPC-DocumentReference-1
+- name: 'Profile: CareConnect-GPC-Encounter-1'
+  filename: Profile-CareConnect-GPC-Encounter-1
+- name: 'Profile: CareConnect-Flag-1'
+  filename: Profile-CareConnect-Flag-1
+- name: 'Profile: CareConnect-GPC-Immunization-1'
+  filename: Profile-CareConnect-GPC-Immunization-1
+- name: 'Profile: CareConnect-GPC-List-1'
+  filename: Profile-CareConnect-GPC-List-1
+- name: 'Profile: CareConnect-GPC-Location-1'
+  filename: Profile-CareConnect-GPC-Location-1
+- name: 'Profile: CareConnect-GPC-Medication-1'
+  filename: Profile-CareConnect-GPC-Medication-1
+- name: 'Profile: CareConnect-GPC-MedicationDispense-1'
+  filename: Profile-CareConnect-GPC-MedicationDispense-1
+- name: 'Profile: CareConnect-GPC-MedicationRequest-1'
+  filename: Profile-CareConnect-GPC-MedicationRequest-1
+- name: 'Profile: CareConnect-GPC-MedicationStatement-1'
+  filename: Profile-CareConnect-GPC-MedicationStatement-1
+- name: 'Profile: CareConnect-GPC-Observation-1'
+  filename: Profile-CareConnect-GPC-Observation-1
+- name: 'Profile: CareConnect-GPC-Organization-1'
+  filename: Profile-CareConnect-GPC-Organization-1
+- name: 'Profile: CareConnect-GPC-Patient-1'
+  filename: Profile-CareConnect-GPC-Patient-1
+- name: 'Profile: CareConnect-GPC-Practitioner-1'
+  filename: Profile-CareConnect-GPC-Practitioner-1
+- name: 'Profile: CareConnect-GPC-PractitionerRole-1'
+  filename: Profile-CareConnect-GPC-PractitionerRole-1
+- name: 'Profile: CareConnect-GPC-ProblemHeader-Condition-1'
+  filename: Profile-CareConnect-GPC-ProblemHeader-Condition-1
+- name: 'Profile: CareConnect-GPC-ProcedureRequest-1'
+  filename: Profile-CareConnect-GPC-ProcedureRequest-1
+- name: 'Profile: CareConnect-GPC-ReferralRequest-1'
+  filename: Profile-CareConnect-GPC-ReferralRequest-1
+- name: 'Profile: CareConnect-GPC-Specimen-1'
+  filename: Profile-CareConnect-GPC-Specimen-1
+- name: 'Profile: GPConnect-Appointment-1'
+  filename: Profile-GPConnect-Appointment-1
+- name: 'Profile: GPConnect-Device-1'
+  filename: Profile-GPConnect-Device-1
+- name: 'Profile: GPConnect-OperationOutcome-1'
+  filename: Profile-GPConnect-OperationOutcome-1
+- name: 'Profile: GPConnect-Schedule-1'
+  filename: Profile-GPConnect-Schedule-1
+- name: 'Profile: GPConnect-Searchset-Bundle-1'
+  filename: Profile-GPConnect-Searchset-Bundle-1
+- name: 'Profile: GPConnect-Slot-1'
+  filename: Profile-GPConnect-Slot-1
+- name: 'Profile: GPConnect-StructuredRecord-Bundle-1'
+  filename: Profile-GPConnect-StructuredRecord-Bundle-1
+- name: 'Profile: GPConnect-Task-1'
+  filename: Profile-GPConnect-Task-1
+- name: 'Profile: Binary'
+  filename: Profile-Binary
+- name: 'Profile: CareConnect-HealthcareService-1'
+  filename: Profile-CareConnect-HealthcareService-1
+- name: 'Profile: CareConnect-CarePlan-1'
+  filename: Profile-CareConnect-CarePlan-1

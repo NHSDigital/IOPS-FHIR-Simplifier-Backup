@@ -1,0 +1,10 @@
+- name: 'CodeSystem: GPConnect-SecondaryListValues-1'
+  filename: CodeSystem-GPConnect-SecondaryListValues-1
+- name: 'CodeSystem: GPConnect-DeliveryChannel-1'
+  filename: CodeSystem-GPConnect-DeliveryChannel-1
+- name: 'CodeSystem: GPConnect-OrganisationType-1'
+  filename: CodeSystem-GPConnect-OrganisationType-1
+- name: 'CodeSystem: GPConnect-ParticipantType-1'
+  filename: CodeSystem-GPConnect-ParticipantType-1
+- name: 'CodeSystem: GPConnect-ReferralUrgency-1'
+  filename: CodeSystem-GPConnect-ReferralUrgency-1

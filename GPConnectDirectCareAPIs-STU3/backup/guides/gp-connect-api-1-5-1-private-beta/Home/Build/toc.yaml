@@ -8,6 +8,8 @@
   filename: Linkages
 - name: Search
   filename: Search
+- name: Multi area searches
+  filename: Multi-area-searches
 - name: Error handling
   filename: Error-handling
 - name: Access Record Structured
