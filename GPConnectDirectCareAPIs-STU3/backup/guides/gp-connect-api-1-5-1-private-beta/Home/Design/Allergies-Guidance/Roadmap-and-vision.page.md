@@ -15,6 +15,3 @@ The <code class="highlighter-rouge">AllergyIntolerance</code> resource adopts co
 <p>It is recognised that current support for the full range of severity qualifiers is limited and variable across systems, and existing support for the full range of date concepts will also be limited.</p>
 
 <p>It is also recognised that there will be interim challenges in mapping existing allergy and intolerance record structures to the <code class="highlighter-rouge">AllergyIntolerance</code> resource. In some systems, allergy and intolerance information may be a post-coordinated triple of allergy code, reaction/manifestation code and causative agent code. In other systems, a single pre-coordinated code serves to describe the allergy/intolerance concept and the causative agent. In the former case, the <code class="highlighter-rouge">AllergyIntolerance</code> resource may not fully support the three coded concepts and in the latter case, there is currently no distinct identification of causative agent and reaction/manifestation.</p>
-
-
-

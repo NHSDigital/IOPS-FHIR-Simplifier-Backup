@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Open API
+  filename: Open-API.page.md
+- name: Architectural design principles
+  filename: Architectural-design-principles.page.md

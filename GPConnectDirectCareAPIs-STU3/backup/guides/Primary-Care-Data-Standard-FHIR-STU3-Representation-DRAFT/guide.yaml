@@ -1,0 +1,5 @@
+title: Primary Care Data Standard | FHIR STU3 Representation | DRAFT
+description: The GP Connect data model represented as FHIR STU3 (CareConnect)
+version: 1.0.0
+style-root: project
+style-name: NHSDigital

@@ -2,3 +2,23 @@
   filename: Example-Immunisation
 - name: GP Connect Demonstrator
   filename: GP-Connect-Demonstrator
+- name: Search examples
+  filename: Search-examples
+- name: Allergy examples
+  filename: Allergy-examples
+- name: Medication examples
+  filename: Medication-examples
+- name: Immunisation examples
+  filename: Immunisation-examples
+- name: Uncategorised data examples
+  filename: Uncategorised-data-examples
+- name: Consultation examples
+  filename: Consultation-examples
+- name: Problem examples
+  filename: Problem-examples
+- name: Investigation examples
+  filename: Investigation-examples
+- name: Referral examples
+  filename: Referral-examples
+- name: Diary entry examples
+  filename: Diary-entry-examples
