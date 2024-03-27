@@ -1,0 +1,50 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="England-MCEDSignalResult" />
+  <url value="https://fhir.nhs.uk/England/ValueSet/England-MCEDSignalResult" />
+  <version value="0.0.1" />
+  <name value="EnglandMCEDSignalResult" />
+  <title value="England MCED Signal Result" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2024-02-27" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that define a whether a Multi-cancer early detection signal was detected or not. Selected from the SNOMED CT UK coding system:
+&#13; - 1854981000000108 | Multi-cancer early detection signal detected
+&#13; - 1854991000000105 | Multi-cancer early detection signal not detected" />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="constraint" />
+        <op value="=" />
+        <value value="1854981000000108 OR 1854991000000105" />
+      </filter>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="2043b0d3-b5fb-471e-850f-fd2f9aee36de" />
+    <timestamp value="2024-03-27T15:27:41+00:00" />
+    <total value="2" />
+    <offset value="0" />
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1854991000000105" />
+      <display value="Multi-cancer early detection signal not detected" />
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct" />
+      <code value="1854981000000108" />
+      <display value="Multi-cancer early detection signal detected" />
+    </contains>
+  </expansion>
+</ValueSet>

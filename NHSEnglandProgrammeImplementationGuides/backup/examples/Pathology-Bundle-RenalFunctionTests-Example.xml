@@ -38,6 +38,7 @@
         <focus>
           <reference value="urn:uuid:ffae5859-28df-4e7d-be91-6df56d8215f5" />
         </focus>
+        <definition value="https://fhir.nhs.uk/England/MessageDefinition/England-Pathology-Report" />
       </MessageHeader>
     </resource>
   </entry>
@@ -195,6 +196,13 @@
           <reference value="urn:uuid:8fcba023-12e9-4f22-94b6-03cab7c0777a" />
         </basedOn>
         <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+            <code value="LAB" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
         <code>
           <coding>
             <system value="http://snomed.info/sct" />

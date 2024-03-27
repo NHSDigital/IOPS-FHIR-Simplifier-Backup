@@ -1,7 +1,7 @@
 ---
 topic: R4DiagnosticReport
 ---
-## R4 Profile: UKCore-DiagnosticReport-Lab
+## Profile: UKCore-DiagnosticReport-Lab
 
 ### Summary
 A test report, containing the overall findings and clinical interpretation relating to one or more pathology tests. The report may reference individual test results, test groups or a combination of these.

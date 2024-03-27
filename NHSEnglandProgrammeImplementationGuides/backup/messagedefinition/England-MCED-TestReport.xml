@@ -26,7 +26,7 @@
   <category value="notification" />
   <focus>
     <code value="Organization" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-MCED" />
     <min value="1" />
     <max value="*" />
   </focus>
@@ -38,31 +38,31 @@
   </focus>
   <focus>
     <code value="Patient" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Patient-MCED" />
     <min value="1" />
     <max value="1" />
   </focus>
   <focus>
     <code value="ServiceRequest" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-ServiceRequestLab-MCED" />
     <min value="1" />
     <max value="1" />
   </focus>
   <focus>
     <code value="DiagnosticReport" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReport-MCED" />
     <min value="1" />
     <max value="1" />
   </focus>
   <focus>
     <code value="Observation" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED" />
     <min value="0" />
     <max value="*" />
   </focus>
   <focus>
     <code value="Specimen" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Specimen-MCED" />
     <min value="1" />
     <max value="1" />
   </focus>

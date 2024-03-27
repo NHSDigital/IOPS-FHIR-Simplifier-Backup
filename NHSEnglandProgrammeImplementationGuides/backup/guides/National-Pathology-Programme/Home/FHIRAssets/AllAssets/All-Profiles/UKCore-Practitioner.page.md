@@ -1,7 +1,7 @@
 ---
 topic: R4Practitioner
 ---
-## R4 Profile: UKCore-Practitioner
+## Profile: UKCore-Practitioner
 
 ### Summary
 Used to represent the following (where applicable):

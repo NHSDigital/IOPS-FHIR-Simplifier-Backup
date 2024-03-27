@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="England-DiagnosticReport-MCED" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReport-MCED" />
+  <version value="0.0.1" />
+  <name value="EnglandDiagnosticReportMCED" />
+  <title value="England Diagnostic Report MCED" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2024-03-19" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A MCED Profile for validation purposes only. This profile shows the minimum vaible product" />
+  <purpose value="This profile is made available to assist implementers who are creating and sending DiagnosticReport-Lab FHIR instances to test that the created instances conform to the MCED FHIR implementation guide. It may also assist receivers testing that received instances are conformant with the MCED FHIR implementation guide." />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DiagnosticReport.code.coding.system">
+      <path value="DiagnosticReport.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="DiagnosticReport.code.coding.code">
+      <path value="DiagnosticReport.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="721981007" />
+    </element>
+    <element id="DiagnosticReport.code.coding.display">
+      <path value="DiagnosticReport.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Diagnostic studies report" />
+    </element>
+    <element id="DiagnosticReport.issued">
+      <path value="DiagnosticReport.issued" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.conclusion">
+      <path value="DiagnosticReport.conclusion" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.presentedForm">
+      <path value="DiagnosticReport.presentedForm" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="DiagnosticReport.presentedForm.data">
+      <path value="DiagnosticReport.presentedForm.data" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
