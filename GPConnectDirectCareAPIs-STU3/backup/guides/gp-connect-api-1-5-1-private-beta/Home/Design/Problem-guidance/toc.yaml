@@ -8,5 +8,11 @@
   filename: Linking-multiple-problems.page.md
 - name: Problems linking to out of scope clinical items
   filename: Problems-linking-to-out-of-scope-clinical-items.page.md
+- name: Problems linking to unsupported clinical items
+  filename: Problems-linking-to-unsupported-clinical-items.page.md
 - name: Problems containing confidential items
   filename: Problems-containing-confidential-items.page.md
+- name: Using Problem search parameters
+  filename: Using-Problem-search-parameters.page.md
+- name: Using the List resource for problem queries
+  filename: Using-the-List-resource-for-problem-queries.page.md

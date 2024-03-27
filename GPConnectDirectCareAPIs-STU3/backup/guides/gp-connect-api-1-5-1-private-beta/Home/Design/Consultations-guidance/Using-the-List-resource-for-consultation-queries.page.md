@@ -6,7 +6,6 @@ The `List` **MUST** be populated in line with the guidance on `List` resources.
 
 If the `List` is empty, then it **MUST** be returned where the `emptyReason.code` has the value of `no-content-recorded`, and the `List.note` element **MUST** be populated with the text "Information not available".
 
-
 ```xml
 <List>
     <emptyReason>

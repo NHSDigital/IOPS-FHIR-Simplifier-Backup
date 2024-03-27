@@ -13,12 +13,11 @@ A few of these are highlighted here.
 
 The provider **MUST** populate elements as described below when sending details of immunisations not given within the immunisation resource.
 
-
 - <code>extension[vaccinationProcedure]</code> <strong>MUST</strong> be the SNOMED CT ‘not done’ situation code for the vaccination which was intended but did not happen
 - <code>notGiven</code> <strong>MUST</strong> be <code>true</code>
 -  <code>explanation.reasonNotGiven</code> <strong>SHOULD</strong> be included with the appropriate code for the reason the vaccination did not happen
 
-see [immunization](https://developer.nhs.uk/apis/gpconnect-1-6-0/accessrecord_structured_development_immunization.html)
+See  [immunization](https://simplifier.net/guide/gpconnect-data-model/Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Immunization-1?version=current) for full details of the elements.
 
 <h3 id="consumer-handling-of-immunisations-not-given">Consumer handling of immunisations not given</h3>
 

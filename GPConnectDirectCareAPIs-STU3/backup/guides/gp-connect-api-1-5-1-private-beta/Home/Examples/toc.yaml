@@ -22,3 +22,5 @@
   filename: Referral-examples
 - name: Diary entry examples
   filename: Diary-entry-examples
+- name: Compatibility support examples
+  filename: Compatibility-support-examples

@@ -1,10 +1,10 @@
 ## {{page-title}}
 
-In the event of an error, provider systems **SHALL** respond by providing an OperationOutcome resource profiled to `GPConnect-OperationOutcome-1`.
+In the event of an error, provider systems **SHALL** respond by providing an OperationOutcome resource profiled to [GPConnect-OperationOutcome-1](https://simplifier.net/guide/gpconnect-data-model/Home/FHIR-Assets/All-assets/Profiles/Profile--GPConnect-OperationOutcome-1?version=current).
 
 The `GPConnect-OperationOutcome-1`:
 
-- **SHALL** contain a definition of severity in the `OperationOutcome.issue.severity` field providing a value from the v[alueset-issue-severity](http://hl7.org/fhir/STU3/valueset-issue-severity.html) value set. In all cases described in this guidance, the value used will be `error`.
+- **SHALL** contain a definition of severity in the `OperationOutcome.issue.severity` field providing a value from the [valueset-issue-severity](http://hl7.org/fhir/STU3/valueset-issue-severity.html) value set. In all cases described in this guidance, the value used will be `error`.
 
 - **SHALL** contain a definition of the type of error in the `OperationOutcome.issue.code` element, providing a value from the [issue-type](http://hl7.org/fhir/STU3/valueset-issue-type.html) value set.
 

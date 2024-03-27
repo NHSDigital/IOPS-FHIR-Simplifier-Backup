@@ -8,7 +8,7 @@
 
 The severity of the issue using a value from the Valueset [issue-severity](https://hl7.org/fhir/STU3/valueset-issue-severity.html).
 
-In all cases, as described in the [GP Connect error handling guidance](https://digital.nhs.uk/developer/api-catalogue/gp-connect-general-pages/error-handling) this will be `error`.
+In all cases, as described in the [GP Connect error handling guidance](https://simplifier.net/guide/gp-connect-access-record-structured/Home/Build/Error-handling?version=current) this will be `error`.
 
 <h5><ins>Example</ins></h5>
 

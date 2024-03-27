@@ -4,7 +4,9 @@ Depending on the GP Connect version supported by the provider system it can be p
 
 Where a provider system is not able to export a linked clinical item, it will create a `section.section.entry` (or `section.entry`) entry with the:
 
-- `List.entry.item.display` with the value of "[Clinical area] items are not supported by the provider system." - where \[Clinical area\] identifies the type of the clinical item that is not supported.
+- `List.entry.item.display` with the value of "[Clinical area] items are not supported by the provider system."
+
+        Where [Clinical area] identifies the type of the clinical item that is not supported.
 
 The example below shows references to two items, one for an observation, and the other for referrals that aren't supported by the provider system.
 
@@ -22,6 +24,19 @@ The example below shows references to two items, one for an observation, and the
         </entry>
     </section>
 </List>
+```
+
+```json
+{
+  "item": {
+    "reference": "Observation/6734572634"
+  }
+},
+{
+  "item": {
+    "display": "Referral items are not supported by the provider system"
+  }
+}
 ```
 
 ---

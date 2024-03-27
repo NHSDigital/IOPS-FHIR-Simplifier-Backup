@@ -1,24 +1,8 @@
 ## {{page-title}}
 
-Depending on the GP Connect version supported by the provider system, it can be possible for the problem to link to a clinical item that the provider system is not yet able to export with GP Connect. For example, if the problem contains a link to a referral record but the provider system does not yet support exporting referrals.
+The following items may be recorded in defined clinical areas which are supported by the provider but the clinical items are out of scope in this version of the specification
 
-Where a provider system is not able to export a linked clinical item, it will create a reference entry with the:
+- Complete diary entries
+- Test requests not part of investigation reports
 
-`Condition.extension:relatedClinicalContent.valueReference.display` should have the value: "[Clinical area] items are not supported by the provider system."
-
-Where [Clinical area] identifies the type of the clinical item that is not supported.
-
-The example below shows references to two items, one for an observation and another for referrals that aren’t supported by the provider system:
-
-```xml
-<extension>
-    <url value="http://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1" />
-    <valueReference value="observation-7634572634" />
-</extension>
-<extension>
-    <url value="http://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1" />
-    <valueReference>
-        <display value="Referral items are not supported by the provider system" />
-    </valueReference>
-</extension>
-```
+If these clinical items are linked to a problem, they will not be referenced in the provider response. An encounter reference **MUST** be included as a reference from the problem where applicable, as defined above, regardless of the absence of a reference to the clinical item.

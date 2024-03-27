@@ -8,10 +8,10 @@
   filename: Security-validation-errors.page.md
 - name: Duplicate errors
   filename: Duplicate-errors.page.md
-- name: Malformed request errors
-  filename: Malformed-request-errors.page.md
 - name: Resource validation errors
   filename: Resource-validation-errors.page.md
+- name: Malformed request errors
+  filename: Malformed-request-errors.page.md
 - name: Internal server errors
   filename: Internal-server-errors.page.md
 - name: Spine Secure Proxy (SSP) errors

@@ -2,36 +2,11 @@
 
 Where FHIR resource validation issues arise during processing of consumer requests, provider systems **SHALL** utilise one the following error details:
 
-<table class="nhsd-!t-margin-bottom-6">
-  <thead>
-    <tr>
-      <th data-no-sort>HTTP code</th>
-      <th data-no-sort>Issue type</th>
-      <th data-no-sort>Spine error code - code</th>
-      <th data-no-sort>Spine error code - display</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="highlighter-rouge">422</code></td>
-      <td>invalid</td>
-      <td>INVALID_RESOURCE</td>
-      <td>Submitted resource is not valid.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">422</code></td>
-      <td>invalid</td>
-      <td>INVALID_PARAMETER</td>
-      <td>Submitted parameter is not valid.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">422</code></td>
-      <td>invalid</td>
-      <td>REFERENCE_NOT_FOUND</td>
-      <td>Referenced resource not found.</td>
-    </tr>
-  </tbody>
-</table>
+|HTTP code|Issue type|Spine error code - code|Spine error code - display|
+|---|---|---|---|
+|`422`|invalid|INVALID_RESOURCE|Invalid validation of resource|
+|`422`|invalid|INVALID_PARAMETER|Invalid parameter|
+|`422`|invalid|REFERENCE_NOT_FOUND|Reference not found|
 
 Detailed diagnostic information **MUST** be supplied when erroring on the codes above.
 
@@ -54,7 +29,7 @@ REFERENCE_NOT_FOUND describes a scenario where a consumer POSTs a FHIR resource 
 ### Example: Reference not found
 For example, when using the ‘Book an appointment’ API use case, a consumer includes a reference to a slot which does not exist at the server. The following error details would be returned:
 
-```xml
+```json
 {
   "resourceType": "OperationOutcome",
   "meta": {
