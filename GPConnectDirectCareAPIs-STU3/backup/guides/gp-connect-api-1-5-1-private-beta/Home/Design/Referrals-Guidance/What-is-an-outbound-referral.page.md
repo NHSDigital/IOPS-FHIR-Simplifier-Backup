@@ -10,4 +10,4 @@ A referral may be considered as a detailed document containing relevant medical 
 As this profile is a record of the event of the referral, it does not itself contain such clinical background for the patient being referred. 
 This profile may reference some clinical information, for example via a linked problem or consultation, but consumers should be aware that it may be necessary to access other parts of the clinical record to obtain the full clinical context.
 
-<p>Inbound referrals are to be returned as <a href="https://simplifier.net/guide/gp-connect-access-record-structured/Home/Design/Uncategorised-data-guidance?version=current">uncategorised data</a>.</p>
+Inbound referrals are to be returned as {{pagelink:Home/Design/Uncategorised-data-guidance}}.

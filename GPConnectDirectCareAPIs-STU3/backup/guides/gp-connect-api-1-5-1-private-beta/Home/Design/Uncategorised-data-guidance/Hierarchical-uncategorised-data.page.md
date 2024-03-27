@@ -23,7 +23,7 @@ For example:
     </tbody>
 </table>
 
-Where this occurs, the data is supplied in a format where the hierarchical information is made available to the consumer system if they want to rebuild the hierarchical structure or if not they can consume each of the resources individually flattening out the structure if it is not of benefit to their users
+Where this occurs, the data is supplied in a format where the hierarchical information is made available to the consumer system if they want to rebuild the hierarchical structure or if not they can consume each of the resources individually flattening out the structure if it is not of benefit to their users.
 
 ### Modelling
 

@@ -2,56 +2,21 @@
 
 When the Spine Secure Proxy cannot or will not process a request then one of the following errors are used to return debug details:
 
-<table class="nhsd-!t-margin-bottom-6">
-  <thead>
-    <tr>
-      <th data-no-sort>HTTP code</th>
-      <th data-no-sort>Issue type</th>
-      <th data-no-sort>Description of error</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>400</code></td>
-      <td>invalid</td>
-      <td>Target URL varies from endpoint registered in SDS</td>
-    </tr>
-    <tr>
-      <td><code>403</code></td>
-      <td>forbidden</td>
-      <td>Sender ASID is not authorised for this interaction</td>
-    </tr>
-    <tr>
-      <td><code>403</code></td>
-      <td>forbidden</td>
-      <td>Receiver ASID is not authorised for this interaction</td>
-    </tr>
-    <tr>
-      <td><code>403</code></td>
-      <td>forbidden</td>
-      <td>Sender ASID is not authorised to send the interaction to receiver ASID</td>
-    </tr>
-    <tr>
-      <td><code>405</code></td>
-      <td>not-supported</td>
-      <td>Method not allowed</td>
-    </tr>
-    <tr>
-      <td><code>415</code></td>
-      <td>not-supported</td>
-      <td>Unsupported media type</td>
-    </tr>
-    <tr>
-      <td><code>502</code></td>
-      <td>transient</td>
-      <td>Error communicating to target URL</td>
-    </tr>
-  </tbody>
-</table>
+|HTTP code|Issue type|Description of error|
+|---|---|---|
+|`400`|invalid|Target URL varies from endpoint registered in SDS|
+|`403`|forbidden|Sender ASID is not authorised for this interaction|
+|`403`|forbidden|Receiver ASID is not authorised for this interaction|
+|`403`|forbidden|Sender ASID is not authorised to send the interaction to receiver ASID|
+|`405`|not-supported|Method not allowed|
+|`415`|not-supported|Unsupported media type|
+|`502`|transient|Error communicating to target URL|
+
+---
 
 ### SSP error example: Target URL varies from endpoint registered in SDS
 
-```xml
+```json
 {
     "resourceType": "OperationOutcome", 
     "id": "09a01679-2564-0fb4-5129-aecc81ea2706",
@@ -76,7 +41,7 @@ When the Spine Secure Proxy cannot or will not process a request then one of the
 
 ### SSP error example: Sender ASID is not authorised for this interaction
 
-```xml
+```json
 {
     "resourceType": "OperationOutcome",
     "id": "10960df2-29d1-4e71-823c-c0bb9d723012",
@@ -101,7 +66,7 @@ When the Spine Secure Proxy cannot or will not process a request then one of the
 
 ### SSP error example: Receiver ASID is not authorised for this interaction
 
-```xml
+```json
 {
     "resourceType": "OperationOutcome",
     "id": "018C2550-358F-4F68-BE19-88C80A859E0A",
@@ -126,7 +91,7 @@ When the Spine Secure Proxy cannot or will not process a request then one of the
 
 ### SSP error example: Sender ASID is not authorised to send the interaction to receiver ASID
 
-```xml
+```json
 {
     "resourceType": "OperationOutcome",
     "id": "43A8BB0D-195E-4CF4-86F9-E8514F6EB585",
@@ -151,7 +116,7 @@ When the Spine Secure Proxy cannot or will not process a request then one of the
 
 ### SSP error example: Method not allowed
 
-```xml
+```json
 {
   "resourceType": "OperationOutcome",
   "issue": [
@@ -174,7 +139,7 @@ When the Spine Secure Proxy cannot or will not process a request then one of the
 
 ### SSP error example: Unsupported media type
 
-```xml
+```json
 {
   "resourceType": "OperationOutcome",
   "id": "09a01679-2564-0fb4-5129-aecc81ea2706",
@@ -199,7 +164,7 @@ When the Spine Secure Proxy cannot or will not process a request then one of the
 
 ### SSP error example: Error communicating to target URL
 
-```xml
+```json
 {
   "resourceType": "OperationOutcome",
   "id": "78D536C0-44D6-11E9-BFCD-17C1B88243CD",

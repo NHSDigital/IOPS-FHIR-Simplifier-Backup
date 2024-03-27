@@ -2,24 +2,10 @@
 
 When the server cannot or will not process a request due to an apparent client error then the following `BAD_REQUEST` error SHALL be used to return debug details.
 
-<table class="nhsd-!t-margin-bottom-6">
-  <thead>
-    <tr>
-      <th data-no-sort>HTTP code</th>
-      <th data-no-sort>Issue type</th>
-      <th data-no-sort>Spine error code - code</th>
-      <th data-no-sort>Spine error code - display</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="highlighter-rouge">400</code></td>
-      <td>invalid</td>
-      <td>BAD_REQUEST</td>
-      <td>Submitted request is malformed/invalid.</td>
-    </tr>
-  </tbody>
-</table>
+|HTTP code|Issue type|Spine error code - code|Spine error code - display|
+|---|---|---|---|
+|`400`|invalid|BAD_REQUEST|Submitted request is malformed/invalid|
+|`400`|invalid|CONFLICTING_VALUES|Conflicting values have been specified in different fields|
 
 BAD_REQUEST Spine error codes should be used in the following types of scenario:
 
@@ -39,7 +25,7 @@ BAD_REQUEST Spine error codes should be used in the following types of scenario:
 ### Example: Malformed JSON claim in request
 For example, if the request contained a null aud claim in the JWT, then the following error details would be returned:
 
-```xml
+```json
 {
   "resourceType": "OperationOutcome",
   "meta": {

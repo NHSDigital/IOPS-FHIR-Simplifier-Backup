@@ -5,15 +5,14 @@ GP Systems may capture other coded information relating to vaccinations other th
 This may be information regarding consent, dissent, invitations for vaccination, etc.
 Where provider categorise such coded information as immunisation data, then it **MUST** only return it against an immunisation request.
 GP Connect includes the parameter <code class="highlighter-rouge">includeStatus</code> to enable the consumer to specify the inclusion / exclusion of this information.
-See <a href="accessrecord_structured_development_retrieve_patient_record.html">Retrieve a patient’s structured record</a> for full details of the parameter use.
+See [Retrieve a patient’s structured record](https://developer.nhs.uk/apis/gpconnect-1-6-0/accessrecord_structured_development_retrieve_patient_record.html) for full details of the parameter use.
 
-Such coded records <strong>MUST</strong> be included with the immunisation bundle using an <code>observation</code> resource, as defined for <a href="accessrecord_structured_development_observation_uncategoriseddata.html">[uncategorised data](https://developer.nhs.uk/apis/gpconnect-1-6-0/accessrecord_structured_development_retrieve_patient_record.html).
+Such coded records <strong>MUST</strong> be included with the immunisation bundle using an <code>observation</code> resource, as defined for <a href="accessrecord_structured_development_observation_uncategoriseddata.html">[uncategorised data](https://simplifier.net/guide/gpconnect-data-model/Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Observation-1?version=current).
 
 Records returned against an immunisation request under the scope of this definition <strong>MUST</strong> be
 
 - excluded from the records returned for an uncategorised data request
 - included in the immunisations <code class="highlighter-rouge">List</code>
-
 
 Consumers shoud note than GP Systems differ with respect to additional information categorised as immunisations, therefore the same coded data may be returned against an immunisation or uncategorised data request by different provider systems.
 
@@ -33,6 +32,6 @@ Consumers shoud note than GP Systems differ with respect to additional informati
 Where there is an appropriate code which is outside of the stated hierarchy, then that <strong>MAY</strong> be used.
 Where there is no identifiably appropriate SNOMED CT code for the consent or dissent, then the transfer degraded code <strong>MUST</strong> be used with a text element populated with the original text.</p>
 
-<p>ConceptId - <code>196411000000103</code>
-DescriptionId - <code>294691000000115</code>
-Description - <code>Transfer-degraded record entry</code></p>
+ConceptId - `196411000000103`
+DescriptionId - `294691000000115`
+Description - `Transfer-degraded record entry`

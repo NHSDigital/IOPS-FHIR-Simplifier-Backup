@@ -8,11 +8,10 @@ To resolve this, GP Connect will only show the logical linkage between problems 
 
 Problem linkages may be impacted by filtering. 
 
+The details on how this is implemented in an API can be found in the [API Definition - Retrieve a patient's structured record](https://developer.nhs.uk/apis/gpconnect-1-6-0/accessrecord_structured_development_retrieve_patient_record.html).
 
-Additional guidance can be found in the "retrieve a patient's structured record page".
-
-<div class="nhsd-a-box nhsd-a-box--bg-red nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>TODO</strong>: Add link to specification when on Simplifier.
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
+	<i class="fa fa-exclamation-triangle"></i> <b>To do:</b> Update link to API when available in API catalogue.
 </div>
 
 ---

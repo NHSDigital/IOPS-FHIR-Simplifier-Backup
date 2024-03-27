@@ -1,70 +1,23 @@
 ## {{page-title}}
 
-<table class="nhsd-!t-margin-bottom-6">
-  <thead>
-    <tr>
-      <th data-no-sort>HTTP code</th>
-      <th data-no-sort>Issue type</th>
-      <th data-no-sort>Spine error code - code</th>
-      <th data-no-sort>Spine error code - display</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="highlighter-rouge">400</code></td>
-      <td>value</td>
-      <td>INVALID_IDENTIFIER_SYSTEM</td>
-      <td>Invalid identifier system</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">400</code></td>
-      <td>value</td>
-      <td>INVALID_IDENTIFIER_VALUE</td>
-      <td>Invalid identifier value</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">400</code></td>
-      <td>value</td>
-      <td>INVALID_NHS_NUMBER</td>
-      <td>NHS number invalid</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">400</code></td>
-      <td>business-rule</td>
-      <td>INVALID_PATIENT_DEMOGRAPHICS</td>
-      <td>Invalid patient demographics (that is, PDS trace failed)</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">404</code></td>
-      <td>not-found</td>
-      <td>ORGANISATION_NOT_FOUND</td>
-      <td>Organisation record not found</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">404</code></td>
-      <td>not-found</td>
-      <td>PATIENT_NOT_FOUND</td>
-      <td>Patient record not found</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">404</code></td>
-      <td>not-found</td>
-      <td>PRACTITIONER_NOT_FOUND</td>
-      <td>Practitioner record not found</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">404</code></td>
-      <td>not-found</td>
-      <td>NO_RECORD_FOUND</td>
-      <td>No record found</td>
-    </tr>
-  </tbody>
-</table>
+Provider systems **SHALL** respond by returning one of the following `OperationOutcome` error codes where FHIR resource identity error scenarios are encountered:
+
+|HTTP code|Issue type|Spine error code - code|Spine error code - display|
+|---|---|---|---|
+|`400`|value|INVALID_IDENTIFIER_SYSTEM|Invalid identifier system|
+|`400`|value|INVALID_IDENTIFIER_VALUE|Invalid identifier value|
+|`400`|value|INVALID_NHS_NUMBER|Invalid NHS number|
+|`400`|business-rule|INVALID_PATIENT_DEMOGRAPHICS|Invalid patient demographics (that is, PDS trace failed)|
+|`404`|not-found|ORGANISATION_NOT_FOUND|Organisation not found|
+|`404`|not-found|PATIENT_NOT_FOUND|Patient not found|
+|`404`|not-found|PRACTITIONER_NOT_FOUND|Practitioner not found|
+|`404`|not-found|NO_RECORD_FOUND|No record found|
 
 ### Example: Invalid NHS number supplied
+
 If an invalid NHS number value is supplied to the `$gpc.getstructuredrecord` operation, the following error details would be returned:
 
-```xml
+```json
 {
   "resourceType": "OperationOutcome",
   "meta": {
@@ -91,9 +44,10 @@ If an invalid NHS number value is supplied to the `$gpc.getstructuredrecord` ope
 ```
 
 ### Example: Patient not found
+
 For example, if a valid NHS number value is supplied to the `$gpc.getstructuredrecord` operation but no active GP record exists for that patient, then the following error details would be returned:
 
-```xml
+```json
 {
   "resourceType": "OperationOutcome",
   "meta": {
@@ -120,9 +74,10 @@ For example, if a valid NHS number value is supplied to the `$gpc.getstructuredr
 ```
 
 ### Example: Resource not found
+
 This is a catch-all where a request for a resource instance cannot be found at the FHIR server, where more specific Spine error codes (such as PATIENT_NOT_FOUND) cannot be used.
 
-```xml
+```json
 {
   "resourceType": "OperationOutcome",
   "meta": {
