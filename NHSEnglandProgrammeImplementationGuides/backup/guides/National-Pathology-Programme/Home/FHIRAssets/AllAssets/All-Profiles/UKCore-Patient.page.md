@@ -1,7 +1,7 @@
 ---
 topic: R4Patient
 ---
-## R4 Profile: UKCore-Patient
+## Profile: UKCore-Patient
 
 ### Summary
 Demographics and other administrative information about an individual. In most cases the subject of a pathology test request and/or test report is a `Patient` but it could be a `Group`, `Device` or `Location`.

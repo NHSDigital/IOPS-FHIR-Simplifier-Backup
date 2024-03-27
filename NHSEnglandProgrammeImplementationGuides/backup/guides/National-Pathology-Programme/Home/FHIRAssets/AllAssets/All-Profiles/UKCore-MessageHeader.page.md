@@ -1,7 +1,7 @@
 ---
 topic: R4MessageHeader
 ---
-## R4 Profile: UKCore-MessageHeader
+## Profile: UKCore-MessageHeader
 
 ### Summary
 The header for a message exchange that is either requesting or responding to an action.

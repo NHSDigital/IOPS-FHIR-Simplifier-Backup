@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="England-Observation-MCED-Site" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Site" />
+  <version value="0.0.2" />
+  <name value="EnglandObservationMCEDSite" />
+  <title value="England Observation MCED Site" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2024-03-21" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A MCED Profile for validation purposes only. This profile shows the minimum vaible product" />
+  <purpose value="This profile is made available to assist implementers who are creating and sending Observation FHIR instances to test that the created instances conform to the MCED FHIR implementation guide. It may also assist receivers testing that received instances are conformant with the MCED FHIR implementation guide." />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.code.coding:primarySite">
+      <path value="Observation.code.coding" />
+      <sliceName value="primarySite" />
+    </element>
+    <element id="Observation.code.coding:primarySite.system">
+      <path value="Observation.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.code.coding:primarySite.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="1873921000000106" />
+    </element>
+    <element id="Observation.code.coding:primarySite.display">
+      <path value="Observation.code.coding.display" />
+      <fixedString value="Multi-cancer early detection highest scored cancer signal origin by machine learning-based classifier" />
+    </element>
+    <element id="Observation.code.coding:secondaySite">
+      <path value="Observation.code.coding" />
+      <sliceName value="secondaySite" />
+    </element>
+    <element id="Observation.code.coding:secondaySite.system">
+      <path value="Observation.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.code.coding:secondaySite.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="1873931000000108" />
+    </element>
+    <element id="Observation.code.coding:secondaySite.display">
+      <path value="Observation.code.coding.display" />
+      <fixedString value="Multi-cancer early detection second highest scored cancer signal origin by machine learning-based classifier" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.component.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <fixedCode value="123037004" />
+    </element>
+    <element id="Observation.component.code.coding.display">
+      <path value="Observation.component.code.coding.display" />
+      <fixedString value="Body structure" />
+    </element>
+    <element id="Observation.component.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="To state the body site where a multi-cancer early signal was detected" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-BodyStructure" />
+      </binding>
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

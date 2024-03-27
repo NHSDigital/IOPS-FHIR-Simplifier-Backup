@@ -1,7 +1,7 @@
 ---
 topic: R4Specimen
 ---
-## R4 Profile: UKCore-Specimen
+## Profile: UKCore-Specimen
 
 ### Summary
 Details of the specimen(s) provided for testing.

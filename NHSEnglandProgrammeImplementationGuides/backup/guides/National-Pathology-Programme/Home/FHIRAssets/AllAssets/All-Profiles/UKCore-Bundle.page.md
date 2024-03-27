@@ -1,7 +1,7 @@
 ---
 topic: R4Bundle
 ---
-## R4 Profile: UKCore-Bundle
+## Profile: UKCore-Bundle
 
 ### Summary
 A container for a collection of resources. Used to group the set of resources that comprise a pathology related message.

@@ -1,8 +1,0 @@
-{
-  "resourceType": "OperationOutcome",
-  "issue": [ {
-    "severity": "error",
-    "code": "not-supported",
-    "diagnostics": "Invalid request: The FHIR endpoint on this server does not know how to handle POST operation[StructureDefinition/$snapshot] with parameters [[]]"
-  } ]
-}

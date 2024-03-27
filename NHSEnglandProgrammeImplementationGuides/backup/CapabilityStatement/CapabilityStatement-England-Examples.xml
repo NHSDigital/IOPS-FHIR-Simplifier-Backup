@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-  <id value="apim-conformance" />
-  <url value="https://fhir.hl7.org.uk/CapabilityStatement/England-FHIRExamples-conformance" />
+  <id value="England-FHIRExamples-Conformance" />
+  <url value="https://fhir.nhs.uk/England/CapabilityStatement/England-FHIRExamples-Conformance" />
   <version value="3.2.0" />
-  <name value="EnglandFHIRExamplesconformance" />
+  <name value="EnglandFHIRExamplesConformance" />
   <status value="active" />
   <date value="2022-12-16T00:00:00+00:00" />
   <publisher value="HL7 UK" />
-  <description value="Conformance requirements for NHSEngland FHIR Examples" />
+  <description value="Basic conformance requirements for NHS England FHIR Examples" />
   <kind value="requirements" />
   <fhirVersion value="4.0.1" />
   <format value="application/fhir+json" />
@@ -61,6 +61,7 @@
       <type value="DiagnosticReport" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
       <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReport-MCED" />
     </resource>
     <resource>
       <type value="DocumentReference" />
@@ -129,9 +130,12 @@
     <resource>
       <type value="Observation" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
       <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
       <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Result" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Screening" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Site" />
     </resource>
     <resource>
       <type value="OperationOutcome" />
@@ -139,15 +143,19 @@
     </resource>
     <resource>
       <type value="Organization" />
-      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-ODS" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-MCED" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-ODS" />
     </resource>
     <resource>
       <type value="OrganizationAffiliation" />
-      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-OrganizationAffiliation-ODS" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-OrganizationAffiliation-ODS" />
     </resource>
     <resource>
       <type value="Patient" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Patient-MCED" />
     </resource>
     <resource>
       <type value="Practitioner" />
@@ -188,6 +196,8 @@
     <resource>
       <type value="ServiceRequest" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-ServiceRequestLab-MCED" />
     </resource>
     <resource>
       <type value="Slot" />
@@ -196,6 +206,7 @@
     <resource>
       <type value="Specimen" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Specimen-MCED" />
     </resource>
     <resource>
       <type value="Task" />

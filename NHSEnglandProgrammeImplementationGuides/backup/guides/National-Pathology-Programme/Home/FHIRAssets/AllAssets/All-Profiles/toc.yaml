@@ -8,10 +8,10 @@
   filename: UKCore-DiagnosticReport-Lab.page.md
 - name: UKCore-MessageHeader
   filename: UKCore-MessageHeader.page.md
-- name: UKCore-Observation-Group-Lab (Test Group)
-  filename: UKCore-Observation-Group-Lab-Test-Group.page.md
-- name: UKCore-Observation-Lab (Test Result)
-  filename: UKCore-Observation-Lab-Test-Result.page.md
+- name: UKCore-Observation-Group-Lab
+  filename: UKCore-Observation-Group-Lab.page.md
+- name: UKCore-Observation-Lab
+  filename: UKCore-Observation-Lab.page.md
 - name: UKCore-Organization
   filename: UKCore-Organization.page.md
 - name: UKCore-Patient

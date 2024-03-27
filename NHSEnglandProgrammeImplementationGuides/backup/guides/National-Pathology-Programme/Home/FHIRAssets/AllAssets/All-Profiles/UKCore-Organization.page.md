@@ -1,7 +1,7 @@
 ---
 topic: R4Organization
 ---
-## R4 Profile: UKCore-Organization
+## Profile: UKCore-Organization
 
 ### Summary
 Used to represent the following (where applicable):

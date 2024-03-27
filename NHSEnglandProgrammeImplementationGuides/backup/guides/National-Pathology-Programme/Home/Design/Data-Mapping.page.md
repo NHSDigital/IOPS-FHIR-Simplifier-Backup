@@ -3,6 +3,11 @@ topic: DataMapping
 ---
 ## Data Mapping
 
+### FHIR to PMIP EDIFACT (NHS003) Mappings
+The following tables define a set of mappings between the FHIR profiles that are described by this implementation guide and the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification.  Whilst every effort has been made to ensure that the mappings are correct, they are not a normative part of the implementation guidance. They are intended to provide additional guidance to suppliers who are familiar with the existing PMIP EDIFACT (NHS003) specification.
+
+The constraints that need to be applied to each FHIR resource using the relevant UK Core profiles are described in the individual profile pages (refer to the {{pagelink:FHIRAssetsR4Profiles}} section of this implementation guide). Only those FHIR data elements that are currently in scope (as defined in the Additional Guidance section of each profile page) are listed in the tables below. 
+
 ### UKCore-DiagnosticReport-Lab
 
 <table class="regular">
@@ -12,11 +17,11 @@ topic: DataMapping
             <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
         </tr>
         <tr>
-            <th width="20%">Element Name</th>
+            <th width="22.5%">Element Name</th>
             <th width="10%">Attribute Id</th>
-            <th width="30%">Attribute Name</th>
-            <th width="10%">Message Mapping</th>
-            <th width="30%">Notes</th> 
+            <th width="27.5%">Attribute Name</th>
+            <th width="17.5%">Message Mapping</th>
+            <th width="27.5%">Notes</th> 
         </tr>
     </thead>
     <tbody>
@@ -107,20 +112,22 @@ topic: DataMapping
    </tbody>
 </table>
 
+<br>
+
 ### UKCore-Observation-Group-Lab (Test Group)
 
 <table class="regular">
     <thead>
         <tr>
-            <th colspan="1">{{pagelink:R4ObservationTestGroup}}</th>   
+            <th colspan="1">{{pagelink:R4ObservationTestGroup}}</th>
             <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
         </tr>
         <tr>
-            <th width="20%">Element Name</th>
+            <th width="22.5%">Element Name</th>
             <th width="10%">Attribute Id</th>
-            <th width="30%">Attribute Name</th>
-            <th width="10%">Message Mapping</th>
-            <th width="30%">Notes</th> 
+            <th width="27.5%">Attribute Name</th>
+            <th width="17.5%">Message Mapping</th>
+            <th width="27.5%">Notes</th> 
         </tr>
     </thead>
     <tbody>
@@ -157,7 +164,222 @@ topic: DataMapping
             <td></td>
         </tr>
         <tr>
+            <td>subject</td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>effective[x]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>issued</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>performer</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>note</td>
+            <td>E141</td>
+            <td>comment to laboratory investigation result item</td>
+            <td>SG18.FTX.C108.4440(1-5)</td>
+            <td>EDIFACT 'TEXT SUBJECT QUALIFIER' is set to a value of 'SPC' (Service provider's comment) when the associated free text relates to service provider comments on the test group. Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+        </tr>
+        <tr>
+            <td>specimen</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hasMember</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>The mechanism for supporting test groups, component tests within test groups and standalone tests in EDIFACT is described in the definition of Segment Group 18 in LSR_04_A_001.doc.</td>
+        </tr>
+   </tbody>
+</table>
+
+<br>
+
+### UKCore-Observation-Lab (Test Result)
+
+<table class="regular">
+    <thead>
+        <tr>
+            <th colspan="1">{{pagelink:R4ObservationTestResult}}</th>
+            <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
+        </tr>
+        <tr>
+            <th width="22.5%">Element Name</th>
+            <th width="10%">Attribute Id</th>
+            <th width="27.5%">Attribute Name</th>
+            <th width="17.5%">Message Mapping</th>
+            <th width="27.5%">Notes</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>identifier</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>status</td>
+            <td>E139</td>
+            <td>status of laboratory investigation (result item)</td>
+            <td>SG18.STS.C555.9011</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>category</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">code</td>
+            <td rowspan="2">E108</td>
+            <td rowspan="2">measurable quantity attribute</td>
+            <td>SG18.INV.C847.9931</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>SG18.INV.C847.9930</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>subject</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>effective[x]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>issued</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>performer</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>valueQuantity</td>
+            <td>E129</td>
+            <td>numerical value of a measurement result</td>
+            <td>SG18.RSL.C830(1).6314</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>valueQuantity.comparator</td>
+            <td>E128</td>
+            <td>code for arithmetic comparator</td>
+            <td>SG18.RSL.C830(1).6321</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>valueQuantity.unit</td>
+            <td>E130</td>
+            <td>unit of measurement result as free text</td>
+            <td>SG18.RSL.C848.6410</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>dataAbsentReason</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>interpretation</td>
+            <td>E137</td>
+            <td>code for deviating result indicator</td>
+            <td>SG18.RSL.7857</td>
+            <td>Partial mapping to EDIFACT 'RESULT NORMALCY INDICATOR, CODED' (also referred to as 'deviating result indicator'). Refer to the description of 'RESULT NORMALCY INDICATOR, CODED' (tag id 7857) in LSR_04_A_001.doc.</td>
+        </tr>
+        <tr>
+            <td>note</td>
+            <td>E141</td>
+            <td>comment to laboratory investigation result item</td>
+            <td>SG18.FTX.C108.4440(1-5)</td>
+            <td>EDIFACT 'TEXT SUBJECT QUALIFIER' is set to a value of 'SPC' (Service provider's comment) when the associated free text relates to service provider comments on the test group. Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+        </tr>
+        <tr>
+            <td>bodySite</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>method</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>specimen</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>referenceRange.low</td>
+            <td>E144</td>
+            <td>numerical value of lower reference limit of quantity</td>
+            <td>SG20.RND.6162</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>referenceRange.high</td>
+            <td>E145</td>
+            <td>numerical value of upper reference limit of quantity</td>
+            <td>SG20.RND.6152</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>referenceRange.text</td>
+            <td>E330</td>
+            <td>complex reference range information</td>
+            <td>SG18.FTX.C108.4440(1-5)</td>
+            <td>EDIFACT 'TEXT SUBJECT QUALIFIER' is set to a value of 'CRR' (Complex reference range information) when the associated free text relates to reference range text. Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+        </tr>
+        <tr>
+            <td>component</td>
             <td></td>
             <td></td>
             <td></td>
@@ -165,5 +387,3 @@ topic: DataMapping
         </tr>
    </tbody>
 </table>
-
-
