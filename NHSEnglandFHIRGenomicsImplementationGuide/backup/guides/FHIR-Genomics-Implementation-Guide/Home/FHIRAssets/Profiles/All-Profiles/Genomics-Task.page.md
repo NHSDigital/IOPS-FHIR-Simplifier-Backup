@@ -257,6 +257,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#requester">requester</a>
 - <a href="#owner">owner</a>
 - <a href="#note">note</a>
+- <a href="#input">input</a>
 - <a href="#output">output</a>
 
 <a name="basedOn"></a>
@@ -410,6 +411,30 @@ Used for messaging between owner and other orgnizations e.g. during handover of 
 "note":  [
         {
             "text": "Sample has not been received within 4 week window. Task will be closed unless further communication is received"
+        }
+    ]
+```
+
+<a name="input"></a>
+#### input
+Used to attach inputs to a Task, if relevant. e.g. references to Specimen's which a Sample Processing task is acting on. No CodeSystem exists for this field as of publication but this will be investigated as future work.
+
+Specimen references SHOULD be added to Tasks acting on Specimen resources, e.g. Tasks marked SamplePreparation or SampleProcessing. This is to clearly disambiguate which specimen a task is acting on, where multiple specimens are necessary for processing the test request. 
+```json
+"input":  [
+        {
+            "type": {
+                "coding":  [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "123038009",
+                        "display": "Specimen"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "Specimen/Specimen-CancerSolidTumor-Example"
+            }
         }
     ]
 ```
