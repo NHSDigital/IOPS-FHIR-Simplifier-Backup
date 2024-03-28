@@ -22,7 +22,9 @@ topic: STU3Sequence
 <br>
 <b>General IG improvements:</b><br>
 <ul>
+<li>Added MustSupport flag to <code>UKCore-Patient.managingOrganization</code>, to give IHE alignment</li>
 <li>Swap Example, ValueSet, CodeSystem, Extension, and Profile pages to use Simplifier templating</li>
+<li>Updated all examples to have text elements, to describe what they are used for, and render this via the Simplifier template</li>
 <li>Altered Profiles sub menu from on hover opening to click to show</li>
 <li>Altered Profiles sub menu to restore its state via cookie</li>
 <li>Altered Profiles sub menu to have a sub menu for derived profiles</li>
