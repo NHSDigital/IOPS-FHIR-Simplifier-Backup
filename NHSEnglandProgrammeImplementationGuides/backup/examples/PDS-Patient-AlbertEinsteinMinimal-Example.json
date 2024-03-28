@@ -1,0 +1,31 @@
+{
+	"resourceType": "Patient",
+	"id": "PDS-Patient-AlbertEinsteinMinimal-Example",
+	"meta": {
+		"profile": [
+			"https://fhir.nhs.uk/England/StructureDefinition/England-Patient-PDS"
+		]
+	},
+	"name": [
+		{
+			"use": "official",
+			"family": "Einstein",
+			"given": [
+				"Albert"
+			]
+		}
+	],
+	"gender": "male",
+	"birthDate": "1879-03-14",
+	"address": [
+		{
+			"use": "home",
+			"line": [
+				"35 Market St",
+				"Kirkby Stephen",
+				"Cumbria"
+			],
+			"postalCode": "CA17 4QN"
+		}
+	]
+}
