@@ -1,0 +1,6 @@
+- name: Example Template
+  filename: Example-Template.page.md
+- name: Profile Template
+  filename: Profile-Template.page.md
+- name: Profile Extension Template
+  filename: Profile-Extension-Template.page.md

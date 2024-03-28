@@ -15,9 +15,6 @@
     <resource>
       <MessageHeader>
         <id value="0a43b490-de91-4665-ab8b-0e868ea7f043" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
-        </meta>
         <eventCoding>
           <system value="http://snomed.info/sct" />
           <code value="371528001" />
@@ -50,9 +47,6 @@
       <!--Screening org-->
       <Organization>
         <id value="d6407de7-0e86-45eb-93cb-035094aaa49e" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        </meta>
         <identifier>
           <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
           <value value="ABC123" />
@@ -70,9 +64,6 @@
       <!--performing lab-->
       <Organization>
         <id value="e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        </meta>
         <identifier>
           <system value="http://terminology.hl7.org/NamingSystem/CLIA" />
           <value value="ScreeningLab34D2231294CLIA" />
@@ -111,9 +102,6 @@
       <!--NHS England-->
       <Organization>
         <id value="bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        </meta>
         <identifier>
           <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
           <value value="X26" />
@@ -135,9 +123,6 @@
       <!--requesting practitioner-->
       <Practitioner>
         <id value="e638a8c1-d2ce-4866-8874-b58ad4476928" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        </meta>
         <identifier>
           <system value="https://fhir.nhs.uk/Id/sds-user-id" />
           <value value="3415870223" />
@@ -171,9 +156,6 @@
     <resource>
       <ServiceRequest>
         <id value="ebb4078d-4365-47d8-b2cc-538e2b0a749a" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
-        </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />
@@ -207,9 +189,6 @@
     <resource>
       <DiagnosticReport>
         <id value="871032f5-a59e-4e11-954a-867519e0e640" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-        </meta>
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
           <valueAnnotation>
             <text value="Some Lab Comments" />
@@ -258,9 +237,6 @@
       <!--the grouper Observation-->
       <Observation>
         <id value="a7d5aec0-e404-4fd7-90d5-0c3b5df77ea1" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />
@@ -303,9 +279,6 @@
       <!--marker detected Observation-->
       <Observation>
         <id value="82faf6a6-e463-41ca-a957-5a8e4cbef879" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />
@@ -350,9 +323,6 @@
       <!--primary site observation-->
       <Observation xmlns="http://hl7.org/fhir">
         <id value="52860bac-8a23-4386-9198-aaceffa4dbb5" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        </meta>        
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />
@@ -362,7 +332,7 @@
           <coding>
             <system value="http://snomed.info/sct" />
             <code value="1873921000000106" />
-            <display value="Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier" />
+            <display value="Multi-cancer early detection highest scored cancer signal origin by machine learning-based classifier" />
           </coding>
         </code>
         <subject>
@@ -398,9 +368,6 @@
     <resource>
       <Specimen>
         <id value="189fd847-0b83-40f4-98d4-89421e4a89af" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-        </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />

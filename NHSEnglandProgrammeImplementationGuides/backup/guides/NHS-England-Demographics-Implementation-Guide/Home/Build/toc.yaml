@@ -6,3 +6,5 @@
   filename: Validated-Relationship-Service.page.md
 - name: IHE Patient Demographics Query
   filename: IHE-Patient-Demographics-Query.page.md
+- name: NHS Number Allocation
+  filename: NHS-Number-Allocation

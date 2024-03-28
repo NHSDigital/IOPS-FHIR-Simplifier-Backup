@@ -1,0 +1,59 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "England-Patient-PDS",
+    "url": "https://fhir.nhs.uk/England/StructureDefinition/England-Patient-PDS",
+    "version": "0.0.1",
+    "name": "EnglandPatientPDS",
+    "title": "England Patient PDS",
+    "status": "draft",
+    "experimental": true,
+    "date": "2024-03-05",
+    "publisher": "NHS England",
+    "contact":  [
+        {
+            "name": "NHS England",
+            "telecom":  [
+                {
+                    "system": "email",
+                    "value": "interoperabilityteam@nhs.net",
+                    "use": "work",
+                    "rank": 1
+                }
+            ]
+        }
+    ],
+    "description": "This profile is made available to assist implementers who are creating and sending Patient FHIR instances to test that the created instances conform to the PDS FHIR implementation guide. It may also assist receivers testing that received instances are conformant with the PDS FHIR implementation guide.",
+    "purpose": "This profile is made available to assist implementers who are creating and sending FHIR instances to test that the created instances conform to a specific FHIR implementation guide. It may also assist receivers testing that received instances are conformant with the FHIR implementation guide.\n **Use of this profile is on the understanding that it is for testing purposes only. Use of this profile does not provide any form of assurance or accreditation and furthermore does not guarantee system conformance to a given FHIR Implementation guide.**",
+    "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Patient",
+    "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "Patient.name",
+                "path": "Patient.name",
+                "min": 1
+            },
+            {
+                "id": "Patient.gender",
+                "path": "Patient.gender",
+                "min": 1
+            },
+            {
+                "id": "Patient.birthDate",
+                "path": "Patient.birthDate",
+                "min": 1
+            },
+            {
+                "id": "Patient.address",
+                "path": "Patient.address",
+                "min": 1
+            }
+        ]
+    }
+}
+

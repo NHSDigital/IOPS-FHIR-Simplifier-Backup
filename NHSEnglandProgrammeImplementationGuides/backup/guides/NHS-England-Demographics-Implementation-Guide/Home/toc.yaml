@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: Sitemap overview
-  filename: Sitemap-overview
 - name: Design
   filename: Design
 - name: Build
@@ -10,3 +8,5 @@
   filename: Test
 - name: FHIR Assets
   filename: FHIR-Assets
+- name: Help and Support
+  filename: Help-and-Support
