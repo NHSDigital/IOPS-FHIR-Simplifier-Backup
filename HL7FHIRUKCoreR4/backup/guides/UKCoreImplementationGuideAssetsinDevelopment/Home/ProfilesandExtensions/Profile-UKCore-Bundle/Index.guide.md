@@ -11,8 +11,14 @@ issue: UKCore-Bundle
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
-  <b>Bundled Allergy List</b> - An example to illustrate a...<br/>
+  <b>Bundled Allergy List</b> - An example to illustrate a bundle containing an allergy list.<br/>
 {{pagelink:Example-UKCore-Bundle-BundledAllergyList}}
+<br><br>
+  <b>Batch Get</b> - An example to illustrate a batch GET bundle<br/>
+{{pagelink:Example-UKCore-Bundle-Batch}}
+<br><br>
+  <b>Batch Put</b> - An example to illustrate a batch PUT bundle<br/>
+{{pagelink:Example-UKCore-Bundle-BatchPut}}
 
 </div>
 </nocheck>

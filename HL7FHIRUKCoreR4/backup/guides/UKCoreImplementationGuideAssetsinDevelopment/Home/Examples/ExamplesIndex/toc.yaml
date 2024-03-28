@@ -4,6 +4,10 @@
   filename: Example-UKCore-AuditEvent-Query.guide.md
 - name: Example UKCore-Bundle-BundledAllergyList
   filename: Example-UKCore-Bundle-BundledAllergyList.guide.md
+- name: Example UKCore-Bundle-Batch
+  filename: Example-UKCore-Bundle-Batch.page.md
+- name: Example UKCore-Bundle-BatchPut
+  filename: Example-UKCore-Bundle-BatchPut.page.md
 - name: Example UKCore-CarePlan-WellnessPlan
   filename: Example-UKCore-CarePlan-WellnessPlan.guide.md
 - name: Example UKCore-CareTeam-WeightManagementTeam
