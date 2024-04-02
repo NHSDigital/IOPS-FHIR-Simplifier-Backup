@@ -2,29 +2,27 @@
   filename: API-design-principles
 - name: Allergies guidance
   filename: Allergies-Guidance
-- name: Medication and medical device resource relationships
-  filename: Medication-and-medical-device-resource-relationships
-- name: Medications and medical device guidance
-  filename: Medications-and-medical-device-guidance
-- name: Immunisations guidance
-  filename: Immunisations-Guidance
-- name: Uncategorised data guidance
-  filename: Uncategorised-data-guidance
 - name: Consultations guidance
   filename: Consultations-guidance
-- name: Problem guidance
-  filename: Problem-guidance
-- name: Investigations guidance
-  filename: Investigations-guidance
-- name: Referrals guidance
-  filename: Referrals-Guidance
-- name: Documents guidance
-  filename: Documents-Guidance
 - name: Diary entry guidance
   filename: Diary-entry-guidance
+- name: Documents guidance
+  filename: Documents-Guidance
+- name: Immunisations guidance
+  filename: Immunisations-Guidance
 - name: Information governance principles
   filename: Information-governance-principles
-- name: Specification versioning
-  filename: Specification-versioning
+- name: Investigations guidance
+  filename: Investigations-guidance
+- name: Medication and medical device guidance
+  filename: Medication-and-medical-device-guidance
+- name: Medication and medical device resource relationships
+  filename: Medication-and-medical-device-resource-relationships
+- name: Problem guidance
+  filename: Problem-guidance
+- name: Referrals guidance
+  filename: Referrals-Guidance
+- name: Uncategorised data guidance
+  filename: Uncategorised-data-guidance
 - name: Known issues
   filename: Known-issues
