@@ -1,10 +1,10 @@
 - name: Index
   filename: Index.page.md
-- name: Extensions
-  filename: Extensions
 - name: Code systems
   filename: Code-systems
-- name: Value sets
-  filename: Value-sets
+- name: Extensions
+  filename: Extensions
 - name: Profiles
   filename: Profiles
+- name: Value sets
+  filename: Value-sets
