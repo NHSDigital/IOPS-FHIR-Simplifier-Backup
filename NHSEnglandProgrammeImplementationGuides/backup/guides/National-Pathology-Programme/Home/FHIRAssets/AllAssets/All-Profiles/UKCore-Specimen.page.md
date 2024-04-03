@@ -157,7 +157,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..1</td>
             <td>Required</td>
             <td><a href=" https://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a> | <a href=" https://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td>
-            <td>The date and time that the specimen was collected.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice"> choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>effectiveDateTime</code>.</td>
+            <td>The date and time that the specimen was collected.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice"> choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>collectedDateTime</code>.</td>
         </tr>
         <tr>
             <td>collection.quantity</td>
