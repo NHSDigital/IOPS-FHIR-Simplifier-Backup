@@ -17,7 +17,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
         </tr>
         <tr>
-            <th width="22.5%">Element Name</th>
+            <th width="22.5%">FHIR Element Name</th>
             <th width="10%">Attribute Id</th>
             <th width="27.5%">Attribute Name</th>
             <th width="17.5%">Message Mapping</th>
@@ -123,7 +123,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
         </tr>
         <tr>
-            <th width="22.5%">Element Name</th>
+            <th width="22.5%">FHIR Element Name</th>
             <th width="10%">Attribute Id</th>
             <th width="27.5%">Attribute Name</th>
             <th width="17.5%">Message Mapping</th>
@@ -152,14 +152,24 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
             <td></td>
         </tr>
-        <tr>
-            <td rowspan="2">code</td>
-            <td rowspan="2">E108</td>
-            <td rowspan="2">measurable quantity attribute</td>
+                <tr>
+            <td>code.coding.code</td>
+            <td>E108</td>
+            <td>measurable quantity attribute</td>
             <td>SG18.INV.C847.9931</td>
             <td></td>
         </tr>
         <tr>
+            <td>code.coding.system</td>
+            <td>E108</td>
+            <td>code list specifying the measurable quantity attribute</td>
+            <td>SG18.INV.C847.1131</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>code.coding.display</td>
+            <td>E108</td>
+            <td>textual representation of the code for measurable quantity attribute </td>
             <td>SG18.INV.C847.9930</td>
             <td></td>
         </tr>
@@ -226,7 +236,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
         </tr>
         <tr>
-            <th width="22.5%">Element Name</th>
+            <th width="22.5%">FHIR Element Name</th>
             <th width="10%">Attribute Id</th>
             <th width="27.5%">Attribute Name</th>
             <th width="17.5%">Message Mapping</th>
@@ -256,13 +266,23 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
         </tr>
         <tr>
-            <td rowspan="2">code</td>
-            <td rowspan="2">E108</td>
-            <td rowspan="2">measurable quantity attribute</td>
+            <td>code.coding.code</td>
+            <td>E108</td>
+            <td>measurable quantity attribute</td>
             <td>SG18.INV.C847.9931</td>
             <td></td>
         </tr>
         <tr>
+            <td>code.coding.system</td>
+            <td>E108</td>
+            <td>code list specifying the measurable quantity attribute</td>
+            <td>SG18.INV.C847.1131</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>code.coding.display</td>
+            <td>E108</td>
+            <td>textual representation of the code for measurable quantity attribute </td>
             <td>SG18.INV.C847.9930</td>
             <td></td>
         </tr>
@@ -304,14 +324,14 @@ The constraints that need to be applied to each FHIR resource using the relevant
         <tr>
             <td>valueQuantity.comparator</td>
             <td>E128</td>
-            <td>code for arithmetic comparator</td>
+            <td>arithmetic comparator</td>
             <td>SG18.RSL.C830(1).6321</td>
             <td></td>
         </tr>
         <tr>
             <td>valueQuantity.unit</td>
             <td>E130</td>
-            <td>unit of measurement result as free text</td>
+            <td>unit of measurement result</td>
             <td>SG18.RSL.C848.6410</td>
             <td></td>
         </tr>
@@ -325,7 +345,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
         <tr>
             <td>interpretation</td>
             <td>E137</td>
-            <td>code for deviating result indicator</td>
+            <td>deviating result indicator</td>
             <td>SG18.RSL.7857</td>
             <td>Partial mapping to EDIFACT 'RESULT NORMALCY INDICATOR, CODED' (also referred to as 'deviating result indicator'). Refer to the description of 'RESULT NORMALCY INDICATOR, CODED' (tag id 7857) in LSR_04_A_001.doc.</td>
         </tr>
@@ -387,3 +407,268 @@ The constraints that need to be applied to each FHIR resource using the relevant
         </tr>
    </tbody>
 </table>
+
+<br>
+
+### UKCore-ServiceRequest-Lab
+
+<table class="regular">
+    <thead>
+        <tr>
+            <th colspan="1">{{pagelink:R4ServiceRequest}}</th>
+            <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
+        </tr>
+        <tr>
+            <th width="22.5%">FHIR Element Name</th>
+            <th width="10%">Attribute Id</th>
+            <th width="27.5%">Attribute Name</th>
+            <th width="17.5%">Message Mapping</th>
+            <th width="27.5%">Notes</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>identifier</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>requisition</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>status</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>intent</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>priority</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>code</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>subject</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>authoredOn</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>requester</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>performer</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>reasonCode</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>reasonReference</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>specimen</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">note</td>
+            <td>E045</td>
+            <td>type of clinical observation</td>
+            <td>SG10.CIN.6810</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>E046</td>
+            <td>clinical observation description</td>
+            <td>SG10.FTX.C108.4440(1-5)</td>
+            <td></td>
+        </tr>
+   </tbody>
+</table>
+
+<br>
+
+### UKCore-Specimen
+
+<table class="regular">
+    <thead>
+        <tr>
+            <th colspan="1">{{pagelink:R4Specimen}}</th>
+            <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
+        </tr>
+        <tr>
+            <th width="22.5%">FHIR Element Name</th>
+            <th width="10%">Attribute Id</th>
+            <th width="27.5%">Attribute Name</th>
+            <th width="17.5%">Message Mapping</th>
+            <th width="27.5%">Notes</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>identifier</td>
+            <td>E262</td>
+            <td>identification of sample by laboratory service requester</td>
+            <td>SG16.RFF.C506.1154</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>accessionIdentifier</td>
+            <td>E263</td>
+            <td>identification of sample by laboratory service provider</td>
+            <td>SG16.RFF.C506.1154</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>status</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>E264</td>
+            <td>type of sample</td>
+            <td>SG16.SPC.C832.7866</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>subject</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>receivedTime</td>
+            <td>E061</td>
+            <td>date and time of receipt of collected sample</td>
+            <td>SG16.DTM.C507.2380</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>request</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>collection</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>collection.collector</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>collection.collected[x]</td>
+            <td>E050</td>
+            <td>date and time of sample collection</td>
+            <td>SG16.DTM.C507.2380</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>collection.quantity.value</td>
+            <td>E055</td>
+            <td>numerical value of amount of collected sample</td>
+            <td>SG16.QTY.C186.6060</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>collection.quantity.unit</td>
+            <td>E056</td>
+            <td>unit of amount of collected sample</td>
+            <td>SG16.QTY.C848.6410</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>collection.bodySite</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>collection.fastingStatus[x]</td>
+            <td>E225</td>
+            <td>pre-treatment description</td>
+            <td>SG16.SPC.C832.7867</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>condition</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>note</td>
+            <td>E271</td>
+            <td>laboratory service provider's comments to sample</td>
+            <td>SG16.FTX.C108.4440(1-5)</td>
+            <td></td>
+        </tr>
+   </tbody>
+   </tbody>
+   </tbody>
+</table>
+
+
+
