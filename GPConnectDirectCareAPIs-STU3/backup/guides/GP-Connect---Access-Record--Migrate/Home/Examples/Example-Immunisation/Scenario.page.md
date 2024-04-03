@@ -1,5 +1,0 @@
-## {{page-title}}
-
-Blah
-
----

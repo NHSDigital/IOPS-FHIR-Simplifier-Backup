@@ -1,6 +1,0 @@
-- name: Scenario
-  filename: Scenario.page.md
-- name: Request payload
-  filename: Request-payload.page.md
-- name: Response payload
-  filename: Response-payload.page.md
