@@ -24,7 +24,7 @@ Users can currently authenticate using any of the following five options:
 The expected users of the national portal may be technically immature organisations and will only require infrequent access to the service, but the expectation is that they will be able to use one of the authentication mechanisms available
 within CIS2.
 
-**Note:** For each of the authentication mechanisms, there is restrictions about device versions, setup and access controls which needs to be taken into consideration when onboarding services, details can be found on the [CIS2 Technical Requirements pages](https://digital.nhs.uk/services/registration-authorities-and-smartcards/guidance-for-ras-managing-nhs-cis2-authenticators-in-cis/organisation-and-user-technical-requirements-for-cis2-device-authentication)
+**Note:** For each of the authentication mechanisms, there is restrictions about device versions, setup and access controls which needs to be taken into consideration when onboarding services, details can be found on the [CIS2 guidance for Registration Authorities](https://digital.nhs.uk/services/care-identity-service/applications-and-services/care-identity-management/user-guides/managing-non-smartcard-authenticators)
 
 ## API Authentication/Authorization
 

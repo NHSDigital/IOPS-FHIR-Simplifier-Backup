@@ -16,7 +16,7 @@ Example of an Organization resource. NOTE: it is expected that organization data
 
 
 <div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/UKCore-Organization-699X0-Example/~issues?level=File' target="_blank">Propose a change to Organization-GenomicsLaboratoryHub-Example</a></h4>
+<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/Organization-GenomicsLaboratoryHub-Example/~issues?level=File' target="_blank">Propose a change to Organization-GenomicsLaboratoryHub-Example</a></h4>
 </div>
 
 ---
