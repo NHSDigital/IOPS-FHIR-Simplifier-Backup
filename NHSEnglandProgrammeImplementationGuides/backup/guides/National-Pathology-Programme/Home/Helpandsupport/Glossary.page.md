@@ -28,7 +28,7 @@ The following terms are of particular relevance to this implementation guide:
         <tr>
             <td>HL7</td>
             <td>Health Level 7</td>
-            <td>HL7 refers to a set of international standards that are used for the transfer of clinical and administrative data between software systems used by healthcare providers.</td>
+            <td>A set of international standards that are used for the transfer of clinical and administrative data between software systems used by healthcare providers.</td>
         </tr>
         <tr>
             <td>HL7v2.x</td>
