@@ -121,7 +121,7 @@ href="https://simplifier.net/guide/fhir-standards-wales-implementation-guide?ver
 
 <tr>
 <!-- row 1 -->
-<td align="center"><a href="https://simplifier.net/guide/uk-core-implementation-guide?version=1.0.0" title="Click for the latest balloted version of UK Core">{{render:HL7FHIRUKCoreR4/lr}}</td>
+<td align="center"><a href="https://simplifier.net/guide/ukcoreversionhistory/home" title="Click for the version history of the UK Core">{{render:HL7FHIRUKCoreR4/ukvh}}</td>
 <td align="center">&nbsp;&nbsp;</td>
 <td align="center"><a href="https://simplifier.net/guide/HL7FHIRUKCoreDesignandDevelopmentApproach/Home/Asset-Design?version=current" title="Click to learn about the principles used in the UK Core development">{{render:HL7FHIRUKCoreR4/dp}}</td>
 <td align="center">&nbsp;&nbsp;</td>
@@ -136,7 +136,7 @@ href="https://simplifier.net/guide/fhir-standards-wales-implementation-guide?ver
 
 <!--row 2-->
 <tr>
-<td align="center"><a href="https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence?version=current" title="Click to view the current development for the next release of UK Core">{{render:HL7FHIRUKCoreR4/cd}}</td>
+<td align="center"><a href="https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/home" title="Click for the UK Core FHIR assets that are in the early stages of development">{{render:HL7FHIRUKCoreR4/ucdfa}}</td>
 <td align="center">&nbsp;&nbsp;</td>
 <td align="center"><a href="https://simplifier.net/guide/HL7FHIRUKCoreDesignandDevelopmentApproach/Home/Asset-Design/Profile-Design?version=current" title="Click to learn about the approach used to UK Core profile development">{{render:HL7FHIRUKCoreR4/pd}}</td>
 <td align="center">&nbsp;&nbsp;</td>
@@ -151,7 +151,7 @@ href="https://simplifier.net/guide/fhir-standards-wales-implementation-guide?ver
 
 <!-- row 3-->
 <tr>
-<td align="center"><a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2?version=1.1.3" title="Click for the version of UK Core which is currently being balloted by HL7 UK">{{render:HL7FHIRUKCoreR4/vihb}}</td>
+<td align="center">&nbsp;&nbsp;</td>
 <td align="center">&nbsp;&nbsp;</td>
 <td align="center"><a href="https://simplifier.net/guide/HL7FHIRUKCoreDesignandDevelopmentApproach/Home/Management/Version-Management?version=current" title="click to see the versioning approach used in the UK Core">{{render:HL7FHIRUKCoreR4/va}}</td>
 <td align="center">&nbsp;&nbsp;</td>
@@ -163,35 +163,6 @@ href="https://simplifier.net/guide/fhir-standards-wales-implementation-guide?ver
 <td align="center">&nbsp;&nbsp;</td>
 <td align="center"><a href="https://simplifier.net/guide/HL7FHIRUKCoreDesignandDevelopmentApproach/Home/Engagement?version=current" title="Click to learn about engagement">{{render:HL7FHIRUKCoreR4/eng}}</td>
 </tr>
-<!-- row 4-->
-<tr>
-<td align="center"><a href="https://simplifier.net/guide/ukcoreversionhistory/home" title="Click for the version history of the UK Core">{{render:HL7FHIRUKCoreR4/ukvh}}</td>
-<td align="center">&nbsp;&nbsp;</td>
-<td align="center"></td>
-<td align="center">&nbsp;&nbsp;</td>
-<td align="center"></td>
-<td align="center">&nbsp;&nbsp;</td>
-<td align="center"></td>
-<td align="center">&nbsp;&nbsp;</td>
-<td align="center"></td>
-<td align="center">&nbsp;&nbsp;</td>
-<td align="center"></td>
-</tr>
-<!-- row 5-->
-<tr>
-<td align="center"><a href="https://simplifier.net/guide/ukcoreimplementationguideassetsindevelopment/home" title="Click for the UK Core FHIR assets that are in the early stages of development">{{render:HL7FHIRUKCoreR4/ucdfa}}</td>
-<td align="center">&nbsp;&nbsp;</td>
-<td align="center">
-<td align="center">&nbsp;&nbsp;</td>
-<td align="center"></td>
-<td align="center">&nbsp;&nbsp;</td>
-<td align="center"></td>
-<td align="center">&nbsp;&nbsp;</td>
-<td align="center"></td>
-<td align="center">&nbsp;&nbsp;</td>
-<td align="center"></td>
-</tr>
-
 </table>
 
 
