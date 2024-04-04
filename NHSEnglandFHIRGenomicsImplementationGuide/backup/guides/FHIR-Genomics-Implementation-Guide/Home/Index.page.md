@@ -10,7 +10,7 @@ The **FHIR Genomics IG** Specification defines a set of draft HL7 FHIR R4 profil
 
 This Specification supports the ability to request genomic testing and receive results in NHS primary and secondary care settings. The scope of this guide is NHS England, though the rules and constraints defined are expected to apply to UK-wide Genomic Testing. 
 
-This Implementation Guide provides additional guidance, rules and constraints which extends the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2, to allow exchange of structured electronic test requests and responses. It is anticipated that the messaging specification and implementation guidance will be updated following First of Type (FoT) implementation.
+This Implementation Guide provides additional guidance, rules and constraints which extends the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory), currently STU2, to allow exchange of structured electronic test requests and responses. It is anticipated that the messaging specification and implementation guidance will be updated following First of Type (FoT) implementation.
 
 Potential future releases may include support for:
 
@@ -95,7 +95,7 @@ This section lists examples created to illustrate how to populate resources in c
          <!-- UK Core -->
             <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
                 <article class="nhsd-m-card">
-                    <a href="https://simplifier.net/guide/ukcoreversionhistory/home?version=current" class="nhsd-a-box-link " aria-label="UK Core Version History">
+                    <a href="https://simplifier.net/guide/ukcoreversionhistory" class="nhsd-a-box-link " aria-label="UK Core Version History">
                         <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
@@ -135,7 +135,7 @@ This section lists examples created to illustrate how to populate resources in c
            
             <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
                 <article class="nhsd-m-card">
-                    <a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1?version=current" class="nhsd-a-box-link " aria-label="View the NHS England Guidance">
+                    <a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1" class="nhsd-a-box-link " aria-label="View the NHS England Guidance">
                         <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
@@ -154,7 +154,7 @@ This section lists examples created to illustrate how to populate resources in c
             </div>
             <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
                 <article class="nhsd-m-card">
-                    <a href="https://simplifier.net/guide/pathology-fhir-implementation-guide?version=0.1" class="nhsd-a-box-link " aria-label="Read the NHS Digital Pathology Guidance">
+                    <a href="https://simplifier.net/guide/pathology-fhir-implementation-guide" class="nhsd-a-box-link " aria-label="Read the NHS Digital Pathology Guidance">
                         <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">

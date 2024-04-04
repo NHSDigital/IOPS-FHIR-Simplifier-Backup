@@ -32,9 +32,9 @@ The following sequence diagram represents the ideal workflow from submission of 
 
 The numbered prefixes in the sequence diagram above translate to the following examples:
 
-1. {{pagelink:Home/Examples/Subscription/Subscription-TaskNotification-Minimal.page.md}}
+1. {{pagelink:Home/Examples/Subscription/Subscription-MinimalTaskNotification-Example.page.md}}
 2. {{pagelink:Home/Examples/Bundle/Bundle-NonWGSTestOrderForm-Example.page.md}}
-3. {{pagelink:Home/Examples/Subscription/Subscription-DiagnosticReportNotification.page.md}}
+3. {{pagelink:Home/Examples/Subscription/Subscription-DiagnosticReportNotification-Example.page.md}}
 4. {{pagelink:Home/Examples/Specimen/Specimen-BloodEDTA-Example.page.md}}
 5. {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-Example.page.md}} 
 6. Same resource as in 5, posted to Home GLH, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-Example.page.md}} 
