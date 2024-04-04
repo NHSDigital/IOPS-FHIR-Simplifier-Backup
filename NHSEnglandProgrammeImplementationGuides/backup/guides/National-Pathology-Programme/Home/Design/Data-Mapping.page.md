@@ -44,7 +44,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>E186</td>
             <td>status of laboratory service</td>
             <td>SG2.STS.C555.9011</td>
-            <td>EDIFACT 'STATUS EVENT' (status of laboratory service report) is always set to 'UN' (Unspecified). Refer to the description of 'STATUS EVENT' (tag id C555) in LSR_04_A_001.doc.</td>
+            <td>'STATUS EVENT' (status of laboratory service report) is always set to 'UN' (Unspecified). Refer to the description of 'STATUS EVENT' (tag id C555) in LSR_04_A_001.doc.</td>
         </tr>
         <tr>
             <td>category</td>
@@ -152,7 +152,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
             <td></td>
         </tr>
-                <tr>
+        <tr>
             <td>code.coding.code</td>
             <td>E108</td>
             <td>measurable quantity attribute</td>
@@ -169,7 +169,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
         <tr>
             <td>code.coding.display</td>
             <td>E108</td>
-            <td>textual representation of the code for measurable quantity attribute </td>
+            <td>textual representation of the code for measurable quantity attribute</td>
             <td>SG18.INV.C847.9930</td>
             <td></td>
         </tr>
@@ -206,7 +206,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>E141</td>
             <td>comment to laboratory investigation result item</td>
             <td>SG18.FTX.C108.4440(1-5)</td>
-            <td>EDIFACT 'TEXT SUBJECT QUALIFIER' is set to a value of 'SPC' (Service provider's comment) when the associated free text relates to service provider comments on the test group. Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+            <td>'TEXT SUBJECT QUALIFIER' is set to a value of 'SPC' (Service provider's comment). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
         </tr>
         <tr>
             <td>specimen</td>
@@ -220,7 +220,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
             <td></td>
             <td></td>
-            <td>The mechanism for supporting test groups, component tests within test groups and standalone tests in EDIFACT is described in the definition of Segment Group 18 in LSR_04_A_001.doc.</td>
+            <td>The mechanism for supporting test groups, component tests within test groups and standalone tests in PMIP EDIFACT (NHS003) is described in the definition of Segment Group 18 in LSR_04_A_001.doc.</td>
         </tr>
    </tbody>
 </table>
@@ -282,7 +282,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
         <tr>
             <td>code.coding.display</td>
             <td>E108</td>
-            <td>textual representation of the code for measurable quantity attribute </td>
+            <td>textual representation of the code for measurable quantity attribute</td>
             <td>SG18.INV.C847.9930</td>
             <td></td>
         </tr>
@@ -336,6 +336,13 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
         </tr>
         <tr>
+            <td>valueString</td>
+            <td>E136</td>
+            <td>text value of a laboratory investigation result item</td>
+            <td>SG18.FTX.C108.4440(1-5)</td>
+            <td>'TEXT SUBJECT QUALIFIER' is set to a value of 'RIT' (Text value of a result). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+        </tr>
+        <tr>
             <td>dataAbsentReason</td>
             <td></td>
             <td></td>
@@ -347,14 +354,14 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>E137</td>
             <td>deviating result indicator</td>
             <td>SG18.RSL.7857</td>
-            <td>Partial mapping to EDIFACT 'RESULT NORMALCY INDICATOR, CODED' (also referred to as 'deviating result indicator'). Refer to the description of 'RESULT NORMALCY INDICATOR, CODED' (tag id 7857) in LSR_04_A_001.doc.</td>
+            <td>Partial mapping to 'RESULT NORMALCY INDICATOR, CODED' (also referred to as 'deviating result indicator'). Refer to the description of 'RESULT NORMALCY INDICATOR, CODED' (tag id 7857) in LSR_04_A_001.doc.</td>
         </tr>
         <tr>
             <td>note</td>
             <td>E141</td>
             <td>comment to laboratory investigation result item</td>
             <td>SG18.FTX.C108.4440(1-5)</td>
-            <td>EDIFACT 'TEXT SUBJECT QUALIFIER' is set to a value of 'SPC' (Service provider's comment) when the associated free text relates to service provider comments on the test group. Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+            <td>'TEXT SUBJECT QUALIFIER' is set to a value of 'SPC' (Service provider's comment). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
         </tr>
         <tr>
             <td>bodySite</td>
@@ -392,11 +399,22 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
         </tr>
         <tr>
+            <td>referenceRange.type</td>
+            <td rowspan="2">E148</td>
+            <td rowspan="2">reference population definition</td>
+            <td rowspan="2">SG20.FTX.C108.4440(1-5)</td>
+            <td rowspan="2">'TEXT SUBJECT QUALIFIER' is set to a value of 'RPD' (Reference population definition). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+        </tr>
+        <tr>
+            <td>referenceRange.appliesTo</td>
+        </tr>
+        <tr>
+        <tr>
             <td>referenceRange.text</td>
             <td>E330</td>
             <td>complex reference range information</td>
             <td>SG18.FTX.C108.4440(1-5)</td>
-            <td>EDIFACT 'TEXT SUBJECT QUALIFIER' is set to a value of 'CRR' (Complex reference range information) when the associated free text relates to reference range text. Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+            <td>'TEXT SUBJECT QUALIFIER' is set to a value of 'CRR' (Complex reference range information). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
         </tr>
         <tr>
             <td>component</td>
@@ -665,9 +683,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>SG16.FTX.C108.4440(1-5)</td>
             <td></td>
         </tr>
-   </tbody>
-   </tbody>
-   </tbody>
+    </tbody>
 </table>
 
 

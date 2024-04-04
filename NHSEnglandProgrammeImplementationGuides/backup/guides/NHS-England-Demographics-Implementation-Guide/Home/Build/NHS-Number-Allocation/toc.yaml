@@ -2,5 +2,7 @@
   filename: Overview.page.md
 - name: Profile-Patient-PDS
   filename: Profile-Patient-PDS.page.md
-- name: Use Case 1 - Create a record for a new patient
-  filename: Use-Case-1-Create-a-record-for-a-new-patient.page.md
+- name: Use Case 1 - New patient with Minimum Information Required
+  filename: Use-Case-1-New-patient-with-minimum-Information-Required.page.md
+- name: Use Case 2 - New patient with Interpreter Required
+  filename: Use-Case-2-New-patient-with-Interpreter-Required.page.md
