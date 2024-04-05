@@ -1,8 +1,8 @@
-- name: Overview
-  filename: Overview.page.md
-- name: Profile-Patient-PDS
-  filename: Profile-Patient-PDS.page.md
-- name: Use Case 1 - New patient with Minimum Information Required
-  filename: Use-Case-1-New-patient-with-minimum-Information-Required.page.md
-- name: Use Case 2 - New patient with Interpreter Required
-  filename: Use-Case-2-New-patient-with-Interpreter-Required.page.md
+- name: Index
+  filename: Index.page.md
+- name: Process Map
+  filename: Process-Map.page.md
+- name: Example 1 - New patient with Minimum Information Required
+  filename: Example-1-New-patient-with-Minimum-Information-Required.page.md
+- name: Example 2 - New patient with Interpreter Required
+  filename: Example-2-New-patient-with-Interpreter-Required.page.md
