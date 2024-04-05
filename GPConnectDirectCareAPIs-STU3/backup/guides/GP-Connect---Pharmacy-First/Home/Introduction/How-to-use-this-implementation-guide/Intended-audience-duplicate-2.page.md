@@ -5,7 +5,7 @@
         <tr>
             <th data-no-sort>Intention</th>
             <th>Audience</th>
-            <th>Description</th>
+            <th>Description</th> 
         </tr>
     </thead>
     <tbody>
