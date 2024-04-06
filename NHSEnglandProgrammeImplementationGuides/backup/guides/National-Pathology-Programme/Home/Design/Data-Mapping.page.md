@@ -399,14 +399,11 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
         </tr>
         <tr>
-            <td>referenceRange.type</td>
+            <td>referenceRange.type<br>referenceRange.appliesTo</td>
             <td rowspan="2">E148</td>
             <td rowspan="2">reference population definition</td>
             <td rowspan="2">SG20.FTX.C108.4440(1-5)</td>
             <td rowspan="2">'TEXT SUBJECT QUALIFIER' is set to a value of 'RPD' (Reference population definition). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
-        </tr>
-        <tr>
-            <td>referenceRange.appliesTo</td>
         </tr>
         <tr>
         <tr>
@@ -421,6 +418,98 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+        </tr>
+   </tbody>
+</table>
+
+<br>
+
+### UKCore-Patient
+
+<table class="regular">
+    <thead>
+        <tr>
+            <th colspan="1">{{pagelink:R4Patient}}</th>
+            <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
+        </tr>
+        <tr>
+            <th width="22.5%">FHIR Element Name</th>
+            <th width="10%">Attribute Id</th>
+            <th width="27.5%">Attribute Name</th>
+            <th width="17.5%">Message Mapping</th>
+            <th width="27.5%">Notes</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>identifier.value</td>
+            <td>E202</td>
+            <td>official patient identification</td>
+            <td>SG7.PNA.C206.7402</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>identifier.value</td>
+            <td>E294</td>
+            <td>identification of subject of investigation by laboratory service provider</td>
+            <td>SG6.RFF.C506.1154</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>name.family</td>
+            <td>E313</td>
+            <td>family name</td>
+            <td>SG7.PNA.C816(1).3836</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>name.given</td>
+            <td>E314</td>
+            <td>first given name</td>
+            <td>SG7.PNA.C816(2).3836</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>name.given</td>
+            <td>E315</td>
+            <td>middle name</td>
+            <td>SG7.PNA.C816(3).3836</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>name.prefix</td>
+            <td>E316</td>
+            <td>title</td>
+            <td>SG7.PNA.C816(4).3836</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>gender</td>
+            <td>E217</td>
+            <td>patient administrative sex</td>
+            <td>SG7.PDI.3917</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>birthDate</td>
+            <td>E218</td>
+            <td>date and time of birth</td>
+            <td>SG7.DTM.C507.2380</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>address.line<br>address.city</td>
+            <td>E311</td>
+            <td>unstructured address lines</td>
+            <td>SG6.ADR.C090.3794(1-5)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>address.postalCode</td>
+            <td>E307</td>
+            <td>postal code</td>
+            <td>SG6.ADR.3251</td>
             <td></td>
         </tr>
    </tbody>
@@ -496,9 +585,9 @@ The constraints that need to be applied to each FHIR resource using the relevant
         </tr>
         <tr>
             <td>authoredOn</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>E154</td>
+            <td>issue date and time of laboratory service order</td>
+            <td>SG4.DTM.C507.2380</td>
             <td></td>
         </tr>
         <tr>
@@ -685,6 +774,4 @@ The constraints that need to be applied to each FHIR resource using the relevant
         </tr>
     </tbody>
 </table>
-
-
 
