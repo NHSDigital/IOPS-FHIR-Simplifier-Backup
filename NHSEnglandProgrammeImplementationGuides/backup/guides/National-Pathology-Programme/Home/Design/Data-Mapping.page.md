@@ -517,6 +517,49 @@ The constraints that need to be applied to each FHIR resource using the relevant
 
 <br>
 
+### UKCore-Practitioner (Requester)
+
+<table class="regular">
+    <thead>
+        <tr>
+            <th colspan="1">{{pagelink:R4Practitioner}}</th>
+            <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
+        </tr>
+        <tr>
+            <th width="22.5%">FHIR Element Name</th>
+            <th width="10%">Attribute Id</th>
+            <th width="27.5%">Attribute Name</th>
+            <th width="17.5%">Message Mapping</th>
+            <th width="27.5%">Notes</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>identifier</td>
+            <td>E084</td>
+            <td>healthcare registration identification</td>
+            <td>SG1.NAD.C082.3039</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>name.family<br>name.given<br>name.prefix</td>
+            <td>E092</td>
+            <td>person name details</td>
+            <td>SG1.NAD.C080.3036(1-2)<td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td>telecom</td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
 ### UKCore-ServiceRequest-Lab
 
 <table class="regular">
@@ -536,10 +579,17 @@ The constraints that need to be applied to each FHIR resource using the relevant
     <tbody>
         <tr>
             <td>identifier</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>E152</td>
+            <td>identification of laboratory service order by laboratory service requester</td>
+            <td>SG4.RFF.C506.1154</td>
+            <td>'Reference qualifier' is set to a value of 'ROI' (Order ID by service requester). Refer to the description of 'Reference qualifier' (tag id 1153) in LSR_04_A_001.doc.</td></td>
+        </tr>
+        <tr>
+            <td>identifier</td>
+            <td>E153</td>
+            <td>identification of laboratory service order by laboratory service provider</td>
+            <td>SG4.RFF.C506.1154</td>
+            <td>'Reference qualifier' is set to a value of 'SOI' (Order ID by service provider). Refer to the description of 'Reference qualifier' (tag id 1153) in LSR_04_A_001.doc.</td>
         </tr>
         <tr>
             <td>requisition</td>
