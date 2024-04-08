@@ -517,6 +517,63 @@ The constraints that need to be applied to each FHIR resource using the relevant
 
 <br>
 
+### UKCore-Organization (Performing Organisation)
+
+<table class="regular">
+    <thead>
+        <tr>
+            <th colspan="1">{{pagelink:R4Organization}}</th>
+            <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
+        </tr>
+        <tr>
+            <th width="22.5%">FHIR Element Name</th>
+            <th width="10%">Attribute Id</th>
+            <th width="27.5%">Attribute Name</th>
+            <th width="17.5%">Message Mapping</th>
+            <th width="27.5%">Notes</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>identifier</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>active</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>E080</td>
+            <td>name of healthcare organisation</td>
+            <td>SG1.NAD.C080.3036(1-2)<td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>telecom</td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>address</td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
 ### UKCore-Practitioner (Requester)
 
 <table class="regular">

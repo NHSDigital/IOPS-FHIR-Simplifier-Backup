@@ -6,6 +6,8 @@
   filename: Data-Mapping.page.md
 - name: Diagram
   filename: Diagram.page.md
+- name: Diagram 2
+  filename: Diagram-2.page.md
 - name: Transport
   filename: Transport.page.md
 - name: Error Handling
