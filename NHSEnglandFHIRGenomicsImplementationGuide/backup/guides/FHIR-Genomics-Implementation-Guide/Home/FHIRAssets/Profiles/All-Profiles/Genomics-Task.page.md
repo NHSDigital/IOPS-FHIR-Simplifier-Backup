@@ -8,7 +8,7 @@ Tasks will be automatically created by the central service but updates to status
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task&scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release) | [UKCore]() | trial-use |
+| [http://hl7.org/fhir/StructureDefinition/Task](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Task&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
 <br>
 
@@ -35,17 +35,17 @@ Tasks will be automatically created by the central service but updates to status
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task, snapshot}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/Task, snapshot}}
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
          Differential from {{link:http://hl7.org/fhir/StructureDefinition/Task}} <br>
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task, diff}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/Task, diff}}
         </div>
         <div id="Dictionary" role="tabpanel" class="tab-pane">
             <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task, hybrid}}
+            {{dict:http://hl7.org/fhir/StructureDefinition/Task, hybrid}}
         </div>
         <div id="Examples" role="tabpanel" class="tab-pane">
             <br />
@@ -211,7 +211,7 @@ Tasks will be automatically created by the central service but updates to status
             <br />
             @```
             from StructureDefinition
-            where url='https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task'
+            where url='http://hl7.org/fhir/StructureDefinition/Task'
             for differential.element.constraint
             select key, human, severity, expression
             ```
@@ -236,7 +236,7 @@ Profiles indicating preferred element cardinality for use in Genomics, not to be
 
 @```
 from StructureDefinition
-where baseDefinition='https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task' 
+where baseDefinition='http://hl7.org/fhir/StructureDefinition/Task' 
 select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier&scope=NHS-Digital-FHIR-Genomics-Implementation-Guide@current&canonical='+ url + '">'+url+'</a>'
 ```
 

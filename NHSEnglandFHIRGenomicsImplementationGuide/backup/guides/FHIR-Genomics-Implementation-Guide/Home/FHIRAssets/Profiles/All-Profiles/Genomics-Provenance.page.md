@@ -6,7 +6,7 @@ The draft profile for the UK Core Provenance is provided below for completeness.
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance&scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release) | [UKCore]() | trial-use |
+| [http://hl7.org/fhir/StructureDefinition/Provenance](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Provenance&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
 <br>
 
@@ -84,7 +84,7 @@ The draft profile for the UK Core Provenance is provided below for completeness.
             <br />
             @```
             from StructureDefinition
-            where url='https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance'
+            where url='http://hl7.org/fhir/StructureDefinition/Provenance'
             for differential.element.constraint
             select key, human, severity, expression
             ```
@@ -104,7 +104,7 @@ Profiles indicating preferred element cardinality for use in Genomics, not to be
 
 @```
 from StructureDefinition
-where baseDefinition='https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance' 
+where baseDefinition='http://hl7.org/fhir/StructureDefinition/Provenance' 
 select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier&scope=NHS-Digital-FHIR-Genomics-Implementation-Guide@current&canonical='+ url + '">'+url+'</a>'
 ```
 

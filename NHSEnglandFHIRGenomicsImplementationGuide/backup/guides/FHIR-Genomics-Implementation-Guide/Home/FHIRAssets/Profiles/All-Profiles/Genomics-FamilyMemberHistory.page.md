@@ -12,7 +12,7 @@ The CareConnect profile will be uplifted to the R4 UKCore in a future release
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory&scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release) | [UKCore]() | trial-use |
+| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
 
 <br>
 

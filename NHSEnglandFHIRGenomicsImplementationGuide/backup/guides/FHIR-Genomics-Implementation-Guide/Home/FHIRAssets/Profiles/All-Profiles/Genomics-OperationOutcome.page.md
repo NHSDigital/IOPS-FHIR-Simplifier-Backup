@@ -8,7 +8,7 @@ It is expected that all issue codes raised by the Genomic Medicine Service will 
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome&scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release) | [UKCore]() | trial-use |
+| [http://hl7.org/fhir/StructureDefinition/OperationOutcome](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/OperationOutcome&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
 <br>
 
@@ -35,17 +35,17 @@ It is expected that all issue codes raised by the Genomic Medicine Service will 
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
             <br />
-            {{tree: https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome, snapshot}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/OperationOutcome, snapshot}}
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
          Differential from {{link:http://hl7.org/fhir/StructureDefinition/OperationOutcome}} <br>
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome, diff}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/OperationOutcome, diff}}
         </div>
         <div id="Dictionary" role="tabpanel" class="tab-pane">
             <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome, hybrid}}
+            {{dict:http://hl7.org/fhir/StructureDefinition/OperationOutcome, hybrid}}
         </div>
         <div id="Examples" role="tabpanel" class="tab-pane">
             <br />
@@ -61,7 +61,7 @@ It is expected that all issue codes raised by the Genomic Medicine Service will 
             <br />
             @```
             from StructureDefinition
-            where url=':https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome'
+            where url=':http://hl7.org/fhir/StructureDefinition/OperationOutcome'
             for differential.element.constraint
             select key, human, severity, expression
             ```

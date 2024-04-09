@@ -123,7 +123,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan",
+              "http://hl7.org/fhir/StructureDefinition/CarePlan",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics"
             ],
@@ -187,7 +187,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Group",
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "http://hl7.org/fhir/StructureDefinition/Device",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
             ],
@@ -229,7 +229,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "http://hl7.org/fhir/StructureDefinition/Device",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",
@@ -250,8 +250,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam",
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/Device",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
@@ -289,7 +289,7 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics"
             ],

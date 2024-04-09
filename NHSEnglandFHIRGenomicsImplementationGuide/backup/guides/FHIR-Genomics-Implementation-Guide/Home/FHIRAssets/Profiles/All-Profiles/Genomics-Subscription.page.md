@@ -8,7 +8,7 @@ In the Alpha build of the Genomic Medicine Service, MESH/email will be used as t
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.nhs.uk/StructureDefinition/England-Subscription](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.nhs.uk/StructureDefinition/England-Subscription&scope=uk.nhsdigital.r4.test@2.8.15-prerelease) | [NHSDigital]() | trial-use |
+| [http://hl7.org/fhir/StructureDefinition/Subscription](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Subscription&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
 <br>
 
@@ -35,17 +35,17 @@ In the Alpha build of the Genomic Medicine Service, MESH/email will be used as t
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
             <br />
-            {{tree: https://fhir.nhs.uk/StructureDefinition/England-Subscription, snapshot}}
+            {{tree: http://hl7.org/fhir/StructureDefinition/Subscription, snapshot}}
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
          Differential from {{link:http://hl7.org/fhir/StructureDefinition/Subscription}} <br>
             <br />
-            {{tree:https://fhir.nhs.uk/StructureDefinition/England-Subscription, diff}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/Subscription, diff}}
         </div>
         <div id="Dictionary" role="tabpanel" class="tab-pane">
             <br />
-            {{dict:https://fhir.nhs.uk/StructureDefinition/England-Subscription, hybrid}}
+            {{dict:http://hl7.org/fhir/StructureDefinition/Subscription, hybrid}}
         </div>
         <div id="Examples" role="tabpanel" class="tab-pane">
             <br />
@@ -71,7 +71,7 @@ In the Alpha build of the Genomic Medicine Service, MESH/email will be used as t
             <br />
             @```
             from StructureDefinition
-            where url=':https://fhir.nhs.uk/StructureDefinition/England-Subscription'
+            where url=':http://hl7.org/fhir/StructureDefinition/Subscription'
             for differential.element.constraint
             select key, human, severity, expression
             ```

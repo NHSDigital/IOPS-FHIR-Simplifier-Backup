@@ -10,7 +10,7 @@ The below profile is therefore provided to support parsing for clients if return
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent&scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release) | [UKCore]() | trial-use |
+| [http://hl7.org/fhir/StructureDefinition/AuditEvent](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/AuditEvent&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
 <br>
 
@@ -37,17 +37,17 @@ The below profile is therefore provided to support parsing for clients if return
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent, snapshot}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/AuditEvent, snapshot}}
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
          Differential from {{link:http://hl7.org/fhir/StructureDefinition/AuditEvent}} <br>
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent, diff}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/AuditEvent, diff}}
         </div>
         <div id="Dictionary" role="tabpanel" class="tab-pane">
             <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent, hybrid}}
+            {{dict:http://hl7.org/fhir/StructureDefinition/AuditEvent, hybrid}}
         </div>
         <div id="Examples" role="tabpanel" class="tab-pane">
             <br />
@@ -68,7 +68,7 @@ The below profile is therefore provided to support parsing for clients if return
             <br />
             @```
             from StructureDefinition
-            where url='https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent'
+            where url='http://hl7.org/fhir/StructureDefinition/AuditEvent'
             for differential.element.constraint
             select key, human, severity, expression
             ```
@@ -88,7 +88,7 @@ Profiles indicating preferred element cardinality for use in Genomics, not to be
 
 @```
 from StructureDefinition
-where baseDefinition='https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent' 
+where baseDefinition='http://hl7.org/fhir/StructureDefinition/AuditEvent' 
 select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier&scope=NHS-Digital-FHIR-Genomics-Implementation-Guide@current&canonical='+ url + '">'+url+'</a>'
 ```
 <br>

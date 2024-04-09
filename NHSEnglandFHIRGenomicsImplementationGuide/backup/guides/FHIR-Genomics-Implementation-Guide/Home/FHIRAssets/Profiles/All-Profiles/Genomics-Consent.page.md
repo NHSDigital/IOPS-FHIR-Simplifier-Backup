@@ -6,7 +6,7 @@ Only a minimal amount of mandatory information needs to be populated.
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent&scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release) | [UKCore]() | trial-use |
+| [http://hl7.org/fhir/StructureDefinition/Consent](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Consent&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
 <br>
 
@@ -33,17 +33,17 @@ Only a minimal amount of mandatory information needs to be populated.
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent, snapshot}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/Consent, snapshot}}
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
          Differential from {{link:http://hl7.org/fhir/StructureDefinition/Consent}} <br>
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent, diff}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/Consent, diff}}
         </div>
         <div id="Dictionary" role="tabpanel" class="tab-pane">
             <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent, hybrid}}
+            {{dict:http://hl7.org/fhir/StructureDefinition/Consent, hybrid}}
         </div>
         <div id="Examples" role="tabpanel" class="tab-pane">
             <br />
@@ -89,7 +89,7 @@ Only a minimal amount of mandatory information needs to be populated.
             <br />
             @```
             from StructureDefinition
-            where url='https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent'
+            where url='http://hl7.org/fhir/StructureDefinition/Consent'
             for differential.element.constraint
             select key, human, severity, expression
             ```
@@ -111,7 +111,7 @@ Profiles indicating preferred element cardinality for use in Genomics, not to be
 
 @```
 from StructureDefinition
-where baseDefinition='https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent' 
+where baseDefinition='http://hl7.org/fhir/StructureDefinition/Consent' 
 select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier&scope=NHS-Digital-FHIR-Genomics-Implementation-Guide@current&canonical='+ url + '">'+url+'</a>'
 ```
 

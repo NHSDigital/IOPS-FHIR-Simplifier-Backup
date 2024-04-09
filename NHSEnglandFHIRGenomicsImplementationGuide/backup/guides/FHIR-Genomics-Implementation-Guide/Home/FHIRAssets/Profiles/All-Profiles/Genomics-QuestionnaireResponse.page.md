@@ -8,7 +8,7 @@ No additional guidance has been provided on this page as there are no Genomic-sp
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse&scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release) | [UKCore]() | trial-use |
+| [http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
 <br>
 
@@ -35,17 +35,17 @@ No additional guidance has been provided on this page as there are no Genomic-sp
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
             <br />
-            {{tree: https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse, snapshot}}
+            {{tree: http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse, snapshot}}
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
          Differential from {{link:http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse}} <br>
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse, diff}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse, diff}}
         </div>
         <div id="Dictionary" role="tabpanel" class="tab-pane">
             <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse, hybrid}}
+            {{dict:http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse, hybrid}}
         </div>
         <div id="Examples" role="tabpanel" class="tab-pane">
             <br />
@@ -91,7 +91,7 @@ No additional guidance has been provided on this page as there are no Genomic-sp
             <br />
             @```
             from StructureDefinition
-            where url=':https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse'
+            where url=':http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse'
             for differential.element.constraint
             select key, human, severity, expression
             ```

@@ -89,7 +89,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Group",
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "http://hl7.org/fhir/StructureDefinition/Device",
               "http://hl7.org/fhir/StructureDefinition/Substance",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"

@@ -43,5 +43,21 @@
       "value": "RH8"
     },
     "display": "ROYAL DEVON UNIVERSITY HEALTHCARE NHS FOUNDATION TRUST"
-  }
+  },
+  "output": [
+    {
+      "type": {
+        "coding":  [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "123038009",
+            "display": "Specimen"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Specimen/Specimen-JamesMetcalfeBloodEDTA-Example"
+      }
+    }
+  ]
 }

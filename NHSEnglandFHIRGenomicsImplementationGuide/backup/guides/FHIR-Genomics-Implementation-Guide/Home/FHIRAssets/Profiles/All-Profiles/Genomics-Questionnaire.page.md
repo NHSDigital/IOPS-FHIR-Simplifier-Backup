@@ -8,7 +8,7 @@ It is not expected that any Questionnaire resources will be submitted to the cen
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire&scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release) | [UKCore]() | trial-use |
+| [http://hl7.org/fhir/StructureDefinition/Questionnaire](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Questionnaire&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
 <br>
 
@@ -35,17 +35,17 @@ It is not expected that any Questionnaire resources will be submitted to the cen
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
             <br />
-            {{tree: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire, snapshot}}
+            {{tree: http://hl7.org/fhir/StructureDefinition/Questionnaire, snapshot}}
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
          Differential from {{link:http://hl7.org/fhir/StructureDefinition/Questionnaire}} <br>
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire, diff}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/Questionnaire, diff}}
         </div>
         <div id="Dictionary" role="tabpanel" class="tab-pane">
             <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire, hybrid}}
+            {{dict:http://hl7.org/fhir/StructureDefinition/Questionnaire, hybrid}}
         </div>
         <div id="Examples" role="tabpanel" class="tab-pane">
             <br />
@@ -71,7 +71,7 @@ It is not expected that any Questionnaire resources will be submitted to the cen
             <br />
             @```
             from StructureDefinition
-            where url=':https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire'
+            where url=':http://hl7.org/fhir/StructureDefinition/Questionnaire'
             for differential.element.constraint
             select key, human, severity, expression
             ```

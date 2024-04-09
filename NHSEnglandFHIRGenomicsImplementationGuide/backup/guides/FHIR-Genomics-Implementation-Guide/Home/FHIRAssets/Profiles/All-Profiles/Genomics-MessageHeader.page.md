@@ -39,7 +39,7 @@ The following profile page is provided in case future use cases identify the nee
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
-         Differential from {{link:https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader}} <br>
+         Differential from {{link:http://hl7.org/fhir/StructureDefinition/MessageHeader}} <br>
             <br />
             {{tree:https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics, diff}}
         </div>
