@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: New patient with Minimum Information Required
+  filename: New-patient-with-Minimum-Information-Required.page.md
+- name: New patient with Interpreter Required
+  filename: New-patient-with-Interpreter-Required.page.md

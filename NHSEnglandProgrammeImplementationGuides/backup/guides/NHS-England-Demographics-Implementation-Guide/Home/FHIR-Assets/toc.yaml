@@ -4,3 +4,5 @@
   filename: CapabilityStatement
 - name: Profiles
   filename: Profiles
+- name: Examples
+  filename: Examples

@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-Insert content for developers and techbical architects here 
+Insert content for developers and technical architects here 
 
 Content is currently on [Confluence](https://nhsd-confluence.digital.nhs.uk/pages/viewpage.action?pageId=768054103)
 

@@ -1,0 +1,66 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-RegistrationAlbertEinsteinCommunication-Example",
+  "text": {
+    "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Albert Einstein has returned to England after spending many years abroad. Albert has changed his name several times and can't remember any addresses he had in England. He does remember being in hospital as a child in Devon.<br /><br /> Amy Armstrong tries several Queries using some of the names Albert has used over the years but she can find no record for Albert. She decides to allocate an NHS Number and completes the on screen record with the mandatory information that Albert provides, address, telephone, name, gender, date of birth. She also asks Albert for his preferences and adds his preferred contact method, preferred written communication format and preferred language and interpreter required, she also marks the record to say that Albert has had previous NHS contact.</div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/England/StructureDefinition/England-Patient-PDS"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+      "valueBoolean": true
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Einstein",
+      "given": [
+        "Albert"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1879-03-14",
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "35 Market St",
+        "Kirkby Stephen",
+        "Cumbria"
+      ],
+      "postalCode": "CA17 4QN"
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "en",
+            "display": "English"
+          }
+        ]
+      }
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "de",
+            "display": "German"
+          }
+        ]
+      },
+      "preferred": true
+    }
+  ]
+}
