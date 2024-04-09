@@ -17,4 +17,8 @@ More information about the constraints on the <code>UKCore-Observation-Lab</code
 </tr>
 </table>
 
+<br />
+
+*for more guidance see the {{pagelink:dataAbsentReason}} section below*
+
 ---
