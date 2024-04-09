@@ -35,7 +35,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Group",
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "http://hl7.org/fhir/StructureDefinition/Device",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics"
             ],
@@ -92,7 +92,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",

@@ -7,8 +7,8 @@ The profile for the UKCore-Bundle is provided below for completeness.
 Bundles within Genomics will be limited to Transactions for Test orders and updates.
 
 | Profile url | FHIR Module | Normative Status |
-|--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle&scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release) | [UKCore]() | trial-use |
+|--|
+| [http://hl7.org/fhir/StructureDefinition/Bundle](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Bundle&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
 <br>
 
@@ -35,17 +35,17 @@ Bundles within Genomics will be limited to Transactions for Test orders and upda
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
             <br />
-            {{tree: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle, snapshot}}
+            {{tree: http://hl7.org/fhir/StructureDefinition/Bundle, snapshot}}
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
          Differential from {{link:http://hl7.org/fhir/StructureDefinition/Bundle}} <br>
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle, diff}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/Bundle, diff}}
         </div>
         <div id="Dictionary" role="tabpanel" class="tab-pane">
             <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle, hybrid}}
+            {{dict:http://hl7.org/fhir/StructureDefinition/Bundle, hybrid}}
         </div>
         <div id="Examples" role="tabpanel" class="tab-pane">
             <br />
@@ -86,7 +86,7 @@ Bundles within Genomics will be limited to Transactions for Test orders and upda
             <br />
             @```
             from StructureDefinition
-            where url=':https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle'
+            where url=':http://hl7.org/fhir/StructureDefinition/Bundle'
             for differential.element.constraint
             select key, human, severity, expression
             ```

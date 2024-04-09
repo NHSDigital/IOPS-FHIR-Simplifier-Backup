@@ -65,7 +65,7 @@
 			"resource":  [
 				{
 					"type": "AuditEvent",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent",
+					"profile": "http://hl7.org/fhir/StructureDefinition/AuditEvent",
 					"documentation": "For searching recorded AuditEvents",
 					"interaction": [
 						{
@@ -104,7 +104,7 @@
 				},
 				{
 					"type": "Bundle",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle", 
+					"profile": "http://hl7.org/fhir/StructureDefinition/Bundle", 
 					"documentation": "For posting FHIR transaction bundles (http://hl7.org/fhir/R4B/http.html#transaction) to the server.",
 					"interaction": [
 						{
@@ -280,7 +280,7 @@
 				},
 				{
 					"type": "MessageDefinition",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageDefinition-Genomics",
+					"profile": "http://hl7.org/fhir/StructureDefinition/MessageDefinition",
 					"documentation": "For searching supported MessageDefinitions",
 					"interaction": [
 						{
@@ -416,7 +416,7 @@
 				},
 				{
 					"type": "MessageHeader",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics",
+					"profile": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
 					"documentation": "Endpoints for interacting with MessageHeader resources",
 					"interaction": [
 						{
@@ -523,7 +523,7 @@
 				},
 				{
 					"type": "CapabilityStatement",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-CapabilityStatement",
+					"profile": "http://hl7.org/fhir/StructureDefinition/CapabilityStatement",
 					"documentation": "For searching provided CapabilityStatements",
 					"interaction": [
 						{
@@ -566,7 +566,7 @@
 				},
 				{
 					"type": "Task",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Task",
 					"documentation": "Endpoints for interacting with Task resources",
 					"interaction": [
 						{
@@ -1253,7 +1253,7 @@
 				},
 				{
 					"type": "Consent",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Consent",
 					"documentation": "Endpoints for interacting with Consent resources",
 					"interaction": [
 						{
@@ -1540,7 +1540,7 @@
 				},
 				{
 					"type": "Questionnaire",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
 					"documentation": "For searching supported Questionnaires",
 					"interaction": [
 						{
@@ -1587,7 +1587,7 @@
 				},
 				{
 					"type": "QuestionnaireResponse",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
+					"profile": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
 					"documentation": "Endpoints for interacting with QuestionnaireResponse resources",
 					"interaction": [
 						{
@@ -1654,11 +1654,11 @@
 				},
 				{
 					"type": "OperationDefinition",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-OperationDefinition"
+					"profile": "https://hl7.org/fhir/StructureDefinition/OperationDefinition"
 				},
 				{
 					"type": "OperationOutcome",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome",
+					"profile": "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
 					"documentation": "For searching historical OperationOutcomes",
 					"interaction": [
 						{
@@ -1726,7 +1726,7 @@
 				},
 				{
 					"type": "Provenance",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Provenance",
 					"documentation": "For searching stored Provenance resources",
 					"interaction": [
 						{

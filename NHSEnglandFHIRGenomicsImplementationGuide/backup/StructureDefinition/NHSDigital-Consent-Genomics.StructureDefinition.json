@@ -7,7 +7,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Consent",
-  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Consent",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -89,9 +89,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
               "http://hl7.org/fhir/StructureDefinition/Contract",
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
+              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Consent-Genomics"
             ],
             "aggregation": [
@@ -132,9 +132,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device",
+              "http://hl7.org/fhir/StructureDefinition/Device",
               "http://hl7.org/fhir/StructureDefinition/Group",
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient-Genomics",

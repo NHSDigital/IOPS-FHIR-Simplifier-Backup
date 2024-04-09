@@ -33,11 +33,11 @@
 			"resource": [
 				{
 					"type": "AuditEvent",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent"
+					"profile": "http://hl7.org/fhir/StructureDefinition/AuditEvent"
 				},
 				{
 					"type": "Bundle",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle"
+					"profile": "http://hl7.org/fhir/StructureDefinition/Bundle"
 				},
 				{
 					"type": "CodeSystem",
@@ -53,7 +53,7 @@
 				},
 				{
 					"type": "MessageDefinition",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageDefinition-Genomics"
+					"profile": "http://hl7.org/fhir/StructureDefinition/MessageDefinition"
 				},
 				{
 					"type": "NamingSystem",
@@ -73,7 +73,7 @@
 				},
 				{
 					"type": "MessageHeader",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader-Genomics"
+					"profile": "http://hl7.org/fhir/StructureDefinition/MessageHeader"
 				},
 				{
 					"type": "Subscription",
@@ -81,11 +81,11 @@
 				},
 				{
 					"type": "CapabilityStatement",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-CapabilityStatement"
+					"profile": "http://hl7.org/fhir/StructureDefinition/CapabilityStatement"
 				},
 				{
 					"type": "Task",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"
+					"profile": "http://hl7.org/fhir/StructureDefinition/Task"
 				},
 				{
 					"type": "ServiceRequest",
@@ -121,7 +121,7 @@
 				},
 				{
 					"type": "Consent",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"
+					"profile": "http://hl7.org/fhir/StructureDefinition/Consent"
 				},
 				{
 					"type": "Condition",
@@ -141,19 +141,19 @@
 				},
 				{
 					"type": "Questionnaire",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire"
+					"profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire"
 				},
 				{
 					"type": "QuestionnaireResponse",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"
+					"profile": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"
 				},
 				{
 					"type": "OperationDefinition",
-					"profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-OperationDefinition"
+					"profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
 				},
 				{
 					"type": "OperationOutcome",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome"
+					"profile": "http://hl7.org/fhir/StructureDefinition/OperationOutcome"
 				},
 				{
 					"type": "BodyStructure",
@@ -161,7 +161,7 @@
 				},
 				{
 					"type": "Provenance",
-					"profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance"
+					"profile": "http://hl7.org/fhir/StructureDefinition/Provenance"
 				}
 			]
 		}

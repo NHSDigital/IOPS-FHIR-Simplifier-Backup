@@ -7,7 +7,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "MessageHeader",
-  "baseDefinition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
   "derivation": "constraint",
   "differential": {
     "element": [

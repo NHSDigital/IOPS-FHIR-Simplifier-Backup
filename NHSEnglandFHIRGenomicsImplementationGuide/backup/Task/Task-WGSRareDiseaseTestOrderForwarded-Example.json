@@ -43,5 +43,21 @@
       "value": "8J834"
     },
     "display": "GENOMICS ENGLAND"
-  }
+  },
+  "input": [
+    {
+      "type": {
+        "coding":  [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "123038009",
+            "display": "Specimen"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Specimen/Specimen-BloodEDTA-Example"
+      }
+    }
+  ]
 }

@@ -49,7 +49,7 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance",
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
+              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics",

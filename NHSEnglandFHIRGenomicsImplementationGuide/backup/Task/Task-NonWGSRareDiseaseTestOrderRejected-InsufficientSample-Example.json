@@ -48,5 +48,21 @@
         {
             "text": "Please provide additional sample of X"
         }
+    ],
+    "output":  [
+        {
+            "type": {
+                "coding":  [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "123038009",
+                        "display": "Specimen"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "Specimen/Specimen-CancerSolidTumor-Example"
+            }
+        }
     ]
 }

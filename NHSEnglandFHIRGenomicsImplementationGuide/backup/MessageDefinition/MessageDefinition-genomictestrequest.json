@@ -45,7 +45,7 @@
         },
         {
             "code": "QuestionnaireResponse",
-            "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse",
+            "profile": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
             "min": 0,
             "max": "1"
         },

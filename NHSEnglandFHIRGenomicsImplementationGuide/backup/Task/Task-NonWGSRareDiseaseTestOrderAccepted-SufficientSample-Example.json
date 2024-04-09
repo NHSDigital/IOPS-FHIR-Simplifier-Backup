@@ -48,5 +48,21 @@
         {
             "text": "Optional Free Text field to record any additional details"
         }
+    ],
+    "output": [
+        {
+            "type": {
+                "coding":  [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "123038009",
+                        "display": "Specimen"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "Specimen/Specimen-CancerSolidTumor-Example"
+            }
+        }
     ]
 }
