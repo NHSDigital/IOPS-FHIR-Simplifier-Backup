@@ -19,6 +19,6 @@ More information about the constraints on the <code>UKCore-Observation-Lab</code
 
 <br />
 
-*for more guidance see the {{pagelink:dataAbsentReason}} section below*
+*for more guidance see the <a href="#dataAbsentReason">dataAbsentReason</a> section below*
 
 ---
