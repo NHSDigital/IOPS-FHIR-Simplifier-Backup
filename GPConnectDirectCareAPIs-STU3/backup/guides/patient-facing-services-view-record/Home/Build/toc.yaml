@@ -8,5 +8,3 @@
   filename: FHIR-library
 - name: FHIR® implementation
   filename: FHIR-implementation
-- name: Returning data in lists
-  filename: Returning-data-in-lists

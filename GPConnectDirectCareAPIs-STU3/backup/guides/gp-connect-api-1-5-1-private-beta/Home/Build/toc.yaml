@@ -10,11 +10,9 @@
   filename: Search
 - name: Multi area searches
   filename: Multi-area-searches
-- name: Error handling
-  filename: Error-handling
-- name: Cross-organisation audit and provenance
-  filename: Cross-organisation-audit-and-provenance
 - name: API version compatibility
   filename: API-version-compatibility
 - name: Configuration for supported clinical areas
   filename: Configuration-for-supported-clinical-areas
+- name: Cross capability concerns
+  filename: Cross-capability-concerns

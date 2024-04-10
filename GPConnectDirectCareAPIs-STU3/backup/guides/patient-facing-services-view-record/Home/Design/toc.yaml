@@ -1,7 +1,3 @@
-- name: Design overview
-  filename: Design-overview
-- name: Design principles
-  filename: Design-principles
 - name: API design principles
   filename: API-design-principles
 - name: Data model principles
