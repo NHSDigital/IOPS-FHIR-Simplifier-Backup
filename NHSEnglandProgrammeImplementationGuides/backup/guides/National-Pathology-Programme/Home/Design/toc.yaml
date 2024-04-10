@@ -4,14 +4,6 @@
   filename: Design-Overview.page.md
 - name: Data Mapping
   filename: Data-Mapping.page.md
-- name: Data Mapping 2
-  filename: Data-Mapping-2.page.md
-- name: Diagram
-  filename: Diagram.page.md
-- name: Diagram 2
-  filename: Diagram-2.page.md
-- name: Diagram 3
-  filename: Diagram-3.page.md
 - name: Transport
   filename: Transport.page.md
 - name: Error Handling

@@ -5,7 +5,9 @@ topic: ReleaseNotes
 
 ### v0.1.6 (TBC)
 
-* Updated the {{pagelink:FHIRAssetsR4CodeSystems}} and {{pagelink:FHIRAssetsR4ValueSets}} pages (under the FHIR Assets menu bar item). 
+* Updated the {{pagelink:FHIRAssetsR4CodeSystems}} and {{pagelink:FHIRAssetsR4ValueSets}} pages (under the FHIR Assets menu bar item).
+* Added a new {{pagelink:DataMapping}} page (under the Design menu bar item). This provides a set of data mappings between the FHIR profiles that are referenced by this implementation guide and the PMIP EDIFACT (NHS003) messaging specification.
+* Updated the link to the latest version of the UK Core Implementation Guide.
 
 ### v0.1.5 (01/03/2024)
 
