@@ -1,4 +1,4 @@
-## `{{page-title}}`
+<h2 id="dataAbsentReason"> <code>{{page-title}}</code> </h2>
 
 The inclusion of the coded reason for data being absent is optional, and not currently recommended, because the ValueSet defined in FHIR is of limited benefit to UK laboratory use cases. It is recommended that if a data absent reason is to be included, then a text representation SHOULD be used (i.e. `Observation.dataAbsentReason.text`).
 
