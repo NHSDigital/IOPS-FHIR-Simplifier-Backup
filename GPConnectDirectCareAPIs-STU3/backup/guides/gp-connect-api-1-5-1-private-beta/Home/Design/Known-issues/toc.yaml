@@ -1,12 +1,2 @@
 - name: Index
   filename: Index.page.md
-- name: Allergy interoperability and clinical safety
-  filename: Allergy-interoperability-and-clinical-safety.page.md
-- name: PractitionerRole
-  filename: PractitionerRole.page.md
-- name: Consultation retrieval
-  filename: Consultation-retrieval.page.md
-- name: Data quality
-  filename: Data-quality.page.md
-- name: Data sharing from other care settings into GP practices
-  filename: Data-sharing-from-other-care-settings-into-GP-practices.page.md

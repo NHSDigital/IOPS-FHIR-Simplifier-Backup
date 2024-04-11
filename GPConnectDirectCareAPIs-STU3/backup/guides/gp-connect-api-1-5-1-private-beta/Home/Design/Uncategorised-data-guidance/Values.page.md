@@ -30,7 +30,7 @@ There are cases where an item of uncategorised data may contain multiple values.
 - there is a single clinical code that describes the uncategorised data as a whole and
 - each recorded value in the uncategorised data is described by its own clinical code
 
-In these cases, each value will be exported in an instance of observation.component.
+In these cases, each value will be exported in an instance of `observation.component`.
 
 This approach **MUST** be used for blood pressure readings where the systolic and diastolic values were taken together.
 

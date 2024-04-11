@@ -2,8 +2,6 @@
   filename: Codeable-Concept
 - name: FHIR resources
   filename: FHIR-resources
-- name: Branch surgeries
-  filename: Branch-surgeries
 - name: FHIR library
   filename: FHIR-library
 - name: FHIR® implementation

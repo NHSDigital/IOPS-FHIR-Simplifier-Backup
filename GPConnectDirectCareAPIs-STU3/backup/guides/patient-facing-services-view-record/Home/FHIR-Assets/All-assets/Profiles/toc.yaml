@@ -48,6 +48,10 @@
   filename: Profile--CareConnect-GPC-ReferralRequest-1
 - name: 'Profile: CareConnect-GPC-Specimen-1'
   filename: Profile--CareConnect-GPC-Specimen-1
+- name: 'Profile: CareConnect-HealthcareService-1'
+  filename: Profile-CareConnect-HealthcareService-1
+- name: 'Profile: CareConnect-QuestionnaireResponse-1'
+  filename: Profile-CareConnect-QuestionnaireResponse-1
 - name: 'Profile: GPConnect-Appointment-1'
   filename: Profile--GPConnect-Appointment-1
 - name: 'Profile: GPConnect-Device-1'
@@ -66,5 +70,3 @@
   filename: Profile--GPConnect-Task-1
 - name: 'Profile: Binary'
   filename: Profile--Binary
-- name: 'Profile: CareConnect-HealthcareService-1'
-  filename: Profile-CareConnect-HealthcareService-1

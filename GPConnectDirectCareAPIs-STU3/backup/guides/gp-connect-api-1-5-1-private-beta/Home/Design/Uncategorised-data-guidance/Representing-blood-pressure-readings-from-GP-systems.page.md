@@ -20,7 +20,7 @@ GP Connect has improved the consistency of the data that will be exported, it is
 ### Standard blood pressure representation
 The way standard blood pressures are recorded in different clinical systems varies. These can be described by the following 3 different patterns:
 
-- recorded as the following tripe in the below structure and using any of the codes from the table below
+- recorded as the following triple in the below structure and using any of the codes from the table below
 
 <div align="center">
 {{ render: BP_Triple.png }}
@@ -80,7 +80,7 @@ The triple may contain any combination of the following SNOMED codes for the pan
     </tbody>
 </table>
 
-Where there is only a single component value recorded then the triple MUST still be represented using the relevant 3 codes with the component representing the missing reading containing the relevant dataAbsentReason code.
+Where there is only a single component value recorded then the triple **MUST** still be represented using the relevant 3 codes with the component representing the missing reading containing the relevant dataAbsentReason code.
 
 ### Blood pressure readings that will be in the same structure
 
@@ -113,10 +113,10 @@ The table contains other blood pressure readings that **MUST** always be represe
     </tbody>
 </table>
 
-In addition to the triples that have been defined here any blood pressure that is recorded as a triple within the GP clinical system MUST always follow this structure.
+In addition to the triples that have been defined here any blood pressure that is recorded as a triple within the GP clinical system **MUST** always follow this structure.
 
 ### Blood pressure readings with no defined triples
 
-Where the blood pressure reading has not been defined here and is not recorded in the local system as a triple then these will be exported as individual observations. These observations MUST be linked using the ‘related’ element with a value of ‘has-member’ where they are recorded as a pair but with no panel code.
+Where the blood pressure reading has not been defined here and is not recorded in the local system as a triple then these will be exported as individual observations. These observations **MUST** be linked using the `related` element with a value of `has-member` where they are recorded as a pair but with no panel code.
 
 ---
