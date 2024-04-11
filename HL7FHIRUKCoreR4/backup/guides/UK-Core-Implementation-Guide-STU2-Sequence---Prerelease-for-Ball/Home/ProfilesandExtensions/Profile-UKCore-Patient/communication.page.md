@@ -104,7 +104,7 @@ The <code>Patient.communication.language</code> element has a <i>Required</i> bi
 </div>
 
 <br>
-NOTE: Makaton is a communication tool with speech, signs, and symbols to enable people with disabilities or learning disabilities to communicate. As Such, it is not recognised as a language in <code>urn:ietf:bcp:47</code>, and should be populated as a CodeableConcept.coding element alongside the <code>urn:ietf:bcp:47</code> parent language from which its country specific adapation is derived.
+NOTE: Makaton is a communication tool with speech, signs, and symbols to enable people with disabilities or learning disabilities to communicate. As Such, it is not recognised as a language in <code>urn:ietf:bcp:47</code>, and should be populated as a CodeableConcept.coding element alongside the <code>urn:ietf:bcp:47</code> parent language from which its country specific adaptation is derived.
 
 ---
 
