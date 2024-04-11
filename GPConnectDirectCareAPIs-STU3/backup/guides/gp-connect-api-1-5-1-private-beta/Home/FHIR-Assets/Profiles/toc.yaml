@@ -44,3 +44,5 @@
   filename: Profile-GPConnect-Searchset-Bundle-1
 - name: 'Profile: GPConnect-StructuredRecord-Bundle-1'
   filename: Profile-GPConnect-StructuredRecord-Bundle-1
+- name: 'Profile: CareConnect-QuestionnaireResponse-1'
+  filename: Profile-CareConnect-QuestionnaireResponse-1
