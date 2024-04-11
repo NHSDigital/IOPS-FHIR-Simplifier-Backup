@@ -4,7 +4,7 @@ topic: DataMapping
 ## Data Mapping
 
 ### Overview
-This page provides a set of data mappings between the FHIR profiles that are referenced by this implementation guide and the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification. Refer to the {{pagelink:Background}} section for further information relating to how PMIP EDIFACT (NHS003) is used to define the data structure of pathology test reports that flow between pathology laboratories and GP practices.
+This page provides a set of data mappings between the FHIR profiles that are referenced by this implementation guide and the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification. To aid traceability, the mappings are presented from two viewpoints: EDIFACT to FHIR and FHIR to EDIFACT.  
 
 Whilst every effort has been made to ensure that the mappings are correct, they are not a normative part of the implementation guidance. They are intended to provide additional guidance to suppliers who are familiar with the existing PMIP EDIFACT (NHS003) specification.
 
