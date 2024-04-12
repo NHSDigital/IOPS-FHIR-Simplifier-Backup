@@ -2,6 +2,11 @@
 
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-information"></i><b> Important:</b>This is version 2.8.11-prerelease. For a full list of available versions, see the <a href="https://simplifier.net/guide/NHSDigital-Medicines/Home/Introduction/Directory">directory</a> of published versions </div>
 
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-info-circle"></i> We would like your feedback</h4>
+Please complete this short feedback form <a href="https://forms.office.com/e/4eE3dDACDS">here </a>to help the Interoperability Standards Team produce 
+specifications that meet your requirements 
+</div>
+
 This Implementation Guide is the **NHS Digital FHIR Medicines Implementation Guide** extension to the core [NHS Digital FHIR Implementation Guide](https://simplifier.net/guide/nhsdigital) which is derived from the [UK Core Implementation Guide V2](https://simplifier.net/guide/hl7fhirukcorer4release1/home).
 
 This guide is to be used across NHS Digital FHIR R4 API's when implementing Medicines. It should be used in conjunction with the [Dose Syntax Implementation Guide](https://simplifier.net/guide/ukcoreimplementationguideformedicines/Home) which specifies the requirement for structured dose syntax in FHIR (R4).
