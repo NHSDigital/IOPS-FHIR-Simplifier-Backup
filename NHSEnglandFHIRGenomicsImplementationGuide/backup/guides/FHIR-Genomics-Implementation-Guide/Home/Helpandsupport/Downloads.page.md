@@ -9,6 +9,6 @@ The following Genomics package contains Examples and constraint profiles for inf
 | Current Release Package |  |
 |--
 | Package | uk.nhsdigital.genomics.r4  | 
-| Version | 0.3.1 |
-| IG Package Url | [https://simplifier.net/packages/uk.nhsengland.genomics.r4/0.3.1](https://simplifier.net/packages/uk.nhsengland.genomics.r4/0.3.1/$download) |
+| Version | 0.3.2 |
+| IG Package Url | [https://simplifier.net/packages/uk.nhsengland.genomics.r4/0.3.2](https://simplifier.net/packages/uk.nhsengland.genomics.r4/0.3.2/$download) |
 
