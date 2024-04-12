@@ -2,8 +2,13 @@
 topic: Home
 ---
 
-<div markdown="span" class="alert alert-nhse" role="alert">
-<b>IMPORTANT:</b> This guidance is currently in draft and SHOULD NOT be used for development or active implementation without consulting the NHS England Pathology Standards and Implementation team. For further information please contact: <a href="mailto:pathology.standardsandimplementation@nhs.net">pathology.standardsandimplementation@nhs.net</a></div>
+<!--<div markdown="span" class="alert alert-nhse" role="alert">
+<b>IMPORTANT:</b> This guidance is currently in draft and SHOULD NOT be used for development or active implementation without consulting the NHS England Pathology Standards and Implementation team. For further information please contact: <a href="mailto:pathology.standardsandimplementation@nhs.net">pathology.standardsandimplementation@nhs.net</a></div>-->
+
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-info-circle"></i> We would like your feedback</h4>
+Please complete this short feedback form <a href="https://forms.office.com/e/4eE3dDACDS">here </a>to help the Interoperability Standards Team produce 
+specifications that meet your requirements 
+</div>
 
 ## Pathology FHIR Implementation Guide
 ### Introduction
