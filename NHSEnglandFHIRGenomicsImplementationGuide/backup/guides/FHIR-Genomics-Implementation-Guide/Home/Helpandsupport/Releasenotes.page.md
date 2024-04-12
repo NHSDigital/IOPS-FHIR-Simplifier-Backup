@@ -1,5 +1,14 @@
 ## {{page-title}}
 
+### 0.3.2
+
+Date released: 12/04/2024
+
+[GitHub Release/Changelog](https://github.com/NHSDigital/NHSDigital-FHIR-Genomics-ImplementationGuide/releases/tag/v0.3.2)
+
+- Update to dependencies, removal of dependency on NHSDigital package
+- Addition of Task.input/output elements referencing Specimen resources in examples
+
 ### 0.3.1
 
 Date released: 14/03/2024
