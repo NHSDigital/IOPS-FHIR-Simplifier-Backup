@@ -5,7 +5,7 @@ topic: R4Examples
 The following examples illustrate the use of the FHIR UK Core R4 {{pagelink:FHIRAssetsR4Profiles}} described by this implementation guide, categorised by profile type and pathology speciality.
 
 <div markdown="span" class="alert alert-nhse" role="alert">
-<i class="fa fa-exclamation-circle"></i> The patient and practitioner related data used in the examples is live-like in appearance but is fictitious. Any similarity to actual persons is purely coincidental. The addresses used are valid addresses based on publicly available address data.
+<i class="fa fa-exclamation-circle"></i> Whilst every effort has been made to ensure that the examples are correct, they are not a normative part of the implementation guidance. The patient and practitioner related data used in the examples is live-like in appearance but is fictitious. Any similarity to actual persons is purely coincidental. The addresses used are valid addresses based on publicly available address data.
 </div>
 
 The <code>Bundle</code> examples include on-screen representations of pathology test requests and reports. These have been provided to illustrate the contents of the associated messages. They are not intended to define a standard layout or format for pathology test requests and reports and should not be used as such.
