@@ -664,7 +664,7 @@ The following diagram is based on the message structure/attribute cross-referenc
   <td width=340 valign=top style='width:9.0cm;border:none;border-right:solid #dde1e4 1.0pt;
   padding:0cm 1.4pt 0cm 1.4pt'>
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E094</span></b></p>
+  1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E094 - UKCore-DiagnosticReport-Lab.category</span></b></p>
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
   1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E095</span></b></p>
   </td>
@@ -4774,12 +4774,12 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>E186</td>
             <td>status of laboratory service</td>
             <td>SG2.STS.C555.9011</td>
-            <td>'STATUS EVENT' (status of laboratory service report) is always set to 'UN' (Unspecified). Refer to the description of 'STATUS EVENT' (tag id C555) in LSR_04_A_001.doc.</td>
+            <td>'STATUS EVENT' code is populated with a value of 'UN' (Unspecified). Refer to the definition of Segment Group 2 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
             <td>category</td>
-            <td></td>
-            <td></td>
+            <td>E094</td>
+            <td>medical specialty of healthcare professional</td>
             <td></td>
             <td></td>
         </tr>
@@ -4934,7 +4934,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>E141</td>
             <td>comment to laboratory investigation result item</td>
             <td>SG18.FTX.C108.4440(1-5)</td>
-            <td>'TEXT SUBJECT QUALIFIER' is set to a value of 'SPC' (Service provider's comment). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+            <td>'TEXT SUBJECT QUALIFIER' is populated with a value of 'SPC' (Service provider's comment). Refer to the definition of Segment Group 18 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
             <td>specimen</td>
@@ -5066,7 +5066,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>E136</td>
             <td>text value of a laboratory investigation result item</td>
             <td>SG18.FTX.C108.4440(1-5)</td>
-            <td>'TEXT SUBJECT QUALIFIER' is set to a value of 'RIT' (Text value of a result). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+            <td>'TEXT SUBJECT QUALIFIER' is populated with a value of 'RIT' (Text value of a result) for textual results. Refer to the definition of Segment Group 18 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
             <td>dataAbsentReason</td>
@@ -5080,14 +5080,14 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>E137</td>
             <td>deviating result indicator</td>
             <td>SG18.RSL.7857</td>
-            <td>Partial mapping to 'RESULT NORMALCY INDICATOR, CODED' (also referred to as 'deviating result indicator'). Refer to the description of 'RESULT NORMALCY INDICATOR, CODED' (tag id 7857) in LSR_04_A_001.doc.</td>
+            <td>Partial mapping to 'RESULT NORMALCY INDICATOR, CODED' (also referred to as 'deviating result indicator'). Refer to the definition of Segment Group 18 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
             <td>note</td>
             <td>E141</td>
             <td>comment to laboratory investigation result item</td>
             <td>SG18.FTX.C108.4440(1-5)</td>
-            <td>'TEXT SUBJECT QUALIFIER' is set to a value of 'SPC' (Service provider's comment). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+            <td>'TEXT SUBJECT QUALIFIER' is populated with a value of 'SPC' (Service provider's comment). Refer to the definition of Segment Group 18 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
             <td>bodySite</td>
@@ -5129,7 +5129,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td rowspan="2">E148</td>
             <td rowspan="2">reference population definition</td>
             <td rowspan="2">SG20.FTX.C108.4440(1-5)</td>
-            <td rowspan="2">'TEXT SUBJECT QUALIFIER' is set to a value of 'RPD' (Reference population definition). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+            <td rowspan="2">'TEXT SUBJECT QUALIFIER' is set to a value of 'RPD' (Reference population definition). Refer to the definition of Segment Group 18 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
         <tr>
@@ -5137,7 +5137,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>E330</td>
             <td>complex reference range information</td>
             <td>SG18.FTX.C108.4440(1-5)</td>
-            <td>'TEXT SUBJECT QUALIFIER' is set to a value of 'CRR' (Complex reference range information). Refer to the description of 'TEXT SUBJECT QUALIFIER' (tag id 4451) in LSR_04_A_001.doc.</td>
+            <td>'TEXT SUBJECT QUALIFIER' is set to a value of 'CRR' (Complex reference range information). Refer to the definition of Segment Group 18 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
             <td>component</td>
@@ -5244,7 +5244,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
 <table class="regular">
     <thead>
         <tr>
-            <th colspan="1">{{pagelink:R4Organization}}</th>
+            <th colspan="1">{{pagelink:R4Organization}} (performing)</th>
             <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
         </tr>
         <tr>
@@ -5299,7 +5299,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
 <table class="regular">
     <thead>
         <tr>
-            <th colspan="1">{{pagelink:R4Practitioner}}</th>
+            <th colspan="1">{{pagelink:R4Practitioner}} (requester)</th>
             <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
         </tr>
         <tr>
@@ -5357,14 +5357,14 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>E152</td>
             <td>identification of laboratory service order by laboratory service requester</td>
             <td>SG4.RFF.C506.1154</td>
-            <td>'Reference qualifier' is set to a value of 'ROI' (Order ID by service requester). Refer to the description of 'Reference qualifier' (tag id 1153) in LSR_04_A_001.doc.</td></td>
+            <td>'Reference qualifier' is populated with a value of 'ROI' (Order ID by service requester). Refer to the definition of Segment Group 4 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
             <td>identifier</td>
             <td>E153</td>
             <td>identification of laboratory service order by laboratory service provider</td>
             <td>SG4.RFF.C506.1154</td>
-            <td>'Reference qualifier' is set to a value of 'SOI' (Order ID by service provider). Refer to the description of 'Reference qualifier' (tag id 1153) in LSR_04_A_001.doc.</td>
+            <td>'Reference qualifier' is populated with a value of 'SOI' (Order ID by service provider). Refer to the definition of Segment Group 4 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
             <td>requisition</td>
