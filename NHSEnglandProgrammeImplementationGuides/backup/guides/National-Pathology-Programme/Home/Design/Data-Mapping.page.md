@@ -4,7 +4,7 @@ topic: DataMapping
 ## Data Mapping
 
 ### Overview
-This page provides a set of data mappings between the FHIR profiles that are referenced by this implementation guide and the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification. To aid traceability, the mappings are presented from two viewpoints: EDIFACT to FHIR and FHIR to EDIFACT.  
+This page provides a set of high-level data mappings between the FHIR profiles that are referenced by this implementation guide and the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification. To aid traceability, the mappings are presented from two viewpoints: EDIFACT to FHIR and FHIR to EDIFACT.  
 
 Whilst every effort has been made to ensure that the mappings are correct, they are not a normative part of the implementation guidance. They are intended to provide additional guidance to suppliers who are familiar with the existing PMIP EDIFACT (NHS003) specification.
 
@@ -664,7 +664,8 @@ The following diagram is based on the message structure/attribute cross-referenc
   <td width=340 valign=top style='width:9.0cm;border:none;border-right:solid #dde1e4 1.0pt;
   padding:0cm 1.4pt 0cm 1.4pt'>
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E094 - UKCore-DiagnosticReport-Lab.category</span></b></p>
+  1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E094</span></b><span
+  style='font-size:9.0pt;font-family:"Arial",sans-serif'> - UKCore-DiagnosticReport-Lab.category</span></p>
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
   1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E095</span></b></p>
   </td>
