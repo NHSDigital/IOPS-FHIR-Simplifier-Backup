@@ -196,7 +196,7 @@ An example of how each supported data element may be populated is provided in {{
             <td>0..*</td>
             <td>Required</td>
             <td><a href="https://hl7.org/fhir/R4/datatypes.html#annotation">Annotation</a></td>
-            <td>Notes relating to the test request, as provided by the requester. May be used to provide further clinical context and/or the reason for requesting the tests.</td>
+            <td>Any other notes relating to the test request, as provided by the requester. Clinical information relating to the test request SHOULD be conveyed using <code>ServiceRequest.reasonCode</code> and/or <code>ServiceRequest.reasonReference</code>.</td>
         </tr>
         <tr>
             <td>extension (sourceOfServiceRequest)</td>
