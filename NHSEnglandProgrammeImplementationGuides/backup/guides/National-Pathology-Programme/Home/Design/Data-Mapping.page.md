@@ -552,7 +552,8 @@ The following diagram is based on the message structure/attribute cross-referenc
   <td width=340 valign=top style='width:9.0cm;border:none;border-right:solid #dde1e4 1.0pt;
   padding:0cm 1.4pt 0cm 1.4pt'>
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E083</span></b></p>
+  1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E083</span></b><span
+  style='font-size:9.0pt;font-family:"Arial",sans-serif'> - UKCore-Practitioner.identifier</span></p>
   </td>
  </tr>
  <tr>
@@ -665,9 +666,10 @@ The following diagram is based on the message structure/attribute cross-referenc
   padding:0cm 1.4pt 0cm 1.4pt'>
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
   1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E094</span></b><span
-  style='font-size:9.0pt;font-family:"Arial",sans-serif'> - UKCore-DiagnosticReport-Lab.category</span></p>
+  style='font-size:9.0pt;font-family:"Arial",sans-serif'> - UKCore-UKCore-PractitionerRole.specialty</span></p>
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E095</span></b></p>
+  1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E095</span></b><span
+  style='font-size:9.0pt;font-family:"Arial",sans-serif'> - UKCore-UKCore-PractitionerRole.code</span></p>
   </td>
  </tr>
  <tr>
@@ -2305,7 +2307,7 @@ The following diagram is based on the message structure/attribute cross-referenc
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
   1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E045</span></b><span
   style='font-size:9.0pt;font-family:"Arial",sans-serif'> -
-  UKCore-ServiceRequest-Lab.note</span></p>
+  UKCore-ServiceRequest-Lab.reasonCode</span></p>
   </td>
  </tr>
  <tr>
@@ -2419,7 +2421,7 @@ The following diagram is based on the message structure/attribute cross-referenc
   padding:0cm 1.4pt 0cm 1.4pt'>
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
   1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E046</span></b><span
-  style='font-size:9.0pt;font-family:"Arial",sans-serif'> - UKCore-ServiceRequest-Lab.note</span></p>
+  style='font-size:9.0pt;font-family:"Arial",sans-serif'> - UKCore-ServiceRequest-Lab.reasonCode</span></p>
   </td>
  </tr>
  <tr>
@@ -4779,10 +4781,11 @@ The constraints that need to be applied to each FHIR resource using the relevant
         </tr>
         <tr>
             <td>category</td>
-            <td>E094</td>
-            <td>medical specialty of healthcare professional</td>
+            <td>TBC</td>
             <td></td>
             <td></td>
+            <td>This mapping relates to the use of Segment Group 1 to carry the name of a pathology department (as text), using a combination of 'PARTY QUALIFIER' = 'SLA' (Laboratory service provider) and 'SERVICE PROVIDER QUALIFIER' = 'DPT' (Department within an organisation). For example: <br><br><code>S01+01<br>NAD+SLA+++Medical Microbiology<br>SPR+DPT</code><br><br>Refer to LSR_04_A_001.doc for details.
+</td>
         </tr>
         <tr>
             <td>code</td>
@@ -5130,7 +5133,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td rowspan="2">E148</td>
             <td rowspan="2">reference population definition</td>
             <td rowspan="2">SG20.FTX.C108.4440(1-5)</td>
-            <td rowspan="2">'TEXT SUBJECT QUALIFIER' is set to a value of 'RPD' (Reference population definition). Refer to the definition of Segment Group 18 in LSR_04_A_001.doc for details.</td>
+            <td rowspan="2">'TEXT SUBJECT QUALIFIER' is populated with a value of 'RPD' (Reference population definition). Refer to the definition of Segment Group 18 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
         <tr>
@@ -5138,7 +5141,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>E330</td>
             <td>complex reference range information</td>
             <td>SG18.FTX.C108.4440(1-5)</td>
-            <td>'TEXT SUBJECT QUALIFIER' is set to a value of 'CRR' (Complex reference range information). Refer to the definition of Segment Group 18 in LSR_04_A_001.doc for details.</td>
+            <td>'TEXT SUBJECT QUALIFIER' is populated with a value of 'CRR' (Complex reference range information). Refer to the definition of Segment Group 18 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
             <td>component</td>
@@ -5300,6 +5303,54 @@ The constraints that need to be applied to each FHIR resource using the relevant
 <table class="regular">
     <thead>
         <tr>
+            <th colspan="1">{{pagelink:R4Practitioner}} (performer)</th>
+            <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
+        </tr>
+        <tr>
+            <th width="22.5%">FHIR Element Name</th>
+            <th width="10%">Attribute Id</th>
+            <th width="27.5%">Attribute Name</th>
+            <th width="17.5%">Message Mapping</th>
+            <th width="27.5%">Notes</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>identifier</td>
+            <td>E084</td>
+            <td>healthcare registration identification</td>
+            <td>SG1.NAD.C082.3039</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>identifier</td>
+            <td>E083</td>
+            <td>partner-agreed identification of healthcare part</td>
+            <td>SG1.RFF.C506.1154</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>name.family<br>name.given<br>name.prefix</td>
+            <td>E092</td>
+            <td>person name details</td>
+            <td>SG1.NAD.C080.3036(1-2)</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td>telecom</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<table class="regular">
+    <thead>
+        <tr>
             <th colspan="1">{{pagelink:R4Practitioner}} (requester)</th>
             <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
         </tr>
@@ -5320,6 +5371,13 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
         </tr>
         <tr>
+            <td>identifier</td>
+            <td>E083</td>
+            <td>partner-agreed identification of healthcare part</td>
+            <td>SG1.RFF.C506.1154</td>
+            <td></td>
+        </tr>
+        <tr>
             <td>name.family<br>name.given<br>name.prefix</td>
             <td>E092</td>
             <td>person name details</td>
@@ -5333,6 +5391,89 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
             <td></td>
         </tr>
+    </tbody>
+</table>
+
+<br>
+
+<table class="regular">
+    <thead>
+        <tr>
+            <th colspan="1">{{pagelink:R4PractitionerRole}}</th>
+            <th colspan="4">PMIP EDIFACT (NHS003) Mapping</th>
+        </tr>
+        <tr>
+            <th width="22.5%">FHIR Element Name</th>
+            <th width="10%">Attribute Id</th>
+            <th width="27.5%">Attribute Name</th>
+            <th width="17.5%">Message Mapping</th>
+            <th width="27.5%">Notes</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>identifier</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+           <tr>
+            <td>active</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>period</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>practitioner</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>organization</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>code</td>
+            <td>E095</td>
+            <td>position of healthcare professional</td>
+            <td>SG1.SPR.C846.3812</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>specialty</td>
+            <td>E094</td>
+            <td>medical specialty of healthcare professional</td>
+            <td>SG1.SPR.C845.3811</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>location</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>telecom</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>        
     </tbody>
 </table>
 
@@ -5431,10 +5572,16 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
         </tr>
         <tr>
-            <td>reasonCode</td>
+            <td rowspan="2">reasonCode</td>
+            <td>E045</td>
+            <td>type of clinical observation</td>
+            <td>SG10.CIN.6810</td>
             <td></td>
-            <td></td>
-            <td></td>
+        </tr>
+        <tr>
+            <td>E046</td>
+            <td>clinical observation description</td>
+            <td>SG10.FTX.C108.4440(1-5)</td>
             <td></td>
         </tr>
         <tr>
@@ -5452,16 +5599,10 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
         </tr>
         <tr>
-            <td rowspan="2">note</td>
-            <td>E045</td>
-            <td>type of clinical observation</td>
-            <td>SG10.CIN.6810</td>
+            <td>note</td>
             <td></td>
-        </tr>
-        <tr>
-            <td>E046</td>
-            <td>clinical observation description</td>
-            <td>SG10.FTX.C108.4440(1-5)</td>
+            <td></td>
+            <td></td>
             <td></td>
         </tr>
    </tbody>
