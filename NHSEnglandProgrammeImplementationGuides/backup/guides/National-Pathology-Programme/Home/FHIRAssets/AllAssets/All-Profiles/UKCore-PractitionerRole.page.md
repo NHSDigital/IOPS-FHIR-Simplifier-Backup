@@ -8,7 +8,7 @@ Used to represent a specific set of roles/locations/specialties/services that a 
 
 ### Resource and Profile Links
 * R4 Resource (Base): [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html)
-* R4 UK Core Profile: [UKCore-PractitionerRole](https://simplifier.net/hl7fhirukcorer4/ukcore-practitionerrole)
+* R4 UK Core Profile: [UKCore-PractitionerRole](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-practitionerrole?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.

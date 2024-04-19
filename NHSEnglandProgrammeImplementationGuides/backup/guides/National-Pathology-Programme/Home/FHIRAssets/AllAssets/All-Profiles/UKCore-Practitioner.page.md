@@ -12,7 +12,7 @@ Used to represent the following (where applicable):
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Practitioner](https://hl7.org/fhir/R4/practitioner.html)
-* R4 UK Core Profile: [UKCore-Practitioner](https://simplifier.net/hl7fhirukcorer4/ukcore-practitioner)
+* R4 UK Core Profile: [UKCore-Practitioner](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-practitioner?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.

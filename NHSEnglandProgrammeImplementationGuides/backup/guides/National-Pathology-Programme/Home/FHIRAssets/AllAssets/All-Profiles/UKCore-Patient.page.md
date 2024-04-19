@@ -8,7 +8,7 @@ Demographics and other administrative information about an individual. In most c
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Patient]( https://hl7.org/fhir/R4/patient.html)
-* R4 UK Core Profile: [UKCore-Patient](https://simplifier.net/hl7fhirukcorer4/ukcore-patient)
+* R4 UK Core Profile: [UKCore-Patient](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-patient?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.

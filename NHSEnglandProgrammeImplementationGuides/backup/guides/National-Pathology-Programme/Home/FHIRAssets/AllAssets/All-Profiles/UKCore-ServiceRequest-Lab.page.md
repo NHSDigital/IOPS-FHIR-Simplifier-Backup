@@ -12,7 +12,7 @@ If multiple tests or test groups are requested as part of the same “event” (
 
 ### Resource and Profile Links
 * R4 Resource (Base): [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html)
-* R4 UK Core Profile (Lab): [UKCore-ServiceRequest-Lab](https://simplifier.net/hl7fhirukcorer4/ukcore-servicerequest-lab)
+* R4 UK Core Profile (Lab): [UKCore-ServiceRequest-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-servicerequest-lab?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.

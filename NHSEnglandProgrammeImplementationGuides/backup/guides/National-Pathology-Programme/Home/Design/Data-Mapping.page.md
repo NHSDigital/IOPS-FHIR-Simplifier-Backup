@@ -6,7 +6,7 @@ topic: DataMapping
 ### Overview
 This page provides a set of high-level data mappings between the FHIR profiles that are referenced by this implementation guide and the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification. To aid traceability, the mappings are presented from two viewpoints: EDIFACT to FHIR and FHIR to EDIFACT.  
 
-Whilst every effort has been made to ensure that the mappings are correct, they are not a normative part of the implementation guidance. They are intended to provide additional guidance to suppliers who are familiar with the existing PMIP EDIFACT (NHS003) specification.
+Whilst every effort has been made to ensure that the mappings are correct, they are not a normative part of the implementation guide. They are intended to provide additional guidance to suppliers who are familiar with the existing PMIP EDIFACT (NHS003) specification.
 
 ### EDIFACT to FHIR Mappings
 The following diagram is based on the message structure/attribute cross-reference table that is included in Section 3 of ‘LSR_04_A_001.doc’, which forms part of the PMIP EDIFACT (NHS003) specification. The table has been updated to include the corresponding FHIR R4 element for each relevant EDIFACT attribute.
@@ -4780,11 +4780,11 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td>'STATUS EVENT' code is populated with a value of 'UN' (Unspecified). Refer to the definition of Segment Group 2 in LSR_04_A_001.doc for details.</td>
         </tr>
         <tr>
-            <td>category</td>
-            <td>TBC</td>
-            <td></td>
-            <td></td>
-            <td>This mapping relates to the use of Segment Group 1 to carry the name of a pathology department (as text), using a combination of 'PARTY QUALIFIER' = 'SLA' (Laboratory service provider) and 'SERVICE PROVIDER QUALIFIER' = 'DPT' (Department within an organisation). For example: <br><br><code>S01+01<br>NAD+SLA+++Medical Microbiology<br>SPR+DPT</code><br><br>Refer to LSR_04_A_001.doc for details.
+            <td>category.text</td>
+            <td>E080</td>
+            <td>name of healthcare organisation</td>
+            <td>SG1.NAD.C080.3036(1-2)</td>
+            <td>This mapping relates to the use of Segment Group 1 to carry the name of a pathology department (as text), indicated by a combination of 'PARTY QUALIFIER' = 'SLA' (Laboratory service provider) and 'SERVICE PROVIDER QUALIFIER' = 'DPT' (Department within an organisation). For example: <br><br><code>S01+01<br>NAD+SLA+++Medical Microbiology<br>SPR+DPT</code><br><br>Refer to LSR_04_A_001.doc for details.
 </td>
         </tr>
         <tr>

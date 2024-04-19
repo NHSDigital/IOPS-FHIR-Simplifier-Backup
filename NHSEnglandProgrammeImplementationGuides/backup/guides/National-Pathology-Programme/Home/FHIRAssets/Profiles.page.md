@@ -6,13 +6,14 @@ The FHIR profiles that are referenced by this implementation guide are listed be
 
 Refer to the {{pagelink:DesignOverview}} section for supporting information, including a description of the Pathology FHIR data model and the design approach that has been adopted as part of this implementation guide.
 
-**Note:** The profiles are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2. The pathology related profiles are currently under review as part of the [HL7 UK STU2 Ballot](https://confluence.hl7.org/pages/viewpage.action?pageId=175611042) process and are therefore subject to change. The STU2 version of the UK Core Implementation Guide introduced a new set of laboratory specific FHIR R4 derived profiles, indicated by the ‘Lab’ suffix in the profile name. These profiles are derived from the corresponding base R4 FHIR resource, rather than the UK Core version e.g. UKCore-DiagnosticReport-Lab is based on DiagnosticReport, rather than UKCore-DiagnosticReport.
+**Note:** The profiles are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2. The pathology related profiles are currently under review as part of the [HL7 UK STU2 Ballot](https://confluence.hl7.org/pages/viewpage.action?pageId=175611042) process and are therefore subject to change. The STU2 version of the UK Core Implementation Guide introduced a new set of laboratory specific FHIR R4 derived profiles, indicated by the ‘Lab’ suffix in the profile name. These profiles are derived from the corresponding base R4 FHIR resource, rather than the UK Core version e.g. UKCore-DiagnosticReport-Lab is based on DiagnosticReport, not UKCore-DiagnosticReport.
 
 * {{pagelink:R4Bundle}}
 * {{pagelink:R4DiagnosticReport}}
+* {{pagelink:R4DiagnosticReport2}}
 * {{pagelink:R4MessageHeader}}
-* {{pagelink:R4ObservationTestGroup}}
 * {{pagelink:R4ObservationTestResult}}
+* {{pagelink:R4ObservationTestGroup}}
 * {{pagelink:R4Organization}}
 * {{pagelink:R4Patient}}
 * {{pagelink:R4Practitioner}}

@@ -11,7 +11,7 @@ Used to represent the following (where applicable):
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Organization]( https://hl7.org/fhir/R4/organization.html)
-* R4 UK Core Profile: [UKCore-Organization](https://simplifier.net/hl7fhirukcorer4/ukcore-organization)
+* R4 UK Core Profile: [UKCore-Organization](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-organization?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
