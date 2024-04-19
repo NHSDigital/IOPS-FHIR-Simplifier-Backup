@@ -153,10 +153,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <td>Rate at which the medication is to be administered.</td>
 </tr>
 <tr>
-<td><code>MedicationRequest.dosageInstruction</code></td>
-<td>Dosage instructions for the medication.</td>
-</tr>
-<tr>
 <td><code>MedicationRequest.dispenseRequest</code></td>
 <td>Specific dispensing quantity instructions.</td>
 </tr>

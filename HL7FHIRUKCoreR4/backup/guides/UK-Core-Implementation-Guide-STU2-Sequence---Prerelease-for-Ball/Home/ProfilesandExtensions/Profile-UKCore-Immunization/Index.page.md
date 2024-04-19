@@ -120,10 +120,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <td>When the vaccine administered or was to be administered.</td>
 </tr>
 <tr>
-<td><code>Immunization.occurrenceDateTime</code></td>
-<td>DateTime vaccine administered or was to be administered.</td>
-</tr>
-<tr>
 <td><code>Immunization.manufacturer</code></td>
 <td>Name of vaccine manufacturer.</td>
 </tr>

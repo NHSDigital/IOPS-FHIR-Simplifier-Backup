@@ -128,6 +128,10 @@ A minimum viable content that all provider and consumer systems SHALL support ar
 <td><code>Observation.value[x]</code></td>
 <td>Actual result.</td>
 </tr>
+<tr>
+<td><code>Observation.component</code></td>
+<td>Component / sub results.</td>
+</tr>
 <table>
 
 ---

@@ -107,14 +107,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <td>Identifies this organisation across multiple systems</td>
 </tr>
 <tr>
-<td><code>Organization.identifier.system</code></td>
-<td>a URL that describes a set values that are unique.</td>
-</tr>
-<tr>
-<td><code>Organization.identifier.value</code></td>
-<td>The value that is unique</td>
-</tr>
-<tr>
 <td><code>Organization.active</code></td>
 <td>Whether the organisation's record is still in active use</td>
 </tr>

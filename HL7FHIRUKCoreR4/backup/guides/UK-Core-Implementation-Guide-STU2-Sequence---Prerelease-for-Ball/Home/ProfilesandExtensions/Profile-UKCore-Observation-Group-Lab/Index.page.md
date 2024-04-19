@@ -124,30 +124,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <td><code>Observation.code</code></td>
 <td>Type of observation (code / type)</td>
 </tr>
-<tr>
-<td><code>Observation.subject</code></td>
-<td>Who and/or what the observation is about</td>
-</tr>
-<tr>
-<td><code>Observation.effective[x]</code></td>
-<td>Clinically relevant time/time-period for observation</td>
-</tr>
-<tr>
-<td><code>Observation.performer</code></td>
-<td>Who is responsible for the observation</td>
-</tr>
-<tr>
-<td><code>Observation.value[x]</code></td>
-<td>Actual result.</td>
-</tr>
-<tr>
-<td><code>Observation.hasMember</code></td>
-<td>Related resource that belongs to the Observation group</td>
-</tr>
-<tr>
-<td><code>Observation.component</code></td>
-<td>Component / sub results.</td>
-</tr>
 </table>
 
 ---

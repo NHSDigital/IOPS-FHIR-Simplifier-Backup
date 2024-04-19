@@ -118,18 +118,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <td><code>RelatedPerson.address</code></td>
 <td>Address where the related person can be contacted or visited.</td>
 </tr>
-<tr>
-<td><code>RelatedPerson.address.line</code></td>
-<td>Street name, number, direction & P.O. Box etc.</td>
-</tr>
-<tr>
-<td><code>RelatedPerson.address.city</code></td>
-<td>Name of city, town etc.</td>
-</tr>
-<tr>
-<td><code>RelatedPerson.address.postalCode</code></td>
-<td>Postal code for area.</td>
-</tr>
 </table>
 
 ---

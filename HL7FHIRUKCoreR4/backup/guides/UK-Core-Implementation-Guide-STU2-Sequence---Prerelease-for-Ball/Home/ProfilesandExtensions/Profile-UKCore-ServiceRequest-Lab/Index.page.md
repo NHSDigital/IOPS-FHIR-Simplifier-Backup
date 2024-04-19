@@ -108,10 +108,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <td>Individual or Entity the service is ordered for.</td>
 </tr>
 <tr>
-<td><code>ServiceRequest.authoredOn</code></td>
-<td>Date request signed.</td>
-</tr>
-<tr>
 <td><code>ServiceRequest.requester</code></td>
 <td>Who/what is requesting service.</td>
 </tr>

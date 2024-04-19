@@ -96,6 +96,10 @@ The following elements are identified as MustSupport, and it is expected that co
 <td><code>HealthcareService.providedBy</code></td>
 <td>The organization that provides this healthcare service.</td>
 </tr>
+<tr>
+<td><code>HealthcareService.type</code></td>
+<td>The type of service provided by this healthcare service.</td>
+</tr>
 </table>
 
 ---
