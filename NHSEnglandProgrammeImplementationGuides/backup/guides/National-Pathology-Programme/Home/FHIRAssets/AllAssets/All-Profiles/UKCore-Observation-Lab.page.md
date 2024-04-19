@@ -14,7 +14,7 @@ Refer to the {{pagelink:R4ObservationTestGroup}} profile definition and the {{pa
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
-* R4 UK Core Profile (Lab): [UKCore-Observation-Lab](https://simplifier.net/hl7fhirukcorer4/ukcore-observation-lab)
+* R4 UK Core Profile (Lab): [UKCore-Observation-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-lab?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.

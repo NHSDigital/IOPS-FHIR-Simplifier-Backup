@@ -8,7 +8,7 @@ Details of the specimen(s) provided for testing.
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Specimen]( https://hl7.org/fhir/R4/specimen.html)
-* R4 UK Core Profile: [UKCore-Specimen](https://simplifier.net/hl7fhirukcorer4/ukcore-specimen)
+* R4 UK Core Profile: [UKCore-Specimen](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-specimen?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
