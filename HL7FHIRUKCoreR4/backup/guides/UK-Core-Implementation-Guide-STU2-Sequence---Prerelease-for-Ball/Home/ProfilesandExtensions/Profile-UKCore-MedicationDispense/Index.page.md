@@ -114,14 +114,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <td>Who or what performed the dispensing event.</td>
 </tr>
 <tr>
-<td><code>MedicationDispense.performer.actor</code></td>
-<td>Individual who was performing.</td><!--added-->
-</tr>
-<tr>
-<td><code>MedicationDispense.authorizingPrescription</code></td>
-<td>Link to a prescription, when available.</td>
-</tr>
-<tr>
 <td><code>MedicationDispense.quantity</code></td>
 <td>Quantity of medication dispensed.</td>
 </tr>

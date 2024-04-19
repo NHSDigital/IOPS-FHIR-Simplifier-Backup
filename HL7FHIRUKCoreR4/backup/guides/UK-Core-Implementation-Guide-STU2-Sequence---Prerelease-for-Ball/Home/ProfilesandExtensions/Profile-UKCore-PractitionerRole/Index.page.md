@@ -123,14 +123,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <td><code>PractitionerRole.telecom</code></td>
 <td>Contact details that are specific to the role/location/service</td>
 </tr>
-<tr>
-<td><code>PractitionerRole.telecom.system</code></td>
-<td>Telecommunications form for contact point</td>
-</tr>
-<tr>
-<td><code>PractitionerRole.telecom.value</code></td>
-<td>The actual contact point details</td>
-</tr>
 </table>
 
 ---

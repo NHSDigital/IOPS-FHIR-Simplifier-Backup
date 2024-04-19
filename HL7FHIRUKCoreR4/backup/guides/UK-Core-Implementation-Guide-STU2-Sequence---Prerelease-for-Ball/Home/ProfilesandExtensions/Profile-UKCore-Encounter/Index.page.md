@@ -115,10 +115,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <td>The list of people responsible for providing the service.</td>
 </tr>
 <tr>
-<td><code>Encounter.participant.individual</code></td>
-<td>Persons involved in the encounter other than the patient.</td>
-</tr>
-<tr>
 <td><code>Encounter.reasonCode</code></td>
 <td>Reason the encounter takes place, expressed as a code. For admissions, this can be used for a coded admission diagnosis.</td>
 </tr>

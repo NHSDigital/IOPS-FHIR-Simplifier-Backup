@@ -127,24 +127,12 @@ The following elements are identified as MustSupport, and it is expected that co
 <td>Start time of the appointment </td>
 </tr>
 <tr>
-<td><code>Appointment.end</code></td>
-<td>End time of the appointment </td>
-</tr>
-<tr>
 <td><code>Appointment.basedOn</code></td>
 <td>The service request this appointment is allocated to assess</td>
 </tr>
 <tr>
-<td><code>Appointment.basedOn.identifier</code></td>
-<td>Logical reference, when literal reference is not known</td>
-</tr>
-<tr>
 <td><code>Appointment.participant</code></td>
 <td>List of participants involved in the appointment.</td>
-</tr>
-<tr>
-<td><code>Appointment.participant.actor</code></td>
-<td>A Person, Location, HealthcareService, or Device that is participating in the appointment.</td>
 </tr>
 </table>
 

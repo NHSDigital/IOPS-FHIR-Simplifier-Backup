@@ -109,10 +109,6 @@ The following elements are identified as MustSupport, and it is expected that co
 <td><code>Procedure.performed[x]</code></td>
 <td>When the procedure was performed.</td>
 </tr>
-<tr>
-<td><code>Procedure.performedDateTime</code></td>
-<td>Date and time the procedure was performed.</td>
-</tr>
 </table>
 
 ---
