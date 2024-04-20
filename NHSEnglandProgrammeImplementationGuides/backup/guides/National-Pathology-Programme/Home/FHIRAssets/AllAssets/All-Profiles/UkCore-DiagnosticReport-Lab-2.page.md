@@ -41,8 +41,17 @@ The following table includes additional guidance that should be followed when im
 
 An example of how each supported data element may be populated is provided in {{pagelink:R4SnippetsDiagnosticReport}}.
 
+### `extension.noteR5`
+General comments about the test report. Any information relating to the report conclusion **SHOULD** be conveyed using `DiagnosticReport.conclusion` and/or `DiagnosticReport.conclusionCode`.
+
+Notes may be captured at a number of levels within a test report. There may also be notes related to the specimen, test group or individual test result. It is the consuming systems responsibility to make sure all relevant notes are displayed to the user.
+
+---
+
 ### `basedOn`
-Reference to the `ServiceRequest` that contains details of the test request that was made. Where present this may include details of who requested the tests and why the test was requested.
+Reference to the `ServiceRequest` that contains details of the test request that was made.
+
+---
 
 ### `status`
 This **SHALL** be populated as follows: 
@@ -50,98 +59,52 @@ This **SHALL** be populated as follows:
 * `final`: when the report is completed
 * `unknown`: when the status is unable to be determined
 
+---
+
 ### `category`
-The general type of test report. This **SHALL** be populated with a fixed value of category code `LAB` for `Laboratory`. If required, additional category codes **MAY** also be included.
+The general type of test report. As a minimum, the following **SHOULD** be used for this profile:
+
+* `DiagnosticReport.category.coding.system` = `http://terminology.hl7.org/CodeSystem/v2-0074`
+* `DiagnosticReport.category.coding.code` = `LAB`
+* `DiagnosticReport.category.coding.display` = `Laboratory`
+
+This element has an open slice, and **MAY** be used to differentiate the particular speciality of the laboratory or laboratory department. This can be coded or provided as text only. For example:
+
+* `DiagnosticReport.category.coding.text` = `Medical microbiology`
+
+---
 
 ### `code`
-This **SHALL** be populated with a fixed value of SNOMED CT ConceptID `721981007` for `Diagnostic studies report`. The clinical code and name of a test result or a test group is defined in the `code` element of the relevant `Observation` resource.
+This **SHALL** be populated with the following fixed value:
+
+* `DiagnosticReport.category.coding.system` = `http://snomed.info/sct`
+* `DiagnosticReport.category.coding.code` = `721981007`
+* `DiagnosticReport.category.coding.display` = `Diagnostic studies report`
+
+**Note:** The clinical code and name of a test result or a test group is defined in the `code` element of the relevant `Observation` resource.
+
+---
+
+### `result`
+Reference(s) to the results included in the test report. This may contain references to individual test results, test groups or a combination of these. Test results and test groups are defined as `Observations`.
+
+Test results which are part of a test group will not be referenced by this element; the reference will be to the test group which will in turn reference the associated test results. Refer to the {{pagelink:DesignOverview}} for further information.
+
+---
+
+### `conclusion`
+A clinical interpretation/summary of the test results in a text format.
+
+---
+
+### `conclusionCode`
+A coded finding of the test report.
+
+---
 
 <br><br>
 
-<table class="regular">
-    <thead>
-        <tr>
-            <th width="15%">Element Name</th>
-            <th width="85%">Definition, Constraints and Notes</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>basedOn</code></td>
-            <td>Reference to the <code>ServiceRequest</code> that contains details of the test request that was made. Where present this may include details of who requested the tests and why the test was requested.<br><br>As currently test requests are not submitted in a FHIR format this is not the original request but it is used as a container to hold details that were present in the original request.</td>
-        </tr>
-        <tr>
-            <td><code>status</code></td>
-            <td>The status of the test report. This <b>SHALL</b> be populated as follows: 
-                <ul>
-                    <li><code>partial</code>: when the report is issued on an initial, interim or preliminary basis, for example because some of the requested tests have not yet completed</li>
-                    <li><code>final</code>: when the report is completed.</li>
-                    <li><code>unknown</code>: when the status is unable to be determined</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td><code>category</code></td>
-            <td>The general type of test report. This <b>SHALL</b> be populated with a fixed value of category code <code>LAB</code> for <code>Laboratory</code>.<br><br>If required, additional category codes <b>MAY</b> also be included.</td>
-        </tr>
-        <tr>
-            <td><code>code</code></td>
-            <td>This <b>SHALL</b> be populated with a fixed value of SNOMED CT ConceptID <code>721981007</code> for <code>Diagnostic studies report</code>.<br><br><b>Note: </b>The clinical code and name of a test result or a test group is defined in the <code>code</code> element of the relevant <code>Observation</code> resource.</td>
-        </tr>
-        <tr>
-            <td>subject</td>
-            <td>Reference to the subject that the test report relates to. This is usually (but not always) a <code>Patient</code>.</td>
-        </tr>
-        <tr>
-            <td>issued</td>
-            <td>The date and time that the test report was issued.</td>
-        </tr>
-        <tr>
-            <td>performer</td>
-            <td>Reference to the <code>Organization</code>, <code>Practitioner</code> or <code>PractitionerRole</code> that produced the test report.</td>
-        </tr>
-        <tr>
-            <td>specimen</td>
-            <td>Reference(s) to the <code>Specimen(s)</code> used for testing.</td>
-        </tr>
-        <tr>
-            <td>result</td>
-            <td>Reference(s) to the results included in the test report. This may contain references to individual test results, test groups or a combination of these. Test results and test groups are defined as <code>Observations</code>.<br><br>Test results which are part of a test group will not be referenced by this element; the reference will be to the test group which will in turn reference the associated test results. Refer to the {{pagelink:DesignOverview}} for further information.</td>
-        </tr>
-            <tr>
-            <td>conclusion</td>
-            <td>A clinical interpretation/summary of the test results in a text format.<br><br>Notes may be captured at a number of levels within a test report. There may also be notes related to the specimen, test group or individual test result. It is the consuming systems responsibility to make sure all relevant notes are displayed to the user.</td>
-        </tr>
-        <tr>
-            <td>conclusionCode</td>
-            <td>A coded finding of the test report. Produced by the organisation that performed the tests.</td>
-        </tr>
-        <tr>
-            <td>encounter</td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>effective[x]</td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>resultsInterpreter</td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>imagingStudy</td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>media</td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>presentedForm</td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>    
-    </tbody>
-</table>
+### **Previous Table Format **
 
 <br><br>
 
