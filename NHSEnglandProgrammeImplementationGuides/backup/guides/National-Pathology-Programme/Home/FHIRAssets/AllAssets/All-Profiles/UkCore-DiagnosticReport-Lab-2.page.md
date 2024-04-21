@@ -64,9 +64,9 @@ This **SHALL** be populated as follows:
 ### `category`
 The general type of test report. As a minimum, the following **SHOULD** be used for this profile:
 
-* `DiagnosticReport.category.coding.system` = `http://terminology.hl7.org/CodeSystem/v2-0074`
-* `DiagnosticReport.category.coding.code` = `LAB`
-* `DiagnosticReport.category.coding.display` = `Laboratory`
+* `category.coding.system` = `http://terminology.hl7.org/CodeSystem/v2-0074`
+* `category.coding.code` = `LAB`
+* `category.coding.display` = `Laboratory`
 
 This element has an open slice, and **MAY** be used to differentiate the particular speciality of the laboratory or laboratory department. This can be coded or provided as text only. For example:
 
@@ -77,9 +77,9 @@ This element has an open slice, and **MAY** be used to differentiate the particu
 ### `code`
 This **SHALL** be populated with the following fixed value:
 
-* `DiagnosticReport.category.coding.system` = `http://snomed.info/sct`
-* `DiagnosticReport.category.coding.code` = `721981007`
-* `DiagnosticReport.category.coding.display` = `Diagnostic studies report`
+* `code.coding.system` = `http://snomed.info/sct`
+* `code.coding.code` = `721981007`
+* `code.coding.display` = `Diagnostic studies report`
 
 **Note:** The clinical code and name of a test result or a test group is defined in the `code` element of the relevant `Observation` resource.
 
