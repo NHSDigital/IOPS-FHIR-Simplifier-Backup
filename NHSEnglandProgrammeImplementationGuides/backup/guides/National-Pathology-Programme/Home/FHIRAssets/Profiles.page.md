@@ -12,8 +12,9 @@ Refer to the {{pagelink:DesignOverview}} section for supporting information, inc
 * {{pagelink:R4DiagnosticReport}}
 * {{pagelink:R4DiagnosticReport2}}
 * {{pagelink:R4MessageHeader}}
-* {{pagelink:R4ObservationTestResult}}
 * {{pagelink:R4ObservationTestGroup}}
+* {{pagelink:R4ObservationTestGroup2}}
+* {{pagelink:R4ObservationTestResult}}
 * {{pagelink:R4Organization}}
 * {{pagelink:R4Patient}}
 * {{pagelink:R4Practitioner}}
