@@ -23,7 +23,7 @@ The Profiles are rendered in several formats:
 </ul>
 In addition, each Profile also has the following: 
 <ul>
-<!--<li><b>Usage:</b> a listing of extensions and profiles that reference this asset</li>--
+<!--<li><b>Usage:</b> a listing of extensions and profiles that reference this asset</li>-->
 <li><b>Examples:</b> one or more validated example of the profile in use</li>
 <li><b>Feedback:</b> a link to Simplifier to raise issues regarding the asset</li> 
 </ul>
