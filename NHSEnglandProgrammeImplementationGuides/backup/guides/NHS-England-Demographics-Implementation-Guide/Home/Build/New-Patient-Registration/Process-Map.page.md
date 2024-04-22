@@ -2,8 +2,6 @@
 
 This page is to aid vendors in creating a new patient within PDS.
 
-[PDS FHIR - NHS Number Allocation Analysis](https://nhsd-confluence.digital.nhs.uk/display/DEMGRPH/PDS+FHIR+-+NHS+Number+Allocation+Analysis)
-
 <table class="assets" title="PDS New Patient Framework, interaction and profile">
 <tr>
 <th>Framework</th>
@@ -11,7 +9,7 @@ This page is to aid vendors in creating a new patient within PDS.
 <th>FHIR Profile</th>
 </tr>
 <tr>
-<td>n/a</td>
+<td><a href="https://profiles.ihe.net/ITI/PIXm/">IHE PIXm</a></td>
 <td><a href="https://hl7.org/fhir/R4/http.html">RESTful API</a></td>
 <td>{{pagelink:Profile-England-Patient-PDS}}</td>
 </tr>

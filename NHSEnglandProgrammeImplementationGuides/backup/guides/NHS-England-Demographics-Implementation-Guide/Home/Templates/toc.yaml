@@ -1,6 +1,12 @@
+- name: Mandatory & MustSupport Template
+  filename: Mandatory-MustSupport-Template.page.md
 - name: Example Template
   filename: Example-Template.page.md
 - name: Profile Template
   filename: Profile-Template.page.md
+- name: Mandatory Template
+  filename: Mandatory-Template.page.md
 - name: Profile Extension Template
   filename: Profile-Extension-Template.page.md
+- name: Constraints Template
+  filename: Constraints-Template.page.md
