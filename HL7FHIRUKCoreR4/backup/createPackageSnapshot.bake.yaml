@@ -1,0 +1,46 @@
+
+move-active-resources:
+  - category: Conformance
+  - filter: status='active'
+  - move: /package/
+  - target: staging
+
+move-examples:
+  - category: Instance
+  - move: /package/examples
+  - target: staging
+
+# If you don't have FSH files this step will be skipped.
+sushi:
+  - files: /**/*.fsh
+  - action: sushi
+  - move: /package/generated/
+  - target: staging
+
+# If you don't have YamlGen files this step will be skipped.
+yaml-gen:
+  - files: /**/*.gen.yaml
+  - action: yamlgen
+  - move: /package/generated/
+  - target: staging
+
+generate-snapshots:
+  - source: output
+  - category: Profile
+  - action: snapshot
+  - target: staging
+
+to-json: 
+  - source: staging
+  - category: Resource
+  - transform: json
+
+manifest:
+  - files: package.json
+  - move: /package
+
+index-file:
+  - source: output
+  - files: /package/**/*.json
+  - action: create-package-index
+  - move: /package
