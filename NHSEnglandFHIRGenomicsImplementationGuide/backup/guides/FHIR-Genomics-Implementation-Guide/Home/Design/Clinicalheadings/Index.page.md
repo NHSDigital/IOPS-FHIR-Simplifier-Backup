@@ -6,7 +6,7 @@ Across the GLHs, there is a lack of standardisation within paper based Non-WGS T
 
 The standardisation of the Non-WGS Test Order form is currently underway. Fields within the test order forms (Non-WGS and WGS) are specified as Mandatory, Optional, or Mandatory-if (applicable to test type) based on the MDS. The functional requirements for test ordering include an ability to configure forms based on the MDS and an ability to update forms (including introduction and modification of data fields through change control processes) at a regional level. For further details, refer to the draft copies of the Non-WGS Test Order forms in the links to documentation section. 
 
-In the case of Genomics, no PRSB clinical headings have been used but sections from the core Genomics Minimum Dataset and their mappings have been recreated on the following pages. The current dataset is based on **MDS v1.0, available on the [NHS Futures website](https://future.nhs.uk/NHSgenomics/view?objectId=176732133)**. These include designations of mandatory vs. optional fields per test category, which have been excluded from the following tables for readability. 
+In the case of Genomics, no PRSB clinical headings have been used but sections from the core Genomics Minimum Dataset and their mappings have been recreated on the following pages. The current dataset is based on **MDS v1.03, available on the [NHS Futures website](https://future.nhs.uk/NHSgenomics/view?objectId=194236741)**. These include designations of mandatory vs. optional fields per test category, which have been excluded from the following tables for readability. 
 
 The sub pages provide guidance about the heading and the structure required when representing this information in FHIR.
 

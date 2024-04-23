@@ -1,9 +1,7 @@
 - name: Index
   filename: Index.page.md
-- name: Requesting Clinician
-  filename: Requesting-Clinician.page.md
-- name: Additional Contact
-  filename: Additional-Contact.page.md
+- name: Healthcare Professional
+  filename: Healthcare-Professional.page.md
 - name: Patient
   filename: Patient.page.md
 - name: Fetus
