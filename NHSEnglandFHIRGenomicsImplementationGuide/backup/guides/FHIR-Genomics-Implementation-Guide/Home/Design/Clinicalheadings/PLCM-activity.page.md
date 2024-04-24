@@ -1,7 +1,8 @@
 ## {{page-title}}
 
 ### Purpose
-For PLCM activity submissions.
+For PLCM activity submissions. 
+This section is pending review, supporting PLCM activity reporting is not expected as part of the Genomic Order Management Alpha.
 
 ### Notes
 Derived from existing fields used for clinical/operational purposes in the test order/response.
