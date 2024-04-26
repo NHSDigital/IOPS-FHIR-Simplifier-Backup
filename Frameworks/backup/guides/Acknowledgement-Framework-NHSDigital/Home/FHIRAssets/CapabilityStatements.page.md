@@ -1,8 +1,8 @@
 ## {{page-title}}
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> The Acknowledgement Framework is currently a draft version. Please contact the IOPS team if you are interested to discuss this solution for your use case.</div>
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> The Acknowledgement Framework is currently a draft version. Please contact the <a href="mailto:interoperabilityteam@nhs.net?subject=Acknowledgement Framework">Interoperability Standards Team</a> if you are interested to discuss this solution for your use case.</div>
 
-All systems that use the Acknowledgement Framework shall use CapabilityStatement resources. There are three types of CapabilityStatement which is represented by the code value in **CapabilityStatement.kind**. The three types are **requirements**, **capability**, and **instance**. 
+All systems that use the Acknowledgement Framework shall use the CapabilityStatement resource. There are three types of CapabilityStatement which is represented by the code value in **CapabilityStatement.kind**. The three types are **requirements**, **capability**, and **instance**. 
 
 The Acknowledgement Framework will have a 'requirements' CapabilityStatement which implementers shall conform to. Implementers shall also create and conform to 'capability' and/or 'instance' CapabilityStatement resources where appropriate.
 

@@ -1,12 +1,12 @@
 # Acknowledgement Framework FHIR R4 Implementation Guide
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> The Acknowledgement Framework is currently a draft version. Please contact the IOPS team if you are interested to discuss this solution for your use case.</div>
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> The Acknowledgement Framework is currently a draft version. Please contact the <a href="mailto:interoperabilityteam@nhs.net?subject=Acknowledgement Framework">Interoperability Standards Team</a> if you are interested to discuss this solution for your use case.</div>
 
-The Acknowledgment Framework aims to become a generic and agnostic solution that will support any future healthcare system using any transport method. We envisage to promote this to be used for projects that will use FHIR R4 in the future.
+The Acknowledgment Framework is a generic and agnostic solution that will support acknowledgements in healthcare systems using any transport method, using HL7 FHIR R4.
 
-The Acknowledgement Framework is in a draft state of development so please contact the <a href="mailto:interoperabilityteam@nhs.net?subject=Acknowledgement Framework">IOPS Team</a> if your product or programme would be interested to discuss this potential solution.
+The Acknowledgement Framework is in a draft state of development so please contact the <a href="mailto:interoperabilityteam@nhs.net?subject=Acknowledgement Framework">Interoperability Standards Team</a> if your product or programme is interested in implementing this framework.
 
-Please raise any feedback against this Implementation Guide by clicking <a href="https://simplifier.net/Acknowledgement-Framework/~issues">here</a>.
+Please raise any feedback against this Implementation Guide by clicking <a href="https://simplifier.net/Frameworks/~issues">here</a>.
 
 ## Use Cases
 
