@@ -67,7 +67,7 @@ This **SHALL** be populated using one of the following:
 ### `effective[x]`
 The date and time that the test group was performed.
 
-The presence of `[x]` in an element name is used to indicate a [ choice of data type](https://hl7.org/fhir/R4/formats.html#choice). The `[x]` part of the element name is replaced with an appropriate data type, in title-case format e.g. `effectiveDateTime`.
+The presence of `[x]` in an element name is used to indicate a [choice of data type](https://hl7.org/fhir/R4/formats.html#choice). The `[x]` part of the element name is replaced with an appropriate data type, in title-case format e.g. `effectiveDateTime`.
 
 ---
 

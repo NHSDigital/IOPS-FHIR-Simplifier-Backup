@@ -15,6 +15,7 @@ Refer to the {{pagelink:DesignOverview}} section for supporting information, inc
 * {{pagelink:R4ObservationTestGroup}}
 * {{pagelink:R4ObservationTestGroup2}}
 * {{pagelink:R4ObservationTestResult}}
+* {{pagelink:R4ObservationTestResult2}}
 * {{pagelink:R4Organization}}
 * {{pagelink:R4Patient}}
 * {{pagelink:R4Practitioner}}
