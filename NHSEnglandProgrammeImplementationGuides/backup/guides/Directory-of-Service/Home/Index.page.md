@@ -1,10 +1,29 @@
-## What is [xyz]?
+## What is Directory of Service (DoS)?
 
-This implementation guide provides guidance on implementing the Directory of Service (DoS) FHIR R4 API. 
+This implementation guide provides guidance on implementing the Directory of Service (DoS) FHIR R4 API.<br>
+The project's scope involves a technical re-architecture of the Directory of Services. This entails replacing outdated components causing user or maintenance issues.<br> 
+The rewrite aims to introduce necessary enhancements aligning the DoS with other product suites and establishing a new foundational infrastructure to address future needs effectively.
 
 Refer to NHS Program URL for more information <a href='' class="external">[xyz]</a>
 
+### Please provide a brief description of what this implementation guide is about
 
+What is the Aim of this IG? <br>
+Is this IG part of a bigger project <br>
+Does it replace another system? <br>
+
+### Please provide an example of what is in scope for this implementation guide
+
+Does it use any third party applications<br>
+Please include some use cases:<br>
+GP to Ambulance <br>
+Hospital to hospital patient transfer<br>
+Introduction Space<br>
+
+### *Please use the introduction page if you have a lengthy introduction section<br>
+How to use this Guide <br>
+Approach <br>
+Delivery <br>
 
 
 
