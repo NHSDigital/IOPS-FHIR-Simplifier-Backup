@@ -11,7 +11,6 @@ You will find here a set of documentation, specifications and services that desc
 <details>
 <summary>> <b class="barslink">Expand for full Core directory</b></summary>
 
-
 &bull; {{pagelink:design-core-1.1.3 , text: Core 1.1.3}}</br>
 &nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-1.1.3 , text:End to end workflow}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.1.3 , text:Service Discovery}}</br>
@@ -47,13 +46,16 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-Security-Oauth-1.1.3 , text:OAuth Endpoints}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-Security-Receiver-1.1.3 , text:Receiver}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-Security-Auth-1.1.3 , text:Authorisation}}</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-ErrorHandling-1.1.3 , text:Error Handling}}</br>
+&nbsp;&nbsp;&bull; {{pagelink:core-ErrorHandling-1.1.3 , text:Error Handling}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-ErrorHandling-Overview-1.1.3 , text:Overview}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-ErrorHandling-IntS-1.1.3 , text:BaRS interactions(sending)}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-ErrorHandling-OpOut-1.1.3 , text:OperationOutcome Example}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-ErrorHandling-Diag-1.1.3 , text:Diagnostic Text}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-ErrorHandling-Examples-1.1.3 , text:Example Errors}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-ErrorHandling-SendResp-1.1.3 , text:Sender Responsibilities}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-ErrorHandling-IntR-1.1.3 , text:BaRs interactions(receiving)}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-ErrorHandling-RecResp-1.1.3 , text:Receiver responsibilities}}</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-EHFailureScenarios-1.1.3 , text:Failure Scenarios}}</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-failure_scenarios-1.1.3 , text:1.1.3}}	 </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-failure_scenarios-1.1.3 , text:Failure Scenarios}}	 </br>
 &nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-1.1.3 , text:Transactional Integrity}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Initial-1.1.3 , text:Initial Request}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Update-1.1.3 , text:Sending an update}}</br>
@@ -64,10 +66,10 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Receiver-1.1.3 , text:Receiver responsibilities}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Sender-1.1.3 , text:Sender responsibilities}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-TIFailureScenarios-1.1.3 , text:Failure Scenarios}}</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-NFR-1.1.3 , text:Non functional Requirements}}</br>
+&nbsp;&nbsp;&bull; {{pagelink:core-NFR-1.1.3 , text:Non functional Requirements}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-NFR-Requirements-1.1.3 , text:Requirements}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-NFR-Processing-Time-1.1.3 , text:Processing Times}}</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-StandardPattern-1.1.3 , text:Standard Patterns for BaRS Operations}}</br>
+&nbsp;&nbsp;&bull; {{pagelink:Core-StandardPattern-1.1.3 , text:Standard Patterns for BaRS Operations}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPComposites-1.1.3 , text:Standard Pattern for Composites}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPMessageHeader-1.1.3 , text:Message Headers}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPCancellation-1.1.3 , text:Cancellation}}</br>
@@ -81,6 +83,7 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-document-reference-Sender-1.1.3 , text:Sender}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-document-reference-Receiver-1.1.3 , text:Receiver}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-document-reference-interface-1.1.3 , text:Interface}}</br>
+
    
 
 </details>
