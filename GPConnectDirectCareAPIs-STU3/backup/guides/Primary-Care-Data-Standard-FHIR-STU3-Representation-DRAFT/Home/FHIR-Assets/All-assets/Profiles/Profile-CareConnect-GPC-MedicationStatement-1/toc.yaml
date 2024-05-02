@@ -26,6 +26,8 @@
   filename: extension-prescribingAgency.page.md
 - name: extension(dosageLastChanged)
   filename: extension-dosageLastChanged.page.md
+- name: extension(medicationTradeStatement)
+  filename: extension-medicationTradeStatement.page.md
 - name: identifier
   filename: identifier.page.md
 - name: basedOn
