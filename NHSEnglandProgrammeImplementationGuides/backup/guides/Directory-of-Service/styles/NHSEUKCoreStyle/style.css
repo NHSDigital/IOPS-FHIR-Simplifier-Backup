@@ -110,6 +110,9 @@ hr.thickline{
      border: 1px solid #dde1e4;
      border-top: none;
 }
+.tab button.feedback {
+    float: right;
+}
 
 /* css for simplifier diff/hybrid/snap buttons */
 .treetable-buttons {
@@ -515,8 +518,8 @@ table.codes thead tr:first-child th.orderable button:hover .sort-icon {
 
 /* this part adds an icon after external links, using FontAwesome*/
 a.external:after {
-     font-family: 'Font Awesome 5 Free';
+     font-family: 'FontAwesome';
    font-weight: 900;
-   content: "\f35d";
+   content: "\f08e";
     padding-left: 5px;
 }

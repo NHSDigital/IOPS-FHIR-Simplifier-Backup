@@ -1,7 +1,18 @@
-## {{page-title}}
+---
+topic: Profile-UKCore-Location
+subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location
+issue: UKCore-Location
+expand: yes
+---
+
+
+## StructureDefinition {{variable:issue}}
+
+{{page:Home/Templates/Profile-Template.page.md}}
+
+<hr class="thickline">
 
 
 
 
 
-<iframe src="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Location?version=current" height="800px" width="100%"></iframe>

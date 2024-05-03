@@ -2,6 +2,8 @@
   filename: Patient.page.md
 - name: Profile-England-Patient-PDS
   filename: Profile-England-Patient-PDS.page.md
+- name: RelatedPerson-test
+  filename: RelatedPerson-test.page.md
 - name: RelatedPerson
   filename: RelatedPerson.page.md
 - name: Questionnaire

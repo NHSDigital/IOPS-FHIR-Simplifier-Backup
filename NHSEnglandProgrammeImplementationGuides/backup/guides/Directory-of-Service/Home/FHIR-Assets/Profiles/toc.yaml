@@ -2,10 +2,6 @@
   filename: Index.page.md
 - name: UKCore-HealthCareService
   filename: UKCore-HealthCareService.page.md
-- name: UKCore-Schedule
-  filename: UKCore-Schedule.page.md
-- name: UKCore-Slot
-  filename: UKCore-Slot.page.md
 - name: UKCore-Location
   filename: UKCore-Location.page.md
 - name: UKCore-Organization
@@ -16,3 +12,7 @@
   filename: UKCore-Questionnaire.page.md
 - name: UKCore-QuestionnaireResponse
   filename: UKCore-QuestionnaireResponse.page.md
+- name: UKCore-Schedule
+  filename: UKCore-Schedule.page.md
+- name: UKCore-Slot
+  filename: UKCore-Slot.page.md
