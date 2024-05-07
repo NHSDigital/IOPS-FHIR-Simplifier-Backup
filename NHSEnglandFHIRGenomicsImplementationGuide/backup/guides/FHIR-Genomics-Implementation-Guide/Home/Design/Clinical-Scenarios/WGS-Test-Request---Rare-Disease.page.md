@@ -4,6 +4,8 @@ For each individual WGS Test Request ordered (includes duos/trios/larger family 
 
 In the future state, the electronic test request, sample, and RoD (electronic or pdf attachment) will be completed by members of the requesting team. Information may be completed at different stages and the GLH may receive the WGS test request, the sample, and the RoD at different times. The requirement is to remove the double entry of the test order and RoD into NGIS and provide the GLH with the ability to forward on all order components electronically to NGIS. The central service will indicate when each component (Test order, sample, and RoD) has been received by the GLH and once all components have been forwarded onto to GEL. 
 
+Representation of the RoD form can be through either an uploaded PDF or an electronically filled form. These SHOULD be linked through the Consent.source element. The Source element MAY either be a pointer to the location of the PDF version of the RoD, either hosted by the source/client system, accessed via NRL; or embedded within the message payload, base64 encoded (using sourceAttachment); or a reference to a QuestionnaireResponse resource (using sourceReference), if this has been collected in a structured format, using the {{pagelink:Questionnaire-Genomic-Testing}} RoD template.
+
 For further details on WGS Test Requesting and RoD, refer to WGS Resources and Genomics England.
 
 The following steps is a walk through of a WGS Test order workflow:
