@@ -1,0 +1,36 @@
+- name: Index
+  filename: Index.page.md
+- name: What is a consultation?
+  filename: What-is-a-consultation.page.md
+- name: Logical structure
+  filename: Logical-structure.page.md
+- name: Approach
+  filename: Approach.page.md
+- name: Consultation structure
+  filename: Consultation-structure.page.md
+- name: Consultation notes
+  filename: Consultation-notes.page.md
+- name: Example illustration
+  filename: Example-illustration.page.md
+- name: Clinical item references
+  filename: Clinical-item-references.page.md
+- name: Coded clinical items returned as text
+  filename: Coded-clinical-items-returned-as-text.page.md
+- name: Consultations containing unsupported clinical items
+  filename: Consultations-containing-unsupported-clinical-items.page.md
+- name: Consultations containing confidential items
+  filename: Consultations-containing-confidential-items.page.md
+- name: Draft consultations
+  filename: Draft-consultations.page.md
+- name: Suppression of empty consultations, topics and headings
+  filename: Suppression-of-empty-consultations-topics-and-headings.page.md
+- name: What information may be recorded outside of consultations
+  filename: What-information-may-be-recorded-outside-of-consultations.page.md
+- name: Consumer (receiver) guidance
+  filename: Consumer-receiver-guidance.page.md
+- name: Consumer (receiver) cautions
+  filename: Consumer-receiver-cautions.page.md
+- name: Design decisions
+  filename: Design-decisions.page.md
+- name: Using the List resource for consultation queries
+  filename: Using-the-List-resource-for-consultation-queries.page.md

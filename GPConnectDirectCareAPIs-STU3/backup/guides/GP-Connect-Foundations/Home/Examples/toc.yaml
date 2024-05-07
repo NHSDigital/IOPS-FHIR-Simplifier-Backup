@@ -1,0 +1,22 @@
+- name: Allergy examples
+  filename: Allergy-examples
+- name: Compatibility support examples
+  filename: Compatibility-support-examples
+- name: Consultation examples
+  filename: Consultation-examples
+- name: Diary entry examples
+  filename: Diary-entry-examples
+- name: Immunisation examples
+  filename: Immunisation-examples
+- name: Investigation examples
+  filename: Investigation-examples
+- name: Medication examples
+  filename: Medication-examples
+- name: Problem examples
+  filename: Problem-examples
+- name: Referral examples
+  filename: Referral-examples
+- name: Search examples
+  filename: Search-examples
+- name: Uncategorised data examples
+  filename: Uncategorised-data-examples
