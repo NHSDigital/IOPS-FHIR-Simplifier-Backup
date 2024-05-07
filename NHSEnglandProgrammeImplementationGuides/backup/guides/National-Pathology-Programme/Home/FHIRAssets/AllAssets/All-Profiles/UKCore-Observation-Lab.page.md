@@ -44,6 +44,80 @@ The following table includes additional guidance that should be followed when im
 
 An example of how each supported data element may be populated is provided in {{pagelink:R4SnippetsObservationTestResult}}.
 
+---
+
+### `category`
+TBC
+
+---
+
+### `code`
+
+The clinical code and name of the test that was performed, for example:
+
+* `code.coding.system` = `http://snomed.info/sct`
+* `code.coding.code` = `1107451000000100`
+* `code.coding.display` = `Glucose substance concentration in serum`
+
+This **SHALL** be populated using one of the following:
+
+* memberOf 1853551000000106 | PaLM (Pathology and Laboratory Medicine) observable entity simple reference set, OR
+* memberOf 999002881000000100 | PBCL (Pathology Bounded Code List) observables simple reference set
+
+---
+
+### `effective[x]`
+The date and time that the test was performed.
+
+The presence of `[x]` in an element name is used to indicate a [choice of data type](https://hl7.org/fhir/R4/formats.html#choice). The `[x]` part of the element name is replaced with an appropriate data type, in title-case format e.g. `effectiveDateTime`.
+
+---
+
+### `issued`
+The date and time that the test result was issued.
+
+---
+
+### `value[x]`
+
+The test result value.
+
+The presence of `[x]` in an element name is used to indicate a [choice of data type](https://hl7.org/fhir/R4/formats.html#choice). The `[x]` part of the element name is replaced with an appropriate data type, in title-case format e.g. `valueQuantity`.
+
+If the result value is a numeric quantity (i.e. a quantitative result type), a standard [UCUM](https://ucum.org/) **SHOULD** be used.
+
+If the result value is coded (i.e. a semi-quantitative or qualitative result type), a suitable SNOMED CT concept **SHOULD** be used, for example: 
+
+* `valueCodeableConcept.coding.system` = `http://snomed.info/sct`
+* `valueCodeableConcept.coding.code` = `260385009"`
+* `valueCodeableConcept.coding.display` = `Negative`
+
+Refer to the {{pagelink:DesignOverview}} section for further information relating to the representation of different types of test results.
+
+---
+
+### `dataAbsentReason`
+
+The reason why a test result value was omitted.
+
+The [ValueSet](https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/83657) defined in FHIR is of limited benefit to UK laboratory use cases. It is therefore recommended that if a data absent reason is included, then a text representation SHOULD be used. For example: 
+
+* `dataAbsentReason.coding.system` = `http://terminology.hl7.org/CodeSystem/data-absent-reason`
+* `dataAbsentReason.coding.code` = `as-text`
+* `dataAbsentReason.text` = `Specimen unsatisfactory for evaluation`
+
+---
+
+### `interpretation`
+
+A coded, categorical assessment of a test result value, for example `High`. The associated test result value (i.e. `Observation.value[x]`), is usually numeric. 
+
+Refer to the {{pagelink:DesignOverview}} section for further information relating to the representation of different types of test results.
+
+---
+
+### ** Previous Table Format **
+
 <table class="regular">
     <thead>
         <tr>
