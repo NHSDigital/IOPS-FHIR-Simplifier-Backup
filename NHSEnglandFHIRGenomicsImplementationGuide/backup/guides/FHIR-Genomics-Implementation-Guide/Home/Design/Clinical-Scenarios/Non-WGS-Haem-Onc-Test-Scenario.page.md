@@ -1,5 +1,11 @@
 ## {{page-title}}
 
+The Cancer test order process is equivalent for WGS and Non-WGS tests.
+For WGS, it is expected Tasks would be routed to GEL (or have GEL indicated as the performer on the ServiceRequest) and the ServiceRequest.category would indicate the test is a 'cancer-wgs' test as with the WGS Rare Disease scenario.
+All WGS tests are expected to include a RoD form: {{pagelink:Questionnaire-Genomic-Testing}}
+
+For the WGS Tumour First, Germline Later use case, it is expected requesters would submit an additional ServiceRequest for the Germline Later test, using ServiceRequest.basedOn to reference the initial Tumour First test.
+
 ### [Link to the High Fidelity Wireframe for the Non WGS Haem-Onc Test Scenario](https://uj5cen.axshare.com/)
 
 The following steps is a walk through of:

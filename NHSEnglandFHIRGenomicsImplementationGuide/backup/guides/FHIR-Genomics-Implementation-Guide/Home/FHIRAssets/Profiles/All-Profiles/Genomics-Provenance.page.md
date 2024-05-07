@@ -33,17 +33,17 @@ The draft profile for the UK Core Provenance is provided below for completeness.
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance, snapshot}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/Provenance, snapshot}}
         </div>
         <div id="Differential" role="tabpanel" class="tab-pane">
          <br />
          Differential from {{link:http://hl7.org/fhir/StructureDefinition/Provenance}} <br>
             <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance, diff}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/Provenance, diff}}
         </div>
         <div id="Dictionary" role="tabpanel" class="tab-pane">
             <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance, hybrid}}
+            {{dict:http://hl7.org/fhir/StructureDefinition/Provenance, hybrid}}
         </div>
         <div id="Examples" role="tabpanel" class="tab-pane">
             <br />
