@@ -9,8 +9,8 @@
 The status of the authorisation within GP Connect will typically be one of:
 
 - `active` - representing an active authorisation - used for active medications/medical devices
-- `completed` - representing an authorisation which has been discontinued, cancelled or stopped
-- `stopped` - representing an authorisation which has run its course
+- `stopped` - representing an authorisation which has been discontinued, cancelled or stopped
+- `completed` - representing an authorisation which has run its course
 
 For `MedicationRequest` instances where `intent` is set to `plan`:
 
