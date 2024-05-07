@@ -44,6 +44,54 @@ The following table includes additional guidance that should be followed when im
 
 An example of how each supported data element may be populated is provided in {{pagelink:R4SnippetsObservationTestGroup}}.
 
+---
+
+### `category`
+TBC
+
+---
+
+### `code`
+The clinical code and name of the test group, for example:
+
+* `code.coding.system` = `http://snomed.info/sct`
+* `code.coding.code` = `26604007`
+* `code.coding.display` = `Full blood count`
+
+This **SHALL** be populated using one of the following:
+
+* memberOf 1853561000000109 | PaLM (Pathology and Laboratory Medicine) procedure simple reference set, OR
+* if a Procedure concept from the above reference set cannot be identified, use a SNOMED CT procedure code taken from descendantOf 386053000 | Evaluation procedure (procedure), OR
+* if the two methods described above fail to identify a suitable code, then it is acceptable to use a local code representing the test group
+
+---
+
+### `effective[x]`
+The date and time that the test group was performed.
+
+The presence of `[x]` in an element name is used to indicate a [choice of data type](https://hl7.org/fhir/R4/formats.html#choice). The `[x]` part of the element name is replaced with an appropriate data type, in title-case format e.g. `effectiveDateTime`.
+
+---
+
+### `issued`
+The date and time that the test group results were issued.
+
+---
+
+### `note`
+Comments relating to the test group.
+
+---
+
+### `hasMember`
+Reference(s) to the `Observation(s)` that make up the test group. This may contain references to single test results, test groups (which then reference further results) or a mixture of both.
+
+Multiple levels of test group `Observations` and test result `Observations` may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MCS) reports. Refer to the {{pagelink:DesignOverview}} section for further information.
+
+---
+
+### ** Previous Table Format **
+
 <table class="regular">
     <thead>
         <tr>
