@@ -7,7 +7,7 @@ expand: yes
 
 ## StructureDefinition {{variable:issue}}
 
-{{page:Home/Templates/Profile-Template.page.md}}
+{{page:Home/FHIR-Assets/Profiles/ProfilesTemplate.page.md}}
 
 
 <div id="Examples" class="tabcontent">
@@ -17,7 +17,5 @@ expand: yes
 </div>
 
 <hr class="thickline">
-
-{{render:UKCore-HealthcareService-OrthopaedicService-Example}}
 
 

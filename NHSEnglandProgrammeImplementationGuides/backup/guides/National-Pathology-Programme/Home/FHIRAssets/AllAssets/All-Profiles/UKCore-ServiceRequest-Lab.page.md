@@ -45,18 +45,6 @@ An example of how each supported data element may be populated is provided in {{
 ---
 
 ### `requisition`
-
-A shared identifier that is used to link multiple test requests.
-
-If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of `ServiceRequest` is required for each requested test or test group. `ServiceRequest.requisition` acts as a common identifier to link the requests.
-
-For further information refer to:
-
-* the description of [Shared requisition id](https://hl7.org/FHIR/R4/request.html#requisitionid) in the Compound Requests section of the base FHIR specification, and
-* the following example message: {{pagelink:R4BundleExampleLFTandUandERequest}}
-
-### `requisition`
-
 A shared identifier that is used to link multiple test requests.
 
 If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of `ServiceRequest` is required for each requested test or test group. `ServiceRequest.requisition` acts as a common identifier to link the requests.
@@ -69,25 +57,21 @@ For further information refer to:
 ---
 
 ### `status`
-
 This **SHALL** be populated with a fixed value of `active`.
 
 ---
 
 ### `intent`
-
 This **SHOULD** be populated with a value of `order`, unless the `ServiceRequest` relates to a reflex order i.e. a request that was initiated by a laboratory in response to the results of the originally requested test(s). In this case, a value of `reflex-order` **SHOULD** be used. For reflex orders, `ServiceRequest.basedOn` **SHALL** be populated with a reference to the original `ServiceRequest`, for traceability.
 
 ---
 
 ### `category`
-
 TBC
 
 ---
 
-### `code'
-
+### `code`
 The clinical code and name of the requested test or test group, for example:
 
 * `code.coding.system` = `http://snomed.info/sct`
@@ -103,25 +87,21 @@ This **SHALL** be populated using one of the following:
 ---
 
 ### `authoredOn`
-
 The date and time of the test request.
 
 ---
 
 ### `reasonCode`
-
 An explanation in coded or textual form that describes why the tests have been requested.
 
 ---
 
 ### `reasonReference`
-
 Reference(s) to any conditions the patient has (as supplied by the requester) that are relevant to the test request.
 
 ---
 
 ### `specimen`
-
 Reference(s) to the `Specimen(s)` that will be used for testing. This should only be used when a test is requested and the specimen has already been collected.
 
 **Note:** It is also possible to link a `Specimen` to a `ServiceRequest` using the `Specimen.request` data element. This should be used when a test was requested before the specimen was collected.
@@ -134,7 +114,6 @@ For further information refer to:
 ---
 
 ### `note`
-
 Any other notes relating to the test request, as provided by the requester. Clinical information relating to the test request **SHOULD** be conveyed using `ServiceRequest.reasonCode` and/or `ServiceRequest.reasonReference`.
 
 ---

@@ -2,6 +2,14 @@
 
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
+
+
+The Directory of Service standard provides a common framework for NHS DoS services to align.
+
+---------------------------------------------------------
+
+
+
 The [xyz] FHIR API provides an R4 FHIR Application Programming Interface (API) to allow connecting systems to search and update [xyz] indicators.
 
 - The API provides a [FHIR RESTful interface](https://hl7.org/fhir/R4/http.html) within which transactions are performed directly on the server resource using synchronous endpoints using GET, POST and PUT HTTP verbs.

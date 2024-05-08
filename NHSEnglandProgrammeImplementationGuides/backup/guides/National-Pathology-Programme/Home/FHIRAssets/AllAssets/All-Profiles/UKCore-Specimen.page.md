@@ -38,6 +38,30 @@ The following table includes additional guidance that should be followed when im
 
 An example of how each supported data element may be populated is provided in {{pagelink:R4SnippetsSpecimen}}.
 
+---
+
+### `status`
+This **SHALL** be populated as follows: 
+* `available`: when the specimen is present and in a usable condition
+* `unavailable`: when the specimen is not available, for example it has been lost
+* `unsatisfactory`: when the specimen cannot be used, for example because of a broken container or contamination
+
+---
+
+### `request`
+Reference to the `ServiceRequest` that the specimen relates to. This should only be used when a test was requested before the specimen was collected.
+
+**Note:** It is also possible to link a `ServiceRequest` to a `Specimen` using the `ServiceRequest.specimen` data element. This should be used when a test is requested and the specimen has already been collected.
+
+For further information refer to:
+
+* the description of the {{pagelink:R4ServiceRequest}} profile in this implementation guide, and
+* the notes relating to the use of the [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html#notes) resource in the base FHIR specification.
+
+---
+
+### **Previous Table Format **
+
 <table class="regular">
     <thead>
         <tr>
