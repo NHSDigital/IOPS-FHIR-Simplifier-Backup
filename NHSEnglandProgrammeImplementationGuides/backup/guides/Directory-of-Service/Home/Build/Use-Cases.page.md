@@ -1,4 +1,5 @@
-## {{page-title}}
+# {{page-title}}
+
 
 ## Generic - Searching for a healthcare service
 
@@ -18,7 +19,7 @@
 <td><strong>Alternate Course</strong></td><td>If the desired service is not available or suitable, the HW may need to search for alternative services</td></tr><tr><td><strong>Exception</strong></td><td>In case of technical issues or downtime with the DoS platform, the healthcare worker may resort to traditional referral methods</td>
 </tr></tbody></table>
 <br>
----
+
 
 ## Search DoS with Clinical Triage System 
 
@@ -39,7 +40,7 @@
 </td>
 </tr></tbody></table>
 <br>
----
+
 
 ## Search DoS without Clinical Triage System 
 
@@ -93,7 +94,7 @@
 </tr><tr>
 <td><strong>Triggers</strong></td><td>Daily sit rep needs to be completed</td>
 </tr><tr>
-<td><strong>Pre Conditions</strong></td><td>User has an active DoS account with appropriate permissions</td></tr><tr><td><strong>Post Conditions</strong></td><td><ol><li>Hospital sit rep has been updated</li><li>Users are able to view and compare capacity data for their hospital and those of other areas</li></ol><td>Service profiling is correct</td>
+<td><strong>Pre Conditions</strong></td><td>User has an active DoS account with appropriate permissions</td></tr><tr><td><strong>Post Conditions</strong></td><td><ol><li>Hospital sit rep has been updated</li><li>Users are able to view and compare capacity data for their hospital and those of other areas</li><li>Service profiling is correct</li></ol></td>
 </tr><tr>
 <td><strong>Main Course</strong></td><td><ol><li>User logs in</li><li>User navigates to the correct service profile</li><li>User saves changes</li><li>User completes a search based on geography and service type</li><li>User views summary data for services returned in the search</li><li>User navigates to reporting page</li><li>User selects region, grid and timeframes and exports required data</li></ol></td>
 </tr><tr>

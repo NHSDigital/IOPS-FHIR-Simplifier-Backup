@@ -1,6 +1,6 @@
-<h3> The profiles are provided for implementation guidance: </h3>
+<h4> The profile is provided for implementation guidance:</h4>
 
-<h3> Note - it is not neccessary to reference the profile in the Resource.meta.</h3>
+<h4>Note - it is not neccessary to reference the profile in the <code>Resource.meta</code>.</h4>
 
 <div class="tab fhirTree">
  <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>

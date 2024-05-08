@@ -7,6 +7,6 @@ expand: yes
 
 ## StructureDefinition {{variable:issue}}
 
-{{page:Home/Templates/Profile-Template.page.md}}
+{{page:Home/FHIR-Assets/Profiles/ProfilesTemplate.page.md}}
 
 <hr class="thickline">

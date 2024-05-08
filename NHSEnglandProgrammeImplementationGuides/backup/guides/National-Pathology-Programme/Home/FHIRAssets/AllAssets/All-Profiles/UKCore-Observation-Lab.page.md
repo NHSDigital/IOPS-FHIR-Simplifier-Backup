@@ -52,7 +52,6 @@ TBC
 ---
 
 ### `code`
-
 The clinical code and name of the test that was performed, for example:
 
 * `code.coding.system` = `http://snomed.info/sct`
@@ -79,7 +78,6 @@ The date and time that the test result was issued.
 ---
 
 ### `value[x]`
-
 The test result value.
 
 The presence of `[x]` in an element name is used to indicate a [choice of data type](https://hl7.org/fhir/R4/formats.html#choice). The `[x]` part of the element name is replaced with an appropriate data type, in title-case format e.g. `valueQuantity`.
@@ -97,7 +95,6 @@ Refer to the {{pagelink:DesignOverview}} section for further information relatin
 ---
 
 ### `dataAbsentReason`
-
 The reason why a test result value was omitted.
 
 The [ValueSet](https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/83657) defined in FHIR is of limited benefit to UK laboratory use cases. It is therefore recommended that if a data absent reason is included, then a text representation SHOULD be used. For example: 
@@ -109,7 +106,6 @@ The [ValueSet](https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/8365
 ---
 
 ### `interpretation`
-
 A coded, categorical assessment of a test result value, for example `High`. The associated test result value (i.e. `Observation.value[x]`), is usually numeric. 
 
 Refer to the {{pagelink:DesignOverview}} section for further information relating to the representation of different types of test results.
