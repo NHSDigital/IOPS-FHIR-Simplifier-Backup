@@ -4,19 +4,13 @@ This implementation guide provides guidance on implementing the Directory of Ser
 The project's scope involves a technical re-architecture of the Directory of Services. This entails replacing outdated components causing user or maintenance issues.<br> 
 The rewrite aims to introduce necessary enhancements aligning the DoS with other product suites and establishing a new foundational infrastructure to address future needs effectively.
 
-Current list of known DoS systems:
-
-- ODS
-- ORD
-- SDS (LDAP) - feeds Spine REDIS cache for speedy lookups
-- UEC DoS
-- NHS UK Service Search (multiple versions)
-
 Refer to NHS Program URL for more information <a href='' class="external">[xyz]</a>
 
 ### Please provide a brief description of what this implementation guide is about
 
 What is the Aim of this IG? <br>
+To identify common patterns when implementng a DoS.
+
 Is this IG part of a bigger project <br>
 Does it replace another system? <br>
 
