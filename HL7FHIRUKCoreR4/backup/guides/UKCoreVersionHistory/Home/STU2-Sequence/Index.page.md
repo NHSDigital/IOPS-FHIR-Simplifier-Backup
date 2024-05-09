@@ -43,6 +43,7 @@ topic: STU2Sequence
 <b>Additional Changes for this version</b>
 <br>
 <ul>
+<li>Profiles and Extensions within the package now contains snapshots along with the differentials. This is to allow the packages to work with the HL7 IG publisher. The snapshots can be removed using the <a href="https://docs.fire.ly/">Firely Terminal</a> `fhir deflate` command.
 <li>Reset the following profiles: <code>UKCore-Consent</code>, <code>UKCore-EpisodeOfCare</code>, <code>UKCore-Flag</code>, <code>UKCore-ImagingStudy</code>, <code>UKCore-MessageHeader</code>, <code>UKCore-OperationOutcome</code>,  <code>UKCore-QuestionnaireResponse</code>, <code>UKCore-QuestionnaireResponse</code>, <code>UKCore-Task</code> to draft status, and removed from the STU2 Sequence release (available in the STU3 Sequence draft package)</li>
 <li>Reset the referencing on all profiles to base resources, with an intelligent redirect within the IG to the UK Core profile guidance page</li>
 <li>Added intelligent redirect within the IG tree view for FHIR datatypes, and Reference(Resource)</li>
