@@ -20,6 +20,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
     <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
     <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
     <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+    <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
 </div>
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
@@ -28,6 +29,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 <div id="Differential View" class="tabcontent"></h4>
+    <h4>Differential View</h4>
     {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab, diff}}
 </div>
 
@@ -36,10 +38,14 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
     {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab, hybrid}}
 </div>
 
+<div id="Examples" class="tabcontent">
+    <h4>Examples</h4>
+    <b>DiagnosticReport Snippets</b> - An example to illustrate how each supported data element may be populated.<br>{{pagelink:R4SnippetsDiagnosticReport}}<br><br>
+    <b>Bundle Examples</b> - Various examples to illustrate the use of <code>DiagnosticReport</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReport}}<br>{{pagelink:R4BundleExampleUrineMCSReport}}<br>
+</div>
+
 ### Additional Guidance
 The following table includes additional guidance that should be followed when implementing the `UKCore-DiagnosticReport-Lab` profile. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
-
-An example of how each supported data element may be populated is provided in {{pagelink:R4SnippetsDiagnosticReport}}.
 
 ---
 
@@ -104,7 +110,7 @@ A coded finding of the test report.
 
 ---
 
-### ** Previous Table Format **
+### ** Previous Tabular Format **
 
 <table class="regular">
     <thead>

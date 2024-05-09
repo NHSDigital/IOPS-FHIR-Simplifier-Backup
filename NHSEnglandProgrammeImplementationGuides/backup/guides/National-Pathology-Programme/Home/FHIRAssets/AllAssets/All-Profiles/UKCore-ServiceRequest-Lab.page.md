@@ -20,6 +20,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
     <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
     <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
     <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+    <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
 </div>
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
@@ -35,6 +36,10 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 <div id="Hybrid View" class="tabcontent">
     <h4>Hybrid View</h4>
     {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab, hybrid}}
+</div>
+
+<div id="Examples" class="tabcontent">
+    <h4>Examples</h4>   
 </div>
 
 ### Additional Guidance
@@ -118,7 +123,7 @@ Any other notes relating to the test request, as provided by the requester. Clin
 
 ---
 
-### ** Previous Table Format **
+### ** Previous Tabular Format **
 
 <table class="regular">
     <thead>

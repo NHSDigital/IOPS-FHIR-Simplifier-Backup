@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: Use Cases
-  filename: Use-Cases.page.md
 - name: API usage
   filename: API-usage.page.md
 - name: Error handling
