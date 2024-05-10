@@ -1,7 +1,7 @@
 - name: Index
   filename: Index.page.md
-- name: How to construct Message Bundles
-  filename: How-to-construct-Message-Bundles
+- name: How to construct Bundles
+  filename: How-to-construct-Bundles
 - name: Alternative Flows
   filename: Alternative-Flows.page.md
 - name: Authentication

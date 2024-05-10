@@ -8,7 +8,7 @@ specifications that meet your requirements</a>
 
 **Important:** This is version 0.3.0. For the version history see {{pagelink:ReleaseNotes}}
 
-This specification is currently defined as in "Discovery" and as such is provided for consultation and discussion. This project is being developed using an agile approach so iterative updates to content will be added on a regular basis. It is anticipated that the message specification and implementation guidance will be updated further following First of Type (FoT) implementation.
+This specification is currently defined as in "Discovery" and as such is provided for consultation and discussion. This project is being developed using an agile approach so iterative updates to content will be added on a regular basis. It is anticipated that the specification and implementation guidance will be updated further following First of Type (FoT) implementation.
 
 For further information please contact: [england.contactus@nhs.net](mailto:england.contactus@nhs.net)
 
@@ -65,7 +65,7 @@ Other pages within this section provide further guidance around integration patt
 
 This section provides guidance on how to build valid FHIR payloads for interaction with the central Genomic Medicine Service.
 
-{{pagelink:Home/Build/How-to-construct-Message-Bundles}} provides guidance on the makeup of the main transactions, creation of a test order and submission of a report.
+{{pagelink:Home/Build/How-to-construct-Bundles}} provides guidance on the makeup of the main transactions, creation of a test order and submission of a report.
 
 {{pagelink:Home/Build/Alternative-Flows.page.md}} details how certain scenarios impact the interaction patterns.
 
