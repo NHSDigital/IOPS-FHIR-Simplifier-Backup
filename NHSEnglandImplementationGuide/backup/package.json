@@ -1,6 +1,6 @@
 {
   "name": "fhir.r4.nhsengland.stu1",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A UK Core derived Implementation Guide for use within NHS England.",
   "author": "NHS England Interoperability Standards Team",
   "fhirVersions": [
@@ -8,7 +8,7 @@
   ],
   "jurisdiction": "urn:iso:std:iso:3166:-2:GB-ENG",
   "dependencies": {
-    "hl7.fhir.r4.core": "4.0.1",
-    "fhir.r4.ukcore.stu3.currentbuild": "0.0.6-pre-release"
+    "fhir.r4.ukcore.stu2": "2.0.0",
+    "hl7.fhir.r4.core": "4.0.1"
   }
 }
