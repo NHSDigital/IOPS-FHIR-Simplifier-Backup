@@ -41,7 +41,9 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 <div id="Examples" class="tabcontent">
-    <h4>Examples</h4>   
+    <h4>Examples</h4>
+    <b>Observation (Test Group) Snippets</b> - An example to illustrate how each supported data element may be populated.<br>{{pagelink:R4SnippetsObservationTestGroup}}<br><br>
+    <b>Bundle Examples</b> - Various examples to illustrate the use of <code>DiagnosticReport</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReport}}<br>{{pagelink:R4BundleExampleUrineMCSReport}}<br>
 </div>
 
 ### Additional Guidance
