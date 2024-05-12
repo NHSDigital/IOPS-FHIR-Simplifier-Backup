@@ -1,0 +1,432 @@
+{
+    "resourceType": "Questionnaire",
+    "title": "Permission",
+    "status": "draft",
+    "url": "https://fhir.nhs.uk/Questionnaire/Permission",
+    "description": "Backport of [FHIR R6 Permission](https://build.fhir.org/permission.html) using FHIR Questionnaire",
+    "code": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "75554001"
+      }
+    ],
+    "item": [
+      {
+        "type": "choice",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/questionnaire-item-control",
+                  "code": "radio-button",
+                  "display": "Radio Button"
+                }
+              ]
+            }
+          }
+        ],
+        "linkId": "2362038352883",
+        "text": "status",
+        "required": true,
+        "repeats": false,
+        "answerOption": [
+          {
+            "valueCoding": {
+              "code": "active",
+              "display": "Active"
+            }
+          },
+          {
+            "valueCoding": {
+              "code": "entered-in-error",
+              "display": "Entered in Error"
+            }
+          },
+          {
+            "valueCoding": {
+              "code": "draft",
+              "display": "Draft"
+            }
+          },
+          {
+            "valueCoding": {
+              "code": "rejected",
+              "display": "Rejected"
+            }
+          }
+        ]
+      },
+      {
+        "item": [
+          {
+            "type": "string",
+            "linkId": "1494939844385",
+            "text": "GMP or GMC Code",
+            "required": true,
+            "item": [
+              {
+                "text": "Avoid putting internal SDS ids in here",
+                "type": "display",
+                "linkId": "1494939844385_helpText",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "text": "Help-Button",
+                      "coding": [
+                        {
+                          "code": "help",
+                          "display": "Help-Button",
+                          "system": "http://hl7.org/fhir/questionnaire-item-control"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "string",
+            "linkId": "7899866594649",
+            "text": "name",
+            "required": true
+          },
+          {
+            "text": "The person or entity that asserts the permission",
+            "type": "display",
+            "linkId": "2510236862225_helpText",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "text": "Help-Button",
+                  "coding": [
+                    {
+                      "code": "help",
+                      "display": "Help-Button",
+                      "system": "http://hl7.org/fhir/questionnaire-item-control"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "type": "group",
+        "linkId": "2510236862225",
+        "text": "asserter",
+        "required": true
+      },
+      {
+        "type": "group",
+        "linkId": "2982622106197",
+        "text": "validity",
+        "item": [
+          {
+            "type": "date",
+            "linkId": "2810806747479",
+            "text": "start"
+          },
+          {
+            "type": "date",
+            "linkId": "6847804482897",
+            "text": "end"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "linkId": "2053997425191",
+        "text": "justification",
+        "item": [
+          {
+            "text": "Presume this is text for now, can be increased in compexity",
+            "type": "display",
+            "linkId": "2053997425191_helpText",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "text": "Help-Button",
+                  "coding": [
+                    {
+                      "code": "help",
+                      "display": "Help-Button",
+                      "system": "http://hl7.org/fhir/questionnaire-item-control"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "choice",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/questionnaire-item-control",
+                  "code": "drop-down",
+                  "display": "Drop down"
+                }
+              ]
+            }
+          }
+        ],
+        "linkId": "3234283929015",
+        "text": "combining",
+        "answerOption": [
+          {
+            "valueCoding": {
+              "code": "deny-overrides",
+              "display": "Deny-overrides"
+            }
+          },
+          {
+            "valueCoding": {
+              "code": "permit-overrides",
+              "display": "Permit-overrides"
+            }
+          },
+          {
+            "valueCoding": {
+              "code": "ordered-deny-overrides",
+              "display": "Ordered-deny-overrides"
+            }
+          },
+          {
+            "valueCoding": {
+              "code": "ordered-permit-overrides",
+              "display": "Ordered-permit-overrides"
+            }
+          },
+          {
+            "valueCoding": {
+              "code": "deny-unless-permit",
+              "display": "Deny-unless-permit"
+            }
+          },
+          {
+            "valueCoding": {
+              "code": "permit-unless-deny",
+              "display": "Permit-unless-deny"
+            }
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "linkId": "3674595360015",
+        "code": [
+          {
+            "code": "rule"
+          }
+        ],
+        "text": "Constraints to the Permission",
+        "repeats": true,
+        "item": [
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "1829178493789",
+            "text": "type",
+            "required": true,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "deny",
+                  "display": "Deny"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "permit",
+                  "display": "Permitt"
+                }
+              }
+            ]
+          },
+          {
+            "item": [
+              {
+                "type": "string",
+                "linkId": "179496075169",
+                "text": "Explicit FHIR Resource references (incomplete)",
+                "repeats": true
+              },
+              {
+                "type": "choice",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "drop-down",
+                          "display": "Drop down"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "linkId": "8242002035521",
+                "code": [
+                  {
+                    "code": "expression"
+                  }
+                ],
+                "text": "Expression identifying the data (this is not correct)",
+                "repeats": true,
+                "answerValueSet": "http://hl7.org/fhir/ValueSet/resource-types"
+              }
+            ],
+            "type": "string",
+            "linkId": "4580427672126",
+            "code": [
+              {
+                "code": "data"
+              }
+            ],
+            "text": "The selection criteria to identify data that is within scope of this provision"
+          },
+          {
+            "type": "string",
+            "linkId": "889534702439",
+            "code": [
+              {
+                "code": "activity"
+              }
+            ],
+            "text": "A description or definition of which activities are allowed to be done on the data",
+            "item": [
+              {
+                "item": [
+                  {
+                    "type": "string",
+                    "linkId": "144122786460",
+                    "text": "NHS Number, GMC or GMP Code",
+                    "required": true
+                  },
+                  {
+                    "type": "string",
+                    "linkId": "7358493949068",
+                    "text": "Name",
+                    "required": true
+                  }
+                ],
+                "type": "string",
+                "linkId": "3047213495980",
+                "text": "Authorised actor(s)",
+                "repeats": true
+              },
+              {
+                "type": "choice",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "drop-down",
+                          "display": "Drop down"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "linkId": "9474136574546",
+                "code": [
+                  {
+                    "code": "action"
+                  }
+                ],
+                "text": "Actions controlled by this rule",
+                "repeats": true,
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "code": "collect",
+                      "display": "Collect"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "access",
+                      "display": "Access"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "use",
+                      "display": "Use"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "disclose",
+                      "display": "Disclose"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "correct",
+                      "display": "Access and Correct"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "drop-down",
+                          "display": "Drop down"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "linkId": "9712004173875",
+                "code": [
+                  {
+                    "code": "purpose"
+                  }
+                ],
+                "text": "The purpose for which the permission is given",
+                "repeats": true,
+                "answerValueSet": "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

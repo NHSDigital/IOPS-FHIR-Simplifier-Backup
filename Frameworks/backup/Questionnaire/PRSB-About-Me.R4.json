@@ -2,8 +2,8 @@
   "resourceType": "Questionnaire",
   "id": "d4fe68ff-7ed9-47f6-862e-c994dada56a0",
   "meta": {
-    "versionId": "5",
-    "lastUpdated": "2023-08-28T04:33:09.724Z"
+    "versionId": "10",
+    "lastUpdated": "2024-05-12T17:28:50.960Z"
   },
   "url": "https://example.fhir.nhs.uk/Questionnaire/1515851000000101",
   "identifier": [
@@ -12,17 +12,19 @@
       "value": "1515851000000101"
     }
   ],
-  "title": "PRSB About Me",
+  "title": "About Me Standard - PRSB",
   "status": "draft",
+  "description": "[About Me Standard - PRSB](https://theprsb.org/standards/aboutme/).  This is a record of the things that a person feels it is important to communicate about their needs, strengths, values, concerns and preferences to others providing support and care.",
+  "purpose": "About Me information is the most important details that a person wants to share with professionals in health and social care. This information might include how best to communicate with the person, how to help them feel at ease or details about how they like to take their medication. The PRSB has published a standard outlining how About Me information should be documented and shared in health and care records.",
   "code": [
     {
       "system": "http://snomed.info/sct",
-      "code": "1515851000000101"
+      "code": "1515851000000101",
+      "display": "About me"
     }
   ],
   "item": [
     {
-      "type": "string",
       "extension": [
         {
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
@@ -47,7 +49,30 @@
         }
       ],
       "prefix": "1",
-      "text": "What is important to me"
+      "text": "What is important to me",
+      "type": "string",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "7389887096653_helpText",
+          "text": "A description of what is most important to you\nEmergency Information : - Include any essential information that any professional in health and social care should know about the you in any situation, including emergencies.\nOther Information : - This could include : - Values, Spirituality/religion, Ethnicity, Culture, Pets, Goals and aspirations, Meaningful activities including leisure activities, visiting places, sport and exercise, listening to music, employment, education, volunteering",
+          "type": "display"
+        }
+      ]
     },
     {
       "extension": [
@@ -74,7 +99,29 @@
       ],
       "prefix": "2",
       "text": "People who are important to me",
-      "type": "string"
+      "type": "string",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "1816845151167_helpText",
+          "text": "Details of who is important to you and why. They could be family members, carers, friends, members of staff etc. Include how you want the people important to you to be engaged and involved in your care and support in both emergency and normal situations. Include how you stay connected to the people important to you. Who should not be contacted or consulted about your care and support and why, if you wish to say",
+          "type": "display"
+        }
+      ]
     },
     {
       "extension": [
@@ -101,7 +148,29 @@
       ],
       "prefix": "3",
       "text": "How I communicate and how to communicate with me",
-      "type": "string"
+      "type": "string",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "9987361660373_helpText",
+          "text": "A description of how you communicate normally including any communication aids you use, for example a hearing aid.\n\nInclude your preferred language of communication, if your first language is not English.\nInclude how you would communicate when you are in pain or distress.\nInclude how you communicate choices.\nInclude how you give feedback or raise a concern.\nInclude how you like to receive information\nDescribe how you would like others to engage and communicate with you, including how you would like to be addressed.",
+          "type": "display"
+        }
+      ]
     },
     {
       "extension": [
@@ -128,7 +197,29 @@
       ],
       "prefix": "4",
       "text": "My wellness",
-      "type": "string"
+      "type": "string",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "9809112056156_helpText",
+          "text": "A description covering what you are able to do, how you engage with others and how you feel on a typical day through to on a day when you are unwell or really unwell.\n\nInclude any causes that might result in you becoming unwell and strategies for avoiding or addressing the causes. For example, not drinking enough water could cause constipation.\nInclude any signs that indicate you might be becoming unwell.\nOn a bad day describe what is different about what you are able to do, how you engage with others and how you feel.\nInclude how your everyday life is affected by any medical conditions e.g. dementia and any symptoms e.g. itchiness, cough, pain and how you manage those conditions.\nInclude past health issues or experiences that need to be considered\nInclude your wellbeing and lifestyle goals and aspirations",
+          "type": "display"
+        }
+      ]
     },
     {
       "extension": [
@@ -155,7 +246,29 @@
       ],
       "prefix": "5",
       "text": "Please do and please dont",
-      "type": "string"
+      "type": "string",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "5952027243063_helpText",
+          "text": "A description of things you want someone supporting you to do or not to do.\n\nFor example, this might include: - Talk to me not to my carer, remind me to take my medication, encourage me to wash my hands regularly, explain to me what is happening and why, respond to my communication.\n\nA description of things you do not want someone supporting for you to do. For example, this might include: - Discussing or asking questions about certain topics, making assumptions about something, providing support when it is not wanted, talking to you in a certain way.",
+          "type": "display"
+        }
+      ]
     },
     {
       "extension": [
@@ -182,7 +295,29 @@
       ],
       "prefix": "6",
       "text": "How and when to support me",
-      "type": "string"
+      "type": "string",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "3011372023178_helpText",
+          "text": "A description of how and when you want someone caring for you to support you.\n\nThis could include support needs in an emergency situation (for example taking blood)\n\nThis could include support you need to maintain important routines or to carry out particular activities, for example: - Personal care routines, Eating and drinking, Bedtime routines, Taking medications, Moving and transitioning\n\nThis could also include support needed with:- wearing glasses/hearing aids/false teeth etc, making informed choices or understanding dangers and risks, managing your emotions, moods and behaviours, memory or confusion.\n\nInclude how your support needs change in different environments. Include any triggers that might result in you needing further support and strategies for avoiding or addressing the triggers. Include how you want the support to be provided.",
+          "type": "display"
+        }
+      ]
     },
     {
       "extension": [
@@ -209,19 +344,85 @@
       ],
       "prefix": "7",
       "text": "Also worth knowing about me",
-      "type": "string"
+      "type": "string",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "7277981590679_helpText",
+          "text": "A description of what is also worth knowing about you for people caring or supporting you.\n\nThis could include a short history of your life (where you have worked, where you lived, important events in your life, important people in your past life).\n\nThis could include a short profile of your current life:- your work / study, your aspirations, your skills, your networks, things you like e.g. particular foods, places, a football team and things you like to talk about, things you dislike\n\nThis could also include any care and support preferences that have not been included elsewhere.",
+          "type": "display"
+        }
+      ]
     },
     {
       "linkId": "233189683472",
       "prefix": "8",
       "text": "Date recorded",
-      "type": "dateTime"
+      "type": "dateTime",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "233189683472_helpText",
+          "text": "This is a record of the date that this information was last updated.",
+          "type": "display"
+        }
+      ]
     },
     {
       "linkId": "1380289675401",
       "prefix": "9",
       "text": "Supported to write this by",
-      "type": "string"
+      "type": "string",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "1380289675401_helpText",
+          "text": "Where relevant, this is a record of name, relationship/role and contact details of the individual who supported the person to write this section e.g. carer, family member, advocate, professional.",
+          "type": "display"
+        }
+      ]
     }
   ]
 }

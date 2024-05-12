@@ -1,0 +1,116 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "ba6bb300-016b-428d-ab2e-20109bdaaccc",
+    "url": "https://fhir.nhs.uk/Questionnaire/Prescription-Nomination",
+    "version": "0.0.1",
+    "name": "PrescriptionNomination",
+    "title": "Prescription Nomination",
+    "status": "draft",
+    "subjectType": [
+      "Patient"
+    ],
+    "item": [
+      {
+        "type": "string",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+            "valueString": "Organization"
+          }
+        ],
+        "linkId": "pharmacy",
+        "text": "Community Pharmacy",
+        "required": false,
+        "repeats": false,
+        "item": [
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "pharmacyODSCode",
+            "text": "ODS Code"
+          }
+        ]
+      },
+      {
+        "type": "string",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+            "valueString": "Organization"
+          }
+        ],
+        "linkId": "dispensingOrganisation",
+        "text": "Dispensing Doctor",
+        "required": false,
+        "repeats": false,
+        "item": [
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "dispensingODSCode",
+            "text": "ODS Code"
+          }
+        ]
+      },
+      {
+        "type": "string",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+            "valueString": "Organization"
+          }
+        ],
+        "linkId": "applianceOrganisation",
+        "text": "Appliance Contractor",
+        "required": false,
+        "repeats": false,
+        "item": [
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "applianceODSCode",
+            "text": "ODS Code"
+          }
+        ]
+      }
+    ]
+  }
