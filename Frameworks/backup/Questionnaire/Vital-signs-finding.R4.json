@@ -2,12 +2,30 @@
   "resourceType": "Questionnaire",
   "id": "0d9fccea-9c98-4e61-b3e0-bc9b3a9db675",
   "meta": {
-    "versionId": "16",
-    "lastUpdated": "2023-08-29T07:01:48.311Z"
+    "versionId": "24",
+    "lastUpdated": "2024-05-12T10:22:58.032Z"
   },
   "url": "https://example.fhir.nhs.uk/Questionnaire/VitalSignsFinding",
   "title": "Vital signs finding",
   "status": "draft",
+  "description": "Based on [LONIC Vital Signs](https://loinc.org/67795-5) converted to SNOMED CT with the addition of level of `consciousness or new confusion` from [Royal College of Physicians NEWS2](https://www.rcp.ac.uk/improving-care/resources/national-early-warning-score-news-2/)",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "163121000000106",
+            "display": "Findings"
+          }
+        ]
+      }
+    }
+  ],
   "code": [
     {
       "system": "http://snomed.info/sct",
@@ -17,7 +35,6 @@
   ],
   "item": [
     {
-      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
@@ -42,6 +59,7 @@
         }
       ],
       "linkId": "/927981000000106",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -55,6 +73,7 @@
       ],
       "prefix": "1",
       "text": "Baseline SpO2 (oxygen saturation at periphery)",
+      "type": "quantity",
       "required": false,
       "initial": [
         {
@@ -99,6 +118,7 @@
         }
       ],
       "linkId": "/27113001",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -157,6 +177,7 @@
         }
       ],
       "linkId": "/363811000",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -211,6 +232,7 @@
         }
       ],
       "linkId": "/50373000",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -261,6 +283,7 @@
         }
       ],
       "linkId": "/276885007",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -303,6 +326,7 @@
         }
       ],
       "linkId": "/72313002",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -354,6 +378,7 @@
         }
       ],
       "linkId": "/1091811000000102",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -405,6 +430,7 @@
         }
       ],
       "linkId": "/364075005",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -506,6 +532,7 @@
         }
       ],
       "linkId": "/60621009",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -516,16 +543,7 @@
       "prefix": "10",
       "text": "BMI",
       "type": "quantity",
-      "required": false,
-      "initial": [
-        {
-          "valueQuantity": {
-            "unit": "kilogram per square meter",
-            "system": "http://unitsofmeasure.org",
-            "code": "kg/m2"
-          }
-        }
-      ]
+      "required": false
     },
     {
       "extension": [
@@ -544,6 +562,7 @@
         }
       ],
       "linkId": "7858131839876",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueCodeableConcept",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -609,6 +628,7 @@
         }
       ],
       "linkId": "4461500479416",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueCodeableConcept",
       "code": [
         {
           "system": "http://snomed.info/sct",

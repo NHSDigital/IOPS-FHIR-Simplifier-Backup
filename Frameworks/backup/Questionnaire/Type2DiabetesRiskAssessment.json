@@ -1,519 +1,551 @@
 {
-    "resourceType": "Questionnaire",
-    "id": "5cbc7189-8029-4322-b890-9e0c918af4a5",
-    "meta": {
-      "versionId": "21",
-      "lastUpdated": "2023-04-14T13:09:39.266Z"
-    },
-    "url": "https://example.fhir.nhs.uk/Questionnaire/T2DRiskForm",
-    "identifier": [
-      {
-        "system": "http://fhir.nhs.uk",
-        "value": "T2DRiskForm"
+  "resourceType": "Questionnaire",
+  "id": "5cbc7189-8029-4322-b890-9e0c918af4a5",
+  "meta": {
+    "versionId": "40",
+    "lastUpdated": "2024-05-12T10:29:56.762Z"
+  },
+  "url": "https://example.fhir.nhs.uk/Questionnaire/T2DRiskForm",
+  "identifier": [
+    {
+      "system": "http://fhir.nhs.uk",
+      "value": "T2DRiskForm"
+    }
+  ],
+  "title": "Diabetes UK - Type 2 Diabetes Risk Assessment",
+  "status": "draft",
+  "description": "Is based on the [Type 2 Diabetes Risk tool](https://riskscore.diabetes.org.uk/start) from Diabetes UK. \n\nFor NHS England documentation around use of this tool see [NHS England Diabetes Preventation Programme](https://www.england.nhs.uk/diabetes/diabetes-prevention/)",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "325931000000109",
+            "display": "Assessment"
+          }
+        ]
       }
-    ],
-    "title": "Type 2 Diabetes Risk Assessment",
-    "status": "draft",
-    "description": "Finding out your risk of type 2 diabetes only takes a few minutes. It could be the most important thing you do today.",
-    "code": [
-      {
-        "system": "http://fhir.nhs.uk",
-        "code": "T2DRiskForm"
-      }
-    ],
-    "item": [
-      {
-        "linkId": "9318275084197",
-        "text": "Are you male or female?",
-        "type": "choice",
-        "required": true,
-        "answerOption": [
-          {
-            "valueCoding": {
-              "display": "Male"
-            }
-          },
-          {
-            "valueCoding": {
-              "display": "Female"
-            }
+    }
+  ],
+  "purpose": "This is not official and is for demonstration purposes. \n\nCalculate a risk score for Type 2 Diabetes.",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "805421000000105",
+      "display": "Diabetes UK diabetes risk score"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "9318275084197",
+      "prefix": "1",
+      "text": "Are you male or female?",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "Male"
           }
-        ],
-        "item": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "help",
-                      "display": "Help-Button"
-                    }
-                  ],
-                  "text": "Help-Button"
-                }
-              }
-            ],
-            "linkId": "9318275084197_helpText",
-            "text": "Men are at a slightly higher risk of developing type 2 diabetes. The results will not be accurate if you are pregnant and will underestimate your risk if you have a history of gestational diabetes.",
-            "type": "display"
+        },
+        {
+          "valueCoding": {
+            "display": "Female"
           }
-        ]
-      },
-      {
-        "linkId": "9039795480167",
-        "text": "How old are you?",
-        "type": "string",
-        "required": true,
-        "item": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "help",
-                      "display": "Help-Button"
-                    }
-                  ],
-                  "text": "Help-Button"
-                }
-              }
-            ],
-            "linkId": "9039795480167_helpText",
-            "text": "The older you are, the higher your risk for type 2 diabetes.",
-            "type": "display"
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 3,
-              "unit": "years",
-              "system": "http://unitsofmeasure.org",
-              "code": "a"
-            }
-          }
-        ],
-        "linkId": "6009173247336",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "398089004",
-            "display": "Ethnic background"
-          }
-        ],
-        "text": "What is your ethnic background",
-        "type": "choice",
-        "required": true,
-        "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-EthnicCategory",
-        "item": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "help",
-                      "display": "Help-Button"
-                    }
-                  ],
-                  "text": "Help-Button"
-                }
-              }
-            ],
-            "linkId": "6009173247336_helpText",
-            "text": "Some ethnic groups are more likely to develop type 2 diabetes than others.",
-            "type": "display"
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 2,
-              "unit": "years",
-              "system": "http://unitsofmeasure.org",
-              "code": "a"
-            }
-          }
-        ],
-        "linkId": "398054642271",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "160303001",
-            "display": "Family history of diabetes mellitus"
-          }
-        ],
-        "text": "Do you have a parent, brother,  sister and/or own child with diabetes",
-        "type": "choice",
-        "required": false,
-        "answerOption": [
-          {
-            "valueCoding": {
-              "system": "http://snomed.info/sct",
-              "code": "430679000",
-              "display": "Family history of diabetes mellitus type 2"
-            }
-          },
-          {
-            "valueCoding": {
-              "system": "http://snomed.info/sct",
-              "code": "430678008",
-              "display": "Family history of diabetes mellitus type 1"
-            }
-          }
-        ],
-        "item": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "help",
-                      "display": "Help-Button"
-                    }
-                  ],
-                  "text": "Help-Button"
-                }
-              }
-            ],
-            "linkId": "398054642271_helpText",
-            "text": "Having a close relative with diabetes increases your risk of developing type 2 diabetes.",
-            "type": "display"
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-            "valueBoolean": true
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "system": "http://unitsofmeasure.org",
-              "code": "cm",
-              "display": "centimeter"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-            "valueCoding": {
-              "system": "http://unitsofmeasure.org",
-              "code": "[in_i]",
-              "display": "inch"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-            "valueDuration": {
-              "value": 1,
-              "unit": "years",
-              "system": "http://unitsofmeasure.org",
-              "code": "a"
-            }
-          }
-        ],
-        "linkId": "6497181065895",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "276361009",
-            "display": "Waist circumference"
-          }
-        ],
-        "text": "What is your waist measurement?",
-        "type": "quantity",
-        "required": true,
-        "readOnly": false,
-        "item": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "help",
-                      "display": "Help-Button"
-                    }
-                  ],
-                  "text": "Help-Button"
-                }
-              }
-            ],
-            "linkId": "6497181065895_helpText",
-            "text": "Carrying excess body fat around your middle increases your risk of type 2 diabetes.",
-            "type": "display"
-          }
-        ]
-      },
-      {
-        "linkId": "271823025272",
-        "text": "What is your Body Mass Index (BMI)?",
-        "type": "group",
-        "required": true,
-        "item": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "help",
-                      "display": "Help-Button"
-                    }
-                  ],
-                  "text": "Help-Button"
-                }
-              },
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-                "valueCoding": {
-                  "system": "http://unitsofmeasure.org",
-                  "code": "cm",
-                  "display": "centimeter"
-                }
-              },
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-                "valueCoding": {
-                  "system": "http://unitsofmeasure.org",
-                  "code": "[in_i]",
-                  "display": "inch"
-                }
-              },
-              {
-                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-                "valueBoolean": true
-              },
-              {
-                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-                "valueDuration": {
-                  "value": 12,
-                  "unit": "months",
-                  "system": "http://unitsofmeasure.org",
-                  "code": "mo"
-                }
-              }
-            ],
-            "linkId": "271823025272_helpText",
-            "code": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "1153637007",
-                "display": "Body height"
-              }
-            ],
-            "text": "How tall are you?",
-            "type": "quantity",
-            "required": true
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-                "valueCoding": {
-                  "system": "http://unitsofmeasure.org",
-                  "code": "kg",
-                  "display": "kilogram"
-                }
-              },
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-                "valueCoding": {
-                  "system": "http://unitsofmeasure.org",
-                  "code": "[stone_av]",
-                  "display": "stone - British"
-                }
-              },
-              {
-                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-                "valueBoolean": true
-              },
-              {
-                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-                "valueDuration": {
-                  "value": 2,
-                  "unit": "weeks",
-                  "system": "http://unitsofmeasure.org",
-                  "code": "wk"
-                }
-              }
-            ],
-            "linkId": "4505953325122",
-            "code": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "27113001",
-                "display": "Body weight"
-              }
-            ],
-            "text": "How much do you weigh?",
-            "type": "quantity",
-            "required": true,
-            "initial": [
-              {
-                "valueQuantity": {
-                  "unit": "kg"
-                }
-              }
-            ]
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-                "valueBoolean": true
-              },
-              {
-                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-                "valueDuration": {
-                  "value": 4,
-                  "unit": "weeks",
-                  "system": "http://unitsofmeasure.org",
-                  "code": "wk"
-                }
-              },
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-                "valueCoding": {
-                  "system": "http://unitsofmeasure.org",
-                  "code": "kg/m2",
-                  "display": "kilogram per square meter"
-                }
-              }
-            ],
-            "linkId": "9175505021448",
-            "code": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "60621009",
-                "display": "Body mass index"
-              }
-            ],
-            "text": "Your BMI is:",
-            "type": "quantity",
-            "item": [
-              {
-                "extension": [
+        }
+      ],
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
                   {
-                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                    "valueCodeableConcept": {
-                      "coding": [
-                        {
-                          "system": "http://hl7.org/fhir/questionnaire-item-control",
-                          "code": "help",
-                          "display": "Help-Button"
-                        }
-                      ],
-                      "text": "Help-Button"
-                    }
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
                   }
                 ],
-                "linkId": "9175505021448_helpText",
-                "text": "BMI is weight in kilograms divided by height in meters squared. If height has been measured in centimeters",
-                "type": "display"
+                "text": "Help-Button"
               }
-            ]
-          }
-        ]
-      },
-      {
-        "linkId": "273836567301",
-        "text": "Has a doctor ever told you that you have high blood pressure, or given you medication for it?",
-        "type": "choice",
-        "required": true,
-        "answerOption": [
-          {
-            "valueCoding": {
-              "display": "Yes"
             }
-          },
-          {
-            "valueCoding": {
-              "display": "No"
+          ],
+          "linkId": "9318275084197_helpText",
+          "text": "Men are at a slightly higher risk of developing type 2 diabetes. The results will not be accurate if you are pregnant and will underestimate your risk if you have a history of gestational diabetes.",
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "linkId": "9039795480167",
+      "prefix": "2",
+      "text": "How old are you?",
+      "type": "string",
+      "required": true,
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
             }
+          ],
+          "linkId": "9039795480167_helpText",
+          "text": "The older you are, the higher your risk for type 2 diabetes.",
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 3,
+            "unit": "years",
+            "system": "http://unitsofmeasure.org",
+            "code": "a"
           }
-        ],
-        "item": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "help",
-                      "display": "Help-Button"
-                    }
-                  ],
-                  "text": "Help-Button"
+        }
+      ],
+      "linkId": "6009173247336",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueCodeableConcept",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "398089004",
+          "display": "Ethnic background"
+        }
+      ],
+      "prefix": "3",
+      "text": "What is your ethnic background",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-EthnicCategory",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "6009173247336_helpText",
+          "text": "Some ethnic groups are more likely to develop type 2 diabetes than others.",
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "years",
+            "system": "http://unitsofmeasure.org",
+            "code": "a"
+          }
+        }
+      ],
+      "linkId": "398054642271",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueCodeableConcept",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "160303001",
+          "display": "Family history of diabetes mellitus"
+        }
+      ],
+      "prefix": "4",
+      "text": "Do you have a parent, brother,  sister and/or own child with diabetes",
+      "type": "choice",
+      "required": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "430679000",
+            "display": "Family history of diabetes mellitus type 2"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "430678008",
+            "display": "Family history of diabetes mellitus type 1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "398054642271_helpText",
+          "text": "Having a close relative with diabetes increases your risk of developing type 2 diabetes.",
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "cm",
+            "display": "centimeter"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "[in_i]",
+            "display": "inch"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "years",
+            "system": "http://unitsofmeasure.org",
+            "code": "a"
+          }
+        }
+      ],
+      "linkId": "6497181065895",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "276361009",
+          "display": "Waist circumference"
+        }
+      ],
+      "prefix": "5",
+      "text": "What is your waist measurement?",
+      "type": "quantity",
+      "required": true,
+      "readOnly": false,
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "6497181065895_helpText",
+          "text": "Carrying excess body fat around your middle increases your risk of type 2 diabetes.",
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "linkId": "271823025272",
+      "prefix": "6",
+      "text": "What is your Body Mass Index (BMI)?",
+      "type": "group",
+      "required": true,
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "cm",
+                "display": "centimeter"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "[in_i]",
+                "display": "inch"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 12,
+                "unit": "months",
+                "system": "http://unitsofmeasure.org",
+                "code": "mo"
+              }
+            }
+          ],
+          "linkId": "271823025272_helpText",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "50373000",
+              "display": "Body height measure"
+            }
+          ],
+          "prefix": "6.1",
+          "text": "How tall are you?",
+          "type": "quantity",
+          "required": true
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "kg",
+                "display": "kilogram"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "[stone_av]",
+                "display": "stone - British"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 2,
+                "unit": "weeks",
+                "system": "http://unitsofmeasure.org",
+                "code": "wk"
+              }
+            }
+          ],
+          "linkId": "4505953325122",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001",
+              "display": "Body weight"
+            }
+          ],
+          "prefix": "6.2",
+          "text": "How much do you weigh?",
+          "type": "quantity",
+          "required": true,
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "kg"
+              }
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 4,
+                "unit": "weeks",
+                "system": "http://unitsofmeasure.org",
+                "code": "wk"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "kg/m2",
+                "display": "kilogram per square meter"
+              }
+            }
+          ],
+          "linkId": "9175505021448",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "60621009",
+              "display": "Body mass index"
+            }
+          ],
+          "prefix": "6.3",
+          "text": "Your BMI is:",
+          "type": "quantity",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "help",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
                 }
+              ],
+              "linkId": "9175505021448_helpText",
+              "text": "BMI is weight in kilograms divided by height in meters squared. If height has been measured in centimeters",
+              "type": "display"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "273836567301",
+      "prefix": "7",
+      "text": "Has a doctor ever told you that you have high blood pressure, or given you medication for it?",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "No"
+          }
+        }
+      ],
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "help",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
               }
-            ],
-            "linkId": "273836567301_helpText",
-            "text": "If you have been treated for high blood pressure, it will contribute to your overall risk.",
-            "type": "display"
+            }
+          ],
+          "linkId": "273836567301_helpText",
+          "text": "If you have been treated for high blood pressure, it will contribute to your overall risk.",
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{ScoreOf}",
+            "display": "ScoreOf"
           }
-        ]
-      },
-      {
-        "linkId": "1901457249403",
-        "text": "Your risk score is:",
-        "type": "choice",
-        "required": true,
-        "answerOption": [
-          {
-            "valueCoding": {
-              "display": "Low 0-6"
-            }
-          },
-          {
-            "valueCoding": {
-              "display": "Increased 7-15"
-            }
-          },
-          {
-            "valueCoding": {
-              "display": "Moderate 16-24"
-            }
-          },
-          {
-            "valueCoding": {
-              "display": "High 25-47"
-            }
-          }
-        ]
-      }
-    ]
-  }
+        }
+      ],
+      "linkId": "1901457249403",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1084661000000103",
+          "display": "Diabetes UK Diabetes Risk Score"
+        }
+      ],
+      "prefix": "8",
+      "text": "Your risk score is:",
+      "type": "quantity",
+      "required": true
+    }
+  ]
+}

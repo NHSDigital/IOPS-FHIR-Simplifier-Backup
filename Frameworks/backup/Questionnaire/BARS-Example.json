@@ -1,0 +1,111 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "9749ae76-28f7-4b8a-863f-aba64d19d678",
+    "meta": {
+        "lastUpdated": "2023-12-20T12:15:30.8185338+00:00",
+        "profile":  [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire"
+        ]
+    },
+    "identifier":  [
+        {
+            "value": "76b4622b-2b8b-4f24-aee5-2631c7695594"
+        }
+    ],
+    "version": "0.1",
+    "name": "PTS",
+    "title": "Pre Triage Sieve Questionnaire",
+    "status": "active",
+    "experimental": false,
+    "date": "2023-12-19T14:00:00+00:00",
+    "publisher": "NHSE - BaRS",
+    "description": "PTS Questionnaire for CAD-to-CAD",
+    "item":  [
+        {
+            "linkId": "0",
+            "text": "Is the patient breathing?",
+            "type": "choice",
+            "required": true,
+            "answerOption":  [
+                {
+                    "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "78064003",
+                        "display": "Respiratory function"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "1023001",
+                        "display": "Apnea"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "1",
+            "text": "Is the patient awake (conscious)?",
+            "type": "choice",
+            "enableWhen":  [
+                {
+                    "question": "0",
+                    "operator": "=",
+                    "answerCoding": {
+                        "code": "78064003",
+                        "display": "Breathing (observable entity)"
+                    }
+                }
+            ],
+            "required": false,
+            "answerOption":  [
+                {
+                    "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "428913001",
+                        "display": "No loss of consciousness (situation)"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "419045004",
+                        "display": "Loss of consciousness (finding)"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "2",
+            "text": "Is their breathing noisy?",
+            "type": "choice",
+            "enableWhen":  [
+                {
+                    "question": "0",
+                    "operator": "=",
+                    "answerCoding": {
+                        "code": "78064003",
+                        "display": "Breathing (observable entity)"
+                    }
+                }
+            ],
+            "required": false,
+            "answerOption":  [
+                {
+                    "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "248573009",
+                        "display": "Noisy respiration (finding)"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "48348007",
+                        "display": "Normal breath sounds (finding)"
+                    }
+                }
+            ]
+        }
+    ]
+}
