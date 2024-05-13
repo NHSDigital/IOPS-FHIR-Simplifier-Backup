@@ -1,0 +1,3248 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "GPReg-Questionnaire-RegisterGPSurgery-Example",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2024-05-02T11:35:50.946Z"
+  },
+  "url": "https://fhir.nhs.uk/England/StructureDefinition/England-Questionnaire-RegisterGPSurgeryv2",
+  "title": "Register with a GP Surgery v2",
+  "status": "draft",
+  "description": "A FHIR Questionnaire created from GP Registration Programme - GP IT Deliverables",
+  "purpose": "To standardise the questions asked when registering for a GP Surgery within England",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button",
+                "display": "Radio Button"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "5564099927552",
+      "text": "Who is registering with a GP?",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "Myself"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Someone else"
+          }
+        }
+      ],
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "4757609108297",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "722011000000106",
+              "display": "Relationship (qualifier value)"
+            }
+          ],
+          "text": "What is your relationship to the person being registered?",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "5564099927552",
+              "operator": "=",
+              "answerCoding": {
+                "display": "Someone else"
+              }
+            }
+          ],
+          "enableBehavior": "all",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "code": "PRN",
+                "display": "Parent"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
+                "code": "Guardian",
+                "display": "Guardian"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
+                "code": "Carer",
+                "display": "Carer"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "O",
+                "display": "Other"
+              }
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "1296573860711",
+          "text": "What type of carer are you?",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "5564099927552",
+              "operator": "=",
+              "answerCoding": {
+                "display": "Someone else"
+              }
+            },
+            {
+              "question": "4757609108297",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
+                "code": "Carer",
+                "display": "Carer"
+              }
+            }
+          ],
+          "enableBehavior": "all",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1597921000000107",
+                "display": "Has young carer"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "818091000000106",
+                "display": "Has a paid carer"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "823411000000109",
+                "display": "Has voluntary carer"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "361571000000107",
+                "display": "Fostering"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None of the above"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "3745453882893",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "184140000",
+              "display": "Caregiver details (observable entity)"
+            }
+          ],
+          "text": "What are your details?",
+          "type": "group",
+          "enableWhen": [
+            {
+              "question": "5564099927552",
+              "operator": "=",
+              "answerCoding": {
+                "display": "Someone else"
+              }
+            },
+            {
+              "question": "4757609108297",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
+                "code": "Carer",
+                "display": "Carer"
+              }
+            }
+          ],
+          "enableBehavior": "all",
+          "repeats": false,
+          "item": [
+            {
+              "linkId": "4823446188940",
+              "text": "First name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "3525030744831",
+              "text": "Last name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "9015495695743",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "405170004",
+                  "display": "Caregiver patient relationship (observable entity)"
+                }
+              ],
+              "text": "Relationship to person being registered",
+              "type": "string",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "linkId": "2337627900699",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "408400006",
+                  "display": "Caregiver home telephone number (observable entity)"
+                }
+              ],
+              "text": "Contact telephone number",
+              "type": "string",
+              "required": true,
+              "repeats": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3099707112786",
+      "text": "Matching patient to their record",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2673545464189",
+          "prefix": "1",
+          "text": "What is the name of the person being registered?",
+          "type": "group",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "2526886552536",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "184098006",
+                  "display": "Patient title (observable entity)"
+                }
+              ],
+              "text": "Title",
+              "type": "open-choice",
+              "required": true,
+              "repeats": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.medirecords.com/CodeSystem/mr-patient-name-title-code",
+                    "code": "315890000",
+                    "display": "Mr"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.medirecords.com/CodeSystem/mr-patient-name-title-code",
+                    "code": "315890001",
+                    "display": "Mrs"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.medirecords.com/CodeSystem/mr-patient-name-title-code",
+                    "code": "315890003",
+                    "display": "Miss"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.medirecords.com/CodeSystem/mr-patient-name-title-code",
+                    "code": "315890002",
+                    "display": "Ms"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.medirecords.com/CodeSystem/mr-patient-name-title-code",
+                    "code": "315890004",
+                    "display": "Dr"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.medirecords.com/CodeSystem/mr-patient-name-title-code",
+                    "code": "315890012",
+                    "display": "Mx"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.medirecords.com/CodeSystem/mr-patient-name-title-code",
+                    "code": "315890011",
+                    "display": "Master"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Other"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8025625545792",
+              "definition": "http://hl7.org/fhir/StructureDefinition/Patient#name.given",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "184095009",
+                  "display": "Patient forename (observable entity)"
+                }
+              ],
+              "text": "First name",
+              "type": "string",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "linkId": "9205794395420",
+              "definition": "http://hl7.org/fhir/StructureDefinition/Patient#name.family",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "405622006",
+                  "display": "Patient middle name (observable entity)"
+                }
+              ],
+              "text": "Middle name(s)",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "2444645364061",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "184096005",
+                  "display": "Patient surname (observable entity)"
+                }
+              ],
+              "text": "Last Name",
+              "type": "string",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "linkId": "5369283890405",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "247841000000109",
+                  "display": "Patient previous surname (observable entity)"
+                }
+              ],
+              "text": "Previous last name",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "linkId": "5721234742686",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#birthDate",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "184099003",
+              "display": "Date of birth (observable entity)"
+            }
+          ],
+          "text": "What is the your date of birth",
+          "type": "date",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "2535971200955",
+          "text": "Do you know your NHS Number?",
+          "type": "boolean",
+          "required": true,
+          "repeats": false,
+          "item": [
+            {
+              "linkId": "7450549676323",
+              "definition": "http://hl7.org/fhir/StructureDefinition/RelatedPerson#identifier",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "395451000000101",
+                  "display": "Patient National Health Service number (observable entity)"
+                }
+              ],
+              "text": "What is your NHS number",
+              "type": "integer",
+              "enableWhen": [
+                {
+                  "question": "2535971200955",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "enableBehavior": "any",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "help",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "2535971200955_helpText",
+              "text": "You do not need to know their NHS number to continue. If you do not know it, you can tell us their full name instead.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "6043124139100",
+          "text": "Are you registering with a UK GP for the first time",
+          "type": "boolean",
+          "required": true,
+          "repeats": false,
+          "item": [
+            {
+              "linkId": "9441224899731",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "711481000000108",
+                  "display": "Patient registered general practitioner (observable entity)"
+                }
+              ],
+              "text": "What is the name of the GP surgery you want to leave?",
+              "type": "group",
+              "enableWhen": [
+                {
+                  "question": "6043124139100",
+                  "operator": "=",
+                  "answerBoolean": false
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "5352371648554",
+                  "text": "Current Surgery name",
+                  "type": "string"
+                },
+                {
+                  "linkId": "6622306991068",
+                  "text": "Current Surgery postcode",
+                  "type": "string"
+                },
+                {
+                  "linkId": "2066131115145",
+                  "text": "Select your current GP surgery",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "7885193861634",
+                      "text": "Current Surgery street",
+                      "type": "string"
+                    },
+                    {
+                      "linkId": "7211883460061",
+                      "text": "Current Surgery town",
+                      "type": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "linkId": "8087948177397",
+              "text": "Do you know the postcode used when you last registered with a UK GP?",
+              "type": "boolean",
+              "enableWhen": [
+                {
+                  "question": "6043124139100",
+                  "operator": "=",
+                  "answerBoolean": false
+                }
+              ],
+              "required": true,
+              "repeats": false,
+              "item": [
+                {
+                  "linkId": "7359582925710",
+                  "text": "What postcode did you use when you last registered with a UK GP?",
+                  "type": "string",
+                  "enableWhen": [
+                    {
+                      "question": "8087948177397",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ],
+                  "required": true,
+                  "repeats": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3189857950482",
+      "text": "Personal Details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "7570130246483",
+          "text": "Do you have a current UK address",
+          "type": "boolean",
+          "required": true,
+          "repeats": false,
+          "item": [
+            {
+              "linkId": "3834031732678",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "184097001",
+                  "display": "Patient address (observable entity)"
+                }
+              ],
+              "text": "What is your current UK address?",
+              "type": "group",
+              "enableWhen": [
+                {
+                  "question": "7570130246483",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "7091443873030",
+                  "text": "House number or name (optional)",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "linkId": "5086068712017",
+                  "code": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "184102003",
+                      "display": "Patient postal code (observable entity)"
+                    }
+                  ],
+                  "text": "Postcode",
+                  "type": "string"
+                },
+                {
+                  "linkId": "1187115804415",
+                  "text": "Select an address",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "8052908008533",
+                      "text": "Street",
+                      "type": "string"
+                    },
+                    {
+                      "linkId": "9119357682451",
+                      "text": "Town",
+                      "type": "string"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8454185457892",
+          "text": "What are your Contact Details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "5425785344304",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "429697006",
+                  "display": "Patient home telephone number (observable entity)"
+                }
+              ],
+              "text": "Home telephone number",
+              "type": "string"
+            },
+            {
+              "linkId": "8530163235785",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "428481002",
+                  "display": "Patient mobile telephone number (observable entity)"
+                }
+              ],
+              "text": "Mobile telephone number",
+              "type": "string"
+            },
+            {
+              "linkId": "7870443952741",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "424966008",
+                  "display": "Patient email address (observable entity)"
+                }
+              ],
+              "text": "Email",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "check-box",
+                    "display": "Check-box"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "5729238155283",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "276031006",
+              "display": "Details of education (observable entity)"
+            }
+          ],
+          "text": "Do you go to any of the following for your education?",
+          "type": "open-choice",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "342271000000107",
+                "display": "Educated to primary school level"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "161117005",
+                "display": "Nursery"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "302139001",
+                "display": "Home-schooled"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None of the above"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "394020974422",
+              "text": "Enter details of where you go for your education - School",
+              "type": "group",
+              "enableWhen": [
+                {
+                  "question": "5729238155283",
+                  "operator": "=",
+                  "answerCoding": {
+                    "display": "Educated to primary school level"
+                  }
+                }
+              ],
+              "repeats": false,
+              "item": [
+                {
+                  "linkId": "3906837152832",
+                  "text": "Name of school",
+                  "type": "string",
+                  "required": true,
+                  "repeats": false
+                },
+                {
+                  "linkId": "6688482508092",
+                  "text": "Postcode",
+                  "type": "string",
+                  "required": true,
+                  "repeats": false
+                },
+                {
+                  "linkId": "8439668864839",
+                  "text": "Telephone number",
+                  "type": "string",
+                  "required": true,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "linkId": "7429200519586",
+              "text": "Enter details of where you go for your education - Nursery",
+              "type": "group",
+              "enableWhen": [
+                {
+                  "question": "5729238155283",
+                  "operator": "=",
+                  "answerCoding": {
+                    "display": "Nursery"
+                  }
+                }
+              ],
+              "repeats": false,
+              "item": [
+                {
+                  "linkId": "4527715209757",
+                  "text": "Name of nursery",
+                  "type": "string",
+                  "required": true,
+                  "repeats": false
+                },
+                {
+                  "linkId": "9264432080912",
+                  "text": "Postcode",
+                  "type": "string",
+                  "required": true,
+                  "repeats": false
+                },
+                {
+                  "linkId": "9604650637827",
+                  "text": "Telephone number",
+                  "type": "string",
+                  "required": true,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "linkId": "8242011050226",
+              "text": "Enter details of where you go for your education - Home School",
+              "type": "group",
+              "enableWhen": [
+                {
+                  "question": "5729238155283",
+                  "operator": "=",
+                  "answerCoding": {
+                    "display": "Home schooled"
+                  }
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "9503918040039",
+                  "text": "Postcode",
+                  "type": "string",
+                  "required": true,
+                  "repeats": false
+                },
+                {
+                  "linkId": "5244682504330",
+                  "text": "Telephone number",
+                  "type": "string",
+                  "required": true,
+                  "repeats": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "check-box",
+                    "display": "Check-box"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "2352413897998",
+          "text": "Is anyone else involved in your care?",
+          "type": "open-choice",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "309390008",
+                "display": "Hospital consultant"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1052581000000109",
+                "display": "Health visitor"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "106328005",
+                "display": "Social worker"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "223366009",
+                "display": "Healthcare professional"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None of the above"
+              }
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "3509733064094",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "184100006",
+              "display": "Patient sex (observable entity)"
+            }
+          ],
+          "text": "What is your sex as recorded on your NHS record?",
+          "type": "choice",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "male",
+                "display": "Male"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "female",
+                "display": "Female"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "other",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "unknown",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "3434094779174",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "398089004",
+                  "display": "Ethnic background"
+                }
+              ],
+              "text": "Which of the following best describes your [Ethnic group] background?",
+              "enableWhen": [
+                {
+                  "question": "4800938448822",
+                  "operator": "!=",
+                  "answerCoding": {
+                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+                    "code": "Z",
+                    "display": "Not stated"
+                  }
+                }
+              ],
+              "answerValueSet": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland"
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "4800938448822",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "398089004",
+              "display": "Ethnic background"
+            }
+          ],
+          "text": "What is your ethnic group?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Asian or Asian British"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Black African, Black British or Caribbean"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Mixed or multiple ethnic groups"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "White"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Another ethnic group"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+                "code": "Z",
+                "display": "Not stated"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "open-choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "1841983710357",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "439736001",
+                  "display": "Language for which interpreter is needed (observable entity)"
+                }
+              ],
+              "text": "Which language do you need an interpreter for?",
+              "enableWhen": [
+                {
+                  "question": "9558300594974",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "required": true,
+              "repeats": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "bfi",
+                    "display": "British Sign Language"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "ar",
+                    "display": "Arabic"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "cit",
+                    "display": "Bengali - Chatgaya"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "syl",
+                    "display": "Bengali - Sylheti"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "cmn",
+                    "display": "Chinese - Mandarin"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "zhh",
+                    "display": "Chinese - Cantonese"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "fa",
+                    "display": "Farsi"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "fr",
+                    "display": "French"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "ghc",
+                    "display": "Gaelic"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "de",
+                    "display": "German"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "gu",
+                    "display": "Gujarati"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "it",
+                    "display": "Italian"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "lt",
+                    "display": "Lithuanian"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "pl",
+                    "display": "Polish"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "pt",
+                    "display": "Portuguese"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "pa",
+                    "display": "Punjabi"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "so",
+                    "display": "Somali"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "es",
+                    "display": "Spanish"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "ta",
+                    "display": "Tamil"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "tr",
+                    "display": "Turkish"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://tools.ietf.org/html/bcp47",
+                    "code": "ur",
+                    "display": "Urdu"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Other"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "boolean",
+          "linkId": "9558300594974",
+          "text": "Do you need a language interpreter for your GP appointments?",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "radio-button",
+                        "display": "Radio Button"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "2713146262242",
+              "text": "Choose type of pharmacy",
+              "enableWhen": [
+                {
+                  "question": "5319955577563",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "required": true,
+              "repeats": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "High Street Pharmacy"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Online-only Pharmacy"
+                  }
+                }
+              ]
+            },
+            {
+              "item": [
+                {
+                  "type": "string",
+                  "linkId": "7587493504635",
+                  "text": "Pharmacy Name",
+                  "required": true,
+                  "repeats": false
+                },
+                {
+                  "type": "integer",
+                  "linkId": "8516440797888",
+                  "text": "Pharmacy House Number",
+                  "required": true,
+                  "repeats": false
+                },
+                {
+                  "type": "string",
+                  "linkId": "7342162179490",
+                  "text": "Pharmacy Street"
+                },
+                {
+                  "linkId": "5149630375907",
+                  "text": "Pharmacy Town",
+                  "type": "string"
+                }
+              ],
+              "type": "group",
+              "linkId": "7665401650008",
+              "text": "Choose a pharmacy",
+              "enableWhen": [
+                {
+                  "question": "5319955577563",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            },
+            {
+              "item": [
+                {
+                  "linkId": "4107477375862",
+                  "code": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "300611005",
+                      "display": "Difficulty performing traveling activities (finding)"
+                    }
+                  ],
+                  "text": "Would you have serious difficulty travelling to your nearest pharmacy to get medicines or medical appliances?",
+                  "type": "boolean",
+                  "enableWhen": [
+                    {
+                      "question": "3216525415675",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "1224857833601",
+                  "text": "Do you live more than 1 mile from your nearest pharmacy?",
+                  "type": "boolean",
+                  "enableWhen": [
+                    {
+                      "question": "3216525415675",
+                      "operator": "=",
+                      "answerBoolean": true
+                    },
+                    {
+                      "question": "4107477375862",
+                      "operator": "=",
+                      "answerBoolean": false
+                    }
+                  ],
+                  "enableBehavior": "all"
+                }
+              ],
+              "type": "boolean",
+              "linkId": "3216525415675",
+              "text": "Do you want to get your prescription items direct from {NAME OF SURGERY}?"
+            }
+          ],
+          "type": "boolean",
+          "linkId": "5319955577563",
+          "text": "Would you like to choose or change a pharmacy for your prescriptions?",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "type": "boolean",
+          "linkId": "3094394035878",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "753651000000107",
+              "display": "Military veteran (finding)"
+            }
+          ],
+          "text": "Have you ever been a member of the UK Armed Forces or are a family member registered with the Defence Medical Services?",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "linkId": "4531185058436",
+                  "text": "EC Full Name",
+                  "type": "string"
+                },
+                {
+                  "linkId": "8633300116223",
+                  "text": "EC Relationship to user",
+                  "type": "string"
+                },
+                {
+                  "linkId": "6157634467632",
+                  "text": "Next of Kin",
+                  "type": "boolean"
+                },
+                {
+                  "linkId": "682000761752",
+                  "text": "Contact telephone number",
+                  "type": "string"
+                }
+              ],
+              "type": "group",
+              "linkId": "2504251541565",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "406548001",
+                  "display": "Emergency contact details (observable entity)"
+                }
+              ],
+              "text": "What are the details of your emergency contact?",
+              "enableWhen": [
+                {
+                  "question": "9420407152267",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ],
+          "type": "boolean",
+          "linkId": "9420407152267",
+          "text": "Do you have an emergency contact?",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "item": [
+            {
+              "type": "date",
+              "linkId": "132357985294",
+              "text": "What was the date you left the UK?",
+              "enableWhen": [
+                {
+                  "question": "7951535385611",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            },
+            {
+              "type": "date",
+              "linkId": "2420834071501",
+              "text": "What was the date you returned to the UK?",
+              "enableWhen": [
+                {
+                  "question": "7951535385611",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ],
+          "type": "boolean",
+          "linkId": "7951535385611",
+          "text": "Are you returning from overseas?",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "type": "string",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                      "valueBoolean": true
+                    }
+                  ],
+                  "linkId": "5411575407860",
+                  "code": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "315354004",
+                      "display": "Country of birth (observable entity)"
+                    }
+                  ],
+                  "text": "Country of birth (not Home Nations)",
+                  "required": true,
+                  "repeats": false
+                },
+                {
+                  "type": "string",
+                  "linkId": "815946439143",
+                  "code": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "169812000",
+                      "display": "Place of birth (observable entity)"
+                    }
+                  ],
+                  "text": "Place of birth"
+                }
+              ],
+              "type": "group",
+              "linkId": "4918792971884",
+              "text": "Enter details of where you were born",
+              "enableWhen": [
+                {
+                  "question": "630742013280",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            },
+            {
+              "type": "date",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                  "valueBoolean": true
+                }
+              ],
+              "linkId": "5249967964026",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "860021000000109",
+                  "display": "Date of entry to United Kingdom (observable entity)"
+                }
+              ],
+              "text": "When did you enter the UK?",
+              "enableWhen": [
+                {
+                  "question": "630742013280",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            },
+            {
+              "item": [
+                {
+                  "item": [
+                    {
+                      "item": [
+                        {
+                          "linkId": "6238901005493",
+                          "text": "Full name",
+                          "type": "string"
+                        },
+                        {
+                          "linkId": "1144398862518",
+                          "text": "DOB",
+                          "type": "date"
+                        },
+                        {
+                          "linkId": "1592250707448",
+                          "text": "Country code",
+                          "type": "string"
+                        },
+                        {
+                          "linkId": "1483483401688",
+                          "text": "Personal ID number",
+                          "type": "string"
+                        },
+                        {
+                          "linkId": "3420817550247",
+                          "text": "Identification number of the card",
+                          "type": "string"
+                        },
+                        {
+                          "linkId": "4321618408088",
+                          "text": "Identification number of the institution",
+                          "type": "string"
+                        },
+                        {
+                          "linkId": "7423112602149",
+                          "text": "Expiry date",
+                          "type": "date"
+                        }
+                      ],
+                      "type": "group",
+                      "linkId": "2698577897288",
+                      "code": [
+                        {
+                          "system": "http://snomed.info/sct",
+                          "code": "896271000000104",
+                          "display": "Holds European Health Insurance Card (finding)"
+                        }
+                      ],
+                      "text": "European health insurance card details"
+                    }
+                  ],
+                  "type": "choice",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "radio-button",
+                            "display": "Radio Button"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "4739595792362",
+                  "text": "Do you have any of these documents?",
+                  "enableWhen": [
+                    {
+                      "question": "291105241223",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ],
+                  "required": true,
+                  "repeats": false,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "display": "EHIC"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "S1 form"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "I don't have any of these documents"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "type": "boolean",
+              "linkId": "291105241223",
+              "text": "Have you moved to the UK from EU, EEA or Switzerland?",
+              "enableWhen": [
+                {
+                  "question": "630742013280",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "required": true,
+              "repeats": false
+            },
+            {
+              "type": "boolean",
+              "linkId": "9940642971679",
+              "text": "Do you know your chargeable status?",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "radio-button",
+                        "display": "Radio Button"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "1651487045545",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "315354004",
+                  "display": "Country of birth (observable entity)"
+                }
+              ],
+              "text": "Where were you born?",
+              "enableWhen": [
+                {
+                  "question": "630742013280",
+                  "operator": "=",
+                  "answerBoolean": false
+                }
+              ],
+              "required": true,
+              "repeats": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "315421000",
+                    "display": "Born in England"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "315560000",
+                    "display": "Born in Wales"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "919971000000106",
+                    "display": "Born in Isle of Man"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "315515001",
+                    "display": "Born in Scotland"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "315493007",
+                    "display": "Born in Northern Ireland"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "74964007",
+                    "display": "Other"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "boolean",
+          "linkId": "630742013280",
+          "text": "Have you recently moved to the UK from abroad?",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "type": "integer",
+                  "linkId": "9878329078813",
+                  "text": "Previous Address number"
+                },
+                {
+                  "linkId": "6041393041572",
+                  "text": "Previous Address  postcode",
+                  "type": "string"
+                },
+                {
+                  "linkId": "2255229743869",
+                  "text": "Select your address",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "4251985368965",
+                      "text": "Previous Address street",
+                      "type": "string"
+                    },
+                    {
+                      "linkId": "4418776161811",
+                      "text": "Previous Address town",
+                      "type": "string"
+                    }
+                  ]
+                }
+              ],
+              "type": "group",
+              "linkId": "9759957663935",
+              "text": "What was your previous UK address?",
+              "enableWhen": [
+                {
+                  "question": "1767348738163",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ],
+          "type": "boolean",
+          "linkId": "1767348738163",
+          "text": "Have you ever lived at a previous UK address?",
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "7105669556528",
+      "text": "Health Questions",
+      "type": "group",
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "52791651942",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "171258008",
+              "display": "Up-to-date with immunizations (finding)"
+            }
+          ],
+          "text": "Have you got all your immunisations?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "ASKU",
+                "display": "asked but unknown"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "check-box",
+                        "display": "Check-box"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "4169218027019",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "64572001",
+                  "display": "Disease (disorder)"
+                }
+              ],
+              "text": "Alzheimers disease or dementia, asthma, cancer, diabetes, epilepsy, heart disease, high blood pressure, stroke, thyroid disease, other",
+              "type": "choice",
+              "enableWhen": [
+                {
+                  "question": "6562566176631",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "Y",
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "repeats": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52448006",
+                    "display": "Dementia"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "195967001",
+                    "display": "Asthma"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "363346000",
+                    "display": "Cancer"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "73211009",
+                    "display": "Diabetes mellitus"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "84757009",
+                    "display": "Epilepsy"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "56265001",
+                    "display": "Heart disease"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "38341003",
+                    "display": "High blood pressure"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "230690007",
+                    "display": "Stroke"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "14304000",
+                    "display": "Thyroid disease"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Other"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "4662558425169",
+              "text": "About your current and pre-existing medical conditions?",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "6562566176631",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "Y",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "6562566176631",
+          "text": "Do you have any existing or pre-existing medical conditions?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "asked-declined",
+                "display": "Asked But Declined"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "linkId": "9168931780545",
+              "text": "About your allergies",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "6142346747594",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "Y",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "6142346747594",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1300212001",
+              "display": "Allergy status (observable entity)"
+            }
+          ],
+          "text": "Do you have any allergies?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "asked-declined",
+                "display": "Asked But Declined"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "string",
+              "linkId": "4058278120915",
+              "text": "About your mental health conditions",
+              "enableWhen": [
+                {
+                  "question": "6396554185648",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "Y",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "6396554185648",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "74732009",
+              "display": "Mental disorder (disorder)"
+            }
+          ],
+          "text": "Do you have any mental health conditions?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "asked-declined",
+                "display": "Asked But Declined"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "linkId": "4752327272612",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "844381000000107",
+                  "display": "Patient reported disability (finding)"
+                }
+              ],
+              "text": "About your disabilities",
+              "type": "string"
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "4702985370646",
+          "text": "Do you have any disabilities?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "asked-declined",
+                "display": "Asked But Declined"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "radio-button",
+                        "display": "Radio Button"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "1372541526845",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "224494008",
+                  "display": "Availability of informal caregiver (observable entity)"
+                }
+              ],
+              "text": "What type of carer do you have?",
+              "enableWhen": [
+                {
+                  "question": "8295392298267",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "Y",
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "required": true,
+              "repeats": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "1597921000000107",
+                    "display": "Has young carer"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "818091000000106",
+                    "display": "Has a paid carer"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "823411000000109",
+                    "display": "Has voluntary carer"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "361571000000107",
+                    "display": "Fostering"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "None of the above"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8891823001896",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "184140000",
+                  "display": "Caregiver details (observable entity)"
+                }
+              ],
+              "text": "What are your carer's details?",
+              "type": "group",
+              "repeats": true,
+              "item": [
+                {
+                  "linkId": "115569511639",
+                  "text": "Carer first name",
+                  "type": "string"
+                },
+                {
+                  "linkId": "4318712543543",
+                  "text": "Carer last name",
+                  "type": "string"
+                },
+                {
+                  "linkId": "6999434181446",
+                  "text": "Carer relationship to user",
+                  "type": "string"
+                },
+                {
+                  "linkId": "2127351109118",
+                  "code": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "408400006",
+                      "display": "Caregiver home telephone number (observable entity)"
+                    }
+                  ],
+                  "text": "Carer contact telephone number",
+                  "type": "string"
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "8295392298267",
+          "text": "Do you have a carer?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "asked-declined",
+                "display": "Asked But Declined"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "radio-button",
+                        "display": "Radio Button"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "7274422246416",
+              "text": "What type of carer are you?",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Young carer under 18"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Paid as a job"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unpaid but may get benefits"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Foster carer"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "None of the above"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "2716331756046",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "224484003",
+              "display": "Patient themselves providing care (finding)"
+            }
+          ],
+          "text": "Are you a carer?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "asked-declined",
+                "display": "Asked But Declined"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "linkId": "8606446749622",
+              "text": "About you or your carer's communication needs",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "9937009784866",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "Y",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "9937009784866",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1082691000000101",
+              "display": "Requires support for expressive communication needs (finding)"
+            }
+          ],
+          "text": "Do you or your carer need to be communicated with in an accessible form?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "asked-declined",
+                "display": "Asked But Declined"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "linkId": "1496011034043",
+              "text": "About you or your carer's access needs",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "8641971664330",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "Y",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "8641971664330",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1108111000000107",
+              "display": "Requires reasonable adjustment for health and care access (Equality Act 2010) (finding)"
+            }
+          ],
+          "text": "Do you or your carer need any reasonable adjustments to make your visit to the GP surgery accessible?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "asked-declined",
+                "display": "Asked But Declined"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "linkId": "3351293631367",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "513881000000106",
+                  "display": "Current medication as reported by patient (observable entity)"
+                }
+              ],
+              "text": "Can you provide more details about your prescription medication?",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "3663339285400",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "Y",
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "item": [
+                {
+                  "type": "boolean",
+                  "linkId": "3720686293660",
+                  "text": "Are any of these repeat prescriptions?",
+                  "required": true,
+                  "repeats": false
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "3663339285400",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "788167006",
+              "display": "Patient treated with medication (finding)"
+            }
+          ],
+          "text": "Do you currently take any prescription medication?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "asked-declined",
+                "display": "Asked But Declined"
+              }
+            }
+          ]
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "display": "centimeters"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "display": "meters"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "[in_i]",
+                "display": "inch"
+              }
+            }
+          ],
+          "linkId": "6402543436632",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1162419008",
+              "display": "Self reported body height (observable entity)"
+            }
+          ],
+          "text": "What is your height?",
+          "repeats": false
+        },
+        {
+          "type": "quantity",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "[stone_av]",
+                "display": "stone - British"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "[lb_av]",
+                "display": "pound"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "kg",
+                "display": "kilogram"
+              }
+            }
+          ],
+          "linkId": "3301301896866",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "784399000",
+              "display": "Self reported body weight (observable entity)"
+            }
+          ],
+          "text": "What is your weight?",
+          "required": false,
+          "repeats": false,
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "kilogram",
+                "system": "http://unitsofmeasure.org",
+                "code": "kg"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "integer",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                  "valueBoolean": true
+                }
+              ],
+              "linkId": "9335384644242",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "443315005",
+                  "display": "Number of alcohol units consumed on typical drinking day"
+                }
+              ],
+              "text": "How many units of alcohol do you drink on a typical day when you are drinking?",
+              "enableWhen": [
+                {
+                  "question": "2141293065983",
+                  "operator": "!=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "105542008",
+                    "display": "Non - drinker"
+                  }
+                },
+                {
+                  "question": "2141293065983",
+                  "operator": "!=",
+                  "answerCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                    "code": "asked-declined",
+                    "display": "Asked But Declined"
+                  }
+                }
+              ],
+              "enableBehavior": "any",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "31954461608",
+              "text": "How often have you had six or more units of alcohol on a single occasion in the last year?",
+              "required": true,
+              "repeats": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Never"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Less than monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Weekly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Daily or almost daily"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                    "code": "asked-declined",
+                    "display": "Asked But Declined"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "2141293065983",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "289152009",
+              "display": "Finding of frequency of drinking (finding)"
+            }
+          ],
+          "text": "How often do you drink alcohol or have a drink containing alcohol?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "105542008",
+                "display": "Non - drinker"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "266917007",
+                "display": "Trivial drinker - <1u/day"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "160575005",
+                "display": "Light drinker - 1-2u/day"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "160576006",
+                "display": "Moderate drinker - 3-6u/day"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "160577002",
+                "display": "Heavy drinker - 7-9u/day"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "160578007",
+                "display": "Very heavy drinker - >9u/day"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "asked-declined",
+                "display": "Asked But Declined"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "105542008",
+                "display": "Non - drinker alcohol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "307450003",
+                "display": "Once monthly"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "307451004",
+                "display": "Twice monthly"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "229800002",
+                "display": "Twice a week"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "307445009",
+                "display": "Four times weekly"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "type": "date",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                      "valueBoolean": true
+                    }
+                  ],
+                  "linkId": "2343533367553",
+                  "code": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "160625004",
+                      "display": "Date ceased smoking (observable entity)"
+                    }
+                  ],
+                  "text": "When did you stop smoking?",
+                  "enableWhen": [
+                    {
+                      "question": "8799894644724",
+                      "operator": "=",
+                      "answerCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "8517006",
+                        "display": "Former smoker"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "radio-button",
+                        "display": "Radio Button"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                  "valueBoolean": true
+                }
+              ],
+              "linkId": "8799894644724",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "229819007",
+                  "display": "Tobacco use and exposure (observable entity)"
+                }
+              ],
+              "text": "What best describes you?",
+              "enableWhen": [
+                {
+                  "question": "2254100394705",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "Y",
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "required": true,
+              "repeats": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "77176002",
+                    "display": "Current smoker"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "8517006",
+                    "display": "Former smoker"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "1098881000000103",
+                    "display": "Declined to give smoking status"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "2254100394705",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229819007",
+              "display": "Tobacco use and exposure (observable entity)"
+            }
+          ],
+          "text": "Have you ever smoked?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "8392000",
+                "display": "Non-smoker"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1098881000000103",
+                "display": "Declined to give smoking status"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "4270314232487",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "413909005",
+              "display": "Consent status for record sharing (finding)"
+            }
+          ],
+          "text": "Do you want important information from your GP record to be available to other health and care professionals?",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "773051000000102",
+                "display": "Express consent for core and additional Summary Care Record dataset upload"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "773031000000109",
+                "display": "Express consent for core Summary Care Record dataset upload"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "889091000000102",
+                "display": "Dissent to share Summary Care Record"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

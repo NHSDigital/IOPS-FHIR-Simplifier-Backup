@@ -1,9 +1,11 @@
 - name: Index
   filename: Index.page.md
-- name: Design
-  filename: Design
-- name: Build
-  filename: Build
+- name: Introduction
+  filename: Introduction
+- name: Use Cases
+  filename: Use-Cases
+- name: Interactions
+  filename: Interactions
 - name: FHIR Assets
   filename: FHIR-Assets
 - name: Help and Support

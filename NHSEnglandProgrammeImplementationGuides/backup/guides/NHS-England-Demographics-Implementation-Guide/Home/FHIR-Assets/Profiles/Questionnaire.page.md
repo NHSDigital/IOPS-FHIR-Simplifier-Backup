@@ -1,5 +1,5 @@
 ---
-subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire
+subject: http://hl7.org/fhir/StructureDefinition/Questionnaire
 ---
 ## {{page-title}}
 

@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: MNS
+  filename: MNS.page.md
+- name: NEMS
+  filename: NEMS.page.md

@@ -1,9 +1,9 @@
 - name: Index
   filename: Index.page.md
-- name: Design
-  filename: Design
-- name: Build
-  filename: Build
+- name: Data Model
+  filename: Data-Model.page.md
+- name: Use Cases
+  filename: Use-Cases
 - name: FHIR Assets
   filename: FHIR-Assets
 - name: Help and Support

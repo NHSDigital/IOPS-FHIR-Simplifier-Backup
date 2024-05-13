@@ -1,0 +1,177 @@
+{
+  "resourceType": "Bundle",
+  "id": "GPReg-QuestionnaireResponse-Extracted-Example",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:63fdc317-27ae-4f30-97d9-0f58915fbb8c",
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+		    "prefix": "Mr",
+            "given": [
+              "Omar"
+            ],
+			"family": "Khan"
+          }
+        ],
+		"birthDate": "1970-01-01",
+		"address": [
+		  {
+		    "line": [
+		      "7",
+			  "Wellington Place"
+		    ],
+		    "city": "Leeds",
+		    "postalCode": "LS1 4AP"
+		  }
+		],
+		"telecom": [
+		  {
+		    "use": "mobile",
+			"system": "phone",
+			"value": "07759121832"
+		  },
+		  {
+			"system": "email",
+			"value": "omar.khan2@nhs.net"
+		  }
+		],
+		"gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:93c86ad6-4a05-4033-8bb6-cc648c008b15",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1162419008",
+              "display": "Self reported body height (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/63fdc317-27ae-4f30-97d9-0f58915fbb8c"
+        },
+        "effectiveDateTime": "2024-05-02T12:02:58+00:00",
+        "issued": "2024-05-02T12:02:58.166+00:00",
+        "valueQuantity": {
+          "value": 175,
+          "unit": "centimeters"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1a5670fe-a6f7-40dc-91f6-ab5c0a7a4528",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "784399000",
+              "display": "Self reported body weight (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/63fdc317-27ae-4f30-97d9-0f58915fbb8c"
+        },
+        "effectiveDateTime": "2024-05-02T12:02:58+00:00",
+        "issued": "2024-05-02T12:02:58.166+00:00",
+        "valueQuantity": {
+          "value": 75,
+          "unit": "kilogram",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1d2b599f-98ca-4d31-be19-e0334e0825f8",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "289152009",
+              "display": "Finding of frequency of drinking (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/63fdc317-27ae-4f30-97d9-0f58915fbb8c"
+        },
+        "effectiveDateTime": "2024-05-02T12:02:58+00:00",
+        "issued": "2024-05-02T12:02:58.166+00:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "105542008",
+              "display": "Non - drinker"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6786ae2c-f7d8-44a2-8434-1cc2d5cc9830",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229819007",
+              "display": "Tobacco use and exposure (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/63fdc317-27ae-4f30-97d9-0f58915fbb8c"
+        },
+        "effectiveDateTime": "2024-05-02T12:02:58+00:00",
+        "issued": "2024-05-02T12:02:58.166+00:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "8517006",
+              "display": "Former smoker"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}

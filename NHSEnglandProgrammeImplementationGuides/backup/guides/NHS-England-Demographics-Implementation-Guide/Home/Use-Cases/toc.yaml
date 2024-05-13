@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Patient Demographics Query
+  filename: Patient-Demographics-Query
+- name: Patient Demographics Event Notification
+  filename: Patient-Demographics-Event-Notification
+- name: Patient Registration
+  filename: Patient-Registration
+- name: Patient Proxy
+  filename: Patient-Proxy
