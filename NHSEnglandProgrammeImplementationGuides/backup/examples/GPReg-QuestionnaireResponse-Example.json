@@ -1,0 +1,587 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "GPReg-QuestionnaireResponse-Example",
+  "status": "completed",
+  "authored": "2024-05-02T12:00:52.711Z",
+  "item": [
+    {
+      "linkId": "5564099927552",
+      "text": "Who is registering with a GP?",
+      "answer": [
+        {
+          "valueCoding": {
+            "display": "Myself"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "3099707112786",
+      "text": "Matching patient to their record",
+      "item": [
+        {
+          "linkId": "2673545464189",
+          "text": "What is the name of the person being registered?",
+          "item": [
+            {
+              "linkId": "2526886552536",
+              "text": "Title",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.medirecords.com/CodeSystem/mr-patient-name-title-code",
+                    "code": "315890000",
+                    "display": "Mr"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8025625545792",
+              "text": "First name",
+              "answer": [
+                {
+                  "valueString": "Omar"
+                }
+              ]
+            },
+            {
+              "linkId": "2444645364061",
+              "text": "Last Name",
+              "answer": [
+                {
+                  "valueString": "Khan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "5721234742686",
+          "text": "What is the your date of birth",
+          "answer": [
+            {
+              "valueDate": "1970-01-01"
+            }
+          ]
+        },
+        {
+          "linkId": "2535971200955",
+          "text": "Do you know your NHS Number?",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "6043124139100",
+          "text": "Are you registering with a UK GP for the first time",
+          "answer": [
+            {
+              "valueBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3189857950482",
+      "text": "Personal Details",
+      "item": [
+        {
+          "linkId": "7570130246483",
+          "text": "Do you have a current UK address",
+          "answer": [
+            {
+              "valueBoolean": true,
+              "item": [
+                {
+                  "linkId": "3834031732678",
+                  "text": "What is your current UK address?",
+                  "item": [
+                    {
+                      "linkId": "7091443873030",
+                      "text": "House number or name (optional)",
+                      "answer": [
+                        {
+                          "valueString": "7"
+                        }
+                      ]
+                    },
+                    {
+                      "linkId": "5086068712017",
+                      "text": "Postcode",
+                      "answer": [
+                        {
+                          "valueString": "LS1 4AP"
+                        }
+                      ]
+                    },
+                    {
+                      "linkId": "1187115804415",
+                      "text": "Select an address",
+                      "item": [
+                        {
+                          "linkId": "8052908008533",
+                          "text": "Street",
+                          "answer": [
+                            {
+                              "valueString": "Wellington Place"
+                            }
+                          ]
+                        },
+                        {
+                          "linkId": "9119357682451",
+                          "text": "Town",
+                          "answer": [
+                            {
+                              "valueString": "Leeds"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8454185457892",
+          "text": "What are your Contact Details",
+          "item": [
+            {
+              "linkId": "8530163235785",
+              "text": "Mobile telephone number",
+              "answer": [
+                {
+                  "valueString": "07759121832"
+                }
+              ]
+            },
+            {
+              "linkId": "7870443952741",
+              "text": "Email",
+              "answer": [
+                {
+                  "valueString": "omar.khan2@nhs.net"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "5729238155283",
+          "text": "Do you go to any of the following for your education?",
+          "answer": [
+            {
+              "valueCoding": {
+                "display": "None of the above"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2352413897998",
+          "text": "Is anyone else involved in your care?",
+          "answer": [
+            {
+              "valueCoding": {
+                "display": "None of the above"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "3509733064094",
+          "text": "What is your sex as recorded on your NHS record?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "male",
+                "display": "Male"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "4800938448822",
+          "text": "What is your ethnic group?",
+          "answer": [
+            {
+              "valueCoding": {
+                "display": "Asian or Asian British"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "9558300594974",
+          "text": "Do you need a language interpreter for your GP appointments?",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "5319955577563",
+          "text": "Would you like to choose or change a pharmacy for your prescriptions?",
+          "answer": [
+            {
+              "valueBoolean": false,
+              "item": [
+                {
+                  "linkId": "3216525415675",
+                  "text": "Do you want to get your prescription items direct from {NAME OF SURGERY}?",
+                  "answer": [
+                    {
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "3094394035878",
+          "text": "Have you ever been a member of the UK Armed Forces or are a family member registered with the Defence Medical Services?",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "9420407152267",
+          "text": "Do you have an emergency contact?",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "7951535385611",
+          "text": "Are you returning from overseas?",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "630742013280",
+          "text": "Have you recently moved to the UK from abroad?",
+          "answer": [
+            {
+              "valueBoolean": false,
+              "item": [
+                {
+                  "linkId": "9940642971679",
+                  "text": "Do you know your chargeable status?",
+                  "answer": [
+                    {
+                      "valueBoolean": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "1651487045545",
+                  "text": "Where were you born?",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "315421000",
+                        "display": "Born in England"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "1767348738163",
+          "text": "Have you ever lived at a previous UK address?",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "7105669556528",
+      "text": "Health Questions",
+      "item": [
+        {
+          "linkId": "52791651942",
+          "text": "Have you got all your immunisations?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "ASKU",
+                "display": "asked but unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "6562566176631",
+          "text": "Do you have any existing or pre-existing medical conditions?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              },
+              "item": [
+                {
+                  "linkId": "4169218027019",
+                  "text": "Alzheimers disease or dementia, asthma, cancer, diabetes, epilepsy, heart disease, high blood pressure, stroke, thyroid disease, other",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "195967001",
+                        "display": "Asthma"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "6142346747594",
+          "text": "Do you have any allergies?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "6396554185648",
+          "text": "Do you have any mental health conditions?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "4702985370646",
+          "text": "Do you have any disabilities?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "8295392298267",
+          "text": "Do you have a carer?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2716331756046",
+          "text": "Are you a carer?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "9937009784866",
+          "text": "Do you or your carer need to be communicated with in an accessible form?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "8641971664330",
+          "text": "Do you or your carer need any reasonable adjustments to make your visit to the GP surgery accessible?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "3663339285400",
+          "text": "Do you currently take any prescription medication?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "6402543436632",
+          "text": "What is your height?",
+          "answer": [
+            {
+              "valueQuantity": {
+                "value": 175,
+                "unit": "centimeters"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "3301301896866",
+          "text": "What is your weight?",
+          "answer": [
+            {
+              "valueQuantity": {
+                "value": 75,
+                "unit": "kilogram",
+                "code": "kg",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2141293065983",
+          "text": "How often do you drink alcohol or have a drink containing alcohol?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "105542008",
+                "display": "Non - drinker"
+              },
+              "item": [
+                {
+                  "linkId": "9335384644242",
+                  "text": "How many units of alcohol do you drink on a typical day when you are drinking?",
+                  "answer": [
+                    {
+                      "valueInteger": 0
+                    }
+                  ]
+                },
+                {
+                  "linkId": "31954461608",
+                  "text": "How often have you had six or more units of alcohol on a single occasion in the last year?",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "display": "Never"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "2254100394705",
+          "text": "Have you ever smoked?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              },
+              "item": [
+                {
+                  "linkId": "8799894644724",
+                  "text": "What best describes you?",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "8517006",
+                        "display": "Former smoker"
+                      },
+                      "item": [
+                        {
+                          "linkId": "2343533367553",
+                          "text": "When did you stop smoking?",
+                          "answer": [
+                            {
+                              "valueDate": "2024-05-01"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "4270314232487",
+          "text": "Do you want important information from your GP record to be available to other health and care professionals?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "773031000000109",
+                "display": "Express consent for core Summary Care Record dataset upload"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questionnaire": "urn:uuid:a62f17af-1657-4375-916b-7b1363257159"
+}

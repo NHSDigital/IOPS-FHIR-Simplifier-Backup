@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: New Patient Registration
+  filename: New-Patient-Registration
+- name: Register with a GP Surgery
+  filename: Register-with-a-GP-Surgery

@@ -1,15 +1,21 @@
 ## What is Directory of Service (DoS)?
 
-This implementation guide provides guidance on implementing the Directory of Service (DoS) FHIR R4 API.<br>
-The project's scope involves a technical re-architecture of the Directory of Services. This entails replacing outdated components causing user or maintenance issues.<br> 
-The rewrite aims to introduce necessary enhancements aligning the DoS with other product suites and establishing a new foundational infrastructure to address future needs effectively.
+The DoS is a directory of NHS services which is integrated with NHS Pathways, the clinical decision support system that supports 111 and some 999 providers.
 
-Refer to NHS Program URL for more information <a href='' class="external">[xyz]</a>
+Once someone has gone through a triage the DoS provides information about where they should go next.
+
+The DoS uses the information already collected about the patient – such as their location and how quickly they need treatment – to provide a list of the best services for them. For example, this might be the nearest pharmacy, an urgent treatment centre or an emergency department.
+
+The list is ranked by factors such as how close the facility is, when it is open and what services are available when they get there.
+
+Refer to NHS Program URL for more information <a href='https://digital.nhs.uk/services/directory-of-services-dos' class="external">Directory of Services (DoS)</a>
 
 ### Please provide a brief description of what this implementation guide is about
 
 What is the Aim of this IG? <br>
-To identify common patterns when implementng a DoS.
+This implementation guide provides guidance on implementing the Directory of Service (DoS) FHIR R4 Standard.<br>
+The project's scope involves a technical re-architecture of the Directory of Services. This entails replacing outdated components causing user or maintenance issues.<br> 
+The rewrite aims to introduce necessary enhancements aligning the DoS with other product suites and establishing a new foundational infrastructure to address future needs effectively.
 
 Is this IG part of a bigger project <br>
 Does it replace another system? <br>
