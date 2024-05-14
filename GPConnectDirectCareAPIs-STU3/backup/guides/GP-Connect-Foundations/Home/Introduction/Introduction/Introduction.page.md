@@ -1,3 +1,3 @@
 ## {{page-title}}
 
-Introduction to the Access Record Structured capability.
+All about the common foundation capabilities.
