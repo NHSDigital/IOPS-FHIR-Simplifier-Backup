@@ -694,6 +694,10 @@
 					],
 					"searchParam": [
 						{
+							"name": "authored",
+							"type": "date"
+						},
+            {
 							"name": "based-on",
 							"type": "reference"
 						},
@@ -744,6 +748,10 @@
 						{
 							"name": "status",
 							"type": "token"
+						},
+            {
+							"name": "supporting-info",
+							"type": "reference"
 						}
 					]
 				},
