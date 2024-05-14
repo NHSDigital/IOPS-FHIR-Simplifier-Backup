@@ -2,7 +2,15 @@
   filename: Introduction.page.md
 - name: Purpose
   filename: Purpose.page.md
-- name: Scope
-  filename: Scope.page.md
+- name: Prerequisites
+  filename: Prerequisites.page.md
+- name: Scenarios
+  filename: Scenarios.page.md
+- name: API Definition
+  filename: API-Definition.page.md
+- name: Spine Interactions
+  filename: Spine-Interactions.page.md
+- name: Implementation and testing
+  filename: Implementation-and-testing.page.md
 - name: FHIR® version
   filename: FHIR-version.page.md
