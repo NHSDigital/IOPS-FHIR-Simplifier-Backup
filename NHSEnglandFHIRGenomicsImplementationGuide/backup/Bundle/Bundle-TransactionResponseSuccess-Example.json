@@ -1,0 +1,50 @@
+{
+  "resourceType": "Bundle",
+  "id": "Bundle-TransactionResponseSuccess-Example",
+  "meta": {
+    "lastUpdated": "2024-01-30T12:01:24Z"
+  },
+  "type": "transaction-response",
+  "entry": [
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "ServiceRequest/4d70678c-81e4-4ff4-8c67-17596fd0aa46/",
+        "lastModified": "2024-01-30T12:01:24Z",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "meta": {
+            "lastUpdated": "2024-01-30T12:01:24Z"
+          },
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "diagnostics": "No issues detected during validation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Patient/e87361ea-b6fb-482e-a252-af3199792582/",
+        "lastModified": "2024-01-30T12:01:24Z",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "meta": {
+            "lastUpdated": "2024-01-30T12:01:24Z"
+          },
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "diagnostics": "No issues detected during validation."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

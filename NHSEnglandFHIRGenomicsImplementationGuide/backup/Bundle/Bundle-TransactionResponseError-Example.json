@@ -1,0 +1,62 @@
+{
+  "resourceType": "Bundle",
+  "id": "Bundle-TransactionResponseError-Example",
+  "meta": {
+    "lastUpdated": "2024-01-30T12:01:24Z"
+  },
+  "type": "transaction-response",
+  "entry": [
+    {
+      "response": {
+        "status": "422 Unprocessable Entity",
+        "outcome": {
+          "resourceType":"OperationOutcome",
+          "meta":{
+           "lastUpdated":"2024-01-30T12:01:24Z"
+          },
+          "issue":[
+            {
+              "severity":"error",
+              "code":"processing",
+              "details":{
+                "coding":[
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/operation-outcome",
+                    "code": "MSG_LOCAL_FAIL",
+                    "display": "Unable to resolve local reference to resource Patient/Patient-MeirLieberman-Example"
+                  }
+                ]
+              },
+              "diagnostics": "Validation errors occurred during processing",
+              "location": [
+                  "Bundle.entry[1].resource.ofType(ServiceRequest)"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "200 OK",
+        "lastModified": "2024-01-30T12:01:24Z",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "meta": {
+            "lastUpdated": "2024-01-30T12:01:24Z"
+          },
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "diagnostics": "No issues detected during validation. Resource not created as request transaction contains an error",
+              "location": [
+                "Bundle.entry[1].resource.ofType(Patient)"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
