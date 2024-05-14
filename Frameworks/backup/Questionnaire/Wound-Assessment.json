@@ -1,0 +1,939 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "009c06ea-b930-4433-9a11-3033f20857dc",
+    "meta": {
+      "versionId": "14",
+      "lastUpdated": "2024-05-14T07:19:15.010Z"
+    },
+    "url": "https://example.fhir.nhs.uk/Questionnaire/385941006",
+    "name": "WoundCarePRSB",
+    "title": "Wound Assessment",
+    "status": "draft",
+    "publisher": "Professional Records Standards Body",
+    "description": "Based on assessment section of [PRSB Wound Care Standard](https://theprsb.org/standards/wound-care-standard/)",
+    "purpose": "To ",
+    "code": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "385941006",
+        "display": "Wound care assessment"
+      }
+    ],
+    "item": [
+      {
+        "linkId": "2004439448609",
+        "text": "Initial (Primary) Wound Assessment",
+        "type": "boolean",
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "help",
+                      "display": "Help-Button"
+                    }
+                  ],
+                  "text": "Help-Button"
+                }
+              }
+            ],
+            "linkId": "2004439448609_helpText",
+            "text": "Boolean indicating whether (or not) this assessment is a initial (or primary) assessment",
+            "type": "display"
+          }
+        ]
+      },
+      {
+        "linkId": "75482007501",
+        "text": "Structured assessment",
+        "type": "group",
+        "repeats": true,
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "8144400146821",
+            "text": "Structured assessment name",
+            "type": "choice",
+            "repeats": false,
+            "answerValueSet": "http://snomed.info/sct/999000021000000109?fhir_vs=ecl%2F%3C273249006"
+          },
+          {
+            "linkId": "6253925815242",
+            "text": " Assessment result",
+            "type": "quantity",
+            "repeats": false,
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "6253925815242_helpText",
+                "text": "The structured assessment result. This is the overall result for the assessment.",
+                "type": "display"
+              }
+            ]
+          },
+          {
+            "linkId": "7020869743003",
+            "text": "Subscale result",
+            "type": "quantity",
+            "repeats": true,
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "7020869743003_helpText",
+                "text": "The subscale result for the structured assessment. This includes the result for individual questions or subsections.",
+                "type": "display"
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "help",
+                      "display": "Help-Button"
+                    }
+                  ],
+                  "text": "Help-Button"
+                }
+              }
+            ],
+            "linkId": "75482007501_helpText",
+            "text": "Details of the structured assessment.\n\n(Editor Note: This appears to be referring to other completed assessments)",
+            "type": "display"
+          }
+        ]
+      },
+      {
+        "linkId": "3014734092787",
+        "text": "Wound length, width and depth",
+        "type": "group",
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                "valueBoolean": true
+              }
+            ],
+            "linkId": "1314329406446",
+            "code": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "401238003"
+              }
+            ],
+            "text": "Length of wound",
+            "type": "quantity",
+            "initial": [
+              {
+                "valueQuantity": {
+                  "unit": "millimeter",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mm"
+                }
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                "valueBoolean": true
+              }
+            ],
+            "linkId": "4108279314400",
+            "code": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "401239006"
+              }
+            ],
+            "text": "Width of wound",
+            "type": "quantity",
+            "initial": [
+              {
+                "valueQuantity": {
+                  "unit": "millimeter",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mm"
+                }
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                "valueBoolean": true
+              }
+            ],
+            "linkId": "9909631157684",
+            "code": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "425094009"
+              }
+            ],
+            "text": "Depth of wound",
+            "type": "quantity",
+            "initial": [
+              {
+                "valueQuantity": {
+                  "unit": "millimeter",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mm"
+                }
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                "valueBoolean": true
+              }
+            ],
+            "linkId": "2279555219193",
+            "code": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "1361000124101"
+              }
+            ],
+            "text": "Depth of wound undermining",
+            "type": "quantity",
+            "initial": [
+              {
+                "valueQuantity": {
+                  "unit": "millimeter",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mm"
+                }
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                "valueBoolean": true
+              }
+            ],
+            "linkId": "5297128455455",
+            "code": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "1351000124103"
+              }
+            ],
+            "text": "Length of wound undermining",
+            "type": "quantity",
+            "initial": [
+              {
+                "valueQuantity": {
+                  "unit": "millimeter",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mm"
+                }
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                "valueBoolean": true
+              }
+            ],
+            "linkId": "9390083774600",
+            "code": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "1321000124107"
+              }
+            ],
+            "text": "Length of wound tunneling",
+            "type": "quantity",
+            "initial": [
+              {
+                "valueQuantity": {
+                  "unit": "millimeter",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mm"
+                }
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "help",
+                      "display": "Help-Button"
+                    }
+                  ],
+                  "text": "Help-Button"
+                }
+              }
+            ],
+            "linkId": "3014734092787_helpText",
+            "text": "The shape and size of the wound",
+            "type": "display"
+          }
+        ]
+      },
+      {
+        "linkId": "5188116194983",
+        "text": " Wound and surrounding skin description",
+        "type": "group",
+        "repeats": true,
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                "valueBoolean": true
+              }
+            ],
+            "linkId": "4633567157892",
+            "code": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "449747006",
+                "display": "Wound edge finding (finding)"
+              }
+            ],
+            "text": "Wound margin and edge description",
+            "type": "choice",
+            "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C449747006"
+          },
+          {
+            "linkId": "3219596821574",
+            "text": "Limb Shape",
+            "type": "string"
+          },
+          {
+            "linkId": "856726099230",
+            "text": "Foot Shape",
+            "type": "string"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                "valueBoolean": true
+              }
+            ],
+            "linkId": "3759483681472",
+            "code": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "225552003",
+                "display": "Wound finding (finding)"
+              }
+            ],
+            "text": " Wound bed tissue type",
+            "type": "choice",
+            "repeats": true,
+            "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C225552003"
+          },
+          {
+            "linkId": "7784402805375",
+            "text": "Surrounding skin condition",
+            "type": "string",
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "drop-down",
+                          "display": "Drop down"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                    "valueBoolean": true
+                  }
+                ],
+                "linkId": "4239972487384",
+                "code": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "225552003",
+                    "display": "Wound finding (finding)"
+                  }
+                ],
+                "text": "Skin colour",
+                "type": "choice",
+                "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C225552003"
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "help",
+                      "display": "Help-Button"
+                    }
+                  ],
+                  "text": "Help-Button"
+                }
+              }
+            ],
+            "linkId": "5188116194983_helpText",
+            "text": "Group containing health care professional observations on the wound",
+            "type": "display"
+          }
+        ]
+      },
+      {
+        "linkId": "1249796628332",
+        "text": "Image of wound",
+        "type": "url",
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "help",
+                      "display": "Help-Button"
+                    }
+                  ],
+                  "text": "Help-Button"
+                }
+              }
+            ],
+            "linkId": "1249796628332_helpText",
+            "text": "This is the documents record entry. There may be 0 to many record entries under a section. Each record entry is made up of a number of elements or data items.",
+            "type": "display"
+          }
+        ]
+      },
+      {
+        "linkId": "5303214909690",
+        "text": "Wound complications",
+        "type": "group",
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "9944746446256",
+            "text": "Problem List",
+            "type": "choice",
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "help",
+                      "display": "Help-Button"
+                    }
+                  ],
+                  "text": "Help-Button"
+                }
+              }
+            ],
+            "linkId": "5303214909690_helpText",
+            "text": "Clinical complications which affect the healing of the wound",
+            "type": "display"
+          }
+        ]
+      },
+      {
+        "linkId": "2486204800143",
+        "text": "Vascular Assessment",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "263458092205",
+            "text": " Arterial supply assessment",
+            "type": "string"
+          },
+          {
+            "linkId": "7958252125771",
+            "text": "Structured assessment",
+            "type": "string"
+          },
+          {
+            "linkId": "7329063746755",
+            "text": "Ankle–brachial pressure index",
+            "type": "string"
+          },
+          {
+            "linkId": "7990327760035",
+            "text": "Toe pressure index",
+            "type": "string"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "help",
+                      "display": "Help-Button"
+                    }
+                  ],
+                  "text": "Help-Button"
+                }
+              }
+            ],
+            "linkId": "2486204800143_helpText",
+            "text": "Assessment to determine the presence and degree of peripheral vascular disease",
+            "type": "display"
+          }
+        ]
+      },
+      {
+        "linkId": "5663261827772",
+        "text": "Pressure ulcer category",
+        "type": "group",
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "help",
+                      "display": "Help-Button"
+                    }
+                  ],
+                  "text": "Help-Button"
+                }
+              }
+            ],
+            "linkId": "5663261827772_helpText",
+            "text": "Formal grading of pressure ulcers",
+            "type": "display"
+          }
+        ]
+      },
+      {
+        "linkId": "5366297094247",
+        "text": "Surgical specific",
+        "type": "group",
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                "valueBoolean": true
+              }
+            ],
+            "linkId": "1681508947229",
+            "code": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "449741007",
+                "display": "Wound edges approximated (finding)"
+              }
+            ],
+            "text": "Approximation of wound edges",
+            "type": "choice",
+            "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C449741007"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "help",
+                      "display": "Help-Button"
+                    }
+                  ],
+                  "text": "Help-Button"
+                }
+              }
+            ],
+            "linkId": "5366297094247_helpText",
+            "text": "This section holds assessment details that are specific to surgical wounds",
+            "type": "display"
+          }
+        ]
+      },
+      {
+        "linkId": "8100716825549",
+        "text": "Wound observations",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "1217019394147",
+            "text": "Clinical observations",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "3881564827818",
+                "text": "Pain score",
+                "type": "integer"
+              },
+              {
+                "linkId": "3366373592184",
+                "text": " Wound pain frequency",
+                "type": "string"
+              },
+              {
+                "linkId": "8330702755119",
+                "text": " Signs and symptoms of infections",
+                "type": "string"
+              },
+              {
+                "linkId": "9916532100435",
+                "text": "Swab for investigation",
+                "type": "string"
+              },
+              {
+                "linkId": "3749760111659",
+                "text": " Exudate",
+                "type": "string"
+              },
+              {
+                "linkId": "8021360547605",
+                "text": "Wound care product performance",
+                "type": "string"
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "drop-down",
+                          "display": "Drop down"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                    "valueBoolean": true
+                  }
+                ],
+                "linkId": "9661410959176",
+                "code": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "445916002"
+                  }
+                ],
+                "text": " Odour intensity",
+                "type": "choice",
+                "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C445916002"
+              },
+              {
+                "linkId": "2424480316512",
+                "text": "Examination type",
+                "type": "string"
+              },
+              {
+                "linkId": "2598281942114",
+                "text": " Examination findings",
+                "type": "string"
+              },
+              {
+                "linkId": "5560135455940",
+                "text": "Pulse sounds",
+                "type": "string"
+              },
+              {
+                "linkId": "6408645617114",
+                "text": "Joint mobility",
+                "type": "string"
+              },
+              {
+                "linkId": "9652939200188",
+                "text": "Posture and positioning",
+                "type": "string"
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "drop-down",
+                          "display": "Drop down"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                    "valueBoolean": true
+                  }
+                ],
+                "linkId": "329009383577",
+                "code": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "102572006"
+                  }
+                ],
+                "text": " Lower limb oedema",
+                "type": "choice",
+                "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C102572006"
+              },
+              {
+                "linkId": "3388003172390",
+                "text": "Sensitivity and sensation",
+                "type": "string"
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                    "valueBoolean": true
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+                    "valueDuration": {
+                      "value": 1,
+                      "unit": "days",
+                      "system": "http://unitsofmeasure.org",
+                      "code": "d"
+                    }
+                  }
+                ],
+                "linkId": "1609920308485",
+                "code": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "386725007"
+                  }
+                ],
+                "text": "Temperature",
+                "type": "quantity",
+                "initial": [
+                  {
+                    "valueQuantity": {
+                      "unit": "degree Celsius",
+                      "system": "http://unitsofmeasure.org",
+                      "code": "Cel"
+                    }
+                  }
+                ]
+              },
+              {
+                "linkId": "5375976153195",
+                "text": "Observed nutritional status",
+                "type": "string"
+              },
+              {
+                "linkId": "6937281263326",
+                "text": "Observed hydration status",
+                "type": "string"
+              },
+              {
+                "linkId": "8544473996321",
+                "text": "Surgical Wound Specific symptoms and observations",
+                "type": "group",
+                "item": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                        "valueCodeableConcept": {
+                          "coding": [
+                            {
+                              "system": "http://hl7.org/fhir/questionnaire-item-control",
+                              "code": "drop-down",
+                              "display": "Drop down"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                        "valueBoolean": true
+                      }
+                    ],
+                    "linkId": "565910925502",
+                    "code": [
+                      {
+                        "system": "http://snomed.info/sct",
+                        "code": "225553008"
+                      }
+                    ],
+                    "text": "Dehiscence",
+                    "type": "choice",
+                    "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C225553008"
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                        "valueBoolean": true
+                      }
+                    ],
+                    "linkId": "2488778582318",
+                    "code": [
+                      {
+                        "system": "http://snomed.info/sct",
+                        "code": "271776004"
+                      }
+                    ],
+                    "text": "Crepitus Present",
+                    "type": "boolean"
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                        "valueBoolean": true
+                      }
+                    ],
+                    "linkId": "4030870921473",
+                    "code": [
+                      {
+                        "system": "http://snomed.info/sct",
+                        "code": "298005009"
+                      }
+                    ],
+                    "text": "Healing ridge present",
+                    "type": "boolean"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "6936738340812",
+            "text": "Person observations",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  }
