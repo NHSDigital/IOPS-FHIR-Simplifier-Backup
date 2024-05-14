@@ -1,2 +1,6 @@
 - name: ' NHSE Condition Profile for flags	'
   filename: NHSE-Condition-Profile-for-flags.page.md
+- name: NHSE Flag Consent Profile
+  filename: NHSE-Flag-Consent-Profile.page.md
+- name: Profile
+  filename: Profile.page.md

@@ -23,12 +23,15 @@ title Patient Registration
 actor "Patient" as patient
 actor "Patient Identity Source" as source
 
-source -> patient: Patient is asked to complete registration form
+source -> patient: Patient is asked to complete **Patient Registration** form [PCC-UK-2]
 opt
-  patient -> patient: Patient registration form can be pre-populated
+note over patient: May use [PCC-UK-3] to retrieve **Patient Proxy Request** Form Definition
 end
-patient -> patient : Patient completes form
-patient -> source: Completed Patient Registration Form
+opt
+  patient -> patient: **Patient Registration** form can be pre-populated
+end
+patient -> patient : Patient completes  **Patient Registration** form
+patient -> source: Send Completed **Patient Registration** form [PCC-ENG-1]
 source --> patient: Acknowledgement
 source -> source: Create patient
 opt

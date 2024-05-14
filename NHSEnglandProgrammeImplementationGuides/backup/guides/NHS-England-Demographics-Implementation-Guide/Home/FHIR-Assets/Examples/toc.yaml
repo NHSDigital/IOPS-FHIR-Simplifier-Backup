@@ -4,3 +4,9 @@
   filename: New-patient-with-Minimum-Information-Required.page.md
 - name: New patient with Interpreter Required
   filename: New-patient-with-Interpreter-Required.page.md
+- name: Register with a GP Surgery Questionnaire
+  filename: Register-with-a-GP-Surgery-Questionnaire.page.md
+- name: Register with a GP Surgery QuestionnaireResponse
+  filename: Register-with-a-GP-Surgery-QuestionnaireResponse.page.md
+- name: Register with a GP Surgery Extracted Resources
+  filename: Register-with-a-GP-Surgery-Extracted-Resources.page.md
