@@ -20,6 +20,23 @@
 </tr></tbody></table>
 <br>
 
+<plantuml>
+@startuml
+title Locating a Healthcare Service
+actor "Healthcare Worker"
+participant "Directory of Services"
+actor Patient
+
+"Healthcare Worker" -> "Directory of Services": Access DoS
+activate "Directory of Services"
+"Directory of Services" --> "Healthcare Worker": Secure access provided
+"Healthcare Worker" -> "Directory of Services": Search for relevant services
+"Directory of Services" --> "Healthcare Worker": Return list of services
+Deactivate "Directory of Services"
+"Healthcare Worker" -> Patient: Provides list of relevant services
+@enduml
+</plantuml>
+
 
 ## Search DoS with Clinical Triage System 
 
@@ -41,6 +58,22 @@
 </tr></tbody></table>
 <br>
 
+<plantuml>
+@startuml
+title Search DoS with Clinical Triage System 
+actor Triage
+participant "Case Management System"
+participant "Directory of Services"
+activate "Case Management System"
+Triage -> "Case Management System": Referral for service
+activate "Directory of Services"
+"Case Management System" -> "Directory of Services": API call for list of services
+"Directory of Services" --> "Case Management System": List of apropriate services
+deactivate "Directory of Services"
+"Case Management System" -> Triage: Search resluts displayed
+deactivate "Case Management System"
+@enduml
+</plantuml>
 
 ## Search DoS without Clinical Triage System 
 

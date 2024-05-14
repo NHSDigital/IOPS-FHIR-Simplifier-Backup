@@ -1,4 +1,4 @@
 - name: Index
   filename: Index.page.md
-- name: SDC
-  filename: SDC.page.md
+- name: IHE Structured Data Capture
+  filename: IHE-Structured-Data-Capture.page.md

@@ -24,18 +24,20 @@ actor "Patient Proxy Requester" as patient
 actor "Patient Identity Source" as source
 actor "Patient Proxy Authoriser" as GP
 
-
-patient -> patient : Patient Proxy completes proxy request
-patient -> source: Completed Patient Proxy Request Form
+opt
+note over patient: May use [PCC-UK-3] to retrieve **Patient Proxy Request** Form Definition
+end
+patient -> patient : Patient Proxy completes **Patient Proxy Request** Form
+patient -> source: Send Completed **Patient Proxy Request** Form [PCC-UK-1]
 source --> patient: Acknowledgement
 source -> source: Create Consent
 source -> source: Share Consent
 opt Needs Validating
-source -> GP: Request Patient Proxy Request is validated
-GP -> source: Retrieve Patient Proxy Request
-GP -> source: accept or reject Patient Proxy Request
+source -> GP: Request **Patient Proxy Request** is validated [PCC-UK-2]
+GP -> source: Retrieve **Patient Proxy Request**
+GP -> source: accept or reject **Patient Proxy Request**
 else 
-source -> source: automatically accept Patient Proxy Request 
+source -> source: automatically accept **Patient Proxy Request** [PCC-UK-2]
 end
 source -> source: Update Consent
 @enduml
@@ -53,54 +55,6 @@ TODO
 #### Post-conditions:
 
 TODO
-
-
-<plantuml>
-@startuml
-
-
-state Consentstatus as "Consent.status (Proxy Request)" {
-}
-
-state Taskstatus as "Tasks.status (Proxy Validation Request)" {
-}
-
-
-
-[*] --> Consentstatus.proposed
-Consentstatus.proposed --> Taskstatus.requested
-Taskstatus.requested --> Taskstatus.accepted: internal provider Workflow
-Taskstatus.requested --> Taskstatus.rejected
-note on link
-  This may be for several reasons such as
-  the requested performer can't verify
-  the relationship
-end note
-Taskstatus.accepted --> Taskstatus.inprogress: internal provider Workflow
-Taskstatus.accepted --> Taskstatus.cancelled
-Taskstatus.inprogress --> Taskstatus.completed
-Taskstatus.inprogress --> Taskstatus.cancelled
-Taskstatus.requested --> Taskstatus.cancelled
-Taskstatus.completed --> Consentstatus.active
-Taskstatus.rejected --> Taskstatus.requested
-note on link
-  The Task is amended, maybe
-  edited to add a new performer
-end note
-Taskstatus.rejected --> Consentstatus.rejected
-Taskstatus.cancelled --> [*]
-Consentstatus.active --> RelatedPerson
-note on link
-  This is an implied action based
-  on the change of state
-end note
-Consentstatus.rejected --> [*]
-RelatedPerson --> [*]
-
-RelatedPerson : [created or updated]
-
-@endum
-</plantuml>
 
 
 

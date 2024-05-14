@@ -35,7 +35,13 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 <div id="Examples" class="tabcontent">
-    <h4>Examples</h4>   
+    <h4>Examples</h4>
+    <b>UKCore-Specimen Snippets</b> - An example to illustrate how each supported data element may be populated.<br>{{pagelink:R4SnippetsSpecimen}}<br><br>
+    <b>Bundle Examples</b> - Various examples to illustrate the use of <code>UKCore-Specimen</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cRequest}}<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReport}}<br>{{pagelink:R4BundleExampleUrineMCSReport}}<br><br>
+    <b>UK Core Examples</b> - Examples from the UK Core Implementation Guide.<br>
+    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-Specimen-BloodSpecimen?current">Example UKCore-Specimen-BloodSpecimen-Example</a><br>
+    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-Specimen-Extension-SpecialHandling?current">Example UKCore-Extension-SpecialHandling-Example</a><br>
+    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-Specimen-Extension-BodySiteReference?current">Example UKCore-Extension-BodySiteReference-Example</a><br><a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-Specimen-UrineSpecimen?current">Example UKCore-Specimen-UrineSpecimen-Example</a><br>
 </div>
 
 ### Additional Guidance

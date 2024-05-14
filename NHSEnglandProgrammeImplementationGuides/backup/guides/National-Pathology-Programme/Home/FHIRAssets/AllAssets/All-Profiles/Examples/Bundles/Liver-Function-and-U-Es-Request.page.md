@@ -22,7 +22,7 @@ Subject: Pathology-Bundle-LFT-UandE-Request-Example
     <br>
     <p>The following is a simplified logical data model that illustrates the key references between the FHIR profiles in the example message bundle. To aid clarity, not all of the references are shown. For a detailed description of the relationships between the FHIR profiles, and how they may be used, refer to {{pagelink:BuildContructPathologyRequestBundle}}.</p>
     <br>
-    {{render:path-data-model-LFT-UandE-Request-Example}}
+    {{render:path-data-model-LFT-UandE-request}}
 </div>
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}

@@ -41,7 +41,11 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 <div id="Examples" class="tabcontent">
-    <h4>Examples</h4>   
+    <h4>Examples</h4>
+    <b>UKCore-Observation-Lab Snippets</b> - An example to illustrate how each supported data element may be populated.<br>{{pagelink:R4SnippetsObservationTestResult}}<br><br>
+    <b>Bundle Examples</b> - Various examples to illustrate the use of <code>UKCore-Observation-Lab</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReport}}<br>{{pagelink:R4BundleExampleUrineMCSReport}}<br><br>
+    <b>UK Core Examples</b> - Examples from the UK Core Implementation Guide.<br>
+    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-Observation-Lab-RedCellCount?current">Example UKCore-Observation-Lab-RedCellCount-Example</a><br><a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-Observation-Lab-WhiteCellCount?current">Example UKCore-Observation-Lab-WhiteCellCount-Example</a><br>
 </div>
 
 ### Additional Guidance

@@ -2,6 +2,21 @@
 
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
+### Query for an HealthcareService with matching criteria
+
+<plantuml>
+@startuml
+actor       HealthcareProfessional       as Foo1
+participant    Client    as Foo2
+participant    Server    as Foo3    
+Foo2 -> Foo3 : Find appropriate HealthcareService QueryRequest
+Foo3 -> Foo2 : Find appropriate HealthcareService QueryResponse
+@enduml
+</plantuml>
+
+### Query for an available HealthcareService, Location, Schedule, Slot
+
+ABC
 
 ### Query for an FGM indicator
 
