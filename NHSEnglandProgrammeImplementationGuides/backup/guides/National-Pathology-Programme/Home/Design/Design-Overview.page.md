@@ -115,14 +115,14 @@ The following diagram shows the key relationships between each of the pathology 
 ### Design Approach
 The base FHIR R4 specification describes several methods of representing test reports and  [grouping observations](https://hl7.org/fhir/R4/observation.html#obsgrouping). The design approach that has been adopted as part of this implementation guide is summarised below:
 
-* <code>DiagnosticReport</code> contains the overall findings and clinical interpretation relating to one or more pathology tests.
-* Test results and test groups are defined as <code>Observations</code> (using distinct profiles) and are referenced from <code>DiagnosticReport</code> using <code>DiagnosticReport.result</code>.
-* <code>Observation.hasMember</code> relationships are used to link test result <code>Observations</code> to the associated test group <code>Observation</code>.
-* Multiple levels of test group <code>Observations</code> and test result <code>Observations</code> may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MCS) reports.
-* <code>ServiceRequest</code> is used to carry summary details relating to the test request that the test report was based on.
-* If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of <code>ServiceRequest</code> is required for each requested test or test group. <code>ServiceRequest.requisition</code> acts as a common identifier to link the requests.
-* The <code>Specimen.request</code> data element is used to reference the <code>ServiceRequest</code> that a specimen relates to. This should be used when a test was requested before the specimen was collected. 
-* It is also possible to link a <code>ServiceRequest</code> to a specimen using the <code>ServiceRequest.specimen</code> data element. This should be used when a test is requested and the specimen has already been collected.
+* `DiagnosticReport` contains the overall findings and clinical interpretation relating to one or more pathology tests.
+* Test results and test groups are defined as `Observations` (using distinct profiles) and are referenced from `DiagnosticReport` using `DiagnosticReport.result`.
+* `Observation.hasMember` relationships are used to link test result `Observations` to the associated test group `Observation`.
+* Multiple levels of test group `Observations` and test result `Observations` may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MCS) reports.
+* `ServiceRequest` is used to carry summary details relating to the test request that the test report was based on.
+* If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of `ServiceRequest` is required for each requested test or test group. `ServiceRequest.requisition` acts as a common identifier to link the requests.
+* The `Specimen.request` data element is used to reference the `ServiceRequest` that a specimen relates to. This should be used when a test was requested before the specimen was collected. 
+* It is also possible to link a `ServiceRequest` to a specimen using the `ServiceRequest.specimen` data element. This should be used when a test is requested and the specimen has already been collected.
 
 The following simplified data model illustrates the key aspects of this design approach for an example test report:
 
@@ -134,21 +134,21 @@ Further example test reports (with accompanying data models) are provided in the
 ### SNOMED CT Usage
 SNOMED CT concepts are used to populate the following key data elements in the FHIR profiles described in this implementation guide:
 
-* The <code>code</code> element of {{pagelink:R4DiagnosticReport}} <b>SHALL</b> be populated using the following fixed SNOMED CT record artifact concept and description:
+* The `code` element of {{pagelink:R4DiagnosticReport}} <b>SHALL</b> be populated using the following fixed SNOMED CT record artifact concept and description:
     * 721981007 | Diagnostic studies report
-* The <code>code</code> element of {{pagelink:R4ObservationTestResult}} <b>SHALL</b> be populated using one of the following:
+* The `code` element of {{pagelink:R4ObservationTestResult}} **SHALL** be populated using one of the following:
     * memberOf 1853551000000106 | PaLM (Pathology and Laboratory Medicine) observable entity simple reference set, OR
     * memberOf 999002881000000100 | PBCL (Pathology Bounded Code List) observables simple reference set
-* The <code>code</code> element of {{pagelink:R4ObservationTestGroup}} <b>SHALL</b> be populated using one of the following:
+* The `code` element of {{pagelink:R4ObservationTestGroup}} **SHALL** be populated using one of the following:
     * memberOf 1853561000000109 | PaLM (Pathology and Laboratory Medicine) procedure simple reference set, OR
     * if a Procedure concept from the above reference set cannot be identified, use a SNOMED CT procedure code taken from descendantOf 386053000 | Evaluation procedure (procedure), OR
     * if the two methods described above fail to identify a suitable code, then it is acceptable to use a local code representing the test group 
-* The <code>code</code> element of {{pagelink:R4ServiceRequest}} <b>SHALL</b> be populated using one of the following:
+* The `code` element of {{pagelink:R4ServiceRequest}} **SHALL** be populated using one of the following:
     * memberOf 1853561000000109 | PaLM (Pathology and Laboratory Medicine) procedure simple reference set, OR
     * if a Procedure concept from the above reference set cannot be identified, use a SNOMED CT procedure code taken from descendantOf 386053000 | Evaluation procedure (procedure), OR
     * if the two methods described above fail to identify a suitable code, then it is acceptable to use a local code representing the requested test or test group
-* The <code>type</code> element of {{pagelink:R4Specimen}} <b>SHALL</b> be populated using one of the following:
-    * descendantOf 105590001 | Substance (in which case <code>Specimen.collection.method</code> and <code>Specimen.collection.bodySite</code> <b>SHOULD</b> also be populated), OR
+* The `type` element of {{pagelink:R4Specimen}} **SHALL** be populated using one of the following:
+    * descendantOf 105590001 | Substance (in which case `Specimen.collection.method` and `Specimen.collection.bodySite` **SHOULD** also be populated), OR
     * descendantOf 49755003 | Morphologically abnormal structure, OR
     * descendantOf 123037004 | Body structure, OR
     * descendantOf 123038009 | Specimen, OR
@@ -163,7 +163,7 @@ The use of these aspects of SNOMED CT is illustrated in the following simplified
 Further information on the use of SNOMED CT for pathology reporting can be found on the  [Pathology Standards and Implementation website](https://digital.nhs.uk/services/pathology-standards-and-implementation/snomed-ct-for-pathology-reporting).
 
 ### Representation of Different Types of Test Results
-Laboratory test results are reported using a variety of forms. These are described below with supporting examples. Each example includes a link to a corresponding FHIR <code>Observation</code> example (all of the examples are also listed in the {{pagelink:R4Examples}}).
+Laboratory test results are reported using a variety of forms. These are described below with supporting examples. Each example includes a link to a corresponding FHIR `Observation` example (all of the examples are also listed in the {{pagelink:R4Examples}}).
 
 * **Quantitative Result:** the result is expressed as a number, usually with an associated unit of measure. Comparators may be used to indicate that the actual value is greater than or less than the stated value. A range of values may be reported instead of a single value. Examples include:
     * {{pagelink:R4ObservationAlbumin}}: 47 g/L
@@ -180,11 +180,11 @@ Laboratory test results are reported using a variety of forms. These are describ
 * **Narrative Result:** the result is presented as text, for example:
     * {{pagelink:R4ObservationAerobicBloodCulture}}: No growth detected after 5 days incubation
 
-The <code>Observation.value[x]</code> data element is used to represent the test result value. The <code>[x]</code> part of the element name is replaced with an appropriate data type, based on the type of result:
-* for <b>quantitative</b> results, <code>valueQuantity</code>, <code>valueRange</code> or <code>valueRatio</code> <b>SHOULD</b> be used
-* for <b>semi-quantitative</b> and <b>qualitative</b> results, <code>valueCodeable</code> <b>SHOULD</b> be used, with a suitable SNOMED CT concept, for example: <code>260385009</code> <code>Negative</code>
-* for <b>narrative</b> results, <code>valueString</code> <b>SHOULD</b> be used.
+The `Observation.value[x]` data element is used to represent the test result value. The `[x]` part of the element name is replaced with an appropriate data type, based on the type of result:
+* for **quantitative** results, `valueQuantity`, `valueRange` or `valueRatio` **SHOULD** be used
+* for **semi-quantitative** and **qualitative** results, `valueCodeable` **SHOULD** be used, with a suitable SNOMED CT concept, for example: `260385009` `Negative`
+* for **narrative** results, `valueString` **SHOULD** be used.
 
-The <code>Observation.interpretation</code> data element is used to provide a coded, categorical assessment of a test result value. The code is taken from the [ObservationInterpretationCodes]( https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/80843) FHIR value set. The associated test result value is usually <b>quantitative</b> and represented using <code>valueQuantity</code>, <code>valueRange</code> or <code>valueRatio</code> as described above.
+The `Observation.interpretation` data element is used to provide a coded, categorical assessment of a test result value. The code is taken from the [ObservationInterpretationCodes]( https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/80843) FHIR value set. The associated test result value is usually **quantitative** and represented using `valueQuantity`, `valueRange` or `valueRatio` as described above.
 
 Refer to the {{pagelink:R4ObservationTestResult}} profile definition for further information relating to the representation of test results.

@@ -6,5 +6,3 @@ issue: UKCore-AllergyIntolerance
 ---
 
 {{page:Home/Templates/Profile-Template.page.md}}
-
-swesdsdsd

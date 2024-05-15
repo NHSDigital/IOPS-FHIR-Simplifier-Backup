@@ -4,17 +4,19 @@ topic: R4ObservationTestGroup
 ## Profile: UKCore-Observation-Group-Lab (Test Group)
 
 ### Summary
-A set of related tests that are reported together, for example a Full Blood Count. Test groups are often referred to as batteries, panels or profiles. The test group is represented as a FHIR <code>Observation</code> with references to other <code>Observations</code> that contain the associated test results. The references are defined using <code>Observation.hasMember</code>. 
+A set of related tests that are reported together, for example a Full Blood Count. Test groups are often referred to as batteries, panels or profiles. 
 
-<code>Observation.code</code> is used to represent the clinical code and name of the test group. 
+The test group is represented using `UKCore-Observation-Group-Lab` with references to instances of `UKCore-Observation-Lab` that contain the associated test results. The references are defined using `UKCore-Observation-Group-Lab.hasMember`. 
 
-<code>Observation.value[x\]</code> is not present as the test group itself does not carry a test result. 
+`UKCore-Observation-Group-Lab.code` is used to represent the clinical code and name of the test group. 
+
+`UKCore-Observation-Group-Lab.value[x]` is not used as the test group does not carry a test result. 
 
 Refer to the {{pagelink:R4ObservationTestResult}} profile definition and the {{pagelink:DesignOverview}} section for further information.
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
-* R4 UK Core Profile (Lab): [UKCore-Observation-Group-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-group-lab?current)
+* R4 UK Core Profile: [UKCore-Observation-Group-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-group-lab?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
@@ -49,9 +51,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 ### Additional Guidance
-The following table includes additional guidance that should be followed when implementing the `UKCore-Observation-Group-Lab` profile. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
-
-An example of how each supported data element may be populated is provided in {{pagelink:R4SnippetsObservationTestGroup}}.
+The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-Observation-Group-Lab` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-group-lab?current).
 
 ---
 

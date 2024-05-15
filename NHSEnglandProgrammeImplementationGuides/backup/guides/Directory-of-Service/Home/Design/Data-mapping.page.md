@@ -2,7 +2,21 @@
     
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
-An [xyz] indicator as been modelled around a FHIR R4 Flag. Refer to {{pagelink:Home/FHIRAssets/Profiles/UKCore-Flag.page.md}} profile for further guidance. 
+### FHIR Data Model
+
+<plantuml>
+@startuml
+HealthcareService "1" *-- "many" Schedule : contains
+Schedule "1" *-- "many" Slot : contains
+HealthcareService "1" *-- "many" Locations : contains
+HealthcareService "1" *-- "1" Organization : contains
+Organization "1" *-- "1" OrganizationAffiliation : contains
+@enduml
+</plantuml>
+
+BELOW TO BE EDITED
+
+An [xyz] indicator as been modelled around a FHIR R4 HealthcareService.
 
 
 <!-- should be a prooper html table not markdown due to styling and accessibility -->

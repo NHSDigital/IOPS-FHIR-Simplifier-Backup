@@ -11,10 +11,10 @@ expand: yes
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
-  1. An example to illustrate a Cardiology department in a hospital 
+  1. An example to illustrate a clinical unit within a hospital 
 <h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/Examples/Profile-Examples/Example-UKCore-Location-CardiologySJUH.page.md?version=current' target="_blank">Example UKCore-Location-CardiologySJUH</a></h4>
 <br>
- 2. An example to illustrate a general practice nurse clinic location
+ 2. An example to illustrate a GP clinic location
 <h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/Examples/Profile-Examples/Example-UKCore-Location-GeneralPracticeNurseClinic.page.md?version=current' target="_blank">Example UKCore-Location-GeneralPracticeNurseClinic</a></h4>
 </div>
 
