@@ -11,10 +11,10 @@ issue: UKCore-Location
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
-  <b>SJUH Location</b> -  An example to illustrate a Cardiology department in a hospital<br/>
+  <b>SJUH Location</b> -  An example to illustrate a clinical unit within a hospital<br/>
 {{pagelink:Example-UKCore-Location-CardiologySJUH}}
  <br><br>
- <b>General Practice Nurse Clinic location</b> - An example to illustrate a General Practice Nurse Clinic<br/>
+ <b>General Practice Nurse Clinic location</b> - An example to illustrate a GP clinic location<br/>
  {{pagelink:Example-UKCore-Location-GeneralPracticeNurseClinic}}
 </div>
 </nocheck>
