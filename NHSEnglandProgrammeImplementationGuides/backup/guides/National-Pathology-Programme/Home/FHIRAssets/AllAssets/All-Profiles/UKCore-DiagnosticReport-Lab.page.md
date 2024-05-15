@@ -6,13 +6,13 @@ topic: R4DiagnosticReport
 ### Summary
 A test report, containing the overall findings and clinical interpretation relating to one or more pathology tests. The report may reference individual test results, test groups or a combination of these.
 
-Test results and test groups are defined as FHIR <code>Observations</code> and are referenced from <code>DiagnosticReport</code> using <code>DiagnosticReport.result</code>.
+Test results and test groups are defined as FHIR `Observations` (`UKCore-Observation-Lab` and `UKCore-Observation-Group-Lab` respectively) and are referenced from `UKCore-DiagnosticReport-Lab` using `UKCore-DiagnosticReport-Lab.result`.
 
 For information on how test results and test groups are represented, refer to the profile descriptions for {{pagelink:R4ObservationTestResult}} and {{pagelink:R4ObservationTestGroup}}. 
 
 ### Resource and Profile Links
 * R4 Resource (Base): [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html)
-* R4 UK Core Profile (Lab): [UKCore-DiagnosticReport-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-diagnosticreport-lab?current)
+* R4 UK Core Profile: [UKCore-DiagnosticReport-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-diagnosticreport-lab?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
@@ -46,10 +46,8 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
     <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport?current">Example UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport</a><br>
 </div>
 
-
-
 ### Additional Guidance
-The following table includes additional guidance that should be followed when implementing the `UKCore-DiagnosticReport-Lab` profile. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
+The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-DiagnosticReport-Lab` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-diagnosticreport-lab?current).
 
 ---
 

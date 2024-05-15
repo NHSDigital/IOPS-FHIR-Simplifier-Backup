@@ -4,17 +4,17 @@ topic: R4ObservationTestResult
 ## Profile: UKCore-Observation-Lab (Test Result)
 
 ### Summary
-An individual test result, defined as a FHIR <code>Observation</code>. The test result may be for a single test or it may form part of a test group such as a Full Blood Count.
+An individual test result, represented using `UKCore-Observation-Lab`. The test result may be for a single test or it may form part of a test group such as a Full Blood Count.
 
-<code>Observation.code</code> is used to represent the clinical code and name of the test.
+`UKCore-Observation-Lab.code` is used to represent the clinical code and name of the test.
 
-<code>Observation.hasMember</code> is only used for <code>Observations</code> that represent test groups and is therefore out of scope for test result <code>Observations</code>. 
+`UKCore-Observation-Lab.hasMember` is not used as the profile represents a test result rather than a test group. Where an `Observation` is being used to represent a test group (with `hasMember` references), then `UKCore-Observation-Group-Lab` should be used instead.
 
 Refer to the {{pagelink:R4ObservationTestGroup}} profile definition and the {{pagelink:DesignOverview}} section for further information.
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
-* R4 UK Core Profile (Lab): [UKCore-Observation-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-lab?current)
+* R4 UK Core Profile: [UKCore-Observation-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-lab?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
@@ -49,9 +49,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 ### Additional Guidance
-The following table includes additional guidance that should be followed when implementing the `UKCore-Observation-Lab` profile. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
-
-An example of how each supported data element may be populated is provided in {{pagelink:R4SnippetsObservationTestResult}}.
+The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-Observation-Lab` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-lab?current).
 
 ---
 

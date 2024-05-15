@@ -5,20 +5,20 @@ topic: ReleaseNotes
 
 ### v0.1.6 (TBC)
 
+* Updated the Additional Guidance in the FHIR {{pagelink:FHIRAssetsR4Profiles}} to align with the newly published [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current), version 2.0.0 - STU2 Sequence.
+* Added a new {{pagelink:DataMapping}} page (under the Design menu bar item). This provides a set of data mappings between the FHIR profiles that are referenced by this implementation guide and the PMIP EDIFACT (NHS003) messaging specification.   
 * Updated the {{pagelink:FHIRAssetsR4CodeSystems}} and {{pagelink:FHIRAssetsR4ValueSets}} pages (under the FHIR Assets menu bar item).
-* Added a new {{pagelink:DataMapping}} page (under the Design menu bar item). This provides a set of data mappings between the FHIR profiles that are referenced by this implementation guide and the PMIP EDIFACT (NHS003) messaging specification.
-* Updated the link to the latest version of the UK Core Implementation Guide.
 
 ### v0.1.5 (01/03/2024)
 
 * Updated the examples in the {{pagelink:R4Examples}} to correct various validation errors.
-* Updated the {{pagelink:DesignOverview}} page to include a description of how various types of test result (i.e. quantitative, semi-quantitative, qualitative, quantitative with an interpretation, narrative) should be represented and added corresponding <code>Observation</code> examples to the {{pagelink:R4Examples}}.
+* Updated the {{pagelink:DesignOverview}} page to include a description of how various types of test result (i.e. quantitative, semi-quantitative, qualitative, quantitative with an interpretation, narrative) should be represented and added corresponding `Observation` examples to the {{pagelink:R4Examples}}.
 * Included changes to the pathology related profiles that were made as part of the [HL7 UK STU2 Ballot](https://confluence.hl7.org/pages/viewpage.action?pageId=175611042) process.
 
 ### v0.1.4 (29/12/2023)
 
 * Removed the content from the {{pagelink:Transport}} and {{pagelink:AcknowledgementFramework}} pages (under the Design menu bar item). Awaiting confirmation of what data exchange and acknowledgement approach will be adopted for FHIR UK Core R4 based interactions between pathology laboratory systems and GP EPR systems.
-* Added the following new <code>Bundle</code> examples:
+* Added the following new `Bundle` examples:
     * {{pagelink:R4BundleExampleLipidsandHbA1cRequest}}
     * {{pagelink:R4BundleExampleLipidsandHbA1cReport}}
 * Added an overview of the Implementation Guide Structure to the {{pagelink:Home}} page.
@@ -33,17 +33,17 @@ topic: ReleaseNotes
 ### v0.1.2 (30/10/2023)
 
 * Removed all FHIR STU3 related content, in line with the recent [announcement](https://simplifier.net/organization/hl7uk/news/151) from the NHS England Interoperability Standards Team that CareConnect has been deprecated and all development on the CareConnect FHIR STU3 assets has ceased.
-* Updated the examples in the {{pagelink:R4Examples}} to include a populated <code>category</code> element for <code>UKCore-DiagnosticReport-Lab</code>, <code>UKCore-Observation-Group-Lab</code> and <code>UKCore-Observation-Lab</code>.
+* Updated the examples in the {{pagelink:R4Examples}} to include a populated `category` element for `UKCore-DiagnosticReport-Lab`, `UKCore-Observation-Group-Lab` and `UKCore-Observation-Lab`.
 * Updated the structure of the implementation guide to align with the latest NHS England FHIR Implementation Guide template. 
 
 ### v0.1.1 (04/10/2023)
 
 * Updated to incorporate a new set of laboratory specific FHIR R4 derived profiles, as defined in the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current) (currently STU2):
-    * <code>UKCore-DiagnosticReport-Lab</code>
-    * <code>UKCore-Observation-Group-Lab</code>
-    * <code>UKCore-Observation-Lab</code>
-    * <code>UKCore-ServiceRequest-Lab</code> 
-    * Note: <code>UKCore-Specimen</code> does not have a pathology specific derived profile.
+    * `UKCore-DiagnosticReport-Lab`
+    * `UKCore-Observation-Group-Lab`
+    * `UKCore-Observation-Lab`
+    * `UKCore-ServiceRequest-Lab` 
+    * Note: `UKCore-Specimen` does not have a pathology specific derived profile.
 * Updated to use the NHS England FHIR Implementation Guide template. 
 
 ### v0.1.0 (17/04/2023)

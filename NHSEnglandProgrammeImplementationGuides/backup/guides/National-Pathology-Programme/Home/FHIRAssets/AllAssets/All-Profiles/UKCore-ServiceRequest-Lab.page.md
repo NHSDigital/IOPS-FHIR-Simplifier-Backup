@@ -6,13 +6,13 @@ topic: R4ServiceRequest
 ### Summary
 The test request that a test report is based on.
 
-The associated test report is represented as a FHIR <code>DiagnosticReport</code> and is linked to <code>ServiceRequest</code> using <code>DiagnosticReport.basedOn</code>. Refer to the profile description for {{pagelink:R4DiagnosticReport}} for further information.
+The associated test report is represented using `UKCore-DiagnosticReport-Lab` and is linked to `UKCore-ServiceRequest-Lab` using `UKCore-DiagnosticReport-Lab.basedOn`. Refer to the profile description for {{pagelink:R4DiagnosticReport}} for further information.
 
-If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of <code>ServiceRequest</code> is required for each requested test or test group. <code>ServiceRequest.requisition</code> acts as a common identifier to link the requests.
+If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of `UKCore-ServiceRequest-Lab` is required for each requested test or test group. `UKCore-ServiceRequest-Lab.requisition` acts as a common identifier to link the requests.
 
 ### Resource and Profile Links
 * R4 Resource (Base): [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html)
-* R4 UK Core Profile (Lab): [UKCore-ServiceRequest-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-servicerequest-lab?current)
+* R4 UK Core Profile: [UKCore-ServiceRequest-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-servicerequest-lab?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
@@ -47,9 +47,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 ### Additional Guidance
-The following table includes additional guidance that should be followed when implementing the `UKCore-ServiceRequest-Lab` profile. It should be used in conjunction with the profile definition included above. Refer to {{pagelink:ProfileDescriptions}} for a definition of the table column headings.
-
-An example of how each supported data element may be populated is provided in {{pagelink:R4SnippetsServiceRequest}}.
+The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-ServiceRequest-Lab` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-servicerequest-lab?current).
 
 ---
 

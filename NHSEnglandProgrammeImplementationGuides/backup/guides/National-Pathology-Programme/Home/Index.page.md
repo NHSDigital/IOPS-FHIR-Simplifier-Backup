@@ -11,7 +11,7 @@ specifications that meet your requirements
 ### Introduction
 This implementation guide and the HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4 assets that it references define a specification to enable the exchange of pathology laboratory data.
 
-The implementation guide has been created by NHS England and forms part of the [NHS England Programme Implementation Guides](https://simplifier.net/NHS-England-Programme-Implementation-Guides/~guides) project on Simplifier<sup>&reg;</sup>. The profiles that this implementation guide references are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory/home?version=current), currently STU2.
+The implementation guide has been created by NHS England and forms part of the [NHS England Programme Implementation Guides](https://simplifier.net/NHS-England-Programme-Implementation-Guides/~guides) project on Simplifier<sup>&reg;</sup>. The profiles that this implementation guide references are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current), version 2.0.0 - STU2 Sequence.
 
 For the implementation guide version history, see {{pagelink:ReleaseNotes}}.
 
@@ -68,8 +68,8 @@ This guide is divided into the following sections and pages which are accessible
     * {{pagelink:ErrorHandling}} (TBC): This page will describe any error handling that will be used as part of this implementation guide.
     * {{pagelink:AcknowledgementFramework}} (TBC): This page will describe the acknowledge framework that will be used as part of this implementation guide.
 * Build:
-    * {{pagelink:BuildContructPathologyRequestBundle}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR <code>Bundle</code> for a pathology test request. 
-    * {{pagelink:BuildContructPathologyReportBundle}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR <code>Bundle</code> for a pathology test report. 
+    * {{pagelink:BuildContructPathologyRequestBundle}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR `Bundle` for a pathology test request. 
+    * {{pagelink:BuildContructPathologyReportBundle}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR `Bundle` for a pathology test report. 
 * FHIR Assets:
     * {{pagelink:FHIRAssetsR4Profiles}}: Describes the FHIR profiles that are referenced by this implementation guide.
     * {{pagelink:FHIRAssetsR4CodeSystems}}: Describes any new CodeSystems that have been developed for use as part of this implementation guide.
@@ -92,7 +92,7 @@ Refer to the following related implementation guidance:
 			<!-- UK Core -->
             <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
                 <article class="nhsd-m-card">
-                    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2?version=1.1.3" class="nhsd-a-box-link "
+                    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2?version=2.0.0" class="nhsd-a-box-link "
                         aria-label="Read the UK Core Implementation Guide">
                         <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
                             <div class="nhsd-m-card__content_container">
