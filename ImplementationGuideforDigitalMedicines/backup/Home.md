@@ -7,7 +7,7 @@
 The contents of this guidance have been authored by NHS England with the support of NHS Trusts, software suppliers, Clinical Commissioning Groups and Healthcare professionals across the United Kingdom.
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note</strong>: The majority of the FHIR Assets referenced within this implementation guide are now part of <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home">UK Core</a>. Implementation guidance within this publication is supplementary to that published within UK Core. <br/><br/>If you are specifically looking for <strong>dose syntax guidance</strong> then find it under the <a href="ElementDosage">FHIR Assets | Element: Dosage</a> menu.
+    <strong>Note</strong>: The majority of the FHIR Assets referenced within this implementation guide are now part of <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home">UK Core</a>. Implementation guidance within this publication is supplementary to that published within UK Core. <br/><br/>If you are specifically looking for <strong>dose syntax guidance</strong> then find it under the <a href="ElementDosage?version=current">FHIR Assets | Element: Dosage</a> menu.
 </div>
 
 If you are brand new here, it is recommended you first read the Introduction.

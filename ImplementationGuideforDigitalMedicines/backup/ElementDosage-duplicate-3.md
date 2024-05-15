@@ -1,6 +1,6 @@
 # {{page-title}}
 
-The FHIR `Dosage` element is complex but essential to achieve medicines interoperability. Extensive implementation guidance with numerous clinically appropriate examples are documented within this guide.
+The FHIR `Dosage` element is complex but essential to achieve medicines interoperability. Extensive implementation guidance with numerous clinically appropriate [examples](Examples?version=current) are documented within this guide.
 
 <!--// start of code snippet -->
 <div class="nhsd-!t-margin-bottom-6">
@@ -24,5 +24,15 @@ The FHIR `Dosage` element is complex but essential to achieve medicines interope
   </div>
 </div>
 <!--// end of code snippet -->
+
+## Implementation guidance
+
+Implementation guidance follows for each data item within the Dosage structure, in the order in which they are shown in the above treeview.
+
+### Use of synonyms
+
+In most instances it is anticipated that the UK Preferred term should be the term applied to SNOMED CT concepts However for some cases, for example the anatomically correct SNOMED-CT term may not be easily understood by the patient or clinician, the use of a synonym may be preferred. 
+
+Guidance for using terms that are not preferred terms is available within the published document [Guidance on the use of CodeableConcept.](https://developer.nhs.uk/apis/gpconnect-1-2-0/pages/accessrecord_structured/guidance-on-the-population-of-codeableconcept.pdf)
 
 ---
