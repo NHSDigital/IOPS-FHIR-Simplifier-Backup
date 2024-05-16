@@ -2,8 +2,7 @@
 topic: R4BundleExampleGTTRequest
 subject: Pathology-Bundle-GTT-Request-Example
 ---
-### PATH-R4-13: R4 Bundle Example - Glucose Tolerance Test (GTT) Request
-
+### PATH-R4-13: Bundle Example - Glucose Tolerance Test (GTT) Request
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

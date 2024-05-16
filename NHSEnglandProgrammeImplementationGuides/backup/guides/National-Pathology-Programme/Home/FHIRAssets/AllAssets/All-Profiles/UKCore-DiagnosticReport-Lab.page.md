@@ -6,7 +6,7 @@ topic: R4DiagnosticReport
 ### Summary
 A test report, containing the overall findings and clinical interpretation relating to one or more pathology tests. The report may reference individual test results, test groups or a combination of these.
 
-Test results and test groups are defined as FHIR `Observations` (`UKCore-Observation-Lab` and `UKCore-Observation-Group-Lab` respectively) and are referenced from `UKCore-DiagnosticReport-Lab` using `UKCore-DiagnosticReport-Lab.result`.
+Test results and test groups are defined as FHIR `Observations` (using the `UKCore-Observation-Lab` and `UKCore-Observation-Group-Lab` profiles respectively) and are referenced from `UKCore-DiagnosticReport-Lab` using `UKCore-DiagnosticReport-Lab.result`.
 
 For information on how test results and test groups are represented, refer to the profile descriptions for {{pagelink:R4ObservationTestResult}} and {{pagelink:R4ObservationTestGroup}}. 
 
@@ -40,10 +40,10 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 
 <div id="Examples" class="tabcontent">
     <h4>Examples</h4>
-    <b>UKCore-DiagnosticReport-Lab Snippets</b> - An example to illustrate how each supported data element may be populated.<br>{{pagelink:R4SnippetsDiagnosticReport}}<br><br>
-    <b>Bundle Examples</b> - Various examples to illustrate the use of <code>UKCore-DiagnosticReport-Lab</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReport}}<br>{{pagelink:R4BundleExampleUrineMCSReport}}<br><br>
+    <b>UKCore-DiagnosticReport-Lab Snippets</b> - An example to illustrate how each supported data element in <code>UKCore-DiagnosticReport-Lab</code> may be populated.<br>{{pagelink:R4SnippetsDiagnosticReport}}<br><br>
+    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-DiagnosticReport-Lab</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReport}}<br>{{pagelink:R4BundleExampleUrineMCSReport}}<br><br>
     <b>UK Core Example</b> - An example from the UK Core Implementation Guide.<br>
-    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport?current">Example UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport</a><br>
+    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport?current">UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport</a><br>
 </div>
 
 ### Additional Guidance
@@ -95,8 +95,13 @@ This **SHALL** be populated with the following fixed value:
 
 ---
 
+### `issued`
+The date and time that the test report was issued.
+
+---
+
 ### `result`
-Reference(s) to the results included in the test report. This may contain references to individual test results, test groups or a combination of these. Test results and test groups are defined as `Observations`.
+Reference(s) to the results included in the test report. This may contain references to individual test results, test groups or a combination of these. Test results and test groups are defined as `Observations` (using the `UKCore-Observation-Lab` and `UKCore-Observation-Group-Lab` profiles respectively).
 
 Test results which are part of a test group will not be referenced by this element; the reference will be to the test group which will in turn reference the associated test results. Refer to the {{pagelink:DesignOverview}} section for further information.
 
@@ -109,190 +114,3 @@ A clinical interpretation/summary of the test results in a text format.
 
 ### `conclusionCode`
 A coded finding of the test report.
-
----
-
-### ** Previous Tabular Format **
-
-<table class="regular">
-    <thead>
-        <tr>
-            <th width="15%">Element Name</th>
-            <th width="10%">Profile Cardinality</th>
-            <th width="10%">Domain Cardinality</th>
-            <th width="10%">Domain Optionality</th>
-            <th width="10%">Type</th>
-            <th width="45%">Definition, Constraints and Notes</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td>0..1</td>
-            <td><code>1..1</code></td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#id">id</a></td>
-            <td>The logical identifier for the resource instance.</td>
-        </tr>
-        <tr>
-            <td>meta.profile</td>
-            <td>0..*</td>
-            <td><code>1..1</code></td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-            <td>The canonical URL for the <code>UKCore-DiagnosticReport-Lab</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab</code></td>
-        </tr>
-        <tr>
-            <td>identifier</td>
-            <td>0..*</td>
-            <td><code>1..*</code></td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
-            <td>This <b>SHALL</b> be populated with a globally unique and persistent identifier (that is, it doesn’t change between requests and is therefore stored with the source data). This <b>SHALL</b> be scoped by a provider specific namespace for the identifier.<br><br>Where consuming systems are integrating data from this resource to their local system, they <b>SHALL</b> also persist this identifier at the same time.</td>
-        </tr>
-        <tr>
-            <td>basedOn</td>
-            <td>0..*</td>
-            <td>0..*</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference to the <code>ServiceRequest</code> that contains details of the test request that was made. Where present this may include details of who requested the tests and why the test was requested.<br><br>As currently test requests are not submitted in a FHIR format this is not the original request but it is used as a container to hold details that were present in the original request.</td>
-        </tr>
-        <tr>
-            <td>status</td>
-            <td>1..1</td>
-            <td>1..1</td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
-            <td>The status of the test report. This <b>SHALL</b> be populated as follows: 
-                <ul>
-                    <li><code>partial</code>: when the report is issued on an initial, interim or preliminary basis, for example because some of the requested tests have not yet completed</li>
-                    <li><code>final</code>: when the report is completed.</li>
-                    <li><code>unknown</code>: when the status is unable to be determined</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>category</td>
-            <td>1..*</td>
-            <td>1..*</td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>The general type of test report. This <b>SHALL</b> be populated with a fixed value of category code <code>LAB</code> for <code>Laboratory</code>.<br><br>If required, additional category codes <b>MAY</b> also be included.</td>
-        </tr>
-        <tr>
-            <td>code</td>
-            <td>1..1</td>
-            <td>1..1</td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>This <b>SHALL</b> be populated with a fixed value of SNOMED CT ConceptID <code>721981007</code> for <code>Diagnostic studies report</code>.<br><br><b>Note: </b>The clinical code and name of a test result or a test group is defined in the <code>code</code> element of the relevant <code>Observation</code> resource.</td>
-        </tr>
-        <tr>
-            <td>subject</td>
-            <td>1..1</td>
-            <td>1..1</td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference to the subject that the test report relates to. This is usually (but not always) a <code>Patient</code>.</td>
-        </tr>
-        <tr>
-            <td>issued</td>
-            <td>0..1</td>
-            <td><code>1..1</code></td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#instant">instant</a></td>
-            <td>The date and time that the test report was issued.</td>
-        </tr>
-        <tr>
-            <td>performer</td>
-            <td>0..*</td>
-            <td>0..*</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference to the <code>Organization</code>, <code>Practitioner</code> or <code>PractitionerRole</code> that produced the test report.</td>
-        </tr>
-        <tr>
-            <td>specimen</td>
-            <td>0..*</td>
-            <td>0..*</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference(s) to the <code>Specimen(s)</code> used for testing.</td>
-        </tr>
-        <tr>
-            <td>result</td>
-            <td>0..*</td>
-            <td>0..*</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference(s) to the results included in the test report. This may contain references to individual test results, test groups or a combination of these. Test results and test groups are defined as <code>Observations</code>.<br><br>Test results which are part of a test group will not be referenced by this element; the reference will be to the test group which will in turn reference the associated test results. Refer to the {{pagelink:DesignOverview}} for further information.</td>
-        </tr>
-            <tr>
-            <td>conclusion</td>
-            <td>0..1</td>
-            <td>0..1</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
-            <td>A clinical interpretation/summary of the test results in a text format.<br><br>Notes may be captured at a number of levels within a test report. There may also be notes related to the specimen, test group or individual test result. It is the consuming systems responsibility to make sure all relevant notes are displayed to the user.</td>
-        </tr>
-        <tr>
-            <td>conclusionCode</td>
-            <td>0..*</td>
-            <td>0..*</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>A coded finding of the test report. Produced by the organisation that performed the tests.</td>
-        </tr>
-        <tr>
-            <td>encounter</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>effective[x]</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a> | <a href="https://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>resultsInterpreter</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>imagingStudy</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>media</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/backboneelement.html">BackboneElement</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>presentedForm</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>    
-    </tbody>
-</table>
-
-<br>

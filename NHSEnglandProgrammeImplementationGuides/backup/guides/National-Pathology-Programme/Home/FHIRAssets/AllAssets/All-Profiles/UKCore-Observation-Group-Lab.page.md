@@ -44,10 +44,10 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 
 <div id="Examples" class="tabcontent">
     <h4>Examples</h4>
-    <b>UKCore-Observation-Group-Lab Snippets</b> - An example to illustrate how each supported data element may be populated.<br>{{pagelink:R4SnippetsObservationTestGroup}}<br><br>
-    <b>Bundle Examples</b> - Various examples to illustrate the use of <code>UKCore-Observation-Group-Lab</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReport}}<br>{{pagelink:R4BundleExampleUrineMCSReport}}<br><br>
+    <b>UKCore-Observation-Group-Lab Snippets</b> - An example to illustrate how each supported data element in <code>UKCore-Observation-Group-Lab</code> may be populated.<br>{{pagelink:R4SnippetsObservationTestGroup}}<br><br>
+    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-Observation-Group-Lab</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReport}}<br>{{pagelink:R4BundleExampleUrineMCSReport}}<br><br>
     <b>UK Core Example</b> - An example from the UK Core Implementation Guide.<br>
-    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/Examples/ExamplesIndex/Example-UKCore-Observation-Group-FullBloodCount?current">Example UKCore-Observation-Group-FullBloodCount-Example</a><br>
+    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/Examples/ExamplesIndex/Example-UKCore-Observation-Group-FullBloodCount?current">UKCore-Observation-Group-FullBloodCount-Example</a><br>
 </div>
 
 ### Additional Guidance
@@ -56,7 +56,13 @@ The following additional guidance **SHOULD** be applied when implementing this p
 ---
 
 ### `category`
-TBC
+The general type of test group. As a minimum, the following **SHOULD** be used for this profile:
+
+* `category.coding.system` = `http://terminology.hl7.org/CodeSystem/observation-category`
+* `category.coding.code` = `laboratory`
+* `category.coding.display` = `Laboratory`
+
+This element has an open slice, and **MAY** be used to differentiate the particular test speciality. This can be coded or provided as text only.
 
 ---
 
@@ -93,241 +99,6 @@ Comments relating to the test group.
 ---
 
 ### `hasMember`
-Reference(s) to the `Observation(s)` that make up the test group. This may contain references to single test results, test groups (which then reference further results) or a mixture of both.
+Reference(s) to the `Observation(s)` that make up the test group. This may contain references to single test results (using the `UKCore-Observation-Lab` profile), test groups (using the `UKCore-Observation-Group-Lab` profile) or a mixture of both.
 
 Multiple levels of test group `Observations` and test result `Observations` may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MCS) reports. Refer to the {{pagelink:DesignOverview}} section for further information.
-
----
-
-### ** Previous Tabular Format **
-
-<table class="regular">
-    <thead>
-        <tr>
-            <th width="15%">Element Name</th>
-            <th width="10%">Profile Cardinality</th>
-            <th width="10%">Domain Cardinality</th>
-            <th width="10%">Domain Optionality</th>
-            <th width="10%">Type</th>
-            <th width="45%">Definition, Constraints and Notes</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td>0..1</td>
-            <td><code>1..1</code></td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#id">id</a></td>
-            <td>The logical identifier for the resource instance.</td>
-        </tr>
-        <tr>
-            <td>meta.profile</td>
-            <td>0..*</td>
-            <td><code>1..1</code></td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-            <td>The canonical URL for the <code>UKCore-Observation-LabGroup</code> profile.<br><br>This <b>SHALL</b> be populated with the following fixed value:<br><code>https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab</code></td>
-        </tr>
-        <tr>
-            <td>identifier</td>
-            <td>0..*</td>
-            <td><code>1..*</code></td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
-            <td>This <b>SHALL</b> be populated with a globally unique and persistent identifier (that is, it doesn’t change between requests and is therefore stored with the source data). This <b>SHALL</b> be scoped by a provider specific namespace for the identifier.<br><br>Where consuming systems are integrating data from this resource to their local system, they <b>SHALL</b> also persist this identifier at the same time.</td>
-        </tr>
-        <tr>
-            <td>status</td>
-            <td>1..1</td>
-            <td>1..1</td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
-            <td>The status of the test group.</td>
-        </tr>
-        <tr>
-            <td>category</td>
-            <td>1..*</td>
-            <td>1..*</td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>A code that classifies the general type of test group. This <b>SHALL</b> be populated with a fixed value of category code <code>laboratory</code> for <code>Laboratory</code>.<br><br>If required, additional category codes <b>MAY</b> also be included.</td>
-        </tr>
-	    <tr>
-            <td>code</td>
-            <td>1..1</td>
-            <td>1..1</td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>The clinical code and name of the test group, for example: <code>26604007</code> <code>Full blood count</code><br><br>This <b>SHALL</b> be populated using one of the following:<br><br>
-                <ul>
-                    <li>memberOf 1853561000000109 | PaLM (Pathology and Laboratory Medicine) procedure simple reference set, OR</li>
-                	<li>if a Procedure concept from the above reference set cannot be identified, use a SNOMED CT procedure code taken from descendantOf 386053000 | Evaluation procedure (procedure), OR</li>
-                    <li>if the two methods described above fail to identify a suitable code, then it is acceptable to use a local code representing the test group</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>subject</td>
-            <td>0..1</td>
-            <td><code>1..1</code></td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference to the subject that the test group relates to. This is usually (but not always) a <code>Patient</code>.</td>
-        </tr>
-        <tr>
-            <td>effective[x]</td>
-            <td>0..1</td>
-            <td>0..1</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a> | <a href="https://hl7.org/fhir/R4/datatypes.html#Period">Period</a> | <a href="https://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a> | <a href="https://hl7.org/fhir/R4/datatypes.html#instant">instant</a></td>
-            <td>The date and time that the test group was performed.<br><br>The presence of <code>[x]</code> in an element name is used to indicate a <a href="https://hl7.org/fhir/R4/formats.html#choice"> choice of data type</a>. The <code>[x]</code> part of the element name is replaced with an appropriate data type, in title-case format e.g. <code>effectiveDateTime</code>.</td>
-        </tr>
-        <tr>
-            <td>issued</td>
-            <td>0..1</td>
-            <td><code>1..1</code></td>
-            <td>Mandatory</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#instant">instant</a></td>
-            <td>The date and time that the test group results were issued.</td>
-        </tr>    
-        <tr>
-            <td>performer</td>
-            <td>0..*</td>
-            <td>0..*</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference to the <code>Organization</code>, <code>Practitioner</code> or <code>PractitionerRole</code> that performed the test group.</td>
-        </tr>
-        <tr>
-            <td>note</td>
-            <td>0..*</td>
-            <td>0..*</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td>
-            <td>Comments relating to the test group.</td>
-        </tr>
-        <tr>
-            <td>specimen</td>
-            <td>0..1</td>
-            <td>0..1</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference to the <code>Specimen</code> that was used for testing.</td>
-        </tr>
-        <tr>
-            <td>hasMember</td>
-            <td>0..*</td>
-            <td>0..*</td>
-            <td>Required</td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Reference(s) to the <code>Observation(s)</code> that make up the test group. This may contain references to single test results, test groups (which then reference further results) or a mixture of both.<br><br>Multiple levels of test group <code>Observations</code> and test result <code>Observations</code> may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MCS) reports. Refer to the {{pagelink:DesignOverview}} for further information.</td>
-        </tr>
-        <tr>
-            <td>basedOn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>partOf</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>focus</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>encounter</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>value[x]</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Multiple</td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>dataAbsentReason</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>interpretation</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>bodysite</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>method</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>device</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>referenceRange</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/backboneelement.html">BackboneElement</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>derivedFrom</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/references.html#2.3.0">Reference</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>
-        <tr>
-            <td>component</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="https://hl7.org/fhir/R4/backboneelement.html">BackboneElement</a></td>
-            <td>Currently out of scope - element <b>SHALL NOT</b> be populated.</td>
-        </tr>     
-    </tbody>
-</table>
-
-<br>

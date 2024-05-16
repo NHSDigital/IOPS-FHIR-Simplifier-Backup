@@ -2,7 +2,7 @@
 topic: R4BundleExampleHbA1cReport
 subject: Pathology-Bundle-HbA1c-Report-Example
 ---
-### PATH-R4-02: R4 Bundle Example - Haemoglobin A1c (HbA1c) Report
+### PATH-R4-02: Bundle Example - Haemoglobin A1c (HbA1c) Report
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

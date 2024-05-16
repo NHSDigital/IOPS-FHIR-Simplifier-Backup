@@ -11,7 +11,7 @@ specifications that meet your requirements
 ### Introduction
 This implementation guide and the HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4 assets that it references define a specification to enable the exchange of pathology laboratory data.
 
-The implementation guide has been created by NHS England and forms part of the [NHS England Programme Implementation Guides](https://simplifier.net/NHS-England-Programme-Implementation-Guides/~guides) project on Simplifier<sup>&reg;</sup>. The profiles that this implementation guide references are derived from the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current), version 2.0.0 - STU2 Sequence.
+The implementation guide has been created by NHS England and forms part of the [NHS England Programme Implementation Guides](https://simplifier.net/NHS-England-Programme-Implementation-Guides/~guides) project on Simplifier<sup>&reg;</sup>. The profiles that this implementation guide references are derived from the [UK Core Implementation Guide (Version 2.0.0 - STU2 Sequence)](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current).
 
 For the implementation guide version history, see {{pagelink:ReleaseNotes}}.
 
@@ -40,7 +40,7 @@ In addition to the PaLM reference sets, the following additional SNOMED CT refer
 
 The [PBCL](https://isd.digital.nhs.uk/trud3/user/guest/group/0/pack/38) was originally a subset of Read v2 codes for use in laboratory to GP practice messaging. Semantically equivalent SNOMED CT PBCL concepts were created for migration to SNOMED CT in primary care, and these are contained in the PBCL observables simple reference set.
 
-The Read code based version of the PBCL is currently used in conjunction with the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification. The PMIP EDIFACT (NHS003) specification defines the data structure of pathology test reports that flow between laboratories and GP practices. The current GP practice related pathology data flows are described in detail in the {{pagelink:Background}} section of this implementation guide. Further information on the use of SNOMED CT for pathology reporting can be found on the  [Pathology Standards and Implementation website](https://digital.nhs.uk/services/pathology-standards-and-implementation/snomed-ct-for-pathology-reporting).
+The Read code based version of the PBCL is currently used in conjunction with the [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) messaging specification. The PMIP EDIFACT (NHS003) specification defines the data structure of pathology test reports that flow between laboratories and GP practices. The current GP practice related pathology data flows are described in detail in the {{pagelink:Background}} section of this implementation guide. Further information on the use of SNOMED CT for pathology reporting can be found on the  [Pathology Standards and Implementation](https://digital.nhs.uk/services/pathology-standards-and-implementation/snomed-ct-for-pathology-reporting) website.
 
 Together with this implementation guide, the PaLM and PBCL SNOMED CT reference sets form a group of related data products. These products will initially be used to replace PMIP EDIFACT (NHS003) and the PBCL. There is an urgent need to replace the use of PMIP EDIFACT (NHS003) due to the following fundamental limitations:
 

@@ -2,7 +2,7 @@
 topic: R4BundleExampleHBsAgReport
 subject: Pathology-Bundle-HBsAg-Report-Example
 ---
-### PATH-R4-06: R4 Bundle Example - Hepatitis B Surface Antigen (HBsAg) Report
+### PATH-R4-06: Bundle Example - Hepatitis B Surface Antigen (HBsAg) Report
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     
