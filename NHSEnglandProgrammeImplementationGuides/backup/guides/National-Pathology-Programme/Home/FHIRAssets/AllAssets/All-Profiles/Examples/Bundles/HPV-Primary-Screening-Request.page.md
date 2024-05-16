@@ -2,8 +2,7 @@
 topic: R4BundleExampleHPVRequest
 subject: Pathology-Bundle-HPV-Request-Example
 ---
-### PATH-R4-07: R4 Bundle Example - HPV Primary Screening Request
-
+### PATH-R4-07: Bundle Example - HPV Primary Screening Request
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

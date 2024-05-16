@@ -2,8 +2,7 @@
 topic: R4BundleExampleLipidsandHbA1cRequest
 subject: Pathology-Bundle-Lipids-HbA1c-Request-Example
 ---
-### PATH-R4-09: R4 Bundle Example - Lipids Profile and Haemoglobin A1c (HbA1c) Request
-
+### PATH-R4-09: Bundle Example - Lipids Profile and Haemoglobin A1c (HbA1c) Request
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
 

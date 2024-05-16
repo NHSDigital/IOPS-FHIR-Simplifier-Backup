@@ -3,9 +3,9 @@ topic: ReleaseNotes
 ---
 ## Release Notes
 
-### v0.1.6 (TBC)
+### v0.1.6 (17/05/2024)
 
-* Updated the Additional Guidance in the FHIR {{pagelink:FHIRAssetsR4Profiles}} to align with the newly published [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current), version 2.0.0 - STU2 Sequence.
+* Updated the Additional Guidance in the FHIR {{pagelink:FHIRAssetsR4Profiles}} to align with the recently published [UK Core Implementation Guide (Version 2.0.0 - STU2 Sequence)](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current).
 * Added a new {{pagelink:DataMapping}} page (under the Design menu bar item). This provides a set of data mappings between the FHIR profiles that are referenced by this implementation guide and the PMIP EDIFACT (NHS003) messaging specification.   
 * Updated the {{pagelink:FHIRAssetsR4CodeSystems}} and {{pagelink:FHIRAssetsR4ValueSets}} pages (under the FHIR Assets menu bar item).
 

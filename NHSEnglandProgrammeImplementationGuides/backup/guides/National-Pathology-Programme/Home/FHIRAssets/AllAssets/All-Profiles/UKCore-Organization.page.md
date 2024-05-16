@@ -19,6 +19,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
     <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
     <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
     <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+    <button class="tablinks" onclick="openTab(event, 'Examples')">Examples</button>
 </div>
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
@@ -36,5 +37,13 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
     {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization, hybrid}}
 </div>
 
+<div id="Examples" class="tabcontent">
+    <h4>Examples</h4>
+    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-Organization</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cRequest}}<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleFullBloodCountRequest}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleHBsAgRequest}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVRequest}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cRequest}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandERequest}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTRequest}}<br>{{pagelink:R4BundleExampleGTTReport}}<br>{{pagelink:R4BundleExampleUrineMCSRequest}}<br>{{pagelink:R4BundleExampleUrineMCSReport}}<br><br>
+    <b>UK Core Examples</b> - Examples from the UK Core Implementation Guide.<br>
+    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-Organization-LeedsTeachingHospital?current">UKCore-Organization-LeedsTeachingHospital-Example</a><br>
+    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-Organization-WhiteRoseMedicalCentre?current">UKCore-Organization-WhiteRoseMedicalCentre-Example</a><br>
+</div>
+
 ### Additional Guidance
-No additional guidance is currently provided for this profile within this implementation guide. However please refer to the Profile Specific Implementation Guidance for `UKCore-Organization` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-organization?current).
+No additional guidance is currently provided for this profile within this implementation guide. Please refer to the Profile Specific Implementation Guidance for `UKCore-Organization` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-organization?current).

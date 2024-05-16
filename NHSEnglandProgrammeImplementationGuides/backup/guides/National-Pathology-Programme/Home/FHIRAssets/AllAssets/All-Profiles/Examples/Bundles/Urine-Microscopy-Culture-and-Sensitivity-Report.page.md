@@ -2,7 +2,7 @@
 topic: R4BundleExampleUrineMCSReport
 subject: Pathology-Bundle-Urine-MCS-01-Report-Example
 ---
-### PATH-R4-16: R4 Bundle Example - Urine Microscopy, Culture and Sensitivity Report
+### PATH-R4-16: Bundle Example - Urine Microscopy, Culture and Sensitivity Report
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

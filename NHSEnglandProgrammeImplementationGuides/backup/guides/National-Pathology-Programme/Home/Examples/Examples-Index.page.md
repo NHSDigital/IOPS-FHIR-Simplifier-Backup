@@ -209,17 +209,17 @@ The snippet examples have been provided to illustrate how each supported data el
         </tr>
         <tr>
             <td>PATH-R4-27</td>
-            <td>{{pagelink:R4ObservationTestResult}}</td>
-            <td>Haematology</td>
-            <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestResult}} may be populated.</td>
-            <td>{{pagelink:R4SnippetsObservationTestResult}}</td>
-        </tr>
-        <tr>
-            <td>PATH-R4-28</td>
             <td>{{pagelink:R4ObservationTestGroup}}</td>
             <td>Haematology</td>
             <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestGroup}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestGroup}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-28</td>
+            <td>{{pagelink:R4ObservationTestResult}}</td>
+            <td>Haematology</td>
+            <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestResult}} may be populated.</td>
+            <td>{{pagelink:R4SnippetsObservationTestResult}}</td>
         </tr>
         <tr>
             <td>PATH-R4-29</td>

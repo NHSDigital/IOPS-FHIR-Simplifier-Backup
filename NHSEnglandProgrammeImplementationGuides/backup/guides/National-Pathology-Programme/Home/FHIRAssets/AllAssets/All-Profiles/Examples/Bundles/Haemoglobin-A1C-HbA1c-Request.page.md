@@ -2,7 +2,7 @@
 topic: R4BundleExampleHbA1cRequest
 subject: Pathology-Bundle-HbA1c-Request-Example
 ---
-### PATH-R4-01: R4 Bundle Example - Haemoglobin A1c (HbA1c) Request
+### PATH-R4-01: Bundle Example - Haemoglobin A1c (HbA1c) Request
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

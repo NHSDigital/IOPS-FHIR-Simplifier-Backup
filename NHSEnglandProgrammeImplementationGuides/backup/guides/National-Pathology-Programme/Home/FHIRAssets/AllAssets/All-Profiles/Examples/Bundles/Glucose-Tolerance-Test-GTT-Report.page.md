@@ -2,8 +2,7 @@
 topic: R4BundleExampleGTTReport
 subject: Pathology-Bundle-GTT-Report-Example
 ---
-### PATH-R4-14: R4 Bundle Example - Glucose Tolerance Test (GTT) Report
-
+### PATH-R4-14: Bundle Example - Glucose Tolerance Test (GTT) Report
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

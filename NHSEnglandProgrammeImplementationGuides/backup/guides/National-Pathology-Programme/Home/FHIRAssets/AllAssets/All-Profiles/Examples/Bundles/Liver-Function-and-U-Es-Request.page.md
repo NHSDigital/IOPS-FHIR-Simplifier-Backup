@@ -1,8 +1,8 @@
 ---
 topic: R4BundleExampleLFTandUandERequest
-Subject: Pathology-Bundle-LFT-UandE-Request-Example
+subject: Pathology-Bundle-LFT-UandE-Request-Example
 ---
-### PATH-R4-11: R4 Bundle Example - Liver Function Tests and Urea and Electrolytes Request
+### PATH-R4-11: Bundle Example - Liver Function Tests and Urea and Electrolytes Request
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

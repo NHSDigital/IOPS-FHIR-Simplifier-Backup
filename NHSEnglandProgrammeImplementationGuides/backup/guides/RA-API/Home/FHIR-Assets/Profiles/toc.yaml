@@ -1,6 +1,10 @@
-- name: ' NHSE Condition Profile for flags	'
-  filename: NHSE-Condition-Profile-for-flags.page.md
+- name: ' NHSE Flag Condition Profile '
+  filename: NHSE-Flag-Condition-Profile.page.md
 - name: NHSE Flag Consent Profile
   filename: NHSE-Flag-Consent-Profile.page.md
-- name: Profile
-  filename: Profile.page.md
+- name: NHSE Flag Provenance Profile
+  filename: NHSE-Flag-Provenance-Profile.page.md
+- name: NHSE Patient Flag
+  filename: NHSE-Patient-Flag.page.md
+- name: NHSE Programme Flag
+  filename: NHSE-Programme-Flag.page.md
