@@ -107,10 +107,14 @@ To aid clarity, individual and organisation type entities (e.g. Performer / Perf
     </tbody>
 </table>
 
+---
+
 ### Pathology FHIR Data Model
 The following diagram shows the key relationships between each of the pathology related FHIR resources (and associated profiles). It provides a detailed represention of how the high-level logical information model described above is realised in FHIR. The arrows represent the direction of the references between the resources.
 
 {{render:path-diagram-R4-FHIR-data-model}}
+
+---
 
 ### Design Approach
 The base FHIR R4 specification describes several methods of representing test reports and  [grouping observations](https://hl7.org/fhir/R4/observation.html#obsgrouping). The design approach that has been adopted as part of this implementation guide is summarised below:
@@ -130,6 +134,8 @@ The following simplified data model illustrates the key aspects of this design a
 
 <br>
 Further example test reports (with accompanying data models) are provided in the {{pagelink:R4Examples}}.
+
+---
 
 ### SNOMED CT Usage
 SNOMED CT concepts are used to populate the following key data elements in the FHIR profiles described in this implementation guide:
@@ -161,6 +167,8 @@ The use of these aspects of SNOMED CT is illustrated in the following simplified
 <br>
 
 Further information on the use of SNOMED CT for pathology reporting can be found on the  [Pathology Standards and Implementation website](https://digital.nhs.uk/services/pathology-standards-and-implementation/snomed-ct-for-pathology-reporting).
+
+---
 
 ### Representation of Different Types of Test Results
 Laboratory test results are reported using a variety of forms. These are described below with supporting examples. Each example includes a link to a corresponding FHIR `Observation` example (all of the examples are also listed in the {{pagelink:R4Examples}}).

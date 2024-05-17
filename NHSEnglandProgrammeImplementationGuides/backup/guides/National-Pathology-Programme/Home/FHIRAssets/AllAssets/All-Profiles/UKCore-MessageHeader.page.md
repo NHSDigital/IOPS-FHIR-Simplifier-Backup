@@ -1,7 +1,7 @@
 ---
 topic: R4MessageHeader
 ---
-## Profile: UKCore-MessageHeader
+## UKCore-MessageHeader
 
 ### Summary
 The header for a message exchange that is either requesting or responding to an action.
@@ -12,6 +12,9 @@ The header for a message exchange that is either requesting or responding to an 
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
+
+**Note:** The `UKCore-MessageHeader` profile is currently in Draft and is not included in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current). The profile is closely aligned with the base FHIR R4 `MessageHeader` resource, the only differences being the inclusion of some Must Support elements.  
+
 <div class="tab fhirTree">
     <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
     <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
@@ -40,4 +43,4 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 ### Additional Guidance
-No additional guidance is currently provided for this profile within this implementation guide.
+No additional guidance is currently provided for this profile.

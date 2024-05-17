@@ -11,9 +11,13 @@ specifications that meet your requirements
 ### Introduction
 This implementation guide and the HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4 assets that it references define a specification to enable the exchange of pathology laboratory data.
 
-The implementation guide has been created by NHS England and forms part of the [NHS England Programme Implementation Guides](https://simplifier.net/NHS-England-Programme-Implementation-Guides/~guides) project on Simplifier<sup>&reg;</sup>. The profiles that this implementation guide references are derived from the [UK Core Implementation Guide (Version 2.0.0 - STU2 Sequence)](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current).
+The implementation guide has been created by NHS England and forms part of the [NHS England Programme Implementation Guides](https://simplifier.net/NHS-England-Programme-Implementation-Guides/~guides) project on Simplifier<sup>&reg;</sup>. 
 
 For the implementation guide version history, see {{pagelink:ReleaseNotes}}.
+
+**Note:** The profiles that this implementation guide references are derived from the [UK Core Implementation Guide (Version 2.0.0 - STU2 Sequence)](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current). Consequently this implementation guide (i.e. the Pathology FHIR Implementation Guide) must be read in conjunction with the UK Core Implementation Guide. A description of the published and development versions of the UK Core is provided in [UK Core Publication (Version) History](https://simplifier.net/guide/ukcoreversionhistory/home?current).
+
+---
 
 ### Pathology Overview
 Pathology tests and investigations are critical to many aspects of patient care, supporting the diagnosis, treatment, monitoring and prevention of disease. Pathology comprises a broad range of specialities, each of which includes many individual tests. The key specialities can be grouped as follows:
@@ -28,6 +32,8 @@ Pathology tests are requested by staff members in a variety of care provider org
 An increasing number of pathology tests are performed outside of laboratories. These include tests that may be performed at a point of care (usually by a Health Care Professional in a care setting such as a GP practice or in a hospital ward) or by a patient or their carer at home.
 
 The {{pagelink:Background}} section of this implementation guide provides additional contextual information relating to pathology test requesting and reporting.
+
+---
 
 ### Pathology Data Products
 This implementation guide has been developed by the [Pathology Standards and Implementation](https://digital.nhs.uk/services/pathology-standards-and-implementation) team within NHS England. The team has also developed a SNOMED CT<sup>&reg;</sup> based catalogue of pathology laboratory test request and test result codes. This catalogue was previously known as the Unified Test List (UTL). The UTL was originally a relatively simple set of codes representing pathology laboratory test requests and results, with each code carrying a SNOMED CT concept identifier. Following extensive modelling and classification work, the UTL has evolved into 'true' SNOMED CT. The content is accessible via two SNOMED CT reference sets:
@@ -48,6 +54,8 @@ Together with this implementation guide, the PaLM and PBCL SNOMED CT reference s
 * it is unable to support complex report structures using fully atomic, coded results - the data elements of complex reports are mainly represented in PMIP EDIFACT (NHS003) as text with limited clinical coding
 * due to the age of the underlying EDIFACT standard, its continued use is a significant barrier to new market entrant system suppliers
 
+---
+
 ### Scope
 The current scope of this implementation guide reflects the priority of replacing PMIP EDIFACT (NHS003) and the PBCL. In summary:
 
@@ -55,6 +63,8 @@ The current scope of this implementation guide reflects the priority of replacin
 * the clinical payload that is currently supported by the implementation guide is aligned with the PaLM and PBCL SNOMED CT reference sets and covers the following pathology specialities:
     * blood sciences - clinical biochemistry (also known as chemical pathology), haematology, immunology and transfusion medicine
     * microbiology - bacteriology, virology and serology
+
+---
 
 ### Implementation Guide Structure
 This guide is divided into the following sections and pages which are accessible from the top-level menu bar:
@@ -82,6 +92,7 @@ This guide is divided into the following sections and pages which are accessible
     * {{pagelink:Glossary}}: Provides a definition of key abbreviations, acronyms and terms that are used in this implementation guide.
     * {{pagelink:Sitemap}}: Lists all of the key sections and pages that are included in this implementation guide.
 
+---
 
 ### Related Guides
 Refer to the following related implementation guidance: 

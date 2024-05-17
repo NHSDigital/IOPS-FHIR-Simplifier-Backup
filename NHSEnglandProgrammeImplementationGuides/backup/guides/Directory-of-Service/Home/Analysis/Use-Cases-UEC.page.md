@@ -22,7 +22,6 @@
 
 <plantuml>
 @startuml
-title Search DoS with Clinical Triage System 
 actor Triage
 participant "Case Management System"
 participant "Directory of Services"
@@ -57,6 +56,29 @@ deactivate "Case Management System"
 </tr></tbody></table>
 <br>
 
+<plantuml>
+@startuml
+actor Clinician
+participant "3rd Party Tool" as ThirdPartyTool
+participant "Directory of Services (DoS)" as DoS
+
+Clinician -> Clinician: Use search tool
+
+Clinician -> ThirdPartyTool: Enter search criteria
+activate ThirdPartyTool
+
+ThirdPartyTool -> DoS: Send search request
+activate DoS
+
+DoS -> DoS: Validate and process request
+DoS --> ThirdPartyTool: Return matching services
+deactivate DoS
+
+ThirdPartyTool --> Clinician: Display results
+deactivate ThirdPartyTool
+@enduml
+</plantuml>
+
 ## Maintain Data via the DoS UI 
 
 <table class="assets" title="PDS Use Case 1">
@@ -78,6 +100,28 @@ deactivate "Case Management System"
 
 <br>
 
+<plantuml>
+@startuml
+actor "Service Owner"
+participant "DoS System" as DoS
+"Service Owner" -> DoS: Log into DoS
+activate DoS
+DoS -> "Service Owner": Display login screen
+"Service Owner" -> DoS: Enter credentials
+DoS -> DoS: Authenticate user
+DoS -> "Service Owner": Display main dashboard
+"Service Owner"-> DoS: Navigate to required function
+DoS -> "Service Owner": Display required function
+"Service Owner"-> DoS: Make profiling updates
+DoS -> DoS: Save updates
+DoS -> "Service Owner": Confirm updates saved
+"Service Owner"-> DoS: Log out
+DoS -> "Service Owner": Confirm logout
+deactivate DoS
+
+@enduml
+</plantuml>
+
 ## Report and record Capacity Management data 
 
 <table class="assets" title="PDS Use Case 1">
@@ -87,9 +131,9 @@ deactivate "Case Management System"
 </tr><tr>
 <td><strong>Actors (Role)</strong></td><td>Hospital Capacity Managers, Ward staff, Administrators</td></tr><tr><td><strong>Frequency of Use</strong></td><td>Daily, generally twice per day for each user</td>
 </tr><tr>
-<td><strong>Triggers</strong></td><td>Daily sit rep needs to be completed</td>
+<td><strong>Triggers</strong></td><td>Daily sitution report needs to be completed</td>
 </tr><tr>
-<td><strong>Pre Conditions</strong></td><td>User has an active DoS account with appropriate permissions</td></tr><tr><td><strong>Post Conditions</strong></td><td><ol><li>Hospital sit rep has been updated</li><li>Users are able to view and compare capacity data for their hospital and those of other areas</li><li>Service profiling is correct</li></ol></td>
+<td><strong>Pre Conditions</strong></td><td>User has an active DoS account with appropriate permissions</td></tr><tr><td><strong>Post Conditions</strong></td><td><ol><li>Hospital situation report has been updated</li><li>Users are able to view and compare capacity data for their hospital and those of other areas</li><li>Service profiling is correct</li></ol></td>
 </tr><tr>
 <td><strong>Main Course</strong></td><td><ol><li>User logs in</li><li>User navigates to the correct service profile</li><li>User saves changes</li><li>User completes a search based on geography and service type</li><li>User views summary data for services returned in the search</li><li>User navigates to reporting page</li><li>User selects region, grid and timeframes and exports required data</li></ol></td>
 </tr><tr>

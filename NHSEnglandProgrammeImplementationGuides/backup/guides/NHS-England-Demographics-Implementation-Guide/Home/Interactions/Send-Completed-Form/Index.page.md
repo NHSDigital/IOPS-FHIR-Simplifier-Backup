@@ -20,7 +20,7 @@ The Form Filler (possibly with help from the Form Manager) is responsible for ve
 
 hide footbox
 
-title Send Completed Form [PCC-ENG-1]
+title Send Completed Form
 
 
 actor "Form Filler" as source
@@ -28,7 +28,7 @@ actor "Form Recipient" as recipient
 
 
 
-source -> recipient: Send Completed Form [PCC-ENG-1]
+source -> recipient: Send Completed Form
 recipient --> source: Acknowledgement
 @enduml
 </plantuml>

@@ -16,6 +16,8 @@ Foo3 -> Foo2 : Find appropriate HealthcareService QueryResponse
 
 ### Query for an available HealthcareService, Location, Schedule, Slot
 
+<!--
+
 ABC
 
 ### Query for an FGM indicator

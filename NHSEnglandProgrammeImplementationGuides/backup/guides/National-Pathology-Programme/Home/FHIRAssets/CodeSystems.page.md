@@ -2,4 +2,4 @@
 topic: FHIRAssetsR4CodeSystems
 ---
 ## CodeSystems
-No pathology specific CodeSystems have been created.
+No `CodeSystems` have been created specifically for use in pathology.
