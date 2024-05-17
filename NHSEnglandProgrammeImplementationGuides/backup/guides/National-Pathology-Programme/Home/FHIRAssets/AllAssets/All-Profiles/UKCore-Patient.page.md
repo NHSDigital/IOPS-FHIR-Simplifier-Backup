@@ -1,7 +1,7 @@
 ---
 topic: R4Patient
 ---
-## Profile: UKCore-Patient
+## UKCore-Patient
 
 ### Summary
 Demographics and other administrative information about an individual.

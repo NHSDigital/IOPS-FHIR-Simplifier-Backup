@@ -1,7 +1,7 @@
 ---
 topic: R4Specimen
 ---
-## Profile: UKCore-Specimen
+## UKCore-Specimen
 
 ### Summary
 Details of the specimen(s) provided for testing.
@@ -54,10 +54,10 @@ FHIR provides two data elements for conveying specimen related identifiers:
 * `Specimen.identifier`: this is defined in the base FHIR specification as "Id for specimen" and has a cardinality of 0..*.
 * `Specimen.accessionIdentifier`: this is defined in the base FHIR specification as "The identifier assigned by the lab when accessioning specimen(s)." and has a cardinality of 0..1.
 
-If multiple laboratories are involved with processing a test (as is the case for send-away or referred tests), it is not possible to assign more than one `Specimen.accessionIdentifier` as the data element has a maximum cardinality of 1.
+If multiple laboratories are involved with processing a test (as is the case for send-away or referred tests), it is not possible to assign more than one `Specimen.accessionIdentifier` because the data element has a maximum cardinality of 1.
 
 It is therefore recommended that:
-* `Specimen.identifier` is used to convey all specimen related identifiers, including those assigned by the requesting organisation and the laboratory (or multiple laboratories where applicable). Each organisation **SHOULD** append their local identifier to the identifier array if needed, ensuring either the system or assigner is able to disambiguate any identifiers from possibly overlapping numbers from other organisations.
+* `Specimen.identifier` is used to convey all specimen related identifiers, including those assigned by the requesting organisation and the laboratory (or multiple laboratories where applicable). Each organisation **SHOULD** append their local identifier to the identifier array as needed, ensuring either the system or assigner is able to disambiguate any identifiers from possibly overlapping numbers from other organisations.
 * `Specimen.accessionIdentifier` **SHOULD NOT** be used.
 
 ---

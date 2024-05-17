@@ -1,7 +1,7 @@
 ---
 topic: R4ObservationTestGroup
 ---
-## Profile: UKCore-Observation-Group-Lab (Test Group)
+## UKCore-Observation-Group-Lab (Test Group)
 
 ### Summary
 A set of related tests that are reported together, for example a Full Blood Count. Test groups are often referred to as batteries, panels or profiles. 
@@ -10,7 +10,7 @@ The test group is represented using `UKCore-Observation-Group-Lab` with referenc
 
 `UKCore-Observation-Group-Lab.code` is used to represent the clinical code and name of the test group. 
 
-`UKCore-Observation-Group-Lab.value[x]` is not used as the test group does not carry a test result. 
+`UKCore-Observation-Group-Lab.value[x]` is not used as a test group does not carry a test result. 
 
 Refer to the {{pagelink:R4ObservationTestResult}} profile definition and the {{pagelink:DesignOverview}} section for further information.
 
@@ -90,6 +90,11 @@ The presence of `[x]` in an element name is used to indicate a [choice of data t
 
 ### `issued`
 The date and time that the test group results were issued.
+
+---
+
+### `value[x]`
+This element **SHOULD NOT** be used within this profile as a test group does not carry a test result.
 
 ---
 

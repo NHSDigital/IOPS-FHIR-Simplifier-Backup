@@ -1,7 +1,7 @@
 ---
 topic: R4PractitionerRole
 ---
-## Profile: UKCore-PractitionerRole
+## UKCore-PractitionerRole
 
 ### Summary
 Used to represent a specific set of roles/locations/specialties/services that a <code>Practitioner</code> may perform at an <code>Organization</code>.

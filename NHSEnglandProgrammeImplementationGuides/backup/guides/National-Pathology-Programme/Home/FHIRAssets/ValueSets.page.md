@@ -2,7 +2,7 @@
 topic: FHIRAssetsR4ValueSets
 ---
 ## ValueSets
-The ValueSets that were created specifically for use in pathology are listed below.
+The `ValueSets` that have been created specifically for use in pathology are listed below.
 
 ### UK Core Pathology And Laboratory Medicine Observables
 <div>

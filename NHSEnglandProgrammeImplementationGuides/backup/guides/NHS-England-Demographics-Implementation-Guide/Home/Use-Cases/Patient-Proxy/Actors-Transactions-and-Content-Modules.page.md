@@ -25,19 +25,19 @@ actor "Patient Identity Source" as source
 actor "Patient Proxy Authoriser" as GP
 
 opt
-note over patient: May use [PCC-UK-3] to retrieve **Patient Proxy Request** Form Definition
+note over patient: May use Retrieve **Patient Proxy Request** Form Definition
 end
 patient -> patient : Patient Proxy completes **Patient Proxy Request** Form
-patient -> source: Send Completed **Patient Proxy Request** Form [PCC-UK-1]
+patient -> source: Send Completed **Patient Proxy Request** Form
 source --> patient: Acknowledgement
 source -> source: Create Consent
 source -> source: Share Consent
 opt Needs Validating
-source -> GP: Request **Patient Proxy Request** is validated [PCC-UK-2]
+source -> GP: Request **Patient Proxy Request** is validated
 GP -> source: Retrieve **Patient Proxy Request**
 GP -> source: accept or reject **Patient Proxy Request**
 else 
-source -> source: automatically accept **Patient Proxy Request** [PCC-UK-2]
+source -> source: automatically accept **Patient Proxy Request**
 end
 source -> source: Update Consent
 @enduml

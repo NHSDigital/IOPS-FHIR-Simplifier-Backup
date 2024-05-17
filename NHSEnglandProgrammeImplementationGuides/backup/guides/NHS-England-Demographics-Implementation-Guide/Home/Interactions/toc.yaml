@@ -1,8 +1,4 @@
 - name: Index
   filename: Index.page.md
-- name: Send Completed Form [PCC-ENG-1]
-  filename: Send-Completed-Form-PCC-ENG-1
-- name: Send Task and Respond to Task [PCC-ENG-2]
-  filename: Send-Task-and-Respond-to-Task-PCC-ENG-2
-- name: Finding a Form Definition [PCC-ENG-3]
-  filename: Finding-a-Form-Definition-PCC-ENG-3
+- name: Send Completed Form
+  filename: Send-Completed-Form

@@ -1,7 +1,7 @@
 ---
 topic: R4ServiceRequest
 ---
-## Profile: UKCore-ServiceRequest-Lab
+## UKCore-ServiceRequest-Lab
 
 ### Summary
 The test request that a test report is based on.

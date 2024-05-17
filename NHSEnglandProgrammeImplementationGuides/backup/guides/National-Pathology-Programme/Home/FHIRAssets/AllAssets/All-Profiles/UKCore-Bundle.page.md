@@ -1,7 +1,7 @@
 ---
 topic: R4Bundle
 ---
-## Profile: UKCore-Bundle
+## UKCore-Bundle
 
 ### Summary
 A container for a collection of resources. Used to group the set of resources that comprise a pathology related message.
@@ -12,6 +12,9 @@ A container for a collection of resources. Used to group the set of resources th
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
+
+**Note:** The `UKCore-Bundle` profile is currently in Draft and is not included in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current). The profile is closely aligned with the base FHIR R4 `Bundle` resource, the only differences being the inclusion of some Must Support elements.   
+
 <div class="tab fhirTree">
     <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
     <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
@@ -40,4 +43,4 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 </div>
 
 ### Additional Guidance
-No additional guidance is currently provided for this profile within this implementation guide.
+No additional guidance is currently provided for this profile.

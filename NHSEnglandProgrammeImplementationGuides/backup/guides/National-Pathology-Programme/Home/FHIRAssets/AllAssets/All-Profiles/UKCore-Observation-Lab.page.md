@@ -1,14 +1,14 @@
 ---
 topic: R4ObservationTestResult
 ---
-## Profile: UKCore-Observation-Lab (Test Result)
+## UKCore-Observation-Lab (Test Result)
 
 ### Summary
 An individual test result, represented using `UKCore-Observation-Lab`. The test result may be for a single test or it may form part of a test group such as a Full Blood Count.
 
 `UKCore-Observation-Lab.code` is used to represent the clinical code and name of the test.
 
-`UKCore-Observation-Lab.hasMember` is not used as the profile represents a test result rather than a test group. Where an `Observation` is being used to represent a test group (with `hasMember` references), then `UKCore-Observation-Group-Lab` should be used instead.
+`UKCore-Observation-Lab.hasMember` is not used as this profile is used to represent a test result rather than a test group. Where an `Observation` is being used to represent a test group (with `Observation.hasMember` references), then `UKCore-Observation-Group-Lab` should be used instead.
 
 Refer to the {{pagelink:R4ObservationTestGroup}} profile definition and the {{pagelink:DesignOverview}} section for further information.
 
@@ -126,3 +126,8 @@ The [ValueSet](https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/8365
 A coded, categorical assessment of a test result value, for example `High`. The associated test result value (i.e. `Observation.value[x]`), is usually numeric. 
 
 Refer to the {{pagelink:DesignOverview}} section for further information relating to the representation of different types of test results.
+
+---
+
+### `hasMember`
+This element **SHOULD NOT** be used as this profile is used to represent individual test results. Where an `Observation` is being used to represent a group of tests (with `Observation.hasMember` references), then the {{pagelink:R4ObservationTestGroup}} profile **SHOULD** be used instead.

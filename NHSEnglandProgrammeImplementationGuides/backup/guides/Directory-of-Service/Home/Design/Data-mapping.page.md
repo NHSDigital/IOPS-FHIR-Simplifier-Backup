@@ -14,12 +14,14 @@ Organization "1" *-- "1" OrganizationAffiliation : contains
 @enduml
 </plantuml>
 
+<!--
+
 BELOW TO BE EDITED
 
 An [xyz] indicator as been modelled around a FHIR R4 HealthcareService.
 
 
-<!-- should be a prooper html table not markdown due to styling and accessibility -->
+should be a prooper html table not markdown due to styling and accessibility 
 | Source Data item               | Cardinality |Target FHIR Element                 | Notes         
 |--|--|
 |Assessment Date|1..1|Flag.period.start|type: <a href='http://hl7.org/fhir/R4/datatypes.html#dateTime'>dateTime</a><br>format: YYYY-MM-DD
@@ -27,3 +29,4 @@ An [xyz] indicator as been modelled around a FHIR R4 HealthcareService.
 |Family history of FGM indicator|1..1|Flag.code.coding|system must be "http://snomed.info/sct"<br>code must be "902961000000107"<br>display must be "Family history of FGM (female genital mutilation)"
 |Status|1..1|Flag.status|See {{pagelink:Home/FHIRAssets/Profiles/UKCore-Flag.page.md}}
 |Removal Reason|0..1|reference {{pagelink:Home/FHIRAssets/Extensions/Index.page.md}}|must be set when Flag.status is not 'active'. E.g. {{pagelink:Home/Build/Examples/Example---A-removed-FGM-flag.page.md}} <br>set on PUT /Flag interaction. E.g. {{pagelink:Home/Design/Interactions.page.md}}
+-->

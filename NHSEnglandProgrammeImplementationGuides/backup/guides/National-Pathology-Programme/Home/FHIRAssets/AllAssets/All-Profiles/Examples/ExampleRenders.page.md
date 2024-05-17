@@ -7,3 +7,6 @@
 <div id="Tree" role="tabpanel" class="tabcontent expandedexample">
    {{tree}}
 </div>    
+<div id="Table" role="tabpanel" class="tabcontent expandedexample">
+   {{table}}
+</div>  

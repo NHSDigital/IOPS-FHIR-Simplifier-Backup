@@ -36,8 +36,12 @@ There are many possible variations and exceptions to this basic process, includi
 * While a test report is still in progress, a Requesting HCP may ask for further tests to be performed, in addition to those that were originally requested. These are known as **add-on tests**. 
 * The laboratory may issue one or more **interim reports** before sending a final report.
 
+---
+
 ### User Stories, Personas and Journey Maps
 A set of detailed **User Stories** has been developed to provide further business context for this implementation guide. These can be found on the [Pathology Standards and Implementation work space](https://nhsengland.kahootz.com/PathologyandDiagnostics/view?objectID=37638416), together with other related artefacts such as **Personas** and **Journey Maps**.
+
+---
 
 ### Current GP Practice Pathology Data Flows
 The following diagram illustrates the types of systems and associated data flows that are currently used to support GP practice requested pathology tests:
