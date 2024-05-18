@@ -88,7 +88,7 @@
                     </tr>
                     <tr>
                       <td colspan="2"><b>Packages are based on:</b> <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a></td>
-                      <td colspan="2"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="/guide/Pathology-FHIR-Implementation-Guide/Home/Helpandsupport/Sitemap?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="/guide/Pathology-FHIR-Implementation-Guide/Home/Helpandsupport/Release-Notes?version={{ guide-version }}">Version history</a> | <a id="footer-licence" href="{{content}}/../?version={{ guide-version }} #Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                      <td colspan="2"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="/guide/Pathology-FHIR-Implementation-Guide/Home/Helpandsupport/Sitemap?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="/guide/Pathology-FHIR-Implementation-Guide/Home/Helpandsupport/Release-Notes?version={{ guide-version }}">Version history</a> | <a id="footer-licence" href="/guide/Pathology-FHIR-Implementation-Guide/Home?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
                     </tr>  
                 </table>
             </div>
@@ -354,7 +354,7 @@
                     let destUrl = $(this)[0].href;
                     let destVersion = "?" + destUrl.split("?")[1];
                     if (pageVersion.startsWith("?version=current")){
-                        destUrl = destUrl.replace(destVersion, pageVersion) + '#I1';
+                        destUrl = destUrl.replace(destVersion, pageVersion) + '#Licence';
                     }
                     $(this).attr("href", destUrl) ;
 				});

@@ -145,6 +145,9 @@ Refer to the following related implementation guidance:
         </div>
     </div>
 </div>
+
+---
+
 <div markdown="span" class="alert alert-warning" role="alert"><h4 id="Licence"><i class="fas fa-gavel"></i> Licensing and Publisher</h4>
     <ul>
         <li>
