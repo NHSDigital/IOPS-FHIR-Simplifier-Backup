@@ -1,0 +1,870 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "0f3249d2-5506-477a-a35b-29e811e4bd9f",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2024-05-20T11:15:22.608Z"
+  },
+  "url": "https://fhir.nhs.uk/Questionnaire/CareConnect-EOLC-1",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/STU3/Questionnaire",
+      "value": "CareConnect-EOLC-1"
+    }
+  ],
+  "version": "0.1",
+  "name": "End of Life Care",
+  "title": "EPaCCS",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2019-03-09T12:52:13+00:00",
+  "publisher": "NHS Digital",
+  "description": "EoL National Minimum Dataset. See also [PRSB Palliative and End of Life Care Standard](https://theprsb.org/standards/palliativeandendoflifecare/). \\n\\n Current version [FHIR STU3 End of Life API](https://developer.nhs.uk/apis/eol-alpha/index.html)",
+  "purpose": "This project specifically supports the development of a digital end of life care interoperability capability, which uses a clinically-assured information standard SCCI 1580 to support the sharing of end of life care records. It supports the development and a pilot implementation of the end of life care interoperability API which will allow sharing and updating of a digital end of life care record. This work is based on a Minimum Viable Product (MVP) aimed at addressing the Urgent and Emergency Care use case.",
+  "copyright": "Copyright Â© 2019 NHS Digital",
+  "item": [
+    {
+      "linkId": "ATP",
+      "text": "Advanced Treatment Preferences",
+      "type": "group",
+      "enableBehavior": "any",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "This is effectively making up a Treatment Escalation Plan or and Emergency Treatment Plan."
+            }
+          ],
+          "linkId": "ATP001.1",
+          "text": "Clinical Problems and Advised Interventions",
+          "type": "group",
+          "enableBehavior": "any",
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                  "valueCode": "Condition"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+                  "valueCanonical": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Condition-1"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+                  "valueMarkdown": "Description of the problem or the condition.  Either a diagnosis or description of an event that could actually happen  eg. breathlessness, fits, delerium, worsening oral intake of foods and fluids"
+                }
+              ],
+              "linkId": "ATP001.1.1",
+              "text": "ATP Problems",
+              "type": "reference",
+              "enableBehavior": "any",
+              "required": true
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                  "valueCode": "CarePlan"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+                  "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-CarePlan-1"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+                  "valueMarkdown": "Different systems use different word collections.  However, respondents agreed that implementation guidance will request that only these four values can be used: + Comfort, symptomatic treatment only+ Home/Hospice, treatment of reversible conditions as appropriate + Hospital, treatment of reversible conditions as appropriate+ Intensive, full active treatmentSome systems may include the treatment level as part of the intervention text, hence it cannot be mandatory."
+                }
+              ],
+              "linkId": "ATP001.1.2",
+              "text": "Treatment Level",
+              "type": "reference",
+              "enableBehavior": "any"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "Procedure"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Procedure-1"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "To inform those providing care that anticipatory medicines or a just in case box have been issued. These medicines could be administered promptly by appropriate staff if indicated."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "ATP001.2",
+          "text": "Anticipatory medicines/just in case box issued",
+          "type": "choice",
+          "enableBehavior": "any",
+          "required": true,
+          "repeats": true,
+          "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F376201000000102OR%20871021000000106"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "Flag"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ADRT-Flag-1"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "If ADRT is transmitted, then a status code should be transmitted.  It is acknowledged that some systems do not code this data, hence it cannot be mandatory."
+            }
+          ],
+          "linkId": "ATP001.3",
+          "text": "Advance Decision to Refuse Treatment",
+          "type": "reference",
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "This is special case to include the ReSPECT Priority Scale value.  Many systems have/will implement eReSPECT and therefore the value can be preserved when being transmitted between systems."
+            }
+          ],
+          "linkId": "ATP001.4",
+          "text": "ReSPECT Care",
+          "type": "group",
+          "enableBehavior": "any",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+                  "valueMarkdown": "1-100 Where 1= absolute priority on sustaining life and 100= absolute priority in comfort."
+                }
+              ],
+              "linkId": "ATP001.4.1",
+              "text": "ReSPECT Patient Care Priority - Scale",
+              "type": "integer",
+              "enableBehavior": "any",
+              "required": true
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+                  "valueMarkdown": "Where the ReSPECT priority is being transmitted, this value can include the ReSPECT Patient Care Priority statement - \"Considering the above priority, what is most important to you?\""
+                }
+              ],
+              "linkId": "ATP001.4.2",
+              "text": "ReSPECT Patient Care Priority - Textual",
+              "type": "string",
+              "enableBehavior": "any"
+            }
+          ]
+        },
+        {
+          "linkId": "ATP001.5",
+          "text": "Date of change in list of advance treatment preferences",
+          "type": "date",
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "Practitioner"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "The professional recording the changes is mandatory as someone must have entered this data into the system.  This data may have been asked for overtly in the data entry form or may be taken from the user details of person logged in creating the record."
+            }
+          ],
+          "linkId": "ATP001.6",
+          "text": "Professional recording these changes to this list of Problems and Interventions",
+          "type": "reference",
+          "enableBehavior": "any",
+          "required": true
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+          "valueCode": "Consent"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+          "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Consent-1"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+          "valueMarkdown": "This is not a mandatory group to allow for the concept where the provider has not recorded consent."
+        }
+      ],
+      "linkId": "CON",
+      "text": "Consent",
+      "type": "reference",
+      "enableBehavior": "any",
+      "required": true,
+      "repeats": false
+    },
+    {
+      "linkId": "CPR",
+      "text": "CPR Status",
+      "type": "group",
+      "enableBehavior": "any",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "Flag"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/EOL-CPRStatus-Flag-1"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "If CPR status is transmitted, then the status code is mandatory.  This will be a straight binary choice of \"For\" or \"Not For\" resuscitation.  Whilst there is a code for \"not aware of decision\", this is not a logical requirement for this dataset.  Systems that are unaware of the status will logically not be sending this group.  \"For CPR\" will generally be only used when reversing a \"Not for CPR\" status.  People who haven't yet had the discussion would just not have a recorded CPR decision in file."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "CPR001.1",
+          "text": "CPR Status",
+          "type": "choice",
+          "enableBehavior": "any",
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F450475007OR%20450476008%20"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "It will be a strong recommendation that a reason for the status change is included although it is unlikely that it can be mandated from the start.  Also, as this is an MVP dataset, it could be argued that UEC are most keen on seeing the status rather than additional text.  However, in the example below if the text reads \"There is a valid advance decision to refuse CPR in the following circumstances...\", then the DNACPR decision is not for all circumstances.  In that case, the business may wish to consider whether a non-blanket DNACPR would be better recorded as an Advance Treatment Preference so that where it is appropriate can be made clear."
+            }
+          ],
+          "linkId": "CPR001.2",
+          "text": "Reason for CPR status",
+          "type": "string",
+          "enableBehavior": "any"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "Systems should also deliver the mental capacity information as a textual field.  The exact text will vary from system to system - below is a selection.  Some refer to \"\"consent\"\" rather than the \"\"capacity to be involved\"\".  This highlights a difference across England of this concept, which is not for the dataset to resolve.  Example text strings could be: + This person has the mental capacity to participate in making these recommendations.  They have been fully involved in the decision making process. + This person lacks the capacity to to give consent (Mental Capacity Act 2005) + This person is less than 18 (UK except Scotland) / 16 (Scotland) years old and has sufficient maturity and understanding to participate in making this decision + This person is less than 18 (UK except Scotland) / 16 (Scotland) years old and does not currently have sufficient maturity and understanding to participate in making this decision + This person has the mental capacity to participate in making these recommendations, but they have declined to discuss the decision."
+            }
+          ],
+          "linkId": "CPR001.3",
+          "text": "CPR Status Mental Capacity",
+          "type": "string",
+          "enableBehavior": "any"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "This group lists the persons involved in the discussion.  Feedback indicated it might be helpful to split those present from those involved.  For V1 this is a level of complexity that may not be supported around the country.  It was also highlighted that this is a discussion with, NOT a decision by, the patient and their representatives.  CPR status is a clinical decision except in the situation where an adult with mental capacity has made the decision not to be resuscitated or where there is a Lasting Power of Attorney with authority to make such a decision.  The persons involved in the discussion are most important where the patient lacks capacity."
+            }
+          ],
+          "linkId": "CPR001.6",
+          "text": "Persons involved in discussion",
+          "type": "group",
+          "enableBehavior": "any",
+          "repeats": true,
+          "item": [
+            {
+              "linkId": "CPR001.6.1",
+              "text": "Coded entry for people involved in the discussion",
+              "type": "choice",
+              "enableBehavior": "any",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "873341000000100",
+                    "display": "Discussion about resuscitation (procedure)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "873351000000102",
+                    "display": "Discussion about resuscitation with carer (situation)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "713656002",
+                    "display": "Discussion about cardiopulmonary resuscitation with family member (situation)"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "CPR001.6.2",
+              "text": "Text entry for people involved in the discussion",
+              "type": "string",
+              "enableBehavior": "any",
+              "required": true
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "This group exists to specifically list those (who were not in the discussion) that have subsequently been made aware of the decision."
+            }
+          ],
+          "linkId": "CPR001.7",
+          "text": "Persons or organisations made aware of the decision",
+          "type": "group",
+          "enableBehavior": "any",
+          "repeats": true,
+          "item": [
+            {
+              "linkId": "CPR001.7.1",
+              "text": "Coded entry for people aware of the decision",
+              "type": "choice",
+              "enableBehavior": "any",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "975311000000109",
+                    "display": "Carer informed of cardiopulmonary resuscitation clinical decision (situation)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "845151000000104",
+                    "display": "Not aware of do not attempt cardiopulmonary resuscitation clinical decision (finding)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "975291000000108",
+                    "display": "Family member informed of cardiopulmonary resuscitation clinical decision (situation)"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "CPR001.7.2",
+              "text": "Textual version of that person or group of people",
+              "type": "string",
+              "enableBehavior": "any",
+              "required": true
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "Practitioner"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+            }
+          ],
+          "linkId": "CPR001.8",
+          "text": "Professionals Involved In Decision",
+          "type": "reference",
+          "enableBehavior": "any",
+          "repeats": true
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "Practitioner"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "Optional group for professional endorsement, where the profession recording the status change is not senior enough to be de facto endorser."
+            }
+          ],
+          "linkId": "CPR001.10",
+          "text": "Professional Endorsing Status",
+          "type": "reference",
+          "enableBehavior": "any",
+          "repeats": true
+        }
+      ]
+    },
+    {
+      "linkId": "DIS",
+      "text": "Disabilities",
+      "type": "group",
+      "enableBehavior": "any",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "Condition"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Condition-1"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "Repeating group of all current recorded disabilities."
+            }
+          ],
+          "linkId": "DIS001.1",
+          "text": "Patient Disabilities",
+          "type": "reference",
+          "enableBehavior": "any",
+          "repeats": true
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "Practitioner"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "The professional recording the changes is mandatory as someone must have entered this data into the system.  This data may have been asked for overtly in the data entry form or may be taken from the user details of person logged in creating the record."
+            }
+          ],
+          "linkId": "DIS001.2",
+          "text": "Professional recording these changes to Disabilities",
+          "type": "reference",
+          "enableBehavior": "any"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+          "valueMarkdown": "Details of other relevant planning documentsand where to find them."
+        }
+      ],
+      "linkId": "DOC",
+      "text": "Other Documents",
+      "type": "group",
+      "enableBehavior": "any",
+      "repeats": true,
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "Description of name of the advance planning document"
+            }
+          ],
+          "linkId": "DOC001.1",
+          "text": "Document Name",
+          "type": "string",
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "Location of the document"
+            }
+          ],
+          "linkId": "DOC001.2",
+          "text": "Document Location",
+          "type": "string",
+          "enableBehavior": "any"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "Description of the organisation where the document was created with the patient."
+            }
+          ],
+          "linkId": "DOC001.3",
+          "text": "Document Source",
+          "type": "string",
+          "enableBehavior": "any"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+          "valueCode": "Flag"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+          "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Register-Flag-1"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+          "valueMarkdown": "EoL Register"
+        }
+      ],
+      "linkId": "EOL",
+      "text": "EOL Register",
+      "type": "reference",
+      "enableBehavior": "any",
+      "repeats": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+          "valueCode": "Observation"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+          "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-FunctionalStatus-Observation-1"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+          "valueMarkdown": "Respondents were all happy to use, or move to the Karnofsky codes.  The dataset should be encouraging this move to a nationally-agreed code.  However, it is mandatory for GPs to record the Electronic Frailty Index (EFI) of the patient, so both types of code must be capable of being transmitted.  Systems without this coding will always be able to transmit a textual value.  The FHIR resource provides a code and then an indicator for what code is being used.  Both Karnofsky and eFI can be transmitted."
+        }
+      ],
+      "linkId": "FUN",
+      "text": "Functional Status",
+      "type": "reference",
+      "enableBehavior": "any",
+      "repeats": true
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+          "valueMarkdown": "Will detail what LPAs are in force and who the main contacts are wrt to each LPA.  Some systems record all the LPA for finance, but this is outside the scope of this minimum dataset.  NB.  Would not have an LPA HW for a child"
+        }
+      ],
+      "linkId": "LPA",
+      "text": "Lasting Power of Attorney",
+      "type": "group",
+      "enableBehavior": "any",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "Flag"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/EOL-LPA-Flag-1"
+            }
+          ],
+          "linkId": "LPA001.1",
+          "text": "Lasting Power of Attorney For Health and Welfare",
+          "type": "reference",
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "RelatedPerson"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/EOL-LPA-RelatedPerson-1"
+            }
+          ],
+          "linkId": "LPA001.2",
+          "text": "Persons Appointed",
+          "type": "reference",
+          "enableBehavior": "any",
+          "repeats": true
+        }
+      ]
+    },
+    {
+      "linkId": "PREF",
+      "text": "Preferences",
+      "type": "group",
+      "enableBehavior": "any",
+      "item": [
+        {
+          "linkId": "PRE001.1",
+          "text": "Preferred Place Of Death",
+          "type": "group",
+          "enableBehavior": "any",
+          "required": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+                  "valueMarkdown": "Coded value of the preferred place of death.  Includes some codes to indicate that there is not yet (and maybe cannot be) a decision from the patient."
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "PRE001.1.2",
+              "text": "Preferred Place Of Death (Coded)",
+              "type": "choice",
+              "enableBehavior": "any",
+              "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F517111000000103OR%20517131000000106%20OR%20766391000000108%20OR%20517161000000101%20OR%2089751000000108%20OR%20110481000000108%20OR%20108401000000102%20OR%20109401000000108%20OR%20518741000000100%20OR%20518771000000106%20OR%2089761000000106%20OR%20512071000000106%20"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+                  "valueMarkdown": "Notes associated with the PPD code or, if not coded, text to describe the patient's preferred place of death.  Examples include: + Care Home + Community Hospital + Home + Hospice + Hospital + Learning disability unit + Mental health unit + Not Yet Discussed + Nursing home + Patient Not Able To Discuss + Patient Not Wishing To State Preference + Residential home + \"Other\" plus text"
+                }
+              ],
+              "linkId": "PRE001.1.3",
+              "text": "Preferred Place Of Death (Text)",
+              "type": "string",
+              "enableBehavior": "any",
+              "required": true
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "A free text field where overall preferences and wishes are captured.  This is a catch-all data item where the whole of the patient's preferences are recorded.  This will include wishes for care and also cultural, religious and social needs.  However, some systems retain the logical split between true \"\"personal preferences\"\" and other data about the patient's home and living conditions.  The dataset attempts to split these two types of data, as many systems will record them separately."
+            }
+          ],
+          "linkId": "PRE001.2",
+          "text": "Preferences and Wishes",
+          "type": "string",
+          "enableBehavior": "any"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "A free text field for information relating to home, access and other practical domestic and living information relating to the patient."
+            }
+          ],
+          "linkId": "PRE001.3",
+          "text": "Domestic Access and Information",
+          "type": "string",
+          "enableBehavior": "any"
+        },
+        {
+          "linkId": "PRE001.4",
+          "text": "Preferences Date Recorded",
+          "type": "dateTime",
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+              "valueCode": "Practitioner"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+              "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+              "valueMarkdown": "The professional recording the changes is mandatory as someone must have entered this data into the system.  This data may have been asked for overtly in the data entry form or may be taken from the user details of person logged in creating the record."
+            }
+          ],
+          "linkId": "PRE001.5",
+          "text": "Preferences Author",
+          "type": "reference",
+          "enableBehavior": "any",
+          "required": true
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+          "valueCode": "ClinicalImpression"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+          "valueCanonical": "https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Prognosis-ClinicalImpression-1"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "PRO",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "968211000000101"
+        }
+      ],
+      "text": "Prognosis",
+      "type": "choice",
+      "enableBehavior": "any",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "1064691000000106",
+            "display": "Limited life expectancy of approximately one year"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "511401000000102",
+            "display": "Last days of life (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "955231000000109",
+            "display": "Last weeks of life (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "968211000000101",
+            "display": "Last months of life (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "845701000000104",
+            "display": "Gold standards framework prognostic indicator stage A (blue) - year plus prognosis (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "845721000000108",
+            "display": "Gold standards framework prognostic indicator stage B (green) - months prognosis (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "845751000000103",
+            "display": "Gold standards framework prognostic indicator stage C (yellow) - weeks prognosis (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "845771000000107",
+            "display": "Gold standards framework prognostic indicator stage D (red) - days prognosis (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "518901000000101",
+            "display": "Gold standards framework supportive care stage 1 - advancing disease (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "518941000000103",
+            "display": "Gold standards framework supportive care stage 2 - increasing decline (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "754401000000106",
+            "display": "Gold standards framework supportive care stage 3 - last days: category B - months prognosis (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "519041000000106",
+            "display": "Gold standards framework supportive care stage 3 - last days: category C - weeks prognosis (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "519061000000107",
+            "display": "Gold standards framework supportive care stage 3 - last days: category D - days prognosis (finding)"
+          }
+        }
+      ]
+    }
+  ]
+}
