@@ -2,8 +2,8 @@
     "resourceType": "Questionnaire",
     "id": "009c06ea-b930-4433-9a11-3033f20857dc",
     "meta": {
-      "versionId": "14",
-      "lastUpdated": "2024-05-14T07:19:15.010Z"
+      "versionId": "15",
+      "lastUpdated": "2024-05-14T07:24:36.608Z"
     },
     "url": "https://example.fhir.nhs.uk/Questionnaire/385941006",
     "name": "WoundCarePRSB",
@@ -11,6 +11,38 @@
     "status": "draft",
     "publisher": "Professional Records Standards Body",
     "description": "Based on assessment section of [PRSB Wound Care Standard](https://theprsb.org/standards/wound-care-standard/)",
+    "useContext": [
+      {
+        "code": {
+          "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+          "code": "focus"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "325931000000109",
+              "display": "Assessment"
+            }
+          ]
+        }
+      },
+      {
+        "code": {
+          "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+          "code": "focus"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "163121000000106",
+              "display": "Findings"
+            }
+          ]
+        }
+      }
+    ],
     "purpose": "To ",
     "code": [
       {
