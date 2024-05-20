@@ -20,6 +20,8 @@
 </tr></tbody></table>
 <br>
 
+{{render:Wokflow Diagrams-Searching for Healthcare Service.jpg}}
+
 <plantuml>
 @startuml
 title Locating a Healthcare Service

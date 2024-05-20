@@ -10,3 +10,5 @@
   filename: FHIR-Assets
 - name: Help and Support
   filename: Help-and-Support
+- name: Glossary
+  filename: Glossary.page.md

@@ -15,7 +15,7 @@ The implementation guide has been created by NHS England and forms part of the [
 
 For the implementation guide version history, see {{pagelink:ReleaseNotes}}.
 
-**Note:** The profiles that this implementation guide references are derived from the [UK Core Implementation Guide (Version 2.0.0 - STU2 Sequence)](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current). Consequently this implementation guide (i.e. the Pathology FHIR Implementation Guide) must be read in conjunction with the UK Core Implementation Guide. A description of the published and development versions of the UK Core is provided in [UK Core Publication (Version) History](https://simplifier.net/guide/ukcoreversionhistory/home?current).
+**Note:** The FHIR profiles that this implementation guide references are derived from the [UK Core Implementation Guide (Version 2.0.0 - STU2 Sequence)](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current). Consequently this implementation guide (i.e. the Pathology FHIR Implementation Guide) must be read in conjunction with the UK Core Implementation Guide. A description of the published and development versions of the UK Core is provided in [UK Core Publication (Version) History](https://simplifier.net/guide/ukcoreversionhistory/home?current).
 
 ---
 
@@ -110,6 +110,27 @@ Refer to the following related implementation guidance:
                                 <div class="nhsd-m-card__content-box">
                                     <h3>FHIR UK Core IG</h3>
                                     <p>This Implementation Guide is to be used as the base for implementing FHIR in the UK.</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+           	<!-- UK Core Publication History -->
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://simplifier.net/guide/ukcoreversionhistory/home?version=current" class="nhsd-a-box-link "
+                        aria-label="Read the UK Core Publication History">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h3>FHIR UK Core Publication History</h3>
+                                    <p>Reference point for published and development versions of the UK Core.</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
                                     <span class="nhsd-a-button nhsd-a-button--invert">

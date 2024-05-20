@@ -1,12 +1,22 @@
-- name: Mandatory & MustSupport Template
-  filename: Mandatory-MustSupport-Template.page.md
+- name: MustSupport Template
+  filename: MustSupport-Template.page.md
+- name: ValueSet Template
+  filename: ValueSet-Template.page.md
 - name: Example Template
   filename: Example-Template.page.md
+- name: Profile Constraints Template
+  filename: Profile-Constraints-Template.page.md
 - name: Profile Template
   filename: Profile-Template.page.md
 - name: Mandatory Template
   filename: Mandatory-Template.page.md
+- name: Profile Bindings Template
+  filename: Profile-Bindings-Template.page.md
+- name: CodeSystem Template
+  filename: CodeSystem-Template.page.md
 - name: Profile Extension Template
   filename: Profile-Extension-Template.page.md
 - name: Constraints Template
   filename: Constraints-Template.page.md
+- name: Profile Extensions Template
+  filename: Profile-Extensions-Template.page.md
