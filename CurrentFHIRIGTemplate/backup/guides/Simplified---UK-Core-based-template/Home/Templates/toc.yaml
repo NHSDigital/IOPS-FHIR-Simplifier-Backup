@@ -1,0 +1,28 @@
+- name: Extension Template
+  filename: Extension-Template.page.md
+- name: Feedback Link
+  filename: Feedback-Link.page.md
+- name: IG Resource List Generator
+  filename: IG-Resource-List-Generator.page.md
+- name: Profile Bindings Template
+  filename: Profile-Bindings-Template.page.md
+- name: Profile Constraints Template
+  filename: Profile-Constraints-Template.page.md
+- name: Profile Extensions Template
+  filename: Profile-Extensions-Template.page.md
+- name: Profile MustSupport Template
+  filename: Profile-MustSupport-Template.page.md
+- name: Profile Template
+  filename: Profile-Template.page.md
+- name: Usage FQL Derived
+  filename: Usage-FQL-Derived.page.md
+- name: Usage FQL Extensions
+  filename: Usage-FQL-Extensions.page.md
+- name: Usage FQL References
+  filename: Usage-FQL-References.page.md
+- name: ValueSet Template
+  filename: ValueSet-Template.page.md
+- name: CodeSystem Template
+  filename: CodeSystem-Template.page.md
+- name: Example Template
+  filename: Example-Template.page.md
