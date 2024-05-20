@@ -1,5 +1,7 @@
 - name: Introduction
   filename: Introduction
+- name: Information governance
+  filename: Information-Governance
 - name: How to use this implementation guidance
   filename: How-to-use-this-implementation-guidance
 - name: Release notes
