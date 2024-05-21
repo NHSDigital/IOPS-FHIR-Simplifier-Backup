@@ -166,7 +166,7 @@ The use of these aspects of SNOMED CT is illustrated in the following simplified
 
 <br>
 
-Further information on the use of SNOMED CT for pathology reporting can be found on the  [Pathology Standards and Implementation website](https://digital.nhs.uk/services/pathology-standards-and-implementation/snomed-ct-for-pathology-reporting).
+Further information on the use of SNOMED CT for pathology reporting can be found on the  [Pathology Standards and Implementation](https://digital.nhs.uk/services/pathology-standards-and-implementation/snomed-ct-for-pathology-reporting) website.
 
 ---
 
