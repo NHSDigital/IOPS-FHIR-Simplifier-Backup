@@ -2,7 +2,7 @@
   filename: Index.page.md
 - name: Use Cases - Generic
   filename: Use-Cases-Generic.page.md
-- name: Use Cases - UEC
-  filename: Use-Cases-UEC.page.md
+- name: Use Cases - Urgent and Emergency Care
+  filename: Use-Cases-Urgent-and-Emergency-Care.page.md
 - name: Existing DoS Systems
   filename: Existing-DoS-Systems.page.md

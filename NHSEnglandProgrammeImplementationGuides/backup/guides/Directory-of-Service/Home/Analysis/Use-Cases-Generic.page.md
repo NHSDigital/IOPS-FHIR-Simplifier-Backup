@@ -20,8 +20,10 @@
 </tr></tbody></table>
 <br>
 
+### Workflow
 {{render:Wokflow Diagrams-Searching for Healthcare Service.jpg}}
 
+### System Interactions
 <plantuml>
 @startuml
 title Locating a Healthcare Service
@@ -39,7 +41,7 @@ Deactivate "Directory of Services"
 @enduml
 </plantuml>
 
-
+___
 
 ## Search DoS with Clinical Triage System 
 
@@ -78,6 +80,8 @@ deactivate "Case Management System"
 @enduml
 </plantuml>
 
+___
+
 ## Search DoS without Clinical Triage System 
 
 <table class="assets" title="PDS Use Case 1">
@@ -96,7 +100,8 @@ deactivate "Case Management System"
 <td><strong>Alternate Course</strong></td><td>n/a</td></tr><tr><td><strong>Exception</strong></td><td>Invalid information is passed to DoS via the API, returning an error message to the requesting service
 </td>
 </tr></tbody></table>
-<br>
+
+___
 
 ## Maintain Data via the DoS UI 
 
@@ -117,7 +122,7 @@ deactivate "Case Management System"
 </td>
 </tr></tbody></table>
 
-<br>
+___
 
 ## Report and record Capacity Management data 
 
