@@ -1,0 +1,393 @@
+{
+  "resourceType": "GraphDefinition",
+  "id": "GraphDefinition-Genomics-Test-Order",
+  "url": "https://fhir.nhs.uk/GraphDefinition/genomics-test-order",
+  "name": "GenomicsTestOrder",
+  "status": "draft",
+  "date": "2024-05-16",
+  "publisher" : "NHS England",
+  "description": "GraphDefinition for defining and retrieving the full set of resources relevant to a Genomic Test Order",
+  "start": "ServiceRequest",
+  "link": [
+    {
+      "path": "ServiceRequest.extension.valueReference",
+      "sliceName": "additionalContact",
+      "description": "Link to additional contacts for request",
+      "min": 0,
+      "max": "*",
+      "target": [
+        {
+          "type": "PractitionerRole"
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.basedOn",
+      "description": "Link to parent request (it is expected that a separate call to the $graph=genomics-test-order would be required to retrieve resources referenced from the ServiceRequest",
+      "min": 0,
+      "max": "1",
+      "target": [
+        {
+          "type": "ServiceRequest"
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.subject",
+      "description": "Link to patient the request is for",
+      "min": 1,
+      "max": 1,
+      "target": [
+        {
+          "type": "Patient",
+          "link": [
+            {
+              "description": "RelatedPersons linked to this Patient",
+              "min": 0,
+              "max": "*",
+              "target": [
+                {
+                  "type": "RelatedPerson",
+                  "params": "patient={ref}"
+                }
+              ]
+            } 
+          ]
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.requester",
+      "description": "Link to the requester of the genomic test order",
+      "min": 1,
+      "max": 1,
+      "target": [
+        {
+          "type": "PractitionerRole"
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.reasonReference",
+      "description": "Optional link to the primary condition constituting the reason for testing",
+      "min": 0,
+      "max": 1,
+      "target": [
+        {
+          "type": "Condition"
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.supportingInfo",
+      "description": "Link to additional clinical information to support processing/interpretation of the request",
+      "min": 0,
+      "max": "*",
+      "target": [
+        {
+          "type": "RelatedPerson"
+        },
+        {
+          "type": "Observation",
+          "link": [
+            {
+              "path": "Observation.extension.valueReference",
+              "description": "Optional link to body structure related to the observation",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "BodyStructure"
+                }
+              ]
+            },
+            {
+              "path": "Observation.focus",
+              "description": "Optional link to specimen the observation is about, if relevant",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "Specimen"
+                }
+              ]
+            },
+            {
+              "path": "Observation.performer",
+              "description": "Optional link to actor who performed the observation (could be Patient, PractitionerRole or RelatedPerson)",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "Resource"
+                }
+              ]
+            },
+            {
+              "path": "Observation.hasMember",
+              "description": "Optional link to observation if parent observation is a panel",
+              "min": 0,
+              "max": "*",
+              "target": [
+                {
+                  "type": "Observation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Condition",
+          "link": [
+            {
+              "path": "Condition.recorder",
+              "description": "Optional link to actor which recorded condition (could be Patient, PreactitionerRole or RelatedPerson)",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "Resource"
+                }
+              ]
+            },
+            {
+              "path": "Condition.asserter",
+              "description": "Optional link to actor which asserted condition (could be Patient, PreactitionerRole or RelatedPerson)",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "Resource"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Procedure"
+        },
+        {
+          "type": "FamilyMemberHistory",
+          "link": [
+            {
+              "path": "FamilyMemberHistory.extension.valueReference",
+              "sliceName": "family-member-history-genetics-observation",
+              "description": "Optional link to observations related to a FamilyMemberHistory",
+              "min": 0,
+              "max": "*",
+              "target": [
+                {
+                  "type": "Observation"
+                }
+              ]
+            },
+            {
+              "path": "FamilyMemberHistory.extension.valueReference",
+              "sliceName": "familymemberhistory-patient-record",
+              "description": "Optional link to Patient resources for related family members",
+              "min": 0,
+              "max": "*",
+              "target": [
+                {
+                  "type": "Patient"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "DocumentReference"
+        },
+        {
+          "type": "DiagnosticReport"
+        },
+        {
+          "type": "Consent",
+          "link": [
+            {
+              "path": "Consent.sourceReference",
+              "description": "Optional link to structured QuestionnaireResponse or DocumentReference for RoD/consent forms",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "QuestionnaireResponse",
+                  "link": [
+                    {
+                      "path": "QuestionnaireResponse.author",
+                      "description": "Author of the RoD, most likely a PractitionerRole resource (if a reference)",
+                      "min": 1,
+                      "max": 1,
+                      "target": [
+                        {
+                          "type": "PractitionerRole"
+                        }
+                      ]
+                    },
+                    {
+                      "path": "QuestionnaireResponse.source",
+                      "description": "Source of the RoD (could be Patient, PractitionerRole or RelatedPerson)",
+                      "min": 1,
+                      "max": 1,
+                      "target": [
+                        {
+                          "type": "Resource"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "DocumentReference"
+                }
+              ]
+            },
+            {
+              "path": "Consent.patient",
+              "description": "Link to Patient resource (relevant for instances where the consent does not apply to the proband)",
+              "min": 1,
+              "max": 1,
+              "target": [
+                {
+                  "type": "Patient"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Specimen",
+          "link": [
+            {
+              "path": "Specimen.subject",
+              "description": "Link to the patient the specimen is from",
+              "min": 1,
+              "max": 1,
+              "target": [
+                {
+                  "type": "Patient"
+                }
+              ]
+            },
+            {
+              "path": "Specimen.parent",
+              "description": "Link to parent specimen resource",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "Specimen"
+                }
+              ]
+            },
+            {
+              "path": "Specimen.collection.collector",
+              "description": "Link to collector of the specimen",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "PractitionerRole"
+                }
+              ]
+            },
+            {
+              "path": "Specimen.collection.bodySite.extension.valueReference",
+              "sliceName": "bodySiteReference",
+              "description": "Link to the body structure detailing the morphology and topography of the specimen",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "BodyStructure"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.specimen",
+      "description": "Optional link to specimen where this has already been collected/ordered prior to request submission",
+      "min": 0,
+      "max": "*",
+      "target": [
+        {
+          "type": "Specimen",
+          "link": [
+            {
+              "path": "Specimen.subject",
+              "description": "Link to the patient the specimen is from",
+              "min": 1,
+              "max": 1,
+              "target": [
+                {
+                  "type": "Patient"
+                }
+              ]
+            },
+            {
+              "path": "Specimen.parent",
+              "description": "Link to parent specimen resource",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "Specimen"
+                }
+              ]
+            },
+            {
+              "path": "Specimen.collection.collector",
+              "description": "Link to collector of the specimen",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "PractitionerRole"
+                }
+              ]
+            },
+            {
+              "path": "Specimen.collection.bodySite.extension.valueReference",
+              "sliceName": "bodySiteReference",
+              "description": "Link to the body structure detailing the morphology and topography of the specimen",
+              "min": 0,
+              "max": 1,
+              "target": [
+                {
+                  "type": "BodyStructure"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "ServiceRequest.relevantHistory",
+      "description": "Optional link to provenance resources collating history of changes to the request",
+      "min": 0,
+      "max": "*",
+      "target": [
+        {
+          "type": "Provenance",
+          "link": [
+            {
+              "path": "Provenance.agent.who",
+              "description": "PractitionerRole that made the referenced change",
+              "min": 1,
+              "max": 1,
+              "target": [
+                {
+                  "type": "PractitionerRole"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

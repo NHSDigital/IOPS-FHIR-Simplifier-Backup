@@ -43,6 +43,10 @@
 					"type": "CodeSystem",
 					"profile": "http://hl7.org/fhir/StructureDefinition/CodeSystem"
 				},
+        {
+					"type": "GraphDefinition",
+					"profile": "http://hl7.org/fhir/StructureDefinition/GraphDefinition"
+				},
 				{
 					"type": "ConceptMap",
 					"profile": "http://hl7.org/fhir/StructureDefinition/ConceptMap"

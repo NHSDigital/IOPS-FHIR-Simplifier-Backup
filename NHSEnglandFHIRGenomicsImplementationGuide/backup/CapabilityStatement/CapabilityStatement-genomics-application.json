@@ -160,6 +160,29 @@
 						}
 					]
 				},
+        {
+					"type": "GraphDefinition",
+					"profile": "http://hl7.org/fhir/StructureDefinition/GraphDefinition",
+					"documentation": "For searching supported GraphDefinitions",
+					"interaction": [
+						{
+							"code": "read"
+						},
+						{
+							"code": "search-type"
+						}
+					],
+					"searchParam": [
+						{
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"name": "start",
+							"type": "token"
+						}
+					]
+				},
 				{
 					"type": "ConceptMap",
 					"profile": "http://hl7.org/fhir/StructureDefinition/ConceptMap",
