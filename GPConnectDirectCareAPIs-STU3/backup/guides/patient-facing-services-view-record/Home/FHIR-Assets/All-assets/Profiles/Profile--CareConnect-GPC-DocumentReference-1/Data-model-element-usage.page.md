@@ -129,6 +129,13 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
+        <!-- name -->
+        <tr>
+            <td>name</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
         <!-- content.attachment.url -->
         <tr>
             <td>content.attachment.url</td>
