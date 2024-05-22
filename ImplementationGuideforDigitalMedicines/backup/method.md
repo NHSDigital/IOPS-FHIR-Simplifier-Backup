@@ -5,25 +5,27 @@
 The [999000041000001103 ePrescribing method simple reference set (foundation metadata concept)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=999000041000001103&edition=uk-edition) reference set collates the commonly used terms for `method` for use in the United Kingdom. Additional terms can be requested to be added to this reference set.
 
 For example:
-
 ```xml
-<!-- Method -->
-<method>
-    <coding>
-        <system value="http://snomed.info/sct"/>
-        <code value="129326001"/>
-        <display value="Injection"/>
-    </coding>
-</method>
-```
-and
-```xml
-<!-- Method -->
+<!-- Method, using a preferred term -->
 <method>
     <coding>
         <system value="http://snomed.info/sct"/>
         <code value="71791000001107"/>
         <display value="Nebulise - method of drug administration (qualifier value)"/>
+    </coding>
+</method>
+```
+and
+```xml
+<!-- Method, using a synonym -->
+<method>
+    <coding>
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescDisplay">
+            <valueString value="Injection" />
+        </extension>
+        <system value="http://snomed.info/sct"/>
+        <code value="129326001"/>
+        <display value="Injection - action"/>
     </coding>
 </method>
 ```
@@ -59,5 +61,11 @@ Example: **Creon capsules**
    <text value="Swallowed whole or for ease of administration may be opened and the granules taken with acidic fluid or soft food but without chewing"/>
 </method>
 ```
+
+### Considerations when mapping legacy dosage instructions to FHIR Dosage
+
+Where an implementation approach is based on mapping of legacy text-based dosage instructions to the FHIR Dosage structure, the `method` described in text may not a like-for-like match a coded SNOMED method. In some cases there will be a suitable SNOMED coded term so we recommend involving clinicians during any mapping exercise.
+
+For example. Some historic mouthwash medication records may use the text-based method within the dosage of "`Rinse or Gargle`". There is a coded SNOMED term of "`Use as a mouthwash`" (93481000001108) which could be more suitable.
 
 ---
