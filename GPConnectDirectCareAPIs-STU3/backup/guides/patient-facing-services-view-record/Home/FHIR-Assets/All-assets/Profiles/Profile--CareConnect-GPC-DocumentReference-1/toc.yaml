@@ -32,6 +32,8 @@
   filename: custodian.page.md
 - name: description
   filename: description.page.md
+- name: name
+  filename: name.page.md
 - name: content.attachment.url
   filename: content.attachment.url.page.md
 - name: content.attachment.size
