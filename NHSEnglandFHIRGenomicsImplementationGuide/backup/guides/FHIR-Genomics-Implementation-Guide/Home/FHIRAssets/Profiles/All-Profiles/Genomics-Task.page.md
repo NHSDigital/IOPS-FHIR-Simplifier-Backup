@@ -391,7 +391,8 @@ The original requester of the ServiceRequest the Task is fulfilling. Autopopulat
 
 <a name="owner"></a>
 #### owner
-Autopopulated by the central service if a performer is assigned at Test submission. Otherwise updated by the organization claiming the task (though this could also be autopopulated if automated per test routing tables are integrated into the central service functionality). Owner SHOULD be populated using organization ODS code references.
+Autopopulated by the central service if a performer is assigned at Test submission. (By default this is the Home GLH for the submitting organization. The Home GLH SHOULD remain the owner for the Process Genomic Test Task, throughout the test order-fulfillment process).
+Otherwise updated by the organization claiming the task (though this could also be autopopulated if automated per test routing tables are integrated into the central service functionality). Owner SHOULD be populated using organization ODS code references.
 
 Tasks assigned to a particular organization SHOULD then be searched for using the `owner` search parameter with the `:identifier` modifier i.e. `[base]/Task?owner:identifier=8J834` or `[base]/Task?owner:identifier=https://fhir.nhs.uk/Id/ods-organization-code|8J834`
 ```json

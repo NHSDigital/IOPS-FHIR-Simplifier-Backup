@@ -11,7 +11,7 @@ Mapped to Condition and Observation resources linked to the patient
 ### Mapping
 | Source Data item | Target FHIR Element | HL7v2.5.1 Mapping | Description 
 |--|--|
-|Disease status|Condition.clinicalStatus (**Needs mapping to MDS enums**)|PRB-14|If the patient is affected, unaffected, or it is unknown.|
+|Disease status|Condition.clinicalStatus, Condition.verificationStatus (**Needs mapping to MDS enums**)|PRB-14|If the patient is affected, uncertain, unaffected, or it is unknown.|
 |Phenotypic details (Many)|Condition.code with HPO system|Additional PRB segments (PRB-3)|The HPO (or alternative ontology as appropriate) term names for the observable disease traits.|
 |Has multiple tumours|Inferred through multiple Condition.bodySite entries|Multiple PRB segments (bodySite for condition not in scope for HL7v2)|Does the patient have multiple tumours.|
 |Count of tumours|Inferred through number of Condition/Condition.bodysite entries for tumours|Multiple PRB segments (bodySite for condition not in scope for HL7v2)|How many tumours the patient has.|

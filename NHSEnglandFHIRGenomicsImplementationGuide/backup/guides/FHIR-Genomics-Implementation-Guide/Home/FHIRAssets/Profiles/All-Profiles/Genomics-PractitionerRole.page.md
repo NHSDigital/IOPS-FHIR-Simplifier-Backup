@@ -203,6 +203,7 @@ The specialty field SHOULD be used to record department for the requesting clini
 <a name="telecom"></a>
 #### telecom
 The telecom field SHOULD be used to record contact details for the practitioner. For central mailboxes, e.g. those used for providing reports back to the requester, these SHOULD be marked with an appropriate 'contactpoint-comment' extension. 
+Additionally, where are there multiple Practitioners involved in providing care, the contact details for each Practitioners for that location (or service) SHOULD be specified.
 ```json
 "telecom":  [
         {

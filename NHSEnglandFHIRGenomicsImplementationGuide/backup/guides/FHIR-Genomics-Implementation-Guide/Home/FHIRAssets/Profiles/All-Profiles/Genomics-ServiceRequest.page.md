@@ -241,6 +241,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#requester">requester</a>
 - <a href="#performer">performer</a>
 - <a href="#reasonCode">reasonCode</a>
+- <a href="#reasonReference">reasonReference</a>
 - <a href="#supportingInfo">supportingInfo</a>
 - <a href="#specimen">specimen</a>
 - <a href="#note">note</a>
@@ -377,8 +378,9 @@ Code SHOULD contain the CI or CITT Test Directory code, currently available at h
 ```
 
 <a name="orderDetail"></a>
-#### intent
-If multiple codes are being requested within one Test Order, these SHOULD be represented using the 'orderDetail' field, with the main indication captured using the 'code' field above. If completely separate pathways/samples etc. are required for processing against the codes, it is expected these would be requested via multiple ServiceRequests instead of a single ServiceRequest with multiple orderDetail codes. The exact cut-off for when orderDetail vs. multiple ServiceRequest should be used is still being investigated.
+#### orderDetail
+If multiple codes are being requested within one Test Order, these SHOULD be represented using the 'orderDetail' field, with the main indication captured using the 'code' field above. If completely separate pathways/samples etc. are required for processing against the codes, it is expected these would be requested via multiple ServiceRequests instead of a single ServiceRequest with multiple orderDetail codes. The exact cut-off for when orderDetail vs. multiple ServiceRequest should be used is still being investigated. 
+An appropriate code(Panel codes) SHOULD come from the following NamingSystem: {{pagelink:England-GenomicTestPanelCodes}}
 ```json
 "orderDetail": [
     {
@@ -460,6 +462,16 @@ This mapping is currently under review as the CI/CITT code is also technically t
             ]
         }
     ],
+```
+<a name="reasonReference"></a>
+#### reasonReference
+Reference SHOULD be associated to the primary condition being tested for.
+i.e,
+
+```json
+"reasonReference": {
+        "reference": "Condition/Condition-LungTumor-Example"
+    },
 ```
 
 <a name="supportingInfo"></a>

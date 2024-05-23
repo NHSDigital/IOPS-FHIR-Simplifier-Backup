@@ -12,6 +12,8 @@
   filename: Genomics-Consent.page.md
 - name: Genomics-DiagnosticReport
   filename: Genomics-DiagnosticReport.page.md
+- name: Genomics-DocumentReference
+  filename: Genomics-DocumentReference.page.md
 - name: Genomics-FamilyMemberHistory
   filename: Genomics-FamilyMemberHistory.page.md
 - name: Genomics-MessageDefinition
