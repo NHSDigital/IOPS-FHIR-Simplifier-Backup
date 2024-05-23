@@ -515,7 +515,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PBCL observable entity reference set -->
+            <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
             <code value="1015681000000109" />
             <display value="Serum cholesterol/high density lipoprotein ratio" />
@@ -613,7 +613,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PBCL observable entity reference set -->
+            <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
             <code value="999791000000106" />
             <display value="Haemoglobin A1c level - International Federation of Clinical Chemistry and Laboratory Medicine standardised" />

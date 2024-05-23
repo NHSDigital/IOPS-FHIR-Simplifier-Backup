@@ -204,35 +204,35 @@ The snippet examples have been provided to illustrate how each supported data el
             <td>PATH-R4-26</td>
             <td>{{pagelink:R4DiagnosticReport}}</td>
             <td>Microbiology</td>
-            <td>A set of examples that illustrate how each supported data element within {{pagelink:R4DiagnosticReport}} may be populated.</td>
+            <td>An example to illustrate how each supported data element within {{pagelink:R4DiagnosticReport}} may be populated.</td>
             <td>{{pagelink:R4SnippetsDiagnosticReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-27</td>
             <td>{{pagelink:R4ObservationTestGroup}}</td>
             <td>Haematology</td>
-            <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestGroup}} may be populated.</td>
+            <td>An example to illustrate how each supported data element within {{pagelink:R4ObservationTestGroup}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestGroup}}</td>
         </tr>
         <tr>
             <td>PATH-R4-28</td>
             <td>{{pagelink:R4ObservationTestResult}}</td>
             <td>Haematology</td>
-            <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ObservationTestResult}} may be populated.</td>
+            <td>An example to illustrate how each supported data element within {{pagelink:R4ObservationTestResult}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestResult}}</td>
         </tr>
         <tr>
             <td>PATH-R4-29</td>
             <td>{{pagelink:R4ServiceRequest}}</td>
             <td>Clinical Biochemistry</td>
-            <td>A set of examples that illustrate how each supported data element within {{pagelink:R4ServiceRequest}} may be populated.</td>
+            <td>An example to illustrate how each supported data element within {{pagelink:R4ServiceRequest}} may be populated.</td>
             <td>{{pagelink:R4SnippetsServiceRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-30</td>
             <td>{{pagelink:R4Specimen}}</td>
             <td>Clinical Biochemistry</td>
-            <td>A set of examples that illustrate how each supported data element within {{pagelink:R4Specimen}} may be populated.</td>
+            <td>An example to illustrate how each supported data element within {{pagelink:R4Specimen}} may be populated.</td>
             <td>{{pagelink:R4SnippetsSpecimen}}</td>
         </tr>
     </tbody>
