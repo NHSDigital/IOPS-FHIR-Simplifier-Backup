@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
-    "fhir.r4.nhsengland.stu1": "1.1.0",
+    "fhir.r4.nhsengland.stu1": "1.2.0",
     "fhir.r4.ukcore.stu3.currentbuild": "0.0.9-pre-release"
   },
   "fhirVersions": [
