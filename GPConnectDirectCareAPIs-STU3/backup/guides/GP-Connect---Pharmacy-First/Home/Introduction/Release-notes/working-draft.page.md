@@ -13,6 +13,15 @@
 
 <table data-responsive>
     <tbody>
+        <!-- Updated AllergyIntolerance profile -->
+        <tr>
+            <td class="nhsd-m-table__highlighted-items">
+                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-AllergyIntolerance-1}}
+            </td>
+            <td>
+                Corrected profile link to GPC variant of the Allergy/Intolerance profile
+            </td>
+        </tr>
         <!-- ABPM report -->
         <tr>
             <td class="nhsd-m-table__highlighted-items">
@@ -46,7 +55,7 @@
                 </ul>
             </td>
         </tr>
-        <!-- ampp -->
+        <!-- Contraception type -->
         <tr>
             <td class="nhsd-m-table__highlighted-items">
                 {{pagelink:Home/Build/Mapping-PRSB-headings-to-FHIR}}
