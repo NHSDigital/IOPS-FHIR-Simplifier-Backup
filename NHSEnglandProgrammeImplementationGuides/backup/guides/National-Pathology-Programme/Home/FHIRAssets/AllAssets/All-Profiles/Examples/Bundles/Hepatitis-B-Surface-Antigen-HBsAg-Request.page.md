@@ -2,7 +2,7 @@
 topic: R4BundleExampleHBsAgRequest
 subject: Pathology-Bundle-HBsAg-Request-Example
 ---
-### PATH-R4-05: Bundle Example - Hepatitis B Surface Antigen (HBsAg) Request
+### PATH-R4-03: Bundle Example - Hepatitis B Surface Antigen (HBsAg) Request
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

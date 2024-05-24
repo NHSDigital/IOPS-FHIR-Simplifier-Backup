@@ -25,7 +25,7 @@ actor "Patient Identity Source" as source
 
 source -> patient: Patient is asked to complete **Patient Registration** form
 opt
-note over patient: May use retrieve **Patient Proxy Request** Form Definition
+note over patient: May use retrieve **Patient Registration** Form Definition
 end
 opt
   patient -> patient: **Patient Registration** form can be pre-populated

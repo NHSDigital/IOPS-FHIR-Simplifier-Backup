@@ -6,3 +6,5 @@
   filename: ValueSets
 - name: CodeSystems
   filename: CodeSystems
+- name: Search Parameters
+  filename: Search-Parameters
