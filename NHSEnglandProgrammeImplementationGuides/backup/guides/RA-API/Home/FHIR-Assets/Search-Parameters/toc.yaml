@@ -1,0 +1,6 @@
+- name: SearchParameterFlagCode
+  filename: SearchParameterFlagCode.page.md
+- name: SearchParameterFlagDetailExtension
+  filename: SearchParameterFlagDetailExtension.page.md
+- name: SearchParameterFlagCategory
+  filename: SearchParameterFlagCategory.page.md

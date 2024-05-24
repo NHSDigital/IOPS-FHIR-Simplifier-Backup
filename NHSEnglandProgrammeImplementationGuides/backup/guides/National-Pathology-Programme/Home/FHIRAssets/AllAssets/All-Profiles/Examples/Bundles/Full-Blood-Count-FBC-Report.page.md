@@ -2,7 +2,7 @@
 topic: R4BundleExampleFullBloodCountReport
 subject: Pathology-Bundle-FBC-Report-Example
 ---
-### PATH-R4-04: Bundle Example - Full Blood Count Report
+### PATH-R4-08: Bundle Example - Full Blood Count Report
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

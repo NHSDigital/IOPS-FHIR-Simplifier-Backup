@@ -2,11 +2,11 @@
   filename: Index.page.md
 - name: Data Model
   filename: Data-Model.page.md
-- name: Use Cases
+- name: Use-Cases
   filename: Use-Cases
 - name: FHIR Assets
   filename: FHIR-Assets
-- name: Help and Support
+- name: Help-and-support
   filename: Help-and-support
 - name: Glossary
   filename: Glossary.page.md

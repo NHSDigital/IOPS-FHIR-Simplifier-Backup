@@ -38,49 +38,49 @@ The snippet examples have been provided to illustrate how each supported data el
             <td>Clinical Biochemistry</td>
             <td>An example of a report for a single test (quantitative result).</td>
             <td>{{pagelink:R4BundleExampleHbA1cReport}}</td>
-        </tr>   
-        <tr>
-            <td>PATH-R4-03</td>
-            <td>{{pagelink:R4Bundle}}</td>
-            <td>Haematology</td>
-            <td>An example of a request for a single test group (quantitative results).</td>
-            <td>{{pagelink:R4BundleExampleFullBloodCountRequest}}</td>
-        </tr>   
-        <tr>
-            <td>PATH-R4-04</td>
-            <td>{{pagelink:R4Bundle}}</td>
-            <td>Haematology</td>
-            <td>An example of a report for a single test group (quantitative results).</td>
-            <td>{{pagelink:R4BundleExampleFullBloodCountReport}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-05</td>
+            <td>PATH-R4-03</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Immunology / Serology</td>
             <td>An example of a request for a single test (qualitative result).</td>
             <td>{{pagelink:R4BundleExampleHBsAgRequest}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-06</td>
+            <td>PATH-R4-04</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Immunology / Serology</td>
             <td>An example of a report for a single test (qualitative result).</td>
             <td>{{pagelink:R4BundleExampleHBsAgReport}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-07</td>
+            <td>PATH-R4-05</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Cytology</td>
             <td>An example of a request for a single test (qualitative result).</td>
             <td>{{pagelink:R4BundleExampleHPVRequest}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-08</td>
+            <td>PATH-R4-06</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Cytology</td>
             <td>An example of a report for a single test (qualitative result).</td>
             <td>{{pagelink:R4BundleExampleHPVReport}}</td>
         </tr>
+        <tr>
+            <td>PATH-R4-07</td>
+            <td>{{pagelink:R4Bundle}}</td>
+            <td>Haematology</td>
+            <td>An example of a request for a single test group (quantitative results).</td>
+            <td>{{pagelink:R4BundleExampleFullBloodCountRequest}}</td>
+        </tr>   
+        <tr>
+            <td>PATH-R4-08</td>
+            <td>{{pagelink:R4Bundle}}</td>
+            <td>Haematology</td>
+            <td>An example of a report for a single test group (quantitative results).</td>
+            <td>{{pagelink:R4BundleExampleFullBloodCountReport}}</td>
+        </tr>      
         <tr>
             <td>PATH-R4-09</td>
             <td>{{pagelink:R4Bundle}}</td>
