@@ -12,3 +12,7 @@
   filename: Bundle-WGSTestOrderForm-Example.page.md
 - name: Bundle-WGSRoD-Example
   filename: Bundle-WGSRoD-Example.page.md
+- name: Bundle-TransactionResponseError-Example
+  filename: Bundle-TransactionResponseError-Example.page.md
+- name: Bundle-TransactionResponseSuccess-Example
+  filename: Bundle-TransactionResponseSuccess-Example.page.md

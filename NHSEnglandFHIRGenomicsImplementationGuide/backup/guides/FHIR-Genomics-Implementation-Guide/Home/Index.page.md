@@ -3,7 +3,7 @@ Please complete this short feedback form <a href="https://forms.office.com/e/4eE
 specifications that meet your requirements</a>
 </div>
 
-## Introduction
+# Introduction
 
 
 **Important:** This is version 0.3.0. For the version history see {{pagelink:ReleaseNotes}}
@@ -26,7 +26,7 @@ Potential future releases may include support for:
 - Secondary use
 
 ---
-## Scope
+# Scope
 
 {{render:diagrams-scope}}
 
@@ -41,9 +41,9 @@ The intention is to deliver a central broker component, which will coordinate th
 In the future, support for the distribution of structured reports will be made available. However, in the first instance, the scope of authorised reports once issued, will remain binary (PDF), with the aim to move towards structured reporting available to consuming systems (EPRs/other pathology LIMS) as a follow-on development.
 
 ---
-## Implementation Guide Overview
+# Implementation Guide Overview
 
-### {{pagelink:Home/Design}}
+## {{pagelink:Home/Design}}
 
 This section details the decisions and rationale behind the design of the Genomic Medicine Service.
 
@@ -61,7 +61,7 @@ Other pages within this section provide further guidance around integration patt
 
 <br>
 
-### {{pagelink:Home/Build}}
+## {{pagelink:Home/Build}}
 
 This section provides guidance on how to build valid FHIR payloads for interaction with the central Genomic Medicine Service.
 
@@ -75,7 +75,7 @@ Other Pages within this section provide further guidance around interactions wit
 
 <br>
 
-### {{pagelink:Home/FHIRAssets}}
+## {{pagelink:Home/FHIRAssets}}
 
 This section provides the FHIR conformance assets for interacting with the proposed Genomic Medicine Service.
 
@@ -87,13 +87,15 @@ Other pages within this section detail additional assets for use in Genomics.
 
 <br>
 
-### {{pagelink:Home/Examples}}
+## {{pagelink:Home/Examples}}
 
 This section lists examples created to illustrate how to populate resources in certain clinical contexts, arranged by resource type. These examples are still in development, if further examples are required to support local use cases, or issues with examples are identified, please email [interoperabilityteam@nhs.net](mailto:interoperabilityteam@nhs.net).
 
 ---
 
-## Related Guides
+# Related Resources
+
+## FHIR Implementation Guides
 
 <div class="nhsd-o-card-list">
     <div class="nhsd-t-grid">
@@ -106,7 +108,7 @@ This section lists examples created to illustrate how to populate resources in c
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
                                     <h1 class="nhsd-t-heading-s">UK Core</h1>
-                                    <p class="nhsd-t-body-s">UK Core FHIR Guidance</p>
+                                    <p class="nhsd-t-body-s">UK Core FHIR Guidance, this guide described the data model and FHIR profiles used across the UK, including Genomics.</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
                                     <span class="nhsd-a-button nhsd-a-button--invert">
@@ -118,27 +120,6 @@ This section lists examples created to illustrate how to populate resources in c
                     </a>
                 </article>
             </div>
-            <!-- API Catalogue -->
-            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
-                <article class="nhsd-m-card">
-                    <a href="https://digital.nhs.uk/developer/api-catalogue" class="nhsd-a-box-link " aria-label="View the NHS Digital API Catalogue">
-                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
-                            <div class="nhsd-m-card__content_container">
-                                <div class="nhsd-m-card__content-box">
-                                    <h1 class="nhsd-t-heading-s">NHS Digital API Catalogue</h1>
-                                    <p class="nhsd-t-body-s">APIs which use the NHS Digital Implementation Guide</p>
-                                </div>
-                                <div class="nhsd-m-card__button-box">
-                                    <span class="nhsd-a-button nhsd-a-button--invert">
-                                        <span class="nhsd-a-button__label">Find out more</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-            </div>
-           
             <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
                 <article class="nhsd-m-card">
                     <a href="https://simplifier.net/guide/nhs-england-implementation-guide-stu1" class="nhsd-a-box-link " aria-label="View the NHS England Guidance">
@@ -146,7 +127,7 @@ This section lists examples created to illustrate how to populate resources in c
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
                                     <h1 class="nhsd-t-heading-s">NHS England IG</h1>
-                                    <p class="nhsd-t-body-s">NHS England Implementation Guide</p>
+                                    <p class="nhsd-t-body-s">The NHS England Implementation Guide, providing profiles on top of UK Core, for NHS England provided services (currently unused by Genomics)</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
                                     <span class="nhsd-a-button nhsd-a-button--invert">
@@ -165,7 +146,7 @@ This section lists examples created to illustrate how to populate resources in c
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
                                     <h1 class="nhsd-t-heading-s">Pathology FHIR IG</h1>
-                                    <p class="nhsd-t-body-s">NHS England Pathology FHIR Implementation Guide</p>
+                                    <p class="nhsd-t-body-s">NHS England Pathology FHIR Implementation Guide. Provides guidance around reporting in laboratory settings. Genomic reports are expected to be aligned to this guidance</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
                                     <span class="nhsd-a-button nhsd-a-button--invert">
@@ -184,7 +165,377 @@ This section lists examples created to illustrate how to populate resources in c
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
                                     <h1 class="nhsd-t-heading-s">Genomic Reporting IG</h1>
-                                    <p class="nhsd-t-body-s">HL7 Clinical Genomics Working Group Genomic Reporting Implementation Guide STU2</p>
+                                    <p class="nhsd-t-body-s">HL7 Clinical Genomics Working Group Genomic Reporting Implementation Guide STU2, provides international guidance for structured reporting within Genomics</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://hl7.org/fhir/uv/subscriptions-backport/" class="nhsd-a-box-link " aria-label="Read the FHIR Subscriptions Backport IG">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">Subscriptions R5 Backport IG</h1>
+                                    <p class="nhsd-t-body-s">HL7 FHIR-I WG FHIR Subscriptions Backport IG, provides guidance for setting up subscriptions and event notifications in FHIR</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://simplifier.net/gosh-gmsa-genomic-report-profile" class="nhsd-a-box-link " aria-label="View the GOSH GMSA Genomic Report resources">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">GOSH GSMA Genomic Report Profile</h1>
+                                    <p class="nhsd-t-body-s">Simplifier project developed by GOSH GMSA for representing Genomic Reports</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://hl7.eu/fhir/laboratory/" class="nhsd-a-box-link " aria-label="Read the EU Lab IG">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">HL7 Europe Laboratory Report</h1>
+                                    <p class="nhsd-t-body-s">HL7 EU guidance for representing and sharing reports in a European context</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+## Technical Frameworks/Specifications
+
+<div class="nhsd-o-card-list">
+    <div class="nhsd-t-grid">
+        <div class="nhsd-t-row nhsd-o-card-list__items ">
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://build.fhir.org/ig/IHE/pharm-mpd/" class="nhsd-a-box-link " aria-label="Read the IHE MPD spec">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">IHE Medication Prescription and Delivery (MPD)</h1>
+                                    <p class="nhsd-t-body-s">Guidance from IHE International on medication request and fulfillment, analagous to request order and fulfillment in Genomics</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://emerge-fhir-spec.readthedocs.io/en/latest/index.html" class="nhsd-a-box-link " aria-label="Read the eMERGE FHIR spec">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">eMERGE Results FHIR Specification</h1>
+                                    <p class="nhsd-t-body-s">Implementation specification developed by the Electronic Medical Records and Genomics (eMERGE) Network, building on the Genomic Reporting IG</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://ga4gh.github.io/data-repository-service-schemas/preview/release/drs-1.4.0/docs/" class="nhsd-a-box-link " aria-label="Read the GA4GH DRS spec">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">GA4GH Data Repository Service</h1>
+                                    <p class="nhsd-t-body-s">GA4GH specification for retrieving genomic datasets regardless of a repository's underlying architecture</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://cds-hooks.hl7.org/2.0/" class="nhsd-a-box-link " aria-label="Read the CSD Hooks specification">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">CDS-Hooks</h1>
+                                    <p class="nhsd-t-body-s">CDS Hooks RESTful APIs for integration between  EHRs and Clinical Decision Support (CDS) Services</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+## Data Standards
+
+<div class="nhsd-o-card-list">
+    <div class="nhsd-t-grid">
+        <div class="nhsd-t-row nhsd-o-card-list__items ">
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://vrs.ga4gh.org/en/stable/index.html" class="nhsd-a-box-link " aria-label="Read the GA4GH VRS spec">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">GA4GH Variation Representation Specification</h1>
+                                    <p class="nhsd-t-body-s">GA4GH guidance for representation of variant information</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://ckm.openehr.org/ckm/projects/1013.30.50" class="nhsd-a-box-link " aria-label="Read the OpenEHR data sandard">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">OpenEHR Genomics Data Standard</h1>
+                                    <p class="nhsd-t-body-s">Archetypes and templates related to the field of genomics.</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://ckm.apperta.org/ckm/projects/1051.61.64" class="nhsd-a-box-link " aria-label="Read the OpenEHR pharmacogenomics data sandard">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">OpenEHR Pharmacogenomics Data Standard</h1>
+                                    <p class="nhsd-t-body-s">Project to support a proposed Pharmacogenetics-as-a-service</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://ohdsi.github.io/CommonDataModel/" class="nhsd-a-box-link " aria-label="Read the OMOP CDM specification">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">OMOP Common Data Model</h1>
+                                    <p class="nhsd-t-body-s">An open community data standard for observational data to enable reliable evidence generation</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+## API Specifications, Services and Other Resources
+
+<div class="nhsd-o-card-list">
+    <div class="nhsd-t-grid">
+        <div class="nhsd-t-row nhsd-o-card-list__items ">
+            <!-- API Catalogue -->
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://digital.nhs.uk/developer/api-catalogue" class="nhsd-a-box-link " aria-label="View the NHS Digital API Catalogue">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">NHS Digital API Catalogue</h1>
+                                    <p class="nhsd-t-body-s">National services/APIs developed by NHS England</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://digital.nhs.uk/developer/api-catalogue/multicast-notification-service" class="nhsd-a-box-link " aria-label="Read the MNS spec">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">Multicast Notifications Service</h1>
+                                    <p class="nhsd-t-body-s">MNS API Specification, an implementation of FHIR Subscriptions within NHS England</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://theprsb.org/wp-content/uploads/2020/11/Pharmacogenomics-Report_V1.0.pdf" class="nhsd-a-box-link " aria-label="Read the Pharmacogenomic information usage guidance">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">PRSB Pharmacogenomic report</h1>
+                                    <p class="nhsd-t-body-s">PRSB Guidance for using pharmacogenomic information in clinical practice</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://digital.nhs.uk/services/patient-care-aggregator" class="nhsd-a-box-link " aria-label="Read the Wayfinder spec">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">Patient Care Aggregator</h1>
+                                    <p class="nhsd-t-body-s">NHS England Patient Care Aggregator Service. Potential patient facing service for viewing genomic tests and results</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://www.nw-gmsa.nhs.uk/about-us/our-projects/spotlight" class="nhsd-a-box-link " aria-label="Read the PROGRESS project background">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">NW GMSA PROGRESS project</h1>
+                                    <p class="nhsd-t-body-s">Pharmacogenetics Roll Out – Gauging Response to Service (PROGRESS) programme, investigating providing an NHS-wide diagnostic service to identify genetic changes associated with commonly prescribed drugs</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://www.england.nhs.uk/wp-content/uploads/2018/12/13-dcb-3003-plcm-reqs-spec-for-dcb.pdf" class="nhsd-a-box-link " aria-label="Read the PLCM specification">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">Patient Level Contract Monitoring</h1>
+                                    <p class="nhsd-t-body-s">Patient Level Contract Monitoring (PLCM) Standard, for enabling interchange of monthly patient level contract monitoring data between commissioners and providers of healthcare</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://www.ncbi.nlm.nih.gov/gtr/" class="nhsd-a-box-link " aria-label="View the GTR system">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h1 class="nhsd-t-heading-s">NIH Genetic Testing Registry</h1>
+                                    <p class="nhsd-t-body-s">The Genetic Testing Registry (GTR) provides a central location for voluntary submission of genetic test information by providers</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
                                     <span class="nhsd-a-button nhsd-a-button--invert">

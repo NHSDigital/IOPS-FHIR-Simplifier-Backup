@@ -251,7 +251,9 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 #### extension:additionalContact
 Extension used for recording additional personnel who should be contacted regarding questions related to a test order. This is separate from the requester or reporting address.
 
-The additional contact SHOULD be a reference to a PractitionerRole resource wherever possible.
+The additional contact SHOULD be a reference to a PractitionerRole resource wherever possible and SHALL contain contact details for the practitioner.
+
+Additionally, where are there multiple practitioners involved in providing care who need to be listed as contacts, the contact details for each practitioner (or service) SHOULD be specified through additional additionalContact entries.
 ```json
 {
     "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
@@ -380,7 +382,7 @@ Code SHOULD contain the CI or CITT Test Directory code, currently available at h
 <a name="orderDetail"></a>
 #### orderDetail
 If multiple codes are being requested within one Test Order, these SHOULD be represented using the 'orderDetail' field, with the main indication captured using the 'code' field above. If completely separate pathways/samples etc. are required for processing against the codes, it is expected these would be requested via multiple ServiceRequests instead of a single ServiceRequest with multiple orderDetail codes. The exact cut-off for when orderDetail vs. multiple ServiceRequest should be used is still being investigated. 
-An appropriate code(Panel codes) SHOULD come from the following NamingSystem: {{pagelink:England-GenomicTestPanelCodes}}
+An appropriate code(Panel codes) SHOULD come from the following NamingSystem: {{pagelink:England-GenomicTestPanelCode}}
 ```json
 "orderDetail": [
     {
@@ -433,7 +435,9 @@ SHALL be populated on all ServiceRequests submitted to the central GMS. This SHA
 
 <a name="performer"></a>
 #### performer
-If a requester wants to assign processing of the ServiceRequest to a particular organization (e.g. a remote GLH) as opposed to leaving the ServiceRequest open, to be picked up by the local GLH or otherwise routed based on by test routing (TBC), then the performer field SHOULD be populated with the ODS code for the organization.
+Allows a requester to assign processing of the ServiceRequest to a particular organization (e.g. a remote GLH). The performer field SHOULD be populated with the ODS code for the managing organization/GLH. 
+
+In the future state, ServiceRequests may be kept open, by not specifying a performer, allowing them to be picked up by the local GLH or otherwise routed based on by test routing (TBC). 
 ```json
 "performer": [
         {

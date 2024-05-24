@@ -87,8 +87,9 @@ Examples shown include statuses such as:
 
 The requirement for interoperability is to provide test status updates at the point when the activity leaves and is received at the next organisational boundary. This will require LIMS systems to be able to tie in with the central broker and provide updates on the status of the test request. 
 
-In the solution proposed all updates to tasks in terms of their statuses are expected to be manually driven by organisation controls. The central service will have limited capability to automatically update organisation tasks on their behalf. This is to avoid IG issues and ensure
-provenance is managed accurately.
+In the solution proposed all updates to tasks in terms of their statuses are expected to be manually driven by organisation controls. The central service will have limited capability to automatically update organisation tasks on their behalf. This is to avoid IG issues and ensure provenance is managed accurately.
+
+It is the responsibility of the current owner of a Task to correctly assign follow-on tasks to organizations for next steps in order fulfillment. If the next organization to fulfil a Task is not known, and cannot be found out, it is expected the Task would be reassigned to the managing entity/home GLH for onward routing. 
 
 ### Automated updates
 

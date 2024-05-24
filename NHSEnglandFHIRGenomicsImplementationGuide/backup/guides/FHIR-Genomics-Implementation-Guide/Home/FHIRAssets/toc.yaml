@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: SearchParameters
-  filename: SearchParameters.page.md
 - name: Profiles
   filename: Profiles
 - name: Extensions
@@ -20,3 +18,7 @@
   filename: MessageDefinitions
 - name: NamingSystem
   filename: NamingSystem
+- name: SearchParameters
+  filename: SearchParameters
+- name: GraphDefinitions
+  filename: GraphDefinitions
