@@ -28,3 +28,5 @@ Genomic Medicine Service Unique Order Number
   <h3>JSON View</h3>
 {{json:https://fhir.nhs.uk/Id/GMSOrder}}
 </div>
+
+---

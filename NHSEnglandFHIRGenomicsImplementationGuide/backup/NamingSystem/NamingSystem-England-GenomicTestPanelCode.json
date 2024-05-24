@@ -1,0 +1,43 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "England-GenomicTestPanelCode",
+  "name": "EnglandGenomicTestPanelCode",
+  "status": "draft",
+  "kind": "codesystem",
+  "date": "2023-05-23",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "name": "NHS Genomic Medicine Service",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "england.genomics@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "responsible": "NHS Genomic Interop Programme",
+  "description": "NamingSystem for Genomic Test Panel Codes",
+	"usage": "Used to define the system for Genomic Test Panel codes within ServiceRequest resources",
+  "uniqueId":  [
+    {
+      "type": "uri",
+      "value": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestPanelCode",
+      "preferred": true
+    }
+  ]
+}

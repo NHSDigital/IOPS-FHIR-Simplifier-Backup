@@ -80,6 +80,16 @@ Bundles within Genomics will be limited to Transactions for Test orders and upda
                         {{pagelink:Bundle-WGSTestOrderForm-Example}}
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        {{pagelink:Bundle-TransactionResponseError-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{pagelink:Bundle-TransactionResponseSuccess-Example}}
+                    </td>
+                </tr>
             </table>
         </div>
         <div id="Constraints" role="tabpanel" class="tab-pane">

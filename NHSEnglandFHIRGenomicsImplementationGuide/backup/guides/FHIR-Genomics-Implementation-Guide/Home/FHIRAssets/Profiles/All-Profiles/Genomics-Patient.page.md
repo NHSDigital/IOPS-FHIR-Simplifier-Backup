@@ -198,9 +198,14 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 ### Additional Guidance
 
+- <a href="#extension:birthSex">extension:birthSex</a>
 - <a href="#identifier">identifier</a>
 - <a href="#generalPractitioner">generalPractitioner</a>
 - <a href="#link">link</a>
+
+<a name="extension:birthSex"></a>
+### extension:birthSex
+Extension used for recording the patient gender.
 
 <a name="identifier"></a>
 #### identifier

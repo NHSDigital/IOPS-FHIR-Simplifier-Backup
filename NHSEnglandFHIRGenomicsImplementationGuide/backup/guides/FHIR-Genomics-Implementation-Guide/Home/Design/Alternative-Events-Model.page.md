@@ -5,7 +5,7 @@ The mechanism for notifications, e.g. regarding test status updates, is still un
 The two main mechanisms for implementing Pub/Sub notification mechanisms are the National Events Management Service (NEMS) or native FHIR Subscriptions. 
 
 NEMS is described in https://digital.nhs.uk/services/national-events-management-service
-The FHIR Workflow approach is described on the {{pagelink:Interactions}} page
+The FHIR Workflow approach is described on the {{pagelink:Interactions}} page, FHIR subscription event notifications are described within the [Subscriptions Backport IG](https://build.fhir.org/ig/HL7/fhir-subscription-backport-ig/)
 
 ## Publishing and receiving requirements
 The Events model to be used is still under discussion. As such, no publishing and receiving requirements have yet been defined. 

@@ -7,8 +7,8 @@ The Bundle uses the following resource to carry the related business entity info
 
 **Test Request Summary** - This business entity is used to capture details of the test and supporting information from the requestor and uses the ServiceRequest FHIR resource.
 
-The data items and resources used in the Request Bundle are mapped from the Genomics Minimum Dataset ({{pagelink:Home/Design/Clinicalheadings}})
+The data items and resources used in the Request Bundle are mapped from the Genomics Minimum Dataset ({{pagelink:Home/Design/Clinicalheadings}}) and are defined in FHIR through the {{pagelink:GraphDefinition-Genomics-Test-Order}} GraphDefinition.
 
-The following diagram identifies key fhir resources included within a Genetic Testing Request bundle, and how these resources are related.
+The following diagram illustrates key fhir resources included within a Genetic Testing Request bundle, and how these resources are related.
 
 {{render:diagrams-gms-test-request-logical-model-v2}}

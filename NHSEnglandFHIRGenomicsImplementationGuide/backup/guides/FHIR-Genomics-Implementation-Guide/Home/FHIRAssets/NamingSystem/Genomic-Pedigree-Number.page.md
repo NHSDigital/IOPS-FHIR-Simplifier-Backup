@@ -28,3 +28,5 @@ Clinical genetics no/pedigree number
   <h3>JSON View</h3>
 {{json:https://fhir.nhs.uk/Id/genomics-pedigree-number}}
 </div>
+
+---

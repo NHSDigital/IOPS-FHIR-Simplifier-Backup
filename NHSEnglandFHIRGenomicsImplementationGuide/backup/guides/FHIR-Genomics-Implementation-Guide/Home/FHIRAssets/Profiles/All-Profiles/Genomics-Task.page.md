@@ -266,24 +266,24 @@ This element will not be used within the Genomic Medicine Service. The ServiceRe
 
 <a name="status"></a>
 #### status
-Initially, automatically populated by the central service upon instantiation. Tasks will be first marked as 'requested' until accepted/claimed by an organization, or marked as 'draft' if their prerequisities have not been satisfied. Upon acceptance, the owning organization is responsible for updating the status up until completion (or if the owning organization is not integration into the GMS, the organization who has referred the task to the unintegrated org).
+Initially, automatically populated by the central service upon instantiation. Tasks will be first marked as 'draft' until their prerequisites have been satisfied, after which they will be marked as 'requested' until accepted/claimed by an organization. Upon acceptance, the owning organization is responsible for updating the status up until completion (or if the owning organization is not integrated into the GMS, the organization who has referred the task to the unintegrated org).
 
-For the full list of expected Task statuses in use by the GMS, please refer to the table below: 
+For the full list of expected Task statuses in use by the GMS, please refer to the table below. For the allowed Task status transitions, please see the [FHIR R4 Task state machine model](https://www.hl7.org/fhir/R4/task.html#statemachine). 
 
 |Status|Description|Genomic workflow usage|
 |--|--|--|
-|Draft|The task is not yet ready to be acted upon.|May be used for tasks which require prerequisite tasks to be completed first|
-|Requested|The task is ready to be acted upon and action is sought.|Initial state of tasks when created|
-|Received|A potential performer has claimed ownership of the task and is evaluating whether to perform it.|Most likely not used unless tasks are automatically assigned by the central service, e.g. to GLH|
-|Accepted|The potential performer has agreed to execute the task but has not yet started work.|When assigned|
-|Rejected|The potential performer who claimed ownership of the task has decided not to execute it prior to performing any action.|Most likely used if an organization was assigned to a task but is unable to perform work against it|
-|Ready|The task is ready to be performed, but no action has yet been taken. Used in place of requested/received/accepted/rejected when request assignment and acceptance is a given.|Tasks ready to be picked up when prerequisites are satisfied|
-|Cancelled|The task was not completed.|Most likely used when a task has been created but later identified as unneeded, e.g. due to modifications to test order|
-|In Progress|The task has been started but is not yet complete.|When work has commenced|
-|On Hold|The task has been started but work has been paused.|May need to state reason why work is on hold e.g. awaiting sample|
-|Failed|The task was attempted but could not be completed due to some error.|Indicates the task cannot continue, if modifications to the test order allow the task to be resumed, a new task should be created|
-|Completed|The task has been completed.|Once complete|
-|Entered in Error|The task should never have existed and is retained only because of the possibility it may have used.|Unused|
+|Draft|The task is not yet ready to be acted upon.|Initial state for Tasks. Used for tasks which require prerequisite tasks to be completed first.|
+|Requested|The task is ready to be acted upon and action is sought.|Status indicating a task can be worked on/claimed, all prerequisites have been satisfied.|
+|Received|A potential performer has claimed ownership of the task and is evaluating whether to perform it.|NOT USED within Genomics as Tasks will be polled for rather than being sent out to assigned organizations. Most likely not used unless tasks are automatically assigned and organizations are notified by the central service, e.g. to GLH.|
+|Accepted|The potential performer has agreed to execute the task but has not yet started work.|Used when an assigned owner has accepted the task after being assigned.|
+|Rejected|The potential performer who claimed ownership of the task has decided not to execute it prior to performing any action.|Used if an organization was assigned to a task but is unable to perform work against it. It is expected if an alternative organization can be assigned, this is done as an owner update rather than marking the task as rejected. If subsequent work does occur, a duplicate task will need to be created as the 'rejected' state is a terminal one.|
+|Ready|The task is ready to be performed, but no action has yet been taken. Used in place of requested/received/accepted/rejected when request assignment and acceptance is a given.|NOT USED within Genomics as it is not assumed that Tasks will be automatically accepted when prerequisites are satisfied.|
+|Cancelled|The task was not completed.|Used when a task has been created but later identified as unneeded, e.g. due to modifications to test order such as the ServiceRequest being cancelled.|
+|In Progress|The task has been started but is not yet complete.|When work has commenced.|
+|On Hold|The task has been started but work has been paused.|A holding state where work is expected to continue but is being blocked through some external issue. Suppliers will need to state reason why work is on hold through the statusReason field e.g. Awaiting Sample.|
+|Failed|The task was attempted but could not be completed due to some error.|Indicates the task cannot continue and is unrcoverable without external intervention. If modifications to the test order allow the task to be resumed, a new task should be created e.g. a new sample is provided to replace a previous sample which has failed quality control.|
+|Completed|The task has been completed.|Marked once all actions against a task are complete, and follow on Tasks can commence.|
+|Entered in Error|The task should never have existed and is retained only because of the possibility it may have used.|May be used if user created Tasks are created in error, e.g. duplicate Tasks|
 
 ```json
 "status": "rejected",
@@ -391,8 +391,9 @@ The original requester of the ServiceRequest the Task is fulfilling. Autopopulat
 
 <a name="owner"></a>
 #### owner
-Autopopulated by the central service if a performer is assigned at Test submission. (By default this is the Home GLH for the submitting organization. The Home GLH SHOULD remain the owner for the Process Genomic Test Task, throughout the test order-fulfillment process).
-Otherwise updated by the organization claiming the task (though this could also be autopopulated if automated per test routing tables are integrated into the central service functionality). Owner SHOULD be populated using organization ODS code references.
+Autopopulated by the central service if a performer is assigned at Test submission. By default, this will the Home GLH for the submitting organization, unless an alternative is specified. The Home GLH/original performer (managing entity) SHOULD remain the owner for the Process Genomic Test Task, throughout the test order-fulfillment process.
+
+This field can be updated by the organization claiming the task (though this could also be autopopulated if automated per test routing tables are integrated into the central service functionality). Owner SHOULD be populated using organization ODS code references.
 
 Tasks assigned to a particular organization SHOULD then be searched for using the `owner` search parameter with the `:identifier` modifier i.e. `[base]/Task?owner:identifier=8J834` or `[base]/Task?owner:identifier=https://fhir.nhs.uk/Id/ods-organization-code|8J834`
 ```json
