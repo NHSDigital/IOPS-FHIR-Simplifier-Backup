@@ -1,5 +1,9 @@
 ## {{page-title}}
 
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
+    <b>Important</b>: This profile is not in scope for iterations 1 and 2, therefore <b>MUST NOT</b> be sent by provider systems, nor ingested by consuming systems. Should the provider (sender) includes this profile in the payload then the consumer (receiver) <b>MUST</b> reject the entire ITK3 payload with the ITK3 acknowledgement response code <b><code>20009</code> - Payload validation failure</b>.
+</div>
+
 <!--// start of code snippet -->
 <div>
     <ul class="nav nav-tabs" role="tablist">

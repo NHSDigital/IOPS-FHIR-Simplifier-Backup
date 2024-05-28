@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Information gathering
+  filename: Information-gathering.page.md
+- name: Transfer degraded drug / non-drug allergies
+  filename: Transfer-degraded-drug-non-drug-allergies.page.md
