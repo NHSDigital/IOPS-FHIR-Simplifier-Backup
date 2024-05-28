@@ -212,7 +212,7 @@ Multiple identifiers MAY be assigned to a sample as it travels between labs. Eac
 
 <a name="status"></a>
 #### status
-If a sample has not been collected or the quality is such that is cannot be processed, it SHALL be marked as 'unavailable' or 'unsatisfactory', respectively. Otherwise the sample SHOULD be marked as available.
+If a sample has not been collected (set status='unavailable') or if the quality is such that it cannot be processed (set status='unsatisfactory'),respectively, these statusES means FAILED. Otherwise if the quality of sample provided is good (set status='available'), and the status means PASSED.
 ```json
 "status": "unavailable",
 ```

@@ -11,6 +11,20 @@
 			}
 		]
 	},
+	"extension": [
+		{
+			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+						"code": "M",
+						"display": "Male"
+					}
+				]
+			}
+		}
+	],
 	"identifier": [
 		{
 			"system": "https://fhir.nhs.uk/Id/nhs-number",
@@ -40,7 +54,6 @@
 			"family": "Lieberman"
 		}
 	],
-	"gender": "male",
 	"birthDate": "2005-12-19",
 	"address": [
 		{
