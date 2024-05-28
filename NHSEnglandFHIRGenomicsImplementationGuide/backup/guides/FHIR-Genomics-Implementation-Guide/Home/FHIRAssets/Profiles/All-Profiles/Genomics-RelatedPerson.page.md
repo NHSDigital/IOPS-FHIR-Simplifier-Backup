@@ -116,6 +116,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 ### Additional Guidance
 
 - <a href="#patient">patient</a>
+- <a href="#identifier">identifier</a>
 - <a href="#relationship">relationship</a>
 
 <a name="patient"></a>
@@ -128,6 +129,24 @@ SHALL be provided. This SHOULD be a reference to the Patient resource or the ide
             "value": "9999999999"
         }
     },
+```
+
+<a name="identifier"></a>
+#### identifier
+This SHOULD be NHS number or local identifier (if NHS number is unavailable e.g. for non UK residents). If a local identifier is used, an assigner SHALL be provided.
+The RelatedPerson.identifier field SHALL match the identifier used for a FamilyMemberHistory resource if the same person is being referenced.
+```json
+   "identifier": {
+      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+      "value": "FT-RWT13521",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "RAX"
+        }
+      }
+    }
+  }
 ```
 
 <a name="relationship"></a>

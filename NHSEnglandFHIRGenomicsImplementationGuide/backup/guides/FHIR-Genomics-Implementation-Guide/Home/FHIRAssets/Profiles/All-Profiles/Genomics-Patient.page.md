@@ -198,14 +198,28 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 ### Additional Guidance
 
-- <a href="#extension:birthSex">extension:birthSex</a>
+- <a href="#extension:UKCore-birthSex">extension:UKCore-birthSex</a>
 - <a href="#identifier">identifier</a>
 - <a href="#generalPractitioner">generalPractitioner</a>
 - <a href="#link">link</a>
 
-<a name="extension:birthSex"></a>
-### extension:birthSex
-Extension used for recording the patient gender.
+<a name="extension:UKCore-birthSex"></a>
+### extension:UKCore-birthSex
+Extension used for recording the phenotypic sex of the patient, as recorded at birth.
+```json
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+            "code": "M",
+            "display": "Male"
+          }
+        ]
+      }
+    }
+  ```
 
 <a name="identifier"></a>
 #### identifier
