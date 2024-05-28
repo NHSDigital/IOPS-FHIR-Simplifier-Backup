@@ -3,7 +3,6 @@
   <id value="MCED-CancerMarkersDetectedSingleProbableSite-Example" />
   <meta>
     <lastUpdated value="2020-09-20T10:22:00+00:00" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
   </meta>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
@@ -141,9 +140,6 @@
     <resource>
       <Patient>
         <id value="9e64b25a-c5db-4ac8-9bd5-8e93ca3df299" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        </meta>
         <identifier>
           <system value="https://ScreeningOrg/patient-id" />
           <value value="NHS-AB12-CD34" />

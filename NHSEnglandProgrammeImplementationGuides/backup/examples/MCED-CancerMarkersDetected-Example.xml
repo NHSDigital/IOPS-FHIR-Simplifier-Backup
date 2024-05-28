@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="MCED-CancerMarkersDetected-Example" />
+  <meta>
+    <lastUpdated value="2020-09-20T09:12:00+00:00" />  
+  </meta>  
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
     <value value="f36927ef-7703-45ed-b0e5-6ec6723cf0f6" />

@@ -115,7 +115,7 @@ Details about the service, including the days, times, dates during which the ser
 
 ### Location
 
-Describe the location from which the service is offered
+Describe the location from which the Healthservice is offered
 
 <table class="assets">
 <thead>
@@ -156,7 +156,7 @@ Describe the location from which the service is offered
 
 ### Schedule
 
-<tabl#e class="assets">
+<table class="assets">
 <thead>
   <tr>
     <th>Source Data item</th>
