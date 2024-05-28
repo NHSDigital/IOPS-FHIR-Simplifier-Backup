@@ -1,18 +1,2 @@
-- name: Development introduction
-  filename: Development-introduction
-- name: Resource population fundamentals
-  filename: Resource-population-fundamentals
-- name: Using lists to return data
-  filename: Using-lists-to-return-data
-- name: Linkages
-  filename: Linkages
-- name: Search
-  filename: Search
-- name: Multi area searches
-  filename: Multi-area-searches
-- name: API version compatibility
-  filename: API-version-compatibility
-- name: Configuration for supported clinical areas
-  filename: Configuration-for-supported-clinical-areas
-- name: Cross capability concerns
-  filename: Cross-capability-concerns
+- name: Integrate with Spine
+  filename: Integrate-with-Spine

@@ -4,9 +4,6 @@ The delivery for all data items from the PRSB Community Pharmacy standard (GP Ma
 
 This page highlights all the FHIR profiles required to represent the data, and which iteration it will be due in.
 
-The iterations themselves will be managed via GP IT Framework Roadmap Items.
-
-
 ### Key
 <span class="nhsd-a-tag nhsd-a-tag--bg-light-red">ITK3</span> Required by ITK3
 <br />

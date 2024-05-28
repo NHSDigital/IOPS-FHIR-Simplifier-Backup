@@ -1,9 +1,5 @@
 - name: Introduction
   filename: Introduction
-- name: Information governance
-  filename: Information-Governance
-- name: Design decisions
-  filename: Design-decisions
 - name: How to use this implementation guidance
   filename: How-to-use-this-implementation-guidance
 - name: Release notes

@@ -1,3 +1,0 @@
-## {{page-title}}
-
-The Immunization FHIR profile contains elements to denote that a vaccination does not count towards immunity. This could be applied where a vaccination is suspected or found to be ineffective, for example as a result of a product recall or cold chain break. GP clinical systems do not have a standard means to identify an ineffective vaccination. Hence, immunisation records will always be returned as counting towards immunity.
