@@ -23,7 +23,7 @@ It is expected that practitioner and organization details for GPs will be refere
 |Patient - Country|Patient.address.country|PID-11.6|Patient's home country.|
 |Patient - Life status at time of request|Patient.deceasedBoolean (would be replaced by deceasedDateTime if date of death is known), representation of unknown implied by deceasedBoolean not being present|PID-30|Patient's alive or deceased status.|
 |Patient - Ethnicity|Patient.extension:EthnicCategory|PID-22|Patient's ethnicity. Will have the option 'unknown' available.|
-|Patient - Sex assigned at birth,<br/>Patient - Observed Sex|Patient.extension:birthSex,<br/>Patient.gender|PID-8|Patient's phenotypic sex classification. The external physical characteristics of the person. Currently determined by the Dr at birth. Gender for PLCM.|
+|Patient - Sex assigned at birth|Patient.extension:birthSex|PID-8|Patient's phenotypic sex classification. The external physical characteristics of the person. Currently determined by the Dr at birth. Gender for PLCM.|
 |Patient - Organisation responsibile for GP practice ODS code|N/A obtained through parent of GP Practice as recorded within ODS, obtained through Patient.generalPractitioner|PD1-4.14|ODS code of organisation responsible for the GP Practice where the patient is registered.|
 |Patient - GP Practice ODS Code|Patient.generalPractitioner.identifier (with system matching ODS NamingSystem)|PD1-4.14|Patient's GP practice ODS code.|
 |Patient - Gender Identity same as at birth|N/A inferred through difference between Patient.extension:birthSex and Patient.extension:patient-genderIdentity|N/A - not part of the HL7v2 standard, though PID-8 or an OBX segment could be used|Confirmation if the patient's gender is the same as at birth.|

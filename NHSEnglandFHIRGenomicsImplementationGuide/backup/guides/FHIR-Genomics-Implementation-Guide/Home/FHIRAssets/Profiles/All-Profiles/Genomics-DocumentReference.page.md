@@ -1,6 +1,8 @@
 ## {{page-title}}
 
-The Genomics-DocumentReference is currently based on the HL7 international version of the resource as the UKCore-DocumentReference profile is still in a draft status. Once this profile becomes active in UKCore its suitability for use and need for profiling within Genomics will be assessed. 
+The DocumentReference resource is used to reference data files generated as part of genomic testing and allow these files to be retrieved through the [DRS API standard](https://www.ga4gh.org/news_item/drs-api-enabling-cloud-based-data-access-and-retrieval/).
+
+The Genomics-DocumentReference is currently based on the HL7 international version of the resource as the UKCore-DocumentReference profile is still in a draft status (and is pending use cases from the Unified Genomic Record project). Once this profile becomes active in UKCore its suitability for use and need for profiling within Genomics will be assessed. 
 
 The base DocumentReference resource is provided below for completeness.
 
@@ -86,3 +88,75 @@ The base DocumentReference resource is provided below for completeness.
         </div>
     </div>
 </div>
+
+<br>
+
+### Additional Guidance
+
+- <a href="#subject">subject</a>
+- <a href="#author">author</a>
+- <a href="#description">description</a>
+- <a href="#content">content</a>
+- <a href="#context">context</a>
+
+<a name="subject"></a>
+#### subject
+Reference to the Patient this data file is pertaining to. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+```json
+"subject": {
+        "reference": "Patient/Patient-MeirLieberman-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+        }
+    },
+```
+
+<a name="author"></a>
+#### author
+SHOULD reference the organization responsible for creating the data file, preferably by ODS code.
+```json
+"performer":  [
+        {
+            "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "REP"
+            }
+        }
+    ],
+```
+
+<a name="description"></a>
+#### description
+Human readable description for the data file. NOTE: this is being used in place of DocumentReference.type until suitable LOINC or SNOMED CT concepts are identified for the file types expected.  
+```json
+ "description": "Phenotype Report",
+```
+
+<a name="content"></a>
+#### content
+SHOULD be a DRS compatible reference to the data file.   
+```json
+"content": [
+    {
+      "attachment": {
+        "contentType": "application/json",
+        "url": "drs://drs.genomicsengland.nhs.uk/ga4gh/drs/v1/objects/42375e7d-071c-4eb3-b1c8-cec11e245cf0",
+        "title": "PharmCAT JSON report"
+      }
+    }
+  ],
+```
+
+<a name="context"></a>
+#### context
+SHOULD reference the DiagnosticReport related to the data file, where this exists.
+```json
+"context": {
+    "related": [
+      {
+        "reference": "DiagnosticReport/DiagnosticReport-AnitaLamberts-Example"
+      }
+    ]
+  }
+```
