@@ -6,11 +6,11 @@
 
 <plantuml>
 @startuml
+Organization "1" *-- "many" OrganizationAffiliation : contains
+Organization "1" *-- "1" HealthcareService : contains
+HealthcareService "1" *-- "many" Locations : contains
 HealthcareService "1" *-- "many" Schedule : contains
 Schedule "1" *-- "many" Slot : contains
-HealthcareService "1" *-- "many" Locations : contains
-HealthcareService "1" *-- "1" Organization : contains
-Organization "1" *-- "1" OrganizationAffiliation : contains
 @enduml
 </plantuml>
 
@@ -115,7 +115,7 @@ Details about the service, including the days, times, dates during which the ser
 
 ### Location
 
-Describe the location from which the Healthservice is offered
+Describe the location from which the HealthcareService is offered
 
 <table class="assets">
 <thead>

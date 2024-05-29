@@ -8,5 +8,8 @@ This is a list of current known DoS systems:
 - UEC DoS
 - NHS UK Service Search (multiple versions)
 
-Further information on DoS published content can be found here: https://digital.nhs.uk/services/directory-of-services-dos
+Further information on DoS published content can be found here: 
+<a href='https://digital.nhs.uk/services/directory-of-services-dos' target="_blank"> Directory of Services (DoS) </a>
+
+
 
