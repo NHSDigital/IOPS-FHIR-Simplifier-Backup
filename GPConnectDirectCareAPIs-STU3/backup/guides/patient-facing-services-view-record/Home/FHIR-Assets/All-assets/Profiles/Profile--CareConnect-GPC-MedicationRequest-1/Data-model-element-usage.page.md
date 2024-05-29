@@ -55,7 +55,7 @@
         <!-- extension(repeatInformation) -->
         <tr>
             <td>extension(repeatInformation)</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
@@ -150,6 +150,11 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-times text-danger"></i></td>
         </tr>
+            <td>supportingInformation</td>
+            <td><span class="mro-circle optional" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-times text-danger"></i></td>
+        </tr>
         <!-- authoredOn -->
         <tr>
             <td>authoredOn</td>
@@ -198,6 +203,13 @@
             <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- dispenseRequest.numberOfRepeatsAllowed -->
+        <tr>
+            <td>dispenseRequest.numberOfRepeatsAllowed</td>
+            <td><span class="mro-circle optional" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-times text-danger"></i></td>
         </tr>
         <!-- dispenseRequest.quantity -->
         <tr>

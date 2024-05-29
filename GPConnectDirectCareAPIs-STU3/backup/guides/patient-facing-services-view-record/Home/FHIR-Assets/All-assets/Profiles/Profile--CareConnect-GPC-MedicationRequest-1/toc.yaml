@@ -46,6 +46,8 @@
   filename: subject.page.md
 - name: context
   filename: context.page.md
+- name: supportingInformation
+  filename: supportingInformation.page.md
 - name: authoredOn
   filename: authoredOn.page.md
 - name: requester
@@ -62,6 +64,8 @@
   filename: dosageInstruction.page.md
 - name: dispenseRequest.validityPeriod
   filename: dispenseRequest.validityPeriod.page.md
+- name: dispenseRequest.numberOfRepeatsAllowed
+  filename: dispenseRequest.numberOfRepeatsAllowed.page.md
 - name: dispenseRequest.quantity
   filename: dispenseRequest.quantity.page.md
 - name: dispenseRequest.expectedSupplyDuration
