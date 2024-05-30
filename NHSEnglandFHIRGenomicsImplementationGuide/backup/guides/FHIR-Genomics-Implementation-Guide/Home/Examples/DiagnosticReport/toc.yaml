@@ -12,3 +12,5 @@
   filename: DiagnosticReport-MichaelJonesReport.page.md
 - name: DiagnosticReport-MichaelJonesReport-Minimal
   filename: DiagnosticReport-MichaelJonesReport-Minimal.page.md
+- name: DocumentReference
+  filename: DocumentReference
