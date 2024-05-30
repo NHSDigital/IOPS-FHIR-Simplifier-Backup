@@ -21,6 +21,11 @@ The following terms are of particular relevance to this implementation guide:
             <td>An international standard for electronic data interchange, used as the basis for the <b>PMIP EDIFACT (NHS003)</b> messaging specification.</td>
         </tr>
         <tr>
+            <td>FHIR</td>
+            <td>Fast Healthcare Interoperability Resources</td>
+            <td>An HL7 standard for exchanging healthcare information electronically.</td>
+        </tr>
+        <tr>
             <td>HCP</td>
             <td>Healthcare Professional</td>
             <td>Any healthcare worker responsible for the care of patients.</td>
@@ -56,9 +61,14 @@ The following terms are of particular relevance to this implementation guide:
             <td>The Pathology Bounded Code List (PBCL) was developed to provide a defined or bounded subset of Read codes for use in laboratory to GP messaging. It is currently used in conjunction with the <b>PMIP EDIFACT (NHS003)</b> messaging specification. A set of semantically equivalent <b>SNOMED PBCL</b> concepts have since been created.</td>
         </tr>
         <tr>
+            <td>PMEP</td>
+            <td>Pathology Messaging Enabler Programme</td>
+            <td>A programme that was established by the NHS to define what became known as the <b>PMIP EDIFACT (NHS003)</b> messaging specification, and set up the required infrastructure to support its use.</td>
+        </tr>
+        <tr>
             <td>PMIP</td>
             <td>Pathology Messaging Implementation Programme</td>
-            <td>An implementation programme that was established to support the adoption of the <b>PMIP EDIFACT (NHS003)</b> messaging specification.</td>
+            <td>A programme that was established by the NHS after <b>PMEP</b> to support the adoption of the <b>PMIP EDIFACT (NHS003)</b> messaging specification.</td>
         </tr>
         <tr>
             <td></td>

@@ -3219,7 +3219,7 @@ The following diagram is based on the message structure/attribute cross-referenc
   style='font-size:9.0pt;font-family:"Arial",sans-serif'> - UKCore-Specimen.identifier</span></p>
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
   1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E263</span></b><span
-  style='font-size:9.0pt;font-family:"Arial",sans-serif'> - UKCore-Specimen.identifier</span></p>
+  style='font-size:9.0pt;font-family:"Arial",sans-serif'> - UKCore-Specimen.accessionIdentifier</span></p>
   </td>
  </tr>
  <tr>
@@ -5626,13 +5626,14 @@ The constraints that need to be applied to each FHIR resource using the relevant
     </thead>
     <tbody>
         <tr>
-            <td rowspan="2">identifier</td>
+            <td>identifier</td>
             <td>E262</td>
             <td>identification of sample by laboratory service requester</td>
             <td>SG16.RFF.C506.1154</td>
             <td></td>
         </tr>
         <tr>
+            <td>accessionIdentifier</td>
             <td>E263</td>
             <td>identification of sample by laboratory service provider</td>
             <td>SG16.RFF.C506.1154</td>
