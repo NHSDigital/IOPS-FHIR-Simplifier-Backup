@@ -1,20 +1,19 @@
 ## {{page-title}}
 
   
-
 It is possible that reports can be generated as an attachment - for example, a PDF or text file.
 
-  
 
 In those instances, Update Record will allow an attachment to be provided via the FHIR Observation resource, using the `valueAttachment` element.
 
+
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
+    <b>Important</b>: Please ensure the report contains a title which clearly indicates what it is.
+</div>
   
 
-Using an Ambulatory Blood Pressure Monitoring transcript report for example:
-
-  
-  
-
+**Using an Ambulatory Blood Pressure Monitoring transcript report for example:**
+ 
 ```xml
 <Observation>
   <category>
