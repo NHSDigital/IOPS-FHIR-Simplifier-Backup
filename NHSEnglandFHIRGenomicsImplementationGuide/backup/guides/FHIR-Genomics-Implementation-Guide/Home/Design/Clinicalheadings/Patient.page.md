@@ -10,6 +10,24 @@ Mapped to Patient resource, extensions not in UKCore are under review. Represent
 
 It is expected that practitioner and organization details for GPs will be referenced from Patient.generalPractitioner (e.g. using ODS/SDS identifiers) rather than be included as FHIR resources within Test Request payloads, though the full FHIR mapping has been provided below for completeness.
 
+For Life Status at time of request for Foetal records, as per PRSB guidance, this should be inferred through outcome codes attached to the Pregnancy observation.
+
+e.g. under Observation with code 77386006, ```Observation.component.valueCodeableConcept (with Observation.component.code = 267013003 | Past pregnancy outcome (observable entity) |)```
+
+The component SNOMED codes SHOULD match the following list to map from foetal life statuses:
+
+|PRSB Prgnancy Outcome|GEL Foetal Life Status|SNOMED CT Pregnancy Outcome Code|
+|--|--|--|
+|01	Live birth|N/A - not included in GEL list|281050002 - Livebirth (finding) (or captured through Patient.extension:bornStatus)|
+|02	Antepartum Stillbirth|stillborn|713202001 - Antepartum stillbirth (finding)|
+|03	Intrapartum Stillbirth|stillborn|921611000000101 - Intrapartum stillbirth (finding)|
+|04	Stillbirth – timing unknown|stillborn|237364002 - Stillbirth (finding)|
+|05	Termination of Pregnancy equal to or greater than 24 weeks|aborted|57797005 - Induced termination of pregnancy (disorder)|
+|98	Other (not listed)|N/A not part of GEL life status ValueSet|potentially captured through Patient.extension:bornStatus = unknown|
+|N/A not mapped exactly to PRSB ValueSet|miscarriage|17369002 - Miscarriage (disorder)|
+|N/A no pregnancy outcome code|unborn|N/A no pregnancy outcome code (captured through Patient.extension:bornStatus)|
+
+
 **Profiling for Procedure is currently in progress**
 
 ### Mapping
@@ -21,7 +39,7 @@ It is expected that practitioner and organization details for GPs will be refere
 |Patient - Address|Patient.address|PID-11|Patient's home address.|
 |Patient - Postcode|Patient.address.postalCode|PID-11.5|Patient's home postcode.|
 |Patient - Country|Patient.address.country|PID-11.6|Patient's home country.|
-|Patient - Life status at time of request|Patient.deceasedBoolean (would be replaced by deceasedDateTime if date of death is known), representation of unknown implied by deceasedBoolean not being present|PID-30|Patient's alive or deceased status.|
+|Patient - Life status at time of request|Patient.deceasedBoolean (would be replaced by deceasedDateTime if date of death is known), representation of unknown implied by deceasedBoolean not being present. For Foetal records, foetal death SHOULD be recorded through the Patient.extension:bornStatus field. The type of death can be inferred through Observation components related to the mother's pregnancy observation (as in table above)|PID-30|Patient's alive or deceased status. |
 |Patient - Ethnicity|Patient.extension:EthnicCategory|PID-22|Patient's ethnicity. Will have the option 'unknown' available.|
 |Patient - Sex assigned at birth|Patient.extension:birthSex|PID-8|Patient's phenotypic sex classification. The external physical characteristics of the person. Currently determined by the Dr at birth. Gender for PLCM.|
 |Patient - Organisation responsibile for GP practice ODS code|N/A obtained through parent of GP Practice as recorded within ODS, obtained through Patient.generalPractitioner|PD1-4.14|ODS code of organisation responsible for the GP Practice where the patient is registered.|

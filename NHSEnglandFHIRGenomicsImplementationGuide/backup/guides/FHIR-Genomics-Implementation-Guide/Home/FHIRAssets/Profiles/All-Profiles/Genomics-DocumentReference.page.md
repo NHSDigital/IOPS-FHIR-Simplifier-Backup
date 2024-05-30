@@ -2,6 +2,15 @@
 
 The DocumentReference resource is used to reference data files generated as part of genomic testing and allow these files to be retrieved through the [DRS API standard](https://www.ga4gh.org/news_item/drs-api-enabling-cloud-based-data-access-and-retrieval/).
 
+Primarily, the ServiceRequest SHALL be referenced via DiagnosticReport.basedOn. The DocumentReference then links back to the report via DocumentReference.context.related.
+
+If following the Genomic Reporting IG, you could also reference the DocumentReference from the DiagnosticReport using the following chain:
+```DiagnosticReport.extension:genomic-study -> Procedure (Genomic Study).extension:genomic-study-analysis -> Procedure (Genomic Study Analysis).extension:output.extension:file.valueReference -> DocumentReference (Genomic Data File)```
+
+This requires use of the Genomic Study and Genomic Study Analysis profiles which have not yet been assessed for suitability in the UK. As such, this reference chain is only provided for reference.
+
+The NHS England Genomics unit is also investigating backporting the R5 DiagnosticReport.media.link reference to DocumentReference to support referencing the data files from the DiagnosticReport directly.
+
 The Genomics-DocumentReference is currently based on the HL7 international version of the resource as the UKCore-DocumentReference profile is still in a draft status (and is pending use cases from the Unified Genomic Record project). Once this profile becomes active in UKCore its suitability for use and need for profiling within Genomics will be assessed. 
 
 The base DocumentReference resource is provided below for completeness.
@@ -46,25 +55,13 @@ The base DocumentReference resource is provided below for completeness.
         </div>
         <div id="Examples" role="tabpanel" class="tab-pane">
             <br />
-            <!--
             <table>
                 <tr>
                     <td>
-                    {{pagelink:BodyStructure-PancreaticTumour}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:BodyStructure-BodySiteLocationLungs-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:BodyStructure-SpecimenBodySiteLocation-Example}}
+                    {{pagelink:DocumentReference-PharmCAT-Example}}
                     </td>
                 </tr>
             </table>
-            -->
         </div>
         
         <div id="Constraints" role="tabpanel" class="tab-pane">

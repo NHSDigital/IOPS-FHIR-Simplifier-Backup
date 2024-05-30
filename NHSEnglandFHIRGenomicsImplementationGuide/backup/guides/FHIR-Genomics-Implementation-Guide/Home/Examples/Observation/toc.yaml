@@ -94,6 +94,8 @@
   filename: Observation-TumourType-Example.page.md
 - name: Observation-TumourTypeKayBurbridge-Example
   filename: Observation-TumourTypeKayBurbridge-Example.page.md
+- name: Observation-UnknownConsanguinousUnionStatus-Example
+  filename: Observation-UnknownConsanguinousUnionStatus-Example.page.md
 - name: Observation-WhiteBloodCell-Example
   filename: Observation-WhiteBloodCell-Example.page.md
 - name: Observation-SampleCellContent-Example

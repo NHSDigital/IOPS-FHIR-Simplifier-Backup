@@ -276,6 +276,11 @@ Used to represent the bulk of clinical information to be sent alongside a Genomi
                     {{pagelink:Observation-TumourTypeKayBurbridge-Example}}
                     </td>
                 </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-UnknownConsanguinousUnionStatus-Example}}
+                    </td>
+                </tr>
                 <tr>
                     <td>
                     {{pagelink:Observation-WhiteBloodCell-Example}}
