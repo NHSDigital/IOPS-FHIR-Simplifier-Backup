@@ -12,6 +12,8 @@
   filename: Consent
 - name: DiagnosticReport
   filename: DiagnosticReport
+- name: DocumentReference
+  filename: DocumentReference
 - name: FamilyMemberHistory
   filename: FamilyMemberHistory
 - name: MessageHeader
