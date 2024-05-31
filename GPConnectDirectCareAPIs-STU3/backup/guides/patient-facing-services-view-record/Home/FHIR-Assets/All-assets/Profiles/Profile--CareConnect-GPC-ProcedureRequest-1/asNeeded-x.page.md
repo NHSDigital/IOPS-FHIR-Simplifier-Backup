@@ -15,4 +15,19 @@ A use-case for the `asNeeded[x]` element within GP Connect has not been defined.
 <asNeededBoolean value="false" />
 ```
 
+```xml
+<category>
+    <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="171008" />
+        <display value="Injury of ascending right colon without open wound into abdominal cavity" />
+        <snomedCT>
+            <url value="https://hl7.org/fhir/valueset-medication-as-needed-reason.html" />
+        </snomedCT>
+    </coding>
+    <text value="Injury of ascending right colon without open wound into abdominal cavity">
+</category>
+```
+
+---
 ---
