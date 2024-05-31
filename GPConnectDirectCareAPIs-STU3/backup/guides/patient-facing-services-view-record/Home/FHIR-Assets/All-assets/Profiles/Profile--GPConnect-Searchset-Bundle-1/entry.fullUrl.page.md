@@ -2,7 +2,7 @@
 
 <h5><ins>Usage</ins></h5>
 
-<span class="mro-circle mandatory" title="Mandatory"></span> Mandatory
+<span class="mro-circle optional" title="Optional"></span> Optional
 
 <h5><ins>Guidance</ins></h5>
 
@@ -12,7 +12,7 @@ The fullUrl for the resource, this **MUST** be an absolute URL. The URL will not
 
 ```xml
 <entry>
-    <fullUrl value="http://exampleGPSystem.co.uk/GP0001/STU3/1/gpconnect-documents/Patient/04603d77-1a4e-4d63-b246-d7504f8bd833" />
+    <fullUrl value="Device/56C7021B-6587-49C7-AD18-6781F8FDE2C1" />
 </entry>
 ```
 

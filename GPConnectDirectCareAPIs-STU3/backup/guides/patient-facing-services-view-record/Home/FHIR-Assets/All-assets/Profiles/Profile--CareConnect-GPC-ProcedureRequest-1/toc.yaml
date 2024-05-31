@@ -70,3 +70,7 @@
   filename: bodySite.page.md
 - name: note
   filename: note.page.md
+- name: relevantHistory
+  filename: relevantHistory.page.md
+- name: relevantHistory
+  filename: relevantHistory-duplicate-2.page.md
