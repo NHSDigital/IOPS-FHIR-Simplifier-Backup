@@ -1,0 +1,39 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "DocumentReference-PharmCAT-Example",
+  "status": "current",
+  "docStatus": "final",
+  "subject": {
+    "reference": "Patient/Patient-AnitaLamberts-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "8449303649"
+    }
+  },
+  "date": "2023-11-24T09:45:00Z",
+  "author": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RJ1"
+      }
+    }
+  ],
+  "description": "Phenotype Report",
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/json",
+        "url": "drs://drs.genomicsengland.nhs.uk/ga4gh/drs/v1/objects/42375e7d-071c-4eb3-b1c8-cec11e245cf0",
+        "title": "PharmCAT JSON report"
+      }
+    }
+  ],
+  "context": {
+    "related": [
+      {
+        "reference": "DiagnosticReport/DiagnosticReport-AnitaLamberts-Example"
+      }
+    ]
+  }
+}
