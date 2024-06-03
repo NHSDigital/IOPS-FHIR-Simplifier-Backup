@@ -424,12 +424,12 @@ Used to attach inputs to a Task, if relevant. e.g. references to Specimen's whic
 Specimen references SHOULD be added to Tasks acting on Specimen resources, e.g. Tasks marked SamplePreparation or SampleProcessing. This is to clearly disambiguate which specimen a task is acting on, where multiple specimens are necessary for processing the test request. 
 ```json
 "input":  [
-        {
+    {
             "type": {
                 "coding":  [
                     {
-                        "system": "http://snomed.info/sct",
-                        "code": "123038009",
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "Specimen",
                         "display": "Specimen"
                     }
                 ]
@@ -448,13 +448,19 @@ Used to attach outputs from a Task, if relevant. e.g. VUS files during processin
 Sample tracking information SHOULD be added to Tasks acting on Specimen resources, e.g. Tasks marked SamplePreparation or SampleProcessing, on either the output or input elements. This information MAY include consignment number, destination, date sent etc. Further modelling of the types/format expected are pending clinical scenarios.
 ```json
 "output":  [
-        {
-            "type": {
-                "text": "DiagnosticReport"
-            },
-            "valueReference": {
-                "reference": "DiagnosticReport/DiagnosticReport-GenomicTesting-Example"
-            }
+       {
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                "code": "DiagnosticReport",
+                "display": "DiagnosticReport"
+              }
+            ]
+          },
+          "valueReference": {
+            "reference": "DiagnosticReport/DiagnosticReport-PhoebeSmithGeneticReport-Example"
+          }
         }
     ]
 ```

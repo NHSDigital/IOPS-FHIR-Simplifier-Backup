@@ -16,3 +16,5 @@
   filename: Bundle-TransactionResponseError-Example.page.md
 - name: Bundle-TransactionResponseSuccess-Example
   filename: Bundle-TransactionResponseSuccess-Example.page.md
+- name: Bundle-Searchset-Example
+  filename: Bundle-Searchset-Example.page.md

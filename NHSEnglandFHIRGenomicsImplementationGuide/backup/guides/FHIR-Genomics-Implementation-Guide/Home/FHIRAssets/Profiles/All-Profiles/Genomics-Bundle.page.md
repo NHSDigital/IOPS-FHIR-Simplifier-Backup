@@ -90,6 +90,11 @@ Bundles within Genomics will be limited to Transactions for Test orders and upda
                         {{pagelink:Bundle-TransactionResponseSuccess-Example}}
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        {{pagelink:Bundle-Searchset-Example}}
+                    </td>
+                </tr>
             </table>
         </div>
         <div id="Constraints" role="tabpanel" class="tab-pane">
