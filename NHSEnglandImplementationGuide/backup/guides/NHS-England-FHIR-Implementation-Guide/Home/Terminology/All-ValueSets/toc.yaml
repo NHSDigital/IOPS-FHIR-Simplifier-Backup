@@ -10,3 +10,5 @@
   filename: ValueSet-England-PeriodType.page.md
 - name: ValueSet-England-TypedDateTime
   filename: ValueSet-England-TypedDateTime.page.md
+- name: ValueSet-nhsdigital-message-events
+  filename: ValueSet-nhsdigital-message-events.page.md
