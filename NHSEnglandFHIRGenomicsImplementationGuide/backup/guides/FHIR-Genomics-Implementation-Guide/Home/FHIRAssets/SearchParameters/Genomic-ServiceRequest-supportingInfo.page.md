@@ -1,6 +1,8 @@
 ## {{page-title}}
 
-SearchParameter for searching on supportingInfo references within ServiceRequests, this also allows inclusion of the referenced resources via the _include parameter.  
+SearchParameter for searching on supportingInfo references within ServiceRequests, this also allows inclusion of the referenced resources via the _include parameter, e.g. 
+
+`GET [base]/ServiceRequest?_include=ServiceRequest:supporting-info:Consent`
 
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
