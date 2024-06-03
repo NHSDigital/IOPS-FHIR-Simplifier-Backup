@@ -4,22 +4,22 @@
 
 ## FHIR Model
 
+- An Organization provides HealthcareService(s)
+- A HealthcareService has a Schedule for the services it provides
+- A Schedule contains Slot(s) that are available for the HealthcareService
+- An Organization has an OrganizationAffiliation with another Organization
+
 <plantuml>
 @startuml
 Organization "1" *-- "many" OrganizationAffiliation : contains
 Organization "1" *-- "1" HealthcareService : contains
 HealthcareService "1" *-- "many" Locations : contains
 HealthcareService "1" *-- "many" Schedule : contains
+Schedule "1" *-- "1" PractitionerRole : contains
+PractitionerRole "1" *-- "many" Practitioner : contains
 Schedule "1" *-- "many" Slot : contains
 @enduml
 </plantuml>
-
-## FHIR Model commentary
-
-- An Organization provides HealthcareService(s)
-- A HealthcareService has a Schedule for the services it provides
-- A Schedule contains Slot(s) that are available for the HealthcareService
-- An Organization has an OrganizationAffiliation with another Organization
 
 ### Organization
 
@@ -172,6 +172,12 @@ Describe the location from which the HealthcareService is offered
     <td>Schedule.actor.HealthcareService</td>
     <td>Resource(s) that availability information is being provided for</td>
   </tr>
+  <tr>
+    <td>Actor</td>
+    <td>1..*</td>
+    <td>Schedule.actor.PractitionerRole</td>
+    <td>Resource(s) that availability information is being provided for</td>
+  </tr>
 </tbody>
 </table>
 
@@ -231,14 +237,44 @@ The dates and times a service is available to be returned in a search.
 </tbody>
 </table>
 
-<!--
+### PractitionerRole
 
-| Source Data item               | Cardinality |Target FHIR Element                 | Notes         
-|--|--|
-|Assessment Date|1..1|Flag.period.start|type: <a href='http://hl7.org/fhir/R4/datatypes.html#dateTime'>dateTime</a><br>format: YYYY-MM-DD
-|NHS Number|1..1|Flag.identifier:nhsNumber|type: <a href='http://hl7.org/fhir/R4/search.html#token'>token</a><br>system must be "https://fhir.nhs.uk/Id/nhs-number"<br>value must be a verified NHS number<br>note: a resource reference is not required for FGM-IS. E.g. - {{pagelink:Home/Build/Examples/Example---An-active-FGM-flag.page.md}} 
-|Family history of FGM indicator|1..1|Flag.code.coding|system must be "http://snomed.info/sct"<br>code must be "902961000000107"<br>display must be "Family history of FGM (female genital mutilation)"
-|Status|1..1|Flag.status|See {{pagelink:Home/FHIRAssets/Profiles/UKCore-Flag.page.md}}
-|Removal Reason|0..1|reference {{pagelink:Home/FHIRAssets/Extensions/Index.page.md}}|must be set when Flag.status is not 'active'. E.g. {{pagelink:Home/Build/Examples/Example---A-removed-FGM-flag.page.md}} <br>set on PUT /Flag interaction. E.g. {{pagelink:Home/Design/Interactions.page.md}}
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Code</td>
+    <td>0..*</td>
+    <td>PractitionerRole.code</td>
+    <td>Roles which this practitioner may perform</td>
+  </tr>
+</tbody>
+</table>
 
--->
+### Practitioner
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Practitioner name</td>
+    <td>0..1</td>
+    <td>Practitioner.name</td>
+    <td>The name(s) associated with the practitioner</td>
+  </tr>
+</tbody>
+</table>

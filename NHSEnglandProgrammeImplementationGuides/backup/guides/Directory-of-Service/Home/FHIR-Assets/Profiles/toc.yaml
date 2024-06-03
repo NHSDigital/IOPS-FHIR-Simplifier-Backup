@@ -8,6 +8,10 @@
   filename: UKCore-Organization.page.md
 - name: UKCore-OrganizationAffiliation
   filename: UKCore-OrganizationAffiliation.page.md
+- name: UKCore-Practitioner
+  filename: UKCore-Practitioner.page.md
+- name: UKCore-PractitionerRole
+  filename: UKCore-PractitionerRole.page.md
 - name: UKCore-Questionnaire
   filename: UKCore-Questionnaire.page.md
 - name: UKCore-QuestionnaireResponse
