@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Request allergies and medications from the last year
+  filename: Request-allergies-and-medications-from-the-last-year.page.md
+- name: Request medications for the last year, allergies and problems
+  filename: Request-medications-for-the-last-year-allergies-and-problems.page.md
+- name: Request a patient’s last three consultations
+  filename: Request-a-patient-s-last-three-consultations.page.md
+- name: Request a patient’s last three consultations with problems, medications and allergies
+  filename: Request-a-patient-s-last-three-consultations-with-problems-medications-and-allergies.page.md
+- name: Request child health information, medication, allergies, immunisations, problems and observations
+  filename: Request-child-health-information-medication-allergies-immunisations-problems-and-observations.page.md
+- name: Request all information that has been recorded for the patient in the last three months
+  filename: Request-all-information-that-has-been-recorded-for-the-patient-in-the-last-three-months.page.md

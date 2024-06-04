@@ -27,16 +27,16 @@
         <!-- status -->
         <tr>
             <td>status</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- serviceCategory -->
         <tr>
             <td>serviceCategory</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-times text-danger"></i></td>
         </tr>
         <!-- serviceType -->
         <tr>
@@ -69,23 +69,23 @@
          <!-- description -->
         <tr>
             <td>description</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
         </tr>
          <!-- start -->
         <tr>
             <td>start</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
         </tr>
          <!-- end -->
         <tr>
             <td>end</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
         </tr>
          <!-- minutesDuration -->
         <tr>
@@ -97,9 +97,9 @@
          <!-- slot -->
         <tr>
             <td>slot</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
         </tr>
          <!-- created -->
         <tr>
@@ -118,9 +118,10 @@
          <!-- participant -->
         <tr>
             <td>participant</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
     </tbody>
 </table>
 
