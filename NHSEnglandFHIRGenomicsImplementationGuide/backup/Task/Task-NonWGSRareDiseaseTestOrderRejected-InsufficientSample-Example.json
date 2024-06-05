@@ -49,13 +49,36 @@
             "text": "Please provide additional sample of X"
         }
     ],
-    "output":  [
+    "input": [
         {
             "type": {
-                "coding":  [
+                "coding": [
                     {
-                        "system": "http://snomed.info/sct",
-                        "code": "123038009",
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "RackId",
+                        "display": "Rack Number"
+                    }
+                ]
+            },
+            "valueIdentifier": {
+                "system": "https://www.guysandstthomas.nhs.uk/RackId",
+                "value": "RJ1-RAX01-9449307555",
+                "assigner": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RJ1"
+                    }
+                }
+            }
+        }
+    ],
+    "output": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "Specimen",
                         "display": "Specimen"
                     }
                 ]

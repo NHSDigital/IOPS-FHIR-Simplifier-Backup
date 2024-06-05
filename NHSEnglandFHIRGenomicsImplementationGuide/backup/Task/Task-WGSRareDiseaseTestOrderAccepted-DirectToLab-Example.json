@@ -2,22 +2,22 @@
   "resourceType": "Task",
   "id": "Task-WGSRareDiseaseTestOrderAccepted-DirectToLab-Example",
   "status": "accepted",
-  "statusReason": { 
+  "statusReason": {
     "coding": [
-      { 
-        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics", 
-        "code": "SpecimenReceived", 
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
+        "code": "SpecimenReceived",
         "display": "Specimen Received"
       }
     ]
   },
   "intent": "order",
   "priority": "urgent",
-  "code": { 
+  "code": {
     "coding": [
-      { 
-        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-        "code": "RequestSampleAlignment", 
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+        "code": "RequestSampleAlignment",
         "display": "Request & Sample Alignment"
       }
     ]
@@ -33,7 +33,7 @@
     }
   },
   "authoredOn": "2023-10-01T15:00:00Z",
-  "lastModified":"2023-10-10T16:00:00Z",
+  "lastModified": "2023-10-10T16:00:00Z",
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
   },
@@ -47,10 +47,10 @@
   "output": [
     {
       "type": {
-        "coding":  [
+        "coding": [
           {
-            "system": "http://snomed.info/sct",
-            "code": "123038009",
+            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+            "code": "Specimen",
             "display": "Specimen"
           }
         ]

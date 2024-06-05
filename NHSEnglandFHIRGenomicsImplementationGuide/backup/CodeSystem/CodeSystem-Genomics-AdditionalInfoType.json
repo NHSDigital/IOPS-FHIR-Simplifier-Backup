@@ -1,0 +1,58 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "AdditionalInfoTypeGenomics",
+  "url": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+  "version": "0.1.0",
+  "name": "AdditionalInfoTypeGenomics",
+  "title": "Additional Information Type Genomics",
+  "status": "draft",
+  "date": "2024-05-31T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem to specify reference to additional details of the input's use as part of the task execution or the output generated from task completion.",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Consent",
+      "display": "Consent",
+      "definition": "Consent for treatment record"
+    },
+    {
+      "code": "ConsignmentNumber",
+      "display": "Consignment Number",
+      "definition": "The specimen consignment number"
+    },
+    {
+      "code": "DiagnosticReport",
+      "display": "DiagnosticReport",
+      "definition": "The DiagnosticReport generated upon the task completion"
+    },
+    {
+      "code": "RackId",
+      "display": "Rack Number",
+      "definition": "The specimen rack number"
+    },
+    {
+      "code": "Specimen",
+      "display": "Specimen",
+      "definition": "The specimen provided for the task execution"
+    },
+    {
+      "code": "WellId",
+      "display": "Well Identification Number",
+      "definition": "The specimen well identification number"
+    }
+  ]
+}

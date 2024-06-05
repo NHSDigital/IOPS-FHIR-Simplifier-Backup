@@ -32,21 +32,21 @@ The following sequence diagram represents the ideal workflow from submission of 
 
 The numbered prefixes in the sequence diagram above translate to the following examples:
 
-1. {{pagelink:Home/Examples/Subscription/Subscription-MinimalTaskNotification-Example.page.md}}
-2. {{pagelink:Home/Examples/Bundle/Bundle-NonWGSTestOrderForm-Example.page.md}}
-3. {{pagelink:Home/Examples/Subscription/Subscription-DiagnosticReportNotification-Example.page.md}}
-4. {{pagelink:Home/Examples/Specimen/Specimen-BloodEDTA-Example.page.md}}
-5. {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-Example.page.md}} 
-6. Same resource as in 5, posted to Home GLH, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-Example.page.md}} 
-7. {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderAccepted-Example.page.md}}
-8. Same resource as in 4, with additional accession ID and processing information, {{pagelink:Home/Examples/Specimen/Specimen-BloodEDTA-Example.page.md}}
-9. Same resource as in 7, with updated businessStatus, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderHold-Example.page.md}}
+1. {{pagelink:Home/Examples/Subscription/Subscription-MinimalTaskNotification-Example.page.md}} (Subscriptions are out of scope for GOM Alpha, the short term solution will be polling the central solution for updates)
+2. {{pagelink:Home/Examples/Bundle/Bundle-NonWGSTestOrderForm-Example.page.md}} (Following the Test Order GraphDefinition)
+3. {{pagelink:Home/Examples/Subscription/Subscription-DiagnosticReportNotification-Example.page.md}} (Subscriptions are out of scope for GOM Alpha, the short term solution will be polling the central solution for updates)
+4. {{pagelink:Home/Examples/Specimen/Specimen-BloodEDTA-Example.page.md}} (The Specimen record SHOULD also be accompanied by an associated change on the ServiceRequest so this is referenced from the Test Order)
+5. {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-Example.page.md}} (The ServiceRequest SHOULD result in a library of tasks being created, as per the NGTP)
+6. Same resource as in 5, posted to Home GLH, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-Example.page.md}} (This will be a response to a poll for tasks from a filler for the GOM Alpha)
+7. {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderAccepted-Example.page.md}} (Put updates to Tasks, changing status to accepted)
+8. Same resource as in 4, with additional accession ID and processing information, {{pagelink:Home/Examples/Specimen/Specimen-BloodEDTA-Example.page.md}} (Put update to Specimen, may result in sub-specimens being created, Specimens SHOULD be associated to the relevant Tasks for their preparation/processing)
+9. Same resource as in 7, with updated businessStatus, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderHold-Example.page.md}} (Send-aways are managed though change of ownership of tasks, tasks as part of ServiceRequest fulfillment may be marked as complete in isolation, allowing follow-on tasks with other organizations to commence)
 10. Get request for tasks with focus ServiceRequest (elaborated in API CapabilityStatement)
-11. Same resource as in 9, posted to requester, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderHold-Example.page.md}}
-12. {{pagelink:Home/Examples/DiagnosticReport/DiagnosticReport-MichaelJonesReport-Minimal.page.md}}
+11. Same resource as in 9, posted to requester, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderHold-Example.page.md}} (It is expected the library of tasks would be returned allowing the placer to see a dashboard of progress)
+12. {{pagelink:Home/Examples/DiagnosticReport/DiagnosticReport-MichaelJonesReport-Minimal.page.md}} (The DiagnosticReport SHALL reference the initial ServiceRequest, and be referenced as an output froma reporting Task)
 13. Same resource as in 9, with updated status and businessStatus, {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrderAccepted-Example.page.md}}
-14. Same resource as in 12, posted to requester, {{pagelink:Home/Examples/DiagnosticReport/DiagnosticReport-MichaelJonesReport-Minimal.page.md}}
-15. Same resource as in 2, with updated status to mark the ServiceRequest as filled, {{pagelink:Home/Examples/ServiceRequest/ServiceRequest-SavedTestOrderUpdated-Example.page.md}}
+14. Same resource as in 12, posted to requester, {{pagelink:Home/Examples/DiagnosticReport/DiagnosticReport-MichaelJonesReport-Minimal.page.md}} (or included in response to a GET request on Task e.g. step 10)
+15. Same resource as in 2, with updated status to mark the ServiceRequest as filled, {{pagelink:Home/Examples/ServiceRequest/ServiceRequest-SavedTestOrderUpdated-Example.page.md}} (status=complete)
 
 ## Point-to-point messages
 

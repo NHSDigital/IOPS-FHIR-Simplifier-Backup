@@ -154,6 +154,22 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Task.input.type.coding",
+        "path": "Task.input.type.coding",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/AdditionalInfoTypeGenomics"
+        }
+      },
+      {
+        "id": "Task.output.type.coding",
+        "path": "Task.output.type.coding",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/AdditionalInfoTypeGenomics"
+        }
       }
     ]
   }
