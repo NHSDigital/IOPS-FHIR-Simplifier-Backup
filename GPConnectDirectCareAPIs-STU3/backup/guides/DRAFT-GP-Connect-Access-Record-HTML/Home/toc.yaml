@@ -2,10 +2,10 @@
   filename: Index.page.md
 - name: Introduction
   filename: Introduction
-- name: FHIR Assets
-  filename: FHIR-Assets
 - name: Design
   filename: Design
+- name: FHIR Assets
+  filename: FHIR-Assets
 - name: Build
   filename: Build
 - name: Examples

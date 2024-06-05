@@ -1,5 +1,7 @@
 - name: Introduction
   filename: Introduction
+- name: Clinical Scenarios
+  filename: Clinical-Scenarios
 - name: How to use this implementation guidance
   filename: How-to-use-this-implementation-guidance
 - name: Release notes

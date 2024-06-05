@@ -1,17 +1,18 @@
 ## {{page-title}}
 
-The Access Record Structured capability will expose data for a number of clinical areas. This release supports:
+The information sections in scope for care record access are:
+1. [Summary](accessrecord_view_summary.html)
+2. [Encounters](accessrecord_view_encounters.html)
+3. [Clinical items](accessrecord_view_clinical_items.html)
+4. [Problems and issues](accessrecord_view_problems.html)
+5. [Allergies and adverse reactions](accessrecord_view_allergies.html)
+6. [Medications](accessrecord_view_medications.html)
+7. [Referrals](accessrecord_view_referrals.html)
+8. [Observations](accessrecord_view_observations.html)
+9. [Immunisations](accessrecord_view_immunisations.html)
+10. [Administrative items*](accessrecord_view_administrative_items.html)
 
-1. Medications
-1. Allergies
-1. Immunizations
-1. Uncategorised items
-1. Consultations
-1. Problems
-1. Investigations
-1. Referrals (Outbound)
-1. Diary Entries
+**[Links above will need updating to simplifier]**
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Documents are defined in a separate <a href="https://developer.nhs.uk/apis/gpconnect-1-6-0/access_documents.html">Access Document</a> capability, which complements Access Record Structured by allowing the querying and retrieval of documents for a patient.</div>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-map"></i> <b>Roadmap:</b> Subsequent releases are to be scoped</div>
+<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
+        <i class="fas fa-exclamation-circle text-primary"></i> <b>Note:</b> sections of the patient care record (marked above with a *) may not initially be available from all primary care record Principal systems.</div>
