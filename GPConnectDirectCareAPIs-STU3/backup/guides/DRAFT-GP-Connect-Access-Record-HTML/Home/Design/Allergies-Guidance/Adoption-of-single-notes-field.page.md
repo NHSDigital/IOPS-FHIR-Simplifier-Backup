@@ -1,3 +1,0 @@
-## {{page-title}}
-
-Rather than split descriptive and user entered text across a number of notes fields the <code class="highlighter-rouge">AllergyIntolerance.note</code> element is used as the single notes field to convey all qualifiers and user-entered text associated with the allergy or intolerance in a single place. Qualifiers and values expressed as text <strong>MUST</strong> be appropriately labelled and formatted and where user notes have been entered against explicit fields such as certainty then appropriate labels <strong>MUST</strong> be used.

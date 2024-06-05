@@ -1,3 +1,0 @@
-## {{page-title}}
-
-It is expected that it will always be possible to assign a category of ‘medication’ for drug allergies or ‘environment’ for all other types of allergy/intolerance. Generally, the choice in a given system is explicit. In some cases, the type of allergy or intolerance may be more general - for example, a system designated type of ‘Other’ or equivalent. In such cases, if the allergy or intolerance entry interacts with prescribing decision support it <strong>MUST</strong> be assigned a <code class="highlighter-rouge">category</code> of <code class="highlighter-rouge">medication</code>. Otherwise, the category of <code class="highlighter-rouge">environment</code> <strong>MUST</strong> be used.

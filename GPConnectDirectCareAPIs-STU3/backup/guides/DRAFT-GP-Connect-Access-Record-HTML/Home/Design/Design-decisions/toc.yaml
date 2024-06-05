@@ -1,0 +1,14 @@
+- name: Introduction
+  filename: Introduction.page.md
+- name: Scope
+  filename: Scope.page.md
+- name: General
+  filename: General.page.md
+- name: User interface
+  filename: User-interface.page.md
+- name: Patient tracing and verification
+  filename: Patient-tracing-and-verification.page.md
+- name: Consent and exclusions
+  filename: Consent-and-exclusions.page.md
+- name: Date handling
+  filename: Date-handling.page.md
