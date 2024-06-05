@@ -45,9 +45,9 @@
           "type": {
             "coding": [
               {
-                "system": "http://snomed.info/sct",
-                "code": "1054161000000101",
-                "display": "Genetic report (record artifact)"
+                "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                "code": "DiagnosticReport",
+                "display": "DiagnosticReport"
               }
             ]
           },

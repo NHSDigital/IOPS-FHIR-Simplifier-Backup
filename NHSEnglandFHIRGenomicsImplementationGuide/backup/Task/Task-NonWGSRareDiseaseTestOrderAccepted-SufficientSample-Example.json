@@ -49,13 +49,30 @@
             "text": "Optional Free Text field to record any additional details"
         }
     ],
+    "input": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "ConsignmentNumber",
+                        "display": "Consignment Number"
+                    }
+                ]
+            },
+            "valueIdentifier": {
+                "system": "https://www.royalmail.com/track-your-item#/",
+                "value": "HZ970705811GB"
+            }
+        }
+    ],
     "output": [
         {
             "type": {
-                "coding":  [
+                "coding": [
                     {
-                        "system": "http://snomed.info/sct",
-                        "code": "123038009",
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "Specimen",
                         "display": "Specimen"
                     }
                 ]

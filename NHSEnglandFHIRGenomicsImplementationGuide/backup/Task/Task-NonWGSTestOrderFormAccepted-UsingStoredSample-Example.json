@@ -39,14 +39,37 @@
             "text": "Test critieria met and sample to be used from storage"
         }
     ],
+        "input": [
+            {
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                            "code": "WellId",
+                            "display": "Well Identification Number"
+                        }
+                    ]
+                },
+                "valueIdentifier": {
+                    "system": "https://www.guysandstthomas.nhs.uk/WellId",
+                    "value": "RJ1-WID-9449307555",
+                    "assigner": {
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "RJ1"
+                        }
+                    }
+                }
+            }
+        ],
     "output": [
         {
             "type": {
                 "coding": [
                     {
-                        "system": "http://snomed.info/sct",
-                        "code": "445295009",
-                        "display": "Blood specimen with EDTA"
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "Specimen",
+                        "display": "Specimen"
                     }
                 ]
             },
