@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: Genomic-Additional-Info-Type
+  filename: Genomic-Additional-Info-Type.page.md
 - name: Genomic-Business-Status
   filename: Genomic-Business-Status.page.md
 - name: Genomic-Message-Events
