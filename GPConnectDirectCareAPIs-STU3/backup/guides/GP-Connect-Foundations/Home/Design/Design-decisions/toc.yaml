@@ -1,5 +1,5 @@
-- name: Introduction
-  filename: Introduction.page.md
+- name: Index
+  filename: Index.page.md
 - name: Business Identifiers
   filename: Business-Identifiers.page.md
 - name: Definition of Organisation and Location entities

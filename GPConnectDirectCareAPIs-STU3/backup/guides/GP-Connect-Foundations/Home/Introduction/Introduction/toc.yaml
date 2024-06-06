@@ -1,5 +1,5 @@
-- name: Introduction
-  filename: Introduction.page.md
+- name: Index
+  filename: Index.page.md
 - name: Purpose
   filename: Purpose.page.md
 - name: Prerequisites

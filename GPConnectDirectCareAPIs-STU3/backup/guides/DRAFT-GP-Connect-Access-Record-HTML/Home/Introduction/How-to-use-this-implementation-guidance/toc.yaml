@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: Intended audience
   filename: Intended-audience.page.md
 - name: Labels used within this guidance
