@@ -1,7 +1,5 @@
 
-## {{page-title}}
-
-The items stated are the mandatory elements for the profile. These are the differentials only. See the Profile <code>{{variable:subject}}</code> for more details
+The items stated are the mandatory elements for the profile <code>{{variable:subject}}</code>. These are the differentials only, see the Profile  for more details
 
 <fql>
 from StructureDefinition

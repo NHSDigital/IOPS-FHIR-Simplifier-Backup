@@ -4,7 +4,6 @@
 ### Use Case
 
 
-
 > Mosa is pregnant and visits the local maternity ward for the first time.
 >
 > The maternity nurse needs to register the patient; in doing so, it is desired to record the patient’s demographic data in the Electronic Patient Record (EPR). The hospital is connected to a NHS England Personnel Demographic Service (PDS). The nurse issues a patient demographic query request to PDS acting as a Patient Identity Source, with some basic patient demographics data as search criteria.

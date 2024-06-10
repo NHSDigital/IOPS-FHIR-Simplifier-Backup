@@ -6,18 +6,10 @@
 
 ## Endpoints
 
-- GET /HealthcareService
-- GET /HealthcareService.location
-- GET /HealthcareService.type
+    GET /HealthcareService
 
-- GET /Slot
-- GET /Schedule.actor:HealthcareService
-- GET /Schedule:actor:PractitionerRole
+    GET /Schedule
 
-GET /Slot?start=ge2024-06-01T13:00:00+00:00&start=le2024-06-01T13:30:00+00:00</br>
-_include</br>
-Slot:schedule</br>
-&Schedule:actor:HealthcareService="20091234"</br>
-&Schedule:actor:PractitionerRole="Doctor"
+    GET /Slot
 
 Refer to - {{pagelink:Home/Design/Interactions.page.md}}. 

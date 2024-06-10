@@ -1,10 +1,9 @@
 - name: Index
   filename: Index.page.md
-- name: Introduction
-  filename: Introduction.page.md
 - name: Actors, Transactions and Content Modules
   filename: Actors-Transactions-and-Content-Modules.page.md
 - name: Standards
-  filename: Standards
+  filename: Standards.page.md
 - name: Services
-  filename: Services
+  filename: Services.page.md
+
