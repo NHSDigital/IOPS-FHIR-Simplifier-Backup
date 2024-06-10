@@ -1,3 +1,3 @@
 ## {{page-title}}
 
-{{index:current}}
+<!--{{index:current}}-->

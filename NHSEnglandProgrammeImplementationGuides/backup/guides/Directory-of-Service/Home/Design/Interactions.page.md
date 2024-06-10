@@ -14,7 +14,15 @@ Foo3 -> Foo2 : Find appropriate HealthcareService QueryResponse
 @enduml
 </plantuml>
 
-### Query for an available HealthcareService, Location, Schedule, Slot
+### Search Parameters for an available HealthcareService, Location, Schedule, Slot
+
+    GET /HealthcareService.category="35"&HealthcareService.location="123678"
+
+    GET /Slot?start=ge2024-06-01T13:00:00+00:00&start=le2024-06-01T13:30:00+00:00</br>
+    _include</br>
+    Slot:schedule</br>
+    &Schedule:actor:HealthcareService="20091234"</br>
+    &Schedule:actor:PractitionerRole="Doctor"
 
 <!--
 

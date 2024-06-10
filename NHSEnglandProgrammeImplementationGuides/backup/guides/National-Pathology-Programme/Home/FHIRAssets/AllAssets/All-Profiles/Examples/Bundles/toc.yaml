@@ -1,32 +1,32 @@
-- name: Haemoglobin A1c (HbA1c) Request
-  filename: Haemoglobin-A1C-HbA1c-Request.page.md
-- name: 'Haemoglobin A1c (HbA1c) Report '
-  filename: Haemoglobin-A1C-HbA1c-Report.page.md
-- name: Full Blood Count (FBC) Request
-  filename: Full-Blood-Count-FBC-Request.page.md
-- name: Full Blood Count (FBC) Report
-  filename: Full-Blood-Count-FBC-Report.page.md
-- name: Hepatitis B Surface Antigen (HBsAg) Request
-  filename: Hepatitis-B-Surface-Antigen-HBsAg-Request.page.md
-- name: Hepatitis B Surface Antigen (HBsAg) Report
-  filename: Hepatitis-B-Surface-Antigen-HBsAg-Report.page.md
-- name: 'HPV Primary Screening Request '
+- name: Haemoglobin A1c Request
+  filename: Haemoglobin-A1c-Request.page.md
+- name: Haemoglobin A1c Report
+  filename: Haemoglobin-A1c-Report.page.md
+- name: Full Blood Count Request
+  filename: Full-Blood-Count-Request.page.md
+- name: Full Blood Count Report
+  filename: Full-Blood-Count-Report.page.md
+- name: Hepatitis B Surface Antigen Request
+  filename: Hepatitis-B-Surface-Antigen-Request.page.md
+- name: Hepatitis B Surface Antigen Report
+  filename: Hepatitis-B-Surface-Antigen-Report.page.md
+- name: HPV Primary Screening Request
   filename: HPV-Primary-Screening-Request.page.md
 - name: HPV Primary Screening Report
   filename: HPV-Primary-Screening-Report.page.md
-- name: Lipids Profile and Haemoglobin A1C (HbA1c) Request
-  filename: Lipids-Profile-and-Haemoglobin-A1C-HbA1c-Request.page.md
-- name: Lipids Profile and Haemoglobin A1C (HbA1c) Report
-  filename: Lipids-Profile-and-Haemoglobin-A1C-HbA1c-Report.page.md
+- name: Lipids Profile and Haemoglobin A1c Request
+  filename: Lipids-Profile-and-Haemoglobin-A1C-Request.page.md
+- name: Lipids Profile and Haemoglobin A1c Report
+  filename: Lipids-Profile-and-Haemoglobin-A1C-Report.page.md
 - name: Liver Function and U&Es Request
   filename: Liver-Function-and-U-Es-Request.page.md
 - name: Liver Function and U&Es Report
   filename: Liver-Function-and-U-Es-Report.page.md
-- name: 'Glucose Tolerance Test (GTT) Request '
-  filename: Glucose-Tolerance-Test-GTT-Request.page.md
-- name: Glucose Tolerance Test (GTT) Report
-  filename: Glucose-Tolerance-Test-GTT-Report.page.md
-- name: Urine Microscopy, Culture and Sensitivity Request
-  filename: Urine-Microscopy-Culture-and-Sensitivity-Request.page.md
-- name: Urine Microscopy, Culture and Sensitivity Report
-  filename: Urine-Microscopy-Culture-and-Sensitivity-Report.page.md
+- name: Glucose Tolerance Test Request
+  filename: Glucose-Tolerance-Test-Request.page.md
+- name: Glucose Tolerance Test Report
+  filename: Glucose-Tolerance-Test-Report.page.md
+- name: Urine MC&S Request
+  filename: Urine-MC-S-Request.page.md
+- name: Urine MC&S Report - Structured
+  filename: Urine-MC-S-Report-Structured.page.md

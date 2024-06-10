@@ -106,4 +106,4 @@ Comments relating to the test group.
 ### `hasMember`
 Reference(s) to the `Observation(s)` that make up the test group. This may contain references to single test results (using the `UKCore-Observation-Lab` profile), test groups (using the `UKCore-Observation-Group-Lab` profile) or a mixture of both.
 
-Multiple levels of test group `Observations` and test result `Observations` may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MCS) reports. Refer to the {{pagelink:DesignOverview}} section for further information.
+Multiple levels of test group `Observations` and test result `Observations` may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MC&S) reports. Refer to the {{pagelink:DesignOverview}} section for further information.

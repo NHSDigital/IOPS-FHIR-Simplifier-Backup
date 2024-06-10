@@ -1,6 +1,16 @@
 - name: Index
   filename: Index.page.md
 - name: New Patient Registration
+  filename: New-Patient-Registration.page.md
+- name: Process Map
+  filename: Process-Map.page.md
+- name: Patient constraints
+  filename: Patient-constraints.page.md
+- name: Examples
+  filename: Examples.page.md
+- name: Programmes
+  filename: Programmes.page.md
+- name: New Patient Registration
   filename: New-Patient-Registration
 - name: Register with a GP Surgery
   filename: Register-with-a-GP-Surgery
