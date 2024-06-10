@@ -1,9 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "id": "task-statusReason-genomics",
+  "id": "genomics-task-statusReason",
   "url": "https://fhir.nhs.uk/ValueSet/task-statusReason-genomics",
   "version": "0.1.0",
-  "name": "TaskStatusReasonGenomics",
+  "name": "GenomicsTaskStatusReason",
+  "title":"Genomics Task Status Reason",
   "status": "draft",
   "description": "A ValueSet to identify the reasons for failure states of Tasks for Genomic Order Management",
   "compose": {

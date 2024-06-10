@@ -4,6 +4,7 @@
 	"url": "https://fhir.nhs.uk/ValueSet/genomics-patient-choice-researchparticipation",
 	"version": "0.1.0",
 	"name": "GenomicsPatientChoiceResearchParticipation",
+	"title": "Genomics Patient Choice Research Participation",
 	"status": "draft",
 	"date": "2022-12-21T11:27:52.3231281+00:00",
 	"description": "A ValueSet to identify the categories of sources of obtaining the patient choice (consent) before undergoing Genomic test",

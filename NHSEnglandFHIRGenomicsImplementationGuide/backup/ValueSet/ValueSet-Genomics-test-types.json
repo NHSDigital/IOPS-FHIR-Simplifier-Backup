@@ -4,6 +4,7 @@
 	"url": "https://fhir.nhs.uk/ValueSet/genomics-test-types",
 	"version": "0.1.0",
 	"name": "GenomicsTestTypes",
+	"title": "Genomics Test Types",
 	"status": "draft",
 	"date": "2022-12-21T11:27:52.3231281+00:00",
 	"description": "A ValueSet to identify the category of genomic test types",

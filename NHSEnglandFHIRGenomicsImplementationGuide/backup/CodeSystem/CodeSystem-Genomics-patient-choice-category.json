@@ -1,5 +1,6 @@
 {
 	"resourceType": "CodeSystem",
+	"id": "patient-choice-category-genomics",
 	"url": "https://fhir.nhs.uk/CodeSystem/patient-choice-category-genomics",
 	"identifier": [
 		{

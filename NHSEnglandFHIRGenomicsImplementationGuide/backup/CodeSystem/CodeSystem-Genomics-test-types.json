@@ -1,5 +1,6 @@
 {
 	"resourceType": "CodeSystem",
+	"id":"test-type-genomics",
 	"url": "https://fhir.nhs.uk/CodeSystem/test-type-genomics",
 	"identifier": [
 		{

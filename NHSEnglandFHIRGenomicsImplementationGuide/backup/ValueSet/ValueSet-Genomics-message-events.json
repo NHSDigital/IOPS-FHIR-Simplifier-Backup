@@ -4,6 +4,7 @@
 	"url": "https://fhir.nhs.uk/ValueSet/genomics-message-events",
 	"version": "0.1.0",
 	"name": "GenomicsMessageEvents",
+	"title": "Genomics Message Events",
 	"status": "draft",
 	"description": "A ValueSet to identify the type of Genomics Message",
 	"compose": {

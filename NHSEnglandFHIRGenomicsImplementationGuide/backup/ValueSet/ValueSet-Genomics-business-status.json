@@ -4,6 +4,7 @@
   "url": "https://fhir.nhs.uk/ValueSet/genomics-business-status",
   "version": "0.1.0",
   "name": "GenomicsBusinessStatus",
+  "title":"Genomics Business Status",
   "status": "draft",
   "description": "A ValueSet to identify the business status for a Genomic Test Order filler Task",
   "compose": {

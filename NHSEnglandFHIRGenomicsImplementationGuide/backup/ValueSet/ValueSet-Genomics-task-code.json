@@ -1,9 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "id": "task-code-genomics",
+  "id": "genomics-task-code",
   "url": "https://fhir.nhs.uk/ValueSet/task-code-genomics",
   "version": "0.2.0",
-  "name": "TaskCodeGenomics",
+  "name": "GenomicsTaskCode",
+  "title":"Genomics Task Code",
   "status": "draft",
   "description": "A ValueSet to identify the type of Task for Genomic Order Management",
   "compose": {

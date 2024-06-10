@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
-  "id": "AdditionalInfoTypeGenomics",
-  "url": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+  "id": "additional-infotype-genomics",
+  "url": "https://fhir.nhs.uk/CodeSystem/additional-infotype-genomics",
   "version": "0.1.0",
   "name": "AdditionalInfoTypeGenomics",
   "title": "Additional Information Type Genomics",
