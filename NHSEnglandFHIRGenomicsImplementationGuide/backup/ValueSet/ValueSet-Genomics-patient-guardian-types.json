@@ -4,6 +4,7 @@
 	"url": "https://fhir.nhs.uk/ValueSet/genomics-patientguardian-types",
 	"version": "0.1.0",
 	"name": "GenomicsPatientGuardian",
+	"title":"Genomics Patient Guardian",
 	"status": "draft",
 	"date": "2022-12-28T18:44:07.1997372+00:00",
 	"description": "A ValueSet to identify the category of patient guardian types",

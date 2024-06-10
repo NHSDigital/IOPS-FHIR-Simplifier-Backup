@@ -1,9 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://fhir.nhs.uk/ValueSet/AdditionalInfoTypeGenomics",
+  "id": "genomics-additional-infotype",
+  "url": "https://fhir.nhs.uk/ValueSet/genomics-additional-infotype",
   "version": "0.1.0",
-  "name": "AdditionalInfoTypeGenomics",
-  "title": "Additional Information Type Genomics",
+  "name": "GenomicsAdditionalInfoType",
+  "title": "Genomics Additional Information Type",
   "status": "draft",
   "date": "2024-05-31T00:00:00.000Z",
   "publisher": "NHS England",
@@ -22,7 +23,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+        "system": "https://fhir.nhs.uk/CodeSystem/additional-infotype-genomics",
         "version": "0.1.0"
       }
     ]

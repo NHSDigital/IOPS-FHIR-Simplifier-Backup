@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "959a0a2f-73e3-4c6e-8e99-babb6b3a4296",
+  "id": "business-status-genomics",
   "url": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
   "identifier": [
     {

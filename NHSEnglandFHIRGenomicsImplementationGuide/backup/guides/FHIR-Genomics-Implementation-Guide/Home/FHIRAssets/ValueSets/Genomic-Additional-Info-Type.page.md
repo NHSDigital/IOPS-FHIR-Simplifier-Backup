@@ -1,7 +1,9 @@
 ---
-subject: https://fhir.nhs.uk/ValueSet/AdditionalInfoTypeGenomics
-issue: AdditionalInfoTypeGenomics-duplicate-2
+subject: https://fhir.nhs.uk/ValueSet/genomics-additional-infotype
+issue: Genomics-Additional-InfoType
 ---
-## ValueSet Genomic-Additional-Info-Type
+## ValueSet Genomics-Additional-InfoType
+
+A ValueSet to specify reference to additional details of the input`s use as part of the task execution or the output generated from task completion.
 
 {{render:Home-FHIRAssets-ValueSets-ValueSet-Template}}
