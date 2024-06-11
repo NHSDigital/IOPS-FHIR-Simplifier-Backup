@@ -73,6 +73,13 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
+        <!-- supporting information -->
+        <tr>
+            <td>supporting information</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
          <!-- start -->
         <tr>
             <td>start</td>
