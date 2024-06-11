@@ -4,10 +4,12 @@
 
 ## FHIR Model
 
+- An Organization has an OrganizationAffiliation with another Organization
 - An Organization provides HealthcareService(s)
+- A HealthcareService can be delivered at Location(s)
 - A HealthcareService has a Schedule for the services it provides
 - A Schedule contains Slot(s) that are available for the HealthcareService
-- An Organization has an OrganizationAffiliation with another Organization
+- A Schedule has a PratitionerRole/Practitioner that can be referenced
 
 <plantuml>
 @startuml
