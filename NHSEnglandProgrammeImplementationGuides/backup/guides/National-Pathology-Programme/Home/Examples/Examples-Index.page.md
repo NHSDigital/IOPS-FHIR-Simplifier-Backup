@@ -14,6 +14,8 @@ The `Bundle` examples also include simplified logical data models to illustrate 
 
 The snippet examples have been provided to illustrate how each supported data element within a profile may be populated. The examples illustrate individual data element usage within a profile; the full set of data elements may not necessarily be consistent with one another or illustrate a single, complete clinical scenario.
 
+**Note:** Most of the examples include equivalent codes from the PBCL and PaLM SNOMED CT reference sets to identify the relevant pathology test. This has been done to illustrate how the examples can be used with different reference sets. In practice, it is likely that only one code will be carried for each pathology test. To facilitate the initial adoption of SNOMED it is anticipated that codes from the PBCL SNOMED CT reference set will be used at first, to minimise the impact on existing systems and processes. 
+
 <table class="regular">
     <thead>
         <tr>
@@ -29,126 +31,133 @@ The snippet examples have been provided to illustrate how each supported data el
             <td>PATH-R4-01</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a request for a single test (quantitative result).</td>
+            <td>An example of a request for a single test with a quantitative (numeric) test result.</td>
             <td>{{pagelink:R4BundleExampleHbA1cRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-02</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a report for a single test (quantitative result).</td>
+            <td>An example of a report for a single test with a quantitative (numeric) test result.</td>
             <td>{{pagelink:R4BundleExampleHbA1cReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-03</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Immunology / Serology</td>
-            <td>An example of a request for a single test (qualitative result).</td>
+            <td>An example of a request for a single test with a qualitative test result.</td>
             <td>{{pagelink:R4BundleExampleHBsAgRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-04</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Immunology / Serology</td>
-            <td>An example of a report for a single test (qualitative result).</td>
+            <td>An example of a report for a single test with a qualitative test result.</td>
             <td>{{pagelink:R4BundleExampleHBsAgReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-05</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Cytology</td>
-            <td>An example of a request for a single test (qualitative result).</td>
+            <td>An example of a request for a single test with a qualitative test result.</td>
             <td>{{pagelink:R4BundleExampleHPVRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-06</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Cytology</td>
-            <td>An example of a report for a single test (qualitative result).</td>
+            <td>An example of a report for a single test with a qualitative test result.</td>
             <td>{{pagelink:R4BundleExampleHPVReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-07</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Haematology</td>
-            <td>An example of a request for a single test group (quantitative results).</td>
+            <td>An example of a request for a single test group with quantitative (numeric) test results.</td>
             <td>{{pagelink:R4BundleExampleFullBloodCountRequest}}</td>
         </tr>   
         <tr>
             <td>PATH-R4-08</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Haematology</td>
-            <td>An example of a report for a single test group (quantitative results).</td>
+            <td>An example of a report for a single test group with quantitative (numeric) test results.</td>
             <td>{{pagelink:R4BundleExampleFullBloodCountReport}}</td>
         </tr>      
         <tr>
             <td>PATH-R4-09</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a request for a single test group and a single test (quantitative results).</td>
+            <td>An example of a request for a single test group and a single test with quantitative (numeric) test results.</td>
             <td>{{pagelink:R4BundleExampleLipidsandHbA1cRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-10</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a report for a single test group and a single test (quantitative results)</td>
+            <td>An example of a report for a single test group and a single test with quantitative (numeric) test results.</td>
             <td>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-11</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a request for multiple test groups (quantitative results).</td>
+            <td>An example of a request for multiple test groups with quantitative (numeric) test results.</td>
             <td>{{pagelink:R4BundleExampleLFTandUandERequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-12</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a report for multiple test groups (quantitative results).</td>
+            <td>An example of a report for multiple test groups with quantitative (numeric) test results.</td>
             <td>{{pagelink:R4BundleExampleLFTandUandEReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-13</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Clinical Biochemistry</td>
-        	<td>An example of a request for a dynamic function test (quantitative results).</td>
+        	<td>An example of a request for a dynamic function test with quantitative (numeric) test results.</td>
             <td>{{pagelink:R4BundleExampleGTTRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-14</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a report for a dynamic function test (quantitative results).</td>
+            <td>An example of a report for a dynamic function test with quantitative (numeric) test results.</td>
             <td>{{pagelink:R4BundleExampleGTTReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-15</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Microbiology</td>
-            <td>An example of a request for a complex test, with multiple, nested test groups (quantitative, qualitative and semi-quantitative results).</td>
+            <td>An example of a request for a complex test with multiple, nested test groups and quantitative (numeric), qualitative and semi-quantitative test results.</td>
             <td>{{pagelink:R4BundleExampleUrineMCSRequest}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-16</td>
+            <td>PATH-R4-16a</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Microbiology</td>
-            <td>An example of a report for a complex test, with multiple, nested test groups (quantitative, qualitative and semi-quantitative results).</td>
+            <td>An example of a report for a complex test with multiple, nested test groups and quantitative (numeric), qualitative and semi-quantitative test results. The results are represented using a single <code>Observation</code> and formatted as a blob of text.</td>
+            <td>{{pagelink:R4BundleExampleUrineMCSReportUnstructured}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-16b</td>
+            <td>{{pagelink:R4Bundle}}</td>
+            <td>Microbiology</td>
+            <td>An example of a report for a complex test with multiple, nested test groups and quantitative (numeric), qualitative and semi-quantitative test results. The results are represented using a set of structured, coded  <code>Observations</code>.</td>
             <td>{{pagelink:R4BundleExampleUrineMCSReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-17</td>
             <td>{{pagelink:R4ObservationTestResult}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a quantitative test result.</td>
+            <td>An example of a quantitative (numeric) test result.</td>
             <td>{{pagelink:R4ObservationAlbumin}}</td>
         </tr>
         <tr>
             <td>PATH-R4-18</td>
             <td>{{pagelink:R4ObservationTestResult}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a quantitative test result.</td>
+            <td>An example of a quantitative (numeric) test result.</td>
             <td>{{pagelink:R4ObservationeGFR}}</td>
         </tr>
         <tr>
@@ -183,14 +192,14 @@ The snippet examples have been provided to illustrate how each supported data el
             <td>PATH-R4-23</td>
             <td>{{pagelink:R4ObservationTestResult}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a quantitative test result combined with an interpretation.</td>
+            <td>An example of a quantitative (numeric) test result combined with an interpretation.</td>
             <td>{{pagelink:R4ObservationLymphocyteCount}}</td>
         </tr>
         <tr>
             <td>PATH-R4-24</td>
             <td>{{pagelink:R4ObservationTestResult}}</td>
             <td>Microbiology</td>
-            <td>An example of a quantitative test result combined with an interpretation.</td>
+            <td>An example of a quantitative (numeric) test result combined with an interpretation.</td>
             <td>{{pagelink:R4ObservationRubellaIgGAntibody}}</td>
         </tr>
         <tr>

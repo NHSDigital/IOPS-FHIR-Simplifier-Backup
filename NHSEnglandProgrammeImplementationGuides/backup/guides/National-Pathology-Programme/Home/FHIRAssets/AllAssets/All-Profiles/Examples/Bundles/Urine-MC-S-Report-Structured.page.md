@@ -2,7 +2,7 @@
 topic: R4BundleExampleUrineMCSReport
 subject: Pathology-Bundle-Urine-MCS-01-Report-Example
 ---
-### PATH-R4-16: Bundle Example - Urine Microscopy, Culture and Sensitivity Report
+### PATH-R4-16b: Bundle Example - Urine Microscopy, Culture and Sensitivity Report (Structured)
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     
@@ -13,6 +13,7 @@ subject: Pathology-Bundle-Urine-MCS-01-Report-Example
     <br>
     <ul>
         <li>This is an example of a complex report.</li>
+        <li>The results are represented using a set of structured, coded  <code>Observations</code>.</li>
         <li>It contains multiple levels of test group <code>Observations</code> and test result <code>Observations</code>. Two of the test groups are nested ("Urine Culture" and "Antimicrobial sensitivity").</li>
         <li>The report includes a range of numeric, semi-quantitative and qualitative results.</li>
         <li>In this example, the specimen (urine) was collected after the request was made. The specimen is linked to the request within the <code>Bundle</code> using <code>Specimen.request</code>.</li>

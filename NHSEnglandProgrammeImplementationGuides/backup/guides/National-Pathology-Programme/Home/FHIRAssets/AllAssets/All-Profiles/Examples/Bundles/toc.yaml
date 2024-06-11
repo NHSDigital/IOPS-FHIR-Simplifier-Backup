@@ -26,6 +26,8 @@
   filename: Glucose-Tolerance-Test-Request.page.md
 - name: Glucose Tolerance Test Report
   filename: Glucose-Tolerance-Test-Report.page.md
+- name: Urine MC&S Report - Unstructured
+  filename: Urine-MC-S-Report-Unstructured.page.md
 - name: Urine MC&S Request
   filename: Urine-MC-S-Request.page.md
 - name: Urine MC&S Report - Structured

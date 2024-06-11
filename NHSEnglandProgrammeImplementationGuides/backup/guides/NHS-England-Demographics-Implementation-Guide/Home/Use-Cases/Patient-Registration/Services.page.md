@@ -122,7 +122,7 @@ Individual questions can be extracted from the QuestionnaireResponse in the form
 
 ---
 
-### New Patient Registration
+### New NHS Number Allocation
 
 #### Use Case
 
