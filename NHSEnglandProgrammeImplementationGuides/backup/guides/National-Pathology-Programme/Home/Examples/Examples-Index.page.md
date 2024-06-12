@@ -12,7 +12,7 @@ The `Bundle` examples include on-screen representations of pathology test reques
 
 The `Bundle` examples also include simplified logical data models to illustrate the key references between the relevant FHIR resources. To aid clarity, not all of the references are shown. For a detailed description of the relationships between the FHIR resources, refer to {{pagelink:BuildContructPathologyRequestBundle}} and {{pagelink:BuildContructPathologyReportBundle}}.
 
-The snippet examples have been provided to illustrate how each supported data element within a profile may be populated. The examples illustrate individual data element usage within a profile; the full set of data elements may not necessarily be consistent with one another or illustrate a single, complete clinical scenario.
+The snippet examples have been provided to illustrate how each key data element within a profile may be populated. The examples illustrate individual data element usage within a profile; the full set of data elements may not necessarily be consistent with one another or illustrate a single, complete clinical scenario.
 
 **Note:** Most of the examples include equivalent codes from the PBCL and PaLM SNOMED CT reference sets to identify the relevant pathology test. This has been done to illustrate how the examples can be used with different reference sets. In practice, it is likely that only one code will be carried for each pathology test. To facilitate the initial adoption of SNOMED it is anticipated that codes from the PBCL SNOMED CT reference set will be used at first, to minimise the impact on existing systems and processes. 
 
@@ -119,11 +119,18 @@ The snippet examples have been provided to illustrate how each supported data el
             <td>{{pagelink:R4BundleExampleGTTRequest}}</td>
         </tr>
         <tr>
-            <td>PATH-R4-14</td>
+            <td>PATH-R4-14a</td>
             <td>{{pagelink:R4Bundle}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example of a report for a dynamic function test with quantitative (numeric) test results.</td>
-            <td>{{pagelink:R4BundleExampleGTTReport}}</td>
+            <td>An example of a report for a dynamic function test with quantitative (numeric) test results. The results are represented using a single <code>Observation</code> and formatted as a blob of text.</td>
+            <td>{{pagelink:R4BundleExampleGTTReportUnstructured}}</td>
+        </tr>
+        <tr>
+            <td>PATH-R4-14b</td>
+            <td>{{pagelink:R4Bundle}}</td>
+            <td>Clinical Biochemistry</td>
+            <td>An example of a report for a dynamic function test with quantitative (numeric) test results. The results are represented using a set of structured, coded  <code>Observations</code>.</td>
+            <td>{{pagelink:R4BundleExampleGTTReportStructured}}</td>
         </tr>
         <tr>
             <td>PATH-R4-15</td>
@@ -144,7 +151,7 @@ The snippet examples have been provided to illustrate how each supported data el
             <td>{{pagelink:R4Bundle}}</td>
             <td>Microbiology</td>
             <td>An example of a report for a complex test with multiple, nested test groups and quantitative (numeric), qualitative and semi-quantitative test results. The results are represented using a set of structured, coded  <code>Observations</code>.</td>
-            <td>{{pagelink:R4BundleExampleUrineMCSReport}}</td>
+            <td>{{pagelink:R4BundleExampleUrineMCSReportStructured}}</td>
         </tr>
         <tr>
             <td>PATH-R4-17</td>
@@ -213,35 +220,35 @@ The snippet examples have been provided to illustrate how each supported data el
             <td>PATH-R4-26</td>
             <td>{{pagelink:R4DiagnosticReport}}</td>
             <td>Microbiology</td>
-            <td>An example to illustrate how each supported data element within {{pagelink:R4DiagnosticReport}} may be populated.</td>
+            <td>An example to illustrate how each key data element within {{pagelink:R4DiagnosticReport}} may be populated.</td>
             <td>{{pagelink:R4SnippetsDiagnosticReport}}</td>
         </tr>
         <tr>
             <td>PATH-R4-27</td>
             <td>{{pagelink:R4ObservationTestGroup}}</td>
             <td>Haematology</td>
-            <td>An example to illustrate how each supported data element within {{pagelink:R4ObservationTestGroup}} may be populated.</td>
+            <td>An example to illustrate how each key data element within {{pagelink:R4ObservationTestGroup}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestGroup}}</td>
         </tr>
         <tr>
             <td>PATH-R4-28</td>
             <td>{{pagelink:R4ObservationTestResult}}</td>
             <td>Haematology</td>
-            <td>An example to illustrate how each supported data element within {{pagelink:R4ObservationTestResult}} may be populated.</td>
+            <td>An example to illustrate how each key data element within {{pagelink:R4ObservationTestResult}} may be populated.</td>
             <td>{{pagelink:R4SnippetsObservationTestResult}}</td>
         </tr>
         <tr>
             <td>PATH-R4-29</td>
             <td>{{pagelink:R4ServiceRequest}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example to illustrate how each supported data element within {{pagelink:R4ServiceRequest}} may be populated.</td>
+            <td>An example to illustrate how each key data element within {{pagelink:R4ServiceRequest}} may be populated.</td>
             <td>{{pagelink:R4SnippetsServiceRequest}}</td>
         </tr>
         <tr>
             <td>PATH-R4-30</td>
             <td>{{pagelink:R4Specimen}}</td>
             <td>Clinical Biochemistry</td>
-            <td>An example to illustrate how each supported data element within {{pagelink:R4Specimen}} may be populated.</td>
+            <td>An example to illustrate how each key data element within {{pagelink:R4Specimen}} may be populated.</td>
             <td>{{pagelink:R4SnippetsSpecimen}}</td>
         </tr>
     </tbody>

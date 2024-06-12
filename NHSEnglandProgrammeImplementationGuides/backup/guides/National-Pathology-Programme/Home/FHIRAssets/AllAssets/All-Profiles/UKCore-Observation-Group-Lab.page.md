@@ -44,8 +44,8 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 
 <div id="Examples" class="tabcontent">
     <h4>Examples</h4>
-    <b>UKCore-Observation-Group-Lab Snippets</b> - An example to illustrate how each supported data element in <code>UKCore-Observation-Group-Lab</code> may be populated.<br>{{pagelink:R4SnippetsObservationTestGroup}}<br><br>
-    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-Observation-Group-Lab</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReport}}<br>{{pagelink:R4BundleExampleUrineMCSReport}}<br><br>
+    <b>UKCore-Observation-Group-Lab Snippets</b> - An example to illustrate how each key data element in <code>UKCore-Observation-Group-Lab</code> may be populated.<br>{{pagelink:R4SnippetsObservationTestGroup}}<br><br>
+    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-Observation-Group-Lab</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReportUnstructured}}<br>{{pagelink:R4BundleExampleGTTReportStructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportUnstructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportStructured}}<br><br>
     <b>UK Core Example</b> - An example from the UK Core Implementation Guide.<br>
     <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/Examples/ExamplesIndex/Example-UKCore-Observation-Group-FullBloodCount?current">UKCore-Observation-Group-FullBloodCount-Example</a><br>
 </div>

@@ -3,6 +3,14 @@ topic: ReleaseNotes
 ---
 ## Release Notes
 
+### v0.1.7 (TBC)
+
+* Added two new examples, {{pagelink:R4BundleExampleGTTReportUnstructured}} and {{pagelink:R4BundleExampleUrineMCSReportUnstructured}}, based on the existing structured versions of the same examples. The unstructured versions illustrate how complex reports may be represented using formatted text within a single `Observation`, rather than a using set of structured, coded `Observations`.
+* Updated `UKCore-Observation-Lab.code` in the examples to use content from the SNOMED CT PBCL reference set alongside equivalent content from the SNOMED CT PaLM content reference set.
+* Updated `UKCore-Practitioner.identifier` in the `Bundle` examples with a test GMC code for the requesting practitioner.
+
+---
+
 ### v0.1.6 (17/05/2024)
 
 * Updated the Additional Guidance section in each of the {{pagelink:FHIRAssetsR4Profiles}} to align with the content and format used in the [UK Core Implementation Guide (Version 2.0.0 - STU2 Sequence)](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current).
