@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="BARSBundleMessage" />
   <url value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
@@ -12,7 +11,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Bundle" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
   <derivation value="constraint" />
   <differential>
     <element id="Bundle.type">
