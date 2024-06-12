@@ -14,8 +14,6 @@ Available codes:
     <b>Note</b>: In the event of an irregular pulse, then an separate <code>Observation</code> should be sent alongisde the observable entity to indicate the finding.
 </div>
 
-- [163000006 | On examination - pulse irregularly irregular (finding) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=163000006)
-- [163001005 | On examination - pulse regularly irregular (finding) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=163001005)
 - [61086009 | Pulse irregular (finding) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=61086009)
 
 ---
