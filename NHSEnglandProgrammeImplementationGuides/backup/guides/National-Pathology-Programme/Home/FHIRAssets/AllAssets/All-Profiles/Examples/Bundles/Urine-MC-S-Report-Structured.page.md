@@ -1,5 +1,5 @@
 ---
-topic: R4BundleExampleUrineMCSReport
+topic: R4BundleExampleUrineMCSReportStructured
 subject: Pathology-Bundle-Urine-MCS-01-Report-Example
 ---
 ### PATH-R4-16b: Bundle Example - Urine Microscopy, Culture and Sensitivity Report (Structured)

@@ -22,10 +22,12 @@
   filename: Liver-Function-and-U-Es-Request.page.md
 - name: Liver Function and U&Es Report
   filename: Liver-Function-and-U-Es-Report.page.md
+- name: Glucose Tolerance Test Report - Unstructured
+  filename: Glucose-Tolerance-Test-Report-Unstructured.page.md
 - name: Glucose Tolerance Test Request
   filename: Glucose-Tolerance-Test-Request.page.md
-- name: Glucose Tolerance Test Report
-  filename: Glucose-Tolerance-Test-Report.page.md
+- name: Glucose Tolerance Test Report - Structured
+  filename: Glucose-Tolerance-Test-Report-Structured.page.md
 - name: Urine MC&S Report - Unstructured
   filename: Urine-MC-S-Report-Unstructured.page.md
 - name: Urine MC&S Request
