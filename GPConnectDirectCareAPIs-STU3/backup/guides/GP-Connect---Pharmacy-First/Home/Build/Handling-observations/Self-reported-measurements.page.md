@@ -16,7 +16,7 @@ As of Wednesday, 22nd November 2023, Section 4.18 of the <a href="https://www.en
 
 
 **Self-reported BMI**
-There is no self-reportecode for body mass index (BMI)
+There is no self-reported code for body mass index (BMI)
 
 <br />
 

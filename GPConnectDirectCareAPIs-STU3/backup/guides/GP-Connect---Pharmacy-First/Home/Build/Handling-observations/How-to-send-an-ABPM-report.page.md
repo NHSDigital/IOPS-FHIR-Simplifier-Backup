@@ -8,7 +8,7 @@ In those instances, Update Record will allow an attachment to be provided via th
 
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <b>Important</b>: Please ensure the report contains a title which clearly indicates what it is.
+    <b>Important</b>: Providers: Please ensure the report contains a meaningful title which clearly indicates what it is. <br>Consumers: Please ensure the document title is visible within the list of documents or other attachments in the patient's history.
 </div>
   
 
