@@ -1,0 +1,76 @@
+<Flag xmlns="http://hl7.org/fhir">
+  <id value="FGM-Flag-Example" />
+  <meta>
+    <profile
+             value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag" />
+  </meta>
+  <contained>
+    <Provenance>
+      <id value="9b5f2d1b-8175-407f-a49d-b4f04c9d4300" />
+      <target>
+        <reference value="#" />
+      </target>
+      <recorded value="2024-01-01T11:00:00+00:00" />
+      <activity>
+        <coding>
+          <system
+                  value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+          <code value="CREATE" />
+          <display value="create" />
+        </coding>
+      </activity>
+      <agent>
+        <role>
+          <coding>
+            <system
+                    value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+            <code value="R0260" />
+            <display value="General Medical Practitioner" />
+          </coding>
+        </role>
+        <who>
+          <reference
+                     value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+        </who>
+        <onBehalfOf>
+          <reference
+                     value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+        </onBehalfOf>
+      </agent>
+    </Provenance>
+  </contained>
+  <extension
+             url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
+    <valueAnnotation>
+      <text value="Example of flag notes extension text in adjustment flag" />
+    </valueAnnotation>
+  </extension>
+  <status value="active" />
+  <category>
+    <coding>
+      <system
+              value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+      <code value="FGM" />
+      <display value="Female Genital Mutilation Flag" />
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system
+              value="https://fhir.nhs.uk/England/CodeSystem/FGMFlagCategory" />
+      <code value="001" />
+      <display value="Example FGM category" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://snomed.info/sct" />
+      <code value="902961000000107" />
+      <display
+               value="Family history of female genital mutilation (situation)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatientFlag-AlanMann-Example" />
+  </subject>
+</Flag>
