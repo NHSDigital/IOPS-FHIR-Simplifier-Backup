@@ -1,0 +1,383 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="AddCPISRecordTransaction-Bundle-Example" />
+  <type value="transaction" />
+  <entry>
+    <fullUrl value="Patient/PatientFlag-AlanMann-Example" />
+    <resource>
+      <Patient>
+        <id value="PatientFlag-AlanMann-Example" />
+        <meta>
+          <profile
+                   value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="9912003888" />
+        </identifier>
+        <active value="true" />
+        <name>
+          <use value="official" />
+          <family value="Mann" />
+          <given value="Alan" />
+        </name>
+        <gender value="male" />
+        <birthDate value="1970-01-01" />
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Patient/PatientFlag-AlanMann-Example" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Consent/CPIS-Consent-Example" />
+    <resource>
+      <Consent>
+        <id value="CPIS-Consent-Example" />
+        <meta>
+          <profile
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagConsent" />
+        </meta>
+        <contained>
+           <meta>
+             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+            </meta>
+          <Provenance>
+            <id value="51a731b3-1c46-47ba-abad-04209bd264e6" />
+            <target>
+              <reference value="#" />
+            </target>
+            <recorded value="2024-01-01T11:00:00+00:00" />
+            <activity>
+              <coding>
+                <system
+                        value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+                <code value="CREATE" />
+                <display value="create" />
+              </coding>
+            </activity>
+            <agent>
+              <role>
+                <coding>
+                  <system
+                          value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                  <code value="R0260" />
+                  <display value="General Medical Practitioner" />
+                </coding>
+              </role>
+              <who>
+                <reference
+                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+              </who>
+              <onBehalfOf>
+                <reference
+                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+              </onBehalfOf>
+            </agent>
+          </Provenance>
+        </contained>
+        <extension
+                   url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary">
+          <valueAnnotation>
+            <text value="Example of consent create summary extension text" />
+          </valueAnnotation>
+        </extension>
+        <extension
+                   url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary">
+          <valueAnnotation>
+            <text value="Example of consent remove summary extension text" />
+          </valueAnnotation>
+        </extension>
+        <status value="active" />
+        <scope>
+          <coding>
+            <system
+                    value="http://terminology.hl7.org/CodeSystem/consentscope" />
+            <code value="patient-privacy" />
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system
+                    value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+            <code value="CP-IS" />
+            <display value="Child Protection - Information Sharing Flag" />
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
+        </patient>
+        <policy>
+          <authority value="https://www.gov.uk/" />
+          <uri
+               value="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf" />
+        </policy>
+        <policyRule>
+          <coding>
+            <system
+                    value="https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole" />
+            <code value="001" />
+          </coding>
+        </policyRule>
+        <provision>
+          <purpose>
+            <system
+                    value="https://fhir.nhs.uk/England/CodeSystem/CPISConsentPurpose" />
+            <code value="CPISCONSENT" />
+            <display value="CPIS - Consent to record CPIS flags" />
+          </purpose>
+        </provision>
+      </Consent>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Consent/CPIS-Consent-Example" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/CPIS-Condition-Example" />
+    <resource>
+      <Condition>
+        <id value="CPIS-Condition-Example" />
+        <meta>
+          <profile
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition" />
+        </meta>
+        <contained>
+           <meta>
+             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+            </meta>
+          <Provenance>
+            <id value="482155c0-9ed3-4b22-b7b8-009f265606cc" />
+            <target>
+              <reference value="#" />
+            </target>
+            <recorded value="2024-01-01T11:00:00+00:00" />
+            <activity>
+              <coding>
+                <system
+                        value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+                <code value="CREATE" />
+                <display value="create" />
+              </coding>
+            </activity>
+            <agent>
+              <role>
+                <coding>
+                  <system
+                          value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                  <code value="R0260" />
+                  <display value="General Medical Practitioner" />
+                </coding>
+              </role>
+              <who>
+                <reference
+                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+              </who>
+              <onBehalfOf>
+                <reference
+                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+              </onBehalfOf>
+            </agent>
+          </Provenance>
+        </contained>
+        <clinicalStatus>
+          <coding>
+            <system
+                    value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+            <code value="active" />
+          </coding>
+        </clinicalStatus>
+        <category>
+          <coding>
+            <system
+                    value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+            <code value="CP-IS" />
+            <display value="Child Protection - Information Sharing Flag" />
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system
+                    value="https://fhir.nhs.uk/England/CodeSystem/CPISConditionCategory" />
+            <code value="cpis-example-condition-category" />
+            <display value="CPIS example condition category" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system
+                    value="https://fhir.nhs.uk/England/CodeSystem/CPISConditionCode" />
+            <code value="1" />
+            <display value="CPIS example condition code" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
+        </subject>
+      </Condition>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Condition/CPIS-Condition-Example" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Flag/CPIS-PatientFlag-Example" />
+    <resource>
+      <Flag>
+        <id value="CPIS-PatientFlag-Example" />
+        <meta>
+          <profile
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-PatientFlag" />
+        </meta>
+        <contained>
+           <meta>
+             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+            </meta>
+          <Provenance>
+            <id value="42b9f285-0f1b-435a-ba6e-c72762d6502e" />
+            <target>
+              <reference value="#" />
+            </target>
+            <recorded value="2024-01-01T11:00:00+00:00" />
+            <activity>
+              <coding>
+                <system
+                        value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+                <code value="CREATE" />
+                <display value="create" />
+              </coding>
+            </activity>
+            <agent>
+              <role>
+                <coding>
+                  <system
+                          value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                  <code value="R0260" />
+                  <display value="General Medical Practitioner" />
+                </coding>
+              </role>
+              <who>
+                <reference
+                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+              </who>
+              <onBehalfOf>
+                <reference
+                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+              </onBehalfOf>
+            </agent>
+          </Provenance>
+        </contained>
+        <extension
+                   url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
+          <valueAnnotation>
+            <text
+                  value="Example of flag notes extension text in patient flag" />
+          </valueAnnotation>
+        </extension>
+        <status value="active" />
+        <code>
+          <coding>
+            <system
+                    value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+            <code value="CP-IS" />
+            <display value="Child Protection - Information Sharing Flag" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
+        </subject>
+      </Flag>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Flag/CPIS-PatientFlag-Example" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Flag/CPIS-Flag-Example" />
+    <resource>
+      <Flag>
+        <id value="CPIS-Flag-Example" />
+        <meta>
+          <profile
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag" />
+        </meta>
+        <contained>
+          <Provenance>
+            <id value="ea77b434-585a-48b9-a789-eac610f0363e" />
+            <target>
+              <reference value="#" />
+            </target>
+            <recorded value="2024-01-01T11:00:00+00:00" />
+            <activity>
+              <coding>
+                <system
+                        value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+                <code value="CREATE" />
+                <display value="create" />
+              </coding>
+            </activity>
+            <agent>
+              <role>
+                <coding>
+                  <system
+                          value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                  <code value="R0260" />
+                  <display value="General Medical Practitioner" />
+                </coding>
+              </role>
+              <who>
+                <reference
+                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+              </who>
+              <onBehalfOf>
+                <reference
+                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+              </onBehalfOf>
+            </agent>
+          </Provenance>
+        </contained>
+        <extension
+                   url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
+          <valueAnnotation>
+            <text
+                  value="Example of flag notes extension text in adjustment flag" />
+          </valueAnnotation>
+        </extension>
+        <status value="active" />
+        <category>
+          <coding>
+            <system
+                    value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+            <code value="CP-IS" />
+            <display value="Child Protection - Information Sharing Flag" />
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system
+                    value="https://fhir.nhs.uk/England/CodeSystem/CPISFlagCategory" />
+            <code value="001" />
+            <display value="Example CPIS category" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://snomed.info/sct" />
+            <code value="224353004" />
+            <display value="Child protection finding (finding)" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
+        </subject>
+      </Flag>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Flag/CPIS-Flag-Example" />
+    </request>
+  </entry>
+</Bundle>

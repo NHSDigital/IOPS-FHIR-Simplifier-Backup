@@ -1,0 +1,79 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="FGM-Condition-Example" />
+  <meta>
+    <profile
+             value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition" />
+  </meta>
+  <contained>
+     <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+      </meta>
+    <Provenance>
+      <id value="e78b78b2-31f9-453d-b278-6d5720001073" />
+      <target>
+        <reference value="#" />
+      </target>
+      <recorded value="2024-01-01T11:00:00+00:00" />
+      <activity>
+        <coding>
+          <system
+                  value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+          <code value="CREATE" />
+          <display value="create" />
+        </coding>
+      </activity>
+      <agent>
+        <role>
+          <coding>
+            <system
+                    value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+            <code value="R0260" />
+            <display value="General Medical Practitioner" />
+          </coding>
+        </role>
+        <who>
+          <reference
+                     value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+        </who>
+        <onBehalfOf>
+          <reference
+                     value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+        </onBehalfOf>
+      </agent>
+    </Provenance>
+  </contained>
+  <clinicalStatus>
+    <coding>
+      <system
+              value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+      <code value="active" />
+    </coding>
+  </clinicalStatus>
+  <category>
+    <coding>
+      <system
+              value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+      <code value="FGM" />
+      <display value="Female Genital Mutilation Flag" />
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system
+              value="https://fhir.nhs.uk/England/CodeSystem/FGMConditionCategory" />
+      <code value="fgm-example-condition-category" />
+      <display value="FGM example condition category" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system
+              value="https://fhir.nhs.uk/England/CodeSystem/FGMConditionCode" />
+      <code value="1" />
+      <display value="FGM example condition code" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatientFlag-AlanMann-Example" />
+  </subject>
+</Condition>

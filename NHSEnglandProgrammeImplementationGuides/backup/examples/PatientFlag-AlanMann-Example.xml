@@ -1,0 +1,18 @@
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="PatientFlag-AlanMann-Example" />
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/nhs-number" />
+        <value value="9912003888" />
+    </identifier>
+    <active value="true" />
+    <name>
+        <use value="official" />
+        <family value="Mann" />
+        <given value="Alan" />
+    </name>
+    <gender value="male" />
+    <birthDate value="1970-01-01" />
+</Patient>

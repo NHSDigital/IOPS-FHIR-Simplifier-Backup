@@ -1,0 +1,44 @@
+<Consent xmlns="http://hl7.org/fhir">
+    <id value="CPIS-Consent-Example" />
+    <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagConsent" />
+    </meta>
+    <contained>
+      <meta>
+         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+       </meta>
+     <Provenance>
+       <id value="51a731b3-1c46-47ba-abad-04209bd264e6" />
+        <target>
+                <reference value="#" />
+            </target>
+       <recorded value="2024-01-01T11:00:00+00:00" />
+            <agent>
+                <who>
+                    <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+                </who>
+                <onBehalfOf>
+                    <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+                </onBehalfOf>
+            </agent>
+        </Provenance>
+    </contained>
+    <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary">
+        <valueAnnotation>
+            <text value="Example of consent create summary extension text" />
+        </valueAnnotation>
+    </extension>
+    <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary">
+        <valueAnnotation>
+            <text value="Example of consent remove summary extension text" />
+        </valueAnnotation>
+    </extension>
+    <status value="active" />
+    <patient>
+        <reference value="Patient/PatientFlag-AlanMann-Example" />
+    </patient>
+    <policy>
+        <authority value="https://www.gov.uk/" />
+        <uri value="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf" />
+    </policy>
+</Consent>
