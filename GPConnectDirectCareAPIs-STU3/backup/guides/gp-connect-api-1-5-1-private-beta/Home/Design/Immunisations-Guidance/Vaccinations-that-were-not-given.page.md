@@ -4,8 +4,6 @@ GP clinical systems may capture details of circumstances where an immunisation h
 
 Consumers should be aware that the presence of a vaccination not given record is only in relation to an intended vaccination event on a given day - that is, it is not stating the vaccination has definitely never been given.
 
-<p>Consumers should be aware that the presence of a vaccination not given record is only in relation to an intended vaccination event on a given day - that is, it is not stating the vaccination has definitely never been given.</p>
-
 <h3 id="populating-elements-for-an-immunisation-not-given">Populating elements for an immunisation not given</h3>
 
 Specific rules are applied to the population of some of the elements where the record is for an intended immunisation which was not given.
