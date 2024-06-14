@@ -28,11 +28,6 @@
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
-            <code value="CP-IS" />
-            <display value="Child Protection - Information Sharing Flag" />
-        </contains>
-        <contains>
-            <system value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
             <code value="FGM" />
             <display value="Female Genital Mutilation Flag" />
         </contains>

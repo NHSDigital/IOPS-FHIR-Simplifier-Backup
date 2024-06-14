@@ -2,7 +2,7 @@
   <id value="ProgrammeFlagCode" />
   <text>
     <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>https://fhir.nhs.uk/England/ValueSet/RA-FlagCode</code></li><li>Include all codes defined in <code>https://fhir.nhs.uk/England/ValueSet/CPIS-FlagCode</code></li><li>Include all codes defined in <code>https://fhir.nhs.uk/England/ValueSet/FGM-FlagCode</code></li></ul></div>
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>https://fhir.nhs.uk/England/ValueSet/RA-FlagCode</code></li><li>Include all codes defined in <code>https://fhir.nhs.uk/England/ValueSet/FGM-FlagCode</code></li></ul></div>
   </text>
   <url value="https://fhir.nhs.uk/England/ValueSet/ProgrammeFlagCode" />
   <version value="0.3.7" />
@@ -28,9 +28,6 @@
   <compose>
     <include>
       <system value="https://fhir.nhs.uk/England/ValueSet/RA-FlagCode" />
-    </include>
-    <include>
-      <system value="https://fhir.nhs.uk/England/ValueSet/CPIS-FlagCode" />
     </include>
     <include>
       <system value="https://fhir.nhs.uk/England/ValueSet/FGM-FlagCode" />

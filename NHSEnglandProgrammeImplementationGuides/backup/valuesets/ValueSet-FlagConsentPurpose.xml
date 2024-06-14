@@ -2,7 +2,7 @@
   <id value="FlagConsentPurpose" />
   <text>
     <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set expansion contains 3 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.nhs.uk-England-CodeSystem-RA-ConsentPurpose-RACONSENT"> </a>  <a href="CodeSystem-RA-ConsentPurpose.html#RA-ConsentPurpose-RACONSENT">RACONSENT</a></td><td>https://fhir.nhs.uk/England/CodeSystem/RA-ConsentPurpose</td><td>Reasonable Adjustments - Consent to record Reasonable Adjustments</td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.nhs.uk-England-CodeSystem-CPIS-ConsentPurpose-CPISCONSENT"> </a>  <a href="CodeSystem-CPIS-ConsentPurpose.html#CPIS-ConsentPurpose-CPISCONSENT">CPISCONSENT</a></td><td>https://fhir.nhs.uk/England/CodeSystem/CPIS-ConsentPurpose</td><td>CPIS - Consent to record CPIS flags</td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.nhs.uk-England-CodeSystem-FGM-ConsentPurpose-FGMCONSENT"> </a>  <a href="CodeSystem-FGM-ConsentPurpose.html#FGM-ConsentPurpose-FGMCONSENT">FGMCONSENT</a></td><td>https://fhir.nhs.uk/England/CodeSystem/FGM-ConsentPurpose</td><td>FGM - Consent to record FGM flags</td></tr></table></div>
+        <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set expansion contains 3 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.nhs.uk-England-CodeSystem-RA-ConsentPurpose-RACONSENT"> </a>  <a href="CodeSystem-RA-ConsentPurpose.html#RA-ConsentPurpose-RACONSENT">RACONSENT</a></td><td>https://fhir.nhs.uk/England/CodeSystem/RA-ConsentPurpose</td><td>Reasonable Adjustments - Consent to record Reasonable Adjustments</td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.nhs.uk-England-CodeSystem-FGM-ConsentPurpose-FGMCONSENT"> </a>  <a href="CodeSystem-FGM-ConsentPurpose.html#FGM-ConsentPurpose-FGMCONSENT">FGMCONSENT</a></td><td>https://fhir.nhs.uk/England/CodeSystem/FGM-ConsentPurpose</td><td>FGM - Consent to record FGM flags</td></tr></table></div>
   </text>
   <url value="https://fhir.nhs.uk/England/ValueSet/FlagConsentPurpose" />
   <version value="0.3.7" />
@@ -33,12 +33,6 @@
       <code value="RACONSENT" />
       <display
                value="Reasonable Adjustments - Consent to record Reasonable Adjustments" />
-    </contains>
-    <contains>
-      <system
-              value="https://fhir.nhs.uk/England/CodeSystem/CPIS-ConsentPurpose" />
-      <code value="CPISCONSENT" />
-      <display value="CPIS - Consent to record CPIS flags" />
     </contains>
     <contains>
       <system
