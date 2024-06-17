@@ -4,10 +4,9 @@
 
 <span class="mro-circle mandatory" title="Mandatory"></span> Mandatory
 
-
 <h5><ins>Guidance</ins></h5>
 
-The `status` element **MUST** contain either the vaccine product that was administered or intended to be administered.
+Vaccine product administered or intended to be administered.
 
 Where the vaccine product that was administered is not known then the null flavour value code `UNK` **MUST** be populated.
 
