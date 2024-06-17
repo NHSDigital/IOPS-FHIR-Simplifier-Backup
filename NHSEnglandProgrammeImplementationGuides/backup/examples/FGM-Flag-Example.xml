@@ -2,7 +2,7 @@
   <id value="FGM-Flag-Example" />
   <meta>
     <profile
-             value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag" />
+             value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
   </meta>
   <contained>
     <Provenance>

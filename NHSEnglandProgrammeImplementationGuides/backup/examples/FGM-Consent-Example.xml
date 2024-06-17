@@ -2,11 +2,11 @@
   <id value="FGM-Consent-Example" />
   <meta>
     <profile
-             value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagConsent" />
+             value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
   </meta>
   <contained>
      <meta>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
       </meta>
     <Provenance>
       <id value="bc0dbfb1-7432-46fa-b1b8-0e3648827754" />

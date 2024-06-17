@@ -8,11 +8,11 @@
         <id value="RA-PatientFlag-Example" />
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-PatientFlag" />
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
         </meta>
         <contained>
            <meta>
-             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
            </meta>
           <Provenance>
             <id value="c4e2e862-3bf4-4176-a186-9f1732938260" />
@@ -99,11 +99,11 @@
         <id value="RA-Consent-Example" />
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagConsent" />
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
         </meta>
         <contained>
           <meta>
-            <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+            <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
            </meta>
           <Provenance>
             <id value="4c75ce1f-1ad7-4391-b5f6-104754c7e904" />
@@ -205,11 +205,11 @@
         <id value="RA-Condition-Example" />
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition" />
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
         </meta>
         <contained>
             <meta>
-              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
             </meta>
           <Provenance>
             <id value="6a6b18a7-c077-49da-929f-a8dd38468f79" />

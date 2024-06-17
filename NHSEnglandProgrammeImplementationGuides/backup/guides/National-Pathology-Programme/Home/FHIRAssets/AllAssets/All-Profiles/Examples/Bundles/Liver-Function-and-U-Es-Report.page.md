@@ -2,7 +2,7 @@
 topic: R4BundleExampleLFTandUandEReport
 subject: Pathology-Bundle-LFT-UandE-Report-Example
 ---
-### PATH-R4-12: Bundle Example - Liver Function Tests and Urea and Electrolytes Report
+### PATH-R4-14: Bundle Example - Liver Function Tests and Urea and Electrolytes Report
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

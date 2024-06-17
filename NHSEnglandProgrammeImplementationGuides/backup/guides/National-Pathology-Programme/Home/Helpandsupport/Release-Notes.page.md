@@ -5,7 +5,10 @@ topic: ReleaseNotes
 
 ### v0.1.7 (TBC)
 
-* Added two new examples, {{pagelink:R4BundleExampleGTTReportUnstructured}} and {{pagelink:R4BundleExampleUrineMCSReportUnstructured}}, based on the existing structured versions of the same examples. The unstructured versions illustrate how complex reports may be represented using formatted text within a single `Observation`, rather than a using set of structured, coded `Observations`.
+* Added two new `Bundle` examples, {{pagelink:R4BundleExampleGTTReportUnstructured}} and {{pagelink:R4BundleExampleUrineMCSReportUnstructured}}, based on the existing structured versions of the same examples. The unstructured versions illustrate how complex reports may be represented using formatted text within a single `Observation`, rather than using a set of structured, coded `Observations`.
+* Added the following new `Bundle` examples:
+    * {{pagelink:R4BundleExampleCRPRequest}}
+    * {{pagelink:R4BundleExampleCRPReport}}
 * Updated `UKCore-Observation-Lab.code` in the examples to use content from the SNOMED CT PBCL reference set alongside equivalent content from the SNOMED CT PaLM content reference set.
 * Updated `UKCore-Practitioner.identifier` in the `Bundle` examples with a test GMC code for the requesting practitioner.
 

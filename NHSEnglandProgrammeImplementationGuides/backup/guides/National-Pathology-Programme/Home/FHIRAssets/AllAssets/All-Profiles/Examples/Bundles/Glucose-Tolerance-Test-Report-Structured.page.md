@@ -2,7 +2,7 @@
 topic: R4BundleExampleGTTReportStructured
 subject: Pathology-Bundle-GTT-Report-Example
 ---
-### PATH-R4-14b: Bundle Example - Glucose Tolerance Test Report (Structured)
+### PATH-R4-16b: Bundle Example - Glucose Tolerance Test Report (Structured)
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

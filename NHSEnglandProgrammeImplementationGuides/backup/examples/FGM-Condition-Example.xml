@@ -2,11 +2,11 @@
   <id value="FGM-Condition-Example" />
   <meta>
     <profile
-             value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition" />
+             value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
   </meta>
   <contained>
      <meta>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
       </meta>
     <Provenance>
       <id value="e78b78b2-31f9-453d-b278-6d5720001073" />
