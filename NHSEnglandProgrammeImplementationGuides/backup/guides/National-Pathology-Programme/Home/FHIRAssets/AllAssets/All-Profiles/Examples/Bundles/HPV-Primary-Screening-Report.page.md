@@ -2,7 +2,7 @@
 topic: R4BundleExampleHPVReport
 subject: Pathology-Bundle-HPV-Report-Example
 ---
-### PATH-R4-06: Bundle Example - HPV Primary Screening Report
+### PATH-R4-08: Bundle Example - HPV Primary Screening Report
 
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
     

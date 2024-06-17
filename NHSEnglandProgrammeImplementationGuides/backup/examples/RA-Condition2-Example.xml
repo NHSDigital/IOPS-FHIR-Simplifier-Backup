@@ -2,11 +2,11 @@
   <id value="RA-Condition2-Example" />
   <meta>
     <profile
-             value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition" />
+             value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
   </meta>
   <contained>
      <meta>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
       </meta>
     <Provenance>
       <id value="f55e1edc-8ac7-4e06-b322-25fd34e62249" />

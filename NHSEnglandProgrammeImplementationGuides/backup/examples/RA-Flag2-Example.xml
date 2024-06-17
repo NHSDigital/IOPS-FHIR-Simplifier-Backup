@@ -2,11 +2,11 @@
   <id value="RA-Flag2-Example" />
   <meta>
     <profile
-             value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag" />
+             value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
   </meta>
   <contained>
      <meta>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
       </meta>
     <Provenance>
       <id value="71f8bcda-242d-4401-a59c-6924a6cb1c0e" />

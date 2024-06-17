@@ -4,6 +4,8 @@
   filename: Haemoglobin-A1c-Report.page.md
 - name: Full Blood Count Request
   filename: Full-Blood-Count-Request.page.md
+- name: C-Reactive Protein Report
+  filename: C-Reactive-Protein-Report.page.md
 - name: Full Blood Count Report
   filename: Full-Blood-Count-Report.page.md
 - name: Hepatitis B Surface Antigen Request
@@ -34,3 +36,5 @@
   filename: Urine-MC-S-Request.page.md
 - name: Urine MC&S Report - Structured
   filename: Urine-MC-S-Report-Structured.page.md
+- name: C-Reactive Protein Request
+  filename: C-Reactive-Protein-Request.page.md

@@ -1,0 +1,127 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="England-Condition-Flag" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
+    <version value="0.1.0" />
+    <name value="EnglandConditionFlag" />
+    <title value="England Condition Flag" />
+    <status value="draft" />
+    <date value="2024-02-14" />
+    <publisher value="NHS England" />
+    <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+   </contact>
+    <description value="Record an individual condition for a flag in NHS England" />
+    <purpose value="This profile is made available to record an individual condition for a flag in NHS England " />
+    <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+    <fhirVersion value="4.0.1" />
+    <mapping>
+        <identity value="workflow" />
+        <uri value="http://hl7.org/fhir/workflow" />
+        <name value="Workflow Pattern" />
+    </mapping>
+    <mapping>
+        <identity value="sct-concept" />
+        <uri value="http://snomed.info/conceptdomain" />
+        <name value="SNOMED CT Concept Domain Binding" />
+    </mapping>
+    <mapping>
+        <identity value="v2" />
+        <uri value="http://hl7.org/v2" />
+        <name value="HL7 v2 Mapping" />
+    </mapping>
+    <mapping>
+        <identity value="rim" />
+        <uri value="http://hl7.org/v3" />
+        <name value="RIM Mapping" />
+    </mapping>
+    <mapping>
+        <identity value="w5" />
+        <uri value="http://hl7.org/fhir/fivews" />
+        <name value="FiveWs Pattern Mapping" />
+    </mapping>
+    <mapping>
+        <identity value="sct-attr" />
+        <uri value="http://snomed.org/attributebinding" />
+        <name value="SNOMED CT Attribute Binding" />
+    </mapping>
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="Condition" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
+    <derivation value="constraint" />
+    <differential>
+    <element id="Condition">
+      <path value="Condition" />
+    </element>
+    <element id="Condition.contained">
+      <path value="Condition.contained" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="contained" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+      <element id="Condition.contained:provenance">
+      <path value="Condition.contained" />
+      <sliceName value="provenance" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Provenance" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+      </type>
+     </element>
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <max value="2" />
+    </element>
+    <element id="Condition.category:patientFlag">
+      <path value="Condition.category" />
+      <sliceName value="patientFlag" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet
+                  value="https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory" />
+      </binding>
+     </element>
+     <element id="Condition.category:conditionCategory">
+      <path value="Condition.category" />
+      <sliceName value="conditionCategory" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet
+                  value="https://fhir.nhs.uk/England/ValueSet/FlagConditionCategory" />
+      </binding>
+     </element>
+     <element id="Condition.code">
+      <path value="Condition.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet
+                  value="https://fhir.nhs.uk/England/ValueSet/FlagConditionCode" />
+      </binding>
+     </element>
+  </differential>
+</StructureDefinition>

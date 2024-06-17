@@ -2,7 +2,7 @@
 topic: R4ObservationeGFR
 subject: Pathology-Observation-eGFR-Example
 ---
-### PATH-R4-18: Observation Example - eGFR
+### PATH-R4-20: Observation Example - eGFR
 An example of a quantitative test result:
 * eGFR: >90 mL/min/1.73m2
 
