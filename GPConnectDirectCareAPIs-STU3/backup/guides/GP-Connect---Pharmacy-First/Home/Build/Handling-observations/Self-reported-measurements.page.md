@@ -6,6 +6,7 @@ As of Wednesday, 22nd November 2023, Section 4.18 of the <a href="https://www.en
 
 **Self-reported height**
 - [1162419008 | Self reported body height (observable entity) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=1162419008)
+- [248333004 | Standing height (observable entity)|](https://termbrowser.nhs.uk/?perspective=full&conceptId1=248333004)
 
 <br />
 
@@ -16,7 +17,8 @@ As of Wednesday, 22nd November 2023, Section 4.18 of the <a href="https://www.en
 
 
 **Self-reported BMI**
-There is no self-reported code for body mass index (BMI)
+There is no self-reported code for body mass index (BMI). BMI calculated from self-reported values should be sent as:
+- [60621009 | Body mass index (observable entity) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=60621009)
 
 <br />
 
