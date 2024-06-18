@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="BARSBundleMessage" />
   <url value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
@@ -5,7 +6,7 @@
   <name value="BARSBundleMessage" />
   <title value="BARS Bundle Message" />
   <status value="active" />
-  <date value="2021-12-08" />
+  <date value="2024-06-17" />
   <description value="BARS Bundle Message" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
