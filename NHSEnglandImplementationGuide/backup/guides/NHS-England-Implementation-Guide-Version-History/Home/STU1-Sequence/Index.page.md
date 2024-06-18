@@ -4,15 +4,43 @@
 <tr>
 <th class="width10">Date</th>
 <th class="width10">IG Version</th>
-<th class="width10">FHIR Version</th>
+<th class="width10">Package Version</th>
 <th class="width10">UK Core Version</th>
 <th class="width60">Description</th>
 </tr>
 <tr>
+<td>20th May 2024</td>
+<td>1.1.0</td>
+<td>1.2.1</td>
+<td>STU2 2.0.0</td>
+<td>Package fhir.r4.nhsengland.stu1 1.2.1 update. </td>
+</tr>
+<tr>
+<td colspan="5"><b>Changes for this version</b>
+<br />
+<ul>
+<li>Update to package only to include ValueSet and CodeSystem <code>message-events</code> that was previously in the NHSDigital Implementation Guide. This has been added due to the need from programmes for validation purposes, but have not been through the C&TA process.</li>
+</td>
+</tr>
+<tr>
+<td>20th May 2024</td>
+<td>1.1.0</td>
+<td>1.2.0</td>
+<td>STU2 2.0.0</td>
+<td>Package fhir.r4.nhsengland.stu1 1.2.0 update. </td>
+</tr>
+<tr>
+<td colspan="5"><b>Changes for this version</b>
+<br />
+<ul>
+<li>Update to package only change dependency to the latest UK Core balloted release STU2 2.0.0</li>
+</td>
+</tr>
+<tr>
 <td>7th December 2023</td>
 <td>1.1.0</td>
-<td>4.0.1</td>
-<td>STU3 0.0.6</td>
+<td>1.1.0</td>
+<td>STU3 0.0.6-pre-release </td>
 <td>Release of NHS England Implementation Guide 1.1.0 - STU1. This was subject to the Clinical and Technical Assurance Sprint 2 review process.</td>
 </tr>
 <tr>
@@ -32,8 +60,8 @@
 <tr>
 <td>23rd November 2023</td>
 <td>1.1.0-sprint-2-review</td>
-<td>4.0.1</td>
-<td>STU3 0.0.6</td>
+<td>1.0.0</td>
+<td>STU3 0.0.6-pre-release </td>
 <td>Release of NHS England Implementation Guide 1.1.0-sprint-2-review - STU1. This is subject to the Clinical and Technical Assurance Sprint 2 review process.</td>
 </tr>
 <tr>
@@ -48,7 +76,7 @@
 <tr>
 <td>9th November 2023</td>
 <td>1.0.0</td>
-<td>4.0.1</td>
+<td>1.0.0</td>
 <td>STU3 0.0.6</td>
 <td>Release of NHS England Implementation Guide 1.0.0 - STU1. This was subject to Clinical and Technical Assurance Sprint 1.</td>
 </tr>
