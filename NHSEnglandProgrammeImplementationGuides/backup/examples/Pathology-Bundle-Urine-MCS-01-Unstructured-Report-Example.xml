@@ -1,0 +1,326 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Pathology-Bundle-Urine-MCS-01-Unstructured-Report-Example" />
+  <meta>
+    <lastUpdated value="2022-02-25T13:47:00+00:00" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="86834956-dc57-4b90-8f1b-6174a887ca27" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:f18a2226-c0ab-480d-b80a-b6561fe8f9c4" />
+    <resource>
+      <MessageHeader>
+        <!-- TBC Review content of MessageHeader -->
+        <id value="f18a2226-c0ab-480d-b80a-b6561fe8f9c4" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
+        </meta>
+        <eventCoding>
+          <system value="http://snomed.info/sct" />
+          <code value="371528001" />
+          <display value="Pathology report" />
+        </eventCoding>
+        <destination>
+          <name value="PICKERING MEDICAL PRACTICE" />
+          <!-- TBC Update endpoint address -->
+          <endpoint value="TBC" />
+          <!-- Requesting Organisation -->
+          <receiver>
+            <reference value="urn:uuid:3c43b5b3-06d6-445f-ae9a-48d5f05df434" />
+          </receiver>
+        </destination>
+        <sender>
+          <!-- Performing Laboratory -->
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+        </sender>
+        <source>
+          <!-- TBC Update endpoint address -->
+          <endpoint value="TBC" />
+        </source>
+        <focus>
+          <!-- DiagnosticReport -->
+          <reference value="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
+        </focus>
+        <definition value="https://fhir.nhs.uk/England/MessageDefinition/England-Pathology-Report" />
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+    <resource>
+      <Organization>
+        <!-- Performing Laboratory -->
+        <id value="8a6d85b8-9837-4fed-a257-4cf207988338" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="Y8J7D" />
+        </identifier>
+        <name value="TD008362 PATH LAB 001" />
+        <address>
+          <line value="PATHOLOGY LAB" />
+          <line value="7-8 WELLINGTON PLACE" />
+          <city value="LEEDS" />
+          <district value="WEST YORKSHIRE" />
+          <postalCode value="LS1 4AP" />
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3c43b5b3-06d6-445f-ae9a-48d5f05df434" />
+    <resource>
+      <Organization>
+        <!-- Requesting Organisation -->
+        <id value="3c43b5b3-06d6-445f-ae9a-48d5f05df434" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="B82033" />
+        </identifier>
+        <name value="PICKERING MEDICAL PRACTICE" />
+        <address>
+          <line value="SOUTHGATE" />
+          <city value="PICKERING" />
+          <district value="NORTH YORKSHIRE" />
+          <postalCode value="YO18 8BL" />
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
+    <resource>
+      <Practitioner>
+        <!-- Requesting Practitioner -->
+        <id value="9a835acf-d715-4d84-8dcf-a8435f6417fe" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+          <value value="C1008215" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <family value="GASKELL" />
+          <given value="Gale" />
+          <prefix value="Dr" />
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <resource>
+      <Patient>
+        <id value="ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        </meta>
+        <identifier>
+          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland" />
+                <code value="01" />
+                <display value="Number present and verified" />
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="9727710859" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <family value="MOXEY" />
+          <given value="Judy" />
+        </name>
+        <gender value="female" />
+        <birthDate value="2004-05-06" />
+        <address>
+          <line value="1 CASTLEGATE" />
+          <city value="PICKERING" />
+          <district value="NORTH YORKSHIRE" />
+          <postalCode value="YO18 7AY" />
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
+    <resource>
+      <ServiceRequest>
+        <id value="1c38d507-9ad7-4b49-ba91-7da204842cac" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+        </meta>
+        <identifier>
+          <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
+          <value value="REQ-20220221-000018" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <code>
+          <coding>
+            <!-- From PaLM procedure reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="401324008" />
+            <display value="Urinary microscopy, culture and sensitivities" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <authoredOn value="2022-02-21T10:29:00+00:00" />
+        <requester>
+          <reference value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
+          <display value="GASKELL, Dr Gale" />
+        </requester>
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
+    <resource>
+      <Specimen>
+        <id value="bde5b0a5-4fb3-4655-acf0-215b93aee006" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+        </meta>
+        <identifier>
+          <system value="http://B82033-pickeringmedicalpractice.com/specimen" />
+          <value value="SPC-REQ-20220221-000024" />
+        </identifier>
+        <accessionIdentifier>
+          <system value="http://Y8J7D-pathlab001.com/specimen" />
+          <value value="SPC-LAB-20220221-004306" />
+        </accessionIdentifier>
+        <status value="available" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="122575003" />
+            <display value="Urine specimen" />
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <receivedTime value="2022-02-21T14:58:00+00:00" />
+        <request>
+          <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
+        </request>
+        <collection>
+          <collectedDateTime value="2022-02-21T11:07:00+00:00" />
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
+    <resource>
+      <DiagnosticReport>
+        <id value="35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
+        </meta>
+        <identifier>
+          <system value="http://Y8J7D-pathlab001.com/report" />
+          <value value="REP-20220225-006301" />
+        </identifier>
+        <basedOn>
+          <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
+        </basedOn>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+            <code value="LAB" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="721981007" />
+            <display value="Diagnostic studies report" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <issued value="2022-02-25T13:47:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <specimen>
+          <reference value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
+        </specimen>
+        <result>
+          <reference value="urn:uuid:bd867909-49ca-4a4b-b02f-162790b6800f" />
+        </result>
+        <conclusion value="Likely to be clinically significant." />
+      </DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:bd867909-49ca-4a4b-b02f-162790b6800f" />
+    <resource>
+      <Observation>
+        <id value="bd867909-49ca-4a4b-b02f-162790b6800f" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="02875aea-9815-4d1d-b34e-f9f29b859d02" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="995581000000104" />
+            <display value="Urinary microscopy, culture and sensitivities" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <issued value="2022-02-25T13:47:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <valueString value="Microscopy\nCasts  None seen\nWhite cells  >35 x10*6/L\nRed cells  10-35 x10*6/L\nEpithelial cells  +\n\nCulture\n1. Staphylococcus aureus   Scanty growth\n\nSensitivities  1\nFlucloxacillin   S\nTrimethoprim  S\nNitrofurantoin  R" /> 
+        <specimen>
+          <reference value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
+        </specimen>
+      </Observation>
+    </resource>
+  </entry> 
+</Bundle>

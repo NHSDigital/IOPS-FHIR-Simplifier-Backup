@@ -105,9 +105,8 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         </meta>
         <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
-          <!-- Confirm SDS user id -->
-          <value value="TBC" />
+          <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+          <value value="C1008215" />
         </identifier>
         <name>
           <use value="official" />

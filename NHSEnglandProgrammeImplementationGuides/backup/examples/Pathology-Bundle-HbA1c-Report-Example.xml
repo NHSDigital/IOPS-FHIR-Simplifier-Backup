@@ -105,9 +105,8 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         </meta>
         <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
-          <!-- Confirm SDS user id -->
-          <value value="TBC" />
+          <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+          <value value="C1008215" />
         </identifier>
         <name>
           <use value="official" />
@@ -301,7 +300,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PaLM observable entity reference set -->
+            <!-- From PBCL and PaLM observable entity reference sets -->
             <system value="http://snomed.info/sct" />
             <code value="999791000000106" />
             <display value="Haemoglobin A1c level - International Federation of Clinical Chemistry and Laboratory Medicine standardised" />

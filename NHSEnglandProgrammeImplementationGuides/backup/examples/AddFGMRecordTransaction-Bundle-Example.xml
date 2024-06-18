@@ -39,11 +39,11 @@
                    value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
         </meta>
         <contained>
-           <meta>
-             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
-            </meta>
           <Provenance>
             <id value="bc0dbfb1-7432-46fa-b1b8-0e3648827754" />
+            <meta>
+             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+            </meta>
             <target>
               <reference value="#" />
             </target>
@@ -99,7 +99,7 @@
         <category>
           <coding>
             <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
             <code value="FGM" />
             <display value="Female Genital Mutilation Flag" />
           </coding>
@@ -115,14 +115,14 @@
         <policyRule>
           <coding>
             <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole" />
+                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
             <code value="001" />
           </coding>
         </policyRule>
         <provision>
           <purpose>
             <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/FGMConsentPurpose" />
+                    value="https://fhir.nhs.uk/England/CodeSystem/England-ConsentPurposeFGM" />
             <code value="FGMCONSENT" />
             <display value="FGM - Consent to record FGM flags" />
           </purpose>
@@ -188,7 +188,7 @@
         <category>
           <coding>
             <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
             <code value="FGM" />
             <display value="Female Genital Mutilation Flag" />
           </coding>
@@ -196,7 +196,7 @@
         <category>
           <coding>
             <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/FGMConditionCategory" />
+                    value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCategoryFGM" />
             <code value="fgm-example-condition-category" />
             <display value="FGM example condition category" />
           </coding>
@@ -204,8 +204,8 @@
         <code>
           <coding>
             <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/FGMConditionCode" />
-            <code value="1" />
+                    value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeFGM" />
+            <code value="fgm-example-condition-code" />
             <display value="FGM example condition code" />
           </coding>
         </code>
@@ -229,11 +229,11 @@
                    value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
         </meta>
         <contained>
-           <meta>
-             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
-            </meta>
           <Provenance>
             <id value="3fc83fd8-4a6d-48e4-91ab-12bb10a4a834" />
+            <meta>
+             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+            </meta>
             <target>
               <reference value="#" />
             </target>
@@ -277,7 +277,7 @@
         <code>
           <coding>
             <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
             <code value="FGM" />
             <display value="Female Genital Mutilation Flag" />
           </coding>
@@ -347,7 +347,7 @@
         <category>
           <coding>
             <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
             <code value="FGM" />
             <display value="Female Genital Mutilation Flag" />
           </coding>
@@ -355,7 +355,7 @@
         <category>
           <coding>
             <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/FGMFlagCategory" />
+                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryFGM" />
             <code value="001" />
             <display value="Example FGM category" />
           </coding>

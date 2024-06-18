@@ -1,6 +1,6 @@
 ---
 topic: R4BundleExampleGTTReportUnstructured
-subject: Pathology-Bundle-GTT-Report-Example
+subject: Pathology-Bundle-GTT-Unstructured-Report-Example
 ---
 ### PATH-R4-16a: Bundle Example - Glucose Tolerance Test  Report (Unstructured)
 

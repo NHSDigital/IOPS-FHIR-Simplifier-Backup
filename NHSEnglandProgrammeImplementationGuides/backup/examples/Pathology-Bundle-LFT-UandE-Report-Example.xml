@@ -105,9 +105,8 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         </meta>
         <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
-          <!-- Confirm SDS user id -->
-          <value value="TBC" />
+          <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+          <value value="C1008215" />
         </identifier>
         <name>
           <use value="official" />
@@ -414,6 +413,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="997591000000109" />
+            <display value="Serum total bilirubin level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -472,6 +479,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1000821000000103" />
+            <display value="Serum albumin level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -536,6 +551,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1000621000000104" />
+            <display value="Serum alkaline phosphatase level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -600,6 +623,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1018251000000107" />
+            <display value="Serum alanine aminotransferase level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -661,8 +692,8 @@
           <coding>
             <!-- From PaLM procedure reference set -->
             <system value="http://snomed.info/sct" />
-            <code value="26958001" />
-            <display value="Hepatic function panel" />
+            <code value="252167001" />
+            <display value="Urea and electrolytes" />
           </coding>
         </code>
         <subject>
@@ -683,7 +714,7 @@
           <reference value="urn:uuid:f5a0e88f-a76a-4526-8927-579771471c58" />
         </hasMember>
         <hasMember>
-          <!-- Potassium substance concentration in plasma -->
+          <!-- Potassium substance concentration in serum -->
           <reference value="urn:uuid:aa2151a3-3f5b-4f0d-9074-52563aa77c6c" />
         </hasMember>
         <hasMember>
@@ -719,6 +750,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1000951000000103" />
+            <display value="Serum urea level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -783,6 +822,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1000661000000107" />
+            <display value="Serum sodium level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -829,7 +876,7 @@
     <fullUrl value="urn:uuid:aa2151a3-3f5b-4f0d-9074-52563aa77c6c" />
     <resource>
       <Observation>
-        <!-- Potassium substance concentration in plasma -->
+        <!-- Potassium substance concentration in serum -->
         <id value="aa2151a3-3f5b-4f0d-9074-52563aa77c6c" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
@@ -847,11 +894,19 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1000651000000109" />
+            <display value="Serum potassium level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
-            <code value="1107751000000106" />
-            <display value="Potassium substance concentration in plasma" />
+            <code value="1107761000000109" />
+            <display value="Potassium substance concentration in serum" />
           </coding>
         </code>
         <subject>
@@ -911,6 +966,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1000731000000107" />
+            <display value="Serum creatinine level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -975,8 +1038,11 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <!-- In this particular example, the PBCL and PaLM codes are the same. -->
           <coding>
-            <!-- From PaLM observable entity reference set -->
+            <!-- From PBCL and PaLM observable entity reference sets -->
             <system value="http://snomed.info/sct" />
             <code value="1011481000000105" />
             <display value="eGFR (estimated glomerular filtration rate) using creatinine Chronic Kidney Disease Epidemiology Collaboration equation per 1.73 square metres" />

@@ -16,6 +16,14 @@
     </coding>
   </category>
   <code>
+    <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+    <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+    <coding>
+      <!-- From PBCL observable entity reference set -->
+      <system value="http://snomed.info/sct" />
+      <code value="1022581000000105" />
+      <display value="Lymphocyte count" />
+    </coding>
     <coding>
       <!-- From PaLM observable entity reference set -->
       <system value="http://snomed.info/sct" />
