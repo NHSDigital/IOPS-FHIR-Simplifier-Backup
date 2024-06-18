@@ -105,9 +105,8 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         </meta>
         <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
-          <!-- Confirm SDS user id -->
-          <value value="TBC" />
+          <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+          <value value="C1008215" />
         </identifier>
         <name>
           <use value="official" />
@@ -414,6 +413,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1005671000000105" />
+            <display value="Serum cholesterol level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -464,6 +471,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1005681000000107" />
+            <display value="Serum high density lipoprotein cholesterol level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -515,7 +530,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PaLM observable entity reference set -->
+            <!-- From PBCL observable entity reference set (an equivalent PaLM code does not currently exist) -->
             <system value="http://snomed.info/sct" />
             <code value="1015681000000109" />
             <display value="Serum cholesterol/high density lipoprotein ratio" />
@@ -562,6 +577,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1006191000000106" />
+            <display value="Serum non high density lipoprotein cholesterol level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -613,7 +636,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PaLM observable entity reference set -->
+            <!-- From PBCL and PaLM observable entity reference sets -->
             <system value="http://snomed.info/sct" />
             <code value="999791000000106" />
             <display value="Haemoglobin A1c level - International Federation of Clinical Chemistry and Laboratory Medicine standardised" />

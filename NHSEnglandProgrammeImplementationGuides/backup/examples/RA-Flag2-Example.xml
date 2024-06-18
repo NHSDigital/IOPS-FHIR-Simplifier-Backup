@@ -5,11 +5,11 @@
              value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
   </meta>
   <contained>
-     <meta>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
-      </meta>
     <Provenance>
       <id value="71f8bcda-242d-4401-a59c-6924a6cb1c0e" />
+       <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+      </meta>
       <target>
         <reference value="#" />
       </target>
@@ -53,14 +53,14 @@
   <category>
     <coding>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
       <code value="NRAF" />
       <display value="National Reasonable Adjustments Flag" />
     </coding>
   </category>
   <category>
     <coding>
-      <system value="https://fhir.nhs.uk/England/CodeSystem/RAFlagCategory" />
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
       <code value="011" />
       <display value="Bespoke Reasonable adjustments" />
     </coding>

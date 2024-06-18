@@ -1,12 +1,12 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="England-BodyStructure" />
   <url value="https://fhir.nhs.uk/England/ValueSet/England-BodyStructure" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="EnglandBodyStructure" />
-  <title value="England BodyStructure" />
+  <title value="England Body Structure" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2024-03-21" />
+  <date value="2024-06-18" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />

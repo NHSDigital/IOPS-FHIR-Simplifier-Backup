@@ -1,0 +1,78 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="England-ConditionCodeRA" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/RA-ConditionCode</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="RA-ConditionCode-1"> </a></td><td>Vision (for example blindness or partial sight)</td></tr><tr><td style="white-space:nowrap">2<a name="RA-ConditionCode-2"> </a></td><td>Hearing (for example deafness or partial hearing)</td></tr><tr><td style="white-space:nowrap">3<a name="RA-ConditionCode-3"> </a></td><td>Mobility (for example walking short distances or climbing stairs)</td></tr><tr><td style="white-space:nowrap">4<a name="RA-ConditionCode-4"> </a></td><td>Dexterity (for example lifting and carrying objects, using a keyboard)</td></tr><tr><td style="white-space:nowrap">5<a name="RA-ConditionCode-5"> </a></td><td>Learning or understanding or concentrating</td></tr><tr><td style="white-space:nowrap">6<a name="RA-ConditionCode-6"> </a></td><td>Memory</td></tr><tr><td style="white-space:nowrap">7<a name="RA-ConditionCode-7"> </a></td><td>Mental health</td></tr><tr><td style="white-space:nowrap">8<a name="RA-ConditionCode-8"> </a></td><td>Stamina or breathing or fatigue</td></tr><tr><td style="white-space:nowrap">9<a name="RA-ConditionCode-9"> </a></td><td>Social or behavioural (for example associated with autism spectrum disorder (ASD) which includes Asperger’s, or attention deficit hyperactivity disorder (ADHD))</td></tr><tr><td style="white-space:nowrap">10<a name="RA-ConditionCode-10"> </a></td><td>Other (please specify)</td></tr><tr><td style="white-space:nowrap">12<a name="RA-ConditionCode-12"> </a></td><td>Patient would prefer not to say</td></tr></table></div>
+  </text>
+  <url value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeRA" />
+  <version value="0.4.0" />
+  <name value="EnglandConditionCodeRA" />
+  <title value="England Condition Code RA" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-02-14" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description
+               value="A CodeSystem to identify the SNOMED-CT concept representing an Impairment recorded as part of a Reasonable Adjustment" />
+  <copyright
+             value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <count value="11" />
+  <concept>
+    <code value="1" />
+    <display value="Vision (for example blindness or partial sight)" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Hearing (for example deafness or partial hearing)" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display
+             value="Mobility (for example walking short distances or climbing stairs)" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display
+             value="Dexterity (for example lifting and carrying objects, using a keyboard)" />
+  </concept>
+  <concept>
+    <code value="5" />
+    <display value="Learning or understanding or concentrating" />
+  </concept>
+  <concept>
+    <code value="6" />
+    <display value="Memory" />
+  </concept>
+  <concept>
+    <code value="7" />
+    <display value="Mental health" />
+  </concept>
+  <concept>
+    <code value="8" />
+    <display value="Stamina or breathing or fatigue" />
+  </concept>
+  <concept>
+    <code value="9" />
+    <display
+             value="Social or behavioural (for example associated with autism spectrum disorder (ASD) which includes Asperger’s, or attention deficit hyperactivity disorder (ADHD))" />
+  </concept>
+  <concept>
+    <code value="10" />
+    <display value="Other (please specify)" />
+  </concept>
+  <concept>
+    <code value="12" />
+    <display value="Patient would prefer not to say" />
+  </concept>
+</CodeSystem>

@@ -16,8 +16,11 @@
     </coding>
   </category>
   <code>
+    <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+    <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+    <!-- In this particular example, the PBCL and PaLM codes are the same. -->
     <coding>
-      <!-- From PaLM observable entity reference set -->
+      <!-- From PBCL and PaLM observable entity reference sets -->
       <system value="http://snomed.info/sct" />
       <code value="1011481000000105" />
       <display value="eGFR (estimated glomerular filtration rate) using creatinine Chronic Kidney Disease Epidemiology Collaboration equation per 1.73 square metres" />

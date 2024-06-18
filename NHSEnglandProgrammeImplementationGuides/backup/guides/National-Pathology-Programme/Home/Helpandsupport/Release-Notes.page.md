@@ -11,6 +11,8 @@ topic: ReleaseNotes
     * {{pagelink:R4BundleExampleCRPReport}}
 * Updated `UKCore-Observation-Lab.code` in the examples to use content from the SNOMED CT PBCL reference set alongside equivalent content from the SNOMED CT PaLM content reference set.
 * Updated `UKCore-Practitioner.identifier` in the `Bundle` examples with a test GMC code for the requesting practitioner.
+* Updated the {{pagelink:R4BundleExampleUrineMCSReportStructured}} example to include a new overarching test group `Observation`, with the following code (taken from the SNOMED CT PaLM procedure reference set):
+    * 401324008 | Urinary microscopy, culture and sensitivities
 
 ---
 

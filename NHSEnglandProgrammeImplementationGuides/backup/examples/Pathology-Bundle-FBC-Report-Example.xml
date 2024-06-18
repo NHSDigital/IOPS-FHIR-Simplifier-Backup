@@ -105,9 +105,8 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         </meta>
         <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
-          <!-- Confirm SDS user id -->
-          <value value="TBC" />
+          <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+          <value value="C1008215" />
         </identifier>
         <name>
           <use value="official" />
@@ -400,6 +399,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022541000000102" />
+            <display value="Total white cell count" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -465,7 +472,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PaLM observable entity reference set -->
+            <!-- From PBCL and PaLM observable entity reference sets -->
             <system value="http://snomed.info/sct" />
             <code value="1022451000000103" />
             <display value="Red blood cell count" />
@@ -528,6 +535,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022431000000105" />
+            <display value="Haemoglobin estimation" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -592,6 +607,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022291000000105" />
+            <display value="Haematocrit" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -656,6 +679,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022491000000106" />
+            <display value="MCV - Mean corpuscular volume" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -721,7 +752,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PaLM observable entity reference set -->
+            <!-- From PBCL and PaLM observable entity reference sets -->
             <system value="http://snomed.info/sct" />
             <code value="1022471000000107" />
             <display value="MCH - Mean corpuscular haemoglobin" />
@@ -785,7 +816,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PaLM observable entity reference set -->
+            <!-- From PBCL and PaLM observable entity reference sets -->
             <system value="http://snomed.info/sct" />
             <code value="1022481000000109" />
             <display value="MCHC - Mean corpuscular haemoglobin concentration" />
@@ -848,6 +879,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022651000000100" />
+            <display value="Platelet count" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -912,6 +951,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022551000000104" />
+            <display value="Neutrophil count" />
+          </coding>         
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -976,6 +1023,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022581000000105" />
+            <display value="Lymphocyte count" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -1040,6 +1095,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022591000000107" />
+            <display value="Monocyte count" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -1104,6 +1167,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022561000000101" />
+            <display value="Eosinophil count" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
@@ -1168,6 +1239,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022571000000108" />
+            <display value="Basophil count" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />

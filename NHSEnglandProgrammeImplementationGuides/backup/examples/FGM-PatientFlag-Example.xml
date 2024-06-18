@@ -5,11 +5,11 @@
              value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
   </meta>
   <contained>
-     <meta>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
-      </meta>
     <Provenance>
       <id value="3fc83fd8-4a6d-48e4-91ab-12bb10a4a834" />
+      <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+      </meta>
       <target>
         <reference value="#" />
       </target>
@@ -52,7 +52,7 @@
   <code>
     <coding>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
       <code value="FGM" />
       <display value="Female Genital Mutilation Flag" />
     </coding>

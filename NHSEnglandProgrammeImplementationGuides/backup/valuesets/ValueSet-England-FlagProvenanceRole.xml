@@ -1,0 +1,1852 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="England-FlagProvenanceRole" />
+  <text>
+    <status value="extensions" />
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"><code>https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0010">R0010</a></td><td>Medical Director</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0020">R0020</a></td><td>Clinical Director - Medical</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0210">R0210</a></td><td>Director of Public Health</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0030">R0030</a></td><td>Professor</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0040">R0040</a></td><td>Senior Lecturer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0050">R0050</a></td><td>Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0060">R0060</a></td><td>Special Salary Scale in Public Health Medicine</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0070">R0070</a></td><td>Associate Specialist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0080">R0080</a></td><td>Staff Grade</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0090">R0090</a></td><td>Hospital Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0100">R0100</a></td><td>Clinical Assistant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0110">R0110</a></td><td>Specialist Registrar</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0120">R0120</a></td><td>Senior Registrar (Closed)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0130">R0130</a></td><td>Registrar (Closed)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0140">R0140</a></td><td>Senior House Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0150">R0150</a></td><td>House Officer - Pre Registration</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0160">R0160</a></td><td>House Officer - Post Registration</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0170">R0170</a></td><td>Trust Grade Doctor - House Officer level</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0180">R0180</a></td><td>Trust Grade Doctor - SHO level</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0190">R0190</a></td><td>Trust Grade Doctor - Specialist Registrar level</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0200">R0200</a></td><td>Trust Grade Doctor - Career Grade level</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0260">R0260</a></td><td>General Medical Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0270">R0270</a></td><td>Salaried General Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1981">R1981</a></td><td>Psychiatrist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1984">R1984</a></td><td>Health Records Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6200">R6200</a></td><td>GP Registrar</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6300">R6300</a></td><td>Sessional GP</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R7140">R7140</a></td><td>ODP</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R7150">R7150</a></td><td>SODP</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9100">R9100</a></td><td>A&amp;E Staff Nurse (Temporary)  London Cluster Only</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9101">R9101</a></td><td>A&amp;E Manager (Temporary) London Cluster Only</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9102">R9102</a></td><td>A&amp;E Doctor  (Temporary) London Cluster only</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9103">R9103</a></td><td>A&amp;E Student (Temporary) London Cluster Only</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9104">R9104</a></td><td>A&amp;E Clerk (Temporary) London Cluster Only</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0215">R0215</a></td><td>Assistant Clinical Medical Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0220">R0220</a></td><td>Clinical Medical Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0230">R0230</a></td><td>Senior Clinical Medical Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0240">R0240</a></td><td>Other Community Health Service</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0243">R0243</a></td><td>Other Community Health Service - Social Care Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0247">R0247</a></td><td>Other Community Health Service - Admin Clerk</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0055">R0055</a></td><td>Dental Surgeon acting as Hospital Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0250">R0250</a></td><td>General Dental Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0280">R0280</a></td><td>Regional Dental Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0290">R0290</a></td><td>Dental Clinical Director - Dental</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0295">R0295</a></td><td>Dental Assistant Clinical Director</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0300">R0300</a></td><td>Dental Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0310">R0310</a></td><td>Senior Dental Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0320">R0320</a></td><td>Salaried Dental Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0006">R0006</a></td><td>Student Community Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0330">R0330</a></td><td>Student Nurse - Adult Branch</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0340">R0340</a></td><td>Student Nurse - Child Branch</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0350">R0350</a></td><td>Student Nurse - Mental Health Branch</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0360">R0360</a></td><td>Student Nurse - Learning Disabilities Branch</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0370">R0370</a></td><td>Student Midwife</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0380">R0380</a></td><td>Student Health Visitor</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0390">R0390</a></td><td>Student District Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0400">R0400</a></td><td>Student School Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0410">R0410</a></td><td>Student Practice Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0420">R0420</a></td><td>Student Occupational Health Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0430">R0430</a></td><td>Student Community Paediatric Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0440">R0440</a></td><td>Student Community Mental Health Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0450">R0450</a></td><td>Student Community Learning Disabilities Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0460">R0460</a></td><td>Student Chiropodist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0470">R0470</a></td><td>Student Dietitian</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0480">R0480</a></td><td>Student Occupational Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0490">R0490</a></td><td>Student Orthoptist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0500">R0500</a></td><td>Student Physiotherapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0510">R0510</a></td><td>Student Radiographer - Diagnostic</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0520">R0520</a></td><td>Student Radiographer - Therapeutic</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0530">R0530</a></td><td>Student Speech &amp; Language Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0540">R0540</a></td><td>Art, Music &amp; Drama Student</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0550">R0550</a></td><td>Student Psychotherapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6400">R6400</a></td><td>Medical Student</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0560">R0560</a></td><td>Director of Nursing</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0580">R0580</a></td><td>Nurse Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0610">R0610</a></td><td>Sister/Charge Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1976">R1976</a></td><td>Community Team Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0570">R0570</a></td><td>Nurse Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0600">R0600</a></td><td>Specialist Nurse Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0620">R0620</a></td><td>Staff Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0630">R0630</a></td><td>Enrolled Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0690">R0690</a></td><td>Community Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0700">R0700</a></td><td>Community Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1974">R1974</a></td><td>Community Learning Disabilities Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1975">R1975</a></td><td>Community Mental Health Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0590">R0590</a></td><td>Modern Matron</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1972">R1972</a></td><td>Clinical Team Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0640">R0640</a></td><td>Midwife - Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0650">R0650</a></td><td>Midwife - Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0660">R0660</a></td><td>Midwife - Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0670">R0670</a></td><td>Midwife - Sister/Charge Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0680">R0680</a></td><td>Midwife</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0018">R0018</a></td><td>Audiologist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0750">R0750</a></td><td>Chiropodist/Podiatrist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0760">R0760</a></td><td>Chiropodist/Podiatrist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0770">R0770</a></td><td>Chiropodist/Podiatrist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0780">R0780</a></td><td>Chiropodist/Podiatrist Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0790">R0790</a></td><td>Dietitian</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0800">R0800</a></td><td>Dietitian Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0810">R0810</a></td><td>Dietitian Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0820">R0820</a></td><td>Dietitian Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0950">R0950</a></td><td>Occupational Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0960">R0960</a></td><td>Occupational Therapist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0970">R0970</a></td><td>Occupational Therapist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0980">R0980</a></td><td>Occupational Therapy Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0990">R0990</a></td><td>Orthoptist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1000">R1000</a></td><td>Orthoptist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1010">R1010</a></td><td>Orthoptist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1020">R1020</a></td><td>Orthoptist Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1110">R1110</a></td><td>Physiotherapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1120">R1120</a></td><td>Physiotherapist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1130">R1130</a></td><td>Physiotherapist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1140">R1140</a></td><td>Physiotherapist Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1070">R1070</a></td><td>Paramedic</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1080">R1080</a></td><td>Paramedic Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1090">R1090</a></td><td>Paramedic Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1100">R1100</a></td><td>Paramedic Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0003">R0003</a></td><td>Clinical Application Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0012">R0012</a></td><td>Radiographer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0013">R0013</a></td><td>Student Radiographer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0014">R0014</a></td><td>Radiologist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0015">R0015</a></td><td>PACS Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0016">R0016</a></td><td>Reporting Radiographer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0017">R0017</a></td><td>Assistant Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1190">R1190</a></td><td>Radiographer - Diagnostic</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1200">R1200</a></td><td>Radiographer - Diagnostic, Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1210">R1210</a></td><td>Radiographer - Diagnostic, Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1220">R1220</a></td><td>Radiographer - Diagnostic, Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1230">R1230</a></td><td>Radiographer - Therapeutic</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1240">R1240</a></td><td>Radiographer - Therapeutic, Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1250">R1250</a></td><td>Radiographer - Therapeutic, Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1260">R1260</a></td><td>Radiographer - Therapeutic, Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1030">R1030</a></td><td>Orthotist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1040">R1040</a></td><td>Orthotist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1050">R1050</a></td><td>Orthotist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1060">R1060</a></td><td>Orthotist Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1150">R1150</a></td><td>Prosthetist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1160">R1160</a></td><td>Prosthetist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1170">R1170</a></td><td>Prosthetist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1180">R1180</a></td><td>Prosthetist Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0710">R0710</a></td><td>Art Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0720">R0720</a></td><td>Art Therapist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0730">R0730</a></td><td>Art Therapist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0740">R0740</a></td><td>Art Therapist Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0830">R0830</a></td><td>Drama Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0840">R0840</a></td><td>Drama Therapist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0850">R0850</a></td><td>Drama Therapist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0860">R0860</a></td><td>Drama Therapist Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0870">R0870</a></td><td>Multi Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0880">R0880</a></td><td>Multi Therapist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0890">R0890</a></td><td>Multi Therapist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0900">R0900</a></td><td>Multi Therapist Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0910">R0910</a></td><td>Music Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0920">R0920</a></td><td>Music Therapist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0930">R0930</a></td><td>Music Therapist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0940">R0940</a></td><td>Music Therapist Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0955">R0955</a></td><td>Speech &amp; Language Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0965">R0965</a></td><td>Speech &amp; Language Therapist Consultant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0975">R0975</a></td><td>Speech &amp; Language Therapist Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0985">R0985</a></td><td>Speech &amp; Language Therapist Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9500">R9500</a></td><td>Social Services Senior Management</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9505">R9505</a></td><td>Social Services Policy and Planning</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9510">R9510</a></td><td>Social Services Information Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9515">R9515</a></td><td>Social Work Team Manager (Children)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9520">R9520</a></td><td>Senior Social Worker (Children)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9525">R9525</a></td><td>Social Services Care Manager (Children)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9530">R9530</a></td><td>Social Work Assistant (Children)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9535">R9535</a></td><td>Child Protection Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9540">R9540</a></td><td>Family Placement Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9545">R9545</a></td><td>Community Worker (Children)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9550">R9550</a></td><td>Occupational Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9555">R9555</a></td><td>Occupational Therapist Assistant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9560">R9560</a></td><td>Occupational Therapy Team Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9565">R9565</a></td><td>Social Work Team Manager (Adults)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9570">R9570</a></td><td>Senior Social Worker (Adults)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9575">R9575</a></td><td>Social Services Care Manager (Adults)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9580">R9580</a></td><td>Social Work Assistant (Adults)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9585">R9585</a></td><td>Social Work Team Manager (Mental Health)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9590">R9590</a></td><td>Senior Social Worker (Mental Health)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9595">R9595</a></td><td>Social Services Care Manager (Mental Health)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9600">R9600</a></td><td>Social Work Assistant (Mental Health)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9605">R9605</a></td><td>Emergency Duty Social Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9615">R9615</a></td><td>Social Services Driver</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9620">R9620</a></td><td>Home Care Organiser</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9625">R9625</a></td><td>Home Care Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9630">R9630</a></td><td>Home Help</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9635">R9635</a></td><td>Warden</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9640">R9640</a></td><td>Meals on Wheels Organiser</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9645">R9645</a></td><td>Meals Delivery</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9650">R9650</a></td><td>Day Centre Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9655">R9655</a></td><td>Day Centre Deputy</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9660">R9660</a></td><td>Day Centre Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9665">R9665</a></td><td>Day Centre Care Staff</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9670">R9670</a></td><td>Family Centre Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9675">R9675</a></td><td>Family Centre Deputy</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9680">R9680</a></td><td>Family Centre Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9685">R9685</a></td><td>Nursery Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9690">R9690</a></td><td>Nursery Deputy</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9695">R9695</a></td><td>Nursery Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9700">R9700</a></td><td>Playgroup Leader</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9705">R9705</a></td><td>Playgroup Assistant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9710">R9710</a></td><td>Residential Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9715">R9715</a></td><td>Residential Deputy</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9720">R9720</a></td><td>Residential Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9725">R9725</a></td><td>Residential Care Staff</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9730">R9730</a></td><td>Intermediate Care Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9735">R9735</a></td><td>Intermediate Care Deputy</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9740">R9740</a></td><td>Intermediate Care Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9745">R9745</a></td><td>Intermediate Care Staff</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9750">R9750</a></td><td>Social Care SAP User</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9755">R9755</a></td><td>Social Care SAP Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1270">R1270</a></td><td>Clinical Director</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1280">R1280</a></td><td>Optometrist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1290">R1290</a></td><td>Pharmacist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1979">R1979</a></td><td>Medical Technical Officer - Pharmacy</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1300">R1300</a></td><td>Psychotherapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1310">R1310</a></td><td>Clinical Psychologist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1320">R1320</a></td><td>Chaplain</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1330">R1330</a></td><td>Social Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1340">R1340</a></td><td>Approved Social Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1350">R1350</a></td><td>Youth Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1360">R1360</a></td><td>Specialist Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1370">R1370</a></td><td>Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0011">R0011</a></td><td>Dispenser</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1380">R1380</a></td><td>Technician - PS&amp;T</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1390">R1390</a></td><td>Osteopath</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1400">R1400</a></td><td>Healthcare Scientist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1410">R1410</a></td><td>Consultant Healthcare Scientist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1420">R1420</a></td><td>Biomedical Scientist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0019">R0019</a></td><td>Medical Technical Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1430">R1430</a></td><td>Technician - Healthcare Scientists</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1440">R1440</a></td><td>Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1540">R1540</a></td><td>Associate Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1543">R1543</a></td><td>Associate Practitioner - Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1547">R1547</a></td><td>Associate Practitioner - General Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1560">R1560</a></td><td>Helper/Assistant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1600">R1600</a></td><td>Cytoscreener</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1570">R1570</a></td><td>Dental Surgery Assistant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1450">R1450</a></td><td>Health Care Support Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1580">R1580</a></td><td>Medical Laboratory Assistant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1550">R1550</a></td><td>Counsellor</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0002">R0002</a></td><td>Porter</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1690">R1690</a></td><td>Call Operator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1700">R1700</a></td><td>Gateway Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1710">R1710</a></td><td>Support, Time, Recovery Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1480">R1480</a></td><td>Healthcare Assistant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1490">R1490</a></td><td>Nursery Nurse</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1590">R1590</a></td><td>Phlebotomist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1460">R1460</a></td><td>Social Care Support Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1470">R1470</a></td><td>Home Help</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1520">R1520</a></td><td>Technician - Additional Clinical Services</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1530">R1530</a></td><td>Technical Instructor</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1980">R1980</a></td><td>Patient Welfare Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1500">R1500</a></td><td>Play Therapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1510">R1510</a></td><td>Play Specialist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1610">R1610</a></td><td>Student Technician</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1620">R1620</a></td><td>Trainee Scientist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1630">R1630</a></td><td>Trainee Practitioner</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1640">R1640</a></td><td>Nursing Cadet</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1650">R1650</a></td><td>Healthcare Cadet</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1660">R1660</a></td><td>Pre-reg Pharmacist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1670">R1670</a></td><td>Assistant Psychologist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1680">R1680</a></td><td>Assistant Psychotherapist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0007">R0007</a></td><td>ERS SDS Organisation Reporting Analyst</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0008">R0008</a></td><td>Demographic Supervisor</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0021">R0021</a></td><td>DSA NHS Number Manager (Temporary)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0022">R0022</a></td><td>DSA National Clinical Supervisor (Temporary)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0023">R0023</a></td><td>DSA National Clinical Administrator (Temporary)</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1720">R1720</a></td><td>Clerical Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1730">R1730</a></td><td>Receptionist</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1740">R1740</a></td><td>Secretary</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1750">R1750</a></td><td>Personal Assistant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1751">R1751</a></td><td>Demographic Administrator (Sensitive Records) Temporary</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1760">R1760</a></td><td>Medical Secretary</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1770">R1770</a></td><td>Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1971">R1971</a></td><td>Map of Medicine Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1973">R1973</a></td><td>Community Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1977">R1977</a></td><td>ECC/CPA Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1978">R1978</a></td><td>Information Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1985">R1985</a></td><td>Health Records Clerk</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1995">R1995</a></td><td>End Point Approver</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5010">R5010</a></td><td>Network Technician</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5040">R5040</a></td><td>Desktop Support Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5090">R5090</a></td><td>Registration Authority Agent</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5110">R5110</a></td><td>Demographic Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5120">R5120</a></td><td>ISP Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5130">R5130</a></td><td>Technical Codes Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5140">R5140</a></td><td>OSS Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5170">R5170</a></td><td>End Point Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5175">R5175</a></td><td>End Point Viewer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5181">R5181</a></td><td>RTS Dashboard User</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5183">R5183</a></td><td>RTS BT Dashboard User</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5186">R5186</a></td><td>ERS BT Customer SLA User</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5188">R5188</a></td><td>ERS BT Supplier SLA User</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5189">R5189</a></td><td>ERS LogicaCMG SLA User</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5190">R5190</a></td><td>Content Creator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5195">R5195</a></td><td>Content Publisher</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5210">R5210</a></td><td>User Details Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5250">R5250</a></td><td>EBS Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6010">R6010</a></td><td>Appointments Clerk</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6030">R6030</a></td><td>Ward Clerk</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6050">R6050</a></td><td>Clinical Coder</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6060">R6060</a></td><td>Medical Records Clerk</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6080">R6080</a></td><td>Waiting List Clerk</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R7100">R7100</a></td><td>Trainer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R7110">R7110</a></td><td>Training Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R7120">R7120</a></td><td>Directory of Services Coordinator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R9756">R9756</a></td><td>ETP System Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1780">R1780</a></td><td>Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1790">R1790</a></td><td>Senior Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1910">R1910</a></td><td>Chair</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1920">R1920</a></td><td>Chief Executive</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1930">R1930</a></td><td>Finance Director</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1940">R1940</a></td><td>Other Executive Director</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1950">R1950</a></td><td>Board Level Director</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1960">R1960</a></td><td>Non Executive Director</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1970">R1970</a></td><td>Childcare Co-ordinator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1982">R1982</a></td><td>Senior Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1983">R1983</a></td><td>Ward Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1986">R1986</a></td><td>Workgroup Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1987">R1987</a></td><td>National RBAC Attribute Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1988">R1988</a></td><td>National RBAC Baseline Policy Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1989">R1989</a></td><td>Complaints Coordinator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1990">R1990</a></td><td>Complaints Investigator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1996">R1996</a></td><td>End Point DNS Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1997">R1997</a></td><td>End Point Spine Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1998">R1998</a></td><td>End Point Super User</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1999">R1999</a></td><td>End Point Service Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5000">R5000</a></td><td>Network Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5003">R5003</a></td><td>Cluster System Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5007">R5007</a></td><td>System Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5020">R5020</a></td><td>Helpdesk Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5060">R5060</a></td><td>Security Policy Controller</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5070">R5070</a></td><td>Senior Security Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5072">R5072</a></td><td>Root Registration Authority Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5080">R5080</a></td><td>Registration Authority Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5100">R5100</a></td><td>Audit Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5105">R5105</a></td><td>Caldicott Guardian</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5180">R5180</a></td><td>NASP Service Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5182">R5182</a></td><td>ERS ETP System Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5184">R5184</a></td><td>ERS Spine SLA Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5185">R5185</a></td><td>ERS BT Customer SLA Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5187">R5187</a></td><td>ERS BT Supplier SLA Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5191">R5191</a></td><td>ERS Support Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5192">R5192</a></td><td>ECS Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5300">R5300</a></td><td>Portal Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5310">R5310</a></td><td>LiquidLogic Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5320">R5320</a></td><td>i.EPR Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5330">R5330</a></td><td>Synergy Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5340">R5340</a></td><td>SystmOne Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6020">R6020</a></td><td>Outpatient Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6040">R6040</a></td><td>Bed Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6070">R6070</a></td><td>Medical Records Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6090">R6090</a></td><td>Waiting List Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6100">R6100</a></td><td>Mental Health Act Administrator</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R6160">R6160</a></td><td>Ad-hoc Report Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R7130">R7130</a></td><td>PAS Manager</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1800">R1800</a></td><td>Technician - Admin &amp; Clerical</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1810">R1810</a></td><td>Accountant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1820">R1820</a></td><td>Librarian</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1830">R1830</a></td><td>Interpreter</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1840">R1840</a></td><td>Analyst</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1850">R1850</a></td><td>Adviser</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1860">R1860</a></td><td>Researcher</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1870">R1870</a></td><td>Control Assistant</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1880">R1880</a></td><td>Architect</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1890">R1890</a></td><td>Lawyer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R1900">R1900</a></td><td>Surveyor</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5030">R5030</a></td><td>Helpdesk Technician</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5050">R5050</a></td><td>Desktop Support Technician</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5150">R5150</a></td><td>System Worker</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R5400">R5400</a></td><td>Availability  Monitor</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8000">R8000</a></td><td>Clinical Practitioner Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8001">R8001</a></td><td>Nurse Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8002">R8002</a></td><td>Nurse Manager Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8003">R8003</a></td><td>Health Professional Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8004">R8004</a></td><td>Healthcare Student Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8016">R8016</a></td><td>Midwife Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8017">R8017</a></td><td>Midwife Manager Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8024">R8024</a></td><td>Bank Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8005">R8005</a></td><td>Biomedical Scientist Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8006">R8006</a></td><td>Medical Secretary Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8007">R8007</a></td><td>Clinical Coder Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8008">R8008</a></td><td>Admin/Clinical Support Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8015">R8015</a></td><td>Systems Support Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R0001">R0001</a></td><td>Privacy Officer</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8009">R8009</a></td><td>Receptionist Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8010">R8010</a></td><td>Clerical Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8011">R8011</a></td><td>Clerical Manager Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8012">R8012</a></td><td>Information Officer Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8013">R8013</a></td><td>Health Records Manager Access Role</td></tr><tr><td><a href="https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1.html#CareConnect-SDSJobRoleName-1-R8014">R8014</a></td><td>Social Worker Access Role</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html"><code>http://terminology.hl7.org/CodeSystem/contractsignertypecodes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html#contractsignertypecodes-AMENDER">AMENDER</a></td><td style="color: #cccccc">Amender</td><td>A person who has corrected, edited, or amended pre-existing information.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html#contractsignertypecodes-COAUTH">COAUTH</a></td><td style="color: #cccccc">Co-Author</td><td>The entity that co-authored content. There can be multiple co-authors of content, which may take such forms as a contract, a healthcare record entry or document, a policy, or a consent directive.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html#contractsignertypecodes-CONT">CONT</a></td><td style="color: #cccccc">Contact</td><td>A person or an organization that provides or receives information regarding another entity. Examples; patient NOK and emergency contacts; guarantor contact; employer contact.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html#contractsignertypecodes-EVTWIT">EVTWIT</a></td><td style="color: #cccccc">Event Witness</td><td>A person who attests to observing an occurrence.  For example, the witness has observed a procedure and is attesting to this fact.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html#contractsignertypecodes-PRIMAUTH">PRIMAUTH</a></td><td style="color: #cccccc">Primary Author</td><td>An entity that is the primary or sole author of information content.  In the healthcare context, there can be only one primary author of health information content in a record entry or document.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html#contractsignertypecodes-REVIEWER">REVIEWER</a></td><td style="color: #cccccc">Reviewer</td><td>A person, device, or algorithm that has used approved criteria for filtered data for inclusion into the patient record.  Examples: (1) a medical records clerk who scans a document for inclusion in the medical record, enters header information, or catalogues and classifies the data, or a combination thereof; (2) a gateway that receives data from another computer system and interprets that data or changes its format, or both, before entering it into the patient record.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html#contractsignertypecodes-SOURCE">SOURCE</a></td><td style="color: #cccccc">Source</td><td>An automated data source that generates a signature along with content. Examples: (1) the signature for an image that is generated by a device for inclusion in the patient record; (2) the signature for an ECG derived by an ECG system for inclusion in the patient record; (3) the data from a biomedical monitoring device or system that is for inclusion in the patient record.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html#contractsignertypecodes-TRANS">TRANS</a></td><td style="color: #cccccc">Transcriber</td><td>An entity entering the data into the originating system. This includes the transcriptionist for dictated text transcribed into electronic form.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html#contractsignertypecodes-VALID">VALID</a></td><td style="color: #cccccc">Validator</td><td>A person who validates a health information document for inclusion in the patient record. For example, a medical student or resident is credentialed to perform history or physical examinations and to write progress notes. The attending physician signs the history and physical examination to validate the entry for inclusion in the patient's medical record.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-contractsignertypecodes.html#contractsignertypecodes-VERF">VERF</a></td><td style="color: #cccccc">Verifier</td><td>A person who asserts the correctness and appropriateness of an act or the recording of the act, and is accountable for the assertion that the act or the recording of the act complies with jurisdictional or organizational policy. For example, a physician is required to countersign a verbal order that has previously been recorded in the medical record by a registered nurse who has carried out the verbal order.</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html"><code>http://terminology.hl7.org/CodeSystem/v3-RoleClass</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-AFFL">AFFL</a></td><td style="color: #cccccc">affiliate</td><td>Player of the Affiliate role has a business/professional relationship with scoper. Player and scoper may be persons or organization. The Affiliate relationship does not imply membership in a group, nor does it exist for resource scheduling purposes.<br/><br/>*Example:* A healthcare provider is affiliated with another provider as a business associate.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-AGNT">AGNT</a></td><td style="color: #cccccc">agent</td><td>An entity (player) that acts or is authorized to act on behalf of another entity (scoper).</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-ASSIGNED">ASSIGNED</a></td><td style="color: #cccccc">assigned entity</td><td>An agent role in which the agent is an Entity acting in the employ of an organization. The focus is on functional role on behalf of the organization, unlike the Employee role where the focus is on the 'Human Resources' relationship between the employee and the organization.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-CLAIM">CLAIM</a></td><td style="color: #cccccc">claimant</td><td>**Description:** A role played by a party making a claim for coverage under a policy or program. A claimant must be either a person or organization, or a group of persons or organizations. A claimant is not a named insured or a program eligible.<br/><br/>**Discussion:** With respect to liability insurance such as property and casualty insurance, a claimant must file a claim requesting indemnification for a loss that the claimant considers covered under the policy of a named insured. The claims adjuster for the policy underwriter will review the claim to determine whether the loss meets the benefit coverage criteria under a policy, and base any indemnification or coverage payment on that review. If a third party is liable in whole or part for the loss, the underwriter may pursue third party liability recovery. A claimant may be involved in civil or criminal legal proceedings involving claims against a defendant party that is indemnified by an insurance policy or to protest the finding of a claims adjustor. With respect to life insurance, a beneficiary designated by a named insured becomes a claimant of the proceeds of coverage, as in the case of a life insurance policy. However, a claimant for coverage under life insurance is not necessarily a designated beneficiary.<br/><br/>**Note:** A claimant is not a named insured. However, a named insured may make a claim under a policy, e.g., an insured driver may make a claim for an injury under his or her comprehensive automobile insurance policy. Similarly, a program eligible may make a claim under program, e.g., an unemployed worker may claim benefits under an unemployment insurance program, but parties playing these covered party role classes are not, for purposes of this vocabulary and in an effort to clearly distinguish role classes, considered claimants.<br/><br/>In the case of a named insured making a claim, a role type code INSCLM (insured claimant) subtypes the class to indicate that either a named insured or an individual insured has filed a claim for a loss. In the case of a program eligible, a role type code INJWKR (injured worker) subtypes the class to indicate that the covered party in a workers compensation program is an injured worker, and as such, has filed a &quot;claim&quot; under the program for benefits. Likewise, a covered role type code UNEMP (unemployed worker) subtypes the program eligible class to indicate that the covered party in an unemployment insurance program has filed a claim for unemployment benefits.<br/><br/>**Example:** A claimant under automobile policy that is not the named insured.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-COVPTY">COVPTY</a></td><td style="color: #cccccc">covered party</td><td>A role class played by a person who receives benefit coverage under the terms of a particular insurance policy. The underwriter of that policy is the scoping entity. The covered party receives coverage because of some contractual or other relationship with the holder of that policy.<br/><br/>*Discussion:*This reason for coverage is captured in 'Role.code' and a relationship link with type code of indirect authority should be included using the policy holder role as the source, and the covered party role as the target.<br/><br/>Note that a particular policy may cover several individuals one of whom may be, but need not be, the policy holder. Thus the notion of covered party is a role that is distinct from that of the policy holder.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-DEPEN">DEPEN</a></td><td style="color: #cccccc">dependent</td><td>**Description:** A role played by a person covered under a policy or program based on an association with a subscriber, which is recognized by the policy holder.<br/><br/>**Note:** The party playing the role of a dependent is not a claimant in the sense conveyed by the RoleClassCoveredParty CLAIM (claimant). However, a dependent may make a claim under a policy, e.g., a dependent under a health insurance policy may become the claimant for coverage under that policy for wellness examines or if injured and there is no liable third party. In the case of a dependent making a claim, a role type code INSCLM (insured claimant) subtypes the class to indicate that the dependent has filed a claim for services covered under the health insurance policy.<br/><br/>**Example:** The dependent has an association with the subscriber such as a financial dependency or personal relationship such as that of a spouse, or a natural or adopted child. The policy holder may be required by law to recognize certain associations or may have discretion about the associations. For example, a policy holder may dictate the criteria for the dependent status of adult children who are students, such as requiring full time enrollment, or may recognize domestic partners as dependents. Under certain circumstances, the dependent may be under the indirect authority of a responsible party acting as a surrogate for the subscriber, for example, if the subscriber is differently abled or deceased, a guardian ad Lidem or estate executor may be appointed to assume the subscriberaTMs legal standing in the relationship with the dependent.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-ECON">ECON</a></td><td style="color: #cccccc">emergency contact</td><td>An entity to be contacted in the event of an emergency.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-EMP">EMP</a></td><td style="color: #cccccc">employee</td><td>A relationship between a person or organization and a person or organization formed for the purpose of exchanging work for compensation. The purpose of the role is to identify the type of relationship the employee has to the employer, rather than the nature of the work actually performed. (Contrast with AssignedEntity.)</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-GUARD">GUARD</a></td><td style="color: #cccccc">guardian</td><td>Guardian of a ward</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-INVSBJ">INVSBJ</a></td><td style="color: #cccccc">Investigation Subject</td><td>An entity that is the subject of an investigation. This role is scoped by the party responsible for the investigation.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-NAMED">NAMED</a></td><td style="color: #cccccc">named insured</td><td>**Description:** A role played by a party to an insurance policy to which the insurer agrees to indemnify for losses, provides benefits for, or renders services. A named insured may be either a person, non-person living subject, or an organization, or a group of persons, non-person living subjects, or organizations.<br/><br/>**Discussion:** The coded concept NAMED should not be used where a more specific child concept in this Specializable value set applies. In some cases, the named insured may not be the policy holder, e.g., where a policy holder purchases life insurance policy in which another party is the named insured and the policy holder is the beneficiary of the policy.<br/><br/>**Note:** The party playing the role of a named insured is not a claimant in the sense conveyed by the RoleClassCoveredParty CLAIM (claimant). However, a named insured may make a claim under a policy, e.g., e.g., a party that is the named insured and policy holder under a comprehensive automobile insurance policy may become the claimant for coverage under that policy e.g., if injured in an automobile accident and there is no liable third party. In the case of a named insured making a claim, a role type code INSCLM (insured claimant) subtypes the class to indicate that a named insured has filed a claim for a loss.<br/><br/>**Example:** The named insured under a comprehensive automobile, disability, or property and casualty policy that is the named insured and may or may not be the policy holder.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-NOK">NOK</a></td><td style="color: #cccccc">next of kin</td><td>An individual designated for notification as the next of kin for a given entity.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-PAT">PAT</a></td><td style="color: #cccccc">patient</td><td>A Role of a LivingSubject (player) as an actual or potential recipient of health care services from a healthcare provider organization (scoper).<br/><br/>*Usage Note:* Communication about relationships between patients and specific healthcare practitioners (people) is not done via scoper. Instead this is generally done using the CareProvision act. This allows linkage between patient and a particular healthcare practitioner role and also allows description of the type of care involved in the relationship.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-PROV">PROV</a></td><td style="color: #cccccc">healthcare provider</td><td>An Entity (player) that is authorized to provide health care services by some authorizing agency (scoper).</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-NOT">NOT</a></td><td style="color: #cccccc">notary public</td><td/></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CLASSIFIER">CLASSIFIER</a></td><td style="color: #cccccc">classifier</td><td>An individual authorized to assign an original classification to information, including compilations of unclassified information, based on a determination that the information requires protection against unauthorized disclosure. The individual marks the information with immutable, computable, and human readable security labels in accordance with applicable security labeling policies. The labeling policies provide instructions on whether and if so how the security labels may be later reclassified \[i.e., upgraded, downgraded, used in derivative classification, or declassified\] in a manner that preserves the overridden original classification binding and provenance.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CONSENTER">CONSENTER</a></td><td style="color: #cccccc">consenter</td><td>An entity or an entity's delegatee who is the grantee in an agreement such as a consent for services, advanced directive, or a privacy consent directive in accordance with jurisdictional, organizational, or patient policy.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CONSWIT">CONSWIT</a></td><td style="color: #cccccc">consent witness</td><td>An entity which has witnessed and attests to observing another entity being counseled about an agreement such as a consent for services, advanced directive, or a privacy consent directive.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-COPART">COPART</a></td><td style="color: #cccccc">co-participant</td><td>An entity which participates in the generation of and attest to veracity of content, but is not an author or coauthor. For example a surgeon who is required by institutional, regulatory, or legal rules to sign an operative report, but who was not involved in the authorship of that report.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DECLASSIFIER">DECLASSIFIER</a></td><td style="color: #cccccc">declassifier</td><td>An individual which is authorized to declassify information based on a determination that the information no longer requires protection against unauthorized disclosure. The individual marks the information being declassified using computable and human readable security labels indicating that this is copy of previously classified information is unclassified in accordance with applicable security labeling policies. The labeling policies provide instructions on whether and if so how the security labels may be later reclassified \[i.e., upgraded or used in derivative classification\] in a manner that preserves the overridden original classification binding and provenance.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DELEGATEE">DELEGATEE</a></td><td style="color: #cccccc">delegatee</td><td>A party to whom some right or authority is granted by a delegator.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DELEGATOR">DELEGATOR</a></td><td style="color: #cccccc">delegator</td><td>A party that grants all or some portion its right or authority to another party.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DOWNGRDER">DOWNGRDER</a></td><td style="color: #cccccc">downgrader</td><td>An individual authorized to lower the classification level of labeled content and provide rationale for doing so as directed by a classification guide.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DPOWATT">DPOWATT</a></td><td style="color: #cccccc">durable power of attorney</td><td>A relationship between two people in which one person authorizes another, usually a family member or relative, to act for him or her in a manner which is a legally binding upon the person giving such authority as if he or she personally were to do the acts that is often limited in the kinds of powers that can be assigned. Unlike ordinary powers of attorney, durable powers can survive for long periods of time, and again, unlike standard powers of attorney, durable powers can continue after incompetency.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-EXCEST">EXCEST</a></td><td style="color: #cccccc">executor of estate</td><td>The role played by a person acting as the estate executor for a deceased subscriber or policyholder who was the responsible party</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GRANTEE">GRANTEE</a></td><td style="color: #cccccc">grantee</td><td>An entity which accepts certain rights or authority from a grantor.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GRANTOR">GRANTOR</a></td><td style="color: #cccccc">grantor</td><td>An entity which agrees to confer certain rights or authority to a grantee.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GT">GT</a></td><td style="color: #cccccc">Guarantor</td><td>An individual or organization that makes or gives a promise, assurance, pledge to pay or has paid the healthcare service provider.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GUADLTM">GUADLTM</a></td><td style="color: #cccccc">guardian ad lidem</td><td>The role played by a person appointed by the court to look out for the best interests of a minor child during the course of legal proceedings.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HPOWATT">HPOWATT</a></td><td style="color: #cccccc">healthcare power of attorney</td><td>A relationship between two people in which one person authorizes another to act for him or her in a manner which is a legally binding upon the person giving such authority as if he or she personally were to do the acts that continues (by its terms) to be effective even though the grantor has become mentally incompetent after signing the document.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-INTPRTER">INTPRTER</a></td><td style="color: #cccccc">interpreter</td><td>An entity which converts spoken or written language into the language of key participants in an event such as when a provider is obtaining a patient's consent to treatment or permission to disclose information.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-POWATT">POWATT</a></td><td style="color: #cccccc">power of attorney</td><td>A relationship between two people in which one person authorizes another to act for him in a manner which is a legally binding upon the person giving such authority as if he or she personally were to do the acts.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RESPRSN">RESPRSN</a></td><td style="color: #cccccc">responsible party</td><td>The role played by a party who has legal responsibility for another party.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SPOWATT">SPOWATT</a></td><td style="color: #cccccc">special power of attorney</td><td>A relationship between two people in which one person authorizes another to act for him or her in a manner which is a legally binding upon the person giving such authority as if he or she personally were to do the acts that is often limited in the kinds of powers that can be assigned.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CAS">CAS</a></td><td style="color: #cccccc">asylum seeker</td><td>A person who has fled his or her home country to find a safe place elsewhere.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CASM">CASM</a></td><td style="color: #cccccc">single minor asylum seeker</td><td>A person who is someone of below legal age who has fled his or her home country, *without his or her parents*, to find a safe place elsewhere at time of categorization.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CN">CN</a></td><td style="color: #cccccc">national</td><td>A person who is legally recognized as a member of a nation or country, with associated rights and obligations.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CNRP">CNRP</a></td><td style="color: #cccccc">non-country member without residence permit</td><td>A foreigner who is present in a country (which is foreign to him/her) unlawfully or without the country's authorization (may be called an illegal alien).</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CNRPM">CNRPM</a></td><td style="color: #cccccc">non-country member minor without residence permit</td><td>A person who is below legal age present in a country, *without his or her parents*, (which is foreign to him/her) unlawfully or without the country's authorization.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CPCA">CPCA</a></td><td style="color: #cccccc">permit card applicant</td><td>A non-country member admitted to the territory of a nation or country as a non-resident for an explicit purpose.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CRP">CRP</a></td><td style="color: #cccccc">non-country member with residence permit</td><td>A foreigner who is a resident of the country but does not have citizenship.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CRPM">CRPM</a></td><td style="color: #cccccc">non-country member minor with residence permit</td><td>A person who is a resident below legal age of the country *without his or her parents* and does not have citizenship.</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationFunction.html"><code>http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationFunction.html#v3-ParticipationFunction-AUCG">AUCG</a></td><td style="color: #cccccc">caregiver information receiver</td><td>**Description:**Caregiver authorized to receive patient health information.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationFunction.html#v3-ParticipationFunction-AULR">AULR</a></td><td style="color: #cccccc">legitimate relationship information receiver</td><td>**Description:**Provider with legitimate relationship authorized to receive patient health information.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationFunction.html#v3-ParticipationFunction-AUTM">AUTM</a></td><td style="color: #cccccc">care team information receiver</td><td>**Description:**Member of care team authorized to receive patient health information.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationFunction.html#v3-ParticipationFunction-AUWA">AUWA</a></td><td style="color: #cccccc">work area information receiver</td><td>**Description:**Entities within specified work area authorized to receive patient health information.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationFunction.html#v3-ParticipationFunction-PROMSK">PROMSK</a></td><td style="color: #cccccc">authorized provider masking author</td><td>**Definition:**Provider authorized to mask information to protect the patient, a third party, or to ensure that the provider has consulted with the patient prior to release of this information.</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html"><code>http://terminology.hl7.org/CodeSystem/v3-ParticipationType</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html#v3-ParticipationType-AUT">AUT</a></td><td style="color: #cccccc">author (originator)</td><td>**Definition:** A party that originates the Act and therefore has responsibility for the information given in the Act and ownership of this Act.<br/><br/>**Example:** the report writer, the person writing the act definition, the guideline author, the placer of an order, the EKG cart (device) creating a report etc. Every Act should have an author. Authorship is regardless of mood always actual authorship.<br/><br/>Examples of such policies might include:<br/><br/> *  The author and anyone they explicitly delegate may update the report;<br/> *  All administrators within the same clinic may cancel and reschedule appointments created by other administrators within that clinic;<br/><br/>A party that is neither an author nor a party who is extended authorship maintenance rights by policy, may only amend, reverse, override, replace, or follow up in other ways on this Act, whereby the Act remains intact and is linked to another Act authored by that other party.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html#v3-ParticipationType-CST">CST</a></td><td style="color: #cccccc">custodian</td><td>An entity (person, organization or device) that is in charge of maintaining the information of this act (e.g., who maintains the report or the master service catalog item, etc.).</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html#v3-ParticipationType-INF">INF</a></td><td style="color: #cccccc">informant</td><td>A source of reported information (e.g., a next of kin who answers questions about the patient's history). For history questions, the patient is logically an informant, yet the informant of history questions is implicitly the subject.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html#v3-ParticipationType-IRCP">IRCP</a></td><td style="color: #cccccc">information recipient</td><td>A party, who may or should receive or who has recieved the Act or subsequent or derivative information of that Act. Information recipient is inert, i.e., independent of mood.&quot; Rationale: this is a generalization of a too diverse family that the definition can't be any more specific, and the concept is abstract so one of the specializations should be used.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html#v3-ParticipationType-LA">LA</a></td><td style="color: #cccccc">legal authenticator</td><td>A verifier who legally authenticates the accuracy of an act. An example would be a staff physician who sees a patient and dictates a note, then later signs it. Their signature constitutes a legal authentication.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html#v3-ParticipationType-TRC">TRC</a></td><td style="color: #cccccc">tracker</td><td>A secondary information recipient, who receives copies (e.g., a primary care provider receiving copies of results as ordered by specialist).</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html#v3-ParticipationType-WIT">WIT</a></td><td style="color: #cccccc">witness</td><td>Only with service events. A person witnessing the action happening without doing anything. A witness is not necessarily aware, much less approves of anything stated in the service event. Example for a witness is students watching an operation or an advanced directive witness.</td></tr></table></li><li>Include these codes as defined in <a href="http://dicom.nema.org/resources/ontology/DCM"><code>http://dicom.nema.org/resources/ontology/DCM</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110150">110150</a></td><td style="color: #cccccc">Application</td><td>Audit participant role ID of software application</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110151">110151</a></td><td style="color: #cccccc">Application Launcher</td><td>Audit participant role ID of software application launcher, i.e., the entity that started or stopped an application</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110152">110152</a></td><td style="color: #cccccc">Destination Role ID</td><td>Audit participant role ID of the receiver of data</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110153">110153</a></td><td style="color: #cccccc">Source Role ID</td><td>Audit participant role ID of the sender of data</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110154">110154</a></td><td style="color: #cccccc">Destination Media</td><td>Audit participant role ID of media receiving data during an export</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110155">110155</a></td><td style="color: #cccccc">Source Media</td><td>Audit participant role ID of media providing data during an import</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-extra-security-role-type.html"><code>http://terminology.hl7.org/CodeSystem/extra-security-role-type</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-extra-security-role-type.html#extra-security-role-type-authserver">authserver</a></td><td style="color: #cccccc">Authorization Server</td><td>An entity providing authorization services to enable the electronic sharing of health-related information based on resource owner's preapproved permissions. For example, an UMA Authorization Server[UMA]</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-extra-security-role-type.html#extra-security-role-type-datacollector">datacollector</a></td><td style="color: #cccccc">Data Collector</td><td>An entity that collects information over which the data subject may have certain rights under policy or law to control that information's management and distribution by data collectors, including the right to access, retrieve, distribute, or delete that information.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-extra-security-role-type.html#extra-security-role-type-dataprocessor">dataprocessor</a></td><td style="color: #cccccc">Data Processor</td><td>An entity that processes collected information over which the data subject may have certain rights under policy or law to control that information's management and distribution by data processors, including the right to access, retrieve, distribute, or delete that information.</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-extra-security-role-type.html#extra-security-role-type-datasubject">datasubject</a></td><td style="color: #cccccc">Data Subject</td><td>A person whose personal information is collected or processed, and who may have certain rights under policy or law to control that information's management and distribution by data collectors or processors, including the right to access, retrieve, distribute, or delete that information.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir.nhs.uk/England/ValueSet/England-FlagProvenanceRole" />
+  <version value="0.3.7" />
+  <name value="EnglandFlagProvenanceRole" />
+  <title value="England Flag Provenance Role" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-02-14" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+   </contact>
+  <description
+               value="A ValueSet to identify the role in which someone recording provenance is acting" />
+  <copyright
+             value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <compose>
+    <include>
+      <system
+              value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+      <concept>
+        <code value="R0010" />
+        <display value="Medical Director" />
+      </concept>
+      <concept>
+        <code value="R0020" />
+        <display value="Clinical Director - Medical" />
+      </concept>
+      <concept>
+        <code value="R0210" />
+        <display value="Director of Public Health" />
+      </concept>
+      <concept>
+        <code value="R0030" />
+        <display value="Professor" />
+      </concept>
+      <concept>
+        <code value="R0040" />
+        <display value="Senior Lecturer" />
+      </concept>
+      <concept>
+        <code value="R0050" />
+        <display value="Consultant" />
+      </concept>
+      <concept>
+        <code value="R0060" />
+        <display value="Special Salary Scale in Public Health Medicine" />
+      </concept>
+      <concept>
+        <code value="R0070" />
+        <display value="Associate Specialist" />
+      </concept>
+      <concept>
+        <code value="R0080" />
+        <display value="Staff Grade" />
+      </concept>
+      <concept>
+        <code value="R0090" />
+        <display value="Hospital Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0100" />
+        <display value="Clinical Assistant" />
+      </concept>
+      <concept>
+        <code value="R0110" />
+        <display value="Specialist Registrar" />
+      </concept>
+      <concept>
+        <code value="R0120" />
+        <display value="Senior Registrar (Closed)" />
+      </concept>
+      <concept>
+        <code value="R0130" />
+        <display value="Registrar (Closed)" />
+      </concept>
+      <concept>
+        <code value="R0140" />
+        <display value="Senior House Officer" />
+      </concept>
+      <concept>
+        <code value="R0150" />
+        <display value="House Officer - Pre Registration" />
+      </concept>
+      <concept>
+        <code value="R0160" />
+        <display value="House Officer - Post Registration" />
+      </concept>
+      <concept>
+        <code value="R0170" />
+        <display value="Trust Grade Doctor - House Officer level" />
+      </concept>
+      <concept>
+        <code value="R0180" />
+        <display value="Trust Grade Doctor - SHO level" />
+      </concept>
+      <concept>
+        <code value="R0190" />
+        <display value="Trust Grade Doctor - Specialist Registrar level" />
+      </concept>
+      <concept>
+        <code value="R0200" />
+        <display value="Trust Grade Doctor - Career Grade level" />
+      </concept>
+      <concept>
+        <code value="R0260" />
+        <display value="General Medical Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0270" />
+        <display value="Salaried General Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1981" />
+        <display value="Psychiatrist" />
+      </concept>
+      <concept>
+        <code value="R1984" />
+        <display value="Health Records Administrator" />
+      </concept>
+      <concept>
+        <code value="R6200" />
+        <display value="GP Registrar" />
+      </concept>
+      <concept>
+        <code value="R6300" />
+        <display value="Sessional GP" />
+      </concept>
+      <concept>
+        <code value="R7140" />
+        <display value="ODP" />
+      </concept>
+      <concept>
+        <code value="R7150" />
+        <display value="SODP" />
+      </concept>
+      <concept>
+        <code value="R9100" />
+        <display
+                 value="A&amp;E Staff Nurse (Temporary)  London Cluster Only" />
+      </concept>
+      <concept>
+        <code value="R9101" />
+        <display value="A&amp;E Manager (Temporary) London Cluster Only" />
+      </concept>
+      <concept>
+        <code value="R9102" />
+        <display value="A&amp;E Doctor  (Temporary) London Cluster only" />
+      </concept>
+      <concept>
+        <code value="R9103" />
+        <display value="A&amp;E Student (Temporary) London Cluster Only" />
+      </concept>
+      <concept>
+        <code value="R9104" />
+        <display value="A&amp;E Clerk (Temporary) London Cluster Only" />
+      </concept>
+      <concept>
+        <code value="R0215" />
+        <display value="Assistant Clinical Medical Officer" />
+      </concept>
+      <concept>
+        <code value="R0220" />
+        <display value="Clinical Medical Officer" />
+      </concept>
+      <concept>
+        <code value="R0230" />
+        <display value="Senior Clinical Medical Officer" />
+      </concept>
+      <concept>
+        <code value="R0240" />
+        <display value="Other Community Health Service" />
+      </concept>
+      <concept>
+        <code value="R0243" />
+        <display value="Other Community Health Service - Social Care Worker" />
+      </concept>
+      <concept>
+        <code value="R0247" />
+        <display value="Other Community Health Service - Admin Clerk" />
+      </concept>
+      <concept>
+        <code value="R0055" />
+        <display value="Dental Surgeon acting as Hospital Consultant" />
+      </concept>
+      <concept>
+        <code value="R0250" />
+        <display value="General Dental Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0280" />
+        <display value="Regional Dental Officer" />
+      </concept>
+      <concept>
+        <code value="R0290" />
+        <display value="Dental Clinical Director - Dental" />
+      </concept>
+      <concept>
+        <code value="R0295" />
+        <display value="Dental Assistant Clinical Director" />
+      </concept>
+      <concept>
+        <code value="R0300" />
+        <display value="Dental Officer" />
+      </concept>
+      <concept>
+        <code value="R0310" />
+        <display value="Senior Dental Officer" />
+      </concept>
+      <concept>
+        <code value="R0320" />
+        <display value="Salaried Dental Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0006" />
+        <display value="Student Community Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0330" />
+        <display value="Student Nurse - Adult Branch" />
+      </concept>
+      <concept>
+        <code value="R0340" />
+        <display value="Student Nurse - Child Branch" />
+      </concept>
+      <concept>
+        <code value="R0350" />
+        <display value="Student Nurse - Mental Health Branch" />
+      </concept>
+      <concept>
+        <code value="R0360" />
+        <display value="Student Nurse - Learning Disabilities Branch" />
+      </concept>
+      <concept>
+        <code value="R0370" />
+        <display value="Student Midwife" />
+      </concept>
+      <concept>
+        <code value="R0380" />
+        <display value="Student Health Visitor" />
+      </concept>
+      <concept>
+        <code value="R0390" />
+        <display value="Student District Nurse" />
+      </concept>
+      <concept>
+        <code value="R0400" />
+        <display value="Student School Nurse" />
+      </concept>
+      <concept>
+        <code value="R0410" />
+        <display value="Student Practice Nurse" />
+      </concept>
+      <concept>
+        <code value="R0420" />
+        <display value="Student Occupational Health Nurse" />
+      </concept>
+      <concept>
+        <code value="R0430" />
+        <display value="Student Community Paediatric Nurse" />
+      </concept>
+      <concept>
+        <code value="R0440" />
+        <display value="Student Community Mental Health Nurse" />
+      </concept>
+      <concept>
+        <code value="R0450" />
+        <display value="Student Community Learning Disabilities Nurse" />
+      </concept>
+      <concept>
+        <code value="R0460" />
+        <display value="Student Chiropodist" />
+      </concept>
+      <concept>
+        <code value="R0470" />
+        <display value="Student Dietitian" />
+      </concept>
+      <concept>
+        <code value="R0480" />
+        <display value="Student Occupational Therapist" />
+      </concept>
+      <concept>
+        <code value="R0490" />
+        <display value="Student Orthoptist" />
+      </concept>
+      <concept>
+        <code value="R0500" />
+        <display value="Student Physiotherapist" />
+      </concept>
+      <concept>
+        <code value="R0510" />
+        <display value="Student Radiographer - Diagnostic" />
+      </concept>
+      <concept>
+        <code value="R0520" />
+        <display value="Student Radiographer - Therapeutic" />
+      </concept>
+      <concept>
+        <code value="R0530" />
+        <display value="Student Speech &amp; Language Therapist" />
+      </concept>
+      <concept>
+        <code value="R0540" />
+        <display value="Art, Music &amp; Drama Student" />
+      </concept>
+      <concept>
+        <code value="R0550" />
+        <display value="Student Psychotherapist" />
+      </concept>
+      <concept>
+        <code value="R6400" />
+        <display value="Medical Student" />
+      </concept>
+      <concept>
+        <code value="R0560" />
+        <display value="Director of Nursing" />
+      </concept>
+      <concept>
+        <code value="R0580" />
+        <display value="Nurse Manager" />
+      </concept>
+      <concept>
+        <code value="R0610" />
+        <display value="Sister/Charge Nurse" />
+      </concept>
+      <concept>
+        <code value="R1976" />
+        <display value="Community Team Manager" />
+      </concept>
+      <concept>
+        <code value="R0570" />
+        <display value="Nurse Consultant" />
+      </concept>
+      <concept>
+        <code value="R0600" />
+        <display value="Specialist Nurse Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0620" />
+        <display value="Staff Nurse" />
+      </concept>
+      <concept>
+        <code value="R0630" />
+        <display value="Enrolled Nurse" />
+      </concept>
+      <concept>
+        <code value="R0690" />
+        <display value="Community Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0700" />
+        <display value="Community Nurse" />
+      </concept>
+      <concept>
+        <code value="R1974" />
+        <display value="Community Learning Disabilities Nurse" />
+      </concept>
+      <concept>
+        <code value="R1975" />
+        <display value="Community Mental Health Nurse" />
+      </concept>
+      <concept>
+        <code value="R0590" />
+        <display value="Modern Matron" />
+      </concept>
+      <concept>
+        <code value="R1972" />
+        <display value="Clinical Team Manager" />
+      </concept>
+      <concept>
+        <code value="R0640" />
+        <display value="Midwife - Consultant" />
+      </concept>
+      <concept>
+        <code value="R0650" />
+        <display value="Midwife - Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0660" />
+        <display value="Midwife - Manager" />
+      </concept>
+      <concept>
+        <code value="R0670" />
+        <display value="Midwife - Sister/Charge Nurse" />
+      </concept>
+      <concept>
+        <code value="R0680" />
+        <display value="Midwife" />
+      </concept>
+      <concept>
+        <code value="R0018" />
+        <display value="Audiologist" />
+      </concept>
+      <concept>
+        <code value="R0750" />
+        <display value="Chiropodist/Podiatrist" />
+      </concept>
+      <concept>
+        <code value="R0760" />
+        <display value="Chiropodist/Podiatrist Consultant" />
+      </concept>
+      <concept>
+        <code value="R0770" />
+        <display value="Chiropodist/Podiatrist Manager" />
+      </concept>
+      <concept>
+        <code value="R0780" />
+        <display value="Chiropodist/Podiatrist Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0790" />
+        <display value="Dietitian" />
+      </concept>
+      <concept>
+        <code value="R0800" />
+        <display value="Dietitian Consultant" />
+      </concept>
+      <concept>
+        <code value="R0810" />
+        <display value="Dietitian Manager" />
+      </concept>
+      <concept>
+        <code value="R0820" />
+        <display value="Dietitian Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0950" />
+        <display value="Occupational Therapist" />
+      </concept>
+      <concept>
+        <code value="R0960" />
+        <display value="Occupational Therapist Consultant" />
+      </concept>
+      <concept>
+        <code value="R0970" />
+        <display value="Occupational Therapist Manager" />
+      </concept>
+      <concept>
+        <code value="R0980" />
+        <display value="Occupational Therapy Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0990" />
+        <display value="Orthoptist" />
+      </concept>
+      <concept>
+        <code value="R1000" />
+        <display value="Orthoptist Consultant" />
+      </concept>
+      <concept>
+        <code value="R1010" />
+        <display value="Orthoptist Manager" />
+      </concept>
+      <concept>
+        <code value="R1020" />
+        <display value="Orthoptist Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1110" />
+        <display value="Physiotherapist" />
+      </concept>
+      <concept>
+        <code value="R1120" />
+        <display value="Physiotherapist Consultant" />
+      </concept>
+      <concept>
+        <code value="R1130" />
+        <display value="Physiotherapist Manager" />
+      </concept>
+      <concept>
+        <code value="R1140" />
+        <display value="Physiotherapist Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1070" />
+        <display value="Paramedic" />
+      </concept>
+      <concept>
+        <code value="R1080" />
+        <display value="Paramedic Consultant" />
+      </concept>
+      <concept>
+        <code value="R1090" />
+        <display value="Paramedic Manager" />
+      </concept>
+      <concept>
+        <code value="R1100" />
+        <display value="Paramedic Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0003" />
+        <display value="Clinical Application Administrator" />
+      </concept>
+      <concept>
+        <code value="R0012" />
+        <display value="Radiographer" />
+      </concept>
+      <concept>
+        <code value="R0013" />
+        <display value="Student Radiographer" />
+      </concept>
+      <concept>
+        <code value="R0014" />
+        <display value="Radiologist" />
+      </concept>
+      <concept>
+        <code value="R0015" />
+        <display value="PACS Administrator" />
+      </concept>
+      <concept>
+        <code value="R0016" />
+        <display value="Reporting Radiographer" />
+      </concept>
+      <concept>
+        <code value="R0017" />
+        <display value="Assistant Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1190" />
+        <display value="Radiographer - Diagnostic" />
+      </concept>
+      <concept>
+        <code value="R1200" />
+        <display value="Radiographer - Diagnostic, Consultant" />
+      </concept>
+      <concept>
+        <code value="R1210" />
+        <display value="Radiographer - Diagnostic, Manager" />
+      </concept>
+      <concept>
+        <code value="R1220" />
+        <display value="Radiographer - Diagnostic, Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1230" />
+        <display value="Radiographer - Therapeutic" />
+      </concept>
+      <concept>
+        <code value="R1240" />
+        <display value="Radiographer - Therapeutic, Consultant" />
+      </concept>
+      <concept>
+        <code value="R1250" />
+        <display value="Radiographer - Therapeutic, Manager" />
+      </concept>
+      <concept>
+        <code value="R1260" />
+        <display value="Radiographer - Therapeutic, Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1030" />
+        <display value="Orthotist" />
+      </concept>
+      <concept>
+        <code value="R1040" />
+        <display value="Orthotist Consultant" />
+      </concept>
+      <concept>
+        <code value="R1050" />
+        <display value="Orthotist Manager" />
+      </concept>
+      <concept>
+        <code value="R1060" />
+        <display value="Orthotist Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1150" />
+        <display value="Prosthetist" />
+      </concept>
+      <concept>
+        <code value="R1160" />
+        <display value="Prosthetist Consultant" />
+      </concept>
+      <concept>
+        <code value="R1170" />
+        <display value="Prosthetist Manager" />
+      </concept>
+      <concept>
+        <code value="R1180" />
+        <display value="Prosthetist Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0710" />
+        <display value="Art Therapist" />
+      </concept>
+      <concept>
+        <code value="R0720" />
+        <display value="Art Therapist Consultant" />
+      </concept>
+      <concept>
+        <code value="R0730" />
+        <display value="Art Therapist Manager" />
+      </concept>
+      <concept>
+        <code value="R0740" />
+        <display value="Art Therapist Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0830" />
+        <display value="Drama Therapist" />
+      </concept>
+      <concept>
+        <code value="R0840" />
+        <display value="Drama Therapist Consultant" />
+      </concept>
+      <concept>
+        <code value="R0850" />
+        <display value="Drama Therapist Manager" />
+      </concept>
+      <concept>
+        <code value="R0860" />
+        <display value="Drama Therapist Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0870" />
+        <display value="Multi Therapist" />
+      </concept>
+      <concept>
+        <code value="R0880" />
+        <display value="Multi Therapist Consultant" />
+      </concept>
+      <concept>
+        <code value="R0890" />
+        <display value="Multi Therapist Manager" />
+      </concept>
+      <concept>
+        <code value="R0900" />
+        <display value="Multi Therapist Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0910" />
+        <display value="Music Therapist" />
+      </concept>
+      <concept>
+        <code value="R0920" />
+        <display value="Music Therapist Consultant" />
+      </concept>
+      <concept>
+        <code value="R0930" />
+        <display value="Music Therapist Manager" />
+      </concept>
+      <concept>
+        <code value="R0940" />
+        <display value="Music Therapist Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0955" />
+        <display value="Speech &amp; Language Therapist" />
+      </concept>
+      <concept>
+        <code value="R0965" />
+        <display value="Speech &amp; Language Therapist Consultant" />
+      </concept>
+      <concept>
+        <code value="R0975" />
+        <display value="Speech &amp; Language Therapist Manager" />
+      </concept>
+      <concept>
+        <code value="R0985" />
+        <display
+                 value="Speech &amp; Language Therapist Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R9500" />
+        <display value="Social Services Senior Management" />
+      </concept>
+      <concept>
+        <code value="R9505" />
+        <display value="Social Services Policy and Planning" />
+      </concept>
+      <concept>
+        <code value="R9510" />
+        <display value="Social Services Information Manager" />
+      </concept>
+      <concept>
+        <code value="R9515" />
+        <display value="Social Work Team Manager (Children)" />
+      </concept>
+      <concept>
+        <code value="R9520" />
+        <display value="Senior Social Worker (Children)" />
+      </concept>
+      <concept>
+        <code value="R9525" />
+        <display value="Social Services Care Manager (Children)" />
+      </concept>
+      <concept>
+        <code value="R9530" />
+        <display value="Social Work Assistant (Children)" />
+      </concept>
+      <concept>
+        <code value="R9535" />
+        <display value="Child Protection Worker" />
+      </concept>
+      <concept>
+        <code value="R9540" />
+        <display value="Family Placement Worker" />
+      </concept>
+      <concept>
+        <code value="R9545" />
+        <display value="Community Worker (Children)" />
+      </concept>
+      <concept>
+        <code value="R9550" />
+        <display value="Occupational Therapist" />
+      </concept>
+      <concept>
+        <code value="R9555" />
+        <display value="Occupational Therapist Assistant" />
+      </concept>
+      <concept>
+        <code value="R9560" />
+        <display value="Occupational Therapy Team Manager" />
+      </concept>
+      <concept>
+        <code value="R9565" />
+        <display value="Social Work Team Manager (Adults)" />
+      </concept>
+      <concept>
+        <code value="R9570" />
+        <display value="Senior Social Worker (Adults)" />
+      </concept>
+      <concept>
+        <code value="R9575" />
+        <display value="Social Services Care Manager (Adults)" />
+      </concept>
+      <concept>
+        <code value="R9580" />
+        <display value="Social Work Assistant (Adults)" />
+      </concept>
+      <concept>
+        <code value="R9585" />
+        <display value="Social Work Team Manager (Mental Health)" />
+      </concept>
+      <concept>
+        <code value="R9590" />
+        <display value="Senior Social Worker (Mental Health)" />
+      </concept>
+      <concept>
+        <code value="R9595" />
+        <display value="Social Services Care Manager (Mental Health)" />
+      </concept>
+      <concept>
+        <code value="R9600" />
+        <display value="Social Work Assistant (Mental Health)" />
+      </concept>
+      <concept>
+        <code value="R9605" />
+        <display value="Emergency Duty Social Worker" />
+      </concept>
+      <concept>
+        <code value="R9615" />
+        <display value="Social Services Driver" />
+      </concept>
+      <concept>
+        <code value="R9620" />
+        <display value="Home Care Organiser" />
+      </concept>
+      <concept>
+        <code value="R9625" />
+        <display value="Home Care Administrator" />
+      </concept>
+      <concept>
+        <code value="R9630" />
+        <display value="Home Help" />
+      </concept>
+      <concept>
+        <code value="R9635" />
+        <display value="Warden" />
+      </concept>
+      <concept>
+        <code value="R9640" />
+        <display value="Meals on Wheels Organiser" />
+      </concept>
+      <concept>
+        <code value="R9645" />
+        <display value="Meals Delivery" />
+      </concept>
+      <concept>
+        <code value="R9650" />
+        <display value="Day Centre Manager" />
+      </concept>
+      <concept>
+        <code value="R9655" />
+        <display value="Day Centre Deputy" />
+      </concept>
+      <concept>
+        <code value="R9660" />
+        <display value="Day Centre Officer" />
+      </concept>
+      <concept>
+        <code value="R9665" />
+        <display value="Day Centre Care Staff" />
+      </concept>
+      <concept>
+        <code value="R9670" />
+        <display value="Family Centre Manager" />
+      </concept>
+      <concept>
+        <code value="R9675" />
+        <display value="Family Centre Deputy" />
+      </concept>
+      <concept>
+        <code value="R9680" />
+        <display value="Family Centre Worker" />
+      </concept>
+      <concept>
+        <code value="R9685" />
+        <display value="Nursery Manager" />
+      </concept>
+      <concept>
+        <code value="R9690" />
+        <display value="Nursery Deputy" />
+      </concept>
+      <concept>
+        <code value="R9695" />
+        <display value="Nursery Worker" />
+      </concept>
+      <concept>
+        <code value="R9700" />
+        <display value="Playgroup Leader" />
+      </concept>
+      <concept>
+        <code value="R9705" />
+        <display value="Playgroup Assistant" />
+      </concept>
+      <concept>
+        <code value="R9710" />
+        <display value="Residential Manager" />
+      </concept>
+      <concept>
+        <code value="R9715" />
+        <display value="Residential Deputy" />
+      </concept>
+      <concept>
+        <code value="R9720" />
+        <display value="Residential Worker" />
+      </concept>
+      <concept>
+        <code value="R9725" />
+        <display value="Residential Care Staff" />
+      </concept>
+      <concept>
+        <code value="R9730" />
+        <display value="Intermediate Care Manager" />
+      </concept>
+      <concept>
+        <code value="R9735" />
+        <display value="Intermediate Care Deputy" />
+      </concept>
+      <concept>
+        <code value="R9740" />
+        <display value="Intermediate Care Worker" />
+      </concept>
+      <concept>
+        <code value="R9745" />
+        <display value="Intermediate Care Staff" />
+      </concept>
+      <concept>
+        <code value="R9750" />
+        <display value="Social Care SAP User" />
+      </concept>
+      <concept>
+        <code value="R9755" />
+        <display value="Social Care SAP Manager" />
+      </concept>
+      <concept>
+        <code value="R1270" />
+        <display value="Clinical Director" />
+      </concept>
+      <concept>
+        <code value="R1280" />
+        <display value="Optometrist" />
+      </concept>
+      <concept>
+        <code value="R1290" />
+        <display value="Pharmacist" />
+      </concept>
+      <concept>
+        <code value="R1979" />
+        <display value="Medical Technical Officer - Pharmacy" />
+      </concept>
+      <concept>
+        <code value="R1300" />
+        <display value="Psychotherapist" />
+      </concept>
+      <concept>
+        <code value="R1310" />
+        <display value="Clinical Psychologist" />
+      </concept>
+      <concept>
+        <code value="R1320" />
+        <display value="Chaplain" />
+      </concept>
+      <concept>
+        <code value="R1330" />
+        <display value="Social Worker" />
+      </concept>
+      <concept>
+        <code value="R1340" />
+        <display value="Approved Social Worker" />
+      </concept>
+      <concept>
+        <code value="R1350" />
+        <display value="Youth Worker" />
+      </concept>
+      <concept>
+        <code value="R1360" />
+        <display value="Specialist Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1370" />
+        <display value="Practitioner" />
+      </concept>
+      <concept>
+        <code value="R0011" />
+        <display value="Dispenser" />
+      </concept>
+      <concept>
+        <code value="R1380" />
+        <display value="Technician - PS&amp;T" />
+      </concept>
+      <concept>
+        <code value="R1390" />
+        <display value="Osteopath" />
+      </concept>
+      <concept>
+        <code value="R1400" />
+        <display value="Healthcare Scientist" />
+      </concept>
+      <concept>
+        <code value="R1410" />
+        <display value="Consultant Healthcare Scientist" />
+      </concept>
+      <concept>
+        <code value="R1420" />
+        <display value="Biomedical Scientist" />
+      </concept>
+      <concept>
+        <code value="R0019" />
+        <display value="Medical Technical Officer" />
+      </concept>
+      <concept>
+        <code value="R1430" />
+        <display value="Technician - Healthcare Scientists" />
+      </concept>
+      <concept>
+        <code value="R1440" />
+        <display value="Therapist" />
+      </concept>
+      <concept>
+        <code value="R1540" />
+        <display value="Associate Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1543" />
+        <display value="Associate Practitioner - Nurse" />
+      </concept>
+      <concept>
+        <code value="R1547" />
+        <display value="Associate Practitioner - General Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1560" />
+        <display value="Helper/Assistant" />
+      </concept>
+      <concept>
+        <code value="R1600" />
+        <display value="Cytoscreener" />
+      </concept>
+      <concept>
+        <code value="R1570" />
+        <display value="Dental Surgery Assistant" />
+      </concept>
+      <concept>
+        <code value="R1450" />
+        <display value="Health Care Support Worker" />
+      </concept>
+      <concept>
+        <code value="R1580" />
+        <display value="Medical Laboratory Assistant" />
+      </concept>
+      <concept>
+        <code value="R1550" />
+        <display value="Counsellor" />
+      </concept>
+      <concept>
+        <code value="R0002" />
+        <display value="Porter" />
+      </concept>
+      <concept>
+        <code value="R1690" />
+        <display value="Call Operator" />
+      </concept>
+      <concept>
+        <code value="R1700" />
+        <display value="Gateway Worker" />
+      </concept>
+      <concept>
+        <code value="R1710" />
+        <display value="Support, Time, Recovery Worker" />
+      </concept>
+      <concept>
+        <code value="R1480" />
+        <display value="Healthcare Assistant" />
+      </concept>
+      <concept>
+        <code value="R1490" />
+        <display value="Nursery Nurse" />
+      </concept>
+      <concept>
+        <code value="R1590" />
+        <display value="Phlebotomist" />
+      </concept>
+      <concept>
+        <code value="R1460" />
+        <display value="Social Care Support Worker" />
+      </concept>
+      <concept>
+        <code value="R1470" />
+        <display value="Home Help" />
+      </concept>
+      <concept>
+        <code value="R1520" />
+        <display value="Technician - Additional Clinical Services" />
+      </concept>
+      <concept>
+        <code value="R1530" />
+        <display value="Technical Instructor" />
+      </concept>
+      <concept>
+        <code value="R1980" />
+        <display value="Patient Welfare Officer" />
+      </concept>
+      <concept>
+        <code value="R1500" />
+        <display value="Play Therapist" />
+      </concept>
+      <concept>
+        <code value="R1510" />
+        <display value="Play Specialist" />
+      </concept>
+      <concept>
+        <code value="R1610" />
+        <display value="Student Technician" />
+      </concept>
+      <concept>
+        <code value="R1620" />
+        <display value="Trainee Scientist" />
+      </concept>
+      <concept>
+        <code value="R1630" />
+        <display value="Trainee Practitioner" />
+      </concept>
+      <concept>
+        <code value="R1640" />
+        <display value="Nursing Cadet" />
+      </concept>
+      <concept>
+        <code value="R1650" />
+        <display value="Healthcare Cadet" />
+      </concept>
+      <concept>
+        <code value="R1660" />
+        <display value="Pre-reg Pharmacist" />
+      </concept>
+      <concept>
+        <code value="R1670" />
+        <display value="Assistant Psychologist" />
+      </concept>
+      <concept>
+        <code value="R1680" />
+        <display value="Assistant Psychotherapist" />
+      </concept>
+      <concept>
+        <code value="R0007" />
+        <display value="ERS SDS Organisation Reporting Analyst" />
+      </concept>
+      <concept>
+        <code value="R0008" />
+        <display value="Demographic Supervisor" />
+      </concept>
+      <concept>
+        <code value="R0021" />
+        <display value="DSA NHS Number Manager (Temporary)" />
+      </concept>
+      <concept>
+        <code value="R0022" />
+        <display value="DSA National Clinical Supervisor (Temporary)" />
+      </concept>
+      <concept>
+        <code value="R0023" />
+        <display value="DSA National Clinical Administrator (Temporary)" />
+      </concept>
+      <concept>
+        <code value="R1720" />
+        <display value="Clerical Worker" />
+      </concept>
+      <concept>
+        <code value="R1730" />
+        <display value="Receptionist" />
+      </concept>
+      <concept>
+        <code value="R1740" />
+        <display value="Secretary" />
+      </concept>
+      <concept>
+        <code value="R1750" />
+        <display value="Personal Assistant" />
+      </concept>
+      <concept>
+        <code value="R1751" />
+        <display
+                 value="Demographic Administrator (Sensitive Records) Temporary" />
+      </concept>
+      <concept>
+        <code value="R1760" />
+        <display value="Medical Secretary" />
+      </concept>
+      <concept>
+        <code value="R1770" />
+        <display value="Officer" />
+      </concept>
+      <concept>
+        <code value="R1971" />
+        <display value="Map of Medicine Administrator" />
+      </concept>
+      <concept>
+        <code value="R1973" />
+        <display value="Community Administrator" />
+      </concept>
+      <concept>
+        <code value="R1977" />
+        <display value="ECC/CPA Administrator" />
+      </concept>
+      <concept>
+        <code value="R1978" />
+        <display value="Information Officer" />
+      </concept>
+      <concept>
+        <code value="R1985" />
+        <display value="Health Records Clerk" />
+      </concept>
+      <concept>
+        <code value="R1995" />
+        <display value="End Point Approver" />
+      </concept>
+      <concept>
+        <code value="R5010" />
+        <display value="Network Technician" />
+      </concept>
+      <concept>
+        <code value="R5040" />
+        <display value="Desktop Support Administrator" />
+      </concept>
+      <concept>
+        <code value="R5090" />
+        <display value="Registration Authority Agent" />
+      </concept>
+      <concept>
+        <code value="R5110" />
+        <display value="Demographic Administrator" />
+      </concept>
+      <concept>
+        <code value="R5120" />
+        <display value="ISP Administrator" />
+      </concept>
+      <concept>
+        <code value="R5130" />
+        <display value="Technical Codes Administrator" />
+      </concept>
+      <concept>
+        <code value="R5140" />
+        <display value="OSS Administrator" />
+      </concept>
+      <concept>
+        <code value="R5170" />
+        <display value="End Point Administrator" />
+      </concept>
+      <concept>
+        <code value="R5175" />
+        <display value="End Point Viewer" />
+      </concept>
+      <concept>
+        <code value="R5181" />
+        <display value="RTS Dashboard User" />
+      </concept>
+      <concept>
+        <code value="R5183" />
+        <display value="RTS BT Dashboard User" />
+      </concept>
+      <concept>
+        <code value="R5186" />
+        <display value="ERS BT Customer SLA User" />
+      </concept>
+      <concept>
+        <code value="R5188" />
+        <display value="ERS BT Supplier SLA User" />
+      </concept>
+      <concept>
+        <code value="R5189" />
+        <display value="ERS LogicaCMG SLA User" />
+      </concept>
+      <concept>
+        <code value="R5190" />
+        <display value="Content Creator" />
+      </concept>
+      <concept>
+        <code value="R5195" />
+        <display value="Content Publisher" />
+      </concept>
+      <concept>
+        <code value="R5210" />
+        <display value="User Details Administrator" />
+      </concept>
+      <concept>
+        <code value="R5250" />
+        <display value="EBS Administrator" />
+      </concept>
+      <concept>
+        <code value="R6010" />
+        <display value="Appointments Clerk" />
+      </concept>
+      <concept>
+        <code value="R6030" />
+        <display value="Ward Clerk" />
+      </concept>
+      <concept>
+        <code value="R6050" />
+        <display value="Clinical Coder" />
+      </concept>
+      <concept>
+        <code value="R6060" />
+        <display value="Medical Records Clerk" />
+      </concept>
+      <concept>
+        <code value="R6080" />
+        <display value="Waiting List Clerk" />
+      </concept>
+      <concept>
+        <code value="R7100" />
+        <display value="Trainer" />
+      </concept>
+      <concept>
+        <code value="R7110" />
+        <display value="Training Manager" />
+      </concept>
+      <concept>
+        <code value="R7120" />
+        <display value="Directory of Services Coordinator" />
+      </concept>
+      <concept>
+        <code value="R9756" />
+        <display value="ETP System Administrator" />
+      </concept>
+      <concept>
+        <code value="R1780" />
+        <display value="Manager" />
+      </concept>
+      <concept>
+        <code value="R1790" />
+        <display value="Senior Manager" />
+      </concept>
+      <concept>
+        <code value="R1910" />
+        <display value="Chair" />
+      </concept>
+      <concept>
+        <code value="R1920" />
+        <display value="Chief Executive" />
+      </concept>
+      <concept>
+        <code value="R1930" />
+        <display value="Finance Director" />
+      </concept>
+      <concept>
+        <code value="R1940" />
+        <display value="Other Executive Director" />
+      </concept>
+      <concept>
+        <code value="R1950" />
+        <display value="Board Level Director" />
+      </concept>
+      <concept>
+        <code value="R1960" />
+        <display value="Non Executive Director" />
+      </concept>
+      <concept>
+        <code value="R1970" />
+        <display value="Childcare Co-ordinator" />
+      </concept>
+      <concept>
+        <code value="R1982" />
+        <display value="Senior Administrator" />
+      </concept>
+      <concept>
+        <code value="R1983" />
+        <display value="Ward Manager" />
+      </concept>
+      <concept>
+        <code value="R1986" />
+        <display value="Workgroup Administrator" />
+      </concept>
+      <concept>
+        <code value="R1987" />
+        <display value="National RBAC Attribute Administrator" />
+      </concept>
+      <concept>
+        <code value="R1988" />
+        <display value="National RBAC Baseline Policy Administrator" />
+      </concept>
+      <concept>
+        <code value="R1989" />
+        <display value="Complaints Coordinator" />
+      </concept>
+      <concept>
+        <code value="R1990" />
+        <display value="Complaints Investigator" />
+      </concept>
+      <concept>
+        <code value="R1996" />
+        <display value="End Point DNS Administrator" />
+      </concept>
+      <concept>
+        <code value="R1997" />
+        <display value="End Point Spine Administrator" />
+      </concept>
+      <concept>
+        <code value="R1998" />
+        <display value="End Point Super User" />
+      </concept>
+      <concept>
+        <code value="R1999" />
+        <display value="End Point Service Administrator" />
+      </concept>
+      <concept>
+        <code value="R5000" />
+        <display value="Network Administrator" />
+      </concept>
+      <concept>
+        <code value="R5003" />
+        <display value="Cluster System Administrator" />
+      </concept>
+      <concept>
+        <code value="R5007" />
+        <display value="System Administrator" />
+      </concept>
+      <concept>
+        <code value="R5020" />
+        <display value="Helpdesk Administrator" />
+      </concept>
+      <concept>
+        <code value="R5060" />
+        <display value="Security Policy Controller" />
+      </concept>
+      <concept>
+        <code value="R5070" />
+        <display value="Senior Security Manager" />
+      </concept>
+      <concept>
+        <code value="R5072" />
+        <display value="Root Registration Authority Manager" />
+      </concept>
+      <concept>
+        <code value="R5080" />
+        <display value="Registration Authority Manager" />
+      </concept>
+      <concept>
+        <code value="R5100" />
+        <display value="Audit Manager" />
+      </concept>
+      <concept>
+        <code value="R5105" />
+        <display value="Caldicott Guardian" />
+      </concept>
+      <concept>
+        <code value="R5180" />
+        <display value="NASP Service Manager" />
+      </concept>
+      <concept>
+        <code value="R5182" />
+        <display value="ERS ETP System Administrator" />
+      </concept>
+      <concept>
+        <code value="R5184" />
+        <display value="ERS Spine SLA Manager" />
+      </concept>
+      <concept>
+        <code value="R5185" />
+        <display value="ERS BT Customer SLA Manager" />
+      </concept>
+      <concept>
+        <code value="R5187" />
+        <display value="ERS BT Supplier SLA Manager" />
+      </concept>
+      <concept>
+        <code value="R5191" />
+        <display value="ERS Support Administrator" />
+      </concept>
+      <concept>
+        <code value="R5192" />
+        <display value="ECS Administrator" />
+      </concept>
+      <concept>
+        <code value="R5300" />
+        <display value="Portal Administrator" />
+      </concept>
+      <concept>
+        <code value="R5310" />
+        <display value="LiquidLogic Administrator" />
+      </concept>
+      <concept>
+        <code value="R5320" />
+        <display value="i.EPR Administrator" />
+      </concept>
+      <concept>
+        <code value="R5330" />
+        <display value="Synergy Administrator" />
+      </concept>
+      <concept>
+        <code value="R5340" />
+        <display value="SystmOne Administrator" />
+      </concept>
+      <concept>
+        <code value="R6020" />
+        <display value="Outpatient Manager" />
+      </concept>
+      <concept>
+        <code value="R6040" />
+        <display value="Bed Manager" />
+      </concept>
+      <concept>
+        <code value="R6070" />
+        <display value="Medical Records Manager" />
+      </concept>
+      <concept>
+        <code value="R6090" />
+        <display value="Waiting List Manager" />
+      </concept>
+      <concept>
+        <code value="R6100" />
+        <display value="Mental Health Act Administrator" />
+      </concept>
+      <concept>
+        <code value="R6160" />
+        <display value="Ad-hoc Report Manager" />
+      </concept>
+      <concept>
+        <code value="R7130" />
+        <display value="PAS Manager" />
+      </concept>
+      <concept>
+        <code value="R1800" />
+        <display value="Technician - Admin &amp; Clerical" />
+      </concept>
+      <concept>
+        <code value="R1810" />
+        <display value="Accountant" />
+      </concept>
+      <concept>
+        <code value="R1820" />
+        <display value="Librarian" />
+      </concept>
+      <concept>
+        <code value="R1830" />
+        <display value="Interpreter" />
+      </concept>
+      <concept>
+        <code value="R1840" />
+        <display value="Analyst" />
+      </concept>
+      <concept>
+        <code value="R1850" />
+        <display value="Adviser" />
+      </concept>
+      <concept>
+        <code value="R1860" />
+        <display value="Researcher" />
+      </concept>
+      <concept>
+        <code value="R1870" />
+        <display value="Control Assistant" />
+      </concept>
+      <concept>
+        <code value="R1880" />
+        <display value="Architect" />
+      </concept>
+      <concept>
+        <code value="R1890" />
+        <display value="Lawyer" />
+      </concept>
+      <concept>
+        <code value="R1900" />
+        <display value="Surveyor" />
+      </concept>
+      <concept>
+        <code value="R5030" />
+        <display value="Helpdesk Technician" />
+      </concept>
+      <concept>
+        <code value="R5050" />
+        <display value="Desktop Support Technician" />
+      </concept>
+      <concept>
+        <code value="R5150" />
+        <display value="System Worker" />
+      </concept>
+      <concept>
+        <code value="R5400" />
+        <display value="Availability  Monitor" />
+      </concept>
+      <concept>
+        <code value="R8000" />
+        <display value="Clinical Practitioner Access Role" />
+      </concept>
+      <concept>
+        <code value="R8001" />
+        <display value="Nurse Access Role" />
+      </concept>
+      <concept>
+        <code value="R8002" />
+        <display value="Nurse Manager Access Role" />
+      </concept>
+      <concept>
+        <code value="R8003" />
+        <display value="Health Professional Access Role" />
+      </concept>
+      <concept>
+        <code value="R8004" />
+        <display value="Healthcare Student Access Role" />
+      </concept>
+      <concept>
+        <code value="R8016" />
+        <display value="Midwife Access Role" />
+      </concept>
+      <concept>
+        <code value="R8017" />
+        <display value="Midwife Manager Access Role" />
+      </concept>
+      <concept>
+        <code value="R8024" />
+        <display value="Bank Access Role" />
+      </concept>
+      <concept>
+        <code value="R8005" />
+        <display value="Biomedical Scientist Access Role" />
+      </concept>
+      <concept>
+        <code value="R8006" />
+        <display value="Medical Secretary Access Role" />
+      </concept>
+      <concept>
+        <code value="R8007" />
+        <display value="Clinical Coder Access Role" />
+      </concept>
+      <concept>
+        <code value="R8008" />
+        <display value="Admin/Clinical Support Access Role" />
+      </concept>
+      <concept>
+        <code value="R8015" />
+        <display value="Systems Support Access Role" />
+      </concept>
+      <concept>
+        <code value="R0001" />
+        <display value="Privacy Officer" />
+      </concept>
+      <concept>
+        <code value="R8009" />
+        <display value="Receptionist Access Role" />
+      </concept>
+      <concept>
+        <code value="R8010" />
+        <display value="Clerical Access Role" />
+      </concept>
+      <concept>
+        <code value="R8011" />
+        <display value="Clerical Manager Access Role" />
+      </concept>
+      <concept>
+        <code value="R8012" />
+        <display value="Information Officer Access Role" />
+      </concept>
+      <concept>
+        <code value="R8013" />
+        <display value="Health Records Manager Access Role" />
+      </concept>
+      <concept>
+        <code value="R8014" />
+        <display value="Social Worker Access Role" />
+      </concept>
+    </include>
+    <include>
+      <system
+              value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes" />
+      <concept>
+        <code value="AMENDER" />
+      </concept>
+      <concept>
+        <code value="COAUTH" />
+      </concept>
+      <concept>
+        <code value="CONT" />
+      </concept>
+      <concept>
+        <code value="EVTWIT" />
+      </concept>
+      <concept>
+        <code value="PRIMAUTH" />
+      </concept>
+      <concept>
+        <code value="REVIEWER" />
+      </concept>
+      <concept>
+        <code value="SOURCE" />
+      </concept>
+      <concept>
+        <code value="TRANS" />
+      </concept>
+      <concept>
+        <code value="VALID" />
+      </concept>
+      <concept>
+        <code value="VERF" />
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
+      <concept>
+        <code value="AFFL" />
+      </concept>
+      <concept>
+        <code value="AGNT" />
+      </concept>
+      <concept>
+        <code value="ASSIGNED" />
+      </concept>
+      <concept>
+        <code value="CLAIM" />
+      </concept>
+      <concept>
+        <code value="COVPTY" />
+      </concept>
+      <concept>
+        <code value="DEPEN" />
+      </concept>
+      <concept>
+        <code value="ECON" />
+      </concept>
+      <concept>
+        <code value="EMP" />
+      </concept>
+      <concept>
+        <code value="GUARD" />
+      </concept>
+      <concept>
+        <code value="INVSBJ" />
+      </concept>
+      <concept>
+        <code value="NAMED" />
+      </concept>
+      <concept>
+        <code value="NOK" />
+      </concept>
+      <concept>
+        <code value="PAT" />
+      </concept>
+      <concept>
+        <code value="PROV" />
+      </concept>
+      <concept>
+        <code value="NOT" />
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <concept>
+        <code value="CLASSIFIER" />
+      </concept>
+      <concept>
+        <code value="CONSENTER" />
+      </concept>
+      <concept>
+        <code value="CONSWIT" />
+      </concept>
+      <concept>
+        <code value="COPART" />
+      </concept>
+      <concept>
+        <code value="DECLASSIFIER" />
+      </concept>
+      <concept>
+        <code value="DELEGATEE" />
+      </concept>
+      <concept>
+        <code value="DELEGATOR" />
+      </concept>
+      <concept>
+        <code value="DOWNGRDER" />
+      </concept>
+      <concept>
+        <code value="DPOWATT" />
+      </concept>
+      <concept>
+        <code value="EXCEST" />
+      </concept>
+      <concept>
+        <code value="GRANTEE" />
+      </concept>
+      <concept>
+        <code value="GRANTOR" />
+      </concept>
+      <concept>
+        <code value="GT" />
+      </concept>
+      <concept>
+        <code value="GUADLTM" />
+      </concept>
+      <concept>
+        <code value="HPOWATT" />
+      </concept>
+      <concept>
+        <code value="INTPRTER" />
+      </concept>
+      <concept>
+        <code value="POWATT" />
+      </concept>
+      <concept>
+        <code value="RESPRSN" />
+      </concept>
+      <concept>
+        <code value="SPOWATT" />
+      </concept>
+      <concept>
+        <code value="CAS" />
+      </concept>
+      <concept>
+        <code value="CASM" />
+      </concept>
+      <concept>
+        <code value="CN" />
+      </concept>
+      <concept>
+        <code value="CNRP" />
+      </concept>
+      <concept>
+        <code value="CNRPM" />
+      </concept>
+      <concept>
+        <code value="CPCA" />
+      </concept>
+      <concept>
+        <code value="CRP" />
+      </concept>
+      <concept>
+        <code value="CRPM" />
+      </concept>
+    </include>
+    <include>
+      <system
+              value="http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction" />
+      <concept>
+        <code value="AUCG" />
+      </concept>
+      <concept>
+        <code value="AULR" />
+      </concept>
+      <concept>
+        <code value="AUTM" />
+      </concept>
+      <concept>
+        <code value="AUWA" />
+      </concept>
+      <concept>
+        <code value="PROMSK" />
+      </concept>
+    </include>
+    <include>
+      <system
+              value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+      <concept>
+        <code value="AUT" />
+      </concept>
+      <concept>
+        <code value="CST" />
+      </concept>
+      <concept>
+        <code value="INF" />
+      </concept>
+      <concept>
+        <code value="IRCP" />
+      </concept>
+      <concept>
+        <code value="LA" />
+      </concept>
+      <concept>
+        <code value="TRC" />
+      </concept>
+      <concept>
+        <code value="WIT" />
+      </concept>
+    </include>
+    <include>
+      <system value="http://dicom.nema.org/resources/ontology/DCM" />
+      <concept>
+        <code value="110150" />
+      </concept>
+      <concept>
+        <code value="110151" />
+      </concept>
+      <concept>
+        <code value="110152" />
+      </concept>
+      <concept>
+        <code value="110153" />
+      </concept>
+      <concept>
+        <code value="110154" />
+      </concept>
+      <concept>
+        <code value="110155" />
+      </concept>
+    </include>
+    <include>
+      <system
+              value="http://terminology.hl7.org/CodeSystem/extra-security-role-type" />
+      <concept>
+        <code value="authserver" />
+      </concept>
+      <concept>
+        <code value="datacollector" />
+      </concept>
+      <concept>
+        <code value="dataprocessor" />
+      </concept>
+      <concept>
+        <code value="datasubject" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -105,9 +105,8 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         </meta>
         <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
-          <!-- Confirm SDS user id -->
-          <value value="TBC" />
+          <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+          <value value="C1008215" />
         </identifier>
         <name>
           <use value="official" />
@@ -300,6 +299,14 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="1014211000000100" />
+            <display value="Hepatitis B surface antigen level" />
+          </coding>
           <coding>
             <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />

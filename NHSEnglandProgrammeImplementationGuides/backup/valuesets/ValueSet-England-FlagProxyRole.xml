@@ -1,0 +1,45 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="England-FlagProxyRole" />
+    <url value="https://fhir.nhs.uk/England/ValueSet/England-FlagProxyRole" />
+    <version value="0.1.0" />
+    <name value="EnglandFlagProxyRole" />
+    <title value="England Flag Proxy Role" />
+    <status value="draft" />
+    <experimental value="false" />
+    <date value="2024-02-14" />
+  <publisher value="NHS England" />
+    <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+   </contact>
+    <description value="A ValueSet to identify the type/role of the proxy involved." />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+    <expansion>
+        <timestamp value="2024-02-14T12:00:00+00:00" />
+        <contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
+            <code value="001" />
+            <display value="Patient consent" />
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
+            <code value="002" />
+            <display value="Best interest decision made on behalf of the patient (Mental Capacity Act 2005)" />
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
+            <code value="003" />
+            <display value="Lasting power of attorney for health and welfare, or court-appointed deputy, or equivalent" />
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
+            <code value="004" />
+            <display value="Other legitimate patient representative - parental responsibility" />
+        </contains>
+    </expansion>
+</ValueSet>

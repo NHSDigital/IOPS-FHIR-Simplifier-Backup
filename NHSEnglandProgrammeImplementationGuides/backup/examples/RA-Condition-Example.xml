@@ -5,11 +5,11 @@
              value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
   </meta>
   <contained>
-     <meta>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
-      </meta>
     <Provenance>
       <id value="6a6b18a7-c077-49da-929f-a8dd38468f79" />
+      <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+      </meta>
       <target>
         <reference value="#" />
       </target>
@@ -52,7 +52,7 @@
   <category>
     <coding>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
       <code value="NRAF" />
       <display value="National Reasonable Adjustments Flag" />
     </coding>
@@ -60,7 +60,7 @@
   <category>
     <coding>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/RAConditionCategory" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCategoryRA" />
       <code value="issue" />
       <display value="Issue" />
     </coding>
@@ -68,7 +68,7 @@
   <code>
     <coding>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/RAConditionCode" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeRA" />
       <code value="5" />
       <display value="Learning or understanding or concentrating" />
     </coding>

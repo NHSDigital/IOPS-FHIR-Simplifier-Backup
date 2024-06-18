@@ -6,11 +6,11 @@
              value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
   </meta>
   <contained>
-     <meta>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
-      </meta>
     <Provenance>
       <id value="4c75ce1f-1ad7-4391-b5f6-104754c7e904" />
+      <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+      </meta>
       <target>
         <reference value="#" />
       </target>
@@ -65,7 +65,7 @@
   <category>
     <coding>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
       <code value="NRAF" />
       <display value="National Reasonable Adjustments Flag" />
     </coding>
@@ -80,14 +80,14 @@
   </policy>
   <policyRule>
     <coding>
-      <system value="https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole" />
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
       <code value="001" />
     </coding>
   </policyRule>
   <provision>
     <purpose>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/RAConsentPurpose" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-ConsentPurposeRA" />
       <code value="RACONSENT" />
       <display
                value="Reasonable Adjustments - Consent to record Reasonable Adjustments" />

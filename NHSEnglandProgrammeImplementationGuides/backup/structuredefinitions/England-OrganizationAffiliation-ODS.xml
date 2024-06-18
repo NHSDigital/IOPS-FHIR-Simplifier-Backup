@@ -1,12 +1,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="England-OrganizationAffiliation-ODS" />
   <url value="https://fhir.nhs.uk/England/StructureDefinition/England-OrganizationAffiliation-ODS" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="EnglandOrganizationAffiliationODS" />
-  <title value="England OrganizationAffiliation ODS" />
+  <title value="England Organization Affiliation ODS" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2024-01-11" />
+  <date value="2024-06-18" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
