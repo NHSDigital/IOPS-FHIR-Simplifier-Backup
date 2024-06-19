@@ -105,6 +105,21 @@
                 None
             </td>
         </tr>
+        <!-- Allergy information -->
+        <tr>
+            <td class="nhsd-m-table__highlighted-items">
+                Allergy information
+            </td>
+            <td>
+                <ul>
+                    <li>Causitive agent: Ibuprofen</li>
+                    <li>Reaction type: Allergic</li>
+                    <li>Description: Heart burn and loose motions</li>
+                    <li>Severity: Severe</li>
+                    <li>Date first experienced: May 2018</li>
+                </ul>
+            </td>
+        </tr>
     </tbody>
 </table>
 

@@ -103,6 +103,21 @@
                 Advice given on healthy behaviours and recommended further blood pressure check within 5 years.
             </td>
         </tr>
+        <!-- Allergy information -->
+        <tr>
+            <td class="nhsd-m-table__highlighted-items">
+                Allergy information
+            </td>
+            <td>
+                <ul>
+                    <li>Causitive agent: Penicillin</li>
+                    <li>Reaction type: Allergic reaction</li>
+                    <li>Description: Rashes</li>
+                    <li>Severity: Moderate</li>
+                    <li>Date first experienced: 1992</li>
+                </ul>
+            </td>
+        </tr>
     </tbody>
 </table>
 

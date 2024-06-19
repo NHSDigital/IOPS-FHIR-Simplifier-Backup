@@ -102,6 +102,21 @@
                 Stage 2 hypertension - referred the patient for GP appointment within 7 days. Advice given on healthy behaviours.
             </td>
         </tr>
+        <!-- Allergy information -->
+        <tr>
+            <td class="nhsd-m-table__highlighted-items">
+                Allergy information
+            </td>
+            <td>
+                <ul>
+                    <li>Causitive agent: Milk products</li>
+                    <li>Reaction type: Intolerance</li>
+                    <li>Description: Diarrhea</li>
+                    <li>Severity: Mild</li>
+                    <li>Date first experienced: Not known</li>
+                </ul>
+            </td>
+        </tr>
     </tbody>
 </table>
 

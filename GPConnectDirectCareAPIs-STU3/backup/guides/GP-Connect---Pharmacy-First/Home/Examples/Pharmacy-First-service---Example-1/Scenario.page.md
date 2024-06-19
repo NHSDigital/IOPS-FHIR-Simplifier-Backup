@@ -106,6 +106,21 @@
                 Keep the site clean. If the symptoms do not improve, contact 111.
             </td>
         </tr>
+        <!-- Allergy information -->
+        <tr>
+            <td class="nhsd-m-table__highlighted-items">
+                Allergy information
+            </td>
+            <td>
+                <ul>
+                    <li>Causitive agent: Penicillin</li>
+                    <li>Reaction type: Reaction</li>
+                    <li>Description: Rashes</li>
+                    <li>Severity: Moderate</li>
+                    <li>Date first experienced: Since the patient was 5 years old</li>
+                </ul>
+            </td>
+        </tr>
     </tbody>
 </table>
 
