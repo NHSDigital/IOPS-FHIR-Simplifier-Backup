@@ -30,21 +30,21 @@
   <content value="complete" />
   <count value="4" />
   <concept>
-    <code value="001" />
+    <code value="patient-consent" />
     <display value="Patient consent" />
   </concept>
   <concept>
-    <code value="002" />
+    <code value="best-interest-decision" />
     <display
              value="Best interest decision made on behalf of the patient (Mental Capacity Act 2005)" />
   </concept>
   <concept>
-    <code value="003" />
+    <code value="lasting-power-of-attorney" />
     <display
              value="Lasting power of attorney for health and welfare, or court-appointed deputy, or equivalent" />
   </concept>
   <concept>
-    <code value="004" />
+    <code value="other-legitimate-patient-representative" />
     <display
              value="Other legitimate patient representative - parental responsibility" />
   </concept>

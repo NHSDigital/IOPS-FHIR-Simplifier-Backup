@@ -29,17 +29,17 @@
   <content value="complete" />
   <count value="3" />
   <concept>
-    <code value="RACONSENT" />
+    <code value="ra-consent" />
     <display
              value="Reasonable Adjustments - Consent to record Reasonable Adjustments" />
   </concept>
   <concept>
-    <code value="RADISSENT" />
+    <code value="ra-dissent" />
     <display
              value="Reasonable Adjustments - Dissent to record Reasonable Adjustments" />
   </concept>
   <concept>
-    <code value="RAREVOKED" />
+    <code value="ra-revoked" />
     <display
              value="Reasonable Adjustments - Consent revoked to record Reasonable Adjustments" />
   </concept>

@@ -1,8 +1,7 @@
 <Flag xmlns="http://hl7.org/fhir">
   <id value="RA-Flag-Example" />
   <meta>
-    <profile
-             value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
   </meta>
   <contained>
     <Provenance>
@@ -16,8 +15,7 @@
       <recorded value="2024-01-01T11:00:00+00:00" />
       <activity>
         <coding>
-          <system
-                  value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+          <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
           <code value="CREATE" />
           <display value="create" />
         </coding>
@@ -25,25 +23,21 @@
       <agent>
         <role>
           <coding>
-            <system
-                    value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
             <code value="R0260" />
             <display value="General Medical Practitioner" />
           </coding>
         </role>
         <who>
-          <reference
-                     value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+          <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
         </who>
         <onBehalfOf>
-          <reference
-                     value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+          <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
         </onBehalfOf>
       </agent>
     </Provenance>
   </contained>
-  <extension
-             url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
     <valueAnnotation>
       <text value="Example of flag notes extension text in adjustment flag" />
     </valueAnnotation>
@@ -51,16 +45,15 @@
   <status value="active" />
   <category>
     <coding>
-      <system
-              value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-      <code value="NRAF" />
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+      <code value="nraf" />
       <display value="National Reasonable Adjustments Flag" />
     </coding>
   </category>
   <category>
     <coding>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="001" />
+      <code value="communication-support" />
       <display value="Communication support" />
     </coding>
   </category>
