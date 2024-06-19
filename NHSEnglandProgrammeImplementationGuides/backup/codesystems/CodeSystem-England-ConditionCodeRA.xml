@@ -29,50 +29,50 @@
   <content value="complete" />
   <count value="11" />
   <concept>
-    <code value="1" />
+    <code value="vision" />
     <display value="Vision (for example blindness or partial sight)" />
   </concept>
   <concept>
-    <code value="2" />
+    <code value="hearing" />
     <display value="Hearing (for example deafness or partial hearing)" />
   </concept>
   <concept>
-    <code value="3" />
+    <code value="mobility" />
     <display
              value="Mobility (for example walking short distances or climbing stairs)" />
   </concept>
   <concept>
-    <code value="4" />
+    <code value="dexterity" />
     <display
              value="Dexterity (for example lifting and carrying objects, using a keyboard)" />
   </concept>
   <concept>
-    <code value="5" />
+    <code value="learning" />
     <display value="Learning or understanding or concentrating" />
   </concept>
   <concept>
-    <code value="6" />
+    <code value="memory" />
     <display value="Memory" />
   </concept>
   <concept>
-    <code value="7" />
+    <code value="mental-health" />
     <display value="Mental health" />
   </concept>
   <concept>
-    <code value="8" />
+    <code value="stamina" />
     <display value="Stamina or breathing or fatigue" />
   </concept>
   <concept>
-    <code value="9" />
+    <code value="social" />
     <display
              value="Social or behavioural (for example associated with autism spectrum disorder (ASD) which includes Asperger’s, or attention deficit hyperactivity disorder (ADHD))" />
   </concept>
   <concept>
-    <code value="10" />
+    <code value="other" />
     <display value="Other (please specify)" />
   </concept>
   <concept>
-    <code value="12" />
+    <code value="patient-would-prefer-not-to-say" />
     <display value="Patient would prefer not to say" />
   </concept>
 </CodeSystem>

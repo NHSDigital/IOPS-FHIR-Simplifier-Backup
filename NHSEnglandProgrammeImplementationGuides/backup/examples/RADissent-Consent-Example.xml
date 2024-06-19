@@ -1,8 +1,7 @@
 <Consent xmlns="http://hl7.org/fhir">
   <id value="RADissent-Consent-Example" />
   <meta>
-    <profile
-             value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
   </meta>
   <contained>
     <Provenance>
@@ -16,8 +15,7 @@
       <recorded value="2024-01-01T11:00:00+00:00" />
       <activity>
         <coding>
-          <system
-                  value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+          <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
           <code value="CREATE" />
           <display value="create" />
         </coding>
@@ -25,31 +23,26 @@
       <agent>
         <role>
           <coding>
-            <system
-                    value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
             <code value="R0260" />
             <display value="General Medical Practitioner" />
           </coding>
         </role>
         <who>
-          <reference
-                     value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+          <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
         </who>
         <onBehalfOf>
-          <reference
-                     value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+          <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
         </onBehalfOf>
       </agent>
     </Provenance>
   </contained>
-  <extension
-             url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary">
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary">
     <valueAnnotation>
       <text value="Example of consent create summary extension text" />
     </valueAnnotation>
   </extension>
-  <extension
-             url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary">
+  <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary">
     <valueAnnotation>
       <text value="Example of consent remove summary extension text" />
     </valueAnnotation>
@@ -63,9 +56,8 @@
   </scope>
   <category>
     <coding>
-      <system
-              value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-      <code value="NRAF" />
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+      <code value="nraf" />
       <display value="National Reasonable Adjustments Flag" />
     </coding>
   </category>
@@ -74,22 +66,19 @@
   </patient>
   <policy>
     <authority value="https://www.gov.uk/" />
-    <uri
-         value="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf" />
+    <uri value="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf" />
   </policy>
   <policyRule>
     <coding>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
-      <code value="001" />
+      <code value="patient-consent" />
     </coding>
   </policyRule>
   <provision>
     <purpose>
-      <system
-              value="https://fhir.nhs.uk/England/CodeSystem/England-ConsentPurposeRA" />
-      <code value="RADISSENT" />
-      <display
-               value="Reasonable Adjustments - Dissent to record Reasonable Adjustments" />
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ConsentPurposeRA" />
+      <code value="ra-dissent" />
+      <display value="Reasonable Adjustments - Dissent to record Reasonable Adjustments" />
     </purpose>
   </provision>
 </Consent>

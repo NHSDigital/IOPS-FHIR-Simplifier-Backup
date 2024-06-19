@@ -29,7 +29,7 @@
   <content value="complete" />
   <count value="1" />
   <concept>
-    <code value="FGMCONSENT" />
+    <code value="fgm-consent" />
     <display value="FGM - Consent to record FGM flags" />
   </concept>
 </CodeSystem>

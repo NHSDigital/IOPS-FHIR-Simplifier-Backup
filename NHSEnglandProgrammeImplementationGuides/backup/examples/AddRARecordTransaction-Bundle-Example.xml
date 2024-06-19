@@ -1,4 +1,3 @@
-
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="AddRARecordTransaction-Bundle-Example" />
   <type value="transaction" />
@@ -8,8 +7,7 @@
       <Patient>
         <id value="PatientFlag-AlanMann-Example" />
         <meta>
-          <profile
-                   value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         </meta>
         <identifier>
           <system value="https://fhir.nhs.uk/Id/nhs-number" />
@@ -36,14 +34,13 @@
       <Consent>
         <id value="RA-Consent-Example" />
         <meta>
-          <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
         </meta>
         <contained>
           <Provenance>
             <id value="4c75ce1f-1ad7-4391-b5f6-104754c7e904" />
             <meta>
-             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
             </meta>
             <target>
               <reference value="#" />
@@ -51,8 +48,7 @@
             <recorded value="2024-01-01T11:00:00+00:00" />
             <activity>
               <coding>
-                <system
-                        value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+                <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
                 <code value="CREATE" />
                 <display value="create" />
               </coding>
@@ -60,31 +56,26 @@
             <agent>
               <role>
                 <coding>
-                  <system
-                          value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
                   <code value="R0260" />
                   <display value="General Medical Practitioner" />
                 </coding>
               </role>
               <who>
-                <reference
-                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
               </who>
               <onBehalfOf>
-                <reference
-                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
               </onBehalfOf>
             </agent>
           </Provenance>
         </contained>
-        <extension
-                   url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary">
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary">
           <valueAnnotation>
             <text value="Example of consent create summary extension text" />
           </valueAnnotation>
         </extension>
-        <extension
-                   url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary">
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary">
           <valueAnnotation>
             <text value="Example of consent remove summary extension text" />
           </valueAnnotation>
@@ -92,16 +83,14 @@
         <status value="active" />
         <scope>
           <coding>
-            <system
-                    value="http://terminology.hl7.org/CodeSystem/consentscope" />
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope" />
             <code value="patient-privacy" />
           </coding>
         </scope>
         <category>
           <coding>
-            <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="NRAF" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+            <code value="nraf" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </category>
@@ -110,23 +99,19 @@
         </patient>
         <policy>
           <authority value="https://www.gov.uk/" />
-          <uri
-               value="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf" />
+          <uri value="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf" />
         </policy>
         <policyRule>
           <coding>
-            <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
-            <code value="001" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
+            <code value="patient-consent" />
           </coding>
         </policyRule>
         <provision>
           <purpose>
-            <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/England-ConsentPurposeRA" />
-            <code value="RACONSENT" />
-            <display
-                     value="Reasonable Adjustments - Consent to record Reasonable Adjustments" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-ConsentPurposeRA" />
+            <code value="ra-consent" />
+            <display value="Reasonable Adjustments - Consent to record Reasonable Adjustments" />
           </purpose>
         </provision>
       </Consent>
@@ -142,14 +127,13 @@
       <Condition>
         <id value="RA-Condition-Example" />
         <meta>
-          <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
         </meta>
         <contained>
           <Provenance>
             <id value="6a6b18a7-c077-49da-929f-a8dd38468f79" />
             <meta>
-             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
             </meta>
             <target>
               <reference value="#" />
@@ -157,8 +141,7 @@
             <recorded value="2024-01-01T11:00:00+00:00" />
             <activity>
               <coding>
-                <system
-                        value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+                <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
                 <code value="CREATE" />
                 <display value="create" />
               </coding>
@@ -166,51 +149,44 @@
             <agent>
               <role>
                 <coding>
-                  <system
-                          value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
                   <code value="R0260" />
                   <display value="General Medical Practitioner" />
                 </coding>
               </role>
               <who>
-                <reference
-                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
               </who>
               <onBehalfOf>
-                <reference
-                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
               </onBehalfOf>
             </agent>
           </Provenance>
         </contained>
         <clinicalStatus>
           <coding>
-            <system
-                    value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
             <code value="active" />
           </coding>
         </clinicalStatus>
         <category>
           <coding>
-            <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="NRAF" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+            <code value="nraf" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </category>
         <category>
           <coding>
-            <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCategoryRA" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCategoryRA" />
             <code value="issue" />
             <display value="Issue" />
           </coding>
         </category>
         <code>
           <coding>
-            <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeRA" />
-            <code value="5" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeRA" />
+            <code value="learning" />
             <display value="Learning or understanding or concentrating" />
           </coding>
         </code>
@@ -230,14 +206,13 @@
       <Flag>
         <id value="RA-PatientFlag-Example" />
         <meta>
-          <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
         </meta>
         <contained>
           <Provenance>
             <id value="c4e2e862-3bf4-4176-a186-9f1732938260" />
             <meta>
-             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
             </meta>
             <target>
               <reference value="#" />
@@ -245,8 +220,7 @@
             <recorded value="2024-01-01T11:00:00+00:00" />
             <activity>
               <coding>
-                <system
-                        value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+                <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
                 <code value="CREATE" />
                 <display value="create" />
               </coding>
@@ -254,28 +228,23 @@
             <agent>
               <role>
                 <coding>
-                  <system
-                          value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
                   <code value="R0260" />
                   <display value="General Medical Practitioner" />
                 </coding>
               </role>
               <who>
-                <reference
-                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
               </who>
               <onBehalfOf>
-                <reference
-                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
               </onBehalfOf>
             </agent>
           </Provenance>
         </contained>
-        <extension
-                   url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
           <valueAnnotation>
-            <text
-                  value="Example of flag notes extension text in patient flag" />
+            <text value="Example of flag notes extension text in patient flag" />
           </valueAnnotation>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
@@ -299,9 +268,8 @@
         <status value="active" />
         <code>
           <coding>
-            <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="NRAF" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+            <code value="nraf" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </code>
@@ -321,8 +289,7 @@
       <Flag>
         <id value="RA-Flag-Example" />
         <meta>
-          <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
         </meta>
         <contained>
           <Provenance>
@@ -333,8 +300,7 @@
             <recorded value="2024-01-01T11:00:00+00:00" />
             <activity>
               <coding>
-                <system
-                        value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+                <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
                 <code value="CREATE" />
                 <display value="create" />
               </coding>
@@ -342,44 +308,37 @@
             <agent>
               <role>
                 <coding>
-                  <system
-                          value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
                   <code value="R0260" />
                   <display value="General Medical Practitioner" />
                 </coding>
               </role>
               <who>
-                <reference
-                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
               </who>
               <onBehalfOf>
-                <reference
-                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
               </onBehalfOf>
             </agent>
           </Provenance>
         </contained>
-        <extension
-                   url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
           <valueAnnotation>
-            <text
-                  value="Example of flag notes extension text in adjustment flag" />
+            <text value="Example of flag notes extension text in adjustment flag" />
           </valueAnnotation>
         </extension>
         <status value="active" />
         <category>
           <coding>
-            <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="NRAF" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+            <code value="nraf" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </category>
         <category>
           <coding>
-            <system
-                    value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-            <code value="001" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
+            <code value="communication-support" />
             <display value="Communication support" />
           </coding>
         </category>
@@ -387,8 +346,7 @@
           <coding>
             <system value="https://snomed.info/sct" />
             <code value="1082681000000103" />
-            <display
-                     value="Requires support for receptive communication needs" />
+            <display value="Requires support for receptive communication needs" />
           </coding>
         </code>
         <subject>

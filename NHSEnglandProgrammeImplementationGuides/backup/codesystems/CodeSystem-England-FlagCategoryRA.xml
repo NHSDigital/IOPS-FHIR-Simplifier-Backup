@@ -29,48 +29,48 @@
   <content value="complete" />
   <count value="11" />
   <concept>
-    <code value="001" />
+    <code value="communication-support" />
     <display value="Communication support" />
   </concept>
   <concept>
-    <code value="002" />
+    <code value="requires-communication-professional" />
     <display value="Requires communication professional" />
   </concept>
   <concept>
-    <code value="003" />
+    <code value="requires-specific-contact-method" />
     <display value="Requires specific contact method" />
   </concept>
   <concept>
-    <code value="004" />
+    <code value="requires-specific-information-format" />
     <display value="Requires specific information format" />
   </concept>
   <concept>
-    <code value="005" />
+    <code value="additional-communication-needs-and-support" />
     <display value="Additional communication needs and support" />
   </concept>
   <concept>
-    <code value="006" />
+    <code value="community-language-support" />
     <display value="Community Language Support" />
   </concept>
   <concept>
-    <code value="007" />
+    <code value="adjustments-for-providing-additional-support-to-patients" />
     <display
              value="Adjustments for providing Additional Support to patients" />
   </concept>
   <concept>
-    <code value="008" />
+    <code value="adjustments-for-individual-care-requirements" />
     <display value="Adjustments for Individual Care Requirements" />
   </concept>
   <concept>
-    <code value="009" />
+    <code value="adjustments-in-relation-to-the-environment-of-care" />
     <display value="Adjustments in relation to the environment of care" />
   </concept>
   <concept>
-    <code value="010" />
+    <code value="adjustments-to-support-additional-needs" />
     <display value="Adjustments to support Additional needs" />
   </concept>
   <concept>
-    <code value="011" />
+    <code value="bespoke-reasonable-adjustments" />
     <display value="Bespoke Reasonable adjustments" />
   </concept>
 </CodeSystem>

@@ -28,7 +28,7 @@
   <content value="complete" />
   <count value="1" />
   <concept>
-    <code value="001" />
+    <code value="example-fgm-category" />
     <display value="Example FGM category" />
   </concept>
 </CodeSystem>
