@@ -105,6 +105,21 @@
                 If symptoms do not improve within 2 days, please call 111 for further advice.
             </td>
         </tr>
+        <!-- Allergy information -->
+        <tr>
+            <td class="nhsd-m-table__highlighted-items">
+                Allergy information
+            </td>
+            <td>
+                <ul>
+                    <li>Causitive agent: Pollen</li>
+                    <li>Reaction type: Allergic</li>
+                    <li>Description: Runny nose, fever, cough</li>
+                    <li>Severity: Moderate</li>
+                    <li>Date first experienced: Not known</li>
+                </ul>
+            </td>
+        </tr>
     </tbody>
 </table>
 

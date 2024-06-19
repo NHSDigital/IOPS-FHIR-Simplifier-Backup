@@ -1,2 +1,4 @@
 - name: Index
   filename: Index.page.md
+- name: Scenario
+  filename: Scenario.page.md

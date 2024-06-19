@@ -105,6 +105,21 @@
                 Blood pressure high so supply is not made. Referred to GP appointment within 7 days.
             </td>
         </tr>
+        <!-- Allergy information -->
+        <tr>
+            <td class="nhsd-m-table__highlighted-items">
+                Allergy information
+            </td>
+            <td>
+                <ul>
+                    <li>Causitive agent: Nuts</li>
+                    <li>Reaction type: Anaphylactic reaction</li>
+                    <li>Description: Patient experiences difficulty breathing and goes into shock</li>
+                    <li>Severity: Severe</li>
+                    <li>Date first experienced: 2002</li>
+                </ul>
+            </td>
+        </tr>
     </tbody>
 </table>
 

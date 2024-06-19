@@ -36,12 +36,11 @@
         <!-- Support for the urgent supply of prescription items service -->
         <tr>
             <td class="nhsd-m-table__highlighted-items">
-                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-Composition-1}}
-                <br />
-                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Encounter-1}}
+                {{pagelink:Home/Examples}}
             </td>
             <td>
-                Added support for <a href="https://termbrowser.nhs.uk/?perspective=full&conceptId1=1577321000000100" target="_blank">1577321000000100 | Community Pharmacist Consultation Service for urgent supply of prescription items (procedure) |</a>
+                <li>Added support for <a href="https://termbrowser.nhs.uk/?perspective=full&conceptId1=1577321000000100" target="_blank">1577321000000100 | Community Pharmacist Consultation Service for urgent supply of prescription items (procedure) |</a></li>
+                <li>Updated examples to include exemplar allergy information</li>
             </td>
         </tr>
         <!-- Updated AllergyIntolerance profile -->
