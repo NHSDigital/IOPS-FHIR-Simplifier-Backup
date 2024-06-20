@@ -1,5 +1,3 @@
-- name: Index
-  filename: Index.page.md
 - name: Use Cases - Generic
   filename: Use-Cases-Generic.page.md
 - name: Use Cases - Urgent and Emergency Care

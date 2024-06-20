@@ -1,5 +1,3 @@
-- name: Index
-  filename: Index.page.md
 - name: API usage
   filename: API-usage.page.md
 - name: Examples
