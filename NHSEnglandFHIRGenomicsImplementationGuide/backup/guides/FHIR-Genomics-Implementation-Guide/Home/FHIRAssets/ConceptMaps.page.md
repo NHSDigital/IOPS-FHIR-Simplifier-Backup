@@ -1,12 +1,12 @@
 ## {{page-title}}
 
-No ConceptMaps have been defined for genomics as of publication but it expected some ConceptMaps may need to be developed for Genomic specific CodeSystems, pending requirements gathering.
+Conceptmaps created for use within the NHSE FHIR Genomics Implementation Guide. They are used for the translation and recording of concepts between MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec
 
 @```
 from
 	ConceptMap
 select
-	name, url, description
+Title:title, Canonical:url
 order by
-  name
+  title
 ```
