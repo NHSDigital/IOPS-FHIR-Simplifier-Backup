@@ -3,7 +3,7 @@ topic: ReleaseNotes
 ---
 ## Release Notes
 
-### v0.1.7 (TBC)
+### v0.1.7 (21/06/2024)
 
 * Added two new `Bundle` examples, {{pagelink:R4BundleExampleGTTReportUnstructured}} and {{pagelink:R4BundleExampleUrineMCSReportUnstructured}}, based on the existing structured versions of the same examples. The unstructured versions illustrate how complex reports may be represented using formatted text within a single `Observation`, rather than using a set of structured, coded `Observations`.
 * Updated the {{pagelink:R4BundleExampleUrineMCSReportStructured}} example to include a new overarching test group `Observation`, with the following code (taken from the SNOMED CT PaLM procedure reference set):
