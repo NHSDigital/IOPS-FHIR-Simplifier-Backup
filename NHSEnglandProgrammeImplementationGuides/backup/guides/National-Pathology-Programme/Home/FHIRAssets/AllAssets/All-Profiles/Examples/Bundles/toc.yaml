@@ -1,7 +1,7 @@
-- name: Haemoglobin A1c Request
-  filename: Haemoglobin-A1c-Request.page.md
-- name: Haemoglobin A1c Report
-  filename: Haemoglobin-A1c-Report.page.md
+- name: HbA1c Request
+  filename: HbA1c-Request.page.md
+- name: HbA1c Report
+  filename: HbA1c-Report.page.md
 - name: Full Blood Count Request
   filename: Full-Blood-Count-Request.page.md
 - name: C-Reactive Protein Report
@@ -16,10 +16,10 @@
   filename: HPV-Primary-Screening-Request.page.md
 - name: HPV Primary Screening Report
   filename: HPV-Primary-Screening-Report.page.md
-- name: Lipids Profile and Haemoglobin A1c Request
-  filename: Lipids-Profile-and-Haemoglobin-A1C-Request.page.md
-- name: Lipids Profile and Haemoglobin A1c Report
-  filename: Lipids-Profile-and-Haemoglobin-A1C-Report.page.md
+- name: Lipids Profile and HbA1c Request
+  filename: Lipids-Profile-and-HbA1c-Request.page.md
+- name: Lipids Profile and HbA1c Report
+  filename: Lipids-Profile-and-HbA1c-Report.page.md
 - name: Liver Function and U&Es Request
   filename: Liver-Function-and-U-Es-Request.page.md
 - name: Liver Function and U&Es Report
