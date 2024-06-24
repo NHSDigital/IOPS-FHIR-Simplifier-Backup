@@ -10,7 +10,7 @@ The list is ranked by factors such as how close the facility is, when it is open
 
 Refer to NHS Program URL for more information <a href='https://digital.nhs.uk/services/directory-of-services-dos' class="external">Directory of Services (DoS)</a>
 
-## What is the Aim of this IG? ##
+## What is the Aim of this Implementation Guide? ##
 
 This implementation guide provides guidance on implementing the Directory of Service (DoS) FHIR R4 Standard. The project's scope involves a technical re-architecture of the Directory of Services. This entails replacing outdated components causing user or maintenance issues.
 

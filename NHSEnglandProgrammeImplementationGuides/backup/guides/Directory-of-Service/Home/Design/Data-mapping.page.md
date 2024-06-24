@@ -14,7 +14,7 @@
 <plantuml>
 @startuml
 Organization "1" *-- "many" OrganizationAffiliation : contains
-Organization "1" *-- "1" HealthcareService : contains
+Organization "1" *-- "many" HealthcareService : contains
 HealthcareService "1" *-- "many" Locations : contains
 HealthcareService "1" *-- "many" Schedule : contains
 Schedule "1" *-- "1" PractitionerRole : contains
