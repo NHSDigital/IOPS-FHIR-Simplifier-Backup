@@ -1,389 +1,525 @@
-/** RESET **/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, 
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body {
+     padding: 0;
+     margin: 0;
+}
+ body {
+     position: relative;
+     height: 100%;
+}
+ body header {
+     background-color: #f5f5f5;
+}
+ body header .title {
+     font-size: 24px;
+     font-weight: 700;
+     padding-top: 23px;
+}
+ body header .title a {
+     color: #222;
+     text-decoration: none;
+}
+ body header h3 {
+     text-align: center;
+}
+ body header h5 {
+     text-align: center;
+}
+ body header .hl7-fhir-logo-lhs {
+     text-align: left;
+     margin-top: 7px;
+     margin-bottom: 5px;
+}
+ body header .hl7-logo {
+     text-align: right;
+     float: left;
+     margin-top:15px;
+}
+ body header .guide-title {
+    margin-top: 15px;
+}
+ body .content {
+     overflow: hidden;
+     min-height: 70%;
+     position: relative;
+     height: auto !important;
+     margin-bottom: -105px;
+     padding-bottom: 105px;
+}
+ body footer {
+     background-color: #dde1e4;
+     color: #222;
+     height: 105px;
+     position: relative;
+     padding-top: 40px;
+}
+ body .logos {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+}
+ .logocolumn {
+     float: left;
+     width: 33.33%;
+     padding: 5px;
+}
+ .logorow::after {
+     content: "";
+     clear: both;
+     display: table;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+hr {
+    height: 1px;
+    background-color:#0072ce !important;
 }
-body {
-	line-height: 1;
+hr.thickline{
+    height: 2px;
+    background-color:#003087;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-  margin-bottom: 14px;
-}
-
-/*****************************************/
-/* Code snippet viewer for legacy guides */
-/*****************************************/
-
-/* .lang-json {
-    border: 1px solid #ccc;
-} */
 
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+     overflow: hidden;
+     border: 1px solid #dde1e4;
+     background-color: #dde1e4;
 }
-
 /* Style the buttons inside the tab */
-.tabbutton {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+.tab button {
+     background-color: inherit;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     transition: 0.3s;
+     font-size: 14px;
 }
-
 /* Change background color of buttons on hover */
-.tabbutton:hover {
-    background-color: #ddd;
+ .tab button:hover {
+     background-color: #919ea8;
 }
-
 /* Create an active/current tablink class */
-.tabbutton.active {
-    background-color: #ccc;
+ .tab button.active {
+     background-color: #005eb8;
+     color: #fff;
 }
-
 /* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+ .tabcontent {
+     display: none;
+     padding: 6px 12px;
+     border: 1px solid #dde1e4;
+     border-top: none;
+}
+.tab button.feedback {
+    float: right;
 }
 
-/*************************************/
-/* NHS-D Theme (bootstrap-overrides) */
-/*************************************/
-a {
-  color: #005bbb;
+/* css for simplifier diff/hybrid/snap buttons */
+.treetable-buttons {
+    padding-bottom: 5px !important
+}
+.tree-control button {
+     background-color: #dde1e4 !important;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     transition: 0.3s;
+     font-size: 14px;
+     color: #425563 !important;
+}
+/* Change background color of buttons on hover */
+.tree-control button:hover {
+     background-color: #919ea8 !important;
+}
+/* Create an active/current tablink class */
+.tree-control button.active {
+     background-color: #005eb8 !important;
+     color: #fff !important;
 }
 
-pre {
-    display: block;
-    padding: 10px;
-    margin: 0px;
-    word-break: break-all;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.1rem;
-    background: #F6F8F8;
-    border-radius: 0;
-    margin-bottom: 30px;
-    font-size: 80%;
+/* css for simplifier tabs */
+.cool-tabs .nav-tabs {
+     overflow: hidden;
+     border: 1px solid #dde1e4;
+     background-color: #dde1e4;
 }
-
-.nhsd-m-sticky-navigation__item {
-  line-height: 1.4rem;
+.cool-tabs .nav-tabs>li>a {
+     color: #425563;
+     background-color: inherit;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     transition: 0.3s;
+     font-size: 14px;
 }
-
-/*
-#sticky-nav {
- position: fixed; 
- top: 320px;
- left:320px;
- margin: 0;
- width:calc(10% - 25px);
+.cool-tabs .nav-tabs>li>a:focus,.cool-tabs .nav-tabs>li>a:hover {
+    background-color: #919ea8;
 }
-*/
-
-/* Tree table overiddes */
-.stu3-treetable .treetable-wrapper .treetable-left-panel .treetable  {
-  font-size: 100%;
-  font-family: "Frutiger W01","Arial",sans-serif;
-  -webkit-font-kerning: auto;
-  font-kerning: auto;
-}
-.stu3-treetable .treetable-wrapper .treetable-left-panel .treetable td
-{
-  font-family: "Frutiger W01","Arial",sans-serif;
-  -webkit-font-kerning: auto;
-  font-kerning: auto;
-  padding: 5px;
-}
-
-table.dict {
-  width: 100%;
-  font-size: 100%;
-  border: none;
-}
-
-/* Treetables (viewing resource information) */
-.treetable-left-panel .treetable tbody tr td {
- font-size: 14px !important;
- margin: 0 !important;
- padding: 0 !important;
-}
-.details-popup p, .details-popup div p {
-  font-size: 12px !important;
-  line-height: 1.6 !important;
-}
-.details-popup div {
-  font-size: 12px !important;
-  margin-bottom: 15px !important;
-}
-.details-popup h4 {
-  font-size: 12px !important;
-}
-.details-popup div ul li, .details-popup ul li {
-  font-size: 12px !important;
-  line-height: 1.6 !important;
-}
-.details-popup span {
-  font-size: 12px !important;
-  display: block !important;
-  margin-bottom: 5px !important;
-}
-.details-popup div div table tbody tr td, .details-popup div div table tbody tr td p  {
-  font-size: 12px !important;
-}
-.nhsd-o-code-viewer {
-  display: block !important;
-  font-size: 14px !important;
-}
-.details-popup code {
-  display: block !important;
-  font-size: 12px !important;
-}
-.tab-content {
-  margin-bottom: 20px !important;
-}
-#Combined, #Differential, #Examples {
-  margin-bottom: 2rem !important;
-}
-
-
-
-
-
-/* Sidebar override for nested pages */
-.nav-tabs>li>a {
-  border-radius: 0;
-  border: none;
-  outline: 0;
-}
-
-.nav-tabs>li.active>a:hover,
-.nav-tabs>li.active>a:focus {
-  border: none !important;
-  box-shadow: none !important;
-  background: #005bbb !important;
-  outline: 0 !important;
-}
-
-.navbar-nav>li {
-    display: inline-block !important;
-    float: none !important;
-}
-
-
-
-
-
-
-
-/* Main navigation - ensure 100% width when using a small device */
-@media (max-width: 77.49em) {
-  .nhsd-m-menu-bar li {
-    width: 100% !important;
-  }
-}
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.cool-tabs .nav-tabs>li.active>a,.cool-tabs .nav-tabs>li.active>a:focus,.cool-tabs .nav-tabs>li.active>a:hover {
     color: #fff;
     background-color: #005eb8;
-    border: 0;
-    cursor: default;
+    border-radius: 0;
+    border: 1px solid transparent;
+    border-bottom-color: transparent;
+}
+.cool-tabs .tab-content {
+    padding: 6px 12px !important;
+    color: #425563 !important;
+    border: 1px solid #dde1e4;
+    border-top: none
+}
+.cool-tabs .tab-content .tab-pane {
+    padding-bottom: 0
 }
 
-.navbar-collapse ul li {
-  text-align: left;
-  font-size: 16px;
+/*core UKCore table style*/
+table.assets {
+     font-family: Arial, Helvetica, sans-serif !important;
+     border-collapse: collapse !important;
+     width: 100% !important;
+}
+table.assets td, table.assets th {
+     border: 1px solid #dde1e4 !important;
+     padding: 8px !important;
+}
+ table.assets tr:nth-child(odd){
+    background-color: #fff;
+}
+ table.assets tr:nth-child(even){
+    background-color: #dde1e4;
+} 
+ table.assets tr:hover {
+    background-color: #919ea8 !important;
+}
+table.assets tr.balloted {
+    background-color:#dff0d8 !important;
+}
+table.assets tr td.balloted {
+    background-color:#dff0d8 !important;
+}
+ table.assets th {
+     padding-top: 12px !important;
+     padding-bottom: 12px !important;
+     text-align: left !important;
+     background-color: #005eb8 !important;
+     color: white !important;
+}
+ table.assets th a{
+     color: white !important;
 }
 
-.navbar-default {
-  background-color: #fff !important;
+
+ tr.wordBreak, td.wordBreak {
+    overflow-wrap: break-word !important;
 }
 
-ul.dropdown-menu {
-  font-size:100%
+ th.width5 { width: 5%; overflow-wrap: anywhere; }
+ th.width05 { width: 5%; overflow-wrap: anywhere; }
+ th.width10 { width: 10%; overflow-wrap: anywhere; }
+ th.width15 { width: 15%; overflow-wrap: anywhere; }
+ th.width20 { width: 20%; overflow-wrap: anywhere; }
+ th.width25 { width: 25%; overflow-wrap: anywhere; }
+ th.width30 { width: 30%; overflow-wrap: anywhere; }
+ th.width33 { width: 33%; overflow-wrap: anywhere; }
+ th.width35 { width: 35%; overflow-wrap: anywhere; }
+ th.width40 { width: 40%; overflow-wrap: anywhere; }
+ th.width45 { width: 45%; overflow-wrap: anywhere; }
+ th.width50 { width: 50%; overflow-wrap: anywhere; }
+ th.width55 { width: 55%; overflow-wrap: anywhere; }
+ th.width60 { width: 60%; overflow-wrap: anywhere; }
+ th.width65 { width: 65%; overflow-wrap: anywhere; }
+ th.width70 { width: 70%; overflow-wrap: anywhere; }
+ th.width75 { width: 75%; overflow-wrap: anywhere; }
+
+ td.width20 { width: 20%; overflow-wrap: anywhere; }
+ td.width25 { width: 25%; overflow-wrap: anywhere; }
+ td.width30 { width: 30%; overflow-wrap: anywhere; }
+ td.width35 { width: 35%; overflow-wrap: anywhere; }
+ td.width40 { width: 40%; overflow-wrap: anywhere; }
+
+ th.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
+ th.comparison-note { width: 34%; overflow-wrap: anywhere; }
+ td.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
+ td.comparison-note { width: 34%; overflow-wrap: anywhere; }
+
+ .underconstruction {
+     display: grid;
+     background-color: rgb(255, 208, 0);
+     border: 3px solid black;
+     padding-left: 50px;
+     padding-right: 50px;
+     font-size: 20px;
+     text-align: center;
 }
 
-#preview-content {
-  padding-top: 0px !important;
+ #valuesetlist {
+     font-family: Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+}
+ #valuesetlist td, #valuesetlist th {
+     border: 1px solid #919ea8;
+     padding: 8px;
+}
+ #valuesetlist tr:nth-child{
+    background-color: #dde1e4;
+}
+ #valuesetlist tr:hover {
+    background-color: #919ea8;
 }
 
-/* NHS Digital callout boxes (old branding) */
-.callout-box--info {
-    border-left: solid 7px #4c90ce;
-    background-color: #d4e4f3;
-    padding: 20px;
-    margin-bottom: 15px;
-    line-height: 1.4rem;
+ #valuesetlist tr.balloted {
+    background-color:#dff0d8 !important;
 }
-
-.callout-box--warning {
-    border-left: solid 7px #FFB81C;
-    background-color: #FFF1CC;
-    padding: 20px;
-    margin-bottom: 15px;
-    line-height: 1.4rem;
+ #valuesetlist th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background-color: #005eb8;
+     color: white;
 }
-
-.callout-box--danger {
-    border-left: solid 7px #910a19;
-    background-color: #fcc;
-    padding: 20px;
-    margin-bottom: 15px;
-    line-height: 1.4rem;
-}
-
 /* back to top button - renders when scrolling */
-#back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    display: none;
+ #back-to-top {
+     position: fixed;
+     bottom: 20px;
+     right: 30px;
+     z-index: 99;
+     display: none;
+}
+/* remove the padding on pages under the header */
+ #preview-content {
+     padding-top: 0px !important;
+}
+/* bootstrap overrides */
+ .btn-fhir {
+     background: #005eb8;
+     color: #fff;
 }
 
-/* PRSB-style mandatory, required, optional, avoid, and unknown circles */
-.mro-circle {
-    border-radius: 100%;
-    height: 30px;
-    width: 30px;
-    font-size: 80%;
-    font-weight: 600;
-    line-height: 30px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center !important;
-    cursor: help;
-    padding: 0px;
+/* Firely Simplifier base style overrides */
+ .navbar-nav>li>a:hover,
+ .navbar-nav>li>a:active,
+ .navbar-nav>li>a:focus  {
+    background-color: #919ea8 !important;
+    color: #005eb8 !important;
+}
+ .container-fluid>.navbar-collapse,
+ .container-fluid>.navbar-header,
+ .container>.navbar-collapse,
+ .container>.navbar-header {
+    margin-right: -15px !important;
+    margin-left: -15px !important;
 }
 
-.mandatory {
-  background: #330072 !important;
-  color: #fff !important;
+ div>pre {
+     border: 1px solid #919ea8 !important;
+     background-color: #f9f9f9 !important;
+ }
+
+ .submenu-list{
+    display:none;
+    width:max-content;
 }
 
-.mandatory::after {
-  content: 'M';
+.submenu-parent:hover > ul {
+    display:block;
 }
 
-.required {
-  background: #ED8B00 !important;
-  color: #fff !important;
+.submenu-list>li>a {
+    font-weight: 400;
+    color: #333;
+    display: block;
+    padding: 3px 20px;
+    line-height: 1.42857;
+    white-space: nowrap;
 }
 
-.required::after {
-  content: 'R';
+.forceWhite {
+    background-color: #fff;
+}
+.forceGreen {
+    background-color: #dff0d8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
 }
 
-.optional {
-  background: #006747 !important;
-  color: #fff !important;
+p.balloted {
+    background-color: #dff0d8;
+    padding: 5px 10px;
 }
 
-.optional::after {
-  content: 'O';
+li.balloted {
+    background-color: #dff0d8;
 }
 
-.unknown {
-  background: #DFE2E5 !important;
-  color: #687784 !important;
+tr.a-to-z {
+  vertical-align: top;
 }
 
-.unknown::after {
-  content: '?';
+tr.frm-group {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 0px none black;
+  font-weight: bold;
 }
 
-.avoid {
-  background: #8A1538 !important;
-  color: #fff !important;
+tr.frm-group-n {
+  border: 1px solid black;
+  font-weight: bold;
 }
 
-.avoid::after {
-  content:'X';
+tr.frm-contents {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+  vertical-align: top;
 }
 
-/* Table text */
-table thead, table th {
-  font-size: 16px !important;
-  font-weight: bold !important;
-}
-table td {
-  font-size: 14px !important;
+td.frm-category {
+  border-left: 1px solid #eeeeee;
+  font-weight: bold;
+  text-align: center;
 }
 
-.reset-table-button {
-  font-size: 14px;
-  margin: 10px 0 0 0;
-  padding: 5px;
-  border: none;
+td.frm-group {
+  background: #f4f4f4;
+  font-weight: bold;
 }
 
-.ig-logo {
-    background: url('https://nhs-prod.global.ssl.fastly.net/webfiles/1675253310489/images/nhs-digital-logo-social.jpg');
-    background-position: left center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: green;
+
+td.frm-set {
+  border-left: 1px solid #eeeeee;
 }
 
-.imgHandshake {float: left;}
-
-/*************************************/
-/* BaRS specific overrides */
-/*************************************/
-
-/* Change background color of links on hover */
-.barslink:hover {
-    background-color: rgb(244, 248, 1);
+.rotate {
+  text-align: center;
+  vertical-align: middle;
+  width: 1.5em;
 }
-.barslink {
-  text-decoration:underline;
+.rotate div {
+     -moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+       -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */
+             filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */
+         -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
+         margin-left: -4em;
+         margin-right: -10em;
+         min-height:100px;
+}
+
+
+/*recreating base simplifier table.regular class to enable display override for showing/hiding */
+#preview-content table.codes {
+    border: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    width: 100%;
+    position: relative;
+    display: table;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    margin-bottom: 10px;
+}
+
+#preview-content table.codes tbody,#preview-content table.codes tfoot,#preview-content table.codes thead {
+    width: 100%;
+    border-color: #e0e0e0
+}
+
+#preview-content table.codes thead,#preview-content table.codes tr:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0
+}
+
+#preview-content table.codes thead th {
+    background-color: #f9f9f9
+}
+
+#preview-content table.codes tbody td {
+    background-color: #fff
+}
+
+#preview-content table.codes td,#preview-content table.codes th{
+    padding: 5px;
+    color: #425563;
+    border-color: #e0e0e0
+}
+
+#preview-content table.codes td:not(:last-child),#preview-content table.codes th:not(:last-child) {
+    border-right: 1px solid #e0e0e0;
+}
+
+
+/* styling for nhse style sort buttons */
+.sort-icon {
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.sort-icon,
+.sort-icon:after,
+.sort-icon:before {
+  box-sizing: border-box;
+}
+
+.sort-icon>img,
+.sort-icon>svg {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sort-icon>img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.sort-icon>svg+img {
+  width: 50%;
+  height: 50%;
+}
+
+/* additional styling on headers for nhse style sort buttons */
+table.codes thead tr:first-child td.orderable button,
+table.codes thead tr:first-child th.orderable button {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3px;
+  padding: .5555555556rem;
+  border: 0;
+  color: inherit;
+  background: 0 0;
+  font: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  align-items: center;
+}
+
+table.codes thead tr:first-child td.orderable button:hover .sort-icon,
+table.codes thead tr:first-child th.orderable button:hover .sort-icon {
+  margin-bottom: 0;
+  border-bottom: 3px solid #231f20;
+  color: #231f20;
+  background-color: #919ea8;
+}
+
+
+/* this part adds an icon after external links, using FontAwesome*/
+a.external:after {
+     font-family: 'FontAwesome';
+   font-weight: 900;
+   content: "\f08e";
+    padding-left: 5px;
 }

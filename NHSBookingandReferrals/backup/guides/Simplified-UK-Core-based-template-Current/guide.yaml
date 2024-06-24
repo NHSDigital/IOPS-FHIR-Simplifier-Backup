@@ -1,0 +1,5 @@
+title: Simplified / UK Core based template (Current)
+description: UK Coe styled base project for NHSE API IG's
+version: development
+style-root: project
+style-name: NHSEUKCoreStyle
