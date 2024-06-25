@@ -1,4 +1,4 @@
-<Specimen>
+<Specimen xmlns="http://hl7.org/fhir">
   <id value="Pathology-Specimen-Sn-Example" />
   <!-- The canonical URL for the UKCore-Specimen profile. -->
   <meta>

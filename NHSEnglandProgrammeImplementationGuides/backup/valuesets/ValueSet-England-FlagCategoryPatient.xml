@@ -23,12 +23,12 @@
         <timestamp value="2024-02-14T12:00:00+00:00" />
         <contains>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="NRAF" />
+            <code value="national-reasonable-adjustments-flag" />
             <display value="National Reasonable Adjustments Flag" />
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="FGM" />
+            <code value="female-genital-mutilation-flag" />
             <display value="Female Genital Mutilation Flag" />
         </contains>
     </expansion>
