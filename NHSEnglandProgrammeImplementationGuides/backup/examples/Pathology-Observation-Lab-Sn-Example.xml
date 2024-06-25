@@ -1,4 +1,4 @@
-<Observation>
+<Observation xmlns="http://hl7.org/fhir">
   <id value="Pathology-Observation-Lab-Sn-Example" />
   <!-- The canonical URL for the UKCore-Observation-Lab profile. -->
   <meta>

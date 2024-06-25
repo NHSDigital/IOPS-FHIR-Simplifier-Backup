@@ -193,44 +193,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
-    <resource>
-      <Specimen>
-        <id value="bde5b0a5-4fb3-4655-acf0-215b93aee006" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-        </meta>
-        <identifier>
-          <system value="http://B82033-pickeringmedicalpractice.com/specimen" />
-          <value value="SPC-REQ-20220221-000024" />
-        </identifier>
-        <accessionIdentifier>
-          <system value="http://Y8J7D-pathlab001.com/specimen" />
-          <value value="SPC-LAB-20220221-004306" />
-        </accessionIdentifier>
-        <status value="available" />
-        <type>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="122575003" />
-            <display value="Urine specimen" />
-          </coding>
-        </type>
-        <subject>
-          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
-          <display value="MOXEY, Judy" />
-        </subject>
-        <receivedTime value="2022-02-21T14:58:00+00:00" />
-        <request>
-          <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-        </request>
-        <collection>
-          <collectedDateTime value="2022-02-21T11:07:00+00:00" />
-        </collection>
-      </Specimen>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
     <resource>
       <DiagnosticReport>
@@ -476,8 +438,8 @@
           <display value="TD008362 PATH LAB 001" />
         </performer>
         <valueQuantity>
-          <comparator value="&gt;" />
           <value value="35" />
+          <comparator value="&gt;" />
           <unit value="x10*6/L" />
           <system value="http://unitsofmeasure.org" />
           <code value="10^6/L" />
@@ -901,6 +863,44 @@
           <reference value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
         </specimen>
       </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
+    <resource>
+      <Specimen>
+        <id value="bde5b0a5-4fb3-4655-acf0-215b93aee006" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+        </meta>
+        <identifier>
+          <system value="http://B82033-pickeringmedicalpractice.com/specimen" />
+          <value value="SPC-REQ-20220221-000024" />
+        </identifier>
+        <accessionIdentifier>
+          <system value="http://Y8J7D-pathlab001.com/specimen" />
+          <value value="SPC-LAB-20220221-004306" />
+        </accessionIdentifier>
+        <status value="available" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="122575003" />
+            <display value="Urine specimen" />
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <receivedTime value="2022-02-21T14:58:00+00:00" />
+        <request>
+          <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
+        </request>
+        <collection>
+          <collectedDateTime value="2022-02-21T11:07:00+00:00" />
+        </collection>
+      </Specimen>
     </resource>
   </entry>
 </Bundle>

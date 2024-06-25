@@ -1,4 +1,4 @@
-<ServiceRequest>
+<ServiceRequest xmlns="http://hl7.org/fhir">
   <id value="Pathology-ServiceRequest-Lab-Sn-Example" />
   <!-- The canonical URL for the UKCore-ServiceRequest-Lab profile. -->
   <meta>

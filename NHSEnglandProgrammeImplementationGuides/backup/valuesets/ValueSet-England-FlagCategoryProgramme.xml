@@ -28,64 +28,64 @@
     <timestamp value="2024-02-14T12:00:00+00:00" />
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="001" />
+      <code value="communication-support" />
       <display value="Communication support" />
     </contains>
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="002" />
+      <code value="requires-communication-professional" />
       <display value="Requires communication professional" />
     </contains>
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="003" />
+      <code value="requires-specific-contact-method" />
       <display value="Requires specific contact method" />
     </contains>
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="004" />
+      <code value="requires-specific-information-format" />
       <display value="Requires specific information format" />
     </contains>
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="005" />
+      <code value="additional-communication-needs-and-support" />
       <display value="Additional communication needs and support" />
     </contains>
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="006" />
+      <code value="communitiy-language-support" />
       <display value="Community Language Support" />
     </contains>
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="007" />
+      <code value="adjustments-for-providing-additional-support-to-patients" />
       <display
                value="Adjustments for providing Additional Support to patients" />
     </contains>
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="008" />
+      <code value="adjustments-for-individual-care-requirements" />
       <display value="Adjustments for Individual Care Requirements" />
     </contains>
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="009" />
+      <code value="adjustments-in-relation-to-the-environment-of-care" />
       <display value="Adjustments in relation to the environment of care" />
     </contains>
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="010" />
+      <code value="adjustments-to-support-additional-needs" />
       <display value="Adjustments to support Additional needs" />
     </contains>
     <contains>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="011" />
+      <code value="bespoke-reasonable-adjustments" />
       <display value="Bespoke Reasonable adjustments" />
     </contains>
     <contains>
       <system
               value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryFGM" />
-      <code value="001" />
+      <code value="example-fgm-category" />
       <display value="Example FGM category" />
     </contains>
   </expansion>

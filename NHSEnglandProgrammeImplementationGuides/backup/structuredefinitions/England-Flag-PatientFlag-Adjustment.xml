@@ -66,7 +66,7 @@
       <binding>
         <strength value="required" />
         <valueSet
-                  value="https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory" />
+                  value="https://fhir.nhs.uk/England/ValueSet/England-FlagCategoryPatient" />
       </binding>
     </element>
     <element id="Flag.category:programmeFlag">
@@ -77,7 +77,7 @@
       <binding>
         <strength value="required" />
         <valueSet
-                  value="https://fhir.nhs.uk/England/ValueSet/ProgrammeFlagCategory" />
+                  value="https://fhir.nhs.uk/England/ValueSet/England-FlagCategoryProgramme" />
       </binding>
     </element>
     <element id="Flag.code">
@@ -86,7 +86,7 @@
       <binding>
         <strength value="extensible" />
         <valueSet
-                  value="https://fhir.nhs.uk/England/ValueSet/ProgrammeFlagCode" />
+                  value="https://fhir.nhs.uk/England/ValueSet/England-FlagCodeProgramme" />
       </binding>
     </element>
     </differential>
