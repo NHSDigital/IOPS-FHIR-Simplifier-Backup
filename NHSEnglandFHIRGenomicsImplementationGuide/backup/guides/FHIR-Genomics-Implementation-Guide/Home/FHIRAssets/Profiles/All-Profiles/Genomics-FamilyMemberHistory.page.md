@@ -94,7 +94,7 @@ The CareConnect profile will be uplifted to the R4 UKCore in a future release
             <br />
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
-                    <tr><td>FamilyMemberHistory</td><td>Pedigree details/diagram, Disease penetrance</td><td>N/A not in scope for HL7v2, could be added as additional PRB segments related to relatives</td></tr>
+                    <tr><td>FamilyMemberHistory</td><td>Pedigree details/diagram, Disease penetrance</td><td>N/A not in scope for HL7v2, could be added as additional DG1 segments related to relatives (representation of family history in HL7v2 still pending investigation)</td></tr>
                     <tr><td>FamilyMemberHistory.extension:family-member-history-genetics-observation</td><td>Patient - Is from consanguinous union</td><td>OBX-5 with appropriate SNOMED/READ/LOINC code</td></tr>
                 </table>
         </div>

@@ -98,8 +98,8 @@ Only a minimal amount of mandatory information needs to be populated.
             <br />
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
-                    <tr><td>Consent.sourceAttachment</td><td>RoD - Record of discussion form - copy attached</td><td>CON-19</td></tr>
-                    <tr><td>Consent.status</td><td>RoD - Patient conversation taken place, ROD form to follow</td><td>Inferred through CON-19 value</td></tr>
+                    <tr><td>Consent.sourceAttachment</td><td>RoD - Record of discussion form - copy attached</td><td>CON-19 (for OML, included in RoD, referenced from NTE-3)</td></tr>
+                    <tr><td>Consent.status</td><td>RoD - Patient conversation taken place, ROD form to follow</td><td>Inferred through CON-19 value (for OML, included in RoD, referenced from NTE-3)</td></tr>
                 </table>
         </div>
     </div>

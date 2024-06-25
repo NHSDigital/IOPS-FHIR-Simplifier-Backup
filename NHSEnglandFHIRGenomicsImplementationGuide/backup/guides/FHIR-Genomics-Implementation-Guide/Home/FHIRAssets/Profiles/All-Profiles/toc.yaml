@@ -16,10 +16,6 @@
   filename: Genomics-DocumentReference.page.md
 - name: Genomics-FamilyMemberHistory
   filename: Genomics-FamilyMemberHistory.page.md
-- name: Genomics-MessageDefinition
-  filename: Genomics-MessageDefinition.page.md
-- name: Genomics-MessageHeader
-  filename: Genomics-MessageHeader.page.md
 - name: Genomics-Observation
   filename: Genomics-Observation.page.md
 - name: Genomics-OperationOutcome
