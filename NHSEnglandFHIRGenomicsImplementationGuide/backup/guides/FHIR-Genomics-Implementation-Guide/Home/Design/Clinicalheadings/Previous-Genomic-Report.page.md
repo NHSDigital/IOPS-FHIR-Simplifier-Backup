@@ -11,19 +11,19 @@ Metadata regarding patient/performer details are expected to match previous mapp
 ### Mapping
 | Source Data item | Target FHIR Element | HL7v2.5.1 Mapping | Description 
 |--|--|
-|Previous genomic report - Report referral summary|DiagnosticReport.conclusion|OBX-5|Referring clinician's summary of the previous genomic report to support test request.|
+|Previous genomic report - Report referral summary|DiagnosticReport.conclusion|OBX-5 (all previous results should be part of Order Prior/Observation Prior sections of OML message)|Referring clinician's summary of the previous genomic report to support test request.|
 |Previous genomic report - Report file/link|DiagnosticReport.presentedForm|OBX-5 where OBX-2=ED or RP|A copy of/or link to the previous genomic report.|
 |Previous genomic report - Test performed date|DiagnosticReport.effectiveDateTime|OBX-19|The date a previous genomic test was performed.|
 |Previous genomic report - Report identifier|DiagnosticReport.identifier|OBX-3|The identifier for the previous genomic report.|
-|Previous genomic report - Patient's first name|DiagnosticReport.subject( Patient.name.given )|PID-5.2 attached to OBR|The first name of the patient on the previous genomic report.|
-|Previous genomic report - Patient's surname|DiagnosticReport.subject( Patient.name.family )|PID-5.1 attached to OBR|The surname of the patient on the previous genomic report.|
-|Previous genomic report - Patient's address|DiagnosticReport.subject( Patient.address )|PID-11 attached to OBR|The address of the patient on the previous genomic report.|
-|Previous genomic report - Patient's post code|DiagnosticReport.subject( Patient.address.postalCode )|PID-11.5 attached to OBR|The postcode of the patient on the previous genomic report.|
-|Previous genomic report - Patient's country|DiagnosticReport.subject( Patient.address.country )|PID-11.6 attached to OBR|The country of the patient on the previous genomic report.|
-|Previous genomic report - Patient's date of birth|DiagnosticReport.subject( Patient.birthDate )|PID-7 attached to OBR|The date of birth of the patient on the previous genomic report.|
+|Previous genomic report - Patient's first name|DiagnosticReport.subject( Patient.name.given )|PID-5.2 attached to Patient Prior|The first name of the patient on the previous genomic report.|
+|Previous genomic report - Patient's surname|DiagnosticReport.subject( Patient.name.family )|PID-5.1 attached to Patient Prior|The surname of the patient on the previous genomic report.|
+|Previous genomic report - Patient's address|DiagnosticReport.subject( Patient.address )|PID-11 attached to Patient Prior|The address of the patient on the previous genomic report.|
+|Previous genomic report - Patient's post code|DiagnosticReport.subject( Patient.address.postalCode )|PID-11.5 attached to Patient Prior|The postcode of the patient on the previous genomic report.|
+|Previous genomic report - Patient's country|DiagnosticReport.subject( Patient.address.country )|PID-11.6 attached to Patient Prior|The country of the patient on the previous genomic report.|
+|Previous genomic report - Patient's date of birth|DiagnosticReport.subject( Patient.birthDate )|PID-7 attached to Patient Prior|The date of birth of the patient on the previous genomic report.|
 |Previous genomic report - Patient's NHS number|DiagnosticReport.subject( Patient.identifier:system = https://fhir.nhs.uk/Id/nhs-number )|PID-3 where PID-3.5=2.16.840.1.113883.2.1.3.2.4.18.23|The NHS number of the patient on the previous genomic report.|
 |Previous genomic report - Patient's alternative identifier|DiagnosticReport.subject( Patient.identifier:system != https://fhir.nhs.uk/Id/nhs-number )|PID-3 where PID-3.5 != 2.16.840.1.113883.2.1.3.2.4.18.23|The alternative identifier of the patient on the previous genomic report.|
-|Previous genomic report - Patient's relationship to requesting patient|DiagnosticReport.subject( Patient.link( RelatedPerson.relationship ) )|NK1-3|The relationship of the patient on the previous genomic report to the requesting patient.|
+|Previous genomic report - Patient's relationship to requesting patient|DiagnosticReport.subject( Patient.link( RelatedPerson.relationship ) )|N/A Could be captured though NTE on Order Prior ORC|The relationship of the patient on the previous genomic report to the requesting patient.|
 |Previous genomic report - Patient's clinical genetics number|DiagnosticReport.subject( Patient.identifier:system = **TBC** )|PID-3|The individual clinical genetic number of the patient on the previous genomic report.|
 |Previous genomic report - Patient's pedigree number|DiagnosticReport.subject( Patient.identifier:system = https://fhir.nhs.uk/Id/genomics-pedigree-number )|PID-3, system **TBC**|The pedigree number of the patient on the previous genomic report which links their family.|
 |Previous genomic report - Report lab test number|DiagnosticReport.basedOn( ServiceRequest.identifier )|ORC-2|The lab test number from the previous genomic report.|

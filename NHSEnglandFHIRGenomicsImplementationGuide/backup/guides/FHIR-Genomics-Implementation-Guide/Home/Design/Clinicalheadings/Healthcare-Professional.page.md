@@ -14,18 +14,18 @@ It is expected that practitioner and organization details will be referenced fro
 |--|--|
 |HCP - Genomic test order role|Determined through where the PractitionerRole is referenced from e.g. for the requester: ServiceRequest.requestor, Additional contact: ServiceRequest.extension:additionalContact, Sample collection: Specimen.collection.collector etc.|multiple possible segments e.g. ORC-12 for requester|HCP's function within the genomic test ordering process.|
 |HCP - Full name|PractitionerRole.practitioner.display (full delimited name can be retrieved via identifier e.g. from SDS)|ORC-12|HCP's full name.|
-|HCP - Job Title|PractitionerRole.code (display can be used to capture human readable job role code)|STF-18|HCP's job title.|
-|HCP - Current Specialty|PractitionerRole.specialty|PRA-5|HCP's current specialty.|
+|HCP - Job Title|PractitionerRole.code (display can be used to capture human readable job role code)|CTD-1|HCP's job title.|
+|HCP - Current Specialty|PractitionerRole.specialty|Additional CTD-1 segments|HCP's current specialty.|
 |HCP - Phone|PractitionerRole.telecom:system=phone|ORC-14|HCP's phone number.|
-|HCP - Email address|PractitionerRole.telecom:system=email|STF-15|HCP's email address.|
+|HCP - Email address|PractitionerRole.telecom:system=email|CTD-5.4|HCP's email address.|
 |HCP - Organization name.|PractitionerRole.organization.display (full delimited name can be retrieved via identifier e.g. from ODS)|ORC-21|HCP's organization name.|
 |HCP - Organization address.|PractitionerRole.organization (retrieved via ODS)|ORC-22|HCP's organization address.|
 |HCP - Organization ODS code.|PractitionerRole.organization.identifier|ORC-21.10|HCP's organization ODS code.|
-|HCP - Department name|PractitionerRole.healthcareService.identifier, could alternatively use PractitionerRole.healthcareService.display to record human readable version or PractitionerRole.specialty if mapped to clinical specialty **TBC**|STF-8|HCP's department name.|
+|HCP - Department name|PractitionerRole.healthcareService.identifier, could alternatively use PractitionerRole.healthcareService.display to record human readable version or PractitionerRole.specialty if mapped to clinical specialty **TBC**|Additional CTD-1 segments|HCP's department name.|
 |HCP - Professional registration number|PractitionerRole.practitioner.identifier|ORC-12.1|HCP's professional registration number such as their GMC number.|
 |HCP - Professional registration number type|PractitionerRole.practitioner.identifier.system|ORC-12.9|HCP's professional registration number type such GMC.|
-|HCP - Genomic report delivery method|PractitionerRole.telecom.rank=1|STF-16|HCP report preferred delivery method.|
-|HCP - Central email for address and reporting (many)|Additional  PractitionerRole.telecom:system=email marked with extension:contactpoint-comment indicating reporting, may need to be additionally indicated in NEMS subscription depending on notification method used **TBC**|STF-15|Central email address provided by the HCP.|
+|HCP - Genomic report delivery method|PractitionerRole.telecom.rank=1|CTD-6|HCP report preferred delivery method.|
+|HCP - Central email for address and reporting (many)|Additional  PractitionerRole.telecom:system=email marked with extension:contactpoint-comment indicating reporting, may need to be additionally indicated in NEMS subscription depending on notification method used **TBC**|Additional CTD segment (CTD-5.4)|Central email address provided by the HCP.|
 
 <!--
 | Source Data item | Non WGS Rare Disease | Non WGS Cancer | WGS Rare Disease | WGS Cancer | Target FHIR Element | HL7v2.5.1 Mapping | Description 

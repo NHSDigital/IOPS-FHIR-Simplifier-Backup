@@ -90,16 +90,15 @@ It is also highly preferred if the verificationStatus, onsetDateTime, recordedDa
             <br />
             <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
-                    <tr><td>Condition</td><td>Patient Clinical Presentation, Diabetic complications</td><td>PRB</td></tr>
-                    <tr><td>Condition.bodySite</td><td>Has multiple primary tumours, Count of tumours, Site of tumour (many), Paraganglioma location, Abnormal infection history site, Abnormal infection history site organism</td><td>Multiple PRB segments (bodySite for condition not in scope for HL7v2)</td></tr>
-                    <tr><td>Condition.verificationStatus</td><td>Known/suspected disease</td><td>PRB-13</td></tr>
-                    <tr><td>Condition.recordedDate</td><td>Date of diagnosis, Diagnosis during pregnancy</td><td>PRB-7</td></tr>
-                    <tr><td>Condition.clinicalStatus</td><td>Disease status, Is patient in treatment free remission, Is diabetes in remission</td><td>PRB-14</td></tr>
-                    <tr><td>Condition.code</td><td>Phenotypic details (Many), Solid tumour type, Liquid tumour type, Laterality of hearing loss, Fetal maternal screening genotype, Fetal paternal screening genotype, Thyroid gland state, Pituitary tumour type, Pancreatic tumour type, Phaeochromocytoma, Progeroid features, Severity of hearing loss, Retinal degeneration, Hepatic vs neurological presentation, Suspected inborn error type(s)</td><td>Additional PRB segments (PRB-3)</td></tr>
-                    <tr><td>Condition.onsetDateTime</td><td>Date of disease onset, Duration of hyperinsulism (when compared to abatementDateTime</td><td>PRB-16</td></tr>
-                    <tr><td>Condition.evidence.detail( reference( FamilyMemberHistory, Media ) )</td><td>Pedigree details/diagram, Disease penetrance</td><td>N/A not in scope for HL7v2, could be added as additional PRB segments related to relatives</td></tr>
-                    <tr><td>Condition.evidence.code</td><td>Symptoms at onset</td><td>OBX segments attached to PRB</td></tr>
-                    <tr><td>Condition.note</td><td>Date of diabetes remission</td><td>NTE segment attached to PRB</td></tr>
+                    <tr><td>Condition</td><td>Patient Clinical Presentation, Diabetic complications</td><td>DG1</td></tr>
+                    <tr><td>Condition.bodySite</td><td>Has multiple primary tumours, Count of tumours, Site of tumour (many), Paraganglioma location, Abnormal infection history site, Abnormal infection history site organism</td><td>Multiple DG1 segments (bodySite for condition not in scope for HL7v2)</td></tr>
+                    <tr><td>Condition.verificationStatus</td><td>Known/suspected disease</td><td>DG1-6</td></tr>
+                    <tr><td>Condition.recordedDate</td><td>Date of diagnosis, Diagnosis during pregnancy</td><td>DG1-5</td></tr>
+                    <tr><td>Condition.clinicalStatus</td><td>Disease status, Is patient in treatment free remission, Is diabetes in remission</td><td>Potentially mapped to DG1-17</td></tr>
+                    <tr><td>Condition.code</td><td>Phenotypic details (Many), Solid tumour type, Liquid tumour type, Laterality of hearing loss, Fetal maternal screening genotype, Fetal paternal screening genotype, Thyroid gland state, Pituitary tumour type, Pancreatic tumour type, Phaeochromocytoma, Progeroid features, Severity of hearing loss, Retinal degeneration, Hepatic vs neurological presentation, Suspected inborn error type(s)</td><td>Additional DG1 segments (DG1-3)</td></tr>
+                    <tr><td>Condition.onsetDateTime</td><td>Date of disease onset, Duration of hyperinsulism (when compared to abatementDateTime</td><td>for non OML messages PRB-16</td></tr>
+                    <tr><td>Condition.evidence.detail( reference( FamilyMemberHistory, Media ) )</td><td>Pedigree details/diagram, Disease penetrance</td><td>N/A not in scope for HL7v2, could be added as additional DG1 segments related to relatives (representation of family history in HL7v2 still pending investigation)</td></tr>
+                    <tr><td>Condition.evidence.code</td><td>Symptoms at onset</td><td>Separate DG1 with DG1-17=S</td></tr>
             </table>
         </div>
     </div>

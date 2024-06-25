@@ -25,7 +25,7 @@ Mapped to ServiceRequest, extensions are still in review. CI and CITT codes for 
 |Test request - Low level test identifier description|ServiceRequest.code.coding.display|OBR-4.2|The low level id which identifies the requested test. Options provided by Test Directory.|
 |Test request - Low level test identifier system ref|ServiceRequest.code.coding.system|OBR-4.4|The low level system reference for the considered test.|
 |Test request - Patient set to be tested (**pending review**)|N/A - Determined through number of ServiceRequests in the test order|N/A - determined through number of ORC segments within OML^O21 message|Confirmation if the test is a singleton, duo or trio.|
-|Test request - Count of patients to be tested|N/A - Determined through number of Patients referenced in ServiceRequests in test order|N/A - determined through number of PID segments referenced from ORC segments within OML^O21 message|Count of patients to be tested.|
+|Test request - Count of patients to be tested|N/A - Determined through number of Patients referenced in ServiceRequests in test order|N/A - for HL7v2, each patient test request SHOULD be sent using a new OML^O21 message|Count of patients to be tested.|
 |Test request - Urgency reason|ServiceRequest.extension:priorityReason|N/A could possibly use TQ1-10|If urgent, the test request urgency reason.|
 |Test request - Reason for reanalysis|Additional ServiceRequest.reasonCode/reasonReference elements|OBR-13 segment linked to ORC|The reason for a genomic test.|
 |Test request - Type of reanalysis|ServiceRequest.orderDetail|Additional NTE segments attached to OBR|The type of reanalysis which has been requested.|
