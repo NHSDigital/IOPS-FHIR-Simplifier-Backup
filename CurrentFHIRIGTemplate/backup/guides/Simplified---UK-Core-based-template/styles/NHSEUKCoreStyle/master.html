@@ -73,7 +73,15 @@
         </a>
 
         <footer>
-            <div class="container">            
+
+            <!-- Consent Bar -->
+            <div class="cookie-consent" data-level="20" data-duration="8">
+                <p>Simplifier, and NHS England, use cookies on this website. <span class="hidden-xs">Cookies are small text files, stored on your computer. We use cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site without changing settings, you are agreeing to our use of cookies.</span></p>
+                <button type="button" class="btn btn-primary cookie-accept" data-level="80" data-duration="8760">Accept</button>
+            </div>
+
+            <!-- main footer container, sizes match NHSE IG for consistent look and feel -->
+            <div class="container">                                  
                 <table role="none" title="Footer Links" width="100%">
                     	<col style="width:19%">
 	                    <col style="width:17%">
@@ -100,12 +108,16 @@
             var backToTopButton = document.getElementById("back-to-top");
 
             // When the user scrolls down 100px from the top of the document, show the button
-            window.onscroll = function () { handleScrolling() };
+            window.onscroll = function () { 
 
-            function handleScrolling() {
+                                        
                 showTopButton();
+                try {
                 scrollProfileSideBar();
-            }
+                } catch {
+
+                }
+            };           
 
             function showTopButton() {
                 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -130,6 +142,7 @@
                 $('footer').css('margin-top', heightShortage);
             }
 
+            // main code to handle all tabs, editing this will probably break everything                                                                                      
             function openTab(evt, tabName) {
                 // Find the element that has been clicked with jQuery
                 var element = $(evt.target);

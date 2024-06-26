@@ -35,7 +35,8 @@ html, body {
      margin-top:15px;
 }
  body header .guide-title {
-    margin-top: 15px;
+    font-size: 18px;
+    margin-top: 18px;
 }
  body .content {
      overflow: hidden;
@@ -67,6 +68,10 @@ html, body {
      content: "";
      clear: both;
      display: table;
+}
+
+a {
+color:revert;
 }
 
 hr {
@@ -109,6 +114,9 @@ hr.thickline{
      padding: 6px 12px;
      border: 1px solid #dde1e4;
      border-top: none;
+}
+.tab button.feedback {
+    float: right;
 }
 
 /* css for simplifier diff/hybrid/snap buttons */
@@ -237,6 +245,7 @@ table.assets tr td.balloted {
  td.width35 { width: 35%; overflow-wrap: anywhere; }
  td.width40 { width: 40%; overflow-wrap: anywhere; }
 
+
  th.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
  th.comparison-note { width: 34%; overflow-wrap: anywhere; }
  td.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
@@ -252,26 +261,26 @@ table.assets tr td.balloted {
      text-align: center;
 }
 
- #valuesetlist {
+table.valuesetlist {
      font-family: Arial, Helvetica, sans-serif;
      border-collapse: collapse;
      width: 100%;
 }
- #valuesetlist td, #valuesetlist th {
+table.valuesetlist td, table.valuesetlist th {
      border: 1px solid #919ea8;
      padding: 8px;
 }
- #valuesetlist tr:nth-child{
+table.valuesetlist tr:nth-child{
     background-color: #dde1e4;
 }
- #valuesetlist tr:hover {
+table.valuesetlist tr:hover {
     background-color: #919ea8;
 }
 
- #valuesetlist tr.balloted {
+table.valuesetlist tr.balloted {
     background-color:#dff0d8 !important;
 }
- #valuesetlist th {
+table.valuesetlist th {
      padding-top: 12px;
      padding-bottom: 12px;
      text-align: left;
@@ -316,16 +325,22 @@ table.assets tr td.balloted {
      background-color: #f9f9f9 !important;
  }
 
- .submenu-list{
-    display:none;
-    width:max-content;
+li.submenu-subparent{
+    list-style-type: none;
 }
 
-.submenu-parent:hover > ul {
-    display:block;
+.submenu-list, .submenu-sublist{
+  transition: all 0.5s linear;
+  width:max-content;
+}
+.hidden , .subhidden {
+  display:none;
+}
+.visuallyhidden , .visuallysubhidden {
+  opacity: 0;
 }
 
-.submenu-list>li>a {
+.submenu-list>li>a, .submenu-sublist>li>a {
     font-weight: 400;
     color: #333;
     display: block;
@@ -412,7 +427,7 @@ td.frm-set {
 
 
 /*recreating base simplifier table.regular class to enable display override for showing/hiding */
-#preview-content table.codes {
+#preview-content table.codes, #preview-content table.baseFhir {
     border: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
     width: 100%;
@@ -424,12 +439,15 @@ td.frm-set {
     margin-bottom: 10px;
 }
 
-#preview-content table.codes tbody,#preview-content table.codes tfoot,#preview-content table.codes thead {
+#preview-content table.codes tbody,#preview-content table.codes tfoot,#preview-content table.codes thead, 
+#preview-content table.baseFhir tbody {
     width: 100%;
     border-color: #e0e0e0
 }
 
-#preview-content table.codes thead,#preview-content table.codes tr:not(:last-child) {
+
+#preview-content table.codes thead,#preview-content table.codes tr:not(:last-child), 
+#preview-content table.baseFhir tr:not(:last-child) {
     border-bottom: 1px solid #e0e0e0
 }
 
@@ -437,20 +455,22 @@ td.frm-set {
     background-color: #f9f9f9
 }
 
-#preview-content table.codes tbody td {
+#preview-content table.codes tbody td, 
+#preview-content table.baseFhir tbody td {
     background-color: #fff
 }
 
-#preview-content table.codes td,#preview-content table.codes th{
+#preview-content table.codes td,#preview-content table.codes th, 
+#preview-content table.baseFhir td,#preview-content table.baseFhir th{
     padding: 5px;
     color: #425563;
     border-color: #e0e0e0
 }
 
-#preview-content table.codes td:not(:last-child),#preview-content table.codes th:not(:last-child) {
+#preview-content table.codes td:not(:last-child),#preview-content table.codes th:not(:last-child), 
+#preview-content table.baseFhir td:not(:last-child),#preview-content table.baseFhir th:not(:last-child) {
     border-right: 1px solid #e0e0e0;
 }
-
 
 /* styling for nhse style sort buttons */
 .sort-icon {
@@ -515,8 +535,116 @@ table.codes thead tr:first-child th.orderable button:hover .sort-icon {
 
 /* this part adds an icon after external links, using FontAwesome*/
 a.external:after {
-     font-family: 'Font Awesome 5 Free';
+     font-family: 'FontAwesome';
    font-weight: 900;
    content: "\f35d";
     padding-left: 5px;
+}
+
+h2 code {
+    cursor: pointer;
+}
+
+.alert-baseFhir {
+    background-color: #f5f5f5;
+    border-color: #919ea8;
+    color: #231f20
+}
+
+.alert-baseFhir hr {
+    border-top-color: #a6e1ec
+}
+
+.alert-baseFhir .alert-link {
+    color: #245269
+}
+
+
+.copy-text .btn-copy{
+  visibility: hidden;
+  display: none;
+}
+
+.copy-text:hover .btn-copy {
+  visibility: visible;
+  display: inline-block;
+}
+
+.btn-copy {
+  border-width: 0px;
+  background-color: transparent;
+}
+
+.copy-text .btn-copy:after {
+     font-family: 'FontAwesome';
+   font-weight: 900;
+   content: "\f0c5";
+    padding-left: 5px;
+}
+
+
+
+.cookie-consent {
+  /*Hide by default*/
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 900;
+}
+
+.cookie-consent {
+  background: #222;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  box-sizing: border-box;
+  padding: 15px 30px 15px;
+}
+
+.cookie-consent p {
+  float: left;
+  width: 80%;
+  margin: 0;
+}
+
+.cookie-consent a {
+  color: #fff;
+}
+
+.cookie-consent .btn {
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  background-color: #990000;
+  border: 1px solid transparent;
+  border-color: #fff;
+  border-radius: 7px;
+  text-align: center;
+
+  padding: 8px 15px;
+  display: block;
+  width: 20%;
+  margin-left: 10px;
+  float: right;
+  max-width: 120px;
+}
+
+.cookie-consent .btn:hover,
+.cookie-consent .btn:active {
+  background-color: #d6d8d9;
+  border-color: #c6c8ca;
+  color: #1b1e21;
+}
+
+@media (max-width: 480px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+
+.snippetBackground {
+    background-color: #ddd;
 }
