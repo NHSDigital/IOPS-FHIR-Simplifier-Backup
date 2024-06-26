@@ -1,34 +1,44 @@
 {
-	"resourceType": "Consent",
-	"id": "Consent-RoDAvailable-Example",
-	"status": "active",
-	"scope": {
-		"coding": [
-			{
-				"system": "http://terminology.hl7.org/CodeSystem/consentscope",
-				"code": "research",
-				"display": "Research"
-			}
-		]
-	},
-	"category": [
-		{
-			"coding": [
-				{
-					"system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-					"code": "research",
-					"display": "Research Information Access"
-				}
-			]
-		}
-	],
-	"sourceReference": {
-		"reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-Example"
-	},
-	"policy": [
-		{
-			"authority": "https://www.england.nhs.uk",
-			"uri": "https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form"
-		}
-	]
+  "resourceType": "Consent",
+  "id": "Consent-RoDAvailable-Example",
+  "status": "active",
+  "scope": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+        "code": "research",
+        "display": "Research"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+          "code": "research",
+          "display": "Research Information Access"
+        }
+      ]
+    }
+  ],
+  "sourceReference": {
+    "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-Example"
+  },
+  "policy": [
+    {
+      "authority": "https://www.england.nhs.uk",
+      "uri": "https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form"
+    }
+  ],
+  "provision": {
+    "data": [
+      {
+        "meaning": "instance",
+        "reference": { 
+          "reference":  "ServiceRequest/ServiceRequest-WGSTestOrderForm-Example"
+        }
+      }
+    ]
+  }
 }

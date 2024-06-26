@@ -1,31 +1,41 @@
 {
-	"resourceType": "Consent",
-	"id": "Consent-RoDToFollow-Example",
-	"status": "proposed",
-	"scope": {
-		"coding": [
-			{
-				"system": "http://terminology.hl7.org/CodeSystem/consentscope",
-				"code": "research",
-				"display": "Research"
-			}
-		]
-	},
-	"category": [
-		{
-			"coding": [
-				{
-					"system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-					"code": "research",
-					"display": "Research Information Access"
-				}
-			]
-		}
-	],
-	"policy": [
-		{
-			"authority": "https://www.england.nhs.uk",
-			"uri": "https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form"
-		}
-	]
+  "resourceType": "Consent",
+  "id": "Consent-RoDToFollow-Example",
+  "status": "proposed",
+  "scope": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+        "code": "research",
+        "display": "Research"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+          "code": "research",
+          "display": "Research Information Access"
+        }
+      ]
+    }
+  ],
+  "policy": [
+    {
+      "authority": "https://www.england.nhs.uk",
+      "uri": "https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form"
+    }
+  ],
+  "provision": {
+    "data": [
+      {
+        "meaning": "instance",
+        "reference": { 
+          "reference":  "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+        }
+      }
+    ]
+  }
 }

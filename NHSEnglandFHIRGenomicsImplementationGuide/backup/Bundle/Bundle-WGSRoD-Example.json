@@ -37,7 +37,17 @@
 						"authority": "https://www.england.nhs.uk",
 						"uri": "https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form"
 					}
-				]
+				],
+        "provision": {
+          "data": [
+            {
+              "meaning": "instance",
+              "reference": { 
+                "reference":  "ServiceRequest/ServiceRequest-WGSTestOrderForm-Example"
+              }
+            }
+          ]
+        }
 			},
 			"request": {
         "method": "POST",
