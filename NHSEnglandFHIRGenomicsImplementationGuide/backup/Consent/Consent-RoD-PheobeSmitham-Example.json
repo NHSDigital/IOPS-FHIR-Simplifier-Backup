@@ -33,5 +33,15 @@
 			"authority": "https://www.england.nhs.uk",
 			"uri": "https://www.england.nhs.uk/wp-content/uploads/2021/09/nhs-genomic-medicine-service-genomic-consultee-declaration-1.pdf"
 		}
-	]
+	],
+  "provision": {
+    "data": [
+      {
+        "meaning": "instance",
+        "reference": { 
+          "reference":  "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+        }
+      }
+    ]
+  }
 }

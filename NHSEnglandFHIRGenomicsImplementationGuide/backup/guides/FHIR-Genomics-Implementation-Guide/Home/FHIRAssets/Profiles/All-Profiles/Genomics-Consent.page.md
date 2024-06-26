@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-Only expected to be used for wrapping Record of Discussion resources within the WGS pathway.
+Only expected to be used for wrapping Record of Discussion resources within the WGS pathway. Consent for testing is implied through submission of a test to the Genomic Order Management service.
 
 Only a minimal amount of mandatory information needs to be populated. 
 
@@ -124,6 +124,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#category">category</a>
 - <a href="#source">source\[x\]</a>
 - <a href="#policy">policy</a>
+- <a href="#provision">provision</a>
 
 <a name="status"></a>
 #### status
@@ -183,4 +184,20 @@ For WGS RoD this SHALL be fixed to the below uris:
             "uri": "https://www.england.nhs.uk/publication/nhs-genomic-medicine-service-record-of-discussion-form"
         }
     ]
+```
+
+<a name="provision"></a>
+#### provision
+Used to reference the ServiceRequest the Consent applies to. SHALL be present where the consent only applies to a specific test.
+```json
+"provision": {
+        "data": [
+            {
+                "meaning": "instance",
+                "reference": { 
+                    "reference":  "ServiceRequest/ServiceRequest-WGSTestOrderForm-Example"
+                }
+            }
+        ]
+    }
 ```

@@ -1,37 +1,47 @@
 {
-	"resourceType": "Consent",
-	"id": "Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example",
-	"status": "active",
-	"scope": {
-		"coding": [
-			{
-				"system": "http://terminology.hl7.org/CodeSystem/consentscope",
-				"code": "research",
-				"display": "Research"
-			}
-		]
-	},
-	"category": [
-		{
-			"coding": [
-				{
-					"system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-					"code": "research",
-					"display": "Research Information Access"
-				}
-			]
-		}
-	],
+  "resourceType": "Consent",
+  "id": "Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example",
+  "status": "active",
+  "scope": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+        "code": "research",
+        "display": "Research"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+          "code": "research",
+          "display": "Research Information Access"
+        }
+      ]
+    }
+  ],
   "patient": {
     "reference": "Patient/Patient-PheobeSmitham-Example"
   },
-	"sourceReference": {
-		"reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example"
-	},
-	"policy": [
-		{
-			"authority": "https://www.england.nhs.uk",
-			"uri": "https://www.england.nhs.uk/wp-content/uploads/2021/09/nhs-genomic-medicine-service-young-persons-assent-form.pdf"
-		}
-	]
+  "sourceReference": {
+    "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example"
+  },
+  "policy": [
+    {
+      "authority": "https://www.england.nhs.uk",
+      "uri": "https://www.england.nhs.uk/wp-content/uploads/2021/09/nhs-genomic-medicine-service-young-persons-assent-form.pdf"
+    }
+  ],
+  "provision": {
+    "data": [
+      {
+        "meaning": "instance",
+        "reference": { 
+          "reference":  "ServiceRequest/ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example"
+        }
+      }
+    ]
+  }
 }
