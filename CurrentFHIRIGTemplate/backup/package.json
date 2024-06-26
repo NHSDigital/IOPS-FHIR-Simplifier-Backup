@@ -3,10 +3,10 @@
   "version": null,
   "description": null,
   "author": null,
-  "dependencies": {
-    "simplifier.core.r4": "4.0.1"
-  },
   "fhirVersions": null,
   "devDependencies": null,
-  "canonicals": null
+  "canonicals": null,
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  }
 }
