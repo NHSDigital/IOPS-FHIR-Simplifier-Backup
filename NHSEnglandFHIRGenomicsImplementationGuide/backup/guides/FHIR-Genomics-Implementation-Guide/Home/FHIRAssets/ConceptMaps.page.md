@@ -6,7 +6,7 @@ Conceptmaps created for use within the NHSE FHIR Genomics Implementation Guide. 
 from
 	ConceptMap
 select
-Title:title, Canonical:url
+Title:title, Canonical:url,Description:purpose
 order by
   title
 ```
