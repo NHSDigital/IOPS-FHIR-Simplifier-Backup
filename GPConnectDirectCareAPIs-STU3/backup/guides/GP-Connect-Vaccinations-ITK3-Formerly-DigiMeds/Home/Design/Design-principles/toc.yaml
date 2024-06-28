@@ -1,0 +1,12 @@
+- name: Design principles
+  filename: Design-principles.page.md
+- name: Business process integration
+  filename: Business-process-integration.page.md
+- name: 'Communication paradigm: asynchronous messaging'
+  filename: Communication-paradigm-asynchronous-messaging.page.md
+- name: Asynchronous messaging paradigms
+  filename: Asynchronous-messaging-paradigms.page.md
+- name: 'Messaging format : FHIR STU3 messages'
+  filename: Messaging-format-FHIR-STU3-messages.page.md
+- name: 'Re-usability: payload re-use'
+  filename: Re-usability-payload-re-use.page.md
