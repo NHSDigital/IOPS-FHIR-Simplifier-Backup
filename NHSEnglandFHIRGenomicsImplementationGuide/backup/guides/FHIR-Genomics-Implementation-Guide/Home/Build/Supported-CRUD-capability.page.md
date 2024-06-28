@@ -9,110 +9,73 @@ The main create operations will be creation of the initial test request and asso
 
 ### Common Interaction Patterns
 
-#### Creation of Test Order
-
 <plantuml>
 @startuml
+== Creation of Test Order ==
 Participant EPR as "Requester (EPR)"
 Participant GOMS as "Genomic Order Management Service Broker"
 Participant LIMS as "Fulfilling Organization (GLH/LIMS)"
 EPR -> GOMS : POST Test Order Transaction Bundle
 alt Success
 GOMS -> GOMS : Create Tasks for Test Order
-GOMS --> EPR : Transaction Response Bundle containing created resources
+GOMS --> EPR : Transaction Response Bundle containing \ncreated resources
 opt Event Notification
-GOMS -> LIMS : POST event-notification Bundle (new tasks for org)
+GOMS -> LIMS : POST event-notification Bundle \n(new tasks for org)
 end
 else Failure
-GOMS --> EPR : Transaction Response Bundle containing OperationOutcomes with diagnostics
+GOMS --> EPR : Transaction Response Bundle containing \nOperationOutcomes with diagnostics
 end
-@enduml
-</plantuml>
-
-#### Creation of Genomic Report
-
-<plantuml>
-@startuml
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)" order 30
-Participant GOMS as "Genomic Order Management Service Broker" order 20
-Participant EPR as "Requester (EPR)" order 10
+== Creation of Genomic Report ==
 LIMS -> GOMS : POST Genomic Report Transaction Bundle
 alt Success
-GOMS --> LIMS : Transaction Response Bundle containing created resources
+GOMS --> LIMS : Transaction Response Bundle containing \ncreated resources
 opt Event Notification
-GOMS -> EPR : POST event-notification Bundle (report available)
+GOMS -> EPR : POST event-notification Bundle \n(report available)
 end
 else Failure
-GOMS --> LIMS : Transaction Response Bundle containing OperationOutcomes with diagnostics
+GOMS --> LIMS : Transaction Response Bundle containing \nOperationOutcomes with diagnostics
 end
-@enduml
-</plantuml>
-
-#### Addition of Consent/RoD
-
-<plantuml>
-@startuml
-Participant EPR as "Requester (EPR)"
-Participant GOMS as "Genomic Order Management Service Broker"
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)"
-EPR -> GOMS : POST Consent/ROD Transaction Bundle \n(including update to ServiceRequest.supportingInfo to reference Consent\n and Provenance detailing change to ServiceRequest)
+== Addition of Consent/RoD ==
+EPR -> GOMS : POST Consent/ROD Transaction Bundle \n(including update to ServiceRequest.supportingInfo to \nreference Consent and Provenance detailing change to \nServiceRequest)
 alt Success
-GOMS --> EPR : Transaction Response Bundle containing created resources
+GOMS --> EPR : Transaction Response Bundle containing \ncreated resources
 opt Event Notification
-GOMS -> LIMS : POST event-notification Bundle (Test Order updated)
+GOMS -> LIMS : POST event-notification Bundle \n(Test Order updated)
 end
 else Failure
-GOMS --> EPR : Transaction Response Bundle containing OperationOutcomes with diagnostics
+GOMS --> EPR : Transaction Response Bundle containing \nOperationOutcomes with diagnostics
 end
-@enduml
-</plantuml>
-
-#### Addition of Specimen
-
-<plantuml>
-@startuml
-Participant EPR as "Requester (EPR)"
-Participant GOMS as "Genomic Order Management Service Broker"
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)"
+== Addition of Specimen ==
 alt Transaction
-EPR -> GOMS : POST Specimen Transaction Bundle \n(including update to ServiceRequest.supportingInfo to reference Specimen)
+EPR -> GOMS : POST Specimen Transaction Bundle \n(including update to ServiceRequest.supportingInfo to reference \nSpecimen)
 alt Success
 GOMS -> GOMS : Addition of Specimen to relevant Tasks \n(could be performed manually)
-GOMS --> EPR : Transaction Response Bundle containing created resources
+GOMS --> EPR : Transaction Response Bundle containing \ncreated resources
 opt Event Notification
-GOMS -> LIMS : POST event-notification Bundle (Test Order updated)
+GOMS -> LIMS : POST event-notification Bundle \n(Test Order updated)
 end
 else Failure
-GOMS --> EPR : Transaction Response Bundle containing OperationOutcomes with diagnostics
+GOMS --> EPR : Transaction Response Bundle containing \nOperationOutcomes with diagnostics
 end
 else Single Resource
 EPR -> GOMS : POST Specimen 
 alt Success
 GOMS --> EPR : Response with created resource
-EPR -> GOMS : POST Transaction Bundle updating ServiceRequest.supportingInfo \nand adding Provenance
+EPR -> GOMS : POST Transaction Bundle updating \nServiceRequest.supportingInfo and adding Provenance
 alt Success
 GOMS -> GOMS : Addition of Specimen to relevant Tasks \n(could be performed manually)
-GOMS --> EPR : Transaction Response Bundle containing created resources
+GOMS --> EPR : Transaction Response Bundle containing \ncreated resources
 opt Event Notification
-GOMS -> LIMS : POST event-notification Bundle (Test Order updated)
+GOMS -> LIMS : POST event-notification Bundle \n(Test Order updated)
 end
 else Failure
-GOMS --> EPR : Transaction Response Bundle containing OperationOutcomes with diagnostics
+GOMS --> EPR : Transaction Response Bundle containing \nOperationOutcomes with diagnostics
 end
 else Failure
 GOMS --> EPR : OperationOutcome response with diagnostics
 end
 end
-
-@enduml
-</plantuml>
-
-#### Creation of new Task
-
-<plantuml>
-@startuml
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)" order 20
-Participant GOMS as "Genomic Order Management Service Broker" order 10
+== Creation of new Task ==
 LIMS -> GOMS : POST Task referencing ServiceRequest
 alt Success
 GOMS --> LIMS : Response with created resource
@@ -123,165 +86,153 @@ end
 </plantuml>
 
 ## Read
-From initial design work, it is expected the main use case will be labs and requestors polling the central service for test orders and reports, including associated clinical information, as well as polling the system for the current state of Tasks and Task update history, through associated AuditEvents and Provenance resources.
+From initial design work, it is expected the main use case will be labs and requestors polling the central service for test orders and reports, including associated clinical information, as well as polling the system for the current state of Tasks and Task update history, through associated AuditEvents and Provenance resources. 
+
+Retrieval of sets of resources using {{pagelink:Home/FHIRAssets/GraphDefinitions}} are also planned. The complete set of resources/operations supported are listed within the {{pagelink:Home/FHIRAssets/CapabilityStatements/Instance.page.md}} page. All resources are expected to be compliant with UK Core FHIR R4.
+
+### Search
+
+#### Supported Functionality
+* The search parameters to be supported by the Genomic Order Management system are defined within the {{pagelink:Home/FHIRAssets/CapabilityStatements/Instance.page.md}} page. Custom search parameters defined within {{pagelink:Home/FHIRAssets/SearchParameters}} will also be supported, such as a search parameter for supporting retrieval of supporting-info on ServiceRequests. 
+
+* Multiple _include/_revinclude parameters will be supported within a single URL search string. The :iterate modifier will also be supported to enable traversal of multiple levels of references in searches e.g. `GET [base]/MedicationDispense?_include=Medication:prescription&_include:iterate=MedicationRequest:requester&criteria...`. 
+
+* The `_history` and `_lastUpdated` parameters will be supported as part of history and audit provenance needs. 
+
+* Token type searching for coded values based on system and/or code e.g. http://snomed.info/sct%7C3738000 will be supported, to enable unabiguous searching of codes.
+
+* Date and number based prefixes, such as `eq`, `gr`, `lt` will be supported, to enable retrieval of resources based on date/time and quantity ranges.
+
+* Chaining, e.g. `ServiceRequest?subject:Patient.name` will be supported to aid building of complex search criteria.
+
+* Search result modifiers such as `_count`, `_total` and `_sort` will be supported to allow clients to tailor search results.
+
+#### Unsupported Functionality
+* Inclusion of external references (resources not hosted on the server) through the _include parameter will not be supported as there will be no guarantee they resolve or that they will return valid FHIR. While this may mean clients will need to perform multiple calls to construct a complete set of data, this ensures consistency of the responses from the broker. Within this Implementation Guide we expect test requesters to submit all relevant information for a test order to the broker so there should be very few instances where an external reference is used.
+
+* No use cases requiring use of `_query` or `$operation` type searches have been elaborated so these are not planned to be supported as of the time of publication. Equally, usage of tags to encode data, and use of the `_tag` parameter will not be supported until use cases detailing their need are elaborated.
+
+* Search modifiers such as `:contains`, `:missing`, `:not`, `:not-in`, etc. will not be supported as there are currently no use cases for supporting text-based/fuzzy searching. 
 
 ### Common Patterns
 
-#### Searching for Tasks by Org (Polling for tasks)
-
 <plantuml>
 @startuml
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)" order 20
-Participant GOMS as "Genomic Order Management Service Broker" order 10
+== Searching for Tasks by Org (Polling for tasks) ==
+Participant EPR as "Requester (EPR)"
+Participant GOMS as "Genomic Order Management Service Broker"
+Participant LIMS as "Fulfilling Organization (GLH/LIMS)"
 alt Only matching resources
 LIMS -> GOMS : GET Task with owner=<ods_code> 
-GOMS --> LIMS : Searchset Bundle response with matching resources
+GOMS --> LIMS : Searchset Bundle response with matching \nresources
 else Additional includes
-LIMS -> GOMS : GET Task with owner=<ods_code> and _include=Task:focus
-GOMS --> LIMS : Searchset Bundle response with matching resources \nand included referenced ServiceRequests
+LIMS -> GOMS : GET Task with owner=<ods_code> and \n_include=Task:focus
+GOMS --> LIMS : Searchset Bundle response with matching \nresources and included referenced ServiceRequests
 end
-@enduml
-</plantuml>
-
-#### Searching for ServiceRequest by Patient
-
-<plantuml>
-@startuml
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)" order 20
-Participant GOMS as "Genomic Order Management Service Broker" order 10
+== Searching for ServiceRequest by Patient ==
 LIMS -> GOMS : GET ServiceRequest with subject=<nhs_number> 
-GOMS --> LIMS : Searchset Bundle response with matching resources
-@enduml
-</plantuml>
-
-#### Retrieving Test Orders
-
-<plantuml>
-@startuml
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)" order 20
-Participant GOMS as "Genomic Order Management Service Broker" order 10
+GOMS --> LIMS : Searchset Bundle response with matching \nresources
+== Retrieving Test Orders ==
 opt
 LIMS -> GOMS : Search for ServiceRequest to get ID 
 end
-LIMS -> GOMS : GET ServiceRequest/<id>/ with $graph?graph=genomics-test-order 
-GOMS --> LIMS : Collection Bundle response with resources referenced in the graph
+LIMS -> GOMS : GET ServiceRequest/<id>/ with \n$graph?graph=genomics-test-order 
+GOMS --> LIMS : Collection Bundle response with resources \nreferenced in the graph
+== Retrieving DiagnosticReport by ID ==
+alt Using report endpoint
+EPR -> GOMS : Search for DiagnosticReport to get ID 
+else Using task endpoint
+EPR -> GOMS : Search for Tasks with focus=ServiceRequest
+EPR -> EPR : Parse link in Task.output to get ID
+end
+alt Unstructured Report
+EPR -> GOMS : GET DiagnosticReport using ID
+GOMS --> EPR : DiagnosticReport
+EPR -> EPR : Follow link to retrieve PDF \nor decode base65 encoded data
+else Structured Reports
+EPR -> GOMS : GET DiagnosticReport/<id>/ \n with $graph?graph=genomics-result 
+GOMS --> EPR : Collection Bundle response with resources \nreferenced in the graph
+end
 @enduml
 </plantuml>
-
-#### Retrieving DiagnosticReport by ID
 
 ## Update
 A large part of the interactions with the central service, over the course of order fulfilment, will be updates to Task resources, which constitute status updates. These events will be captured by the central broker through AuditEvent resources. Additionally, ServiceRequest and DiagnosticReport resources may be updated if tests need to be changed or new data added. Reasons for changed SHOULD be captured through Provenance resources. The impact these updates have on work-in-progress will be defined within Business Rules on the central broker (including how cancellations are managed).
 
 ### Common Patterns
 
-#### Update Task Status
-
 <plantuml>
 @startuml
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)" order 20
-Participant GOMS as "Genomic Order Management Service Broker" order 10
+== Update Task Status ==
+Participant EPR as "Requester (EPR)"
+Participant GOMS as "Genomic Order Management Service Broker"
+Participant LIMS as "Fulfilling Organization (GLH/LIMS)"
+Participant LIMS2 as "Sendaway Organization (remote GLH/LIMS)"
 opt
 LIMS -> GOMS : Search for Task to get ID 
-GOMS --> LIMS : Searchset Bundle response with matching resources
+GOMS --> LIMS : Searchset Bundle response with matching \nresources
 end
-LIMS -> GOMS : PUT Task with new status/businessStatus/input/output
+LIMS -> GOMS : PUT Task with new \nstatus/businessStatus/input/output
 alt Success
-GOMS -> GOMS : Create AuditEvent to track change \nand increment resource version
+GOMS -> GOMS : Create AuditEvent to track change and \nincrement resource version
 GOMS --> LIMS : Response with updated resource
 else Failure
 GOMS --> LIMS : OperationOutcome response with diagnostics \ne.g. unsupported state transition
 end
-@enduml
-</plantuml>
-
-#### Reassign Task
-
-<plantuml>
-@startuml
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)" order 20
-Participant LIMS2 as "Sendaway Organization (remote GLH/LIMS)" order 30
-Participant GOMS as "Genomic Order Management Service Broker" order 10
+== Reassign Task ==
 opt
 LIMS -> GOMS : Search for Task to get ID 
-GOMS --> LIMS : Searchset Bundle response with matching resources
+GOMS --> LIMS : Searchset Bundle response with matching \nresources
 end
 LIMS -> GOMS : PUT Task with new owner
 alt Success
-GOMS -> GOMS : Create AuditEvent to track change \nand increment resource version
+GOMS -> GOMS : Create AuditEvent to track change and \nincrement resource version
 GOMS --> LIMS : Response with updated resource
 alt Polling
 LIMS2 -> GOMS : GET Task with owner=<ods_code>
-GOMS --> LIMS2 : Searchset Bundle response with matching resources
+GOMS --> LIMS2 : Searchset Bundle response with matching \nresources
 else Event Notification
-GOMS -> LIMS2 : POST event-notification Bundle (new tasks for org)
+GOMS -> LIMS2 : POST event-notification Bundle \n(new tasks for org)
 end
 else Failure
 GOMS --> LIMS : OperationOutcome response with diagnostics \ne.g. unsupported state transition
 end
-@enduml
-</plantuml>
-
-#### Completion of Task with Output Reference
-
-<plantuml>
-@startuml
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)" order 30
-Participant GOMS as "Genomic Order Management Service Broker" order 20
-Participant EPR as "Requester (EPR)" order 10
+== Completion of Task with Output Reference ==
 opt
 LIMS -> GOMS : Search for Task to get ID 
-GOMS --> LIMS : Searchset Bundle response with matching resources
+GOMS --> LIMS : Searchset Bundle response with matching \nresources
 end
-LIMS -> GOMS : POST Transaction Bundle containing Task with new status \nand resource referenced via output
+LIMS -> GOMS : POST Transaction Bundle containing Task with \nnew status and resource referenced via output
 alt Success
-GOMS -> GOMS : Create AuditEvent to track change \nand increment resource version
+GOMS -> GOMS : Create AuditEvent to track change and \nincrement resource version
 GOMS -> GOMS : Mark follow on Tasks as requested \n(if prerequisites are satisfied)
-GOMS --> LIMS : Transaction Response Bundle containing updated resources
-opt Event Notification if the update constitutes a final report
-GOMS -> EPR : POST event-notification Bundle (report available)
+GOMS --> LIMS : Transaction Response Bundle containing \nupdated resources
+opt Event Notification if the update constitutes a final \nreport
+GOMS -> EPR : POST event-notification Bundle \n(report available)
 end
 else Failure
-GOMS --> LIMS : Transaction Response Bundle containing OperationOutcomes with diagnostics
+GOMS --> LIMS : Transaction Response Bundle containing \nOperationOutcomes with diagnostics
 end
-@enduml
-</plantuml>
-
-#### Update of Test Order
-
-<plantuml>
-@startuml
-Participant EPR as "Requester (EPR)"
-Participant GOMS as "Genomic Order Management Service Broker"
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)"
-EPR -> GOMS : POST Transaction Bundle (including update to ServiceRequest\n and Provenance detailing change to ServiceRequest)
+== Update of Test Order ==
+EPR -> GOMS : POST Transaction Bundle \n(including update to ServiceRequest and \nProvenance detailing change to \nServiceRequest)
 alt Success
 GOMS -> GOMS : Updates to associated Tasks \n(e.g. on Order Cancellation)
-GOMS --> EPR : Transaction Response Bundle containing updated resources
+GOMS --> EPR : Transaction Response Bundle containing \nupdated resources
 opt Event Notification
-GOMS -> LIMS : POST event-notification Bundle (Test Order updated)
+GOMS -> LIMS : POST event-notification Bundle \n(Test Order updated)
 end
 else Failure
-GOMS --> EPR : Transaction Response Bundle containing OperationOutcomes with diagnostics
+GOMS --> EPR : Transaction Response Bundle containing \nOperationOutcomes with diagnostics
 end
-@enduml
-</plantuml>
-
-#### Update of Genomic Report
-
-<plantuml>
-@startuml
-Participant EPR as "Requester (EPR)"
-Participant GOMS as "Genomic Order Management Service Broker"
-Participant LIMS as "Fulfilling Organization (GLH/LIMS)"
-LIMS -> GOMS : POST Transaction Bundle (including update to DiagnosticReport\n and Provenance detailing change to report)
+== Update of Genomic Report ==
+LIMS -> GOMS : POST Transaction Bundle \n(including update to DiagnosticReport and \nProvenance detailing change to \nreport)
 alt Success
-GOMS --> LIMS : Transaction Response Bundle containing updated resources
+GOMS --> LIMS : Transaction Response Bundle containing \nupdated resources
 opt Event Notification
-GOMS -> EPR : POST event-notification Bundle (report updated)
+GOMS -> EPR : POST event-notification Bundle \n(report updated)
 end
 else Failure
-GOMS --> LIMS : Transaction Response Bundle containing OperationOutcomes with diagnostics
+GOMS --> LIMS : Transaction Response Bundle containing \nOperationOutcomes with diagnostics
 end
 @enduml
 </plantuml>

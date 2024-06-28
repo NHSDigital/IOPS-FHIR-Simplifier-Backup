@@ -11,6 +11,8 @@ In the linked tables below the API interactions which can be used to create, upd
 **Note:** The “Create ServiceRequest”, “Create Task” and “Create Specimen” are all FHIR resource level interactions and could all be performed within one transaction to reduce
 the number of API calls required, for example if a GLH creates a new specimen, which they are going to send to an LGL, they should POST the new Specimen, Task and all related resources in one request.
 
+It is expected that the CapabilityStatements will be retrievable from the central Genomic Order Management broker through the `/metadata` endpoint
+
 <!--
 @```
 from
