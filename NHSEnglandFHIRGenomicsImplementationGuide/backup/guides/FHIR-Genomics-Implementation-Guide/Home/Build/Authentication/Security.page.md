@@ -12,4 +12,3 @@ Security of data and the service will be done to conform to the security standar
 It is expected only active healthcare professionals, within particular specialties, will be able to order Genetic tests and only recipient GLHs/labs or requesting clinicians will be able to view tasks related to a test order. 
 
 Finally, it is expected only clinicians responsible for interpretation of a genetic test, or the clinician responsible for care of the patient will be able to access the Diagnostic Report produced, subject to standard break-glass procedures.
-

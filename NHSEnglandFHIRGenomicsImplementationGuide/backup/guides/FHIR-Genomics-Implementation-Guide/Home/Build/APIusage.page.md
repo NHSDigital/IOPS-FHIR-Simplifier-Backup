@@ -49,3 +49,11 @@ For more significant changes such as a standard or a new major version of the FH
 The service will most likely need to support both the existing version and new version with a migration plan and a plan to deprecate the old API version.
 
 Some internal transformation between versions may be possible and desirable, as long as transformation introduces no additional clinical risk. Transformation is desirable when there are significant benefits from decoupling supplier migration, with the aim of preventing loss of access to old or new data during the migration process and to reduce complexity and cost on the supplier development side, which filters back to the purchasing NHS services and commissioners.
+
+## API Performance
+
+Details regarding API performance, e.g. maximum trnasactions per second or storage scalability are defined within an external Non-Functional Requirements document so will not be repeated within this IG.
+
+## Data Retension Policy
+
+Retension of transactional data will follow government guidance regarding data retension of sensitive information. Long-term storage of patient Genomic information is expected to be covered within the Unified Genomic Record.
