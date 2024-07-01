@@ -3,10 +3,15 @@ topic: R4BundleExampleUrineMCSRequest
 subject: Pathology-Bundle-Urine-MCS-01-Request-Example
 ---
 ### PATH-R4-17: Bundle Example - Urine Microscopy, Culture and Sensitivity Request
-
-
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
-    
+<div class="tab fhirTree">
+    <button class="tablinks active" onclick="openTab(event, 'Example')">Example</button>
+    <button class="tablinks" onclick="openTab(event, 'Notes')">Notes</button>
+    <button class="tablinks" onclick="openTab(event, 'DataModel')">Data Model</button>
+    <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
+    <button class="tablinks" onclick="openTab(event, 'JSON')">JSON</button>
+    <button class="tablinks" onclick="openTab(event, 'Tree')">Tree</button>
+    <button class="tablinks" onclick="openTab(event, 'Table')">Table</button>
+</div>    
 <div id="Example" role="tabpanel" class="tabcontent"  style="display:block"> 
   {{render:path-mockup-MCS-01-request}}
 </div>
@@ -24,5 +29,4 @@ subject: Pathology-Bundle-Urine-MCS-01-Request-Example
 <br>
 {{render:path-data-model-MCS-01-request}}
 </div>
-
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}

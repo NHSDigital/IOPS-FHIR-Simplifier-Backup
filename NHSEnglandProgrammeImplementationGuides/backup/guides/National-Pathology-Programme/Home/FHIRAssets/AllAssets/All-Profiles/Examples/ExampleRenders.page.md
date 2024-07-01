@@ -9,4 +9,4 @@
 </div>    
 <div id="Table" role="tabpanel" class="tabcontent expandedexample">
    {{table}}
-</div>  
+</div>
