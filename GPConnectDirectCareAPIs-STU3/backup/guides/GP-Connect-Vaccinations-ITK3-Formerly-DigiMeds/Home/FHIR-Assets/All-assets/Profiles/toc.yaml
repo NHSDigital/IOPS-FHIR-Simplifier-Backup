@@ -6,8 +6,8 @@
   filename: Profile-CareConnect-ITK-Header-Organization-1
 - name: 'Profile: ITK-Document-Bundle-1'
   filename: Profile-ITK-Document-Bundle-1
-- name: 'Profile: CareConnect-Composition-1'
-  filename: Profile-CareConnect-Composition-1
+- name: 'Profile: CareConnect-ITK-DM-Immunization-Composition-1'
+  filename: Profile-CareConnect-ITK-DM-Immunization-Composition-1
 - name: 'Profile: CareConnect-Patient-1'
   filename: Profile-CareConnect-Patient-1
 - name: 'Profile: CareConnect-Organization-1'
