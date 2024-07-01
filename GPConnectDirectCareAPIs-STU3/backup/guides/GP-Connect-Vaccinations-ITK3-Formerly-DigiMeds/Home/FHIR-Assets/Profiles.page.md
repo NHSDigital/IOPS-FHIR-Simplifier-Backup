@@ -12,7 +12,7 @@
         <!-- ITK-Message-Bundle-1 -->
         <tr>
             <td class="nhsd-t-body">
-                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--ITK-Message-Bundle-1}}
+                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-ITK-Document-Bundle-1}}
             </td>
             <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>
             <td class="nhsd-t-body"><code>1..1</code></td>
@@ -20,7 +20,7 @@
         <!-- ITK-MessageHeader-2 -->
         <tr>
             <td class="nhsd-t-body">
-                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--ITK-MessageHeader-2}}
+                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-ITK-MessageHeader-2}}
             </td>
             <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>
             <td class="nhsd-t-body"><code>1..1</code></td>
@@ -28,7 +28,7 @@
         <!-- ITK-CareConenct-Header-Organization-1 -->
         <tr>
             <td class="nhsd-t-body">
-                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-ITK-Header-Organization-1}}
+                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-CareConnect-ITK-Header-Organization-1}}
             </td>
             <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>
             <td class="nhsd-t-body"><code>1..1</code></td>
@@ -36,12 +36,12 @@
         <!-- ITK-DocumentBundle-1 -->
         <tr>
             <td class="nhsd-t-body">
-                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--ITK-Document-Bundle-1 }}
+                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-ITK-Document-Bundle-1 }}
             </td>
             <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>
             <td class="nhsd-t-body"><code>1..1</code></td>
         </tr>
-        <!-- CareConnect-Composition-1 -->
+        <!-- CareConnect-ITK-DM-Immunization-Composition-1 -->
         <tr>
             <td class="nhsd-t-body">
                 {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-Composition-1}}
