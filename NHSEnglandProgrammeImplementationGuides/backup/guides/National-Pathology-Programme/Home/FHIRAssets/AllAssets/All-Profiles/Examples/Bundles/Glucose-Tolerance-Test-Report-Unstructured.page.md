@@ -3,9 +3,15 @@ topic: R4BundleExampleGTTReportUnstructured
 subject: Pathology-Bundle-GTT-Unstructured-Report-Example
 ---
 ### PATH-R4-16a: Bundle Example - Glucose Tolerance Test  Report (Unstructured)
-
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleTabs.page.md}}
-    
+<div class="tab fhirTree">
+    <button class="tablinks active" onclick="openTab(event, 'Example')">Example</button>
+    <button class="tablinks" onclick="openTab(event, 'Notes')">Notes</button>
+    <button class="tablinks" onclick="openTab(event, 'DataModel')">Data Model</button>
+    <button class="tablinks" onclick="openTab(event, 'XML')">XML</button>
+    <button class="tablinks" onclick="openTab(event, 'JSON')">JSON</button>
+    <button class="tablinks" onclick="openTab(event, 'Tree')">Tree</button>
+    <button class="tablinks" onclick="openTab(event, 'Table')">Table</button>
+</div>    
 <div id="Example" role="tabpanel" class="tabcontent"  style="display:block"> 
    {{render:path-mockup-GTT-report}}
 </div>
@@ -25,5 +31,4 @@ subject: Pathology-Bundle-GTT-Unstructured-Report-Example
     <br>
     {{render:path-data-model-GTT-unstructured-report}}
 </div>
-
 {{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}

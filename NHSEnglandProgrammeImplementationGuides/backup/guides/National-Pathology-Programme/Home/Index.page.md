@@ -141,17 +141,38 @@ Refer to the following related implementation guidance:
                         </div>
                     </a>
                 </article>
-           </div>
-		   <!-- Genomics -->
+            </div>
+            <!-- Genomics -->
             <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
                 <article class="nhsd-m-card">
                     <a href="https://simplifier.net/guide/fhir-genomics-implementation-guide?version=current" class="nhsd-a-box-link "
-                        aria-label="Read the FHIR Genomics Implementation Guid ">
+                        aria-label="Read the FHIR Genomics Implementation Guide">
                         <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
                                     <h3>FHIR Genomics IG</h3>
                                     <p>FHIR Genomics Implementation Guide.</p>
+                                </div>
+                                <div class="nhsd-m-card__button-box">
+                                    <span class="nhsd-a-button nhsd-a-button--invert">
+                                        <span class="nhsd-a-button__label">Find out more</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <!-- HL7 Europe Laboratory Report -->
+            <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
+                <article class="nhsd-m-card">
+                    <a href="https://hl7.eu/fhir/laboratory/" class="nhsd-a-box-link "
+                        aria-label="Read the HL7 Europe Laboratory Report Guide">
+                        <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
+                            <div class="nhsd-m-card__content_container">
+                                <div class="nhsd-m-card__content-box">
+                                    <h3>HL7 Europe Laboratory Report IG</h3>
+                                    <p>FHIR Implementation Guide for representing laboratory reports in a European context.</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
                                     <span class="nhsd-a-button nhsd-a-button--invert">

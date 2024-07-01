@@ -18,12 +18,12 @@ The following terms are of particular relevance to this implementation guide:
         <tr>
             <td>EDIFACT</td>
             <td>Electronic Data Interchange For Administration, Commerce and Transport</td>
-            <td>An international standard for electronic data interchange, used as the basis for the <b>PMIP EDIFACT (NHS003)</b> messaging specification.</td>
+            <td>An international standard for exchanging information electronically, used as the basis for the <b>PMIP EDIFACT (NHS003)</b> messaging specification.</td>
         </tr>
         <tr>
             <td>FHIR</td>
             <td>Fast Healthcare Interoperability Resources</td>
-            <td>An HL7 standard for exchanging healthcare information electronically.</td>
+            <td>A standard for exchanging healthcare information electronically, developed by <b>HL7 International</b>. The first formal release of FHIR (DSTU 1) was published in 2014.</td>
         </tr>
         <tr>
             <td>HCP</td>
@@ -31,14 +31,14 @@ The following terms are of particular relevance to this implementation guide:
             <td>Any healthcare worker responsible for the care of patients.</td>
         </tr>
         <tr>
-            <td>HL7</td>
-            <td>Health Level 7</td>
-            <td>A set of international standards that are used for the transfer of clinical and administrative data between software systems used by healthcare providers.</td>
+            <td>HL7 International</td>
+            <td>Health Level 7 International</td>
+            <td>An organisation that provides standards relating to the exchange, integration, sharing, and retrieval of electronic healthcare information.</td>
         </tr>
         <tr>
             <td>HL7v2.x</td>
             <td>Health Level 7 v2.x</td>
-            <td>A set of related HL7 standards for electronic data exchange in healthcare environments, including pathology.</td>
+            <td>A set of standards for exchanging heathcare information electronically, developed by <b>HL7 International</b>. The first formal release of HL7v2 (HL7v2.0) was published in 1988.</td>
         </tr>
         <tr>
             <td>LIMS</td>
