@@ -8,7 +8,7 @@
   ],
   "jurisdiction": "urn:iso:std:iso:3166:-2:GB-ENG",
   "dependencies": {
-    "fhir.r4.ukcore.stu2": "2.0.0",
+    "fhir.r4.ukcore.stu1": "0.5.1",
     "hl7.fhir.r4.core": "4.0.1"
   }
 }
