@@ -18,8 +18,6 @@
   filename: status.page.md
 - name: type
   filename: type.page.md
-- name: class
-  filename: class.page.md
 - name: subject
   filename: subject.page.md
 - name: encounter
@@ -30,15 +28,9 @@
   filename: author.page.md
 - name: title
   filename: title.page.md
-- name: confidentiality
-  filename: confidentiality.page.md
-- name: attester
-  filename: attester.page.md
 - name: custodian
   filename: custodian.page.md
 - name: relatesTo
   filename: relatesTo.page.md
-- name: event
-  filename: event.page.md
 - name: section
   filename: section.page.md

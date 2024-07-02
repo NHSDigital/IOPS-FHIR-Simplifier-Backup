@@ -13,7 +13,7 @@ More information can be found in the [MESH documentation](https://digital.nhs.uk
 
 - `mex-localid` **MUST** contain the ODS code of the sending organisation
 
-- `mex-workflowid` **MUST** contain the string `GPCONNECT_SEND_DOCUMENT`
+- `mex-workflowid` **MUST** contain the string `DIGIMED_FLU_VAC`
 
 - `mex-localid` **MUST** contain the ODS code of the sending organisation
 

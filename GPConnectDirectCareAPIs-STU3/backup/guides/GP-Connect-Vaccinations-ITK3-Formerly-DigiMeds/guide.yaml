@@ -1,5 +1,5 @@
-title: GP Connect - Vaccinations (ITK3) | Formerly DigiMeds
-description: GP Connect - Send Document capability for FHIR® STU3 (CareConnect) Implementation Guide
-version: 2.0.1-public-beta
+title: GP Connect / DigiMeds - Vaccinations (ITK3)
+description: GP Connect Vaccinations (ITK3) formerly known as Digital medicines (Digimeds) Vaccinations
+version: 1.3.0-private-beta
 style-root: project
 style-name: NHSDigital

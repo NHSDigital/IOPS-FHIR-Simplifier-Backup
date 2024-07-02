@@ -12,7 +12,7 @@ The `type` **MUST** have a fixed value of `message`, from the `BundleType` [valu
 <h5><ins>Example</ins></h5>
 
 ```xml
-<type value="message" />
+<type value="document" />
 ```
 
 ---

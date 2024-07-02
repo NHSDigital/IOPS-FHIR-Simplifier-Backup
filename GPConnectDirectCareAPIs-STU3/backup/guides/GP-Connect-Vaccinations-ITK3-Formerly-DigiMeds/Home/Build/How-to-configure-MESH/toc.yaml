@@ -1,7 +1,7 @@
+- name: Index
+  filename: Index.page.md
 - name: How to configure MESH
   filename: How-to-configure-MESH.page.md
-- name: MESH message routing
-  filename: MESH-message-routing.page.md
 - name: Workflow groups and ID
   filename: Workflow-groups-and-ID.page.md
 - name: MESH API configuration

@@ -1,5 +1,5 @@
-- name: Design principles
-  filename: Design-principles.page.md
+- name: Index
+  filename: Index.page.md
 - name: Business process integration
   filename: Business-process-integration.page.md
 - name: 'Communication paradigm: asynchronous messaging'

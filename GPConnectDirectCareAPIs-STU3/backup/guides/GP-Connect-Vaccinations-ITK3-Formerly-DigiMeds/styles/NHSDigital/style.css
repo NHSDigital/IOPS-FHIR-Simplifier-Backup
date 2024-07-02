@@ -310,3 +310,24 @@ ul.dropdown-menu {
     padding: 10px;
     margin-bottom: 15px;
 }
+
+
+/* DigiMeds HTML render styling */
+.section-entry-block > .section-entry-heading {
+  background: #005EB8;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -.0277rem;
+  line-height: 1.5454;
+  padding: 10px;
+}
+
+.section-entry-block th {
+    color: #231f20;
+    background: #f6f8f8;
+    font-weight: 600;
+}
+
+.section-entry-block td::first-letter {
+  text-transform: capitalize;
+}

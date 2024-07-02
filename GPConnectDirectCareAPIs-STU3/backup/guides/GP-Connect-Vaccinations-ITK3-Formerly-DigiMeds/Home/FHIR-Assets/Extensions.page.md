@@ -12,7 +12,7 @@
         <!-- Extension-ITK-MessageHandling-2 -->
         <tr>
             <td class="nhsd-t-body">
-                {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension--Extension-ITK-MessageHandling-2}}
+                {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-ITK-MessageHandling-2}}
             </td>
             <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>
             <td class="nhsd-t-body"><code>1..1</code></td>

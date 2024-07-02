@@ -2,8 +2,6 @@
   filename: Index.page.md
 - name: Related links
   filename: Related-links.page.md
-- name: Elements required for capability
-  filename: Elements-required-for-capability.page.md
 - name: id
   filename: id.page.md
 - name: meta.lastUpdated
@@ -16,11 +14,17 @@
   filename: type.page.md
 - name: entry
   filename: entry.page.md
-- name: entry (CareConnect-Composition-1)
-  filename: entry-CareConnect-Composition-1.page.md
+- name: entry (CareConnect-ITK-DM-Immunization-Composition-1)
+  filename: entry-CareConnect-ITK-DM-Immunization-Composition-1.page.md
 - name: entry (CareConnect-Patient-1)
   filename: entry-CareConnect-Patient-1.page.md
 - name: entry (CareConnect-Practitioner-1)
   filename: entry-CareConnect-Practitioner-1.page.md
+- name: entry (CareConnect-PractitionerRole-1)
+  filename: entry-CareConnect-PractitionerRole-1.page.md
 - name: entry (CareConnect-Organization-1)
   filename: entry-CareConnect-Organization-1.page.md
+- name: entry (CareConnect-ITK-Encounter-1)
+  filename: entry-CareConnect-ITK-Encounter-1.page.md
+- name: entry (CareConnect-ITK-DM-Immunization-1)
+  filename: entry-CareConnect-ITK-DM-Immunization-1.page.md
