@@ -389,7 +389,7 @@ It is expected that all Observations SHOULD include the effective time the obser
 
 <a name="value"></a>
 #### value\[x\]
-The value element SHOULD use the most appropriate data type for the observation in question. Using preferred CodeSystems as specified within HL7 International FHIR R4 or the UK Core. For asserting absence of a particular condition/situation, the finding SHOULD be specified within the 'code' element and 'valueBoolean' set to 'false'. For an assertion of a particular situation being present, e.g. a Condition or Procedure having been performed, these SHOULD be collected within the relevant clinical resources, alongside additional information needed to inform interpretation.
+The value element SHOULD use the most appropriate data type for the observation in question. Using preferred CodeSystems as specified within HL7 International FHIR R4 or the UK Core. For asserting absence of a particular condition/situation, the finding SHOULD be specified within the 'code' element and 'valueBoolean' set to 'false' or 'valueCodeableConcept' set to an appropriate qualifier value code from SNOMED CT. For an assertion of a particular situation being present, e.g. a Condition or Procedure having been performed, these SHOULD be collected within the relevant clinical resources, alongside additional information needed to inform interpretation.
 ```json
 "valueQuantity": {
         "value": 6.5,
