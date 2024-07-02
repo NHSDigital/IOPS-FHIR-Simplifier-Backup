@@ -1,22 +1,14 @@
-- name: ValueSet-CPISFlagCode
-  filename: ValueSet-CPISFlagCode.page.md
-- name: ValueSet-FGMFlagCode
-  filename: ValueSet-FGMFlagCode.page.md
-- name: ValueSet-FlagConditionCategory
-  filename: ValueSet-FlagConditionCategory.page.md
-- name: ValueSet-FlagConditionCode
-  filename: ValueSet-FlagConditionCode.page.md
-- name: ValueSet-FlagConsentPurpose
-  filename: ValueSet-FlagConsentPurpose.page.md
-- name: ValueSet-FlagProvenanceRole
-  filename: ValueSet-FlagProvenanceRole.page.md
-- name: ValueSet-FlagProxyRole
-  filename: ValueSet-FlagProxyRole.page.md
-- name: ValueSet-PatientFlagCategory
-  filename: ValueSet-PatientFlagCategory.page.md
-- name: ValueSet-ProgrammeFlagCategory
-  filename: ValueSet-ProgrammeFlagCategory.page.md
-- name: ValueSet-ProgrammeFlagCode
-  filename: ValueSet-ProgrammeFlagCode.page.md
-- name: ValueSet-RAFlagCode
-  filename: ValueSet-RAFlagCode.page.md
+- name: England Flag Category Patient
+  filename: England-Flag-Category-Patient.page.md
+- name: England Flag Category Programme
+  filename: England-Flag-Category-Programme.page.md
+- name: England Flag Code Programme
+  filename: England-Flag-Code-Programme.page.md
+- name: England Flag Code RA
+  filename: England-Flag-Code-RA.page.md
+- name: England Flag Condition Category
+  filename: England-Flag-Condition-Category.page.md
+- name: England Flag Condition Code
+  filename: England-Flag-Condition-Code.page.md
+- name: England Flag Provenance Role
+  filename: England-Flag-Provenance-Role.page.md

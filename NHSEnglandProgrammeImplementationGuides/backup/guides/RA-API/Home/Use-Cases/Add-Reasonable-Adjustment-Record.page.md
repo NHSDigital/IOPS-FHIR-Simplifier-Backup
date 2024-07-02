@@ -1,8 +1,7 @@
 ## {{page-title}}
-
 ### Overview
 
-Patient consent must be obtained before recording any adjustment or impairment. See {{pagelink:Home/Use-Cases/Consent-to-share-Information.page.md}} for details of requirements around consent.
+For high level requirements, see {{pagelink:Home}}.
 
 ### Usecase
 After obtaining consent from a patient, a Reasonable Adjustment Record may be created.  This consists of a Flag resource containing an adjustment and a Condition resource may also optionally be created to record the details of an impairment.  
@@ -13,29 +12,30 @@ If a Reasonable Adjustment Record exists, a Flag resource designated as the pati
 @startuml
 
 skinparam actorStyle awesome
+left to right direction
 
+rectangle "Patient Flag"{
 actor Practitioner as pra
-package Consenter {
-  actor "Patient Advocate" as pad
-  actor Patient as pat
+usecase "Record" as record
+usecase "Add Reasonable Adjustment record" as add
 }
 
-usecase "Consent to share information" as CON
-usecase "Add Reasonable Adjustment record" as ADD
 
-pat -- CON
-pad -- CON
-pra -- CON
-pra -- ADD
+package "Patient or Proxy" {
+  actor Patient as pat
+  actor "Patient Advocate" as pad
+}
 
-CON <.. ADD : include
+usecase "Consult" as consult
+
+pat -- consult
+pra -- consult
+pad -- consult
+pra -- record
+record <.. add : include
 
 @enduml
 </plantuml>
-
-### Workflow
-
-A practitioner performs an examination and determines that a condition and/or an adjustment should be recorded.  If the patient does not consent, no details are recorded.  If the patient consents, then the adjustment is recorded, and optionally the condition as well.
 
 ### System Interactions
 
@@ -49,20 +49,14 @@ skinparam actorStyle hollow
 actor        "Practitioner"     as pra
 actor        "Patient"          as pat
 participant  "FHIR API"         as api
-entity       "Consent"          as con
 entity       "Patient Flag"     as flg
 entity       "Adjustment Flag"  as adj
 entity       "Condition"        as cod
 
 pra ->  pat : Examine patient
 pra ->  pat : Suggest adjustments
-pra <-- pat : Provide consent\nto share information
-
 pra ->  api : Record adjustment record (transaction Bundle)
 
-api ->  con : Create/update resource
-con ->  con : Validate
-api <-- con : return
 alt Validation failed
   api -> api : rollback
 end
@@ -97,24 +91,18 @@ pra <-- api : OperationOutcome
 
 * [Patient example](Patient-PatientExample1.html)
 
-The following set of examples constitute the individual associated resources with the intial addition of a flag for Reasonable Adjustment.  This includes the Consent resource where the patient has agreed to share information.  Also a patient Flag resource, the adjustment Flag resource and the associated Condition resource.  All resources have contained provenances.
+The following set of examples constitute the individual associated resources with the intial addition of a flag for Reasonable Adjustment.  This includes a patient Flag resource, the adjustment Flag resource and the associated Condition resource.  All resources have contained provenances.
 
 A transaction Bundle is also given that allows these resources (plus the patient) to be entered in an atomic traction.  It uses PUTs, where in the case of an intial update, it may be done as a [conditional update](https://www.hl7.org/fhir/http.html#cond-update)
 
-* [Consent](Consent-RAConsentExample1.html)
-* [Patient flag](Flag-RAPatientFlagExample1.html)
-* [Reasonable Adjustment flag 1](Flag-RAFlagExample1.html)
-* [Condition 1](Condition-RAConditionExample1.html)
-* [Transaction Bundle 1](Bundle-AddRARecordTransactionExample1.html)
+* {{pagelink:Home/Examples/RA-PatientFlag-Example.page.md}}
+* {{pagelink:Home/Examples/RA-Flag-Example.page.md}}
+* {{pagelink:Home/Examples/RA-Condition-Example.page.md}}
+* {{pagelink:Home/Examples/AddRARecordTransaction-Bundle-Example.page.md}}
 
 The following set of examples are for the same patient, and constitute an addition flag and condition.  The transaction Bundle here illustates an idempotent update by simply adding the new resources to the first transaction Bundle.
 
-* [Reasonable Adjustment flag 2](Flag-RAFlagExample2.html)
-* [Condition 2](Condition-RAConditionExample2.html)
-* [Transaction Bundle 2](Bundle-AddRARecordTransactionExample2.html)
+* {{pagelink:Home/Examples/RA-Flag2-Example.page.md}}
+* {{pagelink:Home/Examples/RA-Condition2-Example.page.md}}
+* {{pagelink:Home/Examples/UpdateRARecordTransaction-Bundle-Example.page.md}}
 
-### Relevant Documentation
-
-* [Bundle](https://hl7.org/fhir/r4/bundle.html)  
-* [Transaction](https://hl7.org/fhir/r4/http.html#transaction)  
-* [Upsert](https://hl7.org/fhir/r4/http.html#upsert)  

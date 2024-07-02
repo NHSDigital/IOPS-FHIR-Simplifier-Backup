@@ -1,49 +1,45 @@
 ## {{page-title}}
-
 ### Overview
 
-A patient may deny or revoke their consent to share adjustment or impairment information at any point. See {{pagelink:Home/Use-Cases/Consent-to-share-Information.page.md}} for details of requirements around consent.
+A patient and/or practitioner decide to remove the reasonable adjustment record.
+
+For high level requirements, see {{pagelink:Home}}.
  
 
 #### UseCase
-
-If a patient denys consent, then this must be recorded and all adjustment records must be removed.
 
 <plantuml>
 @startuml
 
 skinparam actorStyle awesome
+left to right direction
 
+rectangle "Patient Flag"{
 actor Practitioner as pra
-package Consenter {
-  actor "Patient Advocate" as pad
-  actor Patient as pat
+usecase "Record" as record
+usecase "Remove Reasonable Adjustment record" as add
 }
 
-usecase  "Consent to share information" as CON
-usecase "Remove Reasonable Adjustment record" as RET
 
-pat -- CON
-pad -- CON
-pra -- CON
-pra -- RET
-CON <.. RET : include
+package "Patient or Proxy" {
+  actor Patient as pat
+  actor "Patient Advocate" as pad
+}
 
+usecase "Consult" as consult
+
+pat -- consult
+pra -- consult
+pad -- consult
+pra -- record
+record <.. add : include
 
 @enduml
 </plantuml>
 
-
-#### Workflow
-<p>
-  
-A patient may revoke consent to share information about Reasonable Adjustment records and if they do, all records must be removed.
-
-</p>
-
 ### System Interactions
 
-In the following sequence diagram, a patient revokes consent.  The Consent resource is updated to reflect the patient dissent, and all adjustment records are deleted.
+In the following sequence diagram, a patient and/or practitioner decide to remove the reasonable adjustment record. All adjustment records are deleted.
 
 <plantuml>
 @startuml
@@ -53,32 +49,26 @@ skinparam actorStyle hollow
 actor        "Practitioner"     as pra
 actor        "Patient"          as pat
 participant  "FHIR API"         as api
-entity       "Consent"          as con
 entity       "Patient Flag"     as pfg
 entity       "Adjustment Flag"  as adj
 entity       "Condition"        as cod
 
-  pra ->  pat : Request consent
-  pra <-- pat : Deny/revoke consent
+  pra ->  pat : Consult
 
-  pra ->  api : Record consent was not given
-  api ->  con : Update resource
-  con ->  con : Validate
-  api <-- con : return
-  alt Validation failed
-    api -> api : rollback
-    pra <-- api : OperationOutcome
-  else Validation passed
+  alt Validation passed
     api ->  pfg : Delete adjustment patient flag
     api ->  adj : Delete adjustment flag(s)
     api ->  cod : Delete condition flag(s)
+    pra <-- api : OperationOutcome
+  else Validation failed
+    api -> api : rollback
     pra <-- api : OperationOutcome
   end
 
 @enduml
 </plantuml>
 
-The following resource types will be deleted from the record if consent is not granted i.e.
+The following resource types will be deleted from the record:
 
 * [Patient Flag](StructureDefinition-PatientFlag.html)  
 * [Programme Flag](StructureDefinition-ProgrammeFlag.html)  
@@ -86,13 +76,9 @@ The following resource types will be deleted from the record if consent is not g
 
 #### Example
 
-Multiple resources can be deleted using a transaction bundle.  This [example delete transaction Bundle](Bundle-RemoveRARecordExample.html) demonstates deleting the following resources
+Multiple resources can be deleted using a transaction bundle.  This {{pagelink:Home/Examples/RemoveRARecord-Bundle-Example.page.md}} demonstates deleting the following resources
 
-* [Patient Flag](Flag-RAPatientFlagExample1.html) example.  
-* [Programme Flag](Flag-RAFlagExample1.html) example.  
-* [Condition Flag](Condition-RAConditionExample1.html) example.  
+* {{pagelink:Home/Examples/PatientFlag-AlanMann-Example.page.md}} example.  
+* {{pagelink:Home/Examples/RA-Flag-Example.page.md}} example.  
+* {{pagelink:Home/Examples/RA-Condition-Example.page.md}} example.  
 
-### Relevant Documentation
-
-* [Bundle](https://hl7.org/fhir/r4/bundle.html)  
-* [Transaction](https://hl7.org/fhir/r4/http.html#transaction)  

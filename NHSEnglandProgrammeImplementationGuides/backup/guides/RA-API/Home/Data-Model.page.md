@@ -1,11 +1,6 @@
-## {{page-title}}
-
-  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
-  
-
 ### Patient Flag Data Model
 
-A Patient Flag API record is made up of a Flag resource and any other 'detail' resources that are provided as part of the Flag record in the specific domain.
+A Patient Flag API record is made up of a Flag resource and any other 'detail' resources that are provided as part of the Flag record in the specific domain 
 
 <plantuml>
 @startuml
@@ -33,34 +28,30 @@ entity "Resource (Any)" as res {
 pat ||--o{ pfg : has
 pat ||--o{ res : provides
 pfg ||..o{ res : details
-
 @enduml
 </plantuml>
 
 ### Reasonable Adjustments
 
-The RA record is made up of Consent, Condition, Flag and Provenances resources.  The Consent, Condition and Flag resources are linked via a Patient resource.  Provenance of all resources that make up an RA record must be stored.  This is modelled here as a contained resource, and as such has no lifetime outside of the constituent RA record resources.
+The RA record is made up of Flag, Provenance and Condition resources.  
+
+The presence of and entitlement to reasonable adjustments is represented by a PatientFlag resource. It can be interpreted as meaning 'this patient has reasonable adjustments'.
+
+Individual adjustments are represented as ProgrammeFlag resource instances. They can be interpreted as meaning e.g.'this patient requires Easy read'
+
+Patients may optionally request details of underlying conditions are recorded and shared where this enhances healthcare. These are represented as FlagCondition resources
+
+Provenance of all resources that make up an RA record must be stored.  This is modelled here as a contained resource, and as such has no lifetime outside of the constituent RA record resources.
 
 <plantuml>
 @startuml
+
 skinparam linetype ortho
 
 entity "Patient" as pat {
   *NHS Number : number <<generated>>
 }
-
-entity "Consent" as con {
-  *patient : Patient
-  *category : CodeableConcept
-  *contained : Provenance (Contained)
-}
-
-entity "Condition" as cod {
-  *patient : Patient
-  *code : CodeableConcept
-  *category : CodeableConcept
-  *contained : Provenance (Contained)
-}
+package "Patient Flags API" {
 
 entity "Patient Flag" as pfg {
   *patient : Patient
@@ -69,35 +60,63 @@ entity "Patient Flag" as pfg {
   *contained : Provenance (Contained)
 }
 
-entity "Adjustment Flag" as adj {
+package "Additional Detail" {
+
+entity "Condition" as cod {
   *patient : Patient
   *code : CodeableConcept
   *category : CodeableConcept
   *contained : Provenance (Contained)
 }
 
-entity "Provenance" as pro {
+entity "Programme Flag" as prfg {
+  *patient : Patient
+  *code : CodeableConcept
+  *category : CodeableConcept
+  *contained : Provenance (Contained)
+}
+
+entity "Provenance" as prov {
   *recorded : Date
   *agent : Agent (backbone)
 }
+}
+}
 
-pat ||..|| con : provides
 pat ||--o{ cod : has
-pat ||--o| pfg : "has"
-pat ||--o{ adj : has
-con ||--|| pro : contains
-cod ||--|| pro : contains
-pfg ||--|| pro : contains
-adj ||--|| pro : contains
+pat ||--o| pfg : has
+pat ||--o{ prfg : has
+cod ||--|| prov : contains
+pfg ||--|| prov : contains
+prfg ||--|| prov : contains
+pfg ||..o{ prfg : details
+
 @enduml
 </plantuml>
 
+
 ### Female Genital Mutilation
 
-The FGM record is made up of a Flag resource.
+The FGM record is made up of a PatientFlag resource.
+
+Authorised healthcare workers can:
+
+- query to determine if a patient has a FGM family history indicator
+- create a FGM family history indicator for a patient
+-- must be gender ‘female’, ‘unknown’ or indeterminate’ according to PDS
+-- must be under the age of 18 according to PDS
+-- must not already have a FGM family history indicator on FGM-IS
+-- must have a verified NHS number
+- delete a FGM family history indicator for a patient
+
+The FGM flag is interpreted as:
+- an indicator that a child with female genitalia has a family history of FGM
+- the date that the FGM assessment was carried out
+
 
 <plantuml>
 @startuml
+
 skinparam linetype ortho
 
 entity "Patient" as pat {
@@ -118,3 +137,5 @@ pat ||--o| pfg : "has"
 
 @enduml
 </plantuml>
+
+---
