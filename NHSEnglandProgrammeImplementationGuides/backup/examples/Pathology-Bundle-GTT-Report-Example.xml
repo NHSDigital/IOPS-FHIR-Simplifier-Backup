@@ -390,6 +390,9 @@
           <system value="http://unitsofmeasure.org" />
           <code value="mmol/L" />
         </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:bcee569d-c37d-4901-90b4-c9f27c4dafab" />
+        </specimen>
         <component>
           <code>
             <coding>
@@ -405,9 +408,6 @@
             <code value="min" />
           </valueQuantity>
         </component>
-        <specimen>
-          <reference value="urn:uuid:bcee569d-c37d-4901-90b4-c9f27c4dafab" />
-        </specimen>
       </Observation>
     </resource>
   </entry>
@@ -415,16 +415,16 @@
     <fullUrl value="urn:uuid:1dbcb7a9-4506-40f9-9908-fa0d32deeaa4" />
     <resource>
       <Observation>
+        <id value="1dbcb7a9-4506-40f9-9908-fa0d32deeaa4" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
         <!-- Glucose substance concentration at 60 minutes -->
         <extension url="http://hl7.org/fhir/StructureDefinition/observation-sequelTo">
           <valueReference>
             <reference value="urn:uuid:6b64af83-2ea2-4b0f-a6a7-17e5a7b27a31" />
           </valueReference>
         </extension>
-        <id value="1dbcb7a9-4506-40f9-9908-fa0d32deeaa4" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
-        </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
           <value value="9e1f413b-8242-4e37-b23c-233be79e75a6" />
@@ -461,6 +461,9 @@
           <system value="http://unitsofmeasure.org" />
           <code value="mmol/L" />
         </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:45f1e625-9af2-4920-9ac4-63b4d9d30bd0" />
+        </specimen>
         <component>
           <code>
             <coding>
@@ -476,9 +479,6 @@
             <code value="min" />
           </valueQuantity>
         </component>
-        <specimen>
-          <reference value="urn:uuid:45f1e625-9af2-4920-9ac4-63b4d9d30bd0" />
-        </specimen>
       </Observation>
     </resource>
   </entry>
@@ -486,16 +486,16 @@
     <fullUrl value="urn:uuid:1346248c-8c09-4312-a0b9-898de1cc16f5" />
     <resource>
       <Observation>
+        <id value="1346248c-8c09-4312-a0b9-898de1cc16f5" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
         <!-- Glucose substance concentration at 120 minutes -->
         <extension url="http://hl7.org/fhir/StructureDefinition/observation-sequelTo">
           <valueReference>
             <reference value="urn:uuid:1dbcb7a9-4506-40f9-9908-fa0d32deeaa4" />
           </valueReference>
         </extension>
-        <id value="1346248c-8c09-4312-a0b9-898de1cc16f5" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
-        </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
           <value value="4c66b23a-5c91-49fb-85b1-5073a88afc25" />
@@ -532,6 +532,9 @@
           <system value="http://unitsofmeasure.org" />
           <code value="mmol/L" />
         </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
+        </specimen>
         <component>
           <code>
             <coding>
@@ -547,9 +550,6 @@
             <code value="min" />
           </valueQuantity>
         </component>
-        <specimen>
-          <reference value="urn:uuid:ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
-        </specimen>
       </Observation>
     </resource>
   </entry>

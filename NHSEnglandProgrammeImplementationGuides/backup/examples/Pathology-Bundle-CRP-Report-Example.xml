@@ -302,13 +302,13 @@
           <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
           <!-- In practice, it is likely that only a code from one reference set will be carried. -->
           <coding>
-            <!-- From PBCL observable entity reference sets -->
+            <!-- From PBCL observable entity reference set -->
             <system value="http://snomed.info/sct" />
             <code value="1001371000000100" />
             <display value="Serum CRP (C reactive protein) level" />
           </coding>
           <coding>
-            <!-- From PaLM observable entity reference sets -->
+            <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
             <code value="1106741000000105" />
             <display value="CRP (C reactive protein) mass concentration in serum" />
