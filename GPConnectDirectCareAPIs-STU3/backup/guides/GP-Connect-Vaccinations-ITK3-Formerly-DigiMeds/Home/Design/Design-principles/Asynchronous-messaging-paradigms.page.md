@@ -6,7 +6,7 @@ Messages flowing into GP practices on MESH will arise mainly from the following 
 
 Where the message sender knows which party or parties the message is intended for, a point-to-point event notification is often used. Here the sender directs the message to a known recipient or set of recipients.
 
-For example, the Consultation Summary Report use case of the Send Document capability uses this pattern. The sending practice knows that the consultation report is intended only for a single known recipient organisation - the registered practice of the patient. Therefore, this pattern is used for this use case and the MESH Endpoint Lookup Service is used as a broker to facilitate this message delivery pattern.
+For example, this specification uses this pattern. The sending practice knows that the payload is intended only for a single known recipient organisation - the registered practice of the patient. Therefore, this pattern is used for this use case and the MESH Endpoint Lookup Service is used as a broker to facilitate this message delivery pattern.
 
 
 **2. Publish/Subscribe event notification**

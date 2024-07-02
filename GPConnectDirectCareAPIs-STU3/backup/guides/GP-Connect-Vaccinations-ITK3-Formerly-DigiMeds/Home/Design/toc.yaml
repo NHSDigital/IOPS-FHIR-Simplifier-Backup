@@ -2,8 +2,6 @@
   filename: Design-overview
 - name: Design principles
   filename: Design-principles
-- name: Using MESH
-  filename: Using-MESH
 - name: Using ITK3
   filename: Using-ITK3
 - name: Integration with Spine

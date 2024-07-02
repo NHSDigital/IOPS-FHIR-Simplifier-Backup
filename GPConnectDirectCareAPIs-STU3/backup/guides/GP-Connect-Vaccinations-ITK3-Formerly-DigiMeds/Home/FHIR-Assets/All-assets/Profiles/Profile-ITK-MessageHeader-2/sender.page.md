@@ -19,6 +19,6 @@ A reference **MUST** contain a reference to an `CareConnect-Organization-1` reso
 
 More information about how to populate this resource can be found in this guide using the link below.
 
-- {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-Organization-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-CareConnect-ITK-Header-Organization-1}}
 
 ---
