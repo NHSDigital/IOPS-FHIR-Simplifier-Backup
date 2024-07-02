@@ -92,7 +92,30 @@ For programme specific implementation guidance, please click the table header.
   </tbody>
 </table>
 
----
+
+<table class="regular assets" style="width:100%">
+ <thead>
+   <tr>
+     <th colspan="1"><a href="https://simplifier.net/guide/child-protection---information-sharing--cp-is--api-consumer-impl?version=current">Booking and Referrals (BARS)</a></th>
+  </tr>
+ </thead>
+ <tbody>
+   <tr>
+    <td>
+     {{pagelink:CodeSystem-England-MessageEventsBARS, text:CodeSystem-England-MessageEventsBARS}}
+    </td>
+    </tr>
+    <tr>
+    <td>
+     {{pagelink:CodeSystem-England-MessageEventsBARS, text:CodeSystem-England-MessageReasonBARS}}
+    </td>
+    </tr>
+    <td>
+     {{pagelink:CodeSystem-England-MessageEventsBARS, text:CodeSystem-England-HTTPErrorCodes}}
+    </td>
+   </tr>
+  </tbody>
+</table>
 
 <h4>Sprint 1 <a href="https://simplifier.net/guide/nhs-england-ig-clinical-and-technical-assurance-doc-pack?version=1.0.0-sprint-1-review">(Documentation Pack)</a></h4>
 
