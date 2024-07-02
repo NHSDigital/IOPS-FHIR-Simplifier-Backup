@@ -1,4 +1,4 @@
-<!-- The template for a CodeSystem page. Add the following to the top of the page:
+<!-- The template for a ValueSet page. Add the following to the top of the page:
 
 ---
 subject: [ValueSet url]
