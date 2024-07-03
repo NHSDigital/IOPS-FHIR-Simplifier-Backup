@@ -2,6 +2,12 @@
   filename: Index.page.md
 - name: CodeSystem-England-FGMRemovalReason
   filename: CodeSystem-England-FGMRemovalReason.page.md
+- name: CodeSystem-England-HTTPErrorCodes
+  filename: CodeSystem-England-HTTPErrorCodes.page.md
+- name: CodeSystem-England-MessageEventsBARS
+  filename: CodeSystem-England-MessageEventsBARS.page.md
+- name: CodeSystem-England-MessageReasonBARS
+  filename: CodeSystem-England-MessageReasonBARS.page.md
 - name: CodeSystem-England-ODSDateTime
   filename: CodeSystem-England-ODSDateTime.page.md
 - name: CodeSystem-England-ODSOrganisationRole
@@ -16,11 +22,5 @@
   filename: CodeSystem-England-PeriodType.page.md
 - name: CodeSystem-England-PFSPrescriptionOrderingParameter
   filename: CodeSystem-England-PFSPrescriptionOrderingParameter.page.md
-- name: CodeSystem-England-MessageEventsBARS
-  filename: CodeSystem-England-MessageEventsBARS.page.md
-- name: CodeSystem-England-MessageReasonBARS.xml
-  filename: CodeSystem-England-MessageReasonBARS.xml.page.md
-- name: CodeSystem-England-HTTPErrorCodes
-  filename: CodeSystem-England-HTTPErrorCodes.page.md
 - name: CodeSystem-message-event
   filename: CodeSystem-message-event.page.md

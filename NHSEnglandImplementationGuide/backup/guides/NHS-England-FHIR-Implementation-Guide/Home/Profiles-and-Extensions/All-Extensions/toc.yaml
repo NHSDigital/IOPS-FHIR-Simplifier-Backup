@@ -2,11 +2,11 @@
   filename: index.page.md
 - name: Extension-England-FlagRemovalReason
   filename: Extension-England-FlagRemovalReason.page.md
+- name: Extension-England-LocationExtension
+  filename: Extension-England-LocationExtension.page.md
 - name: Extension-England-OrganisationRole
   filename: Extension-England-OrganisationRole.page.md
 - name: Extension-England-TypedDateTime
   filename: Extension-England-TypedDateTime.page.md
 - name: Extension-England-TypedPeriod
   filename: Extension-England-TypedPeriod.page.md
-- name: Extension-England-LocationExtension
-  filename: Extension-England-LocationExtension.page.md
