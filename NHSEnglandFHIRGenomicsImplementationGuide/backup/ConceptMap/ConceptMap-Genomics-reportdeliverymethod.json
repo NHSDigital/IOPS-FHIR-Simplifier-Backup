@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "genomics-reportdeliverymethod",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-reportdeliverymethod",
+  "version": "0.1.0",
+  "name": "GenomicsReportDeliveryMethod",
+  "title": "Genomics Report Delivery Method",
+  "status": "draft",
+  "date": "2024-06-27T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
+  "purpose": "ConceptMap used for the translation and recording of Genomics report delivery options, i.e., PractitionerRole.telecom.value",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "targetUri": "http://hl7.org/fhir/ValueSet/contact-point-system",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "postaL",
+          "display": "POSTAL",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "digital-system",
+          "display": "DIGITAL SYSTEM",
+          "target": [
+            {
+              "code": "url",
+              "display": "URL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "email",
+          "display": "EMAIL",
+          "target": [
+            {
+              "code": "email",
+              "display": "Email",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "display": "OTHER",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

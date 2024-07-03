@@ -638,8 +638,17 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "77465005",
-              "display": "Transplantation"
+              "code": "416128008",
+              "display": "No history of procedure (situation)"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "263903005",
+              "display": "Transplant (qualifier value)"
             }
           ]
         },
@@ -650,8 +659,7 @@
             "value": "9449307687"
           }
         },
-        "effectiveDateTime": "2023-09-25",
-        "valueBoolean": false
+        "effectiveDateTime": "2023-09-25"
       },
       "request": {
         "method": "POST",

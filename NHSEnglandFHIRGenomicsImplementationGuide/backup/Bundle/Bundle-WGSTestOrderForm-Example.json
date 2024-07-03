@@ -326,8 +326,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "77386006",
-              "display": "Pregnancy"
+              "code": "60001007",
+              "display": "Not pregnant (finding)"
             }
           ]
         },
@@ -338,8 +338,7 @@
             "value": "9449307946"
           }
         },
-        "effectiveDateTime": "2023-08-05",
-        "valueBoolean": false
+        "effectiveDateTime": "2023-08-05"
       },
       "request": {
         "method": "POST",
@@ -460,8 +459,17 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "23719005",
-              "display": "Transplantation of bone marrow"
+              "code": "416128008",
+              "display": "No history of procedure (situation)"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445715009",
+              "display": "Blood and marrow transplantation (qualifier value)"
             }
           ]
         },
@@ -472,8 +480,7 @@
             "value": "9449307946"
           }
         },
-        "effectiveDateTime": "2023-08-05",
-        "valueBoolean": false
+        "effectiveDateTime": "2023-08-05"
       },
       "request": {
         "method": "POST",
@@ -490,8 +497,17 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "5447007",
-              "display": "Transfusion"
+              "code": "416128008",
+              "display": "No history of procedure (situation)"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "303955003",
+              "display": "Transfusion - action (qualifier value)"
             }
           ]
         },
@@ -503,7 +519,6 @@
           }
         },
         "effectiveDateTime": "2023-08-05",
-        "valueBoolean": false
       },
       "request": {
         "method": "POST",
