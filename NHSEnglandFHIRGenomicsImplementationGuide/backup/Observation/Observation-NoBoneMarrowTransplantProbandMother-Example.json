@@ -1,23 +1,31 @@
 {
-	"resourceType": "Observation",
-	"id": "Observation-NoBoneMarrowTransplantProbandMother-Example",
-	"status": "final",
-	"code": {
-		"coding": [
-			{
-				"system": "http://snomed.info/sct",
-				"code": "23719005",
-				"display": "Transplantation of bone marrow"
-			}
-		]
-	},
-	"subject": {
-		"reference": "Patient/Patient-PheobeSmithamMother-Example",
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "9449307246"
-		}
-	},
-	"effectiveDateTime": "2023-09-15T15:00:00Z",
-	"valueBoolean": false
+  "resourceType": "Observation",
+  "id": "Observation-NoBoneMarrowTransplantProbandMother-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "416128008",
+        "display": "No history of procedure (situation)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "445715009",
+        "display": "Blood and marrow transplantation (qualifier value)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PheobeSmithamMother-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307246"
+    }
+  },
+  "effectiveDateTime": "2023-09-15T15:00:00Z"
 }

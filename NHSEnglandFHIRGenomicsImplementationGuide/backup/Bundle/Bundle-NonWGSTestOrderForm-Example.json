@@ -1,73 +1,73 @@
 {
-	"resourceType": "Bundle",
-	"id": "Bundle-NonWGSTestOrderForm-Example",
-	"type": "transaction",
-	"entry": [
-		{
-			"fullUrl": "http://example.org/fhir/PractitionerRole/PractitionerRole-GeneSmithENT-Example",
-			"resource": {
-				"resourceType": "PractitionerRole",
-				"id": "PractitionerRole-GeneSmithENT-Example",
-				"practitioner": {
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/sds-user-id",
-						"value": "9999999999"
-					},
-					"display": "Dr. Gene Smith"
-				},
-				"organization": {
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
-						"value": "RGT01"
-					},
-					"display": "Addenbrooke's Hospital"
-				},
-				"specialty": [
-					{
-						"coding": [
-							{
-								"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
-								"code": "120",
-								"display": "Ear Nose and Throat"
-							}
-						]
-					}
-				],
-				"telecom": [
-					{
-						"system": "phone",
-						"value": "01223586638"
-					},
-					{
-						"system": "email",
-						"value": "gene.smith@nhs.net"
-					},
-					{
-						"system": "email",
-						"value": "Add-tr.entsecretaries@nhs.net",
-						"extension": [
-							{
-								"url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
-								"valueString": "reporting"
-							}
-						]
-					}
-				]
-			},
+  "resourceType": "Bundle",
+  "id": "Bundle-NonWGSTestOrderForm-Example",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/PractitionerRole/PractitionerRole-GeneSmithENT-Example",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "PractitionerRole-GeneSmithENT-Example",
+        "practitioner": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "9999999999"
+          },
+          "display": "Dr. Gene Smith"
+        },
+        "organization": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RGT01"
+          },
+          "display": "Addenbrooke's Hospital"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+                "code": "120",
+                "display": "Ear Nose and Throat"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01223586638"
+          },
+          {
+            "system": "email",
+            "value": "gene.smith@nhs.net"
+          },
+          {
+            "system": "email",
+            "value": "Add-tr.entsecretaries@nhs.net",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+                "valueString": "reporting"
+              }
+            ]
+          }
+        ]
+      },
       "request": {
         "method": "POST",
         "url": "PractitionerRole"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/Patient/Patient-MeirLieberman-Example",
-			"resource": {
-				"resourceType": "Patient",
-				"id": "Patient-MeirLieberman-Example",
-				"extension": [
-					{
-						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
-						"valueCodeableConcept": {
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Patient/Patient-MeirLieberman-Example",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "Patient-MeirLieberman-Example",
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
+            "valueCodeableConcept": {
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
@@ -76,501 +76,516 @@
                 }
               ]
             }
-					},
-					{
-						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
-						"valueCodeableConcept": {
-							"coding": [
-								{
-									"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
-									"code": "A",
-									"display": "White - British"
-								}
-							]
-						}
-					}
-				],
-				"identifier": [
-					{
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873",
-						"extension": [
-							{
-								"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
-								"valueCodeableConcept": {
-									"coding": [
-										{
-											"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
-											"version": "2.2.0",
-											"code": "01",
-											"display": "Number present and verified"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
-						"value": "RGT012423",
-						"assigner": {
-							"identifier": {
-								"system": "https://fhir.nhs.uk/Id/ods-organization-code",
-								"value": "RGT01"
-							}
-						}
-					},
-					{
-						"system": "https://fhir.nhs.uk/Id/genomics-pedigree-number",
-						"value": "P12345"
-					}
-				],
-				"name": [
-					{
-						"given": [
-							"Meir",
-							"Anah"
-						],
-						"family": "Lieberman"
-					}
-				],
-				"birthDate": "2005-12-19",
-				"deceasedBoolean": false,
-				"address": [
-					{
-						"line": [
-							"1 Spinney Close",
-							"Worcester Park"
-						],
-						"city": "Surrey",
-						"postalCode": "KT4 7BS"
-					}
-				],
-				"generalPractitioner": [
-					{
-						"identifier": {
-							"system": "https://fhir.hl7.org.uk/Id/gmp-number",
-							"value": "G9999999"
-						},
-						"display": "Dr. Aero Smith"
-					},
-					{
-						"identifier": {
-							"system": "https://fhir.hl7.org.uk/Id/ODS-code",
-							"value": "TP123"
-						},
-						"display": "123 Test Practice"
-					}
-				],
-				"link": [
-					{
-						"other": {
-							"reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307873"
-						},
-						"type": "seealso"
-					}
-				]
-			},
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland",
+                  "code": "A",
+                  "display": "White - British"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873",
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                      "version": "2.2.0",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+            "value": "RGT012423",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RGT01"
+              }
+            }
+          },
+          {
+            "system": "https://fhir.nhs.uk/Id/genomics-pedigree-number",
+            "value": "P12345"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Meir",
+              "Anah"
+            ],
+            "family": "Lieberman"
+          }
+        ],
+        "birthDate": "2005-12-19",
+        "deceasedBoolean": false,
+        "address": [
+          {
+            "line": [
+              "1 Spinney Close",
+              "Worcester Park"
+            ],
+            "city": "Surrey",
+            "postalCode": "KT4 7BS"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G9999999"
+            },
+            "display": "Dr. Aero Smith"
+          },
+          {
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/ODS-code",
+              "value": "TP123"
+            },
+            "display": "123 Test Practice"
+          }
+        ],
+        "link": [
+          {
+            "other": {
+              "reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307873"
+            },
+            "type": "seealso"
+          }
+        ]
+      },
       "request": {
         "method": "POST",
         "url": "Patient",
         "ifNoneExist": "Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|9449307873"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/Observation/Observation-GenomicEthnicity-Example",
-			"resource": {
-				"resourceType": "Observation",
-				"id": "Observation-GenomicEthnicity-Example",
-				"status": "preliminary",
-				"code": {
-					"coding": [
-						{
-							"system": "http://snomed.info/sct",
-							"code": "723621000000103",
-							"display": "Ethnicity"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/Patient-MeirLieberman-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
-					}
-				},
-				"valueString": "unknown"
-			},
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/Observation-GenomicEthnicity-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-GenomicEthnicity-Example",
+        "status": "preliminary",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "723621000000103",
+              "display": "Ethnicity"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-MeirLieberman-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+          }
+        },
+        "valueString": "unknown"
+      },
       "request": {
         "method": "POST",
         "url": "Observation"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example",
-			"resource": {
-				"resourceType": "ServiceRequest",
-				"id": "ServiceRequest-NonWGSTestOrderForm-Example",
-				"extension": [
-					{
-						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
-						"valueCodeableConcept": {
-							"coding": [
-								{
-									"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-									"code": "nhs",
-									"display": "NHS"
-								}
-							]
-						}
-					}
-				],
-				"status": "active",
-				"intent": "order",
-				"category": [
-					{
-						"coding": [
-							{
-								"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
-								"code": "rare-disease-non-wgs",
-								"display": "Rare Disease - Non-WGS"
-							}
-						]
-					}
-				],
-				"priority": "routine",
-				"code": {
-					"coding": [
-						{
-							"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-							"code": "R67.2",
-							"display": "Monogenic hearing loss"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/Patient-MeirLieberman-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
-					}
-				},
-				"authoredOn": "2023-08-05",
-				"requester": {
-					"reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
-				},
-				"reasonCode": [
-					{
-						"coding": [
-							{
-								"system": "http://snomed.info/sct",
-								"code": "103693007",
-								"display": "Diagnostic procedure"
-							}
-						]
-					}
-				],
-				"supportingInfo": [
-					{
-						"reference": "Observation/Observation-DiseaseStatus-Example"
-					},
-					{
-						"reference": "Observation/Observation-GenomicEthnicity-Example"
-					},
-					{
-						"reference": "Observation/Observation-NoPregnancy-Example"
-					},
-					{
-						"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
-					},
-					{
-						"reference": "Observation/Observation-NoTransplant-Example"
-					},
-					{
-						"reference": "Observation/Observation-NoTransfusion-Example"
-					},
-					{
-						"reference": "Condition/Condition-HearingLoss-Example"
-					}
-				],
-				"note": [
-					{
-						"text": "No family history of genomic testing"
-					},
-					{
-						"text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/Patient in need of test...example"
-					}
-				]
-			},
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "ServiceRequest-NonWGSTestOrderForm-Example",
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+                  "code": "nhs",
+                  "display": "NHS"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+                "code": "rare-disease-non-wgs",
+                "display": "Rare Disease - Non-WGS"
+              }
+            ]
+          }
+        ],
+        "priority": "routine",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+              "code": "R67.2",
+              "display": "Monogenic hearing loss"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-MeirLieberman-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+          }
+        },
+        "authoredOn": "2023-08-05",
+        "requester": {
+          "reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ]
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "Observation/Observation-DiseaseStatus-Example"
+          },
+          {
+            "reference": "Observation/Observation-GenomicEthnicity-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoPregnancy-Example"
+          },
+          {
+            "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoTransplant-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoTransfusion-Example"
+          },
+          {
+            "reference": "Condition/Condition-HearingLoss-Example"
+          }
+        ],
+        "note": [
+          {
+            "text": "No family history of genomic testing"
+          },
+          {
+            "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/Patient in need of test...example"
+          }
+        ]
+      },
       "request": {
         "method": "POST",
         "url": "ServiceRequest"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/Observation/Observation-NoPregnancy-Example",
-			"resource": {
-				"resourceType": "Observation",
-				"id": "Observation-NoPregnancy-Example",
-				"status": "final",
-				"code": {
-					"coding": [
-						{
-							"system": "http://snomed.info/sct",
-							"code": "77386006",
-							"display": "Pregnancy"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/Patient-MeirLieberman-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
-					}
-				},
-				"effectiveDateTime": "2023-08-05",
-				"valueBoolean": false
-			},
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/Observation-NoPregnancy-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-NoPregnancy-Example",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "60001007",
+              "display": "Not pregnant (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-MeirLieberman-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+          }
+        },
+        "effectiveDateTime": "2023-08-05"
+      },
       "request": {
         "method": "POST",
         "url": "Observation"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/Observation/Observation-DiseaseStatus-Example",
-			"resource": {
-				"resourceType": "Observation",
-				"id": "Observation-DiseaseStatus-Example",
-				"status": "final",
-				"code": {
-					"coding": [
-						{
-							"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-							"code": "R67.2",
-							"display": "Monogenic hearing loss"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/Patient-MeirLieberman-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
-					}
-				},
-				"effectiveDateTime": "2023-08-05",
-				"valueCodeableConcept": {
-					"coding": [
-						{
-							"system": "http://snomed.info/sct",
-							"code": "103310001",
-							"display": "Patient not affected"
-						}
-					]
-				}
-			},
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/Observation-DiseaseStatus-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-DiseaseStatus-Example",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+              "code": "R67.2",
+              "display": "Monogenic hearing loss"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-MeirLieberman-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+          }
+        },
+        "effectiveDateTime": "2023-08-05",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "103310001",
+              "display": "Patient not affected"
+            }
+          ]
+        }
+      },
       "request": {
         "method": "POST",
         "url": "Observation"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example",
-			"resource": {
-				"resourceType": "FamilyMemberHistory",
-				"id": "FamilyMemberHistory-NonConsanguinousUnion-Example",
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-observation",
-						"valueReference": {
-							"reference": "Observation/Observation-NonConsanguinousUnion-Example"
-						}
-					}
-				],
-				"status": "completed",
-				"patient": {
-					"reference": "Patient/Patient-MeirLieberman-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
-					}
-				},
-				"relationship": {
-					"coding": [
-						{
-							"system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-							"code": "PRN",
-							"display": "parent"
-						}
-					]
-				}
-			},
+    },
+    {
+      "fullUrl": "http://example.org/fhir/FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example",
+      "resource": {
+        "resourceType": "FamilyMemberHistory",
+        "id": "FamilyMemberHistory-NonConsanguinousUnion-Example",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-observation",
+            "valueReference": {
+              "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+            }
+          }
+        ],
+        "status": "completed",
+        "patient": {
+          "reference": "Patient/Patient-MeirLieberman-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+          }
+        },
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "code": "PRN",
+              "display": "parent"
+            }
+          ]
+        }
+      },
       "request": {
         "method": "POST",
         "url": "FamilyMemberHistory"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/Observation/Observation-NonConsanguinousUnion-Example",
-			"resource": {
-				"resourceType": "Observation",
-				"id": "Observation-NonConsanguinousUnion-Example",
-				"status": "final",
-				"code": {
-					"coding": [
-						{
-							"system": "http://snomed.info/sct",
-							"code": "842009",
-							"display": "Consanguinity"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/Patient-MeirLieberman-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
-					}
-				},
-				"effectiveDateTime": "2023-08-05",
-				"valueBoolean": false
-			},
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/Observation-NonConsanguinousUnion-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-NonConsanguinousUnion-Example",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "842009",
+              "display": "Consanguinity"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-MeirLieberman-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+          }
+        },
+        "effectiveDateTime": "2023-08-05",
+        "valueBoolean": false
+      },
       "request": {
         "method": "POST",
         "url": "Observation"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/Observation/Observation-NoTransplant-Example",
-			"resource": {
-				"resourceType": "Observation",
-				"id": "Observation-NoTransplant-Example",
-				"status": "final",
-				"code": {
-					"coding": [
-						{
-							"system": "http://snomed.info/sct",
-							"code": "77465005",
-							"display": "Transplantation"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/Patient-MeirLieberman-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
-					}
-				},
-				"effectiveDateTime": "2023-08-05",
-				"valueBoolean": false
-			},
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/Observation-NoTransplant-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-NoTransplant-Example",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "416128008",
+              "display": "No history of procedure (situation)"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "263903005",
+              "display": "Transplant (qualifier value)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-MeirLieberman-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+          }
+        },
+        "effectiveDateTime": "2023-08-05",
+      },
       "request": {
         "method": "POST",
         "url": "Observation"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/Observation/Observation-NoTransfusion-Example",
-			"resource": {
-				"resourceType": "Observation",
-				"id": "Observation-NoTransfusion-Example",
-				"status": "final",
-				"code": {
-					"coding": [
-						{
-							"system": "http://snomed.info/sct",
-							"code": "5447007",
-							"display": "Transfusion"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/Patient-MeirLieberman-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
-					}
-				},
-				"effectiveDateTime": "2023-08-05",
-				"valueBoolean": false
-			},
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/Observation-NoTransfusion-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-NoTransfusion-Example",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "416128008",
+              "display": "No history of procedure (situation)"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "303955003",
+              "display": "Transfusion - action (qualifier value)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-MeirLieberman-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+          }
+        },
+        "effectiveDateTime": "2023-08-05"
+      },
       "request": {
         "method": "POST",
         "url": "Observation"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/Condition/Condition-HearingLoss-Example",
-			"resource": {
-				"resourceType": "Condition",
-				"id": "Condition-HearingLoss-Example",
-				"code": {
-					"coding": [
-						{
-							"system": "http://snomed.info/sct",
-							"code": "95820000",
-							"display": "Bilateral hearing loss"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/Patient-MeirLieberman-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
-					}
-				},
-				"note": [
-					{
-						"text": "hearing loss since childhood (example)"
-					}
-				]
-			},
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/Condition-HearingLoss-Example",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "Condition-HearingLoss-Example",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "95820000",
+              "display": "Bilateral hearing loss"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-MeirLieberman-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+          }
+        },
+        "note": [
+          {
+            "text": "hearing loss since childhood (example)"
+          }
+        ]
+      },
       "request": {
         "method": "POST",
         "url": "Condition"
       }
-		},
-		{
-			"fullUrl": "http://example.org/fhir/Specimen/Specimen-BloodEDTA-Example",
-			"resource": {
-				"resourceType": "Specimen",
-				"id": "Specimen-BloodEDTA-Example",
-				"identifier": [
-					{
-						"system": "https://fhir.add.nhs.uk/Id/specimenId",
-						"value": "RGT03135"
-					}
-				],
-				"status": "unavailable",
-				"type": {
-					"coding": [
-						{
-							"system": "http://snomed.info/sct",
-							"code": "445295009",
-							"display": "Blood specimen with EDTA"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/Patient-MeirLieberman-Example",
-					"identifier": {
-						"system": "https://fhir.nhs.uk/Id/nhs-number",
-						"value": "9449307873"
-					}
-				},
-				"request": [
-					{
-						"reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example"
-					}
-				]
-			},
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Specimen/Specimen-BloodEDTA-Example",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "Specimen-BloodEDTA-Example",
+        "identifier": [
+          {
+            "system": "https://fhir.add.nhs.uk/Id/specimenId",
+            "value": "RGT03135"
+          }
+        ],
+        "status": "unavailable",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445295009",
+              "display": "Blood specimen with EDTA"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient-MeirLieberman-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+          }
+        },
+        "request": [
+          {
+            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-Example"
+          }
+        ]
+      },
       "request": {
         "method": "POST",
         "url": "Specimen"
       }
-		}
-	]
+    }
+  ]
 }

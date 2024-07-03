@@ -1,0 +1,165 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "genomics-probandrelationshiptype",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-probandrelationshiptype",
+  "version": "0.1.0",
+  "name": "GenomicsProbandRelationshipType",
+  "title": "Genomics Proband Relationship Type",
+  "status": "draft",
+  "date": "2024-06-28T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
+  "purpose": "ConceptMap used for the translation and recording of concept for RelatedPerson.relationship field,i.e, proband related person relationship types",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "targetUri": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+  "group": [
+    {
+      "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "element": [
+        {
+          "code": "biological-aunt",
+          "display": "BIOLOGICAL AUNT",
+          "target": [
+            {
+              "code": "AUNT",
+              "display": "aunt",
+              "equivalence": "subsumes"
+            }
+          ]
+        },
+        {
+          "code": "biological-brother",
+          "display": "BIOLOGICAL BROTHER",
+          "target": [
+            {
+              "code": "NBRO",
+              "display": "natural brother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biological-child",
+          "display": "BIOLOGICAL CHILD",
+          "target": [
+            {
+              "code": "NCHILD",
+              "display": "natural child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biological-cousin",
+          "display": "BIOLOGICAL COUSIN",
+          "target": [
+            {
+              "code": "COUSN",
+              "display": "cousin",
+              "equivalence": "subsumes"
+            }
+          ]
+        },
+        {
+          "code": "biological-daughter",
+          "display": "BIOLOGICAL DAUGHTER",
+          "target": [
+            {
+              "code": "DAU",
+              "display": "natural daughter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biological-father",
+          "display": "BIOLOGICAL FATHER",
+          "target": [
+            {
+              "code": "NFTH",
+              "display": "natural father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biological-grandfather",
+          "display": "BIOLOGICAL GRANDFATHER",
+          "target": [
+            {
+              "code": "GRFTH",
+              "display": "grandfather",
+              "equivalence": "subsumes"
+            }
+          ]
+        },
+        {
+          "code": "biological-grandmother",
+          "display": "BIOLOGICAL GRANDMOTHER",
+          "target": [
+            {
+              "code": "GRMTH",
+              "display": "grandmother",
+              "equivalence": "subsumes"
+            }
+          ]
+        },
+        {
+          "code": "biological-mother",
+          "display": "BIOLOGICAL MOTHER",
+          "target": [
+            {
+              "code": "NMTH",
+              "display": "natural mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biological-sister",
+          "display": "BIOLOGICAL SISTER",
+          "target": [
+            {
+              "code": "NSIS",
+              "display": "natural sister",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biological-son",
+          "display": "BIOLOGICAL SON",
+          "target": [
+            {
+              "code": "SON",
+              "display": "natural son",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biological-uncle",
+          "display": "BIOLOGICAL UNCLE",
+          "target": [
+            {
+              "code": "UNCLE",
+              "display": "uncle",
+              "equivalence": "subsumes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
