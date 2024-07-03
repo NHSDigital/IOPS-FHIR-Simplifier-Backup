@@ -1,8 +1,16 @@
 - name: CodeSystem Template
   filename: CodeSystem-Template.page.md
+- name: Extension Template
+  filename: Extension-Template.page.md
+- name: SearchParameter Template
+  filename: SearchParameter-Template.page.md
 - name: Example Template
   filename: Example-Template.page.md
 - name: Profile Template
   filename: Profile-Template.page.md
 - name: ValueSet Template
   filename: ValueSet-Template.page.md
+- name: Extension Template
+  filename: Extension-Template.page.md
+- name: Feedback Link
+  filename: Feedback-Link.page.md

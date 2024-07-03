@@ -72,7 +72,7 @@ pra <-- api : OperationOutcome
 
 ### Examples
 
-* [Patient example](Patient-PatientExample1.html)
+* {{pagelink:PatientFlag-AlanMann-Example}}
 
 The following set of examples constitute the individual associated resources with the intial addition of a flag for Reasonable Adjustment.  This include a patient Flag resource, the adjustment Flag resource and the associated Condition resource.  All resources have contained provenances.
 

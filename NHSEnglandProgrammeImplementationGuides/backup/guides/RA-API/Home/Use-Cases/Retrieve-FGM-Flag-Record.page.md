@@ -100,7 +100,7 @@ This limits the search to patients thant have the identifier `9912003888`
 patient.identifier=9912003888=9912003888
 ```
 
-This includes all references in the flag detail extension that have been defined in the [FlagDetail](SearchParameter-FlagDetail.html) SearchParameter.
+This includes all references in the flag detail extension that have been defined in the {{pagelink:Home/FHIR-Assets/SearchParameters/England-SearchParameter-FlagDetail.page.md}} SearchParameter.
 
 ```
 &_include=Flag:detail
@@ -112,6 +112,6 @@ This includes the associated patient resource.
 &_include=Flag:patient
 ```
 
-This query relies on the [FlagCategory](SearchParameter-FlagCategory.html), [FlagCode](SearchParameter-FlagCode.html) and [FlagDetail](SearchParameter-FlagDetail.html) SearchParameters.
+This query relies on the {{pagelink:Home/FHIR-Assets/SearchParameters/England-SearchParameter-FlagCategory.page.md}}, **[FlagCode](SearchParameter-FlagCode.html)-MISSING** and {{pagelink:Home/FHIR-Assets/SearchParameters/England-SearchParameter-FlagDetail.page.md}} SearchParameters.
 
 

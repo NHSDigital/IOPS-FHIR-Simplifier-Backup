@@ -70,9 +70,9 @@ entity       "Condition"        as cod
 
 The following resource types will be deleted from the record:
 
-* [Patient Flag](StructureDefinition-PatientFlag.html)  
-* [Programme Flag](StructureDefinition-ProgrammeFlag.html)  
-* [Condition Flag](StructureDefinition-FlagCondition.html) 
+* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}}
+* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}}
+* {{pagelink:Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}}
 
 #### Example
 

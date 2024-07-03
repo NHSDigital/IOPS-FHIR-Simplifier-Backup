@@ -79,7 +79,7 @@
         <category>
           <coding>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="nraf" />
+            <code value="national-reasonable-adjustment-flag" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </category>
@@ -176,7 +176,7 @@
         <code>
           <coding>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="nraf" />
+            <code value="national-reasonable-adjustment-flag" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </code>
@@ -238,7 +238,7 @@
         <category>
           <coding>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="nraf" />
+            <code value="national-reasonable-adjustment-flag" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </category>
@@ -317,7 +317,7 @@
         <category>
           <coding>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="nraf" />
+            <code value="national-reasonable-adjustment-flag" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </category>
@@ -393,7 +393,7 @@
         <category>
           <coding>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="nraf" />
+            <code value="national-reasonable-adjustment-flag" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </category>

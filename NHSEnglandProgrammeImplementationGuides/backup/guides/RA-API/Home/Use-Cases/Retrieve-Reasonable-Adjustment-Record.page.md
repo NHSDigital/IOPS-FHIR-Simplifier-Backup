@@ -108,7 +108,7 @@ The following queries will return all or some of the resources constituing a Rea
 * {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}}
 * {{pagelink:Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}} 
 
-This query relies on the [FlagCategory](SearchParameter-FlagCategory.html) and [FlagCode](SearchParameter-FlagCode.html) SearchParameters.
+This query relies on the {{pagelink:Home/FHIR-Assets/SearchParameters/England-SearchParameter-FlagCategory.page.md}} and **[FlagCode](SearchParameter-FlagCode.html)-MISSING** SearchParameters.
 
 #### Flag endpoint search
 
@@ -116,7 +116,7 @@ This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/f
 
 **NOTE:** For every additional record/resource added, the flag-detail element in the Patient Flag resource will need updated. See **TODO -- link to add interaction diagram**.
 
-If the [flag-detail extension](http://hl7.org/fhir/StructureDefinition/flag-detail) is used, then references to all Reasonable Adjustment resources can be included the [Patient Flag](StructureDefinition-PatientFlag.html) resource.
+If the [flag-detail extension](http://hl7.org/fhir/StructureDefinition/flag-detail) is used, then references to all Reasonable Adjustment resources can be included the {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} resource.
 
 This will return all associated flag resources for Reasonable Adjustments.
 
@@ -130,7 +130,7 @@ This limits the search to patients thant have the identifier `9912003888`
 patient.identifier=9912003888=9912003888
 ```
 
-This includes all references in the flag detail extension that have been defined in the [FlagDetail](SearchParameter-FlagDetail.html) SearchParameter.
+This includes all references in the flag detail extension that have been defined in the {{pagelink:Home/FHIR-Assets/SearchParameters/England-SearchParameter-FlagDetail.page.md}} SearchParameter.
 
 ```
 &_include=Flag:detail
@@ -142,5 +142,5 @@ This includes the associated patient resource.
 &_include=Flag:patient
 ```
 
-This query relies on the [FlagCategory](SearchParameter-FlagCategory.html), [FlagCode](SearchParameter-FlagCode.html) and [FlagDetail](SearchParameter-FlagDetail.html) SearchParameters.
+This query relies on the {{pagelink:Home/FHIR-Assets/SearchParameters/England-SearchParameter-FlagCategory.page.md}}, **[FlagCode](SearchParameter-FlagCode.html)-MISSING** and {{pagelink:Home/FHIR-Assets/SearchParameters/England-SearchParameter-FlagDetail.page.md}} SearchParameters.
 
