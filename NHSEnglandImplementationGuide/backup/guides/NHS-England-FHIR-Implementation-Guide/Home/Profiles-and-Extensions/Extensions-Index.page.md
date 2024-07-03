@@ -31,6 +31,15 @@ Additional guidance is available on the <a href="https://simplifier.net/guide/UK
 </tr>
 
 <tr>
+<td>{{pagelink:Extension-England-LocationExtension}}</td>
+<td>draft</td>
+<td>Location</td>
+<td><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Location?version=current' target="_blank">UK Core Location</a></td>
+<td>NO</td>
+<td> </td>
+</tr>
+
+<tr>
 <td>{{pagelink:Extension-England-OrganisationRole}}</td>
 <td>active</td>
 <td>Organisation</td>
