@@ -61,7 +61,7 @@ pra <-- api : OperationOutcome
 
 The following resource types will be deleted from the record:
 
-* [Programme Flag](StructureDefinition-ProgrammeFlag.html)  
+* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}}  
 
 #### Example
 

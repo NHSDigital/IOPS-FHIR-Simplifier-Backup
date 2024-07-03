@@ -28,11 +28,11 @@
   <content value="complete" />
   <count value="2" />
   <concept>
-    <code value="nraf" />
-    <display value="National Reasonable Adjustments Flag" />
+    <code value="national-reasonable-adjustment-flag" />
+    <display value="National Reasonable Adjustment Flag" />
   </concept>
   <concept>
-    <code value="fgm" />
+    <code value="female-genital-mutilation-flag" />
     <display value="Female Genital Mutilation Flag" />
   </concept>
 </CodeSystem>

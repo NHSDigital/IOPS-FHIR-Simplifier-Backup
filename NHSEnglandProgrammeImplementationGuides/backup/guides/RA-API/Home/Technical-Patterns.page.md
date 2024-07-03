@@ -43,7 +43,8 @@ This may constitute:
 
 Reasonable Adjustments data model includes additional detail resources that record:
 
-  * individual reasonable adjustments - modelled as instances of [EnglandFlagPatientFlagAdjustment](https://simplifier.net/nhs-england-programme-implementation-guides/england-flag-patientflag-adjustment/~overview) profile
-  * optionally, conditions for which reasonable adjustments are being made - modelled as instances of [EnglandConditionPatientFlag](https://simplifier.net/nhs-england-programme-implementation-guides/england-condition-patientflag/~overview) profile
+  * individual reasonable adjustments - modelled as instances of 
+  {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}} profile
+  * optionally, conditions for which reasonable adjustments are being made - modelled as instances of {{pagelink:Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}} profile.
 
 ---
