@@ -58,8 +58,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "103693007",
-          "display": "Diagnostic procedure"
+          "code": "165196007",
+          "display": "Procedures related to diagnosis (procedure)"
         }
       ]
     }
