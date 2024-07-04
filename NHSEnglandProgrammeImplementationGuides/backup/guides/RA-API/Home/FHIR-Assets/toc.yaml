@@ -8,3 +8,5 @@
   filename: CodeSystems
 - name: SearchParameters
   filename: SearchParameters
+- name: Extensions
+  filename: Extensions

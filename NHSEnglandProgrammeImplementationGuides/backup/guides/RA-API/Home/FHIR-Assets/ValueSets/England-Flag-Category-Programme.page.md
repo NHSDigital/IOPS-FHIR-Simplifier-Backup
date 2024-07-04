@@ -1,6 +1,6 @@
 ---
 subject: https://fhir.nhs.uk/England/ValueSet/England-FlagCategoryProgramme
-issue: England-FlagCategoryProgramme
+issue: ValueSet-England-FlagCategoryProgramme
 ---
 ## {{page-title}}
 

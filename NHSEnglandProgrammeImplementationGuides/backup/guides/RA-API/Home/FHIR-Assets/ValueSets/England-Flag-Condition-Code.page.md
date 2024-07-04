@@ -1,6 +1,6 @@
 ---
 subject: https://fhir.nhs.uk/England/ValueSet/England-FlagConditionCode
-issue: England-FlagConditionCode
+issue: ValueSet-England-FlagConditionCode
 ---
 ## {{page-title}}
 

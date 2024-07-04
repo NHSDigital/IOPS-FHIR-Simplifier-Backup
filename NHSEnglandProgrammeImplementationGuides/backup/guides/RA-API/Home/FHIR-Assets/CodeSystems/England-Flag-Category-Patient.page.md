@@ -1,6 +1,6 @@
 ---
 subject: https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient
-issue: England-FlagCategoryPatient
+issue: CodeSystem-England-FlagCategoryPatient
 ---
 ## {{page-title}}
 

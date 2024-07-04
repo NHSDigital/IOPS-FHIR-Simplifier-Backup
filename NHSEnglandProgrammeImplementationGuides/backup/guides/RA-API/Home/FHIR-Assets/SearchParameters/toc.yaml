@@ -1,4 +1,6 @@
-- name: England-SearchParameter-FlagCategory
-  filename: England-SearchParameter-FlagCategory.page.md
-- name: England-SearchParameter-FlagDetail
-  filename: England-SearchParameter-FlagDetail.page.md
+- name: England FlagCategory
+  filename: England-FlagCategory.page.md
+- name: England FlagCode
+  filename: England-FlagCode.page.md
+- name: England FlagDetail
+  filename: England-FlagDetail.page.md

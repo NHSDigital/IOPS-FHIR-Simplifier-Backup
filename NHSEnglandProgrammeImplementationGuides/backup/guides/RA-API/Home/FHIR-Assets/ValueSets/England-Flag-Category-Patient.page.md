@@ -1,6 +1,6 @@
 ---
 subject: https://fhir.nhs.uk/England/ValueSet/England-FlagCategoryPatient
-issue: England-FlagCategoryPatient
+issue: ValueSet-England-FlagCategoryPatient
 ---
 ## {{page-title}}
 

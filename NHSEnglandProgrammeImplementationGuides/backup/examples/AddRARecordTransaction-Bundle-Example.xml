@@ -98,7 +98,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/PatientFlag-ALanMann-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </subject>
       </Condition>
     </resource>
