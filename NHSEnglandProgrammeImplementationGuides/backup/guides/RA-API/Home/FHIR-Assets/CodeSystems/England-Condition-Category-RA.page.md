@@ -1,6 +1,6 @@
 ---
 subject: https://fhir.nhs.uk/England/CodeSystem/England-ConditionCategoryRA
-issue: England-ConditionCategoryRA
+issue: CodeSystem-England-ConditionCategoryRA
 ---
 ## {{page-title}}
 

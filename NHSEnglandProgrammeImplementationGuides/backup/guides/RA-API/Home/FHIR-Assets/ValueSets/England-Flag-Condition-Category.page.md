@@ -1,6 +1,6 @@
 ---
 subject: https://fhir.nhs.uk/England/ValueSet/England-FlagConditionCategory
-issue: England-FlagConditionCategory
+issue: ValueSet-England-FlagConditionCategory
 ---
 ## {{page-title}}
 

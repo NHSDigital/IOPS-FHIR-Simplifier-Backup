@@ -1,6 +1,6 @@
 ---
 subject: https://fhir.nhs.uk/England/ValueSet/England-FlagProvenanceRole
-issue: England-FlagProvenanceRole
+issue: ValueSet-England-FlagProvenanceRole
 ---
 ## {{page-title}}
 

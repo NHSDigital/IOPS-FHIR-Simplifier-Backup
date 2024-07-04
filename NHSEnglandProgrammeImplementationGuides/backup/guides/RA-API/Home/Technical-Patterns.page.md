@@ -34,7 +34,7 @@ Applications/systems integrating with an API SHALL document resources and intera
 Implementations SHALL provide all functionality additionally required by their specification and/or Implementation guidance.
 This may constitute:
 
-* Standard integration requirements regarding e.g. Authorization, Logging etc.
+* Standard integration requirements regarding e.g. Authorisation, Logging etc.
 * Additional FHIR constraints
 * Additional non-FHIR business rules and process requirements
 

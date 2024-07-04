@@ -13,7 +13,7 @@ with header
  <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-
+  <button class="tablinks feedback" onclick="openTab(event, 'Feedback')">Feedback</button>
 </div>
 
 <div id="HTML View" class="tabcontent" style="display:block">
@@ -31,6 +31,10 @@ with header
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
 {{json}}
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+Click here to: {{page:Home/Templates/Feedback-Link.page.md}}</a>
 </div>
 
 ---

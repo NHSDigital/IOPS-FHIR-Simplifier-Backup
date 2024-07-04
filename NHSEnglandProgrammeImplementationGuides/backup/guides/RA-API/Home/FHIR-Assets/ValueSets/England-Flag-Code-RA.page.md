@@ -1,6 +1,6 @@
 ---
 subject: https://fhir.nhs.uk/England/ValueSet/England-FlagCodeRA
-issue: England-FlagCodeRA
+issue: ValueSet-England-FlagCodeRA
 ---
 ## {{page-title}}
 
