@@ -200,7 +200,7 @@ Allows the categorisation of a sample into either tumour or germline. Additional
 
 <a name="identifier"></a>
 #### identifier
-Multiple identifiers MAY be assigned to a sample as it travels between labs. Each lab SHOULD append their local identifier to the identifier array if needed, ensuring either the system or assigner is able to disambiguate any identifiers from possibly overlapping numbers from other organizations
+Multiple identifiers MAY be assigned to a sample as it travels between labs. Each lab SHOULD append their local identifier to the identifier array if needed, ensuring either the system or assigner, is able to disambiguate any identifiers from possibly overlapping numbers from other organizations. Assigner is preferred in this case (see identifier example on the {{pagelink:Genomics-Patient}} page for further guidance)
 ```json
 "identifier":  [
         {
@@ -219,7 +219,7 @@ If a Specimen has not been collected, the status SHOULD be marked as 'unavailabl
 
 <a name="type"></a>
 #### type
-The sample type, SNOMED CT preferred.
+The sample type, SNOMED CT preferred. Used to differentiate between raw and extracted (DNA) samples.
 ```json
 "type": {
         "coding":  [

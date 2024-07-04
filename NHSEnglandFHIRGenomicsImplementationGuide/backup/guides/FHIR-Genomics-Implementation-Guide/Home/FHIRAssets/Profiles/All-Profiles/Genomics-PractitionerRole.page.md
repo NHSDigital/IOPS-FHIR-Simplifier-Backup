@@ -172,7 +172,7 @@ Users SHOULD reference practitioners using an appropriate naming system within t
 
 <a name="organization"></a>
 #### organization
-Users SHOULD reference organizations using an ODS code. Display name MAY be included to aid readability and verification of included identifiers.
+Users SHOULD reference organizations using an ODS code. Display name MAY be included to aid readability and verification of included identifiers. Requester ODS codes SHOULD use the lowest level site code rather than trust code (most granular code available) where possible, to aid contact retrieval.
 ```json
  "organization": {
         "identifier": {

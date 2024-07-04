@@ -1,5 +1,11 @@
 ## {{page-title}}
 
+The current modelling for Duo/Trio testing assumes a single ServiceRequest is sent, referencing the Proband as the subject, with Consultands being referenced though RelatedPerson resources. 
+
+Alternative approaches are to either have the ServiceRequest for the Proband reference a group comprising each subject; or have multiple ServiceRequests, one for each subject, linked via ServiceRequest.basedOn for the parent/proband request or via a a requisition identifier.
+
+These alternative aproaches are expected to be tested through the Alpha and may have implications on the model used.
+
 ### [Link to the High Fidelity Wireframe for Duo/Trio testing (family sample)](https://cts5j3.axshare.com/)
 
 The following steps is a walk through of:

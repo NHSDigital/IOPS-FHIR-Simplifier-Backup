@@ -258,8 +258,8 @@
             "coding": [
               {
                 "system": "http://snomed.info/sct",
-                "code": "103693007",
-                "display": "Diagnostic procedure"
+                "code": "165196007",
+                "display": "Procedures related to diagnosis (procedure)"
               }
             ]
           }
@@ -518,7 +518,7 @@
             "value": "9449307946"
           }
         },
-        "effectiveDateTime": "2023-08-05",
+        "effectiveDateTime": "2023-08-05"
       },
       "request": {
         "method": "POST",

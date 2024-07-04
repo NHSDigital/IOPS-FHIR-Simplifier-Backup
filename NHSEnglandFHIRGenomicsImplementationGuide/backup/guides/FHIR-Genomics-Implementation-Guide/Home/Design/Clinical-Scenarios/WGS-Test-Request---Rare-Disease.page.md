@@ -8,6 +8,8 @@ Representation of the RoD form can be through either an uploaded PDF or an elect
 
 For further details on WGS Test Requesting and RoD, refer to WGS Resources and Genomics England.
 
+**NOTE: For WGS Tumour First - Germline Late scenarios, it is expected that each would be send as in individual request (ServiceRequest), linking the 2 via basedOn, i.e. the Germline ServiceRequest would reference the Tumour ServiceRequest, via ServiceRequest.basedOn. Each ServiceRequest would reference the relevant specimen, tumour or germline.**  
+
 The following steps is a walk through of a WGS Test order workflow:
 
 ### [Link to the High Fidelity Wireframe for the WGS Rare Disease Test Scenario](https://tenq2a.axshare.com/)
