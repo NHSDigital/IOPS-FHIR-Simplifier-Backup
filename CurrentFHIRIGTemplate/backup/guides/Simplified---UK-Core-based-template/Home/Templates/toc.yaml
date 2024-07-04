@@ -24,5 +24,7 @@
   filename: ValueSet-Template.page.md
 - name: CodeSystem Template
   filename: CodeSystem-Template.page.md
+- name: SearchParameter Template
+  filename: SearchParameter-Template.page.md
 - name: Example Template
   filename: Example-Template.page.md
