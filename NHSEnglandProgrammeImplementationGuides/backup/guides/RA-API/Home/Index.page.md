@@ -37,13 +37,13 @@ Authorised healthcare workers can:
 
 * query to determine if a patient has a FGM family history indicator
 * create a FGM family history indicator for a patient
-** must be gender ‘female’, ‘unknown’ or indeterminate’ according to PDS
-** must be under the age of 18 according to PDS
-** must not already have a FGM family history indicator on FGM-IS
-** must have a verified NHS number
+  * SHALL be gender ‘female’, ‘unknown’ or indeterminate’ according to PDS
+  * SHALL be under the age of 18 according to PDS
+  * SHALL not already have a FGM family history indicator on FGM-IS
+  * SHALL have a verified NHS number
 * delete a FGM family history indicator for a patient
 
-The FGM FLag record contains:
+The FGM Flag record contains:
 
 * an indicator that a child with female genitalia has a family history of FGM
 * the date that the FGM assessment was carried out

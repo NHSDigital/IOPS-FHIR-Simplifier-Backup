@@ -37,9 +37,9 @@ The RA record is made up of Flag, Provenance and Condition resources.
 
 The presence of and entitlement to reasonable adjustments is represented by a PatientFlag resource. It can be interpreted as meaning 'this patient has reasonable adjustments'.
 
-Individual adjustments are represented as ProgrammeFlag resource instances. They can be interpreted as meaning e.g.'this patient requires Easy read'
+Individual adjustments are represented as ProgrammeFlag resource instances. They can be interpreted as meaning e.g.'this patient requires Easy read'.
 
-Patients may optionally request details of underlying conditions are recorded and shared where this enhances healthcare. These are represented as FlagCondition resources
+Patients may optionally request details of underlying conditions are recorded and shared where this enhances healthcare. These are represented as FlagCondition resources.
 
 Provenance of all resources that make up an RA record must be stored.  This is modelled here as a contained resource, and as such has no lifetime outside of the constituent RA record resources.
 
@@ -103,10 +103,10 @@ Authorised healthcare workers can:
 
 - query to determine if a patient has a FGM family history indicator
 - create a FGM family history indicator for a patient
--- must be gender ‘female’, ‘unknown’ or indeterminate’ according to PDS
--- must be under the age of 18 according to PDS
--- must not already have a FGM family history indicator on FGM-IS
--- must have a verified NHS number
+  - must be gender `female`, `unknown` or `indeterminate` according to PDS
+  - must be under the age of 18 according to PDS
+  - must not already have a FGM family history indicator on FGM-IS
+  - must have a verified NHS number
 - delete a FGM family history indicator for a patient
 
 The FGM flag is interpreted as:

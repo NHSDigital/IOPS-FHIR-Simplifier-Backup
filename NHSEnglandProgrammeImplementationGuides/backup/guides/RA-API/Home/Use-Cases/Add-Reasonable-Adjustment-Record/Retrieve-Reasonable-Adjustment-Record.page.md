@@ -5,7 +5,7 @@ For high level requirements, see {{pagelink:Home}}.
 
 ### Use Case
 
-A Reasonable Adjustment Record may be retrieved if it exists.  It will be possible to determine that a adjustment flags exist by searching for a {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} with: 
+A Reasonable Adjustment Record may be retrieved if it exists.  It will be possible to determine that adjustment flags exist by searching for a {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} with: 
 - the code `national-reasonable-adjustments-flag` (see {{pagelink:England-Flag-Category-Patient}}), 
 - or {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} with a category of `national-reasonable-adjustments-flag` (see {{pagelink:England-Flag-Category-Patient}}).
 
@@ -116,7 +116,7 @@ This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/f
 
 **NOTE:** For every additional record/resource added, the flag-detail element in the Patient Flag resource will need updated.
 
-If the [flag-detail extension](http://hl7.org/fhir/StructureDefinition/flag-detail) is used, then references to all Reasonable Adjustment resources can be included the {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} resource.
+If the [flag-detail extension](http://hl7.org/fhir/StructureDefinition/flag-detail) is used, then references to all Reasonable Adjustment resources can be included in the {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} resource.
 
 This will return all associated flag resources for Reasonable Adjustments.
 
@@ -127,7 +127,7 @@ http://localhost:8080/fhir/Flag?patient.identifier=9912003888&_include=Flag:deta
 This limits the search to patients that have the identifier `9912003888`
 
 ```
-patient.identifier=9912003888=9912003888
+patient.identifier=9912003888
 ```
 
 This includes all references in the flag detail extension that have been defined in the {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagDetail.page.md}} SearchParameter.
