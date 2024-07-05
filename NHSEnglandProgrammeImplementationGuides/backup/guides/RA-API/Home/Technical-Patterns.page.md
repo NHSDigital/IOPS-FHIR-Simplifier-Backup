@@ -1,4 +1,4 @@
-## Technical patterns
+## Technical Patterns
 
 The Patient Flag API and all it's sub-domains use the [FHIR REST](http://hl7.org/fhir/r4/http.html) paradigm.
 
@@ -8,7 +8,7 @@ Implementations SHOULD provide capability to offer and consume RESTful interacti
 
 Implementations SHALL provide capability to offer and consume basic CRUD (create, read/search, update, delete) interactions via http.
 
-Implementations SHALL provide capability to offer and consume additional FHIR REST functionality, e.g. Transaction support, Conditional Update etc. as required in the relevant, specific Implementation guidance in play for a given integration.
+Implementations SHALL provide capability to offer and consume additional FHIR REST functionality, e.g. Transaction support, Conditional Update etc. as required in the relevant, specific implementation guidance in play for a given integration.
 
 Implementers SHALL be aware of and compliant with standard FHIR REST functionality defined in the HL7 FHIR Specification on topics:
 
@@ -23,18 +23,18 @@ and in using:
 
 
 
-### Capability statements
+### Capability Statements
 
 Applications/systems offering an API SHALL document resources and interactions supported via a CapabilityStatement resource available as per [CapabilityStatement](http://hl7.org/fhir/r4/capabilitystatement.html) and [Conformance Rules](http://hl7.org/fhir/r4/conformance-rules.html) pages of the FHIR (Release 4) Specification.
 
 Applications/systems integrating with an API SHALL document resources and interactions supported via a CapabilityStatement resource available as per [CapabilityStatement](http://hl7.org/fhir/r4/capabilitystatement.html) and [Conformance Rules](http://hl7.org/fhir/r4/conformance-rules.html) pages of the FHIR (Release 4) Specification.
 
-### Specific implementations
+### Specific Implementations
 
 Implementations SHALL provide all functionality additionally required by their specification and/or Implementation guidance.
 This may constitute:
 
-* Standard integration requirements regarding e.g. Authorisation, Logging etc.
+* Standard integration requirements regarding authorisation, logging etc.
 * Additional FHIR constraints
 * Additional non-FHIR business rules and process requirements
 

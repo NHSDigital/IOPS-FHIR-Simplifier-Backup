@@ -86,7 +86,7 @@ This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/f
 
 **NOTE:** For every additional record/resource added, the flag-detail element in the Patient Flag resource will need updated.
 
-If the [flag-detail extension](http://hl7.org/fhir/StructureDefinition/flag-detail) is used, then references to all Reasonable Adjustment resources can be included the [Patient Flag](StructureDefinition-PatientFlag.html) resource.
+If the [flag-detail extension](http://hl7.org/fhir/StructureDefinition/flag-detail) is used, then references to all Reasonable Adjustment resources can be included in the [Patient Flag](StructureDefinition-PatientFlag.html) resource.
 
 This will return all associated flag resources for Female Genital Mutilation records.
 
@@ -97,7 +97,7 @@ http://localhost:8080/fhir/Flag?patient.identifier=9912003888&_include=Flag:deta
 This limits the search to patients that have the identifier `9912003888`
 
 ```
-patient.identifier=9912003888=9912003888
+patient.identifier=9912003888
 ```
 
 This includes all references in the flag detail extension that have been defined in the {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagDetail.page.md}} SearchParameter.
