@@ -1,2 +1,6 @@
 - name: 'Extension: Extension-ITK-MessageHandling-2'
   filename: Extension-Extension-ITK-MessageHandling-2
+- name: 'Extension: Extension-CareConnect-DateRecorded-1'
+  filename: Extension-Extension-CareConnect-DateRecorded-1
+- name: 'Extension: Extension-CareConnect-VaccinationProcedure-1'
+  filename: Extension-Extension-CareConnect-VaccinationProcedure-1
