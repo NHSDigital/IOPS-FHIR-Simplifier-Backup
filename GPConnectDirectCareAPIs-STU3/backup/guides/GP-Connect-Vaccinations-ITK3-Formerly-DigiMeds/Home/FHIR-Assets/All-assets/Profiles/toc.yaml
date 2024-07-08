@@ -22,10 +22,6 @@
   filename: Profile-CareConnect-ITK-Encounter-1
 - name: 'Profile: CareConnect-ITK-DM-Immunization-1'
   filename: Profile-CareConnect-ITK-DM-Immunization-1
-- name: 'Profile: CareConnect-ITK-Procedure-List-1'
-  filename: Profile-CareConnect-ITK-Procedure-List-1
-- name: 'Profile: CareConnect-ITK-Procedure-1'
-  filename: Profile-CareConnect-ITK-Procedure-1
 - name: 'Profile: CareConnect-ITK-Allergy-List-1'
   filename: Profile-CareConnect-ITK-Allergy-List-1
 - name: 'Profile: CareConnect-ITK-AllergyIntolerance-1'

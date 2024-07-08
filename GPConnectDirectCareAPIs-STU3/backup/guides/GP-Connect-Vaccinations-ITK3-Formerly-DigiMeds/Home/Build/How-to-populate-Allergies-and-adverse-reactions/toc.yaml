@@ -1,6 +1,10 @@
 - name: Index
   filename: Index.page.md
-- name: FHIR snippet
-  filename: FHIR-snippet.page.md
-- name: Example render
-  filename: Example-render.page.md
+- name: FHIR snippet (HTML)
+  filename: FHIR-snippet-HTML.page.md
+- name: Example HTML render
+  filename: Example-HTML-render.page.md
+- name: FHIR snippet (CareConnect-ITK-Allergy-List-1)
+  filename: FHIR-snippet-CareConnect-ITK-Allergy-List-1.page.md
+- name: FHIR snippet (CareConnect-ITK-AllergyIntolerance-1)
+  filename: FHIR-snippet-CareConnect-ITK-AllergyIntolerance-1.page.md
