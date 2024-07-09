@@ -105,5 +105,21 @@
             <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>
             <td class="nhsd-t-body"><code>1..*</code></td>
         </tr>
+        <!-- CareConnect-ITK-AllergyList-1 -->
+        <tr>
+            <td class="nhsd-t-body">
+                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-CareConnect-ITK-Allergy-List-1}}
+            </td>
+            <td class="nhsd-t-body"><span class="mro-circle required"></span> Required</td>
+            <td class="nhsd-t-body"><code>0..1</code></td>
+        </tr>
+        <!-- CareConnect-ITK-AllergyList-1 -->
+        <tr>
+            <td class="nhsd-t-body">
+                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-CareConnect-ITK-AllergyIntolerance-1}}
+            </td>
+            <td class="nhsd-t-body"><span class="mro-circle required"></span> Required</td>
+            <td class="nhsd-t-body"><code>0..*</code></td>
+        </tr>
     </tbody>
 </table>
