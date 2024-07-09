@@ -314,12 +314,13 @@ ul.dropdown-menu {
 
 /* DigiMeds HTML render styling */
 .section-entry-block > .section-entry-heading {
-  background: #005EB8;
+  background: #003087;
   color: #fff;
   font-weight: 600;
   letter-spacing: -.0277rem;
   line-height: 1.5454;
   padding: 10px;
+  margin-bottom: 5px;
 }
 
 .section-entry-block th {
@@ -330,4 +331,9 @@ ul.dropdown-menu {
 
 .section-entry-block td::first-letter {
   text-transform: capitalize;
+}
+
+.section-entry-block table {
+  border-bottom: 5px solid #0072CE;
+  margin-bottom: 5px;
 }

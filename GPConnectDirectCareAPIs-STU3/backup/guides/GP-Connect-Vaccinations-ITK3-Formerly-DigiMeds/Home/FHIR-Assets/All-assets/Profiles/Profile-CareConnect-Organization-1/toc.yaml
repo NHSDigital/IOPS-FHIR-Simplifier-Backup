@@ -1,7 +1,5 @@
 - name: 'Profile: CareConnect-Organization-1'
   filename: Profile-CareConnect-Organization-1.page.md
-- name: Related links
-  filename: Related-links.page.md
 - name: id
   filename: id.page.md
 - name: meta.profile

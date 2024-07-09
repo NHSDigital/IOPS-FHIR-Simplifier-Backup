@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: Related links
-  filename: Related-links.page.md
 - name: id
   filename: id.page.md
 - name: meta.versionId

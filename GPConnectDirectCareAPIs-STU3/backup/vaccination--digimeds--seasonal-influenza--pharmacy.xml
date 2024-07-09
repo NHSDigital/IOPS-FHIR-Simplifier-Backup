@@ -1,0 +1,727 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="a21a2bd4-2bc7-40f9-96ff-5854e5814758" />
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="07e6c9e0-a8dd-4a5c-a140-fd0b07bec3de" />
+    </identifier>
+    <type value="message" />
+    <entry>
+        <fullUrl value="urn:uuid:8beaf9e1-1ee7-402c-b4bc-29d8a5b291c2" />
+        <resource>
+            <MessageHeader>
+                <id value="8beaf9e1-1ee7-402c-b4bc-29d8a5b291c2" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2" />
+                </meta>
+                <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+                    <extension url="BusAckRequested">
+                        <valueBoolean value="true" />
+                    </extension>
+                    <extension url="InfAckRequested">
+                        <valueBoolean value="true" />
+                    </extension>
+                    <extension url="RecipientType">
+                        <valueCoding>
+                            <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1" />
+                            <code value="FA" />
+                            <display value="For Action" />
+                        </valueCoding>
+                    </extension>
+                    <extension url="MessageDefinition">
+                        <valueReference>
+                            <reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-DM-Immunization-MessageDefinition-1" />
+                        </valueReference>
+                    </extension>
+                    <extension url="SenderReference">
+                        <valueString value="None" />
+                    </extension>
+                    <extension url="LocalExtension">
+                        <valueString value="None" />
+                    </extension>
+                </extension>
+                <event>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+                    <code value="ITK009D" />
+                    <display value="ITK Digital Medicine Immunization Document" />
+                </event>
+                <timestamp value="2019-09-10T07:35:54Z" />
+                <receiver>
+                    <reference value="urn:uuid:e9d91324-2c27-41ba-a830-e30f4d9978c3" />
+                </receiver>
+                <sender>
+                    <reference value="urn:uuid:522ff955-42a2-49a4-93c8-dbb8d03f8175" />
+                </sender>
+                <source>
+                    <endpoint value="SOURCE_MESH_MAILBOX_ID" />
+                </source>
+                <focus>
+                    <reference value="urn:uuid:82cc309c-a994-4318-970a-17a9dfdc1ef0" />
+                </focus>
+            </MessageHeader>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:522ff955-42a2-49a4-93c8-dbb8d03f8175" />
+        <resource>
+            <Organization>
+                <id value="522ff955-42a2-49a4-93c8-dbb8d03f8175" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                    <value value="X26" />
+                </identifier>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:e9d91324-2c27-41ba-a830-e30f4d9978c3" />
+        <resource>
+            <Organization>
+                <id value="e9d91324-2c27-41ba-a830-e30f4d9978c3" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                    <value value="X26" />
+                </identifier>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:82cc309c-a994-4318-970a-17a9dfdc1ef0" />
+        <resource>
+            <Bundle xmlns="http://hl7.org/fhir">
+                <id value="82cc309c-a994-4318-970a-17a9dfdc1ef0" />
+                <meta>
+                    <lastUpdated value="2019-07-03T13:31:32Z" />
+                    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1" />
+                </meta>
+                <identifier>
+                    <system value="https://tools.ietf.org/html/rfc4122" />
+                    <value value="79dfb29a-5a88-4abb-94ea-6d5c43545b83" />
+                </identifier>
+                <type value="document" />
+                <entry>
+                    <fullUrl value="urn:uuid:9fe3090b-7b68-4fb3-9fd7-2757dd702fb1" />
+                    <resource>
+                        <Composition>
+                            <id value="9fe3090b-7b68-4fb3-9fd7-2757dd702fb1" />
+                            <meta>
+                                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-DM-Immunization-Composition-1" />
+                            </meta>
+                            <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareSettingType-1">
+                                <valueCodeableConcept>
+                                    <coding>
+                                        <system value="http://snomed.info/sct" />
+                                        <code value="310080006" />
+                                        <display value="Pharmacy service" />
+                                    </coding>
+                                </valueCodeableConcept>
+                            </extension>
+                            <identifier>
+                                <system value="https://tools.ietf.org/html/rfc4122" />
+                                <value value="848b58a4-b4d5-4d0a-85e2-2e0eed6e17c7" />
+                            </identifier>
+                            <status value="final" />
+                            <type>
+                                <coding>
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="41000179103" />
+                                    <display value="Immunisation record" />
+                                </coding>
+                            </type>
+                            <subject>
+                                <reference value="urn:uuid:528c5c00-7239-4cdc-a39a-292c4ba73a7d" />
+                            </subject>
+                            <encounter>
+                                <reference value="urn:uuid:3278504b-ce5b-4fd2-8a73-59e53c95b4b3" />
+                            </encounter>
+                            <date value="2019-07-03T13:31:32Z" />
+                            <title value="Community Pharmacy Seasonal Flu Vaccine Record" />
+                            <author>
+                                <reference value="urn:uuid:f24b18e1-fe0f-46e8-9540-6c3c74db06e9" />
+                            </author>
+                            <custodian>
+                                <reference value="urn:uuid:ec147bd5-09b9-4ff6-a63c-5176153306cf" />
+                            </custodian>
+                            <section>
+                                <title value="Allergies and Adverse Reactions" />
+                                <code>
+                                    <coding>
+                                        <system value="http://snomed.info/sct" />
+                                        <code value="886921000000105" />
+                                        <display value="Allergies and adverse reactions" />
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional" />
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <table width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Causative agent</th>
+                                                    <td>No known drug allergy</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </text>
+                                <entry>
+                                    <reference value="urn:uuid:268923b0-03ec-4b1a-92b4-de9d14b25a0e" />
+                                </entry>
+                            </section>
+                            <section>
+                                <title value="Attendance Details" />
+                                <code>
+                                    <coding>
+                                        <system value="http://snomed.info/sct" />
+                                        <code value="1077881000000105" />
+                                        <display value="Attendance details" />
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional" />
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <table width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Date of contact</th>
+                                                    <td>09 Jul 2024</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Organisation name</th>
+                                                    <td>Name: Pharmacy</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Organisation address</th>
+                                                    <td>1 Street name, Town, City Post code</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Telephone</th>
+                                                    <td>01234 567 890</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Secure email</th>
+                                                    <td>example.email@nhs.net</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </text>
+                                <entry>
+                                    <reference value="urn:uuid:3278504b-ce5b-4fd2-8a73-59e53c95b4b3" />
+                                </entry>
+                            </section>
+                            <section>
+                                <title value="Consent" />
+                                <code>
+                                    <coding>
+                                        <system value="http://snomed.info/sct" />
+                                        <code value="61861000000100" />
+                                        <display value="Consent" />
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional" />
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <table width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Consent for treatment record</th>
+                                                    <td>Patient's consent for treatment has been attained.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Consent for information sharing</th>
+                                                    <td>Patient is happy for the immunisation details to be shared with their Registered GP practice.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </text>
+                            </section>
+                            <section>
+                                <title value="Eligibility Criteria" />
+                                <code>
+                                    <coding>
+                                        <system value="http://snomed.info/sct" />
+                                        <code value="61871000000107" />
+                                        <display value="Eligibility for treatment" />
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional" />
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <table width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Eligibility criteria</th>
+                                                    <td>65 years and over</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </text>
+                            </section>
+                            <section>
+                                <title value="GP Practice" />
+                                <code>
+                                    <coding>
+                                        <system value="http://snomed.info/sct" />
+                                        <code value="886711000000101" />
+                                        <display value="GP practice" />
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional" />
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <table width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <th>GP ODS Code</th>
+                                                    <td>X26</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>GP Practice Name</th>
+                                                    <td>NHS England</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>GP Practice Address</th>
+                                                    <td>1 Street name, Town, City Post code</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </text>
+                                <entry>
+                                    <reference value="urn:uuid:a4a04424-4e58-481f-952d-c8678bb36378" />
+                                </entry>
+                            </section>
+                            <section>
+                                <title value="Vaccinations" />
+                                <code>
+                                    <coding>
+                                        <system value="http://snomed.info/sct" />
+                                        <code value="1102181000000102" />
+                                        <display value="Immunisations" />
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional" />
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <table width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Vaccine product</th>
+                                                    <td>Seasonal influenza vaccination given by pharmacist</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Site</th>
+                                                    <td>Right upper arm</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Route</th>
+                                                    <td>Subcutaneous route</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Indication</th>
+                                                    <td>65 years and over</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Administered by</th>
+                                                    <td>Pharmacist</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>GPhC identifier</th>
+                                                    <td>999999</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <td>09 Jul 2024</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </text>
+                                <entry>
+                                    <reference value="urn:uuid:66806128-16fb-43c7-aecc-f9e0382f3f34" />
+                                </entry>
+                            </section>
+                            <section>
+                                <title value="Information and Advice given" />
+                                <code>
+                                    <coding>
+                                        <system value="http://snomed.info/sct" />
+                                        <code value="1052951000000105" />
+                                        <display value="Information and advice given" />
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional" />
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <table width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Information and advice given</th>
+                                                    <td>Patient advised the side effects of the vaccine and requested to see their registered GP if any of the symptoms last longer than the expected duration.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </text>
+                            </section>
+                            <section>
+                                <title value="Patient Demographics" />
+                                <code>
+                                    <coding>
+                                        <system value="http://snomed.info/sct" />
+                                        <code value="886731000000109" />
+                                        <display value="Patient demographics" />
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional" />
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <table width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Patient name</th>
+                                                    <td>Test PATIENT</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Date of birth</th>
+                                                    <td>16 Sep 1930</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Gender</th>
+                                                    <td>Female</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>NHS number</th>
+                                                    <td>485 777 3456</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Patient address</th>
+                                                    <td>1 STREET NAME, TOWN, CITY, COUNTY POST CODE</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </text>
+                                <entry>
+                                    <reference value="urn:uuid:528c5c00-7239-4cdc-a39a-292c4ba73a7d" />
+                                </entry>
+                            </section>
+                        </Composition>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:3278504b-ce5b-4fd2-8a73-59e53c95b4b3" />
+                    <resource>
+                        <Encounter>
+                            <id value="3278504b-ce5b-4fd2-8a73-59e53c95b4b3" />
+                            <meta>
+                                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Encounter-1" />
+                            </meta>
+                            <status value="finished" />
+                            <subject>
+                                <reference value="urn:uuid:528c5c00-7239-4cdc-a39a-292c4ba73a7d" />
+                                <display value="Test PATIENT" />
+                            </subject>
+                            <participant>
+                                <type>
+                                    <coding>
+                                        <system value="http://hl7.org/fhir/v3/ParticipationType" />
+                                        <code value="PPRF" />
+                                        <display value="primary performer" />
+                                    </coding>
+                                </type>
+                                <individual>
+                                    <reference value="urn:uuid:f24b18e1-fe0f-46e8-9540-6c3c74db06e9" />
+                                    <display value="Pharmacist" />
+                                </individual>
+                            </participant>
+                            <period>
+                                <start value="1986-07-23T00:00:00Z" />
+                            </period>
+                            <serviceProvider>
+                                <reference value="urn:uuid:ec147bd5-09b9-4ff6-a63c-5176153306cf" />
+                                <display value="Test ORGANISATION" />
+                            </serviceProvider>
+                        </Encounter>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:ec147bd5-09b9-4ff6-a63c-5176153306cf" />
+                    <resource>
+                        <Organization>
+                            <id value="ec147bd5-09b9-4ff6-a63c-5176153306cf" />
+                            <meta>
+                                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+                            </meta>
+                            <identifier>
+                                <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                                <value value="X26" />
+                            </identifier>
+                            <name value="Test ORGANISATION" />
+                            <address>
+                                <line value="1 High Street, Overtown, Leeds LS1 9AM" />
+                            </address>
+                            <telecom>
+                                <system value="phone" />
+                                <value value="01234 567 890" />
+                                <use value="work" />
+                            </telecom>
+                            <telecom>
+                                <system value="email" />
+                                <value value="email.example@nhs.net" />
+                                <use value="work" />
+                            </telecom>
+                        </Organization>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:528c5c00-7239-4cdc-a39a-292c4ba73a7d" />
+                    <resource>
+                        <Patient xmlns="http://hl7.org/fhir">
+                            <id value="528c5c00-7239-4cdc-a39a-292c4ba73a7d" />
+                            <meta>
+                                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+                            </meta>
+                            <identifier>
+                                <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+                                    <valueCodeableConcept>
+                                        <coding>
+                                            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                                            <code value="01" />
+                                            <display value="Number present and verified" />
+                                        </coding>
+                                    </valueCodeableConcept>
+                                </extension>
+                                <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                                <value value="485 777 3456" />
+                            </identifier>
+                            <name>
+                                <use value="official" />
+                                <text>Test PATIENT</text>
+                                <family value="PATIENT" />
+                                <given value="Test" />
+                            </name>
+                            <gender value="female" />
+                            <birthDate value="1930-09-16" />
+                            <address>
+                                <use value="home" />
+                                <text value="1 STREET NAME, TOWN, CITY, COUNTY POST CODE" />
+                            </address>
+                            <generalPractitioner>
+                                <reference value="urn:uuid:a4a04424-4e58-481f-952d-c8678bb36378" />
+                            </generalPractitioner>
+                            <managingOrganization>
+                                <reference value="urn:uuid:ec147bd5-09b9-4ff6-a63c-5176153306cf" />
+                            </managingOrganization>
+                        </Patient>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:a4a04424-4e58-481f-952d-c8678bb36378" />
+                    <resource>
+                        <Organization>
+                            <id value="a4a04424-4e58-481f-952d-c8678bb36378" />
+                            <meta>
+                                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+                            </meta>
+                            <identifier>
+                                <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                                <value value="X26" />
+                            </identifier>
+                            <name value="Test ORGANISATION" />
+                            <address>
+                                <line value="1 Street name, Town, City Post code" />
+                            </address>
+                        </Organization>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:f24b18e1-fe0f-46e8-9540-6c3c74db06e9" />
+                    <resource>
+                        <Practitioner>
+                            <id value="f24b18e1-fe0f-46e8-9540-6c3c74db06e9" />
+                            <meta>
+                                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" />
+                            </meta>
+                            <identifier>
+                                <system value="https://fhir.hl7.org.uk/Id/gphc-number" />
+                                <value value="2036897" />
+                            </identifier>
+                            <name>
+                                <use value="official" />
+                                <text value="PRACTITIONER Test" />
+                                <family value="PRACTITIONER" />
+                                <given value="Test" />
+                            </name>
+                            <telecom>
+                                <system value="phone" />
+                                <value value="01234 567 890" />
+                                <use value="work" />
+                            </telecom>
+                            <telecom>
+                                <system value="email" />
+                                <value value="example.email@nhs.net" />
+                                <use value="work" />
+                            </telecom>
+                        </Practitioner>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:66806128-16fb-43c7-aecc-f9e0382f3f34" />
+                    <resource>
+                        <Immunization>
+                            <id value="66806128-16fb-43c7-aecc-f9e0382f3f34" />
+                            <meta>
+                                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-DM-Immunization-1" />
+                            </meta>
+                            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1">
+                                <valueCodeableConcept>
+                                    <coding>
+                                        <system value="http://snomed.info/sct" />
+                                        <code value="955691000000108" />
+                                        <display value="Seasonal influenza vaccination given by pharmacist" />
+                                    </coding>
+                                </valueCodeableConcept>
+                            </extension>
+                            <status value="completed" />
+                            <notGiven value="false" />
+                            <vaccineCode>
+                                <coding>
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="37514811000001102" />
+                                    <display value="Fluad vaccine suspension for injection 0.5ml pre-filled syringes" />
+                                </coding>
+                            </vaccineCode>
+                            <patient>
+                                <reference value="urn:uuid:528c5c00-7239-4cdc-a39a-292c4ba73a7d" />
+                                <display value="Test PATIENT" />
+                            </patient>
+                            <encounter>
+                                <reference value="urn:uuid:3278504b-ce5b-4fd2-8a73-59e53c95b4b3" />
+                            </encounter>
+                            <date value="1986-07-23" />
+                            <primarySource value="true" />
+                            <site>
+                                <coding>
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="368209003" />
+                                    <display value="Right upper arm" />
+                                </coding>
+                            </site>
+                            <route>
+                                <coding>
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="34206005" />
+                                    <display value="Subcutaneous route" />
+                                </coding>
+                            </route>
+                            <practitioner>
+                                <role>
+                                    <coding>
+                                        <system value="http://hl7.org/fhir/v2/0443" />
+                                        <code value="AP" />
+                                        <display value="Administering Provider" />
+                                    </coding>
+                                </role>
+                                <actor>
+                                    <reference value="urn:uuid:f24b18e1-fe0f-46e8-9540-6c3c74db06e9" />
+                                    <display value="Test PRACTITIONER" />
+                                </actor>
+                            </practitioner>
+                            <explanation>
+                                <reason>
+                                    <coding>
+                                        <system value="http://hl7.org/fhir/v3/NullFlavor" />
+                                        <code value="UNC" />
+                                        <display value="65 years and over" />
+                                    </coding>
+                                </reason>
+                            </explanation>
+                        </Immunization>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:268923b0-03ec-4b1a-92b4-de9d14b25a0e" />
+                    <resource>
+                        <List xmlns="http://hl7.org/fhir">
+                            <id value="268923b0-03ec-4b1a-92b4-de9d14b25a0e" />
+                            <meta>
+                                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Allergy-List-1" />
+                            </meta>
+                            <identifier>
+                                <system value="https://tools.ietf.org/html/rfc4122" />
+                                <value value="268923b0-03ec-4b1a-92b4-de9d14b25a0e" />
+                            </identifier>
+                            <status value="current" />
+                            <mode value="snapshot" />
+                            <code>
+                                <coding>
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="886921000000105" />
+                                    <display value="Allergies and adverse reactions" />
+                                </coding>
+                            </code>
+                            <subject>
+                                <reference value="urn:uuid:528c5c00-7239-4cdc-a39a-292c4ba73a7d" />
+                                <display value="Test PATIENT" />
+                            </subject>
+                            <encounter>
+                                <reference value="urn:uuid:3278504b-ce5b-4fd2-8a73-59e53c95b4b3" />
+                            </encounter>
+                            <source>
+                                <reference value="urn:uuid:f24b18e1-fe0f-46e8-9540-6c3c74db06e9" />
+                                <display value="Test PRACTITIONER" />
+                            </source>
+                            <entry>
+                                <item>
+                                    <reference value="urn:uuid:c58dc76f-66bf-4010-8d89-c4e7034803d2" />
+                                </item>
+                            </entry>
+                        </List>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:c58dc76f-66bf-4010-8d89-c4e7034803d2" />
+                    <resource>
+                        <AllergyIntolerance xmlns="http://hl7.org/fhir">
+                            <id value="c58dc76f-66bf-4010-8d89-c4e7034803d2" />
+                            <meta>
+                                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-AllergyIntolerance-1" />
+                            </meta>
+                            <identifier>
+                                <system value="https://tools.ietf.org/html/rfc4122" />
+                                <value value="c58dc76f-66bf-4010-8d89-c4e7034803d2" />
+                            </identifier>
+                            <clinicalStatus value="active" />
+                            <verificationStatus value="unconfirmed" />
+                            <category value="medication" />
+                            <code>
+                                <coding>
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="409137002" />
+                                    <display value="No known drug allergy" />
+                                </coding>
+                            </code>
+                            <patient>
+                                <reference value="urn:uuid:528c5c00-7239-4cdc-a39a-292c4ba73a7d" />
+                                <display value="Test PATIENT" />
+                            </patient>
+                            <assertedDate value="2019-09-10" />
+                        </AllergyIntolerance>
+                    </resource>
+                </entry>
+            </Bundle>
+        </resource>
+    </entry>
+</Bundle>
