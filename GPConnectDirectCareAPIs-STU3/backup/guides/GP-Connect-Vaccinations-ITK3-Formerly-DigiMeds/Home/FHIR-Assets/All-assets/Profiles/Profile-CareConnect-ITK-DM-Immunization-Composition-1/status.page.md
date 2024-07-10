@@ -7,10 +7,6 @@
 
 <h5><ins>Guidance</ins></h5>
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <b>Note</b>:It is expected that this capability <ins>will not</ins> be used to send documents that are currently being worked on and, while it could potentially be used to do so, care must be taken by both the sender and receiver in how to handle documents with different statuses.
-</div>
-
 At the time of writing, the codesystem for `CompositionStatus` contains the following:
 
 - `preliminary`
