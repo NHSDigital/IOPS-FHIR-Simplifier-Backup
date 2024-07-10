@@ -523,3 +523,21 @@ a.external:after {
    content: "\f08e";
     padding-left: 5px;
 }
+
+/* ADDED TO BASE TEMPLATE */
+@media (min-width: 768px) {
+    .container {
+        width: 95%;
+        max-width: 95%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-6 {
+        width: 19%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-18 {
+        width: 80%;
+    }
+}
