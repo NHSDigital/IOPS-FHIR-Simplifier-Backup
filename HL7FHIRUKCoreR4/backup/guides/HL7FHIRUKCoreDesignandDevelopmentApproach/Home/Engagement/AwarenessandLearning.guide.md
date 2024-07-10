@@ -24,7 +24,15 @@ This section gives access to material that has been previously shared with the F
 <tr>
 <td><a href="https://youtu.be/BT17_5ROp3Q" target="_blank">"Clinicians on FHIR"</a>: A video presented by David Hay - Interop Summit</a></td>
 <td>14 Mar 2018</td>
-</tr> 
+</tr>
+<tr>
+<td><a href="https://vimeo.com/112905640">FHIR for Executives - An Overview</a> - A video presented by Rene Spronk</td>
+<td>26 Nov 2014</td>
+</tr>
+<tr>
+<td><a href="https://fire.ly/blog/what-is-fhir/">What is FHIR</a> - A short read by Simplifier</td>
+<td>29 Sep 2022</td>
+</tr>
 </table>
 
 ---

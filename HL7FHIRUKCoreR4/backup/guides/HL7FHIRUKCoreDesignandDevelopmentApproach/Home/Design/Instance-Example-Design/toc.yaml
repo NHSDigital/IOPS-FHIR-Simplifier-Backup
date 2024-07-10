@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Constraints and Configuration
+  filename: Constraints-and-Configuration.page.md
+- name: Construction of Examples
+  filename: Construction-of-Examples.page.md
+- name: Resource Example Illustration
+  filename: Resource-Example-Illustration.page.md
+- name: Extension Example Illustration
+  filename: Extension-Example-Illustration.page.md
+- name: Snippet Example Illustration
+  filename: Snippet-Example-Illustration.page.md
+- name: Configuration of Simplifier
+  filename: Configuration-of-Simplifier.page.md
