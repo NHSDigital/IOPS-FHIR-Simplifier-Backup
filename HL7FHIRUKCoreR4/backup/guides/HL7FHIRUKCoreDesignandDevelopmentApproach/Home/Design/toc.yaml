@@ -1,0 +1,18 @@
+- name: Design Principle
+  filename: Design-Principle.page.md
+- name: Metadata Design
+  filename: Metadata-Design
+- name: Profile Design
+  filename: Profile-Design
+- name: Extension Design
+  filename: Extension-Design
+- name: ValueSet Design
+  filename: ValueSet-Design
+- name: CodeSystem Design
+  filename: CodeSystem-Design
+- name: ConceptMap Design
+  filename: ConceptMap-Design
+- name: Instance Example Design
+  filename: Instance-Example-Design
+- name: IG Page Design
+  filename: IG-Page-Design
