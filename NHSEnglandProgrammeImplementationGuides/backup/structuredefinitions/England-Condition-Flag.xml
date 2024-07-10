@@ -105,7 +105,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/England/ValueSet//England-FlagConditionCategory" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-FlagConditionCategory" />
       </binding>
     </element>
     <element id="Condition.code">
