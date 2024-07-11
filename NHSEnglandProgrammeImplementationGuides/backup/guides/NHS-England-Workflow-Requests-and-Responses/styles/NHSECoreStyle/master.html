@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ guide-title }}</title>
+
+        <link rel="icon" href="{{content}}/styles/common/favicon.ico" />
+        <link rel="stylesheet" href="{{content}}/styles/common/main.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
+        <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link href="https://design-system.digital.nhs.uk/" rel="preconnect" crossorigin="">
+    <link rel="stylesheet" href="https://design-system.digital.nhs.uk/cdn/v0.97.0/stylesheets/nhsd-frontend.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="//nhs-prod.global.ssl.fastly.net/webfiles/1629803351410/dist/nhsd-frontend-edge-cases.css" media="screen" type="text/css" />
+
+    <link type="font/woff2" href="https://dbs1dgg3cdf4v.cloudfront.net/cdn/latest/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
+    <link type="font/woff2" href="https://dbs1dgg3cdf4v.cloudfront.net/cdn/latest/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
+    <link type="font/woff2" href="https://dbs1dgg3cdf4v.cloudfront.net/cdn/latest/fonts/FrutigerLTW01-45Light.woff2" rel="preload" as="font" crossorigin>
+
+        <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
+        <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/baseTreetable.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="container">
+                <div id="header" class="row">
+                    <div class="col-md-4 hl7-fhir-logo-lhs">
+                        <a href="https://digital.nhs.uk/">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/NHS_England_logo.svg/2560px-NHS_England_logo.svg.png" height="50" alt="NHS England logo"/>
+                        </a>
+                    </div>
+                    <div class="col-md-16">
+                            <h3>{{ guide-title }}</h3>
+                    </div>
+                    <div class="col-md-4 hl7-logo">
+                        <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
+                           <img src="https://www.hl7.org/fhir/assets/images/fhir-logo-www.png" height="30" alt="HL7 FHIR logo"/>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            {{ dropdown-navigation }}
+        </header>
+
+        <!-- Implementation guide content -->
+        <div role="main" class="content container">
+
+            <!-- Header to be displayed on each page -->
+            <!--Comment out for publication, start-->
+            <div id="development-notice" markdown="span" class="alert alert-danger" role="alert">
+                <h4><i class="fas fa-exclamation-triangle"></i> WARNING</h4>
+                This guidance is under active development by NHS England and content may be added or updated on a regular basis.
+            </div>
+            <!--Comment out for publication, end-->
+
+            {{ page-with-children }}
+        </div>
+
+        <!-- back to top button -->
+        <a id="back-to-top" class="btn btn-fhir" onclick="goBackToTop()">
+            back to top
+        </a>
+
+        <footer>
+            <div class="container">            
+                <table role="none" title="Footer Links" width="100%">
+                    	<col style="width:19%">
+	                    <col style="width:17%">
+    	                <col style="width:18%">
+	                    <col style="width:13%">
+    	                <col style="width:33%">
+                  <tr>
+                      <td>Powered by <b>SIMPLIFIER.NET</b></td>                      
+                      <td>IG © 2023+ NHS England</td>
+                      <td><span><b>Version:</b> {{ guide-version }}</span></td>
+                      <td><span><b>FHIR Version:</b> {{ guide-fhir-version }} </span></td>
+                      <td><b>Packages are based on:</b>  <a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
+                    </tr>
+                    <tr>
+                      <td><b>Released:</b> TBC</td>
+                      <td colspan="3"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Helpandsupport/Sitemap-Overview.page.mdd?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../Home/?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                    </tr>  
+                </table>
+            </div>
+        </footer>
+
+        <script>
+            //Back to top button functionality
+            var backToTopButton = document.getElementById("back-to-top");
+
+            // When the user scrolls down 100px from the top of the document, show the button
+            window.onscroll = function () { handleScrolling() };
+
+            function handleScrolling() {
+                showTopButton();
+                scrollProfileSideBar();
+            }
+
+            function showTopButton() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function goBackToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                $(window.location)[0].replace("#");
+            }
+
+            //Ensures footer is at the bottom of the page 
+            function updateFooterPosition() {
+                var bottomOfFooter = $('footer').offset().top + $('footer').outerHeight(true);
+                var heightShortage = $(document).height() - bottomOfFooter;
+                if (heightShortage < 0) heightShortage = 0;
+                $('footer').css('margin-top', heightShortage);
+            }
+
+            function openTab(evt, tabName) {
+                // Find the element that has been clicked with jQuery
+                var element = $(evt.target);
+
+                // Remove the current class of .active in the buttons next to it
+                element.parent().find(".tablinks").removeClass("active");
+
+                // Add a class of .active to the clicked tab
+                element.addClass("active");
+
+                // Cache the parent of the button clicked
+                var parent = element.parent().parent();
+
+                // Clear out the current view (e.g. Table, XML, JSON)
+                parent.find(".tabcontent").hide(0);
+
+                // Show the desired content with the current view
+                parent.find(".tabcontent[id^='"+tabName+"']").show(0);
+            }
+
+            // function to turn multiple columns into rows for an fql table, within a specific div
+            function transposeFQLTables() {
+                //look for a div with id transpose
+                $('div#transpose').each(function(index) {
+                    //within this div, look for an fql table
+                    var fqlTable = $(this).children("table.table-bordered");
+                    //and optionally a 2 column table you want to combine with the transposed one
+                    var contextTable = $(this).children("table#addToTranspose");
+
+                    //only continue to transpose if we have an fql table
+                    if (fqlTable != undefined && fqlTable.length > 0) {
+
+                    //create a new table to be populated during the transpose
+                    var newTable = document.createElement('table');
+                    newTable.classList.add("table-bordered");
+                    newTable.classList.add("scrollbar");
+                    newTable.setAttribute("title","Profile Details");
+                    
+                    // Find the max number of columns in the fql table
+                    var maxColumns = 0;
+                    for(var r = 0; r < fqlTable[0].rows.length; r++) {
+                        if(fqlTable[0].rows[r].cells.length > maxColumns) {
+                            maxColumns = fqlTable[0].rows[r].cells.length;
+                        }
+                    }                   
+
+                    //create the header row
+                    let header = newTable.createTHead();
+                    let headerRow = header.insertRow();
+                    headerRow.innerHTML= '<th colspan=2>Profile Details</th>';
+
+                    //populate the body by transposing columns to rows
+                    let body = newTable.createTBody();
+                    for(var c = 0; c < maxColumns; c++) {
+                        let addedRow = body.insertRow(c);
+                        var isCanonicalURL = false;
+                        for(var r = 0; r < fqlTable[0].rows.length; r++) {
+                            if(r==0) {
+                                if (fqlTable[0].rows[r].cells[c].innerText == "Canonical_URL"){
+                                    isCanonicalURL= true;
+                                }
+                                addedRow.insertCell(r);
+                                addedRow.cells[r].innerHTML = "<b>" + fqlTable[0].rows[r].cells[c].innerHTML.split("_").join(" ") + "</b>";
+                                addedRow.cells[r].classList.add('width20');
+                            }
+                            else {
+                                addedRow.insertCell(r);
+
+                                pTag = "<p>";
+                                pTagClose = "</p>"
+                                if (isCanonicalURL) {
+                                    str = fqlTable[0].rows[r].cells[c].innerText;
+                                } else {
+                                    str = fqlTable[0].rows[r].cells[c].innerHTML;
+                                }
+
+                                str = str.replace(pTag, '');
+                                str = str.replace(pTagClose, '');
+                                addedRow.cells[r].innerHTML = str;
+                            }
+                        }
+                    }
+
+                    //optionally add rows from a two column table to be joined to the bottom of the transposed table
+                    if (contextTable != undefined && contextTable.length > 0) {
+                        let addedRow = body.insertRow(c);
+                        for(var r = 0; r < contextTable[0].rows.length; r++) {
+                            addedRow.insertCell(-1);
+                            addedRow.cells[0].innerHTML = "<b>" + contextTable[0].rows[r].cells[0].innerHTML.split("_").join(" ") + "</b>";
+                            addedRow.cells[0].classList.add('width20');
+                            addedRow.insertCell(-1);
+                            addedRow.cells[1].innerHTML = contextTable[0].rows[r].cells[1].innerHTML;
+                        }
+                    }
+
+                    //add the transposed table to the div, and remove the other tables
+                    $(this).append(newTable);
+                    fqlTable.remove();
+                    contextTable.remove();
+                    }
+                });
+			}
+
+            // function alters styling of FQL tables
+            function tidyUpFQLTables() {
+                //fix the contents of FQL table headers
+                // specifically swap _ for spaces, and change ProfilePurpose to have a space
+                $('table.table-bordered > thead > tr > th').each(function(index) {
+                    if ($(this).text() == 'ProfilePurpose') {
+                            $(this).text('Profile Purpose');
+                    }
+                    $(this).text($(this).text().split("_").join(" "));
+                });
+
+                //remove the FQL table css on CodeSystems/Extensions when they are in a list page
+                $('[id^=CodeSystem-England-] > table.table-bordered').each(function(index) {
+                    $(this).removeClass('scrollbar');
+                    $(this).removeClass('table-bordered');
+                    $(this).removeClass('table');
+                });
+
+                //for any remaining FQL tables, remove the scrollbar, and add our England assets and forceWhite class
+                $('table.table-bordered').each(function(index) {
+                    $(this).removeClass('scrollbar');
+                    $(this).addClass('assets');
+                    $(this).addClass('forceWhite');
+                });
+            }
+
+            // function handles changing new items to be green
+            function highlightBallotItems() {
+                //new balloted assets should have an info div on them, 
+                // this changes the sub pages to be green, and forces the info box and trees/tabs to be white
+                $('div#newAsset').each(function(index){
+                    //this check handles the sub page in All Extensions/ValueSets/CodeSystems
+                    // without it, the whole list goes green
+                    // NOTE:
+                    //  Codesystem, Valueset, codesystem, valueSet etc will still cause page to go full green
+                    //  ensure your Page Title, FileName and Topic are capitalised right
+                    var parentCodeSystem = $(this).closest('[id^=CodeSystem-England-]'); 
+                    var parentExtension = $(this).closest('[id^=Extension-England-]');
+                    var parentValueSet = $(this).closest('[id^=ValueSet-England-]');
+                   
+                    if (parentCodeSystem != undefined && parentCodeSystem.length > 0)
+                    {
+                        parentCodeSystem.addClass('forceGreen');
+                        $(this).parent().find('h2').addClass('forceGreen');
+                        $(this).parent().find('hr').insertAfter($(this).parent())
+                    } else if (parentExtension != undefined && parentExtension.length > 0)
+                    {
+                        parentExtension.addClass('forceGreen');
+                        $(this).parent().find('h2').addClass('forceGreen');
+                        $(this).parent().find('hr').insertAfter($(this).parent())
+                    } else if (parentValueSet != undefined && parentValueSet.length > 0)
+                    {
+                        parentValueSet.addClass('forceGreen');
+                        $(this).parent().find('h2').addClass('forceGreen');
+                        $(this).parent().find('hr').insertAfter($(this).parent())
+                    } else
+                    {
+                        $('div.row:not(#header)').addClass('forceGreen');
+                        $(this).parent().find('hr').addClass('forceWhite');
+                    }
+                    $(this).addClass('forceWhite');
+                    $(this).parent().find('div.tabcontent').addClass('forceWhite');
+                });
+            }
+            //remaps sitemap and licence links to always point within the IG being read
+            function fixFooterVersion() {
+                let pageUrl = window.location.href;
+                let pageVersion = "?" + pageUrl.split("?")[1];
+                pageVersion = pageVersion.split("#")[0];
+                pageUrl = pageUrl.split("?")[0];
+                let slashCount = pageUrl.split("/").length;
+                let newUrl = '';
+                for (i=0;i<slashCount;i++)
+                for (i=0;i<slashCount;i++)
+                {
+                    newUrl = newUrl + pageUrl.split("/")[i] + "/";
+                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
+                        i = slashCount;
+                    }
+                }
+                if (newUrl.endsWith("/")) {
+                    newUrl = newUrl.slice(0, -1);
+                }
+                if (!(newUrl.endsWith("Home") || newUrl.endsWith("home"))) {
+                    newUrl = newUrl + "/Home";
+                }
+                $("a#footer-sitemap").each(function(index) {
+                    let destUrl = $(this)[0].href;
+                    let destVersion = "?" + destUrl.split("?")[1];
+                    destUrl = newUrl + "/Help-and-support/Sitemap-Overview" + destVersion;
+                    if (pageVersion.startsWith("?version=current")){
+                        destUrl = destUrl.replace(destVersion, ".page.md" + pageVersion);
+                    }
+                    $(this).attr("href", destUrl) ;
+				});
+                $("a#footer-licence").each(function(index) {
+                    let destUrl = $(this)[0].href;
+                    let destVersion = "?" + destUrl.split("?")[1];
+                    destUrl = newUrl + destVersion;
+                    if (pageVersion.startsWith("?version=current")){
+                        destUrl = destUrl.replace(destVersion, pageVersion);
+                    }
+                    if (!destUrl.endsWith("#Licence")) {
+                        destUrl = destUrl+"#Licence";
+                    }
+                    $(this).attr("href", destUrl) ;
+				});
+			}
+        </script>
+        <script>
+
+            /* following chunk replicates old nhsd ig style /\ and \/ sort buttons */
+
+            //for tables with class codes (codesystems, altered valusets)
+            // shift the first row into a thead
+            // then call function to add /\ and \/ sort buttons
+            function addCodesSortButton() {
+                $('table.codes').each(function(index) {
+                    var firstTr = $(this).find('tr:first').remove();
+                    firstTr.find('td').contents().unwrap().wrap('<th>');
+                    $(this).prepend($('<thead></thead>').append(firstTr));
+
+                    if ($(this).find("thead tr th").length <= $(this).find("tbody tr:first td").length) {
+                        $(this).find("thead tr th:last").attr('colspan',2);
+                    }
+
+                    addSortButtons($(this).parent());
+                });
+            }//function thats called to get the sort button chunk working
+            function addSortButtons(tableDiv) {
+                const tableList = tableDiv[0].querySelectorAll("table");
+                if (0 === tableList.length)
+                    return null;
+                    
+                Array.from(tableList).forEach(
+                    table => {
+                        normalSortButtons(table)
+                    }
+                )
+            }
+
+            //an array for the svg paths
+            const sortObj = {
+                asc: '<path d="M8,4l7,6.5L13.5,12L8,6.8L2.5,12L1,10.5L8,4z"/>',
+                desc: '<path d="M8,12L1,5.5L2.5,4L8,9.2L13.5,4L15,5.5L8,12z"/>'
+            };
+            // a function to create the svg based on the sort type
+            function getIcon(type="asc") {
+                return `<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" viewBox="0 0 16 16" width="100%" height="100%">\n ${sortObj[type]}\n</svg>`
+            }
+            //function to actually add the buttons
+            function normalSortButtons(table) {
+                if (void 0 !== table.dataset.noSort)
+                    return;
+                const headerCells = table.querySelectorAll("thead tr:first-child td, thead tr:first-child th");
+                Array.from(headerCells).forEach(
+                    (headerCell,index) => {
+                        if (void 0 !== headerCell.dataset.noSort)
+                            return;
+                        headerCell.classList.add("orderable");
+                        const buttonSpan = `<span class="sort-icon">${getIcon("asc")}</span>`;
+                        headerCell.innerHTML = `<button><span>${headerCell.innerHTML}</span><span>${buttonSpan}</span></button>`;
+                        setupSortButton(headerCell, index, table);
+                    }
+                )
+            }
+            //funciton to set up the sort button onclick
+            function setupSortButton(headerCell, index, table) {
+                const buttonObj = headerCell.querySelector("button");
+                buttonObj.onclick = function(){sortButtonClick(headerCell, table, headerCell.dataset.sort)};
+            }
+            //function that actually does the onclick
+            function sortButtonClick(headerCell, table){
+                const hCells = table.querySelectorAll("thead td,th");
+                var sortAsc = true;
+                Array.from(hCells).forEach(
+                    hCell => {
+                        const icon = hCell.querySelector(".sort-icon");
+                        if (hCell === headerCell)
+                        {
+                            if (headerCell.dataset.sort == undefined || headerCell.dataset.sort == "" || headerCell.dataset.sort == "desc"){
+                                headerCell.dataset.sort = "asc";
+                            } else {
+                                headerCell.dataset.sort = "desc";
+                                sortAsc=false;
+                            }
+                            icon.innerHTML = getIcon(headerCell.dataset.sort);
+                        } else {
+                            hCell.dataset.sort = "";
+                            icon.innerHTML = getIcon("asc");
+                        }
+                    }
+                )
+                sortCells(headerCell.cellIndex, table, sortAsc);
+            }
+            //and function that does the sorting/re-tabling
+            function sortCells(index, table, sortAsc) {
+                const bodyList = table.querySelectorAll("tbody");
+                Array.from(bodyList).forEach(
+                    body => {
+                        const rowArray = []
+                        , rowList = body.querySelectorAll("tr");
+                        Array.from(rowList).forEach(
+                            (row,rowIndex) => {
+                                const cell = row.querySelectorAll("td, th")[index];
+                                cell && rowArray.push({
+                                    row: rowIndex,
+                                    value: cell.innerText
+                                })
+                            }
+                        )
+                        rowArray.sort(
+                            (row1,row0) => {
+                                const sortResult = sortFunction(row1.value, row0.value);
+                                return false === sortAsc ? sortResult : -1 * sortResult
+                            }
+                        )
+                        body.innerHTML = "";
+                        rowArray.forEach(
+                            rowItem => {
+                                body.append(rowList[rowItem.row])
+                            }
+                        )
+                    }	
+                )
+            }
+            //function for the sort comparator
+            function sortFunction(row0Value, row1Value) {
+                const n = /[^a-zA-Z]/g
+                , s = /[^0-9]/g
+                , o = row1Value.replace(n, "")
+                , i = row0Value.replace(n, "");
+                if (o === i) {
+                    const n = parseInt(row1Value, 15)
+                    , o = parseInt(row0Value, 15);
+                    return n === o ? 0 : n > o ? 1 : -1
+                }
+                return o > i ? 1 : -1
+            }
+        </script>
+        <script>
+            //this function wraps the left hand menu items if they are too long
+            // numbers are arbitarily, but work of for NHSE / UKCore IGs
+            function wrapSideBar() {
+                $('div.col-md-6 ul.nav li a').each(function(index) {
+                    if ($(this)[0].scrollWidth > $(this).innerWidth()) {
+                        var numberOfCapitalsToFind = 0;
+                        if ($(this)[0].scrollWidth -  $(this).innerWidth() < 35) {
+                                numberOfCapitalsToFind = 1;
+                        } else if ($(this)[0].scrollWidth -  $(this).innerWidth() < 70) {
+                                numberOfCapitalsToFind = 2;
+                        } else {
+                                numberOfCapitalsToFind = 3;
+                        }
+                        var lastCapitalLetter = lastCapitalLetterIndex($(this)[0].text, numberOfCapitalsToFind);
+                        if (lastCapitalLetter > -1) {
+                            $(this)[0].text = $(this)[0].text.substring(0,lastCapitalLetter) + ' ' + $(this)[0].text.substring(lastCapitalLetter);
+                        }
+                        $(this).css('word-wrap', "break-word");
+                    }
+                });
+            }
+            function lastCapitalLetterIndex(word, numberOfCapitalsToFind) {
+                var numberOfCapitalsToFound = 0;
+                var lastCapitalFound = -1;
+                for(i = word.length - 1; i >= 0; i--) {
+                    if (word[i].toUpperCase() == word[i]) {
+                        if (numberOfCapitalsToFound < numberOfCapitalsToFind -1 ){
+                            numberOfCapitalsToFound++;
+                            lastCapitalFound = i;
+                        } else {
+                            lastCapitalFound = i;
+                            return lastCapitalFound;
+                        }
+                    }
+                }
+                return lastCapitalFound;
+            }
+        </script>
+        <script>
+        
+            //fix issues with the templating
+            function fixTemplatingIssues() {
+                // handle shifting context of use tables into the transpose div
+                $('table#addToTranspose').each(function(index) {
+                    if ($(this).parent().attr("id") != "transpose") {
+                        $(this).parent().find("div#transpose").append($(this));
+                    }
+                });
+                //remove empty <p> before examples
+                $('div.tabcontent[id^="Examples"]').each(function(index) {
+                    $(this).prev("p:empty").remove();
+                });
+            }
+
+            //fix wcag compliance issues caused by the way simplifier renders
+            function fixWebAccessibility() {
+                // remove additional unneeded role on navbar
+                $('nav.navbar').removeAttr("role");
+                //set title and role on all trees
+                $('table.treetable').each(function(index) {
+                    //$(this).attr("role","presentation");
+                    $(this).attr("title","FHIR Tree View");
+                });
+                //set title on all valuset tables
+                $('table.regular').each(function(index) {
+                    if ($(this).find("th").length > 0) {
+                        if ($(this).find(":contains('System')")) {
+                            $(this).attr("title","Expanded ValueSet codes");
+                        } else {
+                            $(this).attr("title","Imported ValueSet codes");
+                        }
+                    } else {
+                        $(this).attr("role","presentation");
+                        $(this).attr("title","ValueSet details");
+                    }
+                });
+                // set title on all code lists
+                $('table.codes').each(function(index) {
+                    $(this).attr("title","Expanded code list");
+                });
+                // set role on table view
+                $('div.path table').each(function(index) {
+                    $(this).attr("role","presentation");
+                });
+                //set title on FQL generated tables, ideally from the first column of the thead
+                $('table.table.table-bordered.assets.forceWhite').each(function(index) {
+                    if ($(this).attr("title") == undefined || $(this).attr("title") == "") {
+                        if ($(this).find("thead tr th").length > 0) {
+                            $(this).attr("title",$(this).find("thead tr th")[0].innerText);
+                        } else {
+                            $(this).attr("title","FQL Generated Details");
+                        }
+                    }
+                });
+                //set a unique id on all tree/table/example divs etc
+                var iHTMLCount=0;
+                var iTreeCount=0;
+                var iTableCount=0;
+                var iXMLCount=0;
+                var iJSONCount=0;
+                var iExamplesCount=0;
+                var iUsageCount=0;
+                $('div.tabcontent').each(function(index) {
+                    if ($(this).attr("id") == "HTML View") {
+                        iHTMLCount++;
+                        $(this).attr("id","HTML View" + iHTMLCount);
+                    } else if ($(this).attr("id") == "Tree View") {
+                        iTreeCount++;
+                        $(this).attr("id","Tree View" + iTreeCount);
+                    } else if ($(this).attr("id") == "Table View") {
+                        iTableCount++;
+                        $(this).attr("id","Table View" + iTableCount);
+                    } else if ($(this).attr("id") == "XML View") {
+                        iXMLCount++;
+                        $(this).attr("id","XML View" + iXMLCount);
+                    } else if ($(this).attr("id") == "JSON View") {
+                        iJSONCount++;
+                        $(this).attr("id","JSON View" + iJSONCount);
+                    } else if ($(this).attr("id") == "Examples") {
+                        iExamplesCount++;
+                        $(this).attr("id","Examples" + iExamplesCount);
+                    } else if ($(this).attr("id") == "Usage") {
+                        iUsageCount++;
+                        $(this).attr("id","Usage" + iUsageCount);
+                    }
+                });
+                // set unique id on all transposed fl table divs
+                var iTransposeCount=0;
+                $('div[id="transpose"]').each(function(index) { 
+                    iTransposeCount++;
+                    $(this).attr("id","transpose" + iTransposeCount);
+                });
+                //loop through all div's with id's
+                $('div').each(function(index) { 
+                    if ($(this).attr("id") != undefined) {
+                        // look for an h2, with either a matching id or page-title
+                        // and update it to be unique
+                        var sectionHeading = $(this).find("h2");
+                        if (sectionHeading != undefined && sectionHeading.length > 0){
+                            if (sectionHeading.attr("id") == $(this).attr("id")) {
+                                sectionHeading.attr("id", sectionHeading.attr("id") + "-sectionheading");
+                            } else if (sectionHeading.attr("id") == "page-title") {
+                                sectionHeading.attr("id", $(this).attr("id") + "-sectionheading");
+                            }
+                        }
+                        //if the div is renderParent, shift its title into the alt of the img it contains
+                        if ($(this).attr("id") == "renderParent"){
+                            var imgTitle = $(this).attr("title");
+                            $(this).removeAttr("title");
+                            $(this).find("img.img-responsive").attr("alt",imgTitle);
+                        }
+                    }
+                });
+            }
+
+            //removes any development notice and footer if its being rendered in an iframe
+            function pageInIframe() {
+                if (window.frameElement !== null)
+                {
+                    $('div#development-notice').remove();
+                    $('footer').remove();
+                }
+            }
+            // function runs on page load
+            $(function() {
+                fixTemplatingIssues();
+                transposeFQLTables();
+                tidyUpFQLTables();
+                //highlightBallotItems();
+                fixFooterVersion();
+                alterValueSetTables();
+                addCodesSortButton();
+                wrapSideBar();
+                pageInIframe();
+                fixWebAccessibility();
+                updateFooterPosition();
+            });
+            
+            $(window).resize(function () {
+                updateFooterPosition();
+            });
+        </script>
+    </body>
+
+</html>
