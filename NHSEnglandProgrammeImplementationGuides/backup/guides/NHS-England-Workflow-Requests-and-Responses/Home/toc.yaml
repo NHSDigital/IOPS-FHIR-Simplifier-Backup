@@ -1,10 +1,10 @@
 - name: Index
   filename: Index.page.md
+- name: Capabilities
+  filename: Capabilities
 - name: Volume 1
   filename: Volume-1
 - name: Volume 2
   filename: Volume-2
-- name: Volume 4
-  filename: Volume-4
 - name: FHIR Assets
   filename: FHIR-Assets

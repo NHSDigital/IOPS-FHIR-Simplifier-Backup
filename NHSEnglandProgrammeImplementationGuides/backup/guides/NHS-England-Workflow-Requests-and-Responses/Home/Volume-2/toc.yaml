@@ -1,5 +1,3 @@
-- name: Index
-  filename: Index.page.md
 - name: Requesting and Responding to Tasks [CIC-2]
   filename: Requesting-and-Responding-to-Tasks-CIC-2.page.md
 - name: Sending Encounter Event Notifications [CIC-5]
