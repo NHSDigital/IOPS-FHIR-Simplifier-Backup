@@ -228,6 +228,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#extension:additionalContact">extension:additionalContact</a>
 - <a href="#extension:coverage">extension:coverage</a>
 - <a href="#identifier">identifier</a>
+- <a href="#basedOn">basedOn</a>
 - <a href="#status">status</a>
 - <a href="#intent">intent</a>
 - <a href="#category">category</a>
@@ -285,6 +286,17 @@ Automatically assigned by the central service, though source systems MAY provide
         {
             "system": "https://fhir.nhs.uk/Id/GMSOrder",
             "value": "ROA43728"
+        }
+    ],
+```
+
+<a name="basedOn"></a>
+#### basedOn
+SHALL reference a parent request where this ServiceRequest is based on a previous request, e.g. in the case of reanalysis and cascade testing, or Germline Late tests in the Tumour First/Germline Late scenario.
+```json
+"basedOn":  [
+        {
+            "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FatherOfFayMutlow-Example"
         }
     ],
 ```
@@ -509,7 +521,7 @@ Any clinical information provided about the patient for whom the testing is bein
 
 <a name="specimen"></a>
 #### specimen
-ServiceRequests for reanalysis, where the required samples already exist, SHOULD reference these samples through the specimen field. Where samples need to be collected to support testing, these SHOULD instead reference the ServiceRequest, through Specimen.request (i.e. the service request has prompted collection of the sample). The referenced Specimen resources SHOULD either be contained within the test order transaction bundle or already exist on the central GMS.
+ServiceRequests for reanalysis, where the required samples already exist, SHOULD reference these samples through the specimen field. Where samples need to be collected to support testing, these SHOULD instead reference the ServiceRequest, through Specimen.request (i.e. the service request has prompted collection of the sample), and SHOULD also be referenced from within ServiceRequest.supportingInfo as per the guidance above. The referenced Specimen resources SHOULD either be contained within the test order transaction bundle or already exist on the central GMS.
 ```json
 "specimen": [
         {
