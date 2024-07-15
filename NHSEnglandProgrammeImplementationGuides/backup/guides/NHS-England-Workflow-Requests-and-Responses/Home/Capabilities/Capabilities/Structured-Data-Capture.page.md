@@ -1,0 +1,5 @@
+## {{page-title}}
+
+| Producer | Consumer | Name | Description |
+|--
+| &#10003; |  | [HL7 Structured Data Capture](https://build.fhir.org/ig/HL7/sdc/) | Paper forms exist all over healthcare. They get filled out by patients, relatives, administrators, clinicians - essentially everyone. The FHIR standard defines some basic ways share forms (empty ones and completed ones), however it only supports the capabilities that almost all forms need to have. This implementation guide defines additional capabilities, including the ability to automatically fill in some of the form answers with information that might already have been entered somewhere else, the ability to automatically calculate certain fields like age, the ability to better control what a form looks like, etc. It defines a wide variety of 'features' covering different aspects of forms (how forms look, how they behave, what types of systems can use forms and what they can do with them, etc.) The intent is to help ensure that different types of systems that implement the same 'feature' do so in the same way. |

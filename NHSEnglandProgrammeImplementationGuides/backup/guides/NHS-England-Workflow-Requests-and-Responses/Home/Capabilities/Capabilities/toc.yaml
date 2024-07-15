@@ -1,0 +1,12 @@
+- name: Shared Records
+  filename: Shared-Records.page.md
+- name: Events
+  filename: Events.page.md
+- name: Requests
+  filename: Requests.page.md
+- name: Structured Data Capture
+  filename: Structured-Data-Capture.page.md
+- name: Directories, Security & Privacy
+  filename: Directories-Security-Privacy.page.md
+- name: Canonical Data Model
+  filename: Canonical-Data-Model.page.md

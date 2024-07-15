@@ -1,2 +1,4 @@
-- name: Index
-  filename: Index.page.md
+- name: Cross Organisational Workflow
+  filename: Cross-Organisational-Workflow.page.md
+- name: Simple Writeback
+  filename: Simple-Writeback
