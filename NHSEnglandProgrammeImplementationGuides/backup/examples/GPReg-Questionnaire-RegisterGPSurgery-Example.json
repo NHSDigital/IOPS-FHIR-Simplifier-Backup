@@ -12,37 +12,6 @@
   "purpose": "To standardise the questions asked when registering for a GP Surgery within England",
   "item": [
     {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "code": "radio-button",
-                "display": "Radio Button"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "5564099927552",
-      "text": "Who is registering with a GP?",
-      "type": "choice",
-      "required": true,
-      "repeats": false,
-      "answerOption": [
-        {
-          "valueCoding": {
-            "display": "Myself"
-          }
-        },
-        {
-          "valueCoding": {
-            "display": "Someone else"
-          }
-        }
-      ],
       "item": [
         {
           "extension": [
@@ -261,6 +230,37 @@
             }
           ]
         }
+      ],
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button",
+                "display": "Radio Button"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "5564099927552",
+      "text": "Who is registering with a GP?",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "Myself"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Someone else"
+          }
+        }
       ]
     },
     {
@@ -464,24 +464,24 @@
               "repeats": false
             },
             {
+              "text": "You do not need to know their NHS number to continue. If you do not know it, you can tell us their full name instead.",
+              "type": "display",
+              "linkId": "2535971200955_helpText",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
                   "valueCodeableConcept": {
+                    "text": "Help-Button",
                     "coding": [
                       {
-                        "system": "http://hl7.org/fhir/questionnaire-item-control",
                         "code": "help",
-                        "display": "Help-Button"
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
                       }
-                    ],
-                    "text": "Help-Button"
+                    ]
                   }
                 }
-              ],
-              "linkId": "2535971200955_helpText",
-              "text": "You do not need to know their NHS number to continue. If you do not know it, you can tell us their full name instead.",
-              "type": "display"
+              ]
             }
           ]
         },
@@ -3238,6 +3238,56 @@
                 "system": "http://snomed.info/sct",
                 "code": "889091000000102",
                 "display": "Dissent to share Summary Care Record"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button",
+                    "display": "Radio Button"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "52633200885",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1237025001",
+              "display": "At increased risk of exposure to Mycobacterium tuberculosis complex (finding)"
+            }
+          ],
+          "text": "Have you ever spent more that 6 months in a country where there was an increased risk of catching tuberculosis (TB)?",
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "ASKU",
+                "display": "Unknown"
               }
             }
           ]
