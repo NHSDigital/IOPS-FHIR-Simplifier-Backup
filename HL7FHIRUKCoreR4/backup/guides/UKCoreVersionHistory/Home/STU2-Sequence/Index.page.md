@@ -12,10 +12,27 @@ topic: STU2Sequence
 </tr>
 
 <tr>
-<td>Ongoing</td>
+<td>16th July 2024</td>
+<td>2.1.0</td>
+<td>4.0.1</td>
+<td>UK Core Implementation Guide 2.1.0 - STU2 - Minor release version of the Second HL7 UK Ballot version of UK Core</td>
+</tr>
+<tr>
+<td colspan="4">
+<b>Fixes</b>
+When moving from Coding to CodeableConcept as per ballot 2 changes, the following Extensions had the ValueSet and bindings incorrectly removed . These have been reinstated:
+<ul>
+<li>Extension-UKCore-BirthSex - ValueSet/UKCore-BirthSex (required)
+<li>Extension-UKCore-ConditionEpisode - ValueSet/UKCore-ConditionEpisodicity (extensible)
+<li>Extension-UKCore-DeliveryChannel - ValueSet/UKCore-DeliveryChannel (extensible)
+<li>Extension-UKCore-ListWarningCode - ValueSet/UKCore-ListWarningCode (extensible)
+</ul>
+</td>
+</tr>
+<td>10th May 2024</td>
 <td>2.0.0</td>
 <td>4.0.1</td>
-<td>UK Core Implementation Guide 2.0.0 - STU2 - Pre-release version of the Second HL7 UK Ballot version of UK Core</td>
+<td>UK Core Implementation Guide 2.0.0 - STU2 - Release version of the Second HL7 UK Ballot version of UK Core</td>
 </tr>
 <tr>
 <td colspan="4">
