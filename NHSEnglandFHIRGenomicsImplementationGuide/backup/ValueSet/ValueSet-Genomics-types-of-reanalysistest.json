@@ -1,10 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "id": "genomics-reasonfortesting",
+  "id": "genomics-types-of-reanalysistest",
   "url": "https://fhir.nhs.uk/ValueSet/genomics-types-of-reanalysistest",
   "version": "0.1.0",
-  "name": "TypesofReAnalysisTestGenomics",
-  "title": "Types of Re-Analysis Test Genomics",
+  "name": "GenomicsTypesofReAnalysisTest",
+  "title": "Genomics Types of Re-Analysis Test",
   "status": "draft",
   "date": "2024-07-09T00:00:00.000Z",
   "publisher": "NHS England",

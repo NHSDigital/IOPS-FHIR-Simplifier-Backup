@@ -1,8 +1,52 @@
 ## {{page-title}}
 
-Used for linking Patients with other patients, e.g. in the case of proband and consultand within duo and trio testing. 
+Used for linking Patients with other participants of a test order, e.g. in the case of proband and consultand within duo and trio testing. 
 
-For instances where clinical/demographic information for the related person are required, a Patient resource for the related person SHOULD be included, with the Patient.link field referencing the RelatedPerson. Elements duplicated across both the Patient and RelatedPerson SHOULD in this case be captured within the Patient resource only. The RelatedPerson resource then references the proband through the RelatedPerson.patient field. 
+For instances where clinical/demographic information for the related person are required, a Patient resource for the related person (consultand) SHOULD be included, with the Patient.link field referencing the RelatedPerson resource for the same individual. Elements duplicated across both the Patient and RelatedPerson for the same individual SHOULD in this case be captured within the Patient resource only. The RelatedPerson resource then references the proband Patient resource through the RelatedPerson.patient field. 
+
+A diagram illustrating the links between resources is provided below (Duo Scenario):
+
+<plantuml>
+@startuml
+!pragma ratio 0.3
+scale 1100 width
+entity SR as "Test Request" <<ServiceRequest>>
+entity P1 as "Proband" <<Patient>>
+'entity S1 as "Sample from Proband" <<Specimen>>
+'entity S2 as "Sample from Consultand A" <<Specimen>>
+together {
+  entity RP as "Relationship of Consultand A to Proband" <<RelatedPerson>>
+  entity P2 as "Consultand A" <<Patient>>
+  entity C2 as "RoD Consultand A" <<Consent>>
+}
+together {
+  entity FMH as "Pedigree Person B" <<FamilyMemberHistory>> {
+    Not a participant in the test request
+  }
+  entity C1 as "RoD Proband" <<Consent>>
+}
+SR -d-> P1 : ServiceRequest.subject
+together {
+  SR -d-> C1 : ServiceRequest.supportingInfo
+  SR -d-> FMH : ServiceRequest.supportingInfo
+  SR -d-> RP : ServiceRequest.supportingInfo
+  SR -d-> P2 : ServiceRequest.supportingInfo
+  SR -d-> C2 : ServiceRequest.supportingInfo
+}
+C1 -d-> P1 : Consent.patient
+FMH -d-> P1 : FamilyMemberHistory.patient
+'S1 -d-> P1 : Specimen.subject
+'S1 -u-> SR : Specimen.request
+RP -r-> P1 : RelatedPerson.patient
+P2 -r-> RP : Patient.link
+'S2 -d-> P2 : Specimen.subject
+'S2 -u-> SR : Specimen.request
+C2 -d-> P2 : Consent.patient
+'S1 -l[hidden]-> C1
+'S1 -l[hidden]-> FMH
+'RP -u[hidden]-> FMH
+@enduml
+</plantuml>
 
 Further use cases surrounding the use of RelatedPerson are pending further Duo/Trio scenarios.
 

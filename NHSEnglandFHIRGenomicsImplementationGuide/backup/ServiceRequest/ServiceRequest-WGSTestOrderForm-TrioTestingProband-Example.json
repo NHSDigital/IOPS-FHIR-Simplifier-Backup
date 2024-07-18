@@ -83,6 +83,24 @@
   ],
   "supportingInfo": [
     {
+      "reference": "Observation/Observation-AutisticBehaviour-Example"
+    },
+    {
+      "reference": "Observation/Observation-DelayedSpeechLanguageDevt-Example"
+    },
+    {
+      "reference": "Observation/Observation-DiseasePenetrancePheobeSmitham-Example"
+    },
+    {
+      "reference": "Observation/Observation-IntellectualDisabilityProfound-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnionProband-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-PheobeSmitham-Example"
+    },
+    {
       "reference": "Observation/Observation-GenomicEthnicity-Example"
     },
     {
@@ -92,64 +110,73 @@
       "reference": "Observation/Observation-DiseaseStatus-Example"
     },
     {
-      "reference": "Observation/Observation-DiseasePenetrancePheobeSmitham-Example"
-    },
-    {
-      "reference": "Observation/Observation-IntellectualDisabilityProfound-Example"
-    },
-    {
-      "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
-    },
-    {
-      "reference": "Observation/Observation-AutisticBehaviour-Example"
-    },
-    {
-      "reference": "Observation/Observation-DelayedSpeech-Example"
-    },
-    {
-      "reference": "Observation/Observation-NonConsanguinousUnionProband-Example"
-    },
-    {
-      "reference": "Observation/Observation-NonConsanguinousUnionProbandFather-Example"
-    },
-    {
-      "reference": "Observation/Observation-NonConsanguinousUnionMother-Example"
-    },
-    {
       "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
     },
     {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
     },
     {
-      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandFather-Example"
-    },
-    {
-      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandMother-Example"
-    },
-    {
       "reference": "Observation/Observation-NoTransfusion-Example"
     },
     {
-      "reference": "Observation/Observation-NoTransfusionProbandFather-Example"
+      "reference": "Patient/Patient-PheobeSmithamMother-Example"
     },
     {
-      "reference": "Observation/Observation-NoTransfusionProbandMother-Example"
-    },
-    {
-      "reference": "Specimen/Specimen-PheobeSmitham-Example"
-    },
-    {
-      "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
+      "reference": "RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example"
     },
     {
       "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
     },
     {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnionProbandMother-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnionMother-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusionProbandMother-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandMother-Example"
+    },
+    {
+      "reference": "Patient/Patient-PheobeSmithamFather-Example"
+    },
+    {
+      "reference": "RelatedPerson/RelatedPerson-JamesLawrenceProbandFather-Example"
+    },
+    {
+      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnionProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NonConsanguinousUnionProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoTransfusionProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-NoBoneMarrowTransplantProbandFather-Example"
+    },
+    {
+      "reference": "Observation/Observation-IntellectualDisabilityMild-Example"
+    },
+    {
       "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
     },
     {
+      "reference": "Consent/Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example"
+    },
+    {
       "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
+    },
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamCDForn-Example"
+    },
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example"
+    },
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-PheobeSmithamMother-Example"
     }
   ],
   "note": [

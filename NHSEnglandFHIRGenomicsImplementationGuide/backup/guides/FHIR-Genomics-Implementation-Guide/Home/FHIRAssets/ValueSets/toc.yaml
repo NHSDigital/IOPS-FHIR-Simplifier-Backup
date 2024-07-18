@@ -20,7 +20,11 @@
   filename: Genomic-Patient-Research-Choice.page.md
 - name: Genomic-Patient-Guardian-Types
   filename: Genomic-Patient-Guardian-Types-duplicate-2.page.md
+- name: Genomic-ReasonforTesting
+  filename: Genomic-ReasonforTesting.page.md
 - name: Genomic-Sample-State
   filename: Genomic-Sample-State.page.md
 - name: Genomic-Test-Types
   filename: Genomic-Test-Types.page.md
+- name: Genomic-TypeOf-ReAnalysisTest
+  filename: Genomic-TypeOf-ReAnalysisTest.page.md
