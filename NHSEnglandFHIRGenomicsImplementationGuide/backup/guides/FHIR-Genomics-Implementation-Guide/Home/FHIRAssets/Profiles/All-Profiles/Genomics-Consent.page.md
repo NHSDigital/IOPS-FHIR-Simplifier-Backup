@@ -83,6 +83,16 @@ Only a minimal amount of mandatory information needs to be populated.
                     {{pagelink:Consent-RoDToFollow-Example}}
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Consent-RoD-PheobeSmithamAttachmentURL-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Consent-RoD-PheobeSmithamAttachmentData-Example}}
+                    </td>
+                </tr>
             </table>
         </div>
         <div id="Constraints" role="tabpanel" class="tab-pane">

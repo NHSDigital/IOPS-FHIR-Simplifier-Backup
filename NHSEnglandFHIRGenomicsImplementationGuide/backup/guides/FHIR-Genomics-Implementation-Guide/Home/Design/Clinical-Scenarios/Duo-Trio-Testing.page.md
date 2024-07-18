@@ -96,7 +96,7 @@ Record of Discussion form resources added to request (YPA and CD forms for Pheob
 
 {{pagelink:QuestionnaireResponse-RoD-PheobeSmithamYPAForm-Example}}
 
-{{pagelink:Consent-RoD-PheobeSmithamMother-Example}}
+{{pagelink:QuestionnaireResponse-RoD-PheobeSmithamMother-Example}}
 
 
 ### 4. Requester indicates that sample is going to be collected at a later date
@@ -139,7 +139,9 @@ POST of {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-TrioTestingProband-Examp
 
 ### 4. Lab forwards test request/ ROD/ samples to GEL/NGIS.
 
-Change of owner on Task to GEL.
+Change of owner on Task to GEL. 
+
+**TBC: The specific Task triggering the start of the GEL workflow is still under discussion. This may be the ProcessGenomicTestRequest task, after prerequisite RoD and Samples have been added, or may be the set of SamplePrep Tasks (one per Specimen) after prep has been completed by the managing GLH.**
 
 ### 5. Requester checks current status of test request
 

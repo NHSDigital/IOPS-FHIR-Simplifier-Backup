@@ -12,6 +12,8 @@
   filename: Genomic-Patient-Consultee.page.md
 - name: Genomic-Patient-Research-Choice
   filename: Genomic-Patient-Research-Choice.page.md
+- name: Genomic-Reason-for-Testing
+  filename: Genomic-Reason-for-Testing.page.md
 - name: Genomic-Task-Code
   filename: Genomic-Task-Code.page.md
 - name: Genomic-Task-StatusReason
@@ -26,3 +28,5 @@
   filename: Genomic-Sample-State.page.md
 - name: Genomic-Test-Types
   filename: Genomic-Test-Types.page.md
+- name: Genomic-TypesOf-ReAnalysisTest
+  filename: Genomic-TypesOf-ReAnalysisTest.page.md

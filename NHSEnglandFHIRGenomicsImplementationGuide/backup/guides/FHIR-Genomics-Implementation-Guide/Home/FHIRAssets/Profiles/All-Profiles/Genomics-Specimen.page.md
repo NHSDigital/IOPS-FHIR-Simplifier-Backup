@@ -4,6 +4,56 @@ Used to capture information on Samples which will undergo or have undergone proc
 
 Within FHIR R4, there is no way to capture location against a sample to aid tracking, one of the key requirements of the Genomic Medicine Service. Investigation of a possible solution through backporting the container.location element within R5 is currently being investigated. Until this backport is adopted by UK Core, the location of samples, including interactions to manage and track samples, will be performed through changes to Task resources generated on submission of a ServiceRequest.
 
+A diagram illustrating the links between resources is provided below (Duo Scenario)
+
+**Note: links from ServiceRequest.supportingInfo to samples collected after submission are pending further investigation**
+
+<plantuml>
+@startuml
+!pragma ratio 0.3
+scale 1100 width
+entity SR as "Test Request" <<ServiceRequest>>
+entity P1 as "Proband" <<Patient>>
+entity S1 as "New Sample from Proband" <<Specimen>>
+entity SP1 as "Pre-existing Sample from Proband" <<Specimen>>
+entity S2 as "New Sample from Consultand A" <<Specimen>>
+together {
+  entity RP as "Relationship of Consultand A to Proband" <<RelatedPerson>>
+  entity P2 as "Consultand A" <<Patient>>
+'  entity C2 as "RoD Consultand A" <<Consent>>
+}
+'together {
+'  entity FMH as "Pedigree Person B" <<FamilyMemberHistory>> {
+'    Not a participant in the test request
+'  }
+'  entity C1 as "RoD Proband" <<Consent>>
+'}
+SR -d-> P1 : ServiceRequest.subject
+together {
+'  SR -d-> C1 : ServiceRequest.supportingInfo
+'  SR -d-> FMH : ServiceRequest.supportingInfo
+  SR -d-> RP : ServiceRequest.supportingInfo
+  SR -d-> P2 : ServiceRequest.supportingInfo
+'  SR -d-> C2 : ServiceRequest.supportingInfo
+}
+'C1 -d-> P1 : Consent.patient
+'FMH -d-> P1 : FamilyMemberHistory.patient
+SP1 -d-> P1 : Specimen.subject
+SR -d-> SP1 : ServiceRequest.specimen 
+S1 -d-> P1 : Specimen.subject
+S1 -u-> SR : Specimen.request
+RP -r-> P1 : RelatedPerson.patient
+P2 -r-> RP : Patient.link
+S2 -d-> P2 : Specimen.subject
+S2 -u-> SR : Specimen.request
+'C2 -d-> P2 : Consent.patient
+'S1 -l[hidden]-> C1
+'S1 -l[hidden]-> FMH
+'P2 -r[hidden]-> RP
+
+@enduml
+</plantuml>
+
 | Profile url | FHIR Module | Normative Status |
 |--
 | [https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
