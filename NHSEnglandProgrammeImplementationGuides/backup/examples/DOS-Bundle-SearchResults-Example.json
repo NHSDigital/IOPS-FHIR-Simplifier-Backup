@@ -1,0 +1,465 @@
+{
+  "resourceType": "Bundle",
+  "id": "DOS-Bundle-SearchResults-Example",
+  "meta": {
+    "versionId": "0.1.0",
+    "lastUpdated": "2024-07-16T15:01:30.8185338+00:00"
+  },
+  "type": "searchset",
+  "timestamp": "2024-07-16T12:15:10+00:00",
+  "total": 8,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://simplifier.net/nhsbookingandreferrals/777a156c-af3c-4748-a8a3-7e95e4b0df9a-duplicate-2"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/Slot/RR8-SJUH-TAUTO-001",
+      "resource": {
+        "resourceType": "Slot",
+        "id": "RR8-SJUH-TAUTO-001",
+        "meta": {
+          "lastUpdated": "2024-07-16T15:01:30.8185338+00:00"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-DeliveryChannel",
+                  "code": "Telephone",
+                  "display": "Telephone"
+                }
+              ]
+            }
+          }
+        ],
+        "serviceCategory": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                "code": "14",
+                "display": "Emergency Department"
+              }
+            ]
+          }
+        ],
+        "schedule": {
+          "reference": "Schedule/DoS-Schedule-RR8-LEEDSSJUH-Example"
+        },
+        "status": "free",
+        "start": "2024-07-22T09:00:00+00:00",
+        "end": "2024-07-22T10:00:00+00:00"
+      }
+      ,
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Slot/RR8-SJUH-TAUTO-002",
+      "resource": {
+        "resourceType": "Slot",
+        "id": "RR8-SJUH-TAUTO-002",
+        "meta": {
+          "lastUpdated": "2024-07-16T15:01:30.8185338+00:00"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-DeliveryChannel",
+                  "code": "Telephone",
+                  "display": "Telephone"
+                }
+              ]
+            }
+          }
+        ],
+        "serviceCategory": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                "code": "14",
+                "display": "Emergency Department"
+              }
+            ]
+          }
+        ],
+        "schedule": {
+          "reference": "Schedule/DoS-Schedule-RR8-LEEDSSJUH-Example"
+        },
+        "status": "free",
+        "start": "2024-07-22T10:00:00+00:00",
+        "end": "2024-07-22T10:30:00+00:00"
+      }
+      ,
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Slot/RR8-SJUH-TAUTO-003",
+      "resource": {
+        "resourceType": "Slot",
+        "id": "RR8-SJUH-TAUTO-003",
+        "meta": {
+          "lastUpdated": "2024-07-16T15:01:30.8185338+00:00"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-DeliveryChannel",
+                  "code": "Telephone",
+                  "display": "Telephone"
+                }
+              ]
+            }
+          }
+        ],
+        "serviceCategory": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                "code": "14",
+                "display": "Emergency Department"
+              }
+            ]
+          }
+        ],
+        "schedule": {
+          "reference": "Schedule/DoS-Schedule-RR8-LEEDSSJUH-Example"
+        },
+        "status": "free",
+        "start": "2024-07-22T11:00:00+00:00",
+        "end": "2024-07-22T11:30:00+00:00"
+      }
+      ,
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Schedule/DoS-Schedule-RR8-LEEDSSJUH-Example",
+      "resource": {
+        "resourceType": "Schedule",
+        "id": "DoS-Schedule-RR8-LEEDSSJUH-Example",
+        "meta": {
+          "lastUpdated": "2024-07-16T15:01:30.8185338+00:00"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.leedssth.nhs.uk/Diary/id",
+            "value": "8622dfdb-dc6a-47b6-b3a7-2eb2829db287"
+          }
+        ],
+        "active": true,
+        "serviceCategory": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                "code": "14",
+                "display": "Emergency Department"
+              }
+            ]
+          }
+        ],
+        "serviceType": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                "code": "117",
+                "display": "Emergency Medical"
+              }
+            ]
+          }
+        ],
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+                "code": "110",
+                "display": "Trauma and Orthopaedics"
+              }
+            ]
+          }
+        ],
+        "actor": [
+          {
+            "reference": "HealthcareService/DoS-HealthcareService-OrthopaedicService-Example",
+            "display": "Trauma and Orthopaedics Service"
+          },
+          {
+            "reference": "PractitionerRole/PractitionerRole-JoeSmithLeedsSTH-Example",
+            "display": "Paedatrician"
+          },
+          {
+            "reference": "Practitioner/Practitioner-JoeSmith-Example",
+            "display": "Dr. Joe Smith"
+          },
+          {
+            "reference": "Location/DoS-Location-HospitalSJUH-Example",
+            "display": "St James' University Hospital, Leeds"
+          }
+        ],
+        "planningHorizon": {
+          "start": "2024-07-22T09:00:00+00:00",
+          "end": "2024-07-29T10:00:00+00:00"
+        }
+      }
+      ,
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/HealthcareService/DoS-HealthcareService-OrthopaedicService-Example",
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "DoS-HealthcareService-OrthopaedicService-Example",
+        "meta": {
+          "lastUpdated": "2024-07-16T15:01:30.8185338+00:00"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.leedssth.nhs.uk/MyHealthcare/Services",
+            "value": "100"
+          }
+        ],
+        "active": true,
+        "providedBy": {
+          "reference": "Organization/UKCore-Organization-LeedsTeachingHospital-Example",
+          "display": "St James' University Hospital, Leeds"
+        },
+        "location": [
+          {
+            "reference": "Location/DoS-Location-HospitalSJUH-Example"
+          }
+        ],
+        "name": "Trauma and Orthopaedics Service"
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Practitioner/Practitioner-JoeSmith-Example",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "Practitioner-JoeSmith-Example",
+        "meta": {
+          "lastUpdated": "2024-07-16T15:01:30.8185338+00:00"
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "C9999999"
+          }
+        ],
+        "name": [
+          {
+            "family": "Smith",
+            "given": [
+              "Joe"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+                  "code": "MD",
+                  "display": "Doctor of Medicine"
+                }
+              ]
+            }
+          }
+        ]
+      }
+      ,
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/PractitionerRole/PractitionerRole-JoeSmithLeedsSTH-Example",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "PractitionerRole-JoeSmithLeedsSTH-Example",
+        "meta": {
+          "lastUpdated": "2024-07-16T15:01:30.8185338+00:00"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "R0260"
+          }
+        ],
+        "practitioner": {
+          "reference": "Practitioner/Practitioner-JoeSmith-Example"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                "code": "doctor",
+                "display": "Doctor"
+              }
+            ]
+          }
+        ],
+        "organization": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RR8"
+          },
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+                "code": "110",
+                "display": "Trauma and Orthopaedics"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0113 243 3144"
+          },
+          {
+            "system": "email",
+            "value": "jsmithgppracticeg@nhs.net"
+          },
+          {
+            "system": "email",
+            "value": "orthopaedics@leedsuniversitynhs.net",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-comment",
+                "valueString": "reporting"
+              }
+            ]
+          }
+        ]
+      }
+      ,
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Location/DoS-Location-HospitalSJUH-Example",
+      "resource": {
+        "resourceType": "Location",
+        "id": "DoS-Location-HospitalSJUH-Example",
+        "meta": {
+          "lastUpdated": "2024-07-16T15:01:30.8185338+00:00"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-site-code",
+            "value": "RR813"
+          }
+        ],
+        "name": "ST JAMES'S UNIVERSITY HOSPITAL",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "code": "HOSP",
+                "display": "Hospital"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0113 243 3144"
+          }
+        ],
+        "address": {
+          "line": [
+            "ST. JAMES'S UNIVERSITY HOSPITAL",
+            "BECKETT STREET"
+          ],
+          "city": "LEEDS",
+          "postalCode": "LS9 7TF",
+          "country": "ENGLAND"
+        },
+        "position": {
+          "longitude": 143.20196,
+          "latitude": -37.22866
+        },
+        "managingOrganization": {
+          "reference": "Organization/UKCore-Organization-LeedsTeachingHospital-Example"
+        }
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Organization/UKCore-Organization-LeedsTeachingHospital-Example",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "UKCore-Organization-LeedsTeachingHospital-Example",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RR8"
+          }
+        ],
+        "name": "LEEDS TEACHING HOSPITALS NHS TRUST",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0113 243 3144"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "ST. JAMES'S UNIVERSITY HOSPITAL",
+              "BECKETT STREET"
+            ],
+            "city": "LEEDS",
+            "postalCode": "LS9 7TF",
+            "country": "ENGLAND"
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    }
+  ]
+}

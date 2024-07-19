@@ -17,9 +17,3 @@
 <div id="XML View" class="tabcontent">
   {{xml}}
 </div>
-
-
-<div id="Feedback" class="tabcontent">
-  <h3>Feedback</h3>
-Click here to: {{page:Home/Templates/Feedback-Link.page.md}}
-</div>

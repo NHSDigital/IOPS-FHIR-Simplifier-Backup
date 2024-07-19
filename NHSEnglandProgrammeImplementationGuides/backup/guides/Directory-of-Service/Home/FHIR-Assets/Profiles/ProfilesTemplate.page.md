@@ -18,22 +18,22 @@
 </div>
 
 <div id="Detailed View" class="tabcontent">
-  <h3>Detailed Descriptions</h3>
+<!--  <h3>Detailed Descriptions</h3> -->
 {{dict}}
 </div>
 
 <div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
+ <!-- <h3>Table View</h3> -->
 {{table}}
 </div>
 
 <div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
+ <!-- <h3>XML View</h3> -->
 {{xml}}
 </div>
 
 <div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
+ <!-- <h3>JSON View</h3> -->
 {{json}}
 </div>
 
@@ -59,5 +59,6 @@
 
 <div id="Feedback" class="tabcontent">
   <h3>Feedback</h3>
-Click here to: {{page:Home/Templates/Feedback-Link.page.md}}
+<span> <a target="_blank">Click here to:</a>
+{{page:Home/Templates/Feedback-Link.page.md}}
 </div>
