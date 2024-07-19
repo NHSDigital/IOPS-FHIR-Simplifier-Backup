@@ -8,7 +8,7 @@ The DoS uses the information already collected about the patient – such as the
 
 The list is ranked by factors such as how close the facility is, when it is open and what services are available when they get there.
 
-Refer to NHS Program URL for more information <a href='https://digital.nhs.uk/services/directory-of-services-dos' class="external">Directory of Services (DoS)</a>
+Refer to NHS Program URL for more information <a href='https://digital.nhs.uk/services/directory-of-services-dos' target="_blank">Directory of Services (DoS)</a>
 
 ## What is the Aim of this Implementation Guide? ##
 
