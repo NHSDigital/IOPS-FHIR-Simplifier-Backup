@@ -156,7 +156,7 @@ The reason why the update took place. If the codes provided by HL7 are not granu
 
 <a name="agent"></a>
 #### agent
-The user which performed the change, as identified through CIS2 authentication token.
+SHOULD be provided where actions are user initiated. The user which performed the change, as identified through CIS2 authentication token.
 ```json
 "agent":  [
         {
@@ -182,7 +182,7 @@ The user which performed the change, as identified through CIS2 authentication t
 
 <a name="signature"></a>
 #### signature
-Signed, encrypted copy of the document, for validation that the document has not been tampered with (the requirement to include this field has noot yet been validated).
+Signed, encrypted copy of the document, for validation that the document has not been tampered with (the requirement to include this field has not yet been validated).
 ```json
  "signature":  [
         {

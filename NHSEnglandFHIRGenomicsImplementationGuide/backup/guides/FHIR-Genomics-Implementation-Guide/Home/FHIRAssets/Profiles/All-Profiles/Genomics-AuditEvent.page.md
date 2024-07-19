@@ -101,14 +101,14 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="action"></a>
 #### action
-Code from base HL7 resource, only C (create), R (read) and U (update) would usually be expected.
+SHALL be present. Code from base HL7 resource, only C (create), R (read) and U (update) would usually be expected.
 ```json
 "action": "U",
 ```
 
 <a name="agent"></a>
 #### agent
-Reference to the PractitionerRole resource which triggered the creation/read/update. Identity determined through CIS2 authentication token.
+SHOULD be present for any user initiated actions. Reference to the PractitionerRole resource which triggered the creation/read/update. Identity determined through CIS2 authentication token.
 ```json
 "agent":  [
         {
@@ -136,7 +136,7 @@ Reference to the PractitionerRole resource which triggered the creation/read/upd
 
 <a name="entity"></a>
 #### entity
-Reference to the resource which was affected by the event.
+SHOULD be present where the resource exists on the server. Reference to the resource which was affected by the event.
 ```json
 "entity":  [
         {

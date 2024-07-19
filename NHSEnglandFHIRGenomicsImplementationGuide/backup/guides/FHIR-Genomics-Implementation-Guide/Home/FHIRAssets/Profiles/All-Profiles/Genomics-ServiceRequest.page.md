@@ -266,7 +266,7 @@ Additionally, where are there multiple practitioners involved in providing care 
 
 <a name="extension:coverage"></a>
 #### extension:coverage
-Extension for recording how work against the test order is being funded. The ValueSet bound to this extension is currently under review by the NHS England Genomics Informatics Working Advisory Group and subject to change.
+SHALL be present for Genomic Order Management test orders. Extension for recording how work against the test order is being funded. The ValueSet bound to this extension is currently under review by the NHS England Genomics Informatics Working Advisory Group and subject to change.
 ```json
 {
     "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -303,7 +303,7 @@ SHALL reference a parent request where this ServiceRequest is based on a previou
 
 <a name="status"></a>
 #### status
-ServiceRequests SHOULD be marked as 'draft' until submitted, after which they will be marked as 'active' automatically by the central GMS system. 
+SHALL be provided. ServiceRequests SHOULD be marked as 'draft' until submitted, after which they will be marked as 'active' automatically by the central GMS system. 
 
 A ServiceRequest may be marked as 'on-hold' if work against it cannot continue temporarily, e.g. due to certain prerequisite information not being provided. A ServiceRequest SHOULD be marked as 'revoked' if cancelled, either by the lab performing work against the order or at the request of the requesting clinician, though in each case a Provenance resource SHALL be provided to capture why the state change has occurred. The requesting clinician may also mark the ServiceRequest as entered-in-error, though implications for work already in progress needs to be investigated further.
 
@@ -327,7 +327,7 @@ For the full list of expected/supported ServiceRequest statuses, please see the 
 
 <a name="intent"></a>
 #### intent
-ServiceRequests SHOULD be marked as 'order' unless they have been raised by a lab in response to an existing ServiceRequest, in which case they SHOULD be marked as 'reflex-order'. For reflex orders, the ServiceRequest.basedOn field SHALL be populated with the original ServiceRequest, for traceability.
+SHALL be provided. ServiceRequests SHOULD be marked as 'order' unless they have been raised by a lab in response to an existing ServiceRequest, in which case they SHOULD be marked as 'reflex-order'. For reflex orders, the ServiceRequest.basedOn field SHALL be populated with the original ServiceRequest, for traceability.
 ```json
 "intent": "order",
 ```
@@ -374,11 +374,11 @@ ServiceRequests marked as urgent (i.e. not routine) SHOULD populate the extensio
 
 <a name="doNotPerform"></a>
 #### doNotPerform
-For the purposes of Genomic Test Ordering, the doNotPerform field SHALL not be used. All ServiceRequests requests received by the system will be assumed to be orders for services/testing.
+For the purposes of Genomic Test Ordering, the doNotPerform field SHALL NOT be used. All ServiceRequests requests received by the system will be assumed to be orders for services/testing.
 
 <a name="code"></a>
 #### code
-Code SHOULD contain the CI or CITT Test Directory code, currently available at https://www.england.nhs.uk/publication/national-genomic-test-directories/. There is currently no CodeSystem or queryable API for retrieving codes but work to address this is underway within the NHS England Genomics Unit.
+SHALL be provided. Code SHOULD contain the CI or CITT Test Directory code, currently available at https://www.england.nhs.uk/publication/national-genomic-test-directories/. There is currently no CodeSystem or queryable API for retrieving codes but work to address this is underway within the NHS England Genomics Unit.
 ```json
 "code": {
         "coding":  [
@@ -411,7 +411,7 @@ An appropriate code(Panel codes) SHOULD come from the following NamingSystem: {{
 
 <a name="subject"></a>
 #### subject
-Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+SHALL be provided. Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",

@@ -98,7 +98,7 @@ The base DocumentReference resource is provided below for completeness.
 
 <a name="subject"></a>
 #### subject
-Reference to the Patient this data file is pertaining to. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+SHOULD be present if related to a patient. Reference to the Patient this data file is pertaining to. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",

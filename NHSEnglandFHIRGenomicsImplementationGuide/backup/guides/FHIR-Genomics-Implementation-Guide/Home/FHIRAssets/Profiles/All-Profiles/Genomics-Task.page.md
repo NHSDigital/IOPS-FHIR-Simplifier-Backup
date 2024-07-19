@@ -6,35 +6,42 @@ Each ServiceRequest submitted will instantiate a series of High Level Tasks, whi
 
 Tasks will be automatically created by the central service but updates to statuses and attachment of input/output resources is the responsibility of the assigned organizations.
 
+An illustrative diagram of the links between ServiceRequests and Tasks are provided below (for the initial sample processing). In most cases, the full library of 10 tasks, as defined within {{pagelink:Genomic-Task-Code}}, will be 'spun-up', on submission of a Test order. Tasks related to Samples may be duplicated per Sample to allow tracking of work related to individual Samples as part of the same test request, or equally, may be omitted as in the case of Re-Analysis or Re-Interpretation where data from an existing sample is used, eliminating the need for additional wet-work.
+
 <plantuml>
 @startuml
 !pragma ratio 0.3
 left to right direction
 scale 1100 width
+together {
 entity SR as "Test Request" <<ServiceRequest>>
 entity P1 as "Patient" <<Patient>>
 entity S1 as "Raw Sample 1" <<Specimen>>
 entity S2 as "Raw Sample 2" <<Specimen>>
-entity S1a as "Extracted Sample 1" <<Specimen>>
-entity S2a as "Extracted Sample 2" <<Specimen>>
+}
+'entity S1a as "Extracted Sample 1" <<Specimen>>
+'entity S2a as "Extracted Sample 2" <<Specimen>>
+together {
 entity T1 as "Process Genomic Test Request" <<Task>>
 entity T2 as "Request & Sample Alignment" <<Task>>
 entity T3 as "Sample Preparation 1" <<Task>>
 entity T3a as "Sample Preparation 2" <<Task>>
-entity T4 as "Sample Processing 1" <<Task>>
-entity T4a as "Sample Processing 2" <<Task>>
-entity T5 as "Genetic/Genomic Data Processing 1" <<Task>>
-entity T5a as "Genetic/Genomic Data Processing 2" <<Task>>
-entity T6 as "Interpretation" <<Task>>
-entity T7 as "Produce Interim Report 1" <<Task>>
-entity T7a as "Produce Interim Report 2" <<Task>>
-entity T8 as "Genomic MDT" <<Task>>
-entity T9 as "Produce Final Report" <<Task>>
-entity T10 as "Distribute Report" <<Task>>
-entity DR1 as "Interim Report 1" <<DiagnosticReport>>
-entity DR2 as "Interim Report 2" <<DiagnosticReport>>
-entity DR3 as "Final Report" <<DiagnosticReport>>
+}
+'entity T4 as "Sample Processing 1" <<Task>>
+'entity T4a as "Sample Processing 2" <<Task>>
+'entity T5 as "Genetic/Genomic Data Processing 1" <<Task>>
+'entity T5a as "Genetic/Genomic Data Processing 2" <<Task>>
+'entity T6 as "Interpretation" <<Task>>
+'entity T7 as "Produce Interim Report 1" <<Task>>
+'entity T7a as "Produce Interim Report 2" <<Task>>
+'entity T8 as "Genomic MDT" <<Task>>
+'entity T9 as "Produce Final Report" <<Task>>
+'entity T10 as "Distribute Report" <<Task>>
+'entity DR1 as "Interim Report 1" <<DiagnosticReport>>
+'entity DR2 as "Interim Report 2" <<DiagnosticReport>>
+'entity DR3 as "Final Report" <<DiagnosticReport>>
 entity PR as "Requester" <<PractitionerRole>>
+together {
 abstract O1 as "Managing Org" <<Organization>> {
   e.g. Home GLH
   Not an entity, referenced by identifier
@@ -43,92 +50,94 @@ abstract O2 as "Fulfilling Org 1" <<Organization>> {
   e.g. Wet Lab/GEL
   Not an entity, referenced by identifier
 }
-abstract O3 as "Fulfilling Org 2" <<Organization>> {
-  e.g. Dry Lab/GEL
-  Not an entity, referenced by identifier
 }
+'abstract O3 as "Fulfilling Org 2" <<Organization>> {
+'  e.g. Dry Lab/GEL
+'  Not an entity, referenced by identifier
+'}
 
 T1 --> SR : Task.focus
 T2 --> SR : Task.focus
 T3 --> SR : Task.focus
 T3a --> SR : Task.focus
-T4 --> SR : Task.focus
-T4a --> SR : Task.focus
-T5 --> SR : Task.focus
-T5a --> SR : Task.focus
-T6 --> SR : Task.focus
-T7 --> SR : Task.focus
-T7a --> SR : Task.focus
-T8 --> SR : Task.focus
-T9 --> SR : Task.focus
-T10 --> SR : Task.focus
+'T4 --> SR : Task.focus
+'T4a --> SR : Task.focus
+'T5 --> SR : Task.focus
+'T5a --> SR : Task.focus
+'T6 --> SR : Task.focus
+'T7 --> SR : Task.focus
+'T7a --> SR : Task.focus
+'T8 --> SR : Task.focus
+'T9 --> SR : Task.focus
+'T10 --> SR : Task.focus
 T1 --> P1 : Task.for
 T2 --> P1 : Task.for
 T3 --> P1 : Task.for
 T3a --> P1 : Task.for
-T4 --> P1 : Task.for
-T4a --> P1 : Task.for
-T5 --> P1 : Task.for
-T5a --> P1 : Task.for
-T6 --> P1 : Task.for
-T7 --> P1 : Task.for
-T7a --> P1 : Task.for
-T8 --> P1 : Task.for
-T9 --> P1 : Task.for
-T10 --> P1 : Task.for
+'T4 --> P1 : Task.for
+'T4a --> P1 : Task.for
+'T5 --> P1 : Task.for
+'T5a --> P1 : Task.for
+'T6 --> P1 : Task.for
+'T7 --> P1 : Task.for
+'T7a --> P1 : Task.for
+'T8 --> P1 : Task.for
+'T9 --> P1 : Task.for
+'T10 --> P1 : Task.for
 T2 --> S1 : Task.output
 T2 --> S2 : Task.output
 T3 --> S1 : Task.input
 T3a --> S2 : Task.input
-T4 --> S1 : Task.input
-T4a --> S2 : Task.input
-T4 --> S1a : Task.output
-T4a --> S2a : Task.output
-T5 --> S1a : Task.input
-T5a --> S2a : Task.input
-T7 --> DR1 : Task.output
-T7a --> DR2 : Task.output
-T8 --> DR1 : Task.input
-T8 --> DR2 : Task.input
-T9 --> DR3 : Task.output
-T10 --> DR3 : Task.input
+'T4 --> S1 : Task.input
+'T4a --> S2 : Task.input
+'T4 --> S1a : Task.output
+'T4a --> S2a : Task.output
+'T5 --> S1a : Task.input
+'T5a --> S2a : Task.input
+'T7 --> DR1 : Task.output
+'T7a --> DR2 : Task.output
+'T8 --> DR1 : Task.input
+'T8 --> DR2 : Task.input
+'T9 --> DR3 : Task.output
+'T10 --> DR3 : Task.input
 T1 --> O1 : Task.owner
 T2 --> O2 : Task.owner
 T3 --> O2 : Task.owner
 T3a --> O2 : Task.owner
-T4 --> O2 : Task.owner
-T4a --> O2 : Task.owner
-T5 --> O3 : Task.owner
-T5a --> O3 : Task.owner
-T6 --> O3 : Task.owner
-T7 --> O3 : Task.owner
-T7a --> O3 : Task.owner
-T8 --> O1 : Task.owner
-T9 --> O3 : Task.owner
-T10 --> O1 : Task.owner
-SR --> P1 : ServiceRequest.subject
+'T4 --> O2 : Task.owner
+'T4a --> O2 : Task.owner
+'T5 --> O3 : Task.owner
+'T5a --> O3 : Task.owner
+'T6 --> O3 : Task.owner
+'T7 --> O3 : Task.owner
+'T7a --> O3 : Task.owner
+'T8 --> O1 : Task.owner
+'T9 --> O3 : Task.owner
+'T10 --> O1 : Task.owner
+SR -l-> P1 : ServiceRequest.subject
 SR --> O1 : ServiceRequest.performer
+SR --> PR : ServiceRequest.requester
 S1 --> P1 : Specimen.subject
 S2 --> P1 : Specimen.subject
 S1 --> SR : Specimen.request
 S2 --> SR : Specimen.request
-S1a --> P1 : Specimen.subject
-S2a --> P1 : Specimen.subject
-S1a --> SR : Specimen.request
-S2a --> SR : Specimen.request
-DR1 --> SR : DiagnosticReport.basedOn
-DR1 --> P1 : DiagnosticReport.subject
-DR1 --> O3 : DiagnosticReport.performer
-DR1 --> S1 : DiagnosticReport.specimen
-DR2 --> SR : DiagnosticReport.basedOn
-DR2 --> P1 : DiagnosticReport.subject
-DR2 --> O3 : DiagnosticReport.performer
-DR2 --> S2 : DiagnosticReport.specimen
-DR3 --> SR : DiagnosticReport.basedOn
-DR3 --> P1 : DiagnosticReport.subject
-DR3 --> O1 : DiagnosticReport.performer
-DR3 --> S1 : DiagnosticReport.specimen
-DR3 --> S2 : DiagnosticReport.specimen
+'S1a --> P1 : Specimen.subject
+'S2a --> P1 : Specimen.subject
+'S1a --> SR : Specimen.request
+'S2a --> SR : Specimen.request
+'DR1 --> SR : DiagnosticReport.basedOn
+'DR1 --> P1 : DiagnosticReport.subject
+'DR1 --> O3 : DiagnosticReport.performer
+'DR1 --> S1 : DiagnosticReport.specimen
+'DR2 --> SR : DiagnosticReport.basedOn
+'DR2 --> P1 : DiagnosticReport.subject
+'DR2 --> O3 : DiagnosticReport.performer
+'DR2 --> S2 : DiagnosticReport.specimen
+'DR3 --> SR : DiagnosticReport.basedOn
+'DR3 --> P1 : DiagnosticReport.subject
+'DR3 --> O1 : DiagnosticReport.performer
+'DR3 --> S1 : DiagnosticReport.specimen
+'DR3 --> S2 : DiagnosticReport.specimen
 
 
 @enduml

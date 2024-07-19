@@ -223,7 +223,7 @@ Extension used for recording the phenotypic sex of the patient, as recorded at b
 
 <a name="identifier"></a>
 #### identifier
-It is preferred that all patients with an NHS number have this included within the Patient resource upon submission of a test order. Patient who do not have an NHS number SHOULD have a temporary one registered/assigned with PDS. 
+SHALL be present for Patients within the Genomic Order Management ecosystem. It is preferred that all patients with an NHS number have this included within the Patient resource upon submission of a test order. Patient who do not have an NHS number SHOULD have a temporary one registered/assigned with PDS. 
 
 For patient records where the NHS number has been traced from PDS, the trace status SHOULD be provided within the NHS Number identifier slice.
 

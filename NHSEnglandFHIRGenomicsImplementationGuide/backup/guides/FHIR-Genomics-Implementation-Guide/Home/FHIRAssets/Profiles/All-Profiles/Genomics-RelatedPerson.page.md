@@ -177,7 +177,7 @@ SHALL be provided. This SHOULD be a reference to the Patient resource or the ide
 
 <a name="identifier"></a>
 #### identifier
-This SHOULD be NHS number or local identifier (if NHS number is unavailable e.g. for non UK residents). If a local identifier is used, an assigner SHALL be provided.
+SHALL be provided. This SHOULD be NHS number or local identifier (if NHS number is unavailable e.g. for non UK residents). If a local identifier is used, an assigner SHALL be provided.
 The RelatedPerson.identifier field SHALL match the identifier used for a FamilyMemberHistory resource if the same person is being referenced.
 ```json
    "identifier": {

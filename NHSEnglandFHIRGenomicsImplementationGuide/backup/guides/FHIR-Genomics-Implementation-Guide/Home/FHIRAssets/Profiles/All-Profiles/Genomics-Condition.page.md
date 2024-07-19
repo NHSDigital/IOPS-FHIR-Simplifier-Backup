@@ -123,7 +123,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="code"></a>
 #### code
-SNOMED CT coding is preferred, though alternative codings MAY be provided subject to review of the Coding system by the NHS England Genomics Unit.
+SHOULD be present. SNOMED CT coding is preferred, though alternative codings MAY be provided subject to review of the Coding system by the NHS England Genomics Unit.
 ```json
 "code": {
         "coding":  [
@@ -138,7 +138,7 @@ SNOMED CT coding is preferred, though alternative codings MAY be provided subjec
 
 <a name="subject"></a>
 #### subject
-Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+SHALL be present. Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",

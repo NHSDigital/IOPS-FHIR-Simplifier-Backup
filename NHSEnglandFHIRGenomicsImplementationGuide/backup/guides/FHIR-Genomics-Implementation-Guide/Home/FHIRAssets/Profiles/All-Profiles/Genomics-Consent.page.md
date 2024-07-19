@@ -138,7 +138,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="status"></a>
 #### status
-Fixed code of 'proposed' where consent discussion has taken place but RoD form has not been provided alongside test order. 'draft' if discussion has not yet taken place and 'active' for completed RoD, regardless of whether the patient has consented to information sharing (responses to specific consent statements SHOULD be recorded in the RoD itself).
+SHALL be present. Fixed code of 'proposed' where consent discussion has taken place but RoD form has not been provided alongside test order. 'draft' if discussion has not yet taken place and 'active' for completed RoD, regardless of whether the patient has consented to information sharing (responses to specific consent statements SHOULD be recorded in the RoD itself).
 ```json
 "status": "proposed",
 ```
@@ -177,7 +177,7 @@ For WGS RoD this SHALL be fixed to the below code:
 
 <a name="source"></a>
 #### source\[x\]
-The Source element MAY either be a pointer to the location of the PDF version of the RoD, either hosted by the source/client system, accessed via NRL or embedded within the message payload, base64 encoded (using sourceAttachment), or a reference to a QuestionnaireResponse resource (using sourceReference), if this has been collected in a structured format, using the {{pagelink:Questionnaire-Genomic-Testing}} RoD template.
+SHALL be present for RoD entities. The Source element MAY either be a pointer to the location of the PDF version of the RoD, either hosted by the source/client system, accessed via NRL or embedded within the message payload, base64 encoded (using sourceAttachment), or a reference to a QuestionnaireResponse resource (using sourceReference), if this has been collected in a structured format, using the {{pagelink:Questionnaire-Genomic-Testing}} RoD template.
 ```json
 "sourceReference": {
         "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-Example"
