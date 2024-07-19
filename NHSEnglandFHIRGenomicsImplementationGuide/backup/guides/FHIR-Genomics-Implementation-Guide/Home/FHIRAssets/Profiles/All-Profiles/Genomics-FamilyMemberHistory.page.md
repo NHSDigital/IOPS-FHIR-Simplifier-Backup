@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-For collecting relevant Family Member History to aid interpretation of Genomic results.
+For collecting relevant Family Member History to aid interpretation of Genomic results. This is limited to collection of Pedigree information. The FamilyMemberHistory resource is not to be used to record participants involved in testing, e.g. in the case of Duo/Trio scenarios (in this case the RelatedPerson resource SHOULD be used instead.
 
 The Genomics FamilyMemberHistory is currently pending Clinical and Technical Assurance of the base UKCore resource. Once this profile becomes active in UKCore its suitability for use and need for profiling within Genomics will be assessed. 
 
@@ -163,7 +163,7 @@ Assertions regarding absence of relevant history SHOULD follow guidance within t
 
 <a name="patient"></a>
 #### patient
-Reference to the associated proband Patient for which this family history is being obtained. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+SHALL be present. Reference to the associated proband Patient for which this family history is being obtained. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -176,7 +176,7 @@ Reference to the associated proband Patient for which this family history is bei
 
 <a name="relationship"></a>
 #### relationship
-Relationship between the person the FamilyMemberHistory references and the proband Patient. Clinical histories for each family member are expected to be recorded in separate FamilyMemberHistory resources. If multiple resources are required, both FamilyMemberHistory and related clinical artifacts such as Condition/Observation resources, these MAY be contained within a List resource to improve readability.
+SHALL be present. Relationship between the person the FamilyMemberHistory references and the proband Patient. Clinical histories for each family member are expected to be recorded in separate FamilyMemberHistory resources. If multiple resources are required, both FamilyMemberHistory and related clinical artifacts such as Condition/Observation resources, these MAY be contained within a List resource to improve readability.
 ```json
 "relationship": {
         "coding":  [

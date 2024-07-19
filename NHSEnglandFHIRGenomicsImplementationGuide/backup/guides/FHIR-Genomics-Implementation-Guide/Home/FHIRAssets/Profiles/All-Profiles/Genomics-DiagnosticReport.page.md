@@ -152,7 +152,7 @@ SHOULD reference the originating ServiceRequest if this is an instance of a geno
 
 <a name="status"></a>
 #### status
-SHOULD use base HL7 codes for DiagnosticReport.status. A DiagnosticReport SHOULD only be marked as final if the report is complete and verified by an authorised person.  
+SHALL use base HL7 codes for DiagnosticReport.status. A DiagnosticReport SHOULD only be marked as final if the report is complete and verified by an authorised person.  
 ```json
  "status": "final",
 ```
@@ -174,7 +174,7 @@ SHOULD use a record artifact concept from SNOMED CT where an appropriate code ex
 
 <a name="subject"></a>
 #### subject
-Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+SHALL be present. Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -244,6 +244,8 @@ If possible, unstructured reports wrapped within DiagnosticReports, SHOULD conta
 <a name="presentedForm"></a>
 #### presentedForm
 Genomic reports SHALL include a presentedForm element either referencing the location of the PDF report (located and accessible on either the source/client system or via NRL using appropriate authentication) or include the PDF report as a base64 encoded attachment within the message payload.
+
+**Note: this guidance may change in the future as work on Structured Reporting matures**
 ```json
 "presentedForm": [
         {

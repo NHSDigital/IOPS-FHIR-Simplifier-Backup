@@ -127,7 +127,7 @@ Bundles within Genomics will be limited to Transactions for Test orders and upda
 
 <a name="type"></a>
 #### type
-The type of Bundle. This is expected to be `transaction` for Bundles POSTed to the central broker, `transaction-response` for responses to transaction Bundles returned by the broker and `searchset` for collections of resources returned in response to search (GET) requests, as per standard HTTP FHIR rules.
+SHALL be present. The type of Bundle. This is expected to be `transaction` for Bundles POSTed to the central broker, `transaction-response` for responses to transaction Bundles returned by the broker and `searchset` for collections of resources returned in response to search (GET) requests, as per standard HTTP FHIR rules.
 ```json
 "type": "transaction",
 ```

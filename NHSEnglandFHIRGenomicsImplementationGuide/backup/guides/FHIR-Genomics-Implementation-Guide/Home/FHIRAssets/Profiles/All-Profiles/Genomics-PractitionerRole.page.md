@@ -159,7 +159,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="practitioner"></a>
 #### practitioner
-Users SHOULD reference practitioners using an appropriate naming system within the NHS (defined within the [NHS England IG](https://simplifier.net/guide/NHSDigital/Home/FHIRAssets/AllAssets/Profiles/NHSDigital-Practitioner.guide.md?version=current#identifier). Display name MAY be included to aid readability and verification of included identifiers.
+SHALL be present. Users SHOULD reference practitioners using an appropriate naming system within the NHS (defined within the [NHS England IG](https://simplifier.net/guide/NHSDigital/Home/FHIRAssets/AllAssets/Profiles/NHSDigital-Practitioner.guide.md?version=current#identifier). Display name MAY be included to aid readability and verification of included identifiers.
 ```json
  "practitioner": {
         "identifier": {
@@ -172,7 +172,7 @@ Users SHOULD reference practitioners using an appropriate naming system within t
 
 <a name="organization"></a>
 #### organization
-Users SHOULD reference organizations using an ODS code. Display name MAY be included to aid readability and verification of included identifiers. Requester ODS codes SHOULD use the lowest level site code rather than trust code (most granular code available) where possible, to aid contact retrieval.
+SHALL be present. Users SHOULD reference organizations using an ODS code. Display name MAY be included to aid readability and verification of included identifiers. Requester ODS codes SHOULD use the lowest level site code rather than trust code (most granular code available) where possible, to aid contact retrieval.
 ```json
  "organization": {
         "identifier": {

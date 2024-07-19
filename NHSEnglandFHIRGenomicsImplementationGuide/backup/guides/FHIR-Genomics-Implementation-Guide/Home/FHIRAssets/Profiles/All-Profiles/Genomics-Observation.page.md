@@ -343,7 +343,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="code"></a>
 #### code
-SNOMED CT coding is preferred, though it is expected that alternative codings will be used depending on the appropriateness for a particular observation e.g. HPO or other codings found within the [HL7 International Genomic Reporting IG](https://hl7.org/fhir/uv/genomics-reporting/codings.html) as their use may already be widespread within Genomics. If a SNOMED CT equivalent exists for a code regularly captured within another CodeSystem, additional 'coding' elements within 'code' SHOULD be provided to aid analytics.
+SHALL be present. SNOMED CT coding is preferred, though it is expected that alternative codings will be used depending on the appropriateness for a particular observation e.g. HPO or other codings found within the [HL7 International Genomic Reporting IG](https://hl7.org/fhir/uv/genomics-reporting/codings.html) as their use may already be widespread within Genomics. If a SNOMED CT equivalent exists for a code regularly captured within another CodeSystem, additional 'coding' elements within 'code' SHOULD be provided to aid analytics.
 ```json
 "code": {
         "coding":  [
@@ -358,7 +358,7 @@ SNOMED CT coding is preferred, though it is expected that alternative codings wi
 
 <a name="subject"></a>
 #### subject
-Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+SHALL be present. Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
