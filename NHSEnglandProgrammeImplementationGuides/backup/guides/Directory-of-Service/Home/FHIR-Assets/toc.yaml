@@ -1,3 +1,5 @@
+- name: Profile Index
+  filename: Profile-Index.page.md
 - name: Profiles
   filename: Profiles
 - name: Extensions
