@@ -12,10 +12,10 @@ transform-to-json:
 # Generate snapshots for all Profiles/StructureDefinitions (Optional)
 # Note, since the file names stay the same the files will be overwritten and we do not need an extra bucket.
 # generate-snapshots:
-#  - source: bucket1
-#  - category: Profile
-#  - action: snapshot
-#  - target: bucket1
+# - source: bucket1
+# - category: Profile
+# - action: snapshot
+# - target: bucket1
  
 # Move all conformance resources to the /package folder (Mandatory according to the specification)
 move-conformance-resources:
