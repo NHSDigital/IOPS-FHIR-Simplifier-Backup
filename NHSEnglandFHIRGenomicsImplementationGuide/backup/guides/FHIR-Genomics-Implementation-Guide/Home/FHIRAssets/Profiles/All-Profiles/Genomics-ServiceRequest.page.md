@@ -525,7 +525,7 @@ For WGS testing, where Records of Discussion are required in order to process th
 
 <a name="specimen"></a>
 #### specimen
-ServiceRequests for reanalysis, where the required samples already exist, SHOULD reference these samples through the specimen field. Where samples need to be collected to support testing, these SHOULD instead reference the ServiceRequest, through Specimen.request (i.e. the service request has prompted collection of the sample), and SHOULD also be referenced from within ServiceRequest.supportingInfo as per the guidance above. The referenced Specimen resources SHOULD either be contained within the test order transaction bundle or already exist on the central GMS.
+ServiceRequests for reanalysis, where the required samples already exist, SHOULD reference these samples through the specimen field. Where samples need to be collected to support testing, these SHOULD instead reference the ServiceRequest, through Specimen.request (i.e. the service request has prompted collection of the sample), **and SHOULD also be referenced from within ServiceRequest.supportingInfo as per the guidance above (pending review)**. The referenced Specimen resources SHOULD either be contained within the test order transaction bundle or already exist on the central GMS.
 ```json
 "specimen": [
         {
