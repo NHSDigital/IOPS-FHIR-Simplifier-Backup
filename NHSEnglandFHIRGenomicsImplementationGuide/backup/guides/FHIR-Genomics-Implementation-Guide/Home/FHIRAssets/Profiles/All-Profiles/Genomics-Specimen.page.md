@@ -317,7 +317,7 @@ If a sample has been split into multiple parts, each SHOULD be represented using
 
 <a name="request"></a>
 #### request
-SHALL be provided. This SHOULD be a reference to the request which initiated collection of the sample. SHOULD be updated (added to) if used in further ServiceRequests, e.g. as part of reanalysis
+SHALL be provided. This SHOULD be a reference to the request which initiated collection of the sample. SHALL NOT be updated if the sample is used for another test e.g. for re-analysis. In this case the ServiceRequest SHALL reference the pre-existing sample via ServiceRequest.specimen. 
 ```json
 "request":  [
         {
