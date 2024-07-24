@@ -202,7 +202,7 @@ This section lists examples created to illustrate how to populate resources in c
                         <div class="nhsd-a-box nhsd-a-box--bg-light-grey">
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
-                                    <h1 class="nhsd-t-heading-s">GOSH GSMA Genomic Report Profile</h1>
+                                    <h1 class="nhsd-t-heading-s">GOSH GMSA Genomic Report Profile</h1>
                                     <p class="nhsd-t-body-s">Simplifier project developed by GOSH GMSA for representing Genomic Reports</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
