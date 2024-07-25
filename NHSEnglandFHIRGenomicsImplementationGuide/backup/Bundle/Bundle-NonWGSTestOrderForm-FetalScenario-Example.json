@@ -352,44 +352,44 @@
           }
         ],
         "supportingInfo": [
-       {
-        "reference": "Observation/Observation-HistoryOfFetalLoss-Example"
-      },
-      {
-        "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-      },
-      {
-        "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnionRyanneBoulder-Example"
-      },
-      {
-        "reference": "Observation/Observation-GenomicEthnicity-Example"
-      },
-      {
-        "reference": "Observation/Observation-PregnancyConfirmation-Example"
-      },
-      {
-        "reference": "Observation/Observation-NoTransplant-Example"
-      },
-      {
-        "reference": "Observation/Observation-NoFirstTrimesterFetalAnomalies-Example"
-      },
-      {
-        "reference": "Observation/Observation-NoSecondTrimesterFetalAnomalies-Example"
-      },
-      {
-        "reference": "Procedure/Procedure-InVitroFertilisation-Example"
-      }
+          {
+            "reference": "Observation/Observation-HistoryOfFetalLoss-Example"
+          },
+          {
+            "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+          },
+          {
+            "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnionRyanneBoulder-Example"
+          },
+          {
+            "reference": "Observation/Observation-GenomicEthnicity-Example"
+          },
+          {
+            "reference": "Observation/Observation-PregnancyConfirmation-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoTransplant-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoFirstTrimesterFetalAnomalies-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoSecondTrimesterFetalAnomalies-Example"
+          },
+          {
+            "reference": "Procedure/Procedure-InVitroFertilisation-Example"
+          }
         ],
         "note": [
-        {
-          "text": "Samples are to be provided at a later date"
-        },
-        {
-          "text": "No family history of relevant testing"
-        },
-        {
-          "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. large echogenic kidneys with normal bladder"
-        }
+          {
+            "text": "Samples are to be provided at a later date"
+          },
+          {
+            "text": "No family history of relevant testing"
+          },
+          {
+            "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. large echogenic kidneys with normal bladder"
+          }
         ]
       },
       "request": {
@@ -468,42 +468,42 @@
           }
         ],
         "supportingInfo": [
-        {
-          "reference": "Observation/Observation-HistoryOfFetalLoss-Example"
-        },
-        {
-          "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-        },
-        {
-          "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnionRyanneBoulder-Example"
-        },
-        {
-          "reference": "Observation/Observation-GenomicEthnicity-Example"
-        },
-        {
-          "reference": "Observation/Observation-PregnancyConfirmation-Example"
-        },
-        {
-          "reference": "Observation/Observation-NoTransplant-Example"
-        },
-        {
-          "reference": "Observation/Observation-NoFirstTrimesterFetalAnomalies-Example"
-        },
-        {
-          "reference": "Observation/Observation-NoSecondTrimesterFetalAnomalies-Example"
-        },
-        {
-          "reference": "Procedure/Procedure-InVitroFertilisation-Example"
-        },
-        {
-          "reference": "Specimen/Specimen-BloodEDTA-Example"
-        },
-        {
-          "reference": "Specimen/Specimen-RyanneBoulderSaliva-Example"
-        },
-        {
-          "reference": "Specimen/Specimen-RyanneBoulderPartnerSaliva-Example"
-        }
+          {
+            "reference": "Observation/Observation-HistoryOfFetalLoss-Example"
+          },
+          {
+            "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+          },
+          {
+            "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnionRyanneBoulder-Example"
+          },
+          {
+            "reference": "Observation/Observation-GenomicEthnicity-Example"
+          },
+          {
+            "reference": "Observation/Observation-PregnancyConfirmation-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoTransplant-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoFirstTrimesterFetalAnomalies-Example"
+          },
+          {
+            "reference": "Observation/Observation-NoSecondTrimesterFetalAnomalies-Example"
+          },
+          {
+            "reference": "Procedure/Procedure-InVitroFertilisation-Example"
+          },
+          {
+            "reference": "Specimen/Specimen-BloodEDTA-Example"
+          },
+          {
+            "reference": "Specimen/Specimen-RyanneBoulderSaliva-Example"
+          },
+          {
+            "reference": "Specimen/Specimen-RyanneBoulderPartnerSaliva-Example"
+          }
         ],
         "note": [
           {

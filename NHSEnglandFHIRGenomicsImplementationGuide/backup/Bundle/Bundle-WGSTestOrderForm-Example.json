@@ -750,8 +750,8 @@
           "data": [
             {
               "meaning": "instance",
-              "reference": { 
-                "reference":  "ServiceRequest/ServiceRequest-WGSTestOrderForm-Example"
+              "reference": {
+                "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-Example"
               }
             }
           ]

@@ -1,9 +1,29 @@
 {
   "resourceType": "StructureDefinition",
+  "id": "NHSDigital-ServiceRequest-Genomics",
   "url": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-ServiceRequest-Genomics",
+  "version": "0.2.0",
   "name": "NHSDigital_ServiceRequest_Genomics",
+  "title": "NHSDigital ServiceRequest Genomics",
   "status": "draft",
-  "date": "2022-11-13T17:39:32.2218991+00:00",
+  "date": "2024-07-22T17:04:32.2218991+00:00",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "description": "This profile defines the NHS England-Genomics Programme constraints and extensions on the FHIR UK Core resource [UK Core ServiceRequest](https://simplifier.net/hl7fhirukcorer4/ukcore-servicerequest)",
+  "purpose": "This profile is a record of a request for a procedure or diagnostic or other service to be planned, proposed, or performed, as distinguished by the ServiceRequest.intent field value, with or on a patient.",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\\\\\"License\\\\\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\\\\\"AS IS\\\\\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -15,52 +35,18 @@
       {
         "id": "ServiceRequest.extension",
         "path": "ServiceRequest.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 1
-      },
-      {
-        "id": "ServiceRequest.extension:additionalContact",
-        "path": "ServiceRequest.extension",
-        "sliceName": "additionalContact",
-        "min": 0,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact"
-            ]
-          }
-        ],
-        "isModifier": false
       },
       {
         "id": "ServiceRequest.extension:coverage",
         "path": "ServiceRequest.extension",
         "sliceName": "coverage",
-        "min": 1,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage"
-            ]
-          }
-        ],
-        "isModifier": false
+        "min": 1
       },
       {
         "id": "ServiceRequest.extension:priorityReason",
         "path": "ServiceRequest.extension",
         "sliceName": "priorityReason",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -79,6 +65,10 @@
           }
         ],
         "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:priorityReason.value[x]",
+        "path": "ServiceRequest.extension.value[x]"
       },
       {
         "id": "ServiceRequest.extension:priorityReason.value[x].coding",
@@ -173,6 +163,51 @@
         "path": "ServiceRequest.code",
         "definition": "A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.\r\n\r\nFor Genomic Test Orders, use the system 'https://www.england.nhs.uk/publication/national-genomic-test-directories' and code from one of the test directories provided by NHS England. Addition of these codes to an appropriate coding system, e.g. SNOMED-CT, is under discussion.",
         "min": 1
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding",
+        "path": "ServiceRequest.orderDetail.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding:genomicsTypesofReanalysisTest",
+        "path": "ServiceRequest.orderDetail.coding",
+        "sliceName": "genomicsTypesofReanalysisTest",
+        "binding": {
+          "strength": "preferred",
+          "description": "Types of re-analysis test in Genomics",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-types-of-reanalysistest"
+        }
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding:genomicTestDirectory",
+        "path": "ServiceRequest.orderDetail.coding",
+        "sliceName": "genomicTestDirectory"
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding:genomicTestDirectory.system",
+        "path": "ServiceRequest.orderDetail.coding.system",
+        "short": "Genomics Test Directory codes",
+        "fixedUri": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory"
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding:genomicsTestPanelCode",
+        "path": "ServiceRequest.orderDetail.coding",
+        "sliceName": "genomicsTestPanelCode"
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding:genomicsTestPanelCode.system",
+        "path": "ServiceRequest.orderDetail.coding.system",
+        "short": "Genomics Test Panel Code",
+        "fixedUri": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestPanelCode"
       },
       {
         "id": "ServiceRequest.quantity[x]",
@@ -279,7 +314,11 @@
       {
         "id": "ServiceRequest.reasonCode",
         "path": "ServiceRequest.reasonCode",
-        "min": 1
+        "min": 1,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://fhir.nhs.uk/ValueSet/genomics-reasonfortesting"
+        }
       },
       {
         "id": "ServiceRequest.reasonReference",
