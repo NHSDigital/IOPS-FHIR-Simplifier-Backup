@@ -97,7 +97,7 @@ Retrieval of sets of resources using {{pagelink:Home/FHIRAssets/GraphDefinitions
 
 * Multiple _include/_revinclude parameters will be supported within a single URL search string. The :iterate modifier will also be supported to enable traversal of multiple levels of references in searches e.g. `GET [base]/MedicationDispense?_include=Medication:prescription&_include:iterate=MedicationRequest:requester&criteria...`. 
 
-* The `_history` and `_lastUpdated` parameters will be supported as part of history and audit provenance needs. 
+* The `_history` and `_lastUpdated` parameters will be supported as part of history and audit provenance needs. The `_history` parameter will only be supported on instance level reads, i.e. history will not be retrievable at the resource type or base levels.
 
 * Token type searching for coded values based on system and/or code e.g. http://snomed.info/sct%7C3738000 will be supported, to enable unabiguous searching of codes.
 
