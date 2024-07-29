@@ -1,10 +1,10 @@
 {
   "resourceType": "ServiceRequest",
   "id": "ServiceRequest-NonWGSTestOrderFormUpdated-SolidTumor-Example",
-    "meta": {
-      "versionId": "3",
-      "lastUpdated": "2023-08-08T15:43:00Z"
-    },
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2023-08-08T15:43:00Z"
+  },
   "extension": [
     {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -63,9 +63,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "335741000000100",
-          "display": "Recurrence of tumour"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "relapse",
+          "display": "Relapse"
         }
       ]
     }
@@ -80,7 +80,6 @@
     }
   ],
   "supportingInfo": [
-   
     {
       "reference": "Observation/Observation-Cellularity-Example"
     },

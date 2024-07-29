@@ -51,6 +51,15 @@
           "display": "Early onset or syndromic epilepsy"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/types-of-reanalysistest-genomics",
+          "code": "original-gene-panels",
+          "display": "Original Gene Panels"
+        }
+      ]
     }
   ],
   "subject": {
@@ -68,8 +77,8 @@
     {
       "coding": [
         {
-          "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-          "code": "261004008",
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
           "display": "Diagnostic"
         }
       ]
