@@ -49,13 +49,13 @@ The following versions of the UK Core Implementation Guide have been published:
 </tr>
 <tr>
 <td>16th July 2024</td>
-<td>2.1.0</td>
+<td>2.0.1</td>
 <td>4.0.1</td>
 <td>Second balloted UK Core</td>
-<td><a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2?version=2.1.0">Home Page</a><br>
-<a href="https://github.com/NHSDigital/FHIR-R4-UKCORE-STAGING-MAIN/releases/download/2.1.0/UK-Core-Implementation-Guide-2.1.0-STU2.zip">Download as zip</a>
+<td><a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2?version=2.0.1">Home Page</a><br>
+<a href="https://github.com/NHSDigital/FHIR-R4-UKCORE-STAGING-MAIN/releases/download/2.0.1/UK-Core-Implementation-Guide-2.0.1-STU2.zip">Download as zip</a>
 </td>
-<td><a href="https://simplifier.net/packages/fhir.r4.ukcore.stu2/2.1.0">fhir.r4.ukcore.stu2 2.1.0</a>
+<td><a href="https://simplifier.net/packages/fhir.r4.ukcore.stu2/2.0.1">fhir.r4.ukcore.stu2 2.0.1</a>
 </td>
 </tr>
 <tr>
