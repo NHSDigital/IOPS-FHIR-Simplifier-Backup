@@ -6,9 +6,9 @@
       "reference": "ServiceRequest-NonWGSTestOrderForm-FatherOfFayMutlow-Example"
     }
   ],
-  "meta":{
-    "versionId":"2",
-    "lastUpdated":"2023-10-06T09:00:00Z"
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-10-06T09:00:00Z"
   },
   "extension": [
     {
@@ -47,7 +47,7 @@
       }
     ]
   },
-  "orderDetail":[
+  "orderDetail": [
     {
       "coding": [
         {
@@ -73,9 +73,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "473145005",
-          "display": "Possible familial hypercholesterolemia"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "predictive",
+          "display": "Predictive"
         }
       ]
     }

@@ -53,9 +53,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "1186936003",
-          "display": "Storage of specimen"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "dna-storage",
+          "display": "DNA Storage"
         }
       ]
     }

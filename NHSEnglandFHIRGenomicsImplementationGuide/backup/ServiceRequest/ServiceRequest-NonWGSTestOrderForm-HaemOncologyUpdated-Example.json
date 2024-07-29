@@ -57,9 +57,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "441308009",
-          "display": "New diagnosis"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
         }
       ]
     }

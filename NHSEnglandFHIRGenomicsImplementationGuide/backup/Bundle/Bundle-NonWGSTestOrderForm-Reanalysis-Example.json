@@ -283,9 +283,9 @@
           {
             "coding": [
               {
-                "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
-                "code": "719641000000101",
-                "display": "Data analysis (qualifier value)"
+                "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+                "code": "new-treatment-clinical-management",
+                "display": "New Treatment/Clinical Management"
               }
             ],
             "text": "Significant new treatment and or clinical management implication for the patient.Please provide details/treatment for management of epilepsy"

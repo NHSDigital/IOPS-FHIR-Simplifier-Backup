@@ -59,9 +59,9 @@
 		{
 			"coding": [
 				{
-					"system": "http://snomed.info/sct",
-					"code": "103693007",
-					"display": "Diagnostic procedure"
+					"system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+					"code": "diagnostic",
+					"display": "Diagnostic"
 				}
 			]
 		}

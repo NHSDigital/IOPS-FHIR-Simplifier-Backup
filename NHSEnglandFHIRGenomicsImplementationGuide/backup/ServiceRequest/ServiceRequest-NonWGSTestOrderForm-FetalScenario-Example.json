@@ -61,9 +61,9 @@
 		{
 			"coding": [
 				{
-					"system": "http://snomed.info/sct",
-					"code": "243787009",
-					"display": "Antenatal screening"
+					"system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+					"code": "staging-or-prognosis",
+					"display": "Staging or Prognosis"
 				}
 			]
 		}

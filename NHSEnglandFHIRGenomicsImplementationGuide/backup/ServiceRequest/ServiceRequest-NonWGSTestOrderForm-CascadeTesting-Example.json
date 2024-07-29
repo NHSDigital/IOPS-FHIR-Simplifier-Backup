@@ -58,9 +58,9 @@
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "473145005",
-          "display": "Possible familial hypercholesterolemia"
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "predictive",
+          "display": "Predictive"
         }
       ]
     }

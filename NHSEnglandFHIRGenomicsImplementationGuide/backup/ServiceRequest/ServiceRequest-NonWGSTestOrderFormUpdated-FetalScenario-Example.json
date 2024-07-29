@@ -1,10 +1,10 @@
 {
 	"resourceType": "ServiceRequest",
 	"id": "ServiceRequest-NonWGSTestOrderFormUpdated-FetalScenario-Example",
-    "meta": {
-      "versionId": "2",
-      "lastUpdated": "2023-09-26T10:00:00Z"
-    },
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2023-09-26T10:00:00Z"
+	},
 	"extension": [
 		{
 			"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -65,15 +65,14 @@
 		{
 			"coding": [
 				{
-					"system": "http://snomed.info/sct",
-					"code": "243787009",
-					"display": "Antenatal screening"
+					"system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+					"code": "staging-or-prognosis",
+					"display": "Staging or Prognosis"
 				}
 			]
 		}
 	],
 	"supportingInfo": [
-
 		{
 			"reference": "Observation/Observation-HistoryOfFetalLoss-Example"
 		},
@@ -101,9 +100,9 @@
 		{
 			"reference": "Procedure/Procedure-InVitroFertilisation-Example"
 		},
-    {
-      "reference": "Specimen/Specimen-BloodEDTA-Example"
-    },
+		{
+			"reference": "Specimen/Specimen-BloodEDTA-Example"
+		},
 		{
 			"reference": "Specimen/Specimen-RyanneBoulderSaliva-Example"
 		},
@@ -119,9 +118,9 @@
 			"text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. large echogenic kidneys with normal bladder"
 		}
 	],
-  "relevantHistory": [
-    {
-      "reference": "Provenance/Provenance-NonWGSTestOrderForm-FetalScenario-Example"
-    }
-  ]
+	"relevantHistory": [
+		{
+			"reference": "Provenance/Provenance-NonWGSTestOrderForm-FetalScenario-Example"
+		}
+	]
 }
