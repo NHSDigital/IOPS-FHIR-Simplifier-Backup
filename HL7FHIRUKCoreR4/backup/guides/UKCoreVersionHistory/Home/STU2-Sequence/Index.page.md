@@ -13,9 +13,9 @@ topic: STU2Sequence
 
 <tr>
 <td>16th July 2024</td>
-<td>2.1.0</td>
+<td>2.0.1</td>
 <td>4.0.1</td>
-<td>UK Core Implementation Guide 2.1.0 - STU2 - Minor release version of the Second HL7 UK Ballot version of UK Core</td>
+<td>UK Core Implementation Guide 2.0.1 - STU2 - Minor release version of the Second HL7 UK Ballot version of UK Core</td>
 </tr>
 <tr>
 <td colspan="4">
