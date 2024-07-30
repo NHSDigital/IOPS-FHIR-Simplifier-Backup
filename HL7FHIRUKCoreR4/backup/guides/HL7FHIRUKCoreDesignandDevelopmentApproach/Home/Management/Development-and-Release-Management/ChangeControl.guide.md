@@ -26,7 +26,7 @@ Note: The triage of issues raised as part of Clinical and Technical Assurance pr
 Clinical and Technical Assurance process as a batch. This enables more efficient triage of issues and the identification of dependencies and issue duplication.
 
 ### Triage of Non-Clinical and Technical Assurance process issues
-The triage process for issues is not something that is a tightly defined process, but more of a discussion forum of SMEs where a consensus of agreement is reached about the issue and any proposed solution. The following are examples of criteria or areas that will be discussed:
+The triage process for issues is not something that is a tightly defined process, but more of a discussion forum of Subject Matter Experts (SMEs) where a consensus of agreement is reached about the issue and any proposed solution. The following are examples of criteria or areas that will be discussed:
 
 - Is the reason or use case for the requested change or addition to the UK Core clear enough to triage the issue?
 - Is the proposed change suitable for the use case, for example are the profiles that are being requested or requested to be changed the correct profiles for the use case?

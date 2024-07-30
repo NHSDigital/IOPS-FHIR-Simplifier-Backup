@@ -1,10 +1,10 @@
 - name: Index
   filename: Index.page.md
-- name: Change Control
-  filename: ChangeControl.guide.md
-- name: Development Cycle
-  filename: DevelopmentCycle.guide.md
 - name: Overview of Release Cycle
   filename: OverviewofReleaseCycle.guide.md
+- name: Development Cycle
+  filename: DevelopmentCycle.guide.md
+- name: Change Control
+  filename: ChangeControl.guide.md
 - name: Current Releases Illustration
   filename: CurrentReleasesIllustration.guide.md
