@@ -1,10 +1,10 @@
 ## {{page-title}}
 
-The UK Core uses Simplifier NPM packages to release the FHIR Conformance Assets.
+The UK Core uses Simplifier NPM packages to release the FHIR Conformance Assets. From STU2 every package SHALL contain the snapshot and differential elements within each Profile. The profiles within GitHub SHALL only contain the differntial element, with the snapshot being rendered when the package is created using the Simplifer Bake scripting.
 
 The UK Core Packages are located with the <a href="https://simplifier.net/HL7FHIRUKCoreR4/~packages">Project Packages area.</a>
 
-<a href="https://docs.simplifier.net/projects/Firely-Terminal/Managing-Packages.html?highlight=simplifier%20packages">Further information on Packages is available in the Simplifier documentation.</a>
+Further information on Packages is available in the  <a href="https://docs.fire.ly/projects/Simplifier/data_governance_and_quality_control/simplifierPackages.html">Simplifier documentation</a> and <a href="https://confluence.hl7.org/display/FHIR/NPM+Package+Specification"> HL7 Confluence</a>.
 
 These packages may be used to validate conformance of an implementation of FHIR against a particular version or versions of the UK Core. For more information on conformance to UK Core see the {{pagelink:Claiming-Conformance-to-UK-Core}} .
 
@@ -18,7 +18,7 @@ where
 - <code><i>[sequence release]</i></code> - The sequence and release (currently stu1).
 - <code><i>[major]</i></code> - The major release aligns with the Implementation Guide major version and is indicative of the number of ballots the Implementation Guide has been through.
 - <code><i>[minor]</i></code> - The minor version aligns with the Implementation Guide minor version.
-- <code><i>[patch]</i></code> - The patch version starts at 0 and increments by 1 for every package release for a particular Implementation Release. Note: a Implementation guide may have more than one package associated with it.
+- <code><i>[patch]</i></code> - The patches release is used for bug fixes within the package. The patch version starts at 0 and increments by 1 for every package release for a particular Implementation Release. Note: a Implementation guide may have more than one package associated with it. 
 
 ### Package example
 

@@ -26,8 +26,17 @@ The <a href="https://simplifier.net/guide/HL7FHIRUKCoreDesignandDevelopmentAppro
 ## Dictionary of medicines and devices (dm+d)
 <a href="https://simplifier.net/guide/HL7FHIRUKCoreDesignandDevelopmentApproach/Home/Glossary#G17" Target="_blank">dm+d</a> is used as a CodeSystem for a small number of coded values, mainly around medications and allergies. dm+d is dynamic by nature and this is acceptable at the UK Core level. The UK Core never fixes profile bindings to a given dm+d concept but will use a statement which defines the allowed content to support this dynamic terminology.There is therefore no real dependency, however derived implementations may by design introduce a dependency on dm+d but where that is the case the derived implementation SHALL manage that dependency.
 
-## Alignment with the US Core
-The UK Core has no dependency on the <a href="https://simplifier.net/guide/HL7FHIRUKCoreDesignandDevelopmentApproach/Home/Glossary#G17" Target="_blank">US Core</a>, however alignment with the US Core is desirable and feedback from vendors has confirmed that this is their requirement too. Where there is deviation, this will be documented within this implementation guide. 
+## LOINC
+LOINC Codesystems are rarely used within the UK, with the majority of clinical codes being SNOMED CT. HL7 does mandate LOINC in some profiles, for instance <a href="https://www.hl7.org/fhir/observation-vitalsigns.html>Observation-vitalsigns</a> profile and its derivatives, where certain binding strengths are `extensible` or `required`. To conform to FHIR these have been kept within the UK Core profiles derived from HL7 but an equivalent SNOMED CT code has been added to the `coding` element for use and validation purposes.
+
+## Alignment with the other standards
+The UK Core has no dependency on ohter standards, however alignment with the following is desirable and feedback from vendors has confirmed that this is their requirement too:
+- <a href="https://wiki.ihe.net/index.php/Category:FHIR">IHE</a>, 
+- <a href="https://openehr.org/">openEHR</a>, 
+- <a href="https://theprsb.org/">PRSB</a>
+- <a href="https://hl7.eu/fhir/index.html">HL7 Europe</a>, 
+- <a href="https://www.hl7.org/fhir/us/core/">US Core</a>, 
+- <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/">AU Core</a>.
 
 ---
 

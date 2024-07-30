@@ -1,7 +1,7 @@
 # {{page-title}}
 
 ## Overview
-The UK Core will conform to the FHIR Standard. Conformance applies to the UK Core itself and also to assets derived from UK Core where conformance to UK Core is claimed or required.
+The UK Core will conform to the <a href="https://build.fhir.org/conformance-rules.html">FHIR Standard</a>. Conformance applies to the UK Core itself and also to assets derived from UK Core where conformance to UK Core is claimed or required.
 
 
 ## What Should Conform? 
@@ -27,7 +27,7 @@ Implementations asserting conformance to UK Core claim that:
 - data values conform to the specified UK Core ValueSets where binding is "required", and to their data type constraints.
 - data is exchanged in a manner conformant to the selected exchange paradigm, and to the constraints on the interactions defined within that paradigm.
 
-Implementations claiming conformance to UK Core SHOULD be able to validate their conformance using a suitable FHIR validator and the UK Core packages.See the {{pagelink:Validation-of-implementations}} section for further information. There are also guidance pages that contain constraints and business rule that SHALL be met to be UK Core conformant these are not all validatable using HAPI and packages.
+Implementations claiming conformance to UK Core SHOULD be able to validate their conformance using a suitable FHIR validator and the UK Core packages.See the {{pagelink:Validation-of-implementations}} section for further information. There are also guidance pages that contain constraints and business rule that are not computable, these SHALL be met to be UK Core conformant.
 
 ### Definitional / Conformance resources
 

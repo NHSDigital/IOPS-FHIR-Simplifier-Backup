@@ -1,9 +1,7 @@
 ## {{page-title}}
 
 ### Overview
-Simplifier is the chosen platform for UK Core development. Further information about Simplifier can be found on the [Simplifier homepage](https://simplifier.net).
 
-### Simplifier Projects
 The UK Core consists of a collection of projects and Implementation Guides. These are developed and released using the Simplifier platform in an [organisation account](https://simplifier.net/organization/hl7uk) owned by HL7 UK. 
 There are two [projects](https://simplifier.net/organization/hl7uk/~projects) used for the UK Core and related Implementation Guides.
 
@@ -12,7 +10,7 @@ There are two [projects](https://simplifier.net/organization/hl7uk/~projects) us
 
 There are also other HL7 UK projects:
 - HL7 FHIR® UK Core R4 STU*x* Sequence - Where *x* denotes the version. These are R4 projects allowing the separation of individual STU Sequence packages for administration purposes only. This will have no effect on the user and all the relevant Implementation Guides will still be found within the [HL7 FHIR® UK Core R4](https://simplifier.net/hl7fhirukcorer4) project.
--  [HL7 FHIR® CareConnect Baseline for STU3](https://simplifier.net/hl7fhircareconnectbaselineforstu3)  - This is project for the CareConnect STU3 FHIR assets and guides. This project is not directly related to the UK Core but was used as input in the early development of the UK Core.  There is currently work in progress to map the CareConnect FHIR assets to UK Core FHIR assets to help implementers migrate to UK Core.    
+-  [HL7 FHIR® CareConnect Baseline for STU3](https://simplifier.net/hl7fhircareconnectbaselineforstu3)  - This is project for the CareConnect STU3 FHIR assets and guides. This project is not directly related to the UK Core but was used as input in the early development of the UK Core. This version is now deprecated.    
 
 ### Simplifier Implementation Guides
 
