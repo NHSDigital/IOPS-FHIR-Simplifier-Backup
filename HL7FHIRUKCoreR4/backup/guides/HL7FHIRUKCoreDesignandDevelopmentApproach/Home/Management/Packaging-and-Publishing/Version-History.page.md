@@ -4,7 +4,7 @@
 <li>Within the GitHub release page right click on the zip file and ‘Copy Link’ </li>
  <br><br>
 {{render:IGGithubZip}}
-  <br><br><li>
+  <br><br>
 <li>Edit the UK Core Publication (Version) History within Simplifier and add the following to the table:
 
 ```

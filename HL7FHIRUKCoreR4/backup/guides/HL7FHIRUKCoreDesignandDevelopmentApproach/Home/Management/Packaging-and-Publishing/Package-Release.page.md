@@ -6,9 +6,10 @@ Ensure the following has been checks have been completed:
 -	Ensure all GitHub PR's are complete
 -	Merge develop (hotfix) into relevant main (release)
 
+### Bake Command
+Ensure the package.bake.yml is configured to add snapshots to Profiles. See Simplifier's <a href="https://docs.fire.ly/projects/Simplifier/data_governance_and_quality_control/simplifierPackages.html#bake-pipeline">Bake PipeLine</a> and <a href="https://simplifier.net/docs/bake">Bake Syntax for more details</a>.
 
 ### Publishing a Package
-Note that the following must be done within a virtual machine due to NHS firewall restrictions.
 
 <ol>
 <li>Within the Simplifier Project reimport Github.

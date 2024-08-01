@@ -2,6 +2,11 @@
 
 This glossary gives a short definition of terms used in this implementation guide. Links are supplied to websites where further information which may help the reader can be found. 
 
+This glosary is to supplement the <a href="http://hl7.org/fhir/R5/help.html">HL7 glossary</a>, <i>note the new HL7 glossary is first found in the R5 version, whereas the UK Core is currently based on the R4 version. </i>
+
+For persons new to FHIR the <a href="http://hl7.org/fhir/R5/help.html">Simplifier glossary</a> offers a comprehensive guide to the commonly used words within the standard.
+
+
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-info-circle"><h4> Disclaimer</h4></i>
 Whilst every effort has been made to ensure that the glossary entries are correct and useful, they are not a normative part of the specification.
 <br><br>
@@ -58,46 +63,6 @@ Z
 <td><br></td>
 </tr>
 <tr>
-<td>ACF</td>
-<td>Access Control Framework. Access to NHS Care Records Service data (on Spine) is controlled by the ACF which registers and authenticates all users. It provides a single log-in and a record of each healthcare professional accessing a patient’s NHS care record.
-<br><br>
-All information is provided on a need-to-know basis and based on a user’s role and legitimate relationship with the patient. It stores the details of those relationships between healthcare professionals and patients, as well as patient preferences on information sharing (such as whether certain sensitive information is restricted from routine sharing).</td>
-<td><br></td>
-</tr>
-<tr>
-<td>ACS</td>
-<td>Access Control Service. The Access Control Service used on Spine.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Act</td>
-<td>A class in HL7 that describes if something happened or may happen.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Active patient</td>
-<td>An Active patient, as defined by GP Connect, is any patient on a provider's system that have 'Not Left' and are 'Not Deceased'. The concept of 'Active' is related to the patient’s registration status rather than to the patient's registration type.
-<br><br>
-A provider's system may have a number of different statuses which should be considered Active. Many of those statuses may apply to a number of different registration types.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>ActRelationship</td>
-<td>A relationship between two HL7 act classes.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>ADRT</td>
-<td>Advance Decision to Refuse Treatment. An advance decision (sometimes known as an advance decision to refuse treatment, an ADRT, or a living will) is a decision you can make now to refuse a specific type of treatment at some time in the future.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>ADT</td>
-<td>HL7 Admit/Discharge and Transfer messages carry patient demographic information for HL7 communications but also provide important information about trigger events (such as patient admit, discharge, transfer, registration, etc.).
-<br><br>
-Some of the most important segments in the ADT message are the PID segment, the PV1 (Patient Visit). ADT messages are extremely common in HL7 processing and are among the most widely used of all message types.</td>
-<td><br></td>
-</tr>
 <tr>
 <td>AoMRC</td>
 <td>The Academy of Medical Royal Colleges speaks on standards of care and medical education across the UK and drives improvement in health and patient care through education, training and quality standards.</td>
@@ -111,25 +76,8 @@ In the service/message/document categorisation, an API is a service interface. A
 <td><br></td>
 </tr>
 <tr>
-<td>Application acknowledgement
-</td>
-<td>A response from one application to another indicating that a message has been received and is valid.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Application role
-</td>
-<td>The role played by the application in a particular interaction.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>Argonaut</td>
 <td>An initiative launched by HL7 to accelerate the development and adoption of FHIR. Supported by 11 organizations, including EHR vendors Epic and Cerner and health systems Mayo Clinic and Intermountain Healthcare.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>ASID</td>
-<td>Accredited System Identifier is an identifier used in Spine Directory Service (SDS) to reference an IT system that has been accredited for use in a specific health or care organisation.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -140,11 +88,6 @@ In the service/message/document categorisation, an API is a service interface. A
 <tr>
 <td>Attributes</td>
 <td>Attributes are abstractions of the data captured about classes. Attributes capture separate aspects of the class and take their values independent of one another.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>AUS</td>
-<td>An Authenticated User Session is defined as when a real person is physically logged in to a system after being authenticated via their smart card or by another authentication method.</td>
 <td><br></td>
 </tr>
 </tbody>
@@ -173,24 +116,8 @@ In the service/message/document categorisation, an API is a service interface. A
 <td><a href="https://simplifier.net/guide/careconnectversionhistory/home" target="_blank">More about CareConnect</a><br></td>
 </tr>
 <tr>
-<td>Care Record Element (CRE)
-</td>
-<td>Care Record Elements (CREs) are used by the Spine to identify Medication and Allergies and Adverse Reactions.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>CCDA</td>
-<td>Consolidated CDA is an XML based implementation guide that specifies encoding, structure and semantics for a document that summarises a single patient’s clinical information.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>CCG</td>
 <td>Now replaced by <a href="https://www.england.nhs.uk/integratedcare/what-is-integrated-care/" target="_blank">Integrated Care Systems (ICSs)</a>, the Clinical Commissioning Group was an NHS organisation made up of GP practices looking to understand the health needs of local people and use funds given by NHS England to buy services which meet those needs. </td>
-<td><br></td>
-</tr>
-<tr>
-<td>CDA</td>
-<td>The Clinical Document Architecture provides an exchange model for clinical documents (such as discharge summaries and progress notes). By leveraging the use of XML, the HL7 V3 Reference Information Model (RIM) and coded vocabularies, CDA makes documents both machine-readable and human-readable. It guarantees preservation of the content by using the extensible Mark-up Language (XML) standard.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -204,24 +131,9 @@ In the service/message/document categorisation, an API is a service interface. A
 <td><br></td>
 </tr>
 <tr>
-<td>Class clone</td>
-<td>A class that is a clone of another class, derived from another class.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>Clinical Safety Officer (CSO)
 </td>
 <td>A CSO is the person responsible for making sure a software supplier addresses the requirements of DCB0129.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Coded With Extensions (CWE)</td>
-<td>The coded attribute allows local codes or user entered text to be sent when the concept that the user would like to express is not a member of the defined value set. If the concept that the user wants to express is represented by a code in the standard value set, the standard code SHALL be sent. The local code can be sent in addition to the standard code if desired. Only if the concept that the user wants to express is NOT represented by a standard code, can a solitary local code be sent.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Coded with No Extensions (CNE)</td>
-<td>The coded attribute allows only concepts from the defined value set. No extensions are allowed.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -235,19 +147,13 @@ In the service/message/document categorisation, an API is a service interface. A
 <td><br></td>
 </tr>
 <tr>
-<td>Common Message Element Type (CMET)</td>
-<td>This is a reusable model which can be used in multiple messages. CMETs can speed up the process of developing messages and increase consistency between different specifications.</td>
-<td><br></td>
-</tr>
-<tr>
 <td><h5 id="G8">Configuration Management</h5></td>
 <td>Configuration management is a process for establishing consistency of a product’s attributes throughout its life. In the UK Core, configuration management is a management process that tracks individual configuration items of the UK Core. The UK Core is composed of FHIR® assets that vary in granularity. The UK Core Configuration management helps the development team build a robust and stable implementation guide through the use of tools that automatically manage and monitor updates to configuration data. </td>
 <td><a href="https://en.wikipedia.org/w/index.php?title=Configuration_management&oldid=1034511535" target="_blank">More about Configuration</a></td>
 </tr>
-<tr>
-<td>Connection Agreement (CA)</td>
-<td>A legal document that must be signed by the software supplier to confirm they understand and will adhere to their obligations when using an API.</td>
-<td><br></td>
+<td>Conformance - HL7 FHIR</td>
+<td>The FHIR® specification is a "platform specification" - it creates a common platform or foundation on which a variety of different solutions are implemented. As a consequence, this specification usually requires further adaptation to particular contexts of use. FHIR® provides a set of resources that can be used to represent and share the adaptations listed above in a computable fashion. These resources are collectively called the conformance resources.</td>
+<td><a href="http://hl7.org/fhir/R4/conformance-module.html" target="_blank">More about FHIR® R4 conformance</a></td>
 </tr>
 <tr>
 <td>Consumer</td>
@@ -259,11 +165,6 @@ In the service/message/document categorisation, an API is a service interface. A
 <td>CP-IS</td>
 <td>Child Protection Information Sharing service. An on-line service that allows NHS unscheduled care services to access basic child protection information that has been provided by the Local Authority Children’s Services departments. The NHS is only able to see that a child or foetus has a Child Protection Plan or is in the Looked After system. The information provided is start, end and delete dates; plus a Children’s Services contact telephone number where the NHS can get further information. Basic information about NHS accesses is also passed back to Children’s Services.
 </td>
-<td><br></td>
-</tr>
-<tr>
-<td>CPR</td>
-<td>Cardiopulmonary Resuscitation. Emergency treatment that supports the circulation of blood and/or air in the event of a respiratory and/or cardiac arrest.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -288,21 +189,9 @@ In the service/message/document categorisation, an API is a service interface. A
 <td colspan="3"><h2 id="D">D</h2></td>
 </tr>
 <tr>
-<td>Data Security and Protection Toolkit (DSPT)
-</td>
-<td>The Data Security and Protection Toolkit (DSPT) is an online self-assessment tool that all organisations must use if they have access to NHS patient data and systems. Completing the DSPT is part of the developer onboarding process.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>Data Type
 </td>
 <td>The structural format of the data carried in an attribute. Every data element has a data type. Data types define the meaning (semantics) of data values that can be assigned to a data element. Meaningful exchange of data requires that we know the definition of values so exchanged. This is true for complex values such as business messages as well as for simpler values such as character strings or integer numbers.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Data Type Flavour
-</td>
-<td>A subdivision of a particular data type, that will constrain that particular data type. Data type flavour titles are suffixed with (f).</td>
 <td><br></td>
 </tr>
 <tr>
@@ -327,16 +216,6 @@ In the service/message/document categorisation, an API is a service interface. A
 <td colspan="3"><h2 id="E">E</h2></td>
 </tr>
 <tr>
-<td>ebXML</td>
-<td>ebXML (Electronic Business XML) is a project to use the eXtensible Markup Language to standardise the secure exchange business data. Amongst other purposes, ebXML encompasses the standard known as Electronic Data Interchange (EDI).</td>
-<td><br></td>
-</tr>
-<tr>
-<td>EEA</td>
-<td>European Economic Area.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>EHIC</td>
 <td>Electronic Health Insurance Card.</td>
 <td><br></td>
@@ -344,17 +223,6 @@ In the service/message/document categorisation, an API is a service interface. A
 <tr>
 <td>EHR</td>
 <td>Electronic Healthcare Record. This is the concept of electronic longitudinal collection of patient’s health and health care from cradle to grave. It combines information from different care settings held in different systems and in some instances, aggregates the data and shows them as a single record. It is a record in digital format that is capable of being shared across different health care settings, by being embedded in network-connected enterprise-wide information systems.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>EUD
-</td>
-<td>End User Declaration.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>EUO</td>
-<td>The End User Organisation is the organisation that will deploy the Supplier System/Product for use by healthcare professionals in delivering patient or client care. </td>
 <td><br></td>
 </tr>
 <tr>
@@ -420,20 +288,9 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <td><br></td>
 </tr>
 <tr>
-<td>FHIR® conformance</td>
-<td>The FHIR® specification is a "platform specification" - it creates a common platform or foundation on which a variety of different solutions are implemented. As a consequence, this specification usually requires further adaptation to particular contexts of use. FHIR® provides a set of resources that can be used to represent and share the adaptations listed above in a computable fashion. These resources are collectively called the conformance resources.</td>
-<td><a href="http://hl7.org/fhir/R4/conformance-module.html" target="_blank">More about FHIR® R4 conformance</a></td>
-</tr>
-<tr>
-<td>FHIR® profiles</td>
-<td>HL7 FHIR® UK Core profiles are FHIR assets which are constrained models of FHIR resources, hence making them more suitable for relevant use cases. Further information about FHIR profiling is available.</td>
-<td><a href="http://hl7.org/fhir/R4/profiling.html" target="_blank">More about FHIR® R4 profiling</a></td>
-</tr>
-<tr>
-<td><h5 id="G5">FHIR® resources</h5></td>
-<td>These are data models of common healthcare entities such as Patient, Practitioner, Organisation, Location, Medication, Condition, Procedure, etc. Such resources could be described as “health IT building blocks” as they can be put together to build working systems which solve real life healthcare problems.</td>
-<td><a href="http://hl7.org/fhir/R4/resourcelist.html" target="_blank">More about FHIR® R4 resources</a></td>
-</tr>
+
+
+
 <tr>
 <td><h5 id="G9">FHIR® statuses</h5></td>
 <td>HL7 has five descriptive terms that describe the level of stability and implementation readiness associated with different aspects of the specification.</td>
@@ -1012,6 +869,11 @@ The NHS patient’s record and appointment tracking system is often called PAS, 
 <td><br></td>
 </tr>
 <tr>
+<td>Profiles</td>
+<td>HL7 FHIR® UK Core profiles are FHIR assets which are constrained models of FHIR resources, hence making them more suitable for relevant use cases. Further information about FHIR profiling is available.</td>
+<td><a href="http://hl7.org/fhir/R4/profiling.html" target="_blank">More about FHIR® R4 profiling</a></td>
+</tr>
+<tr>
 <td>Provider</td>
 <td>An individual or an organisation that provides health care for a patient. Also a system which provides data by exposing Open APIs.</td>
 <td><br></td>
@@ -1072,6 +934,11 @@ The PRSB is a national body providing an independent patient and professional vo
 <td>Requester</td>
 <td>Refers to an individual or organization responsible for initiating a request for a specific action for instance, creating, updating, or reading patient data.</td>
 <td><br></td>
+</tr>
+<tr>
+<td><h5 id="G5">Resources</h5></td>
+<td>These are data models of common healthcare entities such as Patient, Practitioner, Organisation, Location, Medication, Condition, Procedure, etc. Such resources could be described as “health IT building blocks” as they can be put together to build working systems which solve real life healthcare problems.</td>
+<td><a href="http://hl7.org/fhir/R4/resourcelist.html" target="_blank">More about FHIR® R4 resources</a></td>
 </tr>
 <tr>
 <td>REST</td>
@@ -1362,11 +1229,6 @@ For example, a baby assigned an NHS number at birth that relates to the wrong mo
 <td><br></td>
 </tr>
 <tr>
-<td><h5 id="USCore">US Core</h5></td>
-<td>The US Core is based on FHIR® Version R4 and its Implementation Guide defines the minimum set of constraints on the FHIR resources to create the US Core Profiles. It also defines the minimum set of FHIR® RESTful interactions for each of the US Core Profiles to access patient data.</td>
-<td><a href="http://www.hl7.org/fhir/us/core/" target="_blank">US Core website</a></td>
-</tr>
-<tr>
 <td>Use case</td>
 <td>A usage scenario for a software application, often used to explain the user's possible interactions with it. It might be shown by a swim lane diagram showing the interactions, for instance, between end users, the application and the endpoints of an API.
 <br><br>
@@ -1430,24 +1292,8 @@ For example, as part of a healthcare worker providing direct healthcare to a pat
 <tr>
 <td colspan="3"><h2 id="X">X</h2></td>
 </tr>
-<tr>
-<td>x_domain</td>
-<td>A HL7 term for a subset of a HL7 vocabulary code list.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>XML</td>
-<td>eXtensible markup language is a protocol designed to store and transport data. XML was designed to be both human and machine readable.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>xPath</td>
 <td>XPath is a major element in the XSLT standard and can be used to navigate through elements and attributes in an XML document. XPath is a syntax for defining parts of an XML document and uses path expressions to navigate in XML documents. It contains a library of standard functions.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>XSLT</td>
-<td>Transform. A language for transforming extensible mark-up language.</td>
 <td><br></td>
 </tr>
 </tbody>
