@@ -319,11 +319,11 @@ Example of a call to return the following items from a patient's structured reco
         },
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ParentPresent-1",
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ParentPresent-1",
             "valueBoolean": true
           },
           {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-DateRecorded-1",
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
             "valueDateTime": "2019-06-28T10:00:00+01:00"
           },
           {
@@ -785,11 +785,11 @@ Example of a call to return immunisations including those that weren't given:
         },
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ParentPresent-1",
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ParentPresent-1",
             "valueBoolean": true
           },
           {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-DateRecorded-1",
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
             "valueDateTime": "2019-06-28T10:00:00+01:00"
           },
           {
@@ -933,11 +933,11 @@ Example of a call to return immunisations including those that weren't given:
         },
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ParentPresent-1",
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ParentPresent-1",
             "valueBoolean": true
           },
           {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-DateRecorded-1",
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
             "valueDateTime": "2019-06-28T10:00:00+01:00"
           },
           {
