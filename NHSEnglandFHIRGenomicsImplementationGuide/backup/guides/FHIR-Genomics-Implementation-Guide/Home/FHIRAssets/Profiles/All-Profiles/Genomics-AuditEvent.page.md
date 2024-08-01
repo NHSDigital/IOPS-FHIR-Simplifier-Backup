@@ -2,9 +2,13 @@
 
 Created by the central GMS infrastructure on any CRUD event. 
 
-Can be searched on for auditability and obtaining status history for Tasks.
+Can be searched on for auditability and obtaining status history for Tasks (as an alternative to the Task _history option).
 
 It is not expected or permitted that a client system would update or post AuditEvents to the central service.
+
+AuditEvents are expected to be created for any CRUD events which affect resources on the server. Where resources do not exist on the server, e.g. empty SearchSets or failed POSTs, no AuditEvents will be created. Failed updates may still trigger creation of AuditEvent resources but the outcome.code will record that the event was unsuccessful.
+
+AuditEvents for resources created by the server will record the server identity within the who element.
 
 The below profile is therefore provided to support parsing for clients if returned through a GET request.
 
@@ -108,7 +112,7 @@ SHALL be present. Code from base HL7 resource, only C (create), R (read) and U (
 
 <a name="agent"></a>
 #### agent
-SHOULD be present for any user initiated actions. Reference to the PractitionerRole resource which triggered the creation/read/update. Identity determined through CIS2 authentication token.
+SHOULD be present for any user initiated actions. Reference to the user or system that triggered the creation/read/update. Identity SHOULD be determined through the appropriate authentication token within the request header, e.g. CIS2 auth token.
 ```json
 "agent":  [
         {

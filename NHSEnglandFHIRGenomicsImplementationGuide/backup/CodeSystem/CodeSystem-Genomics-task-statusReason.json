@@ -8,11 +8,11 @@
       "value": "task-statusReason-genomics"
     }
   ],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "TaskStatusReasonGenomics",
   "title": "Task StatusReason Genomics",
   "status": "draft",
-  "date": "2023-12-06",
+  "date": "2024-07-23",
   "publisher": "NHS England",
   "contact": [
     {
@@ -31,73 +31,53 @@
   "caseSensitive": true,
   "content": "complete",
   "concept": [
-      {
-        "code": "FurtherClinicalDetailsRequired",
-        "display": "Further Clinical Details Required"
-      },
     {
-      "code": "AwaitingSpecimen",
-      "display": "Awaiting Specimen"
+      "code": "further-information-needed",
+      "display": "Further Information Needed"
     },
     {
-      "code": "AwaitingRoDAndSpecimen",
-      "display": "Awaiting Record of Discussion and Specimen"
+      "code": "awaiting-sample",
+      "display": "Awaiting Sample"
     },
     {
-      "code": "InvalidRequest",
+      "code": "awaiting-rod-and-or-sample",
+      "display": "Awaiting Record of Discussion and/or Sample"
+    },
+    {
+      "code": "invalid-request",
       "display": "Invalid Request"
     },
     {
-      "code": "PipelineActivityFailure",
-      "display": "Pipeline Activity Failure"
+      "code": "pipeline-error",
+      "display": "Pipeline Error"
     },
     {
-      "code": "TaskTimeExceeded",
-      "display": "Task Time Exceeded"
+      "code": "time-for-task-exceeded",
+      "display": "Time For Task Exceeded"
     },
     {
-      "code": "UnableToInterpret",
+      "code": "unable-to-interpret",
       "display": "Unable To Interpret"
     },
     {
-      "code": "SpecimenReceived",
-      "display": "SpecimenReceived"
+      "code": "sample-sub-optimal",
+      "display": "Sample Sub-Optimal"
     },
     {
-      "code": "SpecimenQualityNotOK",
-      "display": "Specimen Quality Not OK"
+      "code": "task-no-longer-required",
+      "display": "Task No Longer Required"
     },
     {
-      "code": "TestNoLongerRequired",
-      "display": "Test No Longer Required"
+      "code": "no-sample-provided",
+      "display": "No Sample Provided"
     },
     {
-      "code": "MultipleTestRequestedOnTheSamePatient",
-      "display": "Multiple Test Requested On The Same Patient(only one test required)"
+      "code": "scheduled-delay",
+      "display": "Scheduled Delay"
     },
     {
-      "code": "DecisionNotToProgressWithTestRequest",
-      "display": "Decision Not To Progress With Test Request"
-    },
-    {
-      "code": "TestCouldNotBeDeliveredDueToProcessFailures",
-      "display": "Test Could Not Be Delivered Due To Process Failures"
-    },
-    {
-      "code": "WrongPatient(Mark-in-Error)",
-      "display": "Wrong Patient (Mark-in-Error)"
-    },
-    {
-      "code": "SampleAlignedToWrongPatient(Mark-in-Error)",
-      "display": "Sample Aligned To Wrong Patient (Mark-in-Error)"
-    },
-    {
-      "code": "PatienceChoiceIncorrectlyRecorded(WGS Only)-Mark-in-Error",
-      "display": "Patience Choice Incorrectly Recorded (WGS Only)-Mark-in-Error"
-    },
-    {
-      "code": "CorrectionOfClinicalData(Mark-in-Error)",
-      "display": "Correction Of Clinical Data (Mark-in-Error)"
+      "code": "awaiting-order-detail",
+      "display": "Awaiting Order Detail"
     }
   ]
 }

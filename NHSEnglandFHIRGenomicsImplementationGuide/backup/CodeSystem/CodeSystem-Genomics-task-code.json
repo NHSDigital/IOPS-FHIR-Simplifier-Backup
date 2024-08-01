@@ -32,7 +32,7 @@
   "content": "complete",
   "concept": [
     {
-      "code": "ProcessGenomicTestRequest",
+      "code": "process-genomic-test-request",
       "display": "Process Genomic Test Request",
       "designation": [
         {
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "code": "RequestSampleAlignment",
+      "code": "request-sample-alignment",
       "display": "Request & Sample Alignment",
       "designation": [
         {
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "code": "SamplePreparation",
+      "code": "sample-preparation",
       "display": "Sample Preparation",
       "designation": [
         {
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "code": "SampleProcessing",
+      "code": "sample-processing",
       "display": "Sample Processing",
       "designation": [
         {
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "code": "GeneticGenomicDataProcessing",
+      "code": "genetic-genomic-data-processing",
       "display": "Genetic/Genomic Data Processing",
       "designation": [
         {
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "code": "Interpretation",
+      "code": "interpretation",
       "display": "Interpretation",
       "designation": [
         {
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "code": "ProduceInterimReport",
+      "code": "produce-interim-report",
       "display": "Produce Interim Report",
       "designation": [
         {
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "code": "GenomicMDT",
+      "code": "genomic-mdt",
       "display": "Genomic MDT",
       "designation": [
         {
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "code": "ProduceFinalReport",
+      "code": "produce-final-report",
       "display": "Produce Final Report",
       "designation": [
         {
@@ -158,7 +158,7 @@
       ]
     },
     {
-      "code": "DistributeReport",
+      "code": "distribute-report",
       "display": "Distribute Report",
       "designation": [
         {

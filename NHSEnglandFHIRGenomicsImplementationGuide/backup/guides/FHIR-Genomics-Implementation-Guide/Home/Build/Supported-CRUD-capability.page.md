@@ -159,6 +159,38 @@ end
 ## Update
 A large part of the interactions with the central service, over the course of order fulfilment, will be updates to Task resources, which constitute status updates. These events will be captured by the central broker through AuditEvent resources. Additionally, ServiceRequest and DiagnosticReport resources may be updated if tests need to be changed or new data added. Reasons for changed SHOULD be captured through Provenance resources. The impact these updates have on work-in-progress will be defined within Business Rules on the central broker (including how cancellations are managed).
 
+### Conditional Update
+The conditional update interaction allows a client to update an existing resource based on some identification criteria, rather than by logical id. To accomplish this, the client issues a PUT with additional parameters to identify the resource to be updated, e.g. by identifier. 
+
+For the Order Management Alpha, conditional updates will not be supported, i.e. it is expected that all updates will be submitted against a logical id. However, support for conditional updates will be investigated post-Alpha based on demand and use cases from users.
+
+### Resource contention
+To avoid 'Lost Updates', where two clients update the same resource, and the second overwrites the updates of the first, the If-Match header will be used. As per the [FHIR HTTP pages](https://hl7.org/fhir/R4/http.html#concurrency), servers SHOULD return an ETag header, matching the version id assigned by the server for the resource, when returning a resource (though the version id can be used directly).
+
+Clients then SHOULD request a version aware update, when submitting PUTs by including an If-Match header that quotes the version id from the server:
+
+```
+PUT /Patient/347 HTTP/1.1
+If-Match: W/"23"
+```
+
+If the version id given in the If-Match header does not match, the server SHOULD return a `412 Precondition Failed` status code instead of updating the resource.
+
+Servers can require that clients provide an If-Match header by returning 400 Client Error status codes when no If-Match header is found. **Implementation of version specific updates for Genomic Order Management is pending internal review**
+
+### Patch 
+As an alternative to updating an entire resource, some FHIR servers allow clients to perform a patch operation. This is useful for cases where only small changes are required to resources such as adding local identifiers. The patch interaction is performed by an HTTP PATCH command as shown:
+
+`PATCH [base]/[type]/[id] {?_format=[mime-type]}`
+
+The body of a PATCH operation SHALL be either:
+
+a JSON Patch document with a content type of `application/json-patch+json`
+an XML Patch document with a content type of `application/xml-patch+xml`
+a FHIRPath Patch parameters resource with FHIR Content Type
+
+**Implementation of the PATCH operat for Genomic Order Management is pending internal review**
+
 ### Common Patterns
 
 <plantuml>

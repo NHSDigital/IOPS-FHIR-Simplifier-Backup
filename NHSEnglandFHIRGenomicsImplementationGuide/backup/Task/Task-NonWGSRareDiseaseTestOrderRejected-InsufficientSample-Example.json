@@ -6,8 +6,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-                "code": "SpecimenQualityNotOK",
-                "display": "Specimen Quality Not OK"
+                "code": "sample-sub-optimal",
+                "display": "Sample Sub-Optimal"
             }
         ]
     },
@@ -17,7 +17,7 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "RequestSampleAlignment",
+                "code": "request-sample-alignment",
                 "display": "Request & Sample Alignment"
             }
         ]

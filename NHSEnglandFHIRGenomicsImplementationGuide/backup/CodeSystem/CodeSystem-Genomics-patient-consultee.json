@@ -13,10 +13,10 @@
   "title": "Patient Consultee Genomics",
   "status": "draft",
   "date": "2022-12-28T16:41:15.0168724+00:00",
-  "publisher": "NHS Digital",
+  "publisher": "NHS England",
   "contact": [
     {
-      "name": "NHS Digital",
+      "name": "NHS England",
       "telecom": [
         {
           "system": "email",
@@ -27,12 +27,12 @@
     }
   ],
   "description": "A code to identify if patient guardian is a Consultee",
-  "copyright": "Copyright © 2022 NHS Digital",
+  "copyright": "Copyright © 2022 NHS England",
   "caseSensitive": true,
   "content": "complete",
   "concept": [
     {
-      "code": "Consultee",
+      "code": "consultee",
       "display": "Consultee"
     }
   ]

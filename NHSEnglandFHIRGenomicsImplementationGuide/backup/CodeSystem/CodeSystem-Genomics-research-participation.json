@@ -13,10 +13,10 @@
 	"title": "Patient Choice Research Participation",
 	"status": "draft",
 	"date": "2022-12-21T11:27:52.3231281+00:00",
-	"publisher": "NHS Digital",
+	"publisher": "NHS England",
 	"contact": [
 		{
-			"name": "NHS Digital",
+			"name": "NHS England",
 			"telecom": [
 				{
 					"system": "email",
@@ -27,24 +27,24 @@
 		}
 	],
 	"description": "A set of codes use to identify the sources of obtaining the patient consent in participating in the National Genomic Research.",
-	"copyright": "Copyright © 2022 NHS Digital",
+	"copyright": "Copyright © 2022 NHS England",
 	"caseSensitive": true,
 	"content": "complete",
 	"concept": [
 		{
-			"code": "LiketoDiscussLater",
+			"code": "like-to-discuss-later",
 			"display": "Patient would like to discuss at a later date"
 		},
 		{
-			"code": "PatientLackCapacity",
+			"code": "patient-lack-capacity",
 			"display": "Patient lacks capacity and no consultee available"
 		},
 		{
-			"code": "InappropriatetoDiscuss",
+			"code": "inappropriate-to-discuss",
 			"display": "Inappropriate to have discussion"
 		},
 		{
-			"code": "Other",
+			"code": "other",
 			"display": "Other"
 		}
 	]

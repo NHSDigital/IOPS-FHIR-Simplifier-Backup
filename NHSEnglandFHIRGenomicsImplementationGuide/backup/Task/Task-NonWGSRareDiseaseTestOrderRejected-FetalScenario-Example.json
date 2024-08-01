@@ -5,9 +5,9 @@
   "statusReason": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/CodeSystem/task-status-reason-genomics",
-        "code": "FurtherClinicalDetailsRequired",
-        "display": "Further Clinical Details Required"
+        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
+        "code": "further-information-needed",
+        "display": "Further Information Needed"
       }
     ]
   },
@@ -17,7 +17,7 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "RequestSampleAlignment",
+        "code": "request-sample-alignment",
         "display": "Request Sample Alignment"
       }
     ]

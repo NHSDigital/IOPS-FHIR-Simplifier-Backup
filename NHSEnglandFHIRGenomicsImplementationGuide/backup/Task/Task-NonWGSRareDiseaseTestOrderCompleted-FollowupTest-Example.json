@@ -8,7 +8,7 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "DistributeReport",
+                "code": "distribute-report",
                 "display": "Distribute Report"
             }
         ]

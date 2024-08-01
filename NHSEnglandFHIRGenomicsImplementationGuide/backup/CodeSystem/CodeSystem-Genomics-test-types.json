@@ -13,10 +13,10 @@
 	"title": "Test Type Genomics",
 	"status": "draft",
 	"date": "2022-12-21T11:27:52.3231281+00:00",
-	"publisher": "NHS Digital",
+	"publisher": "NHS England",
 	"contact": [
 		{
-			"name": "NHS Digital",
+			"name": "NHS England",
 			"telecom": [
 				{
 					"system": "email",
@@ -27,7 +27,7 @@
 		}
 	],
 	"description": "A set of codes use to identify the category of genomic test types",
-	"copyright": "Copyright © 2022 NHS Digital",
+	"copyright": "Copyright © 2022 NHS England",
 	"caseSensitive": true,
 	"content": "complete",
 	"concept": [
