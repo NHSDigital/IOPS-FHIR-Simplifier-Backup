@@ -13,10 +13,10 @@
     "title": "Message Events Genomics",
     "status": "draft",
     "date": "2022-11-25",
-    "publisher": "NHS Digital",
+    "publisher": "NHS England",
     "contact":  [
         {
-            "name": "NHS Digital",
+            "name": "NHS England",
             "telecom":  [
                 {
                     "system": "email",
@@ -27,7 +27,7 @@
         }
     ],
     "description": "Common messaging events for Genomics Test Orders and Reports.",
-    "copyright": "Copyright © 2022 NHS Digital",
+    "copyright": "Copyright © 2022 NHS England",
     "caseSensitive": true,
     "content": "complete",
     "concept":  [

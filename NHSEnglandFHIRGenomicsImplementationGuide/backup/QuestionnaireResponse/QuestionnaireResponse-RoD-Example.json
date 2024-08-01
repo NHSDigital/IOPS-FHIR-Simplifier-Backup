@@ -155,7 +155,7 @@
 								{
 									"valueCoding": {
 										"system": "https://fhir.nhs.uk/CodeSystem/patient-choice-category-genomics",
-										"code": "AdultOwnChoice",
+										"code": "adult-own-choice",
 										"display": "Adult(made their own choice)"
 									}
 								}

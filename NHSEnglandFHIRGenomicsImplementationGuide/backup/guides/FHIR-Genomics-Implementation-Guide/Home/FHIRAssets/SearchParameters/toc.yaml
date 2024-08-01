@@ -2,3 +2,5 @@
   filename: Index.page.md
 - name: Genomic-ServiceRequest-supportingInfo
   filename: Genomic-ServiceRequest-supportingInfo.page.md
+- name: Genomic-Specimen-request
+  filename: Genomic-Specimen-request.page.md

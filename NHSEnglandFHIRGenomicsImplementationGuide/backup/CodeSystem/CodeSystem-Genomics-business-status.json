@@ -8,15 +8,15 @@
       "value": "business-status-genomics"
     }
   ],
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "BusinessStatusGenomics",
   "title": "Business Status Genomics",
   "status": "draft",
-  "date": "2022-11-25",
-  "publisher": "NHS Digital",
+  "date": "2024-07-23",
+  "publisher": "NHS England",
   "contact": [
     {
-      "name": "NHS Digital",
+      "name": "NHS England",
       "telecom":  [
         {
           "system": "email",
@@ -27,57 +27,97 @@
     }
   ],
   "description": "Business status for test order Tasks in genomics",
-  "copyright": "Copyright © 2022 NHS Digital",
+  "copyright": "Copyright © 2022 NHS England",
   "caseSensitive": true,
   "content": "complete",
   "concept": [
     {
-      "code": "AwaitingSpecimen",
-      "display": "Awaiting Specimen"
+      "code": "determining-test-recoverability",
+      "display": "Determining Test Recoverability"
     },
     {
-      "code": "AwaitingRoDAndSpecimen",
-      "display": "Awaiting Record of Discussion and Specimen"
+      "code": "test-recoverable",
+      "display": "Test Recoverable"
     },
     {
-      "code": "SpecimenReceived",
-      "display": "Specimen Received"
+      "code": "notifying-requester-of-failure",
+      "display": "Notifying Requester Of Failure"
     },
     {
-      "code": "RemoteProcessingRequired",
+      "code": "sample-requested",
+      "display": "Sample Requested (from external lab)"
+    },
+    {
+      "code": "sample-availability-confirmed",
+      "display": "Sample Availability Confirmed"
+    },
+    {
+      "code": "sample-booked-into-lab",
+      "display": "Sample Booked Into Lab"
+    },
+    {
+      "code": "variants-priorities-list-required",
+      "display": "Variants Priorities List Required"
+    },
+    {
+      "code": "variants-priorities-list-retrieved",
+      "display": "Variants Priorities List Retrieved"
+    },
+    {
+      "code": "previous-genomic-sequence-data-required",
+      "display": "Previous Genomic Sequence Data Required"
+    },
+    {
+      "code": "previous-genomic-sequence-data-retrieved",
+      "display": "Previous Genomic Sequence Data Retrieved"
+    },
+    {
+      "code": "remote-sample-prep-required",
+      "display": "Remote Sample Prep Required"
+    },
+    {
+      "code": "sample-sent",
+      "display": "Sample Sent"
+    },
+    {
+      "code": "sample-received",
+      "display": "Sample Received"
+    },
+    {
+      "code": "sample-stored",
+      "display": "Sample Stored"
+    },
+    {
+      "code": "further-sample-prep-required",
+      "display": "Further Sample Prep Required"
+    },
+    {
+      "code": "remote-processing-required",
       "display": "Remote Processing Required"
     },
     {
-      "code": "AlignSequencing",
-      "display": "Align Sequencing"
+      "code": "remote-genomic-data-processing-required",
+      "display": "Remote Genomic Data Processing Required"
     },
     {
-      "code": "RemoteGeneticDataProcessingRequired",
-      "display": "Remote Genetic Data Processing Required"
-    },
-    {
-      "code": "VariantsIdentified",
-      "display": "Variants Identified"
-    },
-    {
-      "code": "RemoteInterpretationRequired",
+      "code": "remote-interpretation-required",
       "display": "Remote Interpretation Required"
     },
     {
-      "code": "FurtherClinicalDetailsRequired",
+      "code": "further-clinical-details-required",
       "display": "Further Clinical Details Required"
     },
     {
-      "code": "FurtherClinicalDetailsProvided",
+      "code": "further-clinical-details-provided",
       "display": "Further Clinical Details Provided"
     },
     {
-      "code": "ReflexTestRequired",
-      "display": "Reflex Test Required"
+      "code": "reflex-confirmatory-test-required",
+      "display": "Reflex/Confirmatory Test Required"
     },
     {
-      "code": "ReflexTestComplete",
-      "display": "Reflex Test Complete"
+      "code": "reflex-confirmatory-test-complete",
+      "display": "Reflex/Confirmatory Test Complete"
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "SearchParameter-Genomics-request",
+  "url": "https://fhir.nhs.uk/SearchParameter/request",
+  "version": "0.0.1",
+  "name": "Request",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-08-01T09:35:00+00:00",
+  "publisher" : "NHS England",
+  "description": "Link to the triggering ServiceRequest for a Specimen resource",
+  "purpose": "For searching resources referenced from Specimen.request",
+  "code": "request",
+  "base": [
+    "Specimen"
+  ],
+  "type": "reference",
+  "expression": "Specimen.request",
+  "target":  [
+    "ServiceRequest"
+  ],
+  "multipleOr": true,
+  "multipleAnd": false,
+  "modifier":  [
+    "missing",
+    "identifier"
+  ]
+}

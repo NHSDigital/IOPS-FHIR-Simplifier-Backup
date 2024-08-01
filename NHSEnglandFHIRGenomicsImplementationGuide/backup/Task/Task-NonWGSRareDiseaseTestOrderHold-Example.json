@@ -6,17 +6,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics", 
-        "code": "TaskTimeExceeded", 
-        "display": "Task Time Exceeded"
-      }
-    ]
-  },
-  "businessStatus": { 
-    "coding": [
-      { 
-        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
-        "code": "AwaitingSpecimen", 
-        "display": "Awaiting Specimen"
+        "code": "no-sample-provided", 
+        "display": "no-sample-provided"
       }
     ]
   },
@@ -26,7 +17,7 @@
     "coding": [
       { 
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-        "code": "RequestSampleAlignment", 
+        "code": "request-sample-alignment", 
         "display": "Request & Sample Alignment"
       }
     ]

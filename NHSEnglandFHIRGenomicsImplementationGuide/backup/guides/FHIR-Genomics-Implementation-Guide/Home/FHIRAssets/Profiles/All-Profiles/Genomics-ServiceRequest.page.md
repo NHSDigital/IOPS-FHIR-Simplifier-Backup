@@ -494,7 +494,7 @@ i.e,
 #### supportingInfo
 Any clinical information provided about the patient for whom the testing is being requested SHALL be referenced though the supportingInfo field, to ensure all the information relevant to the ServiceRequest can be easily retrieved. This includes Observations, Conditions, Procedures, FamilyMemberHistories etc.
 
-This also includes resources related to family members included as part of testing (consultands), e.g. in Duo/Trio scenarios. In this instance, RelatedPerson resource references SHALL be added to the supportingInfo array, as well as any clinical resources related to these individuals. This is to ensure the number of participants for a given test can be calculated correctly, e.g. through counting the number of RelatedPerson resources referenced from ServiceRequest.supportingInfo plus the subject of the ServiceRequest itself (the proband).
+This also includes resources related to family members included as part of testing (consultands), e.g. in Duo/Trio scenarios. In this instance, RelatedPerson and Patient resource references for the consultands SHALL be added to the supportingInfo array, as well as any clinical resources related to these individuals. This is to ensure the number of participants for a given test can be calculated correctly, e.g. through counting the number of RelatedPerson resources referenced from ServiceRequest.supportingInfo plus the subject of the ServiceRequest itself (the proband).
 
 For WGS testing, where Records of Discussion are required in order to process the test, Consent resources SHOULD also be added to the supportingInfo array once available.
 ```json
@@ -519,7 +519,13 @@ For WGS testing, where Records of Discussion are required in order to process th
         },
         {
             "reference": "Condition/Condition-HearingLoss-Example"
-        }
+        },
+        {
+            "reference": "RelatedPerson/RelatedPerson-AliceSmithamProbandMother-Example"
+        },
+        {
+            "reference": "Patient/Patient-PheobeSmithamMother-Example"
+        },
     ],
 ```
 

@@ -10,6 +10,9 @@ Mapped to Patient resource, extensions not in UKCore are under review. Represent
 
 It is expected that practitioner and organization details for GPs will be referenced from Patient.generalPractitioner (e.g. using ODS/SDS identifiers) rather than be included as FHIR resources within Test Request payloads, though the full FHIR mapping has been provided below for completeness.
 
+**Profiling for Procedure is currently in progress**
+
+#### Life Status
 For Life Status at time of request for Foetal records, as per PRSB guidance, this should be inferred through outcome codes attached to the Pregnancy observation.
 
 e.g. under Observation with code 77386006, ```Observation.component.valueCodeableConcept (with Observation.component.code = 267013003 | Past pregnancy outcome (observable entity) |)```
@@ -27,8 +30,15 @@ The component SNOMED codes SHOULD match the following list to map from foetal li
 |N/A not mapped exactly to PRSB ValueSet|miscarriage|17369002 - Miscarriage (disorder)|
 |N/A no pregnancy outcome code|unborn|N/A no pregnancy outcome code (captured through Patient.extension:bornStatus)|
 
+#### Sex/Gender representations
+There are currently multiple FHIR fields for representation of gender and sex related observations, the following table outlines the usage of each field/resource.
 
-**Profiling for Procedure is currently in progress**
+|FHIR element|Usage|
+|--|--|
+|Patient.extension:birthSex|The patient's sex as registered at birth, this is used to denote the phenotypic sex of the patient|
+|Patient.gender|The patient's gender, used for administrative purposes, some services record sex within this field, which is incorrect|
+|Patient.extension:genderIdentity|The gender the patient identifies with, has a larger valueset than the Patient.gender field, including trans and intersex options, may not match the administrative gender assigned to the patient|
+|Observation.code|Used for recording the Karyotypic sex of the patient, as determined through genetic testing, codes used SHOULD be from SNOMED CT, such as codes under 734840008 or 95462004 as examples|
 
 ### Mapping
 | Source Data item | Target FHIR Element | HL7v2.5.1 Mapping | Description 

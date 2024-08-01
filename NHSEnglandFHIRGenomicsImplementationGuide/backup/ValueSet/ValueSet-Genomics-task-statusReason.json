@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "genomics-task-statusReason",
   "url": "https://fhir.nhs.uk/ValueSet/task-statusReason-genomics",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "GenomicsTaskStatusReason",
   "title":"Genomics Task Status Reason",
   "status": "draft",
@@ -11,7 +11,7 @@
     "include": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-        "version": "0.1.0"
+        "version": "0.2.0"
       }
     ]
   }

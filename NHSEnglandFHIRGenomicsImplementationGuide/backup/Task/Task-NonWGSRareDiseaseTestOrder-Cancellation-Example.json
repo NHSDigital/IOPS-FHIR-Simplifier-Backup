@@ -6,8 +6,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-        "code": "TestNoLongerRequired",
-        "display": "Test No Longer Required"
+        "code": "task-no-longer-required",
+        "display": "Task No Longer Required"
       }
     ]
   },
@@ -17,7 +17,7 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "ProcessGenomicTestRequest",
+        "code": "process-genomic-test-request",
         "display": "Process Genomic Test Request"
       }
     ]

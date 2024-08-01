@@ -19,12 +19,12 @@
 		}
 	],
 	"status": "requested",
-	"businessStatus": { 
+	"statusReason": { 
 		"coding": [
 			{ 
-				"system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
-				"code": "AwaitingSpecimen", 
-				"display": "Awaiting Specimen"
+				"system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics", 
+				"code": "awaiting-sample", 
+				"display": "Awaiting Sample"
 			}
 		]
 	},

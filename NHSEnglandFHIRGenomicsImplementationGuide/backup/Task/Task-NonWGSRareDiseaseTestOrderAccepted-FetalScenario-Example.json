@@ -2,12 +2,12 @@
     "resourceType": "Task",
     "id": "Task-NonWGSRareDiseaseTestOrderAccepted-FetalScenario-Example",
     "status": "accepted",
-    "statusReason": {
+    "businessStatus": {
         "coding": [
             {
-                "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-                "code": "SpecimenReceived",
-                "display": "Specimen Received"
+                "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
+                "code": "sample-received",
+                "display": "Sample Received"
             }
         ]
     },
@@ -17,7 +17,7 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "ProcessGenomicTestRequest",
+                "code": "process-genomic-test-request",
                 "display": "Process Genomic Test Request"
             }
         ]

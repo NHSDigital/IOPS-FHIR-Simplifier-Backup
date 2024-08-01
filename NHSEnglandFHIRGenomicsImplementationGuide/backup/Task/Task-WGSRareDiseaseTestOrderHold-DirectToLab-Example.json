@@ -6,8 +6,8 @@
     "coding": [
       { 
         "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics", 
-        "code": "AwaitingRoDAndSpecimen", 
-        "display": "Awaiting Record of Discussion and Specimen"
+        "code": "awaiting-rod-and-or-sample", 
+        "display": "Awaiting Record of Discussion and/or Sample"
       }
     ]
   },
@@ -17,7 +17,7 @@
     "coding": [
       { 
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-        "code": "RequestSampleAlignment", 
+        "code": "request-sample-alignment", 
         "display": "Request & Sample Alignment"
       }
     ]

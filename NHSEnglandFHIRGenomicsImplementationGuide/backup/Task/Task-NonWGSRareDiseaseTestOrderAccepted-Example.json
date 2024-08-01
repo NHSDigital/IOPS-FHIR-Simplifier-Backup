@@ -2,12 +2,12 @@
   "resourceType": "Task",
   "id": "Task-NonWGSRareDiseaseTestOrderAccepted-Example",
   "status": "accepted",
-  "businessStatus": { 
+  "statusReason": { 
     "coding": [
       { 
-        "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics", 
-        "code": "AwaitingSpecimen", 
-        "display": "Awaiting Specimen"
+        "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics", 
+        "code": "awaiting-sample", 
+        "display": "Awaiting Sample"
       }
     ]
   },
@@ -17,7 +17,7 @@
     "coding": [
       { 
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
-        "code": "RequestSampleAlignment", 
+        "code": "request-sample-alignment", 
         "display": "Request & Sample Alignment"
       }
     ]

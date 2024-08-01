@@ -6,8 +6,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-        "code": "DecisionNotToProgressWithTestRequest",
-        "display": "Decision Not To Progress With Test Request"
+        "code": "task-no-longer-required",
+        "display": "Task No Longer Required"
       }
     ]
   },
@@ -17,7 +17,7 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "Interpretation",
+        "code": "interpretation",
         "display": "Interpretation"
       }
     ]

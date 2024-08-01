@@ -2,7 +2,7 @@
 
 The Genomics Provenance SHOULD be provided alongside updates to controlled documents such as ServiceRequests and DiagnosticReports by integrated systems on any update operation to ensure auditability for any changes to resources.
 
-The draft profile for the UK Core Provenance is provided below for completeness.
+It is not expected that updates which do not affect the clinical content of the document will need associated Provenance resources, e.g. addition of local identifiers. On material changes to controlled resources, ServiceRequest and DiagnosticReport, users SHOULD use the transaction endpoint on the server to bundle the updated resource and Provenance event into a single transaction.
 
 | Profile url | FHIR Module | Normative Status |
 |--

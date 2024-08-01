@@ -6,7 +6,7 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-                "code": "RemoteProcessingRequired",
+                "code": "remote-processing-required",
                 "display": "Remote Processing Required"
             }
         ]
@@ -17,7 +17,7 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "ProcessGenomicTestRequest",
+                "code": "process-genomic-test-request",
                 "display": "Process Genomic Test Request"
             }
         ]
