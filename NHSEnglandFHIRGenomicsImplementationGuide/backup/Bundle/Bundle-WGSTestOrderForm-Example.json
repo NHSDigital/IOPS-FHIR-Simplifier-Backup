@@ -275,9 +275,6 @@
             "reference": "Observation/Observation-NoPregnancy-Example"
           },
           {
-            "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
-          },
-          {
             "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
           },
           {
@@ -384,42 +381,6 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example",
-      "resource": {
-        "resourceType": "FamilyMemberHistory",
-        "id": "FamilyMemberHistory-NonConsanguinousUnion-Example",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-observation",
-            "valueReference": {
-              "reference": "Observation/Observation-NonConsanguinousUnion-Example"
-            }
-          }
-        ],
-        "status": "completed",
-        "patient": {
-          "reference": "Patient/Patient-LindsaySorrell-Example",
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/nhs-number",
-            "value": "9449307946"
-          }
-        },
-        "relationship": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-              "code": "PRN",
-              "display": "parent"
-            }
-          ]
-        }
-      },
-      "request": {
-        "method": "POST",
-        "url": "FamilyMemberHistory"
-      }
-    },
-    {
       "fullUrl": "http://example.org/fhir/Observation/Observation-NonConsanguinousUnion-Example",
       "resource": {
         "resourceType": "Observation",
@@ -429,8 +390,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "842009",
-              "display": "Consanguinity"
+              "code": "160475008",
+              "display": "Family history: Consanguinity (situation)"
             }
           ]
         },

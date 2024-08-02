@@ -110,9 +110,6 @@
       "reference": "Observation/Observation-DiseaseStatus-Example"
     },
     {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
-    },
-    {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
     },
     {
@@ -128,9 +125,6 @@
       "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
     },
     {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnionProbandMother-Example"
-    },
-    {
       "reference": "Observation/Observation-NonConsanguinousUnionMother-Example"
     },
     {
@@ -144,9 +138,6 @@
     },
     {
       "reference": "RelatedPerson/RelatedPerson-JamesLawrenceProbandFather-Example"
-    },
-    {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnionProbandFather-Example"
     },
     {
       "reference": "Observation/Observation-NonConsanguinousUnionProbandFather-Example"

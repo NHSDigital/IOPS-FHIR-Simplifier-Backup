@@ -56,27 +56,7 @@ The CareConnect profile will be uplifted to the R4 UKCore in a future release
             <table>
                 <tr>
                     <td>
-                        {{pagelink:FamilyMemberHistory-NonConsanguinousUnion-Example}}
-                    </td>
-                </tr>
-                 <tr>
-                    <td>
-                        {{pagelink:FamilyMemberHistory-NonConsanguinousUnionProband-Example}}
-                    </td>
-                </tr>
-                 <tr>
-                    <td>
-                        {{pagelink:FamilyMemberHistory-NonConsanguinousUnionProbandFather-Example}}
-                    </td>
-                </tr>
-                 <tr>
-                    <td>
-                        {{pagelink:FamilyMemberHistory-NonConsanguinousUnionProbandMother-Example}}
-                    </td>
-                </tr>
-                 <tr>
-                    <td>
-                        {{pagelink:FamilyMemberHistory-NonConsanguinousUnionRyanneBoulder-Example}}
+                        {{pagelink:FamilyMemberHistory-MildCognitiveDisorder-Example}}
                     </td>
                 </tr>
             </table>
@@ -95,7 +75,6 @@ The CareConnect profile will be uplifted to the R4 UKCore in a future release
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
                     <tr><td>FamilyMemberHistory</td><td>Pedigree details/diagram, Disease penetrance</td><td>N/A not in scope for HL7v2, could be added as additional DG1 segments related to relatives (representation of family history in HL7v2 still pending investigation)</td></tr>
-                    <tr><td>FamilyMemberHistory.extension:family-member-history-genetics-observation</td><td>Patient - Is from consanguinous union</td><td>OBX-5 with appropriate SNOMED/READ/LOINC code</td></tr>
                 </table>
         </div>
     </div>
@@ -122,13 +101,13 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="extension:genetics-observation"></a>
 #### extension:genetics-observation
-An extension on the FamilyMemberHistory resource to include Observations relevant to Genomic testing/interpretation, such as proband consanguinuity. 
+An extension on the FamilyMemberHistory resource to include Observations relevant to Genomic testing/interpretation. 
 ```json
 "extension":  [
         {
             "url": "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-observation",
             "valueReference": {
-                "reference": "Observation/Observation-NonConsanguinousUnion-Example"
+                "reference": "Observation/Observation-BloodPressure-Example"
             }
         }
     ],
