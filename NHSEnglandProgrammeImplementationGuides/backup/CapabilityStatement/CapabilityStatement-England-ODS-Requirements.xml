@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="England-ODS-Requirements" />
   <url value="https://fhir.nhs.uk/England/CapabilityStatement/England-ODS-Requirements" />
-  <version value="0.0.2" />
+  <version value="0.0.3" />
   <name value="EnglandODSRequirements" />
   <title value="England ODS Requirements" />
   <status value="draft" />
@@ -35,16 +35,7 @@
     <mode value="server" />
     <security>
       <cors value="false" />
-      <service>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/restful-security-service" />
-          <code value="OAuth" />
-        </coding>
-      </service>
-      <description value="This API is application-restricted, meaning we authenticate the calling application but not the end user. 
-We are using OAuth 2.0. To use this access mode, you will be provided with a client id and client secret. 
-These are currently set to expire after 24 hours, after which time you will need to request a new token. 
-A client credentials token is necessary to obtain to authenticate with the Terminology Server. A free tool like Postman can be used to obtain tokens and issue requests, or any other RESTful client" />
+      <description value="Application-restricted API - API key authentication" />
     </security>
     <resource>
       <type value="Organization" />
