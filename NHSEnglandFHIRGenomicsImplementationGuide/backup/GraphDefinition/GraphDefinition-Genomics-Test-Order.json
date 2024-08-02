@@ -40,19 +40,6 @@
       "target": [
         {
           "type": "Patient",
-          "link": [
-            {
-              "description": "RelatedPersons linked to this Patient",
-              "min": 0,
-              "max": "*",
-              "target": [
-                {
-                  "type": "RelatedPerson",
-                  "params": "patient={ref}"
-                }
-              ]
-            } 
-          ]
         }
       ]
     },
@@ -85,7 +72,20 @@
       "max": "*",
       "target": [
         {
-          "type": "RelatedPerson"
+          "type": "RelatedPerson",
+          "link": [
+            {
+              "description": "Patient linked to this RelatedPerson",
+              "min": 1,
+              "max": 1,
+              "target": [
+                {
+                  "type": "Patient",
+                  "params": "link={ref}"
+                }
+              ]
+            } 
+          ]
         },
         {
           "type": "Observation",

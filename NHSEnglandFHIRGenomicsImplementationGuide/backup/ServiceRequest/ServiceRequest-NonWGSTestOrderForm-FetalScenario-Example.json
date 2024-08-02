@@ -77,9 +77,6 @@
 			"reference": "Observation/Observation-NonConsanguinousUnion-Example"
 		},
 		{
-			"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnionRyanneBoulder-Example"
-		},
-		{
 			"reference": "Observation/Observation-GenomicEthnicity-Example"
 		},
 		{

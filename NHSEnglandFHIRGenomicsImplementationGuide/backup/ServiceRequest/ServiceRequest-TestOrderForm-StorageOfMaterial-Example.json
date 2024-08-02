@@ -60,9 +60,6 @@
       "reference": "Observation/Observation-NonConsanguinousUnion-Example"
     },
     {
-      "reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
-    },
-    {
       "reference": "Observation/Observation-NoBoneMarrowTransplant-Example"
     },
     {

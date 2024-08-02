@@ -85,9 +85,6 @@
 			"reference": "Observation/Observation-DiseaseStatus-Example"
 		},
 		{
-			"reference": "FamilyMemberHistory/FamilyMemberHistory-NonConsanguinousUnion-Example"
-		},
-		{
 			"reference": "Observation/Observation-NoTransplant-Example"
 		},
 		{
