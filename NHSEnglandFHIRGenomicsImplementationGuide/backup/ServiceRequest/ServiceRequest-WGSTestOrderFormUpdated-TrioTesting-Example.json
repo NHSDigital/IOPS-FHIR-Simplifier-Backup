@@ -46,7 +46,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R98.2",
-        "display": "Likely inborn error of metabolism"
+        "display": "Likely inborn error of metabolism",
+        "version": "7"
       }
     ],
     "text": "This is a Trio Testing, comprising 3 family members with their respective specimen`s & Record Of Discussion`s"

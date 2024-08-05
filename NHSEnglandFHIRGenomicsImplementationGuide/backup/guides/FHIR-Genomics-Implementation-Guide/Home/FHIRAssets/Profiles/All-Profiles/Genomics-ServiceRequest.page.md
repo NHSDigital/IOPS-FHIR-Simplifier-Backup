@@ -379,13 +379,16 @@ For the purposes of Genomic Test Ordering, the doNotPerform field SHALL NOT be u
 <a name="code"></a>
 #### code
 SHALL be provided. Code SHOULD contain the CI or CITT Test Directory code, currently available at https://www.england.nhs.uk/publication/national-genomic-test-directories/. There is currently no CodeSystem or queryable API for retrieving codes but work to address this is underway within the NHS England Genomics Unit.
+
+Codes from the Genomic Test Directory SHOULD also specify the version number of the test directory at the time the test is being ordered, to ensure the test methods used are consistent with that version of the directory. 
 ```json
 "code": {
         "coding":  [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
                 "code": "R67.2",
-                "display": "Monogenic hearing loss"
+                "display": "Monogenic hearing loss",
+                "version": "7"
             }
         ]
     },

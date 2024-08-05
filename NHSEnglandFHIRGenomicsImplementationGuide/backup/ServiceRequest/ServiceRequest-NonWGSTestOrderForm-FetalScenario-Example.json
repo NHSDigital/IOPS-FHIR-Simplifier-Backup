@@ -34,7 +34,8 @@
 			{
 				"system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
 				"code": "R21",
-				"display": "Fetal anomalies with a likely genetic cause"
+				"display": "Fetal anomalies with a likely genetic cause",
+        "version": "7"
 			}
 		]
 	},

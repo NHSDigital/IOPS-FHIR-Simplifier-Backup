@@ -34,7 +34,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R14",
-        "display": "Acutely unwell children with a likely monogenic disorder"
+        "display": "Acutely unwell children with a likely monogenic disorder",
+        "version": "7"
       }
     ]
   },

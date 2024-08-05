@@ -1,0 +1,88 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "genomics-specimen-tumourcellularity",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-specimen-tumourcellularity",
+  "version": "0.1.0",
+  "name": "GenomicsSpecimenTumourCellularity",
+  "title": "Genomics Specimen Tumour Cellularity",
+  "status": "draft",
+  "date": "2024-08-05T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
+  "purpose": "ConceptMap used for the translation and recording of concepts for the element Observation.code",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "targetUri": "http://snomed.info/sct?fhir_vs=ecl/%3C!%20362981000%20",
+  "group": [
+    {
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "high",
+          "display": "High",
+          "target": [
+            {
+              "code": "75540009",
+              "display": "High (qualifier value)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "low",
+          "display": "Low",
+          "target": [
+            {
+              "code": "62482003",
+              "display": "Low (qualifier value)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "medium",
+          "display": "Medium",
+          "target": [
+            {
+              "code": "255508009",
+              "display": "Medium (qualifier value)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "very-high",
+          "display": "Very High",
+          "target": [
+            {
+              "code": "260360000",
+              "display": "Very high (qualifier value)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "very-low",
+          "display": "Very Low",
+          "target": [
+            {
+              "code": "260360000",
+              "display": "Very low (qualifier value)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

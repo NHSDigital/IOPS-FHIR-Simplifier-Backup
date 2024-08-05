@@ -238,7 +238,8 @@
             {
               "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
               "code": "R193.4",
-              "display": "Cystic renal disease"
+              "display": "Cystic renal disease",
+              "version": "7"
             }
           ]
         },
@@ -353,7 +354,8 @@
             {
               "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
               "code": "R193.4",
-              "display": "Cystic renal disease"
+              "display": "Cystic renal disease",
+              "version": "7"
             }
           ]
         },

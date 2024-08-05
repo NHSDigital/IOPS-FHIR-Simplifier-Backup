@@ -38,7 +38,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R442",
-        "display": "Variant Re-interpretation"
+        "display": "Variant Re-interpretation",
+        "version": "7"
       }
     ]
   },
@@ -48,7 +49,8 @@
         {
           "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
           "code": "R59",
-          "display": "Early onset or syndromic epilepsy"
+          "display": "Early onset or syndromic epilepsy",
+          "version": "7"
         }
       ]
     },
