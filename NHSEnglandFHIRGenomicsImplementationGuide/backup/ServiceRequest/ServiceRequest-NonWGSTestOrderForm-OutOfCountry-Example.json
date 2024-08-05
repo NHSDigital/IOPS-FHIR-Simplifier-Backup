@@ -40,7 +40,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "M3.2",
-        "display": "Breast Cancer (Oncotype DX)"
+        "display": "Breast Cancer (Oncotype DX)",
+        "version": "9"
       }
     ]
   },

@@ -34,7 +34,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R138",
-        "display": "Sudden Cardiac Death"
+        "display": "Sudden Cardiac Death",
+        "version": "7"
       }
     ]
   },

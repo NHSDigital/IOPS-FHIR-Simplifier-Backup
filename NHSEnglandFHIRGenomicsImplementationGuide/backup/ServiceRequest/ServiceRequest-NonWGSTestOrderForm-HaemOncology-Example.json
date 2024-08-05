@@ -34,7 +34,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "M91",
-        "display": "Acute Lymphoblastic Leukaemia"
+        "display": "Acute Lymphoblastic Leukaemia",
+        "version": "9"
       }
     ]
   },

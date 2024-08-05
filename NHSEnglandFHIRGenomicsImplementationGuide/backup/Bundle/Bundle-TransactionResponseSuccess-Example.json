@@ -44,7 +44,8 @@
             {
               "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
               "code": "R67.2",
-              "display": "Monogenic hearing loss"
+              "display": "Monogenic hearing loss",
+              "version": "7"
             }
           ]
         },

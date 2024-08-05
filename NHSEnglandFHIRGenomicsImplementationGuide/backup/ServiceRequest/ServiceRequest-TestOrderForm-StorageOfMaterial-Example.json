@@ -23,7 +23,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R346",
-        "display": "DNA to be stored"
+        "display": "DNA to be stored",
+        "version": "7"
       }
     ]
   },

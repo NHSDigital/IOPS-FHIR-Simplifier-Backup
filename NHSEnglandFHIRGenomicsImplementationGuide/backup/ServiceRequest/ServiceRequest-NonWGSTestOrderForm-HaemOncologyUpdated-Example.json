@@ -38,7 +38,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "M91.4",
-        "display": "Acute Lymphoblastic Leukaemia (FISH)"
+        "display": "Acute Lymphoblastic Leukaemia (FISH)",
+        "version": "9"
       }
     ]
   },

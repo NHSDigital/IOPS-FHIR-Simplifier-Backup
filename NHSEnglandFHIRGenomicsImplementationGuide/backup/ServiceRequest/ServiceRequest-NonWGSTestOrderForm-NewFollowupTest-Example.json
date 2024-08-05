@@ -39,7 +39,8 @@
       {
         "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
         "code": "R65.1",
-        "display": "Aminoglycoside exposure posing risk to hearing"
+        "display": "Aminoglycoside exposure posing risk to hearing",
+        "version": "7"
       }
     ],
     "text": "Follow Up Test requested to aid interpretation. M code modified to: R65.1"

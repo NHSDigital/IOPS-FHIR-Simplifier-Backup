@@ -508,7 +508,8 @@
             {
               "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
               "code": "M119.5",
-              "display": "Multi Target NGS Panel Small"
+              "display": "Multi Target NGS Panel Small",
+              "version": "9"
             }
           ]
         },
