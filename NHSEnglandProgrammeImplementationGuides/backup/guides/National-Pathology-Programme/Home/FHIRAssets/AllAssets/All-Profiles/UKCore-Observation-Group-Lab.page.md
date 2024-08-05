@@ -58,9 +58,9 @@ The following additional guidance **SHOULD** be applied when implementing this p
 ### `category`
 The general type of test group. As a minimum, the following **SHOULD** be used for this profile:
 
-* `category.coding.system` = `http://terminology.hl7.org/CodeSystem/observation-category`
-* `category.coding.code` = `laboratory`
-* `category.coding.display` = `Laboratory`
+* `Observation.category.coding.system` = `http://terminology.hl7.org/CodeSystem/observation-category`
+* `Observation.category.coding.code` = `laboratory`
+* `Observation.category.coding.display` = `Laboratory`
 
 This element has an open slice, and **MAY** be used to differentiate the particular test speciality. This can be coded or provided as text only.
 
@@ -69,9 +69,9 @@ This element has an open slice, and **MAY** be used to differentiate the particu
 ### `code`
 The clinical code and name of the test group, for example:
 
-* `code.coding.system` = `http://snomed.info/sct`
-* `code.coding.code` = `26604007`
-* `code.coding.display` = `Full blood count`
+* `Observation.code.coding.system` = `http://snomed.info/sct`
+* `Observation.code.coding.code` = `26604007`
+* `Observation.code.coding.display` = `Full blood count`
 
 This **SHALL** be populated using one of the following:
 
