@@ -60,9 +60,9 @@ The following additional guidance **SHOULD** be applied when implementing this p
 ### `category`
 The general type of test. As a minimum, the following **SHOULD** be used for this profile:
 
-* `category.coding.system` = `http://terminology.hl7.org/CodeSystem/observation-category`
-* `category.coding.code` = `laboratory`
-* `category.coding.display` = `Laboratory`
+* `Observation.category.coding.system` = `http://terminology.hl7.org/CodeSystem/observation-category`
+* `Observation.category.coding.code` = `laboratory`
+* `Observation.category.coding.display` = `Laboratory`
 
 This element has an open slice, and **MAY** be used to differentiate the particular test speciality. This can be coded or provided as text only.
 
@@ -71,9 +71,9 @@ This element has an open slice, and **MAY** be used to differentiate the particu
 ### `code`
 The clinical code and name of the test that was performed, for example:
 
-* `code.coding.system` = `http://snomed.info/sct`
-* `code.coding.code` = `1107451000000100`
-* `code.coding.display` = `Glucose substance concentration in serum`
+* `Observation.code.coding.system` = `http://snomed.info/sct`
+* `Observation.code.coding.code` = `1107451000000100`
+* `Observation.code.coding.display` = `Glucose substance concentration in serum`
 
 This **SHALL** be populated using one of the following:
 
@@ -99,13 +99,13 @@ The test result value.
 
 The presence of `[x]` in an element name is used to indicate a [choice of data type](https://hl7.org/fhir/R4/formats.html#choice). The `[x]` part of the element name is replaced with an appropriate data type, in title-case format e.g. `valueQuantity`.
 
-If the result value is a numeric quantity (i.e. a quantitative result type), a standard [UCUM](https://ucum.org/) **SHOULD** be used.
+If the result value is a numeric quantity (i.e. a quantitative result type), a standard [UCUM](https://ucum.org/) code **SHOULD** be used to represent the associated unit of measure.
 
 If the result value is coded (i.e. a semi-quantitative or qualitative result type), a suitable SNOMED CT concept **SHOULD** be used, for example: 
 
-* `valueCodeableConcept.coding.system` = `http://snomed.info/sct`
-* `valueCodeableConcept.coding.code` = `260385009"`
-* `valueCodeableConcept.coding.display` = `Negative`
+* `Observation.valueCodeableConcept.coding.system` = `http://snomed.info/sct`
+* `Observation.valueCodeableConcept.coding.code` = `260385009"`
+* `Observation.valueCodeableConcept.coding.display` = `Negative`
 
 Refer to the {{pagelink:DesignOverview}} section for further information relating to the representation of different types of test results.
 
@@ -116,9 +116,9 @@ The reason why a test result value was omitted.
 
 The [ValueSet](https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/83657) defined in FHIR is of limited benefit to UK laboratory use cases. It is therefore recommended that if a data absent reason is included, then a text representation **SHOULD** be used. For example: 
 
-* `dataAbsentReason.coding.system` = `http://terminology.hl7.org/CodeSystem/data-absent-reason`
-* `dataAbsentReason.coding.code` = `as-text`
-* `dataAbsentReason.text` = `Specimen unsatisfactory for evaluation`
+* `Observation.dataAbsentReason.coding.system` = `http://terminology.hl7.org/CodeSystem/data-absent-reason`
+* `Observation.dataAbsentReason.coding.code` = `as-text`
+* `Observation.dataAbsentReason.text` = `Specimen unsatisfactory for evaluation`
 
 ---
 

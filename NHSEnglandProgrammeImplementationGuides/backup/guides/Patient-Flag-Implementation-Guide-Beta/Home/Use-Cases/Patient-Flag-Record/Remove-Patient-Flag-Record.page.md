@@ -48,7 +48,7 @@ entity       "Additional Detail"  as add
 
   pat ->  pra : Remove
   pra ->  api : Remove
-  api ->  pfg : Remove resourc
+  api ->  pfg : Remove resource
   
 
 loop for each Additional Detail resource
