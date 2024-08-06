@@ -58,8 +58,6 @@ Details for Mother added to request:
 
 {{pagelink:Specimen-PheobeSmithamMother-Example}}
 
-{{pagelink:FamilyMemberHistory-NonConsanguinousUnionProbandMother-Example}}
-
 {{pagelink:Observation-NonConsanguinousUnionProbandMother-Example}}
 
 {{pagelink:Observation-NoTransfusionProbandMother-Example}}
@@ -72,8 +70,6 @@ Details for Father added to request (sample not collected at time of submission)
 {{pagelink:Patient-PheobeSmithamFather-Example}}
 
 {{pagelink:RelatedPerson-JamesLawrenceProbandFather-Example}}
-
-{{pagelink:FamilyMemberHistory-NonConsanguinousUnionProbandFather-Example}}
 
 {{pagelink:Observation-NonConsanguinousUnionProbandFather-Example}}
 
