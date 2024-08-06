@@ -76,9 +76,9 @@ This **SHOULD** be populated with a value of `order`, unless the `ServiceRequest
 ### `code`
 The clinical code and name of the requested test or test group, for example:
 
-* `code.coding.system` = `http://snomed.info/sct`
-* `code.coding.code` = `26604007`
-* `code.coding.display` = `Full blood count`
+* `ServiceRequest.code.coding.system` = `http://snomed.info/sct`
+* `ServiceRequest.code.coding.code` = `26604007`
+* `ServiceRequest.code.coding.display` = `Full blood count`
 
 This **SHALL** be populated using one of the following:
 
