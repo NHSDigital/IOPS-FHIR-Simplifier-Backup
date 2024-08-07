@@ -64,20 +64,10 @@ Z
 </tr>
 <tr>
 <tr>
-<td>AoMRC</td>
-<td>The Academy of Medical Royal Colleges speaks on standards of care and medical education across the UK and drives improvement in health and patient care through education, training and quality standards.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>API</td>
 <td>The term Application Programming Interface is quite a confused term in the context of FHIR. Strictly speaking, an API is a set or services offered by a programming library that can be made use of by another application. Historically these would have been made available from a single machine although now they are available across networks.
 <br><br>
 In the service/message/document categorisation, an API is a service interface. As technology became increasingly capable of supporting distributed operations, the differences between SOA (Service Oriented Architecture) and API became blurred. In the context of FHIR we define APIs as REST based interfaces.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Argonaut</td>
-<td>An initiative launched by HL7 to accelerate the development and adoption of FHIR. Supported by 11 organizations, including EHR vendors Epic and Cerner and health systems Mayo Clinic and Intermountain Healthcare.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -115,11 +105,7 @@ In the service/message/document categorisation, an API is a service interface. A
 <td>CareConnect assets were developed in HL7® FHIR STU3 collaboratively by HL7 and the INTEROPen community with NHS England as the development partner.</td>
 <td><a href="https://simplifier.net/guide/careconnectversionhistory/home" target="_blank">More about CareConnect</a><br></td>
 </tr>
-<tr>
-<td>CCG</td>
-<td>Now replaced by <a href="https://www.england.nhs.uk/integratedcare/what-is-integrated-care/" target="_blank">Integrated Care Systems (ICSs)</a>, the Clinical Commissioning Group was an NHS organisation made up of GP practices looking to understand the health needs of local people and use funds given by NHS England to buy services which meet those needs. </td>
-<td><br></td>
-</tr>
+
 <tr>
 <td>CIB</td>
 <td>The Code 4 Health, Community Interoperability Board was established early in 2016. This network of networks has taken on a leadership role across the service to coordinate and deliver working interoperability standards.</td>
@@ -139,11 +125,6 @@ In the service/message/document categorisation, an API is a service interface. A
 <tr>
 <td>Common Assessment Framework (CAF)</td>
 <td>The Common Assessment Framework (CAF) for Adults is a Department of Health funded project that aims to improve information sharing across organisations for multi-disciplinary assessment and care and support planning.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Common Assurance Process (CAP)</td>
-<td>The Common Assurance Process (CAP) is an NHS process that needs to be followed to gain accreditation allowing for connection directly to the Spine.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -288,32 +269,14 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <td><br></td>
 </tr>
 <tr>
-
-
-
-<tr>
-<td><h5 id="G9">FHIR® statuses</h5></td>
-<td>HL7 has five descriptive terms that describe the level of stability and implementation readiness associated with different aspects of the specification.</td>
-<td><a href="https://www.hl7.org/fhir/versions.html#std-process" target="_blank">More about FHIR® statuses</a></td>
-</tr>
 <tr>
 <td>First of Type</td>
 <td>The chosen recipient(s) to test the first deployment of the new capabilities.</td>
 <td><br></td>
 </tr>
 <tr>
-<td>FMG</td>
-<td>The FHIR Management Group provides day-to-day oversight of FHIR-related work group activities including performing quality analysis, monitoring scope and consistency with FHIR principles and aiding in the resolution of FHIR-related intra and inter-work group issues.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>FMM</td>
-<td>The FHIR Maturity Model provides a sense of how mature a resource is based on the level and types of review it has been subject to.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>FSN</td>
-<td>Each concept has one Fully Specified Name (FSN) intended to provide an unambiguous way to name a concept. The purpose of the FSN is to uniquely describe a concept and clarify the meaning. The FSN is not a commonly used term or natural phrase and would not be expected to appear in the human-readable representation of a clinical record.</td>
+<td>A <a href="https://confluence.ihtsdotools.org/display/DOCEG/Fully+Specified+Name">Fully Specified Name (FSN)</a> intended to provide an unambiguous way to name a SNOMED CT concept. The purpose of the FSN is to uniquely describe a concept and clarify the meaning. The FSN is not a commonly used term or natural phrase and would not be expected to appear in the human-readable representation of a clinical record.</td>
 <td><br></td>
 </tr>
 </tbody>
@@ -335,50 +298,6 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <tr>
 <td>GDS</td>
 <td>Government Digital Service.</td>
-<td><br></td>
-</tr>
-<tr>
-<td><h5 id="G1">GitHub</h5></td>
-<td>At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.</td>
-<td><a href="https://github.com" target="_blank">More about GitHub</a></td>
-</tr>
-<tr>
-<td>GP Connect</td>
-<td>GP Connect allows authorised clinical staff to share and view GP practice clinical information and data between IT systems, quickly and efficiently.</td>
-<td><a href="https://digital.nhs.uk/services/gp-connect" target="_blank">More about GP Connect</a></td></tr>
-<tr>
-<td>GP Connect licence</td>
-<td>The terms and conditions for usage of the GP Connect service.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GP2GP</td>
-<td>System transferring full GP records between GP systems when patients register with a new GP. Implemented using HL7 v3.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GPES</td>
-<td>The General Practice Extraction Service (GPES) collects information for a wide range of purposes, including providing GP payments. It works with the Calculating Quality Reporting Service (CQRS) and GP clinical systems as part of the GP Collections service.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GPET</td>
-<td>The General Practice Extraction Tool provides facilities to define, build and execute approved Query Specifications in order to provide data from GP Systems.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GPET-E</td>
-<td>The functions delivered by GP System Suppliers to extract data described in Extraction Requirements from Data Provider Systems and send Data Provider Output to GPET-Q in accordance with the GPES-I Interoperability Standard.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GPET-Q</td>
-<td>The central system developed by the GPET-Q Contractor to enable the management and scheduling of data extractions by GPET-E systems.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GPSoC contract</td>
-<td>The GP System of Choice contract, where a number of suppliers have gained approval to offer services via a centrally controlled contract.</td>
 <td><br></td>
 </tr>
 </tbody>
@@ -432,12 +351,6 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <td><a href="https://www.hl7.org.uk/" target="_blank">More about HL7 UK</a></td>
 </tr>
 <tr>
-<td>HO</td>
-<td>Home Office.
-</td>
-<td><br></td>
-</tr>
-<tr>
 <td>HSCI</td>
 <td>Health and Social Care Integration. This integrates local health and social care services to improve coordination between local health and social care agencies, leading to improved experiences for people using these services.</td>
 <td><br></td>
@@ -474,16 +387,6 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <td><br></td>
 </tr>
 <tr>
-<td>IDT</td>
-<td>Although initially used as an adjunct to support effective training, the Intelligent Data Toolkit has been enhanced to support content changes in the clinical system and to enable cost effective commissioning in localities.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>IHS</td>
-<td>Immigration Health Surcharge.</td>
-<td><br></td>
-</tr>
-<tr>
 <td><h5 id="IG">Implementation Guide</h5></td>
 <td>An implementation guide is a set of rules about how HL7 FHIR® resources are used (or should be used) to solve a particular problem, with associated documentation to support and clarify the usage.</td>
 <td><br></td>
@@ -506,41 +409,8 @@ IGARD also makes general recommendations or observations to NHS England about th
 <td><br></td>
 </tr>
 <tr>
-<td>Information Governance (IG)</td>
-<td>Information Governance (IG) is the framework for handling information in a secure and confidential manner that allows organisations and individuals to manage patient, personal and sensitive information legally, securely, efficiently and effectively in order to deliver the best possible healthcare and services.
-<br><br>
-IG applies to, and impacts on, everyone working for, or on behalf of, the NHS. Additionally, everyone working in the NHS has a legal duty to keep information about others secure and confidential.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Information Security Management System (ISMS)</td>
-<td>An information security management system (ISMS) is a set of policies and procedures for systematically managing an organization's sensitive data. The goal of an ISMS is to minimize risk and ensure business continuity by proactively limiting the impact of a security breach.
-<br><br>
-An ISMS typically addresses employee behaviour and processes as well as data and technology. It can be targeted toward a particular type of data, such as customer data, or it can be implemented in a comprehensive way that becomes part of the company's culture.</td>
-<td><br></td>
-</tr>
-<tr>
 <td><h5 id="INTEROPen">INTEROPen</h5></td>
 <td>INTEROPen is an OPEN collaboration of individuals, industry, standards organisations and health and care providers, who have agreed to work together to accelerate the development of open standards for interoperability in the health and social care sector.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Invalidated patients</td>
-<td>Some patient records are marked as invalidated in PDS - also known as 'redacted' in FHIR terminology.
-<br><br>
-Invalidated patient records are not returned in search results. If an invalidated patient record has been superseded, the superseding record is returned instead.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>ITK</td>
-<td>The Interoperability Toolkit, in the context of the NHS this is a set of common specifications, frameworks and implementation guides to support interoperability within local organisations and across local health and social care communities. The ITK is not a piece of software, it is not a product which is downloadable from this website.
-<br><br>
-ITK Conformance is the NHS England team that manages the Technical Conformance of a Product as part of the Solution Assurance function.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>ITS</td>
-<td>Implementation Technology Specification. The ITS defines how to represent an HL7 message in a serial form that can be transmitted from a sender to a receiver.</td>
 <td><br></td>
 </tr>
 </tbody>
@@ -562,11 +432,6 @@ ITK Conformance is the NHS England team that manages the Technical Conformance o
 <tr>
 <td>JSON</td>
 <td>Javascript Object Notation is a lightweight data-interchange format. It is easy for humans to read and write and easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>JWT</td>
-<td>JSON Web Token is a JSON-based open standard (RFC 7519) for creating access tokens that assert a number of claims, typically used to transmit user identity information and other attributes about a user, system or device.</td>
 <td><br></td>
 </tr>
 </tbody>
