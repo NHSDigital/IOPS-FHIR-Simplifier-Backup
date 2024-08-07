@@ -107,12 +107,18 @@ Retrieval of sets of resources using {{pagelink:Home/FHIRAssets/GraphDefinitions
 
 * Search result modifiers such as `_count`, `_total` and `_sort` will be supported to allow clients to tailor search results.
 
+* The `:not` operator will be supported to allow organizations visibility of tests outside their region, e.g. for home GLHs which want to see tests from within their patch routed to labs outside their region. An example of the query to support this would be:
+
+```
+GET [base]/ServiceRequest?requester:PractitionerRole.organization={ODS_codes_in_my_patch}&performer:not={my_GLH_code}
+```
+
 #### Unsupported Functionality
 * Inclusion of external references (resources not hosted on the server) through the _include parameter will not be supported as there will be no guarantee they resolve or that they will return valid FHIR. While this may mean clients will need to perform multiple calls to construct a complete set of data, this ensures consistency of the responses from the broker. Within this Implementation Guide we expect test requesters to submit all relevant information for a test order to the broker so there should be very few instances where an external reference is used.
 
 * No use cases requiring use of `_query` or `$operation` type searches have been elaborated so these are not planned to be supported as of the time of publication. Equally, usage of tags to encode data, and use of the `_tag` parameter will not be supported until use cases detailing their need are elaborated.
 
-* Search modifiers such as `:contains`, `:missing`, `:not`, `:not-in`, etc. will not be supported as there are currently no use cases for supporting text-based/fuzzy searching. 
+* Search modifiers such as `:contains`, `:missing`, `:not-in`, etc. will not be supported as there are currently no use cases for supporting text-based/fuzzy searching. 
 
 ### Common Patterns
 
@@ -189,7 +195,7 @@ a JSON Patch document with a content type of `application/json-patch+json`
 an XML Patch document with a content type of `application/xml-patch+xml`
 a FHIRPath Patch parameters resource with FHIR Content Type
 
-**Implementation of the PATCH operat for Genomic Order Management is pending internal review**
+**Implementation of the PATCH operation for Genomic Order Management is pending internal review**
 
 ### Common Patterns
 

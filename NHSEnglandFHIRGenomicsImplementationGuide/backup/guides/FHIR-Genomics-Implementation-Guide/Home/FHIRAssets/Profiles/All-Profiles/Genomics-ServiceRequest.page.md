@@ -6,9 +6,52 @@ Focal resource for test order messages. All additional information or resources 
 |--
 | [https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
 
-<br>
+An illustrative diagram of the links between ServiceRequests and other resources is provided below. 
+**Note: not all resource links are represented, to increase legibility of the diagram.** 
 
-<br>
+<plantuml>
+@startuml
+!pragma ratio 0.3
+left to right direction
+scale 1100 width
+
+entity SR as "Test Request" <<ServiceRequest>>
+entity P1 as "Patient" <<Patient>>
+entity S1 as "Raw Sample" <<Specimen>> {
+  Collected after test submission
+}
+entity PR as "Requester" <<PractitionerRole>>
+entity Prov as "Change History" <<Provenance>>
+entity T1 as "Process Genomic Test Request" <<Task>>
+entity SRP as "Parent Request" <<ServiceRequest>>
+together {
+  entity RP as "Consultand Relationship" <<RelatedPerson>>
+  entity P2 as "Consultand" <<Patient>>
+  entity C1 as "Record of Discussion" <<Consent>>
+  entity O1 as "Clinical Information" <<Observation>>
+}
+
+T1 --> SR : Task.focus
+T1 --> P1 : Task.for
+T1 --> PR : Task.requester
+SR --> P1 : ServiceRequest.subject
+SR --> PR : ServiceRequest.requester
+SR --> SRP : ServiceRequest.basedOn
+SR --> O1 : ServiceRequest.supportingInfo
+SR --> RP : ServiceRequest.supportingInfo
+SR --> P2 : ServiceRequest.supportingInfo
+SR --> Prov : ServiceRequest.relevantHistory
+SR --> C1 : ServiceRequest.supportingInfo
+Prov --> SR : Provenance.entity
+S1 --> P1 : Specimen.subject
+S1 --> SR : Specimen.request
+RP --> P1 : RelatedPerson.patient
+P2 --> RP : Patient.link
+O1 --> P1 : Observation.subject
+C1 --> SR : Consent.provision
+
+@enduml
+</plantuml>
 
 <div class="nhsd-!t-margin-bottom-6">
     <ul class="nav nav-tabs" role="tablist">

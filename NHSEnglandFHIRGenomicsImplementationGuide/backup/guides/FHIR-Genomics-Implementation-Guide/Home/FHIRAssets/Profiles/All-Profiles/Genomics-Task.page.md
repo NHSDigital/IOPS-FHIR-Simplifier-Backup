@@ -6,18 +6,19 @@ Each ServiceRequest submitted will instantiate a series of High Level Tasks, whi
 
 Tasks will be automatically created by the central service but updates to statuses and attachment of input/output resources is the responsibility of the assigned organizations.
 
-An illustrative diagram of the links between ServiceRequests and Tasks are provided below (for the initial sample processing). In most cases, the full library of 10 tasks, as defined within {{pagelink:Genomic-Task-Code}}, will be 'spun-up', on submission of a Test order. Tasks related to Samples may be duplicated per Sample to allow tracking of work related to individual Samples as part of the same test request, or equally, may be omitted as in the case of Re-Analysis or Re-Interpretation where data from an existing sample is used, eliminating the need for additional wet-work. For the full cardinality breakdown see further guidance for the <a href="#code">Task.code</a> element.
+An illustrative diagram of the links between ServiceRequests and Tasks are provided below (for the initial sample processing). **Note: not all resource links are represented, to increase legibility of the diagram**. In most cases, the full library of 10 tasks, as defined within {{pagelink:Genomic-Task-Code}}, will be 'spun-up', on submission of a Test order. Tasks related to Samples may be duplicated per Sample to allow tracking of work related to individual Samples as part of the same test request, or equally, may be omitted as in the case of Re-Analysis or Re-Interpretation where data from an existing sample is used, eliminating the need for additional wet-work. For the full cardinality breakdown see further guidance for the <a href="#code">Task.code</a> element.
 
 <plantuml>
 @startuml
 !pragma ratio 0.3
 left to right direction
 scale 1100 width
-together {
 entity SR as "Test Request" <<ServiceRequest>>
-entity P1 as "Patient" <<Patient>>
+together {
+'entity P1 as "Patient" <<Patient>>
 entity S1 as "Raw Sample 1" <<Specimen>>
 entity S2 as "Raw Sample 2" <<Specimen>>
+'entity PR as "Requester" <<PractitionerRole>>
 }
 'entity S1a as "Extracted Sample 1" <<Specimen>>
 'entity S2a as "Extracted Sample 2" <<Specimen>>
@@ -40,17 +41,17 @@ entity T3a as "Sample Preparation 2" <<Task>>
 'entity DR1 as "Interim Report 1" <<DiagnosticReport>>
 'entity DR2 as "Interim Report 2" <<DiagnosticReport>>
 'entity DR3 as "Final Report" <<DiagnosticReport>>
-entity PR as "Requester" <<PractitionerRole>>
-together {
-abstract O1 as "Managing Org" <<Organization>> {
-  e.g. Home GLH
-  Not an entity, referenced by identifier
-}
-abstract O2 as "Fulfilling Org 1" <<Organization>> {
-  e.g. Wet Lab/GEL
-  Not an entity, referenced by identifier
-}
-}
+
+'together {
+'abstract O1 as "Managing Org" <<Organization>> {
+'  e.g. Home GLH
+'  Not an entity, referenced by identifier
+'}
+'abstract O2 as "Fulfilling Org 1" <<Organization>> {
+'  e.g. Wet Lab/GEL
+'  Not an entity, referenced by identifier
+'}
+'}
 'abstract O3 as "Fulfilling Org 2" <<Organization>> {
 '  e.g. Dry Lab/GEL
 '  Not an entity, referenced by identifier
@@ -70,10 +71,10 @@ T3a --> SR : Task.focus
 'T8 --> SR : Task.focus
 'T9 --> SR : Task.focus
 'T10 --> SR : Task.focus
-T1 --> P1 : Task.for
-T2 --> P1 : Task.for
-T3 --> P1 : Task.for
-T3a --> P1 : Task.for
+'T1 --> P1 : Task.for
+'T2 --> P1 : Task.for
+'T3 --> P1 : Task.for
+'T3a --> P1 : Task.for
 'T4 --> P1 : Task.for
 'T4a --> P1 : Task.for
 'T5 --> P1 : Task.for
@@ -100,10 +101,10 @@ T3a --> S2 : Task.input
 'T8 --> DR2 : Task.input
 'T9 --> DR3 : Task.output
 'T10 --> DR3 : Task.input
-T1 --> O1 : Task.owner
-T2 --> O2 : Task.owner
-T3 --> O2 : Task.owner
-T3a --> O2 : Task.owner
+'T1 --> O1 : Task.owner
+'T2 --> O2 : Task.owner
+'T3 --> O2 : Task.owner
+'T3a --> O2 : Task.owner
 'T4 --> O2 : Task.owner
 'T4a --> O2 : Task.owner
 'T5 --> O3 : Task.owner
@@ -114,13 +115,13 @@ T3a --> O2 : Task.owner
 'T8 --> O1 : Task.owner
 'T9 --> O3 : Task.owner
 'T10 --> O1 : Task.owner
-SR -l-> P1 : ServiceRequest.subject
-SR --> O1 : ServiceRequest.performer
-SR --> PR : ServiceRequest.requester
-S1 --> P1 : Specimen.subject
-S2 --> P1 : Specimen.subject
-S1 --> SR : Specimen.request
-S2 --> SR : Specimen.request
+'SR --> P1 : ServiceRequest.subject
+'SR --> O1 : ServiceRequest.performer
+'SR --> PR : ServiceRequest.requester
+'S1 --> P1 : Specimen.subject
+'S2 --> P1 : Specimen.subject
+'S1 --> SR : Specimen.request
+'S2 --> SR : Specimen.request
 'S1a --> P1 : Specimen.subject
 'S2a --> P1 : Specimen.subject
 'S1a --> SR : Specimen.request
@@ -342,6 +343,21 @@ S2 --> SR : Specimen.request
                         {{pagelink:Task-WGSRareDiseaseTestOrderRequested-DirectToLab-Example}}
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        {{pagelink:Task-NonWGSTestOrderFormRequested-UsingStoredSample-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-TrioTestingFather-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-TrioTestingMother-Example}}
+                    </td>
+                </tr>
             </table>
         </div>
         <div id="Constraints" role="tabpanel" class="tab-pane">
@@ -404,6 +420,8 @@ This element will not be used within the Genomic Medicine Service. The ServiceRe
 <a name="status"></a>
 #### status
 Initially, automatically populated by the central service upon instantiation. Tasks will be first marked as 'draft' until their prerequisites have been satisfied, after which they will be marked as 'requested' until accepted/claimed by an organization. Upon acceptance, the owning organization is responsible for updating the status up until completion (or if the owning organization is not integrated into the GMS, the organization who has referred the task to the unintegrated org).
+
+If a ServiceRequest is cancelled, any Tasks which have not already moved into in-progress SHALL be moved into the cancelled state, any in-progress Tasks will require lab processes to manage closure of the Task and appropriate reimbursement.
 
 For the full list of expected Task statuses in use by the GMS, please refer to the table below. For the allowed Task status transitions, please see the [FHIR R4 Task state machine model](https://www.hl7.org/fhir/R4/task.html#statemachine). 
 
@@ -474,6 +492,10 @@ The current allowed code list and their definition is provided in the table belo
 |Genomic MDT|Multi-Diciplinary-Team consults on the interim report|1..1 (max 1 per ServiceRequest, for the purposes of the Alpha an MDT task will always be created, even if not needed)|1..1|0..0 (Not required for DNA storage requests)|
 |Produce Final Report|Interim report is deemed final or is updated following MDT|1..1 (per ServiceRequest)|1..1|1..1|
 |Distribute Report|Final report is distributed or marked as distributable/available|1..1 (per ServiceRequest or Final Report)|1..1|1..1|
+
+Rendered within a diagram, the Task cardinalities and their inputs are illustrated in the diagram below:
+
+{{render:diagrams-genomicordermanagementtaskmodel}}
 
 ```json
 "code": {
@@ -583,7 +605,7 @@ The table below provides possible inputs that could be provided for certain Task
 |Process Genomic Test Request|N/A, all information required should be part of or refernced from the ServiceRequest|
 |Request & Sample Alignment|Specimen resource to be aligned and potentially Consent resources where these are captured post submission of a test request|
 |Sample Preparation|Specimen resource to be prepared as part of this Task|
-|Sample Processing|DNA Specimen resource to be sequenced as part of this Task|
+|Sample Processing|DNA Specimen resource to be sequenced as part of this Task as well as Consignment, Rack and Well identifiers to allow for specimen tracking|
 |Genetic/Genomic Data Processing|Sequence data generated from the previous Task, potentially referenced using DocumentReference resources, these SHOULD reference the Specimen from which the data originated|
 |Interpretation|Variant Priorities lists generated from the previous Task, **the representation of these lists is still under investigation**|
 |Produce Interim Report|Guidance/Recommendations generated though data interpretation, **the representation of these items is still under investigation**|

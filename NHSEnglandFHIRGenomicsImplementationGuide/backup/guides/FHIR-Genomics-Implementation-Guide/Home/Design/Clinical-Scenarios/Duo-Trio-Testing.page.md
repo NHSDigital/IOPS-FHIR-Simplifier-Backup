@@ -129,9 +129,17 @@ Receipt of:
 
 {{pagelink:ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example}} (update to SR to link consent/specimen)
 
-{{pagelink:Provenance-WGSTestOrderForm-TrioTestingProbandFather-Example}} (Provenance to track reason for change to SR, note: incorrect reference to Fetal Scenario SR, though structure remains the same)
+{{pagelink:Provenance-WGSTestOrderForm-TrioTestingProbandFather-Example}} (Provenance to track reason for change to SR)
 
 POST of {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-TrioTestingProband-Example}}
+
+AND
+
+{{pagelink:Task-WGSRareDiseaseTestOrderAccepted-TrioTestingFather-Example}}
+
+AND
+
+{{pagelink:Task-WGSRareDiseaseTestOrderAccepted-TrioTestingMother-Example}} (for Tasks related to the prepping of the Mother's and Father's samples)
 
 ### 4. Lab forwards test request/ ROD/ samples to GEL/NGIS.
 

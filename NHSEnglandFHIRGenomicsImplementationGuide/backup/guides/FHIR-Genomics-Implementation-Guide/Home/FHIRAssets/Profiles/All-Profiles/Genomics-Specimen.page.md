@@ -105,7 +105,7 @@ S2 -u-> SR : Specimen.request
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Specimen-BloodEDTA-WithCollectoinDetails-Example}}
+                    {{pagelink:Specimen-BloodEDTA-WithCollectionDetails-Example}}
                     </td>
                 </tr>
                 <tr>
@@ -160,7 +160,7 @@ S2 -u-> SR : Specimen.request
                 </tr>
                 <tr>
                     <td>
-                    {{pagelink:Specimen-MichaelJonesBloodWithCollectoinDetails-Example}}
+                    {{pagelink:Specimen-MichaelJonesBloodWithCollectionDetails-Example}}
                     </td>
                 </tr>
             </table>
@@ -306,7 +306,7 @@ SHOULD be updated upon receipt at a destination lab
 
 <a name="parent"></a>
 #### parent
-If a sample has been split into multiple parts, each SHOULD be represented using an additional Specimen resource, referencing the parent sample through the parent element.
+If a sample has been split into multiple parts, such as DNA being extracted from a primary sample, each SHOULD be represented using an additional Specimen resource, referencing the parent sample through the parent element.
 ```json
 "parent": [
         {

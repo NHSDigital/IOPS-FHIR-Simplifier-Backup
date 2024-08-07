@@ -2,8 +2,8 @@
   filename: Index.page.md
 - name: Specimen-BloodEDTA-Example
   filename: Specimen-BloodEDTA-Example.page.md
-- name: Specimen-BloodEDTA-WithCollectoinDetails-Example
-  filename: Specimen-BloodEDTA-WithCollectoinDetails-Example.page.md
+- name: Specimen-BloodEDTA-WithCollectionDetails-Example
+  filename: Specimen-BloodEDTA-WithCollectionDetails-Example.page.md
 - name: Specimen-BoneMarrowAspiration-Example
   filename: Specimen-BoneMarrowAspiration-Example.page.md
 - name: Specimen-JamesMetcalfeBloodEDTA-Example
@@ -24,5 +24,5 @@
   filename: Specimen-TissueResection-Example.page.md
 - name: Specimen-MichealJonesBlood-Minimal
   filename: Specimen-MichealJonesBlood-Minimal.page.md
-- name: Specimen-MichaelJonesBloodWithCollectoinDetails-Example
-  filename: Specimen-MichaelJonesBloodWithCollectoinDetails-Example.page.md
+- name: Specimen-MichaelJonesBloodWithCollectionDetails-Example
+  filename: Specimen-MichaelJonesBloodWithCollectionDetails-Example.page.md
