@@ -69,3 +69,7 @@ POST of test order bundle with {{pagelink:ServiceRequest-NonWGSTestOrderForm-Usi
 ### 3. Lab recieves test request, accepts test request once sample and request are aligned
 
 POST of {{pagelink:Task-NonWGSTestOrderFormAccepted-UsingStoredSample-Example}}
+
+and 
+
+{{pagelink:Task-NonWGSTestOrderFormRequested-UsingStoredSample-Example}}

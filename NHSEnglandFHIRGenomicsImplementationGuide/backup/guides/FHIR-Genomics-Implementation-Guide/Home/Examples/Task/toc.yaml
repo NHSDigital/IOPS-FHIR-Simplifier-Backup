@@ -62,3 +62,9 @@
   filename: Task-WGSRareDiseaseTestOrderHold-TrioTestingProband-Example.page.md
 - name: Task-WGSRareDiseaseTestOrderRequested-DirectToLab-Example
   filename: Task-WGSRareDiseaseTestOrderRequested-DirectToLab-Example.page.md
+- name: Task-NonWGSTestOrderFormRequested-UsingStoredSample-Example
+  filename: Task-NonWGSTestOrderFormRequested-UsingStoredSample-Example.page.md
+- name: Task-WGSRareDiseaseTestOrderAccepted-TrioTestingFather-Example
+  filename: Task-WGSRareDiseaseTestOrderAccepted-TrioTestingFather-Example.page.md
+- name: Task-WGSRareDiseaseTestOrderAccepted-TrioTestingMother-Example
+  filename: Task-WGSRareDiseaseTestOrderAccepted-TrioTestingMother-Example.page.md

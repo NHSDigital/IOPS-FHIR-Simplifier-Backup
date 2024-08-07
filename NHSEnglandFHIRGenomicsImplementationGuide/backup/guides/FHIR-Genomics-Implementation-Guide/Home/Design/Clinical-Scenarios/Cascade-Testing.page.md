@@ -49,7 +49,7 @@ Post of transaction Bundle consisting of the following resources:
 
 {{pagelink:PractitionerRole-MarySmith-Example}}
 
-{{pagelink:Specimen-BloodEDTA-WithCollectoinDetails-Example}}
+{{pagelink:Specimen-BloodEDTA-WithCollectionDetails-Example}}
 
 ### The lab recieves the test request and:
 
