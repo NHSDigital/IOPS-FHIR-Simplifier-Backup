@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
+<!-- <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div> -->
 
 The ODS FHIR R4 API allows healthcare professionals to use healthcare applications acting as API consumers to search for, read and display organisation information.
 
