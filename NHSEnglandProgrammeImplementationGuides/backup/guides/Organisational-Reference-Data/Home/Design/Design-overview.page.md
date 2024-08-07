@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
+<!-- <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div> -->
 
 <!--The ORD FHIR API provides an R4 FHIR Application Programming Interface (API) to allow connecting systems to search and update ORD indicators.
 
@@ -25,15 +25,18 @@ The Organisational Data Service (ODS) FHIR API, using the FHIR R4 standard, allo
 
 Connecting systems will interact with the ODS FHIR API using the below endpoint pattern:
 
-GET [base]/[info-to-be-confirmed-here]
+GET [base]/organisation-data-terminology-api/fhir
 
-The value of [base] will be dependent on which system environment the FHIR API exists in. The variances are: 
+The value of [base] will be dependent on which system environment the FHIR API exists in. The variances are:
 
-[ info to go here ]
+Integration environment
+https://int.api.service.nhs.uk/organisation-data-terminology-api/fhir
 
-The following headers will also be required:
+Sandbox environment
+https://sandbox.api.service.nhs.uk/organisation-data-terminology-api/fhir
 
-[ header info to go here ]
+Production environment
+https://api.service.nhs.uk/organisation-data-terminology-api/fhir
 
 ## Modelling
 

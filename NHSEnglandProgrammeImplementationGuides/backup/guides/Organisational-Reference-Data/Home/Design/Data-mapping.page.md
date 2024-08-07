@@ -1,6 +1,6 @@
 ## {{page-title}}
     
-  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
+<!-- <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div> -->
 
 This page defines how the data is mapped between relevant FHIR asset elements and the domain fields for ODS.
 
