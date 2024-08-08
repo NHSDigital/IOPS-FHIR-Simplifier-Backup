@@ -40,7 +40,7 @@
             "text": "Optional Free Text field to record any additional details"
         }
     ],
-    "output": [
+    "input": [
         {
             "type": {
                 "coding": [

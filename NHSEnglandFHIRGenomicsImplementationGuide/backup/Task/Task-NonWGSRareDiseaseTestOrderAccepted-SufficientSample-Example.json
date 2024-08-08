@@ -17,8 +17,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "process-genomic-test-request",
-                "display": "Process Genomic Test Request"
+                "code": "sample-preparation",
+                "display": "Sample Preparation"
             }
         ]
     },
@@ -64,9 +64,7 @@
                 "system": "https://www.royalmail.com/track-your-item#/",
                 "value": "HZ970705811GB"
             }
-        }
-    ],
-    "output": [
+        },
         {
             "type": {
                 "coding": [

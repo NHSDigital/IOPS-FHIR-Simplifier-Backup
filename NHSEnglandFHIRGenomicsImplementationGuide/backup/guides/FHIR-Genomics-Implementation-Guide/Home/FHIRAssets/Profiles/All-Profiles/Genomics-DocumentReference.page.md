@@ -9,7 +9,7 @@ If following the Genomic Reporting IG, you could also reference the DocumentRefe
 
 This requires use of the Genomic Study and Genomic Study Analysis profiles which have not yet been assessed for suitability in the UK. As such, this reference chain is only provided for reference.
 
-The NHS England Genomics unit is also investigating backporting the R5 DiagnosticReport.media.link reference to DocumentReference to support referencing the data files from the DiagnosticReport directly.
+The NHS England Genomics unit is also investigating backporting the R5 DiagnosticReport.media.link reference to DocumentReference to support referencing the data files from the DiagnosticReport directly. Until this is backported, DocumentReference resources SHOULD reference the DiagnosticReport which uses the data. In all cases the DocumentReference SHOULD additionally reference the DNA Specimen from which the data originated and the ServiceRequest which triggered the capture of the data.
 
 The Genomics-DocumentReference is currently based on the HL7 international version of the resource as the UKCore-DocumentReference profile is still in a draft status (and is pending use cases from the Unified Genomic Record project). Once this profile becomes active in UKCore its suitability for use and need for profiling within Genomics will be assessed. 
 
@@ -147,12 +147,20 @@ SHOULD be a DRS compatible reference to the data file.
 
 <a name="context"></a>
 #### context
-SHOULD reference the DiagnosticReport related to the data file, where this exists.
+SHOULD reference the DiagnosticReport related to the data file, where this exists. **This guidance will be updated upon release of the R5 backport of DiagnosticReport.media, allowing references to DocumentReference. Once backported, DiagnosticReport.media.link SHOULD be used to reference the DocumentReference resources for data files analysed for the report. 
+
+In all cases the DocumentReference SHOULD additionally reference the DNA Specimen from which the data originated and the ServiceRequest which triggered the capture of the data.
 ```json
 "context": {
     "related": [
       {
         "reference": "DiagnosticReport/DiagnosticReport-AnitaLamberts-Example"
+      },
+      {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-NewFollowupTest-Example"
+      },
+      {
+        "reference": "Specimen/Specimen-BloodEDTA-Example"
       }
     ]
   }

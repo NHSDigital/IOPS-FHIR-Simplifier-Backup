@@ -89,7 +89,7 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example",
+      "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example",
       "identifier": [
         {
           "system": "https://fhir.bwc.nhs.uk//Id/specimenId",

@@ -11,6 +11,6 @@
 - name: Error handling
   filename: Errorhandling.page.md
 - name: Supported CRUD capability
-  filename: Supported-CRUD-capability.page.md
+  filename: Supported-CRUD-capability
 - name: Operation responses
   filename: Operationresponses.page.md

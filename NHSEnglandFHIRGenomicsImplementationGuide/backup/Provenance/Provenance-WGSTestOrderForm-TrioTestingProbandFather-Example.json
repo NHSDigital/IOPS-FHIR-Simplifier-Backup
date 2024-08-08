@@ -3,7 +3,7 @@
 	"id": "Provenance-WGSTestOrderForm-TrioTestingProbandFather-Example",
 	"target": [
 		{
-			"reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderFormUpdated-FetalScenario-Example"
+			"reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
 		}
 	],
 	"recorded": "2023-08-08T15:43:00Z",
@@ -51,7 +51,7 @@
 		{
 			"role": "source",
 			"what": {
-				"reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-FetalScenario-Example"
+				"reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
 			}
 		}
 	],

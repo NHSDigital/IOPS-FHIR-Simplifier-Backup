@@ -6,7 +6,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of a Task created upon submission of a test request. NOTE: Task codes and status are pending further business analysis.
+Example of a Task capturing well ids for coordinating sample preparation.
 
 {{page:Home-Examples-ExamplesTemplate}}
 

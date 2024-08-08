@@ -14,6 +14,8 @@
   filename: Genomic-Patient-Research-Choice.page.md
 - name: Genomic-Reason-for-Testing
   filename: Genomic-Reason-for-Testing.page.md
+- name: Genomic-Specimen-Collection-SpecialHandling
+  filename: Genomic-Specimen-Collection-SpecialHandling.page.md
 - name: Genomic-Task-Code
   filename: Genomic-Task-Code.page.md
 - name: Genomic-Task-StatusReason

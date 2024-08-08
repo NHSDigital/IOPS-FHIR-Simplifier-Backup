@@ -2,9 +2,7 @@
 
 Focal resource for test order messages. All additional information or resources SHOULD be linked back to the ServiceRequest or be referenced from the ServiceRequest directly. 
 
-| Profile url | FHIR Module | Normative Status |
-|--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
+ServiceRequests which have been updated post submission SHALL be accompanied by Provenance resources, referencing the ServiceRequest which detail when the resource was changed, who made the change and why.
 
 An illustrative diagram of the links between ServiceRequests and other resources is provided below. 
 **Note: not all resource links are represented, to increase legibility of the diagram.** 
@@ -52,6 +50,12 @@ C1 --> SR : Consent.provision
 
 @enduml
 </plantuml>
+
+| Profile url | FHIR Module | Normative Status |
+|--
+| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
+
+
 
 <div class="nhsd-!t-margin-bottom-6">
     <ul class="nav nav-tabs" role="tablist">
@@ -289,7 +293,6 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#supportingInfo">supportingInfo</a>
 - <a href="#specimen">specimen</a>
 - <a href="#note">note</a>
-- <a href="#relevantHistory">relevantHistory</a>
 
 <a name="extension:additionalContact"></a>
 #### extension:additionalContact
@@ -595,17 +598,6 @@ Any information which cannot be readily be structured SHOULD be entered into the
 "note":  [
         {
             "text": "No family history of genomic testing"
-        }
-    ]
-```
-
-<a name="relevantHistory"></a>
-#### relevantHistory
-ServiceRequests which have been updated post submission SHOULD reference Provenance resources which detail when the resource was changed, who made the change and why.
-```json
-"relevantHistory":  [
-        {
-            "reference": "Provenance/Provenance-ServiceRequestUpdate-Example"
         }
     ]
 ```

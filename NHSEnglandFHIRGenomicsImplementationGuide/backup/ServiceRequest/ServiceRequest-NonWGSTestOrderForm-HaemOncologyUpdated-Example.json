@@ -117,10 +117,5 @@
     {
       "text": "No Previous Relevant Test Report"
     }
-  ],
-  "relevantHistory": [
-    {
-      "reference": "Provenance/Provenance-ServiceRequest-NonWGSTestOrderForm-HaemOncology-Example"
-    }
   ]
 }
