@@ -17,8 +17,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "code": "process-genomic-test-request",
-        "display": "Process Genomic Test Requestt"
+        "code": "request-sample-alignment",
+        "display": "Request & Sample Alignment"
       }
     ]
   },
@@ -49,90 +49,34 @@
       "text": "Optional Free Text field to record any additional details"
     }
   ],
-    "input": [
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
-              "code": "Specimen",
-              "display": "Specimen"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Specimen/Specimen-PheobeSmitham-Example"
-        }
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+            "code": "Specimen",
+            "display": "Specimen"
+          }
+        ]
       },
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
-              "code": "Specimen",
-              "display": "Specimen"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Specimen/Specimen-PheobeSmithamFather-Example"
-        }
-      },
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
-              "code": "Specimen",
-              "display": "Specimen"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Specimen/Specimen-PheobeSmithamMother-Example"
-        }
-      },
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
-              "code": "Consent",
-              "display": "Consent"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
-        }
-      },
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
-              "code": "Consent",
-              "display": "Consent"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Consent/Consent-RoD-PheobeSmithamFather-Example"
-        }
-      },
-      {
-        "type": {
-          "coding": [
-            {
-              "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
-              "code": "Consent",
-              "display": "Consent"
-            }
-          ]
-        },
-        "valueReference": {
-          "reference": "Consent/Consent-RoD-PheobeSmithamMother-Example"
-        }
+      "valueReference": {
+        "reference": "Specimen/Specimen-PheobeSmitham-Example"
       }
-    ]
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+            "code": "Consent",
+            "display": "Consent"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Consent/Consent-RoD-PheobeSmitham-Example"
+      }
+    }
+  ]
 }

@@ -8,8 +8,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "process-genomic-test-request",
-                "display": "Process Genomic Test Request"
+                "code": "request-sample-alignment",
+                "display": "Request & Sample Alignment"
             }
         ]
     },
@@ -39,30 +39,7 @@
             "text": "Test critieria met and sample to be used from storage"
         }
     ],
-        "input": [
-            {
-                "type": {
-                    "coding": [
-                        {
-                            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
-                            "code": "WellId",
-                            "display": "Well Identification Number"
-                        }
-                    ]
-                },
-                "valueIdentifier": {
-                    "system": "https://www.guysandstthomas.nhs.uk/WellId",
-                    "value": "RJ1-WID-9449307555",
-                    "assigner": {
-                        "identifier": {
-                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "RJ1"
-                        }
-                    }
-                }
-            }
-        ],
-    "output": [
+    "input": [
         {
             "type": {
                 "coding": [
@@ -74,7 +51,7 @@
                 ]
             },
             "valueReference": {
-                "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example"
+                "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example"
             }
         }
     ]

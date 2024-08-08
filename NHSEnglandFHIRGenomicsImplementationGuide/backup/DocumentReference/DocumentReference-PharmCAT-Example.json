@@ -33,6 +33,12 @@
     "related": [
       {
         "reference": "DiagnosticReport/DiagnosticReport-AnitaLamberts-Example"
+      },
+      {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-NewFollowupTest-Example"
+      },
+      {
+        "reference": "Specimen/Specimen-BloodEDTA-Example"
       }
     ]
   }

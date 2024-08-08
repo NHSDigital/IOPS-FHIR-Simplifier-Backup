@@ -187,10 +187,5 @@
     {
       "text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. Not eligible for R14 or R98. Agreed with testing laboratory at Manchester. Father lives in surrey. Father to have sample taken locally and sent to MFT."
     }
-  ],
-  "relevantHistory": [
-    {
-      "reference": "Provenance/Provenance-WGSTestOrderForm-TrioTestingProbandFather-Example"
-    }
   ]
 }

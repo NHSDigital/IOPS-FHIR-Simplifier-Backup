@@ -2,7 +2,7 @@
 
 The Genomics Provenance SHOULD be provided alongside updates to controlled documents such as ServiceRequests and DiagnosticReports by integrated systems on any update operation to ensure auditability for any changes to resources.
 
-It is not expected that updates which do not affect the clinical content of the document will need associated Provenance resources, e.g. addition of local identifiers. On material changes to controlled resources, ServiceRequest and DiagnosticReport, users SHOULD use the transaction endpoint on the server to bundle the updated resource and Provenance event into a single transaction.
+It is not expected that updates which do not affect the clinical content of the document will need associated Provenance resources, e.g. addition of local identifiers (**though for the purporses of the Genomic Order Management Alpha, all updates to ServiceRequest and DiagnosticReport resources will be expected to have accompanying Provenance resources**). On material changes to controlled resources, ServiceRequest and DiagnosticReport, users SHOULD use the transaction endpoint on the server to bundle the updated resource and Provenance event into a single transaction.
 
 | Profile url | FHIR Module | Normative Status |
 |--

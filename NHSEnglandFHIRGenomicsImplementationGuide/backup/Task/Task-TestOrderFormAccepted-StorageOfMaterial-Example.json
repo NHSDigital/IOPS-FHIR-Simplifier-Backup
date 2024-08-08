@@ -40,7 +40,7 @@
             "text": "sample recieved and placed to be placed in storage"
         }
     ],
-    "output": [
+    "input": [
         {
             "type": {
                 "coding": [
@@ -52,7 +52,7 @@
                 ]
             },
             "valueReference": {
-                "reference": "Specimen/Specimen-BloodEDTA-WithCollectoinDetails-Example"
+                "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example"
             }
         }
     ]

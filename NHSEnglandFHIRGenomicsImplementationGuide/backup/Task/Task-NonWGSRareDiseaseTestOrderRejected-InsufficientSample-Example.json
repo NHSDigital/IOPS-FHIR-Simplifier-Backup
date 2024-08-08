@@ -17,8 +17,8 @@
         "coding": [
             {
                 "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-                "code": "request-sample-alignment",
-                "display": "Request & Sample Alignment"
+                "code": "sample-preparation",
+                "display": "Sample Preparation"
             }
         ]
     },
@@ -70,9 +70,7 @@
                     }
                 }
             }
-        }
-    ],
-    "output": [
+        },
         {
             "type": {
                 "coding": [

@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Create
+  filename: Create.page.md
+- name: Read
+  filename: Read.page.md
+- name: Update
+  filename: Update.page.md
+- name: Delete
+  filename: Delete.page.md

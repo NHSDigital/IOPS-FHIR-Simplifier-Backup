@@ -40,20 +40,20 @@
       "text": "Optional Free Text field to record any additional details"
     }
   ],
-      "output": [
-        {
-          "type": {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
-                "code": "DiagnosticReport",
-                "display": "DiagnosticReport"
-              }
-            ]
-          },
-          "valueReference": {
-            "reference": "DiagnosticReport/DiagnosticReport-PhoebeSmithGeneticReport-Example"
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+            "code": "DiagnosticReport",
+            "display": "DiagnosticReport"
           }
-        }
-      ]
+        ]
+      },
+      "valueReference": {
+        "reference": "DiagnosticReport/DiagnosticReport-PhoebeSmithGeneticReport-Example"
+      }
+    }
+  ]
 }

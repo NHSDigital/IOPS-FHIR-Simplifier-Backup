@@ -8,6 +8,8 @@ Currently, only requirements for initial Pathology reports, provided with a test
 
 It is expected structured DiagnosticReports will mimic the structure proposed within the [HL7 International Genomic Reporting IG](https://hl7.org/fhir/uv/genomics-reporting/index.html), though customizations for use within the UK still need to be investigated.
 
+Genomic DiagnosticReports which have been updated post submission SHALL be accompanied by Provenance resources, referencing the DiagnosticReport which detail when the resource was changed, who made the change and why.
+
 | Profile url | FHIR Module | Normative Status |
 |--
 | [https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |

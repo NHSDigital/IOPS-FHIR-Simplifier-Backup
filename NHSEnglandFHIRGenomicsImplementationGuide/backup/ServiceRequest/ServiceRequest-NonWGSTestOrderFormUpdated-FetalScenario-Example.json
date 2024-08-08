@@ -115,10 +115,5 @@
 		{
 			"text": "Free text for diagnosis/reason for referral, relevant information including family history, phenotypic details/ HPO Terms/ E.g. large echogenic kidneys with normal bladder"
 		}
-	],
-	"relevantHistory": [
-		{
-			"reference": "Provenance/Provenance-NonWGSTestOrderForm-FetalScenario-Example"
-		}
 	]
 }

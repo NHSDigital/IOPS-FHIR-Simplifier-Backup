@@ -364,30 +364,6 @@
           ]
         }
       ]
-    },
-    {
-      "path": "ServiceRequest.relevantHistory",
-      "description": "Optional link to provenance resources collating history of changes to the request",
-      "min": 0,
-      "max": "*",
-      "target": [
-        {
-          "type": "Provenance",
-          "link": [
-            {
-              "path": "Provenance.agent.who",
-              "description": "PractitionerRole that made the referenced change",
-              "min": 1,
-              "max": 1,
-              "target": [
-                {
-                  "type": "PractitionerRole"
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ]
 }

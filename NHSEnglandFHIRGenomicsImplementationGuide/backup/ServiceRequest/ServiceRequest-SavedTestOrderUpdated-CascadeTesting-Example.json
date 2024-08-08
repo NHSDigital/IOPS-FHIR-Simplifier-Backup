@@ -123,10 +123,5 @@
     {
       "text": "Father tested positive for FH. Confirmation required if daughter is postive for FH"
     }
-  ],
-  "relevantHistory": [
-    {
-      "reference": "Provenance/Provenance-ServiceRequestUpdate-Example"
-    }
   ]
 }

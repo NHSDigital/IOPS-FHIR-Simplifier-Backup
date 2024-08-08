@@ -1,0 +1,79 @@
+{
+    "resourceType": "Task",
+    "id": "Task-NonWGSTestOrderFormRequested-UsingStoredSample-Example",
+    "status": "requested",
+    "intent": "order",
+    "priority": "routine",
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
+                "code": "sample-preparation",
+                "display": "Sample Preparation"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-UsingStoredSample-Example"
+    },
+    "for": {
+        "reference": "Patient/Patient-TimMclullichs-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "8449303452"
+        }
+    },
+    "authoredOn": "2023-11-02T15:43:00Z",
+    "requester": {
+        "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RQ3"
+        },
+        "display": "BIRMINGHAM WOMEN'S AND CHILDREN'S NHS FOUNDATION TRUST"
+    },
+    "note": [
+        {
+            "text": "Test critieria met and sample to be used from storage"
+        }
+    ],
+    "input": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "Specimen",
+                        "display": "Specimen"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "Specimen/Specimen-BloodEDTA-WithCollectionDetails-Example"
+            }
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/AdditionalInfoTypeGenomics",
+                        "code": "WellId",
+                        "display": "Well Identification Number"
+                    }
+                ]
+            },
+            "valueIdentifier": {
+                "system": "https://www.guysandstthomas.nhs.uk/WellId",
+                "value": "RJ1-WID-9449307555",
+                "assigner": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RJ1"
+                    }
+                }
+            }
+        }
+    ]
+}
