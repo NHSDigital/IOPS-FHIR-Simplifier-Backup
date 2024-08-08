@@ -1,11 +1,16 @@
 # Glossary
 
-This glossary gives a short definition of terms used in this implementation guide. Links are supplied to websites where further information which may help the reader can be found. 
 
-This glosary is to supplement the <a href="http://hl7.org/fhir/R5/help.html">HL7 glossary</a>, <i>note the new HL7 glossary is first found in the R5 version, whereas the UK Core is currently based on the R4 version. </i>
+## FHIR Glossary
+For FHIR terms see <a href="http://hl7.org/fhir/R5/help.html">HL7 glossary</a>.  
+<i>Note: There is no glossary within the R4 version of the HL7 FHIR IG, which the UK Core is currently based on. This links to the HL7 FHIR R5 version instead. </i>
 
 For persons new to FHIR the <a href="http://hl7.org/fhir/R5/help.html">Simplifier glossary</a> offers a comprehensive guide to the commonly used words within the standard.
 
+--- 
+
+## UK Glossary
+For terms related to the UK and the individual nations. Links are supplied to websites where further information which may help the reader can be found. 
 
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-info-circle"><h4> Disclaimer</h4></i>
 Whilst every effort has been made to ensure that the glossary entries are correct and useful, they are not a normative part of the specification.
@@ -64,20 +69,10 @@ Z
 </tr>
 <tr>
 <tr>
-<td>AoMRC</td>
-<td>The Academy of Medical Royal Colleges speaks on standards of care and medical education across the UK and drives improvement in health and patient care through education, training and quality standards.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>API</td>
 <td>The term Application Programming Interface is quite a confused term in the context of FHIR. Strictly speaking, an API is a set or services offered by a programming library that can be made use of by another application. Historically these would have been made available from a single machine although now they are available across networks.
 <br><br>
 In the service/message/document categorisation, an API is a service interface. As technology became increasingly capable of supporting distributed operations, the differences between SOA (Service Oriented Architecture) and API became blurred. In the context of FHIR we define APIs as REST based interfaces.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Argonaut</td>
-<td>An initiative launched by HL7 to accelerate the development and adoption of FHIR. Supported by 11 organizations, including EHR vendors Epic and Cerner and health systems Mayo Clinic and Intermountain Healthcare.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -115,11 +110,7 @@ In the service/message/document categorisation, an API is a service interface. A
 <td>CareConnect assets were developed in HL7® FHIR STU3 collaboratively by HL7 and the INTEROPen community with NHS England as the development partner.</td>
 <td><a href="https://simplifier.net/guide/careconnectversionhistory/home" target="_blank">More about CareConnect</a><br></td>
 </tr>
-<tr>
-<td>CCG</td>
-<td>Now replaced by <a href="https://www.england.nhs.uk/integratedcare/what-is-integrated-care/" target="_blank">Integrated Care Systems (ICSs)</a>, the Clinical Commissioning Group was an NHS organisation made up of GP practices looking to understand the health needs of local people and use funds given by NHS England to buy services which meet those needs. </td>
-<td><br></td>
-</tr>
+
 <tr>
 <td>CIB</td>
 <td>The Code 4 Health, Community Interoperability Board was established early in 2016. This network of networks has taken on a leadership role across the service to coordinate and deliver working interoperability standards.</td>
@@ -139,11 +130,6 @@ In the service/message/document categorisation, an API is a service interface. A
 <tr>
 <td>Common Assessment Framework (CAF)</td>
 <td>The Common Assessment Framework (CAF) for Adults is a Department of Health funded project that aims to improve information sharing across organisations for multi-disciplinary assessment and care and support planning.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Common Assurance Process (CAP)</td>
-<td>The Common Assurance Process (CAP) is an NHS process that needs to be followed to gain accreditation allowing for connection directly to the Spine.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -288,32 +274,14 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <td><br></td>
 </tr>
 <tr>
-
-
-
-<tr>
-<td><h5 id="G9">FHIR® statuses</h5></td>
-<td>HL7 has five descriptive terms that describe the level of stability and implementation readiness associated with different aspects of the specification.</td>
-<td><a href="https://www.hl7.org/fhir/versions.html#std-process" target="_blank">More about FHIR® statuses</a></td>
-</tr>
 <tr>
 <td>First of Type</td>
 <td>The chosen recipient(s) to test the first deployment of the new capabilities.</td>
 <td><br></td>
 </tr>
 <tr>
-<td>FMG</td>
-<td>The FHIR Management Group provides day-to-day oversight of FHIR-related work group activities including performing quality analysis, monitoring scope and consistency with FHIR principles and aiding in the resolution of FHIR-related intra and inter-work group issues.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>FMM</td>
-<td>The FHIR Maturity Model provides a sense of how mature a resource is based on the level and types of review it has been subject to.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>FSN</td>
-<td>Each concept has one Fully Specified Name (FSN) intended to provide an unambiguous way to name a concept. The purpose of the FSN is to uniquely describe a concept and clarify the meaning. The FSN is not a commonly used term or natural phrase and would not be expected to appear in the human-readable representation of a clinical record.</td>
+<td>A <a href="https://confluence.ihtsdotools.org/display/DOCEG/Fully+Specified+Name">Fully Specified Name (FSN)</a> intended to provide an unambiguous way to name a SNOMED CT concept. The purpose of the FSN is to uniquely describe a concept and clarify the meaning. The FSN is not a commonly used term or natural phrase and would not be expected to appear in the human-readable representation of a clinical record.</td>
 <td><br></td>
 </tr>
 </tbody>
@@ -335,50 +303,6 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <tr>
 <td>GDS</td>
 <td>Government Digital Service.</td>
-<td><br></td>
-</tr>
-<tr>
-<td><h5 id="G1">GitHub</h5></td>
-<td>At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.</td>
-<td><a href="https://github.com" target="_blank">More about GitHub</a></td>
-</tr>
-<tr>
-<td>GP Connect</td>
-<td>GP Connect allows authorised clinical staff to share and view GP practice clinical information and data between IT systems, quickly and efficiently.</td>
-<td><a href="https://digital.nhs.uk/services/gp-connect" target="_blank">More about GP Connect</a></td></tr>
-<tr>
-<td>GP Connect licence</td>
-<td>The terms and conditions for usage of the GP Connect service.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GP2GP</td>
-<td>System transferring full GP records between GP systems when patients register with a new GP. Implemented using HL7 v3.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GPES</td>
-<td>The General Practice Extraction Service (GPES) collects information for a wide range of purposes, including providing GP payments. It works with the Calculating Quality Reporting Service (CQRS) and GP clinical systems as part of the GP Collections service.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GPET</td>
-<td>The General Practice Extraction Tool provides facilities to define, build and execute approved Query Specifications in order to provide data from GP Systems.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GPET-E</td>
-<td>The functions delivered by GP System Suppliers to extract data described in Extraction Requirements from Data Provider Systems and send Data Provider Output to GPET-Q in accordance with the GPES-I Interoperability Standard.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GPET-Q</td>
-<td>The central system developed by the GPET-Q Contractor to enable the management and scheduling of data extractions by GPET-E systems.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>GPSoC contract</td>
-<td>The GP System of Choice contract, where a number of suppliers have gained approval to offer services via a centrally controlled contract.</td>
 <td><br></td>
 </tr>
 </tbody>
@@ -432,12 +356,6 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <td><a href="https://www.hl7.org.uk/" target="_blank">More about HL7 UK</a></td>
 </tr>
 <tr>
-<td>HO</td>
-<td>Home Office.
-</td>
-<td><br></td>
-</tr>
-<tr>
 <td>HSCI</td>
 <td>Health and Social Care Integration. This integrates local health and social care services to improve coordination between local health and social care agencies, leading to improved experiences for people using these services.</td>
 <td><br></td>
@@ -474,16 +392,6 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <td><br></td>
 </tr>
 <tr>
-<td>IDT</td>
-<td>Although initially used as an adjunct to support effective training, the Intelligent Data Toolkit has been enhanced to support content changes in the clinical system and to enable cost effective commissioning in localities.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>IHS</td>
-<td>Immigration Health Surcharge.</td>
-<td><br></td>
-</tr>
-<tr>
 <td><h5 id="IG">Implementation Guide</h5></td>
 <td>An implementation guide is a set of rules about how HL7 FHIR® resources are used (or should be used) to solve a particular problem, with associated documentation to support and clarify the usage.</td>
 <td><br></td>
@@ -493,54 +401,10 @@ Technically, FHIR is designed for the web. The resources are based on simple XML
 <td>NHS Guidance on sharing medicines data between clinical systems and between integrated and shared record systems across the UK health sector.</td>
 <td><a href="https://simplifier.net/guide/uk-core-implementation-guidance-directory?version=current">More information</a></td>
 </tr>
-<tr>
-<td>Independent Group Advising on the Release of Data (IGARD)</td>
-<td>Independent Group Advising on the Release of Data (IGARD) is an advisory body to the NHS England Board, aiming to improve transparency, accountability, quality and consistency through robust, independent scrutiny of NHS England data distributions, as well as providing a voice for the public. 
-<br><br>
-IGARD also makes general recommendations or observations to NHS England about their processes, policies and procedures, including transparency measures such as registers.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Information Asset Owner (IAO)</td>
-<td>The Information Asset Owner (IAO) will be a senior member of staff who is the nominated owner for one or more identified information assets of the organisation. IAOs will support the organisation's Senior Information Risk Owner (SIRO) in their overall information risk management function as defined in the organisation's policy. </td>
-<td><br></td>
-</tr>
-<tr>
-<td>Information Governance (IG)</td>
-<td>Information Governance (IG) is the framework for handling information in a secure and confidential manner that allows organisations and individuals to manage patient, personal and sensitive information legally, securely, efficiently and effectively in order to deliver the best possible healthcare and services.
-<br><br>
-IG applies to, and impacts on, everyone working for, or on behalf of, the NHS. Additionally, everyone working in the NHS has a legal duty to keep information about others secure and confidential.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Information Security Management System (ISMS)</td>
-<td>An information security management system (ISMS) is a set of policies and procedures for systematically managing an organization's sensitive data. The goal of an ISMS is to minimize risk and ensure business continuity by proactively limiting the impact of a security breach.
-<br><br>
-An ISMS typically addresses employee behaviour and processes as well as data and technology. It can be targeted toward a particular type of data, such as customer data, or it can be implemented in a comprehensive way that becomes part of the company's culture.</td>
-<td><br></td>
-</tr>
+
 <tr>
 <td><h5 id="INTEROPen">INTEROPen</h5></td>
 <td>INTEROPen is an OPEN collaboration of individuals, industry, standards organisations and health and care providers, who have agreed to work together to accelerate the development of open standards for interoperability in the health and social care sector.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Invalidated patients</td>
-<td>Some patient records are marked as invalidated in PDS - also known as 'redacted' in FHIR terminology.
-<br><br>
-Invalidated patient records are not returned in search results. If an invalidated patient record has been superseded, the superseding record is returned instead.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>ITK</td>
-<td>The Interoperability Toolkit, in the context of the NHS this is a set of common specifications, frameworks and implementation guides to support interoperability within local organisations and across local health and social care communities. The ITK is not a piece of software, it is not a product which is downloadable from this website.
-<br><br>
-ITK Conformance is the NHS England team that manages the Technical Conformance of a Product as part of the Solution Assurance function.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>ITS</td>
-<td>Implementation Technology Specification. The ITS defines how to represent an HL7 message in a serial form that can be transmitted from a sender to a receiver.</td>
 <td><br></td>
 </tr>
 </tbody>
@@ -562,11 +426,6 @@ ITK Conformance is the NHS England team that manages the Technical Conformance o
 <tr>
 <td>JSON</td>
 <td>Javascript Object Notation is a lightweight data-interchange format. It is easy for humans to read and write and easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>JWT</td>
-<td>JSON Web Token is a JSON-based open standard (RFC 7519) for creating access tokens that assert a number of claims, typically used to transmit user identity information and other attributes about a user, system or device.</td>
 <td><br></td>
 </tr>
 </tbody>
@@ -633,13 +492,6 @@ MHRA is an executive agency, sponsored by the Department of Health and Social Ca
 <td><br></td>
 </tr>
 <tr>
-<td>MESH</td>
-<td>Messaging Exchange for Social Care is the main asynchronous messaging service used across health and social care. It works on the Spine infrastructure, and is used to transfer electronic messages directly from one application to another, so different organisations can communicate securely. As an example, pathology labs use MESH to communicate test results to GP practices.
-<br><br>
-MESH replaced the Data Transfer Service (DTS).</td>
-<td><br></td>
-</tr>
-<tr>
 <td>Message broker</td>
 <td>Computer systems send messages via an intermediary known as a proxy (for synchronous APIs) or a message broker (for asynchronous APIs). Some message brokers deliver the message on to the recipient, like a postal van. Other message brokers require the recipient to check for messages, like a post office box.</td>
 <td><br></td>
@@ -648,37 +500,6 @@ MESH replaced the Data Transfer Service (DTS).</td>
 <td>MHS</td>
 <td>Message Handling System is a name used to refer to the messaging capabilities of systems sending and receiving messages from Spine.
 </td>
-<td><br></td>
-</tr>
-<tr>
-<td>MIF</td>
-<td>Model Interchange Format is a set of XML formats used to support the storage and exchange of HL7 version 3 artefacts. It is the pre-publication format of HL7 v3 artefacts used by tooling. It's also the formal definition of the HL7 metamodel.
-<br><br>
-The MIF can be transformed into derived forms such as Unified Modelling Language (UML) /XML Metadata Interchange (XMI) or Web Ontology Language (OWL).</td>
-<td><br></td>
-</tr>
-<tr>
-<td>MIG</td>
-<td>The Medical Interoperability Gateway is a supplier lead interoperability solution provided by EMIS + Vision which allows third parties access to GP data.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>MIM</td>
-<td>The Message Implementation Manual describes the HL7 messages used for communications across the NPfIT programme.
-<br><br>
-Not all messages are HL7v3.
-<br><br>
-Not all messages are in the MIM.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>MPM</td>
-<td>Multi-Payload Message format for carrying a combination of CDA and non CDA HL7 messages, linked by a common Control Act in the payload.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>MVC</td>
-<td>Minimum Viable Content - The elements that all provider and consumer systems SHALL support as a minimum.</td>
 <td><br></td>
 </tr>
 </tbody>
@@ -698,11 +519,6 @@ Not all messages are in the MIM.</td>
 <td colspan="3"><h2 id="N">N</h2></td>
 </tr>
 <tr>
-<td>N3</td>
-<td>Now replaced by the Health and Social Care Network (HSCN).</td>
-<td><br></td>
-</tr>
-<tr>
 <td>NACS</td>
 <td>National Administrative Codes Service. The service previously known as the National Administrative Codes Service (NACS) is now known as the Organisation Data Service (ODS). It was responsible for the publication of organisation and practitioner codes, and for the national policy and standards with regard to the majority of organisation codes. These code standards form part of the NHS data standards.</td>
 <td><br></td>
@@ -710,11 +526,6 @@ Not all messages are in the MIM.</td>
 <tr>
 <td>National Events Management Service (NEMS)</td>
 <td>The National Events Management Service (NEMS) enables the sharing of specific health information about a patient in near real-time. Information is shared in the form of event messages, following a publish and subscribe model and using the <a href="https://digital.nhs.uk/services/spine">NHS Spine</a>.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>NHS CfH</td>
-<td>NHS Connecting for Health was an agency of the Department of Health. This organization was delivering the National Programme for Information Technology (NPfIT) in the NHS. Since 1 April 2013 substantive functions of this organization are transferred to NHS England.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -799,16 +610,6 @@ This was previously known as National Administrative Codes Service (NACS).</td>
 <td>Object Identifier is a unique identifier. It can be used to identify coding systems.</td>
 <td><br></td>
 </tr>
-<tr>
-<td>On the wire (instance format)</td>
-<td>The format of the xml instance that actually flows over the network between systems.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>OVM</td>
-<td>Overseas Visitors Manager.</td>
-<td><br></td>
-</tr>
 </tbody>
 </table>
 
@@ -849,16 +650,6 @@ The NHS patient’s record and appointment tracking system is often called PAS, 
 <td><br></td>
 </tr>
 <tr>
-<td>PID</td>
-<td>The HL7 Patient Identification segment is found in every type of ADT message (i.e. ADT-A01, ADT-A08, etc.) and contains 30 different fields with values ranging from patient ID number, to patient sex, to address, to marital status, to citizenship. The PID segment provides important identification information about the patient and, in fact, is used as the primary means of communicating the identifying and demographic information about a patient between systems.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>PNG</td>
-<td>Portable Network Graphics is a bit-mapped image format and video codec that employs lossless data compression. PNG was created to improve upon and replace GIF (Graphics Interchange Format) as an image-file format not requiring a patent license.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>Principal supplier</td>
 <td>The name given to a group of suppliers who provide GPs with the core system available under the GPSoC contract.</td>
 <td><br></td>
@@ -892,16 +683,6 @@ The PRSB is a national body providing an independent patient and professional vo
 <tr>
 <td>PSIS</td>
 <td>Personal Spine Information Service. The central database on the Spine containing clinical records for each NHS patient.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>PT</td>
-<td>Preferred term. Each concept has one preferred term in a given language dialect. The preferred term is a common word or phrase used by clinicians to name that concept.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>PTL</td>
-<td>Path To Live.</td>
 <td><br></td>
 </tr>
 <tr>
@@ -996,11 +777,6 @@ It is a shared model between all domains and is the model from which all domains
 <td><br></td>
 </tr>
 <tr>
-<td>Schematron</td>
-<td>The Schematron is an XML structure validation language for making assertions about the presence or absence of patterns in trees. It is a simple and powerful structural schema language.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>SCR (SCRa)</td>
 <td>Summary Care Record. The SCR is intended to support patient care in urgent and emergency care settings. The SCR stores a defined set of key patient data for every patient in England except those who elect not to have one. This data provides a summary record created from information held on GP clinical systems. This summary record helps to ensure a continuity of care across a variety of care settings.
 <br><br>
@@ -1068,16 +844,6 @@ The purpose is to ensure that patient information that might imply their locatio
 <td><a href="https://confluence.ihtsdotools.org/display/DOCECL" target="_blank">More about SNOMED CT ECL</a></td>
 </tr>
 <tr>
-<td>SOA</td>
-<td>Method for systems integration and development that allows different applications to exchange data in a loosely coupled way.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>SOAP</td>
-<td>A protocol specification for exchanging structured information in the implementation of web services. SOAP allows processes running on disparate operating systems (such as Windows and Linux) to communicate using Extensible Markup Language (XML). Since web protocols like HTTP are installed and running on all operating systems, SOAP allows clients to invoke web services and receive responses independent of language and platforms.</td>
-<td><br></td>
-</tr>
-<tr>
 <td>Solution Assurance (SA)
 </td>
 <td>Solution Assurance is a technical assurance function within NHS England, providing expertise to enable national programmes and health and social care organisations to develop effective systems, information and technology. SA contributes to safer treatment and better care within health and social care services in England.
@@ -1098,26 +864,6 @@ It manages the patient’s national Summary Care Records. Clinical information i
 <td><h5 id="spine">Spine Directory Service</h5></td>
 <td>Access accredited system information and messaging endpoint details in the Spine Directory Service (SDS) using our FHIR-conformant API.</td>
 <td><a href="https://digital.nhs.uk/developer/api-catalogue/spine-directory-service-fhir">More information about SDS</a></td>
-</tr>
-<tr>
-<td>Spine Mini Service (SMS)
-</td>
-<td>The Spine Mini Service enables systems to get information from Spine. Connecting an IT system directly to the national Spine requires a secure NHS connection and appropriate levels of compliance with information governance processes. The Spine Mini Service allows secure read-only connections to some national NHS services, meaning:
-<br><br>
-<li>Health and social care organisations can access some types of patient information more easily</li>
-<br>
-<li>Developers can integrate their systems with Spine more easily, reducing barriers to entry for health and care system development</li></td>
-<td><br></td>
-</tr>
-<tr>
-<td>SSB</td>
-<td>Spine Security Broker is a system within the Spine used for managing smartcard authentication.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>SSP</td>
-<td>Spine Secure Proxy is a system within the Spine used to securely broker API calls between external systems.</td>
-<td><br></td>
 </tr>
 <tr>
 <td>STU</td>
@@ -1156,16 +902,6 @@ For example, a baby assigned an NHS number at birth that relates to the wrong mo
 <tbody>
 <tr>
 <td colspan="3"><h2 id="T">T</h2></td>
-</tr>
-<tr>
-<td>Template</td>
-<td>A template is a HL7 Refined Message Information Model which is used to constrain another HL7 model.</td>
-<td><br></td>
-</tr>
-<tr>
-<td>Templated (instance format)</td>
-<td>The format of the xml instance that has been transformed from 'on the wire' format to a conformance format to enable more rigorous testing.</td>
-<td><br></td>
 </tr>
 <tr>
 <td>TMS</td>
