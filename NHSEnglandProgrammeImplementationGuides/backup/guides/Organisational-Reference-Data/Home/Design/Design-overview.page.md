@@ -23,20 +23,17 @@ The Organisational Data Service (ODS) FHIR API, using the FHIR R4 standard, allo
 
 ## Design
 
-Connecting systems will interact with the ODS FHIR API using the below endpoint pattern:
+Connecting systems will interact with the ODS FHIR API using the following environments:
 
-GET [base]/organisation-data-terminology-api/fhir
+Integration environment<br />
+https://int.api.service.nhs.uk/
 
-The value of [base] will be dependent on which system environment the FHIR API exists in. The variances are:
+Sandbox environment<br />
+https://sandbox.api.service.nhs.uk/ 
 
-Integration environment
-https://int.api.service.nhs.uk/organisation-data-terminology-api/fhir
+Production environment<br />
+https://api.service.nhs.uk/ 
 
-Sandbox environment
-https://sandbox.api.service.nhs.uk/organisation-data-terminology-api/fhir
-
-Production environment
-https://api.service.nhs.uk/organisation-data-terminology-api/fhir
 
 ## Modelling
 
