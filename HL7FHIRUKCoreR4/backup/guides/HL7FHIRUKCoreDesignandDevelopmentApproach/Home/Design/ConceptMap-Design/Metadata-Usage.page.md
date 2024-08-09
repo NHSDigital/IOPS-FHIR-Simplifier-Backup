@@ -2,31 +2,7 @@
 
 The list below contains the element differences between the UKCore and HL7. 
 
-### Base Resource Definitions
-
-View further information about <a href="https://www.hl7.org/fhir/R4/resource.html" Target="_blank">FHIR base resource definitions</a>.   
-
-
-<table class="assets">
-  <thead>
-      <tr>
-        <th width="15%">Element name</th>
-        <th width="10%">Base Cardinality</th>
-        <th width="10%">UK Core Cardinality</th>
-        <th width="15%">Type</th>
-        <th width="50%">Definition, Constraints and Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-        <td>id</td>
-        <td>0..1</td>
-        <td>1..1</td>
-        <td>id</td>
-        <td>In the UK Core the format is the following, with the BusinessName in PascalCase:<br/><br/><code>UKCore-<i>&lsqb;BusinessNames&rsqb;</i></code>.</td>
-    </tr>
-    </tbody>
-</table>
+{{page:Home/Design/Metadata-Design/Base-Resource-Metadata.page.md}}
 
 ### DomainResource Resource
 
@@ -122,21 +98,11 @@ View further information about <a href="https://www.hl7.org/fhir/R4/domainresour
     </tbody>
 </table>
 
-### DomainResource Resource
+### ConceptMap Content
 
 View further information about <a href="https://hl7.org/fhir/R4/conceptmap.html" Target="_blank">FHIR Resource ConceptMap - Content</a>.
 
-<table class="assets">
-  <thead>
-      <tr>
-        <th width="15%">Element name</th>
-        <th width="10%">Base Cardinality</th>
-        <th width="10%">UK Core Cardinality</th>
-        <th width="15%">Type</th>
-        <th width="50%">Definition, Constraints and Notes</th>
-    </tr>
-  </thead>
-  <tbody>
+{{page:Home/Design/Metadata-Design/Common-Metadata.page.md}}
     <tr>
         <td>source&lsqb;x&rsqb;</td>
         <td>0..1</td>
