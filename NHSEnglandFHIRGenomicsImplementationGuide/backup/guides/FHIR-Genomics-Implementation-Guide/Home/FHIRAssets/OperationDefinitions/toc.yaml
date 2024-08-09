@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: GenomicsReportingOperations
+  filename: GenomicsReportingOperations.page.md
+- name: lastn
+  filename: lastn.page.md
+- name: document
+  filename: document.page.md

@@ -2,3 +2,5 @@
   filename: Index.page.md
 - name: GraphDefinition-Genomics-Test-Order
   filename: GraphDefinition-Genomics-Test-Order.page.md
+- name: GraphDefinition-Genomics-Test-Result
+  filename: GraphDefinition-Genomics-Test-Result.page.md

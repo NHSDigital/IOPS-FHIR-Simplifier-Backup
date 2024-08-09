@@ -568,9 +568,17 @@ The original requester of the ServiceRequest the Task is fulfilling. Autopopulat
 #### owner
 Autopopulated by the central service if a performer is assigned at Test submission. By default, this will the Home GLH for the submitting organization, unless an alternative is specified. The Home GLH/original performer (managing entity) SHOULD remain the owner for the Process Genomic Test Task, throughout the test order-fulfillment process.
 
-This field can be updated by the organization claiming the task (though this could also be autopopulated if automated per test routing tables are integrated into the central service functionality). Owner SHOULD be populated using organization ODS code references.
+This field can be updated by the organization claiming the task (though this could also be autopopulated if automated per test routing tables are integrated into the central service functionality). Owner SHOULD be populated using organization ODS code references. 
 
-Tasks assigned to a particular organization SHOULD then be searched for using the `owner` search parameter with the `:identifier` modifier i.e. `[base]/Task?owner:identifier=8J834` or `[base]/Task?owner:identifier=https://fhir.nhs.uk/Id/ods-organization-code|8J834`
+**The responsibility for routing/reassigning ownership of Tasks lies with the current owner. The different scenarios for how follow-on routing may be achieved is summarised in the points below:**
+
+* In most cases, by default the test will be routed to the home GLH (or other lab/GLH as dictated by the initial routing table). 
+* This would mean all Tasks by default would have this organization, e.g. home GLH, as the initial owner, it would then be the responsibility of the GLH to reassign tasks to other organizations, where they 'send away' or commission work. 
+* Once that work is complete, the send-away organization can choose to reassign the current Task (where another organization needs to conduct work against the same Task before it can be marked as complete)/or assign the follow-on Task (where the current task can be marked as complete) to the next organization, if this is known. 
+* If the next organization to send work to is unknown, responsibility should lie with the original/previous owner e.g. Home GLH to reassign the task to the next organization that needs to complete work. This should be captured by having the current owner reassign the task back to the GLH (or organization which assigned the task to them) if further work needs to occur within the current task; or the next task in the NGTP moves from the draft state into the requested state (indicating all its prerequisites have been satisfied). The owner of that task, e.g home GLH, then either starts work or assigns this to the relevant organization. 
+* In further phases, a routing advice service may be provided by NHS England to aid organizations in identifying which organization should be assigned, after completing their work.
+
+Tasks assigned to a particular organization SHOULD be searched for using the `owner` search parameter with the `:identifier` modifier i.e. `[base]/Task?owner:identifier=8J834` or `[base]/Task?owner:identifier=https://fhir.nhs.uk/Id/ods-organization-code|8J834`
 ```json
 "owner": {
         "identifier": {

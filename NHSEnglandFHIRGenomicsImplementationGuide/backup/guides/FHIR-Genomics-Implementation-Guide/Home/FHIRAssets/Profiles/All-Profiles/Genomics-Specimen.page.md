@@ -251,6 +251,8 @@ Allows the categorisation of a sample into either tumour or germline. Additional
 <a name="identifier"></a>
 #### identifier
 Multiple identifiers MAY be assigned to a sample as it travels between labs. Each lab SHOULD append their local identifier to the identifier array if needed, ensuring either the system or assigner, is able to disambiguate any identifiers from possibly overlapping numbers from other organizations. Assigner is preferred in this case (see identifier example on the {{pagelink:Genomics-Patient}} page for further guidance)
+
+Note: accessionIdentifier is unused by the Genomic Medicine Service to facilitate movement of samples across organizational boundaries.
 ```json
 "identifier":  [
         {
@@ -270,6 +272,8 @@ If a Specimen has not been collected, the status SHOULD be marked as 'unavailabl
 <a name="type"></a>
 #### type
 The sample type, SNOMED CT preferred. Used to differentiate between raw and extracted (DNA) samples.
+
+**ConceptMaps for the allowed values for primary (raw) and final (extracted DNA) samples upon release of MDSv1.04, to aid identification of whether a sample is primary vs. final** 
 ```json
 "type": {
         "coding":  [
@@ -331,6 +335,14 @@ SHALL be provided. This SHOULD be a reference to the request which initiated col
 Additional information which can be collected about the circumstances under which as sample was collected, if relevant. This include extensions for specialHandling of the sample, e.g. due to high risk of infection, as well as an extension to bodySite to extend the coding to a BodyStructure reference, for more detailed collection of structural information e.g. where tumour morphology and topography need to be collected.
 
 Where the collector is an Organization, or where the individual is not known, ODS codes MAY be used as identifiers in place of SDS-User-IDs. However, if referencing a resource, the PractitionerRole resource SHOULD still be referenced. In this case the `PractitionerRole.identifier` and `PractitionerRole.practitioner` reference would not be filled, leaving only the reference to an Organization from `PractitionerRole.organization`.
+
+**Note on quanitities**
+
+The Specimen.collection.quantity is the amount of the sample collected at collection time. This quantity does not change as the sample is processed.
+
+The Specimen.container.specimenQuantity is the amount of sample remaining in a container, this is equivalent to GEL 1001 banked volume. This value should be updated as the specimen is used.
+
+If a specimen is split, additional specimen resources SHOULD be created (referencing the parent specimen), with individual container.specimenQuantity values.
 ```json
 "collection": {
         "collector": {

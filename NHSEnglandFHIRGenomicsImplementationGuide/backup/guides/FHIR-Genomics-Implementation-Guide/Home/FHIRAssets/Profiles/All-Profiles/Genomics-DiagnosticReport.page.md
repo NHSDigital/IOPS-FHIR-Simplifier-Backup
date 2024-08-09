@@ -129,6 +129,9 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 ### Additional Guidance
 
+- <a href="#extension:recommended-action">extension:recommended-action</a>
+- <a href="#extension:recommended-action">extension:genomic-study</a>
+- <a href="#extension:supporting-info">extension:supporting-info</a>
 - <a href="#basedOn">basedOn</a>
 - <a href="#status">status</a>
 - <a href="#code">code</a>
@@ -139,7 +142,55 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#conclusionCode">conclusionCode</a>
 - <a href="#presentedForm">presentedForm</a>
 - <a href="#result">result</a>
-- <a href="#extension:recommended-action">extension:recommended-action</a>
+
+<a name="extension:recommended-action"></a>
+#### extension:recommended-action
+TBC. Only relevant for structured genomic reports (included in the [Genomics Report IG Genomic Report Profile](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). Reference to Task resource indicating recommended action to take in response to the report's result/conclusion
+```json
+"extension" : [
+        {
+            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
+            "valueReference" : {
+                "reference" : "Task/MedicationRecommendationExample1"
+            }
+        },
+        {
+            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-artifact",
+            "valueRelatedArtifact" : {
+                "type" : "citation",
+                "url" : "https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19)"
+            }
+        }
+    ],
+```
+
+<a name="extension:genomic-study"></a>
+#### extension:genomic-study
+TBC. Only relevant for structured genomic reports (included in the [Genomics Report IG Genomic Report Profile](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). Reference to Procedure resources indicating the analyses performed as part the genomic test order.
+```json
+"extension" : [
+    {
+      "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference",
+      "valueReference" : {
+        🔗 "reference" : "Procedure/PGXGenomicStudy"
+      }
+    }
+  ]
+```
+
+<a name="extension:supporting-info"></a>
+#### extension:supporting-info	
+TBC. Only relevant for structured genomic reports (included in the [Genomics Report IG Genomic Report Profile](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). Reference to the genomic data files analysed as part of the test order, forming the report. Reference to DocumentReference resource which links to the binary data file.
+```json
+"extension" : [
+        {
+            "url" : "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+            "valueReference" : {
+                "reference" : "DocumentReference/DocumentReference-PharmCAT-Example"
+            }
+        }
+    ],
+```
 
 <a name="basedOn"></a>
 #### basedOn
@@ -272,25 +323,4 @@ Raw results included within the report, to aid interpretation. These SHOULD take
             "reference" : "Observation/OverallInterpExample1"
         }
     ]
-```
-
-<a name="extension:recommended-action"></a>
-#### extension:recommended-action
-TBC. Only relevant for structured genomic reports. Reference to Task resource indicating recommended action to take in response to the report's result/conclusion
-```json
-"extension" : [
-        {
-            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
-            "valueReference" : {
-                "reference" : "Task/MedicationRecommendationExample1"
-            }
-        },
-        {
-            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-artifact",
-            "valueRelatedArtifact" : {
-                "type" : "citation",
-                "url" : "https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19)"
-            }
-        }
-    ],
 ```
