@@ -1496,52 +1496,6 @@
         {
           "item": [
             {
-              "item": [
-                {
-                  "type": "string",
-                  "extension": [
-                    {
-                      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-                      "valueBoolean": true
-                    }
-                  ],
-                  "linkId": "5411575407860",
-                  "code": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "315354004",
-                      "display": "Country of birth (observable entity)"
-                    }
-                  ],
-                  "text": "Country of birth (not Home Nations)",
-                  "required": true,
-                  "repeats": false
-                },
-                {
-                  "type": "string",
-                  "linkId": "815946439143",
-                  "code": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "169812000",
-                      "display": "Place of birth (observable entity)"
-                    }
-                  ],
-                  "text": "Place of birth"
-                }
-              ],
-              "type": "group",
-              "linkId": "4918792971884",
-              "text": "Enter details of where you were born",
-              "enableWhen": [
-                {
-                  "question": "630742013280",
-                  "operator": "=",
-                  "answerBoolean": true
-                }
-              ]
-            },
-            {
               "type": "date",
               "extension": [
                 {
@@ -1763,6 +1717,62 @@
                   }
                 }
               ]
+            },
+            {
+              "item": [
+                {
+                  "type": "string",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                      "valueBoolean": true
+                    }
+                  ],
+                  "linkId": "5411575407860",
+                  "code": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "315354004",
+                      "display": "Country of birth (observable entity)"
+                    }
+                  ],
+                  "text": "Country of birth (not Home Nations)",
+                  "enableWhen": [
+                    {
+                      "question": "1651487045545",
+                      "operator": "=",
+                      "answerCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "74964007",
+                        "display": "Other"
+                      }
+                    },
+                    {
+                      "question": "630742013280",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ],
+                  "enableBehavior": "any",
+                  "required": true,
+                  "repeats": false
+                },
+                {
+                  "type": "string",
+                  "linkId": "815946439143",
+                  "code": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "169812000",
+                      "display": "Place of birth (observable entity)"
+                    }
+                  ],
+                  "text": "Place of birth"
+                }
+              ],
+              "type": "group",
+              "linkId": "4918792971884",
+              "text": "Enter details of where you were born"
             }
           ],
           "type": "boolean",
