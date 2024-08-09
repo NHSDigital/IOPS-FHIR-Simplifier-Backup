@@ -1,10 +1,11 @@
 {
   "resourceType": "GraphDefinition",
-  "id": "GraphDefinition-Genomics-Test-Order",
+  "id": "GraphDefinition-Genomics-test-order",
   "url": "https://fhir.nhs.uk/GraphDefinition/genomics-test-order",
   "name": "GenomicsTestOrder",
+  "version": "0.2.0",
   "status": "draft",
-  "date": "2024-05-16",
+  "date": "2024-08-09",
   "publisher" : "NHS England",
   "description": "GraphDefinition for defining and retrieving the full set of resources relevant to a Genomic Test Order",
   "start": "ServiceRequest",
@@ -36,10 +37,10 @@
       "path": "ServiceRequest.subject",
       "description": "Link to patient the request is for",
       "min": 1,
-      "max": 1,
+      "max": "1",
       "target": [
         {
-          "type": "Patient",
+          "type": "Patient"
         }
       ]
     },
@@ -47,7 +48,7 @@
       "path": "ServiceRequest.requester",
       "description": "Link to the requester of the genomic test order",
       "min": 1,
-      "max": 1,
+      "max": "1",
       "target": [
         {
           "type": "PractitionerRole"
@@ -58,7 +59,7 @@
       "path": "ServiceRequest.reasonReference",
       "description": "Optional link to the primary condition constituting the reason for testing",
       "min": 0,
-      "max": 1,
+      "max": "1",
       "target": [
         {
           "type": "Condition"
@@ -77,7 +78,7 @@
             {
               "description": "Patient linked to this RelatedPerson",
               "min": 1,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Patient",
@@ -94,7 +95,7 @@
               "path": "Observation.extension.valueReference",
               "description": "Optional link to body structure related to the observation",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "BodyStructure"
@@ -105,7 +106,7 @@
               "path": "Observation.focus",
               "description": "Optional link to specimen the observation is about, if relevant",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Specimen"
@@ -116,7 +117,7 @@
               "path": "Observation.performer",
               "description": "Optional link to actor who performed the observation (could be Patient, PractitionerRole or RelatedPerson)",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Resource"
@@ -143,7 +144,7 @@
               "path": "Condition.recorder",
               "description": "Optional link to actor which recorded condition (could be Patient, PreactitionerRole or RelatedPerson)",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Resource"
@@ -154,7 +155,7 @@
               "path": "Condition.asserter",
               "description": "Optional link to actor which asserted condition (could be Patient, PreactitionerRole or RelatedPerson)",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Resource"
@@ -208,7 +209,7 @@
               "path": "Consent.sourceReference",
               "description": "Optional link to structured QuestionnaireResponse or DocumentReference for RoD/consent forms",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "QuestionnaireResponse",
@@ -217,7 +218,7 @@
                       "path": "QuestionnaireResponse.author",
                       "description": "Author of the RoD, most likely a PractitionerRole resource (if a reference)",
                       "min": 1,
-                      "max": 1,
+                      "max": "1",
                       "target": [
                         {
                           "type": "PractitionerRole"
@@ -228,7 +229,7 @@
                       "path": "QuestionnaireResponse.source",
                       "description": "Source of the RoD (could be Patient, PractitionerRole or RelatedPerson)",
                       "min": 1,
-                      "max": 1,
+                      "max": "1",
                       "target": [
                         {
                           "type": "Resource"
@@ -246,7 +247,7 @@
               "path": "Consent.patient",
               "description": "Link to Patient resource (relevant for instances where the consent does not apply to the proband)",
               "min": 1,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Patient"
@@ -262,7 +263,7 @@
               "path": "Specimen.subject",
               "description": "Link to the patient the specimen is from",
               "min": 1,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Patient"
@@ -273,7 +274,7 @@
               "path": "Specimen.parent",
               "description": "Link to parent specimen resource",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Specimen"
@@ -284,7 +285,7 @@
               "path": "Specimen.collection.collector",
               "description": "Link to collector of the specimen",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "PractitionerRole"
@@ -296,7 +297,7 @@
               "sliceName": "bodySiteReference",
               "description": "Link to the body structure detailing the morphology and topography of the specimen",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "BodyStructure"
@@ -320,7 +321,7 @@
               "path": "Specimen.subject",
               "description": "Link to the patient the specimen is from",
               "min": 1,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Patient"
@@ -331,7 +332,7 @@
               "path": "Specimen.parent",
               "description": "Link to parent specimen resource",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "Specimen"
@@ -342,7 +343,7 @@
               "path": "Specimen.collection.collector",
               "description": "Link to collector of the specimen",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "PractitionerRole"
@@ -354,7 +355,7 @@
               "sliceName": "bodySiteReference",
               "description": "Link to the body structure detailing the morphology and topography of the specimen",
               "min": 0,
-              "max": 1,
+              "max": "1",
               "target": [
                 {
                   "type": "BodyStructure"
@@ -362,6 +363,17 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "description": "Specimen resources referencing this ServiceRequest",
+      "min": 0,
+      "max": "*",
+      "target": [
+        {
+          "type": "Specimen",
+          "params": "request={ref}"
         }
       ]
     }

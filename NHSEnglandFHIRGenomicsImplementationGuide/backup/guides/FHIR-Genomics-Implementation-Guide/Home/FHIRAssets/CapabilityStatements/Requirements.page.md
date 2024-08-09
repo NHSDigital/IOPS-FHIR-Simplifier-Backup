@@ -1,3 +1,3 @@
 ## {{page-title}}
 
-{{render:CapabilityStatement/genomics-requirements}}
+{{render:CapabilityStatement/CapabilityStatement-genomics-requirements}}

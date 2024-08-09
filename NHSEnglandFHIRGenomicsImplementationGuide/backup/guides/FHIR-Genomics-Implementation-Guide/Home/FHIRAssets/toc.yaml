@@ -11,7 +11,7 @@
 - name: ConceptMaps
   filename: ConceptMaps.page.md
 - name: OperationDefinitions
-  filename: OperationDefinitions.page.md
+  filename: OperationDefinitions
 - name: CapabilityStatements
   filename: CapabilityStatements
 - name: MessageDefinitions

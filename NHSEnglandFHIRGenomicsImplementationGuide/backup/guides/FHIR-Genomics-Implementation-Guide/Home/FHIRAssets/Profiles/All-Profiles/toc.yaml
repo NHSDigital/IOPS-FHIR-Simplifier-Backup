@@ -6,6 +6,8 @@
   filename: Genomics-BodyStructure.page.md
 - name: Genomics-Bundle
   filename: Genomics-Bundle.page.md
+- name: Genomics-Composition
+  filename: Genomics-Composition.page.md
 - name: Genomics-Condition
   filename: Genomics-Condition.page.md
 - name: Genomics-Consent

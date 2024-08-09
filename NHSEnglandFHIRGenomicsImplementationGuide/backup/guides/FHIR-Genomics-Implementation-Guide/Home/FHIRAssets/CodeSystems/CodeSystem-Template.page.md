@@ -26,9 +26,9 @@
 {{json}}
 </div>
 
+<!--
 <div id="Feedback" class="tabcontent">
   <h3>Feedback</h3>
 <h4>Click here to: {{page:Home/Template/FeedbackLink.page.md}}</h4>
 </div>
-
----
+-->

@@ -24,6 +24,8 @@
   filename: Genomic-ReasonforTesting.page.md
 - name: Genomic-Sample-State
   filename: Genomic-Sample-State.page.md
+- name: Genomic-specimen-collection-specialhandling
+  filename: Genomic-specimen-collection-specialhandling.page.md
 - name: Genomic-Test-Types
   filename: Genomic-Test-Types.page.md
 - name: Genomic-TypeOf-ReAnalysisTest
