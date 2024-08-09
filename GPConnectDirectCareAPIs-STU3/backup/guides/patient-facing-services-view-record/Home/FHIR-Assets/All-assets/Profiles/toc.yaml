@@ -70,3 +70,9 @@
   filename: Profile--GPConnect-Task-1
 - name: 'Profile: Binary'
   filename: Profile--Binary
+- name: 'Profile: CareConnect-FamilyMemberHistory'
+  filename: Profile-CareConnect-FamilyMemberHistory
+- name: 'Profile: CareConnect-EpisodeOfCare-1'
+  filename: Profile-CareConnect-EpisodeOfCare-1
+- name: 'Profile: CareConnect-Procedure-1'
+  filename: Profile-CareConnect-Procedure-1
