@@ -1,5 +1,7 @@
 - name: Profiles
   filename: Profiles.page.md
+- name: Extensions
+  filename: Extensions.page.md
 - name: CodeSystems
   filename: CodeSystems.page.md
 - name: ValueSets
