@@ -1,0 +1,99 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "genomics-fetal-maternal-screening-genotype",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-fetal-maternal-screening-genotype",
+  "version": "0.1.0",
+  "name": "GenomicsFetalMaternalScreeningGenotype",
+  "title": "Genomics Fetal Maternal Screening Genotype",
+  "status": "draft",
+  "date": "2024-08-08T18:15:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
+  "purpose": "ConceptMap used for the translation and recording of concepts for fetal maternal screening genotype. This is intended for the element Condition.clinicalStatus",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "targetUri": "http://snomed.info/sct",
+  "group": [
+    {
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "alpha-beta-thalassaemia",
+          "display": "Alpha Beta Thalassaemia",
+          "target": [
+            {
+              "code": "234389001",
+              "display": "Alpha-beta thalassemia (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HbAC",
+          "display": "HbAC",
+          "target": [
+            {
+              "code": "76050008",
+              "display": "Hemoglobin C trait (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HbAS",
+          "display": "HbAS",
+          "target": [
+            {
+              "code": "417357006",
+              "display": "Sickling disorder due to haemoglobin S",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HbSC",
+          "display": "HbSC",
+          "target": [
+            {
+              "code": "35434009",
+              "display": "Sickle cell-hemoglobin C disease (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HbSS",
+          "display": "HbSS",
+          "target": [
+            {
+              "code": "127040003",
+              "display": "Sickle cell-hemoglobin SS disease (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "display": "OTHER",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

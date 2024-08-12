@@ -94,7 +94,25 @@
 		},
 		{
 			"reference": "Procedure/Procedure-InVitroFertilisation-Example"
-		}
+		},
+    {
+      "reference": "RelatedPerson/RelatedPerson-RyanneBoulder-Example"
+    },
+    {
+      "reference": "Patient/Patient-RyanneBoulder-Example"
+    },
+    {
+      "reference": "RelatedPerson/RelatedPerson-RyanneBoulderPartner-Example"
+    },
+    {
+      "reference": "Patient/Patient-RyanneBoulderPartner-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-BloodEDTA-Example"
+    },
+    {
+      "reference": "Specimen/Specimen-RyanneBoulderSaliva-Example"
+    }
 	],
 	"note": [
 		{

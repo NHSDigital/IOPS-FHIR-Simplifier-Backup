@@ -77,16 +77,16 @@ GET of resources linked to ServiceRequest
 
 ### 3. Accept Test request and complete prep if specimen/test request meets criteria
 
-POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-SufficientSample-Example}}
+PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-SufficientSample-Example}}
 
 Or
 
 ### 4. Set status to awaiting further information or Reject in the event criteria is not met
 
-POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderRejected-CancerSolidTumor-Example}}
+PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderRejected-CancerSolidTumor-Example}}
 
 and {{pagelink:Home/Examples/Task/Task-NonWGSRareDiseaseTestOrder-InsufficientSample-Example.page.md}}
 
 ### 5. CPGC to forward (test request req details electronically) & sample to GLH once prep is complete to progress the request
 
-Post of {{pagelink:Task-NonWGSRareDiseaseTestOrderForwarded-SolidTumor-Example}}
+PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderForwarded-SolidTumor-Example}}

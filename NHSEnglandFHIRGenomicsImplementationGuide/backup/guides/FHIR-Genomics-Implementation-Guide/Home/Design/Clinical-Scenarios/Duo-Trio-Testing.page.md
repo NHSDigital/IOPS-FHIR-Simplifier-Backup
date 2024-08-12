@@ -115,7 +115,7 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 
 ### 2. Indicates awaiting sample/ ROD from father and changes request to awaiting further information
 
-POST of {{pagelink:Task-WGSRareDiseaseTestOrderHold-TrioTestingProband-Example}}
+PUTT of {{pagelink:Task-WGSRareDiseaseTestOrderHold-TrioTestingProband-Example}}
 
 ### 3. When all samples/ ROD arrives at the lab, test request is triaged and accepted
 
@@ -131,7 +131,7 @@ Receipt of:
 
 {{pagelink:Provenance-WGSTestOrderForm-TrioTestingProbandFather-Example}} (Provenance to track reason for change to SR)
 
-POST of {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-TrioTestingProband-Example}}
+PUT of {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-TrioTestingProband-Example}}
 
 AND
 

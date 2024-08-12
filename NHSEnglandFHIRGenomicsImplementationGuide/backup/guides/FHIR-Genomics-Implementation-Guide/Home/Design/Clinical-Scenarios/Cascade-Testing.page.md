@@ -67,13 +67,13 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 
 ### 2. Modifies the test request with the appropriate additional information and accepts the test request
 
-POST of {{pagelink:ServiceRequest-SavedTestOrderUpdated-CascadeTesting-Example}}
+PUT of {{pagelink:ServiceRequest-SavedTestOrderUpdated-CascadeTesting-Example}}
 
 (and Provenance resource to indicate reason for change)
 
 ### 3. Once analysis is complete, the lab issues the final report to the requester
 
-POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderCompleted-CascadeTesting-Example}} with reference to report resource
+PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderCompleted-CascadeTesting-Example}} with reference to report resource
 
 ### The requester:
 

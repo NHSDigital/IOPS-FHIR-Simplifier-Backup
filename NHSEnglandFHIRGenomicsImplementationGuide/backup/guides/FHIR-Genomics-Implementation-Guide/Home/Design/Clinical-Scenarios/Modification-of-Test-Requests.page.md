@@ -60,7 +60,7 @@ This would return a searchset bundle containing the ServiceRequest: {{pagelink:S
 
 This is recorded through marking the ServiceRequest.status as revoked.
 
-POST of {{pagelink:ServiceRequest-NonWGSTestOrderFormUpdated-Cancellation-Example}}
+PUT of {{pagelink:ServiceRequest-NonWGSTestOrderFormUpdated-Cancellation-Example}}
 
 ### 4. Requester or Lab indicates reason for cancellation
 

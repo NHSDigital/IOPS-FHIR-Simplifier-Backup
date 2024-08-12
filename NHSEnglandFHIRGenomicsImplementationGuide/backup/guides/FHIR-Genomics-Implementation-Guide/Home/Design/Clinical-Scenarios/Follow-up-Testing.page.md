@@ -54,7 +54,7 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 
 ### 2. Accepts the test request
 
-POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-FollowupTest-Example}}
+PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-FollowupTest-Example}}
 
 ### 3. Lab indicates that further testing is required
 
@@ -64,7 +64,7 @@ This could be added as a note on the original ServiceRequest or Task which promp
 
 Creation of new ServiceRequest through post of {{pagelink:ServiceRequest-NonWGSTestOrderForm-NewFollowupTest-Example}}
 
-According to scenario, previous test is cancelled (indicated by POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderCancelled-FollowupTest-Example}})
+According to scenario, previous test is cancelled (indicated by PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderCancelled-FollowupTest-Example}})
 
 ### 5. Lab issues report for patient
 

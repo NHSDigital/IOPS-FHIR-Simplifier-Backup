@@ -1,0 +1,154 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "genomics-risk-reason-for-specimen-specialhandling",
+  "url": "https://fhir.nhs.uk/ConceptMap/risk-reason-for-specimen-specialhandling",
+  "version": "0.1.0",
+  "name": "GenomicsRiskReasonForSpecimenSpecialHandling",
+  "title": "Genomics Risk Reason for Specimen Special Handling",
+  "status": "draft",
+  "date": "2024-08-09T18:45:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
+  "purpose": "ConceptMap used for the translation and recording of the risk reason for specimen special handling . This is intended for the element Specimen.collection.extension:specimen-specialHandling.valueCoding.code",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "targetUri": "http://snomed.info/sct",
+  "group": [
+    {
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "anthrax",
+          "display": "Anthrax",
+          "target": [
+            {
+              "code": "409498004",
+              "display": "Anthrax (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Brucellosis",
+          "display": "Brucellosis",
+          "target": [
+            {
+              "code": "75702008",
+              "display": "Brucellosis (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ecoli0157",
+          "display": "E coli 0157",
+          "target": [
+            {
+              "code": "127531000119106",
+              "display": "Infection caused by Escherichia coli O157 (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "haemolytic-uraemic-syndrome",
+          "display": "Haemolytic Uraemic Syndrome",
+          "target": [
+            {
+              "code": "111407006",
+              "display": "Hemolytic uremic syndrome (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hiv-infection",
+          "display": "HIV Infection",
+          "target": [
+            {
+              "code": "86406008",
+              "display": "Human immunodeficiency virus infection (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "iv-drug-users",
+          "display": "IV Drug Users",
+          "target": [
+            {
+              "code": "228388006",
+              "display": "Intravenous drug user (finding)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "jakob-creutzfeldt-disease",
+          "display": "Jakob-Creutzfeldt Disease",
+          "target": [
+            {
+              "code": "792004",
+              "display": "Jakob-Creutzfeldt disease (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "melioidosis",
+          "display": "Melioidosis",
+          "target": [
+            {
+              "code": "428111003",
+              "display": "Melioidosis (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tuberculosis",
+          "display": "Tuberculosis",
+          "target": [
+            {
+              "code": "56717001",
+              "display": "Tuberculosis (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "typhoid-fever",
+          "display": "Typhoid Fever",
+          "target": [
+            {
+              "code": "4834000",
+              "display": "Typhoid fever (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "viral-hepatitis",
+          "display": "Viral Hepatitis",
+          "target": [
+            {
+              "code": "3738000",
+              "display": "Viral hepatitis (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

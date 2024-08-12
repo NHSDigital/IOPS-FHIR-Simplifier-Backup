@@ -56,4 +56,4 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 
 ### 2. Accepts the test request
 
-POST of {{pagelink:Task-NonWGSTestOrderAccepted-VariantReinterpretation-Example}}
+PUT of {{pagelink:Task-NonWGSTestOrderAccepted-VariantReinterpretation-Example}}
