@@ -24,4 +24,3 @@ Refer to the following for a description of how the profiles may be used to form
 
 * {{pagelink:BuildContructPathologyRequestBundle}}
 * {{pagelink:BuildContructPathologyReportBundle}}
-

@@ -37,7 +37,6 @@ The `ValueSets` that have been created specifically for use in pathology are lis
 <br>
 
 ### UK Core Pathology And Laboratory Medicine Procedures
-
 <div>
 <div class="tab">
  <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
