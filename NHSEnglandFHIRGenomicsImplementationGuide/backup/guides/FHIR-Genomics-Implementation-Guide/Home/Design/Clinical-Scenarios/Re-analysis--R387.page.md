@@ -49,7 +49,7 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 
 #### 2. Accept test request for re-analysis
 
-POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-Reanalysis-Example}}
+PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-Reanalysis-Example}}
 
 ### Requester:
 

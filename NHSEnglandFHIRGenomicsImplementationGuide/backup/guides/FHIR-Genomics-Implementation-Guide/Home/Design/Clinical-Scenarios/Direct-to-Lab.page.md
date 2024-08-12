@@ -61,12 +61,12 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 
 ### 2. Triages the test request as Awaiting further information (sample/ROD)
 
-POST of {{pagelink:Task-WGSRareDiseaseTestOrderHold-DirectToLab-Example}}
+PUT of {{pagelink:Task-WGSRareDiseaseTestOrderHold-DirectToLab-Example}}
 
 
 ### 1. Requesting Team completes Record of Discussion
 
-POST of Consent, RoD and update to ServiceRequest to add supportingInfo link:
+POST of Consent, RoD and update to ServiceRequest to add supportingInfo link (in Transaction Bundle):
 
 (note examples reference incorrect patient but structure remains the same)
 
@@ -86,7 +86,7 @@ POST of Specimen resources and GET from Lab
 
 ### 3. Accepts the test request once sample is aligned with the test request at the lab
 
-POST of {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-DirectToLab-Example}}
+PUT of {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-DirectToLab-Example}}
 
 
 ### 1. Requester view status of test (complete)

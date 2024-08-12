@@ -51,7 +51,7 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 
 ### 2. Accepts the test request and indicates the material is to be stored
 
-POST of {{pagelink:Task-TestOrderFormAccepted-StorageOfMaterial-Example}}
+PUT of {{pagelink:Task-TestOrderFormAccepted-StorageOfMaterial-Example}}
 
 ### 3. Lab completes test request once material is stored
 
@@ -68,7 +68,7 @@ POST of test order bundle with {{pagelink:ServiceRequest-NonWGSTestOrderForm-Usi
 
 ### 3. Lab recieves test request, accepts test request once sample and request are aligned
 
-POST of {{pagelink:Task-NonWGSTestOrderFormAccepted-UsingStoredSample-Example}}
+PUTT of {{pagelink:Task-NonWGSTestOrderFormAccepted-UsingStoredSample-Example}}
 
 and 
 

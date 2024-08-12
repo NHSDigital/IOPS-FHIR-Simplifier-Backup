@@ -62,19 +62,19 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 
 #### 2. Accepts the test request
 
-POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-Example}}
+PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-Example}}
 
 OR
 
 #### 3. Rejects the test request 
 
-POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderRejected-Example}}
+PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderRejected-Example}}
 
 OR
 
 #### 4. Modifies the test request
 
-POST of {{pagelink:ServiceRequest-SavedTestOrderUpdated-Example}}
+PUT of {{pagelink:ServiceRequest-SavedTestOrderUpdated-Example}}
 
 ### View of Status History
 

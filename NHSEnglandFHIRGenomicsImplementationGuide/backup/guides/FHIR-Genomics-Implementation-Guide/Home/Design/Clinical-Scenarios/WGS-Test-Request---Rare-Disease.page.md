@@ -72,7 +72,7 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 
 #### 2. Places the test request as awaiting further information - Record of Discussion
 
-POST of {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-Example}}
+PUT of {{pagelink:Task-WGSRareDiseaseTestOrderAccepted-Example}}
 
 #### 3. The lab receives the Record of Discussion, Sample and changes status from Awaiting Further Information to Accepted
 
@@ -80,7 +80,7 @@ POST of {{pagelink:Bundle-WGSRoD-Example}} and subsequent marking of Task as acc
 
 #### 4. The lab reviews the completed WGS Test Order Form, Sample and Record of Discussion and forwards the components to NGIS 
 
-POST of {{pagelink:Task-WGSRareDiseaseTestOrderForwarded-Example}}
+PUT of {{pagelink:Task-WGSRareDiseaseTestOrderForwarded-Example}}
 
 ### View of Status History
 

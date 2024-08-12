@@ -64,10 +64,10 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 
 ### 2. Accepts the test request
 
-POST of Task with status=accepted
+PUT of Task with status=accepted
 
 ### 3. Lab indicates in LIMS that request is to be sent abroad (For e.g. Genomic Health- U.S.A)
 
-POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderForwarded-OutOfCountry-Example}}
+PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderForwarded-OutOfCountry-Example}}
 
 Note: in cases where the responsible owner of a Task is not capbable of providing status updates to the broker, it is the responsibility of the referring organization to provide updates on the owners behalf and reallocate Tasks once ownership changes.

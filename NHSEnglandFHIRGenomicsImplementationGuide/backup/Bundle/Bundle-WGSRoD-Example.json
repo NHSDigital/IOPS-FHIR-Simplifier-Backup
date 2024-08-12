@@ -50,8 +50,8 @@
         }
 			},
 			"request": {
-        "method": "POST",
-        "url": "Consent"
+        "method": "PUT",
+        "url": "Consent/Consent-RoDToFollow-Example"
       }
 		},
 		{

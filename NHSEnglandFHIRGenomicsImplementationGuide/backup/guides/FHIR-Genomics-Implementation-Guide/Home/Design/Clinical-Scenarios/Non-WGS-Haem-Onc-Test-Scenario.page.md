@@ -89,7 +89,7 @@ GET /Task by Id and referenced ServiceRequest for view of individual.
 Updated ServiceRequest:
 {{pagelink:ServiceRequest-NonWGSTestOrderForm-HaemOncologyUpdated-Example}}
 
-POST of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-HaemOncology-Example}}
+PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderAccepted-HaemOncology-Example}}
 
 ### SIHMDS Consultant
 
