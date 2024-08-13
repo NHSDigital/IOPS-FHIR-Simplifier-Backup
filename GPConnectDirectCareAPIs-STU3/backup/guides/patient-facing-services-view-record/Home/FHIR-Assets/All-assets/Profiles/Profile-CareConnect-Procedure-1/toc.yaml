@@ -1,2 +1,6 @@
 - name: Index
   filename: Index.page.md
+- name: Related links
+  filename: Related-links.page.md
+- name: Data model element usage
+  filename: Data-model-element-usage.page.md
