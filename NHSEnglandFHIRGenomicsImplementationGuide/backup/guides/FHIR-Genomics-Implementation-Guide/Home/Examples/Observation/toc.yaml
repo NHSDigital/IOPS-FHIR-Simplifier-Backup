@@ -100,3 +100,5 @@
   filename: Observation-WhiteBloodCell-Example.page.md
 - name: Observation-SampleCellContent-Example
   filename: Observation-SampleCellContent-Example.page.md
+- name: Observation-HistoryOfFetalLoss-Example
+  filename: Observation-HistoryOfFetalLoss-Example.page.md

@@ -180,17 +180,13 @@
         "link": [
           {
             "other": {
-              "identifier": {
-                "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
-                "value": "FT-RWT13521",
-                "assigner": {
-                  "identifier": {
-                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                    "value": "RAX"
-                  }
-                }
-              },
               "reference": "https://api.service.nhs.uk/personal-demographics/FHIR/R4/Patient/9449307687"
+            },
+            "type": "seealso"
+          },
+          {
+            "other": {
+              "reference": "RelatedPerson/RelatedPerson-RyanneBoulder-Example"
             },
             "type": "seealso"
           }
@@ -244,7 +240,15 @@
             }
           }
         ],
-        "gender": "unknown"
+        "gender": "unknown",
+        "link": [
+          {
+            "other": {
+              "reference": "RelatedPerson/RelatedPerson-RyanneBoulderPartner-Example"
+            },
+            "type": "seealso"
+          }
+        ]
       },
       "request": {
         "method": "POST",
@@ -411,6 +415,37 @@
       "request": {
         "method": "POST",
         "url": "ServiceRequest"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/Observation-HistoryOfFetalLoss-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "Observation-HistoryOfFetalLoss-Example",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "161743003",
+              "display": "Past pregnancy history of stillbirth (situation)"
+            }
+          ],
+          "text": "Is the testing for a fetal loss from 24+0 or more weeks of gestation?"
+        },
+        "subject": {
+          "reference": "Patient/Patient-RyanneBoulder-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307687"
+          }
+        },
+        "effectiveDateTime": "2023-09-25",
+        "valueBoolean": false
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
       }
     },
     {
@@ -721,14 +756,14 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/Specimen/Specimen-RyanneBoulderParnerSaliva-Example",
+      "fullUrl": "http://example.org/fhir/Specimen/Specimen-RyanneBoulderSaliva-Example",
       "resource": {
         "resourceType": "Specimen",
-        "id": "Specimen-RyanneBoulderParnerSaliva-Example",
+        "id": "Specimen-RyanneBoulderSaliva-Example",
         "identifier": [
           {
-            "system": "https://fhir.kingstonhospital.nhs.uk//Id/specimenId",
-            "value": "ROA-69050-FTH-RWT13521"
+            "system": "https://fhir.kingstonhospital.nhs.uk/Id/specimenId",
+            "value": "ROA-69050-216739"
           }
         ],
         "status": "available",
@@ -742,11 +777,15 @@
           ]
         },
         "subject": {
-          "reference": "Patient/Patient-RyanneBoulderPartner-Example"
+          "reference": "Patient/Patient-RyanneBoulder-Example",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307687"
+          }
         },
         "container": [
           {
-            "description": "Container:ROA-69050-FTH-RWT13521 contains Saliva for Father"
+            "description": "Container:ROA-69050-216739 contains Saliva for Mother"
           }
         ],
         "request": [
@@ -765,6 +804,12 @@
       "resource": {
         "resourceType": "RelatedPerson",
         "id": "RelatedPerson-RyanneBoulder-Example",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307687"
+          }
+        ],
         "patient": {
           "identifier": {
             "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
@@ -799,6 +844,18 @@
       "resource": {
         "resourceType": "RelatedPerson",
         "id": "RelatedPerson-RyanneBoulderPartner-Example",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+            "value": "P-RWT13521",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RAX"
+              }
+            }
+          }
+        ],
         "patient": {
           "identifier": {
             "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
