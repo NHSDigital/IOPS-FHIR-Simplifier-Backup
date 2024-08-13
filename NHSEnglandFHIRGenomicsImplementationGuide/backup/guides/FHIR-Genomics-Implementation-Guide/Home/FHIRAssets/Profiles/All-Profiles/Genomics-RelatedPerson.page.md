@@ -165,32 +165,47 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="patient"></a>
 #### patient
-SHALL be provided. This SHOULD be a reference to the Patient resource or the identifier, NHS number, for the patient.
+SHALL be provided. This SHOULD be a reference to the Patient resource or the identifier, e.g. NHS number, for the patient constituting the target of the relationship.  This can be visualised using the nomenclature: 
+
+```
+{Source (identifier)} is the {Relationship type (relationship)} of {Target (patient)}
+'Ryanne Boulder' is the 'natural mother' of 'Fetus of Ryanne Boulder'
+```
+
+In this case the fetal identifier should be used in the patient element.
 ```json
 "patient": {
-        "identifier": {
-            "system": "https://fhir.nhs.uk/Id/nhs-number",
-            "value": "9999999999"
-        }
-    },
+    "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+    "value": "FT-RWT13521",
+    "assigner": {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RAX"
+      }
+    }
+  },
 ```
 
 <a name="identifier"></a>
 #### identifier
-SHALL be provided. This SHOULD be NHS number or local identifier (if NHS number is unavailable e.g. for non UK residents). If a local identifier is used, an assigner SHALL be provided.
-The RelatedPerson.identifier field SHALL match the identifier used for a FamilyMemberHistory resource if the same person is being referenced.
+SHALL be provided. This SHOULD be NHS number or local identifier (if NHS number is unavailable e.g. for non UK residents) for the source of the relationship. This can be visualised using the nomenclature: 
+
+```
+{Source (identifier)} is the {Relationship type (relationship)} of {Target (patient)}
+'Ryanne Boulder' is the 'natural mother' of 'Fetus of Ryanne Boulder'
+```
+
+In this case the Ryanne Boulder's identifier should be used for the RelatedPerson.identifier.
+
+If a local identifier is used, an assigner SHALL be provided.
+The RelatedPerson.identifier field SHALL match the identifier used for a FamilyMemberHistory or Patient resource if these resources are about the same person.
 ```json
-   "identifier": {
-      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
-      "value": "FT-RWT13521",
-      "assigner": {
-        "identifier": {
-          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-          "value": "RAX"
-        }
+   "identifier": [
+      {
+        "system": "https://fhir.nhs.uk/Id/nhs-number",
+        "value": "9999999999"
       }
-    }
-  }
+    ],
 ```
 
 <a name="relationship"></a>

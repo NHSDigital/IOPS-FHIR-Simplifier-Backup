@@ -295,6 +295,11 @@ For new observations which invalidate previous observations made about a patient
                     {{pagelink:Observation-SampleCellContent-Example}}
                     </td>
                 </tr>
+                 <tr>
+                    <td>
+                    {{pagelink:Observation-HistoryOfFetalLoss-Example}}
+                    </td>
+                </tr>
             </table>
         </div>
         <div id="Constraints" role="tabpanel" class="tab-pane">
