@@ -33,6 +33,12 @@ More information about the extensions can be found using the links below.
 <td>{{pagelink:Extension-UKCore-DiagnosticReportSupportingInfo}}</td>
 <td>Comments about the diagnostic report. This is a R5 backport, for more details, see {{pagelink:Library-Extensions-PreAdopt}}.</td>
 </tr>
+<tr>
+<td>supportingInfoR5</td>
+<td>DiagnosticReport</td>
+<td>{{pagelink:Extension-UKCore-DiagnosticReportMediaLink}}</td>
+<td>Comments about the diagnostic report. This is a R5 backport, for more details, see {{pagelink:Library-Extensions-PreAdopt}}.</td>
+</tr>
 </table>
 
 ---
