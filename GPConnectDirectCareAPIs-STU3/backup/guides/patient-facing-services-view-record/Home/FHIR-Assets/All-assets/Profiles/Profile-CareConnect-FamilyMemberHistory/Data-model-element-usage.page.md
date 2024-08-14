@@ -23,7 +23,7 @@
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
-        </tr>>
+        </tr>
         <!-- identifier -->
         <tr>
             <td>identifier</td>
@@ -31,12 +31,12 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- accessionIdentifier -->
+        <!-- definition -->
         <tr>
-            <td>accessionIdentifier</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td>definition</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-times text-danger"></i></td>
         </tr>
         <!-- status -->
         <tr>
@@ -45,93 +45,93 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- type -->
+        <!-- notDone -->
         <tr>
-            <td>type</td>
+            <td>notDone</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- subject -->
+        <!-- notDoneReason -->
         <tr>
-            <td>subject</td>
+            <td>notDoneReason</td>
             <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- receivedTime -->
+        <!-- patient -->
         <tr>
-            <td>receivedTime</td>
+            <td>patient</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- parent -->
+        <!-- date -->
         <tr>
-            <td>parent</td>
+            <td>date</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- request -->
+        <!-- name -->
         <tr>
-            <td>request</td>
+            <td>name</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.extension(fastingStatus) -->
+        <!-- relationship -->
         <tr>
-            <td>collection.extension(fastingStatus)</td>
+            <td>relationship</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.collector -->
+        <!-- gender -->
         <tr>
-            <td>collection.collector</td>
+            <td>gender</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.collected -->
+        <!-- born[x] -->
         <tr>
-            <td>collection.collector</td>
+            <td>born[x]</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.quantity -->
+        <!-- age[x] -->
         <tr>
-            <td>collection.quantity</td>
+            <td>age[x]</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.method -->
+        <!-- estimatedAge -->
         <tr>
-            <td>collection.method</td>
+            <td>estimatedAge</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.bodySite -->
+        <!-- deceased[x] -->
         <tr>
-            <td>collection.bodySite</td>
+            <td>deceased[x]</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- processing -->
+        <!-- reasonCode -->
         <tr>
-            <td>processing</td>
+            <td>reasonCode</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- container -->
+        <!-- reasonReference -->
         <tr>
-            <td>container</td>
+            <td>reasonReference</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
@@ -139,6 +139,13 @@
         <!-- note -->
         <tr>
             <td>note</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- condition -->
+        <tr>
+            <td>condition</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>

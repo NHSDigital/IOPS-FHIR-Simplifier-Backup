@@ -66,7 +66,7 @@
         </tr>
         <!-- basedOn -->
         <tr>
-            <td>definition</td>
+            <td>basedOn</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-times text-danger"></i></td>

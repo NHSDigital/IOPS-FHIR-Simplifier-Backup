@@ -10,59 +10,10 @@
         </tr>
     </thead>
     <tbody>
-        <!-- id -->
-        <tr>
-            <td>id</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.versionId -->
-        <tr>
-            <td>meta.versionId</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.lastUpdated -->
-        <tr>
-            <td>meta.lastUpdated</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.profile -->
-        <tr>
-            <td>meta.profile</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.security -->
-        <tr>
-            <td>meta.security</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.tag -->
-        <tr>
-            <td>meta.tag</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
         <!-- identifier -->
         <tr>
             <td>identifier</td>
             <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- accessionIdentifier -->
-        <tr>
-            <td>accessionIdentifier</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
@@ -73,100 +24,72 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- type -->
+        <!-- statusHistory -->
         <tr>
-            <td>type</td>
+            <td>statusHistory</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- subject -->
+        <!-- type -->
         <tr>
-            <td>subject</td>
+            <td>type</td>
             <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- receivedTime -->
+        <!-- diagnosis -->
         <tr>
-            <td>receivedTime</td>
+            <td>diagnosis</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- parent -->
+        <!-- patient -->
         <tr>
-            <td>parent</td>
+            <td>patient</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- managingOrganization -->
+        <tr>
+            <td>managingOrganization</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- request -->
+        <!-- period -->
         <tr>
-            <td>request</td>
+            <td>period</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.extension(fastingStatus) -->
+        <!-- referralRequest -->
         <tr>
-            <td>collection.extension(fastingStatus)</td>
+            <td>referralRequest</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.collector -->
+        <!-- careManager-->
         <tr>
-            <td>collection.collector</td>
+            <td>careManager</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.collected -->
+        <!-- team -->
         <tr>
-            <td>collection.collector</td>
+            <td>team</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.quantity -->
+        <!-- account-->
         <tr>
-            <td>collection.quantity</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- collection.method -->
-        <tr>
-            <td>collection.method</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- collection.bodySite -->
-        <tr>
-            <td>collection.bodySite</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- processing -->
-        <tr>
-            <td>processing</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- container -->
-        <tr>
-            <td>container</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- note -->
-        <tr>
-            <td>note</td>
+            <td>account</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
