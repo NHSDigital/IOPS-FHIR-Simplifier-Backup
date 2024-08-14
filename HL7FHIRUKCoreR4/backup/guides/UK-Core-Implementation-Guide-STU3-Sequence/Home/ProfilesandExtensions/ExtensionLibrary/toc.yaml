@@ -98,3 +98,9 @@
   filename: Extension-UKCore-SpecimenCollectionCollector.page.md
 - name: Extension UKCore-VaccinationProcedure
   filename: Extension-UKCore-VaccinationProcedure.page.md
+- name: Extension-UKCore-ConditionBodyStructure
+  filename: Extension-UKCore-ConditionBodyStructure.page.md
+- name: Extension-UKCore-DiagnosticReportMediaLink
+  filename: Extension-UKCore-DiagnosticReportMediaLink.page.md
+- name: Extension-UKCore-PatientFetalStatus
+  filename: Extension-UKCore-PatientFetalStatus.page.md
