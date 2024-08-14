@@ -10,44 +10,9 @@
         </tr>
     </thead>
     <tbody>
-        <!-- id -->
+        <!-- extension(anaestheticIssues) -->
         <tr>
-            <td>id</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.versionId -->
-        <tr>
-            <td>meta.versionId</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.lastUpdated -->
-        <tr>
-            <td>meta.lastUpdated</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.profile -->
-        <tr>
-            <td>meta.profile</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.security -->
-        <tr>
-            <td>meta.security</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.tag -->
-        <tr>
-            <td>meta.tag</td>
+            <td>extension(anaestheticIssues)</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
@@ -59,9 +24,23 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- accessionIdentifier -->
+        <!-- definition -->
         <tr>
-            <td>accessionIdentifier</td>
+            <td>definition</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-times text-danger"></i></td>
+        </tr>
+        <!-- basedOn -->
+        <tr>
+            <td>basedOn</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- partOf -->
+        <tr>
+            <td>partOf</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
@@ -73,100 +52,149 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- type -->
+        <!-- notDone -->
         <tr>
-            <td>type</td>
+            <td>notDone</td>
             <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- notDoneReason -->
+        <tr>
+            <td>notDoneReason</td>
+            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- category -->
+        <tr>
+            <td>category</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- code -->
+        <tr>
+            <td>code</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- subject -->
         <tr>
             <td>subject</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- receivedTime -->
-        <tr>
-            <td>receivedTime</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- parent -->
-        <tr>
-            <td>parent</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- request -->
+        <!-- context -->
         <tr>
-            <td>request</td>
+            <td>context</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- performed[x] -->
+        <tr>
+            <td>performed[x]</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- performer -->
+        <tr>
+            <td>performer</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- location -->
+        <tr>
+            <td>location</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- reasonCode -->
+        <tr>
+            <td>reasonCode</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.extension(fastingStatus) -->
+        <!-- reasonReference -->
         <tr>
-            <td>collection.extension(fastingStatus)</td>
+            <td>reasonReference</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.collector -->
+        <!-- bodySite -->
         <tr>
-            <td>collection.collector</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- collection.collected -->
-        <tr>
-            <td>collection.collector</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- collection.quantity -->
-        <tr>
-            <td>collection.quantity</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- collection.method -->
-        <tr>
-            <td>collection.method</td>
+            <td>bodySite</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- collection.bodySite -->
+        <!-- outcome -->
         <tr>
-            <td>collection.bodySite</td>
+            <td>outcome</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- report -->
+        <tr>
+            <td>report</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- processing -->
+        <!-- complication -->
         <tr>
-            <td>processing</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td>complication</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- container -->
+        <!-- complicationDetail -->
         <tr>
-            <td>container</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td>complicationDetail</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- followUp -->
+        <tr>
+            <td>followUp</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- note -->
         <tr>
             <td>note</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- focalDevice -->
+        <tr>
+            <td>focalDevice</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- usedReference -->
+        <tr>
+            <td>usedReference</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- usedCode -->
+        <tr>
+            <td>usedCode</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
