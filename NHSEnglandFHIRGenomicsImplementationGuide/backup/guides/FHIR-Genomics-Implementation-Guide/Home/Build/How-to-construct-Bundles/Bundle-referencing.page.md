@@ -25,7 +25,7 @@ If the resource is hosted on another NHS service, for example patient records on
 }
 ```
 
-If a resource is contained on another system, outside NHS central services, this SHOULD be referenced with an absolute url. The URL SHALL be resolvable and preferably return a FHIR resource of the appropriate type e.g.
+If a resource is contained on another system, outside NHS central services, this SHOULD be referenced with an absolute url. The URL SHALL be resolvable (though these links will not be validated/followed by the central broker) and preferably return a FHIR resource of the appropriate type e.g.
 
 ```
 "reference": "https://www.christie.nhs.uk/ehr/LabOrder123456"
@@ -35,7 +35,7 @@ Specific instances where each of the above reference types are allowed are defin
 
 All profiles within transaction bundles should reference each other i.e. none should be orphaned.
 
-Any additional resources not linked from another resource in a transaction bundle SHALL be excluded, or sent in a separate transaction. The expected list of resources and cardinalities in a typical test order or report transaction are detailed in {{pagelink:Home/FHIRAssets/MessageDefinitions}}.
+Any additional resources not linked from another resource in a transaction bundle SHALL be excluded, or sent in a separate transaction. The expected list of resources and cardinalities in a typical test order or report transaction are detailed in {{pagelink:Home/FHIRAssets/GraphDefinitions}}.
 
 It is expected the central broker will check and maintain referential integrity, where these references point to resources stored on the central broker. If a request fails this check, the transaction will fail with the appropriate HTTP error code, e.g. 422. The response will be a 'transaction-response' bundle, including an OperationOutcome FHIR resource for each resource submitted in the transaction Bundle with diagnostics for each. Resources passing validation will return 200 but will not result in resources being created on the server if the transaction contains an error (the transaction will be rejected as a whole).
 
