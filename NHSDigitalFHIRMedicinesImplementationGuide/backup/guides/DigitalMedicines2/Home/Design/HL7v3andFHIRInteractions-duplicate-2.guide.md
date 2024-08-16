@@ -27,4 +27,5 @@ The table below shows the mapping of HL7 v3 Interactions to FHIR API calls, resp
 | Dispense Notification Update - PORX_IN080101UK31 | {{pagelink:DispenseNotificationUpdate-duplicate-2}} | 
 | Dispense Withdraw - PORX_IN510101UK31 | {{pagelink:CancelaDispenseNotification-duplicate-2}} |
 | Dispense Claim Information - PORX_IN090101UK31 | {{pagelink:DispenseClaim-duplicate-2}} |
-| Reimbursement Claim Resubmit - PORX_IN090102UK31 | {{pagelink:DispenseClaimUpdate-duplicate-2}} |
+| Reimbursement Claim Resubmit - PORX_IN090102UK31 | {{pagelink:claim-update}} |
+

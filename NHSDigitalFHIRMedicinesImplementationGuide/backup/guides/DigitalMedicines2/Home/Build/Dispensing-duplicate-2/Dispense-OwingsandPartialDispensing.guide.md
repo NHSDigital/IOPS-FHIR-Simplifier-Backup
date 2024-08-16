@@ -3,11 +3,11 @@
 
 <br>
 
-### Dispense Notifications 
+<!-- ### Dispense Notifications 
 
+link below used to be render which is incorrect. Assume it was supposed to be rendering the page so changed to suit - Ryan -->
 
-{{render:dispense-notification}}
-
+{{page:dispense-notification}}
 
 
 #### 1st Dispensing Event – Prescription Status: “With Dispenser – Active”
