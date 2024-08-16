@@ -25,7 +25,7 @@ In this case, the data model SHOULD match the singleton scenario (Mother is the 
   <tr>
     <td>
 <ul><li><b>Mother is pregnant and testing is on the Fetus (e.g., CVS or amnio):</b> The test requested is created on the <b>foetal</b> record. As part of fetus testing, the following information becomes mandatory:</li>
-<li>the ability  to capture test on the fetus (this may differ from local organisation to another and is typically the Mother’s Hospital ID plus indication of fetus ( Ex. WG1342Fetous A) - <b>Used as the unique foetal identifier prior to NHS Number allocation</b></li>
+<li>the ability  to capture test on the fetus (this may differ from local organisation to another and is typically the Mother’s Hospital ID plus indication of fetus ( Ex. WG1342Fetus A) - <b>Used as the unique foetal identifier prior to NHS Number allocation</b></li>
 <li>The capture of additional information such as foetal phenotypic sex (M/F/U or Unknown) and number of fetuses also becomes mandatory. - <b>Captured on the Patient resource for the foetus</b></li>
 <li>Pregnancy details: capture of Pregnancy type ( Spontaneous conception, Surrogacy, or IVF Pregnancy). If IVF, the capture of own egg/sperm and the age of the egg donor becomes mandatory - <b>Observation resources linked to the Mother's patient record, as they relate to the pregnancy</b></li>
 <li><b>Note:</b> If fetus is under 24 weeks, the sample is from the mother - <b>in this case the Proband (foetus) does not have any samples associated with their record.</b></li></ul>
@@ -37,7 +37,7 @@ In this case, the data model SHOULD match the singleton/duo scenario (Foetus is 
   <tr>
     <td>
 <ul><li><b>Mother is pregnant, multiple fetuses and test is completed on each fetus with a result per fetus:</b> An electronic test request <b>per foetus</b> is created on the <b>foetal</b> record.  A test request/ sample collection  is required for each fetus. Additional mandatory information required includes:</li>
-<li>the ability  to capture test on the fetus (this may differ from local organisation to another and is typically the Mother’s Hospital ID plus indication of fetus ( Ex. WG1342Fetous A) - <b>Used as the unique foetal identifier prior to NHS Number allocation</b></li>
+<li>the ability  to capture test on the fetus (this may differ from local organisation to another and is typically the Mother’s Hospital ID plus indication of fetus ( Ex. WG1342Fetus A) - <b>Used as the unique foetal identifier prior to NHS Number allocation</b></li>
 <li>The capture of additional information such as foetal phenotypic sex (M/F/U or Unknown) and number of fetuses also becomes mandatory. - <b>Captured on the Patient resource for the foetus</b></li>
 <li>Pregnancy details: capture of Pregnancy type (Spontaneous conception, Surrogacy, or IVF Pregnancy). If IVF, the capture of own egg/sperm and the age of the egg donor becomes mandatory - <b>Observation resources linked to the Mother's patient record, as they relate to the pregnancy</b></li></ul>
     </td>
@@ -62,7 +62,7 @@ The following steps is a walk through of:
 
 ### 1. Requester (e.g Midwife) searches for woman (a dummy patient has been pre-populated as an example)
 
-**Params:**
+**Parameters:**
 ```
 given=Ryanne
 family=Boulder
@@ -103,7 +103,7 @@ Specific Observation, Specimen and Procedure resources related to the above requ
 
 ### 1. Views the completed test order form
 
-Obtained through GET /ServiceRequest or /GET Task requests (using params on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
+Obtained through GET /ServiceRequest or /GET Task requests (using parameters on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
 
 OR
 

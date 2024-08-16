@@ -8,7 +8,7 @@ References to other resources in the Bundle SHOULD use the fullUrl uuid, e.g.
 "reference": "urn:uuid:66c519dd-423f-4238-89c8-91c5be52f330"
 ```
 
-References to other resources not included in the Bundle SHOULD use the path for the resource, including the uuid, if this can be found on the GMS central broker (the central broker will replace urn:uuids with its own IDs on create, these will be returned to clients in responses) e.g. 
+References to other resources not included in the Bundle SHOULD use the path for the resource, including the uuid, if this can be found on the GMS central broker (the central broker will replace a urn:uuid with its own ID on create, these will be returned to clients in responses) e.g. 
 
 ```
 "reference": "Specimen/840d075e-0480-4134-ae51-27f572731cc8"

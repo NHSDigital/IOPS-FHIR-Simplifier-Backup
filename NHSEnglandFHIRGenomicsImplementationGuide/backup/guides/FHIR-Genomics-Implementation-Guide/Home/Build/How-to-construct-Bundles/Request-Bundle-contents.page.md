@@ -5,7 +5,7 @@ The genetic testing information is exchanged using FHIR Transaction Bundle. This
 
 The Bundle uses the following resource to carry the related business entity information:
 
-**Test Request Summary** - This business entity is used to capture details of the test and supporting information from the requestor and uses the ServiceRequest FHIR resource.
+**Test Request Summary** - This business entity is used to capture details of the test and supporting information from the requester and uses the ServiceRequest FHIR resource.
 
 The data items and resources used in the Request Bundle are mapped from the Genomics Minimum Dataset ({{pagelink:Home/Design/Clinicalheadings}}) and are defined in FHIR through the {{pagelink:GraphDefinition-Genomics-Test-Order}} GraphDefinition.
 

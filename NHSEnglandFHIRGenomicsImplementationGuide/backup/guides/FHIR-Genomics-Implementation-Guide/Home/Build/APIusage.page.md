@@ -52,8 +52,8 @@ Some internal transformation between versions may be possible and desirable, as 
 
 ## API Performance
 
-Details regarding API performance, e.g. maximum trnasactions per second or storage scalability are defined within an external Non-Functional Requirements document so will not be repeated within this IG.
+Details regarding API performance, e.g. maximum transactions per second or storage scalability are defined within an external Non-Functional Requirements document so will not be repeated within this IG.
 
-## Data Retension Policy
+## Data Retention Policy
 
-Retension of transactional data will follow government guidance regarding data retension of sensitive information. Long-term storage of patient Genomic information is expected to be covered within the Unified Genomic Record.
+Retention of transactional data will follow government guidance regarding data retention of sensitive information. Long-term storage of patient Genomic information is expected to be covered within the Unified Genomic Record.

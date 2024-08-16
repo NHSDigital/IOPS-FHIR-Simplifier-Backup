@@ -8,7 +8,7 @@ In each of these scenarios, the requirement is to allow for testing and reportin
 
 ### 1. Requester searches for a patient (a dummy patient has been pre-populated as an example)
 
-**Params:**
+**Parameters:**
 ```
 given=Anita
 family=Lamberts

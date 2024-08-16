@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-From initial design work, it is expected the main use case will be labs and requestors polling the central service for test orders and reports, including associated clinical information, as well as polling the system for the current state of Tasks and Task update history, through associated AuditEvents and Provenance resources. 
+From initial design work, it is expected the main use case will be labs and requesting systems polling the central service for test orders and reports, including associated clinical information, as well as polling the system for the current state of Tasks and Task update history, through associated AuditEvents and Provenance resources. 
 
 Retrieval of sets of resources using {{pagelink:Home/FHIRAssets/GraphDefinitions}} are also planned. The complete set of resources/operations supported are listed within the {{pagelink:Home/FHIRAssets/CapabilityStatements/Instance.page.md}} page. All resources are expected to be compliant with UK Core FHIR R4.
 
@@ -13,7 +13,7 @@ Retrieval of sets of resources using {{pagelink:Home/FHIRAssets/GraphDefinitions
 
 * The `_history` and `_lastUpdated` parameters will be supported as part of history and audit provenance needs. The `_history` parameter will only be supported on instance level reads, i.e. history will not be retrievable at the resource type or base levels.
 
-* Token type searching for coded values based on system and/or code e.g. http://snomed.info/sct%7C3738000 will be supported, to enable unabiguous searching of codes.
+* Token type searching for coded values based on system and/or code e.g. http://snomed.info/sct%7C3738000 will be supported, to enable unambiguous searching of codes.
 
 * Date and number based prefixes, such as `eq`, `gr`, `lt` will be supported, to enable retrieval of resources based on date/time and quantity ranges.
 
@@ -28,7 +28,7 @@ GET [base]/ServiceRequest?requester:PractitionerRole.organization={ODS_codes_in_
 ```
 
 #### Unsupported Functionality
-* Inclusion of external references (resources not hosted on the server) through the _include parameter will not be supported as there will be no guarantee they resolve or that they will return valid FHIR. While this may mean clients will need to perform multiple calls to construct a complete set of data, this ensures consistency of the responses from the broker. Within this Implementation Guide we expect test requesters to submit all relevant information for a test order to the broker so there should be very few instances where an external reference is used.
+* Inclusion of external references (resources not hosted on the server) through the _include parameter will not be supported as there will be no guarantee they resolve or that they will return valid FHIR. While this may mean clients will need to perform multiple calls to construct a complete set of data, this ensures consistency of the responses from the broker. Within this Implementation Guide we expect a test requester to submit all relevant information for a test order to the broker so there should be very few instances where an external reference is used.
 
 * No use cases requiring use of `_query` or `$operation` type searches have been elaborated so these are not planned to be supported as of the time of publication. Equally, usage of tags to encode data, and use of the `_tag` parameter will not be supported until use cases detailing their need are elaborated.
 

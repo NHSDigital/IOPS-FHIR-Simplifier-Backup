@@ -39,7 +39,7 @@ The following steps is a walk through of:
 
 ### 1. Requester or Lab searches for a patient (a dummy patient has been pre-populated as an example)
 
-**Params:**
+**Parameters:**
 ```
 given=Meir
 family=Lieberman
