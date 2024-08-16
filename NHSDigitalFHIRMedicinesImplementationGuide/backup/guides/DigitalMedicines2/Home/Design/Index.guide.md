@@ -205,24 +205,6 @@ EPS involves several key actors:
    </tr>
     <tr>
     <td>
-    </td>
-    <td>
-   {{pagelink:Home/Design/De}}
-    </td>
-    <td>
-&#10004;
-    </td>
-     <td>
-    </td>
-    <td>
-&#10004;
-    </td>
-    <td>
-&#10004;
-    </td>
-   </tr>
-    <tr>
-    <td>
 <a href="https://simplifier.net/guide/NHSDigital-Medicines/Home/Design/PrescriptionManagement">Prescription Management</a> 
     </td>
     <td>
