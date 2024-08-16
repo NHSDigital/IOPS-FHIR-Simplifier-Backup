@@ -6,4 +6,4 @@ The bundles currently defined for the Genomic Medicine Service are the {{pagelin
 
 The use of messages within the Genomic Medicine Service, over a completely RESTful interface is currently under review.
 
-It is intended that the central Genomic Order Management broker will support submission of Bundles of type ```"transaction"``` only. Supported HTTP verbs will be limited to 'POST' and 'PUT' i.e. creation of updates of resources on the server. GET requests submitted as part of transaction will be ignored and, as per the guidelines provided on the {{pagelink:Supported-CRUD-capability}} page, there are no plans to support DELETEs on the central broker.
+It is intended that the central Genomic Order Management broker will support submission of Bundles of type ```"transaction"``` only. Supported HTTP verbs will be limited to 'POST' and 'PUT' i.e. creation of updates of resources on the server. GET requests submitted as part of transaction will be ignored and, as per the guidelines provided on the {{pagelink:Home/Build/Supported-CRUD-capability/Index.page.md}} page, there are no plans to support DELETE operations on the central broker.

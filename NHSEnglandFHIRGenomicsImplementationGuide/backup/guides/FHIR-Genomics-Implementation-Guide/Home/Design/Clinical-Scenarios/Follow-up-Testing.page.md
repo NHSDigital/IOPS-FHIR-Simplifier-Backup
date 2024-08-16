@@ -15,7 +15,7 @@ The following steps is a walk through of a follow up test type (e.g. Reflex Test
 
 ### 1. Requester searches for a patient (a dummy patient has been pre-populated as an example)
 
-**Params:**
+**Parameters:**
 ```
 given=Anita
 family=Lamberts
@@ -42,7 +42,7 @@ Indicated through absence of Specimen resource in message or absence of ```Speci
 
 ### 1. Views the completed test order form
 
-Obtained through GET /ServiceRequest or /GET Task requests (using params on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
+Obtained through GET /ServiceRequest or /GET Task requests (using parameters on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
 
 OR
 

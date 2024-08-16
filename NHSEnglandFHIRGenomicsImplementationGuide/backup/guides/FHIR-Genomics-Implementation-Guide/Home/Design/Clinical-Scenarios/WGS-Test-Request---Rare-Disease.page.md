@@ -16,7 +16,7 @@ The following steps is a walk through of a WGS Test order workflow:
 
 ### 1. Requester searching for a patient (a dummy patient has been pre-populated as an example) - Via PDS GET /Patient request
 
-**Params:**
+**Parameters:**
 ```
 given=Lindsay
 family=Sorrell
@@ -60,7 +60,7 @@ Indicated through absence of QuestionnaireResponse resource in message with ```Q
 
 #### 1. Views the completed test order form
 
-Obtained through GET /ServiceRequest or /GET Task requests (using params on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
+Obtained through GET /ServiceRequest or /GET Task requests (using parameters on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
 
 OR
 

@@ -2,6 +2,8 @@
 
 The main create operations will be creation of the initial test request and associated clinical information; creation of interim data (either binary files or structured FHIR resources attached to Task.output; and creation of the resulting DiagnosticReport resources. Creation of ServiceRequest and DiagnosticReport resources will trigger the associated processes to kick-off or close down a test order fulfilment workflow.
 
+On create/POST, clients are allowed to not supply an 'id' within the resource, as per the FHIR spec. Any ids provided will be replaced by the central broker.
+
 ### Common Interaction Patterns
 
 <plantuml>

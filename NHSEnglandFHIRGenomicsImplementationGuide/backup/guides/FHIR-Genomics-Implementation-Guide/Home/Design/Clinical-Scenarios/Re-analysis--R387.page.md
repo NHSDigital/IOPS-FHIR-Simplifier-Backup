@@ -37,7 +37,7 @@ OperationOutcome with appropriate success/failure codes: {{pagelink:OperationOut
 
 #### 1. Recieve the test request for reanalysis
 
-Obtained through GET /ServiceRequest or /GET Task requests (using params on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
+Obtained through GET /ServiceRequest or /GET Task requests (using parameters on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
 
 OR
 

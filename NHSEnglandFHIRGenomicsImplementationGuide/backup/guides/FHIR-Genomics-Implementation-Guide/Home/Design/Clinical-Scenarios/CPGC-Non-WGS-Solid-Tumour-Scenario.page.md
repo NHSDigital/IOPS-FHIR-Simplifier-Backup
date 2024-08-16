@@ -8,15 +8,15 @@ For the WGS Tumour First, Germline Later use case, it is expected requesters wou
 
 ### [Link to the High Fidelity Wireframe for the CPGC Non WGS Solid Tumour Scenario](https://wlajol.axshare.com/)
 
-The following steps is a walk through of a Non WGS Solid Tumour Test Request. This scenario takes into considersation the set up CPGC's (location) as the initial point of triage and prep prior to forwarding the test request/sample to GLH.
+The following steps is a walk through of a Non WGS Solid Tumour Test Request. This scenario takes into considersation the set up CPGC's location as the initial point of triage and prep prior to forwarding the test request/sample to GLH.
 
 ### 1. Cellular Pathologist(Requester) to confirm Genomic Testing/ specimen block required.
 
-Outside scope for central broker comms
+Outside scope for central genomic order management
 
 ### 2. Cellular Pathologist(Requester) to search for patient (a dummy patient has been pre-populated as an example) 
 
-**Params:**
+**Parameters:**
 ```
 given=Zelma
 family=Hadgkiss
@@ -61,7 +61,7 @@ OperationOutcome with appropriate success/failure codes: {{pagelink:OperationOut
 
 ### 1. Recieve test request electronically (* Note a CPGC may be in the same location as the GLH or at a different location) and specimen details
 
-Obtained through GET /ServiceRequest or /GET Task requests (using params on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
+Obtained through GET /ServiceRequest or /GET Task requests (using parameters on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
 
 OR
 

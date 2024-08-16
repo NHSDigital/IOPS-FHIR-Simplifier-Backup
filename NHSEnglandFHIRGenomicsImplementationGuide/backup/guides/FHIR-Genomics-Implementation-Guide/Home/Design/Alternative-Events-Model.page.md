@@ -12,7 +12,7 @@ The Events model to be used is still under discussion. As such, no publishing an
 
 This page will be updated with publishing and receiving requirements once the events model and system to be used have been finalised. 
 
-In the final solution any updates to ServiceRequests are expected to trigger event notifications, through NEMS or otherwise, to requestors/GLHs, and vice versa for Task and DiagnosticReport updates.
+In the final solution any updates to ServiceRequests are expected to trigger event notifications, through NEMS or otherwise, to requesters/GLHs, and vice versa for Task and DiagnosticReport updates.
 
 ## Task Notifications
 

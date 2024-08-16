@@ -28,7 +28,7 @@ The dotted lines in the NGTP diagram indicate messages between organisations (wi
 **RS2** Request for Specialist Interpretation (from remote GLH)
 * Receive Processing Task with GLH/lab as owner with note/status describing work required (Interpretation/DiagnosticReport) (TODO: draft example of request)
 
-**2.10, 2.12, 5.03, 5.05** Sendaway for data processing or interpretation
+**2.10, 2.12, 5.03, 5.05** Send-away for data processing or interpretation
 * Send Processing Task with remote GLH/lab as owner with note/status describing work required (Data-processing/Interpretation)
 
 **5.08** Mark completion of reflex/confirmatory test
