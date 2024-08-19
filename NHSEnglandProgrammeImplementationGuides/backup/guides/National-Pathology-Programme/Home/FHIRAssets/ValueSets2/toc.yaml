@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: ValueSet UKCorePathologyAndLaboratoryMedicineObservables
+  filename: ValueSet-UKCorePathologyAndLaboratoryMedicineObservables.page.md
+- name: ValueSet UKCorePathologyAndLaboratoryMedicineProcedures
+  filename: ValueSet-UKCorePathologyAndLaboratoryMedicineProcedures.page.md
