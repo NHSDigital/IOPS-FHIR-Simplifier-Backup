@@ -311,6 +311,8 @@ SHOULD be updated upon receipt at a destination lab
 <a name="parent"></a>
 #### parent
 If a sample has been split into multiple parts, such as DNA being extracted from a primary sample, each SHOULD be represented using an additional Specimen resource, referencing the parent sample through the parent element.
+
+The central Order Management broker will only create Tasks for Specimen resources which do not have a parent element, i.e. primary samples. If required, clients can create Tasks for processing of derivative samples manually. 
 ```json
 "parent": [
         {
