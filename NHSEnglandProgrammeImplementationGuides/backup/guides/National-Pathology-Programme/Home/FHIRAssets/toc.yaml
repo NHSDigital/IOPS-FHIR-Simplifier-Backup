@@ -1,3 +1,5 @@
+- name: AllAssets
+  filename: AllAssets.page.md
 - name: Profiles
   filename: Profiles.page.md
 - name: Extensions
@@ -6,3 +8,5 @@
   filename: CodeSystems.page.md
 - name: ValueSets
   filename: ValueSets.page.md
+- name: ValueSets2
+  filename: ValueSets2
