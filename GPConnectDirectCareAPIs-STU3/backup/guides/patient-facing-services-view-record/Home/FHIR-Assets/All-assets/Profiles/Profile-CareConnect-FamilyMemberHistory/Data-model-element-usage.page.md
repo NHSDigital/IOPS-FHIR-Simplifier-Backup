@@ -27,7 +27,7 @@
         <!-- identifier -->
         <tr>
             <td>identifier</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
@@ -36,33 +36,33 @@
             <td>definition</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- status -->
         <tr>
             <td>status</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- notDone -->
         <tr>
             <td>notDone</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- notDoneReason -->
         <tr>
             <td>notDoneReason</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- patient -->
         <tr>
             <td>patient</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
@@ -83,28 +83,28 @@
         <!-- relationship -->
         <tr>
             <td>relationship</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- gender -->
         <tr>
             <td>gender</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- born[x] -->
         <tr>
             <td>born[x]</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- age[x] -->
         <tr>
             <td>age[x]</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
@@ -118,7 +118,7 @@
         <!-- deceased[x] -->
         <tr>
             <td>deceased[x]</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
@@ -139,18 +139,18 @@
         <!-- note -->
         <tr>
             <td>note</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- condition -->
         <tr>
             <td>condition</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-    </tbody>
+     </tbody>
 </table>
 
 ---
