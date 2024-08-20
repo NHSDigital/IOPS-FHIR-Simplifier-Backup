@@ -29,4 +29,4 @@ subject: Pathology-Bundle-GTT-Request-Example
     <br>
     {{render:path-data-model-GTT-request}}
 </div>
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleRendersTemplate.page.md}}

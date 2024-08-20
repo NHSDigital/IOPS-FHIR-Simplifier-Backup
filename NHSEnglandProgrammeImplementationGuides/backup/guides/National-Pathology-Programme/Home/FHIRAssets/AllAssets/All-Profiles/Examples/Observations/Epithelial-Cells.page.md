@@ -6,4 +6,4 @@ subject: Pathology-Observation-Epithelial-Cells-Example
 An example of a semi-quantitative test result:
 * Epithelial cells: +
 
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleSnippet.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleSnippetTemplate.page.md}}

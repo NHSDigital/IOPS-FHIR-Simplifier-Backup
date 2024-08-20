@@ -6,4 +6,4 @@ subject: Pathology-Observation-Nitrofurantoin-Susceptibility-Example
 An example of a semi-quantitative test result:
 * Organism susceptibility to nitrofurantoin: RESISTANT  
 
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleSnippet.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleSnippetTemplate.page.md}}

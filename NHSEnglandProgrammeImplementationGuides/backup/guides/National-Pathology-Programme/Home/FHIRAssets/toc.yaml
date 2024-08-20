@@ -4,6 +4,8 @@
   filename: Profiles.page.md
 - name: Extensions
   filename: Extensions.page.md
+- name: Extensions2
+  filename: Extensions2
 - name: CodeSystems
   filename: CodeSystems.page.md
 - name: ValueSets

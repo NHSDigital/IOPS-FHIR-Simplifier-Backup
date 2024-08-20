@@ -6,4 +6,4 @@ subject: Pathology-Observation-MRSA-Example
 An example of a qualitative test result:
 * MRSA screening test: NOT DETECTED
 
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleSnippet.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleSnippetTemplate.page.md}}

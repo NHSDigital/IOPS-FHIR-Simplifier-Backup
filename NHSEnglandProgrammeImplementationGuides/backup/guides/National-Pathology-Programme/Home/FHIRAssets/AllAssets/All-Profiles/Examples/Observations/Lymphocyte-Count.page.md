@@ -6,4 +6,4 @@ subject: Pathology-Observation-Lymphocyte-Example
 An example of a quantitative test result combined with an interpretation:
 * Lymphocyte count: 0.70 10*9/L LOW
 
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleSnippet.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleSnippetTemplate.page.md}}

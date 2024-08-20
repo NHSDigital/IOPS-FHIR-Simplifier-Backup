@@ -29,4 +29,4 @@ subject: Pathology-Bundle-Urine-MCS-01-Request-Example
 <br>
 {{render:path-data-model-MCS-01-request}}
 </div>
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleRendersTemplate.page.md}}

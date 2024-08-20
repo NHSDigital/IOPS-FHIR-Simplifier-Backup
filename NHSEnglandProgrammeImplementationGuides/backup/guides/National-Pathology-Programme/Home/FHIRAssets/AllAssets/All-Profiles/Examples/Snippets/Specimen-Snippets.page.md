@@ -7,4 +7,4 @@ An example of how each key <code>UKCore-Specimen</code> data element may be popu
 
 Refer to the {{pagelink: R4Specimen}} profile definition for a detailed description of the supported data elements.
 
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleSnippet.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleSnippetTemplate.page.md}}

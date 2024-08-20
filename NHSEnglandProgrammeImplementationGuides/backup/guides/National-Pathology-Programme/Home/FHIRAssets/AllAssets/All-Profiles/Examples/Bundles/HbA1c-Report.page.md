@@ -30,4 +30,4 @@ subject: Pathology-Bundle-HbA1c-Report-Example
     <br>
     {{render:path-data-model-HbA1c-report}}
 </div>
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleRendersTemplate.page.md}}

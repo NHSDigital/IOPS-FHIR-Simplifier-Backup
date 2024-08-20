@@ -30,4 +30,4 @@ subject: Pathology-Bundle-Urine-MCS-01-Unstructured-Report-Example
     <br>
     {{render:path-data-model-MCS-01-unstructured-report}}
 </div>
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleRendersTemplate.page.md}}
