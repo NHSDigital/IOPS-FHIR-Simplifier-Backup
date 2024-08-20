@@ -32,4 +32,4 @@ subject: Pathology-Bundle-GTT-Report-Example
     <br>
     {{render:path-data-model-GTT-report}}
 </div>
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleRendersTemplate.page.md}}

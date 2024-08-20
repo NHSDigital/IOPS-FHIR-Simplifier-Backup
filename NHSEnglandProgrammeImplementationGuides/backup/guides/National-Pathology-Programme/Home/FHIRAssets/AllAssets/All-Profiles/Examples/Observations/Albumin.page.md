@@ -6,4 +6,4 @@ subject: Pathology-Observation-Albumin-Example
 An example of a quantitative test result:
 * Albumin: 47 g/L
 
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleSnippet.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleSnippetTemplate.page.md}}

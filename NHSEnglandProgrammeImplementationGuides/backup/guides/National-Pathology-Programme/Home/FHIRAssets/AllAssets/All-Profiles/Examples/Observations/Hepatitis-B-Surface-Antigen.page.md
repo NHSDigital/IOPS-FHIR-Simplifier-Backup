@@ -6,4 +6,4 @@ subject: Pathology-Observation-HBsAg-Example
 An example of a qualitative test result:
 * Hepatitis B surface antigen: NEGATIVE 
 
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleSnippet.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleSnippetTemplate.page.md}}

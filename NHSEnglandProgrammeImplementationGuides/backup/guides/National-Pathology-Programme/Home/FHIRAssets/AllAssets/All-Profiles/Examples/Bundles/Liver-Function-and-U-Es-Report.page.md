@@ -31,4 +31,4 @@ subject: Pathology-Bundle-LFT-UandE-Report-Example
 <br>
 {{render:path-data-model-LFT-UandE-report}}
 </div>
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleRendersTemplate.page.md}}

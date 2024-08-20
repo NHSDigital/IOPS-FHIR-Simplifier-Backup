@@ -29,4 +29,4 @@ subject: Pathology-Bundle-HbA1c-Request-Example
 <br>
 {{render:path-data-model-HbA1c-request}}
 </div>
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleRendersTemplate.page.md}}

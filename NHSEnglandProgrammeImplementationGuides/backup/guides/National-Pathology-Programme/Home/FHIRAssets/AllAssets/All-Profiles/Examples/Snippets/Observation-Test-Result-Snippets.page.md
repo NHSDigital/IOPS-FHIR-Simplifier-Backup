@@ -7,4 +7,4 @@ An example of how each key <code>UKCore-Observation-Lab</code> data element may 
 
 Refer to the {{pagelink: R4ObservationTestResult}} profile definition for a detailed description of the supported data elements.
 
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleSnippet.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleSnippetTemplate.page.md}}

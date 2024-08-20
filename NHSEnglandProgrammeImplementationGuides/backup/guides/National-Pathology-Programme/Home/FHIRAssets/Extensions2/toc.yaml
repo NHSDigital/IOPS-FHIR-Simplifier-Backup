@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Extension UKCore-DiagnosticReportComposition
+  filename: Extension-UKCore-DiagnosticReportComposition.page.md
+- name: Extension UKCore-DiagnosticReportNote
+  filename: Extension-UKCore-DiagnosticReportNote.page.md
+- name: Extension UKCore-DiagnosticReportSupportingInfo
+  filename: Extension-UKCore-DiagnosticReportSupportingInfo.page.md
+- name: Extension UKCore-ObservationBodyStructure
+  filename: Extension-UKCore-ObservationBodyStructure.page.md
+- name: Extension UKCore-ObservationTriggeredBy
+  filename: Extension-UKCore-ObservationTriggeredBy.page.md
+- name: Extension UKCore-SpecimenCollectionCollector
+  filename: Extension-UKCore-SpecimenCollectionCollector.page.md

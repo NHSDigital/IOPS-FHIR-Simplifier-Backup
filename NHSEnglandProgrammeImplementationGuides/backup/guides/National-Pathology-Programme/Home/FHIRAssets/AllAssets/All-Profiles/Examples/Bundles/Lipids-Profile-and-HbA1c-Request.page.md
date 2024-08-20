@@ -30,4 +30,4 @@ subject: Pathology-Bundle-Lipids-HbA1c-Request-Example
     <br>
     {{render:path-data-model-lipids-HbA1c-request}}
 </div>
-{{page:Home/FHIRAssets/AllAssets/All-Profiles/Examples/ExampleRenders.page.md}}
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/ExampleRendersTemplate.page.md}}
