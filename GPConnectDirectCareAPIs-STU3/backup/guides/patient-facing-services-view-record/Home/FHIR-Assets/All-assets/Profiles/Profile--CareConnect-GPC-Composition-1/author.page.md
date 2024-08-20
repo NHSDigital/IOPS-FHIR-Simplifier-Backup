@@ -11,6 +11,6 @@ The `author` **MUST** contain an `Practitioner` resource profiled to the `CareCo
 
 More information about how to populate this resource can be found in this guide using the link below.
 
-{{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-Practitioner-1}}
+{{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Practitioner-1}}
 
 ---
