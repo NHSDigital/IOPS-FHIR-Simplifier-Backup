@@ -433,12 +433,12 @@ For the full list of expected Task statuses in use by the GMS, please refer to t
 |Accepted|The potential performer has agreed to execute the task but has not yet started work.|Used when an assigned owner has accepted the task after being assigned.|
 |Rejected|The potential performer who claimed ownership of the task has decided not to execute it prior to performing any action.|Used if an organization was assigned to a task but is unable to perform work against it. It is expected if an alternative organization can be assigned, this is done as an owner update rather than marking the task as rejected. If subsequent work does occur, a duplicate task will need to be created as the 'rejected' state is a terminal one.|
 |Ready|The task is ready to be performed, but no action has yet been taken. Used in place of requested/received/accepted/rejected when request assignment and acceptance is a given.|NOT USED within Genomics as it is not assumed that Tasks will be automatically accepted when prerequisites are satisfied.|
-|Cancelled|The task was not completed.|Used when a task has been created but later identified as unneeded, e.g. due to modifications to test order such as the ServiceRequest being cancelled.|
+|Cancelled|The task was not completed.|Used when a task has been created but later identified as unneeded, e.g. due to modifications to test order such as the ServiceRequest being cancelled. Automatically set by the central broker.|
 |In Progress|The task has been started but is not yet complete.|When work has commenced.|
 |On Hold|The task has been started but work has been paused.|A holding state where work is expected to continue but is being blocked through some external issue. Suppliers will need to state reason why work is on hold through the statusReason field e.g. Awaiting Sample.|
-|Failed|The task was attempted but could not be completed due to some error.|Indicates the task cannot continue and is unrcoverable without external intervention. If modifications to the test order allow the task to be resumed, a new task should be created e.g. a new sample is provided to replace a previous sample which has failed quality control.|
+|Failed|The task was attempted but could not be completed due to some error.|Indicates the task cannot continue and is unrcoverable without external intervention. If modifications to the test order allow the task to be resumed, a new task should be created e.g. a new sample is provided to replace a previous sample which has failed quality control. If the Task results in an unrecoverable error, the ServiceRequest may need to be revoked.|
 |Completed|The task has been completed.|Marked once all actions against a task are complete, and follow on Tasks can commence.|
-|Entered in Error|The task should never have existed and is retained only because of the possibility it may have used.|May be used if user created Tasks are created in error, e.g. duplicate Tasks|
+|Entered in Error|The task should never have existed and is retained only because of the possibility it may have used.|May be used if user created Tasks are created in error, e.g. duplicate Tasks, or Tasks have been created by the central broker and the ServiceRequest has subsequently been marked as entered-in-error.|
 
 ```json
 "status": "rejected",
@@ -570,7 +570,7 @@ Autopopulated by the central service if a performer is assigned at Test submissi
 
 This field can be updated by the organization claiming the task (though this could also be autopopulated if automated per test routing tables are integrated into the central service functionality). Owner SHOULD be populated using organization ODS code references. 
 
-**The responsibility for routing/reassigning ownership of Tasks lies with the current owner. The different scenarios for how follow-on routing may be achieved is summarised in the points below:**
+**The responsibility for routing/reassigning ownership of Tasks lies with the current owner following the transfers of responsibility as per the National Genomic Testing Process (NGTP). The different scenarios for how follow-on routing may be achieved is summarised in the points below:**
 
 * In most cases, by default the test will be routed to the home GLH (or other lab/GLH as dictated by the initial routing table). 
 * This would mean all Tasks by default would have this organization, e.g. home GLH, as the initial owner, it would then be the responsibility of the GLH to reassign tasks to other organizations, where they 'send away' or commission work. 
