@@ -359,13 +359,13 @@ For the full list of expected/supported ServiceRequest statuses, please see the 
 
 |Status|Description|Genomic workflow usage|
 |--|--|--|
-|Draft|The request has been created but is not yet complete or ready for action.|Saved but not submitted to central service|
-|Active|The request is in force and ready to be acted upon.|Submitted to central service|
-|On Hold|The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future.|Issue with progressing of task but the order is recoverable (a Task fulfilling this ServiceRequest has been marked as on-hold)|
-|Revoked|The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur.|Unrecoverable issue with order (Task fulfilling the ServiceRequest has been marked as Failed and the requesting clinician has been unable to address the failure)|
-|Completed|The activity described by the request has been fully performed. No further activity will occur.|Completed order, marked by requestor once DiagnosticReport is received and accepted|
-|Entered in Error|This request should never have existed and should be considered 'void'. (It is possible that real-world decisions were based on it. If real-world activity has occurred, the status should be "revoked" rather than "entered-in-error".).|Should not be used|
-|Unknown|The authoring/source system does not know which of the status values currently applies for this request. Note: This concept is not to be used for "other" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.|Should not be used|
+|Draft|The request has been created but is not yet complete or ready for action.|Saved but not submitted to central service (out of scope for Alpha).|
+|Active|The request is in force and ready to be acted upon.|Submitted to central service.|
+|On Hold|The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future.|Issue with the authorization for the test (potentially recoverable), not expected to be driven by on-hold statuses of Tasks.|
+|Revoked|The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur.|Unrecoverable issue with order. Either used when the test is no longer needed or there is an is an unrecoverable failure with its fulfillment (driven by the requesting clinician). This status will propagate down to any Tasks which have not already moved into in-progress, Tasks not started will be marked with the status of cancelled.|
+|Completed|The activity described by the request has been fully performed. No further activity will occur.|Completed order, marked by requestor once DiagnosticReport is received and accepted.|
+|Entered in Error|This request should never have existed and should be considered 'void'. (It is possible that real-world decisions were based on it. If real-world activity has occurred, the status should be "revoked" rather than "entered-in-error".)|MAY be used for ServiceRequests created in error, can only be set if no Tasks have been started. If a Task has been moved out of its initial state, the status of Revoked SHOULD be used instead. This status will propagate down to Tasks, marking the tasks as entered-in-error.|
+|Unknown|The authoring/source system does not know which of the status values currently applies for this request. Note: This concept is not to be used for "other" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.|Should not be used.|
 
 ```json
 "status": "active",
