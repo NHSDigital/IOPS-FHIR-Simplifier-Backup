@@ -20,6 +20,7 @@ subject: Pathology-Bundle-FBC-Request-Example
     <ul>
         <li>This is an example of a request for a single test group.</li>		    <li>Within the context of this specification a test group is defined as a set of related tests. Test groups are often referred to as batteries, panels or profiles.</li>
         <li><code>ServiceRequest.code</code> is used to specify the requested test group.</li>
+        <li>An explanation that describes why the tests have been requested is carried in <code>ServiceRequest.reasonCode</code>. In this example, clinical information is provided as free text (“Tired all the time, shortness of breath, arrhythmia") and so the <code>CodeableConcept.text</code> element is used.</li>
     </ul>
 </div>
 <div id="DataModel" role="tabpanel" class="tabcontent">

@@ -108,7 +108,7 @@ Test results which are part of a test group will not be referenced by this eleme
 ---
 
 ### `conclusion`
-A clinical interpretation/summary of the test results in a text format.
+A clinical interpretation/summary of the test results in a free text format.
 
 ---
 

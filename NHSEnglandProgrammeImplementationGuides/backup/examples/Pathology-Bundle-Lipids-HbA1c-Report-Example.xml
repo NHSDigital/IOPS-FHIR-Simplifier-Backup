@@ -229,7 +229,7 @@
         <authoredOn value="2022-07-04T11:05:00+00:00" />
         <requester>
           <reference value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
-          <display value="GASKELL, Gale" />
+          <display value="GASKELL, Dr Gale" />
         </requester>
         <performer>
           <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />

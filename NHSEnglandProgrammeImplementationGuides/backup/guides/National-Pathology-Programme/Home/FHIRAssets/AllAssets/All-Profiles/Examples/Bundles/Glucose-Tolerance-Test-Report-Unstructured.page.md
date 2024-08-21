@@ -23,6 +23,7 @@ subject: Pathology-Bundle-GTT-Unstructured-Report-Example
         <li>Each specimen is represented as a separate <code>Specimen</code> instance.</li>
         <li>In this example, the patient fasted before the first specimen was taken. This is indicated using <code>Specimen.collection.fastingStatus[x]</code>.</li>
         <li>The results are represented using a single <code>Observation</code> and formatted as a blob of text.</li>
+        <li>A clinical interpretation/summary of the test results is carried in <code>DiagnosticReport.conclusion</code>.</li>
     </ul>
 </div>
 <div id="DataModel" role="tabpanel" class="tabcontent">

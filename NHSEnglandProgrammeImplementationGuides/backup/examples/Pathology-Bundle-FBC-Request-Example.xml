@@ -189,9 +189,9 @@
           <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
           <display value="TD008362 PATH LAB 001" />
         </performer>
-        <note>
+        <reasonCode>
           <text value="Tired all the time, shortness of breath, arrhythmia" />
-        </note>
+        </reasonCode>
       </ServiceRequest>
     </resource>
   </entry>

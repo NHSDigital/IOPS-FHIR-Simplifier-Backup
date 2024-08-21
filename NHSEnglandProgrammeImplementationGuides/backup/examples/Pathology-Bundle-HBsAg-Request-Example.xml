@@ -170,7 +170,7 @@
         <intent value="order" />
         <code>
           <coding>
-            <!-- From PaLM observable entity reference set -->
+            <!-- From PaLM procedure reference set -->
             <system value="http://snomed.info/sct" />
             <code value="47758006" />
             <display value="Hepatitis B surface antigen measurement" />

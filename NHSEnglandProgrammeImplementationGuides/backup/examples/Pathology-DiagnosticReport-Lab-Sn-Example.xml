@@ -1,5 +1,16 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="Pathology-DiagnosticReport-Lab-Sn-Example" />
+  <!--  ***************extension start***************  -->
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
+    <valueAnnotation>
+      <authorReference>
+        <reference value="e5abf65d-ff1e-4a63-be9d-d12e71cbdf6a" />
+      </authorReference>
+      <time value="2022-02-09T11:17:00+00:00" />
+      <text value="Contact Dr Jones on receipt of results." />
+    </valueAnnotation>
+  </extension>
+  <!--  ***************extension end***************  -->
   <!-- The canonical URL for the UKCore-DiagnosticReport-Lab profile. -->
   <meta>
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
@@ -12,16 +23,19 @@
   <!-- Reference to the ServiceRequest that contains details of the test request that was made. -->
   <basedOn>
     <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-    <type value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
+    <type value="ServiceRequest" />
   </basedOn>
   <!-- The status of the test report. -->
   <status value="final" />
-  <!-- The general type of test report. -->
   <category>
+    <!-- The general type of test report. -->
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
       <code value="LAB" />
       <display value="Laboratory" />
+    </coding>
+    <coding>
+      <display value="Medical microbiology" />
     </coding>
   </category>
   <!-- A code that describes the report. Populated with the following fixed value. -->
@@ -39,12 +53,12 @@
   </subject>
   <!-- The date and time that the test report was issued. -->
   <issued value="2022-02-09T11:17:00+00:00" />
-  <!-- Reference to the Organization, Practitioner or PractitionerRole that produced the test report. -->
+  <!-- Reference(s) to the entity/entities that produced the test report. -->
   <performer>
     <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
     <display value="TD008362 PATH LAB 001" />
   </performer>
-  <!-- Reference(s) to the Specimen(s) used for testing. -->
+  <!-- Reference(s) to the specimen(s) used for testing. -->
   <specimen>
     <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
   </specimen>

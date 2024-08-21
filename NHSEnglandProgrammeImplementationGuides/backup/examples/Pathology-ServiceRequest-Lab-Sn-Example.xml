@@ -4,19 +4,38 @@
   <meta>
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
   </meta>
-  <!-- A business identifier supplied by the organisation that requested the test. -->
+  <!-- A business identifier supplied by the organisation that requested the test(s). -->
   <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="PLAC" />
+      </coding>
+      <text value="Placer" />
+    </type>
     <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
     <value value="REQ-20220307-000046-001" />
+  </identifier>
+  <!-- A business identifier supplied by the organisation that has been requested to perform the test(s). -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="FILL" />
+      </coding>
+      <text value="Filler" />
+    </type>
+    <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
+    <value value="REP-20220307-000247" />
   </identifier>
   <!-- A shared identifier that is used to link multiple requests. -->
   <requisition>
     <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
     <value value="REQ-20220307-000046" />
   </requisition>
-  <!-- The status of the test request. Populated with the following fixed value. -->
+  <!-- The status of the test request. -->
   <status value="active" />
-  <!-- The intent of the test request. Populated with the following fixed value. -->
+  <!-- The intent of the test request. -->
   <intent value="order" />
   <!-- The urgency of the test request. -->
   <priority value="routine" />
@@ -36,12 +55,12 @@
   </subject>
   <!-- The date and time of the test request. -->
   <authoredOn value="2022-01-29T10:24:00+00:00" />
-  <!-- Reference to the Organization, Practitioner or PractitionerRole that requested the test(s). -->
+  <!-- Reference to the entity that requested the test(s). -->
   <requester>
     <reference value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
     <display value="GASKELL, Dr Gale" />
   </requester>
-  <!-- Reference to the Organization, Practitioner or PractitionerRole that has been requested to perform the test(s). -->
+  <!-- Reference(s) to the entity/entities that will perform the test(s). -->
   <performer>
     <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
     <display value="TD008362 PATH LAB 001" />
@@ -56,7 +75,7 @@
     <reference value="urn:uuid:12c09bac-b108-4c48-8882-7c8daddf17fa" />
     <display value="Type 1 diabetes mellitus" />
   </reasonReference>
-  <!-- Reference(s) to the Specimen(s) that will be used for testing. -->
+  <!-- Reference(s) to the specimen(s) that will be used for testing. -->
   <!-- This should only be used when a test is requested and the specimen has already been collected. -->
   <specimen>
     <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />

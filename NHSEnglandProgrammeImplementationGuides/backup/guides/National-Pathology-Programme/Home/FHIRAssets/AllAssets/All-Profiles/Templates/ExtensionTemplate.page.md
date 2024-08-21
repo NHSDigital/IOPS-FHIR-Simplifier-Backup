@@ -1,12 +1,3 @@
-<fql output="inline">
-from
-	StructureDefinition
-where
-	url = %subject
-select
-  description
-</fql>
-
 <div class="tab">
   <button class="tablinks active" onclick="openTab(event, 'Tree View')">Tree View</button>
   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
