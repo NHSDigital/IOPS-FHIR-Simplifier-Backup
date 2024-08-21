@@ -209,6 +209,13 @@ table.assets tr td.balloted {
      color: white !important;
 }
 
+/*New Added Pages*/
+.NewAddedItem
+{
+   background-color: #dff0d8;
+}
+
+
 
  th.width05 { width: 5%; overflow-wrap: anywhere; }
  th.width10 { width: 10%; overflow-wrap: anywhere; }

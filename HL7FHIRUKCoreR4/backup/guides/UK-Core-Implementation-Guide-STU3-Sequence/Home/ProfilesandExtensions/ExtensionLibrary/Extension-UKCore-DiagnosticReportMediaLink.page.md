@@ -4,10 +4,13 @@ issue: Extension-UKCore-DiagnosticReportMediaLink
 ---
 ## StructureDefinition {{variable:issue}}
 
+<div class="NewAddedItem">
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-DiagnosticReport,text:DiagnosticReport}}</td>
 </tr>
+</div>
 </table>
+
 
 {{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
