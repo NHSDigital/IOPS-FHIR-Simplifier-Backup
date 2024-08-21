@@ -24,7 +24,9 @@ subject: Pathology-Bundle-GTT-Report-Example
         <li>In this example, the patient fasted before the first specimen was taken. This is indicated using <code>Specimen.collection.fastingStatus[x]</code>.</li>
         <li>The results are represented using a set of structured, coded <code>Observations</code>. These are grouped using a parent level test group <code>Observation</code>.</li>
         <li>The core <a href="https://hl7.org/fhir/R4/extension-observation-sequelto.html">observation-sequelTo</a> extension is used to link the test result <code>Observations</code> to one another in a chronological sequence.</li>
-        <li>The relative time interval associated with each test result <code>Observation</code> (e.g. 30 minutes) is carried using <code>Observation.component</code>.</li>           </ul>
+        <li>The relative time interval associated with each test result <code>Observation</code> (e.g. 30 minutes) is carried using <code>Observation.component</code>.</li>
+        <li>A clinical interpretation/summary of the test results is carried in <code>DiagnosticReport.conclusion</code>.</li>       
+    </ul>
 </div>
 <div id="DataModel" role="tabpanel" class="tabcontent">
     <br>

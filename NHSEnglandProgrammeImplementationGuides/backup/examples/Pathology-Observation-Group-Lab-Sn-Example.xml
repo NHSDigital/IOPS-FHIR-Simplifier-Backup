@@ -37,7 +37,7 @@
   <effectiveDateTime value="2022-02-09T08:39:00+00:00" />
   <!-- The date and time that the test group results were issued. -->
   <issued value="2022-02-09T11:17:00+00:00" />
-  <!-- Reference to the Organization, Practitioner or PractitionerRole that performed the test group. -->
+  <!-- Reference(s) to the entity/entities that performed the test group. -->
   <performer>
     <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
     <display value="TD008362 PATH LAB 001" />
@@ -46,7 +46,7 @@
   <note>
     <text value="Some results outside of range." />
   </note>
-  <!-- Reference to the Specimen that was used for testing. -->
+  <!-- Reference to the specimen that was used for testing. -->
   <specimen>
     <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
   </specimen>

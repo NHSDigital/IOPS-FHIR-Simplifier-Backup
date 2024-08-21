@@ -23,6 +23,7 @@ subject: Pathology-Bundle-Urine-MCS-01-Report-Example
         <li>It contains multiple levels of test group <code>Observations</code> and test result <code>Observations</code>. Two of the test groups are nested ("Urine Culture" and "Antimicrobial sensitivity").</li>
         <li>The report includes a range of numeric, semi-quantitative and qualitative results.</li>
         <li>In this example, the specimen (urine) was collected after the request was made. The specimen is linked to the request within the <code>Bundle</code> using <code>Specimen.request</code>.</li>
+        <li>A clinical interpretation/summary of the test results is carried in <code>DiagnosticReport.conclusion</code>.</li>
     </ul>
 </div>
 <div id="DataModel" role="tabpanel" class="tabcontent">

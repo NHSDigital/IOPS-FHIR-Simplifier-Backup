@@ -22,6 +22,7 @@ subject: Pathology-Bundle-Urine-MCS-01-Unstructured-Report-Example
         <li>The results are represented using a single <code>Observation</code> and formatted as a blob of text.</li>
         <li>The report includes a range of numeric, semi-quantitative and qualitative results.</li>
         <li>In this example, the specimen (urine) was collected after the request was made. The specimen is linked to the request within the <code>Bundle</code> using <code>Specimen.request</code>.</li>
+        <li>A clinical interpretation/summary of the test results is carried in <code>DiagnosticReport.conclusion</code>.</li>
     </ul>
 </div>
 <div id="DataModel" role="tabpanel" class="tabcontent">
