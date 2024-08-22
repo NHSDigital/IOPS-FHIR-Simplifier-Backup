@@ -1,0 +1,309 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "genomics-primarysample",
+  "url": "https://fhir.nhs.uk/ConceptMap/primarysample",
+  "version": "0.0.1",
+  "name": "GenomicsPrimarySample",
+  "title": "Genomics Primary Sample",
+  "status": "draft",
+  "date": "2024-08-15T00:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
+  "purpose": "ConceptMap used for the translation and recording of concepts for the categories of primary sample types.This is intended for the element Specimen.type",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "targetUri": "http://snomed.info/sct?fhir_vs=ecl/%3C%3C%20123038009%20",
+  "group": [
+    {
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "amniotic-fluid",
+          "display": "Amniotic Fluid",
+          "target": [
+            {
+              "code": "119373006",
+              "display": "Amniotic fluid specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "blood",
+          "display": "Blood",
+          "target": [
+            {
+              "code": "119297000",
+              "display": "Blood specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "bone-marrow-trephine",
+          "display": "Bone Marrow Trephine",
+          "target": [
+            {
+              "code": "258585008",
+              "display": "Bone marrow trephine specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "bone-marrrow-aspirate",
+          "display": "Bone Marrrow Aspirate",
+          "target": [
+            {
+              "code": "396997002",
+              "display": "Specimen from bone marrow obtained by aspiration",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "buccals-smear",
+          "display": "Buccals Smear",
+          "target": [
+            {
+              "code": "258564008",
+              "display": "Buccal smear specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cerebrospinal-fluid",
+          "display": "Cerebrospinal Fluid",
+          "target": [
+            {
+              "code": "258450006",
+              "display": "Cerebrospinal fluid specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cord-blood",
+          "display": "Cord Blood",
+          "target": [
+            {
+              "code": "122556008",
+              "display": "Cord blood specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "chorionic-villus-sampling",
+          "display": "Chorionic Villus Sampling",
+          "target": [
+            {
+              "code": "258565009",
+              "display": "Chorionic villi specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fetal-blood",
+          "display": "Fetal Blood",
+          "target": [
+            {
+              "code": "737357006",
+              "display": "Fetal blood specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fibroblasts",
+          "display": "Fibroblasts",
+          "target": [
+            {
+              "code": "119333000",
+              "display": "Fibroblast specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "heart",
+          "display": "Heart",
+          "target": [
+            {
+              "code": "127462005",
+              "display": "Specimen from heart (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "kidney",
+          "display": "Kidney",
+          "target": [
+            {
+              "code": "127473003",
+              "display": "Specimen from kidney (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "liver",
+          "display": "Liver",
+          "target": [
+            {
+              "code": "119383005",
+              "display": "Specimen from liver (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "lymph-node",
+          "display": "Lymph Node",
+          "target": [
+            {
+              "code": "258589002",
+              "display": "Lymph node specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "123038009",
+              "display": "Specimen (specimen)",
+              "equivalence": "wider",
+              "comment": "Any other suitable descendant of 123038009|Specimen (specimen) not listed on this code. This should be provided by free text if no suitable SNOMED CT is found."
+            }
+          ]
+        },
+        {
+          "code": "pericardial",
+          "display": "Pericardial",
+          "target": [
+            {
+              "code": "122571007",
+              "display": "Pericardial fluid specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "peritoneal",
+          "display": "Peritoneal",
+          "target": [
+            {
+              "code": "430250001",
+              "display": "Specimen from peritoneum (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pleural-fluid",
+          "display": "Pleural Fluid",
+          "target": [
+            {
+              "code": "418564007",
+              "display": "Pleural fluid specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "products of conception",
+          "display": "Products Of Conception",
+          "target": [
+            {
+              "code": "258428005",
+              "display": "Products of conception tissue specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "119342007",
+              "display": "Saliva specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "skeletal muscle",
+          "display": "Skeletal Muscle",
+          "target": [
+            {
+              "code": "119331003",
+              "display": "Skeletal muscle specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "skin",
+          "display": "Skin",
+          "target": [
+            {
+              "code": "608969007",
+              "display": "Specimen from skin (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "spleen",
+          "display": "Spleen",
+          "target": [
+            {
+              "code": "433308004",
+              "display": "Specimen from spleen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tumour",
+          "display": "Tumour",
+          "target": [
+            {
+              "code": "258435002",
+              "display": "Tumor tissue specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "urine",
+          "display": "Urine",
+          "target": [
+            {
+              "code": "122575003",
+              "display": "Urine specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
