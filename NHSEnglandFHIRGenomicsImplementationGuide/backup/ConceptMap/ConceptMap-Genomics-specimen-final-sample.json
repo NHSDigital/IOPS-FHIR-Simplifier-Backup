@@ -1,0 +1,146 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "genomics-finalsample",
+  "url": "https://fhir.nhs.uk/ConceptMap/finalsample",
+  "version": "0.0.1",
+  "name": "GenomicsFinalSample",
+  "title": "Genomics Final Sample",
+  "status": "draft",
+  "date": "2024-08-16T18:00:00.000Z",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "A ConceptMap used for the translation and recording of concepts from MDS source data(code-options) to equivalent Snomed CT codes, and FHIR spec.",
+  "purpose": "ConceptMap used for the translation and recording of concepts for the categories of final sample types.This is intended for the element Specimen.type",
+  "copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "targetUri": "http://snomed.info/sct",
+  "group": [
+    {
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "258566005",
+              "display": "Deoxyribonucleic acid specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DNA/RNA",
+          "display": "DNA/RNA",
+          "target": [
+            {
+              "code": "258566005",
+              "display": "Deoxyribonucleic acid specimen (specimen)",
+              "equivalence": "narrower",
+              "comment":"The source concept expect that the specimen here should be either of DNA or RNA specimen. Additional notes should be provided in Specimen.note on the specimen ootion used."
+            },
+            {
+              "code": "441673008",
+              "display": "Ribonucleic acid specimen (specimen)",
+              "equivalence": "narrower",
+              "comment": "The source concept expect that the specimen here should be either of DNA or RNA specimen. Additional notes should be provided in Specimen.note on the specimen ootion used."
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "441673008",
+              "display": "Ribonucleic acid specimen (specimen)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cDNA",
+          "display": "cDNA",
+          "target": [
+            {
+              "code": "70016006",
+              "display": "Complementary deoxyribonucleic acid (substance)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ctDNA",
+          "display": "ctDNA",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "No suitable SNOMED CT code is found for this concept at this time. Thus, this concept should be recored under Specimen.type as free text as Circulating Tumour DNA"
+            }
+          ]
+        },
+        {
+          "code": "cfDNA",
+          "display": "cfDNA",
+          "target": [
+            {
+              "code": "70016006",
+              "display": "Cell free deoxyribonucleic acid (substance)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cell-suspension",
+          "display": "Cell Suspension",
+          "target": [
+            {
+              "code": "702451000",
+              "display": "Cultured cells (substance)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fixed-tissue-on-slide",
+          "display": "Fixed Tissue on Slide",
+          "target": [
+            {
+              "code": "787150001",
+              "display": "Stained slide of tissue section (specimen)",
+              "equivalence": "narrower",
+              "comment": "An appropriate concept should be selected to indicate either stained or unstained."
+            },
+            {
+              "code": "787149001",
+              "display": "Unstained slide of tissue section (specimen)",
+              "equivalence": "narrower",
+              "comment": "An appropriate concept should be selected to indicate either stained or unstained."
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "123038009",
+              "display": "Specimen (specimen)",
+              "equivalence": "wider",
+              "comment": "Any other suitable Specimen types not listed on this code. This should be provided by free text if no suitable SNOMED CT is found."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
