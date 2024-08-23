@@ -9,7 +9,7 @@
 - name: ValueSets
   filename: ValueSets
 - name: ConceptMaps
-  filename: ConceptMaps.page.md
+  filename: ConceptMaps
 - name: OperationDefinitions
   filename: OperationDefinitions
 - name: CapabilityStatements
