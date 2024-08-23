@@ -1,8 +1,25 @@
 ## What is Directory of Service (DoS)?
 
-The DoS is a directory of NHS services which is integrated with NHS Pathways, the clinical decision support system that supports 111 and some 999 providers.
+The DoS is a directory of NHS services available to a Patient.
 
 Once someone has gone through a triage the DoS provides information about where they should go next.
+
+<plantuml>
+@startuml
+title Locating a Healthcare Service
+actor "Healthcare Worker"
+participant "Directory of Services"
+actor Patient
+
+"Healthcare Worker" -> "Directory of Services": Access DoS
+activate "Directory of Services"
+"Directory of Services" --> "Healthcare Worker": Secure access provided
+"Healthcare Worker" -> "Directory of Services": Search for relevant services
+"Directory of Services" --> "Healthcare Worker": Return list of services
+Deactivate "Directory of Services"
+"Healthcare Worker" -> Patient: Provides list of relevant services
+@enduml
+</plantuml>
 
 The DoS uses the information already collected about the patient – such as their location and how quickly they need treatment – to provide a list of the best services for them. For example, this might be the nearest pharmacy, an urgent treatment centre or an emergency department.
 
@@ -12,10 +29,7 @@ Refer to NHS Program URL for more information <a href='https://digital.nhs.uk/se
 
 ## What is the Aim of this Implementation Guide? ##
 
-This implementation guide provides guidance on implementing the Directory of Service (DoS) FHIR R4 Standard. The project's scope involves a technical re-architecture of the Directory of Services. This entails replacing outdated components causing user or maintenance issues.
-
-The rewrite aims to introduce necessary enhancements aligning the DoS with other product suites and establishing a new foundational infrastructure to address future needs effectively.
-
+This implementation guide provides guidance on implementing the Directory of Service (DoS) FHIR R4 Standard.
 <h3 id="licence-heading">Licence</h3>
 
 <div markdown="span" class="alert alert-warning" role="alert"><h4 id="Licence"><i class="fas fa-gavel"></i> Licensing and Publisher</h4>
