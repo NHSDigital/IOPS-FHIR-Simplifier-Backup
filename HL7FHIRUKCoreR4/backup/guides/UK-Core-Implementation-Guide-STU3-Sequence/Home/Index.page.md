@@ -51,6 +51,13 @@ This guidance covers items such as:
 
 ---
 
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-info-circle"></i> Use International FHIR</h4>
+We are not restricted to use UKCore only, one can also use International FHIR depends on the need of their work. So, One can do there work with the use of International FHIR resources if they are not present in the UKCORE.
+<br><br>
+</div>
+
+---
+
 ### How to Read This Guide ###
 
 This Guide is divided into several pages which are listed at the top of each page in the menu bar.
