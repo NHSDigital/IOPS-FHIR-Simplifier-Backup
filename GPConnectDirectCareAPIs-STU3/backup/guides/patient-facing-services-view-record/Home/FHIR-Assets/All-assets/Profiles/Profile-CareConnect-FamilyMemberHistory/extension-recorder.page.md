@@ -14,9 +14,14 @@ Prescibing clinician Jane is re-ordering previous medication that Fred previousl
 Nurse Rodger is ordering medication prescribed by Fred	Fred	Rodger
 Pharmacy technical Sally is re-ordering medication prescribed by Fred	Fred	Sally
 Example
+
+```xml
 <recorder>
     <identifier>
         <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
         <value value="0054272" />
     </identifier>
  </recorder>
+ ```
+
+---
