@@ -2,9 +2,17 @@
 subject: https://fhir.nhs.uk/CodeSystem/specimen-collection-specialhandling-genomics
 issue: specimen-collection-specialhandling-genomics
 ---
-## CodeSystem specimen-collection-specialhandling-genomics
+## CodeSystem Specimen Collection Special Handling
 
-A set of codes use to identify the type of special collection process require to handle some specimen in genomics.This is intended to be used on Specimen.collection.extension:specialHandling element.
+@```
+from
+	CodeSystem
+where
+  id='specimen-collection-specialhandling-genomics'
+  select
+    Description:description
+```
+
 
 {{render:Home-FHIRAssets-CodeSystems-CodeSystem-Template}}
 

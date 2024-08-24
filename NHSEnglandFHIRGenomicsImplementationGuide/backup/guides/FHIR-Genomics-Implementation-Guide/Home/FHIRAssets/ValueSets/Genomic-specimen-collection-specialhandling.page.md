@@ -4,8 +4,14 @@ issue: genomics-specimen-collection-specialhandling
 ---
 ## ValueSet Genomics Specimen Collection Special Handling
 
-A ValueSet use to identify the type of special collection process require to handle some specimen in genomics.
-
+@```
+from
+	ValueSet
+where
+  id='genomics-specimen-collection-specialhandling'
+  select
+    Description:description
+```
 {{render:Home-FHIRAssets-ValueSets-ValueSet-Template}}
 
 <div id="Feedback" class="tabcontent">
