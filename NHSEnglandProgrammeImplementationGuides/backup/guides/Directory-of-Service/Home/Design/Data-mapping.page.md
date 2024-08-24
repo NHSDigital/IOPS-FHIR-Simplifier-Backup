@@ -13,12 +13,12 @@
 
 <plantuml>
 @startuml
-Organization "1" *-- "many" OrganizationAffiliation : contains
-Organization "1" *-- "many" HealthcareService : contains
-HealthcareService "1" *-- "many" Locations : contains
-HealthcareService "1" *-- "many" Schedule : contains
-Schedule "1" *-- "1" PractitionerRole : contains
-PractitionerRole "1" *-- "many" Practitioner : contains
+Organization "1" *-- "many" OrganizationAffiliation : has
+Organization "1" *-- "many" HealthcareService : provides
+HealthcareService "1" *-- "many" Locations : provided at
+HealthcareService "1" *-- "many" Schedule : offers
+Schedule "1" *-- "1" PractitionerRole : relate to
+PractitionerRole "1" *-- "many" Practitioner : performs role of
 Schedule "1" *-- "many" Slot : contains
 @enduml
 </plantuml>
@@ -280,3 +280,7 @@ The dates and times a service is available to be returned in a search.
   </tr>
 </tbody>
 </table>
+
+### Endpoint
+
+TBD
