@@ -1,0 +1,28 @@
+- name: Index
+  filename: Index.page.md
+- name: Purpose
+  filename: Purpose.page.md
+- name: Notational conventions
+  filename: Notational-conventions.page.md
+- name: Near real time view
+  filename: Near-real-time-view.page.md
+- name: Record locking
+  filename: Record-locking.page.md
+- name: Common user interface guidance
+  filename: Common-user-interface-guidance.page.md
+- name: Patient banner
+  filename: Patient-banner.page.md
+- name: Minimum display resolution
+  filename: Minimum-display-resolution.page.md
+- name: Structured data
+  filename: Structured-data.page.md
+- name: Section retrieval
+  filename: Section-retrieval.page.md
+- name: HTML section views
+  filename: HTML-section-views.page.md
+- name: XHTML narrative
+  filename: XHTML-narrative.page.md
+- name: Styling the XHTML
+  filename: Styling-the-XHTML.page.md
+- name: CSS IDs and classes
+  filename: CSS-IDs-and-classes.page.md
