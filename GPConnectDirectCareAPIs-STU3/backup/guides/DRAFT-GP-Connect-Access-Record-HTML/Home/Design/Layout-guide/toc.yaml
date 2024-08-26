@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: Purpose
+  filename: Purpose.page.md
+- name: Section layout
+  filename: Section-layout.page.md
+- name: Section and subsection title
+  filename: Section-and-subsection-title.page.md

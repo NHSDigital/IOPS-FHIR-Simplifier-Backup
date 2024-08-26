@@ -1,2 +1,6 @@
 - name: Design decisions
   filename: Design-decisions
+- name: Implementation standards
+  filename: Implementation-standards
+- name: Layout guide
+  filename: Layout-guide
