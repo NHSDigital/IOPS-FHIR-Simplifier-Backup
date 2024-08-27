@@ -19,7 +19,7 @@ HealthcareService "1" *-- "many" Locations : provided at
 HealthcareService "1" *-- "many" Schedule : offers
 Schedule "1" *-- "1" PractitionerRole : relate to
 PractitionerRole "1" *-- "many" Practitioner : performs role of
-Schedule "1" *-- "many" Slot : contains
+Schedule "1" *-- "many" Slot : has
 @enduml
 </plantuml>
 
