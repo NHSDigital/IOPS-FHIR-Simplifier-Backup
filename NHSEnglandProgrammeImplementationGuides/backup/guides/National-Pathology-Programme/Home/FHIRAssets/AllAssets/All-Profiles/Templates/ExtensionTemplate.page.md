@@ -9,7 +9,7 @@
   <h3>Tree View</h3>
   {{tree}}
 </div>
-<div id="Table View" class="tabcontent expandedexample">
+<div id="Table View" class="tabcontent">
   <h3>Table View</h3>
  {{table}}
 </div>
