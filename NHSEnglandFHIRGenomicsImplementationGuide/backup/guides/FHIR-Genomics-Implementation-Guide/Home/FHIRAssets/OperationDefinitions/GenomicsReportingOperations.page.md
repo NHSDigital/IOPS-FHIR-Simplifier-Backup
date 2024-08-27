@@ -1,5 +1,4 @@
-## {{page-title}}
-
+## Genomics Reporting Operations
 For Genomic Data Retrieval, including integration with the proposed NHS England Unified Genomic Record, the NHS England Genomics Unit are currently considering adoption of the [GenomeX Genomic Operations guidance](https://build.fhir.org/ig/HL7/genomics-reporting/operations.html).
 
 ### find-subject-variant
