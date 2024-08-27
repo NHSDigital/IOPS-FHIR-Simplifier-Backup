@@ -6,3 +6,5 @@
   filename: Section-layout.page.md
 - name: Section and subsection title
   filename: Section-and-subsection-title.page.md
+- name: Banners
+  filename: Banners.page.md
