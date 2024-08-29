@@ -81,9 +81,10 @@ This guide is divided into the following sections and pages which are accessible
     * {{pagelink:BuildContructPathologyRequestBundle}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR `Bundle` for a pathology test request. 
     * {{pagelink:BuildContructPathologyReportBundle}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR `Bundle` for a pathology test report. 
 * FHIR Assets:
-    * {{pagelink:FHIRAssetsR4Profiles}}: Describes the FHIR profiles that are referenced by this implementation guide.
-    * {{pagelink:FHIRAssetsR4CodeSystems}}: Describes any new CodeSystems that have been developed for use as part of this implementation guide.
-    * {{pagelink:FHIRAssetsR4ValueSets}}: Describes any new ValueSets that have been developed for use as part of this implementation guide.
+    * {{pagelink:FHIRAssetsR4Profiles}}: Describes the profiles that are referenced by this implementation guide.
+    * {{pagelink:FHIRAssetsR4Extensions}}: Describes any extensions that are particularly relevant to pathology.
+    * {{pagelink:FHIRAssetsR4CodeSystems}}: Describes any CodeSystems that are particularly relevant to pathology.
+    * {{pagelink:FHIRAssetsR4ValueSets}}: Describes any ValueSets that are particularly relevant to pathology.
 * Examples:
     * {{pagelink:R4Examples}}: Lists the FHIR examples that are included in this implementation guide, categorised by resource type and pathology speciality.
 * Help and Support:

@@ -3,6 +3,17 @@ topic: ReleaseNotes
 ---
 ## Release Notes
 
+### v0.1.8 (30/08/2024)
+* Updated the following examples:
+    * {{pagelink:R4BundleExampleFullBloodCountRequest}} - changed the data element used to carry clinical context from `ServiceRequest.note` to `ServiceRequest.reasonCode.text`
+    * {{pagelink:R4BundleExampleFullBloodCountReport}} - changed the data element used to carry clinical context from `ServiceRequest.note` to `ServiceRequest.reasonCode.text`
+    * {{pagelink:R4SnippetsDiagnosticReport}} - added an example for `extension-DiagnosticReport.note`, changed `DiagnosticReport.basedOn.type` from "http://hl7.org/fhir/StructureDefinition/ServiceRequest" to "ServiceRequest" and added an additional instance of `DiagnosticReport.category` to illustrate how a laboratory department name may be carried.
+    * {{pagelink:R4SnippetsServiceRequest}} - added examples for `ServiceRequest.identifier.type` to illustrate the use of separate business identifiers for the laboratory service requester and laboratory service provider.
+* Added an {{pagelink:FHIRAssetsR4Extensions}} page (under the **FHIR Assets** menu bar item).
+
+
+---
+
 ### v0.1.7 (21/06/2024)
 
 * Added two new `Bundle` examples, {{pagelink:R4BundleExampleGTTReportUnstructured}} and {{pagelink:R4BundleExampleUrineMCSReportUnstructured}}, based on the existing structured versions of the same examples. The unstructured versions illustrate how complex reports may be represented using formatted text within a single `Observation`, rather than using a set of structured, coded `Observations`.
@@ -20,8 +31,8 @@ topic: ReleaseNotes
 
 * Updated the Additional Guidance section in each of the {{pagelink:FHIRAssetsR4Profiles}} to align with the content and format used in the [UK Core Implementation Guide (Version 2.0.0 - STU2 Sequence)](https://simplifier.net/guide/uk-core-implementation-guide-stu2?current).
 * Added links from each of the {{pagelink:FHIRAssetsR4Profiles}} to the examples in the {{pagelink:R4Examples}}, and also added links to the examples in the UK Core Implementation Guide. Included a new Table view for all examples.
-* Added a new {{pagelink:DataMapping}} page (under the Design menu bar item). This provides a set of data mappings between the FHIR profiles that are referenced by this implementation guide and the PMIP EDIFACT (NHS003) messaging specification.   
-* Updated the {{pagelink:FHIRAssetsR4CodeSystems}} and {{pagelink:FHIRAssetsR4ValueSets}} pages (under the FHIR Assets menu bar item).
+* Added a new {{pagelink:DataMapping}} page (under the **Design** menu bar item). This provides a set of data mappings between the FHIR profiles that are referenced by this implementation guide and the PMIP EDIFACT (NHS003) messaging specification.   
+* Updated the {{pagelink:FHIRAssetsR4CodeSystems}} and {{pagelink:FHIRAssetsR4ValueSets}} pages (under the **FHIR Assets** menu bar item).
 
 ---
 
@@ -35,7 +46,7 @@ topic: ReleaseNotes
 
 ### v0.1.4 (29/12/2023)
 
-* Removed the content from the {{pagelink:Transport}} and {{pagelink:AcknowledgementFramework}} pages (under the Design menu bar item). Awaiting confirmation of what data exchange and acknowledgement approach will be adopted for FHIR UK Core R4 based interactions between pathology laboratory systems and GP EPR systems.
+* Removed the content from the {{pagelink:Transport}} and {{pagelink:AcknowledgementFramework}} pages (under the **Design** menu bar item). Awaiting confirmation of what data exchange and acknowledgement approach will be adopted for FHIR UK Core R4 based interactions between pathology laboratory systems and GP EPR systems.
 * Added the following new `Bundle` examples:
     * {{pagelink:R4BundleExampleLipidsandHbA1cRequest}}
     * {{pagelink:R4BundleExampleLipidsandHbA1cReport}}
@@ -46,8 +57,8 @@ topic: ReleaseNotes
 
 ### v0.1.3 (08/12/2023)
 
-* Added a new {{pagelink:Background}} page (under the Design menu bar item). This incorporates content from the previous version of the {{pagelink:DesignOverview}} page, with additional material describing GP practice pathology data flows. 
-* Updated the {{pagelink:DesignOverview}} page (under the Design menu bar item). This now contains additional content, including a summary of the FHIR design approach that has been adopted as part of this implementation guide and the use of SNOMED CT.
+* Added a new {{pagelink:Background}} page (under the **Design** menu bar item). This incorporates content from the previous version of the {{pagelink:DesignOverview}} page, with additional material describing GP practice pathology data flows. 
+* Updated the {{pagelink:DesignOverview}} page (under the **Design** menu bar item). This now contains additional content, including a summary of the FHIR design approach that has been adopted as part of this implementation guide and the use of SNOMED CT.
 * Updated references to the PaLM and PBCL SNOMED CT reference sets throughout the implementation guide.
 
 ---
