@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Clinical narrative
+  filename: Clinical-narrative.page.md
+- name: Purpose
+  filename: Purpose.page.md
+- name: Sections
+  filename: Sections.page.md
+- name: Date filter
+  filename: Date-filter.page.md
+- name: Section banner content
+  filename: Section-banner-content.page.md
+- name: Section detail
+  filename: Section-detail.page.md

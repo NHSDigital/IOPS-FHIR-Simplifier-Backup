@@ -1,6 +1,0 @@
-- name: Index
-  filename: Index.page.md
-- name: Linkages
-  filename: Linkages.page.md
-- name: FHIR profiles returned on query
-  filename: FHIR-profiles-returned-on-query.page.md

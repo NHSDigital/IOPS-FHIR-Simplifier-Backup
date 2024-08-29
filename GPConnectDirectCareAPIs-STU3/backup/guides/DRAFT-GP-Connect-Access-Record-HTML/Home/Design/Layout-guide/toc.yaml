@@ -8,3 +8,9 @@
   filename: Section-and-subsection-title.page.md
 - name: Banners
   filename: Banners.page.md
+- name: Date filters
+  filename: Date-filters.page.md
+- name: Per section default time frames
+  filename: Per-section-default-time-frames.page.md
+- name: Generic table construction requirements
+  filename: Generic-table-construction-requirements.page.md
