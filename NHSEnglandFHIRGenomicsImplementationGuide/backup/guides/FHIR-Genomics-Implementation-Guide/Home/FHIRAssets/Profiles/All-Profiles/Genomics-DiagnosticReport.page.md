@@ -132,6 +132,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#extension:recommended-action">extension:recommended-action</a>
 - <a href="#extension:recommended-action">extension:genomic-study</a>
 - <a href="#extension:supporting-info">extension:supporting-info</a>
+- <a href="#extension:workflow-relatedArtifact">extension:workflow-relatedArtifact</a>
 - <a href="#basedOn">basedOn</a>
 - <a href="#status">status</a>
 - <a href="#code">code</a>
@@ -152,13 +153,6 @@ TBC. Only relevant for structured genomic reports (included in the [Genomics Rep
             "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
             "valueReference" : {
                 "reference" : "Task/MedicationRecommendationExample1"
-            }
-        },
-        {
-            "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-artifact",
-            "valueRelatedArtifact" : {
-                "type" : "citation",
-                "url" : "https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19)"
             }
         }
     ],
@@ -187,6 +181,25 @@ TBC. Only relevant for structured genomic reports (included in the [Genomics Rep
             "url" : "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
             "valueReference" : {
                 "reference" : "DocumentReference/DocumentReference-PharmCAT-Example"
+            }
+        }
+    ],
+```
+
+<a name="extension:workflow-relatedArtifact"></a>
+#### extension:workflow-relatedArtifact
+TBC. Only relevant for structured genomic reports (included in the [Genomics Report IG Genomic Report Profile](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). A reference to the guidelines or other knowledge artifacts which were used to guide interpretation or recommended actions included within this DiagnosticReport. 
+
+If entries constitute published papers, they SHOULD be referenced using a known citation style, e.g. Vancouver/Harvard. Alternatively for online texts, these MAY be referenced via URL only.
+
+A fixed value of 'citation' is expected for the type element, though this recommendation is pending further use cases.
+```json
+"extension" : [
+        {
+            "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+            "valueRelatedArtifact" : {
+                "type" : "citation",
+                "url" : "https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19)"
             }
         }
     ],
