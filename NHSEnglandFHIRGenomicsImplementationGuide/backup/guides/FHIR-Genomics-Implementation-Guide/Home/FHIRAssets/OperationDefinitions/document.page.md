@@ -1,12 +1,12 @@
 ## {{page-title}}
 
-As a consequence of supporting RESTful update operations on resources within the central broker, some information, such as patient history may change over time. This poses a problem when interrogating past 'documents' such as ServiceRequests or DiagnosticReports, as the information contained within them, or the references to other resources, may change after the a test request has been closed. 
+As a consequence of supporting RESTful update operations on resources within the central broker, some information, such as patient history may change over time. This poses a problem when interrogating past 'documents', or resources such as ServiceRequests or DiagnosticReports, as the information contained within them, or the references to other resources, may change after a test request has been closed. 
 
-To maintain accuracy of historic information, such as the observations a genomic report was based on, it may be necessary to create an immutable snapshot of the resources related to a ServiceRequest or DiagnosticReport after closure of a request.
+To maintain the accuracy of historic information, such as the observations a genomic report was based on, it may be necessary to create an immutable snapshot of the resources related to a ServiceRequest or DiagnosticReport after closure of a request.
 
-To support this, the central broker can create Document Bundles using the [$document](https://www.hl7.org/fhir/composition-operation-document.html) operation on Composition. The Compositions would need to be generated on closure of a ServiceRequest (e.g. a ServiceRequest being marked as 'completed' or 'revoked', or a DiagnosticReport marked as 'final', 'amended', 'corrected' or 'appended') to capture the final IDs for the ServiceRequest and DiagnosticReport.
+To support this, the central broker can create Document Bundles using the [$document](https://www.hl7.org/fhir/composition-operation-document.html) operation on [Composition](https://www.hl7.org/fhir/R4/composition.html). The Compositions would need to be generated on closure of a ServiceRequest (e.g. a ServiceRequest being marked as 'completed' or 'revoked', or a DiagnosticReport marked as 'final', 'amended', 'corrected' or 'appended') to capture the final IDs for the ServiceRequest and DiagnosticReport.
 
-Upon generation of the Composition, the central broker can call the $document operation on the resource, using the appropriate {{pagelink:Home/FHIRAssets/GraphDefinitions}} to follow the required resource references and generate a Bundle of type 'document' containing all the resources forming the order or result:
+Upon generation of the Composition, the central broker can call the $document operation on the Composition resource, using the appropriate {{pagelink:Home/FHIRAssets/GraphDefinitions}} to follow the required resource references and generate a Bundle of type 'document' containing all the resources forming the order or result:
 
 ```
 GET [base]/Composition/[id]/$document?persist=true&graph=genomics-test-result
