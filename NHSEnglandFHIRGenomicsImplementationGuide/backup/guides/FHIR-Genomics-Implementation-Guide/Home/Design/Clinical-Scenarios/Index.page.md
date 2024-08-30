@@ -33,5 +33,5 @@ The following pages detail the different scenarios the interoperability solution
 ### No Sample Required 
 In scenarios such as variant re-interpretation or re-analysis, there is no physical sample for the patient available. For these new test requests, the data is only used for re-interpretation or re-analysis of the original test ordered for the patient. Clear identification that there is no sample for the test request ordered is a requirement. Indication that a sample is not required is a crucial component in the overall sample tracking journey. 
 
-###Sample collected now vs. at a later date  
+### Sample collected now vs. at a later date  
 When a new genomic test request is ordered, samples may either be collected at the point of the test being ordered or at a later date (e.g., patient booked into phlebotomy clinic for blood). There is an additional scenario where a sample from the patient may have been collected previously or there is no sample required for specific test types (re-analysis). As samples may be collected and sent across multiple organisational boundaries or within the organisation itself, the requirement is to ensure that samples are always associated with the correct test request ID and cater for scenarios where a sample is not required or has been stored previously. 

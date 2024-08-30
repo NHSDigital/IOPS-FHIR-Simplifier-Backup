@@ -27,7 +27,7 @@ In this case, the data model SHOULD match the singleton/duo/trio scenario (Fetus
     <td>
 <ul><li><b>Woman is pregnant and testing is on the fetus (e.g., CVS or amnio):</b> The test requested is created on the fetal record. As part of fetus testing, the following information becomes mandatory:</li>
 <li>Woman's sample may be required for MCC (regardless of wheher the condition is peternal), see R321.1</li>
-<li>the ability  to capture test on the fetus (this may differ from local organisation to another and is typically the woman’s Hospital ID plus indication of fetus ( Ex. WG1342Fetus A) - <b>Used as the unique fetal identifier prior to NHS Number allocation</b></li>
+<li>the ability  to register a test against the fetus (this may differ from local organisation to another and is typically the woman’s Hospital ID plus indication of fetus ( Ex. WG1342Fetus A) - <b>Used as the unique fetal identifier prior to NHS Number allocation</b></li>
 <li>The capture of additional information such as fetal phenotypic sex (M/F/U or Unknown) and number of fetuses also becomes mandatory. - <b>Captured on the Patient resource for the foetus</b></li>
 <li>Pregnancy details: capture of Pregnancy type (Spontaneous conception, Surrogacy, or IVF Pregnancy). If IVF, the capture of own/donor egg/sperm and the age of the egg donor becomes mandatory - <b>Observation resources linked to the woman's patient record, as they relate to the pregnancy</b></li>
 <li><b>Note:</b> If fetus is under 24 weeks, the sample is from the woman (as fetal viability is from 24 weeks as per UK law) - <b>in this case the Proband (fetus) does not have any samples associated with their record.</b></li></ul>
@@ -38,8 +38,8 @@ In this case, the data model SHOULD match the singleton/duo scenario (Fetus is t
   </tr>
   <tr>
     <td>
-<ul><li><b>Woman is pregnant, multiple fetuses and test is completed on each fetus with a result per fetus:</b> An electronic test request <b>per fetus</b> is created on the fetal record.  A test request/sample collection is required for each fetus. Additional mandatory information required includes:</li>
-<li>the ability  to capture test on the fetus (this may differ from local organisation to another and is typically the woman’s Hospital ID plus indication of fetus (Ex. WG1342Fetus A) - <b>Used as the unique fetal identifier prior to NHS Number allocation</b></li>
+<ul><li><b>Woman is pregnant with multiple fetuses and test is completed on each fetus with a result per fetus:</b> An electronic test request <b>per fetus</b> is created on the fetal record.  A test request/sample collection is required for each fetus. Additional mandatory information required includes:</li>
+<li>the ability  to register a test against the fetus (this may differ from local organisation to another and is typically the woman’s Hospital ID plus indication of fetus (Ex. WG1342Fetus A) - <b>Used as the unique fetal identifier prior to NHS Number allocation</b></li>
 <li>The capture of additional information such as fetal phenotypic sex (M/F/Unclear or Unknown) and number of fetuses also becomes mandatory. - <b>Captured on the Patient resource for the fetus</b></li>
 <li>Pregnancy details: capture of Pregnancy type (Spontaneous conception, Surrogacy, or IVF Pregnancy). If IVF, the capture of own/donor egg/sperm and the age of the egg donor becomes mandatory - <b>Observation resources linked to the woman's patient record, as they relate to the pregnancy</b></li></ul>
     </td>
@@ -49,7 +49,7 @@ In this case, the data model SHOULD be equivalent to multiple singleton/duo test
   </tr>
   <tr>
     <td>
-<ul><li><b>Woman is pregnant and has had a miscarriage:</b> In certain scenarios, where further testing may be required on the fetus to inform the management on future pregnancies, testing may occur on the fetus.  A test request is created on the <b>woman’s</b> record with the confirmation of sample collected (if after 24 weeks as fetal tissue or cord blood)</li></ul>
+<ul><li><b>Woman is pregnant and has had a miscarriage:</b> In these scenarios, further testing may be required to inform the management of future pregnancies. Testing may occur on the woman, fetus or sample from the previous pregnancy (if available).  A test request is created on the <b>woman’s</b> record with the confirmation of sample collected (if after 24 weeks as fetal tissue or cord blood)</li></ul>
     </td>
     <td>
 In this case, the data model SHOULD match the singleton/duo scenario (Woman is the Proband, as testing is for the benefit of the woman, with foetal information captured through additional RelatedPerson and Patient records attached to the ServiceRequest). If samples from the previous miscarriage are tested, these should be added as pre-existing Specimens to the ServiceRequest (as per the DNA Storage, using stored sample example)
