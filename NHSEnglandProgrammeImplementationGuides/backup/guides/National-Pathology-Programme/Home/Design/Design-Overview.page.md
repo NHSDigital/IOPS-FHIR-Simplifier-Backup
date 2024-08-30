@@ -195,4 +195,6 @@ The `Observation.value[x]` data element is used to represent the test result val
 
 The `Observation.interpretation` data element is used to provide a coded, categorical assessment of a test result value. The code is taken from the [ObservationInterpretationCodes]( https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/80843) FHIR value set. The associated test result value is usually **quantitative** and represented using `valueQuantity`, `valueRange` or `valueRatio` as described above.
 
+**Note:** Semi-quantitative and qualitative results are currently represented as text in PMIP EDIFACT (NHS003). To facilitate the adoption of FHIR and minimise the impact on existing systems and processes, it is anticipated that these types of results will initially continue to be represented as text (using `valueString`).
+
 Refer to the {{pagelink:R4ObservationTestResult}} profile definition for further information relating to the representation of test results.

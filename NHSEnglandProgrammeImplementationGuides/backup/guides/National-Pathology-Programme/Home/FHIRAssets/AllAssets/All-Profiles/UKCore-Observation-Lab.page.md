@@ -107,6 +107,8 @@ If the result value is coded (i.e. a semi-quantitative or qualitative result typ
 * `Observation.valueCodeableConcept.coding.code` = `260385009"`
 * `Observation.valueCodeableConcept.coding.display` = `Negative`
 
+**Note:** Semi-quantitative and qualitative results are currently represented as text in PMIP EDIFACT (NHS003). To facilitate the adoption of FHIR and minimise the impact on existing systems and processes, it is anticipated that these types of results will initially continue to be represented as text (using `valueString`).
+
 Refer to the {{pagelink:DesignOverview}} section for further information relating to the representation of different types of test results.
 
 ---
