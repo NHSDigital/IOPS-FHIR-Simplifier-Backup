@@ -9,8 +9,8 @@ topic: ReleaseNotes
     * {{pagelink:R4BundleExampleFullBloodCountReport}} - changed the data element used to carry clinical context from `ServiceRequest.note` to `ServiceRequest.reasonCode.text`
     * {{pagelink:R4SnippetsDiagnosticReport}} - added an example for `extension-DiagnosticReport.note`, changed `DiagnosticReport.basedOn.type` from "http://hl7.org/fhir/StructureDefinition/ServiceRequest" to "ServiceRequest" and added an additional instance of `DiagnosticReport.category` to illustrate how a laboratory department name may be carried.
     * {{pagelink:R4SnippetsServiceRequest}} - added examples for `ServiceRequest.identifier.type` to illustrate the use of separate business identifiers for the laboratory service requester and laboratory service provider.
+* Added additional guidance to the {{pagelink:DesignOverview}} page and {{pagelink:R4ObservationTestResult}} profile definition regarding the use of text for semi-quantitative and qualitative result types.
 * Added an {{pagelink:FHIRAssetsR4Extensions}} page (under the **FHIR Assets** menu bar item).
-
 
 ---
 
