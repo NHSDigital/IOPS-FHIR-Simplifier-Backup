@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Business Information Model
+  filename: Business-Information-Model.page.md
+- name: FHIR Data Model
+  filename: FHIR-Data-Model.page.md
+- name: Design Approach
+  filename: Design-Approach.page.md
+- name: SNOMED CT Usage
+  filename: SNOMED-CT-Usage.page.md
+- name: Representation of Different Types of Test Results
+  filename: Representation-of-Different-Types-of-Test-Results.page.md
