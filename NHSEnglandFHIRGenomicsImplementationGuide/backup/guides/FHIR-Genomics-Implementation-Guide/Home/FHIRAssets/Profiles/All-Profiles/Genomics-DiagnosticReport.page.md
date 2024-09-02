@@ -130,7 +130,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 ### Additional Guidance
 
 - <a href="#extension:recommended-action">extension:recommended-action</a>
-- <a href="#extension:recommended-action">extension:genomic-study</a>
+- <a href="#extension:genomic-study">extension:genomic-study</a>
 - <a href="#extension:supporting-info">extension:supporting-info</a>
 - <a href="#extension:workflow-relatedArtifact">extension:workflow-relatedArtifact</a>
 - <a href="#basedOn">basedOn</a>

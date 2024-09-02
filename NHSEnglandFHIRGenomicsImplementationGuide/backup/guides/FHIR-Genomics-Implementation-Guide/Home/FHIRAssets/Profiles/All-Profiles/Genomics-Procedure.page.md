@@ -6,6 +6,8 @@ Assertion of an absence of a procedure being performed SHOULD be recorded using 
 
 At a minimum, Procedure resources are expected to contain the status, code, subject and performedDateTime, though additional information conforming to the FHIR profile below MAY be included if relevant.
 
+[Genomic Study](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study.html) and [Genomic Study Analysis](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study-analysis.html) profiles on Procedure may also be used as part of structured reporting. Mandated usage of these profiles is pending data standard discovery work to identify the items required within Genomic Test Reporting. As such, elements called out, and guidance suggested on this page, may be subject to change. 
+
 | Profile url | FHIR Module | Normative Status |
 |--
 | [https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
@@ -97,11 +99,105 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 <br>
 
 ### Additional Guidance
-
+	
+- <a href="#extension:genomic-study-analysis">extension:genomic-study-analysis</a>
+- <a href="#genomic-study-analysis">Genomic Study Analysis extensions</a>
 - <a href="#status">status</a>
 - <a href="#code">code</a>
 - <a href="#subject">subject</a>
 - <a href="#performed">performed\[x\]</a>
+
+<a name="extension:genomic-study-analysis"></a>
+#### extension:genomic-study-analysis
+TBC. From the Genomic Reporting IG [Genomic Study](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study.html) profile. Reference to the [Genomic Study Analysis](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study-analysis.html) resource, detailing the analyses performed as part of genomic test.
+```json
+"extension" : [
+    {
+      "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext",
+      "valueReference" : {
+        "reference" : "Procedure/PGXGenomicStudyAnalysis"
+      }
+    }
+  ],
+```
+
+<a name="genomic-study-analysis"></a>
+#### Genomic Study Analysis extensions
+TBC. From the Genomic Reporting IG [Genomic Study Analysis](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study-analysis.html) profile. Various extensions covering the metadata related to a genomic test, e.g. regions studied, chage types tested for etc. For the full list of extensions, please see the linked profile page.
+
+Use of the profile and its extensions is pending further discovery of the data standards required for Genomic Reporting in the UK.
+```json
+"extension" : [
+    {
+      "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build",
+      "valueCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "LA26806-2",
+            "display" : "GRCh38"
+          }
+        ]
+      }
+    },
+    {
+      "extension" : [
+        {
+          "url" : "sequencing-coverage",
+          "valueQuantity" : {
+            "value" : 100
+          }
+        }
+      ],
+      "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-metrics"
+    },
+    {
+      "extension" : [
+        {
+          "url" : "description",
+          "valueString" : "protein-coding and exon-splicing regions"
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [
+              {
+                "system" : "http://www.genenames.org",
+                "code" : "HGNC:2621",
+                "display" : "CYP2C19"
+              }
+            ]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [
+              {
+                "system" : "http://www.genenames.org",
+                "code" : "HGNC:2623",
+                "display" : "CYP2C9"
+              }
+            ]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [
+              {
+                "system" : "http://www.genenames.org",
+                "code" : "HGNC:23663",
+                "display" : "VKORC1"
+              }
+            ]
+          }
+        }
+      ],
+      "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions"
+    }
+  ],
+```
 
 <a name="status"></a>
 #### status
@@ -113,6 +209,8 @@ Status SHALL use the codes recommended in the base Procedure resource, appropria
 <a name="code"></a>
 #### code
 SHALL be present. SNOMED CT coding is preferred, though alternative codings MAY be provided subject to review of the Coding system by the NHS England Genomics Unit.
+
+For the [Genomic Study](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study.html) profile, expected to be from the [Genomic Study Type ValueSet](https://build.fhir.org/ig/HL7/genomics-reporting/ValueSet-genomic-study-type-vs.html)
 ```json
 "code": {
         "coding":  [
