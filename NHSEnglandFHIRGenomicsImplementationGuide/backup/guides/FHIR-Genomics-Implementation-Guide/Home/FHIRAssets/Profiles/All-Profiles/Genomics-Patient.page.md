@@ -4,6 +4,10 @@ The focal resource for recording who a test order and genomic report are for.
 
 It is expected that client's will need to post Patient resources to the central GMS as some demographic information specific to Genomics will not have been captured within other systems such as PDS.
 
+**For patients included within PDS, it is expected source systems SHOULD only send genomic specific information not recorded against PDS, e.g. birthSex, genomic specific identifiers and a link to the PDS record, as well as the NHS number identifier. (NOTE: examples provided for patient resources are fully expanded to illustrate how information should be structured but any infomation already recorded by PDS SHOULD NOT be duplicated within the genomic order management services). Querying patient demographic information, such as death status, would then require client systems to follow the PDS link within the Patient record to retrieve the PDS patient.**
+
+**For patients not included on PDS, e.g. private/overseas patients or fetal records, the requester SHOULD send all information necessary to facilitate testing and interpretation of the request.**
+
 Alternatively, systems MAY opt to include pointers to the Patient resource on their local system, though the mechanism preferred by the NHS England Genomics Unit has yet to be decided.
 
 | Profile url | FHIR Module | Normative Status |

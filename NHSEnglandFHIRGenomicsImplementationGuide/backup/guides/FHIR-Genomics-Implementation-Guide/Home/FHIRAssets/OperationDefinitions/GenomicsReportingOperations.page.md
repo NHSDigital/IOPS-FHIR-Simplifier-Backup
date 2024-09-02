@@ -8,3 +8,19 @@ Specifically, the [find-subject-variants operation](https://build.fhir.org/ig/HL
 The VCF model has support for annotations e.g. through the text field (8th column) within a VCF file. While this can be split by commas etc. fully structured annotation is not supported.
 
 While storing all variants as FHIR resources would be prohibitively costly, [FHIR variants](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-variant.html) can be generated for variants of clinical significance. As structured reporting progresses, representing variants within FHIR can be incorporated into the interpretation process, using guidance from the [Genomics Reporting IG](https://build.fhir.org/ig/HL7/genomics-reporting/sequencing.html). Variants can then be linked directly to the report that uses this data.
+
+### Other subject level operations
+
+Implementation of other subject level operations are pending use cases to support these operations.
+
+### Population level operations
+
+Implementation of population level operations are pending use cases to support these operations. It is expected these operations may be used to support research or population health based statistics.
+
+### Metadata operations
+
+The [find-study-metadata](https://build.fhir.org/ig/HL7/genomics-reporting/OperationDefinition-find-study-metadata.html) operation can be used to query for subject/test specific metadata such as regions studied and DNA change types tested for.
+
+It is expected that the test requested will have its own set of metadata, driven by the genomics testing service (Test Directory) but actual delivered tests may differ due to a number of factors, e.g. specimen quality, equipment available etc.
+
+The delivered test metadata will need to be recorded against the outcome of a test i.e. the DiagnosticReport. As per the Genomics Reporting IG, it is expected that this would be recorded via the [Genomic Study](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study.html) profile on procedure, and component [Genomic Study Analysis](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study-analysis.html). Effective use of this operation requires the analyses performed to be consistently and routinely structured (which is not currently the case within Genomics in the UK. As such preliminary work to structure the metadata surrounding tests will need to be performed, this may be facilitated by the work programmes within NHS England to standardise and share bioinformatics pipelines/workflows.
