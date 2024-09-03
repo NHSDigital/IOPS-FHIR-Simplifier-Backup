@@ -7,7 +7,9 @@
 
 <h5><ins>Guidance</ins></h5>
 
-A use-case for the `category` element within GP Connect has not been defined.
+	
+Classification of the procedure
+Binding (example): A code that classifies a procedure for searching, sorting and display purposes. ( http://hl7.org/fhir/stu3/valueset-procedure-category.html )
 
 <h5><ins>Example</ins></h5>
 
