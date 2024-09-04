@@ -6,13 +6,7 @@
 
 <h5><ins>Guidance</ins></h5>
 
-Who and/or what authored the document.
-
-* <i class="fa fa-link" aria-hidden="true"></i> {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Practitioner-1}}
-* <i class="fa fa-link" aria-hidden="true"></i> {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-Patient-1}}
-* <i class="fa fa-link" aria-hidden="true"></i> {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile--CareConnect-GPC-RelatedPerson}}
-
-The free text field MUST be present
+Any notes relating to the specified specimen.
 
 <h5><ins>Example</ins></h5>
 
@@ -23,9 +17,6 @@ The free text field MUST be present
     </author>
     <time value="2022-10-13T16:59:00Z" />
     <text>
-        "Free text...".
+        Free text... R4 of the FHIR standard supports GitHub Flavoured Markdown (GFM).
     </text>
 </note>
-```
-
----
