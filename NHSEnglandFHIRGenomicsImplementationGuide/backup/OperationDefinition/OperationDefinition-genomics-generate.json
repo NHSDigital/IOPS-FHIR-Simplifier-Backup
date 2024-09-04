@@ -1,0 +1,75 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "OperationDefinition-genomics-generate",
+  "url": "https://fhir.nhs.uk/OperationDefinition/genomics-generate",
+  "version": "0.0.1",
+  "name": "GenomicsGenerate",
+  "status": "draft",
+  "kind": "operation",
+  "experimental": false,
+  "date": "2024-09-04",
+  "publisher": "NHS England",
+  "description": "An operation used to generate a DocumentReference resource for a genomic data file, optionally pulling the referenced data file to a central data store and generating a DRS url for the data file.\r\nCustomised backport of the R5 DocumentReference-generate OperationDefinition: http://hl7.org/fhir/OperationDefinition/DocumentReference-generate.\r\nSpecific profiles for input or output parameters, e.g. for certain data file types, are pending further investigation by GEL.",
+  "affectsState": true,
+  "code": "genomics-generate",
+  "resource": [
+    "DocumentReference"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "url",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "The URL to the source document. This may be a general URL or a Binary or a Composition or a Bundle.\r\nFor a Genomic Data File, MUST be either a DRS URL or a presigned URL.",
+      "type": "uri"
+    },
+    {
+      "name": "persist",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Whether to store the document at the document end-point (/Document) or not, once it is generated (default is for the server to decide).\r\nFor a Genomic Data File, determines whether the data file will be pulled to a central data store, or will remain on the source server. \r\nIn all cases, the DocumentReference will be generated and stored on the server at the /DocumentReference endpoint.",
+      "type": "boolean"
+    },
+    {
+      "name": "content-type",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "MIME type for the file. Used to determine how the reference should be processed and which context references are required.",
+      "type": "string"
+    },
+    {
+      "name": "context-reference",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "Reference to FHIR resource which provide context for the DocumentReference e.g. ServiceRequest which initiated the collection of the data file, or the Specimen from which it originated.",
+      "type": "Reference",
+      "targetProfile": [
+        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest",
+        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen"
+      ]
+    },
+    {
+      "name": "author",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "ODS code for the author organization.",
+      "type": "Identifier"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "The bundle type is \"searchset\" containing DocumentReference resource and may include a Binary. If the input url refers to another server, it is at the discretion of the server whether to retrieve it or return an error.",
+      "type": "Bundle"
+    }
+  ]
+}

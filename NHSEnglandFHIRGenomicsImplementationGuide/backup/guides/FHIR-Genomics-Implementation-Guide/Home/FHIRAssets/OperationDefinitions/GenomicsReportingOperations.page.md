@@ -9,6 +9,8 @@ The VCF model has support for annotations e.g. through the text field (8th colum
 
 While storing all variants as FHIR resources would be prohibitively costly, [FHIR variants](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-variant.html) can be generated for variants of clinical significance. As structured reporting progresses, representing variants within FHIR can be incorporated into the interpretation process, using guidance from the [Genomics Reporting IG](https://build.fhir.org/ig/HL7/genomics-reporting/sequencing.html). Variants can then be linked directly to the report that uses this data.
 
+This operation is linked to the DocumentReference resource in that the DocumentReference, within the context of the Genomics FHIR Implementation Guide, will point to the binary Genomic Data file, potentially using a DRS url. This file may be a full list of the variants found. htsget, and the FHIR equivalent find-subject-variants, will search this file for variants at particular locations and transform these into the relevant FHIR Variants (a profile on Observation).
+
 ### Other subject level operations
 
 Implementation of other subject level operations are pending use cases to support these operations.

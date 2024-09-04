@@ -2,7 +2,9 @@
   filename: Index.page.md
 - name: GenomicsReportingOperations
   filename: GenomicsReportingOperations.page.md
-- name: lastn
-  filename: lastn.page.md
-- name: document
-  filename: document.page.md
+- name: DocumentReference generate
+  filename: DocumentReference-generate.page.md
+- name: Composition document
+  filename: Composition-document.page.md
+- name: Observation lastn
+  filename: Observation-lastn.page.md

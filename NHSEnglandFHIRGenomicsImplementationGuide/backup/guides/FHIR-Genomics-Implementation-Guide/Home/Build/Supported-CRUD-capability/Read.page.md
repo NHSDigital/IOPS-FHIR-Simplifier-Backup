@@ -27,6 +27,8 @@ Retrieval of sets of resources using {{pagelink:Home/FHIRAssets/GraphDefinitions
 GET [base]/ServiceRequest?requester:PractitionerRole.organization={ODS_codes_in_my_patch}&performer:not={my_GLH_code}
 ```
 
+* The `:identifier` modifier will be supported on SearchParameters of type reference, where identifiers are used within the referencing resource, in preference over inclusion of full resources, e.g. references using practitioner or organization identifiers, as the resources containing the relevant information logically sit within other NHS England services, e.g. SPINE SDS or ODS respectively.
+
 #### Unsupported Functionality
 * Inclusion of external references (resources not hosted on the server) through the _include parameter will not be supported as there will be no guarantee they resolve or that they will return valid FHIR. While this may mean clients will need to perform multiple calls to construct a complete set of data, this ensures consistency of the responses from the broker. Within this Implementation Guide we expect a test requester to submit all relevant information for a test order to the broker so there should be very few instances where an external reference is used.
 
