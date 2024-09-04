@@ -15,22 +15,13 @@ Additional, coded or text entries which are clearly captured as reasons for refe
 
 
 ```xml
-<specialty>
+<reasonCode>
     <coding>
         <system value="http://snomed.info/sct" />
-        <code value="710952002" />
-        <display value="Advocating for breastfeeding (procedure)" />
-        <snomedCT>
-            <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid" />
-            <extension>
-            <valueId value="710952002" />
-                <descriptionId value="710952002" />
-                <descriptionDisplay value="Advocating for breastfeeding (procedure)" />
-            </extesion>
-        </snomedCT>
+        <code value="195967001" />
+        <display value="Asthma (disorder)" />
     </coding>
-    <text value="Advocating for breastfeeding (procedure)" />
-</specialty>
+</reasonCode>
 ```
 
 ---
