@@ -1689,7 +1689,7 @@
         },
         {
           "type": "OperationDefinition",
-          "profile": "https://hl7.org/fhir/StructureDefinition/OperationDefinition"
+          "profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
         },
         {
           "type": "OperationOutcome",

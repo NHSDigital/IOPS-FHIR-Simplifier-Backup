@@ -1,0 +1,37 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-Generate-Example",
+  "parameter": [
+    {
+      "name": "url",
+      "valueUrl": "https://datastore.example.com/cgp-test-bucket/173cd57a-969f-49f9-8754-1e22e218cdbf"
+    },
+    {
+      "name": "persist",
+      "valueBoolean": true
+    },
+    {
+      "name": "content-type",
+      "valueString": "application/json"
+    },
+    {
+      "name": "context-reference",
+      "valueReference": {
+        "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-NewFollowupTest-Example"
+      }
+    },
+    {
+      "name": "context-reference",
+      "valueReference": {
+        "reference": "Specimen/Specimen-BloodEDTA-Example"
+      }
+    },
+    {
+      "name": "author",
+      "valueIdentifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RJ1"
+      }
+    }
+  ]
+}

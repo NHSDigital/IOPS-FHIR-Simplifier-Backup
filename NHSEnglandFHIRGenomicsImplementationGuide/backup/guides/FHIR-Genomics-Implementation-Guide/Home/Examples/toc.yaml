@@ -24,6 +24,8 @@
   filename: OperationOutcome
 - name: Organization
   filename: Organization
+- name: Parameters
+  filename: Parameters
 - name: Patient
   filename: Patient
 - name: Practitioner

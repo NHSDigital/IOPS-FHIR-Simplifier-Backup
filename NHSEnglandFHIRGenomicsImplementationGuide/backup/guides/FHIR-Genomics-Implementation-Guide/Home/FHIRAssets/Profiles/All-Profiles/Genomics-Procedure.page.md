@@ -123,7 +123,7 @@ TBC. From the Genomic Reporting IG [Genomic Study](https://build.fhir.org/ig/HL7
 
 <a name="genomic-study-analysis"></a>
 #### Genomic Study Analysis extensions
-TBC. From the Genomic Reporting IG [Genomic Study Analysis](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study-analysis.html) profile. Various extensions covering the metadata related to a genomic test, e.g. regions studied, chage types tested for etc. For the full list of extensions, please see the linked profile page.
+TBC. From the Genomic Reporting IG [Genomic Study Analysis](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study-analysis.html) profile. Various extensions covering the metadata related to a genomic test, e.g. regions studied, change types tested for etc. For the full list of extensions, please see the linked profile page.
 
 Use of the profile and its extensions is pending further discovery of the data standards required for Genomic Reporting in the UK.
 ```json
