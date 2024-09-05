@@ -1,0 +1,16 @@
+- name: Index
+  filename: Index.page.md
+- name: Nursing Process (ADPIE)
+  filename: Nursing-Process-ADPIE.page.md
+- name: SOAP Note (Encounter Documentation)
+  filename: SOAP-Note-Encounter-Documentation.page.md
+- name: Pathways Definitions
+  filename: Pathways-Definitions.page.md
+- name: Example Wellness Pathway (Health Prevention Programme)
+  filename: Example-Wellness-Pathway-Health-Prevention-Programme.page.md
+- name: Example Health Pathway (Type 2 Diabetes)
+  filename: Example-Health-Pathway-Type-2-Diabetes.page.md
+- name: Example Community Pathway (Wound Care)
+  filename: Example-Community-Pathway-Wound-Care.page.md
+- name: Technical Support for Clinical Pathways
+  filename: Technical-Support-for-Clinical-Pathways.page.md
