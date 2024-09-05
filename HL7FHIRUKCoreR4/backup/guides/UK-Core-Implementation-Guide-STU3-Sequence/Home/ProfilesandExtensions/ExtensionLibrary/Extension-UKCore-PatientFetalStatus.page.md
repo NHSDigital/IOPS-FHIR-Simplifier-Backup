@@ -1,5 +1,5 @@
 ---
-subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.fetalStatus
+subject: http://hl7.org/fhir/6.0/StructureDefinition/extension-Patient.fetalStatus
 issue: Extension-UKCore-PatientFetalStatus
 ---
 ## StructureDefinition {{variable:issue}}
