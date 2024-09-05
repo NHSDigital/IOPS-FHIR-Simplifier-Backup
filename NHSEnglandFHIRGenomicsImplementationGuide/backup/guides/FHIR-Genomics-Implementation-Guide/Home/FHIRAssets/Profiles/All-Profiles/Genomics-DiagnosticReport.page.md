@@ -188,7 +188,7 @@ TBC. Only relevant for structured genomic reports (included in the [Genomics Rep
 
 <a name="extension:workflow-relatedArtifact"></a>
 #### extension:workflow-relatedArtifact
-TBC. Only relevant for structured genomic reports (included in the [Genomics Report IG Genomic Report Profile](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). A reference to the guidelines or other knowledge artifacts which were used to guide interpretation or recommended actions included within this DiagnosticReport. 
+TBC. Only relevant for structured genomic reports (included in <a href='https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html' target='_blank'> Genomic Report Profile in the Genomics Report IG) </a>. A reference to the guidelines or other knowledge artifacts which were used to guide interpretation or recommended actions included within this DiagnosticReport. 
 
 If entries constitute published papers, they SHOULD be referenced using a known citation style, e.g. Vancouver/Harvard. Alternatively for online texts, these MAY be referenced via URL only.
 
