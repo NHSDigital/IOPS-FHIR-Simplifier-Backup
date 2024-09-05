@@ -1,0 +1,18 @@
+- name: Index
+  filename: Index.page.md
+- name: Introduction
+  filename: Introduction.page.md
+- name: Patient Journey, Pathways and Workflow
+  filename: Patient-Journey-Pathways-and-Workflow.page.md
+- name: Planning the Ward Round
+  filename: Planning-the-Ward-Round.page.md
+- name: Recording Patient Data
+  filename: Recording-Patient-Data.page.md
+- name: Sharing Observations and Devices
+  filename: Sharing-Observations-and-Devices.page.md
+- name: Sharing Patient Documents/Records
+  filename: Sharing-Patient-Documents-Records.page.md
+- name: Heathcare Administration Notifications
+  filename: Heathcare-Administration-Notifications.page.md
+- name: Summary
+  filename: Summary.page.md
