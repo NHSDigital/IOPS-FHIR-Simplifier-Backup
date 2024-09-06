@@ -13,42 +13,42 @@
         <!-- identifier -->
         <tr>
             <td>identifier</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- status -->
         <tr>
             <td>status</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- statusHistory -->
         <tr>
             <td>statusHistory</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- type -->
         <tr>
             <td>type</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- diagnosis -->
         <tr>
             <td>diagnosis</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- patient -->
         <tr>
             <td>patient</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
@@ -69,28 +69,28 @@
         <!-- referralRequest -->
         <tr>
             <td>referralRequest</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- careManager-->
         <tr>
             <td>careManager</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- team -->
         <tr>
             <td>team</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- account-->
         <tr>
             <td>account</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>

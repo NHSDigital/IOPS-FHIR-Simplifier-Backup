@@ -1,5 +1,6 @@
 title: GP Connect - Update Record (ITK3)
 description: GP Connect Update Record capability for FHIR® STU3 (CareConnect) Implementation Guide (ITK3)
-version: working-draft
+version: 1.2.0-public-beta
 style-root: project
 style-name: NHSDigital
+numbered-headings: false
