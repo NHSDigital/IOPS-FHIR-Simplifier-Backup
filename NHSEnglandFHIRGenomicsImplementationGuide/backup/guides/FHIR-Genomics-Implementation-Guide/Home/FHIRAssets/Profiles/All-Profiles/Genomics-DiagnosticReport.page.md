@@ -146,7 +146,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="extension:recommended-action"></a>
 #### extension:recommended-action
-TBC. Only relevant for structured genomic reports (included in the [Genomics Report IG Genomic Report Profile](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). Reference to Task resource indicating recommended action to take in response to the report's result/conclusion
+TBC. Only relevant for structured genomic reports (included in the [Genomic Report Profile in the Genomics Reporting IG](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). Reference to Task resource indicating recommended action to take in response to the report's result/conclusion
 ```json
 "extension" : [
         {
@@ -160,7 +160,7 @@ TBC. Only relevant for structured genomic reports (included in the [Genomics Rep
 
 <a name="extension:genomic-study"></a>
 #### extension:genomic-study
-TBC. Only relevant for structured genomic reports (included in the [Genomics Report IG Genomic Report Profile](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). Reference to Procedure resources indicating the analyses performed as part the genomic test order.
+TBC. Only relevant for structured genomic reports (included in the [Genomic Report Profile in the Genomics Reporting IG](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). Reference to Procedure resources indicating the analyses performed as part the genomic test order.
 ```json
 "extension" : [
     {
