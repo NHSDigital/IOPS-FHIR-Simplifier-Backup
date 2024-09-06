@@ -7,5 +7,3 @@ The most generic medication instruction would specify a dm+d Virtual Therapeutic
 The most specific medication instruction, for the purposes of prescribing, would specify a dm+d Actual Medicinal Product (AMP) plus a dosage instruction.
 
 {{render: nhs-dmd-concepts-related-data}}
-
----

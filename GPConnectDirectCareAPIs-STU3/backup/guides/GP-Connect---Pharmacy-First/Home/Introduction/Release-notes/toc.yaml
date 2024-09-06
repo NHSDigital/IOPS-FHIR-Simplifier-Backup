@@ -1,7 +1,7 @@
 - name: Index
   filename: Index.page.md
-- name: working-draft
-  filename: working-draft.page.md
+- name: 1.2.0-public-beta
+  filename: 1.2.0-public-beta.page.md
 - name: 1.1.5-public-beta
   filename: 1.1.5-public-beta.page.md
 - name: 1.1.4-public-beta
