@@ -1,2 +1,4 @@
+- name: Index
+  filename: Index.page.md
 - name: ValueSet-England-MessageEvents
   filename: ValueSet-England-MessageEvents.page.md
