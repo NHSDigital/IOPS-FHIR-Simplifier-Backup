@@ -55,10 +55,10 @@
 { {page:Home/ProfilesandExtensions/UsageFQLReferences.page.md}}
 </span>
 </div>
--->
+
 
 <div id="Feedback" class="tabcontent">
   <h3>Feedback</h3>
-<span> <a target="_blank">Click here to:</a>
 {{page:Home/Templates/Feedback-Link.page.md}}
 </div>
+-->

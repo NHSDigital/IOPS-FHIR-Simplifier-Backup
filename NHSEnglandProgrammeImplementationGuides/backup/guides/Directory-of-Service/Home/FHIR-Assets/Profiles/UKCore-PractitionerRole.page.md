@@ -16,4 +16,8 @@ expand: yes
 <h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/Examples/Profile-Examples/Example-UKCore-PractitionerRole-GP.page.md?version=current' target="_blank">Example UKCore-PractitionerRole-GP</a></h4>
 </div>
 
+<div id="Feedback" class="tabcontent">
+<h4><a href='https://simplifier.net/HL7FHIRUKCoreR4/UKCore-PractitionerRole/~issues?level=File' target="_blank">Propose a change to UK Core Practitioner Role </a></h4>
+</div>
+
 <hr class="thickline">
