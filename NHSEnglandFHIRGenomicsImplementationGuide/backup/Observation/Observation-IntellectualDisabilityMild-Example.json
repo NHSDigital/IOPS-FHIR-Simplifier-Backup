@@ -5,7 +5,7 @@
 	"code": {
 		"coding": [
 			{
-				"system": "https://hpo.jax.org/app/",
+				"system": "http://human-phenotype-ontology.org",
 				"code": "HP:0001256",
 				"display": "Intellectual disability, mild"
 			}
