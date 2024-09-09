@@ -255,56 +255,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "Specimen",
-          "link": [
-            {
-              "path": "Specimen.subject",
-              "description": "Link to the patient the specimen is from",
-              "min": 1,
-              "max": "1",
-              "target": [
-                {
-                  "type": "Patient"
-                }
-              ]
-            },
-            {
-              "path": "Specimen.parent",
-              "description": "Link to parent specimen resource",
-              "min": 0,
-              "max": "1",
-              "target": [
-                {
-                  "type": "Specimen"
-                }
-              ]
-            },
-            {
-              "path": "Specimen.collection.collector",
-              "description": "Link to collector of the specimen",
-              "min": 0,
-              "max": "1",
-              "target": [
-                {
-                  "type": "PractitionerRole"
-                }
-              ]
-            },
-            {
-              "path": "Specimen.collection.bodySite.extension.valueReference",
-              "sliceName": "bodySiteReference",
-              "description": "Link to the body structure detailing the morphology and topography of the specimen",
-              "min": 0,
-              "max": "1",
-              "target": [
-                {
-                  "type": "BodyStructure"
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -373,7 +323,54 @@
       "target": [
         {
           "type": "Specimen",
-          "params": "request={ref}"
+          "params": "request={ref}",
+          "link": [
+            {
+              "path": "Specimen.subject",
+              "description": "Link to the patient the specimen is from",
+              "min": 1,
+              "max": "1",
+              "target": [
+                {
+                  "type": "Patient"
+                }
+              ]
+            },
+            {
+              "path": "Specimen.parent",
+              "description": "Link to parent specimen resource",
+              "min": 0,
+              "max": "1",
+              "target": [
+                {
+                  "type": "Specimen"
+                }
+              ]
+            },
+            {
+              "path": "Specimen.collection.collector",
+              "description": "Link to collector of the specimen",
+              "min": 0,
+              "max": "1",
+              "target": [
+                {
+                  "type": "PractitionerRole"
+                }
+              ]
+            },
+            {
+              "path": "Specimen.collection.bodySite.extension.valueReference",
+              "sliceName": "bodySiteReference",
+              "description": "Link to the body structure detailing the morphology and topography of the specimen",
+              "min": 0,
+              "max": "1",
+              "target": [
+                {
+                  "type": "BodyStructure"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
