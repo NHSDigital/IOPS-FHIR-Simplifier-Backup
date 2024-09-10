@@ -4,22 +4,7 @@ The DoS is a directory of NHS services available to a Patient.
 
 Once someone has gone through a triage the DoS provides information about where they should go next.
 
-<plantuml>
-@startuml
-title Locating a Healthcare Service
-actor "Healthcare Worker"
-participant "Directory of Services"
-actor Patient
-
-"Healthcare Worker" -> "Directory of Services": Access DoS
-activate "Directory of Services"
-"Directory of Services" --> "Healthcare Worker": Secure access provided
-"Healthcare Worker" -> "Directory of Services": Search for relevant services
-"Directory of Services" --> "Healthcare Worker": Return list of services
-Deactivate "Directory of Services"
-"Healthcare Worker" -> Patient: Provides list of relevant services
-@enduml
-</plantuml>
+{{render:Dos-basic-flow}}
 
 The DoS uses the information already collected about the patient – such as their location and how quickly they need treatment – to provide a list of the best services for them. For example, this might be the nearest pharmacy, an urgent treatment centre or an emergency department.
 
