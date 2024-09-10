@@ -11,15 +11,17 @@ The coded reason why the procedure was performed. This may be coded entity of so
 
 <h5><ins>Example</ins></h5>
 
-
 ```xml
-<reasonCode>
+<code>
     <coding>
         <system value="http://snomed.info/sct" />
-        <code value="195967001" />
-        <display value="Asthma (disorder)" />
+        <code value="119000" />
+        <display value="Thoracoscopic partial lobectomy of lung" />
     </coding>
-</reasonCode>
+    <text value="No code available" />
+</code>
+```
+
 ```
 
 ---
