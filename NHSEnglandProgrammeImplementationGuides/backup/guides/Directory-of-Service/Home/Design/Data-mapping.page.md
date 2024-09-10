@@ -283,4 +283,39 @@ The dates and times a service is available to be returned in a search.
 
 ### Endpoint
 
-TBD
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Status</td>
+    <td>1..1</td>
+    <td>Endpoint.status</td>
+    <td>The status of the Endpoint</td>
+  </tr>
+  <tr>
+    <td>Connection type</td>
+    <td>1..1</td>
+    <td>Endpoint.connectionType</td>
+    <td>Protocol/Profile/Standard to be used with this endpoint connection</td>
+  </tr>
+  <tr>
+    <td>Payload type</td>
+    <td>1..*</td>
+    <td>Endpoint.payloadType</td>
+    <td>The type of content that may be used at this endpoint (e.g. XDS Discharge summaries)</td>
+  </tr>
+  <tr>
+    <td>Address</td>
+    <td>1..1</td>
+    <td>Endpoint.address</td>
+    <td>The technical base address for connecting to this endpoint</td>
+  </tr>
+</tbody>
+</table>
