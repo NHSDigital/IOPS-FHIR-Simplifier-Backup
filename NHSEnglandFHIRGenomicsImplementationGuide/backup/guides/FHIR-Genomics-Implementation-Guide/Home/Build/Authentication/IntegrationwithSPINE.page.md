@@ -6,7 +6,7 @@ These services include but are not limited to:
 - ODS for organisation search
 - SDS for practitioner details
 - NRL for resource location
-- PDS for patient demographics
+- PDS for patient demographics (A patient resource will still be expected to support consistent querying across patients both registered and not registered with PDS)
 - NHS App for patient empowerment
 
 How providers/consumers should integrate with SPINE services is pending a finalised architecture for the Genomic Medicine Service.
@@ -22,6 +22,14 @@ Where there is no PDS integration, automatic merging of patients within the core
 The expectation is that patients who do not have an NHS number will  have a test request created based on a local identifier (Hospital ID or local ID provided by the originating organisation) to progress the genomics test request and bypass the need to temporarily register the patient.  
 
 In the event there is a duplication of records (same patient), the activity of merging/ de-merging of records should also occur in the local EPR and/or LIMS. Local policies should be followed in the event of merging/de-merging a parent and duplicate record. The subsequent master record (post merge) should display the merged record in downstream systems. 
+
+## Senstive/Restricted Patient Records
+
+At times, PDS may mark patient records as sensitive, redacting information from responses which may be used to locate a patient. As demographic information is not expected to be duplicated within the central service, for patients registered with PDS, this should not impact the data stored on the central service. In this case, the demographics as well as the sensitive flag for the patient, should be retrieved directly from PDS. 
+
+Where patients are not registered with PDS, it is expected source systems will redact the necessary information (e.g. address, telecom, related persons, GP practice, pharmacy etc.) from the messages sent to the central broker in order to be GDPR/PDS compliant.
+
+While every effort will be made to honour the sensitive nature of patient records, where binary data is uploaded to the central server, as in the case of unstructured reports, this information cannot be redacted by the central service. It is the responsibility of source systems to redact the necessary information from binary files before sending this data to the central broker.
 
 ## Data Enrichment and Maintenance
 

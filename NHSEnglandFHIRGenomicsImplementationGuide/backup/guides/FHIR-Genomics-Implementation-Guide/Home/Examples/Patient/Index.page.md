@@ -1,1 +1,3 @@
 ## {{page-title}}
+
+**NOTE: Patient examples have been fully expanded with demographic information to demostrate how this data is modelled. However, for patients registered with PDS, it expected that only genomic specific information will be recorded in the Patient resource (extensions, identifiers, link), without duplicating information from PDS. Where this information needs to be represented, data SHALL be updated directly on PDS.**
