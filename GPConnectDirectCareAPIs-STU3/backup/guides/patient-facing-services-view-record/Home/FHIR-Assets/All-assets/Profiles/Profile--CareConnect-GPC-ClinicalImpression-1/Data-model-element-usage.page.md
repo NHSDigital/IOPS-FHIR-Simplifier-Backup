@@ -13,7 +13,7 @@
         <!-- identifier-->
         <tr>
             <td>identifier</td>
-            <td><span class="mro-circle optional" title="Mandatory"></span></td>
+            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
