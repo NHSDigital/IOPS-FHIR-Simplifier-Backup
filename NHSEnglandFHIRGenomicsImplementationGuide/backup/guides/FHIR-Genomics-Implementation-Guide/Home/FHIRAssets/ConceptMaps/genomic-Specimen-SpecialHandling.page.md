@@ -1,5 +1,5 @@
 ---
-subject: https://fhir.nhs.uk/ConceptMap/risk-reason-for-specimen-specialhandling
+subject: https://fhir.nhs.uk/ConceptMap/genomics-risk-reason-for-specimen-specialhandling
 expand: yes
 ---
 

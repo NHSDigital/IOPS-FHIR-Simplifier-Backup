@@ -1,17 +1,30 @@
 {
   "resourceType": "ValueSet",
   "id": "genomics-task-statusReason",
-  "url": "https://fhir.nhs.uk/ValueSet/task-statusReason-genomics",
-  "version": "0.2.0",
+  "url": "https://fhir.nhs.uk/ValueSet/genomics-task-statusReason",
+  "version": "0.2.1",
   "name": "GenomicsTaskStatusReason",
-  "title":"Genomics Task Status Reason",
+  "title": "Genomics Task Status Reason",
   "status": "draft",
+  "date": "2024-09-10T10:17:52.3231281+00:00",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
   "description": "A ValueSet to identify the reasons for failure states of Tasks for Genomic Order Management",
   "compose": {
     "include": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-        "version": "0.2.0"
+        "version": "0.3.0"
       }
     ]
   }

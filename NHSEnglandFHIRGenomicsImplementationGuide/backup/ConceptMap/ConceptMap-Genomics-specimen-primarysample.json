@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "genomics-primarysample",
-  "url": "https://fhir.nhs.uk/ConceptMap/primarysample",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-primarysample",
   "version": "0.0.1",
   "name": "GenomicsPrimarySample",
   "title": "Genomics Primary Sample",

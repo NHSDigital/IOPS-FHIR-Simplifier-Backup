@@ -1,17 +1,30 @@
 {
   "resourceType": "ValueSet",
   "id": "genomics-task-code",
-  "url": "https://fhir.nhs.uk/ValueSet/task-code-genomics",
-  "version": "0.2.0",
+  "url": "https://fhir.nhs.uk/ValueSet/genomics-task-code",
+  "version": "0.2.1",
   "name": "GenomicsTaskCode",
-  "title":"Genomics Task Code",
+  "title": "Genomics Task Code",
   "status": "draft",
+  "date": "2024-09-10T10:17:52.3231281+00:00",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "name": "NHS England",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "interoperabilityteam@nhs.net"
+        }
+      ]
+    }
+  ],
   "description": "A ValueSet to identify the type of Task for Genomic Order Management",
   "compose": {
     "include": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics",
-        "version": "0.2.0"
+        "version": "0.3.0"
       }
     ]
   }

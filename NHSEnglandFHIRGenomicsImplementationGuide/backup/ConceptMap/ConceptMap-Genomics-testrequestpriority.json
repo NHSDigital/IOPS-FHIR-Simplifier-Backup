@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "genomics-testrequestpriority",
-  "url": "https://fhir.nhs.uk/ConceptMap/testrequestpriority",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-testrequestpriority",
   "version": "0.0.1",
   "name": "GenomicsTestRequestPriority",
   "title": "Genomics Test Request Priority",

@@ -1,30 +1,18 @@
-## {{page-title}}
+---
+subject: https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory
+---
 
+## ValueSet Genomic Sample State
+
+## Usage
 A set of codes that define the category of a sample.
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
- <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
+
+{{render:Home-FHIRAssets-ValueSets-ValueSet-Template}}
+
+
+<div id="Feedback" class="tabcontent">
+<h4><a href='https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SampleCategory/~issues?level=File' target="_blank">Propose a change to ValueSet Genomic Sample State </a></h4>
 </div>
 
-<div id="HTML View" class="tabcontent" style="display:block">
-  <h3>HTML View</h3>
-{{render:https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory}}
-</div>
+---

@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "genomics-finalsample",
-  "url": "https://fhir.nhs.uk/ConceptMap/finalsample",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-finalsample",
   "version": "0.0.1",
   "name": "GenomicsFinalSample",
   "title": "Genomics Final Sample",
@@ -46,7 +46,7 @@
               "code": "258566005",
               "display": "Deoxyribonucleic acid specimen (specimen)",
               "equivalence": "narrower",
-              "comment":"The source concept expect that the specimen here should be either of DNA or RNA specimen. Additional notes should be provided in Specimen.note on the specimen ootion used."
+              "comment": "The source concept expect that the specimen here should be either of DNA or RNA specimen. Additional notes should be provided in Specimen.note on the specimen ootion used."
             },
             {
               "code": "441673008",
