@@ -2,12 +2,25 @@
 	"resourceType": "ValueSet",
 	"id": "genomics-patientguardian-types",
 	"url": "https://fhir.nhs.uk/ValueSet/genomics-patientguardian-types",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"name": "GenomicsPatientGuardian",
-	"title":"Genomics Patient Guardian",
+	"title": "Genomics Patient Guardian",
 	"status": "draft",
-	"date": "2022-12-28T18:44:07.1997372+00:00",
+	"date": "2024-09-10T10:17:52.3231281+00:00",
+	"publisher": "NHS England",
+	"contact": [
+		{
+			"name": "NHS England",
+			"telecom": [
+				{
+					"system": "email",
+					"value": "interoperabilityteam@nhs.net"
+				}
+			]
+		}
+	],
 	"description": "A ValueSet to identify the category of patient guardian types",
+	"copyright": "Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \\\\\\\"License\\\\\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\\\\\"AS IS\\\\\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
 	"compose": {
 		"include": [
 			{
@@ -25,6 +38,7 @@
 			},
 			{
 				"system": "https://fhir.nhs.uk/CodeSystem/patient-consultee-genomics",
+				"version": "0.2.0",
 				"concept": [
 					{
 						"code": "consultee",

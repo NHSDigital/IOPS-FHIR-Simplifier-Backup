@@ -1,5 +1,9 @@
 - name: Index
   filename: Index.page.md
+- name: Genomic-Condition-DiseaseStatus
+  filename: Genomic-Condition-DiseaseStatus.page.md
+- name: Genomic-Condition-FetalMaternalScreeningGenotype
+  filename: Genomic-Condition-FetalMaternalScreeningGenotype.page.md
 - name: Genomic-Condition-Laterality-of-HearingLoss
   filename: Genomic-Condition-Laterality-of-HearingLoss.page.md
 - name: Genomic-Condition-Liquid-Tumour-Type
@@ -10,37 +14,31 @@
   filename: Genomic-Condition-PituitaryTumourType.page.md
 - name: Genomic-Condition-SolidTumourType
   filename: Genomic-Condition-SolidTumourType.page.md
-- name: Genomic-Disease-Status
-  filename: Genomic-Disease-Status.page.md
-- name: Genomic-Fetal-Maternal-Screening-Genotype
-  filename: Genomic-Fetal-Maternal-Screening-Genotype.page.md
+- name: Genomic-Observation-TumourCellularity
+  filename: Genomic-Observation-TumourCellularity.page.md
+- name: Genomic-Patient-BirthSex
+  filename: Genomic-Patient-BirthSex.page.md
 - name: Genomic-Patient-BornStatus
   filename: Genomic-Patient-BornStatus.page.md
-- name: Genomic-FoetusObservedSex
-  filename: Genomic-FoetusObservedSex.page.md
-- name: Genomic-PatientBirthSex
-  filename: Genomic-PatientBirthSex.page.md
-- name: Genomic-PatientPregnancyType
-  filename: Genomic-PatientPregnancyType.page.md
-- name: Genomic-ProbandRelationshipType
-  filename: Genomic-ProbandRelationshipType.page.md
+- name: Genomic-Patient-FetusObservedSex
+  filename: Genomic-Patient-FetusObservedSex.page.md
+- name: Genomic-PractitionerRole-ReportDeliveryMethod
+  filename: Genomic-PractitionerRole-ReportDeliveryMethod.page.md
+- name: Genomic-Procedure-PatientPregnancyType
+  filename: Genomic-Procedure-PatientPregnancyType.page.md
 - name: Genomic-Procedure-TransfusionType
   filename: Genomic-Procedure-TransfusionType.page.md
-- name: Genomic-ReportDeliveryMethod
-  filename: Genomic-ReportDeliveryMethod.page.md
-- name: genomic-Specimen-SpecialHandling
+- name: Genomic-Procedure-TypeOfTransplantProcedure
+  filename: Genomic-Procedure-TypeOfTransplantProcedure.page.md
+- name: Genomic-RelatedPerson-ProbandRelationshipType
+  filename: Genomic-RelatedPerson-ProbandRelationshipType.page.md
+- name: Genomic-ServiceRequest-TestRequestPriority
+  filename: Genomic-ServiceRequest-TestRequestPriority.page.md
+- name: Genomic-Specimen-FinalSample
+  filename: Genomic-Specimen-FinalSample.page.md
+- name: Genomic-Specimen-PrimarySample
+  filename: Genomic-Specimen-PrimarySample.page.md
+- name: Genomic-Specimen-SamplePreparation
+  filename: Genomic-Specimen-SamplePreparation.page.md
+- name: Genomic-Specimen-SpecialHandling
   filename: genomic-Specimen-SpecialHandling.page.md
-- name: Genomic-FinalSample
-  filename: Genomic-FinalSample.page.md
-- name: Genomic-PrimarySample
-  filename: Genomic-PrimarySample.page.md
-- name: Genomic-SamplePreparation
-  filename: Genomic-SamplePreparation.page.md
-- name: Genomic-Specimen-TumourCellularity
-  filename: Genomic-Specimen-TumourCellularity.page.md
-- name: Genomic-TestRequestPriority
-  filename: Genomic-TestRequestPriority.page.md
-- name: Genomic-Typeof-TransplantProcedure
-  filename: Genomic-Typeof-TransplantProcedure.page.md
-- name: ConceptMaps
-  filename: ConceptMaps.page.md
