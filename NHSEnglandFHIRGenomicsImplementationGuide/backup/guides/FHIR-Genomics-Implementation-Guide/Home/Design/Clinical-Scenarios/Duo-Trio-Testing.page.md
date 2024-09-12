@@ -43,6 +43,8 @@ POST of Test order transaction Bundle for Pheobe Smitham consisting of the follo
 
 {{pagelink:Observation-NonConsanguinousUnionProband-Example}}
 
+{{pagelink:Condition-InbornErrorOfMetabolism-Example}}
+
 {{pagelink:PractitionerRole-EugeneSmithLeedsSTH-Example}}
 
 {{pagelink:ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example}}

@@ -74,6 +74,11 @@
       ]
     }
   ],
+  "reasonReference": [
+    {
+      "reference": "Condition/Condition-InbornErrorOfMetabolism-Example"
+    }
+  ],
   "performer": [
     {
       "identifier": {
