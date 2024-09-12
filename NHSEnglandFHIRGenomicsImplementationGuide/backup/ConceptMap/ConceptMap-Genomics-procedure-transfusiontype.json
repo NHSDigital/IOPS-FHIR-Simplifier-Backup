@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "genomics-procedure-transfusiontype",
-  "url": "https://fhir.nhs.uk/Conceptmap/genomics-procedure-transfusiontype",
+  "url": "https://fhir.nhs.uk/ConceptMap/genomics-procedure-transfusiontype",
   "version": "0.1.0",
   "name": "GenomicsProcedureTransfusionType",
   "title": "Genomics Procedure Transfusion Type",

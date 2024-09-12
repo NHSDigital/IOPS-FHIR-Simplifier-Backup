@@ -6,6 +6,8 @@ It is expected that the information used to populate this resource SHOULD be sou
 
 It is also highly preferred if the verificationStatus, onsetDateTime, recordedDate, recorded and abatementDateTime are populated if applicable/known.
 
+The primary condition, being tested for SHOULD be referenced via ServiceRequest.reasonReference, additional relevant conditions SHOULD be referenced via ServiceRequest.supportingInfo.
+
 | Profile url | FHIR Module | Normative Status |
 |--
 | [https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
@@ -73,6 +75,11 @@ It is also highly preferred if the verificationStatus, onsetDateTime, recordedDa
                 <tr>
                     <td>
                     {{pagelink:Condition-LungTumor-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Condition-InbornErrorOfMetabolism-Example}}
                     </td>
                 </tr>
             </table>
