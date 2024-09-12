@@ -41,7 +41,7 @@
                         </a>
                     </div>
                     <div class="col-md-16">
-                            <h3>{{ guide-title }}</h3>
+                            <h1>{{ guide-title }}</h1>
                     </div>
                     <div class="col-md-4 hl7-logo">
                         <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
@@ -51,10 +51,15 @@
                 </div>
             </div>
             {{ dropdown-navigation }}
+
         </header>
 
         <!-- Implementation guide content -->
         <div role="main" class="content container">
+
+        <div class="hero-header">
+        This is an Implementation Guide developed by NHS England.
+        </div>
 
             <!-- Header to be displayed on each page -->
             <!--Comment out for publication, start-->
@@ -73,7 +78,15 @@
         </a>
 
         <footer>
-            <div class="container">            
+
+            <!-- Consent Bar -->
+            <div class="cookie-consent" data-level="20" data-duration="8">
+                <p>Simplifier, and NHS England, use cookies on this website. <span class="hidden-xs">Cookies are small text files, stored on your computer. We use cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site without changing settings, you are agreeing to our use of cookies.</span></p>
+                <button type="button" class="btn btn-primary cookie-accept" data-level="80" data-duration="8760">Accept</button>
+            </div>
+
+            <!-- main footer container, sizes match NHSE IG for consistent look and feel -->
+            <div class="container">                                  
                 <table role="none" title="Footer Links" width="100%">
                     	<col style="width:19%">
 	                    <col style="width:17%">
@@ -85,11 +98,11 @@
                       <td>IG © 2023+ NHS England</td>
                       <td><span><b>Version:</b> {{ guide-version }}</span></td>
                       <td><span><b>FHIR Version:</b> {{ guide-fhir-version }} </span></td>
-                      <td><b>Packages are based on:</b>  <a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
+                      <td><b>Packages are based on:</b>  <a id="footer-basedon" href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
                     </tr>
                     <tr>
                       <td><b>Released:</b> TBC</td>
-                      <td colspan="3"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Helpandsupport/Sitemap-Overview.page.mdd?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/directory-of-service/home/help-and-support/release-notes.page.md?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../Home/?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/~issues" target="_blank">Propose a change</a></td>
+                      <td colspan="3"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Helpandsupport/Sitemap-Overview.page.mdd?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../Home/?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
                     </tr>  
                 </table>
             </div>
@@ -100,12 +113,16 @@
             var backToTopButton = document.getElementById("back-to-top");
 
             // When the user scrolls down 100px from the top of the document, show the button
-            window.onscroll = function () { handleScrolling() };
+            window.onscroll = function () { 
 
-            function handleScrolling() {
+                                        
                 showTopButton();
+                try {
                 scrollProfileSideBar();
-            }
+                } catch {
+
+                }
+            };           
 
             function showTopButton() {
                 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -130,6 +147,7 @@
                 $('footer').css('margin-top', heightShortage);
             }
 
+            // main code to handle all tabs, editing this will probably break everything                                                                                      
             function openTab(evt, tabName) {
                 // Find the element that has been clicked with jQuery
                 var element = $(evt.target);
