@@ -3,7 +3,7 @@
   "id": "Observation-Cellularity-Example",
   "status": "final",
   "code": {
-    "text":"Cellularity"
+    "text": "Cellularity"
   },
   "subject": {
     "reference": "Patient/Patient-ZelmaHadjkiss-Example",
@@ -18,16 +18,14 @@
       "value": "RA257630"
     }
   },
- "interpretation": [
-    {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "code": "H",
-          "display": "High"
-        }
-      ]
-    }
-  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "75540009",
+        "display": "High (qualifier value)"
+      }
+    ]
+  },
   "effectiveDateTime": "2023-09-08T10:00:00Z"
 }

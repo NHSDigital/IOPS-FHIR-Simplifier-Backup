@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-This operation is a customization of the R5 [generate operation for DocumentReference](https://www.hl7.org/fhir/R5/documentreference-operation-generate.html).
+This operation is a customization of the R5 <a href="https://www.hl7.org/fhir/R5/documentreference-operation-generate.html" target="_blank">generate operation for DocumentReference</a>.
 
 It will take in a URL (either DRS or presigned URL) for a Genomic Data file, optionally pulls the file into a common data store, generates a DRS URL if this has not already been assigned, and creates a DocumentReference resource to hold the URL and associated metadata.
 
