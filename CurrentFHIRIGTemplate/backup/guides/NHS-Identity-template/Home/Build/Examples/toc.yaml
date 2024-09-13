@@ -1,0 +1,4 @@
+- name: Index
+  filename: Index.page.md
+- name: Example - An active xyz
+  filename: Example-An-active-xyz.page.md

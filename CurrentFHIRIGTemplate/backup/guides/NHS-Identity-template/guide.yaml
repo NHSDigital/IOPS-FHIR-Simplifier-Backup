@@ -1,0 +1,6 @@
+title: NHS Identity template
+description: NHS Identity styled base project for NHS England API IG's
+version: development
+style-root: project
+style-name: NHSIdentityStyle
+numbered-headings: false
