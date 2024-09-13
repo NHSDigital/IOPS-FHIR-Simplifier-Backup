@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: BaRS Deployment Guide
+  filename: Deploy.page.md
+- name: Key Deployment Activities
+  filename: KeyDeploymentActivities.page.md
+- name: Roles & Responsibilities
+  filename: RolesAndResponsibilities.md
+- name: DoS Configuration
+  filename: DirectoryOfServiceConfiguration.md
