@@ -1,9 +1,23 @@
 ---
 subject: https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics
-issue: ReasonforTesting-Genomics
 ---
-## CodeSystem Reason-for-Testing Genomics
 
-A set of codes use to identify the reason for requesting a genomics test.This is intended to be used on ServiceRequest.reasonCode.
+## CodeSystem Reason for Testing Genomics
+
+<fql>
+from
+	CodeSystem
+	where
+   url=%subject
+select
+	Usage:description
+</fql>
 
 {{render:Home-FHIRAssets-CodeSystems-CodeSystem-Template}}
+
+<div id="Feedback" class="tabcontent">
+
+<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/reasonfortesting-genomics/~issues?level=File' target="_blank">Propose a change to CodeSystem Reason for Testing Genomics </a></h4>
+</div>
+
+---

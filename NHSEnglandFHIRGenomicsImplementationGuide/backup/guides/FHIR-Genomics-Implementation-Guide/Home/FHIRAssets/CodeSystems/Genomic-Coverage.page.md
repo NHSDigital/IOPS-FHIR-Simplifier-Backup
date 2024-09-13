@@ -1,31 +1,16 @@
-## {{page-title}}
+---
+subject: https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory
+---
+
+## CodeSystem Genomic Coverage
 
 A set of codes that define the funding category for a patient.
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
- <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
+{{render:Home-FHIRAssets-CodeSystems-CodeSystem-Template}}
+
+<div id="Feedback" class="tabcontent">
+
+<h4><a href='https://simplifier.net/HL7FHIRUKCoreR4/CodeSystem-UKCore-FundingCategory/~issues?level=File' target="_blank">Propose a change to CodeSystem Genomic Coverage </a></h4>
 </div>
 
-<div id="HTML View" class="tabcontent" style="display:block">
-  <h3>HTML View</h3>
-{{render:https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory}}
-</div>
-<br/>
+---

@@ -1,7 +1,7 @@
 ---
 subject: https://fhir.nhs.uk/CodeSystem/additional-infotype-genomics
 ---
-## CodeSystem Additional InfoType Genomics
+## CodeSystem Additional Information Type Genomics
 
 <fql>
 from
@@ -17,7 +17,7 @@ select
 
 <div id="Feedback" class="tabcontent">
 
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/additional-infotype-genomics/~issues?level=File' target="_blank">Propose a change to ValueSet Genomics Additional InfoType </a></h4>
+<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/additional-infotype-genomics/~issues?level=File' target="_blank">Propose a change to CodeSystem Additional Information Type Genomics </a></h4>
 </div>
 
 ---

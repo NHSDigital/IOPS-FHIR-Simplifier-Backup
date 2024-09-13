@@ -1,31 +1,23 @@
-## {{page-title}}
+---
+subject: https://fhir.nhs.uk/CodeSystem/message-events-genomics
+---
 
-Common messaging events for Genomics Test Orders and Reports.
+## CodeSystem Message Events Genomics
+<fql>
+from
+	CodeSystem
+	where
+   url=%subject
+select
+	Usage:description
+</fql>
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
- <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
+{{render:Home-FHIRAssets-CodeSystems-CodeSystem-Template}}
+
+
+<div id="Feedback" class="tabcontent">
+
+<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/message-events-genomics/~issues?level=File' target="_blank">Propose a change to CodeSystem Message Events Genomics </a></h4>
 </div>
 
-<div id="HTML View" class="tabcontent" style="display:block">
-  <h3>HTML View</h3>
-{{render:https://fhir.nhs.uk/CodeSystem/message-events-genomics}}
-</div>
-
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table:https://fhir.nhs.uk/CodeSystem/message-events-genomics}}
-</div>
-
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml:https://fhir.nhs.uk/CodeSystem/message-events-genomics}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json:https://fhir.nhs.uk/CodeSystem/message-events-genomics}}
-</div>
-<br/>
+---
