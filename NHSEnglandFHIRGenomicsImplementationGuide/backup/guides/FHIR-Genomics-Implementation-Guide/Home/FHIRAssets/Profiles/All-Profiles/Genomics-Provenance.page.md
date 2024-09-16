@@ -4,6 +4,8 @@ The Genomics Provenance SHOULD be provided alongside updates to controlled docum
 
 It is not expected that updates which do not affect the clinical content of the document will need associated Provenance resources, e.g. addition of local identifiers (**though for the purporses of the Genomic Order Management Alpha, all updates to ServiceRequest and DiagnosticReport resources will be expected to have accompanying Provenance resources**). On material changes to controlled resources, ServiceRequest and DiagnosticReport, users SHOULD use the transaction endpoint on the server to bundle the updated resource and Provenance event into a single transaction.
 
+The HL7 FHIR specification also provides the capability to attach a Provenance resource using a [custom header parameter](https://www.hl7.org/fhir/r4/provenance.html#header). Using this mechanism would allow clients to submit requests to the resource specific PUT enpoints for ServiceRequests and DiagnosticReports, while still aloowing changes to be captured within a Provenance resource using a single interaction. This mechanism will not be supported within the Genomic Order Management Alpha but will be investigated by the NHS England Genomics Unit for implementation in future phases.
+
 | Profile url | FHIR Module | Normative Status |
 |--
 | [http://hl7.org/fhir/StructureDefinition/Provenance](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Provenance&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
