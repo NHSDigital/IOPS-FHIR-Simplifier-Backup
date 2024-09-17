@@ -1,21 +1,21 @@
-## What is [xyz]?
+# This is a level one heading
 
 This implementation guide provides guidance on implementing the [xyz] FHIR R4 API. 
 
-Refer to NHS Program URL for more information <a href='' class="external">[xyz]</a>
+Refer to NHS Program URL for more information.
 
-# Settings
+## This is a level two heading
 within editor left pane top right burger bar
 - version: semantic version of the IG. May have the suffix `-pre-release`,`-developement`, `-alpha` etc
 - visibility: visibility to readers. This is for the current IG only and not the project.
 - scope: which package contains the resources. `<package> current` is usually used until publishing
 
-## edit master template
+### This is a level three heading
 Contains the following that may need editing:
 - information box: *header* line 60
 - released: *footer* line 99
 
-For design standards of IGs see <a href="https://simplifier.net/guide/nhs-england-design-and-development-approach/Home/Asset-Design/IG-Page-Design?version=current"> NHS England Design & Development Approach</a
+For design standards of IGs see the <a href="https://simplifier.net/guide/nhs-england-design-and-development-approach/Home/Asset-Design/IG-Page-Design?version=current"> NHS England Design & Development Approach</a>
 
 
 <h3 id="licence-heading">Licence</h3>

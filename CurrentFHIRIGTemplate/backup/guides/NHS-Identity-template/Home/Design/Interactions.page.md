@@ -3,7 +3,7 @@
   <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This page is under development by NHS England</div>
 
 
-### Query for an FGM indicator
+### Query for an indicator
 
 **<font color="#00008B">GET</font>** /Flag?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|&lt;nhs-number&gt;
 
@@ -67,10 +67,6 @@ A FHIR Flag conforming to the UKCore-Flag profile. Values set as per {{pagelink:
 - The PUT interaction only supports updates to status and delete reason. Other fields should be supplied but will not be updated.
 - {{pagelink:Home/Examples/Example---A-removed-FGM-flag.page.md}}
 
-<br>
-<br>
-{{render:fgm-is-interactions-put}}
-<br>
 <br>
 
 | Outcome         | Response                       |
