@@ -712,3 +712,35 @@ color: #ffffff;
 .col-md-18 {
     width: 80%;
 }
+
+.container-nhs-mid-grey {
+    background-color: #768692;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-nhs-pale-grey {
+    background-color: #E8EDEE;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-nhs-dark-blue {
+    background-color: #003087;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-nhs-blue {
+    background-color: #005EB8;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-nhs-bright-blue {
+    background-color: #0072CE;
+    padding: 10px;
+    text-align: center;
+}
