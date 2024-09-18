@@ -104,7 +104,7 @@ If the result value is a numeric quantity (i.e. a quantitative result type), a s
 If the result value is coded (i.e. a semi-quantitative or qualitative result type), a suitable SNOMED CT concept **SHOULD** be used, for example: 
 
 * `Observation.valueCodeableConcept.coding.system` = `http://snomed.info/sct`
-* `Observation.valueCodeableConcept.coding.code` = `260385009"`
+* `Observation.valueCodeableConcept.coding.code` = `260385009`
 * `Observation.valueCodeableConcept.coding.display` = `Negative`
 
 **Note:** Semi-quantitative and qualitative results are currently represented as text in PMIP EDIFACT (NHS003). To facilitate the adoption of FHIR and minimise the impact on existing systems and processes, it is anticipated that these types of results will initially continue to be represented as text (using `valueString`).

@@ -9,7 +9,7 @@ html, body {
      height: 100%;
 }
  body header {
-     background-color: #ffffff;
+     background-color: #005EB8;
 }
 header .row {
 min-height: 120px;
@@ -29,15 +29,17 @@ min-height: 120px;
  body header h5 {
      text-align: center;
 }
- body header .hl7-fhir-logo-lhs {
+ body header .nhs-e-logo {
      text-align: left;
-     margin-top: 7px;
-     margin-bottom: 5px;
+     margin-top: 20px;
+     margin-bottom: 20px;
 }
  body header .hl7-logo {
      text-align: right;
      float: left;
      margin-top:15px;
+     background-color: #E8EDEE;
+     width: auto;
 }
  body header .guide-title {
     font-size: 18px;
@@ -52,8 +54,8 @@ min-height: 120px;
      padding-bottom: 105px;
 }
  body footer {
-     background-color: #0072ce;
-     color: #ffffff;
+     background-color: #E8EDEE;
+     color: #231f20;
      height: 105px;
      position: relative;
      padding-top: 40px;
@@ -314,7 +316,7 @@ table.valuesetlist th {
  .navbar-nav>li>a:hover,
  .navbar-nav>li>a:active,
  .navbar-nav>li>a:focus  {
-    background-color: #005eb8 !important;
+    background-color: #0072CE !important;
     color: #ffffff !important;
 }
  .container-fluid>.navbar-collapse,
@@ -655,12 +657,13 @@ h2 code {
 }
 
 .navbar-default {
-    background-color: #005EB8;
+    background-color: #0072CE;
     border-color: transparent;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
     color: #ffffff;
+    font-size: 15px;
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
@@ -674,7 +677,7 @@ h2 code {
 }
 
 a#footer-sitemap, a#footer-history, a#footer-licence, a#footer-propose, a#footer-basedon {
-color: #ffffff;    
+color: #0072CE;    
 }
 
 .alert-license {
@@ -709,6 +712,50 @@ color: #ffffff;
     width: 20%;
 }
 
+.col-md-16 {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 20px;
+}
+
 .col-md-18 {
     width: 80%;
+}
+
+.container-nhs-mid-grey {
+    background-color: #768692;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.container-nhs-pale-grey {
+    background-color: #E8EDEE;
+    padding: 20px;
+}
+
+.container-nhs-dark-blue {
+    background-color: #003087;
+    padding: 20px;
+}
+
+.container-nhs-blue {
+    background-color: #005EB8;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.container-nhs-bright-blue {
+    background-color: #0072CE;
+    padding: 20px;
+}
+
+a[target="_blank"]::after {
+  content: "" / "opens in new tab/window";
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0 0.075em 0 0.1em;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: text-bottom;
 }

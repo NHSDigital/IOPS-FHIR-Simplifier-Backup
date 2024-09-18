@@ -5325,7 +5325,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
         <tr>
             <td>identifier</td>
             <td>E083</td>
-            <td>partner-agreed identification of healthcare part</td>
+            <td>partner-agreed identification of healthcare party</td>
             <td>SG1.RFF.C506.1154</td>
             <td></td>
         </tr>
@@ -5373,7 +5373,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
         <tr>
             <td>identifier</td>
             <td>E083</td>
-            <td>partner-agreed identification of healthcare part</td>
+            <td>partner-agreed identification of healthcare party</td>
             <td>SG1.RFF.C506.1154</td>
             <td></td>
         </tr>
