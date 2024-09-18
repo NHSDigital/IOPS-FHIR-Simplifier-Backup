@@ -30,17 +30,16 @@
 
             <div class="container">
                 <div id="header" class="row">
-                    <div class="col-md-4 hl7-fhir-logo-lhs">
-                        <a href="https://digital.nhs.uk/">
-                            <img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/Develop-1.5/src/images/General/NHS_England_logo.svg.png" height="85" alt="NHS England logo">
-                        </a>
+                    <div class="col-md-4 nhs-e-logo">
+                        <a href="https://www.england.nhs.uk">
+                <img src="https://www.england.nhs.uk/wp-content/themes/nhsengland/static/img/nhs-england-white.svg" height="100" alt="NHS England" />
                     </div>
                     <div class="col-md-16">
-                            <h1>{{ guide-title }}</h1>
+                            {{ guide-title }}
                     </div>
                     <div class="col-md-4 hl7-logo">
                         <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
-                           <img src="https://www.hl7.org/fhir/assets/images/fhir-logo-www.png" height="30" alt="HL7 FHIR logo"/>
+                           <img src="https://hl7.org/fhir/assets/images/fhir-logo-www.png" height="30" alt="HL7 FHIR logo"/>
                         </a> 
                     </div>
                 </div>
@@ -51,10 +50,6 @@
 
         <!-- Implementation guide content -->
         <div role="main" class="content container">
-
-        <div class="hero-header">
-        This is an Implementation Guide developed by NHS England.
-        </div>
 
             <!-- Header to be displayed on each page -->
             <!--Comment out for publication, start-->
