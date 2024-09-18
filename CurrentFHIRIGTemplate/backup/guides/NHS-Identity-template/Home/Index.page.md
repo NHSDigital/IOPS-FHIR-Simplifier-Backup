@@ -11,12 +11,22 @@ within editor left pane top right burger bar
 - scope: which package contains the resources. `<package> current` is usually used until publishing
 
 ### This is a level three heading
+
+<div class="container-nhs-mid-grey">
+
 Contains the following that may need editing:
 - information box: *header* line 60
 - released: *footer* line 99
 
+</div>
+
+<div class="container-nhs-pale-grey">
+
+# Design standards
+
 For design standards of IGs see the <a href="https://simplifier.net/guide/nhs-england-design-and-development-approach/Home/Asset-Design/IG-Page-Design?version=current"> NHS England Design & Development Approach</a>
 
+</div>
 
 <h3 id="licence-heading">Licence</h3>
 
