@@ -12,3 +12,5 @@
   filename: Genomic-SampleState.page.md
 - name: Genomic-BodySiteReference
   filename: Genomic-BodySiteReference.page.md
+- name: Fql-tester
+  filename: Fql-tester.page.md
