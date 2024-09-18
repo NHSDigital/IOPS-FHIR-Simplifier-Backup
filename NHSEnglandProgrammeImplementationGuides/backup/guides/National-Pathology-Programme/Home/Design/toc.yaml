@@ -1,11 +1,7 @@
 - name: Background
   filename: Background.page.md
-- name: Background2
-  filename: Background2
 - name: Design Overview
   filename: Design-Overview.page.md
-- name: Design Overview2
-  filename: Design-Overview2
 - name: Data Mapping
   filename: Data-Mapping.page.md
 - name: Transport

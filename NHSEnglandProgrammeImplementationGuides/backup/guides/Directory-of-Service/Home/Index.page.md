@@ -1,8 +1,12 @@
+<div class="container-nhs-pale-grey">
+
 ## What is Directory of Service (DoS)?
 
 The DoS is a directory of NHS services available to a Patient.
 
 Once someone has gone through a triage the DoS provides information about where they should go next.
+
+</div>
 
 {{render:Dos-basic-flow}}
 
@@ -12,9 +16,14 @@ The list is ranked by factors such as how close the facility is, when it is open
 
 Refer to NHS Program URL for more information <a href='https://digital.nhs.uk/services/directory-of-services-dos' target="_blank">Directory of Services (DoS)</a>
 
+<div class="container-nhs-pale-grey">
+
 ## What is the Aim of this Implementation Guide? ##
 
 This implementation guide provides guidance on implementing the Directory of Service (DoS) FHIR R4 Standard.
+
+</div>
+
 <h3 id="licence-heading">Licence</h3>
 
 <div markdown="span" class="alert alert-license" role="alert"><h4 id="Licence"><i class="fas fa-gavel"></i> Licensing and Publisher</h4>
