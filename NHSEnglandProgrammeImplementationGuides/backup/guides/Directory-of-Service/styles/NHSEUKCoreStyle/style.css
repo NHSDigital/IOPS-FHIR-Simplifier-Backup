@@ -1,7 +1,7 @@
 html, body {
      padding: 0;
      margin: 0;
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #231f20;
 }
  body {
@@ -35,15 +35,18 @@ min-height: 120px;
      margin-bottom: 20px;
 }
  body header .hl7-logo {
-     text-align: right;
-     float: left;
-     margin-top:15px;
-     background-color: #E8EDEE;
-     width: auto;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: right;
+    vertical-align: top;
 }
  body header .guide-title {
-    font-size: 18px;
-    margin-top: 18px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #ffffff;
 }
  body .content {
      overflow: hidden;
@@ -707,15 +710,36 @@ color: #0072CE;
      margin-bottom: 0px;
  }
 
- 
- .col-md-6 {
-    width: 20%;
+.col-md-logo {
+    width: 20%; 
+    float:left;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.col-md-16 {
+.col-md-plogo {
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.col-md-title {
+    width: 60%;
+    float:left;
     color: #ffffff;
     font-size: 30px;
-    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ .col-md-6 {
+    width: 20%;
 }
 
 .col-md-18 {
@@ -747,15 +771,4 @@ color: #0072CE;
 .container-nhs-bright-blue {
     background-color: #0072CE;
     padding: 20px;
-}
-
-a[target="_blank"]::after {
-  content: "" / "opens in new tab/window";
-  width: 1.25em;
-  height: 1.25em;
-  margin: 0 0.075em 0 0.1em;
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
-  background-size: contain;
-  display: inline-block;
-  vertical-align: text-bottom;
 }
