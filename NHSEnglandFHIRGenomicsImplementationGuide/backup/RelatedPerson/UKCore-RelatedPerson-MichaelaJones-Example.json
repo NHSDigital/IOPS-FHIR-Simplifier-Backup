@@ -1,20 +1,27 @@
 {
-	"resourceType": "RelatedPerson",
-	"patient": {
-		"identifier": {
-			"system": "https://fhir.nhs.uk/Id/nhs-number",
-			"value": "9999999999"
-		}
-	},
-	"relationship": [
-		{
-			"coding": [
-				{
-					"system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-					"code": "SIS",
-					"display": "sister"
-				}
-			]
-		}
-	]
+  "resourceType": "RelatedPerson",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "1111111111"
+    }
+  ],
+  "patient": {
+    "reference": "Patient/UKCore-Patient-MichaelJones-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9999999999"
+    }
+  },
+  "relationship": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "SIS",
+          "display": "sister"
+        }
+      ]
+    }
+  ]
 }
