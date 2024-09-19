@@ -165,7 +165,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 <a name="patient"></a>
 #### patient
-SHALL be provided. This SHOULD be a reference to the Patient resource or the identifier, e.g. NHS number, for the patient constituting the target of the relationship.  This can be visualised using the nomenclature: 
+SHALL be provided. This SHOULD be a reference to the Patient resource and/or the identifier, e.g. NHS number, for the patient constituting the target of the relationship.  This can be visualised using the nomenclature: 
 
 ```
 {Source (identifier)} is the {Relationship type (relationship)} of {Target (patient)}
@@ -175,12 +175,15 @@ SHALL be provided. This SHOULD be a reference to the Patient resource or the ide
 In this case the fetal identifier should be used in the patient element.
 ```json
 "patient": {
-    "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
-    "value": "FT-RWT13521",
-    "assigner": {
-      "identifier": {
-        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-        "value": "RAX"
+    "reference": "Patient/Patient-FoetusOfRyanneBoulder-Example",
+    "identifier": {
+      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+      "value": "FT-RWT13521",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "RAX"
+        }
       }
     }
   },

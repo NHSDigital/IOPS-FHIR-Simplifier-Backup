@@ -8,6 +8,7 @@
     }
   ],
   "patient": {
+    "reference": "Patient/Patient-PheobeSmitham-Example",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
       "value": "9449307539"
@@ -18,8 +19,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-          "code": "FTH",
-          "display": "Father"
+          "code": "NFTH",
+          "display": "natural father"
         }
       ]
     }
