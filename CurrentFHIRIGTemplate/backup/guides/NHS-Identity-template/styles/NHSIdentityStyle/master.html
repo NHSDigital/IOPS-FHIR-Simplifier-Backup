@@ -14,10 +14,6 @@
         <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
         <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
 
-    <link href="https://design-system.digital.nhs.uk/" rel="preconnect" crossorigin="">
-    <link rel="stylesheet" href="https://design-system.digital.nhs.uk/cdn/v0.97.0/stylesheets/nhsd-frontend.css" media="screen" type="text/css" />
-    <link rel="stylesheet" href="//nhs-prod.global.ssl.fastly.net/webfiles/1629803351410/dist/nhsd-frontend-edge-cases.css" media="screen" type="text/css" />
-
         <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
         <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
         <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
@@ -25,27 +21,21 @@
     </head>
 
     <body>
-
         <header>
-
-            <div class="container">
-                <div id="header" class="row">
-                    <div class="col-md-4 nhs-e-logo">
-                        <a href="https://www.england.nhs.uk">
-                <img src="https://www.england.nhs.uk/wp-content/themes/nhsengland/static/img/nhs-england-white.svg" height="100" alt="NHS England" />
-                    </div>
-                    <div class="col-md-16">
-                            {{ guide-title }}
-                    </div>
-                    <div class="col-md-4 hl7-logo">
-                        <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
-                           <img src="https://hl7.org/fhir/assets/images/fhir-logo-www.png" height="30" alt="HL7 FHIR logo"/>
-                        </a> 
-                    </div>
+        <div class="container">
+            <div id="header" class="row">
+                <div class="col-md-logo">
+                    <a href="https://www.england.nhs.uk"><img src="https://www.england.nhs.uk/wp-content/themes/nhsengland/static/img/nhs-england-white.svg" height="100" alt="NHS England" /></a>
+                </div>
+                <div class="col-md-title">
+                    {{ guide-title }}
+                </div>
+                <div class="col-md-plogo">
+                    <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}"><img src="https://www.hl7.org.uk/wp-content/uploads/HL7UK_Media/Images/Pale_red_hl7_logo_2019-25-percent-2.jpg" height="40" alt="HL7 UK FHIR logo"/></a> 
                 </div>
             </div>
-            {{ dropdown-navigation }}
-
+        </div>
+        {{ dropdown-navigation }}
         </header>
 
         <!-- Implementation guide content -->
@@ -84,8 +74,8 @@
 	                    <col style="width:13%">
     	                <col style="width:33%">
                   <tr>
-                      <td>Powered by <b>SIMPLIFIER.NET</b></td>                      
-                      <td>IG © 2023+ NHS England</td>
+                      <td>Powered by <b>SIMPLIFIER.NET</b></td>
+                      <td>IG © <script>document.write(/\d{4}/.exec(Date())[0])</script>+ NHS England</td>
                       <td><span><b>Version:</b> {{ guide-version }}</span></td>
                       <td><span><b>FHIR Version:</b> {{ guide-fhir-version }} </span></td>
                       <td><b>Packages are based on:</b>  <a id="footer-basedon" href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>

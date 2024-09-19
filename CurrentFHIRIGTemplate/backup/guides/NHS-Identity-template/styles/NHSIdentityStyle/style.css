@@ -35,15 +35,18 @@ min-height: 120px;
      margin-bottom: 20px;
 }
  body header .hl7-logo {
-     text-align: right;
-     float: left;
-     margin-top:15px;
-     background-color: #E8EDEE;
-     width: auto;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: right;
+    vertical-align: top;
 }
  body header .guide-title {
-    font-size: 18px;
-    margin-top: 18px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #ffffff;
 }
  body .content {
      overflow: hidden;
@@ -707,15 +710,36 @@ color: #0072CE;
      margin-bottom: 0px;
  }
 
- 
- .col-md-6 {
-    width: 20%;
+.col-md-logo {
+    width: 20%; 
+    float:left;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.col-md-16 {
+.col-md-plogo {
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.col-md-title {
+    width: 60%;
+    float:left;
     color: #ffffff;
     font-size: 30px;
-    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ .col-md-6 {
+    width: 20%;
 }
 
 .col-md-18 {
