@@ -14,8 +14,6 @@
   filename: OperationDefinitions
 - name: CapabilityStatements
   filename: CapabilityStatements
-- name: MessageDefinitions
-  filename: MessageDefinitions
 - name: NamingSystem
   filename: NamingSystem
 - name: SearchParameters

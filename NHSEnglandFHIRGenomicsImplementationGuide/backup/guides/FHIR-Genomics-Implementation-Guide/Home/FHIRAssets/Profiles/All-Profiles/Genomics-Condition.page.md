@@ -98,7 +98,7 @@ The primary condition, being tested for SHOULD be referenced via ServiceRequest.
             <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
                     <tr><td>Condition</td><td>Patient Clinical Presentation, Diabetic complications</td><td>DG1</td></tr>
-                    <tr><td>Condition.bodySite</td><td>Has multiple primary tumours, Count of tumours, Site of tumour (many), Paraganglioma location, Abnormal infection history site, Abnormal infection history site organism</td><td>Multiple DG1 segments (bodySite for condition not in scope for HL7v2)</td></tr>
+                    <tr><td>Condition.bodySite</td><td>Has multiple primary tumours, Count of tumours, Site of tumour (many), Abnormal infection history site, Abnormal infection history site organism</td><td>Multiple DG1 segments (bodySite for condition not in scope for HL7v2)</td></tr>
                     <tr><td>Condition.verificationStatus</td><td>Known/suspected disease</td><td>DG1-6</td></tr>
                     <tr><td>Condition.recordedDate</td><td>Date of diagnosis, Diagnosis during pregnancy</td><td>DG1-5</td></tr>
                     <tr><td>Condition.clinicalStatus</td><td>Disease status, Is patient in treatment free remission, Is diabetes in remission</td><td>Potentially mapped to DG1-17</td></tr>
