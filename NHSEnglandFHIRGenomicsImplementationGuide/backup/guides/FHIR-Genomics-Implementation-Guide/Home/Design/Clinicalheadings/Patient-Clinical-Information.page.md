@@ -11,31 +11,28 @@ Mapped to Condition and Observation resources linked to the patient. The primary
 ### Mapping
 | Source Data item | Target FHIR Element | HL7v2.5.1 Mapping | Description 
 |--|--|
+|Genomic ethnicity|Observation.valueString( code=723621000000103 )|OBX-5|Patient's ethnicity where 'Patient - Ethnicity field' doesn't provide an adequate description. E.g Ashkenazi Jewish|
 |Disease status|Condition.clinicalStatus, Condition.verificationStatus (**Needs mapping to MDS enums**)|Potentially mapped to DG1-17|If the patient is affected, uncertain, unaffected, or it is unknown.|
+|Date of diagnosis|Condition.recordedDate|DG1-5|The patient's date of diagnosis.|
+|Age at disease onset|Condition.onsetAge|PRB-16, note not included within OML message|The age when a change in patients' health was first noted in line with suspected diagnosis.|
+|Known/suspected disease|Condition.verificationStatus|DG1-6|Disease a patient is believed, known to have, or be at risk of developing. |
 |Phenotypic details (Many)|Condition.code with HPO system|Additional DG1 segments (DG1-3)|The HPO (or alternative ontology as appropriate) term names for the observable disease traits.|
+|Symptoms at onset|Condition.evidence.code|Separate DG1 with DG1-17=S|The patient's symptoms at onset.|
+|Disease penetrance|Observation.code = 86426007 or 87006007|OBX segments with appropriate SNOMED CT codes|Confirms if all individuals with a disease show clinical symptoms or if there are carriers who do not.|
 |Has multiple tumours|Inferred through multiple Condition.bodySite entries|Multiple DG1 segments (bodySite for condition not in scope for HL7v2)|Does the patient have multiple tumours.|
 |Count of tumours|Inferred through number of Condition/Condition.bodysite entries for tumours|Multiple DG1 segments (bodySite for condition not in scope for HL7v2)|How many tumours the patient has.|
 |Site of tumour (many)|codes used for Condition.bodysite entries|Multiple DG1 segments (bodySite for condition not in scope for HL7v2)|Location of the tumours on the body.|
 |Solid tumour type|Specific Condition.code e.g. child concepts of 128462008 for metastatic tumours|DG1-3|The patient's solid tumour type.|
 |Liquid tumour type|Specific Condition.code, e.g. 91861009 for AML|DG1-3|The patient's liquid tumour type.|
-|Known/suspected disease|Condition.verificationStatus|DG1-6|Disease a patient is believed, known to have, or be at risk of developing. |
-|Date of diagnosis|Condition.recordedDate|DG1-5|The patient's date of diagnosis.|
+|Tumour sites - Body image diagram|Media **TBC**|N/A - not in scope for HL7v2|Image attachment of body with tumour sites highlighted.|
 |Pedigree details / Relevant family history|FamilyMemberHistory referenced from ServiceRequest.supportingInfo, optionally referenced from Condition.evidence.detail|N/A not in scope for HL7v2, could be added as additional DG1 segments related to relatives (representation of family history in HL7v2 still pending investigation)|The patient's pedigree details/diagram (inc family history of cancer).|
 |Pedigree diagram|Media referenced from ServiceRequest.supportingInfo, optionally referenced from Condition.evidence.detail|N/A not in scope for HL7v2, could be added as additional DG1 segments related to relatives (representation of family history in HL7v2 still pending investigation)|Image attachment of pedigree details.|
-|Disease penetrance|Inferred through FamilyMemberHistory.condition.outcome elements for each individual e.g. 29679002 for carriers **NOTE: representation of this concept is undergoing review, e.g. usage of a single field for complete/incomplete penetrance, the mapping will be updated once a new version of the MDS is released**|DG1 segments related to relatives (representation of family history in HL7v2 still pending investigation), PRB-12 for non OML messages could be used|Confirms if all individuals with a disease show clinical symptoms or if there are carriers who do not.|
 |Laterality of hearing loss|Specific Condition.code under Hearing loss e.g. 473424007|DG1-2|Laterality of the hearing loss i.e. bilateral or unilateral.|
-|Fetal maternal screening genotype|Presence of Condition.code 62621000119107 for Fetal hemoglobinopathy (disorder)|DG1-2|Maternal screening genotype for haemoglobinopathy testing.|
+|Fetal maternal screening genotype|Presence of Condition.code with appropriate code for Fetal Maternal Screening Genotype (as identified in ConceptMap) attached to Maternal Patient resource|DG1-3|Maternal screening genotype for haemoglobinopathy testing.|
 |Is patient on TKI therapy|Presence of in-progress Procedure with code 1237262009 for Receptor tyrosine-protein kinase erbB-2 inhibitor therapy (procedure)|OBR-44|If the patient is on tyrosine kinase inhibitor therapy.|
 |Is patient in treatment free remission|Condition.clinicalStatus = remission|N/A, for non OML messages PRB-14|If the patient in treatment free remission.|
-|Further clinical information|Linked Condition/Observation resources|Linked DG1/OBR segments|Clinical information which has not been captured elsewhere.|
-|Further non clinical information.|ServiceRequest.note|NTE segments in OML message|Non-clinical information which has not been captured elsewhere.|
-|Genomic ethnicity|Observation.valueString( code=723621000000103 )|OBX-5|Patient's ethnicity where 'Patient - Ethnicity field' doesn't provide an adequate description. E.g Ashkenazi Jewish|
-|Tumour sites - Body image diagram|Media **TBC**|N/A - not in scope for HL7v2|Image attachment of body with tumour sites highlighted.|
-|Date of disease onset|Condition.onsetDateTime|N/A, for non OML messages PRB-16|The date when a change in patients health was first noted in line with suspected diagnosis.|
-|Legal considerations|**TBC** Needs more specificity to properly model|**TBC** possibly DG1-18|Legal considerations for a given request.|
-|Symptoms at onset|Condition.evidence.code|Separate DG1 with DG1-17=S|The patient's symptoms at onset.|
-|ISTH BAT score|Observation.valueQuantity (note: no SNOMED code currently exists for the ISTH-BAT tool so this will need to be coded as text within Observation.code)|OBX-5|Bleeding score - high bleeding score is associated with the presence of an inherited bleeding disorder|
-|Fetal paternal screening genotype|Condition.code 80141007 for Hemoglobinopathy (disorder) attached to paternal Patient resource (or associated carrier code)|DG1-3|Paternal screening genotype for haemoglobinopathy testing.|
+|Legal considerations|**TBC** Needs more specificity to properly model, likely Consent resources attached to ServiceRequest|**TBC** possibly DG1-18|Legal considerations for a given request.|
+|Fetal paternal screening genotype|Presence of Condition.code with appropriate code for Fetal Maternal Screening Genotype (as identified in ConceptMap) attached to Paternal Patient resource|DG1-3|Paternal screening genotype for haemoglobinopathy testing.|
 |Expected maternity unit - Organisation name|**TBC** Future dated Encounter with referenced serviceProvider|potentially PV1-42.4|Requesting clinician's organisation name.|
 |Expected maternity unit - Organisation address|**TBC** Future dated Encounter with referenced serviceProvider|PV1-42.7|Requesting clinician's organisation address.|
 |Expected maternity unit - Organisation ODS code|**TBC** Future dated Encounter with referenced serviceProvider|PV1-42.10|Requesting clinician's organisation ODS code.|
@@ -44,13 +41,18 @@ Mapped to Condition and Observation resources linked to the patient. The primary
 |Severity of hearing loss|Condition.code with appropriate code under 15188001 or Condition.note with code 15188001|DG1-3|Free text regarding hearing loss|
 |Retinal degeneration|Condition.code with appropriate code under 95695004 or Condition.note with code 95695004|DG1-3|Free text regarding retinal degeneration|
 |Risk factors|MedicationStatement resources with certain codes **TBC**|OBX segments detailing patient on medication etc.|Toxic medication - Prematurity (risk factor for hearing loss) e.g. Baby early birth - Ototoxic medication.|
-|Hepatic vs neurological presentation|Condition.code with either Hepatic or Neurological SNOMED codes|OBX/DG1 segments|Outcome of either Hepatic or Neurological.|
 |Suspected inborn error type(s)|Condition.code with code under 86095007 and verificationStatus provisional/unconfirmed|DG1-3|Suspected inborn error type(s)|
 |Abnormal infection history site|**TBC** Condition.bodySite for relevant infection entries|**TBC**|Abnormal infection history Site|
 |Abnormal infection history site organism|**TBC** Condition.bodySite for relevant infection entries with reference to specific body structures|**TBC**|Abnormal infection history Site organism|
 |Is on Ig replacement|**TBC** Procedure.code with code 698802001 with status=in-progress|**TBC**|If the patient is on immunoglobin replacement treatment.|
 
 <!--
+|Further clinical information|Linked Condition/Observation resources|Linked DG1/OBR segments|Clinical information which has not been captured elsewhere.|
+|Further non clinical information.|ServiceRequest.note|NTE segments in OML message|Non-clinical information which has not been captured elsewhere.|
+|Date of disease onset|Condition.onsetDateTime|N/A, for non OML messages PRB-16|The date when a change in patients health was first noted in line with suspected diagnosis.|
+|ISTH BAT score|Observation.valueQuantity (note: no SNOMED code currently exists for the ISTH-BAT tool so this will need to be coded as text within Observation.code)|OBX-5|Bleeding score - high bleeding score is associated with the presence of an inherited bleeding disorder|
+|Hepatic vs neurological presentation|Condition.code with either Hepatic or Neurological SNOMED codes|OBX/DG1 segments|Outcome of either Hepatic or Neurological.|
+
 |MODY probability calculator score|Observation with code under 609561005 for Maturity-onset diabetes of the young (disorder)|OBX-5|Exeter's diabetic risk calculator|
 |Insulin treated within 6 months of diagnosis|Presence of Procedure with appropriate Insulin Therapy code with performed\[x\] within six months of the ServiceRequest.authoredOn date|OBR-44|Has the patient been treated for insulin within the last 6 months of diagnosis.|
 |Diagnosis during pregnancy|Overlap of Condition.recordedDate with Observation.effectivePeriod for pregnancy|PRB segment overlapping OBC for pregnancy|Was the patient diagnosed during pregnancy|

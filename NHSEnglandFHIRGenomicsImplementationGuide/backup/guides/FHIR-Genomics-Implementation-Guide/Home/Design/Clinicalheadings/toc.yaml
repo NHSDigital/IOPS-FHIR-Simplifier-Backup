@@ -10,15 +10,19 @@
   filename: Record-of-Discussion--TBC.page.md
 - name: Test Request
   filename: Test-Request.page.md
-- name: Raw Specimen/Biopsy
-  filename: Raw-Specimen-Biopsy.page.md
-- name: Extracted Specimen
-  filename: Extracted-Specimen.page.md
+- name: Primary Sample
+  filename: Primary-Sample.page.md
+- name: Sample Preparation
+  filename: Sample-Preparation.page.md
+- name: Final Sample
+  filename: Final-Sample.page.md
 - name: Previous Genomic Report
   filename: Previous-Genomic-Report.page.md
 - name: Relevant Clinical Report
   filename: Relevant-Clinical-Report.page.md
 - name: Patient Clinical Information
   filename: Patient-Clinical-Information.page.md
+- name: Further Supporting Information
+  filename: Further-Supporting-Information.page.md
 - name: PLCM activity
   filename: PLCM-activity.page.md

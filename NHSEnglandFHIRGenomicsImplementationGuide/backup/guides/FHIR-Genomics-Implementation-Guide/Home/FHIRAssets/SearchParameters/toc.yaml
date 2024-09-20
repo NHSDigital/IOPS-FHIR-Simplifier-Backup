@@ -4,3 +4,5 @@
   filename: Genomic-ServiceRequest-supportingInfo.page.md
 - name: Genomic-Specimen-request
   filename: Genomic-Specimen-request.page.md
+- name: Genomic-AuditEvent-entity-detail
+  filename: Genomic-AuditEvent-entity-detail.page.md

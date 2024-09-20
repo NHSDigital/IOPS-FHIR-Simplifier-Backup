@@ -173,6 +173,7 @@ Alternatively, systems MAY opt to include pointers to the Patient resource on th
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
                     <tr><td>Patient.identifier</td><td>Patient - NHS number, Patient - Local identifier, Patient - Pedigree/Family Identifier, Fetus - Local identifier, Previous genomic report - Patient's NHS number, Previous genomic report - Patient's alternative identifier, Previous genomic report - Patient's clinical genetics number, Previous genomic report - Patient's pedigree number</td><td>PID-3</td></tr>
                     <tr><td>Patient.extension:nhsNumberUnavailableReason</td><td>Patient - Reason for unavailable NHS number, Patient - Withheld identity reason</td><td>N/A, could use PID-32 as surrogate</td></tr>
+                    <tr><td>Patient.name.prefix</td><td>Patient - Title</td><td>PID-5.5</td></tr>
                     <tr><td>Patient.name.given</td><td>Patient - First name, Previous genomic report - Patient's first name</td><td>PID-5.2</td></tr>
                     <tr><td>Patient.name.family</td><td>Patient - Surname, Previous genomic report - Patient's surname</td><td>PID-5.1</td></tr>
                     <tr><td>Patient.birthDate</td><td>Patient - Date of birth, PLCM activity - Patient age at activity date, Previous genomic report - Patient's date of birth</td><td>PID-7, Age derived from the difference between PID-7 and TQ1-7 for the relevant activity</td></tr>

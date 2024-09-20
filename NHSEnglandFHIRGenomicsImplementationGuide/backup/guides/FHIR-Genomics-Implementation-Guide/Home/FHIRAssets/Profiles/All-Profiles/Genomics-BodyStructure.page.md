@@ -78,8 +78,8 @@ Use of this resource is meant to replace the Genomics extensions for topology an
             <br />
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
-                    <tr><td>BodyStructure.morphology</td><td>Raw specimen/biopsy - Solid tumour morphology</td><td>Additional SPM-4/5 qualifiers</td></tr>
-                    <tr><td>BodyStructure.location</td><td>Raw specimen/biopsy - Solid tumour histological type (topography)</td><td>SPM-8</td></tr>
+                    <tr><td>BodyStructure.morphology</td><td>Primary Sample - Solid tumour morphology</td><td>Additional SPM-4/5 qualifiers</td></tr>
+                    <tr><td>BodyStructure.location</td><td>Primary Sample - Solid tumour histological type (topography)</td><td>SPM-8</td></tr>
                 </table>
         </div>
     </div>
