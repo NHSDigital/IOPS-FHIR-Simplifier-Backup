@@ -1,5 +1,6 @@
 title: UK Core Implementation Guide 0.4.0 - STU1
-description: 'DEPRECATED: Please versions in the STU1 Sequence guides'
+description: 'DEPRECATED - TO BE DELETED: Please versions in the STU1 Sequence guides'
 version: 0.4.0
 style-root: project
 style-name: HL7UKCore
+numbered-headings: false
