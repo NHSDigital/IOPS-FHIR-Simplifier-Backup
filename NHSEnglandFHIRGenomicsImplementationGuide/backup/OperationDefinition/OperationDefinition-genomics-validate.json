@@ -1,0 +1,67 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "OperationDefinition-genomics-validate",
+  "url": "https://fhir.nhs.uk/OperationDefinition/genomics-validate",
+  "version": "0.0.1",
+  "name": "GenomicsValidate",
+  "status": "draft",
+  "kind": "operation",
+  "experimental": false,
+  "date": "2024-09-20",
+  "publisher": "NHS England",
+  "description": "An operation to support validation of resources against a GraphDefinition. This OperationDefinition is an extension to the Resource-validate operation (please see the deifinition for this operation to determine functionality for the base input/output parameters).\r\nUse of this operation SHALL invoke FHIR validation (structural validation), Ontology Server validation (semantic validation) and Business Rules/Genomic MDS validation (business validation) by default.",
+  "purpose": "This Operation is intended to support two specific use cases:\r\n1. To allow validation of resources before submission/creation on the central order management broker, e.g. in the case of a client/front-end system for constructing an order form, allowing display of validation issues to the user.\r\n2. To allow downstream systems to validate or check test orders for warnings, e.g. omitted items marked as Mandatory in the Genomic Test Order MDS, allowing these systems to assess validity before injecting resources into their own pipelines.",
+  "affectsState": false,
+  "code": "genomics-validate",
+  "base": "http://hl7.org/fhir/OperationDefinition/Resource-validate",
+  "system": true,
+  "type": true,
+  "instance": true,
+  "parameter": [
+    {
+      "name": "resource",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Must be present unless the mode is \"delete\"",
+      "type": "Resource"
+    },
+    {
+      "name": "mode",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Default is 'no action'; (e.g. general validation)",
+      "type": "code",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/fhir/ValueSet/resource-validation-mode|4.0.1"
+      }
+    },
+    {
+      "name": "profile",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "If this is nominated, then the resource is validated against this specific profile. If a profile is nominated, and the server cannot validate against the nominated profile, it SHALL return an error",
+      "type": "uri"
+    },
+    {
+      "name": "graph",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The GraphDefinition to validate the set of resources against, e.g. if used at the instance level for ServiceRequest, the genomic-test-order graphdefinition will pull all references required to compile a full genomic test order and validate the complete bundle of resources rather than the ServiceRequest in isolation.\r\nThe graph parameter SHALL match the canonical URL segment used to invoke the graph, e.g. genomic-test-order. The GraphDefinition SHALL be accessible by the server, either as a resource on the server itself or retrievable via the canonical URL, e.g. through a public FHIR registry.",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "If the operation outcome does not list any errors, and a mode was specified, then this is an indication that the operation would be expected to succeed (excepting for transactional integrity issues, see below)",
+      "type": "OperationOutcome"
+    }
+  ]
+}

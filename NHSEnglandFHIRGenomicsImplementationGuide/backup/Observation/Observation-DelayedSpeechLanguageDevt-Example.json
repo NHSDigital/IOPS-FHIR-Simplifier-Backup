@@ -6,6 +6,7 @@
 		"coding": [
 			{
 				"system": "http://human-phenotype-ontology.org",
+				"version": "20221005",
 				"code": "HP:0000750",
 				"display": "Delayed speech and language development"
 			}

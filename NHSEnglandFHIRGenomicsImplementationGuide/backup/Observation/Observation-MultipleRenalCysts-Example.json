@@ -6,6 +6,7 @@
 		"coding": [
 			{
 				"system": "http://human-phenotype-ontology.org",
+				"version": "20221005",
 				"code": "HP:0005562",
 				"display": "Multiple renal cysts"
 			}
