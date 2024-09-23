@@ -772,3 +772,8 @@ color: #0072CE;
     background-color: #0072CE;
     padding: 20px;
 }
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
