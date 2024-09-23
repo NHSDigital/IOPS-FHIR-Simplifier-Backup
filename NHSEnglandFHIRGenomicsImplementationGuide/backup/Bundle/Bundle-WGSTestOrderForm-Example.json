@@ -498,6 +498,7 @@
           "coding": [
             {
               "system": "http://human-phenotype-ontology.org",
+              "version": "20221005",
               "code": "HP:0005562",
               "display": "Multiple renal cysts"
             }
@@ -528,6 +529,7 @@
           "coding": [
             {
               "system": "http://human-phenotype-ontology.org",
+              "version": "20221005",
               "code": "HP:0000090",
               "display": "Nephronophthisis"
             }
@@ -558,6 +560,7 @@
           "coding": [
             {
               "system": "http://human-phenotype-ontology.org",
+              "version": "20221005",
               "code": "HP:0001407",
               "display": "Hepatic cysts"
             }
@@ -588,6 +591,7 @@
           "coding": [
             {
               "system": "http://human-phenotype-ontology.org",
+              "version": "20221005",
               "code": "HP:0000105",
               "display": "Enlarged kidney"
             }
@@ -618,6 +622,7 @@
           "coding": [
             {
               "system": "http://human-phenotype-ontology.org",
+              "version": "20221005",
               "code": "HP:0000083",
               "display": "Renal insufficiency"
             }

@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "SearchParameter-Genomics-entity-detail",
+  "url": "https://fhir.nhs.uk/SearchParameter/entity-detail",
+  "name": "EntityDetail",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-09-20",
+  "publisher": "NHS England",
+  "description": "Additional detail/metadata for AuditEvents",
+  "purpose": "For searching for AuditEvents using the SPLUNK messageID, saved against the AuditEvent.entity.detail field",
+  "code": "entity-detail",
+  "base": [
+    "AuditEvent"
+  ],
+  "type": "string",
+  "expression": "AuditEvent.entity.detail",
+  "multipleOr": true,
+  "multipleAnd": false
+}
