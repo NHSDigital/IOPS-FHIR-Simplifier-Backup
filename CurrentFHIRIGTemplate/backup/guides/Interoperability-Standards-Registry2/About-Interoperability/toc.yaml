@@ -1,10 +1,12 @@
 - name: Index
   filename: Index.page.md
-- name: Clinical Capabilities
-  filename: Clinical-Capabilities
-- name: Technical Patterns
-  filename: Technical-Patterns
 - name: FHIR Guides
   filename: FHIR-Guides
+- name: FHIR Assets
+  filename: FHIR-Assets
+- name: API Playground
+  filename: API-Playground
+- name: Technical Patterns
+  filename: Technical-Patterns
 - name: Help and Support
   filename: Help-and-Support
