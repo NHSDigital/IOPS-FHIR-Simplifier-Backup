@@ -25,6 +25,7 @@
   "targetUri": "http://hl7.org/fhir/ValueSet/request-priority",
   "group": [
     {
+      "source": "https://future.nhs.uk/NHSgenomics/view?objectId=222250117",
       "target": "http://hl7.org/fhir/request-priority",
       "element": [
         {
