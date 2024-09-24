@@ -1,5 +1,13 @@
 ## {{page-title}}
 
+### 0.4.1
+
+Date released: 30/10/2024
+
+[GitHub Release/Changelog](https://github.com/NHSDigital/NHSDigital-FHIR-Genomics-ImplementationGuide/releases/tag/v0.4.1)
+
+- Major changes to modelling
+
 ### 0.3.2
 
 Date released: 12/04/2024
