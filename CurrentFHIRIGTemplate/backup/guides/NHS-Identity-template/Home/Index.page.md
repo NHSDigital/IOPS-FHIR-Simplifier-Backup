@@ -13,23 +13,59 @@ within editor left pane top right burger bar
 ### This is a level three heading
 
 <div class="container-nhs-mid-grey">
-
 Contains the following that may need editing:
 - information box: *header* line 60
 - released: *footer* line 99
-
 </div>
 
 <div class="container-nhs-pale-grey">
-
 # Design standards
 
 For design standards of IGs see the <a href="https://simplifier.net/guide/nhs-england-design-and-development-approach/Home/Asset-Design/IG-Page-Design?version=current"> NHS England Design & Development Approach</a>
-
 </div>
 
-<h3 id="licence-heading">Licence</h3>
+## Administration
+<div class="col-grid">
+<div class="col-grid-content">
+<div class="col-grid-body">
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Patient?version=current">Content 1</a></b></h4>
+<div class="col-grid-text">This profile allows exchange of demographics and other administrative information about an individual receiving care.</div>
+</div>
+</div>
+<div class="col-grid-content">
+<div class="col-grid-body">
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-PractitionerRole?version=current">Content 2</a></b></h4>
+<div class="col-grid-text">This profile allows exchange of a specific set of roles, specialties and services that a practitioner.</div>
+</div>
+</div>
+<div class="col-grid-content">
+<div class="col-grid-body">
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Location?version=current" >Content 3</a></b></h4>
+ <div class="col-grid-text">This profile can be used to exchange details and position information for a physical place.</div>
+</div>
+</div><div class="col-grid-content">
+<div class="col-grid-body">
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-HealthcareService?version=current">Content 4</a></b></h4>
+<p class="col-grid-text">This profile is used to describe a single healthcare service or category of services.</p>
+</div>
+</div>
+<div class="col-grid-content">
+<div class="col-grid-body">
+ <h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Practitioner?version=current">Content 5</a></b></h4>
+<p class="col-grid-text">This profile allows exchange of information about all individuals who are engaged in the healthcare process and healthcare-related services.</p>
+</div>
+</div>
+<div class="col-grid-content">
+<div class="col-grid-body">
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Encounter?version=current" >Content 6</a></b></h4>
+ <p class="col-grid-text">This profile allows exchange of information about an interaction between an.</p>
+</div>
+</div>
+</div>
 
+<br/><br/>
+
+## License
 <div markdown="span" class="alert alert-license" role="alert"><h4 id="Licence"><i class="fas fa-gavel"></i> Licensing and Publisher</h4>
 <ul>
 <li>

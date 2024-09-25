@@ -28,11 +28,17 @@
                     <a href="https://www.england.nhs.uk"><img src="https://www.england.nhs.uk/wp-content/themes/nhsengland/static/img/nhs-england-white.svg" height="100" alt="NHS England" /></a>
                 </div>
                 <div class="col-md-title">
-                    {{ guide-title }}
+                    {{variable:guide-title }}
+                    <br/>
+                    <div class="col-md-description">
+                    {{variable:guide-description}}
+                    </div>
                 </div>
+                <!-- HL7 UK Logo
                 <div class="col-md-plogo">
                     <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}"><img src="https://www.hl7.org.uk/wp-content/uploads/HL7UK_Media/Images/Pale_red_hl7_logo_2019-25-percent-2.jpg" height="40" alt="HL7 UK FHIR logo"/></a> 
                 </div>
+                -->
             </div>
         </div>
         {{ dropdown-navigation }}
