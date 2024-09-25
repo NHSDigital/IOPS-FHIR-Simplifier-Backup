@@ -22,7 +22,7 @@ Mapped to ServiceRequest, extensions are still in review. CI and CITT codes for 
 |Test request - Low level multipurpose test identifier description|ServiceRequest.orderDetail.coding.display|OBR-4.2|The low level name of the test to be actioned when the CITT code is multipurpose.|
 |Test request - Count of patients to be tested|N/A - Determined through number of Patients referenced in ServiceRequests in test order|N/A - for HL7v2, each patient test request SHOULD be sent using a new OML^O21 message|Count of patients to be tested.|
 |Test request - Urgency reason|ServiceRequest.extension:priorityReason|N/A could possibly use TQ1-10|If urgent, the test request urgency reason.|
-|Test request - Reason for reanalysis|Additional ServiceRequest.reasonCode/reasonReference elements|OBR-13 segment linked to ORC|The reason for a genomic test.|
+|Test request - Reason for reanalysis|Additional ServiceRequest.reasonCode elements|OBR-13 segment linked to ORC|The reason for a genomic test.|
 |Test request - Detail of reason for reanalysis|ServiceRequest.supportingInfo elements (if structured, ServiceRequest.note if unstructured **TBC**)|NTE segments linked to OBR segment for reanalysis reason|The detail associated to the reason reanalysis has been requested.|
 |Test request - Type of reanalysis|ServiceRequest.orderDetail|Additional NTE segments attached to OBR|The type of reanalysis which has been requested.|
 |Test request - DNA storage information|ServiceRequest.orderDetail|Additional NTE segments attached to OBR|If the reason for testing is DNA storage, this captures further detail.|
