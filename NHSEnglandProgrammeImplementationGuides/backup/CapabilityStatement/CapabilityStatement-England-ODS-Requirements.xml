@@ -1,11 +1,11 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="England-ODS-Requirements" />
   <url value="https://fhir.nhs.uk/England/CapabilityStatement/England-ODS-Requirements" />
-  <version value="0.0.3" />
+  <version value="0.0.5" />
   <name value="EnglandODSRequirements" />
   <title value="England ODS Requirements" />
   <status value="draft" />
-  <date value="2024-02-14" />
+  <date value="2024-09-17" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
@@ -17,20 +17,20 @@
     </telecom>
   </contact>
   <description value="Requirements for NHS England ODS FHIR API Implementation Guide" />
-  <jurisdiction> 
-    <coding> 
-      <system value="urn:iso:std:iso:3166:-2" /> 
-      <code value="GB-ENG" /> 
-      <display value="England" /> 
-    </coding> 
-  </jurisdiction> 
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166:-2" />
+      <code value="GB-ENG" />
+      <display value="England" />
+    </coding>
+  </jurisdiction>
   <purpose value="Requirements for NHS England ODS FHIR API Implementation Guide, to specify the RESTFul interactions, supported profiles, and expected minimum SearchParamneters." />
   <copyright value="Copyright &#169; 2023+ NHS England Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <kind value="requirements" />
   <fhirVersion value="4.0.1" />
   <format value="application/fhir+json" />
   <format value="application/fhir+xml" />
-  <implementationGuide value="https://simplifier.net/guide/organisational-data-services" /> 
+  <implementationGuide value="https://simplifier.net/guide/organisation-data-services" />
   <rest>
     <mode value="server" />
     <security>
@@ -46,29 +46,46 @@
       <interaction>
         <code value="search-type" />
       </interaction>
+      <searchRevInclude value="OrganizationAffiliation:participating-organization" />
+      <searchRevInclude value="OrganizationAffiliation:primary-organization" />
       <searchParam>
         <name value="identifier" />
-        <definition value="http://hl7.org/fhir/SearchParameter/identifier" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-identifier" />
         <type value="token" />
       </searchParam>
       <searchParam>
         <name value="active" />
-        <definition value="http://hl7.org/fhir/SearchParameter/active" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-active" />
         <type value="token" />
       </searchParam>
       <searchParam>
         <name value="type" />
-        <definition value="http://hl7.org/fhir/SearchParameter/type" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-type" />
         <type value="token" />
       </searchParam>
       <searchParam>
         <name value="name" />
-        <definition value="http://hl7.org/fhir/SearchParameter/name" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-name" />
+        <type value="string" />
+      </searchParam>
+      <searchParam>
+        <name value="address-city" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-address-city" />
         <type value="string" />
       </searchParam>
       <searchParam>
         <name value="address-country" />
-        <definition value="http://hl7.org/fhir/SearchParameter/address-country" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-address-country" />
+        <type value="string" />
+      </searchParam>
+      <searchParam>
+        <name value="address-postalcode" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-address-postalcode" />
+        <type value="string" />
+      </searchParam>
+      <searchParam>
+        <name value="address" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-address" />
         <type value="string" />
       </searchParam>
       <searchParam>
@@ -96,26 +113,235 @@
       <interaction>
         <code value="search-type" />
       </interaction>
+      <searchInclude value="OrganizationAffiliation:participating-organization" />
+      <searchInclude value="OrganizationAffiliation:primary-organization" />
       <searchParam>
         <name value="identifier" />
-        <definition value="http://hl7.org/fhir/SearchParameter/identifier" />
+        <definition value="http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-identifier" />
         <type value="token" />
       </searchParam>
       <searchParam>
         <name value="active" />
-        <definition value="http://hl7.org/fhir/SearchParameter/active" />
+        <definition value="http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-active" />
         <type value="token" />
       </searchParam>
       <searchParam>
         <name value="primary-organization" />
-        <definition value="http://hl7.org/fhir/SearchParameter/primary-organization" />
+        <definition value="http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-primary-organization" />
         <type value="reference" />
       </searchParam>
       <searchParam>
         <name value="participating-organization" />
-        <definition value="http://hl7.org/fhir/SearchParameter/participating-organization" />
+        <definition value="http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-participating-organization" />
         <type value="reference" />
       </searchParam>
+    </resource>
+    <resource>
+      <type value="CodeSystem" />
+      <profile value="http://hl7.org/fhir/StructureDefinition/CodeSystem" />
+      <interaction>
+        <code value="search-type" />
+      </interaction>
+      <interaction>
+        <code value="read" />
+      </interaction>
+      <searchParam>
+        <name value="_count" />
+        <type value="number" />
+      </searchParam>
+      <searchParam>
+        <name value="_id" />
+        <type value="string" />
+        <documentation value="The ID of the resource" />
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdated" />
+        <type value="date" />
+      </searchParam>
+      <searchParam>
+        <name value="_security" />
+        <type value="token" />
+      </searchParam>
+      <searchParam>
+        <name value="_tag" />
+        <type value="token" />
+      </searchParam>
+      <searchParam>
+        <name value="content-mode" />
+        <type value="token" />
+        <documentation value="not-present | example | fragment | complete | supplement" />
+      </searchParam>
+      <searchParam>
+        <name value="context" />
+        <type value="token" />
+        <documentation value="A use context assigned to the code system" />
+      </searchParam>
+      <searchParam>
+        <name value="context-type" />
+        <type value="token" />
+        <documentation value="A type of use context assigned to the code system" />
+      </searchParam>
+      <searchParam>
+        <name value="context-type-value" />
+        <type value="composite" />
+        <documentation value="A use context type and value assigned to the code system" />
+      </searchParam>
+      <searchParam>
+        <name value="description" />
+        <type value="string" />
+        <documentation value="The description of the code system" />
+      </searchParam>
+      <searchParam>
+        <name value="identifier" />
+        <type value="token" />
+        <documentation value="External identifier for the code system" />
+      </searchParam>
+      <searchParam>
+        <name value="name" />
+        <type value="string" />
+        <documentation value="Computationally friendly name of the code system" />
+      </searchParam>
+      <searchParam>
+        <name value="publisher" />
+        <type value="string" />
+        <documentation value="Name of the publisher of the code system" />
+      </searchParam>
+      <searchParam>
+        <name value="status" />
+        <type value="token" />
+        <documentation value="The current status of the code system" />
+      </searchParam>
+      <searchParam>
+        <name value="system" />
+        <type value="uri" />
+        <documentation value="The system for any codes defined by this code system (same as &#39;url&#39;)" />
+      </searchParam>
+      <searchParam>
+        <name value="title" />
+        <type value="string" />
+        <documentation value="The human-friendly name of the code system" />
+      </searchParam>
+      <searchParam>
+        <name value="url" />
+        <type value="uri" />
+        <documentation value="The uri that identifies the code system" />
+      </searchParam>
+      <searchParam>
+        <name value="version" />
+        <type value="token" />
+        <documentation value="The business version of the code system" />
+      </searchParam>
+      <operation>
+        <name value="validate-code" />
+        <definition value="http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code" />
+      </operation>
+      <operation>
+        <name value="subsumes" />
+        <definition value="http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes" />
+      </operation>
+      <operation>
+        <name value="lookup" />
+        <definition value="http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup" />
+      </operation>
+    </resource>
+    <resource>
+      <type value="ValueSet" />
+      <profile value="http://hl7.org/fhir/StructureDefinition/ValueSet" />
+      <interaction>
+        <code value="search-type" />
+      </interaction>
+      <interaction>
+        <code value="read" />
+      </interaction>
+      <searchParam>
+        <name value="_count" />
+        <type value="number" />
+      </searchParam>
+      <searchParam>
+        <name value="_id" />
+        <type value="string" />
+        <documentation value="The ID of the resource" />
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdated" />
+        <type value="date" />
+      </searchParam>
+      <searchParam>
+        <name value="_security" />
+        <type value="token" />
+      </searchParam>
+      <searchParam>
+        <name value="_tag" />
+        <type value="token" />
+      </searchParam>
+      <searchParam>
+        <name value="context" />
+        <type value="token" />
+        <documentation value="A use context assigned to the value set" />
+      </searchParam>
+      <searchParam>
+        <name value="context-type" />
+        <type value="token" />
+        <documentation value="A type of use context assigned to the value set" />
+      </searchParam>
+      <searchParam>
+        <name value="context-type-value" />
+        <type value="composite" />
+        <documentation value="A use context type and value assigned to the value set" />
+      </searchParam>
+      <searchParam>
+        <name value="description" />
+        <type value="string" />
+        <documentation value="The description of the value set" />
+      </searchParam>
+      <searchParam>
+        <name value="identifier" />
+        <type value="token" />
+        <documentation value="External identifier for the value set" />
+      </searchParam>
+      <searchParam>
+        <name value="name" />
+        <type value="string" />
+        <documentation value="Computationally friendly name of the value set" />
+      </searchParam>
+      <searchParam>
+        <name value="publisher" />
+        <type value="string" />
+        <documentation value="Name of the publisher of the value set" />
+      </searchParam>
+      <searchParam>
+        <name value="reference" />
+        <type value="uri" />
+        <documentation value="A code system included or excluded in the value set or an imported value set" />
+      </searchParam>
+      <searchParam>
+        <name value="status" />
+        <type value="token" />
+        <documentation value="The current status of the value set" />
+      </searchParam>
+      <searchParam>
+        <name value="title" />
+        <type value="string" />
+        <documentation value="The human-friendly name of the value set" />
+      </searchParam>
+      <searchParam>
+        <name value="url" />
+        <type value="uri" />
+        <documentation value="The uri that identifies the value set" />
+      </searchParam>
+      <searchParam>
+        <name value="version" />
+        <type value="token" />
+        <documentation value="The business version of the value set" />
+      </searchParam>
+      <operation>
+        <name value="validate-code" />
+        <definition value="http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code" />
+      </operation>
+      <operation>
+        <name value="expand" />
+        <definition value="http://hl7.org/fhir/OperationDefinition/ValueSet-expand" />
+      </operation>
     </resource>
   </rest>
 </CapabilityStatement>

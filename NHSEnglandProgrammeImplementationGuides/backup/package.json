@@ -1,8 +1,8 @@
 {
-  "name": "uk.nhsengland.r4",
-  "description": "NHS England Programme Implementation Guides",
+  "name": "fhir.r4.nhsengland.programme",
+  "version": "0.2.1",
+  "description": "NHS England Programme FHIR Implementation Guide for development and testing purposes of specific programmes only",
   "author": "nhsengland",
-  "version": "0.0.1",
   "fhirVersions": [
     "4.0.1"
   ],
