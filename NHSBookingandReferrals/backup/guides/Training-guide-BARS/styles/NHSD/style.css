@@ -724,8 +724,8 @@ color: #0072CE;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 5px;
-    background-color: #ffffff;
+    /*padding: 5px;
+    background-color: #ffffff;*/
 }
 
 .col-md-title {
