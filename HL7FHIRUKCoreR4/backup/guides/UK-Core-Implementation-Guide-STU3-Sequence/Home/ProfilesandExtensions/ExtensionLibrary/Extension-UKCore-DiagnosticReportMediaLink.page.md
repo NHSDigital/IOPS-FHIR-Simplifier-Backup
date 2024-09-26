@@ -14,3 +14,5 @@ issue: Extension-UKCore-DiagnosticReportMediaLink
 
 
 {{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+
+---
