@@ -22,37 +22,37 @@ The HL7® FHIR® (Fast Healthcare Interoperability Resources) standard defines h
 <div class="col-grid">
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Patient?version=current">Patient</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Patient">Patient</a></b></h4>
 <p class="col-grid-text">This profile allows exchange of demographics and other administrative information about an individual receiving care or other health-related services.</p>
 </div>
 </div>
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-PractitionerRole?version=current">PractitionerRole</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-PractitionerRole">PractitionerRole</a></b></h4>
 <p class="col-grid-text">This profile allows exchange of a specific set of roles, specialties and services that a practitioner may perform at an organisation for a period of time.</p>
 </div>
 </div>
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Location?version=current" >Location</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Location" >Location</a></b></h4>
  <p class="col-grid-text">This profile can be used to exchange details and position information for a physical place where services are provided and resources and participants may be stored, found, contained, or accommodated.</p>
 </div>
 </div>
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-HealthcareService?version=current">HealthcareService</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-HealthcareService">HealthcareService</a></b></h4>
 <p class="col-grid-text">This profile is used to describe a single healthcare service or category of services that are provided by an organisation at a location, including a virtual location.</p>
 </div>
 </div>
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Practitioner?version=current">Practitioner</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Practitioner">Practitioner</a></b></h4>
 <p class="col-grid-text">This profile allows exchange of information about all individuals who are engaged in the healthcare process and healthcare-related services as part of their formal responsibilities, is used for attribution of activities and responsibilities to these individuals.</p>
 </div>
 </div>
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Encounter?version=current" >Encounter</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Encounter" >Encounter</a></b></h4>
  <p class="col-grid-text">This profile allows exchange of information about an interaction between an individual and healthcare providers for the purpose of providing healthcare services or assessing the health status of an individual.</p>
 </div>
 </div>
@@ -72,19 +72,19 @@ The HL7® FHIR® (Fast Healthcare Interoperability Resources) standard defines h
 <div class="col-grid">
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-AllergyIntolerance?version=current">AllergyIntolerance</a></b></h4>
+<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-AllergyIntolerance">AllergyIntolerance</a></b></h4>
  <p class="col-grid-text">This profile allows a record of a clinical assessment of an allergy or intolerance; a propensity, or a potential risk to an individual, to have an adverse reaction on future exposure to the specified substance, or class of substance.</p>
  </div>
  </div>
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Procedure?version=current">Procedure</a></b></h4>
+<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Procedure">Procedure</a></b></h4>
 <p class="col-grid-text">This profile allows exchange of details of current and historical procedures performed on or for an individual. A procedure is an activity that is performed on, with, or for an individual as part of the provision of care.</p>
  </div>
  </div>
  <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-FamilyMemberHistory?version=current" >FamilyMemberHistory</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-FamilyMemberHistory" >FamilyMemberHistory</a></b></h4>
  <p class="col-grid-text">This profile allows exchange of information about health events and conditions for a person related to the patient relevant in the context of care.</p>
  </div>
  </div>
@@ -100,19 +100,19 @@ The HL7® FHIR® (Fast Healthcare Interoperability Resources) standard defines h
 <div class="col-grid">
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=current">Observation</a></b></h4>
+<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Observation">Observation</a></b></h4>
  <p class="col-grid-text">This profile allows exchange of information of Measurements and simple assertions made about an individual, device or other subject.</p>
  </div>
  </div>
  <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-DiagnosticReport?version=current">DiagnosticReport</a></b></h4>
+<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-DiagnosticReport">DiagnosticReport</a></b></h4>
 <p class="col-grid-text">This profile allows exchange of the findings and interpretation of diagnostic tests performed on individuals, groups of individuals, devices and locations and/or specimens derived from these.</p>
  </div>
  </div>
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Specimen?version=current" >Specimen</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Specimen" >Specimen</a></b></h4>
  <p class="col-grid-text">This profile allows the exchange of information about a sample to be used for analysis.</p>
  </div>
  </div>
@@ -130,19 +130,19 @@ The HL7® FHIR® (Fast Healthcare Interoperability Resources) standard defines h
 <div class="col-grid">
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Medication?version=current">Medication</a></b></h4>
+<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Medication">Medication</a></b></h4>
  <p class="col-grid-text">This profile is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.</p>
  </div>
  </div>
  <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Immunization?version=current">Immunization</a></b></h4>
+<h4 class="col-grid-title"><b><a  href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Immunization">Immunization</a></b></h4>
 <p class="col-grid-text">This profile is intended to cover the recording of current and historical administration of vaccines to individuals across all healthcare disciplines in all care settings and all regions.</p>
  </div>
  </div>
  <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-MedicationRequest?version=current" >Medication Request</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-MedicationRequest" >Medication Request</a></b></h4>
  <p class="col-grid-text">This profile covers inpatient medication orders as well as community orders (whether filled by the prescriber or by a pharmacy). It also includes orders for over-the-counter medications (e.g. Aspirin), total parenteral nutrition and diet/ vitamin supplements, and may be used to support the order of medication-related devices.</p>
  </div>
  </div>
@@ -161,19 +161,19 @@ The HL7® FHIR® (Fast Healthcare Interoperability Resources) standard defines h
 <div class="col-grid">
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Appointment?version=current">Appointment</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Appointment">Appointment</a></b></h4>
 <div class="col-grid-text">This profile allows recording of detailed information about a planned meeting that may be in the future or past. The resource only describes a single meeting, a series of repeating visits would require multiple appointment resources to be created for each instance.</div>
 </div>
 </div>
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Schedule?version=current">Schedule</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-Schedule">Schedule</a></b></h4>
 <div class="col-grid-text">Schedule resources provide a container for time-slots that can be booked using an appointment. It provides the window of time (period) that slots are defined for and what type of appointments can be booked.</div>
 </div>
 </div>
 <div class="col-grid-content">
 <div class="col-grid-body">
-<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-ServiceRequest?version=current">Service Request</a></b></h4>
+<h4 class="col-grid-title"><b><a href="https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/Profile-UKCore-ServiceRequest">Service Request</a></b></h4>
 <div class="col-grid-text">This profile is a record of a request for a procedure or diagnostic or other service to be planned, proposed, or performed, as distinguished by the ServiceRequest.intent field value, with or on a patient.</div>
 </div>
 </div>

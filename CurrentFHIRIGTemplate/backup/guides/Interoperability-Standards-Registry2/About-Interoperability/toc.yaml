@@ -4,9 +4,11 @@
   filename: FHIR-Guides
 - name: FHIR Assets
   filename: FHIR-Assets
-- name: API Playground
-  filename: API-Playground
+- name: Interoperability Tools
+  filename: Interoperability-Tools
 - name: Technical Patterns
   filename: Technical-Patterns
-- name: Help and Support
-  filename: Help-and-Support
+- name: Contact Us
+  filename: Contact-Us
+- name: Getting Started
+  filename: Getting-Started
