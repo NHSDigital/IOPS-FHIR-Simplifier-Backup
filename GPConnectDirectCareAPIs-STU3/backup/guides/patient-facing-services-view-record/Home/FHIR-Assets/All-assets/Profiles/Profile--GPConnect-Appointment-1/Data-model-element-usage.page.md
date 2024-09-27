@@ -164,6 +164,13 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
+        <!-- priority -->
+        <tr>
+            <td>priority</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
     </tbody>
 </table>
 
