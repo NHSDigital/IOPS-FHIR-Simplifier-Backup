@@ -42,3 +42,5 @@
   filename: reason.page.md
 - name: speciality
   filename: speciality.page.md
+- name: priority
+  filename: priority.page.md
