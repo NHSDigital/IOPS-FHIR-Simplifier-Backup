@@ -2,11 +2,20 @@
 
 ### 0.4.1
 
-Date released: 30/10/2024
+Date released: 30/09/2024
 
 [GitHub Release/Changelog](https://github.com/NHSDigital/NHSDigital-FHIR-Genomics-ImplementationGuide/releases/tag/v0.4.1)
 
+- Updates to IG based on feedback during Alpha broker development (closed issues addressed by this release can be found on the [project issue list](https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/~issues?status=Closed), opened between 01/03/2024 and 30/09/2024)
 - Major changes to modelling
+- Fixed referencing issues between resources and incorrect modelling of concepts, e.g. consanguinity, absence of an observation, HPO etc.
+- Updated guidance to reflect modelling issues above
+- Addition of SearchParamaters and GraphDefinitions, and associated IG pages
+- Addition of ConceptMaps, CodeSystems, ValueSets and NamingSystems to align with MDSv1.04
+- Addition of guidance to support UGR use cases, including addition of DocumentReference and Operations
+- Further guidance and assets to illustrate CRUD capabilities and responses
+- Updated dependency to UK Core STU3 and updated concept codes to align with latest release of SNOMED CT
+- Developed guidance for Task/Specimen status, businessStatus, input and output population
 
 ### 0.3.2
 

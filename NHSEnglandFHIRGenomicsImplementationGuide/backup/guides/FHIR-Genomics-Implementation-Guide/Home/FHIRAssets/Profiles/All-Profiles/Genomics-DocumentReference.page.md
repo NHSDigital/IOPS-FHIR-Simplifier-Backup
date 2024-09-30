@@ -9,7 +9,7 @@ If following the Genomic Reporting IG, you could also reference the DocumentRefe
 
 This requires use of the Genomic Study and Genomic Study Analysis profiles which have not yet been assessed for suitability in the UK. As such, this reference chain is only provided for reference.
 
-The NHS England Genomics unit is also investigating backporting the R5 DiagnosticReport.media.link reference to DocumentReference to support referencing the data files from the DiagnosticReport directly. Until this is backported, DiagnosticReport resources SHOULD reference the DocumentReference for the data used by the report though the `DiagnosticReport.extension:supporting-info` element. In all cases the DocumentReference SHOULD reference the DNA Specimen from which the data originated and the ServiceRequest which triggered the capture of the data.
+The NHS England Genomics unit is also investigating backporting the R5 DiagnosticReport.media.link reference to DocumentReference to support referencing the data files from the DiagnosticReport directly. Until investigation is complete, DiagnosticReport resources MAY reference the DocumentReference for the data used by the report though the `DiagnosticReport.extension:supporting-info` element. In all cases the DocumentReference SHOULD reference the DNA Specimen from which the data originated and the ServiceRequest which triggered the capture of the data.
 
 The Genomics-DocumentReference is currently based on the HL7 international version of the resource as the UKCore-DocumentReference profile is still in a draft status (and is pending use cases from the Unified Genomic Record project). Once this profile becomes active in UKCore its suitability for use and need for profiling within Genomics will be assessed. 
 

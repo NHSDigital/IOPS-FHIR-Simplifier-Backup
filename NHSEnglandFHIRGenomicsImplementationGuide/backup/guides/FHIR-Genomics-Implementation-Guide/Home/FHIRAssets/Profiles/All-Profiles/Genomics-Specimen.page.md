@@ -407,11 +407,25 @@ SHOULD be updated if processing occurs on the sample which affects later use, e.
 
 <a name="container"></a>
 #### container
-In a future version of UK Core, R5 changes to the container BackboneElement will be backported to support capturing of storage location for a sample (through `container.location`) and recursive capture of device identifiers (e.g. tube, well, rack, freezer through `container.device`). 
+The UK Core STU3 version of Specimen backports the R5 changes to the container BackboneElement to support capturing of storage location for a sample (through `container.location`) and recursive capture of device identifiers (e.g. tube, well, rack, freezer through `container.device`). 
 
-Additional examples/guidance will be provided within this IG once the changes to the FHIR R4 UK Core package have been published.
+Additional examples/guidance will be provided within this IG once use of the fields has been appropriately tested.
 
 Sample tracking information SHOULD be added to Tasks acting on Specimen resources, e.g. Tasks marked SamplePreparation or SampleProcessing, on either the output or input elements. This information MAY include consignment number, destination, date sent etc.
+```json
+"container":  [
+        {
+            "extension":  [
+                {
+                    "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.location",
+                    "valueReference": {
+                            "reference": "Location/Location-NTGLHFridge-Example"
+                    }
+                }
+            ]
+        }
+    ]
+```
 
 <a name="condition"></a>
 #### condition

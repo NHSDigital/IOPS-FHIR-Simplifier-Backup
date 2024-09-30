@@ -124,9 +124,24 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 ### Additional Guidance
 
+- <a href="#extension:bodyStructureR6">extension:bodyStructureR6</a>
 - <a href="#code">code</a>
 - <a href="#subject">subject</a>
 - <a href="#note">note</a>
+
+<a name="extension:bodyStructureR6"></a>
+#### extension:bodyStructureR6
+Extension provided to allow users to ascribe topology and morphology items to conditions themselves. For collection of body structure information for primary and secondary tumours separately, these should be referenced from conditions associated with the primary and secondary tumour respectively.
+```json
+"extension":  [
+    {
+        "url": "http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.bodyStructure",
+        "valueReference": {
+            "reference": "BodyStructure/BodyStructure-BodySiteLocationLungs-Example"
+        }
+    }
+]
+```
 
 <a name="code"></a>
 #### code
