@@ -16,7 +16,7 @@ The **FHIR Genomics IG** Specification defines a set of draft HL7 FHIR R4 profil
 
 This Specification supports the ability to request genomic testing and receive results in NHS primary and secondary care settings. The scope of this guide is NHS England, though the rules and constraints defined are expected to apply to UK-wide Genomic Testing. 
 
-This Implementation Guide provides additional guidance, rules and constraints which extends the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory), currently STU2, to allow exchange of structured electronic test requests and responses. It is anticipated that the messaging specification and implementation guidance will be updated following First of Type (FoT) implementation.
+This Implementation Guide provides additional guidance, rules and constraints which extends the [UK Core Implementation Guide](https://simplifier.net/guide/ukcoreversionhistory), currently STU3, to allow exchange of structured electronic test requests and responses. It is anticipated that the messaging specification and implementation guidance will be updated following First of Type (FoT) implementation.
 
 Potential future releases may include support for:
 

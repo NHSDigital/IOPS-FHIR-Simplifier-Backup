@@ -129,6 +129,7 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 
 ### Additional Guidance
 
+- <a href="#extension:mediaR5">extension:mediaR5</a>
 - <a href="#extension:recommended-action">extension:recommended-action</a>
 - <a href="#extension:genomic-study">extension:genomic-study</a>
 - <a href="#extension:supporting-info">extension:supporting-info</a>
@@ -143,6 +144,27 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#conclusionCode">conclusionCode</a>
 - <a href="#presentedForm">presentedForm</a>
 - <a href="#result">result</a>
+
+<a name="#extension:mediaR5"></a>
+#### extension:mediaR5
+TBC. Only relevant for structured genomic reports. Reference to DocumentReference resources pointing to the Genomic Data Files used as the basis for the report. Usage of this field over extension:supporting-info is pending further investigation.
+```json
+"extension" : [
+        {
+            "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
+            "extension" : [
+                    {
+                        "url" : "link",
+                        "valueReference": {
+                            "reference" : "DocumentReference/DocumentReference-PharmCAT-Example"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+```
+
 
 <a name="extension:recommended-action"></a>
 #### extension:recommended-action

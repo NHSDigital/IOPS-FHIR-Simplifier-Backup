@@ -228,8 +228,8 @@
               "coding": [
                 {
                   "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-                  "code": "nhs",
-                  "display": "NHS"
+                  "code": "england",
+                  "display": "England"
                 }
               ]
             }
