@@ -18,7 +18,7 @@
   filename: Handling-medications
 - name: Handling observations
   filename: Handling-observations
-- name: Rejecting messages
-  filename: Rejecting-messages
+- name: Handling rejections
+  filename: Handling-rejections
 - name: Error handling
   filename: Error-handling

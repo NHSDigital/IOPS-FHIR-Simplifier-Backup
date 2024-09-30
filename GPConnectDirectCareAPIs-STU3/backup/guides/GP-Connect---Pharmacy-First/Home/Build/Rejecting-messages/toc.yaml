@@ -1,8 +1,0 @@
-- name: Index
-  filename: Index.page.md
-- name: Unsupported FHIR profiles being sent
-  filename: Unsupported-FHIR-profiles-being-sent.page.md
-- name: Understanding intent
-  filename: Understanding-intent.page.md
-- name: Other reasons for rejection
-  filename: Other-reasons-for-rejection.page.md
