@@ -76,7 +76,7 @@
         <!-- created -->
         <tr>
             <td>created</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle required" title="Require"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
