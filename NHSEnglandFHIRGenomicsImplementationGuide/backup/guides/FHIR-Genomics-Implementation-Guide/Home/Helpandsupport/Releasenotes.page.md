@@ -1,5 +1,13 @@
 ## {{page-title}}
 
+### 0.4.2
+
+Date released: 01/10/2024
+
+[GitHub Release/Changelog](https://github.com/NHSDigital/NHSDigital-FHIR-Genomics-ImplementationGuide/releases/tag/v0.4.2)
+
+- Update to UK Core dependency with fixes to FundingCategory and SampleCategory CodeSystems and ConditionBodyStructure Extension
+
 ### 0.4.1
 
 Date released: 30/09/2024

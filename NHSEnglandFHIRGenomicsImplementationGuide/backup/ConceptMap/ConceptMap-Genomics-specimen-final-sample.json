@@ -6,7 +6,7 @@
   "name": "GenomicsFinalSample",
   "title": "Genomics Final Sample",
   "status": "draft",
-  "date": "2024-08-16T18:00:00.000Z",
+  "date": "2024-10-01T18:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -35,24 +35,6 @@
               "code": "258566005",
               "display": "Deoxyribonucleic acid specimen (specimen)",
               "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DNA/RNA",
-          "display": "DNA/RNA",
-          "target": [
-            {
-              "code": "258566005",
-              "display": "Deoxyribonucleic acid specimen (specimen)",
-              "equivalence": "narrower",
-              "comment": "The source concept expect that the specimen here should be either of DNA or RNA specimen. Additional notes should be provided in Specimen.note on the specimen ootion used."
-            },
-            {
-              "code": "441673008",
-              "display": "Ribonucleic acid specimen (specimen)",
-              "equivalence": "narrower",
-              "comment": "The source concept expect that the specimen here should be either of DNA or RNA specimen. Additional notes should be provided in Specimen.note on the specimen ootion used."
             }
           ]
         },

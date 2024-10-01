@@ -109,8 +109,8 @@
 							"coding": [
 						    {
 									"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
-									"code": "england",
-									"display": "England"
+									"code": "nhs-england",
+									"display": "NHS England"
 								}
 							]
 						}

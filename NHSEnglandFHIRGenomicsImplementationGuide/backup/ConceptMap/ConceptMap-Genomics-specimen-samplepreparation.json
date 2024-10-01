@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-samplepreparation",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-samplepreparation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "GenomicsSamplePreparation",
   "title": "Genomics Sample Preparation",
   "status": "draft",
-  "date": "2024-08-16T15:00:00.000Z",
+  "date": "2024-10-01T15:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -35,6 +35,17 @@
             {
               "code": "798001000000102",
               "display": "CD138 count (procedure)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD15+",
+          "display": "CD15+",
+          "target": [
+            {
+              "code": "785421000000106",
+              "display": "CD15 count (procedure)",
               "equivalence": "equivalent"
             }
           ]
@@ -84,6 +95,17 @@
           ]
         },
         {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "702943006",
+              "display": "DNA extraction",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "microdissection",
           "display": "Microdissection",
           "target": [
@@ -113,6 +135,17 @@
             {
               "code": "407663004",
               "display": "Percentage plasma cell count (procedure)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "702944000",
+              "display": "RNA extraction",
               "equivalence": "equivalent"
             }
           ]
