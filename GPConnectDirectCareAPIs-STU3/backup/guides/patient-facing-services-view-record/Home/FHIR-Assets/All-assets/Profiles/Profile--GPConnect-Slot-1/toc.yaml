@@ -18,3 +18,7 @@
   filename: meta.tag.page.md
 - name: identifier
   filename: identifier.page.md
+- name: serviceType
+  filename: serviceType.page.md
+- name: specialty
+  filename: specialty.page.md
