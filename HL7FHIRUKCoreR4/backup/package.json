@@ -1,13 +1,13 @@
 {
   "name": "fhir.r4.ukcore.stu3.currentbuild",
-  "version": "0.0.12-pre-release",
+  "version": "0.0.13-pre-release",
   "description": "UK Core FHIR profiles and Assets",
   "author": "HL7 UK",
   "fhirVersions": [
     "4.0.1"
   ],
+  "jurisdiction": "urn:iso:std:iso:3166#GB",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1"
-  },
-  "jurisdiction": "urn:iso:std:iso:3166#GB"
+  }
 }

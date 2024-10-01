@@ -37,6 +37,9 @@ topic: STU3Sequence
 <li>Clicking an element in the left-hand navigation list automatically displays the detailed view as per the above item</li>
 <li>Added configurable display options for displaying a UK Code profile within an iframe</li>
 <li>Added configurable display options to highlight specific sections of an example</li>
+<li><code>CodeSystem-UKCore-FundingCategory</code> - amended to replace develoved nations with the individual nations</li>
+<li><code>CodeSystem-UKCore-SampleCategory</code> - amended to add the concepts <code>solid-tumour</code>, <code>liquid-tumour</code> and <code>other</code></li>
+<li><code>StructureDefinition/extension-Condition.bodyStructure</code> - backported from R6
 </ul>
 <b>C&TA Sprint 7 Assets:</b><br>
 <ul>

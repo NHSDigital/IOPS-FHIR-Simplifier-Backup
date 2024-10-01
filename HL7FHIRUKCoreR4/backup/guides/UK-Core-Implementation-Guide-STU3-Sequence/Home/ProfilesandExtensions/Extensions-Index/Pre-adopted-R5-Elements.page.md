@@ -1,7 +1,7 @@
 ---
 topic: Library-Extensions-PreAdopt
 ---
-## Pre-adopted R5 Elements
+## Pre-adopted R5/R6 Elements
 
 
 The following <a href="https://hl7.org/fhir/versions.html#extensions" class="external">R5 elements</a> have been agreed as suitable to be included for use with the UK Core {{pagelink:Library-Profiles,text:Profiles}} because the use case for pre-adopting an R5 element as an Extension, rather than creating a UK Core specific extension is fully met.
@@ -64,7 +64,22 @@ As of 19/05/2023, the package to enable pre-adopted elements to function as per 
 <td>{{pagelink:Extension-UKCore-SpecimenCollectionCollector}}</td>
 <td>NO</td>
 </tr>
+</table>
+<br><br>
 
+<table class="assets" title="Pre-adopted FHIR R6 elements list and context of use details">
+<tr>
+<th>R6 Element</th>
+<th>Related Profile</th>
+<th>Proxy Extension</th>
+<th>Modifier Extension</th>
+</tr>
+<tr>
+<td><a href="https://build.fhir.org/condition-definitions.html#Condition.bodyStructure" class="external">Condition.bodyStructure</a></td>
+<td>{{pagelink:Profile-Condition}}</td>
+<td>{{pagelink:Extension-UKCore-ConditionBodyStructure}}</td>
+<td>NO</td>
+</tr>
 </table>
 
 ---
