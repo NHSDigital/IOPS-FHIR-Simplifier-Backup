@@ -2,7 +2,7 @@ html, body {
      padding: 0;
      margin: 0;
      /*font-family: 'Frutiger', sans-serif;*/
-     font-family: Arial, Helvetica, sans-serif;
+     font-family: "Frutiger LT W01_45 Ligh1475730", Arial, Helvetica, sans-serif;
      font-size: 16px;
      color: #231f20;
 }
@@ -55,15 +55,15 @@ min-height: 120px;
      min-height: 70%;
      position: relative;
      height: auto !important;
-     margin-bottom: -105px;
-     padding-bottom: 105px;
+     margin:  0px;
+     padding-bottom: 10px;
 }
  body footer {
-     background-color: #E8EDEE;
+     background-color: #e8edee;
      color: #231f20;
-     height: 105px;
+    height: auto; 
      position: relative;
-     padding-top: 40px;
+     padding-top: 20px;
 }
  body .logos {
      display: block;
@@ -310,6 +310,7 @@ table.valuesetlist th {
 /* remove the padding on pages under the header */
  #preview-content {
      padding-top: 0px !important;
+     padding-bottom: 5px;
 }
 /* bootstrap overrides */
  .btn-fhir {
@@ -448,7 +449,7 @@ td.frm-set {
     /*font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-size: 16px;
     line-height: 1.42857;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #preview-content table.codes tbody,#preview-content table.codes tfoot,#preview-content table.codes thead, 
@@ -613,7 +614,7 @@ h2 code {
   font-size: 1em;
   /*font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;*/
   box-sizing: border-box;
-  padding: 15px 30px 15px;
+  padding: 15px 10px 15px 0;
 }
 
 .cookie-consent p {
@@ -799,4 +800,16 @@ color: #0072CE;
     min-height: 200px;
     margin: 5px;
     background-color: #E8EDEE;
+}
+
+/* this part adds an icon after external links, using FontAwesome*/
+a[target="_blank"]::after {
+  content: "" / "opens in new tab/window";
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0 0.075em 0 0.1em;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: text-bottom;
 }

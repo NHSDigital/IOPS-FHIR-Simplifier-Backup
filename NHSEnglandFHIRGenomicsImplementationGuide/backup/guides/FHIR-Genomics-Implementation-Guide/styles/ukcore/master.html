@@ -102,11 +102,11 @@
                       <td>IG © <script>document.write(/\d{4}/.exec(Date())[0])</script>+ NHS England</td>
                       <td><span><b>Version:</b> {{ guide-version }}</span></td>
                       <td><span><b>FHIR Version:</b> {{ guide-fhir-version }} </span></td>
-                      <td><b>Packages are based on:</b>  <a id="footer-basedon" href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.13-pre-release">FHIR UK Core STU3 0.0.13-pre-release</a></td>
+                      <td><b>Packages are based on:</b>  <a id="footer-basedon" href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.13-pre-release" target='_blank'>FHIR UK Core STU3 0.0.13-pre-release</a></td>
                     </tr>
                     <tr>
                       <td><b>Released:</b> 01/10/2024</td>
-                      <td colspan="3"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Helpandsupport/Sitemap.page.md?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/fhir-genomics-implementation-guide/Home/Helpandsupport/Releasenotes?version={{ guide-version }}">Version history</a> | <a id="footer-licence" href="{{content}}/../Home/?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/~issues">Propose a change</a></td>
+                      <td colspan="3"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Helpandsupport/sitemap.page.md?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/fhir-genomics-implementation-guide/Home/Helpandsupport/Releasenotes?version={{ guide-version }}">Version history</a> | <a id="footer-licence" href="{{content}}/../Home/?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/~issues" target="_blank"> Propose a change</a></td>
                     </tr>  
                 </table>
             </div>
@@ -344,7 +344,7 @@
                 $("a#footer-sitemap").each(function(index) {
                     let destUrl = $(this)[0].href;
                     let destVersion = "?" + destUrl.split("?")[1];
-                    destUrl = newUrl + "/Help-and-support/Sitemap-Overview" + destVersion;
+                    destUrl = newUrl + "/Helpandsupport/Sitemap" + destVersion;
                     if (pageVersion.startsWith("?version=current")){
                         destUrl = destUrl.replace(destVersion, ".page.md" + pageVersion);
                     }
