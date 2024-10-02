@@ -700,6 +700,12 @@ color: #0072CE;
     color: #231f20;
  }
 
+  .alert-info {
+    background-color: #cce3f5;
+    border-color: #cce3f5;
+    color: #231f20;
+ }
+
  .hero-header {
      background-color: #0072ce;
      color:#ffffff;
