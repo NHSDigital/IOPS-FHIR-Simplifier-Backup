@@ -65,17 +65,17 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.contained:provenance">
       <path value="Condition.contained" />
       <sliceName value="provenance" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Provenance" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category">
       <path value="Condition.category" />
@@ -87,6 +87,7 @@
         <rules value="open" />
       </slicing>
       <max value="2" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category:patientFlag">
       <path value="Condition.category" />
@@ -116,6 +117,10 @@
         <strength value="extensible" />
         <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-FlagConditionCode" />
       </binding>
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
