@@ -1,6 +1,7 @@
-## Extensions
 
-More information about the extensions can be found using the links below.
+{{page:Home/ProfilesandExtensions/ProfileExtensionsTemplate.page.md}}
+
+<!-- More information about the extensions can be found using the links below.
 
 <table class="assets" title="Extension list">
 <tr>
@@ -35,5 +36,8 @@ More information about the extensions can be found using the links below.
 </tr>
 </table>
 
+
+<div class="NewAddedItem"><b>New extension added</b>: {{pagelink:extension-UKCore-ConditionBodyStructure}}
+</div> -->
 
 ---
