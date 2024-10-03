@@ -76,7 +76,7 @@
         <!-- created -->
         <tr>
             <td>created</td>
-            <td><span class="mro-circle required" title="Require"></span></td>
+            <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
@@ -114,6 +114,13 @@
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- extension(appointmentCancellationReason) -->
+        <tr>
+            <td>extension(appointmentCancellationReason)</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-exclamation text-warning" title="This element is available as 'cancelationReason' in FHIR UK Core"></i></td>
         </tr>
         <!-- status -->
         <tr>

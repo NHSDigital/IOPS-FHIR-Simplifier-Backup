@@ -28,6 +28,8 @@
   filename: extension-practitionerRole.page.md
 - name: extension(deliveryChannel)
   filename: extension-deliveryChannel.page.md
+- name: extension(appointmentCancellationReason)
+  filename: extension-appointmentCancellationReason.page.md
 - name: status
   filename: status.page.md
 - name: description
