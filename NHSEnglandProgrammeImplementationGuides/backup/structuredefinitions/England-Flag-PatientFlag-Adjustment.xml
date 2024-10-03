@@ -1,11 +1,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="England-Flag-PatientFlag-Adjustment" />
   <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
-  <version value="0.1.0" />
+  <version value="0.2.0" />
   <name value="EnglandFlagPatientFlagAdjustment" />
   <title value="England Flag Patient Flag Adjustment" />
   <status value="draft" />
-  <date value="2024-02-14" />
+  <date value="2024-09-27" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
@@ -36,6 +36,27 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Flag" />
   <derivation value="constraint" />
   <differential>
+    <element id="Flag.contained">
+      <path value="Flag.contained" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Flag.contained:provenance">
+      <path value="Flag.contained" />
+      <sliceName value="provenance" />
+      <max value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Flag.extension:extensionEnglandFlagNotes">
       <path value="Flag.extension" />
       <sliceName value="extensionEnglandFlagNotes" />
@@ -44,6 +65,10 @@
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-FlagNotes" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="Flag.status">
+      <path value="Flag.status" />
+      <mustSupport value="true" />
     </element>
     <element id="Flag.category">
       <path value="Flag.category" />
@@ -55,6 +80,7 @@
         <rules value="open" />
       </slicing>
       <min value="2" />
+      <mustSupport value="true" />
     </element>
     <element id="Flag.category:patientFlag">
       <path value="Flag.category" />
@@ -83,6 +109,10 @@
         <strength value="extensible" />
         <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-FlagCodeProgramme" />
       </binding>
+    </element>
+    <element id="Flag.subject">
+      <path value="Flag.subject" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
