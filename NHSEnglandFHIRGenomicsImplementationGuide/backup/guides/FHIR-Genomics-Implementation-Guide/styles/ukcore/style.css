@@ -52,7 +52,7 @@ min-height: 120px;
 }
  body .content {
      overflow: hidden;
-     min-height: 70%;
+    min-height: 170%; 
      position: relative;
      height: auto !important;
      margin:  0px;
@@ -64,6 +64,7 @@ min-height: 120px;
     height: auto; 
      position: relative;
      padding-top: 20px;
+     margin-top: 5px;
 }
  body .logos {
      display: block;
