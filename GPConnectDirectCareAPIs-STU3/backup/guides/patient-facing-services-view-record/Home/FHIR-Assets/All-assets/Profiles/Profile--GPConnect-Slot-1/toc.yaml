@@ -22,3 +22,15 @@
   filename: serviceType.page.md
 - name: specialty
   filename: specialty.page.md
+- name: schedule
+  filename: schedule.page.md
+- name: status
+  filename: status.page.md
+- name: start
+  filename: start.page.md
+- name: end
+  filename: end.page.md
+- name: overbooked
+  filename: overbooked.page.md
+- name: comment
+  filename: comment.page.md
