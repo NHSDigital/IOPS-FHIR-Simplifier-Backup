@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: FHIR Guides
+  filename: FHIR-Guides
+- name: FHIR Assets
+  filename: FHIR-Assets
+- name: Interoperability Tools
+  filename: Interoperability-Tools
+- name: Technical Patterns
+  filename: Technical-Patterns
+- name: Contact Us
+  filename: Contact-Us
+- name: Getting Started
+  filename: Getting-Started
