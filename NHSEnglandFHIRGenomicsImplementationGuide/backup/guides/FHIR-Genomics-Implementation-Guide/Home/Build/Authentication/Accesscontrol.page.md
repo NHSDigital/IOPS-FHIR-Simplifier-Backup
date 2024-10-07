@@ -39,8 +39,9 @@ The API-M layer will manage general access to the API for both user and applicat
 
 CIS2 is the preferred user authentication mechanism for accessing national services, both from an authentication perspective as well as an audit perspective. 
 
-The user’s authentication token will need to be sent with the request to the API and will contain
-claims which represent their access permissions.
+The user’s authentication token will need to be sent with the request to the API and will contain claims which represent their access permissions.
+
+The Genomic Medicine Service will expect clients to follow the [National RBAC guidance for developers](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/national-rbac-for-developers) when registering and authorising users.
 
 ### Application Authentication
 
