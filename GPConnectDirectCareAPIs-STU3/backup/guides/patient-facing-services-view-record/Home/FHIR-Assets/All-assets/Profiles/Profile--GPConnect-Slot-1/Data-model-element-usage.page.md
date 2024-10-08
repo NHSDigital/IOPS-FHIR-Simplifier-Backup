@@ -52,13 +52,19 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
+        <!-- extension(deliveryChannel) -->
+        <tr>
+            <td>extension(deliveryChannel)</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
         <!-- identifier -->
         <tr>
             <td>identifier</td>
             <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
-        </tr>
         <!-- serviceType -->
         <tr>
             <td>serviceType</td>

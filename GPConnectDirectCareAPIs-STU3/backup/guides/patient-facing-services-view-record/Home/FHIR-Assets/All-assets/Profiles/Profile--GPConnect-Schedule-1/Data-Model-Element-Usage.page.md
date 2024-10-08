@@ -52,34 +52,55 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- issue.severity -->
+        <!-- extension(practitionerRole) -->
         <tr>
-            <td>issue.severity</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- issue.code -->
-        <tr>
-            <td>issue.code</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- issue.details -->
-        <tr>
-            <td>issue.details</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- issue.diagnostics -->
-        <tr>
-            <td>issue.diagnostics</td>
+            <td>extension(practitionerRole)</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-exclamation text-warning" title="This element is available as 'actor' in FHIR UK Core"></i></td>
+        </tr>
+        <!-- identifier -->
+        <tr>
+            <td>identifier</td>
+            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
+        <!-- serviceCategory -->
+        <tr>
+            <td>serviceCategory</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        <tr>
+        <!-- specialty -->
+        <tr>
+            <td>specialty</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        <tr>
+        <!-- actor -->
+        <tr>
+            <td>actor</td>
+            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        <tr>
+        <!-- planningHorizon -->
+        <tr>
+            <td>planningHorizon</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        <tr>
+        <!-- comment -->
+        <tr>
+            <td>comment</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        <tr>
     </tbody>
 </table>
 

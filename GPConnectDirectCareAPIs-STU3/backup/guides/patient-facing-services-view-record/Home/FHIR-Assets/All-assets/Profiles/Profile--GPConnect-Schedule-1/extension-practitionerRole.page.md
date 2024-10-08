@@ -6,7 +6,7 @@
 
 <h5><ins>Guidance</ins></h5>
 
-The role of the Practitioner attending the Appointment.
+The role of the Practitioner assigned to the schedule.
 
 <h5><ins>Example</ins></h5>
 
