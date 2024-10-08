@@ -1,0 +1,1 @@
+For documentation see https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/profilesandextensions/profile-ukcore-specimen/index.page.md?version=current 
