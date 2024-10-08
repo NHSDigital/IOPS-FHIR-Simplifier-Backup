@@ -16,6 +16,8 @@
   filename: meta.security.page.md
 - name: meta.tag
   filename: meta.tag.page.md
+- name: extension(deliveryChannel)
+  filename: extension-deliveryChannel.page.md
 - name: identifier
   filename: identifier.page.md
 - name: serviceType

@@ -6,8 +6,6 @@
 
 <h5><ins>Guidance</ins></h5>
 
-This element **SHALL NOT** be populated.
-
 The speciality of the practitioner that would be required to perform the service requested in this appointment.
 
 <h5><ins>Example</ins></h5>

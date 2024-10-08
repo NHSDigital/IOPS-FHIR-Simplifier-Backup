@@ -8,3 +8,13 @@
   filename: extension-practitionerRole.page.md
 - name: identifier
   filename: identifier.page.md
+- name: serviceCategory
+  filename: serviceCategory.page.md
+- name: specialty
+  filename: specialty.page.md
+- name: actor
+  filename: actor.page.md
+- name: planningHorizon
+  filename: planningHorizon.page.md
+- name: comment
+  filename: comment.page.md
