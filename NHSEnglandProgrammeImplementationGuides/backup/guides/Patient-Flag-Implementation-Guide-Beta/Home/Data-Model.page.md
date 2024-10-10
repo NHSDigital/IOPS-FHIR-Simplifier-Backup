@@ -1,6 +1,6 @@
-### Patient Flag Data Model
+## Patient Flag Data Model
 
-A Patient Flag API record is made up of a Flag resource and any other 'detail' resources that are provided as part of the Flag record in the specific domain 
+A Patient Flag API record is made up of a Flag resource and any other additional resources that provide supplementary information.
 
 <plantuml>
 @startuml
@@ -31,9 +31,11 @@ pfg ||..o{ res : details
 @enduml
 </plantuml>
 
-### Reasonable Adjustments
+## Reasonable Adjustments
 
-The RA record is made up of Flag, Provenance and Condition resources.  
+The RA record is made up of PatientFlag, PatientFlagAdjustment, contained Provenance and Condition resources.  
+
+to do: Add actors and list functionality
 
 The presence of and entitlement to reasonable adjustments is represented by a PatientFlag resource. It can be interpreted as meaning 'this patient has reasonable adjustments'.
 
@@ -69,7 +71,7 @@ entity "Condition" as cod {
   *contained : Provenance (Contained)
 }
 
-entity "Programme Flag" as prfg {
+entity "Patient Flag Adjustment" as prfg {
   *patient : Patient
   *code : CodeableConcept
   *category : CodeableConcept
@@ -95,9 +97,9 @@ pfg ||..o{ prfg : details
 </plantuml>
 
 
-### Female Genital Mutilation
+## Female Genital Mutilation
 
-The FGM record is made up of a PatientFlag resource.
+The FGM record is made up of a PatientFlag resource and a contained Provenance.
 
 Authorised healthcare workers can:
 
@@ -112,6 +114,8 @@ Authorised healthcare workers can:
 The FGM flag is interpreted as:
 - an indicator that a child with female genitalia has a family history of FGM
 - the date that the FGM assessment was carried out
+
+Provenance of the resource that makes up an FGM record must be stored.  This is modelled here as a contained resource, and as such has no lifetime outside of the constituent FGM record resource.
 
 
 <plantuml>
@@ -131,9 +135,15 @@ entity "Patient Flag" as pfg {
   *contained : Provenance (Contained)
 }
 
+entity "Provenance" as prov {
+  *recorded : Date
+  *agent : Agent (backbone)
+}
+
 }
 
 pat ||--o| pfg : "has"
+pfg ||--|| prov : contains
 
 @enduml
 </plantuml>
