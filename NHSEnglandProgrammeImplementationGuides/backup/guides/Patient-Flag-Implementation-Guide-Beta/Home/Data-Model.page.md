@@ -35,13 +35,20 @@ pfg ||..o{ res : details
 
 The RA record is made up of PatientFlag, PatientFlagAdjustment, contained Provenance and Condition resources.  
 
-to do: Add actors and list functionality
+Authorised healthcare workers can:
+
+- Retrieve a set of top-level Flags (just the Flags with no associated resources)
+- Retrieve a specific Reasonable Adjustment Flag with associated resources
+- Add a top-level Reasonable Adjustment Flag
+- Add a top-level Flag (and associated Adjustment, Impairment or Condition resources)
+- Add/remove associated resources (with the dependency that a top-level flag must already be added/removed)
+- Remove a top-level Flag (which will remove all associated resources)
 
 The presence of and entitlement to reasonable adjustments is represented by a PatientFlag resource. It can be interpreted as meaning 'this patient has reasonable adjustments'.
 
 Individual adjustments are represented as ProgrammeFlag resource instances. They can be interpreted as meaning e.g.'this patient requires Easy read'.
 
-Patients may optionally request details of underlying conditions are recorded and shared where this enhances healthcare. These are represented as FlagCondition resources.
+Patients may record Impairments for which they wish to have reasonable adjustments applied as Condition resources. Patients may optionally request details of underlying conditions are recorded and shared where this enhances healthcare. These too are represented as Condition resources.
 
 Provenance of all resources that make up an RA record must be stored.  This is modelled here as a contained resource, and as such has no lifetime outside of the constituent RA record resources.
 
