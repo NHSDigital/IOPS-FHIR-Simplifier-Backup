@@ -2,14 +2,20 @@
   filename: Index.page.md
 - name: Genomic-AdditionalContact
   filename: Genomic-AdditionalContact.page.md
+- name: Genomic-Condition-BodyStructure
+  filename: Genomic-Condition-BodyStructure.page.md
+- name: Genomic-DiagnosticReport-MediaLink
+  filename: Genomic-DiagnosticReport-MediaLink.page.md
 - name: Genomic-Coverage
   filename: Genomic-Coverage.page.md
 - name: Genomic-NHSNumber-Unavailable-Reason
   filename: Genomic-NHSNumber-Unavailable-Reason.page.md
+- name: Genomic-Patient-Fetal-Status
+  filename: Genomic-Patient-Fetal-Status.page.md
 - name: Genomic-PriorityReason
   filename: Genomic-PriorityReason.page.md
-- name: Genomic-SampleState
-  filename: Genomic-SampleState.page.md
+- name: Genomic-Sample-Category
+  filename: Genomic-Sample-Category.page.md
 - name: Genomic-BodySiteReference
   filename: Genomic-BodySiteReference.page.md
 - name: Fql-tester
