@@ -2307,7 +2307,7 @@ The following diagram is based on the message structure/attribute cross-referenc
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
   1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E045</span></b><span
   style='font-size:9.0pt;font-family:"Arial",sans-serif'> -
-  UKCore-ServiceRequest-Lab.reasonCode</span></p>
+  N/A</span></p>
   </td>
  </tr>
  <tr>
@@ -3895,60 +3895,6 @@ The following diagram is based on the message structure/attribute cross-referenc
   </td>
   <td width=60 valign=top style='width:44.9pt;border:none;padding:0cm 1.4pt 0cm 1.4pt'>
   <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
-  </td>
-  <td width=72 colspan=3 valign=top style='width:53.95pt;border:none;
-  padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
-  </td>
-  <td width=406 valign=top style='width:304.75pt;border:none;padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:8.5pt'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
-  </td>
-  <td width=340 valign=top style='width:9.0cm;border:none;border-right:solid #dde1e4 1.0pt;
-  padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>E139</span></b><span
-  style='font-size:9.0pt;font-family:"Arial",sans-serif'> -
-  UKCore-Observation-Group-Lab.status</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=33 valign=top style='width:24.4pt;border-top:none;border-left:solid #dde1e4 1.0pt;
-  border-bottom:none;border-right:solid #dde1e4 1.0pt;padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
-  </td>
-  <td width=33 valign=top style='width:24.4pt;border:none;border-right:solid #dde1e4 1.0pt;
-  padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
-  </td>
-  <td width=32 valign=top style='width:24.35pt;border:none;border-right:solid #dde1e4 1.0pt;
-  padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
-  </td>
-  <td width=32 valign=top style='width:24.3pt;border:none;border-right:solid #dde1e4 1.0pt;
-  padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
-  </td>
-  <td width=32 valign=top style='width:24.25pt;border:none;padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
-  </td>
-  <td width=32 valign=top style='width:24.25pt;border:none;padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
-  </td>
-  <td width=32 valign=top style='width:24.25pt;border:none;padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  1.0pt;margin-left:0cm'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
-  </td>
-  <td width=60 valign=top style='width:44.9pt;border:none;padding:0cm 1.4pt 0cm 1.4pt'>
-  <p style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
   1.0pt;margin-left:0cm'><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>&nbsp;&nbsp;&nbsp;&nbsp; DTM</span></p>
   </td>
   <td width=53 colspan=2 valign=top style='width:39.75pt;border:none;
@@ -4872,9 +4818,9 @@ The constraints that need to be applied to each FHIR resource using the relevant
         </tr>
         <tr>
             <td>status</td>
-            <td>E139</td>
-            <td>status of laboratory investigation (result item)</td>
-            <td>SG18.STS.C555.9011</td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
         </tr>
         <tr>
@@ -5572,13 +5518,7 @@ The constraints that need to be applied to each FHIR resource using the relevant
             <td></td>
         </tr>
         <tr>
-            <td rowspan="2">reasonCode</td>
-            <td>E045</td>
-            <td>type of clinical observation</td>
-            <td>SG10.CIN.6810</td>
-            <td></td>
-        </tr>
-        <tr>
+            <td>reasonCode</td>
             <td>E046</td>
             <td>clinical observation description</td>
             <td>SG10.FTX.C108.4440(1-5)</td>
