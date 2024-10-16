@@ -1,5 +1,5 @@
 ---
-subject: https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory
+subject: https://fhir.hl7.org.uk/ValueSet/UKCore-SampleState
 ---
 
 ## ValueSet Genomic Sample State

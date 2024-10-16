@@ -22,6 +22,8 @@
   filename: Genomic-Patient-Guardian-Types-duplicate-2.page.md
 - name: Genomic-ReasonforTesting
   filename: Genomic-ReasonforTesting.page.md
+- name: Genomic-Sample-Category
+  filename: Genomic-Sample-Category.page.md
 - name: Genomic-Sample-State
   filename: Genomic-Sample-State.page.md
 - name: Genomic-Sequencing-Category

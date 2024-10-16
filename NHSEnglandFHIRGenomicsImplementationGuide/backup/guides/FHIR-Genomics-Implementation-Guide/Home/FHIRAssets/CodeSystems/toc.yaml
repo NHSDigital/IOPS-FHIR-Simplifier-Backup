@@ -14,6 +14,8 @@
   filename: Genomic-Patient-Research-Choice.page.md
 - name: Genomic-Reason-for-Testing
   filename: Genomic-Reason-for-Testing.page.md
+- name: Genomic-Sample-Category
+  filename: Genomic-Sample-Category.page.md
 - name: Genomic-Specimen-Collection-SpecialHandling
   filename: Genomic-Specimen-Collection-SpecialHandling.page.md
 - name: Genomic-Task-Code
@@ -26,9 +28,11 @@
   filename: Genomic-NHSNumber-Unvailable-Reason.page.md
 - name: Genomic-Organization-Type
   filename: Genomic-Organization-Type.page.md
-- name: Genomic-Sample-State
-  filename: Genomic-Sample-State.page.md
+- name: Genomic-Primary-Sample-State
+  filename: Genomic-Primary-Sample-State.page.md
 - name: Genomic-Test-Types
   filename: Genomic-Test-Types.page.md
 - name: Genomic-TypesOf-ReAnalysisTest
   filename: Genomic-TypesOf-ReAnalysisTest.page.md
+- name: Genomic-Withheld-Identity-Reason
+  filename: Genomic-Withheld-Identity-Reason.page.md
