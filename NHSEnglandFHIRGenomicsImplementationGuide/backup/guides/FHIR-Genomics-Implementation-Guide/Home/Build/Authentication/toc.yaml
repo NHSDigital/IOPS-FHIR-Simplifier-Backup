@@ -6,7 +6,7 @@
   filename: Auditing.page.md
 - name: Security
   filename: Security.page.md
-- name: Integration with SPINE
-  filename: IntegrationwithSPINE.page.md
+- name: Integration with central services
+  filename: Integration-with-central-services.page.md
 - name: Consent
   filename: Consent.page.md

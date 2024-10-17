@@ -10,7 +10,7 @@ A CodeSystem to record the categorisation of a specimen, either sourced from a T
 
 <div id="Feedback" class="tabcontent">
 
-<h4><a href='https://simplifier.net/HL7FHIRUKCoreR4/CodeSystem-UKCore-SampleCategory/~issues?level=File' target="_blank">Propose a change to CodeSystem Genomic Primary Sample State </a></h4>
+<h4><a href='https://simplifier.net/HL7FHIRUKCoreR4/CodeSystem-UKCore-PrimarySampleState/~issues?level=File' target="_blank">Propose a change to CodeSystem Genomic Primary Sample State </a></h4>
 </div>
 
 ---
