@@ -169,22 +169,6 @@ Within this release of the UK Core, ValueSet expansions have been incorporated i
 </tr>
 
 <tr>
-<td><h4>{{pagelink:ValueSet-UKCore-BiopsyState}}</h4></td>
-<td>active</td>
-<td>{{pagelink:Profile-Specimen}}</td>
-<td>6</td>
-</tr>
-<tr>
-<td colspan="4">Composed of CodeSystem <code>http://terminology.hl7.org/CodeSystem/v2-0493</code></td>
-</tr>
-<tr>
-<td colspan="4">Composed of {{pagelink:CodeSystem-UKCore-BiopsyState}}</td>
-</tr>
-<tr>
-<td colspan="4"  class="override"></td>
-</tr>
-
-<tr>
 <td><h4>{{pagelink:ValueSet-UKCore-BirthSex}}</h4></td>
 <td>active</td>
 <td>{{pagelink:Extension-UKCore-BirthSex}}</td>
@@ -1296,6 +1280,24 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <td colspan="4"  class="override"></td>
 </tr>
 
+
+<tr style="background-color: #dff0d8;">
+  <td><h4>{{pagelink:ValueSet-UKCore-SampleState}}</h4></td>
+  <td>active</td>
+  <td>{{pagelink:Profile-Specimen}}</td>
+  <td>6</td>
+</tr>
+<tr style="background-color: #dff0d8;">
+  <td colspan="4">Composed of CodeSystem <code>http://terminology.hl7.org/CodeSystem/v2-0493</code></td>
+</tr>
+<tr style="background-color: #dff0d8;">
+  <td colspan="4">Composed of {{pagelink:Home/Terminology/AllCodeSystems/CodeSystem-UKCore-PrimarySampleState.page.md}}</td>
+</tr>
+<tr style="background-color: #dff0d8;">
+  <td colspan="4" class="override"></td>
+</tr>
+
+
 <tr>
 <td><h4>{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</h4></td>
 <td>active</td>
@@ -1457,7 +1459,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-AllergyManifestation}}</li>
 <li>{{pagelink:ValueSet-UKCore-AllergySubstance}}</li>
 <li>{{pagelink:ValueSet-UKCore-AppointmentReasonCode}}</li>
-<li>{{pagelink:ValueSet-UKCore-BiopsyState}}</li>
 <li>{{pagelink:ValueSet-UKCore-BirthSex}}</li>
 <li>{{pagelink:ValueSet-UKCore-BloodGlucose}}</li>
 <li>{{pagelink:ValueSet-UKCore-BloodPressure}}</li>
@@ -1550,6 +1551,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-ResidentialStatus}}</li>
 <li>{{pagelink:ValueSet-UKCore-RespirationRate}}</li>
 <li>{{pagelink:ValueSet-UKCore-SampleCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-SampleState}}</li>
 <li>{{pagelink:ValueSet-UKCore-ServiceRequestReasonCode}}</li>
 <li>{{pagelink:ValueSet-UKCore-SourceOfAdmission}}</li>
 <li>{{pagelink:ValueSet-UKCore-SourceOfServiceRequest}}</li>
@@ -1579,7 +1581,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:CodeSystem-UKCore-AdmissionMethodEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-AdmissionMethodWales}}</li>
 <li>{{pagelink:CodeSystem-UKCore-AppointmentReasonCode}}</li>
-<li>{{pagelink:CodeSystem-UKCore-BiopsyState}}</li>
 <li>{{pagelink:CodeSystem-UKCore-ConditionCategory}}</li>
 <li>{{pagelink:CodeSystem-UKCore-ConditionEpisodicity}}</li>
 <li>{{pagelink:CodeSystem-UKCore-DeathNotificationStatus}}</li>
@@ -1628,6 +1629,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:CodeSystem-UKCore-PracticeSettingCode}}</li>
 <li>{{pagelink:CodeSystem-UKCore-PreferredContactMethod}}</li>
 <li>{{pagelink:CodeSystem-UKCore-PreferredWrittenCommunicationFormat}}</li>
+<li>{{pagelink:CodeSystem-UKCore-PrimarySampleState}}</li>
 </ul>
 
 </td><td style="border-left: 1px solid #eeeeee">
@@ -1727,7 +1729,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 
 <p><b>C&TA Sprint 6:</b></p>
 <ul>
-<li>{{pagelink:ValueSet-UKCore-BiopsyState}}</li>
 <li>{{pagelink:ValueSet-UKCore-FundingCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-NHSNumberUnavailableReason}}</li>
@@ -1769,6 +1770,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:ValueSet-UKCore-OxygenSaturation}}</li>
 <li>{{pagelink:ValueSet-UKCore-RecordingSetting}}</li>
 <li>{{pagelink:ValueSet-UKCore-RespirationRate}}</li>
+<li>{{pagelink:ValueSet-UKCore-SampleState}}</li>
 <li>{{pagelink:ValueSet-UKCore-TobaccoConsumption}}<li>
 </ul>
 </div>
@@ -1838,7 +1840,6 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 
 <p><b>C&TA Sprint 6:</b></p>
 <ul>
-<li>{{pagelink:CodeSystem-UKCore-BiopsyState}}</li>
 <li>{{pagelink:CodeSystem-UKCore-FundingCategory}}</li>
 <li>{{pagelink:CodeSystem-UKCore-GenomeSequencingCategory}}</li>
 <li>{{pagelink:CodeSystem-UKCore-NHSNumberUnavailableReason}}</li>
@@ -1849,6 +1850,8 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <p><b>C&TA Sprint 7:</b></p>
 <ul>
 <li>{{pagelink:CodeSystem-UKCore-RecordingSetting}}</li>
+<li>{{pagelink:CodeSystem-UKCore-PrimarySampleState}}</li>
+
 </ul>
 </div>
 
@@ -2046,9 +2049,9 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 </ul>
 <p><b>Specimen:</b></p>
 <ul>
-<li>{{pagelink:ValueSet-UKCore-BiopsyState}}</li>
 <li>{{pagelink:ValueSet-UKCore-GenomeSequencingCategory}}</li>
 <li>{{pagelink:ValueSet-UKCore-SampleCategory}}</li>
+<li>{{pagelink:ValueSet-UKCore-SampleState}}</li>
 <li>{{pagelink:ValueSet-UKCore-SpecimenBodySite}}</li>
 <li>{{pagelink:ValueSet-UKCore-SpecimenType}}</li>
 </ul>
