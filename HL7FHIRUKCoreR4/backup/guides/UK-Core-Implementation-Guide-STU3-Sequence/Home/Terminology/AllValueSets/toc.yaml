@@ -16,8 +16,6 @@
   filename: ValueSet-UKCore-AllergySubstance.page.md
 - name: ValueSet UKCore-AppointmentReasonCode
   filename: ValueSet-UKCore-AppointmentReasonCode.page.md
-- name: ValueSet UKCore-BiopsyState
-  filename: ValueSet-UKCore-BiopsyState.page.md
 - name: ValueSet UKCore-BirthSex
   filename: ValueSet-UKCore-BirthSex.page.md
 - name: ValueSet UKCore-BloodGlucose
@@ -174,6 +172,8 @@
   filename: ValueSet-UKCore-RespirationRate.page.md
 - name: ValueSet UKCore-SampleCategory
   filename: ValueSet-UKCore-SampleCategory.page.md
+- name: ValueSet UKCore-SampleState
+  filename: ValueSet-UKCore-SampleState.page.md
 - name: ValueSet UKCore-ServiceRequestReasonCode
   filename: ValueSet-UKCore-ServiceRequestReasonCode.page.md
 - name: ValueSet UKCore-SourceOfAdmission
