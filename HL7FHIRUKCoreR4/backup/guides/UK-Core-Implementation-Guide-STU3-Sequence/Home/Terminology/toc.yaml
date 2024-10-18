@@ -1,8 +1,8 @@
+- name: Terminology Index
+  filename: Terminology-Index.page.md
+- name: ValueSets
+  filename: ValueSets
+- name: CodeSystems
+  filename: CodeSystems
 - name: ConceptMaps
   filename: ConceptMaps
-- name: ValueSets and CodeSystems
-  filename: ValueSetsandCodeSystems.page.md
-- name: All ValueSets
-  filename: AllValueSets
-- name: All CodeSystems
-  filename: AllCodeSystems
