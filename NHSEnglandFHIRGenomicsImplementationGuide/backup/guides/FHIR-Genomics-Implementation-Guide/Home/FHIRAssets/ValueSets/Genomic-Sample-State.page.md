@@ -12,7 +12,7 @@ A set of codes that define the category of a sample.
 
 
 <div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SampleCategory/~issues?level=File' target="_blank">Propose a change to ValueSet Genomic Sample State </a></h4>
+<h4><a href='https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SampleState/~issues?level=File' target="_blank">Propose a change to ValueSet Genomic Sample State </a></h4>
 </div>
 
 ---
