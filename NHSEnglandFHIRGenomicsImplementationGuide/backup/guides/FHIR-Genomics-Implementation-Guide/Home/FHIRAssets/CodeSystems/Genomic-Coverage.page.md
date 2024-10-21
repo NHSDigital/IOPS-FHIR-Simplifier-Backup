@@ -4,7 +4,9 @@ subject: https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory
 
 ## CodeSystem Genomic Coverage
 
-A set of codes that define the funding category for a patient.
+<h2 id='non-fql-header'>Usage</h2>
+
+<p>A set of codes that define the funding category for a patient.</p>
 
 {{render:Home-FHIRAssets-CodeSystems-CodeSystem-Template}}
 

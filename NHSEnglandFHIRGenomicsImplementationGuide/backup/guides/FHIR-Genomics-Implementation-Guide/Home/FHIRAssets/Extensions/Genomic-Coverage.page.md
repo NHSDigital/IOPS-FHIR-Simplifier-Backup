@@ -1,5 +1,8 @@
 ## {{page-title}}
 
+
+<h2 id='non-fql-header'>Usage</h2>
+
 This extends the Service Request Resource to support the exchange of information describing the method of funding for the Service Request.
 
 <div class="tab">

@@ -1,5 +1,6 @@
 ## {{page-title}}
 
+<h2 id='non-fql-header'>Usage</h2>
 An extension to replicate the changes within R5 to support adding a reference to image or data source(DocumentReference).
 
 <div class="tab">

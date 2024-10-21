@@ -1,30 +1,36 @@
-## {{page-title}}
+---
+subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact
+issue: Extension-Genomic-AdditionalContact
+expand: yes
+---
 
-An extension to support recording of additional contacts, who should be contacted regarding questions arising from the service request. This differs from the requester and responsibleClinician.
+## {{variable:issue}}
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
- <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
+<h2 id='non-fql-header'>Usage</h2>
+<p>An extension to support recording of additional contacts, who should be contacted regarding questions arising from the service request. This differs from the requester and responsibleClinician.</p>
+
+<div id='extensionContextofUse'>
+<div id='extension-Context-Use-title'>
+Context of Use
+</div>
+<div id='extension-Context-Use-Profiles'>
+{{pagelink:Genomics-ServiceRequest,text:ServiceRequest}}
+</div>
 </div>
 
-<div id="HTML View" class="tabcontent" style="display:block">
-  <h3>HTML View</h3>
-{{render:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact}}
+
+{{page:Home-FHIRAssets-Extensions-ExtensionTemplate}}
+
+<div id="Examples" class="tabcontent">
+  <h3>Examples</h3>
+  <b>Additional Contact</b> - An example to illustrate providing an additional contact with a service request.<br>
+
+<h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/Examples/Extension-Examples/Example-UKCore-Extension-AdditionalContact.page.md?version=current' target="_blank">Example-UKCore-Extension-AdditionalContact</a></h4>
+<br><br>
 </div>
 
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact}}
+<div id="Feedback" class="tabcontent">
+<h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary?version=current' target="_blank">Propose a change to {{variable:issue}} </a></h4>
 </div>
 
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact}}
-</div>
-
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact}}
-</div>
+---

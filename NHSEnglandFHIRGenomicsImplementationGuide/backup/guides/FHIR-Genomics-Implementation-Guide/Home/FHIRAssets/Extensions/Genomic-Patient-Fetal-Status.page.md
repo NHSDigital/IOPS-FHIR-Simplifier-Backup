@@ -1,5 +1,6 @@
 ## {{page-title}}
 
+<h2 id='non-fql-header'>Usage</h2>
 An extension to support recording of additional contacts, who should be contacted regarding questions arising from the service request. This differs from the requester and responsibleClinician.
 
 <div class="tab">

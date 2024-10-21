@@ -4,7 +4,9 @@ subject: https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberUnavailableReason
 
 ## CodeSystem Genomic NHSNumber Unvailable Reason
 
-A set of concepts that define the reason that an NHS number is not available for use as an identifier.
+<h2 id='non-fql-header'>Usage</h2>
+
+<p>A set of concepts that define the reason that an NHS number is not available for use as an identifier.</p>
 
 {{render:Home-FHIRAssets-CodeSystems-CodeSystem-Template}}
 

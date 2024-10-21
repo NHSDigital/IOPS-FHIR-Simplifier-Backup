@@ -4,8 +4,8 @@ subject: https://fhir.hl7.org.uk/ValueSet/UKCore-SampleCategory
 
 ## ValueSet Genomic Sample Category
 
-## Usage
-A set of codes that define the category of a sample.
+<h2 id='non-fql-header'>Usage</h2>
+<p>A set of codes that define the category of a sample.</p>
 
 
 {{render:Home-FHIRAssets-ValueSets-ValueSet-Template}}

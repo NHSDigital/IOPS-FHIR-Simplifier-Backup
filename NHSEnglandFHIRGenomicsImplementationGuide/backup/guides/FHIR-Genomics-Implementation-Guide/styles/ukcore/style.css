@@ -814,3 +814,44 @@ a[target="_blank"]::after {
   display: inline-block;
   vertical-align: text-bottom;
 }
+
+#non-fql-header{
+    margin-top: 0;
+    color: white;
+    border: 0px solid white;
+    width: 100%;
+    background-color: #0072CE;
+    height: 45px;
+    padding: 12px 8px;
+    font-size: 16px;
+
+}
+
+#extensionContextofUse{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+#extension-Context-Use-title{
+    margin-top: 0;
+    color: white;
+    border: 2px solid white;
+    background-color: #0072CE;
+    width: 100%;
+    max-width: 15%;
+    height: 45px;
+    padding: 12px 8px;
+    font-size: 16px;
+    gap: 10px;
+}
+
+#extension-Context-Use-Profiles{
+    margin-top: 0;
+    border: 2px solid #dde1e4;
+    background-color: #dde1e4;
+    width: 85%;
+    height: 45px;
+    padding: 12px 8px;
+    font-size: 16px;
+    gap: 10px;
+}

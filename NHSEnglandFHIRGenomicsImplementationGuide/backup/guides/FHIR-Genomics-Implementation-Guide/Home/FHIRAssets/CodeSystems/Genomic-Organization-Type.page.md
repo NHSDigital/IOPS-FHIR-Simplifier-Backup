@@ -4,7 +4,9 @@ subject: https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics
 
 ## CodeSystem Genomic Organization Type
 
-A set of codes to define additional genomic lab concepts for an organisation type.
+<h2 id='non-fql-header'>Usage</h2>
+
+<p>A set of codes to define additional genomic lab concepts for an organisation type.</p>
 
 {{render:Home-FHIRAssets-CodeSystems-CodeSystem-Template}}
 

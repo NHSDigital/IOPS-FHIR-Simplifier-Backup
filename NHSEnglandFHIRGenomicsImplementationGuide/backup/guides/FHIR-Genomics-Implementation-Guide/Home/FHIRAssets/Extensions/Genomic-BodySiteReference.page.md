@@ -1,5 +1,6 @@
 ## {{page-title}}
 
+<h2 id='non-fql-header'>Usage</h2>
 An extension to replicate the changes within R5 allowing the data type of Specimen.collection.bodySite to act as a CodeableReference (BodyStructure).
 
 <div class="tab">

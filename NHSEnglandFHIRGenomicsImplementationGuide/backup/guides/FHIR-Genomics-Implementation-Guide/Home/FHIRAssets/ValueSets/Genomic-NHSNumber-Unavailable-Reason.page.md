@@ -5,9 +5,9 @@ subject: https://fhir.hl7.org.uk/ValueSet/UKCore-NHSNumberUnavailableReason
 
 ## ValueSet Genomic-NHSNumber-Unavailable-Reason
 
-## Usage
+<h2 id='non-fql-header'>Usage</h2>
 
-A set of codes that define the reason why a patient does not have an NHS Number.
+<p>A set of codes that define the reason why a patient does not have an NHS Number.</p>
 
 
 {{render:Home-FHIRAssets-ValueSets-ValueSet-Template}}

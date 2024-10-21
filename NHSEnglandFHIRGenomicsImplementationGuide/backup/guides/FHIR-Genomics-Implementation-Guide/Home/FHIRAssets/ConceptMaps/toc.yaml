@@ -38,6 +38,8 @@
   filename: Genomic-Specimen-FinalSample.page.md
 - name: Genomic-Specimen-PrimarySample
   filename: Genomic-Specimen-PrimarySample.page.md
+- name: Genomic-specimen-PrimarySampleState
+  filename: Genomic-specimen-PrimarySampleState.page.md
 - name: Genomic-Specimen-SamplePreparation
   filename: Genomic-Specimen-SamplePreparation.page.md
 - name: Genomic-Specimen-SpecialHandling

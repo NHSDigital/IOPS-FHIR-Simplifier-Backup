@@ -4,7 +4,9 @@ subject: https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory
 
 ## CodeSystem Genomic Sample Category
 
-A CodeSystem to record the categorisation of a specimen, either sourced from a Tumour or Germline.
+<h2 id='non-fql-header'>Usage</h2>
+
+<p>A CodeSystem to record the categorisation of a specimen, either sourced from a Tumour or Germline.</P>
 
 {{render:Home-FHIRAssets-CodeSystems-CodeSystem-Template}}
 

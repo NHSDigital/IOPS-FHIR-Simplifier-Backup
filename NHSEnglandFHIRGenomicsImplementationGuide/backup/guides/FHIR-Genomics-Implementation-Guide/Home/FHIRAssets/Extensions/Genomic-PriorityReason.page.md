@@ -1,5 +1,6 @@
 ## {{page-title}}
 
+<h2 id='non-fql-header'>Usage</h2>
 This extends the Service Request Resource to support the underlying reason why a Service Request is urgent.
 
 <div class="tab">
