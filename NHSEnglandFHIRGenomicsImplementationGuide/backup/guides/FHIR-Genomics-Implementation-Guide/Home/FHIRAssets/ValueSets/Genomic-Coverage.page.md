@@ -5,9 +5,9 @@ subject: https://fhir.hl7.org.uk/ValueSet/UKCore-FundingCategory
 
 ## ValueSet Genomic Coverage
 
-## Usage
+<h2 id='non-fql-header'>Usage</h2>
 
-A set of codes that define the funding category.
+<p>A set of codes that define the funding category.</p>
 
 
 {{render:Home-FHIRAssets-ValueSets-ValueSet-Template}}

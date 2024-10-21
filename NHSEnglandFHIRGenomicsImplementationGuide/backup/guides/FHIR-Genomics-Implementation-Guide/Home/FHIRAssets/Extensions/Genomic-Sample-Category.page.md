@@ -1,5 +1,6 @@
 ## {{page-title}}
 
+<h2 id='non-fql-header'>Usage</h2>
 An extension to record the category of genome sequencing sample.
 
 <div class="tab">

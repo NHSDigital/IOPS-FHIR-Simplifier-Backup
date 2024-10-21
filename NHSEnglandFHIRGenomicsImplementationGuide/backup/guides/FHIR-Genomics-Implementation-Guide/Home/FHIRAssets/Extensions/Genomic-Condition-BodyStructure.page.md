@@ -1,5 +1,6 @@
 ## {{page-title}}
 
+<h2 id='non-fql-header'>Usage</h2>
 An extension to replicate the changes within R6 to support adding a reference to the body part affected by the diagnosed condition.
 
 <div class="tab">

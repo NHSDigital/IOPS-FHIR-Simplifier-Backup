@@ -4,7 +4,9 @@ subject: https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState
 
 ## CodeSystem Genomic Primary Sample State
 
-A CodeSystem to record the categorisation of a specimen, either sourced from a Tumour or Germline.
+<h2 id='non-fql-header'>Usage</h2>
+
+<p>A CodeSystem to record the categorisation of a specimen, either sourced from a Tumour or Germline.</p>
 
 {{render:Home-FHIRAssets-CodeSystems-CodeSystem-Template}}
 

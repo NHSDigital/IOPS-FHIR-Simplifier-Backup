@@ -1,5 +1,6 @@
 ## {{page-title}}
 
+<h2 id='non-fql-header'>Usage</h2>
 This extends the Patient resource to support the exchange of information about the reason why a patient does not have an NHS Number.
 
 <div class="tab">
