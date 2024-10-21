@@ -1,7 +1,5 @@
 ---
 topic: FHIRAssetsCapabilityStatements
-canonical: https://fhir.hl7.org.uk/England/CapabilityStatement/England-Pathology-Requirements
-myid: England-Pathology-Requirements
 ---
 
 ## CapabilityStatements
@@ -9,18 +7,9 @@ myid: England-Pathology-Requirements
 ### Render
 {{render:England-Pathology-Requirements}}
 
-### Inline using url
+### Using FQL
 
-<fql output="inline">
-  from CapabilityStatement
- where url = 'https://fhir.hl7.org.uk/England/CapabilityStatement/England-Pathology-Requirements'
-  select description
-</fql>
+<table class="regular">
+{{page:Home/FHIRAssets/AllAssets/All-Profiles/Templates/CapabilityStatementFQLQuery.page.md}}
+</table>
 
-### Inline using id
-
-<fql output="transpose">
-  from CapabilityStatement
-  where id = 'England-Pathology-Requirements'
-  select *
-</fql>
