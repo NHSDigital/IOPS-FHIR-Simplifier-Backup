@@ -1,5 +1,7 @@
 - name: ExampleRendersTemplate
   filename: ExampleRendersTemplate.page.md
+- name: CapabilityStatementFQLQuery
+  filename: CapabilityStatementFQLQuery.page.md
 - name: Index
   filename: Index.page.md
 - name: ExampleSnippetTemplate

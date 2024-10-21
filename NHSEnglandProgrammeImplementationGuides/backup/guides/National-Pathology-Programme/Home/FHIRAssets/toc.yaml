@@ -10,3 +10,5 @@
   filename: ValueSets
 - name: CapabilityStatements
   filename: CapabilityStatements.page.md
+- name: MessageDefinitions
+  filename: MessageDefinitions
