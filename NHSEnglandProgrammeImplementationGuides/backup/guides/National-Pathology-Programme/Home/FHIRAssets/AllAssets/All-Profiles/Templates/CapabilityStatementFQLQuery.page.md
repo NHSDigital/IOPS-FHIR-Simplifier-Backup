@@ -1,4 +1,3 @@
-<div id="ProfileGuidance">
 <fql output="transpose">
   from 
     CapabilityStatement

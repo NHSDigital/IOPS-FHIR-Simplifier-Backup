@@ -49,7 +49,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 ### Additional Guidance
 The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-DiagnosticReport-Lab` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-diagnosticreport-lab?current).
 
----
+<hr class="thinline">
 
 ### `extension.noteR5`
 General comments about the test report. Any information relating to the report conclusion **SHOULD** be conveyed using `DiagnosticReport.conclusion` and/or `DiagnosticReport.conclusionCode`.
