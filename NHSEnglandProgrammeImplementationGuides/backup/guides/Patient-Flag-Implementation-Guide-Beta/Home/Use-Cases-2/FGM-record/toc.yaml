@@ -1,2 +1,6 @@
 - name: Index
   filename: Index.page.md
+- name: Add an FGM Flag
+  filename: Add-an-FGM-Flag.page.md
+- name: Remove an FGM Flag
+  filename: Remove-an-FGM-Flag.page.md
