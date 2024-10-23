@@ -1,17 +1,14 @@
 ## {{page-title}}
 
-## {{page-title}}
-
-## {{page-title}}
 ### Overview
 
 For high level requirements, {{pagelink:Home}}.
 
 ### Use Case
 
-A Patient Flag Record may be retrieved if it exists.  It will be possible to determine that adjustment flags exist by searching for a {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}}   with:
+A Patient Flag Record of a given type may be retrieved if it exists along with all supporting Additional Detail resources.  It will be possible to determine that adjustment flags exist by searching for a {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} with:
 
-- {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}} and patient search parameter
+- {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} and patient and code search parameters.
 
 
 <plantuml>
@@ -63,55 +60,28 @@ pra <-- api : OperationOutcome
 
 Using [FHIR search](https://www.hl7.org/fhir/search.html) capabilities, it is possible to retrieve the reasonable adjustment records in several ways.
 
-#### Patient endpoint search 
-
-This section describes how to query from the [Patient](http://www.hl7.org/fhir/R4/patient.html#search) endpoint using [FHIR search](https://www.hl7.org/fhir/search.html)
-
-This will return all associated Flag resources for Patient Flag.
-
-```
-GET [baseUrl]/Flag?patient=9449306753
-```
-
-This limits the search to Flags for the patient that has the identifier `9449306753`
-
-```
-patient=9449306753
-```
-
-
-The following queries will return all or some of the resources constituting a Patient Flag record, i.e.
-
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} resources  
-* Any Additional Supporting resources
-
-This query relies on the {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagCode.page.md}} SearchParameters.
-
 #### Flag endpoint search
 
-This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/flag.html#search) endpoint using [FHIR search](https://www.hl7.org/fhir/search.html)
+This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/flag.html) endpoint using [FHIR search](https://www.hl7.org/fhir/search.html)
 
-**NOTE:** For every additional record/resource added, the flag-detail element in the Patient Flag resource will need updated.
-
-If the [flag-detail extension](http://hl7.org/fhir/StructureDefinition/flag-detail) is used, then references to all Additional Detail resources can be included in the {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} resource.
-
-This will return all associated flag resources for the PatientFlag API.
+This will return Patient Flag resource of set type and all associated Additional Detail resources for a given Patient.
 
 ```
-http://[baseUrl]/Flag?patient.identifier=9912003888&_include=Flag:detail&_include=Flag:patient
+GET [baseUrl]/Flag?patient=[patientNHSNumber]&code=[type]
 ```
 
-This limits the search to patients that have the identifier `9912003888`
+e.g:
 
 ```
-patient.identifier=9912003888
+GET [baseUrl]/Flag?patient=9449306753&code=national-reasonable-adjustment-flag
 ```
 
-This includes all references in the flag detail extension that have been defined in the {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagDetail.page.md}} SearchParameter.
+This limits the search to Flags for the patient that has the identifier `9449306753` and are part of the Reasonable Adjustment flag
 
-```
-&_include=Flag:detail
-```
+
+This query relies on the [Flag](http://www.hl7.org/fhir/R4/flag.html#search) SearchParameter.
+
+---
 
 This query relies on the {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagCode.page.md}}, and {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagDetail.page.md}} SearchParameters.
 
