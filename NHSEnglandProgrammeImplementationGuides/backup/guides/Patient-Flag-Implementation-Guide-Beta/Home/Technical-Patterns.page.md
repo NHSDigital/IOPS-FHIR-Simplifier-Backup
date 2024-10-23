@@ -22,6 +22,16 @@ and in using:
 * [Upsert](https://hl7.org/fhir/r4/http.html#upsert)  
 
 
+### BaseURL and Environments
+
+Queries in this specification use ```[baseURL]``` as stand in for the first part of the server path. Iin practice, this varies by environment:
+
+| Purpose | Base URL |
+|-|-|
+| Sandbox | https://sandbox.api.service.nhs.uk/patient-flags-api/FHIR/R4 |
+| Integration test | https://int.api.service.nhs.uk/patient-flags-api/FHIR/R4 |
+| Production | https://api.service.nhs.uk/patient-flags-api/FHIR/R4 |
+
 
 ### Capability Statements
 
