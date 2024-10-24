@@ -191,9 +191,11 @@ hr.thickline{
     padding-bottom: 0
 }
 
+/* 24/10/2024 PB: Removed for Pathology FHIR IG as not used. */
 /*core UKCore table style*/
-table.assets {
+/*table.assets {*/
      /*font-family: Arial, Helvetica, sans-serif !important;*/
+/*     
      border-collapse: collapse !important;
      width: 100% !important;
 }
@@ -226,7 +228,7 @@ table.assets tr td.balloted {
  table.assets th a{
      color: white !important;
 }
-
+*/
 
  tr.wordBreak, td.wordBreak {
     overflow-wrap: break-word !important;

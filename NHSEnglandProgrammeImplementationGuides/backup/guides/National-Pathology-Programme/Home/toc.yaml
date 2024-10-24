@@ -4,8 +4,6 @@
   filename: Design
 - name: Build
   filename: Build
-- name: FHIR Assets
-  filename: FHIRAssets
 - name: Examples
   filename: Examples
 - name: Help and Support
