@@ -6,15 +6,15 @@
   filename: Genomic-Condition-BodyStructure.page.md
 - name: Genomic-DiagnosticReport-MediaLink
   filename: Genomic-DiagnosticReport-MediaLink.page.md
-- name: Genomic-Coverage
-  filename: Genomic-Coverage.page.md
+- name: Extension-Genomic-Coverage
+  filename: Extension-Genomic-Coverage.page.md
 - name: Genomic-NHSNumber-Unavailable-Reason
   filename: Genomic-NHSNumber-Unavailable-Reason.page.md
-- name: Genomic-Patient-Fetal-Status
-  filename: Genomic-Patient-Fetal-Status.page.md
-- name: Genomic-PriorityReason
-  filename: Genomic-PriorityReason.page.md
-- name: Genomic-Sample-Category
-  filename: Genomic-Sample-Category.page.md
-- name: Genomic-BodySiteReference
-  filename: Genomic-BodySiteReference.page.md
+- name: Extension-UKCore-PatientFetalStatus
+  filename: Extension-UKCore-PatientFetalStatus.page.md
+- name: Extension-UKCore-PriorityReason
+  filename: Extension-UKCore-PriorityReason.page.md
+- name: Extension-UKCore-SampleCategory
+  filename: Extension-UKCore-SampleCategory.page.md
+- name: Extension-UKCore-BodySiteReference
+  filename: Extension-UKCore-BodySiteReference.page.md
