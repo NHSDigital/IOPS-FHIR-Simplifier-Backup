@@ -1,0 +1,12 @@
+- name: Practitioner-Consultant-Example
+  filename: Practitioner-Consultant-Example.page.md
+- name: Practitioner-GP-Example
+  filename: Practitioner-GP-Example.page.md
+- name: PractitionerRole-Consultant-Example
+  filename: PractitionerRole-Consultant-Example.page.md
+- name: PractitionerRole-GP-Example
+  filename: PractitionerRole-GP-Example.page.md
+- name: Bundle-Search-Practitioner-Example
+  filename: Bundle-Search-Practitioner-Example.page.md
+- name: Bundle-Search-PractitionerRole-Example
+  filename: Bundle-Search-PractitionerRole-Example.page.md

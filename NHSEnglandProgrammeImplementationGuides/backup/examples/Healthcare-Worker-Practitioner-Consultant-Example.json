@@ -1,0 +1,28 @@
+{
+    "resourceType" : "Practitioner",
+    "id" : "Healthcare-Worker-Practitioner-Consultant-Example",
+    "identifier" : [
+      {
+        "system" : "https://fhir.nhs.uk/Id/sds-user-id",
+        "value" : "3415870202"
+      },
+      {
+        "use" : "usual",
+        "system" : "https://fhir.hl7.org.uk/Id/gmc-number",
+        "value" : "C4428981"
+      }
+    ],
+    "active" : false,
+    "name" : [
+      {
+        "use" : "official",
+        "family" : "Edwards",
+        "given" : [
+          "Thomas"
+        ],
+        "prefix" : [
+          "Dr"
+        ]
+      }
+    ]
+  }

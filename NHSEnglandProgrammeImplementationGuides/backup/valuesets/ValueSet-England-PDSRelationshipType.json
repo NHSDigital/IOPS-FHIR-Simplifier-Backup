@@ -1,0 +1,124 @@
+{
+    "resourceType" : "ValueSet",
+    "id" : "England-PDSRelationshipType",
+    "url" : "https://fhir.nhs.uk/England/ValueSet/England-PDSRelationshipType",
+    "version" : "0.0.1",
+    "name" : "EnglandPDSRelationshipType",
+    "title" : "England PDS Relationship Type",
+    "status" : "draft",
+    "date" : "2024-10-25T07:31:19+00:00",
+    "publisher" : "NHS England",
+    "contact":  [
+        {
+            "name": "NHS England",
+            "telecom":  [
+                {
+                    "system": "email",
+                    "value": "interoperabilityteam@nhs.net",
+                    "use": "work",
+                    "rank": 1
+                }
+            ]
+        }
+    ],
+    "description" : "Extracted from [PDS FHIR API - Get a patient's related people](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient/-id-/RelatedPerson)",
+    "copyright": "Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+    "compose" : {
+      "include" : [
+        {
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
+          "concept" : [
+            {
+              "code" : "Agent",
+              "display" : "Agent of patient"
+            },
+            {
+              "code" : "Guardian",
+              "display" : "Guardian of patient"
+            },
+            {
+              "code" : "Personal",
+              "display" : "Personal relationship with the patient"
+            },
+            {
+              "code" : "PolygamousPartner"
+            },
+            {
+              "code" : "Dependant"
+            },
+            {
+              "code" : "NonDependant"
+            },
+            {
+              "code" : "ProxyContact"
+            },
+            {
+              "code" : "ProxyCommunication"
+            },
+            {
+              "code" : "ProxyContactCommunication"
+            },
+            {
+              "code" : "Carer"
+            },
+            {
+              "code" : "NotSpecified"
+            }
+          ]
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "concept" : [
+            {
+              "code" : "N",
+              "display" : "Next-of-Kin"
+            },
+            {
+              "code" : "U"
+            }
+          ]
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "concept" : [
+            {
+              "code" : "SPS"
+            },
+            {
+              "code" : "DOMPART"
+            },
+            {
+              "code" : "PRN"
+            },
+            {
+              "code" : "PRNFOST"
+            },
+            {
+              "code" : "STPPRN"
+            },
+            {
+              "code" : "CHILD"
+            },
+            {
+              "code" : "MTH"
+            },
+            {
+              "code" : "FTH"
+            },
+            {
+              "code" : "SIS"
+            },
+            {
+              "code" : "BRO"
+            },
+            {
+              "code" : "FAMMEMB"
+            },
+            {
+              "code" : "ONESELF"
+            }
+          ]
+        }
+      ]
+    }
+  }

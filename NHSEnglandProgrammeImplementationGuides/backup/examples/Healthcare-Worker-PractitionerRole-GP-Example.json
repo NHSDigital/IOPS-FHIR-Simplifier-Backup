@@ -1,0 +1,48 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "Healthcare-Worker-PractitionerRole-GP-Example",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+      "value": "125686540025"
+    }
+  ],
+  "active": true,
+  "period": {
+    "start": "2024-09-30"
+  },
+  "practitioner": {
+    "reference": "https://directoryservice.example.nhs.uk/FHIR/R4/Practitioner/Healthcare-Worker-Practitioner-GP-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/sds-user-id",
+      "value": "3415870201"
+    },
+    "display": "Dr Razia Ali"
+  },
+  "organization": {
+    "reference": "https://directoryservice.example.nhs.uk/FHIR/R4/Organization/M85011",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "M85011"
+    },
+    "display": "THE SWAN MEDICAL CENTRE"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/England/CodeSystem/England-JobRoleCode",
+          "code": "01025"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/England/CodeSystem/England-SDSJobRoleName",
+          "code": "R0260"
+        }
+      ]
+    }
+  ]
+}

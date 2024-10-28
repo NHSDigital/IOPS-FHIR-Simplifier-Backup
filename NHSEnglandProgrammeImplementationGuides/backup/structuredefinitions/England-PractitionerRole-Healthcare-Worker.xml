@@ -1,0 +1,96 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="England-PractitionerRole-Healthcare-Worker" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-PractitionerRole-Healthcare-Worker" />
+  <version value="0.0.1-current" />
+  <name value="EnglandPractitionerRoleHealthcareWorker" />
+  <title value="England Practitioner Role Healthcare Worker" />
+  <status value="draft" />
+  <date value="2024-10-25T07:31:19+00:00" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Based on requirments from the previous NHS Digital IG and NHS Data Dictionary" />
+  <purpose value="Documentation of requirements for NHS England Healthcare Worker API" />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="PractitionerRole" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="PractitionerRole">
+      <path value="PractitionerRole" />
+    </element>
+    <element id="PractitionerRole.identifier">
+      <path value="PractitionerRole.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.identifier.system">
+      <path value="PractitionerRole.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.identifier.value">
+      <path value="PractitionerRole.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.identifier:sds-user-profile-id">
+      <path value="PractitionerRole.identifier" />
+      <sliceName value="sds-user-profile-id" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-SDS-User-Profile-Id" />
+      </type>
+    </element>
+    <element id="PractitionerRole.period.start">
+      <path value="PractitionerRole.period.start" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.period.end">
+      <path value="PractitionerRole.period.end" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.practitioner.identifier">
+      <path value="PractitionerRole.practitioner.identifier" />
+      <min value="0" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Practitioner-Code" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Council-Reference-Number" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-SDS-User-Id" />
+      </type>
+    </element>
+    <element id="PractitionerRole.organization.identifier">
+      <path value="PractitionerRole.organization.identifier" />
+      <min value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Organisation-Code" />
+      </type>
+    </element>
+    <element id="PractitionerRole.code">
+      <path value="PractitionerRole.code" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-JobRoleCode" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

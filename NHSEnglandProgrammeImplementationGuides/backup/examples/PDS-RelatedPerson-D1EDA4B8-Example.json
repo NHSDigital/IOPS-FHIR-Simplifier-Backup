@@ -1,0 +1,57 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "PDS-RelatedPerson-D1EDA4B8-Example",
+  "identifier" : [
+    {
+      "system" : "https://fhir.nhs.uk/Id/nhs-number",
+      "value" : "9732017945"
+    }
+  ],
+  "active" : true,
+  "patient" : {
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/nhs-number",
+      "value" : "9732017996"
+    }
+  },
+  "relationship" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "MTH",
+          "display" : "mother"
+        }
+      ]
+    },
+    {
+      "coding" : [
+        {
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
+          "code" : "Guardian",
+          "display" : "Guardian of patient"
+        }
+      ]
+    },
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code" : "N",
+          "display" : "Next-of-Kin"
+        }
+      ]
+    }
+  ],
+  "name" : [
+    {
+      "use" : "usual",
+      "period" : {
+        "start" : "2024-05-13"
+      }
+    }
+  ],
+  "period" : {
+    "start" : "2017-02-17"
+  }
+}

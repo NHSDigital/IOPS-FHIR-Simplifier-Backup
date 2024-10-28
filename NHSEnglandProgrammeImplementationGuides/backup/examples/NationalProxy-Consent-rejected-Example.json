@@ -1,0 +1,76 @@
+{
+  "resourceType" : "Consent",
+  "id" : "NationalProxy-Consent-rejected-Example",
+  "identifier" : [{
+    "system" : "https://tools.ietf.org/html/rfc4122",
+    "value" : "147ed671-7215-40f8-bd3e-eaaee9455acb"
+  }],
+  "status" : "rejected",
+  "scope" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "code" : "patient-privacy"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "INFA"
+    }]
+  }],
+  "patient" : {
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/nhs-number",
+      "value" : "9000000017"
+    },
+    "display" : "Jane Smith"
+  },
+  "performer" : [{
+    "reference" : "https://fhir.nhs.uk/England/spine/RelatedPerson/RelatedPerson-NHS-9100000009",
+    "type" : "RelatedPerson",
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/nhs-number",
+      "value" : "9100000009"
+    }
+  },
+  {
+    "type" : "Practitioner",
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/sds-user-id",
+      "value" : "3049449130"
+    }
+  }],
+  "sourceReference" : {
+    "reference" : "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/QuestionnaireResponse/QuestionnaireResponse-proxy-access-request"
+  },
+  "policyRule" : {
+    "coding" : [
+      { 
+        "system" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+        "code": "ssa-827"
+      }
+    ],
+    "text": "Coding to be defined"
+  },
+  "provision" : {
+    "actor" : [{
+      "role" : {
+        "coding" : [
+          { 
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code": "GRANTOR"
+          }
+        ],
+        "text" : "coding to be defined"
+      },
+      "reference" : {
+        "reference" : "https://fhir.nhs.uk/England/spine/RelatedPerson/RelatedPerson-NHS-9100000009",
+        "type" : "RelatedPerson",
+        "identifier" : {
+          "system" : "https://fhir.nhs.uk/Id/nhs-number",
+          "value" : "9100000009"
+        }
+      }
+    }]
+  }
+}

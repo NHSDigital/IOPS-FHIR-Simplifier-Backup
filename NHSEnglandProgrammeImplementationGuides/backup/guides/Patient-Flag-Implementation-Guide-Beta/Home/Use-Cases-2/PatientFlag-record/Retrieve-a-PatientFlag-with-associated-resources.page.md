@@ -8,7 +8,7 @@ For high level requirements, {{pagelink:Home}}.
 
 A Patient Flag Record of a given type may be retrieved if it exists along with all supporting Additional Detail resources.  It will be possible to determine that adjustment flags exist by searching for a {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} with:
 
-- {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} and patient and code search parameters.
+- {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} patient and code search parameters.
 
 
 <plantuml>

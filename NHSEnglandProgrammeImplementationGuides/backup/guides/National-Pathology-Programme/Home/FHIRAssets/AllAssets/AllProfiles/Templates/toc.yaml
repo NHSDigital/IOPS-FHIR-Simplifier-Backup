@@ -1,0 +1,6 @@
+- name: ExampleRendersTemplate
+  filename: ExampleRendersTemplate.page.md
+- name: ExampleSnippetTemplate
+  filename: ExampleSnippetTemplate.page.md
+- name: ExtensionTemplate
+  filename: ExtensionTemplate.page.md

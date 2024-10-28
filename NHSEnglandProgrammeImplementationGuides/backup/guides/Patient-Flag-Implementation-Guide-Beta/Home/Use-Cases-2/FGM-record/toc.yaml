@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: Retrieve PatientFlags
+  filename: Retrieve-PatientFlags.page.md
 - name: Add an FGM Flag
   filename: Add-an-FGM-Flag.page.md
 - name: Remove an FGM Flag

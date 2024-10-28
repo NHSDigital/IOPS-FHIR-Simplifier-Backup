@@ -39,7 +39,7 @@
     </coding>
   </jurisdiction>
   <purpose value="Requirements for NHS England PatientFlag FHIR API Implementation Guide, to specify the RESTFul interactions, supported profiles, and expected minimum SearchParamneters." />
-  <copyright value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <copyright value="Copyright &#169; 2024+ NHS England Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <kind value="requirements" />
   <fhirVersion value="4.0.1" />
   <format value="application/fhir+json" />
@@ -48,7 +48,7 @@
     <mode value="server" />
     <security>
       <cors value="true" />
-      <description value="1. app-restricted-signed-jwt&lt;br /&gt;&lt;br /&gt;Authenticate your application by sending a signed JSON Web Token (JWT) to our OAuth 2.0 authorisation server. You provide us with your public key and sign the JWT with your private key. In return, we give you an access token, which you then include with each API request.&lt;br /&gt;&lt;br /&gt;2. user-restricted-nhs-cis2&lt;br /&gt;&lt;br /&gt;Authentication and authorisation are done together. Authentication is done by NHS CIS2 Care Identity Authentication API but we co-ordinate that under the covers behind our OAuth2.0 authorisation server. Your application only needs to be registered with the API Platform, not NHS CIS2." />
+      <description value="1. app-restricted-signed-jwt\r\n\r\nAuthenticate your application by sending a signed JSON Web Token (JWT) to our OAuth 2.0 authorisation server. You provide us with your public key and sign the JWT with your private key. In return, we give you an access token, which you then include with each API request.\r\n\r\n2. user-restricted-nhs-cis2\r\n\r\nAuthentication and authorisation are done together. Authentication is done by NHS CIS2 Care Identity Authentication API but we co-ordinate that under the covers behind our OAuth2.0 authorisation server. Your application only needs to be registered with the API Platform, not NHS CIS2." />
     </security>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -83,7 +83,7 @@
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
+          <valueCode value="SHALL" />  
         </extension>
         <code value="delete" />
       </interaction>
@@ -152,7 +152,7 @@
         <valueCode value="SHALL" />
       </extension>
       <code value="transaction" />
-      <documentation value="Transaction handler for transaction bundles supplying sequence of atomic FHIR ReST resource interactions, fulfilled as per /CapabilityStatement/implementation/rest/resource/interaction definitions above" />
+      <documentation value="Transaction handler for transaction bundles supplying sequence of atomic FHIR ReST resource interactions, fulfilled as per %2FCapabilityStatement%2Fimplementation%2Frest%2Fresource%2Finteraction definitions above" />
     </interaction>
   </rest>
 </CapabilityStatement>

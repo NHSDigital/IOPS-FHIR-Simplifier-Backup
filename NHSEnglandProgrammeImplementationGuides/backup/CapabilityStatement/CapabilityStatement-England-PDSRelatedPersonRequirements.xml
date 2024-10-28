@@ -1,0 +1,60 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="CapabilityStatement-England-PDSRelatedPersonRequirements" />
+  <url value="https://fhir.nhs.uk/England/CapabilityStatement/England-PDSRelatedPersonRequirements" />
+  <version value="0.0.1-current" />
+  <name value="CapabilityStatementEnglandPDSRelatedPersonRequirements" />
+  <title value="CapabilityStatement England PDS RelatedPerson Requirements" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-10-08" />
+  <publisher value="NHS England" />
+  <description value="This is for description purposes only and will be replaced by the OAS specification." />
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+      <code value="001" />
+    </coding>
+  </jurisdiction>
+  <kind value="requirements" />
+  <fhirVersion value="4.0.1" />
+  <format value="application/fhir+xml" />
+  <format value="application/fhir+json" />
+  <rest>
+    <mode value="server" />
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL" />
+      </extension>
+      <type value="RelatedPerson" />
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-RelatedPerson-PDS" />
+      <documentation value="
+`GET /RelatedPerson/{id}`
+
+`GET /RelatedPerson?{parameters}`
+
+Conformance to this implementation guide **SHOULD** be tested via [FHIR Validation](https://hl7.org/fhir/R4/validation.html).
+
+**Search Examples**
+
+
+Search for RelatedPerson's with a NHS Number of 9000000017
+
+ ```
+ GET /RelatedPerson?identifier=https://fhir.nhs.uk/Id/nhs-number|9000000017
+ ```
+
+ Search for RelatedPerson's that are related to a patient with a NHS Number of 9459304130
+
+ ```
+ GET /RelatedPerson?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9459304130
+ ```
+" />
+      <interaction>
+        <code value="read" />
+      </interaction>
+      <interaction>
+        <code value="search-type" />
+      </interaction>
+    </resource>
+  </rest>
+</CapabilityStatement>

@@ -1,0 +1,67 @@
+{
+  "resourceType": "Bundle",
+  "id": "Healthcare-Worker-Bundle-Search-PractitionerRole-Example",
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://directoryservice.example.nhs.uk/FHIR/R4/PractitionerRole?identifier=https://fhir.nhs.uk/Id/sds-role-profile-id|454567759542"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://directoryservice.example.nhs.uk/FHIR/R4/PractitionerRole/Healthcare-Worker-PractitionerRole-Consultant-Example",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "Healthcare-Worker-PractitionerRole-Consultant-Example",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "454567759542"
+          }
+        ],
+        "active": true,
+        "period": {
+          "start": "2024-09-30"
+        },
+        "practitioner": {
+          "reference": "https://fhir.nhs.uk/England/spine/Practitioner/practitioner-consultant",
+          "identifier": {
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "C4428981"
+          },
+          "display": "Dr Thomas Edwards"
+        },
+        "organization": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
+          },
+          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/England/CodeSystem/England-JobRoleCode",
+                "code": "01005"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/England/CodeSystem/England-SDSJobRoleName",
+                "code": "R0620"
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ]
+}
