@@ -131,6 +131,15 @@ topic: Library-Extensions-UKCore
 </tr>
 
 <tr>
+<td>{{pagelink:Extension-UKCore-ConditionBodyStructure}}</td>
+<td>active</td>
+<td>Condition</td>
+<td>{{pagelink:Profile-Condition}}</td>
+<td>NO</td>
+<td>6</td>
+</tr>
+
+<tr>
 <td>{{pagelink:Extension-UKCore-ContactPreference}}</td>
 <td>active</td>
 <td>Patient,<br>RelatedPerson</td>
@@ -213,6 +222,16 @@ topic: Library-Extensions-UKCore
 <td>NO</td>
 <td>4</td>
 </tr>
+
+<tr>
+<td>{{pagelink:Extension-UKCore-DiagnosticReportMediaLink}}</td>
+<td>active</td>
+<td>DiagnosticReport</td>
+<td>{{pagelink:Profile-DiagnosticReport}}</td>
+<td>NO</td>
+<td>6</td>
+</tr>
+
 
 <tr>
 <td>{{pagelink:Extension-UKCore-EmergencyCareDischargeStatus}}</td>
@@ -344,6 +363,16 @@ RelatedPerson.telecom.system</td>
 </tr>
 
 <tr>
+<td>{{pagelink:Extension-UKCore-PatientFetalStatus}}</td>
+<td>active</td>
+<td>Patient</td>
+<td>{{pagelink:Profile-Patient}}</td>
+<td>NO</td>
+<td>6</td>
+</tr>
+
+
+<tr>
 <td>{{pagelink:Extension-UKCore-ParentPresent}}</td>
 <td>active</td>
 <td>Immunization</td>
@@ -437,6 +466,7 @@ RelatedPerson.telecom.system</td>
 <li>{{pagelink:Extension-UKCore-CareSettingType,text:UKCore-CareSettingType}}</li>
 <li>{{pagelink:Extension-UKCore-CodingSCTDescDisplay,text:UKCore-CodingSCTDescDisplay}}</li>
 <li>{{pagelink:Extension-UKCore-ConditionEpisode,text:UKCore-ConditionEpisode}}</li>
+<li>{{pagelink:Extension-UKCore-ConditionBodyStructure,text:UKCore-ConditionBodyStructure}}</li>
 <li>{{pagelink:Extension-UKCore-ContactPreference,text:UKCore-ContactPreference}}</li>
 <li>{{pagelink:Extension-UKCore-ContactRank,text:UKCore-ContactRank}}</li>
 <li>{{pagelink:Extension-UKCore-Coverage,text:UKCore-Coverage}}</li>
@@ -446,6 +476,7 @@ RelatedPerson.telecom.system</td>
 <li>{{pagelink:Extension-UKCore-DeliveryChannel,text:UKCore-DeliveryChannel}}</li>
 <li>{{pagelink:Extension-UKCore-DeviceReference,text:UKCore-DeviceReference}}</li>
 <li>{{pagelink:Extension-UKCore-DischargeMethod,text:UKCore-DischargeMethod}}</li>
+<li>{{pagelink:Extension-UKCore-DiagnosticReportMediaLink,text:UKCore-DiagnosticReportMediaLink}}</li>
 </ul>
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>E-L:</b></p>
@@ -472,6 +503,7 @@ RelatedPerson.telecom.system</td>
 <li>{{pagelink:Extension-UKCore-ParentPresent,text:UKCore-ParentPresent}}</li>
 <li>{{pagelink:Extension-UKCore-PharmacistVerifiedIndicator,text:UKCore-PharmacistVerifiedIndicator}}</li>
 <li>{{pagelink:Extension-UKCore-PriorityReason,text:UKCore-PriorityReason}}</li>
+<li>{{pagelink:Extension-UKCore-PatientFetalStatus,text:UKCore-PatientFetalStatus}}</li>
 </ul>
 </td><td style="border-left: 1px solid #eeeeee">
 <p><b>Q-Z:</b></p> 
@@ -548,9 +580,12 @@ RelatedPerson.telecom.system</td>
 <li>{{pagelink:Extension-UKCore-AssociatedEncounter,text:UKCore-AssociatedEncounter}}</li>
 <li>{{pagelink:Extension-UKCore-BodySiteReference,text:UKCore-BodySiteReference}}</li>
 <li>{{pagelink:Extension-UKCore-Coverage,text:UKCore-Coverage}}</li>
+<li>{{pagelink:Extension-UKCore-ConditionBodyStructure,text:UKCore-ConditionBodyStructure}}</li>
 <li>{{pagelink:Extension-UKCore-DeviceReference,text:UKCore-DeviceReference}}</li>
+<li>{{pagelink:Extension-UKCore-DiagnosticReportMediaLink,text:UKCore-DiagnosticReportMediaLink}}</li>
 <li>{{pagelink:Extension-UKCore-NHSNumberUnavailableReason,text:UKCore-NHSNumberUnavailableReason}}</li>
 <li>{{pagelink:Extension-UKCore-PriorityReason,text:UKCore-PriorityReason}}</li>
+<li>{{pagelink:Extension-UKCore-PatientFetalStatus,text:UKCore-PatientFetalStatus}}</li>
 <li>{{pagelink:Extension-UKCore-SampleCategory,text:UKCore-SampleCategory}}</li>
 </ul>
 
@@ -581,6 +616,7 @@ RelatedPerson.telecom.system</td>
 <p><b>Condition:</b></p>
 <ul>
 <li>{{pagelink:Extension-UKCore-ConditionEpisode,text:UKCore-ConditionEpisode}}</li>
+<li>{{pagelink:Extension-UKCore-ConditionBodyStructure,text:UKCore-ConditionBodyStructure}}</li>
 </ul>
 <p><b>Device:</b></p>
 <ul>
@@ -589,6 +625,7 @@ RelatedPerson.telecom.system</td>
 <p><b>DiagnosticReport:</b></p>
 <ul>
 <li>{{pagelink:Extension-UKCore-DeviceReference,text:UKCore-DeviceReference}}</li>
+<li>{{pagelink:Extension-UKCore-DiagnosticReportMediaLink,text:UKCore-DiagnosticReportMediaLink}}</li>
 </ul>
 <p><b>Encounter:</b></p>
 <ul>
@@ -646,6 +683,7 @@ RelatedPerson.telecom.system</td>
 <li>{{pagelink:Extension-UKCore-NHSNumberVerificationStatus,text:UKCore-NHSNumberVerificationStatus}}</li>
 <li>{{pagelink:Extension-UKCore-OtherContactSystem,text:UKCore-OtherContactSystem}}</li>
 <li>{{pagelink:Extension-UKCore-ResidentialStatus,text:UKCore-ResidentialStatus}}</li>
+<li>{{pagelink:Extension-UKCore-PatientFetalStatus,text:UKCore-PatientFetalStatus}}</li>
 </ul>
 <p><b>RelatedPerson:</b></p>
 <ul>

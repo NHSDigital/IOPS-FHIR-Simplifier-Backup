@@ -1291,7 +1291,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
   <td colspan="4">Composed of CodeSystem <code>http://terminology.hl7.org/CodeSystem/v2-0493</code></td>
 </tr>
 <tr style="background-color: #dff0d8;">
-  <td colspan="4">Composed of {{pagelink:Home/Terminology/AllCodeSystems/CodeSystem-UKCore-PrimarySampleState.page.md}}</td>
+  <td colspan="4">Composed of {{pagelink:ValueSet-UKCore-SampleState}}</td>
 </tr>
 <tr style="background-color: #dff0d8;">
   <td colspan="4" class="override"></td>
@@ -1641,6 +1641,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:CodeSystem-UKCore-SampleCategory}}</li>
 <li>{{pagelink:CodeSystem-UKCore-SourceOfAdmissionEngland}}</li>
 <li>{{pagelink:CodeSystem-UKCore-SourceOfAdmissionWales}}</li>
+<li>{{pagelink:CodeSystem-UKCore-WithheldIdentityReason}}</li>
 </ul>
 </td></tr>
 
@@ -1845,6 +1846,7 @@ Composed of CodeSystem <code>http://snomed.info/sct</code></td>
 <li>{{pagelink:CodeSystem-UKCore-NHSNumberUnavailableReason}}</li>
 <li>{{pagelink:CodeSystem-UKCore-OrganizationTypeGenomics}}</li>
 <li>{{pagelink:CodeSystem-UKCore-SampleCategory}}</li>
+<li>{{pagelink:CodeSystem-UKCore-WithheldIdentityReason}}</li>
 </ul>
 
 <p><b>C&TA Sprint 7:</b></p>
