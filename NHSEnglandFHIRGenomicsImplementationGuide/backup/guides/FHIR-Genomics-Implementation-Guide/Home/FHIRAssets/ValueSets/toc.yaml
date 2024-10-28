@@ -8,12 +8,12 @@
   filename: Genomic-Task-Code.page.md
 - name: Genomic-Task-StatusReason
   filename: Genomic-Task-StatusReason.page.md
-- name: Genomic-Coverage
-  filename: Genomic-Coverage.page.md
+- name: ValueSet-Genomic-Coverage
+  filename: ValueSet-Genomic-Coverage.page.md
 - name: Genomic-Message-Events
   filename: Genomic-Message-Events.page.md
-- name: Genomic-NHSNumber-Unavailable-Reason
-  filename: Genomic-NHSNumber-Unavailable-Reason.page.md
+- name: ValueSet-Genomic-NHSNumber-Unavailable-Reason
+  filename: ValueSet-Genomic-NHSNumber-Unavailable-Reason.page.md
 - name: Genomic-Patient-Choice-Category
   filename: Genomic-Patient-Choice-Category.page.md
 - name: Genomic-Patient-Research-Choice

@@ -22,8 +22,8 @@
   filename: Genomic-Task-Code.page.md
 - name: Genomic-Task-StatusReason
   filename: Genomic-Task-StatusReason.page.md
-- name: Genomic-Coverage
-  filename: Genomic-Coverage.page.md
+- name: CodeSystem-Genomic-Coverage
+  filename: CodeSystem-Genomic-Coverage.page.md
 - name: Genomic-NHSNumber-Unvailable-Reason
   filename: Genomic-NHSNumber-Unvailable-Reason.page.md
 - name: Genomic-Organization-Type

@@ -1,30 +1,36 @@
-## {{page-title}}
+---
+subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason
+issue: Extension-Genomic-NHSNumber-Unavailable-Reason
+expand: yes
+---
+
+## {{variable:issue}}
+
 
 <h2 id='non-fql-header'>Usage</h2>
 This extends the Patient resource to support the exchange of information about the reason why a patient does not have an NHS Number.
 
-<div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'HTML View')">HTML View</button>
- <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
-  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
+<div id='extensionContextofUse'>
+<div id='extension-Context-Use-title'>
+Context of Use
+</div>
+<div id='extension-Context-Use-Profiles'>
+{{pagelink:Genomics-Patient,text:Patient}}
+</div>
 </div>
 
-<div id="HTML View" class="tabcontent" style="display:block">
-  <h3>HTML View</h3>
-{{render:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason}}
+{{page:Home-FHIRAssets-Extensions-ExtensionTemplate}}
+
+
+<div id="Examples" class="tabcontent">
+  <h3>Examples</h3>
+  <b>NHS Number Unavailable Reason</b>- An example of the extension which states the reason a patient's NHS number is unavailable.<br>
+<h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-NHSNumberUnavailableReason.page.md?version=current' target="_blank">Extension-UKCore-NHSNumberUnavailableReason</a></h4>
+<br><br>
 </div>
 
-<div id="Table View" class="tabcontent">
-  <h3>Table View</h3>
-{{table:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason}}
-</div>
+<h3 id="guidance-nhsnumberunavailablereason">Extension Specific Guidance</h3>
 
-<div id="XML View" class="tabcontent">
-  <h3>XML View</h3>
-{{xml:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason}}
-</div>
+There is a binding within this extension to a {{pagelink:ValueSet-Genomic-NHSNumber-Unavailable-Reason}}.
 
-<div id="JSON View" class="tabcontent">
-  <h3>JSON View</h3>
-{{json:https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason}}
+---

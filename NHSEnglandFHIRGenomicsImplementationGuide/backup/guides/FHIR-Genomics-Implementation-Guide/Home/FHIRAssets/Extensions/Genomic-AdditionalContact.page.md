@@ -30,7 +30,7 @@ Context of Use
 </div>
 
 <div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary?version=current' target="_blank">Propose a change to {{variable:issue}} </a></h4>
+<h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary/Extension-UKCore-AdditionalContact.page.md?version=current' target="_blank">Propose a change to {{variable:issue}} </a></h4>
 </div>
 
 ---

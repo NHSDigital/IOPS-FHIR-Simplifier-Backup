@@ -37,9 +37,6 @@ The below profile is therefore provided to support parsing for clients if return
         <li role="presentation">
             <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
         </li>
-        <li role="presentation">
-            <a href="#Schematrons" role="tab" data-toggle="tab">Schematron</a>
-        </li>
     </ul>
     <div class="tab-content snippet">
         <div id="Profile" role="tabpanel" class="tab-pane active">
