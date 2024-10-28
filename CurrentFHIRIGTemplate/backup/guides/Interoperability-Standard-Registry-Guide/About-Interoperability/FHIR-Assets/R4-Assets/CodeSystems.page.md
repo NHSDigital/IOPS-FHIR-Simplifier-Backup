@@ -212,8 +212,8 @@
 
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/CodeSystem-UKCore-BiopsyState">UKCore-BiopsyState</a>
   1.0.0
-  2023-04-28
-  <span class="status active">active</span>
+  2023-10-07
+  <span class="status retired">retired</span>
 </li>
 
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/CodeSystem-UKCore-ConditionCategory">UKCore-ConditionCategory</a>
@@ -586,6 +586,12 @@
   2.0.0
   2021-09-10
   <span class="status retired">retired</span>
+</li>
+
+<li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/CodeSystem-UKCore-PrimarySampleState">UKCore-PrimarySampleState</a>
+  1.0.0
+  2024-10-07
+  <span class="status active">active</span>
 </li>
 
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/CodeSystem-UKCore-ProblemSignificance">UKCore-ProblemSignificance</a>

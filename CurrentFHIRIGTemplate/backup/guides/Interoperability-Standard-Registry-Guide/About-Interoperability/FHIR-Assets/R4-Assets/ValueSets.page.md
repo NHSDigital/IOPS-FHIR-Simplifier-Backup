@@ -188,8 +188,8 @@
 
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/ValueSet-UKCore-BiopsyState">UKCore-BiopsyState</a>
   2.1.0
-  2023-04-28
-  <span class="status active">active</span>
+  2023-10-07
+  <span class="status retired">retired</span>
 </li>
 
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/ValueSet-UKCore-BirthSex">UKCore-BirthSex</a>
@@ -825,6 +825,12 @@
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/ValueSet-UKCore-SampleCategory">UKCore-SampleCategory</a>
   2.1.0
   2023-04-28
+  <span class="status active">active</span>
+</li>
+
+<li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/ValueSet-UKCore-SampleState">UKCore-SampleState</a>
+  1.0.0
+  2024-10-07
   <span class="status active">active</span>
 </li>
 
