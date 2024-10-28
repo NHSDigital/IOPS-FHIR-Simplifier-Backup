@@ -627,8 +627,8 @@
 ### Specimen
 
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/UKCore-Specimen">UKCore-Specimen</a>
-  2.4.0
-  2023-12-12
+  3.0.0
+  2024-10-07
   <span class="status active">active</span>
 </li>
 
