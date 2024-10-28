@@ -1,0 +1,64 @@
+{
+    "resourceType" : "RelatedPerson",
+    "id" : "PDS-RelatedPerson-45B0DF3F-Example",
+    "active" : true,
+    "patient" : {
+      "identifier" : {
+        "system" : "https://fhir.nhs.uk/Id/nhs-number",
+        "value" : "9732017996"
+      }
+    },
+    "relationship" : [
+      {
+        "coding" : [
+          {
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code" : "FTH",
+            "display" : "father"
+          }
+        ]
+      },
+      {
+        "coding" : [
+          {
+            "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
+            "code" : "Guardian",
+            "display" : "Guardian of patient"
+          }
+        ]
+      }
+    ],
+    "name" : [
+      {
+        "use" : "usual",
+        "family" : "WILLAN",
+        "given" : [
+          "Virgil",
+          "Morris"
+        ],
+        "prefix" : [
+          "Mr"
+        ],
+        "period" : {
+          "start" : "2024-05-15"
+        }
+      }
+    ],
+    "address" : [
+      {
+        "use" : "home",
+        "line" : [
+          "1 BEECH GARTH",
+          "BARROW-UPON-HUMBER",
+          "S HUMBERSIDE"
+        ],
+        "postalCode" : "DN19 7DR",
+        "period" : {
+          "start" : "2024-05-15"
+        }
+      }
+    ],
+    "period" : {
+      "start" : "2024-05-15"
+    }
+  }

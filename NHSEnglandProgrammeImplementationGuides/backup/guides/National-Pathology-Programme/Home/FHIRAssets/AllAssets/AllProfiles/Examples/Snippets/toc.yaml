@@ -1,0 +1,10 @@
+- name: DiagnosticReport Snippets
+  filename: DiagnosticReport-Snippets.page.md
+- name: Observation Test Group Snippets
+  filename: Observation-Test-Group-Snippets.page.md
+- name: Observation Test Result Snippets
+  filename: Observation-Test-Result-Snippets.page.md
+- name: ServiceRequest Snippets
+  filename: ServiceRequest-Snippets.page.md
+- name: Specimen Snippets
+  filename: Specimen-Snippets.page.md

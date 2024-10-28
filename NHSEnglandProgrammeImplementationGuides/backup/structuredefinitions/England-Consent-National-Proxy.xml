@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="England-Consent-National-Proxy" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-National-Proxy" />
+  <version value="0.0.1-current" />
+  <name value="EnglandConsentNationalProxy" />
+  <title value="England Consent National Proxy" />
+  <status value="draft" />
+  <date value="2024-10-25T07:31:19+00:00" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Consent - National Proxy from [NHS England Confluence - NPA Confirm Consent](https://nhsd-confluence.digital.nhs.uk/display/NPA/Confirm+consent)" />
+  <purpose value="This documents requirement for NHS England National Proxy" />
+  <copyright value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Consent" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Consent.status">
+      <path value="Consent.status" />
+      <short value="Status of permission" />
+    </element>
+    <element id="Consent.category">
+      <path value="Consent.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Consent.category:information-access">
+      <path value="Consent.category" />
+      <sliceName value="information-access" />
+      <min value="1" />
+      <max value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+          <code value="INFA" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Consent.category:information-access.coding.system">
+      <path value="Consent.category.coding.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+    </element>
+    <element id="Consent.category:information-access.coding.code">
+      <path value="Consent.category.coding.code" />
+      <fixedCode value="INFA" />
+    </element>
+    <element id="Consent.patient">
+      <path value="Consent.patient" />
+      <short value="Patient NHS number" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+    <element id="Consent.patient.identifier">
+      <path value="Consent.patient.identifier" />
+      <min value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-NHS-Number" />
+      </type>
+    </element>
+    <element id="Consent.performer">
+      <path value="Consent.performer" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="Proxy NHS number and GMP/GMC/SDS User ID if also verified by GP" />
+      <min value="1" />
+      <max value="2" />
+    </element>
+    <element id="Consent.performer.identifier">
+      <path value="Consent.performer.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Consent.performer.identifier.system">
+      <path value="Consent.performer.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Consent.performer.identifier.value">
+      <path value="Consent.performer.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Consent.performer:proxy">
+      <path value="Consent.performer" />
+      <sliceName value="proxy" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+      </type>
+    </element>
+    <element id="Consent.performer:proxy.type">
+      <path value="Consent.performer.type" />
+      <patternUri value="RelatedPerson" />
+    </element>
+    <element id="Consent.performer:proxy.identifier">
+      <path value="Consent.performer.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-NHS-Number" />
+      </type>
+    </element>
+    <element id="Consent.performer:verifier">
+      <path value="Consent.performer" />
+      <sliceName value="verifier" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+      </type>
+    </element>
+    <element id="Consent.performer:verifier.type">
+      <path value="Consent.performer.type" />
+      <patternUri value="Practitioner" />
+    </element>
+    <element id="Consent.performer:verifier.identifier">
+      <path value="Consent.performer.identifier" />
+      <short value="TODO SDS-User-Id is not part of NHS Data Dictionary and so should not be present here as an Identifier." />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-SDS-User-Id" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Practitioner-Code" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Council-Reference-Number" />
+      </type>
+    </element>
+    <element id="Consent.source[x]">
+      <path value="Consent.source[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Consent.source[x]:sourceReference">
+      <path value="Consent.source[x]" />
+      <sliceName value="sourceReference" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
+      </type>
+    </element>
+    <element id="Consent.verification">
+      <path value="Consent.verification" />
+      <short value="Basis for access" />
+    </element>
+    <element id="Consent.verification.verifiedWith">
+      <path value="Consent.verification.verifiedWith" />
+      <short value="Patient (if consent-based) or RelatedPerson.relationship (if based on a relationship)" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+    <element id="Consent.verification.verifiedWith.identifier">
+      <path value="Consent.verification.verifiedWith.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-NHS-Number" />
+      </type>
+    </element>
+    <element id="Consent.provision">
+      <path value="Consent.provision" />
+      <short value="Requested services" />
+      <min value="1" />
+    </element>
+    <element id="Consent.provision.type">
+      <path value="Consent.provision.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.provision.actor">
+      <path value="Consent.provision.actor" />
+      <short value="The proxies access is controlled by these provisions" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Consent.provision.actor.reference">
+      <path value="Consent.provision.actor.reference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+      </type>
+    </element>
+    <element id="Consent.provision.actor.reference.type">
+      <path value="Consent.provision.actor.reference.type" />
+      <min value="1" />
+    </element>
+    <element id="Consent.provision.actor.reference.identifier">
+      <path value="Consent.provision.actor.reference.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-NHS-Number" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

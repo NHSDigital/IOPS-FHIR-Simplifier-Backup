@@ -1,0 +1,92 @@
+{
+    "resourceType" : "CapabilityStatement",
+    "id" : "England-Healthcare-Worker-Requirements",
+    "url" : "https://fhir.nhs.uk/England/CapabilityStatement/England-Healthcare-Worker-Requirements",
+    "version" : "0.0.1-current",
+    "name" : "EnglandHealthcareWorkerRequirements",
+    "title" : "England Healthcare Worker Requirements",
+    "status" : "draft",
+    "experimental" : false,
+    "date" : "2024-10-08",
+    "publisher" : "NHS England",
+    "contact":  [
+      {
+          "name": "NHS England",
+          "telecom":  [
+              {
+                  "system": "email",
+                  "value": "interoperabilityteam@nhs.net",
+                  "use": "work",
+                  "rank": 1
+              }
+          ]
+      }
+  ],
+    "description" : "This is for description purposes only and will be replaced by the OAS specification.\n",
+    "copyright": "Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+    "kind" : "requirements",
+    "fhirVersion" : "4.0.1",
+    "format" : [
+      "application/fhir+xml",
+      "application/fhir+json"
+    ],
+    "rest" : [
+      {
+        "mode" : "server",
+        "resource" : [
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode" : "SHALL"
+              }
+            ],
+            "type" : "Practitioner",
+            "profile" : "https://fhir.nhs.uk/England/StructureDefinition/England-Practitioner",
+            "supportedProfile" : [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"
+            ],
+            "documentation" : "\n```\nGET /Practitioner?{parameters}\n```\n\nConformance to this implementation guide **SHOULD** be tested via [FHIR Validation](https://hl7.org/fhir/R4/validation.html).\n\n**Search Examples**\n\nSearch for Practitioner with a SDS User Id = 3415870201\n\n```\nGET /Practitioner?identifier=https://fhir.nhs.uk/Id/sds-user-id|3415870201\n```\n",
+            "interaction" : [
+              {
+                "code" : "search-type"
+              }
+            ],
+            "searchParam" : [
+              {
+                "name" : "identifier",
+                "type" : "token",
+                "documentation" : "A practitioner's Identifier"
+              }
+            ]
+          },
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode" : "SHALL"
+              }
+            ],
+            "type" : "PractitionerRole",
+            "profile" : "https://fhir.nhs.uk/England/StructureDefinition/England-PractitionerRole-Healthcare-Worker",
+            "supportedProfile" : [
+              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"
+            ],
+            "documentation" : "\n```\nGET /PractitionerRole?{parameters}\n```\n\nConformance to this implementation guide **SHOULD** be tested via [FHIR Validation](https://hl7.org/fhir/R4/validation.html).\n\n**Search Examples**\n\nSearch for PractitionerRole with a SDS User Profile Id = 454567759542\n\n```\nGET /PractitionerRole?identifier=https://fhir.nhs.uk/Id/sds-role-profile-id|454567759542\n```\n",
+            "interaction" : [
+              {
+                "code" : "search-type"
+              }
+            ],
+            "searchParam" : [
+              {
+                "name" : "identifier",
+                "type" : "token",
+                "documentation" : "A practitioner's Identifier"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
