@@ -1,0 +1,24 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "NationalProxy-ActivityDefinition-consent-verification-Example",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition ActivityDefinition-Proxy-Verification</b></p><a name=\"ActivityDefinition-Proxy-Verification\"> </a><a name=\"hcActivityDefinition-Proxy-Verification\"> </a><a name=\"ActivityDefinition-Proxy-Verification-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-ActivityDefinition-Proxy-Verification.html\">ActivityDefinition National Proxy Consent Verification</a></p><p><b>version</b>: 0.0.1-current</p><p><b>title</b>: National Proxy Consent Verification</p><p><b>status</b>: Draft</p><p><b>date</b>: 2024-10-25 07:31:19+0000</p><p><b>publisher</b>: NHS England</p><p><b>contact</b>: <a href=\"https://www.ihe.net/ihe_domains/it_infrastructure/\">https://www.ihe.net/ihe_domains/it_infrastructure/</a>, <a href=\"mailto:iti@ihe.net\">iti@ihe.net</a>, NHS England: <a href=\"mailto:iti@ihe.net\">iti@ihe.net</a></p><p><b>description</b>: </p><div><p>Placeholder.</p>\n<p>Probably useful to use ActivityDefinition and/or SNOMED CT codes for tasks.</p>\n</div><p><b>jurisdiction</b>: <span title=\"Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">Global (Whole world)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 414925007}\">Obtaining consent</span></p></div>"
+  },
+  "url" : "https://fhir.nhs.uk/England/spine/ActivityDefinition/ActivityDefinition-Proxy-Verification",
+  "version" : "0.0.1-current",
+  "title" : "National Proxy Consent Verification",
+  "status" : "draft",
+  "date" : "2024-10-25T07:31:19+00:00",
+  "publisher" : "NHS England",
+  "description" : "Placeholder.\n\nProbably useful to use to elaborate what needs to be done",
+  "code" : {
+    "coding" : [
+      {
+        "system" : "http://snomed.info/sct",
+        "code" : "414925007",
+        "display" : "Obtaining consent"
+      }
+    ]
+  }
+}

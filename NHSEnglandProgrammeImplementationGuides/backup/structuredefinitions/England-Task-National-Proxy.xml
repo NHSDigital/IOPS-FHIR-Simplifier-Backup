@@ -31,6 +31,26 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Task.businessStatus">
+      <path value="Task.businessStatus" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Task.code">
+      <path value="Task.code" />
+      <min value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-TaskCode" />
+      </binding>
+    </element>
+    <element id="Task.focus">
+      <path value="Task.focus" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CodeableReference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+    </element>
     <element id="Task.for">
       <path value="Task.for" />
       <min value="1" />
@@ -38,15 +58,6 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
-    </element>
-    <element id="Task.for.extension:englandExtensionExtCodeableReference">
-      <path value="Task.for.extension" />
-      <sliceName value="englandExtensionExtCodeableReference" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Extension-ExtCodeableReference" />
-      </type>
-      <isModifier value="false" />
     </element>
     <element id="Task.for.identifier">
       <path value="Task.for.identifier" />
@@ -57,6 +68,7 @@
     </element>
     <element id="Task.requester">
       <path value="Task.requester" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
@@ -65,8 +77,8 @@
     </element>
     <element id="Task.requester.identifier">
       <path value="Task.requester.identifier" />
-      <min value="1" />
       <short value="SDS-User-Id is not part of NHS Data Dictionary and so should not be present here as an identifier." />
+      <min value="1" />
       <type>
         <code value="Identifier" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Practitioner-Code" />
@@ -86,14 +98,18 @@
     </element>
     <element id="Task.owner.identifier">
       <path value="Task.owner.identifier" />
-      <min value="1" />
       <short value="SDS-User-Id is not part of NHS Data Dictionary and so should not be present here as an identifer." />
+      <min value="1" />
       <type>
         <code value="Identifier" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Practitioner-Code" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Council-Reference-Number" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Organisation-Code" />
       </type>
+    </element>
+    <element id="Task.note">
+      <path value="Task.note" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
