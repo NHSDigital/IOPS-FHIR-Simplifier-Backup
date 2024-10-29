@@ -11,39 +11,26 @@
   "businessStatus" : {
     "coding" : [
       {
-        "system" : "https://fhir.nhs.uk/England/NationalProxyConsentDescision",
-        "code" : "rejected"
+        "system" : "https://fhir.nhs.uk/England/NationalProxyConsentStatus",
+        "code" : "not-registered"
       }
     ]
   },
   "intent" : "order",
   "priority" : "routine",
-  "code" : {
-    "coding" : [
+  "code": {
+    "coding": [
       {
-        "system" : "http://hl7.org/fhir/CodeSystem/task-code",
-        "code" : "fulfill"
+        "system": "http://snomed.info/sct",
+        "code": "414925007",
+        "display": "Obtaining consent"
       }
     ]
   },
-  "focus" : {
-     "extension" : [
-      {
-        "url" : "https://fhir.nhs.uk/England/StructureDefinition/England-Extension-ExtCodeableReference",
-        "valueCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://snomed.info/sct",
-              "code" : "414925007",
-              "display" : "Obtaining consent"
-            }
-          ]
-        }
-      }
-    ],
-    "reference" : "https://fhir.nhs.uk/England/spine/ActivityDefinition/ActivityDefinition-Proxy-Verification",
-    "type" : "ActivityDefinition",
-    "display" : "Obtaining consent"
+  "instantiatesCanonical": "https://workflow.example.nhs.uk/FHIR/R4/ActivityDefinition/ActivityDefinition-Proxy-Verification",
+  "focus": {
+    "type": "QuestionnaireResponse",
+    "reference" : "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/QuestionnaireResponse-QuestionnaireResponse-proxy-access-request"
   },
   "for" : {
     "identifier" : {
@@ -69,7 +56,24 @@
   },
   "note" : [
     {
-      "text" : "Please verify the national proxy request for from Jayne Smith to access Jane Marie Anne Smith records. Relationship is MOTHER"
+      "time": "2024-10-07T15:07:55.495Z",
+      "authorReference": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "X26"
+        }
+      },
+      "text": "Please verify the national proxy request for from Jayne Smith to access Jane Marie Anne Smith records. Relationship is MOTHER"
+    },
+    {
+      "time": "2024-10-07T15:08:55.495Z",
+      "authorReference": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "Y12345"
+        }
+      },
+      "text": "Patient is no longer registered at the practice."
     }
   ],
   "input" : [
@@ -99,20 +103,6 @@
       "valueReference" : {
         "reference" : "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/RelatedPerson-RelatedPerson-NHS-9100000009",
         "type" : "RelatedPerson"
-      }
-    },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://fhir.nhs.uk/England/NationalProxy",
-            "code" : "OriginalRequest"
-          }
-        ]
-      },
-      "valueReference" : {
-        "reference" : "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/QuestionnaireResponse-QuestionnaireResponse-proxy-access-request",
-        "type" : "QuestionnaireResponse"
       }
     }
   ]

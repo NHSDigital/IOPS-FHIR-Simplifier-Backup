@@ -1,0 +1,8 @@
+- name: Task Consent Verification Requested
+  filename: Task-Consent-Verification-Requested.page.md
+- name: Task Consent Verification Accepted
+  filename: Task-Consent-Verification-Accepted.page.md
+- name: Task Consent Verification Rejected
+  filename: Task-Consent-Verification-Rejected.page.md
+- name: Task Consent Verification Completed
+  filename: Task-Consent-Verification-Completed.page.md

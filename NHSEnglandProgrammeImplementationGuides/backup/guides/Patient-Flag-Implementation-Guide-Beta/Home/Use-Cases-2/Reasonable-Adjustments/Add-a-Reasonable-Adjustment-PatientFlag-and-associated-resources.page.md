@@ -5,7 +5,7 @@ For high level requirements, see {{pagelink:Home}}.
 
 ### Use Case
 
-After consultation with a patient, a Reasonable Adjustment Record may be created.  This consists of a Flag resource containing an adjustment; a Condition resource may also optionally be created to record the details of an impairment or an underlying condition.  
+After consultation with a patient, a Reasonable Adjustment Record may be created.  This consists of a Flag resource containing an adjustment; a Condition resource or resources may also optionally be created to record the details of an impairment or an underlying condition.  
 
 If a Reasonable Adjustment Record exists, a Flag resource designated as the patient flag must be created to indicate that there are reasonable adjustments recorded for the patient.  There is a single instance of this type of resource per patient.
 
