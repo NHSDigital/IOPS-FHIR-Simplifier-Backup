@@ -1,2 +1,4 @@
 - name: Workflow
   filename: Workflow.page.md
+- name: Example Scenario
+  filename: Example-Scenario

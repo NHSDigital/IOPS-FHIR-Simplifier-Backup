@@ -6,3 +6,5 @@
   filename: Examples
 - name: ActivityDefinition
   filename: ActivityDefinition
+- name: Questionnaire
+  filename: Questionnaire

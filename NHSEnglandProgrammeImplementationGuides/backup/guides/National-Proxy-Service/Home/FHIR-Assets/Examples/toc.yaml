@@ -6,3 +6,17 @@
   filename: Task-Consent-Verification-Rejected.page.md
 - name: Task Consent Verification Completed
   filename: Task-Consent-Verification-Completed.page.md
+- name: Consent proposed
+  filename: Consent-proposed.page.md
+- name: Consent rejected
+  filename: Consent-rejected.page.md
+- name: Consent confirmed
+  filename: Consent-confirmed.page.md
+- name: QuestionnaireResponse Proxy Access Request
+  filename: QuestionnaireResponse-Proxy-Access-Request.page.md
+- name: Related Person 91000000009
+  filename: Related-Person-91000000009.page.md
+- name: Bundle Searchset Related Person identifier query
+  filename: Bundle-Searchset-Related-Person-identifier-query.page.md
+- name: Bundle Searchset Related Person patient:identifier query
+  filename: Bundle-Searchset-Related-Person-patient-identifier-query.page.md
