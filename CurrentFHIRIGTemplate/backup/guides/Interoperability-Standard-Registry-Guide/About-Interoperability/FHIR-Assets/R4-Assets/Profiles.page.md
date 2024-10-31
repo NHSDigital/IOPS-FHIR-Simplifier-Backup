@@ -136,6 +136,12 @@
   <span class="status draft">draft</span>
 </li>
 
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Consent-National-Proxy">England-Consent-National-Proxy</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
 ### Device
 
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/UKCore-Device">UKCore-Device</a>
@@ -228,6 +234,44 @@
   1.3.0
   2024-07-11
   <span class="status active">active</span>
+</li>
+
+### Identifier
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Identifier-General-Medical-Council-Reference-Number">England-Identifier-General-Medical-Council-Reference-Number</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Identifier-General-Medical-Practitioner-Code">England-Identifier-General-Medical-Practitioner-Code</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Identifier-NHS-Number">England-Identifier-NHS-Number</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Identifier-Organisation-Code">England-Identifier-Organisation-Code</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Identifier-SDS-User-Id">England-Identifier-SDS-User-Id</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Identifier-SDS-User-Profile-Id">England-Identifier-SDS-User-Profile-Id</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
 </li>
 
 ### ImagingStudy
@@ -526,12 +570,24 @@
   <span class="status active">active</span>
 </li>
 
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Practitioner">England-Practitioner</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
 ### PractitionerRole
 
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/UKCore-PractitionerRole">UKCore-PractitionerRole</a>
   2.4.0
   2024-07-11
   <span class="status active">active</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-PractitionerRole-Healthcare-Worker">England-PractitionerRole-Healthcare-Worker</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
 </li>
 
 ### Procedure
@@ -572,12 +628,32 @@
   <span class="status draft">draft</span>
 </li>
 
+### Reference
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-CodeableReference">England-CodeableReference</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
 ### RelatedPerson
 
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/UKCore-RelatedPerson">UKCore-RelatedPerson</a>
   2.5.0
   2024-07-11
   <span class="status active">active</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-RelatedPerson-National-Proxy">England-RelatedPerson-National-Proxy</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-RelatedPerson-PDS">England-RelatedPerson-PDS</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
 </li>
 
 ### RequestGroup
@@ -643,6 +719,12 @@
 <li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/UKCore-Task">UKCore-Task</a>
   1.2.0
   2023-12-12
+  <span class="status draft">draft</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Task-National-Proxy">England-Task-National-Proxy</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
   <span class="status draft">draft</span>
 </li>
 

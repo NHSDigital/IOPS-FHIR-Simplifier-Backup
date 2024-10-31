@@ -48,6 +48,12 @@
   <span class="status draft">draft</span>
 </li>
 
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Extension-ExtCodeableReference">England-Extension-ExtCodeableReference</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
 <li class="nhsengland"><a href="https://simplifier.net/nhs-england-implementation-guide/Extension-England-LocationExtension">Extension-England-LocationExtension</a>
   1.0.0
   2024-06-19

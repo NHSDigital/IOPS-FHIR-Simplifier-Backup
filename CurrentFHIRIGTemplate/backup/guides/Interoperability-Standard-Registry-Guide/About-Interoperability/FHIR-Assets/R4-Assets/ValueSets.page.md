@@ -102,6 +102,12 @@
   <span class="status active">active</span>
 </li>
 
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/ValueSet-England-JobRoleCode">England-JobRoleCode</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
 <li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/ValueSet-England-MCEDSignalResult">England-MCEDSignalResult</a>
   0.0.1
   2024-02-27
@@ -114,10 +120,22 @@
   <span class="status active">active</span>
 </li>
 
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/ValueSet-England-PDSRelationshipType">England-PDSRelationshipType</a>
+  0.0.1
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
+</li>
+
 <li class="nhsengland"><a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-PeriodType">England-PeriodType</a>
   1.0.0
   2023-12-07
   <span class="status active">active</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/ValueSet-England-TaskCode">England-TaskCode</a>
+  0.0.1-current
+  2024-10-25T07:31:19+00:00
+  <span class="status draft">draft</span>
 </li>
 
 <li class="nhsengland"><a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-TypedDateTime">England-TypedDateTime</a>
