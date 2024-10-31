@@ -1,4 +1,6 @@
 - name: Index
   filename: Index.page.md
+- name: Analysis
+  filename: Analysis
 - name: FHIR Assets
   filename: FHIR-Assets

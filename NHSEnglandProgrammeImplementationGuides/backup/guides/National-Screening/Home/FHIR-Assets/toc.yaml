@@ -1,0 +1,14 @@
+- name: Capability Statement
+  filename: Capability-Statement
+- name: Profiles
+  filename: Profiles
+- name: Extensions
+  filename: Extensions
+- name: ValueSets
+  filename: ValueSets
+- name: CodeSystems
+  filename: CodeSystems
+- name: SearchParameters
+  filename: SearchParameters
+- name: Index
+  filename: Index.page.md

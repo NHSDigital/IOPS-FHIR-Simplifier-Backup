@@ -1,15 +1,15 @@
 {
-  "resourceType" : "Task",
-  "id" : "NationalProxy-Task-ConsentVerification-Completed-Example",
-  "identifier" : [
+  "resourceType": "Task",
+  "id": "NationalProxy-Task-ConsentVerification-Completed-Example",
+  "identifier": [
     {
-      "system" : "https://tools.ietf.org/html/rfc4122",
-      "value" : "41bf06bf-83f3-4004-98d3-480e3f048d55"
+      "system": "https://tools.ietf.org/html/rfc4122",
+      "value": "41bf06bf-83f3-4004-98d3-480e3f048d55"
     }
   ],
-  "status" : "completed",
-  "intent" : "order",
-  "priority" : "routine",
+  "status": "completed",
+  "intent": "order",
+  "priority": "routine",
   "code": {
     "coding": [
       {
@@ -22,31 +22,31 @@
   "instantiatesCanonical": "https://workflow.example.nhs.uk/FHIR/R4/ActivityDefinition/ActivityDefinition-Proxy-Verification",
   "focus": {
     "type": "QuestionnaireResponse",
-    "reference" : "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/QuestionnaireResponse-QuestionnaireResponse-proxy-access-request"
+    "reference": "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/QuestionnaireResponse-QuestionnaireResponse-proxy-access-request"
   },
-  "for" : {
-    "identifier" : {
-      "system" : "https://fhir.nhs.uk/Id/nhs-number",
-      "value" : "9459304130"
+  "for": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9459304130"
     },
-    "display" : "Jane Marie Anne Smith"
+    "display": "Jane Marie Anne Smith"
   },
-  "authoredOn" : "2024-03-26T06:26:00+00:00",
-  "requester" : {
-    "identifier" : {
-      "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
-      "value" : "X26"
+  "authoredOn": "2024-03-26T06:26:00+00:00",
+  "requester": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "X26"
     },
-    "display" : "NHS ENGLAND"
+    "display": "NHS ENGLAND"
   },
-  "owner" : {
-    "identifier" : {
-      "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
-      "value" : "Y12345"
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "Y12345"
     },
-    "display" : "A SURGERY"
+    "display": "A SURGERY"
   },
-  "note" : [
+  "note": [
     {
       "time": "2024-10-07T15:07:55.495Z",
       "authorReference": {
@@ -58,53 +58,53 @@
       "text": "Please verify the national proxy request for from Jayne Smith to access Jane Marie Anne Smith records. Relationship is MOTHER"
     }
   ],
-  "input" : [
+  "input": [
     {
-      "type" : {
-        "coding" : [
+      "type": {
+        "coding": [
           {
-            "system" : "https://fhir.nhs.uk/England/NationalProxy",
-            "code" : "Consent"
+            "system": "https://fhir.nhs.uk/England/NationalProxy",
+            "code": "Consent"
           }
         ]
       },
-      "valueReference" : {
-        "reference" : "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/Consent-Consent-national-proxy-proposed",
-        "type" : "Consent"
+      "valueReference": {
+        "reference": "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/Consent-Consent-national-proxy-proposed",
+        "type": "Consent"
       }
     },
     {
-      "type" : {
-        "coding" : [
+      "type": {
+        "coding": [
           {
-            "system" : "https://fhir.nhs.uk/England/NationalProxy",
-            "code" : "Proxy"
+            "system": "https://fhir.nhs.uk/England/NationalProxy",
+            "code": "Proxy"
           }
         ]
       },
-      "valueReference" : {
-        "reference" : "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/RelatedPerson-RelatedPerson-NHS-9100000009",
-        "type" : "RelatedPerson"
+      "valueReference": {
+        "reference": "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/RelatedPerson-RelatedPerson-NHS-9100000009",
+        "type": "RelatedPerson"
       }
     }
   ],
-  "output" : [
+  "output": [
     {
-      "type" : {
-        "coding" : [
+      "type": {
+        "coding": [
           {
-            "system" : "https://fhir.nhs.uk/England/NationalProxy",
-            "code" : "decision"
+            "system": "https://fhir.nhs.uk/England/NationalProxy",
+            "code": "decision"
           }
         ]
       },
-      "valueCodeableConcept" : {
-        "coding": 
+      "valueCodeableConcept": {
+        "coding": [
           {
-            "system" : "https://fhir.nhs.uk/England/NationalProxyConsentStatus",
-            "code" : "proxy-approved"
-          
-        }
+            "system": "https://fhir.nhs.uk/England/NationalProxyConsentStatus",
+            "code": "proxy-approved"
+          }
+        ]
       }
     }
   ]
