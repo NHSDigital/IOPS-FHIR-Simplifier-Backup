@@ -54,15 +54,33 @@
   <span class="status active">active</span>
 </li>
 
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Healthcare-Worker-Requirements">England-Healthcare-Worker-Requirements</a>
+  0.0.1-current
+  2024-10-08
+  <span class="status draft">draft</span>
+</li>
+
 <li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-MCED-Requirements">England-MCED-Requirements</a>
   0.0.1
   2024-01-23
   <span class="status draft">draft</span>
 </li>
 
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/CapabilityStatement-England-NationalProxyRequirements">CapabilityStatement-England-NationalProxyRequirements</a>
+  0.0.1-current
+  2024-10-08
+  <span class="status draft">draft</span>
+</li>
+
 <li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-ODS-Requirements">England-ODS-Requirements</a>
   0.0.5
   2024-09-17
+  <span class="status draft">draft</span>
+</li>
+
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/CapabilityStatement-England-PDSRelatedPersonRequirements">CapabilityStatement-England-PDSRelatedPersonRequirements</a>
+  0.0.1-current
+  2024-10-08
   <span class="status draft">draft</span>
 </li>
 

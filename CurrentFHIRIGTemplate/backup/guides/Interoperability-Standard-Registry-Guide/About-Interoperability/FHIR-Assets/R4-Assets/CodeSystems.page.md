@@ -78,6 +78,12 @@
   <span class="status draft">draft</span>
 </li>
 
+<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/CodeSystem-England-JobRoleCode">England-JobRoleCode</a>
+  0.0.1
+  2024-10-26
+  <span class="status draft">draft</span>
+</li>
+
 <li class="nhsengland"><a href="https://simplifier.net/nhs-england-implementation-guide/CodeSystem-England-MessageEventsBARS">England-MessageEventsBARS</a>
   1.0.0
   2024-06-14
