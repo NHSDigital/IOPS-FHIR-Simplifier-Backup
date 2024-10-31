@@ -16,7 +16,7 @@ Mapped to Condition and Observation resources linked to the patient. The primary
 |Date of diagnosis|Condition.recordedDate|DG1-5|The patient's date of diagnosis.|
 |Age at disease onset|Condition.onsetAge|PRB-16, note not included within OML message|The age when a change in patients' health was first noted in line with suspected diagnosis.|
 |Known/suspected disease|Condition.verificationStatus|DG1-6|Disease a patient is believed, known to have, or be at risk of developing. |
-|Phenotypic details (Many)|Condition.code with HPO system|Additional DG1 segments (DG1-3)|The HPO (or alternative ontology as appropriate) term names for the observable disease traits.|
+|Phenotypic details (Many)|Observation.code with HPO system|Additional OBX segments|The HPO (or alternative ontology as appropriate) term names for the observable disease traits.|
 |Symptoms at onset|Condition.evidence.code|Separate DG1 with DG1-17=S|The patient's symptoms at onset.|
 |Disease penetrance|Observation.code = 86426007 or 87006007|OBX segments with appropriate SNOMED CT codes|Confirms if all individuals with a disease show clinical symptoms or if there are carriers who do not.|
 |Has multiple tumours|Inferred through multiple Condition.bodySite entries|Multiple DG1 segments (bodySite for condition not in scope for HL7v2)|Does the patient have multiple tumours.|

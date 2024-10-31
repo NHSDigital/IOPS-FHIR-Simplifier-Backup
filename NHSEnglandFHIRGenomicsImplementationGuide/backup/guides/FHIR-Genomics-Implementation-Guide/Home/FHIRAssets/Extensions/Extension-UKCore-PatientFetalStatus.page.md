@@ -1,6 +1,7 @@
 ---
 subject: http://hl7.org/fhir/6.0/StructureDefinition/extension-Patient.fetalStatus
 issue: Extension-UKCore-PatientFetalStatus
+example: 
 expand: yes
 ---
 
@@ -21,7 +22,7 @@ Context of Use
 {{page:Home-FHIRAssets-Extensions-ExtensionTemplate}}
 
 <div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/ProfilesandExtensions/ExtensionLibrary?version=current#Extension-UKCore-PatientFetalStatus' target="_blank">Propose a change to {{variable:issue}} </a></h4>
+{{page:Home-FeedbackTemplate-FeedbackLink}}
 </div>
 
 ---

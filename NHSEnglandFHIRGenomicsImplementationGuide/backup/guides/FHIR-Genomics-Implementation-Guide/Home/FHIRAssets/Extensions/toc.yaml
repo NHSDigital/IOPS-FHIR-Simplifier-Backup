@@ -1,15 +1,15 @@
 - name: Index
   filename: Index.page.md
-- name: Genomic-AdditionalContact
-  filename: Genomic-AdditionalContact.page.md
-- name: Genomic-Condition-BodyStructure
-  filename: Genomic-Condition-BodyStructure.page.md
-- name: Genomic-DiagnosticReport-MediaLink
-  filename: Genomic-DiagnosticReport-MediaLink.page.md
-- name: Extension-Genomic-Coverage
-  filename: Extension-Genomic-Coverage.page.md
-- name: Genomic-NHSNumber-Unavailable-Reason
-  filename: Genomic-NHSNumber-Unavailable-Reason.page.md
+- name: Extension-UKCore-AdditionalContact
+  filename: Extension-UKCore-AdditionalContact.page.md
+- name: Extension-UKCore-ConditionBodyStructure
+  filename: Extension-UKCore-ConditionBodyStructure.page.md
+- name: Extension-UKCore-DiagnosticReportMediaLink
+  filename: Extension-UKCore-DiagnosticReportMediaLink.page.md
+- name: Extension-UKCore-Coverage
+  filename: Extension-UKCore-Coverage.page.md
+- name: Extension-UKCore-NHSNumberUnavailableReason
+  filename: Extension-UKCore-NHSNumberUnavailableReason.page.md
 - name: Extension-UKCore-PatientFetalStatus
   filename: Extension-UKCore-PatientFetalStatus.page.md
 - name: Extension-UKCore-PriorityReason

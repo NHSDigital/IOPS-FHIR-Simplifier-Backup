@@ -1,8 +1,1 @@
-<fql output="inline" delimiter="">
-select
-    Link: {
-        text: 'Report issue for ' + %issue,
-        href: 'https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/' + %issue + '/~issues?status=AllStatuses&level=File'
-    }
-group by Link
-</fql>
+<h4><a href='https://simplifier.net/HL7FHIRUKCoreR4/{{variable:issue}}/~issues?level=File' target="_blank">Propose a change to {{variable:issue}} </a></h4>
