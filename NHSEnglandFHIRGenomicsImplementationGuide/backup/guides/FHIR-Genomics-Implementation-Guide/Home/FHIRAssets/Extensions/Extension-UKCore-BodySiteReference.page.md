@@ -25,7 +25,7 @@ Context of Use
 
 
 <div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-BodySiteReference/~issues?level=File' target="_blank">Propose a change to {{variable:issue}} </a></h4>
+{{page:Home-FeedbackTemplate-FeedbackLink}}
 </div>
 
 ---
