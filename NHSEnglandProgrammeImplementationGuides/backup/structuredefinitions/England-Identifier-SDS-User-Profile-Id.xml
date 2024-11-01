@@ -17,10 +17,8 @@
     </telecom>
   </contact>
   <purpose value="This documents NHS England Data Dictionary and HL7 definitions" />
-  <description value="In NHS Englands Spine Directory Service this is the uniqueIdentifier in the nhsOrgPerson and nhsOrgPersonRole object (confirm this is true).
-This
-MISSING formal definition of this type
-
+  <description value="In NHS Englands Spine Directory Service this is the uniqueIdentifier in the nhsOrgPerson and nhsOrgPersonRole object (confirm this is true).&#xD;&#xA;
+&#xD;&#xA;
 HL7 v3/OID: 1.2.826.0.1285.0.2.0.67" />
   <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <fhirVersion value="4.0.1" />
@@ -33,7 +31,7 @@ HL7 v3/OID: 1.2.826.0.1285.0.2.0.67" />
     <element id="Identifier.system">
       <path value="Identifier.system" />
       <min value="1" />
-      <patternUri value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+      <fixedUri value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
     </element>
     <element id="Identifier.value">
       <path value="Identifier.value" />
