@@ -19,12 +19,12 @@
   </contact>
 
   <description
-               value="In NHS Englands Spine Directory Service this is the uid in the nhsPerson object.
-
-This is also [SmartCard UUID](https://digital.nhs.uk/services/care-identity-service/smartcard-and-authentication-users)
-
-MISSING formal definition of this type
-
+               value="In NHS Englands Spine Directory Service this is the uid in the nhsPerson object.&#xD;&#xA;
+&#xD;&#xA;
+This is also [SmartCard UUID](https://digital.nhs.uk/services/care-identity-service/smartcard-and-authentication-users)&#xD;&#xA;
+&#xD;&#xA;
+MISSING formal definition of this type&#xD;&#xA;
+&#xD;&#xA;
 HL7 v3/OID: 1.2.826.0.1285.0.2.0.65" />
 
   <purpose value="This documents NHS England Data Dictionary and HL7 definitions" />
@@ -39,7 +39,7 @@ HL7 v3/OID: 1.2.826.0.1285.0.2.0.65" />
     <element id="Identifier.system">
       <path value="Identifier.system" />
       <min value="1" />
-      <patternUri value="https://fhir.nhs.uk/Id/sds-user-id" />
+      <fixedUri value="https://fhir.nhs.uk/Id/sds-user-id" />
     </element>
     <element id="Identifier.value">
       <path value="Identifier.value" />
