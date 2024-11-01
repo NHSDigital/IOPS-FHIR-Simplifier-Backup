@@ -42,37 +42,37 @@
 <div class="status-container">
 <ul>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Extension-OrganisationRole-ActiveRoleCode">England-Extension-OrganisationRole-ActiveRoleCode</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-Extension-OrganisationRole-ActiveRoleCode">England-Extension-OrganisationRole-ActiveRoleCode</a>
   0.0.2
   2024-02-14
   <span class="status draft">draft</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Extension-OrganisationRole-RoleCode">England-Extension-OrganisationRole-RoleCode</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-Extension-OrganisationRole-RoleCode">England-Extension-OrganisationRole-RoleCode</a>
   0.0.2
   2024-02-14
   <span class="status draft">draft</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Extension-TypedDateTime-LastChangeDate">England-Extension-TypedDateTime-LastChangeDate</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-Extension-TypedDateTime-LastChangeDate">England-Extension-TypedDateTime-LastChangeDate</a>
   0.0.2
   2024-02-14
   <span class="status draft">draft</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-FlagCategory">England-FlagCategory</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-FlagCategory">England-FlagCategory</a>
   0.4.0
   2024-02-14
   <span class="status active">active</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-FlagCode">England-FlagCode</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-FlagCode">England-FlagCode</a>
   0.1.0
   2024-02-14
   <span class="status draft">draft</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-FlagDetail">England-FlagDetail</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-FlagDetail">England-FlagDetail</a>
   0.4.0
   2024-02-14
   <span class="status active">active</span>

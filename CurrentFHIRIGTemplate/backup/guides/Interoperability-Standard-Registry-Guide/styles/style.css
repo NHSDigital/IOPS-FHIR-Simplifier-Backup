@@ -835,3 +835,63 @@ li {
 .retired {
     background-color: #F44336; /* Red */
 }
+
+/* style for FHIR Guides */
+.project-banner {
+  background-color: #005EB8; /* Banner color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.project-banner .description {
+  font-size: 0.9em;
+  color: #f0f0f0; /* Lighter color for description */
+  font-weight: normal;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Hover effect */
+.project-banner:hover {
+  color: #ffdd57; /* Change color on hover */
+  text-decoration: underline;
+}
+
+.project-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.child-title {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  text-decoration: none;
+  color: #333;
+}
+
+.child-title:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.9em;
+  color: #666;
+}
