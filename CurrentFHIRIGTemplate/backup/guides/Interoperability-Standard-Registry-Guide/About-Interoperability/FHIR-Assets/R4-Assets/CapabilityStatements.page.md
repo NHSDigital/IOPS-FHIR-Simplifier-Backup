@@ -48,55 +48,55 @@
   <span class="status active">active</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-FHIRExamples-Conformance">England-FHIRExamples-Conformance</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-FHIRExamples-Conformance">England-FHIRExamples-Conformance</a>
   3.2.0
   2022-12-16T00:00:00+00:00
   <span class="status active">active</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Healthcare-Worker-Requirements">England-Healthcare-Worker-Requirements</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-Healthcare-Worker-Requirements">England-Healthcare-Worker-Requirements</a>
   0.0.1-current
   2024-10-08
   <span class="status draft">draft</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-MCED-Requirements">England-MCED-Requirements</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-MCED-Requirements">England-MCED-Requirements</a>
   0.0.1
   2024-01-23
   <span class="status draft">draft</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/CapabilityStatement-England-NationalProxyRequirements">CapabilityStatement-England-NationalProxyRequirements</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/CapabilityStatement-England-NationalProxyRequirements">CapabilityStatement-England-NationalProxyRequirements</a>
   0.0.1-current
   2024-10-08
   <span class="status draft">draft</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-ODS-Requirements">England-ODS-Requirements</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-ODS-Requirements">England-ODS-Requirements</a>
   0.0.5
   2024-09-17
   <span class="status draft">draft</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/CapabilityStatement-England-PDSRelatedPersonRequirements">CapabilityStatement-England-PDSRelatedPersonRequirements</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/CapabilityStatement-England-PDSRelatedPersonRequirements">CapabilityStatement-England-PDSRelatedPersonRequirements</a>
   0.0.1-current
   2024-10-08
   <span class="status draft">draft</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-Pathology-Requirements">England-Pathology-Requirements</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-Pathology-Requirements">England-Pathology-Requirements</a>
   0.0.2
   2024-03-20
   <span class="status draft">draft</span>
 </li>
 
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-programme-implementation-guides/England-PatientFlag-Server-Requirements">England-PatientFlag-Server-Requirements</a>
+<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-PatientFlag-Server-Requirements">England-PatientFlag-Server-Requirements</a>
   0.1.0
   2024-09-20
   <span class="status draft">draft</span>
 </li>
 
-<li class="ukcore"><a href="https://simplifier.net/hl7fhirukcorer4/apim-conformance">apim-conformance</a>
+<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/apim-conformance">apim-conformance</a>
   3.2.0
   2022-12-16T00:00:00+00:00
   <span class="status active">active</span>
