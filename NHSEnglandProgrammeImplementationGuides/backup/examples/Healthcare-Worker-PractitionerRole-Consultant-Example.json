@@ -12,7 +12,7 @@
     "start": "2024-09-30"
   },
   "practitioner": {
-    "reference": "https://directoryservice.example.nhs.uk/FHIR/R4/Practitioner/Healthcare-Worker-Practitioner-Consultant-Example",
+    "reference": "https://directoryservice.example.nhs.uk/FHIR/R4/Practitioner/3415870202",
     "identifier": {
       "system": "https://fhir.hl7.org.uk/Id/gmc-number",
       "value": "C4428981"
