@@ -179,6 +179,7 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:Example-UKCore-Extension-RepeatInformation}}</li>
 <li>{{pagelink:Example-UKCore-Extension-ResidentialStatus}}</li>
 <li>{{pagelink:Example-UKCore-Extension-SampleCategory}}</li>
+<li>{{pagelink:Example-UKCore-Extension-SampleCategory-PheobeSmitham}}</li>
 <li>{{pagelink:Example-UKCore-Extension-SourceOfServiceRequest}}</li>
 <li>{{pagelink:Example-UKCore-Extension-SpecialHandling}}</li>
 <li>{{pagelink:Example-UKCore-Extension-TriggeredBy}}</li>

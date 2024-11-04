@@ -17,6 +17,9 @@ issue: Extension-UKCore-SampleCategory
   <b>Sample Category</b>- An example to illustrate the extension to show the Genomics classification of a sample.<br>
 {{pagelink:Example-UKCore-Extension-SampleCategory}}
 <br><br>
+ <b>Germline Specimen Sample</b>- An example to illustrate the extension to show the classification of Germline Specimen Sample.<br>
+{{pagelink:Example-UKCore-Extension-SampleCategory-PheobeSmitham}} 
+<br><br>
 </div>
 
 <h3 id="guidance-samplecategory">Extension Specific Guidance</h3>
