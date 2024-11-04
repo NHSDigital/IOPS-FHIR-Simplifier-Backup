@@ -1,953 +1,1214 @@
-<label>
-    <input type="checkbox" id="ukcore-checkbox" checked>
-    Show UKCore Items
-    </label>
-    <br>
-    <label>
-    <input type="checkbox" id="nhsengland-checkbox" checked>
-    Show NHSEngland Items
-    </label>
-
-    
-<script>
-    const ukcoreCheckbox = document.getElementById('ukcore-checkbox');
-    const nhsenglandCheckbox = document.getElementById('nhsengland-checkbox');
-
-    ukcoreCheckbox.addEventListener('change', function() {
-        const ukcoreItems = document.querySelectorAll('.ukcore');
-        ukcoreItems.forEach(item => {
-        if (ukcoreCheckbox.checked) {
-            item.classList.remove('hidden');
-        } else {
-            item.classList.add('hidden');
-        }
-        });
-    });
-
-    nhsenglandCheckbox.addEventListener('change', function() {
-        const nhsenglandItems = document.querySelectorAll('.nhsengland');
-        nhsenglandItems.forEach(item => {
-        if (nhsenglandCheckbox.checked) {
-            item.classList.remove('hidden');
-        } else {
-            item.classList.add('hidden');
-        }
-        });
-    });
-    </script>
-
-    
 ## ValueSets
 
-<div class="status-container">
-<ul>
 
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-BodyStructure">England-BodyStructure</a>
-  0.0.2
-  2024-06-18
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-ChildProtectionPlan">England-ChildProtectionPlan</a>
-  1.0.0
-  2023-11-09
-  <span class="status active">active</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagCategoryPatient">England-FlagCategoryPatient</a>
-  0.1.0
-  2024-02-14
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagCategoryProgramme">England-FlagCategoryProgramme</a>
-  0.3.7
-  2024-02-14
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagCodeProgramme">England-FlagCodeProgramme</a>
-  0.3.7
-  2024-02-14
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagCodeRA">England-FlagCodeRA</a>
-  0.1.0
-  2024-02-14
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagConditionCategory">England-FlagConditionCategory</a>
-  0.3.7
-  2024-02-14
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagConditionCode">England-FlagConditionCode</a>
-  0.3.7
-  2024-02-14
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagProvenanceRole">England-FlagProvenanceRole</a>
-  0.3.8
-  2024-06-25
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-FlagRemovalReason">England-FlagRemovalReason</a>
-  1.0.0
-  2023-11-09
-  <span class="status active">active</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-JobRoleCode">England-JobRoleCode</a>
-  0.0.1-current
-  2024-10-25T07:31:19+00:00
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-MCEDSignalResult">England-MCEDSignalResult</a>
-  0.0.1
-  2024-02-27
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-OrganisationRole">England-OrganisationRole</a>
-  1.0.0
-  2023-12-07
-  <span class="status active">active</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-PDSRelationshipType">England-PDSRelationshipType</a>
-  0.0.1
-  2024-10-25T07:31:19+00:00
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-PeriodType">England-PeriodType</a>
-  1.0.0
-  2023-12-07
-  <span class="status active">active</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-TaskCode">England-TaskCode</a>
-  0.0.1-current
-  2024-10-25T07:31:19+00:00
-  <span class="status draft">draft</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-TypedDateTime">England-TypedDateTime</a>
-  1.0.0
-  2023-12-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ACVPU">UKCore-ACVPU</a>
-  2.1.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AddressKeyType">UKCore-AddressKeyType</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AdmissionMethod">UKCore-AdmissionMethod</a>
-  2.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AlcoholConsumption">UKCore-AlcoholConsumption</a>
-  0.0.1
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AllergyCode">UKCore-AllergyCode</a>
-  2.2.0
-  2022-08-26
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AllergyExposureRoute">UKCore-AllergyExposureRoute</a>
-  2.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AllergyManifestation">UKCore-AllergyManifestation</a>
-  2.2.0
-  2022-08-26
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AllergySubstance">UKCore-AllergySubstance</a>
-  2.2.0
-  2022-08-26
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AppointmentReasonCode">UKCore-AppointmentReasonCode</a>
-  1.0.0
-  2022-05-20
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BMI">UKCore-BMI</a>
-  1.0.1
-  2024-02-27
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BiopsyState">UKCore-BiopsyState</a>
-  2.1.0
-  2023-10-07
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BirthSex">UKCore-BirthSex</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodGlucose">UKCore-BloodGlucose</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure">UKCore-BloodPressure</a>
-  1.0.1
-  2024-02-27
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-Average">UKCore-BloodPressure-Average</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-AverageDiastolic">UKCore-BloodPressure-AverageDiastolic</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-AverageSystolic">UKCore-BloodPressure-AverageSystolic</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-CuffSize">UKCore-BloodPressure-CuffSize</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-DeviceType">UKCore-BloodPressure-DeviceType</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-Diastolic">UKCore-BloodPressure-Diastolic</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-MeasurementMethod">UKCore-BloodPressure-MeasurementMethod</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-Systolic">UKCore-BloodPressure-Systolic</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BodyHeightMeasurements">UKCore-BodyHeightMeasurements</a>
-  1.0.1
-  2024-02-27
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BodyPosition">UKCore-BodyPosition</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BodySite">UKCore-BodySite</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BodyTemperature">UKCore-BodyTemperature</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BodyWeightMeasurements">UKCore-BodyWeightMeasurements</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-CareSettingType">UKCore-CareSettingType</a>
-  3.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-CompositionCategory">UKCore-CompositionCategory</a>
-  1.0.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-CompositionSectionCode">UKCore-CompositionSectionCode</a>
-  2.2.0
-  2023-08-03
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConditionCategory">UKCore-ConditionCategory</a>
-  2.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConditionCode">UKCore-ConditionCode</a>
-  2.2.0
-  2022-12-16
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConditionEpisode">UKCore-ConditionEpisode</a>
-  2.1.0
-  2022-12-16
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConditionEpisodicity">UKCore-ConditionEpisodicity</a>
-  2.2.0
-  2022-12-16
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConditionRelationship">UKCore-ConditionRelationship</a>
-  1.0.0
-  2023-04-28
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConsentException">UKCore-ConsentException</a>
-  0.0.1
-  2024-07-11
-  <span class="status draft">draft</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DateTimeType">UKCore-DateTimeType</a>
-  2.1.0
-  2023-10-13
-  <span class="status draft">draft</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DeathNotificationStatus">UKCore-DeathNotificationStatus</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DeliveryChannel">UKCore-DeliveryChannel</a>
-  1.1.0
-  2022-05-20
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DeviceType">UKCore-DeviceType</a>
-  1.1.0
-  2022-01-22
-  <span class="status draft">draft</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DischargeDestination">UKCore-DischargeDestination</a>
-  2.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DischargeMethod">UKCore-DischargeMethod</a>
-  2.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DocumentType">UKCore-DocumentType</a>
-  2.2.0
-  2022-12-16
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EarlyWarningSubScore">UKCore-EarlyWarningSubScore</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EarlyWarningTotalScore">UKCore-EarlyWarningTotalScore</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EmergencyCareDischargeStatus">UKCore-EmergencyCareDischargeStatus</a>
-  2.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EncounterLocationType">UKCore-EncounterLocationType</a>
-  1.0.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EncounterType">UKCore-EncounterType</a>
-  2.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EthnicCategory">UKCore-EthnicCategory</a>
-  2.2.0
-  2022-08-26
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-FindingCode">UKCore-FindingCode</a>
-  2.0.0
-  2023-04-28
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-FundingCategory">UKCore-FundingCategory</a>
-  1.0.0
-  2023-04-28
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-GenomeSequencingCategory">UKCore-GenomeSequencingCategory</a>
-  1.0.0
-  2023-04-28
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-HeadCircumferenceMeasurements">UKCore-HeadCircumferenceMeasurements</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-HeartRate">UKCore-HeartRate</a>
-  1.0.0
-  2024-07-11
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-HumanLanguage">UKCore-HumanLanguage</a>
-  2.2.0
-  2023-12-12
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ImmunizationAdministrationBodySite">UKCore-ImmunizationAdministrationBodySite</a>
-  1.0.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ImmunizationExplanationReason">UKCore-ImmunizationExplanationReason</a>
-  2.3.0
-  2023-02-14
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-InspiredOxygen">UKCore-InspiredOxygen</a>
-  2.1.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-LanguageAbilityMode">UKCore-LanguageAbilityMode</a>
-  2.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-LanguageAbilityProficiency">UKCore-LanguageAbilityProficiency</a>
-  2.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-LegalStatusClassification">UKCore-LegalStatusClassification</a>
-  1.0.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-LegalStatusContext">UKCore-LegalStatusContext</a>
-  1.0.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ListCode">UKCore-ListCode</a>
-  2.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ListEmptyReasonCode">UKCore-ListEmptyReasonCode</a>
-  2.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ListWarningCode">UKCore-ListWarningCode</a>
-  2.2.0
-  2022-12-16
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationAdministrationCategory">UKCore-MedicationAdministrationCategory</a>
-  1.0.0
-  2022-12-16
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationChangeStatus">UKCore-MedicationChangeStatus</a>
-  1.1.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationCode">UKCore-MedicationCode</a>
-  2.3.0
-  2022-12-16
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationDosageMethod">UKCore-MedicationDosageMethod</a>
-  1.0.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationDosageRoute">UKCore-MedicationDosageRoute</a>
-  2.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationForm">UKCore-MedicationForm</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationPrecondition">UKCore-MedicationPrecondition</a>
-  1.0.0
-  2023-04-28
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationPrescribingAgency">UKCore-MedicationPrescribingAgency</a>
-  2.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationPrescribingOrganization">UKCore-MedicationPrescribingOrganization</a>
-  1.1.0
-  2022-08-26
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationPrescribingOrganizationType">UKCore-MedicationPrescribingOrganizationType</a>
-  1.0.0
-  2022-08-26
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationRequestCategory">UKCore-MedicationRequestCategory</a>
-  1.1.2
-  2024-07-23
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationRequestCourseOfTherapy">UKCore-MedicationRequestCourseOfTherapy</a>
-  1.0.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationStatementCategory">UKCore-MedicationStatementCategory</a>
-  1.1.0
-  2022-12-16
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationSupplyType">UKCore-MedicationSupplyType</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationTradeFamily">UKCore-MedicationTradeFamily</a>
-  1.0.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MessageEvent">UKCore-MessageEvent</a>
-  2.2.0
-  2024-02-12
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MessageHeaderInstruction">UKCore-MessageHeaderInstruction</a>
-  1.0.0
-  2023-04-28
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-NHSNumberUnavailableReason">UKCore-NHSNumberUnavailableReason</a>
-  1.1.0
-  2024-06-14
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-NHSNumberVerificationStatus">UKCore-NHSNumberVerificationStatus</a>
-  2.2.0
-  2022-08-26
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ObservationMethod">UKCore-ObservationMethod</a>
-  2.0.0
-  2023-11-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ObservationType">UKCore-ObservationType</a>
-  2.0.0
-  2023-04-28
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ObservationVitalSignsType">UKCore-ObservationVitalSignsType</a>
-  1.1.0
-  2024-02-11
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ObservationVitalSignsValue">UKCore-ObservationVitalSignsValue</a>
-  1.0.0
-  2023-11-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OperationOutcomeIssueDetails">UKCore-OperationOutcomeIssueDetails</a>
-  1.1.0
-  2024-02-12
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OrganizationType">UKCore-OrganizationType</a>
-  1.0.0
-  2023-04-28
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OtherContactSystem">UKCore-OtherContactSystem</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OutcomeOfAttendance">UKCore-OutcomeOfAttendance</a>
-  2.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OverseasVisitorChargingCategory">UKCore-OverseasVisitorChargingCategory</a>
-  1.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OxygenSaturation">UKCore-OxygenSaturation</a>
-  1.0.0
-  2024-07-11
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables">UKCore-PathologyAndLaboratoryMedicineObservables</a>
-  1.0.0
-  2023-11-28
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures">UKCore-PathologyAndLaboratoryMedicineProcedures</a>
-  1.0.0
-  2023-11-28
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PeriodType">UKCore-PeriodType</a>
-  1.0.0
-  2023-10-13
-  <span class="status draft">draft</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PersonMaritalStatusCode">UKCore-PersonMaritalStatusCode</a>
-  2.3.0
-  2022-08-26
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PersonRelationshipType">UKCore-PersonRelationshipType</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PersonStatedGenderCode">UKCore-PersonStatedGenderCode</a>
-  2.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PracticeSettingCode">UKCore-PracticeSettingCode</a>
-  1.0.0
-  2022-08-26
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PractitionerRoleCode">UKCore-PractitionerRoleCode</a>
-  1.0.0
-  2022-08-26
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PreferredContactMethod">UKCore-PreferredContactMethod</a>
-  2.2.0
-  2023-10-09
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PreferredWrittenCommunicationFormat">UKCore-PreferredWrittenCommunicationFormat</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PrescriptionType">UKCore-PrescriptionType</a>
-  2.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ProblemSignificance">UKCore-ProblemSignificance</a>
-  1.0.0
-  2023-04-28
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ProcedureCode">UKCore-ProcedureCode</a>
-  2.2.0
-  2022-12-16
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-QuestionnaireQuestionCodes">UKCore-QuestionnaireQuestionCodes</a>
-  1.0.0
-  2024-02-12
-  <span class="status draft">draft</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ReasonImmunizationNotAdministered">UKCore-ReasonImmunizationNotAdministered</a>
-  2.2.0
-  2022-08-26
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-RecordingSetting">UKCore-RecordingSetting</a>
-  1.0.0
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ReligiousAffiliation">UKCore-ReligiousAffiliation</a>
-  2.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ReportCode">UKCore-ReportCode</a>
-  1.0.0
-  2023-04-28
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ReportCodeSnCT">UKCore-ReportCodeSnCT</a>
-  2.0.0
-  2023-04-28
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ResidentialStatus">UKCore-ResidentialStatus</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-RespirationRate">UKCore-RespirationRate</a>
-  1.1.0
-  2024-07-11
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SDSJobRoleName">UKCore-SDSJobRoleName</a>
-  2.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SampleCategory">UKCore-SampleCategory</a>
-  2.1.0
-  2023-04-28
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SampleState">UKCore-SampleState</a>
-  1.0.0
-  2024-10-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ServiceRequestMethod">UKCore-ServiceRequestMethod</a>
-  1.0.0
-  2022-05-20
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ServiceRequestReasonCode">UKCore-ServiceRequestReasonCode</a>
-  1.1.0
-  2022-12-16
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SourceOfAdmission">UKCore-SourceOfAdmission</a>
-  2.1.0
-  2022-01-07
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SourceOfServiceRequest">UKCore-SourceOfServiceRequest</a>
-  1.2.0
-  2024-07-11
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SpecimenBodySite">UKCore-SpecimenBodySite</a>
-  2.1.0
-  2023-04-28
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SpecimenType">UKCore-SpecimenType</a>
-  2.2.0
-  2023-04-28
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SubstanceOrProductAdministrationRoute">UKCore-SubstanceOrProductAdministrationRoute</a>
-  1.0.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-TobaccoConsumption">UKCore-TobaccoConsumption</a>
-  0.0.1
-  2023-09-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-TreatmentCategory">UKCore-TreatmentCategory</a>
-  2.0.0
-  2021-09-10
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-UnifiedTestList">UKCore-UnifiedTestList</a>
-  1.0.0
-  2023-11-28
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-VaccinationProcedure">UKCore-VaccinationProcedure</a>
-  2.1.0
-  2021-09-10
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-VaccinationProcedureSupplementary">UKCore-VaccinationProcedureSupplementary</a>
-  2.1.1
-  2023-12-12
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-VaccineCode">UKCore-VaccineCode</a>
-  2.2.0
-  2022-08-26
-  <span class="status active">active</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-VitalSignsObservationType">UKCore-VitalSignsObservationType</a>
-  2.0.1
-  2022-12-16
-  <span class="status retired">retired</span>
-</li>
-
-<li class="ukcore"><a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-VitalSignsObservationValue">UKCore-VitalSignsObservationValue</a>
-  2.0.0
-  2022-12-16
-  <span class="status retired">retired</span>
-</li>
-
-<li class="nhsengland"><a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-nhsdigital-message-events">nhsdigital-message-events</a>
-  1.0.12
-  <span class="status draft">draft</span>
-</li>
-
-</ul></div><br><br>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-BodyStructure" class="child-title">
+<div class="title">England-BodyStructure</div>
+<div class="description">
+  0.0.2 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-06-18 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-ChildProtectionPlan" class="child-title">
+<div class="title">England-ChildProtectionPlan</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-11-09 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagCategoryPatient" class="child-title">
+<div class="title">England-FlagCategoryPatient</div>
+<div class="description">
+  0.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-14 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagCategoryProgramme" class="child-title">
+<div class="title">England-FlagCategoryProgramme</div>
+<div class="description">
+  0.3.7 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-14 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagCodeProgramme" class="child-title">
+<div class="title">England-FlagCodeProgramme</div>
+<div class="description">
+  0.3.7 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-14 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagCodeRA" class="child-title">
+<div class="title">England-FlagCodeRA</div>
+<div class="description">
+  0.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-14 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagConditionCategory" class="child-title">
+<div class="title">England-FlagConditionCategory</div>
+<div class="description">
+  0.3.7 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-14 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagConditionCode" class="child-title">
+<div class="title">England-FlagConditionCode</div>
+<div class="description">
+  0.3.7 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-14 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-FlagProvenanceRole" class="child-title">
+<div class="title">England-FlagProvenanceRole</div>
+<div class="description">
+  0.3.8 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-06-25 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-FlagRemovalReason" class="child-title">
+<div class="title">England-FlagRemovalReason</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-11-09 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-JobRoleCode" class="child-title">
+<div class="title">England-JobRoleCode</div>
+<div class="description">
+  0.0.1-current &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-10-25T07:31:19+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-MCEDSignalResult" class="child-title">
+<div class="title">England-MCEDSignalResult</div>
+<div class="description">
+  0.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-27 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-OrganisationRole" class="child-title">
+<div class="title">England-OrganisationRole</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-12-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-PDSRelationshipType" class="child-title">
+<div class="title">England-PDSRelationshipType</div>
+<div class="description">
+  0.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-10-25T07:31:19+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-PeriodType" class="child-title">
+<div class="title">England-PeriodType</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-12-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/ValueSet-England-TaskCode" class="child-title">
+<div class="title">England-TaskCode</div>
+<div class="description">
+  0.0.1-current &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-10-25T07:31:19+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-England-TypedDateTime" class="child-title">
+<div class="title">England-TypedDateTime</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-12-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ACVPU" class="child-title">
+<div class="title">UKCore-ACVPU</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AddressKeyType" class="child-title">
+<div class="title">UKCore-AddressKeyType</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AdmissionMethod" class="child-title">
+<div class="title">UKCore-AdmissionMethod</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AlcoholConsumption" class="child-title">
+<div class="title">UKCore-AlcoholConsumption</div>
+<div class="description">
+  0.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AllergyCode" class="child-title">
+<div class="title">UKCore-AllergyCode</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AllergyExposureRoute" class="child-title">
+<div class="title">UKCore-AllergyExposureRoute</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AllergyManifestation" class="child-title">
+<div class="title">UKCore-AllergyManifestation</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AllergySubstance" class="child-title">
+<div class="title">UKCore-AllergySubstance</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AppointmentReasonCode" class="child-title">
+<div class="title">UKCore-AppointmentReasonCode</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-05-20 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BMI" class="child-title">
+<div class="title">UKCore-BMI</div>
+<div class="description">
+  1.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-27 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BiopsyState" class="child-title">
+<div class="title">UKCore-BiopsyState</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-10-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BirthSex" class="child-title">
+<div class="title">UKCore-BirthSex</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodGlucose" class="child-title">
+<div class="title">UKCore-BloodGlucose</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure" class="child-title">
+<div class="title">UKCore-BloodPressure</div>
+<div class="description">
+  1.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-27 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-Average" class="child-title">
+<div class="title">UKCore-BloodPressure-Average</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-AverageDiastolic" class="child-title">
+<div class="title">UKCore-BloodPressure-AverageDiastolic</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-AverageSystolic" class="child-title">
+<div class="title">UKCore-BloodPressure-AverageSystolic</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-CuffSize" class="child-title">
+<div class="title">UKCore-BloodPressure-CuffSize</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-DeviceType" class="child-title">
+<div class="title">UKCore-BloodPressure-DeviceType</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-Diastolic" class="child-title">
+<div class="title">UKCore-BloodPressure-Diastolic</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-MeasurementMethod" class="child-title">
+<div class="title">UKCore-BloodPressure-MeasurementMethod</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BloodPressure-Systolic" class="child-title">
+<div class="title">UKCore-BloodPressure-Systolic</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BodyHeightMeasurements" class="child-title">
+<div class="title">UKCore-BodyHeightMeasurements</div>
+<div class="description">
+  1.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-27 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BodyPosition" class="child-title">
+<div class="title">UKCore-BodyPosition</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BodySite" class="child-title">
+<div class="title">UKCore-BodySite</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BodyTemperature" class="child-title">
+<div class="title">UKCore-BodyTemperature</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-BodyWeightMeasurements" class="child-title">
+<div class="title">UKCore-BodyWeightMeasurements</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-CareSettingType" class="child-title">
+<div class="title">UKCore-CareSettingType</div>
+<div class="description">
+  3.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-CompositionCategory" class="child-title">
+<div class="title">UKCore-CompositionCategory</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-CompositionSectionCode" class="child-title">
+<div class="title">UKCore-CompositionSectionCode</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-08-03 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConditionCategory" class="child-title">
+<div class="title">UKCore-ConditionCategory</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConditionCode" class="child-title">
+<div class="title">UKCore-ConditionCode</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConditionEpisode" class="child-title">
+<div class="title">UKCore-ConditionEpisode</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConditionEpisodicity" class="child-title">
+<div class="title">UKCore-ConditionEpisodicity</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConditionRelationship" class="child-title">
+<div class="title">UKCore-ConditionRelationship</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ConsentException" class="child-title">
+<div class="title">UKCore-ConsentException</div>
+<div class="description">
+  0.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-07-11 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DateTimeType" class="child-title">
+<div class="title">UKCore-DateTimeType</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-10-13 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DeathNotificationStatus" class="child-title">
+<div class="title">UKCore-DeathNotificationStatus</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DeliveryChannel" class="child-title">
+<div class="title">UKCore-DeliveryChannel</div>
+<div class="description">
+  1.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-05-20 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DeviceType" class="child-title">
+<div class="title">UKCore-DeviceType</div>
+<div class="description">
+  1.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-22 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DischargeDestination" class="child-title">
+<div class="title">UKCore-DischargeDestination</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DischargeMethod" class="child-title">
+<div class="title">UKCore-DischargeMethod</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-DocumentType" class="child-title">
+<div class="title">UKCore-DocumentType</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EarlyWarningSubScore" class="child-title">
+<div class="title">UKCore-EarlyWarningSubScore</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EarlyWarningTotalScore" class="child-title">
+<div class="title">UKCore-EarlyWarningTotalScore</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EmergencyCareDischargeStatus" class="child-title">
+<div class="title">UKCore-EmergencyCareDischargeStatus</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EncounterLocationType" class="child-title">
+<div class="title">UKCore-EncounterLocationType</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EncounterType" class="child-title">
+<div class="title">UKCore-EncounterType</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-EthnicCategory" class="child-title">
+<div class="title">UKCore-EthnicCategory</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-FindingCode" class="child-title">
+<div class="title">UKCore-FindingCode</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-FundingCategory" class="child-title">
+<div class="title">UKCore-FundingCategory</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-GenomeSequencingCategory" class="child-title">
+<div class="title">UKCore-GenomeSequencingCategory</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-HeadCircumferenceMeasurements" class="child-title">
+<div class="title">UKCore-HeadCircumferenceMeasurements</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-HeartRate" class="child-title">
+<div class="title">UKCore-HeartRate</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-07-11 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-HumanLanguage" class="child-title">
+<div class="title">UKCore-HumanLanguage</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-12-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ImmunizationAdministrationBodySite" class="child-title">
+<div class="title">UKCore-ImmunizationAdministrationBodySite</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ImmunizationExplanationReason" class="child-title">
+<div class="title">UKCore-ImmunizationExplanationReason</div>
+<div class="description">
+  2.3.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-02-14 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-InspiredOxygen" class="child-title">
+<div class="title">UKCore-InspiredOxygen</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-LanguageAbilityMode" class="child-title">
+<div class="title">UKCore-LanguageAbilityMode</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-LanguageAbilityProficiency" class="child-title">
+<div class="title">UKCore-LanguageAbilityProficiency</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-LegalStatusClassification" class="child-title">
+<div class="title">UKCore-LegalStatusClassification</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-LegalStatusContext" class="child-title">
+<div class="title">UKCore-LegalStatusContext</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ListCode" class="child-title">
+<div class="title">UKCore-ListCode</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ListEmptyReasonCode" class="child-title">
+<div class="title">UKCore-ListEmptyReasonCode</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ListWarningCode" class="child-title">
+<div class="title">UKCore-ListWarningCode</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationAdministrationCategory" class="child-title">
+<div class="title">UKCore-MedicationAdministrationCategory</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationChangeStatus" class="child-title">
+<div class="title">UKCore-MedicationChangeStatus</div>
+<div class="description">
+  1.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationCode" class="child-title">
+<div class="title">UKCore-MedicationCode</div>
+<div class="description">
+  2.3.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationDosageMethod" class="child-title">
+<div class="title">UKCore-MedicationDosageMethod</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationDosageRoute" class="child-title">
+<div class="title">UKCore-MedicationDosageRoute</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationForm" class="child-title">
+<div class="title">UKCore-MedicationForm</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationPrecondition" class="child-title">
+<div class="title">UKCore-MedicationPrecondition</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationPrescribingAgency" class="child-title">
+<div class="title">UKCore-MedicationPrescribingAgency</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationPrescribingOrganization" class="child-title">
+<div class="title">UKCore-MedicationPrescribingOrganization</div>
+<div class="description">
+  1.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationPrescribingOrganizationType" class="child-title">
+<div class="title">UKCore-MedicationPrescribingOrganizationType</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationRequestCategory" class="child-title">
+<div class="title">UKCore-MedicationRequestCategory</div>
+<div class="description">
+  1.1.2 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-07-23 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationRequestCourseOfTherapy" class="child-title">
+<div class="title">UKCore-MedicationRequestCourseOfTherapy</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationStatementCategory" class="child-title">
+<div class="title">UKCore-MedicationStatementCategory</div>
+<div class="description">
+  1.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationSupplyType" class="child-title">
+<div class="title">UKCore-MedicationSupplyType</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MedicationTradeFamily" class="child-title">
+<div class="title">UKCore-MedicationTradeFamily</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MessageEvent" class="child-title">
+<div class="title">UKCore-MessageEvent</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-MessageHeaderInstruction" class="child-title">
+<div class="title">UKCore-MessageHeaderInstruction</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-NHSNumberUnavailableReason" class="child-title">
+<div class="title">UKCore-NHSNumberUnavailableReason</div>
+<div class="description">
+  1.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-06-14 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-NHSNumberVerificationStatus" class="child-title">
+<div class="title">UKCore-NHSNumberVerificationStatus</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ObservationMethod" class="child-title">
+<div class="title">UKCore-ObservationMethod</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-11-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ObservationType" class="child-title">
+<div class="title">UKCore-ObservationType</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ObservationVitalSignsType" class="child-title">
+<div class="title">UKCore-ObservationVitalSignsType</div>
+<div class="description">
+  1.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-11 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ObservationVitalSignsValue" class="child-title">
+<div class="title">UKCore-ObservationVitalSignsValue</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-11-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OperationOutcomeIssueDetails" class="child-title">
+<div class="title">UKCore-OperationOutcomeIssueDetails</div>
+<div class="description">
+  1.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OrganizationType" class="child-title">
+<div class="title">UKCore-OrganizationType</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OtherContactSystem" class="child-title">
+<div class="title">UKCore-OtherContactSystem</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OutcomeOfAttendance" class="child-title">
+<div class="title">UKCore-OutcomeOfAttendance</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OverseasVisitorChargingCategory" class="child-title">
+<div class="title">UKCore-OverseasVisitorChargingCategory</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-OxygenSaturation" class="child-title">
+<div class="title">UKCore-OxygenSaturation</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-07-11 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables" class="child-title">
+<div class="title">UKCore-PathologyAndLaboratoryMedicineObservables</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-11-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures" class="child-title">
+<div class="title">UKCore-PathologyAndLaboratoryMedicineProcedures</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-11-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PeriodType" class="child-title">
+<div class="title">UKCore-PeriodType</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-10-13 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PersonMaritalStatusCode" class="child-title">
+<div class="title">UKCore-PersonMaritalStatusCode</div>
+<div class="description">
+  2.3.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PersonRelationshipType" class="child-title">
+<div class="title">UKCore-PersonRelationshipType</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PersonStatedGenderCode" class="child-title">
+<div class="title">UKCore-PersonStatedGenderCode</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PracticeSettingCode" class="child-title">
+<div class="title">UKCore-PracticeSettingCode</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PractitionerRoleCode" class="child-title">
+<div class="title">UKCore-PractitionerRoleCode</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PreferredContactMethod" class="child-title">
+<div class="title">UKCore-PreferredContactMethod</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-10-09 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PreferredWrittenCommunicationFormat" class="child-title">
+<div class="title">UKCore-PreferredWrittenCommunicationFormat</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-PrescriptionType" class="child-title">
+<div class="title">UKCore-PrescriptionType</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ProblemSignificance" class="child-title">
+<div class="title">UKCore-ProblemSignificance</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ProcedureCode" class="child-title">
+<div class="title">UKCore-ProcedureCode</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-QuestionnaireQuestionCodes" class="child-title">
+<div class="title">UKCore-QuestionnaireQuestionCodes</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-02-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ReasonImmunizationNotAdministered" class="child-title">
+<div class="title">UKCore-ReasonImmunizationNotAdministered</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-RecordingSetting" class="child-title">
+<div class="title">UKCore-RecordingSetting</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ReligiousAffiliation" class="child-title">
+<div class="title">UKCore-ReligiousAffiliation</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ReportCode" class="child-title">
+<div class="title">UKCore-ReportCode</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ReportCodeSnCT" class="child-title">
+<div class="title">UKCore-ReportCodeSnCT</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ResidentialStatus" class="child-title">
+<div class="title">UKCore-ResidentialStatus</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-RespirationRate" class="child-title">
+<div class="title">UKCore-RespirationRate</div>
+<div class="description">
+  1.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-07-11 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SDSJobRoleName" class="child-title">
+<div class="title">UKCore-SDSJobRoleName</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SampleCategory" class="child-title">
+<div class="title">UKCore-SampleCategory</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SampleState" class="child-title">
+<div class="title">UKCore-SampleState</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-10-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ServiceRequestMethod" class="child-title">
+<div class="title">UKCore-ServiceRequestMethod</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-05-20 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ServiceRequestReasonCode" class="child-title">
+<div class="title">UKCore-ServiceRequestReasonCode</div>
+<div class="description">
+  1.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SourceOfAdmission" class="child-title">
+<div class="title">UKCore-SourceOfAdmission</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-01-07 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SourceOfServiceRequest" class="child-title">
+<div class="title">UKCore-SourceOfServiceRequest</div>
+<div class="description">
+  1.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-07-11 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SpecimenBodySite" class="child-title">
+<div class="title">UKCore-SpecimenBodySite</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SpecimenType" class="child-title">
+<div class="title">UKCore-SpecimenType</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-04-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-SubstanceOrProductAdministrationRoute" class="child-title">
+<div class="title">UKCore-SubstanceOrProductAdministrationRoute</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-TobaccoConsumption" class="child-title">
+<div class="title">UKCore-TobaccoConsumption</div>
+<div class="description">
+  0.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-09-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-TreatmentCategory" class="child-title">
+<div class="title">UKCore-TreatmentCategory</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-UnifiedTestList" class="child-title">
+<div class="title">UKCore-UnifiedTestList</div>
+<div class="description">
+  1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-11-28 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-VaccinationProcedure" class="child-title">
+<div class="title">UKCore-VaccinationProcedure</div>
+<div class="description">
+  2.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2021-09-10 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-VaccinationProcedureSupplementary" class="child-title">
+<div class="title">UKCore-VaccinationProcedureSupplementary</div>
+<div class="description">
+  2.1.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-12-12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-VaccineCode" class="child-title">
+<div class="title">UKCore-VaccineCode</div>
+<div class="description">
+  2.2.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-08-26 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-VitalSignsObservationType" class="child-title">
+<div class="title">UKCore-VitalSignsObservationType</div>
+<div class="description">
+  2.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-VitalSignsObservationValue" class="child-title">
+<div class="title">UKCore-VitalSignsObservationValue</div>
+<div class="description">
+  2.0.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-12-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status retired">retired</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/nhs-england-implementation-guide/ValueSet-nhsdigital-message-events" class="child-title">
+<div class="title">nhsdigital-message-events</div>
+<div class="description">
+  1.0.12 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+</div>
 
 ---
 

@@ -78,6 +78,12 @@
 </a>
     
 
+<a href="https://simplifier.net/guide/healthcare-worker-api" class="child-title">
+<div class="title">Healthcare Worker API</div>
+<div class="description">No description</div>
+</a>
+    
+
 <a href="https://simplifier.net/guide/directory-of-service" class="child-title">
 <div class="title">Directory of Service (Interoperability Standard)</div>
 <div class="description">A standard developed for service directories</div>
