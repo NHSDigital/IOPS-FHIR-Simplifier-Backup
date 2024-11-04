@@ -1,6 +1,20 @@
 {
   "resourceType": "Specimen",
   "id": "Specimen-PheobeSmithamMother-Example",
+    "extension": [
+      {
+        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory",
+              "code": "germline",
+              "display": "Germline"
+            }
+          ]
+        }
+      }
+    ],
   "identifier": [
     {
       "system": "https://fhir.leedssth.nhs.uk//Id/specimenId",
