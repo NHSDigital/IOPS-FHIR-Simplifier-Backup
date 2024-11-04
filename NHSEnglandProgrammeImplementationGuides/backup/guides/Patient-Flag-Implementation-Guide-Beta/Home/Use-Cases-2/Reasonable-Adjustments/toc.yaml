@@ -8,7 +8,9 @@
   filename: Add-a-Reasonable-Adjustment-PatientFlag.page.md
 - name: Add a Reasonable Adjustment PatientFlag and associated resources
   filename: Add-a-Reasonable-Adjustment-PatientFlag-and-associated-resources.page.md
-- name: Add/remove associated resources
-  filename: Add-remove-associated-resources.page.md
+- name: Add associated resources
+  filename: Add-associated-resources.page.md
+- name: Remove associated resources
+  filename: Remove-associated-resources.page.md
 - name: Remove a Reasonable Adjustment PatientFlag
   filename: Remove-a-Reasonable-Adjustment-PatientFlag.page.md

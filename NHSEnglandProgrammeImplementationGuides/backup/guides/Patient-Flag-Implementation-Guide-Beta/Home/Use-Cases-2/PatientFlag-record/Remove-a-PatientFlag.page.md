@@ -65,10 +65,45 @@ pra <-- api : OperationOutcome
 @enduml
 </plantuml>
 
-The following resource types will be deleted from the record: 
+### Queries
 
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}}  
+Using [FHIR conditional delete](http://hl7.org/fhir/r4/http.html#3.1.0.7.1) capabilities, it is possible to delete the entire Patient Flag record for a given patient.
+
+#### Flag endpoint write
+
+Following the standard FHIR conditional delete ReST pattern `DELETE [baseURL]/[resourceType]` for delete operations, to:
+
+##### Remove entire Patient Flag record
+
+Use `DELETE [baseURL]/Flag?[searchParameters]`
+Include searchParameters:
+- 'patient' - [patientNHSNumber]
+Provide a Removal reason string as header: `x-removal: [removalReason]`
+
+e.g. `DELETE [baseURL]/Flag?patient=9449306753`
+
+The following resource types will be deleted from the record: 
+* the PatientFlag resource
 * any resources detailing supporting information
+
+This query relies on the [Flag](http://www.hl7.org/fhir/R4/flag.html#search).patient SearchParameter.
+
+##### Remove single Flag type from Patient Flag record
+
+Use `DELETE [baseURL]/Flag?[searchParameters]`
+Include searchParameters:
+- 'patient' - [patientNHSNumber]
+- 'code' - [patientFlagCode]
+Provide a Removal reason string as header: `x-removal: [removalReason]`
+
+e.g. `DELETE [baseURL]/Flag?patient=9449306753&code=national-reasonable-adjustment-flag`
+
+The following resource types will be deleted from the record: 
+* the PatientFlag resource of coded type 
+* any resources detailing supporting information
+
+This query relies on the [Flag patient](http://www.hl7.org/fhir/R4/flag.html#search) and {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagCode.page.md}} search parameters.
+
 
 #### Example
 

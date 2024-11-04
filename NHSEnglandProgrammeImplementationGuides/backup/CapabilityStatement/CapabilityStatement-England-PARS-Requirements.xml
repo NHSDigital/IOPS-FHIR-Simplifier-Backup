@@ -1,0 +1,38 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="CapabilityStatement-England-PARS-Requirements" />
+  <url value="https://fhir.nhs.uk/England/CapabilityStatement/England-England-PARS-Requirements" />
+  <version value="0.0.1-current" />
+  <name value="CapabilityStatementEnglandPARSRequirements" />
+  <title value="CapabilityStatement England PARS Requirements" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-10-08" />
+  <publisher value="NHS England" />
+  <description value="This is for description purposes only and will be replaced by the OAS specification. \n\nSee [IHE RESTful ATNA (Query and Feed)](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf)\n\nAt present only HL7 FHIR based interactions is supported around HL7 (all versions) based interactions." />
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+      <code value="001" />
+    </coding>
+  </jurisdiction>
+  <kind value="requirements" />
+  <fhirVersion value="4.0.1" />
+  <format value="application/fhir+xml" />
+  <format value="application/fhir+json" />
+  <rest>
+    <mode value="server" />
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL" />
+      </extension>
+      <type value="AuditEvent" />
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-AuditEvent-PARS" />
+      <documentation value="
+`POST /AuditEvent`
+" />
+      <interaction>
+        <code value="create" />
+      </interaction>
+    </resource>
+  </rest>
+</CapabilityStatement>

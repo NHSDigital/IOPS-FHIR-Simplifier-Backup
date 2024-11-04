@@ -19,7 +19,7 @@ and in using:
 
 * [Bundle](https://hl7.org/fhir/r4/bundle.html)  
 * [Transaction](https://hl7.org/fhir/r4/http.html#transaction)  
-* [Upsert](https://hl7.org/fhir/r4/http.html#upsert)  
+
 
 
 ### BaseURL and Environments

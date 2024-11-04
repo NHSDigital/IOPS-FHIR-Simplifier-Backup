@@ -58,6 +58,19 @@ pra <-- api : OperationOutcome
 @enduml
 </plantuml>
 
+### Queries
+
+Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is possible to create/write the FGM Patient Flag record.
+
+#### Flag endpoint write
+
+FGM records are created by POSTing the resource, conformant to {{pagelink: Home/fhir-assets/profiles/england-flag-patient-flag.page.md}} to the relevant /Flag resource type endpoint. 
+
+```
+POST [baseURL]/Flag
+```
+
+
 ### Examples
 
 * {{pagelink:AddFGMRecordTransaction-Bundle-Example}}

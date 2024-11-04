@@ -82,7 +82,7 @@ Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is
 
 #### Flag endpoint write
 
-Reasonable Adjustment records are created by POSTing the resource to the relevant /Flag resource type endpoint. 
+Reasonable Adjustment records are created by POSTing the resource, conformant to {{pagelink: Home/fhir-assets/profiles/england-flag-patient-flag.page.md}} to the relevant /Flag resource type endpoint. 
 
 ```
 POST [baseURL]/Flag

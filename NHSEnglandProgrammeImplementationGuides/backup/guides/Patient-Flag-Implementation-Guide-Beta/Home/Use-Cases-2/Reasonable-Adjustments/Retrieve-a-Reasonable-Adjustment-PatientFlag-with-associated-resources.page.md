@@ -71,9 +71,15 @@ Using [FHIR search](https://www.hl7.org/fhir/search.html) capabilities, it is po
 #### Flag endpoint search 
 
 This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/flag.html#search) endpoint using [FHIR search](https://www.hl7.org/fhir/search.html)
+and patient and code search parameters.
 
-This will return all associated flag resources for Reasonable Adjustments.
+GET [baseUrl]/Flag?patient=9449306753&code=national-reasonable-adjustment-flag
 
+This will return all associated flag resources for Reasonable Adjustments for a given patient.
+
+
+
+e.g. 
 ```
 GET [baseUrl]/Flag?patient=9449306753&code=national-reasonable-adjustment-flag
 ```
