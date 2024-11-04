@@ -1,111 +1,117 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-AuditEvent" />>
-    <url
-         value="https://fhir.nhs.uk/England/StructureDefinition/England-AuditEvent" />
-    <version value="0.0.1-current" />
-    <name value="EnglandAuditEvent" />
-    <title value="England Audit Event" />
-    <status value="draft" />
-    <date value="2024-10-25T07:31:19+00:00" />
-    <publisher value="NHS England" />
-    <contact>
-        <name value="NHS England" />
-        <telecom>
-            <system value="email" />
-            <value value="interoperabilityteam@nhs.net" />
-            <use value="work" />
-            <rank value="1" />
-        </telecom>
-    </contact>
-    <description value="Base England Audit Event" />
-    <fhirVersion value="4.0.1" />
-    <kind value="resource" />
-    <abstract value="false" />
-    <type value="AuditEvent" />
-    <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent" />
-    <purpose value="This documents NHS England Data Dictionary and HL7 definitions" />
-    <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-    <derivation value="constraint" />
-    <differential>
-      <element id="AuditEvent">
-        <path value="AuditEvent" />
-      </element>
-      <element id="AuditEvent.type.system">
-        <path value="AuditEvent.type.system" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.subtype.system">
-        <path value="AuditEvent.subtype.system" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.subtype.code">
-        <path value="AuditEvent.subtype.code" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.action">
-        <path value="AuditEvent.action" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.recorded">
-        <path value="AuditEvent.recorded" />
-        <mustSupport value="true" />
-      </element>
-      <element id="AuditEvent.agent.who">
-        <path value="AuditEvent.agent.who" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.agent.who.identifier">
-        <path value="AuditEvent.agent.who.identifier" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.agent.who.identifier.system">
-        <path value="AuditEvent.agent.who.identifier.system" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.agent.who.identifier.value">
-        <path value="AuditEvent.agent.who.identifier.value" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.source">
-        <path value="AuditEvent.source" />
-        <short
-               value="I think this is endpoint instance (Device) which created the audit" />
-      </element>
-      <element id="AuditEvent.source.observer.display">
-        <path value="AuditEvent.source.observer.display" />
-        <short
-               value="Audit Creator Name (the system which has generated the event)" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.source.type">
-        <path value="AuditEvent.source.type" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.source.type.system">
-        <path value="AuditEvent.source.type.system" />
-        <short value="Audit Creator system Identifier" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.source.type.code">
-        <path value="AuditEvent.source.type.code" />
-        <short value="Audit Creator Identifier code" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.entity.what">
-        <path value="AuditEvent.entity.what" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.entity.what.identifier">
-        <path value="AuditEvent.entity.what.identifier" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.entity.what.identifier.system">
-        <path value="AuditEvent.entity.what.identifier.system" />
-        <min value="1" />
-      </element>
-      <element id="AuditEvent.entity.type">
-        <path value="AuditEvent.entity.type" />
-        <min value="1" />
-      </element>
-    </differential>
-  </StructureDefinition>
+  <id value="England-AuditEvent" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-AuditEvent" />
+  <version value="0.0.1-current" />
+  <name value="EnglandAuditEvent" />
+  <title value="England Audit Event" />
+  <status value="draft" />
+  <date value="2024-10-25T07:31:19+00:00" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Base England Audit Event" />
+  <purpose value="This documents NHS England Data Dictionary and HL7 definitions" />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="AuditEvent" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="AuditEvent.type.system">
+      <path value="AuditEvent.type.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.subtype.system">
+      <path value="AuditEvent.subtype.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.subtype.code">
+      <path value="AuditEvent.subtype.code" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.action">
+      <path value="AuditEvent.action" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.recorded">
+      <path value="AuditEvent.recorded" />
+      <mustSupport value="true" />
+    </element>
+    <element id="AuditEvent.agent.who">
+      <path value="AuditEvent.agent.who" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent.who.type">
+      <path value="AuditEvent.agent.who.type" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent.who.identifier">
+      <path value="AuditEvent.agent.who.identifier" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent.who.identifier.system">
+      <path value="AuditEvent.agent.who.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent.who.identifier.value">
+      <path value="AuditEvent.agent.who.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.source">
+      <path value="AuditEvent.source" />
+      <short value="I think this is endpoint instance (Device) which created the audit" />
+    </element>
+    <element id="AuditEvent.source.observer.display">
+      <path value="AuditEvent.source.observer.display" />
+      <short value="Audit Creator Name (the system which has generated the event)" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.source.type">
+      <path value="AuditEvent.source.type" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.source.type.system">
+      <path value="AuditEvent.source.type.system" />
+      <short value="Audit Creator system Identifier" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.source.type.code">
+      <path value="AuditEvent.source.type.code" />
+      <short value="Audit Creator Identifier code" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.what">
+      <path value="AuditEvent.entity.what" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.what.identifier">
+      <path value="AuditEvent.entity.what.identifier" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.what.identifier.system">
+      <path value="AuditEvent.entity.what.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.type">
+      <path value="AuditEvent.entity.type" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.type.system">
+      <path value="AuditEvent.entity.type.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.type.code">
+      <path value="AuditEvent.entity.type.code" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

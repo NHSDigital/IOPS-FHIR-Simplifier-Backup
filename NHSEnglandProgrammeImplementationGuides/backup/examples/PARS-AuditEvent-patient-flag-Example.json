@@ -1,0 +1,116 @@
+{
+    "resourceType" : "AuditEvent",
+    "id" : "PARS-AuditEvent-patient-flag-Example",
+    "type" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
+      "code" : "rest"
+    },
+    "subtype" : [
+      {
+        "system" : "http://hl7.org/fhir/restful-interaction",
+        "code" : "read"
+      }
+    ],
+    "action" : "R",
+    "recorded" : "2024-07-01T09:49:00+00:00",
+    "agent" : [
+      {
+        "who" : {
+          "type" : "Organization",
+          "identifier" : {
+            "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value" : "ABC"
+          },
+          "display" : "A GP Surgery"
+        },
+        "requestor" : true
+      },
+      {
+        "who" : {
+          "type" : "Endpoint",
+          "identifier" : {
+            "system" : "https://fhir.nhs.uk/Id/product-id",
+            "value" : "patient-flag"
+          },
+          "display" : "A GP Surgery"
+        },
+        "requestor" : false
+      }
+    ],
+    "source" : {
+      "site" : "https://api.service.nhs.uk/patient-flags-api",
+      "observer" : {
+        "identifier" : {
+          "system" : "https://fhir.nhs.uk/Id/accredited-system",
+          "value" : "12345"
+        },
+        "display" : "Spine Demographics"
+      },
+      "type" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/security-source-type",
+          "code" : "2"
+        }
+      ]
+    },
+    "entity" : [
+      {
+        "what" : {
+          "identifier" : {
+            "system" : "https://fhir.nhs.uk/Id/nhs-number",
+            "value" : "9999999991"
+          }
+        },
+        "type" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/audit-entity-type",
+          "code" : "1",
+          "display" : "Person"
+        },
+        "role" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/object-role",
+          "code" : "1",
+          "display" : "Patient"
+        }
+      },
+      {
+        "what" : {
+          "identifier" : {
+            "system" : "https://fhir.nhs.uk/Id/transaction",
+            "value" : "76d148b6-586d-11ec-bf63-0242ac130082"
+          }
+        },
+        "type" : {
+          "system" : "https://profiles.ihe.net/ITI/BALP/CodeSystem/BasicAuditEntityType",
+          "code" : "XrequestId"
+        }
+      },
+      {
+        "what" : {
+          "identifier" : {
+            "system" : "https://fhir.nhs.uk/Id/product-id",
+            "value" : "patient-flag"
+          }
+        },
+        "type" : {
+          "system" : "http://hl7.org/fhir/resource-types",
+          "code" : "Endpoint"
+        },
+        "role" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/object-role",
+          "code" : "17",
+          "display" : "Data Repository"
+        },
+        "name" : "Personnel Demographics Service",
+        "detail" : [
+          {
+            "type" : "productIdentifier",
+            "valueString" : "Patient Flags"
+          },
+          {
+            "type" : "interactionIdentifier",
+            "valueString" : "Patient Flags - Get patient flags"
+          }
+        ]
+      }
+    ]
+  }

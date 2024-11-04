@@ -70,6 +70,6 @@ GET [baseUrl]/Flag?patient=9449306753
 ```
 This limits the search to Flags for the patient that has the identifier `9449306753`
 
-This query relies on the [Flag](http://www.hl7.org/fhir/R4/flag.html#search) SearchParameter.
+This query relies on the [Flag](http://www.hl7.org/fhir/R4/flag.html#search).patient SearchParameter.
 
 ---

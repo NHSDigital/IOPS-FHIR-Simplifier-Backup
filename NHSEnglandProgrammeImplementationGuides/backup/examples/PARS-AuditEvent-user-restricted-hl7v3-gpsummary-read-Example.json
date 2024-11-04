@@ -1,0 +1,110 @@
+{
+    "resourceType" : "AuditEvent",
+    "id" : "PARS-AuditEvent-user-restricted-hl7v3-gpsummary-read-Example",
+    "type" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+      "code" : "transmit"
+    },
+    "action" : "R",
+    "recorded" : "2024-07-01T09:49:00+00:00",
+    "agent" : [
+      {
+        "who" : {
+          "type" : "Organization",
+          "identifier" : {
+            "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value" : "ABC"
+          },
+          "display" : "A GP Surgery"
+        },
+        "requestor" : true
+      },
+      {
+        "who" : {
+          "type" : "Practitioner",
+          "identifier" : {
+            "system" : "https://fhir.nhs.uk/Id/sds-user-id",
+            "value" : "123456"
+          },
+          "display" : "John Smith"
+        },
+        "requestor" : true
+      }
+    ],
+    "source" : {
+      "site" : "psis-umasync.national.ncrs.nhs.uk",
+      "observer" : {
+        "identifier" : {
+          "system" : "https://fhir.nhs.uk/Id/accredited-system",
+          "value" : "12345"
+        },
+        "display" : "Spine Clinicals"
+      },
+      "type" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/security-source-type",
+          "code" : "2"
+        }
+      ]
+    },
+    "entity" : [
+      {
+        "what" : {
+          "identifier" : {
+            "system" : "https://fhir.nhs.uk/Id/nhs-number",
+            "value" : "9999999991"
+          }
+        },
+        "type" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/audit-entity-type",
+          "code" : "1",
+          "display" : "Person"
+        },
+        "role" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/object-role",
+          "code" : "1",
+          "display" : "Patient"
+        }
+      },
+      {
+        "what" : {
+          "identifier" : {
+            "system" : "https://fhir.nhs.uk/Id/transaction",
+            "value" : "123148b6-586d-11ec-bf63-0242ac130005"
+          }
+        },
+        "type" : {
+          "system" : "https://profiles.ihe.net/ITI/BALP/CodeSystem/BasicAuditEntityType",
+          "code" : "XrequestId"
+        }
+      },
+      {
+        "what" : {
+          "identifier" : {
+            "system" : "https://fhir.nhs.uk/Id/accredited-system",
+            "value" : "123445"
+          }
+        },
+        "type" : {
+          "system" : "http://hl7.org/fhir/resource-types",
+          "code" : "Endpoint"
+        },
+        "role" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/object-role",
+          "code" : "17",
+          "display" : "Data Repository"
+        },
+        "name" : "Personnel Demographics Service",
+        "detail" : [
+          {
+            "type" : "productIdentifier",
+            "valueString" : "GP Summary"
+          },
+          {
+            "type" : "interactionIdentifier",
+            "valueString" : "QUPC_IN190000UK04"
+          }
+        ]
+      }
+    ]
+  }

@@ -67,7 +67,7 @@ This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/f
 This will return Patient Flag resource of set type and all associated Additional Detail resources for a given Patient.
 
 ```
-GET [baseUrl]/Flag?patient=[patientNHSNumber]&code=[type]
+GET [baseUrl]/Flag?patient=[patientNHSNumber]&code=[patientFlagCode]
 ```
 
 e.g:
@@ -79,10 +79,7 @@ GET [baseUrl]/Flag?patient=9449306753&code=national-reasonable-adjustment-flag
 This limits the search to Flags for the patient that has the identifier `9449306753` and are part of the Reasonable Adjustment flag
 
 
-This query relies on the [Flag](http://www.hl7.org/fhir/R4/flag.html#search) SearchParameter.
-
----
-
-This query relies on the {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagCode.page.md}}, and {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagDetail.page.md}} SearchParameters.
+This query relies on the [Flag](http://www.hl7.org/fhir/R4/flag.html#search).patient and
+{{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagCode.page.md}} SearchParameters.
 
 ---
