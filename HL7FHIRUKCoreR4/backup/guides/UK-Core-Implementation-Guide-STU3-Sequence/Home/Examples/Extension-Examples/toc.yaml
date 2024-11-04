@@ -100,6 +100,8 @@
   filename: Example-UKCore-Extension-ResidentialStatus.page.md
 - name: Example UKCore-Extension-SampleCategory
   filename: Example-UKCore-Extension-SampleCategory.page.md
+- name: Example UKCore-Extension-SampleCategory-PheobeSmitham
+  filename: Example-UKCore-Extension-SampleCategory-PheobeSmitham.page.md
 - name: Example UKCore-Extension-SourceOfServiceRequest
   filename: Example-UKCore-Extension-SourceOfServiceRequest.page.md
 - name: Example UKCore-Extension-SpecialHandling
