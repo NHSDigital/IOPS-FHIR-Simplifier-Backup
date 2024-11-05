@@ -43,6 +43,22 @@
 <span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 </a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-AuditEvent-PARS" class="child-title">
+<div class="title">England-AuditEvent-PARS</div>
+<div class="description">
+  0.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-10-25T07:31:19+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-AuditEvent-PARSOld" class="child-title">
+<div class="title">England-AuditEvent-PARSOld</div>
+<div class="description">
+  0.0.1-current &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-10-25T07:31:19+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
 </div>
 
 <a href="https://hl7.org/fhir/R4/BodyStructure" class="project-banner">BodyStructure</a>
@@ -329,6 +345,22 @@
 </a>
 <a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-Identifier-Organisation-Code" class="child-title">
 <div class="title">England-Identifier-Organisation-Code</div>
+<div class="description">
+  0.0.1-current &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-10-25T07:31:19+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-Identifier-Product-Id" class="child-title">
+<div class="title">England-Identifier-Product-Id</div>
+<div class="description">
+  0.0.1-current &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-10-25T07:31:19+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/England-Identifier-Request-Id" class="child-title">
+<div class="title">England-Identifier-Request-Id</div>
 <div class="description">
   0.0.1-current &nbsp;&nbsp;&nbsp;&nbsp;
   2024-10-25T07:31:19+00:00 &nbsp;&nbsp;&nbsp;&nbsp;

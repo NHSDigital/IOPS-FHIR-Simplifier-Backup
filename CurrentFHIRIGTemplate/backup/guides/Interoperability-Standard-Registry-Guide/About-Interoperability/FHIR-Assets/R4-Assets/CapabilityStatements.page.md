@@ -1,6 +1,9 @@
 ## CapabilityStatements
 
 
+<div class="project-container">
+
+
 <a href="https://simplifier.net/nhs-england-implementation-guide/apim-conformance" class="child-title">
 <div class="title">apim-conformance</div>
 <div class="description">
@@ -46,6 +49,14 @@
 <div class="description">
   0.0.5 &nbsp;&nbsp;&nbsp;&nbsp;
   2024-09-17 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-England-Programme-Implementation-Guides/CapabilityStatement-England-PARS-Requirements" class="child-title">
+<div class="title">CapabilityStatement-England-PARS-Requirements</div>
+<div class="description">
+  0.0.1-current &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-10-08 &nbsp;&nbsp;&nbsp;&nbsp;
 <span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 </a>
