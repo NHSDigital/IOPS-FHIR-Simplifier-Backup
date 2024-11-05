@@ -1,6 +1,0 @@
-- name: Add Patient Flag Record
-  filename: Add-Patient-Flag-Record.page.md
-- name: Retrieve Patient Flag Record
-  filename: Retrieve-Patient-Flag-Record.page.md
-- name: Remove Patient Flag Record
-  filename: Remove-Patient-Flag-Record.page.md

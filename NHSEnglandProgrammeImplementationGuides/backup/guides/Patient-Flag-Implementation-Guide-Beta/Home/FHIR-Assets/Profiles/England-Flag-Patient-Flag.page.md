@@ -19,3 +19,11 @@ issue: England-Flag-PatientFlag
 </div>
 </nocheck>
 
+## Data Mapping
+
+| FHIR element                | Business data items |
+|-
+| Flag.subject                | Patient the Flag is for/about |
+| Flag.category               |                     |
+| Flag.code                   | Code from  https://fhir.nhs.uk/England/ValueSet/England-FlagCategoryPatient<br />e.g. 'national-reasonable-adjustment-flag'                    |
+| Flag.contained:provenance   | Who created or removed the Flag, and when |

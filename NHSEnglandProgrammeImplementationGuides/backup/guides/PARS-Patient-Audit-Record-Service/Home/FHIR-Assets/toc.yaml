@@ -2,5 +2,5 @@
   filename: Profiles
 - name: Examples
   filename: Examples
-- name: Capability Statement
-  filename: Capability-Statement
+- name: CapabilityStatement
+  filename: CapabilityStatement
