@@ -1,10 +1,6 @@
-- name: Patient Flag Record
-  filename: Patient-Flag-Record
-- name: Add Reasonable Adjustment Record
-  filename: Add-Reasonable-Adjustment-Record
-- name: Add Reasonable Adjustment
-  filename: Add-Reasonable-Adjustment
-- name: Add Reasonable Adjustment Condition
-  filename: Add-Reasonable-Adjustment-Condition
-- name: FGM Flag Record
-  filename: FGM-Flag-Record
+- name: PatientFlag record
+  filename: PatientFlag-record
+- name: 'Reasonable Adjustments '
+  filename: Reasonable-Adjustments
+- name: FGM record
+  filename: FGM-record

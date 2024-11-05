@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Retrieve PatientFlags
+  filename: Retrieve-PatientFlags.page.md
+- name: Retrieve a PatientFlag with associated resources
+  filename: Retrieve-a-PatientFlag-with-associated-resources.page.md
+- name: Add a PatientFlag
+  filename: Add-a-PatientFlag.page.md
+- name: Add a PatientFlag and associated resources
+  filename: Add-a-PatientFlag-and-associated-resources.page.md
+- name: Add/remove associated resources
+  filename: Add-remove-associated-resources.page.md
+- name: Remove a PatientFlag
+  filename: Remove-a-PatientFlag.page.md

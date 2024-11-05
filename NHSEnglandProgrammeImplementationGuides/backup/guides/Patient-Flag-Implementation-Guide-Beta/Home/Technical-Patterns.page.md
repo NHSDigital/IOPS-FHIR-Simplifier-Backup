@@ -24,7 +24,7 @@ and in using:
 
 ### BaseURL and Environments
 
-Queries in this specification use ```[baseURL]``` as stand in for the first part of the server path. Iin practice, this varies by environment:
+Queries in this specification use ```[baseURL]``` as stand in for the first part of the server path. In practice, this varies by environment:
 
 | Purpose | Base URL |
 |-|-|

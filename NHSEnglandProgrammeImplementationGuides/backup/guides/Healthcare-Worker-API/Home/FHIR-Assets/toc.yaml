@@ -1,6 +1,6 @@
-- name: Index
-  filename: Index.page.md
 - name: Profiles
   filename: Profiles
 - name: Examples
   filename: Examples
+- name: CapabilityStatement
+  filename: CapabilityStatement
