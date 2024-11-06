@@ -42,7 +42,7 @@
           <type value="value" />
           <path value="who.type" />
         </discriminator>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="AuditEvent.agent:organisation">
