@@ -12,3 +12,5 @@
   filename: CapabilityStatements.page.md
 - name: SearchParameters
   filename: SearchParameters.page.md
+- name: OperationDefinitions
+  filename: OperationDefinitions.page.md

@@ -143,3 +143,119 @@
 ---
 
 
+
+
+<a href="https://simplifier.net/GP-Connect---Direct-Care-APIs---R4" class="project-banner">GP Connect / Direct Care APIs - R4
+<span class="description">Everything related to GP Connect and the Direct Care APIs for R4</span>
+</a>
+
+<br>
+
+<div class="project-container">
+    
+
+<a href="https://simplifier.net/guide/gp-connect--patient-facing-services--prescriptions" class="child-title">
+<div class="title">GP Connect (Patient Facing) Prescriptions</div>
+<div class="description">Implementation Guide</div>
+</a>
+    
+</div>
+<b><br>
+
+---
+
+
+
+
+<a href="https://simplifier.net/ukdigitalmedicine" class="project-banner">NHS Digital FHIR Medicines Implementation Guide
+<span class="description">NHS Digital Medicines used by API services such as Electronic Prescription Service</span>
+</a>
+
+<br>
+
+<div class="project-container">
+    
+
+<a href="https://simplifier.net/guide/nhsdigital-medicines" class="child-title">
+<div class="title">NHS Digital FHIR Medicines</div>
+<div class="description">EPS allows prescribers to send prescriptions electronically to a dispenser (such as a pharmacy) of the patient's choice. This makes the prescribing and dispensing process more efficient and convenient for patients and staff.</div>
+</a>
+    
+
+<a href="https://simplifier.net/guide/digitalmedicines" class="child-title">
+<div class="title">NHS Digital FHIR Medicines (Retired - 2.1.14)</div>
+<div class="description">EPS allows prescribers to send prescriptions electronically to a dispenser (such as a pharmacy) of the patient's choice. This makes the prescribing and dispensing process more efficient and convenient for patients and staff.</div>
+</a>
+    
+</div>
+<b><br>
+
+---
+
+
+
+
+<a href="https://simplifier.net/clinicalobservations" class="project-banner">Clinical Observations
+<span class="description">This is a Alpha specification  for  first of type implementers</span>
+</a>
+
+<br>
+
+<div class="project-container">
+    
+
+<a href="https://simplifier.net/guide/clinicalobservations" class="child-title">
+<div class="title">Clinical Observations</div>
+<div class="description">FHIR Implementation Guide for Clinical Observations</div>
+</a>
+    
+</div>
+<b><br>
+
+---
+
+
+
+
+<a href="https://simplifier.net/NHSBookingandReferrals" class="project-banner">NHS Booking and Referrals
+<span class="description">NHS Booking and Referrals</span>
+</a>
+
+<br>
+
+<div class="project-container">
+    
+
+<a href="https://simplifier.net/guide/nhsbookingandreferralstandard" class="child-title">
+<div class="title">NHS Booking and Referral Standard</div>
+<div class="description">No description</div>
+</a>
+    
+</div>
+<b><br>
+
+---
+
+
+
+
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide" class="project-banner">NHS England FHIR Genomics Implementation Guide
+<span class="description">Implementation Guide for the NHS Genomic Medicine Service</span>
+</a>
+
+<br>
+
+<div class="project-container">
+    
+
+<a href="https://simplifier.net/guide/fhir-genomics-implementation-guide" class="child-title">
+<div class="title">FHIR Genomics Implementation Guide</div>
+<div class="description">Implementation Guide for the NHS Genomics Medicine Service</div>
+</a>
+    
+</div>
+<b><br>
+
+---
+
+

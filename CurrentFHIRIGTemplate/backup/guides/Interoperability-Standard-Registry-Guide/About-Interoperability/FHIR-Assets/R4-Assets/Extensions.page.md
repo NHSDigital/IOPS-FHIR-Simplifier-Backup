@@ -60,6 +60,22 @@
 <span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 </a>
+<a href="https://simplifier.net/NHSBookingandReferrals/LocationExtension" class="child-title">
+<div class="title">LocationExtension</div>
+<div class="description">
+  1.0.3 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-05-16 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHSBookingandReferrals/CDSSExtension" class="child-title">
+<div class="title">CDSSExtension</div>
+<div class="description">
+  1.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2022-03-08 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
 <a href="https://simplifier.net/HL7FHIRUKCoreR4/Extension-UKCore-BookingOrganization" class="child-title">
 <div class="title">Extension-UKCore-BookingOrganization</div>
 <div class="description">
