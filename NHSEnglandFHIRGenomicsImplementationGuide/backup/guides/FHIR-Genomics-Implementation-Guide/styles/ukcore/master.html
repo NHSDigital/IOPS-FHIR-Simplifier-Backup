@@ -678,6 +678,85 @@
                 updateFooterPosition();
             });
         </script>
+                <script>
+            function expandProfileNodes() {
+                //look for any treetable parent divs
+                $("div.expandedProfile div.stu3-treetable").each(function(index) {
+                    //call a hacked version of the simplifier expandnode, 
+                    // with the first tr as its start point, and tparent div as we lose the context their js has
+                    expandProfileNode($(this).find('table.treetable').children('tbody').children('tr:first'), $(this)[0]);
+                });
+            }
+
+            //copy of simplifier getVisibleElements, but with the lack of context handled
+            function getVisibleElements(id, treeDiv) {
+                for (var rows = '[data-ParentId="' + id + '"]', n = treeDiv.querySelectorAll(rows), i = [], r = 0, a = 0; a < n.length; a++)
+                    TreeHelper.hasClass(n[a], "mode-hidden") || (i[r] = n[a],
+                    r++);
+                return i;
+            }
+
+            //tweaked version of simplifier expandNode
+            // but is more intelligent, so only expands identifier/resource etc if sliced, or an [x] if modified
+            function expandProfileNode(node, treeDiv) {
+                //handle node being blank / array of tr’s / single tr
+                if (node == null)
+                    return;
+                var n = node;
+                if (node.length > 0)
+                    n = node[0];
+
+                //find all visible children, loop through them and call the click, then try and expand them
+                var rows = getVisibleElements(n.getAttribute("data-id"), treeDiv);
+                rows.forEach(function(e, r) {
+                    var doExpand = false;
+                    //check the 3 main css classes that can be set
+                    var c = TreeHelper.hasClass(e, "collapsed");
+                    var s = TreeHelper.hasClass(e, "sliced"); 
+                    var m = TreeHelper.hasClass(e, "constraints");
+                   
+                    //and only expand if its collpased
+                    if (c) {
+                        //look inside this tr, and basically, if its not a backbone element, check if we should expand
+                        var elementDataType = e.children[3].innerText;
+                        var elementName = e.children[0].innerText;
+                        // Identifier/Reference - if sliced/different or has an Extension, expand
+                        if (elementDataType == "Identifier" || elementDataType.startsWith("Reference") )
+                        {
+                            if (s) {
+                                doExpand = true;
+                            } else {
+                               var subRows = getVisibleElements(e.getAttribute("data-id"), treeDiv);
+                               subRows.forEach(function(s, sr) {
+                                   if (s.children[3].innerText == "Extension")
+                                    doExpand = true;
+                               })
+                            }
+                        } else if (elementDataType =="Coding" || elementDataType =="Annotation" || elementDataType.startsWith("Address")  || elementDataType.startsWith("ContactPoint") || elementDataType.startsWith("Extension(")) {
+                            //Coding/Annotation/Address/ContactPoint/Extension(Complex)
+                            //only expand if sliced
+                            if (s && elementName != "(All Slices)")
+                                doExpand = true;
+                            if (!s && e.querySelector("span.individualSlice") != undefined)
+                                doExpand = true;
+                        } else if ((elementDataType == "" || elementDataType == null)) {
+                                //a value[x] style element, expand if modified
+                                if (m && elementName !="(All Slices)")
+                                    doExpand = true;
+                        } else {
+                                //expand anything else (top level extension, backboneelement)
+                                doExpand = true;
+                        }
+                        if (doExpand){
+                            var o = e.querySelector(".vjoinexpandable");
+                            null == o && (o = e.querySelector(".vjoinendexpandable")), 
+                            null != o && o.click()
+                            expandProfileNode(e, treeDiv);
+                        }
+                    }
+                })
+            }
+        </script>
     </body>
 
 </html>
