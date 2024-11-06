@@ -1,0 +1,8 @@
+- name: Carrot
+  filename: Carrot.page.md
+- name: Lettuce
+  filename: Lettuce
+- name: Potato
+  filename: Potato.page.md
+- name: Index
+  filename: Index.page.md
