@@ -1,6 +1,7 @@
 ---
 subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory
 issue: Extension-UKCore-SampleCategory
+example: Specimen-PheobeSmitham-Example
 expand: yes
 ---
 
@@ -21,6 +22,17 @@ Context of Use
 
 {{page:Home-FHIRAssets-Extensions-ExtensionTemplate}}
 
+
+
+<div id="Examples" class="tabcontent">
+  <h3>Examples</h3>
+  <ul>
+  <li>
+{{pagelink:Specimen-PheobeSmitham-Example}}
+</li>
+</ol>
+<br><br>
+</div>
 
 <div id="Feedback" class="tabcontent">
 {{page:Home-FeedbackTemplate-FeedbackLink}}

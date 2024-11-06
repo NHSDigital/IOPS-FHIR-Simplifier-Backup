@@ -1,4 +1,12 @@
-## {{page-title}}
+---
+topic: Profile-Genomics-AuditEvent
+issue: Genomics-AuditEvent
+subject: http://hl7.org/fhir/StructureDefinition/AuditEvent
+expand: yes
+---
+
+
+## {{variable:issue}}
 
 Created by the central GMS infrastructure on any CRUD event. 
 
@@ -16,9 +24,10 @@ The below profile is therefore provided to support parsing for clients if return
 |--
 | [http://hl7.org/fhir/StructureDefinition/AuditEvent](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/AuditEvent&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
-<br>
 
-<br>
+{{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
+
+<!--
 
 <div class="nhsd-!t-margin-bottom-6">
     <ul class="nav nav-tabs" role="tablist">
@@ -53,51 +62,29 @@ The below profile is therefore provided to support parsing for clients if return
             <br />
             {{dict:http://hl7.org/fhir/StructureDefinition/AuditEvent, hybrid}}
         </div>
-        <div id="Examples" role="tabpanel" class="tab-pane">
-            <br />
-            <table>
-                <tr>
-                    <td>
-                    {{pagelink:AuditEvent-ServiceRequestUpdate-Example}}
-                    </td>
-                </tr>
-                <tr>
-                     <td>
-                    {{pagelink:AuditEvent-TaskUpdate-Example}}
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div id="Constraints" role="tabpanel" class="tab-pane">
-            <br />
-            @```
-            from StructureDefinition
-            where url='http://hl7.org/fhir/StructureDefinition/AuditEvent'
-            for differential.element.constraint
-            select key, human, severity, expression
-            ```
-        </div>
-        <div id="Mappings" role="tabpanel" class="tab-pane">
-            <br />
-                <table class="assets">
+ -->
+        
+<div id="Examples" class="tabcontent">
+ <br />
+<ul>
+<li> {{pagelink:AuditEvent-ServiceRequestUpdate-Example}} </li>
+<li> {{pagelink:AuditEvent-TaskUpdate-Example}} </li>
+</ul>
+</div>
+
+<div id="Mappings" class="tabcontent">
+            <br>
+            <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
                     <tr><td></td><td></td><td></td></tr>
                 </table>
-        </div>
-    </div>
 </div>
 
-### Constraint Profiles
-Profiles indicating preferred element cardinality for use in Genomics, not to be used for validation
+---
 
-@```
-from StructureDefinition
-where baseDefinition='http://hl7.org/fhir/StructureDefinition/AuditEvent' 
-select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier&scope=NHS-Digital-FHIR-Genomics-Implementation-Guide@current&canonical='+ url + '">'+url+'</a>'
-```
 <br>
 
-### Additional Guidance
+<h3 id='non-fql-header'> Additional Guidance </h3>
 
 - <a href="#action">action</a>
 - <a href="#agent">agent</a>
@@ -159,4 +146,4 @@ SHOULD be present where the resource exists on the server. Reference to the reso
             }
         }
     ]
-```
+---
