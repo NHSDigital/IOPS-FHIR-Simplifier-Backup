@@ -1,42 +1,39 @@
-move-active-resources:
-  - category: Conformance
-  - move: /package/
-  - target: staging
- 
-move-examples:
-  - category: Instance
-  - move: /package/examples
-  - target: staging
- 
-# If you don't have FSH files this step will be skipped.
-sushi:
-  - files: /**/*.fsh
-  - action: sushi
-  - move: /package/generated/
-  - target: staging
- 
-# If you don't have YamlGen files this step will be skipped.
-yaml-gen:
-  - files: /**/*.gen.yaml
-  - action: yamlgen
-  - move: /package/generated/
-  - target: staging
- 
+# Transform all resources to JSON (Mandatory according to the specification)
+tranform-to-json:
+  - source: input
+  - category: Resource
+  - tranform: json
+  - target: bucket1
+
+# Generate snapshots for all StructureDefinitions (Optional)
+# Note, since the file names stay the same the files will be overwritten and we do not need an extra bucket.
 generate-snapshots:
-  - source: output
+  - source: bucket1
   - category: Profile
   - action: snapshot
-  - target: staging
- 
-to-json: 
-  - source: staging
-  - category: Resource
-  - transform: json
- 
+  - target: bucket1
+
+# Move all conformance resources to the /package folder (Mandatory according to the specification)
+move-conformance-resources:
+  - source: bucket1
+  - category: Conformance
+  - move: /package/
+  - target: output
+
+# Move all examples to the /package/examples folder (Optional)
+move-examples:
+  - source: bucket1
+  - category: Instance
+  - move: /package/examples
+  - target: output
+
+# Move the Package Manifest to the /package folder (Mandatory according to the specification)
 manifest:
+  - source: input
   - files: package.json
   - move: /package
- 
+
+# Generate an .index.json file with all files in the package (Optional)
 index-file:
   - source: output
   - files: /package/**/*.json
