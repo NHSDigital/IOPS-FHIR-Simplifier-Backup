@@ -140,6 +140,102 @@
 <span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 </a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-additional-infotype" class="child-title">
+<div class="title">genomics-additional-infotype</div>
+<div class="description">
+  0.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-05-31T00:00:00.000Z &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-business-status" class="child-title">
+<div class="title">genomics-business-status</div>
+<div class="description">
+  0.1.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-09-10T10:17:52.3231281+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-message-events" class="child-title">
+<div class="title">genomics-message-events</div>
+<div class="description">
+  0.1.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-09-10T10:17:52.3231281+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-patient-choice-category" class="child-title">
+<div class="title">genomics-patient-choice-category</div>
+<div class="description">
+  0.1.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-09-10T10:17:52.3231281+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-patientguardian-types" class="child-title">
+<div class="title">genomics-patientguardian-types</div>
+<div class="description">
+  0.1.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-09-10T10:17:52.3231281+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-reasonfortesting" class="child-title">
+<div class="title">genomics-reasonfortesting</div>
+<div class="description">
+  0.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-07-09T00:00:00.000Z &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-patient-choice-researchparticipation" class="child-title">
+<div class="title">genomics-patient-choice-researchparticipation</div>
+<div class="description">
+  0.1.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-09-10T10:17:52.3231281+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-specimen-collection-specialhandling" class="child-title">
+<div class="title">genomics-specimen-collection-specialhandling</div>
+<div class="description">
+  0.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-08-05T00:00:00.000Z &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-task-code" class="child-title">
+<div class="title">genomics-task-code</div>
+<div class="description">
+  0.2.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-09-10T10:17:52.3231281+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-task-statusReason" class="child-title">
+<div class="title">genomics-task-statusReason</div>
+<div class="description">
+  0.2.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-09-10T10:17:52.3231281+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-test-types" class="child-title">
+<div class="title">genomics-test-types</div>
+<div class="description">
+  0.1.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-09-10T10:17:52.3231281+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ValueSet-genomics-types-of-reanalysistest" class="child-title">
+<div class="title">genomics-types-of-reanalysistest</div>
+<div class="description">
+  0.1.0 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-07-09T00:00:00.000Z &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
 <a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ACVPU" class="child-title">
 <div class="title">UKCore-ACVPU</div>
 <div class="description">

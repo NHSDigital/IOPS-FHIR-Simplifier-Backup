@@ -52,6 +52,29 @@
 <span class="status active">active</span> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 </a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/SearchParameter-Genomics-entity-detail" class="child-title">
+<div class="title">SearchParameter-Genomics-entity-detail</div>
+<div class="description">
+  2024-09-20 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/SearchParameter-Genomics-request" class="child-title">
+<div class="title">SearchParameter-Genomics-request</div>
+<div class="description">
+  0.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2024-08-01T09:35:00+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
+<a href="https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/SearchParameter-Genomics-supporting-info" class="child-title">
+<div class="title">SearchParameter-Genomics-supporting-info</div>
+<div class="description">
+  0.0.1 &nbsp;&nbsp;&nbsp;&nbsp;
+  2023-06-27T09:56:00+00:00 &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="status draft">draft</span> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</a>
 </div>
 
 ---
