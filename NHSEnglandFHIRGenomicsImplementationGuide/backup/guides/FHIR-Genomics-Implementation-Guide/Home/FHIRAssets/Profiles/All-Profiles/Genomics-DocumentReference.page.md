@@ -1,4 +1,11 @@
-## {{page-title}}
+---
+topic: Profile-Genomics-DocumentReference
+issue: Genomics-DocumentReference
+subject: http://hl7.org/fhir/StructureDefinition/DocumentReference
+expand: yes
+---
+
+# {{variable:issue}}
 
 The DocumentReference resource is used to reference data files generated as part of genomic testing and allow these files to be retrieved through the [DRS API standard](https://www.ga4gh.org/news_item/drs-api-enabling-cloud-based-data-access-and-retrieval/).
 
@@ -19,61 +26,17 @@ The base DocumentReference resource is provided below for completeness.
 |--
 | [http://hl7.org/fhir/StructureDefinition/DocumentReference](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/DocumentReference&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
+{{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
 
-<div class="nhsd-!t-margin-bottom-6">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#Profile" role="tab" data-toggle="tab">Profile</a>
-        </li>
-        <li role="presentation">
-            <a href="#Differential" role="tab" data-toggle="tab">Differential</a>
-        </li>
-        <li role="presentation">
-            <a href="#Constraints" role="tab" data-toggle="tab">Constraints</a>
-        </li>
-        <li role="presentation">
-            <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
-        </li>
-        <li role="presentation">
-            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
-        </li>
+<div id="Examples" class="tabcontent">
+    <br>
+    <ul>
+        <li>{{pagelink:DocumentReference-PharmCAT-Example}}</li>
     </ul>
-    <div class="tab-content snippet">
-        <div id="Profile" role="tabpanel" class="tab-pane active">
-            <br />
-            {{tree: http://hl7.org/fhir/StructureDefinition/DocumentReference, snapshot}}
-        </div>
-        <div id="Differential" role="tabpanel" class="tab-pane">
-         <br />
-         Differential from {{link:http://hl7.org/fhir/StructureDefinition/DocumentReference}} <br>
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/DocumentReference, diff}}
-        </div>
-        <div id="Dictionary" role="tabpanel" class="tab-pane">
-            <br />
-            {{dict:http://hl7.org/fhir/StructureDefinition/DocumentReference, hybrid}}
-        </div>
-        <div id="Examples" role="tabpanel" class="tab-pane">
-            <br />
-            <table>
-                <tr>
-                    <td>
-                    {{pagelink:DocumentReference-PharmCAT-Example}}
-                    </td>
-                </tr>
-            </table>
         </div>
         
-        <div id="Constraints" role="tabpanel" class="tab-pane">
-            <br />
-            @```
-            from StructureDefinition
-            where url=':http://hl7.org/fhir/StructureDefinition/DocumentReference'
-            for differential.element.constraint
-            select key, human, severity, expression
-            ```
-        </div>
-        <div id="Mappings" role="tabpanel" class="tab-pane">
+<div id="Mappings" class="tabcontent">
+       
             <!--
             <br />
                 <table class="assets">
@@ -83,12 +46,10 @@ The base DocumentReference resource is provided below for completeness.
                 </table>
                 -->
         </div>
-    </div>
-</div>
-
+ 
 <br>
 
-### Additional Guidance
+<h3 id='non-fql-header'> Additional Guidance </h3>
 
 - <a href="#subject">subject</a>
 - <a href="#author">author</a>
@@ -97,8 +58,9 @@ The base DocumentReference resource is provided below for completeness.
 - <a href="#context">context</a>
 
 <a name="subject"></a>
-#### subject
+<h4 class='additional-Guidance-Submenu'> subject </h4>
 SHOULD be present if related to a patient. Reference to the Patient this data file is pertaining to. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -110,8 +72,9 @@ SHOULD be present if related to a patient. Reference to the Patient this data fi
 ```
 
 <a name="author"></a>
-#### author
+<h4 class='additional-Guidance-Submenu'> author </h4>
 SHOULD reference the organization responsible for creating the data file, preferably by ODS code.
+
 ```json
 "performer":  [
         {
@@ -124,15 +87,17 @@ SHOULD reference the organization responsible for creating the data file, prefer
 ```
 
 <a name="description"></a>
-#### description
+<h4 class='additional-Guidance-Submenu'> description </h4>
 Human readable description for the data file. NOTE: this is being used in place of DocumentReference.type until suitable LOINC or SNOMED CT concepts are identified for the file types expected.  
+
 ```json
  "description": "Phenotype Report",
 ```
 
 <a name="content"></a>
-#### content
-SHOULD be a DRS compatible reference to the data file.   
+<h4 class='additional-Guidance-Submenu'> content </h4>
+SHOULD be a DRS compatible reference to the data file. 
+
 ```json
 "content": [
     {
@@ -146,10 +111,11 @@ SHOULD be a DRS compatible reference to the data file.
 ```
 
 <a name="context"></a>
-#### context
+<h4 class='additional-Guidance-Submenu'> context </h4>
 In all cases the DocumentReference SHOULD reference the DNA Specimen from which the data originated, where available, and the ServiceRequest which triggered the capture of the data.
 
 The DiagnosticReport using the data file SHOULD reference the DocumentReference via the `DiagnosticReport.extension:supporting-info` element. **This guidance will be updated upon release of the R5 backport of DiagnosticReport.media, allowing references to DocumentReference. Once backported, the DiagnosticReport.media.link SHOULD be used to reference the DocumentReference resources for data files analysed for the report instead.**
+
 ```json
 "context": {
     "related": [
@@ -162,3 +128,4 @@ The DiagnosticReport using the data file SHOULD reference the DocumentReference 
     ]
   }
 ```
+---

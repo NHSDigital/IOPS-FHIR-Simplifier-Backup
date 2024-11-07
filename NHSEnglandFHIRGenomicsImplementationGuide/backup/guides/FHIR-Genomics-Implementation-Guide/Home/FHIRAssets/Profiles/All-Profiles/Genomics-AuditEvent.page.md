@@ -6,7 +6,7 @@ expand: yes
 ---
 
 
-## {{variable:issue}}
+# {{variable:issue}}
 
 Created by the central GMS infrastructure on any CRUD event. 
 
@@ -27,42 +27,6 @@ The below profile is therefore provided to support parsing for clients if return
 
 {{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
 
-<!--
-
-<div class="nhsd-!t-margin-bottom-6">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#Profile" role="tab" data-toggle="tab">Profile</a>
-        </li>
-        <li role="presentation">
-            <a href="#Differential" role="tab" data-toggle="tab">Differential</a>
-        </li>
-        <li role="presentation">
-            <a href="#Constraints" role="tab" data-toggle="tab">Constraints</a>
-        </li>
-        <li role="presentation">
-            <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
-        </li>
-        <li role="presentation">
-            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
-        </li>
-    </ul>
-    <div class="tab-content snippet">
-        <div id="Profile" role="tabpanel" class="tab-pane active">
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/AuditEvent, snapshot}}
-        </div>
-        <div id="Differential" role="tabpanel" class="tab-pane">
-         <br />
-         Differential from {{link:http://hl7.org/fhir/StructureDefinition/AuditEvent}} <br>
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/AuditEvent, diff}}
-        </div>
-        <div id="Dictionary" role="tabpanel" class="tab-pane">
-            <br />
-            {{dict:http://hl7.org/fhir/StructureDefinition/AuditEvent, hybrid}}
-        </div>
- -->
         
 <div id="Examples" class="tabcontent">
  <br />
@@ -73,11 +37,13 @@ The below profile is therefore provided to support parsing for clients if return
 </div>
 
 <div id="Mappings" class="tabcontent">
+<!--
             <br>
             <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
                     <tr><td></td><td></td><td></td></tr>
                 </table>
+-->
 </div>
 
 ---
@@ -91,15 +57,17 @@ The below profile is therefore provided to support parsing for clients if return
 - <a href="#entity">entity</a>
 
 <a name="action"></a>
-#### action
+<h4 class='additional-Guidance-Submenu'> action </h4>
 SHALL be present. Code from base HL7 resource, only C (create), R (read) and U (update) would usually be expected.
+
 ```json
 "action": "U",
 ```
 
 <a name="agent"></a>
-#### agent
+<h4 class='additional-Guidance-Submenu'> agent </h4>
 SHOULD be present for any user initiated actions. Reference to the user or system that triggered the creation/read/update. Identity SHOULD be determined through the appropriate authentication token within the request header, e.g. CIS2 auth token.
+
 ```json
 "agent":  [
         {
@@ -126,8 +94,9 @@ SHOULD be present for any user initiated actions. Reference to the user or syste
 ```
 
 <a name="entity"></a>
-#### entity
+<h4 class='additional-Guidance-Submenu'> entity </h4>
 SHOULD be present where the resource exists on the server. Reference to the resource which was affected by the event.
+
 ```json
 "entity":  [
         {
@@ -146,4 +115,6 @@ SHOULD be present where the resource exists on the server. Reference to the reso
             }
         }
     ]
+```
+
 ---
