@@ -6,6 +6,7 @@
 @startuml
 Group "1" *-- "many" Patient : has
 Patient "1" *-- "many" Encounter : has
+Patient "1" *-- "many" Observation : has
 Patient "1" *-- "many" Flag : has
 CarePlan "1" *-- "1" Encounter : has
 Patient "1" *-- "many" Appointment : has
