@@ -1,4 +1,11 @@
-## {{page-title}}
+---
+topic: Profile-Genomics-OperationOutcome
+issue: Genomics-OperationOutcome
+subject: http://hl7.org/fhir/StructureDefinition/OperationOutcome
+expand: yes
+---
+
+# {{variable:issue}}
 
 The Genomics OperationOutcome is the same as provided within FHIR R4. The FHIR R4 OperationOutcome is provided below for completeness.
 
@@ -10,83 +17,39 @@ It is expected that all issue codes raised by the Genomic Medicine Service will 
 |--
 | [http://hl7.org/fhir/StructureDefinition/OperationOutcome](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/OperationOutcome&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
-<br>
+{{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
 
-<br>
 
-<div class="nhsd-!t-margin-bottom-6">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#Profile" role="tab" data-toggle="tab">Profile</a>
-        </li>
-        <li role="presentation">
-            <a href="#Differential" role="tab" data-toggle="tab">Differential</a>
-        </li>
-        <li role="presentation">
-            <a href="#Constraints" role="tab" data-toggle="tab">Constraints</a>
-        </li>
-        <li role="presentation">
-            <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
-        </li>
-        <li role="presentation">
-            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
-        </li>
-    </ul>
-    <div class="tab-content snippet">
-        <div id="Profile" role="tabpanel" class="tab-pane active">
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/OperationOutcome, snapshot}}
-        </div>
-        <div id="Differential" role="tabpanel" class="tab-pane">
-         <br />
-         Differential from {{link:http://hl7.org/fhir/StructureDefinition/OperationOutcome}} <br>
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/OperationOutcome, diff}}
-        </div>
-        <div id="Dictionary" role="tabpanel" class="tab-pane">
-            <br />
-            {{dict:http://hl7.org/fhir/StructureDefinition/OperationOutcome, hybrid}}
-        </div>
-        <div id="Examples" role="tabpanel" class="tab-pane">
-            <br />
-            <table>
-                <tr>
-                    <td>
-                    {{pagelink:OperationOutcome-SuccessfulValidation-Example}}
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div id="Constraints" role="tabpanel" class="tab-pane">
-            <br />
-            @```
-            from StructureDefinition
-            where url=':http://hl7.org/fhir/StructureDefinition/OperationOutcome'
-            for differential.element.constraint
-            select key, human, severity, expression
-            ```
-        </div>
-        <div id="Mappings" role="tabpanel" class="tab-pane">
+<div id="Examples" class="tabcontent">
+    <br>
+    <ul>
+     <li> {{pagelink:OperationOutcome-SuccessfulValidation-Example}} </li>
+     </Ul>
+</div>
+
+<div id="Mappings" class="tabcontent">
+<!--
             <br />
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
                     <tr><td></td><td></td><td></td></tr>
                 </table>
-        </div>
-    </div>
+-->
 </div>
 
-### Additional Guidance
+
+<h3 id='non-fql-header'> Additional Guidance </h3>
 
 - <a href="#issue">issue</a>
 
 <a name="issue"></a>
-#### issue
+<h4 class='additional-Guidance-Submenu'> issue </h4>
 An issue element will be included within the OperationOutcome for each issue that needs to be communicated to the requesting system, e.g. errors, warnings or informational messages. Appropriate 'severity' and 'code' codes will be assigned to help categorization of an messages returned, using the standard HL7 bound ValueSets. 
 
 The `diagnostics` field will be used to present a human readable version of the message and `location` will be used to detail the location within the request payload that resulted in the associated issue/message.
 
 If an error or warning is returned, the 'details' element will be populated with any validation specific messages. Details of the systems and codes used for these messages will be determined by the validation package used by the central order management broker (this is still to be determined at the time of publication).
+
 ```json
 "issue":[
             {

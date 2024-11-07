@@ -1,4 +1,11 @@
-## {{page-title}}
+---
+topic: Profile-Genomics-Provenance
+issue: Genomics-Provenance
+subject: http://hl7.org/fhir/StructureDefinition/Provenance
+expand: yes
+---
+
+# {{variable:issue}}
 
 The Genomics Provenance SHOULD be provided alongside updates to controlled documents such as ServiceRequests and DiagnosticReports by integrated systems on any update operation to ensure auditability for any changes to resources.
 
@@ -10,109 +17,34 @@ The HL7 FHIR specification also provides the capability to attach a Provenance r
 |--
 | [http://hl7.org/fhir/StructureDefinition/Provenance](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Provenance&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
-<br>
+{{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
 
-<br>
 
-<div class="nhsd-!t-margin-bottom-6">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#Profile" role="tab" data-toggle="tab">Profile</a>
-        </li>
-        <li role="presentation">
-            <a href="#Differential" role="tab" data-toggle="tab">Differential</a>
-        </li>
-        <li role="presentation">
-            <a href="#Constraints" role="tab" data-toggle="tab">Constraints</a>
-        </li>
-        <li role="presentation">
-            <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
-        </li>
-        <li role="presentation">
-            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
-        </li>
-    </ul>
-    <div class="tab-content snippet">
-        <div id="Profile" role="tabpanel" class="tab-pane active">
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/Provenance, snapshot}}
-        </div>
-        <div id="Differential" role="tabpanel" class="tab-pane">
-         <br />
-         Differential from {{link:http://hl7.org/fhir/StructureDefinition/Provenance}} <br>
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/Provenance, diff}}
-        </div>
-        <div id="Dictionary" role="tabpanel" class="tab-pane">
-            <br />
-            {{dict:http://hl7.org/fhir/StructureDefinition/Provenance, hybrid}}
-        </div>
-        <div id="Examples" role="tabpanel" class="tab-pane">
-            <br />
-            <table>
-                <tr>
-                    <td>
-                        {{pagelink:Provenance-NonWGSTestOrderFormCancellation-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Provenance-NonWGSTestOrderFormUpdated-SolidTumor-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Provenance-NonWGSTestOrderForm-FetalScenario-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Provenance-ServiceRequestUpdate-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Provenance-WGSTestOrderForm-DirectToLab-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Provenance-WGSTestOrderForm-TrioTestingProbandFather-Example}}
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div id="Constraints" role="tabpanel" class="tab-pane">
-            <br />
-            @```
-            from StructureDefinition
-            where url='http://hl7.org/fhir/StructureDefinition/Provenance'
-            for differential.element.constraint
-            select key, human, severity, expression
-            ```
-        </div>
-        <div id="Mappings" role="tabpanel" class="tab-pane">
+<div id="Examples" class="tabcontent">
+            <br>
+<ul>
+<li> {{pagelink:Provenance-NonWGSTestOrderFormCancellation-Example}} </li>
+<li> {{pagelink:Provenance-NonWGSTestOrderFormUpdated-SolidTumor-Example}}  </li>
+<li> {{pagelink:Provenance-NonWGSTestOrderForm-FetalScenario-Example}} </li>
+<li> {{pagelink:Provenance-ServiceRequestUpdate-Example}} </li>
+<li> {{pagelink:Provenance-WGSTestOrderForm-DirectToLab-Example}} </li>
+<li> {{pagelink:Provenance-WGSTestOrderForm-TrioTestingProbandFather-Example}} </li>
+</ul>
+</div>
+
+<div id="Mappings" class="tabcontent">
+<!--
             <br />
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
                     <tr><td></td><td></td><td></td></tr>
                 </table>
-        </div>
-    </div>
+-->
 </div>
-
-### Constraint Profiles
-Profiles indicating preferred element cardinality for use in Genomics, not to be used for validation
-
-@```
-from StructureDefinition
-where baseDefinition='http://hl7.org/fhir/StructureDefinition/Provenance' 
-select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier&scope=NHS-Digital-FHIR-Genomics-Implementation-Guide@current&canonical='+ url + '">'+url+'</a>'
-```
 
 <br>
 
-### Additional Guidance
+<h3 id='non-fql-header'> Additional Guidance </h3>
 
 - <a href="#target">target</a>
 - <a href="#recorded">recorded</a>
@@ -121,8 +53,9 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#signature">signature</a>
 
 <a name="target"></a>
-#### target
+<h4 class='additional-Guidance-Submenu'> target </h4>
 SHALL be provided. This SHOULD be a reference to the resource on the central GMS system that was updated.
+
 ```json
 "target":  [
         {
@@ -132,15 +65,17 @@ SHALL be provided. This SHOULD be a reference to the resource on the central GMS
 ```
 
 <a name="recorded"></a>
-#### recorded
+<h4 class='additional-Guidance-Submenu'> recorded </h4>
 SHALL be provided, the date/time when the update took place.
+
 ```json
 "recorded": "2023-08-10T11:10:00Z",
 ```
 
 <a name="reason"></a>
-#### reason
+<h4 class='additional-Guidance-Submenu'> reason </h4>
 The reason why the update took place. If the codes provided by HL7 are not granular enough, or additional notes need to be recorded detailing the reasoning behind a change, this SHOULD be added as text to 'reason.text'.
+
 ```json
 "reason":  [
         {
@@ -157,8 +92,9 @@ The reason why the update took place. If the codes provided by HL7 are not granu
 ```
 
 <a name="agent"></a>
-#### agent
+<h4 class='additional-Guidance-Submenu'> agent </h4>
 SHOULD be provided where actions are user initiated. The user which performed the change, as identified through CIS2 authentication token.
+
 ```json
 "agent":  [
         {
@@ -183,8 +119,9 @@ SHOULD be provided where actions are user initiated. The user which performed th
 ```
 
 <a name="signature"></a>
-#### signature
+<h4 class='additional-Guidance-Submenu'> signature </h4>
 Signed, encrypted copy of the document, for validation that the document has not been tampered with (the requirement to include this field has not yet been validated).
+
 ```json
  "signature":  [
         {
@@ -207,3 +144,4 @@ Signed, encrypted copy of the document, for validation that the document has not
         }
     ]
 ```
+---

@@ -855,3 +855,10 @@ a[target="_blank"]::after {
     font-size: 16px;
     gap: 10px;
 }
+.additional-Guidance-Submenu{
+    font-size: 16px;
+    color: #222222;
+    //color:#c7254e;
+    font-weight: bold;
+    margin:  20px 0 2px 0;
+}

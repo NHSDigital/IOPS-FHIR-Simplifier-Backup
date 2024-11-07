@@ -1,4 +1,11 @@
-## {{page-title}}
+---
+topic: Profile-Genomics-Task
+issue: Genomics-Task
+subject: http://hl7.org/fhir/StructureDefinition/Task
+expand: yes
+---
+
+# {{variable:issue}}
 
 The core workflow resource for managing processing of a ServiceRequest from order through to delivery of a DiagnosticReport and completion is Task. Task tracking is a core requirement of the central Genomic Medicine Service.
 
@@ -148,45 +155,10 @@ T3a --> S2 : Task.input
 |--
 | [http://hl7.org/fhir/StructureDefinition/Task](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Task&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
-<br>
+{{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
+ <br>       
 
-<br>
-
-<div class="nhsd-!t-margin-bottom-6">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#Profile" role="tab" data-toggle="tab">Profile</a>
-        </li>
-        <li role="presentation">
-            <a href="#Differential" role="tab" data-toggle="tab">Differential</a>
-        </li>
-        <li role="presentation">
-            <a href="#Constraints" role="tab" data-toggle="tab">Constraints</a>
-        </li>
-        <li role="presentation">
-            <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
-        </li>
-        <li role="presentation">
-            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
-        </li>
-    </ul>
-    <div class="tab-content snippet">
-        <div id="Profile" role="tabpanel" class="tab-pane active">
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/Task, snapshot}}
-        </div>
-        <div id="Differential" role="tabpanel" class="tab-pane">
-         <br />
-         Differential from {{link:http://hl7.org/fhir/StructureDefinition/Task}} <br>
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/Task, diff}}
-        </div>
-        <div id="Dictionary" role="tabpanel" class="tab-pane">
-            <br />
-            {{dict:http://hl7.org/fhir/StructureDefinition/Task, hybrid}}
-        </div>
-        <div id="Examples" role="tabpanel" class="tab-pane">
-            <br />
+<div id="Examples" class="tabcontent">
             <table>
                 <tr>
                     <td>
@@ -360,42 +332,23 @@ T3a --> S2 : Task.input
                 </tr>
             </table>
         </div>
-        <div id="Constraints" role="tabpanel" class="tab-pane">
-            <br />
-            @```
-            from StructureDefinition
-            where url='http://hl7.org/fhir/StructureDefinition/Task'
-            for differential.element.constraint
-            select key, human, severity, expression
-            ```
-        </div>
-        <div id="Mappings" role="tabpanel" class="tab-pane">
-            <br />
-                <table class="assets">
-                    <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
-                    <tr><td>Task.executionPeriod.start</td><td>PLCM activity - Activity start date and time</td><td>Derived from TQ1-7 in the ORL response message for the activity based on the OML request</td></tr>
-                    <tr><td>Task.executionPeriod.end</td><td>PLCM activity - Activity end date and time</td><td>Derived from TQ1-8 in the ORL response message for the activity based on the OML request</td></tr>
+     
+<div id="Mappings" class="tabcontent">
+    <table class="assets">
+        <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
+        <tr><td>Task.executionPeriod.start</td><td>PLCM activity - Activity start date and time</td><td>Derived from TQ1-7 in the ORL response message for the activity based on the OML request</td></tr>
+        <tr><td>Task.executionPeriod.end</td><td>PLCM activity - Activity end date and time</td><td>Derived from TQ1-8 in the ORL response message for the activity based on the OML request</td></tr>
                     <tr><td>Task.owner</td><td>PLCM activity - ODS code of organisation submitting to PLCM, PLCM activity - ODS code of organisation delivering requested test, PLCM activity - ODS code of the laboratory site delivering requested test</td><td>OBR-32.7 if sourced from principle results interpreter, OBX-32.10, AFF-2.10 associated with performing organization</td></tr>
                     <tr><td>Task.status</td><td>PLCM activity - Sample plating quality control</td><td>Implied through status recorded in ORC-25 indicating plating quality control had passed</td></tr>
                     <tr><td>Task.statusReason</td><td>PLCM activity - Sample plating quality control fail code</td><td>ORC-25</td></tr>
                     <tr><td>Task.output</td><td>Extracted specimen - Location details</td><td>SAC-15</td></tr>
-                </table>
-        </div>
-    </div>
+    </table>
 </div>
+ 
 
-### Constraint Profiles
-Profiles indicating preferred element cardinality for use in Genomics, not to be used for validation
 
-@```
-from StructureDefinition
-where baseDefinition='http://hl7.org/fhir/StructureDefinition/Task' 
-select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier&scope=NHS-Digital-FHIR-Genomics-Implementation-Guide@current&canonical='+ url + '">'+url+'</a>'
-```
 
-<br>
-
-### Additional Guidance
+<h3 id='non-fql-header'> Additional Guidance </h3>
 
 - <a href="#basedOn">basedOn</a>
 - <a href="#status">status</a>
@@ -414,11 +367,11 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#output">output</a>
 
 <a name="basedOn"></a>
-#### basedOn
+<h4 class='additional-Guidance-Submenu'> basedOn </h4>
 This element will not be used within the Genomic Medicine Service. The ServiceRequest a Task is seeking to fulfill SHALL be referenced through the `focus` element. Specimen resources being acted upon by tasks related to specimen prep/processing SHOULD be referenced through the `Task.input` element. 
 
 <a name="status"></a>
-#### status
+<h4 class='additional-Guidance-Submenu'> status </h4>
 Initially, automatically populated by the central service upon instantiation. Tasks will be first marked as 'draft' until their prerequisites have been satisfied, after which they will be marked as 'requested' until accepted/claimed by an organization. Upon acceptance, the owning organization is responsible for updating the status up until completion (or if the owning organization is not integrated into the GMS, the organization who has referred the task to the unintegrated org).
 
 If a ServiceRequest is cancelled, any Tasks which have not already moved into in-progress SHALL be moved into the cancelled state, any in-progress Tasks will require lab processes to manage closure of the Task and appropriate reimbursement.
@@ -445,8 +398,9 @@ For the full list of expected Task statuses in use by the GMS, please refer to t
 ```
 
 <a name="statusReason"></a>
-#### statusReason
+<h4 class='additional-Guidance-Submenu'> statusReason </h4>
 Reasons why a Task has been marked as on-hold, cancelled etc. SHOULD use the {{pagelink:Genomic-Task-StatusReason}} CodeSystem. NOTE: The list of appropriate statusReasons is pending finalization.
+
 ```json
 "statusReason": {
         "coding":  [
@@ -460,8 +414,9 @@ Reasons why a Task has been marked as on-hold, cancelled etc. SHOULD use the {{p
 ```
 
 <a name="businessStatus"></a>
-#### businessStatus
+<h4 class='additional-Guidance-Submenu'> businessStatus </h4>
 Genomic specific business statuses for capturing more granular information as part of processing the task. SHOULD use the {{pagelink:Genomic-Business-Status}} CodeSystem. NOTE: The list of appropriate buinessStatuses is pending finalization. Mapping business statuses to the high level container Tasks and statuses is still ongoing.
+
 ```json
 "businessStatus": {
         "coding":  [
@@ -475,7 +430,7 @@ Genomic specific business statuses for capturing more granular information as pa
 ```
 
 <a name="code"></a>
-#### code
+<h4 class='additional-Guidance-Submenu'> code </h4>
 High level coding for the Task, matches the NGTP stages for genomic test processing. Clients SHOULD use the {{pagelink:Genomic-Task-Code}} CodeSystem. NOTE: The list of appropriate codes is pending finalization.
 
 The currently allowed code list and their definition is provided in the table below. The table also provides the cardinality of each Task per ServiceRequest or Sample attached to the request as generated by the central broker on submission of a test request. **Note: the cardinalities listed reflect the number of concurrent active tasks per service request at any one time, there may be cases where additional Tasks need to be spun up manually, e.g. on failure such as when a new sample needs to be processed after a previous sample fails Quality Control, or when further preparation is required**. This cardinality supports the use cases for both requests with multiple participants, e.g. Duo/Trio, and multiple samples per participant e.g. Cancer testing. 
@@ -510,8 +465,9 @@ Rendered within a diagram, the Task cardinalities and their inputs are illustrat
 ```
 
 <a name="focus"></a>
-#### focus
+<h4 class='additional-Guidance-Submenu'> focus </h4>
 The ServiceRequest the Task is fulfilling. Autopopulated by the central service.
+
 ```json
 "focus": {
         "reference": "ServiceRequest/ServiceRequest-SavedTestOrder-Example"
@@ -519,8 +475,9 @@ The ServiceRequest the Task is fulfilling. Autopopulated by the central service.
 ```
 
 <a name="for"></a>
-#### for
+<h4 class='additional-Guidance-Submenu'> for </h4>
 A reference to the Patient resource or the identifier, NHS number, for the patient for whom the Task is for. Autopopulated by the central service.
+
 ```json
 "for": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -532,8 +489,9 @@ A reference to the Patient resource or the identifier, NHS number, for the patie
 ```
 
 <a name="executionPeriod"></a>
-#### executionPeriod
+<h4 class='additional-Guidance-Submenu'> executionPeriod </h4>
 MAY be used to capture start and end DateTimes associated with execution of a Task. It is expected the start time will be populated as a Task is moved to in-progress and the end time will be populated as a Task is marked as completed. Usage of this field will be investigated during the Alpha phase of the Genomic Order Management project as timelines for task execution can also be derived from the AuditEvents recorded as Tasks are updated.
+
 ```json
 "executionPeriod": {
         "start": "2023-10-31T10:25:05+00:00",
@@ -542,22 +500,25 @@ MAY be used to capture start and end DateTimes associated with execution of a Ta
 ```
 
 <a name="authoredOn"></a>
-#### authoredOn
+<h4 class='additional-Guidance-Submenu'> authoredOn </h4>
 Autopopulated by the central service on creation of the Task.
+
 ```json
 "authoredOn": "2023-09-18T18:30:00Z"
 ```
 
 <a name="lastModified"></a>
-#### lastModified
+<h4 class='additional-Guidance-Submenu'> lastModidified </h4>
 Time at which a change to the task was made, e.g. status updated. SHALL be updated on change.
+
 ```json
 "lastModified": "2023-09-18T19:11:00Z"
 ```
 
 <a name="requester"></a>
-#### requester
+<h4 class='additional-Guidance-Submenu'> requester </h4>
 The original requester of the ServiceRequest the Task is fulfilling. Autopopulated by the central service.
+
 ```json
 "requester": {
         "reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
@@ -565,7 +526,7 @@ The original requester of the ServiceRequest the Task is fulfilling. Autopopulat
 ```
 
 <a name="owner"></a>
-#### owner
+<h4 class='additional-Guidance-Submenu'> owner </h4>
 Autopopulated by the central service if a performer is assigned at Test submission. By default, this will the Home GLH for the submitting organization, unless an alternative is specified. The Home GLH/original performer (managing entity) SHOULD remain the owner for the Process Genomic Test Task, throughout the test order-fulfillment process.
 
 This field can be updated by the organization claiming the task (though this could also be autopopulated if automated per test routing tables are integrated into the central service functionality). Owner SHOULD be populated using organization ODS code references. 
@@ -579,6 +540,7 @@ This field can be updated by the organization claiming the task (though this cou
 * In further phases, a routing advice service may be provided by NHS England to aid organizations in identifying which organization should be assigned, after completing their work.
 
 Tasks assigned to a particular organization SHOULD be searched for using the `owner` search parameter with the `:identifier` modifier i.e. `[base]/Task?owner:identifier=8J834` or `[base]/Task?owner:identifier=https://fhir.nhs.uk/Id/ods-organization-code|8J834`
+
 ```json
 "owner": {
         "identifier": {
@@ -590,8 +552,9 @@ Tasks assigned to a particular organization SHOULD be searched for using the `ow
 ```
 
 <a name="note"></a>
-#### note
-Used for messaging between owner and other orgnizations e.g. during handover of task or requesting information from requesting clinician
+<h4 class='additional-Guidance-Submenu'> note </h4>
+Used for messaging between owner and other orgnizations e.g. during handover of task or requesting information from requesting clinician.
+
 ```json
 "note":  [
         {
@@ -601,7 +564,7 @@ Used for messaging between owner and other orgnizations e.g. during handover of 
 ```
 
 <a name="input"></a>
-#### input
+<h4 class='additional-Guidance-Submenu'> input </h4>
 Used to attach inputs to a Task, if relevant. e.g. references to Specimen's which a Sample Processing task is acting on. No CodeSystem exists for this field as of publication but this will be investigated as future work.
 
 Specimen references SHOULD be added to Tasks acting on Specimen resources, e.g. Tasks marked SamplePreparation or SampleProcessing. This is to clearly disambiguate which specimen a task is acting on, where multiple specimens are necessary for processing the test request. 
@@ -641,7 +604,7 @@ The table below provides possible inputs that could be provided for certain Task
 ```
 
 <a name="output"></a>
-#### output
+<h4 class='additional-Guidance-Submenu'> output </h4>
 Used to attach outputs from a Task, if relevant. e.g. VUS files during processing or a DiagnosticReport upon completion of reporting stage. No CodeSystem exists for this field as of publication but this will be investigated as future work.
 
 Sample tracking information SHOULD be added to Tasks acting on Specimen resources, e.g. Tasks marked SamplePreparation or SampleProcessing, on either the output or input elements. This information MAY include consignment number, destination, date sent etc. Further modelling of the types/format expected are pending clinical scenarios.
@@ -679,3 +642,4 @@ The table below provides possible outputs that could be generated by certain Tas
         }
     ]
 ```
+---

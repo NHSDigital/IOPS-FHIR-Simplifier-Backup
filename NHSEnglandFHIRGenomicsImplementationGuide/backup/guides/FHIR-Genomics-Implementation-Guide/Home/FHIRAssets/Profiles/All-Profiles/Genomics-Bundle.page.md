@@ -1,4 +1,12 @@
-## {{page-title}}
+---
+topic: Profile-Genomics-Bundle
+issue: Genomics-Bundle
+subject: http://hl7.org/fhir/StructureDefinition/Bundle
+expand: yes
+---
+
+
+# {{variable:issue}}
 
 The Genomics Bundle is currently pending Clinical and Technical Assurance of the base UKCore resource. Once this profile becomes active in UKCore its suitability for use and need for profiling within Genomics will be assessed. 
 
@@ -10,140 +18,64 @@ Bundles within Genomics will be limited to Transactions for Test orders and upda
 |--|
 | [http://hl7.org/fhir/StructureDefinition/Bundle](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Bundle&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
-<br>
+{{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
 
-<br>
 
-<div class="nhsd-!t-margin-bottom-6">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#Profile" role="tab" data-toggle="tab">Profile</a>
-        </li>
-        <li role="presentation">
-            <a href="#Differential" role="tab" data-toggle="tab">Differential</a>
-        </li>
-        <li role="presentation">
-            <a href="#Constraints" role="tab" data-toggle="tab">Constraints</a>
-        </li>
-        <li role="presentation">
-            <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
-        </li>
-        <li role="presentation">
-            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
-        </li>
-    </ul>
-    <div class="tab-content snippet">
-        <div id="Profile" role="tabpanel" class="tab-pane active">
-            <br />
-            {{tree: http://hl7.org/fhir/StructureDefinition/Bundle, snapshot}}
+<div id="Examples" class="tabcontent">
+            <ul>
+            <li> {{pagelink:Bundle-NonWGSTestOrderForm-CancerSolidTumor-Example}} </li>
+            <li> {{pagelink:Bundle-NonWGSTestOrderForm-Example}} </li>
+            <li> {{pagelink:Bundle-NonWGSTestOrderForm-FetalScenario-Example}} </li>
+            <li> {{pagelink:Bundle-NonWGSTestOrderForm-Reanalysis-Example}} </li>
+            <li> {{pagelink:Bundle-WGSRoD-Example}} </li>
+            <li> {{pagelink:Bundle-WGSTestOrderForm-Example}} </li>
+            <li> {{pagelink:Bundle-TransactionResponseError-Example}} </li>
+            <li> {{pagelink:Bundle-TransactionResponseSuccess-Example}} </li>
+            <li>  {{pagelink:Bundle-Searchset-Example}} </li>
+            </ul>
         </div>
-        <div id="Differential" role="tabpanel" class="tab-pane">
-         <br />
-         Differential from {{link:http://hl7.org/fhir/StructureDefinition/Bundle}} <br>
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/Bundle, diff}}
-        </div>
-        <div id="Dictionary" role="tabpanel" class="tab-pane">
-            <br />
-            {{dict:http://hl7.org/fhir/StructureDefinition/Bundle, hybrid}}
-        </div>
-        <div id="Examples" role="tabpanel" class="tab-pane">
-            <br />
-            <table>
-                <tr>
-                    <td>
-                    {{pagelink:Bundle-NonWGSTestOrderForm-CancerSolidTumor-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Bundle-NonWGSTestOrderForm-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Bundle-NonWGSTestOrderForm-FetalScenario-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Bundle-NonWGSTestOrderForm-Reanalysis-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Bundle-WGSRoD-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Bundle-WGSTestOrderForm-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Bundle-TransactionResponseError-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Bundle-TransactionResponseSuccess-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        {{pagelink:Bundle-Searchset-Example}}
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div id="Constraints" role="tabpanel" class="tab-pane">
-            <br />
-            @```
-            from StructureDefinition
-            where url=':http://hl7.org/fhir/StructureDefinition/Bundle'
-            for differential.element.constraint
-            select key, human, severity, expression
-            ```
-        </div>
-        <div id="Mappings" role="tabpanel" class="tab-pane">
+        
+<div id="Mappings" class="tabcontent">
+<!--
             <br />
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
                     <tr><td></td><td></td><td></td></tr>
                 </table>
+-->
         </div>
-    </div>
-</div>
 
 <br>
 
-### Additional Guidance
+<h3 id='non-fql-header'> Additional Guidance </h3>
 
 - <a href="#type">type</a>
 - <a href="#total">total</a>
 - <a href="#link">link</a>
 - <a href="#entry">entry</a>
-
+<br>
 <a name="type"></a>
-#### type
+<h4 class='additional-Guidance-Submenu'> type </h4>
 SHALL be present. The type of Bundle. This is expected to be `transaction` for Bundles POSTed to the central broker, `transaction-response` for responses to transaction Bundles returned by the broker and `searchset` for collections of resources returned in response to search (GET) requests, as per standard HTTP FHIR rules.
+
 ```json
 "type": "transaction",
 ```
 
 <a name="total"></a>
-#### total
+<h4 class='additional-Guidance-Submenu'> total </h4>
 Only relevant for searchset Bundles. Details the number of resources in the bundle matching the search criteria, not including resources included via the _include criteria.
+
 ```json
 "total": 3,
 ```
 
 <a name="link"></a>
-#### link
+<h4 class='additional-Guidance-Submenu'> link </h4>
 Only relevant for searchset bundles. Details the query string that resulted in the searchset (to allow future queries using the same parameters). `"relation": "self"` will only ever be used.
 
 Links related to response pagination such as next/prev are pending Non-Functional Requirements finalisation for the order management central broker.
+
 ```json
 "link": [
         {
@@ -154,7 +86,7 @@ Links related to response pagination such as next/prev are pending Non-Functiona
 ```
 
 <a name="entry"></a>
-#### entry
+<h4 class='additional-Guidance-Submenu'> entry </h4>
 
 **Transactions**
 
@@ -165,6 +97,7 @@ Resources are expected to contain ids to allow referencing within Bundles, thoug
 Transaction Bundle entries also SHALL contain a request object, specifying the method (either PUT for updates or POST for creates) and the url to send the resource to (equivalent to the resource type for the resource).
 
 Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+
 ```json
 "entry": [
         {
@@ -216,6 +149,7 @@ These Bundles are returned in response to transaction requests. These will only 
 These entries will contain a response object detailing the response status of the individual resource operation and an OperationOutcome detailing any relevant diagnostics, such as validation messages. 
 
 Entries will also contain a location element, detailing the relative path of the resource, where the operation has resulted in a resource being created or updated. These URLs will be version specific (using the _history suffix to denote the version number of the resource) if the resource has been updated.
+
 ```json
 "entry": [
     {
@@ -293,3 +227,4 @@ Each entry is expected to include a fullUrl identifying the URL that can be used
         }
     ]
 ```
+---

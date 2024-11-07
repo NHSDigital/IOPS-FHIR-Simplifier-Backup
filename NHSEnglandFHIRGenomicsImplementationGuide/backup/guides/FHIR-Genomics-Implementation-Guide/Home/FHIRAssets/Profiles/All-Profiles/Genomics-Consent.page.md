@@ -1,4 +1,11 @@
-## {{page-title}}
+---
+topic: Profile-Genomics-Consent
+issue: Genomics-Consent
+subject: http://hl7.org/fhir/StructureDefinition/Consent
+expand: yes
+---
+
+# {{variable:issue}}
 
 Only expected to be used for wrapping Record of Discussion resources within the WGS pathway. Consent for testing is implied through submission of a test to the Genomic Order Management service.
 
@@ -8,126 +15,37 @@ Only a minimal amount of mandatory information needs to be populated.
 |--
 | [http://hl7.org/fhir/StructureDefinition/Consent](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Consent&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
 
-<br>
+{{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
 
-<br>
+<div id="Examples" class="tabcontent">
+            <br />
+            <ul>
+            <li> {{pagelink:Consent-RoD-PheobeSmitham-Example}} </li>
+            <li>  {{pagelink:Consent-RoD-PheobeSmithamFather-Example}} </li>
+            <li> {{pagelink:Consent-RoD-PheobeSmithamMother-Example}} </li>
+            <li> {{pagelink:Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example}} </li>
+            <li>  {{pagelink:Consent-RoDYoungPersonAssentFormAvailable-Example}} </li>
+            <li> {{pagelink:Consent-RoDAvailable-Example}} </li>
+            <li> {{pagelink:Consent-RoDToFollow-Example}} </li>
+            <li> {{pagelink:Consent-RoD-PheobeSmithamAttachmentURL-Example}} </li>
+            <li> {{pagelink:Consent-RoD-PheobeSmithamAttachmentData-Example}}</li>
+            </ul>
+    
+        </div>
 
-<div class="nhsd-!t-margin-bottom-6">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#Profile" role="tab" data-toggle="tab">Profile</a>
-        </li>
-        <li role="presentation">
-            <a href="#Differential" role="tab" data-toggle="tab">Differential</a>
-        </li>
-        <li role="presentation">
-            <a href="#Constraints" role="tab" data-toggle="tab">Constraints</a>
-        </li>
-        <li role="presentation">
-            <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
-        </li>
-        <li role="presentation">
-            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
-        </li>
-    </ul>
-    <div class="tab-content snippet">
-        <div id="Profile" role="tabpanel" class="tab-pane active">
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/Consent, snapshot}}
-        </div>
-        <div id="Differential" role="tabpanel" class="tab-pane">
-         <br />
-         Differential from {{link:http://hl7.org/fhir/StructureDefinition/Consent}} <br>
-            <br />
-            {{tree:http://hl7.org/fhir/StructureDefinition/Consent, diff}}
-        </div>
-        <div id="Dictionary" role="tabpanel" class="tab-pane">
-            <br />
-            {{dict:http://hl7.org/fhir/StructureDefinition/Consent, hybrid}}
-        </div>
-        <div id="Examples" role="tabpanel" class="tab-pane">
-            <br />
-            <table>
-                <tr>
-                    <td>
-                    {{pagelink:Consent-RoD-PheobeSmitham-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Consent-RoD-PheobeSmithamFather-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Consent-RoD-PheobeSmithamMother-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Consent-RoD-PheobeSmithamYoungPersonAssentForm-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Consent-RoDYoungPersonAssentFormAvailable-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Consent-RoDAvailable-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Consent-RoDToFollow-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Consent-RoD-PheobeSmithamAttachmentURL-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    {{pagelink:Consent-RoD-PheobeSmithamAttachmentData-Example}}
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div id="Constraints" role="tabpanel" class="tab-pane">
-            <br />
-            @```
-            from StructureDefinition
-            where url='http://hl7.org/fhir/StructureDefinition/Consent'
-            for differential.element.constraint
-            select key, human, severity, expression
-            ```
-        </div>
-        <div id="Mappings" role="tabpanel" class="tab-pane">
-            <br />
+<div id="Mappings" class="tabcontent">
+<br>
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
                     <tr><td>Consent.sourceAttachment</td><td>RoD - Record of discussion form - copy attached</td><td>CON-19 (for OML, included in RoD, referenced from NTE-3)</td></tr>
                     <tr><td>Consent.status</td><td>RoD - Patient conversation taken place, ROD form to follow</td><td>Inferred through CON-19 value (for OML, included in RoD, referenced from NTE-3)</td></tr>
                 </table>
         </div>
-    </div>
-</div>
 
-
-### Constraint Profiles
-Profiles indicating preferred element cardinality for use in Genomics, not to be used for validation
-
-@```
-from StructureDefinition
-where baseDefinition='http://hl7.org/fhir/StructureDefinition/Consent' 
-select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier&scope=NHS-Digital-FHIR-Genomics-Implementation-Guide@current&canonical='+ url + '">'+url+'</a>'
-```
 
 <br>
 
-### Additional Guidance
+<h3 id='non-fql-header'> Additional Guidance </h3>
 
 - <a href="#status">status</a>
 - <a href="#scope">scope</a>
@@ -137,15 +55,17 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#provision">provision</a>
 
 <a name="status"></a>
-#### status
+<h4 class='additional-Guidance-Submenu'> status </h4>
 SHALL be present. Fixed code of 'proposed' where consent discussion has taken place but RoD form has not been provided alongside test order. 'draft' if discussion has not yet taken place and 'active' for completed RoD, regardless of whether the patient has consented to information sharing (responses to specific consent statements SHOULD be recorded in the RoD itself).
+
 ```json
 "status": "proposed",
 ```
 
 <a name="scope"></a>
-#### scope
+<h4 class='additional-Guidance-Submenu'> scope </h4>
 For WGS RoD this SHALL be fixed to the below code:
+
 ```json
 "scope": {
         "coding":  [
@@ -159,8 +79,9 @@ For WGS RoD this SHALL be fixed to the below code:
 ```
 
 <a name="category"></a>
-#### category
+<h4 class='additional-Guidance-Submenu'> category </h4>
 For WGS RoD this SHALL be fixed to the below code:
+
 ```json
 "category":  [
         {
@@ -176,8 +97,9 @@ For WGS RoD this SHALL be fixed to the below code:
 ```
 
 <a name="source"></a>
-#### source\[x\]
+<h4 class='additional-Guidance-Submenu'> source[x] </h4>
 SHALL be present for RoD entities. The Source element MAY either be a pointer to the location of the PDF version of the RoD, either hosted by the source/client system, accessed via NRL or embedded within the message payload, base64 encoded (using sourceAttachment), or a reference to a QuestionnaireResponse resource (using sourceReference), if this has been collected in a structured format, using the {{pagelink:Questionnaire-Genomic-Testing}} RoD template.
+
 ```json
 "sourceReference": {
         "reference": "QuestionnaireResponse/QuestionnaireResponse-RoD-Example"
@@ -185,8 +107,9 @@ SHALL be present for RoD entities. The Source element MAY either be a pointer to
 ```
 
 <a name="policy"></a>
-#### policy
+<h4 class='additional-Guidance-Submenu'> policy </h4>
 For WGS RoD this SHALL be fixed to the below uris:
+
 ```json
 "policy":  [
         {
@@ -197,8 +120,9 @@ For WGS RoD this SHALL be fixed to the below uris:
 ```
 
 <a name="provision"></a>
-#### provision
+<h4 class='additional-Guidance-Submenu'> provision </h4>
 Used to reference the ServiceRequest the Consent applies to. SHALL be present where the consent only applies to a specific test.
+
 ```json
 "provision": {
         "data": [
@@ -211,3 +135,4 @@ Used to reference the ServiceRequest the Consent applies to. SHALL be present wh
         ]
     }
 ```
+---
