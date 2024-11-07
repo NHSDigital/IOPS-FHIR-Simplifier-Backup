@@ -1,8 +1,9 @@
 html, body {
      padding: 0;
      margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #231f20;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 16px;
+     color: #231f20;
 }
  body {
      position: relative;
@@ -107,7 +108,7 @@ hr.thickline{
      cursor: pointer;
      padding: 14px 16px;
      transition: 0.3s;
-     font-size: 14px;
+     font-size: 16px;
 }
 /* Change background color of buttons on hover */
  .tab button:hover {
@@ -140,7 +141,7 @@ hr.thickline{
      outline: none;
      cursor: pointer;
      transition: 0.3s;
-     font-size: 14px;
+     font-size: 16px;
      color: #425563 !important;
 }
 /* Change background color of buttons on hover */
@@ -168,7 +169,7 @@ hr.thickline{
      cursor: pointer;
      padding: 14px 16px;
      transition: 0.3s;
-     font-size: 14px;
+     font-size: 16px;
 }
 .cool-tabs .nav-tabs>li>a:focus,.cool-tabs .nav-tabs>li>a:hover {
     background-color: #919ea8;
@@ -192,7 +193,7 @@ hr.thickline{
 
 /*core UKCore table style*/
 table.assets {
-     font-family: Arial, Helvetica, sans-serif !important;
+     /*font-family: Arial, Helvetica, sans-serif !important;*/
      border-collapse: collapse !important;
      width: 100% !important;
 }
@@ -272,7 +273,7 @@ table.assets tr td.balloted {
 }
 
 table.valuesetlist {
-     font-family: Arial, Helvetica, sans-serif;
+     /*font-family: Arial, Helvetica, sans-serif;*/
      border-collapse: collapse;
      width: 100%;
 }
@@ -443,8 +444,8 @@ td.frm-set {
     width: 100%;
     position: relative;
     display: table;
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
+    /*font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-size: 16px;
     line-height: 1.42857;
     margin-bottom: 10px;
 }
@@ -609,7 +610,7 @@ h2 code {
   background: #222;
   color: #fff;
   font-size: 1em;
-  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  /*font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;*/
   box-sizing: border-box;
   padding: 15px 30px 15px;
 }
@@ -666,7 +667,7 @@ h2 code {
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
@@ -696,6 +697,12 @@ color: #0072CE;
  .alert-danger {
     background-color: #ffb81c;
     border-color: #ffb81c;
+    color: #231f20;
+ }
+
+  .alert-info {
+    background-color: #ffe5a2;
+    border-color: #ffe5a2;
     color: #231f20;
  }
 
