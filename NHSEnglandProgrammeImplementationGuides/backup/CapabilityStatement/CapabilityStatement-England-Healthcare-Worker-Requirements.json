@@ -46,43 +46,10 @@
             "supportedProfile" : [
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"
             ],
-            "documentation" : "\n```\nGET /Practitioner?{parameters}\n```\n\nConformance to this implementation guide **SHOULD** be tested via [FHIR Validation](https://hl7.org/fhir/R4/validation.html).\n\n**Search Examples**\n\nSearch for Practitioner with a SDS User Id = 3415870201\n\n```\nGET /Practitioner?identifier=https://fhir.nhs.uk/Id/sds-user-id|3415870201\n```\n",
+            "documentation" : "\n```\nGET /Practitioner?{id}\n```\n\nConformance to this implementation guide **SHOULD** be tested via [FHIR Validation](https://hl7.org/fhir/R4/validation.html).\n\n**Search Examples**\n\nRead of a Practitioner with a SDS User Id = 3415870201\n\n```\nGET /Practitioner/3415870201\n```\n",
             "interaction" : [
               {
-                "code" : "search-type"
-              }
-            ],
-            "searchParam" : [
-              {
-                "name" : "identifier",
-                "type" : "token",
-                "documentation" : "A practitioner's Identifier"
-              }
-            ]
-          },
-          {
-            "extension" : [
-              {
-                "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode" : "SHALL"
-              }
-            ],
-            "type" : "PractitionerRole",
-            "profile" : "https://fhir.nhs.uk/England/StructureDefinition/England-PractitionerRole-Healthcare-Worker",
-            "supportedProfile" : [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"
-            ],
-            "documentation" : "\n```\nGET /PractitionerRole?{parameters}\n```\n\nConformance to this implementation guide **SHOULD** be tested via [FHIR Validation](https://hl7.org/fhir/R4/validation.html).\n\n**Search Examples**\n\nSearch for PractitionerRole with a SDS User Profile Id = 454567759542\n\n```\nGET /PractitionerRole?identifier=https://fhir.nhs.uk/Id/sds-role-profile-id|454567759542\n```\n",
-            "interaction" : [
-              {
-                "code" : "search-type"
-              }
-            ],
-            "searchParam" : [
-              {
-                "name" : "identifier",
-                "type" : "token",
-                "documentation" : "A practitioner's Identifier"
+                "code" : "read"
               }
             ]
           }
