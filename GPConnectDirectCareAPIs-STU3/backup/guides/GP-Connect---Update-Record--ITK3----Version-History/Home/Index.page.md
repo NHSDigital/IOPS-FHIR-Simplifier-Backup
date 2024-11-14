@@ -7,12 +7,6 @@
         <th data-no-sort>Link</th>
     </thead>
     <tbody>
-        <!-- working draft -->
-        <tr>
-            <td>Working draft</td>
-            <td>NA</td>
-            <td><a href="https://simplifier.net/guide/gp-connect--update-record--itk3/Home/Introduction/Release-notes?version=current">Link</a></td>
-        </tr>
         <!-- 1.1.5 -->
         <tr>
             <td>1.1.5-public-beta</td>
