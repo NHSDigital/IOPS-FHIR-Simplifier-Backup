@@ -89,12 +89,12 @@ The following table outlines the valid combinations of SNOMED codes which can be
             <td colspan="9" class="nhsd-m-table__highlighted-items" />
         </tr>
         <tr>
-            <td>24 hour blood pressure</td>
-            <td>314463006</td>
-            <td>Average 24 hour systolic blood pressure</td>
-            <td>314449000</td>
-            <td>Average 24 hour diastolic blood pressure</td>
-            <td>314462001</td>
+            <td>Average ambulatory blood pressure</td>
+            <td>2181371000000107</td>
+            <td>Average ambulatory systolic blood pressure</td>
+            <td>2181381000000109</td>
+            <td>Average ambulatory diastolic blood pressure</td>
+            <td>2181391000000106</td>
         </tr>
         <tr>
             <td colspan="9" class="nhsd-m-table__highlighted-items" />
