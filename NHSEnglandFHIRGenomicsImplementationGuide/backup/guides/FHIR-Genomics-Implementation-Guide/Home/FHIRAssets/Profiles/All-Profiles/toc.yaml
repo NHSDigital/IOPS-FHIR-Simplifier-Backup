@@ -16,18 +16,18 @@
   filename: UKCore-DiagnosticReport.page.md
 - name: Genomics-DocumentReference
   filename: Genomics-DocumentReference.page.md
-- name: Genomics-FamilyMemberHistory
-  filename: Genomics-FamilyMemberHistory.page.md
-- name: Genomics-Observation
-  filename: Genomics-Observation.page.md
+- name: UKCore-FamilyMemberHistory
+  filename: UKCore-FamilyMemberHistory.page.md
+- name: UKCore-Observation
+  filename: UKCore-Observation.page.md
 - name: Genomics-OperationOutcome
   filename: Genomics-OperationOutcome.page.md
-- name: Genomics-Organization
-  filename: Genomics-Organization.page.md
-- name: Genomics-Patient
-  filename: Genomics-Patient.page.md
-- name: Genomics-Practitioner
-  filename: Genomics-Practitioner.page.md
+- name: UKCore-Organization
+  filename: UKCore-Organization.page.md
+- name: UKCore-Patient
+  filename: UKCore-Patient.page.md
+- name: UKCore-Practitioner
+  filename: UKCore-Practitioner.page.md
 - name: Genomics-PractitionerRole
   filename: Genomics-PractitionerRole.page.md
 - name: Genomics-Procedure
