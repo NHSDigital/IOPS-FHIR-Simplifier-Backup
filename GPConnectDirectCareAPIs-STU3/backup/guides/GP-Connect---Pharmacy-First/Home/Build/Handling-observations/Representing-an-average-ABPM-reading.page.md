@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-The following triple will be used to represent an average reading from an ambulatory blood pressure monitoring (ABPM) device.
+The following triplet will be used to represent an average reading from an ambulatory blood pressure monitoring (ABPM) device.
 
 
 - **Header**: [2181371000000107 |Average ambulatory blood pressure (observable entity)|](https://termbrowser.nhs.uk/?perspective=full&conceptId1=2181371000000107)
@@ -22,7 +22,7 @@ These codes represent an average calculated from readings that have been taken o
     <li>2181421000000100 |Average ambulatory night interval systolic blood pressure (observable entity)</li>
     <li>2181431000000103 |Average ambulatory night interval diastolic blood pressure (observable entity)</li>
     </ul>
-    Once the two new parent codes are available,suppliers will be asked to begin sending and receiving the two complete day interval / night interval triplets.
+    <b>Suppliers should note however that day/night interval codes are only relevant to children and therefore are outside the current scope of Pharmacy First</b>
 </div>
 
 Snippet (elements removed for brevity)

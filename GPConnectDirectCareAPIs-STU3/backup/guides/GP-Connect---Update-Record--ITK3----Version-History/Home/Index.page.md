@@ -7,6 +7,12 @@
         <th data-no-sort>Link</th>
     </thead>
     <tbody>
+        <!-- 1.2.0 -->
+        <tr>
+            <td>1.2.0-public-beta</td>
+            <td>Fri, 15th Nov 2024</td>
+            <td><a href="https://simplifier.net/guide/gp-connect--update-record--itk3/Home/Introduction/Release-notes?version=1.2.0-public-beta">Link</a></td>
+        </tr>
         <!-- 1.1.5 -->
         <tr>
             <td>1.1.5-public-beta</td>
