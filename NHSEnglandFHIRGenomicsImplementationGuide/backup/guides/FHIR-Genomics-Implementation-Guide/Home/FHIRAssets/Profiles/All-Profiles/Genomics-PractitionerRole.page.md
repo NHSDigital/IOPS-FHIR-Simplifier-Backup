@@ -1,4 +1,9 @@
-## {{page-title}}
+---
+topic: Profile-UKCore-PractitionerRole
+issue: UKCore-Practitioner
+subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole
+expand: yes
+---
 
 PractitionerRole resources SHOULD be used where information about both a practitioner and their role within a specific organization is required, e.g. as the ServiceRequest.requestor.
 
@@ -6,125 +11,70 @@ References to Practitioner and Organization resources SHOULD only be made via id
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
+| <a href='https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole</a>(https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release' target="_blank"> | [UKCore]() | trial-use |
 
-<br>
+{{page:Home-FHIRAssets-Profiles-All-Profiles-UKCoreProfilesTemplatePage}}
 
-<br>
+        <div id="Examples" class="tabcontent">
+            <br />
+           <ul>
 
-<div class="nhsd-!t-margin-bottom-6">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#Profile" role="tab" data-toggle="tab">Profile</a>
-        </li>
-        <li role="presentation">
-            <a href="#Differential" role="tab" data-toggle="tab">Differential</a>
-        </li>
-        <li role="presentation">
-            <a href="#Constraints" role="tab" data-toggle="tab">Constraints</a>
-        </li>
-        <li role="presentation">
-            <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
-        </li>
-        <li role="presentation">
-            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
-        </li>
-    </ul>
-    <div class="tab-content snippet">
-        <div id="Profile" role="tabpanel" class="tab-pane active">
-            <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole, snapshot}}
-        </div>
-        <div id="Differential" role="tabpanel" class="tab-pane">
-         <br />
-         Differential from {{link:http://hl7.org/fhir/StructureDefinition/PractitionerRole}} <br>
-            <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole, diff}}
-        </div>
-        <div id="Dictionary" role="tabpanel" class="tab-pane">
-            <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole, hybrid}}
-        </div>
-        <div id="Examples" role="tabpanel" class="tab-pane">
-            <br />
-            <table>
-                <tr>
-                    <td>
+                    <li>
                     {{pagelink:PractitionerRole-AnnaLaneKingstonPathology-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                
+                    <li>
                     {{pagelink:PractitionerRole-EugeneSmith-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                    <li>
                     {{pagelink:PractitionerRole-EugeneSmithLeedsSTH-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+              
+                    <li>
                     {{pagelink:PractitionerRole-GeneSmithENT-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                    <li>
                     {{pagelink:PractitionerRole-HazelSmithKingstonPathology-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                    <li>
                     {{pagelink:PractitionerRole-HazelSmithPathology-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+              
+                    <li>
                     {{pagelink:PractitionerRole-HazelSmithRenal-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+               
+                    <li>
                     {{pagelink:PractitionerRole-JamesTaylorKingstonPathology-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                    <li>
                     {{pagelink:PractitionerRole-LoisLane-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+              
+                    <li>
                     {{pagelink:PractitionerRole-LoisLaneKingstonClinicalGenetics-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+              
+                    <li>
                     {{pagelink:PractitionerRole-LucyHale-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+               
+                    <li>
                     {{pagelink:PractitionerRole-MarySmith-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+             
+                    <li>
                     {{pagelink:PractitionerRole-OscarShields-Example}}
-                    </td>
-                </tr>
-            </table>
+                    </li>
+                </ul>
         </div>
-        <div id="Constraints" role="tabpanel" class="tab-pane">
-            <br />
-            @```
-            from StructureDefinition
-            where url='https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole'
-            for differential.element.constraint
-            select key, human, severity, expression
-            ```
-        </div>
-        <div id="Mappings" role="tabpanel" class="tab-pane">
+   
+        <div id="Mappings" class="tabcontent">
             <br />
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
@@ -136,9 +86,7 @@ References to Practitioner and Organization resources SHOULD only be made via id
                     <tr><td>PractitionerRole.healthcareService</td><td>PLCM activity - ODS code of the laboratory site delivering requested test, PLCM activity - Commissioned service category code</td><td>Additional CTD-1 segments</td></tr>
                 </table>
         </div>
-    </div>
-</div>
-
+  
 ### Constraint Profiles
 Profiles indicating preferred element cardinality for use in Genomics, not to be used for validation
 

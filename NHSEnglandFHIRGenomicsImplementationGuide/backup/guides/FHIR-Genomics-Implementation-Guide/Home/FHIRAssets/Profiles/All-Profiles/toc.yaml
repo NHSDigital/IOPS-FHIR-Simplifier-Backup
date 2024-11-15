@@ -30,6 +30,8 @@
   filename: UKCore-Practitioner.page.md
 - name: Genomics-PractitionerRole
   filename: Genomics-PractitionerRole.page.md
+- name: UKCore-PractitinerRole
+  filename: UKCore-PractitinerRole.page.md
 - name: Genomics-Procedure
   filename: Genomics-Procedure.page.md
 - name: Genomics-Provenance
