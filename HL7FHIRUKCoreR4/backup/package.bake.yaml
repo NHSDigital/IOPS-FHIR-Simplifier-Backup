@@ -1,8 +1,8 @@
 # Transform all resources to JSON (Mandatory according to the specification)
-tranform-to-json:
+transform-to-json:
   - source: input
   - category: Resource
-  - tranform: json
+  - transform: json
   - target: bucket1
 
 # Generate snapshots for all StructureDefinitions (Optional)
@@ -24,6 +24,7 @@ move-conformance-resources:
 move-examples:
   - source: bucket1
   - category: Instance
+  #- transform: json
   - move: /package/examples
   - target: output
 
