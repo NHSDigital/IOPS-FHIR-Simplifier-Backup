@@ -1,7 +1,7 @@
 - name: Index
   filename: Index.page.md
-- name: Consultations - Data Model
-  filename: Consultations---Data-Model.page.md
+- name: Consultations - data model
+  filename: Consultations-Data-Model.page.md
 - name: PFS Recommendation
   filename: PFS-Recommendation.page.md
 - name: Further Information
