@@ -15,7 +15,7 @@ It is not expected that any Questionnaire resources will be submitted to the cen
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [http://hl7.org/fhir/StructureDefinition/Questionnaire](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Questionnaire&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
+| <a href='https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Questionnaire&scope=hl7.fhir.r4.core@4.0.1' target="_blank">http://hl7.org/fhir/StructureDefinition/Questionnaire</a> | [HL7 International]() | trial-use |
 
 {{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
 

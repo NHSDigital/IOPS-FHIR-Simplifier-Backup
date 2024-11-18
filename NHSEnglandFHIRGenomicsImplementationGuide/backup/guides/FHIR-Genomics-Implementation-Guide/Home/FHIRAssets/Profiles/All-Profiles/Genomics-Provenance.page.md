@@ -15,7 +15,7 @@ The HL7 FHIR specification also provides the capability to attach a Provenance r
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [http://hl7.org/fhir/StructureDefinition/Provenance](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Provenance&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
+| <a href='https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/Provenance&scope=hl7.fhir.r4.core@4.0.1' target="_blank">http://hl7.org/fhir/StructureDefinition/Provenance </a> | [HL7 International]() | trial-use |
 
 {{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
 

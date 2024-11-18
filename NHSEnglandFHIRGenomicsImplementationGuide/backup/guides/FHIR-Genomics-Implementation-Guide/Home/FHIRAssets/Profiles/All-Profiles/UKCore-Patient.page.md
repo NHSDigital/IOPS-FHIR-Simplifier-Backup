@@ -170,6 +170,7 @@ Alternatively, systems MAY opt to include pointers to the Patient resource on th
 <a name="extension:UKCore-birthSex"></a>
 <h4 class='additional-Guidance-Submenu'> extension:UKCore-birthSex </h4>
 Extension used for recording the phenotypic sex of the patient, as recorded at birth.
+
 ```json
     {
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",

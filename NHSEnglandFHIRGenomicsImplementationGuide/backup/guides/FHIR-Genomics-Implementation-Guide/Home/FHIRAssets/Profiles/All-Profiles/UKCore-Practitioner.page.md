@@ -18,14 +18,13 @@ The below profile is provided for information, if referencing by identifier is i
 {{page:Home-FHIRAssets-Profiles-All-Profiles-UKCoreProfilesTemplatePage}}
 
 <div id="Examples" class="tabcontent">
-            <table>
-                <tr>
-                    <td>
+           <ul>
+                <li>
                     {{pagelink:Practitioner-LucyHale-Example}}
-                    </td>
-                </tr>
-            </table>
-        </div>
+                </li>
+            </Ul>
+            
+</div>
 
  <div id="Mappings" class="tabcontent">
             <br />
