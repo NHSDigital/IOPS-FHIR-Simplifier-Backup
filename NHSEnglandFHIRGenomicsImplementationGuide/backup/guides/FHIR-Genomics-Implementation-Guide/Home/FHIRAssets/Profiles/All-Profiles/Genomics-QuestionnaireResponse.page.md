@@ -15,7 +15,7 @@ No additional guidance has been provided on this page as there are no Genomic-sp
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse](https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse&scope=hl7.fhir.r4.core@4.0.1) | [HL7 International]() | trial-use |
+| <a href='https://simplifier.net/resolve?target=simplifier&canonical=http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse&scope=hl7.fhir.r4.core@4.0.1' target="_blank">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse </a> | [HL7 International]() | trial-use |
 
 {{page:Home-FHIRAssets-Profiles-All-Profiles-BaseProfilesTemplatePage}}
         

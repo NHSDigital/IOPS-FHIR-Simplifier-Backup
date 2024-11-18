@@ -1,8 +1,15 @@
-## {{page-title}}
+---
+topic: Profile-UKCore-Procedure
+issue: UKCore-Procedure
+subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure
+expand: yes
+---
+
+## StructureDefinition {{variable:issue}}
 
 Used for detailing information on procedures the patient has had performed, to aid interpretation of Genomic test results.
 
-Assertion of an absence of a procedure being performed SHOULD be recorded using an Observation resource, as described in {{pagelink:Genomics-Observation}}
+Assertion of an absence of a procedure being performed SHOULD be recorded using an Observation resource, as described in {{pagelink:Profile-UKCore-Observation,text:Profile-UKCore-Observation}}
 
 At a minimum, Procedure resources are expected to contain the status, code, subject and performedDateTime, though additional information conforming to the FHIR profile below MAY be included if relevant.
 
@@ -10,70 +17,23 @@ At a minimum, Procedure resources are expected to contain the status, code, subj
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
+| <a href='https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release' target="_blank">https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure</a> | [UKCore]() | trial-use |
 
+{{page:Home-FHIRAssets-Profiles-All-Profiles-UKCoreProfilesTemplatePage}}
+
+<div id="Examples" class="tabcontent">
 <br>
-
-<br>
-
-<div class="nhsd-!t-margin-bottom-6">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#Profile" role="tab" data-toggle="tab">Profile</a>
-        </li>
-        <li role="presentation">
-            <a href="#Differential" role="tab" data-toggle="tab">Differential</a>
-        </li>
-        <li role="presentation">
-            <a href="#Constraints" role="tab" data-toggle="tab">Constraints</a>
-        </li>
-        <li role="presentation">
-            <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
-        </li>
-        <li role="presentation">
-            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
-        </li>
-    </ul>
-    <div class="tab-content snippet">
-        <div id="Profile" role="tabpanel" class="tab-pane active">
-            <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure, snapshot}}
-        </div>
-        <div id="Differential" role="tabpanel" class="tab-pane">
-         <br />
-         Differential from {{link:http://hl7.org/fhir/StructureDefinition/Procedure}} <br>
-            <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure, diff}}
-        </div>
-        <div id="Dictionary" role="tabpanel" class="tab-pane">
-            <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure, hybrid}}
-        </div>
-        <div id="Examples" role="tabpanel" class="tab-pane">
-            <br />
-            <table>
-                <tr>
-                    <td>
+  <ul>
+                
+                    <li>
                     {{pagelink:Procedure-MichaelJonesTransplant}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                    <li>
                     {{pagelink:Procedure-InVitroFertilisation-Example}}
-                    </td>
-                </tr>
-            </table>
+                    </li>
+                </ul>
         </div>
-        <div id="Constraints" role="tabpanel" class="tab-pane">
-            <br />
-            @```
-            from StructureDefinition
-            where url='https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure'
-            for differential.element.constraint
-            select key, human, severity, expression
-            ```
-        </div>
-        <div id="Mappings" role="tabpanel" class="tab-pane">
+        <div id="Mappings" class="tabcontent">
             <br />
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
@@ -84,21 +44,14 @@ At a minimum, Procedure resources are expected to contain the status, code, subj
                     <tr><td>Procedure.performedPeriod.end</td><td>Neonatal hypoglycemia treatment end date</td><td>OBR-8</td></tr>
                 </table>
         </div>
-    </div>
-</div>
-
-### Constraint Profiles
-Profiles indicating preferred element cardinality for use in Genomics, not to be used for validation
-
-@```
-from StructureDefinition
-where baseDefinition='https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure' 
-select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier&scope=NHS-Digital-FHIR-Genomics-Implementation-Guide@current&canonical='+ url + '">'+url+'</a>'
-```
 
 <br>
+<div id="Feedback" class="tabcontent">
+{{page:Home-FeedbackTemplate-FeedbackLink}}
+</div>
 
-### Additional Guidance
+<h3 id='non-fql-header'> Additional Guidance </h3>
+
 	
 - <a href="#extension:genomic-study-analysis">extension:genomic-study-analysis</a>
 - <a href="#genomic-study-analysis">Genomic Study Analysis extensions</a>
@@ -108,7 +61,8 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#performed">performed\[x\]</a>
 
 <a name="extension:genomic-study-analysis"></a>
-#### extension:genomic-study-analysis
+<h4 class='additional-Guidance-Submenu'> extension:genomic-study-analysis </h4>
+
 TBC. From the Genomic Reporting IG [Genomic Study](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study.html) profile. Reference to the [Genomic Study Analysis](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study-analysis.html) resource, detailing the analyses performed as part of genomic test.
 ```json
 "extension" : [
@@ -122,7 +76,8 @@ TBC. From the Genomic Reporting IG [Genomic Study](https://build.fhir.org/ig/HL7
 ```
 
 <a name="genomic-study-analysis"></a>
-#### Genomic Study Analysis extensions
+<h4 class='additional-Guidance-Submenu'> Genomic Study Analysis extensions </h4>
+
 TBC. From the Genomic Reporting IG [Genomic Study Analysis](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study-analysis.html) profile. Various extensions covering the metadata related to a genomic test, e.g. regions studied, change types tested for etc. For the full list of extensions, please see the linked profile page.
 
 Use of the profile and its extensions is pending further discovery of the data standards required for Genomic Reporting in the UK.
@@ -200,14 +155,16 @@ Use of the profile and its extensions is pending further discovery of the data s
 ```
 
 <a name="status"></a>
-#### status
+<h4 class='additional-Guidance-Submenu'> status </h4>
+
 Status SHALL use the codes recommended in the base Procedure resource, appropriately tagging procedures as having been completed or in-progress etc. depending on the actual status of the procedure.
 ```json
 "status": "completed",
 ```
 
 <a name="code"></a>
-#### code
+<h4 class='additional-Guidance-Submenu'> code </h4>
+
 SHALL be present. SNOMED CT coding is preferred, though alternative codings MAY be provided subject to review of the Coding system by the NHS England Genomics Unit.
 
 For the [Genomic Study](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-study.html) profile, expected to be from the [Genomic Study Type ValueSet](https://build.fhir.org/ig/HL7/genomics-reporting/ValueSet-genomic-study-type-vs.html)
@@ -224,7 +181,8 @@ For the [Genomic Study](https://build.fhir.org/ig/HL7/genomics-reporting/Structu
 ```
 
 <a name="subject"></a>
-#### subject
+<h4 class='additional-Guidance-Submenu'> subject </h4>
+
 SHALL be present. Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS.
 ```json
 "subject": {
@@ -237,8 +195,11 @@ SHALL be present. Reference to the associated Patient. This MAY be through a res
 ```
 
 <a name="performed"></a>
-#### performed\[x\]
+<h4 class='additional-Guidance-Submenu'> performed[x] </h4>
+
 performed SHOULD be provided wherever possible, using the appropriate data type, to aid in interpretation of Genomic test results.
 ```json
 "performedDateTime": "2020-01-19"
 ```
+
+---

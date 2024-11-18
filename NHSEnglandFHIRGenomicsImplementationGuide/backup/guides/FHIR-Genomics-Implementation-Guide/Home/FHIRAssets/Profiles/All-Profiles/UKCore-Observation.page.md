@@ -312,6 +312,7 @@ For new observations which invalidate previous observations made about a patient
 
 <a name="extension:observation-replaces"></a>
 <h4 class='additional-Guidance-Submenu'> extension:observation-replaces </h4>
+
 A core extension on the base HL7 International Observation resource. Used to link to previous Observation resources which have been invalidated by this Observation instance, e.g. for cases where a previously present HPO term is now no longer applicable. For new observations which invalidate previous observations made about a patient, the new Observation resource SHOULD be created, and MAY reference the invalidated observation via the observation-replaces extension.
 
 ```json
@@ -325,16 +326,16 @@ A core extension on the base HL7 International Observation resource. Used to lin
 
 <a name="status"></a>
 <h4 class='additional-Guidance-Submenu'> status </h4>
-SHOULD be marked as `final` for most observations unless corrected after submission. Observations within Genomics are used to represent a point-in-time observation made about a patient or specimen. This means Observations should not be updated post-submission unless the original Observation has been entered in error or incorrectly coded (in this case, the appropriate status SHALL be used, e.g. `entered-in-error` or `corrected`, respectively).
 
+SHOULD be marked as `final` for most observations unless corrected after submission. Observations within Genomics are used to represent a point-in-time observation made about a patient or specimen. This means Observations should not be updated post-submission unless the original Observation has been entered in error or incorrectly coded (in this case, the appropriate status SHALL be used, e.g. `entered-in-error` or `corrected`, respectively).
 ```json
 "status": "final",
 ```
 
 <a name="code"></a>
 <h4 class='additional-Guidance-Submenu'> code </h4>
-SHALL be present. SNOMED CT coding is preferred, though it is expected that alternative codings will be used depending on the appropriateness for a particular observation e.g. HPO or other codings found within the [HL7 International Genomic Reporting IG](https://hl7.org/fhir/uv/genomics-reporting/codings.html) as their use may already be widespread within Genomics. If a SNOMED CT equivalent exists for a code regularly captured within another CodeSystem, additional 'coding' elements within 'code' SHOULD be provided to aid analytics.
 
+SHALL be present. SNOMED CT coding is preferred, though it is expected that alternative codings will be used depending on the appropriateness for a particular observation e.g. HPO or other codings found within the [HL7 International Genomic Reporting IG](https://hl7.org/fhir/uv/genomics-reporting/codings.html) as their use may already be widespread within Genomics. If a SNOMED CT equivalent exists for a code regularly captured within another CodeSystem, additional 'coding' elements within 'code' SHOULD be provided to aid analytics.
 ```json
 "code": {
         "coding":  [
