@@ -787,7 +787,7 @@ Provider systems **MUST** include the following in the response `Bundle`:
 
   - A [`List`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_list.html) resource referencing [`ReferralRequest`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_referralrequest.html) resources that match the supplied query parameters
   - A [`List`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_list.html) resource referencing [`Condition`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_problems.html) resources that are linked from the returned [`ReferralRequest`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_referralrequest.html) resources
-  - [`ReferralRequest`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_referralrequest.html), [`Condition`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_problems.html) and [`DocumentReference`](https://developer.nhs.uk/apis/gpconnect-1-5-1/access_documents_development_documentreference.html) resources representing the patient's referrals will be returned.
+  - [`ReferralRequest`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_referralrequest.html), [`Condition`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_problems.html) and [`DocumentReference`](https://developer.nhs.uk/apis/gpconnect-1-5-1/access_documents_development_documentreference.html) resources representing the patient's referrals will be returned
 
 - when the `referralSearchPeriod` is set:
   - when a `start` value is set, all referrals with a `ReferralRequest.authoredOn` after the date **MUST** be returned
@@ -796,9 +796,9 @@ Provider systems **MUST** include the following in the response `Bundle`:
 
 - `Organization`, `Practitioner`, `PractitionerRole` and `HealthcareService` resources that are referenced by the above resources that represent the referral and its linked information
 
-  - A [`List`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_list.html) resource referencing[`ProcedureRequest`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_diaryentry.html) resources that match the supplied query parameters
-  - A [`List`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_list.html) resource referencing [`Condition`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_problems.html) resources that are linked from the returned[`ProcedureRequest`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_diaryentry.html) resources
-  - [`ProcedureRequest`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_diaryentry.html) and [`Condition`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_problems.html) resources representing the patient's diary entries will be returned.
+  - A [`List`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_list.html) resource referencing [`ProcedureRequest`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_diaryentry.html) resources that match the supplied query parameters
+  - A [`List`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_list.html) resource referencing [`Condition`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_problems.html) resources that are linked from the returned [`ProcedureRequest`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_diaryentry.html) resources
+  - [`ProcedureRequest`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_development_diaryentry.html) and [`Condition`](https://developer.nhs.uk/apis/gpconnect-1-5-1/accessrecord_structured_problems.html) resources representing the patient's diary entries will be returned
 
 - when the `diaryEntriesSearchDate` parameter is set:
   - all diary entries that occur on or before the `diaryEntriesSearchDate` **MUST** be returned

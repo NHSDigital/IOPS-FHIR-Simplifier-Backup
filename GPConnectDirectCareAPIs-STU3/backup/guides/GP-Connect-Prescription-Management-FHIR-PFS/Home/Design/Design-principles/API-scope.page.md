@@ -1,10 +1,10 @@
 ## {{page-title}}
 
-The scope of the API is to enable the ability for patients using patient facing applications (e.g the NHS App) to:
+The scope of the API is to enable the ability for patients using patient-facing applications (such as the NHS App) to:
 
 - order a repeat prescription
 
-- view all medication including acute and repeat medcations, both current and historic
+- view all medication including acute and repeat medications, both current and historic
 
 - cancel an unactioned order for a repeat prescription
 
