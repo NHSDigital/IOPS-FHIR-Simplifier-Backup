@@ -1,6 +1,8 @@
 ## {{page-title}}
 
-FHIR http is shown below, other event notification methods can be used instead.
+This has not been defined and so is an example of a notification which is a copy of the completed Task resource.
+
+
 
  ```
   PUT https://proxy.example.nhs.uk/FHIR/R4/Task?identifier={identifier}

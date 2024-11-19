@@ -11,12 +11,14 @@
 
 ### Consent Verification Workflow 
 
+The sequence diagram below is a high level view of the actual process which focuses on the interactions exchanged between the actors. 
+
 <plantuml>
 @startuml
 
 participant proxy as "Proxy Application"
 participant service as "NHS England Proxy Service"
-participant repository as "NHS England Proxy Service"
+participant repository as "NHS England Proxy Repository"
 participant gp as "Primary Care"
 
 proxy -> service : Send Proxy Access Request
@@ -24,6 +26,9 @@ service -> repository: Store Proxy Access Request
 service -> gp: Request Consent Verification (requested)
 alt accepted 
 gp -> service : Accept Consent Verification (accepted)
+opt
+  gp -> repository: Retrieve Proxy Access Request
+end 
 gp -> service : Complete Consent Verification (completed)
 service -> repository: update Consent
 service -> proxy : Inform Proxy of Decision
