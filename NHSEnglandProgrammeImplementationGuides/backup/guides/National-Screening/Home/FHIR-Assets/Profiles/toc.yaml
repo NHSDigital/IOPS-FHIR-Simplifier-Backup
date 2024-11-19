@@ -1,2 +1,6 @@
 - name: Index
   filename: Index.page.md
+- name: UKCore-CarePlan
+  filename: UKCore-CarePlan.page.md
+- name: UKCore-Flag
+  filename: UKCore-Flag.page.md
