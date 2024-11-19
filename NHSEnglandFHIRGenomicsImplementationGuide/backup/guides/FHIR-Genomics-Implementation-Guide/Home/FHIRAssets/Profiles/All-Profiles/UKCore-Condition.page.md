@@ -177,8 +177,4 @@ cannot be structured due to the way this information has been recorded in source
 ]
 ```
 
-<div id="Feedback" class="tabcontent">
-{{page:Home-FeedbackTemplate-FeedbackLink}}
-</div>
-
 ---
