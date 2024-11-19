@@ -21,7 +21,7 @@ The below profile is provided for information, if referencing by ODS code is int
            <br>
             <ul>
             <li>
-                    {{pagelink:Home/Examples/Organization/Organization-GenomicsLaboratoryHub-Example.page.md}}
+                    {{pagelink:Organization-GenomicsLaboratoryHub-Example}}
                </li>
                </ul>
         </div>
