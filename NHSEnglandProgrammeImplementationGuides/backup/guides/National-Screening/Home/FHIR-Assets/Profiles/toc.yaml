@@ -1,6 +1,18 @@
 - name: Index
   filename: Index.page.md
+- name: UKCore-Appointment
+  filename: UKCore-Appointment.page.md
 - name: UKCore-CarePlan
   filename: UKCore-CarePlan.page.md
+- name: UKCore-Encounter
+  filename: UKCore-Encounter.page.md
 - name: UKCore-Flag
   filename: UKCore-Flag.page.md
+- name: Profile-Group
+  filename: Profile-Group.page.md
+- name: UKCore-Observation
+  filename: UKCore-Observation.page.md
+- name: UKCore-Patient
+  filename: UKCore-Patient.page.md
+- name: UKCore-Procedure
+  filename: UKCore-Procedure.page.md

@@ -1,12 +1,6 @@
 - name: Use Case - Request Access
   filename: Use-Case-Request-Access.page.md
 - name: Use Case - Create a Relationship
-  filename: Use-Case-Create-a-relationship.page.md
+  filename: Use-Case-Create-a-Relationship.page.md
 - name: Use Case - View a Relationship
   filename: Use-Case-View-a-Relationship.page.md
-- name: Use Case - Use a Relationship
-  filename: Use-Case-Use-a-Relationship.page.md
-- name: Use Case - Update a Relationship
-  filename: Use-Case-Update-a-Relationship.page.md
-- name: Use Case - Revoke a Relationship
-  filename: Use-Case-Revoke-a-Relationship.page.md
