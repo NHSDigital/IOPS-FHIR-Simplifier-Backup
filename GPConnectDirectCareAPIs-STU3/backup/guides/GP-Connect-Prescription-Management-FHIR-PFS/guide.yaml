@@ -1,5 +1,6 @@
-title: '[DRAFT] GP Connect (Patient Facing) Prescriptions'
+title: GP Connect (Patient Facing) Prescriptions - FHIR API
 description: Implementation Guide
 version: 0.1
 style-root: project
 style-name: NHSDigital
+numbered-headings: false

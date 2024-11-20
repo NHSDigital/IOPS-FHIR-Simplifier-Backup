@@ -1,5 +1,6 @@
-title: '[DRAFT] GP Connect (Patient Facing) User Management'
+title: '[DRAFT] GP Connect (Patient Facing) User Permissions API'
 description: Implementation Guide
 version: 0.1
 style-root: project
 style-name: PFSAppointments
+numbered-headings: false

@@ -1,10 +1,10 @@
 ## {{page-title}}
 
-If a Patient wishes to start at viewing their Medications, a standard user journey would look like this:
+If a patient wants to view their medications, a standard user journey looks like this:
 
- 1. Search by NHS Number to obtain `MedicationStatement` resources related to the patient, using the endpoint: GET /FHIR/R4/Patient/`{NHSNumber}`/MedicationStatement
+ 1. Search by NHS number to obtain `MedicationStatement` resources related to the patient, using the endpoint: GET /FHIR/R4/Patient/`{NHSNumber}`/MedicationStatement.
 
-    This returns a `Bundle` containing `MedicationStatement's` which includes information surrounding the Medication to be displayed to the patient. 
+    This returns a `Bundle` containing `MedicationStatement's` which includes information surrounding the medication to be displayed to the patient. 
 
     Each MedicationStatement references a `MedicationRequest` with `intent` of `plan`. The `MedicationRequest` is a representation of the prescription, these contain further details about the prescription itself, i.e. whether it's acute or repeat and if it has expired. 
 
