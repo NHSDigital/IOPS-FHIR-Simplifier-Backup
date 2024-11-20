@@ -1,3 +1,7 @@
+- name: Analysis
+  filename: Analysis
+- name: Design
+  filename: Design
 - name: Index
   filename: Index.page.md
 - name: FHIR Assets

@@ -1,4 +1,4 @@
-- name: Workflow
-  filename: Workflow.page.md
-- name: Example Scenario
-  filename: Example-Scenario
+- name: Scenario - View a Relationship
+  filename: Scenario-View-a-Relationship
+- name: Scenario - Request Access and Create a Relationship
+  filename: Scenario-Request-Access-and-Create-a-Relationship

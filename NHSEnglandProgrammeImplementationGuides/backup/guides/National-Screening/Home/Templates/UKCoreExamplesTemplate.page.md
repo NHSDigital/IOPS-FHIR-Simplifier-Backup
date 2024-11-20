@@ -1,0 +1,1 @@
+ <h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/Examples/Profile-Examples/Example-{{variable:example}}.page.md?version=current' target="_blank">{{variable:example}}-Example</a></h4>
