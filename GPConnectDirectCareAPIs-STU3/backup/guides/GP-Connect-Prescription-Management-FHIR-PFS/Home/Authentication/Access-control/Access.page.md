@@ -9,4 +9,4 @@ The end user must be:
 
 The API uses [OpenID Connect](https://openid.net/connect/) to authenticate the end user and [OAuth 2.0](https://oauth.net/2/) to authorise the calling system. It supports the following security pattern using NHS login:
 
-- [User-restricted RESTful APIs - NHS login separate authentication and authorisation](https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-access-record-fhir#api-description__security-and-authorisation:~:text=User%2Drestricted%20RESTful%20APIs%20%2D%20NHS%20login%20separate%20authentication%20and%20authorisation)
+- [user-restricted RESTful APIs - NHS login separate authentication and authorisation](https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-access-record-fhir#api-description__security-and-authorisation:~:text=User%2Drestricted%20RESTful%20APIs%20%2D%20NHS%20login%20separate%20authentication%20and%20authorisation)

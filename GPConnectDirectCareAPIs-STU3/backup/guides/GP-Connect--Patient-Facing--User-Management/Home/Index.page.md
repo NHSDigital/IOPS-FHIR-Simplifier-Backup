@@ -1,6 +1,6 @@
 # {{page-title}}
 
-Welcome to the GP Connect (Patient Facing) User Management Implementation Guide.
+Welcome to the GP Connect (Patient Facing) User Permissions API Implementation Guide.
 
 Use the dropdown menus at the top of the screen to navigate around the site.
 

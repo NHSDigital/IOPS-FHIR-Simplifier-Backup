@@ -23,12 +23,12 @@ When the API to [get a patient's permissions](https://digital.nhs.uk/developer/a
 
 {{render:patient-validation-flow.png}}
 
-- Validate the patient exists in the GP system
-- Check if the patient has online access enabled
-    - If they do - return the patient's existing permissions
-    - If they do not - check if the patient is flagged as 'at risk'
-	    - If they are - set the patient's permissions as appropriate for an at risk patient (determined by the practice), enable online access and return the patient's permissions
-	    - If they are not - set the patient's default permissions (using the practice's default permissions), enable online access and return the patient's permissions
+- validate the patient exists in the GP system
+- check if the patient has online access enabled
+    - if they do - return the patient's existing permissions
+    - if they do not - check if the patient is flagged as 'at risk'
+	    - if they are - set the patient's permissions as appropriate for an at risk patient (determined by the practice), enable online access and return the patient's permissions
+	    - if they are not - set the patient's default permissions (using the practice's default permissions), enable online access and return the patient's permissions
 
 ### Note on request sequencing
 

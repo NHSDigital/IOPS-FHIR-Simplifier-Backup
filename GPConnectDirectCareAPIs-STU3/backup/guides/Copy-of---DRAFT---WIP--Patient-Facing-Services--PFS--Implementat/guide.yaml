@@ -1,5 +1,6 @@
-title: '[DRAFT] GP Connect (Patient Facing) Access Record'
+title: '[DRAFT] GP Connect (Patient Facing) Access Record - FHIR API'
 description: Implementation Guide
 version: 0.1.0
 style-root: project
 style-name: NHSDigital
+numbered-headings: false
