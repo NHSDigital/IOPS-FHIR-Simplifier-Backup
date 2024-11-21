@@ -8,13 +8,31 @@
   filename: meta.profile.page.md
 - name: meta.versionId
   filename: meta.versionId.page.md
+- name: identifier
+  filename: identifier.page.md
+- name: status
+  filename: status.page.md
+- name: operationalStatus
+  filename: operationalStatus.page.md
 - name: name
   filename: name.page.md
-- name: address
-  filename: address.page.md
+- name: alias
+  filename: alias.page.md
+- name: description
+  filename: description.page.md
+- name: type
+  filename: type.page.md
 - name: telecom
   filename: telecom.page.md
+- name: address
+  filename: address.page.md
+- name: physicalType
+  filename: physicalType.page.md
+- name: position
+  filename: position.page.md
 - name: managingOrganization
   filename: managingOrganization.page.md
+- name: partOf
+  filename: partOf.page.md
 - name: endpoint
   filename: endpoint.page.md

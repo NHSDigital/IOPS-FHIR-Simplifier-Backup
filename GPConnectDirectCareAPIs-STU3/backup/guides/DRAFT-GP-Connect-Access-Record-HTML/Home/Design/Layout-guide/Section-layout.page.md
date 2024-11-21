@@ -8,7 +8,7 @@ HTML views with a single table and hence a single section are:
 
 **Encounters**, **Clinical Items**, **Administrative Items**, **Observations**, **Referrals**, **Immunisations**.
 
-These views MUST have the following structure:
+These views **MUST** have the following structure:
 
 - Section title
 - GP transfer banner
