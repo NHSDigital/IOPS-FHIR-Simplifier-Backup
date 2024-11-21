@@ -4,8 +4,9 @@ This has not been defined and so is an example of a notification which is a copy
 
 
 
+
  ```
-  PUT https://proxy.example.nhs.uk/FHIR/R4/Task?identifier={identifier}
+PUT https://proxyapplication.example.nhs.uk/FHIR/R4/Task?identifier={identifier}
 ```
 
 ### Event Payload Example

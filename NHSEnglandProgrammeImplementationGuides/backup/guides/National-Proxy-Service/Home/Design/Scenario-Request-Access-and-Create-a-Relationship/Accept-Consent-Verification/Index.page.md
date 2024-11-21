@@ -5,7 +5,7 @@ On receiving the request, the GP system should respond back to the national prox
 
 
  ```
-  PUT https://proxyservice.example.nhs.uk/FHIR/R4/Task?identifier={identifier}
+PUT https://proxyservice.example.nhs.uk/FHIR/R4/Task?identifier={identifier}
 ```
 
 ### Event Payload Example

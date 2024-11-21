@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: AuditEvent-patient-flag-Example
   filename: AuditEvent-patient-flag-Example.page.md
 - name: AuditEvent-app-restricted-fhir-pds-read-Example
