@@ -23,6 +23,7 @@ participant gp as "Primary Care"
 
 proxy -> service : Send Proxy Access Request
 service -> repository: Store Proxy Access Request
+opt if Patient can not consent
 service -> gp: Request Consent Verification (requested)
 alt accepted 
 gp -> service : Accept Consent Verification (accepted)
@@ -34,7 +35,9 @@ service -> repository: Update Consent
 service -> proxy : Inform Proxy of Decision
 else rejected
 gp -> service : Reject Consent Verification (rejected)
+service -> service : Act on the rejected workflow task (to be defined)
 end 
+end
 
 @enduml
 </plantuml>

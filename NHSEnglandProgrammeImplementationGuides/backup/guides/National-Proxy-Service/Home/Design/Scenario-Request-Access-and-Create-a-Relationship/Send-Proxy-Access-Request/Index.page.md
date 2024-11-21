@@ -6,7 +6,7 @@ This request is then submitted to the national proxy service via [FHIR RESTful A
 
 
  ```
-  POST https://proxyservice.example.nhs.uk/FHIR/R4/QuestionnaireReponse
+POST https://proxyservice.example.nhs.uk/FHIR/R4/QuestionnaireReponse
 ```
 ### Event Payload Example
 

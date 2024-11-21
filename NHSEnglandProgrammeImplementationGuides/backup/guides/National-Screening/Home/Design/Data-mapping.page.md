@@ -11,10 +11,11 @@ Patient "1" *-- "many" Flag : has
 CarePlan "1" *-- "1" Encounter : has
 Patient "1" *-- "many" Appointment : has
 Patient "1" *-- "many" Procedure : has
+Patient "1" *-- "many" ServiceRequest : has
 @enduml
 </plantuml>
 
-An [xyz] indicator as been modelled around a FHIR R4 Flag.  profile for further guidance. 
+
 
 
 <!-- should be a prooper html table not markdown due to styling and accessibility -->
@@ -26,33 +27,195 @@ An [xyz] indicator as been modelled around a FHIR R4 Flag.  profile for further 
   <th class="width55">Notes</th>
 </tr>
 <tr>
-  <td>Assessment Date</td>
-  <td>1..1</td>
-  <td>Flag.period.start</td>
-  <td>type: <a href='http://hl7.org/fhir/R4/datatypes.html#dateTime'>dateTime</a><br>format: YYYY-MM-DD</td>
+    <td>episode_id</td>
+    <td>0..*</td>
+    <td>UKCoreEncounter.identifier</td>
+    <td>Type: Identifier</td>
 </tr>
 <tr>
-  <td>NHS Number</td>
-  <td>1..1</td>
-  <td>Flag.identifier:nhsNumber</td>
-  <td>type: <a href='http://hl7.org/fhir/R4/search.html#token'>token</a><br>system must be "https://fhir.nhs.uk/Id/nhs-number"<br>value must be a verified NHS number<br>note: a resource reference is not required for FGM-IS.</td> 
+    <td>episode_type</td>
+    <td>0..*</td>
+    <td>UKCoreServiceRequest.priority.extension:priorityReason</td>
+    <td>Type: Extension(CodeableConcept)</td>
 </tr>
 <tr>
-<td>Family history of FGM indicator</td>
-<td>1..1</td>
-<td>Flag.code.coding</td>
-<td>system must be "http://snomed.info/sct"<br>code must be "902961000000107"<br>display must be "Family history of FGM (female genital mutilation)"</td>
+    <td>episode_date</td>
+    <td>0..1</td>
+    <td>UKCoreEncounter.period (Start)</td>
+    <td>Type: Period</td>
 </tr>
 <tr>
-  <td>Status</td>
-  <td>1..1</td>
-  <td>Flag.status</td>
-  <td>See ...</td>
+    <td>appointment_made</td>
+    <td>1..1</td>
+    <td>UKCoreAppoitment.status</td>
+    <td>Type: Code</td>
 </tr>
 <tr>
-  <td>Removal Reason</td>
-  <td>0..1</td>
-  <td>reference </td>
-  <td>must be set when Flag.status is not 'active'. E.g. </td>
+    <td>date_of_foa</td>
+    <td>0..1</td>
+    <td>UKCoreAppointment.start (date)</td>
+    <td>Type: Instant</td>
+</tr>
+<tr>
+    <td>date_of_as</td>
+    <td>0..1</td>
+    <td>UKCoreProcedure.performedDateTime</td>
+    <td>Type: dateTime</td>
+</tr>
+<tr>
+    <td>early_recall_date</td>
+    <td>0..1</td>
+    <td>UKCoreAppointment.start (date)</td>
+    <td>Type: Instant</td>
+</tr>
+<tr>
+    <td>call_recall_status_authorised_by</td>
+    <td>0..1</td>
+    <td>UKCoreServiceRequest.extension:sourceOfServiceRequest</td>
+    <td>Type: Extension(CodeableConcept)</td>
+</tr>
+<tr>
+    <td>end_code</td>
+    <td>0..1</td>
+    <td>UKCoreEncounter.extension:reasonCancelled</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>end_code_last_updated</td>
+    <td>1..1</td>
+    <td>UKCoreEncounter.statusHistory.period</td>
+    <td>Type: Period</td>
+</tr>
+<tr>
+    <td>reason_closed_code</td>
+    <td>0..1</td>
+    <td>UKCoreEncounter.extension:reasonCancelled</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>end_point</td>
+    <td>0..1</td>
+    <td>UKCoreProcedure.outcome</td>
+    <td>Type: CodeableConcept.text</td>
+</tr>
+<tr>
+    <td>final_action_code</td>
+    <td>0..*</td>
+    <td>UKCoreCarePlan.category</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>bso_organisation_code</td>
+    <td>0..1</td>
+    <td>Group.managingEntity (Organization)</td>
+    <td>Type: Reference(Organization)</td>
+</tr>
+<tr>
+    <td>bso_batch_id</td>
+    <td>0..*</td>
+    <td>Group.identifier</td>
+    <td>Type: Identifier</td>
+</tr>
+<tr>
+    <td>nhs_number</td>
+    <td>0..1</td>
+    <td>UKCorePatient.identifier.nhsNumber</td>
+    <td>Type: Identifier</td>
+</tr>
+<tr>
+    <td>gp_practice_id</td>
+    <td>0..*</td>
+    <td>UKCorePatient.generalPractitioner</td>
+    <td>Type: Reference(Organization)</td>
+</tr>
+<tr>
+    <td>next_test_due_date</td>
+    <td>0..1</td>
+    <td>UKCoreAppointment.start (date)</td>
+    <td>Type: Instant</td>
+</tr>
+<tr>
+    <td>subject_status_code</td>
+    <td>1..1</td>
+    <td>UKCoreFlag.code</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>early_recall_date</td>
+    <td>0..1</td>
+    <td>UKCoreAppointment.start (date)</td>
+    <td>Type: Instant</td>
+</tr>
+<tr>
+    <td>latest_invitation_date</td>
+    <td>0..1</td>
+    <td>UKCoreAppointment.start (date)</td>
+    <td>Type: Instant</td>
+</tr>
+<tr>
+    <td>removal_reason</td>
+    <td>1..1</td>
+    <td>UKCoreFlag.code</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>removal_date</td>
+    <td>0..1</td>
+    <td>UKCoreFlag.period.end</td>
+    <td>Type: Period</td>
+</tr>
+<tr>
+    <td>reason_for_ceasing_code</td>
+    <td>1..1</td>
+    <td>UKCoreFlag.code</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>is_higher_risk</td>
+    <td>1..1</td>
+    <td>UKCoreFlag.code</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>higher_risk_next_test_due_date</td>
+    <td>0..1</td>
+    <td>UKCoreAppointment.start (date)</td>
+    <td>Type: Instant</td>
+</tr>
+<tr>
+    <td>higher_risk_referral_reason_code</td>
+    <td>1..1</td>
+    <td>UKCoreFlag.code</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>date_irradiated</td>
+    <td>0..1</td>
+    <td>UKCoreProcedure.performedDateTime</td>
+    <td>Type: dateTime</td>
+</tr>
+<tr>
+    <td>is_higher_risk_active</td>
+    <td>0..1</td>
+    <td>UKCoreFlag.period.end</td>
+    <td>Type: Period</td>
+</tr>
+<tr>
+    <td>gene_code</td>
+    <td>0..1</td>
+    <td>UKCoreObservation.value.valueCodeableConcept</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>ntdd_calculation_method</td>
+    <td>1..1</td>
+    <td>UKCoreFlag.code</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>preferred_language</td>
+    <td>1..1</td>
+    <td>UKCorePatient.communication.language</td>
+    <td>Type: CodeableConcept</td>
 </tr>
 </table>

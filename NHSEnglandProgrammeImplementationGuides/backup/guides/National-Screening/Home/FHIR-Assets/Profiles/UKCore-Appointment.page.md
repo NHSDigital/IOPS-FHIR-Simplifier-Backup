@@ -19,11 +19,12 @@ expand: yes
 {{page:Home-Templates-UKCoreExamplesTemplate}}
 <br/><br/>
 <b>Booking Organization</b> - An example to illustrate the booking organization extension associated with an appointment.<br/>
- <h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/Examples/Extension-Examples/Example-UKCore-Extension-BookingOrganization.page.md?version=current' target="_blank">{{variable:example}}-Example</a></h4>
+ <h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/Examples/Extension-Examples/Example-UKCore-Extension-BookingOrganization.page.md?version=current' target="_blank">Example-UKCore-Extension-BookingOrganization</a></h4>
 <br/><br/>
 <b>Delivery Channel</b> - An example to illustrate the delivery channel associated with an appointment.<br/>
-{{pagelink:Example-UKCore-Extension-DeliveryChannel}}
+ <h4><a href='https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/Home/Examples/Extension-Examples/Example-UKCore-Extension-DeliveryChannel.page.md?version=current' target="_blank">Example-UKCore-Extension-DeliveryChannel</a></h4>
 </div>
 
 </nocheck>
 <hr class="thickline">
+
