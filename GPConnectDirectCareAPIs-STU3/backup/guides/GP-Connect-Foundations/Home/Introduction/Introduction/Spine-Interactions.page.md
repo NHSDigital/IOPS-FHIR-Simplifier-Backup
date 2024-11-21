@@ -14,4 +14,4 @@ The Foundations capability message set includes the following set of Spine inter
 |Read Location|`urn:nhs:names:services:gpconnect:fhir:rest:read:location-1`|
 |Register Patient|`urn:nhs:names:services:gpconnect:fhir:operation:gpc.registerpatient-1`|
 
-**[The 'Operation' column above is supposed to be filled with hyperlinks - these need updating]**
+**[The 'Operation' column above is supposed to be filled with hyperlinks - these will need updating with links to the new API spec once it has been migrated to the API catalogue]**

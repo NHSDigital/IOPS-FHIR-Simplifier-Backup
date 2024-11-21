@@ -6,4 +6,4 @@ The following individual API calls make up the Foundations capability and suppor
 - Find a practitioner
 - Find an organisation
 
-**[All of the above are links that need updating]**
+**[All of the above are links that will need updating with links to the new API spec once it has been migrated to the API catalogue]**

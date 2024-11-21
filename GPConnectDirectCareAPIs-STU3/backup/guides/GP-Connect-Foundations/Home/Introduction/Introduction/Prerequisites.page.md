@@ -4,7 +4,9 @@
 You need to be able to provide a verified NHS number to use an API. You can do this using a Spine accredited system, a Demographics Batch Service (DBS) batch-traced record (CSV), or using a Spine Mini Services Provider (HL7v3).
 
 ### SDS / ODS
-To resolve a given GP Practice organisation to its URI you need to be able to do a Spine SDS query (LDAP) using the practice’s ODS code to perform an SDS End Point Lookup.
+To resolve a given GP Practice organisation to its URI you need to be able to do a Spine SDS query (LDAP) using the practice’s ODS code to perform an [SDS End Point Lookup](https://developer.nhs.uk/apis/gpconnect-1-6-0/integration_spine_directory_service.html).
+
+**[The link above will need to be updated with a link to Simplifier]**
 
 ### FHIR
 In order to be a compliant FHIR server, provider systems need to expose a valid FHIR [CapabilityStatement](https://www.hl7.org/fhir/STU3/capabilitystatement.html) profile.

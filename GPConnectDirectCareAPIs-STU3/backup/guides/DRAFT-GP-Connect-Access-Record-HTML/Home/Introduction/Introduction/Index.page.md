@@ -1,6 +1,4 @@
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body"><i class="fa fa-exclamation-triangle"></i><b>Version:</b>This is the <b>current 0.x (DSTU2) version</b> of GP Connect API for building the <b>Access Record HTML</b> capability only. For other capabilities and specifications, please visit the link below.</div>
-
-[GP Connect specifications page](https://developer.nhs.uk/gp-connect-specification-versions)
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body"><i class="fa fa-exclamation-triangle"></i><b>Version:</b>This is the <b>current 0.x (DSTU2) version</b> of GP Connect API for building the <b>Access Record HTML</b> capability only. For other capabilities and specifications, please visit the <a href="https://developer.nhs.uk/gp-connect-specification-versions">GP Connect Specifications page</a>.</div>
 
 # {{page-title}}
 
@@ -13,7 +11,5 @@ An introduction to the GP Connect Access Record HTML capability.
 Access Record HTML is delivering the capability to view a patient record and <b>MUST</b> be used in real time for read only.
 <br>
 <br>
-Please refer to the FAQ at the link below for details of what constitutes direct patient care.
+Please refer to <a href="http://content.digital.nhs.uk/article/3638/Personal-data-access-FAQs">NHS Digital - FAQ on legal access to personal confidential data - Definitions questions - How is Direct Patient Care defined?</a> for details of what constitutes direct patient care.
 </div>
-
-[NHS Digital - FAQ on legal access to personal confidential data - Definitions questions - How is Direct Patient Care defined?](http://content.digital.nhs.uk/article/3638/Personal-data-access-FAQs) 

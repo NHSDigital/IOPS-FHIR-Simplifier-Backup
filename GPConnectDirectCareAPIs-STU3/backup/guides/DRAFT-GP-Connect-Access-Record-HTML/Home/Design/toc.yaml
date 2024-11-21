@@ -1,5 +1,7 @@
 - name: Design decisions
   filename: Design-decisions
+- name: Clinical Scenarios
+  filename: Clinical-Scenarios
 - name: Implementation standards
   filename: Implementation-standards
 - name: Layout guide
