@@ -3,4 +3,3 @@ description: FHIR Implementation Guide for the NHS Booking and Referral Standard
 version: 1.x.x
 style-root: project
 style-name: NHSD
-numbered-headings: false
