@@ -1,5 +1,6 @@
 title: GP Connect - Send Document
 description: GP Connect - Send Document capability for FHIR® STU3 (CareConnect) Implementation Guide
-version: 2.0.1-public-beta
+version: 2.0.2-public-beta
 style-root: project
 style-name: NHSDigital
+numbered-headings: false

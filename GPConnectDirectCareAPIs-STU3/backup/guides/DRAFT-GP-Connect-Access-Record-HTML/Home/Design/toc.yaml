@@ -1,6 +1,6 @@
 - name: Design decisions
   filename: Design-decisions
-- name: Clinical Scenarios
+- name: Clinical scenarios
   filename: Clinical-Scenarios
 - name: Implementation standards
   filename: Implementation-standards
