@@ -1,0 +1,18 @@
+- name: Index
+  filename: Index.page.md
+- name: Clinical narrative
+  filename: Clinical-narrative.page.md
+- name: Purpose
+  filename: Purpose.page.md
+- name: Sections and subsections
+  filename: Sections-and-subsections.page.md
+- name: Section title
+  filename: Section-title.page.md
+- name: Date filter
+  filename: Date-filter.page.md
+- name: Section content banner
+  filename: Section-content-banner.page.md
+- name: Active problems and issues
+  filename: Active-problems-and-issues.page.md
+- name: Major inactive problems and issues
+  filename: Major-inactive-problems-and-issues.page.md

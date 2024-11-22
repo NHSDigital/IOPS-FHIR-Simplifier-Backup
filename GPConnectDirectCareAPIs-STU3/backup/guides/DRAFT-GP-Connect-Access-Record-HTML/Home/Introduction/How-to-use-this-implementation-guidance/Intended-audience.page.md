@@ -1,4 +1,4 @@
-## Intended Audience
+## Intended audience
 
 <table data-responsive>
     <thead>
