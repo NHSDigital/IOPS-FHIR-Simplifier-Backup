@@ -4,8 +4,12 @@
 
 | Name | Type | Description |
 |------|------|-------------|
-| Proxy Application | System | The application the Proxy uses |
+| Client Application | System | The application the Proxy or Practitioner uses |
 | NHS England Proxy Repository | System | NHS England National Proxy Data Repository |
+
+### Use Case(s)
+
+- {{pagelink:Home/Analysis/Use-Case-View-a-Relationship.page.md}}
 
 ### View a Relationship 
 
@@ -14,7 +18,9 @@ The sequence diagram below is a high level view of the actual process which focu
 <plantuml>
 @startuml
 
-participant proxy as "Proxy Application"
+hide footbox
+
+participant proxy as "Client Application"
 
 participant repository as "NHS England Proxy Repository"
 

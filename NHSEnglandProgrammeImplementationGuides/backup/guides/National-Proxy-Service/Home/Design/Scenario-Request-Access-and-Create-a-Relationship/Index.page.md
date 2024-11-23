@@ -4,10 +4,15 @@
 
 | Name | Type | Description |
 |------|------|-------------|
-| Proxy Application | System | The application the Proxy uses to create the request |
+| Client Application | System | The application the Proxy uses to create the request |
 | NHS England Proxy Service | System | NHS England National Proxy Service |
 | NHS England Proxy Repository | System | NHS England National Proxy Data Repository |
 | Primary Care | System | General Practice System |
+
+### Use Case(s)
+
+- {{pagelink:Home/Analysis/Use-Case-Create-a-Relationship.page.md}}
+- {{pagelink:Home/Analysis/Use-Case-Request-Access.page.md}}
 
 ### Request Access and Create a Relationship Workflow 
 
@@ -16,7 +21,7 @@ The sequence diagram below is a high level view of the actual process which focu
 <plantuml>
 @startuml
 
-participant proxy as "Proxy Application"
+participant proxy as "Client Application"
 participant service as "NHS England Proxy Service"
 participant repository as "NHS England Proxy Repository"
 participant gp as "Primary Care"

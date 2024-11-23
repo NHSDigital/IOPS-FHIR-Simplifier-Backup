@@ -1,0 +1,69 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="England-ScreeningHighRiskReferralReason" />
+  <url value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+  <version value="0.1.0" />
+  <name value="EnglandScreeningHighRiskReferralReason" />
+  <title value="England Screening High Risk Referral Reason" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-11-22" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem used to indicate which higher risk codes are associated with a patient. The codes and their description are datasets definition from the Breast Screening Service(BS-Select)." />
+  <copyright value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <count value="11" />
+  <concept>
+    <code value="AT-heterozygotes" />
+    <display value="A-T Heterozygotes" />
+  </concept>
+  <concept>
+    <code value="AT-homozygotes" />
+    <display value="A-T Homozygotes" />
+  </concept>
+  <concept>
+    <code value="BRCA-risk" />
+    <display value="BRCA1/BRCA2/PALB2 (8% 10-Year Risk)" />
+  </concept>
+  <concept>
+    <code value="BRCA-tested" />
+    <display value="BRCA1/BRCA2/PALB2 Tested" />
+  </concept>
+  <concept>
+    <code value="HR-gene-untested" />
+    <display value="HR Gene Untested" />
+  </concept>
+  <concept>
+    <code value="other-gene-mutations" />
+    <display value="Other Gene Mutations" />
+  </concept>
+  <concept>
+    <code value="radiotherapy-below-30" />
+    <display value="Radiotherapy Below Aged 30" />
+  </concept>
+  <concept>
+    <code value="radiotherapy-lower" />
+    <display value="Radiotherapy To Breast Tissue Aged 10-19" />
+  </concept>
+  <concept>
+    <code value="radiotherapy-upper" />
+    <display value="Radiotherapy To Breast Tissue Aged 20-35" />
+  </concept>
+  <concept>
+    <code value="risk-equivalent" />
+    <display value="Risk Equivalent, Not Tested" />
+  </concept>
+  <concept>
+    <code value="TP53" />
+    <display value="TP53 (Li-Fraumeni) Syndrome" />
+  </concept>
+</CodeSystem>

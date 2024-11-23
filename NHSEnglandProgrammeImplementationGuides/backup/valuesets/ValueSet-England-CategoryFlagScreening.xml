@@ -1,0 +1,55 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="England-CategoryFlagScreening" />
+    <url value="https://fhir.nhs.uk/England/ValueSet/England-CategoryFlagScreening" />
+    <version value="0.1.0" />
+    <name value="EnglandCategoryFlagScreening" />
+    <title value="England Category Flag Screening" />
+    <status value="draft" />
+    <experimental value="false" />
+    <date value="2024-11-21" />
+    <publisher value="NHS England" />
+    <contact>
+        <name value="NHS England" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
+    <description value="A ValueSet used to indicate the context of a flag for screening episode. The codes and their description are datasets definition from the Breast Screening Service(BS-Select)" />
+    <copyright value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html." />
+    <expansion>
+        <timestamp value="2024-11-21T12:00:00+00:00" />
+        <contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningCategoryFlag" />
+            <code value="subject-status" />
+            <display value="Subject Status" />
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningCategoryFlag" />
+            <code value="removal-reason" />
+            <display value="Removal Reason" />
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningCategoryFlag" />
+            <code value="reason-for-ceasing" />
+            <display value="Reason For Ceasing" />
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningCategoryFlag" />
+            <code value="is-higher-risk" />
+            <display value="Is Higher Risk" />
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningCategoryFlag" />
+            <code value="higher-risk-referral-reason" />
+            <display value="Higher Risk Referral Reason" />
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningCategoryFlag" />
+            <code value="ntdd-calculation-method" />
+            <display value="NTDD Calculation Method" />
+        </contains>
+    </expansion>
+</ValueSet>

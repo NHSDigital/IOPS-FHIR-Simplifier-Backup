@@ -8,3 +8,5 @@
   filename: Questionnaire
 - name: Capability Statement
   filename: Capability-Statement
+- name: Index
+  filename: Index.page.md

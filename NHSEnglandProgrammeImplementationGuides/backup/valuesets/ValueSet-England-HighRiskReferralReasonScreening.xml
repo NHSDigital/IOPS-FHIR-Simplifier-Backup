@@ -1,0 +1,80 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="England-HighRiskReferralReasonScreening" />
+  <url value="https://fhir.nhs.uk/England/ValueSet/England-HighRiskReferralReasonScreening" />
+  <version value="0.1.0" />
+  <name value="EnglandHighRiskReferralReasonScreening" />
+  <title value="England High Risk Referral Reason Screening" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-11-22" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A ValueSet used to indicate which higher risk codes are associated with a patient. The codes and their description are datasets definition from the Breast Screening Service(BS-Select)." />
+  <copyright value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html." />
+  <expansion>
+    <timestamp value="2024-11-22T12:00:00+00:00" />
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="AT-heterozygotes" />
+      <display value="A-T Heterozygotes" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="AT-homozygotes" />
+      <display value="A-T Homozygotes" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="BRCA-risk" />
+      <display value="BRCA1/BRCA2/PALB2 (8% 10-Year Risk)" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="BRCA-tested" />
+      <display value="BRCA1/BRCA2/PALB2 Tested" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="HR-gene-untested" />
+      <display value="HR Gene Untested" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="other-gene-mutations" />
+      <display value="Other Gene Mutations" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="radiotherapy-below-30" />
+      <display value="Radiotherapy Below Aged 30" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="radiotherapy-lower" />
+      <display value="Radiotherapy To Breast Tissue Aged 10-19" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="radiotherapy-upper" />
+      <display value="Radiotherapy To Breast Tissue Aged 20-35" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="risk-equivalent" />
+      <display value="Risk Equivalent, Not Tested" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+      <code value="TP53" />
+      <display value="TP53 (Li-Fraumeni) Syndrome" />
+    </contains>
+  </expansion>
+</ValueSet>
