@@ -1,0 +1,51 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="England-EpisodeFinalActionCode" />
+  <url value="https://fhir.nhs.uk/England/ValueSet/England-EpisodeFinalActionCode" />
+  <version value="0.1.0" />
+  <name value="EnglandEpisodeFinalActionCode" />
+  <title value="England Episode Final Action Code" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-11-21" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description
+    value="A ValueSet used to specify the actions or events that should occur after the closure of an episode. The codes and their description are datasets definition from the Breast Screening Service(BS-Select)." />
+  <copyright
+    value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <expansion>
+    <timestamp value="2024-11-21T15:30:00+00:00" />
+    <contains>
+      <system
+        value="https://fhir.nhs.uk/England/CodeSystem/England-EpisodeFinalAction" />
+      <code value="EC" />
+      <display value="Short Term Recall(early clinic)" />
+    </contains>
+    <contains>
+      <system
+        value="https://fhir.nhs.uk/England/CodeSystem/England-EpisodeFinalAction" />
+      <code value="MT" />
+      <display value="Medical Treatment" />
+    </contains>
+    <contains>
+      <system
+        value="https://fhir.nhs.uk/England/CodeSystem/England-EpisodeFinalAction" />
+      <code value="FP" />
+      <display value="Follow-up" />
+    </contains>
+    <contains>
+      <system
+        value="https://fhir.nhs.uk/England/CodeSystem/England-EpisodeFinalAction" />
+      <code value="RR" />
+      <display value="Routine Call" />
+    </contains>
+  </expansion>
+</ValueSet>

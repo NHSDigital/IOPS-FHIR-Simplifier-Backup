@@ -1,0 +1,141 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="England-ScreeningRemovalReason" />
+  <url value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningRemovalReason" />
+  <version value="0.1.0" />
+  <name value="EnglandScreeningRemovalReason" />
+  <title value="England Screening Removal Reason" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-11-22" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem used to indicate which removal reason applies to a screening episode. The codes and their description are datasets definition from the Breast Screening Service(BS-Select)." />
+  <copyright value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <count value="29" />
+  <concept>
+    <code value="death" />
+    <display value="Death" />
+  </concept>
+  <concept>
+    <code value="embarkation" />
+    <display value="Embarkation" />
+  </concept>
+  <concept>
+    <code value="adoption" />
+    <display value="Adoption" />
+  </concept>
+  <concept>
+    <code value="removal" />
+    <display value="Removal" />
+  </concept>
+  <concept>
+    <code value="removal-same-GP" />
+    <display value="Removal Same GP" />
+  </concept>
+  <concept>
+    <code value="registration-cancelled" />
+    <display value="Registration Cancelled" />
+  </concept>
+  <concept>
+    <code value="FP69-expiry" />
+    <display value="Removal Following FP69" />
+  </concept>
+  <concept>
+    <code value="other-reason" />
+    <display value="Other Reason" />
+  </concept>
+  <concept>
+    <code value="GP-request" />
+    <display value="Removal At Doctor's Request" />
+  </concept>
+  <concept>
+    <code value="subject-request" />
+    <display value="Removal At Patient's Request" />
+  </concept>
+  <concept>
+    <code value="services" />
+    <display value="Exited Into The Armed Services (DMS)" />
+  </concept>
+  <concept>
+    <code value="service-dependent" />
+    <display value="Exited To Be A Service Dependent Under DMS" />
+  </concept>
+  <concept>
+    <code value="mental-hospital" />
+    <display value="Mental Hospital" />
+  </concept>
+  <concept>
+    <code value="AFL" />
+    <display value="Armed Forces Enlistment (Notified Locally)" />
+  </concept>
+  <concept>
+    <code value="AFN" />
+    <display value="Armed Forces Enlistment (Notified By AF)" />
+  </concept>
+  <concept>
+    <code value="CGA" />
+    <display value="Gone Away - Address Not Known/FP69" />
+  </concept>
+  <concept>
+    <code value="DIS" />
+    <display value="Practice Dissolution" />
+  </concept>
+  <concept>
+    <code value="LDN" />
+    <display value="Logical Deletion" />
+  </concept>
+  <concept>
+    <code value="NIT" />
+    <display value="Transferred To Northern Ireland" />
+  </concept>
+  <concept>
+    <code value="OPA" />
+    <display value="Address Out Of Practice Area" />
+  </concept>
+  <concept>
+    <code value="RDI" />
+    <display value="Practice Request Immediate Removal" />
+  </concept>
+  <concept>
+    <code value="RDR" />
+    <display value="Practice Request" />
+  </concept>
+  <concept>
+    <code value="RFI" />
+    <display value="Removal From Residential Institute" />
+  </concept>
+  <concept>
+    <code value="SCT" />
+    <display value="Transferred To Scotland" />
+  </concept>
+  <concept>
+    <code value="SDL" />
+    <display value="Services Dependent (Notified Locally)" />
+  </concept>
+  <concept>
+    <code value="SDN" />
+    <display value="Services Dependent (Notified By SMO)" />
+  </concept>
+  <concept>
+    <code value="TRA" />
+    <display value="Temporary Resident Not Returned" />
+  </concept>
+  <concept>
+    <code value="not-provided" />
+    <display value="Not Provided" />
+  </concept>
+  <concept>
+    <code value="uncertified-death" />
+    <display value="Uncertified Death" />
+  </concept>
+</CodeSystem>

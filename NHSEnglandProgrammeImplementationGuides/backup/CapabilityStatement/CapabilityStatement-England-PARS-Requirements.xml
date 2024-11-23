@@ -26,7 +26,7 @@
         <valueCode value="SHALL" />
       </extension>
       <type value="AuditEvent" />
-      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-AuditEvent-PARS" />
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-AuditEvent" />
       <documentation value="
 `POST /AuditEvent`
 " />

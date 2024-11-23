@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-The **Proxy Application** creates a FHIR QuestionnaireResponse which matches the FHIR Questionnaire definition {{pagelink:Home/FHIR-Assets/Questionnaire/Proxy-Access-Request.page.md}}.
+The **Client Application** creates a FHIR QuestionnaireResponse which matches the FHIR Questionnaire definition {{pagelink:Home/FHIR-Assets/Questionnaire/Proxy-Access-Request.page.md}}.
 
 This request is then submitted to the national proxy service via [FHIR RESTful API](https://hl7.org/fhir/R4/http.html)  
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-Identifier-Request-Id"/>
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Request-Id"/>
-    <version value="0.0.1-current"/>
-    <name value="EnglandIdentifierRequestId"/>
-    <title value="England Identifier Request Id"/>
-    <status value="draft"/>
-    <date value="2024-10-25T07:31:19+00:00"/>
-    <publisher value="NHS England"/>
+    <id value="England-Identifier-Request-Id" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Request-Id" />
+    <version value="0.0.1-current" />
+    <name value="EnglandIdentifierRequestId" />
+    <title value="England Identifier Request Id" />
+    <status value="draft" />
+    <date value="2024-10-25T07:31:19+00:00" />
+    <publisher value="NHS England" />
     <contact>
         <name value="NHS England" />
         <telecom>
@@ -17,24 +17,24 @@
             <rank value="1" />
         </telecom>
     </contact>
-    <description value="&#xA;This is the http X-Request-ID header or a transaction id&#xA;&#xA;A globally id for the request, which we use to de-duplicate repeated requests and to trace the request if you contact our helpdesk.&#xA;"/>
+    <description value="&#xA;This is the http X-Request-ID header or a transaction id&#xA;&#xA;A globally id for the request, which we use to de-duplicate repeated requests and to trace the request if you contact our helpdesk.&#xA;" />
     <purpose value="This documents NHS England Data Dictionary and HL7 definitions" />
     <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
-    <fhirVersion value="4.0.1"/>
-    <kind value="complex-type"/>
-    <abstract value="false"/>
-    <type value="Identifier"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
-    <derivation value="constraint"/>
+    <fhirVersion value="4.0.1" />
+    <kind value="complex-type" />
+    <abstract value="false" />
+    <type value="Identifier" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+    <derivation value="constraint" />
     <differential>
         <element id="Identifier.system">
-            <path value="Identifier.system"/>
-            <min value="1"/>
-            <fixedUri value="https://fhir.nhs.uk/Id/transaction"/>
+            <path value="Identifier.system" />
+            <min value="1" />
+            <fixedUri value="https://fhir.nhs.uk/Id/transaction" />
         </element>
         <element id="Identifier.value">
-            <path value="Identifier.value"/>
-            <min value="1"/>
+            <path value="Identifier.value" />
+            <min value="1" />
         </element>
     </differential>
 </StructureDefinition>
