@@ -1,4 +1,12 @@
-## {{page-title}}
+---
+topic: Profile-UKCore-Specimen
+issue: UKCore-Specimen
+subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen
+expand: yes
+---
+
+## StructureDefinition {{variable:issue}}
+
 
 Used to capture information on Samples which will undergo or have undergone processing for genomic testing. 
 
@@ -56,125 +64,70 @@ S2 -u-> SR : Specimen.request
 
 | Profile url | FHIR Module | Normative Status |
 |--
-| [https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
+| <a href='https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release' target="_blank">https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen</a>| [UKCore]() | trial-use |
 
 <br>
+{{page:Home-FHIRAssets-Profiles-All-Profiles-UKCoreProfilesTemplatePage}}
 
-<br>
-
-<div class="nhsd-!t-margin-bottom-6">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#Profile" role="tab" data-toggle="tab">Profile</a>
-        </li>
-        <li role="presentation">
-            <a href="#Differential" role="tab" data-toggle="tab">Differential</a>
-        </li>
-        <li role="presentation">
-            <a href="#Constraints" role="tab" data-toggle="tab">Constraints</a>
-        </li>
-        <li role="presentation">
-            <a href="#Examples" role="tab" data-toggle="tab">Examples</a>
-        </li>
-        <li role="presentation">
-            <a href="#Mappings" role="tab" data-toggle="tab">Mappings</a>
-        </li>
-    </ul>
-    <div class="tab-content snippet">
-        <div id="Profile" role="tabpanel" class="tab-pane active">
-            <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen, snapshot}}
-        </div>
-        <div id="Differential" role="tabpanel" class="tab-pane">
-         <br />
-         Differential from {{link:http://hl7.org/fhir/StructureDefinition/Specimen}} <br>
-            <br />
-            {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen, diff}}
-        </div>
-        <div id="Dictionary" role="tabpanel" class="tab-pane">
-            <br />
-            {{dict:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen, hybrid}}
-        </div>
-        <div id="Examples" role="tabpanel" class="tab-pane">
-            <br />
-            <table>
-                <tr>
-                    <td>
+<div id="Examples" class="tabcontent">
+            <br>
+            <ul>
+                    <li>
                     {{pagelink:Specimen-BloodEDTA-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                    <li>
                     {{pagelink:Specimen-BloodEDTA-WithCollectionDetails-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                    <li>
                     {{pagelink:Specimen-BoneMarrowAspiration-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+               
+                    <li>
                     {{pagelink:Specimen-JamesMetcalfeBloodEDTA-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+               
+                    <li>
                     {{pagelink:Specimen-PheobeSmitham-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                    <li>
                     {{pagelink:Specimen-PheobeSmithamFather-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                    <li>
                     {{pagelink:Specimen-PheobeSmithamMother-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+               
+                    <li>
                     {{pagelink:Specimen-RyanneBoulderPartnerSaliva-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+               
+                    <li>
                     {{pagelink:Specimen-RyanneBoulderSaliva-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                    <li>
                     {{pagelink:Specimen-CancerSolidTumor-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+               
+                    <li>
                     {{pagelink:Specimen-TissueResection-Example}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+           
+                    <li>
                     {{pagelink:Home/Examples/Specimen/Specimen-MichealJonesBlood-Minimal.page.md}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </li>
+                
+                    <li>
                     {{pagelink:Specimen-MichaelJonesBloodWithCollectionDetails-Example}}
-                    </td>
-                </tr>
-            </table>
+                    </li>
+                
+            </ul>
         </div>
-        <div id="Constraints" role="tabpanel" class="tab-pane">
-            <br />
-            @```
-            from StructureDefinition
-            where url='https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen'
-            for differential.element.constraint
-            select key, human, severity, expression
-            ```
-        </div>
-        <div id="Mappings" role="tabpanel" class="tab-pane">
+
+<div id="Mappings" class="tabcontent">
             <br />
                 <table class="assets">
                     <tr><th>FHIR</th><th>MDS</th><th>HL7v2</th></tr>
@@ -199,21 +152,14 @@ S2 -u-> SR : Specimen.request
                     <tr><td>Specimen.processing.timeDateTime</td><td>Extracted specimen - Extracted date</td><td>OBR-7 attached to processing procedure in SAC-30</td></tr>
                 </table>
         </div>
-    </div>
+  
+<div id="Feedback" class="tabcontent">
+{{page:Home-FeedbackTemplate-FeedbackLink}}
 </div>
-
-### Constraint Profiles
-Profiles indicating preferred element cardinality for use in Genomics, not to be used for validation
-
-@```
-from StructureDefinition
-where baseDefinition='https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen' 
-select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier&scope=NHS-Digital-FHIR-Genomics-Implementation-Guide@current&canonical='+ url + '">'+url+'</a>'
-```
 
 <br>
 
-### Additional Guidance
+<h3 id='non-fql-header'> Additional Guidance </h3>
 
 - <a href="#extension:sampleCategory">extension:sampleCategory</a>
 - <a href="#identifier">identifier</a>
@@ -229,8 +175,9 @@ select name, profile: '<a href="https://simplifier.net/resolve?target=simplifier
 - <a href="#condition">condition</a>
 
 <a name="extension:sampleCategory"></a>
-#### extension:sampleCategory
+<h4 class='additional-Guidance-Submenu'> extension:sampleCategory </h4>
 Allows the categorisation of a sample into either tumour or germline. Additional terms may be added upon review though the valueCodeableConcept.text field MAY be used as a free text representation if needed.
+
 ```json
 "extension": [
         {
@@ -249,10 +196,11 @@ Allows the categorisation of a sample into either tumour or germline. Additional
 ```
 
 <a name="identifier"></a>
-#### identifier
-Multiple identifiers MAY be assigned to a sample as it travels between labs. Each lab SHOULD append their local identifier to the identifier array if needed, ensuring either the system or assigner, is able to disambiguate any identifiers from possibly overlapping numbers from other organizations. Assigner is preferred in this case (see identifier example on the {{pagelink:Genomics-Patient}} page for further guidance)
+<h4 class='additional-Guidance-Submenu'> identifier </h4>
+Multiple identifiers MAY be assigned to a sample as it travels between labs. Each lab SHOULD append their local identifier to the identifier array if needed, ensuring either the system or assigner, is able to disambiguate any identifiers from possibly overlapping numbers from other organizations. Assigner is preferred in this case (see identifier example on the {{pagelink:UKcore-Patient}} page for further guidance)
 
 Note: accessionIdentifier is unused by the Genomic Medicine Service to facilitate movement of samples across organizational boundaries.
+
 ```json
 "identifier":  [
         {
@@ -263,17 +211,19 @@ Note: accessionIdentifier is unused by the Genomic Medicine Service to facilitat
 ```
 
 <a name="status"></a>
-#### status
+<h4 class='additional-Guidance-Submenu'> status </h4>
 If a Specimen has not been collected, the status SHOULD be marked as 'unavailable'. If the quality of the Specimen is such that it cannot be processed, the status SHOULD be 'unsatisfactory' (this is equivalent to a QC status of Failed). If the Specimen passes quality control, the status SHOULD be set as 'available
+
 ```json
 "status": "unsatisfactory",
 ```
 
 <a name="type"></a>
-#### type
+<h4 class='additional-Guidance-Submenu'> type </h4>
 The sample type, SNOMED CT preferred. Used to differentiate between raw and extracted (DNA) samples.
 
 **ConceptMaps for the allowed values for primary (raw) and final (extracted DNA) samples upon release of MDSv1.04, to aid identification of whether a sample is primary vs. final** 
+
 ```json
 "type": {
         "coding":  [
@@ -287,10 +237,11 @@ The sample type, SNOMED CT preferred. Used to differentiate between raw and extr
 ```
 
 <a name="subject"></a>
-#### subject
+<h4 class='additional-Guidance-Submenu'> subject </h4>
 SHALL be provided. This SHOULD be a reference to the Patient resource or the identifier, NHS number, for the patient.
 
 Samples collected from a Fetus SHOULD reference a Patient resource for the Fetus. This should then be linked to relevant maternal/paternal resources through the RelatedPerson resource. Further information can be found on the {{pagelink:Fetus-Management}} clinical scenario. It is not envisaged that samples would need to be linked to more than one person e.g. both fetus and mother, though this assumption will be tested within the Alpha phase of the Genomic Medicine Service.
+
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -302,17 +253,19 @@ Samples collected from a Fetus SHOULD reference a Patient resource for the Fetus
 ```
 
 <a name="receivedTime"></a>
-#### receivedTime
+<h4 class='additional-Guidance-Submenu'> receivedTime </h4>
 SHOULD be updated upon receipt at a destination lab
+
 ```json
 "receivedTime": "2023-09-18T18:30:00Z"
 ```
 
 <a name="parent"></a>
-#### parent
+<h4 class='additional-Guidance-Submenu'> parent </h4>
 If a sample has been split into multiple parts, such as DNA being extracted from a primary sample, each SHOULD be represented using an additional Specimen resource, referencing the parent sample through the parent element.
 
 The central Order Management broker will only create Tasks for Specimen resources which do not have a parent element, i.e. primary samples. If required, clients can create Tasks for processing of derivative samples manually. 
+
 ```json
 "parent": [
         {
@@ -322,8 +275,9 @@ The central Order Management broker will only create Tasks for Specimen resource
 ```
 
 <a name="request"></a>
-#### request
+<h4 class='additional-Guidance-Submenu'> request </h4>
 SHALL be provided. This SHOULD be a reference to the request which initiated collection of the sample. SHALL NOT be updated if the sample is used for another test e.g. for re-analysis. In the case that a Specimen needs to be processed as part of a new request, e.g. using a sample in storage,the ServiceRequest SHALL reference the pre-existing sample via ServiceRequest.specimen. 
+
 ```json
 "request":  [
         {
@@ -333,7 +287,7 @@ SHALL be provided. This SHOULD be a reference to the request which initiated col
 ```
 
 <a name="collection"></a>
-#### collection
+<h4 class='additional-Guidance-Submenu'> collection </h4>
 Additional information which can be collected about the circumstances under which as sample was collected, if relevant. This include extensions for specialHandling of the sample, e.g. due to high risk of infection, as well as an extension to bodySite to extend the coding to a BodyStructure reference, for more detailed collection of structural information e.g. where tumour morphology and topography need to be collected.
 
 Where the collector is an Organization, or where the individual is not known, ODS codes MAY be used as identifiers in place of SDS-User-IDs. However, if referencing a resource, the PractitionerRole resource SHOULD still be referenced. In this case the `PractitionerRole.identifier` and `PractitionerRole.practitioner` reference would not be filled, leaving only the reference to an Organization from `PractitionerRole.organization`.
@@ -345,6 +299,7 @@ The Specimen.collection.quantity is the amount of the sample collected at collec
 The Specimen.container.specimenQuantity is the amount of sample remaining in a container, this is equivalent to GEL 1001 banked volume. This value should be updated as the specimen is used.
 
 If a specimen is split, additional specimen resources SHOULD be created (referencing the parent specimen), with individual container.specimenQuantity values.
+
 ```json
 "collection": {
         "collector": {
@@ -381,8 +336,9 @@ If a specimen is split, additional specimen resources SHOULD be created (referen
 ```
 
 <a name="processing"></a>
-#### processing
+<h4 class='additional-Guidance-Submenu'> processing </h4>
 SHOULD be updated if processing occurs on the sample which affects later use, e.g. additives added
+
 ```json
 "processing": [
     {
@@ -406,12 +362,13 @@ SHOULD be updated if processing occurs on the sample which affects later use, e.
 ```
 
 <a name="container"></a>
-#### container
+<h4 class='additional-Guidance-Submenu'> container </h4>
 The UK Core STU3 version of Specimen backports the R5 changes to the container BackboneElement to support capturing of storage location for a sample (through `container.location`) and recursive capture of device identifiers (e.g. tube, well, rack, freezer through `container.device`). 
 
 Additional examples/guidance will be provided within this IG once use of the fields has been appropriately tested.
 
 Sample tracking information SHOULD be added to Tasks acting on Specimen resources, e.g. Tasks marked SamplePreparation or SampleProcessing, on either the output or input elements. This information MAY include consignment number, destination, date sent etc.
+
 ```json
 "container":  [
         {
@@ -428,8 +385,9 @@ Sample tracking information SHOULD be added to Tasks acting on Specimen resource
 ```
 
 <a name="condition"></a>
-#### condition
+<h4 class='additional-Guidance-Submenu'> condition </h4>
 Used to record the condition of a specimen. Within Genomics, SHOULD be used to record the fixed/frozen state, using the UK Core bound ValueSet.
+
 ```json
 "condition":  [
         {
@@ -443,3 +401,5 @@ Used to record the condition of a specimen. Within Genomics, SHOULD be used to r
         }
     ]
 ```
+
+---

@@ -117,7 +117,6 @@ Further use cases surrounding the use of RelatedPerson are pending further Duo/T
 
 <a name="patient"></a>
 <h4 class='additional-Guidance-Submenu'> patient </h4>
-
 SHALL be provided. This SHOULD be a reference to the Patient resource and/or the identifier, e.g. NHS number, for the patient constituting the target of the relationship.  This can be visualised using the nomenclature: 
 
 ```json
@@ -126,6 +125,7 @@ SHALL be provided. This SHOULD be a reference to the Patient resource and/or the
 ```
 
 In this case the fetal identifier should be used in the patient element.
+
 ```json
 "patient": {
     "reference": "Patient/Patient-FoetusOfRyanneBoulder-Example",
@@ -144,7 +144,6 @@ In this case the fetal identifier should be used in the patient element.
 
 <a name="identifier"></a>
 <h4 class='additional-Guidance-Submenu'> identifier </h4>
-
 SHALL be provided. This SHOULD be NHS number or local identifier (if NHS number is unavailable e.g. for non UK residents) for the source of the relationship. This can be visualised using the nomenclature: 
 
 ```
@@ -156,6 +155,7 @@ In this case the Ryanne Boulder's identifier should be used for the RelatedPerso
 
 If a local identifier is used, an assigner SHALL be provided.
 The RelatedPerson.identifier field SHALL match the identifier used for a FamilyMemberHistory or Patient resource if these resources are about the same person.
+
 ```json
    "identifier": [
       {
@@ -167,8 +167,8 @@ The RelatedPerson.identifier field SHALL match the identifier used for a FamilyM
 
 <a name="relationship"></a>
 <h4 class='additional-Guidance-Submenu'> relationship </h4>
-
 SHOULD use the UK Core bound ValueSet and SHOULD be present in all instances of RelatedPerson wherever possible.
+
 ```json
 "relationship":  [
         {

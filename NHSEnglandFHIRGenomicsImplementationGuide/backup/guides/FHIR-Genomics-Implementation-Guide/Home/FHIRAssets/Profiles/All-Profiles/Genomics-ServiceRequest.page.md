@@ -223,8 +223,8 @@ Additionally, where are there multiple practitioners involved in providing care 
 
 <a name="extension:coverage"></a>
 <h4 class='additional-Guidance-Submenu'> extension:coverage </h4>
-
 SHALL be present for Genomic Order Management test orders. Extension for recording how work against the test order is being funded. The ValueSet bound to this extension is currently under review by the NHS England Genomics Informatics Working Advisory Group and subject to change.
+
 ```json
 {
     "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
@@ -238,8 +238,8 @@ SHALL be present for Genomic Order Management test orders. Extension for recordi
 
 <a name="identifier"></a>
 <h4 class='additional-Guidance-Submenu'> identifier </h4>
-
 Automatically assigned by the central service, though source systems MAY provide a local identifier for tracking within their own system, in which case the central order number is appended to the identifiers array.
+
 ```json
     "identifier":  [
         {
@@ -251,8 +251,8 @@ Automatically assigned by the central service, though source systems MAY provide
 
 <a name="basedOn"></a>
 <h4 class='additional-Guidance-Submenu'> basedOn </h4>
-
 SHALL reference a parent request where this ServiceRequest is based on a previous request, e.g. in the case of reanalysis and cascade testing, or Germline Late tests in the Tumour First/Germline Late scenario.
+
 ```json
 "basedOn":  [
         {
@@ -263,7 +263,6 @@ SHALL reference a parent request where this ServiceRequest is based on a previou
 
 <a name="status"></a>
 <h4 class='additional-Guidance-Submenu'> status </h4>
-
 SHALL be provided. ServiceRequests SHOULD be marked as 'draft' until submitted, after which they will be marked as 'active' automatically by the central GMS system. 
 
 A ServiceRequest may be marked as 'on-hold' if work against it cannot continue temporarily, e.g. due to certain prerequisite information not being provided. A ServiceRequest SHOULD be marked as 'revoked' if cancelled, either by the lab performing work against the order or at the request of the requesting clinician, though in each case a Provenance resource SHALL be provided to capture why the state change has occurred. The requesting clinician may also mark the ServiceRequest as entered-in-error, though implications for work already in progress needs to be investigated further.
@@ -288,16 +287,16 @@ For the full list of expected/supported ServiceRequest statuses, please see the 
 
 <a name="intent"></a>
 <h4 class='additional-Guidance-Submenu'> intent </h4>
-
 SHALL be provided. ServiceRequests SHOULD be marked as 'order' unless they have been raised by a lab in response to an existing ServiceRequest, in which case they SHOULD be marked as 'reflex-order'. For reflex orders, the ServiceRequest.basedOn field SHALL be populated with the original ServiceRequest, for traceability.
+
 ```json
 "intent": "order",
 ```
 
 <a name="category"></a>
 <h4 class='additional-Guidance-Submenu'> category </h4>
-
 ServiceRequests SHOULD use the [Genomics Sequencing Category](https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&filepath=package/ValueSet-UKCore-GenomeSequencingCategory.json) ValueSet when categorising the test order in order to aid analytics (e.g. PLCM). This list is pending review from the Informatics Working Advisory Group, after which a full list of possible categorisations will be finalised.
+
 ```json
 "category":  [
         {
@@ -314,8 +313,8 @@ ServiceRequests SHOULD use the [Genomics Sequencing Category](https://simplifier
 
 <a name="priority"></a>
 <h4 class='additional-Guidance-Submenu'> priority </h4>
-
 ServiceRequests marked as urgent (i.e. not routine) SHOULD populate the extension:priorityReason with why an urgent test is being requested. This SHOULD ideally be coded using SNOMED CT concepts. Multiple priorityReason extensions are allowed within a single ServiceRequest in order to aid post-coordination.
+
 ```json
 "priority": "urgent",
 "_priority": {
@@ -338,15 +337,14 @@ ServiceRequests marked as urgent (i.e. not routine) SHOULD populate the extensio
 
 <a name="doNotPerform"></a>
 <h4 class='additional-Guidance-Submenu'> doNotPerform </h4> 
-
 For the purposes of Genomic Test Ordering, the doNotPerform field SHALL NOT be used. All ServiceRequests requests received by the system will be assumed to be orders for services/testing.
 
 <a name="code"></a>
 <h4 class='additional-Guidance-Submenu'> code </h4>
-
 SHALL be provided. Code SHOULD contain the CI or CITT Test Directory code, currently available at https://www.england.nhs.uk/publication/national-genomic-test-directories/. There is currently no CodeSystem or queryable API for retrieving codes but work to address this is underway within the NHS England Genomics Unit.
 
 Codes from the Genomic Test Directory SHOULD also specify the version number of the test directory at the time the test is being ordered, to ensure the test methods used are consistent with that version of the directory. 
+
 ```json
 "code": {
         "coding":  [
@@ -362,9 +360,9 @@ Codes from the Genomic Test Directory SHOULD also specify the version number of 
 
 <a name="orderDetail"></a>
 <h4 class='additional-Guidance-Submenu'> orderDetail </h4>
-
 If multiple codes are being requested within one Test Order, these SHOULD be represented using the 'orderDetail' field, with the main indication captured using the 'code' field above. If completely separate pathways/samples etc. are required for processing against the codes, it is expected these would be requested via multiple ServiceRequests instead of a single ServiceRequest with multiple orderDetail codes. The exact cut-off for when orderDetail vs. multiple ServiceRequest should be used is still being investigated. 
 An appropriate code(Panel codes) SHOULD come from the following NamingSystem: {{pagelink:England-GenomicTestPanelCode}}
+
 ```json
 "orderDetail": [
     {
@@ -381,8 +379,8 @@ An appropriate code(Panel codes) SHOULD come from the following NamingSystem: {{
 
 <a name="subject"></a>
 <h4 class='additional-Guidance-Submenu'> subject </h4>
-
 SHALL be provided. Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS
+
 ```json
 "subject": {
         "reference": "Patient/Patient-MeirLieberman-Example",
@@ -395,24 +393,24 @@ SHALL be provided. Reference to the associated Patient. This MAY be through a re
 
 <a name="occurrence"></a>
 <h4 class='additional-Guidance-Submenu'> occurrence[x] </h4>
-
 If a result is required by a specific date, this MAY be indicated though occurrenceDateTime, though there is no guarantee from the GMS that the ServiceRequest will be processed in the time frame specified.
+
 ```json
 "occurrenceDateTime": "2023-08-25",
 ```
 
 <a name="authoredOn"></a>
 <h4 class='additional-Guidance-Submenu'> autoredOn </h4> 
-
 SHALL be populated by the client upon submission, either manually by the user or automatically by the system integrating with the central GMS.
+
 ```json
 "authoredOn": "2023-08-05",
 ```
 
 <a name="requester"></a>
 <h4 class='additional-Guidance-Submenu'> requester </h4>
-
 SHALL be populated on all ServiceRequests submitted to the central GMS. This SHALL reference a PractitionerRole resource also submitted to the system (either within a single transaction or previously POSTed).
+
 ```json
 "requester": {
         "reference": "PractitionerRole/PractitionerRole-GeneSmithENT-Example"
@@ -421,10 +419,10 @@ SHALL be populated on all ServiceRequests submitted to the central GMS. This SHA
 
 <a name="performer"></a>
 <h4 class='additional-Guidance-Submenu'> performer </h4>
-
 Allows a requester to assign processing of the ServiceRequest to a particular organization (e.g. a remote GLH). The performer field SHOULD be populated with the ODS code for the managing organization/GLH. 
 
 In the future state, ServiceRequests may be kept open, by not specifying a performer, allowing them to be picked up by the local GLH or otherwise routed based on by test routing (TBC). 
+
 ```json
 "performer": [
         {
@@ -438,10 +436,10 @@ In the future state, ServiceRequests may be kept open, by not specifying a perfo
 
 <a name="reasonCode"></a>
 <h4 class='additional-Guidance-Submenu'> reasonCode </h4>
-
 reasonCode SHOULD be populated with the type of request being ordered e.g. Diagnostic, Carrier, Predictive, Stored DNA etc. The final list of applicable codes which can be selected is still under review. It is expected that a fixed list of SNOMED CT codes will be permissible, to allow appropriate categorisation by the central service.
 
 This mapping is currently under review as the CI/CITT code is also technically the reason/indication for testing.
+
 ```json
 "reasonCode":  [
         {
@@ -457,7 +455,6 @@ This mapping is currently under review as the CI/CITT code is also technically t
 ```
 <a name="reasonReference"></a>
 <h4 class='additional-Guidance-Submenu'> reasonReference </h4>
-
 Reference SHOULD be associated to the primary condition being tested for.
 i.e,
 
@@ -469,12 +466,12 @@ i.e,
 
 <a name="supportingInfo"></a>
 <h4 class='additional-Guidance-Submenu'> supportingInfo </h4>
-
 Any clinical information provided about the patient for whom the testing is being requested SHALL be referenced though the supportingInfo field, to ensure all the information relevant to the ServiceRequest can be easily retrieved. This includes Observations, Conditions, Procedures, FamilyMemberHistories etc.
 
 This also includes resources related to family members included as part of testing (consultands), e.g. in Duo/Trio scenarios. In this instance, RelatedPerson and Patient resource references for the consultands SHALL be added to the supportingInfo array, as well as any clinical resources related to these individuals. This is to ensure the number of participants for a given test can be calculated correctly, e.g. through counting the number of RelatedPerson resources referenced from ServiceRequest.supportingInfo plus the subject of the ServiceRequest itself (the proband).
 
 For WGS testing, where Records of Discussion are required in order to process the test, Consent resources SHOULD also be added to the supportingInfo array once available.
+
 ```json
 "supportingInfo":  [
         {
@@ -509,10 +506,10 @@ For WGS testing, where Records of Discussion are required in order to process th
 
 <a name="specimen"></a>
 <h4 class='additional-Guidance-Submenu'> specimen </h4>
-
 ServiceRequests where the required samples already exist, e.g. in the case where a specimen already in storage needs to be processed, SHOULD reference these samples through the ServiceRequest.specimen field. Where samples need to be collected to support testing, these SHOULD instead reference the ServiceRequest, through Specimen.request (i.e. the service request has prompted collection of the sample), **and SHOULD also be referenced from within ServiceRequest.supportingInfo as per the guidance above (pending review)**. The referenced Specimen resources SHOULD either be contained within the test order transaction bundle or already exist on the central GMS.
 
 In the case of Reanalysis or Reinterpretation tests, Specimens related to previous ServiceRequest are not required to be added to the new test request. The links from the previous ServiceRequest can be followed to identify the Specimens that resulted in the data being reanalysed, e.g. (reanalysis) ServiceRequest.basedOn -> (prior) ServiceRequest, (prior) ServiceRequest <- (original) Specimen.request
+
 ```json
 "specimen": [
         {
@@ -523,8 +520,8 @@ In the case of Reanalysis or Reinterpretation tests, Specimens related to previo
 
 <a name="note"></a>
 <h4 class='additional-Guidance-Submenu'> note </h4>
-
 Any information which cannot be readily be structured SHOULD be entered into the note field, though prolific use of the field to capture clinical information which better fits in level 3/4 FHIR resources is discouraged.
+
 ```json
 "note":  [
         {
