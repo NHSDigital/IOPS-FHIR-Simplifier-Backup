@@ -16,3 +16,9 @@
   filename: Active-problems-and-issues.page.md
 - name: Major inactive problems and issues
   filename: Major-inactive-problems-and-issues.page.md
+- name: Other inactive problems and issues
+  filename: Other-inactive-problems-and-issues.page.md
+- name: HTML view
+  filename: HTML-view.page.md
+- name: Example view
+  filename: Example-view.page.md

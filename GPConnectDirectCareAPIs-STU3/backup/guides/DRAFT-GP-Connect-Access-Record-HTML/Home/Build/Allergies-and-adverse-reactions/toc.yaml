@@ -14,3 +14,9 @@
   filename: Section-content-banner.page.md
 - name: Current allergies and adverse reactions
   filename: Current-allergies-and-adverse-reactions.page.md
+- name: Historical allergies and adverse reactions
+  filename: Historical-allergies-and-adverse-reactions.page.md
+- name: HTML view
+  filename: HTML-view.page.md
+- name: Example view
+  filename: Example-view.page.md

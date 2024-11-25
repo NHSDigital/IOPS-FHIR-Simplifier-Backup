@@ -44,5 +44,4 @@
 </div>
 ```
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-        <i class="fas fa-exclamation-circle text-primary"></i> <b>Note:</b> In the example above, spaces have been added to each pair of brackets enclosing a placeholder (e.g. <code>{ {encounter.date} }</code>). These spaces will need removing in the actual implementation.
-</div>
+        <i class="fas fa-exclamation-circle text-primary"></i> <b>Note:</b> In the example above, spaces have been added to each pair of brackets enclosing a placeholder (e.g. { {encounter.date} }). These spaces will need removing in the actual implementation.

@@ -4,11 +4,11 @@
   filename: Encounters
 - name: Clinical items
   filename: Clinical-Items
-- name: Emergency codes
-  filename: Emergency-Codes
 - name: Problems and issues
   filename: Problems-and-issues
 - name: Allergies and adverse reactions
   filename: Allergies-and-adverse-reactions
 - name: Medications
   filename: Medications
+- name: Emergency codes
+  filename: Emergency-Codes
