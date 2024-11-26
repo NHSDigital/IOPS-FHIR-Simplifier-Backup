@@ -10,44 +10,22 @@
         </tr>
     </thead>
     <tbody>
-        <!-- id -->
+        <!-- identifier -->
         <tr>
-            <td>id</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.versionId -->
-        <tr>
-            <td>meta.versionId</td>
+            <td>identifier</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- meta.lastUpdated -->
+        <!-- status -->
         <tr>
-            <td>meta.lastUpdated</td>
+            <td>status</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- meta.profile -->
-        <tr>
-            <td>meta.profile</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.security -->
-        <tr>
-            <td>meta.security</td>
-            <td><span class="mro-circle optional" title="Optional"></span></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-        </tr>
-        <!-- meta.tag -->
-        <tr>
-            <td>meta.tag</td>
+        <!-- operationalStatus -->
+        <tr>           <td>operationalStatus</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
@@ -55,28 +33,70 @@
         <!-- name -->
         <tr>
             <td>name</td>
-            <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- address -->
+        <!-- alias -->
         <tr>
-            <td>address</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td>alias</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- description -->
+        <tr>
+            <td>description</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- type -->
+        <tr>
+            <td>type</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- telecom -->
         <tr>
             <td>telecom</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- address -->
+        <tr>
+            <td>address</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- physicalType -->
+        <tr>
+            <td>physicalType</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!--position -->
+        <tr>
+            <td>position</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
         <!-- managingOrganization -->
         <tr>
             <td>managingOrganization</td>
-            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <!-- partOf -->
+        <tr>
+            <td>partOf</td>
+            <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>

@@ -4,10 +4,6 @@
   filename: Related-links.page.md
 - name: Data model element usage
   filename: Data-model-element-usage.page.md
-- name: meta.profile
-  filename: meta.profile.page.md
-- name: meta.versionId
-  filename: meta.versionId.page.md
 - name: identifier
   filename: identifier.page.md
 - name: status
