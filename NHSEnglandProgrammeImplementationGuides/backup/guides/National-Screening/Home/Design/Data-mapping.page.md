@@ -16,63 +16,29 @@ Patient "1" *-- "many" ServiceRequest : has
 </plantuml>
 
 
+### Encounter
 
-
-<!-- should be a prooper html table not markdown due to styling and accessibility -->
-<table class="assets" title="example table">
-<tr>
-  <th class="width15">Source Data item</th>
-  <th class="width10">Cardinality</th>
-  <th class="width20">Target FHIR Element</th>
-  <th class="width55">Notes</th>
-</tr>
-<tr>
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
     <td>episode_id</td>
     <td>0..*</td>
     <td>UKCoreEncounter.identifier</td>
     <td>Type: Identifier</td>
 </tr>
 <tr>
-    <td>episode_type</td>
-    <td>0..*</td>
-    <td>UKCoreServiceRequest.priority.extension:priorityReason</td>
-    <td>Type: Extension(CodeableConcept)</td>
-</tr>
-<tr>
     <td>episode_date</td>
     <td>0..1</td>
     <td>UKCoreEncounter.period (Start)</td>
     <td>Type: Period</td>
-</tr>
-<tr>
-    <td>appointment_made</td>
-    <td>1..1</td>
-    <td>UKCoreAppoitment.status</td>
-    <td>Type: Code</td>
-</tr>
-<tr>
-    <td>date_of_foa</td>
-    <td>0..1</td>
-    <td>UKCoreAppointment.start (date)</td>
-    <td>Type: Instant</td>
-</tr>
-<tr>
-    <td>date_of_as</td>
-    <td>0..1</td>
-    <td>UKCoreProcedure.performedDateTime</td>
-    <td>Type: dateTime</td>
-</tr>
-<tr>
-    <td>early_recall_date</td>
-    <td>0..1</td>
-    <td>UKCoreAppointment.start (date)</td>
-    <td>Type: Instant</td>
-</tr>
-<tr>
-    <td>call_recall_status_authorised_by</td>
-    <td>0..1</td>
-    <td>UKCoreServiceRequest.extension:sourceOfServiceRequest</td>
-    <td>Type: Extension(CodeableConcept)</td>
 </tr>
 <tr>
     <td>end_code</td>
@@ -92,53 +58,44 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>UKCoreEncounter.extension:reasonCancelled</td>
     <td>Type: CodeableConcept</td>
 </tr>
+</tbody>
+</table>
+
+### Appointment
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>appointment_made</td>
+    <td>1..1</td>
+    <td>UKCoreAppoitment.status</td>
+    <td>Type: Code</td>
+</tr>
 <tr>
-    <td>end_point</td>
+    <td>date_of_foa</td>
     <td>0..1</td>
-    <td>UKCoreProcedure.outcome</td>
-    <td>Type: CodeableConcept.text</td>
+    <td>UKCoreAppointment.start (date)</td>
+    <td>Type: Instant</td>
 </tr>
 <tr>
-    <td>final_action_code</td>
-    <td>0..*</td>
-    <td>UKCoreCarePlan.category</td>
-    <td>Type: CodeableConcept</td>
-</tr>
-<tr>
-    <td>bso_organisation_code</td>
+    <td>early_recall_date</td>
     <td>0..1</td>
-    <td>Group.managingEntity (Organization)</td>
-    <td>Type: Reference(Organization)</td>
-</tr>
-<tr>
-    <td>bso_batch_id</td>
-    <td>0..*</td>
-    <td>Group.identifier</td>
-    <td>Type: Identifier</td>
-</tr>
-<tr>
-    <td>nhs_number</td>
-    <td>0..1</td>
-    <td>UKCorePatient.identifier.nhsNumber</td>
-    <td>Type: Identifier</td>
-</tr>
-<tr>
-    <td>gp_practice_id</td>
-    <td>0..*</td>
-    <td>UKCorePatient.generalPractitioner</td>
-    <td>Type: Reference(Organization)</td>
+    <td>UKCoreAppointment.start (date)</td>
+    <td>Type: Instant</td>
 </tr>
 <tr>
     <td>next_test_due_date</td>
     <td>0..1</td>
     <td>UKCoreAppointment.start (date)</td>
     <td>Type: Instant</td>
-</tr>
-<tr>
-    <td>subject_status_code</td>
-    <td>1..1</td>
-    <td>UKCoreFlag.code</td>
-    <td>Type: CodeableConcept</td>
 </tr>
 <tr>
     <td>early_recall_date</td>
@@ -151,6 +108,174 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>0..1</td>
     <td>UKCoreAppointment.start (date)</td>
     <td>Type: Instant</td>
+</tr>
+<tr>
+    <td>higher_risk_next_test_due_date</td>
+    <td>0..1</td>
+    <td>UKCoreAppointment.start (date)</td>
+    <td>Type: Instant</td>
+</tr>
+</tbody>
+</table>
+
+### Procedure
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>date_of_as</td>
+    <td>0..1</td>
+    <td>UKCoreProcedure.performedDateTime</td>
+    <td>Type: dateTime</td>
+</tr>
+<tr>
+    <td>end_point</td>
+    <td>0..1</td>
+    <td>UKCoreProcedure.outcome</td>
+    <td>Type: CodeableConcept.text</td>
+</tr>
+<tr>
+    <td>date_irradiated</td>
+    <td>0..1</td>
+    <td>UKCoreProcedure.performedDateTime</td>
+    <td>Type: dateTime</td>
+</tr>
+</tbody>
+</table>
+
+### Service Request
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>episode_type</td>
+    <td>0..*</td>
+    <td>UKCoreServiceRequest.priority.extension:priorityReason</td>
+    <td>Type: Extension(CodeableConcept)</td>
+</tr>
+<tr>
+    <td>call_recall_status_authorised_by</td>
+    <td>0..1</td>
+    <td>UKCoreServiceRequest.extension:sourceOfServiceRequest</td>
+    <td>Type: Extension(CodeableConcept)</td>
+</tr>
+</tbody>
+</table>
+
+### Care Plan
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>final_action_code</td>
+    <td>0..*</td>
+    <td>UKCoreCarePlan.category</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+</tbody>
+</table>
+
+### Group
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>bso_organisation_code</td>
+    <td>0..1</td>
+    <td>Group.managingEntity (Organization)</td>
+    <td>Type: Reference(Organization)</td>
+</tr>
+<tr>
+    <td>bso_batch_id</td>
+    <td>0..*</td>
+    <td>Group.identifier</td>
+    <td>Type: Identifier</td>
+</tr>
+</tbody>
+</table>
+
+### Patient
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>nhs_number</td>
+    <td>0..1</td>
+    <td>UKCorePatient.identifier.nhsNumber</td>
+    <td>Type: Identifier</td>
+</tr>
+<tr>
+    <td>gp_practice_id</td>
+    <td>0..*</td>
+    <td>UKCorePatient.generalPractitioner</td>
+    <td>Type: Reference(Organization)</td>
+</tr>
+<tr>
+    <td>preferred_language</td>
+    <td>1..1</td>
+    <td>UKCorePatient.communication.language</td>
+    <td>Type: CodeableConcept</td>
+</tr>
+</tbody>
+</table>
+
+### Flag
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+    <td>subject_status_code</td>
+    <td>1..1</td>
+    <td>UKCoreFlag.code</td>
+    <td>Type: CodeableConcept</td>
 </tr>
 <tr>
     <td>removal_reason</td>
@@ -177,22 +302,10 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>Type: CodeableConcept</td>
 </tr>
 <tr>
-    <td>higher_risk_next_test_due_date</td>
-    <td>0..1</td>
-    <td>UKCoreAppointment.start (date)</td>
-    <td>Type: Instant</td>
-</tr>
-<tr>
     <td>higher_risk_referral_reason_code</td>
     <td>1..1</td>
     <td>UKCoreFlag.code</td>
     <td>Type: CodeableConcept</td>
-</tr>
-<tr>
-    <td>date_irradiated</td>
-    <td>0..1</td>
-    <td>UKCoreProcedure.performedDateTime</td>
-    <td>Type: dateTime</td>
 </tr>
 <tr>
     <td>is_higher_risk_active</td>
@@ -201,21 +314,32 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>Type: Period</td>
 </tr>
 <tr>
-    <td>gene_code</td>
-    <td>0..1</td>
-    <td>UKCoreObservation.value.valueCodeableConcept</td>
-    <td>Type: CodeableConcept</td>
-</tr>
-<tr>
     <td>ntdd_calculation_method</td>
     <td>1..1</td>
     <td>UKCoreFlag.code</td>
     <td>Type: CodeableConcept</td>
 </tr>
+<tbody>
+</table>
+
+### Observation
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
 <tr>
-    <td>preferred_language</td>
-    <td>1..1</td>
-    <td>UKCorePatient.communication.language</td>
+    <td>gene_code</td>
+    <td>0..1</td>
+    <td>UKCoreObservation.value.valueCodeableConcept</td>
     <td>Type: CodeableConcept</td>
 </tr>
+<tbody>
 </table>
+
