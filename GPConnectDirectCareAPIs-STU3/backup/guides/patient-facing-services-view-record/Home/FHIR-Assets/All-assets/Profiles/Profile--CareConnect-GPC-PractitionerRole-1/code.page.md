@@ -2,7 +2,7 @@
 
 <h5><ins>Usage</ins></h5>
 
-<span class="mro-circle mandatory" title="Mandatory"></span> Mandatory
+<span class="mro-circle optional" title="Optional"></span> Optional
 
 <h5><ins>Guidance</ins></h5>
 
