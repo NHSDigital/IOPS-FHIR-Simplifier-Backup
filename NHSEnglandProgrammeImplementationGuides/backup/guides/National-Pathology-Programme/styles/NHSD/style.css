@@ -1,19 +1,13 @@
 html, body {
      padding: 0;
      margin: 0;
-     font-family: Arial, Helvetica, sans-serif;
-     font-size: 16px;
-     color: #231f20;
 }
  body {
      position: relative;
      height: 100%;
 }
  body header {
-     background-color: #005EB8;
-}
-header .row {
-min-height: 120px;
+     background-color: #f5f5f5;
 }
  body header .title {
      font-size: 24px;
@@ -24,30 +18,18 @@ min-height: 120px;
      color: #222;
      text-decoration: none;
 }
- body header h3 {
-     text-align: center;
-}
- body header h5 {
-     text-align: center;
-}
- body header .nhs-e-logo {
+ body header .hl7-fhir-logo-lhs {
      text-align: left;
-     margin-top: 20px;
-     margin-bottom: 20px;
+     margin-top: 7px;
+     margin-bottom: 5px;
 }
  body header .hl7-logo {
-    background-color: #ffffff;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    float: right;
-    vertical-align: top;
+     text-align: right;
+     float: left;
 }
  body header .guide-title {
-    font-size: 30px;
-    margin-top: 20px;
-    color: #ffffff;
+    font-size: 18px;
+    margin-top: 18px;
 }
  body .content {
      overflow: hidden;
@@ -58,8 +40,8 @@ min-height: 120px;
      padding-bottom: 105px;
 }
  body footer {
-     background-color: #E8EDEE;
-     color: #231f20;
+     background-color: #dde1e4;
+     color: #222;
      height: 105px;
      position: relative;
      padding-top: 40px;
@@ -81,26 +63,22 @@ min-height: 120px;
      display: table;
 }
 
-a {
-color: #005EB8;
-}
-
 hr {
     height: 1px;
-    background-color:#0072ce !important;
+    background-color:#dde1e4 !important;
 }
 hr.thickline{
     height: 2px;
     background-color:#003087;
 }
 
-.tab {
+ .tab {
      overflow: hidden;
      border: 1px solid #dde1e4;
      background-color: #dde1e4;
 }
 /* Style the buttons inside the tab */
-.tab button {
+ .tab button {
      background-color: inherit;
      float: left;
      border: none;
@@ -108,7 +86,7 @@ hr.thickline{
      cursor: pointer;
      padding: 14px 16px;
      transition: 0.3s;
-     font-size: 16px;
+     font-size: 14px;
 }
 /* Change background color of buttons on hover */
  .tab button:hover {
@@ -126,9 +104,6 @@ hr.thickline{
      border: 1px solid #dde1e4;
      border-top: none;
 }
-.tab button.feedback {
-    float: right;
-}
 
 /* css for simplifier diff/hybrid/snap buttons */
 .treetable-buttons {
@@ -141,7 +116,7 @@ hr.thickline{
      outline: none;
      cursor: pointer;
      transition: 0.3s;
-     font-size: 16px;
+     font-size: 14px;
      color: #425563 !important;
 }
 /* Change background color of buttons on hover */
@@ -154,7 +129,7 @@ hr.thickline{
      color: #fff !important;
 }
 
-/* css for simplifier tabs */
+//css for simplifier tabs
 .cool-tabs .nav-tabs {
      overflow: hidden;
      border: 1px solid #dde1e4;
@@ -169,7 +144,7 @@ hr.thickline{
      cursor: pointer;
      padding: 14px 16px;
      transition: 0.3s;
-     font-size: 16px;
+     font-size: 14px;
 }
 .cool-tabs .nav-tabs>li>a:focus,.cool-tabs .nav-tabs>li>a:hover {
     background-color: #919ea8;
@@ -191,78 +166,61 @@ hr.thickline{
     padding-bottom: 0
 }
 
-/* 24/10/2024 PB: Removed for Pathology FHIR IG as not used. */
 /*core UKCore table style*/
-/*table.assets {*/
-     /*font-family: Arial, Helvetica, sans-serif !important;*/
-/*     
+table.assets {
+     font-family: Arial, Helvetica, sans-serif !important;
      border-collapse: collapse !important;
      width: 100% !important;
 }
 table.assets td, table.assets th {
-     border: 1px solid #E8EDEE !important;
+     border: 1px solid #dde1e4 !important;
      padding: 8px !important;
 }
  table.assets tr:nth-child(odd){
     background-color: #fff;
 }
  table.assets tr:nth-child(even){
-    background-color: #E8EDEE;
+    background-color: #f2f2f2;
 } 
  table.assets tr:hover {
-    background-color: #768692 !important;
+    background-color: #ddd !important;
 }
 table.assets tr.balloted {
-    background-color:#E8EDEE !important;
+    background-color:#dff0d8 !important;
 }
 table.assets tr td.balloted {
-    background-color:#E8EDEE !important;
+    background-color:#dff0d8 !important;
 }
  table.assets th {
      padding-top: 12px !important;
      padding-bottom: 12px !important;
      text-align: left !important;
-     background-color: #0072ce;
+     background-color: #005eb8 !important;
      color: white !important;
 }
  table.assets th a{
      color: white !important;
 }
-*/
+
 
  tr.wordBreak, td.wordBreak {
     overflow-wrap: break-word !important;
 }
 
  th.width5 { width: 5%; overflow-wrap: anywhere; }
- th.width05 { width: 5%; overflow-wrap: anywhere; }
  th.width10 { width: 10%; overflow-wrap: anywhere; }
  th.width15 { width: 15%; overflow-wrap: anywhere; }
  th.width20 { width: 20%; overflow-wrap: anywhere; }
  th.width25 { width: 25%; overflow-wrap: anywhere; }
  th.width30 { width: 30%; overflow-wrap: anywhere; }
- th.width33 { width: 33%; overflow-wrap: anywhere; }
  th.width35 { width: 35%; overflow-wrap: anywhere; }
  th.width40 { width: 40%; overflow-wrap: anywhere; }
- th.width45 { width: 45%; overflow-wrap: anywhere; }
- th.width50 { width: 50%; overflow-wrap: anywhere; }
- th.width55 { width: 55%; overflow-wrap: anywhere; }
- th.width60 { width: 60%; overflow-wrap: anywhere; }
- th.width65 { width: 65%; overflow-wrap: anywhere; }
- th.width70 { width: 70%; overflow-wrap: anywhere; }
- th.width75 { width: 75%; overflow-wrap: anywhere; }
 
  td.width20 { width: 20%; overflow-wrap: anywhere; }
  td.width25 { width: 25%; overflow-wrap: anywhere; }
  td.width30 { width: 30%; overflow-wrap: anywhere; }
  td.width35 { width: 35%; overflow-wrap: anywhere; }
  td.width40 { width: 40%; overflow-wrap: anywhere; }
-
-
- th.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
- th.comparison-note { width: 34%; overflow-wrap: anywhere; }
- td.comparison-fhir { width: 22%; overflow-wrap: anywhere; }
- td.comparison-note { width: 34%; overflow-wrap: anywhere; }
 
  .underconstruction {
      display: grid;
@@ -274,30 +232,30 @@ table.assets tr td.balloted {
      text-align: center;
 }
 
-table.valuesetlist {
-     /*font-family: Arial, Helvetica, sans-serif;*/
+ #valuesetlist {
+     font-family: Arial, Helvetica, sans-serif;
      border-collapse: collapse;
      width: 100%;
 }
-table.valuesetlist td, table.valuesetlist th {
-     border: 1px solid #E8EDEE;
+ #valuesetlist td, #valuesetlist th {
+     border: 1px solid #919ea8;
      padding: 8px;
 }
-table.valuesetlist tr:nth-child{
+ #valuesetlist tr:nth-child{
     background-color: #dde1e4;
 }
-table.valuesetlist tr:hover {
-    background-color: #E8EDEE;
+ #valuesetlist tr:hover {
+    background-color: #919ea8;
 }
 
-table.valuesetlist tr.balloted {
+ #valuesetlist tr.balloted {
     background-color:#dff0d8 !important;
 }
-table.valuesetlist th {
+ #valuesetlist th {
      padding-top: 12px;
      padding-bottom: 12px;
      text-align: left;
-     background-color: #0072ce;
+     background-color: #005eb8;
      color: white;
 }
 /* back to top button - renders when scrolling */
@@ -322,8 +280,8 @@ table.valuesetlist th {
  .navbar-nav>li>a:hover,
  .navbar-nav>li>a:active,
  .navbar-nav>li>a:focus  {
-    background-color: #0072CE !important;
-    color: #ffffff !important;
+    background-color: #919ea8 !important;
+    color: #005eb8 !important;
 }
  .container-fluid>.navbar-collapse,
  .container-fluid>.navbar-header,
@@ -338,22 +296,16 @@ table.valuesetlist th {
      background-color: #f9f9f9 !important;
  }
 
-li.submenu-subparent{
-    list-style-type: none;
+ .submenu-list{
+    display:none;
+    width:max-content;
 }
 
-.submenu-list, .submenu-sublist{
-  transition: all 0.5s linear;
-  width:max-content;
-}
-.hidden , .subhidden {
-  display:none;
-}
-.visuallyhidden , .visuallysubhidden {
-  opacity: 0;
+.submenu-parent:hover > ul {
+    display:block;
 }
 
-.submenu-list>li>a, .submenu-sublist>li>a {
+.submenu-list>li>a {
     font-weight: 400;
     color: #333;
     display: block;
@@ -440,27 +392,24 @@ td.frm-set {
 
 
 /*recreating base simplifier table.regular class to enable display override for showing/hiding */
-#preview-content table.codes, #preview-content table.baseFhir {
+#preview-content table.codes {
     border: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
     width: 100%;
     position: relative;
     display: table;
-    /*font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-size: 16px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
     line-height: 1.42857;
     margin-bottom: 10px;
 }
 
-#preview-content table.codes tbody,#preview-content table.codes tfoot,#preview-content table.codes thead, 
-#preview-content table.baseFhir tbody {
+#preview-content table.codes tbody,#preview-content table.codes tfoot,#preview-content table.codes thead {
     width: 100%;
     border-color: #e0e0e0
 }
 
-
-#preview-content table.codes thead,#preview-content table.codes tr:not(:last-child), 
-#preview-content table.baseFhir tr:not(:last-child) {
+#preview-content table.codes thead,#preview-content table.codes tr:not(:last-child) {
     border-bottom: 1px solid #e0e0e0
 }
 
@@ -468,22 +417,20 @@ td.frm-set {
     background-color: #f9f9f9
 }
 
-#preview-content table.codes tbody td, 
-#preview-content table.baseFhir tbody td {
+#preview-content table.codes tbody td {
     background-color: #fff
 }
 
-#preview-content table.codes td,#preview-content table.codes th, 
-#preview-content table.baseFhir td,#preview-content table.baseFhir th{
+#preview-content table.codes td,#preview-content table.codes th{
     padding: 5px;
     color: #425563;
     border-color: #e0e0e0
 }
 
-#preview-content table.codes td:not(:last-child),#preview-content table.codes th:not(:last-child), 
-#preview-content table.baseFhir td:not(:last-child),#preview-content table.baseFhir th:not(:last-child) {
+#preview-content table.codes td:not(:last-child),#preview-content table.codes th:not(:last-child) {
     border-right: 1px solid #e0e0e0;
 }
+
 
 /* styling for nhse style sort buttons */
 .sort-icon {
@@ -545,265 +492,8 @@ table.codes thead tr:first-child th.orderable button:hover .sort-icon {
   background-color: #919ea8;
 }
 
-
-/* this part adds an icon after external links, using FontAwesome*/
-a.external:after {
-     font-family: 'FontAwesome';
-   font-weight: 900;
-   content: "\f35d";
-    padding-left: 5px;
-}
-
-h2 code {
-    cursor: pointer;
-}
-
-.alert-baseFhir {
+.alert-nhse {
     background-color: #f5f5f5;
     border-color: #919ea8;
     color: #231f20
-}
-
-.alert-baseFhir hr {
-    border-top-color: #a6e1ec
-}
-
-.alert-baseFhir .alert-link {
-    color: #245269
-}
-
-
-.copy-text .btn-copy{
-  visibility: hidden;
-  display: none;
-}
-
-.copy-text:hover .btn-copy {
-  visibility: visible;
-  display: inline-block;
-}
-
-.btn-copy {
-  border-width: 0px;
-  background-color: transparent;
-}
-
-.copy-text .btn-copy:after {
-     font-family: 'FontAwesome';
-   font-weight: 900;
-   content: "\f0c5";
-    padding-left: 5px;
-}
-
-
-
-.cookie-consent {
-  /*Hide by default*/
-  display: none;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  z-index: 900;
-}
-
-.cookie-consent {
-  background: #222;
-  color: #fff;
-  font-size: 1em;
-  /*font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;*/
-  box-sizing: border-box;
-  padding: 15px 30px 15px;
-}
-
-.cookie-consent p {
-  float: left;
-  width: 80%;
-  margin: 0;
-}
-
-.cookie-consent a {
-  color: #fff;
-}
-
-.cookie-consent .btn {
-  cursor: pointer;
-  font-size: 1em;
-  color: #fff;
-  background-color: #990000;
-  border: 1px solid transparent;
-  border-color: #fff;
-  border-radius: 7px;
-  text-align: center;
-
-  padding: 8px 15px;
-  display: block;
-  width: 20%;
-  margin-left: 10px;
-  float: right;
-  max-width: 120px;
-}
-
-.cookie-consent .btn:hover,
-.cookie-consent .btn:active {
-  background-color: #d6d8d9;
-  border-color: #c6c8ca;
-  color: #1b1e21;
-}
-
-@media (max-width: 480px) {
-  .hidden-xs {
-    display: none;
-  }
-}
-
-.snippetBackground {
-    background-color: #ddd;
-}
-
-.navbar-default {
-    background-color: #0072CE;
-    border-color: transparent;
-}
-
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
-    color: #ffffff;
-    font-size: 16px;
-}
-
-.h1, .h2, .h3, h1, h2, h3 {
-    color: #005EB8;
-}
-
-.container, .container-fluid {
-    padding-left: 100px;
-    padding-right: 100px;
-    width: 100%
-}
-
-a#footer-sitemap, a#footer-history, a#footer-licence, a#footer-propose, a#footer-basedon {
-color: #0072CE;    
-}
-
-.alert-license {
-    background-color: #e8edee;
-}
-
-.alert-warning {
-    background-color: #ffb81c;
-    border-color: #ffb81c;
-    color: #231f20;
-}
-
- .alert-danger {
-    background-color: #ffb81c;
-    border-color: #ffb81c;
-    color: #231f20;
- }
-
-  .alert-info {
-    background-color: ##d9edf6;
-    border-color: ##d9edf6;
-    color: #231f20;
- }
-
- .hero-header {
-     background-color: #0072ce;
-     color:#ffffff;
-     min-height: 50px;
-     padding: 15px;
- }
-
- .navbar {
-     margin-bottom: 0px;
- }
-
-.col-md-logo {
-    width: 20%; 
-    float:left;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.col-md-plogo {
-    width: 20%;
-    float: left;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /*padding: 5px;
-    background-color: #ffffff;*/
-}
-
-.col-md-title {
-    width: 60%;
-    float:left;
-    color: #ffffff;
-    font-size: 30px;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.col-md-description {
-    float:left;
-    color: #ffffff;
-    font-size: 16px;
-    text-align: left;
-}
-
- .col-md-6 {
-    width: 20%;
-}
-
-.col-md-18 {
-    width: 80%;
-}
-
-.container-nhs-mid-grey {
-    background-color: #768692;
-    color: #ffffff;
-    padding: 20px;
-}
-
-.container-nhs-pale-grey {
-    background-color: #E8EDEE;
-    padding: 20px;
-}
-
-.container-nhs-dark-blue {
-    background-color: #003087;
-    padding: 20px;
-}
-
-.container-nhs-blue {
-    background-color: #005EB8;
-    color: #ffffff;
-    padding: 20px;
-}
-
-.container-nhs-bright-blue {
-    background-color: #0072CE;
-    padding: 20px;
-}
-
-.row {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.col-grid {
-    text-align: center;
-}
-
-.col-grid-content {
-    width: 32%;
-    text-align: center;
-    float: left;
-    padding: 10px;
-    min-height: 200px;
-    margin: 5px;
-    background-color: #E8EDEE;
 }

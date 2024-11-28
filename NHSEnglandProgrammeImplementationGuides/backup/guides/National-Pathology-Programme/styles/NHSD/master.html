@@ -13,34 +13,46 @@
         <link rel="stylesheet" href="{{content}}/styles/common/bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
         <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+   
+    <link href="https://design-system.digital.nhs.uk/" rel="preconnect" crossorigin="">
+    <link rel="stylesheet" href="https://design-system.digital.nhs.uk/cdn/v0.97.0/stylesheets/nhsd-frontend.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="//nhs-prod.global.ssl.fastly.net/webfiles/1629803351410/dist/nhsd-frontend-edge-cases.css" media="screen" type="text/css" />
+
+    <link type="font/woff2" href="https://dbs1dgg3cdf4v.cloudfront.net/cdn/latest/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
+    <link type="font/woff2" href="https://dbs1dgg3cdf4v.cloudfront.net/cdn/latest/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
+    <link type="font/woff2" href="https://dbs1dgg3cdf4v.cloudfront.net/cdn/latest/fonts/FrutigerLTW01-45Light.woff2" rel="preload" as="font" crossorigin>
 
         <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
         <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
         <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
         <script src="{{content}}/styles/common/rendering/baseTreetable.min.js"></script>
-               
     </head>
 
     <body>
+
         <header>
-        <div class="container">
-            <div id="header" class="row">
-                <div class="col-md-logo">
-                    <a href="https://www.england.nhs.uk"><img src="https://www.england.nhs.uk/wp-content/themes/nhsengland/static/img/nhs-england-white.svg" height="70" alt="NHS England" /></a>
-                </div>
-                <div class="col-md-title">
-                    {{variable:guide-title }}
-                    <br/>
-                    <div class="col-md-description">
-                    {{variable:guide-description}}
+
+            <div class="container">
+                <div id="header" class="row">
+                    <div class="col-md-4 hl7-fhir-logo-lhs">
+                        <a href="https://www.england.nhs.uk/">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/NHS_England_logo.svg/2560px-NHS_England_logo.svg.png" width="65" alt="NHS England logo"/>
+                        </a>
                     </div>
-                </div>
-                <div class="col-md-plogo">
-                    <a href="https://hl7.org/fhir/"><img src="https://hl7.org/implement/Standards/fhir/assets/images/fhir-logo-www.png" height="40" alt="FHIR logo"/></a>
+                    <div class="col-md-16"> 
+                            <h3 align="center">{{ guide-title }}</h3>
+                    </div>
+                    <div class="col-md-4 hl7-logo" style="margin-top:15px;">
+                        <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}">
+                           <img src="https://www.hl7.org/fhir/assets/images/fhir-logo-www.png" width="140" alt="HL7 FHIR logo"/>
+                        </a> 
+                    </div>
+
                 </div>
             </div>
-        </div>
-        {{ dropdown-navigation }}
+            {{ dropdown-navigation }}
         </header>
 
         <!-- Implementation guide content -->
@@ -48,9 +60,10 @@
 
             <!-- Header to be displayed on each page -->
             <!--Comment out for publication, start-->
-            <div id="development-notice"  markdown="span" class="alert alert-info" role="alert">
-                Notice: This guidance is under active development by NHS England and content may be added or updated on a regular basis.
+            <div id="development-notice" markdown="span" class="alert alert-danger" role="alert">
+                <h4><i class="fas fa-exclamation-triangle"></i> WARNING</h4> This guidance is under active development by NHS England and content may be added or updated on a regular basis. The implementation guide is currently in draft and SHOULD NOT be used for development or implementation without consulting the NHS England <a href="https://digital.nhs.uk/services/pathology-standards-and-implementation">Pathology Standards and Implementation</a> team.
             </div>
+          
             <!--Comment out for publication, end-->
 
             {{ page-with-children }}
@@ -61,32 +74,22 @@
             back to top
         </a>
 
-        <footer>
-
-            <!-- Consent Bar -->
-            <div class="cookie-consent" data-level="20" data-duration="8">
-                <p>Simplifier, and NHS England, use cookies on this website. <span class="hidden-xs">Cookies are small text files, stored on your computer. We use cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site without changing settings, you are agreeing to our use of cookies.</span></p>
-                <button type="button" class="btn btn-primary cookie-accept" data-level="80" data-duration="8760">Accept</button>
-            </div>
-
-            <!-- main footer container, sizes match NHSE IG for consistent look and feel -->
-            <div class="container">                                  
-                <table role="none" title="Footer Links" width="100%">
-                    	<col style="width:19%">
-	                    <col style="width:17%">
-    	                <col style="width:18%">
-	                    <col style="width:13%">
-    	                <col style="width:33%">
-                  <tr>
-                      <td>Powered by <b>SIMPLIFIER.NET</b></td>
-                      <td>IG © <script>document.write(/\d{4}/.exec(Date())[0])</script>+ NHS England</td>
-                      <td><span><b>Version:</b> {{ guide-version }}</span></td>
-                      <td><span><b>FHIR Version:</b> {{ guide-fhir-version }} </span></td>
-                      <td><b>Packages are based on:</b>  <a id="footer-basedon" href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
+		<footer>
+            <div class="container">
+                <table role="none" title="Footer Links">
+                    	<col style="width:25%">
+	                    <col style="width:25%">
+    	                <col style="width:25%">
+	                    <col style="width:25%">
+                    <tr>
+                      <td>Powered by <b>SIMPLIFIER.NET</b></td>                      
+                      <td>IG © 2023+ NHS England</td>
+                      <td><span><b>Version:</b> 0.1.8</span></td>
+                      <td><b>Released:</b> 30/08/2024</td>
                     </tr>
                     <tr>
-                      <td><b>Released:</b> TBC</td>
-                      <td colspan="3"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Helpandsupport/Sitemap-Overview.page.mdd?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../Home/?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                      <td colspan="2"><b>Packages are based on:</b> <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a></td>
+                      <td colspan="2"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="/guide/Pathology-FHIR-Implementation-Guide/Home/Helpandsupport/Sitemap?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="/guide/Pathology-FHIR-Implementation-Guide/Home/Helpandsupport/Release-Notes?version={{ guide-version }}">Version history</a> | <a id="footer-licence" href="/guide/Pathology-FHIR-Implementation-Guide/Home?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
                     </tr>  
                 </table>
             </div>
@@ -97,16 +100,12 @@
             var backToTopButton = document.getElementById("back-to-top");
 
             // When the user scrolls down 100px from the top of the document, show the button
-            window.onscroll = function () { 
+            window.onscroll = function () { handleScrolling() };
 
-                                        
+            function handleScrolling() {
                 showTopButton();
-                try {
                 scrollProfileSideBar();
-                } catch {
-
-                }
-            };           
+            }
 
             function showTopButton() {
                 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -116,6 +115,22 @@
                 }
             }
 
+            function scrollProfileSideBar() {
+                var hasSDH1 = $('div#preview-content h2[id^=structuredefinition-england]');
+                if (hasSDH1 != undefined && hasSDH1.length > 0)
+                {
+                    if (hasSDH1[0].getBoundingClientRect().top < 0) {
+                        var amountToMove=hasSDH1[0].getBoundingClientRect().top * -1;
+                        $("div.col-md-6").css({
+                            "top": amountToMove + 20 + "px"
+                        });
+                    } else {
+                        $("div.col-md-6").css({
+                             "top": "0"
+                        });
+                    }
+                }
+            }
             // When the user clicks on the button, scroll to the top of the document
             function goBackToTop() {
                 document.body.scrollTop = 0;
@@ -125,13 +140,14 @@
 
             //Ensures footer is at the bottom of the page 
             function updateFooterPosition() {
+                if ($('footer') != undefined && $('footer') .length > 0){
                 var bottomOfFooter = $('footer').offset().top + $('footer').outerHeight(true);
                 var heightShortage = $(document).height() - bottomOfFooter;
                 if (heightShortage < 0) heightShortage = 0;
                 $('footer').css('margin-top', heightShortage);
+                }
             }
 
-            // main code to handle all tabs, editing this will probably break everything                                                                                      
             function openTab(evt, tabName) {
                 // Find the element that has been clicked with jQuery
                 var element = $(evt.target);
@@ -149,7 +165,7 @@
                 parent.find(".tabcontent").hide(0);
 
                 // Show the desired content with the current view
-                parent.find(".tabcontent[id^='"+tabName+"']").show(0);
+                parent.find(".tabcontent[id='"+tabName+"']").show(0);
             }
 
             // function to turn multiple columns into rows for an fql table, within a specific div
@@ -168,7 +184,6 @@
                     var newTable = document.createElement('table');
                     newTable.classList.add("table-bordered");
                     newTable.classList.add("scrollbar");
-                    newTable.setAttribute("title","Profile Details");
                     
                     // Find the max number of columns in the fql table
                     var maxColumns = 0;
@@ -299,54 +314,114 @@
                     $(this).parent().find('div.tabcontent').addClass('forceWhite');
                 });
             }
-            //remaps sitemap and licence links to always point within the IG being read
+            
+            // function add the submenus for profiles
+            function createProfileSubMenus() {
+               //mobile friendly tweak - check window size, and add sub menu if we can
+                if (window.matchMedia("(min-width: 992px)").matches){
+                    //add the sub menu's for profiles
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles N to Z <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(2)').after('<li class="submenu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles A to M <span class="caret"></span></a><ul class="submenu-list"></ul></li>');
+                    //add a seperator
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
+                    
+                    //and move the items into the sub menus
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(0) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(4,26)); //A to M
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li.submenu-parent:eq(1) ul.submenu-list').append($('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:not(.submenu-parent)').slice(26)); //N to Z
+                } else {
+                    //add a seperator
+                    $('ul.nav li.dropdown:eq(1) ul.dropdown-menu li:eq(1)').after('<li role="separator" class="divider"></li>');
+                }
+            }
+
+            // function add the submenus for terminology
+            function createTerminologySeparator() {
+                $('ul.nav li.dropdown:eq(2) ul.dropdown-menu li:eq(0)').after('<li role="separator" class="divider"></li>');
+            }
+
+            //remaps {{guide-version}} to current if needed, for sitemap and licence links
             function fixFooterVersion() {
                 let pageUrl = window.location.href;
                 let pageVersion = "?" + pageUrl.split("?")[1];
-                pageVersion = pageVersion.split("#")[0];
-                pageUrl = pageUrl.split("?")[0];
-                let slashCount = pageUrl.split("/").length;
-                let newUrl = '';
-                for (i=0;i<slashCount;i++)
-                for (i=0;i<slashCount;i++)
-                {
-                    newUrl = newUrl + pageUrl.split("/")[i] + "/";
-                    if (newUrl.endsWith("Home/") || newUrl.endsWith("home/")) {
-                        i = slashCount;
-                    }
-                }
-                if (newUrl.endsWith("/")) {
-                    newUrl = newUrl.slice(0, -1);
-                }
-                if (!(newUrl.endsWith("Home") || newUrl.endsWith("home"))) {
-                    newUrl = newUrl + "/Home";
-                }
                 $("a#footer-sitemap").each(function(index) {
                     let destUrl = $(this)[0].href;
                     let destVersion = "?" + destUrl.split("?")[1];
-                    destUrl = newUrl + "/Help-and-support/Sitemap-Overview" + destVersion;
                     if (pageVersion.startsWith("?version=current")){
-                        destUrl = destUrl.replace(destVersion, ".page.md" + pageVersion);
+                        destUrl = destUrl.replace(destVersion, pageVersion);
                     }
                     $(this).attr("href", destUrl) ;
 				});
                 $("a#footer-licence").each(function(index) {
                     let destUrl = $(this)[0].href;
                     let destVersion = "?" + destUrl.split("?")[1];
-                    destUrl = newUrl + destVersion;
                     if (pageVersion.startsWith("?version=current")){
-                        destUrl = destUrl.replace(destVersion, pageVersion);
-                    }
-                    if (!destUrl.endsWith("#Licence")) {
-                        destUrl = destUrl+"#Licence";
+                        destUrl = destUrl.replace(destVersion, pageVersion) + '#Licence';
                     }
                     $(this).attr("href", destUrl) ;
 				});
 			}
-        </script>
-        <script>
 
-            /* following chunk replicates old nhsd ig style /\ and \/ sort buttons */
+            //function flips valueset expansion table visibility
+            function toggleExpandedValueSetTableVisibility(anchor) {
+                var table = anchor.parentElement.nextElementSibling;
+                if (table.style.display != 'none') {
+                    table.style.display = "none"
+                } else {
+                    table.style.display = "table"
+                }
+            }  
+
+            //code finds valuesets on their sub page / all vs page
+            // and looks for the expansion table
+            // for the all valuesets, it hides this, and makes the concepts text above a link to show/hide the table, and also swaps links for snomed ct concepts to go to termbrowser
+            // for sub page displays, just looks for expansion tables containing snomed ct concepts, and rewrites them to termbrowser
+            function alterValueSetTables() {
+                // 
+                $('div#preview-content div[id^=ValueSet-England] div[id^=HTML]').each(function(index) {
+                    if ($(this).children('table.regular').length > 1){
+                        var lookForP = $(this).children('p:contains("This value set contains")');
+                        var lookForSNOMEDCT = $(this).children('ul').children('li:contains("Include codes from SNOMED_CT")');
+                        var tableToAlter = $(this).children('table.regular').eq(1);
+
+                        if (lookForP != undefined && lookForP.length > 0) {
+                            lookForP[0].innerHTML = lookForP[0].innerHTML.replace("concepts","<a href='#' onclick='toggleExpandedValueSetTableVisibility(this);return false;'>concepts</a>")
+                            tableToAlter.addClass('codes');
+                            tableToAlter.css({
+                                "display": "none"
+                            });
+                            tableToAlter.removeClass('regular');
+
+                            if (lookForSNOMEDCT != undefined && lookForSNOMEDCT.length >0 ) {
+                                for(var r = 1; r < tableToAlter[0].rows.length; r++) {
+                                    var conceptID = tableToAlter[0].rows[r].cells[0].innerText;
+                                    tableToAlter[0].rows[r].cells[0].innerHTML = "<a href='https://termbrowser.nhs.uk/?perspective=full&conceptId1=" + conceptID +"'>" + conceptID + "</a>"
+                                }  
+                            }
+                        }
+                    }
+                });
+
+                $('div#preview-content div[id^=HTML]').each(function(index) {
+                    if ($(this).children('table.regular').length > 1){
+                        var lookForP = $(this).children('p:contains("This value set contains")');
+                        var lookForSNOMEDCT = $(this).children('ul').children('li:contains("Include codes from SNOMED_CT")');
+                        var tableToAlter = $(this).children('table.regular').eq(1);
+                        if (lookForP != undefined && lookForP.length > 0 && lookForSNOMEDCT != undefined && lookForSNOMEDCT.length >0 ) {
+                            
+                            tableToAlter.addClass('codes');
+                            tableToAlter.removeClass('regular');
+
+                            for(var r = 1; r < tableToAlter[0].rows.length; r++) {
+                                var conceptID = tableToAlter[0].rows[r].cells[0].innerText;
+                                tableToAlter[0].rows[r].cells[0].innerHTML = "<a href='https://termbrowser.nhs.uk/?perspective=full&conceptId1=" + conceptID +"'>" + conceptID + "</a>"
+                            }  
+                        }
+                    }
+                });
+            }
+
+
+            /* following chunk replicates nhse /\ and \/ sort buttons */
 
             //for tables with class codes (codesystems, altered valusets)
             // shift the first row into a thead
@@ -463,24 +538,23 @@
             }
             //function for the sort comparator
             function sortFunction(row0Value, row1Value) {
-                const n = /[^a-zA-Z]/g
-                , s = /[^0-9]/g
-                , o = row1Value.replace(n, "")
-                , i = row0Value.replace(n, "");
-                if (o === i) {
-                    const n = parseInt(row1Value, 15)
-                    , o = parseInt(row0Value, 15);
-                    return n === o ? 0 : n > o ? 1 : -1
-                }
-                return o > i ? 1 : -1
+                return row0Value > row1Value ? -1 : 1
             }
-        </script>
-        <script>
-            //this function wraps the left hand menu items if they are too long
-            // numbers are arbitarily, but work of for NHSE / UKCore IGs
+        
+            function pageInIframe() {
+                if (window.frameElement !== null)
+                {
+                    $('div#development-notice').remove();
+                    $('footer').remove();
+                }
+            }
+
+            // this function wraps the left hand menu
             function wrapSideBar() {
                 $('div.col-md-6 ul.nav li a').each(function(index) {
                     if ($(this)[0].scrollWidth > $(this).innerWidth()) {
+                        console.log($(this)[0].text + ' SW: ' + $(this)[0].scrollWidth + ' IW: '+  $(this).innerWidth());
+
                         var numberOfCapitalsToFind = 0;
                         if ($(this)[0].scrollWidth -  $(this).innerWidth() < 35) {
                                 numberOfCapitalsToFind = 1;
@@ -513,144 +587,59 @@
                 }
                 return lastCapitalFound;
             }
-        </script>
-        <script>
-        
-            //fix issues with the templating
-            function fixTemplatingIssues() {
-                // handle shifting context of use tables into the transpose div
-                $('table#addToTranspose').each(function(index) {
-                    if ($(this).parent().attr("id") != "transpose") {
-                        $(this).parent().find("div#transpose").append($(this));
-                    }
-                });
-                //remove empty <p> before examples
-                $('div.tabcontent[id^="Examples"]').each(function(index) {
-                    $(this).prev("p:empty").remove();
+
+            function expandExamples(){
+                //look for any treetable parent divs
+                $("div.expandedexample div.stu3-treetable").each(function(index) {
+                    //call a hacked version of the simplifier expandnode, 
+                    // with the first tr as its start point, and tparent div as we lose context their js has
+                    expandNode($(this).find('table.treetable').children('tbody').children('tr:first'),$(this)[0]);
                 });
             }
-
-            //fix wcag compliance issues caused by the way simplifier renders
-            function fixWebAccessibility() {
-                // remove additional unneeded role on navbar
-                $('nav.navbar').removeAttr("role");
-                //set title and role on all trees
-                $('table.treetable').each(function(index) {
-                    //$(this).attr("role","presentation");
-                    $(this).attr("title","FHIR Tree View");
-                });
-                //set title on all valuset tables
-                $('table.regular').each(function(index) {
-                    if ($(this).find("th").length > 0) {
-                        if ($(this).find(":contains('System')")) {
-                            $(this).attr("title","Expanded ValueSet codes");
-                        } else {
-                            $(this).attr("title","Imported ValueSet codes");
-                        }
-                    } else {
-                        $(this).attr("role","presentation");
-                        $(this).attr("title","ValueSet details");
-                    }
-                });
-                // set title on all code lists
-                $('table.codes').each(function(index) {
-                    $(this).attr("title","Expanded code list");
-                });
-                // set role on table view
-                $('div.path table').each(function(index) {
-                    $(this).attr("role","presentation");
-                });
-                //set title on FQL generated tables, ideally from the first column of the thead
-                $('table.table.table-bordered.assets.forceWhite').each(function(index) {
-                    if ($(this).attr("title") == undefined || $(this).attr("title") == "") {
-                        if ($(this).find("thead tr th").length > 0) {
-                            $(this).attr("title",$(this).find("thead tr th")[0].innerText);
-                        } else {
-                            $(this).attr("title","FQL Generated Details");
-                        }
-                    }
-                });
-                //set a unique id on all tree/table/example divs etc
-                var iHTMLCount=0;
-                var iTreeCount=0;
-                var iTableCount=0;
-                var iXMLCount=0;
-                var iJSONCount=0;
-                var iExamplesCount=0;
-                var iUsageCount=0;
-                $('div.tabcontent').each(function(index) {
-                    if ($(this).attr("id") == "HTML View") {
-                        iHTMLCount++;
-                        $(this).attr("id","HTML View" + iHTMLCount);
-                    } else if ($(this).attr("id") == "Tree View") {
-                        iTreeCount++;
-                        $(this).attr("id","Tree View" + iTreeCount);
-                    } else if ($(this).attr("id") == "Table View") {
-                        iTableCount++;
-                        $(this).attr("id","Table View" + iTableCount);
-                    } else if ($(this).attr("id") == "XML View") {
-                        iXMLCount++;
-                        $(this).attr("id","XML View" + iXMLCount);
-                    } else if ($(this).attr("id") == "JSON View") {
-                        iJSONCount++;
-                        $(this).attr("id","JSON View" + iJSONCount);
-                    } else if ($(this).attr("id") == "Examples") {
-                        iExamplesCount++;
-                        $(this).attr("id","Examples" + iExamplesCount);
-                    } else if ($(this).attr("id") == "Usage") {
-                        iUsageCount++;
-                        $(this).attr("id","Usage" + iUsageCount);
-                    }
-                });
-                // set unique id on all transposed fl table divs
-                var iTransposeCount=0;
-                $('div[id="transpose"]').each(function(index) { 
-                    iTransposeCount++;
-                    $(this).attr("id","transpose" + iTransposeCount);
-                });
-                //loop through all div's with id's
-                $('div').each(function(index) { 
-                    if ($(this).attr("id") != undefined) {
-                        // look for an h2, with either a matching id or page-title
-                        // and update it to be unique
-                        var sectionHeading = $(this).find("h2");
-                        if (sectionHeading != undefined && sectionHeading.length > 0){
-                            if (sectionHeading.attr("id") == $(this).attr("id")) {
-                                sectionHeading.attr("id", sectionHeading.attr("id") + "-sectionheading");
-                            } else if (sectionHeading.attr("id") == "page-title") {
-                                sectionHeading.attr("id", $(this).attr("id") + "-sectionheading");
-                            }
-                        }
-                        //if the div is renderParent, shift its title into the alt of the img it contains
-                        if ($(this).attr("id") == "renderParent"){
-                            var imgTitle = $(this).attr("title");
-                            $(this).removeAttr("title");
-                            $(this).find("img.img-responsive").attr("alt",imgTitle);
-                        }
-                    }
-                });
-            }
-
-            //removes any development notice and footer if its being rendered in an iframe
-            function pageInIframe() {
-                if (window.frameElement !== null)
-                {
-                    $('div#development-notice').remove();
-                    $('footer').remove();
+            //copy of simplifier getVisibleElements, but with the lack of context handled
+            function getVisibleElements(id, treeDiv){
+                for (var rows = '[data-ParentId="' + id + '"]', n = treeDiv.querySelectorAll(rows), i = [], r = 0, a = 0; a < n.length; a++)
+                        TreeHelper.hasClass(n[a], "mode-hidden") || (i[r] = n[a],
+                        r++);
+                    return i;
                 }
+
+            //tweaked version of simplifier expandNode
+            function expandNode(node, treeDiv){
+                //handle node being blank / array of tr’s / single tr
+                if (node == null)
+                    return;
+                var n = node;
+                if (node.length>0)
+                    n =node[0];
+
+                //find all visible children, loop through them and call the click, then try and expand them
+                var rows = getVisibleElements(n.getAttribute("data-id"), treeDiv);
+                rows.forEach(function(e, r) {
+                    var a = TreeHelper.hasClass(e, "collapsed");
+                    if (a) {
+                        var o = e.querySelector(".vjoinexpandable");
+                        null == o && (o = e.querySelector(".vjoinendexpandable")),
+                        null != o && o.click()
+                        expandNode(e,treeDiv);
+                    }
+                })
             }
+
+
             // function runs on page load
             $(function() {
-                fixTemplatingIssues();
+                expandExamples();
                 transposeFQLTables();
                 tidyUpFQLTables();
                 //highlightBallotItems();
+                //createProfileSubMenus();
+                //createTerminologySeparator();
                 fixFooterVersion();
                 alterValueSetTables();
                 addCodesSortButton();
-                wrapSideBar();
-                pageInIframe();
-                fixWebAccessibility();
+                 pageInIframe();
+                 wrapSideBar();
                 updateFooterPosition();
             });
             
