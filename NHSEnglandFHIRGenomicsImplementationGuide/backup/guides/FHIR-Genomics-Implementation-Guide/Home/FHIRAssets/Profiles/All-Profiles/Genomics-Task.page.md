@@ -476,7 +476,9 @@ The ServiceRequest the Task is fulfilling. Autopopulated by the central service.
 
 <a name="for"></a>
 <h4 class='additional-Guidance-Submenu'> for </h4>
-A reference to the Patient resource or the identifier, NHS number, for the patient for whom the Task is for. Autopopulated by the central service.
+A reference to the Patient resource or the identifier, NHS number, for the patient for whom the Task is for. Autopopulated by the central service if the Task is automatically generated. 
+
+If a Task is created by client system or user interaction, `for` SHALL be populated with a reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS.
 
 ```json
 "for": {
