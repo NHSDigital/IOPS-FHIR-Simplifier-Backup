@@ -2,6 +2,8 @@
   filename: Index.page.md
 - name: Design overview
   filename: Designoverview.page.md
+- name: FHIR vs HL7v2
+  filename: FHIR-vs-HL7v2.page.md
 - name: Current State vs Future State
   filename: Current-State-vs-Future-State.page.md
 - name: Interactions

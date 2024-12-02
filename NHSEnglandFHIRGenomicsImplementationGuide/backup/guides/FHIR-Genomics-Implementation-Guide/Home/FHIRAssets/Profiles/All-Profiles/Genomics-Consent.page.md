@@ -50,6 +50,7 @@ Only a minimal amount of mandatory information needs to be populated.
 - <a href="#status">status</a>
 - <a href="#scope">scope</a>
 - <a href="#category">category</a>
+- <a href="#patient">patient</a>
 - <a href="#source">source\[x\]</a>
 - <a href="#policy">policy</a>
 - <a href="#provision">provision</a>
@@ -94,6 +95,20 @@ For WGS RoD this SHALL be fixed to the below code:
             ]
         }
     ],
+```
+
+<a name="patient"></a>
+<h4 class='additional-Guidance-Submenu'> patient </h4>
+SHALL be present. Reference to the associated Patient. This MAY be through a resource reference if the ID on the central service is known (or provided within the transaction bundle) or through NHS number where this is known and has been traced through PDS.
+
+```json
+"subject": {
+        "reference": "Patient/Patient-MeirLieberman-Example",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307873"
+        }
+    },
 ```
 
 <a name="source"></a>
