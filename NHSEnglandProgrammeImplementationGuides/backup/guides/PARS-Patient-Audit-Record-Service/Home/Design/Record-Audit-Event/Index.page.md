@@ -28,7 +28,7 @@ proxy -> repository: Record Audit [[https://www.ihe.net/uploadedFiles/Documents/
 @enduml
 </plantuml>
 
-The service using the FHIR API for spine auditting sends a FHIR AuditEvent to the Audit Record Repository. 
+The service using the FHIR API for spine auditing sends a FHIR AuditEvent to the Audit Record Repository. 
 
 See also [IHE RESTful ATNA (Query and Feed)](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf)
 
