@@ -1,18 +1,6 @@
 - name: Allergies
   filename: Allergies
-- name: Consultations
-  filename: Consultations
-- name: Immunizations
-  filename: Immunizations
-- name: Investigations
-  filename: Investigations
 - name: Medications
   filename: Medications
-- name: Multiple combined
-  filename: Multiple-combined
-- name: Referrals
-  filename: Referrals
-- name: Uncategorised Data
-  filename: Uncategorised-Data
 - name: Problems
   filename: Problems
