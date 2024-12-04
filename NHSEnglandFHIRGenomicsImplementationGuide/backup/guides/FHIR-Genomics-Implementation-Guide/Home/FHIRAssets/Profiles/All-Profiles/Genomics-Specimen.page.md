@@ -276,7 +276,7 @@ The central Order Management broker will only create Tasks for Specimen resource
 
 <a name="request"></a>
 <h4 class='additional-Guidance-Submenu'> request </h4>
-SHALL be provided. This SHOULD be a reference to the request which initiated collection of the sample. SHALL NOT be updated if the sample is used for another test e.g. for re-analysis. In the case that a Specimen needs to be processed as part of a new request, e.g. using a sample in storage,the ServiceRequest SHALL reference the pre-existing sample via ServiceRequest.specimen. 
+SHALL be provided. This SHOULD be a reference to the request which initiated collection of the sample. SHALL NOT be updated if the sample is used for another test e.g. for re-analysis. In the case that a Specimen needs to be processed as part of a new request, e.g. using a sample in storage, the ServiceRequest SHALL reference the pre-existing sample via ServiceRequest.specimen. 
 
 ```json
 "request":  [
