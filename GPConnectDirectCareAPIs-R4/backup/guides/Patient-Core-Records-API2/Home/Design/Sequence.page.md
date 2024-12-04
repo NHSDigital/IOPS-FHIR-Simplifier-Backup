@@ -1,6 +1,9 @@
 ## {{page-title}}
 
-Sequence diagram goes here
+==Sequence diagram goes here==
+
+
+
 
 Care setting ---> POST ---> Central Service
 
