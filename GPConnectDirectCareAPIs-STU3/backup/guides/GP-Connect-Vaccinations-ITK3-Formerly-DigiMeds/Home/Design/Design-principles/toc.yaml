@@ -8,5 +8,3 @@
   filename: Asynchronous-messaging-paradigms.page.md
 - name: 'Messaging format : FHIR STU3 messages'
   filename: Messaging-format-FHIR-STU3-messages.page.md
-- name: 'Re-usability: payload re-use'
-  filename: Re-usability-payload-re-use.page.md

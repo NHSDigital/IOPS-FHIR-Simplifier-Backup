@@ -1,0 +1,20 @@
+- name: Index
+  filename: Index.page.md
+- name: Related links
+  filename: Related-links.page.md
+- name: id
+  filename: id.page.md
+- name: extension(BusAckRequested)
+  filename: extension-BusAckRequested.page.md
+- name: extension(InfAckRequested)
+  filename: extension-InfAckRequested.page.md
+- name: extension(RecipientType)
+  filename: extension-RecipientType.page.md
+- name: extension(MessageDefinition)
+  filename: extension-MessageDefinition.page.md
+- name: extension(SenderReference)
+  filename: extension-SenderReference.page.md
+- name: extension(LocalExtension)
+  filename: extension-LocalExtension.page.md
+- name: url
+  filename: url.page.md
