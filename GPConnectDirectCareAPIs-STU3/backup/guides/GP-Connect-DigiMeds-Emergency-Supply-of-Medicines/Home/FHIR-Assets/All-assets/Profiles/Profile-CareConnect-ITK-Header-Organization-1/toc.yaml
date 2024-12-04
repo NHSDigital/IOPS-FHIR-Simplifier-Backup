@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: id
+  filename: id.page.md
+- name: meta.profile
+  filename: meta.profile.page.md
+- name: identifier
+  filename: identifier.page.md
