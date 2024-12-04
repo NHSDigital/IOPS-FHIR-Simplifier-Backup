@@ -7,7 +7,7 @@ FHIR (Fast Healthcare Interoperability Resources) is a global standard for healt
 
 FHIR:
 
-- defines specific resources for the health care domain, such as ==Patient== and ==Observation==, and also defines common data items for those resources
+- defines specific resources for the health care domain, such as __Patient__ and __Observation__, and also defines common data items for those resources
 - can be adapted for local requirements using profiles, extensions, terminologies and more
 - defines rules for how to access resources via RESTful APIs
 - can also be used for messaging and document solutions

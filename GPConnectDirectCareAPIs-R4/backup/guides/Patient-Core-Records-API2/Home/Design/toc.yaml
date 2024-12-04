@@ -4,3 +4,7 @@
   filename: Principles
 - name: Sequence
   filename: Sequence.page.md
+- name: Security
+  filename: Security
+- name: Error Handling
+  filename: Error-Handling

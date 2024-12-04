@@ -1,2 +1,4 @@
 - name: Components
   filename: Components.page.md
+- name: Decisions
+  filename: Decisions.page.md
