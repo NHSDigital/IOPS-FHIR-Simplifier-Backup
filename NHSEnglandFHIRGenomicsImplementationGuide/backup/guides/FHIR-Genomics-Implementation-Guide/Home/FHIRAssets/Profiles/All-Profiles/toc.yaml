@@ -28,8 +28,8 @@
   filename: UKCore-Patient.page.md
 - name: UKCore-Practitioner
   filename: UKCore-Practitioner.page.md
-- name: UKCore-PractitinerRole
-  filename: UKCore-PractitinerRole.page.md
+- name: UKCore-PractitionerRole
+  filename: UKCore-PractitionerRole.page.md
 - name: UKCore-Procedure
   filename: UKCore-Procedure.page.md
 - name: Genomics-Provenance
