@@ -6,7 +6,7 @@
 
 - An Organization has an OrganizationAffiliation with another Organization
 - An Organization has Location(s)
-- An Organization provides HealthcareService(s)
+- A Location provides HealthcareService(s)
 - A HealthcareService has a Schedule for the services it provides
 - A Schedule contains Slot(s) that are available for the HealthcareService
 - A Schedule has a PratitionerRole/Practitioner that can be referenced
@@ -21,23 +21,10 @@ Location "1" *-- "many" HealthcareService : provides
 @enduml
 </plantuml>
 
-## Organization, Location and HealthcareService with Schedule and Slot (Booking)
+# Searching the DoS
+For systems that don't require booking
 
-<plantuml>
-@startuml
-Organization "1" *-- "many" OrganizationAffiliation : has
-Organization "1" *-- "many" Location : exists at
-Location "1" *-- "many" HealthcareService : provides
-HealthcareService "1" *-- "many" Schedule : offers
-Schedule "1" *-- "1" PractitionerRole : relate to
-PractitionerRole "1" *-- "many" Practitioner : performs role of
-Schedule "1" *-- "many" Slot : has
-@enduml
-</plantuml>
-
-
-
-### Organization
+### Organization (1..*)
 
 <table class="assets">
 <thead>
@@ -64,7 +51,77 @@ Schedule "1" *-- "many" Slot : has
 </tbody>
 </table>
 
-### HealthcareService
+### OrganizationAffiliation (0..*)
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Organization</td>
+    <td>0..1</td>
+    <td>OrganizationAffiliation.organization Reference(Organization)</td>
+    <td>Organization where the role is available</td>
+  </tr>
+</tbody>
+</table>
+
+### Location (1..*)
+
+Describe the location from which the HealthcareService is offered
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Name</td>
+    <td>0..1</td>
+    <td>Location.name</td>
+    <td>Name of the location as used by humans</td>
+  </tr>
+  <tr>
+    <td>Position</td>
+    <td>0..1</td>
+    <td>Location.position</td>
+    <td>The absolute geographic location</td>
+  </tr>
+  <tr>
+    <td>Position longitude</td>
+    <td>1..1</td>
+    <td>Location.position.longitude</td>
+    <td>Longitude with WGS84 datum</td>
+  </tr>
+  <tr>
+    <td>Position latitude</td>
+    <td>1..1</td>
+    <td>Location.position.latitude</td>
+    <td>Latitude with WGS84 datum</td>
+  </tr>
+  <tr>
+    <td>Location of Organization</td>
+    <td>1..1</td>
+    <td>Location.managingOrganization Reference(Organization)</td>
+    <td>The Organization the location belongs to</td>
+  </tr>
+
+  
+</tbody>
+</table>
+
+### HealthcareService (1..*)
 
 Details about the service, including the days, times, dates during which the service is open.
 
@@ -129,48 +186,24 @@ Details about the service, including the days, times, dates during which the ser
 </tbody>
 </table>
 
-### Location
+# Booking through the DoS
+For systems that require a booking, these resources are added
 
-Describe the location from which the HealthcareService is offered
+## Organization, Location and HealthcareService with Schedule and Slot (Booking)
 
-<table class="assets">
-<thead>
-  <tr>
-    <th>Source Data item</th>
-    <th>Cardinality</th>
-    <th>Target FHIR Element</th>
-    <th>Notes</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Name</td>
-    <td>0..1</td>
-    <td>Location.name</td>
-    <td>Name of the location as used by humans</td>
-  </tr>
-  <tr>
-    <td>Position</td>
-    <td>0..1</td>
-    <td>Location.position</td>
-    <td>The absolute geographic location</td>
-  </tr>
-  <tr>
-    <td>Position longitude</td>
-    <td>1..1</td>
-    <td>Location.position.longitude</td>
-    <td>Longitude with WGS84 datum</td>
-  </tr>
-  <tr>
-    <td>Position latitude</td>
-    <td>1..1</td>
-    <td>Location.position.latitude</td>
-    <td>Latitude with WGS84 datum</td>
-  </tr>
-</tbody>
-</table>
+<plantuml>
+@startuml
+Organization "1" *-- "many" OrganizationAffiliation : has
+Organization "1" *-- "many" Location : exists at
+Location "1" *-- "many" HealthcareService : provides
+HealthcareService "1" *-- "many" Schedule : offers
+Schedule "1" *-- "1" PractitionerRole : relate to
+PractitionerRole "1" *-- "many" Practitioner : performs role of
+Schedule "1" *-- "many" Slot : has
+@enduml
+</plantuml>
 
-### Schedule
+### Schedule (0..*)
 
 <table class="assets">
 <thead>
@@ -197,7 +230,7 @@ Describe the location from which the HealthcareService is offered
 </tbody>
 </table>
 
-### Slot
+### Slot (0..*)
 
 The dates and times a service is available to be returned in a search.
 
@@ -232,28 +265,7 @@ The dates and times a service is available to be returned in a search.
 </tbody>
 </table>
 
-### OrganizationAffiliation
-
-<table class="assets">
-<thead>
-  <tr>
-    <th>Source Data item</th>
-    <th>Cardinality</th>
-    <th>Target FHIR Element</th>
-    <th>Notes</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Organization</td>
-    <td>0..1</td>
-    <td>OrganizationAffiliation.organization Reference(Organization)</td>
-    <td>Organization where the role is available</td>
-  </tr>
-</tbody>
-</table>
-
-### PractitionerRole
+### PractitionerRole (0..*)
 
 <table class="assets">
 <thead>
@@ -274,7 +286,7 @@ The dates and times a service is available to be returned in a search.
 </tbody>
 </table>
 
-### Practitioner
+### Practitioner (0..*)
 
 <table class="assets">
 <thead>
@@ -295,7 +307,7 @@ The dates and times a service is available to be returned in a search.
 </tbody>
 </table>
 
-### Endpoint
+### Endpoint (0..*)
 
 <table class="assets">
 <thead>

@@ -43,13 +43,6 @@ POST https://auditrecordrepository.example.nhs.uk/FHIR/R4/AuditEvent
 - {{pagelink:Home/FHIR-Assets/Examples/AuditEvent-user-restricted-hl7v3-gpsummary-read-Example.page.md}}
 
 
-## Entity Model
-
-See [NHS England Confluence PARS KAD003 Schema - WIP](https://nhsd-confluence.digital.nhs.uk/display/PARS/PARS+KAD003+Schema+-+WIP)
-Examples are modified versions of these [NHS England Confluence PARS examples](https://nhsd-confluence.digital.nhs.uk/pages/viewpageattachments.action?pageId=864404462) 
-
-
-
 ## Entity Mapping 
 
 | Description | FHIR AuditEvent                                            | 
