@@ -4,7 +4,8 @@ topic:design-principles
 
 ## {{page-title}}
 
-The following components have been suggested to achieve the interoperability outlined in the document.
+The following components have been suggested to achieve the interoperability tbrough the API outlined in the specification.
+
 
 ### FHIR
 Technical standard – To support the UK approved technical standard of FHIR R4, represented through UK Core.
