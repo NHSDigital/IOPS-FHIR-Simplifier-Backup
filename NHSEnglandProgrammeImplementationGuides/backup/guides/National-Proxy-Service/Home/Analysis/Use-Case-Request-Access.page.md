@@ -1,8 +1,10 @@
 ## {{page-title}}
 
-### 	Request that a proxy gets proxy access to act on behalf of a patient
+### 	Request proxy access to act on behalf of a patient
 
-<table class="assets" title="PDS Use Case 1">
+<br>
+
+<table class="assets" title="Proxy Access Use Case">
   <tbody>
     <tr>
       <td><strong>User Story Summary (Clinical Overview)</strong></td>
@@ -18,7 +20,7 @@
     </tr>
     <tr>
       <td><strong>Actors (Role)</strong></td>
-      <td>Proxies, Patients</td>
+      <td>Proxies, Patients, Clinical professional / General practitioner</td>
     </tr>
     <tr>
       <td><strong>Frequency of Use</strong></td>
@@ -33,6 +35,7 @@
       <td>
         <ul>
           <li>The proxy’s and patient’s identifiers (NHS numbers) are provided.</li>
+          <li>The proxy or patient’s identity is suitably verified and authenticated at the point when the request is made.</li>
           <li>Where they are nominating a proxy, the patient’s consent is captured as part of the request.</li>
         </ul>
       </td>
@@ -41,9 +44,13 @@
       <td><strong>Post-conditions</strong></td>
       <td>
         <ul>
-          <li>A request is created and sent to the relevant clinical professional.</li>
-          <li>A message to the patient is sent if their consent is required to approve the request.</li>
-          <li>The patient’s consent, if required, will be recorded as part of the request upon their approval and sent to the relevant clinical professional.</li>
+          <li>A request for access has been recorded.</li>
+          <li>Where a patient has capacity or is deemed competent, their consent has been solicited and recorded.</li>
+          <li>A decision to grant or refuse the establishment of the proxy relationship has been made and recorded by the clinical professional.</li>
+          <li>If authorized, an active proxy relationship has been established, the clinical professional has performed any necessary redactions to the patient record and local permissions for online access have been set up.
+          <li>The proxy has been informed of their access being set up.</li>
+            
+          </li>
         </ul>
       </td>
     </tr>
@@ -51,16 +58,19 @@
       <td><strong>Main Course</strong></td>
       <td>
         <ol>
-          <li>The proxy or patient makes a request for access using a patient-facing service. They receive confirmation of their request being sent.</li>
-          <li>The patient consents to proxy access within a patient-facing service if the request requires their consent to be approved. If this is not possible, then the clinical professional will manually obtain the patient’s consent at the point of authorisation.</li>
-          <li>The request for access is sent to the relevant clinical professional for authorisation.</li>
-          <li>The clinical professional views the request and decides whether the proxy should have proxy access to the patient’s services.</li>
+          <li>The proxy or patient makes a request for access using a patient-facing service. They receive confirmation of their request being received.</li>
+          <li>The patient accepts a proxy access request within a patient-facing service if the request requires their consent to be approved. If this is not possible, the clinical professional will obtain the patient’s consent to inform their authorisation decision.</li>
+          <li>The request for access is sent to the patient’s general practitioner for authorisation.</li>
+          <li>The clinical professional views the request and determines whether the proxy relationship is safe and appropriate.</li>
+          <li>If the relationship is authorised and records access is being granted, the clinical professional will review and redact the record accordingly.</li>
+          <li>If the relationship is authorised, the clinical professional will set up local permissions for the proxy to access online services.</li>
+          <li>The proxy is notified if the proxy access has been set up.</li>
         </ol>
       </td>
     </tr>
     <tr>
       <td><strong>Alternate Course</strong></td>
-      <td>The proxy or patient do not meet the eligibility criteria for access. For example, they may not be at the same GP practice.</td>
+      <td>The proxy or patient does not meet the eligibility criteria for access. For example, they may be sensitive flagged (S-flagged) in PDS.</td>
     </tr>
     <tr>
       <td><strong>Exception</strong></td>
@@ -76,3 +86,4 @@
   </tbody>
 </table>
 <br>
+
