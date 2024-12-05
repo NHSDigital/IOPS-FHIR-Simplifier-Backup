@@ -22,6 +22,22 @@ Refer to NHS Program URL for more information <a href='https://digital.nhs.uk/se
 
 This implementation guide provides guidance on implementing the Directory of Service (DoS) FHIR R4 Standard.
 
+Guidance is given around two approaches to a DoS system. The first approach is searching for an approriate service, then second is to check availability of the service. In order to make an Appointment/Booking.
+
+### Searching
+
+1) A patient searches for a service: "Where can I find physiotherapy in my area?"
+
+2) The system shows organizations, their locations, and offered healthcare services.
+
+### Booking
+
+1) A patient searches for an appointment with a GP.
+
+2) The system displays available locations and services.
+
+3) The user can see Schedules and book specific Slots.
+
 </div>
 
 <h3 id="licence-heading">Licence</h3>
