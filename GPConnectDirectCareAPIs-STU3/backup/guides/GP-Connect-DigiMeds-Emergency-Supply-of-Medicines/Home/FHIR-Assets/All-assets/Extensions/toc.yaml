@@ -1,2 +1,4 @@
 - name: 'Extension: Extension-ITK-MessageHandling-2'
   filename: Extension-Extension-ITK-MessageHandling-2
+- name: 'Extension: Extension-Careconnect-MedicationQuantityText-1'
+  filename: Extension-Extension-Careconnect-MedicationQuantityText-1

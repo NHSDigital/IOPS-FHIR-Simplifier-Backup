@@ -41,6 +41,14 @@
             <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>
             <td class="nhsd-t-body"><code>1..1</code></td>
         </tr>
+        <!-- CareConnect-ITK-DM-EmergencySupply-Composition-1 -->
+        <tr>
+            <td class="nhsd-t-body">
+                {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-CareConnect-ITK-DM-EmergencySupply-Composition-1/Index.page.md }}
+            </td>
+            <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>
+            <td class="nhsd-t-body"><code>1..1</code></td>
+        </tr>
         <!-- OperationOutcome -->
         <tr>
             <td class="nhsd-t-body">
