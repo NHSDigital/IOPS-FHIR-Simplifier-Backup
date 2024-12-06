@@ -8,6 +8,8 @@
   filename: Profile-ITK-Response-OperationOutcome-1
 - name: 'Profile: ITK-Document-Bundle-1'
   filename: Profile-ITK-Document-Bundle-1
+- name: 'Profile: CareConnect-ITK-DM-EmergencySupply-Composition-1'
+  filename: Profile-CareConnect-ITK-DM-EmergencySupply-Composition-1
 - name: 'Profile: CareConnect-Patient-1'
   filename: Profile-CareConnect-Patient-1
 - name: 'Profile: CareConnect-Organization-1'
