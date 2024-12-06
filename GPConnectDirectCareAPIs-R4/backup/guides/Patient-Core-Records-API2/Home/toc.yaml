@@ -10,5 +10,3 @@
   filename: Build
 - name: Examples
   filename: Examples
-- name: Authentication
-  filename: Authentication

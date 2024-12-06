@@ -173,7 +173,7 @@ See {{pagelink:Home/Design/Error-Handling}} for more information about represent
 
 ### 2. GET Medicines
 
-Request a list of the patients active medication
+&nbsp;&nbsp; Request a list of the patients active medications
 
 __Endpoint URL__ 
 > GET https://[[api]]/medications/FHIR/R4/MedicationStatement?patient=Patient/[Patient ID]
