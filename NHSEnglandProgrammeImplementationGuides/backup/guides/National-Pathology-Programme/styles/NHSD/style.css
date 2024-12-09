@@ -166,7 +166,9 @@ hr.thickline{
     padding-bottom: 0
 }
 
+/* 09/12/2024 Phil Brennan: Removed for Pathology FHIR IG as not used. */
 /*core UKCore table style*/
+/*
 table.assets {
      font-family: Arial, Helvetica, sans-serif !important;
      border-collapse: collapse !important;
@@ -201,7 +203,7 @@ table.assets tr td.balloted {
  table.assets th a{
      color: white !important;
 }
-
+*/
 
  tr.wordBreak, td.wordBreak {
     overflow-wrap: break-word !important;

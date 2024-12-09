@@ -2,7 +2,7 @@
 topic: FHIRAssetsR4Extensions
 ---
 ## Extensions
-The UK Core extensions that are particularly relevant to pathology are summarised below. 
+The UK Core extensions that are particularly relevant to pathology are listed below. 
 
 For a detailed description of all of the UK Core extensions (including examples) refer to [UK Core Implementation Guide - Profiles and Extensions - Extensions Index](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Extensions-Index?version=2.0.0). 
 
