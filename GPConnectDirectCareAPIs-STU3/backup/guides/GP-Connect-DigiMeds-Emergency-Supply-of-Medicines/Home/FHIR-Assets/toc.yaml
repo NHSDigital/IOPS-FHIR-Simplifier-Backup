@@ -6,5 +6,7 @@
   filename: CodeSystems.page.md
 - name: ValueSets
   filename: ValueSets.page.md
+- name: MessageDefinition
+  filename: MessageDefinition.page.md
 - name: All assets
   filename: All-assets

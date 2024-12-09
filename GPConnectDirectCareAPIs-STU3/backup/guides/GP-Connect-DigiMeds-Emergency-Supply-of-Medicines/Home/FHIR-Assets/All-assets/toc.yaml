@@ -4,3 +4,5 @@
   filename: Profiles
 - name: Extensions
   filename: Extensions
+- name: MessageDefinition
+  filename: MessageDefinition
