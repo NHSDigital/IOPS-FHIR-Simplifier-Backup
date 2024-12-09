@@ -3,6 +3,8 @@ topic: FHIRAssetsR4CapabilityStatements
 ---
 ## CapabilityStatements
 
+The `CapabilityStatement` that has been created specifically for use in pathology is described below.
+
 <fql output="transpose">
   from 
     CapabilityStatement
@@ -20,5 +22,7 @@ topic: FHIRAssetsR4CapabilityStatements
     Kind: kind,
     Format: format
 </fql>
+
+The following table summarises the Messaging Capabilities associated with this `CapabilityStatement`. Refer to {{pagelink:FHIRAssetsR4MessageDefinitions}} for further information.
 
 {{render:https://fhir.hl7.org.uk/England/CapabilityStatement/England-Pathology-Requirements}}
