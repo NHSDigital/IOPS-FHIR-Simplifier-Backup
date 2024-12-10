@@ -3,6 +3,11 @@ topic: ReleaseNotes
 ---
 ## Release Notes
 
+### v0.1.9 (TBC)
+
+* Added a {{pagelink:FHIRAssetsR4CapabilityStatements}} page and a {{pagelink:FHIRAssetsR4MessageDefinitions}} page (both under the **FHIR Assets** menu bar item).
+---
+
 ### v0.1.8 (30/08/2024)
 * Updated the following examples:
     * {{pagelink:R4BundleExampleFullBloodCountRequest}} - changed the data element used to carry clinical context from `ServiceRequest.note` to `ServiceRequest.reasonCode.text`

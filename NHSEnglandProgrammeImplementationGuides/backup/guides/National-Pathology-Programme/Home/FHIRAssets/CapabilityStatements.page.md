@@ -3,7 +3,7 @@ topic: FHIRAssetsR4CapabilityStatements
 ---
 ## CapabilityStatements
 
-The `CapabilityStatement` that has been created specifically for use in pathology is described below.
+The following `CapabilityStatement` has been created specifically for use in pathology:
 
 <fql output="transpose">
   from 

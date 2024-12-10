@@ -1,0 +1,58 @@
+{
+    "resourceType": "Observation",
+    "id": "DHC-Observation-vital-signs-panel-Example",
+    "text": {
+        "status": "generated",
+        "div": "div-narrative"
+    },
+    "subject": {
+        "reference": "Patient/123",
+        "type": "Patient",
+        "display": "Mr/Mrs Patient Name"
+    },
+    "encounter": {
+        "reference": "Encounter/enc-1122",
+        "type": "Encounter"
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "85353-1",
+                "display": "Vital Signs Panel"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "118227000",
+                "display": "Vital Signs finding"
+            }
+        ]
+    },
+    "effectiveDateTime": "2024-07-17T12:12:59+01:00",
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "vital-signs",
+                    "display": "Vital Signs"
+                }
+            ]
+        }
+    ],
+    "hasMember": [
+        {
+            "reference": "Observation/DHC-Observation-vital-signs-body-height-Example"
+        },
+        {
+            "reference": "Observation/DHC-Observation-vital-signs-body-weight-Example"
+        },
+        {
+            "reference": "Observation/DHC-Observation-vital-signs-body-waist-Example"
+        },
+        {
+            "reference": "Observation/DHC-Observation-vital-signs-body-mass-index-Example"
+        }
+    ]
+}

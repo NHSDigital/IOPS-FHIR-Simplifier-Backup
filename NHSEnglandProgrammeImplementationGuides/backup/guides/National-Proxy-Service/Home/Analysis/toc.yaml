@@ -4,3 +4,5 @@
   filename: Use-Case-Create-a-Relationship.page.md
 - name: Use Case - View a Relationship
   filename: Use-Case-View-a-Relationship.page.md
+- name: Use Case - Revoke a Relationship
+  filename: Use-Case-Revoke-a-Relationship.page.md
