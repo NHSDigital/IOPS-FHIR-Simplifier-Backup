@@ -84,7 +84,9 @@ This guide is divided into the following sections and pages which are accessible
     * {{pagelink:FHIRAssetsR4Profiles}}: Describes the profiles that are referenced by this implementation guide.
     * {{pagelink:FHIRAssetsR4Extensions}}: Describes any extensions that are particularly relevant to pathology.
     * {{pagelink:FHIRAssetsR4CodeSystems}}: Describes any CodeSystems that are particularly relevant to pathology.
-    * {{pagelink:FHIRAssetsR4ValueSets}}: Describes any ValueSets that are particularly relevant to pathology.
+    * {{pagelink:FHIRAssetsR4ValueSets}}: Describes the ValueSets  that have been created specifically for use in pathology.
+    * {{pagelink:FHIRAssetsR4CapabilityStatements}}: Describes the CapabilityStatement that has been created specifically for use in pathology.
+    * {{pagelink:FHIRAssetsR4MessageDefinitions}}: Describes the MessageDefinitions that have been created specifically for use in pathology.
 * Examples:
     * {{pagelink:R4Examples}}: Lists the FHIR examples that are included in this implementation guide, categorised by resource type and pathology speciality.
 * Help and Support:

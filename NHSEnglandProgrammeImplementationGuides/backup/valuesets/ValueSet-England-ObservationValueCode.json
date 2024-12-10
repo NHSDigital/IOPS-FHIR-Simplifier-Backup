@@ -1,0 +1,85 @@
+{
+    "resourceType" : "ValueSet",
+    "id" : "England-ObservationValueCode",
+    "url" : "https://fhir.nhs.uk/England/ValueSet/England-ObservationValueCode",
+    "version" : "0.0.1-draft",
+    "name" : "EnglandObservationValueCode",
+    "title" : "England Observation Value Code",
+    "status" : "draft",
+    "experimental" : false,
+    "date" : "2024-12-02T14:10:33+00:00",
+    "publisher" : "NHS England",
+    "copyright": "Copyright © 2021+ HL7 UK Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+    "contact": [
+        {
+            "name": "NHS England",
+            "telecom": [
+                {
+                    "system": "email",
+                    "value": "interoperabilityteam@nhs.net",
+                    "use": "work",
+                    "rank": 1
+                }
+            ]
+        }
+    ],
+    "description" : "NHS England Observation Code - based on [HL7 FHIR Observation Guidance](https://hl7.org/fhir/R4/observation.html#guidance).",
+    "jurisdiction" : [{
+      "coding" : [{
+        "system" : "urn:iso:std:iso:3166",
+        "code" : "GB",
+        "display" : "United Kingdom of Great Britain and Northern Ireland"
+      }]
+    }],
+    "compose" : {
+      "include" : [{
+        "system" : "http://snomed.info/sct",
+        "filter" : [{
+          "property" : "concept",
+          "op" : "is-a",
+          "value" : "363787002"
+        }]
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "filter" : [{
+          "property" : "concept",
+          "op" : "is-a",
+          "value" : "272379006"
+        }]
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "filter" : [{
+          "property" : "concept",
+          "op" : "is-a",
+          "value" : "243796009"
+        }]
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "filter" : [{
+          "property" : "concept",
+          "op" : "descendent-of",
+          "value" : "386053000"
+        }]
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "filter" : [{
+          "property" : "concept",
+          "op" : "is-a",
+          "value" : "404684003"
+        }]
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "filter" : [{
+          "property" : "concept",
+          "op" : "is-a",
+          "value" : "362981000"
+        }]
+      }
+    ]
+    }
+  }

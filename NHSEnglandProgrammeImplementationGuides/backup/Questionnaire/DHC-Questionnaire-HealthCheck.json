@@ -1,0 +1,1312 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "21c06492-008a-4c9c-8f13-e984b0ba73b8",
+  "meta": {
+    "versionId": "18",
+    "lastUpdated": "2024-12-07T07:50:49.435Z"
+  },
+  "url": "https://fhir.nhs.uk/England/StructureDefinition/England-Questionnaire-NHSDigitalHealthCheck",
+  "identifier": [
+    {
+      "value": "unique-questionnnaire-identifier"
+    }
+  ],
+  "name": "NHSDigitalHealthCheck",
+  "title": "NHS Digital Health Check",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2024-07",
+  "publisher": "NHS England",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://developer.nhs.uk/apis/cds-api/api_questionnaire.html"
+        }
+      ]
+    }
+  ],
+  "description": "CVD Questionnaire",
+  "item": [
+    {
+      "linkId": "hasCompletedHealthCheckInLast5Years",
+      "text": "Have you completed health check in the last 5 years?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "hasPreExistingCondition",
+      "text": "Do you have any of the pre-existing conditions that make them ineligible for a health check",
+      "type": "boolean"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "hasFamilyHeartAttackHistory",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "515741000000106"
+        }
+      ],
+      "text": "Either your parents or siblings had a heart attack or angina before the age of 60",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "373067005",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "373066001",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "dontknow",
+            "display": "I do not know"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "sex",
+      "text": "Sex assigned at birth",
+      "type": "choice",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "ethnicBackground",
+      "text": "Ethnic Background",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AsianOrAsianBritish",
+            "display": "Asian or Asian British"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "BACBB",
+            "display": "Black, African, Caribbean or Black British"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "mixed",
+            "display": "Mixed or multiple ethnic groups"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "white",
+            "display": "White"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "other",
+            "display": "Other ethnic group"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 5,
+            "unit": "years",
+            "system": "http://unitsofmeasure.org",
+            "code": "a"
+          }
+        }
+      ],
+      "linkId": "detailedEthnicBackground",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "398089004",
+          "display": "Ethnic background"
+        }
+      ],
+      "text": "Detailed Ethnic Background",
+      "type": "choice",
+      "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-EthnicCategory"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 2,
+            "unit": "years",
+            "system": "http://unitsofmeasure.org",
+            "code": "a"
+          }
+        }
+      ],
+      "linkId": "drinkAlcohol",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "228273003",
+          "display": "Finding relating to alcohol drinking behaviour"
+        }
+      ],
+      "text": "Do you drink Alcohol",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "105542008",
+            "display": "Non - drinker"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "82581004",
+            "display": "Ex-drinker"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "219006",
+            "display": "Current drinker"
+          }
+        }
+      ],
+      "item": [
+        {
+          "linkId": "3882934450185",
+          "text": "Current drinker",
+          "type": "group",
+          "enableWhen": [
+            {
+              "question": "drinkAlcohol",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "219006",
+                "display": "Current drinker"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "alcoholCannotStop",
+              "text": "How often the patient could not stop drinking after starting to drink",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "never",
+                    "display": "Never"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "less-than-monthly",
+                    "display": "Less than monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "monthly",
+                    "display": "Monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "weekly",
+                    "display": "Weekly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "daily",
+                    "display": "Daily or almost daily"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "alcoholPersonInjured",
+              "text": "Whether someone was injured as a result of patient's drinking",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-concerned-codes",
+                    "code": "no",
+                    "display": "No"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-concerned-codes",
+                    "code": "yes-not-in-the-past",
+                    "display": "Yes, but not in the past year"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-concerned-codes",
+                    "code": "yes-in-the-past",
+                    "display": "Yes, during the past year"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "alcoholMultipleDrinksOneOccasion",
+              "text": "How often the patient had multiple drinks on a single occasion",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "never",
+                    "display": "Never"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "less-than-monthly",
+                    "display": "Less than monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "monthly",
+                    "display": "Monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "weekly",
+                    "display": "Weekly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "daily",
+                    "display": "Daily or almost daily"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "alcoholMorningDrink",
+              "text": "How often the patient needed a morning alcoholic drink after drinking session",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "never",
+                    "display": "Never"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "less-than-monthly",
+                    "display": "Less than monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "monthly",
+                    "display": "Monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "weekly",
+                    "display": "Weekly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "daily",
+                    "display": "Daily or almost daily"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "alcoholMemoryLoss",
+              "text": "How often the patient was unable to remember what happened the night before because of drinking",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "never-loss-memory",
+                    "display": "Never"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "memory-loss-less-than-monthly",
+                    "display": "Less than monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "memory-loss-monthly",
+                    "display": "Monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "memory-loss-weekly",
+                    "display": "Weekly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "memory-loss-daily",
+                    "display": "Daily or almost daily"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "alcoholGuilt",
+              "text": "How often the patient felt guilty after drinking",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-guilt-codes",
+                    "code": "never-guilt",
+                    "display": "Never"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-guilt-codes",
+                    "code": "guilt-less-than-monthly",
+                    "display": "Less than monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-guilt-codes",
+                    "code": "guilt-monthly",
+                    "display": "Monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-guilt-codes",
+                    "code": "guilt-weekly",
+                    "display": "Weekly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-guilt-codes",
+                    "code": "guilt-daily",
+                    "display": "Daily or almost daily"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "alcoholFailedObligations",
+              "text": "How often the patient failed to fulfil obligations because of alcohol",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "never-failed",
+                    "display": "Never"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "failed-less-than-monthly",
+                    "display": "Less than monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "failed-monthly",
+                    "display": "Monthly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "failed-weekly",
+                    "display": "Weekly"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-obligation-codes",
+                    "code": "failed-daily",
+                    "display": "Daily or almost daily"
+                  }
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "alcoholConcernedRelative",
+              "text": "Either patient's relative or doctor has been concerned about the patient drinking",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-concerned-codes",
+                    "code": "no",
+                    "display": "No"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-concerned-codes",
+                    "code": "yes-not-in-the-past",
+                    "display": "Yes, but not in the past year"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-concerned-codes",
+                    "code": "yes-in-the-past",
+                    "display": "Yes, during the past year"
+                  }
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "alcoholDailyUnits",
+              "text": "Units the patient drinks on a typical day when they drink alcohol",
+              "type": "choice",
+              "enableWhen": [
+                {
+                  "question": "drinkAlcohol",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "219006",
+                    "display": "Current drinker"
+                  }
+                }
+              ],
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-codes",
+                    "code": "zero-to-two-alcohol-units",
+                    "display": "0 to 2"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-codes",
+                    "code": "three-to-four-alcohol-units",
+                    "display": "3 to 4"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-codes",
+                    "code": "five-to-six-alcohol-units",
+                    "display": "5 to 6"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-codes",
+                    "code": "seven-to-nine-alcohol-units",
+                    "display": "7 to 9"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-codes",
+                    "code": "ten-or-more-alcohol-units",
+                    "display": "10 or more"
+                  }
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "alcoholHowOften",
+              "text": "Frequency of alcohol drinking",
+              "type": "choice",
+              "enableWhen": [
+                {
+                  "question": "drinkAlcohol",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "219006",
+                    "display": "Current drinker"
+                  }
+                }
+              ],
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-codes",
+                    "code": "monthly-once",
+                    "display": "Monthly or less"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-codes",
+                    "code": "2-4-monthly",
+                    "display": "2 to 4 times a month"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-codes",
+                    "code": "2-3-weekly",
+                    "display": "2 to 3 times a week"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/alcohol-codes",
+                    "code": "4-or-more-weekly",
+                    "display": "4 times or more a week"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4471931179582",
+      "text": "Physical Activity",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "workActivity",
+          "text": "Patient activity at work",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/work-codes",
+                "code": "unemployed",
+                "display": "Unemployed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/work-codes",
+                "code": "sitting",
+                "display": "Sitting"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/work-codes",
+                "code": "light-physical",
+                "display": "Phisical Light"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/work-codes",
+                "code": "medium-physical",
+                "display": "Phisical Medium"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/work-codes",
+                "code": "heavy-physical",
+                "display": "Physical Heavy"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "walkPace",
+          "text": "Patient usual walking pace",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "slow-pace",
+                "display": "Slow Pace"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "avg-pace",
+                "display": "Average Pace"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "brisk-pace",
+                "display": "Brisk Pace"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "fast-pace",
+                "display": "Fast pace"
+              }
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "walkHours",
+          "text": "Number of hours patient walk last week",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "none",
+                "display": "None"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "less-than-1-hour",
+                "display": "Less than 1 hour"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "more-than-1-but-less-than-3-hours",
+                "display": "More than 1 hour but less than 3"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "more-than-3-hours",
+                "display": "3 hours or more"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "houseworkHours",
+          "text": "Number of hours patient did housework last week",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "none",
+                "display": "None"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "less-than-1-hour",
+                "display": "Less than 1 hour"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "more-than-1-but-less-than-3-hours",
+                "display": "More than 1 hour but less than 3"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "more-than-3-hours",
+                "display": "3 hours or more"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "gardeningHours",
+          "text": "Number of hours patient did gardening or DIY last week",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "none",
+                "display": "None"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "less-than-1-hour",
+                "display": "Less than 1 hour"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "more-than-1-but-less-than-3-hours",
+                "display": "More than 1 hour but less than 3"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "more-than-3-hours",
+                "display": "3 hours or more"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "exerciseHours",
+          "text": "Number of hours patient did exercise last week",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "none",
+                "display": "None"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "less-than-1-hour",
+                "display": "Less than 1 hour"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "more-than-1-but-less-than-3-hours",
+                "display": "More than 1 hour but less than 3"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "more-than-3-hours",
+                "display": "3 hours or more"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "cycleHours",
+          "text": "Number of hours patient cycled last week",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "none",
+                "display": "None"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "less-than-1-hour",
+                "display": "Less than 1 hour"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "more-than-1-but-less-than-3-hours",
+                "display": "More than 1 hour but less than 3"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/excercise-codes",
+                "code": "more-than-3-hours",
+                "display": "3 hours or more"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "years",
+            "system": "http://unitsofmeasure.org",
+            "code": "a"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "smoking",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "365980008",
+          "display": "Finding of tobacco use and exposure"
+        }
+      ],
+      "text": "Patient smoking frequency",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "266919005",
+            "display": "Never smoked tobacco"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "160617001",
+            "display": "Stopped smoking"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "160603005",
+            "display": "Light cigarette smoker (1-9 cigs/day)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "160604004",
+            "display": "Moderate cigarette smoker (10-19 cigs/day) (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "56771006",
+            "display": "Heavy smoker (over 20 per day) (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "8517006",
+            "display": "Ex-smoker"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "cm",
+            "display": "centimeter"
+          }
+        }
+      ],
+      "linkId": "height",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1153637007"
+        }
+      ],
+      "text": "Height of the patient in centimetres",
+      "type": "quantity",
+      "item": [
+        {
+          "linkId": "heightDisplayPreferences",
+          "text": "Patient's height display preference",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "cm"
+            },
+            {
+              "valueString": "feetAndInches"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "years",
+            "system": "http://unitsofmeasure.org",
+            "code": "a"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "kg",
+            "display": "kilogram"
+          }
+        }
+      ],
+      "linkId": "weight",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "27113001"
+        }
+      ],
+      "text": "Weight of the patient in kilograms",
+      "type": "quantity",
+      "item": [
+        {
+          "linkId": "weightDisplayPreferences",
+          "text": "Patient's weight display preference",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "kg"
+            },
+            {
+              "valueString": "stoneAndPounds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext",
+          "valueExpression": {
+            "name": "bloodPressure",
+            "language": "application/x-fhir-query",
+            "expression": "Observation?patient={{%patient.id}}&code=http://snomed.info/sct|75367002"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        }
+      ],
+      "linkId": "1698352725817",
+      "definition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure#code",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "75367002",
+          "display": "Blood pressure"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "85354-9"
+        }
+      ],
+      "text": "Blood Pressure",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]",
+                "display": "millimeter of mercury"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%bloodPressure.component[DiastolicBP].valueQuantity.value"
+              }
+            }
+          ],
+          "linkId": "bloodPressureDiastolic",
+          "definition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure#component[DiastolicBP]",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271650006"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Patient diastolic blood pressure value",
+          "type": "quantity"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]",
+                "display": "millimeter of mercury"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%bloodPressure.component[SystolicBP].valueQuantity.value"
+              }
+            }
+          ],
+          "linkId": "bloodPressureSystolic",
+          "definition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure#component[SystolicBP]",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271649006"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Patient systolic blood pressure value",
+          "type": "quantity"
+        },
+        {
+          "linkId": "bloodPressureLocation",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271650006"
+            }
+          ],
+          "text": "Place where the blood pressure reading was taken",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
