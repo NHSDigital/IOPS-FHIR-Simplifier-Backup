@@ -46,6 +46,65 @@ Where suitable SNOMED-CT coded terms exist, use them instead of free-text instru
 </additionalInstruction>
 ```
 
+<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
+    <strong>Note:</strong> Where a dosage is expressed as a number of <code>sequence</code> elements and the same <code>additionalInstructions</code> applies to each <code>sequence</code>, then repeat the <code>additionalInstructions</code> within each <code>sequence</code>.
+</div>
+
+For example:
+
+```xml
+<dosageInstruction>
+    <sequence value="1" />
+    <text value="1 tablet - once a day - for 1 week - take with food" />
+    <timing>
+        <repeat>
+            <boundsDuration>
+                <value value="1" />
+                <unit value="week" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="wk" />
+            </boundsDuration>
+            <frequency value="1" />
+            <period value="1" />
+            <periodUnit value="d" />
+        </repeat>
+    </timing>
+    <doseAndRate>
+        <doseQuantity>
+            <value value="1" />
+            <unit value="tablet" />
+            <system value="http://snomed.info/sct" />
+            <code value="428673006" />
+        </doseQuantity>
+    </doseAndRate>
+    <additionalInstruction>
+        <text value="take with food"/>
+    </additionalInstruction>
+</dosageInstruction>
+<dosageInstruction>
+    <sequence value="2" />
+    <text value="2 tablets - twice a day - take with food" />
+    <timing>
+        <repeat>
+            <frequency value="2" />
+            <period value="1" />
+            <periodUnit value="d" />
+        </repeat>
+    </timing>
+    <doseAndRate>
+        <doseQuantity>
+            <value value="2" />
+            <unit value="tablet" />
+            <system value="http://snomed.info/sct" />
+            <code value="428673006" />
+        </doseQuantity>
+    </doseAndRate>
+    <additionalInstruction>
+        <text value="take with food"/>
+    </additionalInstruction>
+</dosageInstruction>
+```
+
 ### `additionalInstruction` / `when` overlap
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
