@@ -7,9 +7,8 @@
 - An Organization has an OrganizationAffiliation with another Organization
 - An Organization has Location(s)
 - A Location provides HealthcareService(s)
-- A HealthcareService has a Schedule for the services it provides
-- A Schedule contains Slot(s) that are available for the HealthcareService
-- A Schedule has a PratitionerRole/Practitioner that can be referenced
+- A HealthcareService can have Questionnaire(s)
+- A Questionnaire can have QuestionnaireResponse(s)
 
 ## Organization, Location and HealthcareService (Searching)
 
@@ -18,6 +17,8 @@
 Organization "1" *-- "many" OrganizationAffiliation : has
 Organization "1" *-- "many" Location : exists at
 Location "1" *-- "many" HealthcareService : provides
+HealthcareService "0" *-- "many" Questionnaire : has
+Questionnaire "1" *-- "many" QuestionnaireResponse: has
 @enduml
 </plantuml>
 
@@ -186,8 +187,77 @@ Details about the service, including the days, times, dates during which the ser
 </tbody>
 </table>
 
+### Questionnaire (0..*)
+
+Further details about the service, that are not captured in the HealthcareService resource.
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Name</td>
+    <td>0..1</td>
+    <td>Questionnaire.name</td>
+    <td>Name for this questionnaire (computer friendly)</td>
+  </tr>
+  <tr>
+    <td>Item</td>
+    <td>0..*</td>
+    <td>Questionnaire.item</td>
+    <td>Questions and sections within the Questionnaire</td>
+  </tr>
+</tbody>
+</table>
+
+### QuestionnaireResponse (0..*)
+
+Responses to the Questionnaire.
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Questionnaire reference</td>
+    <td>0..1</td>
+    <td>QuestionnaireResponse.questionnaire canoncial(Questionnaire)</td>
+    <td>Form being answered</td>
+  </tr>
+  <tr>
+    <td>Item</td>
+    <td>0..*</td>
+    <td>Questionnaire.item</td>
+    <td>Groups and questions</td>
+  </tr>
+</tbody>
+</table>
+
 # Booking through the DoS
 For systems that require a booking, these resources are added
+
+## FHIR Model
+
+- An Organization has an OrganizationAffiliation with another Organization
+- An Organization has Location(s)
+- A Location provides HealthcareService(s)
+- A HealthcareService can have Questionnaire(s)
+- A Questionnaire can have QuestionnaireResponse(s)
+- A HealthcareService has a Schedule for the services it provides
+- A Schedule contains Slot(s) that are available for the HealthcareService
+- A Schedule has a PratitionerRole/Practitioner that can be referenced
 
 ## Organization, Location and HealthcareService with Schedule and Slot (Booking)
 
@@ -196,6 +266,8 @@ For systems that require a booking, these resources are added
 Organization "1" *-- "many" OrganizationAffiliation : has
 Organization "1" *-- "many" Location : exists at
 Location "1" *-- "many" HealthcareService : provides
+HealthcareService "0" *-- "many" Questionnaire : has
+Questionnaire "1" *-- "many" QuestionnaireResponse: has
 HealthcareService "1" *-- "many" Schedule : offers
 Schedule "1" *-- "1" PractitionerRole : relate to
 PractitionerRole "1" *-- "many" Practitioner : performs role of
