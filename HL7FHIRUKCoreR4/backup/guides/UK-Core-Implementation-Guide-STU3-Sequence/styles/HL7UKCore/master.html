@@ -765,7 +765,7 @@
                             swapUrl = swapUrl + "ProfilesandExtensions/Profile-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=structuredefinitions/UKCore-","");
                             addExtraIfNeeded=false;
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-")) {
-                            swapUrl = swapUrl + "Terminology/AllValueSets/ValueSet-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-","");
+                            swapUrl = swapUrl + "Terminology/ValueSets/ValueSet-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=valuesets/ValueSet-UKCore-","");
                         } else if (urlReference.startsWith("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-")) {
                             swapUrl = swapUrl + "Terminology/AllCodeSystems/CodeSystem-UKCore-" + urlReference.replace("https://simplifier.net/resolve?scope=HL7FHIRUKCoreR4@current&filepath=codesystems/CodeSystem-UKCore-","");
                         }
@@ -869,7 +869,7 @@
                     var swapUrl = newUrl;
                     if (urlReference.startsWith("https://simplifier.net/resolve?canonical") && urlReference.includes('https://fhir.hl7.org.uk')) {
                         let valuesetName =  urlReference.replace("https://simplifier.net/resolve?canonical=https://fhir.hl7.org.uk/ValueSet/","").replace("&scope=HL7FHIRUKCoreR4@current","");
-                        swapUrl = swapUrl + "Terminology/AllValueSets/ValueSet-" + valuesetName;
+                        swapUrl = swapUrl + "Terminology/ValueSets/ValueSet-" + valuesetName;
                         let exampleVersion = "?" + url.split("?")[1];
                         if (exampleVersion.startsWith("?version=current")){
                             exampleVersion = ".page.md" + exampleVersion;
