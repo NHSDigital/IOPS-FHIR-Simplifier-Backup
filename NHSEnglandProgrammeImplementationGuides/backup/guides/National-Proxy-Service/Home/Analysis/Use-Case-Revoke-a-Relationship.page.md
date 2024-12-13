@@ -78,9 +78,7 @@
     <tr>
       <td><strong>Exception</strong></td>
       <td>
-        <ul>
-          <li>Patient is not sufficiently verified or authenticated.</li>
-        </ul>
+        Patient is not sufficiently verified or authenticated.
       </td>
     </tr>
   </tbody>
