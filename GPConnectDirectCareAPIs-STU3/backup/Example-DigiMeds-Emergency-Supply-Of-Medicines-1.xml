@@ -1,0 +1,930 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="4619DB9D-1647-46A4-B8EA-AE5D21378EB8" />
+  <identifier>
+    <system value="https://fhir.provider.example/identifier/bundle" />
+    <value value="4619DB9D-1647-46A4-B8EA-AE5D21378EB8" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:5EB3C5D8-DEBA-4533-A4CD-84A00B84DE14" />
+    <resource>
+      <MessageHeader>
+        <id value="5EB3C5D8-DEBA-4533-A4CD-84A00B84DE14" />
+        <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+          <extension url="BusAckRequested">
+            <valueBoolean value="true" />
+          </extension>
+          <extension url="InfAckRequested">
+            <valueBoolean value="true" />
+          </extension>
+          <extension url="RecipientType">
+            <valueCoding>
+              <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1" />
+              <code value="FA" />
+              <display value="For Action" />
+            </valueCoding>
+          </extension>
+          <extension url="MessageDefinition">
+            <valueReference>
+              <reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-DM-EmergencySupply-MessageDefinition-1" />
+            </valueReference>
+          </extension>
+          <extension url="SenderReference">
+            <valueString value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+          </extension>
+          <extension url="LocalExtension">
+            <valueString value="None" />
+          </extension>
+        </extension>
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK010D" />
+          <display value="ITK Digital Medicine Emergency Supply Document" />
+        </event>
+        <sender>
+          <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+        </sender>
+        <timestamp value="2024-12-13T19:12:10.8294687+00:00" />
+        <source>
+          <endpoint value="SENDER_MESH_MAILBOX_ID" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:DCBE2BB9-DF64-48BF-9702-A36A1A044506" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+    <resource>
+      <Organization>
+        <id value="E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="FA000" />
+        </identifier>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+    <resource>
+      <Organization>
+        <id value="734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="GP123456" />
+        </identifier>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:DCBE2BB9-DF64-48BF-9702-A36A1A044506" />
+    <resource>
+      <Bundle>
+        <id value="DCBE2BB9-DF64-48BF-9702-A36A1A044506" />
+        <meta>
+          <lastUpdated value="2024-12-13T19:12:10.8430229+00:00" />
+          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.provider.example/identifier/bundle" />
+          <value value="DCBE2BB9-DF64-48BF-9702-A36A1A044506" />
+        </identifier>
+        <type value="document" />
+        <entry>
+          <fullUrl value="urn:uuid:9695E60D-3B4D-4272-A8FA-DDA91A472757" />
+          <resource>
+            <Composition>
+              <id value="9695E60D-3B4D-4272-A8FA-DDA91A472757" />
+              <meta>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-DM-EmergencySupply-Composition-1" />
+              </meta>
+              <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareSettingType-1">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="310080006" />
+                    <display value="Pharmacy service" />
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <identifier>
+                <system value="https://fhir.provider.example/identifier/composition" />
+                <value value="9695E60D-3B4D-4272-A8FA-DDA91A472757" />
+              </identifier>
+              <status value="final" />
+              <type>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="1218611000000102" />
+                  <display value="Urgent supply of prescription items by community pharmacy" />
+                </coding>
+                <text value="Urgent supply of prescription items by community pharmacy" />
+              </type>
+              <subject>
+                <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+              </subject>
+              <encounter>
+                <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+              </encounter>
+              <date value="2024-12-13" />
+              <author>
+                <reference value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+              </author>
+              <title value="Overtown Pharmacy 118 Emergency Medication Supply Record" />
+              <custodian>
+                <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+              </custodian>
+              <section>
+                <title value="Contact with professionals" />
+                <code>
+                  <coding>
+                    <system value="https://fhir.nhs.uk/CodeSystem/SectionCode" />
+                    <code value="contacts-with-professionals" />
+                    <display value="Contacts with professionals" />
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated" />
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <th>Date and time of contact</th>
+                            <td>9-May-2018 10:00</td>
+                          </tr>
+                          <tr>
+                            <th>Service</th>
+                            <td>Community Pharmacist Consultation Service</td>
+                          </tr>
+                          <tr>
+                            <th>Organisation</th>
+                            <td>
+                              <p>Name: Overtown Pharmacy</p>
+                              <p>Address: 1 High Street, Overtown, Leeds</p>
+                              <p>Postcode: LS1 9AM</p>
+                              <p>Telephone: 01134875516</p>
+                              <p>Email: overtonpharmacy118@mymail.com</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Clincian</th>
+                            <td>
+                              <p>Name: Mr Eric Smith</p>
+                              <p>Role: Pharmacist</p>
+                              <p>Registration No: 2145879</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Person collecting the medication</th>
+                            <td>Patient</td>
+                          </tr>
+                          <tr>
+                            <th>Reason for service</th>
+                            <td>Emergency supply of medication. Patient had not ordered their prescription.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </text>
+                <entry>
+                  <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+                </entry>
+              </section>
+              <section>
+                <title value="Legal information" />
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="886961000000102" />
+                    <display value="Legal information" />
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated" />
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <th>Consent for treatment record</th>
+                            <td>Patient's consent for treatment has been attained.</td>
+                          </tr>
+                          <tr>
+                            <th>Consent relating to child</th>
+                            <td>Not Applicable</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </text>
+              </section>
+              <section>
+                <title value="GP Practice" />
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="886711000000101" />
+                    <display value="GP practice" />
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated" />
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <th>GP name</th>
+                            <td>
+                              <p>Prefix: Dr</p>
+                              <p>Given Name: Paul</p>
+                              <p>Family Name: Rastall</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>GP practice identifier</th>
+                            <td>
+                              <p>ODS Organization Code:GP123456</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>GP practice details</th>
+                            <td>
+                              <p>Name: MGP Medical Centre</p>
+                              <p>Address:</p>
+                              <p>Address Line: 1 MGP House, Overtown</p>
+                              <p>City: Leeds</p>
+                              <p>Post Code: LS21 7PA</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </text>
+                <entry>
+                  <reference value="urn:uuid:734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+                </entry>
+              </section>
+              <section>
+                <title value="History" />
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="717121000000105" />
+                    <display value="History" />
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated" />
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <th>Relevant past medical, surgical and mental health history</th>
+                            <td>
+                              <p>Patient has Type 2 diabetes and hypertension.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </text>
+              </section>
+              <section>
+                <title value="Information and Advice given" />
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1052951000000105" />
+                    <display value="Information and advice given" />
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated" />
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <th>Information and advice given</th>
+                            <td>
+                              <p>Patient advised that he should consider discussing with his GP whether he can be set up for electronic repeat dispensing if his medication regime is stable.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </text>
+              </section>
+              <section>
+                <title value="Medications and medical devices" />
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="933361000000108" />
+                    <display value="Medications and medical devices" />
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated" />
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <th>Medication</th>
+                            <td>Humulin M3 100units/ml suspension for injection 3ml cartridges (CST Pharma Ltd)</td>
+                          </tr>
+                          <tr>
+                            <th>Dose directions</th>
+                            <td>As needed</td>
+                          </tr>
+                          <tr>
+                            <th>Quantity Supplied</th>
+                            <td>2 cartridge</td>
+                          </tr>
+                          <tr>
+                            <th>Days Supply</th>
+                            <td>14 days</td>
+                          </tr>
+                          <tr>
+                            <th>Medication</th>
+                            <td>BD Viva hypodermic insulin needles for pre-filled / reusable pen injectors screw on 5mm/31gauge (Becton, Dickinson UK Ltd)</td>
+                          </tr>
+                          <tr>
+                            <th>Dose directions</th>
+                            <td>As needed</td>
+                          </tr>
+                          <tr>
+                            <th>Quantity Supplied</th>
+                            <td>90 needle</td>
+                          </tr>
+                          <tr>
+                            <th>Days Supply</th>
+                            <td>14 days</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </text>
+                <entry>
+                  <reference value="urn:uuid:079D6416-E1A8-41FA-B203-458CAB1D082D" />
+                </entry>
+              </section>
+              <section>
+                <title value="Patient Demographics" />
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="886731000000109" />
+                    <display value="Patient demographics" />
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated" />
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <th>Patient</th>
+                            <td>
+                              <p>Prefix: Mr</p>
+                              <p>Given Name: William</p>
+                              <p>Family Name: Smith</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Date of birth</th>
+                            <td>4 February 1956</td>
+                          </tr>
+                          <tr>
+                            <th>Gender</th>
+                            <td>Male</td>
+                          </tr>
+                          <tr>
+                            <th>NHS number</th>
+                            <td>2378954317</td>
+                          </tr>
+                          <tr>
+                            <th>Patient address</th>
+                            <td>
+                              <p>Address Line: 14, Sunny Mews, Overtown,</p>
+                              <p>City: Leeds</p>
+                              <p>Post Code: LS17 4NK</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Patient telephone number</th>
+                            <td>
+                              <p>Home: 01135540935</p>
+                              <p>Mobile: 07823123456</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Relevant contacts</th>
+                            <td>Name: June Smith <p>Relationship: Next of kin</p><p>Contact details: Tel. 01132789365</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </text>
+                <entry>
+                  <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                </entry>
+              </section>
+              <section>
+                <title value="Plan and requested actions" />
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="887201000000105" />
+                    <display value="Plan and requested actions" />
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated" />
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <th>Plan and requested actions</th>
+                            <td>GP to review medications and speak to Patient regarding electronic repeat dispensing</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </text>
+              </section>
+              <section>
+                <title value="Referral details" />
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="886721000000107" />
+                    <display value="Referral details" />
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated" />
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <status value="additional" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <th>Referral details</th>
+                            <td>NHS 111</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </text>
+              </section>
+            </Composition>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+          <resource>
+            <Encounter>
+              <id value="7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+              <meta>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Encounter-1" />
+              </meta>
+              <status value="finished" />
+              <subject>
+                <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                <display value="SMITH, William (Mr)" />
+              </subject>
+              <participant>
+                <type>
+                  <coding>
+                    <system value="http://hl7.org/fhir/v3/ParticipationType" />
+                    <code value="PPRF" />
+                    <display value="primary performer" />
+                  </coding>
+                </type>
+                <individual>
+                  <reference value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+                  <display value="SMITH, Eric (Mr)" />
+                </individual>
+              </participant>
+              <period>
+                <start value="2024-12-13" />
+              </period>
+              <serviceProvider>
+                <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+                <display value="Overtown Pharmacy" />
+              </serviceProvider>
+            </Encounter>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+          <resource>
+            <Organization>
+              <id value="E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+              <meta>
+                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+              </meta>
+              <identifier>
+                <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                <value value="FA000" />
+              </identifier>
+              <name value="Overtown Pharmacy" />
+              <telecom>
+                <system value="phone" />
+                <value value="01134875516" />
+              </telecom>
+              <address>
+                <line value="1 High Street" />
+                <line value="Overtown" />
+                <city value="Leeds" />
+                <postalCode value="LS1 9AM" />
+              </address>
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+          <resource>
+            <Organization>
+              <id value="734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+              <meta>
+                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+              </meta>
+              <identifier>
+                <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                <value value="GP123456" />
+              </identifier>
+              <name value="MGP Medical Centre" />
+              <address>
+                <line value="1 MGP House" />
+                <line value="Overtown" />
+                <city value="Leeds" />
+                <postalCode value="LS21 7PA" />
+              </address>
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+          <resource>
+            <Patient>
+              <id value="7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+              <meta>
+                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+              </meta>
+              <identifier>
+                <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+                  <valueCodeableConcept>
+                    <coding>
+                      <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                      <code value="01" />
+                      <display value="Number present and verified" />
+                    </coding>
+                    <text value="Number present and verified" />
+                  </valueCodeableConcept>
+                </extension>
+                <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                <value value="2378954317" />
+              </identifier>
+              <name>
+                <use value="official" />
+                <text value="Mr William Smith" />
+                <family value="Smith" />
+                <given value="William" />
+                <prefix value="Mr" />
+              </name>
+              <telecom>
+                <system value="phone" />
+                <value value="01132789365" />
+                <use value="home" />
+              </telecom>
+              <gender value="male" />
+              <birthDate value="1956-02-04" />
+              <address>
+                <use value="home" />
+                <type value="both" />
+                <text value="14 Sunny Mews, Overtown, West Yorkshire, LS17 4NK" />
+                <line value="14 Sunny Mews" />
+                <line value="Overtown" />
+                <city value="Leeds" />
+                <district value="West Yorkshire" />
+                <postalCode value="LS17 4NK" />
+              </address>
+              <maritalStatus>
+                <coding>
+                  <system value="http://hl7.org/fhir/v3/MaritalStatus" />
+                  <code value="M" />
+                  <display value="Married" />
+                </coding>
+              </maritalStatus>
+              <contact>
+                <relationship>
+                  <coding>
+                    <system value="http://hl7.org/fhir/v2/0131" />
+                    <code value="N" />
+                    <display value="Next-of-Kin" />
+                  </coding>
+                </relationship>
+                <name>
+                  <use value="official" />
+                  <family value="Smith" />
+                  <given value="June" />
+                </name>
+                <telecom>
+                  <system value="phone" />
+                  <value value="01132789365" />
+                </telecom>
+                <gender value="female" />
+              </contact>
+              <generalPractitioner>
+                <reference value="urn:uuid:852F593D-D943-40CA-B1F2-402CC6D1971C" />
+              </generalPractitioner>
+              <managingOrganization>
+                <reference value="urn:uuid:734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+              </managingOrganization>
+            </Patient>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:852F593D-D943-40CA-B1F2-402CC6D1971C" />
+          <resource>
+            <Practitioner>
+              <id value="852F593D-D943-40CA-B1F2-402CC6D1971C" />
+              <meta>
+                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" />
+              </meta>
+              <identifier>
+                <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+                <value value="6122477" />
+              </identifier>
+              <name>
+                <family value="Rastall" />
+                <given value="Paul" />
+                <prefix value="Dr" />
+              </name>
+              <telecom>
+                <system value="phone" />
+                <value value="01136323200" />
+                <use value="work" />
+              </telecom>
+              <gender value="male" />
+            </Practitioner>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+          <resource>
+            <Practitioner>
+              <id value="EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+              <meta>
+                <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" />
+              </meta>
+              <identifier>
+                <system value="https://fhir.hl7.org.uk/Id/gphc-number" />
+                <value value="2145879" />
+              </identifier>
+              <name>
+                <family value="Smith" />
+                <given value="Eric" />
+                <prefix value="Mr" />
+              </name>
+              <telecom>
+                <system value="phone" />
+                <value value="0113895123" />
+                <use value="work" />
+              </telecom>
+              <gender value="male" />
+            </Practitioner>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:079D6416-E1A8-41FA-B203-458CAB1D082D" />
+          <resource>
+            <List>
+              <id value="079D6416-E1A8-41FA-B203-458CAB1D082D" />
+              <meta>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-MedicationDispense-List-1" />
+              </meta>
+              <identifier>
+                <system value="https://tools.ietf.org/html/rfc4122" />
+                <value value="079D6416-E1A8-41FA-B203-458CAB1D082D" />
+              </identifier>
+              <status value="current" />
+              <mode value="snapshot" />
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="163541000000107" />
+                  <display value="Dispensed Medication" />
+                </coding>
+              </code>
+              <subject>
+                <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                <display value="SMITH, William (Mr)" />
+              </subject>
+              <encounter>
+                <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+              </encounter>
+              <date value="2024-12-13" />
+              <entry>
+                <item>
+                  <reference value="urn:uuid:3B98AAC2-9D61-449A-8E96-027395B3B711" />
+                </item>
+              </entry>
+              <entry>
+                <item>
+                  <reference value="urn:uuid:79A649A5-27A6-4019-B621-B07BCA02B38B" />
+                </item>
+              </entry>
+            </List>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:3B98AAC2-9D61-449A-8E96-027395B3B711" />
+          <resource>
+            <MedicationDispense>
+              <id value="3B98AAC2-9D61-449A-8E96-027395B3B711" />
+              <meta>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-MedicationDispense-1" />
+              </meta>
+              <status value="completed" />
+              <medicationReference>
+                <reference value="urn:uuid:8691DCAC-2F00-48A9-8ECE-6FC3F942A374" />
+              </medicationReference>
+              <subject>
+                <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                <display value="SMITH, William (Mr)" />
+              </subject>
+              <context>
+                <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+              </context>
+              <performer>
+                <actor>
+                  <reference value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+                </actor>
+                <onBehalfOf>
+                  <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+                </onBehalfOf>
+              </performer>
+              <type>
+                <coding>
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-MedicationSupplyType-1" />
+                  <code value="emergency-supply" />
+                  <display value="Emergency supply" />
+                </coding>
+              </type>
+              <quantity>
+                <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1">
+                  <valueString value="2 cartridge" />
+                </extension>
+                <value value="2" />
+                <unit value="cartridge" />
+                <system value="http://snomed.info/sct" />
+                <code value="732988008" />
+              </quantity>
+              <daysSupply>
+                <value value="14" />
+                <unit value="day" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="d" />
+              </daysSupply>
+              <whenPrepared value="2024-12-13" />
+              <whenHandedOver value="2024-12-13" />
+              <dosageInstruction>
+                <asNeededBoolean value="true" />
+              </dosageInstruction>
+            </MedicationDispense>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:79A649A5-27A6-4019-B621-B07BCA02B38B" />
+          <resource>
+            <MedicationDispense>
+              <id value="79A649A5-27A6-4019-B621-B07BCA02B38B" />
+              <meta>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-MedicationDispense-1" />
+              </meta>
+              <status value="completed" />
+              <medicationReference>
+                <reference value="urn:uuid:FE01CC83-847E-4D13-B13C-D6DC62C79DDA" />
+              </medicationReference>
+              <subject>
+                <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                <display value="SMITH, William (Mr)" />
+              </subject>
+              <context>
+                <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+              </context>
+              <performer>
+                <actor>
+                  <reference value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+                </actor>
+                <onBehalfOf>
+                  <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+                </onBehalfOf>
+              </performer>
+              <type>
+                <coding>
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-MedicationSupplyType-1" />
+                  <code value="emergency-supply" />
+                  <display value="Emergency supply" />
+                </coding>
+              </type>
+              <quantity>
+                <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1">
+                  <valueString value="90 needle" />
+                </extension>
+                <value value="90" />
+                <unit value="needle" />
+                <system value="http://snomed.info/sct" />
+                <code value="3318111000001106" />
+              </quantity>
+              <daysSupply>
+                <value value="14" />
+                <unit value="day" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="d" />
+              </daysSupply>
+              <whenPrepared value="2024-12-13" />
+              <whenHandedOver value="2024-12-13" />
+              <dosageInstruction>
+                <asNeededBoolean value="true" />
+              </dosageInstruction>
+            </MedicationDispense>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:8691DCAC-2F00-48A9-8ECE-6FC3F942A374" />
+          <resource>
+            <Medication>
+              <id value="8691DCAC-2F00-48A9-8ECE-6FC3F942A374" />
+              <meta>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Medication-1" />
+              </meta>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="37417211000001103" />
+                  <display value="Humulin M3 100units/ml suspension for injection 3ml cartridges (CST Pharma Ltd)" />
+                </coding>
+              </code>
+              <status value="active" />
+            </Medication>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:FE01CC83-847E-4D13-B13C-D6DC62C79DDA" />
+          <resource>
+            <Medication>
+              <id value="FE01CC83-847E-4D13-B13C-D6DC62C79DDA" />
+              <meta>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Medication-1" />
+              </meta>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="31771611000001107" />
+                  <display value="BD Viva hypodermic insulin needles for pre-filled / reusable pen injectors screw on 5mm/31gauge (Becton, Dickinson UK Ltd)" />
+                </coding>
+              </code>
+              <status value="active" />
+            </Medication>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+</Bundle>
+
