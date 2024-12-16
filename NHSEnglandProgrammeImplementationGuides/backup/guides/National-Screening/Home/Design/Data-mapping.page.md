@@ -58,6 +58,18 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>UKCoreEncounter.extension:reasonCancelled</td>
     <td>Type: CodeableConcept</td>
 </tr>
+<tr>
+    <td>end_code_description</td>
+    <td>0..1</td>
+    <td>UKCoreEncounter.extension:reasonCancelled.coding.display</td>
+    <td>Type: String</td>
+</tr>
+<tr>
+    <td>reason_closed_code_description</td>
+    <td>0..1</td>
+    <td>UKCoreEncounter.extension:reasonCancelled.coding.display</td>
+    <td>Type: String</td>
+</tr>
 </tbody>
 </table>
 
@@ -175,6 +187,12 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>UKCoreServiceRequest.extension:sourceOfServiceRequest</td>
     <td>Type: Extension(CodeableConcept)</td>
 </tr>
+<tr>
+    <td>episode_type_description</td>
+    <td>0..1</td>
+    <td>UKCoreServiceRequest.priority.extension:priorityReason.coding.display</td>
+    <td>Type: String</td>
+</tr>
 </tbody>
 </table>
 
@@ -195,6 +213,12 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>0..*</td>
     <td>UKCoreCarePlan.category</td>
     <td>Type: CodeableConcept</td>
+</tr>
+<tr>
+    <td>final_action_code_description</td>
+    <td>0..1</td>
+    <td>UKCoreCarePlan.category.coding.display</td>
+    <td>Type: String</td>
 </tr>
 </tbody>
 </table>
@@ -308,6 +332,12 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>Type: CodeableConcept</td>
 </tr>
 <tr>
+    <td>higher_risk_referral_reason_code_description</td>
+    <td>0..1</td>
+    <td>UKCoreFlag.code.coding.display</td>
+    <td>Type: String</td>
+</tr>
+<tr>
     <td>is_higher_risk_active</td>
     <td>0..1</td>
     <td>UKCoreFlag.period.end</td>
@@ -340,6 +370,80 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>UKCoreObservation.value.valueCodeableConcept</td>
     <td>Type: CodeableConcept</td>
 </tr>
+<tr>
+    <td>gene_code_description</td>
+    <td>0..1</td>
+    <td>UKCoreObservation.value.valueCodeableConcept.coding.display</td>
+    <td>Type: String</td>
+</tr>
 <tbody>
 </table>
 
+### Organization
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+    <td>organisation_name</td>
+    <td>0..1</td>
+    <td>UKCoreOrganization.identifier.value</td>
+    <td>Type: String</td>
+</tr>
+<tbody>
+</table>
+
+### Provenance
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+    <td>record_insert_date_time</td>
+    <td>1..1</td>
+    <td>UKCoreProvenance.recorded</td>
+    <td>Type: Instant</td>
+</tr>
+<tbody>
+</table>
+
+### Meta [Resource]
+
+<table class="assets">
+<thead>
+  <tr>
+    <th>Source Data item</th>
+    <th>Cardinality</th>
+    <th>Target FHIR Element</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+    <td>source_system_processed_date_time</td>
+    <td>0..1</td>
+    <td>resource.meta.lastUpdated</td>
+    <td>Type: Instant</td>
+</tr>
+<tr>
+    <td>record_update_date_time</td>
+    <td>0..1</td>
+    <td>resource.meta.lastUpdated</td>
+    <td>Type: Instant</td>
+</tr>
+<tbody>
+</table>
