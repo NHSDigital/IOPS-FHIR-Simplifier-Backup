@@ -29,6 +29,12 @@ As of 19/05/2023, the package to enable pre-adopted elements to function as per 
 <td>{{pagelink:Extension-UKCore-DiagnosticReportNote}}</td>
 <td>NO</td>
 </tr>
+<td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.media" class="external">DiagnosticReport.media</a></td>
+<td>{{pagelink:Profile-DiagnosticReport}}<br>
+{{pagelink:Profile-DiagnosticReport-Lab}}</td>
+<td>{{pagelink:Extension-UKCore-DiagnosticReportMedia}}</td>
+<td>NO</td>
+</tr>
 <tr>
 <td><a href="https://hl7.org/fhir/R5/diagnosticreport-definitions.html#DiagnosticReport.supportingInfo" class="external">DiagnosticReport.supportingInfo</a></td>
 <td>{{pagelink:Profile-DiagnosticReport}}<br>
