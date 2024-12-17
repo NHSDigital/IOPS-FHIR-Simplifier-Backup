@@ -269,7 +269,7 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>Type: Identifier</td>
 </tr>
 <tr>
-    <td>gp_practice_id</td>
+    <td>gp_practice_code</td>
     <td>0..*</td>
     <td>UKCorePatient.generalPractitioner</td>
     <td>Type: Reference(Organization)</td>
