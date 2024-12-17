@@ -2,13 +2,13 @@
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
 
--  <b>Safe to display to patient / citizen</b> - With a safety rating of 'High', 'Medium' or 'Low'.
+-  <b>Safe to display to patient/citizen</b> - With a safety rating of 'High', 'Medium' or 'Low'.
 
--  <b>Useful to display to patient / citizen</b> - With a recommendation of 'Recommended' or 'Not recommended'.
+-  <b>Useful to display to patient/citizen</b> - With a recommendation of 'Recommended' or 'Not recommended'.
 
-For example, the element 'Id’ has a safety rating of ‘High’, meaning it can be shown via Patient Facing Services (PFS). However, we believe it may not be useful to display 'Not Recommended' for the patient / citizen. It’s worth noting, there are elements that will have no meaning or have any merit in being displayed such as ‘Id’. For example, some elements are just entities that link data together.
+For example, the element 'Id’ has a safety rating of ‘High’, meaning it can be shown via Patient Facing Services (PFS). However, we believe it may not be useful to display 'Not Recommended' for the patient/citizen. It’s worth noting, there are elements that will have no meaning or have any merit in being displayed such as ‘Id’. For example, some elements are just entities that link data together.
 
-For further information on the labelling please visit {{pagelink:Home/Introduction/How-to-use-the-implementation-guide/Data-model-labels-used-within-this-guidance.page.md}}.
+For further information on the labelling, visit {{pagelink:Home/Introduction/How-to-use-the-implementation-guide/Data-model-labels-used-within-this-guidance.page.md}}.
 </div>
 
 <table data-responsive>

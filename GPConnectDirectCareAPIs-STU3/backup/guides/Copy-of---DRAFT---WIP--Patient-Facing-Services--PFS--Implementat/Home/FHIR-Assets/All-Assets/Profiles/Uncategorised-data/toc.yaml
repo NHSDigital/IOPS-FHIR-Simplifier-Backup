@@ -1,8 +1,8 @@
 - name: Index
   filename: Index.page.md
-- name: Uncategorised Data - Data Model
-  filename: Uncategorised-Data---Data-Model.page.md
-- name: PFS Recommendation
+- name: Uncategorised Data - data model
+  filename: Uncategorised-data-data-model.page.md
+- name: PFS recommendation
   filename: PFS-Recommendation.page.md
-- name: Further Information
+- name: Further information
   filename: Further-Information.page.md

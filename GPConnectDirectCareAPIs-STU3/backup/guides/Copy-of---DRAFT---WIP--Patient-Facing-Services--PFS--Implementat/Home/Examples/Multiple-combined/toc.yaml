@@ -1,4 +1,4 @@
 - name: Index
   filename: Index.page.md
-- name: FHIR Examples
+- name: FHIR examples
   filename: FHIR-Examples.page.md

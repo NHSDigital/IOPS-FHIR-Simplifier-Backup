@@ -4,11 +4,15 @@
 <i class="fa fa-info-circle"></i> <b>Note:</b> If you’re planning on providing data using GP Connect APIs, then you’re a provider system. If you’re planning on consuming data using GP Connect APIs then you’re a consumer system.
 </div>
 
-Before starting development, read the specifications and prerequisite listed below:
+Before starting development, read the following specifications and complete the prerequisite listed below.
 
-- read about the directory of [GP Connect Specifications](https://digital.nhs.uk/services/gp-connect/develop-gp-connect-services/specifications-for-developers) and associated artefacts 
+</br>
 
-- read the specification that outlines the data model used within GP Connect; the [FHIR STU3 Representation GP Connect Data Model](https://simplifier.net/guide/gpconnect-data-model/Home/Introduction/Introduction?version=current) also contains guidelines on how to populate each of the FHIR resources
+### Specifications
+
+- read about the directory of [GP Connect specifications](https://digital.nhs.uk/services/gp-connect/develop-gp-connect-services/specifications-for-developers) and associated artefacts 
+
+- read the specification that outlines the data model used within GP Connect; the [GP Connect Data Model | FHIR STU3 Representation](https://simplifier.net/guide/gpconnect-data-model/Home/Introduction/Introduction?version=current) also contains guidelines on how to populate each of the FHIR resources
 
 </br>
 
@@ -16,7 +20,7 @@ Before starting development, read the specifications and prerequisite listed bel
 
 - providers must implement the [GP Connect API 1.5.1-beta specification](https://developer.nhs.uk/apis/gpconnect-1-5-1/)
 
----
+</br>
 
 ### Explore
 
@@ -24,4 +28,4 @@ Before starting development, read the specifications and prerequisite listed bel
 
 - optionally download the [GP Connect Demonstrator Codebase](https://github.com/nhsconnect/gpconnect-demonstrator) to see how it works
 
-- download our [PostMan Collection](https://developer.nhs.uk/apis/gpconnect-1-5-1/system_reference_postman.html) and explore the GP Connect interactions
+- download our [PostMan collection](https://developer.nhs.uk/apis/gpconnect-1-5-1/system_reference_postman.html) and explore the GP Connect interactions

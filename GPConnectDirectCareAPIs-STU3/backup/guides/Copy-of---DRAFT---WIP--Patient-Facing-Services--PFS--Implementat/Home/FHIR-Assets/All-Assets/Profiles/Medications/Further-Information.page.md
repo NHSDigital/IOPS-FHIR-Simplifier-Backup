@@ -14,7 +14,7 @@
 
 <h5><ins>Further information</ins></h5>
 
-<p>This element is a CodeableConcept. The element may include more than one code for the medication and/or more than one text description. Consumers are strongly advised to use the original term text as the primary text displayed to the end user (patient / citizen). For more information on 'Processing data from a CodeableConcept', specifically section 'Original term text' then please visit -
+<p>This element is a CodeableConcept. The element may include more than one code for the medication and/or more than one text description. Consumers are strongly advised to use the original term text as the primary text displayed to the end user (patient / citizen). For more information on 'Processing data from a CodeableConcept', specifically section 'Original term text' visit -
 
 https://simplifier.net/guide/uk-core-implementation-guide/Home/Guidance/CodeableConcept-Guidance?version=1.0.0-pre-release</p>
 
@@ -62,7 +62,7 @@ Depending on the use case, we advise Consumers to consider highlighting those re
 
 For example, the common setting of this element is when GP’s prescribe a course of medication to a patient. At the end of each course, they may then arrange for a blood test. 
 
-The clinical staff issuing the medication will know it’s at the end of the course with the element ‘status’ and output of 'complete' –then arrange for the patient to come in for a blood test. In this scenario, this element is more beneficial to the clinician issuing the medication than it is for the end user.
+The clinical staff issuing the medication will know it is at the end of the course with the element ‘status’ and output of 'complete', then arrange for the patient to come in for a blood test. In this scenario, this element is more beneficial to the clinician issuing the medication than it is for the end user.
 
 A prescription will be ‘complete’ if it has come to the end of an authorisation or review date. If a patient were to see this, they may misinterpret the meaning of the element and stop the medication entirely and not go to a practice to get a reauthorised action as intended.</p>
 
@@ -76,7 +76,7 @@ A prescription will be ‘complete’ if it has come to the end of an authorisat
 
 <p>This element is the date range for a period of a prescription (authorisation). This is not the complete date range for an individual taking a given drug.
 
-It is the period believed when the patient will be taking the drug for this authorisation. For a repeat medication this will often have multiple records of authorisations covering different periods (there may be other medication statements or periods before or after for the same drug). Consumers need to be cautious when building this information and how it is conveyed to patients / citizens. In particular, the use of language around dates it presents.
+It is the period believed when the patient will be taking the drug for this authorisation. For a repeat medication this will often have multiple records of authorisations covering different periods (there may be other medication statements or periods before or after for the same drug). Consumers need to be cautious when building this information and how it is conveyed to patients/citizens. In particular, the use of language around dates it presents.
 The end date is often a calculated estimation as to when the prescription course will have completed.
 </p>
 
@@ -88,7 +88,7 @@ The end date is often a calculated estimation as to when the prescription course
 
 <h5><ins>Further information</ins></h5>
 
-<p>This is a mandatory element. GP Records cannot consistently say whether the medication has been taken or not. Therefore, is always set to ‘unknown’. It is advised not to show this element as patient / citizen reading that status of ‘unknown may feel the need to contact the GP to update the record to say is has been taken.</p>
+<p>This is a mandatory element. GP records cannot consistently say whether the medication has been taken or not. Therefore, is always set to ‘unknown’. It is advised not to show this element as patient/citizen reading that status of ‘unknown may feel the need to contact the GP to update the record to say is has been taken.</p>
 
 ---
 

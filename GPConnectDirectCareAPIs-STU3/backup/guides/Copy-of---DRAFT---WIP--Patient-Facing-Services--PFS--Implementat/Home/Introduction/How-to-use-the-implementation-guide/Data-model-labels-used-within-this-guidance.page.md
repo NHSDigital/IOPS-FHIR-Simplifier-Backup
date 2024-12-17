@@ -8,9 +8,9 @@ The guidance does not prohibit other specific use cases, but appropriate assessm
 
 Each element will have two associated headings:
 
-1. Safe to display to patient/citizen
+1. Safe to display to patient/citizen.
 
-2. Useful to display to patient/citizen
+2. Useful to display to patient/citizen.
 
 <br></br>
 
@@ -33,7 +33,7 @@ Each element will have two associated headings:
         <tr>
             <td><span class="fas fa-exclamation-circle text-warning fa-lg"></span></td>
             <td>Medium</td>
-            <td>To be used/displayed with caution via PFS. This is not meant to reflect the significance of the element - there may be elements that are highly important to use. The use with caution icon should not be a deterrent but to state there is great significance on guidance that should be followed to ensure it is viewed safely and not creating user (patient/citizen) hazards.</td>
+            <td>To be used/displayed with caution via PFS. This is not meant to reflect the significance of the element - there may be elements that are highly important to use. The use with caution icon should not be a deterrent, but to state there is great significance on guidance that should be followed to ensure it is viewed safely and not creating user (patient/citizen) hazards.</td>
         </tr>
         <tr>
             <td><span class="fas fa-times-circle text-danger fa-lg"></span></td>
@@ -45,7 +45,7 @@ Each element will have two associated headings:
 
 <br></br>
 
-##### Useful to display to patient / citizen
+##### Useful to display to patient/citizen
 
 <table data-responsive>
     <thead>

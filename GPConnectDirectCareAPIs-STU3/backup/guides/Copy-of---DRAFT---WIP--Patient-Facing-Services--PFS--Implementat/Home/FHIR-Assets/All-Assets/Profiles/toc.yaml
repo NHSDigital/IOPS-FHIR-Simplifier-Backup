@@ -14,9 +14,9 @@
   filename: Referrals
 - name: Documents
   filename: Documents
-- name: Diary entries
+- name: Diary Entries
   filename: Diary-entries
-- name: Uncategorised data
+- name: Uncategorised Data
   filename: Uncategorised-data
 - name: index
   filename: index.page.md

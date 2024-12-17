@@ -1,10 +1,10 @@
-- name: Permission Levels
+- name: Permission levels
   filename: Permission-levels.page.md
-- name: Summary Level
+- name: Summary level
   filename: Summary-Level.page.md
-- name: Detail Coded Level
+- name: Detail coded level
   filename: Detail-Coded-Level.page.md
-- name: Document Level
+- name: Document level
   filename: Document-Level.page.md
-- name: Full access Level
+- name: Full access level
   filename: Full-access-LEvel.page.md
