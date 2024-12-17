@@ -1,8 +1,8 @@
 - name: Index
   filename: Index.page.md
-- name: Allergies - Data Model
-  filename: Allergies---Data-Model.page.md
-- name: PFS Recommendation
+- name: Allergies - data model
+  filename: Allergies-data-model.page.md
+- name: PFS recommendation
   filename: PFS-Recommendation.page.md
-- name: Further Information
+- name: Further information
   filename: Further-Information.page.md

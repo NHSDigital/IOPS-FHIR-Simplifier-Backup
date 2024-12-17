@@ -1,7 +1,7 @@
 ## {{page-title}}
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-<p><b>Note</b> - Not every element will have further information. Further information is to simply give additional context and perspective to the element.
+<p><b>Note:</b> Not every element will have further information. Further information is to simply give additional context and perspective to the element.
 </div>
 
 ---
@@ -76,7 +76,7 @@ Unless the PFS has a strong use case to define allergies in this way and can con
 
 <h5><ins>Further information</ins></h5>
 
-<p>This element is a CodeableConcept. The element may include more than one code for the medication and/or more one text description. Consumers are strongly advised to use the original term text as the primary text displayed to the end user (patient / citizen). For more information on 'Processing data from a CodeableConcept', specifically section 'Original term text' then please visit -
+<p>This element is a CodeableConcept. The element may include more than one code for the medication and/or more one text description. Consumers are strongly advised to use the original term text as the primary text displayed to the end user (patient / citizen). For more information on 'Processing data from a CodeableConcept', specifically section 'Original term text', visit 
 
 https://simplifier.net/guide/uk-core-implementation-guide/Home/Guidance/CodeableConcept-Guidance?version=1.0.0-pre-release</p>
 

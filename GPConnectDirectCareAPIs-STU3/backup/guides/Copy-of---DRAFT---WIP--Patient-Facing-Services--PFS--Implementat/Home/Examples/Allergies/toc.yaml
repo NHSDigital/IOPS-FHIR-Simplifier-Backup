@@ -1,4 +1,4 @@
 - name: Index
   filename: Index.page.md
-- name: FHIR Allergies Examples
+- name: FHIR Allergies examples
   filename: FHIR-Allergies-Examples.page.md

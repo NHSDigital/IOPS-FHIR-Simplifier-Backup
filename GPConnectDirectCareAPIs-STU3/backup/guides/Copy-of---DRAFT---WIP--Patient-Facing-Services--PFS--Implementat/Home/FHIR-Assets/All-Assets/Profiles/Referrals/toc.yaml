@@ -1,8 +1,8 @@
 - name: Index
   filename: Index.page.md
-- name: Referrals - Data Model
-  filename: Referrals---Data-Model.page.md
-- name: PFS Recommendation
+- name: Referrals - data model
+  filename: Referrals-data-model.page.md
+- name: PFS recommendation
   filename: PFS-Recommendation.page.md
-- name: Further Information
+- name: Further information
   filename: Further-Information.page.md

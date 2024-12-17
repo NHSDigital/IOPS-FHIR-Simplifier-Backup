@@ -1,8 +1,8 @@
 - name: Index
   filename: Index.page.md
-- name: Immunisations - Data Model
-  filename: Immunisations---Data-Model.page.md
-- name: PFS Recommendation
+- name: Immunisations - data model
+  filename: Immunisations-data-model.page.md
+- name: PFS recommendation
   filename: PFS-Recommendation.page.md
-- name: Further Information
+- name: Further information
   filename: Further-Information.page.md

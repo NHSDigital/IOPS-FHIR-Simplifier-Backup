@@ -1,8 +1,8 @@
 - name: Index
   filename: Index.page.md
-- name: Problems - Data Model
-  filename: Problems---Data-Model.page.md
-- name: PFS Recommendation
+- name: Problems - data model
+  filename: Problems-data-model.page.md
+- name: PFS recommendation
   filename: PFS-Recommendation.page.md
-- name: Further Information
+- name: Further information
   filename: Further-Information.page.md

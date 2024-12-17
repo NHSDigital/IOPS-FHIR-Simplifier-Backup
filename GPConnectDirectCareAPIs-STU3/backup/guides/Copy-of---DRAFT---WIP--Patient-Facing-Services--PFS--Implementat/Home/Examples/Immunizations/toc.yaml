@@ -1,4 +1,4 @@
 - name: Index
   filename: Index.page.md
-- name: FHIR Immunizations Examples
+- name: FHIR Immunizations examples
   filename: FHIR-Immunizations-Examples.page.md

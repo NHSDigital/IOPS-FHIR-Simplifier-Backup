@@ -2,11 +2,11 @@
   filename: Retrieve-a-patient-s-structured-record.page.md
 - name: Endpoints
   filename: Endpoints.page.md
-- name: Testing Assets
+- name: Testing assets
   filename: Testing-assets.page.md
-- name: Additional Medication Filtering
+- name: Additional medication filtering
   filename: Additional-Medication-Filtering.page.md
 - name: Retrieve a patient's documents
   filename: Retrieve-a-patient-s-documents.page.md
-- name: Permission Levels
+- name: Permission levels
   filename: Permission-Levels

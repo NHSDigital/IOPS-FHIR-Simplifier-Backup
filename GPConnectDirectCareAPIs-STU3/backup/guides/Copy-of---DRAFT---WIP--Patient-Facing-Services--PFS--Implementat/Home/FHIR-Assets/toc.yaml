@@ -1,5 +1,4 @@
-
-- name: All Assets
+- name: All assets
   filename: All-Assets
-- name: PFS Profiles
+- name: PFS profiles
   filename: PFS-Profiles.page.md

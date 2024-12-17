@@ -76,3 +76,5 @@
   filename: Profile-CareConnect-EpisodeOfCare-1
 - name: 'Profile: CareConnect-Procedure-1'
   filename: Profile-CareConnect-Procedure-1
+- name: 'Profile: CareConnect-Careplan-1'
+  filename: Profile-CareConnect-Careplan-1

@@ -1,8 +1,8 @@
 - name: Index
   filename: Index.page.md
-- name: Documents - Data Model
-  filename: Documents---Data-Model.page.md
-- name: PFS Recommendation
+- name: Documents - data model
+  filename: Documents-data-model.page.md
+- name: PFS recommendation
   filename: PFS-Recommendation.page.md
-- name: Further Information
+- name: Further information
   filename: Further-Information.page.md
