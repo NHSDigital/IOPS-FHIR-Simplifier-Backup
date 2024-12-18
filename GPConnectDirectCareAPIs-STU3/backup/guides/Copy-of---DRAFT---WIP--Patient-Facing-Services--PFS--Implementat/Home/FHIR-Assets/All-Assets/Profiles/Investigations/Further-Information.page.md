@@ -79,7 +79,7 @@ However, if there is no specimen date, issue date may be used. (Please note, the
 
 <h5><ins>Further information</ins></h5>
 
-<p>The DiagnosticReport can refer to more than one specimen. Where this is the case, you may chose to utilise the 'specimen' element to group and organise results. If doing so, ensure the association of individual results in test groups where applicable is maintained.</p>
+<p>The DiagnosticReport can refer to more than one specimen. Where this is the case, you may choose to utilise the 'specimen' element to group and organise results. If doing so, ensure the association of individual results in test groups where applicable is maintained.</p>
 
 ---
 
@@ -222,7 +222,7 @@ This represents the date the batch of tests are recorded as completed. In simple
 
 <h5><ins>Further information</ins></h5>
 
-<p>The date the lab send out the result, this is not to be confused with the collection.collected date (drawn date.</p>
+<p>The date the lab send out the result, this is not to be confused with the collection.collected date (drawn date).</p>
 
 ---
 
@@ -321,7 +321,7 @@ This represents the date the batch of tests are recorded as completed. In simple
 
 <h5><ins>Further information</ins></h5>
 
-<p>The date the lab send out the result, this is not to be confused with the collection.collected date (drawn date.</p>
+<p>The date the lab send out the result, this is not to be confused with the collection.collected date (drawn date).</p>
 
 ---
 

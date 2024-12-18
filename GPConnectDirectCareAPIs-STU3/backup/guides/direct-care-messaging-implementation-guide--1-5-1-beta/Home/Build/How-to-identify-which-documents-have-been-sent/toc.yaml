@@ -1,5 +1,7 @@
-- name: Index
-  filename: Index.page.md
+- name: How to identify which documents have been sent
+  filename: How-to-identify-which-documents-have-been-sent.page.md
+- name: Confidentiality
+  filename: Confidentiality.page.md
 - name: MESH workflow ID
   filename: MESH-workflow-ID.page.md
 - name: FHIR Composition

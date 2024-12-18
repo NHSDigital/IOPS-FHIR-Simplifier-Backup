@@ -12,7 +12,7 @@
 
 <h5><ins>Further information</ins></h5>
 
-<p>If the element is marked as ‘untrue’, it will likely be marked in error. In any case, this should not to be sent via PFS.</p>
+<p>If the element is marked as ‘untrue’, it will likely be marked in error. In any case, this should not be sent via PFS.</p>
 
 ---
 
