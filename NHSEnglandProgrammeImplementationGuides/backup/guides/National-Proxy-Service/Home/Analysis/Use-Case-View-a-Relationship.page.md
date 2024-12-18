@@ -87,3 +87,8 @@
   </tbody>
 </table>
 <br>
+
+### Workflow
+{{render:View Relationship jpeg.jpg}}
+
+Note: This process remains the same for a patient that needs to know who their authorised proxies are and a clinical professional that needs to know the proxies that can act on behalf of a patient
