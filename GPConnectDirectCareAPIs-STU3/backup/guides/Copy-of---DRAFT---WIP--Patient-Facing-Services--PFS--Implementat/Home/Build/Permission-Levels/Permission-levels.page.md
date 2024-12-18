@@ -39,7 +39,7 @@ The same information from the image in table format:
 | -----       | ---------------------                                                                                                          |
 | `None`      | No access                                                                                                                      |
 | `Summary`   | Demographics, Medications, Allergies                                                                                           |
-| `Detailed`  | Everything from `Summary` + All read/clinical codes, Immunistations, Health conditions, Test results, Consultations, Referrals |
+| `Detailed`  | Everything from `Summary` + All read/clinical codes, Immunisations, Health conditions, Test results, Consultations, Referrals |
 | `Documents` | Everything from `Detailed` + Documents                                                                                         |
 | `Full`      | Everything from `Documents` + Free text                                                                                        |
 

@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-This access level is everything from Summary + All read/clinical codes, Immunistations, Health conditions, Test results, Consultations, Referrals.
+This access level is everything from Summary + All read/clinical codes, Immunisations, Health conditions, Test results, Consultations, Referrals.
 
 That means, any free text elements and documents must not be returned. 
 

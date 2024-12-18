@@ -4,7 +4,7 @@ The patient facing Access Record Structured API has additional filtering to the 
 
 Consuming applications can filter by PrescriptionType of the MedicationRequests.
 
-These parameters are called `prescriptionType` and correspond to the matching values within the MedicationRequest resource (prescriptionType)
+These parameters are called `prescriptionType` and correspond to the matching values within the MedicationRequest resource (prescriptionType).
 
 The possible values for the prescriptionType:
 {{render:https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1}} 
