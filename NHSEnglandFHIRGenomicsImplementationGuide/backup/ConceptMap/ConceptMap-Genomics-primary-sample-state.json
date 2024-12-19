@@ -2,11 +2,11 @@
   "resourceType": "ConceptMap",
   "id": "genomics-primary-sample-state",
   "url": "https://fhir.nhs.uk/ConceptMap/genomics-primary-sample-state",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "GenomicsPrimarySampleState",
   "title": "Genomics Primary Sample State",
   "status": "draft",
-  "date": "2024-10-04T00:00:00.000Z",
+  "date": "2024-12-05T00:00:00.000Z",
   "publisher": "NHS England",
   "contact": [
     {
@@ -62,17 +62,6 @@
           ]
         },
         {
-          "code": "frozen",
-          "display": "Frozen",
-          "target": [
-            {
-              "code": "frozen",
-              "display": "Frozen",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
           "code": "other",
           "display": "Other",
           "target": [
@@ -81,6 +70,23 @@
               "display": "Other",
               "equivalence": "equivalent",
               "comment": "Any other suitable sample condition that is an alternative to concepts provided in this Conceptmap. This should be provided by free text."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "https://future.nhs.uk/NHSgenomics/view?objectId=222250117",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0493",
+      "element": [
+        {
+          "code": "frozen",
+          "display": "Frozen",
+          "target": [
+            {
+              "code": "FROZ",
+              "display": "Frozen",
+              "equivalence": "equivalent"
             }
           ]
         }

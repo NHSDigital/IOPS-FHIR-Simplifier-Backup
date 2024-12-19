@@ -7,7 +7,7 @@
   ],
   "jurisdiction": "urn:iso:std:iso:3166:-2:GB-ENG",
   "dependencies": {
-    "fhir.r4.ukcore.stu3.currentbuild": "0.0.14-pre-release",
+    "fhir.r4.ukcore.stu3.currentbuild": "0.0.17-pre-release",
     "hl7.fhir.r4.core": "4.0.1"
   }
 }
