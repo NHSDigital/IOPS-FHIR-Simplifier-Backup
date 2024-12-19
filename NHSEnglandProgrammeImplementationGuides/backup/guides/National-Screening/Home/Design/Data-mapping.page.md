@@ -400,7 +400,7 @@ Patient "1" *-- "many" ServiceRequest : has
 <tbody>
 </table>
 
-### Provenance
+### Audit Event
 
 <table class="assets">
 <thead>
@@ -415,7 +415,7 @@ Patient "1" *-- "many" ServiceRequest : has
 <tr>
     <td>record_insert_date_time</td>
     <td>1..1</td>
-    <td>UKCoreProvenance.recorded</td>
+    <td>UKCoreAuditEvent.recorded</td>
     <td>Type: Instant</td>
 </tr>
 <tbody>
