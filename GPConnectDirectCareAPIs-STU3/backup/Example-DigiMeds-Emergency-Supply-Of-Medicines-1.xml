@@ -44,7 +44,7 @@
         <sender>
           <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
         </sender>
-        <timestamp value="2024-12-13T19:12:10.8294687+00:00" />
+        <timestamp value="2024-12-20T12:31:28.4369646+00:00" />
         <source>
           <endpoint value="SENDER_MESH_MAILBOX_ID" />
         </source>
@@ -90,7 +90,7 @@
       <Bundle>
         <id value="DCBE2BB9-DF64-48BF-9702-A36A1A044506" />
         <meta>
-          <lastUpdated value="2024-12-13T19:12:10.8430229+00:00" />
+          <lastUpdated value="2024-12-20T12:31:28.4587154+00:00" />
           <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1" />
         </meta>
         <identifier>
@@ -134,7 +134,7 @@
               <encounter>
                 <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
               </encounter>
-              <date value="2024-12-13" />
+              <date value="2024-12-20" />
               <author>
                 <reference value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
               </author>
@@ -154,47 +154,44 @@
                 <text>
                   <status value="generated" />
                   <div xmlns="http://www.w3.org/1999/xhtml">
-                    <status value="additional" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                      <table width="100%">
-                        <tbody>
-                          <tr>
-                            <th>Date and time of contact</th>
-                            <td>9-May-2018 10:00</td>
-                          </tr>
-                          <tr>
-                            <th>Service</th>
-                            <td>Community Pharmacist Consultation Service</td>
-                          </tr>
-                          <tr>
-                            <th>Organisation</th>
-                            <td>
-                              <p>Name: Overtown Pharmacy</p>
-                              <p>Address: 1 High Street, Overtown, Leeds</p>
-                              <p>Postcode: LS1 9AM</p>
-                              <p>Telephone: 01134875516</p>
-                              <p>Email: overtonpharmacy118@mymail.com</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Clincian</th>
-                            <td>
-                              <p>Name: Mr Eric Smith</p>
-                              <p>Role: Pharmacist</p>
-                              <p>Registration No: 2145879</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Person collecting the medication</th>
-                            <td>Patient</td>
-                          </tr>
-                          <tr>
-                            <th>Reason for service</th>
-                            <td>Emergency supply of medication. Patient had not ordered their prescription.</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <th>Date and time of contact</th>
+                          <td>9-May-2018 10:00</td>
+                        </tr>
+                        <tr>
+                          <th>Service</th>
+                          <td>Community Pharmacist Consultation Service</td>
+                        </tr>
+                        <tr>
+                          <th>Organisation</th>
+                          <td>
+                            <p>Name: Overtown Pharmacy</p>
+                            <p>Address: 1 High Street, Overtown, Leeds</p>
+                            <p>Postcode: LS1 9AM</p>
+                            <p>Telephone: 01134875516</p>
+                            <p>Email: overtonpharmacy118@mymail.com</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Clincian</th>
+                          <td>
+                            <p>Name: Mr Eric Smith</p>
+                            <p>Role: Pharmacist</p>
+                            <p>Registration No: 2145879</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Person collecting the medication</th>
+                          <td>Patient</td>
+                        </tr>
+                        <tr>
+                          <th>Reason for service</th>
+                          <td>Emergency supply of medication. Patient had not ordered their prescription.</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </text>
                 <entry>
@@ -213,21 +210,18 @@
                 <text>
                   <status value="generated" />
                   <div xmlns="http://www.w3.org/1999/xhtml">
-                    <status value="additional" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                      <table width="100%">
-                        <tbody>
-                          <tr>
-                            <th>Consent for treatment record</th>
-                            <td>Patient's consent for treatment has been attained.</td>
-                          </tr>
-                          <tr>
-                            <th>Consent relating to child</th>
-                            <td>Not Applicable</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <th>Consent for treatment record</th>
+                          <td>Patient's consent for treatment has been attained.</td>
+                        </tr>
+                        <tr>
+                          <th>Consent relating to child</th>
+                          <td>Not Applicable</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </text>
               </section>
@@ -243,37 +237,34 @@
                 <text>
                   <status value="generated" />
                   <div xmlns="http://www.w3.org/1999/xhtml">
-                    <status value="additional" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                      <table width="100%">
-                        <tbody>
-                          <tr>
-                            <th>GP name</th>
-                            <td>
-                              <p>Prefix: Dr</p>
-                              <p>Given Name: Paul</p>
-                              <p>Family Name: Rastall</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>GP practice identifier</th>
-                            <td>
-                              <p>ODS Organization Code:GP123456</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>GP practice details</th>
-                            <td>
-                              <p>Name: MGP Medical Centre</p>
-                              <p>Address:</p>
-                              <p>Address Line: 1 MGP House, Overtown</p>
-                              <p>City: Leeds</p>
-                              <p>Post Code: LS21 7PA</p>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <th>GP name</th>
+                          <td>
+                            <p>Prefix: Dr</p>
+                            <p>Given Name: Paul</p>
+                            <p>Family Name: Rastall</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>GP practice identifier</th>
+                          <td>
+                            <p>ODS Organization Code:GP123456</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>GP practice details</th>
+                          <td>
+                            <p>Name: MGP Medical Centre</p>
+                            <p>Address:</p>
+                            <p>Address Line: 1 MGP House, Overtown</p>
+                            <p>City: Leeds</p>
+                            <p>Post Code: LS21 7PA</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </text>
                 <entry>
@@ -292,19 +283,16 @@
                 <text>
                   <status value="generated" />
                   <div xmlns="http://www.w3.org/1999/xhtml">
-                    <status value="additional" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                      <table width="100%">
-                        <tbody>
-                          <tr>
-                            <th>Relevant past medical, surgical and mental health history</th>
-                            <td>
-                              <p>Patient has Type 2 diabetes and hypertension.</p>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <th>Relevant past medical, surgical and mental health history</th>
+                          <td>
+                            <p>Patient has Type 2 diabetes and hypertension.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </text>
               </section>
@@ -320,19 +308,16 @@
                 <text>
                   <status value="generated" />
                   <div xmlns="http://www.w3.org/1999/xhtml">
-                    <status value="additional" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                      <table width="100%">
-                        <tbody>
-                          <tr>
-                            <th>Information and advice given</th>
-                            <td>
-                              <p>Patient advised that he should consider discussing with his GP whether he can be set up for electronic repeat dispensing if his medication regime is stable.</p>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <th>Information and advice given</th>
+                          <td>
+                            <p>Patient advised that he should consider discussing with his GP whether he can be set up for electronic repeat dispensing if his medication regime is stable.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </text>
               </section>
@@ -348,45 +333,42 @@
                 <text>
                   <status value="generated" />
                   <div xmlns="http://www.w3.org/1999/xhtml">
-                    <status value="additional" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                      <table width="100%">
-                        <tbody>
-                          <tr>
-                            <th>Medication</th>
-                            <td>Humulin M3 100units/ml suspension for injection 3ml cartridges (CST Pharma Ltd)</td>
-                          </tr>
-                          <tr>
-                            <th>Dose directions</th>
-                            <td>As needed</td>
-                          </tr>
-                          <tr>
-                            <th>Quantity Supplied</th>
-                            <td>2 cartridge</td>
-                          </tr>
-                          <tr>
-                            <th>Days Supply</th>
-                            <td>14 days</td>
-                          </tr>
-                          <tr>
-                            <th>Medication</th>
-                            <td>BD Viva hypodermic insulin needles for pre-filled / reusable pen injectors screw on 5mm/31gauge (Becton, Dickinson UK Ltd)</td>
-                          </tr>
-                          <tr>
-                            <th>Dose directions</th>
-                            <td>As needed</td>
-                          </tr>
-                          <tr>
-                            <th>Quantity Supplied</th>
-                            <td>90 needle</td>
-                          </tr>
-                          <tr>
-                            <th>Days Supply</th>
-                            <td>14 days</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <th>Medication</th>
+                          <td>Humulin M3 100units/ml suspension for injection 3ml cartridges (CST Pharma Ltd)</td>
+                        </tr>
+                        <tr>
+                          <th>Dose directions</th>
+                          <td>As needed</td>
+                        </tr>
+                        <tr>
+                          <th>Quantity Supplied</th>
+                          <td>2 cartridge</td>
+                        </tr>
+                        <tr>
+                          <th>Days Supply</th>
+                          <td>14 days</td>
+                        </tr>
+                        <tr>
+                          <th>Medication</th>
+                          <td>BD Viva hypodermic insulin needles for pre-filled / reusable pen injectors screw on 5mm/31gauge (Becton, Dickinson UK Ltd)</td>
+                        </tr>
+                        <tr>
+                          <th>Dose directions</th>
+                          <td>As needed</td>
+                        </tr>
+                        <tr>
+                          <th>Quantity Supplied</th>
+                          <td>90 needle</td>
+                        </tr>
+                        <tr>
+                          <th>Days Supply</th>
+                          <td>14 days</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </text>
                 <entry>
@@ -405,52 +387,49 @@
                 <text>
                   <status value="generated" />
                   <div xmlns="http://www.w3.org/1999/xhtml">
-                    <status value="additional" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                      <table width="100%">
-                        <tbody>
-                          <tr>
-                            <th>Patient</th>
-                            <td>
-                              <p>Prefix: Mr</p>
-                              <p>Given Name: William</p>
-                              <p>Family Name: Smith</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Date of birth</th>
-                            <td>4 February 1956</td>
-                          </tr>
-                          <tr>
-                            <th>Gender</th>
-                            <td>Male</td>
-                          </tr>
-                          <tr>
-                            <th>NHS number</th>
-                            <td>2378954317</td>
-                          </tr>
-                          <tr>
-                            <th>Patient address</th>
-                            <td>
-                              <p>Address Line: 14, Sunny Mews, Overtown,</p>
-                              <p>City: Leeds</p>
-                              <p>Post Code: LS17 4NK</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Patient telephone number</th>
-                            <td>
-                              <p>Home: 01135540935</p>
-                              <p>Mobile: 07823123456</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Relevant contacts</th>
-                            <td>Name: June Smith <p>Relationship: Next of kin</p><p>Contact details: Tel. 01132789365</p></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <th>Patient</th>
+                          <td>
+                            <p>Prefix: Mr</p>
+                            <p>Given Name: William</p>
+                            <p>Family Name: Smith</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Date of birth</th>
+                          <td>4 February 1956</td>
+                        </tr>
+                        <tr>
+                          <th>Gender</th>
+                          <td>Male</td>
+                        </tr>
+                        <tr>
+                          <th>NHS number</th>
+                          <td>2378954317</td>
+                        </tr>
+                        <tr>
+                          <th>Patient address</th>
+                          <td>
+                            <p>Address Line: 14, Sunny Mews, Overtown,</p>
+                            <p>City: Leeds</p>
+                            <p>Post Code: LS17 4NK</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Patient telephone number</th>
+                          <td>
+                            <p>Home: 01135540935</p>
+                            <p>Mobile: 07823123456</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Relevant contacts</th>
+                          <td>Name: June Smith <p>Relationship: Next of kin</p><p>Contact details: Tel. 01132789365</p></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </text>
                 <entry>
@@ -469,17 +448,14 @@
                 <text>
                   <status value="generated" />
                   <div xmlns="http://www.w3.org/1999/xhtml">
-                    <status value="additional" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                      <table width="100%">
-                        <tbody>
-                          <tr>
-                            <th>Plan and requested actions</th>
-                            <td>GP to review medications and speak to Patient regarding electronic repeat dispensing</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <th>Plan and requested actions</th>
+                          <td>GP to review medications and speak to Patient regarding electronic repeat dispensing</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </text>
               </section>
@@ -495,17 +471,14 @@
                 <text>
                   <status value="generated" />
                   <div xmlns="http://www.w3.org/1999/xhtml">
-                    <status value="additional" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                      <table width="100%">
-                        <tbody>
-                          <tr>
-                            <th>Referral details</th>
-                            <td>NHS 111</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <th>Referral details</th>
+                          <td>NHS 111</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </text>
               </section>
@@ -539,7 +512,7 @@
                 </individual>
               </participant>
               <period>
-                <start value="2024-12-13" />
+                <start value="2024-12-20" />
               </period>
               <serviceProvider>
                 <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
@@ -927,4 +900,3 @@
     </resource>
   </entry>
 </Bundle>
-
