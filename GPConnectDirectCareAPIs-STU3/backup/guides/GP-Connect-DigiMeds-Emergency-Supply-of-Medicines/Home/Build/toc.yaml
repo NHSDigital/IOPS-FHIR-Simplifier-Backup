@@ -1,5 +1,7 @@
 - name: How to configure MESH
   filename: How-to-configure-MESH
+- name: How to populate Allergies and adverse reactions
+  filename: How-to-populate-Allergies-and-adverse-reactions
 - name: How to populate Contact with Professionals
   filename: How-to-populate-Contact-with-Professionals
 - name: How to populate Consent (Legal information)

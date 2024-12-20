@@ -26,3 +26,7 @@
   filename: Profile-CareConnect-ITK-MedicationDispense-1
 - name: 'Profile: CareConnect-ITK-Medication-1'
   filename: Profile-CareConnect-ITK-Medication-1
+- name: 'Profile: CareConnect-ITK-Allergy-List-1'
+  filename: Profile-CareConnect-ITK-Allergy-List-1
+- name: 'Profile: CareConnect-ITK-AllergyIntolerance-1'
+  filename: Profile-CareConnect-ITK-AllergyIntolerance-1
