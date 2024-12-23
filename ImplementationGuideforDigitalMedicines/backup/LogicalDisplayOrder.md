@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-The order in which the structures within the Resouce should be listed.
+The order in which the structures within the Resource should be listed.
 
 1. Medication Name
 2. Medication Form (*if not implied within a VMP/AMP name*)
