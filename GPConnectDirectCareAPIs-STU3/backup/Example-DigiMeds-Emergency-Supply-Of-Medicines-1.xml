@@ -1,15 +1,15 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4619DB9D-1647-46A4-B8EA-AE5D21378EB8" />
+  <id value="4619db9d-1647-46a4-b8ea-ae5d21378eb8" />
   <identifier>
     <system value="https://fhir.provider.example/identifier/bundle" />
-    <value value="4619DB9D-1647-46A4-B8EA-AE5D21378EB8" />
+    <value value="4619db9d-1647-46a4-b8ea-ae5d21378eb8" />
   </identifier>
   <type value="message" />
   <entry>
-    <fullUrl value="urn:uuid:5EB3C5D8-DEBA-4533-A4CD-84A00B84DE14" />
+    <fullUrl value="urn:uuid:5eb3c5d8-deba-4533-a4cd-84a00b84de14" />
     <resource>
       <MessageHeader>
-        <id value="5EB3C5D8-DEBA-4533-A4CD-84A00B84DE14" />
+        <id value="5eb3c5d8-deba-4533-a4cd-84a00b84de14" />
         <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
           <extension url="BusAckRequested">
             <valueBoolean value="true" />
@@ -30,7 +30,7 @@
             </valueReference>
           </extension>
           <extension url="SenderReference">
-            <valueString value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+            <valueString value="urn:uuid:7ceafc48-fa50-4b21-8175-ca4fc744a1eb" />
           </extension>
           <extension url="LocalExtension">
             <valueString value="None" />
@@ -42,23 +42,23 @@
           <display value="ITK Digital Medicine Emergency Supply Document" />
         </event>
         <sender>
-          <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+          <reference value="urn:uuid:e3cc1193-4f44-48cd-92ed-c7dfb15cdb26" />
         </sender>
-        <timestamp value="2024-12-20T12:31:28.4369646+00:00" />
+        <timestamp value="2024-12-23T17:21:57.421714+00:00" />
         <source>
           <endpoint value="SENDER_MESH_MAILBOX_ID" />
         </source>
         <focus>
-          <reference value="urn:uuid:DCBE2BB9-DF64-48BF-9702-A36A1A044506" />
+          <reference value="urn:uuid:dcbe2bb9-df64-48bf-9702-a36a1a044506" />
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+    <fullUrl value="urn:uuid:e3cc1193-4f44-48cd-92ed-c7dfb15cdb26" />
     <resource>
       <Organization>
-        <id value="E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+        <id value="e3cc1193-4f44-48cd-92ed-c7dfb15cdb26" />
         <meta>
           <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1" />
         </meta>
@@ -70,10 +70,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+    <fullUrl value="urn:uuid:734cb65a-fd52-4083-aba2-7d61cb2e64e2" />
     <resource>
       <Organization>
-        <id value="734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+        <id value="734cb65a-fd52-4083-aba2-7d61cb2e64e2" />
         <meta>
           <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1" />
         </meta>
@@ -85,24 +85,24 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:DCBE2BB9-DF64-48BF-9702-A36A1A044506" />
+    <fullUrl value="urn:uuid:dcbe2bb9-df64-48bf-9702-a36a1a044506" />
     <resource>
       <Bundle>
-        <id value="DCBE2BB9-DF64-48BF-9702-A36A1A044506" />
+        <id value="dcbe2bb9-df64-48bf-9702-a36a1a044506" />
         <meta>
-          <lastUpdated value="2024-12-20T12:31:28.4587154+00:00" />
+          <lastUpdated value="2024-12-23T17:21:57.4376044+00:00" />
           <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1" />
         </meta>
         <identifier>
           <system value="https://fhir.provider.example/identifier/bundle" />
-          <value value="DCBE2BB9-DF64-48BF-9702-A36A1A044506" />
+          <value value="dcbe2bb9-df64-48bf-9702-a36a1a044506" />
         </identifier>
         <type value="document" />
         <entry>
-          <fullUrl value="urn:uuid:9695E60D-3B4D-4272-A8FA-DDA91A472757" />
+          <fullUrl value="urn:uuid:9695e60d-3b4d-4272-a8fa-dda91a472757" />
           <resource>
             <Composition>
-              <id value="9695E60D-3B4D-4272-A8FA-DDA91A472757" />
+              <id value="9695e60d-3b4d-4272-a8fa-dda91a472757" />
               <meta>
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-DM-EmergencySupply-Composition-1" />
               </meta>
@@ -117,7 +117,7 @@
               </extension>
               <identifier>
                 <system value="https://fhir.provider.example/identifier/composition" />
-                <value value="9695E60D-3B4D-4272-A8FA-DDA91A472757" />
+                <value value="9695e60d-3b4d-4272-a8fa-dda91a472757" />
               </identifier>
               <status value="final" />
               <type>
@@ -129,19 +129,45 @@
                 <text value="Urgent supply of prescription items by community pharmacy" />
               </type>
               <subject>
-                <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                <reference value="urn:uuid:7a31e0b3-14dc-467b-83d4-21e4142102cb" />
               </subject>
               <encounter>
-                <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+                <reference value="urn:uuid:7ceafc48-fa50-4b21-8175-ca4fc744a1eb" />
               </encounter>
-              <date value="2024-12-20" />
+              <date value="2024-12-23" />
               <author>
-                <reference value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+                <reference value="urn:uuid:eb664717-d3bd-4de3-88b1-562fef7e0204" />
               </author>
               <title value="Overtown Pharmacy 118 Emergency Medication Supply Record" />
               <custodian>
-                <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+                <reference value="urn:uuid:e3cc1193-4f44-48cd-92ed-c7dfb15cdb26" />
               </custodian>
+              <section>
+                <title value="Allergies and Adverse Reactions" />
+                <code>
+                  <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="886921000000105" />
+                    <display value="Allergies and adverse reactions" />
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated" />
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <th>Causative agent</th>
+                          <td>No known drug allergy</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </text>
+                <entry>
+                  <reference value="urn:uuid:265412e4-88a9-4554-80b0-624d050c7a75" />
+                </entry>
+              </section>
               <section>
                 <title value="Contact with professionals" />
                 <code>
@@ -175,7 +201,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <th>Clincian</th>
+                          <th>Clinician</th>
                           <td>
                             <p>Name: Mr Eric Smith</p>
                             <p>Role: Pharmacist</p>
@@ -195,7 +221,7 @@
                   </div>
                 </text>
                 <entry>
-                  <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+                  <reference value="urn:uuid:7ceafc48-fa50-4b21-8175-ca4fc744a1eb" />
                 </entry>
               </section>
               <section>
@@ -268,7 +294,7 @@
                   </div>
                 </text>
                 <entry>
-                  <reference value="urn:uuid:734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+                  <reference value="urn:uuid:734cb65a-fd52-4083-aba2-7d61cb2e64e2" />
                 </entry>
               </section>
               <section>
@@ -372,7 +398,7 @@
                   </div>
                 </text>
                 <entry>
-                  <reference value="urn:uuid:079D6416-E1A8-41FA-B203-458CAB1D082D" />
+                  <reference value="urn:uuid:079d6416-e1a8-41fa-b203-458cab1d082d" />
                 </entry>
               </section>
               <section>
@@ -433,7 +459,7 @@
                   </div>
                 </text>
                 <entry>
-                  <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                  <reference value="urn:uuid:7a31e0b3-14dc-467b-83d4-21e4142102cb" />
                 </entry>
               </section>
               <section>
@@ -486,16 +512,16 @@
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+          <fullUrl value="urn:uuid:7ceafc48-fa50-4b21-8175-ca4fc744a1eb" />
           <resource>
             <Encounter>
-              <id value="7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+              <id value="7ceafc48-fa50-4b21-8175-ca4fc744a1eb" />
               <meta>
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Encounter-1" />
               </meta>
               <status value="finished" />
               <subject>
-                <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                <reference value="urn:uuid:7a31e0b3-14dc-467b-83d4-21e4142102cb" />
                 <display value="SMITH, William (Mr)" />
               </subject>
               <participant>
@@ -507,25 +533,25 @@
                   </coding>
                 </type>
                 <individual>
-                  <reference value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+                  <reference value="urn:uuid:eb664717-d3bd-4de3-88b1-562fef7e0204" />
                   <display value="SMITH, Eric (Mr)" />
                 </individual>
               </participant>
               <period>
-                <start value="2024-12-20" />
+                <start value="2024-12-23" />
               </period>
               <serviceProvider>
-                <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+                <reference value="urn:uuid:e3cc1193-4f44-48cd-92ed-c7dfb15cdb26" />
                 <display value="Overtown Pharmacy" />
               </serviceProvider>
             </Encounter>
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+          <fullUrl value="urn:uuid:e3cc1193-4f44-48cd-92ed-c7dfb15cdb26" />
           <resource>
             <Organization>
-              <id value="E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+              <id value="e3cc1193-4f44-48cd-92ed-c7dfb15cdb26" />
               <meta>
                 <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
               </meta>
@@ -548,10 +574,10 @@
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+          <fullUrl value="urn:uuid:734cb65a-fd52-4083-aba2-7d61cb2e64e2" />
           <resource>
             <Organization>
-              <id value="734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+              <id value="734cb65a-fd52-4083-aba2-7d61cb2e64e2" />
               <meta>
                 <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
               </meta>
@@ -570,10 +596,10 @@
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+          <fullUrl value="urn:uuid:7a31e0b3-14dc-467b-83d4-21e4142102cb" />
           <resource>
             <Patient>
-              <id value="7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+              <id value="7a31e0b3-14dc-467b-83d4-21e4142102cb" />
               <meta>
                 <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
               </meta>
@@ -642,19 +668,19 @@
                 <gender value="female" />
               </contact>
               <generalPractitioner>
-                <reference value="urn:uuid:852F593D-D943-40CA-B1F2-402CC6D1971C" />
+                <reference value="urn:uuid:852f593d-d943-40ca-b1f2-402cc6d1971c" />
               </generalPractitioner>
               <managingOrganization>
-                <reference value="urn:uuid:734CB65A-FD52-4083-ABA2-7D61CB2E64E2" />
+                <reference value="urn:uuid:734cb65a-fd52-4083-aba2-7d61cb2e64e2" />
               </managingOrganization>
             </Patient>
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:852F593D-D943-40CA-B1F2-402CC6D1971C" />
+          <fullUrl value="urn:uuid:852f593d-d943-40ca-b1f2-402cc6d1971c" />
           <resource>
             <Practitioner>
-              <id value="852F593D-D943-40CA-B1F2-402CC6D1971C" />
+              <id value="852f593d-d943-40ca-b1f2-402cc6d1971c" />
               <meta>
                 <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" />
               </meta>
@@ -677,10 +703,10 @@
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+          <fullUrl value="urn:uuid:eb664717-d3bd-4de3-88b1-562fef7e0204" />
           <resource>
             <Practitioner>
-              <id value="EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+              <id value="eb664717-d3bd-4de3-88b1-562fef7e0204" />
               <meta>
                 <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" />
               </meta>
@@ -703,16 +729,16 @@
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:079D6416-E1A8-41FA-B203-458CAB1D082D" />
+          <fullUrl value="urn:uuid:079d6416-e1a8-41fa-b203-458cab1d082d" />
           <resource>
             <List>
-              <id value="079D6416-E1A8-41FA-B203-458CAB1D082D" />
+              <id value="079d6416-e1a8-41fa-b203-458cab1d082d" />
               <meta>
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-MedicationDispense-List-1" />
               </meta>
               <identifier>
                 <system value="https://tools.ietf.org/html/rfc4122" />
-                <value value="079D6416-E1A8-41FA-B203-458CAB1D082D" />
+                <value value="079d6416-e1a8-41fa-b203-458cab1d082d" />
               </identifier>
               <status value="current" />
               <mode value="snapshot" />
@@ -724,51 +750,51 @@
                 </coding>
               </code>
               <subject>
-                <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                <reference value="urn:uuid:7a31e0b3-14dc-467b-83d4-21e4142102cb" />
                 <display value="SMITH, William (Mr)" />
               </subject>
               <encounter>
-                <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+                <reference value="urn:uuid:7ceafc48-fa50-4b21-8175-ca4fc744a1eb" />
               </encounter>
               <date value="2024-12-13" />
               <entry>
                 <item>
-                  <reference value="urn:uuid:3B98AAC2-9D61-449A-8E96-027395B3B711" />
+                  <reference value="urn:uuid:3b98aac2-9d61-449a-8e96-027395b3b711" />
                 </item>
               </entry>
               <entry>
                 <item>
-                  <reference value="urn:uuid:79A649A5-27A6-4019-B621-B07BCA02B38B" />
+                  <reference value="urn:uuid:79a649a5-27a6-4019-b621-b07bca02b38b" />
                 </item>
               </entry>
             </List>
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:3B98AAC2-9D61-449A-8E96-027395B3B711" />
+          <fullUrl value="urn:uuid:3b98aac2-9d61-449a-8e96-027395b3b711" />
           <resource>
             <MedicationDispense>
-              <id value="3B98AAC2-9D61-449A-8E96-027395B3B711" />
+              <id value="3b98aac2-9d61-449a-8e96-027395b3b711" />
               <meta>
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-MedicationDispense-1" />
               </meta>
               <status value="completed" />
               <medicationReference>
-                <reference value="urn:uuid:8691DCAC-2F00-48A9-8ECE-6FC3F942A374" />
+                <reference value="urn:uuid:8691dcac-2f00-48a9-8ece-6fc3f942a374" />
               </medicationReference>
               <subject>
-                <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                <reference value="urn:uuid:7a31e0b3-14dc-467b-83d4-21e4142102cb" />
                 <display value="SMITH, William (Mr)" />
               </subject>
               <context>
-                <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+                <reference value="urn:uuid:7ceafc48-fa50-4b21-8175-ca4fc744a1eb" />
               </context>
               <performer>
                 <actor>
-                  <reference value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+                  <reference value="urn:uuid:eb664717-d3bd-4de3-88b1-562fef7e0204" />
                 </actor>
                 <onBehalfOf>
-                  <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+                  <reference value="urn:uuid:e3cc1193-4f44-48cd-92ed-c7dfb15cdb26" />
                 </onBehalfOf>
               </performer>
               <type>
@@ -802,30 +828,30 @@
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:79A649A5-27A6-4019-B621-B07BCA02B38B" />
+          <fullUrl value="urn:uuid:79a649a5-27a6-4019-b621-b07bca02b38b" />
           <resource>
             <MedicationDispense>
-              <id value="79A649A5-27A6-4019-B621-B07BCA02B38B" />
+              <id value="79a649a5-27a6-4019-b621-b07bca02b38b" />
               <meta>
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-MedicationDispense-1" />
               </meta>
               <status value="completed" />
               <medicationReference>
-                <reference value="urn:uuid:FE01CC83-847E-4D13-B13C-D6DC62C79DDA" />
+                <reference value="urn:uuid:fe01cc83-847e-4d13-b13c-d6dc62c79dda" />
               </medicationReference>
               <subject>
-                <reference value="urn:uuid:7A31E0B3-14DC-467B-83D4-21E4142102CB" />
+                <reference value="urn:uuid:7a31e0b3-14dc-467b-83d4-21e4142102cb" />
                 <display value="SMITH, William (Mr)" />
               </subject>
               <context>
-                <reference value="urn:uuid:7CEAFC48-FA50-4B21-8175-CA4FC744A1EB" />
+                <reference value="urn:uuid:7ceafc48-fa50-4b21-8175-ca4fc744a1eb" />
               </context>
               <performer>
                 <actor>
-                  <reference value="urn:uuid:EB664717-D3BD-4DE3-88B1-562FEF7E0204" />
+                  <reference value="urn:uuid:eb664717-d3bd-4de3-88b1-562fef7e0204" />
                 </actor>
                 <onBehalfOf>
-                  <reference value="urn:uuid:E3CC1193-4F44-48CD-92ED-C7DFB15CDB26" />
+                  <reference value="urn:uuid:e3cc1193-4f44-48cd-92ed-c7dfb15cdb26" />
                 </onBehalfOf>
               </performer>
               <type>
@@ -859,10 +885,10 @@
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:8691DCAC-2F00-48A9-8ECE-6FC3F942A374" />
+          <fullUrl value="urn:uuid:8691dcac-2f00-48a9-8ece-6fc3f942a374" />
           <resource>
             <Medication>
-              <id value="8691DCAC-2F00-48A9-8ECE-6FC3F942A374" />
+              <id value="8691dcac-2f00-48a9-8ece-6fc3f942a374" />
               <meta>
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Medication-1" />
               </meta>
@@ -878,10 +904,10 @@
           </resource>
         </entry>
         <entry>
-          <fullUrl value="urn:uuid:FE01CC83-847E-4D13-B13C-D6DC62C79DDA" />
+          <fullUrl value="urn:uuid:fe01cc83-847e-4d13-b13c-d6dc62c79dda" />
           <resource>
             <Medication>
-              <id value="FE01CC83-847E-4D13-B13C-D6DC62C79DDA" />
+              <id value="fe01cc83-847e-4d13-b13c-d6dc62c79dda" />
               <meta>
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Medication-1" />
               </meta>
@@ -894,6 +920,76 @@
               </code>
               <status value="active" />
             </Medication>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:265412e4-88a9-4554-80b0-624d050c7a75" />
+          <resource>
+            <List>
+              <id value="265412e4-88a9-4554-80b0-624d050c7a75" />
+              <meta>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Allergy-List-1" />
+              </meta>
+              <identifier>
+                <system value="https://tools.ietf.org/html/rfc4122" />
+                <value value="265412e4-88a9-4554-80b0-624d050c7a75" />
+              </identifier>
+              <status value="current" />
+              <mode value="snapshot" />
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="886921000000105" />
+                  <display value="Allergies and adverse reactions" />
+                </coding>
+              </code>
+              <subject>
+                <reference value="urn:uuid:7a31e0b3-14dc-467b-83d4-21e4142102cb" />
+                <display value="SMITH, William" />
+              </subject>
+              <encounter>
+                <reference value="urn:uuid:7ceafc48-fa50-4b21-8175-ca4fc744a1eb" />
+              </encounter>
+              <source>
+                <reference value="urn:uuid:eb664717-d3bd-4de3-88b1-562fef7e0204" />
+                <display value="SMITH, Eric" />
+              </source>
+              <entry>
+                <item>
+                  <reference value="urn:uuid:20a091ce-3b5d-419c-8987-bd731914664b" />
+                </item>
+              </entry>
+            </List>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:20a091ce-3b5d-419c-8987-bd731914664b" />
+          <resource>
+            <AllergyIntolerance>
+              <id value="20a091ce-3b5d-419c-8987-bd731914664b" />
+              <meta>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-AllergyIntolerance-1" />
+              </meta>
+              <identifier>
+                <system value="https://tools.ietf.org/html/rfc4122" />
+                <value value="20a091ce-3b5d-419c-8987-bd731914664b" />
+              </identifier>
+              <clinicalStatus value="active" />
+              <verificationStatus value="unconfirmed" />
+              <category value="medication" />
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="409137002" />
+                  <display value="No known drug allergy" />
+                </coding>
+              </code>
+              <patient>
+                <reference value="urn:uuid:7a31e0b3-14dc-467b-83d4-21e4142102cb" />
+                <display value="SMITH, William" />
+              </patient>
+              <assertedDate value="2024-12-13" />
+            </AllergyIntolerance>
           </resource>
         </entry>
       </Bundle>
