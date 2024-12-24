@@ -6,7 +6,7 @@ To know known/suspected disease including status and traits to support testing a
 Further details which may support testing and interpretation including the family history of a disease.
 
 ### Notes
-Mapped to Condition and Observation resources linked to the patient. The primary condition, being tested for SHOULD be referenced via ServiceRequest.reasonReference, additional relevant conditions SHOULD be referenced via ServiceRequest.supportingInfo.
+Mapped to Condition and Observation resources linked to the patient. The primary condition, being tested for SHOULD be referenced via ServiceRequest.reasonReference, additional relevant conditions SHOULD be referenced via ServiceRequest.supportingInfo. SNOMED CT is preferred for Condition.code, though Genomic Test Directory codes MAY be used, where a SNOMED CT concept cannot be found, until the Test Directory is aligned to SNOMED CT.
 
 ### Mapping
 | Source Data item | Target FHIR Element | HL7v2.5.1 Mapping | Description 
