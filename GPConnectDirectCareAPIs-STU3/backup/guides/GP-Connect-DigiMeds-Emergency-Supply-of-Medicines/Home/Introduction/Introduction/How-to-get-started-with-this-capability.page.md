@@ -2,11 +2,11 @@
 
 The enablement team can help get you started by guiding you in the following:
 
-##### 1. Confirming the GP Connect - Vaccinations (ITK3) capability fulfils the use case requirements
+##### 1. Confirming the GP Connect - Emergency supply of medicines capability fulfils the use case requirements
 Read through this specification to ensure that it fulfils the requirements for your use case, and that the sending or receiving system(s) can meet the data requirements - for example, having the information required to populate the FHIR resources as described in this specification.
 
-##### 2. Submit your use case for the GP Connect - Vaccinations (ITK3) capability
-Contact [gpconnect@nhs.net](mailto:gpconnect@nhs.net) about your use case for the GP Connect - Vaccinations (ITK3) capability.
+##### 2. Submit your use case for the GP Connect - Emergency supply of medicines (ITK3) capability
+Contact [gpconnect@nhs.net](mailto:gpconnect@nhs.net) about your use case for the GP Connect - Emergency supply of medicines (ITK3) capability.
 
 ##### 3. Getting your use case approved
 Use cases are approved on the basis that development is started for the capability approved within six months. If this date is missed, then a review of the case will be required.

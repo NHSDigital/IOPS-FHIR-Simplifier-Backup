@@ -1,3 +1,5 @@
+- name: Index
+  filename: Index.page.md
 - name: 'Profile: CareConnect-Organization-1'
   filename: Profile-CareConnect-Organization-1.page.md
 - name: id

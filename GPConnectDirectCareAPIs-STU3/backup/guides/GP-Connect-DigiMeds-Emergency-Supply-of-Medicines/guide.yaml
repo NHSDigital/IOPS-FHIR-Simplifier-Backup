@@ -1,6 +1,6 @@
-title: GP Connect / DigiMeds - Emergency Supply of Medicines
-description: GP Connect Vaccinations (ITK3) formerly known as Digital medicines (Digimeds) Vaccinations
-version: 1.3.0-private-beta
+title: GP Connect - Emergency Supply of Medications (ITK3)
+description: GP Connect Vaccinations (ITK3) formerly known as Digital medicines (DigiMeds) Emergency supply of Medications
+version: 1.3.0-public-beta
 style-root: project
 style-name: NHSDigital
 numbered-headings: false

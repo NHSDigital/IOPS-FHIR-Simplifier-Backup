@@ -11,6 +11,6 @@
 - name: Examples
   filename: Examples
 - name: Downloads
-  filename: Downloads
+  filename: Downloads.page.md
 - name: Help and support
   filename: Help-and-Support
