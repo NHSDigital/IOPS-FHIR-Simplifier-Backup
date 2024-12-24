@@ -1,5 +1,9 @@
 ## {{page-title}}
 
+<div class="nhsd-a-box nhsd-a-box--bg-red nhsd-!t-margin-bottom-6 nhsd-t-body">
+    <b>WARNING</b>: The code 163541000000107 | Dispensed medication is not valid in the "Care Connect List Code" value set and will result in a FHIR validation error.
+</div>
+
 ```xml
 <entry>
     <fullUrl value="urn:uuid:4bc7faea-5974-407a-b658-d6ed1d4c9187"/>

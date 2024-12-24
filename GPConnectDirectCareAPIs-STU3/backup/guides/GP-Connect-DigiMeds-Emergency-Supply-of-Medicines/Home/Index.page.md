@@ -1,18 +1,31 @@
-# Welcome
+# {{page-title}}
 
-Welcome to the GP Connect - Emergency Supply of Medicines (ITK3) Implementation Guide.
+### About This Guide:
 
-Use the dropdown menus at the top of the screen to navigate around the site.
+This guide supports the implementation of ITK3 for the Community Pharmacy Consultation Service (CPCS): Emergency Supply of Medications.
 
-If you're brand new here, we recommended you read the {{pagelink:Home/Introduction/Introduction, hint:Introduction}}.
+### Navigation:
+
+Use the dropdown menus above to navigate the guide.
+
+### Getting Started:
+
+New users should begin with the {{pagelink:Home/Introduction/Introduction/Index.page.md}} section.
+
+### Scope:
+
+This specification is specifically for emergency supply requests from Community Pharmacy.  For other message types within Community Pharmacy, see the [GP Connect: Update Record](https://simplifier.net/guide/gp-connect---update-record--itk3----version-history?version=current) guide.
+
+### Previous versions
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <b>Important</b>: This specification only supports the Community Pharmacy Consultation Service: Emergency Supply of Medicines
+    <b>Important</b>
+    <ul>
+        <li>The retirement status of the emergency supply of medicines use-case has been removed.</li>
+        <li>This version of the specification has been migrated from the NHS developer network. It <strong>does not</strong> change the guidance in the previous specification; however, it has been designed to make it clearer as to what data items are supported, and how they currently flow between community pharmacy and GP IT systems.
 </div>
 
-GP Connect: Update Record is used to support all other Community Pharmacy post-event messages to the patient's registered General Practitioner Practice.
-
-
+A complete list of previous versions can be found [here](https://simplifier.net/guide/gp-connect-emergency-supply-of-medications-itk3-version-history/home/index.page.md?version=current).
 
 ---
 
