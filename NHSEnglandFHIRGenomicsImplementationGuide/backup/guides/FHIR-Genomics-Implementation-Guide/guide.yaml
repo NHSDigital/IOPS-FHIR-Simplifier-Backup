@@ -1,5 +1,6 @@
 title: FHIR Genomics Implementation Guide
 description: Implementation Guide for the NHS Genomics Medicine Service
-version: 0.3.0
+version: 0.4.3
 style-root: project
 style-name: ukcore
+numbered-headings: false

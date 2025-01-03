@@ -1,5 +1,17 @@
 ## {{page-title}}
 
+### 0.4.3
+
+Date released: 03/01/2025
+
+[GitHub Release/Changelog](https://github.com/NHSDigital/NHSDigital-FHIR-Genomics-ImplementationGuide/releases/tag/v0.4.3)
+
+- Updates to Specimen ConceptMaps
+- Updated dependency to latest UK Core package to pick up changes to Sample State CodeSystem
+- Removed incorrect Observations for Risk of Infection (captured under Specimen) and Disease Status (replaced with Condition)
+- Correction to targeting of UK Core profiles
+- Addition of Patient examples for no NHS number and where demographics are recorded on PDS
+
 ### 0.4.2
 
 Date released: 01/10/2024

@@ -1,0 +1,39 @@
+{
+  "resourceType": "Condition",
+  "id": "Condition-MonogenicHearingLoss-Example",
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "inactive",
+        "display": "inactive"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "provisional",
+        "display": "Provisional"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "R67.2",
+        "display": "Monogenic hearing loss",
+        "version": "7"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-MeirLieberman-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  }
+}

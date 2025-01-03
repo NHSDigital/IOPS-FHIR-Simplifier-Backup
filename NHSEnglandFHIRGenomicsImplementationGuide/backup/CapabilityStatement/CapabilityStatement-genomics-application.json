@@ -1442,7 +1442,7 @@
         },
         {
           "type": "RelatedPerson",
-          "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-RelatedPerson-Genomics",
+          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
           "documentation": "Endpoints for interacting with RelatedPerson resources",
           "interaction": [
             {
@@ -1839,7 +1839,7 @@
         },
         {
           "type": "Composition",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Composition",
+          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition",
           "documentation": "For validation of Composition resources and allowing searches via chaining from the Bundle endpoint",
           "interaction": [
             {

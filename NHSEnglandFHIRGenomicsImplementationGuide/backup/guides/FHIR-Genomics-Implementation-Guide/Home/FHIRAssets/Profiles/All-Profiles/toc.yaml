@@ -1,27 +1,27 @@
 - name: Index
   filename: Index.page.md
-- name: Genomics-AuditEvent
-  filename: Genomics-AuditEvent.page.md
-- name: Genomics-BodyStructure
-  filename: Genomics-BodyStructure.page.md
-- name: Genomics-Bundle
-  filename: Genomics-Bundle.page.md
+- name: AuditEvent
+  filename: AuditEvent.page.md
+- name: BodyStructure
+  filename: BodyStructure.page.md
+- name: Bundle
+  filename: Bundle.page.md
 - name: UKCore-Composition
   filename: UKCore-Composition.page.md
 - name: UKCore-Condition
   filename: UKCore-Condition.page.md
-- name: Genomics-Consent
-  filename: Genomics-Consent.page.md
+- name: Consent
+  filename: Consent.page.md
 - name: UKCore-DiagnosticReport
   filename: UKCore-DiagnosticReport.page.md
-- name: Genomics-DocumentReference
-  filename: Genomics-DocumentReference.page.md
+- name: DocumentReference
+  filename: DocumentReference.page.md
 - name: UKCore-FamilyMemberHistory
   filename: UKCore-FamilyMemberHistory.page.md
 - name: UKCore-Observation
   filename: UKCore-Observation.page.md
-- name: Genomics-OperationOutcome
-  filename: Genomics-OperationOutcome.page.md
+- name: OperationOutcome
+  filename: OperationOutcome.page.md
 - name: UKCore-Organization
   filename: UKCore-Organization.page.md
 - name: UKCore-Patient
@@ -32,21 +32,21 @@
   filename: UKCore-PractitionerRole.page.md
 - name: UKCore-Procedure
   filename: UKCore-Procedure.page.md
-- name: Genomics-Provenance
-  filename: Genomics-Provenance.page.md
-- name: Genomics-Questionnaire
-  filename: Genomics-Questionnaire.page.md
-- name: Genomics-QuestionnaireResponse
-  filename: Genomics-QuestionnaireResponse.page.md
-- name: Genomics-RelatedPerson
-  filename: Genomics-RelatedPerson.page.md
-- name: Genomics-ServiceRequest
-  filename: Genomics-ServiceRequest.page.md
-- name: Genomics-Specimen
-  filename: Genomics-Specimen.page.md
-- name: Genomics-Subscription
-  filename: Genomics-Subscription.page.md
-- name: Genomics-ResearchSubject
-  filename: Genomics-ResearchSubject.page.md
-- name: Genomics-Task
-  filename: Genomics-Task.page.md
+- name: Provenance
+  filename: Provenance.page.md
+- name: Questionnaire
+  filename: Questionnaire.page.md
+- name: QuestionnaireResponse
+  filename: QuestionnaireResponse.page.md
+- name: UKCore-RelatedPerson
+  filename: UKCore-RelatedPerson.page.md
+- name: ResearchSubject
+  filename: ResearchSubject.page.md
+- name: UKCore-ServiceRequest
+  filename: UKCore-ServiceRequest.page.md
+- name: UKCore-Specimen
+  filename: UKCore-Specimen.page.md
+- name: Subscription
+  filename: Subscription.page.md
+- name: Task
+  filename: Task.page.md

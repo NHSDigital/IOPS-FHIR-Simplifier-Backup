@@ -32,6 +32,7 @@ conditions SHOULD be referenced via ServiceRequest.supportingInfo.
     <ul>
         <li> {{pagelink:Condition-PancreaticCancer}} </li>
         <li> {{pagelink:Condition-HearingLoss-Example}} </li>
+        <li> {{pagelink:Condition-MonogenicHearingLoss-Example}} </li>
         <li> {{pagelink:Condition-BreastCancer-Example}} </li>
         <li> {{pagelink:Condition-Hepatosplenomegaly-Example}} </li>
         <li> {{pagelink:Condition-LungTumor-Example}} </li>
