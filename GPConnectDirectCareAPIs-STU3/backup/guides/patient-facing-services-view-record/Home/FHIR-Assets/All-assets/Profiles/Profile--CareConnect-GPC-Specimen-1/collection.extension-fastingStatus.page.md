@@ -21,11 +21,11 @@ Where this is indicated in the incoming EDIFACT report it will be indicated with
         <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-FastingStatus-1" />
         <valueCodeableConcept>
             <coding>
-                <display value="The patient indicated they did not fast prior to the procedure." />
-                <code value="NF" />
+                <display value="Patient was fasting prior to the procedure." />
+                <code value="F" />
                 <system value="http://terminology.hl7.org/ValueSet/v2-0916" />
             </coding>
-            <text value="The patient indicated they did not fast prior to the procedure." />
+            <text value="Patient was fasting prior to the procedure." />
         </valueCodeableConcept>
     </extension>
 </collection>
