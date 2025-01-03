@@ -65,11 +65,6 @@ For new observations which invalidate previous observations made about a patient
                 </tr>
                  <tr>
                     <td>
-                    {{pagelink:Observation-DiseaseStatus-Example}}
-                    </td>
-                </tr>
-                 <tr>
-                    <td>
                     {{pagelink:Observation-DutchLipidScore-Example}}
                     </td>
                 </tr>

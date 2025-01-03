@@ -83,7 +83,7 @@
       "reference": "Observation/Observation-GenomicEthnicity-Example"
     },
     {
-      "reference": "Observation/Observation-DiseaseStatus-Example"
+      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
     },
     {
       "reference": "Observation/Observation-NoPregnancy-Example"

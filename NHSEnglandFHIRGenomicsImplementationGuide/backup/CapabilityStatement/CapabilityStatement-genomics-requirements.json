@@ -41,7 +41,7 @@
         },
         {
           "type": "Composition",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Composition"
+          "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition"
         },
         {
           "type": "DocumentReference",

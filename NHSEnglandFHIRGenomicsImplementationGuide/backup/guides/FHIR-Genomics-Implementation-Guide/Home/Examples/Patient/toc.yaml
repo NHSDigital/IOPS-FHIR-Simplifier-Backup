@@ -20,6 +20,10 @@
   filename: Patient-LindsaySorrellPDS-Example.page.md
 - name: Patient-LindsaySorrell-Example
   filename: Patient-LindsaySorrell-Example.page.md
+- name: Patient-LindsaySorrellNHSNumberUnavailable-Example
+  filename: Patient-LindsaySorrellNHSNumberUnavailable-Example.page.md
+- name: Patient-LindsaySorrellPDSStripped-Example
+  filename: Patient-LindsaySorrellPDSStripped-Example.page.md
 - name: Patient-MeirLieberman-Example
   filename: Patient-MeirLieberman-Example.page.md
 - name: Patient-PatrickSammy-Example

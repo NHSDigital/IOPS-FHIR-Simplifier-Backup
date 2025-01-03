@@ -6,6 +6,8 @@
   filename: Condition-HearingLoss-Example.page.md
 - name: Condition-Hepatosplenomegaly-Example
   filename: Condition-Hepatosplenomegaly-Example.page.md
+- name: Condition-MonogenicHearingLoss-Example
+  filename: Condition-MonogenicHearingLoss-Example.page.md
 - name: Condition-LungTumor-Example
   filename: Condition-LungTumor-Example.page.md
 - name: Condition-PancreaticCancer

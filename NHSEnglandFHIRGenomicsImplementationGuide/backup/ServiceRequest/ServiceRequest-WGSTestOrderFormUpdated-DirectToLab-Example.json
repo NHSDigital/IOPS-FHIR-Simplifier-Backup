@@ -81,7 +81,7 @@
       "reference": "Observation/Observation-NoPregnancy-Example"
     },
     {
-      "reference": "Observation/Observation-DiseaseStatus-Example"
+      "reference": "Condition/Condition-MonogenicHearingLoss-Example"
     },
     {
       "reference": "Observation/Observation-DiseasePenetrance-Example"

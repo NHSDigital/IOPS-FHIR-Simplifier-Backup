@@ -80,6 +80,16 @@ Alternatively, systems MAY opt to include pointers to the Patient resource on th
                 </tr>
                 <tr>
                     <td>
+                    {{pagelink:Patient-LindsaySorrellNHSNumberUnavailable-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    {{pagelink:Patient-LindsaySorrellPDSStripped-Example}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     {{pagelink:Patient-MeirLieberman-Example}}
                     </td>
                 </tr>
