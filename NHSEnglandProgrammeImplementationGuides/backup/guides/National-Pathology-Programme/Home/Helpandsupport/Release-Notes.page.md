@@ -5,7 +5,7 @@ topic: ReleaseNotes
 
 ### v0.1.9 (TBC)
 
-* Added a {{pagelink:FHIRAssetsR4CapabilityStatements}} page and a {{pagelink:FHIRAssetsR4MessageDefinitions}} page (both under the **FHIR Assets** menu bar item).
+* Added {{pagelink:FHIRAssetsR4CapabilityStatements}} and {{pagelink:FHIRAssetsR4MessageDefinitions}} pages (both under the **FHIR Assets** menu bar item).
 ---
 
 ### v0.1.8 (30/08/2024)
