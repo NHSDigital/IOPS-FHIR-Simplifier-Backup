@@ -1,15 +1,14 @@
 {
-  "name": "uk.nhsdigital.medicines.r4.test",
-  "version": "2.8.21-prerelease",
-  "description": "Electronic Prescription Service",
+  "name": "uk.nhsdigital.medicines.r4",
+  "description": "NHS Digital FHIR Medicines Implementation Guide",
   "author": "nhsdigital",
   "fhirVersions": [
     "4.0.1"
   ],
-  "jurisdiction": "urn:iso:std:iso:3166:-2:GB-ENG",
   "dependencies": {
-    "uk.nhsdigital.r4.test": "2.8.21-prerelease",
     "hl7.fhir.r4.core": "4.0.1",
-    "fhir.r4.ukcore.stu3.currentbuild": "0.0.3-pre-release"
-  }
+    "fhir.r4.ukcore.stu3.currentbuild": "0.0.3-pre-release",
+    "uk.nhsdigital.r4.test": "2.8.19-prerelease"
+  },
+  "jurisdiction" : "urn:iso:std:iso:3166:-2:GB-ENG"
 }
