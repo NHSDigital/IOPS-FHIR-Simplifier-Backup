@@ -88,7 +88,7 @@ Patient "1" *-- "many" ServiceRequest : has
   <tr>
     <td>appointment_made</td>
     <td>1..1</td>
-    <td>UKCoreAppoitment.status</td>
+    <td>UKCoreAppointment.status</td>
     <td>Type: Code</td>
 </tr>
 <tr>
@@ -159,6 +159,12 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>0..1</td>
     <td>UKCoreProcedure.performedDateTime</td>
     <td>Type: dateTime</td>
+</tr>
+<tr>
+    <td>screening_programme_name</td>
+    <td>0..1</td>
+    <td>UKCoreProcedure.code</td>
+    <td>Type: CodeableConcept</td>
 </tr>
 </tbody>
 </table>
