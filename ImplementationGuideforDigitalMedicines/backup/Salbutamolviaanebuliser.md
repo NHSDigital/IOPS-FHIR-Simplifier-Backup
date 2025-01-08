@@ -8,31 +8,31 @@
 <div>
     <ul class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active">
-        <a href="#xml-8" aria-controls="xml" role="tab" data-toggle="tab">XML</a>
+        <a href="#xml-8s" aria-controls="xml" role="tab" data-toggle="tab">XML</a>
       </li>
       <li role="presentation">
-        <a href="#json-8" aria-controls="json" role="tab" data-toggle="tab">JSON</a>
+        <a href="#json-8s" aria-controls="json" role="tab" data-toggle="tab">JSON</a>
       </li>
         <li role="presentation">
-        <a href="#table-8" aria-controls="table" role="tab" data-toggle="tab">Table</a>
+        <a href="#table-8s" aria-controls="table" role="tab" data-toggle="tab">Table</a>
       </li>
       <li role="presentation">
-        <a href="#tree-8" aria-controls="tree" role="tab" data-toggle="tab">Tree</a>
+        <a href="#tree-8s" aria-controls="tree" role="tab" data-toggle="tab">Tree</a>
       </li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content snippet">
-    <div role="tabpanel" class="tab-pane active" id="xml-8">
+    <div role="tabpanel" class="tab-pane active" id="xml-8s">
       {{xml:example-dosage-nebuliser}}
     </div>
-    <div role="tabpanel" class="tab-pane" id="json-8">
+    <div role="tabpanel" class="tab-pane" id="json-8s">
       {{json:example-dosage-nebuliser}}
     </div>
-    <div role="tabpanel" class="tab-pane" id="table-8">
+    <div role="tabpanel" class="tab-pane" id="table-8s">
       {{table:example-dosage-nebuliser}}
     </div>
-    <div role="tabpanel" class="tab-pane" id="tree-8">
+    <div role="tabpanel" class="tab-pane" id="tree-8s">
       {{tree:example-dosage-nebuliser}}
     </div>
   </div>

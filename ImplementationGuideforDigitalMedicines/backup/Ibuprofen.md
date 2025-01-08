@@ -56,31 +56,31 @@ Example on-screen presentation:
 <div>
     <ul class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active">
-        <a href="#xml-36" aria-controls="xml" role="tab" data-toggle="tab">XML</a>
+        <a href="#xml-36a" aria-controls="xml" role="tab" data-toggle="tab">XML</a>
       </li>
       <li role="presentation">
-        <a href="#json-36" aria-controls="json" role="tab" data-toggle="tab">JSON</a>
+        <a href="#json-36a" aria-controls="json" role="tab" data-toggle="tab">JSON</a>
       </li>
         <li role="presentation">
-        <a href="#table-36" aria-controls="table" role="tab" data-toggle="tab">Table</a>
+        <a href="#table-36a" aria-controls="table" role="tab" data-toggle="tab">Table</a>
       </li>
       <li role="presentation">
-        <a href="#tree-36" aria-controls="tree" role="tab" data-toggle="tab">Tree</a>
+        <a href="#tree-36a" aria-controls="tree" role="tab" data-toggle="tab">Tree</a>
       </li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content snippet">
-    <div role="tabpanel" class="tab-pane active" id="xml-36">
+    <div role="tabpanel" class="tab-pane active" id="xml-36a">
       {{xml:example-dosage-ibuprofen-vtm}}
     </div>
-    <div role="tabpanel" class="tab-pane" id="json-36">
+    <div role="tabpanel" class="tab-pane" id="json-36a">
       {{json:example-dosage-ibuprofen-vtm}}
     </div>
-    <div role="tabpanel" class="tab-pane" id="table-36">
+    <div role="tabpanel" class="tab-pane" id="table-36a">
       {{table:example-dosage-ibuprofen-vtm}}
     </div>
-    <div role="tabpanel" class="tab-pane" id="tree-36">
+    <div role="tabpanel" class="tab-pane" id="tree-36a">
       {{tree:example-dosage-ibuprofen-vtm}}
     </div>
   </div>
