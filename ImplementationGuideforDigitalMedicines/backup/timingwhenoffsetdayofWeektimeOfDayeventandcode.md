@@ -49,6 +49,19 @@ The offset is an unsigned integer value so different codes within the when value
 </timing>
 ```
 
+Multiple `when` statements can be used, such as:
+
+**Event occurs at or after a meal**
+
+```xml
+<timing>
+    <repeat>
+        <when value="C"/>
+        <when value="PC"/>
+    </repeat>
+</timing>
+```
+
 <!--
 to add;
 something about assumpton of 3 meals. day

@@ -8,31 +8,31 @@
 <div>
     <ul class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active">
-        <a href="#xml-1" aria-controls="xml" role="tab" data-toggle="tab">XML</a>
+        <a href="#xml-1m" aria-controls="xml" role="tab" data-toggle="tab">XML</a>
       </li>
       <li role="presentation">
-        <a href="#json-1" aria-controls="json" role="tab" data-toggle="tab">JSON</a>
+        <a href="#json-1m" aria-controls="json" role="tab" data-toggle="tab">JSON</a>
       </li>
         <li role="presentation">
-        <a href="#table-1" aria-controls="table" role="tab" data-toggle="tab">Table</a>
+        <a href="#table-1m" aria-controls="table" role="tab" data-toggle="tab">Table</a>
       </li>
       <li role="presentation">
-        <a href="#tree-1" aria-controls="tree" role="tab" data-toggle="tab">Tree</a>
+        <a href="#tree-1m" aria-controls="tree" role="tab" data-toggle="tab">Tree</a>
       </li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content snippet">
-    <div role="tabpanel" class="tab-pane active" id="xml-1">
+    <div role="tabpanel" class="tab-pane active" id="xml-1m">
       {{xml:example-dosage-microgynon2}}
     </div>
-    <div role="tabpanel" class="tab-pane" id="json-1">
+    <div role="tabpanel" class="tab-pane" id="json-1m">
       {{json:example-dosage-microgynon2}}
     </div>
-    <div role="tabpanel" class="tab-pane" id="table-1">
+    <div role="tabpanel" class="tab-pane" id="table-1m">
       {{table:example-dosage-microgynon2}}
     </div>
-    <div role="tabpanel" class="tab-pane" id="tree-1">
+    <div role="tabpanel" class="tab-pane" id="tree-1m">
       {{tree:example-dosage-microgynon2}}
     </div>
   </div>
