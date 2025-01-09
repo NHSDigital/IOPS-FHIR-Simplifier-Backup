@@ -38,7 +38,7 @@ If you're brand new here, we recommended you read the {{pagelink:Home/Introducti
                         <div class="nhsd-a-box nhsd-a-box--bg-blue">
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
-                                    <span class="nhsd-t-heading-s">GP Connect (Patient Facing) Get Record Implementation Guide</span>
+                                    <span class="nhsd-t-heading-s">GP Connect (Patient Facing) Access Record Implementation Guide</span>
                                     <p class="nhsd-t-body-s">Access structured and coded information from a patient's GP practice record to consume in a patient facing service.</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">

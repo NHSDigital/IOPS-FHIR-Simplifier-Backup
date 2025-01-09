@@ -1,5 +1,6 @@
-title: GP Connect (Patient Facing) Prescriptions
+title: GP Connect (Patient Facing) Prescriptions - FHIR API
 description: Implementation Guide
-version: 0.1.0-private-beta
+version: 0.1.1-private-beta
 style-root: project
 style-name: NHSDigital
+numbered-headings: false

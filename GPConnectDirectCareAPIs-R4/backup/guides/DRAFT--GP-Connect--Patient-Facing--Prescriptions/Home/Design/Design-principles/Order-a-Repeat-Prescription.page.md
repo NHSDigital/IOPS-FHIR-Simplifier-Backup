@@ -2,7 +2,7 @@
 
 This API will only allow orders for repeat prescriptions. Acute prescriptions should be handled via other methods until this functionality is supported.
 
-A patient can add supporting evidence or additional information to a reqest which ensures that the practitioner will have all relevant information upon reviewing a medication order. For example a patient can include additional details such as where they are going on holiday or if they are reaching the end of their previous prescription.
+A patient can add supporting evidence or additional information to a request which ensures that the practitioner will have all relevant information upon reviewing a medication order. For example a patient can include additional details such as where they are going on holiday or if they are reaching the end of their previous prescription.
 
 The details of the request are bundled together into MedicationRequest:
 - Status (requested, approved, rejected)

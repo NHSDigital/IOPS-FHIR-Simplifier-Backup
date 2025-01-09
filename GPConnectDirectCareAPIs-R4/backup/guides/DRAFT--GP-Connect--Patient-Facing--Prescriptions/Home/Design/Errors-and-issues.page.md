@@ -197,7 +197,7 @@
 </table>
 
 #### Operation Outcome Usage
-In the event of an error, provider systems **SHALL** respond by providing an `OperationOutcome` profiled to {{pagelink:Home/FHIR-Assets/All-Assets/Profiles/UKCore-OperationOutcome}}
+In the event of an error, provider systems **SHALL** respond by providing an `OperationOutcome` profiled to {{pagelink:Home/FHIR-Assets/All-Assets/Profiles/UKCore-OperationOutcome}}.
 
 #### Example
 ```json
