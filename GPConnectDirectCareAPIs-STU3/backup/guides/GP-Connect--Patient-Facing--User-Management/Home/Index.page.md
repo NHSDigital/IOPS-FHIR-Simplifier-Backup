@@ -19,7 +19,7 @@ If you're brand new here, we recommended you read the {{pagelink:Home/Introducti
                         <div class="nhsd-a-box nhsd-a-box--bg-blue">
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
-                                    <span class="nhsd-t-heading-s">GP Connect (Patient Facing) Get Record Implementation Guide</span>
+                                    <span class="nhsd-t-heading-s">GP Connect (Patient Facing) Access Record Implementation Guide</span>
                                     <p class="nhsd-t-body-s">Access structured and coded information from a patient's GP practice record to consume in a patient facing service.</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
@@ -34,7 +34,7 @@ If you're brand new here, we recommended you read the {{pagelink:Home/Introducti
            </div>
             <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
                 <div class="nhsd-m-card">
-                    <a href="https://simplifier.net/guide/GP-Connect-Patient-Facing-Prescription-Management/Home?version=current" class="nhsd-a-box-link " aria-label="GP Connect APIs">
+                    <a href="https://simplifier.net/guide/gp-connect--patient-facing-services--prescriptions?version=current" class="nhsd-a-box-link " aria-label="GP Connect APIs">
                         <div class="nhsd-a-box nhsd-a-box--bg-blue">
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
