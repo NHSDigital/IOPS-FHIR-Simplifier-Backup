@@ -13,5 +13,3 @@ If a Patient wishes to start at viewing their Prescriptions, a standard user jou
  This will be done the same way, using `Task` and having a `focus` that references the same `MedicationRequest` that has `intent`, the `Task` resource is then used as the requestbody for the endpoint: POST /FHIR/R4/Task/
 
  3. At this stage the patient can then track the status of the order, or send a cancellation (up until the point the request is actioned).
-
-INTERACTION DIAGRAMS TO BE COMPLETED

@@ -184,7 +184,7 @@ Where FHIR resource validation issues arise during processing of consumer reques
 Detailed diagnostic information **MUST** be supplied when erroring on the codes above.
 
 INVALID_PARAMETER would be used in the following, or similar, scenarios:
-- an invalid date/time value specified in the query parameters - for example, a date in the future for an authoredOn patamater
+- an invalid date/time value specified in the query parameters - for example, a date in the future for an authoredOn parameter
 
 INVALID_RESOURCE would be used in situations such as the following:
 - resource fails to validate against StructureDefinition (either in request body or in JSON Web Tokens (JWT) claim)

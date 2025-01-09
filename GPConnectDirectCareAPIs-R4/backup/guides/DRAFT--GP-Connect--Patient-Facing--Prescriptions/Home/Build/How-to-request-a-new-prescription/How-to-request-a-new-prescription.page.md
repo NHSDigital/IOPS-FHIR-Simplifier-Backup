@@ -4,5 +4,5 @@
 
 [//]: <> (COMMENT: ADD LINKS TO PROFILES)
 
-These are either from starting at viewing a patients Medications (`MedicationStatement`) or viewing a patients Prescriptions (`MedicationRequest`).
+These are either from starting at viewing a patient's Medications (`MedicationStatement`) or viewing a patients Prescriptions (`MedicationRequest`).
 
