@@ -8,7 +8,7 @@ The overall design of PFS is based on the Access Record: Structured (ASR) API, i
 
 ## Access Record: Structured | Patient Facing Services
 
-The Access Record Structured Patient Facing Services (PFS) View Record capability enables PFS app suppliers to request and consume a patient’s GP record in a structured and coded format that is machine-readable. The data will be returned as per the patient’s GP record access levels set by their GP practice in their clinical system. 
+The Access Record: Structured Patient Facing Services (PFS) View Record capability enables PFS app suppliers to request and consume a patient’s GP record in a structured and coded format that is machine-readable. The data will be returned as per the patient’s GP record access levels set by their GP practice in their clinical system. 
 
 The data will be made available via a standard API. Structured data allows the PFS apps to import and process the patient data in whatever way it requires to best support the patient's viewing their data on the PFS apps.
 
@@ -18,7 +18,7 @@ Additional undertaking is made by GP Connect clinicians and technical modellers 
 
 ## Scope
 
-The Access Record Structured capability will expose data for a number of clinical areas. Currently supported medical record data items are: 
+The Access Record: Structured capability will expose data for a number of clinical areas. Currently supported medical record data items are: 
 
 - <b>Allergies</b> - are observations. They contain medical record data item properties.
 - <b>Medications</b> - contain data about drugs prescribed to the patient. 
