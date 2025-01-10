@@ -19,11 +19,11 @@ Commissioning organisations for GP Connect:
 must have a clinical safety framework compliant with Information Standard: (SCCI0160: Clinical Risk Management: its Application in the Deployment and Use of Health IT Systems). 
 are responsible for assuring that deployment and implementation of consumer applications using the GP Connect APIs comply with this framework.
 
-#### Consumer & Provider Systems
+#### Consumer and Provider Systems
 Consumer and provider systems using the GP Connect API must comply with the requirements of the SCCI0129 standard, promoting and ensuring the effective application of clinical risk management by suppliers developing and maintaining health IT systems: (SCCI0129: Clinical Risk Management: its Application in the Manufacture of Health IT Systems) 
 Additionally, the GP Foundation System providers must also carry through the clinical safety requirements of the GPSoC framework into any GP Connect functionality.
 
-#### Assurance & Deployment
+#### Assurance and Deployment
 Confirmation of compliance with the clinical safety standards as above will be specified as part of the GP Connect (SCAL) against which the consumer supplier will need to assure. The SCAL is managed and administered by the NHS Live Services Team.
 
 Commissioning clinical safety approval of the consumer system forms part of the NHS Digital requirements for deployment into live operation.
@@ -40,4 +40,4 @@ Your organisation must complete the [Data Security and Protection Toolkit](https
 
 Each time a new NHS England Service is integrated, a check is made that the connecting organisation is registered and active with DSPT.
 
-All organisations that have access to NHS patient data and systems must use this Toolkit to provide assurance that they are practising good data security and that personal information is handled correctly.
+All organisations that have access to NHS patient data and systems must use this Toolkit to provide assurance that they are practising good data security, and that personal information is handled correctly.

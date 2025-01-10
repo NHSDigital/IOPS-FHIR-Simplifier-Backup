@@ -125,7 +125,7 @@ Number of days’ supply per dispense.
 
 Patients pharmacy preferences may be sourced from PDS.
 
-Patients pharmacy preferences may be overriden by an 'one-off pharmacy nomination' by populating the dispenseRequest.performer.identifier with the ODS code of the destination pharmacy. The one off ODS code can be obtained from input element of the corresponding Task resource.
+Patients pharmacy preferences may be overriden by a 'one-off pharmacy nomination' by populating the dispenseRequest.performer.identifier with the ODS code of the destination pharmacy. The one off ODS code can be obtained from input element of the corresponding Task resource.
 
 ### Example
 

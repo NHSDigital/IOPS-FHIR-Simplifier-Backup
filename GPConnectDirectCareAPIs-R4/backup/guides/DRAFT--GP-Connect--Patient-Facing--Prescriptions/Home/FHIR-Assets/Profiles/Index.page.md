@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-This API utilises multiple different FHIR UK Core resource's, dependant on the use case.
+This API utilises multiple different FHIR UK Core resources, dependent on the use case.
 
 <table data-responsive>
     <thead>
@@ -21,7 +21,7 @@ This API utilises multiple different FHIR UK Core resource's, dependant on the u
         </tr>
                 <tr>
             <td class="nhsd-t-body">{{pagelink:Home/FHIR-Assets/All-Assets/Profiles/UKCore-MedicationStatement}}</td>
-            <td class="nhsd-t-body">To display a Patient's medication, both past and present.</td>
+            <td class="nhsd-t-body">To display a patient's medication, both past and present.</td>
         </tr>
   <tr>
             <td class="nhsd-t-body">{{pagelink:Home/FHIR-Assets/All-Assets/Profiles/UKCore-PractitionerRole}}</td>

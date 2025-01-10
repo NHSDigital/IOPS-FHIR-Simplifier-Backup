@@ -10,7 +10,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>BabckboneElement</td>
+        <td>BackboneElement</td>
         <td>Required</td>
         <td>1..1</td>
       </tr>

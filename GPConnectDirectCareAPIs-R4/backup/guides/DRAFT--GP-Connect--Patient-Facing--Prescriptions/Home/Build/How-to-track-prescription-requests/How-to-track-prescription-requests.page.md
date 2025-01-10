@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-If a patient wishes to track their prescription requests this can be done easily by doing a singular call using the patients NHS Number to GET /Task?patient=`{NHS Number}`.
+If a patient wishes to track their prescription requests this can be done easily by doing a singular call using the patient's NHS Number to GET /Task?patient=`{NHS Number}`.
 
 There are extra parameters available such as date and status should these need to be refined further.
 
