@@ -146,7 +146,7 @@ https://simplifier.net/guide/uk-core-implementation-guide/Home/Guidance/Codeable
 
 <h5><ins>Further information</ins></h5>
 
-<p>This element is advised as the preferential date to be displayed via PFS. (The date and time when the specimen were drawn).</p>
+<p>This element is advised as the preferential date to be displayed via PFS. (The date and time when the specimen was drawn).</p>
 
 ---
 

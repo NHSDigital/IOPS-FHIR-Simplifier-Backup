@@ -12,9 +12,9 @@ Option 1 (using NHS login and routing requests through APIM) is fully supported 
 
 - provides central oversight and standards provided by NHS England
 - provides visibility and metrics to NHS England
-- suppliers can leverage the expertise of NHS England to aid trouble-shooting and dealing with security
-- low burden for consumers, no need to know which GP system is being called (as details are handled by NHS England)
-- low burden for GP supplier (only a single origin to be trusted), no need to be open to the world, can leverage the third party accreditation process used by NHS login
+- suppliers can leverage the expertise of NHS England to aid troubleshooting and dealing with security
+- low burden for consumers, no need-to-know which GP system is being called (as details are handled by NHS England)
+- low burden for GP supplier (only a single origin to be trusted), no need to be open to the world, can leverage the third-party accreditation process used by NHS login
 - NHS England provides the first line of defence against abuse and misuse, reducing burden on supplier to a minimum
 
 Options 2 and 3 are currently out of scope of this guide and are listed to highlight how consumers and GP supplier systems can interact without the need for NHS England to be involved. Providing alternative mechanisms to access APIs helps to encourage experimentation and innovation.

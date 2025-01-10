@@ -91,4 +91,4 @@ The 'assertedDate' element is the date the symptom became classified as being a 
 
 <h5><ins>Further information</ins></h5>
 
-<p>The elemet is a reference to the profile for the practitioner who recorded the Problem. Displaying the element alone will have no meaning to the patient. This is not advised and may cause more confusion than benefit to the user. If a clear business case is portrayed, then this can be utilised in conjunction with other information to represent information free from ambiguity or confusion to the patient / citizen.</p>
+<p>The element is a reference to the profile for the practitioner who recorded the Problem. Displaying the element alone will have no meaning to the patient. This is not advised and may cause more confusion than benefit to the user. If a clear business case is portrayed, then this can be utilised in conjunction with other information to represent information free from ambiguity or confusion to the patient / citizen.</p>

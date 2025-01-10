@@ -50,7 +50,7 @@ This is the preferred element date. It is also strongly advised to display only 
 
 <h5><ins>Further information</ins></h5>
 
-<p>The 'length' element is not advised as safe to display, since it is not always accurate. The automated timer starts at the beginning of the Consultation. A clinician may walk away from the screen for x amount of time, giving an inaccurate length of the Consultation. In some cases this is manually recorded and is not expected to provide significant useful information </p>
+<p>The 'length' element is not advised as safe to display, since it is not always accurate. The automated timer starts at the beginning of the Consultation. A clinician may walk away from the screen for x amount of time, giving an inaccurate length of the Consultation. In some cases, this is manually recorded and is not expected to provide significant useful information </p>
 
 ---
 
@@ -84,7 +84,7 @@ This is the preferred element date. It is also strongly advised to display only 
 
 <h5><ins>Further information</ins></h5>
 
-<p>It’s worth nothing that the ‘code’ element will allow Consumers to recognise whether the list is representing a header for the whole consultation, a topic of the consultation or a heading for clinical content. The Consumer could use the ‘code’ to identify the purpose and the meaning of each list.</p>
+<p>It’s worth noting that the ‘code’ element will allow Consumers to recognise whether the list is representing a header for the whole consultation, a topic of the consultation or a heading for clinical content. The Consumer could use the ‘code’ to identify the purpose and the meaning of each list.</p>
 
 ---
 
