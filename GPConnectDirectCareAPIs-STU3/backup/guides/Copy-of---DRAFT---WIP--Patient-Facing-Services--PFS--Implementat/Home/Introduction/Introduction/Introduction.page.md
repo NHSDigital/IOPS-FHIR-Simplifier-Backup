@@ -12,7 +12,7 @@ The Access Record: Structured Patient Facing Services (PFS) View Record capabili
 
 The data will be made available via a standard API. Structured data allows the PFS apps to import and process the patient data in whatever way it requires to best support the patient's viewing their data on the PFS apps.
 
-Additional undertaking is made by GP Connect clinicians and technical modellers to advise on what is safe and useful to display for patients'/citizens' viewing. This includes a breakdown of the relevant FHIR profiles and examination of each element with a safety rating and recommendation. You can find more information in {{pagelink:Home/FHIR-Assets/PFS-Profiles.page.md}}.
+Additional undertaking is made by GP Connect clinicians and technical modellers to advise on what is safe and useful to display for viewing by patients and citizens. This includes a breakdown of the relevant FHIR profiles and examination of each element with a safety rating and recommendation. You can find more information in {{pagelink:Home/FHIR-Assets/PFS-Profiles.page.md}}.
 
 <br/>
 
@@ -47,7 +47,7 @@ The following profiles are not to be made available to consumers:
 
 ## Example scenarios 
 
-- A patient with multiple long-term conditions views their repeat medications list to be up-to-date about all the medications they take. They want to view their test results for their conditions as they undergo regular tests. 
+- A patient with multiple long-term conditions views their repeat medications list to be up to date about all the medications they take. They want to view their test results for their conditions as they undergo regular tests. 
 - Patients who have had multiple hospital admissions would like to view their documents and letters. 
 - Senior citizens want to view what was discussed in their consultation as they want to refer to what was discussed.
 

@@ -19,12 +19,12 @@ If you're brand new here, we recommended you read the {{pagelink:Home/Introducti
                         <div class="nhsd-a-box nhsd-a-box--bg-blue">
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
-                                    <span class="nhsd-t-heading-s">GP Connect (Patient Facing) User Management Implementation Guide</span>
+                                    <span class="nhsd-t-heading-s">GP Connect (Patient Facing) User Permissions Implementation Guide</span>
                                     <p class="nhsd-t-body-s">List and manage the permissions a patient has to their medical record and a selection of services provided at their GP practice.</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
                                     <span class="nhsd-a-button nhsd-a-button--invert">
-                                        <span class="nhsd-a-button__label">Read more about User Management</span>
+                                        <span class="nhsd-a-button__label">Read more about User Permissions</span>
                                     </span>
                                 </div>
                             </div>

@@ -3021,7 +3021,7 @@ Example of a call to return the following items from a patient's structured reco
             {"reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"},
             {"reference": "Organization/N82090"}
          ],
-         "comment": "Mother has had a history of severe migraine attacks during her early years aged between 25 and 35, becoming less frequent after age of 35 and recently migraines have dissapated."
+         "comment": "Mother has had a history of severe migraine attacks during her early years aged between 25 and 35, becoming less frequent after age of 35 and recently migraines have dissipated."
       }},
       {"resource":       {
          "resourceType": "MedicationStatement",
@@ -3628,7 +3628,7 @@ Example of a call to return the following items from a patient's structured reco
             {"reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"},
             {"reference": "Organization/N82090"}
          ],
-         "comment": "The patient belives they have angina, but no medical records exist to state otherwise"
+         "comment": "The patient believes they have angina, but no medical records exist to state otherwise"
       }},
       {"resource":       {
          "resourceType": "Encounter",
@@ -3797,7 +3797,7 @@ Example of a call to return the following items from a patient's structured reco
             {"reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"},
             {"reference": "Organization/N82090"}
          ],
-         "comment": "Arrange an referral visit to the hospital for a DEXA scan"
+         "comment": "Arrange a referral visit to the hospital for a DEXA scan"
       }},
       {"resource":       {
          "resourceType": "Encounter",
@@ -4831,7 +4831,7 @@ Example of a call to return the following items from a patient's structured reco
             {"reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"},
             {"reference": "Organization/N82090"}
          ],
-         "comment": "Dont fall"
+         "comment": "Don't fall"
       }},
       {"resource":       {
          "resourceType": "MedicationStatement",
