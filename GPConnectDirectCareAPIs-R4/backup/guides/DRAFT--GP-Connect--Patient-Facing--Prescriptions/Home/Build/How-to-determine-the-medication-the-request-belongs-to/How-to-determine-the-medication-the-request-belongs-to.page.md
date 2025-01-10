@@ -20,9 +20,9 @@ The simplest option is to utilise the display text under the reference to obtain
 
 Should the consumer require further information, i.e. dosage information or expiration date and doesn't wish to use multiple API calls, there is a further option to utilise the [`_include`](https://www.hl7.org/fhir/search.html#_include) parameter.
 
-The `_include` parameter can be used to follow links to referenced resources, in this use case, it will be used to retrieve the referenced `MedicationRequest`'s. 
+The `_include` parameter can be used to follow links to referenced resources, in this use case, it will be used to retrieve the referenced `MedicationRequest`s. 
 
-This means in the response searchset bundle it will also include the referenced `MedicationRequest`'s. The supplier can then use the extra detail in the `MedicationRequest`'s to display to the user. 
+This means in the response searchset bundle it will also include the referenced `MedicationRequest`s. The supplier can then use the extra detail in the `MedicationRequest`s to display to the user. 
 
 ###### Example
 ```json

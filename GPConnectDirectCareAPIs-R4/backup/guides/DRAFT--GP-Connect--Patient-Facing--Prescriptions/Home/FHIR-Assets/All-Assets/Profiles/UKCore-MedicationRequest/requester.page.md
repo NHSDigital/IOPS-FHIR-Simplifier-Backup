@@ -27,7 +27,7 @@ They may be other possible references depending on the use case the full list is
 
 * [Profile UKCore-Practitioner](https://simplifier.net/guide/uk-core-implementation-guide/Home/ProfilesandExtensions/Profile-UKCore-Practitioner?version=1.0.0)
 
-* [Profile UKCore-PrasctitionerRole](https://simplifier.net/guide/uk-core-implementation-guide/Home/ProfilesandExtensions/ProfileUKCore-PractitionerRole?version=1.0.0)
+* [Profile UKCore-PractitionerRole](https://simplifier.net/guide/uk-core-implementation-guide/Home/ProfilesandExtensions/ProfileUKCore-PractitionerRole?version=1.0.0)
 
 * [Profile UKCore-RelatedPerson](https://simplifier.net/guide/uk-core-implementation-guide/Home/ProfilesandExtensions/ProfileUKCore-RelatedPerson?version=0.5.0)
  

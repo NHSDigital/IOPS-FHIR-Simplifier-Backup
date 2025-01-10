@@ -2,7 +2,7 @@
 
 |Acronym|Meaning|Definition|
 |-----|-----|-------|
-|NME|New Market Entrant|In this context a new clinical system that allows GPs to access and update their patients. (for example, Medicus).|
+|NME|New Market Entrant|In this context a new clinical system that allows GPs to access and update their patients (for example, Medicus).|
 |PFS|Patient Facing Service|A service which a patient/citizen can interact with (in this case, managing prescriptions).|
 |FHIR|Fast Health Interoperability Resources|A standard for healthcare data exchange created to drive clinical interoperability.|
 |APIM|API Management|Delivery of APIs. APIM can help provide clear documentation, accessible test environments, a simple onboarding process and good quality help and support.|

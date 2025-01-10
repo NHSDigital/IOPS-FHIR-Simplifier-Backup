@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-Should the patient choose to order to a one off nomination this can simply be done by including the ODS code of the one off nominated pharmacy in the `input` element of the `Task` resource.
+Should the patient choose to order to a one off nomination this can simply be done by including the ODS code of the one-off nominated pharmacy in the `input` element of the `Task` resource.
 
 Example:
 ```json
