@@ -2,13 +2,11 @@
 
 GP Connect's vision is to accelerate and extend data access to patients in an efficient way. Part of that accelerating work is patient-facing services (PFS), which enable seamless access of data for patients from Foundation System (FS) suppliers.
 
-The overall design of PFS is based on the Access Record: Structured (ASR) API, implemented by existing and new market entrant (NME) Foundation System suppliers. Access to the new consumer PFS APIs would be managed through NHSD API Management Apigee gateway.
+The overall design of (Patient Facing) (PFS) Access Record - FHIR API is based on the <a href="https://digital.nhs.uk/developer/api-catalogue/gp-connect-access-record-structured-fhir">Access Record: Structured API</a>, implemented by existing and new market entrant (NME) Foundation System suppliers. Access to the new consumer PFS APIs would be managed through NHSD API Management Apigee gateway.
 
 <br/>
 
-## Access Record: Structured | Patient Facing Services
-
-The Access Record: Structured Patient Facing Services (PFS) View Record capability enables PFS app suppliers to request and consume a patient’s GP record in a structured and coded format that is machine-readable. The data will be returned as per the patient’s GP record access levels set by their GP practice in their clinical system. 
+The PFS Access Record - FHIR API view record capability enables PFS app suppliers to request and consume a patient’s GP record in a structured and coded format that is machine-readable. The data will be returned as per the patient’s GP record access levels set by their GP practice in their clinical system. 
 
 The data will be made available via a standard API. Structured data allows the PFS apps to import and process the patient data in whatever way it requires to best support the patient's viewing their data on the PFS apps.
 

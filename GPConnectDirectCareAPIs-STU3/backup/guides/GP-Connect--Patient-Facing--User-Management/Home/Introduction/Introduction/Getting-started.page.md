@@ -2,7 +2,7 @@
 
 The enablement team can help get you started by guiding you in the following:
 
-##### 1. Confirming the GP Connect (Patient Facing) User Management capability fulfils the use case requirements
+##### 1. Confirming the GP Connect (Patient Facing) User Permissions capability fulfils the use case requirements
 
 Read through this specification to ensure that it fulfils the requirements for your use case, and that the sending or receiving system(s) can meet the data requirements - for example, having the information required to populate the user permissions API response as described in this specification.
 
