@@ -7,7 +7,8 @@ Consuming applications can filter by PrescriptionType of the MedicationRequests.
 These parameters are called `prescriptionType` and correspond to the matching values within the MedicationRequest resource (prescriptionType).
 
 The possible values for the prescriptionType:
-{{render:https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1}} 
+
+The <a href="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1">Care Connect Prescription Type code system</a> defines the following codes:
 
 
 ```json
