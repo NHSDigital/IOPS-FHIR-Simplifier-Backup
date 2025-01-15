@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Patient Identity Management
+  filename: Patient-Identity-Management.page.md
+- name: Patient Encounter Management
+  filename: Patient-Encounter-Management.page.md
+- name: Patient Master Identity Registry
+  filename: Patient-Master-Identity-Registry.page.md
+- name: Patient Demographic Queries
+  filename: Patient-Demographic-Queries.page.md
+- name: Care Directories
+  filename: Care-Directories.page.md

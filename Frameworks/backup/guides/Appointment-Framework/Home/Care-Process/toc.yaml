@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Clinical Pathways and Workflow
+  filename: Clinical-Pathways-and-Workflow
+- name: Patient Pathway Example Diabetes
+  filename: Patient-Pathway-Example-Diabetes
+- name: Ward Rounds Example (Inpatient and Virtual)
+  filename: Ward-Rounds-Example-Inpatient-and-Virtual
+- name: IGNORE - TO BE REMOVED
+  filename: IGNORE-TO-BE-REMOVED

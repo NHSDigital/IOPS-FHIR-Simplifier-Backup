@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Diabetes Prevention Programme Referral - requested
+  filename: Diabetes-Prevention-Programme-Referral-requested.page.md
+- name: Diabetes Prevention Programme Referral - accepted
+  filename: Diabetes-Prevention-Programme-Referral-accepted.page.md
+- name: Diabetes Prevention Programme Referral - cancelled
+  filename: Diabetes-Prevention-Programme-Referral-cancelled.page.md
+- name: Diabetes Prevention Programme Referral - completed
+  filename: Diabetes-Prevention-Programme-Referral-completed.page.md
+- name: Patient Form Complete Task
+  filename: Patient-Form-Complete-Task.page.md
