@@ -101,7 +101,7 @@ TBC. Only relevant for structured genomic reports. Reference to DocumentReferenc
 
 <a name="extension:recommended-action"></a>
 <h4 class='additional-Guidance-Submenu'> extension:recommended-action </h4>
-TBC. Only relevant for structured genomic reports (included in the [Genomic Report Profile in the Genomics Reporting IG](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). Reference to Task resource indicating recommended action to take in response to the report's result/conclusion.
+TBC. Only relevant for structured genomic reports (included in the <a href='https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html' target='_blank'> Genomic Report Profile in the Genomics Report IG</a>). Reference to Task resource indicating recommended action to take in response to the report's result/conclusion.
 
 ```json
 "extension" : [
@@ -116,7 +116,7 @@ TBC. Only relevant for structured genomic reports (included in the [Genomic Repo
 
 <a name="extension:genomic-study"></a>
 <h4 class='additional-Guidance-Submenu'> extension:genomic-study </h4>
-TBC. Only relevant for structured genomic reports (included in the [Genomic Report Profile in the Genomics Reporting IG](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). Reference to Procedure resources indicating the analyses performed as part the genomic test order.
+TBC. Only relevant for structured genomic reports (included in the <a href='https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html' target='_blank'> Genomic Report Profile in the Genomics Report IG</a>). Reference to Procedure resources indicating the analyses performed as part the genomic test order.
 
 ```json
 "extension" : [
@@ -131,7 +131,8 @@ TBC. Only relevant for structured genomic reports (included in the [Genomic Repo
 
 <a name="extension:supporting-info"></a>
 <h4 class='additional-Guidance-Submenu'> extension:supporting-info </h4>
-TBC. Only relevant for structured genomic reports (included in the [Genomics Report IG Genomic Report Profile](https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html)). Reference to the genomic data files analysed as part of the test order, forming the report. Reference to DocumentReference resource which links to the binary data file.
+TBC. Only relevant for structured genomic reports (included in the <a href='https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html' target='_blank'> Genomic Report Profile in the Genomics Report IG</a>). Reference to the genomic data files analysed as part of the test order, forming the report. Reference to DocumentReference resource which links to the binary data file.
+
 ```json
 "extension" : [
         {
@@ -145,7 +146,7 @@ TBC. Only relevant for structured genomic reports (included in the [Genomics Rep
 
 <a name="extension:workflow-relatedArtifact"></a>
 <h4 class='additional-Guidance-Submenu'> extension:workflow-relatedArtifact </h4>
-TBC. Only relevant for structured genomic reports (included in <a href='https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html' target='_blank'> Genomic Report Profile in the Genomics Report IG) </a>. A reference to the guidelines or other knowledge artifacts which were used to guide interpretation or recommended actions included within this DiagnosticReport. 
+TBC. Only relevant for structured genomic reports (included in <a href='https://build.fhir.org/ig/HL7/genomics-reporting/StructureDefinition-genomic-report.html' target='_blank'> Genomic Report Profile in the Genomics Report IG</a>). A reference to the guidelines or other knowledge artifacts which were used to guide interpretation or recommended actions included within this DiagnosticReport. 
 
 If entries constitute published papers, they SHOULD be referenced using a known citation style, e.g. Vancouver/Harvard. Alternatively for online texts, these MAY be referenced via URL only.
 
