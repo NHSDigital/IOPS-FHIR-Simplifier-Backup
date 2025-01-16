@@ -249,7 +249,7 @@
         <tr>
             <td></td>
             <td>Events model</td>
-            <td>If a events model is used this page will detail what it is and how its used</td>
+            <td>If a events model is used this page will detail what it is and how it is used</td>
             <td>May be present</td>
             <td>Clinical,Business,Architect,FHIR</td>
         </tr>

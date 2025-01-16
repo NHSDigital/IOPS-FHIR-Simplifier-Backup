@@ -6,11 +6,11 @@
   filename: How-to-track-prescription-requests
 - name: How to determine the medication the request belongs to
   filename: How-to-determine-the-medication-the-request-belongs-to
-- name: General API Guidance
+- name: General API guidance
   filename: General-API-guidance
-- name: FHIR API Guidance
+- name: FHIR API guidance
   filename: FHIR-API-guidance
-- name: FHIR Resources
+- name: FHIR resources
   filename: FHIR-resources
-- name: Error Handling
+- name: Error handling
   filename: Error-handling

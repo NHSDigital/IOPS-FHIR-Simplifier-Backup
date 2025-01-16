@@ -51,26 +51,6 @@ If you're brand new here, we recommended you read the {{pagelink:Home/Introducti
                     </a>
                 </div>
            </div>
-           <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
-                <div class="nhsd-m-card">
-                    <a href="https://simplifier.net/guide/GP-Connect-Patient-Facing-Appointments-Management/Home?version=current" class="nhsd-a-box-link " aria-label="GP Connect APIs">
-                        <div class="nhsd-a-box nhsd-a-box--bg-blue">
-                            <div class="nhsd-m-card__content_container">
-                                <div class="nhsd-m-card__content-box">
-                                    <span class="nhsd-t-heading-s">GP Connect (Patient Facing) Appointments Implementation Guide</span>
-                                    <p class="nhsd-t-body-s">Manage a patient's appointments at their GP practice.</p>
-                                </div>
-                                <div class="nhsd-m-card__button-box">
-                                    <span class="nhsd-a-button nhsd-a-button--invert">
-                                        <span class="nhsd-a-button__label">Read more about Appointments</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
         <hr>
         <h3 class="nhsd-t-heading-xl nhsd-t-text-align-center">Consumer OAS specifications</h3>
         <div class="nhsd-t-row nhsd-o-card-list__items ">
@@ -81,25 +61,6 @@ If you're brand new here, we recommended you read the {{pagelink:Home/Introducti
                             <div class="nhsd-m-card__content_container">
                                 <div class="nhsd-m-card__content-box">
                                     <span class="nhsd-t-heading-s">GP Connect (Patient Facing) User Permissions API</span>
-                                    <p class="nhsd-t-body-s">OAS on NHS Digital API catalogue</p>
-                                </div>
-                                <div class="nhsd-m-card__button-box">
-                                    <span class="nhsd-a-button nhsd-a-button--invert">
-                                        <span class="nhsd-a-button__label">Read API specification</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-           <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
-                <div class="nhsd-m-card">
-                    <a href="https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-appointment-management-fhir" class="nhsd-a-box-link " aria-label="GP Connect APIs">
-                        <div class="nhsd-a-box nhsd-a-box--bg-blue">
-                            <div class="nhsd-m-card__content_container">
-                                <div class="nhsd-m-card__content-box">
-                                    <span class="nhsd-t-heading-s">GP Connect (Patient Facing) Appointment Management FHIR API</span>
                                     <p class="nhsd-t-body-s">OAS on NHS Digital API catalogue</p>
                                 </div>
                                 <div class="nhsd-m-card__button-box">
