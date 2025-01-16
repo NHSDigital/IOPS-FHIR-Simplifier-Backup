@@ -12,7 +12,7 @@ Rejected requests are not added to the GP system's workflow. The text included i
 
 ### Request handling
 
-Pending requests will be listed on the response to getting a patients permissions.
+Pending requests will be listed on the response to getting a patient's permissions.
 
 If a request is a duplicate, it is deduplicated by the GP system, with the original request being preserved.
 

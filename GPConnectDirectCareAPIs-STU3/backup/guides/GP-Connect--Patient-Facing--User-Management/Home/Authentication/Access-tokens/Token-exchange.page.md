@@ -8,4 +8,4 @@ Token exchange is a process that happens within APIM. The client application (fo
 
 The provider must have an OAuth 2.0 service available to handle the authentication and authorisation requests.
 
-The NHS login ID and APIM access tokens both have a 60 minute validity period. Once a token has expired it can be refreshed using the standard OAuth refresh token flow.
+The NHS login ID and APIM access tokens both have a 60-minute validity period. Once a token has expired it can be refreshed using the standard OAuth refresh token flow.

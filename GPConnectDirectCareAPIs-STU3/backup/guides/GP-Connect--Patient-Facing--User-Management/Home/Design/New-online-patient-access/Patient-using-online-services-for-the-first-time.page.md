@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-When a patient accesses online services for the first time at a GP practice they need to have online access activated.
+When a patient accesses online services for the first time at a GP practice, they need to have online access activated.
 
 GP system suppliers using the GP System Integration called [IM1](https://digital.nhs.uk/services/gp-it-futures-systems/im1-pairing-integration) achieve this through a feature called linkage keys which are handled as part of the [NHS login](https://nhsconnect.github.io/nhslogin/gp-credentials/) process.
 
@@ -27,7 +27,7 @@ When the API to [get a patient's permissions](https://digital.nhs.uk/developer/a
 - check if the patient has online access enabled
     - if they do - return the patient's existing permissions
     - if they do not - check if the patient is flagged as 'at risk'
-	    - if they are - set the patient's permissions as appropriate for an at risk patient (determined by the practice), enable online access and return the patient's permissions
+	    - if they are - set the patient's permissions as appropriate for an at-risk patient (determined by the practice), enable online access and return the patient's permissions
 	    - if they are not - set the patient's default permissions (using the practice's default permissions), enable online access and return the patient's permissions
 
 ### Note on request sequencing

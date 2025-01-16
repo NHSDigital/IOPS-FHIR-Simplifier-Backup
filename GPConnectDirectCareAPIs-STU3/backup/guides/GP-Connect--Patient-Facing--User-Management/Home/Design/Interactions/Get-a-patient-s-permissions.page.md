@@ -12,7 +12,7 @@ For more detailed information see:
 - [Get a patient's permissions (NHS Digital API catalogue)](https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-user-permissions#api-Default-getPatientPermissions)
 - {{pagelink:Home/Build/How-to-get-a-patient-s-permissions}}
 
-### Enabling online access for a first time user
+### Enabling online access for a first-time user
 
 The act of using the get permissions API will enable online access and set a patient's default permissions the first time the request is made. This is detailed in the [new online patient access](../Design/New-online-patient-access?version=current) page.
 
