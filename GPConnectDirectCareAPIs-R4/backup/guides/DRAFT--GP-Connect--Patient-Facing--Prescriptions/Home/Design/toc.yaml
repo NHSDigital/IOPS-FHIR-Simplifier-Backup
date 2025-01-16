@@ -1,8 +1,8 @@
-- name: Design Overview
+- name: Design overview
   filename: Design-overview
-- name: Design Principles
+- name: Design principles
   filename: Design-principles
 - name: Interactions
   filename: Interactions
-- name: Errors and Issues
+- name: Errors and issues
   filename: Errors-and-issues.page.md
