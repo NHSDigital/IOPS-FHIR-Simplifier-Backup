@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-### Access Record Structured FHIR examples for Uncategorised data.
+### Access Record Structured FHIR examples for Uncategorised Data.
 
 ### Request
 Example of a call to return the following items from a patient's structured record:

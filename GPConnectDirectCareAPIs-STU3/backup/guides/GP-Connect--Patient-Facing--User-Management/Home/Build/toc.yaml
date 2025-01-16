@@ -1,6 +1,6 @@
-- name: General API Guidance
+- name: General API guidance
   filename: General-API-guidance.page.md
-- name: Error Handling
+- name: Error handling
   filename: Error-Handling.page.md
 - name: How to get a patient's permissions
   filename: How-to-get-a-patient-s-permissions

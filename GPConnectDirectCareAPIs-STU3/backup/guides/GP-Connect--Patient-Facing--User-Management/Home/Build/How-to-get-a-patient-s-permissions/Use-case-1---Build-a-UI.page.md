@@ -10,7 +10,7 @@ The same information from the image in table format:
 | -----       | ---------------------                                                                                                          |
 | `None`      | No access                                                                                                                      |
 | `Summary`   | Demographics, Medications, Allergies                                                                                           |
-| `Detailed`  | Everything from `Summary` + All read/clinical codes, Immunistations, Health conditions, Test results, Consultations, Referrals |
+| `Detailed`  | Everything from `Summary` + All read/clinical codes, Immunisations, Health conditions, Test results, Consultations, Referrals |
 | `Documents` | Everything from `Detailed` + Documents                                                                                         |
 | `Full`      | Everything from `Documents` + Free text                                                                                        |
 
@@ -36,6 +36,6 @@ The same information from the image in table format, split into appointments and
 | `Prescriptions` | `View`.  | View appointments                                         |
 | `Prescriptions` | `Manage` | Everything from `View` + Request and cancel prescriptions |
 
-The consuming application should use this information to provider the best experience to the patient i.e. only display features and functionality within the UI that the patient has access to.
+The consuming application should use this information to provide the best experience to the patient - that is, only display features and functionality within the UI that the patient has access to.
 
 It might be useful to show the patient that there are additional features and functionality they could access but do not current have permission to do so. For example, the application might render sections of the medical record the patient _could_ have access to but do not currently. This could be represented by displaying the sections but making them appear unavailable, potentially with a message informing the patient that they could request access to that area and directing them to the area of the application where they could make that request.

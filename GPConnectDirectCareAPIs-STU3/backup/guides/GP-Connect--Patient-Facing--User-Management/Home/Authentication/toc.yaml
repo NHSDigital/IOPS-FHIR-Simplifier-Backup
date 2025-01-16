@@ -1,6 +1,6 @@
-- name: Access Control
+- name: Access control
   filename: Access-control
-- name: Access Tokens
+- name: Access tokens
   filename: Access-tokens
-- name: Information Governance
+- name: Information governance
   filename: Information-Governance
