@@ -63,7 +63,7 @@ Multiple `when` statements can be used, such as:
 </timing>
 ```
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">    <strong>Note 2:</strong> Where the meal related <code>when</code> codes of "C", "AC" or "PC" are used it is recommended to also include timing frequency instructions. This will ensure the medication is taken for the correct number of times in the day, e.g. "3 times a day, at a meal" or "twice a day, at a meal"
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">    <strong>Note 2:</strong> Where the meal related <code>when</code> codes of "C", "AC" or "PC" are used it is recommended to also include timing frequency instructions. This will ensure the medication is taken for the correct number of times in the day, e.g. "3 times a day, at a meal" or "twice a day, at a meal".
 </div>
 
 **Event occurs at a meal, further clarified with '3 times a day'**
@@ -78,7 +78,6 @@ Multiple `when` statements can be used, such as:
     </repeat>
 </timing>
 ```
-
 <div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">    <strong>Note 3:</strong> The FHIR <code>when</code> codes events relating to meals are for when the dosing instruction is related to timing. Where the dosing instruction is for the medication to be taken with food, without specific timing instructions, then use a SNOMED coded <code>additionalInstruction</code>.
 </div>
 
@@ -100,6 +99,19 @@ Multiple `when` statements can be used, such as:
         <system value="http://snomed.info/sct"/> 
         <code value="311504000"/> 
         <display value="With or after food"/> 
+    </coding>
+</additionalInstruction>
+```
+
+**as needed with food**
+
+```xml
+<asNeededBoolean value="true" />
+<additionalInstruction>
+    <coding> 
+        <system value="http://snomed.info/sct"/> 
+        <code value="1116481000001105"/> 
+        <display value="With food"/> 
     </coding>
 </additionalInstruction>
 ```
