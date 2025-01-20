@@ -1,5 +1,6 @@
 title: '[DRAFT] GP Connect - Access Record HTML'
 description: GP Connect - Access Record Structured (STU3) Implementation Guide
-version: 1.6.2
+version: 0.7.4
 style-root: project
 style-name: NHSDigital
+numbered-headings: false

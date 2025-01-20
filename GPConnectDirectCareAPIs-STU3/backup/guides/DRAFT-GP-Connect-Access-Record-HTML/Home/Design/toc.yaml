@@ -6,3 +6,7 @@
   filename: Implementation-standards
 - name: Layout guide
   filename: Layout-guide
+- name: FHIR Resources
+  filename: FHIR-Resources
+- name: Error handling guidance
+  filename: Error-handling-guidance
