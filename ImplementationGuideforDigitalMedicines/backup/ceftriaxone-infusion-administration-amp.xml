@@ -1,44 +1,53 @@
-<MedicationAdministration xmlns="http://hl7.org/fhir">
-  <id value="cc191603-72c0-4e65-86ee-a149a2dc81d4" />
-  <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
-  </meta>
-  <status value="completed" />
-  <medicationCodeableConcept>
-                    <coding>
-                        <system value="https://dmd.nhs.uk" />
-                        <code value="22102811000001100" />
-                        <display value="Ceftriaxone 1g/50ml infusion bags (Special Order)" />
-                    </coding>
-  </medicationCodeableConcept>
-  <subject>
-    <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-  </subject>
-  <effectiveDateTime value="2022-02-28T16:52:00+00:00" />
-  <request>
-    <reference value="34eb3c92-76e6-48c2-9691-aa1f0b58369b" />
-    <type value="MedicationRequest" />
-  </request>
-  <dosage>
-                    <route>
-                        <coding>
-                            <system value="https://dmd.nhs.uk" />
-                            <code value="47625008" />
-                            <display value="Intravenous" />
-                        </coding>
-                    </route>
-                    <method>
-                        <coding>
-                            <system value="http://snomed.info/sct" />
-                            <code value="261754007" />
-                            <display value="Continuous infusion" />
-                        </coding>
-                    </method>
-                        <dose>
-                            <value value="1" />
-                            <unit value="bag" />
-                            <system value="http://snomed.info/sct" />
-                            <code value="428672001" />
-                        </dose>
-                </dosage>
-</MedicationAdministration>
+{
+    "resourceType": "MedicationAdministration",
+    "id": "urn:uuid:cc191603-72c0-4e65-86ee-a149a2dc81d4",
+    "meta": {
+        "profile":  [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration"
+        ]
+    },
+    "status": "completed",
+    "medicationCodeableConcept": {
+        "coding":  [
+            {
+                "system": "https://dmd.nhs.uk",
+                "code": "22102811000001100",
+                "display": "Ceftriaxone 1g/50ml infusion bags (Special Order)"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/UKCore-Patient-RichardSmith-Example"
+    },
+    "effectiveDateTime": "2022-02-28T16:52:00+00:00",
+    "request": {
+        "reference": "MedicationRequest/34eb3c92-76e6-48c2-9691-aa1f0b58369b",
+        "type": "MedicationRequest"
+    },
+    "dosage": {
+        "route": {
+            "coding":  [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "47625008",
+                    "display": "Intravenous"
+                }
+            ]
+        },
+        "method": {
+            "coding":  [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "261754007",
+                    "display": "Continuous infusion"
+                }
+            ]
+        },
+        "dose": {
+            "value": 1,
+            "unit": "bag",
+            "system": "http://snomed.info/sct",
+            "code": "428672001"
+        }
+    }
+}

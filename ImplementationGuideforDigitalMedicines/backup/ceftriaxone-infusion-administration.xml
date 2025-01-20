@@ -1,130 +1,148 @@
-<Bundle xmlns="http://hl7.org/fhir">
-  <type value="message" />
-  <entry>
-    <fullUrl value="urn:uuid:682858a9-3942-412d-9ae5-71a2f17f7c5b" />
-    <resource>
-      <MessageHeader>
-        <id value="682858a9-3942-412d-9ae5-71a2f17f7c5b" />
-        <eventCoding>
-          <system value="http://snomed.info/sct" />
-          <code value="18629005" />
-          <display value=" Administration of medication" />
-        </eventCoding>
-        <source>
-          <endpoint value="https://myendpoint.nhs.uk/" />
-        </source>
-        <focus>
-          <reference value="843b54b7-1479-43a3-9931-99f10d621181" />
-          <type value="MedicationAdministration" />
-        </focus>
-      </MessageHeader>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:11dc9519-b6e8-41bb-bce5-f6f724b743bc" />
-    <resource>
-      <Medication>
-        <id value="11dc9519-b6e8-41bb-bce5-f6f724b743bc" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
-        </meta>
-        <form>
-          <coding>
-            <system value="https://dmd.nhs.uk" />
-            <code value="385229008" />
-            <display value="Solution for infusion" />
-          </coding>
-        </form>
-        <code>
-          <text value="Ceftriaxone 1g in 50mL Sodium chloride 0.9% solution for infusion"/>
-        </code>
-        <ingredient>
-          <itemCodeableConcept>
-            <coding>
-              <system value="https://dmd.nhs.uk" />
-              <code value="22824911000001102" />
-              <display value="Ceftriaxone 1g powder for solution for infusion vials (Kent Pharma (UK) Ltd)" />
-            </coding>
-          </itemCodeableConcept>
-          <strength>
-            <numerator>
-              <value value="1" />
-              <unit value="gram" />
-              <system value="http://unitsofmeasure.org" />
-              <code value="g" />
-            </numerator>
-            <denominator>
-              <value value="1" />
-            </denominator>
-          </strength>
-        </ingredient>
-        <ingredient>
-          <itemCodeableConcept>
-            <coding>
-              <system value="https://dmd.nhs.uk" />
-              <code value="4880711000001109" />
-              <display value="Sodium chloride 0.9% infusion 50ml Mini-Bag Viaflex bags (Baxter Healthcare Ltd)" />
-            </coding>
-          </itemCodeableConcept>
-          <strength>
-            <numerator>
-              <value value="50" />
-              <unit value="millilitre" />
-              <system value="http://unitsofmeasure.org" />
-              <code value="ml" />
-            </numerator>
-            <denominator>
-              <value value="1" />
-            </denominator>
-          </strength>
-        </ingredient>
-      </Medication>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:7b36eb7b-ea3f-44fb-87c9-dfa51e4b6d5b" />
-    <resource>
-      <MedicationAdministration xmlns="http://hl7.org/fhir">
-        <id value="843b54b7-1479-43a3-9931-99f10d621181" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
-        </meta>
-        <status value="completed" />
-        <medicationReference>
-          <reference value="11dc9519-b6e8-41bb-bce5-f6f724b743bc" />
-          <type value="Medication" />
-        </medicationReference>
-        <subject>
-          <reference value="Patient/UKCore-Patient-RichardSmith-Example" />
-        </subject>
-        <effectiveDateTime value="2022-02-28T17:06:00+00:00" />
-        <request>
-          <reference value="34eb3c92-76e6-48c2-9691-aa1f0b58369b" />
-          <type value="MedicationRequest" />
-        </request>
-        <dosage>
-          <route>
-            <coding>
-              <system value="https://dmd.nhs.uk" />
-              <code value="47625008" />
-              <display value="Intravenous" />
-            </coding>
-          </route>
-          <method>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="261754007" />
-              <display value="Continuous infusion" />
-            </coding>
-          </method>
-          <dose>
-            <value value="100" />
-            <unit value="millilitre" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="ml" />
-          </dose>
-        </dosage>
-      </MedicationAdministration>
-    </resource>
-  </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "type": "message",
+    "entry":  [
+        {
+            "fullUrl": "MessageHeader/682858a9-3942-412d-9ae5-71a2f17f7c5b",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:uuid:682858a9-3942-412d-9ae5-71a2f17f7c5b",
+                "eventCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "18629005",
+                    "display": "Administration of medication"
+                },
+                "source": {
+                    "endpoint": "https://myendpoint.nhs.uk/"
+                },
+                "focus":  [
+                    {
+                        "reference": "MedicationAdministration/843b54b7-1479-43a3-9931-99f10d621181",
+                        "type": "MedicationAdministration"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "Medication/11dc9519-b6e8-41bb-bce5-f6f724b743bc",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:uuid:11dc9519-b6e8-41bb-bce5-f6f724b743bc",
+                "meta": {
+                    "profile":  [
+                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"
+                    ]
+                },
+                "code": {
+                    "text": "Ceftriaxone 1g in 50mL Sodium chloride 0.9% solution for infusion"
+                },
+                "form": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "385229008",
+                            "display": "Solution for infusion"
+                        }
+                    ]
+                },
+                "ingredient":  [
+                    {
+                        "itemCodeableConcept": {
+                            "coding":  [
+                                {
+                                    "system": "https://dmd.nhs.uk",
+                                    "code": "22824911000001102",
+                                    "display": "Ceftriaxone 1g powder for solution for injection vials (Kent Pharma (UK) Ltd)"
+                                }
+                            ]
+                        },
+                        "strength": {
+                            "numerator": {
+                                "value": 1,
+                                "unit": "gram",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            },
+                            "denominator": {
+                                "value": 1
+                            }
+                        }
+                    },
+                    {
+                        "itemCodeableConcept": {
+                            "coding":  [
+                                {
+                                    "system": "https://dmd.nhs.uk",
+                                    "code": "4880711000001109",
+                                    "display": "Sodium chloride 0.9% infusion 50ml bags"
+                                }
+                            ]
+                        },
+                        "strength": {
+                            "numerator": {
+                                "value": 50,
+                                "unit": "millilitre",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "ml"
+                            },
+                            "denominator": {
+                                "value": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "MedicationAdministration/843b54b7-1479-43a3-9931-99f10d621181",
+            "resource": {
+                "resourceType": "MedicationAdministration",
+                "id": "urn:uuid:843b54b7-1479-43a3-9931-99f10d621181",
+                "meta": {
+                    "profile":  [
+                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration"
+                    ]
+                },
+                "status": "completed",
+                "medicationReference": {
+                    "reference": "Medication/11dc9519-b6e8-41bb-bce5-f6f724b743bc",
+                    "type": "Medication"
+                },
+                "subject": {
+                    "reference": "Patient/UKCore-Patient-RichardSmith-Example"
+                },
+                "effectiveDateTime": "2022-02-28T17:06:00+00:00",
+                "request": {
+                    "reference": "MedicationRequest/34eb3c92-76e6-48c2-9691-aa1f0b58369b",
+                    "type": "MedicationRequest"
+                },
+                "dosage": {
+                    "route": {
+                        "coding":  [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "47625008",
+                                "display": "Intravenous"
+                            }
+                        ]
+                    },
+                    "method": {
+                        "coding":  [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "261754007",
+                                "display": "Continuous infusion"
+                            }
+                        ]
+                    },
+                    "dose": {
+                        "value": 100,
+                        "unit": "millilitre",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "ml"
+                    }
+                }
+            }
+        }
+    ]
+}

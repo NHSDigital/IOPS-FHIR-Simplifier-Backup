@@ -6,6 +6,11 @@
       "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
     ]
   },
+  "status": "active",
+  "intent": "order",
+  "substitution": {
+        "allowedBoolean": false
+  },
   "subject": {
     "reference": "Patient/UKCore-Patient-RichardSmith-Example"
   },
@@ -13,21 +18,21 @@
     "coding": [
       {
         "system": "https://dmd.nhs.uk",
-        "code": "19841008",
+        "code": "775120003",
         "display": "Ceftriaxone"
       }
     ]
   },
   "reasonCode": [
+    {
+      "coding": [
         {
-            "coding": [
-                {
-                    "system": "http://snomed.info/sct",
-                    "code": "233604007",
-                    "display": "Pneumonia"
-                }
-            ]
+          "system": "http://snomed.info/sct",
+          "code": "233604007",
+          "display": "Pneumonia"
         }
+      ]
+    }
   ],
   "dosageInstruction": [
     {

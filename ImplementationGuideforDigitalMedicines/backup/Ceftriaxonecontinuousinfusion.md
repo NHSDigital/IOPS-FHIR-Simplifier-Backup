@@ -45,10 +45,6 @@ This `MedicationRequest` is created by the EPMA system for the prescription/orde
 
 ### Dispensing Event: Prepared by Pharmacy
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note:</strong> This example is work-in-progress and may be subject to change.
-</div>
-
 If the infusion is to be prepared by the hospital pharamcy team.
 
 This `Bundle` is created by the pharmacy system for what has been dispensed. A bundle is used in this example because it contains two resources. A `Medication` resource details the two ingredients that have been used to prepare the infusion. A `MedicationDispense` references the `Medication` and details the dosing instruction for the infusion. This bundle would be made available to the ward EPMA system.
@@ -89,10 +85,6 @@ This `Bundle` is created by the pharmacy system for what has been dispensed. A b
 <!--// end of code snippet -->
 
 ### Dispensing Event: Prepared by Ward
-
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note:</strong> This example is work-in-progress and may be subject to change.
-</div>
 
 If the infusion is to be prepared by the hospital ward team.
 
@@ -135,10 +127,6 @@ This `Bundle` is created by the pharmacy system for what has been dispensed. A b
 
 ### Dispensing Event: Dispensed by Pharmacy using a pre-prepared product
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note:</strong> This example is work-in-progress and may be subject to change.
-</div>
-
 Pre-prepared and dm+d coded `Ceftriaxone 1g/50ml infusion bags` products are dispensed to the ward.
 
 <!--// start of code snippet -->
@@ -178,10 +166,6 @@ Pre-prepared and dm+d coded `Ceftriaxone 1g/50ml infusion bags` products are dis
 
 ### Administration Event: Using infusion prepared by pharmacy or ward
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note:</strong> This example is work-in-progress and may be subject to change.
-</div>
-
 An administration record using an infusion prepared either by the pharmacy or on the ward. There would be five administration records, one for each infusion, on each day.
 
 <!--// start of code snippet -->
@@ -220,10 +204,6 @@ An administration record using an infusion prepared either by the pharmacy or on
 <!--// end of code snippet -->
 
 ### Administration Event: Using a pre-prepared infusion product
-
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note:</strong> This example is work-in-progress and may be subject to change.
-</div>
 
 An administration record using a pre-prepared and dm+d coded `Ceftriaxone 1g/50ml infusion bags` product. There would be five administration records, one for each infusion, on each day.
 

@@ -27,7 +27,7 @@ For example;
     "coding": [
       {
         "system": "https://dmd.nhs.uk",
-        "code": "39463011000001107",
+        "code": "774587000",
         "display": "Co-amoxiclav"
       }
     ]
@@ -49,7 +49,7 @@ Or when using a referenced `Medication` resource. Note that this example `Medica
           "coding": [
             {
               "system": "https://dmd.nhs.uk/",
-              "code": "39463011000001107",
+              "code": "774587000",
               "display": "Co-amoxiclav"
             }
           ]
@@ -84,7 +84,7 @@ Where a diluent and it's strength are to be specified, use the VTM and include a
         "coding": [
           {
             "system": "https://dmd.nhs.uk",
-            "code": "70379000",
+            "code": "777553004",
             "display": "Sodium chloride"
           }
         ]
@@ -167,7 +167,7 @@ For example, I want to specify a diluent of **75 mL of Sodium chloride 0.9%**.
           "coding": [
             {
               "system": "https://dmd.nhs.uk",
-              "code": "70379000",
+              "code": "777553004",
               "display": "Sodium chloride"
             }
           ]
@@ -224,7 +224,7 @@ For example;
           "coding": [
             {
               "system": "https://dmd.nhs.uk",
-              "code": "53691001",
+              "code": "775002009",
               "display": "Calcium gluconate"
             }
           ]
@@ -249,7 +249,7 @@ For example;
           "coding": [
             {
               "system": "https://dmd.nhs.uk",
-              "code": "111138002",
+              "code": "776119003",
               "display": "Glucose"
             }
           ]
@@ -338,7 +338,7 @@ Note that this example is only a fragment and does not include all required busi
               "coding": [
                 {
                   "system": "https://dmd.nhs.uk",
-                  "code": "39463011000001107",
+                  "code": "774587000",
                   "display": "Co-amoxiclav"
                 }
               ]
