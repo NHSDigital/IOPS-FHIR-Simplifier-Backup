@@ -1,12 +1,12 @@
 ## {{page-title}}
 
 The information sections in scope for care record access are:
-1. [Summary](accessrecord_view_summary.html)
-2. [Encounters](accessrecord_view_encounters.html)
-3. [Clinical items](accessrecord_view_clinical_items.html)
-4. [Problems and issues](accessrecord_view_problems.html)
-5. [Allergies and adverse reactions](accessrecord_view_allergies.html)
-6. [Medications](accessrecord_view_medications.html)
+1. {{pagelink:Home/Build/Summary}}
+2. {{pagelink:Home/Build/Encounters}}
+3. {{pagelink:Home/Build/Clinical-Items}}
+4. {{pagelink:Home/Build/Problems-and-issues}}
+5. {{pagelink:Home/Build/Allergies-and-adverse-reactions}}
+6. {{pagelink:Home/Build/Medications}}
 7. [Referrals](accessrecord_view_referrals.html)
 8. [Observations](accessrecord_view_observations.html)
 9. [Immunisations](accessrecord_view_immunisations.html)
