@@ -1,177 +1,177 @@
 {
-  "resourceType": "Bundle",
-  "type": "message",
-  "entry": [
-    {
-      "fullUrl": "urn:uuid:682858a9-3942-412d-9ae5-71a2f17f7c5b",
-      "resource": {
-        "resourceType": "MessageHeader",
-        "id": "682858a9-3942-412d-9ae5-71a2f17f7c5b",
-        "eventCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373784005",
-          "display": "Dispensing medication"
-        },
-        "source": {
-          "endpoint": "https://myendpoint.nhs.uk/"
-        },
-        "focus": [
-          {
-            "reference": "7b36eb7b-ea3f-44fb-87c9-dfa51e4b6d5b",
-            "type": "MedicationDispense"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:11dc9519-b6e8-41bb-bce5-f6f724b743bc",
-      "resource": {
-        "resourceType": "Medication",
-        "id": "11dc9519-b6e8-41bb-bce5-f6f724b743bc",
-        "meta": {
-          "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"
-          ]
-        },
-        "form": {
-          "coding": [
-            {
-              "system": "https://dmd.nhs.uk",
-              "code": "385229008",
-              "display": "Solution for infusion"
-            }
-          ]
-        },
-        "code": {
-          "text": "Ceftriaxone 1g in 50mL Sodium chloride 0.9% solution for infusion"
-        },       
-        "ingredient": [
-          {
-            "itemCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://dmd.nhs.uk",
-                  "code": "22824911000001102",
-                  "display": "Ceftriaxone 1g powder for solution for infusion vials (Kent Pharma (UK) Ltd)"
-                }
-              ]
-            },
-            "strength": {
-              "numerator": {
-                "value": 1,
-                "unit": "gram",
-                "system": "http://unitsofmeasure.org",
-                "code": "g"
-              },
-              "denominator": {
-                "value": 1
-              }
-            }
-          },
-          {
-            "itemCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://dmd.nhs.uk",
-                  "code": "4880711000001109",
-                  "display": "Sodium chloride 0.9% infusion 50ml Mini-Bag Viaflex bags (Baxter Healthcare Ltd)"
-                }
-              ]
-            },
-            "strength": {
-              "numerator": {
-                "value": 50,
-                "unit": "millilitre",
-                "system": "http://unitsofmeasure.org",
-                "code": "ml"
-              },
-              "denominator": {
-                "value": 1
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:7b36eb7b-ea3f-44fb-87c9-dfa51e4b6d5b",
-      "resource": {
-        "resourceType": "MedicationDispense",
-        "id": "7b36eb7b-ea3f-44fb-87c9-dfa51e4b6d5b",
-        "meta": {
-          "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense"
-          ]
-        },
-        "subject": {
-          "reference": "Patient/UKCore-Patient-RichardSmith-Example"
-        },
-        "status": "completed",
-        "medicationReference": {
-          "reference": "11dc9519-b6e8-41bb-bce5-f6f724b743bc",
-          "type": "Medication"
-        },
-        "authorizingPrescription": [
-          {
-            "reference": "34eb3c92-76e6-48c2-9691-aa1f0b58369b",
-            "type": "MedicationRequest"
-          }
-        ],
-        "quantity": {
-          "value": 5,
-          "unit": "bag",
-          "system": "http://snomed.info/sct",
-          "code": "428672001"
-        },
-        "dosageInstruction": [
-          {
-            "text": "Continuous infusion 50 millilitre - Intravenous - over 30 minutes - daily - for 5 days",
-            "timing": {
-              "repeat": {
-                "boundsDuration": {
-                  "value": 5,
-                  "unit": "day",
-                  "system": "http://unitsofmeasure.org",
-                  "code": "d"
+    "resourceType": "Bundle",
+    "type": "message",
+    "entry":  [
+        {
+            "fullUrl": "MessageHeader/682858a9-3942-412d-9ae5-71a2f17f7c5b",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:uuid:682858a9-3942-412d-9ae5-71a2f17f7c5b",
+                "eventCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "373784005",
+                    "display": "Dispensing medication"
                 },
-                "duration": 30,
-                "durationUnit": "min",
-                "frequency": 1,
-                "period": 1,
-                "periodUnit": "d"
-              }
-            },
-            "method": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "261754007",
-                  "display": "Continuous infusion"
-                }
-              ]
-            },
-            "route": {
-              "coding": [
-                {
-                  "system": "https://dmd.nhs.uk",
-                  "code": "47625008",
-                  "display": "Intravenous"
-                }
-              ]
-            },
-            "doseAndRate": [
-              {
-                "doseQuantity": {
-                  "value": 50,
-                  "unit": "millilitre",
-                  "system": "http://unitsofmeasure.org",
-                  "code": "ml"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ]
+                "source": {
+                    "endpoint": "https://myendpoint.nhs.uk/"
+                },
+                "focus":  [
+                    {
+                        "reference": "MedicationDispense/7b36eb7b-ea3f-44fb-87c9-dfa51e4b6d5b",
+                        "type": "MedicationDispense"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "Medication/11dc9519-b6e8-41bb-bce5-f6f724b743bc",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:uuid:11dc9519-b6e8-41bb-bce5-f6f724b743bc",
+                "meta": {
+                    "profile":  [
+                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"
+                    ]
+                },
+                "form": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "385229008",
+                            "display": "Solution for infusion"
+                        }
+                    ]
+                },
+                "code": {
+                    "text": "Ceftriaxone 1g in 50mL Sodium chloride 0.9% solution for infusion"
+                },
+                "ingredient":  [
+                    {
+                        "itemCodeableConcept": {
+                            "coding":  [
+                                {
+                                    "system": "https://dmd.nhs.uk",
+                                    "code": "22824911000001102",
+                                    "display": "Ceftriaxone 1g powder for solution for injection vials (Kent Pharma (UK) Ltd)"
+                                }
+                            ]
+                        },
+                        "strength": {
+                            "numerator": {
+                                "value": 1,
+                                "unit": "gram",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            },
+                            "denominator": {
+                                "value": 1
+                            }
+                        }
+                    },
+                    {
+                        "itemCodeableConcept": {
+                            "coding":  [
+                                {
+                                    "system": "https://dmd.nhs.uk",
+                                    "code": "4880711000001109",
+                                    "display": "Sodium chloride 0.9% infusion 50ml bags"
+                                }
+                            ]
+                        },
+                        "strength": {
+                            "numerator": {
+                                "value": 50,
+                                "unit": "millilitre",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "ml"
+                            },
+                            "denominator": {
+                                "value": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "MedicationDispense/7b36eb7b-ea3f-44fb-87c9-dfa51e4b6d5b",
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "urn:uuid:7b36eb7b-ea3f-44fb-87c9-dfa51e4b6d5b",
+                "meta": {
+                    "profile":  [
+                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense"
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/UKCore-Patient-RichardSmith-Example"
+                },
+                "status": "completed",
+                "medicationReference": {
+                    "reference": "Medication/11dc9519-b6e8-41bb-bce5-f6f724b743bc",
+                    "type": "Medication"
+                },
+                "authorizingPrescription":  [
+                    {
+                        "reference": "MedicationRequest/34eb3c92-76e6-48c2-9691-aa1f0b58369b",
+                        "type": "MedicationRequest"
+                    }
+                ],
+                "quantity": {
+                    "value": 5,
+                    "unit": "bag",
+                    "system": "http://snomed.info/sct",
+                    "code": "428672001"
+                },
+                "dosageInstruction":  [
+                    {
+                        "text": "Continuous infusion 50 millilitre - Intravenous - over 30 minutes - daily - for 5 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsDuration": {
+                                    "value": 5,
+                                    "unit": "day",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "d"
+                                },
+                                "duration": 30,
+                                "durationUnit": "min",
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "method": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "261754007",
+                                    "display": "Continuous infusion"
+                                }
+                            ]
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "47625008",
+                                    "display": "Intravenous"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 50,
+                                    "unit": "millilitre",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "ml"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
 }
