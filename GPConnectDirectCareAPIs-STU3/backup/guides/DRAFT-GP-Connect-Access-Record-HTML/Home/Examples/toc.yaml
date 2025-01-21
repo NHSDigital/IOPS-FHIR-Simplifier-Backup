@@ -1,22 +1,20 @@
-- name: Allergy examples
-  filename: Allergy-examples
-- name: Compatibility support examples
-  filename: Compatibility-support-examples
-- name: Consultation examples
-  filename: Consultation-examples
-- name: Diary entry examples
-  filename: Diary-entry-examples
-- name: Immunisation examples
-  filename: Immunisation-examples
-- name: Investigation examples
-  filename: Investigation-examples
-- name: Medication examples
-  filename: Medication-examples
-- name: Problem examples
-  filename: Problem-examples
-- name: Referral examples
-  filename: Referral-examples
-- name: Search examples
-  filename: Search-examples
-- name: Uncategorised data examples
-  filename: Uncategorised-data-examples
+- name: Encounters examples
+  filename: Encounters-examples
+- name: Clinical items examples
+  filename: Clinical-items-examples
+- name: Problems and issues examples
+  filename: Problems-and-issues-examples
+- name: Allergies and adverse reactions examples
+  filename: Allergies-and-adverse-reactions-examples
+- name: Medications examples
+  filename: Medications-examples
+- name: Referrals examples
+  filename: Referrals-examples
+- name: Observations examples
+  filename: Observations-examples
+- name: Immunisations examples
+  filename: Immunisations-examples
+- name: Administrative items examples
+  filename: Administrative-items-examples
+- name: Emergency codes examples
+  filename: Emergency-codes-examples

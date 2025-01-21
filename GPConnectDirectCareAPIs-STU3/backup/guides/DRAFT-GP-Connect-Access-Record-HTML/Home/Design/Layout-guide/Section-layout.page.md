@@ -41,7 +41,7 @@ These views **MUST** have the following structure:
 
 ### Single table example
 
-```
+```html
 <div>
   <h1>Encounters</h1>
 	
@@ -68,7 +68,7 @@ These views **MUST** have the following structure:
 ```
 ### Multiple table example
 
-```
+```html
 <div>
   <h1>Problems and Issues</h1>
    

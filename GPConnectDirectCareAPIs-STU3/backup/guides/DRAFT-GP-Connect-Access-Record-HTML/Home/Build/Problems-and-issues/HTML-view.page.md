@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-```
+```html
 <div>
    <h1>Problems and Issues</h1>
    <div class="gptransfer-banner">

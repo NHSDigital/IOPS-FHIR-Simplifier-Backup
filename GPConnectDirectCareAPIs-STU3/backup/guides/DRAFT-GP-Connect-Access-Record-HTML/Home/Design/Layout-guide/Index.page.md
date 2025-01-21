@@ -1,5 +1,5 @@
 ---
-topic: HTML layout guide
+topic: layout_guide
 ---
 
 ## {{page-title}}

@@ -1,6 +1,3 @@
----
-topic: Historic allergies and adverse reactions
----
 ## {{page-title}}
 
 ### Clinical narrative
