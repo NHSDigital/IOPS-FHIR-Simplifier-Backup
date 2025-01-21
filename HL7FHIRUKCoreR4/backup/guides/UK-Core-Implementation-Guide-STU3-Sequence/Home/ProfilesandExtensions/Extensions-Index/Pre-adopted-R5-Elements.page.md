@@ -6,7 +6,10 @@ topic: Library-Extensions-PreAdopt
 
 The following <a href="https://hl7.org/fhir/versions.html#extensions" class="external">R5 elements</a> have been agreed as suitable to be included for use with the UK Core {{pagelink:Library-Profiles,text:Profiles}} because the use case for pre-adopting an R5 element as an Extension, rather than creating a UK Core specific extension is fully met.
 
-As of 19/05/2023, the package to enable pre-adopted elements to function as per the guidance, is not available. To enable rendering and validation of these pre-adopted elements, we have provided UK Core proxy extensions, as per the current threads on <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/R5.20Extensions.20for.20R4.3F" class="external">chat.fhir.org</a>, with the R5 canonical urls. These proxy extensions will be retired once the HL7 package is released.
+<div class="NewAddedItem">Rules and examples for creating and using extensions between versions can be found within <a href="https://build.fhir.org/versions.html#extensions class="external">FHIR Build - Version Management Policy</a>.</div><br>
+
+
+<i>As of 19/05/2023, the package to enable pre-adopted elements to function as per the guidance, is not available. To enable rendering and validation of these pre-adopted elements, we have provided UK Core proxy extensions, as per the current threads on <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/R5.20Extensions.20for.20R4.3F" class="external">chat.fhir.org</a>, with the R5 canonical urls. These proxy extensions will be retired once the HL7 package is released.</i>
 
 <table class="assets" title="Pre-adopted FHIR R5 elements list and context of use details">
 <tr>
