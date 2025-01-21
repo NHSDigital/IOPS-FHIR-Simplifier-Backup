@@ -12,7 +12,7 @@
       <tr>
         <td>Code</td>
         <td>Required</td>
-        <td>0..1</td>
+        <td>1..1</td>
       </tr>
     </tbody>
 </table>
