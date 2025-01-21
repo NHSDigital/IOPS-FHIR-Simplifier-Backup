@@ -12,7 +12,7 @@
       <tr>
         <td>string</td>
         <td>optional, only used to notify the patient of rejection reasons</td>
-        <td>1:1</td>
+        <td>0:1</td>
       </tr>
     </tbody>
 </table>
