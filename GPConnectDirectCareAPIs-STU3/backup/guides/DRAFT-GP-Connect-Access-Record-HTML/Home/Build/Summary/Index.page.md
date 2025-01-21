@@ -6,6 +6,6 @@ topic: summary_index
 
 > Information on the 'Summary' HTML view.
 
-| Section code | Section name | TPP | EMIS | Vision | Microtest |
+| Section code | Section name | TPP | EMIS | Medicus|
 | --- | --- | --- | --- | --- | --- |
-| SUM | Summary | Yes | Yes | Yes | Yes |
+| SUM | Summary | Yes | Yes | Yes |

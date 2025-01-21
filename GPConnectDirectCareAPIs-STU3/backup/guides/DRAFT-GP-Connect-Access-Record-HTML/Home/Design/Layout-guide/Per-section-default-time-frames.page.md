@@ -27,6 +27,7 @@ Date filtering is not applicable to all views and for those supporting date filt
 | **Summary** | `SUM` | N/A | N/A |
 | **Emergency Codes** | N/A | N/A | N/A |
 
+<br>
 
 The default time frame **MUST** be configurable in unit of month(s). It **MUST** be configurable by section (meaning, different sections can be configured with different defaults).
 
@@ -40,17 +41,18 @@ When a default time frame is applied at section level the following requirements
 When applying a default time frame the following messages **MUST** be supplied by the provider:
 
 Subsection’s time frame ‘Consumer supplied’
-```
+
+```html
 <div class="date-banner">
-    <p> All data items from [SysDate – DefaultDatePeriod]</p>
+  <p> All data items from [SysDate – DefaultDatePeriod]</p>
 </div>
 ```
 
 Subsection’s time frame ‘All’
 
-```
+```html
 <div class="date-banner">
-	<p>Date filter not applied</p>
+  <p>Date filter not applied</p>
 </div>
 ```
 

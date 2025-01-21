@@ -10,3 +10,5 @@
   filename: FHIR-Resources
 - name: Error handling guidance
   filename: Error-handling-guidance
+- name: Known issues
+  filename: Known-issues

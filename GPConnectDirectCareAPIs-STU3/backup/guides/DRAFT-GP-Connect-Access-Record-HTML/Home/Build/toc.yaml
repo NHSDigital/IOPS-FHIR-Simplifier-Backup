@@ -10,5 +10,13 @@
   filename: Allergies-and-adverse-reactions
 - name: Medications
   filename: Medications
+- name: Referrals
+  filename: Referrals
+- name: Observations
+  filename: Observations
+- name: Immunisations
+  filename: Immunisations
+- name: Administrative items
+  filename: Administrative-items
 - name: Emergency codes
   filename: Emergency-Codes

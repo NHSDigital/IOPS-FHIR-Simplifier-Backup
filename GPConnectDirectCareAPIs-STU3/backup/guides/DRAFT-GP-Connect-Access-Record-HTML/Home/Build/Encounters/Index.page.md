@@ -1,7 +1,3 @@
----
-topic: Encounters
----
-
 ## {{page-title}}
 
 > Information on the 'Encounters' HTML view.
