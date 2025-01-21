@@ -1,0 +1,6 @@
+- name: View Relationship - Search on Patient NHS Number
+  filename: View-Relationship-Search-on-Patient-NHS-Number
+- name: View Relationship - Search on Person NHS Number
+  filename: View-Relationship-Search-on-Person-NHS-Number
+- name: Index
+  filename: Index.page.md
