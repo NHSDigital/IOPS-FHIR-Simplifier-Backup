@@ -1,2 +1,10 @@
 - name: Index
   filename: Index.page.md
+- name: Use Case - Match Parents on General Register Office (GRO) Civil Birth Registration
+  filename: Use-Case-Match-Parents-on-General-Register-Office-GRO-Civil-Birth-Registration.page.md
+- name: Use Case - National Back Office (NBO) Potential Relationships 
+  filename: Use-Case-National-Back-Office-NBO-Potential-Relationships.page.md
+- name: Use Case - National Back Office (NBO) Views a relationship
+  filename: Use-Case-National-Back-Office-NBO-Views-a-relationship.page.md
+- name: Use Case - National Back Office (NBO) Updates a relationship
+  filename: Use-Case-National-Back-Office-NBO-Updates-a-relationship.page.md

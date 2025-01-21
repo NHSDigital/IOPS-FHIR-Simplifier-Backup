@@ -1,2 +1,6 @@
+- name: Scenario - View a Relationship
+  filename: Scenario-View-a-Relationship
+- name: Scenario - Modify a Relationship
+  filename: Scenario-Modify-a-Relationship
 - name: Index
   filename: Index.page.md
