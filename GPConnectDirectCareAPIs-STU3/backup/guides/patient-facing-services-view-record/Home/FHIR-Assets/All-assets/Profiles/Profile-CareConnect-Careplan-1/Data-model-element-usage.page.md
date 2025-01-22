@@ -9,7 +9,7 @@
             <th data-no-sort>UK Core (R4)</th>
         </tr>
     </thead>
-    <tbody>>
+    <tbody>
         <!-- identifier -->
         <tr>
             <td>identifier</td>
