@@ -34,8 +34,8 @@
   filename: author.page.md
 - name: careTeam
   filename: careTeam.page.md
-- name: adresses
-  filename: adresses.page.md
+- name: addresses
+  filename: addresses.page.md
 - name: supportingInfo
   filename: supportingInfo.page.md
 - name: goal

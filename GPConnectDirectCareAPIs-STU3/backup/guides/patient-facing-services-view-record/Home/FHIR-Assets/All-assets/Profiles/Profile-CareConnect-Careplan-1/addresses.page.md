@@ -6,14 +6,14 @@
 
 <h5><ins>Guidance</ins></h5>
 
-Identifies the original context (encounter/episode of care) in which this  Care plan was created.
+Identifies the conditions/problems/diagnoses/etc. whose management and/or mitigation are handled by this Care plan.
 
 <h5><ins>Example</ins></h5>
 
 ```xml
-  <context> 
-    <reference value="Encounter/GPvisit"/> 
-  </context> 
+  <careTeam> 
+    <reference value="CareTeam/example"/> 
+  </careTeam> 
 ```
 
 ---
