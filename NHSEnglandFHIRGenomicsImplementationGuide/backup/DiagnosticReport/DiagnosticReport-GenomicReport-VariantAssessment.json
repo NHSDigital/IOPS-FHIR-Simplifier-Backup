@@ -1,0 +1,124 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "DiagnosticReport-GenomicReport-VariantAssessment",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
+      "valueReference": {
+        "reference": "Task/Task-GenomicReport-FollowupRecommendation",
+        "display": "Confirmatory testing recommended"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+      "valueRelatedArtifact": {
+        "type": "citation",
+        "display": "Johnson et al 2012 (PMID22740598)"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+      "valueRelatedArtifact": {
+        "type": "citation",
+        "display": "Foley et al 2014 (PMID22740598)"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report-note",
+      "valueAnnotation": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/annotation-code",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/coded-annotation-types-cs",
+                  "code": "test-disclaimer"
+                }
+              ]
+            }
+          }
+        ],
+        "text": "Proband whole genome sequencing by the 100,000 Genomics Project with analysis of the PanelApp Paediatric motor neuronopathies (version 1.6) gene panel followed by in-house Sanger sequencing confirmation. Please note that the sensitivity of this test is limited by the types of detectable pathogenic variants, regions of low read depth coverage and incomplete ascertainment of disease-gene associations. Further information including read depth coverage is available on request. *Variants are classified using the ACMG/AMP guidelines (Richards et al 2015 PMID25741868)."
+      }
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderFormUpdated-TrioTesting-Example"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "51969-4"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PheobeSmitham-Example"
+  },
+  "effectiveDateTime": "2023-10-16T00:00:00-05:00",
+  "issued": "2023-09-16T00:00:00-05:00",
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "R0A"
+      }
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/Observation-GenomicsVariant-SLC52A2",
+      "display": "Brown-Vialetto-Van Laere syndrome type 2"
+    },
+    {
+      "reference": "Observation/Observation-GenomicImplication-Therapeutic"
+    }
+  ],
+  "conclusion": "Pheobe is homozygous for a pathogenic SLC52A2 missense variant (details below) previously reported by Johnson et al 2012 (PMID22740598). Biallelic pathogenic SLC52A2 variants cause autosomal recessive Brown-Vialetto-Van Laere syndrome type 2 (MIM614707).",
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "LA6576-8",
+          "display": "Positive"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "699866005",
+          "display": "Brown-Vialetto-Van Laere syndrome"
+        }
+      ]
+    }
+  ],
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "language": "en-GB",
+      "url": "https://cts5j3.axshare.com/?id=mhxwul&p=final_report_issued_test_complete&g=1",
+      "size": 43272,
+      "title": "Genomic Report for Pheobe Smitham",
+      "creation": "2023-10-16"
+    }
+  ]
+}

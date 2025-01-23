@@ -141,7 +141,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Condition-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DiagnosticReport-Genomics",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation-Genomics",
@@ -158,7 +158,7 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition",
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
               "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DiagnosticReport-Genomics"
             ],
             "aggregation": [
