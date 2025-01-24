@@ -22,7 +22,7 @@
             <td>definition</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-exclamation text-warning" title="This element is replaced by 'instantiatesCanonical' and 'instantiatesUri' in FHIR UK Core"></i></td>
         </tr>
         <!-- basedOn -->
         <tr>
@@ -113,7 +113,7 @@
             <td>context</td>
             <td><span class="mro-circle optional" title="Optional"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-exclamation text-warning" title="This element is replaced by 'encounter' in FHIR UK Core"></i></td>
         </tr>
         <!-- executionPeriod -->
         <tr>
@@ -162,7 +162,7 @@
             <td>reason</td>
             <td><span class="mro-circle required" title="Required"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-exclamation text-warning" title="This element is replaced by 'reasonCode' in FHIR UK Core"></i></td>
         </tr>
         <!-- note -->
         <tr>
