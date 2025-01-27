@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-GenomicsVariantSLC52A2",
+  "id": "Observation-GenomicsVariantSLC52A2-Example",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
