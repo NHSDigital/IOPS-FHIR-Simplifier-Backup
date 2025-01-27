@@ -88,5 +88,5 @@
 <br>
 
 ### Workflow
-{{render:Request Access_JT.jpg}}
+{{render:Request Access_JTv2.jpg}}
 

@@ -1,4 +1,6 @@
+- name: Scenario - Request Proxy Access
+  filename: Scenario-Request-Proxy-Access
+- name: Scenario - Request Authorisation
+  filename: Scenario-Request-Authorisation
 - name: Scenario - View a Relationship
   filename: Scenario-View-a-Relationship
-- name: Scenario - Request Access and Create a Relationship
-  filename: Scenario-Request-Access-and-Create-a-Relationship
