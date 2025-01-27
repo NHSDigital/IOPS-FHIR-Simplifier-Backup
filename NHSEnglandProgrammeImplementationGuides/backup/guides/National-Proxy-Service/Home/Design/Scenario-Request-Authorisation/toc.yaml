@@ -1,0 +1,16 @@
+- name: Index
+  filename: Index.page.md
+- name: Request Consent Verification
+  filename: Request-Consent-Verification
+- name: Accept Consent Verification
+  filename: Accept-Consent-Verification
+- name: View Proxy Access Request
+  filename: View-Proxy-Access-Request
+- name: Complete Consent Verification
+  filename: Complete-Consent-Verification
+- name: Update National Proxy Registry
+  filename: Update-National-Proxy-Registry
+- name: Inform Proxy of Decision
+  filename: Inform-Proxy-of-Decision
+- name: Reject Consent Verification
+  filename: Reject-Consent-Verification
