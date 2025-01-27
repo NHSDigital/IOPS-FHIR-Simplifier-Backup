@@ -1,6 +1,6 @@
 {
   "resourceType": "DiagnosticReport",
-  "id": "DiagnosticReport-GenomicReport-VariantAssessment",
+  "id": "DiagnosticReport-GenomicVariantAssessment-Example",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
@@ -10,7 +10,7 @@
     {
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
       "valueReference": {
-        "reference": "Task/Task-GenomicReport-FollowupRecommendation",
+        "reference": "Task/Task-FollowupRecommendationReport-Example",
         "display": "Confirmatory testing recommended"
       }
     },

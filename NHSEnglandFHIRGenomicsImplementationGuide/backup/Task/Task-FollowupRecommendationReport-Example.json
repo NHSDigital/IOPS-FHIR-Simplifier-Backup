@@ -1,6 +1,6 @@
 {
   "resourceType": "Task",
-  "id": "Task-GenomicReport-FollowupRecommendation",
+  "id": "Task-FollowupRecommendationReport-Example",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation"
