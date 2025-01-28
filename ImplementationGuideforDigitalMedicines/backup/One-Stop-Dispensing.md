@@ -21,3 +21,12 @@ One-stop dispensing is not used everywhere and has some drawbacks. Here is an sh
 ## FHIR implementation guidance when using one-stop schemes
 
 To be written... to highlight how FHIR resources may be used in different ways and contain different data compared to other medicines schemes that might be adopted within a Trust.
+
+<!-- notes
+
+Meds labels will be patient friendly, so dosage should be friendly.
+Assume product-based, so dose as "1 tablet" not "50mg".
+
+Consider using the MedicationRequest.category of "discharge" for medicines requested during the inpatient stay that could then be taken away on discharge. This would also then provided a means to differentiate from any medication requests that are not following the one-stop process.
+
+end notes -->
