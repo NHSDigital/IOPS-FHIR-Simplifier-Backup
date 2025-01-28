@@ -4,6 +4,8 @@
   filename: DiagnosticReport-AnitaLamberts-Example.page.md
 - name: DiagnosticReport-FayMutlowGeneticReport-Example
   filename: DiagnosticReport-FayMutlowGeneticReport-Example.page.md
+- name: DiagnosticReport-GenomicVariantAssessment-Example
+  filename: DiagnosticReport-GenomicVariantAssessment-Example.page.md
 - name: DiagnosticReport-JamesMetcalfeGeneticReport-Example
   filename: DiagnosticReport-JamesMetcalfeGeneticReport-Example.page.md
 - name: DiagnosticReport-PhoebeSmithGeneticReport-Example

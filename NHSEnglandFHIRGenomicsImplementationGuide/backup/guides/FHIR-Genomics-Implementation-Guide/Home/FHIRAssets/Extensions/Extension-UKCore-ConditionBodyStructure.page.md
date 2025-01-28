@@ -14,7 +14,7 @@ An extension to replicate the changes within R6 to support adding a reference to
 Context of Use
 </div>
 <div id='extension-Context-Use-Profiles'>
-{{pagelink:Genomics-Condition,text:Condition}}
+{{pagelink:Profile-UKCore-Condition,text:Condition}}
 </div>
 </div>
 
