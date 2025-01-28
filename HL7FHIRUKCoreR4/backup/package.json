@@ -1,6 +1,6 @@
 {
   "name": "fhir.r4.ukcore.stu3.currentbuild",
-  "version": "0.0.17-pre-release",
+  "version": "0.0.18-pre-release",
   "description": "UK Core FHIR profiles and Assets",
   "author": "UK Core",
   "fhirVersions": [
