@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: Task-FollowupRecommendationReport-Example
+  filename: Task-FollowupRecommendationReport-Example.page.md
 - name: Task-NonWGSRareDiseaseTestOrder-Cancellation-Example
   filename: Task-NonWGSRareDiseaseTestOrder-Cancellation-Example.page.md
 - name: Task-NonWGSRareDiseaseTestOrder-Example

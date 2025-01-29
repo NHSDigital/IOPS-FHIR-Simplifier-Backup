@@ -6,7 +6,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of a Task updated by a filler orgnization upon completion of a test.
+Example of a Task updated by a filler organization upon completion of a test.
 
 {{page:Home-Examples-ExamplesTemplate}}
 
