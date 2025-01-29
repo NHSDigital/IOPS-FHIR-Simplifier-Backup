@@ -2,3 +2,5 @@
   filename: Index.page.md
 - name: DocumentReference-PharmCAT-Example
   filename: DocumentReference-PharmCAT-Example.page.md
+- name: DocumentReference-StructureReporting-Example
+  filename: DocumentReference-StructureReporting-Example.page.md

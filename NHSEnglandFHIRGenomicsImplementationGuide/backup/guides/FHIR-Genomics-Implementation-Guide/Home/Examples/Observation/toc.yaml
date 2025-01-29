@@ -44,6 +44,10 @@
   filename: Observation-Neutrophils-Example.page.md
 - name: Observation-GenomicEthnicity-Example
   filename: Observation-GenomicEthnicity-Example.page.md
+- name: Observation-GenomicTherapeuticImplication-Example
+  filename: Observation-GenomicTherapeuticImplication-Example.page.md
+- name: Observation-GenomicsVariantSLC52A2-Example
+  filename: Observation-GenomicsVariantSLC52A2-Example.page.md
 - name: Observation-MultipleRenalCysts-Example
   filename: Observation-MultipleRenalCysts-Example.page.md
 - name: Observation-Nephronophthisis-Example
