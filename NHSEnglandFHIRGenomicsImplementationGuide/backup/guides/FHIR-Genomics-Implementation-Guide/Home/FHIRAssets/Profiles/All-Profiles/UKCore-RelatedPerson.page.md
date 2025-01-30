@@ -156,6 +156,7 @@ In this case the Ryanne Boulder's identifier should be used for the RelatedPerso
 If a local identifier is used, an assigner SHALL be provided.
 The RelatedPerson.identifier field SHALL match the identifier used for a FamilyMemberHistory or Patient resource if these resources are about the same person.
 
+NOTE: As a single individual MAY be related to a number of Patients the identifier used will not be unique across RelatedPerson resources. As such, both the identifier and patient elements SHOULD be used in conjunction to uniquely identify a relationship
 ```json
    "identifier": [
       {

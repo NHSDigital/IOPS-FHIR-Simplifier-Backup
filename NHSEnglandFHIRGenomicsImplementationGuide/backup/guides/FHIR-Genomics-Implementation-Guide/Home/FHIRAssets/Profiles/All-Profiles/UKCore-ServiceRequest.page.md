@@ -522,9 +522,25 @@ In the case of Reanalysis or Reinterpretation tests, Specimens related to previo
 <h4 class='additional-Guidance-Submenu'> note </h4>
 Any information which cannot be readily be structured SHOULD be entered into the note field, though prolific use of the field to capture clinical information which better fits in level 3/4 FHIR resources is discouraged.
 
+To support disambiguation of notes originating from different fields in a client system, the AnnotationType extension MAY be used, specifying the UI element name in text (coded elements for the full list of free text UI elements expected within Test Order forms is pending finalisation and addition to the Genomic Order Management MDS). The author element MAY also be used to reference a Practitioner, by identifier or name (string), indicating the person who created the note.
 ```json
 "note":  [
         {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/annotationType",
+                    "valueCodeableConcept": {
+                        "text": "Has any other members of the family previously had genomic testing (e.g. BRACA, NIPD testing etc)?"
+                    }
+                }
+            ],
+            "authorReference": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                    "value": "9999999999"
+                },
+                "display": "Dr. Gene Smith"
+            },
             "text": "No family history of genomic testing"
         }
     ]
