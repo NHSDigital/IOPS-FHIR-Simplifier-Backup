@@ -50,6 +50,8 @@
   filename: Example-UKCore-Extension-DeviceReference.page.md
 - name: Example UKCore-Extension-DischargeMethod
   filename: Example-UKCore-Extension-DischargeMethod.page.md
+- name: UKCore-Extension-DiagnosticReportMediaLinkR5
+  filename: UKCore-Extension-DiagnosticReportMediaLinkR5.page.md
 - name: Example UKCore-Extension-EmergencyCareDischargeStatus
   filename: Example-UKCore-Extension-EmergencyCareDischargeStatus.page.md
 - name: Example UKCore-Extension-EthnicCategory
