@@ -6,6 +6,7 @@ topic: ReleaseNotes
 ### v0.1.9 (TBC)
 
 * Added {{pagelink:FHIRAssetsR4CapabilityStatements}} and {{pagelink:FHIRAssetsR4MessageDefinitions}} pages (both under the **FHIR Assets** menu bar item).
+* Updated the {{pagelink:R4BundleExampleFullBloodCountReport}} example to include `Observation.interpretation` for out of range values.
 ---
 
 ### v0.1.8 (30/08/2024)
