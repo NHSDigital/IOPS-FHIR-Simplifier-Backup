@@ -8,14 +8,14 @@
   filename: Index.page.md
 - name: UKCore-Bundle
   filename: UKCore-Bundle.page.md
-- name: UKCore-DiagnosticReport-Lab
-  filename: UKCore-DiagnosticReport-Lab.page.md
+- name: UKCore-DiagnosticReport
+  filename: UKCore-DiagnosticReport.page.md
 - name: UKCore-MessageHeader
   filename: UKCore-MessageHeader.page.md
-- name: UKCore-Observation-Group-Lab
-  filename: UKCore-Observation-Group-Lab.page.md
-- name: UKCore-Observation-Lab
-  filename: UKCore-Observation-Lab.page.md
+- name: UKCore-Observation (Test Group)
+  filename: UKCore-Observation-Test-Group.page.md
+- name: UKCore-Observation (Test Result)
+  filename: UKCore-Observation-Test-Result.page.md
 - name: UKCore-Organization
   filename: UKCore-Organization.page.md
 - name: UKCore-Patient
@@ -24,7 +24,7 @@
   filename: UKCore-Practitioner.page.md
 - name: UKCore-PractitionerRole
   filename: UKCore-PractitionerRole.page.md
-- name: UKCore-ServiceRequest-Lab
-  filename: UKCore-ServiceRequest-Lab.page.md
+- name: UKCore-ServiceRequest
+  filename: UKCore-ServiceRequest.page.md
 - name: UKCore-Specimen
   filename: UKCore-Specimen.page.md
