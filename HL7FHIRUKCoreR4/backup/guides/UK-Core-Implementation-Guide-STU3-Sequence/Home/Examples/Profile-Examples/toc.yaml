@@ -28,6 +28,8 @@
   filename: Example-UKCore-Device-SoftwareAsAMedicalDevice.page.md
 - name: Example UKCore-Device-Sphygmomanometer
   filename: Example-UKCore-Device-Sphygmomanometer.page.md
+- name: Example UKCore-DocumentReference-ECG
+  filename: Example-UKCore-DocumentReference-ECG.page.md
 - name: Example UKCore-Encounter-InpatientEncounter
   filename: Example-UKCore-Encounter-InpatientEncounter.page.md
 - name: Example UKCore-FamilyMemberHistory-FatherDiabetes
