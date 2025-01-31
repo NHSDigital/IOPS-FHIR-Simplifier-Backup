@@ -3,7 +3,8 @@
   "id": "DiagnosticReport-GenomicVariantAssessment-Example",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report",
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport"
     ]
   },
   "extension": [
@@ -83,6 +84,28 @@
         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
         "value": "R0A"
       }
+    }
+  ],
+  "media": [
+    {
+      "link": {
+        "type":"DocumentReference",
+        "display": "Reference to DocumentReferences are not supported within media.link in DiagnosticReport R4 StructureDefinition.",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unsupported"
+          }
+        ]
+      },
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link",
+          "valueReference": {
+            "reference": "DocumentReference/DocumentReference-StructureReporting-Example"
+          }
+        }
+      ]
     }
   ],
   "result": [
