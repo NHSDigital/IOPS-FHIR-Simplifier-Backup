@@ -7,7 +7,7 @@ expand: yes
 
 ## {{page-title}}
 
-Example of an observation representing a Therapeutic Implication recommended upon Genomic Testing.
+Example of an Observation representing a Therapeutic Implication derived from Genomic Testing.
 
 
 {{page:Home-Examples-ExamplesTemplate}}
