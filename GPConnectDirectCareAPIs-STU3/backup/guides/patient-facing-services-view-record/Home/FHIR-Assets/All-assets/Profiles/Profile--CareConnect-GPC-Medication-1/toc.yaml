@@ -34,3 +34,5 @@
   filename: package.page.md
 - name: image
   filename: image.page.md
+- name: extension(MedicationTradeFamily)
+  filename: extension-MedicationTradeFamily.page.md
