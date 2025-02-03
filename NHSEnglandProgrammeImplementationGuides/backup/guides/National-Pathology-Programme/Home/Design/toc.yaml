@@ -4,8 +4,6 @@
   filename: Design-Overview.page.md
 - name: Data Mapping
   filename: Data-Mapping.page.md
-- name: Data Mapping Example
-  filename: Data-Mapping-Example.page.md
 - name: Transport
   filename: Transport.page.md
 - name: Error Handling

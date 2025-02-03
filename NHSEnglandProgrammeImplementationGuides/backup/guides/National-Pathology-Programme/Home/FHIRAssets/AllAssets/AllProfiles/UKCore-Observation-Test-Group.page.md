@@ -6,17 +6,17 @@ topic: R4ObservationTestGroup
 ### Summary
 A set of related tests that are reported together, for example a Full Blood Count. Test groups are often referred to as batteries, panels or profiles. 
 
-The test group is represented using `UKCore-Observation-Group-Lab` with references to instances of `UKCore-Observation-Lab` that contain the associated test results. The references are defined using `UKCore-Observation-Group-Lab.hasMember`. 
+The test group is represented using `UKCore-Observation` with references to instances of `UKCore-Observation` that contain the associated test results. The references are defined using `UKCore-Observation.hasMember`. 
 
-`UKCore-Observation-Group-Lab.code` is used to represent the clinical code and name of the test group. 
+`UKCore-Observation.code` is used to represent the clinical code and name of the test group. 
 
-`UKCore-Observation-Group-Lab.value[x]` is not used as a test group does not carry a test result. 
+`UKCore-Observation.value[x]` is not used as a test group does not carry a test result. 
 
 Refer to the {{pagelink:R4ObservationTestResult}} profile definition and the {{pagelink:DesignOverview}} section for further information.
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
-* R4 UK Core Profile: [UKCore-Observation-Group-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-group-lab?current)
+* R4 UK Core Profile: [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
@@ -44,14 +44,12 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 
 <div id="Examples" class="tabcontent">
     <h4>Examples</h4>
-    <b>UKCore-Observation-Group-Lab Snippets</b> - An example to illustrate how each key data element in <code>UKCore-Observation-Group-Lab</code> may be populated.<br>{{pagelink:R4SnippetsObservationTestGroup}}<br><br>
-    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-Observation-Group-Lab</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReportUnstructured}}<br>{{pagelink:R4BundleExampleGTTReportStructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportUnstructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportStructured}}<br><br>
-    <b>UK Core Example</b> - An example from the UK Core Implementation Guide.<br>
-    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/Examples/ExamplesIndex/Example-UKCore-Observation-Group-FullBloodCount?current">UKCore-Observation-Group-FullBloodCount-Example</a><br>
+    <b>UKCore-Observation-Snippets</b> - An example to illustrate how each key data element in <code>UKCore-Observation</code> may be populated for a test group.<br>{{pagelink:R4SnippetsObservationTestGroup}}<br><br>
+    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-Observation</code> for a test group within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReportUnstructured}}<br>{{pagelink:R4BundleExampleGTTReportStructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportUnstructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportStructured}}<br>
 </div>
 
 ### Additional Guidance
-The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-Observation-Group-Lab` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-group-lab?current).
+The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-Observation` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation?current).
 
 ---
 
@@ -94,7 +92,7 @@ The date and time that the test group results were issued.
 ---
 
 ### `value[x]`
-This element **SHOULD NOT** be used within this profile as a test group does not carry a test result.
+This element **SHOULD NOT** be used as a test group `Observation` does not carry a test result.  The results are conveyed in the test result `Observations` that the test group references.
 
 ---
 
@@ -104,6 +102,6 @@ Comments relating to the test group.
 ---
 
 ### `hasMember`
-Reference(s) to the `Observation(s)` that make up the test group. This may contain references to single test results (using the `UKCore-Observation-Lab` profile), test groups (using the `UKCore-Observation-Group-Lab` profile) or a mixture of both.
+Reference(s) to the `Observation(s)` that make up the test group. This may contain references to single test results, test groups or a mixture of both.
 
 Multiple levels of test group `Observations` and test result `Observations` may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity (MC&S) reports. Refer to the {{pagelink:DesignOverview}} section for further information.
