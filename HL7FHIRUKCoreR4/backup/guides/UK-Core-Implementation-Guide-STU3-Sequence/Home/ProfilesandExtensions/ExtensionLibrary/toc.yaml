@@ -42,8 +42,8 @@
   filename: Extension-UKCore-DeviceReference.page.md
 - name: Extension UKCore-DiagnosticReportComposition
   filename: Extension-UKCore-DiagnosticReportComposition.page.md
-- name: Extension-UKCore-DiagnosticReportMedia
-  filename: Extension-UKCore-DiagnosticReportMedia.page.md
+- name: Extension UKCore-DiagnosticReportMediaLink
+  filename: Extension-UKCore-DiagnosticReportMediaLink.page.md
 - name: Extension UKCore-DiagnosticReportNote
   filename: Extension-UKCore-DiagnosticReportNote.page.md
 - name: Extension UKCore-DiagnosticReportSupportingInfo
