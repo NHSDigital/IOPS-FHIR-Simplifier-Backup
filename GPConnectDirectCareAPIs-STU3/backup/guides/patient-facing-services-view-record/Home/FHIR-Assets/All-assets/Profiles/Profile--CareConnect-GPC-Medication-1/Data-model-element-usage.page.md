@@ -115,6 +115,13 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-times text-danger"></i></td>
         </tr>
+        <!-- extension(MedicationTradeFamily) -->
+        <tr>
+            <td>extension(MedicationTradeFamily)</td>
+            <td><span class="mro-circle required" title="Required"></span></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+        </tr>
     </tbody>
 </table>
 

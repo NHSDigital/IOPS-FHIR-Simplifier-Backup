@@ -64,3 +64,5 @@
   filename: note.page.md
 - name: relevantHistory
   filename: relevantHistory.page.md
+- name: extension(ReferralRequestMethod)
+  filename: extension-ReferralRequestMethod.page.md
