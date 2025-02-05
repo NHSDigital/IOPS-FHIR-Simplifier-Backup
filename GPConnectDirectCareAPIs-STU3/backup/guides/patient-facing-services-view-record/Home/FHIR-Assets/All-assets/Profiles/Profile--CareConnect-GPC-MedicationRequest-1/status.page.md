@@ -6,11 +6,11 @@
 
 <h5><ins>Guidance</ins></h5>
 
-The status of the authorisation within GP Connect will typically be one of:
+The status of the authorisation within GP Connect will be one of `active`, `completed` or `stopped`:
 
 - `active` - representing an active authorisation - used for active medications/medical devices
-- `stopped` - representing an authorisation which has been discontinued, cancelled or stopped
 - `completed` - representing an authorisation which has run its course
+- `stopped` - representing an authorisation which has been discontinued, cancelled or stopped
 
 For `MedicationRequest` instances where `intent` is set to `plan`:
 
@@ -24,7 +24,7 @@ For `MedicationRequest` instances where `intent` is set to `order`:
 
 ---
 
-The scope of status may vary depending on the nature of the implementation. The FHIR standard defines the status of `completed` as:
+<!-- The scope of status may vary depending on the nature of the implementation. The FHIR standard defines the status of `completed` as:
 
 > All actions that are implied by the prescription have occurred.
 
@@ -48,7 +48,6 @@ The following guidance is based on an implementation tracking the status through
         </tr>
     </thead>
     <tbody>
-        <!-- Draft -->
         <tr>
             <td class="nhsd-t-body"><code>Draft</code></td>
             <td class="nhsd-t-body">
@@ -58,7 +57,6 @@ The following guidance is based on an implementation tracking the status through
                 The order is work in progress within the ePMA system and has not yet sent to the pharmacy.
             </td>
         </tr>
-        <!-- Active -->
         <tr>
             <td class="nhsd-t-body"><code>active</code></td>
             <td class="nhsd-t-body">
@@ -68,7 +66,6 @@ The following guidance is based on an implementation tracking the status through
                 The order has been sent and accepted by the pharmacy. Dispensing and administration activities may of started but are not yet `Complete`.
             </td>
         </tr>
-        <!-- Completed -->
         <tr>
             <td class="nhsd-t-body"><code>completed</code></td>
             <td class="nhsd-t-body">
@@ -78,7 +75,6 @@ The following guidance is based on an implementation tracking the status through
                 Dispensing activities have been completed for the medication defined within the order.
             </td>
         </tr>
-        <!-- On hold -->
         <tr>
             <td class="nhsd-t-body"><code>on-hold</code></td>
             <td class="nhsd-t-body">
@@ -88,7 +84,6 @@ The following guidance is based on an implementation tracking the status through
                 Will prevent the order being sent to the pharmacy. If already sent, an update needs to be sent to the pharmacy to temporarily halt further dispensing.
             </td>
         </tr>
-        <!-- Cancelled -->
         <tr>
             <td class="nhsd-t-body"><code>cancelled</code></td>
             <td class="nhsd-t-body">
@@ -98,7 +93,6 @@ The following guidance is based on an implementation tracking the status through
                 Will prevent the order being sent to the pharmacy. If already sent, an update needs to be sent to the pharmacy so that no further medication is dispensed.
             </td>
         </tr>
-        <!-- Stopped -->
         <tr>
             <td class="nhsd-t-body"><code>stopped</code></td>
             <td class="nhsd-t-body">
@@ -108,7 +102,6 @@ The following guidance is based on an implementation tracking the status through
                 The order needs to be stopped on clinical grounds. An update needs to be sent to the pharmacy so that no further medication is dispensed.
             </td>
         </tr>
-        <!-- Entered in Error -->
         <tr>
             <td class="nhsd-t-body"><code>entered-in-error</code></td>
             <td class="nhsd-t-body">
@@ -118,7 +111,6 @@ The following guidance is based on an implementation tracking the status through
                 The order needs to be stopped due to human data entry error. An update needs to be sent to the pharmacy so that no further medication is dispensed.
             </td>
         </tr>
-        <!-- Unknown -->
         <tr>
             <td class="nhsd-t-body"><code>unknown</code></td>
             <td class="nhsd-t-body">
@@ -147,7 +139,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
         </tr>
     </thead>
     <tbody>
-        <!-- Draft to Active -->
         <tr>
             <td class="nhsd-t-body"><code>draft</code></td>
             <td class="nhsd-t-body"><code>active</code></td>
@@ -155,7 +146,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 This transition will trigger the sending / sharing of the MedicationRequest from the ePMA system to the pharmacy system to start dispensing activities.
             </td>
         </tr>
-        <!-- Draft to Cancelled -->
         <tr>
             <td class="nhsd-t-body"><code>draft</code></td>
             <td class="nhsd-t-body"><code>cancelled</code></td>
@@ -163,7 +153,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 Contained within the ePMA system.
             </td>
         </tr>
-        <!-- Draft to On-hold -->
         <tr>
             <td class="nhsd-t-body"><code>draft</code></td>
             <td class="nhsd-t-body"><code>on-hold</code></td>
@@ -171,7 +160,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 Contained within the ePMA system.
             </td>
         </tr>
-        <!-- Draft to Entered-in-Error -->
         <tr>
             <td class="nhsd-t-body"><code>draft</code></td>
             <td class="nhsd-t-body"><code>entered-in-error</code></td>
@@ -179,7 +167,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 Contained within the ePMA system.
             </td>
         </tr>
-        <!-- On-hold to Draft -->
         <tr>
             <td class="nhsd-t-body"><code>on-hold</code></td>
             <td class="nhsd-t-body"><code>draft</code></td>
@@ -187,7 +174,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 Contained within the ePMA system.
             </td>
         </tr>
-        <!-- On-hold to Active -->
         <tr>
             <td class="nhsd-t-body"><code>on-hold</code></td>
             <td class="nhsd-t-body"><code>active</code></td>
@@ -195,7 +181,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 This transition will trigger an update to the <code>MedicationRequest</code> from the ePMA system to the pharmacy system to restart dispensing activities. Within a RESTful implementation this would be typically implemented as either an <code>HTTP PUT</code> or <code>HTTP PATCH</code>.
             </td>
         </tr>
-        <!-- On-hold to Canelled -->
         <tr>
             <td class="nhsd-t-body"><code>on-hold</code></td>
             <td class="nhsd-t-body"><code>active</code></td>
@@ -203,7 +188,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 Contained within the ePMA system.
             </td>
         </tr>
-        <!-- On-hold to Stopped -->
         <tr>
             <td class="nhsd-t-body"><code>on-hold</code></td>
             <td class="nhsd-t-body"><code>stopped</code></td>
@@ -211,7 +195,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 Contained within the ePMA system.
             </td>
         </tr>
-        <!-- On-hold to Entered-in-error -->
         <tr>
             <td class="nhsd-t-body"><code>on-hold</code></td>
             <td class="nhsd-t-body"><code>entered-in-error</code></td>
@@ -219,7 +202,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 Contained within the ePMA system.
             </td>
         </tr>
-        <!-- Active to Active -->
         <tr>
             <td class="nhsd-t-body"><code>active</code></td>
             <td class="nhsd-t-body"><code>active</code></td>
@@ -227,7 +209,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 Not a MedicationRequest status transition but the pharmacy system could send / share dispensing activities with the ePMA system, typically using a FHIR profile based on <code>MedicationDispense</code>.
             </td>
         </tr>
-        <!-- Active to On-hold -->
         <tr>
             <td class="nhsd-t-body"><code>active</code></td>
             <td class="nhsd-t-body"><code>on-hold</code></td>
@@ -238,7 +219,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 If dispensing has already occurred but meds have not been delivered to the ward then they can stay within the pharmacy until the request is re-activated. If meds have been delivered to the ward then there is no action required by the pharmacy system.
             </td>
         </tr>
-        <!-- Active to Entered-in-Error -->
         <tr>
             <td class="nhsd-t-body"><code>active</code></td>
             <td class="nhsd-t-body"><code>entered-in-error</code></td>
@@ -246,7 +226,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 This transition will trigger an update to the <code>MedicationRequest</code> from the ePMA system to the pharmacy system to stop dispensing activities.
             </td>
         </tr>
-        <!-- Active to Stopped -->
         <tr>
             <td class="nhsd-t-body"><code>active</code></td>
             <td class="nhsd-t-body"><code>stopped</code></td>
@@ -254,7 +233,6 @@ This state transition diagram is an enhancement over the generic [State Machine]
                 This transition will trigger an update to the <code>MedicationRequest</code> from the ePMA system to the pharmacy system to stop dispensing activities.
             </td>
         </tr>
-        <!-- Active to Completed -->
         <tr>
             <td class="nhsd-t-body"><code>active</code></td>
             <td class="nhsd-t-body"><code>completed</code></td>
@@ -271,5 +249,4 @@ This state transition diagram is an enhancement over the generic [State Machine]
 ```xml
 <status value="completed" />
 ```
-
----
+-->
