@@ -7,6 +7,10 @@ topic: Home-Guide
 
 ## UK Core Implementation Guide Current Draft Build ##
 
+<script async src="https://cse.google.com/cse.js?cx=c4b4f7c275f1e4d53">
+</script>
+<div class="gcse-search"></div>
+
 <p>
 <h3>Project Description and Scope</h3>
 
