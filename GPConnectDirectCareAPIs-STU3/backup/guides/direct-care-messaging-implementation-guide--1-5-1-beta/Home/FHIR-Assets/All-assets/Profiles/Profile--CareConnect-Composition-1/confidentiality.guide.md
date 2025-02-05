@@ -16,6 +16,10 @@ Previously, "Send Document" allowed the sharing of confidential or "restricted" 
 
 Now, with the updated "Send Document v2x", you can no longer share confidential consultations. If a patient requests their consultation to remain private, it cannot be shared using this system.
 
+<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
+    <b>Note</b>: While the updated guidance disallows confidential items to be sent via the Send Document channel, it could still be possible for a provider to send something where the <code>confidentiality</code> element is set to "R".<br /><br />In such cases, the receiving system should <b>NOT</b> automatically file the document. Instead, it should be added to an area within the clinical system where a clinician can review.
+</div>
+
 ### Why the change?
 
 This update aligns "GP Connect: Update Record" with how patient records are handled in other systems.
