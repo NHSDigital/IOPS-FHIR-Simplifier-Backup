@@ -30,6 +30,31 @@ The amount of medication per dose, as a [simple coded quantity](http://hl7.org/f
 </doseAndRate>
 ```
 
+For some dosing instructions, for example with **Methotrexate** dosing, it may be good clinical practice to express the dose using different units of measure, using two instances of the `doseAndRate` element. 
+
+```xml
+<!-- Example: for Methotrexate 2.5mg tablets -->
+<text value="2 tablet (5 milligram)" />
+<doseAndRate>
+    <doseQuantity>
+        <value value="2"/>
+        <unit value="tablet"/>
+        <system value="http://snomed.info/sct"/>
+        <code value="428673006"/>
+    </doseQuantity>
+</doseAndRate>
+<doseAndRate>
+    <doseQuantity>
+        <value value="5"/>
+        <unit value="milligram"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+    </doseQuantity>
+</doseAndRate>
+```
+
+Within the `text` element, include the second quantity in brackets after the first dose quantity. The first dose quantity should be that which aligns with the unit dose form of the medication, i.e. Methotrexate tablets, so express as `"2 tablet (5 milligram)"` and not `"5 milligram (2 tablet)"`.
+
 ### Sub-element: `Dosage.doseAndRate.doseRange`
 
 A dose that may be in a given low / high range.
