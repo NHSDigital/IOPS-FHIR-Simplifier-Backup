@@ -4,15 +4,12 @@ topic: R4ObservationTestGroup
 ## UKCore-Observation (Test Group)
 
 ### Summary
-A set of related tests that are reported together, for example a Full Blood Count. Test groups are often referred to as batteries, panels or profiles. 
+A test group, represented using `UKCore-Observation`.
+Within this implementation guide, a test group is defined as a set of related tests that are reported together, for example a Full Blood Count. Test groups are more widely referred to as batteries, panels or profiles. 
 
-The test group is represented using `UKCore-Observation` with references to instances of `UKCore-Observation` that contain the associated test results. The references are defined using `UKCore-Observation.hasMember`. 
+When used to represent a test group, `UKCore-Observation` includes references to other instances of `UKCore-Observation` that contain the associated test results. The references are defined using `UKCore-Observation.hasMember`.
 
-`UKCore-Observation.code` is used to represent the clinical code and name of the test group. 
-
-`UKCore-Observation.value[x]` is not used as a test group does not carry a test result. 
-
-Refer to the {{pagelink:R4ObservationTestResult}} profile definition and the {{pagelink:DesignOverview}} section for further information.
+Refer to {{pagelink:R4ObservationTestResult}} for a description of how `UKCore-Observation` is used to represent a test result.
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
@@ -92,7 +89,7 @@ The date and time that the test group results were issued.
 ---
 
 ### `value[x]`
-This element **SHOULD NOT** be used as a test group `Observation` does not carry a test result.  The results are conveyed in the test result `Observations` that the test group references.
+This element **SHOULD NOT** be used as a test group `Observation` does not directly carry a test result.  The results are conveyed in the test result `Observations` that the test group references.
 
 ---
 
