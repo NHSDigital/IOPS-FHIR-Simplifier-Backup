@@ -87,6 +87,17 @@ A provider system allows the user to construct a dosage instruction using variou
      </additionalInstruction>
 </dosageInstruction>
 ```
+
+### Fully unstructured dosing instructions
+
+Where no aspect of the dosing instruction can be coded, use the `text` to convey the text-based dosing instruction.
+
+```xml
+<dosageInstruction>
+     <text value="Add half to 2 capfuls to bath water, or apply to wet skin and rinse" />
+</dosageInstruction> 
+```
+
 <!--
 ### Implementation Example C - If the international FHIR specification is followed - to highlight the clinical risk
 
