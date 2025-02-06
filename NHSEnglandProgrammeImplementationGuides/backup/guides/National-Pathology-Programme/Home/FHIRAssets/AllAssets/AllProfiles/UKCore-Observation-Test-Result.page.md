@@ -6,11 +6,7 @@ topic: R4ObservationTestResult
 ### Summary
 An individual test result, represented using `UKCore-Observation`. The test result may be for a single test or it may form part of a test group such as a Full Blood Count.
 
-`UKCore-Observation.code` is used to represent the clinical code and name of the test.
-
-`UKCore-Observation.hasMember` is not used as this profile is used to represent a test result rather than a test group. Where an `Observation` is being used to represent a test group (with `Observation.hasMember` references), then `UKCore-Observation-Group-Lab` should be used instead.
-
-Refer to the {{pagelink:R4ObservationTestGroup}} profile definition and the {{pagelink:DesignOverview}} section for further information.
+Refer to {{pagelink:R4ObservationTestGroup}} for a description of how `UKCore-Observation` is used to represent a test group.
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)

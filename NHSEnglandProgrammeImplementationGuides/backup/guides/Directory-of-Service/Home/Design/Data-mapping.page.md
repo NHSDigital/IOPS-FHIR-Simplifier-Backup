@@ -184,6 +184,12 @@ Details about the service, including the days, times, dates during which the ser
     <td>HealthcareService.coverageArea Reference(Location)</td>
     <td>Location(s) service is intended for/available to</td>
   </tr>
+  <tr>
+    <td>Endpoint</td>
+    <td>0..*</td>
+    <td>HealthcareService.endpoint Reference(Endpoint)</td>
+    <td>Technical endpoints providing access to electronic services operated for the healthcare service</td>
+  </tr>
 </tbody>
 </table>
 
@@ -267,6 +273,7 @@ Organization "1" *-- "many" OrganizationAffiliation : has
 Organization "1" *-- "many" Location : exists at
 Location "1" *-- "many" HealthcareService : provides
 HealthcareService "0" *-- "many" Questionnaire : has
+HealthcareService "0" *-- "many" Endpoint : has
 Questionnaire "1" *-- "many" QuestionnaireResponse: has
 HealthcareService "1" *-- "many" Schedule : offers
 Schedule "1" *-- "1" PractitionerRole : relate to
@@ -392,6 +399,12 @@ The dates and times a service is available to be returned in a search.
 </thead>
 <tbody>
   <tr>
+    <td>Identifier</td>
+    <td>0..*</td>
+    <td>Endpoint.identifier</td>
+    <td>Identifies this endpoint across multiple systems</td>
+  </tr>
+  <tr>
     <td>Status</td>
     <td>1..1</td>
     <td>Endpoint.status</td>
@@ -402,6 +415,18 @@ The dates and times a service is available to be returned in a search.
     <td>1..1</td>
     <td>Endpoint.connectionType</td>
     <td>Protocol/Profile/Standard to be used with this endpoint connection</td>
+  </tr>
+  <tr>
+    <td>managingOrganization</td>
+    <td>0..1</td>
+    <td>Endpoint.managingOrganization Reference(Organization)</td>
+    <td>Organization that manages this endpoint (might not be the organization that exposes the endpoint)</td>
+  </tr>
+  <tr>
+    <td>Period</td>
+    <td>0..1</td>
+    <td>Endpoint.period</td>
+    <td>Interval the endpoint is expected to be operational</td>
   </tr>
   <tr>
     <td>Payload type</td>

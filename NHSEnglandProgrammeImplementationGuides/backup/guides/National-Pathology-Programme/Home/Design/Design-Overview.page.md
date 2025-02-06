@@ -40,7 +40,7 @@ To aid clarity, individual and organisation type entities (e.g. Performer / Perf
         </tr>
         <tr>
             <td>Test Group</td>
-            <td>A set of related tests, for example a Full Blood Count. <b>Test Groups</b> are often referred to as batteries, panels or profiles. Multiple levels of <b>Test Groups</b> and <b>Test Results</b> may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity reports.</td>
+            <td>A set of related tests that are reported together, for example a Full Blood Count. <b>Test Groups</b> are more widely referred to as batteries, panels or profiles. Multiple levels of <b>Test Groups</b> and <b>Test Results</b> may be nested to support complex report structures, such as those used in Microscopy, Culture and Sensitivity reports.</td>
             <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
             <td>{{pagelink:R4ObservationTestGroup}}</td>
         </tr>

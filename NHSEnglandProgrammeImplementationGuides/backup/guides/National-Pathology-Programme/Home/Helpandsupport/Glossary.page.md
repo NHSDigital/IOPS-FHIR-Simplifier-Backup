@@ -100,7 +100,7 @@ The following terms are of particular relevance to this implementation guide:
         <tr>
             <td></td>
             <td>Test Group</td>
-            <td>Used within this implementation guide to denote a set of related tests that are reported together, for example a Full Blood Count. The individual tests within a test group may differ between organisations. Test groups are often referred to as batteries, panels or profiles.</td>
+            <td>Used within this implementation guide to denote a set of related tests that are reported together, for example a Full Blood Count. The individual tests within a test group may differ between organisations. Test groups are more widely referred to as batteries, panels or profiles.</td>
         </tr>
         <tr>
             <td>UTL</td>
