@@ -26,8 +26,8 @@ Legacy (free text):
 
 ```xml
 <dosageInstruction>
-    <text value="10 milligram - two times a day - oral - Swallow your capsules whole with a glass of water. DO NOT break, crush or chew them" />
-    <patientInstruction value="Swallow your capsules whole with a glass of water. DO NOT break, crush or chew them" />
+    <text value="2 tablet - every 4 hours - up to a maximum of 6 dose in 24 hours - when migraine recurs" />
+    <patientInstruction value="when migraine recurs" />
 </dosageInstruction>
 ```
 
@@ -35,29 +35,35 @@ Structured dose syntax:
 
 ```xml
 <dosageInstruction>
-    <text value="10 milligram - two times a day - oral - Swallow your capsules whole with a glass of water. DO NOT break, crush or chew them" />
-    <patientInstruction value="Swallow your capsules whole with a glass of water. DO NOT break, crush or chew them" />
+    <text value="2 tablet - every 4 hours - up to a maximum of 6 dose in 24 hours - when migraine recurs" />
+    <patientInstruction value="when migraine recurs" />
     <timing>
         <repeat>
             <frequency value="1" />
-            <period value="2" />
-            <periodUnit value="d" />
-            <when value="C" />
+            <period value="4" />
+            <periodUnit value="h" />
         </repeat>
     </timing>
-    <route>
-        <coding>
-            <system value="https://snomed.info/sct" />
-            <code value="26643006" />
-        </coding>
-        <text value="oral" />
-    </route>
     <doseQuantity>
-        <value value="10" />
-        <unit value="milligram" />
-        <system value="https://unitsofmeasure.org" />
-        <code value="mg" />
+        <value value="2" />
+        <unit value="tablet" />
+        <system value="http://snomed.info/sct" />
+        <code value="428673006" />
     </doseQuantity>
+    <maxDosePerPeriod>
+        <numerator>
+            <value value="6" />
+            <unit value="dose" />
+            <system value="http://snomed.info/sct" />
+            <code value="3317411000001100" />
+        </numerator>
+        <denominator>
+            <value value="24" />
+            <unit value="hour" />
+            <system value="http://unitsofmeasure.org/" />
+            <code value="h" />
+        </denominator>
+    </maxDosePerPeriod>
 </dosageInstruction>
 ```
 
