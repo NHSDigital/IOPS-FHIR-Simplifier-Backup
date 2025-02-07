@@ -24,7 +24,12 @@ For `MedicationRequest` instances where `intent` is set to `order`:
 
 ---
 
-<!-- The scope of status may vary depending on the nature of the implementation. The FHIR standard defines the status of `completed` as:
+<!--
+The large chunk of text and diagram below was added some time ago, however, it has been suggested it isn't relevent right now so have been commented out so it could be added back at some point in the future.
+-->
+
+<!--
+The scope of status may vary depending on the nature of the implementation. The FHIR standard defines the status of `completed` as:
 
 > All actions that are implied by the prescription have occurred.
 
