@@ -1,0 +1,42 @@
+# Transform all resources to JSON (Mandatory according to the specification)
+transform-to-json:
+  - source: input
+  - category: Resource
+  - transform: json
+  - target: bucket1
+ 
+# Generate snapshots for all StructureDefinitions (Optional)
+# Note, since the file names stay the same the files will be overwritten and we do not need an extra bucket.
+generate-snapshots:
+  - source: bucket1
+  - category: Profile
+  - action: snapshot
+  - target: bucket1
+ 
+# Move all conformance resources to the /package folder (Mandatory according to the specification)
+move-conformance-resources:
+  - source: bucket1
+  - category: Conformance
+  - move: /package/
+  - target: output
+ 
+# Move all examples to the /package/examples folder (Optional)
+move-examples:
+  - source: bucket1
+  - category: Instance
+  #- transform: json
+  - move: /package/examples
+  - target: output
+ 
+# Move the Package Manifest to the /package folder (Mandatory according to the specification)
+manifest:
+  - source: input
+  - files: package.json
+  - move: /package
+ 
+# Generate an .index.json file with all files in the package (Optional)
+index-file:
+  - source: output
+  - files: /package/**/*.json
+  - action: create-package-index
+  - move: /package
