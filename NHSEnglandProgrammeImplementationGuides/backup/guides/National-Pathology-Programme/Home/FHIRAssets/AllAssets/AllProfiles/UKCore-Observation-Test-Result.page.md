@@ -10,7 +10,7 @@ Refer to {{pagelink:R4ObservationTestGroup}} for a description of how `UKCore-Ob
 
 ### Resource and Profile Links
 * R4 Resource (Base): [Observation](https://hl7.org/fhir/R4/observation.html)
-* R4 UK Core Profile: [UKCore-Observation-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-lab?current)
+* R4 UK Core Profile: [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
@@ -38,18 +38,16 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 
 <div id="Examples" class="tabcontent">
     <h4>Examples</h4>
-    <b>UKCore-Observation-Lab Snippets</b> - An example to illustrate how each key data element in <code>UKCore-Observation-Lab</code> may be populated.<br>{{pagelink:R4SnippetsObservationTestResult}}<br><br>
-    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-Observation-Lab</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReportUnstructured}}<br>{{pagelink:R4BundleExampleGTTReportStructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportUnstructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportStructured}}<br><br>    
-    <b>Observation Examples (Quantitative)</b> - Examples to illustrate the use of <code>UKCore-Observation-Lab</code> for quantitative (i.e. numeric) test results.<br>{{pagelink:R4ObservationAlbumin}}<br>{{pagelink:R4ObservationeGFR}}<br><br>
-    <b>Observation Examples (Semi-quantitative)</b> - Examples to illustrate the use of <code>UKCore-Observation-Lab</code> for semi-quantitative test results.<br>{{pagelink:R4ObservationEpithelialCells}}<br>{{pagelink:R4ObservationNitrofurantoinSusceptibility}}<br><br> 
-    <b>Observation Examples (Qualitative)</b> - Examples to illustrate the use of <code>UKCore-Observation-Lab</code> for qualitative test results.<br>{{pagelink:R4ObservationHBsAg}}<br>{{pagelink:R4ObservationMRSAScreeningTest}}<br><br>
-    <b>Observation Example (Narrative)</b> - An example to illustrate the use of <code>UKCore-Observation-Lab</code> for a narrative (i.e. text-based) test result.<br>{{pagelink:R4ObservationAerobicBloodCulture}}<br><br>
-    <b>UK Core Examples</b> - Examples from the UK Core Implementation Guide.<br>
-    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-Observation-Lab-RedCellCount?current">UKCore-Observation-Lab-RedCellCount-Example</a><br><a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-Observation-Lab-WhiteCellCount?current">UKCore-Observation-Lab-WhiteCellCount-Example</a><br>
+    <b>UKCore-Observation Snippets</b> - An example to illustrate how each key data element in <code>UKCore-Observation</code> may be populated to represent a test result.<br>{{pagelink:R4SnippetsObservationTestResult}}<br><br>
+    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-Observation</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReportUnstructured}}<br>{{pagelink:R4BundleExampleGTTReportStructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportUnstructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportStructured}}<br><br>    
+    <b>Observation Examples (Quantitative)</b> - Examples to illustrate the use of <code>UKCore-Observation</code> for quantitative (i.e. numeric) test results.<br>{{pagelink:R4ObservationAlbumin}}<br>{{pagelink:R4ObservationeGFR}}<br><br>
+    <b>Observation Examples (Semi-quantitative)</b> - Examples to illustrate the use of <code>UKCore-Observation</code> for semi-quantitative test results.<br>{{pagelink:R4ObservationEpithelialCells}}<br>{{pagelink:R4ObservationNitrofurantoinSusceptibility}}<br><br> 
+    <b>Observation Examples (Qualitative)</b> - Examples to illustrate the use of <code>UKCore-Observation</code> for qualitative test results.<br>{{pagelink:R4ObservationHBsAg}}<br>{{pagelink:R4ObservationMRSAScreeningTest}}<br><br>
+    <b>Observation Example (Narrative)</b> - An example to illustrate the use of <code>UKCore-Observation</code> for a narrative (i.e. text-based) test result.<br>{{pagelink:R4ObservationAerobicBloodCulture}}<br>
 </div>
 
 ### Additional Guidance
-The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-Observation-Lab` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation-lab?current).
+The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-Observation` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-observation?current).
 
 ---
 
@@ -59,8 +57,6 @@ The general type of test. As a minimum, the following **SHOULD** be used for thi
 * `Observation.category.coding.system` = `http://terminology.hl7.org/CodeSystem/observation-category`
 * `Observation.category.coding.code` = `laboratory`
 * `Observation.category.coding.display` = `Laboratory`
-
-This element has an open slice, and **MAY** be used to differentiate the particular test speciality. This can be coded or provided as text only.
 
 ---
 

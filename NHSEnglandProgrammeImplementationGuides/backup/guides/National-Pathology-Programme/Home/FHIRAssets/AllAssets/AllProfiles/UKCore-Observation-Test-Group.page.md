@@ -41,7 +41,7 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 
 <div id="Examples" class="tabcontent">
     <h4>Examples</h4>
-    <b>UKCore-Observation-Snippets</b> - An example to illustrate how each key data element in <code>UKCore-Observation</code> may be populated for a test group.<br>{{pagelink:R4SnippetsObservationTestGroup}}<br><br>
+    <b>UKCore-Observation-Snippets</b> - An example to illustrate how each key data element in <code>UKCore-Observation</code> may be populated to represent a test group.<br>{{pagelink:R4SnippetsObservationTestGroup}}<br><br>
     <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-Observation</code> for a test group within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTReportUnstructured}}<br>{{pagelink:R4BundleExampleGTTReportStructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportUnstructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportStructured}}<br>
 </div>
 
@@ -56,8 +56,6 @@ The general type of test group. As a minimum, the following **SHOULD** be used f
 * `Observation.category.coding.system` = `http://terminology.hl7.org/CodeSystem/observation-category`
 * `Observation.category.coding.code` = `laboratory`
 * `Observation.category.coding.display` = `Laboratory`
-
-This element has an open slice, and **MAY** be used to differentiate the particular test speciality. This can be coded or provided as text only.
 
 ---
 

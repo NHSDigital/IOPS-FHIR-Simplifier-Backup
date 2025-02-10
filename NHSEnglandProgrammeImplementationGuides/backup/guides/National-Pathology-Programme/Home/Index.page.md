@@ -74,12 +74,10 @@ This guide is divided into the following sections and pages which are accessible
     * {{pagelink:Background}}: Includes a high-level business process flow for pathology test requesting and reporting, links to various supporting artefacts (user stories, personas and journey maps) and describes the systems and data flows that are currently used to support GP practice requested pathology tests.
     * {{pagelink:DesignOverview}}: Includes a high-level business information model and a detailed FHIR data model, a summary of the design approach that has been adopted and a description of how SNOMED CT is used to populate key aspects of the pathology related FHIR profiles.
     * {{pagelink:DataMapping}}: Provides a set of data mappings between the FHIR profiles that are referenced by this implementation guide and the PMIP EDIFACT (NHS003) messaging specification.
+    * {{pagelink:ContructBundles}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create FHIR `Bundles` for pathology test requests and reports. 
     * {{pagelink:Transport}} (TBC): This page will detail the data exchange approach that will be used as part of this implementation guide.
     * {{pagelink:ErrorHandling}} (TBC): This page will describe any error handling that will be used as part of this implementation guide.
     * {{pagelink:AcknowledgementFramework}} (TBC): This page will describe the acknowledge framework that will be used as part of this implementation guide.
-* Build:
-    * {{pagelink:BuildContructPathologyRequestBundle}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR `Bundle` for a pathology test request. 
-    * {{pagelink:BuildContructPathologyReportBundle}}: Describes how to use the FHIR profiles that are referenced by this implementation guide to create a FHIR `Bundle` for a pathology test report. 
 * FHIR Assets:
     * {{pagelink:FHIRAssetsR4Profiles}}: Describes the profiles that are referenced by this implementation guide.
     * {{pagelink:FHIRAssetsR4Extensions}}: Describes any extensions that are particularly relevant to pathology.

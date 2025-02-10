@@ -6,13 +6,13 @@ topic: R4ServiceRequest
 ### Summary
 The test request that a test report is based on.
 
-The associated test report is represented using `UKCore-DiagnosticReport-Lab` and is linked to `UKCore-ServiceRequest-Lab` using `UKCore-DiagnosticReport-Lab.basedOn`. Refer to the profile description for {{pagelink:R4DiagnosticReport}} for further information.
+The associated test report is represented using `UKCore-DiagnosticReport` and is linked to `UKCore-ServiceRequest` using `UKCore-DiagnosticReport.basedOn`. Refer to the profile description for {{pagelink:R4DiagnosticReport}} for further information.
 
-If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of `UKCore-ServiceRequest-Lab` is required for each requested test or test group. `UKCore-ServiceRequest-Lab.requisition` acts as a common identifier to link the requests.
+If multiple tests or test groups are requested as part of the same “event” (generally by the same practitioner at the same time for the same subject), an instance of `UKCore-ServiceRequest` is required for each requested test or test group. `UKCore-ServiceRequest.requisition` acts as a common identifier to link the requests.
 
 ### Resource and Profile Links
 * R4 Resource (Base): [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html)
-* R4 UK Core Profile: [UKCore-ServiceRequest-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-servicerequest-lab?current)
+* R4 UK Core Profile: [UKCore-ServiceRequest](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-servicerequest?current)
 
 ### Profile Views
 Refer to {{pagelink:ProfileDescriptions}} for a definition of the different profile view formats.
@@ -40,14 +40,12 @@ Refer to {{pagelink:ProfileDescriptions}} for a definition of the different prof
 
 <div id="Examples" class="tabcontent">
     <h4>Examples</h4>
-    <b>UKCore-ServiceRequest-Lab Snippets</b> - An example to illustrate how each key data element in <code>UKCore-ServiceRequest-Lab</code> may be populated.<br>{{pagelink:R4SnippetsServiceRequest}}<br><br>
-    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-ServiceRequest-Lab</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cRequest}}<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleHBsAgRequest}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVRequest}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleFullBloodCountRequest}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cRequest}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandERequest}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTRequest}}<br>{{pagelink:R4BundleExampleGTTReportUnstructured}}<br>{{pagelink:R4BundleExampleGTTReportStructured}}<br>{{pagelink:R4BundleExampleUrineMCSRequest}}<br>{{pagelink:R4BundleExampleUrineMCSReportUnstructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportStructured}}<br><br>
-    <b>UK Core Example</b> - An example from the UK Core Implementation Guide.<br>
-    <a href="https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/examples/examplesindex/Example-UKCore-ServiceRequest-Lab-CReactiveProtein?current">UKCore-ServiceRequest-Lab-CReactiveProtein-Example</a><br>
+    <b>UKCore-ServiceRequest Snippets</b> - An example to illustrate how each key data element in <code>UKCore-ServiceRequest</code> may be populated.<br>{{pagelink:R4SnippetsServiceRequest}}<br><br>
+    <b>Bundle Examples</b> - Examples to illustrate the use of <code>UKCore-ServiceRequest</code> within the context of a <code>Bundle</code>.<br>{{pagelink:R4BundleExampleHbA1cRequest}}<br>{{pagelink:R4BundleExampleHbA1cReport}}<br>{{pagelink:R4BundleExampleHBsAgRequest}}<br>{{pagelink:R4BundleExampleHBsAgReport}}<br>{{pagelink:R4BundleExampleHPVRequest}}<br>{{pagelink:R4BundleExampleHPVReport}}<br>{{pagelink:R4BundleExampleFullBloodCountRequest}}<br>{{pagelink:R4BundleExampleFullBloodCountReport}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cRequest}}<br>{{pagelink:R4BundleExampleLipidsandHbA1cReport}}<br>{{pagelink:R4BundleExampleLFTandUandERequest}}<br>{{pagelink:R4BundleExampleLFTandUandEReport}}<br>{{pagelink:R4BundleExampleGTTRequest}}<br>{{pagelink:R4BundleExampleGTTReportUnstructured}}<br>{{pagelink:R4BundleExampleGTTReportStructured}}<br>{{pagelink:R4BundleExampleUrineMCSRequest}}<br>{{pagelink:R4BundleExampleUrineMCSReportUnstructured}}<br>{{pagelink:R4BundleExampleUrineMCSReportStructured}}<br>
 </div>
 
 ### Additional Guidance
-The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-ServiceRequest-Lab` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-servicerequest-lab?current).
+The following additional guidance **SHOULD** be applied when implementing this profile. It **SHOULD** be used in conjunction with the profile definition presented above and the Profile Specific Implementation Guidance for `UKCore-ServiceRequest` in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/home/profilesandextensions/profile-ukcore-servicerequest?current).
 
 ---
 

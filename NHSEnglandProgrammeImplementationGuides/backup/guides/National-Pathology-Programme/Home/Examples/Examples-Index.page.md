@@ -8,7 +8,7 @@ The following examples illustrate the use of the FHIR UK Core R4 {{pagelink:FHIR
 
 The `Bundle` examples include on-screen representations of pathology test requests and reports. These have been provided to illustrate the contents of the associated messages. They are not intended to define a standard layout or format for pathology test requests and reports and should not be used as such.
 
-The `Bundle` examples also include simplified logical data models to illustrate the key references between the relevant FHIR resources. To aid clarity, not all of the references are shown. For a detailed description of the relationships between the FHIR resources, refer to {{pagelink:BuildContructPathologyRequestBundle}} and {{pagelink:BuildContructPathologyReportBundle}}.
+The `Bundle` examples also include simplified logical data models to illustrate the key references between the relevant FHIR resources. To aid clarity, not all of the references are shown. For a detailed description of the relationships between the FHIR resources, refer to {{pagelink:ContructBundles}}.
 
 The snippet examples have been provided to illustrate how each key data element within a profile may be populated. The examples illustrate individual data element usage within a profile; the full set of data elements may not necessarily be consistent with one another or illustrate a single, complete clinical scenario.
 

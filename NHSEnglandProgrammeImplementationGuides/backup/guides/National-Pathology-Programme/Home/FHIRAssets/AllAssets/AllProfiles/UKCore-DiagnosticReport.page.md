@@ -78,10 +78,6 @@ The general type of test report. As a minimum, the following **SHOULD** be used 
 * `DiagnosticReport.category.coding.code` = `LAB`
 * `DiagnosticReport.category.coding.display` = `Laboratory`
 
-This element has an open slice, and **MAY** be used to differentiate the particular speciality of the laboratory or laboratory department. This can be coded or provided as text only. For example:
-
-* `DiagnosticReport.category.coding.text` = `Medical microbiology`
-
 ---
 
 ### `code`
