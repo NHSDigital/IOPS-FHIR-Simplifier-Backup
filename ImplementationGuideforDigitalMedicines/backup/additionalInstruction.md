@@ -2,7 +2,7 @@
 
 Additional dosage instructions that can be either SNOMED-CT coded terms or free-text instructions.
 
-Where suitable SNOMED-CT coded terms exist, use them instead of free-text instructions. See the SNOMED-CT hierarchy descendants of [419492006 Additional dosage instructions (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=419492006&edition=uk-edition). These terms are also available from the example [FHIR valueset binding](http://hl7.org/fhir/stu3/valueset-additional-instruction-codes.html).
+Where suitable SNOMED-CT coded terms exist, use them instead of free-text instructions. See the SNOMED-CT hierarchy descendants of [419492006 Additional dosage instructions (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=419492006&edition=uk-edition) and also [309602000 Temporal periods relating to feeding and eating (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=309602000&edition=uk-edition). Some of these terms are also available from the example [FHIR valueset binding](http://hl7.org/fhir/stu3/valueset-additional-instruction-codes.html).
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
     <strong>Note:</strong> Where no code exists, <code>additionalInstructions</code> can be conveyed as free-text; however, if free-text is used rather than a SNOMED-CT coded term, the `MedicationRequest` cannot be computable, and requires human intervention in the case of conditional or contradictory instructions.
