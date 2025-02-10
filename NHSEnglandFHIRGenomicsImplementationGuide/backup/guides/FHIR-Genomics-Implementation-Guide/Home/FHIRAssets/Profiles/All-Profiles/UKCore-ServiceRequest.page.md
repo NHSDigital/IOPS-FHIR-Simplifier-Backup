@@ -166,7 +166,7 @@ C1 --> SR : Consent.provision
                     <tr><td>ServiceRequest.code.coding.system</td><td>Test request - Test Directory version</td><td>OBR-4.3</td></tr>
                     <tr><td>ServiceRequest.code</td><td>Test request - CI code, Test request - CITT code, PLCM activity - Service code, PLCM activity - Point of delivery code, PLCM activity - Local point of delivery code, PLCM activity - Test method code</td><td>OBR-4</td></tr>
                     <tr><td>ServiceRequest.orderDetail</td><td>Test request - CI code for multipurpose CITT, Test request - Type of reanalysis, Test request - DNA storage information</td><td>NTE segment attached to OBR</td></tr>
-                    <tr><td>ServiceRequest.reasonCode</td><td>Test request - Reason for testing, Test request - Reason for reanalysis</td><td>OBR-13 segment linked to ORC</td></tr>
+                    <tr><td>ServiceRequest.category</td><td>Test request - Reason for testing, Test request - Reason for reanalysis</td><td>Likely ORC-29</td></tr>
                     <tr><td>ServiceRequest.supportingInfo</td><td>Test request - Detail of reason for reanalysis, Test request - Further information</td><td>NTE segments linked to OBR segment for reanalysis reason, Additional segments attached to ORC/OBR</td></tr>
                     <tr><td>ServiceRequest.occurrenceDateTime</td><td>Test request - Date report required by</td><td>OBR-8</td></tr>
                     <tr><td>ServiceRequest.performer</td><td>PLCM activity - ODS code of organisation commissioned to deliver requested test</td><td>PRD-7 where PRD-1=RT</td></tr>
@@ -198,7 +198,7 @@ C1 --> SR : Consent.provision
 - <a href="#authoredOn">authoredOn</a>
 - <a href="#requester">requester</a>
 - <a href="#performer">performer</a>
-- <a href="#reasonCode">reasonCode</a>
+<!--- <a href="#reasonCode">reasonCode</a>-->
 - <a href="#reasonReference">reasonReference</a>
 - <a href="#supportingInfo">supportingInfo</a>
 - <a href="#specimen">specimen</a>
@@ -297,6 +297,7 @@ SHALL be provided. ServiceRequests SHOULD be marked as 'order' unless they have 
 <h4 class='additional-Guidance-Submenu'> category </h4>
 ServiceRequests SHOULD use the [Genomics Sequencing Category](https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&filepath=package/ValueSet-UKCore-GenomeSequencingCategory.json) ValueSet when categorising the test order in order to aid analytics (e.g. PLCM). This list is pending review from the Informatics Working Advisory Group, after which a full list of possible categorisations will be finalised.
 
+category SHOULD additioanlly be populated with the type of request being ordered e.g. Diagnostic, Carrier, Predictive, Stored DNA etc. The final list of applicable codes which can be selected is still under review, the {{pagelink:Home/FHIRAssets/CodeSystems/Genomic-Reason-for-Testing.page.md}} CodeSystem SHOULD be used for this categorisation.
 ```json
 "category":  [
         {
@@ -305,6 +306,15 @@ ServiceRequests SHOULD use the [Genomics Sequencing Category](https://simplifier
                     "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
                     "code": "rare-disease-non-wgs",
                     "display": "Rare Disease - Non-WGS"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+                    "code": "diagnostic",
+                    "display": "Diagnostic"
                 }
             ]
         }
@@ -434,7 +444,7 @@ In the future state, ServiceRequests may be kept open, by not specifying a perfo
     ]
 ```
 
-<a name="reasonCode"></a>
+<!--<a name="reasonCode"></a>
 <h4 class='additional-Guidance-Submenu'> reasonCode </h4>
 reasonCode SHOULD be populated with the type of request being ordered e.g. Diagnostic, Carrier, Predictive, Stored DNA etc. The final list of applicable codes which can be selected is still under review. It is expected that a fixed list of SNOMED CT codes will be permissible, to allow appropriate categorisation by the central service.
 
@@ -452,7 +462,7 @@ This mapping is currently under review as the CI/CITT code is also technically t
             ]
         }
     ],
-```
+```-->
 <a name="reasonReference"></a>
 <h4 class='additional-Guidance-Submenu'> reasonReference </h4>
 Reference SHOULD be associated to the primary condition being tested for.

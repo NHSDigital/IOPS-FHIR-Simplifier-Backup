@@ -26,6 +26,15 @@
 					"display": "Rare Disease - Non-WGS"
 				}
 			]
+		},
+		{
+			"coding": [
+				{
+					"system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+					"code": "staging-or-prognosis",
+					"display": "Staging or Prognosis"
+				}
+			]
 		}
 	],
 	"priority": "urgent",
@@ -58,17 +67,6 @@
 	"requester": {
 		"reference": "PractitionerRole/PractitionerRole-LoisLaneKingstonClinicalGenetics-Example"
 	},
-	"reasonCode": [
-		{
-			"coding": [
-				{
-					"system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-					"code": "staging-or-prognosis",
-					"display": "Staging or Prognosis"
-				}
-			]
-		}
-	],
 	"supportingInfo": [
 		{
 			"reference": "Observation/Observation-HistoryOfFetalLoss-Example"

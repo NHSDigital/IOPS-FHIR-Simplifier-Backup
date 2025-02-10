@@ -26,6 +26,15 @@
           "display": "Rare Disease - WGS"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
+        }
+      ]
     }
   ],
   "priority": "urgent",
@@ -50,17 +59,6 @@
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-EugeneSmith-Example"
   },
-  "reasonCode": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-          "code": "diagnostic",
-          "display": "Diagnostic"
-        }
-      ]
-    }
-  ],
   "performer": [
     {
       "identifier": {

@@ -31,6 +31,15 @@
           "display": "Rare Disease - Non-WGS"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "predictive",
+          "display": "Predictive"
+        }
+      ]
     }
   ],
   "priority": "routine",
@@ -55,17 +64,6 @@
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-MarySmith-Example"
   },
-  "reasonCode": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-          "code": "predictive",
-          "display": "Predictive"
-        }
-      ]
-    }
-  ],
   "supportingInfo": [
     {
       "reference": "Observation/Observation-GenomicEthnicity-Example"

@@ -245,6 +245,16 @@
                 "code": "rare-disease-non-wgs"
               }
             ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+                "code": "new-treatment-clinical-management",
+                "display": "New Treatment/Clinical Management"
+              }
+            ],
+            "text": "Significant new treatment and or clinical management implication for the patient.Please provide details/treatment for management of epilepsy"
           }
         ],
         "priority": "routine",
@@ -281,18 +291,6 @@
         "requester": {
           "reference": "PractitionerRole/PractitionerRole-HazelSmithRenal-Example"
         },
-        "reasonCode": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-                "code": "new-treatment-clinical-management",
-                "display": "New Treatment/Clinical Management"
-              }
-            ],
-            "text": "Significant new treatment and or clinical management implication for the patient.Please provide details/treatment for management of epilepsy"
-          }
-        ],
         "supportingInfo": [
           {
             "reference": "Observation/Observation-GenomicEthnicity-Example"

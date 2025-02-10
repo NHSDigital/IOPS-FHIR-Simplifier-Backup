@@ -26,6 +26,15 @@
           "display": "Rare Disease - Non-WGS"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "dna-storage",
+          "display": "DNA Storage"
+        }
+      ]
     }
   ],
   "priority": "routine",
@@ -50,17 +59,6 @@
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
   },
-  "reasonCode": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-          "code": "dna-storage",
-          "display": "DNA Storage"
-        }
-      ]
-    }
-  ],
   "supportingInfo": [
     {
       "reference": "Observation/Observation-GenomicEthnicity-Example"

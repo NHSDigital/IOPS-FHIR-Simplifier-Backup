@@ -17,6 +17,26 @@
   ],
   "status": "active",
   "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "rare-disease-non-wgs",
+          "display": "Rare Disease - Non-WGS"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "dna-storage",
+          "display": "DNA Storage"
+        }
+      ]
+    }
+  ],
   "priority": "routine",
   "code": {
     "coding": [
@@ -39,17 +59,6 @@
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-OscarShields-Example"
   },
-  "reasonCode": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-          "code": "dna-storage",
-          "display": "DNA Storage"
-        }
-      ]
-    }
-  ],
   "supportingInfo": [
     {
       "reference": "Observation/Observation-GenomicEthnicity-Example"
