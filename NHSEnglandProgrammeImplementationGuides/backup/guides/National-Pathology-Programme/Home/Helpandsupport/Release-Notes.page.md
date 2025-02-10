@@ -5,7 +5,13 @@ topic: ReleaseNotes
 
 ### v0.1.9 (TBC)
 
+* Updated to use standard UK Core profiles rather than the laboratory specific versions that were introduced in v0.1.1 of this implementation guide. More specifically, the following changes have been made:
+    * references to `UKCore-DiagnosticReport-Lab` have been replaced by `UKCore-DiagnosticReport`
+    * references to `UKCore-Observation-Group-Lab` have been replaced by `UKCore-Observation`
+    * references to `UKCore-Observation-Lab` have been replaced by `UKCore-Observation`
+    * references to `UKCore-ServiceRequest-Lab` have been replaced by `UKCore-ServiceRequest`
 * Added {{pagelink:FHIRAssetsR4CapabilityStatements}} and {{pagelink:FHIRAssetsR4MessageDefinitions}} pages (both under the **FHIR Assets** menu bar item).
+* Removed the **Build** menu bar item which contained the 'How to Construct a Pathology Test Request Bundle' and 'How to Construct a Pathology Test Report Bundle' pages. The content from these pages has been combined into a 'How to Construct Bundles' page and added to the **Design** menu bar item.
 * Updated the {{pagelink:R4BundleExampleFullBloodCountReport}} example to include `Observation.interpretation` for out of range values.
 ---
 
