@@ -30,6 +30,15 @@
           "display": "Cancer - Non-WGS"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
+        }
+      ]
     }
   ],
   "priority": "routine",
@@ -54,17 +63,6 @@
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-HazelSmithPathology-Example"
   },
-  "reasonCode": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-          "code": "diagnostic",
-          "display": "Diagnostic"
-        }
-      ]
-    }
-  ],
   "performer": [
     {
       "identifier": {

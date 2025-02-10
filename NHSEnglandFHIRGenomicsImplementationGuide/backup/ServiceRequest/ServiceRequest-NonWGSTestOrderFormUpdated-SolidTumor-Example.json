@@ -36,6 +36,15 @@
           "display": "Cancer - Non-WGS"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "relapse",
+          "display": "Relapse"
+        }
+      ]
     }
   ],
   "priority": "routine",
@@ -60,17 +69,6 @@
   "requester": {
     "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
   },
-  "reasonCode": [
-    {
-      "coding": [
-        {
-          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
-          "code": "relapse",
-          "display": "Relapse"
-        }
-      ]
-    }
-  ],
   "performer": [
     {
       "identifier": {
