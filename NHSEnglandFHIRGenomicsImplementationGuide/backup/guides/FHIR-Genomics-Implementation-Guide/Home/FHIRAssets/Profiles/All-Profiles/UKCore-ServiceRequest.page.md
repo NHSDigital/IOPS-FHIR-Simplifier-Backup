@@ -297,7 +297,7 @@ SHALL be provided. ServiceRequests SHOULD be marked as 'order' unless they have 
 <h4 class='additional-Guidance-Submenu'> category </h4>
 ServiceRequests SHOULD use the [Genomics Sequencing Category](https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&filepath=package/ValueSet-UKCore-GenomeSequencingCategory.json) ValueSet when categorising the test order in order to aid analytics (e.g. PLCM). This list is pending review from the Informatics Working Advisory Group, after which a full list of possible categorisations will be finalised.
 
-category SHOULD additioanlly be populated with the type of request being ordered e.g. Diagnostic, Carrier, Predictive, Stored DNA etc. The final list of applicable codes which can be selected is still under review, the {{pagelink:Home/FHIRAssets/CodeSystems/Genomic-Reason-for-Testing.page.md}} CodeSystem SHOULD be used for this categorisation.
+Category SHOULD additionally be populated with the type of request being ordered e.g. Diagnostic, Carrier, Predictive, Stored DNA etc. The final list of applicable codes which can be selected is still under review, the {{pagelink:Home/FHIRAssets/CodeSystems/Genomic-Reason-for-Testing.page.md}} CodeSystem SHOULD be used for this categorisation.
 ```json
 "category":  [
         {
