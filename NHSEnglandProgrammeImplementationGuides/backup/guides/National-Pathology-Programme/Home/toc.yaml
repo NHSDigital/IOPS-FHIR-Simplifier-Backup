@@ -2,8 +2,6 @@
   filename: Index.page.md
 - name: Design
   filename: Design
-- name: Build
-  filename: Build
 - name: FHIR Assets
   filename: FHIRAssets
 - name: Examples

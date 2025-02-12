@@ -21,7 +21,7 @@ The following diagram illustrates the relationships between each of the profiles
 ---
 
 ### Test Report Bundles
-The following is a list of the profiles that are used to construct a `Bundle` for a pathology test eport:
+The following is a list of the profiles that are used to construct a `Bundle` for a pathology test report:
 
 * {{pagelink:R4Bundle}}
 * {{pagelink:R4DiagnosticReport}}
