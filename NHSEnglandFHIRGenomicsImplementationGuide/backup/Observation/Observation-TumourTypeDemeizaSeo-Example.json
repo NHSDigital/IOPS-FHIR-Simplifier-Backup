@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-TumourTypeDemeizaSeo-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "116061001",
+        "display": "Solid pseudopapillary carcinoma (morphologic abnormality)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-DemeizaSeo-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449306559"
+    }
+  },
+  "specimen": {
+    "identifier": {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "RA257631"
+    }
+  },
+  "effectiveDateTime": "2023-09-08T11:00:00Z"
+}
