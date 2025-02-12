@@ -393,9 +393,9 @@ Used to record the condition of a specimen. Within Genomics, SHOULD be used to r
         {
             "coding":  [
                 {
-                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-BiopsyState",
-                    "code": "fresh-frozen",
-                    "display": "Fresh Frozen"
+                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PrimarySampleState",
+                    "code": "fresh",
+                    "display": "Fresh"
                 }
             ]
         }

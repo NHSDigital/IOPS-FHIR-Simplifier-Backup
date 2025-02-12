@@ -1,0 +1,41 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-PercentageMalignantNuclei-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1255076007",
+        "display": "Percent of cell nuclei positive for proliferation marker protein Ki-67 in primary malignant neoplasm of stomach by immunohistochemistry (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-DemeizaSeo-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449306559"
+    }
+  },
+  "specimen": {
+    "reference":"Specimen/Specimen-SolidTumorDemeizaSeo-Example",
+    "identifier": {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "RA257631",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "696B0"
+        }
+      }
+    }
+  },
+  "valueQuantity": {
+    "value": 25,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "effectiveDateTime": "2023-08-09"
+}

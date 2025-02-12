@@ -1,0 +1,30 @@
+{
+  "resourceType": "Task",
+  "id": "Task-WGSCancerTestOrder-SolidTumor-Example",
+  "status": "requested",
+  "intent": "order",
+  "priority": "routine",
+  "code": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
+        "code": "process-genomic-test-request", 
+        "display": "Process Genomic Test Request"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-CancerSolidTumor-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-DemeizaSeo-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449306559"
+    }
+  },
+  "authoredOn": "2023-09-09",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
+  }
+}

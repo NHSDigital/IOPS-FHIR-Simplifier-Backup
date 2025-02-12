@@ -70,7 +70,7 @@ The figure above takes the current state example and applies the future, interop
 
 ### Note on Routing of Samples and Data
 
-Messages sent to the core broker constitute data only, including data on where physical samples are or have been sent to (see {{pagelink:Genomics-Specimen}} and {{pagelink:Genomics-Task}} for more details on how location/tracking data is represented).
+Messages sent to the core broker constitute data only, including data on where physical samples are or have been sent to (see {{pagelink:Profile-UKCore-Specimen}} and {{pagelink:Profile-Genomics-Task}} for more details on how location/tracking data is represented).
 
 Test Requests and Samples can be sent to separate organizations based upon local/regional processes. Linkage between samples and test requests allow the organizations responsible for fulfillment of a test request to gain visibility on where physical specimens are. e.g. Sample Processing Task assigned to Org 5, `Task.input` will then contain a reference to the Specimen resource and hold tracking information, while management of the test order remains with Org 3 (which is marked as the `owner` of the Process Test Request Task). The full Test Request will be linked from all Tasks through the `Task.focus` field.
 
