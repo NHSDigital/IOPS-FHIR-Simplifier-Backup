@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-PatrickSammyNoBoneMarrowTransplant-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "416128008",
+        "display": "No history of procedure (situation)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "445715009",
+        "display": "Blood and marrow transplantation (qualifier value)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PatrickSammy-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "effectiveDateTime": "2023-09-05"
+}

@@ -39,7 +39,7 @@
   "receivedTime": "2023-08-29T11:00:00Z",
   "request": [
     {
-      "reference": "ServiceRequest-NonWGSTestOrderForm-HaemOncology-Example"
+      "reference": "ServiceRequest/ServiceRequest-NonWGSTestOrderForm-HaemOncology-Example"
     }
   ]
 }

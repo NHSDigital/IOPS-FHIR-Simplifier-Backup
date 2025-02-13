@@ -1,0 +1,30 @@
+{
+  "resourceType": "Task",
+  "id": "Task-WGSCancerTestOrder-HaemOnc-Example",
+  "status": "requested",
+  "intent": "order",
+  "priority": "routine",
+  "code": { 
+    "coding": [
+      { 
+        "system": "https://fhir.nhs.uk/CodeSystem/task-code-genomics", 
+        "code": "process-genomic-test-request", 
+        "display": "Process Genomic Test Request"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-CancerHaemOnc-Example"
+  },
+  "for": {
+    "reference": "Patient/Patient-PatrickSammy-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "authoredOn": "2023-09-28",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
+  }
+}

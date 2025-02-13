@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation-BlastPercentageWGSSample-Example",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1015521000000107",
+        "display": "Percentage blast cells (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-PatrickSammy-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "specimen": {
+    "identifier": {
+      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.18.24",
+      "value": "RR81235",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "696B0"
+        }
+      }
+    }
+  },
+  "valueQuantity": {
+    "value": 25,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "effectiveDateTime": "2023-08-05"
+}
