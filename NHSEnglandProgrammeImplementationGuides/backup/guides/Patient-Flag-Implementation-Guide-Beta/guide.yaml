@@ -3,3 +3,4 @@ description: UK Core styled base project for NHSE API IG's
 version: development
 style-root: project
 style-name: NHSEUKCoreStyle
+numbered-headings: false

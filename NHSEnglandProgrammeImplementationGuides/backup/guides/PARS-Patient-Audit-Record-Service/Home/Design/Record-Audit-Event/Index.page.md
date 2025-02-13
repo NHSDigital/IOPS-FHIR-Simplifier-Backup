@@ -53,7 +53,7 @@ POST https://auditrecordrepository.example.nhs.uk/FHIR/R4/AuditEvent
 | Name of the organisation | agent[organisation].display                                |  
 | User identifier | agent[user].identifier.value                               | 
 | User Name | agent[user].display                                        |
-| ProductId or ASID of the service | agent[endpoint].who.identifier                                        |
+| ProductId or ASID of the service | agent[device].who.identifier                                        |
 | Role Profile ID of the user | agent[userRole].identifier.value                           | 
 | Audit Creator Identifier  code | source.observer.identifier.value                           |
 | Audit Creator system Identifier | source.site                                                | 
