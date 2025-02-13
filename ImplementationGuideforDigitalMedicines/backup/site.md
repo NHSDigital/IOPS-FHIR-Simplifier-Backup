@@ -1,6 +1,6 @@
 ## Element: `{{page-title}}`
 
-Any `site` can be used from the SNOMED-CT hierarchy as a descendant of the concept [123037004 Body structure (body structure)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=123037004&edition=uk-edition).
+Any `site` can be used from the SNOMED-CT hierarchy as a descendant of the concepts [123037004 Body structure (body structure)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=123037004&edition=uk-edition) and [278001007 Nonspecific site (body structure)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=278001007&edition=uk-edition).
 
 ```xml
 <!-- Site -->
