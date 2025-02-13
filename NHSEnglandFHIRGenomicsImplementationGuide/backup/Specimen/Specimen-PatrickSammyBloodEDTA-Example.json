@@ -1,0 +1,54 @@
+{
+  "resourceType": "Specimen",
+  "id": "Specimen-PatrickSammyBloodEDTA-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SampleCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SampleCategory",
+            "code": "germline",
+            "display": "Germline"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://fhir.add.nhs.uk/Id/specimenId",
+      "value": "RGT03135A"
+    }
+  ],
+  "status": "unavailable",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "445295009",
+        "display": "Blood specimen with EDTA"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-MeirLieberman-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449307873"
+    }
+  },
+  "request": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-CancerHaemOnc-Example"
+    }
+  ],
+  "collection": {
+    "collectedDateTime": "2023-09-11T09:00:00Z",
+    "quantity": {
+      "system": "http://unitsofmeasure.org",
+      "code": "mL",
+      "value": 2.5
+    }
+  }
+}
