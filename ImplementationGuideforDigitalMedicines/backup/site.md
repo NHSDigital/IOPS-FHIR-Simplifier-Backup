@@ -1,6 +1,8 @@
 ## Element: `{{page-title}}`
 
-Any `site` can be used from the SNOMED-CT hierarchy as a descendant of the concepts [123037004 Body structure (body structure)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=123037004&edition=uk-edition) and [278001007 Nonspecific site (body structure)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=278001007&edition=uk-edition).
+The binding strength for site is preferred, meaning SNOMED codes from any hierarchy are allowed. The preferred binding defined within the UKCore standard is descendants of the concept [442083009 Anatomical or acquired body structure (body structure](https://termbrowser.nhs.uk/?perspective=full&conceptId1=442083009&edition=uk-edition).
+
+We recommend descendants from the concept [278001007 Nonspecific site (body structure)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=278001007&edition=uk-edition) are also supported within an implementation.
 
 ```xml
 <!-- Site -->

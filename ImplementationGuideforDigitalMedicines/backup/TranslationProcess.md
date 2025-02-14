@@ -44,7 +44,7 @@ If using the [NHS England Terminology Server](https://digital.nhs.uk/services/te
 To return VMPs;
 
 ```json
-curl --location 'https://ontology.nhs.uk/staging/fhir/ValueSet/$expand' \
+curl --location 'https://ontology.nhs.uk/production1/fhir/ValueSet/$expand' \
 --header 'Authorization: Bearer } { { OAuthToken } }' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -109,7 +109,7 @@ curl --location 'https://ontology.nhs.uk/staging/fhir/ValueSet/$expand' \
 To return AMPs;
 
 ```json
-curl --location 'https://ontology.nhs.uk/staging/fhir/ValueSet/$expand' \
+curl --location 'https://ontology.nhs.uk/production1/fhir/ValueSet/$expand' \
 --header 'Authorization: Bearer { { OAuthToken } }' \
 --header 'Content-Type: application/json' \
 --data '{
