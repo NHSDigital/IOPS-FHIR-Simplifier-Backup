@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: Condition-AcuteMyeloidLeukaemia-Example
+  filename: Condition-AcuteMyeloidLeukaemia-Example.page.md
 - name: Condition-BreastCancer-Example
   filename: Condition-BreastCancer-Example.page.md
 - name: Condition-HearingLoss-Example
