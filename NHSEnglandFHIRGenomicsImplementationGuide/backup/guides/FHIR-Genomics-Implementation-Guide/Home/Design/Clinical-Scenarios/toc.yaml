@@ -4,6 +4,8 @@
   filename: Non-WGS-Test-Request---Rare-Disease.page.md
 - name: WGS Test Request - Rare Disease
   filename: WGS-Test-Request---Rare-Disease.page.md
+- name: WGS Test Request - Cancer
+  filename: WGS-Test-Request-Cancer.page.md
 - name: Re-analysis (R387)
   filename: Re-analysis--R387.page.md
 - name: Non-WGS Haem-Onc Test Scenario

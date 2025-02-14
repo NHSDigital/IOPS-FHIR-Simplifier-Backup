@@ -44,6 +44,8 @@
   filename: Task-NonWGSTestOrderFormAccepted-UsingStoredSample-Example.page.md
 - name: Task-TestOrderFormAccepted-StorageOfMaterial-Example
   filename: Task-TestOrderFormAccepted-StorageOfMaterial-Example.page.md
+- name: Task-WGSCancerTestOrder-HaemOnc-Example
+  filename: Task-WGSCancerTestOrder-HaemOnc-Example.page.md
 - name: Task-WGSRareDiseaseTestOrder-Example
   filename: Task-WGSRareDiseaseTestOrder-Example.page.md
 - name: Task-WGSRareDiseaseTestOrderAccepted-Example

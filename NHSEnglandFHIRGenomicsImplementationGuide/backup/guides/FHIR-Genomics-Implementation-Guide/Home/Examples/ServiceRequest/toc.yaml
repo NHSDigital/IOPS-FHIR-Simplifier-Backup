@@ -44,10 +44,14 @@
   filename: ServiceRequest-SavedTestOrderWGS-Example.page.md
 - name: ServiceRequest-TestOrderForm-StorageOfMaterial-Example
   filename: ServiceRequest-TestOrderForm-StorageOfMaterial-Example.page.md
+- name: ServiceRequest-WGSTestOrderForm-CancerHaemOnc-Example
+  filename: ServiceRequest-WGSTestOrderForm-CancerHaemOnc-Example.page.md
 - name: ServiceRequest-WGSTestOrderForm-DirectToLab-Example
   filename: ServiceRequest-WGSTestOrderForm-DirectToLab-Example.page.md
 - name: ServiceRequest-WGSTestOrderForm-Example
   filename: ServiceRequest-WGSTestOrderForm-Example.page.md
+- name: ServiceRequest-WGSTestOrderForm-GermlineLate-Example
+  filename: ServiceRequest-WGSTestOrderForm-GermlineLate-Example.page.md
 - name: ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example
   filename: ServiceRequest-WGSTestOrderForm-TrioTestingProband-Example.page.md
 - name: ServiceRequest-WGSTestOrderFormUpdated-DirectToLab-Example

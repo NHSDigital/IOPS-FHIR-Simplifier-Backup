@@ -4,6 +4,8 @@
   filename: Observation-AutisticBehaviour-Example.page.md
 - name: Observation-BlastPercentage-Example
   filename: Observation-BlastPercentage-Example.page.md
+- name: Observation-BlastPercentageWGSSample-Example
+  filename: Observation-BlastPercentageWGSSample-Example.page.md
 - name: Observation-Bruising-Example
   filename: Observation-Bruising-Example.page.md
 - name: Observation-Cellularity-Example
@@ -82,6 +84,10 @@
   filename: Observation-NonConsanguinousUnionProbandMother-Example.page.md
 - name: Observation-NucleatedCellCount-Example
   filename: Observation-NucleatedCellCount-Example.page.md
+- name: Observation-NucleatedCellCountWGSSample-Example
+  filename: Observation-NucleatedCellCountWGSSample-Example.page.md
+- name: Observation-PatrickSammyNoBoneMarrowTransplant-Example
+  filename: Observation-PatrickSammyNoBoneMarrowTransplant-Example.page.md
 - name: Observation-Platelets-Example
   filename: Observation-Platelets-Example.page.md
 - name: Observation-PregnancyConfirmation-Example
