@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: BodyStructure-BodySiteLocationAbdomen-Example
+  filename: BodyStructure-BodySiteLocationAbdomen-Example.page.md
 - name: BodyStructure-BodySiteLocationLungs-Example
   filename: BodyStructure-BodySiteLocationLungs-Example.page.md
 - name: BodyStructure-SpecimenBodySiteLocation-Example

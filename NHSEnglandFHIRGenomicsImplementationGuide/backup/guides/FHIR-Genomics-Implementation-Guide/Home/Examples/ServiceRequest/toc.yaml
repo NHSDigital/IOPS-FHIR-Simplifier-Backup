@@ -46,6 +46,8 @@
   filename: ServiceRequest-TestOrderForm-StorageOfMaterial-Example.page.md
 - name: ServiceRequest-WGSTestOrderForm-CancerHaemOnc-Example
   filename: ServiceRequest-WGSTestOrderForm-CancerHaemOnc-Example.page.md
+- name: ServiceRequest-WGSTestOrderForm-CancerSolidTumor-Example
+  filename: ServiceRequest-WGSTestOrderForm-CancerSolidTumor-Example.page.md
 - name: ServiceRequest-WGSTestOrderForm-DirectToLab-Example
   filename: ServiceRequest-WGSTestOrderForm-DirectToLab-Example.page.md
 - name: ServiceRequest-WGSTestOrderForm-Example
