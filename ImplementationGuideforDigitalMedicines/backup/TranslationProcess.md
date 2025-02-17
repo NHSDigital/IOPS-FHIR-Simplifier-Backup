@@ -10,13 +10,17 @@ The translation process requires the use of the NHS Dictionary of Medicines and 
 
 For example; `gram` is a dm+d unit of measure with `g` is the equivalant within UCUM, and UCUM spells `liter` differently to the dm+d `litre`.
 
-### Step #1: Get child products (VMPs and AMPs) of the VTM
+### Step #1: Get valid to prescribe child products (VMPs and AMPs) of the VTM
 
-VMPs flagged within dm+d as invalid or where actual products are not available must be ignored.
+The `Prescribing Status` flag is held at the VMP level. The dm+d (as of February 2025) has four values for this flag.
+ 
+1 = Valid as a prescribable product
 
-Where the VMP has a `Prescribing Status` of `0004`, `0006`, `0007`, `0008` or `0009` then include the valid and available AMPs. These codes identify VMPs flagged as `Never valid to prescribe as a VMP` and those flagged in various ways as `VMP not recommended to prescribe` or `Caution - AMP level prescribing advised`.
+2 = Invalid to prescribe in NHS primary care
 
-Where the dose-based instruction specifies a coded Route or coded Form then these are used in the query to return only VMPs for the given route and/or form.
+4 = Never Valid To Prescribe As A VMP
+
+9 = Caution - AMP level prescribing advised
 
 If using dm+d data held in a relational database, the pseudo-SQL would be;
 
@@ -25,8 +29,9 @@ return vmp, vmp_prescribing_status
   where parent_vtm = {vtm_id}
     and vmp is valid
       and vmp has actual products available
-        and vmp_form = {form_id} (if specified)
-          and vmp_route = {route_id}  (if specified)
+        and vmp has vmp_prescribing_status = 0001
+          and vmp_form = {form_id} (if specified)
+            and vmp_route = {route_id}  (if specified)
 ```
 ```sql
 return amp, vmp, vmp_prescribing_status
