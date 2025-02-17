@@ -88,6 +88,8 @@
   filename: Observation-NucleatedCellCountWGSSample-Example.page.md
 - name: Observation-PatrickSammyNoBoneMarrowTransplant-Example
   filename: Observation-PatrickSammyNoBoneMarrowTransplant-Example.page.md
+- name: Observation-PercentageMalignantNuclei-Example
+  filename: Observation-PercentageMalignantNuclei-Example.page.md
 - name: Observation-Platelets-Example
   filename: Observation-Platelets-Example.page.md
 - name: Observation-PregnancyConfirmation-Example
@@ -100,6 +102,8 @@
   filename: Observation-SimonBroomeCriteria-Example.page.md
 - name: Observation-TumourType-Example
   filename: Observation-TumourType-Example.page.md
+- name: Observation-TumourTypeDemeizaSeo-Example
+  filename: Observation-TumourTypeDemeizaSeo-Example.page.md
 - name: Observation-TumourTypeKayBurbridge-Example
   filename: Observation-TumourTypeKayBurbridge-Example.page.md
 - name: Observation-UnknownConsanguinousUnionStatus-Example

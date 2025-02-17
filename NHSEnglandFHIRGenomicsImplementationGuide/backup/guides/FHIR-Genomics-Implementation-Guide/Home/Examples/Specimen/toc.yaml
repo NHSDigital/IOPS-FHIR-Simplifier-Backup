@@ -8,6 +8,10 @@
   filename: Specimen-BoneMarrowAspiration-Example.page.md
 - name: Specimen-JamesMetcalfeBloodEDTA-Example
   filename: Specimen-JamesMetcalfeBloodEDTA-Example.page.md
+- name: Specimen-PatrickSammyBoneMarrowAspiration-Example
+  filename: Specimen-PatrickSammyBoneMarrowAspiration-Example.page.md
+- name: Specimen-PatrickSammyBloodEDTA-Example
+  filename: Specimen-PatrickSammyBloodEDTA-Example.page.md
 - name: Specimen-PheobeSmitham-Example
   filename: Specimen-PheobeSmitham-Example.page.md
 - name: Specimen-PheobeSmithamFather-Example
@@ -18,15 +22,13 @@
   filename: Specimen-RyanneBoulderPartnerSaliva-Example.page.md
 - name: Specimen-RyanneBoulderSaliva-Example
   filename: Specimen-RyanneBoulderSaliva-Example.page.md
-- name: Specimen-CancerSolidTumor-Example
-  filename: Specimen-CancerSolidTumor-Example.page.md
+- name: Specimen-SolidTumor-Example
+  filename: Specimen-SolidTumor-Example.page.md
+- name: Specimen-SolidTumorDemeizaSeo-Example
+  filename: Specimen-SolidTumorDemeizaSeo-Example.page.md
 - name: Specimen-TissueResection-Example
   filename: Specimen-TissueResection-Example.page.md
 - name: Specimen-MichealJonesBlood-Minimal
   filename: Specimen-MichealJonesBlood-Minimal.page.md
 - name: Specimen-MichaelJonesBloodWithCollectionDetails-Example
   filename: Specimen-MichaelJonesBloodWithCollectionDetails-Example.page.md
-- name: Specimen-PatrickSammyBloodEDTA-Example
-  filename: Specimen-PatrickSammyBloodEDTA-Example.page.md
-- name: Specimen-PatrickSammyBoneMarrowAspiration-Example
-  filename: Specimen-PatrickSammyBoneMarrowAspiration-Example.page.md
