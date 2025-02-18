@@ -16,7 +16,7 @@ An extension to replicate the changes within R5 allowing the data type of Specim
 Context of Use
 </div>
 <div id='extension-Context-Use-Profiles'>
-{{pagelink:Genomics-Specimen,text:Specimen}}
+{{pagelink:Profile-UKCore-Specimen,text:Specimen}}
 </div>
 </div>
 

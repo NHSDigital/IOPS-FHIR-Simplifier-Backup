@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Observation-NucleatedCellCount-Example",
+  "id": "Observation-NucleatedCellCountWGSSample-Example",
   "status": "final",
   "code": {
     "coding": [

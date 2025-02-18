@@ -1,0 +1,111 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-WGSTestOrderForm-CancerSolidTumor-Example",
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs-england",
+            "display": "NHS England"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
+      "valueReference": {
+        "reference": "PractitionerRole/PractitionerRole-AnnaLaneKingstonPathology-Example"
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "cancer-wgs",
+          "display": "Cancer - WGS"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "M233.1",
+        "display": "Acute Leukaemia Other"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-DemeizaSeo-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449306559"
+    }
+  },
+  "authoredOn": "2023-09-08",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RJZ"
+      },
+      "display": "KING'S COLLEGE HOSPITAL NHS FOUNDATION TRUST"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/Observation-TumorType-Example"
+    },
+    {
+      "reference": "Observation/Observation-PercentageMalignantNuclei-Example"
+    },
+    {
+      "reference": "Consent/Consent-RoDToFollow-Example"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-SolidTumorDemeizaSeo-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "Relevant Family History"
+    },
+    {
+      "text": "Other Additional Information"
+    }
+  ]
+}

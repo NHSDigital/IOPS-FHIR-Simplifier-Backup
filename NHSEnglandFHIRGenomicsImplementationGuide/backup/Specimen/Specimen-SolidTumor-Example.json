@@ -1,6 +1,6 @@
 {
   "resourceType": "Specimen",
-  "id": "Specimen-CancerSolidTumor-Example",
+  "id": "Specimen-SolidTumor-Example",
   "identifier": [
     {
       "system": "https://fhir.add.nhs.uk/Id/specimenId",
