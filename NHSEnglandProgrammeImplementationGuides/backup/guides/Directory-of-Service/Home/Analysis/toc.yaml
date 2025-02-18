@@ -6,3 +6,5 @@
   filename: Use-Case-Search-for-an-Endpoint.page.md
 - name: Existing DoS Systems
   filename: Existing-DoS-Systems.page.md
+- name: Use Case - Healthcare Worker API
+  filename: Use-Case-Healthcare-Worker-API.page.md
