@@ -15,7 +15,7 @@ An extension to support recording of additional contacts, who should be contacte
 Context of Use
 </div>
 <div id='extension-Context-Use-Profiles'>
-{{pagelink:Genomics-Patient,text:Patient}}
+{{pagelink:Profile-UKCore-Patient,text:Patient}}
 </div>
 </div>
 

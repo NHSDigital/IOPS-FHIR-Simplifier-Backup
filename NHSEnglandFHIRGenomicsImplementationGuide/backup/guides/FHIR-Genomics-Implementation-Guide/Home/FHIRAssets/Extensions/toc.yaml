@@ -4,8 +4,8 @@
   filename: Extension-UKCore-AdditionalContact.page.md
 - name: Extension-UKCore-ConditionBodyStructure
   filename: Extension-UKCore-ConditionBodyStructure.page.md
-- name: Extension-UKCore-DiagnosticReportMediaLink
-  filename: Extension-UKCore-DiagnosticReportMediaLink.page.md
+- name: Extension-UKCore-DiagnosticReportMedia
+  filename: Extension-UKCore-DiagnosticReportMedia.page.md
 - name: Extension-UKCore-Coverage
   filename: Extension-UKCore-Coverage.page.md
 - name: Extension-UKCore-NHSNumberUnavailableReason

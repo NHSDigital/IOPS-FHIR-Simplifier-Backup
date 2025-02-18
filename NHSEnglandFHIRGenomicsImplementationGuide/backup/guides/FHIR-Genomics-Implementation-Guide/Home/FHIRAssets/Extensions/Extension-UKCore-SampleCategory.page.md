@@ -15,7 +15,7 @@ An extension to record the category of genome sequencing sample.
 Context of Use
 </div>
 <div id='extension-Context-Use-Profiles'>
-{{pagelink:Genomics-Specimen,text:Specimen}}
+{{pagelink:Profile-UKCore-Specimen,text:Specimen}}
 </div>
 </div>
 
