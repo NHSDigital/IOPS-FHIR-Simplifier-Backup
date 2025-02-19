@@ -436,7 +436,13 @@ Separate multiple statements with a comma and use the word "` and `" to separate
 
 ### Element: `patientInstruction`
 
-No additional formatting required.
+Excluded from the algorithm.
+
+~~No additional formatting required.~~
+
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
+UPDATE FEB 2025. The element <code>patientInstruction</code> has been removed from this guidance as it's contents would often duplicate what is contained within <code>text</code>. See <a href="ElementDosage?version=current#additionalInstruction">patientInstruction</a> for more info.
+</div>
 
 ---
 
