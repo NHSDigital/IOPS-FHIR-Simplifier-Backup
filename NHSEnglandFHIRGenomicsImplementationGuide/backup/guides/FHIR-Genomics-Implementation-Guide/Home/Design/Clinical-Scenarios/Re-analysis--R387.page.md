@@ -20,7 +20,7 @@ From a requirements standpoint, the requester should have the ability to create 
 
 ### Requester:
 
-#### 1. Requester to create a new test request for reanlaysis
+#### 1. Requester to create a new test request for reanalaysis
 #### 2. Requester to indicate no sample required
 
 **POST transaction Bundle to GMS baseURL:**
@@ -35,7 +35,7 @@ OperationOutcome with appropriate success/failure codes: {{pagelink:OperationOut
 
 ### Lab:
 
-#### 1. Recieve the test request for reanalysis
+#### 1. Receive the test request for reanalysis
 
 Obtained through GET /ServiceRequest or /GET Task requests (using parameters on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
 

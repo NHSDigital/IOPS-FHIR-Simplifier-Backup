@@ -45,7 +45,7 @@ Transaction Bundle consisting of:
 
 Indicated through absence of Specimen resource in message or absence of ```Specimen.collectedDateTime```/```Specimen.status=unavailable```
 
-### The lab (exeter) recieves the test request and:
+### The lab (exeter) receives the test request and:
 
 ### 1. Views the completed test order form
 
@@ -78,7 +78,7 @@ POST of Consent, RoD and update to ServiceRequest to add supportingInfo link (in
 
 {{pagelink:Provenance-WGSTestOrderForm-DirectToLab-Example}}
 
-### 2. Lab recieves sample/ROD
+### 2. Lab receives sample/ROD
 
 POST of Specimen resources and GET from Lab 
 

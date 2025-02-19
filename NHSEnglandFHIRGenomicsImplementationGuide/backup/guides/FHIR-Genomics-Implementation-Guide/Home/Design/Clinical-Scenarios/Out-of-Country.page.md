@@ -48,7 +48,7 @@ POST of transaction Bundle consisting of the following resources:
 
 {{pagelink:Specimen-TissueResection-Example}}
 
-### The lab recieves the test request and:
+### The lab receives the test request and:
 
 ### 1. Views the completed test order form
 
@@ -70,4 +70,4 @@ PUT of Task with status=accepted
 
 PUT of {{pagelink:Task-NonWGSRareDiseaseTestOrderForwarded-OutOfCountry-Example}}
 
-Note: in cases where the responsible owner of a Task is not capbable of providing status updates to the broker, it is the responsibility of the referring organization to provide updates on the owners behalf and reallocate Tasks once ownership changes.
+Note: in cases where the responsible owner of a Task is not capabable of providing status updates to the broker, it is the responsibility of the referring organization to provide updates on the owners behalf and reallocate Tasks once ownership changes.

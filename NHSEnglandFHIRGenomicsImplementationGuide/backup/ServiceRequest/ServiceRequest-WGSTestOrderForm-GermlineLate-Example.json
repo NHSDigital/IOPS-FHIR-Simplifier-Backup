@@ -1,0 +1,94 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ServiceRequest-WGSTestOrderForm-GermlineLate-Example",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ServiceRequest-WGSTestOrderForm-CancerHaemOnc-Example"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
+            "code": "nhs-england",
+            "display": "NHS England"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdditionalContact",
+      "valueReference": {
+        "reference": "PractitionerRole/PractitionerRole-AnnaLaneKingstonPathology-Example"
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-GenomeSequencingCategory",
+          "code": "cancer-wgs",
+          "display": "Cancer - WGS"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/reasonfortesting-genomics",
+          "code": "diagnostic",
+          "display": "Diagnostic"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-GenomicTestDirectory",
+        "code": "M89.109",
+        "display": "Acute Leukaemia Other"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-DemeizaSeo-Example",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449306559"
+    }
+  },
+  "authoredOn": "2023-09-08",
+  "requester": {
+    "reference": "PractitionerRole/PractitionerRole-HazelSmithKingstonPathology-Example"
+  },
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "RJZ"
+      },
+      "display": "KING'S COLLEGE HOSPITAL NHS FOUNDATION TRUST"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Specimen-PatrickSammyBloodEDTA-Example"
+    }
+  ],
+  "note": [
+    {
+      "text": "Relevant Family History"
+    },
+    {
+      "text": "Other Additional Information"
+    }
+  ]
+}

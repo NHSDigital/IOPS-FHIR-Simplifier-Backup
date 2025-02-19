@@ -23,7 +23,7 @@ The expectation is that patients who do not have an NHS number will  have a test
 
 In the event there is a duplication of records (same patient), the activity of merging/ de-merging of records should also occur in the local EPR and/or LIMS. Local policies should be followed in the event of merging/de-merging a parent and duplicate record. The subsequent master record (post merge) should display the merged record in downstream systems. 
 
-## Senstive/Restricted Patient Records
+## Sensitive/Restricted Patient Records
 
 At times, PDS may mark patient records as sensitive, redacting information from responses which may be used to locate a patient. As demographic information is not expected to be duplicated within the central service, for patients registered with PDS, this should not impact the data stored on the central service. In this case, the demographics as well as the sensitive flag for the patient, should be retrieved directly from PDS. 
 

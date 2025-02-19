@@ -38,7 +38,7 @@ POST of Test order transaction bundle including {{pagelink:ServiceRequest-NonWGS
 
 Indicated through absence of Specimen resource in message or absence of ```Specimen.collectedDateTime```/```Specimen.status=unavailable```
 
-### The lab recieves the test request and:
+### The lab receives the test request and:
 
 ### 1. Views the completed test order form
 

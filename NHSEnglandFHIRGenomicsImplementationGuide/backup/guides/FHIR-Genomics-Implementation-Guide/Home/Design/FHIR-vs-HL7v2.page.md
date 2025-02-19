@@ -24,6 +24,6 @@ A number of alternatives/transformation mechanisms are being investigated by the
 
 * Support for draft requests within the central broker, allowing partial information to be uploaded from a HL7v2 based system, with further enrichment via another interface, e.g. web portal, before submission of a complete order (to be confirmed). 
 
-* Developement of the Genomic Order Management Web Portal, to present data not mappable to a HL7v2 message.
+* Development of the Genomic Order Management Web Portal, to present data not mappable to a HL7v2 message.
 
 For a more general introduction to the benefits of using FHIR, please see the FHIR overview pages, including those for [General Users](https://www.hl7.org/fhir/R4/overview.html), [Developers](https://www.hl7.org/fhir/R4/overview-dev.html), [Clinicians](https://www.hl7.org/fhir/R4/overview-clinical.html) and [Architects](https://www.hl7.org/fhir/R4/overview-arch.html).

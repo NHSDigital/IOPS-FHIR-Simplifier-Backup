@@ -17,7 +17,7 @@ This extends the Service Request Resource to support the exchange of information
 Context of Use
 </div>
 <div id='extension-Context-Use-Profiles'>
-{{pagelink:Genomics-ServiceRequest,text:ServiceRequest}}
+{{pagelink:Profile-UKCore-ServiceRequest,text:ServiceRequest}}
 </div>
 </div>
 

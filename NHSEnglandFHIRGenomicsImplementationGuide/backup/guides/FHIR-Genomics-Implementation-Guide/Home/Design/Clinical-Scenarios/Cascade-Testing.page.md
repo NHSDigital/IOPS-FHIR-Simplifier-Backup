@@ -51,7 +51,7 @@ Post of transaction Bundle consisting of the following resources:
 
 {{pagelink:Specimen-BloodEDTA-WithCollectionDetails-Example}}
 
-### The lab recieves the test request and:
+### The lab receives the test request and:
 
 ### 1. Views the completed test order form
 

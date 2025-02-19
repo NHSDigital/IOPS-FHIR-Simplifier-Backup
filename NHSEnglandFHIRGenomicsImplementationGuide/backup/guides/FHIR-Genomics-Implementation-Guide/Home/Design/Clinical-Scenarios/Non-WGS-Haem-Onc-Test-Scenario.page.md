@@ -70,7 +70,7 @@ OperationOutcome with appropriate success/failure codes: {{pagelink:OperationOut
 
 {{pagelink:Observation-NucleatedCellCount-Example}}
 
-### The GLH lab recieves the test request
+### The GLH lab receves the test request
 
 ### 1. Views the completed test order form
 

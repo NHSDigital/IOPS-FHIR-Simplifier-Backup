@@ -26,7 +26,7 @@ In this case, the data model SHOULD match the singleton/duo/trio scenario (Fetus
   <tr>
     <td>
 <ul><li><b>Woman is pregnant and testing is on the fetus (e.g., CVS or amnio):</b> The test requested is created on the fetal record. As part of fetus testing, the following information becomes mandatory:</li>
-<li>Woman's sample may be required for MCC (regardless of wheher the condition is peternal), see R321.1</li>
+<li>Woman's sample may be required for MCC (regardless of whether the condition is paternal), see R321.1</li>
 <li>the ability  to register a test against the fetus (this may differ from local organisation to another and is typically the woman’s Hospital ID plus indication of fetus ( Ex. WG1342Fetus A) - <b>Used as the unique fetal identifier prior to NHS Number allocation</b></li>
 <li>The capture of additional information such as fetal phenotypic sex (M/F/U or Unknown) and number of fetuses also becomes mandatory. - <b>Captured on the Patient resource for the foetus</b></li>
 <li>Pregnancy details: capture of Pregnancy type (Spontaneous conception, Surrogacy, or IVF Pregnancy). If IVF, the capture of own/donor egg/sperm and the age of the egg donor becomes mandatory - <b>Observation resources linked to the woman's patient record, as they relate to the pregnancy</b></li>
@@ -76,7 +76,7 @@ birthdate=eq1980-09-02
 
 {{pagelink:Patient-RyanneBoulder-Example}}
 
-### 2. Requester (e.g. Midwife) to search for approrpiate specialist testing description or code
+### 2. Requester (e.g. Midwife) to search for appropriate specialist testing description or code
 
 ServiceRequest.code = R21
 
@@ -102,7 +102,7 @@ Indicated through absence of Specimen resource in message or absence of ```Speci
 
 Specific Observation, Specimen and Procedure resources related to the above request can be found on the relevant Example pages.
 
-### The lab recieves the test request and:
+### The lab receives the test request and:
 
 ### 1. Views the completed test order form
 
