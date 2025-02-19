@@ -35,11 +35,11 @@ POST of test order bundle with {{pagelink:ServiceRequest-TestOrderForm-StorageOf
 
 Indicated through absence of Specimen resource in message or absence of ```Specimen.collectedDateTime```/```Specimen.status=unavailable```
 
-### The lab recieves the test request and:
+### The lab receives the test request and:
 
 ### 1. Views the completed test order form
 
-Obtained through GET /ServiceRequest or /GET Task requests (using paramets on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
+Obtained through GET /ServiceRequest or /GET Task requests (using parameters on {{pagelink:Home/FHIRAssets/CapabilityStatements}} to filter results) for non-routed requests. (Dashboard of available requests)
 
 OR
 
@@ -58,7 +58,7 @@ PUT of {{pagelink:Task-TestOrderFormAccepted-StorageOfMaterial-Example}}
 Marking of Task as completed
 
 
-### 1. Requester contacts the lab to confirm material avaialble and can be used for new test
+### 1. Requester contacts the lab to confirm material available and can be used for new test
 
 Outside Genomic Order Management Comms
 
@@ -66,7 +66,7 @@ Outside Genomic Order Management Comms
 
 POST of test order bundle with {{pagelink:ServiceRequest-NonWGSTestOrderForm-UsingStoredSample-Example}}
 
-### 3. Lab recieves test request, accepts test request once sample and request are aligned
+### 3. Lab receives test request, accepts test request once sample and request are aligned
 
 PUTT of {{pagelink:Task-NonWGSTestOrderFormAccepted-UsingStoredSample-Example}}
 

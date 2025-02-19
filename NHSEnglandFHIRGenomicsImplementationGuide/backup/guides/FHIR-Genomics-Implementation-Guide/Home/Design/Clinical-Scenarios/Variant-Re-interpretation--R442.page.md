@@ -40,7 +40,7 @@ Note: Supporting info can be optionally obtained from data related to the previo
 
 Indicated through absence of Specimen resource in message or absence of ```Specimen.collectedDateTime```/```Specimen.status=unavailable```
 
-### The lab recieves the test request and:
+### The lab receives the test request and:
 
 ### 1. Views the completed test order form
 

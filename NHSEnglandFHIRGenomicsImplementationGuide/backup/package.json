@@ -1,15 +1,16 @@
 {
-  "name": "uk.nhsengland.genomics.r4",
-  "description": "FHIR Genomics Implementation Guide FHIR Assets",
+  "name": "uk.nhsdigital.r4.genomics",
+  "description": "FHIR Genomics Implementation Guide",
   "author": "nhsdigital",
   "fhirVersions": [
     "4.0.1"
   ],
   "jurisdiction": "urn:iso:std:iso:3166:-2:GB-ENG",
-  "version": "0.4.4",
   "dependencies": {
     "fhir.r4.ukcore.stu3.currentbuild": "0.0.18-pre-release",
     "hl7.fhir.r4.core": "4.0.1",
     "hl7.fhir.uv.genomics-reporting": "3.0.0-ballot"
   }
 }
+
+

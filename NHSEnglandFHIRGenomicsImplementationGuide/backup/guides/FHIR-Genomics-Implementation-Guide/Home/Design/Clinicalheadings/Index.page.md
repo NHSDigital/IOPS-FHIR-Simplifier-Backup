@@ -56,7 +56,7 @@ The following are currently outside the scope of this work
 
 **The original order message in FHIR has been mapped to the HL7v2.5.1 OML Laboratory Order Message (event O21). as defined withing the IHE PaLM Laboratory Testing Workflow Technical Framework. The mappings provided in the following tables are meant as a guide to support uplifting current HL7v2 interfaces within the Genomic Order Comms ecosystem, not as a recommendation on the representation of FHIR concepts within HL7v2.**
 
-**It is understood the OML mesage does not cover all concepts defined within the FHIR MDS. In this case, appropriate segments in the HL7v2.5.1 spec have been provided, though how these are to be sent along with the OML message is still to be determined**
+**It is understood the OML message does not cover all concepts defined within the FHIR MDS. In this case, appropriate segments in the HL7v2.5.1 spec have been provided, though how these are to be sent along with the OML message is still to be determined**
 
 Further pages may be added to include additional mappings to FHIR, such as:
 

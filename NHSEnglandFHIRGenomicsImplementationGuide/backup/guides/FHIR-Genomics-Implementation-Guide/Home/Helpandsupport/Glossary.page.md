@@ -79,6 +79,6 @@ When describing genetic tests, different regions and professions sometimes use d
 |TAT/SLA|Turn-around-time/Service-level-agreement, used to record compliance to national standards for processing of genomic tests|
 |TD|Test Directory, repository of test codes and eligibility criteria for Genomic Tests, managed by NHS England|
 |UGR|Unified Genomic Record, proposed central repository for genomic related information about a patient|
-|VUS|Variants of Unknown Signficance, variations in a genetic sequence whose association with disease risk and significance to function are unclear| 
+|VUS|Variants of Unknown Significance, variations in a genetic sequence whose association with disease risk and significance to function are unclear| 
 |WGS|Whole Genome Sequencing, laboratory technique in which the entire coding (exon) and non-coding regions of the genome are obtained.|
 |XD-LAB|IHE Sharing Laboratory Reports, defining Diagnostic Report distribution procedures|
