@@ -233,6 +233,9 @@
       <!--the grouper Observation-->
       <Observation>
         <id value="a7d5aec0-e404-4fd7-90d5-0c3b5df77ea1" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />
@@ -275,6 +278,9 @@
       <!--marker detected Observation-->
       <Observation>
         <id value="82faf6a6-e463-41ca-a957-5a8e4cbef879" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />
@@ -319,6 +325,9 @@
       <!--primary site observation-->
       <Observation xmlns="http://hl7.org/fhir">
         <id value="52860bac-8a23-4386-9198-aaceffa4dbb5" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />

@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="MCED-AmendedTest-Example" />
   <meta>
-    <lastUpdated value="2020-09-20T10:22:00+00:00" />  
+    <lastUpdated value="2020-09-20T10:22:00+00:00" />
   </meta>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
