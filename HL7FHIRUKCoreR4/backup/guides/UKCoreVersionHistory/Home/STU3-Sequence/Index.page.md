@@ -39,10 +39,12 @@ topic: STU3Sequence
 <li>Added configurable display options to highlight specific sections of an example</li>
 <li><code>CodeSystem-UKCore-FundingCategory</code> - amended to replace develoved nations with the individual nations</li>
 <li><code>CodeSystem-UKCore-SampleCategory</code> - amended to add the concepts <code>solid-tumour</code>, <code>liquid-tumour</code> and <code>other</code></li>
-<li><code>StructureDefinition/extension-Condition.bodyStructure</code> - backported from R6
+<li><code>extension-Condition.bodyStructure</code> - backported from R6
 <li><code>CodeSystem-UKCore-BiopsyState</code> - removed it and replaced it with <code>CodeSystem-UKCore-PrimarySampleState</code>
 <li><code>ValueSet-UKCore-BiopsyState</code> - removed it and replaced it with <code>ValueSet-UKCore-SampleState</code>
-<li><code>StructureDefinition/UKCore-Specimen</code> - amended to replace the ValueSet from BiospyState to SampleState for specimen.condition binding
+<li><code>UKCore-Specimen</code> - amended to replace the ValueSet from BiospyState to SampleState for specimen.condition binding
+<li><code>UKCore-Observation-VitalSigns-BodyHeight</code> - value[x] changed to allow code for centimeters as well the the original metres
+<li><code>ValueSet-UKCore-BodySite</code> - include all descendants of the SNOMED hierarchy 278001007 | Nonspecific site |to allow for the user case when a clinician is prescribing a cutanious cream or similar to an affected area of the skin. Rather than the clinician having to select all the areas of the body that are affected they can just select the code 22201000087104 | Affected area |.
 </ul>
 <b>C&TA Sprint 7 Assets:</b><br>
 <ul>
