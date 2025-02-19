@@ -4,3 +4,5 @@
   filename: Reasonable-Adjustments
 - name: FGM record
   filename: FGM-record
+- name: CP-IS record
+  filename: CP-IS-Record
