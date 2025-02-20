@@ -175,43 +175,37 @@ The presence of a CP-IS flag indicates:
  - The responsible Local Authority Care Team overseeing the child's case
  - The start and end dates of the protection plan
 
-## Provenance of the CP-IS Record
-Provenance information must be stored for every CP-IS record access. This ensures accountability and tracks who accessed the information.
-
-
 <plantuml>
 @startuml
 
 skinparam linetype ortho
 
 entity "Patient" as pat {
-  *NHS Number : number <<generated>>
+  * NHS Number : number <<generated>>
 }
 
-package "Patient Flags API" {
+package "CP-IS API" {
 
-entity "Patient Flag" as pfg {
-  *patient : Patient
-  *code : CodeableConcept (Child Protection Plan / Looked-After Child / Unborn Child Protection Plan)
-  *category : CodeableConcept
-  *contained : Provenance (Contained)
+  entity "CP-IS Flag" as flag {
+    * patient : Patient
+    *category : CodeableConcept
+    * code : CodeableConcept (Child Protection Plan)
+    * period : Start & End Date
+  }
+
+  entity "CareTeam" as careteam {
+    * name : Local Authority Care Team
+    * telecom : Contact Details
+    * participant : Social Worker
+  }
 }
 
-entity "Provenance" as prov {
-  *recorded : Date
-  *agent : Agent (backbone)
-}
 
-entity "Organization" as org {
-  *name : Local Authority Name
-  *contact : Contact Details
-}
+pat ||--o| flag : "has CP-IS flag"
+flag ||--o| careteam : "linked to"
 
-}
+@enduml
 
-pat ||--o| pfg : "has"
-pfg ||--|| prov : contains
-pfg ||--o| org : "issued by"
 
 @enduml
 </plantuml>

@@ -19,14 +19,16 @@ Authorized healthcare workers can:
 @startuml
 left to right direction
 actor "Practitioner" as practitioner
+
 rectangle "CP-IS System" {
-  usecase "Look up Child Protection Plan" as U1
-  usecase "Retrieve Plan Details" as U2
+  usecase "Look up CP-IS Flag" as U1
+  usecase "Retrieve CareTeam Details" as U2
 }
 
 practitioner -- U1
-U1 -- U2 : "If record exists"
+U1 -- U2 : "If CP-IS Flag exists"
 @enduml
+
 </plantuml>
 
 
@@ -35,29 +37,34 @@ U1 -- U2 : "If record exists"
 
 <plantuml>
 @startuml
-participant "Practitioner" as P
-participant "Unscheduled Care System" as UCS
-participant "CP-IS API" as CPIS
-participant "Local Authority" as LADB
 
-P -> UCS: Search for Patient's CP-IS Record
-UCS -> CPIS: Query Child Protection Status (NHS Number)
-CPIS -> LADB: Retrieve Child Protection Plan
-LADB --> CPIS: Return Plan Details (if exists)
-CPIS --> UCS: Return Plan Information
-UCS --> P: Display Protection Plan Details
+actor "Practitioner" as Practitioner
+participant "Unscheduled Care System" as System
+participant "FHIR Server" as FHIR
+
+Practitioner -> System: Search for CP-IS status
+System -> FHIR: GET /Flag?patient={patientNHSNumber}
+FHIR --> System: Returns CP-IS Flag details
+
+System -> FHIR: GET /CareTeam/{CareTeam_ID}
+FHIR --> System: Returns CareTeam details
+
+System --> Practitioner: Display CP-IS and CareTeam Info
+
 @enduml
+
 </plantuml>
 
 ### Queries
 
-Using [FHIR search](https://www.hl7.org/fhir/search.html) capabilities, it is possible to retrieve the CP-IS Patient Flag records in several ways.
+
+Using [FHIR search](https://www.hl7.org/fhir/search.html) capabilities, it is possible to retrieve the Patient Flag records in several ways.
 
 #### Flag endpoint search
 
 This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/flag.html) endpoint using [FHIR search](https://www.hl7.org/fhir/search.html)
 
-This will return all associated CP-IS records for a given Patient.
+This will return all associated Flag resources including CP-IS Flag for a given Patient.
 
 ```
 GET [baseUrl]/Flag?patient=[patientNHSNumber]
@@ -72,6 +79,42 @@ This limits the search to Flags for the patient that has the identifier `9449306
 
 This query relies on the [Flag](http://www.hl7.org/fhir/R4/flag.html#search).patient SearchParameter.
 
+
+### GET Request for CareTeam (Using Extension Reference)
+
+Since we linked the CareTeam to the Flag using an FHIR Extension, we now fetch the CareTeam separately:
+
+Retrieve the CareTeam linked to a Flag:
+
+```
+GET [FHIR_BASE_URL]/CareTeam/{CareTeam_ID}
+```
+
+Example:
+
+```
+GET https://fhir.nhs.uk/CareTeam/LocalAuthoritySafeguardingTeam
+```
+
+This returns the CareTeam details (e.g., social workers, managing organization, contact info).
+
+### (Optional) Fetch CP-IS Flag + CareTeam in One Query
+
+If the Flag contains an extension reference to CareTeam, you can expand the request to fetch both Flag and CareTeam in a single request:
+
+```
+GET [FHIR_BASE_URL]/Flag?subject=Patient/{Patient_ID}&_include=Flag.extension
+```
+
+Example:
+
+```
+GET https://fhir.nhs.uk/Flag?subject=Patient/123456&_include=Flag.extension
+```
+
+This returns the CP-IS Flag and automatically includes the linked CareTeam.
+
+---
 
 
 
