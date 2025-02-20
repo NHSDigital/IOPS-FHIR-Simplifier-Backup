@@ -13,8 +13,4 @@ Example of a Consent resource where the Record of Discussion form has not been f
 
 
 
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/Consent-RoDToFollow-Example/~issues?level=File' target="_blank">Propose a change to Consent-RoDToFollow-Example</a></h4>
-</div>
-
 ---

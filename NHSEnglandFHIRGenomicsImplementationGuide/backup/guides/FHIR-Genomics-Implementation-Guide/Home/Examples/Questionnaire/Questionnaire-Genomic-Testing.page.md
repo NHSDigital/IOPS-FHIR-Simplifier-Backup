@@ -11,8 +11,4 @@ The Record of Discussion form represented as a FHIR questionnaire. If RoD forms 
 {{page:Home-Examples-ExamplesTemplate}}
 
 
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/NHSDigital-Questionnaire-Genomics-Example/~issues?level=File' target="_blank">Propose a change to Questionnaire-GenomicTesting-Example </a></h4>
-</div>
-
 ---

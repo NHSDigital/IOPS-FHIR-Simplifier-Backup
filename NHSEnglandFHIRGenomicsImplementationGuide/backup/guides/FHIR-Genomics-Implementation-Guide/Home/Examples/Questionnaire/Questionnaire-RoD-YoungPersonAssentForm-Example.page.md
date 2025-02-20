@@ -11,8 +11,4 @@ The Young Person Assent Form represented as a FHIR questionnaire. If YPA forms a
 {{page:Home-Examples-ExamplesTemplate}}
 
 
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/Questionnaire-RoD-YoungPersonAssentForm-Example/~issues?level=File' target="_blank">Propose a change to Questionnaire-RoD-YoungPersonAssentForm-Example </a></h4>
-</div>
-
 ---

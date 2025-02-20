@@ -19,6 +19,10 @@
 </div>
 
 
+<div id="Feedback" class="tabcontent">
+{{page:Home-Template-GenomicsAssetsFeedbackLink}}
+</div>
+
 
 <!--
 ---

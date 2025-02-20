@@ -11,9 +11,4 @@ Example of a specimen resource with additional collection information on specime
 {{page:Home-Examples-ExamplesTemplate}}
 
 
-<div id="Feedback" class="tabcontent">
-{{page:Home-Template-GenomicsAssetsFeedbackLink}}
-</div>
-
-
 ---

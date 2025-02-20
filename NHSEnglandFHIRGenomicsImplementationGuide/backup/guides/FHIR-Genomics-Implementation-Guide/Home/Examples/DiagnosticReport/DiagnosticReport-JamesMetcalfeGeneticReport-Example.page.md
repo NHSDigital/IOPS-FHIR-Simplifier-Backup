@@ -14,8 +14,4 @@ Example of a DiagnosticReport with the minimal amount of information expected by
 
 
 
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/DiagnosticReport-JamesMetcalfeGeneticReport-Example/~issues?level=File' target="_blank">Propose a change to DiagnosticReport-JamesMetcalfeGeneticReport-Example</a></h4>
-</div>
-
 ---

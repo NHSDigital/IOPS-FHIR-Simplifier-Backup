@@ -11,8 +11,4 @@ Example of a PractitionerRole resource linking Practitioner and Organization ide
 {{page:Home-Examples-ExamplesTemplate}}
 
 
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/PractitionerRole-OscarShields-Example/~issues?level=File' target="_blank">Propose a change to PractitionerRole-OscarShields-Example</a></h4>
-</div>
-
 ---

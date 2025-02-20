@@ -12,9 +12,4 @@ Example of an Observation representing a Therapeutic Implication derived from Ge
 
 {{page:Home-Examples-ExamplesTemplate}}
 
-
-<div id="Feedback" class="tabcontent">
-{{page:Home-Template-GenomicsAssetsFeedbackLink}}
-</div>
-
 ---

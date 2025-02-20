@@ -1,5 +1,5 @@
 ---
-subject: BodyStructure/BodyStructure-BodySiteLocationAbdomen-Example
+subject: BodyStructure-BodySiteLocationAbdomen-Example
 expand: yes
 ---
 
@@ -11,10 +11,6 @@ BodyStructure recording the location of a specimen body site collection.
 
 {{page:Home-Examples-ExamplesTemplate}}
 
-
-<div id="Feedback" class="tabcontent">
-{{page:Home-Template-GenomicsAssetsFeedbackLink}}
-</div>
 
 
 ---
