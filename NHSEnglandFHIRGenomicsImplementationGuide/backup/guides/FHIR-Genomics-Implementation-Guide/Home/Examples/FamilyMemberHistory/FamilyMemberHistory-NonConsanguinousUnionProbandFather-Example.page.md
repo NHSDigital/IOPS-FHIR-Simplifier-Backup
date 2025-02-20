@@ -1,4 +1,3 @@
-
 ---
 subject: FamilyMemberHistory-NonConsanguinousUnionProbandFather-Example
 expand: yes
@@ -13,10 +12,5 @@ Example of a FamilyMemberHistory resource, with an attached Observation, indicat
 
 {{page:Home-Examples-ExamplesTemplate}}
 
-
-
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/FamilyMemberHistory-NonConsanguinousUnionProbandFather-Example/~issues?level=File' target="_blank">Propose a change to FamilyMemberHistory-NonConsanguinousUnionProbandFather-Example</a></h4>
-</div>
 
 ---

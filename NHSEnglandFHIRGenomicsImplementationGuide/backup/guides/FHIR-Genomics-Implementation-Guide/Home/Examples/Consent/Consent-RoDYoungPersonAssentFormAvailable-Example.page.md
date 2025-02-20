@@ -12,8 +12,4 @@ Example of a Consent resource where the Young Person Assent form has been filled
 
 
 
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/Consent-RoDYoungPersonAssentFormAvailable-Example/~issues?level=File' target="_blank">Propose a change to Consent-RoDYoungPersonAssentFormAvailable-Example</a></h4>
-</div>
-
 ---

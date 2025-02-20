@@ -11,8 +11,4 @@ Example of a Subscription resource for setting up alerting when a Task is assign
 {{page:Home-Examples-ExamplesTemplate}}
 
 
-<div id="Feedback" class="tabcontent">
-{{page:Home-Template-GenomicsAssetsFeedbackLink}}
-</div>
-
 ---

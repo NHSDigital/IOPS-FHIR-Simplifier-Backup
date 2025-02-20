@@ -9,8 +9,4 @@ Example of a DocumentReference depicting a reference to a genomic data file link
 
 {{page:Home-Examples-ExamplesTemplate}}
 
-<div id="Feedback" class="tabcontent">
-<h4><a href='' target="_blank">Propose a change to DocumentReference-PharmCAT-Example</a></h4>
-</div>
-
 ---

@@ -14,10 +14,5 @@ Additional guidance on Structured Reports is available on the [HL7 Genomic Repor
 {{page:Home-Examples-ExamplesTemplate}}
 
 
-
-<div id="Feedback" class="tabcontent">
-{{page:Home-Template-GenomicsAssetsFeedbackLink}}
-</div>
-
 ---
 

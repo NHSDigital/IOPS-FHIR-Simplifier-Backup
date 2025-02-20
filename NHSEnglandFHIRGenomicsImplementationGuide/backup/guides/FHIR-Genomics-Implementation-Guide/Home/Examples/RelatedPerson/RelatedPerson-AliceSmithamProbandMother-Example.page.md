@@ -12,8 +12,4 @@ Example of a RelatedPerson resource linking a Proband to a Patient resource, as 
 {{page:Home-Examples-ExamplesTemplate}}
 
 
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/RelatedPerson-AliceSmithamProbandMother-Example/~issues?level=File' target="_blank">Propose a change to RelatedPerson-AliceSmithamProbandMother-Example </a></h4>
-</div>
-
 ---
