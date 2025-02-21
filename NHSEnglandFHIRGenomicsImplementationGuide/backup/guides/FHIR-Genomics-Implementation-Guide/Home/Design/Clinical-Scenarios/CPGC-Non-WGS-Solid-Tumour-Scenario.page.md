@@ -53,7 +53,7 @@ OperationOutcome with appropriate success/failure codes: {{pagelink:OperationOut
 
 {{pagelink:Observation-TumourType-Example}}
 
-{{pagelink:Specimen-CancerSolidTumor-Example}}
+{{pagelink:Specimen-SolidTumor-Example}}
 
 {{pagelink:ServiceRequest-NonWGSTestOrderFormUpdated-SolidTumor-Example}}
 

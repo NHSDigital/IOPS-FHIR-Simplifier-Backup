@@ -10,9 +10,4 @@ Example of a ServiceRequest which has been modified. After modification, the Ser
 
 {{page:Home-Examples-ExamplesTemplate}}
 
-
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ServiceRequest-ServiceRequest-SavedTestOrderUpdated-Example/~issues?level=File' target="_blank">Propose a change to ServiceRequest/ServiceRequest-SavedTestOrderUpdated-Example</a></h4>
-</div>
-
 ---

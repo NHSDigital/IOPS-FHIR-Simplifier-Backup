@@ -11,6 +11,4 @@ Example of a RelatedPerson resource linking a Proband to a Patient resource, as 
 
 {{page:Home-Examples-ExamplesTemplate}}
 
-
-
 ---

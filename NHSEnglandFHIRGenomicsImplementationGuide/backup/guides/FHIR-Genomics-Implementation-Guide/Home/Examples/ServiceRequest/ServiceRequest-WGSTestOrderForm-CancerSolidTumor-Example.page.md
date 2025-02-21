@@ -15,5 +15,4 @@ Example of a ServiceRequest submitted to request a WGS Cancer-test with a solid 
 {{page:Home-Template-GenomicsAssetsFeedbackLink}}
 </div>
 
-
 ---

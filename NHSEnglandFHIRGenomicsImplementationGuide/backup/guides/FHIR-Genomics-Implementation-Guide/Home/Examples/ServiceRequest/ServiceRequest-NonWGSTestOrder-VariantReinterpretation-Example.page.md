@@ -11,8 +11,4 @@ Example of a ServiceRequest, submitted to request variant reinterpretation. Afte
 {{page:Home-Examples-ExamplesTemplate}}
 
 
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ServiceRequest-NonWGSTestOrder-VariantReinterpretation-Example/~issues?level=File' target="_blank">Propose a change to ServiceRequest-NonWGSTestOrder-VariantReinterpretation-Example</a></h4>
-</div>
-
 ---
