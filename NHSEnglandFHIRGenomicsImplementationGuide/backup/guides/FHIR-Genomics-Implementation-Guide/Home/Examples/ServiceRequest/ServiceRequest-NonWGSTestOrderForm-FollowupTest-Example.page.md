@@ -11,8 +11,4 @@ Example of a ServiceRequest, submitted to request a follow-up test. After being 
 {{page:Home-Examples-ExamplesTemplate}}
 
 
-<div id="Feedback" class="tabcontent">
-<h4><a href='https://simplifier.net/NHS-Digital-FHIR-Genomics-Implementation-Guide/ServiceRequest-ServiceRequest-NonWGSTestOrderForm-FollowupTest-Example/~issues?level=File' target="_blank">Propose a change to ServiceRequest-NonWGSTestOrderForm-FollowupTest-Example</a></h4>
-</div>
-
 ---
