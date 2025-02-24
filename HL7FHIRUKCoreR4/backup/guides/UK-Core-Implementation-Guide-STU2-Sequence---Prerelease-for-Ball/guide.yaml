@@ -1,5 +1,6 @@
-title: UK Core Implementation Guide 2.0.1 - STU2 Sequence
+title: UK Core Implementation Guide 2.0.2 - STU2 Sequence
 description: The UK Core for STU2 Sequence ballot, by HL7 UK
-version: 2.0.1
+version: 2.0.2
 style-root: project
 style-name: HL7UKCore
+numbered-headings: false
