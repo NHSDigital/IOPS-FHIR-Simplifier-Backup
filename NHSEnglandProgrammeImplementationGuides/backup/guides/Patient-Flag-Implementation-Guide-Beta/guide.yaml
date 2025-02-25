@@ -1,6 +1,6 @@
-title: Patient Flag Implementation Guide - Beta
-description: UK Core styled base project for NHSE API IG's
-version: development
+title: Patient Flag Implementation Guide
+description: UK Core styled base project for NHSE API IGs
+version: 
 style-root: project
 style-name: NHSEUKCoreStyle
 numbered-headings: false
