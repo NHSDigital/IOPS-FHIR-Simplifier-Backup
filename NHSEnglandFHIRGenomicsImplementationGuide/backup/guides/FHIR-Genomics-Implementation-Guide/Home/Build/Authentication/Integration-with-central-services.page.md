@@ -37,6 +37,14 @@ The service will have a road map item to explore and integrate with services suc
 
 For creation and update of service requests this should not be necessary as there is an expectation that systems connecting to the test order service will have recently verified these details against the same national services, but there will be scenarios such as superseded NHS numbers and deceased patients which will not be captured if a supplier does not interact with the service when this happens, therefore the service would need to be notified or poll PDS to check for updated NHS numbers or changes to deceased status.
 
+## RelatedPerson and familial relationships/linkage
+
+The PDS service currently supports the RelatedPerson resource. Use of this resource is currently limited to representation of carers, next of kin, or other individuals serving as contact points for the patient, with expectations this will extend to proxy relationships in the future. 
+
+While Genomics also uses RelatedPerson, the use case is quite different. Within Genomics, there is the need to represent Biological relationships between individuals to support creation of genetic pedigrees, interpretation/evaluation of inheritance of disease and identifying related family members eligible for cascade testing. 
+
+These biological relationships are currently solely represented within genomic services (e.g. GOMS, UGR) as PDS is limited to relationships in a legal/administrative context. There are a number of concerns regarding representation of biological relationships within a demographics service, e.g. natural father not being the same as the father figure raising a child, which could lead to information governance/legal issues. As such, biological relationships will remain within the purview of genomic services for the forseeable future. 
+
 ## Proposed Architecture
 
 {{render:diagrams-architecture}}

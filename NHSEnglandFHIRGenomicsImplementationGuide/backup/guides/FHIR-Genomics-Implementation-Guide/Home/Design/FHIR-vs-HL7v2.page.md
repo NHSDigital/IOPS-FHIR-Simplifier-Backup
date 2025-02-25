@@ -16,7 +16,7 @@ A general comparison between HL7v2 and FHIR is given on the [FHIR HL7v2 page](ht
 
 * Finally, HL7v2 does not have cross version consistency, or even cross implementation consistency, with segments not being supported or not existing altogether, within different versions and implementations of the same trigger event. For this reason, a central FHIR implementation guide has been developed to concretely outline the capabilities required of connecting systems. 
 
-A number of alternatives/transformation mechanisms are being investigated by the central NHS England Genomics Unit to help uplift HL7v2 systems, or allow limited connectivity with the central broker, as detailed below. Ho native FHIR integration is still preferred:
+A number of alternatives/transformation mechanisms are being investigated by the central NHS England Genomics Unit to help uplift HL7v2 systems, or allow limited connectivity with the central broker, as detailed below. Thouo native FHIR integration is still preferred:
 
 * Maps from HL7v2 OML_O21 to FHIR for the initial order message. While these have not been explicitly defined within StructureMaps (due to inter-version inconsistencies in HL7v2 only limited benefits would be obtained from these), the tables should allow users to create transformations within their local systems, uplifting data from v2 into the appropriate FHIR resources. It is expected that any data items not supported by the local HL7v2 interface will need to be captured as OBX segments. 
 
