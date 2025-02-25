@@ -48,3 +48,15 @@ The Genomic Medicine Service will expect clients to follow the [National RBAC gu
 For unattended API calls, application level authentication using APIGEE OAuth2.0 capability within API-M will be used. This mechanism is currently being used for other national services such as NRL FHIR R4. Information for integration with this service is available on the [NHS England developer guidance pages](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/application-restricted-restful-apis-signed-jwt-authentication)
 
 The connecting system will need to get a signed token and pass it to the genomics test order API with their request. The token will be passed from the API-M layer back to the Genomics services where the service will use the claims in the token to apply appropriate access controls. For the alpha the access controls within API-M which control access to the API as a whole will be sufficient to meet the requirements, but the service will need to process the token for audit purposes and possibly additional access controls in beta and further development phases.
+
+### Purpose-Based Access Control
+
+Within the Unified Genomic Record, there is a need to restrict access to particular aspects of a patient's genetic profile, or family linkage, based on a user's role, the purpose for which they are accessing the data, the activities they are performing (e.g. CRUD operations) and the patient's own consent. 
+
+This work is currently in discovery to elicit concrete requirements of how these access controls need to be represented, as well as how the claims themselves are represented and tested before providing access to a UGR record. 
+
+It is expected the framework will align to [IHE PCF](https://profiles.ihe.net/ITI/PCF/), with consent representing the patient's own directives and security tags representing an overall level of sensitivity of classes of information.
+
+The particular representation of claims is pending investigation but it is expected these will align somewhat to OpenID Connect or OAuth2. At the present time, there is no NHS England service which is able to support Attribute-Based Access Control (required to represent activities/purposes being performed by the user).
+
+The level of granularity the consent and PBAC policies will need to support, e.g. Classes of resources, specific instances or specific attributes within those instances, is also pending investigation.

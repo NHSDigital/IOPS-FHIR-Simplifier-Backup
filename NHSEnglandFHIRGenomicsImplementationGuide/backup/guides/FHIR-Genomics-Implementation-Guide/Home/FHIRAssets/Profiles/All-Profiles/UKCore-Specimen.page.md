@@ -369,6 +369,7 @@ Additional examples/guidance will be provided within this IG once use of the fie
 
 Sample tracking information SHOULD be added to Tasks acting on Specimen resources, e.g. Tasks marked SamplePreparation or SampleProcessing, on either the output or input elements. This information MAY include consignment number, destination, date sent etc.
 
+If known, the container type SHOULD be populated, using the example bound ValueSet, in SNOMED CT. If an appropraite code cannot be found, the specimen container type should be populated using free text, in `Specimen.container.type.text`. Additional container elements, such as capacity or specimenQuantity MAY be populated if known.
 ```json
 "container":  [
         {
@@ -379,7 +380,16 @@ Sample tracking information SHOULD be added to Tasks acting on Specimen resource
                             "reference": "Location/Location-NTGLHFridge-Example"
                     }
                 }
-            ]
+            ],
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "702284002",
+                        "display": "Non-evacuated blood collection tube, lithium heparin"
+                    }
+                ]
+            }
         }
     ]
 ```
