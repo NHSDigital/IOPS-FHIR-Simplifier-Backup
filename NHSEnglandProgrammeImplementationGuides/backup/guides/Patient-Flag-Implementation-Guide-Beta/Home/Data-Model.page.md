@@ -205,10 +205,6 @@ pat ||--o| flag : "has CP-IS flag"
 flag ||--o| careteam : "linked to"
 
 @enduml
-
-
-@enduml
 </plantuml>
-
 
 ---

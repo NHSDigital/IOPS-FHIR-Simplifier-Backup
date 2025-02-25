@@ -27,7 +27,7 @@
       },
       {
         "who" : {
-          "type" : "Endpoint",
+          "type" : "Device",
           "identifier" : {
             "system" : "https://fhir.nhs.uk/Id/accredited-system",
             "value" : "9885632"
