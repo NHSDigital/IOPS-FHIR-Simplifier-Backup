@@ -17,6 +17,8 @@ It is expected structured DiagnosticReports will mimic the structure proposed wi
 
 Genomic DiagnosticReports which have been updated post submission SHALL be accompanied by Provenance resources, referencing the DiagnosticReport which detail when the resource was changed, who made the change and why.
 
+Whilst unstructured Diagnostic Reports can also be represented by DocumentReference resources, the DiagnosticReport resource is preferred for any documents constituting actual reports, as the resource allows capture of metadata not present in DocumentReference, such as the resultsInterpreter, specimen or conclusion, which would help in searching or for analytics. Use of DocumentReference resources is limited to other data files or documents.
+
 | Profile url | FHIR Module | Normative Status |
 |--
 | [https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport](https://simplifier.net/resolve?target=simplifier&canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport&scope=fhir.r4.ukcore.stu2@2.0.1-pre-release) | [UKCore]() | trial-use |
