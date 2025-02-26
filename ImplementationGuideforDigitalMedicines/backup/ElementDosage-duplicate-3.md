@@ -1,6 +1,6 @@
 # {{page-title}}
 
-The FHIR `Dosage` element is complex but essential to achieve medicines interoperability. Extensive implementation guidance with numerous clinically appropriate [examples](Examples?version=current) are documented within this guide.
+The FHIR [Dosage](https://hl7.org/fhir/R4/dosage.html#Dosage) data structure is complex but essential to achieve medicines interoperability. Extensive implementation guidance with numerous clinically appropriate [examples](Examples?version=current) are documented within this guide.
 
 <!--// start of code snippet -->
 <div class="nhsd-!t-margin-bottom-6">
