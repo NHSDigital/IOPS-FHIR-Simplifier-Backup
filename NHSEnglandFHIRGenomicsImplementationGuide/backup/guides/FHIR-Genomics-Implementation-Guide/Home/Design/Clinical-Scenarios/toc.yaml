@@ -4,14 +4,14 @@
   filename: Non-WGS-Test-Request---Rare-Disease.page.md
 - name: WGS Test Request - Rare Disease
   filename: WGS-Test-Request---Rare-Disease.page.md
-- name: WGS Test Request - Cancer
-  filename: WGS-Test-Request-Cancer.page.md
 - name: Re-analysis (R387)
   filename: Re-analysis--R387.page.md
 - name: Non-WGS Haem-Onc Test Scenario
   filename: Non-WGS-Haem-Onc-Test-Scenario.page.md
 - name: CPGC Non-WGS Solid Tumour Scenario
   filename: CPGC-Non-WGS-Solid-Tumour-Scenario.page.md
+- name: WGS Test Request - Cancer
+  filename: WGS-Test-Request-Cancer.page.md
 - name: Fetus Management
   filename: Fetus-Management.page.md
 - name: Direct to Lab
