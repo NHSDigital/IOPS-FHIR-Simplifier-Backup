@@ -7,13 +7,13 @@
 The contents of this guidance have been authored by NHS England with the support of NHS Trusts, software suppliers, Clinical Commissioning Groups and Healthcare professionals across the United Kingdom.
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note</strong>: The majority of the FHIR Assets referenced within this implementation guide are now part of <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home">UK Core</a>. Implementation guidance within this publication is supplementary to that published within UK Core. <br/><br/>If you are specifically looking for <strong>dose syntax guidance</strong> then find it under the <a href="ElementDosage?version=current">FHIR Assets | Element: Dosage</a> menu.
+    <strong>Note</strong>: The majority of the FHIR Assets referenced within this implementation guide are now part of <a href="https://simplifier.net/guide/UKCoreVersionHistory/Home">UK Core</a>. Implementation guidance within this publication is supplementary to that published within UK Core. <br/><br/>If you are specifically looking for <strong>dose syntax guidance</strong> then find it under the <a href="ElementDosage?version=current">FHIR Assets | Element: Dosage</a> menu within this guide.
 </div>
 
 If you are brand new here, it is recommended you first read the Introduction.
 
 <a class="nhsd-a-button" href="Introduction?version=current">Continue to the Introduction</a>
-
+<!--
 ---
 
 ## Related guides
@@ -23,7 +23,6 @@ This guide references other guides published by NHS England.
 <div class="nhsd-o-card-list">
     <div class="nhsd-t-grid">
         <div class="nhsd-t-row nhsd-o-card-list__items ">
-            <!-- NHS England Base --> 
             <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
                 <article class="nhsd-m-card">
                     <a href="https://simplifier.net/guide/NHSDigital" class="nhsd-a-box-link  nhsd-a-link" aria-label="Read the NHS Digital Base Guidance">
@@ -43,7 +42,6 @@ This guide references other guides published by NHS England.
                     </a>
                 </article>
             </div>
-            <!-- ePMA Implementation Guidance for FHIR STU3 -->
             <div class="nhsd-t-col-xs-12 nhsd-t-col-s-4">
                 <article class="nhsd-m-card">
                     <a href="https://simplifier.net/guide/epmaimplementationguidanceforfhirstu3" class="nhsd-a-box-link " aria-label="UK Core Implementation Guide for Digital Medicines">
@@ -66,3 +64,4 @@ This guide references other guides published by NHS England.
         </div>
     </div>
 </div>
+-->
