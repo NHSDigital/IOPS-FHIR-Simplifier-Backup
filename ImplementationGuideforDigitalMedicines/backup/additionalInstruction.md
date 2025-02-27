@@ -55,7 +55,7 @@ For example:
 ```xml
 <dosageInstruction>
     <sequence value="1" />
-    <text value="1 tablet - once a day - for 1 week - take with food" />
+    <text value="1 tablet - once a day - for 1 week - With food" />
     <timing>
         <repeat>
             <boundsDuration>
@@ -78,12 +78,16 @@ For example:
         </doseQuantity>
     </doseAndRate>
     <additionalInstruction>
-        <text value="take with food"/>
+        <coding> 
+            <system value="http://snomed.info/sct"/> 
+            <code value="1116481000001105"/> 
+            <display value="With food"/> 
+        </coding>
     </additionalInstruction>
 </dosageInstruction>
 <dosageInstruction>
     <sequence value="2" />
-    <text value="2 tablets - twice a day - take with food" />
+    <text value="2 tablets - twice a day - With food" />
     <timing>
         <repeat>
             <frequency value="2" />
@@ -100,7 +104,11 @@ For example:
         </doseQuantity>
     </doseAndRate>
     <additionalInstruction>
-        <text value="take with food"/>
+        <coding> 
+            <system value="http://snomed.info/sct"/> 
+            <code value="1116481000001105"/> 
+            <display value="With food"/> 
+        </coding>
     </additionalInstruction>
 </dosageInstruction>
 ```

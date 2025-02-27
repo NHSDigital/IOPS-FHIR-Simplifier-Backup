@@ -43,7 +43,7 @@ Which can all be supported by the implementation of [Shared Medication Records](
                             </svg>
                         </span>
                     </span>
-                    <span>Orders for the supply of ward stock medications.</span>
+                    <span>Orders for the supply of ward stock medications, opposed to orders for a given patient.</span>
                 </li>
                 <!-- Medication requests between two Trusts where there is a local shortage of supply. -->
                 <li class="nhsd-m-checklist__icon-list">
@@ -81,10 +81,10 @@ Which can all be supported by the implementation of [Shared Medication Records](
 
 ## Use cases covered in other guides
 
-Refer to the [NHS England Electronic Prescription Service FHIR API](https://digital.nhs.uk/developer/api-catalogue/electronic-prescription-service-fhir){: .nhsd-a-link } specification for the use cases of:
+Refer to the [NHS England Electronic Prescription Service (EPS) FHIR API](https://digital.nhs.uk/developer/api-catalogue/electronic-prescription-service-fhir){: .nhsd-a-link } specification for the use cases of:
 - Primary Care, Community Care and Urgent and Emergency Care (UEC) medication requests to community pharmacy (aka an `FP10`). 
 - Outpatient medication requests to be dispensed by a Community Pharmacy (aka an `FP10HNC`).
 - Outpatient medication requests to a contracted Outpatient pharmacy.
 - Outpatient medication requests to a Homecare medicines provider.
 
-The above specification is **NOT APPLICABLE** to Scotland or Northern Ireland.
+The above EPS specification is **NOT APPLICABLE** to Scotland or Northern Ireland.
