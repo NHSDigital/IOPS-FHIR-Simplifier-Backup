@@ -13,7 +13,7 @@ topic: ReleaseNotes
 * Added {{pagelink:FHIRAssetsR4CapabilityStatements}} and {{pagelink:FHIRAssetsR4MessageDefinitions}} pages (both under the **FHIR Assets** menu bar item).
 * Removed the **Build** menu bar item which contained the 'How to Construct a Pathology Test Request Bundle' and 'How to Construct a Pathology Test Report Bundle' pages. The content from these pages has been combined into a {{pagelink:ContructBundles}} page and added to the **Design** menu bar item.
 * Updated the {{pagelink:R4BundleExampleFullBloodCountReport}} example to include `Observation.interpretation` for out of range values.
-* Updated the data flows diagram and description in the {{pagelink:Background}} page to include message acknowledgements.
+* Updated the GP practice data flows diagram and description in the {{pagelink:Background}} page to include message acknowledgements.
 ---
 
 ### v0.1.8 (30/08/2024)
