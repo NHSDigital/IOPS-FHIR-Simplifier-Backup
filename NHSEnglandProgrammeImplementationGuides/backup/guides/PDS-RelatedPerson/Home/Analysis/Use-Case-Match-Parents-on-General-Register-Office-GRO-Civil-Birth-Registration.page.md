@@ -65,6 +65,7 @@
               <li>A search against the mother data is completed.</li>
               <li>A search against the second parent data is completed.</li>
               <li>Matched parents are persisted as RelatedPersons in the Related Person Network.</li>
+              <li>Provenance resource is created for the relationship in the Related Person Network</li>
             </ol>
           </li>
           <li>Provenance indicates the source of the data.</li>
