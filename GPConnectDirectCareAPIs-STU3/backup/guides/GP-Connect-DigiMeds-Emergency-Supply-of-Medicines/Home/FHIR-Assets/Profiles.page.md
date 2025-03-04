@@ -102,24 +102,24 @@
             <td class="nhsd-t-body">
                 {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-CareConnect-ITK-MedicationDispense-List-1}}
             </td>
-            <td class="nhsd-t-body"><span class="mro-circle required"></span> Required</td>
-            <td class="nhsd-t-body"><code>0..1</code></td>
+             <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>
+            <td class="nhsd-t-body"><code>1..1</code></td>
         </tr>
         <!-- CareConnect-ITK-MedicationDispense-1 -->
         <tr>
             <td class="nhsd-t-body">
                 {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-CareConnect-ITK-MedicationDispense-1}}
             </td>
-            <td class="nhsd-t-body"><span class="mro-circle required"></span> Required</td>
-            <td class="nhsd-t-body"><code>0..*</code></td>
+             <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>
+            <td class="nhsd-t-body"><code>1..*</code></td>
         </tr>
         <!-- CareConnect-ITK-Medication-1 -->
         <tr>
             <td class="nhsd-t-body">
                 {{pagelink:Home/FHIR-Assets/All-assets/Profiles/Profile-CareConnect-ITK-Medication-1}}
             </td>
-            <td class="nhsd-t-body"><span class="mro-circle required"></span> Required</td>
-            <td class="nhsd-t-body"><code>0..*</code></td>
+             <td class="nhsd-t-body"><span class="mro-circle mandatory"></span> Mandatory</td>>
+            <td class="nhsd-t-body"><code>1..*</code></td>
         </tr>
         <!-- CareConnect-ITK-Allergy-List-1 -->
         <tr>
