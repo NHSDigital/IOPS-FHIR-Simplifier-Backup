@@ -4,3 +4,7 @@
   filename: View-Relationship-Search-on-Person-NHS-Number
 - name: Index
   filename: Index.page.md
+- name: View Relationship and Provenance - Search on Patient NHS Number
+  filename: View-Relationship-and-Provenance-Search-on-Patient-NHS-Number
+- name: View Relationship and Provenance - Search on Person NHS Number
+  filename: View-Relationship-and-Provenance-Search-on-Person-NHS-Number
