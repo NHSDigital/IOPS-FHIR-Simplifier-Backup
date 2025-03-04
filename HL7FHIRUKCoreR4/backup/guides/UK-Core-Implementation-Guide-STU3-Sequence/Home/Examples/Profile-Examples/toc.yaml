@@ -20,6 +20,8 @@
   filename: Example-UKCore-Consent-ForInformationAccess.page.md
 - name: Example UKCore-DiagnosticReport-CTChestScan
   filename: Example-UKCore-DiagnosticReport-CTChestScan.page.md
+- name: Example UKCore-DiagnosticReport-DiagnosticStudiesReport
+  filename: Example-UKCore-DiagnosticReport-DiagnosticStudiesReport.page.md
 - name: Example UKCore-DiagnosticReport-ECG
   filename: Example-UKCore-DiagnosticReport-ECG.page.md
 - name: Example UKCore-DiagnosticReport-Lab-DiagnosticStudiesReport

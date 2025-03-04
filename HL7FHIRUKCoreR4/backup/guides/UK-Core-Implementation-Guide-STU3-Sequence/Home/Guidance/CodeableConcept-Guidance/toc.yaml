@@ -22,5 +22,7 @@
   filename: Clinical-codes.page.md
 - name: Original term text
   filename: Original-term-text.page.md
+- name: Coding.userSelected
+  filename: Coding.userSelected.page.md
 - name: Sending a local language translation
   filename: Sending-a-local-language-translation.page.md
