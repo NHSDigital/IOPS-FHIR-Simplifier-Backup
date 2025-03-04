@@ -1,4 +1,4 @@
-- name: Use Case - Generic
+- name: Use Case - Search for a Healthcare Service
   filename: Use-Case-Generic.page.md
 - name: Use Case - Urgent and Emergency Care
   filename: Use-Case-Urgent-and-Emergency-Care.page.md
@@ -6,7 +6,5 @@
   filename: Use-Case-Search-for-an-Endpoint.page.md
 - name: Existing DoS Systems
   filename: Existing-DoS-Systems.page.md
-- name: Use Case - Healthcare Worker API
-  filename: Use-Case-Healthcare-Worker-API.page.md
-- name: Use Case - Search for an Healthcare Worker
-  filename: Use-Case-Search-for-an-Healthcare-Worker.page.md
+- name: Use Case - Search for a Healthcare Worker
+  filename: Use-Case-Search-for-a-Healthcare-Worker.page.md
