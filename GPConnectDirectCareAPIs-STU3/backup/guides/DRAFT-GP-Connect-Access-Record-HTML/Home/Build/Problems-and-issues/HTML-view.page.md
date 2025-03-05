@@ -42,10 +42,10 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each active problem and issue-->
-               <td class="date-column">{ {problemissue.startdate} }</td>
-               <td>{ {problemissue.entry} }</td>
-               <td>{ {problemissue.significance} }</td>
-               <td>{ {problemissue.details} }</td>
+               <td class="date-column">$ problemissue.startdate $</td>
+               <td>$ problemissue.entry $</td>
+               <td>$ problemissue.significance $</td>
+               <td>$ problemissue.details $</td>
             </tr>
          </tbody>
       </table>
@@ -80,11 +80,11 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each major inactive problem and issue-->
-               <td class="date-column">{ {problemissue.startdate} }</td>
-               <td class="date-column">{ {problemissue.enddate} }</td>
-               <td>{ {problemissue.entry} }</td>
-               <td>{ {problemissue.significance} }</td>
-               <td>{ {problemissue.details} }</td>
+               <td class="date-column">$ problemissue.startdate $</td>
+               <td class="date-column">$ problemissue.enddate $</td>
+               <td>$ problemissue.entry $</td>
+               <td>$ problemissue.significance $</td>
+               <td>$ problemissue.details $</td>
             </tr>
          </tbody>
       </table>
@@ -119,17 +119,14 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each other inactive problem and issue-->
-               <td class="date-column">{ {problemissue.startdate} }</td>
-               <td class="date-column">{ {problemissue.enddate} }</td>
-               <td>{ {problemissue.entry} }</td>
-               <td>{ {problemissue.significance} }</td>
-               <td>{ {problemissue.details} }</td>
+               <td class="date-column">$ problemissue.startdate $</td>
+               <td class="date-column">$ problemissue.enddate $</td>
+               <td>$ problemissue.entry $</td>
+               <td>$ problemissue.significance $</td>
+               <td>$ problemissue.details $</td>
             </tr>
          </tbody>
       </table>
    </div>
 </div>
 ```
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-        <i class="fas fa-exclamation-circle text-primary"></i> <b>Note:</b> In the example above, a space has been added into each pair of brackets enclosing a placeholder (e.g. <code>{ {problemissue.startdate} }</code>). These spaces will need removing in the actual implementation.
-</div>
