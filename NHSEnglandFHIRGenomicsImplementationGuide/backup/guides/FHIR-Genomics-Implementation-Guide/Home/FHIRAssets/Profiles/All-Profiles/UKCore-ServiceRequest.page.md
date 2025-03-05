@@ -263,7 +263,7 @@ SHALL reference a parent request where this ServiceRequest is based on a previou
 
 <a name="status"></a>
 <h4 class='additional-Guidance-Submenu'> status </h4>
-SHALL be provided. ServiceRequests SHOULD be marked as 'draft' until submitted, after which they will be marked as 'active' automatically by the central GMS system. 
+SHALL be provided. ServiceRequests SHOULD be marked as 'draft' until ready to be acted upon, after which the user should mark the ServiceRequest as 'active'. 
 
 A ServiceRequest may be marked as 'on-hold' if work against it cannot continue temporarily, e.g. due to certain prerequisite information not being provided. A ServiceRequest SHOULD be marked as 'revoked' if cancelled, either by the lab performing work against the order or at the request of the requesting clinician, though in each case a Provenance resource SHALL be provided to capture why the state change has occurred. The requesting clinician may also mark the ServiceRequest as entered-in-error, though implications for work already in progress needs to be investigated further.
 
