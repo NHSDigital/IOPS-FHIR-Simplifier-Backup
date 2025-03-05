@@ -8,3 +8,5 @@
   filename: View-Relationship-and-Provenance-Search-on-Patient-NHS-Number
 - name: View Relationship and Provenance - Search on Person NHS Number
   filename: View-Relationship-and-Provenance-Search-on-Person-NHS-Number
+- name: View Specific Relationship - Search on RelatedPerson id
+  filename: View-Specific-Relationship-search-on-RelatedPerson-id
