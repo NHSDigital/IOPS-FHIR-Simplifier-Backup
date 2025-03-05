@@ -18,6 +18,7 @@
         <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
         <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
         <script src="{{content}}/styles/common/rendering/baseTreetable.min.js"></script>
+               
     </head>
 
     <body>
@@ -32,13 +33,17 @@
                     <br/>
                     <div class="col-md-description">
                     {{variable:guide-description}}
+                    <br />
+                    <b>Version:</b> {{variable:guide-version}}
                     </div>
                 </div>
-                <!-- HL7 UK Logo
                 <div class="col-md-plogo">
-                    <a href="https://www.hl7.org/fhir/{{guide-fhir-version}}"><img src="https://www.hl7.org.uk/wp-content/uploads/HL7UK_Media/Images/Pale_red_hl7_logo_2019-25-percent-2.jpg" height="40" alt="HL7 UK FHIR logo"/></a> 
+                    <div style="background-color: white; padding: 5px; display: inline-block; border-radius: 5px;">
+                        <a href="https://hl7.org/fhir/">
+                        <img src="https://hl7.org/implement/Standards/fhir/assets/images/fhir-logo-www.png" height="40" alt="FHIR logo"/>
+                        </a>
+                    </div>
                 </div>
-                -->
             </div>
         </div>
         {{ dropdown-navigation }}
@@ -49,9 +54,8 @@
 
             <!-- Header to be displayed on each page -->
             <!--Comment out for publication, start-->
-            <div id="development-notice" markdown="span" class="alert alert-danger" role="alert">
-                <h4><i class="fas fa-exclamation-triangle"></i> WARNING</h4>
-                This guidance is under active development by NHS England and content may be added or updated on a regular basis.
+            <div id="development-notice" markdown="span" class="alert alert-info" role="alert">
+                Notice: This guidance is under active development by NHS England and content may be added or updated on a regular basis.
             </div>
             <!--Comment out for publication, end-->
 

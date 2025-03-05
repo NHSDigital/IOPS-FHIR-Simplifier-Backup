@@ -188,9 +188,13 @@ package "CP-IS API" {
 
   entity "CP-IS Flag" as flag {
     * patient : Patient
-    *category : CodeableConcept
-    * code : CodeableConcept (Child Protection Plan)
+    * category : CodeableConcept
+    * code : CodeableConcept (Child Protection Plan) top level 'child has a cpp'
     * period : Start & End Date
+  }
+
+  entity "CarePlan" as careplan {
+    * category: type of plan, CPP | LAC | UC
   }
 
   entity "CareTeam" as careteam {
@@ -198,13 +202,16 @@ package "CP-IS API" {
     * telecom : Contact Details
     * participant : Social Worker
   }
+
 }
 
 
 pat ||--o| flag : "has CP-IS flag"
-flag ||--o| careteam : "linked to"
+flag ||--o| careplan
+careplan }o--|| careteam 
 
 @enduml
+
 </plantuml>
 
 ---

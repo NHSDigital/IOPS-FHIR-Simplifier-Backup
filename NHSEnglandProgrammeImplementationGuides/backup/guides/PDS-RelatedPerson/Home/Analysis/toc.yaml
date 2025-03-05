@@ -8,3 +8,7 @@
   filename: Use-Case-National-Back-Office-NBO-Views-a-relationship.page.md
 - name: Use Case - National Back Office (NBO) Updates a relationship
   filename: Use-Case-National-Back-Office-NBO-Updates-a-relationship.page.md
+- name: Use Case - API Consumer Gets All Related Persons
+  filename: Use-Case-API-Consumer-Gets-All-Related-Persons.page.md
+- name: Use Case - API Consumer Gets Specific Relationship
+  filename: Use-Case-API-Consumer-Gets-Specific-Relationship.page.md
