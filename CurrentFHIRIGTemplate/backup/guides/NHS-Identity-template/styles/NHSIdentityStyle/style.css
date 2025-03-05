@@ -805,3 +805,64 @@ color: #0072CE;
     margin: 5px;
     background-color: #E8EDEE;
 }
+
+
+/* this part adds an icon after external links, using FontAwesome*/
+a[target="_blank"]::after {
+  content: "" / "opens in new tab/window";
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0 0.075em 0 0.1em;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+#non-fql-header{
+    margin-top: 0;
+    color: white;
+    border: 0px solid white;
+    width: 100%;
+    background-color: #0072CE;
+    height: 45px;
+    padding: 12px 8px;
+    font-size: 16px;
+
+}
+
+#extensionContextofUse{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+#extension-Context-Use-title{
+    margin-top: 0;
+    color: white;
+    border: 2px solid white;
+    background-color: #0072CE;
+    width: 100%;
+    max-width: 15%;
+    height: 45px;
+    padding: 12px 8px;
+    font-size: 16px;
+    gap: 10px;
+}
+
+#extension-Context-Use-Profiles{
+    margin-top: 0;
+    border: 2px solid #dde1e4;
+    background-color: #dde1e4;
+    width: 85%;
+    height: 45px;
+    padding: 12px 8px;
+    font-size: 16px;
+    gap: 10px;
+}
+.additional-Guidance-Submenu{
+    font-size: 16px;
+    color: #222222;
+    //color:#c7254e;
+    font-weight: bold;
+    margin:  20px 0 2px 0;
+}
