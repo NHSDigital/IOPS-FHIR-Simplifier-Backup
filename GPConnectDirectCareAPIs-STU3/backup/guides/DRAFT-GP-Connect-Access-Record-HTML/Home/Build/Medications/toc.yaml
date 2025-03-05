@@ -16,3 +16,7 @@
   filename: Acute-medication-Last-12-months.page.md
 - name: Current repeat medication
   filename: Current-repeat-medication.page.md
+- name: HTML view
+  filename: HTML-view.page.md
+- name: Example view
+  filename: Example-view.page.md

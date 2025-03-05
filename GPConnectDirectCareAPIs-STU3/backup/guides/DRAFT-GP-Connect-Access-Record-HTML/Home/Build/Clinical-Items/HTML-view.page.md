@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-```
+```html
 <div>
    <h1>Clinical Items</h1>
    <div class="gptransfer-banner">
@@ -34,14 +34,11 @@
       <tbody>
          <tr>
             <!-- the <tr>...</tr> element will repeat for each clinical item-->
-            <td class="date-column">{ {item.date} }</td>
-            <td>{ {item.entry} }</td>
-            <td>{ {item.details} }</td>
+            <td class="date-column">$ item.date $</td>
+            <td>$ item.entry $</td>
+            <td>$ item.details $</td>
          </tr>
       </tbody>
    </table>
 </div>
 ```
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-        <i class="fas fa-exclamation-circle text-primary"></i> <b>Note:</b> In the example above, a space has been added into each pair of brackets enclosing a placeholder (e.g. <code>{ {item.date} }</code>). These spaces will need removing in the actual implementation.
-</div>

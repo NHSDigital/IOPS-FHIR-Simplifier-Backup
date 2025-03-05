@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-```
+```html
 <div>
    <h1>Encounters</h1>
    <div class="gptransfer-banner">
@@ -34,14 +34,12 @@
       <tbody>
          <tr>
             <!-- the <tr>...</tr> element will repeat for each encounter-->
-            <td class="date-column">{ {encounter.date} }</td>
-            <td>{ {encounter.entry} }</td>
-            <td>{ {encounter.details} }</td>
+            <td class="date-column">$ encounter.date $</td>
+            <td>$ encounter.entry $</td>
+            <td>$ encounter.details $</td>
          </tr>
       </tbody>
    </table>
 </div>
 </div>
 ```
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-        <i class="fas fa-exclamation-circle text-primary"></i> <b>Note:</b> In the example above, spaces have been added to each pair of brackets enclosing a placeholder (e.g. { {encounter.date} }). These spaces will need removing in the actual implementation.
