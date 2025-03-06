@@ -36,5 +36,4 @@ With Provenance
 GET https://pdsrepository.example.nhs.uk/FHIR/R4/RelatedPerson?_id=RelatedPerson-NHS-9100000009&_revinclude=Provenance:target
 ```
 Example response:
-### TO DO ###
-- {{pagelink:Home/FHIR-Assets/Examples/Bundle-Searchset-Related-Person-identifier-query.page.md}} 
+- {{pagelink:Home/FHIR-Assets/Examples/Bundle-Searchset-Related-Person-and-Provenance-patient-identifier-query.page.md}} 

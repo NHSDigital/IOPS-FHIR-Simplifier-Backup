@@ -21,12 +21,12 @@ participant "API Consumer (NBO Demographics Admin)" as API
 participant "PDS FHIR API" as PDS
 participant "Related Person Database" as DB
 
-API -> PDS: Retrieve existing RelatedPerson (GET /FHIR/R4/RelatedPerson/{id})
+API -> PDS: Retrieve existing RelatedPerson
 PDS -> DB: Lookup existing relationship data
 DB --> PDS: Return RelatedPerson data
 PDS --> API: Return RelatedPerson resource for review
 
-API -> PDS: Update RelatedPerson (PUT /FHIR/R4/RelatedPerson/{id})
+API -> PDS: Update RelatedPerson
 PDS -> DB: Validate update request
 DB --> PDS: Apply changes to RelatedPerson record
 DB --> PDS: Confirm update success

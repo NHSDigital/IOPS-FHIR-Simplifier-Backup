@@ -17,17 +17,32 @@ Authorized healthcare workers can:
 
 <plantuml>
 @startuml
-left to right direction
+skinparam dpi 72  // Lower resolution for smaller size
+skinparam scale 0.6  // Scale the diagram to make it smaller
+
+skinparam usecase {
+  FontSize 10
+  Width 100
+  Height 50
+}
+
+skinparam actor {
+  FontSize 10
+}
+
 actor "Practitioner" as practitioner
 
 rectangle "CP-IS System" {
   usecase "Look up CP-IS Flag" as U1
-  usecase "Retrieve CareTeam Details" as U2
+  usecase "Retrieve CarePlan" as U2
+  usecase "Retrieve CareTeam" as U3
 }
 
-practitioner -- U1
-U1 -- U2 : "If CP-IS Flag exists"
+practitioner - U1
+U1 - U2 : "If CP-IS Flag exists"
+U2 - U3 : "If CarePlan exists"
 @enduml
+
 
 </plantuml>
 
@@ -46,12 +61,16 @@ Practitioner -> System: Search for CP-IS status
 System -> FHIR: GET /Flag?patient={patientNHSNumber}
 FHIR --> System: Returns CP-IS Flag details
 
+System -> FHIR: GET /CarePlan?subject=patient/[patientNHSNumber]
+FHIR --> System: Returns CarePlan details
+
 System -> FHIR: GET /CareTeam/{CareTeam_ID}
 FHIR --> System: Returns CareTeam details
 
-System --> Practitioner: Display CP-IS and CareTeam Info
+System --> Practitioner: Display CP-IS, CarePlan, and CareTeam Info
 
 @enduml
+
 
 </plantuml>
 
@@ -79,10 +98,43 @@ This limits the search to Flags for the patient that has the identifier `9449306
 
 This query relies on the [Flag](http://www.hl7.org/fhir/R4/flag.html#search).patient SearchParameter.
 
+### GET Request for CarePlan (Using Extension Reference)
 
-### GET Request for CareTeam (Using Extension Reference)
+Since we linked the CarePlan to the Flag using an FHIR Extension, we now fetch the CarePlan separately:
 
-Since we linked the CareTeam to the Flag using an FHIR Extension, we now fetch the CareTeam separately:
+Retrieve the CareTeam linked to a Flag:
+
+
+```
+GET [FHIR_BASE_URL]/CarePlan?subject=patient/[patientNHSNumber]
+```
+
+Example:
+
+```
+GET https://fhir.nhs.uk/CarePlan?subject=Patient/9449306753
+```
+
+This returns the CarePlan detail.
+
+OR
+
+```
+GET [FHIR_BASE_URL]/CarePlan/{CarePlan_ID}
+```
+
+Example:
+
+```
+GET https://fhir.nhs.uk/CarePlan/CPP-062572
+```
+
+This returns the CarePlan detail.
+
+
+### GET Request for CareTeam
+
+Since we linked the CareTeam to the CarePlan, we now fetch the CareTeam separately:
 
 Retrieve the CareTeam linked to a Flag:
 
@@ -98,21 +150,4 @@ GET https://fhir.nhs.uk/CareTeam/LocalAuthoritySafeguardingTeam
 
 This returns the CareTeam details (e.g., social workers, managing organization, contact info).
 
-### (Optional) Fetch CP-IS Flag + CareTeam in One Query
-
-If the Flag contains an extension reference to CareTeam, you can expand the request to fetch both Flag and CareTeam in a single request:
-
-```
-GET [FHIR_BASE_URL]/Flag?subject=Patient/{Patient_ID}&_include=Flag.extension
-```
-
-Example:
-
-```
-GET https://fhir.nhs.uk/Flag?subject=Patient/123456&_include=Flag.extension
-```
-
-This returns the CP-IS Flag and automatically includes the linked CareTeam.
-
 ---
-

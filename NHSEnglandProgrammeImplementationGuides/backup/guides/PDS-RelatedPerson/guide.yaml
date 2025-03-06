@@ -1,5 +1,5 @@
-title: PDS RelatedPerson
-description: This implementation guide provides guidance on the use of the PDS Related Person FHIR API
+title: PDS Related Person Network
+description: This implementation guide provides guidance on the use of the PDS Related Person Network FHIR API
 version: 0.01
 style-root: project
 style-name: master

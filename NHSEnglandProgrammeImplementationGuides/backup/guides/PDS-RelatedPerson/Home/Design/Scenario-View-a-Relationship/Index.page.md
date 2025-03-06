@@ -28,7 +28,11 @@ participant "Related Person Database" as DB
 API -> PDS: Request RelatedPerson (Parent-Child Relationship)
 PDS -> DB: Retrieve Related Person Data
 DB --> PDS: Return Related Person Data
-PDS --> API: Return RelatedPerson with Provenance
+PDS --> API: Return RelatedPerson (without provenance)
+
+alt Returning with provenance
+    PDS --> API: Return RelatedPerson with Provenance
+end
 
 @enduml
 </plantuml>
