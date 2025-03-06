@@ -38,7 +38,7 @@ How are sensitive data items dealt with?
 [GP summary exclusion code lists](https://isd.hscic.gov.uk/trud3/user/guest/group/0/pack/1/subpack/141/releases)
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-        <i class="fas fa-exclamation-circle text-primary"></i> <b>Information:</b> You will need to register for an account on TRUD (the NHS Terminology Reference Data Update Distribution Service) in order to view the above link.
+<i class="fas fa-exclamation-circle text-primary"></i> <b>Information:</b> You will need to register for an account on TRUD (the NHS Terminology Reference Data Update Distribution Service) in order to view the above link.
 </div>
 
 ### Data sharing agreements

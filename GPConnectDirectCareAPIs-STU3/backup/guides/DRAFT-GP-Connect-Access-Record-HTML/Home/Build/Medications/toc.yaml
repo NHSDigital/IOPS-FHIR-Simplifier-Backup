@@ -16,6 +16,14 @@
   filename: Acute-medication-Last-12-months.page.md
 - name: Current repeat medication
   filename: Current-repeat-medication.page.md
+- name: Discontinued Repeat Medication
+  filename: Discontinued-Repeat-Medication.page.md
+- name: All Medication
+  filename: All-Medication.page.md
+- name: All Medication Issues
+  filename: All-Medication-Issues.page.md
+- name: Additional Medication Information
+  filename: Additional-Medication-Information.page.md
 - name: HTML view
   filename: HTML-view.page.md
 - name: Example view

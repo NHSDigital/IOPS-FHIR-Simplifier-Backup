@@ -34,9 +34,9 @@
       <tbody>
          <tr>
             <!-- the <tr>...</tr> element will repeat for each clinical item-->
-            <td class="date-column">$ item.date $</td>
-            <td>$ item.entry $</td>
-            <td>$ item.details $</td>
+            <td class="date-column">${item.date}</td>
+            <td>${item.entry}</td>
+            <td>${item.details}</td>
          </tr>
       </tbody>
    </table>

@@ -16,7 +16,7 @@
    <div class="date-banner">
       <p>
          <!-- Date banner -->
-      </p>
+      </p> 
    </div>
    <div class="exclusion-banner">
       <p>
@@ -34,9 +34,9 @@
       <tbody>
          <tr>
             <!-- the <tr>...</tr> element will repeat for each encounter-->
-            <td class="date-column">$ encounter.date $</td>
-            <td>$ encounter.entry $</td>
-            <td>$ encounter.details $</td>
+            <td class="date-column">${encounter.date}</td>
+            <td>${encounter.entry}</td>
+            <td>${encounter.details}</td>
          </tr>
       </tbody>
    </table>

@@ -42,10 +42,10 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each active problem and issue-->
-               <td class="date-column">$ problemissue.startdate $</td>
-               <td>$ problemissue.entry $</td>
-               <td>$ problemissue.significance $</td>
-               <td>$ problemissue.details $</td>
+               <td class="date-column">${problemissue.startdate}</td>
+               <td>${problemissue.entry}</td>
+               <td>${problemissue.significance}</td>
+               <td>${problemissue.details}</td>
             </tr>
          </tbody>
       </table>
@@ -80,11 +80,11 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each major inactive problem and issue-->
-               <td class="date-column">$ problemissue.startdate $</td>
-               <td class="date-column">$ problemissue.enddate $</td>
-               <td>$ problemissue.entry $</td>
-               <td>$ problemissue.significance $</td>
-               <td>$ problemissue.details $</td>
+               <td class="date-column">${problemissue.startdate}</td>
+               <td class="date-column">${problemissue.enddate}</td>
+               <td>${problemissue.entry}</td>
+               <td>${problemissue.significance}</td>
+               <td>${problemissue.details}</td>
             </tr>
          </tbody>
       </table>
@@ -119,11 +119,11 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each other inactive problem and issue-->
-               <td class="date-column">$ problemissue.startdate $</td>
-               <td class="date-column">$ problemissue.enddate $</td>
-               <td>$ problemissue.entry $</td>
-               <td>$ problemissue.significance $</td>
-               <td>$ problemissue.details $</td>
+               <td class="date-column">${problemissue.startdate}</td>
+               <td class="date-column">${problemissue.enddate}</td>
+               <td>${problemissue.entry}</td>
+               <td>${problemissue.significance}</td>
+               <td>${problemissue.details}</td>
             </tr>
          </tbody>
       </table>

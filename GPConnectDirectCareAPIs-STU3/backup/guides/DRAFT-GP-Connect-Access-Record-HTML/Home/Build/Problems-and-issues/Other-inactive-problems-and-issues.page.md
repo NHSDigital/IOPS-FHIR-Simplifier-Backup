@@ -1,21 +1,27 @@
 ## {{page-title}}
 
 ### Clinical narrative
+
 Any other inactive issue that was significant to a patient and affected their health or wellbeing. It includes disease, surgery and social issues such as bereavement or unemployment.
 
 ### Purpose
+
 The purpose of this section is to provide information about a patient’s previous non-major problems and issues which may have informed the clinical decision-making process.
 
 ### Subsection title
+
 The subsection title **MUST** be ‘Other Inactive Problems and Issues’.
 
 ### Date filter
+
 A date filter is applicable for the ‘Other Inactive Problems and Issues’ subsection.
 
 ### Subsection content banner
+
 Provider message describing at a summary level how they have populated this subsection.
 
 ### Table columns
+
 Providers must return all the columns as described in the table below, sorted by `End Date` descending:
 
 | Order | Name | Description | Value details |
