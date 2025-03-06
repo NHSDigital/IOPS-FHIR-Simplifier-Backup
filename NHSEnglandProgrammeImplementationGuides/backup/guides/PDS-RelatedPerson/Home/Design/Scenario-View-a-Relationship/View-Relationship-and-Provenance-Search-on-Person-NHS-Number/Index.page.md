@@ -16,5 +16,4 @@ GET https://pdsrepository.example.nhs.uk/FHIR/R4/RelatedPerson?identifier=https:
 ```
 
 Example response:
-### TO DO ###
-- {{pagelink:Home/FHIR-Assets/Examples/Bundle-Searchset-Related-Person-identifier-query.page.md}} 
+- {{pagelink:Home/FHIR-Assets/Examples/Bundle-Searchset-Related-Person-and-Provenance-identifier-query.page.md}} 

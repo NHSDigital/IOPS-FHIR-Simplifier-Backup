@@ -1,4 +1,4 @@
-# PDS Related Person
+# PDS Related Person Network
 
 A PDS-related person is an individual associated with a patient’s record in the NHS Personal Demographics Service (PDS), such as a next of kin, carer, guardian, or other relevant contact. The NHS PDS API allows healthcare systems to retrieve and update these relationships, ensuring accurate and up-to-date demographic data. 
 

@@ -10,3 +10,7 @@
   filename: Bundle-Searchset-Related-Person-identifier-query.page.md
 - name: Bundle Searchset Related Person patient:identifier query
   filename: Bundle-Searchset-Related-Person-patient-identifier-query.page.md
+- name: Bundle Searchset Related Person and Provenance patient:identifier query
+  filename: Bundle-Searchset-Related-Person-and-Provenance-patient-identifier-query.page.md
+- name: Bundle Searchset Related Person and Provenance identifier query
+  filename: Bundle-Searchset-Related-Person-and-Provenance-identifier-query.page.md
