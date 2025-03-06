@@ -22,10 +22,10 @@
       <tbody>
          <tr>
             <!-- the <tr>...</tr> element will repeat for each emergency code configured-->
-            <td class="date-column">$ emergency.startdate $</td>
-            <td>$ emergency.entry $</td>
-            <td>$ emergency.details $</td>
-            <td>$ emergency.location $</td>
+            <td class="date-column">${emergency.startdate}</td>
+            <td>${emergency.entry}</td>
+            <td>${emergency.details}</td>
+            <td>${emergency.location}</td>
          </tr>
       </tbody>
    </table>

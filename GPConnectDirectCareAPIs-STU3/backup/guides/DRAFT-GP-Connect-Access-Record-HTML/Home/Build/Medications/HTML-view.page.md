@@ -41,14 +41,14 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each current medication issue-->
-               <td>$ medication.type $</td>
-               <td class="date-column">$ medication.startDate $</td>
-               <td>$ medication.drug $</td>
-               <td>$ medication.dosageInstruction $</td>
-               <td>$ medication.quantity $</td>
-               <td class="date-column">$ medication.scheduledEndDate $</td>
-               <td>$ medication.daysDuration $</td>
-               <td>$ medication.additionalInformation $</td>
+               <td>${medication.type}</td>
+               <td class="date-column">${medication.startDate}</td>
+               <td>${medication.drug}</td>
+               <td>${medication.dosageInstruction}</td>
+               <td>${medication.quantity}</td>
+               <td class="date-column">${medication.scheduledEndDate}</td>
+               <td>${medication.daysDuration}</td>
+               <td>${medication.additionalInformation}</td>
             </tr>
          </tbody>
       </table>
@@ -83,16 +83,16 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each current repeat medication-->
-               <td>$ medication.type $</td>
-               <td class="date-column">$ medication.startDate $</td>
-               <td>$ medication.drug $</td>
-               <td>$ medication.dosageInstruction $</td>
-               <td>$ medication.quantity $</td>
-               <td class="date-column">$ medication.lastIssuedDate $</td>
-               <td>$ medication.numberIssued $</td>
-               <td>$ medication.maxIssues $</td>
-               <td class="date-column">$ medication.reviewDate $</td>
-               <td>$ medication.additionalInformation $</td>
+               <td>${medication.type}</td>
+               <td class="date-column">${medication.startDate}</td>
+               <td>${medication.drug}</td>
+               <td>${medication.dosageInstruction}</td>
+               <td>${medication.quantity}</td>
+               <td class="date-column">${medication.lastIssuedDate}</td>
+               <td>${medication.numberIssued}</td>
+               <td>${medication.maxIssues}</td>
+               <td class="date-column">${medication.reviewDate}</td>
+               <td>${medication.additionalInformation}</td>
             </tr>
          </tbody>
       </table>
@@ -125,14 +125,14 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each discontinued repeat medication-->
-               <td>$ medication.type $</td>
-               <td class="date-column">$ medication.lastIssuedDate $</td>
-               <td>$ medication.drug $</td>
-               <td>$ medication.dosageInformation $</td>
-               <td>$ medication.quantity $</td>
-               <td class="date-column">$ medication.discontinuedDate $</td>
-               <td>$ medication.discontinuedReason $</td>
-               <td>$ medication.additionalInformation $</td>
+               <td>${medication.type}</td>
+               <td class="date-column">${medication.lastIssuedDate}</td>
+               <td>${medication.drug}</td>
+               <td>${medication.dosageInformation}</td>
+               <td>${medication.quantity}</td>
+               <td class="date-column">${medication.discontinuedDate}</td>
+               <td>${medication.discontinuedReason}</td>
+               <td>${medication.additionalInformation}</td>
             </tr>
          </tbody>
       </table>
@@ -171,19 +171,19 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will group and display each distinct medication item-->
-               <td colspan="9" class="med-item-column"> <strong>$ medication.drug $</strong></td>
+               <td colspan="9" class="med-item-column"> <strong>${medication.drug}</strong></td>
             </tr>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each medication in the group-->
-               <td>$ medication.type $</td>
-               <td class="date-column">$ medication.startDate $</td>
-               <td>$ medication.drug $</td>
-               <td>$ medication.dosageInstruction $</td>
-               <td>$ medication.quantity $</td>
-               <td class="date-column">$ medication.lastIssuedDate $</td>
-               <td>$ medication.numberIssued $</td>
-               <td>$ medication.discontinuedDetails $</td>
-               <td>$ medication.additionalInformation $</td>
+               <td>${medication.type}</td>
+               <td class="date-column">${medication.startDate}</td>
+               <td>${medication.drug}</td>
+               <td>${medication.dosageInstruction}</td>
+               <td>${medication.quantity}</td>
+               <td class="date-column">${medication.lastIssuedDate}</td>
+               <td>${medication.numberIssued}</td>
+               <td>${medication.discontinuedDetails}</td>
+               <td>${medication.additionalInformation}</td>
             </tr>
          </tbody>
       </table>
@@ -220,17 +220,17 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will group and display each distinct medication item-->
-               <td colspan="7" class="med-item-column"> <strong>$ medication.drug $</strong></td>
+               <td colspan="7" class="med-item-column"> <strong>${medication.drug}</strong></td>
             </tr>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each medication in the group-->
-               <td>$ medication.type $</td>
-               <td class="date-column">$ medication.issueDate $</td>
-               <td>$ medication.drug $</td>
-               <td>$ medication.dosageInstruction $</td>
-               <td>$ medication.quantity $</td>
-               <td>$ medication.daysDuration $</td>
-               <td>$ medication.additionalInformation $</td>
+               <td>${medication.type}</td>
+               <td class="date-column">${medication.issueDate}</td>
+               <td>${medication.drug}</td>
+               <td>${medication.dosageInstruction}</td>
+               <td>${medication.quantity}</td>
+               <td>${medication.daysDuration}</td>
+               <td>${medication.additionalInformation}</td>
             </tr>
          </tbody>
       </table>

@@ -35,8 +35,8 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each current allergy and adverse reaction-->
-               <td class="date-column">$ allergyadversereaction.startdate $</td>
-               <td>$ allergyadversereaction.details $</td>
+               <td class="date-column">${allergyadversereaction.startdate}</td>
+               <td>${allergyadversereaction.details}</td>
             </tr>
          </tbody>
       </table>
@@ -64,9 +64,9 @@
          <tbody>
             <tr>
                <!-- the <tr>...</tr> element will repeat for each historical allergy and adverse reaction-->
-               <td class="date-column">$ allergyadversereaction.startdate $</td>
-               <td class="date-column">$ allergyadversereaction.enddate $</td>
-               <td>$ allergyadversereaction.details $</td>
+               <td class="date-column">$allergyadversereaction.startdate}</td>
+               <td class="date-column">${allergyadversereaction.enddate}</td>
+               <td>${allergyadversereaction.details}</td>
             </tr>
          </tbody>
       </table>
