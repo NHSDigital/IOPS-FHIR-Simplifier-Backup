@@ -1,4 +1,4 @@
 ## {{page-title}}
 
-
+{{index:current}}
 

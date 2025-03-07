@@ -51,7 +51,7 @@
       <td>
         <ol>
           <li>Proxy receives an online request for Proxy access.</li>
-          <li>Proxy sends GET request to <code>/RelatedPerson/:id</code> endpoint.</li>
+          <li>Proxy sends GET request to <code>/RelatedPerson/id</code> endpoint.</li>
           <li>System validates that the relationship ID exists.</li>
           <li>System retrieves relationship details including:
             <ul>
