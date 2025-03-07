@@ -150,4 +150,16 @@ GET https://fhir.nhs.uk/CareTeam/LocalAuthoritySafeguardingTeam
 
 This returns the CareTeam details (e.g., social workers, managing organization, contact info).
 
+### GET Request to Retreive CP-IS Details in one request
+
+```
+GET [FHIR_BASE_URL]/Flag?patient=[patientnhsnumber]&code=[cpis code]
+```
+Example:
+
+```
+GET https://fhir.nhs.uk/Flag?patient=9449306753&code=child-protection-information-sharing-flag
+```
+This returns all the CP-IS Details in one request (i.e. Flag Details, CarePlan Details, CareTeam Details)
+
 ---
