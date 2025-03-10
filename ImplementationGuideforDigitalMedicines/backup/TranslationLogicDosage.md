@@ -218,7 +218,7 @@ or
 
 ### Elements: `offset` / `when`
 
-Any `offset` will be defined as a number of minutes. If this equates to a whole number of hours or days then express as the number of hours (=60 minutes) or days (=1440 minutes). Use the singular or plural expression of time when required. Separate multiple statements with a comma and use the word "` and `" to separate the final two statements.
+Any `offset` will be defined as a number of minutes. If this equates to a whole number of hours or days then express as the number of hours (=60 minutes) or days (=1440 minutes). Use the singular or plural expression of time when required. Separate multiple statements with a comma.
 
 The FHIR [event timing value-set](http://hl7.org/fhir/stu3/valueset-event-timing.html) used for `when` should have descriptions modified to make them more human readable. 
 
@@ -246,7 +246,7 @@ Express as:
 
 - 2 hours after breakfast
 
-- in the morning and in the evening
+- during the morning, at a meal
 
 - at night
 
@@ -350,34 +350,29 @@ Where only `boundsRange.high` is defined, express as:
 
 ### Elements: `count` / `countMax`
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note:</strong>
-The most appropriate use of English to express a <b>count</b> may vary between use cases. This guidance suggests the phrasing <code>take X times</code> but a phrasing of <code>take x doses</code> or <code>use X times</code> may be preferrable for some use cases. 
-</div>
-
 If `count` is 1 (one) then express as:
 
-> take once 
+> once 
 
 If `count` is 2 (two) then express as:
 
-> take twice
+> twice
 
 Otherwise express `count` as:
 
-> take \{count\} times
+> \{count\} times
 
 Where a `countMax` is defined, insert with:
 
 > to \{countMax\}
 
-- take once
+- once
 
-- take twice
+- twice
 
-- take 3 times
+- 3 times
 
-- take 3 to 5 times
+- 3 to 5 times
 
 ---
 
