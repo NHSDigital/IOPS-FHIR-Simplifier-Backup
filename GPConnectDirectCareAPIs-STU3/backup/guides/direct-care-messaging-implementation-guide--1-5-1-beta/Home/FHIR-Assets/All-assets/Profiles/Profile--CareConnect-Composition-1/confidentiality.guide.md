@@ -9,6 +9,7 @@
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
     <b>Important</b>: Documents where the patient has not consented to share with their GP, or wish to remain confidential <strong>should not be sent</strong> using Send Document. This differs from the previous versions of Send Document.
+
 </div>
 
 ### What changed?
