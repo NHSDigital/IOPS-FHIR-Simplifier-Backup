@@ -18,7 +18,8 @@ Therefore the following guidance has been included to mitigate the risk of discl
     <b>For Receivers:</b><br>
     Although confidential information should not be sent, it is still possible a receiving system could receive such a transmission. 
     <br>
-    If the value of <code>Composition.confidentiality</code> is <strong>R</strong>, the document should not be autofiled.
+    If the value of Composition.confidentiality is <strong>R</strong>, the document <strong>should be rejected</strong> by the receiving system. 
+    Upon rejection, an ITK response code 20009 (Payload content validation failure) should be sent back to the sending system.
 </div>
 
 ---

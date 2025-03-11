@@ -8,17 +8,25 @@
 <h5><ins>Guidance</ins></h5>
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <b>Important</b>: Documents where the patient has not consented to share with their GP, or wish to remain confidential <strong>should not be sent</strong> using Send Document. This differs from the previous versions of Send Document.
-
-</div>
+    <b>Important</b>: Documents where the patient has not consented to share with their GP, or wish to remain confidential <strong>should not handled according to the guidance below</strong>. This differs from the previous versions of Send Document.
 
 ### What changed?
+
 Previously, "Send Document" allowed the sharing of confidential or "restricted" documents from consultations, even if they took place at a different GP practice. The system would hide the content of these documents.
 
 Now, with the updated "Send Document v2x", you can no longer share confidential consultations. If a patient requests their consultation to remain private, it cannot be shared using this system.
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <b>Note</b>: While the updated guidance disallows confidential items to be sent via the Send Document channel, it could still be possible for a provider to send something where the <code>confidentiality</code> element is set to "R".<br /><br />In such cases, the receiving system should <b>NOT</b> automatically file the document. Instead, it should be added to an area within the clinical system where a clinician can review.
+<b>For Senders:</b>
+
+* Confidential items <strong>should NOT be sent</strong> via Send Document.
+* If the patient has asked for information about this encounter not to be shared, no message should be sent
+
+<b>For Receivers:</b>
+
+* Although confidential information should not be sent, it is still possible a receiving system could receive such a transmission.
+* If the value of Composition.confidentiality is <strong>R</strong>, the document <strong>should be rejected</strong> by the receiving system. 
+* Upon rejection, an ITK response code 20009 (Payload content validation failure) should be sent back to the sending system.
+
 </div>
 
 ### Why the change?
