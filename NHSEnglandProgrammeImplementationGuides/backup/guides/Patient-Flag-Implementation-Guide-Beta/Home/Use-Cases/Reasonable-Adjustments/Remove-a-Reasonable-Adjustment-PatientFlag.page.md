@@ -76,7 +76,7 @@ Following the standard FHIR conditional delete ReST pattern `DELETE [baseURL]/[r
 
 ##### Remove entire Reasonable Adjustment record
 
-Use `DELETE [baseURL]/Flag?[searchParameters]`
+Use `DELETE [baseURL]/PatientFlag?[searchParameters]`
 Include searchParameters:
 - 'patient' - [patientNHSNumber]
 - 'code' - [patientFlagCode]

@@ -115,12 +115,12 @@ Following the standard ReST pattern `DELETE [baseURL]/[resourceType]` for create
 
 ##### Remove Adjustment
 
-  Use `DELETE [baseURL]/Flag/[FlagID]` 
+  Use `DELETE [baseURL]/PatientFlag/[PatientFlagID]` 
   Provide a Removal reason string as header: `x-removal: [removalReason]`
   
 ##### Remove Impairment/Underlying Condition
 
-  Use `DELETE [baseURL]/Condition/[FlagID]` 
+  Use `DELETE [baseURL]/Condition/[PatientFlagID]` 
   Provide a Removal reason string as header: `x-removal: [removalReason]`
 
 ---

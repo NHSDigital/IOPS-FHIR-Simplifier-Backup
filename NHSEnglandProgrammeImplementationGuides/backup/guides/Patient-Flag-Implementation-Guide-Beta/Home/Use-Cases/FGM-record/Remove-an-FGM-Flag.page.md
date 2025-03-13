@@ -61,14 +61,14 @@ Following the standard FHIR conditional delete ReST pattern `DELETE [baseURL]/[r
 
 ##### Remove entire FGM record
 
-Use `DELETE [baseURL]/Flag?[searchParameters]`
+Use `DELETE [baseURL]/PatientFlag?[searchParameters]`
 Include searchParameters:
 - 'patient' - [patientNHSNumber]
 - 'code' - [patientFlagCode]
 Provide a Removal reason string as header: `x-removal: [removalReason]`
   
 
-e.g. `DELETE [baseURL]/Flag?patient=9449306753&code=female-genital-mutilation-flag`
+e.g. `DELETE [baseURL]/PatientFlag?patient=9449306753&code=female-genital-mutilation-flag`
 
 
 The following resource types will be deleted from the record: 

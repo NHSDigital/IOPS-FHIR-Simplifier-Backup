@@ -160,7 +160,7 @@
       <ServiceRequest>
         <id value="1c38d507-9ad7-4b49-ba91-7da204842cac" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
         </meta>
         <identifier>
           <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
@@ -202,7 +202,7 @@
       <ServiceRequest>
         <id value="8660ef6a-65ef-408f-92ce-b4d6d03d783c" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
         </meta>
         <identifier>
           <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
@@ -244,7 +244,7 @@
       <DiagnosticReport>
         <id value="35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
         </meta>
         <identifier>
           <system value="http://Y8J7D-pathlab001.com/report" />
@@ -341,7 +341,7 @@
         <!-- Test group Observation for Serum lipid levels -->
         <id value="4e4410fd-27d3-413e-901a-380caa78b411" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -398,7 +398,7 @@
         <!-- Cholesterol substance concentration in serum -->
         <id value="7038e91e-ec48-4e5c-9e1b-7d5111599410" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -456,7 +456,7 @@
         <!-- HDL (high density lipoprotein) cholesterol substance concentration in serum -->
         <id value="d1249582-ac45-43a7-8254-dbb10acff635" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -514,7 +514,7 @@
         <!-- Serum cholesterol/high density lipoprotein ratio -->
         <id value="417dd1ff-90ac-4553-9688-4f5a409eee48" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -562,7 +562,7 @@
         <!--  Non-HDL (high density lipoprotein) cholesterol molar concentration in serum -->
         <id value="d6015a3f-2521-40db-b1e0-16ee53a23767" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -620,7 +620,7 @@
         <!-- Haemoglobin A1c level - International Federation of Clinical Chemistry and Laboratory Medicine standardised -->
         <id value="efa161d2-5fe4-4c8c-8b0e-cc268c70be4f" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />

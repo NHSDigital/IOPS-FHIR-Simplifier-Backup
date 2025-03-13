@@ -1,6 +1,8 @@
 ## Technical Patterns
 
-The Patient Flag API and all it's sub-domains use the [FHIR REST](http://hl7.org/fhir/r4/http.html) paradigm.
+The PatientFlag API and all it's sub-domains use the [FHIR REST](http://hl7.org/fhir/r4/http.html) paradigm.
+
+**Note:** this specification uses "PatientFlag" as a proxy for the FHIR Flag resource. "PatientFlag" is therefore the API endpoint to retrieve details of Flags relating to patients. PatientFlag uses the search parameters associated with the FHIR Flag resource. Although the endpoint is called PatientFlag, it does return Flag resources on search, and accept Flag resources to create patient flags.
 
 ### FHIR REST
 

@@ -6,9 +6,9 @@ For high level requirements, {{pagelink:Home}}.
 
 ### Use Case
 
-A Patient Flag Record of a given type may be retrieved if it exists along with all supporting Additional Detail resources.  It will be possible to determine that adjustment flags exist by searching for a {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} with:
+A Patient Flag Record of a given type may be retrieved if it exists along with all supporting Additional Detail resources.  This is done by searching the PatientFlag endpoint using both the patient and code search parameters.
 
-- {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} patient and code search parameters.
+**Note**: The FHIR Flag resource defintion doesn't support a code search parameter. However, the PatientFlag used in this API is based on a profile of Flag - {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}}. This profile has a code search parameter defined {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagCode.page.md}}.
 
 
 <plantuml>
@@ -58,28 +58,19 @@ pra <-- api : OperationOutcome
 
 ### Queries
 
-Using [FHIR search](https://www.hl7.org/fhir/search.html) capabilities, it is possible to retrieve the reasonable adjustment records in several ways.
-
 #### Flag endpoint search
 
-This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/flag.html) endpoint using [FHIR search](https://www.hl7.org/fhir/search.html)
-
-This will return Patient Flag resource of set type and all associated Additional Detail resources for a given Patient.
-
+Querying on both the patient and code search patameters returns a PatientFlag resource and all associated Additional Detail resources for a given patient for the flag type stated in the code parameter.
 ```
-GET [baseUrl]/Flag?patient=[patientNHSNumber]&code=[patientFlagCode]
+GET [baseUrl]/PatientFlag?patient=[patientNHSNumber]&code=[patientFlagCode]
 ```
 
 e.g:
 
 ```
-GET [baseUrl]/Flag?patient=9449306753&code=national-reasonable-adjustment-flag
+GET [baseUrl]/PatientFlag?patient=9449306753&code=NRAF
 ```
 
-This limits the search to Flags for the patient that has the identifier `9449306753` and are part of the Reasonable Adjustment flag
-
-
-This query relies on the [Flag](http://www.hl7.org/fhir/R4/flag.html#search).patient and
-{{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagCode.page.md}} SearchParameters.
+This example limits the search to PatientFlags for the patient that has the identifier `9449306753` and resources that are part of their Reasonable Adjustment flag.
 
 ---

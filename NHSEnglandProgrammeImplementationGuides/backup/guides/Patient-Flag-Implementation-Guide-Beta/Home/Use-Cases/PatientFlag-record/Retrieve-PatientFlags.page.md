@@ -6,9 +6,7 @@ For high level requirements, {{pagelink:Home}}.
 
 ### Use Case
 
-A Patient Flag Record may be retrieved if it exists.  It will be possible to determine that adjustment flags exist by searching for a {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}}   with:
-
-- {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} and patient search parameter.
+A Patient Flag Record may be retrieved if it exists. To do this, query the PatientFlag endpoint using a patient search parameter.
 
 
 <plantuml>
@@ -51,22 +49,20 @@ pra <-- api : OperationOutcome
 
 ### Queries
 
-Using [FHIR search](https://www.hl7.org/fhir/search.html) capabilities, it is possible to retrieve the Patient Flag records in several ways.
+#### PatientFlag endpoint search
 
-#### Flag endpoint search
+This section describes how to query the PatientFlag endpoint using [FHIR search](https://www.hl7.org/fhir/search.html).
 
-This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/flag.html) endpoint using [FHIR search](https://www.hl7.org/fhir/search.html)
-
-This will return all associated Flag resources for a given Patient.
+The following returns all associated PatientFlag resources for a given patient.
 
 ```
-GET [baseUrl]/Flag?patient=[patientNHSNumber]
+GET [baseUrl]/PatientFlag?patient=[patientNHSNumber]
 ```
 
 e.g:
 
 ```
-GET [baseUrl]/Flag?patient=9449306753
+GET [baseUrl]/PatientFlag?patient=9449306753
 ```
 This limits the search to Flags for the patient that has the identifier `9449306753`
 

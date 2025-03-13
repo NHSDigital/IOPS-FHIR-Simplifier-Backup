@@ -131,10 +131,10 @@ Following the standard ReST pattern `POST [baseURL]/[resourceType]` for create o
 
 Add Adjustment
 
-  Use `POST [baseURL]/Flag` with query payload a Flag resource conformant with profile {{pagelink: Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}}
+  Use `POST [baseURL]/PatientFlag` with query payload a Flag resource conformant with profile {{pagelink: Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}}
 
 Add Impairment/Underlying Condition
 
-  Use `POST [baseURL]/Flag` with query payload a Flag resource conformant with profile {{pagelink: Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}}
+  Use `POST [baseURL]/PatientFlag` with query payload a Flag resource conformant with profile {{pagelink: Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}}
 
 ---
