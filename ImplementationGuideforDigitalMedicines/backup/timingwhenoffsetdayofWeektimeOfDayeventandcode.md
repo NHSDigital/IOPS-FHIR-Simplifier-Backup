@@ -50,25 +50,54 @@ An `[offset]` allows the event to be tied to defined minutes before or after the
 </timing>
 ```
 
-Multiple `when` statements can be used, such as:
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">    <strong>Note 2:</strong> We recommend a maximum of one <code>when</code> event per medication administration. The FHIR standard allows for multiple <code>when</code> events but this could become confusing for a single administration.
+</div>
 
-**Event occurs at or after a meal**
+For example:
+
+<div class="nhsd-a-box nhsd-a-box--bg-red nhsd-!t-margin-bottom-6 nhsd-t-body">
+    <strong class="emphasis-box__heading">Bad potentially confusing example:</strong>
+    <br />
+    daily - at breakfast, in the morning
+</div>
 
 ```xml
+<!-- "daily - at breakfast, in the morning" -->
 <timing>
     <repeat>
-        <when value="C"/>
-        <when value="PC"/>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+        <when value="CM"/>
+        <when value="MORN"/>
     </repeat>
 </timing>
 ```
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">    <strong>Note 2:</strong> Where the meal related <code>when</code> codes of "C", "AC" or "PC" are used it is recommended to also include timing frequency instructions. This will ensure the medication is taken for the correct number of times in the day, e.g. "3 times a day, at a meal" or "twice a day, at a meal".
+The above could be confused as two administrations. One at breakfast and another in the morning. Not everybody eats breakfast in the morning. What about those working night shifts?
+
+Whereas when there are multiple administrations, multiple `when` events are less confusing.
+
+```xml
+<!-- "twice a day - in the morning, in the evening" -->
+<timing>
+    <repeat>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+        <when value="MORN"/>
+        <when value="EVE"/>
+    </repeat>
+</timing>
+```
+
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">    <strong>Note 3:</strong> Where the meal related <code>when</code> codes of "C", "AC" or "PC" are used it is recommended to also include timing frequency instructions. This will ensure the medication is taken for the correct number of times in the day, e.g. "3 times a day, at a meal" or "twice a day, at a meal".
 </div>
 
 **Event occurs at a meal, further clarified with '3 times a day'**
 
 ```xml
+<!-- 3 times a day - at a meal -->
 <timing>
     <repeat>
         <frequency value="3"/>
@@ -78,12 +107,13 @@ Multiple `when` statements can be used, such as:
     </repeat>
 </timing>
 ```
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">    <strong>Note 3:</strong> The FHIR <code>when</code> codes events relating to meals are for when the dosing instruction is related to timing. Where the dosing instruction is for the medication to be taken with food, without specific timing instructions, then use a SNOMED coded <code>additionalInstruction</code>.
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">    <strong>Note 4:</strong> The FHIR <code>when</code> codes events relating to meals are for when the dosing instruction is related to timing. Where the primary intent of the dosing instruction is for the medication to be taken with food then include a SNOMED coded <code>additionalInstruction</code>.
 </div>
 
-**Event occurs with food / with or after food**
+**Event occurs with food**
 
 ```xml
+<!-- with food -->
 <additionalInstruction>
     <coding> 
         <system value="http://snomed.info/sct"/> 
@@ -93,25 +123,34 @@ Multiple `when` statements can be used, such as:
 </additionalInstruction>
 ```
 
+**Event occurs in the morning, with food**
+
 ```xml
+<!-- in the morning - with food -->
+<timing>
+    <repeat>
+        <when value="MORN"/>
+    </repeat>
+</timing>
+<additionalInstruction>
+    <coding> 
+        <system value="http://snomed.info/sct"/> 
+        <code value="1116481000001105"/> 
+        <display value="With food"/> 
+    </coding>
+</additionalInstruction>
+```
+
+**as needed with or after food**
+
+```xml
+<!-- as needed - with or after food -->
+<asNeededBoolean value="true" />
 <additionalInstruction>
     <coding> 
         <system value="http://snomed.info/sct"/> 
         <code value="311504000"/> 
         <display value="With or after food"/> 
-    </coding>
-</additionalInstruction>
-```
-
-**as needed with food**
-
-```xml
-<asNeededBoolean value="true" />
-<additionalInstruction>
-    <coding> 
-        <system value="http://snomed.info/sct"/> 
-        <code value="1116481000001105"/> 
-        <display value="With food"/> 
     </coding>
 </additionalInstruction>
 ```
@@ -175,7 +214,7 @@ A dosage instruction can specify specific dates and times for administration.
 Allows a code, often a Latin abbreviation, for a timing schedule to be specified, for example: `BID` = twice a day 
 
 <div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note 4:</strong> It is recommended that such codes are not used when the rest of the Dosage structure is supported by the system. Use the structures like frequency and period instead, so that a timing schedule can be computable.
+    <strong>Note:</strong> It is recommended that such codes are <strong>not</strong> used when the rest of the Dosage structure is supported by the system. Use the structures like frequency and period instead, so that a timing schedule can be computable.
 </div>
 
 ---
