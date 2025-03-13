@@ -13,7 +13,7 @@
   <!--  ***************extension end***************  -->
   <!-- The canonical URL for the UKCore-DiagnosticReport-Lab profile. -->
   <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
   </meta>
   <!-- A business identifier supplied by the laboratory that produced the test report. -->
   <identifier>

@@ -160,7 +160,7 @@
       <ServiceRequest>
         <id value="1c38d507-9ad7-4b49-ba91-7da204842cac" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
         </meta>
         <identifier>
           <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
@@ -236,7 +236,7 @@
       <DiagnosticReport>
         <id value="35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
         </meta>
         <identifier>
           <system value="http://Y8J7D-pathlab001.com/report" />
@@ -284,7 +284,7 @@
       <Observation>
         <id value="43526b6e-c48a-44d2-9c2a-1e3a2a20ac67" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />

@@ -35,7 +35,7 @@ record <.. add : include
 
 The practitioner decides to record patient flag information.
 
-This could be done by POSTing the PatientFlag resource to the Flag endpoint
+This is be done by POSTing a Flag resource to the PatientFlag endpoint.
 
 <plantuml>
 @startuml
@@ -67,14 +67,15 @@ pra <-- api : OperationOutcome
 
 Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is possible to create/write the Patient Flag record.
 
-#### Flag endpoint write
+The body of the POST request is a transaction bundle made up of the PatientFlag resource.
 
-As an abstract PatientFlag, PatientFlag records are created by POSTing the resource to the relevant resource type endpoint. 
+**Note**: Only one PatientFlag resource can exist per patient, per type of flag. If a patient flag is POSTed for a patient that already has that flag type, the records are merged using the following logic:
+
+- notes from any identical resources are added to the same resource in the existing resource
+- confirmation details that the PatientFlag is create are returned to the sender
 
 ```
-POST [baseURL]/Flag
+POST [baseURL]/PatientFlag
 ```
-
-
 
 ---

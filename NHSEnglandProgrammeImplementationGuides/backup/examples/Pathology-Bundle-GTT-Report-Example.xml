@@ -160,7 +160,7 @@
       <ServiceRequest>
         <id value="1c38d507-9ad7-4b49-ba91-7da204842cac" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
         </meta>
         <identifier>
           <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
@@ -198,7 +198,7 @@
       <DiagnosticReport>
         <id value="35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
         </meta>
         <identifier>
           <system value="http://Y8J7D-pathlab001.com/report" />
@@ -299,7 +299,7 @@
         <!-- Test group Observation for Glucose Tolerance Test -->
         <id value="2a48660b-8d45-4735-acaa-3d9918b6b902" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -352,7 +352,7 @@
         <!-- Glucose substance concentration at 0 minutes -->
         <id value="6b64af83-2ea2-4b0f-a6a7-17e5a7b27a31" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -417,7 +417,7 @@
       <Observation>
         <id value="1dbcb7a9-4506-40f9-9908-fa0d32deeaa4" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <!-- Glucose substance concentration at 60 minutes -->
         <extension url="http://hl7.org/fhir/StructureDefinition/observation-sequelTo">
@@ -488,7 +488,7 @@
       <Observation>
         <id value="1346248c-8c09-4312-a0b9-898de1cc16f5" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <!-- Glucose substance concentration at 120 minutes -->
         <extension url="http://hl7.org/fhir/StructureDefinition/observation-sequelTo">

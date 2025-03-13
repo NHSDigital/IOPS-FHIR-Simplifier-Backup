@@ -32,9 +32,9 @@ record <.. add : include
 
 ### System Interactions
 
-The practitioner decides to record patient flag information.
+The practitioner decides to record patient flag information that has associated resources.
 
-This could be done with individual calls to the required endpoints, or can be done in a single transaction Bundle.  A transaction Bundle can help with data integrity requirements and also help to reduce required http calls.
+This is done in a single transaction Bundle.  A transaction Bundle helps with data integrity and also helps to reduce required http calls.
 
 <plantuml>
 @startuml
@@ -70,20 +70,33 @@ pra <-- api : OperationOutcome
 @enduml
 </plantuml>
 
+
+### Queries
+
+Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is possible to create/write the Patient Flag record.
+
+The body of the POST request is a transaction bundle made up of the PatientFlag resource, and any other accepted FHIR resources to support that flag
+
+**Note**: Only one PatientFlag resource can exist per patient, per type of flag. If a patient flag is POSTed for a patient that already has that flag type, the records are merged using the following logic:
+- any additional resources from the second post are added to the existing flag
+- notes from any identical resources are added to the same resource in the existing resource
+- confirmation details that the PatientFlag is create are returned to the sender
+
+
+# ##NEEDS LOOKING AT###
+
 ### Examples
 
 * {{pagelink:PatientFlag-AlanMann-Example}}
 
-The following set of examples constitute the individual associated resources with the initial addition of a flag for Reasonable Adjustment.  This include a patient Flag resource, the adjustment Flag resource and the associated Condition resource.  All resources have contained provenances.
-
-A transaction Bundle is also given that allows these resources (plus the patient) to be entered in an atomic traction.  It uses PUTs, where in the case of an initial update, it may be done as a [conditional update](https://www.hl7.org/fhir/http.html#cond-update)
+The following set of examples constitute the individual associated resources with the initial addition of a flag for Reasonable Adjustment.  This includes a PatientFlag resource, the adjustment Flag resource and the associated Condition resource.  All resources have contained provenances.
 
 * {{pagelink:PatientFlag-AlanMann-Example}}
 * {{pagelink:RA-Flag-Example}}
 * {{pagelink:RA-Condition-Example}}
 * {{pagelink:AddRARecordTransaction-Bundle-Example}}
 
-The following set of examples are for the same patient, and constitute an addition flag and condition.  The transaction Bundle here illustrates an idempotent update by simply adding the new resources to the first transaction Bundle.
+The following set of examples are for the same patient, and constitute an addition adjustment Flag and Condition.  The transaction Bundle here illustrates an idempotent update by simply adding the new resources to the first transaction Bundle.
 
 * {{pagelink:Home/Examples/RA-Flag2-Example.page.md}}
 * {{pagelink:RA-Condition2-Example}}

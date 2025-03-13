@@ -2,7 +2,7 @@
   <id value="Pathology-Observation-Lab-Sn-Example" />
   <!-- The canonical URL for the UKCore-Observation-Lab profile. -->
   <meta>
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
   </meta>
   <!-- A business identifier supplied by the laboratory that performed the test. -->
   <identifier>

@@ -34,9 +34,9 @@ record <.. add : include
 
 ### System Interactions
 
-The practitioner decides to record Additional Detail to support or enrich the Patient Flag record
+The practitioner decides to record Additional Detail to support or enrich a Patient Flag record
 
-This could be done with individual calls to the required endpoints, or can be done in a single transaction Bundle.  A transaction Bundle can help with data integrity requirements and also help to reduce required http calls.
+This is achieved by POSTing resources to their relevant FHIR endpoint (for example a Condition is POSTed to a /Condition endpoint).
 
 <plantuml>
 @startuml
@@ -70,20 +70,20 @@ Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is
 
 #### Flag endpoint write
 
-As an abstract PatientFlag, PatientFlag records are created by POSTing the resource to the relevant resource type endpoint. ResourceType will depend on modelling of the Additional Detail as a suitable resource within a given concrete implementation. e.g. Reasonable Adjustments uses Additional Detail resources, modelling Adjustments as[EnglandFlagPatientFlagAdjustment](https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment) resources ,and Impairments and Underlying Conditions as [EnglandConditionFlag](https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag) resources.
+# are they POSTing a transaction bundle to the PatienFlag endpoint?
+
+PatientFlag records are created by POSTing the resource to the relevant resource type endpoint. ResourceType will depend on the requirements of the Additional Detail. e.g. Reasonable Adjustments uses Additional Detail resources, modelling Adjustments as[EnglandFlagPatientFlagAdjustment](https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment) resources ,and Impairments and Underlying Conditions as [EnglandConditionFlag](https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag) resources.
+
+In order for the new additional resource to be attached to the relevant PatientFlag resource, the following details must match
+- NewResource.patient = PatientFlag.patient
+- NewResource.category = PatientFlag.code
 
 ```
 POST [baseURL]/[resourceType]
 ```
-
-
-
 ---
 
----
-
-
-### Remove Use Case
+### Remove Associated Resources Use Case
 
 <plantuml>
 @startuml
@@ -113,6 +113,8 @@ record <.. rem : include
 ### System Interactions
 
 In the following sequence diagram, a patient and/or practitioner decide to remove the patient flag.
+
+# this needs updating
 
 <plantuml>
 @startuml
@@ -144,11 +146,21 @@ pra <-- api : OperationOutcome
 @enduml
 </plantuml>
 
-The following resource types will be deleted from the record: 
+Associated resources, when not deleted as part of a PatientFlag deletion, are deleted individually, by id. To do this, PatientFlags must first be retrieved, thenassociated resources deleted using their resource.id element.
 
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}}  
-* any resources detailing supporting information
+Each deletion should be accompanied by a reason in a reson parameter as part of the DELETE statement.
 
+```
+DELETE [baseURL]/[resourceType]/[id]?reason=[reason]
+
+```
+for example
+
+```
+DELETE [baseURL]/Condition/b8ab463d-f698-41a0-aae2-6d6163dd0825?reason=Error
+
+```
+# ###CHECK THESE###
 #### Example
 
 Multiple resources can be deleted using a transaction bundle.  This  {{pagelink:Home/Examples/RemoveRARecord-Bundle-Example.page.md}}:

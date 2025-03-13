@@ -1,6 +1,6 @@
 ## Patient Flag Data Model
 
-A Patient Flag API record is made up of a Flag resource and any other additional resources that provide supplementary information.
+A Patient Flag API record is made up of a PatientFlag resource and any other additional resources that provide supplementary information.
 
 <plantuml>
 @startuml
@@ -37,12 +37,12 @@ The RA record is made up of PatientFlag, PatientFlagAdjustment, contained Proven
 
 Authorised healthcare workers can:
 
-- Retrieve a set of top-level Flags (just the Flags with no associated resources)
+- Retrieve a set of top-level Patient Flags (just the Patient Flags with no associated resources)
 - Retrieve a specific Reasonable Adjustment Flag with associated resources
 - Add a top-level Reasonable Adjustment Flag
-- Add a top-level Flag (and associated Adjustment, Impairment or Condition resources)
+- Add a top-level Patient Flag (and associated Adjustment, Impairment or Condition resources)
 - Add/remove associated resources (with the dependency that a top-level flag must already be added/removed)
-- Remove a top-level Flag (which will remove all associated resources)
+- Remove a top-level Patient Flag (which will remove all associated resources)
 
 The presence of and entitlement to reasonable adjustments is represented by a PatientFlag resource. It can be interpreted as meaning 'this patient has reasonable adjustments'.
 
@@ -118,7 +118,7 @@ Authorised healthcare workers can:
   - must have a verified NHS number
 - delete a FGM family history indicator for a patient
 
-The FGM flag is interpreted as:
+The FGM PatientFlag resource is interpreted as:
 - an indicator that a child with female genitalia has a family history of FGM
 - the date that the FGM assessment was carried out
 
@@ -153,65 +153,6 @@ pat ||--o| pfg : "has"
 pfg ||--|| prov : contains
 
 @enduml
-</plantuml>
-
-## Child Protection - Information Sharing (CP-IS)
-
-The CP-IS record is made up of a PatientFlag resource and a contained Provenance.The CP-IS service enables practitioners in unscheduled care settings to determine whether a child has an active Child Protection Plan (CPP) or is a Looked-After Child (LAC).
-
-## Purpose
-
- Authorized healthcare workers can:
-
-- Query to check if a child has a Child Protection Plan, including:
-  - Looked-After Child (LAC) status
-  - Unborn child subject to a protection plan
-- Retrieve details of the responsible Local Authority for further action
-
-## Interpretation of the CP-IS Flag
-The presence of a CP-IS flag indicates:
-
- - A child is subject to a Child Protection Plan or is a Looked-After Child
- - The responsible Local Authority Care Team overseeing the child's case
- - The start and end dates of the protection plan
-
-<plantuml>
-@startuml
-
-skinparam linetype ortho
-
-entity "Patient" as pat {
-  * NHS Number : number <<generated>>
-}
-
-package "CP-IS API" {
-
-  entity "CP-IS Flag" as flag {
-    * patient : Patient
-    * category : CodeableConcept
-    * code : CodeableConcept (Child Protection Plan) top level 'child has a cpp'
-    * period : Start & End Date
-  }
-
-  entity "CarePlan" as careplan {
-    * category: type of plan, CPP | LAC | UC
-  }
-
-  entity "CareTeam" as careteam {
-    * name : Local Authority Care Team
-    * telecom : Contact Details
-    * participant : Social Worker
-  }
-
-}
-
-
-pat ||--o| flag : "has CP-IS flag"
-flag ||--o| careplan
-careplan }o--|| careteam 
-
-@enduml
-
 </plantuml>
 
 ---

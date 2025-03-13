@@ -160,7 +160,7 @@
       <ServiceRequest>
         <id value="1c38d507-9ad7-4b49-ba91-7da204842cac" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
         </meta>
         <identifier>
           <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
@@ -202,7 +202,7 @@
       <ServiceRequest>
         <id value="8660ef6a-65ef-408f-92ce-b4d6d03d783c" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
         </meta>
         <identifier>
           <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
