@@ -24,17 +24,21 @@ A two or three level `List` structure is used to represent structured consulta
 
 #### List (Consultation)
 
-This top-level profile represents the structured consultation as a whole, and **SHALL** be coded as [325851000000107 | Consultation encounter type (record artifact) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=325851000000107). 
+This top-level profile represents the structured consultation as a whole, and **SHALL** be coded as [325851000000107 | Consultation encounter type (record artifact) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=325851000000107).
+
+Consultation level lists can have a `meta.security` label applied to indicate they are not be disclosed to patients. See {{pagelink:Home/Build/FHIR-resources/Resources-not-to-be-disclosed-to-a-patient.page.md}} for further information.
 
 #### List (Topic)
 
 This level represents the Topic / Problem groupings within consultations, and **SHALL** be coded as [25851000000105 | Topic (EHR) (record artifact) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=25851000000105).
 
-Topic level lists are the only type of list that can have a `meta.security` label applied to indicate they are not be disclosed to patients. See {{pagelink:Home/Build/FHIR-resources/Resources-not-to-be-disclosed-to-a-patient.page.md}} for further information.
+Topic level lists can have a `meta.security` label applied to indicate they are not be disclosed to patients. See {{pagelink:Home/Build/FHIR-resources/Resources-not-to-be-disclosed-to-a-patient.page.md}} for further information.
 
 #### List (Heading)
 
-This level represents the headings (SOAP heading) levels of the consultation structure that contain record entries, and **SHALL** be coded as [24781000000107 | Category (EHR) (record artifact) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=24781000000107). 
+This level represents the headings (SOAP heading) levels of the consultation structure that contain record entries, and **SHALL** be coded as [24781000000107 | Category (EHR) (record artifact) |](https://termbrowser.nhs.uk/?perspective=full&conceptId1=24781000000107).
+
+Heading level lists can have a `meta.security` label applied to indicate they are not be disclosed to patients. See {{pagelink:Home/Build/FHIR-resources/Resources-not-to-be-disclosed-to-a-patient.page.md}} for further information.
 
 <br />
 
