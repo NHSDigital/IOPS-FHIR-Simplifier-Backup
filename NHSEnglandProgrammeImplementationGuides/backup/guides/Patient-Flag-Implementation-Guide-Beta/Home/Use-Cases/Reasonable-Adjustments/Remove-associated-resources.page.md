@@ -45,7 +45,16 @@ record <.. remcond : include
 
 The practitioner decides to remove additional detail supporting or enriching the Reasonable Adjustment Flag record
 
-This could be done with individual calls to the required endpoints, or can be done in a single transaction Bundle.  A transaction Bundle can help with data integrity requirements and also help to reduce required http calls.
+This is done with individual DELETE calls to the required endpoints.
+
+The Reasonable Adjustments for a patient should be first queried from the /PatientFlag endpoint
+```
+GET [baseURL]/PatientFlag?patient=[NHSNumber]&code=NRAF
+```
+This will retrieve the Reasonable Adjust flag and associated resources for a patient. Associated recources are deleted using the .id of the resource (for example Condition.id). In addition a reason is given for the delete using a "reason" parameter.
+```
+DELETE [baseURL]/[ResourceType]/[ResourceType.id]?reason=[ReasonText]
+```
 
 #### Remove Adjustment
 
@@ -109,18 +118,35 @@ pra <-- api : OperationOutcome
 
 Using [FHIR delete](http://hl7.org/fhir/r4/http.html#delete) capabilities, it is possible to delete the Additional Detail resource, removing it from the Patient Flag record.
 
-#### Flag endpoint write
 
-Following the standard ReST pattern `DELETE [baseURL]/[resourceType]` for create operations, to:
+#### Flag endpoint delete
+
+
 
 ##### Remove Adjustment
 
-  Use `DELETE [baseURL]/PatientFlag/[PatientFlagID]` 
-  Provide a Removal reason string as header: `x-removal: [removalReason]`
-  
+An adjustment has a resource type of Flag so the /Flag endpoint is used.
+
+  ```
+  DELETE [baseURL]/Flag/[Flag.id]?reason=[ReasonText]
+  ``` 
+For example, to delete an adjustment (represented by a Flag resource) with an id of "b8ab463d-f698-41a0-aae2-6d6163dd0825" because it was entered in error would be deleted by
+
+```
+  DELETE [baseURL]/Flag/b8ab463d-f698-41a0-aae2-6d6163dd0825?reason=Error
+  ```
+
+
 ##### Remove Impairment/Underlying Condition
 
-  Use `DELETE [baseURL]/Condition/[PatientFlagID]` 
-  Provide a Removal reason string as header: `x-removal: [removalReason]`
+An impairment has a resource type of Condition, so the /Condition endpoint is used
 
+  ```
+  DELETE [baseURL]/Condition/[Condition.id]?reason=[ReasonText]
+  ``` 
+For example, to delete an impairment (represented by a Condition resource) with an id of "by095e371f-738a-45f7-b1ae-0546a4d45c71" because it no longer applies would be deleted by
+
+```
+DELETE [baseURL]/Condition/by095e371f-738a-45f7-b1ae-0546a4d45c71?reason=NoLongerApplies
+```
 ---

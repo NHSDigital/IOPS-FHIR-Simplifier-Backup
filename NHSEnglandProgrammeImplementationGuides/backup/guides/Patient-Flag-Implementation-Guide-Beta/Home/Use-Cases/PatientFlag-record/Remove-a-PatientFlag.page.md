@@ -71,17 +71,27 @@ Using [FHIR conditional delete](http://hl7.org/fhir/r4/http.html#3.1.0.7.1) capa
 
 #### Flag endpoint write
 
-Following the standard FHIR conditional delete ReST pattern `DELETE [baseURL]/[resourceType]` for delete operations, to:
+Following the standard FHIR conditional delete ReST pattern 
+```
+DELETE [baseURL]/[resourceType]
+```
+ for delete operations, to:
 
 ##### Remove all PatientFlag records
 
-Use `DELETE [baseURL]/PatientFlag?patient=[patientNHSNumber]&reason=[reason]`
+Use 
+```
+DELETE [baseURL]/PatientFlag?patient=[patientNHSNumber]&reason=[reason]
+```
 Include searchParameters:
 - 'patient' - [patientNHSNumber]
 Provide a removal reason parameter
 - 'reason' - [reason]
 
-e.g. `DELETE [baseURL]/PatientFlag?patient=9449306753&reason=Error`
+e.g. 
+```
+DELETE [baseURL]/PatientFlag?patient=9449306753&reason=Error
+```
 
 The following resource types will be deleted from the record: 
 * the PatientFlag resource

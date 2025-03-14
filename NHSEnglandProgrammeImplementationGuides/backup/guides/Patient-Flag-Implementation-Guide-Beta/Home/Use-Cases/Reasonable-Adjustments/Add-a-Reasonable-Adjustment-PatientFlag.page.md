@@ -5,9 +5,15 @@ For high level requirements, see {{pagelink:Home}}.
 
 ### Use Case
 
-After consultation with a patient, a Reasonable Adjustment Record may be created.  This consists of a Flag resource containing an adjustment; a Condition resource may also optionally be created to record the details of an impairment or an underlying condition.  
+After consultation with a patient, a Reasonable Adjustment Record may be created.  Normally a Reasonable Adjustment consists of a Flag resource containing an adjustment; a Condition resource may also optionally be created to record the details of an impairment or an underlying condition. However, a Reasonable Adjustment may be represented by just a PatientFlag with no associated recources 9this indicates that a patient may have reasonable adjustments, but they are not available via PatientFlag).
 
-If a Reasonable Adjustment Record exists, a Flag resource designated as the patient flag must be created to indicate that there are reasonable adjustments recorded for the patient.  There is a single instance of this type of resource per patient.
+A query should be performed prior to Flag creation to determine if there is already a reasonable adjustment flag for the patient
+
+```
+GET [baseURL]/PatientFlag?patient=[NHSNumber]&code=NRAF
+
+```
+If no reasonable adjustment flag is returned, a new one can be created.
 
 <plantuml>
 @startuml
@@ -42,9 +48,9 @@ record <.. add : include
 
 The practitioner decides to record a Reasonable Adjustment Record.  
 
-This is done with a call to the required individual /Flag endpoint
+This is done with a call to the /PatientFlag endpoint
 
-This can be done also be done as part of a single transaction Bundle along with other Flag and associated resources For which see {{pagelink:Home/Use-Cases-2/Reasonable-Adjustments/Add-a-Reasonable-Adjustment-PatientFlag-and-associated-resources.page.md}}.  A transaction Bundle can help with data integrity requirements and also help to reduce required http calls.
+A transaction Bundle is used to help with data integrity requirements and also help to reduce required http calls.
 
 <plantuml>
 @startuml
@@ -78,27 +84,25 @@ pra <-- api : OperationOutcome
 
 ### Queries
 
-Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is possible to create/write the Reasonable Adjustment record to the Patient Flag API.
+Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is possible to create/write the Reasonable Adjustment record to the PatientFlag API.
 
 #### Flag endpoint write
 
-Reasonable Adjustment records are created by POSTing the resource, conformant to {{pagelink: Home/fhir-assets/profiles/england-flag-patient-flag.page.md}} to the relevant /Flag resource type endpoint. 
+Reasonable Adjustment records are created by POSTing the resource, conformant to {{pagelink: Home/fhir-assets/profiles/england-flag-patient-flag.page.md}} to the /PatientFlag endpoint, with a body containing a transaction bundle that in turn contains the Reasonable Adjustment flag.
 
 ```
 POST [baseURL]/PatientFlag
+[Transaction Bundle that contains the Reasonable Adjustment Flag]
+
 ```
-
-
 
 ---
 
 ### Examples
 
-* [Patient example](Patient-PatientExample1.html)
-
 The following set of examples constitute the individual associated resources with the initial addition of a flag for Reasonable Adjustment.  This includes a patient Flag resource, the adjustment Flag resource and the associated Condition resource.  All resources have contained provenances.
 
-A transaction Bundle is also given that allows these resources (plus the patient) to be entered in an atomic traction.  It uses PUTs, where in the case of an initial update, it may be done as a [conditional update](https://www.hl7.org/fhir/http.html#cond-update)
+# no example for just a FLAG
 
 * {{pagelink:Home/Examples/RA-PatientFlag-Example.page.md}}
 * {{pagelink:Home/Examples/RA-Flag-Example.page.md}}

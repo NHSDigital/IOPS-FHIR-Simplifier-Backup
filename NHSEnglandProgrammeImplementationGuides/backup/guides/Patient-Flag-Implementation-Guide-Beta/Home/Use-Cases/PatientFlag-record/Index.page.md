@@ -9,5 +9,4 @@ This page shows the functional use cases provided by the PatientFlag API:
 - Add/remove associated resources (with the dependency that a top-level flag must already be added/removed)
 - Remove a top-level Patient Flag (which will remove all associated resources)
 
-# ##what does this mean##
 This API is abstract only. Concrete specialisations of the API have been implemented to support Reasonable Adjustments and Female Genital Mutilation Flags.
