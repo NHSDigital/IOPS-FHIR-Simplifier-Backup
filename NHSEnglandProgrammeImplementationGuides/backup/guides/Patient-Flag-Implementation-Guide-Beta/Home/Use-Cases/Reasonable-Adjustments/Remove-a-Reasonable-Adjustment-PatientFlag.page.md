@@ -33,7 +33,7 @@ record <.. rem : include
 
 ### System Interactions
 
-In the following sequence diagram, a patient and/or practitioner decide to remove the Reasonable Adjustment patient flag and all suppporting resources (either Adjustments, Impairments or Underlying Conditions).
+In the following sequence diagram, a patient and/or practitioner decide to remove the Reasonable Adjustment patient flag and all suppporting resources (Adjustments, Impairments and Underlying Conditions).
 
 <plantuml>
 @startuml
@@ -70,35 +70,21 @@ pra <-- api : OperationOutcome
 
 Using [FHIR conditional delete](http://hl7.org/fhir/r4/http.html#3.1.0.7.1) capabilities, it is possible to delete the entire Reasonable Adjustment Flag record for a given patient.
 
-#### Flag endpoint write
+Only the top-level PatientFlag of the Reasonable Adjustment needs to be deleted (the server will delete the associated resources). A reson should be given as to why the ReasonableAdjustment has been deleted. The delete statement must include the patient's NHS Number, state that its a Reasonable Adjustment deletion, and give a reason.
+```
+DELETE [baseURL]\PatientFlag?patient=[NHSNumber]&code=NRAF&reason=[ReasonText]
+```
+
+#### Flag endpoint delete
 
 Following the standard FHIR conditional delete ReST pattern `DELETE [baseURL]/[resourceType]` for delete operations, to:
 
-##### Remove entire Reasonable Adjustment record
-
-Use `DELETE [baseURL]/PatientFlag?[searchParameters]`
-Include searchParameters:
-- 'patient' - [patientNHSNumber]
-- 'code' - [patientFlagCode]
-Provide a Removal reason string as header: `x-removal: [removalReason]`
-  
----
-The following resource types will be deleted from the record: 
-
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}}  
-* any resources detailing supporting Reasonable Adjustment information:
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}} 
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}} 
-
-This query relies on the [Flag patient](http://www.hl7.org/fhir/R4/flag.html#search) and {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagCode.page.md}} search parameters.
-
 #### Example
 
-Multiple resources can be deleted using a transaction bundle.  This  {{pagelink:Home/Examples/RemoveRARecord-Bundle-Example.page.md}}:
-
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} example.  
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}} example.  
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}} example.  
+To delete a Reasonable Adjustment Flag for a patient with a NHS Number 6574636879 because the adjustments are no longer required
+```
+DELETE [baseURL]\PatientFlag?patient=6574636879&code=NRAF&reason=NoLongerRequired
+```
 
 ---
 

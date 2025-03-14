@@ -3,23 +3,23 @@
 
 ### Overview
 
-For high level requirements, see {{pagelink:Home}}.
+For high level requirements, see {{pagelink:Home}}. Additional Reasonable Adjustments can be added to an existing PatientFlag.
 
 #### Adjustments 
 
   Adjustments are used to represent individual reasonable adjustments.
-  Adjustments SHOULD be recorded in Flag.code as a code selected from the SNOMED CT valueset [https://fhir.nhs.uk/England/ValueSet/England-FlagCodeRA] (https://fhir.nhs.uk/England/ValueSet/England-FlagCodeRA)
+  Adjustments SHOULD be recorded in Flag.code as a code selected from the SNOMED CT valueset [https://fhir.nhs.uk/England/ValueSet/England-FlagCodeRA] (https://fhir.nhs.uk/England/ValueSet/England-FlagCodeRA).
 
 
 #### Impairments
 
-  A Reasonable Adjustment Flag record MAY (optionally) contain further Condition resources detailing additional Impairments details
-  These SHALL be recorded as Condition resources with .code set to a code value from CodeSystem [CodeSystem/England-ConditionCodeRA](https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeRA)
+  A Reasonable Adjustment Flag record MAY (optionally) contain further Condition resources detailing additional Impairments details.
+  These SHALL be recorded as Condition resources with Condition.code set to a code value from CodeSystem [CodeSystem/England-ConditionCodeRA](https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeRA).
 
 #### Underlying Conditions
 
-  A Reasonable Adjustment Flag record MAY (optionally) also contain further Condition resources detailing Underlying Conditions that are relevant to provision of reasonable adjustments to care
-  These SHALL be recorded as Condition resources with .code set to the relevant SNOMED CT concept
+  A Reasonable Adjustment Flag record MAY (optionally) also contain further Condition resources detailing Underlying Conditions that are relevant to provision of reasonable adjustments to care.
+  These SHALL be recorded as Condition resources with Condition.code set to the relevant SNOMED CT concept.
 
 
 ### Add Use Cases
@@ -123,18 +123,31 @@ pra <-- api : OperationOutcome
 
 ### Queries
 
-Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is possible to create/write the Additional Detail resource, adding it to the Patient Flag record.
+Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is possible to create/write the Additional Detail resource, adding it to the PatientFlag record.
 
-#### Flag endpoint write
+#### Additional Reasonable Adjustments endpoint write
 
-Following the standard ReST pattern `POST [baseURL]/[resourceType]` for create operations, to:
+Following the standard ReST pattern 
+```
+POST [baseURL]/[resourceType]
+``` 
+
+for create operations, to:
 
 Add Adjustment
 
-  Use `POST [baseURL]/PatientFlag` with query payload a Flag resource conformant with profile {{pagelink: Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}}
+  Use 
+  ```
+  POST [baseURL]/Flag
+  ``` 
+  with a payload of Flag resource conformant with profile {{pagelink: Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}}
 
 Add Impairment/Underlying Condition
 
-  Use `POST [baseURL]/PatientFlag` with query payload a Flag resource conformant with profile {{pagelink: Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}}
+  Use 
+  ```
+  POST [baseURL]/Condition
+  ``` 
+  with a payload of a Condition resource conformant with profile {{pagelink: Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}}
 
 ---

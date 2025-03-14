@@ -66,36 +66,28 @@ entity       "Condition"        as cod
 
 ### Queries
 
-Using [FHIR search](https://www.hl7.org/fhir/search.html) capabilities, it is possible to retrieve the reasonable adjustment records in several ways.
+Using [FHIR search](https://www.hl7.org/fhir/search.html) capabilities, it is possible to retrieve the reasonable adjustment records.
 
 #### Flag endpoint search 
 
-This section describes how to query from the [Flag](http://www.hl7.org/fhir/R4/flag.html#search) endpoint using [FHIR search](https://www.hl7.org/fhir/search.html)
-and patient and code search parameters.
-
-GET [baseUrl]/PatientFlag?patient=9449306753&code=national-reasonable-adjustment-flag
-
-This will return all associated flag resources for Reasonable Adjustments for a given patient.
-
-
-
-e.g. 
-```
-GET [baseUrl]/PatientFlag?patient=9449306753&code=national-reasonable-adjustment-flag
-```
-This limits the search to patients that have the identifier `9912003888`
+This section describes how to query for Reasonable Adjustments from the PatientFlag endpoint using [FHIR search](https://www.hl7.org/fhir/search.html) with the patient and code search parameters.
 
 ```
-identifier=9912003888
+GET [baseUrl]/PatientFlag?patient=[NHSNumber]&code=NRAF
+
+```
+e.g.
+
+```
+GET [baseUrl]/PatientFlag?patient=9449306753&code=NRAF
+
 ```
 
-This limits the search to Flag resources linked via patient and have the code `national-reasonable-adjustment-flag`, and also includes the resource in the returned searchset Bundle.
+This will return all associated flag resources for Reasonable Adjustments for patient 9449306753 in the returned searchset Bundle.
 
 Resources returned will conform to:
 * {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}}  
 * {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}}
 * {{pagelink:Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}} 
-
-This query relies on the [Flag patient](http://www.hl7.org/fhir/R4/flag.html#search) and {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagCode.page.md}} search parameters.
 
 ---

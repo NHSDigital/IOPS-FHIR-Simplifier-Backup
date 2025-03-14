@@ -55,28 +55,21 @@ entity       "Patient Flag"     as pfg
 
 Using [FHIR conditional delete](http://hl7.org/fhir/r4/http.html#3.1.0.7.1) capabilities, it is possible to delete the entire FGM Flag record for a given patient.
 
-#### Flag endpoint write
+#### Flag endpoint delete
 
-Following the standard FHIR conditional delete ReST pattern `DELETE [baseURL]/[resourceType]` for delete operations, to:
+The patient and code parameters should be supplied to ensure the FGM flag for the patient is deleted and a reason for the flag deletion should be provided using a "reason" parameter.
+```
+DELETE [baseURL]/PatientFlag/?patient=[NHSNumber]&code=FGM&reason=[ReasonText]
+```
 
 ##### Remove entire FGM record
 
-Use `DELETE [baseURL]/PatientFlag?[searchParameters]`
-Include searchParameters:
-- 'patient' - [patientNHSNumber]
-- 'code' - [patientFlagCode]
-Provide a Removal reason string as header: `x-removal: [removalReason]`
-  
+To delete a FGM flag for a patient with NHS Number 9787576543 beacuse the flag is no longer needed
+```
+DELETE [baseURL]/PatientFlag/?patient=9787576543&code=FGM&reason=NoLongerRequired
+```
 
-e.g. `DELETE [baseURL]/PatientFlag?patient=9449306753&code=female-genital-mutilation-flag`
-
-
-The following resource types will be deleted from the record: 
-
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}}  
-
-This query relies on the [Flag patient](http://www.hl7.org/fhir/R4/flag.html#search) and {{pagelink:Home/FHIR-Assets/SearchParameters/England-FlagCode.page.md}} search parameters.
-
+# THIS IS WRONG
 
 #### Example
 

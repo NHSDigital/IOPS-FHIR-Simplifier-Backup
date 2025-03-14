@@ -3,6 +3,17 @@
 
 For high level requirements, see {{pagelink:Home}}.
 
+As only one flag of each flag type should exist for each patient, prior to creating the FGM flag, the patient's flags should be retrieved to check for an existing flag.
+```
+GET [baseURL]/PatientFlag?patient=[NHSNumber]
+```
+
+**Note**: Only one patient flag can exist per patient / type of flag. If a patient flag is posted for a patient that already has the flag, the records are merged using the following logic:
+
+- any additional resources from the second post are added to the existing flag
+- notes from any identical resources are added to the same resource in the existing flag
+
+
 ### Use Case
 
 <plantuml>
@@ -64,12 +75,14 @@ Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is
 
 #### Flag endpoint write
 
-FGM records are created by POSTing the resource, conformant to {{pagelink: Home/fhir-assets/profiles/england-flag-patient-flag.page.md}} to the relevant /Flag resource type endpoint. 
+FGM records are created by POSTing the resource, conformant to {{pagelink: Home/fhir-assets/profiles/england-flag-patient-flag.page.md}} to the /PatientFlag endpoint. 
 
 ```
 POST [baseURL]/PatientFlag
+[Transaction Bundle that containing the FGM Flag]
 ```
 
+# THIS EXAMPLE USES PUT & SHOULD USE POST & SHOULD ONLY BE FGM FLAG
 
 ### Examples
 
