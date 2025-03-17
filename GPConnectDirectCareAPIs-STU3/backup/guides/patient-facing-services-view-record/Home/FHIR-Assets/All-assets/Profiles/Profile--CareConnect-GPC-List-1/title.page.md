@@ -4,17 +4,18 @@
 
 <span class="mro-circle optional" title="Optional"></span> Optional
 
+<!--
 <div class="nhsd-a-box nhsd-a-box--bg-red nhsd-!t-margin-bottom-6 nhsd-t-body">
     <strong>TODO:</strong> This should be a 'MUST SUPPORT' / 'Required' element.
 </div>
-
+-->
 <h5><ins>Guidance</ins></h5>
 
 A human-readable title of the list being sent.
 
 ### For structural lists
 
-Descriptive name for the list. The list titles for primary and secondary lists **MUST** be the titles as provided in the tables in {{pagelink:Home/Build/Returning-data-in-lists/Index.page.md}}.
+Descriptive name for the list. The list titles for primary and secondary lists **MUST** be the titles as provided in the tables in [using lists to return data](https://simplifier.net/guide/gp-connect-access-record-structured/Home/Build/Using-lists-to-return-data?version=current).
 
 ### For lists used in consultations
 
