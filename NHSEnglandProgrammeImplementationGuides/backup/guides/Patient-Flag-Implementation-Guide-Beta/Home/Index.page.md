@@ -15,7 +15,6 @@ Current information included in the Patient Flags service is:
 
 * Reasonable adjustment information
 * Female genital mutilation risk information
-* Child Protection Information System
 
 ### Reasonable adjustment information
 Reasonable adjustment information can indicate the patient’s key impairments (as defined in the [Equality Act 2010](https://www.gov.uk/guidance/equality-act-2010-guidance)) across areas including learning, mobility, mental health, social or behavioural to make receiving organisations understand that the patient should be considered for adjustments to care. The flag can also indicate key potential reasonable adjustments such as the need for accessible information, carer involvement, priority appointments or other adjustments to care.
