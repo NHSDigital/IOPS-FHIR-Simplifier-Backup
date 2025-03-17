@@ -6,7 +6,7 @@
 
 <h5><ins>Guidance</ins></h5>
 
-### For consultation lists with a type of Topic only
+### For lists used in consultations only
 
 The security label(s) applicable to the resource.
 
