@@ -51,11 +51,19 @@ The following diagram illustrates the types of systems and associated data flows
 Each of the numbered steps in the diagram is described below:
 
 1. A Health Care Professional in the GP practice determines that a patient requires a pathology test. This is usually done by selecting the relevant patient in the GP practice EPR system and clicking through to an order comms system web portal. Order comms systems are usually hosted by pathology laboratories.
-2. A test request is sent from the order comms system to the relevant LIMS. Test requests are usually sent as supplier specific HL7v2.x formatted messages, with local codes used to identify the requested test(s).
-3.	Following completion of the requested test(s), a test report is created and output from the LIMS. In common with test requests, test reports are usually defined as supplier specific HL7v2.x formatted messages, with local test codes. 
-4.	Most laboratories use middleware systems to support the flow of test reports to GP practice EPR systems. These systems can form part of another system (such as  an order comms system) or can exist as separate, standalone systems. They perform one or more of the following functions:
+2. A test request is sent from the order comms system to the relevant LIMS. Test requests are typically defined using HL7v2.x formatted messages, with local codes used to identify the requested test(s).
+3.	Following completion of the requested test(s), a test report is created, approved for issue and output from the LIMS. Test reports are defined using a variety of formats. HL7v2.x is commonly used however other formats, such as CSV, are used by some laboratories.  
+4.	Most laboratories use middleware systems to support the flow of test reports to GP practice EPR systems. These systems can form part of another system (such as an order comms system) or can exist as separate, standalone systems. They perform one or more of the following functions:
     * transform the output from LIMS to [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) formatted messages
     * map local laboratory codes to equivalent [Pathology Bounded Code List](https://isd.digital.nhs.uk/trud3/user/guest/group/0/pack/38) (PBCL) Read codes
-    * support the routing of messages, via MESH
-5.	Using [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh), the test report is sent as a PMIP EDIFACT (NHS003) formatted message to the requesting GP practice EPR system.
-6.	The message is parsed by the GP practice system and the test report details are added to the patient’s EPR record. As part of this processing, any PBCL Read codes contained within the test report message are mapped to equivalent SNOMED CT PBCL concepts.
+    * group test report messages into interchanges prior to transmission (an interchange acts an envelope for one or messages)
+    * support the routing of messages, via [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh)
+    * support the receipt and processing of interchange and message level acknowledgements
+5.	Using MESH, the test report is sent as a PMIP EDIFACT (NHS003) formatted message to the requesting GP practice EPR system.
+6.	The message is received by the GP practice system and the contents are validated:
+    * If the message is valid, the patient details included in the message are matched against the equivalent patient in the GP practice EPR system (either automatically or manually) and made available to view using an in-tray function. The test report(s) contained within the message may then be filed against the relevant patient record in the EPR. As part of this processing, any PBCL Read codes contained within the test report message are mapped to equivalent SNOMED CT PBCL concepts.
+    * If the message is invalid, any associated errors are made available to view and to be actioned.
+    * If the laboratory middleware system that sent the test report has requested an acknowledgement to be returned, the GP practice EPR system creates an appropriate acknowledgement message (within an interchange). Acknowledgement messages are used to indicate acceptance or rejection of an interchange, or the messages contained within an interchange, and to return details of the error causing a rejection to the sending system.
+7. Using MESH, the acknowledgement for the test report is sent as a PMIP EDIFACT (NHS001) formatted message (within an interchange) to the performing laboratory middleware system.
+8. The acknowledgement message is received by the laboratory middleware system and processed appropriately.
+
