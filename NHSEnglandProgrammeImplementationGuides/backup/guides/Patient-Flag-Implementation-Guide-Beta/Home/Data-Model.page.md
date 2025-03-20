@@ -155,4 +155,63 @@ pfg ||--|| prov : contains
 @enduml
 </plantuml>
 
+## Child Protection - Information Sharing (CP-IS)
+
+The CP-IS record is made up of a PatientFlag resource and a contained Provenance.The CP-IS service enables practitioners in unscheduled care settings to determine whether a child has an active Child Protection Plan (CPP) or is a Looked-After Child (LAC).
+
+## Purpose
+
+ Authorized healthcare workers can:
+
+- Query to check if a child has a Child Protection Plan, including:
+  - Looked-After Child (LAC) status
+  - Unborn child subject to a protection plan
+- Retrieve details of the responsible Local Authority for further action
+
+## Interpretation of the CP-IS Flag
+The presence of a CP-IS flag indicates:
+
+ - A child is subject to a Child Protection Plan or is a Looked-After Child
+ - The responsible Local Authority Care Team overseeing the child's case
+ - The start and end dates of the protection plan
+
+<plantuml>
+@startuml
+
+skinparam linetype ortho
+
+entity "Patient" as pat {
+  * NHS Number : number <<generated>>
+}
+
+package "CP-IS API" {
+
+  entity "CP-IS Flag" as flag {
+    * patient : Patient
+    * category : CodeableConcept
+    * code : CodeableConcept (Child Protection Plan) top level 'child has a cpp'
+    * period : Start & End Date
+  }
+
+  entity "CarePlan" as careplan {
+    * category: type of plan, CPP | LAC | UC
+  }
+
+  entity "CareTeam" as careteam {
+    * name : Local Authority Care Team
+    * telecom : Contact Details
+    * participant : Social Worker
+  }
+
+}
+
+
+pat ||--o| flag : "has CP-IS flag"
+flag ||--o| careplan
+careplan }o--|| careteam 
+
+@enduml
+
+</plantuml>
+
 ---
