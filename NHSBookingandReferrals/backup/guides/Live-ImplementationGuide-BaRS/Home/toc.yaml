@@ -1,5 +1,3 @@
-- name: Index
-  filename: Index.guide.md
 - name: About BaRS
   filename: About-BaRS
 - name: Core
@@ -18,3 +16,5 @@
   filename: Helpandsupport
 - name: BaRS-API-Spec-Change-Log
   filename: BaRS-API-Spec-Change-Log
+- name: Index
+  filename: Index.guide.md
