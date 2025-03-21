@@ -189,12 +189,13 @@ package "CP-IS API" {
   entity "CP-IS Flag" as flag {
     * patient : Patient
     * category : CodeableConcept
-    * code : CodeableConcept (Child Protection Plan) top level 'child has a cpp'
-    * period : Start & End Date
+    * code : CodeableConcept (Child Protection Plan)
+    * contained : Provenance (Contained)
   }
 
   entity "CarePlan" as careplan {
-    * category: type of plan, CPP | LAC | UC
+    * category: CodeableConcept (CPP | LAC | UC)
+    * subject : Patient
   }
 
   entity "CareTeam" as careteam {
@@ -203,12 +204,17 @@ package "CP-IS API" {
     * participant : Social Worker
   }
 
+  entity "Provenance" as prov {
+    * recorded : Date
+    * agent : Agent (backbone)
+  }
+
 }
 
-
 pat ||--o| flag : "has CP-IS flag"
-flag ||--o| careplan
-careplan }o--|| careteam 
+flag ||--|| prov : contains
+flag ||--o| careplan : "linked to"
+careplan ||--o| careteam : "involves"
 
 @enduml
 
