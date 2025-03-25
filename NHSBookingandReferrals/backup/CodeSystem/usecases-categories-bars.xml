@@ -94,15 +94,15 @@
   </concept>
   <concept>
     <code value="a5t1" />
-    <display value="Primary Care to Pharmacy CPCS Minor Illness" />
+    <display value="Primary Care to Community Pharmacy" />
   </concept>
   <concept>
     <code value="a5t2" />
-    <display value="Primary Care to Pharmacy Oral Contraception" />
+    <display value="Primary Care to Pharmacy Contraception" />
   </concept>
   <concept>
     <code value="a5t3" />
-    <display value="Primary Care to Pharmacy Blood Pressure" />
+    <display value="Primary Care to Pharmacy Blood Pressure Check Service" />
   </concept>
   <concept>
     <code value="referraltopharmacy" />
