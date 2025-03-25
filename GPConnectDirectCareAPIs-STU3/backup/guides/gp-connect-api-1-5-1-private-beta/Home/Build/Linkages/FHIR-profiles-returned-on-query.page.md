@@ -83,7 +83,7 @@ Details on how this is done can be found in the {{pagelink:Home/Design/Consultat
 Clinical items within the Consultation are always included in the response regardless of their inclusion/exclusion in other parts of the query.
 So, for example, if a consumer requests consultations then any medications that are contained in the consultations returned will be present in the bundle, regardless of the medications parameter being absent or set to false in the request.
 
-{{ render: Consultation_Return_v5.png }}
+{{ render: Consultation_Return_v6.png }}
 
 ### Problems ###
 
@@ -129,7 +129,7 @@ Where a Problem links to a profile that is not yet supported by the provider sys
 Clinical items linked to the Problem are always included in the response regardless of their inclusion/exclusion in other parts of the query.
 So, for example, if a consumer requests a Problem that links to a Medication but does not explicitly request Medications in the query, the provider will still include the Medication linked to the Problem as part of its response.
 
-{{ render: Problem_Return_v5.png }}
+{{ render: Problem_Return_v6.png }}
 
 ### Medications and medical devices ###
 
@@ -256,7 +256,7 @@ For each `DiagnosticReport` referenced in the `List` profile:
 * All administrative profiles referenced directly (or via another administrative profile) by any of the clinical profiles included above
   * Include `Patient`, `Organization`, `PractitionerRole`, `Practitioner` and `Location`
 
-{{ render: Investigation_Return_v5.png }}
+{{ render: Investigation_Return_v6.png }}
 
 ### Diary entries ###
 
@@ -323,7 +323,7 @@ It also includes a consolidated related problems `List` profile, but is included
 * a primary list for each of the requested clinical areas
 * secondary lists for all clinical areas contained in consultations or linked to problems, regardless of inclusion in the request
 
-{{ render: Summary_Return_v4.png }}
+{{ render: Summary_Return_v5.png }}
 
 ### Duplicate returned profiles ###
 

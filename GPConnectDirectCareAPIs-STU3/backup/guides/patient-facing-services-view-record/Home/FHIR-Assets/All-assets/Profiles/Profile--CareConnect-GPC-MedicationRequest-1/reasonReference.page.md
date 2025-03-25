@@ -13,12 +13,8 @@ A use case for using this element within the data model has not been identified;
 
 ```xml
 <reasonReference>
-    <coding>
-        <system value="http://snomed.info/sct" />
-        <code value="195967001" />
-        <display value="Asthma (disorder)" />
-    </coding>
-</reasonCode>
+    <reference value="condition-001243" />
+</reasonReference>
 ```
 
 ---

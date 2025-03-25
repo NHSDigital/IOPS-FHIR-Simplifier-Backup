@@ -6,6 +6,6 @@ Problem records are linked to consultations, clinical items and other problems. 
     <strong>Note</strong>: The diagrams are illustrative to support the specification text. There may be some simplifications or omissions, for instance not all possible linkages to the resources for investigations are shown.
 </div>
 
-{{ render: GPConnect-problem-guidance.drawio.png }}
+{{ render: Problem_Relationships_1_5_v6.png }}
 
 ---

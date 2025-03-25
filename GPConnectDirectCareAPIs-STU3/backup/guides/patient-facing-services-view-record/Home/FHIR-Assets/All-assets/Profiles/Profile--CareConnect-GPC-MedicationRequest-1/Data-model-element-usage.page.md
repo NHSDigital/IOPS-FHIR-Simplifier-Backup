@@ -129,9 +129,9 @@
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
         </tr>
-        <!-- medicationReference -->
+        <!-- medication -->
         <tr>
-            <td>medicationReference</td>
+            <td>medication</td>
             <td><span class="mro-circle mandatory" title="Mandatory"></span></td>
             <td><i class="fas fa-check text-success"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
