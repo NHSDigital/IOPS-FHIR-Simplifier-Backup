@@ -38,8 +38,8 @@
   filename: status.page.md
 - name: category
   filename: category.page.md
-- name: medicationReference
-  filename: medicationReference.page.md
+- name: medication
+  filename: medication.page.md
 - name: effective[x]
   filename: effective-x.page.md
 - name: dateAsserted

@@ -40,8 +40,8 @@
   filename: category.page.md
 - name: priority
   filename: priority.page.md
-- name: medicationReference
-  filename: medicationReference.page.md
+- name: medication
+  filename: medication.page.md
 - name: subject
   filename: subject.page.md
 - name: context
