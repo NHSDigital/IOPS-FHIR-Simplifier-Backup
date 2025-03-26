@@ -176,7 +176,7 @@ S2 -u-> SR : Specimen.request
 
 <a name="extension:sampleCategory"></a>
 <h4 class='additional-Guidance-Submenu'> extension:sampleCategory </h4>
-Allows the categorisation of a sample into either tumour or germline. Additional terms may be added upon review though the valueCodeableConcept.text field MAY be used as a free text representation if needed.
+Allows the categorisation of a sample into either tumour or germline. Only required for WGS Cancer Testing, not currently part of the Order Management MDS. Additional terms may be added upon review though the valueCodeableConcept.text field MAY be used as a free text representation if needed.
 
 ```json
 "extension": [
