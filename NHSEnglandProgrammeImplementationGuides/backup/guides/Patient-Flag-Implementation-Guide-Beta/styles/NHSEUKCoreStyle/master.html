@@ -6,7 +6,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ guide-title }} </title>
+        <title>{{ guide-title }}</title>
 
         <link rel="icon" href="{{content}}/styles/common/favicon.ico" />
         <link rel="stylesheet" href="{{content}}/styles/common/main.min.css" />
@@ -29,6 +29,15 @@
         <script src="{{content}}/styles/common/rendering/baseTreetable.min.js"></script>
     </head>
 
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FYM0E7Q75G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FYM0E7Q75G');
+</script>
     <body>
 
         <header>
@@ -61,8 +70,8 @@
             <div id="development-notice" markdown="span" class="alert alert-danger" role="alert">
                 <h4><i class="fas fa-exclamation-triangle"></i> WARNING</h4>
 This guidance is under active development by NHS England and content may be added or updated on a regular basis.<br><br>
-This FHIR IG is ahead of the current <a href="https://digital.nhs.uk/developer/api-catalogue/patient-flags-service---fhir-api#overview--overview">PatientFlag API specification</a> build. Please refer to that document for technical build and integration requirements, and to the PatientFlag programme for roadmap information.
-<!--It is NOT currently recommended to develop against this guidance.-->
+It is NOT currently recommended to develop against this guidance.<br><br>
+This Implementation Guide has been superseded by <a href="https://simplifier.net/guide/patient-flag-implementation-guide-beta?version=current">Patient Flag Implementation Guide - Beta</a>
             </div>
             <!--Comment out for publication, end-->
 
@@ -74,8 +83,16 @@ This FHIR IG is ahead of the current <a href="https://digital.nhs.uk/developer/a
             back to top
         </a>
 
-        <footer>
-            <div class="container">            
+       <footer>
+
+            <!-- Consent Bar -->
+            <div class="cookie-consent" data-level="20" data-duration="8">
+                <p>Simplifier, and NHS England, use cookies on this website. <span class="hidden-xs">Cookies are small text files, stored on your computer. We use cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site without changing settings, you are agreeing to our use of cookies.</span></p>
+                <button type="button" class="btn btn-primary cookie-accept" data-level="80" data-duration="8760">Accept</button>
+            </div>
+
+            <!-- main footer container, sizes match NHSE IG for consistent look and feel -->
+            <div class="container">                                  
                 <table role="none" title="Footer Links" width="100%">
                     	<col style="width:19%">
 	                    <col style="width:17%">
@@ -83,15 +100,21 @@ This FHIR IG is ahead of the current <a href="https://digital.nhs.uk/developer/a
 	                    <col style="width:13%">
     	                <col style="width:33%">
                   <tr>
-                      <td>Powered by <b>SIMPLIFIER.NET</b></td>                      
-                      <td>IG © 2025+ NHS England</td>
+                      <td>Powered by <b>SIMPLIFIER.NET</b></td>
+                      <td>IG © <script>document.write(/\d{4}/.exec(Date())[0])</script>+ NHS England</td>
                       <td><span><b>Version:</b> {{ guide-version }}</span></td>
                       <td><span><b>FHIR Version:</b> {{ guide-fhir-version }} </span></td>
-                      <td><b>Packages are based on:</b>  <a href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
+                      <td><b>Packages are based on:</b>  <a id="footer-basedon" href="https://simplifier.net/packages/fhir.r4.ukcore.stu3.currentbuild/0.0.6-pre-release/">FHIR UK Core STU3 0.0.6</a></td>
                     </tr>
                     <tr>
-                      <td><b>Released:</b> 25th February 2025</td>
-                      <td colspan="3"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Helpandsupport/Sitemap-Overview.page.md?version={{ guide-version }}">Table of contents</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                      <td><b>Released:</b> TBC</td>
+                      <td colspan="3"><b>Links:</b>&nbsp;<a id="footer-sitemap" href="{{content}}/../Home/Helpandsupport/Sitemap-Overview.page.mdd?version={{ guide-version }}">Table of contents</a> | <a id="footer-history" href="https://simplifier.net/guide/nhs-england-implementation-guide-version-history?version=current">Version history</a> | <a id="footer-licence" href="{{content}}/../Home/?version={{ guide-version }}#Licence">Licence</a> | <a id="footer-propose" href="https://simplifier.net/NHS-England-Implementation-Guide/~issues">Propose a change</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                        View our <a id="footer-privacypolicy" href="https://standards.nhs.uk/privacy-policy" target="_blank">Privacy Policy</a> and 
+                        <a id="footer-cookiepolicy" href="https://standards.nhs.uk/cookie-policy" target="_blank">Cookie Policy</a>
+                        </td>
                     </tr>  
                 </table>
             </div>
