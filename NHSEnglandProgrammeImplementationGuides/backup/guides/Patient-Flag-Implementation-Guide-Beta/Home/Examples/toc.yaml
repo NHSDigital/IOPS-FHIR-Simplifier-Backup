@@ -22,3 +22,11 @@
   filename: PatientFlag-AlanMann-Example.page.md
 - name: RemoveFGMRecord-Bundle-Example
   filename: RemoveFGMRecord-Bundle-Example.page.md
+- name: CPIS-Bundle-Example
+  filename: CPIS-Bundle-Example.page.md
+- name: CPIS-Flag-Example
+  filename: CPIS-Flag-Example.page.md
+- name: CPIS-CarePlan-Example
+  filename: CPIS-CarePlan-Example.page.md
+- name: CPIS-CareTeam-Example
+  filename: CPIS-CareTeam-Example.page.md

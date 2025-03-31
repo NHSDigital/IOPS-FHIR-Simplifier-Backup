@@ -1,0 +1,18 @@
+<CareTeam xmlns="http://hl7.org/fhir">
+    <id value="CPIS-CareTeam-Example" />
+    <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CareTeam-Flag" />
+    </meta>
+    <status value="active" />
+    <name value="SHEFFIELD CITY COUNCIL" />
+    <telecom>
+        <system value="phone" />
+        <value value="01133973581" />
+        <use value="work" />
+    </telecom>
+    <telecom>
+        <system value="phone" />
+        <value value="07133973581" />
+        <use value="mobile" />
+    </telecom>
+</CareTeam>

@@ -1,0 +1,26 @@
+<CarePlan xmlns="http://hl7.org/fhir">
+    <id value="CPIS-CarePlan-Example" />
+    <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CarePlan-Flag" />
+    </meta>
+    <status value="active" />
+    <intent value="plan" />
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="342191000000101" />
+            <display value="Subject to child protection plan" />
+        </coding>
+    </category>
+    <subject>
+        <reference value="Patient/PatientFlag-AlanMann-Example" />
+        <display value="Alan Mann" />
+    </subject>
+    <period>
+        <start value="2024-07-22T09:00:00+00:00" />
+    </period>
+    <careTeam>
+        <reference value="CareTeam/CPIS-CareTeam-Example" />
+        <display value="SHEFFIELD CITY COUNCIL" />
+    </careTeam>
+</CarePlan>

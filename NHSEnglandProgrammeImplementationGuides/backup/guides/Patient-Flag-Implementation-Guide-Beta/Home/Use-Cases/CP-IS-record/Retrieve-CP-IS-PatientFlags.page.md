@@ -94,9 +94,10 @@ e.g:
 ```
 GET [baseUrl]/PatientFlag?patient=9449306753
 ```
-This limits the search to Flags for the patient that has the identifier `9449306753`
 
-This query relies on the [Flag](http://www.hl7.org/fhir/R4/flag.html#search).patient SearchParameter.
+Example:
+
+{{pagelink:Home/Examples/CPIS-Flag-Example.page.md}}
 
 ### GET Request for CarePlan (Using Extension Reference)
 
@@ -131,6 +132,10 @@ GET https://fhir.nhs.uk/CarePlan/CPP-062572
 
 This returns the CarePlan detail.
 
+Example:
+
+{{pagelink:Home/Examples/CPIS-CarePlan-Example.page.md}}
+
 
 ### GET Request for CareTeam
 
@@ -150,6 +155,10 @@ GET https://fhir.nhs.uk/CareTeam/LocalAuthoritySafeguardingTeam
 
 This returns the CareTeam details (e.g., social workers, managing organization, contact info).
 
+Example:
+
+{{pagelink:Home/Examples/CPIS-CareTeam-Example.page.md}}
+
 ### GET Request to Retreive CP-IS Details in one request
 
 ```
@@ -161,3 +170,7 @@ Example:
 GET https://fhir.nhs.uk/PatientFlag?patient=9449306753&code=child-protection-information-sharing-flag
 ```
 This returns all the CP-IS Details in one request (i.e. Flag Details, CarePlan Details, CareTeam Details)
+
+Example:
+
+{{pagelink:Home/Examples/CPIS-Bundle-Example.page.md}}

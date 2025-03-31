@@ -1,0 +1,67 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="England-CarePlan-Flag" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-CarePlan-Flag" />
+    <version value="0.1.0" />
+    <name value="EnglandCarePlanFlag" />
+    <title value="England Care Plan Flag" />
+    <status value="draft" />
+    <date value="2025-03-03" />
+    <publisher value="NHS England" />
+    <contact>
+        <name value="NHS England" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
+    <description value="Defines the structure for the CarePlan resource associated with the Flag resource, representing safeguarding plans such as Child Protection Plans (CPP)." />
+    <purpose value="This profile provides a structured representation of a CarePlan in the Flag system, detailing the safeguarding status of a child under CP-IS, including Looked After Child (LAC), Child Protection Plan (CPP), and Unborn Child Protection (UCP)." />
+    <copyright value="Copyright &#169; 2025 NHS England. Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0." />
+    <fhirVersion value="4.0.1" />
+    <mapping>
+        <identity value="rim" />
+        <uri value="http://hl7.org/v3" />
+        <name value="RIM Mapping" />
+    </mapping>
+    <mapping>
+        <identity value="w5" />
+        <uri value="http://hl7.org/fhir/fivews" />
+        <name value="FiveWs Pattern Mapping" />
+    </mapping>
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="CarePlan" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+    <derivation value="constraint" />
+   <differential>
+    <element id="CarePlan.id">
+        <path value="CarePlan.id" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.status">
+        <path value="CarePlan.status" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.category">
+        <path value="CarePlan.category" />
+        <min value="1" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.subject">
+        <path value="CarePlan.subject" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.period">
+        <path value="CarePlan.period" />
+        <min value="1" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.careTeam">
+        <path value="CarePlan.careTeam" />
+        <min value="1" />
+        <mustSupport value="true" />
+    </element>
+</differential>
+</StructureDefinition>

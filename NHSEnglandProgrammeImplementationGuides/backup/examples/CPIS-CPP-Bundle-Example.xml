@@ -1,0 +1,131 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="CPIS-CPP-Bundle-Example" />
+    <type value="collection" />
+
+    <!-- Flag Resource -->
+    <entry>
+        <fullUrl value="Flag/CPIS-Flag-Example" />
+        <resource>
+            <Flag>
+                <id value="CPIS-Flag-Example" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
+                </meta>
+                <contained>
+                    <Provenance>
+                        <id value="1fc83fd8-4a6d-48e4-91ab-12bb10a4a834" />
+                        <meta>
+                            <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+                        </meta>
+                        <target>
+                            <reference value="#" />
+                        </target>
+                        <recorded value="2024-07-22T09:00:00+00:00" />
+                        <activity>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+                                <code value="CREATE" />
+                                <display value="create" />
+                            </coding>
+                        </activity>
+                        <agent>
+                            <role>
+                                <coding>
+                                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                                    <code value="R0260" />
+                                    <display value="General Medical Practitioner" />
+                                </coding>
+                            </role>
+                            <who>
+                                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+                            </who>
+                            <onBehalfOf>
+                                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+                            </onBehalfOf>
+                        </agent>
+                    </Provenance>
+                </contained>
+                <status value="active" />
+                <code>
+                    <coding>
+                        <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+                        <code value="child-protection-information-system-flag" />
+                        <display value="Child Protection Information System Flag" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/PatientFlag-AlanMann-Example" />
+                    <display value="Alan Mann" />
+                </subject>
+                <period>
+                    <start value="2024-07-22T09:00:00+00:00" />
+                </period>
+                <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
+                    <valueReference>
+                        <reference value="CarePlan/CPIS-CarePlan-Example" />
+                        <display value="Child Protection Plan for Alan Mann" />
+                    </valueReference>
+                </extension>
+            </Flag>
+        </resource>
+    </entry>
+
+    <!-- CarePlan Resource -->
+    <entry>
+        <fullUrl value="CarePlan/CPIS-CarePlan-Example" />
+        <resource>
+            <CarePlan>
+                <id value="CPIS-CarePlan-Example" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CarePlan-Flag" />
+                </meta>
+                <status value="active" />
+                <intent value="plan" />
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="342191000000101" />
+                        <display value="Subject to child protection plan" />
+                    </coding>
+                </category>
+                <subject>
+                    <reference value="Patient/PatientFlag-AlanMann-Example" />
+                    <display value="Alan Mann" />
+                </subject>
+                <period>
+                    <start value="2024-07-22T09:00:00+00:00" />
+                </period>
+                <careTeam>
+                    <reference value="CareTeam/CPIS-CareTeam-Example" />
+                    <display value="SFD1 - SHEFFIELD CITY COUNCIL" />
+                </careTeam>
+            </CarePlan>
+        </resource>
+    </entry>
+
+    <!-- CareTeam Resource -->
+    <entry>
+        <fullUrl value="CareTeam/CPIS-CareTeam-Example" />
+        <resource>
+            <CareTeam>
+                <id value="CPIS-CareTeam-Example" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CareTeam-Flag" />
+                </meta>
+                <status value="active" />
+                <name value="SFD1 - SHEFFIELD CITY COUNCIL" />
+                <telecom>
+                    <system value="phone" />
+                    <value value="01133973581" />
+                    <use value="work" />
+                </telecom>
+                <telecom>
+                    <system value="phone" />
+                    <value value="07133973581" />
+                    <use value="mobile" />
+                </telecom>
+            </CareTeam>
+        </resource>
+    </entry>
+
+</Bundle>
