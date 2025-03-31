@@ -54,10 +54,11 @@ This guidance covers items such as:
 </div>
 
 ---
-
-<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-info-circle"></i> Use International FHIR</h4>
-We are not restricted to use UKCore only, one can also use International FHIR depends on the need of their work. So, One can do there work with the use of International FHIR resources if they are not present in the UKCORE.
+<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"> Reworded for clarity
+<div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-info-circle"></i> Use of International and other FHIR IGs</h4>
+Implementations are not restricted to only using the UK Core. International FHIR MAY be used to supplement the UK Core, for example where a particular resource is not yet supported by UK Core. Other FHIR IGs MAY be used as long as they conform to UK Core rules and guidance. 
 <br><br>
+</div>
 </div>
 
 ---
@@ -72,7 +73,7 @@ This Guide is divided into several pages which are listed at the top of each pag
   <li>{{pagelink:Guidance-DataType}}: This page gives guidance on the representation of constructs like Address, Name, and Telecom etc.</li>
   <li>{{pagelink:Guidance-CodeableConcept}}: This page gives guidance on the processing of CodeableConcept codes such as SNOMED CT concepts and descriptions.</li>
   <li>{{pagelink:Guidance-FHIRVersions}}: This page gives guidance on UK Core and FHIR Versions beyond R4.</li>
-  <li>{{pagelink:Guidance-MustSupport}}: This page gives guidance on the the use of MustSupport flags in UK Core.</li>
+  <li>{{pagelink:Guidance-MustSupport}}: This page gives guidance on the use of MustSupport flags in UK Core.</li>
 </ul>
 </li>
 <li>Profiles and Extensions: The  header for pages about Extensions and Profiles
