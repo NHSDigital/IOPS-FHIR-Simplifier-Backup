@@ -12,6 +12,8 @@
   filename: GNCCode.guide.md
 - name: GOC Number
   filename: GOCNumber.guide.md
+- name: GPHC Number
+  filename: GPHC-Number.page.md
 - name: HCPC Number
   filename: HCPCNumber.guide.md
 - name: NHS Number

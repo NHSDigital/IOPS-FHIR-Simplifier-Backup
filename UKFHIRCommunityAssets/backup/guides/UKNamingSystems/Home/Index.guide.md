@@ -33,7 +33,7 @@ The index tables list the following information which is explained below:
 </tr>
 <tr>
 <th>Kind</th>
-<td>The type of NamingSystem which MUST be a value from: {{render:http://hl7.org/fhir/namingsystem-type}}</td>
+<td>The type of NamingSystem which SHALL be a value from: {{render:http://hl7.org/fhir/namingsystem-type}}</td>
 </tr>
 <tr>
 
