@@ -19,7 +19,7 @@ This section details the NamingSystems for CodeSystems used by the UK Core and t
 <th width="5%">Kind</th>
 
 <tr>
-<td><a href="#CrossCareSettingID2">Cross Care Setting ID</a></td>
+<td><a href="#CrossCareSettingID">Cross Care Setting ID</a></td>
 <td>https://fhir.nhs.uk/Id/cross-care-setting-identifier</td>
 <td>Cross care setting identifier</td>
 <td>active</td>
@@ -65,6 +65,14 @@ This section details the NamingSystems for CodeSystems used by the UK Core and t
 <td><a href="#GOCNumber">GOC Number</a></td>
 <td>https://fhir.hl7.org.uk/Id/goc-number</td>
 <td>General Optical Council (GOC) number</td>
+<td>active</td>
+<td>identifier</td>
+</tr>
+
+<tr>
+<td><a href="#GPHC-Number">GPHC Number</a></td>
+<td>https://fhir.hl7.org.uk/Id/gphc-number</td>
+<td>General Pharmaceutical Council (GPhC) registration number</td>
 <td>active</td>
 <td>identifier</td>
 </tr>
