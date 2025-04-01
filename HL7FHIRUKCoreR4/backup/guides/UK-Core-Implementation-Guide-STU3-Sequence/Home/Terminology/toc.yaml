@@ -6,3 +6,5 @@
   filename: CodeSystems
 - name: ConceptMaps
   filename: ConceptMaps
+- name: NamingSystems
+  filename: NamingSystems.page.md
