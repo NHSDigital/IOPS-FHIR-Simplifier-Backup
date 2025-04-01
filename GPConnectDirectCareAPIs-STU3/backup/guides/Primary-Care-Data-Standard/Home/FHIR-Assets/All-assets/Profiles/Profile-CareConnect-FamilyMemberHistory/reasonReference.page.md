@@ -1,0 +1,20 @@
+## {{page-title}}
+
+<h5><ins>Usage</ins></h5>
+
+<span class="mro-circle optional" title="Optional"></span> Optional
+
+
+<h5><ins>Guidance</ins></h5>
+
+	Reference(Condition | Observation | AllergyIntolerance | QuestionnaireResponse)	
+
+<h5><ins>Example</ins></h5>
+
+
+```xml
+<reasonReference>
+    <reference value="condition--00f39ds" />
+</reasonReference>
+```
+---

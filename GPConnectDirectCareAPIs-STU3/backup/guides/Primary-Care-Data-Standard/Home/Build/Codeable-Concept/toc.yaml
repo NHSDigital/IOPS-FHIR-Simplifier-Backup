@@ -1,0 +1,32 @@
+- name: Introduction
+  filename: Introduction.page.md
+- name: Description of elements (in terms of SNOMED CT)
+  filename: Description-of-elements-in-terms-of-SNOMED-CT.page.md
+- name: Populating the CodeableConcept
+  filename: Populating-the-CodeableConcept.page.md
+- name: Field by field population guidance
+  filename: Field-by-field-population-guidance.page.md
+- name: Sending dm+d codes
+  filename: Sending-dm-d-codes.page.md
+- name: Sending a SNOMED CT concept with its associated preferred term
+  filename: Sending-a-SNOMED-CT-concept-with-its-associated-preferred-term.page.md
+- name: Sending a concept where the coding system and code is unknown
+  filename: Sending-a-concept-where-the-coding-system-and-code-is-unknown.page.md
+- name: Sending a description id that is not the preferred term
+  filename: Sending-a-description-id-that-is-not-the-preferred-term.page.md
+- name: Sending a translation set
+  filename: Sending-a-translation-set.page.md
+- name: Rules for populating legacy coding
+  filename: Rules-for-populating-legacy-coding.page.md
+- name: Sending a description id NOT in the UK Edition, but for a concept id that IS in the UK Edition
+  filename: Sending-a-description-id-NOT-in-the-UK-Edition-but-for-a-concept-id-that-IS-in-the-UK-Edition.page.md
+- name: Sending a description id and concept id where NEITHER is in the UK Edition
+  filename: Sending-a-description-id-and-concept-id-where-NEITHER-is-in-the-UK-Edition.page.md
+- name: Processing data from a CodeableConcept
+  filename: Processing-data-from-a-CodeableConcept.page.md
+- name: Degradation
+  filename: Degradation.page.md
+- name: Clinical codes
+  filename: Clinical-codes.page.md
+- name: Original term text
+  filename: Original-term-text.page.md

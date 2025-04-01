@@ -1,0 +1,30 @@
+- name: Index
+  filename: Index.page.md
+- name: Related links
+  filename: Related-links.page.md
+- name: Data model element usage
+  filename: Data-model-element-usage.page.md
+- name: identifier
+  filename: identifier.page.md
+- name: status
+  filename: status.page.md
+- name: statusHistory
+  filename: statusHistory.page.md
+- name: type
+  filename: type.page.md
+- name: diagnosis
+  filename: diagnosis.page.md
+- name: patient
+  filename: patient.page.md
+- name: managingOrganization
+  filename: managingOrganization.page.md
+- name: period
+  filename: period.page.md
+- name: referralRequest
+  filename: referralRequest.page.md
+- name: careManager
+  filename: careManager.page.md
+- name: team
+  filename: team.page.md
+- name: account
+  filename: account.page.md
