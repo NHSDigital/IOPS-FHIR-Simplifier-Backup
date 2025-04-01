@@ -1,0 +1,32 @@
+- name: Index
+  filename: Index.page.md
+- name: Related links
+  filename: Related-links.page.md
+- name: Data model element usage
+  filename: Data-Model-Element-Usage.page.md
+- name: id
+  filename: id.page.md
+- name: meta.versionId
+  filename: meta.versionId.page.md
+- name: meta.lastUpdated
+  filename: meta.lastUpdated.page.md
+- name: meta.profile
+  filename: meta.profile.page.md
+- name: meta.security
+  filename: meta.security.page.md
+- name: meta.tag
+  filename: meta.tag.page.md
+- name: extension(practitionerRole)
+  filename: extension-practitionerRole.page.md
+- name: identifier
+  filename: identifier.page.md
+- name: serviceCategory
+  filename: serviceCategory.page.md
+- name: specialty
+  filename: specialty.page.md
+- name: actor
+  filename: actor.page.md
+- name: planningHorizon
+  filename: planningHorizon.page.md
+- name: comment
+  filename: comment.page.md

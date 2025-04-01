@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Active
+  filename: Active.page.md
+- name: Retired
+  filename: Retired.page.md
