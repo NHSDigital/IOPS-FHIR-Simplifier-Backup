@@ -4,7 +4,6 @@ topic: Home-Guide
 ## Home 
 
 ---
-
 ## UK Core Implementation Guide Current Draft Build ##
 
 <p>
@@ -50,12 +49,14 @@ This guidance covers items such as:
 </div>
 
 ---
-<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"> Reworded for clarity
+
+<div id="newAsset" markdown="span" class="alert alert-success" role="alert"><h4><i class="fa fa-star"></i> Reworded for clarity</h4>
 <div markdown="span" class="alert alert-warning" role="alert"><h4><i class="fa fa-info-circle"></i> Use of International and other FHIR IGs</h4>
 Implementations are not restricted to only using the UK Core. International FHIR MAY be used to supplement the UK Core, for example where a particular resource is not yet supported by UK Core. Other FHIR IGs MAY be used as long as they conform to UK Core rules and guidance. 
 <br><br>
 </div>
 </div>
+
 
 ---
 
