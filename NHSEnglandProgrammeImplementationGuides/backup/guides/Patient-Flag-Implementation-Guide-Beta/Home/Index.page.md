@@ -15,6 +15,7 @@ Current information included in the Patient Flags service is:
 
 * Reasonable adjustment information
 * Female genital mutilation risk information
+* Child Protection Information Sharing 
 
 ### Reasonable adjustment information
 Reasonable adjustment information can indicate the patient’s key impairments (as defined in the [Equality Act 2010](https://www.gov.uk/guidance/equality-act-2010-guidance)) across areas including learning, mobility, mental health, social or behavioural to make receiving organisations understand that the patient should be considered for adjustments to care. The flag can also indicate key potential reasonable adjustments such as the need for accessible information, carer involvement, priority appointments or other adjustments to care.
@@ -48,7 +49,7 @@ The FGM Flag record contains:
 * an indicator that a child with female genitalia has a family history of FGM
 * the date that the FGM assessment was carried out
 
-### Child Protection - Information System
+## Child Protection - Information Sharing (CP-IS)
 
 The Child Protection Information Sharing (CP-IS) initiative aims to share information between NHS clinicians and Local Authority social care practitioners relating to children with either Child Protection, Looked After or Unborn Child care plans.
 
@@ -66,12 +67,11 @@ Current uses are:-
 
 ## Purpose
 
- Authorized healthcare workers can:
+Authorized healthcare workers can:
 
-- Query to check if a child has a Child Protection Plan, including:
-  - Looked-After Child (LAC) status
-  - Unborn child subject to a protection plan
-- Retrieve details of the responsible Local Authority for further action
+ Query to determine if a patient has a Child Protection Plan
+ * either as part of general PatientFlag query that returns all PatientFlags
+ * or query for just Child Protection Plans for the patient & return all associated CarePlan and CareTeam resources
 
 ---
 
