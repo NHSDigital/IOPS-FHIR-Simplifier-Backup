@@ -1,9 +1,19 @@
 ## {{page-title}}
 
-This specification outlines the data model used within GP Connect, and contains guidelines on how to populate each of the FHIR resources.
+This page will explain what the Primary Care Data Standard (PCDS) is and its purpose. 
+<p>The main goal for the PCDS is to ensure consistency, help ease the interoperability and boost efficiency across GP systems for a migration. 
+This workstream is dedicated to the production and maintenance of the PCDS with the support of the operational data to help bridge the gap between supplier-to-supplier migration for a GP.</p>
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <b>Note</b>: The sections below contain information about which initiatives use the data model for GP Connect (outlined in this specification) and will link to their own respective implementation guidance.
-</div>
+<p>To date, we’ve explored key areas including:</p>
+<ul>
+    <li>data format specifications</li>
+    <li>stakeholder consultations for data requirements (including pain points)</li>
+    <li>reviewed existing standards for alignment</li>
+</ul>
+
+<p>We have used a combination of the Professional Records Standards Body (PRSB) and GPConnect/CareConnect FHIR Profiles to produce this standard.</p>
+
+### Problem Statement
+There is no human readable standard that describes the requirements of what should be stored & shared in a GP record for everyone to understand.
 
 ---
