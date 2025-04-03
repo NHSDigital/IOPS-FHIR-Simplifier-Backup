@@ -161,12 +161,13 @@ The CP-IS record is made up of a PatientFlag resource and a contained Provenance
 
 ## Purpose
 
- Authorized healthcare workers can:
 
-- Query to check if a child has a Child Protection Plan, including:
-  - Looked-After Child (LAC) status
-  - Unborn child subject to a protection plan
-- Retrieve details of the responsible Local Authority for further action
+Authorized healthcare workers can:
+
+ Query to determine if a patient has a Child Protection Plan
+ * either as part of general PatientFlag query that returns all PatientFlags
+ * or query for just Child Protection Plans for the patient & return all associated CarePlan and CareTeam resources
+
 
 ## Interpretation of the CP-IS Flag
 The presence of a CP-IS flag indicates:

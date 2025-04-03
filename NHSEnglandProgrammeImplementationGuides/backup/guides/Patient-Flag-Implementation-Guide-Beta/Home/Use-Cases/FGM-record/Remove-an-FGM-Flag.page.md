@@ -69,8 +69,6 @@ To delete a FGM flag for a patient with NHS Number 9787576543 beacuse the flag i
 DELETE [baseURL]/PatientFlag/?patient=9787576543&code=FGM&reason=NoLongerRequired
 ```
 
-# THIS IS WRONG
-
 #### Example
 
 * {{pagelink:RemoveFGMRecord-Bundle-Example}}

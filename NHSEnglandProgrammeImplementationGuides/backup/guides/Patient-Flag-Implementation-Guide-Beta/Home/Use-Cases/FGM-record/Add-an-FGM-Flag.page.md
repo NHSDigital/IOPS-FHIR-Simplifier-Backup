@@ -82,8 +82,6 @@ POST [baseURL]/PatientFlag
 [Transaction Bundle that containing the FGM Flag]
 ```
 
-# THIS EXAMPLE USES PUT & SHOULD USE POST & SHOULD ONLY BE FGM FLAG
-
 ### Examples
 
 * {{pagelink:AddFGMRecordTransaction-Bundle-Example}}
