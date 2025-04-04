@@ -2,9 +2,15 @@
 
 This page shows the functional use cases provided by the Reasonable Adjustments implementation within the PatientFlag API:
 
-- Retrieve a set of top-level Flags (just the Flags with no associated resources)
-- Retrieve a specific Reasonable Adjustment Flag with associated resources
-- Add a top-level Reasonable Adjustment Flag
-- Add a top-level Flag (and associated Adjustment, Impairment or Condition resources)
-- Add/remove associated resources (with the dependency that a top-level flag must already be added/removed)
-- Remove a top-level Flag (which will remove all associated resources)
+query to determine if a patient has a Reasonable Adjustments
+ * either as part of general PatientFlag query that returns all PatientFlags
+ * or query for just reasonable adjustments for the patient and return all associated Condition and Flag resources for all the recorded reasonable adjustments)
+
+create a Reasonable Adjustment for a patient
+ * create a PatientFlag (with no associated resources)
+ * create a PatientFlag and associated Condition and Flag resources to detail all the reasonable adjustments for the patient
+ * create additional reasonable adjustment Condition and Flag resources under an existing PatientFlag
+ 
+delete reasonable adjustments for a patient
+ * remove all reasonable adjustments by deleting the reasonable adjustment PatientFlag
+ * remove individual reasonable adjustments by deleting relevant Conditions and Flags
