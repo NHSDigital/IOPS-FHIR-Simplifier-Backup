@@ -1,4 +1,6 @@
 - name: Index
   filename: Index.page.md
-- name: Why are we making this?
-  filename: Why-are-we-making-this.page.md
+- name: Why are we making the PCDS?
+  filename: Why-are-we-making-the-PCDS.page.md
+- name: How we made the PCDS
+  filename: How-we-made-the-PCDS.page.md

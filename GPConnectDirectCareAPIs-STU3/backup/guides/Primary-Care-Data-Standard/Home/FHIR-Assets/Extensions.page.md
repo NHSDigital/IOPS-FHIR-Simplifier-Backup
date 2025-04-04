@@ -2,7 +2,7 @@
 
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension--Extension-CareConnect-GPC-ActualProblem-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension--Extension-CareConnect-GPC-AllergyCertainty-1}}
-- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension--Extension-CareConnect-GPC-AllergyIntoleranceEnd-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-GPC-AllergyIntoleranceEnd-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension--Extension-CareConnect-GPC-AllergyIntoleranceEndDate-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension--Extension-CareConnect-GPC-AllergySeverity-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension--Extension-CareConnect-GPC-ClinicalSetting-1}}

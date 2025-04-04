@@ -4,12 +4,9 @@
 
 <span class="mro-circle mandatory" title="Mandatory"></span> Mandatory
 
-
 <h5><ins>Guidance</ins></h5>
 
-When this medication statement was created by the clinician.
-
-This is the date/time when the prescription was authorised by the clinician. Usually this is when the prescription is added to the record but it may be backdated.
+This is the audit trail date/time for when the authorisation was entered onto the record.
 
 <h5><ins>Example</ins></h5>
 
