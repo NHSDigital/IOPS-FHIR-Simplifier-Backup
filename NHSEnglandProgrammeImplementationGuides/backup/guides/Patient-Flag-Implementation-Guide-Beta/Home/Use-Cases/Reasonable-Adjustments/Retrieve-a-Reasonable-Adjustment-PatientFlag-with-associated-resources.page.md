@@ -85,9 +85,4 @@ GET [baseUrl]/PatientFlag?patient=9449306753&code=NRAF
 
 This will return all associated flag resources for Reasonable Adjustments for patient 9449306753 in the returned searchset Bundle.
 
-Resources returned will conform to:
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}}  
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}}
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}} 
-
 ---

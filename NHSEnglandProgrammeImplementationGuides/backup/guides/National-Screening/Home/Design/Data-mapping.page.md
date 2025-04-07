@@ -29,6 +29,24 @@ Patient "1" *-- "many" ServiceRequest : has
 </thead>
 <tbody>
   <tr>
+    <td>status</td>
+    <td>1..1</td>
+    <td>UKCoreEncounter.status</td>
+    <td>planned | arrived | triaged | in-progress | onleave | finished | cancelled +</td>
+</tr>
+  <tr>
+    <td>class</td>
+    <td>1..1</td>
+    <td>UKCoreEncounter.class</td>
+    <td>Classification of patient encounter</td>
+</tr>
+  <tr>
+    <td>subject</td>
+    <td>0..1</td>
+    <td>UKCoreEncounter.subject</td>
+    <td>The patient or group present at the encounter</td>
+</tr>
+  <tr>
     <td>episode_id</td>
     <td>0..*</td>
     <td>UKCoreEncounter.identifier</td>
@@ -85,11 +103,17 @@ Patient "1" *-- "many" ServiceRequest : has
   </tr>
 </thead>
 <tbody>
-  <tr>
+<tr>
     <td>appointment_made</td>
     <td>1..1</td>
     <td>UKCoreAppointment.status</td>
     <td>Type: Code.<br>Whether an appointment was made for a subject to be screened </td>
+</tr>
+<tr>
+    <td>appointment participant</td>
+    <td>1..1</td>
+    <td>UKCoreAppointment.participant:actor</td>
+    <td>Participants involved in appointment</td>
 </tr>
 <tr>
     <td>date_of_foa</td>
@@ -135,7 +159,20 @@ Patient "1" *-- "many" ServiceRequest : has
     <th>Notes</th>
   </tr>
 </thead>
-<tbody>
+<tbody> 
+<tr>
+    <td>status</td>
+    <td>1..1</td>
+    <td>UKCoreProcedure.status</td>
+    <td>preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown</td>
+</tr>
+ <tr>
+    <td>subject</td>
+    <td>1..1</td>
+    <td>UKCoreProcedure.subject</td>
+    <td>Who the procedure was performed on</td>
+</tr>
+
   <tr>
     <td>date_of_as</td>
     <td>0..1</td>
@@ -175,6 +212,24 @@ Patient "1" *-- "many" ServiceRequest : has
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td>status</td>
+    <td>1..1</td>
+    <td>UKCoreServiceRequest.status</td>
+    <td>draft | active | on-hold | revoked | completed | entered-in-error | unknown</td>
+</tr>
+  <tr>
+    <td>intent</td>
+    <td>1..1</td>
+    <td>UKCoreServiceRequest.intent</td>
+    <td>proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option</td>
+</tr>
+  <tr>
+    <td>subject</td>
+    <td>1..1</td>
+    <td>UKCoreServiceRequest.subject</td>
+    <td>Individual or Entity the service is ordered for</td>
+</tr>
   <tr>
     <td>episode_type</td>
     <td>0..*</td>
@@ -219,6 +274,12 @@ Patient "1" *-- "many" ServiceRequest : has
     <td>0..1</td>
     <td>UKCoreCarePlan.category.coding.display</td>
     <td>Type: String.<br>This is the description for the data attribute: Final_action_code</td>
+</tr>
+<tr>
+    <td>care plan encounter</td>
+    <td>0..1</td>
+    <td>UKCoreCarePlan.encounter(reference)</td>
+    <td>Encounter created as part of</td>
 </tr>
 </tbody>
 </table>
@@ -364,6 +425,24 @@ Patient "1" *-- "many" ServiceRequest : has
   </tr>
 </thead>
 <tbody>
+<tr>
+    <td>status</td>
+    <td>1..1</td>
+    <td>UKCoreObservation.status</td>
+    <td>registered | preliminary | final | amended +</td>
+</tr>
+<tr>
+    <td>code</td>
+    <td>1..1</td>
+    <td>UKCoreObservation.code</td>
+    <td>Type of observation (code / type)</td>
+</tr>
+<tr>
+    <td>subject</td>
+    <td>0..1</td>
+    <td>UKCoreObservation.subject</td>
+    <td>Who and/or what the observation is about</td>
+</tr>
 <tr>
     <td>gene_code</td>
     <td>0..1</td>
