@@ -3,7 +3,7 @@
 The long-term goal is that once this standard is complete, GP’s and suppliers will be able to use this standard as a way of ‘connecting’ to each other accurately without a loss of data and decrease time of the migration process.
 
 <p>Below is a diagram showing some data elements from the PCDS:</p>
-{{render:PCDS diagram.png}}
+{{render:Sample PCDS Diagram.png}}
 
 <p>Please note this is just an example and not all data elements are shown.</p>
 
