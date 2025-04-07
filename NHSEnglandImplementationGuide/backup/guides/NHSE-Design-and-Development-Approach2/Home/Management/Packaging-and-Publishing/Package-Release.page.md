@@ -1,11 +1,11 @@
 ## {{page-title}}
 
-Prerequisites
-Ensure the following has been checks have been completed:
+### Prerequisites  
+Ensure the following checks have been completed:
 
 - All relevant Jira tickets are complete
 - Ensure all GitHub PR's are complete
-- Merge develop (hotfix) into relevant main (release)
+- Merge develop (hotfix/release) into relevant main (release) branch
 
 ### Publishing a Package
 
