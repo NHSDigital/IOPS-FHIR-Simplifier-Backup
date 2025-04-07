@@ -1,10 +1,10 @@
 ## Package Release
 
 ### Prerequisites
-Ensure the following has been checks have been completed:
+Ensure the following checks have been completed:
 -	All relevant Jira tickets are complete
 -	Ensure all GitHub PR's are complete
--	Merge develop (hotfix) into relevant main (release)
+-	Merge develop (hotfix/release) into relevant main (release) branch
 
 ### Bake Command
 Ensure the package.bake.yml is configured to add snapshots to Profiles. See Simplifier's <a href="https://docs.fire.ly/projects/Simplifier/data_governance_and_quality_control/simplifierPackages.html#bake-pipeline">Bake PipeLine</a> and <a href="https://simplifier.net/docs/bake">Bake Syntax for more details</a>.
