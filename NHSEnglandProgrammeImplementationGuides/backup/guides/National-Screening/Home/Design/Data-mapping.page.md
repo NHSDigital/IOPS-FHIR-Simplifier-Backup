@@ -264,6 +264,24 @@ Patient "1" *-- "many" ServiceRequest : has
 </thead>
 <tbody>
   <tr>
+    <td>status</td>
+    <td>1..1</td>
+    <td>UKCoreCarePlan.status</td>
+    <td>draft | active | on-hold | revoked | completed | entered-in-error | unknown</td>
+</tr>
+  <tr>
+    <td>intent</td>
+    <td>1..1</td>
+    <td>UKCoreCarePlan.intent</td>
+    <td>proposal | plan | order | option</td>
+</tr>
+  <tr>
+    <td>subject</td>
+    <td>1..1</td>
+    <td>UKCoreCarePlan.subject</td>
+    <td>Who the care plan is for</td>
+</tr>
+  <tr>
     <td>final_action_code</td>
     <td>0..*</td>
     <td>UKCoreCarePlan.category</td>
@@ -296,6 +314,18 @@ Patient "1" *-- "many" ServiceRequest : has
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td>type</td>
+    <td>1..1</td>
+    <td>Group.type</td>
+    <td>person | animal | practitioner | device | medication | substance</td>
+</tr>
+  <tr>
+    <td>actual</td>
+    <td>1..1</td>
+    <td>Group.actual</td>
+    <td>Descriptive or actual</td>
+</tr>
   <tr>
     <td>bso_organisation_code</td>
     <td>0..1</td>
@@ -356,6 +386,18 @@ Patient "1" *-- "many" ServiceRequest : has
   </tr>
 </thead>
 <tbody>
+<tr>
+    <td>status</td>
+    <td>1..1</td>
+    <td>UKCoreFlag.status</td>
+    <td>active | inactive | entered-in-error</td>
+</tr>
+<tr>
+    <td>subject</td>
+    <td>1..1</td>
+    <td>UKCoreFlag.subject</td>
+    <td>Who/What is flag about?</td>
+</tr>
 <tr>
     <td>subject_status_code</td>
     <td>1..1</td>
@@ -492,6 +534,30 @@ Patient "1" *-- "many" ServiceRequest : has
 </thead>
 <tbody>
 <tr>
+    <td>type</td>
+    <td>1..1</td>
+    <td>UKCoreAuditEvent.type</td>
+    <td>Type/identifier of event</td>
+</tr>
+<tr>
+    <td>recorded</td>
+    <td>1..1</td>
+    <td>UKCoreAuditEvent.recorded</td>
+    <td>Time when the event was recorded</td>
+</tr>
+<tr>
+    <td>agent</td>
+    <td>1..*</td>
+    <td>UKCoreAuditEvent.agent</td>
+    <td>Actor involved in the event</td>
+</tr>
+<tr>
+    <td>source</td>
+    <td>1..*</td>
+    <td>UKCoreAuditEvent.source</td>
+    <td>Audit Event Reporter</td>
+</tr>
+<tr>
     <td>record_insert_date_time</td>
     <td>1..1</td>
     <td>UKCoreAuditEvent.recorded</td>
@@ -500,7 +566,7 @@ Patient "1" *-- "many" ServiceRequest : has
 <tbody>
 </table>
 
-### Meta [Resource]
+### Meta [Resource meta tags on all FHIR resources]
 
 <table class="assets">
 <thead>
