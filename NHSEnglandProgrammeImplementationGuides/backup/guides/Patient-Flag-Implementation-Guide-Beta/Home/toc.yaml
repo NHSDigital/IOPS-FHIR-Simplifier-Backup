@@ -10,5 +10,7 @@
   filename: FHIR-Assets
 - name: Examples
   filename: Examples
+- name: Use Cases v2
+  filename: Use-Cases-v2
 - name: Help-and-support
   filename: Help-and-support
