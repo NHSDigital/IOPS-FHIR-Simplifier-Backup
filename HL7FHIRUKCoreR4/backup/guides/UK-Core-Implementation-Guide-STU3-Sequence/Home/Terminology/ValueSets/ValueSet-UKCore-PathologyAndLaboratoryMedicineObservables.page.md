@@ -4,4 +4,4 @@ issue: ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables
 ---
 ## UK Core Pathology And Laboratory Medicine Observables
 
-{{page:ValueSetTemplate}}
+{{page:ValueSetTemplate_new}}
