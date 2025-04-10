@@ -10,7 +10,7 @@
   filename: Build
 - name: Examples
   filename: Examples
-- name: Downloads
-  filename: Downloads
+- name: GP Connect Comparison
+  filename: GP-Connect-Comparison
 - name: Help and support
   filename: Help-and-support
