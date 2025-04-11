@@ -66,3 +66,5 @@
   filename: Extension-Extension-CareConnect-GPC-ResidentialStatus-1
 - name: 'Extension: Extension-CareConnect-GPC-TreatmentCategory-1'
   filename: Extension-Extension-CareConnect-GPC-TreatmentCategory-1
+- name: Extension-GPConnect-MedicationTradeFamily-1
+  filename: Extension-GPConnect-MedicationTradeFamily-1
