@@ -29,6 +29,47 @@ res <.. ret : include
 @enduml
 </plantuml>
 
+#### Name
+
+*Name*
+
+#### User Story Summary (Clinical Overview)
+
+*User Story Summary (Clinical Overview)*
+
+#### Actors (Role)
+
+*Actors (Role)*
+
+#### Frequency of Use
+
+*Frequency of Use*
+
+#### Triggers
+
+*Triggers*
+
+#### Pre Conditions
+
+*Pre Conditions*
+
+#### Post Conditions
+
+*Post Conditions*
+
+#### Main Course
+
+*Main Course*
+
+#### Alternate Course
+
+*Alternate Course*
+
+#### Exception
+
+*Exception*
+
+
 ### System Interaction
 
 <plantuml>

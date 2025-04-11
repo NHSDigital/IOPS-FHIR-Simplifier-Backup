@@ -30,6 +30,48 @@ record <.. add : include
 @enduml
 </plantuml>
 
+
+#### Name
+
+*Name*
+
+#### User Story Summary (Clinical Overview)
+
+*User Story Summary (Clinical Overview)*
+
+#### Actors (Role)
+
+*Actors (Role)*
+
+#### Frequency of Use
+
+*Frequency of Use*
+
+#### Triggers
+
+*Triggers*
+
+#### Pre Conditions
+
+*Pre Conditions*
+
+#### Post Conditions
+
+*Post Conditions*
+
+#### Main Course
+
+*Main Course*
+
+#### Alternate Course
+
+*Alternate Course*
+
+#### Exception
+
+*Exception*
+
+
 ### System Interactions
 
 The practitioner decides to record patient flag information that has associated resources.
