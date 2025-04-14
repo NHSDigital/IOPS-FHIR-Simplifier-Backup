@@ -10,3 +10,5 @@
   filename: ValueSet-GPConnect-ReferralUrgency-1
 - name: 'ValueSet: GPConnect-RequestPriority-1'
   filename: ValueSet-GPConnect-RequestPriority-1
+- name: 'ValueSet: Care Connect Prescription Type'
+  filename: ValueSet-Care-Connect-Prescription-Type

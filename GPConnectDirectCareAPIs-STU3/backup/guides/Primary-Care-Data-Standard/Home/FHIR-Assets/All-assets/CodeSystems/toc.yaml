@@ -8,3 +8,5 @@
   filename: CodeSystem-GPConnect-ParticipantType-1
 - name: 'CodeSystem: GPConnect-ReferralUrgency-1'
   filename: CodeSystem-GPConnect-ReferralUrgency-1
+- name: 'CodeSystem: Care Connect Prescription Type'
+  filename: CodeSystem-Care-Connect-Prescription-Type
