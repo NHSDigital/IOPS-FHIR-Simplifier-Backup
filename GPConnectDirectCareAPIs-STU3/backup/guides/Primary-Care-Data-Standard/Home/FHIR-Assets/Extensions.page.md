@@ -18,4 +18,5 @@
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-GPC-ReligiousAffiliation-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-GPC-ResidentialStatus-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-GPC-TreatmentCategory-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-GPConnect-MedicationTradeFamily-1}}
 
