@@ -11,5 +11,5 @@ Data Standard(PCDS) including how it works, what it is, and how it can be used.<
 - {{pagelink:Home/FHIR-Assets/All-assets}} is a link to the complete directory of FHIR assets that are used in the PCDS
 - {{pagelink:Home/Design/Data-model-principles}} is a page dedicated to provide all of the terminologies, data model principles and guidance
 - {{pagelink:Home/Build}} is all about how to build using FHIR
-- {{pagelink:Home/Examples}} is showing examples of how the PCDS works
-
+- {{pagelink:Home/Examples}} contains examples of how the PCDS works
+- {{pagelink:Home/GP-Connect-Comparison/Profile-Comparison-draft-intro.page.md}} is a page that illustrates the differences, in terms of profiles, between GP Connect and the PCDS 

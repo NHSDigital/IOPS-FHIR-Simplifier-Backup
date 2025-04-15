@@ -18,5 +18,16 @@
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-GPC-ReligiousAffiliation-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-GPC-ResidentialStatus-1}}
 - {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-GPC-TreatmentCategory-1}}
-- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-GPConnect-MedicationTradeFamily-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-GPConnect-MedicationTradeFamily-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-VaccinationProcedure-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-AnaestheticIssues-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-GPConnect-AppointmentCancellationReason-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-GPConnect-BookingOrganisation-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-GPConnect-DeliveryChannel-2}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-OutcomeOfAttendance-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-AdmissionMethod-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-CareConnect-DischargeMethod-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-GPConnect-ReferralRequestMethod-1}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-birthPlace}}
+- {{pagelink:Home/FHIR-Assets/All-assets/Extensions/Extension-Extension-patient-cadavericDonor}}
 

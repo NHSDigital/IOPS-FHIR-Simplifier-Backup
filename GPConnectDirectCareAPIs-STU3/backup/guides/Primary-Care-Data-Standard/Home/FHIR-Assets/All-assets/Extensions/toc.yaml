@@ -66,5 +66,27 @@
   filename: Extension-Extension-CareConnect-GPC-ResidentialStatus-1
 - name: 'Extension: Extension-CareConnect-GPC-TreatmentCategory-1'
   filename: Extension-Extension-CareConnect-GPC-TreatmentCategory-1
-- name: Extension-GPConnect-MedicationTradeFamily-1
-  filename: Extension-GPConnect-MedicationTradeFamily-1
+- name: 'Extension: Extension-GPConnect-MedicationTradeFamily-1'
+  filename: Extension-Extension-GPConnect-MedicationTradeFamily-1
+- name: 'Extension: Extension-CareConnect-VaccinationProcedure-1'
+  filename: Extension-Extension-CareConnect-VaccinationProcedure-1
+- name: 'Extension: Extension-CareConnect-AnaestheticIssues-1'
+  filename: Extension-Extension-CareConnect-AnaestheticIssues-1
+- name: 'Extension: Extension-GPConnect-AppointmentCancellationReason-1'
+  filename: Extension-Extension-GPConnect-AppointmentCancellationReason-1
+- name: 'Extension: Extension-GPConnect-BookingOrganisation-1'
+  filename: Extension-Extension-GPConnect-BookingOrganisation-1
+- name: 'Extension: Extension-GPConnect-DeliveryChannel-2'
+  filename: Extension-Extension-GPConnect-DeliveryChannel-2
+- name: 'Extension: Extension-CareConnect-OutcomeOfAttendance-1'
+  filename: Extension-Extension-CareConnect-OutcomeOfAttendance-1
+- name: 'Extension: Extension-CareConnect-AdmissionMethod-1'
+  filename: Extension-Extension-CareConnect-AdmissionMethod-1
+- name: 'Extension: Extension-CareConnect-DischargeMethod-1'
+  filename: Extension-Extension-CareConnect-DischargeMethod-1
+- name: 'Extension: Extension-GPConnect-ReferralRequestMethod-1'
+  filename: Extension-Extension-GPConnect-ReferralRequestMethod-1
+- name: 'Extension: Extension-birthPlace'
+  filename: Extension-Extension-birthPlace
+- name: 'Extension: Extension-patient-cadavericDonor'
+  filename: Extension-Extension-patient-cadavericDonor

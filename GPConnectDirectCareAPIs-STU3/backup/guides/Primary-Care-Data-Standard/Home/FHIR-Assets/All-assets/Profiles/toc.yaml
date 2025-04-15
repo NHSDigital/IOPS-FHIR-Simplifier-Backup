@@ -1,9 +1,5 @@
 - name: 'Profile: CareConnect-GPC-AllergyIntolerance-1'
   filename: Profile-CareConnect-GPC-AllergyIntolerance-1
-- name: 'Profile: CareConnect-GPC-Appointment-1'
-  filename: Profile-CareConnect-GPC-Appointment-1
-- name: 'Profile: CareConnect-GPC-ClinicalImpression-1 (not used)'
-  filename: Profile-CareConnect-GPC-ClinicalImpression-1-not-used
 - name: 'Profile: CareConnect-GPC-Composition-1'
   filename: Profile-CareConnect-GPC-Composition-1
 - name: 'Profile: CareConnect-GPC-Condition-1'
