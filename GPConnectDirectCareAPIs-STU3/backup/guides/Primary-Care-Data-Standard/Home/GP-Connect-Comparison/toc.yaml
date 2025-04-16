@@ -1,5 +1,5 @@
-- name: Profile Comparison (draft/intro)
-  filename: Profile-Comparison-draft-intro.page.md
+- name: Comparison Introduction
+  filename: Comparison-Introduction.page.md
 - name: Profile Comparison (A-H)
   filename: Profile-Comparison-A-H.page.md
 - name: Profile Comparison (I-P)
