@@ -3,6 +3,8 @@ subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.
 issue: Extension-UKCore-DiagnosticReportMediaLink
 ---
 
+<div class="NewAddedItem">
+<h2> StructureDefinition {{variable:issue}} </h2>
 
 
 <table id="addToTranspose">
@@ -11,6 +13,7 @@ issue: Extension-UKCore-DiagnosticReportMediaLink
 </tr>
 
 </table>
+
 
 {{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
 
@@ -22,6 +25,6 @@ issue: Extension-UKCore-DiagnosticReportMediaLink
 </div>
 <h3 id="guidance-diagnosticreportcomposition">Extension Specific Guidance</h3>
 With <code>DiagnosticReport.media.link</code> being a mandatory element, the value SHALL be the extension <a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason">http://hl7.org/fhir/StructureDefinition/data-absent-reason</a> with the valueCode of <code>unsupported</code>. See the example for more details.
-
+</div>
 
 ---
