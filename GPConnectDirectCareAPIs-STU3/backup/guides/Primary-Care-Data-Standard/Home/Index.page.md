@@ -12,4 +12,4 @@ Data Standard(PCDS) including how it works, what it is, and how it can be used.<
 - {{pagelink:Home/Design/Data-model-principles}} is a page dedicated to provide all of the terminologies, data model principles and guidance
 - {{pagelink:Home/Build}} is all about how to build using FHIR
 - {{pagelink:Home/Examples}} contains examples of how the PCDS works
-- {{pagelink:Home/GP-Connect-Comparison/Profile-Comparison-draft-intro.page.md}} is a page that illustrates the differences, in terms of profiles, between GP Connect and the PCDS 
+- {{pagelink:Home/GP-Connect-Comparison/Comparison-Introduction.page.md}} is a page that illustrates the differences, in terms of profiles, between GP Connect and the PCDS 
