@@ -2,3 +2,5 @@
   filename: Index.page.md
 - name: 1.0.0-public-beta
   filename: 1.0.0-public-beta.page.md
+- name: PCDS-example
+  filename: PCDS-example.page.md

@@ -1,5 +1,15 @@
 ## {{page-title}}
 
+## Allergy Intolerance
+The following elements are present in GP Connect, but not used in the PCDS:
+
+- AllergyIntolerance.onset
+- AllergyIntolerance.recorder
+- AllergyIntolerance.asserter
+- AllergyIntolerance.lastOccurrence
+
+***
+
 ## Composition
 The following elements are present in GP Connect, but not used in the PCDS:
 
