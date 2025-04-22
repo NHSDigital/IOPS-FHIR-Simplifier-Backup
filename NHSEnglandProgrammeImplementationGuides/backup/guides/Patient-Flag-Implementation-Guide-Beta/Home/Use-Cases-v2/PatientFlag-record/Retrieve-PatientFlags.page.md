@@ -29,7 +29,7 @@ res <.. ret : include
 
 #### Name
 
-*Name*
+Retrieve PatientFlags
 
 #### User Story Summary (Clinical Overview)
 
@@ -37,36 +37,42 @@ res <.. ret : include
 
 #### Actors (Role)
 
-*Actors (Role)*
+Practitioner
+PatientFlag FHIR API
+PatientFlag FHIR Repository
 
 #### Frequency of Use
 
-*Frequency of Use*
+As needed
 
 #### Triggers
 
-*Triggers*
+Practitioner needs to see PatientFlags
 
 #### Pre Conditions
 
-*Pre Conditions*
+Practitioner knows NHSNumber and/or Patient details
 
 #### Post Conditions
 
-*Post Conditions*
+Practitioner knows PatientFlags exist (or don't)
 
 #### Main Course
 
-*Main Course*
+1. Practitioner queries PatientFlag FHIR API with Patient NHSNumber
+2. PatientFlag FHIR API queries PatientFlag FHIR Repository for PatientFlag records for Patient NHSNumber
+3. PatientFlag FHIR Repository finds PatientFlag records for Patient NHSNumber
+4. PatientFlag FHIR API returns PatientFlag records as searchset bundle to Practitioner
 
 #### Alternate Course
 
-*Alternate Course*
+3a. PatientFlag FHIR Repository finds no PatientFlag records for Patient NHSNumber
+4a. PatientFlag FHIR API returns zero record searchset bundle to Practitioner
 
 #### Exception
 
-*Exception*
-
+3b. PatientFlag FHIR API fails to find Patient NHSNumber
+4b. PatientFlag FHIR API returns business exception OperationOutcome
 
 ### System Interaction
 
