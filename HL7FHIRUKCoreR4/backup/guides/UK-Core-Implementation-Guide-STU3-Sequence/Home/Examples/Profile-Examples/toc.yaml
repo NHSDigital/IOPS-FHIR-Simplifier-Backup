@@ -56,42 +56,6 @@
   filename: UKCore-Encounter-InpatientEncounter-Example.page.md
 - name: UKCore-EpisodeOfCare-SmokingCessationTherapy-Example
   filename: UKCore-EpisodeOfCare-SmokingCessationTherapy-Example.page.md
-- name: UKCore-Extension-CodingSCT-CodeUnknown-Example
-  filename: UKCore-Extension-CodingSCT-CodeUnknown-Example.page.md
-- name: UKCore-Extension-CodingSCT-Heart-Example
-  filename: UKCore-Extension-CodingSCT-Heart-Example.page.md
-- name: UKCore-Extension-CodingSCT-IllicitDrugs-Example
-  filename: UKCore-Extension-CodingSCT-IllicitDrugs-Example.page.md
-- name: 'UKCore-Extension-CodingSCT-MoleOfSkin-Example '
-  filename: UKCore-Extension-CodingSCT-MoleOfSkin-Example.page.md
-- name: UKCore-Extension-CodingSCT-Myocardial-Example
-  filename: UKCore-Extension-CodingSCT-Myocardial-Example.page.md
-- name: UKCore-Extension-CodingSCT-Potassium-Example
-  filename: UKCore-Extension-CodingSCT-Potassium-Example.page.md
-- name: UKCore-Extension-CodingSCT-Weight-Example
-  filename: UKCore-Extension-CodingSCT-Weight-Example.page.md
-- name: UKCore-Extension-ContainerBackports-Example
-  filename: UKCore-Extension-ContainerBackports-Example.page.md
-- name: UKCore-Extension-EffectivePeriod-Example
-  filename: UKCore-Extension-EffectivePeriod-Example.page.md
-- name: 'UKCore-Extension-MedicalApplianceSupplier-Example '
-  filename: UKCore-Extension-MedicalApplianceSupplier-Example.page.md
-- name: UKCore-Extension-MedicationChangeSummary-Example
-  filename: UKCore-Extension-MedicationChangeSummary-Example.page.md
-- name: UKCore-Extension-MedicationStatementLastIssueDate-Example
-  filename: UKCore-Extension-MedicationStatementLastIssueDate-Example.page.md
-- name: UKCore-Extension-OverseasVisitorChargingCategory-Example
-  filename: UKCore-Extension-OverseasVisitorChargingCategory-Example.page.md
-- name: UKCore-Extension-Period-Example
-  filename: UKCore-Extension-Period-Example.page.md
-- name: UKCore-Extension-PreferredDispenserOrganization-Example
-  filename: UKCore-Extension-PreferredDispenserOrganization-Example.page.md
-- name: UKCore-Extension-ResponseRequest-Example
-  filename: UKCore-Extension-ResponseRequest-Example.page.md
-- name: UKCore-Extension-SubscriptionParameters-Example
-  filename: UKCore-Extension-SubscriptionParameters-Example.page.md
-- name: UKCore-Extension-Translation-Example
-  filename: UKCore-Extension-Translation-Example.page.md
 - name: UKCore-FamilyMemberHistory-FatherDiabetes-Example
   filename: UKCore-FamilyMemberHistory-FatherDiabetes-Example.page.md
 - name: 'UKCore-Flag-FoodAllergy-Example '
@@ -130,6 +94,8 @@
   filename: UKCore-MedicationDispense-CiprofloxacinOral-Example.page.md
 - name: UKCore-MedicationDispense-EyeDrops-Example
   filename: UKCore-MedicationDispense-EyeDrops-Example.page.md
+- name: UKCore-MedicationDispense-ParacetamolOral-Example
+  filename: UKCore-MedicationDispense-ParacetamolOral-Example.page.md
 - name: UKCore-MedicationRequest-Amoxicillin-Example
   filename: UKCore-MedicationRequest-Amoxicillin-Example.page.md
 - name: UKCore-MedicationRequest-CiprofloxacinIV-Example
@@ -218,8 +184,28 @@
   filename: UKCore-Procedure-ExaminationOfSkin-Example.page.md
 - name: 'UKCore-Provenance-RARecordConsent-Example '
   filename: UKCore-Provenance-RARecordConsent-Example.page.md
+- name: UKCore-Questionnaire-EOLPlan-Example
+  filename: UKCore-Questionnaire-EOLPlan-Example.page.md
+- name: 'UKCore-Questionnaire-FitnessForWork-Example '
+  filename: UKCore-Questionnaire-FitnessForWork-Example.page.md
+- name: UKCore-Questionnaire-InpatientSurvey-Example
+  filename: UKCore-Questionnaire-InpatientSurvey-Example.page.md
+- name: UKCore-QuestionnaireResponse-BabyPatientSurvey-Example
+  filename: UKCore-QuestionnaireResponse-BabyPatientSurvey-Example.page.md
+- name: 'UKCore-QuestionnaireResponse-EOLPlan-Example '
+  filename: UKCore-QuestionnaireResponse-EOLPlan-Example.page.md
+- name: UKCore-QuestionnaireResponse-FitnessForWork-Example
+  filename: UKCore-QuestionnaireResponse-FitnessForWork-Example.page.md
+- name: UKCore-QuestionnaireResponse-InpatientSurvey-Example
+  filename: UKCore-QuestionnaireResponse-InpatientSurvey-Example.page.md
 - name: UKCore-RelatedPerson-JoySmith-Example
   filename: UKCore-RelatedPerson-JoySmith-Example.page.md
+- name: 'UKCore-RequestGroup-Ciprofloxacin-Example '
+  filename: UKCore-RequestGroup-Ciprofloxacin-Example.page.md
+- name: UKCore-RequestGroup-MultipleAnitibiotics-Example
+  filename: UKCore-RequestGroup-MultipleAnitibiotics-Example.page.md
+- name: UKCore-RequestGroup-Paracetamol-Example
+  filename: UKCore-RequestGroup-Paracetamol-Example.page.md
 - name: UKCore-Schedule-Immunization-Example
   filename: UKCore-Schedule-Immunization-Example.page.md
 - name: UKCore-ServiceRequest-ColonoscopyRequest-Example
@@ -228,6 +214,8 @@
   filename: UKCore-ServiceRequest-CTChestScan-Example.page.md
 - name: UKCore-ServiceRequest-ECG-Example
   filename: UKCore-ServiceRequest-ECG-Example.page.md
+- name: UKCore-ServiceRequest-HipReplacement-Example
+  filename: UKCore-ServiceRequest-HipReplacement-Example.page.md
 - name: UKCore-ServiceRequest-Lab-CReactiveProtein-Example
   filename: UKCore-ServiceRequest-Lab-CReactiveProtein-Example.page.md
 - name: UKCore-Slot-AvailableWalkInVisit-Example
@@ -236,5 +224,7 @@
   filename: UKCore-Specimen-BloodSpecimen-Example.page.md
 - name: UKCore-Specimen-UrineSpecimen-Example
   filename: UKCore-Specimen-UrineSpecimen-Example.page.md
-- name: UKCore-MedicationDispense-ParacetamolOral-Example
-  filename: UKCore-MedicationDispense-ParacetamolOral-Example.page.md
+- name: UKCore-Task-Colonoscopy-Example
+  filename: UKCore-Task-Colonoscopy-Example.page.md
+- name: UKCore-VitalSigns-Observation-OxygenSaturation
+  filename: UKCore-VitalSigns-Observation-OxygenSaturation.page.md
