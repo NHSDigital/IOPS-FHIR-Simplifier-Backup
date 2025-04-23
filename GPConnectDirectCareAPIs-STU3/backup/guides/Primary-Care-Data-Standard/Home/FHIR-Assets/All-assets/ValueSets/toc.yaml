@@ -12,3 +12,21 @@
   filename: ValueSet-GPConnect-RequestPriority-1
 - name: 'ValueSet: Care Connect Prescription Type'
   filename: ValueSet-Care-Connect-Prescription-Type
+- name: 'ValueSet: CareConnect Observation Interpretation'
+  filename: ValueSet-CareConnect-Observation-Interpretation
+- name: 'ValueSet: GPConnect-ReferralRequestMethod-1'
+  filename: ValueSet-GPConnect-ReferralRequestMethod-1
+- name: 'ValueSet: Care Connect Human Language'
+  filename: ValueSet-Care-Connect-Human-Language
+- name: 'ValueSet: Care Connect Residential Status'
+  filename: ValueSet-Care-Connect-Residential-Status
+- name: 'ValueSet: Care Connect Registration Type'
+  filename: ValueSet-Care-Connect-Registration-Type
+- name: 'ValueSet: Care Connect Registration Status'
+  filename: ValueSet-Care-Connect-Registration-Status
+- name: 'ValueSet: Care Connect Treatment Category'
+  filename: ValueSet-Care-Connect-Treatment-Category
+- name: 'ValueSet: Document Type'
+  filename: ValueSet-Document-Type
+- name: 'ValueSet: AllergyIntoleranceSeverity'
+  filename: ValueSet-AllergyIntoleranceSeverity
