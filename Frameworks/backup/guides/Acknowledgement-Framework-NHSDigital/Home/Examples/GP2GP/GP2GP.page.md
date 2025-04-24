@@ -46,6 +46,91 @@ This use case uses the Messaging paradigm within FHIR.
 
 **As an** NME GP Practice user at the provider site (losing practice) sending a patient record to another NME GP practice via GP Connect,<br />
 **I want** to know if the transfer has been successful, but some documents have not transferred, and which specific documents,<br />
-So that I can print and ensure they are sent via Primary Care Support England (PCSE).
+**So that** I can print and ensure they are sent via Primary Care Support England (PCSE).
 
+**Acceptable Criteria:**
+
+**Given** a patient is transferring from GP Practice A to GP Practice B,<br />
+**And** GP Practice B requests the patient’s electronic GP record from GP Practice A,<br />
+**And** GP Practice A successfully sends the electronic GP record to GP Practice B,<br />
+**When** GP Practice B retrieves each referenced document via GP Connect Get Document,<br />
+**Then** each document retrieval shall receive either a success or failure acknowledgement,<br />
+**And** GP Practice A shall be notified electronically which document(s) could not be retrieved by GP Practice B,<br />
+**And** the identified document(s) must be sent manually by post to GP Practice B.
+
+### Failed GP2GP Record Transfer
+
+**As an** NME GP Practice user at the provider site (losing practice) sending a patient record to another NME GP practice via GP Connect,<br />
+**I want** to know if the GP2GP record transfer has failed,<br />
+**So that** I am aware that it is not complete.
+
+**Acceptable Criteria:**
+
+**Given** a patient is transferring from GP Practice A to GP Practice B,<br />
+**And** GP Practice B requests the patient’s electronic GP record from GP Practice A,<br />
+**When** GP Practice B is unable to receive and integrate the electronic GP record into its clinical system,<br />
+**Then** GP Practice B shall send an electronic notification/acknowledgement to GP Practice A confirming that the GP2GP record transfer has failed,<br />
+**And** if any document retrieval attempts were made before the failure, each must have a corresponding success or failure acknowledgement.
+
+## Sequence Diagrams
+
+### Success / Failure of Structured Patient Record
+
+<plantuml>
+@startuml
+
+actor "Receiving GP System (NME)" as GPB
+actor "Sending GP System (NME)" as GPA
+participant "MESH" as MESH
+participant "GP Connect" as GPC
+
+== Main Course: Successful Transfer ==
+GPB -> GPC: Request GP2GP record transfer
+GPC -> GPA: Forward request
+GPA -> GPC: Send patient record
+GPC -> GPB: Deliver patient record
+GPB -> GPB: Integrate record into clinical system
+GPB -> MESH: Generate and send success acknowledgement
+MESH -> GPA: Deliver success acknowledgement
+GPA -> GPA: Mark transfer as complete
+
+== Exception: Failure ==
+GPB -> GPB: Attempt to integrate record
+GPB -> GPB: Fails due to validation/system error
+GPB -> MESH: Generate and send failure acknowledgement
+MESH -> GPA: Deliver failure acknowledgement
+GPA -> GPA: Creates a task to print and send the full record maunually.
+
+@enduml
+</plantuml>
+
+### Notification for Missing Documents in Transfer
+
+<plantuml>
+@startuml
+
+actor "Receiving GP System (NME)" as GPB
+actor "Sending GP System (NME)" as GPA
+participant "MESH" as MESH
+participant "GP Connect" as GPC
+
+== Main Course: Successful Document Transfer ==
+GPB -> GPC: Request document transfer
+GPC -> GPA: Forward document request
+GPA -> GPC: Send document(s)
+GPC -> GPB: Deliver document(s)
+GPB -> GPB: Validate and attach document(s) to patient record
+GPB -> MESH: Send document success acknowledgement
+MESH -> GPA: Deliver success acknowledgement
+GPA -> GPA: Mark document transfer as complete
+
+== Exception: Failure ==
+GPB -> GPB: Attempt to validate document(s)
+GPB -> GPB: Fails due to format/integrity error
+GPB -> MESH: Send document failure acknowledgement
+MESH -> GPA: Deliver failure acknowledgement
+GPA -> GPA: Creates a task to print and send the document(s) manually
+
+@enduml
+</plantuml>
 
