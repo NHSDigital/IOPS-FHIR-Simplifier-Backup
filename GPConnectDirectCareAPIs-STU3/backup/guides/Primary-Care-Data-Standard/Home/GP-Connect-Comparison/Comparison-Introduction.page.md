@@ -11,11 +11,4 @@ There are cases where the PCDS does not use some elements within certain GP Conn
 
 ***
 
-## Profile Name
-|header|header|header|header|
-|-
-|content|content|content|content|
-
-***
-
 {{index:Home/GP-Connect-Comparison}}

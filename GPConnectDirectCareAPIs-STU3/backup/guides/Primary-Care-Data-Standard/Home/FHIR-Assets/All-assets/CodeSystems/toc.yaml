@@ -10,3 +10,17 @@
   filename: CodeSystem-GPConnect-ReferralUrgency-1
 - name: 'CodeSystem: Care Connect Prescription Type'
   filename: CodeSystem-Care-Connect-Prescription-Type
+- name: 'CodeSystem: Care Connect Observation Interpretation'
+  filename: CodeSystem-Care-Connect-Observation-Interpretation
+- name: 'CodeSystem: GPConnect-ReferralRequestMethod'
+  filename: CodeSystem-GPConnect-ReferralRequestMethod
+- name: 'CodeSystem: Care Connect Human Language'
+  filename: CodeSystem-Care-Connect-Human-Language
+- name: 'CodeSystem: Care Connect Residential Status'
+  filename: CodeSystem-Care-Connect-Residential-Status
+- name: 'CodeSystem: Care Connect Registration Type'
+  filename: CodeSystem-Care-Connect-Registration-Type
+- name: 'CodeSystem: Care Connect Registration Status'
+  filename: CodeSystem-Care-Connect-Registration-Status
+- name: 'CodeSystem: Care Connect Treatment Category'
+  filename: CodeSystem-Care-Connect-Treatment-Category
