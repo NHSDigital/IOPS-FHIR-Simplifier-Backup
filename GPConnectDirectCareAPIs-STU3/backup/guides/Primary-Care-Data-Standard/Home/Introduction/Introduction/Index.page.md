@@ -1,8 +1,8 @@
 ## {{page-title}}
 
 This page will explain what the Primary Care Data Standard (PCDS) is and its purpose. 
-<p>The main goal for the PCDS is to ensure consistency, help ease the interoperability and boost efficiency across GP systems for a migration. 
-This workstream is dedicated to the production and maintenance of the PCDS with the support of the operational data to help bridge the gap between supplier-to-supplier migration for a GP.</p>
+<p>The main goal for the PCDS is to ensure consistency, improve interoperability and increase efficiency across GP systems for a migration. 
+This workstream is dedicated to the production and maintenance of the PCDS, with the support of the operational data, to help bridge the gap between supplier-to-supplier migration for a GP.</p>
 
 <p>To date, we’ve explored key areas including:</p>
 <ul>
