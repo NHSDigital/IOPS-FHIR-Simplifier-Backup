@@ -14,3 +14,5 @@
   filename: Remove-associated-resources.page.md
 - name: Remove a PatientFlag
   filename: Remove-a-PatientFlag.page.md
+- name: example
+  filename: example.page.md

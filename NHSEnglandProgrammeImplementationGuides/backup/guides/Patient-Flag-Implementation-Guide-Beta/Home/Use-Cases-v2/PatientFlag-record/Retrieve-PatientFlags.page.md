@@ -2,6 +2,7 @@
 
 ### Overview
 
+This page describes the use case where a Practitioner retrieves Patient Flag records for a given patient.
 For high level requirements, {{pagelink:Home}}.
 
 ### Use Case
@@ -33,13 +34,13 @@ Retrieve PatientFlags
 
 #### User Story Summary (Clinical Overview)
 
-*User Story Summary (Clinical Overview)*
+As a Practitioner, I want to retrieve Patient Flag records using a patient's NHSNumber, so that I can make informed clinical decisions based on flags that may impact care.
 
 #### Actors (Role)
 
-Practitioner
-PatientFlag FHIR API
-PatientFlag FHIR Repository
+Practitioner   - End user initiating the request to view PatientFlags
+PatientFlag FHIR API  - The API that serves PatientFlag FHIR resources
+PatientFlag FHIR Repository - The backend data store containing PatientFlag records.
 
 #### Frequency of Use
 
@@ -47,15 +48,17 @@ As needed
 
 #### Triggers
 
-Practitioner needs to see PatientFlags
+Practitioner initiates retrieval of PatientFlag records for a patient.
 
 #### Pre Conditions
 
-Practitioner knows NHSNumber and/or Patient details
+-> Practitioner is authorized to access PatientFlag data.
+
+-> Practitioner knows the patient's NHSNumber and/or details.
 
 #### Post Conditions
 
-Practitioner knows PatientFlags exist (or don't)
+-> Practitioner is informed whether PatientFlag records exist and is shown the relevant data if available.
 
 #### Main Course
 
