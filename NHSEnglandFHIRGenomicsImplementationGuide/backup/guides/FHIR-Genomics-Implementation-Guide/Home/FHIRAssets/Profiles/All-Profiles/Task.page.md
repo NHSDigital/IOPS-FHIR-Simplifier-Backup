@@ -401,6 +401,8 @@ For the full list of expected Task statuses in use by the GMS, please refer to t
 <h4 class='additional-Guidance-Submenu'> statusReason </h4>
 Reasons why a Task has been marked as on-hold, cancelled etc. SHOULD use the {{pagelink:Genomic-Task-StatusReason}} CodeSystem. NOTE: The list of appropriate statusReasons is pending finalization.
 
+If a code from the linked CodeSystem is not applicable, the code of `other` SHOULD be used, with a free text reason captured within Task.statusReason.text.
+
 ```json
 "statusReason": {
         "coding":  [
@@ -416,6 +418,8 @@ Reasons why a Task has been marked as on-hold, cancelled etc. SHOULD use the {{p
 <a name="businessStatus"></a>
 <h4 class='additional-Guidance-Submenu'> businessStatus </h4>
 Genomic specific business statuses for capturing more granular information as part of processing the task. SHOULD use the {{pagelink:Genomic-Business-Status}} CodeSystem. NOTE: The list of appropriate buinessStatuses is pending finalization. Mapping business statuses to the high level container Tasks and statuses is still ongoing.
+
+If a code from the linked CodeSystem is not applicable, the code of `other` SHOULD be used, with a free text status captured within Task.businessStatus.text.
 
 ```json
 "businessStatus": {
