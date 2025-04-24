@@ -7,9 +7,9 @@ expand: yes
 
 ## StructureDefinition {{variable:issue}}
 
-Only expected to be used for wrapping Record of Discussion resources within the WGS pathway. Consent for testing is implied through submission of a test to the Genomic Order Management service.
+Only expected to be used for wrapping Record of Discussion resources within the WGS pathway. Consent for testing is implied through submission of a test to the Genomic Order Management service. Consent for Data Access as part of the UGR SHOULD follow guidance provided within {{pagelink:Home/Build/Authentication/Consent}} and the [IHE PCF Framework](https://profiles.ihe.net/ITI/PCF/index.html).
 
-Only a minimal amount of mandatory information needs to be populated. 
+Only a minimal amount of mandatory information needs to be populated for Order Management recording of RoDs. 
 
 | Profile url | FHIR Module | Normative Status |
 |--
