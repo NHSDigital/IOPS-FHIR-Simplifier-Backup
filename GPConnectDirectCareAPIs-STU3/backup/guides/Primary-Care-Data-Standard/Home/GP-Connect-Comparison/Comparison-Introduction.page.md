@@ -11,4 +11,21 @@ There are cases where the PCDS does not use some elements within certain GP Conn
 
 ***
 
-{{index:Home/GP-Connect-Comparison}}
+Below is a list that shows all the GP Connect Profiles that have been used in creating the PCDS: 
+- {{pagelink:Home/GP-Connect-Comparison/Profile-Comparison-A-H.page.md}}
+    - Allergy Intolerance
+    - Composition
+    - Condition
+    - Diagnostic Report
+    - Document Reference
+    - Encounter
+- {{pagelink:Home/GP-Connect-Comparison/Profile-Comparison-I-O.page.md}}
+    - Immunization
+    - Medication Request 
+    - Medication Statement
+    - Observation
+    - Organization
+- {{pagelink:Home/GP-Connect-Comparison/Profile-Comparison-P-Z.page.md}}
+    - Patient
+    - Procedure Request
+    - Referral Request
