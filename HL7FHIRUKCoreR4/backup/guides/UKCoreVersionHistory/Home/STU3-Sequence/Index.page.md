@@ -22,6 +22,28 @@ topic: STU3Sequence
 <br>
 <b>General IG improvements:</b><br>
 <ul>
+<li>The following CodeSystem are new:
+<code>CodeSystem-UKCore-PeriodType</code>,
+<code>CodeSystem-RecordingSetting</code>,
+<code>CodeSystem-WithheldIdentityReason</code>
+</li>
+<li>The following CodeSystem are removed: <code>CodeSystem-UKCore-ConditionCategory</code>,
+<code>CodeSystem-UKCore-ConditionCategory</code>
+</li>
+<li>The following CodeSystem are retired : <code>CodeSystem-UKCore-ConsentUpdateMode</code>,
+<code>CodeSystem-UKCore-EPSIssueCode</code>,
+<code>CodeSystem-UKCore-HumanLanguage</code>,
+<code>CodeSystem-UKCore-ITKResponseCode</code>,
+<code>CodeSystem-UKCore-SpineErrorOrWarningCode</code>
+</li>
+<li>The following CodeSystem are inactive: <code>CodeSystem-UKCore-MedicationRequestCategory</code>,
+<code>CodeSystem-UKCore-ConditionCategory</code>
+</li>
+<li>New codes are added for :
+<code>CodeSystem-UKCore-RecordStandardHeadings</code>
+</li>
+<li>New codes are added for SMS: <code>CodeSystem-UKCore-PreferredContactMethod</code>
+</li>
 <li>Added MustSupport flag to <code>UKCore-Patient.managingOrganization</code>, to give IHE alignment</li>
 <li>Swap Example, ValueSet, CodeSystem, Extension, and Profile pages to use Simplifier templating</li>
 <li>Updated all examples to have text elements, to describe what they are used for, and render this via the Simplifier template</li>
@@ -37,11 +59,56 @@ topic: STU3Sequence
 <li>Clicking an element in the left-hand navigation list automatically displays the detailed view as per the above item</li>
 <li>Added configurable display options for displaying a UK Code profile within an iframe</li>
 <li>Added configurable display options to highlight specific sections of an example</li>
+<li><code>extension-Condition.bodyStructure</code>- backported from R6</li>
+<li><code>Extension-UKCore-DiagnosticReportNote</code> - backported </li>
+<li><code>Extension-UKCore-FamilyMemberHistoryParticipant</code> ,
+<code>Extension-UKCore-SpecimenCollectionCollector</code>
+- as backport renamed </li>
+<li><code>Extension-UKCore-Evidence</code>
+- DiagnosticReport added as target profile </li>
+<li>Updated datatypes in extensions<code> Extension-UKCore-AddressKey, Extension-UKCore-BirthSex,Extension-UKCore-ConditionEpisode, Extension-UKCore-DeliveryChannel, Extension-UKCore-ListWarningCode, Extension-UKCore-OtherContactSystem </code>using code or coding datatypes to CodeableConcept</li>
+<li>Updated extension binding strength from "preferred" to"extensible"  on <code> Extension-UKCore-AdmissionMethod, Extension-UKCore-DischargeMethod, Extension-UKCore-EthnicCategory, Extension-UKCore-LegalStatus, Extension-UKCore-OutcomeOfAttendance, Extension-UKCore-SampleCategory </code></li>
+<li>The following extensions are new:
+<code>Extension-UKCore-ConditionBodyStructure</code>,
+<code>Extension-UKCore-CuffSize</code>,
+<code>Extension-UKCore-DiagnosticReportMediaLink</code>,
+<code>Extension-UKCore-DiagnosticReportSupportingInfo</code>,
+<code>Extension-UKCore-ObservationBodyStructure</code>,
+<code>Extension-UKCore-PatientFetalStatus</code>,
+<code>Extension-UKCore-RecordingSetting</code>,
+<code>Extension-UKCore-SpecimenContainerDevice</code>,
+<code>Extension-UKCore-SpecimenContainerLocation</code>,
+<code>Extension-UKCore-SubscriptionContent</code>,
+<code>Extension-UKCore-SubscriptionParameter</code>,
+<code>Extension-UKCore-TypedPeriod</code>
+</li>
 <li><code>CodeSystem-UKCore-FundingCategory</code> - amended to replace develoved nations with the individual nations</li>
 <li><code>CodeSystem-UKCore-SampleCategory</code> - amended to add the concepts <code>solid-tumour</code>, <code>liquid-tumour</code> and <code>other</code></li>
-<li><code>extension-Condition.bodyStructure</code> - backported from R6
 <li><code>CodeSystem-UKCore-BiopsyState</code> - removed it and replaced it with <code>CodeSystem-UKCore-PrimarySampleState</code>
 <li><code>ValueSet-UKCore-BiopsyState</code> - removed it and replaced it with <code>ValueSet-UKCore-SampleState</code>
+
+<li>The following ValueSet are added:
+<code>ValueSet-UKCore-CompositionSectionCode</code></li>
+<li><code>ValueSet-UKCore-FundingCategory</code> - multiple codes amended</li> 
+<li>The following ValueSet are new:
+<code>ValueSet-UKCore-ConsentException</code>,
+<code>ValueSet-UKCore-OxygenSaturation</code>,
+<code>ValueSet-UKCore-PathologyAndLaboratoryMedicineObservables</code>,
+<code>ValueSet-UKCore-PathologyAndLaboratoryMedicineProcedures</code>,
+<code>ValueSet-UKCore-PeriodType</code>,
+<code>ValueSet-UKCore-RecordingSetting</code>,
+<code>ValueSet-UKCore-SampleState</code>
+</li>
+<li>The following ValueSet are retired:
+<code>ValueSet-UKCore-HumanLanguage</code></li>
+<code>ValueSet-UKCore-MessageEvent</code></li>
+<code>ValueSet-UKCore-ObservationMethod</code></li>
+<code>ObservationVitalSignsValue</code></li>
+<code>OperationOutcomeIssueDetails</code></li>
+<code>ValueSet-UKCore-SpecimenCondition</code></li>
+
+<li>Updated extension binding strength from "preferred" to"extensible"  on <code> Extension-UKCore-AdmissionMethod, Extension-UKCore-DischargeMethod, Extension-UKCore-EthnicCategory, Extension-UKCore-LegalStatus, Extension-UKCore-OutcomeOfAttendance, Extension-UKCore-SampleCategory </code></li>
+
 <li><code>UKCore-Specimen</code> - amended to replace the ValueSet from BiospyState to SampleState for specimen.condition binding
 <li><code>UKCore-Observation-VitalSigns-BodyHeight</code> - value[x] changed to allow code for centimeters as well the the original metres
 <li><code>ValueSet-UKCore-BodySite</code> - include all descendants of the SNOMED hierarchy 278001007 | Nonspecific site |to allow for the user case when a clinician is prescribing a cutanious cream or similar to an affected area of the skin. Rather than the clinician having to select all the areas of the body that are affected they can just select the code 22201000087104 | Affected area |.
