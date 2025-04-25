@@ -1,12 +1,6 @@
 - name: Index
   filename: Index.page.md
-- name: 1.0.0-public-beta
-  filename: 1.0.0-public-beta.page.md
-- name: PCDS-example
-  filename: PCDS-example.page.md
-- name: v1.1.9
-  filename: v1.1.9.page.md
-- name: v1.2.0
-  filename: v1.2.0.page.md
-- name: v1.2.1
-  filename: v1.2.1.page.md
+- name: Latest Version
+  filename: Latest-Version.page.md
+- name: Previous Versions
+  filename: Previous-Versions.page.md
