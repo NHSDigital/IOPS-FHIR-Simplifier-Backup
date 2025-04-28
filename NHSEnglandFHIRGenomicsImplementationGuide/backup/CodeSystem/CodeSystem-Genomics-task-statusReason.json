@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "task-statusReason-genomics",
   "url": "https://fhir.nhs.uk/CodeSystem/task-statusReason-genomics",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "name": "TaskStatusReasonGenomics",
   "title": "Task StatusReason Genomics",
   "status": "draft",
@@ -72,6 +72,10 @@
     {
       "code": "awaiting-order-detail",
       "display": "Awaiting Order Detail"
+    },
+    {
+      "code": "other",
+      "display": "other"
     }
   ]
 }

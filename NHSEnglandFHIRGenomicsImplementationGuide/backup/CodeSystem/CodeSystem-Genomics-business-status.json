@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "business-status-genomics",
   "url": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "name": "BusinessStatusGenomics",
   "title": "Business Status Genomics",
   "status": "draft",
@@ -112,6 +112,10 @@
     {
       "code": "reflex-confirmatory-test-complete",
       "display": "Reflex/Confirmatory Test Complete"
+    },
+    {
+      "code": "other",
+      "display": "other"
     }
   ]
 }

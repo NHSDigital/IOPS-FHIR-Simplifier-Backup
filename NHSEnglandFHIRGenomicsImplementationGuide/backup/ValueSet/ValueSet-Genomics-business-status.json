@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "genomics-business-status",
   "url": "https://fhir.nhs.uk/ValueSet/genomics-business-status",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "GenomicsBusinessStatus",
   "title": "Genomics Business Status",
   "status": "draft",
@@ -25,7 +25,7 @@
     "include": [
       {
         "system": "https://fhir.nhs.uk/CodeSystem/business-status-genomics",
-        "version": "0.4.0"
+        "version": "0.4.1"
       }
     ]
   }
