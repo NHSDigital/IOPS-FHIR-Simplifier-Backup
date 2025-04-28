@@ -27,17 +27,14 @@ topic: STU3Sequence
 <code>CodeSystem-RecordingSetting</code>,
 <code>CodeSystem-WithheldIdentityReason</code>
 </li>
-<li>The following CodeSystem are removed: <code>CodeSystem-UKCore-ConditionCategory</code>,
-<code>CodeSystem-UKCore-ConditionCategory</code>
-</li>
 <li>The following CodeSystem are retired : <code>CodeSystem-UKCore-ConsentUpdateMode</code>,
 <code>CodeSystem-UKCore-EPSIssueCode</code>,
 <code>CodeSystem-UKCore-HumanLanguage</code>,
 <code>CodeSystem-UKCore-ITKResponseCode</code>,
 <code>CodeSystem-UKCore-SpineErrorOrWarningCode</code>
 </li>
-<li>The following CodeSystem are inactive: <code>CodeSystem-UKCore-MedicationRequestCategory</code>,
-<code>CodeSystem-UKCore-ConditionCategory</code>
+<li>
+<code>CodeSystem-UKCore-ConditionCategory</code>: The code <code>issue</code> has been removed.
 </li>
 <li>New codes are added for :
 <code>CodeSystem-UKCore-RecordStandardHeadings</code>
