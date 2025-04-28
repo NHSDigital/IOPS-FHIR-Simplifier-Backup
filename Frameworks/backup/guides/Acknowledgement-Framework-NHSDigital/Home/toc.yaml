@@ -10,3 +10,5 @@
   filename: Examples
 - name: Help and support
   filename: Helpandsupport
+- name: Templates
+  filename: Templates
