@@ -119,24 +119,273 @@ This retrieves all `PatientFlag` resources for the patient with NHSNumber `94493
 ```json
 {
   "resourceType": "Bundle",
+  "id": "PatientFlag-Bundle-Example",
   "type": "searchset",
-  "total": 1,
+  "total": 3,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://fhirserver.example.org/Flag?patient=PatientFlag-AlanMann-Example"
+    }
+  ],
   "entry": [
     {
+      "fullUrl": "urn:uuid:82345678-1234-5678-1234-567812345678",
       "resource": {
         "resourceType": "Flag",
-        "id": "flag1",
+        "id": "RA-PatientFlag-Example",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag"
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Provenance",
+            "id": "c4e2e862-3bf4-4176-a186-9f1732938260",
+            "meta": {
+              "profile": [
+                "https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag"
+              ]
+            },
+            "target": [
+              {
+                "reference": "#"
+              }
+            ],
+            "recorded": "2024-01-01T11:00:00+00:00",
+            "activity": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+                  "code": "CREATE",
+                  "display": "create"
+                }
+              ]
+            },
+            "agent": [
+              {
+                "role": [
+                  {
+                    "coding": [
+                      {
+                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+                        "code": "R0260",
+                        "display": "General Medical Practitioner"
+                      }
+                    ]
+                  }
+                ],
+                "who": {
+                  "reference": "https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9"
+                },
+                "onBehalfOf": {
+                  "reference": "https://directory.spineservices.nhs.uk/Organization/a3e5i7"
+                }
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes",
+            "valueAnnotation": {
+              "text": "Example of flag notes extension text in patient flag"
+            }
+          }
+        ],
         "status": "active",
         "code": {
-          "text": "Allergy: Penicillin"
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient",
+              "code": "national-reasonable-adjustment-flag",
+              "display": "National Reasonable Adjustments Flag"
+            }
+          ]
         },
         "subject": {
-          "reference": "Patient/12345"
+          "reference": "Patient/PatientFlag-AlanMann-Example"
         }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:32345678-1234-5678-1234-567812345678",
+      "resource": {
+        "resourceType": "Flag",
+        "id": "FGM-PatientFlag-Example",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag"
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Provenance",
+            "id": "3fc83fd8-4a6d-48e4-91ab-12bb10a4a834",
+            "meta": {
+              "profile": [
+                "https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag"
+              ]
+            },
+            "target": [
+              {
+                "reference": "#"
+              }
+            ],
+            "recorded": "2024-01-01T11:00:00+00:00",
+            "activity": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+                  "code": "CREATE",
+                  "display": "create"
+                }
+              ]
+            },
+            "agent": [
+              {
+                "role": [
+                  {
+                    "coding": [
+                      {
+                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+                        "code": "R0260",
+                        "display": "General Medical Practitioner"
+                      }
+                    ]
+                  }
+                ],
+                "who": {
+                  "reference": "https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9"
+                },
+                "onBehalfOf": {
+                  "reference": "https://directory.spineservices.nhs.uk/Organization/a3e5i7"
+                }
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes",
+            "valueAnnotation": {
+              "text": "Example of flag notes extension text in patient flag"
+            }
+          }
+        ],
+        "status": "active",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient",
+              "code": "female-genital-mutilation-flag",
+              "display": "Female Genital Mutilation Flag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/PatientFlag-AlanMann-Example"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:42345678-1234-5678-1234-567812345678",
+      "resource": {
+        "resourceType": "Flag",
+        "id": "CPIS-Flag-Example",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag"
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Provenance",
+            "id": "1fc83fd8-4a6d-48e4-91ab-12bb10a4a834",
+            "meta": {
+              "profile": [
+                "https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag"
+              ]
+            },
+            "target": [
+              {
+                "reference": "#"
+              }
+            ],
+            "recorded": "2024-07-22T09:00:00+00:00",
+            "activity": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+                  "code": "CREATE",
+                  "display": "create"
+                }
+              ]
+            },
+            "agent": [
+              {
+                "role": [
+                  {
+                    "coding": [
+                      {
+                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+                        "code": "R0260",
+                        "display": "General Medical Practitioner"
+                      }
+                    ]
+                  }
+                ],
+                "who": {
+                  "reference": "https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9"
+                },
+                "onBehalfOf": {
+                  "reference": "https://directory.spineservices.nhs.uk/Organization/a3e5i7"
+                }
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/flag-detail",
+            "valueReference": {
+              "reference": "CarePlan/CPIS-CarePlan-example",
+              "display": "Child Protection Plan for Alan Mann"
+            }
+          }
+        ],
+        "status": "active",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient",
+              "code": "child-protection-information-system-flag",
+              "display": "Child Protection Information System Flag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/PatientFlag-AlanMann-Example",
+          "display": "Alan Mann"
+        },
+        "period": {
+          "start": "2024-07-22T09:00:00+00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
       }
     }
   ]
 }
+
 ```
 
 ### ⚪ No Flags Found
