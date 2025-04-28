@@ -3,11 +3,11 @@
 - name: UK Core Development Sequences
   filename: UK-Core-Development-Sequences.guide.md
 - name: STU3 Sequence
-  filename: STU3-Sequence
+  filename: STU3-Sequence.page.md
 - name: STU2 Sequence
-  filename: STU2-Sequence
+  filename: STU2-Sequence.page.md
 - name: STU1 Sequence
-  filename: STU1-Sequence
+  filename: STU1-Sequence.page.md
 - name: Archive
   filename: Archive
 - name: Glossary
