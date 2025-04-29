@@ -5,7 +5,7 @@ issue: Extension-UKCore-Evidence
 ## StructureDefinition {{variable:issue}}
 
 <table id="addToTranspose">
-<tr><td>Context of Use</td>
+<tr><td>Context of Use</td> 
 <td>{{pagelink:Profile-AllergyIntolerance,text:AllergyIntolerance}}</td>
 </tr>
 </table>
