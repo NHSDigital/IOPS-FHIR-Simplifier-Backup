@@ -361,7 +361,8 @@ This retrieves all `PatientFlag` resources for the patient with NHSNumber `94493
             }
           }
         ],
-        "status": "active",
+        "status": "active",*
+        
         "code": {
           "coding": [
             {
