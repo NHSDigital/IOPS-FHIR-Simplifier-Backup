@@ -6,11 +6,11 @@ issue: Extension-UKCore-Evidence
 
 <table id="addToTranspose">
 <tr><td>Context of Use</td> 
-<td>{{pagelink:Profile-AllergyIntolerance,text:AllergyIntolerance}}</td>
+<td>{{pagelink:AllergyIntolerance,text:AllergyIntolerance}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate_new}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

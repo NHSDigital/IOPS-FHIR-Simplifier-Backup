@@ -3,14 +3,14 @@ subject: https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionE
 issue: Extension-UKCore-ConditionEpisode
 ---
 ## StructureDefinition {{variable:issue}}
-{{page:CodeSystemTemplate_new}}
+
 <table id="addToTranspose">
 <tr><td>Context of Use</td>
 <td>{{pagelink:Profile-Condition,text:Condition}}</td>
 </tr>
 </table>
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate_new}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

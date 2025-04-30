@@ -10,9 +10,8 @@ issue: Extension-UKCore-AddressKey
 <td>Address</td>
 </tr>
 </table>
-{{page:CodeSystemTemplate_new}}
 
-{{page:Home/ProfilesandExtensions/ExtensionTemplate.page.md}}
+{{page:ExtensionTemplate_new}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

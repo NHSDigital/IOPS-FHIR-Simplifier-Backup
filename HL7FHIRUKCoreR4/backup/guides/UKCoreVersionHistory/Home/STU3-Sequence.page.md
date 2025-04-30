@@ -100,8 +100,8 @@ topic: STU3Sequence
 <code>ValueSet-UKCore-HumanLanguage</code></li>
 <code>ValueSet-UKCore-MessageEvent</code></li>
 <code>ValueSet-UKCore-ObservationMethod</code></li>
-<code>ObservationVitalSignsValue</code></li>
-<code>OperationOutcomeIssueDetails</code></li>
+<code>ValueSet-UKCore-ObservationVitalSignsValue</code></li>
+<code>ValueSet-UKCore-OperationOutcomeIssueDetails</code></li>
 <code>ValueSet-UKCore-SpecimenCondition</code></li>
 
 <li>Updated extension binding strength from "preferred" to"extensible"  on <code> Extension-UKCore-AdmissionMethod, Extension-UKCore-DischargeMethod, Extension-UKCore-EthnicCategory, Extension-UKCore-LegalStatus, Extension-UKCore-OutcomeOfAttendance, Extension-UKCore-SampleCategory </code></li>
