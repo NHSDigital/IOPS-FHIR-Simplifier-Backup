@@ -91,6 +91,21 @@ In the solution proposed all updates to tasks in terms of their statuses are exp
 
 It is the responsibility of the current owner of a Task to correctly assign follow-on tasks to organizations for next steps in order fulfillment. If the next organization to fulfil a Task is not known, and cannot be found out, it is expected the Task would be reassigned to the managing entity/home GLH for onward routing. 
 
+#### WGS/GEL Task triggers
+
+To support current workflows within GEL, such as importing data into TOMS or to emulate the 100X series of messages, the following status transitions and triggers are proposed (alongside assignment of the relevant task to GEL). **Note:** These trigger points are subject to change in response to Alpha testing with GEL.
+
+|GEL Workflow Step|Task|Status|Business Status/Notes|
+|--|--|--|--|
+|Initial Order Creation|Process Genomic Test Request|requested||
+|Lab Sample Dispatched and QC Data Completed|Sample Preparation|in-progress|Sample Sent, potential addition of 'Data QC completed' code to CodeSystem|
+|Samples Sent to Plater|Sample Preparation (potentially new Task)|requested/in-progress (depending on new or reassigned Task with owner=plater)|Sample Sent|
+|Plater Samples Received|Sample Preparation|accepted/in-progress|Sample Received|
+|Plater Sample Dispatched for Sequencing|Sample Preparation|completed|Sample Sent|
+|Plating Samples Received for Sequencing|Sample Processing|accepted/in-progress|Sample Received|
+|Sequencer QC Results Completed|Sample Processing|completed||
+|Payload Ready for Bioinformatics|Genetic/Genomic Data Processing|requested||
+
 ### Automated updates
 
 The test order system will automatically update some resources when certain actions or conditions are met. The current list (not final) of actions are as follows:
