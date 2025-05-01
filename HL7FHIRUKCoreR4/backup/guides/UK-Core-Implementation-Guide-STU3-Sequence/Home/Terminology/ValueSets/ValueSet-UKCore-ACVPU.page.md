@@ -11,4 +11,4 @@ This Profile underwent Clinical and Technical Assurance during Sprint 7. This is
 Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-ACVPU/~issues?level=File">Report Issue for ValueSet-UKCore-ACVPU</a>.
 </div>
 
-{{page:ValueSetTemplate}}
+{{page:ValueSetTemplate_new}}
