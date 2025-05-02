@@ -17,5 +17,4 @@
     {{table:example--gpc-data-model--encounter}}
   </div>
 </div>
-
 ---
