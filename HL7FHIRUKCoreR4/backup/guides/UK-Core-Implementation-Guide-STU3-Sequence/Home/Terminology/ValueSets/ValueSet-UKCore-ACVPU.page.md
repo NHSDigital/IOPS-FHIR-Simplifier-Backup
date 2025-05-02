@@ -12,3 +12,6 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/ValueSet-UKCore-AC
 </div>
 
 {{page:ValueSetTemplate_new}}
+
+https://simplifier.net/guide/uk-core-implementation-guide-stu3-sequence/home/terminology/valuesets/valueset-ukcore-acvpu.page.md?version=current
+https://simplifier.net/guide/UK-Core-Implementation-Guide-STU3-Sequence/terminology/valuesets/valueset-ukcore-acvpu.page.md?version=current
