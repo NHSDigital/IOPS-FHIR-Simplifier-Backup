@@ -20,3 +20,11 @@
   filename: example-Retrieve-a-patientflag-with-associated-resources.page.md
 - name: example ( Add a PatientFlag)
   filename: example-Add-a-PatientFlag.page.md
+- name: example( Add a PatientFlag and associated resources)
+  filename: example-Add-a-PatientFlag-and-associated-resources.page.md
+- name: example(Remove a PatientFlag)
+  filename: example-Remove-a-PatientFlag.page.md
+- name: example( Remove a PatientFlag with associated resources)
+  filename: example-Remove-a-PatientFlag-with-associated-resources.page.md
+- name: example( Add associated resources)
+  filename: example-Add-associated-resources.page.md
