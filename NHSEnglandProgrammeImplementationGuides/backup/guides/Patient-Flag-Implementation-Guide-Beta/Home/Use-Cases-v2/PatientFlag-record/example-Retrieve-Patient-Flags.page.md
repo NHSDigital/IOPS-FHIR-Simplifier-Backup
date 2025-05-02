@@ -104,7 +104,7 @@ Use the FHIR Search API to retrieve `PatientFlag` resources.
 
 ### Example Query
 
-```http
+```
 GET [baseUrl]/PatientFlag?patient=9449306753
 ```
 

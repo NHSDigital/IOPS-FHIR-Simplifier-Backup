@@ -115,13 +115,13 @@ pra <-- api : OperationOutcome
 
 Use this query format:
 
-```http
+```
 GET [baseUrl]/PatientFlag?patient=[NHSNumber]&code=[flagCode]
 ```
 
 ### Example:
 
-```http
+```
 GET [baseUrl]/PatientFlag?patient=9449306753&code=NRAF
 ```
 
