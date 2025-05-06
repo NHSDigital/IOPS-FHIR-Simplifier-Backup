@@ -1,11 +1,20 @@
-## {{page-title}}
+# Add Associated Resources
 
+:::info
+This page describes how a Practitioner records Additional Detail to support or enrich an existing PatientFlag using the relevant FHIR endpoints.
+:::
 
-### Overview
+## 📘 Overview
 
-For high level requirements, see {{pagelink:Home}}.
- 
-### Add Use Case
+Practitioners may wish to associate additional detail—such as impairments, underlying conditions, or specific adjustments—to a PatientFlag to provide clearer clinical context or enrich decision-making.
+
+For system-level context, see [Home](Home).
+
+## 🩺 Use Case
+
+A Practitioner records associated resources (e.g., Condition, Adjustment) related to a PatientFlag to provide supplementary clinical information.
+
+### Use Case Diagram
 
 <plantuml>
 @startuml
@@ -19,7 +28,6 @@ usecase "Record" as record <<abstract>>
 usecase "Add Additional Detail" as add <<abstract>>
 }
 
-
 actor Patient as pat
 
 usecase "Consult" as consult <<abstract>>
@@ -32,52 +40,44 @@ record <.. add : include
 @enduml
 </plantuml>
 
-#### Name
+## 📋 User Story
 
-*Name*
+> **As a Practitioner**, I want to add associated resources (Additional Detail) to a PatientFlag record so that care teams have access to more complete clinical context for a patient.
 
-#### User Story Summary (Clinical Overview)
+## 👥 Actors
 
-*User Story Summary (Clinical Overview)*
+| Actor                        | Description                                                    |
+|-----------------------------|----------------------------------------------------------------|
+| **Practitioner**            | Clinician recording the associated information                 |
+| **Patient**                 | Individual whose data is being managed                         |
+| **FHIR API**                | Endpoint receiving the resources                               |
+| **Additional Detail**       | Any supporting FHIR resource (e.g. Condition, Adjustment)      |
 
-#### Actors (Role)
+## ⚙️ Workflow
 
-*Actors (Role)*
+### Frequency of Use
+- As needed
 
-#### Frequency of Use
+### Trigger
+- Practitioner decides to record supporting information.
 
-*Frequency of Use*
+### Pre-conditions
+- Practitioner is authorized and has identified a relevant PatientFlag.
 
-#### Triggers
+### Post-conditions
+- Associated resource is stored and linked to the PatientFlag.
 
-*Triggers*
+## 🔄 Flow
 
-#### Pre Conditions
+### Main Flow
 
-*Pre Conditions*
+1. Practitioner consults with the patient.
+2. Practitioner prepares an associated resource (e.g., Condition).
+3. Practitioner submits the resource via the FHIR API.
+4. The system validates and stores the resource.
+5. Practitioner receives a response (success or OperationOutcome).
 
-#### Post Conditions
-
-*Post Conditions*
-
-#### Main Course
-
-*Main Course*
-
-#### Alternate Course
-
-*Alternate Course*
-
-#### Exception
-
-*Exception*
-
-
-### System Interactions
-
-The practitioner decides to record Additional Detail to support or enrich a Patient Flag record
-
-This is achieved by POSTing resources to their relevant FHIR endpoint (for example a Condition is POSTed to a /Condition endpoint).
+## 🧩 System Interaction
 
 <plantuml>
 @startuml
@@ -104,110 +104,48 @@ pra <-- api : OperationOutcome
 @enduml
 </plantuml>
 
+## 🔍 Querying the API
 
-### Queries
+Use [FHIR create](http://hl7.org/fhir/r4/http.html#create) to write an associated resource.
 
-Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is possible to create/write the Additional Detail resource, adding it to the Patient Flag record.
-
-#### Flag endpoint write
-
-# are they POSTing a transaction bundle to the PatienFlag endpoint?
-
-PatientFlag records are created by POSTing the resource to the relevant resource type endpoint. ResourceType will depend on the requirements of the Additional Detail. e.g. Reasonable Adjustments uses Additional Detail resources, modelling Adjustments as[EnglandFlagPatientFlagAdjustment](https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment) resources ,and Impairments and Underlying Conditions as [EnglandConditionFlag](https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag) resources.
-
-In order for the new additional resource to be attached to the relevant PatientFlag resource, the following details must match
-- NewResource.patient = PatientFlag.patient
-- NewResource.category = PatientFlag.code
+### Example
 
 ```
 POST [baseURL]/[resourceType]
 ```
----
 
-### Remove Associated Resources Use Case
+✅ Response Example
 
-<plantuml>
-@startuml
+🟢 Successful OperationOutcome
 
-skinparam actorStyle awesome
-left to right direction
-
-rectangle "Patient Flag"{
-actor Practitioner as pra
-usecase "Record" as record <<abstract>>
-usecase "Remove Additional Detail" as rem <<abstract>>
+```json
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "information",
+      "code": "informational",
+      "diagnostics": "Resource created successfully."
+    }
+  ]
 }
-
-
-actor Patient as pat
-
-usecase "Consult" as consult <<abstract>>
-
-pat -- consult
-pra -- consult
-pra -- record
-record <.. rem : include
-
-@enduml
-</plantuml>
-
-### System Interactions
-
-In the following sequence diagram, a patient and/or practitioner decide to remove the patient flag.
-
-# this needs updating
-
-<plantuml>
-@startuml
-
-skinparam actorStyle hollow
-
-actor        "Patient"          as pat
-actor        "Practitioner"     as pra
-participant  "FHIR API"         as api
-entity       "Patient Flag"     as pfg
-entity       "Additional Detail"  as add
-
-  pat ->  pra : Remove
-  pra ->  api : Remove
-  api ->  pfg : Remove resource
-  
-
-loop for each Additional Detail resource
-  api ->  add : Remove resource (any)
-  add ->  add : Validate
-  api <-- add : return
-  alt Validation failed
-    api -> api : rollback
-  end
-end
-
-pra <-- api : OperationOutcome
-
-@enduml
-</plantuml>
-
-Associated resources, when not deleted as part of a PatientFlag deletion, are deleted individually, by id. To do this, PatientFlags must first be retrieved, thenassociated resources deleted using their resource.id element.
-
-Each deletion should be accompanied by a reason in a reson parameter as part of the DELETE statement.
-
 ```
-DELETE [baseURL]/[resourceType]/[id]?reason=[reason]
+🔴 Error OperationOutcome
 
+```json
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "invalid",
+      "diagnostics": "Missing or invalid required fields."
+    }
+  ]
+}
 ```
-for example
 
-```
-DELETE [baseURL]/Condition/b8ab463d-f698-41a0-aae2-6d6163dd0825?reason=Error
+🔐 Security and Access
+- API requires authentication and authorization.
 
-```
-# ###CHECK THESE###
-#### Example
-
-Multiple resources can be deleted using a transaction bundle.  This  {{pagelink:Home/Examples/RemoveRARecord-Bundle-Example.page.md}}:
-
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} example.  
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}} example.  
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}} example.  
-
----
+- All resource creation attempts are logged for auditing.
