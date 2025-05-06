@@ -1,149 +1,211 @@
-## {{page-title}}
-### Overview
+# Add PatientFlag with Associated Resources
 
-For high level requirements, see {{pagelink:Home}}.
+:::info
+This page describes how a Practitioner adds a PatientFlag record, along with associated FHIR resources, in a single transaction using the `PatientFlag` FHIR API.
+:::
 
-### Use Case
+## 📘 Overview
+
+Patient Flags may include associated clinical resources (e.g. Conditions, Observations) to provide a full picture of the patient's status.
+
+For system-level context, see [Home](Home).
+
+## 🩺 Use Case
+
+A Practitioner adds a PatientFlag record and supporting FHIR resources in a single transaction bundle via the `PatientFlag` API.
+
+### Use Case Diagram
 
 <plantuml>
 @startuml
-
 skinparam actorStyle awesome
 left to right direction
 
-rectangle "Patient Flag"{
-actor Practitioner as pra
-usecase "Record" as record <<abstract>>
-usecase "Add Patient Flag record" as add <<abstract>>
+rectangle "Patient Flag" {
+  actor Practitioner as pra
+  usecase "Record" as record <<abstract>>
+  usecase "Add Patient Flag record" as add <<abstract>>
 }
 
-
-actor Patient as pat
-
-usecase "Consult" as consult <<abstract>>
-
-pat -- consult
-pra -- consult
 pra -- record
 record <.. add : include
-
 @enduml
 </plantuml>
 
+## 📋 User Story
 
-#### Name
+> **As a Practitioner**, I want to record a PatientFlag and related FHIR resources in a single transaction, so that I can maintain consistent and complete patient records.
 
-*Name*
+## 👥 Actors
 
-#### User Story Summary (Clinical Overview)
+| Actor                        | Description                                                |
+|-----------------------------|------------------------------------------------------------|
+| **Practitioner**            | Clinician recording the patient flag                       |
+| **PatientFlag FHIR API**    | API endpoint for submitting PatientFlag and related data   |
+| **FHIR Repository**         | Backend storage that accepts transaction bundles           |
 
-*User Story Summary (Clinical Overview)*
+## ⚙️ Workflow
 
-#### Actors (Role)
+### Frequency of Use
+- As needed
 
-*Actors (Role)*
+### Trigger
+- Practitioner identifies the need to add or update a flag and related records.
 
-#### Frequency of Use
+### Pre-conditions
+- Practitioner has appropriate access and identifiers (e.g. NHSNumber).
+- No conflicting or duplicate flag types exist for the patient.
 
-*Frequency of Use*
+### Post-conditions
+- PatientFlag and associated resources are stored as a unit.
+- A confirmation or error message is returned.
 
-#### Triggers
+## 🔄 Flow
 
-*Triggers*
+### Main Flow
 
-#### Pre Conditions
+1. Practitioner constructs a transaction `Bundle` with:
+   - `PatientFlag` resource
+   - Supporting resources (e.g. `Condition`, `Observation`)
+2. Practitioner submits the transaction bundle to the API.
+3. API validates and stores all resources.
+4. API returns a confirmation `OperationOutcome`.
 
-*Pre Conditions*
+### Alternate Flow
 
-#### Post Conditions
+| Step | Condition                                   | Outcome                                              |
+|------|---------------------------------------------|------------------------------------------------------|
+| 3a   | Validation fails for any resource            | Entire bundle is rolled back; error returned         |
+| 3b   | Duplicate flag of same type found            | Merge additional resources into existing flag        |
 
-*Post Conditions*
-
-#### Main Course
-
-*Main Course*
-
-#### Alternate Course
-
-*Alternate Course*
-
-#### Exception
-
-*Exception*
-
-
-### System Interactions
-
-The practitioner decides to record patient flag information that has associated resources.
-
-This is done in a single transaction Bundle.  A transaction Bundle helps with data integrity and also helps to reduce required http calls.
+## 🧩 System Interaction
 
 <plantuml>
 @startuml
 
 skinparam actorStyle hollow
 
-actor        "Patient"          as pat
 actor        "Practitioner"     as pra
 boundary     "FHIR API"         as api
 entity       "Patient Flag"     as flg
 entity       "Additional Detail"  as add
 
-pra ->  pat : Consult patient
-pra ->  api : Record adjustment record (transaction Bundle)
+pra ->  api : Submit transaction Bundle
 
-api ->  flg : Create/update resource
+api ->  flg : Create/update PatientFlag
 flg ->  flg : Validate
-api <-- flg : return
 alt Validation failed
-  api -> api : rollback
+  api -> api : Rollback transaction
 end
 
-loop for each Additional Detail resource
-  api ->  add : Create/update resource (any)
-  add ->  add : Validate
-  api <-- add : return
+loop for each supporting resource
+  api -> add : Create/update resource
+  add -> add : Validate
   alt Validation failed
-    api -> api : rollback
+    api -> api : Rollback transaction
   end
 end
+
 pra <-- api : OperationOutcome
 
 @enduml
 </plantuml>
 
+## 🔍 Submitting the Transaction
 
-### Queries
+Use the FHIR `Bundle` [transaction](http://hl7.org/fhir/R4/bundle.html#transaction) interaction.
 
-Using [FHIR create](http://hl7.org/fhir/r4/http.html#create) capabilities, it is possible to create/write the Patient Flag record.
+### Example Request
 
-The body of the POST request is a transaction bundle made up of the PatientFlag resource, and any other accepted FHIR resources to support that flag
+```
+POST [baseUrl]/
+```
 
-**Note**: Only one PatientFlag resource can exist per patient, per type of flag. If a patient flag is POSTed for a patient that already has that flag type, the records are merged using the following logic:
-- any additional resources from the second post are added to the existing flag
-- notes from any identical resources are added to the same resource in the existing resource
-- confirmation details that the PatientFlag is create are returned to the sender
+```json
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Flag",
+        "status": "active",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient",
+              "code": "national-reasonable-adjustment-flag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1234567890"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Flag"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1234567890"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    }
+  ]
+}
+```
 
+## ✅ Response
 
-# ##NEEDS LOOKING AT###
+### 🟢 Success
 
-### Examples
+```json
+{
+  "resourceType": "Bundle",
+  "type": "transaction-response",
+  "entry": [
+    { "response": { "status": "201 Created", "location": "Flag/1" } },
+    { "response": { "status": "201 Created", "location": "Condition/1" } }
+  ]
+}
+```
 
-* {{pagelink:PatientFlag-AlanMann-Example}}
+### 🔴 Failure (Validation)
 
-The following set of examples constitute the individual associated resources with the initial addition of a flag for Reasonable Adjustment.  This includes a PatientFlag resource, the adjustment Flag resource and the associated Condition resource.  All resources have contained provenances.
+```json
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "invalid",
+      "diagnostics": "Condition.subject is missing"
+    }
+  ]
+}
+```
 
-* {{pagelink:PatientFlag-AlanMann-Example}}
-* {{pagelink:RA-Flag-Example}}
-* {{pagelink:RA-Condition-Example}}
-* {{pagelink:AddRARecordTransaction-Bundle-Example}}
+---
 
-The following set of examples are for the same patient, and constitute an addition adjustment Flag and Condition.  The transaction Bundle here illustrates an idempotent update by simply adding the new resources to the first transaction Bundle.
+## 🔐 Security and Access
 
-* {{pagelink:Home/Examples/RA-Flag2-Example.page.md}}
-* {{pagelink:RA-Condition2-Example}}
-* {{pagelink:Home/Examples/UpdateRARecordTransaction-Bundle-Example.page.md}}
-
-
+- Authentication and authorization are required.
+- Transactions are logged and auditable.
 
 ---

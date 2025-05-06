@@ -1,10 +1,20 @@
-## {{page-title}}
-### Overview
+# Remove PatientFlags
 
-For high level requirements, see {{pagelink:Home}}.
- 
+:::info
+This page describes how a Practitioner removes Patient Flag records for a given patient using their NHSNumber via the PatientFlag FHIR API.
+:::
 
-### Use Case
+## 📘 Overview
+
+Patient Flags may need to be removed when they are incorrect, outdated, or no longer clinically appropriate. This operation removes the PatientFlag resource and all associated data.
+
+For system-level context, see [Home](Home).
+
+## 🩺 Use Case
+
+A Practitioner removes a patient's flag records by calling the PatientFlag endpoint using the patient's NHSNumber and relevant search parameters.
+
+### Use Case Diagram
 
 <plantuml>
 @startuml
@@ -31,50 +41,50 @@ record <.. rem : include
 @enduml
 </plantuml>
 
-#### Name
+## 📋 User Story
 
-*Name*
+> **As a Practitioner**, I want to remove PatientFlag records using a patient’s NHSNumber and reason for removal, so that the patient’s record reflects only relevant and current information.
 
-#### User Story Summary (Clinical Overview)
+## 👥 Actors
 
-*User Story Summary (Clinical Overview)*
+| Actor                     | Description                                               |
+|--------------------------|-----------------------------------------------------------|
+| **Practitioner**         | Clinician removing the record                             |
+| **PatientFlag FHIR API** | API endpoint exposing PatientFlag resources               |
+| **FHIR Repository**      | Backend data store containing flag records                |
 
-#### Actors (Role)
+## ⚙️ Workflow
 
-*Actors (Role)*
+### Frequency of Use
+- Occasionally
 
-#### Frequency of Use
+### Trigger
+- Practitioner identifies a flag is no longer needed or was added in error
 
-*Frequency of Use*
+### Pre-conditions
+- Practitioner has appropriate access
+- Patient NHSNumber and reason for removal are known
 
-#### Triggers
+### Post-conditions
+- The PatientFlag and related resources are deleted, or an error is returned
 
-*Triggers*
+## 🔄 Flow
 
-#### Pre Conditions
+### Main Flow
 
-*Pre Conditions*
+1. Practitioner sends a DELETE request to the PatientFlag API using NHSNumber and reason.
+2. API locates the relevant PatientFlag resource(s).
+3. Associated resources are also removed.
+4. API returns an OperationOutcome confirming the deletion.
 
-#### Post Conditions
+### Alternate Flow
 
-*Post Conditions*
+| Step | Condition                             | Outcome                                              |
+|------|---------------------------------------|------------------------------------------------------|
+| 2a   | No matching resources                 | Return OperationOutcome with total: 0 or not-found   |
+| 3a   | Failure deleting associated resources | API performs rollback and returns error              |
 
-#### Main Course
-
-*Main Course*
-
-#### Alternate Course
-
-*Alternate Course*
-
-#### Exception
-
-*Exception*
-
-
-### System Interactions
-
-In the following sequence diagram, a patient and/or practitioner decide to remove the patient flag.
+## 🧩 System Interaction
 
 <plantuml>
 @startuml
@@ -106,61 +116,81 @@ pra <-- api : OperationOutcome
 @enduml
 </plantuml>
 
-### Queries
+## 🔍 Removing Flags via API
 
-Using [FHIR conditional delete](http://hl7.org/fhir/r4/http.html#3.1.0.7.1) capabilities, it is possible to delete the entire Patient Flag record for a given patient. This operation will delete the PatientFlag as well as all associated resources.
+Use the FHIR [conditional delete](http://hl7.org/fhir/r4/http.html#3.1.0.7.1) method.
 
-#### Flag endpoint write
+### 🧼 Remove All PatientFlags for a Patient
 
-Following the standard FHIR conditional delete ReST pattern 
 ```
-DELETE [baseURL]/[resourceType]
-```
- for delete operations, to:
-
-##### Remove all PatientFlag records
-
-Use 
-```
-DELETE [baseURL]/PatientFlag?patient=[patientNHSNumber]&reason=[reason]
-```
-Include searchParameters:
-- 'patient' - [patientNHSNumber]
-Provide a removal reason parameter
-- 'reason' - [reason]
-
-e.g. 
-```
-DELETE [baseURL]/PatientFlag?patient=9449306753&reason=Error
+DELETE [baseURL]/PatientFlag?patient=9449306753&reason=NoLongerApplicable
 ```
 
-The following resource types will be deleted from the record: 
-* the PatientFlag resource
-* any resources detailing supporting information
+- Deletes all PatientFlag resources for a patient
+- Removes all associated supporting resources
+- Requires both `patient` and `reason` query parameters
 
+### 🧼 Remove Specific Flag Code for a Patient
 
-##### Remove single Flag type from Patient Flag record
+```
+DELETE [baseURL]/PatientFlag?patient=9449306753&code=NRAF&reason=Incorrect
+```
 
-Use `DELETE [baseURL]/PatientFlag?[searchParameters]`
-Include searchParameters:
-- 'patient' - [patientNHSNumber]
-- 'code' - [patientFlagCode]
-Provide a removal reason parameter
-- 'reason' - [reason]
+- Deletes only the specified PatientFlag and its related resources
+- Requires `patient`, `code`, and `reason` query parameters
+- ℹ️ Deletion is based on standard FHIR query syntax and conditional operations.
 
-e.g. `DELETE [baseURL]/PatientFlag?patient=9449306753&code=NRAF&reason=Error`
+### ✅ Response Examples
 
-The following resource types will be deleted from the record: 
-* the PatientFlag resource of coded type 
-* any resources detailing supporting information for the supporting the coded type
+#### 🟢 Successful Deletion
 
+```json
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "information",
+      "code": "informational",
+      "diagnostics": "Deleted 1 PatientFlag and 2 associated resources"
+    }
+  ]
+}
+```
 
-#### Example
+#### ⚪ No Matching Resources Found
 
-Multiple resources can be deleted using a transaction bundle.  This  {{pagelink:Home/Examples/RemoveRARecord-Bundle-Example.page.md}}:
+```json
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "warning",
+      "code": "not-found",
+      "diagnostics": "No PatientFlag found for patient 9449306753"
+    }
+  ]
+}
+```
 
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag.page.md}} example.  
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Flag-Patient-Flag-Adjustment.page.md}} example.  
-* {{pagelink:Home/FHIR-Assets/Profiles/England-Condition-Flag.page.md}} example.  
+#### 🔴 Error: Validation Failed on Deletion
+
+```json
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "processing",
+      "diagnostics": "Unable to delete associated Condition resource due to constraint"
+    }
+  ]
+}
+```
+
+## 🔐 Security and Access
+
+- Only authorized Practitioners can perform deletions.
+
+- All deletions are logged and audited.
 
 ---

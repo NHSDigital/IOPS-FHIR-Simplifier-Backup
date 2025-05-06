@@ -1,30 +1,16 @@
 - name: Index
   filename: Index.page.md
-- name: Retrieve PatientFlags
-  filename: Retrieve-PatientFlags.page.md
+- name: Retrieve Patient Flags
+  filename: Retrieve-Patient-Flags.page.md
 - name: Retrieve a PatientFlag with associated resources
   filename: Retrieve-a-PatientFlag-with-associated-resources.page.md
 - name: Add a PatientFlag
   filename: Add-a-PatientFlag.page.md
 - name: Add a PatientFlag and associated resources
   filename: Add-a-PatientFlag-and-associated-resources.page.md
-- name: Add associated resources
-  filename: Add-associated-resources.page.md
-- name: Remove associated resources
-  filename: Remove-associated-resources.page.md
 - name: Remove a PatientFlag
   filename: Remove-a-PatientFlag.page.md
-- name: example( Retrieve Patient Flags)
-  filename: example-Retrieve-Patient-Flags.page.md
-- name: example ( Retrieve a patientflag with associated resources)
-  filename: example-Retrieve-a-patientflag-with-associated-resources.page.md
-- name: example ( Add a PatientFlag)
-  filename: example-Add-a-PatientFlag.page.md
-- name: example( Add a PatientFlag and associated resources)
-  filename: example-Add-a-PatientFlag-and-associated-resources.page.md
-- name: example(Remove a PatientFlag)
-  filename: example-Remove-a-PatientFlag.page.md
-- name: example( Remove a PatientFlag with associated resources)
-  filename: example-Remove-a-PatientFlag-with-associated-resources.page.md
-- name: example( Add associated resources)
-  filename: example-Add-associated-resources.page.md
+- name: Remove a PatientFlag with associated resources
+  filename: Remove-a-PatientFlag-with-associated-resources.page.md
+- name: Add associated resources
+  filename: Add-associated-resources.page.md
