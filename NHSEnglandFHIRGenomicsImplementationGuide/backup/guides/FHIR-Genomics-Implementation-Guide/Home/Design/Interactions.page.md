@@ -93,7 +93,7 @@ It is the responsibility of the current owner of a Task to correctly assign foll
 
 #### WGS/GEL Task triggers
 
-To support current workflows within GEL, such as importing data into TOMS or to emulate the 100X series of messages, the following status transitions and triggers are proposed (alongside assignment of the relevant task to GEL). **Note:** These trigger points are subject to change in response to Alpha testing with GEL.
+To support current workflows within GEL, such as importing data into TOMS or to emulate the 100X series of messages, the following status transitions and triggers are proposed (alongside assignment of the relevant task to GEL).</br> **Note:** These trigger points are subject to change in response to Alpha testing with GEL.
 
 |GEL Workflow Step|Task|Status|Business Status/Notes|
 |--|--|--|--|
