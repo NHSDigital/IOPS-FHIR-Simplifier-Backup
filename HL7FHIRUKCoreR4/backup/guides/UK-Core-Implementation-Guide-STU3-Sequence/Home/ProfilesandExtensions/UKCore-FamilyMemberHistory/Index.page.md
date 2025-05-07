@@ -1,5 +1,5 @@
 ---
-topic: FamilyMemberHistory
+topic: UKCore-FamilyMemberHistory
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-FamilyMemberHistory
 usage: http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory
 issue: UKCore-FamilyMemberHistory
@@ -7,7 +7,7 @@ issue: UKCore-FamilyMemberHistory
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -33,7 +33,7 @@ The following are example usage scenarios for the UK Core FamilyMemberHistory pr
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 

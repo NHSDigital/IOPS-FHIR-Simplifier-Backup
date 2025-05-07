@@ -1,12 +1,12 @@
 ---
-topic: List
+topic: UKCore-List
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-List
 usage: http://hl7.org/fhir/StructureDefinition/List
 issue: UKCore-List
 ---
 # StructureDefinition-UKCore-List
 
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <nocheck>
 <div id="Examples" class="tabcontent">
@@ -37,7 +37,7 @@ The following are example usage scenarios for the UK Core List profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 

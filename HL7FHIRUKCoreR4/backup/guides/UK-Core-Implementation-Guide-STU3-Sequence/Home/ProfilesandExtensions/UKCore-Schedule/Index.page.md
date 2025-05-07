@@ -1,5 +1,5 @@
 ---
-topic: Schedule
+topic: UKCore-Schedule
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule
 usage: http://hl7.org/fhir/StructureDefinition/Schedule
 issue: UKCore-Schedule
@@ -7,7 +7,7 @@ issue: UKCore-Schedule
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -28,7 +28,7 @@ The following are example usage scenarios for the UK Core Schedule profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 
