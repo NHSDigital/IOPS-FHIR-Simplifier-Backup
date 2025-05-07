@@ -1,5 +1,5 @@
 ---
-topic: Slot
+topic: UKCore-Slot
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot
 usage: http://hl7.org/fhir/StructureDefinition/Slot
 issue: UKCore-Slot
@@ -7,7 +7,7 @@ issue: UKCore-Slot
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -30,7 +30,7 @@ The following are example usage scenarios for the UK Core Slot profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 

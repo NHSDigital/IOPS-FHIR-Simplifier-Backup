@@ -1,5 +1,5 @@
 ---
-topic: AllergyIntolerance
+topic: UKCore-AllergyIntolerance
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance
 usage: http://hl7.org/fhir/StructureDefinition/AllergyIntolerance
 issue: UKCore-AllergyIntolerance
@@ -7,7 +7,7 @@ issue: UKCore-AllergyIntolerance
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -62,7 +62,7 @@ Where migrated data is not coded, uses retired / invalidated codes, or coded wit
 
 ---
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 

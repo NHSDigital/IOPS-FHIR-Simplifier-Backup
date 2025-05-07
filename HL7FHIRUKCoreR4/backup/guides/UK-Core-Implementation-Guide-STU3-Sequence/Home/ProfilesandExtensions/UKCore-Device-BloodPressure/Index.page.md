@@ -1,5 +1,5 @@
 ---
-topic: Device-BloodPressure
+topic: UKCore-Device-BloodPressure
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device-BloodPressure
 usage: http://hl7.org/fhir/StructureDefinition/Device
 issue: UKCore-Device-BloodPressure
@@ -15,7 +15,7 @@ Click here to <a href="https://simplifier.net/HL7FHIRUKCoreR4/UKCore-Device-Bloo
 </div>
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>

@@ -1,5 +1,5 @@
 ---
-topic: Location
+topic: UKCore-Location
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location
 usage: http://hl7.org/fhir/StructureDefinition/Location
 issue: UKCore-Location
@@ -7,7 +7,7 @@ issue: UKCore-Location
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -32,7 +32,7 @@ The following are example usage scenarios for the UKCore Location profile:
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 

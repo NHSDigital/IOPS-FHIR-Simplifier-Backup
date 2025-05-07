@@ -1,5 +1,5 @@
 ---
-topic: MedicationRequest
+topic: UKCore-MedicationRequest
 subject: https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest
 usage: http://hl7.org/fhir/StructureDefinition/MedicationRequest
 issue: UKCore-MedicationRequest
@@ -7,7 +7,7 @@ issue: UKCore-MedicationRequest
 # StructureDefinition {{variable:issue}}
 
 <nocheck>
-{{page:Home/ProfilesandExtensions/ProfileTemplate.page.md}}
+{{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
   <h3>Examples</h3>
@@ -32,7 +32,7 @@ The following are example usage scenarios for the UK Core MedicationRequest prof
 
 ## Profile Specific Implementation Guidance: ##
 
-{{page:Home/ProfilesandExtensions/ProfileMustSupportTemplate.page.md}}
+{{page:ProfileMustSupportTemplate}}
 
 </div>
 
