@@ -72,7 +72,9 @@ $(document).ready(function () {
         const nameText = $nameTd.text().trim();
         if (nameText.startsWith("UKCore")) {
             const assetLower = nameText.toLowerCase();
-            const href = `${vsBase}${assetLower}.page.md${queryString}`;
+            // For rendering in current, set 
+            //const href = `${vsBase}${assetLower}.page.md${queryString}`;
+            const href = `${vsBase}${assetLower}${queryString}`;
             $nameTd.html(`<a href="${href}" target="_blank">${nameText}</a>`);
         }
 
@@ -99,7 +101,9 @@ $(document).ready(function () {
 
                         if (section) {
                             const lowerAsset = assetName.toLowerCase();
-                            href = `${section}${lowerAsset}.page.md${queryString}`;
+                            // ### For rendering in current, set ###
+                            //href = `${section}${lowerAsset}.page.md${queryString}`;
+                            href = `${section}${lowerAsset}${queryString}`;
                         }
                     }
                 }
