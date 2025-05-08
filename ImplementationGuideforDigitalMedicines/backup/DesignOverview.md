@@ -12,7 +12,19 @@ Likely differences, and therefore design decisions, for any medicines interopera
 
 Most care settings require a view of a patient's current medication and to build up this picture, data from different care settings needs to come together. The interoperability between clinical systems that support processes such as admission, transfer and discharge are equally as important as those systems that support the prescribing, dispensing, supply and administration of medicines.
 
-See [Medications Data Use Cases](MedicationsDataUseCases).
+<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
+    <strong>READER ACTION:</strong> Decide which use cases you need to support for your interoperability project.
+</div>
+
+Five medicines interoperability use cases are in scope for this guide.
+
+1. [Query for 'Current' medication](Use-Case-Query-for-Current-Medication)
+2. [Supply of Medication](Use-Case-Supply-of-Medication)
+3. [Medications on Admission](Use-Case-Medications-on-Admission)
+4. [Medications on Discharge](Use-Case-Medicines-on-Discharge)
+5. [Hospital Transfer](Use-Case-Hospital-Transfer)
+
+{{ render: medications-data-use-cases }}{: .img-responsive }
 
 ### What is your high level architecture? Where are your medication records going to be persisted?
 
