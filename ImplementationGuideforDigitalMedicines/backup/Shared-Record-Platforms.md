@@ -12,7 +12,9 @@ There is no single or ideal architecture for a shared medication record, or at l
 4. Persisted Patient-Centric Shared Record
 5. Hybrid Shared Record
 
-But first, for most Trust implementations, the role of a Trust Integration Engine (TIE) needs to be understood.
+In 2024 the Secretary of State for Health and Social Care announced the vision for England for a **Single Patient Record**. Whilst these plans are still in their infancy, this could be implemented as either a 'Persisted Copy Shared Record', a 'Persisted Single and Only Shared Record' or a 'Persisted Patient-Centric Shared Record'.
+
+For most Trust implementations, the role of a Trust Integration Engine (TIE) needs to be understood.
 
 ### Role of a Trust Integration Engine (TIE)
 
