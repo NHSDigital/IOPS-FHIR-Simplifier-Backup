@@ -1,6 +1,6 @@
 # {{page-title}}
 
-Welcome to the implementation guide for GP Connect Access Record Structured.
+Welcome to the implementation guide for GP Connect Access Record: HTML.
 
 Use the dropdown menus at the top of the screen to navigate around the site.
 

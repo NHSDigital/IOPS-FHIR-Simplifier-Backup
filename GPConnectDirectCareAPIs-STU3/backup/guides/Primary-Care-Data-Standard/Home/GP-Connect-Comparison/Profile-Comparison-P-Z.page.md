@@ -29,16 +29,13 @@ The following elements are present in GP Connect, but not used in the PCDS:
 - ProcedureRequest.basedOn
 - ProcedureRequest.replaces
 - ProcedureRequest.requisition
-- ProcedureRequest.reasonReference
-- ProcedureRequest.context
-- ProcedureRequest.performerType	
+- ProcedureRequest.context	
 
 ***
 
 ## Referral Request
 The following elements are present in GP Connect, but not used in the PCDS:
 
-- ReferralRequest.groupIdentifier
 - ReferralRequest.reasonReference
 - ReferralRequest.relevantHistory
 - ReferralRequest.definition
