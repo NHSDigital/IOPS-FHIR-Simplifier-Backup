@@ -5,7 +5,6 @@ This guide provides guidance for implementers for an example set of use cases. T
 The use cases have the source of the use case to identify where the use orginated from and where possible contact details for the source. The guidance should be in enough detail to allow implementers to build the functionally provided by the use case into their system. This guidance may also link off to guidance provided by other organisations or standard bodies if applicable. 
 
 
-
 <br/><br/>
 
 <table align="center">
@@ -17,3 +16,5 @@ The use cases have the source of the use case to identify where the use orginate
     <th>{{render:PRSB-logo}}</th>
   </tr>
 </table>
+
+

@@ -22,6 +22,10 @@ topic: STU3Sequence
 <br>
 <b>General IG improvements:</b><br>
 <ul>
+<li> NamingSystems page created to link users to the NamingSystems Guide
+</li>
+<li>Changes to Index tables to render assets and links automatically
+</li>
 <li>The following CodeSystem are new:
 <code>CodeSystem-UKCore-PeriodType</code>,
 <code>CodeSystem-RecordingSetting</code>,
