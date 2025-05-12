@@ -10,23 +10,23 @@
 	"entry": [
 		{
 			"fullUrl": "urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0",
-            "resource": {
-                "resourceType": "MessageHeader",
-                "id": "a4409d7c-b613-477c-b623-87e60406c2f0",
-                "eventCoding": {
-                    "system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
-                    "code": "genomictestrequest",
-                    "display": "Genomic Test Request"
-                },
-                "source": {
-                    "endpoint": "https://www.christie.nhs.uk/ehr"
-                },
-                "focus":  [
-                    {
-                        "reference": "urn:uuid:66c519dd-423f-4238-89c8-91c5be52f330"
-                    }
-                ]
-            }
+			"resource": {
+				"resourceType": "MessageHeader",
+				"id": "a4409d7c-b613-477c-b623-87e60406c2f0",
+				"eventCoding": {
+					"system": "https://fhir.nhs.uk/CodeSystem/message-events-genomics",
+					"code": "genomictestrequest",
+					"display": "Genomic Test Request"
+				},
+				"source": {
+					"endpoint": "https://www.christie.nhs.uk/ehr"
+				},
+				"focus": [
+					{
+						"reference": "urn:uuid:66c519dd-423f-4238-89c8-91c5be52f330"
+					}
+				]
+			}
 		},
 		{
 			"fullUrl": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97",
@@ -37,14 +37,14 @@
 					{
 						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex",
 						"valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
-                  "code": "M",
-                  "display": "Male"
-                }
-              ]
-            }
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+									"code": "M",
+									"display": "Male"
+								}
+							]
+						}
 					},
 					{
 						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
@@ -107,7 +107,7 @@
 						"url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Coverage",
 						"valueCodeableConcept": {
 							"coding": [
-						    {
+								{
 									"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-FundingCategory",
 									"code": "nhs-england",
 									"display": "NHS England"
@@ -125,44 +125,33 @@
 				"status": "active",
 				"intent": "order",
 				"category": [
-					{ 
+					{
 						"coding": [
-							{ 
-								"system": "http://snomed.info/sct", 
-								"code": "405824009", 
+							{
+								"system": "http://snomed.info/sct",
+								"code": "405824009",
 								"display": "Genetic test"
 							}
 						]
 					}
 				],
 				"priority": "routine",
-				"code": { 
+				"code": {
 					"coding": [
-						{ 
-							"system": "http://snomed.info/sct", 
-							"code": "63491000000109", 
+						{
+							"system": "http://snomed.info/sct",
+							"code": "63491000000109",
 							"display": "Paediatric IDH-wildtype glioblastoma tumour and germline WGS (whole genome sequencing)"
 						}
 					]
 				},
-				"subject":  {
+				"subject": {
 					"reference": "urn:uuid:41e4b604-37f3-4799-a6b3-ab5b104f3c97"
 				},
 				"authoredOn": "2022-07-11T09:00:00Z",
 				"requester": {
 					"reference": "urn:uuid:3462583a-536c-4bad-99d3-44dc553921fd"
-				},
-				"reasonCode": [
-					{ 
-						"coding": [
-							{ 
-								"system": "http://snomed.info/sct", 
-								"code": "363418001", 
-								"display": "Malignant neoplasm of pancreas (disorder)"
-							}
-						]
-					}
-				]
+				}
 			}
 		},
 		{
@@ -190,7 +179,7 @@
 					},
 					"display": "NHS Trust - THE CHRISTIE NHS FOUNDATION TRUST"
 				},
-				"telecom" : [
+				"telecom": [
 					{
 						"system": "email",
 						"value": "lucy.hale@nhs.net"

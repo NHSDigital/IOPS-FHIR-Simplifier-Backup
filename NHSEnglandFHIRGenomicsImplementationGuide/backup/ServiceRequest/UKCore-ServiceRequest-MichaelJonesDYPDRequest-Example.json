@@ -19,7 +19,7 @@
 		{
 			"system": "https://www.christie.nhs.uk/ehr",
 			"value": "LabOrder123456",
-			"assigner":  {
+			"assigner": {
 				"identifier": {
 					"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 					"value": "RBV"
@@ -38,33 +38,33 @@
 	"status": "active",
 	"intent": "order",
 	"category": [
-		{ 
+		{
 			"coding": [
-				{ 
-					"system": "http://snomed.info/sct", 
-					"code": "405824009", 
+				{
+					"system": "http://snomed.info/sct",
+					"code": "405824009",
 					"display": "Genetic test"
 				}
 			]
 		}
 	],
 	"priority": "routine",
-	"code": { 
+	"code": {
 		"coding": [
-			{ 
-				"system": "http://snomed.info/sct", 
-				"code": "63491000000109", 
+			{
+				"system": "http://snomed.info/sct",
+				"code": "63491000000109",
 				"display": "Paediatric IDH-wildtype glioblastoma tumour and germline WGS (whole genome sequencing)"
 			}
 		]
 	},
-	"subject":  {
+	"subject": {
 		"identifier": {
 			"system": "https://fhir.nhs.uk/Id/nhs-number",
 			"value": "9999999999"
 		}
 	},
-	"encounter":  {
+	"encounter": {
 		"display": "Encounter/UKCore-Encounter-OncologyConsultation-Example"
 	},
 	"authoredOn": "2022-07-11T09:00:00Z",
@@ -80,17 +80,6 @@
 				"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 				"value": "RBV"
 			}
-		}
-	],
-	"reasonCode": [
-		{ 
-			"coding": [
-				{ 
-					"system": "http://snomed.info/sct", 
-					"code": "363418001", 
-					"display": "Malignant neoplasm of pancreas (disorder)"
-				}
-			]
 		}
 	],
 	"specimen": [
