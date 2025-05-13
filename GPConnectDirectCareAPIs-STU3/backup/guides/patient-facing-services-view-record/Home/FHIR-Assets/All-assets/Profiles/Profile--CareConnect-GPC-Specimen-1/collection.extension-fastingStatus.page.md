@@ -23,7 +23,7 @@ Where this is indicated in the incoming EDIFACT report it will be indicated with
             <coding>
                 <display value="Patient was fasting prior to the procedure." />
                 <code value="F" />
-                <system value="http://terminology.hl7.org/ValueSet/v2-0916" />
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0916" />
             </coding>
             <text value="Patient was fasting prior to the procedure." />
         </valueCodeableConcept>

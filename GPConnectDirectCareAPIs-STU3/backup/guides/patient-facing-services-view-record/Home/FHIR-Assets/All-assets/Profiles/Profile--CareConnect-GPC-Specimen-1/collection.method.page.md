@@ -16,7 +16,7 @@ The technique used to perform collection.
 <collection>
     <method>
         <coding>
-            <system value="http://hl7.org/fhir/ValueSet/specimen-collection-method" />
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0488" />
             <code value="29240004" />
             <display value="Autopsy examination" />
         </coding>
