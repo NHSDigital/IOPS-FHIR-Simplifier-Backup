@@ -10,7 +10,7 @@ The following scenarios have been captured to indicate various specialist testin
 <li>Confirmation of if the woman has been diagnosed with cancer or is undergoing treatment becomes mandatory</li></ul>
     </td>
     <td>
-In this case, the data model SHOULD match the singleton scenario (Fetus is the Proband, however testing is on the woman's sample only)
+In this case, the data model SHOULD match the singleton scenario (Woman is the Proband, and testing is on the woman's sample only)
     </td>
   </tr>
   <tr>
@@ -20,7 +20,7 @@ In this case, the data model SHOULD match the singleton scenario (Fetus is the P
 <li>Confirmation of if the woman has been diagnosed with cancer or is undergoing treatment becomes mandatory</li></ul>
     </td>
     <td>
-In this case, the data model SHOULD match the singleton/duo/trio scenario (Fetus is the Proband and testing is on the woman's, man's or fetal sample as appropriate)
+In this case, the data model SHOULD match the singleton/duo/trio scenario (Woman is the Proband and testing is on the woman's, man's or fetal sample as appropriate)
     </td>
   </tr>
   <tr>
