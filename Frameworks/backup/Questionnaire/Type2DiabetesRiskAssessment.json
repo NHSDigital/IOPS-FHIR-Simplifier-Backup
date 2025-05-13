@@ -302,7 +302,7 @@
       ]
     },
     {
-      "linkId": "271823025272",
+      "linkId": "271823025272_helpText",
       "prefix": "6",
       "text": "What is your Body Mass Index (BMI)?",
       "type": "group",
@@ -353,7 +353,7 @@
               }
             }
           ],
-          "linkId": "271823025272_helpText",
+          "linkId": "271823025272",
           "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
           "code": [
             {
@@ -365,7 +365,7 @@
           "prefix": "6.1",
           "text": "How tall are you?",
           "type": "quantity",
-          "required": true
+          "required": false
         },
         {
           "extension": [

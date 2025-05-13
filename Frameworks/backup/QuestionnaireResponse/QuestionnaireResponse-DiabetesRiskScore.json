@@ -74,11 +74,11 @@
         ]
       },
       {
-        "linkId": "271823025272",
+        "linkId": "271823025272_helpText",
         "text": "What is your Body Mass Index (BMI)?",
         "item": [
           {
-            "linkId": "271823025272_helpText",
+            "linkId": "271823025272",
             "text": "How tall are you?",
             "answer": [
               {
@@ -137,8 +137,11 @@
         "text": "Your risk score is:",
         "answer": [
           {
-            "valueCoding": {
-              "display": "Moderate 16-24"
+            "valueQuantity": {
+              "value": 15,
+              "unit": "ScoreOf",
+              "system": "http://unitsofmeasure.org",
+              "code": "{ScoreOf}"
             }
           }
         ]
