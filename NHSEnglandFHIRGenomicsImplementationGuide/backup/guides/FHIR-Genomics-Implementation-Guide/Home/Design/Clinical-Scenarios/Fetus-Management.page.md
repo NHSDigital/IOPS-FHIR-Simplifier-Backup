@@ -1,6 +1,10 @@
 ## {{page-title}}
 
-The following scenarios have been captured to indicate various specialist testing scenarios associated with testing for either the woman or the fetus:
+The following scenarios have been captured to indicate various specialist testing scenarios associated with testing for either the woman or the fetus.
+
+The following guidance relates to how the proband and report subject is represented within the data model, dependent on the who the testing is performed on and who the results are of the benefit of. 
+
+It is expected, in practice, all results would be attached to the woman's record until after birth, and assignment of an NHS number for the baby. It is the responsibility of the requesting/reporting systems to attach requests/reports to the appropriate subject within their local systems.
 
 <table class="assets">
   <th style="width:70%">Scenario</th><th>Modelling Considerations</th>
@@ -10,17 +14,17 @@ The following scenarios have been captured to indicate various specialist testin
 <li>Confirmation of if the woman has been diagnosed with cancer or is undergoing treatment becomes mandatory</li></ul>
     </td>
     <td>
-In this case, the data model SHOULD match the singleton scenario (Woman is the Proband, and testing is on the woman's sample only)
+In this case, the data model SHOULD match the singleton scenario (Woman is the Proband, and testing is on the woman's sample only). The fetal information MAY be added to the request alongside RelatedPerson and Patient resources for the fetus within the ServiceRequest.supportingInfo. The Specimen and DiagnositcReport SHOULD reference the woman as the subject.
     </td>
   </tr>
   <tr>
     <td>
 <ul><li><b>Woman is pregnant and the specialist testing is on the woman (e.g., NIPD):</b> The test request is created on the fetal record and the sample taken is from the woman</li>
-<li>NIPD would also require a paternal sample and cord blood or fetal tissue post delivery</li>
+<li>NIPD may also require a paternal sample and cord blood or fetal tissue post delivery</li>
 <li>Confirmation of if the woman has been diagnosed with cancer or is undergoing treatment becomes mandatory</li></ul>
     </td>
     <td>
-In this case, the data model SHOULD match the singleton/duo/trio scenario (Woman is the Proband and testing is on the woman's, man's or fetal sample as appropriate)
+In this case, the data model SHOULD match the singleton/duo/trio scenario (Woman is the Proband and testing is on the woman's, man's or fetal sample as appropriate). The fetal information SHOULD be added to the request alongside RelatedPerson and Patient resources for the fetus within the ServiceRequest.supportingInfo. The DiagnosticReport SHOULD reference the Woman as the subject.
     </td>
   </tr>
   <tr>
@@ -28,12 +32,12 @@ In this case, the data model SHOULD match the singleton/duo/trio scenario (Woman
 <ul><li><b>Woman is pregnant and testing is on the fetus (e.g., CVS or amnio):</b> The test requested is created on the fetal record. As part of fetus testing, the following information becomes mandatory:</li>
 <li>Woman's sample may be required for MCC (regardless of whether the condition is paternal), see R321.1</li>
 <li>the ability  to register a test against the fetus (this may differ from local organisation to another and is typically the woman’s Hospital ID plus indication of fetus ( Ex. WG1342Fetus A) - <b>Used as the unique fetal identifier prior to NHS Number allocation</b></li>
-<li>The capture of additional information such as fetal phenotypic sex (M/F/U or Unknown) and number of fetuses also becomes mandatory. - <b>Captured on the Patient resource for the foetus</b></li>
+<li>The capture of additional information such as fetal phenotypic sex (M/F/U or Unknown) and number of fetuses also becomes mandatory. - <b>Captured on the Patient resource for the fetus</b></li>
 <li>Pregnancy details: capture of Pregnancy type (Spontaneous conception, Surrogacy, or IVF Pregnancy). If IVF, the capture of own/donor egg/sperm and the age of the egg donor becomes mandatory - <b>Observation resources linked to the woman's patient record, as they relate to the pregnancy</b></li>
 <li><b>Note:</b> If fetus is under 24 weeks, the sample is from the woman (as fetal viability is from 24 weeks as per UK law) - <b>in this case the Proband (fetus) does not have any samples associated with their record.</b></li></ul>
     </td>
     <td>
-In this case, the data model SHOULD match the singleton/duo scenario (Fetus is the Proband, woman's record is captured through additional RelatedPerson and Patient records attached to ServiceRequest.supportingInfo, testing may be on both fetal and maternal samples but may be on maternal samples only).
+In this case, the data model SHOULD match the singleton/duo scenario (Fetus is the Proband, woman's record is captured through additional RelatedPerson and Patient records attached to ServiceRequest.supportingInfo, testing may be on both fetal and maternal samples but may be on maternal samples only). The DiagnosticReport SHOULD reference the fetus as the subject.
     </td>
   </tr>
   <tr>
@@ -44,15 +48,15 @@ In this case, the data model SHOULD match the singleton/duo scenario (Fetus is t
 <li>Pregnancy details: capture of Pregnancy type (Spontaneous conception, Surrogacy, or IVF Pregnancy). If IVF, the capture of own/donor egg/sperm and the age of the egg donor becomes mandatory - <b>Observation resources linked to the woman's patient record, as they relate to the pregnancy</b></li></ul>
     </td>
     <td>
-In this case, the data model SHOULD be equivalent to multiple singleton/duo tests (Fetus is the Proband for each test, woman's record is captured through additional RelatedPerson and Patient records attached to ServiceRequest.supportingInfo, testing may be on both fetal and maternal samples but may be on maternal samples only). Tests can possibly be linked via a shared requisition identifier on each ServiceRequest (pending further testing)
+In this case, the data model SHOULD be equivalent to multiple singleton/duo tests (Fetus is the Proband for each test, woman's record is captured through additional RelatedPerson and Patient records attached to ServiceRequest.supportingInfo, testing may be on both fetal and maternal samples but may be on maternal samples only). Tests can possibly be linked via a shared requisition identifier on each ServiceRequest (pending further testing). Each DiagnosticReport SHOULD reference the relevant fetus as the subject.
     </td>
   </tr>
   <tr>
     <td>
-<ul><li><b>Woman is pregnant and has had a miscarriage:</b> In these scenarios, further testing may be required to inform the management of future pregnancies. Testing may occur on the woman, fetus or sample from the previous pregnancy (if available).  A test request is created on the <b>woman’s</b> record with the confirmation of sample collected (if after 24 weeks as fetal tissue or cord blood)</li></ul>
+<ul><li><b>Products of Conception testing where the woman has had a miscarriage:</b> In these scenarios, further testing may be required to inform the management of future pregnancies. Testing may occur on the products of conception/stillborn fetus from the previous pregnancy (if available).  A test request is created on the <b>woman’s</b> record with the confirmation of sample collected (if after 24 weeks as fetal tissue or cord blood)</li></ul>
     </td>
     <td>
-In this case, the data model SHOULD match the singleton/duo scenario (Woman is the Proband, as testing is for the benefit of the woman, with foetal information captured through additional RelatedPerson and Patient records attached to the ServiceRequest). If samples from the previous miscarriage are tested, these should be added as pre-existing Specimens to the ServiceRequest (as per the DNA Storage, using stored sample example)
+In this case, the data model SHOULD match the singleton/duo scenario (Woman is the Proband, as testing is for the benefit of the woman, with fetal information captured through additional RelatedPerson and Patient records attached to the ServiceRequest). If samples from the previous miscarriage are tested, these should be added as pre-existing Specimens to the ServiceRequest (as per the DNA Storage, using stored sample example). The DiagnosticReport SHOULD reference the woman as the subject.
     </td>
   </tr>
 </table>
