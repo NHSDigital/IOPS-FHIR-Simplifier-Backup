@@ -9,6 +9,8 @@ AND
 
 Variant Re-interpretation SHALL be treated as a new test request (WGS and Non-WGS) where there is no sample allocated, based on re-interpretation of existing sequenced data and the generation of a new report once re-interpretation is complete. Existing or old data SHALL NOT be lost or overwritten in the event a new there is a new re-interpretation request. 
 
+As with the reanalysis scenario, there is a requirement to indicate the original test directory code for which reanalysis is being actioned upon as part of the electronic test request ordered and capture additional information as part of the test request.
+
 ### [Link to the High Fidelity Wireframe for the Variant Re-interpretation Scenario](https://kljmrk.axshare.com/)
 
 The following steps is a walk through of:
@@ -34,7 +36,7 @@ Call to Digital Test Directory (out of scope for GMS central broker)
 
 POST of {{pagelink:ServiceRequest-NonWGSTestOrder-VariantReinterpretation-Example}}
 
-Note: Supporting info can be optionally obtained from data related to the previous ServiceRequest (linked from ServiceRequest.basedOn), if unchanged.
+Note: Supporting info can be optionally obtained from data related to the previous ServiceRequest (linked from ServiceRequest.basedOn), if unchanged. However, the ServiceRequest SHOULD always be linked to a previous request in all cases.
 
 ### 4. Requester indicates that no sample is required.
 

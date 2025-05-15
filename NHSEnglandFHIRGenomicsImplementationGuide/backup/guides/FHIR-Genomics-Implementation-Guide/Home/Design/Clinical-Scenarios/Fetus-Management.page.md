@@ -14,7 +14,7 @@ It is expected, in practice, all results would be attached to the woman's record
 <li>Confirmation of if the woman has been diagnosed with cancer or is undergoing treatment becomes mandatory</li></ul>
     </td>
     <td>
-In this case, the data model SHOULD match the singleton scenario (Woman is the Proband, and testing is on the woman's sample only). The fetal information MAY be added to the request alongside RelatedPerson and Patient resources for the fetus within the ServiceRequest.supportingInfo. The Specimen and DiagnositcReport SHOULD reference the woman as the subject.
+In this case, the data model SHOULD match the singleton scenario (Woman is the Proband, and testing is on the woman's sample only). The fetal information MAY be added to the request alongside RelatedPerson and Patient resources for the fetus within the ServiceRequest.supportingInfo. The Specimen and DiagnosticReport SHOULD reference the woman as the subject.
     </td>
   </tr>
   <tr>

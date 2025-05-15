@@ -172,10 +172,22 @@ Alternatively, systems MAY opt to include pointers to the Patient resource on th
 <br>
 <h3 id='non-fql-header'> Additional Guidance </h3>
 
+- <a href="#extension:fetalStatus">extension:fetalStatus</a>
 - <a href="#extension:UKCore-birthSex">extension:UKCore-birthSex</a>
 - <a href="#identifier">identifier</a>
 - <a href="#generalPractitioner">generalPractitioner</a>
 - <a href="#link">link</a>
+
+<a name="extension:fetalStatus"></a>
+<h4 class='additional-Guidance-Submenu'> extension:fetalStatus </h4>
+Extension used for determining the life status of the fetus. SHOULD always be present for a fetal patient record to help with identification.
+
+```json
+    {
+      "url": "http://hl7.org/fhir/6.0/StructureDefinition/extension-Patient.fetalStatus",
+      "valueCode": "potential-for-live-birth"
+    }
+  ```
 
 <a name="extension:UKCore-birthSex"></a>
 <h4 class='additional-Guidance-Submenu'> extension:UKCore-birthSex </h4>
