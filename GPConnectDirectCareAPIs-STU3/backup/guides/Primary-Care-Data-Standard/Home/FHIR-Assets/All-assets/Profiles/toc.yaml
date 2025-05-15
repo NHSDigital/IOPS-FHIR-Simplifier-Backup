@@ -50,8 +50,6 @@
   filename: Profile-CareConnect-QuestionnaireResponse-1
 - name: 'Profile: GPConnect-Appointment-1'
   filename: Profile-GPConnect-Appointment-1
-- name: 'Profile: GPConnect-Device-1'
-  filename: Profile-GPConnect-Device-1
 - name: 'Profile: GPConnect-OperationOutcome-1'
   filename: Profile-GPConnect-OperationOutcome-1
 - name: 'Profile: GPConnect-Schedule-1'
@@ -64,8 +62,6 @@
   filename: Profile-GPConnect-StructuredRecord-Bundle-1
 - name: 'Profile: GPConnect-Task-1'
   filename: Profile-GPConnect-Task-1
-- name: 'Profile: Binary'
-  filename: Profile-Binary
 - name: 'Profile: CareConnect-FamilyMemberHistory'
   filename: Profile-CareConnect-FamilyMemberHistory
 - name: 'Profile: CareConnect-EpisodeOfCare-1'
