@@ -50,8 +50,6 @@
   filename: Profile-CareConnect-QuestionnaireResponse-1
 - name: 'Profile: GPConnect-Appointment-1'
   filename: Profile-GPConnect-Appointment-1
-- name: 'Profile: GPConnect-OperationOutcome-1'
-  filename: Profile-GPConnect-OperationOutcome-1
 - name: 'Profile: GPConnect-Schedule-1'
   filename: Profile-GPConnect-Schedule-1
 - name: 'Profile: GPConnect-Searchset-Bundle-1'
