@@ -114,27 +114,6 @@
         </tr>
         <tr>
             <td></td>
-            <td>SearchParameters</td>
-            <td>The page will contain the SearchParameters for this implementation guide</td>
-            <td>May be present</td>
-            <td>Business,Architect,FHIR,Developer</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>OperationDefinitions</td>
-            <td>The page will contain the OperationDefinitions for this implementation guide</td>
-            <td>May be present</td>
-            <td>Business,Architect,FHIR,Developer</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>CapabilityStatements</td>
-            <td>The page will contain the CapabilityStatements for this implementation guide</td>
-            <td>May be present</td>
-            <td>Clinical,Business,Architect,FHIR,Developer</td>
-        </tr>
-        <tr>
-            <td></td>
             <td>Message Definition</td>
             <td>The page will contain the Message Definitions for this implementation guide</td>
             <td>May be present</td>
@@ -358,48 +337,6 @@
                 by the implementation</td>
             <td>Will be present</td>
             <td>Clinical,Business,Architect,FHIR,Developer</td>
-        </tr>
-        <tr>
-            <td>Authentication</td>
-            <td></td>
-            <td>This page needs a brief overview of the authentication section</td>
-            <td>May be present</td>
-            <td>Architect,Developer</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Access control</td>
-            <td>This page describes the access control guidance or requirements</td>
-            <td>May be present</td>
-            <td>Architect,Developer</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Access tokens</td>
-            <td>This page describes the access tokens guidance / requirements</td>
-            <td>May be present</td>
-            <td>Architect,Developer</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Auditing</td>
-            <td>This page describes the auditing requirements</td>
-            <td>May be present</td>
-            <td>Architect,Developer</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Security</td>
-            <td>This page describes the security guidance / requirements</td>
-            <td>May be present</td>
-            <td>Architect,Developer</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Integration with SPINE</td>
-            <td>This page describes any guidance / requirements about integration with SPINE.</td>
-            <td>May be present</td>
-            <td>Architect,Developer</td>
         </tr>
         <tr>
             <td>Downloads</td>
