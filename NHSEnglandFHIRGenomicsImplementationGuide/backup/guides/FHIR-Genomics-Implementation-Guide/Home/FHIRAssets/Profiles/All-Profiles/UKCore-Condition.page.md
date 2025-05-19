@@ -123,29 +123,28 @@ associated with the primary and secondary tumour respectively.
 
 ```json
 "extension": [
-{
-"url": "http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.bodyStructure",
-"valueReference": {
-"reference": "BodyStructure/BodyStructure-BodySiteLocationLungs-Example"
-}
-}
+  {
+    "url": "http://hl7.org/fhir/6.0/StructureDefinition/extension-Condition.bodyStructure",
+    "valueReference": {
+      "reference": "BodyStructure/BodyStructure-BodySiteLocationLungs-Example"
+    }
+  }
 ]
 ```
 
 <a name="code"></a>
 <h4 class='additional-Guidance-Submenu'> code </h4>
-SHOULD be present. SNOMED CT coding is preferred, though alternative codings MAY be provided subject to review of the
-Coding system by the NHS England Genomics Unit.
+SHOULD be present. SNOMED CT coding is preferred, though alternative codings MAY be provided where the code is not present in SNOMED CT, e.g. more specific test directory Clinical Indication codes MAY be used.
 
 ```json
 "code": {
-"coding": [
-{
-"system": "http://snomed.info/sct",
-"code": "95820000",
-"display": "Bilateral hearing loss"
-}
-]
+  "coding": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "95820000",
+      "display": "Bilateral hearing loss"
+    }
+  ]
 },
 ```
 
@@ -157,11 +156,11 @@ traced through PDS
 
 ```json
 "subject": {
-"reference": "Patient/Patient-MeirLieberman-Example",
-"identifier": {
-"system": "https://fhir.nhs.uk/Id/nhs-number",
-"value": "9449307873"
-}
+  "reference": "Patient/Patient-MeirLieberman-Example",
+  "identifier": {
+    "system": "https://fhir.nhs.uk/Id/nhs-number",
+    "value": "9449307873"
+  }
 },
 ```
 
@@ -172,9 +171,9 @@ cannot be structured due to the way this information has been recorded in source
 
 ```json
 "note": [
-{
-"text": "hearing loss since childhood (example)"
-}
+  {
+    "text": "hearing loss since childhood (example)"
+  }
 ]
 ```
 
