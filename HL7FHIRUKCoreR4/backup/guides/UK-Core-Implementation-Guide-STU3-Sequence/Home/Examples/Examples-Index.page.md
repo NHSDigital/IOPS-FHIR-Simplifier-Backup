@@ -139,7 +139,7 @@ Whilst every effort has been made to ensure that the examples are correct and us
 <li>{{pagelink:UKCore-QuestionnaireResponse-InpatientSurvey-Example}}</li>
 <li>{{pagelink:UKCore-RelatedPerson-JoySmith-Example}}</li>
 <li>{{pagelink:UKCore-RequestGroup-Ciprofloxacin-Example}}</li>
-<li>{{pagelink:UKCore-RequestGroup-MultipleAnitibiotics-Example}}</li>
+<li>{{pagelink:UKCore-RequestGroup-MultipleAntibiotics-Example}}</li>
 <li>{{pagelink:UKCore-RequestGroup-Paracetamol-Example}}</li>
 <li>{{pagelink:UKCore-Schedule-Immunization-Example}}</li>
 <li>{{pagelink:UKCore-ServiceRequest-ColonoscopyRequest-Example}}</li>
