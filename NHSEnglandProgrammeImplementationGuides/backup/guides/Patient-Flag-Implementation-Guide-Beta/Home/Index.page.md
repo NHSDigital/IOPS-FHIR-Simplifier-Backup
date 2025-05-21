@@ -49,15 +49,13 @@ The FGM Flag record contains:
 * an indicator that a child with female genitalia has a family history of FGM
 * the date that the FGM assessment was carried out
 
-## Child Protection - Information Sharing (CP-IS)
-
+### Child Protection - Information Sharing (CP-IS)
 The Child Protection Information Sharing (CP-IS) initiative aims to share information between NHS clinicians and Local Authority social care practitioners relating to children with either Child Protection, Looked After or Unborn Child care plans.
 
 Relevant data is uploaded to NHS Spine by a Local Authority system where it can be queried by NHS clinicians/practitioners. A response is returned to the practitioner showing any plans in existence for the specified NHS number and also the details of any device or person who has previously submitted a query against that NHS number. Further details of the API design are available.
 
-## Use cases
-
-Current uses are:-
+### Use cases
+Current use cases are:-
 
  - As a practitioner at an unscheduled care setting, i can look up whether a patient has a child protection plan (looked after child, Unborn child subject to child protection plan)
 
@@ -65,8 +63,7 @@ Current uses are:-
 
  - A clinician seeing a child/pregnant woman for scheduled care wishes to know if the child has a care plan, in order to provide contextual care for that person, without alerting the social worker.
 
-## Purpose
-
+### Purpose
 Authorized healthcare workers can:
 
  Query to determine if a patient has a Child Protection Plan
