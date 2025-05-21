@@ -1,4 +1,3 @@
-
 ### Introduction
 
 These pages provide guidance on how to implement the Booking and Referral Standard (BaRS) and {{pagelink:assure, text:gain accreditation}}. This guide is designed for developers, business analysts, product owners and anyone involved at any stage of going live with BaRS. 
