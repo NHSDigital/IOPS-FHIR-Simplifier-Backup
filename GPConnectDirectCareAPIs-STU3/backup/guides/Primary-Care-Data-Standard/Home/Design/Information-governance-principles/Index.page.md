@@ -9,3 +9,5 @@ The detailed requirements supporting these will be available as part of the prov
 
 Review and agreement as to IG model changes (to accommodate additional capabilities and use cases) is ongoing and will take into account any potential changes arising from the General Data Protection Regulation (GDPR) and other strategic projects in this arena. The programme privacy impact assessment is currently under review and will be updated accordingly. Specifications may evolve to meet changing health and care standards, legal frameworks and patient reasonable and informed expectation.
 </div>
+
+---
