@@ -1,152 +1,177 @@
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="d0a503d2-6809-4055-be82-308183e64734" />
-  <type value="message" />
-  <timestamp value="2021-05-07T16:15:32Z" />
-  <!--     Message Header     -->
-  <entry>
-    <fullUrl value="urn:message-header-167434" />
-    <resource>
-      <MessageHeader>
-        <id value="urn:message-header-167434" />
-        <eventCoding>
-          <system value="https://fhir.hl7.org.uk//CodeSystem/message-event" />
-          <code value="prescription-order" />
-          <display value="Prescription Order" />
-        </eventCoding>
-        <source>
-          <name value="ACME Clinical Systems" />
-          <software value="ACME ePMA" />
-          <version value="3.5.68" />
-          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
-        </source>
-        <focus>
-          <reference value="urn:med-req-1023938" />
-        </focus>
-      </MessageHeader>
-    </resource>
-  </entry>
-  <!--  Patient associated with the encounter.  -->
-  <entry>
-    <fullUrl value="urn:patient-013298920" />
-    <resource>
-      <Patient>
-        <id value="urn:patient-013298920" />
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="2377954310" />
-        </identifier>
-        <name>
-          <use value="official" />
-          <text value="Miss Paige Turner" />
-          <family value="Turner" />
-          <given value="Paige" />
-          <prefix value="Miss" />
-        </name>
-        <gender value="female" />
-        <birthDate value="1990-08-04" />
-      </Patient>
-    </resource>
-  </entry>
-  <!--  Prescribing clinician associated with the encounter.   -->
-  <entry>
-    <fullUrl value="urn:staff-1112" />
-    <resource>
-      <Practitioner>
-        <id value="urn:staff-1112" />
-        <name>
-          <text value="Dr Maikeu Well" />
-          <family value="Well" />
-          <given value="Maikeu" />
-          <prefix value="Dr" />
-        </name>
-        <qualification>
-          <code>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
-              <code value="2145879" />
-              <display value="General Medical Council" />
-            </coding>
-          </code>
-        </qualification>
-      </Practitioner>
-    </resource>
-  </entry>
-  <!--   Medication   -->
-  <entry>
-    <fullUrl value="urn:medication-109081006" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-109081006" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="325278007" />
-            <display value="Metformin 500mg tablets" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!--   Medication Request   -->
-  <entry>
-    <fullUrl value="urn:med-req-1023938" />
-    <resource>
-      <MedicationRequest>
-        <id value="urn:med-req-1023938" />
-        <status value="active" />
-        <intent value="order" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
-            <code value="discharge" />
-            <display value="discharge" />
-          </coding>
-        </category>
-        <medicationReference>
-          <reference value="urn:medication-325278007" />
-          <display value="Metformin 500mg tablets" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-013298920" />
-          <display value="Miss Paige Turner" />
-        </subject>
-        <authoredOn value="2020-05-15T15:00:00Z" />
-        <requester>
-          <reference value="urn:staff-1112" />
-          <display value="Dr Maikeu Well" />
-        </requester>
-        <recorder>
-          <reference value="urn:staff-4532" />
-          <display value="Bill Ding" />
-        </recorder>
-        <dosageInstruction>
-          <timing>
-            <repeat>
-              <frequency value="2" />
-              <period value="1" />
-              <periodUnit value="d" />
-            </repeat>
-          </timing>
-          <route>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="26643006" />
-              <display value="oral" />
-            </coding>
-          </route>
-          <doseAndRate>
-            <doseQuantity>
-              <value value="1" />
-              <unit value="tablet" />
-              <system value="http://unitsofmeasure.org" />
-              <code value="428673006" />
-            </doseQuantity>
-          </doseAndRate>
-        </dosageInstruction>
-        <substitution>
-          <allowedBoolean value="false" />
-        </substitution>
-      </MedicationRequest>
-    </resource>
-  </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "id": "d0a503d2-6809-4055-be82-308183e64734",
+    "type": "message",
+    "timestamp": "2021-05-07T16:15:32+00:00",
+    "entry":  [
+        {
+            "fullUrl": "urn:message-header-167434",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:message-header-167434",
+                "eventCoding": {
+                    "system": "https://fhir.hl7.org.uk//CodeSystem/message-event",
+                    "code": "prescription-order",
+                    "display": "Prescription Order"
+                },
+                "source": {
+                    "name": "ACME Clinical Systems",
+                    "software": "ACME ePMA",
+                    "version": "3.5.68",
+                    "endpoint": "urn:nhs-uk:addressing:ods:T48NT"
+                },
+                "focus":  [
+                    {
+                        "reference": "urn:med-req-1023938"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:patient-013298920",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "urn:patient-013298920",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "2377954310"
+                    }
+                ],
+                "name":  [
+                    {
+                        "use": "official",
+                        "text": "Miss Paige Turner",
+                        "family": "Turner",
+                        "given":  [
+                            "Paige"
+                        ],
+                        "prefix":  [
+                            "Miss"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1990-08-04"
+            }
+        },
+        {
+            "fullUrl": "urn:staff-1112",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "urn:staff-1112",
+                "name":  [
+                    {
+                        "text": "Dr Maikeu Well",
+                        "family": "Well",
+                        "given":  [
+                            "Maikeu"
+                        ],
+                        "prefix":  [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "qualification":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                                    "code": "2145879",
+                                    "display": "General Medical Council"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-109081006",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-109081006",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "42084911000001109",
+                            "display": "Metformin 500mg tablets"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:med-req-1023938",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "urn:med-req-1023938",
+                "status": "active",
+                "intent": "order",
+                "category":  [
+                    {
+                        "coding":  [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                                "code": "discharge",
+                                "display": "discharge"
+                            }
+                        ]
+                    }
+                ],
+                "medicationReference": {
+                    "reference": "urn:medication-325278007",
+                    "display": "Metformin 500mg tablets"
+                },
+                "subject": {
+                    "reference": "urn:patient-013298920",
+                    "display": "Miss Paige Turner"
+                },
+                "authoredOn": "2021-05-07T16:15:32+00:00",
+                "requester": {
+                    "reference": "urn:staff-1112",
+                    "display": "Dr Maikeu Well"
+                },
+                "recorder": {
+                    "reference": "urn:staff-4532",
+                    "display": "Bill Ding"
+                },
+                "dosageInstruction":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 1,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "428673006"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "substitution": {
+                    "allowedBoolean": false
+                }
+            }
+        }
+    ]
+}

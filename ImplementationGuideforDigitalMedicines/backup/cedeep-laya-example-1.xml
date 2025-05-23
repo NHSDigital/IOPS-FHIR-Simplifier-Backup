@@ -1,295 +1,330 @@
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="7cd3f180-76f7-4bc6-b6d5-e672acd83b81" />
-  <identifier>
-    <system value="urn:[organisation_name]:[system_name]" />
-    <value value="urn:8cd8108d-8c72-4fe9-a284-cd28b127fcfa" />
-  </identifier>
-  <type value="message" />
-  <timestamp value="2021-05-13T13:47:12Z" />
-  <!--  Message Header  -->
-  <entry>
-    <fullUrl value="urn:message-header-2123123" />
-    <resource>
-      <MessageHeader>
-        <id value="message-header-2123123" />
-        <source>
-          <name value="ACME Clinical Systems" />
-          <software value="ACME ePMA" />
-          <version value="3.5.68 - test" />
-          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
-        </source>
-        <eventCoding>
-          <system value="http://hl7.org/fhir/message-events" />
-          <code value="current-medication" />
-          <display value="Current Medication" />
-        </eventCoding>
-        <focus>
-          <reference value="urn:medication-statement-56642" />
-        </focus>
-        <focus>
-          <reference value="urn:medication-statement-1758563" />
-        </focus>
-        <focus>
-          <reference value="urn:medication-statement-322236009" />
-        </focus>
-      </MessageHeader>
-    </resource>
-  </entry>
-  <!--   // Patient associated with the encounter   -->
-  <entry>
-    <fullUrl value="urn:patient-00123943" />
-    <resource>
-      <Patient>
-        <id value="urn:patient-00123943" />
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="4857773457" />
-        </identifier>
-        <name>
-          <use value="official" />
-          <text value="Miss Cedeep Laya" />
-          <family value="Laya" />
-          <given value="Cedeep" />
-          <prefix value="Miss" />
-        </name>
-        <gender value="female" />
-        <birthDate value="1979-04-13" />
-      </Patient>
-    </resource>
-  </entry>
-  <!--   // Prescribing clinician associated with the encounter.    -->
-  <entry>
-    <fullUrl value="urn:staff-0002" />
-    <resource>
-      <Practitioner>
-        <id value="urn:staff-0002" />
-        <name>
-          <text value="Dr Maikeu Better" />
-          <family value="Better" />
-          <given value="Maikeu" />
-          <prefix value="Dr" />
-        </name>
-        <qualification>
-          <code>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
-              <code value="2145879" />
-              <display value="General Medical Council" />
-            </coding>
-          </code>
-        </qualification>
-      </Practitioner>
-    </resource>
-  </entry>
-  <!--   // Medication #1: Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd) two doses - twice daily   -->
-  <entry>
-    <fullUrl value="urn:medication-222311000001102" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-222311000001102" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="222311000001102" />
-            <display value="Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!--   // MedicationStatement #1: Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd) two doses - twice daily   -->
-  <entry>
-    <fullUrl value="urn:medication-statement-56642" />
-    <resource>
-      <MedicationStatement>
-        <id value="urn:medication-statement-56642" />
-        <status value="active" />
-        <category>
-          <coding>
-            <system value="http://hl7.org/fhir/medication-request-category" />
-            <code value="patientspecified" />
-            <display value="patientspecified" />
-          </coding>
-        </category>
-        <medicationReference>
-          <reference value="urn:medication-222311000001102" />
-          <display value="Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-00123943" />
-          <display value="Miss Cedeep Laya" />
-        </subject>
-        <dateAsserted value="2019-12-13T15:00:25Z" />
-        <informationSource>
-          <reference value="urn:staff-0002" />
-          <display value="Dr Maikeu Better" />
-        </informationSource>
-        <dosage>
-          <timing>
-            <repeat>
-              <frequency value="2" />
-              <period value="1" />
-              <periodUnit value="d" />
-            </repeat>
-          </timing>
-          <route>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="26643006" />
-              <display value="oral" />
-            </coding>
-          </route>
-          <doseAndRate>
-            <doseQuantity>
-              <value value="2" />
-              <unit value="dose" />
-              <system value="http://snomed.info/sct" />
-              <code value="3317411000001100" />
-            </doseQuantity>
-          </doseAndRate>
-        </dosage>
-      </MedicationStatement>
-    </resource>
-  </entry>
-  <!--   //  MedicationStatement #2: Becotide 100 inhaler (GlaxoSmithKline UK Ltd) one dose - twice daily  -->
-  <entry>
-    <fullUrl value="urn:medication-3178611000001100" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-3178611000001100" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="3178611000001100" />
-            <display value="Becotide 100 inhaler (GlaxoSmithKline UK Ltd)" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!--   //  MedicationStatement #2: Becotide 100 inhaler (GlaxoSmithKline UK Ltd) one dose - twice daily   -->
-  <entry>
-    <fullUrl value="urn:medication-statement-1758563" />
-    <resource>
-      <MedicationStatement>
-        <id value="urn:medication-statement-1758563" />
-        <status value="active" />
-        <category>
-          <coding>
-            <system value="http://hl7.org/fhir/medication-request-category" />
-            <code value="patientspecified" />
-            <display value="patientspecified" />
-          </coding>
-        </category>
-        <medicationReference>
-          <reference value="urn:medication-3178611000001100" />
-          <display value="Becotide 100 inhaler (GlaxoSmithKline UK Ltd)" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-00123943" />
-          <display value="Miss Cedeep Laya" />
-        </subject>
-        <dateAsserted value="2020-01-07T10:12:25Z" />
-        <informationSource>
-          <reference value="urn:staff-0002" />
-          <display value="Dr Maikeu Better" />
-        </informationSource>
-        <dosage>
-          <timing>
-            <repeat>
-              <frequency value="2" />
-              <period value="1" />
-              <periodUnit value="d" />
-            </repeat>
-          </timing>
-          <route>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="26643006" />
-              <display value="oral" />
-            </coding>
-          </route>
-          <doseAndRate>
-            <doseQuantity>
-              <value value="1" />
-              <unit value="dose" />
-              <system value="http://snomed.info/sct" />
-              <code value="3317411000001100" />
-            </doseQuantity>
-          </doseAndRate>
-        </dosage>
-      </MedicationStatement>
-    </resource>
-  </entry>
-  <!--   // Medication #3: Paracetamol 500mg tablets two to be taken when required - up to four times daily   -->
-  <entry>
-    <fullUrl value="urn:medication-322236009" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-322236009" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="322236009" />
-            <display value="Paracetamol 500mg tablets" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!--   // MedicationStatement #3: Paracetamol 500mg tablets   -->
-  <entry>
-    <fullUrl value="urn:medication-statement-322236009" />
-    <resource>
-      <MedicationStatement>
-        <id value="urn:medication-statement-322236009" />
-        <status value="active" />
-        <category>
-          <coding>
-            <system value="http://hl7.org/fhir/medication-request-category" />
-            <code value="patientspecified" />
-            <display value="patientspecified" />
-          </coding>
-        </category>
-        <medicationReference>
-          <reference value="urn:medication-322236009" />
-          <display value="Paracetamol 500mg tablets" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-00123943" />
-          <display value="Miss Cedeep Laya" />
-        </subject>
-        <dateAsserted value="2021-05-07T13:00:25Z" />
-        <informationSource>
-          <reference value="urn:staff-0002" />
-          <display value="Dr Maikeu Better" />
-        </informationSource>
-        <dosage>
-          <timing>
-            <repeat>
-              <frequencyMax value="4" />
-              <period value="1" />
-              <periodUnit value="d" />
-            </repeat>
-          </timing>
-          <asNeededBoolean value="true" />
-          <route>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="26643006" />
-              <display value="oral" />
-            </coding>
-          </route>
-          <doseAndRate>
-            <doseQuantity>
-              <value value="2" />
-              <unit value="tablet" />
-              <system value="http://snomed.info/sct" />
-              <code value="428673006" />
-            </doseQuantity>
-          </doseAndRate>
-        </dosage>
-      </MedicationStatement>
-    </resource>
-  </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "id": "7cd3f180-76f7-4bc6-b6d5-e672acd83b81",
+    "identifier": {
+        "system": "urn:[organisation_name]:[system_name]",
+        "value": "urn:8cd8108d-8c72-4fe9-a284-cd28b127fcfa"
+    },
+    "type": "message",
+    "timestamp": "2021-05-13T13:47:12+00:00",
+    "entry":  [
+        {
+            "fullUrl": "urn:message-header-2123123",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "message-header-2123123",
+                "eventCoding": {
+                    "system": "http://hl7.org/fhir/message-events",
+                    "code": "current-medication",
+                    "display": "Current Medication"
+                },
+                "source": {
+                    "name": "ACME Clinical Systems",
+                    "software": "ACME ePMA",
+                    "version": "3.5.68 - test",
+                    "endpoint": "urn:nhs-uk:addressing:ods:T48NT"
+                },
+                "focus":  [
+                    {
+                        "reference": "urn:medication-statement-56642"
+                    },
+                    {
+                        "reference": "urn:medication-statement-1758563"
+                    },
+                    {
+                        "reference": "urn:medication-statement-322236009"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:patient-00123943",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "urn:patient-00123943",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "4857773457"
+                    }
+                ],
+                "name":  [
+                    {
+                        "use": "official",
+                        "text": "Miss Cedeep Laya",
+                        "family": "Laya",
+                        "given":  [
+                            "Cedeep"
+                        ],
+                        "prefix":  [
+                            "Miss"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1979-04-13"
+            }
+        },
+        {
+            "fullUrl": "urn:staff-0002",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "urn:staff-0002",
+                "name":  [
+                    {
+                        "text": "Dr Maikeu Better",
+                        "family": "Better",
+                        "given":  [
+                            "Maikeu"
+                        ],
+                        "prefix":  [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "qualification":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                                    "code": "2145879",
+                                    "display": "General Medical Council"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-222311000001102",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-222311000001102",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "222311000001102",
+                            "display": "Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-56642",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-56642",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "patientspecified",
+                            "display": "patientspecified"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-222311000001102",
+                    "display": "Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)"
+                },
+                "subject": {
+                    "reference": "urn:patient-00123943",
+                    "display": "Miss Cedeep Laya"
+                },
+                "dateAsserted": "2021-05-13T13:47:12+00:00",
+                "informationSource": {
+                    "reference": "urn:staff-0002",
+                    "display": "Dr Maikeu Better"
+                },
+                "dosage":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 2,
+                                    "unit": "dose",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "3317411000001100"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-3178611000001100",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-3178611000001100",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "3178611000001100",
+                            "display": "Becotide 100 inhaler (GlaxoSmithKline UK Ltd)"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-1758563",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-1758563",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "patientspecified",
+                            "display": "patientspecified"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-3178611000001100",
+                    "display": "Becotide 100 inhaler (GlaxoSmithKline UK Ltd)"
+                },
+                "subject": {
+                    "reference": "urn:patient-00123943",
+                    "display": "Miss Cedeep Laya"
+                },
+                "dateAsserted": "2021-05-13T13:47:12+00:00",
+                "informationSource": {
+                    "reference": "urn:staff-0002",
+                    "display": "Dr Maikeu Better"
+                },
+                "dosage":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 1,
+                                    "unit": "dose",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "3317411000001100"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-322236009",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-322236009",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "42109611000001109",
+                            "display": "Paracetamol 500mg tablets"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-322236009",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-322236009",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "patientspecified",
+                            "display": "patientspecified"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-322236009",
+                    "display": "Paracetamol 500mg tablets"
+                },
+                "subject": {
+                    "reference": "urn:patient-00123943",
+                    "display": "Miss Cedeep Laya"
+                },
+                "dateAsserted": "2021-05-13T13:47:12+00:00",
+                "informationSource": {
+                    "reference": "urn:staff-0002",
+                    "display": "Dr Maikeu Better"
+                },
+                "dosage":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequencyMax": 4,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "asNeededBoolean": true,
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 2,
+                                    "unit": "tablet",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "428673006"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

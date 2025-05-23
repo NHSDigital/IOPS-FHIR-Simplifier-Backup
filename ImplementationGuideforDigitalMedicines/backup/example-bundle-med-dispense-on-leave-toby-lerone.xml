@@ -1,159 +1,185 @@
-<!--   This xml example is for illustrative purposes only and has not been clinically verified.   -->
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="746f7585-4fa0-42d9-b8d8-14c71217e112" />
-  <type value="message" />
-  <timestamp value="2021-05-07T16:15:32Z" />
-  <!--     Message Header     -->
-  <entry>
-    <fullUrl value="urn:message-header-167434" />
-    <resource>
-      <MessageHeader>
-        <id value="urn:message-header-167434" />
-        <eventCoding>
-          <system value="http://hl7.org/fhir/message-events" />
-          <code value="dispense-notification" />
-          <display value="Dispense Notification" />
-        </eventCoding>
-        <source>
-          <name value="ACME Clinical Systems" />
-          <software value="ACME Pharmacy" />
-          <version value="4.1.15" />
-          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
-        </source>
-        <focus>
-          <reference value="urn:med-disp-3949490" />
-        </focus>
-      </MessageHeader>
-    </resource>
-  </entry>
-  <!--  Patient associated with the encounter.  -->
-  <entry>
-    <fullUrl value="urn:patient-4738562854" />
-    <resource>
-      <Patient>
-        <id value="urn:patient-4738562854" />
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="4738562854" />
-        </identifier>
-        <name>
-          <use value="official" />
-          <text value="Mr Toby Lerone" />
-          <family value="Lerone" />
-          <given value="Toby" />
-          <prefix value="Mr" />
-        </name>
-        <gender value="male" />
-        <birthDate value="1973-02-20" />
-      </Patient>
-    </resource>
-  </entry>
-  <!--    Performer associated with the encounter.    -->
-  <entry>
-    <fullUrl value="urn:staff-0002" />
-    <resource>
-      <Practitioner>
-        <id value="urn:staff-0002" />
-        <name>
-          <text value="Dr Allo Kate" />
-          <family value="Kate" />
-          <given value="Allo" />
-          <prefix value="Dr" />
-        </name>
-        <qualification>
-          <code>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/Id/gpc-number" />
-              <code value="123543" />
-              <display value="General Pharmaceutical Council" />
-            </coding>
-          </code>
-        </qualification>
-      </Practitioner>
-    </resource>
-  </entry>
-  <!--   Medication   -->
-  <entry>
-    <fullUrl value="urn:medication-847211000001102" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-847211000001102" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="847211000001102" />
-            <display value="Cipramil 20mg tablets (Lundbeck Ltd)" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!--    Medication Dispense    -->
-  <entry>
-    <fullUrl value="urn:med-disp-3949490" />
-    <resource>
-      <MedicationDispense>
-        <id value="urn:med-disp-3949490" />
-        <identifier>
-          <system value="urn:[organisation_name]:[system_name]" />
-          <value value="urn:d27292c7-1cbe-47c5-8c56-370b97c17d17" />
-        </identifier>
-        <status value="in-progress" />
-        <medicationReference>
-          <reference value="urn:medication-847211000001102" />
-          <display value="Cipramil 20mg tablets (Lundbeck Ltd)" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-4738562854" />
-          <display value="Mr Toby Lerone" />
-        </subject>
-        <performer>
-          <actor>
-            <reference value="urn:staff-0002" />
-            <display value="Dr Allo Kate" />
-          </actor>
-        </performer>
-        <authorizingPrescription>
-          <reference value="urn:med-req-12312312" />
-        </authorizingPrescription>
-        <quantity>
-          <value value="3" />
-          <unit value="tablet" />
-          <system value="http://snomed.info/sct" />
-          <code value="428673006" />
-        </quantity>
-        <daysSupply>
-          <value value="3" />
-          <unit value="Day" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="d" />
-        </daysSupply>
-        <whenPrepared value="2021-05-07T16:15:32Z" />
-        <dosageInstruction>
-          <timing>
-            <repeat>
-              <frequency value="1" />
-              <period value="1" />
-              <periodUnit value="d" />
-            </repeat>
-          </timing>
-          <route>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="428673006" />
-              <display value="oral" />
-            </coding>
-          </route>
-          <doseAndRate>
-            <doseQuantity>
-              <value value="1" />
-              <unit value="tablet" />
-              <system value="http://snomed.info/sct" />
-              <code value="428641000" />
-            </doseQuantity>
-          </doseAndRate>
-        </dosageInstruction>
-      </MedicationDispense>
-    </resource>
-  </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "id": "746f7585-4fa0-42d9-b8d8-14c71217e112",
+    "type": "message",
+    "timestamp": "2021-05-07T16:15:32+00:00",
+    "entry":  [
+        {
+            "fullUrl": "urn:message-header-167434",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:message-header-167434",
+                "eventCoding": {
+                    "system": "http://hl7.org/fhir/message-events",
+                    "code": "dispense-notification",
+                    "display": "Dispense Notification"
+                },
+                "source": {
+                    "name": "ACME Clinical Systems",
+                    "software": "ACME Pharmacy",
+                    "version": "4.1.15",
+                    "endpoint": "urn:nhs-uk:addressing:ods:T48NT"
+                },
+                "focus":  [
+                    {
+                        "reference": "urn:med-disp-3949490"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:patient-4738562854",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "urn:patient-4738562854",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "4738562854"
+                    }
+                ],
+                "name":  [
+                    {
+                        "use": "official",
+                        "text": "Mr Toby Lerone",
+                        "family": "Lerone",
+                        "given":  [
+                            "Toby"
+                        ],
+                        "prefix":  [
+                            "Mr"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1973-02-20"
+            }
+        },
+        {
+            "fullUrl": "urn:staff-0002",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "urn:staff-0002",
+                "name":  [
+                    {
+                        "text": "Dr Allo Kate",
+                        "family": "Kate",
+                        "given":  [
+                            "Allo"
+                        ],
+                        "prefix":  [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "qualification":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "https://fhir.hl7.org.uk/Id/gpc-number",
+                                    "code": "123543",
+                                    "display": "General Pharmaceutical Council"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-847211000001102",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-847211000001102",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "847211000001102",
+                            "display": "Cipramil 20mg tablets (Lundbeck Ltd)"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:med-disp-3949490",
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "urn:med-disp-3949490",
+                "identifier":  [
+                    {
+                        "system": "urn:[organisation_name]:[system_name]",
+                        "value": "urn:d27292c7-1cbe-47c5-8c56-370b97c17d17"
+                    }
+                ],
+                "status": "in-progress",
+                "medicationReference": {
+                    "reference": "urn:medication-847211000001102",
+                    "display": "Cipramil 20mg tablets (Lundbeck Ltd)"
+                },
+                "subject": {
+                    "reference": "urn:patient-4738562854",
+                    "display": "Mr Toby Lerone"
+                },
+                "performer":  [
+                    {
+                        "actor": {
+                            "reference": "urn:staff-0002",
+                            "display": "Dr Allo Kate"
+                        }
+                    }
+                ],
+                "authorizingPrescription":  [
+                    {
+                        "reference": "urn:med-req-12312312"
+                    }
+                ],
+                "quantity": {
+                    "value": 3,
+                    "unit": "tablet",
+                    "system": "http://snomed.info/sct",
+                    "code": "428673006"
+                },
+                "daysSupply": {
+                    "value": 3,
+                    "unit": "Day",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenPrepared": "2021-05-07T16:15:32+00:00",
+                "dosageInstruction":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 1,
+                                    "unit": "tablet",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "428641000"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

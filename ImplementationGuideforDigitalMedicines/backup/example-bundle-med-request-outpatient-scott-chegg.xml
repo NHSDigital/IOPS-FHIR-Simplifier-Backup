@@ -1,188 +1,225 @@
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="d3f6aa00-24a3-45fe-87fd-877820f5f0e8" />
-  <identifier>
-    <system value="urn:[organisation_name]:[system_name]" />
-    <value value="urn:39920ce3-e585-4ef2-921b-9128fcfd307f" />
-  </identifier>
-  <type value="message" />
-  <timestamp value="2021-05-07T16:15:32Z" />
-  <!--   Message Header   -->
-  <entry>
-    <fullUrl value="urn:message-header-167434" />
-    <resource>
-      <MessageHeader>
-        <id value="urn:message-header-167434" />
-        <eventCoding>
-          <system value="https://fhir.hl7.org.uk//CodeSystem/message-event" />
-          <code value="prescription-order" />
-          <display value="Prescription Order" />
-        </eventCoding>
-        <source>
-          <name value="ACME Clinical Systems" />
-          <software value="ACME ePMA" />
-          <version value="3.5.68" />
-          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
-        </source>
-        <focus>
-          <reference value="urn:med-req-342355475687898" />
-        </focus>
-      </MessageHeader>
-    </resource>
-  </entry>
-  <!--Patient associated with the encounter.-->
-  <entry>
-    <fullUrl value="urn:patient-3204221854" />
-    <resource>
-      <Patient>
-        <id value="urn:patient-3204221854" />
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="3204221854" />
-        </identifier>
-        <name>
-          <use value="official" />
-          <text value="Mr Scott Chegg" />
-          <family value="Chegg" />
-          <given value="Scott" />
-          <prefix value="Mr" />
-        </name>
-        <gender value="male" />
-        <birthDate value="1960-04-02" />
-      </Patient>
-    </resource>
-  </entry>
-  <!--Prescribing clinician associated with the encounter. -->
-  <entry>
-    <fullUrl value="urn:staff-0001" />
-    <resource>
-      <Practitioner>
-        <id value="urn:staff-0001" />
-        <name>
-          <text value="Dr Justin Thyme" />
-          <family value="Thyme" />
-          <given value="Justin" />
-          <prefix value="Dr" />
-        </name>
-        <qualification>
-          <code>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
-              <code value="1234567" />
-              <display value="General Medical Council" />
-            </coding>
-          </code>
-        </qualification>
-      </Practitioner>
-    </resource>
-  </entry>
-  <!--Ward nurse associated with the encounter. -->
-  <entry>
-    <fullUrl value="urn:staff-0003" />
-    <resource>
-      <Practitioner>
-        <id value="urn:staff-0003" />
-        <name>
-          <text value="Levy Tate" />
-          <family value="Tate" />
-          <given value="Levy" />
-        </name>
-        <qualification>
-          <code>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/Id/nmc-number" />
-              <code value="71A2998E" />
-              <display value="Nurse Midwifery Council" />
-            </coding>
-          </code>
-        </qualification>
-      </Practitioner>
-    </resource>
-  </entry>
-  <!--Medication prescribed -->
-  <entry>
-    <fullUrl value="urn:medication-327337009" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-327337009" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="327337009" />
-            <display value="Goserelin 3.6mg implant pre-filled syringes" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!-- Medication Request -->
-  <entry>
-    <fullUrl value="urn:med-req-342355475687898" />
-    <resource>
-      <MedicationRequest>
-        <id value="urn:med-req-342355475687898" />
-        <identifier>
-          <system value="urn:[organisation_name]:[system_name]" />
-          <value value="urn:39920ce3-e585-4ef2-921b-9128fcfd307f" />
-        </identifier>
-        <status value="active" />
-        <intent value="order" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
-            <code value="inpatient" />
-            <display value="inpatient" />
-          </coding>
-        </category>
-        <priority value="routine" />
-        <medicationReference>
-          <reference value="urn:medication-327337009" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-3204221854" />
-          <display value="Mr Scott Chegg" />
-        </subject>
-        <authoredOn value="2020-04-30T17:00:00Z" />
-        <requester>
-          <reference value="urn:staff-0001" />
-          <display value="Dr Justin Thyme" />
-        </requester>
-        <recorder>
-          <reference value="urn:staff-0003" />
-          <display value="Levy Tate" />
-        </recorder>
-        <dosageInstruction>
-          <timing>
-            <event value="2020-05-01" />
-            <repeat>
-              <count value="1" />
-            </repeat>
-          </timing>
-          <site>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="59380008" />
-              <display value="Anterior abdominal wall structure" />
-            </coding>
-          </site>
-          <route>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="78421000" />
-              <display value="intramuscular route" />
-            </coding>
-          </route>
-          <method>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="422145002" />
-              <display value="inject" />
-            </coding>
-          </method>
-        </dosageInstruction>
-        <substitution>
-          <allowedBoolean value="false" />
-        </substitution>
-      </MedicationRequest>
-    </resource>
-  </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "id": "d3f6aa00-24a3-45fe-87fd-877820f5f0e8",
+    "identifier": {
+        "system": "urn:[organisation_name]:[system_name]",
+        "value": "urn:39920ce3-e585-4ef2-921b-9128fcfd307f"
+    },
+    "type": "message",
+    "timestamp": "2021-05-07T16:15:32+00:00",
+    "entry":  [
+        {
+            "fullUrl": "urn:message-header-167434",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:message-header-167434",
+                "eventCoding": {
+                    "system": "https://fhir.hl7.org.uk//CodeSystem/message-event",
+                    "code": "prescription-order",
+                    "display": "Prescription Order"
+                },
+                "source": {
+                    "name": "ACME Clinical Systems",
+                    "software": "ACME ePMA",
+                    "version": "3.5.68",
+                    "endpoint": "urn:nhs-uk:addressing:ods:T48NT"
+                },
+                "focus":  [
+                    {
+                        "reference": "urn:med-req-342355475687898"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:patient-3204221854",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "urn:patient-3204221854",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "3204221854"
+                    }
+                ],
+                "name":  [
+                    {
+                        "use": "official",
+                        "text": "Mr Scott Chegg",
+                        "family": "Chegg",
+                        "given":  [
+                            "Scott"
+                        ],
+                        "prefix":  [
+                            "Mr"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1960-04-02"
+            }
+        },
+        {
+            "fullUrl": "urn:staff-0001",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "urn:staff-0001",
+                "name":  [
+                    {
+                        "text": "Dr Justin Thyme",
+                        "family": "Thyme",
+                        "given":  [
+                            "Justin"
+                        ],
+                        "prefix":  [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "qualification":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                                    "code": "1234567",
+                                    "display": "General Medical Council"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:staff-0003",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "urn:staff-0003",
+                "name":  [
+                    {
+                        "text": "Levy Tate",
+                        "family": "Tate",
+                        "given":  [
+                            "Levy"
+                        ]
+                    }
+                ],
+                "qualification":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "https://fhir.hl7.org.uk/Id/nmc-number",
+                                    "code": "71A2998E",
+                                    "display": "Nurse Midwifery Council"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-327337009",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-327337009",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "42036711000001108",
+                            "display": "Goserelin 3.6mg implant pre-filled syringes"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:med-req-342355475687898",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "urn:med-req-342355475687898",
+                "identifier":  [
+                    {
+                        "system": "urn:[organisation_name]:[system_name]",
+                        "value": "urn:39920ce3-e585-4ef2-921b-9128fcfd307f"
+                    }
+                ],
+                "status": "active",
+                "intent": "order",
+                "category":  [
+                    {
+                        "coding":  [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                                "code": "inpatient",
+                                "display": "inpatient"
+                            }
+                        ]
+                    }
+                ],
+                "priority": "routine",
+                "medicationReference": {
+                    "reference": "urn:medication-327337009"
+                },
+                "subject": {
+                    "reference": "urn:patient-3204221854",
+                    "display": "Mr Scott Chegg"
+                },
+                "authoredOn": "2021-05-07T16:15:32+00:00",
+                "requester": {
+                    "reference": "urn:staff-0001",
+                    "display": "Dr Justin Thyme"
+                },
+                "recorder": {
+                    "reference": "urn:staff-0003",
+                    "display": "Levy Tate"
+                },
+                "dosageInstruction":  [
+                    {
+                        "timing": {
+                            "event":  [
+                                "2020-05-01"
+                            ],
+                            "repeat": {
+                                "count": 1
+                            }
+                        },
+                        "site": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "59380008",
+                                    "display": "Anterior abdominal wall structure"
+                                }
+                            ]
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "78421000",
+                                    "display": "Intramuscular route"
+                                }
+                            ]
+                        },
+                        "method": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "422145002",
+                                    "display": "Inject"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "substitution": {
+                    "allowedBoolean": false
+                }
+            }
+        }
+    ]
+}

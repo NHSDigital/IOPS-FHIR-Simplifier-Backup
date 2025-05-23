@@ -1,144 +1,166 @@
-<!-- This xml example is for illustrative purposes only and has not been clinically verified. -->
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="8b79e3a6-bff4-44c1-8924-63786afd6412" />
-  <type value="message" />
-  <timestamp value="2021-05-07T16:15:32Z" />
-  <!--    Message Header    -->
-  <entry>
-    <fullUrl value="urn:message-header-167434" />
-    <resource>
-      <MessageHeader>
-        <id value="urn:message-header-167434" />
-        <eventCoding>
-          <system value="https://fhir.hl7.org.uk//CodeSystem/message-event" />
-          <code value="prescription-order" />
-          <display value="Prescription Order" />
-        </eventCoding>
-        <source>
-          <name value="ACME Clinical Systems" />
-          <software value="ACME ePMA" />
-          <version value="3.5.68" />
-          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
-        </source>
-        <focus>
-          <reference value="urn:med-req-56745612" />
-        </focus>
-      </MessageHeader>
-    </resource>
-  </entry>
-  <!-- Patient associated with the encounter. -->
-  <entry>
-    <fullUrl value="urn:patient-748395739" />
-    <resource>
-      <Patient>
-        <id value="urn:patient-748395739" />
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="748395739" />
-        </identifier>
-        <name>
-          <use value="official" />
-          <text value="Miss Carrie Oakey" />
-          <family value="Oakey" />
-          <given value="Carrie" />
-          <prefix value="Miss" />
-        </name>
-        <gender value="male" />
-        <birthDate value="1977-06-04" />
-      </Patient>
-    </resource>
-  </entry>
-  <!-- Prescribing clinician associated with the encounter.  -->
-  <entry>
-    <fullUrl value="urn:staff-0001" />
-    <resource>
-      <Practitioner>
-        <id value="urn:staff-0001" />
-        <name>
-          <text value="Dr Justin Thyme" />
-          <family value="Thyme" />
-          <given value="Justin" />
-          <prefix value="Dr" />
-        </name>
-        <qualification>
-          <code>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
-              <code value="2145879" />
-              <display value="General Medical Council" />
-            </coding>
-          </code>
-        </qualification>
-      </Practitioner>
-    </resource>
-  </entry>
-  <!-- Medication  -->
-  <entry>
-    <fullUrl value="urn:medication-374372000" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-374372000" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="374372000" />
-            <display value="Betamethasone valerate 0.1% cream" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!--  Medication Request  -->
-  <entry>
-    <fullUrl value="urn:med-req-56745612" />
-    <resource>
-      <MedicationRequest>
-        <id value="urn:med-req-56745612" />
-        <status value="active" />
-        <intent value="order" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
-            <code value="outpatient" />
-            <display value="outpatient" />
-          </coding>
-        </category>
-        <priority value="routine" />
-        <medicationReference>
-          <reference value="urn:medication-374372000" />
-          <display value="Betamethasone valerate 0.1% cream" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-748395739" />
-          <display value="Miss Carrie Oakey" />
-        </subject>
-        <authoredOn value="2020-05-20T10:51:00Z" />
-        <requester>
-          <reference value="urn:staff-0001" />
-          <display value="Dr Justin Thyme" />
-        </requester>
-        <dosageInstruction>
-          <timing>
-            <repeat>
-              <duration value="2" />
-              <durationUnit value="wk" />
-              <frequency value="2" />
-              <period value="1" />
-              <periodUnit value="d" />
-            </repeat>
-          </timing>
-          <method>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="417924000" />
-              <display value="Apply" />
-            </coding>
-          </method>
-        </dosageInstruction>
-        <substitution>
-          <allowedBoolean value="false" />
-        </substitution>
-      </MedicationRequest>
-    </resource>
-  </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "id": "8b79e3a6-bff4-44c1-8924-63786afd6412",
+    "type": "message",
+    "timestamp": "2021-05-07T16:15:32+00:00",
+    "entry":  [
+        {
+            "fullUrl": "urn:message-header-167434",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:message-header-167434",
+                "eventCoding": {
+                    "system": "https://fhir.hl7.org.uk//CodeSystem/message-event",
+                    "code": "prescription-order",
+                    "display": "Prescription Order"
+                },
+                "source": {
+                    "name": "ACME Clinical Systems",
+                    "software": "ACME ePMA",
+                    "version": "3.5.68",
+                    "endpoint": "urn:nhs-uk:addressing:ods:T48NT"
+                },
+                "focus":  [
+                    {
+                        "reference": "urn:med-req-56745612"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:patient-748395739",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "urn:patient-748395739",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "748395739"
+                    }
+                ],
+                "name":  [
+                    {
+                        "use": "official",
+                        "text": "Miss Carrie Oakey",
+                        "family": "Oakey",
+                        "given":  [
+                            "Carrie"
+                        ],
+                        "prefix":  [
+                            "Miss"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1977-06-04"
+            }
+        },
+        {
+            "fullUrl": "urn:staff-0001",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "urn:staff-0001",
+                "name":  [
+                    {
+                        "text": "Dr Justin Thyme",
+                        "family": "Thyme",
+                        "given":  [
+                            "Justin"
+                        ],
+                        "prefix":  [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "qualification":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                                    "code": "2145879",
+                                    "display": "General Medical Council"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-374372000",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-374372000",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "41893111000001108",
+                            "display": "Betamethasone valerate 0.1% cream"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:med-req-56745612",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "urn:med-req-56745612",
+                "status": "active",
+                "intent": "order",
+                "category":  [
+                    {
+                        "coding":  [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                                "code": "outpatient",
+                                "display": "outpatient"
+                            }
+                        ]
+                    }
+                ],
+                "priority": "routine",
+                "medicationReference": {
+                    "reference": "urn:medication-374372000",
+                    "display": "Betamethasone valerate 0.1% cream"
+                },
+                "subject": {
+                    "reference": "urn:patient-748395739",
+                    "display": "Miss Carrie Oakey"
+                },
+                "authoredOn": "2021-05-07T16:15:32+00:00",
+                "requester": {
+                    "reference": "urn:staff-0001",
+                    "display": "Dr Justin Thyme"
+                },
+                "dosageInstruction":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "duration": 2,
+                                "durationUnit": "wk",
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "method": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "417924000",
+                                    "display": "Apply"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "substitution": {
+                    "allowedBoolean": false
+                }
+            }
+        }
+    ]
+}

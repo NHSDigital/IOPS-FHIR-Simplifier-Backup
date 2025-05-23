@@ -10,8 +10,4 @@ Infusions are complex because they may be dispensed and prepared in three ways;
 
 This difference changes the use of the `MedicationDispense` resources. The initiating `MedicationRequest` and any resulting `MedicationAdministration` resource should not be different due to the above but we will verify this as part of creating these implementation guidance examples.
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-yellow nhsd-!t-margin-bottom-6 nhsd-t-body">
-    <strong>Note:</strong> This page is work-in-progress and may be subject to change.
-</div>
-
 ---

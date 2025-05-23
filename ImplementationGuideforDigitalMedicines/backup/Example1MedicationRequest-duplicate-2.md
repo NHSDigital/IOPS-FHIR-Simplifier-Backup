@@ -1,6 +1,8 @@
 <a name="example1"></a>
 ## {{page-title}}
 
+<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body"><strong>Note:</strong> Example validated against UKCore, dm+d and SNOMED-CT on 23 May 2025.</div>
+
 ### Actors
 
 **Provider System** = Ward EPMA system

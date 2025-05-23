@@ -1,596 +1,661 @@
-<Bundle xmlns="http://hl7.org/fhir">
-    <id value="52e9c212-403a-40d5-a29c-bf8bda88a812" />
-    <identifier>
-        <system value="urn:[organisation_name]:[system_name]" />
-        <value value="urn:1089540d-7bd6-42cc-bfc1-e35b70b29d47" />
-    </identifier>
-    <type value="message" />
-    <timestamp value="2021-05-16T09:12:53Z" />
-    <!--  Message Header  -->
-    <entry>
-        <fullUrl value="urn:message-header-32423423" />
-        <resource>
-            <MessageHeader>
-                <id value="urn:message-header-32423423" />
-                <eventCoding>
-                    <system value="http://hl7.org/fhir/message-events" />
-                    <code value="current-medication" />
-                    <display value="Current Medication" />
-                </eventCoding>
-                <source>
-                    <name value="ACME Clinical Systems" />
-                    <software value="ACME ePMA" />
-                    <version value="3.5.68" />
-                    <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
-                </source>
-                <focus>
-                    <reference value="urn:medication-statement-12323434534" />
-                </focus>
-                <focus>
-                    <reference value="urn:medication-statement-34544333" />
-                </focus>
-                <focus>
-                    <reference value="urn:medication-statement-12354564" />
-                </focus>
-                <focus>
-                    <reference value="urn:medication-statement-0931203120" />
-                </focus>
-                <focus>
-                    <reference value="urn:medication-statement-3464323423" />
-                </focus>
-                <focus>
-                    <reference value="urn:medication-statement-7674545645" />
-                </focus>
-                <focus>
-                    <reference value="urn:medication-statement-234545645" />
-                </focus>
-            </MessageHeader>
-        </resource>
-    </entry>
-    <!--   // Patient associated with the encounter   -->
-    <entry>
-        <fullUrl value="urn:patient-00123943" />
-        <resource>
-            <Patient>
-                <id value="urn:patient-00123943" />
-                <identifier>
-                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
-                    <value value="00123943" />
-                </identifier>
-                <name>
-                    <use value="official" />
-                    <text value="Miss Cedeep Laya" />
-                    <family value="Laya" />
-                    <given value="Cedeep" />
-                    <prefix value="Miss" />
-                </name>
-                <gender value="female" />
-                <birthDate value="1979-04-13" />
-            </Patient>
-        </resource>
-    </entry>
-    <!--   // Prescribing clinician associated with the encounter.    -->
-    <entry>
-        <fullUrl value="urn:staff-0002" />
-        <resource>
-            <Practitioner>
-                <id value="urn:staff-0002" />
-                <name>
-                    <text value="Dr Maikeu Better" />
-                    <family value="Better" />
-                    <given value="Maikeu" />
-                    <prefix value="Dr" />
-                </name>
-                <qualification>
-                    <code>
-                        <coding>
-                            <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
-                            <code value="2145879" />
-                            <display value="General Medical Council" />
-                        </coding>
-                    </code>
-                </qualification>
-            </Practitioner>
-        </resource>
-    </entry>
-    <!--   // Medication #1: Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd) two doses - twice daily   -->
-    <entry>
-        <fullUrl value="urn:medication-345345345" />
-        <resource>
-            <Medication>
-                <id value="urn:medication-345345345" />
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct" />
-                        <code value="222311000001102" />
-                        <display value="Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)" />
-                    </coding>
-                </code>
-            </Medication>
-        </resource>
-    </entry>
-    <!--   // MedicationStatement #1: Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd) two doses - twice daily   -->
-    <entry>
-        <fullUrl value="urn:medication-statement-12323434534" />
-        <resource>
-            <MedicationStatement>
-                <id value="urn:medication-statement-12323434534" />
-                <status value="active" />
-                <category>
-                    <coding>
-                        <system value="http://hl7.org/fhir/medication-request-category" />
-                        <code value="community" />
-                        <display value="community" />
-                    </coding>
-                </category>
-                <medicationReference>
-                    <reference value="urn:medication-345345345" />
-                    <display value="Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)" />
-                </medicationReference>
-                <subject>
-                    <reference value="urn:patient-00123943" />
-                    <display value="Miss Cedeep Laya" />
-                </subject>
-                <dateAsserted value="2019-12-13T15:00:25Z" />
-                <informationSource>
-                    <reference value="urn:staff-0002" />
-                    <display value="Dr Maikeu Better" />
-                </informationSource>
-                <dosage>
-                    <timing>
-                        <repeat>
-                            <frequency value="2" />
-                            <period value="1" />
-                            <periodUnit value="d" />
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="http://snomed.info/sct" />
-                            <code value="26643006" />
-                            <display value="oral" />
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="2" />
-                            <unit value="dose" />
-                            <system value="http://snomed.info/sct" />
-                            <code value="3317411000001100" />
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-    <!--   //  MedicationStatement #2: Becotide 100 inhaler (GlaxoSmithKline UK Ltd) one dose - twice daily  -->
-    <entry>
-        <fullUrl value="urn:medication-554312" />
-        <resource>
-            <Medication>
-                <id value="urn:medication-554312" />
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct" />
-                        <code value="3178611000001100" />
-                        <display value="Becotide 100 inhaler (GlaxoSmithKline UK Ltd)" />
-                    </coding>
-                </code>
-            </Medication>
-        </resource>
-    </entry>
-    <!--   //  MedicationStatement #2: Becotide 100 inhaler (GlaxoSmithKline UK Ltd) one dose - twice daily   -->
-    <entry>
-        <fullUrl value="urn:medication-statement-34544333" />
-        <resource>
-            <MedicationStatement>
-                <id value="urn:medication-statement-34544333" />
-                <status value="active" />
-                <category>
-                    <coding>
-                        <system value="http://hl7.org/fhir/medication-request-category" />
-                        <code value="community" />
-                        <display value="community" />
-                    </coding>
-                </category>
-                <medicationReference>
-                    <reference value="urn:medication-554312" />
-                    <display value="Becotide 100 inhaler (GlaxoSmithKline UK Ltd)" />
-                </medicationReference>
-                <subject>
-                    <reference value="urn:patient-00123943" />
-                    <display value="Miss Cedeep Laya" />
-                </subject>
-                <dateAsserted value="2020-01-07T10:12:25Z" />
-                <informationSource>
-                    <reference value="urn:staff-0002" />
-                    <display value="Dr Maikeu Better" />
-                </informationSource>
-                <dosage>
-                    <timing>
-                        <repeat>
-                            <frequency value="2" />
-                            <period value="1" />
-                            <periodUnit value="d" />
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="http://snomed.info/sct" />
-                            <code value="26643006" />
-                            <display value="oral" />
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="1" />
-                            <unit value="dose" />
-                            <system value="http://snomed.info/sct" />
-                            <code value="3317411000001100" />
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-    <!--   // Medication #3: Paracetamol 500mg tablets two to be taken when required - up to four times daily   -->
-    <entry>
-        <fullUrl value="urn:medication-9908182" />
-        <resource>
-            <Medication>
-                <id value="urn:medication-9908182" />
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct" />
-                        <code value="322236009" />
-                        <display value="Paracetamol 500mg tablets" />
-                    </coding>
-                </code>
-            </Medication>
-        </resource>
-    </entry>
-    <!--   // MedicationStatement #3: Paracetamol 500mg tablets   -->
-    <entry>
-        <fullUrl value="urn:medication-statement-12354564" />
-        <resource>
-            <MedicationStatement>
-                <id value="urn:medication-statement-12354564" />
-                <status value="active" />
-                <category>
-                    <coding>
-                        <system value="http://hl7.org/fhir/medication-request-category" />
-                        <code value="community" />
-                        <display value="community" />
-                    </coding>
-                </category>
-                <medicationReference>
-                    <reference value="urn:medication-9908182" />
-                    <display value="Paracetamol 500mg tablets" />
-                </medicationReference>
-                <subject>
-                    <reference value="urn:patient-00123943" />
-                    <display value="Miss Cedeep Laya" />
-                </subject>
-                <dateAsserted value="2021-05-07T13:00:25Z" />
-                <informationSource>
-                    <reference value="urn:staff-0002" />
-                    <display value="Dr Maikeu Better" />
-                </informationSource>
-                <dosage>
-                    <timing>
-                        <repeat>
-                            <frequencyMax value="4" />
-                            <period value="1" />
-                            <periodUnit value="d" />
-                        </repeat>
-                    </timing>
-                    <asNeededBoolean value="true" />
-                    <route>
-                        <coding>
-                            <system value="http://snomed.info/sct" />
-                            <code value="26643006" />
-                            <display value="oral" />
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="2" />
-                            <unit value="tablet" />
-                            <system value="http://snomed.info/sct" />
-                            <code value="428673006" />
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-    <!--   // Medication #4: Diazepam   -->
-    <entry>
-        <fullUrl value="urn:medication-115643534" />
-        <resource>
-            <Medication>
-                <id value="urn:medication-115643534" />
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct" />
-                        <code value="48546005" />
-                        <display value="Diazepam" />
-                    </coding>
-                </code>
-            </Medication>
-        </resource>
-    </entry>
-    <!--   // MedicationStatement #4: Diazepam   -->
-    <entry>
-        <fullUrl value="urn:medication-statement-0931203120" />
-        <resource>
-            <MedicationStatement>
-                <id value="urn:medication-statement-0931203120" />
-                <status value="active" />
-                <category>
-                    <coding>
-                        <system value="http://hl7.org/fhir/medication-request-category" />
-                        <code value="inpatient" />
-                        <display value="inpatient" />
-                    </coding>
-                </category>
-                <medicationReference>
-                    <reference value="urn:medication-115643534" />
-                    <display value="Diazepam" />
-                </medicationReference>
-                <subject>
-                    <reference value="urn:patient-00123943" />
-                    <display value="Miss Cedeep Laya" />
-                </subject>
-                <dateAsserted value="2021-05-07T13:00:25Z" />
-                <informationSource>
-                    <reference value="urn:staff-0002" />
-                    <display value="Dr Maikeu Better" />
-                </informationSource>
-                <dosage>
-                    <timing>
-                        <repeat>
-                            <count value="1" />
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="http://snomed.info/sct" />
-                            <code value="26643006" />
-                            <display value="oral" />
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="5" />
-                            <unit value="milligram" />
-                            <system value="http://unitsofmeasure.org" />
-                            <code value="mg" />
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-    <!--   // Medication #5: Amoxicillin   -->
-    <entry>
-        <fullUrl value="urn:medication-442343243" />
-        <resource>
-            <Medication>
-                <id value="urn:medication-442343243" />
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct" />
-                        <code value="27658006" />
-                        <display value="Amoxicillin" />
-                    </coding>
-                </code>
-            </Medication>
-        </resource>
-    </entry>
-    <!--   // MedicationStatement #5: Amoxicillin   -->
-    <entry>
-        <fullUrl value="urn:medication-statement-3464323423" />
-        <resource>
-            <MedicationStatement>
-                <id value="urn:medication-statement-3464323423" />
-                <status value="active" />
-                <category>
-                    <coding>
-                        <system value="http://hl7.org/fhir/medication-request-category" />
-                        <code value="inpatient" />
-                        <display value="inpatient" />
-                    </coding>
-                </category>
-                <medicationReference>
-                    <reference value="urn:medication-442343243" />
-                    <display value="Amoxicillin" />
-                </medicationReference>
-                <subject>
-                    <reference value="urn:patient-00123943" />
-                    <display value="Miss Cedeep Laya" />
-                </subject>
-                <dateAsserted value="2021-05-07T13:00:25Z" />
-                <informationSource>
-                    <reference value="urn:staff-0002" />
-                    <display value="Dr Maikeu Better" />
-                </informationSource>
-                <dosage>
-                    <additionalInstruction>
-                        <text value="1 hour before the procedure" />
-                    </additionalInstruction>
-                    <timing>
-                        <repeat>
-                            <count value="1" />
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="http://snomed.info/sct" />
-                            <code value="26643006" />
-                            <display value="oral" />
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="3" />
-                            <unit value="gram" />
-                            <system value="http://unitsofmeasure.org" />
-                            <code value="g" />
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-    <!--   // Medication #6: Chlorhexidine gluconate 0.2% mouthwash   -->
-    <entry>
-        <fullUrl value="urn:medication-3342366" />
-        <resource>
-            <Medication>
-                <id value="urn:medication-3342366" />
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct" />
-                        <code value="39112311000001102" />
-                        <display value="Chlorhexidine gluconate 0.2% mouthwash" />
-                    </coding>
-                </code>
-            </Medication>
-        </resource>
-    </entry>
-    <!--   // MedicationStatement #6: Chlorhexidine gluconate 0.2% mouthwash   -->
-    <entry>
-        <fullUrl value="urn:medication-statement-7674545645" />
-        <resource>
-            <MedicationStatement>
-                <id value="urn:medication-statement-7674545645" />
-                <status value="active" />
-                <category>
-                    <coding>
-                        <system value="http://hl7.org/fhir/medication-request-category" />
-                        <code value="inpatient" />
-                        <display value="inpatient" />
-                    </coding>
-                </category>
-                <medicationReference>
-                    <reference value="urn:medication-3342366" />
-                    <display value="Chlorhexidine gluconate 0.2% mouthwash" />
-                </medicationReference>
-                <subject>
-                    <reference value="urn:patient-00123943" />
-                    <display value="Miss Cedeep Laya" />
-                </subject>
-                <dateAsserted value="2021-05-07T13:00:25Z" />
-                <informationSource>
-                    <reference value="urn:staff-0002" />
-                    <display value="Dr Maikeu Better" />
-                </informationSource>
-                <dosage>
-                    <additionalInstruction>
-                        <text value="to be used as a mouthwash" />
-                    </additionalInstruction>
-                    <timing>
-                        <repeat>
-                            <frequency value="4" />
-                            <period value="1" />
-                            <periodUnit value="d" />
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="http://snomed.info/sct" />
-                            <code value="26643006" />
-                            <display value="oral" />
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="10" />
-                            <unit value="millilitre" />
-                            <system value="http://unitsofmeasure.org" />
-                            <code value="ml" />
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-    <!--   // Medication #7: Enoxaparin   -->
-    <entry>
-        <fullUrl value="urn:medication-85635324" />
-        <resource>
-            <Medication>
-                <id value="urn:medication-85635324" />
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct" />
-                        <code value="108984007" />
-                        <display value="Enoxaparin" />
-                    </coding>
-                </code>
-            </Medication>
-        </resource>
-    </entry>
-    <!--   // MedicationStatement #7: Enoxaparin   -->
-    <entry>
-        <fullUrl value="urn:medication-statement-234545645" />
-        <resource>
-            <MedicationStatement>
-                <id value="urn:medication-statement-234545645" />
-                <status value="active" />
-                <category>
-                    <coding>
-                        <system value="http://hl7.org/fhir/medication-request-category" />
-                        <code value="inpatient" />
-                        <display value="inpatient" />
-                    </coding>
-                </category>
-                <medicationReference>
-                    <reference value="urn:medication-85635324" />
-                    <display value="Enoxaparin" />
-                </medicationReference>
-                <subject>
-                    <reference value="urn:patient-00123943" />
-                    <display value="Miss Cedeep Laya" />
-                </subject>
-                <dateAsserted value="2021-05-07T13:00:25Z" />
-                <informationSource>
-                    <reference value="urn:staff-0002" />
-                    <display value="Dr Maikeu Better" />
-                </informationSource>
-                <dosage>
-                    <timing>
-                        <repeat>
-                            <frequency value="12" />
-                            <period value="1" />
-                            <periodUnit value="h" />
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="http://snomed.info/sct" />
-                            <code value="34206005" />
-                            <display value="subcutaneous route" />
-                        </coding>
-                    </route>
-                    <method>
-                        <coding>
-                            <system value="http://snomed.info/sct" />
-                            <code value="422145002" />
-                            <display value="inject" />
-                        </coding>
-                    </method>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="60" />
-                            <unit value="milligram" />
-                            <system value="http://unitsofmeasure.org" />
-                            <code value="mg" />
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "id": "52e9c212-403a-40d5-a29c-bf8bda88a812",
+    "identifier": {
+        "system": "urn:[organisation_name]:[system_name]",
+        "value": "urn:1089540d-7bd6-42cc-bfc1-e35b70b29d47"
+    },
+    "type": "message",
+    "timestamp": "2021-05-16T09:12:53+00:00",
+    "entry":  [
+        {
+            "fullUrl": "urn:message-header-32423423",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:message-header-32423423",
+                "eventCoding": {
+                    "system": "http://hl7.org/fhir/message-events",
+                    "code": "current-medication",
+                    "display": "Current Medication"
+                },
+                "source": {
+                    "name": "ACME Clinical Systems",
+                    "software": "ACME ePMA",
+                    "version": "3.5.68",
+                    "endpoint": "urn:nhs-uk:addressing:ods:T48NT"
+                },
+                "focus":  [
+                    {
+                        "reference": "urn:medication-statement-12323434534"
+                    },
+                    {
+                        "reference": "urn:medication-statement-34544333"
+                    },
+                    {
+                        "reference": "urn:medication-statement-12354564"
+                    },
+                    {
+                        "reference": "urn:medication-statement-0931203120"
+                    },
+                    {
+                        "reference": "urn:medication-statement-3464323423"
+                    },
+                    {
+                        "reference": "urn:medication-statement-7674545645"
+                    },
+                    {
+                        "reference": "urn:medication-statement-234545645"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:patient-00123943",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "urn:patient-00123943",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "00123943"
+                    }
+                ],
+                "name":  [
+                    {
+                        "use": "official",
+                        "text": "Miss Cedeep Laya",
+                        "family": "Laya",
+                        "given":  [
+                            "Cedeep"
+                        ],
+                        "prefix":  [
+                            "Miss"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1979-04-13"
+            }
+        },
+        {
+            "fullUrl": "urn:staff-0002",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "urn:staff-0002",
+                "name":  [
+                    {
+                        "text": "Dr Maikeu Better",
+                        "family": "Better",
+                        "given":  [
+                            "Maikeu"
+                        ],
+                        "prefix":  [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "qualification":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                                    "code": "2145879",
+                                    "display": "General Medical Council"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-345345345",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-345345345",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "222311000001102",
+                            "display": "Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-12323434534",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-12323434534",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "community",
+                            "display": "community"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-345345345",
+                    "display": "Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)"
+                },
+                "subject": {
+                    "reference": "urn:patient-00123943",
+                    "display": "Miss Cedeep Laya"
+                },
+                "dateAsserted": "2019-12-13T15:00:25+00:00",
+                "informationSource": {
+                    "reference": "urn:staff-0002",
+                    "display": "Dr Maikeu Better"
+                },
+                "dosage":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 2,
+                                    "unit": "dose",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "3317411000001100"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-554312",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-554312",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "3178611000001100",
+                            "display": "Becotide 100 inhaler (GlaxoSmithKline UK Ltd)"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-34544333",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-34544333",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "community",
+                            "display": "community"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-554312",
+                    "display": "Becotide 100 inhaler (GlaxoSmithKline UK Ltd)"
+                },
+                "subject": {
+                    "reference": "urn:patient-00123943",
+                    "display": "Miss Cedeep Laya"
+                },
+                "dateAsserted": "2020-01-07T10:12:25+00:00",
+                "informationSource": {
+                    "reference": "urn:staff-0002",
+                    "display": "Dr Maikeu Better"
+                },
+                "dosage":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 1,
+                                    "unit": "dose",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "3317411000001100"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-9908182",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-9908182",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "42109611000001109",
+                            "display": "Paracetamol 500mg tablets"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-12354564",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-12354564",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "community",
+                            "display": "community"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-9908182",
+                    "display": "Paracetamol 500mg tablets"
+                },
+                "subject": {
+                    "reference": "urn:patient-00123943",
+                    "display": "Miss Cedeep Laya"
+                },
+                "dateAsserted": "2021-05-07T13:00:25+00:00",
+                "informationSource": {
+                    "reference": "urn:staff-0002",
+                    "display": "Dr Maikeu Better"
+                },
+                "dosage":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequencyMax": 4,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "asNeededBoolean": true,
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 2,
+                                    "unit": "tablet",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "428673006"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-115643534",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-115643534",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "775545008",
+                            "display": "Diazepam"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-0931203120",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-0931203120",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "inpatient",
+                            "display": "inpatient"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-115643534",
+                    "display": "Diazepam"
+                },
+                "subject": {
+                    "reference": "urn:patient-00123943",
+                    "display": "Miss Cedeep Laya"
+                },
+                "dateAsserted": "2021-05-07T13:00:25+00:00",
+                "informationSource": {
+                    "reference": "urn:staff-0002",
+                    "display": "Dr Maikeu Better"
+                },
+                "dosage":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "count": 1
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 5,
+                                    "unit": "milligram",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "mg"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-442343243",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-442343243",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "774586009",
+                            "display": "Amoxicillin"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-3464323423",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-3464323423",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "inpatient",
+                            "display": "inpatient"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-442343243",
+                    "display": "Amoxicillin"
+                },
+                "subject": {
+                    "reference": "urn:patient-00123943",
+                    "display": "Miss Cedeep Laya"
+                },
+                "dateAsserted": "2021-05-07T13:00:25+00:00",
+                "informationSource": {
+                    "reference": "urn:staff-0002",
+                    "display": "Dr Maikeu Better"
+                },
+                "dosage":  [
+                    {
+                        "additionalInstruction":  [
+                            {
+                                "text": "1 hour before the procedure"
+                            }
+                        ],
+                        "timing": {
+                            "repeat": {
+                                "count": 1
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 3,
+                                    "unit": "gram",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "g"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-3342366",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-3342366",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "39112311000001102",
+                            "display": "Chlorhexidine gluconate 0.2% mouthwash"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-7674545645",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-7674545645",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "inpatient",
+                            "display": "inpatient"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-3342366",
+                    "display": "Chlorhexidine gluconate 0.2% mouthwash"
+                },
+                "subject": {
+                    "reference": "urn:patient-00123943",
+                    "display": "Miss Cedeep Laya"
+                },
+                "dateAsserted": "2021-05-07T13:00:25+00:00",
+                "informationSource": {
+                    "reference": "urn:staff-0002",
+                    "display": "Dr Maikeu Better"
+                },
+                "dosage":  [
+                    {
+                        "additionalInstruction":  [
+                            {
+                                "text": "to be used as a mouthwash"
+                            }
+                        ],
+                        "timing": {
+                            "repeat": {
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 10,
+                                    "unit": "millilitre",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "ml"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-85635324",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-85635324",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "775768002",
+                            "display": "Enoxaparin"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-234545645",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-234545645",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "inpatient",
+                            "display": "inpatient"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-85635324",
+                    "display": "Enoxaparin"
+                },
+                "subject": {
+                    "reference": "urn:patient-00123943",
+                    "display": "Miss Cedeep Laya"
+                },
+                "dateAsserted": "2021-05-07T13:00:25+00:00",
+                "informationSource": {
+                    "reference": "urn:staff-0002",
+                    "display": "Dr Maikeu Better"
+                },
+                "dosage":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 12,
+                                "period": 1,
+                                "periodUnit": "h"
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "34206005",
+                                    "display": "Subcutaneous route"
+                                }
+                            ]
+                        },
+                        "method": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "422145002",
+                                    "display": "Inject"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 60,
+                                    "unit": "milligram",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "mg"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
