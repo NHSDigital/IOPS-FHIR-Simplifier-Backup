@@ -1,162 +1,194 @@
-<!--    This xml example is for illustrative purposes only and has not been clinically verified.    -->
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="f3374004-b796-4d0d-949d-3574b0103ec9" />
-  <type value="message" />
-  <timestamp value="2021-05-07T16:15:32Z" />
-  <!--    Message Header    -->
-  <entry>
-    <fullUrl value="urn:message-header-167434" />
-    <resource>
-      <MessageHeader>
-        <id value="urn:message-header-167434" />
-        <eventCoding>
-          <system value="http://hl7.org/fhir/message-events" />
-          <code value="individual-requirements-1" />
-          <display value="Individual Requirements" />
-        </eventCoding>
-        <source>
-          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
-        </source>
-        <focus>
-          <reference value="urn:medication-disp-56756345423" />
-        </focus>
-      </MessageHeader>
-    </resource>
-  </entry>
-  <!--   Patient associated with the encounter.   -->
-  <entry>
-    <fullUrl value="urn:patient-3204221854" />
-    <resource>
-      <Patient>
-        <id value="urn:patient-3204221854" />
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="3204221854" />
-        </identifier>
-        <name>
-          <use value="official" />
-          <text value="Mr Scott Chegg" />
-          <family value="Chegg" />
-          <given value="Scott" />
-          <prefix value="Mr" />
-        </name>
-        <gender value="male" />
-        <birthDate value="1960-04-02" />
-      </Patient>
-    </resource>
-  </entry>
-  <!--     Performer associated with the encounter.     -->
-  <entry>
-    <fullUrl value="urn:staff-0002" />
-    <resource>
-      <Practitioner>
-        <id value="urn:staff-0002" />
-        <name>
-          <text value="Dr Allo Kate" />
-          <family value="Kate" />
-          <given value="Allo" />
-          <prefix value="Dr" />
-        </name>
-        <qualification>
-          <code>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/Id/gpc-number" />
-              <code value="123543" />
-              <display value="General Pharmaceutical Council" />
-            </coding>
-          </code>
-        </qualification>
-      </Practitioner>
-    </resource>
-  </entry>
-  <!--   Medication  -->
-  <entry>
-    <fullUrl value="urn:medication-824211000001107" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-824211000001107" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="824211000001107" />
-            <display value="Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd)" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!--     Medication Dispense     -->
-  <entry>
-    <fullUrl value="urn:medication-disp-56756345423" />
-    <resource>
-      <MedicationDispense>
-        <id value="urn:medication-disp-56756345423" />
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="urn:2aa74d82-ae47-4783-8b7a-ff594bc2929f" />
-        </identifier>
-        <status value="in-progress" />
-        <category>
-          <coding>
-            <system value="http://hl7.org/fhir/medication-request-category" />
-            <code value="outpatient" />
-            <display value="outpatient" />
-          </coding>
-        </category>
-        <medicationReference>
-          <reference value="urn:medication-824211000001107" />
-          <display value="Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd)" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-3204221854" />
-          <display value="Mr Scott Chegg" />
-        </subject>
-        <performer>
-          <actor>
-            <reference value="urn:staff-0002" />
-            <display value="Dr Allo Kate" />
-          </actor>
-        </performer>
-        <authorizingPrescription>
-          <reference value="urn:med-req-342355475687898" />
-        </authorizingPrescription>
-        <quantity>
-          <value value="1" />
-          <unit value="pre-filled disposable injection" />
-          <system value="http://snomed.info/sct" />
-          <code value="3318611000001103" />
-        </quantity>
-        <whenPrepared value="2021-05-07T16:15:32Z" />
-        <dosageInstruction>
-          <timing>
-            <event value="2020-05-01" />
-            <repeat>
-              <count value="1" />
-            </repeat>
-          </timing>
-          <site>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="59380008" />
-              <display value="Anterior abdominal wall structure" />
-            </coding>
-          </site>
-          <route>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="78421000" />
-              <display value="intramuscular route" />
-            </coding>
-          </route>
-          <method>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="422145002" />
-              <display value="inject" />
-            </coding>
-          </method>
-        </dosageInstruction>
-      </MedicationDispense>
-    </resource>
-  </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "id": "f3374004-b796-4d0d-949d-3574b0103ec9",
+    "type": "message",
+    "timestamp": "2021-05-07T16:15:32+00:00",
+    "entry":  [
+        {
+            "fullUrl": "urn:message-header-167434",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:message-header-167434",
+                "eventCoding": {
+                    "system": "http://hl7.org/fhir/message-events",
+                    "code": "individual-requirements-1",
+                    "display": "Individual Requirements"
+                },
+                "source": {
+                    "endpoint": "urn:nhs-uk:addressing:ods:T48NT"
+                },
+                "focus":  [
+                    {
+                        "reference": "urn:medication-disp-56756345423"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:patient-3204221854",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "urn:patient-3204221854",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "3204221854"
+                    }
+                ],
+                "name":  [
+                    {
+                        "use": "official",
+                        "text": "Mr Scott Chegg",
+                        "family": "Chegg",
+                        "given":  [
+                            "Scott"
+                        ],
+                        "prefix":  [
+                            "Mr"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1960-04-02"
+            }
+        },
+        {
+            "fullUrl": "urn:staff-0002",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "urn:staff-0002",
+                "name":  [
+                    {
+                        "text": "Dr Allo Kate",
+                        "family": "Kate",
+                        "given":  [
+                            "Allo"
+                        ],
+                        "prefix":  [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "qualification":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "https://fhir.hl7.org.uk/Id/gpc-number",
+                                    "code": "123543",
+                                    "display": "General Pharmaceutical Council"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-824211000001107",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-824211000001107",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "824211000001107",
+                            "display": "Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd)"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-disp-56756345423",
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "urn:medication-disp-56756345423",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "urn:2aa74d82-ae47-4783-8b7a-ff594bc2929f"
+                    }
+                ],
+                "status": "in-progress",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "outpatient",
+                            "display": "outpatient"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-824211000001107",
+                    "display": "Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd)"
+                },
+                "subject": {
+                    "reference": "urn:patient-3204221854",
+                    "display": "Mr Scott Chegg"
+                },
+                "performer":  [
+                    {
+                        "actor": {
+                            "reference": "urn:staff-0002",
+                            "display": "Dr Allo Kate"
+                        }
+                    }
+                ],
+                "authorizingPrescription":  [
+                    {
+                        "reference": "urn:med-req-342355475687898"
+                    }
+                ],
+                "quantity": {
+                    "value": 1,
+                    "unit": "pre-filled disposable injection",
+                    "system": "http://snomed.info/sct",
+                    "code": "3318611000001103"
+                },
+                "whenPrepared": "2021-05-07T16:15:32+00:00",
+                "dosageInstruction":  [
+                    {
+                        "timing": {
+                            "event":  [
+                                "2020-05-01"
+                            ],
+                            "repeat": {
+                                "count": 1
+                            }
+                        },
+                        "site": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "59380008",
+                                    "display": "Anterior abdominal wall structure"
+                                }
+                            ]
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "78421000",
+                                    "display": "Intramuscular route"
+                                }
+                            ]
+                        },
+                        "method": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "422145002",
+                                    "display": "Inject"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

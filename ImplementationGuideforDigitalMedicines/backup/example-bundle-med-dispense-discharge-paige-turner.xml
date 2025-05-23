@@ -1,159 +1,185 @@
-<!--    This xml example is for illustrative purposes only and has not been clinically verified.    -->
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="830a2a41-cca8-46a3-a35c-3237cb9828e4" />
-  <type value="message" />
-  <timestamp value="2021-05-07T16:15:32Z" />
-  <!--     Message Header     -->
-  <entry>
-    <fullUrl value="urn:message-header-167434" />
-    <resource>
-      <MessageHeader>
-        <id value="urn:message-header-167434" />
-        <eventCoding>
-          <system value="http://hl7.org/fhir/message-events" />
-          <code value="dispense-notification" />
-          <display value="Dispense Notification" />
-        </eventCoding>
-        <source>
-          <name value="ACME Clinical Systems" />
-          <software value="ACME Pharmacy" />
-          <version value="4.1.15" />
-          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
-        </source>
-        <focus>
-          <reference value="urn:med-disp-324234234" />
-        </focus>
-      </MessageHeader>
-    </resource>
-  </entry>
-  <!--   Patient associated with the encounter.   -->
-  <entry>
-    <fullUrl value="urn:patient-113582401" />
-    <resource>
-      <Patient>
-        <id value="urn:patient-113582401" />
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="113582401" />
-        </identifier>
-        <name>
-          <use value="official" />
-          <text value="Ms Paige Turner" />
-          <family value="Turner" />
-          <given value="Paige" />
-          <prefix value="Ms" />
-        </name>
-        <gender value="female" />
-        <birthDate value="1982-11-20" />
-      </Patient>
-    </resource>
-  </entry>
-  <!--     Performer associated with the encounter.     -->
-  <entry>
-    <fullUrl value="urn:staff-0002" />
-    <resource>
-      <Practitioner>
-        <id value="urn:staff-0002" />
-        <name>
-          <text value="Dr Allo Kate" />
-          <family value="Kate" />
-          <given value="Allo" />
-          <prefix value="Dr" />
-        </name>
-        <qualification>
-          <code>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/Id/gpc-number" />
-              <code value="123543" />
-              <display value="General Pharmaceutical Council" />
-            </coding>
-          </code>
-        </qualification>
-      </Practitioner>
-    </resource>
-  </entry>
-  <!--   Medication  -->
-  <entry>
-    <fullUrl value="urn:medication-22349811000001106" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-22349811000001106" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="22349811000001106" />
-            <display value="Metformin 500mg tablets (Milpharm Ltd)" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!--     Medication Dispense     -->
-  <entry>
-    <fullUrl value="urn:med-disp-324234234" />
-    <resource>
-      <MedicationDispense>
-        <id value="urn:med-disp-324234234" />
-        <identifier>
-          <system value="urn:[organisation_name]:[system_name]" />
-          <value value="urn:55b65ae3-c4f3-4da3-8d8a-7a4af42122d47" />
-        </identifier>
-        <status value="in-progress" />
-        <medicationReference>
-          <reference value="urn:medication-22349811000001106" />
-          <display value="Metformin 500mg tablets (Milpharm Ltd)" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-113582401" />
-          <display value="Ms Paige Turner" />
-        </subject>
-        <performer>
-          <actor>
-            <reference value="urn:staff-0002" />
-            <display value="Dr Allo Kate" />
-          </actor>
-        </performer>
-        <authorizingPrescription>
-          <reference value="urn:med-req-1023938" />
-        </authorizingPrescription>
-        <quantity>
-          <value value="56" />
-          <unit value="tablet" />
-          <system value="http://snomed.info/sct" />
-          <code value="428673006" />
-        </quantity>
-        <daysSupply>
-          <value value="28" />
-          <unit value="Day" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="d" />
-        </daysSupply>
-        <whenPrepared value="2021-05-07T16:15:32Z" />
-        <dosageInstruction>
-          <timing>
-            <repeat>
-              <frequency value="2" />
-              <period value="1" />
-              <periodUnit value="d" />
-            </repeat>
-          </timing>
-          <route>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="428673006" />
-              <display value="oral" />
-            </coding>
-          </route>
-          <doseAndRate>
-            <doseQuantity>
-              <value value="1" />
-              <unit value="tablet" />
-              <system value="http://snomed.info/sct" />
-              <code value="428673006" />
-            </doseQuantity>
-          </doseAndRate>
-        </dosageInstruction>
-      </MedicationDispense>
-    </resource>
-  </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "id": "830a2a41-cca8-46a3-a35c-3237cb9828e4",
+    "type": "message",
+    "timestamp": "2021-05-07T16:15:32+00:00",
+    "entry":  [
+        {
+            "fullUrl": "urn:message-header-167434",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:message-header-167434",
+                "eventCoding": {
+                    "system": "http://hl7.org/fhir/message-events",
+                    "code": "dispense-notification",
+                    "display": "Dispense Notification"
+                },
+                "source": {
+                    "name": "ACME Clinical Systems",
+                    "software": "ACME Pharmacy",
+                    "version": "4.1.15",
+                    "endpoint": "urn:nhs-uk:addressing:ods:T48NT"
+                },
+                "focus":  [
+                    {
+                        "reference": "urn:med-disp-324234234"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:patient-113582401",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "urn:patient-113582401",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "113582401"
+                    }
+                ],
+                "name":  [
+                    {
+                        "use": "official",
+                        "text": "Ms Paige Turner",
+                        "family": "Turner",
+                        "given":  [
+                            "Paige"
+                        ],
+                        "prefix":  [
+                            "Ms"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1982-11-20"
+            }
+        },
+        {
+            "fullUrl": "urn:staff-0002",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "urn:staff-0002",
+                "name":  [
+                    {
+                        "text": "Dr Allo Kate",
+                        "family": "Kate",
+                        "given":  [
+                            "Allo"
+                        ],
+                        "prefix":  [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "qualification":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "https://fhir.hl7.org.uk/Id/gpc-number",
+                                    "code": "123543",
+                                    "display": "General Pharmaceutical Council"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-22349811000001106",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-22349811000001106",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "22349811000001106",
+                            "display": "Metformin 500mg tablets (Milpharm Ltd)"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:med-disp-324234234",
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "urn:med-disp-324234234",
+                "identifier":  [
+                    {
+                        "system": "urn:[organisation_name]:[system_name]",
+                        "value": "urn:55b65ae3-c4f3-4da3-8d8a-7a4af42122d47"
+                    }
+                ],
+                "status": "in-progress",
+                "medicationReference": {
+                    "reference": "urn:medication-22349811000001106",
+                    "display": "Metformin 500mg tablets (Milpharm Ltd)"
+                },
+                "subject": {
+                    "reference": "urn:patient-113582401",
+                    "display": "Ms Paige Turner"
+                },
+                "performer":  [
+                    {
+                        "actor": {
+                            "reference": "urn:staff-0002",
+                            "display": "Dr Allo Kate"
+                        }
+                    }
+                ],
+                "authorizingPrescription":  [
+                    {
+                        "reference": "urn:med-req-1023938"
+                    }
+                ],
+                "quantity": {
+                    "value": 56,
+                    "unit": "tablet",
+                    "system": "http://snomed.info/sct",
+                    "code": "428673006"
+                },
+                "daysSupply": {
+                    "value": 28,
+                    "unit": "Day",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenPrepared": "2021-05-07T16:15:32+00:00",
+                "dosageInstruction":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 1,
+                                    "unit": "tablet",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "428673006"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

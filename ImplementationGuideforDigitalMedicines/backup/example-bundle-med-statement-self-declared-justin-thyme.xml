@@ -1,116 +1,130 @@
-<!-- This xml example is for illustrative purposes only and has not been clinically verified. -->
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="921dacdd-3a3b-4649-ab03-f0b219486bc4" />
-  <type value="message" />
-  <timestamp value="2021-05-07T16:15:32Z" />
-  <!--   Message Header   -->
-  <entry>
-    <fullUrl value="urn:message-header-167434" />
-    <resource>
-      <MessageHeader>
-        <id value="urn:message-header-167434" />
-        <eventCoding>
-          <system value="https://fhir.hl7.org.uk//CodeSystem/message-event" />
-          <code value="medication-statement" />
-          <display value="Medication Statement" />
-        </eventCoding>
-        <source>
-          <name value="ACME Patient Facing Application" />
-          <software value="ACME PFA" />
-          <version value="1.2.00" />
-          <endpoint value="urn:nhs-uk:addressing:ods:U4S3A" />
-        </source>
-        <focus>
-          <reference value="urn:medication-statement-123123124456" />
-        </focus>
-      </MessageHeader>
-    </resource>
-  </entry>
-  <!-- Patient associated with the encounter. -->
-  <entry>
-    <fullUrl value="urn:patient-01020304" />
-    <resource>
-      <Patient>
-        <id value="urn:patient-01020304" />
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="4857774567" />
-        </identifier>
-        <name>
-          <use value="official" />
-          <text value="Mr Justin Thyme" />
-          <family value="Thyme" />
-          <given value="Justin" />
-          <prefix value="Mr" />
-        </name>
-        <gender value="male" />
-        <birthDate value="1979-05-29" />
-      </Patient>
-    </resource>
-  </entry>
-  <!-- Medication   -->
-  <entry>
-    <fullUrl value="urn:medication-123123123" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-123123123" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="90332006" />
-            <display value="Paracetamol" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!--  Medication Statement  -->
-  <entry>
-    <fullUrl value="urn:medication-statement-123123124456" />
-    <resource>
-      <MedicationStatement>
-        <id value="urn:medication-statement-123123124456" />
-        <status value="active" />
-        <category>
-          <coding>
-            <system value="http://hl7.org/fhir/medication-request-category" />
-            <code value="patientspecified" />
-            <display value="patientspecified" />
-          </coding>
-        </category>
-        <medicationReference>
-          <reference value="urn:medication-123123123" />
-          <display value="Paracetamol" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-01020304" />
-          <display value="Mr Justin Thyme" />
-        </subject>
-        <dosage>
-          <timing>
-            <repeat>
-              <frequency value="2" />
-              <period value="1" />
-              <periodUnit value="d" />
-            </repeat>
-          </timing>
-          <route>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="26643006" />
-              <display value="oral" />
-            </coding>
-          </route>
-          <doseAndRate>
-            <doseQuantity>
-              <value value="500" />
-              <unit value="milligram" />
-              <system value="http://unitsofmeasure.org" />
-              <code value="mg" />
-            </doseQuantity>
-          </doseAndRate>
-        </dosage>
-      </MedicationStatement>
-    </resource>
-  </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "id": "921dacdd-3a3b-4649-ab03-f0b219486bc4",
+    "type": "message",
+    "timestamp": "2021-05-07T16:15:32+00:00",
+    "entry":  [
+        {
+            "fullUrl": "urn:message-header-167434",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:message-header-167434",
+                "eventCoding": {
+                    "system": "https://fhir.hl7.org.uk//CodeSystem/message-event",
+                    "code": "medication-statement",
+                    "display": "Medication Statement"
+                },
+                "source": {
+                    "name": "ACME Patient Facing Application",
+                    "software": "ACME PFA",
+                    "version": "1.2.00",
+                    "endpoint": "urn:nhs-uk:addressing:ods:U4S3A"
+                },
+                "focus":  [
+                    {
+                        "reference": "urn:medication-statement-123123124456"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:patient-01020304",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "urn:patient-01020304",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "4857774567"
+                    }
+                ],
+                "name":  [
+                    {
+                        "use": "official",
+                        "text": "Mr Justin Thyme",
+                        "family": "Thyme",
+                        "given":  [
+                            "Justin"
+                        ],
+                        "prefix":  [
+                            "Mr"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1979-05-29"
+            }
+        },
+        {
+            "fullUrl": "urn:medication-123123123",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-123123123",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "777067000",
+                            "display": "Paracetamol"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-statement-123123124456",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "urn:medication-statement-123123124456",
+                "status": "active",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "patientspecified",
+                            "display": "patientspecified"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-123123123",
+                    "display": "Paracetamol"
+                },
+                "subject": {
+                    "reference": "urn:patient-01020304",
+                    "display": "Mr Justin Thyme"
+                },
+                "dosage":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate":  [
+                            {
+                                "doseQuantity": {
+                                    "value": 500,
+                                    "unit": "milligram",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "mg"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

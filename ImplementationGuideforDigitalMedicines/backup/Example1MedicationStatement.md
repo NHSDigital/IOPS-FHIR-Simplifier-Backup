@@ -1,6 +1,6 @@
 <h2><a name="example1"></a>Example #1: <code>Bundle</code> - Medication on Admission</h2>
 
-<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body"><strong>Note:</strong> This example below is a draft and requires clinical verification.</div>
+<div class="nhsd-a-box nhsd-a-box--bg-light-blue nhsd-!t-margin-bottom-6 nhsd-t-body"><strong>Note:</strong> Example validated against UKCore, dm+d and SNOMED-CT on 23 May 2025.</div>
 
 <!--// start of code snippet -->
 <div>

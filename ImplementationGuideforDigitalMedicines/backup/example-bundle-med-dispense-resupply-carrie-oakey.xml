@@ -1,151 +1,177 @@
-<!--   This xml example is for illustrative purposes only and has not been clinically verified.   -->
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="317590f8-ba1f-4583-a4e3-2c61cb2308a4" />
-  <type value="message" />
-  <timestamp value="2021-05-07T16:15:32Z" />
-  <!--    Message Header    -->
-  <entry>
-    <fullUrl value="urn:message-header-167434" />
-    <resource>
-      <MessageHeader>
-        <id value="urn:message-header-167434" />
-        <eventCoding>
-          <system value="http://hl7.org/fhir/message-events" />
-          <code value="individual-requirements-1" />
-          <display value="Individual Requirements" />
-        </eventCoding>
-        <source>
-          <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
-        </source>
-        <focus>
-          <reference value="urn:medication-disp-1231253" />
-        </focus>
-      </MessageHeader>
-    </resource>
-  </entry>
-  <!--  Patient associated with the encounter.  -->
-  <entry>
-    <fullUrl value="urn:patient-748395739" />
-    <resource>
-      <Patient>
-        <id value="urn:patient-748395739" />
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="748395739" />
-        </identifier>
-        <name>
-          <use value="official" />
-          <text value="Miss Carrie Oakey" />
-          <family value="Oakey" />
-          <given value="Carrie" />
-          <prefix value="Miss" />
-        </name>
-        <gender value="male" />
-        <birthDate value="1977-06-04" />
-      </Patient>
-    </resource>
-  </entry>
-  <!--    Performer associated with the encounter.    -->
-  <entry>
-    <fullUrl value="urn:staff-0002" />
-    <resource>
-      <Practitioner>
-        <id value="urn:staff-0002" />
-        <name>
-          <text value="Dr Allo Kate" />
-          <family value="Kate" />
-          <given value="Allo" />
-          <prefix value="Dr" />
-        </name>
-        <qualification>
-          <code>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/Id/gpc-number" />
-              <code value="123543" />
-              <display value="General Pharmaceutical Council" />
-            </coding>
-          </code>
-        </qualification>
-      </Practitioner>
-    </resource>
-  </entry>
-  <!--  Medication  -->
-  <entry>
-    <fullUrl value="urn:medication-15053011000001100" />
-    <resource>
-      <Medication>
-        <id value="urn:medication-15053011000001100" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="15053011000001100" />
-            <display value="Betamethasone valerate 0.1% cream (Sigma Pharmaceuticals Plc)" />
-          </coding>
-        </code>
-      </Medication>
-    </resource>
-  </entry>
-  <!--    Medication Dispense    -->
-  <entry>
-    <fullUrl value="urn:medication-disp-1231253" />
-    <resource>
-      <MedicationDispense>
-        <id value="urn:medication-disp-1231253" />
-        <identifier>
-                    <system value="urn:[organisation_name]:[system_name]" />
-                    <value value="urn:2e9c6fe6-77ec-4da0-937a-ba97b5501b3f" />
-                </identifier>
-        <status value="in-progress" />
-        <category>
-          <coding>
-            <system value="http://hl7.org/fhir/medication-request-category" />
-            <code value="outpatient" />
-            <display value="outpatient" />
-          </coding>
-        </category>
-        <medicationReference>
-          <reference value="urn:medication-15053011000001100" />
-          <display value="Betamethasone valerate 0.1% cream (Sigma Pharmaceuticals Plc)" />
-        </medicationReference>
-        <subject>
-          <reference value="urn:patient-748395739" />
-          <display value="Miss Carrie Oakey" />
-        </subject>
-        <performer>
-          <actor>
-            <reference value="urn:staff-0002" />
-            <display value="Dr Allo Kate" />
-          </actor>
-        </performer>
-        <authorizingPrescription>
-          <reference value="urn:med-req-342355475687898" />
-        </authorizingPrescription>
-        <quantity>
-          <value value="30" />
-          <unit value="gram" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="g" />
-        </quantity>
-        <whenPrepared value="2021-05-07T16:15:32Z" />
-        <dosageInstruction>
-          <timing>
-            <repeat>
-              <duration value="2" />
-              <durationUnit value="wk" />
-              <frequency value="2" />
-              <period value="1" />
-              <periodUnit value="d" />
-            </repeat>
-          </timing>
-          <method>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="417924000" />
-              <display value="Apply" />
-            </coding>
-          </method>
-        </dosageInstruction>
-      </MedicationDispense>
-    </resource>
-  </entry>
-</Bundle>
+{
+    "resourceType": "Bundle",
+    "id": "317590f8-ba1f-4583-a4e3-2c61cb2308a4",
+    "type": "message",
+    "timestamp": "2021-05-07T16:15:32+00:00",
+    "entry":  [
+        {
+            "fullUrl": "urn:message-header-167434",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "urn:message-header-167434",
+                "eventCoding": {
+                    "system": "http://hl7.org/fhir/message-events",
+                    "code": "individual-requirements-1",
+                    "display": "Individual Requirements"
+                },
+                "source": {
+                    "endpoint": "urn:nhs-uk:addressing:ods:T48NT"
+                },
+                "focus":  [
+                    {
+                        "reference": "urn:medication-disp-1231253"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:patient-748395739",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "urn:patient-748395739",
+                "identifier":  [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "748395739"
+                    }
+                ],
+                "name":  [
+                    {
+                        "use": "official",
+                        "text": "Miss Carrie Oakey",
+                        "family": "Oakey",
+                        "given":  [
+                            "Carrie"
+                        ],
+                        "prefix":  [
+                            "Miss"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1977-06-04"
+            }
+        },
+        {
+            "fullUrl": "urn:staff-0002",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "urn:staff-0002",
+                "name":  [
+                    {
+                        "text": "Dr Allo Kate",
+                        "family": "Kate",
+                        "given":  [
+                            "Allo"
+                        ],
+                        "prefix":  [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "qualification":  [
+                    {
+                        "code": {
+                            "coding":  [
+                                {
+                                    "system": "https://fhir.hl7.org.uk/Id/gpc-number",
+                                    "code": "123543",
+                                    "display": "General Pharmaceutical Council"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:medication-15053011000001100",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "urn:medication-15053011000001100",
+                "code": {
+                    "coding":  [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "15053011000001100",
+                            "display": "Betamethasone valerate 0.1% cream (Sigma Pharmaceuticals Plc)"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:medication-disp-1231253",
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "urn:medication-disp-1231253",
+                "identifier":  [
+                    {
+                        "system": "urn:[organisation_name]:[system_name]",
+                        "value": "urn:2e9c6fe6-77ec-4da0-937a-ba97b5501b3f"
+                    }
+                ],
+                "status": "in-progress",
+                "category": {
+                    "coding":  [
+                        {
+                            "system": "http://hl7.org/fhir/medication-request-category",
+                            "code": "outpatient",
+                            "display": "outpatient"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "urn:medication-15053011000001100",
+                    "display": "Betamethasone valerate 0.1% cream (Sigma Pharmaceuticals Plc)"
+                },
+                "subject": {
+                    "reference": "urn:patient-748395739",
+                    "display": "Miss Carrie Oakey"
+                },
+                "performer":  [
+                    {
+                        "actor": {
+                            "reference": "urn:staff-0002",
+                            "display": "Dr Allo Kate"
+                        }
+                    }
+                ],
+                "authorizingPrescription":  [
+                    {
+                        "reference": "urn:med-req-342355475687898"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "unit": "gram",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "g"
+                },
+                "whenPrepared": "2021-05-07T16:15:32+00:00",
+                "dosageInstruction":  [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "duration": 2,
+                                "durationUnit": "wk",
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "method": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "417924000",
+                                    "display": "Apply"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
