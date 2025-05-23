@@ -6,7 +6,7 @@ issue: UKCore-AllergyIntolerance
 ---
 # StructureDefinition {{variable:issue}}
 
-<nocheck>
+<nospellcheck>
 {{page:ProfileTemplate}}
 
 <div id="Examples" class="tabcontent">
@@ -23,7 +23,7 @@ issue: UKCore-AllergyIntolerance
 <b>Allergy List</b> - An example to illustrate a list of allergies contained in a Bundle resource.
 <br>{{pagelink:UKCore-Bundle-AllergyList-Example}}
 </div>
-</nocheck>
+nospellcheck
 
 
 <div id="ProfileGuidance">
