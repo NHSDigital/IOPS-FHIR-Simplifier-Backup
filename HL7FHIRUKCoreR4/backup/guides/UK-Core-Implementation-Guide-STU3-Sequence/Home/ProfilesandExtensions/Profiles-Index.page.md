@@ -46,10 +46,6 @@ select
 $(document).ready(function () {
     const queryString = window.location.search || "?version=current";
 
-    // Detect if we're in unpublished preview mode (i.e., using .page.md links)
-    const isUnpublished = window.location.pathname.includes(".page.md");
-    const pageSuffix = isUnpublished ? ".page.md" : "";
-
     // Convert {{guide-title}} into a URL-safe format
     const guideTitleUrl = "{{guide-title}}"
         .replace(/[^a-zA-Z0-9 ]/g, "")
@@ -72,7 +68,7 @@ $(document).ready(function () {
         // Remove sub-elements like .clinicalStatus
         const baseResource = resourceName.split(".")[0];
 
-        const url = `${profileBase}UKCore-${baseResource}${pageSuffix}${queryString}`;
+        const url = `${profileBase}${baseResource}${queryString}`;
         $resourceCell.html(`<a href="${url}">${resourceName}</a>`);
     });
 });
