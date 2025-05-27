@@ -23,7 +23,7 @@ issue: UKCore-AllergyIntolerance
 <b>Allergy List</b> - An example to illustrate a list of allergies contained in a Bundle resource.
 <br>{{pagelink:UKCore-Bundle-AllergyList-Example}}
 </div>
-nospellcheck
+</nospellcheck>
 
 
 <div id="ProfileGuidance">
