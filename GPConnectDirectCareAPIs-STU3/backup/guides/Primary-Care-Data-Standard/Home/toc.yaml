@@ -8,7 +8,5 @@
   filename: Design
 - name: Build
   filename: Build
-- name: Examples
-  filename: Examples
 - name: GP Connect Comparison
   filename: GP-Connect-Comparison
