@@ -1,8 +1,0 @@
-- name: Encounter
-  filename: Encounter
-- name: Medication
-  filename: Medication
-- name: MedicationRequest
-  filename: MedicationRequest
-- name: MedicationStatement
-  filename: MedicationStatement
