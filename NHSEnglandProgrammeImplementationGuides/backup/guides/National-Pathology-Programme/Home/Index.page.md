@@ -66,7 +66,7 @@ The current scope of this implementation guide reflects the priority of replacin
 
 ---
 
-### Implementation Guide Structure
+### How to Read This Guide
 This guide is divided into the following sections and pages which are accessible from the top-level menu bar:
 
 * Home: Provides an introduction to pathology, describes various SNOMED CT pathology related data products and outlines the scope and structure of this implementation guide.
