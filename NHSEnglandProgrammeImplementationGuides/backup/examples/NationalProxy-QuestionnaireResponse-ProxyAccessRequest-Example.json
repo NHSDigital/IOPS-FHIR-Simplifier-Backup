@@ -20,7 +20,7 @@
           "text" : "NHS number",
           "answer" : [
             {
-              "valueString" : "9000000017"
+              "valueString" : "9100000009"
             }
           ]
         },
@@ -177,6 +177,15 @@
       "linkId" : "patient",
       "text" : "Patient details",
       "item" : [
+	    {
+			"linkId" : "patient_identifier",
+			"text" : "NHS number",
+			"answer" : [
+            {
+              "valueString" : "9000000017"
+            }
+          ]
+        },
         {
           "linkId" : "patient_name",
           "text" : "Name",

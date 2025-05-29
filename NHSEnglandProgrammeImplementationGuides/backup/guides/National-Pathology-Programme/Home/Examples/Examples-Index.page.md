@@ -12,7 +12,9 @@ The `Bundle` examples also include simplified logical data models to illustrate 
 
 The snippet examples have been provided to illustrate how each key data element within a profile may be populated. The examples illustrate individual data element usage within a profile; the full set of data elements may not necessarily be consistent with one another or illustrate a single, complete clinical scenario.
 
-**Note:** Most of the examples include equivalent codes from the PBCL and PaLM SNOMED CT reference sets to identify the relevant pathology test. This has been done to illustrate how the examples can be used with different reference sets. In practice, it is likely that only one code will be carried for each pathology test. To facilitate the initial adoption of SNOMED and minimise the impact on existing systems and processes, it is anticipated that codes from the PBCL SNOMED CT reference set will be used at first. 
+Additional examples can be found in the [UK Core Implementation Guide](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/Examples/ExamplesIndex?version=2.0.2).
+
+**Note:** Most of the following examples include equivalent codes from the PBCL and PaLM SNOMED CT reference sets to identify the relevant pathology test. This has been done to illustrate how the examples can be used with different reference sets. In practice, it is likely that only one code will be carried for each pathology test. To facilitate the initial adoption of SNOMED and minimise the impact on existing systems and processes, it is anticipated that codes from the PBCL SNOMED CT reference set will be used at first. 
 
 <table class="regular">
     <thead>
