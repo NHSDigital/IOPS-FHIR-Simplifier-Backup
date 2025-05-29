@@ -39,7 +39,7 @@ There are many possible variations and exceptions to this basic process, includi
 ---
 
 ### User Stories, Personas and Journey Maps
-A set of detailed **User Stories** has been developed to provide further business context for this implementation guide. These can be found on the [Pathology Standards and Implementation work space](https://nhsengland.kahootz.com/PathologyandDiagnostics/view?objectID=37638416), together with other related artefacts such as **Personas** and **Journey Maps**.
+A set of detailed **User Stories** has been developed to provide further business context for this implementation guide. These can be found on the [Pathology Standards Implementation work space](https://nhsengland.kahootz.com/PathologyandDiagnostics/view?objectID=37638416), together with other related artefacts such as **Personas** and **Journey Maps**.
 
 ---
 
@@ -57,7 +57,7 @@ Each of the numbered steps in the diagram is described below:
     * transform the output from LIMS to [PMIP EDIFACT (NHS003)](https://webarchive.nationalarchives.gov.uk/20150107145848/http://www.isb.nhs.uk/documents/isb-1557/amd-39-2003) formatted messages
     * map local laboratory codes to equivalent [Pathology Bounded Code List](https://isd.digital.nhs.uk/trud3/user/guest/group/0/pack/38) (PBCL) Read codes
     * group test report messages into interchanges prior to transmission (an interchange acts an envelope for one or messages)
-    * support the routing of messages, via [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh)
+    * support the routing and tracking of messages, via [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh)
     * support the receipt and processing of interchange and message level acknowledgements
 5.	Using MESH, the test report is sent as a PMIP EDIFACT (NHS003) formatted message to the requesting GP practice EPR system.
 6.	The message is received by the GP practice system and the contents are validated:
